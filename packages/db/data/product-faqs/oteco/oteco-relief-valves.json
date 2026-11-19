@@ -1,0 +1,612 @@
+{
+ "family": "oteco-relief-valves",
+ "extraFacts": [
+  {
+   "fact": "Oteco PRV 3-inch parts: IH-OTC-140135 is the model 30550 body with 3-inch line pipe thread outlet and 140435 the liner sub with 3-inch line pipe thread inlet (1,000 to 5,000 psi), both noted 'valve psi exceeds end connection rating'; 140595 is the shear pin set for the 30550; 140350 and 140351 are the minor and major repair kits for the 30550 (5,000 psi).",
+   "source": "Oteco PRV spare parts and PRV shear pins listings (Indus part numbers IH-OTC-140135, 140435, 140595, 140350, 140351)"
+  },
+  {
+   "fact": "Oteco RRV repair kits: IH-OTC-143215 minor and 143216 major for the 3-inch 5,000 psi valve; 143223 minor and 143218 major for the 2-inch 5,000 psi valve; 143227 minor and 143221 major for the 3-inch 8,000 psi valve. The scale for the 3-inch 3,000 to 8,000 psi valve is IH-OTC-142007.",
+   "source": "Oteco RRV repair kits and seals and RRV spare parts listings"
+  },
+  {
+   "fact": "Oteco Engineering Bulletin EB-003: replace the shear pin after every relief of a PRV shear-pin relief valve, with the safety cover closed before the pump is restarted.",
+   "source": "Oteco PRV shear pins listing (citing Oteco Engineering Bulletin EB-003)"
+  },
+  {
+   "fact": "Oteco Engineering Bulletin EB-001 covers safe relief-valve piping: the discharge line must be rated for the full inlet pressure, anchored against the reaction force when the valve opens, and routed so the discharge stream cannot reach people or the environment.",
+   "source": "Oteco PRV and RRV listings (citing Oteco Engineering Bulletin EB-001)"
+  },
+  {
+   "fact": "Oteco Engineering Bulletin EB-004 covers union ends on Oteco valves: Figure 1502 union ends are made to mate with FMC Weco Figure 1502 unions.",
+   "source": "Oteco RRV listings (citing Oteco Engineering Bulletin EB-004)"
+  }
+ ],
+ "products": [
+  {
+   "slug": "oteco-prv-shear-pin-relief-valve-2-inch",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco PRV 2-inch shear-pin relief valve used for?",
+     "a": "The Oteco PRV 2-inch shear-pin relief valve protects mud pumps, discharge manifolds and other drilling equipment from over-pressure. When line pressure reaches the set point, a calibrated shear pin breaks and the valve opens fully to relieve the pump. This listing covers models 20210, 20513, 21027, 21050, 21075 and 26010, set from 250 to 10,000 psi."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco PRV model 21050 and part numbers such as IH-OTC-132050 or 132055?",
+     "a": "The five-digit number is the Oteco valve model and the six-digit IH-OTC number is the exact build. Model 21050 is set 1,000 to 5,000 psi; IH-OTC-132050 has 2-inch line pipe thread ends, 132052 has Figure 1502 ends with mating weld-on halves, 132054 has ECO seals and 132055 is the DNV type-approved union valve."
+    },
+    {
+     "slot": "C",
+     "q": "Are Oteco PRV parts interchangeable with Cameron-style shear relief valve parts?",
+     "a": "Yes, Oteco states that PRV relief valve parts are interchangeable with Cameron-style shear relief valve parts. That covers the Oteco shear pins, pistons, stems and liner subs listed for the 2-inch models, so a Cameron-style valve can often be kept running on Oteco spares. Send us the valve nameplate and we confirm the part number before you order."
+    },
+    {
+     "slot": "D",
+     "q": "Which 2-inch Oteco PRV model should I choose for a 3,000 psi set pressure?",
+     "a": "Choose the model 21050 (1,000 to 5,000 psi), set with two #30 grey shear pins for a nominal 3,000 psi. The model 21075 also covers that point because it is set 1,500 to 7,500 psi. Oteco's chart gives the pin for each set pressure, and a metal chart on the valve repeats it. See the [Oteco PRV shear pins](/p/oteco-prv-shear-pins) for the pack you need."
+    },
+    {
+     "slot": "D",
+     "q": "What set range and pins does the Oteco PRV 26010 cover on the 2-inch valve?",
+     "a": "The model 26010 is the high-pressure 2-inch PRV, set 6,300 to 10,000 psi. With one pin, Oteco's chart gives 8,600 psi for a #20 red pin and 10,000 psi for a #30 grey pin. It is listed with 2-inch line pipe thread ends (IH-OTC-132100) or Figure 1502 union ends (IH-OTC-132059)."
+    },
+    {
+     "slot": "E",
+     "q": "How accurate is the set pressure of the Oteco 2-inch PRV?",
+     "a": "The Oteco PRV set pressure is accurate to about ±10 %. Oteco grinds its pins precisely and destructively tests them in production, which is what gives the repeatable set point. A nail or improvised pin cannot do this, so use genuine pins from the chart on the valve."
+    },
+    {
+     "slot": "F",
+     "q": "What are the Oteco 2-inch PRV seals and stem made of, and is it a sour gas valve?",
+     "a": "The 2-inch PRV has a hardened stainless steel stem and liner sub, with NBR or low-temperature NBR seals, and it is listed for standard service only. No sour gas (H2S) trim is listed for the PRV. For H2S duty, look at the [Oteco 2-inch reset relief valve](/p/oteco-reset-relief-valve-2-inch-5000-psi), which is offered in sour gas trim."
+    },
+    {
+     "slot": "G",
+     "q": "Does the Oteco 2-inch PRV have DNV type approval?",
+     "a": "Yes, DNV type approval applies to selected 2-inch union models: IH-OTC-132055 (model 21050), 132056 (model 21027) and 132057 (model 20513). The line pipe thread valves are not marked as type approved. Tell us the approval you need and we confirm the matching part number."
+    },
+    {
+     "slot": "H",
+     "q": "Which end connections and mating halves does the Oteco 2-inch PRV use?",
+     "a": "The union valves have a Figure 1502 female inlet and male outlet, made to mate with FMC Weco unions. Part numbers 132052, 132058 and 132060 are supplied with mating weld-on union halves. Line pipe valves are 2-inch thread, except the model 20210, which has a 1-1/2 inch outlet. Spares are on the [PRV spare parts and repair kits](/p/oteco-prv-relief-valve-spare-parts) listing."
+    },
+    {
+     "slot": "I",
+     "q": "How do I install the Oteco 2-inch PRV and what must I do after it relieves?",
+     "a": "Pipe the discharge line to Oteco Engineering Bulletin EB-001: rated for the full inlet pressure, anchored against the reaction force and routed away from people. After the valve relieves, fit a new shear pin through the quick-release safety cover and close it before the pump is restarted (EB-003). A line pipe end rated below the valve limits the working pressure."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco PRV 2-inch relief valve made?",
+     "a": "The Oteco PRV is made by Oteco Inc. in Houston, Texas, USA, and the country of origin is the United States. We are an authorised Oteco distributor for the Middle East, so the valve comes with the maker's documentation and Oteco part numbers. Ask for the model or part number on the nameplate."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco PRV 2-inch shear-pin relief valve, and what do you need for a quote?",
+     "a": "We keep the Oteco PRV 2-inch relief valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the model or IH-OTC part number, the set pressure, the end connections and the service. You can [request a quote](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-prv-shear-pin-relief-valve-3-inch",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco PRV 3-inch shear-pin relief valve for?",
+     "a": "The Oteco PRV 3-inch is a shear-pin relief valve for mud pumps, discharge manifolds and other drilling equipment. A calibrated shear pin breaks at the set pressure and the valve opens fully. This listing covers models 30525, 30550 and 30575, set from 500 to 7,500 psi, with line pipe thread or Figure 1502 union ends."
+    },
+    {
+     "slot": "B",
+     "q": "What do Oteco PRV models 30525, 30550 and 30575 mean, and how are IH-OTC-1330xx part numbers split?",
+     "a": "The model gives the set range: 30525 is 500 to 2,500 psi, 30550 is 1,000 to 5,000 psi and 30575 is 1,500 to 7,500 psi. Part number 133025 is the 30525 on line pipe thread, 133050 the 30550 on line pipe thread and 133075 the 30575, which is offered with Figure 1502 ends only."
+    },
+    {
+     "slot": "C",
+     "q": "Do Oteco 3-inch PRV parts interchange with Cameron-style shear relief valves?",
+     "a": "Oteco states that PRV relief valve parts are interchangeable with Cameron-style shear relief valve parts. That is Oteco's statement for the PRV range, so confirm the 3-inch part against the old valve's nameplate before ordering. The [PRV spare parts and repair kits](/p/oteco-prv-relief-valve-spare-parts) listing has the 3-inch bonnets, stems and liner subs."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 3-inch PRV model and pin gives a 4,000 psi relief pressure?",
+     "a": "Use the model 30550 with two #45 silver shear pins for a nominal 4,000 psi. The 30550 is set 1,000 to 5,000 psi, and its two-pin row in Oteco's chart runs from 2,000 psi with a #16 pin to 5,000 psi with a #60 pin. The 30575 chart has no 4,000 psi pin, so it is not the right choice."
+    },
+    {
+     "slot": "D",
+     "q": "Which pin gives 6,000 psi on the Oteco PRV 30575?",
+     "a": "On the model 30575, two #45 silver shear pins give a nominal 6,000 psi. The 30575 is the highest 3-inch PRV, set 1,500 to 7,500 psi, and 7,500 psi needs two #60 orange pins. One pin covers 1,500 to 3,750 psi only, so choose the pin count first, then the colour."
+    },
+    {
+     "slot": "E",
+     "q": "What limits the working pressure of an Oteco 3-inch PRV on line pipe thread ends?",
+     "a": "The line pipe thread end connection can limit the working pressure below the valve's own set range. Oteco notes this on the 30550 body and liner sub (IH-OTC-140135 and 140435), where the valve pressure exceeds the end connection rating. For the top of the 1,000 to 5,000 psi range, check the end rating or use Figure 1502 union ends."
+    },
+    {
+     "slot": "F",
+     "q": "What materials are in the Oteco 3-inch PRV, and is there a sour gas version?",
+     "a": "The 3-inch PRV has a hardened stainless steel stem and liner sub, with NBR or low-temperature NBR seals, and is listed for standard service. Oteco lists no sour gas (H2S) trim for the PRV. Use the [3-inch reset relief valve](/p/oteco-reset-relief-valve-3-inch-5000-psi) if the line carries H2S."
+    },
+    {
+     "slot": "G",
+     "q": "Which Oteco 3-inch PRV part numbers have DNV type approval?",
+     "a": "Two 3-inch union valves carry DNV type approval: IH-OTC-133055 (model 30550, 1,000 to 5,000 psi) and IH-OTC-133056 (model 30525, 500 to 2,500 psi). Both have Figure 1502 female inlet and male outlet. The 133052 and 133057 versions with weld-on union halves are not marked approved."
+    },
+    {
+     "slot": "H",
+     "q": "Which shear pins and kits fit the Oteco 3-inch PRV 30550?",
+     "a": "Order the [Oteco PRV shear pins](/p/oteco-prv-shear-pins), packs of ten, by colour and number, or the set IH-OTC-140595 for the 30550 (1,000 to 5,000 psi). The minor kit is 140350 and the major kit 140351. The minor kit holds the stem cushion, piston and O-ring; the major kit adds the stem."
+    },
+    {
+     "slot": "I",
+     "q": "What are the face-to-face dimensions of the Oteco 3-inch PRV for piping layout?",
+     "a": "On the models 30525 and 30550 with line pipe thread, the dimensions are 4-1/2, 7-1/4 and 24 inches (A, B, C). With Figure 1502 union ends they are 8-7/8, 7-7/8 and 24-5/8 inches, and the 30575 matches the union size. Pipe the discharge to Oteco bulletin EB-001, anchored against the reaction force."
+    },
+    {
+     "slot": "L",
+     "q": "What is the country of origin of the Oteco PRV 3-inch relief valve?",
+     "a": "The Oteco PRV 3-inch relief valve is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East, so we supply with the maker's documentation. For GCC and wider export, give us the destination when you ask."
+    },
+    {
+     "slot": "M",
+     "q": "Can I get the Oteco PRV 3-inch relief valve from stock in Dubai?",
+     "a": "We keep the Oteco PRV 3-inch relief valve in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To quote, send the model (30525, 30550 or 30575), set pressure, end connections and service. Use the [quote form](/quote) or [get in touch](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-prv-shear-pins",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What are Oteco PRV shear pins and which valves do they fit?",
+     "a": "Oteco PRV shear pins are the calibrated pins that set the relief pressure of shear-pin valves. They fit the PRV models 20015, 20210, 20513, 21027, 21050, 26010, 30525, 30550 and 30575, and cover 125 to 10,000 psi. The listing carries 29 part numbers in packs of ten and in sets."
+    },
+    {
+     "slot": "B",
+     "q": "What do the Oteco shear pin numbers and colours mean, such as #16 blue or #45 silver?",
+     "a": "The pin number and colour set the relief pressure: #16 blue is the lowest on the standard chart, then #20 red, #30 grey, #40 green, #45 silver, #50 black and #60 orange. On a one-pin 2-inch model 21050, #16 gives 1,000 psi and #60 gives 2,500 psi. Low-pressure valves use #3 brown, #4 pink, #6 yellow, #8 purple and #12 white."
+    },
+    {
+     "slot": "K",
+     "q": "Does a PRV with two shear pins relieve at a different pressure from one with a single pin?",
+     "a": "Yes, the number of pins (one or two) sets the range and the pin number sets the point in it. On the 2-inch model 21050, one pin spans 1,000 to 2,500 psi and two pins span 2,000 to 5,000 psi. Check the chart on your valve, as it is specific to the valve model."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco shear pin gives 1,500 psi on a 2-inch PRV 21050?",
+     "a": "A single #30 grey Oteco shear pin gives a nominal 1,500 psi on the 2-inch model 21050. That is the one-pin row of Oteco's chart, where #16 is 1,000 psi and #60 is 2,500 psi. Order it as IH-OTC-140630, the pack of ten, or the single-pin item 140530."
+    },
+    {
+     "slot": "D",
+     "q": "Which shear pins fit the low-pressure Oteco PRV 20210 and 20015?",
+     "a": "The low-pressure valves take #3 brown, #4 pink, #6 yellow, #8 purple, #12 white and #16 blue pins. On the model 20210 these give 250, 400, 500, 600, 850 and 1,000 psi, and on the model 20015 they give 125, 200, 250, 300, 425 and 500 psi. Packs of ten are IH-OTC-140603 to 140616."
+    },
+    {
+     "slot": "E",
+     "q": "How accurate is the relief pressure set by an Oteco shear pin?",
+     "a": "Oteco rates the PRV set point at about ±10 %. The pins are precision ground and destructively tested throughout manufacture, which is what makes the set point repeatable. The pin number and the pin count must match the chart on the valve to stay inside that tolerance."
+    },
+    {
+     "slot": "F",
+     "q": "Are Oteco PRV shear pins offered for sour gas (H2S) service?",
+     "a": "The single-pin items from #3 to #60 (IH-OTC-140503 to 140560) are listed for standard and sour gas service. The sets for the 2-inch and 3-inch valves, 140591 to 140595, are listed for standard service. Say which valve and service you have and we match the pin."
+    },
+    {
+     "slot": "I",
+     "q": "Can I use a nail or a bolt instead of an Oteco shear pin?",
+     "a": "No, Oteco warns that nails or improvised pins cannot give an accurate relief pressure. Genuine pins are precision ground and destructively tested, which gives the repeatable set point. A wrong pin can let the valve open early or hold pressure above what the pump can take."
+    },
+    {
+     "slot": "I",
+     "q": "When should I change the shear pin on an Oteco PRV?",
+     "a": "Replace the pin after every relief, with the safety cover closed before the pump is restarted (Oteco Engineering Bulletin EB-003). Quick-release safety covers give fast access. Keep spare packs of ten in the pump house for the pin sizes your valves use."
+    },
+    {
+     "slot": "H",
+     "q": "What do the Oteco pin sets IH-OTC-140591 to 140595 cover?",
+     "a": "Each Oteco pin set is matched to one valve. IH-OTC-140591 is for the 2-inch 20015 (125 to 1,000 psi), 140592 for the 2-inch 21027 (500 to 2,500 psi), 140593 for the 2-inch 21050 and 3-inch 30525 (500 to 5,000 psi), 140594 for the 2-inch 26010 (6,300 to 10,000 psi) and 140595 for the 3-inch 30550 (1,000 to 5,000 psi). See the [2-inch PRV](/p/oteco-prv-shear-pin-relief-valve-2-inch) and [3-inch PRV](/p/oteco-prv-shear-pin-relief-valve-3-inch)."
+    },
+    {
+     "slot": "L",
+     "q": "Are Oteco PRV shear pins genuine Oteco parts and where are they made?",
+     "a": "Yes, these are genuine Oteco pins, made by Oteco Inc. in Houston, Texas, USA, country of origin United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East. Send the Oteco part number from the valve nameplate or bill of materials and we confirm the pin."
+    },
+    {
+     "slot": "M",
+     "q": "Do you keep Oteco PRV shear pins in stock?",
+     "a": "We keep Oteco PRV shear pins in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the valve model, the set pressure you need and the pack quantity. Use the [quote form](/quote) or the [PRV spare parts and repair kits](/p/oteco-prv-relief-valve-spare-parts) listing."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-prv-relief-valve-spare-parts",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What does the Oteco PRV spare parts and repair kits listing cover?",
+     "a": "The Oteco PRV spare parts listing covers repair kits and parts for the shear-pin relief valves: bodies, safety covers, shear bonnets and bushings, stems, pistons, stem cushions, liner subs, O-rings, union seal rings, name plates and packing guns. It carries 88 part numbers and fits the PRV models 20015, 20210, 20513, 21027, 21050, 26010, 30525, 30550 and 30575."
+    },
+    {
+     "slot": "B",
+     "q": "How are the Oteco PRV repair kit part numbers IH-OTC-140210 and 140211 arranged?",
+     "a": "The kits come as pairs: a minor kit and a major kit for each valve. IH-OTC-140210 is the minor kit and 140211 the major kit for the 2-inch 20210 and 20015; 140250 and 140251 are the 21050 pair; 140260 and 140261 the 26010 pair; 140320 and 140321 the 3-inch 30525; 140350 and 140351 the 30550."
+    },
+    {
+     "slot": "C",
+     "q": "Are Oteco PRV spare parts interchangeable with Cameron-style shear relief valves?",
+     "a": "Oteco states that PRV relief valve parts are interchangeable with Cameron-style shear relief valve parts. We confirm the Oteco part number against your nameplate or the old part before supply. For the pins themselves see the [Oteco PRV shear pins](/p/oteco-prv-shear-pins)."
+    },
+    {
+     "slot": "D",
+     "q": "Which repair kit do I need for a 2-inch Oteco PRV 21050?",
+     "a": "For the 2-inch model 21050 (1,000 to 5,000 psi) order the minor kit IH-OTC-140250 for a routine service, or the major kit 140251 when the stem is also worn. The 140250 kit also covers the 21027 and 20513, while the major kit for those two is 140271. Fit new shear pins at the same time."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco repair kit fits a 3-inch PRV 30525 or 30550?",
+     "a": "The 3-inch 30525 (500 to 2,500 psi) uses the minor kit IH-OTC-140320 and the major kit 140321. The 30550 (1,000 to 5,000 psi) uses 140350 and 140351. The 30575 (1,500 to 7,500 psi) has no kit in this listing but has its own stem (141236), liner sub (140438) and name plate (140026)."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between a minor and a major Oteco PRV repair kit?",
+     "a": "The minor repair kit contains the stem cushion, piston and O-ring. The major repair kit is the minor kit plus the stem. Fit the minor kit for a routine reseal and the major kit when the stem is also worn or damaged."
+    },
+    {
+     "slot": "F",
+     "q": "What rubber compounds do the Oteco PRV cushions and pistons come in?",
+     "a": "Cushions are offered in nitrile (NBR), low-temperature nitrile (LT) and Viton, and pistons in NBR, low-temperature nitrile, Viton and hydrogenated nitrile (HNBR). Union seal rings are nitrile and Viton. All are listed for standard service."
+    },
+    {
+     "slot": "G",
+     "q": "Which Oteco PRV bonnets are marked DNV?",
+     "a": "Three 2-inch bonnets are listed as DNV: IH-OTC-140223 (model 2514, 500 to 1,250 psi), 140224 (model 21027, 1,000 to 2,500 psi) and 140225 (model 21050, 1,000 to 5,000 psi). They match the DNV type-approved union valves. State the approval you need when you ask for a bonnet."
+    },
+    {
+     "slot": "H",
+     "q": "Which valves and pins go with the Oteco PRV spare parts?",
+     "a": "The parts fit the 2-inch and 3-inch PRV valves: see the [2-inch PRV](/p/oteco-prv-shear-pin-relief-valve-2-inch) and the [3-inch PRV](/p/oteco-prv-shear-pin-relief-valve-3-inch). The shear pins that set the relief pressure are separate, in packs of ten, on the [PRV shear pins](/p/oteco-prv-shear-pins) listing."
+    },
+    {
+     "slot": "I",
+     "q": "What should I replace when an Oteco PRV has relieved?",
+     "a": "Replace the shear pin first, and fit the safety cover before the pump is restarted (Oteco Engineering Bulletin EB-003). If the valve has relieved repeatedly, add a minor repair kit for the cushion, piston and O-ring. Packing guns and stick packing are listed for the 26010."
+    },
+    {
+     "slot": "L",
+     "q": "Are Oteco PRV spare parts made in the USA?",
+     "a": "Yes, Oteco PRV spare parts are made by Oteco Inc. in Houston, Texas, USA, and the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East and supplies with the maker's part numbers."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco PRV spare parts and repair kits in Dubai?",
+     "a": "We keep Oteco PRV spare parts and repair kits in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the valve model, the part name or IH-OTC number and the quantity. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-reset-relief-valve-2-inch-5000-psi",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is an Oteco 2-inch Type RR reset relief valve?",
+     "a": "The Oteco 2-inch Type RR reset relief valve (RRV) protects mud pumps and mud manifolds without shear pins. It snaps fully open at the set point and can be opened by hand with the release button. This listing covers set ranges between 400 and 5,000 psi with line pipe, flanged and Figure 1502 union ends."
+    },
+    {
+     "slot": "B",
+     "q": "How do I choose between the Oteco 2-inch RRV part numbers 130200, 130201 and 130250?",
+     "a": "The part numbers differ by set range, trim and ends. IH-OTC-130200 is 400 to 1,500 psi and 130201 is 750 to 2,500 psi, both stainless trim on line pipe thread; 130202 and 130203 are the same ranges in bronze trim. IH-OTC-130250 is 1,500 to 5,000 psi on line pipe thread, standard service."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco 2-inch RRV interchangeable with a Cameron Type A or Type B reset relief valve?",
+     "a": "Oteco states that the RRV bonnet assembly is interchangeable with Cameron Type A and Type B reset relief valves. Oteco also exchanges and rebuilds Oteco, Cameron Type A and Type B bonnet assemblies. Check the valve body and ends against the part number before ordering the complete valve."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 2-inch RRV range covers a 2,000 psi set pressure?",
+     "a": "Both the 750 to 2,500 psi range (IH-OTC-130225 on line pipe thread) and the 1,500 to 5,000 psi range (130250) include 2,000 psi. The 750 to 2,500 psi spring and scale suit a lower-pressure line better. The set pressure is read on an indicator and adjusted by turning one nut on top of the valve."
+    },
+    {
+     "slot": "D",
+     "q": "Which end connections does the Oteco 2-inch RRV come with?",
+     "a": "The 2-inch RRV is listed with 2-inch line pipe thread ends, 2-1/16 inch 5,000 psi API flanges and 2-inch Figure 1502 unions, plus combinations such as a flange inlet and thread outlet. For example 130211 is flanged both ends, and 130228 is a Figure 1502 female inlet by male outlet. Metric-scale versions, 130230 and 130359, are also listed."
+    },
+    {
+     "slot": "E",
+     "q": "What are the pressure and temperature limits of the Oteco 2-inch RRV?",
+     "a": "The 2-inch RRV has a maximum pressure of 5,000 psi (345 bar) and is rated -20 °F to 250 °F (-29 °C to 121 °C). Accuracy is about ±5 %. The flow area is 1.8 in² (11.6 cm²), and the valve weighs 50 lb with line pipe thread ends, 56 lb with Figure 1502 and 70 lb flanged."
+    },
+    {
+     "slot": "F",
+     "q": "Is there a sour gas (H2S) version of the Oteco 2-inch RRV?",
+     "a": "Yes, the 2-inch RRV is listed in sour gas (H2S) service as well as standard and low temperature. Examples are IH-OTC-130355 on line pipe thread, 130213 with 2-1/16 inch flanges, and 130252, 130256 and 130365 with Figure 1502 unions. The stainless piston and cadmium-plated sub are the standard construction."
+    },
+    {
+     "slot": "G",
+     "q": "Which Oteco 2-inch RRV approvals apply: ABS or DNV?",
+     "a": "ABS design assessment and DNV approval apply to selected models, not the whole range. Name the approval you need when you ask for the 2-inch RRV and we confirm which Oteco part number carries it."
+    },
+    {
+     "slot": "H",
+     "q": "Where do I find repair kits and spares for the Oteco 2-inch RRV?",
+     "a": "Use the [RRV repair kits and seals](/p/oteco-reset-relief-valve-repair-kits-seals) listing for the 2-inch kits such as IH-OTC-143218 (major) and 143223 (minor). Bodies, subs, bonnets, springs and scales are on [RRV spare parts](/p/oteco-reset-relief-valve-spare-parts). Rebuilt exchange 2-inch valves are listed there too."
+    },
+    {
+     "slot": "I",
+     "q": "How do I install and reset an Oteco 2-inch RRV?",
+     "a": "Install with a discharge line rated for the full inlet pressure and anchored against the reaction force (Oteco Engineering Bulletin EB-001). After the valve opens, the button position shows open or closed, and the valve resets without replacing any pin. Each valve has its own installation and maintenance manual, which we send with the valve."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco 2-inch reset relief valve made?",
+     "a": "The Oteco 2-inch RRV is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. We are the authorised Oteco distributor for the Middle East and supply with the maker's manual and part numbers."
+    },
+    {
+     "slot": "M",
+     "q": "Can I buy the Oteco 2-inch RRV from stock in Dubai?",
+     "a": "We keep the Oteco 2-inch RRV in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the Oteco part number or the set range, end connections, units of the scale and service. Use the [quote form](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-reset-relief-valve-3-inch-5000-psi",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco 3-inch Type RR reset relief valve at 400 to 5,000 psi?",
+     "a": "The Oteco 3-inch Type RR reset relief valve protects mud pumps and mud manifolds without shear pins, snapping fully open at the set point. This listing covers set ranges from 400 to 5,000 psi (28 to 350 bar) with line pipe, flanged and Figure 1502 union ends. Oteco describes it as comparable to the Cameron Type B."
+    },
+    {
+     "slot": "B",
+     "q": "What do the Oteco 3-inch RRV part numbers 130315, 130325 and 130350 stand for?",
+     "a": "They separate the set range on 3-inch line pipe thread: IH-OTC-130315 is 400 to 1,500 psi, 130325 is 750 to 2,500 psi and 130350 is 1,500 to 5,000 psi, all standard service. Sour gas versions on line pipe thread include 130358 (1,500 to 5,000 psi). Later digits in the list change ends and trim."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco 3-inch RRV the same as a Cameron Type B reset relief valve?",
+     "a": "Oteco describes the 3-inch RRV as comparable to the Cameron Type B, and states that the RRV bonnet assembly is interchangeable with Cameron Type A and Type B reset relief valves. It is a comparison, not a claim that the whole valve is identical. Oteco also rebuilds or exchanges worn Type A and Type B bonnets."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 3-inch RRV do I need for a 5,000 psi line with a 3-1/8 inch API flange?",
+     "a": "Use a 1,500 to 5,000 psi valve with 3-1/8 inch 5,000 psi API flanges, such as IH-OTC-130348 for standard service or 130349 for sour gas (H2S). Part 130352 is another standard flanged valve in the same range. If your line is a 3-1/16 inch 10,000 psi flange, 130384 is the flanged valve."
+    },
+    {
+     "slot": "D",
+     "q": "Which Figure 1502 versions of the Oteco 3-inch RRV are listed?",
+     "a": "Figure 1502 versions include 130363 (female inlet and outlet, 1,500 to 5,000 psi), 130367 (female inlet by male outlet), 130364 (400 to 1,500 psi) and 130368 (750 to 2,500 psi). Sour gas Figure 1502 versions are 130376, 130383 and 130390. Union halves must match the Figure 1502 on your line."
+    },
+    {
+     "slot": "E",
+     "q": "What is the maximum pressure, flow area and weight of the Oteco 3-inch RRV at 5,000 psi?",
+     "a": "The 3-inch RRV is rated 5,000 psi (345 bar) maximum, with a flow area of 4.2 in² (27.1 cm²), accurate to about ±5 %. It weighs 105 lb on line pipe thread, 120 lb with Figure 1502 ends and 140 lb flanged. The subs are hydrostatically tested to 10,000 psi."
+    },
+    {
+     "slot": "F",
+     "q": "Is the Oteco 3-inch RRV available for sour gas (H2S) and low temperature?",
+     "a": "Yes, standard, sour gas (H2S) and low-temperature versions are listed. IH-OTC-130389 is a sour gas, low temperature Figure 1502 valve. Every RRV is rated -20 °F to 250 °F. The seals are polyethylene and the bonnet parts are investment cast."
+    },
+    {
+     "slot": "G",
+     "q": "Which Oteco 3-inch RRV models are DNV type approved?",
+     "a": "Oteco lists five DNV type-approved models on the 3-inch RRV, along with ABS design assessment on selected models. The listing does not say which five part numbers, so ask us and we confirm against Oteco's list."
+    },
+    {
+     "slot": "H",
+     "q": "Which seals and spares fit the Oteco 3-inch RRV?",
+     "a": "The 3-inch RRV takes the kits and seals on the [RRV repair kits and seals](/p/oteco-reset-relief-valve-repair-kits-seals) listing, for example the major kit IH-OTC-143216 and the minor kit 143215. Bodies, subs and bonnets are on [RRV spare parts](/p/oteco-reset-relief-valve-spare-parts). The same bonnet is used on the 2-inch valve."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between the 3-inch 5,000 psi RRV and the heavier 8,000 psi RRV?",
+     "a": "The 5,000 psi 3-inch valve has a 4.2 in² flow area and weighs 105 to 140 lb, while the 8,000 psi valve has 4.9 in² and weighs 325 lb with Figure 1502 ends. The heavier valve suits higher-pressure duty; see the [3-inch high-pressure RRV](/p/oteco-reset-relief-valve-3-inch-8000-10000-psi)."
+    },
+    {
+     "slot": "L",
+     "q": "What is the origin of the Oteco 3-inch reset relief valve?",
+     "a": "The Oteco 3-inch reset relief valve is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East. Each valve ships with its installation and maintenance manual."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco 3-inch RRV, 400 to 5,000 psi, in the UAE?",
+     "a": "We keep the Oteco 3-inch RRV in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the Oteco part number, or the set range, ends, scale units and service. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-reset-relief-valve-3-inch-8000-10000-psi",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco 3-inch high-pressure reset relief valve for 3,000 to 10,000 psi?",
+     "a": "The Oteco 3-inch high-pressure Type RR reset relief valve covers 3,000 to 8,000 psi and 4,000 to 10,000 psi set ranges for mud pumps and manifolds, with no shear pins. It is the design Oteco verified at an independent laboratory and on pumps from 700 to 3,000 hp. The flow area is 4.9 in²."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco RRV part numbers IH-OTC-131380 and 131393?",
+     "a": "The range and ends are what differ. IH-OTC-131380 is set 3,000 to 8,000 psi with a Figure 1502 female inlet by male outlet, standard service, and 131393 is the same ends set 4,000 to 10,000 psi. Sour gas versions are 131387 and 131396, and 131386 and 131395 have 3-1/16 inch 10,000 psi flanges."
+    },
+    {
+     "slot": "C",
+     "q": "Does the Oteco 3-inch 8,000 psi RRV share parts with Cameron Type A and Type B?",
+     "a": "Oteco states that the RRV bonnet assembly is interchangeable with Cameron Type A and Type B reset relief valves. The heavy 3-inch valve has its own bonnet sub assembly and load spring, so confirm the part against your valve. Oteco rebuilds and exchanges Oteco, Type A and Type B bonnet assemblies."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco 3-inch RRV do I need for a 3-1/16 inch 10,000 psi flanged line?",
+     "a": "Use the part numbers with 3-1/16 inch 10,000 psi API flanges and a BX154 ring groove: IH-OTC-131386 (3,000 to 8,000 psi) or 131395 (4,000 to 10,000 psi) for standard service, and 131389 or 131398 for sour gas (H2S). Part 131399 has a flange inlet and a Figure 1502 male outlet."
+    },
+    {
+     "slot": "D",
+     "q": "Which Figure 1502 versions of the Oteco 3-inch 8,000 and 10,000 psi RRV are listed?",
+     "a": "Several, in both set ranges. For 3,000 to 8,000 psi: 131380 (female by male), 131382 (male by female) and 131385 (female by female). For 4,000 to 10,000 psi: 131393 and 131394. Parts 131383 and 131384 come with a mating hub, nut and seal ring."
+    },
+    {
+     "slot": "E",
+     "q": "What are the weight and construction of the Oteco 3-inch high-pressure RRV?",
+     "a": "The 8,000 psi valve weighs 325 lb (147.4 kg) with Figure 1502 ends and 367 lb (166.5 kg) flanged, and is rated -20 °F to 250 °F. The top cover and sub are heavily flanged, the piston is hydraulically balanced and internal surfaces are xylan coated. No threads carry load."
+    },
+    {
+     "slot": "F",
+     "q": "Is the Oteco 3-inch 8,000 and 10,000 psi RRV available for sour gas (H2S) and low temperature?",
+     "a": "Yes, standard and sour gas (H2S) versions are listed in both ranges, and IH-OTC-131392 is a sour gas, low temperature Figure 1502 valve at 3,000 to 8,000 psi. Main seals are polyethylene and fluoropolymer. Repair kits for the 8,000 psi valve are also offered in sour gas service."
+    },
+    {
+     "slot": "G",
+     "q": "Which approvals does the Oteco 3-inch high-pressure RRV hold: ABS or DNV?",
+     "a": "Oteco lists 12 ABS design-assessed and 6 DNV design-assessed models in this range. The listing does not name the part numbers, so tell us the approval you need and we confirm which Oteco part number carries it. The approval is on selected models only."
+    },
+    {
+     "slot": "H",
+     "q": "Which spares and kits fit the Oteco 3-inch 8,000 psi RRV?",
+     "a": "Kits include the major kit IH-OTC-143221 and the minor kit 143227 for 8,000 psi, on the [RRV repair kits and seals](/p/oteco-reset-relief-valve-repair-kits-seals) listing. Bodies, subs, load springs and the bonnet sub assembly are on [RRV spare parts](/p/oteco-reset-relief-valve-spare-parts), including the 3,000 to 8,000 psi scale (142007)."
+    },
+    {
+     "slot": "I",
+     "q": "How should I install the Oteco 3-inch high-pressure RRV?",
+     "a": "Install with a discharge line rated for the full inlet pressure and anchored against the reaction force (Oteco Engineering Bulletin EB-001). The valve weighs up to 367 lb, so plan lifting and support. Union ends are made to mate with FMC Weco Figure 1502 unions (EB-004). The manual comes with the valve."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco 3-inch 8,000 psi reset relief valve made?",
+     "a": "The Oteco 3-inch high-pressure RRV is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. We are an authorised Oteco distributor for the Middle East and supply with the maker's documentation."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco 3-inch RRV rated 3,000 to 10,000 psi?",
+     "a": "We keep the Oteco 3-inch RRV for 3,000 to 10,000 psi in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the Oteco part number or the set range, ends and service. Use the [quote form](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-reset-relief-valve-repair-kits-seals",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What does the Oteco reset relief valve repair kits and seals listing include?",
+     "a": "The Oteco RRV repair kits and seals listing holds 50 part numbers for 2-inch and 3-inch Type RR valves: minor and major repair kits, inner, middle, outer and top seals, sub-to-body seals and gaskets, O-rings and cushion rings. Compounds include nitrile, HNBR, polyurethane, TFM fluoropolymer and Tivar (high-temperature)."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read the Oteco RRV kit numbers IH-OTC-143215, 143216 and 143217?",
+     "a": "They are the 3-inch 5,000 psi kits: IH-OTC-143215 is the minor kit, 143216 the major kit and 143217 the major kit for sour gas service. The 2-inch pair is 143223 (minor) and 143218 (major), with sour gas versions 143225 and 143226. The 3-inch 8,000 psi kits are 143227 (minor) and 143221 (major)."
+    },
+    {
+     "slot": "C",
+     "q": "Does the Oteco RRV kit work on Cameron Type A and Type B reset relief valves?",
+     "a": "Oteco states that the RRV bonnet assembly is interchangeable with Cameron Type A and Type B reset relief valves, and Oteco also rebuilds or exchanges worn Oteco, Cameron Type A and Type B bonnet assemblies. Ask us before ordering a kit for a Cameron body, as we confirm the match against the part number."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco repair kit do I need for a 2-inch 5,000 psi reset relief valve?",
+     "a": "For the 2-inch 5,000 psi RRV use the minor kit IH-OTC-143223 or the major kit 143218. For sour gas (H2S) service, the matching kits are 143225 (minor) and 143226 (major). Outer seals for the 2-inch valve include 142180 in NBR and 142029 in ECO for sour gas. See the [2-inch RRV](/p/oteco-reset-relief-valve-2-inch-5000-psi)."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco seal kits fit the 3-inch 8,000 psi reset relief valve?",
+     "a": "Use the major kit IH-OTC-143221 or the minor kit 143227, with sour gas versions 143229 (major) and 143230 (minor). Individual seals include 143182 (middle seal, HNBR), 143183 (top seal, 3,000 to 8,000 psi, HNBR) and 143181 (outer seal, HNBR). Low-temperature TFM seals include 302780."
+    },
+    {
+     "slot": "E",
+     "q": "Which pressure classes do the Oteco RRV repair kits and seals cover?",
+     "a": "They cover the 2-inch and 3-inch 5,000 psi valves and the 3-inch 8,000 and 10,000 psi valves. Cushion rings and outer seals for the 2-inch are also listed at 7,500 and 10,000 psi. Choose by valve size and pressure class, then by service (standard, sour gas or low temperature)."
+    },
+    {
+     "slot": "F",
+     "q": "Which Oteco RRV seals are made for sour gas (H2S) or low-temperature service?",
+     "a": "Sour gas seals are Teflon TFM851, for example 302766 (inner, 3-inch 5,000 psi) and 302767 (outer, 5,000 and 8,000 psi), plus ECO for the 2-inch outer seal 142029. Low-temperature TFM851 seals include 302774 and 302775 for the 3-inch 5,000 psi valve. Standard seals are nitrile or polyethylene with NBR O-rings."
+    },
+    {
+     "slot": "H",
+     "q": "Which valves and spare parts go with the Oteco RRV kits and seals?",
+     "a": "The kits fit the [2-inch RRV](/p/oteco-reset-relief-valve-2-inch-5000-psi), the [3-inch RRV at 400 to 5,000 psi](/p/oteco-reset-relief-valve-3-inch-5000-psi) and the [3-inch RRV at 3,000 to 10,000 psi](/p/oteco-reset-relief-valve-3-inch-8000-10000-psi). Bodies, pistons and bonnets are on RRV spare parts. A link pin kit, IH-OTC-143222, is also listed for the 3-inch."
+    },
+    {
+     "slot": "I",
+     "q": "Can an Oteco reset relief valve bonnet be rebuilt instead of replaced?",
+     "a": "Yes, Oteco rebuilds or exchanges worn Oteco, Cameron Type A and Type B bonnet assemblies. Rebuilt exchange valves are also offered. For a routine service use the minor kit first, then the major kit if the piston and seals are worn, and send the valve nameplate so we match the part."
+    },
+    {
+     "slot": "K",
+     "q": "What is the difference between a minor and a major Oteco RRV repair kit?",
+     "a": "Oteco lists a minor kit and a major kit for each valve size and pressure class, for example IH-OTC-143215 (minor) and 143216 (major) at 3-inch 5,000 psi. The RRV listing does not itemise the contents, so we confirm them for your part number. On the PRV the major kit is the minor kit plus the stem."
+    },
+    {
+     "slot": "L",
+     "q": "Are Oteco RRV repair kits genuine Oteco parts and where are they made?",
+     "a": "Yes, these are genuine Oteco parts, made by Oteco Inc. in Houston, Texas, USA, with the United States as country of origin. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco RRV repair kits and seals in Dubai?",
+     "a": "We keep Oteco RRV repair kits and seals in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the valve size, pressure class, service and kit or seal part number. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-reset-relief-valve-spare-parts",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What do the Oteco reset relief valve spare parts include?",
+     "a": "The Oteco RRV spare parts listing has 163 part numbers for 2-inch and 3-inch Type RR valves. It covers bodies and subs with their end connections, bonnet assemblies and covers, pistons, springs, pressure scales, release buttons, reset cranks and handles, bearings, retainers, pins, screws and rebuilt exchange valves."
+    },
+    {
+     "slot": "B",
+     "q": "How do I pick the right Oteco RRV load spring, scale and bonnet by pressure range?",
+     "a": "Match all three to the same range: 400 to 1,500 psi uses load spring IH-OTC-142415 and scale 142428, 750 to 2,500 psi uses spring 142416 and scale 142429, and 1,500 to 5,000 psi uses spring 142417 and scale 142430. For the 2-inch standard bonnets, 142015 is 400 to 1,500 psi and 142025 is 750 to 2,500 psi."
+    },
+    {
+     "slot": "C",
+     "q": "Is an Oteco RRV bonnet assembly interchangeable with Cameron Type A and Type B?",
+     "a": "Oteco states that the RRV bonnet assembly is interchangeable with Cameron Type A and Type B reset relief valves, and offers exchange and rebuilding of Oteco, Cameron Type A and Type B bonnet assemblies. We confirm the Oteco part number against the old assembly before supply."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco spares go with a 2-inch RRV set 750 to 2,500 psi?",
+     "a": "For a 750 to 2,500 psi 2-inch valve the bonnet assembly is IH-OTC-142025 (standard) or 142017 (stainless), the load spring is 142416 and the scale is 142429. Bodies and subs are chosen separately by end connection and service. Send the valve nameplate and we confirm the full set before you order."
+    },
+    {
+     "slot": "D",
+     "q": "Which Oteco RRV bonnet assembly fits a 2-inch sour gas valve at 1,500 to 5,000 psi?",
+     "a": "The 2-inch sour gas bonnet assembly for 1,500 to 5,000 psi is IH-OTC-142026. The matching 2-inch sour gas piston sub assembly is 143342, and the sour gas piston and bearing assembly is 142028. For the 3-inch 5,000 psi sour gas valve the piston sub assembly is 143341."
+    },
+    {
+     "slot": "E",
+     "q": "Which pressure scales are available for the Oteco RRV in psi, bar and kPa?",
+     "a": "Scales are listed in psi, bar, kPa and MPa. Examples: 142006 for 100 to 350 bar on 2-inch and 3-inch valves, 142007 for 3,000 to 8,000 psi on the 3-inch, 142011 for 3,000 to 10,000 psi on the 2-inch, 142024 for 5 to 17 MPa and 142021 for 10,000 to 35,000 kPa."
+    },
+    {
+     "slot": "F",
+     "q": "Which Oteco RRV bodies and subs are for sour gas (H2S) service?",
+     "a": "Sour gas bodies include IH-OTC-140227 (2-inch, 5,000 psi, Figure 1502 female) and 140228 (male), 143054 and 143060 with 2-1/16 inch flanges, and 143201 (3-inch Figure 1502 female). Sour gas subs include 142030, 142043 and 143188. Listed items for the heavy 3-inch valve include 143085 and 143087."
+    },
+    {
+     "slot": "H",
+     "q": "Which kits and seals go with the Oteco RRV spare parts?",
+     "a": "Seals, O-rings and cushion rings are on the [RRV repair kits and seals](/p/oteco-reset-relief-valve-repair-kits-seals) listing. The valves these parts fit are the [2-inch RRV](/p/oteco-reset-relief-valve-2-inch-5000-psi), the [3-inch RRV at 400 to 5,000 psi](/p/oteco-reset-relief-valve-3-inch-5000-psi) and the [heavy 3-inch RRV](/p/oteco-reset-relief-valve-3-inch-8000-10000-psi)."
+    },
+    {
+     "slot": "I",
+     "q": "Does Oteco offer rebuilt exchange reset relief valves?",
+     "a": "Yes, rebuilt exchange valves are listed: IH-OTC-130226 (2-inch, 2,500 psi, standard, line pipe thread), 130253 (2-inch, 5,000 psi, sour gas, Figure 1502) and 130257 (1,500 to 5,000 psi, sour gas). Oteco also rebuilds and exchanges Oteco, Cameron Type A and Type B bonnet assemblies."
+    },
+    {
+     "slot": "J",
+     "q": "Where are Oteco reset relief valve parts used?",
+     "a": "They are used on the Oteco Type RR reset relief valves that protect mud pumps and mud manifolds, in standard, sour gas (H2S), low-temperature and high-temperature service. Parts cover 2-inch and 3-inch valves in the 5,000 psi class and the 3-inch 8,000 and 10,000 psi class."
+    },
+    {
+     "slot": "L",
+     "q": "Where are Oteco reset relief valve spare parts made?",
+     "a": "Oteco RRV spare parts are made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. We are an authorised Oteco distributor for the Middle East and supply with the maker's part numbers."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock Oteco reset relief valve spare parts in Dubai?",
+     "a": "We keep Oteco reset relief valve spare parts in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the valve size and pressure class, the part name and IH-OTC number, and the service. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,600 @@
+{
+ "family": "oteco-pressure-gauges",
+ "extraFacts": [
+  {
+   "fact": "Oteco gauge case sizes: the Model 6 has a 4-7/8 in dial case and stands about 9-7/8 in tall; the Model 7 has a 7-5/8 in case and stands about 14-3/4 in tall; the Model 8 has an 8-1/8 in case, stands about 13-1/4 in tall and has a 6-inch dial. The Model 6 and Model 8 range to 20,000 psi and the Model 7 to 6,000 psi.",
+   "source": "Oteco Model 6, Model 7 and Model 8 pressure gauge listings"
+  },
+  {
+   "fact": "Oteco states that the Model 6 gauge is interchangeable with the Cameron Type F, Totco Type 6, Geosource Type F, Wadeco Model 10 and Gauges International Model 6; and the Model 7 with the Cameron Type D, Totco Type 4, Geosource Type D, Wadeco Model 12 and Gauges International Model 7. The listing gives no equivalence statement for the Model 8.",
+   "source": "Oteco Model 6, Model 7 and Model 8 pressure gauge listings"
+  }
+ ],
+ "products": [
+  {
+   "slug": "oteco-model-6-pressure-gauge-standard",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 6 standard service pressure gauge used for?",
+     "a": "The Oteco Model 6 standard service gauge is a dampened drilling pressure gauge with a 4-7/8 in dial case, used on standpipe, mud pump, choke and kill, cementing and well-testing lines. Ranges run to 20,000 psi. This listing is the standard trim and has 118 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "What do the Oteco Model 6 part numbers IH-OTC-360000, 360001 and 361111 mean?",
+     "a": "Each part number is one combination of dial range and unit, dial face and end connection. IH-OTC-360000 is 0 to 10,000 psi, standard dial, on a 2-1/16 in 10,000 psi API flange (BX-152); 360001 is the luminous-dial version; 361111 is 0 to 1,000 psi on the 2-inch line pipe thread male by 1-inch female sub."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco Model 6 gauge interchangeable with a Cameron Type F or Totco Type 6?",
+     "a": "Yes, Oteco states that the Model 6 is interchangeable with the Cameron Type F, Totco Type 6, Geosource Type F, Wadeco Model 10 and Gauges International Model 6 gauges. Match the range, units and sub connection of your old gauge to a part number in the size table. Our [pressure gauge guide](/blog/pressure-gauge-guide) explains how to read a gauge nameplate."
+    },
+    {
+     "slot": "D",
+     "q": "Which dial ranges and units does the Oteco Model 6 standard gauge come in?",
+     "a": "The Model 6 standard gauge is listed in psi (0 to 1,000, 3,000, 6,000, 10,000, 15,000 and 20,000), bar (70 to 1,400), kPa (7,000 to 140,000) and kg/cm² (70 to 1,400). Each range comes with a standard or a luminous dial face. Use the [range selection guide](/blog/how-to-choose-a-pressure-gauge-range) to leave headroom above working pressure."
+    },
+    {
+     "slot": "D",
+     "q": "Which end connections does the Oteco Model 6 standard gauge offer?",
+     "a": "The standard sub is 2-inch line pipe thread male with 1-inch female (32 part numbers). Flanged options include 1-13/16 in BX-151, 2-1/16 in BX-152 at 10,000, 15,000 and 20,000 psi, 3-1/16 in BX-154, and R-24 and R-35 at 5,000 psi. Hammer-union options are 2-inch Figure 1502, 2002 and 602 male, and 3-inch Figure 1502 male."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure and temperature limits apply to the Oteco Model 6 standard gauge?",
+     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub end connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so a 20,000 psi dial needs a flanged or union sub. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "What does standard service mean on the Oteco Model 6, compared with sour gas and salt water?",
+     "a": "Standard service is the trim for ordinary mud. Oteco builds the Model 6 in three trims: standard, salt water and sour gas (H2S). If the line carries H2S use the [Model 6 sour gas gauge](/p/oteco-model-6-pressure-gauge-sour-gas), and for salt water the [Model 6 salt water gauge](/p/oteco-model-6-pressure-gauge-salt-water)."
+    },
+    {
+     "slot": "G",
+     "q": "Can I get ABS or DNV unit certification on the Oteco Model 6 standard gauge?",
+     "a": "Yes, ABS and DNV unit certification is available on request. Some flanged part numbers are also offered with stainless-inlaid ring grooves, or Charpy tested (IH-OTC-365381). Tell us the approval and ring-groove requirement when you enquire so we confirm the part number."
+    },
+    {
+     "slot": "H",
+     "q": "Which hammer-union halves does the Oteco Model 6 gauge sub mate with?",
+     "a": "Hammer-union subs are made to mate with FMC Weco Figure 1502, 2002 and 2202 unions. In the standard trim, 2-inch male subs are listed in Figure 1502 (for example IH-OTC-360058 at 0 to 15,000 psi), Figure 2002 (366131, 366141) and Figure 602 (366191)."
+    },
+    {
+     "slot": "I",
+     "q": "What protects the movement inside an Oteco Model 6 gauge, and can it be rebuilt?",
+     "a": "A built-in dampener protects the movement from pump pulsation and shock, heavy-duty seals keep line fluid out, and the mechanism runs in a special oil. A low-pressure plug on the back protects the case and lens. Oteco rebuilds its gauges and most Cameron-style gauges to like-new condition, and we arrange the exchange."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 6 standard gauge made?",
+     "a": "The Oteco Model 6 is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East and supplies with the maker's part numbers and documentation."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco Model 6 standard gauge, and what do you need for a quote?",
+     "a": "We keep the Oteco Model 6 standard service gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range and unit, dial face, end connection and the old gauge's make. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-6-pressure-gauge-sour-gas",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 6 sour gas (H2S) pressure gauge?",
+     "a": "The Oteco Model 6 sour gas gauge is the H2S trim of the dampened 4-7/8 in drilling gauge, for standpipe, choke and kill, cementing and well-testing lines. Ranges run to 20,000 psi. This listing has 138 part numbers, the largest of the Model 6 trims."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco Model 6 sour gas part numbers like IH-OTC-360002 and 361131?",
+     "a": "Each number is one build of range, unit, dial face and end connection. IH-OTC-360002 is 0 to 10,000 psi on a 2-1/16 in 10,000 psi flange (BX-152), 360003 is the luminous dial, and 361131 is 0 to 1,000 psi on the 2-inch line pipe thread male by 1-inch female sub."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco Model 6 sour gas gauge interchangeable with a Cameron Type F gauge?",
+     "a": "Oteco states that the Model 6 is interchangeable with the Cameron Type F, Totco Type 6, Geosource Type F, Wadeco Model 10 and Gauges International Model 6. That statement is for the Model 6 family, so match the old gauge's range and sub, then pick the sour gas trim. See the [pressure gauge guide](/blog/pressure-gauge-guide)."
+    },
+    {
+     "slot": "D",
+     "q": "Which sour gas Model 6 flange gauge fits a 2-1/16 inch 15,000 psi wellhead connection?",
+     "a": "Use a 2-1/16 in 15,000 psi API flange (BX-152) part: IH-OTC-360006 (0 to 15,000 psi, standard dial) or 360007 (luminous). Variants with stainless-inlaid or Inconel-inlaid ring grooves, such as 360070, are also listed. For 20,000 psi the flanged parts are 360010 and 360011."
+    },
+    {
+     "slot": "D",
+     "q": "Which Fig. 2202 and Figure 1502 unions are listed on the Oteco Model 6 sour gas gauge?",
+     "a": "The sour gas listing has 2-inch Figure 2202 male unions (for example IH-OTC-360055 and 366051, both 0 to 20,000 psi) and 2-inch Figure 1502 male unions (360059 at 0 to 10,000 psi and 360061 at 0 to 20,000 psi). Hammer-union subs are made to mate with FMC Weco unions."
+    },
+    {
+     "slot": "E",
+     "q": "What limits the pressure of an Oteco Model 6 sour gas gauge on a line pipe thread sub?",
+     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so 15,000 and 20,000 psi dials go on flanged or union subs. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "Is the Oteco Model 6 sour gas gauge suitable for H2S service?",
+     "a": "Yes, it is Oteco's sour gas (H2S) trim of the Model 6, listed for sour gas (H2S) service. The standard trim is on the [Model 6 standard gauge](/p/oteco-model-6-pressure-gauge-standard) and the salt water trim on the [Model 6 salt water gauge](/p/oteco-model-6-pressure-gauge-salt-water). Name the service when you order so we match the right trim."
+    },
+    {
+     "slot": "G",
+     "q": "Does the Oteco Model 6 sour gas gauge come with ABS or DNV unit certification?",
+     "a": "ABS and DNV unit certification is available on request. Some sour gas part numbers are marked PSL 2 or PSL 3 on the end connection, for example IH-OTC-364271, and Inconel-inlaid ring grooves are offered. Tell us what paperwork your project needs and we confirm which part number carries it."
+    },
+    {
+     "slot": "H",
+     "q": "How do I order an Oteco Model 6 sour gas gauge for a 1-13/16 inch BX-151 flange?",
+     "a": "Choose a 1-13/16 in API flange (BX-151) part: IH-OTC-361561 for 0 to 10,000 psi at 10,000 psi class, 361661 for 15,000 psi and 361761 for 20,000 psi. Stainless-inlaid versions exist, such as 363911 and 364321. Check your flange ring groove matches before ordering."
+    },
+    {
+     "slot": "I",
+     "q": "How is the Oteco Model 6 sour gas gauge protected against pump pulsation, and can it be rebuilt?",
+     "a": "A built-in dampener protects the movement from pulsation and shock, seals keep fluid out of the oil-filled mechanism, and a low-pressure plug on the back protects the case and lens. Oteco rebuilds and refurbishes its gauges, and most Cameron-style gauges, to like-new condition."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 6 sour gas gauge made?",
+     "a": "The Oteco Model 6 sour gas gauge is made by Oteco Inc. in Houston, Texas, USA, with the United States as country of origin. We are an authorised Oteco distributor for the Middle East and supply with the maker's documentation."
+    },
+    {
+     "slot": "M",
+     "q": "Can you supply the Oteco Model 6 sour gas gauge from stock?",
+     "a": "We keep the Oteco Model 6 sour gas gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. To quote, send the range and unit, dial face, end connection and any approval you need. Use the [quote form](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-6-pressure-gauge-salt-water",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 6 salt water service pressure gauge?",
+     "a": "The Oteco Model 6 salt water gauge is the salt water trim of the 4-7/8 in dampened drilling gauge, for standpipe, mud pump, choke and kill, cementing and well-testing lines. This listing has 32 part numbers, all on one sub connection."
+    },
+    {
+     "slot": "B",
+     "q": "What do Oteco Model 6 salt water part numbers such as IH-OTC-361121 and 361122 mean?",
+     "a": "IH-OTC-361121 is 0 to 1,000 psi with a standard dial and 361122 the same range with a luminous dial. Both use the 2-inch line pipe thread male by 1-inch female sub. Other numbers step through 3,000, 6,000 and 10,000 psi, then bar, kPa and kg/cm² dials."
+    },
+    {
+     "slot": "C",
+     "q": "Does the Oteco Model 6 salt water gauge replace a Cameron Type F or Totco Type 6?",
+     "a": "Oteco states that the Model 6 is interchangeable with the Cameron Type F, Totco Type 6, Geosource Type F, Wadeco Model 10 and Gauges International Model 6. For salt water duty choose this trim, then match the range, units and the 2-inch line pipe thread sub of the gauge you are replacing."
+    },
+    {
+     "slot": "D",
+     "q": "Which ranges does the Oteco Model 6 salt water gauge come in?",
+     "a": "In psi: 0 to 1,000, 3,000, 6,000 and 10,000. In bar: 70, 210, 420 and 700. In kPa: 7,000, 21,000, 42,000 and 70,000. In kg/cm²: 70, 210, 420 and 700. Each has a standard and a luminous dial, and the [range guide](/blog/how-to-choose-a-pressure-gauge-range) helps with headroom."
+    },
+    {
+     "slot": "D",
+     "q": "Does the Oteco Model 6 salt water gauge come with flanged or union subs?",
+     "a": "No, all 32 part numbers in this trim have the 2-inch line pipe thread male by 1-inch female sub. For flanged or hammer-union subs, use the [Model 6 standard gauge](/p/oteco-model-6-pressure-gauge-standard) or [sour gas gauge](/p/oteco-model-6-pressure-gauge-sour-gas), which list BX flanges and Figure 1502 unions."
+    },
+    {
+     "slot": "E",
+     "q": "What is the pressure limit of an Oteco Model 6 salt water gauge on a line pipe thread sub?",
+     "a": "The gauge's maximum pressure is the lower of its dial range and the sub rating, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. The listed ranges reach 10,000 psi. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "When should I choose the salt water trim of the Oteco Model 6 gauge?",
+     "a": "Choose the salt water trim when the line fluid is salt water rather than ordinary mud. Oteco builds the Model 6 in standard, salt water and sour gas (H2S) trims. For mud see the [standard trim](/p/oteco-model-6-pressure-gauge-standard), and for H2S the [sour gas trim](/p/oteco-model-6-pressure-gauge-sour-gas)."
+    },
+    {
+     "slot": "G",
+     "q": "Is ABS or DNV unit certification available for the Oteco Model 6 salt water gauge?",
+     "a": "Yes, ABS and DNV unit certification is available on request for the Model 6 range. State the approval you need when you ask for the salt water trim, along with the range and dial face, so we confirm the part number and the paperwork."
+    },
+    {
+     "slot": "H",
+     "q": "What does the Oteco Model 6 salt water gauge screw into?",
+     "a": "It fits a 2-inch line pipe thread female connection, as the sub is 2-inch line pipe thread male with a 1-inch female end. That 1-inch female port is the second connection. For flanges or hammer unions you need a different trim or an adaptor."
+    },
+    {
+     "slot": "I",
+     "q": "How does the Oteco Model 6 salt water gauge survive pump pulsation, and can it be refurbished?",
+     "a": "A built-in dampener protects the movement from pulsation and shock, heavy-duty seals keep the line fluid out and the mechanism runs in a special oil. Oteco rebuilds and refurbishes its gauges to like-new condition, and we arrange the exchange."
+    },
+    {
+     "slot": "L",
+     "q": "What is the origin of the Oteco Model 6 salt water gauge?",
+     "a": "The Oteco Model 6 salt water gauge is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you keep the Oteco Model 6 salt water gauge in stock?",
+     "a": "We keep the Oteco Model 6 salt water gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range, unit and dial face. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-7-pressure-gauge-standard",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 7 standard service pressure gauge?",
+     "a": "The Oteco Model 7 standard gauge is a large dampened drilling gauge with a 7-5/8 in dial case, used on standpipe, mud pump, choke and kill, cementing and well-testing lines. Ranges run to 6,000 psi. This listing is the standard trim and has 38 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco Model 7 part numbers such as IH-OTC-371111 and 372201?",
+     "a": "Each part number is one combination of range, dial face and sub. IH-OTC-371111 is 0 to 1,000 psi on the standard dial and 371112 is the luminous dial, both on the 2-inch line pipe thread female sub. 372201 is 0 to 6,000 psi on a 2-inch Figure 1502 male union."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco Model 7 gauge interchangeable with a Cameron Type D or Totco Type 4?",
+     "a": "Yes, Oteco states that the Model 7 is interchangeable with the Cameron Type D, Totco Type 4, Geosource Type D, Wadeco Model 12 and Gauges International Model 7 gauges. Match the range and the sub of the gauge you replace. The [pressure gauge guide](/blog/pressure-gauge-guide) shows how to read a gauge."
+    },
+    {
+     "slot": "D",
+     "q": "Which ranges does the Oteco Model 7 standard gauge offer in psi, bar and kPa?",
+     "a": "In psi: 0 to 1,000, 3,000, 5,000 and 6,000. In bar: 70, 210, 350 and 420. In kPa: 7,000, 21,000, 35,000 and 42,000. kg/cm² dials are 70, 210, 350 and 420. All come with a standard or luminous dial. See the [range selection guide](/blog/how-to-choose-a-pressure-gauge-range)."
+    },
+    {
+     "slot": "D",
+     "q": "Which end connections are available on the Oteco Model 7 standard gauge?",
+     "a": "The standard sub is 2-inch line pipe thread female. Other options are a 2-inch Figure 1502 male union (7 part numbers), a 2-1/16 in 5,000 psi API flange (R-24) and a 2-1/16 in 10,000 psi flange (BX-152). Salt water and sour gas trims are listed separately."
+    },
+    {
+     "slot": "E",
+     "q": "What is the pressure and temperature limit of the Oteco Model 7 standard gauge?",
+     "a": "The Model 7 reads to 6,000 psi, and its maximum pressure is the lower of the dial range and the rating of the sub connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "How does the standard Oteco Model 7 differ from the sour gas and salt water Model 7?",
+     "a": "The three trims share the 7-5/8 in case and the 6,000 psi limit; only the service differs. Standard suits ordinary mud, while the [Model 7 sour gas gauge](/p/oteco-model-7-pressure-gauge-sour-gas) is for H2S and the [Model 7 salt water gauge](/p/oteco-model-7-pressure-gauge-salt-water) for salt water."
+    },
+    {
+     "slot": "G",
+     "q": "Can the Oteco Model 7 standard gauge be supplied with ABS or DNV unit certification?",
+     "a": "Yes, ABS and DNV unit certification is available on request. Tell us the class society and the range when you enquire, so we confirm the part number. API flange versions may be ordered with stainless or Inconel-inlaid ring grooves on request."
+    },
+    {
+     "slot": "H",
+     "q": "Which hammer union does the Oteco Model 7 standard gauge mate with?",
+     "a": "The 2-inch male union subs, such as IH-OTC-372201 (0 to 6,000 psi) and 372323 (0 to 35,000 kPa), are made to mate with FMC Weco Figure 1502 unions. Seven part numbers use the Figure 1502 sub. Check the figure number on the line before ordering."
+    },
+    {
+     "slot": "I",
+     "q": "Can an Oteco Model 7 gauge be rebuilt, and what protects the movement?",
+     "a": "Yes, Oteco rebuilds and refurbishes its gauges and most Cameron-style gauges to like-new condition, and we arrange the exchange. A built-in dampener protects the movement from pulsation and shock, and a low-pressure plug on the back protects the case and lens."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 7 standard gauge made?",
+     "a": "The Oteco Model 7 is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East and supplies with the maker's documentation."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco Model 7 standard gauge?",
+     "a": "We keep the Oteco Model 7 standard service gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range, unit, dial face and sub connection. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-7-pressure-gauge-sour-gas",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 7 sour gas (H2S) pressure gauge?",
+     "a": "The Oteco Model 7 sour gas gauge is the H2S trim of the 7-5/8 in dampened drilling gauge, for standpipe, mud pump, choke and kill, cementing and well-testing lines. Ranges run to 6,000 psi. This listing has 35 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "What do Oteco Model 7 sour gas part numbers IH-OTC-371131 and 372433 mean?",
+     "a": "IH-OTC-371131 is 0 to 1,000 psi on a standard dial and 371132 is the luminous dial, both on the 2-inch line pipe thread female sub. IH-OTC-372433 is 0 to 6,000 psi on a 2-1/16 in 10,000 psi API flange (BX-152). Each number is one range, dial and sub combination."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco Model 7 sour gas gauge interchangeable with Cameron Type D and Totco Type 4?",
+     "a": "Oteco states that the Model 7 is interchangeable with the Cameron Type D, Totco Type 4, Geosource Type D, Wadeco Model 12 and Gauges International Model 7. For H2S duty, specify the sour gas trim and match the old gauge's range and sub. The [pressure gauge guide](/blog/pressure-gauge-guide) has selection advice."
+    },
+    {
+     "slot": "D",
+     "q": "Which pressure ranges are listed for the Oteco Model 7 sour gas gauge?",
+     "a": "In psi: 0 to 1,000, 3,000, 5,000 and 6,000. In bar: 70, 210, 350 and 420. In kPa: 7,000, 21,000 and 42,000, and kg/cm² dials are 70, 210, 350 and 420. All come with standard or luminous dial faces."
+    },
+    {
+     "slot": "D",
+     "q": "Which flanged and union versions of the Oteco Model 7 sour gas gauge exist?",
+     "a": "Most sour gas Model 7 parts use the 2-inch line pipe thread female sub. Flanged versions are a 2-1/16 in 5,000 psi API flange (R-24, IH-OTC-372341 and 372423) and a 2-1/16 in 10,000 psi flange (BX-152, 372351 and 372433). Unions are 2-inch Figure 1502 male (372434 and 372471)."
+    },
+    {
+     "slot": "E",
+     "q": "What limits pressure on the Oteco Model 7 sour gas gauge?",
+     "a": "The gauge's maximum pressure is the lower of its dial range and the sub connection rating. The Model 7 dial stops at 6,000 psi, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "Is the Oteco Model 7 sour gas gauge listed for H2S service?",
+     "a": "Yes, it is Oteco's sour gas (H2S) service trim of the Model 7. For ordinary mud use the [standard Model 7](/p/oteco-model-7-pressure-gauge-standard), and for salt water the [salt water Model 7](/p/oteco-model-7-pressure-gauge-salt-water). Always state the service when you order."
+    },
+    {
+     "slot": "G",
+     "q": "Does the Oteco Model 7 sour gas gauge carry ABS or DNV certification?",
+     "a": "ABS and DNV unit certification is available on request, rather than fitted as standard. Ask for it when you enquire and give the range and sub, so we confirm which Oteco part number can be supplied with it."
+    },
+    {
+     "slot": "H",
+     "q": "Which union does the Oteco Model 7 sour gas gauge mate with?",
+     "a": "The 2-inch male union subs, IH-OTC-372434 (0 to 42,000 kPa) and 372471 (0 to 5,000 psi), are made to mate with FMC Weco Figure 1502 unions. Three part numbers use that sub. The female thread parts screw to a 2-inch line pipe thread male fitting."
+    },
+    {
+     "slot": "I",
+     "q": "How is the Oteco Model 7 sour gas gauge protected from vibration, and is service available?",
+     "a": "A built-in dampener protects the movement from pump pulsation and shock, seals keep fluid out of the oil-filled mechanism, and a low-pressure plug on the back protects the case and lens. Oteco rebuilds and refurbishes its gauges to like-new condition, and we arrange the exchange."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 7 sour gas gauge made?",
+     "a": "The Oteco Model 7 sour gas gauge is made by Oteco Inc. in Houston, Texas, USA, with the United States as country of origin. We are an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Can I order the Oteco Model 7 sour gas gauge from your Dubai stock?",
+     "a": "We keep the Oteco Model 7 sour gas gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range, unit, dial face and sub connection. Use the [quote form](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-7-pressure-gauge-salt-water",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 7 salt water service pressure gauge?",
+     "a": "The Oteco Model 7 salt water gauge is the salt water trim of the 7-5/8 in dampened drilling gauge, with ranges to 6,000 psi. It is used on standpipe, mud pump, choke and kill, cementing and well-testing lines. This listing has 26 part numbers."
+    },
+    {
+     "slot": "B",
+     "q": "How are Oteco Model 7 salt water part numbers such as IH-OTC-371121 and 374422 arranged?",
+     "a": "IH-OTC-371121 is 0 to 1,000 psi on a standard dial, 371122 is the luminous dial, and the numbers step through the other ranges and units. IH-OTC-374422 is the last number in the list. All use the same 2-inch line pipe thread female sub."
+    },
+    {
+     "slot": "C",
+     "q": "Is the Oteco Model 7 salt water gauge a Cameron Type D or Totco Type 4 replacement?",
+     "a": "Oteco states that the Model 7 is interchangeable with the Cameron Type D, Totco Type 4, Geosource Type D, Wadeco Model 12 and Gauges International Model 7. Select the salt water trim for the fluid, then match the range and the 2-inch line pipe thread sub. See the [pressure gauge guide](/blog/pressure-gauge-guide)."
+    },
+    {
+     "slot": "D",
+     "q": "Which ranges does the Oteco Model 7 salt water gauge cover?",
+     "a": "In psi: 0 to 1,000, 3,000, 5,000 and 6,000. In bar: 70, 210, 350 and 420. In kPa: 7,000 and 21,000. kg/cm² dials are 70, 210, 350 and 420. Each range has a standard and a luminous dial face."
+    },
+    {
+     "slot": "D",
+     "q": "Which sub connection does the Oteco Model 7 salt water gauge have?",
+     "a": "All 26 part numbers use a 2-inch line pipe thread female sub. There are no flanged or union versions in the salt water trim. For flanges or a Figure 1502 union, use the [standard Model 7](/p/oteco-model-7-pressure-gauge-standard) or the [sour gas Model 7](/p/oteco-model-7-pressure-gauge-sour-gas)."
+    },
+    {
+     "slot": "E",
+     "q": "What are the pressure and temperature limits of the Oteco Model 7 salt water gauge?",
+     "a": "The Model 7 reads to 6,000 psi, and the working limit is the lower of the dial range and the sub rating. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "What does the salt water trim of the Oteco Model 7 gauge mean?",
+     "a": "It is the trim Oteco offers for salt water service, next to the standard mud trim and the sour gas (H2S) trim. If the same line may carry H2S use the sour gas version instead, and tell us the service on the order."
+    },
+    {
+     "slot": "G",
+     "q": "Is ABS or DNV unit certification available for the Oteco Model 7 salt water gauge?",
+     "a": "Yes, ABS and DNV unit certification is available on request for the Model 7 gauges. Quote the range, unit and dial face together with the class society, and we confirm the Oteco part number."
+    },
+    {
+     "slot": "H",
+     "q": "Which fittings does the Oteco Model 7 salt water gauge connect to?",
+     "a": "The 2-inch line pipe thread female sub fits a 2-inch line pipe thread male connection on the standpipe or manifold. The salt water trim has no hammer-union halves to mate. Plan any adaptor on the line side, not on the gauge."
+    },
+    {
+     "slot": "I",
+     "q": "Can the Oteco Model 7 salt water gauge be rebuilt, and what does the dampener do?",
+     "a": "Yes, Oteco rebuilds and refurbishes its gauges to like-new condition and we arrange the exchange. The built-in dampener protects the movement from pump pulsation and mechanical shock, and the mechanism runs in a special oil for temperature, vibration and shock resistance."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 7 salt water gauge made?",
+     "a": "The Oteco Model 7 salt water gauge is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco Model 7 salt water gauge?",
+     "a": "We keep the Oteco Model 7 salt water gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range, unit and dial face. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-8-pressure-gauge-standard",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 8 standard service pressure gauge?",
+     "a": "The Oteco Model 8 standard gauge is a dampened drilling gauge with an 8-1/8 in dial case and a large 6-inch dial behind an impact-resistant acrylic lens. Ranges run to 20,000 psi. This listing is the standard trim and has 58 part numbers, including dual-unit dials."
+    },
+    {
+     "slot": "B",
+     "q": "What do Oteco Model 8 part numbers IH-OTC-381111, 381211 and 382001 mean?",
+     "a": "IH-OTC-381111 is 0 to 1,000 psi on a standard dial on the 2-inch line pipe thread male by 1-inch female sub. 381211 is a dual-unit dial, 0 to 3,000 psi with 0 to 210 kg/cm². 382001 is 0 to 10,000 psi with 0 to 700 kg/cm² on a 2-inch Figure 1502 male union."
+    },
+    {
+     "slot": "K",
+     "q": "How does the Oteco Model 8 differ from the Model 6 and Model 7 gauges?",
+     "a": "The Model 8 has an 8-1/8 in case and a 6-inch dial, between the 4-7/8 in Model 6 and the 7-5/8 in Model 7, and it ranges to 20,000 psi like the Model 6. It is also the model offered with dual-unit dials. Oteco publishes no Cameron or Totco equivalence for it, so check the old gauge against the table. See the [Model 6 standard](/p/oteco-model-6-pressure-gauge-standard)."
+    },
+    {
+     "slot": "D",
+     "q": "Which dual-unit dials does the Oteco Model 8 standard gauge offer?",
+     "a": "Dual-unit dials show psi with kg/cm² or bar or kPa with psi: 0 to 3,000 psi with 0 to 210 kg/cm², 0 to 6,000 psi with 0 to 420 kg/cm², 0 to 10,000 psi with 0 to 700 kg/cm², 0 to 15,000 psi with 0 to 1,000 kg/cm², and 0 to 700 bar with 0 to 10,000 psi. Single-unit dials go up to 20,000 psi."
+    },
+    {
+     "slot": "D",
+     "q": "Which end connections does the Oteco Model 8 standard gauge come with?",
+     "a": "The standard sub is 2-inch line pipe thread male by 1-inch female (22 part numbers). Others are 2-inch Figure 1502 male unions (11), 2-inch Figure 2002, 3-inch Figure 1502 male and female, and flanges: 1-13/16 in BX-151, 2-1/16 in BX-152, 2-1/16 in R-24 and 3-1/8 in R-35."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure and temperature limits apply to the Oteco Model 8 standard gauge?",
+     "a": "The maximum pressure is the lower of the dial range and the rating of the sub end connection, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. A 20,000 psi dial therefore needs a flange or union sub. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "Should I use the standard, salt water or sour gas Oteco Model 8?",
+     "a": "Match the trim to the line fluid: standard for ordinary mud, salt water for salt water and sour gas (H2S) for H2S. The listings are the [Model 8 salt water gauge](/p/oteco-model-8-pressure-gauge-salt-water) and the [Model 8 sour gas gauge](/p/oteco-model-8-pressure-gauge-sour-gas)."
+    },
+    {
+     "slot": "G",
+     "q": "Can I get ABS or DNV unit certification on the Oteco Model 8 standard gauge?",
+     "a": "Yes, ABS and DNV unit certification is available on request. Part numbers with PSL 3 on the end connection, for example IH-OTC-382362, are also listed, and flanges may be ordered with stainless or Inconel-inlaid ring grooves. Tell us the requirement and we confirm the part number."
+    },
+    {
+     "slot": "H",
+     "q": "Which hammer-union halves match the Oteco Model 8 gauge subs?",
+     "a": "The Figure 1502, 2002 and 2202 male union subs are made to mate with FMC Weco unions. The standard Model 8 lists 2-inch Figure 1502 male (for example IH-OTC-382001), 2-inch Figure 2002 (382751) and 3-inch Figure 1502 male and female (382091 and 382161)."
+    },
+    {
+     "slot": "I",
+     "q": "How does the Oteco Model 8 gauge cope with pump pulsation, and can it be rebuilt?",
+     "a": "A built-in dampener protects the movement from pump pulsation and mechanical shock, heavy-duty seals keep fluid out and the mechanism runs in a special oil. Oteco rebuilds and refurbishes its gauges to like-new condition, and we arrange the exchange."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 8 standard gauge made?",
+     "a": "The Oteco Model 8 is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East and supplies with the maker's documentation."
+    },
+    {
+     "slot": "M",
+     "q": "Do you stock the Oteco Model 8 standard gauge, and what do you need to quote?",
+     "a": "We keep the Oteco Model 8 standard service gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range and units (single or dual), dial face and sub. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-8-pressure-gauge-sour-gas",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 8 sour gas (H2S) pressure gauge?",
+     "a": "The Oteco Model 8 sour gas gauge is the H2S trim of the 8-1/8 in dampened drilling gauge with a 6-inch dial. Ranges run to 20,000 psi and dual-unit dials are offered. This listing has 66 part numbers, the largest of the Model 8 trims."
+    },
+    {
+     "slot": "B",
+     "q": "How do I read Oteco Model 8 sour gas part numbers like IH-OTC-381131 and 382193?",
+     "a": "IH-OTC-381131 is 0 to 1,000 psi on the 2-inch line pipe thread male by 1-inch female sub. IH-OTC-382193 is 0 to 10,000 psi with 0 to 700 kg/cm² on a 2-inch Figure 1502 male union marked PSL 3, and 382192 is the PSL 2 version. Each number is one range, dial and sub combination."
+    },
+    {
+     "slot": "K",
+     "q": "Which is better for sour gas, the Oteco Model 8 or the Model 6 sour gas gauge?",
+     "a": "Both come in sour gas (H2S) trim and range to 20,000 psi. The Model 8 has the larger 8-1/8 in case and a 6-inch dial, and offers dual-unit dials, while the [Model 6 sour gas gauge](/p/oteco-model-6-pressure-gauge-sour-gas) has a 4-7/8 in case. Choose by dial size and whether you need dual units."
+    },
+    {
+     "slot": "D",
+     "q": "Which dual-unit ranges are listed for the Oteco Model 8 sour gas gauge?",
+     "a": "Dual-unit dials include 0 to 3,000 psi with 0 to 210 kg/cm², 0 to 6,000 psi with 0 to 420 kg/cm², 0 to 10,000 psi with 0 to 700 kg/cm², 0 to 15,000 psi with 0 to 1,000 kg/cm² or 1,060 kg/cm², and 0 to 1,040 bar with 0 to 15,000 psi. Single-unit dials reach 20,000 psi."
+    },
+    {
+     "slot": "D",
+     "q": "Which flanges and unions does the Oteco Model 8 sour gas gauge offer?",
+     "a": "Options include 2-inch Figure 1502 male (10 part numbers) and female unions, 2-inch Figure 2202 male, and flanges 1-13/16 in BX-151, 2-1/16 in BX-152 and R-24, and 3-1/8 in R-35, with stainless or Inconel-inlaid ring grooves on some. The 2-inch line pipe thread sub has 22 part numbers."
+    },
+    {
+     "slot": "E",
+     "q": "What are the pressure and temperature limits of the Oteco Model 8 sour gas gauge?",
+     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub end connection, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "Is the Oteco Model 8 sour gas gauge listed for H2S service?",
+     "a": "Yes, the 66 part numbers on this listing are the sour gas (H2S) trim. For mud use the [standard Model 8](/p/oteco-model-8-pressure-gauge-standard) and for salt water the [salt water Model 8](/p/oteco-model-8-pressure-gauge-salt-water). State the service on your enquiry."
+    },
+    {
+     "slot": "G",
+     "q": "Does the Oteco Model 8 sour gas gauge come with ABS or DNV certification?",
+     "a": "ABS and DNV unit certification is available on request. Some part numbers carry PSL 2 or PSL 3 on the end connection, and Inconel-inlaid ring grooves are offered, for example IH-OTC-382423 and 382433. Tell us the paperwork needed and we confirm the part number."
+    },
+    {
+     "slot": "H",
+     "q": "Which hammer-union halves mate with the Oteco Model 8 sour gas gauge?",
+     "a": "The Figure 1502 and 2202 male union subs are made to mate with FMC Weco unions. Examples are IH-OTC-382191 (Figure 1502 male, 0 to 10,000 psi with 0 to 700 kg/cm²) and 381662 and 381862 on the Figure 2202 male sub at 15,000 psi. A female Figure 1502 sub, 383551, is also listed."
+    },
+    {
+     "slot": "I",
+     "q": "How do I service or refurbish an Oteco Model 8 sour gas gauge?",
+     "a": "Oteco rebuilds and refurbishes its gauges to like-new condition, and we arrange the exchange. The built-in dampener, heavy-duty seals and oil-filled movement protect it from pulsation and shock, and a low-pressure plug on the back protects the case and lens."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 8 sour gas gauge made?",
+     "a": "The Oteco Model 8 sour gas gauge is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East."
+    },
+    {
+     "slot": "M",
+     "q": "Can you supply the Oteco Model 8 sour gas gauge from Dubai stock?",
+     "a": "We keep the Oteco Model 8 sour gas gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range, unit or dual-unit dial, dial face and sub connection. Use the [quote form](/quote)."
+    }
+   ]
+  },
+  {
+   "slug": "oteco-model-8-pressure-gauge-salt-water",
+   "faqs": [
+    {
+     "slot": "A",
+     "q": "What is the Oteco Model 8 salt water service pressure gauge?",
+     "a": "The Oteco Model 8 salt water gauge is the salt water trim of the 8-1/8 in dampened drilling gauge with a 6-inch dial. It is used on standpipe, mud pump, choke and kill, cementing and well-testing lines. This listing has 23 part numbers, all on one sub."
+    },
+    {
+     "slot": "B",
+     "q": "What do Oteco Model 8 salt water part numbers IH-OTC-381121 and 383522 mean?",
+     "a": "IH-OTC-381121 is 0 to 1,000 psi on a standard dial and 381122 the luminous dial. The numbers continue through the single-unit and dual-unit ranges up to IH-OTC-383522. All use the 2-inch line pipe thread male by 1-inch female sub."
+    },
+    {
+     "slot": "K",
+     "q": "Why choose the Oteco Model 8 salt water gauge over the Model 7 salt water gauge?",
+     "a": "Choose the Model 8 if you want dual-unit dials or ranges above 6,000 psi on the salt water trim. The Model 8 has an 8-1/8 in case and a 6-inch dial; the [Model 7 salt water gauge](/p/oteco-model-7-pressure-gauge-salt-water) has a 7-5/8 in case and stops at 6,000 psi."
+    },
+    {
+     "slot": "D",
+     "q": "Which dual-unit dials does the Oteco Model 8 salt water gauge offer?",
+     "a": "Dual-unit dials include 0 to 3,000 psi with 0 to 210 kg/cm², 0 to 6,000 psi with 0 to 420 kg/cm², 0 to 10,000 psi with 0 to 700 kg/cm², 0 to 420 bar with 0 to 6,000 psi, 0 to 7,000 kPa with 0 to 1,000 psi and 0 to 70,000 kPa with 0 to 10,000 psi. Single-unit dials include 0 to 700 bar."
+    },
+    {
+     "slot": "D",
+     "q": "Which sub connection does the Oteco Model 8 salt water gauge have?",
+     "a": "All 23 part numbers use a 2-inch line pipe thread male by 1-inch female sub. There are no flanged or union versions in the salt water trim. For flanges or Figure 1502 unions use the [standard Model 8](/p/oteco-model-8-pressure-gauge-standard) or the [sour gas Model 8](/p/oteco-model-8-pressure-gauge-sour-gas)."
+    },
+    {
+     "slot": "E",
+     "q": "What pressure limit applies to the Oteco Model 8 salt water gauge?",
+     "a": "The maximum pressure is the lower of the dial range and the rating of the sub end connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so choose the range with that in mind. Operating temperature is -20 °F to 180 °F."
+    },
+    {
+     "slot": "F",
+     "q": "What is the salt water trim on the Oteco Model 8 gauge?",
+     "a": "It is Oteco's trim for salt water service, offered alongside the standard mud trim and the sour gas (H2S) trim of the same Model 8. Specify the service on the order so we match the trim, and use the sour gas trim if H2S is present."
+    },
+    {
+     "slot": "G",
+     "q": "Is ABS or DNV unit certification available for the Oteco Model 8 salt water gauge?",
+     "a": "Yes, ABS and DNV unit certification is available on request. Give us the class society, the range and whether you need dual units, and we confirm which Oteco part number can be supplied with the paperwork."
+    },
+    {
+     "slot": "H",
+     "q": "What does the Oteco Model 8 salt water gauge screw onto?",
+     "a": "It screws onto a 2-inch line pipe thread female port, through its 2-inch male sub, and the 1-inch female end is the second connection. There are no hammer-union or flange versions in this trim."
+    },
+    {
+     "slot": "I",
+     "q": "What protects the Oteco Model 8 salt water gauge from pump pulsation?",
+     "a": "A built-in dampener protects the movement from pulsation and shock, heavy-duty seals keep line fluid out and the mechanism runs in a special oil. A low-pressure plug on the back protects the case and lens. Oteco also rebuilds its gauges, and we arrange the exchange."
+    },
+    {
+     "slot": "L",
+     "q": "Where is the Oteco Model 8 salt water gauge made?",
+     "a": "The Oteco Model 8 salt water gauge is made by Oteco Inc. in Houston, Texas, USA; the country of origin is the United States. Indus Hydraulics is an authorised Oteco distributor for the Middle East, supplying with the maker's documentation."
+    },
+    {
+     "slot": "M",
+     "q": "Do you keep the Oteco Model 8 salt water gauge in stock?",
+     "a": "We keep the Oteco Model 8 salt water gauge in stock at our warehouse in Dubai, UAE, and ship worldwide with the best lead times. For a quote send the range, single or dual-unit dial and dial face. Use the [quote form](/quote) or [contact us](/contact)."
+    }
+   ]
+  }
+ ]
+}
