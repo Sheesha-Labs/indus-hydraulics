@@ -177,6 +177,7 @@ export async function submitQualityControlEnquiry(formData: FormData): Promise<S
     ],
     message: input.scope || null,
     attachmentCount: attachments.length,
+    files: attachments,
     pageUrl: urlFor(enquiry.path),
   })
 

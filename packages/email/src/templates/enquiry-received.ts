@@ -32,6 +32,8 @@ export type EnquiryReceivedProps = {
   /** Free text the visitor wrote — part list, description, message. */
   message?: string | null
   attachmentCount?: number
+  /** Files received but too large to attach to this email — named so nobody thinks they were lost. */
+  notAttached?: readonly string[]
   /** The page the form was on. */
   pageUrl?: string | null
   /** What happens next, e.g. "An engineer will reply to this email, usually within 4 business hours." */
@@ -72,6 +74,11 @@ ${
 <div style="margin:0 0 20px 0;padding:12px 16px;border-left:3px solid ${BRAND.border};white-space:pre-wrap;font-size:14px;line-height:1.55;color:${BRAND.ink};">${escapeHtml(props.message)}</div>`
     : ''
 }
+${
+  props.notAttached && props.notAttached.length > 0
+    ? `<p style="margin:0 0 16px 0;font-size:13px;line-height:1.55;color:${BRAND.ink2};">${escapeHtml(notAttachedNote(props.notAttached))}</p>`
+    : ''
+}
 <p style="margin:0;font-size:12px;color:${BRAND.muted};">If you did not send this enquiry on indushydraulics.com, ignore this email.</p>
 `.trim()
 
@@ -91,11 +98,16 @@ ${
     props.formLabel.toUpperCase(),
     ...rows.map(([label, value]) => `${label}: ${value}`),
     ...(props.message ? ['', 'MESSAGE', props.message] : []),
+    ...(props.notAttached && props.notAttached.length > 0 ? ['', notAttachedNote(props.notAttached)] : []),
     '',
     'If you did not send this enquiry on indushydraulics.com, ignore this email.',
   ].join('\n')
 
   return { subject, html, text }
+}
+
+function notAttachedNote(names: readonly string[]): string {
+  return `Too large to attach to this email, but received and kept on file with your enquiry: ${names.join(', ')}.`
 }
 
 function row(label: string, value: string): string {

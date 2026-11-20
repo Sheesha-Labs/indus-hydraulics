@@ -59,3 +59,19 @@ export function enquiryBody(input: { about: string; url: string; partNumber?: st
 
 /** Default for CMS link fields that used to point at the retired quote cart. */
 export const ENQUIRY_LINK = enquiryMailto({ subject: 'Parts enquiry' })
+
+/**
+ * The visitor's own filename, made safe for a MIME header, ending in the
+ * extension the server assigned at upload (the allow-listed type, not
+ * whatever the original name claimed).
+ */
+export function enquiryAttachmentFilename(file: { path: string; label: string }): string {
+  const ext = /\.([a-z0-9]{2,5})$/.exec(file.path)?.[1] ?? 'bin'
+  const base =
+    file.label
+      .replace(/[\\/:*?"<>|\r\n\t]+/g, '_')
+      .replace(/\.[a-z0-9]{2,5}$/i, '')
+      .trim()
+      .slice(0, 100) || 'attachment'
+  return `${base}.${ext}`
+}

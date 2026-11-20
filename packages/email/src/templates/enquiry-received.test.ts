@@ -49,6 +49,13 @@ describe('renderEnquiryReceived', () => {
     expect(html).not.toContain('<a href="http://evil"')
   })
 
+  it('names files that were received but not attached', () => {
+    const { text, html } = renderEnquiryReceived({ ...base, notAttached: ['site-drawing.pdf'] })
+    expect(text).toContain('Too large to attach to this email, but received and kept on file with your enquiry: site-drawing.pdf.')
+    expect(html).toContain('site-drawing.pdf')
+    expect(renderEnquiryReceived(base).text).not.toContain('Too large to attach')
+  })
+
   it('carries no admin links', () => {
     expect(renderEnquiryReceived(base).html).not.toContain('/admin')
   })

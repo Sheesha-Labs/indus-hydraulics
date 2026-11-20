@@ -193,6 +193,7 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
     ],
     message: input.description || null,
     attachmentCount: attachments.length,
+    files: attachments,
     pageUrl: urlFor(`/industries/${page.slug}`),
   })
 
