@@ -1,0 +1,866 @@
+{
+ "source": "Maker catalogue and website data 2026-11-20 — Ferryl Wave 2 (coatings, cleaning and rust treatment, sealant)",
+ "imageDir": "",
+ "brandSlug": "ferryl",
+ "specTemplate": {
+  "slug": "marine-chemical-spec",
+  "name": "Marine Maintenance Chemical",
+  "position": 44,
+  "description": "Coatings, cleaners, rust treatments and sealants for ship maintenance: type, chemistry, colour, finish, surfaces, application and packs.",
+  "fields": [
+   {
+    "key": "product_type",
+    "label": "Product type",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 0
+   },
+   {
+    "key": "chemistry",
+    "label": "Chemistry",
+    "dataType": "text",
+    "group": "Composition",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 1
+   },
+   {
+    "key": "colour",
+    "label": "Colour",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 2
+   },
+   {
+    "key": "finish",
+    "label": "Film / finish",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 3
+   },
+   {
+    "key": "surfaces",
+    "label": "Surfaces",
+    "dataType": "text",
+    "group": "Application",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 4
+   },
+   {
+    "key": "application_method",
+    "label": "Application method",
+    "dataType": "text",
+    "group": "Application",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 5
+   },
+   {
+    "key": "typical_applications",
+    "label": "Typical applications",
+    "dataType": "text",
+    "group": "Application",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 6
+   },
+   {
+    "key": "container_sizes",
+    "label": "Container sizes",
+    "dataType": "text",
+    "group": "Commercial",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 7
+   },
+   {
+    "key": "dilution",
+    "label": "Dilution",
+    "dataType": "text",
+    "group": "Application",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 8
+   },
+   {
+    "key": "safety",
+    "label": "Safety",
+    "dataType": "text",
+    "group": "Compliance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 9
+   },
+   {
+    "key": "maker",
+    "label": "Maker",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 10
+   }
+  ]
+ },
+ "categories": [
+  {
+   "slug": "marine-equipment-uae",
+   "name": "Marine",
+   "parentSlug": null,
+   "position": 25,
+   "shortDescription": "Anchor chain in Grades U1 to U3 and offshore mooring chain in ORQ and R3 to R5, joining shackles and swivels, ship and offshore anchors, chasers, deck fittings and mooring buoys — each size under an Indus part number, supplied from Dubai with class certificates on request.",
+   "seoTitle": "Anchor Chain, Anchors & Mooring Equipment in UAE",
+   "seoDescription": "Anchor chain U1–U3, offshore mooring chain R3–R5, shackles, swivels, anchors, deck fittings and buoys from Dubai. Indus part numbers; class certificates.",
+   "focusKeyword": "anchor chain and mooring equipment uae"
+  },
+  {
+   "slug": "ship-maintenance-chemicals",
+   "name": "Ship Maintenance Chemicals",
+   "parentSlug": "marine-equipment-uae",
+   "position": 4,
+   "shortDescription": "Ferryl ship maintenance chemicals: anticorrosive and fluorescent safety coatings, rust removers, penetrating oil, degreasers and cleaners, odour neutraliser and pipe sealant for decks, engine rooms and accommodation.",
+   "seoTitle": "Ship Maintenance Chemicals — Coatings & Cleaners",
+   "seoDescription": "Ferryl ship maintenance chemicals: anticorrosive and fluorescent coatings, rust remover, penetrating oil, degreasers, cleaners and pipe sealant.",
+   "focusKeyword": "ship maintenance chemicals",
+   "bands": {
+    "hero": {
+     "intro": "The coatings, rust treatments and cleaners a ship gets through between dry-dockings, from Ferryl."
+    },
+    "guidance": {
+     "heading": "Two shelves",
+     "body": "Coatings protect: 400R for rubber and standing rigging, 401 for stainless and brass, 502 and 505 for safety marking, 404 to prepare and thin. Chemicals clean and treat: Ferrycid for rust, Rustoil for seized parts, Cleaning Fluid, Electroclean, Fermaid and Cabin Clean for each kind of dirt, Air-Refreshment for odours, Armacit for pipe joints."
+    },
+    "service": {
+     "heading": "Ferryl, supplied in the Middle East",
+     "body": "Indus Hydraulics distributes Ferryl in the Middle East. Tell us the product and pack, or the surface and the problem, and we confirm what to use and the delivery. Safety data sheets on request."
+    }
+   }
+  },
+  {
+   "slug": "anticorrosive-safety-coatings",
+   "name": "Anticorrosive & Safety Coatings",
+   "parentSlug": "ship-maintenance-chemicals",
+   "position": 0,
+   "shortDescription": "Ferryl one-component anticorrosive coatings — 400R white for hoses, cables and rigging, 401 transparent for stainless and brass, 502 and 505 fluorescent safety colours — and 404 thinner and surface cleaner.",
+   "seoTitle": "Anticorrosive & Fluorescent Safety Coatings",
+   "seoDescription": "Ferryl flexible anticorrosive coatings: 400R white for hoses and rigging, 401 clear for stainless, 502/505 fluorescent safety colours, 404 thinner.",
+   "focusKeyword": "anticorrosive coatings marine",
+   "bands": {
+    "hero": {
+     "intro": "Flexible, one-component coatings that protect steel, rubber and stainless on deck without cracking, from Ferryl."
+    },
+    "guidance": {
+     "heading": "Choose by the surface",
+     "body": "Rubber hoses, cables and standing rigging: 400R white. Stainless steel, brass and alloy fittings you want to keep bright: 401 clear. Hazards and safety gear: 502 orange-red or 505 yellow fluorescent. Clean every surface with 404 first; 404 also thins the coatings."
+    },
+    "standards": {
+     "heading": "Why they do not crack",
+     "body": "Plastic components keep the dry film flexible through vibration and movement, rust inhibitors protect the metal, and UV stabilisers hold the film and colour in sunlight. They resist oil, grease, petrol and salt water."
+    },
+    "service": {
+     "heading": "Ferryl, supplied in the Middle East",
+     "body": "Indus Hydraulics distributes Ferryl in the Middle East. Tell us the product and pack, or the surface and the problem, and we confirm what to use and the delivery. Safety data sheets on request."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "Can 400R go on hydraulic hoses?",
+       "a": "Yes — it is designed to adhere to rubber and stay flexible, and it shields the hose from UV and salt. Clean the hose with Ferryl 404 first."
+      },
+      {
+       "q": "Orange-red or yellow fluorescent?",
+       "a": "Ferryl uses 502 orange-red on life-saving equipment, extinguishers, alarms and exits, and 505 yellow on steps, ladders, railings and walkways. Check flag and class rules for regulated colours."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-FRY-400R",
+   "slug": "ferryl-400r-anticorrosive-white-coating",
+   "title": "Ferryl 400R Anticorrosive White Coating",
+   "category": "anticorrosive-safety-coatings",
+   "focusKeyword": "white flexible coating for hoses and cables",
+   "descriptionShort": "Ferryl 400R is a white, flexible, one-component coating for rubber hoses, electrical cables and standing rigging on deck: it shields rubber from UV and salt and does not crack as wires vibrate. 12 kg drum.",
+   "descriptionLong": "<p>Ferryl 400R is a white coating that dries like paint but stays flexible like plastic. It was made for two jobs paint and grease both do badly on deck: protecting <strong>rubber</strong> — hydraulic hoses, electrical cables, seals — and protecting <strong>standing rigging</strong> such as mast, stay and guy wires.</p><h3>Rubber hoses and cables</h3><p>Rubber stays soft because of plasticisers, and heat, sunlight and salt water drive them out until the rubber dries, cracks and fails — a leaking hydraulic hose or a short-circuited cable. Paint does not stick to rubber and cracks off; grease washes away. 400R is designed to adhere to rubber, flexes with it, and puts a white barrier between the rubber and the sun, slowing the loss of plasticisers and extending the life of the hose or cable.</p><h3>Standing rigging</h3><p>Mast and stay wires never stop vibrating, so a hard paint film soon cracks and lets salt water in, while grease drips and washes off. 400R dries completely but stays flexible, so it keeps protecting the wire, and it leaves a clean white finish.</p><h3>How it performs</h3><ul><li>Plastic components keep the dry film flexible, so it does not crack under vibration or movement.</li><li>Chemically active rust inhibitors.</li><li>UV stabilisers for a long life in sunlight.</li><li>Adheres to most surfaces.</li><li>Resists oil, grease, petrol and salt water.</li><li>One component, ready to use, applied like paint by brush, roller or spray.</li></ul><h3>Preparation and thinning</h3><p>Clean the surface with <a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404</a> before coating; 404 also thins 400R if a different viscosity is needed and cleans the brushes afterwards.</p><h3>Pack</h3><p>12 kg metal drum.</p><h3>Ferryl coatings</h3><ul><li><a href=\"/p/ferryl-400r-anticorrosive-white-coating\">Ferryl 400R white coating</a></li><li><a href=\"/p/ferryl-401-anticorrosive-transparent-coating\">Ferryl 401 transparent coating</a></li><li><a href=\"/p/ferryl-502-fluorescent-orange-red-safety-coating\">Ferryl 502 fluorescent orange-red coating</a></li><li><a href=\"/p/ferryl-505-fluorescent-yellow-safety-coating\">Ferryl 505 fluorescent yellow coating</a></li><li><a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404 thinner and surface cleaner</a></li></ul><h3>Related</h3><ul><li><a href=\"/c/marine-hoses\">Marine hoses</a></li><li><a href=\"/c/hydraulic-hoses\">Hydraulic hose</a></li><li><a href=\"/blog/hydraulic-hose-wire-corrosion\">Why hydraulic hose reinforcement corrodes</a></li><li><a href=\"/c/steel-wire-rope\">Steel wire rope</a></li></ul><h3>Supply</h3><p>Indus Hydraulics distributes Ferryl marine maintenance products in the Middle East. Send the product name and pack size, or describe the surface and the problem, and we confirm the product, quantity and delivery. Safety data sheets are available on request.</p>",
+   "seoTitle": "Ferryl 400R White Coating — Hoses, Cables, Rigging",
+   "seoDescription": "Ferryl 400R anticorrosive white coating: flexible, UV-stabilised film for rubber hoses, cables and standing rigging. One component. 12 kg drum.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Anticorrosive flexible coating, one component",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Composition",
+     "label": "Chemistry",
+     "value": "Plastic-like coating with rust inhibitors and UV stabilisers",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "chemistry"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "White",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "colour"
+    },
+    {
+     "group": "Performance",
+     "label": "Film / finish",
+     "value": "Dry, flexible, non-cracking",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Application",
+     "label": "Surfaces",
+     "value": "Rubber, steel wire, most surfaces",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "surfaces"
+    },
+    {
+     "group": "Application",
+     "label": "Application method",
+     "value": "Brush, roller or spray",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "application_method"
+    },
+    {
+     "group": "Application",
+     "label": "Typical applications",
+     "value": "Hydraulic hoses, electrical cables, seals, tubing; standing rigging, stay, guy, tension and suspension wires",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "typical_applications"
+    },
+    {
+     "group": "Commercial",
+     "label": "Container sizes",
+     "value": "12 kg metal drum",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "container_sizes"
+    },
+    {
+     "group": "Application",
+     "label": "Dilution",
+     "value": "Thin and clean up with Ferryl 404 Dilution & Cleaning Liquid",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "dilution"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Ferryl — made by Ferryl Deutschland GmbH, Germany; Ferryl Sales Ltd, Isle of Man",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Ferryl 400R",
+    "white coating for hoses",
+    "hydraulic hose UV protection",
+    "cable coating marine",
+    "standing rigging coating",
+    "mast wire coating"
+   ],
+   "images": [
+    {
+     "file": "ferryl-400r-pack.jpg",
+     "alt": "Ferryl 400R anticorrosive white coating in a green 12 kg steel pail with handle",
+     "caption": "Ferryl maker image (product photograph, 12 kg drum), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    },
+    {
+     "file": "ferryl-400r-hoses.jpg",
+     "alt": "Hydraulic hoses and cables on a ship hatch coated white with Ferryl 400R",
+     "caption": "Ferryl maker image (application photograph), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    },
+    {
+     "file": "ferryl-400r-hoses-2.jpg",
+     "alt": "White-coated hydraulic hoses running along a deck structure after Ferryl 400R treatment",
+     "caption": "Ferryl maker image (application photograph), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-FRY-400R-12KG",
+     "position": 0,
+     "dimensions": {
+      "supply": "12 kg metal drum"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "Germany"
+  },
+  {
+   "sku": "IH-FRY-401",
+   "slug": "ferryl-401-anticorrosive-transparent-coating",
+   "title": "Ferryl 401 Anticorrosive Transparent Coating",
+   "category": "anticorrosive-safety-coatings",
+   "focusKeyword": "clear anticorrosive coating stainless steel",
+   "descriptionShort": "Ferryl 401 is a clear, glossy, flexible coating that keeps stainless steel, brass, copper and aluminium fittings on deck bright and rust-free, cutting polishing and maintenance. 1 kg tin, single or packs of 10.",
+   "descriptionLong": "<p>Even 316 stainless steel starts to stain and rust within a few years on an open deck — couplings, railings, brackets, signs and portholes all go brown. Ferryl 401 stops that before it starts: a clear, glossy, varnish-like coating with Ferryl rust inhibitors that seals the metal off from salt water while keeping its original look.</p><h3>How it performs</h3><ul><li>Plastic components keep the dry film flexible, so it does not crack under vibration or movement.</li><li>Chemically active rust inhibitors.</li><li>UV stabilisers for a long life in sunlight.</li><li>Transparent and glossy — keeps the original appearance of the metal.</li><li>Adheres to most surfaces.</li><li>Resists oil, grease, petrol and salt water.</li><li>One component, ready to use, applied like paint by brush, roller or spray.</li></ul><h3>Surfaces</h3><p>Steel, stainless steel, copper, aluminium, brass, light alloys and wood.</p><h3>Where it is used</h3><p>Handrails, couplings, pipes and fittings, door frames and knobs, nuts, engine parts, ventilators, signs, binnacles, portholes, instruments and fixtures.</p><h3>Already rusting?</h3><p>Remove the rust with <a href=\"/p/ferryl-ferrycid-rust-remover\">Ferryl Ferrycid</a>, clean with <a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404</a>, then coat with 401.</p><h3>Pack</h3><p>1 kg metal tin, single or in packs of 10.</p><h3>Ferryl coatings</h3><ul><li><a href=\"/p/ferryl-400r-anticorrosive-white-coating\">Ferryl 400R white coating</a></li><li><a href=\"/p/ferryl-401-anticorrosive-transparent-coating\">Ferryl 401 transparent coating</a></li><li><a href=\"/p/ferryl-502-fluorescent-orange-red-safety-coating\">Ferryl 502 fluorescent orange-red coating</a></li><li><a href=\"/p/ferryl-505-fluorescent-yellow-safety-coating\">Ferryl 505 fluorescent yellow coating</a></li><li><a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404 thinner and surface cleaner</a></li></ul><h3>Related</h3><ul><li><a href=\"/c/stainless-steel-hydraulic-fittings\">Stainless steel 316L fittings</a></li><li><a href=\"/blog/galvanic-corrosion-in-fittings\">Galvanic corrosion in fittings</a></li><li><a href=\"/blog/plating-and-corrosion-on-fittings\">Plating and corrosion on fittings</a></li></ul><h3>Supply</h3><p>Indus Hydraulics distributes Ferryl marine maintenance products in the Middle East. Send the product name and pack size, or describe the surface and the problem, and we confirm the product, quantity and delivery. Safety data sheets are available on request.</p>",
+   "seoTitle": "Ferryl 401 Transparent Anticorrosive Coating",
+   "seoDescription": "Ferryl 401 clear anticorrosive coating keeps stainless steel, brass and aluminium on deck bright: flexible, UV-stabilised, glossy. 1 kg tin.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Anticorrosive transparent coating, one component",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Composition",
+     "label": "Chemistry",
+     "value": "Plastic-like clear coating with rust inhibitors and UV stabilisers",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "chemistry"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Transparent, glossy",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "colour"
+    },
+    {
+     "group": "Performance",
+     "label": "Film / finish",
+     "value": "Dry, flexible, non-cracking",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Application",
+     "label": "Surfaces",
+     "value": "Steel, stainless steel, copper, aluminium, brass, light alloys, wood",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "surfaces"
+    },
+    {
+     "group": "Application",
+     "label": "Application method",
+     "value": "Brush, roller or spray",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "application_method"
+    },
+    {
+     "group": "Application",
+     "label": "Typical applications",
+     "value": "Handrails, couplings, pipes and fittings, door hardware, signs, portholes, ventilators, instruments, engine parts",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "typical_applications"
+    },
+    {
+     "group": "Commercial",
+     "label": "Container sizes",
+     "value": "1 kg metal tin, single or packs of 10",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "container_sizes"
+    },
+    {
+     "group": "Application",
+     "label": "Dilution",
+     "value": "Thin and clean up with Ferryl 404 Dilution & Cleaning Liquid",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "dilution"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Ferryl — made by Ferryl Deutschland GmbH, Germany; Ferryl Sales Ltd, Isle of Man",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Ferryl 401",
+    "clear coating stainless steel",
+    "transparent anticorrosive coating",
+    "stainless tea staining protection",
+    "brass protection coating"
+   ],
+   "images": [
+    {
+     "file": "ferryl-401-pack.jpg",
+     "alt": "Ferryl 401 anticorrosive transparent coating in a green 1 kg tin",
+     "caption": "Ferryl maker image (product photograph, 1 kg tin), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    },
+    {
+     "file": "ferryl-401-lifeboat.jpg",
+     "alt": "Stainless steel fittings on an orange lifeboat kept bright with Ferryl 401 clear coating",
+     "caption": "Ferryl maker image (application photograph), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    },
+    {
+     "file": "ferryl-401-pipes.jpg",
+     "alt": "Ferryl 401 transparent coating being brushed onto stainless steel pipework",
+     "caption": "Ferryl maker image (application photograph), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-FRY-401-1KG",
+     "position": 0,
+     "dimensions": {
+      "supply": "1 kg metal tin"
+     }
+    },
+    {
+     "partNumber": "IH-FRY-401-1KG-X10",
+     "position": 1,
+     "dimensions": {
+      "supply": "Pack of 10 × 1 kg metal tins"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "Germany"
+  },
+  {
+   "sku": "IH-FRY-404",
+   "slug": "ferryl-404-dilution-cleaning-liquid",
+   "title": "Ferryl 404 Dilution & Cleaning Liquid",
+   "category": "anticorrosive-safety-coatings",
+   "focusKeyword": "paint thinner and surface cleaner marine",
+   "descriptionShort": "Ferryl 404 cleans dirt, oil and grease off a surface before coating, thins Ferryl coatings and most solvent-based paints, and cleans brushes, rollers and sprayers. 10 L can.",
+   "descriptionLong": "<p>Ferryl 404 is the working partner of the Ferryl coatings. A coating only lasts as long as its grip on the surface, so 404 is used first to strip dirt, oil and grease; then, if needed, to thin the coating to the viscosity the job calls for; and finally to clean the tools.</p><h3>What it does</h3><ul><li>Removes dirt, oil and grease before a coating goes on, for the best possible adhesion.</li><li>Dilutes Ferryl 400R, 401, 502 and 505 to the viscosity you need.</li><li>Works as a multipurpose thinner for most solvent-based paints, primers and varnishes.</li><li>Cleans brushes, rollers and spray equipment.</li></ul><h3>How to apply it</h3><p>By brush, rag, spray, pouring or submersion.</p><h3>Pack</h3><p>10 litre metal can.</p><h3>Ferryl coatings</h3><ul><li><a href=\"/p/ferryl-400r-anticorrosive-white-coating\">Ferryl 400R white coating</a></li><li><a href=\"/p/ferryl-401-anticorrosive-transparent-coating\">Ferryl 401 transparent coating</a></li><li><a href=\"/p/ferryl-502-fluorescent-orange-red-safety-coating\">Ferryl 502 fluorescent orange-red coating</a></li><li><a href=\"/p/ferryl-505-fluorescent-yellow-safety-coating\">Ferryl 505 fluorescent yellow coating</a></li><li><a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404 thinner and surface cleaner</a></li></ul><h3>Supply</h3><p>Indus Hydraulics distributes Ferryl marine maintenance products in the Middle East. Send the product name and pack size, or describe the surface and the problem, and we confirm the product, quantity and delivery. Safety data sheets are available on request.</p>",
+   "seoTitle": "Ferryl 404 Dilution & Cleaning Liquid",
+   "seoDescription": "Ferryl 404: surface cleaner before coating, thinner for Ferryl coatings and most solvent-based paints, and tool cleaner. 10 L can.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Solvent cleaner and thinner",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Composition",
+     "label": "Chemistry",
+     "value": "Solvent-based",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "chemistry"
+    },
+    {
+     "group": "Application",
+     "label": "Surfaces",
+     "value": "Metal and painted surfaces before coating; painting equipment",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "surfaces"
+    },
+    {
+     "group": "Application",
+     "label": "Application method",
+     "value": "Brush, rag, spray, pouring or submersion",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "application_method"
+    },
+    {
+     "group": "Application",
+     "label": "Typical applications",
+     "value": "Surface preparation; thinning Ferryl 400R/401/502/505 and solvent-based paints, primers, varnishes; cleaning tools",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "typical_applications"
+    },
+    {
+     "group": "Commercial",
+     "label": "Container sizes",
+     "value": "10 L metal can",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "container_sizes"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Ferryl — made by Ferryl Deutschland GmbH, Germany; Ferryl Sales Ltd, Isle of Man",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Ferryl 404",
+    "paint thinner",
+    "coating thinner",
+    "surface degreaser before painting",
+    "brush cleaner"
+   ],
+   "images": [
+    {
+     "file": "ferryl-404-pack.jpg",
+     "alt": "Ferryl 404 dilution and cleaning liquid in a white 10 litre rectangular metal can",
+     "caption": "Ferryl maker image (product photograph, 10 L can), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-FRY-404-10L",
+     "position": 0,
+     "dimensions": {
+      "supply": "10 L metal can"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "Germany"
+  },
+  {
+   "sku": "IH-FRY-502",
+   "slug": "ferryl-502-fluorescent-orange-red-safety-coating",
+   "title": "Ferryl 502 Fluorescent Orange-Red Safety Coating",
+   "category": "anticorrosive-safety-coatings",
+   "focusKeyword": "fluorescent safety marking paint",
+   "descriptionShort": "Ferryl 502 is a fluorescent orange-red, flexible anticorrosive coating for marking lifeboats, life-saving gear, fire extinguishers, alarms, exits and crane hooks so they stand out in poor light. 1 kg tin.",
+   "descriptionLong": "<p>Hazards and safety equipment are usually picked out in red or yellow paint, but ordinary paint is dull in fog, rain and darkness, fades in the sun and cracks at sea. Ferryl 502 uses fluorescent orange-red pigments that look far brighter, especially in low light, in a flexible coating that protects the steel underneath.</p><h3>How it performs</h3><ul><li>Plastic components keep the dry film flexible, so it does not crack under vibration or movement.</li><li>Chemically active rust inhibitors.</li><li>UV stabilisers to hold the colour intensity.</li><li>Adheres to most surfaces.</li><li>Resists oil, grease, petrol and salt water.</li><li>One component, ready to use, applied like paint by brush, roller or spray.</li></ul><h3>Surfaces</h3><p>Steel, plastic, fibreglass and painted surfaces.</p><h3>Where it is used</h3><p>Lifeboats and life-saving equipment, buoys, fire extinguishers, alarms and warnings, emergency exits and doorways, the bridge, low beams and steps, crane hooks.</p><p>For walkways, steps, ladders and zone markings, the yellow <a href=\"/p/ferryl-505-fluorescent-yellow-safety-coating\">Ferryl 505</a> is the usual choice. Check your flag and class requirements for any marking colour that is regulated.</p><h3>Pack</h3><p>1 kg metal tin, single or in packs of 10.</p><h3>Ferryl coatings</h3><ul><li><a href=\"/p/ferryl-400r-anticorrosive-white-coating\">Ferryl 400R white coating</a></li><li><a href=\"/p/ferryl-401-anticorrosive-transparent-coating\">Ferryl 401 transparent coating</a></li><li><a href=\"/p/ferryl-502-fluorescent-orange-red-safety-coating\">Ferryl 502 fluorescent orange-red coating</a></li><li><a href=\"/p/ferryl-505-fluorescent-yellow-safety-coating\">Ferryl 505 fluorescent yellow coating</a></li><li><a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404 thinner and surface cleaner</a></li></ul><h3>Supply</h3><p>Indus Hydraulics distributes Ferryl marine maintenance products in the Middle East. Send the product name and pack size, or describe the surface and the problem, and we confirm the product, quantity and delivery. Safety data sheets are available on request.</p>",
+   "seoTitle": "Ferryl 502 Fluorescent Orange-Red Coating",
+   "seoDescription": "Ferryl 502 fluorescent orange-red safety coating for lifeboats, extinguishers, exits and crane hooks: bright in low light, flexible, anticorrosive. 1 kg tin.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Fluorescent anticorrosive safety coating, one component",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Composition",
+     "label": "Chemistry",
+     "value": "Plastic-like coating with fluorescent pigments, rust inhibitors and UV stabilisers",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "chemistry"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Fluorescent orange-red",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "colour"
+    },
+    {
+     "group": "Performance",
+     "label": "Film / finish",
+     "value": "Dry, flexible, non-cracking",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Application",
+     "label": "Surfaces",
+     "value": "Steel, plastic, fibreglass, painted surfaces",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "surfaces"
+    },
+    {
+     "group": "Application",
+     "label": "Application method",
+     "value": "Brush, roller or spray",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "application_method"
+    },
+    {
+     "group": "Application",
+     "label": "Typical applications",
+     "value": "Lifeboats, life-saving equipment, buoys, fire extinguishers, alarms, emergency exits, crane hooks, low beams and steps",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "typical_applications"
+    },
+    {
+     "group": "Commercial",
+     "label": "Container sizes",
+     "value": "1 kg metal tin, single or packs of 10",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "container_sizes"
+    },
+    {
+     "group": "Application",
+     "label": "Dilution",
+     "value": "Thin and clean up with Ferryl 404 Dilution & Cleaning Liquid",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "dilution"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Ferryl — made by Ferryl Deutschland GmbH, Germany; Ferryl Sales Ltd, Isle of Man",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Ferryl 502",
+    "fluorescent orange paint",
+    "fluorescent red safety paint",
+    "hazard marking coating",
+    "high visibility coating marine"
+   ],
+   "images": [
+    {
+     "file": "ferryl-502-pack.jpg",
+     "alt": "Ferryl 502 fluorescent orange-red coating in a green 1 kg tin, open to show the orange-red colour",
+     "caption": "Ferryl maker image (product photograph, 1 kg tin), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-FRY-502-1KG",
+     "position": 0,
+     "dimensions": {
+      "supply": "1 kg metal tin"
+     }
+    },
+    {
+     "partNumber": "IH-FRY-502-1KG-X10",
+     "position": 1,
+     "dimensions": {
+      "supply": "Pack of 10 × 1 kg metal tins"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "Germany"
+  },
+  {
+   "sku": "IH-FRY-505",
+   "slug": "ferryl-505-fluorescent-yellow-safety-coating",
+   "title": "Ferryl 505 Fluorescent Yellow Safety Coating",
+   "category": "anticorrosive-safety-coatings",
+   "focusKeyword": "fluorescent yellow safety marking paint",
+   "descriptionShort": "Ferryl 505 is a fluorescent yellow, flexible anticorrosive coating for marking steps, ladders, railings, walkways, tripping hazards and crane hooks — especially visible in low light. 1 kg tin.",
+   "descriptionLong": "<p>Ferryl 505 is the yellow partner to <a href=\"/p/ferryl-502-fluorescent-orange-red-safety-coating\">Ferryl 502</a>. Its fluorescent yellow pigments stand out most in low light — fog, storms, dusk and badly lit spaces — which is when trip and head-strike hazards matter most. The film stays flexible, so it does not crack and peel like paint, and it protects the steel against rust.</p><h3>How it performs</h3><ul><li>Plastic components keep the dry film flexible, so it does not crack under vibration or movement.</li><li>Chemically active rust inhibitors.</li><li>UV stabilisers to hold the colour intensity.</li><li>Adheres to most surfaces.</li><li>Resists oil, grease, petrol and salt water.</li><li>One component, ready to use, applied like paint by brush, roller or spray.</li></ul><h3>Surfaces</h3><p>Steel, plastic, fibreglass and painted surfaces.</p><h3>Where it is used</h3><p>Steps and ladders, railings, walkways, tripping hazards, hatches, low beams, zone markings, numbering, storage areas and crane hooks.</p><p>Check your flag and class requirements for any marking colour that is regulated.</p><h3>Pack</h3><p>1 kg metal tin, single or in packs of 10.</p><h3>Ferryl coatings</h3><ul><li><a href=\"/p/ferryl-400r-anticorrosive-white-coating\">Ferryl 400R white coating</a></li><li><a href=\"/p/ferryl-401-anticorrosive-transparent-coating\">Ferryl 401 transparent coating</a></li><li><a href=\"/p/ferryl-502-fluorescent-orange-red-safety-coating\">Ferryl 502 fluorescent orange-red coating</a></li><li><a href=\"/p/ferryl-505-fluorescent-yellow-safety-coating\">Ferryl 505 fluorescent yellow coating</a></li><li><a href=\"/p/ferryl-404-dilution-cleaning-liquid\">Ferryl 404 thinner and surface cleaner</a></li></ul><h3>Supply</h3><p>Indus Hydraulics distributes Ferryl marine maintenance products in the Middle East. Send the product name and pack size, or describe the surface and the problem, and we confirm the product, quantity and delivery. Safety data sheets are available on request.</p>",
+   "seoTitle": "Ferryl 505 Fluorescent Yellow Coating",
+   "seoDescription": "Ferryl 505 fluorescent yellow safety coating for steps, ladders, railings and walkways: bright in low light, flexible, anticorrosive. 1 kg tin.",
+   "faqs": [],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Fluorescent anticorrosive safety coating, one component",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Composition",
+     "label": "Chemistry",
+     "value": "Plastic-like coating with fluorescent pigments, rust inhibitors and UV stabilisers",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "chemistry"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Fluorescent yellow",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "colour"
+    },
+    {
+     "group": "Performance",
+     "label": "Film / finish",
+     "value": "Dry, flexible, non-cracking",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Application",
+     "label": "Surfaces",
+     "value": "Steel, plastic, fibreglass, painted surfaces",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "surfaces"
+    },
+    {
+     "group": "Application",
+     "label": "Application method",
+     "value": "Brush, roller or spray",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "application_method"
+    },
+    {
+     "group": "Application",
+     "label": "Typical applications",
+     "value": "Steps, ladders, railings, walkways, tripping hazards, hatches, low beams, zone markings, crane hooks",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "typical_applications"
+    },
+    {
+     "group": "Commercial",
+     "label": "Container sizes",
+     "value": "1 kg metal tin, single or packs of 10",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "container_sizes"
+    },
+    {
+     "group": "Application",
+     "label": "Dilution",
+     "value": "Thin and clean up with Ferryl 404 Dilution & Cleaning Liquid",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "dilution"
+    },
+    {
+     "group": "Identification",
+     "label": "Maker",
+     "value": "Ferryl — made by Ferryl Deutschland GmbH, Germany; Ferryl Sales Ltd, Isle of Man",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "maker"
+    }
+   ],
+   "searchAliases": [
+    "Ferryl 505",
+    "fluorescent yellow paint",
+    "yellow safety marking paint",
+    "step marking coating",
+    "high visibility yellow coating"
+   ],
+   "images": [
+    {
+     "file": "ferryl-505-pack.jpg",
+     "alt": "Ferryl 505 fluorescent yellow coating in a green 1 kg tin, open to show the yellow colour",
+     "caption": "Ferryl maker image (product photograph, 1 kg tin), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    },
+    {
+     "file": "ferryl-505-applying.jpg",
+     "alt": "Ferryl 505 fluorescent yellow coating being brushed onto a pipe guard on a ship",
+     "caption": "Ferryl maker image (application photograph), cleaned and upscaled with GPT Image; used under the Ferryl distribution agreement (Ayush, 2026-11-20)."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-FRY-505-1KG",
+     "position": 0,
+     "dimensions": {
+      "supply": "1 kg metal tin"
+     }
+    },
+    {
+     "partNumber": "IH-FRY-505-1KG-X10",
+     "position": 1,
+     "dimensions": {
+      "supply": "Pack of 10 × 1 kg metal tins"
+     }
+    }
+   ],
+   "crossReferences": [],
+   "countryOfOrigin": "Germany"
+  }
+ ],
+ "hold": []
+}
