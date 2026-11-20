@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, str, enquiryMailto, enquiryBody } from '@indus/domain'
+import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, countInStock, str, enquiryMailto, enquiryBody } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { CategoryFaqBand, categoryFaqs } from '../../../../components/category/CategoryBands'
 import { mediaUrl } from '../../../../lib/media'
@@ -114,10 +114,33 @@ export default async function BrandPage({ params }: Props) {
         take: 8,
       }),
       db.product.count({ where: { brandId: brand.id, status: 'active' } }),
-      // Real "in stock" count — replaces the previous fake 0.68× multiplier.
-      db.product.count({
-        where: { brandId: brand.id, status: 'active', stockQty: { gt: 0 } },
-      }),
+      // "In stock" as the product pills say it: counted stock or the catalogue
+      // ex-stock posture, with exempt shelves falling back to lead time. Counting
+      // stockQty alone showed "0 / N" on brands whose every listing is ex-stock.
+      db.product
+        .findMany({
+          where: { brandId: brand.id, status: 'active' },
+          select: {
+            status: true,
+            stockQty: true,
+            stockWarehouse: true,
+            leadTimeDays: true,
+            category: { select: { slug: true, parent: { select: { slug: true, parent: { select: { slug: true } } } } } },
+          },
+        })
+        .then((rows) =>
+          countInStock(
+            rows.map((r) => ({
+              status: r.status,
+              stockQty: r.stockQty,
+              stockWarehouse: r.stockWarehouse,
+              leadTimeDays: r.leadTimeDays,
+              categorySlugs: [r.category?.slug, r.category?.parent?.slug, r.category?.parent?.parent?.slug].filter(
+                (slug): slug is string => Boolean(slug),
+              ),
+            })),
+          ),
+        ),
       db.product
         .groupBy({
           by: ['categoryId'],
