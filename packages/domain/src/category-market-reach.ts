@@ -31,6 +31,18 @@ import type { MarketReach, MarketReachProfile } from './market-reach'
  * `category-market-reach.test.ts` in @indus/db checks these against the
  * published root categories, so a new root cannot ship without a paragraph and
  * a stale one cannot linger after a rename.
+ *
+ * EUROPE. Until 2026-11-20 only three roots rotated 'Western & Northern
+ * Europe' and none rotated 'Central & South-East Europe', so all 21 markets in
+ * that region — Poland, Greece, Turkey, Romania, the Balkans, the Baltics —
+ * got no link from any category page. The European regions are now on every
+ * root whose paragraph is true for a European buyer: hose, fittings, process
+ * and oilfield valves, lifting, marine, tube, pumps, cylinders, seals,
+ * instrumentation and manifolds, all bought to an EN/ISO/ASME/API standard
+ * with the certificate travelling alongside. Left out on purpose: the
+ * well-service roots (frac, stimulation, cementing, well testing, BOP,
+ * drilling), whose paragraphs talk about basins and campaigns that Europe has
+ * few of, and lubricants, which Europe sources locally.
  */
 export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>> = {
   'hydraulic-hose-fittings-suppliers-uae': {
@@ -43,6 +55,8 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'Southern Africa',
       'South-East Asia',
       'North Africa',
+      'Central & South-East Europe',
+      'Western & Northern Europe',
     ],
   },
   'industrial-hose-suppliers-uae': {
@@ -55,6 +69,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'Western & Northern Europe',
       'South-East Asia',
       'Southern Africa',
+      'Central & South-East Europe',
     ],
   },
   'oil-gas-hoses': {
@@ -79,6 +94,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'North Africa',
       'South America',
       'North America & Caribbean',
+      'Central & South-East Europe',
     ],
   },
   'flow-iron-wellhead-equipment-uae': {
@@ -103,6 +119,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'South-East Asia',
       'North Africa',
       'CIS & Caucasus',
+      'Central & South-East Europe',
     ],
   },
   'marine-equipment-uae': {
@@ -115,6 +132,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'East Africa',
       'Western & Northern Europe',
       'North Africa',
+      'Central & South-East Europe',
     ],
   },
   'seamless-finned-tubes-uae': {
@@ -127,6 +145,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'North Africa',
       'West & Central Africa',
       'CIS & Caucasus',
+      'Central & South-East Europe',
     ],
   },
   'blowout-preventers': {
@@ -211,6 +230,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'Western & Northern Europe',
       'North America & Caribbean',
       'South-East Asia',
+      'Central & South-East Europe',
     ],
   },
   'hydraulic-pumps': {
@@ -223,6 +243,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'CIS & Caucasus',
       'South-East Asia',
       'East Africa',
+      'Central & South-East Europe',
     ],
   },
   cylinders: {
@@ -235,6 +256,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'Southern Africa',
       'South-East Asia',
       'CIS & Caucasus',
+      'Central & South-East Europe',
     ],
   },
   'instrumentation-controls': {
@@ -247,6 +269,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'South-East Asia',
       'East Africa',
       'West & Central Africa',
+      'Central & South-East Europe',
     ],
   },
   'industrial-lubricant-suppliers-uae': {
@@ -271,6 +294,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'East Africa',
       'Southern Africa',
       'South-East Asia',
+      'Central & South-East Europe',
     ],
   },
   'industrial-process-valves': {
@@ -283,6 +307,8 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'East Africa',
       'South-East Asia',
       'CIS & Caucasus',
+      'Central & South-East Europe',
+      'Western & Northern Europe',
     ],
   },
   'seals-accessories': {
@@ -295,6 +321,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'Southern Africa',
       'South-East Asia',
       'CIS & Caucasus',
+      'Central & South-East Europe',
     ],
   },
 }
