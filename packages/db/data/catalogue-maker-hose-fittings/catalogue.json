@@ -6538,7 +6538,7 @@
     {
      "partNumber": "1240-10-08",
      "position": 4,
-     "portLabel": "7/8\"-143, 4\"-16 JIC (male)",
+     "portLabel": "7/8\"-14 x 3/4\"-16 JIC (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Hose Elbow Connector, 7/8 Inch-14 45 Deg. M-SAE O-Ring Boss"
@@ -6556,7 +6556,7 @@
     {
      "partNumber": "1240-10-10",
      "position": 6,
-     "portLabel": "7/8\"-147, 8\"-14 JIC (male)",
+     "portLabel": "7/8\"-14 x 7/8\"-14 JIC (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Hose Elbow Connector, 7/8 Inch-14 45 Deg. M-SAE O-Ring Boss"
@@ -6574,7 +6574,7 @@
     {
      "partNumber": "1240-08-10",
      "position": 8,
-     "portLabel": "3/4\"-167, 8\"-14 JIC (male)",
+     "portLabel": "3/4\"-16 x 7/8\"-14 JIC (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Hose Elbow Connector, 3/4 Inch-16 45 Deg. M-SAE O-Ring Boss x 7/8 Inch-14 Male JIC"
@@ -6583,7 +6583,7 @@
     {
      "partNumber": "1240-08-08",
      "position": 9,
-     "portLabel": "3/4\"-163, 4\"-16 JIC (male)",
+     "portLabel": "3/4\"-16 x 3/4\"-16 JIC (male)",
      "pressureBar": 310,
      "dimensions": {
       "item": "Hose Elbow Connector, 3/4 Inch-16 45 Deg. M-SAE O-Ring Boss x 3/4 Inch-18 Male JIC"
@@ -6592,7 +6592,7 @@
     {
      "partNumber": "1240-08-06",
      "position": 10,
-     "portLabel": "3/4\"-169, 16\"-18 JIC (male)",
+     "portLabel": "3/4\"-16 x 9/16\"-18 JIC (male)",
      "pressureBar": 310,
      "dimensions": {
       "item": "Hose Elbow Connector, 3/4 Inch-16 45 Deg. M-SAE O-Ring Boss x 9/16 Inch-18 Male JIC"
@@ -6601,7 +6601,7 @@
     {
      "partNumber": "1240-06-08",
      "position": 11,
-     "portLabel": "9/16\"-183, 4\"-16 JIC (male)",
+     "portLabel": "9/16\"-18 x 3/4\"-16 JIC (male)",
      "pressureBar": 310,
      "dimensions": {
       "item": "Hose Elbow Connector, 9/16 Inch-18 45 Deg. M-SAE O-Ring Boss x 3/4 Inch-16 Male JIC"
@@ -6610,7 +6610,7 @@
     {
      "partNumber": "1240-04-04",
      "position": 12,
-     "portLabel": "7/16\"-207, 16\"-20 JIC (male)",
+     "portLabel": "7/16\"-20 x 7/16\"-20 JIC (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Hose Elbow Connector, 7/16 Inch-20 45 Deg. M-SAE O-Ring Boss x 7/16 Inch-20 Male JIC"
@@ -6619,7 +6619,7 @@
     {
      "partNumber": "1240-06-06",
      "position": 13,
-     "portLabel": "9/16\"-189, 16\"-18 JIC (male)",
+     "portLabel": "9/16\"-18 x 9/16\"-18 JIC (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Hose Elbow Connector, 9/16 Inch-18 45 Deg. M-SAE O-Ring Boss x 9/16 Inch-18 Male JIC"
@@ -6828,7 +6828,7 @@
     {
      "partNumber": "1502-6-6",
      "position": 0,
-     "portLabel": "3/8\"-183/8\"-18 NPTF x NPSM (female)",
+     "portLabel": "3/8\"-18 x 3/8\"-18 NPTF x NPSM (female)",
      "pressureBar": 276,
      "dimensions": {
       "item": "Swivel Nut Elbow, 90 Deg. Bend, FNPTF x FNPSM, 3/8 Inch-18"
@@ -6837,7 +6837,7 @@
     {
      "partNumber": "1502-4-4",
      "position": 1,
-     "portLabel": "1/4\"-181/4\"-18 NPTF x NPSM (female)",
+     "portLabel": "1/4\"-18 x 1/4\"-18 NPTF x NPSM (female)",
      "pressureBar": 310,
      "dimensions": {
       "item": "Swivel Nut Elbow, 90 Deg. Bend, FNPTF x FNPSM, 1/4 Inch-18"
@@ -7521,7 +7521,7 @@
     {
      "partNumber": "1238-10-08",
      "position": 8,
-     "portLabel": "7/8\"-143, 4\"-16 JIC (male)",
+     "portLabel": "7/8\"-14 x 3/4\"-16 JIC (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Elbow, 7/8 Inch-14, 90 Deg. Male SAE O-Ring Boss x 3/4 Inch-16 M-JIC"
@@ -7530,7 +7530,7 @@
     {
      "partNumber": "1238-12-10",
      "position": 9,
-     "portLabel": "1 1/16\"-127/8\"-14 JIC (male)",
+     "portLabel": "1 1/16\"-12 x 7/8\"-14 JIC (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Elbow, 90 Degree, M-SAE O Ring x 7/8 Inch-14 M-JIC, Zinc Plated Steel"
@@ -7539,7 +7539,7 @@
     {
      "partNumber": "1238-10-10",
      "position": 10,
-     "portLabel": "7/8\"-147, 8\"-14 JIC (male)",
+     "portLabel": "7/8\"-14 x 7/8\"-14 JIC (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Elbow, 7/8 Inch-14, 90 Deg. Male SAE O-Ring Boss x 7/8 Inch-14 M-JIC"
@@ -7548,7 +7548,7 @@
     {
      "partNumber": "1238-08-06",
      "position": 11,
-     "portLabel": "3/4\"-169, 16\"-18 JIC (male)",
+     "portLabel": "3/4\"-16 x 9/16\"-18 JIC (male)",
      "pressureBar": 310,
      "dimensions": {
       "item": "Elbow, 3/4 Inch-16, 90 Deg. Male SAE O-Ring Boss x 9/16 Inch-18 M-JIC"
@@ -7557,7 +7557,7 @@
     {
      "partNumber": "1238-08-08",
      "position": 12,
-     "portLabel": "3/4\"-163, 4\"-16 JIC (male)",
+     "portLabel": "3/4\"-16 x 3/4\"-16 JIC (male)",
      "pressureBar": 310,
      "dimensions": {
       "item": "Elbow, 3/4 Inch-16, 90 Deg. Male SAE O-Ring Boss x 3/4 Inch-16 M-JIC"
@@ -7566,7 +7566,7 @@
     {
      "partNumber": "1238-04-06",
      "position": 13,
-     "portLabel": "7/16\"-209, 16\"-18 JIC (male)",
+     "portLabel": "7/16\"-20 x 9/16\"-18 JIC (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Elbow, 7/16 Inch-20, 90 Deg. Male SAE O-Ring Boss x 9/16 Inch-18 M-JIC"
@@ -7575,7 +7575,7 @@
     {
      "partNumber": "1238-04-04",
      "position": 14,
-     "portLabel": "7/16\"-207, 16\"-20 JIC (male)",
+     "portLabel": "7/16\"-20 x 7/16\"-20 JIC (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Elbow, 7/16 Inch-20, 90 Deg. Male SAE O-Ring Boss x 7/16 Inch-20 M-JIC"
@@ -7584,7 +7584,7 @@
     {
      "partNumber": "1238-06-04",
      "position": 15,
-     "portLabel": "9/16\"-187, 16\"-20 JIC (male)",
+     "portLabel": "9/16\"-18 x 7/16\"-20 JIC (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Elbow, 9/16 Inch-18, 90 Deg. Male SAE O-Ring Boss x 7/16 Inch-20 M-JIC"
@@ -7593,7 +7593,7 @@
     {
      "partNumber": "1238-06-06",
      "position": 16,
-     "portLabel": "9/16\"-189, 16\"-18 JIC (male)",
+     "portLabel": "9/16\"-18 x 9/16\"-18 JIC (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Elbow, 9/16 Inch-18, 90 Deg. Male SAE O-Ring Boss x 9/16 Inch-18 M-JIC"
@@ -8880,7 +8880,7 @@
     {
      "partNumber": "FS2501-16-16",
      "position": 0,
-     "portLabel": "1 7/16\"-121\"-11.5 Flat Face NPTF (male)",
+     "portLabel": "1 7/16\"-12 x 1\"-11.5 Flat Face NPTF (male)",
      "pressureBar": 138,
      "dimensions": {
       "item": "Male Flat Face x MNPTF 90 Deg. Elbow, Flat Face x NPTF Thread"
@@ -8889,7 +8889,7 @@
     {
      "partNumber": "FS2501-12-12",
      "position": 1,
-     "portLabel": "1 3/16\"-123, 4\"-14 Flat Face NPTF (male)",
+     "portLabel": "1 3/16\"-12 x 3/4\"-14 Flat Face NPTF (male)",
      "pressureBar": 172,
      "dimensions": {
       "item": "Male Flat Face x MNPTF 90 Deg. Elbow, Flat Face x NPTF Thread"
@@ -8898,7 +8898,7 @@
     {
      "partNumber": "FS2501-8-8",
      "position": 2,
-     "portLabel": "13/16\"-161, 2\"-14 Flat Face NPTF (male)",
+     "portLabel": "13/16\"-16 x 1/2\"-14 Flat Face NPTF (male)",
      "pressureBar": 207,
      "dimensions": {
       "item": "Male Flat Face x MNPTF 90 Deg. Elbow, Flat Face x NPTF Thread"
@@ -8907,7 +8907,7 @@
     {
      "partNumber": "FS2501-6-6",
      "position": 3,
-     "portLabel": "11/16\"-163, 8\"-18 Flat Face NPTF (male)",
+     "portLabel": "11/16\"-16 x 3/8\"-18 Flat Face NPTF (male)",
      "pressureBar": 276,
      "dimensions": {
       "item": "Male Flat Face x MNPTF 90 Deg. Elbow, Flat Face x NPTF Thread"
@@ -8916,7 +8916,7 @@
     {
      "partNumber": "FS2501-4-4",
      "position": 4,
-     "portLabel": "9/16\"-181, 4\"-18 Flat Face NPTF (male)",
+     "portLabel": "9/16\"-18 x 1/4\"-18 Flat Face NPTF (male)",
      "pressureBar": 345,
      "dimensions": {
       "item": "Male Flat Face x MNPTF 90 Deg. Elbow, Flat Face x NPTF Thread"
@@ -9204,7 +9204,7 @@
     {
      "partNumber": "1240-12-10",
      "position": 0,
-     "portLabel": "1 1/16\"-127/8\"-14 JIC, NPTF (male)",
+     "portLabel": "1 1/16\"-12 x 7/8\"-14 JIC, NPTF (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Male Elbow, 1-1/16-12 Inch Size, 45 Deg. M-SAE O Ring x 7/8 Inch-14 Male JIC"
@@ -9213,7 +9213,7 @@
     {
      "partNumber": "1238-08-10",
      "position": 1,
-     "portLabel": "3/4\"-167, 8\"-14 JIC, NPTF (male)",
+     "portLabel": "3/4\"-16 x 7/8\"-14 JIC, NPTF (male)",
      "pressureBar": 241,
      "dimensions": {
       "item": "Elbow, 3/4 Inch-16, 90 Deg. Male SAE O-Ring Boss x 7/8 Inch-14 M-JIC"
@@ -11833,7 +11833,7 @@
     {
      "partNumber": "1502-8-8",
      "position": 0,
-     "portLabel": "1/2\"-141/2\"-14",
+     "portLabel": "1/2\"-14 x 1/2\"-14",
      "pressureBar": 207,
      "dimensions": {
       "item": "Swivel Nut Elbow, 90 Deg. Bend, FNPTF x FNPSM, 1/2 Inch-14"
@@ -29086,14 +29086,14 @@
   {
    "sku": "IH-PAR-88-SERIES-2188-BARBED-NIPPLES-90-DEG-ELBOW",
    "slug": "parker-88-series-2188-barbed-nipples-90-deg-elbow",
-   "title": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow",
+   "title": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid",
    "category": "steel-hose-barb-adapters",
    "brandSlug": "parker",
    "focusKeyword": "parker 88 series 2188 barbed nipples, 90 deg elbow",
-   "descriptionShort": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow in steel body: 5 part numbers.",
-   "descriptionLong": "<p>Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow in steel body: 5 part numbers.</p><h3>Specification</h3><ul><li>Type: Nipple</li><li>Material: Steel Body</li><li>Part numbers: 5</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its connections. Ratings vary by size — check the row for the part you order.</p><h3>Hose and fitting match</h3><p>A crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the fitting part number so the fitting, ferrule and crimp specification can be checked against the hose before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow",
-   "seoDescription": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow in steel body: 5 part numbers. Quote by Parker part number.",
+   "descriptionShort": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid in steel body: 5 part numbers.",
+   "descriptionLong": "<p>Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid in steel body: 5 part numbers.</p><h3>Specification</h3><ul><li>Type: Nipple</li><li>Material: Steel Body</li><li>Part numbers: 5</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its connections. Ratings vary by size — check the row for the part you order.</p><h3>Hose and fitting match</h3><p>A crimp fitting is rated only on the hose series it is designed for. Quote the hose type and size with the fitting part number so the fitting, ferrule and crimp specification can be checked against the hose before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid",
+   "seoDescription": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid in steel body: 5 part numbers. Quote by Parker part number.",
    "faqs": [],
    "specs": [],
    "searchAliases": [
@@ -29102,17 +29102,17 @@
    "images": [
     {
      "file": "fd0e89a723bcd254.jpg",
-     "alt": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow, range photo",
+     "alt": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid, range photo",
      "caption": "Supplier catalogue image (2026-10-21)"
     },
     {
      "file": "b7bfa6651b31d1fd.jpg",
-     "alt": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow, alternate size, view 2",
+     "alt": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid, alternate size, view 2",
      "caption": "Supplier catalogue image (2026-10-21)"
     },
     {
      "file": "6289c3bbe0b31a46.jpg",
-     "alt": "Parker 88 Series 2188 Barbed Nipples, 90 Deg Elbow, alternate size, view 3",
+     "alt": "Parker 88 Series 2188 Barbed Nipples, Male NPTF, Rigid, alternate size, view 3",
      "caption": "Supplier catalogue image (2026-10-21)"
     }
    ],

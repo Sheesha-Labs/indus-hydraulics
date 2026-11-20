@@ -174,6 +174,7 @@ export type HoseTextKey = 'insideDia' | 'wall'
  */
 export type RatingDimensionKey =
   | 'capacityTon'
+  | 'capacityLbs'
   | 'boreIn'
   | 'rodIn'
   | 'strokeIn'
@@ -528,6 +529,7 @@ const RATING_HELP = 'as the manufacturer publishes it. A circuit is limited by i
 function ratingColumns(): VariantColumn[] {
   return [
     { key: 'capacityTon', label: 'Capacity', unit: 'ton', help: 'Rated capacity in tons, as the manufacturer publishes it.', grouped: true },
+    { key: 'capacityLbs', label: 'Capacity', unit: 'lbs', help: 'Rated capacity in pounds, as the manufacturer publishes it for small threaded-body cylinders.', grouped: true },
     { key: 'boreIn', label: 'Bore', unit: 'in', help: 'Cylinder bore diameter, as published.' },
     { key: 'rodIn', label: 'Rod', unit: 'in', help: 'Piston rod diameter, as published.' },
     { key: 'strokeIn', label: 'Stroke', unit: 'in', help: 'Cylinder stroke, as published.' },
@@ -560,7 +562,7 @@ function ratingColumns(): VariantColumn[] {
 
 /** Keys only a pump, motor or cylinder row carries — they make a table `equipment`. */
 const EQUIPMENT_MARKERS: ReadonlySet<string> = new Set([
-  'capacityTon', 'boreIn', 'strokeIn', 'displacementCc', 'displacementCuIn', 'ratedRpm', 'maxRpm', 'torqueLbIn',
+  'capacityTon', 'capacityLbs', 'boreIn', 'strokeIn', 'displacementCc', 'displacementCuIn', 'ratedRpm', 'maxRpm', 'torqueLbIn',
   'outputTorqueNm', 'linePullDan',
 ])
 
