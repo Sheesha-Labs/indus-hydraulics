@@ -32,9 +32,12 @@ import { db } from '../../index'
 import { writeFileSync } from 'node:fs'
 
 import { hrefsIn, htmlText, linkPhraseInHtml } from '../2026-10-06-blog-inline-links/link-text'
-import { CATEGORY_LINK_PLANS as INLINE_PLANS } from './plans'
+import { ROUND2_PLANS, type Round2Plan } from './additions'
+import { CATEGORY_LINK_PLANS } from './plans'
 
 const DRY_RUN = process.argv.includes('--dry-run')
+/** `--round=2` applies ./additions.ts (sentences and a correction) instead of ./plans.ts. */
+const INLINE_PLANS: Record<string, Round2Plan> = process.argv.includes('--round=2') ? ROUND2_PLANS : CATEGORY_LINK_PLANS
 const ROLLBACK_FILE = process.argv.find((a) => a.startsWith('--rollback-file='))?.slice('--rollback-file='.length)
 
 /** Characters of lead text kept clear of links: the drop cap and its line. */
@@ -54,6 +57,7 @@ async function main(): Promise<void> {
   for (const plan of Object.values(INLINE_PLANS)) {
     for (const l of plan.links ?? []) hrefs.add(l.href)
     for (const a of plan.add ?? []) for (const h of hrefsIn(a.html)) hrefs.add(h)
+    for (const r of plan.replace ?? []) for (const h of hrefsIn(r.html)) hrefs.add(h)
   }
   const productSlugs = [...hrefs].filter((h) => h.startsWith('/p/')).map((h) => h.slice(3))
   const categorySlugs = [...hrefs].filter((h) => h.startsWith('/c/')).map((h) => h.slice(3))
@@ -96,9 +100,26 @@ async function main(): Promise<void> {
     const planHrefs = [
       ...(plan.links ?? []).map((l) => l.href),
       ...(plan.add ?? []).flatMap((a) => hrefsIn(a.html)),
+      ...(plan.replace ?? []).flatMap((r) => hrefsIn(r.html)),
     ]
     const dup = planHrefs.find((h, i) => planHrefs.indexOf(h) !== i)
     if (dup) errors.push(`${slug}: the plan links ${dup} twice`)
+
+    for (const rep of plan.replace ?? []) {
+      if (blocks.some((b) => b.html?.includes(rep.html))) {
+        changes.push(`= replacement "${rep.find.slice(0, 40)}…" already applied`)
+        skipped++
+        continue
+      }
+      const target = blocks.filter((b) => LINKABLE.has(b.type) && b.html?.includes(rep.find))
+      if (target.length !== 1) {
+        errors.push(`${slug}: replacement text found in ${target.length} blocks (need exactly 1): "${rep.find.slice(0, 60)}"`)
+        continue
+      }
+      target[0]!.html = target[0]!.html!.replace(rep.find, rep.html)
+      changes.push(`~ replaced "${rep.find.slice(0, 50)}…": ${hrefsIn(rep.html).join(', ')}`)
+      newLinks += hrefsIn(rep.html).length
+    }
 
     for (const link of plan.links ?? []) {
       if (proseHrefs().includes(link.href)) {
@@ -155,7 +176,7 @@ async function main(): Promise<void> {
       for (const issue of parsed.error.issues) errors.push(`${slug}: ${issue.path.join('.')}: ${issue.message}`)
       continue
     }
-    if (changes.some((c) => c.startsWith('+'))) planned.push({ id: post.id, slug, blocks: blocks as BlogBlockInput[], before: post.bodyBlocks, changes })
+    if (changes.some((c) => c.startsWith('+') || c.startsWith('~'))) planned.push({ id: post.id, slug, blocks: blocks as BlogBlockInput[], before: post.bodyBlocks, changes })
   }
 
   if (errors.length) {
