@@ -17,6 +17,12 @@ import { STATIC_SITEMAP_PATHS } from './crawl-policy'
 import { redirectSourcePaths } from './redirects'
 import { staticRedirectSources } from './static-redirects'
 import { newestDate } from './sitemap-xml'
+import {
+  PRODUCT_SITEMAP_GROUPS,
+  categoryGroups,
+  categoryIdsForGroup,
+  type ProductSitemapGroup,
+} from './sitemap-product-groups'
 
 /**
  * The sitemap, split by section.
@@ -43,7 +49,7 @@ import { newestDate } from './sitemap-xml'
 
 export type SitemapSectionId =
   | 'pages'
-  | 'products'
+  | `products-${ProductSitemapGroup}`
   | 'categories'
   | 'brands'
   | 'blog'
@@ -55,7 +61,9 @@ export type SitemapSectionId =
 
 export const SITEMAP_SECTION_IDS: readonly SitemapSectionId[] = [
   'pages',
-  'products',
+  // One child per root-category group — see `lib/sitemap-product-groups.ts`.
+  // `products.xml` was retired 2026-11-20 and now 404s; the index never lists it.
+  ...PRODUCT_SITEMAP_GROUPS.map((g) => `products-${g}` as const),
   'categories',
   'brands',
   'blog',
@@ -168,9 +176,18 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
  * updatedAt`, which reported the older date whenever the SEO panel had ever
  * been saved.
  */
-async function productsSection(): Promise<MetadataRoute.Sitemap> {
+async function productsSection(group: ProductSitemapGroup): Promise<MetadataRoute.Sitemap> {
+  // Every category (published or not — a product on an unpublished shelf is
+  // still a live page) so each product resolves to its root group.
+  const categories = await db.category.findMany({ select: { id: true, parentId: true, slug: true } })
+  const groupIds = categoryIdsForGroup(categoryGroups(categories), group)
+  const inGroup =
+    group === 'other'
+      ? { OR: [{ categoryId: null }, { categoryId: { in: groupIds } }] }
+      : { categoryId: { in: groupIds } }
+
   const products = await db.product.findMany({
-    where: { status: 'active' },
+    where: { status: 'active', ...inGroup },
     select: {
       slug: true,
       contentUpdatedAt: true,
@@ -600,8 +617,14 @@ async function sitemapSectionRaw(id: SitemapSectionId): Promise<MetadataRoute.Si
   switch (id) {
     case 'pages':
       return pagesSection()
-    case 'products':
-      return productsSection()
+    case 'products-hoses':
+      return productsSection('hoses')
+    case 'products-lifting':
+      return productsSection('lifting')
+    case 'products-marine':
+      return productsSection('marine')
+    case 'products-other':
+      return productsSection('other')
     case 'categories':
       return categoriesSection()
     case 'brands':

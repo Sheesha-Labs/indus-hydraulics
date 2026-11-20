@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import { newestDate, newestLastModified, renderSitemapIndex, renderUrlset } from './sitemap-xml'
+import {
+  PRODUCT_GROUP_ROOTS,
+  PRODUCT_SITEMAP_GROUPS,
+  categoryGroups,
+  categoryIdsForGroup,
+  groupForRootSlug,
+} from './sitemap-product-groups'
 
 describe('renderUrlset', () => {
   it('emits a valid urlset with the sitemaps.org namespace', () => {
@@ -72,10 +79,10 @@ describe('renderUrlset', () => {
 
 describe('renderSitemapIndex', () => {
   it('emits a sitemapindex, not a urlset', () => {
-    const xml = renderSitemapIndex([{ url: 'https://x.test/sitemaps/products.xml' }])
+    const xml = renderSitemapIndex([{ url: 'https://x.test/sitemaps/products-hoses.xml' }])
     expect(xml).toContain('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
     expect(xml).toContain('<sitemap>')
-    expect(xml).toContain('<loc>https://x.test/sitemaps/products.xml</loc>')
+    expect(xml).toContain('<loc>https://x.test/sitemaps/products-hoses.xml</loc>')
     expect(xml).not.toContain('<urlset')
     expect(xml).not.toContain('<url>')
   })
@@ -142,5 +149,65 @@ describe('newestDate', () => {
 
   it('returns undefined rather than inventing a date', () => {
     expect(newestDate(null, undefined)).toBeUndefined()
+  })
+})
+
+describe('product sitemap groups', () => {
+  it('lists one child per group, other last', () => {
+    expect(PRODUCT_SITEMAP_GROUPS).toEqual(['hoses', 'lifting', 'marine', 'other'])
+  })
+
+  it('maps every hose root to hoses', () => {
+    for (const slug of [
+      'hydraulic-hose-fittings-suppliers-uae',
+      'industrial-hose-suppliers-uae',
+      'oil-gas-hoses',
+      'lay-flat-hoses',
+    ]) {
+      expect(groupForRootSlug(slug)).toBe('hoses')
+    }
+  })
+
+  it('maps lifting and marine roots, and anything else to other', () => {
+    expect(groupForRootSlug('lifting-rigging-equipment-uae')).toBe('lifting')
+    expect(groupForRootSlug('marine-equipment-uae')).toBe('marine')
+    expect(groupForRootSlug('pneumatics')).toBe('other')
+    expect(groupForRootSlug(null)).toBe('other')
+  })
+
+  it('never lists a root in two groups', () => {
+    const roots = Object.values(PRODUCT_GROUP_ROOTS).flat()
+    expect(new Set(roots).size).toBe(roots.length)
+  })
+
+  const tree = [
+    { id: 'hose', parentId: null, slug: 'industrial-hose-suppliers-uae' },
+    { id: 'hose-a', parentId: 'hose', slug: 'chemical-hoses' },
+    { id: 'hose-a-1', parentId: 'hose-a', slug: 'ptfe-chemical-hoses' },
+    { id: 'lift', parentId: null, slug: 'lifting-rigging-equipment-uae' },
+    { id: 'lift-a', parentId: 'lift', slug: 'lifting-slings' },
+    { id: 'pn', parentId: null, slug: 'pneumatics' },
+    { id: 'orphan', parentId: 'missing', slug: 'orphan-shelf' },
+    { id: 'loop-a', parentId: 'loop-b', slug: 'loop-a' },
+    { id: 'loop-b', parentId: 'loop-a', slug: 'loop-b' },
+  ]
+
+  it('resolves a category through its root ancestor at any depth', () => {
+    const groups = categoryGroups(tree)
+    expect(groups.get('hose-a-1')).toBe('hoses')
+    expect(groups.get('lift-a')).toBe('lifting')
+    expect(groups.get('pn')).toBe('other')
+  })
+
+  it('puts a dangling parent or a cycle in other instead of looping', () => {
+    const groups = categoryGroups(tree)
+    expect(groups.get('orphan')).toBe('other')
+    expect(groups.get('loop-a')).toBe('other')
+  })
+
+  it('partitions every category into exactly one group', () => {
+    const groups = categoryGroups(tree)
+    const all = PRODUCT_SITEMAP_GROUPS.flatMap((g) => categoryIdsForGroup(groups, g))
+    expect(all.sort()).toEqual(tree.map((c) => c.id).sort())
   })
 })
