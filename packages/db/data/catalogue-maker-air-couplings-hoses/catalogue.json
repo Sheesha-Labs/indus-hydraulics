@@ -9436,7 +9436,7 @@
     {
      "partNumber": "1204-06-06",
      "position": 2,
-     "portLabel": "9/16\"-189, 16\"-18 Fine (male)",
+     "portLabel": "9/16\"-18 x 9/16\"-18 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 9/16 Inch-18 Male JIC x 9/16 Inch-18 Male JIC",
       "ratedPsi": 5000
@@ -9445,7 +9445,7 @@
     {
      "partNumber": "1204-10-10",
      "position": 3,
-     "portLabel": "7/8\"-147, 8\"-14 Fine (male)",
+     "portLabel": "7/8\"-14 x 7/8\"-14 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 7/8 Inch-14 Male JIC x 7/8 Inch-14 Male JIC",
       "ratedPsi": 3500
@@ -9454,7 +9454,7 @@
     {
      "partNumber": "1204-04-04",
      "position": 4,
-     "portLabel": "7/16\"-207, 16\"-20 Fine (male)",
+     "portLabel": "7/16\"-20 x 7/16\"-20 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 7/16 Inch-20 Male JIC x 7/16 Inch-20 Male JIC",
       "ratedPsi": 5000
@@ -9463,7 +9463,7 @@
     {
      "partNumber": "1204-08-08",
      "position": 5,
-     "portLabel": "3/4\"-163, 4\"-16 Fine (male)",
+     "portLabel": "3/4\"-16 x 3/4\"-16 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 3/4 Inch-16 Male JIC x 3/4 Inch-16 Male JIC",
       "ratedPsi": 4500
@@ -9472,7 +9472,7 @@
     {
      "partNumber": "1204-08-04",
      "position": 6,
-     "portLabel": "3/4\"-167, 16\"-20 Fine (male)",
+     "portLabel": "3/4\"-16 x 7/16\"-20 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 3/4 Inch-16 Male JIC x 7/16 Inch-20 Male JIC",
       "ratedPsi": 4500
@@ -9490,7 +9490,7 @@
     {
      "partNumber": "1204-10-08",
      "position": 8,
-     "portLabel": "7/8\"-143, 4\"-16 Fine (male)",
+     "portLabel": "7/8\"-14 x 3/4\"-16 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 7/8 Inch-14 Male JIC x 3/4 Inch-16 Male JIC",
       "ratedPsi": 3500
@@ -9499,7 +9499,7 @@
     {
      "partNumber": "1204-12-08",
      "position": 9,
-     "portLabel": "1 1/16\"-123, 4\"-16 Fine (male)",
+     "portLabel": "1 1/16\"-12 x 3/4\"-16 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 1-1/16 Inch-12 Male JIC x 3/4 Inch-16 Male JIC",
       "ratedPsi": 3500
@@ -9572,7 +9572,7 @@
     {
      "partNumber": "1204-12-10",
      "position": 18,
-     "portLabel": "1 1/16\"-127/8\"-14 Fine (male)",
+     "portLabel": "1 1/16\"-12 x 7/8\"-14 Fine (male)",
      "dimensions": {
       "item": "Hose Connector, Steel, 1-1/16 Inch-12 Male JIC x 7/8 Inch-14 Male JIC",
       "ratedPsi": 3500
@@ -18247,7 +18247,7 @@
     {
      "partNumber": "10A242",
      "position": 0,
-     "hoseInch": "3/4\"",
+     "hoseInch": "2\"",
      "hoseDash": 12,
      "pressureBar": 21,
      "dimensions": {
@@ -18297,7 +18297,7 @@
     {
      "partNumber": "1ZLJ9",
      "position": 5,
-     "hoseInch": "3/4\"",
+     "hoseInch": "2\"",
      "hoseDash": 12,
      "pressureBar": 34,
      "dimensions": {
@@ -18307,7 +18307,7 @@
     {
      "partNumber": "1ZNC5",
      "position": 6,
-     "hoseInch": "3/4\"",
+     "hoseInch": "2\"",
      "hoseDash": 12,
      "pressureBar": 69,
      "dimensions": {
@@ -18387,7 +18387,7 @@
     {
      "partNumber": "5W038",
      "position": 14,
-     "hoseInch": "3/4\"",
+     "hoseInch": "2\"",
      "hoseDash": 12,
      "pressureBar": 34,
      "dimensions": {
@@ -19199,10 +19199,10 @@
    "category": "air-water-hoses",
    "brandSlug": "guardair",
    "focusKeyword": "guardair coilgaurd nylon air hoses",
-   "descriptionShort": "Guardair Coilgaurd Nylon Air Hoses, 1/4\": 6 part numbers.",
-   "descriptionLong": "<p>Guardair Coilgaurd Nylon Air Hoses, 1/4\": 6 part numbers.</p><h3>Specification</h3><ul><li>Type: Multipurpose Air Hose</li><li>Material: Nylon, Nylon, Steel</li><li>Size range: 1/4\"</li><li>Pressure stated by the maker: 250 psi (17 bar)</li><li>Temperature: 0°F to 80°F</li><li>Cover Material: Nylon</li><li>Part numbers: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Guardair part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Choosing the hose</h3><p>Select hose on working pressure, bore, temperature and fluid. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit. End fittings must be from the series the hose maker approves for that hose.</p><h3>How to order</h3><p>Quote the Guardair part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionShort": "Guardair Coilgaurd Nylon Air Hoses, 3/8\": 6 part numbers.",
+   "descriptionLong": "<p>Guardair Coilgaurd Nylon Air Hoses, 3/8\": 6 part numbers.</p><h3>Specification</h3><ul><li>Type: Multipurpose Air Hose</li><li>Material: Nylon, Nylon, Steel</li><li>Size range: 3/8\"</li><li>Pressure stated by the maker: 250 psi (17 bar)</li><li>Temperature: 0°F to 80°F</li><li>Cover Material: Nylon</li><li>Part numbers: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Guardair part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Choosing the hose</h3><p>Select hose on working pressure, bore, temperature and fluid. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit. End fittings must be from the series the hose maker approves for that hose.</p><h3>How to order</h3><p>Quote the Guardair part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Guardair Coilgaurd Nylon Air Hoses",
-   "seoDescription": "Guardair Coilgaurd Nylon Air Hoses, 1/4\": 6 part numbers. Quote by Guardair part number.",
+   "seoDescription": "Guardair Coilgaurd Nylon Air Hoses, 3/8\": 6 part numbers. Quote by Guardair part number.",
    "faqs": [],
    "specs": [
     {
@@ -19338,7 +19338,7 @@
     {
      "partNumber": "14X25B03",
      "position": 0,
-     "hoseInch": "1/4\"",
+     "hoseInch": "3/8\"",
      "hoseDash": 4,
      "pressureBar": 17,
      "dimensions": {
@@ -19348,7 +19348,7 @@
     {
      "partNumber": "38X12B03",
      "position": 1,
-     "hoseInch": "1/4\"",
+     "hoseInch": "3/8\"",
      "hoseDash": 4,
      "dimensions": {
       "item": "Nylon Hose, 3/8 Inch Internal Diameter, 12 Feet Length"
@@ -19357,7 +19357,7 @@
     {
      "partNumber": "38X25B03",
      "position": 2,
-     "hoseInch": "1/4\"",
+     "hoseInch": "3/8\"",
      "hoseDash": 4,
      "dimensions": {
       "item": "Nylon Hose, 3/8 Inch Internal Diameter, 25 Feet Length"
@@ -19366,7 +19366,7 @@
     {
      "partNumber": "38X50B03",
      "position": 3,
-     "hoseInch": "1/4\"",
+     "hoseInch": "3/8\"",
      "hoseDash": 4,
      "dimensions": {
       "item": "Nylon Hose, 3/8 Inch Internal Diameter, 50 Feet Length"
@@ -19375,7 +19375,7 @@
     {
      "partNumber": "14X12B03",
      "position": 4,
-     "hoseInch": "1/4\"",
+     "hoseInch": "3/8\"",
      "hoseDash": 4,
      "dimensions": {
       "item": "Nylon Hose, 1/4 Inch Internal Diameter, 12 Feet Length"
@@ -19384,7 +19384,7 @@
     {
      "partNumber": "14X50B03",
      "position": 5,
-     "hoseInch": "1/4\"",
+     "hoseInch": "3/8\"",
      "hoseDash": 4,
      "dimensions": {
       "item": "Recoil Hose, 1/4 Inch I.D., 50 ft. Hose, Steel/Nylon"
@@ -19402,10 +19402,10 @@
    "category": "air-water-hoses",
    "brandSlug": "guardair",
    "focusKeyword": "guardair coilguard polyurethane air hoses",
-   "descriptionShort": "Guardair Coilguard Polyurethane Air Hoses, 3/8\": 4 part numbers.",
-   "descriptionLong": "<p>Guardair Coilguard Polyurethane Air Hoses, 3/8\": 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Multipurpose Air Hose</li><li>Size range: 3/8\"</li><li>Pressure stated by the maker: 100 psi (7 bar)</li><li>Temperature: -50°F to +180°F</li><li>Cover Material: Polyurethane</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Guardair part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Choosing the hose</h3><p>Select hose on working pressure, bore, temperature and fluid. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit. End fittings must be from the series the hose maker approves for that hose.</p><h3>How to order</h3><p>Quote the Guardair part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionShort": "Guardair Coilguard Polyurethane Air Hoses, 1/4\": 4 part numbers.",
+   "descriptionLong": "<p>Guardair Coilguard Polyurethane Air Hoses, 1/4\": 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Multipurpose Air Hose</li><li>Size range: 1/4\"</li><li>Pressure stated by the maker: 100 psi (7 bar)</li><li>Temperature: -50°F to +180°F</li><li>Cover Material: Polyurethane</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Guardair part number in this range with its ratings. Ratings vary by size — check the row for the part you order.</p><h3>Choosing the hose</h3><p>Select hose on working pressure, bore, temperature and fluid. The working pressure in the size table is the maximum for continuous duty; burst pressure is a test figure, not a working limit. End fittings must be from the series the hose maker approves for that hose.</p><h3>How to order</h3><p>Quote the Guardair part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Guardair Coilguard Polyurethane Air Hoses",
-   "seoDescription": "Guardair Coilguard Polyurethane Air Hoses, 3/8\": 4 part numbers. Quote by Guardair part number.",
+   "seoDescription": "Guardair Coilguard Polyurethane Air Hoses, 1/4\": 4 part numbers. Quote by Guardair part number.",
    "faqs": [],
    "specs": [
     {
@@ -19532,7 +19532,7 @@
     {
      "partNumber": "38X12B04",
      "position": 0,
-     "hoseInch": "3/8\"",
+     "hoseInch": "1/4\"",
      "hoseDash": 6,
      "pressureBar": 7,
      "dimensions": {
@@ -19542,7 +19542,7 @@
     {
      "partNumber": "14X12B04",
      "position": 1,
-     "hoseInch": "3/8\"",
+     "hoseInch": "1/4\"",
      "hoseDash": 6,
      "dimensions": {
       "item": "Polyurethane Hose, 1/4 Inch Internal Diameter, 12 Feet Length"
@@ -19551,7 +19551,7 @@
     {
      "partNumber": "14X25B04",
      "position": 2,
-     "hoseInch": "3/8\"",
+     "hoseInch": "1/4\"",
      "hoseDash": 6,
      "dimensions": {
       "item": "Polyurethane Hose, 1/4 Inch Internal Diameter, 25 Feet Length"
@@ -19560,7 +19560,7 @@
     {
      "partNumber": "38X25B04",
      "position": 3,
-     "hoseInch": "3/8\"",
+     "hoseInch": "1/4\"",
      "hoseDash": 6,
      "dimensions": {
       "item": "Polyurethane Hose, 3/8 Inch Internal Diameter, 25 Feet Length"
@@ -20489,7 +20489,7 @@
      "partNumber": "B23AS25F",
      "position": 0,
      "dimensions": {
-      "item": "Coupler Body (f)npt 1/4 Brass",
+      "item": "Coupler Body (f)npt 3/8 Brass",
       "half": "Coupler (female half)",
       "bodySize": "1/4\""
      }
@@ -20498,7 +20498,7 @@
      "partNumber": "B23AS25M",
      "position": 1,
      "dimensions": {
-      "item": "Coupler Body (m)npt 1/4 Brass",
+      "item": "Coupler Body (m)npt 3/8 Brass",
       "half": "Coupler (female half)",
       "bodySize": "1/4\""
      }
@@ -20507,7 +20507,7 @@
      "partNumber": "B23AS37M",
      "position": 2,
      "dimensions": {
-      "item": "Coupler Body (m)npt 1/4 Brass",
+      "item": "Coupler Body (m)npt 3/8 Brass",
       "half": "Coupler (female half)",
       "bodySize": "1/4\""
      }
@@ -20516,7 +20516,7 @@
      "partNumber": "B23AS25H",
      "position": 3,
      "dimensions": {
-      "item": "Coupler Body Hose Barb 1/4 Brass",
+      "item": "Coupler Body Hose Barb 3/8 Brass",
       "half": "Coupler (female half)",
       "bodySize": "1/4\""
      }
@@ -20525,7 +20525,7 @@
      "partNumber": "B23AS37F",
      "position": 4,
      "dimensions": {
-      "item": "Coupler Body (f)npt 1/4 Brass",
+      "item": "Coupler Body (f)npt 3/8 Brass",
       "half": "Coupler (female half)",
       "bodySize": "3/8\""
      }
@@ -20534,7 +20534,7 @@
      "partNumber": "B23AS37H",
      "position": 5,
      "dimensions": {
-      "item": "Coupler Body Hose Barb 1/4 Brass",
+      "item": "Coupler Body Hose Barb 3/8 Brass",
       "half": "Coupler (female half)",
       "bodySize": "3/8\""
      }
@@ -25381,7 +25381,7 @@
    "brandSlug": "parker",
    "focusKeyword": "parker e-z-mate series couplers, hose barb",
    "descriptionShort": "Parker E-z-mate Series Couplers, Hose Barb in steel, 1/4\" to 1/2\": 4 part numbers.",
-   "descriptionLong": "<p>Parker E-z-mate Series Couplers, Hose Barb in steel, 1/4\" to 1/2\": 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Twist On Wire Connector</li><li>Material: Steel</li><li>Size range: 1/4\" to 1/2\"</li><li>Pressure stated by the maker: 250 to 300 psi (17 to 21 bar), by size</li><li>Temperature: -40°F to +250°F</li><li>Connection Type: Hose Barb</li><li>Seal Material: Nitrile</li><li>Valve Type: Tubular</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its connections. Ratings vary by size — check the row for the part you order.</p><h3>Matching halves</h3><p>Quick couplings only seal and flow at their rating when both halves come from the same interchange profile. Quote the part number of the mating half too, or tell us what it must connect to, and we will confirm the match before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
+   "descriptionLong": "<p>Parker E-z-mate Series Couplers, Hose Barb in steel, 1/4\" to 1/2\": 4 part numbers.</p><h3>Specification</h3><ul><li>Type: Quick Coupling</li><li>Material: Steel</li><li>Size range: 1/4\" to 1/2\"</li><li>Pressure stated by the maker: 250 to 300 psi (17 to 21 bar), by size</li><li>Temperature: -40°F to +250°F</li><li>Connection Type: Hose Barb</li><li>Seal Material: Nitrile</li><li>Valve Type: Tubular</li><li>Part numbers: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists every Parker part number in this range with its connections. Ratings vary by size — check the row for the part you order.</p><h3>Matching halves</h3><p>Quick couplings only seal and flow at their rating when both halves come from the same interchange profile. Quote the part number of the mating half too, or tell us what it must connect to, and we will confirm the match before supply.</p><h3>How to order</h3><p>Quote the Parker part number. Price and lead time are confirmed with the quotation.</p>",
    "seoTitle": "Parker E-z-mate Series Couplers, Hose Barb",
    "seoDescription": "Parker E-z-mate Series Couplers, Hose Barb in steel, 1/4\" to 1/2\": 4 part numbers. Quote by Parker part number.",
    "faqs": [],
@@ -25672,7 +25672,7 @@
      "partNumber": "EZ-501-8HB",
      "position": 0,
      "dimensions": {
-      "item": "Twist On Wire Connector, 1/2 Inch Size, 300 Psi, Steel",
+      "item": "Quick Coupling, 1/2 Inch Size, 300 Psi, Steel",
       "bodySize": "1/2\"",
       "ratedPsi": 300
      }
