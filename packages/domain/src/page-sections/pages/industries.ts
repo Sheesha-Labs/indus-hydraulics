@@ -1,3 +1,4 @@
+import { enquiryMailto } from '../../enquiry-mail'
 import { area, ctaPair, eyebrow, heading, statList, text } from '../fields'
 import type { MasterPageDef } from '../types'
 
@@ -55,8 +56,8 @@ export const INDUSTRIES_PAGE: MasterPageDef = {
       defaults: {
         heading: 'Don’t see your industry listed?',
         body: 'We supply hydraulic components across many more applications. Send us your part number or specification.',
-        primary_cta_label: 'Submit an RFQ →',
-        primary_cta_href: '/quote',
+        primary_cta_label: 'Email an enquiry →',
+        primary_cta_href: enquiryMailto({ subject: 'Industry enquiry' }),
         secondary_cta_label: 'Contact us',
         secondary_cta_href: '/contact',
       },

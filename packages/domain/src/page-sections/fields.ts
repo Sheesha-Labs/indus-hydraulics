@@ -61,7 +61,7 @@ export const link = (
   kind: 'link',
   max: 240,
   optional: true,
-  help: 'Internal path (/quote) or full URL.',
+  help: 'Internal path (/contact), full URL, or a mailto: link.',
   ...extra,
 })
 

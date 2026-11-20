@@ -4,8 +4,7 @@ import { createHash } from 'node:crypto'
 import { headers } from 'next/headers'
 import { z } from 'zod'
 import { db } from '@indus/db'
-import { renderCallbackConfirmation, renderCallbackSalesAlert, sendEmail } from '@indus/email'
-import { loadEmailBranding } from '../lib/email-branding'
+import { sendEnquiryEmail } from '../lib/enquiry-email'
 import { clientIp } from '../lib/request-origin'
 import { OFFICES } from '../lib/site-locations'
 import { deskStatus, dubaiNow, parseOpeningHours } from '../lib/opening-hours'
@@ -46,14 +45,6 @@ const LIMIT_PER_DAY = 10
 
 /** Anything faster than this from open to submit is not a person. */
 const MIN_ELAPSED_MS = 1500
-
-const SURFACE_LABEL = { B: 'Split modal (desktop)', D: 'Corner card (desktop)', E: 'Mobile sheet' } as const
-const TRIGGER_LABEL = {
-  inactivity: 'inactivity',
-  exit: 'exit intent',
-  tab_return: 'returned to the tab',
-  manual: 'opened manually (?cb=)',
-} as const
 
 const optionalText = (max: number) =>
   z
@@ -180,16 +171,6 @@ export async function requestCallback(fd: FormData): Promise<CallbackResult> {
 
   const name = p.name.replace(/\s+/g, ' ')
   const pageUrl = sameSitePath(p.pageUrl)
-  const utmPairs = (
-    [
-      ['source', p.utm_source],
-      ['medium', p.utm_medium],
-      ['campaign', p.utm_campaign],
-      ['term', p.utm_term],
-      ['content', p.utm_content],
-    ] as const
-  ).filter(([, v]) => v)
-  const utm = utmPairs.length > 0 ? utmPairs.map(([k, v]) => `${k}=${v}`).join(' · ') : null
   const catLabel = p.surface === 'B' ? categoryLabel(p.category) : null
 
   let stored = false
@@ -223,69 +204,33 @@ export async function requestCallback(fd: FormData): Promise<CallbackResult> {
     console.error('[requestCallback] insert failed', err)
   }
 
-  const branding = await loadEmailBranding().catch(() => null)
-  const hq = OFFICES.find((o) => o.kind === 'hq')
-  const deskEmail = hq?.email ?? 'sales@indushydraulics.me'
-  const deskPhone = hq?.telephone ?? '+971 52 2477942'
-  let alerted = false
-  if (branding) {
-    const recipients = branding.internalAlertEmails.length > 0 ? branding.internalAlertEmails : [deskEmail]
-    const alert = renderCallbackSalesAlert({
-      name,
-      email: p.email,
-      phoneE164,
-      categoryLabel: catLabel,
-      description: p.surface === 'B' ? p.description : null,
-      surfaceLabel: SURFACE_LABEL[p.surface],
-      triggerLabel: TRIGGER_LABEL[p.trigger],
-      pageUrl,
-      pageTitle: p.pageTitle,
-      market: p.market,
-      referrer: p.referrer,
-      utm,
-      deskOpen: desk.open,
-      branding,
-    })
-    const sent = await sendEmail({
-      kind: 'callback_request',
-      to: recipients,
-      subject: alert.subject,
-      html: alert.html,
-      text: alert.text,
-      fromEmail: branding.fromEmail,
-      ...(branding.fromName ? { fromName: branding.fromName } : {}),
-      replyTo: p.email,
-    }).catch((err: unknown) => {
-      console.error('[requestCallback] sales email threw', err)
-      return null
-    })
-    // A failed send still writes a SentEmail row the retry cron picks up.
-    alerted = sent !== null
-  }
+  /*
+    One email for the desk and the visitor: to sales@ and purchase@, the
+    visitor in CC as their record. The lead row above keeps the campaign,
+    referrer and prompt data; none of it goes in a mail the visitor reads.
+  */
+  const phoneDisplay = displayPhone(phoneE164, dial)
+  const when = desk.open
+    ? 'within one working hour'
+    : desk.nextOpen
+      ? `when the desk opens ${desk.nextOpen}`
+      : 'as soon as the desk opens'
+  const alerted = await sendEnquiryEmail({
+    reference: null,
+    formLabel: 'Call-back request',
+    senderName: name,
+    senderEmail: p.email,
+    details: [
+      ['Phone', phoneDisplay],
+      ['Looking for', catLabel],
+      ['Page', p.pageTitle],
+    ],
+    message: p.surface === 'B' ? p.description : null,
+    pageUrl,
+    nextStep: `A hydraulic engineer from our export desk will call you on ${phoneDisplay} ${when}.`,
+  })
 
   if (!stored && !alerted) return { success: false, error: 'failed' }
-
-  if (branding) {
-    const confirmation = renderCallbackConfirmation({
-      phoneDisplay: displayPhone(phoneE164, dial),
-      categoryLabel: catLabel,
-      deskOpen: desk.open,
-      nextOpen: desk.nextOpen,
-      deskPhone,
-      deskEmail,
-      branding,
-    })
-    await sendEmail({
-      kind: 'callback_confirmation',
-      to: [p.email],
-      subject: confirmation.subject,
-      html: confirmation.html,
-      text: confirmation.text,
-      fromEmail: branding.fromEmail,
-      ...(branding.fromName ? { fromName: branding.fromName } : {}),
-      replyTo: deskEmail,
-    }).catch((err: unknown) => console.error('[requestCallback] confirmation threw', err))
-  }
 
   return accepted
 }

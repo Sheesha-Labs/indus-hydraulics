@@ -1,3 +1,5 @@
+import { enquiryBody, enquiryMailto } from '@indus/domain'
+
 /**
  * The two enquiry routes the storefront offers for a part: WhatsApp and email.
  *
@@ -29,20 +31,18 @@ export function whatsappHref(
   return `https://wa.me/${digits}?text=${encodeURIComponent(lines.join('\n'))}`
 }
 
-/** mailto: with the quotation subject line. Always returns a link. */
-export function mailtoQuoteHref(email: string | null, sku: string): string {
-  const to = email ?? 'enquiries@indushydraulics.me'
-  const subject = encodeURIComponent(`Quotation for ${sku}`)
-  return `mailto:${to}?subject=${subject}`
+/**
+ * The email enquiry for one product: to sales@, purchase@ in CC, subject
+ * naming the part and a body with the lines the desk always asks for.
+ */
+export function productEnquiryHref(product: { sku: string; title: string; url: string }): string {
+  return enquiryMailto({
+    subject: `Enquiry: ${product.title} (${product.sku})`,
+    body: enquiryBody({ about: product.title, partNumber: product.sku, url: product.url }),
+  })
 }
 
-/** The single "Inquire" route on a product card: WhatsApp when set up, else email. */
-export function inquireHref(
-  settings: { contactPhone: string | null; contactEmail: string | null },
-  product: { sku: string; title: string; url: string },
-): { href: string; external: boolean } {
-  const wa = whatsappHref(settings.contactPhone, { title: product.title, url: product.url })
-  return wa
-    ? { href: wa, external: true }
-    : { href: mailtoQuoteHref(settings.contactEmail, product.sku), external: false }
+/** The "Inquire" route on a product card: the email enquiry (owner decision, 2026-11-20). */
+export function inquireHref(product: { sku: string; title: string; url: string }): { href: string; external: boolean } {
+  return { href: productEnquiryHref(product), external: false }
 }

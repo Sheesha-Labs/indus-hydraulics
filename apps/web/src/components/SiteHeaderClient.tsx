@@ -1,5 +1,6 @@
 'use client'
 
+import { enquiryMailto } from '@indus/domain'
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import type React from 'react'
@@ -629,13 +630,13 @@ export default function SiteHeaderClient({
               >
                 Compare specifications
               </Link>
-              <Link
-                href="/quote"
+              <a
+                href={enquiryMailto({ subject: 'Parts enquiry' })}
                 onClick={closeDropdownImmediate}
                 className="text-ih-accent text-[12.5px] hover:underline"
               >
-                Your quote list
-              </Link>
+                Email an enquiry
+              </a>
               <span className="text-ih-muted ml-auto text-[12.5px]">
                 Can&rsquo;t find the part? Send a photo of the nameplate — we cross-reference
                 obsolete numbers daily.

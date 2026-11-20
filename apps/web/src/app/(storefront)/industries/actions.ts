@@ -9,7 +9,9 @@ import {
   readAttachments,
   rejectAsBot,
 } from '../../../lib/designed-enquiry'
-import { resolveOrCreateAnonymousContact, sendRfqEmails } from '../../../lib/rfq-intake'
+import { resolveOrCreateAnonymousContact } from '../../../lib/rfq-intake'
+import { sendEnquiryEmail } from '../../../lib/enquiry-email'
+import { urlFor } from '../../../lib/seo'
 import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
 /**
@@ -177,25 +179,22 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
     return created
   })
 
-  // The RFQ is committed. A mail failure must not undo it, or lose it.
-  try {
-    await sendRfqEmails({
-      rfqId: rfq.id,
-      rfqCode: rfq.code,
-      // No urgency question on this page — a project enquiry that comes with a
-      // drawing is a considered one, not a breakdown. `routine` is the column
-      // default and is what the desk sorts the queue by.
-      urgency: 'routine',
-      lineCount: 0,
-      subject,
-      customerMessage: input.description || null,
-      contactId,
-      accountId,
-      shipToAddressId: null,
-    })
-  } catch (err) {
-    console.error('[submitIndustryEnquiry] email send error', err)
-  }
+  // The RFQ is committed. The email never throws, so it cannot undo it.
+  await sendEnquiryEmail({
+    rfqId: rfq.id,
+    reference: rfq.code,
+    formLabel: `${page.card.name} enquiry`,
+    senderName: input.contactName,
+    senderEmail: input.email,
+    company: input.company,
+    details: [
+      ['Phone', input.phone],
+      ['Application', application],
+    ],
+    message: input.description || null,
+    attachmentCount: attachments.length,
+    pageUrl: urlFor(`/industries/${page.slug}`),
+  })
 
   /*
     No redirect. The reader is thousands of pixels down a page they scrolled

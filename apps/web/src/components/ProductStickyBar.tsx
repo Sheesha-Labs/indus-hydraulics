@@ -163,11 +163,11 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
           )}
           <a
             href={emailUrl}
-            aria-label="Email for a quotation"
+            aria-label="Enquire by email"
             className="flex h-10 items-center gap-2 rounded-[var(--radius-md)] border border-ih-ink bg-ih-surface px-3 text-[13px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2 sm:px-4"
           >
             <MailGlyph />
-            <span className="hidden sm:inline">Email quote</span>
+            <span className="hidden sm:inline">Enquire</span>
           </a>
           {whatsappUrl && (
             <a

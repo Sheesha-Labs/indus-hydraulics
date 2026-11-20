@@ -238,7 +238,7 @@ export default async function ContactPage({ params }: Props) {
                 </p>
                 {str(channelsCopy, 'rfq_cta_label') ? (
                   <Link
-                    href={str(channelsCopy, 'rfq_cta_href') ?? '/quote'}
+                    href={str(channelsCopy, 'rfq_cta_href') ?? '/contact'}
                     className="mono inline-flex h-9 items-center rounded-sm border border-ih-border px-4 text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-ink"
                   >
                     {str(channelsCopy, 'rfq_cta_label')}

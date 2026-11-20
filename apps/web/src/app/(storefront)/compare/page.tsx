@@ -12,8 +12,11 @@ import {
   type CompareRow,
   type CompareTemplate,
   type CompareValidationResult,
+  enquiryMailto,
 } from '@indus/domain'
 import { mediaUrl } from '../../../lib/media'
+import { productEnquiryHref } from '../../../lib/enquiry-links'
+import { urlFor } from '../../../lib/seo'
 
 type Props = {
   searchParams: Promise<{ skus?: string; diff?: string }>
@@ -364,9 +367,9 @@ export default async function ComparePage({ searchParams }: Props) {
                       {stockLabel}
                     </div>
                     <div className="flex flex-col gap-1.5">
-                      <Link href={`/quote`} className="flex h-9 items-center justify-center rounded-sm bg-ih-accent text-[12.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover">
-                        Request quote
-                      </Link>
+                      <a href={productEnquiryHref({ sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) })} className="flex h-9 items-center justify-center rounded-sm bg-ih-accent text-[12.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover">
+                        Enquire
+                      </a>
                       <Link href={`/p/${product.slug}`} className="flex h-9 items-center justify-center rounded-sm border border-ih-border-strong text-[12.5px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent">
                         View details →
                       </Link>
@@ -492,12 +495,28 @@ export default async function ComparePage({ searchParams }: Props) {
                 </div>
               </div>
               <div className="flex shrink-0 flex-wrap gap-2">
-                <Link
-                  href={`/quote`}
+                <a
+                  href={enquiryMailto({
+                    subject: `Enquiry: ${sortedProducts.length} products from a comparison`,
+                    body: [
+                      'Hello Indus Hydraulics,',
+                      '',
+                      'Please recommend and quote the right one of these for my application:',
+                      ...sortedProducts.map((p) => `- ${p.title} (${p.sku}) ${urlFor(`/p/${p.slug}`)}`),
+                      '',
+                      'Application:',
+                      'Quantity:',
+                      'Delivery to (city, country):',
+                      '',
+                      'Name:',
+                      'Company:',
+                      'Phone / WhatsApp:',
+                    ].join('\n'),
+                  })}
                   className="inline-flex h-10 items-center whitespace-nowrap rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
                 >
-                  RFQ all {sortedProducts.length} →
-                </Link>
+                  Enquire about all {sortedProducts.length} →
+                </a>
                 <Link
                   href={`/contact`}
                   className="h-9 px-4 flex items-center border font-mono text-[12px] text-white hover:bg-[oklch(1_0_0_/_0.05)] transition-colors whitespace-nowrap"

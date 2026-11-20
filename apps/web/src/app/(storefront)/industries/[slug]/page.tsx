@@ -3,15 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import {
-  buildBreadcrumbLd,
-  buildServiceLd,
-  designedIndustryPage,
-  designedIndustrySlugs,
-  industryMarketReach,
-  type DesignedIndustryPage,
-} from '@indus/domain'
-import { Breadcrumb, JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { buildBreadcrumbLd, buildServiceLd, designedIndustryPage, designedIndustrySlugs, industryMarketReach, type DesignedIndustryPage, enquiryMailto, enquiryBody } from '@indus/domain'
+import { Breadcrumb, JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import DesignedIndustryLanding from '../../../../components/industries/DesignedIndustryLanding'
 import MarketReachSection from '../../../../components/markets/MarketReachSection'
 import { mediaUrl } from '../../../../lib/media'
@@ -402,7 +395,7 @@ export default async function IndustryPage({ params }: Props) {
         heading={`Quoting a project in ${ind.name}?`}
         body={`Tell our applications team what you're specifying. We reply within one business day with availability, lead time and a fixed-price quote — no obligation.`}
         whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${ind.name} project`)}
-        emailUrl={buildMailtoHref(settings.contactEmail, `${ind.name} project enquiry`)}
+        emailUrl={enquiryMailto({ subject: `${ind.name} project enquiry`, body: enquiryBody({ about: `${ind.name} project`, url: urlFor(`/industries/${ind.slug}`) }) })}
         phone={settings.contactPhone}
       />
 
@@ -513,7 +506,7 @@ async function renderDesigned(page: DesignedIndustryPage) {
         contactPhone={settings.contactPhone}
         contactEmail={settings.contactEmail}
         whatsappHref={buildWhatsappHref(settings.contactPhone, `Enquiry: ${page.card.name}`)}
-        mailtoHref={buildMailtoHref(settings.contactEmail, `${page.card.name} project enquiry`)}
+        mailtoHref={enquiryMailto({ subject: `${page.card.name} project enquiry`, body: enquiryBody({ about: `${page.card.name} project`, url: pageUrl }) })}
       />
 
       {/* Same container the designed page's own bands use — see SECTION in

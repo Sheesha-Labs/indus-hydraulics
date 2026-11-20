@@ -1,5 +1,6 @@
 'use client'
 
+import { enquiryMailto } from '@indus/domain'
 import { useState } from 'react'
 import Link from 'next/link'
 
@@ -179,12 +180,15 @@ export default function ThreadIdentifier() {
                 Browse this range
               </Link>
             )}
-            <Link
-              href="/quote"
-              className="mono inline-flex h-10 items-center rounded-md border border-ih-border px-4 text-[12px] uppercase tracking-[0.08em] text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent"
+            <a
+              href={enquiryMailto({
+                subject: 'Thread identification — photo attached',
+                body: 'Hello Indus Hydraulics,\n\nPlease identify the attached fitting and quote a replacement.\n\nQuantity:\nName:\nCompany:\nPhone / WhatsApp:',
+              })}
+              className="inline-flex h-10 items-center rounded-md border border-ih-border px-4 text-[12px] uppercase tracking-[0.08em] text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent"
             >
-              Send a photo instead
-            </Link>
+              Email us a photo
+            </a>
           </div>
         </>
       )}

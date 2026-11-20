@@ -134,7 +134,7 @@ export async function GET(): Promise<NextResponse> {
   lines.push('## Buyer journey')
   lines.push('')
   lines.push(`- [Search the catalogue](${urlFor('/search')}): find products by SKU, MPN, brand, or specification.`)
-  lines.push(`- [Request a quote](${urlFor('/quote')}): submit an RFQ with line items, quantities, and optional target pricing — typical response within 1 business day.`)
+  lines.push(`- [Send an enquiry](${urlFor('/contact')}): use the contact form, or email sales@indushydraulics.me (purchase@indushydraulics.me in CC) with part numbers and quantities — typical response within 4 business hours.`)
   lines.push(`- [Blog and case studies](${urlFor('/blog')}): selection guides, sizing notes, and worked field cases for hydraulic engineers.`)
   lines.push('')
 

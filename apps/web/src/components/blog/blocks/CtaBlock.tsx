@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Button } from '@indus/ui'
 import type { CtaBlock } from '@indus/domain'
 import { ArrowRightIcon, MailIcon, WhatsAppIcon } from '../../designed/icons'
@@ -15,9 +14,10 @@ export type ArticleContact = {
  * no route to an RFQ is a cost, not an asset, which is why this is a block type
  * rather than something an author remembers to add.
  *
- * The quote link is the page's one primary action; WhatsApp and email are
- * on-navy outlines beside it. The WhatsApp and mail hrefs arrive prefilled
- * with the article title from the page. Focus outlines on the navy go steel —
+ * The email enquiry (to sales@, purchase@ in CC) is the page's one primary
+ * action; WhatsApp is an on-navy outline beside it. The block's stored
+ * `quoteUrl` pointed at the quote cart, retired in 2026-11, and is ignored.
+ * The WhatsApp and mail hrefs arrive prefilled with the article title. Focus outlines on the navy go steel —
  * the global accent outline is ~2:1 on navy, and the `!` is needed because the
  * global :focus-visible rule is unlayered.
  */
@@ -33,10 +33,11 @@ export default function CtaBlockView({ block, contact }: { block: CtaBlock; cont
       <p className="mt-3 max-w-[620px] text-[15.5px] leading-[1.65] text-ih-on-navy">{block.body}</p>
       <div className="mt-6 flex flex-col gap-2.5 min-[761px]:flex-row min-[761px]:flex-wrap">
         <Button asChild kind="primary" size="lg" className="focus-visible:outline-ih-steel!">
-          <Link href={block.quoteUrl ?? '/quote'}>
-            {block.quoteLabel ?? 'Request a quote'}
+          <a href={contact.emailUrl}>
+            <MailIcon />
+            Email an enquiry
             <ArrowRightIcon />
-          </Link>
+          </a>
         </Button>
         {contact.whatsappUrl && (
           <Button asChild kind="onnavy" size="lg" className="focus-visible:outline-ih-steel!">
@@ -46,12 +47,6 @@ export default function CtaBlockView({ block, contact }: { block: CtaBlock; cont
             </a>
           </Button>
         )}
-        <Button asChild kind="onnavy" size="lg" className="focus-visible:outline-ih-steel!">
-          <a href={contact.emailUrl}>
-            <MailIcon />
-            Email
-          </a>
-        </Button>
       </div>
       {contact.phone && (
         <p className="mt-4 text-[13px] text-ih-on-navy-fine">

@@ -240,7 +240,7 @@ export default async function AboutPage({ params }: Props) {
         </div>
         <div className="flex flex-wrap gap-3 sm:shrink-0">
           {str(cta, 'primary_cta_label') && str(cta, 'primary_cta_href') ? (
-            <Link href={str(cta, 'primary_cta_href') ?? '/quote'} className="h-11 px-6 flex items-center bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
+            <Link href={str(cta, 'primary_cta_href') ?? '/contact'} className="h-11 px-6 flex items-center bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
               {str(cta, 'primary_cta_label')}
             </Link>
           ) : null}
