@@ -120,7 +120,7 @@ function SizeCard({ v, cols, partNumberHeading }: { v: VariantLike; cols: SizeCo
 }
 
 /** Columns that carry a manufacturer's rating — they get the lowest-rated-component note. */
-const RATING_KEYS = new Set(['ratedPsi', 'maxPsi', 'contPsi', 'flowGpm', 'maxFlowGpm', 'ratedRpm', 'maxRpm', 'torqueLbIn', 'columnLoadLbs', 'capacityTon'])
+const RATING_KEYS = new Set(['ratedPsi', 'maxPsi', 'contPsi', 'flowGpm', 'maxFlowGpm', 'ratedRpm', 'maxRpm', 'torqueLbIn', 'columnLoadLbs', 'capacityTon', 'capacityLbs'])
 
 /**
  * The orderable sizes under one listing.

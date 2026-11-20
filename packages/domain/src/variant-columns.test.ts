@@ -109,6 +109,7 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       // Ranges", "Pumps Displacement", "Pumps Max Pressure", "GPM", "Motor Max
       // Torque" — so, like the hose columns, the help repeats the header.
       'capacityTon',
+      'capacityLbs',
       'boreIn',
       'rodIn',
       'strokeIn',

@@ -295,3 +295,55 @@ API-monogrammed and supplied by API-licensed manufacturers, naming the spec that
 type (6A wellhead and valves, 16C flow iron and choke & kill, 16A/16D BOPs, 7K hoses). Recorded as
 an extraFact in each Wave 4 payload, sourced to the owner statement. Advised alternative not taken:
 verify each maker against the API Composite List and claim only where licensed.
+
+## 12. Waves 2–5 data pass (2026-11-20)
+
+The writers on Waves 2–5 logged 2,312 data findings (218 high, 934 medium, 1,160 low). The pass
+fixed what each listing's own data settles; 529 live writes by `src/scripts/fix-wave2-5-data.ts`
+(idempotent — a re-run reports 0 writes), mirrored into 22 catalogue payloads. Live 2026-11-20,
+108 product pages and 4 shelves purged.
+
+What it fixed:
+- **Fused threads** on 13 Dixon listings: `1/4"-181, 4"-19` is `1/4"-18` + `1/4"-19` (the second
+  fraction's slash became ", " on import). Decoded against the real pitch set. Scan for
+  `"-\d+\d, \d+"-` after any Dixon import.
+- **JIC 37° ends carrying NPT or ORFS threads** (two stainless listings, 36 rows), thread typos,
+  the extra-light DIN 2353 10 mm thread, dash sizes printed as sizes (-40, -48, -90).
+- **Units:** Vickers rows whose flow column held L/min (only round gpm × 3.785; CVI inserts by an
+  explicit map); Enerpac CDT/CST capacity in lbs moved out of the tons column into the new
+  `capacityLbs` column (needs the deploy to show); WR-15 0.75 t; ZW pumps 5,000 psi; stainless
+  closed block WLL in lbs; Parker HD displacement in in³/rev; a missing decimal point.
+- **Part numbers:** six flange rows whose size code read 1/4" (`-04`/`-040` → `-16`/`-160`).
+- **Rows removed:** a storage bin and a 4" brewery adapter.
+- **Working notes / buying chain in public text:** "not researched in this lane", "see lane D",
+  "seen in S3", "not captured", "our supplier's published figures", "This page used to rate it
+  250 bar", "the supplier calls this series multiseal". The Bijur Delimon and Sun "direct from
+  the manufacturer" lines were left: they are authorised-distributor claims, not leaks.
+- **Labels:** "Twist On Wire Connector" on quick couplers, wrong titles (Parker PC mold coolant,
+  2188 nipples, Molykote 1122), wrong HS codes removed, ISO 10380 and PED on PTFE hoses, the
+  1,093 °C "continuous" figure on Thorburn jackets (260 °C), a customer name in a SKU.
+- **Shelves:** 10 Dixon Bauer Type B listings to `bauer-type-couplings`; Eaton 2 Series piston
+  pumps to `hydraulic-piston-pumps`.
+- **Slugs (301 rows):** three "delivey" hoses; a 15M gate valve whose URL said 10M. FAQ links
+  updated in the DB and the FAQ payloads.
+
+Payload limit: numeric row changes from the rule-driven fixes (flow, capacity, displacement) are
+not mirrored into the payloads. Re-run this script after any re-import of those listings.
+
+Not fixed — needs a decision:
+- ~~Availability pill vs built-to-order~~ — **decided 2026-11-20 (Ayush): keep ex-stock.** No category exemptions; do not re-raise. ~45 high findings: heat exchangers, tube bundles and
+  coils, BOPs, frac and cementing units, STTs, wellheads, actuated and nuclear valves, hose reels,
+  Dinamic Oil winches show "Ex-stock · delivery in 3 days" while their own description and FAQ
+  say built to order; the pill stays.
+- **Wire-rope slings** (two- and four-leg): text says "no load rating published" while every row
+  carries a WLL — publish the WLL or remove it.
+- **Eaton S811/S801 power modules, Source and SVX/SPX drive modules**: electrical parts on the
+  Hydraulic Power Units shelf — unpublish or move.
+- **Listings that need splitting**: Dixon tees (316L sanitary mixed with polypropylene), Dixon
+  nipples, Gates flange adapters (1,214 part numbers, one rating), Weatherhead adapters (one
+  model's specs on 143 rows), Safeway 1/2 and 3/4 couplers, Dixon CVV couplers and nipples.
+- **Ratings that need the maker's datasheet**: Dixon V-series 29,900 psi (burst?), Dixon E-series
+  off-grid psi, MIL-C-4109 couplers' 560 bar burst on 21 bar, Enerpac SLL/SLR/SU 500 psi, DIN
+  5683 13 mm row, DIN 1480 turnbuckle WLL range, eye-bend hook kg vs lbs, stainless captive-pin
+  shackle size column, SSV PR class conflicts, DEMCO NE-C 16".
+- The medium and low findings (2,094), kept outside the repo.
