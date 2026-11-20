@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   CATALOGUE_STOCK_POSTURE,
+  countInStock,
   productAvailability,
   type CatalogueStockPosture,
 } from './stock-posture'
@@ -102,5 +103,29 @@ describe('productAvailability', () => {
     const withNothing = productAvailability({ status: 'active' }, posture({ exStock: false }))
     expect(withNothing.kind).toBe('unavailable')
     expect(withNothing.label).toBe('Contact for availability')
+  })
+})
+
+describe('countInStock', () => {
+  it('counts what the product pills say, not only counted stock', () => {
+    /*
+      The brand page used to count stockQty > 0 alone and showed "0 / 85" on a
+      brand whose every product page says ex-stock. The count must follow the
+      posture the pills use.
+    */
+    const products = [
+      { status: 'active', categorySlugs: ['wire-rope-anticorrosive-greases', 'industrial-lubricant-suppliers-uae'] },
+      { status: 'active', stockQty: 4, categorySlugs: ['lifting-beams', 'below-the-hook-lifting'] },
+      { status: 'active', leadTimeDays: 14, categorySlugs: ['lifting-beams', 'below-the-hook-lifting'] },
+      { status: 'discontinued', stockQty: 9, categorySlugs: ['wire-rope-anticorrosive-greases'] },
+    ]
+    const p = posture({ exemptCategories: ['below-the-hook-lifting'] })
+    // ex-stock + counted stock; the exempt lead-time product and the discontinued one are not in stock
+    expect(countInStock(products, p)).toBe(2)
+  })
+
+  it('counts nothing as ex-stock when the posture is switched off', () => {
+    const products = [{ status: 'active' }, { status: 'active', stockQty: 1 }]
+    expect(countInStock(products, posture({ exStock: false }))).toBe(1)
   })
 })

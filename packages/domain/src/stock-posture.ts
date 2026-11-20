@@ -175,3 +175,18 @@ export function productAvailability(
     schema: 'lead_time',
   }
 }
+
+/**
+ * How many of these products the catalogue tells a buyer are in stock right
+ * now — counted stock or the ex-stock posture — exactly as each product page's
+ * pill would say. Used by surfaces that summarise a set of products (the brand
+ * page "SKUs in stock" stat), so the summary can never disagree with the pills.
+ * Each product needs its full category chain in `categorySlugs`, or an exempt
+ * root will not be seen.
+ */
+export function countInStock(
+  products: readonly StockFacts[],
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+): number {
+  return products.filter((p) => productAvailability(p, posture).schema === 'in_stock').length
+}
