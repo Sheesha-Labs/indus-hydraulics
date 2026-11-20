@@ -42,7 +42,7 @@
     {
      "slot": "E",
      "q": "What pressure and temperature limits apply to the Oteco Model 6 standard gauge?",
-     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub end connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so a 20,000 psi dial needs a flanged or union sub. Operating temperature is -20 °F to 180 °F."
+     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub end connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so a 20,000 psi dial needs a flanged or union sub. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -107,7 +107,7 @@
     {
      "slot": "E",
      "q": "What limits the pressure of an Oteco Model 6 sour gas gauge on a line pipe thread sub?",
-     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so 15,000 and 20,000 psi dials go on flanged or union subs. Operating temperature is -20 °F to 180 °F."
+     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so 15,000 and 20,000 psi dials go on flanged or union subs. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -172,7 +172,7 @@
     {
      "slot": "E",
      "q": "What is the pressure limit of an Oteco Model 6 salt water gauge on a line pipe thread sub?",
-     "a": "The gauge's maximum pressure is the lower of its dial range and the sub rating, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. The listed ranges reach 10,000 psi. Operating temperature is -20 °F to 180 °F."
+     "a": "The gauge's maximum pressure is the lower of its dial range and the sub rating, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. The listed ranges reach 10,000 psi. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -237,7 +237,7 @@
     {
      "slot": "E",
      "q": "What is the pressure and temperature limit of the Oteco Model 7 standard gauge?",
-     "a": "The Model 7 reads to 6,000 psi, and its maximum pressure is the lower of the dial range and the rating of the sub connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+     "a": "The Model 7 reads to 6,000 psi, and its maximum pressure is the lower of the dial range and the rating of the sub connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -302,7 +302,7 @@
     {
      "slot": "E",
      "q": "What limits pressure on the Oteco Model 7 sour gas gauge?",
-     "a": "The gauge's maximum pressure is the lower of its dial range and the sub connection rating. The Model 7 dial stops at 6,000 psi, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+     "a": "The gauge's maximum pressure is the lower of its dial range and the sub connection rating. The Model 7 dial stops at 6,000 psi, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -367,7 +367,7 @@
     {
      "slot": "E",
      "q": "What are the pressure and temperature limits of the Oteco Model 7 salt water gauge?",
-     "a": "The Model 7 reads to 6,000 psi, and the working limit is the lower of the dial range and the sub rating. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+     "a": "The Model 7 reads to 6,000 psi, and the working limit is the lower of the dial range and the sub rating. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -432,7 +432,7 @@
     {
      "slot": "E",
      "q": "What pressure and temperature limits apply to the Oteco Model 8 standard gauge?",
-     "a": "The maximum pressure is the lower of the dial range and the rating of the sub end connection, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. A 20,000 psi dial therefore needs a flange or union sub. Operating temperature is -20 °F to 180 °F."
+     "a": "The maximum pressure is the lower of the dial range and the rating of the sub end connection, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. A 20,000 psi dial therefore needs a flange or union sub. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -497,7 +497,7 @@
     {
      "slot": "E",
      "q": "What are the pressure and temperature limits of the Oteco Model 8 sour gas gauge?",
-     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub end connection, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 180 °F."
+     "a": "The gauge's maximum pressure is the lower of its dial range and the rating of its sub end connection, and a 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",
@@ -562,7 +562,7 @@
     {
      "slot": "E",
      "q": "What pressure limit applies to the Oteco Model 8 salt water gauge?",
-     "a": "The maximum pressure is the lower of the dial range and the rating of the sub end connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so choose the range with that in mind. Operating temperature is -20 °F to 180 °F."
+     "a": "The maximum pressure is the lower of the dial range and the rating of the sub end connection. A 2-inch line-pipe sub is limited to 6,000 or 10,000 psi depending on the sub, so choose the range with that in mind. Operating temperature is -20 °F to 250 °F (-29 °C to 121 °C)."
     },
     {
      "slot": "F",

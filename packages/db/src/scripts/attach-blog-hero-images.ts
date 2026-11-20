@@ -45,7 +45,7 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 /**
  * One row per published article, across the hero sprints — the 30 from
  * PR #271, the 63 commissioned on 2026-08-25, the 139 generated on 2026-10-08,
- * the 28 lifting posts on 2026-10-20, the 14 anchor chain posts on 2026-11-08 and the 6 below-the-hook posts on 2026-11-16. `alt` describes what is
+ * the 28 lifting posts on 2026-10-20, the 14 anchor chain posts on 2026-11-08 and the 6 below-the-hook posts on 2026-11-16, and the 12 drilling rig equipment posts on 2026-11-20. `alt` describes what is
  * actually in the frame: it is read aloud by a screen reader and indexed as
  * image text, so it is not the article title repeated.
  *
@@ -543,6 +543,19 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'spreader-beam-misuse', alt: 'Two riggers checking a bolt on a yellow bolted modular spreader beam laid on timber blocks, shackles at both end units', caption: 'Most spreader errors can be caught on the ground: wrong bolts, mixed struts, a span the chart does not list.' },
   { slug: 'bolted-flange-vs-end-cap-spreader-beams', alt: 'Close-up of a bolted flange joint between two yellow spreader beam struts on timber dunnage, torque wrench beside it', caption: 'A bolted flange joint: maker-supplied struts and bolts, tightened to a set torque, certified as one system.' },
   { slug: 'lifting-bars-for-air-handling-units', alt: 'Grey air handling unit lifted on two steel bars under its base frame, slings rising to a yellow spreader frame on the hook', caption: 'Two rated bars under the base, slings to a spreader frame: the unit is held at four points and cannot roll.' },
+  // Oteco drilling rig equipment posts, 2026-11-20 (Higgsfield GPT Image 2.6, medium, 2k, downscaled to 1536×1024).
+  { slug: 'oteco-drilling-equipment-guide', alt: 'Rig floor at dusk with a standpipe manifold of red gate valves, a large drilling pressure gauge and the derrick behind', caption: 'The standpipe manifold: gate valves, a gauge, a relief valve and long-sweep fittings carry every barrel the mud pumps send downhole.' },
+  { slug: 'model-72-vs-dm-gate-valve', alt: 'Two mud gate valves on a bench: a handwheel valve with rising stem and end subs beside a compact T-handle bolted-bonnet valve', caption: 'A rising-stem valve with replaceable end subs, and a compact in-line repairable valve: two ways to build a mud gate valve.' },
+  { slug: 'rebuilding-a-model-72-gate-valve', alt: 'Technician rebuilding a mud gate valve in a vice, gate and stem, wear plates, packing and studs laid out on a cloth', caption: 'A minor kit renews the seals; a major kit adds the gate, stem and wear parts — and the valve body stays in the line.' },
+  { slug: 'shear-pin-vs-reset-relief-valve', alt: 'Triplex mud pump in a rig pump house with a cylindrical relief valve on its discharge line piped back to the mud tank', caption: 'Every mud pump discharge carries a relief valve: shear-pin valves are re-pinned after they open, reset valves snap shut again.' },
+  { slug: 'drilling-pressure-gauge-models', alt: 'Large round drilling pressure gauge on a heavy threaded steel sub at a standpipe manifold, rig floor out of focus', caption: 'A drilling gauge is a diaphragm, a hydraulic fill and a dial: the sub it screws into sets how much pressure it can see.' },
+  { slug: 'drill-pipe-float-valve-models', alt: 'Plunger and flapper drill pipe float valves on a workbench beside a bit sub, a tray of seals and a puller tool', caption: 'Plunger or flapper: both sit in a bit sub above the bit and stop mud flowing back up the drill string.' },
+  { slug: 'mud-pump-pistons-explained', alt: 'Mud pump pistons with black rubber and yellow urethane seals on steel hubs beside a chrome mud pump liner', caption: 'Liner size, hub series and rod fit decide the piston; rubber or bonded urethane decides how long it lasts.' },
+  { slug: 'mud-pump-valves-and-dampener-diaphragms', alt: 'Triplex mud pump fluid end with a spherical pulsation dampener on the discharge, a technician removing a valve cover', caption: 'Valves and seats wear with every stroke; the dampener above them evens out the pulses — charged with nitrogen only.' },
+  { slug: 'swivel-washpipe-and-packing', alt: 'Swivel washpipe tube, black and red packing rings, spacers and packing nuts laid out in order on a rig workbench', caption: 'The washpipe and its packing are the swivel’s wearing parts: ordered by swivel make and model, changed on a routine.' },
+  { slug: 'pipe-wipers-and-mud-guards', alt: 'Drill pipe pulled through a red rubber pipe wiper at the rotary table, a hinged mud guard clamped on a connection', caption: 'A wiper strips the outside of the pipe and a mud guard catches what is inside it: mud saved and a safer floor.' },
+  { slug: 'manifold-fitting-pressure-ratings', alt: 'Yellow cast long-sweep elbows, tees, crosses and a gooseneck on pallets in a pipe yard, a welder at a manifold behind', caption: 'The casting is only half the rating: the end connection — threaded, Sch. 80, Sch. 160 or XXS — sets the working pressure.' },
+  { slug: 'annular-bop-packing-unit-compounds', alt: 'Three annular BOP packing units with steel inserts, one black and two red, on a pallet with seal kits behind', caption: 'Natural rubber, nitrile or neoprene: the compound is chosen by the mud system and the temperature, not by habit.' },
 ] as const
 
 /**
