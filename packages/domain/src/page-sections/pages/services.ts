@@ -1,3 +1,4 @@
+import { enquiryMailto } from '../../enquiry-mail'
 import { area, ctaPair, eyebrow, heading, statList, text } from '../fields'
 import type { MasterPageDef } from '../types'
 
@@ -34,7 +35,7 @@ export const SERVICES_PAGE: MasterPageDef = {
           { value: '100', suffix: '%', label: 'On-time' },
         ],
         primary_cta_label: 'Request a service quote',
-        primary_cta_href: '/quote',
+        primary_cta_href: enquiryMailto({ subject: 'Service enquiry' }),
         secondary_cta_label: 'Talk to an engineer →',
         secondary_cta_href: '/contact',
       },

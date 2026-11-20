@@ -34,12 +34,11 @@ import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import ProductExportNote from '../../../../components/markets/ProductExportNote'
 import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../../lib/category-fallback'
 import ProductGallery from '../../../../components/ProductGallery'
-import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import ProductTabs from '../../../../components/ProductTabs'
 import RelatedReading from '../../../../components/blog/RelatedReading'
 import { getRelatedReadingForProduct } from '../../../../lib/related-reading'
 import ProductStickyBar from '../../../../components/ProductStickyBar'
-import { mailtoQuoteHref, whatsappHref } from '../../../../lib/enquiry-links'
+import { productEnquiryHref, whatsappHref } from '../../../../lib/enquiry-links'
 import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 import { staticParamsOrNone } from '../../../../lib/static-params'
 
@@ -427,6 +426,8 @@ export default async function ProductPage({ params }: Props) {
 
   // JSON-LD assembly. Pages with FAQs additionally emit a FAQPage entity.
   const productUrl = urlFor(`/p/${product.slug}`)
+  const enquiryHref = productEnquiryHref({ sku: product.sku, title: product.title, url: productUrl })
+  const waHref = whatsappHref(settings.contactPhone, { title: product.title, url: productUrl })
   // One source for what this page says about availability — the pill, the
   // delivery row and this Offer all read `productAvailability`, so a crawler
   // can never be told something the page does not show a buyer.
@@ -679,40 +680,25 @@ export default async function ProductPage({ params }: Props) {
             )}
 
             {/*
-              CTA stack. "Add to quote" is the single primary action — the
-              language allows exactly one per view and reserves the accent for
-              it. The WhatsApp route was previously a full-width saturated
-              green button sitting ABOVE it, which made the loudest thing on
-              the page neither blue nor the action we want taken. It keeps its
-              brand glyph (in WhatsApp green, so it stays recognisable) on an
-              outline button, one rank down where it belongs.
-
-              WhatsApp hides entirely when no number is configured rather than
-              shipping a dead link.
+              CTA stack. "Enquire by email" is the single primary action — the
+              language allows one per view and reserves the accent for it. It
+              opens a mail to sales@ with purchase@ in CC, the part named in the
+              subject and the desk's questions in the body. WhatsApp keeps its
+              brand glyph on an outline button, one rank down, and hides
+              entirely when no number is configured.
             */}
             <div className="mb-4 flex flex-col gap-2.5 pt-2">
-              <AddToQuoteButton sku={product.sku} title={product.title} />
-
-              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-                {whatsappHref(settings.contactPhone, { title: product.title, url: urlFor(`/p/${product.slug}`) }) && (
-                  <Button asChild kind="outline" size="lg">
-                    <a
-                      href={whatsappHref(settings.contactPhone, { title: product.title, url: urlFor(`/p/${product.slug}`) })!}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <WhatsAppGlyph />
-                      Enquire on WhatsApp
-                    </a>
-                  </Button>
-                )}
-                <Button asChild kind="outline" size="lg">
-                  <a href={mailtoQuoteHref(settings.contactEmail, product.sku)}>
-                    Email for a quotation
+              <Button asChild kind="primary" size="lg" block>
+                <a href={enquiryHref}>Enquire by email</a>
+              </Button>
+              {waHref && (
+                <Button asChild kind="outline" size="lg" block>
+                  <a href={waHref} target="_blank" rel="noopener noreferrer">
+                    <WhatsAppGlyph />
+                    Enquire on WhatsApp
                   </a>
                 </Button>
-              </div>
-
+              )}
             </div>
 
             {/* Datasheet card */}
@@ -926,8 +912,8 @@ export default async function ProductPage({ params }: Props) {
         title={product.title}
         sku={product.sku}
         datasheetUrl={datasheetUrl}
-        whatsappUrl={whatsappHref(settings.contactPhone, { title: product.title, url: urlFor(`/p/${product.slug}`) })}
-        emailUrl={mailtoQuoteHref(settings.contactEmail, product.sku)}
+        whatsappUrl={waHref}
+        emailUrl={enquiryHref}
       />
 
       {/* Analytics: PDP view */}

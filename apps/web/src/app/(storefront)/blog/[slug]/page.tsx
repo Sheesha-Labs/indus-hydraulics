@@ -1,19 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import {
-  blogPostModifiedAt,
-  blogReferencedArticleSlugs,
-  blogVideoBlocks,
-  buildArticleLd,
-  buildBreadcrumbLd,
-  buildFaqLd,
-  buildVideoLd,
-  estimateReadingMinutes,
-  shouldShowUpdatedDate,
-  youtubeVideoId,
-} from '@indus/domain'
-import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import { blogPostModifiedAt, blogReferencedArticleSlugs, blogVideoBlocks, buildArticleLd, buildBreadcrumbLd, buildFaqLd, buildVideoLd, estimateReadingMinutes, shouldShowUpdatedDate, youtubeVideoId, enquiryMailto, enquiryBody } from '@indus/domain'
+import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import BlogArticleLayout from '../../../../components/blog/BlogArticleLayout'
 import { resolveBlogArticle } from '../../../../lib/blog-article'
 import { searchIconUrl } from '../../../../lib/brand-identity'
@@ -250,7 +239,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const contact = {
     whatsappUrl: buildWhatsappHref(settings.contactPhone, `Enquiry: ${post.title}`),
-    emailUrl: buildMailtoHref(settings.contactEmail, `${post.title} — enquiry`),
+    emailUrl: enquiryMailto({ subject: `${post.title} — enquiry`, body: enquiryBody({ about: `parts covered in "${post.title}"`, url: postUrl }) }),
     phone: settings.contactPhone,
   }
 

@@ -6,8 +6,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, str } from '@indus/domain'
-import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, str, enquiryMailto, enquiryBody } from '@indus/domain'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { CategoryFaqBand, categoryFaqs } from '../../../../components/category/CategoryBands'
 import { mediaUrl } from '../../../../lib/media'
 import { getSubPageContent } from '../../../../lib/page-content'
@@ -550,7 +550,7 @@ export default async function BrandPage({ params }: Props) {
             `Our applications engineers carry deep ${brand.name} expertise. Send us the part number, a photo of the unit on the bench, or a use-case description — we reply within one business day with availability, lead time and a fixed-price quote.`
           )}
           whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${brand.name} products`)}
-          emailUrl={buildMailtoHref(settings.contactEmail, `${brand.name} enquiry`)}
+          emailUrl={enquiryMailto({ subject: `${brand.name} enquiry`, body: enquiryBody({ about: `${brand.name} products`, url: brandUrl }) })}
           phone={settings.contactPhone}
         />
       </section>

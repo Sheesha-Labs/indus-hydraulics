@@ -39,8 +39,9 @@ export default function ContactFormClient() {
         </div>
         <h2 className="text-[22px] font-semibold tracking-[-0.01em] mb-2">Thanks — we&apos;ll be in touch.</h2>
         <p className="text-[14px] text-ih-muted leading-[1.6] mb-4">
-          Our team has been notified and will respond within 4 business hours. For plant-down or urgent
-          requests, please use WhatsApp or call us directly — those channels are staffed 24/7.
+          Your enquiry has gone to our sales and purchase teams, and a copy is on its way to your inbox.
+          We respond within 4 business hours. For plant-down or urgent requests, please use WhatsApp or
+          call us directly — those channels are staffed 24/7.
         </p>
         <p className="font-mono text-[11px] text-ih-muted-2">
           Reference: {state.ref}

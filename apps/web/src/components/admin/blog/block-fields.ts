@@ -521,18 +521,10 @@ const FORMS: BlockFormSpec[] = [
     type: 'cta_block',
     label: 'Call to action',
     purpose:
-      'Closes the article. One that ranks and offers no path to a quote is a cost, not an asset.',
+      'Closes the article with an email enquiry button (sales@, purchase@ in CC) and WhatsApp.',
     fields: [
       { kind: 'text', key: 'heading', label: 'Heading', required: true },
       { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 3 },
-      { kind: 'text', key: 'quoteLabel', label: 'Button label', placeholder: 'Request a quote' },
-      {
-        kind: 'text',
-        key: 'quoteUrl',
-        label: 'Button link',
-        mono: true,
-        hint: 'Leave blank to send readers to /quote.',
-      },
     ],
     template: () => ({ type: 'cta_block', heading: '', body: '' }) as BlogBlockInput,
   },

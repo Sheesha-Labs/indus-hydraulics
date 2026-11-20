@@ -152,7 +152,7 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 1. **One auth context: staff only.** The storefront has **no customer accounts** — sign-up, sign-in, password reset and the `/account` portal were removed in 2026-11 (visitors find a part, then email or WhatsApp us). Do not reintroduce them without a product decision.
    - `staff_user` — admin at `/admin/*`. `lib/admin-auth.ts` + `lib/staff-session.ts` + `lib/rbac.ts`.
-   - Storefront RFQs are guest submissions. `account` / `account_contact` rows still exist — admin groups a buyer's RFQs by them — but nothing signs in as one. The **only** credential for `/quote/<code>` and `/api/quotes/<code>/pdf` is a signed `?token=` (`signQuoteAccessToken`); every link to those routes must carry one.
+   - Storefront RFQs are guest submissions from the enquiry forms. **The catalogue quote cart (`/quote`, `/quote/submit`, "Add to quote") was retired in 2026-11**; both paths 308 to `/contact` in `proxy.ts`. Every form records an RFQ (or a call-back lead) and sends ONE email through `lib/enquiry-email.ts`: to sales@ and purchase@, the submitter in CC. "Enquire" buttons are `mailto:` links built with `enquiryMailto` (`@indus/domain`) — never hard-code the addresses. `account` / `account_contact` rows still exist — admin groups a buyer's RFQs by them — but nothing signs in as one. The **only** credential for `/quote/<code>` and `/api/quotes/<code>/pdf` is a signed `?token=` (`signQuoteAccessToken`); every link to those routes must carry one.
    - The retired paths (`/sign-in`, `/sign-up`, `/forgot-password`, `/reset-password`, `/account/*`) 308 to `/contact` in `proxy.ts`. The old customer cookie names sit in `LEGACY_SESSION_COOKIES` so the proxy clears them.
    - Storefront code must not import `lib/admin-auth`, `lib/staff-session` or `lib/rbac` (lint-enforced) — a session read there would also make every page dynamic.
 
@@ -271,7 +271,7 @@ Any state → cancelled  (admin only)
 1. **Unit test all domain logic** in `packages/domain`. The RFQ state machine and any pricing logic must have 100% transition coverage.
 
 2. **Playwright e2e tests** cover the critical paths:
-   - Add product to quote → submit RFQ as a guest
+   - Submit an enquiry form (contact, market, manufacturing) as a guest — it is recorded as an RFQ in `/admin/enquiries` and emailed
    - Admin: sign in → review RFQ → mark quote sent
 
 3. **Tests run in CI** on every PR. PRs with failing tests are not merged.
@@ -350,7 +350,7 @@ apps/web/
       api/                   ← documents, health, quotes, rfq, search, seo, inngest
       (storefront)/          ← SiteHeader/Footer + storefront metadata; a FRAGMENT
         page.tsx  c/  p/  brands/  industries/  search/
-        compare/  quote/  services/  blog/  replacement/  …
+        compare/  quote/[code]  services/  blog/  replacement/  …
       admin/                 ← robots:noindex + <div data-surface="admin">
         sign-in/  api/{auth,quotes,rfqs}/
         (shell)/             ← sidebar shell: products, rfqs, seo, users, cms, …

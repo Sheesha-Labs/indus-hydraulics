@@ -9,7 +9,9 @@ import {
   readAttachments,
   rejectAsBot,
 } from '../../../lib/designed-enquiry'
-import { resolveOrCreateAnonymousContact, sendRfqEmails } from '../../../lib/rfq-intake'
+import { resolveOrCreateAnonymousContact } from '../../../lib/rfq-intake'
+import { sendEnquiryEmail } from '../../../lib/enquiry-email'
+import { urlFor } from '../../../lib/seo'
 import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
 /**
@@ -170,22 +172,22 @@ export async function submitManufacturingEnquiry(formData: FormData): Promise<Su
     return created
   })
 
-  // The RFQ is committed. A mail failure must not undo it, or lose it.
-  try {
-    await sendRfqEmails({
-      rfqId: rfq.id,
-      rfqCode: rfq.code,
-      urgency: 'routine',
-      lineCount: 0,
-      subject,
-      customerMessage: input.description || null,
-      contactId,
-      accountId,
-      shipToAddressId: null,
-    })
-  } catch (err) {
-    console.error('[submitManufacturingEnquiry] email send error', err)
-  }
+  // The RFQ is committed. The email never throws, so it cannot undo it.
+  await sendEnquiryEmail({
+    rfqId: rfq.id,
+    reference: rfq.code,
+    formLabel: subject,
+    senderName: input.contactName,
+    senderEmail: input.email,
+    company: input.company,
+    details: [
+      ['Phone', input.phone],
+      [enquiry.choiceLabel, route],
+    ],
+    message: input.description || null,
+    attachmentCount: attachments.length,
+    pageUrl: urlFor(enquiry.path),
+  })
 
   /*
     No redirect. The reader is thousands of pixels down a page they scrolled

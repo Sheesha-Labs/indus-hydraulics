@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { buildBreadcrumbLd, buildCollectionLd, enquiryMailto } from '@indus/domain'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import { getReplacementBrands, getReplacementsForBrand } from '../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../lib/store-settings'
@@ -192,7 +192,7 @@ export default async function BrandReplacementsPage({ params }: Props) {
           heading={`Don't see your ${competitorBrand} part?`}
           body={`We carry over a thousand SKUs that aren't all in the cross-reference table yet. Send us the part number and our applications team will confirm interchangeability and lead time within one business day.`}
           whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${competitorBrand} part not in cross-reference`)}
-          emailUrl={buildMailtoHref(settings.contactEmail, `${competitorBrand} replacement enquiry`)}
+          emailUrl={enquiryMailto({ subject: `${competitorBrand} replacement enquiry` })}
           phone={settings.contactPhone}
         />
       </div>

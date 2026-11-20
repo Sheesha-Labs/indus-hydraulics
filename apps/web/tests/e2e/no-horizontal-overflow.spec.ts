@@ -88,7 +88,6 @@ const ROUTES = [
   widestFreightRoute(),
   '/hydraulic-components-supplier-uae',
   '/contact',
-  '/quote',
   '/search?q=valve&sort=price_asc',
   '/compare',
   '/replacement',

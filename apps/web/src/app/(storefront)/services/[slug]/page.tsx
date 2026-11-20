@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { unstable_cache } from 'next/cache'
-import { buildArticleLd, GalleryImageIdsSchema, serviceCaseMarketReach } from '@indus/domain'
+import { buildArticleLd, GalleryImageIdsSchema, serviceCaseMarketReach, enquiryMailto } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import {
   getGalleryMedia,
@@ -21,7 +21,7 @@ import RelatedCases from '../../../../components/services/RelatedCases'
 import ArticleRenderer from '../../../../components/services/blocks/ArticleRenderer'
 import MarketReachSection from '../../../../components/markets/MarketReachSection'
 import ServicesCta from '../../../../components/services/ServicesCta'
-import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { buildWhatsappHref } from '@indus/ui'
 import { staticParamsOrNone } from '../../../../lib/static-params'
 
 type Props = {
@@ -186,7 +186,7 @@ export default async function ServiceCasePage({ params }: Props) {
       <div className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
         <ServicesCta
           whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${c.title}`)}
-          emailUrl={buildMailtoHref(settings.contactEmail, `${c.title} — service enquiry`)}
+          emailUrl={enquiryMailto({ subject: `${c.title} — service enquiry` })}
         />
       </div>
 

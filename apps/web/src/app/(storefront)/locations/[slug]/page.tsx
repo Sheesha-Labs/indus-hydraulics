@@ -2,13 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import {
-  buildBreadcrumbLd,
-  buildServiceLd,
-  serviceAreaBySlug,
-  serviceAreasOrdered,
-} from '@indus/domain'
-import { JsonLd, LeadCapturePanel, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import { buildBreadcrumbLd, buildServiceLd, serviceAreaBySlug, serviceAreasOrdered, enquiryMailto } from '@indus/domain'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
@@ -222,9 +217,9 @@ export default async function ServiceAreaPage({ params }: Props) {
           heading={`Machine down in ${area.name}?`}
           body="Tell us where it is, what failed and whether the site needs a permit. We will tell you plainly whether it is an on-site job or a bay job before anyone travels."
           whatsappUrl={buildWhatsappHref(settings.contactPhone, `On-site hose service — ${area.name}`)}
-          emailUrl={buildMailtoHref(settings.contactEmail, `On-site hose service enquiry — ${area.name}`)}
+          emailUrl={enquiryMailto({ subject: `On-site hose service enquiry — ${area.name}` })}
           phone={settings.contactPhone}
-          quoteLabel="Request on-site service"
+          ctaLabel="Email for on-site service"
         />
       </div>
 

@@ -309,8 +309,9 @@ export const CtaBlockSchema = z.object({
   type: z.literal('cta_block'),
   heading: NonEmpty(160),
   body: NonEmpty(600),
+  /** Retired with the quote cart (2026-11). Still parsed so stored blocks validate; not rendered. */
   quoteLabel: OptionalText(60),
-  /** Overrides the default /quote destination, e.g. for a service enquiry. */
+  /** Retired with the quote cart (2026-11). Still parsed so stored blocks validate; not rendered. */
   quoteUrl: OptionalText(300),
 })
 export type CtaBlock = z.infer<typeof CtaBlockSchema>

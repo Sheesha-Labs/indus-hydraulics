@@ -1,12 +1,6 @@
 import type { Metadata } from 'next'
-import {
-  MANUFACTURING_ENQUIRY,
-  MANUFACTURING_PAGE,
-  buildBreadcrumbLd,
-  designedPageMarketReach,
-  type JsonLd as JsonLdData,
-} from '@indus/domain'
-import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import { MANUFACTURING_ENQUIRY, MANUFACTURING_PAGE, buildBreadcrumbLd, designedPageMarketReach, type JsonLd as JsonLdData, enquiryMailto } from '@indus/domain'
+import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import ManufacturingLanding from '../../../components/manufacturing/ManufacturingLanding'
 import MarketReachSection from '../../../components/markets/MarketReachSection'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
@@ -127,7 +121,7 @@ export default async function ManufacturingPageRoute() {
           settings.contactPhone,
           'Enquiry: manufacturing / made to drawing'
         )}
-        mailtoHref={buildMailtoHref(settings.contactEmail, 'Manufacturing enquiry')}
+        mailtoHref={enquiryMailto({ subject: 'Manufacturing enquiry' })}
       />
 
       {/*
