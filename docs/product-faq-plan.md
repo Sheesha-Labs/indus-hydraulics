@@ -331,10 +331,10 @@ Payload limit: numeric row changes from the rule-driven fixes (flow, capacity, d
 not mirrored into the payloads. Re-run this script after any re-import of those listings.
 
 Not fixed — needs a decision:
-- **Availability pill vs built-to-order.** ~45 high findings: heat exchangers, tube bundles and
+- ~~Availability pill vs built-to-order~~ — **decided 2026-11-20 (Ayush): keep ex-stock.** No category exemptions; do not re-raise. ~45 high findings: heat exchangers, tube bundles and
   coils, BOPs, frac and cementing units, STTs, wellheads, actuated and nuclear valves, hose reels,
-  Dinamic Oil winches show "Ex-stock · delivery in 3 days" (`CATALOGUE_STOCK_POSTURE`) while their
-  own description and FAQ say built to order. Fix is code: add categories to `exemptCategories`.
+  Dinamic Oil winches show "Ex-stock · delivery in 3 days" while their own description and FAQ
+  say built to order; the pill stays.
 - **Wire-rope slings** (two- and four-leg): text says "no load rating published" while every row
   carries a WLL — publish the WLL or remove it.
 - **Eaton S811/S801 power modules, Source and SVX/SPX drive modules**: electrical parts on the
