@@ -27,7 +27,11 @@
  * Writing: one transaction per product (pooler — see the db-scripts memory):
  * delete the product's FAQs, insert the payload's in order, recompute the
  * content score. Every write bumps `contentUpdatedAt` (sitemap lastmod) by
- * trigger. Idempotent: a second run rewrites the same rows.
+ * trigger, so a product whose stored FAQs already equal the payload — same
+ * questions, answers and order — is skipped, not rewritten. Without that, a
+ * re-run of a whole wave to fix three answers re-dated every product in it,
+ * and the sitemap claimed hundreds of pages changed that had not.
+ * Idempotent: a second run writes nothing.
  *
  * Links: answers may carry `[text](/path)`. Do NOT --write a payload with
  * links before the FAQ link renderer (faq-answer.ts) is deployed, or the
@@ -238,8 +242,18 @@ async function main() {
   }
 
   const failed: string[] = []
+  let unchanged = 0
   for (const item of payload.products) {
     const fp = facts.products.find((p) => p.slug === item.slug)!
+    const stored = await db.productFaq.findMany({
+      where: { productId: fp.id },
+      orderBy: { position: 'asc' },
+      select: { question: true, answer: true },
+    })
+    if (sameFaqs(stored, item.faqs)) {
+      unchanged++
+      continue
+    }
     // One transaction per product: delete + insert, so a failure leaves the old set intact.
     // Under load a transaction can queue behind others; retry once rather than abort the run.
     let ok = false
@@ -266,10 +280,19 @@ async function main() {
     await rescore(fp.id)
     console.log(`  wrote ${item.faqs.length} → ${item.slug}`)
   }
+  if (unchanged) console.log(`  unchanged ${unchanged} (already match the payload, not rewritten)`)
   if (failed.length) {
     console.log(`FAILED ${failed.length}: ${failed.join(' ')}`)
     process.exitCode = 1
   }
+}
+
+/** Stored FAQs equal the payload's, in order, after the same trim the write applies. */
+function sameFaqs(stored: { question: string; answer: string }[], faqs: Faq[]): boolean {
+  return (
+    stored.length === faqs.length &&
+    stored.every((s, i) => s.question === faqs[i]!.q.trim() && s.answer === faqs[i]!.a.trim())
+  )
 }
 
 async function rescore(productId: string) {
