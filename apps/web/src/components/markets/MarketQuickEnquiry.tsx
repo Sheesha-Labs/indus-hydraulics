@@ -5,6 +5,7 @@ import { Button, Field, Input, Textarea } from '@indus/ui'
 import { submitMarketEnquiry } from '../../app/(storefront)/markets/actions'
 import { MarketEnquiryError } from './MarketEnquiryError'
 import { MarketEnquiryResult } from './MarketEnquiryResult'
+import PhoneInput from '../phone/PhoneInput'
 
 /**
  * The short enquiry card in the closing navy band.
@@ -22,13 +23,11 @@ export default function MarketQuickEnquiry({
   marketSlug,
   marketName,
   countryCode,
-  dialCode,
   contactEmail,
 }: {
   marketSlug: string
   marketName: string
   countryCode: string
-  dialCode: string
   contactEmail: string | null
 }) {
   const [result, setResult] = useState<{ code: string; token: string } | null>(null)
@@ -96,7 +95,7 @@ export default function MarketQuickEnquiry({
               />
             </Field>
             <Field label="Phone / WhatsApp">
-              <Input name="phone" type="tel" autoComplete="tel" placeholder={`${dialCode} …`} className="h-11 sm:h-9" />
+              <PhoneInput defaultCountry={countryCode} />
             </Field>
           </div>
 

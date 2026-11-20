@@ -1,3 +1,6 @@
+import type { DialCountry } from '@indus/domain'
+import { toE164 } from '../phone'
+
 /**
  * The call-back prompt's rules — when it may open, which surface it opens,
  * and what a valid request is.
@@ -204,61 +207,10 @@ export function looksLikeBot(userAgent: string, webdriver: boolean): boolean {
 
 // ── Countries ─────────────────────────────────────────────────────────────
 
-/** [ISO 3166-1 alpha-2, dial code, country name], e.g. ["OM", "+968", "Oman"]. */
-export type CallbackCountry = readonly [iso: string, dial: string, name: string]
+/** A dial-code row — see `DIAL_COUNTRIES` in @indus/domain. */
+export type CallbackCountry = DialCountry
 
-export const GCC_ORDER = ['AE', 'SA', 'OM', 'KW', 'QA', 'BH'] as const
-export const FALLBACK_COUNTRY: CallbackCountry = ['AE', '+971', 'United Arab Emirates']
-
-/**
- * The dial-code select's order: the default first, then the GCC, then
- * everything else in the order given (the server sorts it by country name).
- */
-export function orderCountries(countries: readonly CallbackCountry[], defaultIso: string): CallbackCountry[] {
-  const byIso = new Map(countries.map((c) => [c[0], c] as const))
-  if (!byIso.has(FALLBACK_COUNTRY[0])) byIso.set(FALLBACK_COUNTRY[0], FALLBACK_COUNTRY)
-  const out: CallbackCountry[] = []
-  const seen = new Set<string>()
-  const push = (iso: string) => {
-    const c = byIso.get(iso)
-    if (c && !seen.has(iso)) {
-      out.push(c)
-      seen.add(iso)
-    }
-  }
-  push(byIso.has(defaultIso) ? defaultIso : FALLBACK_COUNTRY[0])
-  for (const iso of GCC_ORDER) push(iso)
-  for (const c of countries) push(c[0])
-  return out
-}
-
-/** Path of a country's 3:2 flag under apps/web/public/flags. */
-export function flagSrc(iso: string): string {
-  return `/flags/${iso.toLowerCase()}.svg`
-}
-
-/** Lower-case, accent-free text for matching ("Côte d'Ivoire" → "cote d'ivoire"). */
-function fold(s: string): string {
-  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-}
-
-/**
- * The country picker's search: by name (any word's start, accents ignored),
- * ISO code, or dial code with or without the "+". Order is kept, so the
- * default and the GCC stay on top of their matches.
- */
-export function filterCountries(countries: readonly CallbackCountry[], query: string): CallbackCountry[] {
-  const q = fold(query.trim())
-  if (!q) return [...countries]
-  const digits = q.replace(/^\+/, '').replace(/\s+/g, '')
-  const isDial = /^\d+$/.test(digits)
-  return countries.filter(([iso, dial, name]) => {
-    if (isDial) return dial.replace(/\D/g, '').startsWith(digits)
-    if (iso.toLowerCase() === q) return true
-    const n = fold(name)
-    return n.startsWith(q) || n.split(/[\s\-(]+/).some((w) => w.startsWith(q))
-  })
-}
+export { GCC_ORDER, FALLBACK_COUNTRY, orderCountries, flagSrc, filterCountries } from '../phone'
 
 // ── Validation ────────────────────────────────────────────────────────────
 
@@ -273,26 +225,7 @@ export const CALLBACK_MESSAGES = {
 export const DESCRIPTION_MAX = 200
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
-/** Keep digits and spaces only — what the phone field accepts as typed. */
-export function cleanPhoneInput(raw: string): string {
-  return raw.replace(/[^\d\s]/g, '').replace(/\s{2,}/g, ' ').slice(0, 20)
-}
-
-/**
- * National digits + dial code → E.164, or null when it cannot be a real
- * number. A trunk "0" is dropped ("052 …" in the UAE is "+971 52 …"), as is a
- * repeated country code typed into the national field.
- */
-export function toE164(dial: string, national: string): string | null {
-  const cc = dial.replace(/\D/g, '')
-  let digits = national.replace(/\D/g, '')
-  if (!cc) return null
-  if (digits.startsWith('00' + cc)) digits = digits.slice(2 + cc.length)
-  digits = digits.replace(/^0+/, '')
-  if (digits.length < 6 || digits.length > 14) return null
-  if (cc.length + digits.length > 15) return null
-  return `+${cc}${digits}`
-}
+export { cleanPhoneInput, toE164 } from '../phone'
 
 export type CallbackFieldErrors = Partial<Record<'name' | 'email' | 'phone', string>>
 
@@ -316,13 +249,7 @@ export function firstName(name: string): string {
   return name.trim().split(/\s+/)[0] ?? ''
 }
 
-/** "+971521234567" with dial "+971" → "+971 52 123 4567"-ish, for reading back. */
-export function displayPhone(e164: string, dial: string): string {
-  const cc = dial.replace(/\D/g, '')
-  const rest = e164.replace(/^\+/, '').slice(cc.length)
-  const groups = rest.length > 7 ? [rest.slice(0, 2), rest.slice(2, 5), rest.slice(5)] : [rest.slice(0, 3), rest.slice(3)]
-  return `+${cc} ${groups.filter(Boolean).join(' ')}`
-}
+export { displayPhone } from '../phone'
 
 /** wa.me link with the page-aware opener the handoff specifies. */
 export function whatsappHref(phoneDigits: string, pageTitle: string): string {

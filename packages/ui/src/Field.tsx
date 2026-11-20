@@ -65,8 +65,8 @@ interface FieldCtx {
 }
 const FieldContext = React.createContext<FieldCtx | null>(null)
 
-/** Explicit prop wins; otherwise inherit from the enclosing Field. */
-function useFieldWiring(id?: string, error?: string) {
+/** Explicit prop wins; otherwise inherit from the enclosing Field. Exported for composite controls (the phone input). */
+export function useFieldWiring(id?: string, error?: string) {
   const ctx = React.useContext(FieldContext)
   return {
     id: id ?? ctx?.id,

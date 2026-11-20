@@ -205,6 +205,38 @@ async function serveStoredRedirect(request: NextRequest): Promise<NextResponse |
 }
 
 /**
+ * The visitor's country, for the phone fields' default dial code.
+ *
+ * The same edge headers the homepage headline reads, handed to the browser
+ * as a readable cookie so the forms and the call-back prompt can preselect a
+ * flag without making any page dynamic: pages stay cached, the proxy runs on
+ * every request anyway, and the cookie is written only when it is missing or
+ * the country changed, so almost every cached response carries no Set-Cookie.
+ * `?geo=XX` sets it too — the same review override the headline accepts.
+ * Country only; nothing else about the visitor is stored.
+ */
+const GEO_COOKIE = 'ih_cc'
+
+function withGeoCookie(res: NextResponse, request: NextRequest): NextResponse {
+  const raw =
+    request.nextUrl.searchParams.get('geo') ??
+    request.headers.get('cf-ipcountry') ??
+    request.headers.get('x-vercel-ip-country')
+  const code = raw?.trim().toUpperCase()
+  // XX and T1 are Cloudflare's "unknown" and "Tor".
+  if (!code || !/^[A-Z]{2}$/.test(code) || code === 'XX' || code === 'T1') return res
+  if (request.cookies.get(GEO_COOKIE)?.value === code) return res
+  res.cookies.set(GEO_COOKIE, code, {
+    path: '/',
+    maxAge: 60 * 60 * 24 * 30,
+    sameSite: 'lax',
+    secure: USE_SECURE_COOKIES,
+    httpOnly: false,
+  })
+  return res
+}
+
+/**
  * Send `/` to the cached copy of the homepage for this visitor's country.
  *
  * The homepage headline opens with the visitor's country, which used to be
@@ -324,7 +356,8 @@ export default async function proxy(request: NextRequest) {
   // same hardened headers.
   const isStaffOnly =
     underPrefix(pathname, ADMIN_PREFIX) || underPrefix(pathname, DESIGN_PREFIX)
-  const done = (res: NextResponse) => applySecurityHeaders(res, request, isStaffOnly)
+  const done = (res: NextResponse) =>
+    applySecurityHeaders(isStaffOnly ? res : withGeoCookie(res, request), request, isStaffOnly)
 
   if (isStaffOnly) {
     if (ADMIN_PUBLIC_PATHS.some((p) => underPrefix(pathname, p))) {

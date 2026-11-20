@@ -5,7 +5,9 @@ import * as Dialog from '@radix-ui/react-dialog'
 import * as RadioGroup from '@radix-ui/react-radio-group'
 import { buttonVariants } from '@indus/ui'
 import { requestCallback } from '../../actions/callback'
-import CountryPicker, { countryPickerOpen } from './CountryPicker'
+import { DIAL_COUNTRIES } from '@indus/domain'
+import CountryPicker, { countryPickerOpen } from '../phone/CountryPicker'
+import { defaultPhoneCountry } from '../../lib/phone'
 import { deskStatus, dubaiNow, parseOpeningHours } from '../../lib/opening-hours'
 import { trackCallback } from '../../lib/callback/analytics'
 import {
@@ -25,7 +27,6 @@ import {
   validateCallbackFields,
   whatsappHref,
   type CallbackCategory,
-  type CallbackCountry,
   type CallbackFieldErrors,
   type CallbackSurface,
   type CallbackTrigger,
@@ -51,7 +52,6 @@ type Props = {
   surface: CallbackSurface
   trigger: CallbackTrigger
   openedAt: number
-  countries: CallbackCountry[]
   openingHours: string[]
   deskPhone: string
   deskEmail: string
@@ -72,14 +72,19 @@ const ROOT = { 'data-callback-root': '' }
 // ── Shared form state ─────────────────────────────────────────────────────
 
 function useCallbackForm(props: Props) {
-  const { surface, trigger, openedAt, countries, deskPhone, onSubmitted } = props
+  const { surface, trigger, openedAt, deskPhone, onSubmitted } = props
 
-  // Default dial code: the market page's country, else the UAE.
+  // Default dial code: the market page's country, else the visitor's country
+  // (geo cookie set by the proxy), else the UAE.
   const defaultIso = useMemo(
-    () => document.querySelector('[data-callback-market]')?.getAttribute('data-callback-market') ?? 'AE',
+    () =>
+      defaultPhoneCountry(
+        DIAL_COUNTRIES,
+        document.querySelector('[data-callback-market]')?.getAttribute('data-callback-market'),
+      ),
     [],
   )
-  const ordered = useMemo(() => orderCountries(countries, defaultIso), [countries, defaultIso])
+  const ordered = useMemo(() => orderCountries(DIAL_COUNTRIES, defaultIso), [defaultIso])
   // The leading "suggested" rows — the default and the GCC — before the A–Z list.
   const topCount = useMemo(() => {
     const top = new Set<string>([defaultIso, ...GCC_ORDER])

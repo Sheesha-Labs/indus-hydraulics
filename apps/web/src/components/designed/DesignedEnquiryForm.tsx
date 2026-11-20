@@ -6,6 +6,7 @@ import type { ReactNode } from 'react'
 import { Button, Card, Field, Input, Select, SpecList, Textarea } from '@indus/ui'
 import RfqAttachments from '../RfqAttachments'
 import { MarketEnquiryError } from '../markets/MarketEnquiryError'
+import PhoneInput from '../phone/PhoneInput'
 
 /**
  * The enquiry card every designed page converts through.
@@ -185,13 +186,7 @@ export default function DesignedEnquiryForm({
                 />
               </Field>
               <Field label="Phone / mobile">
-                <Input
-                  name="phone"
-                  type="tel"
-                  autoComplete="tel"
-                  placeholder="+971 …"
-                  className="h-11 sm:h-10"
-                />
+                <PhoneInput size="lg" />
               </Field>
               <Field label={choice.label} className="sm:col-span-2">
                 <Select name={choice.name} defaultValue={choice.defaultValue} className="h-11 sm:h-10">

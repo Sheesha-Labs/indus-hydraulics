@@ -6,6 +6,7 @@ import RfqAttachments from '../RfqAttachments'
 import { submitMarketEnquiry } from '../../app/(storefront)/markets/actions'
 import { MarketEnquiryError } from './MarketEnquiryError'
 import { MarketEnquiryResult } from './MarketEnquiryResult'
+import PhoneInput from '../phone/PhoneInput'
 
 /**
  * The primary conversion on a market page — the full quote form, placed
@@ -28,7 +29,6 @@ export default function MarketQuoteForm({
   marketName,
   countryCode,
   currency,
-  dialCode,
   cities,
   incoterms,
   urgencies,
@@ -40,7 +40,6 @@ export default function MarketQuoteForm({
   marketName: string
   countryCode: string
   currency: string
-  dialCode: string
   cities: readonly string[]
   incoterms: readonly string[]
   urgencies: readonly string[]
@@ -140,13 +139,7 @@ export default function MarketQuoteForm({
                   />
                 </Field>
                 <Field label="Phone / WhatsApp">
-                  <Input
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    placeholder={`${dialCode} …`}
-                    className="h-11 sm:h-9"
-                  />
+                  <PhoneInput defaultCountry={countryCode} />
                 </Field>
                 <Field label="Incoterm">
                   <Select name="incoterm" defaultValue="" className="h-11 sm:h-9">
