@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { mediaUrl } from '../lib/media'
+import ProductEnquiryLink from './ProductEnquiryLink'
 
 type ProductCardProps = {
   product: {
@@ -24,10 +25,11 @@ type ProductCardProps = {
    */
   fallbackImage?: { src: string; categoryName: string } | null
   /**
-   * Where "Inquire" goes — WhatsApp with the part prefilled, or email when no
-   * number is set (`lib/enquiry-links.ts#inquireHref`). Omitted ⇒ no button.
+   * The part the "Inquire" email names — `url` is the absolute product page
+   * URL. The link itself is built by `ProductEnquiryLink`
+   * (`lib/enquiry-links.ts#productEnquiryHref`). Omitted ⇒ no button.
    */
-  inquire?: { href: string; external: boolean } | null
+  inquire?: { sku: string; title: string; url: string } | null
 }
 
 /**
@@ -98,14 +100,12 @@ export default function ProductCard({ product, fallbackImage, inquire }: Product
           link (z-10) so it stays clickable without nesting a link in a link.
         */}
         {inquire ? (
-          <a
-            href={inquire.href}
-            {...(inquire.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-            aria-label={`Inquire about ${product.title}`}
+          <ProductEnquiryLink
+            product={inquire}
             className="relative z-10 mt-3 inline-flex h-10 items-center justify-center rounded-[var(--radius-md)] border border-ih-border-strong text-[13px] font-medium text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
           >
             Inquire
-          </a>
+          </ProductEnquiryLink>
         ) : null}
       </div>
     </div>

@@ -25,7 +25,6 @@ import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
 import ProductCard from '../../../components/ProductCard'
-import { inquireHref } from '../../../lib/enquiry-links'
 import RelatedReading from '../../../components/blog/RelatedReading'
 import {
   CategoryBriefStrip,
@@ -846,7 +845,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     key={product.id}
                     product={product}
                     fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
-                    inquire={inquireHref({ sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) })}
+                    inquire={{ sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) }}
                   />
                 ))}
               </div>
