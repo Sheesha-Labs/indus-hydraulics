@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = serviceAreaBySlug(slug)
   if (!area) return {}
   return pageMetadata({
-    title: `Hydraulic hose service in ${area.name}`,
-    description: area.summary,
+    title: area.metaTitle ?? `Hydraulic hose service in ${area.name}`,
+    description: area.metaDescription ?? area.summary,
     path: `/locations/${area.slug}`,
   })
 }

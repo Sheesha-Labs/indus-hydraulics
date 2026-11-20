@@ -1,0 +1,72 @@
+{
+  "note": "GSC 2026-11-20 diagnosis: titles + meta descriptions for low-CTR and striking-distance pages. The storefront appends ' | Indus Hydraulics' (19 chars), so stored titles are kept to 41-45 chars.",
+  "categories": [
+    { "slug": "hydraulic-hose-fittings-suppliers-uae", "seoTitle": "Hydraulic Hose & Fittings Supplier, Dubai", "seoDescription": "Hydraulic hose and fittings supplier in Dubai, UAE: wire-braid, spiral and thermoplastic hose, crimp fittings, adapters, SAE flanges and quick couplers." },
+    { "slug": "industrial-hose-suppliers-uae", "seoTitle": "Industrial & Air Hose Suppliers in UAE", "seoDescription": "Industrial hose suppliers in the UAE: air and water, food, oil and chemical, steam and abrasive hose, plus stainless steel metallic and PTFE assemblies, from Dubai." },
+    { "slug": "electric-lubrication-pumps", "seoTitle": "Electric Lubrication Pumps (Bijur Delimon)", "seoDescription": "Bijur Delimon electric lubrication pumps and lubricators for SLR, PDI, progressive, Dualine and multi-line systems, 12/24 VDC to 575 VAC, supplied from Dubai." },
+    { "slug": "flow-iron-wellhead-equipment-uae", "seoTitle": "Flow Iron & Wellhead Equipment, UAE", "seoDescription": "WECO frac iron, hammer unions, integral fittings, swivel joints, choke manifolds, API 6A flanges, wellheads and surface test trees, 1,000 to 20,000 psi, from Dubai." },
+    { "slug": "hammer-union-suppliers-uae", "seoTitle": "Hammer Union Supplier UAE: Fig 50 to 2202", "seoDescription": "Hammer unions from Figure 50 to Figure 2202: threaded and butt-weld, standard and sour gas service, with sizes, weights and pressure ratings. Supplied from Dubai." },
+    { "slug": "oilfield-valve-suppliers-uae", "seoTitle": "Oilfield Valves UAE: Gate, Plug & Choke", "seoDescription": "Oilfield valve suppliers in the UAE: gate, ball, plug, check, choke, SSV/ESD and relief valves for wellhead, frac and process service, API 6A / 6D / 16C." },
+    { "slug": "storz-couplings", "seoTitle": "Storz Couplings & Adapters", "seoDescription": "Storz couplings and adapters from Dubai: UL FDC, safety-latch, swivel, male and female thread adapters, 30° elbows, long-shank aluminium, brass and stainless, gaskets." }
+  ],
+  "blogPosts": [
+    { "slug": "hydraulic-fluid-injection-injury", "seoTitle": "Hydraulic Fluid Injection Injury & Wounds", "seoDescription": "A hydraulic injection injury looks like a pinprick and is a surgical emergency. What high-pressure fluid does under the skin, and what to do in the first hour." },
+    { "slug": "sling-colour-code-chart", "seoTitle": "Lifting Sling Colours: EN 1492 Code Chart", "seoDescription": "Lifting sling colour code chart for webbing and round slings: EN 1492 violet 1 t to orange 10 t and over, what the label means, and why US round slings differ." },
+    { "slug": "lifting-equipment-inspection-uae", "seoTitle": "Lifting Equipment Inspection in the UAE", "seoDescription": "Lifting equipment and accessories inspection in Abu Dhabi and Dubai: how often (6 and 12 months in Abu Dhabi), who may certify, what the certificate must show." },
+    { "slug": "skiving-and-fitting-selection", "seoTitle": "Skive vs No-Skive Hydraulic Hose Fittings", "seoDescription": "When hydraulic hose must be skived: skive and no-skive fittings are not interchangeable, the fitting decides, and the mistake only shows under pressure." },
+    { "slug": "hose-assembly-test-certificate", "seoTitle": "Hose Pressure Test Certificate Explained", "seoDescription": "What a hose assembly pressure test certificate proves, what it does not, and what to ask for alongside it on a documented order or customer audit." },
+    { "slug": "solenoid-valve-functions-3-2-5-2-5-3", "seoTitle": "5/2, 3/2 & 5/3 Solenoid Valves Explained", "seoDescription": "How 5/2, 3/2 and 5/3 solenoid valves work: ISO symbols, NC vs NO, single vs double solenoid, closed, exhaust and pressure centres, and port numbers." },
+    { "slug": "chain-grades-explained", "seoTitle": "Chain Grades & Strength: Grade 30 to 100", "seoDescription": "Chain grades compared at the same size: Grade 30, 43, 70, 80 and 100, what each carries, and why only alloy Grade 80 and 100 may be used for overhead lifting." },
+    { "slug": "api-7k-rotary-vibrator-hose", "seoTitle": "API 7K Rotary Hose: Couplings & Clamps", "seoDescription": "API 7K rotary and vibrator hose: three coupling methods at the same 5,000 psi rating, high-temperature and sour wells, and the safety clamps an inspection checks." },
+    { "slug": "eye-bolt-types-and-angled-loads", "seoTitle": "Eye Bolt Types and Angled Load Capacity", "seoDescription": "Plain, shoulder and DIN 580 collar eye bolts: why a plain eye bolt lifts straight only, how shoulder eye bolt capacity falls to 30% at 45°, and correct fitting." },
+    { "slug": "bauer-couplings-explained", "seoTitle": "Bauer Couplings: Sizes, Parts & Specs" },
+    { "slug": "compact-hose-1sc-2sc", "seoTitle": "1SC & 2SC Compact Hydraulic Hose (EN 857)", "seoDescription": "EN 857 1SC and 2SC compact hydraulic hose: half the bend radius of standard braid at the same bore, a smaller OD, and the same or higher pressure." },
+    { "slug": "cable-pulling-socks-and-grips", "seoTitle": "Cable Pulling Socks & Grips: Sizes, Types", "seoDescription": "Cable pulling socks (cable grips) by type and size: single eye, double eye, side pull and HV socks, sizing to cable diameter, and pulling-tension limits." },
+    { "slug": "eye-bolt-capacity-chart", "seoTitle": "Eye Bolt Lifting Capacity Chart by Size", "seoDescription": "Eye bolt lifting capacity by thread size: DIN 580/582 M8 to M100 with 45° ratings, BS 4278, JIS B 1168, and US shoulder eye bolts at 15° to 90°." },
+    { "slug": "shackle-size-and-capacity-chart", "seoTitle": "Shackle Size Chart: WLL & Dimensions" },
+    { "slug": "lifting-hook-types", "seoTitle": "Types of Lifting & Rigging Hooks" },
+    { "slug": "hydraulic-cylinder-force-and-speed", "seoTitle": "Hydraulic Cylinder Sizing: Force & Speed" },
+    { "slug": "fire-hose-requirements-uae-civil-defence", "seoTitle": "UAE Fire Hose Reel Rules: FLS Code Guide", "seoDescription": "What the UAE Fire and Life Safety Code requires for fire hose reels, hose racks, landing valves and riser hose: sizes, lengths, spacing and Civil Defence approval." },
+    { "slug": "shackle-markings-explained", "seoTitle": "Shackle Markings: WLL, Symbols & Grade", "seoDescription": "What the marks on a shackle mean: maker, WLL, size, grade and traceability code, what ASME B30.26 requires, and why an unmarked shackle comes out of service." },
+    { "slug": "compression-fitting-leaks", "seoTitle": "What Causes Compression Fittings to Leak", "seoDescription": "What causes a leaking compression fitting: under-tightening, tube not bottomed, intermixed parts, hard or scratched tube, vibration and corrosion, and how to fix each." },
+    { "slug": "lifting-gear-rejection-criteria", "seoTitle": "Sling Rejection Criteria: All Sling Types", "seoDescription": "Rejection criteria for every sling type (chain, wire rope and synthetic) plus shackles and hooks: when lifting gear must come out of service, from OSHA 1910.184." },
+    { "slug": "wire-rope-construction-explained", "seoTitle": "6x19 vs 6x36 Wire Rope Construction" },
+    { "slug": "pneumatic-tubing-materials-guide", "seoTitle": "Nylon vs Polyurethane Tubing (Pneumatic)" },
+    { "slug": "stainless-tube-fittings-corrosion-gulf", "seoTitle": "6Mo vs 316 vs 2507 Stainless Tubing" }
+  ],
+  "products": [
+    { "slug": "manuli-m03400-no-skive-ferrule", "seoTitle": "Manuli M03400 No-Skive Ferrule: All Sizes", "seoDescription": "Manuli M03400 and M03450 no-skive ferrules for wire braid hydraulic hose: 17 sizes, DN5 to DN102 (3/16\" to 4\"), with OD and length for every part reference." },
+    { "slug": "manntek-rdme-coupling-lpg-blending", "seoTitle": "MannTek rDME Coupling, 2\" for LPG Blends" },
+    { "slug": "molykote-d-708-anti-friction-coating", "seoDescription": "Molykote D-708: heat-cured anti-friction coating filled with solid lubricants in an organic binder. Supplied from Dubai across the GCC; request a quote." },
+    { "slug": "molykote-g-1051-grease", "seoDescription": "Molykote G-1051: low-bleed PAO grease designed for plastic actuators. Supplied from Dubai across the GCC; send a quantity for a quote." },
+    { "slug": "molykote-l-1122fm-synthetic-gear-oil-iso-220", "seoTitle": "Molykote L-1122FM Gear Oil, ISO 220, NSF H1", "seoDescription": "Molykote L-1122FM: ISO 220 synthetic PAO gear oil with rust, oxidation, antiwear and corrosion inhibitors, NSF H1 certified for incidental food contact." },
+    { "slug": "molykote-l-1146fm-synthetic-extreme-temp-gear-oil-iso-460", "seoTitle": "Molykote L-1146FM Gear Oil, ISO 460, NSF H1", "seoDescription": "Molykote L-1146FM: ISO 460 synthetic extreme-temperature PAO gear oil with rust, oxidation, antiwear and corrosion inhibitors, NSF H1 certified." },
+    { "slug": "rx-73-ring-joint-gasket", "seoTitle": "RX-73 Ring Joint Gasket, API 6B 21-1/4″ 2K", "seoDescription": "RX-73 pressure-energised RX ring joint gasket for API 6B 21-1/4″ 2,000 psi flanges, in soft iron, low carbon steel, stainless and alloy. Dimensions and quote." },
+    { "slug": "bx-151-ring-joint-gasket", "seoTitle": "BX-151 Ring Gasket, API 6BX 1-13/16″" },
+    { "slug": "frac-sand-silo-sand-chief-vertical-round-hydraulic-tilt-200-t-capacity-knife-gate-discharge", "seoTitle": "Frac Sand Silo, 200 t Vertical Tilt", "seoDescription": "Vertical round frac sand silo (Sand Chief type), 200 t nominal capacity, hydraulic cylinder tilt for chute delivery and hydraulic knife-gate discharge." },
+    { "slug": "manual-gate-valve-fls-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr2f-ee-1-5", "seoTitle": "FLS Gate Valve 3-1/16″ 10M, API 6A PSL 3" },
+    { "slug": "top-hole-diverter-system-21-1-4-2-000-psi-wp-hmh-kfdj-style-offshore-shallow-gas", "seoTitle": "Top-Hole Diverter, 21-1/4″ 2,000 psi" }
+  ],
+  "brands": [
+    { "slug": "demco", "seoTitle": "Cameron DEMCO Butterfly Valves Distributor", "seoDescription": "Authorised DEMCO distributor, UAE: Cameron DEMCO butterfly valves, NE-C, NE-I, NE-D, NEI-T and NF-C series, 2″ to 36″, plus DR actuators, gear operators and handles.",
+      "description": "DEMCO valves are Cameron’s resilient-seated butterfly valves, now part of Cameron Valves & Measurement, an SLB business. Indus Hydraulics is an authorised DEMCO distributor in the UAE. We supply the NE-C general-purpose, NE-I, NE-I Sanitary, NE-D, NEI-T Teflon-lined and NF-C large-bore series from 2″ to 36″ (50 to 900 mm), in wafer and lug bodies, with the body, stem, disc and seat materials the service calls for. Accessories cover locking and memory-stop handles, worm-gear operators, Series DR pneumatic actuators, stem extensions, position-indicator switches, solenoid valves and positioners. DEMCO butterfly valves serve chemical and petrochemical, food and beverage, water and waste water, HVAC, power, mining, dry bulk and marine duty. We also carry DEMCO DM gate valve spares: gates, seat inserts, seat assemblies, stems and repair kits. Send a DEMCO part number such as J022122-1215311 and we read it back to series, size, body, disc and seat before we quote." },
+    { "slug": "banjo", "seoTitle": "Banjo Valves", "seoDescription": "Banjo valves supplied from Dubai: check valves, electric valves and spike valves, quoted with lead time across the GCC." },
+    { "slug": "continental", "seoTitle": "Continental ContiTech Hose Distributor" },
+    { "slug": "witzenmann", "seoTitle": "Witzenmann Metal Hoses & Bellows" }
+  ],
+  "serviceCases": [
+    { "slug": "iwcf-iadc-wellsharp-well-control-training-levels-2-4", "seoTitle": "IADC & IWCF Well Control Certification" }
+  ],
+  "markets": [
+    { "slug": "kazakhstan", "meta_title": "Hydraulic Valves & Hose for Kazakhstan", "meta_description": "Hydraulic valves, hose, GOST couplings, wellhead and flow iron from Dubai to Atyrau, Almaty or Astana by air in 4–6 days, with EAC conformity in the importer’s name." },
+    { "slug": "zambia", "meta_title": "Hydraulic Hose & Valve Supplier Zambia", "meta_description": "Hydraulic hose, fittings, hydraulic and slurry valves shipped from Dubai to Lusaka and the Copperbelt via Durban or Dar es Salaam, conformity verified before shipment." },
+    { "slug": "zimbabwe", "meta_title": "Hydraulic Hose & Valve Supplier Zimbabwe", "meta_description": "Hydraulic hose, fittings, valves and mining spares shipped from Dubai to Harare and Bulawayo via Durban and Beitbridge or Beira, conformity assessed before sailing." },
+    { "slug": "tanzania", "meta_title": "Hydraulic Hose & Valve Supplier Tanzania" },
+    { "slug": "oman", "meta_title": "Hydraulic & Industrial Hose Supplier Oman", "meta_description": "Hydraulic and industrial hose, fittings, valves and rigging trucked from Dubai to Muscat, Sohar and the Batinah coast via Hatta–Al Wajajah in typically 2 working days." },
+    { "slug": "qatar", "meta_title": "Hydraulic Hose & Fittings Supplier Qatar" },
+    { "slug": "poland", "meta_title": "Industrial & Hydraulic Hose Supplier Poland", "meta_description": "Hydraulic and industrial hose, fittings and valves shipped from Dubai to Gdańsk in 26–34 days, or via Koper for Silesia, specified for mining duty." }
+  ],
+  "brandLinks": [
+    { "brand": "demco", "productSlugPrefix": "demco-dm-" }
+  ]
+}
