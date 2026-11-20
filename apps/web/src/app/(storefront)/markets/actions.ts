@@ -285,6 +285,7 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
     ],
     message: input.partList || null,
     attachmentCount: attachments.length,
+    files: attachments,
     pageUrl: urlFor(market ? `/markets/${market.slug}` : '/markets'),
   })
 

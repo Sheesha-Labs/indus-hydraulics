@@ -186,6 +186,7 @@ export async function submitManufacturingEnquiry(formData: FormData): Promise<Su
     ],
     message: input.description || null,
     attachmentCount: attachments.length,
+    files: attachments,
     pageUrl: urlFor(enquiry.path),
   })
 

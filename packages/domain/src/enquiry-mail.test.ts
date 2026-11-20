@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ENQUIRY_EMAIL_CC, ENQUIRY_EMAIL_TO, ENQUIRY_RECIPIENTS, enquiryBody, enquiryMailto } from './enquiry-mail'
+import { ENQUIRY_EMAIL_CC, ENQUIRY_EMAIL_TO, ENQUIRY_RECIPIENTS, enquiryAttachmentFilename, enquiryBody, enquiryMailto } from './enquiry-mail'
 
 describe('enquiryMailto', () => {
   it('addresses sales with purchase in CC', () => {
@@ -41,5 +41,22 @@ describe('enquiryBody', () => {
 describe('ENQUIRY_RECIPIENTS', () => {
   it('is sales then purchase', () => {
     expect(ENQUIRY_RECIPIENTS).toEqual([ENQUIRY_EMAIL_TO, ENQUIRY_EMAIL_CC])
+  })
+})
+
+describe('enquiryAttachmentFilename', () => {
+  const path = 'rfq-attachments/2026-11-20/0f8c1d2e-1111-4222-8333-944455556666.pdf'
+
+  it("keeps the visitor's name with the server's extension", () => {
+    expect(enquiryAttachmentFilename({ path, label: 'GA drawing rev B.pdf' })).toBe('GA drawing rev B.pdf')
+    expect(enquiryAttachmentFilename({ path, label: 'drawing.exe' })).toBe('drawing.pdf')
+  })
+
+  it('strips characters that break a MIME header or a path', () => {
+    expect(enquiryAttachmentFilename({ path, label: '../../etc/pass"wd\r\nX: y' })).toBe('.._.._etc_pass_wd_X_ y.pdf')
+  })
+
+  it('falls back when nothing usable is left', () => {
+    expect(enquiryAttachmentFilename({ path, label: '   ' })).toBe('attachment.pdf')
   })
 })
