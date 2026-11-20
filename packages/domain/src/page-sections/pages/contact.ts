@@ -1,3 +1,4 @@
+import { ENQUIRY_LINK } from '../../enquiry-mail'
 import { area, ctaPair, eyebrow, faqList, heading, statList, text } from '../fields'
 import type { MasterPageDef } from '../types'
 
@@ -67,10 +68,10 @@ export const CONTACT_PAGE: MasterPageDef = {
         text('hours_label', 'Opening-hours heading', { max: 60 }),
       ],
       defaults: {
-        rfq_heading: 'Prefer to submit a formal RFQ?',
-        rfq_body: 'Use the quote builder to add specific SKUs with quantities and we’ll respond with pricing within 4 business hours.',
-        rfq_cta_label: 'Submit an RFQ →',
-        rfq_cta_href: '/quote',
+        rfq_heading: 'Prefer to send a formal RFQ?',
+        rfq_body: 'Email your part numbers and quantities to sales@indushydraulics.me, with purchase@ copied, and we’ll respond with pricing within 4 business hours.',
+        rfq_cta_label: 'Email an RFQ →',
+        rfq_cta_href: ENQUIRY_LINK,
         hours_label: 'Opening hours',
       },
     },
@@ -125,7 +126,7 @@ export const CONTACT_PAGE: MasterPageDef = {
         heading_emphasis: 'to wait for us.',
         body: 'Pick the route that matches your enquiry — or send the message anyway and we’ll point you at the right engineer.',
         items: [
-          { enabled: true, name: 'Request a quote', desc: 'Add SKUs and quantities, priced within 4 hours', href: '/quote', icon: 'quote' },
+          { enabled: true, name: 'Email an enquiry', desc: 'Send SKUs and quantities, priced within 4 hours', href: ENQUIRY_LINK, icon: 'quote' },
           { enabled: true, name: 'Find a replacement part', desc: 'Cross-reference a competitor part number', href: '/replacement', icon: 'replacement' },
           { enabled: true, name: 'Browse the catalogue', desc: 'Hoses, fittings, valves, pumps, seals and lubricants', href: '/c', icon: 'catalogue' },
           { enabled: true, name: 'Brands we stock', desc: 'Bosch Rexroth, Parker, Atos, Hydac, Molykote and more', href: '/brands', icon: 'brands' },

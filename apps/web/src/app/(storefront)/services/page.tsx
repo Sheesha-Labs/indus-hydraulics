@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Fragment, Suspense, type ReactNode } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
 import Link from 'next/link'
-import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList, type ImageValue } from '@indus/domain'
+import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList, type ImageValue, enquiryMailto } from '@indus/domain'
 import { pageMetadata } from '../../../lib/seo'
 import {
   categoryCounts,
@@ -18,7 +18,7 @@ import ServicesCaseList from '../../../components/services/ServicesCaseList'
 import ApproachSteps from '../../../components/services/ApproachSteps'
 import StoryCard from '../../../components/services/StoryCard'
 import ServicesCta from '../../../components/services/ServicesCta'
-import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { buildWhatsappHref } from '@indus/ui'
 import { getStoreSettings } from '../../../lib/store-settings'
 import type { ApproachStep, HeroStat } from '../../../lib/services-config'
 
@@ -269,7 +269,7 @@ export default async function ServicesIndexPage() {
     cta: (
       <ServicesCta
         whatsappUrl={buildWhatsappHref(settings.contactPhone, 'Enquiry: service intake')}
-        emailUrl={buildMailtoHref(settings.contactEmail, 'Service intake enquiry')}
+        emailUrl={enquiryMailto({ subject: 'Service intake enquiry' })}
         eyebrow={str(cta, 'eyebrow')}
         byline={str(cta, 'byline')}
         heading={str(cta, 'heading')}

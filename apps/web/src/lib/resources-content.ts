@@ -1,6 +1,6 @@
 import { db } from '@indus/db'
-import { interpolate, list, resourceTotals, RESOURCES_LAST_CHECKED, str, type CopyTokens } from '@indus/domain'
-import { buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import { interpolate, list, resourceTotals, RESOURCES_LAST_CHECKED, str, type CopyTokens, enquiryMailto } from '@indus/domain'
+import { buildWhatsappHref } from '@indus/ui'
 import { getMasterPageContent, type PageContent } from './page-content'
 import { getStoreSettings } from './store-settings'
 
@@ -73,7 +73,7 @@ export async function getResourcesShared(enquirySubject: string): Promise<Resour
       phone: settings.contactPhone,
       email: settings.contactEmail,
       whatsappHref: buildWhatsappHref(settings.contactPhone, enquirySubject),
-      mailtoHref: buildMailtoHref(settings.contactEmail, enquirySubject),
+      mailtoHref: enquiryMailto({ subject: enquirySubject }),
     },
   }
 }

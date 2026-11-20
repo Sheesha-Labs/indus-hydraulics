@@ -13,7 +13,9 @@ import {
   signQuoteAccessToken,
   splitContactName,
 } from '@indus/domain'
-import { resolveOrCreateAnonymousContact, sendRfqEmails } from '../../../lib/rfq-intake'
+import { resolveOrCreateAnonymousContact } from '../../../lib/rfq-intake'
+import { sendEnquiryEmail } from '../../../lib/enquiry-email'
+import { urlFor } from '../../../lib/seo'
 import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
 /**
@@ -80,6 +82,13 @@ const EnquirySchema = z.object({
   partList: z.string().trim().max(8000).optional().or(z.literal('')),
   wantsChecklist: z.boolean().optional(),
 })
+
+/** How each market form names itself in the enquiry email. */
+const MARKET_SOURCE_LABEL = {
+  market_quote_form: 'Export market quote form',
+  market_quick_enquiry: 'Export market quick enquiry',
+  markets_index_enquiry: 'Export markets enquiry',
+} as const
 
 export async function submitMarketEnquiry(formData: FormData): Promise<SubmitResult> {
   // Honeypot — a real browser never populates an off-screen field with no
@@ -258,22 +267,26 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
     return created
   })
 
-  // The RFQ is committed. A mail failure must not undo it, or lose it.
-  try {
-    await sendRfqEmails({
-      rfqId: rfq.id,
-      rfqCode: rfq.code,
-      urgency,
-      lineCount: 0,
-      subject,
-      customerMessage: input.partList || null,
-      contactId,
-      accountId,
-      shipToAddressId: null,
-    })
-  } catch (err) {
-    console.error('[submitMarketEnquiry] email send error', err)
-  }
+  // The RFQ is committed. The email never throws, so it cannot undo it.
+  await sendEnquiryEmail({
+    rfqId: rfq.id,
+    reference: rfq.code,
+    formLabel: MARKET_SOURCE_LABEL[input.source],
+    senderName: input.contactName,
+    senderEmail: input.email,
+    company: input.company,
+    details: [
+      ['Phone', input.phone],
+      ['Destination', destinationName],
+      ['Delivery city', input.deliveryCity],
+      ['Incoterm', incoterm],
+      ['Needed by', input.neededBy],
+      ['Compliance checklist', input.wantsChecklist ? 'Requested' : null],
+    ],
+    message: input.partList || null,
+    attachmentCount: attachments.length,
+    pageUrl: urlFor(market ? `/markets/${market.slug}` : '/markets'),
+  })
 
   /*
     No redirect. The reader is 12,000 pixels down a page they scrolled through

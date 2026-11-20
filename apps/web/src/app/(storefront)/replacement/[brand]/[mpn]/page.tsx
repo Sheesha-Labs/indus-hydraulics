@@ -2,12 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import {
-  REPLACEMENT_INDEX_MIN_MATCHES,
-  buildBreadcrumbLd,
-  buildReplacementCollectionLd,
-} from '@indus/domain'
-import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { REPLACEMENT_INDEX_MIN_MATCHES, buildBreadcrumbLd, buildReplacementCollectionLd, enquiryMailto } from '@indus/domain'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { mediaUrl } from '../../../../../lib/media'
 import { SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
 import { getReplacementMatches, getReplacementSitemapKeys } from '../../../../../lib/replacement-data'
@@ -233,9 +229,8 @@ export default async function ReplacementPage({ params }: Props) {
         heading={`Quote on ${competitorBrand} ${competitorMpn}`}
         body={`Our applications team can confirm interchangeability, port pattern, mounting and lead time before you commit. Send your part number or a photo of the unit and we'll come back within one business day.`}
         whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${competitorBrand} ${competitorMpn} replacement`)}
-        emailUrl={buildMailtoHref(settings.contactEmail, `${competitorBrand} ${competitorMpn} replacement enquiry`)}
+        emailUrl={enquiryMailto({ subject: `${competitorBrand} ${competitorMpn} replacement enquiry` })}
         phone={settings.contactPhone}
-        quoteLabel="Request a quote"
       />
     </div>
   )

@@ -18,12 +18,13 @@ import {
   str,
   toggleSpecValue,
   type SectionValues,
+  enquiryMailto,
+  enquiryBody,
 } from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
 import ProductCard from '../../../components/ProductCard'
-import { getStoreSettings } from '../../../lib/store-settings'
 import { inquireHref } from '../../../lib/enquiry-links'
 import RelatedReading from '../../../components/blog/RelatedReading'
 import {
@@ -435,7 +436,6 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     slug: category.slug,
   })
   const heroCopy = content.values('hero')
-  const settings = await getStoreSettings()
   /** An override, or the wording the shelf already had. */
   const over = (values: SectionValues, key: string, built: string): string =>
     str(values, key) ?? built
@@ -833,7 +833,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     message="This category has no published SKUs. Tell us what you need and an engineer will source it."
                     action={
                       <Button asChild kind="primary">
-                        <Link href="/quote/submit">Request a quote</Link>
+                        <a href={enquiryMailto({ subject: `Enquiry: ${category.name}`, body: enquiryBody({ about: category.name, url: urlFor(`/c/${category.slug}`) }) })}>Email an enquiry</a>
                       </Button>
                     }
                   />
@@ -846,7 +846,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     key={product.id}
                     product={product}
                     fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
-                    inquire={inquireHref(settings, { sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) })}
+                    inquire={inquireHref({ sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) })}
                   />
                 ))}
               </div>

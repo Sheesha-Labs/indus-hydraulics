@@ -150,7 +150,7 @@ describe('every app send sets Reply-To', () => {
   const SEND_SITES = [
     'apps/web/src/app/admin/(shell)/rfqs/[code]/actions.ts',
     'apps/web/src/inngest/functions.ts',
-    'apps/web/src/app/(storefront)/quote/actions.ts',
+    'apps/web/src/lib/enquiry-email.ts',
   ]
 
   test('no call site mirrors the From address into Reply-To', () => {

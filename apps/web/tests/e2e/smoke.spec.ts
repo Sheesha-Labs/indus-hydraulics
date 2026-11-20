@@ -72,6 +72,15 @@ test.describe('storefront smoke', () => {
     })
   }
 
+  // The catalogue quote cart was retired (2026-11). /quote/<code>, the
+  // customer's signed view of a quote the desk sent, is not part of it.
+  for (const retired of ['/quote', '/quote/submit']) {
+    test(`retired ${retired} redirects to /contact`, async ({ page }) => {
+      await page.goto(retired)
+      expect(new URL(page.url()).pathname).toBe('/contact')
+    })
+  }
+
   test('header utility bar links the sales email', async ({ page }) => {
     await page.goto('/')
     await expect(page.locator('header a[href^="mailto:"]').first()).toBeVisible()

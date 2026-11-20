@@ -57,6 +57,13 @@ const RETIRED_CUSTOMER_PATHS = [
 ]
 const RETIRED_CUSTOMER_DESTINATION = '/contact'
 
+/**
+ * The retired catalogue quote cart (2026-11): the builder at /quote and its
+ * form at /quote/submit. Exact paths, not prefixes — /quote/<code> is the
+ * customer's signed view of a quote the desk sent, and stays.
+ */
+const RETIRED_QUOTE_PATHS = ['/quote', '/quote/submit']
+
 /** RFC 6265 §5.1.4-style segment match: /admin matches /admin and /admin/x, not /administrator. */
 function underPrefix(pathname: string, prefix: string): boolean {
   return pathname === prefix || pathname.startsWith(`${prefix}/`)
@@ -358,6 +365,10 @@ export default async function proxy(request: NextRequest) {
   if (canonical) return done(NextResponse.redirect(canonical, 308))
 
   if (RETIRED_CUSTOMER_PATHS.some((p) => underPrefix(pathname, p))) {
+    return done(NextResponse.redirect(new URL(RETIRED_CUSTOMER_DESTINATION, request.url), 308))
+  }
+
+  if (RETIRED_QUOTE_PATHS.includes(pathname.replace(/\/$/, '') || '/')) {
     return done(NextResponse.redirect(new URL(RETIRED_CUSTOMER_DESTINATION, request.url), 308))
   }
 

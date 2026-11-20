@@ -1,12 +1,6 @@
 import type { Metadata } from 'next'
-import {
-  QUALITY_CONTROL_ENQUIRY,
-  QUALITY_CONTROL_PAGE,
-  buildBreadcrumbLd,
-  designedPageMarketReach,
-  type JsonLd as JsonLdData,
-} from '@indus/domain'
-import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import { QUALITY_CONTROL_ENQUIRY, QUALITY_CONTROL_PAGE, buildBreadcrumbLd, designedPageMarketReach, type JsonLd as JsonLdData, enquiryMailto } from '@indus/domain'
+import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import QualityControlLanding from '../../../components/quality-control/QualityControlLanding'
 import MarketReachSection from '../../../components/markets/MarketReachSection'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
@@ -104,7 +98,7 @@ export default async function QualityControlPageRoute() {
           settings.contactPhone,
           `Enquiry: ${SITE_NAME} inspection scope and documents`
         )}
-        mailtoHref={buildMailtoHref(settings.contactEmail, 'Inspection scope enquiry')}
+        mailtoHref={enquiryMailto({ subject: 'Inspection scope enquiry' })}
       />
 
       {/*
