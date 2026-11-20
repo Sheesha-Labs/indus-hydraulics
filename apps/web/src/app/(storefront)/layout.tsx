@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { unstable_cache } from 'next/cache'
-import { SpeedInsights } from '@vercel/speed-insights/next'
+import { SpeedInsights } from '../../components/VercelTelemetry'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Suspense } from 'react'
 import AnalyticsProvider from '../../components/AnalyticsProvider'
