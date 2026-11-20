@@ -13,7 +13,6 @@ import {
   readEpoch,
   suppressionReason,
   surfaceFor,
-  type CallbackCountry,
   type CallbackSurface,
   type CallbackTrigger,
   type CloseMethod,
@@ -40,8 +39,6 @@ import { trackCallback } from '../../lib/callback/analytics'
 const CallbackSurfaces = lazy(() => import('./CallbackSurfaces'))
 
 type Props = {
-  /** [ISO, dial] for every export market, sorted by name (server-built). */
-  countries: CallbackCountry[]
   /** The HQ's Schema.org opening hours — drives "Export desk online". */
   openingHours: string[]
   /** "+971 52 2477942" */
@@ -79,7 +76,7 @@ function insidePrompt(el: Element | null): boolean {
   return !!el?.closest(`[${ROOT_ATTR}]`)
 }
 
-export default function CallbackPrompt({ countries, openingHours, deskPhone, deskEmail }: Props) {
+export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: Props) {
   const pathname = usePathname()
   const [open, setOpen] = useState<OpenState | null>(null)
 
@@ -271,7 +268,6 @@ export default function CallbackPrompt({ countries, openingHours, deskPhone, des
         surface={open.surface}
         trigger={open.trigger}
         openedAt={open.openedAt}
-        countries={countries}
         openingHours={openingHours}
         deskPhone={deskPhone}
         deskEmail={deskEmail}

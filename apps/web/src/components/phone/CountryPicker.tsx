@@ -1,11 +1,12 @@
 'use client'
 
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
-import { filterCountries, flagSrc, type CallbackCountry } from '../../lib/callback/rules'
+import type { DialCountry } from '@indus/domain'
+import { filterCountries, flagSrc } from '../../lib/phone'
 
 type Props = {
   /** Ordered list: default first, then the GCC, then A–Z (`orderCountries`). */
-  countries: CallbackCountry[]
+  countries: DialCountry[]
   /** How many leading rows are the "suggested" block — a rule follows them. */
   topCount: number
   value: string
@@ -29,7 +30,8 @@ const PANEL_MAX = 320
 const PANEL_MIN = 180
 
 /**
- * Dial-code picker for the call-back prompt: a button showing the flag and
+ * Dial-code picker shared by every phone field (call-back prompt and enquiry
+ * forms): a button showing the flag and
  * dial code, opening a searchable listbox of flag · country · code.
  *
  * Hand-rolled (CLAUDE.md §10.5) because a native <select> cannot show images.

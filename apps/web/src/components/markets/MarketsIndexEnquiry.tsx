@@ -5,6 +5,7 @@ import { Button, Field, Input, Textarea } from '@indus/ui'
 import { submitMarketEnquiry } from '../../app/(storefront)/markets/actions'
 import { MarketEnquiryError } from './MarketEnquiryError'
 import { MarketEnquiryResult } from './MarketEnquiryResult'
+import PhoneInput from '../phone/PhoneInput'
 
 /**
  * The closing enquiry card on `/markets`.
@@ -123,7 +124,7 @@ export default function MarketsIndexEnquiry({
               />
             </Field>
             <Field label="Phone / WhatsApp">
-              <Input name="phone" type="tel" autoComplete="tel" placeholder="+971 …" />
+              <PhoneInput />
             </Field>
           </div>
 

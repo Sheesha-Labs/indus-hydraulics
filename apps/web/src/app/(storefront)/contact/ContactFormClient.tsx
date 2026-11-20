@@ -3,6 +3,7 @@
 import { useActionState, useState } from 'react'
 import { submitContactForm, type ContactFormState } from './actions'
 import { Input, Select, Textarea, Field as UiField } from '@indus/ui'
+import PhoneInput from '../../../components/phone/PhoneInput'
 
 const TABS = [
   { id: 'quotation', label: 'Quotation request' },
@@ -92,7 +93,9 @@ export default function ContactFormClient() {
         </div>
         <div className="grid grid-cols-2 gap-3">
           <Field label="Work email *" name="email" type="email" placeholder="rohit@company.com" required error={fieldErrors.email} />
-          <Field label="Phone / WhatsApp" name="phone" type="tel" placeholder="+971 5X XXX XXXX" mono error={fieldErrors.phone} />
+          <UiField label="Phone / WhatsApp" error={fieldErrors.phone}>
+            <PhoneInput />
+          </UiField>
         </div>
         <div className="grid grid-cols-2 gap-3">
           <Field label="Company *" name="company" placeholder="Your company" required error={fieldErrors.company} />

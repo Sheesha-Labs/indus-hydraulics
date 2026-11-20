@@ -290,7 +290,6 @@ export default function MarketLanding({
           marketName={market.name}
           countryCode={market.countryCode}
           currency={page.currency}
-          dialCode={page.dialCode}
           cities={page.cities.map((c) => c.name)}
           incoterms={MARKET_INCOTERM_OPTIONS}
           urgencies={MARKET_URGENCY_OPTIONS}
@@ -602,7 +601,6 @@ export default function MarketLanding({
           marketSlug={market.slug}
           marketName={market.name}
           countryCode={market.countryCode}
-          dialCode={page.dialCode}
           contactEmail={contact.email}
         />
       </div>
