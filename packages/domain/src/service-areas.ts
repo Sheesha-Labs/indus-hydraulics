@@ -23,6 +23,12 @@ export type ServiceArea = {
   region: string
   /** One-sentence summary — also the meta description base. */
   summary: string
+  /**
+   * Optional search title and meta description. Without them the page uses
+   * "Hydraulic hose service in <name>" and `summary`.
+   */
+  metaTitle?: string
+  metaDescription?: string
   /** Opening paragraph on the page. */
   intro: string
   /** Industrial zones and sub-areas, for on-page specificity and long-tail. */
@@ -47,6 +53,12 @@ export const SERVICE_AREAS: ServiceArea[] = [
     region: 'United Arab Emirates',
     summary:
       'On-site hydraulic hose assembly and replacement across Al Quoz, Ras Al Khor, Jebel Ali and Dubai Investment Park, from our Dubai base.',
+    // Owns local repair / service intent. The hose roots own "hydraulic hose
+    // suppliers" (hydraulic-hose-fittings-suppliers-uae) and "industrial hose"
+    // (industrial-hose-suppliers-uae) — GSC 2026-11-20 had all three at 70–77.
+    metaTitle: 'Hydraulic Hose Repair & Assembly in Dubai',
+    metaDescription:
+      'Hydraulic hose repair in Dubai: bring a failed assembly to our Dubai hose bay, or have one made at the machine in Al Quoz, Ras Al Khor, Jebel Ali or DIP.',
     intro:
       'Dubai is where our hose bay is, which makes it the one area where bringing an assembly in and having one built at the machine are genuinely close calls. Both are available; which is faster depends on whether the machine can move and what the traffic is doing.',
     zones: ['Al Quoz', 'Ras Al Khor', 'Jebel Ali and JAFZA', 'Dubai Investment Park', 'Al Qusais', 'Al Aweer'],
