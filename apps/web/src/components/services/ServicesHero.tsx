@@ -76,7 +76,7 @@ export default function ServicesHero({
         <div className="flex shrink-0 flex-wrap gap-3">
           {primaryLabel ? (
             <Link
-              href={primaryHref ?? '/quote'}
+              href={primaryHref ?? '/contact'}
               className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] bg-ih-navy px-5 text-sm font-medium text-white hover:bg-ih-ink"
             >
               {primaryLabel}

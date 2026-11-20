@@ -5,14 +5,12 @@ export type LeadCapturePanelProps = {
   body?: string
   /** Pre-built wa.me URL (call `buildWhatsappHref` on the server). `null` hides the button. */
   whatsappUrl?: string | null
-  /** Pre-built `mailto:` URL. Always rendered (falls back to a generic sales inbox upstream). */
+  /** The enquiry `mailto:` (build it with `enquiryMailto` from @indus/domain). The primary button. */
   emailUrl: string
-  /** Where the primary "Request a quote" button points. Defaults to `/quote`. */
-  quoteUrl?: string
   /** Optional click-to-call number in E.164. `null`/undefined hides the tel button. */
   phone?: string | null
-  /** Label override for the primary button. Defaults to "Request a quote". */
-  quoteLabel?: string
+  /** Label override for the primary button. Defaults to "Email an enquiry". */
+  ctaLabel?: string
   /** Variant — "wide" is a centred hero-style band, "compact" sits inline at section width. */
   variant?: 'wide' | 'compact'
 }
@@ -22,9 +20,9 @@ export type LeadCapturePanelProps = {
  * rank organically but historically had no conversion path: industry
  * pages, replacement landing pages, services index.
  *
- * Renders three CTAs side-by-side: primary "Request a quote", WhatsApp
- * (hidden if no number configured), and Email. Optional click-to-call
- * row sits below. The component is a Server Component — no client JS,
+ * Renders two CTAs side-by-side: primary "Email an enquiry" (to sales@,
+ * purchase@ in CC) and WhatsApp (hidden if no number configured). Optional
+ * click-to-call row sits below. The component is a Server Component — no client JS,
  * no hydration cost. PostHog autocapture picks up clicks on every
  * outbound link so the conversion is measurable without wiring events.
  */
@@ -33,9 +31,8 @@ export function LeadCapturePanel({
   body,
   whatsappUrl,
   emailUrl,
-  quoteUrl = '/quote',
   phone,
-  quoteLabel = 'Request a quote',
+  ctaLabel = 'Email an enquiry',
   variant = 'wide',
 }: LeadCapturePanelProps) {
   // `sc-cta-panel` is a styling opt-out, not a look: article bodies style bare
@@ -80,10 +77,10 @@ export function LeadCapturePanel({
           }
         >
           <a
-            href={quoteUrl}
-            className="inline-flex items-center h-11 px-6 bg-ih-accent text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
+            href={emailUrl}
+            className="inline-flex items-center h-11 px-6 rounded-md bg-ih-accent text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
           >
-            {quoteLabel} →
+            {ctaLabel} →
           </a>
 
           {whatsappUrl && (
@@ -91,19 +88,12 @@ export function LeadCapturePanel({
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center h-11 px-6 font-medium text-[14px] text-white hover:opacity-90 transition-opacity"
-              style={{ background: '#16a34a' }}
+              className="inline-flex items-center h-11 px-6 rounded-md border border-ih-border bg-ih-bg text-ih-ink-2 font-medium text-[14px] hover:border-ih-ink transition-colors"
             >
               WhatsApp us
             </a>
           )}
 
-          <a
-            href={emailUrl}
-            className="inline-flex items-center h-11 px-6 border border-ih-border bg-ih-bg text-ih-ink-2 font-medium text-[14px] hover:border-ih-ink transition-colors"
-          >
-            Email
-          </a>
         </div>
 
         {phone && (
@@ -139,14 +129,4 @@ export function buildWhatsappHref(phone: string | null | undefined, prefill?: st
   if (digits.length < 7) return null
   const text = prefill ? `?text=${encodeURIComponent(prefill)}` : ''
   return `https://wa.me/${digits}${text}`
-}
-
-/**
- * Build a `mailto:` URL with optional subject prefill. Falls back to a
- * generic sales inbox when `email` is unset so the CTA is never dead.
- */
-export function buildMailtoHref(email: string | null | undefined, subject?: string): string {
-  const to = email ?? 'enquiries@indushydraulics.me'
-  const subjectPart = subject ? `?subject=${encodeURIComponent(subject)}` : ''
-  return `mailto:${to}${subjectPart}`
 }

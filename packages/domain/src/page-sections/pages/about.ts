@@ -1,3 +1,4 @@
+import { ENQUIRY_LINK } from '../../enquiry-mail'
 import { area, body, cardList, ctaPair, eyebrow, heading, image, statList, text } from '../fields'
 import type { MasterPageDef } from '../types'
 
@@ -154,8 +155,8 @@ export const ABOUT_PAGE: MasterPageDef = {
       defaults: {
         heading: 'Ready to put us to the test?',
         body: 'Send us your hardest-to-source SKU. We respond within 4 hours — often in minutes.',
-        primary_cta_label: 'Submit an RFQ →',
-        primary_cta_href: '/quote',
+        primary_cta_label: 'Email an enquiry →',
+        primary_cta_href: ENQUIRY_LINK,
         secondary_cta_label: 'Contact us',
         secondary_cta_href: '/contact',
       },

@@ -288,7 +288,7 @@ function ScalarField({
         <input
           className={inputCls}
           value={textValue}
-          placeholder={simple.kind === 'link' ? '/quote' : undefined}
+          placeholder={simple.kind === 'link' ? '/contact' : undefined}
           onChange={(e) => onChange(e.target.value)}
         />
       )}

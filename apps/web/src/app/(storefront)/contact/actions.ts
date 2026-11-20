@@ -1,8 +1,10 @@
 'use server'
 
 import { z } from 'zod'
-import { sendEmail } from '@indus/email'
-import { loadEmailBranding } from '../../../lib/email-branding'
+import { db, nextRfqCode } from '@indus/db'
+import { sendEnquiryEmail } from '../../../lib/enquiry-email'
+import { resolveOrCreateAnonymousContact } from '../../../lib/rfq-intake'
+import { urlFor } from '../../../lib/seo'
 
 const InquiryTypeSchema = z.enum(['quotation', 'application', 'general'])
 
@@ -78,91 +80,94 @@ export async function submitContactForm(
   }
 
   const data = parsed.data
-  const branding = await loadEmailBranding()
-
-  // Recipient: configured internal-alert addresses, or fall back to the
-  // sales mailbox on the StoreSettings so the form never silently drops
-  // a submission in environments where alert recipients aren't filled in.
-  const recipients =
-    branding.internalAlertEmails.length > 0
-      ? branding.internalAlertEmails
-      : [branding.fromEmail]
-
   const inquiryLabel = INQUIRY_TYPE_LABELS[data.inquiryType]
   const customerName = `${data.firstName} ${data.lastName}`.trim()
-  const subject = `[Contact form · ${inquiryLabel}] ${data.company} — ${customerName}`
 
-  const html = renderContactInquiryHtml({
-    inquiryLabel,
-    customerName,
-    ...data,
+  /*
+    Recorded first, as an RFQ, so the enquiry lands in /admin/enquiries with
+    every other website enquiry. This form used to send an email and nothing
+    else: a bounced or filtered mail lost the lead with no trace in admin.
+  */
+  let rfq: { id: string; code: string } | null = null
+  try {
+    const { accountId, contactId } = await resolveOrCreateAnonymousContact({
+      firstName: data.firstName,
+      lastName: data.lastName,
+      email: data.email,
+      ...(data.phone ? { phone: data.phone } : {}),
+      company: data.company,
+    })
+    const applicationContext = [
+      `Enquiry type: ${inquiryLabel}`,
+      data.industry ? `Industry: ${data.industry}` : null,
+      data.skus ? `Part numbers: ${data.skus}` : null,
+      'Source: contact page form',
+    ]
+      .filter((line): line is string => line !== null)
+      .join('\n')
+
+    rfq = await db.$transaction(async (tx) => {
+      const code = await nextRfqCode(tx)
+      const created = await tx.rfq.create({
+        data: {
+          code,
+          accountId,
+          submittedByContactId: contactId,
+          subject: `${inquiryLabel} — contact form`,
+          applicationContext,
+          currency: 'AED',
+          customerMessage: data.message || null,
+          internalNotes: 'Submitted from the contact page — verify contact details before fulfilment.',
+          status: 'submitted',
+          submittedAt: new Date(),
+        },
+        select: { id: true, code: true },
+      })
+      await tx.accountActivity.create({
+        data: {
+          accountId,
+          actorType: 'contact',
+          actorId: contactId,
+          verb: 'submitted_rfq',
+          payload: {
+            rfqId: created.id,
+            code: created.code,
+            anonymous: true,
+            inquiryType: data.inquiryType,
+            source: 'contact_page_form',
+          },
+        },
+      })
+      return created
+    })
+  } catch (err) {
+    // Never shown to the visitor; the email below still reaches the desk.
+    console.error('[submitContactForm] could not record the enquiry', err)
+  }
+
+  const emailed = await sendEnquiryEmail({
+    ...(rfq ? { rfqId: rfq.id } : {}),
+    reference: rfq?.code ?? null,
+    formLabel: `Contact form · ${inquiryLabel}`,
+    senderName: customerName,
+    senderEmail: data.email,
+    company: data.company,
+    details: [
+      ['Phone / WhatsApp', data.phone],
+      ['Industry', data.industry],
+      ['Part numbers', data.skus],
+    ],
+    message: data.message || null,
+    pageUrl: urlFor('/contact'),
   })
 
-  const result = await sendEmail({
-    kind: 'contact_inquiry',
-    to: recipients,
-    subject,
-    html,
-    fromEmail: branding.fromEmail,
-    ...(branding.fromName ? { fromName: branding.fromName } : {}),
-    replyTo: data.email,
-  })
-
-  if (!result.ok) {
+  // Lost only when it was neither recorded nor sent.
+  if (!rfq && !emailed) {
     return {
       status: 'error',
       message: 'We could not send your message. Please try email or WhatsApp instead.',
     }
   }
 
-  return { status: 'success', ref: result.sentEmailId.slice(0, 8).toUpperCase() }
-}
-
-function escape(input: string): string {
-  return input
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
-}
-
-function renderContactInquiryHtml(input: {
-  inquiryLabel: string
-  customerName: string
-  email: string
-  phone?: string
-  company: string
-  industry?: string
-  skus?: string
-  message?: string
-}): string {
-  const rows: Array<[string, string]> = [
-    ['Inquiry type', input.inquiryLabel],
-    ['Name', input.customerName],
-    ['Email', input.email],
-    ['Phone / WhatsApp', input.phone || '—'],
-    ['Company', input.company],
-    ['Industry', input.industry || '—'],
-    ['SKUs / part numbers', input.skus || '—'],
-  ]
-  const rowsHtml = rows
-    .map(
-      ([label, value]) =>
-        `<tr><th align="left" style="padding:6px 12px 6px 0;color:#6b6b6b;font-weight:500;width:160px;">${escape(label)}</th><td style="padding:6px 0;">${escape(value)}</td></tr>`,
-    )
-    .join('\n')
-
-  const messageBlock = input.message
-    ? `<h3 style="margin:24px 0 8px;font-size:14px;color:#6b6b6b;font-weight:500;">Message</h3><div style="white-space:pre-wrap;border-left:3px solid #e5e1d4;padding:8px 12px;color:#1a1a1a;">${escape(input.message)}</div>`
-    : ''
-
-  return `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#1a1a1a;max-width:600px;">
-<h2 style="margin:0 0 16px;font-size:18px;">New contact form submission</h2>
-<table style="border-collapse:collapse;font-size:14px;line-height:1.55;">
-${rowsHtml}
-</table>
-${messageBlock}
-<p style="margin-top:32px;font-size:12px;color:#6b6b6b;">Reply directly to this email to respond to ${escape(input.customerName)}.</p>
-</div>`
+  return { status: 'success', ref: rfq?.code ?? 'Received' }
 }

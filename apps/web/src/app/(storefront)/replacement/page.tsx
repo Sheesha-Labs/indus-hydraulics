@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { buildBreadcrumbLd, buildCollectionLd, enquiryMailto } from '@indus/domain'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 import { getReplacementBrands } from '../../../lib/replacement-data'
 import { getStoreSettings } from '../../../lib/store-settings'
@@ -117,7 +117,7 @@ export default async function ReplacementIndexPage() {
         heading="Can't find the brand you're replacing?"
         body="Send us the part number or photo of the unit on the bench. Our applications team confirms interchangeability and lead time within one business day."
         whatsappUrl={buildWhatsappHref(settings.contactPhone, 'Enquiry: replacement part not in catalogue')}
-        emailUrl={buildMailtoHref(settings.contactEmail, 'Replacement enquiry')}
+        emailUrl={enquiryMailto({ subject: 'Replacement enquiry' })}
         phone={settings.contactPhone}
       />
     </div>

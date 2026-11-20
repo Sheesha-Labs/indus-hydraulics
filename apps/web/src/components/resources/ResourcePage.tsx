@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import { Card, Eyebrow, SpecList, Stat } from '@indus/ui'
-import { RESOURCES_LAST_CHECKED, type ResourceEntry } from '@indus/domain'
+import { RESOURCES_LAST_CHECKED, type ResourceEntry, enquiryMailto } from '@indus/domain'
 import { ArrowRightIcon } from '../designed/icons'
 import type { ResourceContact, ResourceCtaCopy } from '../../lib/resources-content'
 import { RESOURCE_GUTTER, RESOURCE_WIDTH, ResourceBreadcrumbStrip, ResourceCtaBand } from './ResourceLayout'
@@ -138,13 +138,13 @@ export default function ResourcePage({
                 <p className="mt-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
                   Send the part number or the measurements and we quote the same day.
                 </p>
-                <Link
-                  href="/quote"
+                <a
+                  href={enquiryMailto({ subject: `Enquiry from ${entry.title}` })}
                   className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
                 >
-                  Request a quote
+                  Email an enquiry
                   <ArrowRightIcon size={14} />
-                </Link>
+                </a>
               </Card>
             </div>
           </aside>

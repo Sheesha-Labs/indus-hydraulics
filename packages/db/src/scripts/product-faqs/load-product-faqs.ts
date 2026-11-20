@@ -65,7 +65,7 @@ type Facts = { products: FactsProduct[]; [k: string]: unknown }
 
 const TARGET = 12
 const MIN = 10
-const STATIC_PATHS = new Set(['/contact', '/quote', '/services', '/resources', '/brands', '/blog', '/markets'])
+const STATIC_PATHS = new Set(['/contact', '/services', '/resources', '/brands', '/blog', '/markets'])
 // Claims that need support in the facts before an answer may make them.
 const GUARDED_CLAIMS = [
   /\bAPI\s?(5CT|5L|6A|6D|7K|16A|16C|16D|17J|610)\b/gi,

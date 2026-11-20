@@ -13,7 +13,6 @@ import {
 } from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
-import MarketLandingLegacy from '../../../../components/markets/MarketLandingLegacy'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContent } from '../../../../lib/page-content'
 import { getArticlesForMarket } from '../../../../lib/related-reading'
@@ -153,16 +152,9 @@ export default async function MarketPage({ params }: Props) {
       : []),
   ].filter((node): node is NonNullable<typeof node> => node !== null)
 
-  if (!page) {
-    return (
-      <>
-        <JsonLd data={structuredData} />
-        {/* The call-back prompt defaults its dial code from this. */}
-        <span hidden data-callback-market={market.countryCode.toUpperCase()} />
-        <MarketLandingLegacy market={market} />
-      </>
-    )
-  }
+  // Every market has a released page record. One held back (released: false)
+  // is not ready to quote, so it is not served.
+  if (!page) notFound()
 
   const [clusters, brands, sectorImages, operationsImages, settings, guides] = await Promise.all([
     marketCatalogueClusters(),

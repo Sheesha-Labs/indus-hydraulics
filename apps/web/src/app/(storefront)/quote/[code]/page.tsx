@@ -125,7 +125,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   const urgencyLabel = URGENCY_LABELS[rfq.urgency] ?? rfq.urgency
   const urgencyColor = URGENCY_COLORS[rfq.urgency] ?? URGENCY_COLORS.routine!
 
-  // Fire `rfq_submitted` only on the first landing from /quote/submit
+  // Fire `rfq_submitted` only on a first landing flagged by the link (the retired /quote/submit set it)
   // (server action appends `?confirmed=1`). Subsequent visits to the
   // same RFQ status page don't emit a duplicate submission event.
   const isFreshSubmission = sp.confirmed === '1'

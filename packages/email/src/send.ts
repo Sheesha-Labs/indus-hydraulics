@@ -20,6 +20,8 @@ export type EmailKind =
   | 'newsletter_campaign'
   | 'callback_request'
   | 'callback_confirmation'
+  /** Every storefront enquiry form: to sales@ + purchase@, submitter in CC. */
+  | 'enquiry_received'
 
 export type EmailAttachment = {
   filename: string

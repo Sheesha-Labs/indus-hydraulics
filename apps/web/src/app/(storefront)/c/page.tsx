@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
 import { Breadcrumb, EmptyState, Button } from '@indus/ui'
-import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
+import { buildBreadcrumbLd, buildCollectionLd, enquiryMailto } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import { rollUpCounts } from '../../../lib/category-tree'
 import { mediaUrl } from '../../../lib/media'
@@ -121,7 +121,7 @@ export default async function CategoriesIndexPage() {
             message="The catalogue is being loaded. Tell us what you need and an engineer will source it."
             action={
               <Button asChild kind="primary">
-                <Link href="/quote/submit">Request a quote</Link>
+                <a href={enquiryMailto({ subject: 'Parts enquiry' })}>Email an enquiry</a>
               </Button>
             }
           />

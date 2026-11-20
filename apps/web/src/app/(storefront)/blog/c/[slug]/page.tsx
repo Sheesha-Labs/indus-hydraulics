@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import { buildBreadcrumbLd, buildCollectionLd, enquiryMailto, enquiryBody } from '@indus/domain'
+import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import BlogTopicHub from '../../../../../components/blog/BlogTopicHub'
 import { resolveBlogArticle } from '../../../../../lib/blog-article'
 import { getBlogTopics } from '../../../../../lib/blog-index'
@@ -92,7 +92,7 @@ export default async function BlogCategoryPage({ params }: Props) {
   const hubBody = category.bodyBlocks ? await resolveBlogArticle(category.bodyBlocks) : null
   const contact = {
     whatsappUrl: buildWhatsappHref(settings.contactPhone, `Enquiry: ${category.name}`),
-    emailUrl: buildMailtoHref(settings.contactEmail, `${category.name} — enquiry`),
+    emailUrl: enquiryMailto({ subject: `${category.name} — enquiry`, body: enquiryBody({ about: category.name, url: hubUrl }) }),
     phone: settings.contactPhone,
   }
 
