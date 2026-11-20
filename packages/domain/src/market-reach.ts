@@ -201,3 +201,61 @@ export function buildMarketReach(
     footnote: MARKET_REACH_FOOTNOTE,
   }
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Market page directory: the cross-region row
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * One market from each OTHER region, for the directory band on a market page.
+ *
+ * The band lists the page's own region in full, which leaves every region an
+ * island: no market page links outside its own region, so Bahrain and Kuwait
+ * are reachable only from the other seven Gulf pages and from `/markets`
+ * (crawled 2026-10-25 at the time of writing). This row is the bridge — one
+ * link per other region, eleven a page, never the 125-link mesh the band was
+ * cut down from.
+ *
+ * ASSIGNED, NOT HASHED. For each target region, the pages outside it are
+ * walked in `MARKETS` order and dealt that region's destinations round-robin,
+ * so every advertisable market receives inbound links from outside its region
+ * and the spread is as even as the arithmetic allows. A hash would leave the
+ * odd market with none, and that market would be exactly the one this exists
+ * for.
+ *
+ * Draws from the same pool as the reach sections — released pages only, never
+ * `REACH_EXCLUDED_MARKET_SLUGS` — so this row advertises nothing the rest of
+ * the site does not. The own-region list above it is a directory, not an
+ * advertisement, and keeps its existing links.
+ */
+export function marketRegionBridge(
+  marketSlug: string
+): Array<{ region: string; slug: string; name: string }> {
+  return MARKET_REGION_BRIDGES.get(marketSlug) ?? []
+}
+
+const MARKET_REGION_BRIDGES = buildRegionBridges()
+
+function buildRegionBridges(): Map<string, Array<{ region: string; slug: string; name: string }>> {
+  const regionOf = new Map<string, string>()
+  const slugByName = new Map(MARKETS.map((m) => [m.name, m.slug]))
+  for (const [region, names] of MARKET_REGIONS) {
+    for (const name of names) {
+      const slug = slugByName.get(name)
+      if (slug) regionOf.set(slug, region)
+    }
+  }
+
+  const out = new Map<string, Array<{ region: string; slug: string; name: string }>>()
+  for (const m of MARKETS) out.set(m.slug, [])
+
+  for (const [region, targets] of REGION_MARKETS) {
+    if (targets.length === 0) continue
+    const sources = MARKETS.filter((m) => regionOf.get(m.slug) !== region)
+    sources.forEach((source, i) => {
+      const target = targets[i % targets.length]!
+      out.get(source.slug)!.push({ region, slug: target.slug, name: target.name })
+    })
+  }
+  return out
+}
