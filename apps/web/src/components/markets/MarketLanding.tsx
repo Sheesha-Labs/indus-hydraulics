@@ -13,6 +13,7 @@ import {
   isRightToLeft,
   marketDestinationCount,
   marketOrderSequence,
+  marketRegionBridge,
   marketSlugByName,
   str,
   type Market,
@@ -93,6 +94,7 @@ export default function MarketLanding({
   const slugByName = marketSlugByName()
   const freightWidths = freightBarPercents(page.freight)
   const destinations = marketDestinationCount()
+  const bridge = marketRegionBridge(market.slug)
 
   const heroCopy = content.values('hero')
   const standardsCopy = content.values('standards')
@@ -689,6 +691,31 @@ export default function MarketLanding({
                   </div>
                 </div>
               ))}
+              {/*
+                One market from each other region, so no region is an island
+                that only its own pages and /markets link into. Assigned
+                round-robin in the domain so every market gets some; see
+                `marketRegionBridge`. One line of text, not another grid.
+              */}
+              {bridge.length > 0 && (
+                <p className="text-[12px] leading-[1.9] text-ih-muted">
+                  <span className="mr-2 text-[9.5px] uppercase tracking-[0.13em]">
+                    Further afield
+                  </span>
+                  {bridge.map((m, i) => (
+                    <Fragment key={m.slug}>
+                      {i > 0 && <span aria-hidden="true"> · </span>}
+                      <Link
+                        href={`/markets/${m.slug}`}
+                        title={m.region}
+                        className="text-ih-ink-2 transition-colors hover:text-ih-accent"
+                      >
+                        {m.name}
+                      </Link>
+                    </Fragment>
+                  ))}
+                </p>
+              )}
             </div>
           )
         })()}

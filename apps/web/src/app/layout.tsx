@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist, Instrument_Serif } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import VercelAnalytics from '../components/VercelTelemetry'
 import './globals.css'
 import { buildIconMetadata } from '../lib/brand-identity'
 import { getStoreSettings } from '../lib/store-settings'
@@ -100,7 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full flex flex-col bg-ih-bg text-ih-ink">
         {children}
-        <Analytics />
+        <VercelAnalytics />
       </body>
     </html>
   )

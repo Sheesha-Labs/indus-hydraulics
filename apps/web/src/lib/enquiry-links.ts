@@ -41,8 +41,3 @@ export function productEnquiryHref(product: { sku: string; title: string; url: s
     body: enquiryBody({ about: product.title, partNumber: product.sku, url: product.url }),
   })
 }
-
-/** The "Inquire" route on a product card: the email enquiry (owner decision, 2026-11-20). */
-export function inquireHref(product: { sku: string; title: string; url: string }): { href: string; external: boolean } {
-  return { href: productEnquiryHref(product), external: false }
-}

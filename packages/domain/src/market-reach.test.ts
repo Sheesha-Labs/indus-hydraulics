@@ -4,7 +4,12 @@ import { CATEGORY_REACH_PROFILES, categoryExportRegions } from './category-marke
 import { DESIGNED_PAGE_REACH_PROFILES, designedPageMarketReach } from './designed-page-market-reach'
 import { INDUSTRY_REACH_PROFILES, industryMarketReach } from './industry-market-reach'
 import { MARKET_REACH_PROFILES } from './blog-market-reach'
-import { REACH_EXCLUDED_MARKET_SLUGS, buildMarketReach, marketReachRegions } from './market-reach'
+import {
+  REACH_EXCLUDED_MARKET_SLUGS,
+  buildMarketReach,
+  marketReachRegions,
+  marketRegionBridge,
+} from './market-reach'
 import { MARKETS } from './markets'
 import { MARKET_REGIONS, releasedMarketPageSlugs } from './market-pages'
 import { SERVICE_CASE_REACH_PROFILES, serviceCaseMarketReach } from './service-case-market-reach'
@@ -27,6 +32,7 @@ const ALL_PROFILES: Array<
   ['blog', MARKET_REACH_PROFILES],
   ['service-case', SERVICE_CASE_REACH_PROFILES],
   ['industry', INDUSTRY_REACH_PROFILES],
+  ['category', CATEGORY_REACH_PROFILES],
 ]
 
 const EVERY_PROFILE = ALL_PROFILES.flatMap(([surface, profiles]) =>
@@ -271,6 +277,7 @@ describe('buildMarketReach', () => {
     for (const required of [
       'GCC & Middle East',
       'Western & Northern Europe',
+      'Central & South-East Europe',
       'North America & Caribbean',
       'East Africa',
       'West & Central Africa',
@@ -366,5 +373,111 @@ describe('surface entry points', () => {
         .join('|')
     )
     expect(new Set(fingerprints).size).toBe(fingerprints.length)
+  })
+})
+
+/**
+ * A census on 2026-11-20 found all 21 Central & South-East Europe markets —
+ * Turkey, Greece, Romania, the Balkans, the Baltics — with no link from any
+ * category page, because no root rotated that region. These pin the fix.
+ */
+describe('category reach into Europe', () => {
+  const EUROPE = ['Western & Northern Europe', 'Central & South-East Europe']
+
+  it('rotates both European regions on more than one root', () => {
+    for (const region of EUROPE) {
+      const roots = Object.entries(CATEGORY_REACH_PROFILES).filter(([, p]) =>
+        p.rotatingRegions.includes(region)
+      )
+      expect(roots.length, region).toBeGreaterThan(3)
+    }
+  })
+
+  it('names every advertisable European market from some category page', () => {
+    const named = new Set<string>()
+    for (const root of Object.keys(CATEGORY_REACH_PROFILES)) {
+      // A root plus forty synthetic children stands in for the live tree.
+      for (let i = 0; i < 40; i++) {
+        const out = categoryExportRegions(i === 0 ? root : `${root}-child-${i}`, root)
+        for (const g of out?.groups ?? []) for (const m of g.markets) named.add(m.slug)
+      }
+    }
+    const bySlug = new Map(MARKETS.map((m) => [m.name, m.slug]))
+    const excluded = new Set(REACH_EXCLUDED_MARKET_SLUGS)
+    const released = new Set(releasedMarketPageSlugs())
+    for (const [region, names] of MARKET_REGIONS) {
+      if (!EUROPE.includes(region)) continue
+      for (const name of names) {
+        const slug = bySlug.get(name)!
+        if (excluded.has(slug) || !released.has(slug)) continue
+        expect(named.has(slug), `${name} gets no category link`).toBe(true)
+      }
+    }
+  })
+
+  /**
+   * Freight-mode honesty: these roots' paragraphs talk about basins, campaigns
+   * and well-service spreads, or about lubricants Europe buys locally. Adding
+   * Europe to them would put a claim on the page that is not true there.
+   */
+  it('keeps Europe off the well-service and lubricant roots', () => {
+    for (const root of [
+      'fracturing-equipment',
+      'stimulation-equipment',
+      'cementing-equipment',
+      'well-testing-equipment',
+      'blowout-preventers',
+      'drilling-workover-systems',
+      'industrial-lubricant-suppliers-uae',
+    ]) {
+      const profile = CATEGORY_REACH_PROFILES[root]
+      expect(profile, root).toBeDefined()
+      for (const region of EUROPE) expect(profile!.rotatingRegions, root).not.toContain(region)
+    }
+  })
+})
+
+/**
+ * The market page directory lists its own region in full and, below it, one
+ * market from every other region. Without that row every region was an island.
+ */
+describe('marketRegionBridge', () => {
+  const bySlug = new Map(MARKETS.map((m) => [m.name, m.slug]))
+  const regionOf = new Map<string, string>()
+  for (const [region, names] of MARKET_REGIONS) for (const n of names) regionOf.set(bySlug.get(n)!, region)
+  const excluded = new Set(REACH_EXCLUDED_MARKET_SLUGS)
+  const released = new Set(releasedMarketPageSlugs())
+
+  it('links exactly one market in each other region, never its own', () => {
+    for (const m of MARKETS) {
+      const bridge = marketRegionBridge(m.slug)
+      const regions = bridge.map((b) => b.region)
+      expect(new Set(regions).size, m.slug).toBe(regions.length)
+      expect(regions, m.slug).not.toContain(regionOf.get(m.slug))
+      expect(regions.length, m.slug).toBe(MARKET_REGIONS.length - 1)
+      for (const b of bridge) expect(regionOf.get(b.slug), `${m.slug} -> ${b.slug}`).toBe(b.region)
+    }
+  })
+
+  it('never links an excluded or held market', () => {
+    for (const m of MARKETS) {
+      for (const b of marketRegionBridge(m.slug)) {
+        expect(excluded.has(b.slug), `${m.slug} -> ${b.slug}`).toBe(false)
+        expect(released.has(b.slug), `${m.slug} -> ${b.slug}`).toBe(true)
+      }
+    }
+  })
+
+  it('gives every advertisable market at least one link from outside its region', () => {
+    const inbound = new Map<string, number>()
+    for (const m of MARKETS) for (const b of marketRegionBridge(m.slug)) inbound.set(b.slug, (inbound.get(b.slug) ?? 0) + 1)
+    for (const m of MARKETS) {
+      if (excluded.has(m.slug) || !released.has(m.slug)) continue
+      expect(inbound.get(m.slug) ?? 0, m.slug).toBeGreaterThan(0)
+    }
+  })
+
+  it('returns nothing for an unknown market', () => {
+    expect(marketRegionBridge('atlantis')).toEqual([])
   })
 })
