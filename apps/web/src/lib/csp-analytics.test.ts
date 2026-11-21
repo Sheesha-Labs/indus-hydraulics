@@ -21,10 +21,7 @@ import { describe, expect, test } from 'vitest'
  * runs in CI with no server.
  */
 
-const PROXY = path.resolve(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '../proxy.ts',
-)
+const PROXY = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../proxy.ts')
 
 const src = readFileSync(PROXY, 'utf8')
 

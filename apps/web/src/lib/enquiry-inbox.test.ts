@@ -62,7 +62,14 @@ describe('sortInbox', () => {
       row({ ref: 'plant', urgency: 'plant_down', receivedAt: new Date(NOW - 0.1 * day) }),
       row({ ref: 'done-new', stage: 'closed', receivedAt: new Date(NOW - 2 * day) }),
     ]
-    expect(sortInbox(rows, NOW).map((r) => r.ref)).toEqual(['plant', 'tender-soon', 'routine-old', 'routine-new', 'done-new', 'done-old'])
+    expect(sortInbox(rows, NOW).map((r) => r.ref)).toEqual([
+      'plant',
+      'tender-soon',
+      'routine-old',
+      'routine-new',
+      'done-new',
+      'done-old',
+    ])
   })
 })
 

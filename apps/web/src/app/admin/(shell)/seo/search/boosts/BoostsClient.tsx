@@ -50,30 +50,34 @@ export default function BoostsClient({ rows: initialRows }: Props) {
 
   return (
     <div className="max-w-[860px]">
-      <div className="mb-6 max-w-[640px] text-[13px] text-ih-muted">
+      <div className="text-ih-muted mb-6 max-w-[640px] text-[13px]">
         Boosts multiply a product&apos;s rank score at search time.
         <strong> 1.0</strong> is neutral, <strong>{'>'}1</strong> lifts, <strong>{'<'}1</strong>{' '}
         buries, <strong>0</strong> effectively hides. Optional expiry auto-clears the boost.
       </div>
 
-      <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
-        <summary className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
+      <details className="border-ih-border bg-ih-surface mb-6 rounded-lg border p-4">
+        <summary className="text-ih-muted cursor-pointer text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           Add product boost
         </summary>
-        <form action={handleAdd} className="mt-3 grid grid-cols-[1fr_120px_180px_auto] gap-3 items-end">
+        <form
+          action={handleAdd}
+          className="mt-3 grid grid-cols-[1fr_120px_180px_auto] items-end gap-3"
+        >
           <div>
-            <label htmlFor="boost-sku" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="boost-sku"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Product SKU
             </label>
-            <Input
-              id="boost-sku"
-              name="sku"
-              type="text"
-              required
-              placeholder="ABC-1234" />
+            <Input id="boost-sku" name="sku" type="text" required placeholder="ABC-1234" />
           </div>
           <div>
-            <label htmlFor="boost-boost" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="boost-boost"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Boost (0–10)
             </label>
             <Input
@@ -84,21 +88,22 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               min={0}
               max={10}
               step={0.1}
-              defaultValue="1.5" />
+              defaultValue="1.5"
+            />
           </div>
           <div>
-            <label htmlFor="boost-expiresAt" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="boost-expiresAt"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Expires (optional)
             </label>
-            <Input
-              id="boost-expiresAt"
-              name="expiresAt"
-              type="datetime-local" />
+            <Input id="boost-expiresAt" name="expiresAt" type="datetime-local" />
           </div>
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] tabular-nums disabled:opacity-50"
           >
             Add
           </button>
@@ -106,20 +111,20 @@ export default function BoostsClient({ rows: initialRows }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink mb-4 text-[12px] tabular-nums" role="alert">
           {error}
         </p>
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center rounded-lg border border-ih-border">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted text-[13px]">No boosts configured.</p>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>Product</Th>
                 <Th>Boost</Th>
                 <Th>Expires</Th>
@@ -130,16 +135,16 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               {rows.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
                 >
                   <td className="px-3 py-3">
-                    <div className="text-ih-ink-2 truncate max-w-[400px]">{r.title}</div>
-                    <div className="tabular-nums text-[11px] text-ih-muted">{r.sku}</div>
+                    <div className="text-ih-ink-2 max-w-[400px] truncate">{r.title}</div>
+                    <div className="text-ih-muted text-[11px] tabular-nums">{r.sku}</div>
                   </td>
-                  <td className="px-3 py-3 text-[12px] text-ih-ink-2 tabular-nums">
+                  <td className="text-ih-ink-2 px-3 py-3 text-[12px] tabular-nums">
                     × {r.boost.toFixed(2)}
                   </td>
-                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted">
+                  <td className="text-ih-muted px-3 py-3 text-[11px] tabular-nums">
                     {r.expiresAt
                       ? new Date(r.expiresAt).toLocaleDateString('en-GB', {
                           day: 'numeric',
@@ -149,7 +154,12 @@ export default function BoostsClient({ rows: initialRows }: Props) {
                       : '—'}
                   </td>
                   <td className="px-3 py-3 text-right">
-                    <DeleteButton label={`Delete boost for ${r.sku}`} size="sm" onClick={() => handleDelete(r.id)} disabled={pending} />
+                    <DeleteButton
+                      label={`Delete boost for ${r.sku}`}
+                      size="sm"
+                      onClick={() => handleDelete(r.id)}
+                      disabled={pending}
+                    />
                   </td>
                 </tr>
               ))}
@@ -163,7 +173,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

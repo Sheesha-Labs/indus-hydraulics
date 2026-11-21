@@ -49,7 +49,10 @@ describe('pickProductMix', () => {
   })
 
   it('varies with the random source', () => {
-    const many: MixCandidate[] = Array.from({ length: 20 }, (_, i) => ({ id: `h${i}`, categoryId: 'hoses-leaf' }))
+    const many: MixCandidate[] = Array.from({ length: 20 }, (_, i) => ({
+      id: `h${i}`,
+      categoryId: 'hoses-leaf',
+    }))
     const a = pickProductMix(many, categories, 1, seq(0.01))[0]!.productId
     const b = pickProductMix(many, categories, 1, seq(0.99))[0]!.productId
     expect(a).not.toBe(b)

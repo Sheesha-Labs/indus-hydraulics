@@ -50,37 +50,43 @@ describe('pickFromSrcset', () => {
 
 describe('extractImageCandidates', () => {
   it('grabs <img> src', () => {
-    const $ = cheerio.load('<html><body><img src="/img/a.jpg" alt="A" width="600" height="400"></body></html>')
+    const $ = cheerio.load(
+      '<html><body><img src="/img/a.jpg" alt="A" width="600" height="400"></body></html>'
+    )
     const out = extractImageCandidates($, PAGE)
     expect(out).toEqual([{ url: 'https://example.com/img/a.jpg', alt: 'A' }])
   })
   it('prefers srcset (highest-res) over src', () => {
     const $ = cheerio.load(
-      `<html><body><img src="small.jpg" srcset="small.jpg 320w, big.jpg 1280w" width="600" height="600"></body></html>`,
+      `<html><body><img src="small.jpg" srcset="small.jpg 320w, big.jpg 1280w" width="600" height="600"></body></html>`
     )
     const out = extractImageCandidates($, PAGE)
     expect(out.map((i) => i.url)).toEqual(['https://example.com/products/big.jpg'])
   })
   it('falls back to data-src for lazy-loaded images', () => {
-    const $ = cheerio.load(`<html><body><img data-src="/lazy.jpg" width="600" height="600"></body></html>`)
+    const $ = cheerio.load(
+      `<html><body><img data-src="/lazy.jpg" width="600" height="600"></body></html>`
+    )
     const out = extractImageCandidates($, PAGE)
     expect(out.map((i) => i.url)).toEqual(['https://example.com/lazy.jpg'])
   })
   it('filters SVGs by extension', () => {
-    const $ = cheerio.load(`<html><body><img src="/logo.svg" width="600" height="600"></body></html>`)
+    const $ = cheerio.load(
+      `<html><body><img src="/logo.svg" width="600" height="600"></body></html>`
+    )
     const out = extractImageCandidates($, PAGE)
     expect(out).toEqual([])
   })
   it('filters icon-sized images (width or height < 100)', () => {
     const $ = cheerio.load(
-      `<html><body><img src="/icon.png" width="32" height="32"><img src="/real.png" width="600" height="600"></body></html>`,
+      `<html><body><img src="/icon.png" width="32" height="32"><img src="/real.png" width="600" height="600"></body></html>`
     )
     const out = extractImageCandidates($, PAGE)
     expect(out.map((i) => i.url)).toEqual(['https://example.com/real.png'])
   })
   it('deduplicates identical URLs', () => {
     const $ = cheerio.load(
-      `<html><body><img src="/a.jpg" width="600" height="600"><img src="/a.jpg" width="600" height="600"></body></html>`,
+      `<html><body><img src="/a.jpg" width="600" height="600"><img src="/a.jpg" width="600" height="600"></body></html>`
     )
     const out = extractImageCandidates($, PAGE)
     expect(out.length).toBe(1)
@@ -106,11 +112,7 @@ describe('isProbedImageAcceptable', () => {
   ])('accepts %s', (ct, expected) => {
     expect(isProbedImageAcceptable(ct)).toBe(expected)
   })
-  it.each([
-    ['image/svg+xml'],
-    ['text/html'],
-    ['application/octet-stream'],
-  ])('rejects %s', (ct) => {
+  it.each([['image/svg+xml'], ['text/html'], ['application/octet-stream']])('rejects %s', (ct) => {
     expect(isProbedImageAcceptable(ct)).toBe(false)
   })
   it('accepts undefined (unknown → trust until ingest)', () => {

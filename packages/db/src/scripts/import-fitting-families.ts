@@ -88,7 +88,10 @@ type Entry = {
 type Payload = { source: string; products: Entry[] }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 function mergeAliases(existing: string | null, additions: string[]): string {
@@ -116,7 +119,9 @@ async function main() {
   // site name renders it twice.
   const doubled = payload.products.filter((p) => /indus hydraulics/i.test(p.seoTitle))
   if (doubled.length > 0) {
-    throw new Error(`seoTitle must not contain the site name: ${doubled.map((p) => p.sku).join(', ')}`)
+    throw new Error(
+      `seoTitle must not contain the site name: ${doubled.map((p) => p.sku).join(', ')}`
+    )
   }
 
   let entries = payload.products
@@ -131,7 +136,7 @@ async function main() {
   })
   if (clashSlugs.length > 0) {
     throw new Error(
-      `slug already used by another product: ${clashSlugs.map((c) => `${c.slug} (${c.sku})`).join(', ')}`,
+      `slug already used by another product: ${clashSlugs.map((c) => `${c.slug} (${c.sku})`).join(', ')}`
     )
   }
   const clashParts = await db.productVariant.findMany({
@@ -145,7 +150,7 @@ async function main() {
     throw new Error(
       `part number already used by another product: ${clashParts
         .map((c) => `${c.partNumber} (${c.product.sku})`)
-        .join(', ')}`,
+        .join(', ')}`
     )
   }
 
@@ -158,7 +163,7 @@ async function main() {
   if (missingCategory.length > 0) {
     throw new Error(
       `category does not exist: ${missingCategory.join(', ')} — this importer does not create ` +
-        `categories, because where a new one sits in the megamenu is a decision, not a loop`,
+        `categories, because where a new one sits in the megamenu is a decision, not a loop`
     )
   }
   const categoryIdBySlug = new Map(categories.map((c) => [c.slug, c.id]))
@@ -169,9 +174,13 @@ async function main() {
     select: { id: true, slug: true, fields: { select: { id: true, key: true } } },
   })
   const missingTemplate = templateSlugs.filter((s) => !templates.some((t) => t.slug === s))
-  if (missingTemplate.length > 0) throw new Error(`missing spec template: ${missingTemplate.join(', ')}`)
+  if (missingTemplate.length > 0)
+    throw new Error(`missing spec template: ${missingTemplate.join(', ')}`)
   const templateBySlug = new Map(
-    templates.map((t) => [t.slug, { id: t.id, fieldByKey: new Map(t.fields.map((f) => [f.key, f.id])) }]),
+    templates.map((t) => [
+      t.slug,
+      { id: t.id, fieldByKey: new Map(t.fields.map((f) => [f.key, f.id])) },
+    ])
   )
 
   const brand = await db.brand.findUnique({ where: { slug: 'indus' }, select: { id: true } })
@@ -211,7 +220,7 @@ async function main() {
     if (dryRun) {
       console.log(
         `[dry-run] ${product ? 'update' : 'create'} ${e.sku} — ${e.title} ` +
-          `(${e.variants.length} sizes, from ${e.sourceFamily})`,
+          `(${e.variants.length} sizes, from ${e.sourceFamily})`
       )
       product ? updated++ : created++
       continue
@@ -329,7 +338,7 @@ async function main() {
           })),
         })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
     variantsWritten += e.variants.length
 
@@ -350,7 +359,9 @@ async function main() {
                 unit: s.unit,
                 position: s.position,
                 isFilterable: s.isFilterable,
-                templateFieldId: s.templateKey ? (template.fieldByKey.get(s.templateKey) ?? null) : null,
+                templateFieldId: s.templateKey
+                  ? (template.fieldByKey.get(s.templateKey) ?? null)
+                  : null,
               },
             })
           } else if (s.templateKey) {
@@ -398,19 +409,19 @@ async function main() {
           hasFocusKeyword: Boolean(product!.focusKeyword),
           hasSeoTitleAndDescription: Boolean(product!.seoTitle && product!.seoDescription),
           hasCommerceAttributes: Boolean(
-            product!.weightKg && product!.countryOfOrigin && product!.mpn,
+            product!.weightKg && product!.countryOfOrigin && product!.mpn
           ),
         })
         await tx.product.update({ where: { id: productId }, data: { contentScore: score.score } })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
   }
 
   console.log(
     `\n[${payloadName}] done — ${created} listings created, ${updated} updated, ` +
       `${variantsWritten} sizes written, ${imagesAttached} images attached, ` +
-      `${problems.length} problems`,
+      `${problems.length} problems`
   )
   if (!publish) console.log('  · listings are DRAFT — re-run with --publish to make them public.')
   if (withoutImage.length > 0) console.log(`  · no render available: ${withoutImage.join(', ')}`)

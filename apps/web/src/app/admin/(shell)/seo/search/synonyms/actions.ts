@@ -45,8 +45,8 @@ export async function upsertSynonymGroup(formData: FormData): Promise<Result<voi
         parsed.terms
           .split(/[,\n]/)
           .map((t) => t.trim().toLowerCase())
-          .filter((t) => t.length > 0 && t.length <= 80),
-      ),
+          .filter((t) => t.length > 0 && t.length <= 80)
+      )
     )
     if (terms.length === 0) {
       return failFromError(new Error('At least one term is required'))

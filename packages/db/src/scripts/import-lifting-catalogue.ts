@@ -127,7 +127,11 @@ type Entry = {
   /** `caption` is internal provenance (`Media.caption`), never rendered. */
   images: { file: string; alt: string; caption?: string | null }[]
   variants: Variant[]
-  crossReferences: { competitorBrand: string; competitorMpn: string; compatibility: CrossRefCompatibility }[]
+  crossReferences: {
+    competitorBrand: string
+    competitorMpn: string
+    compatibility: CrossRefCompatibility
+  }[]
   /** Commerce attributes, as the maker or source publishes them for the family's lead part number.
    *  Optional; when omitted the product's existing values are left alone. */
   mpn?: string | null
@@ -215,7 +219,10 @@ function objectKey(sku: string, alt: string, position: number): string {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 /**
@@ -232,7 +239,7 @@ function bandSections(c: CategoryEntry): StoredSection[] {
   if (written.length === 0) return []
   const byKey = new Map(written.map((s) => [s.key, s]))
   return CATEGORY_SECTIONS.map(
-    (def) => byKey.get(def.key) ?? ({ key: def.key, enabled: true, values: {} } as StoredSection),
+    (def) => byKey.get(def.key) ?? ({ key: def.key, enabled: true, values: {} } as StoredSection)
   )
 }
 
@@ -255,7 +262,10 @@ function bandSectionsWritten(c: CategoryEntry): StoredSection[] {
     sections.push({
       key: 'faq',
       enabled: true,
-      values: { heading: b.faq.heading ?? null, items: b.faq.items.map((i) => ({ q: i.q, a: i.a })) },
+      values: {
+        heading: b.faq.heading ?? null,
+        items: b.faq.items.map((i) => ({ q: i.q, a: i.a })),
+      },
     })
   }
   return sections
@@ -271,7 +281,8 @@ async function main() {
   const only = argv.find((a) => a.startsWith('--only='))?.split('=')[1] ?? null
   const within = argv.find((a) => a.startsWith('--within='))?.split('=')[1] ?? null
   const name = argv.find((a) => a.startsWith('--payload='))?.split('=')[1]
-  if (!name || !/^[a-z0-9-]+$/.test(name)) throw new Error('--payload=<folder under packages/db/data> is required')
+  if (!name || !/^[a-z0-9-]+$/.test(name))
+    throw new Error('--payload=<folder under packages/db/data> is required')
   const payloadPath = join(DATA_DIR, name, 'catalogue.json')
   if (!existsSync(payloadPath)) throw new Error(`payload not found: ${payloadPath}`)
   const payload: Payload = JSON.parse(readFileSync(payloadPath, 'utf8'))
@@ -294,14 +305,20 @@ async function main() {
       partNumbers.add(v.partNumber)
     }
     for (const img of e.images) {
-      if (!existsSync(join(payload.imageDir, img.file))) problems.push(`${e.sku}: image missing ${img.file}`)
+      if (!existsSync(join(payload.imageDir, img.file)))
+        problems.push(`${e.sku}: image missing ${img.file}`)
     }
   }
   const held = new Set(payload.hold ?? [])
-  for (const sku of held) if (!skus.has(sku)) problems.push(`hold names ${sku}, which is not in the payload`)
+  for (const sku of held)
+    if (!skus.has(sku)) problems.push(`hold names ${sku}, which is not in the payload`)
   for (const c of payload.categories) {
-    const result = validateSections(subPageDef('category', { name: c.name, slug: c.slug }), bandSections(c))
-    if (!result.ok) problems.push(`${c.slug}: bands invalid — ${result.issues.map((i) => i.message).join('; ')}`)
+    const result = validateSections(
+      subPageDef('category', { name: c.name, slug: c.slug }),
+      bandSections(c)
+    )
+    if (!result.ok)
+      problems.push(`${c.slug}: bands invalid — ${result.issues.map((i) => i.message).join('; ')}`)
   }
   if (problems.length > 0) {
     for (const p of problems) console.log(`  ! ${p}`)
@@ -312,20 +329,31 @@ async function main() {
   let templateId: string
   if (!payload.specTemplate) {
     if (!payload.specTemplateSlug) throw new Error('payload needs specTemplate or specTemplateSlug')
-    const t = await db.specTemplate.findUnique({ where: { slug: payload.specTemplateSlug }, select: { id: true } })
+    const t = await db.specTemplate.findUnique({
+      where: { slug: payload.specTemplateSlug },
+      select: { id: true },
+    })
     if (!t) throw new Error(`spec template ${payload.specTemplateSlug} does not exist`)
     templateId = t.id
     console.log(`[template] using existing ${payload.specTemplateSlug}`)
   } else if (dryRun) {
-    const t = await db.specTemplate.findUnique({ where: { slug: payload.specTemplate.slug }, select: { id: true } })
+    const t = await db.specTemplate.findUnique({
+      where: { slug: payload.specTemplate.slug },
+      select: { id: true },
+    })
     templateId = t?.id ?? 'dry-run'
     console.log(`[dry-run] ${t ? 'update' : 'create'} spec template ${payload.specTemplate.slug}`)
   } else {
     const r = await upsertSpecTemplate(payload.specTemplate!, db)
     templateId = r.id
-    console.log(`[template] ${r.outcome} ${r.slug} (${r.fieldsCreated} fields created, ${r.fieldsUpdated} updated)`)
+    console.log(
+      `[template] ${r.outcome} ${r.slug} (${r.fieldsCreated} fields created, ${r.fieldsUpdated} updated)`
+    )
   }
-  const fields = await db.specTemplateField.findMany({ where: { templateId }, select: { id: true, key: true } })
+  const fields = await db.specTemplateField.findMany({
+    where: { templateId },
+    select: { id: true, key: true },
+  })
   const fieldByKey = new Map(fields.map((f) => [f.key, f.id]))
 
   // ── Categories, parent before child ───────────────────────────────────────
@@ -334,17 +362,20 @@ async function main() {
   const publishable = new Set<string>()
   for (const e of payload.products) {
     if (held.has(e.sku)) continue
-    for (let s: string | null | undefined = e.category; s; s = parentBySlug.get(s)) publishable.add(s)
+    for (let s: string | null | undefined = e.category; s; s = parentBySlug.get(s))
+      publishable.add(s)
   }
   const categoryIdBySlug = new Map<string, string>()
   for (const c of payload.categories) {
     const existing = await db.category.findUnique({ where: { slug: c.slug }, select: { id: true } })
     const parentId: string | null = c.parentSlug
       ? (categoryIdBySlug.get(c.parentSlug) ??
-        (await db.category.findUnique({ where: { slug: c.parentSlug }, select: { id: true } }))?.id ??
+        (await db.category.findUnique({ where: { slug: c.parentSlug }, select: { id: true } }))
+          ?.id ??
         null)
       : null
-    if (c.parentSlug && !parentId && !dryRun) throw new Error(`parent category ${c.parentSlug} does not exist`)
+    if (c.parentSlug && !parentId && !dryRun)
+      throw new Error(`parent category ${c.parentSlug} does not exist`)
     const data = {
       name: c.name,
       position: c.position,
@@ -355,7 +386,9 @@ async function main() {
       defaultSpecTemplateId: templateId === 'dry-run' ? null : templateId,
     }
     if (dryRun) {
-      console.log(`[dry-run] ${existing ? (rewriteCategories ? 'rewrite' : 'keep') : 'create'} category ${c.slug}`)
+      console.log(
+        `[dry-run] ${existing ? (rewriteCategories ? 'rewrite' : 'keep') : 'create'} category ${c.slug}`
+      )
       categoryIdBySlug.set(c.slug, existing?.id ?? `dry-run:${c.slug}`)
       continue
     }
@@ -393,7 +426,9 @@ async function main() {
 
   // ── Products ──────────────────────────────────────────────────────────────
   const brandIds = new Map<string, string>()
-  for (const slug of new Set([payload.brandSlug, ...payload.products.map((e) => e.brandSlug)].filter((s): s is string => !!s))) {
+  for (const slug of new Set(
+    [payload.brandSlug, ...payload.products.map((e) => e.brandSlug)].filter((s): s is string => !!s)
+  )) {
     const b = await db.brand.findUnique({ where: { slug }, select: { id: true } })
     if (!b) throw new Error(`brand ${slug} does not exist`)
     brandIds.set(slug, b.id)
@@ -474,9 +509,13 @@ async function main() {
       async (tx) => {
         await tx.productSpec.deleteMany({ where: { productId } })
         await tx.productFaq.deleteMany({ where: { productId } })
-        const oldVariants = (await tx.productVariant.findMany({ where: { productId }, select: { id: true } })).map((v) => v.id)
+        const oldVariants = (
+          await tx.productVariant.findMany({ where: { productId }, select: { id: true } })
+        ).map((v) => v.id)
         for (let i = 0; i < oldVariants.length; i += 200) {
-          await tx.productVariant.deleteMany({ where: { id: { in: oldVariants.slice(i, i + 200) } } })
+          await tx.productVariant.deleteMany({
+            where: { id: { in: oldVariants.slice(i, i + 200) } },
+          })
         }
         await tx.productCrossReference.deleteMany({ where: { productId } })
         await tx.productSpec.createMany({
@@ -492,7 +531,12 @@ async function main() {
           })),
         })
         await tx.productFaq.createMany({
-          data: e.faqs.map((f, i) => ({ productId, question: f.question, answer: f.answer, position: i })),
+          data: e.faqs.map((f, i) => ({
+            productId,
+            question: f.question,
+            answer: f.answer,
+            position: i,
+          })),
         })
         // In batches: every variant row fires the parent-product trigger, and one insert of ~1,000 rows
         // has run past the database's statement timeout.
@@ -564,7 +608,9 @@ async function main() {
             },
             select: { id: true },
           })
-          await tx.productImage.create({ data: { productId, mediaId: media.id, position, alt: img.alt } })
+          await tx.productImage.create({
+            data: { productId, mediaId: media.id, position, alt: img.alt },
+          })
         },
         { maxWait: 30_000, timeout: 30_000 }
       )
@@ -572,28 +618,29 @@ async function main() {
     }
 
     // ── Content score, same inputs as the admin editor ───────────────────────
-    const [faqCount, specCount, documentCount, imageCount, crossReferenceCount, fresh] = await Promise.all([
-      db.productFaq.count({ where: { productId } }),
-      db.productSpec.count({ where: { productId } }),
-      db.productDocument.count({ where: { productId } }),
-      db.productImage.count({ where: { productId } }),
-      db.productCrossReference.count({ where: { productId } }),
-      db.product.findUnique({
-        where: { id: productId },
-        select: {
-          brandId: true,
-          categoryId: true,
-          focusKeyword: true,
-          seoTitle: true,
-          seoDescription: true,
-          descriptionShort: true,
-          descriptionLong: true,
-          weightKg: true,
-          countryOfOrigin: true,
-          mpn: true,
-        },
-      }),
-    ])
+    const [faqCount, specCount, documentCount, imageCount, crossReferenceCount, fresh] =
+      await Promise.all([
+        db.productFaq.count({ where: { productId } }),
+        db.productSpec.count({ where: { productId } }),
+        db.productDocument.count({ where: { productId } }),
+        db.productImage.count({ where: { productId } }),
+        db.productCrossReference.count({ where: { productId } }),
+        db.product.findUnique({
+          where: { id: productId },
+          select: {
+            brandId: true,
+            categoryId: true,
+            focusKeyword: true,
+            seoTitle: true,
+            seoDescription: true,
+            descriptionShort: true,
+            descriptionLong: true,
+            weightKg: true,
+            countryOfOrigin: true,
+            mpn: true,
+          },
+        }),
+      ])
     const score = scoreProductContent({
       descriptionShortWords: words(fresh!.descriptionShort ?? ''),
       descriptionLongWords: words(fresh!.descriptionLong ?? ''),

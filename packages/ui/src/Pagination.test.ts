@@ -54,7 +54,10 @@ describe('pageRange', () => {
       for (let current = 1; current <= total; current++) {
         const nums = numbersOf(pageRange(current, total))
         expect(new Set(nums).size, `duplicate at page ${current} of ${total}`).toBe(nums.length)
-        expect([...nums].sort((a, b) => a - b), `unsorted at ${current}/${total}`).toEqual(nums)
+        expect(
+          [...nums].sort((a, b) => a - b),
+          `unsorted at ${current}/${total}`
+        ).toEqual(nums)
       }
     }
   })

@@ -42,7 +42,7 @@ export default function CreateMenuButton({ missing }: Props) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
+        className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[13px] font-medium"
       >
         + New menu
       </button>
@@ -50,14 +50,14 @@ export default function CreateMenuButton({ missing }: Props) {
   }
 
   return (
-    <div className="rounded-lg bg-ih-surface border border-ih-border p-4 flex flex-col gap-3 w-[420px]">
+    <div className="bg-ih-surface border-ih-border flex w-[420px] flex-col gap-3 rounded-lg border p-4">
       <div className="text-[14px] font-medium">Create menu</div>
       <label className="flex flex-col gap-1 text-[12px]">
         <span className="text-ih-muted">Location</span>
         <select
           value={location}
           onChange={(e) => setLocation(e.target.value as MenuLocation)}
-          className="rounded-md h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+          className="border-ih-border bg-ih-surface h-9 rounded-md border px-3 text-[13px]"
         >
           {missing.map((loc) => (
             <option key={loc} value={loc}>
@@ -72,19 +72,19 @@ export default function CreateMenuButton({ missing }: Props) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder={MENU_LOCATION_LABELS[location]}
-          className="rounded-md h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+          className="border-ih-border bg-ih-surface h-9 rounded-md border px-3 text-[13px]"
         />
       </label>
       {error ? (
-        <p role="alert" className="text-[12px] text-ih-danger">
+        <p role="alert" className="text-ih-danger text-[12px]">
           {error}
         </p>
       ) : null}
-      <div className="flex gap-2 justify-end">
+      <div className="flex justify-end gap-2">
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="rounded-md h-9 px-4 border border-ih-border text-[13px]"
+          className="border-ih-border h-9 rounded-md border px-4 text-[13px]"
           disabled={pending}
         >
           Cancel
@@ -93,7 +93,7 @@ export default function CreateMenuButton({ missing }: Props) {
           type="button"
           onClick={submit}
           disabled={pending}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg h-9 px-4 text-[13px] disabled:opacity-50"
         >
           {pending ? 'Creating…' : 'Create'}
         </button>

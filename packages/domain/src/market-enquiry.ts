@@ -40,9 +40,7 @@ const URGENCY_BY_NEEDED_BY: Record<MarketUrgencyOption, 'routine' | 'priority'> 
  * pages; one merged number says nothing.
  */
 export type MarketEnquirySource =
-  | 'market_quote_form'
-  | 'market_quick_enquiry'
-  | 'markets_index_enquiry'
+  'market_quote_form' | 'market_quick_enquiry' | 'markets_index_enquiry'
 
 export function enquiryUrgency(neededBy: string | null): 'routine' | 'priority' {
   if (!neededBy) return 'routine'
@@ -118,7 +116,9 @@ export function buildApplicationContext(input: ApplicationContextInput): string 
     // An index enquiry names a destination we may not ship to yet. Saying so
     // in the first two lines is what stops the desk quoting a lane before
     // anyone has checked there is one.
-    input.countryCode ? null : 'Destination typed by the buyer — not a listed market. Confirm the lane before quoting.',
+    input.countryCode
+      ? null
+      : 'Destination typed by the buyer — not a listed market. Confirm the lane before quoting.',
     input.deliveryCity ? `Delivery city: ${input.deliveryCity}` : null,
     input.neededBy ? `Needed by: ${input.neededBy}` : null,
     input.wantsChecklist ? `Wants the ${input.marketName} conformity checklist` : null,

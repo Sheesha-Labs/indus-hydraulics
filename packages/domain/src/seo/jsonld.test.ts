@@ -73,7 +73,7 @@ describe('buildProductLd', () => {
     expect(buildProductLd({ ...base, variants: [] }).additionalProperty).toBeUndefined()
     expect(buildProductLd({ ...base, variants: null }).additionalProperty).toBeUndefined()
     expect(
-      buildProductLd({ ...base, variants: [{ sku: 'IH-1-04', name: '1/4"' }] }).additionalProperty,
+      buildProductLd({ ...base, variants: [{ sku: 'IH-1-04', name: '1/4"' }] }).additionalProperty
     ).toBeUndefined()
   })
 
@@ -149,7 +149,9 @@ describe('buildProductLd', () => {
     })
     const offer = ld.offers as Record<string, unknown>
     expect(offer.availability).toBe('https://schema.org/InStock')
-    expect((offer.seller as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
+    expect((offer.seller as Record<string, unknown>)['@id']).toBe(
+      'https://example.com#organization'
+    )
   })
 
   it('emits priceValidUntil and itemCondition when provided', () => {
@@ -190,11 +192,17 @@ describe('buildArticleLd', () => {
       publisherLogoUrl: 'https://cdn/logo.png',
     })
     expect(ld['@type']).toBe('Article')
-    expect((ld.mainEntityOfPage as Record<string, unknown>)['@id']).toBe('https://example.com/blog/foo')
+    expect((ld.mainEntityOfPage as Record<string, unknown>)['@id']).toBe(
+      'https://example.com/blog/foo'
+    )
     expect(ld.inLanguage).toBe('en')
     expect((ld.author as Record<string, unknown>).url).toBe('https://example.com/team/sunil')
-    expect((ld.publisher as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
-    expect(((ld.publisher as Record<string, unknown>).logo as Record<string, unknown>).url).toBe('https://cdn/logo.png')
+    expect((ld.publisher as Record<string, unknown>)['@id']).toBe(
+      'https://example.com#organization'
+    )
+    expect(((ld.publisher as Record<string, unknown>).logo as Record<string, unknown>).url).toBe(
+      'https://cdn/logo.png'
+    )
     expect(ld.dateModified).toBe('2026-05-01T00:00:00.000Z')
   })
 })
@@ -393,7 +401,9 @@ describe('buildLocalBusinessLd', () => {
     expect(ld['@id']).toBe('https://example.com#location-dubai-hq')
     expect((ld.address as Record<string, unknown>).addressLocality).toBe('Dubai')
     expect(ld.openingHours).toEqual(['Mo-Sa 09:00-18:00'])
-    expect((ld.parentOrganization as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
+    expect((ld.parentOrganization as Record<string, unknown>)['@id']).toBe(
+      'https://example.com#organization'
+    )
   })
 
   it('honours custom subtype', () => {
@@ -463,7 +473,10 @@ describe('buildServiceLd', () => {
   })
 
   it('maps areaServed to AdministrativeArea entries', () => {
-    const ld = buildServiceLd({ ...base, areaServed: ['Dubai', 'Fujairah'] }) as Record<string, unknown>
+    const ld = buildServiceLd({ ...base, areaServed: ['Dubai', 'Fujairah'] }) as Record<
+      string,
+      unknown
+    >
     expect(ld.areaServed).toEqual([
       { '@type': 'AdministrativeArea', name: 'Dubai' },
       { '@type': 'AdministrativeArea', name: 'Fujairah' },

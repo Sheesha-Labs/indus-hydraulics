@@ -7,8 +7,8 @@ describe('buildItemSignature — canonicalisation', () => {
     expect(
       sameSignature(
         'GATE VALVE 6 INCH 300LB CAST STEEL FLANGED WITH 3.1 MTC',
-        '6" 300# CAST STEEL GATE VALVE, FLANGED, EN 10204 3.1',
-      ),
+        '6" 300# CAST STEEL GATE VALVE, FLANGED, EN 10204 3.1'
+      )
     ).toBe(true)
   })
 
@@ -95,7 +95,7 @@ describe('buildItemSignature — materials and standards', () => {
 describe('buildItemSignature — commodity key hygiene', () => {
   it('drops stopwords and procurement filler', () => {
     expect(buildItemSignature('SUPPLY OF 10 NOS GASKET SET FOR MAIN PUMP').commodityKey).toBe(
-      'gasket main pump',
+      'gasket main pump'
     )
   })
 

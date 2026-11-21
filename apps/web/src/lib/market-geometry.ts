@@ -168,7 +168,11 @@ export function buildMarketMapModel(page: MarketPage, countryName: string): Mark
     type: 'FeatureCollection' as const,
     features: [
       target,
-      { type: 'Feature' as const, properties: {}, geometry: { type: 'Point' as const, coordinates: anchor } },
+      {
+        type: 'Feature' as const,
+        properties: {},
+        geometry: { type: 'Point' as const, coordinates: anchor },
+      },
     ],
   }
 
@@ -214,7 +218,8 @@ export function buildMarketMapModel(page: MarketPage, countryName: string): Mark
     near = countryFeatures().filter(
       (f) =>
         f !== target &&
-        geoDistance(geoCentroid(f as unknown as GeoPermissibleObjects), targetCentroid) < NEIGHBOUR_RADIUS
+        geoDistance(geoCentroid(f as unknown as GeoPermissibleObjects), targetCentroid) <
+          NEIGHBOUR_RADIUS
     )
     neighbourCache.set(cacheKey, near)
   }
@@ -320,7 +325,11 @@ export function buildMarketMapModel(page: MarketPage, countryName: string): Mark
         }
       }),
     origin: originInFrame
-      ? { x: originPoint[0], y: originPoint[1], label: originLabel(originPoint, crossingPoint, map) }
+      ? {
+          x: originPoint[0],
+          y: originPoint[1],
+          label: originLabel(originPoint, crossingPoint, map),
+        }
       : null,
     originLabel: map.originLabel,
     lonTicks: ticksBetween(lonFrom, lonTo, step)

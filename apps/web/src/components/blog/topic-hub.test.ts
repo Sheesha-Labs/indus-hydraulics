@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import type { BlogBlock } from '@indus/domain'
-import { byQuickest, groupByMonth, planHubBlocks, splitStartHere, type HubListItem } from './topic-hub'
+import {
+  byQuickest,
+  groupByMonth,
+  planHubBlocks,
+  splitStartHere,
+  type HubListItem,
+} from './topic-hub'
 
 const b = (type: string) => ({ type }) as unknown as BlogBlock
 
@@ -60,7 +66,11 @@ describe('splitStartHere', () => {
 
 describe('groupByMonth', () => {
   it('groups newest-first rows by month in order', () => {
-    const groups = groupByMonth([item('a', '2026-10', 3), item('b', '2026-10', 5), item('c', '2026-09', 4)])
+    const groups = groupByMonth([
+      item('a', '2026-10', 3),
+      item('b', '2026-10', 5),
+      item('c', '2026-09', 4),
+    ])
     expect(groups.map((g) => [g.key, g.items.map((i) => i.slug)])).toEqual([
       ['2026-10', ['a', 'b']],
       ['2026-09', ['c']],
@@ -71,7 +81,12 @@ describe('groupByMonth', () => {
 
 describe('byQuickest', () => {
   it('sorts by minutes ascending, stable on ties, unknown last', () => {
-    const sorted = byQuickest([item('a', null, 6), item('b', null, null), item('c', null, 3), item('d', null, 6)])
+    const sorted = byQuickest([
+      item('a', null, 6),
+      item('b', null, null),
+      item('c', null, 3),
+      item('d', null, 6),
+    ])
     expect(sorted.map((i) => i.slug)).toEqual(['c', 'a', 'd', 'b'])
   })
 })

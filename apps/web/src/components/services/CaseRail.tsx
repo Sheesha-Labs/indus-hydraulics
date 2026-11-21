@@ -1,9 +1,5 @@
 import Link from 'next/link'
-import {
-  DownloadsSchema,
-  GalleryImageIdsSchema,
-  SpecsAtGlanceSchema,
-} from '@indus/domain'
+import { DownloadsSchema, GalleryImageIdsSchema, SpecsAtGlanceSchema } from '@indus/domain'
 import PlaceholderImage from './PlaceholderImage'
 import { mediaUrl } from '../../lib/media'
 
@@ -36,9 +32,9 @@ export default function CaseRail(props: Props) {
 
   return (
     <aside className="space-y-3.5">
-      {(props.ctaCardTitle || props.ctaCardBody) ? (
-        <div className="rounded-sm border border-ih-ink bg-ih-navy p-4.5 font-sans text-white">
-          <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-ih-steel">
+      {props.ctaCardTitle || props.ctaCardBody ? (
+        <div className="border-ih-ink bg-ih-navy rounded-sm border p-4.5 font-sans text-white">
+          <div className="text-ih-steel mb-3 text-[11px] font-semibold tracking-[0.1em] uppercase">
             Quote a similar job
           </div>
           {props.ctaCardTitle ? (
@@ -55,7 +51,7 @@ export default function CaseRail(props: Props) {
               not a parts shortlist (owner call, 2026-11-19). */}
           <Link
             href="/contact"
-            className="mt-3 block w-full rounded-sm bg-ih-accent px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-ih-accent-hover"
+            className="bg-ih-accent hover:bg-ih-accent-hover mt-3 block w-full rounded-sm px-3 py-2.5 text-center text-sm font-medium text-white"
           >
             Open a service ticket
           </Link>
@@ -71,15 +67,15 @@ export default function CaseRail(props: Props) {
       ) : null}
 
       {props.pullQuoteText ? (
-        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
+        <div className="border-ih-border bg-ih-surface rounded-sm border p-4.5">
+          <div className="mono text-ih-muted-2 mb-3 text-[10px] tracking-[0.12em] uppercase">
             From the field
           </div>
-          <p className="m-0 mb-3 font-serif text-[15px] italic leading-[1.5] text-ih-ink">
+          <p className="text-ih-ink m-0 mb-3 font-serif text-[15px] leading-[1.5] italic">
             “{props.pullQuoteText}”
           </p>
-          {(props.pullQuoteAuthor || props.pullQuoteRole) ? (
-            <div className="flex items-center gap-2.5 border-t border-ih-border pt-3">
+          {props.pullQuoteAuthor || props.pullQuoteRole ? (
+            <div className="border-ih-border flex items-center gap-2.5 border-t pt-3">
               {/* The site favicon, as on the /services featured card. */}
               {/* eslint-disable-next-line @next/next/no-img-element -- a route-served brand mark, not an optimisable asset */}
               <img
@@ -87,12 +83,14 @@ export default function CaseRail(props: Props) {
                 alt=""
                 width={32}
                 height={32}
-                className="size-8 shrink-0 rounded-full border border-ih-border bg-ih-surface object-contain p-1"
+                className="border-ih-border bg-ih-surface size-8 shrink-0 rounded-full border object-contain p-1"
               />
               <div>
-                {props.pullQuoteAuthor ? <strong className="text-[13px] font-medium">{props.pullQuoteAuthor}</strong> : null}
-                {(props.pullQuoteRole || props.pullQuoteLocation) ? (
-                  <small className="mono mt-0.5 block text-[10px] uppercase tracking-[0.06em] text-ih-muted">
+                {props.pullQuoteAuthor ? (
+                  <strong className="text-[13px] font-medium">{props.pullQuoteAuthor}</strong>
+                ) : null}
+                {props.pullQuoteRole || props.pullQuoteLocation ? (
+                  <small className="mono text-ih-muted mt-0.5 block text-[10px] tracking-[0.06em] uppercase">
                     {[props.pullQuoteRole, props.pullQuoteLocation].filter(Boolean).join(' · ')}
                   </small>
                 ) : null}
@@ -103,8 +101,8 @@ export default function CaseRail(props: Props) {
       ) : null}
 
       {specs.length > 0 ? (
-        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
+        <div className="border-ih-border bg-ih-surface rounded-sm border p-4.5">
+          <div className="mono text-ih-muted-2 mb-3 text-[10px] tracking-[0.12em] uppercase">
             Specs at a glance
           </div>
           <table className="mono w-full border-collapse text-[11.5px]">
@@ -112,15 +110,15 @@ export default function CaseRail(props: Props) {
               {specs.map((row, i) => (
                 <tr key={i}>
                   <td
-                    className={`py-1.5 text-ih-muted ${
-                      i > 0 ? 'border-t border-dashed border-ih-border' : ''
+                    className={`text-ih-muted py-1.5 ${
+                      i > 0 ? 'border-ih-border border-t border-dashed' : ''
                     }`}
                   >
                     {row.label}
                   </td>
                   <td
                     className={`py-1.5 text-right ${
-                      i > 0 ? 'border-t border-dashed border-ih-border' : ''
+                      i > 0 ? 'border-ih-border border-t border-dashed' : ''
                     }`}
                   >
                     {row.value}
@@ -133,8 +131,8 @@ export default function CaseRail(props: Props) {
       ) : null}
 
       {props.galleryThumbs.length > 0 ? (
-        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
+        <div className="border-ih-border bg-ih-surface rounded-sm border p-4.5">
+          <div className="mono text-ih-muted-2 mb-3 text-[10px] tracking-[0.12em] uppercase">
             From the case file
           </div>
           <div className="grid grid-cols-2 gap-1.5">
@@ -144,7 +142,7 @@ export default function CaseRail(props: Props) {
                 storagePath={t.storagePath}
                 alt={t.alt ?? `Case figure ${i + 1}`}
                 placeholderLabel={`FIG.0${i + 1}`}
-                className="aspect-square border border-ih-border"
+                className="border-ih-border aspect-square border"
                 sizes="120px"
               />
             ))}
@@ -152,7 +150,7 @@ export default function CaseRail(props: Props) {
           {props.galleryTotalCount > 6 ? (
             <Link
               href="#"
-              className="mt-2.5 block rounded-sm border border-ih-border bg-ih-bg px-3 py-2 text-center text-xs hover:border-ih-accent"
+              className="border-ih-border bg-ih-bg hover:border-ih-accent mt-2.5 block rounded-sm border px-3 py-2 text-center text-xs"
             >
               View {props.galleryTotalCount} photos →
             </Link>
@@ -161,8 +159,8 @@ export default function CaseRail(props: Props) {
       ) : galleryIds.length > 0 ? null : null}
 
       {downloads.length > 0 ? (
-        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
+        <div className="border-ih-border bg-ih-surface rounded-sm border p-4.5">
+          <div className="mono text-ih-muted-2 mb-3 text-[10px] tracking-[0.12em] uppercase">
             Downloads
           </div>
           <ul className="mono space-y-0 text-[11.5px]">
@@ -170,7 +168,7 @@ export default function CaseRail(props: Props) {
               <li
                 key={i}
                 className={`flex justify-between py-2 ${
-                  i < downloads.length - 1 ? 'border-b border-dashed border-ih-border' : ''
+                  i < downloads.length - 1 ? 'border-ih-border border-b border-dashed' : ''
                 }`}
               >
                 <a

@@ -96,7 +96,7 @@ export function pickFromSrcset(srcset: string): string | null {
 export function extractImageCandidates(
   $: CheerioAPI,
   pageUrl: string,
-  scopeSelector?: string,
+  scopeSelector?: string
 ): ExtractedImage[] {
   const root = scopeSelector ? $(scopeSelector) : $.root()
   const seen = new Set<string>()

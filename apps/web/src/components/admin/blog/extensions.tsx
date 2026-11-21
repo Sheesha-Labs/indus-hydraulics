@@ -1,10 +1,6 @@
 import { Node, mergeAttributes } from '@tiptap/core'
 import Heading from '@tiptap/extension-heading'
-import {
-  NodeViewWrapper,
-  ReactNodeViewRenderer,
-  type NodeViewProps,
-} from '@tiptap/react'
+import { NodeViewWrapper, ReactNodeViewRenderer, type NodeViewProps } from '@tiptap/react'
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Pencil, Trash2 } from 'lucide-react'
@@ -303,14 +299,14 @@ function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: N
       data-drag-handle
     >
       <div className="min-w-0 flex-1">
-        <div className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-accent">
+        <div className="text-ih-accent text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
           {summary.label}
         </div>
-        <div className="mt-1 truncate text-[13px] text-ih-ink-2">{summary.detail}</div>
+        <div className="text-ih-ink-2 mt-1 truncate text-[13px]">{summary.detail}</div>
         {!spec && (
-          <div className="mt-1.5 text-[11px] text-ih-muted-2">
-            This build has no form for a block of this type — it is carried through unchanged.
-            Drag to move it, or delete it.
+          <div className="text-ih-muted-2 mt-1.5 text-[11px]">
+            This build has no form for a block of this type — it is carried through unchanged. Drag
+            to move it, or delete it.
           </div>
         )}
       </div>
@@ -322,7 +318,7 @@ function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: N
             onClick={() => setEditing(true)}
             aria-label={`Edit ${summary.label} block`}
             title={`Edit ${summary.label} block`}
-            className="flex h-7 w-7 items-center justify-center rounded-md text-ih-muted transition-colors hover:bg-ih-surface hover:text-ih-accent"
+            className="text-ih-muted hover:bg-ih-surface hover:text-ih-accent flex h-7 w-7 items-center justify-center rounded-md transition-colors"
           >
             <Pencil size={14} strokeWidth={1.7} />
           </button>
@@ -332,7 +328,7 @@ function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: N
           onClick={deleteNode}
           aria-label={`Delete ${summary.label} block`}
           title={`Delete ${summary.label} block`}
-          className="flex h-7 w-7 items-center justify-center rounded-md text-ih-muted transition-colors hover:bg-ih-danger-soft hover:text-ih-danger"
+          className="text-ih-muted hover:bg-ih-danger-soft hover:text-ih-danger flex h-7 w-7 items-center justify-center rounded-md transition-colors"
         >
           <Trash2 size={14} strokeWidth={1.7} />
         </button>
@@ -360,7 +356,7 @@ function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: N
                 setEditing(false)
               }}
             />,
-            document.body,
+            document.body
           )
         : null}
     </NodeViewWrapper>

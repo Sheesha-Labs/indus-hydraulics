@@ -19,9 +19,16 @@ interface Props {
   /** Recent images for the picker. Loaded server-side. */
   recent: RecentMedia[]
   /** Server action invoked when the user uploads a new file. */
-  uploadAction: (formData: FormData) => Promise<Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>>
+  uploadAction: (
+    formData: FormData
+  ) => Promise<
+    Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>
+  >
   /** Called whenever the selection changes. Parent stores the id in form state. */
-  onChange: (value: string | null, preview: { storagePath: string; alt: string | null } | null) => void
+  onChange: (
+    value: string | null,
+    preview: { storagePath: string; alt: string | null } | null
+  ) => void
   /** What the picker says when nothing is selected. Defaults to the OG-image wording. */
   emptyLabel?: string
   /** Hint line under the picker. Defaults to the OG-image sizing guidance. */
@@ -95,10 +102,14 @@ export default function OgImagePicker({
         upload control was a keyboard-unreachable <label> styled as a chip.
       */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-        <div className="grid aspect-[4/3] w-full shrink-0 place-items-center overflow-hidden rounded-md border border-ih-border bg-ih-surface-2 sm:w-40">
+        <div className="border-ih-border bg-ih-surface-2 grid aspect-[4/3] w-full shrink-0 place-items-center overflow-hidden rounded-md border sm:w-40">
           {selected ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={resolveUrl(selected.storagePath)} alt={selected.alt ?? ''} className="h-full w-full object-cover" />
+            <img
+              src={resolveUrl(selected.storagePath)}
+              alt={selected.alt ?? ''}
+              className="h-full w-full object-cover"
+            />
           ) : (
             <ImageIcon size={20} strokeWidth={1.5} aria-hidden="true" className="text-ih-muted" />
           )}
@@ -108,7 +119,13 @@ export default function OgImagePicker({
             {selected ? selected.originalFilename : emptyLabel}
           </p>
           <div className="flex flex-wrap items-center gap-2">
-            <Button type="button" kind="outline" size="dense-sm" icon={<ImageIcon size={13} strokeWidth={1.8} aria-hidden="true" />} onClick={() => setBrowsing(true)}>
+            <Button
+              type="button"
+              kind="outline"
+              size="dense-sm"
+              icon={<ImageIcon size={13} strokeWidth={1.8} aria-hidden="true" />}
+              onClick={() => setBrowsing(true)}
+            >
               {selected ? 'Change image' : 'Choose from library'}
             </Button>
             <Button
@@ -122,7 +139,13 @@ export default function OgImagePicker({
               {pending ? 'Uploading…' : 'Upload new'}
             </Button>
             {value ? (
-              <Button type="button" kind="ghost" size="dense-sm" icon={<X size={13} strokeWidth={1.8} aria-hidden="true" />} onClick={() => handleSelect(null)}>
+              <Button
+                type="button"
+                kind="ghost"
+                size="dense-sm"
+                icon={<X size={13} strokeWidth={1.8} aria-hidden="true" />}
+                onClick={() => handleSelect(null)}
+              >
                 Clear
               </Button>
             ) : null}
@@ -138,11 +161,11 @@ export default function OgImagePicker({
             />
           </div>
           {error && (
-            <span className="text-[12px] text-ih-danger-ink" role="alert">
+            <span className="text-ih-danger-ink text-[12px]" role="alert">
               {error}
             </span>
           )}
-          <p className="text-[12px] text-ih-muted">{hint}</p>
+          <p className="text-ih-muted text-[12px]">{hint}</p>
         </div>
       </div>
       <MediaBrowserDialog
@@ -179,4 +202,3 @@ function resolveUrl(storagePath: string): string {
   const base = process.env.NEXT_PUBLIC_R2_PUBLIC_URL ?? ''
   return base ? `${base}/${storagePath}` : storagePath
 }
-

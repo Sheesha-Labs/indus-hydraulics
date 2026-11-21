@@ -86,7 +86,12 @@ export default function HomepageHeroPanel({ slides }: Props) {
   }
 
   async function handleDelete(id: string) {
-    if (!window.confirm('Delete this slide? This removes the image from storage and cannot be undone.')) return
+    if (
+      !window.confirm(
+        'Delete this slide? This removes the image from storage and cannot be undone.'
+      )
+    )
+      return
     setError(null)
     startTransition(async () => {
       const res = await deleteHomeHeroSlide(id)
@@ -103,11 +108,11 @@ export default function HomepageHeroPanel({ slides }: Props) {
       {/* Upload form */}
       <form
         action={handleUpload}
-        className="rounded-lg border border-ih-border bg-ih-surface p-5 flex flex-col gap-3"
+        className="border-ih-border bg-ih-surface flex flex-col gap-3 rounded-lg border p-5"
       >
         <div className="flex items-baseline justify-between">
           <h2 className="text-[14px] font-medium">Add a new slide</h2>
-          <span className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <span className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             JPEG / PNG / WebP / GIF · ≤ 10 MB · ~1200×1100 recommended
           </span>
         </div>
@@ -125,12 +130,12 @@ export default function HomepageHeroPanel({ slides }: Props) {
             type="text"
             placeholder="Alt text (for screen readers)"
             maxLength={200}
-            className="rounded-md border border-ih-border bg-ih-bg px-3 py-2 text-[13px]"
+            className="border-ih-border bg-ih-bg rounded-md border px-3 py-2 text-[13px]"
           />
           <button
             type="submit"
             disabled={pending}
-            className="h-10 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-10 text-[12px] tabular-nums disabled:cursor-not-allowed disabled:opacity-50"
           >
             {pending ? 'Uploading…' : 'Upload'}
           </button>
@@ -138,20 +143,21 @@ export default function HomepageHeroPanel({ slides }: Props) {
       </form>
 
       {error && (
-        <div className="rounded-lg border border-ih-danger bg-[var(--color-ih-danger)]/10 px-4 py-3 text-[13px] text-ih-danger">
+        <div className="border-ih-danger text-ih-danger rounded-lg border bg-[var(--color-ih-danger)]/10 px-4 py-3 text-[13px]">
           {error}
         </div>
       )}
 
       {/* Slide list */}
-      <div className="rounded-lg border border-ih-border">
+      <div className="border-ih-border rounded-lg border">
         {slides.length === 0 ? (
-          <div className="py-12 text-center text-ih-muted text-[13px]">
-            No slides yet. The storefront falls back to the static placeholder until at least one published slide exists.
+          <div className="text-ih-muted py-12 text-center text-[13px]">
+            No slides yet. The storefront falls back to the static placeholder until at least one
+            published slide exists.
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="bg-ih-bg border-ih-border text-ih-muted grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
               <div>#</div>
               <div>Preview</div>
               <div>Filename</div>
@@ -163,14 +169,14 @@ export default function HomepageHeroPanel({ slides }: Props) {
             {slides.map((slide, i) => (
               <div
                 key={slide.id}
-                className={`grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-3 items-center bg-ih-surface gap-3 ${
-                  i > 0 ? 'border-t border-ih-border' : ''
+                className={`bg-ih-surface grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] items-center gap-3 px-4 py-3 ${
+                  i > 0 ? 'border-ih-border border-t' : ''
                 }`}
               >
-                <div className="tabular-nums text-[12px] text-ih-muted">
+                <div className="text-ih-muted text-[12px] tabular-nums">
                   {String(i + 1).padStart(2, '0')}
                 </div>
-                <div className="relative w-[100px] h-[80px] bg-ih-surface-2 overflow-hidden">
+                <div className="bg-ih-surface-2 relative h-[80px] w-[100px] overflow-hidden">
                   <Image
                     src={slide.media.storagePath}
                     alt={slide.alt ?? slide.media.originalFilename}
@@ -179,7 +185,10 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     className="object-cover"
                   />
                 </div>
-                <div className="tabular-nums text-[11px] text-ih-ink-2 truncate" title={slide.media.originalFilename}>
+                <div
+                  className="text-ih-ink-2 truncate text-[11px] tabular-nums"
+                  title={slide.media.originalFilename}
+                >
                   {slide.media.originalFilename}
                 </div>
                 <input
@@ -192,14 +201,14 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     if (next === (slide.alt ?? '')) return
                     handleUpdate(slide.id, { alt: next || null })
                   }}
-                  className="rounded-md border border-ih-border bg-ih-bg px-2 py-1.5 text-[12px]"
+                  className="border-ih-border bg-ih-bg rounded-md border px-2 py-1.5 text-[12px]"
                 />
                 <div className="flex justify-center">
                   <button
                     type="button"
                     onClick={() => handleUpdate(slide.id, { isPublished: !slide.isPublished })}
                     disabled={pending}
-                    className={`px-2 py-0.5 tabular-nums text-[11px] font-medium transition-opacity hover:opacity-80 disabled:opacity-50 ${
+                    className={`px-2 py-0.5 text-[11px] font-medium tabular-nums transition-opacity hover:opacity-80 disabled:opacity-50 ${
                       slide.isPublished
                         ? 'text-ih-success-ink bg-ih-success-soft'
                         : 'text-ih-muted bg-ih-surface-2'
@@ -215,7 +224,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === 0}
                     aria-label="Move up"
                     title="Move up"
-                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed tabular-nums text-[14px]"
+                    className="border-ih-border bg-ih-bg hover:bg-ih-surface-2 flex h-8 w-8 items-center justify-center rounded-md border text-[14px] tabular-nums disabled:cursor-not-allowed disabled:opacity-30"
                   >
                     ↑
                   </button>
@@ -225,13 +234,18 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === slides.length - 1}
                     aria-label="Move down"
                     title="Move down"
-                    className="rounded-md w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed tabular-nums text-[14px]"
+                    className="border-ih-border bg-ih-bg hover:bg-ih-surface-2 flex h-8 w-8 items-center justify-center rounded-md border text-[14px] tabular-nums disabled:cursor-not-allowed disabled:opacity-30"
                   >
                     ↓
                   </button>
                 </div>
                 <div className="flex justify-end">
-                  <DeleteButton label="Delete slide" size="sm" onClick={() => handleDelete(slide.id)} disabled={pending} />
+                  <DeleteButton
+                    label="Delete slide"
+                    size="sm"
+                    onClick={() => handleDelete(slide.id)}
+                    disabled={pending}
+                  />
                 </div>
               </div>
             ))}

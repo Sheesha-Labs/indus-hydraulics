@@ -96,8 +96,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
     auth(),
   ])
 
-  const countFor = (s: PublishStatus) =>
-    statusCounts.find((c) => c.status === s)?._count._all ?? 0
+  const countFor = (s: PublishStatus) => statusCounts.find((c) => c.status === s)?._count._all ?? 0
   const liveTotal = statusCounts.reduce((n, c) => n + c._count._all, 0)
   const canDestroy = hasRole(session, ROLES.CATALOGUE_DELETE)
   // A search narrows the list past what the status counts know about, so the
@@ -148,7 +147,11 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
             <SegmentLink href={href({ view: undefined, status: undefined })} active={!trashed}>
               Articles
             </SegmentLink>
-            <SegmentLink href={href({ view: 'trash', status: undefined })} active={trashed} count={trashCount}>
+            <SegmentLink
+              href={href({ view: 'trash', status: undefined })}
+              active={trashed}
+              count={trashCount}
+            >
               <Trash2 size={12} strokeWidth={1.8} aria-hidden="true" />
               Trash
             </SegmentLink>
@@ -156,18 +159,27 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
 
           {!trashed && (
             <Segmented label="Filter by status">
-              <SegmentLink href={href({ status: undefined })} active={!statusFilter} count={liveTotal}>
+              <SegmentLink
+                href={href({ status: undefined })}
+                active={!statusFilter}
+                count={liveTotal}
+              >
                 All
               </SegmentLink>
               {(['published', 'draft', 'archived'] as const).map((s) => (
-                <SegmentLink key={s} href={href({ status: s })} active={statusFilter === s} count={countFor(s)}>
+                <SegmentLink
+                  key={s}
+                  href={href({ status: s })}
+                  active={statusFilter === s}
+                  count={countFor(s)}
+                >
                   {STATUS_LABEL[s]}
                 </SegmentLink>
               ))}
             </Segmented>
           )}
 
-          <p className="text-[13px] text-ih-muted">
+          <p className="text-ih-muted text-[13px]">
             {shownTotal} {shownTotal === 1 ? 'post' : 'posts'}
             {trashed ? ' in trash' : query ? ' found' : ''}
             {shownTotal > posts.length ? ` · showing the latest ${posts.length}` : ''}
@@ -184,7 +196,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                 size={14}
                 strokeWidth={1.8}
                 aria-hidden="true"
-                className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ih-muted"
+                className="text-ih-muted pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
               />
               <Input
                 id="blog-q"
@@ -196,7 +208,10 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
               />
             </span>
             {query && (
-              <Link href={href({ q: undefined })} className="text-[12.5px] text-ih-muted hover:text-ih-ink">
+              <Link
+                href={href({ q: undefined })}
+                className="text-ih-muted hover:text-ih-ink text-[12.5px]"
+              >
                 Clear
               </Link>
             )}
@@ -225,12 +240,12 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[46%] text-ih-ink">Title</TableHead>
+                <TableHead className="text-ih-ink w-[46%]">Title</TableHead>
                 <TableHead className="text-ih-ink">Status</TableHead>
                 <TableHead className="text-ih-ink">Category</TableHead>
                 <TableHead className="text-ih-ink">Author</TableHead>
                 <TableHead className="text-ih-ink">Updated</TableHead>
-                <TableHead className="text-right text-ih-ink">
+                <TableHead className="text-ih-ink text-right">
                   <span className="sr-only">Actions</span>
                 </TableHead>
               </TableRow>
@@ -242,10 +257,12 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                   <TableRow key={post.id}>
                     <TableCell className="max-w-0 py-3.5">
                       <Link href={`/admin/blog/${post.id}`} className="group block min-w-0">
-                        <span className="block truncate text-[14px] font-medium text-ih-ink transition-colors group-hover:text-ih-accent">
+                        <span className="text-ih-ink group-hover:text-ih-accent block truncate text-[14px] font-medium transition-colors">
                           {post.title}
                         </span>
-                        <span className="mt-0.5 block truncate text-[12px] text-ih-muted">/blog/{post.slug}</span>
+                        <span className="text-ih-muted mt-0.5 block truncate text-[12px]">
+                          /blog/{post.slug}
+                        </span>
                       </Link>
                     </TableCell>
                     <TableCell>
@@ -255,13 +272,13 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                         {STATUS_LABEL[status]}
                       </span>
                     </TableCell>
-                    <TableCell className="max-w-[200px] truncate text-[13px] text-ih-ink-2">
+                    <TableCell className="text-ih-ink-2 max-w-[200px] truncate text-[13px]">
                       {post.category?.name ?? '—'}
                     </TableCell>
-                    <TableCell className="max-w-[180px] truncate text-[13px] text-ih-ink-2">
+                    <TableCell className="text-ih-ink-2 max-w-[180px] truncate text-[13px]">
                       {post.blogAuthor?.name ?? post.author?.name ?? '—'}
                     </TableCell>
-                    <TableCell className="whitespace-nowrap text-[12.5px] text-ih-muted">
+                    <TableCell className="text-ih-muted text-[12.5px] whitespace-nowrap">
                       {relative(post.updatedAt)}
                     </TableCell>
                     <TableCell className="text-right">
@@ -273,7 +290,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                             rel="noreferrer"
                             aria-label={`View “${post.title}” on the site`}
                             title="View on the site"
-                            className="inline-flex h-7 items-center gap-1 rounded-md px-2 text-[12.5px] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+                            className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink inline-flex h-7 items-center gap-1 rounded-md px-2 text-[12.5px] transition-colors"
                           >
                             View
                             <ExternalLink size={12} strokeWidth={1.8} aria-hidden="true" />
@@ -302,7 +319,10 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
 /** A rounded segmented control: Bazar's Articles / Trash switch. */
 function Segmented({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <nav aria-label={label} className="inline-flex rounded-md border border-ih-border bg-ih-surface p-0.5">
+    <nav
+      aria-label={label}
+      className="border-ih-border bg-ih-surface inline-flex rounded-md border p-0.5"
+    >
       {children}
     </nav>
   )
@@ -323,13 +343,19 @@ function SegmentLink({
     <Link
       href={href}
       aria-current={active ? 'page' : undefined}
-      className={`inline-flex h-7 items-center gap-1.5 rounded px-2.5 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
-        active ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
+      className={`focus-visible:ring-ih-accent-soft inline-flex h-7 items-center gap-1.5 rounded px-2.5 text-[12.5px] transition-colors focus-visible:ring-2 focus-visible:outline-none ${
+        active
+          ? 'bg-ih-navy text-ih-bg font-medium'
+          : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
       }`}
     >
       {children}
       {count !== undefined ? (
-        <span className={`tabular-nums text-[11.5px] ${active ? 'text-ih-bg/75' : 'text-ih-muted'}`}>{count}</span>
+        <span
+          className={`text-[11.5px] tabular-nums ${active ? 'text-ih-bg/75' : 'text-ih-muted'}`}
+        >
+          {count}
+        </span>
       ) : null}
     </Link>
   )

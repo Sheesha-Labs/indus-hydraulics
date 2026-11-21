@@ -84,7 +84,10 @@ function loadWebEnv() {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 async function main() {
@@ -188,7 +191,7 @@ async function main() {
                   },
                 })
               },
-              { maxWait: 30_000, timeout: 30_000 },
+              { maxWait: 30_000, timeout: 30_000 }
             )
             images++
           }
@@ -200,7 +203,7 @@ async function main() {
 
     if (dryRun) {
       console.log(
-        `[dry-run] ${e.sku}: ${e.specs.length} specs, ${e.document ? 'datasheet' : 'no datasheet'}`,
+        `[dry-run] ${e.sku}: ${e.specs.length} specs, ${e.document ? 'datasheet' : 'no datasheet'}`
       )
       content++
       continue
@@ -228,7 +231,7 @@ async function main() {
         datasheetBytes = measured.bytes
       } else {
         problems.push(
-          `${e.sku}: datasheet size unmeasured (${measured.reason}: ${measured.detail}) — ${e.document.url}`,
+          `${e.sku}: datasheet size unmeasured (${measured.reason}: ${measured.detail}) — ${e.document.url}`
         )
       }
     }
@@ -372,7 +375,7 @@ async function main() {
           hasFocusKeyword: Boolean(product.focusKeyword),
           hasSeoTitleAndDescription: Boolean(product.seoTitle && product.seoDescription),
           hasCommerceAttributes: Boolean(
-            product.weightKg && product.countryOfOrigin && product.mpn,
+            product.weightKg && product.countryOfOrigin && product.mpn
           ),
         })
         await tx.product.update({
@@ -380,7 +383,7 @@ async function main() {
           data: { contentScore: score.score },
         })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
 
     content++
@@ -389,7 +392,7 @@ async function main() {
 
   console.log(
     `\n[molykote] done — ${content} products updated, ${images} images attached, ` +
-      `${imagesSkipped} images already present, ${problems.length} problems`,
+      `${imagesSkipped} images already present, ${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
 }

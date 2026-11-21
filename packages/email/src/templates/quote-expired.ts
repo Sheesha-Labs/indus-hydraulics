@@ -23,9 +23,7 @@ export type QuoteExpiredProps = {
   >
 }
 
-export function renderQuoteExpired(
-  props: QuoteExpiredProps,
-): { subject: string; html: string } {
+export function renderQuoteExpired(props: QuoteExpiredProps): { subject: string; html: string } {
   const codeDisplay = props.revisionLabel
     ? `${props.quoteCode} ${props.revisionLabel}`
     : props.quoteCode
@@ -36,16 +34,16 @@ export function renderQuoteExpired(
 <p style="margin:0 0 16px 0;">Dear ${escapeHtml(props.customerName)},</p>
 
 <p style="margin:0 0 16px 0;">Quotation <b>${escapeHtml(
-    codeDisplay,
+    codeDisplay
   )}</b> reached its validity end date on <b>${escapeHtml(
-    props.expiredOnDisplay,
+    props.expiredOnDisplay
   )}</b> and has now expired.</p>
 
 <p style="margin:0 0 16px 0;">If you&rsquo;d still like to proceed, just reply to this email and we&rsquo;ll be glad to issue a fresh quotation. Lead times and pricing are re-checked against current stock and supplier rates, so a re-quote may differ slightly from the previous one.</p>
 
 <p style="margin:0 0 24px 0;">
   <a href="${escapeHtml(
-    props.rfqUrl,
+    props.rfqUrl
   )}" style="display:inline-block;background:${BRAND.accent};color:${BRAND.white};padding:10px 18px;text-decoration:none;font-weight:500;">
     View the original request
   </a>

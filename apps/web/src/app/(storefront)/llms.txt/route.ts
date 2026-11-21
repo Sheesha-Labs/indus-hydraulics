@@ -34,7 +34,13 @@ export async function GET(): Promise<NextResponse> {
     }),
     db.brand.findMany({
       where: { isPublished: true },
-      select: { slug: true, name: true, description: true, country: true, isAuthorizedDistributor: true },
+      select: {
+        slug: true,
+        name: true,
+        description: true,
+        country: true,
+        isAuthorizedDistributor: true,
+      },
       orderBy: [{ position: 'asc' }, { name: 'asc' }],
       take: TOP_BRAND_LIMIT,
     }),
@@ -50,15 +56,21 @@ export async function GET(): Promise<NextResponse> {
   lines.push('# Indus Hydraulics')
   lines.push('')
   lines.push(
-    '> Industrial hydraulic distributor based in Dubai, UAE. Authorized distributor for Parker Hannifin, Bosch Rexroth, Yuken, HYDAC, and other industry-leading brands. We supply pumps, valves, cylinders, hose assemblies, and consumables to oil & gas, mining, marine, construction, and manufacturing customers across the GCC, wider Middle East, and Africa. Founded 2003. ISO 9001:2015 certified. RFQ-based (not e-commerce checkout) — engineers send a part number, we respond with a written Estimate.',
+    '> Industrial hydraulic distributor based in Dubai, UAE. Authorized distributor for Parker Hannifin, Bosch Rexroth, Yuken, HYDAC, and other industry-leading brands. We supply pumps, valves, cylinders, hose assemblies, and consumables to oil & gas, mining, marine, construction, and manufacturing customers across the GCC, wider Middle East, and Africa. Founded 2003. ISO 9001:2015 certified. RFQ-based (not e-commerce checkout) — engineers send a part number, we respond with a written Estimate.'
   )
   lines.push('')
 
   lines.push('## About the company')
   lines.push('')
-  lines.push(`- [About Indus Hydraulics](${urlFor('/hydraulic-components-supplier-uae')}): company history, leadership team, certifications, founding year (2003), and operating model.`)
-  lines.push(`- [Industries we serve](${urlFor('/industries')}): the sectors and applications our engineers cover.`)
-  lines.push(`- [Brand partners](${urlFor('/brands')}): the authorized-distributor relationships behind our catalogue.`)
+  lines.push(
+    `- [About Indus Hydraulics](${urlFor('/hydraulic-components-supplier-uae')}): company history, leadership team, certifications, founding year (2003), and operating model.`
+  )
+  lines.push(
+    `- [Industries we serve](${urlFor('/industries')}): the sectors and applications our engineers cover.`
+  )
+  lines.push(
+    `- [Brand partners](${urlFor('/brands')}): the authorized-distributor relationships behind our catalogue.`
+  )
   lines.push(`- [Contact](${urlFor('/contact')}): Dubai HQ address, phone, WhatsApp, email, hours.`)
   lines.push('')
 
@@ -69,13 +81,13 @@ export async function GET(): Promise<NextResponse> {
   lines.push('## Where we operate')
   lines.push('')
   lines.push(
-    `- [Service areas](${urlFor('/locations')}): UAE emirates where we do on-site hose assembly and replacement — ${serviceAreaNames().join(', ')}. On-site service, from the Dubai base.`,
+    `- [Service areas](${urlFor('/locations')}): UAE emirates where we do on-site hose assembly and replacement — ${serviceAreaNames().join(', ')}. On-site service, from the Dubai base.`
   )
   for (const m of marketsOrdered()) {
     lines.push(
       // `leadTime` already reads "Typically 3 working days from dispatch" —
       // do not append the qualifier again.
-      `- [${m.name}](${urlFor(`/markets/${m.slug}`)}): export from the Dubai warehouse. ${m.leadTime}. ${m.routes.join(' or ')}. No premises in ${m.name}.`,
+      `- [${m.name}](${urlFor(`/markets/${m.slug}`)}): export from the Dubai warehouse. ${m.leadTime}. ${m.routes.join(' or ')}. No premises in ${m.name}.`
     )
   }
   lines.push('')
@@ -84,7 +96,9 @@ export async function GET(): Promise<NextResponse> {
   // likely to cite for "what thread is 9/16-18" or "crimp diameter for 1/2 R2".
   lines.push('## Hydraulic reference')
   lines.push('')
-  lines.push(`- [Reference library](${urlFor('/resources')}): index of the reference pages and calculators below.`)
+  lines.push(
+    `- [Reference library](${urlFor('/resources')}): index of the reference pages and calculators below.`
+  )
   for (const entry of resourceEntries()) {
     lines.push(`- [${entry.title}](${urlFor(entry.href)}): ${entry.summary}`)
   }
@@ -124,27 +138,45 @@ export async function GET(): Promise<NextResponse> {
 
   lines.push('## Policies and terms')
   lines.push('')
-  lines.push(`- [Shipping Policy](${urlFor('/shipping')}): lead times, Incoterms, export documentation, handling for hazmat and oversized items.`)
-  lines.push(`- [Returns and RMA Policy](${urlFor('/returns')}): inspection windows, restocking fees, non-returnable items, RMA process.`)
-  lines.push(`- [Warranty Policy](${urlFor('/warranty')}): manufacturer warranty pass-through, claim process, coverage and exclusions.`)
-  lines.push(`- [Terms of Service](${urlFor('/terms')}): legal terms covering quotations, delivery, warranty pass-through, and limitation of liability.`)
+  lines.push(
+    `- [Shipping Policy](${urlFor('/shipping')}): lead times, Incoterms, export documentation, handling for hazmat and oversized items.`
+  )
+  lines.push(
+    `- [Returns and RMA Policy](${urlFor('/returns')}): inspection windows, restocking fees, non-returnable items, RMA process.`
+  )
+  lines.push(
+    `- [Warranty Policy](${urlFor('/warranty')}): manufacturer warranty pass-through, claim process, coverage and exclusions.`
+  )
+  lines.push(
+    `- [Terms of Service](${urlFor('/terms')}): legal terms covering quotations, delivery, warranty pass-through, and limitation of liability.`
+  )
   lines.push(`- [Privacy Policy](${urlFor('/privacy')}): how personal data is handled.`)
   lines.push('')
 
   lines.push('## Buyer journey')
   lines.push('')
-  lines.push(`- [Search the catalogue](${urlFor('/search')}): find products by SKU, MPN, brand, or specification.`)
-  lines.push(`- [Send an enquiry](${urlFor('/contact')}): use the contact form, or email sales@indushydraulics.me (purchase@indushydraulics.me in CC) with part numbers and quantities — typical response within 4 business hours.`)
-  lines.push(`- [Blog and case studies](${urlFor('/blog')}): selection guides, sizing notes, and worked field cases for hydraulic engineers.`)
+  lines.push(
+    `- [Search the catalogue](${urlFor('/search')}): find products by SKU, MPN, brand, or specification.`
+  )
+  lines.push(
+    `- [Send an enquiry](${urlFor('/contact')}): use the contact form, or email sales@indushydraulics.me (purchase@indushydraulics.me in CC) with part numbers and quantities — typical response within 4 business hours.`
+  )
+  lines.push(
+    `- [Blog and case studies](${urlFor('/blog')}): selection guides, sizing notes, and worked field cases for hydraulic engineers.`
+  )
   lines.push('')
 
   lines.push('## Sitemap')
   lines.push('')
-  lines.push(`- [XML sitemap](${urlFor('/sitemap.xml')}): full machine-readable list of indexable URLs.`)
+  lines.push(
+    `- [XML sitemap](${urlFor('/sitemap.xml')}): full machine-readable list of indexable URLs.`
+  )
   lines.push('')
 
   lines.push('---')
-  lines.push(`Source: ${BASE_URL}/llms.txt · Last refreshed automatically · Maintained from production database.`)
+  lines.push(
+    `Source: ${BASE_URL}/llms.txt · Last refreshed automatically · Maintained from production database.`
+  )
   lines.push('')
 
   return new NextResponse(lines.join('\n'), {

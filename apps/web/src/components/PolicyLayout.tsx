@@ -49,7 +49,7 @@ export default function PolicyLayout({
 
   return (
     <div className="mx-auto max-w-[1440px] px-5 pb-24 sm:px-8 xl:px-12">
-      <div className="border-b border-ih-border py-4">
+      <div className="border-ih-border border-b py-4">
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: current?.label ?? title }]} />
       </div>
 
@@ -58,7 +58,7 @@ export default function PolicyLayout({
             "am I on the right document?" precedes "where in it am I?". */}
         <aside className="lg:sticky lg:top-[100px] lg:self-start">
           <nav aria-label="Policies">
-            <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
               Policies
             </p>
             <ul className="flex flex-col gap-0.5">
@@ -71,8 +71,8 @@ export default function PolicyLayout({
                       aria-current={active ? 'page' : undefined}
                       className={`block rounded-sm border-l-2 py-1.5 pl-2.5 text-[13px] transition-colors ${
                         active
-                          ? 'border-ih-accent bg-ih-accent-soft font-medium text-ih-accent'
-                          : 'border-transparent text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2'
+                          ? 'border-ih-accent bg-ih-accent-soft text-ih-accent font-medium'
+                          : 'text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 border-transparent'
                       }`}
                     >
                       {p.label}
@@ -84,14 +84,17 @@ export default function PolicyLayout({
           </nav>
 
           {sections.length > 0 && (
-            <nav aria-label="On this page" className="mt-8 border-t border-ih-border pt-6">
-              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <nav aria-label="On this page" className="border-ih-border mt-8 border-t pt-6">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 On this page
               </p>
               <ul className="flex flex-col gap-2">
                 {sections.map((s) => (
                   <li key={s.id}>
-                    <a href={`#${s.id}`} className="block text-[12.5px] leading-snug text-ih-muted hover:text-ih-accent">
+                    <a
+                      href={`#${s.id}`}
+                      className="text-ih-muted hover:text-ih-accent block text-[12.5px] leading-snug"
+                    >
                       {s.title}
                     </a>
                   </li>
@@ -101,13 +104,13 @@ export default function PolicyLayout({
           )}
         </aside>
 
-        <article className="min-w-0 text-ih-ink-2">
+        <article className="text-ih-ink-2 min-w-0">
           <header className="mb-10">
-            <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em] text-ih-ink">
+            <h1 className="text-ih-ink mb-3 font-serif text-[clamp(30px,4vw,40px)] leading-[1.06] font-normal tracking-[-0.01em]">
               {title}
             </h1>
             {effectiveLine && (
-              <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <p className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 {effectiveLine}
               </p>
             )}
@@ -135,7 +138,7 @@ export function PolicySectionBody({
 }) {
   return (
     <section id={id} className="mb-9 scroll-mt-[120px]">
-      <h2 className="mb-3 text-[18px] font-medium tracking-[-0.01em] text-ih-ink">{title}</h2>
+      <h2 className="text-ih-ink mb-3 text-[18px] font-medium tracking-[-0.01em]">{title}</h2>
       <div className="space-y-3 text-[15px] leading-[1.7]">{children}</div>
     </section>
   )

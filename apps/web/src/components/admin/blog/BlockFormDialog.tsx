@@ -40,7 +40,7 @@ export default function BlockFormDialog({ spec, value, onCancel, onSave }: Props
     returnFocusRef.current = document.activeElement as HTMLElement | null
     const timer = window.setTimeout(
       () => dialogRef.current?.querySelector<HTMLElement>('input, textarea, select')?.focus(),
-      0,
+      0
     )
     return () => window.clearTimeout(timer)
   }, [])
@@ -53,7 +53,7 @@ export default function BlockFormDialog({ spec, value, onCancel, onSave }: Props
       }
       if (event.key !== 'Tab') return
       const focusables = dialogRef.current?.querySelectorAll<HTMLElement>(
-        'button:not([disabled]), input, select, textarea',
+        'button:not([disabled]), input, select, textarea'
       )
       const first = focusables?.[0]
       const last = focusables?.[focusables.length - 1]
@@ -98,8 +98,8 @@ export default function BlockFormDialog({ spec, value, onCancel, onSave }: Props
       const count = Object.keys(fieldErrors).length
       setFormError(
         count === 1
-          ? Object.values(fieldErrors)[0] ?? 'Something is missing.'
-          : `${count} fields need attention.`,
+          ? (Object.values(fieldErrors)[0] ?? 'Something is missing.')
+          : `${count} fields need attention.`
       )
       return
     }
@@ -108,26 +108,26 @@ export default function BlockFormDialog({ spec, value, onCancel, onSave }: Props
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ih-navy/40 p-4">
+    <div className="bg-ih-navy/40 fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
         ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby={`${idPrefix}-title`}
-        className="flex max-h-[88vh] w-full max-w-[720px] flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface shadow-xl"
+        className="border-ih-border bg-ih-surface flex max-h-[88vh] w-full max-w-[720px] flex-col overflow-hidden rounded-lg border shadow-xl"
       >
-        <div className="flex items-start justify-between gap-4 border-b border-ih-border px-5 py-3.5">
+        <div className="border-ih-border flex items-start justify-between gap-4 border-b px-5 py-3.5">
           <div>
-            <h2 id={`${idPrefix}-title`} className="text-[15px] font-medium text-ih-ink">
+            <h2 id={`${idPrefix}-title`} className="text-ih-ink text-[15px] font-medium">
               {spec.label}
             </h2>
-            <p className="mt-0.5 max-w-[60ch] text-[12px] text-ih-muted">{spec.purpose}</p>
+            <p className="text-ih-muted mt-0.5 max-w-[60ch] text-[12px]">{spec.purpose}</p>
           </div>
           <button
             type="button"
             onClick={close}
             aria-label="Close"
-            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink"
+            className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink flex h-7 w-7 shrink-0 items-center justify-center rounded-md"
           >
             <X size={15} strokeWidth={1.8} />
           </button>
@@ -148,20 +148,20 @@ export default function BlockFormDialog({ spec, value, onCancel, onSave }: Props
           ))}
         </div>
 
-        <div className="flex items-center justify-between gap-3 border-t border-ih-border px-5 py-3">
-          <span className="text-[12px] text-ih-danger">{formError}</span>
+        <div className="border-ih-border flex items-center justify-between gap-3 border-t px-5 py-3">
+          <span className="text-ih-danger text-[12px]">{formError}</span>
           <span className="flex gap-2">
             <button
               type="button"
               onClick={close}
-              className="h-9 rounded-md border border-ih-border px-4 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-md border px-4 text-[13px] font-medium transition-colors"
             >
               Cancel
             </button>
             <button
               type="button"
               onClick={save}
-              className="h-9 rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+              className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 rounded-md px-4 text-[13px] font-medium transition-opacity"
             >
               Done
             </button>
@@ -257,7 +257,7 @@ function FieldView({
                 next[i] = e.target.value
                 onChange(next)
               }}
-              className="h-9 flex-1 rounded-md border border-ih-border bg-ih-bg px-2.5 text-[13px] outline-none focus:border-ih-accent"
+              className="border-ih-border bg-ih-bg focus:border-ih-accent h-9 flex-1 rounded-md border px-2.5 text-[13px] outline-none"
             />
             <RemoveButton
               disabled={items.length <= field.min}
@@ -282,9 +282,9 @@ function FieldView({
       <fieldset className="flex flex-col gap-3">
         <Legend label={field.label} hint={field.hint} />
         {rows.map((row, i) => (
-          <div key={i} className="rounded-md border border-ih-border bg-ih-bg p-3">
+          <div key={i} className="border-ih-border bg-ih-bg rounded-md border p-3">
             <div className="mb-2 flex items-center justify-between">
-              <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+              <span className="text-ih-muted text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
                 {field.itemLabel} {i + 1}
               </span>
               <RemoveButton
@@ -324,7 +324,7 @@ function FieldView({
   if (field.kind === 'object') {
     const obj = (value && typeof value === 'object' ? value : {}) as Draft
     return (
-      <fieldset className="flex flex-col gap-2.5 rounded-md border border-ih-border bg-ih-bg p-3">
+      <fieldset className="border-ih-border bg-ih-bg flex flex-col gap-2.5 rounded-md border p-3">
         <Legend label={field.label} hint={field.hint} />
         {field.fields.map((sub) => (
           <ScalarFieldView
@@ -355,9 +355,9 @@ function FieldView({
             ? (group[field.nested.key] as Draft[])
             : []
           return (
-            <div key={i} className="rounded-md border border-ih-border bg-ih-bg p-3">
+            <div key={i} className="border-ih-border bg-ih-bg rounded-md border p-3">
               <div className="mb-2 flex items-center justify-between">
-                <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+                <span className="text-ih-muted text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
                   {field.itemLabel} {i + 1}
                 </span>
                 <RemoveButton
@@ -383,11 +383,11 @@ function FieldView({
               {/* The nested list is indented and rule-bordered so the two
                   levels stay legible — a flat stack of task cards inside a
                   stack of phase cards reads as one long list. */}
-              <div className="mt-3 flex flex-col gap-2 border-l-2 border-ih-border pl-3">
+              <div className="border-ih-border mt-3 flex flex-col gap-2 border-l-2 pl-3">
                 {nested.map((row, j) => (
-                  <div key={j} className="rounded-md border border-ih-border bg-ih-surface p-2.5">
+                  <div key={j} className="border-ih-border bg-ih-surface rounded-md border p-2.5">
                     <div className="mb-1.5 flex items-center justify-between">
-                      <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted-2">
+                      <span className="text-ih-muted-2 text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
                         {field.nested.itemLabel} {j + 1}
                       </span>
                       <RemoveButton
@@ -408,9 +408,7 @@ function FieldView({
                           field={sub}
                           id={`${id}-${i}-${field.nested.key}-${j}-${sub.key}`}
                           value={row[sub.key]}
-                          error={
-                            errors[`${field.key}.${i}.${field.nested.key}.${j}.${sub.key}`]
-                          }
+                          error={errors[`${field.key}.${i}.${field.nested.key}.${j}.${sub.key}`]}
                           onChange={(next) => {
                             const rows = [...nested]
                             rows[j] = { ...row, [sub.key]: next }
@@ -481,12 +479,12 @@ function ScalarFieldView({
           // box has to show that default rather than reading as unticked.
           checked={value === undefined ? field.default : value === true}
           onChange={(e) => onChange(e.target.checked)}
-          className="h-4 w-4 rounded-[3px] border-ih-border accent-[var(--color-ih-accent)]"
+          className="border-ih-border h-4 w-4 rounded-[3px] accent-[var(--color-ih-accent)]"
         />
-        <label htmlFor={id} className="text-[12.5px] text-ih-ink-2">
+        <label htmlFor={id} className="text-ih-ink-2 text-[12.5px]">
           {field.label}
         </label>
-        {field.hint ? <span className="text-[11px] text-ih-muted-2">{field.hint}</span> : null}
+        {field.hint ? <span className="text-ih-muted-2 text-[11px]">{field.hint}</span> : null}
       </div>
     )
   }
@@ -495,7 +493,7 @@ function ScalarFieldView({
     <div className="flex flex-col gap-1">
       <label
         htmlFor={id}
-        className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+        className="text-ih-muted text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
       >
         {field.label}
         {'required' in field && field.required ? ' *' : ''}
@@ -505,7 +503,7 @@ function ScalarFieldView({
           id={id}
           value={text || field.default}
           onChange={(e) => onChange(e.target.value)}
-          className="h-9 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px] outline-none focus:border-ih-accent"
+          className="border-ih-border bg-ih-surface focus:border-ih-accent h-9 w-full rounded-md border px-2 text-[13px] outline-none"
         >
           {field.options.map((o) => (
             <option key={o.value} value={o.value}>
@@ -520,7 +518,7 @@ function ScalarFieldView({
           value={text}
           placeholder={field.placeholder}
           onChange={(e) => onChange(e.target.value)}
-          className="w-full resize-y rounded-md border border-ih-border bg-ih-bg px-2.5 py-2 text-[13px] leading-[1.6] outline-none focus:border-ih-accent"
+          className="border-ih-border bg-ih-bg focus:border-ih-accent w-full resize-y rounded-md border px-2.5 py-2 text-[13px] leading-[1.6] outline-none"
         />
       ) : (
         <input
@@ -528,13 +526,13 @@ function ScalarFieldView({
           value={text}
           placeholder={field.placeholder}
           onChange={(e) => onChange(e.target.value)}
-          className={`h-9 w-full rounded-md border border-ih-border bg-ih-bg px-2.5 text-[13px] outline-none focus:border-ih-accent ${
-            'tabular-nums' in field && field.mono ? 'tabular-nums text-[12px]' : ''
+          className={`border-ih-border bg-ih-bg focus:border-ih-accent h-9 w-full rounded-md border px-2.5 text-[13px] outline-none ${
+            'tabular-nums' in field && field.mono ? 'text-[12px] tabular-nums' : ''
           }`}
         />
       )}
       {'hint' in field && field.hint ? (
-        <span className="text-[11px] text-ih-muted-2">{field.hint}</span>
+        <span className="text-ih-muted-2 text-[11px]">{field.hint}</span>
       ) : null}
       <FieldError message={error} />
     </div>
@@ -598,7 +596,7 @@ function MatrixField({
                         next[c] = e.target.value
                         onColumns(next)
                       }}
-                      className="h-8 w-full rounded-md border border-ih-border bg-ih-surface-2 px-2 text-[12px] font-medium outline-none focus:border-ih-accent"
+                      className="border-ih-border bg-ih-surface-2 focus:border-ih-accent h-8 w-full rounded-md border px-2 text-[12px] font-medium outline-none"
                     />
                     <RemoveButton
                       disabled={columns.length <= 2}
@@ -630,7 +628,7 @@ function MatrixField({
                         cells[c] = e.target.value
                         onRows(next)
                       }}
-                      className="h-8 w-full rounded-md border border-ih-border bg-ih-bg px-2 text-[12.5px] outline-none focus:border-ih-accent"
+                      className="border-ih-border bg-ih-bg focus:border-ih-accent h-8 w-full rounded-md border px-2 text-[12.5px] outline-none"
                     />
                   </td>
                 ))}
@@ -663,17 +661,17 @@ function MatrixField({
 function Legend({ label, hint }: { label: string; hint?: string }) {
   return (
     <legend className="flex flex-col gap-0.5">
-      <span className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+      <span className="text-ih-muted text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
         {label}
       </span>
-      {hint ? <span className="text-[11px] text-ih-muted-2">{hint}</span> : null}
+      {hint ? <span className="text-ih-muted-2 text-[11px]">{hint}</span> : null}
     </legend>
   )
 }
 
 function FieldError({ message }: { message?: string }) {
   if (!message) return null
-  return <span className="text-[11.5px] text-ih-danger">{message}</span>
+  return <span className="text-ih-danger text-[11.5px]">{message}</span>
 }
 
 function AddButton({
@@ -690,7 +688,7 @@ function AddButton({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="flex h-8 items-center gap-1.5 self-start rounded-md border border-ih-border px-2.5 text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 disabled:cursor-not-allowed disabled:opacity-40"
+      className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-8 items-center gap-1.5 self-start rounded-md border px-2.5 text-[12px] transition-colors disabled:cursor-not-allowed disabled:opacity-40"
     >
       <Plus size={12} strokeWidth={1.9} />
       {label}
@@ -714,7 +712,7 @@ function RemoveButton({
       disabled={disabled}
       aria-label={label}
       title={label}
-      className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-muted transition-colors hover:bg-ih-danger-soft hover:text-ih-danger disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ih-muted"
+      className="text-ih-muted hover:bg-ih-danger-soft hover:text-ih-danger disabled:hover:text-ih-muted flex h-7 w-7 shrink-0 items-center justify-center rounded-md transition-colors disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent"
     >
       <Trash2 size={13} strokeWidth={1.7} />
     </button>
@@ -745,7 +743,7 @@ function stripEmpty(draft: Draft): Draft {
         .map((item) =>
           item && typeof item === 'object' && !Array.isArray(item)
             ? stripEmpty(item as Draft)
-            : item,
+            : item
         )
         .filter((item) => {
           // A row the author added and never filled in is not a validation

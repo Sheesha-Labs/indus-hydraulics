@@ -46,13 +46,13 @@ export function LeadCapturePanel({
 
   return (
     <section className={containerCls} aria-labelledby="lead-capture-heading">
-      <div className={variant === 'wide' ? 'max-w-[840px] mx-auto text-center' : ''}>
+      <div className={variant === 'wide' ? 'mx-auto max-w-[840px] text-center' : ''}>
         <h2
           id="lead-capture-heading"
           className={
             variant === 'wide'
-              ? 'font-serif text-[clamp(24px,3vw,36px)] font-normal tracking-[-0.02em] leading-[1.15] mb-3'
-              : 'text-[22px] font-semibold tracking-[-0.01em] mb-2'
+              ? 'mb-3 font-serif text-[clamp(24px,3vw,36px)] leading-[1.15] font-normal tracking-[-0.02em]'
+              : 'mb-2 text-[22px] font-semibold tracking-[-0.01em]'
           }
         >
           {heading}
@@ -61,8 +61,8 @@ export function LeadCapturePanel({
           <p
             className={
               variant === 'wide'
-                ? 'text-[15px] text-ih-muted leading-[1.6] mb-7 max-w-[620px] mx-auto'
-                : 'text-[14px] text-ih-muted leading-[1.55] mb-5'
+                ? 'text-ih-muted mx-auto mb-7 max-w-[620px] text-[15px] leading-[1.6]'
+                : 'text-ih-muted mb-5 text-[14px] leading-[1.55]'
             }
           >
             {body}
@@ -71,14 +71,12 @@ export function LeadCapturePanel({
 
         <div
           className={
-            variant === 'wide'
-              ? 'flex flex-wrap justify-center gap-2.5'
-              : 'flex flex-wrap gap-2.5'
+            variant === 'wide' ? 'flex flex-wrap justify-center gap-2.5' : 'flex flex-wrap gap-2.5'
           }
         >
           <a
             href={emailUrl}
-            className="inline-flex items-center h-11 px-6 rounded-md bg-ih-accent text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
+            className="bg-ih-accent inline-flex h-11 items-center rounded-md px-6 text-[14px] font-medium text-white transition-opacity hover:opacity-90"
           >
             {ctaLabel} →
           </a>
@@ -88,20 +86,19 @@ export function LeadCapturePanel({
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center h-11 px-6 rounded-md border border-ih-border bg-ih-bg text-ih-ink-2 font-medium text-[14px] hover:border-ih-ink transition-colors"
+              className="border-ih-border bg-ih-bg text-ih-ink-2 hover:border-ih-ink inline-flex h-11 items-center rounded-md border px-6 text-[14px] font-medium transition-colors"
             >
               WhatsApp us
             </a>
           )}
-
         </div>
 
         {phone && (
           <p
             className={
               variant === 'wide'
-                ? 'mt-5 font-mono text-[12px] text-ih-muted'
-                : 'mt-3 font-mono text-[12px] text-ih-muted'
+                ? 'text-ih-muted mt-5 font-mono text-[12px]'
+                : 'text-ih-muted mt-3 font-mono text-[12px]'
             }
           >
             Plant-down?{' '}
@@ -123,7 +120,10 @@ export function LeadCapturePanel({
  * unset or too short, so callers can conditionally hide the WhatsApp
  * button instead of shipping a dead link.
  */
-export function buildWhatsappHref(phone: string | null | undefined, prefill?: string): string | null {
+export function buildWhatsappHref(
+  phone: string | null | undefined,
+  prefill?: string
+): string | null {
   if (!phone) return null
   const digits = phone.replace(/\D/g, '')
   if (digits.length < 7) return null

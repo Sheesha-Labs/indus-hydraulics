@@ -36,11 +36,11 @@ export const categorySizeSummary = unstable_cache(
   // Cached like `getShelfSpecRows` below. Uncached, every shelf render — every `?page=N` of every
   // shelf — re-ran the aggregate over the whole variant table. After the 2026-10-22 00:57 UTC deploy
   // left every shelf cold, ~16 of them at once saturated the database for ~6 hours (EMAXCONN, 503s).
-  { revalidate: 86400, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories] },
+  { revalidate: 86400, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories] }
 )
 
 async function sizeSummaryUncached(
-  categoryIds: readonly string[],
+  categoryIds: readonly string[]
 ): Promise<CategorySizeSummary | null> {
   if (categoryIds.length === 0) return null
 
@@ -115,8 +115,7 @@ async function sizeSummaryUncached(
       : null
 
   // Both ends or neither — a half-labelled range reads as a typo.
-  const boreInch =
-    row?.inch_min && row?.inch_max ? { min: row.inch_min, max: row.inch_max } : null
+  const boreInch = row?.inch_min && row?.inch_max ? { min: row.inch_min, max: row.inch_max } : null
 
   return {
     products: Number(row?.products ?? 0),
@@ -186,7 +185,10 @@ export const getShelfBrandCounts = unstable_cache(
     }))
   },
   ['shelf-brand-counts'],
-  { revalidate: 3600, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories, STOREFRONT_TAGS.brands] },
+  {
+    revalidate: 3600,
+    tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories, STOREFRONT_TAGS.brands],
+  }
 )
 
 /**
@@ -228,6 +230,5 @@ export const getShelfSpecRows = unstable_cache(
     })
   },
   ['shelf-spec-rows'],
-  { revalidate: 3600, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories] },
+  { revalidate: 3600, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories] }
 )
-

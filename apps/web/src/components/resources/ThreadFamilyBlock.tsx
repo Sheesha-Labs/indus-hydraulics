@@ -24,11 +24,14 @@ const mm = (v: number) => v.toFixed(2)
 function both(value: number, unit: 'in' | 'mm', approx = false) {
   const c = convertLength(value, unit)
   return unit === 'in' ? (
-    <Dual inches={approx ? c.inches.toFixed(2) : inch(c.inches)} millimetres={approx ? c.millimetres.toFixed(1) : mm(c.millimetres)} />
+    <Dual
+      inches={approx ? c.inches.toFixed(2) : inch(c.inches)}
+      millimetres={approx ? c.millimetres.toFixed(1) : mm(c.millimetres)}
+    />
   ) : (
     <>
       {mm(c.millimetres)}
-      <span className="ml-2 text-ih-muted">{inch(c.inches)}</span>
+      <span className="text-ih-muted ml-2">{inch(c.inches)}</span>
     </>
   )
 }
@@ -36,18 +39,26 @@ function both(value: number, unit: 'in' | 'mm', approx = false) {
 export default function ThreadFamilyBlock({ family }: { family: ThreadChartFamily }) {
   const headingId = `${family.id}-name`
   return (
-    <article id={family.id} aria-labelledby={headingId} className={`${ANCHOR_OFFSET} flex flex-col gap-4`}>
+    <article
+      id={family.id}
+      aria-labelledby={headingId}
+      className={`${ANCHOR_OFFSET} flex flex-col gap-4`}
+    >
       <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
         <h3 id={headingId} className="text-[21px] font-medium tracking-[-0.02em] sm:text-[23px]">
           {family.name}
         </h3>
-        <span className="mono text-[10.5px] tracking-[0.06em] text-ih-steel">{family.standard}</span>
+        <span className="mono text-ih-steel text-[10.5px] tracking-[0.06em]">
+          {family.standard}
+        </span>
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] md:gap-8">
-        <p className="text-[14px] leading-[1.65] text-ih-ink-2">{family.seal}</p>
+        <p className="text-ih-ink-2 text-[14px] leading-[1.65]">{family.seal}</p>
         {family.note ? (
-          <p className="border-l-2 border-ih-accent pl-4 text-[13px] leading-[1.6] text-ih-muted">{family.note}</p>
+          <p className="border-ih-accent text-ih-muted border-l-2 pl-4 text-[13px] leading-[1.6]">
+            {family.note}
+          </p>
         ) : null}
       </div>
 
@@ -70,10 +81,16 @@ export default function ThreadFamilyBlock({ family }: { family: ThreadChartFamil
                 {family.unit === 'in' ? 'TPI' : 'Pitch'}
               </th>
               <th scope="col" className={TH_NUM}>
-                Male thread O.D. <span className="text-ih-muted-2">{family.unit === 'in' ? 'in · mm' : 'mm · in'}</span>
+                Male thread O.D.{' '}
+                <span className="text-ih-muted-2">
+                  {family.unit === 'in' ? 'in · mm' : 'mm · in'}
+                </span>
               </th>
               <th scope="col" className={TH_NUM}>
-                Female thread I.D. <span className="text-ih-muted-2">≈ {family.unit === 'in' ? 'in · mm' : 'mm · in'}</span>
+                Female thread I.D.{' '}
+                <span className="text-ih-muted-2">
+                  ≈ {family.unit === 'in' ? 'in · mm' : 'mm · in'}
+                </span>
               </th>
             </tr>
           }
@@ -87,7 +104,9 @@ export default function ThreadFamilyBlock({ family }: { family: ThreadChartFamil
               <td className={`${TD} text-ih-ink`}>{row.thread}</td>
               <td className={TD_NUM}>{row.pitch}</td>
               <td className={TD_NUM}>{both(row.maleOd, family.unit)}</td>
-              <td className={TD_NUM}>{row.femaleId === null ? '—' : both(row.femaleId, family.unit, true)}</td>
+              <td className={TD_NUM}>
+                {row.femaleId === null ? '—' : both(row.femaleId, family.unit, true)}
+              </td>
             </tr>
           ))}
         </RefTable>
@@ -128,8 +147,12 @@ export default function ThreadFamilyBlock({ family }: { family: ThreadChartFamil
               <td className={TD}>{row.nominal}</td>
               <td className={TD_NUM}>{both(row.code61Spacing, 'in')}</td>
               <td className={TD_NUM}>{both(row.code61Od, 'in')}</td>
-              <td className={TD_NUM}>{row.code62Spacing === null ? 'Not made' : both(row.code62Spacing, 'in')}</td>
-              <td className={TD_NUM}>{row.code62Od === null ? 'Not made' : both(row.code62Od, 'in')}</td>
+              <td className={TD_NUM}>
+                {row.code62Spacing === null ? 'Not made' : both(row.code62Spacing, 'in')}
+              </td>
+              <td className={TD_NUM}>
+                {row.code62Od === null ? 'Not made' : both(row.code62Od, 'in')}
+              </td>
             </tr>
           ))}
         </RefTable>
@@ -170,13 +193,13 @@ export default function ThreadFamilyBlock({ family }: { family: ThreadChartFamil
       ) : null}
 
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+        <p className="mono text-ih-muted text-[10.5px] tracking-[0.08em] uppercase">
           Identifies: {family.covers.join(' · ')}
         </p>
         {family.shopHref ? (
           <Link
             href={family.shopHref}
-            className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+            className="text-ih-accent hover:text-ih-accent-hover inline-flex items-center gap-1.5 text-[13px] font-medium"
           >
             {family.shopLabel ?? 'Shop this family'}
             <ArrowRightIcon size={14} />

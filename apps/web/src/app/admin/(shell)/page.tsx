@@ -28,7 +28,7 @@ const getDashboardCounts = unstable_cache(
     return { productCount, rfqStats, customerCount, mediaCount, productsWithoutDatasheets }
   },
   ['admin:dashboard:counts'],
-  { revalidate: 60, tags: ['admin:dashboard'] },
+  { revalidate: 60, tags: ['admin:dashboard'] }
 )
 
 export default async function AdminDashboardPage({ params }: Props) {
@@ -40,7 +40,12 @@ export default async function AdminDashboardPage({ params }: Props) {
   // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const now = new Date()
   const timeOfDay = now.getHours() < 12 ? 'morning' : now.getHours() < 17 ? 'afternoon' : 'evening'
-  const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
+  const dateStr = now.toLocaleDateString('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
 
   const { productCount, rfqStats, customerCount, mediaCount, productsWithoutDatasheets } =
     await getDashboardCounts()
@@ -64,173 +69,206 @@ export default async function AdminDashboardPage({ params }: Props) {
 
   return (
     <AdminPageShell
-      title={<>Good {timeOfDay}, {firstName}</>}
+      title={
+        <>
+          Good {timeOfDay}, {firstName}
+        </>
+      }
       sub={dateStr}
       actions={
         <Link
           href={`${ADMIN_PREFIX}/products/new`}
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center rounded-md px-4 text-[13px] font-medium transition-opacity"
         >
           + Add product
         </Link>
       }
     >
+      {/* KPI grid */}
+      <div className="mb-5 grid grid-cols-2 gap-3 xl:grid-cols-4">
+        <KpiCard label="Products" value={String(productCount)} delta="Total catalogue" />
+        <KpiCard label="Open RFQs" value={String(openRfqs)} delta="In progress" />
+        <KpiCard label="Accounts" value={String(customerCount)} delta="B2B customers" />
+        <KpiCard label="Media assets" value={String(mediaCount)} delta="Total files" />
+      </div>
 
-        {/* KPI grid */}
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mb-5">
-          <KpiCard label="Products" value={String(productCount)} delta="Total catalogue" />
-          <KpiCard label="Open RFQs" value={String(openRfqs)} delta="In progress" />
-          <KpiCard label="Accounts" value={String(customerCount)} delta="B2B customers" />
-          <KpiCard label="Media assets" value={String(mediaCount)} delta="Total files" />
-        </div>
-
-        {/* Main grid */}
-        <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-4 mb-4">
-          <Card>
-            <CardHead
-              title="Most recently updated products"
-              subtitle="Last edited"
-              action={
-                <Link href={`/admin/products`} className="text-[13px] text-ih-accent hover:underline">
-                  View all →
-                </Link>
-              }
-            />
-            <div className="overflow-auto">
-              <table className="w-full text-[13px]">
-                <thead>
-                  <tr className="bg-ih-bg border-b border-ih-border">
-                    {['Product', 'SKU', 'Status', 'Updated'].map((h, i) => (
-                      <th key={h} className={`px-4 py-2.5 tabular-nums text-[11px] tracking-[0.08em] text-ih-muted uppercase ${i === 3 ? 'text-right' : 'text-left'}`}>
-                        {h}
-                      </th>
-                    ))}
+      {/* Main grid */}
+      <div className="mb-4 grid grid-cols-1 gap-4 xl:grid-cols-[2fr_1fr]">
+        <Card>
+          <CardHead
+            title="Most recently updated products"
+            subtitle="Last edited"
+            action={
+              <Link href={`/admin/products`} className="text-ih-accent text-[13px] hover:underline">
+                View all →
+              </Link>
+            }
+          />
+          <div className="overflow-auto">
+            <table className="w-full text-[13px]">
+              <thead>
+                <tr className="bg-ih-bg border-ih-border border-b">
+                  {['Product', 'SKU', 'Status', 'Updated'].map((h, i) => (
+                    <th
+                      key={h}
+                      className={`text-ih-muted px-4 py-2.5 text-[11px] tracking-[0.08em] uppercase tabular-nums ${i === 3 ? 'text-right' : 'text-left'}`}
+                    >
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {recentProducts.length === 0 ? (
+                  <tr>
+                    <td colSpan={4} className="text-ih-muted px-4 py-8 text-center">
+                      No products yet.{' '}
+                      <Link href={`/admin/products/new`} className="text-ih-accent hover:underline">
+                        Add your first product →
+                      </Link>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {recentProducts.length === 0 ? (
-                    <tr>
-                      <td colSpan={4} className="px-4 py-8 text-center text-ih-muted">
-                        No products yet.{' '}
-                        <Link href={`/admin/products/new`} className="text-ih-accent hover:underline">
-                          Add your first product →
+                ) : (
+                  recentProducts.map((product) => (
+                    <tr
+                      key={product.id}
+                      className="border-ih-border hover:bg-ih-bg border-b last:border-b-0"
+                    >
+                      <td className="px-4 py-3">
+                        <Link
+                          href={`/admin/products/${product.id}/edit`}
+                          className="hover:text-ih-accent font-medium transition-colors"
+                        >
+                          {product.title}
                         </Link>
+                        {product.brand && (
+                          <div className="text-ih-muted text-[11px]">{product.brand.name}</div>
+                        )}
+                      </td>
+                      <td className="text-ih-muted px-4 py-3 text-[12px] tabular-nums">
+                        {product.sku}
+                      </td>
+                      <td className="px-4 py-3">
+                        <StatusPill status={product.status} />
+                      </td>
+                      <td className="text-ih-muted px-4 py-3 text-right text-[11px] tabular-nums">
+                        {timeAgo(product.updatedAt)}
                       </td>
                     </tr>
-                  ) : (
-                    recentProducts.map((product) => (
-                      <tr key={product.id} className="border-b border-ih-border last:border-b-0 hover:bg-ih-bg">
-                        <td className="px-4 py-3">
-                          <Link
-                            href={`/admin/products/${product.id}/edit`}
-                            className="font-medium hover:text-ih-accent transition-colors"
-                          >
-                            {product.title}
-                          </Link>
-                          {product.brand && (
-                            <div className="text-[11px] text-ih-muted">{product.brand.name}</div>
-                          )}
-                        </td>
-                        <td className="px-4 py-3 tabular-nums text-[12px] text-ih-muted">{product.sku}</td>
-                        <td className="px-4 py-3">
-                          <StatusPill status={product.status} />
-                        </td>
-                        <td className="px-4 py-3 text-right tabular-nums text-[11px] text-ih-muted">
-                          {timeAgo(product.updatedAt)}
-                        </td>
-                      </tr>
-                    ))
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </Card>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
+        </Card>
 
-          <Card>
-            <CardHead title="Activity feed" />
-            <div className="px-4 py-3 flex flex-col gap-3 text-[12px]">
-              {recentActivity.length === 0 ? (
-                <p className="text-ih-muted py-4 text-center">No recent activity.</p>
-              ) : (
-                recentActivity.map((act) => (
-                  <div key={act.id}>
-                    <span className="font-medium text-ih-ink">{act.account.displayName}</span>
-                    {' — '}
-                    <span className="text-ih-muted">{act.verb.replace(/_/g, ' ')}</span>
-                    {' · '}
-                    <span className="tabular-nums text-[11px] text-ih-muted-2">{timeAgo(act.createdAt)}</span>
-                  </div>
-                ))
-              )}
-            </div>
-          </Card>
-        </div>
+        <Card>
+          <CardHead title="Activity feed" />
+          <div className="flex flex-col gap-3 px-4 py-3 text-[12px]">
+            {recentActivity.length === 0 ? (
+              <p className="text-ih-muted py-4 text-center">No recent activity.</p>
+            ) : (
+              recentActivity.map((act) => (
+                <div key={act.id}>
+                  <span className="text-ih-ink font-medium">{act.account.displayName}</span>
+                  {' — '}
+                  <span className="text-ih-muted">{act.verb.replace(/_/g, ' ')}</span>
+                  {' · '}
+                  <span className="text-ih-muted-2 text-[11px] tabular-nums">
+                    {timeAgo(act.createdAt)}
+                  </span>
+                </div>
+              ))
+            )}
+          </div>
+        </Card>
+      </div>
 
-        {/* Alerts */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-3 mb-4">
-          {productsWithoutDatasheets > 0 && (
-            <Alert type="warn">
-              <b>{productsWithoutDatasheets} active product{productsWithoutDatasheets !== 1 ? 's' : ''} missing datasheets</b> — upload specs to improve RFQ conversion.{' '}
-              <Link href={`/admin/products`} className="underline">Review →</Link>
-            </Alert>
-          )}
-          {productsWithoutDatasheets === 0 && (
-            <Alert type="ok">
-              <b>All active products have datasheets</b> — catalogue is complete.
-            </Alert>
-          )}
-          <Alert type="info">
-            <b>Enquiries</b> — {openRfqs} website RFQs await engineer review.{' '}
-            <Link href={`/admin/enquiries`} className="underline">Open enquiries →</Link>
-          </Alert>
-          <Alert type="ok">
-            <b>System healthy</b> — all services running normally.
-          </Alert>
-        </div>
-
-        {/* Quick links */}
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
-          {[
-            { label: 'Add product', href: `${ADMIN_PREFIX}/products/new`, icon: '+' },
-            { label: 'Bulk import', href: `${ADMIN_PREFIX}/products/import`, icon: '↑' },
-            { label: 'RFQ queue', href: `${ADMIN_PREFIX}/rfqs`, icon: '▤' },
-            { label: 'Customer accounts', href: `${ADMIN_PREFIX}/customers`, icon: '◎' },
-          ].map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="flex items-center gap-3 rounded-lg border border-ih-border bg-ih-surface px-4 py-3.5 text-[13px] font-medium transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
-            >
-              <span className="tabular-nums text-ih-muted text-base">{link.icon}</span>
-              {link.label}
+      {/* Alerts */}
+      <div className="mb-4 grid grid-cols-1 gap-3 xl:grid-cols-3">
+        {productsWithoutDatasheets > 0 && (
+          <Alert type="warn">
+            <b>
+              {productsWithoutDatasheets} active product{productsWithoutDatasheets !== 1 ? 's' : ''}{' '}
+              missing datasheets
+            </b>{' '}
+            — upload specs to improve RFQ conversion.{' '}
+            <Link href={`/admin/products`} className="underline">
+              Review →
             </Link>
-          ))}
-        </div>
+          </Alert>
+        )}
+        {productsWithoutDatasheets === 0 && (
+          <Alert type="ok">
+            <b>All active products have datasheets</b> — catalogue is complete.
+          </Alert>
+        )}
+        <Alert type="info">
+          <b>Enquiries</b> — {openRfqs} website RFQs await engineer review.{' '}
+          <Link href={`/admin/enquiries`} className="underline">
+            Open enquiries →
+          </Link>
+        </Alert>
+        <Alert type="ok">
+          <b>System healthy</b> — all services running normally.
+        </Alert>
+      </div>
+
+      {/* Quick links */}
+      <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
+        {[
+          { label: 'Add product', href: `${ADMIN_PREFIX}/products/new`, icon: '+' },
+          { label: 'Bulk import', href: `${ADMIN_PREFIX}/products/import`, icon: '↑' },
+          { label: 'RFQ queue', href: `${ADMIN_PREFIX}/rfqs`, icon: '▤' },
+          { label: 'Customer accounts', href: `${ADMIN_PREFIX}/customers`, icon: '◎' },
+        ].map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="border-ih-border bg-ih-surface hover:border-ih-border-strong focus-visible:border-ih-accent flex items-center gap-3 rounded-lg border px-4 py-3.5 text-[13px] font-medium transition-[border-color,box-shadow] hover:shadow-sm focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+          >
+            <span className="text-ih-muted text-base tabular-nums">{link.icon}</span>
+            {link.label}
+          </Link>
+        ))}
+      </div>
     </AdminPageShell>
   )
 }
 
 function KpiCard({ label, value, delta }: { label: string; value: string; delta: string }) {
   return (
-    <div className="flex flex-col gap-1.5 rounded-lg border border-ih-border bg-ih-surface p-5">
-      <p className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
-      <p className="tabular-nums text-[22px] font-medium tracking-tight leading-none">{value}</p>
-      <p className="tabular-nums text-[11px] text-ih-muted-2">{delta}</p>
+    <div className="border-ih-border bg-ih-surface flex flex-col gap-1.5 rounded-lg border p-5">
+      <p className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">{label}</p>
+      <p className="text-[22px] leading-none font-medium tracking-tight tabular-nums">{value}</p>
+      <p className="text-ih-muted-2 text-[11px] tabular-nums">{delta}</p>
     </div>
   )
 }
 
 function Card({ children }: { children: React.ReactNode }) {
   // overflow-hidden so the table's tinted header row follows the corners.
-  return <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">{children}</div>
+  return (
+    <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
+      {children}
+    </div>
+  )
 }
 
-function CardHead({ title, subtitle, action }: { title: string; subtitle?: string; action?: React.ReactNode }) {
+function CardHead({
+  title,
+  subtitle,
+  action,
+}: {
+  title: string
+  subtitle?: string
+  action?: React.ReactNode
+}) {
   return (
-    <div className="flex justify-between items-center gap-3 px-4 py-3.5 border-b border-ih-border">
+    <div className="border-ih-border flex items-center justify-between gap-3 border-b px-4 py-3.5">
       <div>
-        <h3 className="font-medium text-[14px]">{title}</h3>
-        {subtitle && <p className="text-[12px] text-ih-muted mt-0.5">{subtitle}</p>}
+        <h3 className="text-[14px] font-medium">{title}</h3>
+        {subtitle && <p className="text-ih-muted mt-0.5 text-[12px]">{subtitle}</p>}
       </div>
       {action}
     </div>
@@ -246,7 +284,9 @@ function Alert({ type, children }: { type: 'warn' | 'info' | 'ok'; children: Rea
     ok: 'border-ih-success/30 bg-ih-success-soft text-ih-success-ink',
   }
   return (
-    <div className={`flex items-start gap-3 rounded-lg border px-4 py-3 text-[13px] leading-relaxed ${styles[type]}`}>
+    <div
+      className={`flex items-start gap-3 rounded-lg border px-4 py-3 text-[13px] leading-relaxed ${styles[type]}`}
+    >
       {children}
     </div>
   )
@@ -259,7 +299,9 @@ function StatusPill({ status }: { status: string }) {
     discontinued: 'bg-[oklch(0.95_0.02_25)] text-ih-danger-ink',
   }
   return (
-    <span className={`rounded-[3px] tabular-nums text-[10.5px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
+    <span
+      className={`rounded-[3px] px-2 py-0.5 text-[10.5px] tracking-[0.06em] uppercase tabular-nums ${styles[status] ?? styles['draft'] ?? ''}`}
+    >
       {status}
     </span>
   )

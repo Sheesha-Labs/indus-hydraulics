@@ -32,12 +32,37 @@ async function uniqueSlug(base: string, ignoreId?: string): Promise<string> {
 
 const CreateBrandSchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(120),
-  slug: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : '')),
-  country: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
-  description: z.string().trim().max(2000).optional().transform((v) => (v && v.length ? v : null)),
+  slug: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : '')),
+  country: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  description: z
+    .string()
+    .trim()
+    .max(2000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isAuthorizedDistributor: z.boolean().default(false),
-  seoTitle: z.string().trim().max(180).optional().transform((v) => (v && v.length ? v : null)),
-  seoDescription: z.string().trim().max(320).optional().transform((v) => (v && v.length ? v : null)),
+  seoTitle: z
+    .string()
+    .trim()
+    .max(180)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  seoDescription: z
+    .string()
+    .trim()
+    .max(320)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isPublished: z.boolean().default(false),
 })
 
@@ -81,11 +106,31 @@ const UpdateBrandSchema = z.object({
   id: z.string().uuid(),
   name: z.string().trim().min(1).max(120),
   slug: z.string().trim().min(1).max(80),
-  country: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
-  description: z.string().trim().max(2000).optional().transform((v) => (v && v.length ? v : null)),
+  country: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  description: z
+    .string()
+    .trim()
+    .max(2000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isAuthorizedDistributor: z.boolean().default(false),
-  seoTitle: z.string().trim().max(180).optional().transform((v) => (v && v.length ? v : null)),
-  seoDescription: z.string().trim().max(320).optional().transform((v) => (v && v.length ? v : null)),
+  seoTitle: z
+    .string()
+    .trim()
+    .max(180)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  seoDescription: z
+    .string()
+    .trim()
+    .max(320)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isPublished: z.boolean().default(false),
 })
 
@@ -138,7 +183,7 @@ export async function deleteBrand(id: string): Promise<Result<void>> {
       return fail(
         'PRECONDITION_FAILED',
         `Cannot delete: ${productCount} product${productCount === 1 ? '' : 's'} reference this brand`,
-        { _: ['Reassign or delete the products first'] },
+        { _: ['Reassign or delete the products first'] }
       )
     }
 

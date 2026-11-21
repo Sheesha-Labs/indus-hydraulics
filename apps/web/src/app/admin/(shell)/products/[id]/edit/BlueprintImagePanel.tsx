@@ -118,21 +118,21 @@ export default function BlueprintImagePanel({
   }
 
   return (
-    <section className="rounded-lg border border-ih-border bg-ih-surface">
-      <div className="grid grid-cols-[1fr_150px] gap-5 border-b border-ih-border p-5">
+    <section className="border-ih-border bg-ih-surface rounded-lg border">
+      <div className="border-ih-border grid grid-cols-[1fr_150px] gap-5 border-b p-5">
         <div>
           <div className="mb-2 flex items-center gap-2">
-            <span className="bg-ih-navy px-2 py-1 tabular-nums text-[11px] tracking-[0.12em] text-ih-bg">
+            <span className="bg-ih-navy text-ih-bg px-2 py-1 text-[11px] tracking-[0.12em] tabular-nums">
               BLUEPRINT STUDIO
             </span>
-            <span className="tabular-nums text-[11px] text-ih-muted">
+            <span className="text-ih-muted text-[11px] tabular-nums">
               GPT-5.5 · GPT IMAGE · HUMAN APPROVAL
             </span>
           </div>
-          <h3 className="text-[18px] font-medium text-ih-ink">
+          <h3 className="text-ih-ink text-[18px] font-medium">
             Generate an INDUS technical product plate
           </h3>
-          <p className="mt-1 max-w-2xl text-[12px] leading-5 text-ih-muted">
+          <p className="text-ih-muted mt-1 max-w-2xl text-[12px] leading-5">
             Generate a complete image prompt from the product title, review or edit it, then send
             that exact prompt into the approved INDUS blueprint image workflow. Nothing reaches the
             product page until you accept it.
@@ -142,19 +142,19 @@ export default function BlueprintImagePanel({
         <img
           src={referenceImageUrl}
           alt="Approved INDUS technical blueprint style reference"
-          className="aspect-[4/3] w-[150px] border border-ih-border object-cover"
+          className="border-ih-border aspect-[4/3] w-[150px] border object-cover"
         />
       </div>
 
       <div className="p-5">
         {error && (
-          <div className="rounded-lg bg-[var(--color-ih-danger)]/10 mb-4 border border-ih-danger px-4 py-3 text-[12px] text-ih-danger">
+          <div className="border-ih-danger text-ih-danger mb-4 rounded-lg border bg-[var(--color-ih-danger)]/10 px-4 py-3 text-[12px]">
             {error}
           </div>
         )}
 
         {!generationAvailable && (
-          <div className="mb-4 rounded-lg border border-ih-border bg-ih-surface-2 px-4 py-3 text-[12px] text-ih-muted">
+          <div className="border-ih-border bg-ih-surface-2 text-ih-muted mb-4 rounded-lg border px-4 py-3 text-[12px]">
             Generation is installed but inactive. Configure <code>OPENAI_API_KEY</code> in the admin
             environment and ensure the Inngest worker is connected.
           </div>
@@ -163,15 +163,13 @@ export default function BlueprintImagePanel({
         {!active && (
           <form action={queue} className="flex flex-col gap-4">
             <input type="hidden" name="productId" value={productId} />
-            <div className="rounded-lg flex items-end justify-between gap-4 border border-ih-border bg-ih-bg p-4">
+            <div className="border-ih-border bg-ih-bg flex items-end justify-between gap-4 rounded-lg border p-4">
               <div>
-                <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-muted">
+                <p className="text-ih-muted text-[11px] tracking-[0.12em] tabular-nums">
                   TITLE-ONLY SOURCE
                 </p>
-                <p className="mt-1 text-[14px] font-medium text-ih-ink">
-                  {productTitle}
-                </p>
-                <p className="mt-1 text-[11px] text-ih-muted">
+                <p className="text-ih-ink mt-1 text-[14px] font-medium">{productTitle}</p>
+                <p className="text-ih-muted mt-1 text-[11px]">
                   Catalogue descriptions and specifications are not sent to the prompt author.
                 </p>
               </div>
@@ -179,7 +177,7 @@ export default function BlueprintImagePanel({
                 type="button"
                 onClick={generatePrompt}
                 disabled={pending || !generationAvailable}
-                className="h-10 shrink-0 bg-ih-navy px-5 tabular-nums text-[11px] font-medium text-ih-bg hover:bg-ih-ink disabled:cursor-not-allowed disabled:opacity-40"
+                className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-10 shrink-0 px-5 text-[11px] font-medium tabular-nums disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {pending ? 'AUTHORING…' : prompt ? 'REGENERATE PROMPT' : 'GENERATE PROMPT'}
               </button>
@@ -188,7 +186,7 @@ export default function BlueprintImagePanel({
             <label className="block">
               <span className="mb-1 flex items-center justify-between gap-4 text-[12px] font-medium">
                 <span>Ready image prompt</span>
-                <span className="tabular-nums text-[11px] font-normal text-ih-muted">
+                <span className="text-ih-muted text-[11px] font-normal tabular-nums">
                   {prompt.length.toLocaleString()} / 12,000
                 </span>
               </span>
@@ -202,7 +200,7 @@ export default function BlueprintImagePanel({
                 rows={16}
                 maxLength={12000}
                 placeholder="Select Generate prompt to author a complete blueprint image brief from this product title."
-                className="w-full rounded-lg border border-ih-border bg-ih-surface px-3 py-3 tabular-nums text-[11px] leading-5"
+                className="border-ih-border bg-ih-surface w-full rounded-lg border px-3 py-3 text-[11px] leading-5 tabular-nums"
               />
             </label>
             <div className="flex items-center justify-between gap-4">
@@ -211,18 +209,18 @@ export default function BlueprintImagePanel({
                   type="button"
                   onClick={copyPrompt}
                   disabled={!prompt}
-                  className="rounded-md h-9 border border-ih-border px-4 text-[12px] text-ih-ink-2 disabled:cursor-not-allowed disabled:opacity-40"
+                  className="border-ih-border text-ih-ink-2 h-9 rounded-md border px-4 text-[12px] disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   {copied ? 'Copied' : 'Copy prompt'}
                 </button>
-                <p className="text-[11px] text-ih-muted">
+                <p className="text-ih-muted text-[11px]">
                   Edit freely. The image job uses the text shown above verbatim.
                 </p>
               </div>
               <button
                 type="submit"
                 disabled={pending || !generationAvailable || prompt.trim().length < 400}
-                className="h-10 shrink-0 bg-ih-accent px-5 tabular-nums text-[11px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover disabled:cursor-not-allowed disabled:opacity-40"
+                className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-10 shrink-0 px-5 text-[11px] font-medium tabular-nums disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {pending ? 'WORKING…' : 'GENERATE IMAGE DRAFT'}
               </button>
@@ -231,28 +229,28 @@ export default function BlueprintImagePanel({
         )}
 
         {active && context && isProcessing && (
-          <div className="flex min-h-44 items-center justify-between gap-6 rounded-lg border border-ih-border bg-ih-bg p-6">
+          <div className="border-ih-border bg-ih-bg flex min-h-44 items-center justify-between gap-6 rounded-lg border p-6">
             <div>
-              <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-accent">
+              <p className="text-ih-accent text-[11px] tracking-[0.12em] tabular-nums">
                 {context.generationStatus === 'queued' ? 'QUEUED' : 'GENERATING'}
               </p>
               <p className="mt-2 text-[15px] font-medium">
                 Building blueprint attempt {context.attempts}
               </p>
-              <p className="mt-1 text-[12px] text-ih-muted">
+              <p className="text-ih-muted mt-1 text-[12px]">
                 This page refreshes automatically while the Inngest job runs.
               </p>
             </div>
-            <div className="bg-ih-accent/10 h-12 w-12 animate-pulse border-2 border-ih-accent" />
+            <div className="bg-ih-accent/10 border-ih-accent h-12 w-12 animate-pulse border-2" />
           </div>
         )}
 
         {active && context?.generationStatus === 'failed' && (
-          <div className="rounded-lg bg-[var(--color-ih-danger)]/5 border border-ih-danger p-5">
-            <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-danger">
+          <div className="border-ih-danger rounded-lg border bg-[var(--color-ih-danger)]/5 p-5">
+            <p className="text-ih-danger text-[11px] tracking-[0.12em] tabular-nums">
               GENERATION FAILED
             </p>
-            <p className="mt-2 text-[12px] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-2 text-[12px]">
               {context.error ?? 'The background job failed without an error message.'}
             </p>
             <div className="mt-4 flex gap-2">
@@ -260,7 +258,7 @@ export default function BlueprintImagePanel({
                 type="button"
                 onClick={retry}
                 disabled={pending || !generationAvailable}
-                className="h-9 bg-ih-navy px-4 text-[12px] font-medium text-ih-bg disabled:opacity-40"
+                className="bg-ih-navy text-ih-bg h-9 px-4 text-[12px] font-medium disabled:opacity-40"
               >
                 Retry
               </button>
@@ -268,7 +266,7 @@ export default function BlueprintImagePanel({
                 type="button"
                 onClick={reject}
                 disabled={pending}
-                className="rounded-md h-9 border border-ih-border px-4 text-[12px] text-ih-muted disabled:opacity-40"
+                className="border-ih-border text-ih-muted h-9 rounded-md border px-4 text-[12px] disabled:opacity-40"
               >
                 Dismiss
               </button>
@@ -283,19 +281,19 @@ export default function BlueprintImagePanel({
               <img
                 src={context.storagePath}
                 alt={`${context.productSnapshot.title} generated blueprint draft`}
-                className="aspect-[4/3] w-full rounded-lg border border-ih-border bg-ih-surface object-contain"
+                className="border-ih-border bg-ih-surface aspect-[4/3] w-full rounded-lg border object-contain"
               />
-              <p className="mt-2 tabular-nums text-[11px] text-ih-muted">
+              <p className="text-ih-muted mt-2 text-[11px] tabular-nums">
                 DRAFT · ATTEMPT {context.attempts} · NOT YET ON PRODUCT PAGE
               </p>
             </div>
 
             <div className="flex flex-col gap-5">
               <div>
-                <p className="tabular-nums text-[11px] tracking-[0.12em] text-ih-muted">
+                <p className="text-ih-muted text-[11px] tracking-[0.12em] tabular-nums">
                   REVIEW CHECKLIST
                 </p>
-                <ul className="mt-2 flex flex-col gap-1 text-[12px] leading-5 text-ih-ink-2">
+                <ul className="text-ih-ink-2 mt-2 flex flex-col gap-1 text-[12px] leading-5">
                   <li>Product form and cutaway are technically plausible</li>
                   <li>Labels, numbers, units, and manufacturer identity are correct</li>
                   <li>No invented certifications, pressure ratings, or materials</li>
@@ -311,7 +309,7 @@ export default function BlueprintImagePanel({
                   rows={4}
                   maxLength={1000}
                   placeholder="Example: Correct the temperature label to -40°C to +100°C and make the twin steel helix more visible."
-                  className="w-full rounded-lg border border-ih-border bg-ih-surface px-3 py-2 text-[13px] leading-5"
+                  className="border-ih-border bg-ih-surface w-full rounded-lg border px-3 py-2 text-[13px] leading-5"
                 />
               </label>
 
@@ -328,7 +326,7 @@ export default function BlueprintImagePanel({
                   type="button"
                   onClick={refine}
                   disabled={pending || refinement.trim().length < 3}
-                  className="h-10 bg-ih-navy px-5 text-[12px] font-medium text-ih-bg disabled:opacity-40"
+                  className="bg-ih-navy text-ih-bg h-10 px-5 text-[12px] font-medium disabled:opacity-40"
                 >
                   Refine draft
                 </button>
@@ -336,17 +334,17 @@ export default function BlueprintImagePanel({
                   type="button"
                   onClick={reject}
                   disabled={pending}
-                  className="rounded-md h-10 border border-ih-border px-5 text-[12px] text-ih-muted disabled:opacity-40"
+                  className="border-ih-border text-ih-muted h-10 rounded-md border px-5 text-[12px] disabled:opacity-40"
                 >
                   Reject
                 </button>
               </div>
 
-              <details className="rounded-lg border border-ih-border bg-ih-bg">
-                <summary className="cursor-pointer px-3 py-2 tabular-nums text-[11px] tracking-[0.1em] text-ih-muted">
+              <details className="border-ih-border bg-ih-bg rounded-lg border">
+                <summary className="text-ih-muted cursor-pointer px-3 py-2 text-[11px] tracking-[0.1em] tabular-nums">
                   VIEW EXACT GENERATION PROMPT
                 </summary>
-                <pre className="max-h-72 overflow-auto whitespace-pre-wrap border-t border-ih-border p-3 text-[11px] leading-4 text-ih-ink-2">
+                <pre className="border-ih-border text-ih-ink-2 max-h-72 overflow-auto border-t p-3 text-[11px] leading-4 whitespace-pre-wrap">
                   {context.prompt}
                 </pre>
               </details>
@@ -355,7 +353,7 @@ export default function BlueprintImagePanel({
         )}
 
         {active && !context && (
-          <div className="rounded-lg border border-ih-danger p-4 text-[12px] text-ih-danger">
+          <div className="border-ih-danger text-ih-danger rounded-lg border p-4 text-[12px]">
             This draft has invalid generation metadata and cannot be reviewed safely.
           </div>
         )}

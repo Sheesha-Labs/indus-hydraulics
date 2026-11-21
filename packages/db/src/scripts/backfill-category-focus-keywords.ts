@@ -58,7 +58,9 @@ async function main() {
   }
 
   const full = planned.filter((p) => p.weight === CATEGORY_KEYWORD_MIN_WEIGHT).length
-  console.log(`\nkeywords scoring a full ${CATEGORY_KEYWORD_MIN_WEIGHT}/${CATEGORY_KEYWORD_MIN_WEIGHT}: ${full}/${planned.length}`)
+  console.log(
+    `\nkeywords scoring a full ${CATEGORY_KEYWORD_MIN_WEIGHT}/${CATEGORY_KEYWORD_MIN_WEIGHT}: ${full}/${planned.length}`
+  )
 
   if (!apply) {
     console.log('\nDRY RUN — pass --apply to write.')

@@ -59,7 +59,12 @@ function BlockSwitch({ block, figureMedia }: { block: BodyBlock; figureMedia: Fi
     case 'problem_solution':
       return <ProblemSolutionBlockView block={block} />
     case 'figure':
-      return <FigureBlockView block={block} media={block.imageId ? figureMedia[block.imageId] ?? null : null} />
+      return (
+        <FigureBlockView
+          block={block}
+          media={block.imageId ? (figureMedia[block.imageId] ?? null) : null}
+        />
+      )
     case 'pull_quote':
       return <PullQuoteBlockView block={block} />
     case 'approach_grid':

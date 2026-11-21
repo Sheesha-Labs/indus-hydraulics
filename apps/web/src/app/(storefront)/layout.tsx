@@ -47,7 +47,7 @@ const getSeoSetting = unstable_cache(
       .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
       .catch(() => null),
   ['seo-settings'],
-  { revalidate: 3600, tags: ['seo-settings'] },
+  { revalidate: 3600, tags: ['seo-settings'] }
 )
 
 /**
@@ -129,7 +129,6 @@ export const metadata: Metadata = {
  */
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim()
 
-
 export default async function StorefrontLayout({ children }: { children: React.ReactNode }) {
   // Pull admin-managed Org/WebSite JSON-LD overrides AND StoreSettings for
   // contact / legal details that flow into the Organization schema. Both
@@ -178,37 +177,37 @@ export default async function StorefrontLayout({ children }: { children: React.R
   // rendered DOM is identical to before the merge.
   return (
     <>
-        <SkipToContent />
-        {/* Call-back prompt (exit intent, inactivity, tab return). Right after
+      <SkipToContent />
+      {/* Call-back prompt (exit intent, inactivity, tab return). Right after
             the skip link so its non-modal corner card is early in the tab
             order; the surfaces themselves load only when a trigger fires. */}
-        <CallbackPrompt
-          openingHours={hq?.openingHours ?? []}
-          deskPhone={hq?.telephone ?? settings.contactPhone ?? '+971 52 2477942'}
-          deskEmail={hq?.email ?? settings.contactEmail ?? 'sales@indushydraulics.me'}
-        />
-        <SiteHeader />
-        {/* A real <main> with an id, so the skip link has somewhere to go and
+      <CallbackPrompt
+        openingHours={hq?.openingHours ?? []}
+        deskPhone={hq?.telephone ?? settings.contactPhone ?? '+971 52 2477942'}
+        deskEmail={hq?.email ?? settings.contactEmail ?? 'sales@indushydraulics.me'}
+      />
+      <SiteHeader />
+      {/* A real <main> with an id, so the skip link has somewhere to go and
             assistive tech has a landmark. This was a bare div. */}
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <SiteFooter />
-        <CommandPalette />
-        <CompareTrayBadge />
-        <JsonLd data={[orgLd, websiteLd]} />
-        <SpeedInsights />
-        {/* PostHog client init + pageview tracking. No-ops without
+      <main id="main" className="flex-1">
+        {children}
+      </main>
+      <SiteFooter />
+      <CommandPalette />
+      <CompareTrayBadge />
+      <JsonLd data={[orgLd, websiteLd]} />
+      <SpeedInsights />
+      {/* PostHog client init + pageview tracking. No-ops without
             NEXT_PUBLIC_POSTHOG_KEY. Suspense boundary required because
             AnalyticsProvider uses useSearchParams. */}
-        <Suspense fallback={null}>
-          <AnalyticsProvider />
-        </Suspense>
-        {/* Google Analytics 4. Only rendered when NEXT_PUBLIC_GA_MEASUREMENT_ID
+      <Suspense fallback={null}>
+        <AnalyticsProvider />
+      </Suspense>
+      {/* Google Analytics 4. Only rendered when NEXT_PUBLIC_GA_MEASUREMENT_ID
             is set; locally and on un-provisioned previews this emits nothing.
             Used mainly so Google Search Console can attribute organic
             traffic — campaign + product analytics still live in PostHog. */}
-        {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
+      {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
     </>
   )
 }

@@ -33,12 +33,23 @@ vi.mock('../email-branding', () => ({
   }),
 }))
 
-const { confirmSubscription, recordEmailEvent, requestSubscription, unsubscribeByToken, lookupConfirmation } =
-  await import('./service')
+const {
+  confirmSubscription,
+  recordEmailEvent,
+  requestSubscription,
+  unsubscribeByToken,
+  lookupConfirmation,
+} = await import('./service')
 
 const NOW = new Date('2026-11-08T12:00:00Z')
 const TOKEN = 'a'.repeat(48)
-const signup = { email: 'buyer@plant.ae', source: 'homepage_footer' as const, ipHash: 'ip1', userAgent: 'UA', now: NOW }
+const signup = {
+  email: 'buyer@plant.ae',
+  source: 'homepage_footer' as const,
+  ipHash: 'ip1',
+  userAgent: 'UA',
+  now: NOW,
+}
 
 beforeEach(() => {
   vi.clearAllMocks()
@@ -84,7 +95,10 @@ describe('requestSubscription', () => {
   })
 
   it('does nothing for an already-confirmed address', async () => {
-    dbMock.newsletterSubscriber.findUnique.mockResolvedValue({ status: 'confirmed', confirmationSentAt: null })
+    dbMock.newsletterSubscriber.findUnique.mockResolvedValue({
+      status: 'confirmed',
+      confirmationSentAt: null,
+    })
     expect(await requestSubscription(signup)).toBe('already_confirmed')
     expect(dbMock.newsletterSubscriber.upsert).not.toHaveBeenCalled()
     expect(sendEmail).not.toHaveBeenCalled()
@@ -96,14 +110,17 @@ describe('requestSubscription', () => {
       expect(await requestSubscription(signup)).toBe('silent')
     }
     expect(dbMock.newsletterSuppression.findUnique).toHaveBeenCalledWith(
-      expect.objectContaining({ where: { emailHash: newsletterEmailHash('buyer@plant.ae') } }),
+      expect.objectContaining({ where: { emailHash: newsletterEmailHash('buyer@plant.ae') } })
     )
     expect(sendEmail).not.toHaveBeenCalled()
   })
 
   it('lets someone who unsubscribed sign up again (double opt-in still applies)', async () => {
     dbMock.newsletterSuppression.findUnique.mockResolvedValue({ reason: 'unsubscribed' })
-    dbMock.newsletterSubscriber.findUnique.mockResolvedValue({ status: 'unsubscribed', confirmationSentAt: null })
+    dbMock.newsletterSubscriber.findUnique.mockResolvedValue({
+      status: 'unsubscribed',
+      confirmationSentAt: null,
+    })
     expect(await requestSubscription(signup)).toBe('sent')
     expect(sendEmail).toHaveBeenCalledTimes(1)
   })
@@ -141,7 +158,10 @@ describe('confirmation', () => {
 
   it('looks the token up by its hash and confirms nothing on lookup', async () => {
     dbMock.newsletterSubscriber.findUnique.mockResolvedValue(pendingRow)
-    expect(await lookupConfirmation(TOKEN, NOW)).toEqual({ status: 'ready', maskedEmail: 'b…@plant.ae' })
+    expect(await lookupConfirmation(TOKEN, NOW)).toEqual({
+      status: 'ready',
+      maskedEmail: 'b…@plant.ae',
+    })
     expect(dbMock.newsletterSubscriber.findUnique.mock.calls[0]![0].where).toEqual({
       confirmationTokenHash: hashNewsletterToken(TOKEN),
     })
@@ -213,7 +233,12 @@ describe('unsubscribeByToken', () => {
 })
 
 describe('recordEmailEvent', () => {
-  const base = { emailId: 're_1', recipients: ['Buyer <Buyer@Plant.ae>'], at: NOW, senderDomain: 'news.indushydraulics.com' }
+  const base = {
+    emailId: 're_1',
+    recipients: ['Buyer <Buyer@Plant.ae>'],
+    at: NOW,
+    senderDomain: 'news.indushydraulics.com',
+  }
 
   it('stamps a campaign delivery when no sent_emails row matches', async () => {
     dbMock.sentEmail.updateMany.mockResolvedValueOnce({ count: 0 })
@@ -257,7 +282,10 @@ describe('recordEmailEvent', () => {
 
   it('unsubscribes the address from every list on a complaint', async () => {
     await recordEmailEvent({ ...base, type: 'complained', permanent: false })
-    expect(dbMock.newsletterListContact.updateMany.mock.calls[0]![0].data).toEqual({ status: 'unsubscribed', unsubscribedAt: NOW })
+    expect(dbMock.newsletterListContact.updateMany.mock.calls[0]![0].data).toEqual({
+      status: 'unsubscribed',
+      unsubscribedAt: NOW,
+    })
   })
 
   it('ignores a transient bounce', async () => {
@@ -270,11 +298,19 @@ describe('recordEmailEvent', () => {
 
   it('suppresses as complained BEFORE unsubscribing, so the reason survives the trigger', async () => {
     const order: string[] = []
-    dbMock.newsletterSuppression.createMany.mockImplementation(async () => (order.push('suppress'), { count: 1 }))
-    dbMock.newsletterSubscriber.updateMany.mockImplementation(async () => (order.push('status'), { count: 1 }))
+    dbMock.newsletterSuppression.createMany.mockImplementation(
+      async () => (order.push('suppress'), { count: 1 })
+    )
+    dbMock.newsletterSubscriber.updateMany.mockImplementation(
+      async () => (order.push('status'), { count: 1 })
+    )
     await recordEmailEvent({ ...base, type: 'complained', permanent: false })
     expect(order).toEqual(['suppress', 'status'])
-    expect(dbMock.newsletterSuppression.createMany.mock.calls[0]![0].data[0].reason).toBe('complained')
-    expect(dbMock.newsletterSubscriber.updateMany.mock.calls[0]![0].data).toMatchObject({ status: 'unsubscribed' })
+    expect(dbMock.newsletterSuppression.createMany.mock.calls[0]![0].data[0].reason).toBe(
+      'complained'
+    )
+    expect(dbMock.newsletterSubscriber.updateMany.mock.calls[0]![0].data).toMatchObject({
+      status: 'unsubscribed',
+    })
   })
 })

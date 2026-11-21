@@ -146,7 +146,7 @@ export type LookupResult = {
  * what "usable" meant.
  */
 export async function loadActivationLink(
-  rawToken: string,
+  rawToken: string
 ): Promise<{ invitation: LookupResult | null; state: LinkState }> {
   const invitation = await findByToken(rawToken)
   return { invitation, state: linkState(invitation, Date.now()) }

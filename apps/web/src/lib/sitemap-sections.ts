@@ -179,7 +179,9 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
 async function productsSection(group: ProductSitemapGroup): Promise<MetadataRoute.Sitemap> {
   // Every category (published or not — a product on an unpublished shelf is
   // still a live page) so each product resolves to its root group.
-  const categories = await db.category.findMany({ select: { id: true, parentId: true, slug: true } })
+  const categories = await db.category.findMany({
+    select: { id: true, parentId: true, slug: true },
+  })
   const groupIds = categoryIdsForGroup(categoryGroups(categories), group)
   const inGroup =
     group === 'other'

@@ -9,7 +9,7 @@ const storage = (bucket: string, key: string) =>
 describe('toCrawlableMediaUrl', () => {
   it('maps a public product image onto the same-origin route', () => {
     expect(
-      toCrawlableMediaUrl(storage('product-images', 'products/IH-1/IH-1.png'), BASE, SUPABASE),
+      toCrawlableMediaUrl(storage('product-images', 'products/IH-1/IH-1.png'), BASE, SUPABASE)
     ).toBe(`${BASE}/media/product-images/products/IH-1/IH-1.png`)
   })
 
@@ -21,16 +21,16 @@ describe('toCrawlableMediaUrl', () => {
 
   it('maps blog and service images too', () => {
     expect(toCrawlableMediaUrl(storage('blog-images', 'x/hero.jpg'), BASE, SUPABASE)).toBe(
-      `${BASE}/media/blog-images/x/hero.jpg`,
+      `${BASE}/media/blog-images/x/hero.jpg`
     )
     expect(toCrawlableMediaUrl(storage('service-images', 'y.webp'), BASE, SUPABASE)).toBe(
-      `${BASE}/media/service-images/y.webp`,
+      `${BASE}/media/service-images/y.webp`
     )
   })
 
   it('tolerates a trailing slash on the base URL', () => {
     expect(toCrawlableMediaUrl(storage('blog-images', 'a.jpg'), `${BASE}/`, SUPABASE)).toBe(
-      `${BASE}/media/blog-images/a.jpg`,
+      `${BASE}/media/blog-images/a.jpg`
     )
   })
 
@@ -62,14 +62,14 @@ describe('toCrawlableMediaUrl', () => {
 
 describe('storageUrlForMediaPath', () => {
   it('resolves a bucket and key back to the storage URL', () => {
-    expect(storageUrlForMediaPath(['product-images', 'products', 'IH-1', 'IH-1.png'], SUPABASE)).toBe(
-      storage('product-images', 'products/IH-1/IH-1.png'),
-    )
+    expect(
+      storageUrlForMediaPath(['product-images', 'products', 'IH-1', 'IH-1.png'], SUPABASE)
+    ).toBe(storage('product-images', 'products/IH-1/IH-1.png'))
   })
 
   it('re-encodes decoded segments', () => {
     expect(storageUrlForMediaPath(['blog-images', 'a b.jpg'], SUPABASE)).toBe(
-      storage('blog-images', 'a%20b.jpg'),
+      storage('blog-images', 'a%20b.jpg')
     )
   })
 

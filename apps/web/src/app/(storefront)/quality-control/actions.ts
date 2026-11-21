@@ -34,8 +34,7 @@ import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
  */
 
 type SubmitResult =
-  | { success: true; code: string; token: string }
-  | { success: false; error: string }
+  { success: true; code: string; token: string } | { success: false; error: string }
 
 const EnquirySchema = z.object({
   company: z.string().trim().min(1, 'a company name').max(200),
@@ -61,7 +60,10 @@ export async function submitQualityControlEnquiry(formData: FormData): Promise<S
 
   if (!parsed.success) {
     const issue = parsed.error.issues[0]
-    return { success: false, error: `Please check the form — we need ${issue?.message ?? 'the missing details'}.` }
+    return {
+      success: false,
+      error: `Please check the form — we need ${issue?.message ?? 'the missing details'}.`,
+    }
   }
 
   const input = parsed.data
@@ -69,7 +71,10 @@ export async function submitQualityControlEnquiry(formData: FormData): Promise<S
   const documents = allowedChoice(input.documents, enquiry.choices)
 
   if (formData.get('attachmentsPending') === '1') {
-    return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }
+    return {
+      success: false,
+      error: 'An attachment is still uploading. Give it a moment and try again.',
+    }
   }
 
   const attachments = readAttachments(formData.get('attachments'))
@@ -138,7 +143,12 @@ export async function submitQualityControlEnquiry(formData: FormData): Promise<S
         },
       })
       await tx.rfqAttachment.create({
-        data: { rfqId: created.id, mediaId: media.id, uploaderType: 'contact', uploaderId: contactId },
+        data: {
+          rfqId: created.id,
+          mediaId: media.id,
+          uploaderType: 'contact',
+          uploaderId: contactId,
+        },
       })
     }
 

@@ -70,7 +70,8 @@ async function main() {
 
   for (const r of toPublish) console.log(`  publish   ${r.sku.padEnd(22)} ${r.title}`)
   for (const r of alreadyActive) console.log(`  skip      ${r.sku.padEnd(22)} already active`)
-  for (const r of other) console.log(`  SKIP      ${r.sku.padEnd(22)} status is "${r.status}" — left alone`)
+  for (const r of other)
+    console.log(`  SKIP      ${r.sku.padEnd(22)} status is "${r.status}" — left alone`)
   for (const s of missing) console.log(`  MISSING   ${s.padEnd(22)} not in the database`)
 
   if (!dryRun && toPublish.length > 0) {
@@ -88,7 +89,7 @@ async function main() {
   if (missing.length > 0) {
     console.log(
       `\nWARNING: ${missing.length} SKU(s) were not found. Run the import first:\n` +
-        '  pnpm --filter @indus/db db:import src/imports/2026-08-21-alfeel-gap-fill.ts',
+        '  pnpm --filter @indus/db db:import src/imports/2026-08-21-alfeel-gap-fill.ts'
     )
   }
 }

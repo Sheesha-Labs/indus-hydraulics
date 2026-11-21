@@ -14,10 +14,7 @@ const TabsList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     ref={ref}
-    className={cn(
-      'flex border-b border-ih-border gap-0',
-      className
-    )}
+    className={cn('border-ih-border flex gap-0 border-b', className)}
     {...props}
   />
 ))
@@ -31,10 +28,10 @@ const TabsTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       'inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium',
-      'text-ih-muted border-b-2 border-transparent -mb-px',
+      'text-ih-muted -mb-px border-b-2 border-transparent',
       'hover:text-ih-ink-2 transition-colors',
       'data-[state=active]:text-ih-ink data-[state=active]:border-ih-ink',
-      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent',
+      'focus-visible:ring-ih-accent focus-visible:ring-2 focus-visible:outline-none',
       'disabled:pointer-events-none disabled:opacity-50',
       className
     )}
@@ -64,7 +61,7 @@ const SegmentedTabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      'inline-flex items-center bg-ih-surface-2 border border-ih-border p-0.5 gap-0.5',
+      'bg-ih-surface-2 border-ih-border inline-flex items-center gap-0.5 border p-0.5',
       className
     )}
     {...props}
@@ -81,8 +78,8 @@ const SegmentedTabsTrigger = React.forwardRef<
     className={cn(
       'inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium',
       'text-ih-muted transition-colors',
-      'data-[state=active]:bg-ih-surface data-[state=active]:text-ih-ink data-[state=active]:border data-[state=active]:border-ih-border',
-      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent',
+      'data-[state=active]:bg-ih-surface data-[state=active]:text-ih-ink data-[state=active]:border-ih-border data-[state=active]:border',
+      'focus-visible:ring-ih-accent focus-visible:ring-2 focus-visible:outline-none',
       'disabled:pointer-events-none disabled:opacity-50',
       className
     )}

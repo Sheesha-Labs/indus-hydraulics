@@ -27,7 +27,8 @@ const db = new PrismaClient()
 
 const SKU = 'IH-ENE-GAUGE-G40'
 
-const TITLE = 'Enerpac 4" Hydraulic Pressure Gauges: Glycerine-Filled G-Series and High-Cycle Dry H-Series'
+const TITLE =
+  'Enerpac 4" Hydraulic Pressure Gauges: Glycerine-Filled G-Series and High-Cycle Dry H-Series'
 const SEO_TITLE = 'Enerpac 4" Hydraulic Pressure Gauges: G-Series and H-Series'
 const SHORT =
   'Enerpac 100 mm (4") lower-mount hydraulic pressure gauges: glycerine-filled G-series to 10,000 and 15,000 psi, and dry H-series high-cycle gauges to 10,000 psi, with 1/4" or 1/2" NPTF connections.'
@@ -47,12 +48,30 @@ const LONG = [
 ].join('')
 
 const VARIANTS: Record<string, { item: string; ports: string }> = {
-  G4088L: { item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, Glycerin Filled, Lower Mount, 1/4" NPTF', ports: '1/4" NPTF' },
-  G4039L: { item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, Glycerin Filled, Lower Mount, 1/2" NPTF', ports: '1/2" NPTF' },
-  H4049L: { item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, High Cycle, Dry, Lower Mount, 1/4" NPTF', ports: '1/4" NPTF' },
-  H4071L: { item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, High Cycle, Dry, Lower Mount, 1/2" NPTF', ports: '1/2" NPTF' },
-  G4089L: { item: 'Hydraulic Pressure Gauge, 4" Display Face, 15000 PSI, Glycerin Filled, Lower Mount, 1/4" NPTF', ports: '1/4" NPTF' },
-  G4040L: { item: 'Hydraulic Pressure Gauge, 4" Display Face, 15000 PSI, Glycerin Filled, Lower Mount, 1/2" NPTF', ports: '1/2" NPTF' },
+  G4088L: {
+    item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, Glycerin Filled, Lower Mount, 1/4" NPTF',
+    ports: '1/4" NPTF',
+  },
+  G4039L: {
+    item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, Glycerin Filled, Lower Mount, 1/2" NPTF',
+    ports: '1/2" NPTF',
+  },
+  H4049L: {
+    item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, High Cycle, Dry, Lower Mount, 1/4" NPTF',
+    ports: '1/4" NPTF',
+  },
+  H4071L: {
+    item: 'Hydraulic Pressure Gauge, 4" Display Face, 10000 PSI, High Cycle, Dry, Lower Mount, 1/2" NPTF',
+    ports: '1/2" NPTF',
+  },
+  G4089L: {
+    item: 'Hydraulic Pressure Gauge, 4" Display Face, 15000 PSI, Glycerin Filled, Lower Mount, 1/4" NPTF',
+    ports: '1/4" NPTF',
+  },
+  G4040L: {
+    item: 'Hydraulic Pressure Gauge, 4" Display Face, 15000 PSI, Glycerin Filled, Lower Mount, 1/2" NPTF',
+    ports: '1/2" NPTF',
+  },
 }
 
 async function main() {
@@ -62,7 +81,11 @@ async function main() {
   const variantWrites = p.variants.map((v) => {
     const next = VARIANTS[v.partNumber]
     if (!next) throw new Error(`unexpected variant ${v.partNumber}`)
-    const dims = { ...((v.dimensions as Record<string, string> | null) ?? {}), item: next.item, ports: next.ports }
+    const dims = {
+      ...((v.dimensions as Record<string, string> | null) ?? {}),
+      item: next.item,
+      ports: next.ports,
+    }
     console.log(`${v.partNumber}: ${next.item}`)
     return db.productVariant.update({ where: { id: v.id }, data: { dimensions: dims } })
   })
@@ -74,7 +97,13 @@ async function main() {
     await db.$transaction([
       db.product.update({
         where: { id: p.id },
-        data: { title: TITLE, seoTitle: SEO_TITLE, descriptionShort: SHORT, seoDescription: SEO_DESCRIPTION, descriptionLong: LONG },
+        data: {
+          title: TITLE,
+          seoTitle: SEO_TITLE,
+          descriptionShort: SHORT,
+          seoDescription: SEO_DESCRIPTION,
+          descriptionLong: LONG,
+        },
       }),
       ...variantWrites,
     ])

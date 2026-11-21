@@ -55,11 +55,18 @@ export default function CampaignSendPanel(props: Props) {
     return () => clearInterval(t)
   }, [props.status, router])
 
-  function run(task: () => Promise<{ success: boolean; message?: string; data?: { message: string } }>, refresh = true) {
+  function run(
+    task: () => Promise<{ success: boolean; message?: string; data?: { message: string } }>,
+    refresh = true
+  ) {
     setNote(null)
     start(async () => {
       const r = await task()
-      setNote(r.success ? { ok: true, text: r.data?.message ?? 'Done.' } : { ok: false, text: r.message ?? 'Something went wrong.' })
+      setNote(
+        r.success
+          ? { ok: true, text: r.data?.message ?? 'Done.' }
+          : { ok: false, text: r.message ?? 'Something went wrong.' }
+      )
       if (r.success && refresh) router.refresh()
     })
   }
@@ -69,29 +76,51 @@ export default function CampaignSendPanel(props: Props) {
 
   return (
     <Panel>
-      <h2 className="mb-2 text-[15px] font-medium text-ih-ink">Send</h2>
+      <h2 className="text-ih-ink mb-2 text-[15px] font-medium">Send</h2>
 
       {editable && !props.canSend ? (
-        <p className="text-[13.5px] text-ih-ink-2">A manager sends newsletters. Send yourself a test, then ask one to send it.</p>
+        <p className="text-ih-ink-2 text-[13.5px]">
+          A manager sends newsletters. Send yourself a test, then ask one to send it.
+        </p>
       ) : null}
 
       {editable && props.canSend ? (
         <div className="flex flex-col gap-3">
           {props.status === 'scheduled' && props.scheduledAt ? (
-            <Callout tone="info" action={<Button type="button" kind="outline" size="dense-sm" disabled={pending} onClick={() => run(() => unscheduleAction(props.id))}>Unschedule</Button>}>
+            <Callout
+              tone="info"
+              action={
+                <Button
+                  type="button"
+                  kind="outline"
+                  size="dense-sm"
+                  disabled={pending}
+                  onClick={() => run(() => unscheduleAction(props.id))}
+                >
+                  Unschedule
+                </Button>
+              }
+            >
               Scheduled for {new Date(props.scheduledAt).toLocaleString()}.
             </Callout>
           ) : null}
-          {!props.ready ? <p className="text-[13.5px] text-ih-ink-2">Fix what is listed above first.</p> : null}
+          {!props.ready ? (
+            <p className="text-ih-ink-2 text-[13.5px]">Fix what is listed above first.</p>
+          ) : null}
           {props.audienceSize > 100 && !dryRun ? (
             <Callout tone="warning">
-              Resend&apos;s free plan sends at most 100 emails a day, and quote emails share that allowance. Move the account to
-              Pro before sending to {props.audienceSize.toLocaleString('en-US')} people.
+              Resend&apos;s free plan sends at most 100 emails a day, and quote emails share that
+              allowance. Move the account to Pro before sending to{' '}
+              {props.audienceSize.toLocaleString('en-US')} people.
             </Callout>
           ) : null}
-          <label className="flex flex-col gap-1 text-[12.5px] text-ih-muted">
+          <label className="text-ih-muted flex flex-col gap-1 text-[12.5px]">
             Pace
-            <Select value={String(pace)} onChange={(e) => setPace(Number(e.target.value))} disabled={pending}>
+            <Select
+              value={String(pace)}
+              onChange={(e) => setPace(Number(e.target.value))}
+              disabled={pending}
+            >
               {PACE.map((p) => (
                 <option key={p.value} value={p.value}>
                   {p.label}
@@ -113,19 +142,22 @@ export default function CampaignSendPanel(props: Props) {
               disabled={pending || !props.ready}
               onClick={() => {
                 const who = `${props.audienceSize.toLocaleString('en-US')} ${props.audienceSize === 1 ? 'person' : 'people'}`
-                const q = dryRun ? `Rehearse the send to ${who}? Nobody is emailed.` : `Send this newsletter to ${who} now? This cannot be undone.`
-                if (window.confirm(q)) run(() => sendNowAction(props.id, { maxPerHour: pace, dryRun }))
+                const q = dryRun
+                  ? `Rehearse the send to ${who}? Nobody is emailed.`
+                  : `Send this newsletter to ${who} now? This cannot be undone.`
+                if (window.confirm(q))
+                  run(() => sendNowAction(props.id, { maxPerHour: pace, dryRun }))
               }}
             >
               {dryRun ? 'Rehearse now' : 'Send now'}
             </Button>
-            <label className="flex flex-col gap-1 text-[12.5px] text-ih-muted">
+            <label className="text-ih-muted flex flex-col gap-1 text-[12.5px]">
               Or at (your local time)
               <input
                 type="datetime-local"
                 value={at}
                 onChange={(e) => setAt(e.target.value)}
-                className="h-8 rounded-lg border border-ih-border bg-ih-surface px-2 text-[13.5px] text-ih-ink"
+                className="border-ih-border bg-ih-surface text-ih-ink h-8 rounded-lg border px-2 text-[13.5px]"
               />
             </label>
             <Button
@@ -133,7 +165,15 @@ export default function CampaignSendPanel(props: Props) {
               kind="outline"
               size="dense"
               disabled={pending || !props.ready || !at}
-              onClick={() => run(() => scheduleAction(props.id, { at: new Date(at).toISOString(), maxPerHour: pace, dryRun }))}
+              onClick={() =>
+                run(() =>
+                  scheduleAction(props.id, {
+                    at: new Date(at).toISOString(),
+                    maxPerHour: pace,
+                    dryRun,
+                  })
+                )
+              }
             >
               Schedule
             </Button>
@@ -144,7 +184,10 @@ export default function CampaignSendPanel(props: Props) {
       {!editable && c ? (
         <div className="flex flex-col gap-3">
           {props.dryRun ? (
-            <Callout tone="info">This was a rehearsal: nothing was emailed. Use Duplicate (top right) to make a copy you can send for real.</Callout>
+            <Callout tone="info">
+              This was a rehearsal: nothing was emailed. Use Duplicate (top right) to make a copy
+              you can send for real.
+            </Callout>
           ) : null}
           <Progress counts={c} />
           <dl className="grid grid-cols-2 gap-x-6 gap-y-2 text-[13.5px] sm:grid-cols-4">
@@ -161,16 +204,18 @@ export default function CampaignSendPanel(props: Props) {
               ] as const
             ).map(([label, n]) => (
               <div key={label}>
-                <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{label}</dt>
-                <dd className="tabular-nums text-ih-ink">{n.toLocaleString('en-US')}</dd>
+                <dt className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                  {label}
+                </dt>
+                <dd className="text-ih-ink tabular-nums">{n.toLocaleString('en-US')}</dd>
               </div>
             ))}
           </dl>
-          <p className="text-[12.5px] text-ih-muted">
+          <p className="text-ih-muted text-[12.5px]">
             {props.startedAt ? `Started ${new Date(props.startedAt).toLocaleString()}. ` : ''}
             {props.sentAt ? `Finished ${new Date(props.sentAt).toLocaleString()}. ` : ''}
-            Skipped = unsubscribed, bounced or cancelled after the send began. Delivered, bounced and complaints arrive from
-            Resend over the following minutes.
+            Skipped = unsubscribed, bounced or cancelled after the send began. Delivered, bounced
+            and complaints arrive from Resend over the following minutes.
           </p>
           {props.status === 'sending' && props.canSend ? (
             <div>
@@ -180,7 +225,8 @@ export default function CampaignSendPanel(props: Props) {
                 size="dense"
                 disabled={pending}
                 onClick={() => {
-                  if (window.confirm('Stop sending? Emails already sent cannot be recalled.')) run(() => cancelSendAction(props.id))
+                  if (window.confirm('Stop sending? Emails already sent cannot be recalled.'))
+                    run(() => cancelSendAction(props.id))
                 }}
               >
                 Cancel sending
@@ -191,7 +237,10 @@ export default function CampaignSendPanel(props: Props) {
       ) : null}
 
       {note ? (
-        <p role={note.ok ? 'status' : 'alert'} className={`mt-2 text-[13px] ${note.ok ? 'text-ih-success-ink' : 'text-ih-danger-ink'}`}>
+        <p
+          role={note.ok ? 'status' : 'alert'}
+          className={`mt-2 text-[13px] ${note.ok ? 'text-ih-success-ink' : 'text-ih-danger-ink'}`}
+        >
           {note.text}
         </p>
       ) : null}
@@ -210,13 +259,18 @@ function Progress({ counts }: { counts: DeliveryCounts }) {
         aria-valuemax={100}
         aria-valuenow={pct}
         aria-label="Sending progress"
-        className="h-2 overflow-hidden rounded-full bg-ih-surface-2"
+        className="bg-ih-surface-2 h-2 overflow-hidden rounded-full"
       >
-        <svg viewBox="0 0 100 1" preserveAspectRatio="none" className="block h-full w-full" aria-hidden>
+        <svg
+          viewBox="0 0 100 1"
+          preserveAspectRatio="none"
+          className="block h-full w-full"
+          aria-hidden
+        >
           <rect width={pct} height="1" className="fill-ih-accent" />
         </svg>
       </div>
-      <p className="mt-1 tabular-nums text-[12px] text-ih-muted">{pct}% done</p>
+      <p className="text-ih-muted mt-1 text-[12px] tabular-nums">{pct}% done</p>
     </div>
   )
 }

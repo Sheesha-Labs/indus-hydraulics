@@ -13,20 +13,36 @@ import BlogArticleLayout, { type BlogArticleLayoutProps } from './BlogArticleLay
 
 const blocks = [
   { type: 'lead', html: 'The <strong>lead</strong> paragraph.' },
-  { type: 'direct_answer', question: 'Will BSP thread into NPT?', answer: 'It will start and not seal.' },
+  {
+    type: 'direct_answer',
+    question: 'Will BSP thread into NPT?',
+    answer: 'It will start and not seal.',
+  },
   { type: 'key_takeaways', heading: 'Key takeaways', items: ['First point.', 'Second point.'] },
   { type: 'section_head', number: '/01', title: 'Start with the seat.', anchor: 'seat' },
   { type: 'paragraph', html: 'Body copy with a <a href="/blog/x">link</a>.' },
   { type: 'category_link', slug: 'gone-category', label: 'Unpublished shelf' },
   { type: 'as_of_stamp', verifiedOn: '2026-08-17', note: 'Checked against the standards.' },
   { type: 'section_head', number: '/02', title: 'Measure.', anchor: 'measure' },
-  { type: 'faq_block', heading: 'Common questions', items: [{ question: 'Is BSPP BSPT?', answer: 'No — one is parallel.' }] },
+  {
+    type: 'faq_block',
+    heading: 'Common questions',
+    items: [{ question: 'Is BSPP BSPT?', answer: 'No — one is parallel.' }],
+  },
   { type: 'related_articles', slugs: ['read-me'] },
   {
     type: 'market_reach',
     heading: 'Where we send it',
     body: 'Small parcels ship daily.',
-    groups: [{ region: 'GCC', markets: [{ slug: 'saudi-arabia', name: 'Saudi Arabia' }, { slug: 'gone', name: 'Gone' }] }],
+    groups: [
+      {
+        region: 'GCC',
+        markets: [
+          { slug: 'saudi-arabia', name: 'Saudi Arabia' },
+          { slug: 'gone', name: 'Gone' },
+        ],
+      },
+    ],
   },
 ] as unknown as BlogBlock[]
 
@@ -38,7 +54,17 @@ function article(over: Partial<ResolvedBlogArticle> = {}): ResolvedBlogArticle {
     productsBySku: new Map(),
     categoriesBySlug: new Map(),
     articlesBySlug: new Map([
-      ['read-me', { slug: 'read-me', title: 'Read me next', excerpt: null, readingMinutes: 4, categoryName: null, categorySlug: null }],
+      [
+        'read-me',
+        {
+          slug: 'read-me',
+          title: 'Read me next',
+          excerpt: null,
+          readingMinutes: 4,
+          categoryName: null,
+          categorySlug: null,
+        },
+      ],
     ]),
     livePageLinks: new Set(['market:saudi-arabia']),
     figuresById: new Map(),
@@ -67,7 +93,7 @@ function render(over: Partial<BlogArticleLayoutProps> = {}) {
       contact={{ whatsappUrl: null, emailUrl: 'mailto:sales@example.com', phone: null }}
       moreFromTopic={[]}
       {...over}
-    />,
+    />
   )
 }
 

@@ -52,10 +52,10 @@ export default function MarketQuickEnquiry({
   }
 
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-6 sm:px-7 sm:pb-7 sm:pt-[26px]">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-6 sm:px-7 sm:pt-[26px] sm:pb-7">
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="text-[18px] font-medium tracking-[-0.01em]">Quick enquiry</h3>
-        <span className="mono text-[10px] uppercase tracking-[0.1em] text-ih-muted-2">
+        <span className="mono text-ih-muted-2 text-[10px] tracking-[0.1em] uppercase">
           RFQ · {countryCode}
         </span>
       </div>
@@ -79,10 +79,22 @@ export default function MarketQuickEnquiry({
 
           <div className="mt-[18px] grid grid-cols-1 gap-3 sm:grid-cols-2">
             <Field label="Name">
-              <Input name="contactName" required autoComplete="name" placeholder="Your name" className="h-11 sm:h-9" />
+              <Input
+                name="contactName"
+                required
+                autoComplete="name"
+                placeholder="Your name"
+                className="h-11 sm:h-9"
+              />
             </Field>
             <Field label="Company">
-              <Input name="company" required autoComplete="organization" placeholder="Company" className="h-11 sm:h-9" />
+              <Input
+                name="company"
+                required
+                autoComplete="organization"
+                placeholder="Company"
+                className="h-11 sm:h-9"
+              />
             </Field>
             <Field label="Work email">
               <Input
@@ -107,14 +119,22 @@ export default function MarketQuickEnquiry({
             />
           </Field>
 
-          {error && <MarketEnquiryError error={error} contactEmail={contactEmail} className="mt-4" />}
+          {error && (
+            <MarketEnquiryError error={error} contactEmail={contactEmail} className="mt-4" />
+          )}
 
-          <Button type="submit" kind="primary" size="lg" disabled={isPending} className="mt-4 w-full">
+          <Button
+            type="submit"
+            kind="primary"
+            size="lg"
+            disabled={isPending}
+            className="mt-4 w-full"
+          >
             {isPending ? 'Sending…' : 'Send the enquiry'}
             <span aria-hidden="true">{isPending ? '' : '→'}</span>
           </Button>
 
-          <p className="mt-3 text-[11.5px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted mt-3 text-[11.5px] leading-[1.55]">
             No account needed. We reply from the Dubai export desk.
           </p>
         </form>

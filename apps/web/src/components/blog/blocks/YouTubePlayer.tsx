@@ -41,7 +41,7 @@ export default function YouTubePlayer({ videoId, title }: Props) {
       type="button"
       onClick={() => setPlaying(true)}
       aria-label={`Play video: ${title}`}
-      className="group absolute inset-0 h-full w-full cursor-pointer focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+      className="group focus-visible:ring-ih-accent-soft absolute inset-0 h-full w-full cursor-pointer focus-visible:ring-[3px] focus-visible:outline-none"
     >
       <Image
         src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
@@ -52,7 +52,7 @@ export default function YouTubePlayer({ videoId, title }: Props) {
       />
       <span
         aria-hidden="true"
-        className="absolute left-1/2 top-1/2 flex h-14 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg bg-ih-ink/80 text-white transition-colors group-hover:bg-ih-accent motion-reduce:transition-none"
+        className="bg-ih-ink/80 group-hover:bg-ih-accent absolute top-1/2 left-1/2 flex h-14 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg text-white transition-colors motion-reduce:transition-none"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
           <path d="M8 5v14l11-7z" />

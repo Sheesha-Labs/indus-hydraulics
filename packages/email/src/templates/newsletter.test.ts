@@ -32,7 +32,11 @@ describe('newsletter confirmation email', () => {
 
 describe('newsletter welcome email', () => {
   const unsubscribeUrl = `https://indushydraulics.com/newsletter/unsubscribe/${'b'.repeat(48)}`
-  const email = renderNewsletterWelcome({ unsubscribeUrl, siteUrl: 'https://indushydraulics.com', branding })
+  const email = renderNewsletterWelcome({
+    unsubscribeUrl,
+    siteUrl: 'https://indushydraulics.com',
+    branding,
+  })
 
   it('links the permanent unsubscribe page in the body, the footer and the text part', () => {
     expect(email.html.split(unsubscribeUrl).length - 1).toBeGreaterThanOrEqual(2)

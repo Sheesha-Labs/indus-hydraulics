@@ -21,16 +21,24 @@ export type ArticleContact = {
  * the global accent outline is ~2:1 on navy, and the `!` is needed because the
  * global :focus-visible rule is unlayered.
  */
-export default function CtaBlockView({ block, contact }: { block: CtaBlock; contact: ArticleContact }) {
+export default function CtaBlockView({
+  block,
+  contact,
+}: {
+  block: CtaBlock
+  contact: ArticleContact
+}) {
   return (
     <section
       aria-label={block.heading}
-      className="rounded-lg bg-ih-navy px-[22px] py-7 min-[761px]:rounded-xl min-[761px]:px-12 min-[761px]:py-11"
+      className="bg-ih-navy rounded-lg px-[22px] py-7 min-[761px]:rounded-xl min-[761px]:px-12 min-[761px]:py-11"
     >
-      <h2 className="font-serif text-[28px] font-normal leading-[1.08] tracking-[-0.01em] text-white min-[761px]:text-[40px]">
+      <h2 className="font-serif text-[28px] leading-[1.08] font-normal tracking-[-0.01em] text-white min-[761px]:text-[40px]">
         {block.heading}
       </h2>
-      <p className="mt-3 max-w-[620px] text-[15.5px] leading-[1.65] text-ih-on-navy">{block.body}</p>
+      <p className="text-ih-on-navy mt-3 max-w-[620px] text-[15.5px] leading-[1.65]">
+        {block.body}
+      </p>
       <div className="mt-6 flex flex-col gap-2.5 min-[761px]:flex-row min-[761px]:flex-wrap">
         <Button asChild kind="primary" size="lg" className="focus-visible:outline-ih-steel!">
           <a href={contact.emailUrl}>
@@ -49,11 +57,11 @@ export default function CtaBlockView({ block, contact }: { block: CtaBlock; cont
         )}
       </div>
       {contact.phone && (
-        <p className="mt-4 text-[13px] text-ih-on-navy-fine">
+        <p className="text-ih-on-navy-fine mt-4 text-[13px]">
           Plant-down?{' '}
           <a
             href={`tel:${contact.phone.replace(/\s/g, '')}`}
-            className="font-medium text-white underline underline-offset-[3px] focus-visible:outline-ih-steel!"
+            className="focus-visible:outline-ih-steel! font-medium text-white underline underline-offset-[3px]"
           >
             Call {contact.phone}
           </a>{' '}

@@ -35,15 +35,17 @@ export default function ProductEmbedBlockView({
 
   return (
     <section aria-label={block.heading ?? 'Parts in this section'} className="min-w-0">
-      {block.heading && <h3 className="mb-3.5 text-[15px] font-semibold text-ih-ink">{block.heading}</h3>}
+      {block.heading && (
+        <h3 className="text-ih-ink mb-3.5 text-[15px] font-semibold">{block.heading}</h3>
+      )}
       <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 min-[901px]:grid-cols-4">
         {products.map((product) => (
           <li key={product.sku} className="min-w-0">
             <Link
               href={`/p/${product.slug}`}
-              className="group flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface px-2.5 pb-3.5 pt-2.5 transition-colors duration-150 hover:border-ih-accent motion-reduce:transition-none"
+              className="group border-ih-border bg-ih-surface hover:border-ih-accent flex h-full flex-col gap-1 rounded-lg border px-2.5 pt-2.5 pb-3.5 transition-colors duration-150 motion-reduce:transition-none"
             >
-              <span className="relative mb-2 block aspect-square overflow-hidden rounded-md bg-ih-surface-3">
+              <span className="bg-ih-surface-3 relative mb-2 block aspect-square overflow-hidden rounded-md">
                 {product.imagePath ? (
                   <Image
                     src={mediaUrl(product.imagePath)}
@@ -54,18 +56,20 @@ export default function ProductEmbedBlockView({
                   />
                 ) : null}
               </span>
-              <span className="font-mono text-[10.5px] text-ih-accent">{product.sku}</span>
-              <span className="text-[13.5px] font-medium leading-[1.35] text-ih-ink group-hover:text-ih-accent">
+              <span className="text-ih-accent font-mono text-[10.5px]">{product.sku}</span>
+              <span className="text-ih-ink group-hover:text-ih-accent text-[13.5px] leading-[1.35] font-medium">
                 {product.title}
               </span>
               {product.brandName && (
-                <span className="mt-auto pt-1 text-[12px] text-ih-muted">{product.brandName}</span>
+                <span className="text-ih-muted mt-auto pt-1 text-[12px]">{product.brandName}</span>
               )}
             </Link>
           </li>
         ))}
       </ul>
-      {block.note && <p className="mt-3.5 text-[14.5px] leading-[1.65] text-ih-ink-2">{block.note}</p>}
+      {block.note && (
+        <p className="text-ih-ink-2 mt-3.5 text-[14.5px] leading-[1.65]">{block.note}</p>
+      )}
     </section>
   )
 }

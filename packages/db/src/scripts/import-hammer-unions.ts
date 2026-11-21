@@ -116,14 +116,23 @@ type Entry = {
 type Payload = {
   source: string
   categories: CategoryDef[]
-  specTemplate: { slug: string; name: string; description: string; position: number; fields: SpecFieldDef[] }
+  specTemplate: {
+    slug: string
+    name: string
+    description: string
+    position: number
+    fields: SpecFieldDef[]
+  }
   products: Entry[]
   retirements: { sku: string; intoSku: string; reason: string }[]
   drafts: { sku: string; figure: string; reason: string }[]
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 function mergeAliases(existing: string | null, additions: string[]): string {
@@ -164,14 +173,16 @@ async function main() {
   const only = argv.find((a) => a.startsWith('--only='))?.split('=')[1] ?? null
 
   const payload: Payload = JSON.parse(
-    readFileSync(resolve(__dirname, '../../data/hammer-unions/listings.json'), 'utf8'),
+    readFileSync(resolve(__dirname, '../../data/hammer-unions/listings.json'), 'utf8')
   )
 
   // The storefront layout appends " | Indus Hydraulics"; a seoTitle carrying
   // the site name renders it twice.
   const doubled = payload.products.filter((p) => /indus hydraulics/i.test(p.seoTitle))
   if (doubled.length > 0) {
-    throw new Error(`seoTitle must not contain the site name: ${doubled.map((p) => p.sku).join(', ')}`)
+    throw new Error(
+      `seoTitle must not contain the site name: ${doubled.map((p) => p.sku).join(', ')}`
+    )
   }
 
   const entries = only ? payload.products.filter((e) => e.sku === only) : payload.products
@@ -186,7 +197,10 @@ async function main() {
   for (const c of payload.categories) {
     let parentId = categoryIdBySlug.get(c.parentSlug) ?? null
     if (!parentId) {
-      const parent = await db.category.findUnique({ where: { slug: c.parentSlug }, select: { id: true } })
+      const parent = await db.category.findUnique({
+        where: { slug: c.parentSlug },
+        select: { id: true },
+      })
       // On a dry run nothing was created, so a parent this run would have
       // created is legitimately absent. Anything else is a real error.
       if (!parent && !(dryRun && payloadSlugs.has(c.parentSlug))) {
@@ -195,8 +209,13 @@ async function main() {
       parentId = parent?.id ?? null
     }
     if (dryRun) {
-      const existing = await db.category.findUnique({ where: { slug: c.slug }, select: { id: true } })
-      console.log(`[dry-run] ${existing ? 'update' : 'create'} category ${c.slug} under ${c.parentSlug}`)
+      const existing = await db.category.findUnique({
+        where: { slug: c.slug },
+        select: { id: true },
+      })
+      console.log(
+        `[dry-run] ${existing ? 'update' : 'create'} category ${c.slug} under ${c.parentSlug}`
+      )
       if (existing) categoryIdBySlug.set(c.slug, existing.id)
       continue
     }
@@ -278,7 +297,13 @@ async function main() {
     // The two sub-categories default to this template so an admin adding a
     // union by hand starts on the right fields.
     await db.category.updateMany({
-      where: { slug: { in: payload.categories.filter((c) => c.slug !== 'hammer-union-suppliers-uae').map((c) => c.slug) } },
+      where: {
+        slug: {
+          in: payload.categories
+            .filter((c) => c.slug !== 'hammer-union-suppliers-uae')
+            .map((c) => c.slug),
+        },
+      },
       data: { defaultSpecTemplateId: tpl.id },
     })
     templateId = tpl.id
@@ -299,8 +324,15 @@ async function main() {
     // one too, so a second run finds the row it renamed the first time.
     const existing =
       (e.replaces
-        ? await db.product.findUnique({ where: { sku: e.replaces }, select: { id: true, slug: true, sku: true } })
-        : null) ?? (await db.product.findUnique({ where: { sku: e.sku }, select: { id: true, slug: true, sku: true } }))
+        ? await db.product.findUnique({
+            where: { sku: e.replaces },
+            select: { id: true, slug: true, sku: true },
+          })
+        : null) ??
+      (await db.product.findUnique({
+        where: { sku: e.sku },
+        select: { id: true, slug: true, sku: true },
+      }))
 
     if (dryRun) {
       const what = existing
@@ -442,7 +474,7 @@ async function main() {
           })),
         })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
     variantsWritten += e.variants.length
 
@@ -499,11 +531,12 @@ async function main() {
       if (dupe._count.variants > 0) {
         throw new Error(
           `${r.sku} has ${dupe._count.variants} sizes of its own — it is not an empty duplicate, ` +
-            `so retiring it would delete data.`,
+            `so retiring it would delete data.`
         )
       }
       const held = await blockers(dupe.id)
-      if (held.length > 0) throw new Error(`${r.sku} is referenced by ${held.join(', ')} — refusing to delete it`)
+      if (held.length > 0)
+        throw new Error(`${r.sku} is referenced by ${held.join(', ')} — refusing to delete it`)
 
       const keep = await db.product.findUnique({
         where: { sku: r.intoSku },
@@ -519,7 +552,9 @@ async function main() {
       if (!willHaveTable) {
         throw new Error(`${r.sku}: its replacement ${r.intoSku} has no size table yet`)
       }
-      console.log(`${dryRun ? '[dry-run] ' : ''}retire /p/${dupe.slug} → /p/${keep.slug}  (${r.reason})`)
+      console.log(
+        `${dryRun ? '[dry-run] ' : ''}retire /p/${dupe.slug} → /p/${keep.slug}  (${r.reason})`
+      )
       if (!dryRun) {
         await db.$transaction(async (tx) => {
           await tx.product.delete({ where: { id: dupe.id } })
@@ -543,9 +578,14 @@ async function main() {
   let drafted = 0
   if (!only) {
     for (const d of payload.drafts) {
-      const p = await db.product.findUnique({ where: { sku: d.sku }, select: { id: true, status: true, slug: true } })
+      const p = await db.product.findUnique({
+        where: { sku: d.sku },
+        select: { id: true, status: true, slug: true },
+      })
       if (!p || p.status === 'draft') continue
-      console.log(`${dryRun ? '[dry-run] ' : ''}draft /p/${p.slug}  (Figure ${d.figure}: no catalogue source)`)
+      console.log(
+        `${dryRun ? '[dry-run] ' : ''}draft /p/${p.slug}  (Figure ${d.figure}: no catalogue source)`
+      )
       if (!dryRun) await db.product.update({ where: { id: p.id }, data: { status: 'draft' } })
       drafted++
     }
@@ -604,7 +644,7 @@ async function main() {
   console.log(
     `\n[hammer-unions] ${created} created, ${rewritten} rewritten, ${renamed} slugs moved (301), ` +
       `${variantsWritten} sizes, ${retired} retired, ${drafted} drafted, ${navAdded} nav entry, ` +
-      `${problems.length} problems`,
+      `${problems.length} problems`
   )
   if (!publish) console.log('  · listings and categories are DRAFT — re-run with --publish.')
   for (const p of problems) console.log(`  ! ${p}`)

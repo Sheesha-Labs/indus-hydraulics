@@ -29,7 +29,10 @@ import { generateSuggestion as callAi, type AiSuggestField } from '../../../../.
 
 // ── generateSuggestion ─────────────────────────────────────────────────────
 
-const FIELD_TO_KIND: Record<AiSuggestField, 'meta_title' | 'meta_description' | 'focus_keywords' | 'alt_text' | 'long_description'> = {
+const FIELD_TO_KIND: Record<
+  AiSuggestField,
+  'meta_title' | 'meta_description' | 'focus_keywords' | 'alt_text' | 'long_description'
+> = {
   seoTitle: 'meta_title',
   seoDescription: 'meta_description',
   focusKeyword: 'focus_keywords',
@@ -43,9 +46,7 @@ const GenerateInputSchema = z.object({
   field: z.enum(['seoTitle', 'seoDescription', 'focusKeyword', 'altText', 'longDescription']),
 })
 
-export async function generateSuggestion(
-  input: z.input<typeof GenerateInputSchema>,
-): Promise<
+export async function generateSuggestion(input: z.input<typeof GenerateInputSchema>): Promise<
   Result<{
     suggestionId: string
     output: string
@@ -62,7 +63,7 @@ export async function generateSuggestion(
     if (quota.spentThisMonthMicros >= quota.monthlyUsdCapMicros) {
       return fail(
         'PRECONDITION_FAILED',
-        `Monthly AI quota exhausted ($${(quota.monthlyUsdCapMicros / 1_000_000).toFixed(2)}). Ask an admin to raise it on /seo/ai/quota.`,
+        `Monthly AI quota exhausted ($${(quota.monthlyUsdCapMicros / 1_000_000).toFixed(2)}). Ask an admin to raise it on /seo/ai/quota.`
       )
     }
 
@@ -73,7 +74,7 @@ export async function generateSuggestion(
     if (!template) {
       return fail(
         'NOT_FOUND',
-        `No active prompt template for ${kind} on ${parsed.entityType}. Run pnpm db:seed.`,
+        `No active prompt template for ${kind} on ${parsed.entityType}. Run pnpm db:seed.`
       )
     }
 
@@ -89,9 +90,9 @@ export async function generateSuggestion(
       maxTokens: template.maxTokens,
     })
 
-    const totalInput = result.inputTokens + result.cacheReadInputTokens + result.cacheCreationInputTokens
-    const cacheHitRatio =
-      totalInput > 0 ? result.cacheReadInputTokens / totalInput : null
+    const totalInput =
+      result.inputTokens + result.cacheReadInputTokens + result.cacheCreationInputTokens
+    const cacheHitRatio = totalInput > 0 ? result.cacheReadInputTokens / totalInput : null
 
     const suggestion = await db.$transaction(async (tx) => {
       const row = await tx.aiSuggestion.create({
@@ -106,7 +107,8 @@ export async function generateSuggestion(
           status: 'pending',
           costUsdMicros: result.costUsdMicros,
           cacheHitRatio,
-          inputTokens: result.inputTokens + result.cacheReadInputTokens + result.cacheCreationInputTokens,
+          inputTokens:
+            result.inputTokens + result.cacheReadInputTokens + result.cacheCreationInputTokens,
           outputTokens: result.outputTokens,
           createdById: session.user.id,
         },
@@ -134,7 +136,7 @@ export async function generateSuggestion(
 export async function acceptSuggestion(
   suggestionId: string,
   /** Optional: admin can edit the value before accepting (Edit-then-Accept). */
-  overrideOutput?: string | null,
+  overrideOutput?: string | null
 ): Promise<Result<void>> {
   try {
     const session = requireRole(await auth(), ROLES.AI_GENERATE)
@@ -163,7 +165,7 @@ export async function acceptSuggestion(
     if (!column) {
       return fail(
         'PRECONDITION_FAILED',
-        `Auto-accept for "${sug.field}" not yet supported — copy the value manually.`,
+        `Auto-accept for "${sug.field}" not yet supported — copy the value manually.`
       )
     }
 
@@ -182,7 +184,14 @@ export async function acceptSuggestion(
         reason: 'ai_accepted',
       },
       async (tx) => {
-        await writeEntityField(tx, sug.entityType as SeoEntityType, sug.entityId, column, value, session.user.id)
+        await writeEntityField(
+          tx,
+          sug.entityType as SeoEntityType,
+          sug.entityId,
+          column,
+          value,
+          session.user.id
+        )
         await tx.aiSuggestion.update({
           where: { id: suggestionId },
           data: { status: 'accepted', reviewedAt: new Date() },
@@ -199,7 +208,7 @@ export async function acceptSuggestion(
           },
           data: { status: 'superseded', reviewedAt: new Date() },
         })
-      },
+      }
     )
 
     revalidatePath('/admin/seo/ai/runs')
@@ -270,7 +279,7 @@ async function ensureQuota(staffUserId: string) {
 async function loadContext(
   entityType: SeoEntityType,
   entityId: string,
-  field: AiSuggestField,
+  field: AiSuggestField
 ): Promise<Record<string, string> | null> {
   if (entityType === 'product') {
     const p = await db.product.findUnique({
@@ -375,7 +384,7 @@ async function loadContext(
 async function readEntityField(
   entityType: SeoEntityType,
   entityId: string,
-  column: string,
+  column: string
 ): Promise<unknown> {
   const select = { [column]: true }
   switch (entityType) {
@@ -414,7 +423,7 @@ async function writeEntityField(
   entityId: string,
   column: string,
   value: string,
-  actorId: string,
+  actorId: string
 ): Promise<void> {
   const data = {
     [column]: value,

@@ -37,7 +37,7 @@ export function MarketEnquiryError({
     <p
       role="alert"
       className={cn(
-        'rounded-md border border-ih-danger bg-ih-danger-soft px-3.5 py-2.5 text-[13px] leading-[1.55] text-ih-danger-ink',
+        'border-ih-danger bg-ih-danger-soft text-ih-danger-ink rounded-md border px-3.5 py-2.5 text-[13px] leading-[1.55]',
         className
       )}
     >

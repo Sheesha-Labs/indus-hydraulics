@@ -27,7 +27,7 @@ export function FilterBar({
   className,
 }: FilterBarProps) {
   return (
-    <div className={cn('flex items-center gap-2 flex-wrap', className)}>
+    <div className={cn('flex flex-wrap items-center gap-2', className)}>
       {filters.map((filter) => {
         const isActive = active.includes(filter.key)
         return (
@@ -36,9 +36,9 @@ export function FilterBar({
             type="button"
             onClick={() => onToggle(filter.key)}
             className={cn(
-              'inline-flex items-center gap-1.5 h-7 px-3 text-xs font-medium border transition-colors',
+              'inline-flex h-7 items-center gap-1.5 border px-3 text-xs font-medium transition-colors',
               isActive
-                ? 'bg-ih-navy text-white border-ih-ink'
+                ? 'bg-ih-navy border-ih-ink text-white'
                 : 'bg-ih-surface text-ih-ink-2 border-ih-border hover:border-ih-ink hover:text-ih-ink'
             )}
             aria-pressed={isActive}
@@ -46,17 +46,12 @@ export function FilterBar({
             {filter.label}
             {filter.count !== undefined && (
               <span
-                className={cn(
-                  'font-mono text-[10px]',
-                  isActive ? 'opacity-70' : 'text-ih-muted-2'
-                )}
+                className={cn('font-mono text-[10px]', isActive ? 'opacity-70' : 'text-ih-muted-2')}
               >
                 {filter.count}
               </span>
             )}
-            {isActive && (
-              <span className="ml-0.5 opacity-60">×</span>
-            )}
+            {isActive && <span className="ml-0.5 opacity-60">×</span>}
           </button>
         )
       })}
@@ -64,7 +59,7 @@ export function FilterBar({
         <button
           type="button"
           onClick={onClear}
-          className="inline-flex items-center h-7 px-2 text-xs text-ih-danger hover:underline"
+          className="text-ih-danger inline-flex h-7 items-center px-2 text-xs hover:underline"
         >
           {clearLabel}
         </button>

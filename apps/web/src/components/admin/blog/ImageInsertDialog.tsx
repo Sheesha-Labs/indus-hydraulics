@@ -78,10 +78,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
   // both halves are this component's job (CLAUDE.md §10.5).
   useEffect(() => {
     returnFocusRef.current = document.activeElement as HTMLElement | null
-    const timer = window.setTimeout(
-      () => dialogRef.current?.querySelector('input')?.focus(),
-      0,
-    )
+    const timer = window.setTimeout(() => dialogRef.current?.querySelector('input')?.focus(), 0)
     return () => window.clearTimeout(timer)
   }, [])
 
@@ -93,7 +90,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
       }
       if (event.key !== 'Tab') return
       const focusables = dialogRef.current?.querySelectorAll<HTMLElement>(
-        'button:not([disabled]), input, select, textarea, [href]',
+        'button:not([disabled]), input, select, textarea, [href]'
       )
       if (!focusables || focusables.length === 0) return
       const first = focusables[0]
@@ -165,20 +162,20 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ih-navy/40 p-4">
+    <div className="bg-ih-navy/40 fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
         ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="insert-image-title"
-        className="flex max-h-[86vh] w-full max-w-[680px] flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface shadow-xl"
+        className="border-ih-border bg-ih-surface flex max-h-[86vh] w-full max-w-[680px] flex-col overflow-hidden rounded-lg border shadow-xl"
       >
-        <div className="flex items-center justify-between border-b border-ih-border px-5 py-3.5">
+        <div className="border-ih-border flex items-center justify-between border-b px-5 py-3.5">
           <div>
-            <h2 id="insert-image-title" className="text-[15px] font-medium text-ih-ink">
+            <h2 id="insert-image-title" className="text-ih-ink text-[15px] font-medium">
               Insert an image
             </h2>
-            <p className="mt-0.5 text-[12px] text-ih-muted">
+            <p className="text-ih-muted mt-0.5 text-[12px]">
               Pick one from the media library or upload a new file. It lands where the cursor is.
             </p>
           </div>
@@ -186,7 +183,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             type="button"
             onClick={close}
             aria-label="Close"
-            className="flex h-7 w-7 items-center justify-center rounded-md text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink"
+            className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink flex h-7 w-7 items-center justify-center rounded-md"
           >
             <X size={15} strokeWidth={1.8} />
           </button>
@@ -202,10 +199,10 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search by filename…"
-              className="h-8 flex-1 rounded-md border border-ih-border bg-ih-bg px-2.5 text-[12.5px] outline-none focus:border-ih-accent"
+              className="border-ih-border bg-ih-bg focus:border-ih-accent h-8 flex-1 rounded-md border px-2.5 text-[12.5px] outline-none"
             />
             <label
-              className={`flex h-8 shrink-0 cursor-pointer items-center gap-1.5 rounded-md border border-ih-border px-2.5 text-[12px] transition-colors hover:bg-ih-surface-2 ${
+              className={`border-ih-border hover:bg-ih-surface-2 flex h-8 shrink-0 cursor-pointer items-center gap-1.5 rounded-md border px-2.5 text-[12px] transition-colors ${
                 pending ? 'cursor-not-allowed opacity-50' : ''
               }`}
             >
@@ -224,9 +221,9 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             </label>
           </div>
 
-          <div className="max-h-[240px] overflow-y-auto rounded-md border border-ih-border p-2">
+          <div className="border-ih-border max-h-[240px] overflow-y-auto rounded-md border p-2">
             {images.length === 0 ? (
-              <p className="py-8 text-center text-[12px] text-ih-muted">
+              <p className="text-ih-muted py-8 text-center text-[12px]">
                 {media.length === 0
                   ? 'The media library has no images yet — upload one to get started.'
                   : 'No images match that filename.'}
@@ -240,10 +237,10 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
                     onClick={() => setSelected(m.id)}
                     aria-pressed={selected === m.id}
                     title={m.originalFilename}
-                    className={`relative aspect-[4/3] overflow-hidden rounded-md border-2 bg-ih-surface-2 transition-colors ${
+                    className={`bg-ih-surface-2 relative aspect-[4/3] overflow-hidden rounded-md border-2 transition-colors ${
                       selected === m.id
                         ? 'border-ih-accent'
-                        : 'border-transparent hover:border-ih-border-strong'
+                        : 'hover:border-ih-border-strong border-transparent'
                     }`}
                   >
                     <Image
@@ -263,7 +260,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             <div>
               <label
                 htmlFor="figure-caption"
-                className="mb-1 block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+                className="text-ih-muted mb-1 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
               >
                 Caption *
               </label>
@@ -272,16 +269,16 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
                 value={caption}
                 onChange={(e) => setCaption(e.target.value)}
                 placeholder="What the image shows"
-                className="h-9 w-full rounded-md border border-ih-border bg-ih-bg px-2.5 text-[13px] outline-none focus:border-ih-accent"
+                className="border-ih-border bg-ih-bg focus:border-ih-accent h-9 w-full rounded-md border px-2.5 text-[13px] outline-none"
               />
-              <p className="mt-1 text-[11px] text-ih-muted-2">
+              <p className="text-ih-muted-2 mt-1 text-[11px]">
                 Printed under the image, and read out in place of it by a screen reader.
               </p>
             </div>
             <div>
               <label
                 htmlFor="figure-prefix"
-                className="mb-1 block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+                className="text-ih-muted mb-1 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
               >
                 Prefix
               </label>
@@ -290,13 +287,13 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
                 value={captionPrefix}
                 onChange={(e) => setCaptionPrefix(e.target.value)}
                 placeholder="FIG. 01"
-                className="h-9 w-full rounded-md border border-ih-border bg-ih-bg px-2.5 tabular-nums text-[12px] outline-none focus:border-ih-accent"
+                className="border-ih-border bg-ih-bg focus:border-ih-accent h-9 w-full rounded-md border px-2.5 text-[12px] tabular-nums outline-none"
               />
             </div>
           </div>
 
           <div>
-            <span className="mb-1.5 block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <span className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
               Shape
             </span>
             <div className="flex gap-1.5">
@@ -306,7 +303,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
                   type="button"
                   onClick={() => setAspectRatio(r)}
                   aria-pressed={aspectRatio === r}
-                  className={`h-7 rounded-md border px-2.5 tabular-nums text-[11px] transition-colors ${
+                  className={`h-7 rounded-md border px-2.5 text-[11px] tabular-nums transition-colors ${
                     aspectRatio === r
                       ? 'border-ih-accent bg-ih-accent-soft text-ih-accent'
                       : 'border-ih-border text-ih-muted hover:text-ih-ink'
@@ -318,14 +315,14 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             </div>
           </div>
 
-          {error && <p className="text-[12px] text-ih-danger">{error}</p>}
+          {error && <p className="text-ih-danger text-[12px]">{error}</p>}
         </div>
 
-        <div className="flex items-center justify-end gap-2 border-t border-ih-border px-5 py-3">
+        <div className="border-ih-border flex items-center justify-end gap-2 border-t px-5 py-3">
           <button
             type="button"
             onClick={close}
-            className="h-9 rounded-md border border-ih-border px-4 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+            className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             Cancel
           </button>
@@ -333,7 +330,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             type="button"
             onClick={insert}
             disabled={!picked}
-            className="h-9 rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-40"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 rounded-md px-4 text-[13px] font-medium transition-opacity disabled:opacity-40"
           >
             Insert image
           </button>

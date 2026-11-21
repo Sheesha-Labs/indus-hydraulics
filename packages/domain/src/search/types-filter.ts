@@ -14,11 +14,7 @@
 
 export type SearchType = 'products' | 'datasheets' | 'articles'
 
-export const SEARCH_TYPES: ReadonlyArray<SearchType> = [
-  'products',
-  'datasheets',
-  'articles',
-]
+export const SEARCH_TYPES: ReadonlyArray<SearchType> = ['products', 'datasheets', 'articles']
 
 export const SEARCH_TYPE_LABELS: Record<SearchType, string> = {
   products: 'Products',
@@ -32,9 +28,7 @@ export function parseTypesParam(raw: string | undefined | null): SearchType[] {
     .split(',')
     .map((t) => t.trim().toLowerCase())
     .filter(Boolean)
-  const valid = tokens.filter((t): t is SearchType =>
-    SEARCH_TYPES.includes(t as SearchType),
-  )
+  const valid = tokens.filter((t): t is SearchType => SEARCH_TYPES.includes(t as SearchType))
   if (valid.length === 0) return [...SEARCH_TYPES]
   // Dedupe while preserving order.
   const seen = new Set<SearchType>()

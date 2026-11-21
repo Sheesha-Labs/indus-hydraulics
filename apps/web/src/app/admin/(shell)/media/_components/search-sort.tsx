@@ -39,7 +39,7 @@ export function MediaSearchBox({
         size={13}
         strokeWidth={1.8}
         aria-hidden="true"
-        className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ih-muted"
+        className="text-ih-muted pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"
       />
       <input
         id="media-search"
@@ -48,9 +48,9 @@ export function MediaSearchBox({
         defaultValue={defaultValue}
         placeholder="Filename or alt text…"
         className={cn(
-          'h-8 w-full rounded-md border border-ih-border bg-ih-surface pl-7 pr-2.5 text-[12.5px] text-ih-ink',
+          'border-ih-border bg-ih-surface text-ih-ink h-8 w-full rounded-md border pr-2.5 pl-7 text-[12.5px]',
           'placeholder:text-ih-muted-2',
-          'outline-none transition-colors focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft'
+          'focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft transition-colors outline-none focus-visible:ring-[3px]'
         )}
       />
       {Object.entries(hidden).map(([key, value]) => (
@@ -80,7 +80,10 @@ export function MediaSortSelect({
 
   return (
     <div className="flex items-center gap-1.5">
-      <label htmlFor="media-sort" className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+      <label
+        htmlFor="media-sort"
+        className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums"
+      >
         Sort
       </label>
       <select
@@ -92,8 +95,8 @@ export function MediaSortSelect({
           if (next) startTransition(() => router.push(next.href))
         }}
         className={cn(
-          'h-8 rounded-md border border-ih-border bg-ih-surface px-2 text-[12.5px] text-ih-ink-2',
-          'outline-none transition-colors focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
+          'border-ih-border bg-ih-surface text-ih-ink-2 h-8 rounded-md border px-2 text-[12.5px]',
+          'focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft transition-colors outline-none focus-visible:ring-[3px]',
           pending && 'opacity-60'
         )}
       >

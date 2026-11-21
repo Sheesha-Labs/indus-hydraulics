@@ -191,9 +191,7 @@ describe('marketIndexRegions', () => {
   it('looks slugs up rather than deriving them', () => {
     // "Republic of the Congo" derives to `republic-of-the-congo` and slugs to
     // `republic-of-congo`. Deriving would have shipped one dead link in 126.
-    const congo = regions
-      .flatMap((r) => r.cards)
-      .find((c) => c.name === 'Republic of the Congo')
+    const congo = regions.flatMap((r) => r.cards).find((c) => c.name === 'Republic of the Congo')
     expect(congo?.slug).toBe('republic-of-congo')
   })
 

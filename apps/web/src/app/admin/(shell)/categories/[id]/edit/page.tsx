@@ -30,40 +30,39 @@ export default async function EditCategoryPage({ params }: Props) {
 
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
     <CategoryEditorClient
-        category={{
-          id: category.id,
-          slug: category.slug,
-          name: category.name,
-          shortDescription: category.shortDescription,
-          isPublished: category.isPublished,
-          publicUrl: `${storefrontUrl}/c/${category.slug}`,
-          seoTitle: category.seoTitle,
-          seoDescription: category.seoDescription,
-          canonicalUrl: category.canonicalUrl,
-          focusKeyword: category.focusKeyword,
-          robotsIndex: category.robotsIndex,
-          robotsFollow: category.robotsFollow,
-          ogImageMediaId: category.ogImageMediaId,
-          ogImageStoragePath: ogMedia?.storagePath ?? null,
-          sitemapPriority:
-            category.sitemapPriority != null ? Number(category.sitemapPriority) : null,
-          sitemapChangeFreq: category.sitemapChangeFreq,
-          excludeFromSitemap: category.excludeFromSitemap,
-          jsonLdOverride: category.jsonLdOverride
-            ? JSON.stringify(category.jsonLdOverride, null, 2)
-            : null,
-        }}
-        recentImages={recentMedia.map((m) => ({
-          id: m.id,
-          storagePath: m.storagePath,
-          alt: m.alt,
-          originalFilename: m.originalFilename,
-        }))}
-      />
+      category={{
+        id: category.id,
+        slug: category.slug,
+        name: category.name,
+        shortDescription: category.shortDescription,
+        isPublished: category.isPublished,
+        publicUrl: `${storefrontUrl}/c/${category.slug}`,
+        seoTitle: category.seoTitle,
+        seoDescription: category.seoDescription,
+        canonicalUrl: category.canonicalUrl,
+        focusKeyword: category.focusKeyword,
+        robotsIndex: category.robotsIndex,
+        robotsFollow: category.robotsFollow,
+        ogImageMediaId: category.ogImageMediaId,
+        ogImageStoragePath: ogMedia?.storagePath ?? null,
+        sitemapPriority: category.sitemapPriority != null ? Number(category.sitemapPriority) : null,
+        sitemapChangeFreq: category.sitemapChangeFreq,
+        excludeFromSitemap: category.excludeFromSitemap,
+        jsonLdOverride: category.jsonLdOverride
+          ? JSON.stringify(category.jsonLdOverride, null, 2)
+          : null,
+      }}
+      recentImages={recentMedia.map((m) => ({
+        id: m.id,
+        storagePath: m.storagePath,
+        alt: m.alt,
+        originalFilename: m.originalFilename,
+      }))}
+    />
   )
 }

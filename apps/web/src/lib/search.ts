@@ -237,16 +237,34 @@ function groupSynonyms(rows: { group: string; term: string }[]): SynonymGroup[] 
  */
 export async function runAutocomplete(
   rawQuery: string,
-  limit = 8,
-): Promise<Array<{ id: string; sku: string; title: string; brandName: string | null; categorySlug: string | null }>> {
+  limit = 8
+): Promise<
+  Array<{
+    id: string
+    sku: string
+    title: string
+    brandName: string | null
+    categorySlug: string | null
+  }>
+> {
   const trimmed = rawQuery.trim()
   if (trimmed.length < 1) return []
-  const prefix = trimmed.replace(/[^a-z0-9\s\-]/gi, ' ').split(/\s+/).filter(Boolean).join(' & ')
+  const prefix = trimmed
+    .replace(/[^a-z0-9\s\-]/gi, ' ')
+    .split(/\s+/)
+    .filter(Boolean)
+    .join(' & ')
   if (!prefix) return []
   const tsQuery = `${prefix}:*`
 
   return db.$queryRaw<
-    Array<{ id: string; sku: string; title: string; brandName: string | null; categorySlug: string | null }>
+    Array<{
+      id: string
+      sku: string
+      title: string
+      brandName: string | null
+      categorySlug: string | null
+    }>
   >(Prisma.sql`
     SELECT p.id::text AS id,
            p.sku,

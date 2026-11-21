@@ -32,13 +32,12 @@ export default async function SpecTemplatesPage({ params }: Props) {
       title={'Spec templates'}
       sub={
         <>
-        {templates.length} {templates.length === 1 ? 'template' : 'templates'} — reusable typed
-        schemas for product specs &amp; key features.
+          {templates.length} {templates.length === 1 ? 'template' : 'templates'} — reusable typed
+          schemas for product specs &amp; key features.
         </>
       }
     >
       <SpecTemplatesClient templates={templates} />
-    
     </AdminPageShell>
   )
 }

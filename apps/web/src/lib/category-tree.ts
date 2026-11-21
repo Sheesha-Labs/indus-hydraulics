@@ -37,7 +37,7 @@ const MAX_WALK = 8
  */
 export function ancestorTrail(
   byId: ReadonlyMap<string, CategoryNode>,
-  id: string,
+  id: string
 ): Array<{ name: string; slug: string; isPublished: boolean }> {
   const trail: Array<{ name: string; slug: string; isPublished: boolean }> = []
   const seen = new Set<string>()
@@ -70,7 +70,7 @@ export function ancestorTrail(
  */
 export function descendantIds(
   children: ReadonlyMap<string, readonly CategoryNode[]>,
-  rootId: string,
+  rootId: string
 ): string[] {
   const out: string[] = [rootId]
   const seen = new Set<string>([rootId])
@@ -102,7 +102,7 @@ export function descendantIds(
  */
 export function rollUpCounts(
   parentOf: ReadonlyMap<string, string | null>,
-  direct: ReadonlyMap<string, number>,
+  direct: ReadonlyMap<string, number>
 ): Map<string, number> {
   const rollup = new Map<string, number>()
   for (const [categoryId, count] of direct) {
@@ -151,5 +151,5 @@ export const getCategoryTree = unstable_cache(
     return rows
   },
   ['category-tree'],
-  { revalidate: 3600, tags: [STOREFRONT_TAGS.categories] },
+  { revalidate: 3600, tags: [STOREFRONT_TAGS.categories] }
 )

@@ -95,7 +95,7 @@ export function createScraperContext(opts: {
   const fetchWithTimeout = async (
     url: string,
     timeoutMs: number,
-    init: RequestInit = {},
+    init: RequestInit = {}
   ): Promise<Response> => {
     const ctl = new AbortController()
     const t = setTimeout(() => ctl.abort(), timeoutMs)
@@ -167,7 +167,7 @@ export function createScraperContext(opts: {
  */
 export async function fetchXml(
   ctx: ScraperContext,
-  url: string,
+  url: string
 ): Promise<{ status: number; xml: string }> {
   // We reuse the throttler indirectly by calling fetchHtml — the Accept
   // header is XML-friendly enough for sitemaps in practice.

@@ -1,12 +1,6 @@
 import { describe, expect, test } from 'vitest'
 
-import {
-  SORT_LABELS,
-  SORT_MODES,
-  parseSortParam,
-  sortToOrderBy,
-  type SortMode,
-} from './sort'
+import { SORT_LABELS, SORT_MODES, parseSortParam, sortToOrderBy, type SortMode } from './sort'
 
 describe('parseSortParam', () => {
   test('null/undefined/empty → relevance', () => {

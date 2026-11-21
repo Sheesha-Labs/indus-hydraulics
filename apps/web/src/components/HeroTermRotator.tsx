@@ -107,7 +107,7 @@ export default function HeroTermRotator({ terms, className }: Props) {
           fading ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <em className="italic text-ih-accent">{term.word}</em>.
+        <em className="text-ih-accent italic">{term.word}</em>.
       </span>
     </span>
   )

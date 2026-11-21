@@ -30,7 +30,14 @@ function image(storagePath: string | null | undefined): string | null {
 
 /** Every record the refs name, keyed `${kind}:${id}`. One query per kind. */
 export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, ResolvedRecord>> {
-  const want: Record<RecordKind, Set<string>> = { product: new Set(), category: new Set(), article: new Set(), industry: new Set(), brand: new Set(), service: new Set() }
+  const want: Record<RecordKind, Set<string>> = {
+    product: new Set(),
+    category: new Set(),
+    article: new Set(),
+    industry: new Set(),
+    brand: new Set(),
+    service: new Set(),
+  }
   for (const r of refs) for (const id of r.ids) want[r.kind].add(id)
   const out = new Map<string, ResolvedRecord>()
   const put = (rec: ResolvedRecord) => out.set(recordKey(rec.kind, rec.id), rec)
@@ -47,7 +54,11 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
               sku: true,
               descriptionShort: true,
               brand: { select: { name: true } },
-              images: { orderBy: { position: 'asc' }, take: 1, select: { alt: true, media: { select: { storagePath: true, alt: true } } } },
+              images: {
+                orderBy: { position: 'asc' },
+                take: 1,
+                select: { alt: true, media: { select: { storagePath: true, alt: true } } },
+              },
             },
           })
           .then((rows) =>
@@ -64,14 +75,20 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 imageUrl: image(img?.media.storagePath),
                 imageAlt: img?.alt ?? img?.media.alt ?? p.title,
               })
-            }),
+            })
           )
       : null,
     want.category.size
       ? db.category
           .findMany({
             where: { id: { in: [...want.category] }, isPublished: true },
-            select: { id: true, slug: true, name: true, shortDescription: true, image: { select: { storagePath: true, alt: true } } },
+            select: {
+              id: true,
+              slug: true,
+              name: true,
+              shortDescription: true,
+              image: { select: { storagePath: true, alt: true } },
+            },
           })
           .then((rows) =>
             rows.forEach((c) =>
@@ -83,15 +100,22 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 url: `${BASE_URL}${PATH.category(c.slug)}`,
                 imageUrl: image(c.image?.storagePath),
                 imageAlt: c.image?.alt ?? c.name,
-              }),
-            ),
+              })
+            )
           )
       : null,
     want.article.size
       ? db.blogPost
           .findMany({
             where: { id: { in: [...want.article] }, status: 'published', deletedAt: null },
-            select: { id: true, slug: true, title: true, excerpt: true, publishedAt: true, hero: { select: { storagePath: true, alt: true } } },
+            select: {
+              id: true,
+              slug: true,
+              title: true,
+              excerpt: true,
+              publishedAt: true,
+              hero: { select: { storagePath: true, alt: true } },
+            },
           })
           .then((rows) =>
             rows.forEach((b) =>
@@ -104,15 +128,21 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 url: `${BASE_URL}${PATH.article(b.slug)}`,
                 imageUrl: image(b.hero?.storagePath),
                 imageAlt: b.hero?.alt ?? b.title,
-              }),
-            ),
+              })
+            )
           )
       : null,
     want.industry.size
       ? db.industry
           .findMany({
             where: { id: { in: [...want.industry] }, isPublished: true },
-            select: { id: true, slug: true, name: true, tagline: true, hero: { select: { storagePath: true, alt: true } } },
+            select: {
+              id: true,
+              slug: true,
+              name: true,
+              tagline: true,
+              hero: { select: { storagePath: true, alt: true } },
+            },
           })
           .then((rows) =>
             rows.forEach((i) =>
@@ -124,8 +154,8 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 url: `${BASE_URL}${PATH.industry(i.slug)}`,
                 imageUrl: image(i.hero?.storagePath),
                 imageAlt: i.hero?.alt ?? i.name,
-              }),
-            ),
+              })
+            )
           )
       : null,
     want.brand.size
@@ -156,7 +186,7 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 imageUrl: image(pic?.storagePath),
                 imageAlt: pic?.alt ?? b.name,
               })
-            }),
+            })
           )
       : null,
     want.service.size
@@ -184,8 +214,8 @@ export async function resolveRecords(refs: RecordRef[]): Promise<Map<string, Res
                 url: `${BASE_URL}${PATH.service(c.slug)}`,
                 imageUrl: image(c.heroImage?.storagePath),
                 imageAlt: c.heroImage?.alt ?? c.title,
-              }),
-            ),
+              })
+            )
           )
       : null,
   ])
@@ -204,7 +234,14 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
         await db.product.findMany({
           where: {
             status: 'active',
-            ...(term ? { OR: [{ title: { contains: term, mode: 'insensitive' } }, { sku: { contains: term, mode: 'insensitive' } }] } : {}),
+            ...(term
+              ? {
+                  OR: [
+                    { title: { contains: term, mode: 'insensitive' } },
+                    { sku: { contains: term, mode: 'insensitive' } },
+                  ],
+                }
+              : {}),
           },
           orderBy: { updatedAt: 'desc' },
           take,
@@ -214,7 +251,10 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
     case 'category':
       return (
         await db.category.findMany({
-          where: { isPublished: true, ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}) },
+          where: {
+            isPublished: true,
+            ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}),
+          },
           orderBy: { name: 'asc' },
           take,
           select: { id: true, name: true, slug: true },
@@ -223,16 +263,27 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
     case 'article':
       return (
         await db.blogPost.findMany({
-          where: { status: 'published', deletedAt: null, ...(term ? { title: { contains: term, mode: 'insensitive' } } : {}) },
+          where: {
+            status: 'published',
+            deletedAt: null,
+            ...(term ? { title: { contains: term, mode: 'insensitive' } } : {}),
+          },
           orderBy: { publishedAt: 'desc' },
           take,
           select: { id: true, title: true, publishedAt: true },
         })
-      ).map((b) => ({ id: b.id, label: b.title, hint: b.publishedAt?.toISOString().slice(0, 10) ?? '' }))
+      ).map((b) => ({
+        id: b.id,
+        label: b.title,
+        hint: b.publishedAt?.toISOString().slice(0, 10) ?? '',
+      }))
     case 'industry':
       return (
         await db.industry.findMany({
-          where: { isPublished: true, ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}) },
+          where: {
+            isPublished: true,
+            ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}),
+          },
           orderBy: { position: 'asc' },
           take,
           select: { id: true, name: true, slug: true },
@@ -241,7 +292,10 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
     case 'brand':
       return (
         await db.brand.findMany({
-          where: { isPublished: true, ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}) },
+          where: {
+            isPublished: true,
+            ...(term ? { name: { contains: term, mode: 'insensitive' } } : {}),
+          },
           orderBy: [{ position: 'asc' }, { name: 'asc' }],
           take,
           select: { id: true, name: true, slug: true },
@@ -250,7 +304,10 @@ export async function searchRecords(kind: RecordKind, q: string): Promise<Record
     case 'service':
       return (
         await db.serviceCase.findMany({
-          where: { status: 'published', ...(term ? { title: { contains: term, mode: 'insensitive' } } : {}) },
+          where: {
+            status: 'published',
+            ...(term ? { title: { contains: term, mode: 'insensitive' } } : {}),
+          },
           orderBy: { publishedAt: 'desc' },
           take,
           select: { id: true, title: true, topicLabel: true },

@@ -12,7 +12,15 @@ import {
   type SeoEntityType,
   type ChangeFreq,
 } from '@indus/domain'
-import { CharCounter, JsonLdPreview, OgPreview, SeoHealthBadge, SerpPreview, controlClassName, controlHeightClassName } from '@indus/ui'
+import {
+  CharCounter,
+  JsonLdPreview,
+  OgPreview,
+  SeoHealthBadge,
+  SerpPreview,
+  controlClassName,
+  controlHeightClassName,
+} from '@indus/ui'
 import type { Result } from '../../../lib/result'
 import OgImagePicker, { type RecentMedia } from './OgImagePicker'
 import FocusKeywordChecklist from './FocusKeywordChecklist'
@@ -102,8 +110,10 @@ interface Props {
   saveAction: (formData: FormData) => Promise<Result<void>>
   /** Server action that uploads a new OG image candidate. */
   uploadAction: (
-    formData: FormData,
-  ) => Promise<Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>>
+    formData: FormData
+  ) => Promise<
+    Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>
+  >
   onSaved?: () => void
 }
 
@@ -124,7 +134,7 @@ export default function SeoEntityDrawer({
   uploadAction,
   onSaved,
 }: Props) {
-  const [activeSubTab, setActiveSubTab] = useState<typeof SUB_TABS[number]['id']>('general')
+  const [activeSubTab, setActiveSubTab] = useState<(typeof SUB_TABS)[number]['id']>('general')
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const [savedAt, setSavedAt] = useState<Date | null>(null)
@@ -140,7 +150,7 @@ export default function SeoEntityDrawer({
   const [ogImagePath, setOgImagePath] = useState<string | null>(entity.ogImageStoragePath)
   const [sitemapPriority, setSitemapPriority] = useState<number | null>(entity.sitemapPriority)
   const [sitemapChangeFreq, setSitemapChangeFreq] = useState<ChangeFreq | ''>(
-    entity.sitemapChangeFreq ?? '',
+    entity.sitemapChangeFreq ?? ''
   )
   const [excludeFromSitemap, setExcludeFromSitemap] = useState(entity.excludeFromSitemap)
   const [jsonLdOverride, setJsonLdOverride] = useState(entity.jsonLdOverride ?? '')
@@ -306,19 +316,19 @@ export default function SeoEntityDrawer({
   return (
     <form
       action={handleSubmit}
-      className="rounded-lg border border-ih-border bg-ih-surface max-w-5xl"
+      className="border-ih-border bg-ih-surface max-w-5xl rounded-lg border"
     >
       {/* Sub-tab nav */}
-      <div className="flex border-b border-ih-border px-4 overflow-x-auto">
+      <div className="border-ih-border flex overflow-x-auto border-b px-4">
         {SUB_TABS.map((tab) => (
           <button
             key={tab.id}
             type="button"
             onClick={() => setActiveSubTab(tab.id)}
-            className={`px-3 py-2.5 tabular-nums text-[11px] border-b-2 -mb-px whitespace-nowrap ${
+            className={`-mb-px border-b-2 px-3 py-2.5 text-[11px] whitespace-nowrap tabular-nums ${
               activeSubTab === tab.id
                 ? 'border-ih-accent text-ih-ink'
-                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+                : 'text-ih-muted hover:text-ih-ink-2 border-transparent'
             }`}
           >
             {tab.label}
@@ -328,7 +338,7 @@ export default function SeoEntityDrawer({
 
       {error && (
         <div
-          className="rounded-lg m-4 px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
+          className="bg-ih-danger-soft text-ih-danger-ink m-4 rounded-lg border border-[oklch(0.4_0.18_25)] px-4 py-3 text-[13px]"
           role="alert"
         >
           {error}
@@ -454,20 +464,18 @@ export default function SeoEntityDrawer({
 
           {activeSubTab === 'schema' && (
             <>
-              <p className="text-[12px] text-ih-muted">
-                The storefront emits JSON-LD on every page using the auto-generated builders.
-                Paste a partial override below to deep-merge into the auto-emitted block. Leave
-                blank to use defaults.
+              <p className="text-ih-muted text-[12px]">
+                The storefront emits JSON-LD on every page using the auto-generated builders. Paste
+                a partial override below to deep-merge into the auto-emitted block. Leave blank to
+                use defaults.
               </p>
               <FieldBlock
                 label="jsonLdOverride (JSON)"
                 rightAdornment={
                   jsonLdOverride.trim().length > 0 ? (
                     <span
-                      className={`tabular-nums text-[10.5px] uppercase tracking-wider ${
-                        overrideValidation.ok
-                          ? 'text-ih-success-ink'
-                          : 'text-ih-danger-ink'
+                      className={`text-[10.5px] tracking-wider uppercase tabular-nums ${
+                        overrideValidation.ok ? 'text-ih-success-ink' : 'text-ih-danger-ink'
                       }`}
                     >
                       {overrideValidation.ok ? 'valid' : 'invalid'}
@@ -479,17 +487,14 @@ export default function SeoEntityDrawer({
                   rows={10}
                   value={jsonLdOverride}
                   onChange={(e) => setJsonLdOverride(e.target.value)}
-                  className={`${textareaCls} tabular-nums text-[11px] ${
+                  className={`${textareaCls} text-[11px] tabular-nums ${
                     !overrideValidation.ok ? 'border-[oklch(0.5_0.18_25)]' : ''
                   }`}
                   placeholder={'{\n  "aggregateRating": { ... }\n}'}
                   spellCheck={false}
                 />
                 {!overrideValidation.ok && (
-                  <p
-                    className="tabular-nums text-[11px] text-ih-danger-ink mt-1"
-                    role="alert"
-                  >
+                  <p className="text-ih-danger-ink mt-1 text-[11px] tabular-nums" role="alert">
                     {overrideValidation.message} — preview below shows the unmerged base.
                   </p>
                 )}
@@ -546,7 +551,7 @@ export default function SeoEntityDrawer({
 
           {activeSubTab === 'advanced' && (
             <>
-              <p className="rounded-lg text-[12px] text-ih-warning-ink bg-ih-warning-soft/50 border border-[oklch(0.75_0.12_70)]/40 px-3 py-2">
+              <p className="text-ih-warning-ink bg-ih-warning-soft/50 rounded-lg border border-[oklch(0.75_0.12_70)]/40 px-3 py-2 text-[12px]">
                 Robots directives change indexability. Audited as infrastructure changes.
               </p>
               <label className="flex items-center gap-2 text-[13px]">
@@ -570,9 +575,9 @@ export default function SeoEntityDrawer({
         </div>
 
         {/* RIGHT — previews */}
-        <div className="flex flex-col gap-4 sticky top-4 self-start">
+        <div className="sticky top-4 flex flex-col gap-4 self-start">
           <div>
-            <p className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+            <p className="text-ih-muted mb-1.5 text-[10.5px] tracking-[0.12em] uppercase tabular-nums">
               Google SERP preview
             </p>
             <SerpPreview
@@ -582,7 +587,7 @@ export default function SeoEntityDrawer({
             />
           </div>
           <div>
-            <p className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+            <p className="text-ih-muted mb-1.5 text-[10.5px] tracking-[0.12em] uppercase tabular-nums">
               Open Graph preview
             </p>
             <OgPreview
@@ -594,7 +599,7 @@ export default function SeoEntityDrawer({
           </div>
           {activeSubTab === 'schema' && ldPreview.length > 0 && (
             <div>
-              <p className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+              <p className="text-ih-muted mb-1.5 text-[10.5px] tracking-[0.12em] uppercase tabular-nums">
                 JSON-LD that will be emitted
               </p>
               <JsonLdPreview data={ldPreview} />
@@ -604,24 +609,37 @@ export default function SeoEntityDrawer({
       </div>
 
       {/* Footer */}
-      <div className="flex items-center gap-3 px-6 py-4 border-t border-ih-border bg-ih-surface-2">
+      <div className="border-ih-border bg-ih-surface-2 flex items-center gap-3 border-t px-6 py-4">
         <button
           type="submit"
           disabled={pending}
-          className="h-10 px-5 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-10 px-5 text-[13px] font-medium disabled:opacity-50"
         >
           {pending ? 'Saving…' : 'Save SEO'}
         </button>
         {savedAt && (
-          <span className="tabular-nums text-[11px] text-ih-success-ink">
-            Saved at {savedAt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+          <span className="text-ih-success-ink text-[11px] tabular-nums">
+            Saved at{' '}
+            {savedAt.toLocaleTimeString('en-GB', {
+              hour: '2-digit',
+              minute: '2-digit',
+              second: '2-digit',
+            })}
           </span>
         )}
         <span className="ml-auto flex items-center gap-2">
-          <span className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <span className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             Health
           </span>
-          <SeoHealthBadge score={estimateScore({ effectiveTitle, effectiveDescription, focusKeyword, robotsIndex, ogImagePath })} />
+          <SeoHealthBadge
+            score={estimateScore({
+              effectiveTitle,
+              effectiveDescription,
+              focusKeyword,
+              robotsIndex,
+              ogImagePath,
+            })}
+          />
         </span>
       </div>
     </form>
@@ -657,11 +675,11 @@ function FieldBlock({
   return (
     <div className="flex flex-col gap-1.5">
       <div className="flex items-center justify-between">
-        <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
+        <span className="text-ih-ink-2 text-[12px] font-medium">{label}</span>
         {rightAdornment}
       </div>
       {children}
-      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-ih-muted-2 text-[11px]">{hint}</span>}
     </div>
   )
 }

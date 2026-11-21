@@ -33,10 +33,7 @@ export type PageNumbersToken = number | 'ellipsis'
  *   - currentPage near the end   → 1, …, totalPages-4..totalPages
  *   - currentPage in the middle  → 1, …, current-1, current, current+1, …, totalPages
  */
-export function buildPageNumbers(
-  currentPage: number,
-  totalPages: number,
-): PageNumbersToken[] {
+export function buildPageNumbers(currentPage: number, totalPages: number): PageNumbersToken[] {
   if (totalPages <= 0) return []
   if (totalPages <= 7) {
     return Array.from({ length: totalPages }, (_, i) => i + 1)
@@ -55,7 +52,7 @@ export function buildPageNumbers(
       totalPages - 3,
       totalPages - 2,
       totalPages - 1,
-      totalPages,
+      totalPages
     )
   } else {
     tokens.push(1, 'ellipsis', current - 1, current, current + 1, 'ellipsis', totalPages)

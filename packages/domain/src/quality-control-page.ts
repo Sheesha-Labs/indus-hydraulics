@@ -45,11 +45,11 @@ import type { DesignedEnquiry, DesignedPageImage } from './designed-pages'
 const IMG_BASE =
   'https://hesezbozronntejnsopr.supabase.co/storage/v1/object/public/quality-control-images'
 
-const img = (
-  file: string,
-  alt: string,
-  ratio: DesignedPageImage['ratio']
-): DesignedPageImage => ({ src: `${IMG_BASE}/${file}`, alt, ratio })
+const img = (file: string, alt: string, ratio: DesignedPageImage['ratio']): DesignedPageImage => ({
+  src: `${IMG_BASE}/${file}`,
+  alt,
+  ratio,
+})
 
 /** A key/value row in a spec table. */
 export type QualitySpecRow = readonly [key: string, value: string]
@@ -101,7 +101,11 @@ export type QualityRecord = {
 export type QualityRequirement = { readonly label: string; readonly body: string }
 
 /** A cross-link to a sibling designed page. */
-export type QualityRelated = { readonly label: string; readonly href: string; readonly body: string }
+export type QualityRelated = {
+  readonly label: string
+  readonly href: string
+  readonly body: string
+}
 
 export type QualityControlPage = {
   readonly path: string
@@ -210,19 +214,31 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         name: 'Universal strength machine',
         category: 'MECHANICAL',
         description: 'Tensile and yield strength to destruction',
-        image: img('universal-strength-machine.webp', 'Universal tensile strength testing machine', '16/9'),
+        image: img(
+          'universal-strength-machine.webp',
+          'Universal tensile strength testing machine',
+          '16/9'
+        ),
       },
       {
         name: 'Steel tube bending tester',
         category: 'MECHANICAL',
         description: 'Bend and flattening behaviour of tube and pipe',
-        image: img('steel-tube-bending-tester.webp', 'Steel tube bending and flattening test rig', '16/9'),
+        image: img(
+          'steel-tube-bending-tester.webp',
+          'Steel tube bending and flattening test rig',
+          '16/9'
+        ),
       },
       {
         name: 'Spectrophotometer',
         category: 'CHEMICAL',
         description: 'Elemental composition against grade limits',
-        image: img('spectrophotometer.webp', 'Bench spectrophotometer in the chemical laboratory', '16/9'),
+        image: img(
+          'spectrophotometer.webp',
+          'Bench spectrophotometer in the chemical laboratory',
+          '16/9'
+        ),
       },
       {
         name: 'Salt spray tester',
@@ -240,19 +256,31 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         name: 'HFI Carbon Sulfur Meter',
         category: 'CHEMICAL',
         description: 'Carbon and sulphur by high-frequency infrared',
-        image: img('hfi-carbon-sulfur-meter.webp', 'High-frequency infrared carbon and sulphur analyser', '16/9'),
+        image: img(
+          'hfi-carbon-sulfur-meter.webp',
+          'High-frequency infrared carbon and sulphur analyser',
+          '16/9'
+        ),
       },
       {
         name: 'Gas chromatograph',
         category: 'CHEMICAL',
         description: 'Volatile constituent separation and assay',
-        image: img('gas-chromatograph.webp', 'Gas chromatograph with sample injection port', '16/9'),
+        image: img(
+          'gas-chromatograph.webp',
+          'Gas chromatograph with sample injection port',
+          '16/9'
+        ),
       },
       {
         name: 'Ammonia nitrogen tester',
         category: 'PROCESS WATER',
         description: 'Nitrogen load in process and rinse water',
-        image: img('ammonia-nitrogen-tester.webp', 'Ammonia nitrogen analyser for process water', '16/9'),
+        image: img(
+          'ammonia-nitrogen-tester.webp',
+          'Ammonia nitrogen analyser for process water',
+          '16/9'
+        ),
       },
       {
         name: 'Atomic spectrophotometer',
@@ -264,7 +292,11 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         name: 'Direct reading chromatograph',
         category: 'CHEMICAL',
         description: 'Direct-read composition on the melt floor',
-        image: img('direct-reading-chromatograph.webp', 'Direct reading spectrometer for melt-floor composition', '16/9'),
+        image: img(
+          'direct-reading-chromatograph.webp',
+          'Direct reading spectrometer for melt-floor composition',
+          '16/9'
+        ),
       },
       {
         name: 'Drying oven',
@@ -276,7 +308,11 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         name: 'Chemical Composition Analysis',
         category: 'CHEMICAL',
         description: 'Sample preparation and composition record',
-        image: img('chemical-composition-analysis.webp', 'Technician preparing a sample for composition analysis', '16/9'),
+        image: img(
+          'chemical-composition-analysis.webp',
+          'Technician preparing a sample for composition analysis',
+          '16/9'
+        ),
       },
     ],
   },
@@ -309,33 +345,61 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
     */
     portraitRow: [
       {
-        image: img('caliper-across-flats.webp', 'Vernier caliper measuring across the flats of a machined hex fitting', '3/4'),
+        image: img(
+          'caliper-across-flats.webp',
+          'Vernier caliper measuring across the flats of a machined hex fitting',
+          '3/4'
+        ),
         caption: 'Caliper across the flats of a machined fitting',
       },
       {
-        image: img('thread-gauge-check.webp', 'Thread gauge entered into the threaded end of a coupling', '3/4'),
+        image: img(
+          'thread-gauge-check.webp',
+          'Thread gauge entered into the threaded end of a coupling',
+          '3/4'
+        ),
         caption: 'Thread gauge check on a machined coupling',
       },
       {
-        image: img('thread-diameter-caliper.webp', 'Vernier caliper on the major diameter of an external thread', '3/4'),
+        image: img(
+          'thread-diameter-caliper.webp',
+          'Vernier caliper on the major diameter of an external thread',
+          '3/4'
+        ),
         caption: 'Thread major diameter on a hex nipple',
       },
       {
-        image: img('bevel-protractor-check.webp', 'Bevel protractor set against a forged fitting to read an angle', '3/4'),
+        image: img(
+          'bevel-protractor-check.webp',
+          'Bevel protractor set against a forged fitting to read an angle',
+          '3/4'
+        ),
         caption: 'Bevel protractor reading an angle on a forged fitting',
       },
     ],
     landscapeRow: [
       {
-        image: img('end-face-square-check.webp', 'Precision square checking the end face of a nipple against the thread axis', '4/3'),
+        image: img(
+          'end-face-square-check.webp',
+          'Precision square checking the end face of a nipple against the thread axis',
+          '4/3'
+        ),
         caption: 'End face checked square to the thread axis',
       },
       {
-        image: img('digital-caliper-length.webp', 'Digital caliper reading the overall length of a hex nipple', '4/3'),
+        image: img(
+          'digital-caliper-length.webp',
+          'Digital caliper reading the overall length of a hex nipple',
+          '4/3'
+        ),
         caption: 'Digital caliper on overall length',
       },
       {
-        image: img('socket-end-square-check.webp', 'Two precision squares checking the socket ends of a forged fitting for square', '4/3'),
+        image: img(
+          'socket-end-square-check.webp',
+          'Two precision squares checking the socket ends of a forged fitting for square',
+          '4/3'
+        ),
         caption: 'Socket ends checked for square',
       },
       {
@@ -346,7 +410,11 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
           dimensional frame if the client can supply one; it sits here because
           the row needs a fourth landscape and it is at least inspection.
         */
-        image: img('xrf-alloy-verification.webp', 'Handheld XRF analyser reading alloy composition on a threaded fitting', '4/3'),
+        image: img(
+          'xrf-alloy-verification.webp',
+          'Handheld XRF analyser reading alloy composition on a threaded fitting',
+          '4/3'
+        ),
         caption: 'Handheld XRF confirming alloy grade',
       },
     ],
@@ -361,27 +429,44 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         number: '01',
         name: 'Raw Material Inspection',
         tag: 'BEFORE MACHINING',
-        intro: 'Incoming steel is proven for composition, size and structure before a single cut is made.',
+        intro:
+          'Incoming steel is proven for composition, size and structure before a single cut is made.',
         checks: [
           {
             title: 'Spectral Analysis',
             body: 'Each batch of steel (A105 / A182 / A350) is tested using a spectrometer to confirm chemical composition meets ASTM and ASME requirements.',
-            image: img('spectral-analysis.webp', 'Spectrum analyser confirming material composition', '4/3'),
+            image: img(
+              'spectral-analysis.webp',
+              'Spectrum analyser confirming material composition',
+              '4/3'
+            ),
           },
           {
             title: 'Dimensional Verification',
             body: 'Raw bars and forgings are measured using calibrated calipers and ultrasonic thickness gauges to ensure size tolerance before machining.',
-            image: img('raw-dimensional-verification.webp', 'Caliper and ultrasonic gauge check on raw stock', '4/3'),
+            image: img(
+              'raw-dimensional-verification.webp',
+              'Caliper and ultrasonic gauge check on raw stock',
+              '4/3'
+            ),
           },
           {
             title: 'Metallographic Structure',
             body: 'Samples are analyzed under a metallurgical microscope to confirm proper grain structure and absence of segregation or porosity.',
-            image: img('metallographic-structure.webp', 'Metallurgical microscope reading grain structure', '4/3'),
+            image: img(
+              'metallographic-structure.webp',
+              'Metallurgical microscope reading grain structure',
+              '4/3'
+            ),
           },
           {
             title: 'Coating & Hardness Test',
             body: 'Surface hardness and coating thickness are checked to meet corrosion-resistance and mechanical performance standards.',
-            image: img('coating-hardness-test.webp', 'Thickness gauge verifying coating on a fitting', '4/3'),
+            image: img(
+              'coating-hardness-test.webp',
+              'Thickness gauge verifying coating on a fitting',
+              '4/3'
+            ),
           },
         ],
       },
@@ -389,27 +474,44 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         number: '02',
         name: 'Process Inspection',
         tag: 'DURING PRODUCTION',
-        intro: 'The first article proves the setup; the run is then monitored and re-verified at every shift change.',
+        intro:
+          'The first article proves the setup; the run is then monitored and re-verified at every shift change.',
         checks: [
           {
             title: 'First Article Inspection',
             body: 'Before mass production, a trial sample is machined and fully inspected to validate tool setup, thread profile, and dimensions.',
-            image: img('first-article-inspection.webp', 'First article measured against the approved drawing', '4/3'),
+            image: img(
+              'first-article-inspection.webp',
+              'First article measured against the approved drawing',
+              '4/3'
+            ),
           },
           {
             title: 'In-Process Dimensional',
             body: 'CNC machining dimensions (thread pitch, diameter, bevel angle) are monitored with CMM (Coordinate Measuring Machine) and thread gauges per ASME B1.20.1.',
-            image: img('in-process-dimensional.webp', 'Full-dimension inspection in progress on a machined part', '4/3'),
+            image: img(
+              'in-process-dimensional.webp',
+              'Full-dimension inspection in progress on a machined part',
+              '4/3'
+            ),
           },
           {
             title: 'Non-Destructive Testing (NDT)',
             body: 'Forged and welded parts are tested for air holes, cracks, or inclusions using UT / PT / MT, following ASME Section V requirements.',
-            image: img('non-destructive-testing.webp', 'Ultrasonic inspection for internal defects', '4/3'),
+            image: img(
+              'non-destructive-testing.webp',
+              'Ultrasonic inspection for internal defects',
+              '4/3'
+            ),
           },
           {
             title: 'Shift-End Verification',
             body: 'After each production run, critical dimensions and visual quality are rechecked to ensure consistency between shifts and batches.',
-            image: img('shift-end-verification.webp', 'Shift-end recheck of critical dimensions', '4/3'),
+            image: img(
+              'shift-end-verification.webp',
+              'Shift-end recheck of critical dimensions',
+              '4/3'
+            ),
           },
         ],
       },
@@ -417,29 +519,46 @@ export const QUALITY_CONTROL_PAGE: QualityControlPage = {
         number: '03',
         name: 'Finished Product Inspection',
         tag: 'BEFORE DISPATCH',
-        intro: 'Surface, strength, marking and packing are signed off as one release, and the records go with the batch.',
+        intro:
+          'Surface, strength, marking and packing are signed off as one release, and the records go with the batch.',
         checks: [
           {
             title: 'Visual & Surface Inspection',
             body: 'All products are examined for surface finish, thread quality, and marking clarity (size, material grade, heat number).',
-            image: img('visual-surface-inspection.webp', 'Surface finish and marking clarity check', '4/3'),
+            image: img(
+              'visual-surface-inspection.webp',
+              'Surface finish and marking clarity check',
+              '4/3'
+            ),
           },
           {
             title: 'Pressure & Mechanical Testing',
             body: 'Random samples undergo hydrostatic, tensile, and impact tests to verify mechanical strength and pressure resistance per ASME B16.11 / B16.9.',
             // The frame shows the pendulum impact tester itself, with no part
             // in shot — the alt says so rather than claiming a sampled fitting.
-            image: img('pressure-mechanical-testing.webp', 'Pendulum impact tester in the mechanical testing laboratory', '4/3'),
+            image: img(
+              'pressure-mechanical-testing.webp',
+              'Pendulum impact tester in the mechanical testing laboratory',
+              '4/3'
+            ),
           },
           {
             title: 'Identification Review',
             body: 'Each batch is checked for correct markings — heat number, standard, and class rating — to ensure full material traceability.',
-            image: img('identification-review.webp', 'Marking and label verification against the batch record', '4/3'),
+            image: img(
+              'identification-review.webp',
+              'Marking and label verification against the batch record',
+              '4/3'
+            ),
           },
           {
             title: 'Packaging & Shipping',
             body: 'Products are securely packed in fumigation-free pallets and cartons, with additional rust protection for overseas shipping.',
-            image: img('packaging-shipping.webp', 'Pallet and carton check with shipping marks', '4/3'),
+            image: img(
+              'packaging-shipping.webp',
+              'Pallet and carton check with shipping marks',
+              '4/3'
+            ),
           },
         ],
       },

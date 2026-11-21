@@ -107,7 +107,9 @@ describe('coverage — landlocked, sea + road, two transit countries', () => {
   // Chad, Mali, Niger, Zambia, Rwanda, Burundi. The route has to reach a port
   // by sea and then continue overland through a real crossing, which is what
   // produces the long multi-waypoint paths.
-  const landlocked = MARKET_PAGE_RECORDS.filter((p) => primaryRoute(p.map).mode.includes('ROAD') && primaryRoute(p.map).mode.includes('SEA'))
+  const landlocked = MARKET_PAGE_RECORDS.filter(
+    (p) => primaryRoute(p.map).mode.includes('ROAD') && primaryRoute(p.map).mode.includes('SEA')
+  )
 
   it('is still reachable', () => {
     expect(landlocked.map((p) => p.slug)).toEqual(
@@ -209,7 +211,15 @@ describe('coverage — local-language breadcrumb', () => {
       Kenya Swahili, Ethiopia Amharic, Kazakhstan Kazakh, Eritrea Tigrinya —
       all left-to-right, none of them English.
     */
-    for (const slug of ['ivory-coast', 'equatorial-guinea', 'kenya', 'ethiopia', 'kazakhstan', 'eritrea', 'madagascar']) {
+    for (const slug of [
+      'ivory-coast',
+      'equatorial-guinea',
+      'kenya',
+      'ethiopia',
+      'kazakhstan',
+      'eritrea',
+      'madagascar',
+    ]) {
       const name = bySlug(slug).localName!
       expect(name, slug).toBeTruthy()
       expect(isRightToLeft(name), `${slug}: ${name}`).toBe(false)

@@ -47,7 +47,7 @@ describe('collapseInlineWhitespace', () => {
 describe('walkItemMarkers — trap 2: run-together numbered lists', () => {
   it('finds a marker mid-line, which line-splitting cannot', () => {
     const body = '1. GASKET SET - 4 Nos.2. SHAFT SEAL - 2 Nos.'
-    expect(walkItemMarkers(body).map(m => m.index)).toEqual([1, 2])
+    expect(walkItemMarkers(body).map((m) => m.index)).toEqual([1, 2])
   })
 
   it('rejects "1/2 INCH" — a slash is not marker punctuation', () => {
@@ -60,16 +60,16 @@ describe('walkItemMarkers — trap 2: run-together numbered lists', () => {
 
   it('requires strict monotonic succession, so an out-of-order number is skipped', () => {
     const body = '1. FIRST 7. NOISE 2. SECOND 3. THIRD'
-    expect(walkItemMarkers(body).map(m => m.index)).toEqual([1, 2, 3])
+    expect(walkItemMarkers(body).map((m) => m.index)).toEqual([1, 2, 3])
   })
 
   it('accepts ")" as marker punctuation', () => {
-    expect(walkItemMarkers('1) ALPHA 2) BETA').map(m => m.index)).toEqual([1, 2])
+    expect(walkItemMarkers('1) ALPHA 2) BETA').map((m) => m.index)).toEqual([1, 2])
   })
 
   it('is not confused by a decimal quantity inside an item', () => {
     const body = '1. OIL SAE 15.40 GRADE 2. FILTER ELEMENT'
-    expect(walkItemMarkers(body).map(m => m.index)).toEqual([1, 2])
+    expect(walkItemMarkers(body).map((m) => m.index)).toEqual([1, 2])
   })
 
   it('is stateless across calls despite the module-level /g regex', () => {
@@ -184,7 +184,9 @@ describe('dropSelfRepeat / splitTitleItems — trap 4: items packed into the tit
 
   it('strips a known title prefix from the first description', () => {
     const title = 'DOCK OVERHAUL GASKET SET QTY = 4 PC'
-    expect(splitTitleItems(title, { titlePrefix: 'DOCK OVERHAUL' })[0]!.description).toBe('GASKET SET')
+    expect(splitTitleItems(title, { titlePrefix: 'DOCK OVERHAUL' })[0]!.description).toBe(
+      'GASKET SET'
+    )
   })
 
   it('returns [] for an ordinary title, signalling "not a packed list"', () => {
@@ -193,7 +195,10 @@ describe('dropSelfRepeat / splitTitleItems — trap 4: items packed into the tit
 
   it('accepts NOS and SET units and a colon separator', () => {
     const items = splitTitleItems('BEARING QTY: 6 NOS COUPLING QTY = 1 SET')
-    expect(items.map(i => [i.qty, i.unit])).toEqual([[6, 'NOS'], [1, 'SET']])
+    expect(items.map((i) => [i.qty, i.unit])).toEqual([
+      [6, 'NOS'],
+      [1, 'SET'],
+    ])
   })
 
   it('is stateless across calls', () => {

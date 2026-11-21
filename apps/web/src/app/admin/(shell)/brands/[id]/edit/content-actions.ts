@@ -21,17 +21,15 @@ const optionalString = (max: number) =>
     .optional()
     .transform((v) => (v && v.length ? v : null))
 
-const optionalInt = z
-  .union([z.string(), z.number(), z.null(), z.undefined()])
-  .transform((v) => {
-    if (v === undefined || v === null || v === '') return null
-    const n = typeof v === 'number' ? v : Number(v)
-    return Number.isFinite(n) ? Math.trunc(n) : null
-  })
+const optionalInt = z.union([z.string(), z.number(), z.null(), z.undefined()]).transform((v) => {
+  if (v === undefined || v === null || v === '') return null
+  const n = typeof v === 'number' ? v : Number(v)
+  return Number.isFinite(n) ? Math.trunc(n) : null
+})
 
 function parseJson(
   v: FormDataEntryValue | null,
-  fallback: Prisma.InputJsonValue,
+  fallback: Prisma.InputJsonValue
 ): { value: Prisma.InputJsonValue; error: string | null } {
   if (typeof v !== 'string' || v.trim().length === 0) return { value: fallback, error: null }
   try {
@@ -186,12 +184,10 @@ export async function updateBrandCaseStudy(formData: FormData): Promise<Result<v
 export async function deleteBrandCaseStudy(formData: FormData): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
-    const parsed = z
-      .object({ id: z.string().uuid(), brandId: z.string().uuid() })
-      .parse({
-        id: formData.get('id'),
-        brandId: formData.get('brandId'),
-      })
+    const parsed = z.object({ id: z.string().uuid(), brandId: z.string().uuid() }).parse({
+      id: formData.get('id'),
+      brandId: formData.get('brandId'),
+    })
     await db.brandCaseStudy.delete({ where: { id: parsed.id } })
     invalidate(parsed.brandId)
     return ok(undefined)

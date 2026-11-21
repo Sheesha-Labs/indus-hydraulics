@@ -43,16 +43,26 @@ async function toScoreable(researched: ResearchedCandidate[]): Promise<SupplierC
       ],
     },
     select: {
-      id: true, name: true, domain: true, country: true,
-      isAuthorizedDistributor: true, rfqsSent: true, repliesReceived: true,
-      contacts: { select: { email: true, source: true, verifiedAt: true }, orderBy: { isPrimary: 'desc' }, take: 1 },
+      id: true,
+      name: true,
+      domain: true,
+      country: true,
+      isAuthorizedDistributor: true,
+      rfqsSent: true,
+      repliesReceived: true,
+      contacts: {
+        select: { email: true, source: true, verifiedAt: true },
+        orderBy: { isPrimary: 'desc' },
+        take: 1,
+      },
     },
   })
   const byDomain = new Map(known.filter((s) => s.domain).map((s) => [s.domain!, s]))
   const byName = new Map(known.map((s) => [s.name.toLowerCase(), s]))
 
   return researched.map((c) => {
-    const match = (c.domain ? byDomain.get(c.domain) : undefined) ?? byName.get(c.name.toLowerCase())
+    const match =
+      (c.domain ? byDomain.get(c.domain) : undefined) ?? byName.get(c.name.toLowerCase())
     const contact = match?.contacts[0]
     return {
       supplierId: match?.id ?? null,
@@ -110,7 +120,12 @@ export async function runResearchInline(researchRunId: string): Promise<void> {
     const signature = buildItemSignature(line.description)
     const result = await db.itemResearchResult.upsert({
       where: { researchRunId_enquiryLineId: { researchRunId, enquiryLineId: line.id } },
-      create: { researchRunId, enquiryLineId: line.id, signatureHash: signature.signatureHash, status: 'running' },
+      create: {
+        researchRunId,
+        enquiryLineId: line.id,
+        signatureHash: signature.signatureHash,
+        status: 'running',
+      },
       update: { status: 'running' },
       select: { id: true },
     })
@@ -125,7 +140,11 @@ export async function runResearchInline(researchRunId: string): Promise<void> {
 
     try {
       const cached = await db.itemResearchCache.findFirst({
-        where: { signatureHash: signature.signatureHash, expiresAt: { gt: new Date() }, qualityScore: { gt: 0 } },
+        where: {
+          signatureHash: signature.signatureHash,
+          expiresAt: { gt: new Date() },
+          qualityScore: { gt: 0 },
+        },
       })
       const researched: ResearchedCandidate[] = cached
         ? ((cached.candidates as unknown as { candidates: ResearchedCandidate[] }).candidates ?? [])
@@ -192,7 +211,12 @@ export async function runResearchInline(researchRunId: string): Promise<void> {
   await db.researchRun.update({
     where: { id: researchRunId },
     data: {
-      status: failures === attempt.length && attempt.length > 0 ? 'failed' : deferred > 0 || failures > 0 ? 'partial' : 'completed',
+      status:
+        failures === attempt.length && attempt.length > 0
+          ? 'failed'
+          : deferred > 0 || failures > 0
+            ? 'partial'
+            : 'completed',
       finishedAt: new Date(),
       ...(note ? { error: note } : {}),
     },

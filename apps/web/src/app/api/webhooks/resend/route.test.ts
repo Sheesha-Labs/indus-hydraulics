@@ -62,7 +62,9 @@ describe('POST /api/webhooks/resend', () => {
   it('does not retry an old one, or transactional mail', async () => {
     recordEmailEvent.mockResolvedValue({ email: false, subscribers: 0, contacts: 0, suppressed: 0 })
     const old = new Date(Date.now() - 60 * 60 * 1000)
-    expect((await POST(request(event('newsletter@news.indushydraulics.com', old)))).status).toBe(200)
+    expect((await POST(request(event('newsletter@news.indushydraulics.com', old)))).status).toBe(
+      200
+    )
     expect((await POST(request(event('sales@indushydraulics.com')))).status).toBe(200)
   })
 })

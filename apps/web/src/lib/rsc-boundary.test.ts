@@ -83,7 +83,11 @@ function clientUiComponents(): Map<string, string> {
     }
     for (const block of src.matchAll(/export \{([^}]+)\}/g)) {
       for (const raw of (block[1] ?? '').split(',')) {
-        const name = raw.trim().split(/\s+as\s+/).pop()?.trim()
+        const name = raw
+          .trim()
+          .split(/\s+as\s+/)
+          .pop()
+          ?.trim()
         if (name && /^[A-Z]\w*$/.test(name)) out.set(name, entry)
       }
     }
@@ -129,7 +133,7 @@ function functionPropsPassedTo(component: string, source: string): string[] {
       // to ignore this test.
       const isFunctionLiteral =
         /^(async\s+)?\([^)]*\)\s*=>/.test(value) || // (a, b) => …
-        /^(async\s+)?[\w$]+\s*=>/.test(value) ||      // a => …
+        /^(async\s+)?[\w$]+\s*=>/.test(value) || // a => …
         /^(async\s+)?function\b/.test(value)
       const isKnownFunctionRef = /^(buildUrl|linkComponent|render[A-Z]\w*|on[A-Z]\w*)$/.test(value)
       if (isFunctionLiteral) out.push(`${name}={(…) => …}`)
@@ -172,7 +176,11 @@ function clientValueImports(source: string, file: string): string[] {
     for (const raw of clause.split(',')) {
       const binding = raw.trim()
       if (!binding || binding.startsWith('type ')) continue
-      const name = binding.split(/\s+as\s+/).pop()?.trim() ?? ''
+      const name =
+        binding
+          .split(/\s+as\s+/)
+          .pop()
+          ?.trim() ?? ''
       if (!name || /^[A-Z]/.test(name)) continue
       out.push(`${name} from ${spec}`)
     }

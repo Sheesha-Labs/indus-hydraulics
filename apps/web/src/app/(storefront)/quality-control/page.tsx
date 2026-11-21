@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
-import { QUALITY_CONTROL_ENQUIRY, QUALITY_CONTROL_PAGE, buildBreadcrumbLd, designedPageMarketReach, type JsonLd as JsonLdData, enquiryMailto } from '@indus/domain'
+import {
+  QUALITY_CONTROL_ENQUIRY,
+  QUALITY_CONTROL_PAGE,
+  buildBreadcrumbLd,
+  designedPageMarketReach,
+  type JsonLd as JsonLdData,
+  enquiryMailto,
+} from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import QualityControlLanding from '../../../components/quality-control/QualityControlLanding'
 import MarketReachSection from '../../../components/markets/MarketReachSection'

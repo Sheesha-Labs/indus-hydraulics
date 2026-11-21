@@ -169,7 +169,10 @@ function objectKey(sku: string, alt: string, position: number): string {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 const SIZE_ORDER = (s: string) => Number(eval(s.replace('-1/2', '+0.5')))
@@ -182,7 +185,8 @@ async function main() {
   const publish = argv.includes('--publish')
   const only = argv.find((a) => a.startsWith('--only='))?.split('=')[1] ?? null
   const name = argv.find((a) => a.startsWith('--payload='))?.split('=')[1]
-  if (!name || !/^[a-z0-9-]+$/.test(name)) throw new Error('--payload=<folder under packages/db/data> is required')
+  if (!name || !/^[a-z0-9-]+$/.test(name))
+    throw new Error('--payload=<folder under packages/db/data> is required')
   const payloadPath = join(DATA_DIR, name, 'listings.json')
   if (!existsSync(payloadPath)) throw new Error(`payload not found: ${payloadPath}`)
   const payload: Payload = JSON.parse(readFileSync(payloadPath, 'utf8'))
@@ -195,7 +199,10 @@ async function main() {
   for (const c of payload.categories ?? []) {
     const existing = await db.category.findUnique({ where: { slug: c.slug }, select: { id: true } })
     if (existing) continue
-    const parent = await db.category.findUnique({ where: { slug: c.parentSlug }, select: { id: true } })
+    const parent = await db.category.findUnique({
+      where: { slug: c.parentSlug },
+      select: { id: true },
+    })
     if (!parent) throw new Error(`parent category ${c.parentSlug} does not exist`)
     if (dryRun) {
       console.log(`[dry-run] create category ${c.slug} under ${c.parentSlug}`)
@@ -278,7 +285,8 @@ async function main() {
     if (only && e.sku !== only) continue
     const existing = await db.product.findUnique({ where: { sku: e.sku }, select: { id: true } })
     for (const img of e.images) {
-      if (!existsSync(join(payload.imageDir, img.file))) problems.push(`${e.sku}: image missing ${img.file}`)
+      if (!existsSync(join(payload.imageDir, img.file)))
+        problems.push(`${e.sku}: image missing ${img.file}`)
     }
 
     if (dryRun) {
@@ -340,7 +348,12 @@ async function main() {
           })),
         })
         await tx.productFaq.createMany({
-          data: e.faqs.map((f, i) => ({ productId, question: f.question, answer: f.answer, position: i })),
+          data: e.faqs.map((f, i) => ({
+            productId,
+            question: f.question,
+            answer: f.answer,
+            position: i,
+          })),
         })
       },
       { maxWait: 30_000, timeout: 30_000 }
@@ -386,7 +399,9 @@ async function main() {
             },
             select: { id: true },
           })
-          await tx.productImage.create({ data: { productId, mediaId: media.id, position, alt: img.alt } })
+          await tx.productImage.create({
+            data: { productId, mediaId: media.id, position, alt: img.alt },
+          })
         },
         { maxWait: 30_000, timeout: 30_000 }
       )
@@ -394,28 +409,29 @@ async function main() {
     }
 
     // ── Content score, same inputs as the admin editor ───────────────────────
-    const [faqCount, specCount, documentCount, imageCount, crossReferenceCount, fresh] = await Promise.all([
-      db.productFaq.count({ where: { productId } }),
-      db.productSpec.count({ where: { productId } }),
-      db.productDocument.count({ where: { productId } }),
-      db.productImage.count({ where: { productId } }),
-      db.productCrossReference.count({ where: { productId } }),
-      db.product.findUnique({
-        where: { id: productId },
-        select: {
-          brandId: true,
-          categoryId: true,
-          focusKeyword: true,
-          seoTitle: true,
-          seoDescription: true,
-          descriptionShort: true,
-          descriptionLong: true,
-          weightKg: true,
-          countryOfOrigin: true,
-          mpn: true,
-        },
-      }),
-    ])
+    const [faqCount, specCount, documentCount, imageCount, crossReferenceCount, fresh] =
+      await Promise.all([
+        db.productFaq.count({ where: { productId } }),
+        db.productSpec.count({ where: { productId } }),
+        db.productDocument.count({ where: { productId } }),
+        db.productImage.count({ where: { productId } }),
+        db.productCrossReference.count({ where: { productId } }),
+        db.product.findUnique({
+          where: { id: productId },
+          select: {
+            brandId: true,
+            categoryId: true,
+            focusKeyword: true,
+            seoTitle: true,
+            seoDescription: true,
+            descriptionShort: true,
+            descriptionLong: true,
+            weightKg: true,
+            countryOfOrigin: true,
+            mpn: true,
+          },
+        }),
+      ])
     const score = scoreProductContent({
       descriptionShortWords: words(fresh!.descriptionShort ?? ''),
       descriptionLongWords: words(fresh!.descriptionLong ?? ''),
@@ -442,18 +458,23 @@ async function main() {
     bySeries.set(e.seriesPage, [...(bySeries.get(e.seriesPage) ?? []), e])
   }
   for (const [seriesSku, entries] of bySeries) {
-    const series = await db.product.findUnique({ where: { sku: seriesSku }, select: { id: true, descriptionLong: true } })
+    const series = await db.product.findUnique({
+      where: { sku: seriesSku },
+      select: { id: true, descriptionLong: true },
+    })
     if (!series) {
       problems.push(`series page ${seriesSku} not found`)
       continue
     }
     entries.sort(
       (a, b) =>
-        a.group!.style.localeCompare(b.group!.style) || SIZE_ORDER(a.group!.size) - SIZE_ORDER(b.group!.size)
+        a.group!.style.localeCompare(b.group!.style) ||
+        SIZE_ORDER(a.group!.size) - SIZE_ORDER(b.group!.size)
     )
     const items = entries
       .map((e) => {
-        const n = e.specs.find((s) => s.label === 'Cameron part numbers')?.value.split(', ').length ?? 0
+        const n =
+          e.specs.find((s) => s.label === 'Cameron part numbers')?.value.split(', ').length ?? 0
         return `<li><a href="/p/${e.slug}">${disp(e.group!.size)} ${e.group!.style.toLowerCase()}</a> — ${n} part number${n === 1 ? '' : 's'}</li>`
       })
       .join('')
@@ -464,7 +485,9 @@ async function main() {
     const start = current.indexOf(LINKS_START)
     const end = current.indexOf(LINKS_END)
     const next =
-      start >= 0 && end > start ? current.slice(0, start) + block + current.slice(end + LINKS_END.length) : current + block
+      start >= 0 && end > start
+        ? current.slice(0, start) + block + current.slice(end + LINKS_END.length)
+        : current + block
     if (next === current) continue
     if (dryRun) {
       console.log(`[dry-run] link ${entries.length} size pages from ${seriesSku}`)

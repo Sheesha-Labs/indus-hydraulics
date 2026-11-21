@@ -35,7 +35,7 @@ export default async function EnquiryOffersPage({ params }: Props) {
     <AdminPageShell
       title="Supplier offers"
       breadcrumbs={
-        <span className="tabular-nums text-[12px] text-ih-muted">
+        <span className="text-ih-muted text-[12px] tabular-nums">
           {enquiry.code} · {offers.length} {offers.length === 1 ? 'offer' : 'offers'}
         </span>
       }
@@ -45,8 +45,8 @@ export default async function EnquiryOffersPage({ params }: Props) {
       <div className="flex max-w-[860px] flex-col gap-6">
         <Panel>
           <header className="mb-4 flex flex-col gap-1">
-            <h2 className="text-[15px] font-medium text-ih-ink">Paste a reply</h2>
-            <p className="text-[13px] text-ih-muted">
+            <h2 className="text-ih-ink text-[15px] font-medium">Paste a reply</h2>
+            <p className="text-ih-muted text-[13px]">
               Paste the supplier&rsquo;s whole email. Prices are read as written and the number
               format is decided across the whole message, not value by value.
             </p>
@@ -63,25 +63,34 @@ export default async function EnquiryOffersPage({ params }: Props) {
           </Panel>
         ) : (
           offers.map((offer) => {
-            const unreadable = offer.lines.filter((l) => l.reviewFlags.includes('price_unreadable')).length
+            const unreadable = offer.lines.filter((l) =>
+              l.reviewFlags.includes('price_unreadable')
+            ).length
             return (
               <Panel key={offer.id}>
                 <header className="mb-4 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex flex-col gap-1">
-                    <h2 className="text-[15px] font-medium text-ih-ink">{offer.supplierName}</h2>
-                    <p className="tabular-nums text-[12px] text-ih-muted">
-                      {offer.currency ?? 'currency not stated'} · {offer.incoterm ?? 'incoterm not stated'}
+                    <h2 className="text-ih-ink text-[15px] font-medium">{offer.supplierName}</h2>
+                    <p className="text-ih-muted text-[12px] tabular-nums">
+                      {offer.currency ?? 'currency not stated'} ·{' '}
+                      {offer.incoterm ?? 'incoterm not stated'}
                       {offer.decimalConvention ? ` · ${offer.decimalConvention}-decimal` : ''}
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
                     {offer.attributionMethod === 'reference_token' ? (
-                      <StatusPill tone="success" size="sm">Reference matched</StatusPill>
+                      <StatusPill tone="success" size="sm">
+                        Reference matched
+                      </StatusPill>
                     ) : (
-                      <StatusPill tone="warning" size="sm">Attributed by hand</StatusPill>
+                      <StatusPill tone="warning" size="sm">
+                        Attributed by hand
+                      </StatusPill>
                     )}
                     {unreadable > 0 ? (
-                      <StatusPill tone="danger" size="sm">{unreadable} unreadable</StatusPill>
+                      <StatusPill tone="danger" size="sm">
+                        {unreadable} unreadable
+                      </StatusPill>
                     ) : null}
                   </div>
                 </header>
@@ -113,7 +122,7 @@ export default async function EnquiryOffersPage({ params }: Props) {
                       cell: (r) => (
                         <div className="flex flex-col gap-1">
                           <span className="text-ih-ink">{r.description}</span>
-                          <span className="text-[12px] text-ih-muted">{r.sourceQuote}</span>
+                          <span className="text-ih-muted text-[12px]">{r.sourceQuote}</span>
                         </div>
                       ),
                     },
@@ -122,7 +131,11 @@ export default async function EnquiryOffersPage({ params }: Props) {
                       header: 'Unit',
                       numeric: true,
                       cell: (r) =>
-                        r.unitPrice ? r.unitPrice.toString() : <span className="text-ih-muted">—</span>,
+                        r.unitPrice ? (
+                          r.unitPrice.toString()
+                        ) : (
+                          <span className="text-ih-muted">—</span>
+                        ),
                     },
                     {
                       key: 'moq',

@@ -78,7 +78,12 @@ export default function MarketLanding({
    * of the blog's market links. Rendered under the FAQ; nothing when empty.
    */
   guides?: RelatedArticle[]
-  contact: { phone: string | null; email: string | null; hours: string | null; whatsappUrl: string | null }
+  contact: {
+    phone: string | null
+    email: string | null
+    hours: string | null
+    whatsappUrl: string | null
+  }
   /** The build-time audit strip. Staging only — see the docblock on it. */
   showAuditStrip: boolean
   /**
@@ -135,176 +140,176 @@ export default function MarketLanding({
   const bands: Record<string, ReactNode> = {
     // 3. Hero
     hero: (
-      <section className="border-b border-ih-border bg-ih-surface px-5 pb-12 pt-10 sm:px-8 lg:px-12 lg:pb-[60px] lg:pt-14">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,664px)] lg:gap-14">
-        <div>
-          <div className="flex items-center gap-2.5">
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-              {over(heroCopy, 'eyebrow', 'Export from Dubai')}
-            </p>
-            <span className="mono rounded-[3px] bg-ih-accent-soft px-2 py-1 text-[9.5px] uppercase tracking-[0.1em] text-ih-accent">
-              {market.countryCode}
-            </span>
-          </div>
+      <section className="border-ih-border bg-ih-surface border-b px-5 pt-10 pb-12 sm:px-8 lg:px-12 lg:pt-14 lg:pb-[60px]">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,664px)] lg:gap-14">
+          <div>
+            <div className="flex items-center gap-2.5">
+              <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+                {over(heroCopy, 'eyebrow', 'Export from Dubai')}
+              </p>
+              <span className="mono bg-ih-accent-soft text-ih-accent rounded-[3px] px-2 py-1 text-[9.5px] tracking-[0.1em] uppercase">
+                {market.countryCode}
+              </span>
+            </div>
 
-          {/* The italic country name is not decoration — it is how the
-              template shows the reader which word is the variable. */}
-          <h1 className="mt-5 max-w-[640px] font-serif text-[38px] leading-[1.02] tracking-[-0.01em] sm:text-[48px] lg:text-[62px] lg:leading-[1]">
             {/* The italic country name is not decoration — it is how the
+              template shows the reader which word is the variable. */}
+            <h1 className="mt-5 max-w-[640px] font-serif text-[38px] leading-[1.02] tracking-[-0.01em] sm:text-[48px] lg:text-[62px] lg:leading-[1]">
+              {/* The italic country name is not decoration — it is how the
                 template shows the reader which word is the variable. An
                 override replaces the whole line, italics included. */}
-            {str(heroCopy, 'heading') ? (
-              over(heroCopy, 'heading', '')
-            ) : (
-              <>
-                Hydraulic &amp; industrial hose supplier in <em>{market.name}</em>
-              </>
-            )}
-          </h1>
+              {str(heroCopy, 'heading') ? (
+                over(heroCopy, 'heading', '')
+              ) : (
+                <>
+                  Hydraulic &amp; industrial hose supplier in <em>{market.name}</em>
+                </>
+              )}
+            </h1>
 
-          <p className="mt-5 max-w-[640px] text-pretty text-[16px] leading-[1.6] text-ih-ink-2">
-            {str(heroCopy, 'lede') ?? page.lede}
-          </p>
+            <p className="text-ih-ink-2 mt-5 max-w-[640px] text-[16px] leading-[1.6] text-pretty">
+              {str(heroCopy, 'lede') ?? page.lede}
+            </p>
 
-          <dl className="mt-7 border-t border-ih-border">
-            {page.facts.map((fact) => (
-              <div
-                key={fact.label}
-                className="grid grid-cols-1 gap-x-5 gap-y-1 border-b border-ih-border py-3 sm:grid-cols-[148px_1fr]"
-              >
-                <dt className="mono pt-0.5 text-[10px] uppercase tracking-[0.1em] text-ih-muted">
-                  {fact.label}
-                </dt>
-                <dd className="m-0 text-[13.5px] leading-[1.5] text-ih-ink-2">{fact.value}</dd>
-              </div>
-            ))}
-          </dl>
+            <dl className="border-ih-border mt-7 border-t">
+              {page.facts.map((fact) => (
+                <div
+                  key={fact.label}
+                  className="border-ih-border grid grid-cols-1 gap-x-5 gap-y-1 border-b py-3 sm:grid-cols-[148px_1fr]"
+                >
+                  <dt className="mono text-ih-muted pt-0.5 text-[10px] tracking-[0.1em] uppercase">
+                    {fact.label}
+                  </dt>
+                  <dd className="text-ih-ink-2 m-0 text-[13.5px] leading-[1.5]">{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
 
-          <div className="mt-7 flex flex-wrap gap-2.5">
-            {quoteAnchor && (
-              <Button asChild kind="primary" size="lg">
-                {/* An in-page jump, not a navigation — a lead form is already
+            <div className="mt-7 flex flex-wrap gap-2.5">
+              {quoteAnchor && (
+                <Button asChild kind="primary" size="lg">
+                  {/* An in-page jump, not a navigation — a lead form is already
                     on this page and the reader keeps their place. Which one
                     it points at depends on which are switched on. */}
-                <a href={quoteAnchor}>
-                  {over(heroCopy, 'primary_cta_label', 'Request an export quote')}{' '}
-                  <span aria-hidden="true">→</span>
-                </a>
-              </Button>
-            )}
-            {contact.whatsappUrl && (
-              <Button asChild kind="outline" size="lg">
-                <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  {over(heroCopy, 'whatsapp_cta_label', 'WhatsApp us')}
-                </a>
-              </Button>
-            )}
-            {contact.email && (
-              <Button asChild kind="ghost" size="lg">
-                <a href={`mailto:${contact.email}?subject=${encodeURIComponent(`Export enquiry — ${market.name}`)}`}>
-                  Email {contact.email}
-                </a>
-              </Button>
-            )}
+                  <a href={quoteAnchor}>
+                    {over(heroCopy, 'primary_cta_label', 'Request an export quote')}{' '}
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </Button>
+              )}
+              {contact.whatsappUrl && (
+                <Button asChild kind="outline" size="lg">
+                  <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    {over(heroCopy, 'whatsapp_cta_label', 'WhatsApp us')}
+                  </a>
+                </Button>
+              )}
+              {contact.email && (
+                <Button asChild kind="ghost" size="lg">
+                  <a
+                    href={`mailto:${contact.email}?subject=${encodeURIComponent(`Export enquiry — ${market.name}`)}`}
+                  >
+                    Email {contact.email}
+                  </a>
+                </Button>
+              )}
+            </div>
           </div>
-        </div>
 
-        <MarketMapPanel
-          model={mapModel}
-          countryName={market.name}
-          lane={page.lane}
-          slug={market.slug}
-        />
-      </div>
-    </section>
+          <MarketMapPanel
+            model={mapModel}
+            countryName={market.name}
+            lane={page.lane}
+            slug={market.slug}
+          />
+        </div>
+      </section>
     ),
 
     // 4. Manifest strip
     manifest: (
       <div className="bg-ih-navy px-5 sm:px-8 lg:px-12">
-      {/* The 1px gap over a translucent white ground IS the divider — there
+        {/* The 1px gap over a translucent white ground IS the divider — there
           are no border rules in this grid. */}
-      <dl className="mx-auto grid max-w-[1440px] grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6">
-        {page.manifest.map((cell) => (
-          <div key={cell.label} className="bg-ih-navy px-5 pb-6 pt-[22px]">
-            <dt className="mono text-[9px] uppercase tracking-[0.16em] text-ih-steel">
-              {cell.label}
-            </dt>
-            <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">
-              {cell.value}
-            </dd>
-          </div>
-        ))}
-      </dl>
-    </div>
+        <dl className="mx-auto grid max-w-[1440px] grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6">
+          {page.manifest.map((cell) => (
+            <div key={cell.label} className="bg-ih-navy px-5 pt-[22px] pb-6">
+              <dt className="mono text-ih-steel text-[9px] tracking-[0.16em] uppercase">
+                {cell.label}
+              </dt>
+              <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">
+                {cell.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
     ),
 
     // 5. Operations band
     operations: (
-      <div className="grid grid-cols-1 gap-px border-b border-ih-border bg-ih-border sm:grid-cols-2 lg:grid-cols-4">
-      {MARKET_OPERATIONS.map((op, index) => (
-        <div key={op.label} className="bg-ih-surface">
-          <MarketFigure
-            src={operationsImages[op.imageKey]?.url ?? null}
-            // The photograph's own alt from Pages & Blocks — it describes the
-            // Dubai facility and never this market.
-            alt={operationsImages[op.imageKey]?.alt}
-            label={
-              // Only the fourth caption names the destination. One
-              // photograph serves every market; the caption localises it.
-              index === 3
-                ? `${op.shot} · bound for ${page.map.crossing.name.toLowerCase()}`
-                : op.shot
-            }
-            ratio="aspect-[4/3]"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-            priority
-          />
-          <div className="px-4 pb-4 pt-3.5 sm:px-[18px]">
-            <p className="mono text-[9.5px] uppercase tracking-[0.14em] text-ih-accent">
-              {String(index + 1).padStart(2, '0')} · {op.label}
-            </p>
-            <p className="mt-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
-              {op.caption.replace('{market}', market.name)}
-            </p>
+      <div className="border-ih-border bg-ih-border grid grid-cols-1 gap-px border-b sm:grid-cols-2 lg:grid-cols-4">
+        {MARKET_OPERATIONS.map((op, index) => (
+          <div key={op.label} className="bg-ih-surface">
+            <MarketFigure
+              src={operationsImages[op.imageKey]?.url ?? null}
+              // The photograph's own alt from Pages & Blocks — it describes the
+              // Dubai facility and never this market.
+              alt={operationsImages[op.imageKey]?.alt}
+              label={
+                // Only the fourth caption names the destination. One
+                // photograph serves every market; the caption localises it.
+                index === 3
+                  ? `${op.shot} · bound for ${page.map.crossing.name.toLowerCase()}`
+                  : op.shot
+              }
+              ratio="aspect-[4/3]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+              priority
+            />
+            <div className="px-4 pt-3.5 pb-4 sm:px-[18px]">
+              <p className="mono text-ih-accent text-[9.5px] tracking-[0.14em] uppercase">
+                {String(index + 1).padStart(2, '0')} · {op.label}
+              </p>
+              <p className="text-ih-muted mt-1.5 text-[12.5px] leading-[1.55]">
+                {op.caption.replace('{market}', market.name)}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     ),
 
     // 6. Catalogue index
-    catalogue: (
-      <MarketCatalogueIndex clusters={clusters} marketName={market.name} />
-    ),
+    catalogue: <MarketCatalogueIndex clusters={clusters} marketName={market.name} />,
 
     // 7. Lead form, mid page
     quote_form: (
       <section
-      id="quote"
-      className="scroll-mt-24 border-b border-t border-ih-border bg-ih-surface-2 px-5 py-14 sm:px-8 lg:px-12 lg:py-16"
-    >
-      <div className="mx-auto max-w-[1440px]">
-        <MarketQuoteForm
-          marketSlug={market.slug}
-          marketName={market.name}
-          countryCode={market.countryCode}
-          currency={page.currency}
-          cities={page.cities.map((c) => c.name)}
-          incoterms={MARKET_INCOTERM_OPTIONS}
-          urgencies={MARKET_URGENCY_OPTIONS}
-          contactPhone={contact.phone}
-          contactEmail={contact.email}
-          contactHours={contact.hours}
-        />
-      </div>
-    </section>
+        id="quote"
+        className="border-ih-border bg-ih-surface-2 scroll-mt-24 border-t border-b px-5 py-14 sm:px-8 lg:px-12 lg:py-16"
+      >
+        <div className="mx-auto max-w-[1440px]">
+          <MarketQuoteForm
+            marketSlug={market.slug}
+            marketName={market.name}
+            countryCode={market.countryCode}
+            currency={page.currency}
+            cities={page.cities.map((c) => c.name)}
+            incoterms={MARKET_INCOTERM_OPTIONS}
+            urgencies={MARKET_URGENCY_OPTIONS}
+            contactPhone={contact.phone}
+            contactEmail={contact.email}
+            contactHours={contact.hours}
+          />
+        </div>
+      </section>
     ),
 
     // 8. Standards + tariff
     standards: (
-      <section className="border-b border-t border-ih-border bg-ih-surface px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
-      {/*
+      <section className="border-ih-border bg-ih-surface border-t border-b px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
+        {/*
         `minmax(0, …)` on BOTH columns, and `min-w-0` on the child that holds
         the table. A grid column's default `min-width: auto` is the content's
         min-content width, and the standards table declares `min-w-[520px]`
@@ -313,114 +318,123 @@ export default function MarketLanding({
         table's own `overflow-x-auto` cannot help until the column is
         allowed to be narrower than its contents.
       */}
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,480px)] lg:gap-14">
-        <div className="min-w-0">
-          <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-            {over(standardsCopy, 'eyebrow', 'Standards')}
-          </p>
-          <h2 className="mb-5 mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
-            {over(standardsCopy, 'heading', `Standards we supply and certify against for ${market.name}`)}
-          </h2>
-          {/* Wide tables get their own scroller rather than pushing the page
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,480px)] lg:gap-14">
+          <div className="min-w-0">
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+              {over(standardsCopy, 'eyebrow', 'Standards')}
+            </p>
+            <h2 className="mt-3 mb-5 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
+              {over(
+                standardsCopy,
+                'heading',
+                `Standards we supply and certify against for ${market.name}`
+              )}
+            </h2>
+            {/* Wide tables get their own scroller rather than pushing the page
               sideways — a horizontally scrolling body breaks every section. */}
-          <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-            <table className="w-full min-w-[520px] border-collapse text-left">
-              <thead>
-                <tr className="border-b border-ih-border">
-                  {['Standard', 'Types', 'Applies to'].map((heading) => (
-                    <th
-                      key={heading}
-                      scope="col"
-                      className="mono px-4 py-[11px] text-[10.5px] font-medium uppercase tracking-[0.08em] text-ih-muted"
-                    >
-                      {heading}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {MARKET_STANDARDS.map((row) => (
-                  <tr key={row.standard} className="border-b border-ih-border transition-colors hover:bg-ih-surface-2">
-                    <td className="mono whitespace-nowrap px-4 py-3.5 text-[13px] font-medium text-ih-ink">
-                      {row.standard}
-                    </td>
-                    <td className="mono px-4 py-3.5 text-[13px] text-ih-ink-2">{row.types}</td>
-                    <td className="px-4 py-3.5 text-[13px] text-ih-muted">{row.appliesTo}</td>
+            <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+              <table className="w-full min-w-[520px] border-collapse text-left">
+                <thead>
+                  <tr className="border-ih-border border-b">
+                    {['Standard', 'Types', 'Applies to'].map((heading) => (
+                      <th
+                        key={heading}
+                        scope="col"
+                        className="mono text-ih-muted px-4 py-[11px] text-[10.5px] font-medium tracking-[0.08em] uppercase"
+                      >
+                        {heading}
+                      </th>
+                    ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {MARKET_STANDARDS.map((row) => (
+                    <tr
+                      key={row.standard}
+                      className="border-ih-border hover:bg-ih-surface-2 border-b transition-colors"
+                    >
+                      <td className="mono text-ih-ink px-4 py-3.5 text-[13px] font-medium whitespace-nowrap">
+                        {row.standard}
+                      </td>
+                      <td className="mono text-ih-ink-2 px-4 py-3.5 text-[13px]">{row.types}</td>
+                      <td className="text-ih-muted px-4 py-3.5 text-[13px]">{row.appliesTo}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+              {over(standardsCopy, 'tariff_eyebrow', 'Customs')}
+            </p>
+            <h2 className="mt-3 mb-5 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
+              {over(standardsCopy, 'tariff_heading', 'Tariff lines we declare under')}
+            </h2>
+            <ul className="border-ih-border list-none overflow-hidden rounded-lg border p-0">
+              {MARKET_TARIFF_LINES.map((line) => (
+                <li
+                  key={line.hsCode}
+                  className="border-ih-border grid grid-cols-[72px_1fr] gap-3 border-b px-4 py-3 last:border-b-0"
+                >
+                  <span className="mono text-ih-ink text-[11.5px]">{line.hsCode}</span>
+                  <span>
+                    <span className="text-ih-ink-2 block text-[12.5px] leading-[1.45]">
+                      {line.description}
+                    </span>
+                    <span className="text-ih-muted mt-1 block text-[11.5px]">{line.useCase}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-ih-muted mt-3 text-[12px] leading-[1.6]">
+              Classification is confirmed line by line at quotation. This is the set most
+              consignments to {market.name} are declared under.
+            </p>
           </div>
         </div>
-
-        <div>
-          <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-            {over(standardsCopy, 'tariff_eyebrow', 'Customs')}
-          </p>
-          <h2 className="mb-5 mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
-            {over(standardsCopy, 'tariff_heading', 'Tariff lines we declare under')}
-          </h2>
-          <ul className="list-none overflow-hidden rounded-lg border border-ih-border p-0">
-            {MARKET_TARIFF_LINES.map((line) => (
-              <li
-                key={line.hsCode}
-                className="grid grid-cols-[72px_1fr] gap-3 border-b border-ih-border px-4 py-3 last:border-b-0"
-              >
-                <span className="mono text-[11.5px] text-ih-ink">{line.hsCode}</span>
-                <span>
-                  <span className="block text-[12.5px] leading-[1.45] text-ih-ink-2">
-                    {line.description}
-                  </span>
-                  <span className="mt-1 block text-[11.5px] text-ih-muted">{line.useCase}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-3 text-[12px] leading-[1.6] text-ih-muted">
-            Classification is confirmed line by line at quotation. This is the set most
-            consignments to {market.name} are declared under.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
     ),
 
     // 9. Freight ladder + order sequence
     freight: (
       <section className="bg-ih-bg px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
-        <div>
-          <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-            {over(freightCopy, 'eyebrow', 'Freight')}
-          </p>
-          <h2 className="mb-5 mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
-            {over(freightCopy, 'heading', 'Three ways in, priced per shipment')}
-          </h2>
-          {page.freight.map((mode, index) => (
-            <div key={mode.name} className="border-t border-ih-border py-4">
-              <div className="flex items-baseline justify-between gap-5">
-                <span className="text-[15px] font-medium">{mode.name}</span>
-                <span className={`mono text-[13px] ${index === 0 ? 'text-ih-accent' : 'text-ih-ink-2'}`}>
-                  {mode.transit}
-                </span>
-              </div>
-              {/*
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
+          <div>
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+              {over(freightCopy, 'eyebrow', 'Freight')}
+            </p>
+            <h2 className="mt-3 mb-5 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
+              {over(freightCopy, 'heading', 'Three ways in, priced per shipment')}
+            </h2>
+            {page.freight.map((mode, index) => (
+              <div key={mode.name} className="border-ih-border border-t py-4">
+                <div className="flex items-baseline justify-between gap-5">
+                  <span className="text-[15px] font-medium">{mode.name}</span>
+                  <span
+                    className={`mono text-[13px] ${index === 0 ? 'text-ih-accent' : 'text-ih-ink-2'}`}
+                  >
+                    {mode.transit}
+                  </span>
+                </div>
+                {/*
                 Bar length is derived from the transit string next to it, not
                 authored — so a copy edit can never leave the bar contradicting
                 the number. The width has to be an inline custom property
                 because it is a per-row computed percentage; Tailwind cannot
                 express an arbitrary runtime value as a class.
               */}
-              <div
-                className="mt-2.5 h-1.5 overflow-hidden rounded-[3px] bg-ih-surface-3"
-                role="presentation"
-              >
                 <div
-                  className={`h-full ${index === 0 ? 'bg-ih-accent' : 'bg-ih-steel'}`}
-                  style={{ width: `${freightWidths[index]}%` }}
-                />
-              </div>
-              {/*
+                  className="bg-ih-surface-3 mt-2.5 h-1.5 overflow-hidden rounded-[3px]"
+                  role="presentation"
+                >
+                  <div
+                    className={`h-full ${index === 0 ? 'bg-ih-accent' : 'bg-ih-steel'}`}
+                    style={{ width: `${freightWidths[index]}%` }}
+                  />
+                </div>
+                {/*
                 Route and use-case sit on one line from 640px up. Below that
                 they STACK. Held on one row they did two bad things on a phone,
                 both only on the markets with the longest use-case strings:
@@ -430,39 +444,39 @@ export default function MarketLanding({
                 squeezed into a four-line ribbon three words wide. Neither is
                 visible above 375px, which is why it shipped.
               */}
-              <div className="mt-2 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-5">
-                <span className="min-w-0 text-[12.5px] text-ih-muted">{mode.route}</span>
-                <span className="mono text-[10px] uppercase tracking-[0.08em] text-ih-muted-2 sm:whitespace-nowrap">
-                  {mode.useCase}
-                </span>
+                <div className="mt-2 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-5">
+                  <span className="text-ih-muted min-w-0 text-[12.5px]">{mode.route}</span>
+                  <span className="mono text-ih-muted-2 text-[10px] tracking-[0.08em] uppercase sm:whitespace-nowrap">
+                    {mode.useCase}
+                  </span>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        <div>
-          <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-            {over(freightCopy, 'sequence_eyebrow', 'Sequence')}
-          </p>
-          <h2 className="mb-5 mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
-            {over(freightCopy, 'sequence_heading', `How an order to ${market.name} works`)}
-          </h2>
-          <ol className="flex list-none flex-col gap-0.5 p-0">
-            {orderSteps.map((step, index) => (
-              <li
-                key={step}
-                className="grid grid-cols-[42px_1fr] gap-4 rounded-md border border-ih-border bg-ih-surface px-5 py-[18px] sm:grid-cols-[54px_1fr]"
-              >
-                <span className="mono text-[22px] tracking-[-0.02em] text-ih-accent">
-                  {String(index + 1).padStart(2, '0')}
-                </span>
-                <span className="text-[13.5px] leading-[1.6] text-ih-ink-2">{step}</span>
-              </li>
             ))}
-          </ol>
+          </div>
+
+          <div>
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+              {over(freightCopy, 'sequence_eyebrow', 'Sequence')}
+            </p>
+            <h2 className="mt-3 mb-5 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
+              {over(freightCopy, 'sequence_heading', `How an order to ${market.name} works`)}
+            </h2>
+            <ol className="flex list-none flex-col gap-0.5 p-0">
+              {orderSteps.map((step, index) => (
+                <li
+                  key={step}
+                  className="border-ih-border bg-ih-surface grid grid-cols-[42px_1fr] gap-4 rounded-md border px-5 py-[18px] sm:grid-cols-[54px_1fr]"
+                >
+                  <span className="mono text-ih-accent text-[22px] tracking-[-0.02em]">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span className="text-ih-ink-2 text-[13.5px] leading-[1.6]">{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     ),
 
     // 10. Industries + brands
@@ -477,157 +491,167 @@ export default function MarketLanding({
 
     // 11. City gazetteer
     gazetteer: (
-      <section className="border-b border-t border-ih-border bg-ih-surface px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-8 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-12">
-        <div>
-          <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-            {over(gazetteerCopy, 'eyebrow', 'Delivery coverage')}
-          </p>
-          <h2 className="mt-3.5 font-serif text-[26px] leading-[1.12] sm:text-[34px]">
-            {over(gazetteerCopy, 'heading', `Cities and sites we deliver to in ${market.name}`)}
-          </h2>
-          <p className="mt-3.5 text-[13.5px] leading-[1.65] text-ih-muted">
-            {str(gazetteerCopy, 'intro') ??
-              'DAP deliveries go to the site gate. Coordinates are given because project sites are easier to name that way than by address.'}
-          </p>
-          <p className="mono mt-4 text-[10.5px] uppercase tracking-[0.08em] text-ih-muted-2">
-            {page.cities.length} locations listed
-          </p>
-        </div>
+      <section className="border-ih-border bg-ih-surface border-t border-b px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-8 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-12">
+          <div>
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+              {over(gazetteerCopy, 'eyebrow', 'Delivery coverage')}
+            </p>
+            <h2 className="mt-3.5 font-serif text-[26px] leading-[1.12] sm:text-[34px]">
+              {over(gazetteerCopy, 'heading', `Cities and sites we deliver to in ${market.name}`)}
+            </h2>
+            <p className="text-ih-muted mt-3.5 text-[13.5px] leading-[1.65]">
+              {str(gazetteerCopy, 'intro') ??
+                'DAP deliveries go to the site gate. Coordinates are given because project sites are easier to name that way than by address.'}
+            </p>
+            <p className="mono text-ih-muted-2 mt-4 text-[10.5px] tracking-[0.08em] uppercase">
+              {page.cities.length} locations listed
+            </p>
+          </div>
 
-        <ul className="grid list-none grid-cols-2 gap-px border border-ih-border bg-ih-border p-0 sm:grid-cols-3 lg:grid-cols-4">
-          {page.cities.map((city) => (
-            <li key={city.name} className="bg-ih-surface px-4 py-3.5">
-              <p className="text-[13.5px] font-medium">{city.name}</p>
-              <p className="mt-0.5 text-[11.5px] text-ih-muted">{city.region}</p>
-              {/*
+          <ul className="border-ih-border bg-ih-border grid list-none grid-cols-2 gap-px border p-0 sm:grid-cols-3 lg:grid-cols-4">
+            {page.cities.map((city) => (
+              <li key={city.name} className="bg-ih-surface px-4 py-3.5">
+                <p className="text-[13.5px] font-medium">{city.name}</p>
+                <p className="text-ih-muted mt-0.5 text-[11.5px]">{city.region}</p>
+                {/*
                 Hidden from assistive tech: a screen reader renders
                 "4.82°N 7.01°E" digit by digit and it carries no meaning the
                 city and region above have not already given.
               */}
-              <p
-                aria-hidden="true"
-                className="mono mt-2 text-[9.5px] tracking-[0.04em] text-ih-muted-2"
-              >
-                {formatCoordinates(city.coords)}
-              </p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+                <p
+                  aria-hidden="true"
+                  className="mono text-ih-muted-2 mt-2 text-[9.5px] tracking-[0.04em]"
+                >
+                  {formatCoordinates(city.coords)}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     ),
 
     // 12. FAQ
     faq: (
       <section className="bg-ih-bg px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
-      <div className="mx-auto max-w-[1440px]">
-        <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-          {over(faqCopy, 'eyebrow', 'Questions we get asked')}
-        </p>
-        <h2 className="mb-8 mt-3.5 font-serif text-[30px] leading-[1.08] sm:text-[40px]">
-          {over(faqCopy, 'heading', `Supplying ${market.name}, in detail`)}
-        </h2>
-        {/* Zero row gap on purpose — the top borders do the separating, and a
+        <div className="mx-auto max-w-[1440px]">
+          <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+            {over(faqCopy, 'eyebrow', 'Questions we get asked')}
+          </p>
+          <h2 className="mt-3.5 mb-8 font-serif text-[30px] leading-[1.08] sm:text-[40px]">
+            {over(faqCopy, 'heading', `Supplying ${market.name}, in detail`)}
+          </h2>
+          {/* Zero row gap on purpose — the top borders do the separating, and a
             gap would double the rule spacing between stacked items. */}
-        <div className="grid grid-cols-1 gap-x-14 gap-y-0 lg:grid-cols-2">
-          {page.faqs.map((faq, index) => (
-            <div key={faq.question} className="border-t border-ih-border py-5">
-              <div className="flex gap-3.5">
-                <span className="mono pt-[3px] text-[10.5px] text-ih-accent">
-                  {String(index + 1).padStart(2, '0')}
-                </span>
-                <div>
-                  <h3 className="text-[16px] font-medium leading-[1.35]">{faq.question}</h3>
-                  <p className="mt-2 text-[13.5px] leading-[1.65] text-ih-muted">{faq.answer}</p>
+          <div className="grid grid-cols-1 gap-x-14 gap-y-0 lg:grid-cols-2">
+            {page.faqs.map((faq, index) => (
+              <div key={faq.question} className="border-ih-border border-t py-5">
+                <div className="flex gap-3.5">
+                  <span className="mono text-ih-accent pt-[3px] text-[10.5px]">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <h3 className="text-[16px] leading-[1.35] font-medium">{faq.question}</h3>
+                    <p className="text-ih-muted mt-2 text-[13.5px] leading-[1.65]">{faq.answer}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <RelatedReading
+            articles={guides}
+            eyebrow="From the blog"
+            heading={`Guides for buyers in ${market.name}`}
+          />
         </div>
-        <RelatedReading
-          articles={guides}
-          eyebrow="From the blog"
-          heading={`Guides for buyers in ${market.name}`}
-        />
-      </div>
-    </section>
+      </section>
     ),
 
     // 13. Lead form, end of page
     closing_form: (
       <section className="bg-ih-navy px-5 py-14 sm:px-8 lg:px-12 lg:py-[60px]">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,470px)] lg:gap-14">
-        <div>
-          <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-steel">
-            {over(closingCopy, 'eyebrow', 'Next step')}
-          </p>
-          <h2 className="mt-3.5 font-serif text-[32px] leading-[1.08] text-white sm:text-[42px]">
-            {over(closingCopy, 'heading', `Shipping to ${market.name}?`)}
-          </h2>
-          <p className="mt-3.5 max-w-[620px] text-[15px] leading-[1.65] text-white/85">
-            Send the part numbers, or the bore, thread and pressure if you do not have them. We
-            quote from real stock, in {page.currency}, with the Incoterm stated rather than
-            assumed.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-2.5">
-            {contact.whatsappUrl && (
-              <Button asChild kind="onnavy" size="lg">
-                <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  WhatsApp us
-                </a>
-              </Button>
-            )}
-            {contact.email && (
-              <Button asChild kind="onnavy" size="lg">
-                <a href={`mailto:${contact.email}?subject=${encodeURIComponent(`Export enquiry — ${market.name}`)}`}>
-                  Email the export desk
-                </a>
-              </Button>
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,470px)] lg:gap-14">
+          <div>
+            <p className="mono text-ih-steel text-[10px] tracking-[0.14em] uppercase">
+              {over(closingCopy, 'eyebrow', 'Next step')}
+            </p>
+            <h2 className="mt-3.5 font-serif text-[32px] leading-[1.08] text-white sm:text-[42px]">
+              {over(closingCopy, 'heading', `Shipping to ${market.name}?`)}
+            </h2>
+            <p className="mt-3.5 max-w-[620px] text-[15px] leading-[1.65] text-white/85">
+              Send the part numbers, or the bore, thread and pressure if you do not have them. We
+              quote from real stock, in {page.currency}, with the Incoterm stated rather than
+              assumed.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              {contact.whatsappUrl && (
+                <Button asChild kind="onnavy" size="lg">
+                  <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    WhatsApp us
+                  </a>
+                </Button>
+              )}
+              {contact.email && (
+                <Button asChild kind="onnavy" size="lg">
+                  <a
+                    href={`mailto:${contact.email}?subject=${encodeURIComponent(`Export enquiry — ${market.name}`)}`}
+                  >
+                    Email the export desk
+                  </a>
+                </Button>
+              )}
+            </div>
+            {contact.phone && (
+              <p className="mono mt-6 text-[11px] tracking-[0.08em] text-white/70 uppercase">
+                Plant-down? Call{' '}
+                <a href={`tel:${contact.phone}`} className="hover:text-ih-steel text-white">
+                  {contact.phone}
+                </a>{' '}
+                — 24/7
+              </p>
             )}
           </div>
-          {contact.phone && (
-            <p className="mono mt-6 text-[11px] uppercase tracking-[0.08em] text-white/70">
-              Plant-down? Call{' '}
-              <a href={`tel:${contact.phone}`} className="text-white hover:text-ih-steel">
-                {contact.phone}
-              </a>{' '}
-              — 24/7
-            </p>
-          )}
-        </div>
 
-        <MarketQuickEnquiry
-          marketSlug={market.slug}
-          marketName={market.name}
-          countryCode={market.countryCode}
-          contactEmail={contact.email}
-        />
-      </div>
-    </section>
+          <MarketQuickEnquiry
+            marketSlug={market.slug}
+            marketName={market.name}
+            countryCode={market.countryCode}
+            contactEmail={contact.email}
+          />
+        </div>
+      </section>
     ),
 
     // 14. Market sitemap
     sitemap: (
-      <section className="border-t border-ih-border bg-ih-surface px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
-      <div className="mx-auto max-w-[1440px]">
-        <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-              {over(sitemapCopy, 'eyebrow', `Other export markets · ${destinations} destinations`)}
-            </p>
-            <h2 className="mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
-              {over(sitemapCopy, 'heading', `We run the same lane from Dubai to ${destinations - 1} other markets`)}
-            </h2>
+      <section className="border-ih-border bg-ih-surface border-t px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
+        <div className="mx-auto max-w-[1440px]">
+          <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
+                {over(
+                  sitemapCopy,
+                  'eyebrow',
+                  `Other export markets · ${destinations} destinations`
+                )}
+              </p>
+              <h2 className="mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
+                {over(
+                  sitemapCopy,
+                  'heading',
+                  `We run the same lane from Dubai to ${destinations - 1} other markets`
+                )}
+              </h2>
+            </div>
+            <Button asChild kind="ghost" size="sm">
+              <Link href="/markets">
+                All export markets <span aria-hidden="true">→</span>
+              </Link>
+            </Button>
           </div>
-          <Button asChild kind="ghost" size="sm">
-            <Link href="/markets">
-              All export markets <span aria-hidden="true">→</span>
-            </Link>
-          </Button>
-        </div>
 
-        {/*
+          {/*
           This market's own region, not the whole directory.
 
           Every market page used to list all 125 others — 126 pages each
@@ -641,85 +665,85 @@ export default function MarketLanding({
           A market missing from MARKET_REGIONS falls back to the full
           directory rather than to an empty band.
         */}
-        {(() => {
-          const ownRegions = MARKET_REGIONS.filter(([, countries]) =>
-            countries.includes(market.name),
-          )
-          const regions = ownRegions.length > 0 ? ownRegions : MARKET_REGIONS
-          return (
-            <div className="flex flex-col gap-6">
-              {regions.map(([region, countries]) => (
-                <div key={region}>
-                  <p className="mono border-b border-ih-border-strong pb-2 text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">
-                    {region}
-                  </p>
-                  <div className="mt-1 columns-2 gap-x-[26px] sm:columns-3 lg:columns-5">
-                    {countries.map((country) => {
-                      if (country === market.name) {
+          {(() => {
+            const ownRegions = MARKET_REGIONS.filter(([, countries]) =>
+              countries.includes(market.name)
+            )
+            const regions = ownRegions.length > 0 ? ownRegions : MARKET_REGIONS
+            return (
+              <div className="flex flex-col gap-6">
+                {regions.map(([region, countries]) => (
+                  <div key={region}>
+                    <p className="mono border-ih-border-strong text-ih-muted border-b pb-2 text-[9.5px] tracking-[0.13em] uppercase">
+                      {region}
+                    </p>
+                    <div className="mt-1 columns-2 gap-x-[26px] sm:columns-3 lg:columns-5">
+                      {countries.map((country) => {
+                        if (country === market.name) {
+                          return (
+                            <span
+                              key={country}
+                              className="text-ih-accent block break-inside-avoid py-1 text-[12px] font-medium"
+                            >
+                              {country} — this page
+                            </span>
+                          )
+                        }
+                        const slug = slugByName.get(country)
+                        // Unreachable while the sync test passes; rendering the
+                        // name unlinked beats rendering a 404 if it ever does not.
+                        if (!slug) {
+                          return (
+                            <span
+                              key={country}
+                              className="text-ih-muted block break-inside-avoid py-1 text-[12px]"
+                            >
+                              {country}
+                            </span>
+                          )
+                        }
                         return (
-                          <span
+                          <Link
                             key={country}
-                            className="block break-inside-avoid py-1 text-[12px] font-medium text-ih-accent"
-                          >
-                            {country} — this page
-                          </span>
-                        )
-                      }
-                      const slug = slugByName.get(country)
-                      // Unreachable while the sync test passes; rendering the
-                      // name unlinked beats rendering a 404 if it ever does not.
-                      if (!slug) {
-                        return (
-                          <span
-                            key={country}
-                            className="block break-inside-avoid py-1 text-[12px] text-ih-muted"
+                            href={`/markets/${slug}`}
+                            className="text-ih-ink-2 hover:text-ih-accent block break-inside-avoid py-1 text-[12px] transition-colors"
                           >
                             {country}
-                          </span>
+                          </Link>
                         )
-                      }
-                      return (
-                        <Link
-                          key={country}
-                          href={`/markets/${slug}`}
-                          className="block break-inside-avoid py-1 text-[12px] text-ih-ink-2 transition-colors hover:text-ih-accent"
-                        >
-                          {country}
-                        </Link>
-                      )
-                    })}
+                      })}
+                    </div>
                   </div>
-                </div>
-              ))}
-              {/*
+                ))}
+                {/*
                 One market from each other region, so no region is an island
                 that only its own pages and /markets link into. Assigned
                 round-robin in the domain so every market gets some; see
                 `marketRegionBridge`. One line of text, not another grid.
               */}
-              {bridge.length > 0 && (
-                <p className="text-[12px] leading-[1.9] text-ih-muted">
-                  <span className="mr-2 text-[9.5px] uppercase tracking-[0.13em]">
-                    Further afield
-                  </span>
-                  {bridge.map((m, i) => (
-                    <Fragment key={m.slug}>
-                      {i > 0 && <span aria-hidden="true"> · </span>}
-                      <Link
-                        href={`/markets/${m.slug}`}
-                        title={m.region}
-                        className="text-ih-ink-2 transition-colors hover:text-ih-accent"
-                      >
-                        {m.name}
-                      </Link>
-                    </Fragment>
-                  ))}
-                </p>
-              )}
-            </div>
-          )
-        })()}
-      </div>
+                {bridge.length > 0 && (
+                  <p className="text-ih-muted text-[12px] leading-[1.9]">
+                    <span className="mr-2 text-[9.5px] tracking-[0.13em] uppercase">
+                      Further afield
+                    </span>
+                    {bridge.map((m, i) => (
+                      <Fragment key={m.slug}>
+                        {i > 0 && <span aria-hidden="true"> · </span>}
+                        <Link
+                          href={`/markets/${m.slug}`}
+                          title={m.region}
+                          className="text-ih-ink-2 hover:text-ih-accent transition-colors"
+                        >
+                          {m.name}
+                        </Link>
+                      </Fragment>
+                    ))}
+                  </p>
+                )}
+              </div>
+            )
+          })()}
+        </div>
       </section>
     ),
   }
@@ -728,9 +752,12 @@ export default function MarketLanding({
     <div className="bg-ih-surface">
       {/* The breadcrumb is not a band. It is chrome the page is identified by,
           and there is no arrangement in which hiding it is right. */}
-      <div className="border-b border-ih-border bg-ih-surface px-5 py-3 sm:px-8 lg:px-12">
+      <div className="border-ih-border bg-ih-surface border-b px-5 py-3 sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-x-6 gap-y-2">
-          <nav aria-label="Breadcrumb" className="mono flex items-center gap-2 text-[12px] text-ih-muted">
+          <nav
+            aria-label="Breadcrumb"
+            className="mono text-ih-muted flex items-center gap-2 text-[12px]"
+          >
             <Link href="/" className="hover:text-ih-accent">
               Home
             </Link>
@@ -746,14 +773,17 @@ export default function MarketLanding({
             <span className="text-ih-ink-2">{market.name}</span>
           </nav>
           <span className="flex items-center gap-2.5">
-            <span className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+            <span className="mono text-ih-muted-2 text-[10.5px] tracking-[0.1em] uppercase">
               Lane {page.lane}
             </span>
             {page.localName && (
               // Direction is tested on the string, never stored per market —
               // the same field carries Arabic, Amharic, Swahili and French
               // across the record set.
-              <span dir={isRightToLeft(page.localName) ? 'rtl' : 'ltr'} className="text-[13px] text-ih-muted">
+              <span
+                dir={isRightToLeft(page.localName) ? 'rtl' : 'ltr'}
+                className="text-ih-muted text-[13px]"
+              >
                 {page.localName}
               </span>
             )}
@@ -762,7 +792,7 @@ export default function MarketLanding({
       </div>
 
       {content.order.map((key) =>
-        bands[key] ? <Fragment key={key}>{bands[key]}</Fragment> : null,
+        bands[key] ? <Fragment key={key}>{bands[key]}</Fragment> : null
       )}
 
       {/*
@@ -772,13 +802,13 @@ export default function MarketLanding({
         only; the flag is resolved by the route.
       */}
       {showAuditStrip && (
-        <div className="border-t border-ih-border bg-ih-surface px-5 py-4 sm:px-8 lg:px-12">
+        <div className="border-ih-border bg-ih-surface border-t px-5 py-4 sm:px-8 lg:px-12">
           <div className="mx-auto flex max-w-[1440px] flex-wrap justify-between gap-6">
-            <span className="mono text-[10px] uppercase tracking-[0.08em] text-ih-muted-2">
-              canonical /markets/{market.slug} · schema: breadcrumblist · faqpage ({page.faqs.length}) ·
-              service
+            <span className="mono text-ih-muted-2 text-[10px] tracking-[0.08em] uppercase">
+              canonical /markets/{market.slug} · schema: breadcrumblist · faqpage (
+              {page.faqs.length}) · service
             </span>
-            <span className="mono text-[10px] uppercase tracking-[0.08em] text-ih-muted-2">
+            <span className="mono text-ih-muted-2 text-[10px] tracking-[0.08em] uppercase">
               {clusters.reduce((n, c) => n + c.subRanges.length + 1, 0)} catalogue links ·{' '}
               {page.cities.length} locations · {destinations} markets
             </span>

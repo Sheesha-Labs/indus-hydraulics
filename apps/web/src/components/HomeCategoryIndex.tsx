@@ -83,31 +83,31 @@ export default function HomeCategoryIndex({
       {/* Hidden on a single column: there is no gap to fill, and the mobile
           "Browse all" button below the grid does this job. */}
       <li className={`hidden ${MD_FILL[mdGap]} ${XL_FILL[xlGap]}`}>
-        <div className="flex w-full flex-col justify-center gap-4 rounded-lg border border-dashed border-ih-border-strong bg-ih-surface-2 p-6">
+        <div className="border-ih-border-strong bg-ih-surface-2 flex w-full flex-col justify-center gap-4 rounded-lg border border-dashed p-6">
           <div>
-            <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <p className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
               Can&rsquo;t see it listed?
             </p>
-            <p className="mt-2 max-w-[440px] text-[15px] leading-[1.5] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-2 max-w-[440px] text-[15px] leading-[1.5]">
               {`Search ${skuCount.toLocaleString()} SKUs by part number, size or spec — or send us the old part number and we’ll cross-reference it.`}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
             <Link
               href="/c"
-              className="inline-flex h-10 items-center rounded-md bg-ih-navy px-4 text-[13.5px] font-medium text-white transition-colors hover:bg-ih-ink focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+              className="bg-ih-navy hover:bg-ih-ink inline-flex h-10 items-center rounded-md px-4 text-[13.5px] font-medium text-white transition-colors focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
             >
               Browse all categories
             </Link>
             <Link
               href="/search"
-              className="inline-flex h-10 items-center rounded-md border border-ih-border-strong bg-ih-surface px-4 text-[13.5px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+              className="border-ih-border-strong bg-ih-surface text-ih-ink hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent inline-flex h-10 items-center rounded-md border px-4 text-[13.5px] transition-colors focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
             >
               Search the catalogue
             </Link>
             <Link
               href="/replacement"
-              className="inline-flex h-10 items-center rounded-md border border-ih-border-strong bg-ih-surface px-4 text-[13.5px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+              className="border-ih-border-strong bg-ih-surface text-ih-ink hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent inline-flex h-10 items-center rounded-md border px-4 text-[13.5px] transition-colors focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
             >
               Obsolete part lookup
             </Link>
@@ -125,7 +125,7 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
   const rest = collapses ? subs.slice(VISIBLE_SUBCATEGORIES) : []
 
   return (
-    <article className="@container flex w-full flex-col rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-border-strong">
+    <article className="border-ih-border bg-ih-surface hover:border-ih-border-strong @container flex w-full flex-col rounded-lg border transition-colors">
       {/*
         One link for the thumbnail and the heading, so the photograph is a
         click target and the category is announced once, not twice.
@@ -140,7 +140,7 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
           thumbnail is what lets 25 cards fit without the section running to
           several screens.
         */}
-        <span className="relative block aspect-[4/3] w-[104px] shrink-0 overflow-hidden rounded-md border border-ih-border bg-ih-surface-2 sm:w-[120px]">
+        <span className="border-ih-border bg-ih-surface-2 relative block aspect-[4/3] w-[104px] shrink-0 overflow-hidden rounded-md border sm:w-[120px]">
           {category.image ? (
             <Image
               src={mediaUrl(category.image.storagePath)}
@@ -152,20 +152,20 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
           ) : null}
         </span>
         <span className="min-w-0 flex-1">
-          <span className="block font-mono text-[10.5px] tracking-[0.06em] text-ih-muted-2">
+          <span className="text-ih-muted-2 block font-mono text-[10.5px] tracking-[0.06em]">
             CAT.{String(index + 1).padStart(2, '0')}
           </span>
-          <span className="mt-1 block text-[16.5px] font-semibold leading-[1.25] tracking-[-0.015em] text-ih-ink transition-colors group-hover/head:text-ih-accent">
+          <span className="text-ih-ink group-hover/head:text-ih-accent mt-1 block text-[16.5px] leading-[1.25] font-semibold tracking-[-0.015em] transition-colors">
             {category.name}
           </span>
-          <span className="mt-1.5 block font-mono text-[11px] text-ih-muted">
+          <span className="text-ih-muted mt-1.5 block font-mono text-[11px]">
             {`${category.skuCount.toLocaleString()} SKUs`}
             {subs.length > 0 ? ` · ${subs.length} ${subs.length === 1 ? 'range' : 'ranges'}` : ''}
           </span>
         </span>
         <span
           aria-hidden="true"
-          className="shrink-0 self-start font-mono text-[13px] text-ih-muted-2 transition-colors group-hover/head:text-ih-accent"
+          className="text-ih-muted-2 group-hover/head:text-ih-accent shrink-0 self-start font-mono text-[13px] transition-colors"
         >
           →
         </span>
@@ -186,11 +186,11 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
           only, inside the disclosure. The cost is the first few links twice in
           the HTML — a few kilobytes — and crawlers see every range either way.
         */
-        <div className="border-t border-ih-border px-4 sm:px-5">
+        <div className="border-ih-border border-t px-4 sm:px-5">
           <SubcategoryList items={shown} className="hidden md:grid" />
 
           <details className={`group/more ${rest.length === 0 ? 'md:hidden' : ''}`}>
-            <summary className="flex min-h-10 cursor-pointer list-none items-center justify-between gap-3 text-[12.5px] font-medium text-ih-accent marker:content-none hover:text-ih-ink focus-visible:underline focus-visible:outline-none md:border-t md:border-ih-border [&::-webkit-details-marker]:hidden">
+            <summary className="text-ih-accent hover:text-ih-ink md:border-ih-border flex min-h-10 cursor-pointer list-none items-center justify-between gap-3 text-[12.5px] font-medium marker:content-none focus-visible:underline focus-visible:outline-none md:border-t [&::-webkit-details-marker]:hidden">
               <span>
                 <span className="group-open/more:hidden">
                   <span className="md:hidden">
@@ -227,14 +227,23 @@ function CategoryCard({ category, index }: { category: HomeCategory; index: numb
  * Each link is a full 40px row (the storefront minimum hit target) and may
  * wrap to two lines: some range names run to 45+ characters.
  */
-function SubcategoryList({ items, className = 'grid' }: { items: HomeSubcategory[]; className?: string }) {
+function SubcategoryList({
+  items,
+  className = 'grid',
+}: {
+  items: HomeSubcategory[]
+  className?: string
+}) {
   return (
     <ul className={`list-none grid-cols-1 gap-x-5 p-0 @[22rem]:grid-cols-2 ${className}`}>
       {items.map((item) => (
-        <li key={item.slug} className="border-b border-dotted border-ih-border last:border-b-0 @[22rem]:[&:nth-last-child(2):nth-child(odd)]:border-b-0">
+        <li
+          key={item.slug}
+          className="border-ih-border border-b border-dotted last:border-b-0 @[22rem]:[&:nth-last-child(2):nth-child(odd)]:border-b-0"
+        >
           <Link
             href={`/c/${item.slug}`}
-            className="flex min-h-10 items-center py-1 text-[13px] leading-[1.3] text-ih-ink-2 transition-colors hover:text-ih-accent focus-visible:text-ih-accent focus-visible:underline focus-visible:outline-none"
+            className="text-ih-ink-2 hover:text-ih-accent focus-visible:text-ih-accent flex min-h-10 items-center py-1 text-[13px] leading-[1.3] transition-colors focus-visible:underline focus-visible:outline-none"
           >
             {item.name}
           </Link>

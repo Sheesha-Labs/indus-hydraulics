@@ -31,7 +31,7 @@ export const productBlueprintGenerate = inngest.createFunction(
     const { suggestionId, mode, refinement } = event.data as ProductBlueprintEvent
 
     const suggestion = await step.run('load-suggestion', () =>
-      db.aiSuggestion.findUnique({ where: { id: suggestionId } }),
+      db.aiSuggestion.findUnique({ where: { id: suggestionId } })
     )
     if (!suggestion) throw new NonRetriableError(`AiSuggestion ${suggestionId} not found`)
     if (
@@ -59,7 +59,7 @@ export const productBlueprintGenerate = inngest.createFunction(
         data: {
           inputContext: generatingContext as unknown as Prisma.InputJsonValue,
         },
-      }),
+      })
     )
 
     try {
@@ -117,7 +117,7 @@ export const productBlueprintGenerate = inngest.createFunction(
             inputTokens: generated.inputTokens,
             outputTokens: generated.outputTokens,
           },
-        }),
+        })
       )
 
       return {
@@ -138,10 +138,10 @@ export const productBlueprintGenerate = inngest.createFunction(
               error: message.slice(0, 1000),
             } as unknown as Prisma.InputJsonValue,
           },
-        }),
+        })
       )
       if (message.includes('OPENAI_API_KEY')) throw new NonRetriableError(message)
       throw error
     }
-  },
+  }
 )

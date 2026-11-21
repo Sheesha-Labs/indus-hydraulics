@@ -16,12 +16,12 @@ export async function staticParamsOrNone<T>(route: string, read: () => Promise<T
     return await read()
   } catch (err) {
     console.warn(
-      `[static-params] ${route}: building no pages ahead — they render on first request. ${String(
-        (err as Error)?.message ?? err,
-      )
-        .split('\n')
-        .filter(Boolean)
-        .slice(-1)[0]}`,
+      `[static-params] ${route}: building no pages ahead — they render on first request. ${
+        String((err as Error)?.message ?? err)
+          .split('\n')
+          .filter(Boolean)
+          .slice(-1)[0]
+      }`
     )
     return []
   }

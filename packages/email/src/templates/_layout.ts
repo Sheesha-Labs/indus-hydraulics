@@ -50,7 +50,9 @@ function renderLegalFooterHtml(footer: LegalFooter): string {
  * The same legal block as plain text, for the text/plain part: legal name,
  * registered address, the reason and the unsubscribe URL.
  */
-export function renderLegalFooterText(input: Pick<LayoutInput, 'legalName' | 'registeredAddressLines' | 'footer'>): string {
+export function renderLegalFooterText(
+  input: Pick<LayoutInput, 'legalName' | 'registeredAddressLines' | 'footer'>
+): string {
   const lines = ['--', input.legalName, ...(input.registeredAddressLines ?? [])]
   if (input.footer) {
     lines.push('', input.footer.reason)
@@ -71,7 +73,12 @@ export function escapeHtml(s: string): string {
 export function renderLayout(input: LayoutInput): string {
   const preheader = input.preheader ? escapeHtml(input.preheader) : ''
   const addrLines = (input.registeredAddressLines ?? []).map(escapeHtml).join('<br />')
-  const sig = [input.signatureName, input.signatureTitle, input.signaturePhone, input.signatureEmail]
+  const sig = [
+    input.signatureName,
+    input.signatureTitle,
+    input.signaturePhone,
+    input.signatureEmail,
+  ]
     .filter((v): v is string => Boolean(v))
     .map(escapeHtml)
     .join(' &middot; ')

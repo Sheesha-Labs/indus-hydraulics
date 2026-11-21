@@ -41,7 +41,11 @@ export default function ActionForm({
     if (resetOnSuccess && state?.success) formRef.current?.reset()
   }, [state, resetOnSuccess])
 
-  const message = state ? (state.success ? (state.data as { message?: string } | undefined)?.message : state.message) : null
+  const message = state
+    ? state.success
+      ? (state.data as { message?: string } | undefined)?.message
+      : state.message
+    : null
 
   return (
     <form ref={formRef} action={formAction} className={className}>
@@ -54,7 +58,11 @@ export default function ActionForm({
       {message ? (
         <p
           role={state?.success ? 'status' : 'alert'}
-          className={state?.success ? 'mt-2 text-[13px] text-ih-success-ink' : 'mt-2 text-[13px] text-ih-danger-ink'}
+          className={
+            state?.success
+              ? 'text-ih-success-ink mt-2 text-[13px]'
+              : 'text-ih-danger-ink mt-2 text-[13px]'
+          }
         >
           {message}
         </p>

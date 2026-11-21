@@ -72,14 +72,14 @@ export default async function NewCustomerPage({ params }: Props) {
           */}
           <Link
             href="/admin/customers"
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             ← Customers
           </Link>
           <button
             type="submit"
             form="new-account-form"
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center rounded-md px-4 text-[13px] font-medium transition-opacity"
           >
             Create Account
           </button>
@@ -87,10 +87,12 @@ export default async function NewCustomerPage({ params }: Props) {
       }
     >
       <form id="new-account-form" action={createAccount} className="flex flex-col gap-5">
-
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
-            <label htmlFor="newcustomer-legalName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="newcustomer-legalName"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Legal Name <span className="text-ih-accent">*</span>
             </label>
             <Input
@@ -98,86 +100,142 @@ export default async function NewCustomerPage({ params }: Props) {
               name="legalName"
               required
               type="text"
-              placeholder="e.g. PT Maju Bersama Tbk" />
+              placeholder="e.g. PT Maju Bersama Tbk"
+            />
           </div>
 
           <div className="col-span-2">
-            <label htmlFor="newcustomer-displayName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="newcustomer-displayName"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Display Name
             </label>
             <Input
               id="newcustomer-displayName"
               name="displayName"
               type="text"
-              placeholder="Short name shown in UI (defaults to legal name)" />
+              placeholder="Short name shown in UI (defaults to legal name)"
+            />
           </div>
 
           <div>
-            <label htmlFor="newcustomer-region" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Region</label>
+            <label
+              htmlFor="newcustomer-region"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Region
+            </label>
             <Input
               id="newcustomer-region"
               name="region"
               type="text"
-              placeholder="e.g. South East Asia" />
+              placeholder="e.g. South East Asia"
+            />
           </div>
 
           <div>
-            <label htmlFor="newcustomer-industryId" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Industry</label>
-            <Select
-              id="newcustomer-industryId" name="industryId">
+            <label
+              htmlFor="newcustomer-industryId"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Industry
+            </label>
+            <Select id="newcustomer-industryId" name="industryId">
               <option value="">— Select —</option>
               {industries.map((ind) => (
-                <option key={ind.id} value={ind.id}>{ind.name}</option>
+                <option key={ind.id} value={ind.id}>
+                  {ind.name}
+                </option>
               ))}
             </Select>
           </div>
 
           <div>
-            <label htmlFor="newcustomer-tier" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
-            <Select
-              id="newcustomer-tier" name="tier" defaultValue="bronze">
+            <label
+              htmlFor="newcustomer-tier"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Tier
+            </label>
+            <Select id="newcustomer-tier" name="tier" defaultValue="bronze">
               {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
-                <option key={t} value={t} className="capitalize">{t}</option>
+                <option key={t} value={t} className="capitalize">
+                  {t}
+                </option>
               ))}
             </Select>
           </div>
 
           <div>
-            <label htmlFor="newcustomer-status" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
-            <Select
-              id="newcustomer-status" name="status" defaultValue="prospect">
+            <label
+              htmlFor="newcustomer-status"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Status
+            </label>
+            <Select id="newcustomer-status" name="status" defaultValue="prospect">
               {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
-                <option key={s} value={s}>{s.replace('_', ' ')}</option>
+                <option key={s} value={s}>
+                  {s.replace('_', ' ')}
+                </option>
               ))}
             </Select>
           </div>
 
           <div>
-            <label htmlFor="newcustomer-assignedRepId" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
-            <Select
-              id="newcustomer-assignedRepId" name="assignedRepId">
+            <label
+              htmlFor="newcustomer-assignedRepId"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Assigned Rep
+            </label>
+            <Select id="newcustomer-assignedRepId" name="assignedRepId">
               <option value="">— Unassigned —</option>
               {reps.map((r) => (
-                <option key={r.id} value={r.id}>{r.name}</option>
+                <option key={r.id} value={r.id}>
+                  {r.name}
+                </option>
               ))}
             </Select>
           </div>
 
           <div>
-            <label htmlFor="newcustomer-paymentTermsDays" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+            <label
+              htmlFor="newcustomer-paymentTermsDays"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Payment Terms (days)
+            </label>
             <Input
-              id="newcustomer-paymentTermsDays" name="paymentTermsDays" type="number" defaultValue={30} min={0} className="tabular-nums" />
+              id="newcustomer-paymentTermsDays"
+              name="paymentTermsDays"
+              type="number"
+              defaultValue={30}
+              min={0}
+              className="tabular-nums"
+            />
           </div>
 
           <div>
-            <label htmlFor="newcustomer-creditLimit" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+            <label
+              htmlFor="newcustomer-creditLimit"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              Credit Limit (USD)
+            </label>
             <Input
-              id="newcustomer-creditLimit" name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="tabular-nums" />
+              id="newcustomer-creditLimit"
+              name="creditLimit"
+              type="number"
+              defaultValue={0}
+              min={0}
+              step={1000}
+              className="tabular-nums"
+            />
           </div>
         </div>
-
       </form>
-    
     </AdminPageShell>
   )
 }

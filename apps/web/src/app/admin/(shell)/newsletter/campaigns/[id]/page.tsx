@@ -3,8 +3,17 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import Composer from '../../../../../../components/admin/newsletter/Composer'
-import { CAMPAIGN_STATUS_LABELS, EDITABLE_STATUSES, type CampaignStatus } from '../../../../../../lib/newsletter/campaign'
-import { audienceSize, campaignProblemsLive, draftOf, loadSender } from '../../../../../../lib/newsletter/campaigns'
+import {
+  CAMPAIGN_STATUS_LABELS,
+  EDITABLE_STATUSES,
+  type CampaignStatus,
+} from '../../../../../../lib/newsletter/campaign'
+import {
+  audienceSize,
+  campaignProblemsLive,
+  draftOf,
+  loadSender,
+} from '../../../../../../lib/newsletter/campaigns'
 import { deliveryCounts } from '../../../../../../lib/newsletter/send'
 import { formatFrom } from '../../../../../../lib/newsletter/sender'
 import { ROLES, hasRole } from '../../../../../../lib/rbac'
@@ -25,7 +34,11 @@ export default async function CampaignPage({ params }: Props) {
   const [lists, problems, size, sender, counts, subscribers] = await Promise.all([
     db.newsletterList.findMany({
       orderBy: { name: 'asc' },
-      select: { id: true, name: true, _count: { select: { contacts: { where: { status: 'active' } } } } },
+      select: {
+        id: true,
+        name: true,
+        _count: { select: { contacts: { where: { status: 'active' } } } },
+      },
     }),
     campaignProblemsLive(draft),
     audienceSize(draft.audience, draft.listIds),

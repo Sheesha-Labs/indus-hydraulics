@@ -95,7 +95,7 @@ export const TERMS_PAGE: MasterPageDef = {
       fields: [clauseHeading(), clauseBody()],
       defaults: {
         heading: 'Warranty',
-        body: '<p>We supply goods covered by the original manufacturer\'s warranty. Warranty terms (duration, coverage, and remedies) are those provided by the manufacturer and are passed through to you without modification. We will assist with warranty claims but do not extend cover beyond the manufacturer\'s terms.</p><p>Goods supplied are intended for industrial use by qualified personnel. You are responsible for verifying the suitability of any product for your specific application.</p>',
+        body: "<p>We supply goods covered by the original manufacturer's warranty. Warranty terms (duration, coverage, and remedies) are those provided by the manufacturer and are passed through to you without modification. We will assist with warranty claims but do not extend cover beyond the manufacturer's terms.</p><p>Goods supplied are intended for industrial use by qualified personnel. You are responsible for verifying the suitability of any product for your specific application.</p>",
       },
     },
     {

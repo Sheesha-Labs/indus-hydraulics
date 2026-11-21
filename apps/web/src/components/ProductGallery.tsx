@@ -13,7 +13,8 @@ type Props = {
   fallback?: { url: string; categoryName: string } | null
 }
 
-const HERO_BOX = 'relative w-full aspect-[4/3] max-h-[min(56vh,480px)] border border-ih-border bg-ih-surface overflow-hidden'
+const HERO_BOX =
+  'relative w-full aspect-[4/3] max-h-[min(56vh,480px)] border border-ih-border bg-ih-surface overflow-hidden'
 
 export default function ProductGallery({ images, title, fallback }: Props) {
   const [active, setActive] = useState(0)
@@ -32,7 +33,7 @@ export default function ProductGallery({ images, title, fallback }: Props) {
             priority
           />
           <GridOverlay />
-          <span className="absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] truncate rounded-[3px] border border-ih-border bg-ih-surface px-2 py-1 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+          <span className="border-ih-border bg-ih-surface text-ih-muted absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] truncate rounded-[3px] border px-2 py-1 font-mono text-[10.5px] tracking-[0.08em] uppercase">
             Category image · {fallback.categoryName}
           </span>
         </div>
@@ -44,8 +45,8 @@ export default function ProductGallery({ images, title, fallback }: Props) {
     return (
       <div className="flex flex-col gap-3">
         <div className={HERO_BOX + ' bg-ih-surface-2 grid place-items-center'}>
-          <div className="font-mono text-[11px] tracking-[0.08em] text-ih-muted text-center">
-            <div className="text-4xl mb-3 opacity-20">⚙</div>
+          <div className="text-ih-muted text-center font-mono text-[11px] tracking-[0.08em]">
+            <div className="mb-3 text-4xl opacity-20">⚙</div>
             {title}
           </div>
           <GridOverlay />
@@ -71,19 +72,21 @@ export default function ProductGallery({ images, title, fallback }: Props) {
         <GridOverlay />
 
         {/* Top-left view callout (matches design's "VIEW 01 · 3/4 PERSPECTIVE") */}
-        <div className="absolute top-4 left-4 bg-ih-navy text-white font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5 max-w-[60%]">
+        <div className="bg-ih-navy absolute top-4 left-4 max-w-[60%] px-2.5 py-1.5 font-mono text-[10px] tracking-[0.06em] text-white">
           <span className="opacity-70">VIEW {String(active + 1).padStart(2, '0')}</span>
           {calloutLabel && (
             <>
-              <span className="opacity-40 mx-1.5">·</span>
-              <span className="uppercase truncate align-middle inline-block max-w-[200px]">{calloutLabel}</span>
+              <span className="mx-1.5 opacity-40">·</span>
+              <span className="inline-block max-w-[200px] truncate align-middle uppercase">
+                {calloutLabel}
+              </span>
             </>
           )}
         </div>
 
         {/* Bottom-right index counter — minimal, not a fake scale */}
         {images.length > 1 && (
-          <div className="absolute bottom-4 right-4 bg-ih-navy text-white font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5">
+          <div className="bg-ih-navy absolute right-4 bottom-4 px-2.5 py-1.5 font-mono text-[10px] tracking-[0.06em] text-white">
             {active + 1} / {images.length}
           </div>
         )}
@@ -97,17 +100,15 @@ export default function ProductGallery({ images, title, fallback }: Props) {
               key={i}
               type="button"
               onClick={() => setActive(i)}
-              className={`relative aspect-square border bg-ih-surface overflow-hidden transition-colors ${
-                i === active
-                  ? 'border-ih-ink border-2'
-                  : 'border-ih-border hover:border-ih-accent'
+              className={`bg-ih-surface relative aspect-square overflow-hidden border transition-colors ${
+                i === active ? 'border-ih-ink border-2' : 'border-ih-border hover:border-ih-accent'
               }`}
               aria-label={`View ${i + 1}: ${img.alt || `image ${i + 1}`}`}
               aria-current={i === active ? 'true' : undefined}
             >
               <Image src={img.url} alt={img.alt} fill className="object-contain p-2" sizes="12vw" />
               {img.alt && (
-                <span className="absolute bottom-1 left-1 right-1 font-mono text-[9px] tracking-[0.04em] text-ih-muted truncate text-left">
+                <span className="text-ih-muted absolute right-1 bottom-1 left-1 truncate text-left font-mono text-[9px] tracking-[0.04em]">
                   {img.alt}
                 </span>
               )}
@@ -122,7 +123,7 @@ export default function ProductGallery({ images, title, fallback }: Props) {
 function GridOverlay() {
   return (
     <div
-      className="absolute inset-0 pointer-events-none opacity-[0.04]"
+      className="pointer-events-none absolute inset-0 opacity-[0.04]"
       style={{
         backgroundImage:
           'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',

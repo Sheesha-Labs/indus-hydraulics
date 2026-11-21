@@ -37,8 +37,7 @@ export default function FocusKeywordChecklist({ focusKeyword, title, description
       },
       {
         id: 'slug',
-        pass:
-          slug.toLowerCase().includes(k.replace(/\s+/g, '-')) || slug.toLowerCase().includes(k),
+        pass: slug.toLowerCase().includes(k.replace(/\s+/g, '-')) || slug.toLowerCase().includes(k),
         label: 'Focus keyword in URL slug',
       },
       {
@@ -50,7 +49,7 @@ export default function FocusKeywordChecklist({ focusKeyword, title, description
   }, [focusKeyword, title, description, slug])
 
   return (
-    <ul className="flex flex-col gap-1.5 mt-2 text-[12px]">
+    <ul className="mt-2 flex flex-col gap-1.5 text-[12px]">
       {items.map((item) => (
         <li
           key={item.id}
@@ -60,10 +59,10 @@ export default function FocusKeywordChecklist({ focusKeyword, title, description
         >
           <span
             aria-hidden
-            className={`inline-block w-3.5 h-3.5 grid place-items-center text-[11px] ${
+            className={`grid inline-block h-3.5 w-3.5 place-items-center text-[11px] ${
               item.pass
                 ? 'bg-[oklch(0.4_0.14_145)] text-white'
-                : 'border border-ih-border text-transparent'
+                : 'border-ih-border border text-transparent'
             }`}
           >
             ✓

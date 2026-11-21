@@ -237,8 +237,10 @@ describe('export markets', () => {
     const EAST_AFRICAN_PORTS = ['kenya', 'tanzania', 'djibouti']
     for (const m of MARKETS) {
       if (GCC.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/3 working days/)
-      else if (m.slug === 'egypt' || m.slug === 'jordan') expect(m.leadTime, m.slug).toMatch(/5–15 working days/)
-      else if (EAST_AFRICAN_PORTS.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/10–20 working days/)
+      else if (m.slug === 'egypt' || m.slug === 'jordan')
+        expect(m.leadTime, m.slug).toMatch(/5–15 working days/)
+      else if (EAST_AFRICAN_PORTS.includes(m.slug))
+        expect(m.leadTime, m.slug).toMatch(/10–20 working days/)
       else expect(m.leadTime, m.slug).toBe('Quoted per consignment')
     }
   })
@@ -271,7 +273,10 @@ describe('export markets', () => {
         const sentence = raw.trim().toLowerCase()
         if (sentence.length < 40) continue
         const owner = seen.get(sentence)
-        expect(owner, `"${sentence.slice(0, 60)}…" appears on both ${owner} and ${m.slug}`).toBeUndefined()
+        expect(
+          owner,
+          `"${sentence.slice(0, 60)}…" appears on both ${owner} and ${m.slug}`
+        ).toBeUndefined()
         seen.set(sentence, m.slug)
       }
     }

@@ -57,7 +57,9 @@ export default function BlogTopicHub({ category, posts, body, topics, contact }:
     body && plan
       ? plan.categoryLinks.flatMap((i) => {
           const b = body.blocks[i]
-          return b?.type === 'category_link' && body.categoriesBySlug.has(b.slug) ? [{ i, block: b }] : []
+          return b?.type === 'category_link' && body.categoriesBySlug.has(b.slug)
+            ? [{ i, block: b }]
+            : []
         })
       : []
   const ctas =
@@ -88,16 +90,18 @@ export default function BlogTopicHub({ category, posts, body, topics, contact }:
 
       <header
         className={`${WRAP} grid grid-cols-1 items-end gap-6 pt-4 min-[761px]:pt-9 ${
-          quickAnswer ? 'min-[961px]:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] min-[961px]:gap-16' : ''
+          quickAnswer
+            ? 'min-[961px]:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] min-[961px]:gap-16'
+            : ''
         }`}
       >
         <div className="min-w-0">
           <p className="eyebrow">Topic</p>
-          <h1 className="mt-3.5 text-balance font-serif text-[38px] font-normal leading-[1.02] tracking-[-0.015em] text-ih-ink min-[761px]:text-[60px]">
+          <h1 className="text-ih-ink mt-3.5 font-serif text-[38px] leading-[1.02] font-normal tracking-[-0.015em] text-balance min-[761px]:text-[60px]">
             {category.name}
           </h1>
           {category.lede && (
-            <p className="mt-[18px] max-w-[640px] text-[16px] leading-[1.6] text-ih-ink-2 min-[761px]:text-[18px]">
+            <p className="text-ih-ink-2 mt-[18px] max-w-[640px] text-[16px] leading-[1.6] min-[761px]:text-[18px]">
               {category.lede}
             </p>
           )}
@@ -105,7 +109,10 @@ export default function BlogTopicHub({ category, posts, body, topics, contact }:
             <Stat label="Articles" value={String(posts.length)} />
             {totalMinutes > 0 && <Stat label="Reading" value={`${totalMinutes} min`} />}
             {newest && (
-              <Stat label="Updated" value={<time dateTime={newest.toISOString()}>{shortDate(newest)}</time>} />
+              <Stat
+                label="Updated"
+                value={<time dateTime={newest.toISOString()}>{shortDate(newest)}</time>}
+              />
             )}
           </dl>
         </div>
@@ -128,7 +135,7 @@ export default function BlogTopicHub({ category, posts, body, topics, contact }:
         <div className={`${WRAP} pt-4`}>
           <div
             role="status"
-            className="flex flex-col items-center gap-3 rounded-lg border border-dashed border-ih-border-strong bg-ih-surface px-5 py-12 text-center min-[761px]:px-6 min-[761px]:py-[72px]"
+            className="border-ih-border-strong bg-ih-surface flex flex-col items-center gap-3 rounded-lg border border-dashed px-5 py-12 text-center min-[761px]:px-6 min-[761px]:py-[72px]"
           >
             <p className="eyebrow">0 articles</p>
             <p className="max-w-[560px] font-serif text-[24px] leading-[1.15] tracking-[-0.01em] min-[761px]:text-[30px]">
@@ -144,24 +151,37 @@ export default function BlogTopicHub({ category, posts, body, topics, contact }:
           aria-labelledby="hub-guide-heading"
           className={`${WRAP} ${ANCHOR} mt-14 min-[761px]:mt-20`}
         >
-          <div className="max-w-[1000px] border-t border-ih-ink pt-7">
+          <div className="border-ih-ink max-w-[1000px] border-t pt-7">
             <p className="eyebrow">Topic guide</p>
             <h2
               id="hub-guide-heading"
-              className="mb-5 mt-2 font-serif text-[30px] font-normal leading-[1.06] tracking-[-0.01em] text-ih-ink min-[761px]:mb-7 min-[761px]:text-[40px]"
+              className="text-ih-ink mt-2 mb-5 font-serif text-[30px] leading-[1.06] font-normal tracking-[-0.01em] min-[761px]:mb-7 min-[761px]:text-[40px]"
             >
               The short version
             </h2>
-            <BlogArticleRenderer article={body} contact={contact} skip={plan.guideSkip} variant="hub" />
+            <BlogArticleRenderer
+              article={body}
+              contact={contact}
+              skip={plan.guideSkip}
+              variant="hub"
+            />
           </div>
         </section>
       )}
 
       {body && parts.length > 0 && (
-        <section id="hub-parts" aria-label="Parts in this topic" className={`${WRAP} ${ANCHOR} mt-10`}>
+        <section
+          id="hub-parts"
+          aria-label="Parts in this topic"
+          className={`${WRAP} ${ANCHOR} mt-10`}
+        >
           <div className="grid max-w-[1000px] grid-cols-1 gap-4 min-[761px]:grid-cols-2">
             {parts.map(({ i, block }) => (
-              <CategoryLinkBlockView key={i} block={block} categoriesBySlug={body.categoriesBySlug} />
+              <CategoryLinkBlockView
+                key={i}
+                block={block}
+                categoriesBySlug={body.categoriesBySlug}
+              />
             ))}
           </div>
         </section>
@@ -180,7 +200,7 @@ export default function BlogTopicHub({ category, posts, body, topics, contact }:
       <div className={WRAP}>
         <Link
           href="/blog"
-          className="mt-10 inline-flex min-h-10 items-center gap-2 text-[14px] font-medium text-ih-ink-2 hover:text-ih-accent"
+          className="text-ih-ink-2 hover:text-ih-accent mt-10 inline-flex min-h-10 items-center gap-2 text-[14px] font-medium"
         >
           <ArrowLeftIcon />
           Back to Blog
@@ -205,9 +225,9 @@ function toListItem(post: BlogPostCardData): HubListItem {
 
 function Stat({ label, value }: { label: string; value: ReactNode }) {
   return (
-    <div className="flex min-w-0 flex-auto flex-col-reverse gap-1.5 border-t-2 border-ih-accent pt-3 min-[761px]:min-w-24 min-[761px]:flex-none">
-      <dt className="font-mono text-[10px] uppercase tracking-[0.13em] text-ih-muted">{label}</dt>
-      <dd className="m-0 whitespace-nowrap font-mono text-[18px] leading-[1.05] tracking-[-0.03em] text-ih-ink min-[761px]:text-[24px]">
+    <div className="border-ih-accent flex min-w-0 flex-auto flex-col-reverse gap-1.5 border-t-2 pt-3 min-[761px]:min-w-24 min-[761px]:flex-none">
+      <dt className="text-ih-muted font-mono text-[10px] tracking-[0.13em] uppercase">{label}</dt>
+      <dd className="text-ih-ink m-0 font-mono text-[18px] leading-[1.05] tracking-[-0.03em] whitespace-nowrap min-[761px]:text-[24px]">
         {value}
       </dd>
     </div>
@@ -221,8 +241,8 @@ function Stat({ label, value }: { label: string; value: ReactNode }) {
  */
 function StartHere({ post }: { post: BlogPostCardData }) {
   return (
-    <article className="group relative grid grid-cols-1 items-center gap-4 rounded-lg border border-ih-border bg-ih-surface p-3.5 min-[761px]:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] min-[761px]:gap-8 min-[761px]:rounded-xl min-[761px]:p-6">
-      <div className="relative aspect-[3/2] overflow-hidden rounded-lg bg-ih-surface-3">
+    <article className="group border-ih-border bg-ih-surface relative grid grid-cols-1 items-center gap-4 rounded-lg border p-3.5 min-[761px]:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] min-[761px]:gap-8 min-[761px]:rounded-xl min-[761px]:p-6">
+      <div className="bg-ih-surface-3 relative aspect-[3/2] overflow-hidden rounded-lg">
         {post.heroPath ? (
           <Image
             src={mediaUrl(post.heroPath)}
@@ -237,19 +257,21 @@ function StartHere({ post }: { post: BlogPostCardData }) {
         <p className="eyebrow">Start here</p>
         <h2
           id="hub-start-heading"
-          className="text-pretty font-serif text-[26px] font-normal leading-[1.08] tracking-[-0.01em] text-ih-ink min-[761px]:text-[34px]"
+          className="text-ih-ink font-serif text-[26px] leading-[1.08] font-normal tracking-[-0.01em] text-pretty min-[761px]:text-[34px]"
         >
           <Link
             href={`/blog/${post.slug}`}
-            className="transition-colors duration-150 after:absolute after:inset-0 after:content-[''] group-hover:text-ih-accent motion-reduce:transition-none"
+            className="group-hover:text-ih-accent transition-colors duration-150 after:absolute after:inset-0 after:content-[''] motion-reduce:transition-none"
           >
             {post.title}
           </Link>
         </h2>
         {post.excerpt && (
-          <p className="text-[14.5px] leading-[1.65] text-ih-ink-2 min-[761px]:text-[15px]">{post.excerpt}</p>
+          <p className="text-ih-ink-2 text-[14.5px] leading-[1.65] min-[761px]:text-[15px]">
+            {post.excerpt}
+          </p>
         )}
-        <p className="flex flex-wrap gap-x-2 font-mono text-[11px] tracking-[0.02em] text-ih-muted">
+        <p className="text-ih-muted flex flex-wrap gap-x-2 font-mono text-[11px] tracking-[0.02em]">
           {post.publishedAt && (
             <time dateTime={post.publishedAt.toISOString()}>{shortDate(post.publishedAt)}</time>
           )}

@@ -107,7 +107,7 @@ export function gscSyncWindow(today: Date, lastSynced: Date | null): GscSyncWind
 export function buildGscRequest(
   window: GscSyncWindow,
   mode: GscDimensionMode,
-  startRow: number,
+  startRow: number
 ): Record<string, unknown> {
   return {
     startDate: window.startDate,

@@ -79,7 +79,12 @@ export default function MarketsIndex({
   thumbnails: ReadonlyMap<string, MarketThumbnail | null>
   totals: { destinations: number; regions: number; withStatedTransit: number }
   destinationNames: readonly string[]
-  contact: { phone: string | null; email: string | null; hours: string | null; whatsappUrl: string | null }
+  contact: {
+    phone: string | null
+    email: string | null
+    hours: string | null
+    whatsappUrl: string | null
+  }
   /** The build-time audit strip. Staging only — see the gate at the call site. */
   showAuditStrip: boolean
   copy: MarketsIndexCopy
@@ -91,9 +96,12 @@ export default function MarketsIndex({
   return (
     <div className="bg-ih-surface">
       {/* ── Breadcrumb strip ── */}
-      <div className="border-b border-ih-border bg-ih-surface px-5 py-3 sm:px-8 lg:px-12">
+      <div className="border-ih-border bg-ih-surface border-b px-5 py-3 sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-x-6 gap-y-2">
-          <nav aria-label="Breadcrumb" className="mono flex items-center gap-2 text-[12px] text-ih-muted">
+          <nav
+            aria-label="Breadcrumb"
+            className="mono text-ih-muted flex items-center gap-2 text-[12px]"
+          >
             <Link href="/" className="hover:text-ih-accent">
               Home
             </Link>
@@ -102,17 +110,17 @@ export default function MarketsIndex({
             </span>
             <span className="text-ih-ink-2">Export markets</span>
           </nav>
-          <span className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+          <span className="mono text-ih-muted-2 text-[10.5px] tracking-[0.1em] uppercase">
             {totals.destinations} destinations · {totals.regions} regions
           </span>
         </div>
       </div>
 
       {/* ── Hero ── */}
-      <section className="border-b border-ih-border bg-ih-surface px-5 pb-12 pt-10 sm:px-8 lg:px-12 lg:pb-14 lg:pt-14">
+      <section className="border-ih-border bg-ih-surface border-b px-5 pt-10 pb-12 sm:px-8 lg:px-12 lg:pt-14 lg:pb-14">
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-16">
           <div>
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
               {copy.hero.eyebrow}
             </p>
             {/* Deliberately short. The H1 on a hub page should not compete with
@@ -120,7 +128,7 @@ export default function MarketsIndex({
             <h1 className="mt-[18px] font-serif text-[38px] leading-[1.02] tracking-[-0.01em] sm:text-[48px] lg:text-[62px] lg:leading-none">
               {copy.hero.heading}
             </h1>
-            <p className="mt-5 max-w-[680px] text-pretty text-[16px] leading-[1.6] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-5 max-w-[680px] text-[16px] leading-[1.6] text-pretty">
               {copy.hero.body}
             </p>
 
@@ -147,10 +155,10 @@ export default function MarketsIndex({
           {/* The 1px gap over the border colour IS the divider — there are no
               internal rules in this grid. */}
           {tiles.length > 0 && (
-            <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-ih-border bg-ih-border">
+            <dl className="border-ih-border bg-ih-border grid grid-cols-2 gap-px overflow-hidden rounded-lg border">
               {tiles.map((tile) => (
-                <div key={tile.label} className="bg-ih-surface px-5 pb-5 pt-[18px]">
-                  <dt className="mono text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">
+                <div key={tile.label} className="bg-ih-surface px-5 pt-[18px] pb-5">
+                  <dt className="mono text-ih-muted text-[9.5px] tracking-[0.13em] uppercase">
                     {tile.label}
                   </dt>
                   {/* A count and a place name are different kinds of fact, so
@@ -159,7 +167,7 @@ export default function MarketsIndex({
                       the value IS after the live counts are substituted, not
                       what the editor typed. */}
                   {/^\d[\d,]*$/.test(tile.value) ? (
-                    <dd className="m-0 mt-1.5 text-[30px] font-medium tabular-nums leading-none tracking-[-0.025em]">
+                    <dd className="m-0 mt-1.5 text-[30px] leading-none font-medium tracking-[-0.025em] tabular-nums">
                       {tile.value}
                     </dd>
                   ) : (
@@ -179,8 +187,8 @@ export default function MarketsIndex({
         <div className="bg-ih-navy px-5 sm:px-8 lg:px-12">
           <dl className="mx-auto grid max-w-[1440px] grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6">
             {manifest.map((fact) => (
-              <div key={fact.label} className="bg-ih-navy px-5 pb-6 pt-[22px]">
-                <dt className="mono text-[9px] uppercase tracking-[0.16em] text-ih-steel">
+              <div key={fact.label} className="bg-ih-navy px-5 pt-[22px] pb-6">
+                <dt className="mono text-ih-steel text-[9px] tracking-[0.16em] uppercase">
                   {fact.label}
                 </dt>
                 <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">
@@ -216,14 +224,14 @@ export default function MarketsIndex({
             it is also sticky, so a jump-nav link lands on the heading rather
             than under it. Below `sm` only the header sticks.
           */
-          className={`scroll-mt-[120px] border-t border-ih-border px-5 pb-14 pt-12 sm:scroll-mt-[168px] sm:px-8 lg:px-12 lg:pb-[60px] lg:pt-14 ${
+          className={`border-ih-border scroll-mt-[120px] border-t px-5 pt-12 pb-14 sm:scroll-mt-[168px] sm:px-8 lg:px-12 lg:pt-14 lg:pb-[60px] ${
             index % 2 ? 'bg-ih-surface' : 'bg-ih-bg'
           }`}
         >
           <div className="mx-auto max-w-[1440px]">
             <div className="mb-7 grid grid-cols-1 items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-14">
               <div>
-                <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
+                <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
                   {region.index} · {region.cards.length} destinations ·{' '}
                   {region.withStatedTransit > 0
                     ? `${region.withStatedTransit} with a stated transit band`
@@ -239,7 +247,7 @@ export default function MarketsIndex({
               {/* The line that makes this page worth reading rather than
                   scanning — a card grid cannot say that Egypt needs no canal
                   transit. */}
-              <p className="text-[13.5px] leading-[1.6] text-ih-muted">{region.note}</p>
+              <p className="text-ih-muted text-[13.5px] leading-[1.6]">{region.note}</p>
             </div>
 
             {/*
@@ -263,10 +271,13 @@ export default function MarketsIndex({
       ))}
 
       {/* ── Closing CTA + enquiry ── */}
-      <section id="enquiry" className="scroll-mt-[120px] bg-ih-navy px-5 py-14 sm:px-8 lg:px-12 lg:py-[60px]">
+      <section
+        id="enquiry"
+        className="bg-ih-navy scroll-mt-[120px] px-5 py-14 sm:px-8 lg:px-12 lg:py-[60px]"
+      >
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,470px)] lg:gap-14">
           <div>
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-steel">
+            <p className="mono text-ih-steel text-[10px] tracking-[0.14em] uppercase">
               {copy.cta.eyebrow}
             </p>
             <h2 className="mt-3.5 font-serif text-[32px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[42px]">
@@ -293,7 +304,9 @@ export default function MarketsIndex({
               )}
               {contact.email && copy.cta.emailCtaLabel && (
                 <Button asChild kind="onnavy" size="lg">
-                  <a href={`mailto:${contact.email}?subject=${encodeURIComponent('Export enquiry')}`}>
+                  <a
+                    href={`mailto:${contact.email}?subject=${encodeURIComponent('Export enquiry')}`}
+                  >
                     {copy.cta.emailCtaLabel}
                   </a>
                 </Button>
@@ -301,9 +314,12 @@ export default function MarketsIndex({
             </div>
 
             {contact.phone && copy.cta.phonePrefix && (
-              <p className="mono mt-[26px] text-[11px] uppercase tracking-[0.08em] text-[oklch(0.75_0.03_250)]">
+              <p className="mono mt-[26px] text-[11px] tracking-[0.08em] text-[oklch(0.75_0.03_250)] uppercase">
                 {copy.cta.phonePrefix}{' '}
-                <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="underline underline-offset-4">
+                <a
+                  href={`tel:${contact.phone.replace(/\s+/g, '')}`}
+                  className="underline underline-offset-4"
+                >
                   {contact.phone}
                 </a>
                 {copy.cta.phoneSuffix ? ` ${copy.cta.phoneSuffix}` : null}
@@ -323,11 +339,11 @@ export default function MarketsIndex({
         where someone is reviewing this page.
       */}
       {showAuditStrip && (
-        <div className="flex flex-wrap justify-between gap-6 border-t border-ih-border bg-ih-surface px-5 py-4 sm:px-8 lg:px-12">
-          <span className="mono text-[10px] uppercase tracking-[0.08em] text-ih-muted-2">
+        <div className="border-ih-border bg-ih-surface flex flex-wrap justify-between gap-6 border-t px-5 py-4 sm:px-8 lg:px-12">
+          <span className="mono text-ih-muted-2 text-[10px] tracking-[0.08em] uppercase">
             Canonical /markets · schema: BreadcrumbList · ItemList ({totals.destinations}) · Service
           </span>
-          <span className="mono text-[10px] uppercase tracking-[0.08em] text-ih-muted-2">
+          <span className="mono text-ih-muted-2 text-[10px] tracking-[0.08em] uppercase">
             {totals.destinations} destinations · {totals.destinations} pages live ·{' '}
             {totals.withStatedTransit} with a stated band
           </span>

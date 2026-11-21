@@ -46,7 +46,7 @@ export default function HomeBlogMosaic({ posts }: { posts: HomeBlogTile[] }) {
           >
             <Link
               href={`/blog/${post.slug}`}
-              className={`group relative isolate flex h-full flex-col justify-end overflow-hidden rounded-lg bg-ih-navy text-white focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none ${
+              className={`group bg-ih-navy relative isolate flex h-full flex-col justify-end overflow-hidden rounded-lg text-white focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none ${
                 lead ? 'aspect-[16/10] p-5 sm:p-7 lg:aspect-auto' : 'aspect-[4/3] p-3.5 sm:p-4'
               }`}
             >
@@ -56,9 +56,7 @@ export default function HomeBlogMosaic({ posts }: { posts: HomeBlogTile[] }) {
                   alt={post.hero.alt ?? post.title}
                   fill
                   sizes={
-                    lead
-                      ? '(max-width: 1024px) 100vw, 660px'
-                      : '(max-width: 1024px) 50vw, 330px'
+                    lead ? '(max-width: 1024px) 100vw, 660px' : '(max-width: 1024px) 50vw, 330px'
                   }
                   className="-z-20 object-cover transition-transform duration-500 group-hover:scale-[1.04] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 />
@@ -74,8 +72,8 @@ export default function HomeBlogMosaic({ posts }: { posts: HomeBlogTile[] }) {
               <h3
                 className={
                   lead
-                    ? 'max-w-[560px] font-serif text-[clamp(22px,2.4vw,32px)] font-normal leading-[1.15] tracking-[-0.01em]'
-                    : 'line-clamp-3 text-[13.5px] font-semibold leading-[1.3] tracking-[-0.01em] sm:text-[14.5px]'
+                    ? 'max-w-[560px] font-serif text-[clamp(22px,2.4vw,32px)] leading-[1.15] font-normal tracking-[-0.01em]'
+                    : 'line-clamp-3 text-[13.5px] leading-[1.3] font-semibold tracking-[-0.01em] sm:text-[14.5px]'
                 }
               >
                 {post.title}
@@ -83,7 +81,7 @@ export default function HomeBlogMosaic({ posts }: { posts: HomeBlogTile[] }) {
               {lead ? (
                 <span
                   aria-hidden="true"
-                  className="mt-3 font-mono text-[11px] uppercase tracking-[0.12em] text-white/75 transition-colors group-hover:text-white"
+                  className="mt-3 font-mono text-[11px] tracking-[0.12em] text-white/75 uppercase transition-colors group-hover:text-white"
                 >
                   Read the article →
                 </span>

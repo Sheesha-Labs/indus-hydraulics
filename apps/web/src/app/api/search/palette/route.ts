@@ -17,7 +17,11 @@ export const runtime = 'nodejs'
  */
 
 const PAGES = [
-  { title: 'Replacements & cross-references', url: '/replacement', hint: 'Find an equivalent for an obsolete code' },
+  {
+    title: 'Replacements & cross-references',
+    url: '/replacement',
+    hint: 'Find an equivalent for an obsolete code',
+  },
   { title: 'Send an enquiry', url: '/contact', hint: 'Send a parts list to an engineer' },
   { title: 'Compare products', url: '/compare', hint: 'Side-by-side spec matrix' },
   { title: 'Brands', url: '/brands', hint: 'Authorised distribution partners' },

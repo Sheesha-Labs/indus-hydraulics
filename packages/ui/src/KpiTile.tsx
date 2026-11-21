@@ -110,13 +110,17 @@ export function KpiTile({
 }: KpiTileProps) {
   const body = (
     <>
-      <div className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-ih-muted">{label}</div>
-      <div className="mt-1 font-serif text-[32px] font-normal leading-none tracking-[-0.02em] tabular-nums text-ih-navy">
+      <div className="text-ih-muted font-mono text-[11px] font-medium tracking-[0.08em] uppercase">
+        {label}
+      </div>
+      <div className="text-ih-navy mt-1 font-serif text-[32px] leading-none font-normal tracking-[-0.02em] tabular-nums">
         {value}
       </div>
       {delta ? <div className={kpiDeltaVariants({ deltaDirection })}>{delta}</div> : null}
       {hint ? (
-        <p className={cn('text-[11.5px] leading-snug text-ih-muted', delta ? 'mt-1.5' : 'mt-2')}>{hint}</p>
+        <p className={cn('text-ih-muted text-[11.5px] leading-snug', delta ? 'mt-1.5' : 'mt-2')}>
+          {hint}
+        </p>
       ) : null}
     </>
   )
@@ -138,8 +142,8 @@ export function KpiTile({
       href={href}
       className={cn(
         shell,
-        'block transition-colors hover:border-ih-border-strong',
-        'outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
+        'hover:border-ih-border-strong block transition-colors',
+        'focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft outline-none focus-visible:ring-[3px]',
         className
       )}
     >

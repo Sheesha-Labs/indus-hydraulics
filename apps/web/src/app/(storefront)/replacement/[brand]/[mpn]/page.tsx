@@ -2,11 +2,19 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { REPLACEMENT_INDEX_MIN_MATCHES, buildBreadcrumbLd, buildReplacementCollectionLd, enquiryMailto } from '@indus/domain'
+import {
+  REPLACEMENT_INDEX_MIN_MATCHES,
+  buildBreadcrumbLd,
+  buildReplacementCollectionLd,
+  enquiryMailto,
+} from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { mediaUrl } from '../../../../../lib/media'
 import { SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
-import { getReplacementMatches, getReplacementSitemapKeys } from '../../../../../lib/replacement-data'
+import {
+  getReplacementMatches,
+  getReplacementSitemapKeys,
+} from '../../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../../lib/store-settings'
 import { staticParamsOrNone } from '../../../../../lib/static-params'
 
@@ -96,7 +104,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ReplacementPage({ params }: Props) {
   const { brand, mpn } = await params
-  const [matches, settings] = await Promise.all([getReplacementMatches(brand, mpn), getStoreSettings()])
+  const [matches, settings] = await Promise.all([
+    getReplacementMatches(brand, mpn),
+    getStoreSettings(),
+  ])
   if (matches.length === 0) notFound()
 
   const first = matches[0]!
@@ -125,83 +136,106 @@ export default async function ReplacementPage({ params }: Props) {
   })
 
   return (
-    <div className="mx-auto max-w-[1100px] px-5 sm:px-8 py-8 pb-16">
+    <div className="mx-auto max-w-[1100px] px-5 py-8 pb-16 sm:px-8">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
 
       {/* Breadcrumb */}
-      <nav className="py-2 font-mono text-[12px] text-ih-muted flex gap-2 items-center flex-wrap mb-6">
-        <Link href={`/`} className="hover:text-ih-ink">Home</Link>
+      <nav className="text-ih-muted mb-6 flex flex-wrap items-center gap-2 py-2 font-mono text-[12px]">
+        <Link href={`/`} className="hover:text-ih-ink">
+          Home
+        </Link>
         <span className="opacity-40">/</span>
-        <Link href={`/replacement`} className="hover:text-ih-ink">Replacements</Link>
+        <Link href={`/replacement`} className="hover:text-ih-ink">
+          Replacements
+        </Link>
         <span className="opacity-40">/</span>
-        <Link href={`/replacement/${brand}`} className="hover:text-ih-ink">{competitorBrand}</Link>
+        <Link href={`/replacement/${brand}`} className="hover:text-ih-ink">
+          {competitorBrand}
+        </Link>
         <span className="opacity-40">/</span>
         <span className="text-ih-ink">{competitorMpn}</span>
       </nav>
 
       <header className="mb-8">
-        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+        <p className="text-ih-muted mb-2 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
           {SITE_NAME} replacement
         </p>
-        <h1 className="font-serif text-[clamp(28px,4vw,40px)] font-normal tracking-[-0.02em] leading-[1.1] mb-3">
+        <h1 className="mb-3 font-serif text-[clamp(28px,4vw,40px)] leading-[1.1] font-normal tracking-[-0.02em]">
           {SITE_NAME} replacement for {competitorBrand} {competitorMpn}
         </h1>
-        <p className="text-[15px] text-ih-muted max-w-[680px] leading-[1.55]">
+        <p className="text-ih-muted max-w-[680px] text-[15px] leading-[1.55]">
           {matches.length === 1 ? (
-            <>One verified equivalent for <b className="text-ih-ink">{competitorBrand} {competitorMpn}</b> from the {SITE_NAME} catalogue. Datasheet, lead time, and stock are confirmed by our applications team.</>
+            <>
+              One verified equivalent for{' '}
+              <b className="text-ih-ink">
+                {competitorBrand} {competitorMpn}
+              </b>{' '}
+              from the {SITE_NAME} catalogue. Datasheet, lead time, and stock are confirmed by our
+              applications team.
+            </>
           ) : (
-            <><b className="text-ih-ink">{matches.length}</b> verified equivalents for <b className="text-ih-ink">{competitorBrand} {competitorMpn}</b> from the {SITE_NAME} catalogue. Each has datasheets and lead times confirmed by our applications team.</>
+            <>
+              <b className="text-ih-ink">{matches.length}</b> verified equivalents for{' '}
+              <b className="text-ih-ink">
+                {competitorBrand} {competitorMpn}
+              </b>{' '}
+              from the {SITE_NAME} catalogue. Each has datasheets and lead times confirmed by our
+              applications team.
+            </>
           )}
         </p>
       </header>
 
       {matches.some((m) => m.variantPartNumber) && (
-        <p className="mb-6 text-[14px] leading-[1.6] text-ih-ink-2">
+        <p className="text-ih-ink-2 mb-6 text-[14px] leading-[1.6]">
           {matches
             .filter((m) => m.variantPartNumber)
             .map((m) => m.variantPartNumber)
             .join(' / ')}{' '}
-          is the Indus part number for this size. The listing below carries the full size table, with the{' '}
-          {competitorBrand} number beside every Indus part number.
+          is the Indus part number for this size. The listing below carries the full size table,
+          with the {competitorBrand} number beside every Indus part number.
         </p>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2">
         {matches.map((m) => (
           <Link
             key={m.productId}
             href={`/p/${m.product.slug}`}
-            className="group flex gap-4 p-4 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors"
+            className="group border-ih-border bg-ih-surface hover:border-ih-accent flex gap-4 border p-4 transition-colors"
           >
-            <div className="relative w-[120px] h-[120px] shrink-0 bg-ih-surface-2 border border-ih-border">
+            <div className="bg-ih-surface-2 border-ih-border relative h-[120px] w-[120px] shrink-0 border">
               {m.product.images[0] ? (
                 <Image
                   src={mediaUrl(m.product.images[0]!.media.storagePath)}
-                  alt={m.product.images[0]!.alt ?? m.product.images[0]!.media.alt ?? m.product.title}
+                  alt={
+                    m.product.images[0]!.alt ?? m.product.images[0]!.media.alt ?? m.product.title
+                  }
                   fill
                   className="object-contain p-2"
                   sizes="120px"
                 />
               ) : (
-                <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-ih-muted">
+                <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                   {m.product.sku}
                 </div>
               )}
             </div>
-            <div className="flex-1 min-w-0 flex flex-col">
+            <div className="flex min-w-0 flex-1 flex-col">
               <CompatibilityBadge value={m.compatibility} />
-              <div className="font-mono text-[11px] text-ih-muted tracking-[0.04em] mt-2 mb-0.5">
-                {m.product.sku}{m.product.brand ? ` · ${m.product.brand.name}` : ''}
+              <div className="text-ih-muted mt-2 mb-0.5 font-mono text-[11px] tracking-[0.04em]">
+                {m.product.sku}
+                {m.product.brand ? ` · ${m.product.brand.name}` : ''}
               </div>
-              <h2 className="text-[15px] font-medium text-ih-ink leading-snug group-hover:text-ih-accent transition-colors line-clamp-2">
+              <h2 className="text-ih-ink group-hover:text-ih-accent line-clamp-2 text-[15px] leading-snug font-medium transition-colors">
                 {m.product.title}
               </h2>
               {m.product.descriptionShort && (
-                <p className="text-[12px] text-ih-muted mt-2 leading-[1.5] line-clamp-2">
+                <p className="text-ih-muted mt-2 line-clamp-2 text-[12px] leading-[1.5]">
                   {m.product.descriptionShort}
                 </p>
               )}
-              <span className="font-mono text-[11px] text-ih-accent mt-auto pt-3">
+              <span className="text-ih-accent mt-auto pt-3 font-mono text-[11px]">
                 View product →
               </span>
             </div>
@@ -209,14 +243,16 @@ export default async function ReplacementPage({ params }: Props) {
         ))}
       </div>
 
-      <section className="border-t border-ih-border pt-8 mb-10">
-        <h3 className="font-semibold text-[16px] mb-2">Browse all {competitorBrand} replacements</h3>
-        <p className="text-[13px] text-ih-muted leading-[1.55] mb-4">
+      <section className="border-ih-border mb-10 border-t pt-8">
+        <h3 className="mb-2 text-[16px] font-semibold">
+          Browse all {competitorBrand} replacements
+        </h3>
+        <p className="text-ih-muted mb-4 text-[13px] leading-[1.55]">
           See every {competitorBrand} part we cover, with the matching Indus equivalents.
         </p>
         <Link
           href={`/replacement/${brand}`}
-          className="inline-flex h-9 px-4 items-center border border-ih-border bg-ih-surface font-mono text-[12px] text-ih-ink-2 hover:border-ih-ink transition-colors"
+          className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-ink inline-flex h-9 items-center border px-4 font-mono text-[12px] transition-colors"
         >
           All {competitorBrand} parts →
         </Link>
@@ -228,8 +264,13 @@ export default async function ReplacementPage({ params }: Props) {
         variant="compact"
         heading={`Quote on ${competitorBrand} ${competitorMpn}`}
         body={`Our applications team can confirm interchangeability, port pattern, mounting and lead time before you commit. Send your part number or a photo of the unit and we'll come back within one business day.`}
-        whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${competitorBrand} ${competitorMpn} replacement`)}
-        emailUrl={enquiryMailto({ subject: `${competitorBrand} ${competitorMpn} replacement enquiry` })}
+        whatsappUrl={buildWhatsappHref(
+          settings.contactPhone,
+          `Enquiry: ${competitorBrand} ${competitorMpn} replacement`
+        )}
+        emailUrl={enquiryMailto({
+          subject: `${competitorBrand} ${competitorMpn} replacement enquiry`,
+        })}
         phone={settings.contactPhone}
       />
     </div>
@@ -248,7 +289,9 @@ function CompatibilityBadge({ value }: { value: 'direct' | 'compatible' | 'super
     superseded_by_us: 'bg-[oklch(0.96_0.07_85)] text-[oklch(0.45_0.13_75)]',
   } as const
   return (
-    <span className={`inline-block self-start px-2 py-0.5 font-mono text-[10px] font-semibold tracking-[0.04em] ${styles[value]}`}>
+    <span
+      className={`inline-block self-start px-2 py-0.5 font-mono text-[10px] font-semibold tracking-[0.04em] ${styles[value]}`}
+    >
       {labels[value]}
     </span>
   )

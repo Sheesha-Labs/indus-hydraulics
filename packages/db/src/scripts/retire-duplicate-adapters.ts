@@ -46,30 +46,90 @@ type Retirement = {
 
 const RETIRE: Retirement[] = [
   // BSP — one 90° male/female elbow had three pages, the reducer two more.
-  { sku: 'IH-AD-BSP-003', keepCategorySlug: 'bsp-hydraulic-adapters-uae',
-    why: 'the generic parent of the branch tee (-005) and the run tee (-006), which are now listed separately' },
-  { sku: 'IH-AD-BSP-022', keepSku: 'IH-AD-BSP-019',
-    why: 'an expander and a reducer are the same fitting in opposite orientations; -019 lists both directions' },
-  { sku: 'IH-AD-BSP-024', keepSku: 'IH-AD-BSP-019', why: 'titled "Thread Reducer (Variant 2)" of -019' },
-  { sku: 'IH-AD-BSP-023', keepSku: 'IH-AD-BSP-021', why: 'the BSP male x female swivel 90° elbow, source family 2B9' },
-  { sku: 'IH-AD-BSP-030', keepSku: 'IH-AD-BSP-021', why: 'the BSP male x female swivel 90° elbow, source family 2B9' },
-  { sku: 'IH-AD-BSP-032', keepSku: 'IH-AD-BSP-025', why: 'the BSP male x female swivel union, source family 2B' },
-  { sku: 'IH-AD-BSP-048', keepSku: 'IH-AD-BSP-052', why: 'the BSP male x male 90° elbow, source family 1B9' },
-  { sku: 'IH-AD-BSP-050', keepSku: 'IH-AD-ORFS-022',
-    why: 'the ORFS male x BSP male connector, filed under both ranges; the ORFS page carries the table' },
+  {
+    sku: 'IH-AD-BSP-003',
+    keepCategorySlug: 'bsp-hydraulic-adapters-uae',
+    why: 'the generic parent of the branch tee (-005) and the run tee (-006), which are now listed separately',
+  },
+  {
+    sku: 'IH-AD-BSP-022',
+    keepSku: 'IH-AD-BSP-019',
+    why: 'an expander and a reducer are the same fitting in opposite orientations; -019 lists both directions',
+  },
+  {
+    sku: 'IH-AD-BSP-024',
+    keepSku: 'IH-AD-BSP-019',
+    why: 'titled "Thread Reducer (Variant 2)" of -019',
+  },
+  {
+    sku: 'IH-AD-BSP-023',
+    keepSku: 'IH-AD-BSP-021',
+    why: 'the BSP male x female swivel 90° elbow, source family 2B9',
+  },
+  {
+    sku: 'IH-AD-BSP-030',
+    keepSku: 'IH-AD-BSP-021',
+    why: 'the BSP male x female swivel 90° elbow, source family 2B9',
+  },
+  {
+    sku: 'IH-AD-BSP-032',
+    keepSku: 'IH-AD-BSP-025',
+    why: 'the BSP male x female swivel union, source family 2B',
+  },
+  {
+    sku: 'IH-AD-BSP-048',
+    keepSku: 'IH-AD-BSP-052',
+    why: 'the BSP male x male 90° elbow, source family 1B9',
+  },
+  {
+    sku: 'IH-AD-BSP-050',
+    keepSku: 'IH-AD-ORFS-022',
+    why: 'the ORFS male x BSP male connector, filed under both ranges; the ORFS page carries the table',
+  },
   // DIN 2353
   { sku: 'IH-AD-DIN-027', keepSku: 'IH-AD-DIN-026', why: 'titled "(Variant 2)" of -026' },
-  { sku: 'IH-AD-DIN-042', keepSku: 'IH-AD-DIN-045', why: 'the metric bite-type 90° union elbow, source families 1C9/1D9' },
+  {
+    sku: 'IH-AD-DIN-042',
+    keepSku: 'IH-AD-DIN-045',
+    why: 'the metric bite-type 90° union elbow, source families 1C9/1D9',
+  },
   // JIC — three pages for one 90° male/female, two for the swivel cap
-  { sku: 'IH-AD-JIC-004', keepSku: 'IH-AD-JIC-006', why: 'the JIC branch tee with the swivel nut on the branch, source family BJ' },
-  { sku: 'IH-AD-JIC-012', keepSku: 'IH-AD-JIC-015', why: 'the JIC female 74° seat cap, source family 9J' },
-  { sku: 'IH-AD-JIC-017', keepSku: 'IH-AD-JIC-011', why: 'the JIC male x female 90° elbow, source family 2J9' },
-  { sku: 'IH-AD-JIC-018', keepSku: 'IH-AD-JIC-011', why: 'the JIC male x female 90° elbow, source family 2J9' },
-  { sku: 'IH-AD-JIC-021', keepSku: 'IH-AD-JIC-013', why: 'the JIC male x female union, source family 2J' },
+  {
+    sku: 'IH-AD-JIC-004',
+    keepSku: 'IH-AD-JIC-006',
+    why: 'the JIC branch tee with the swivel nut on the branch, source family BJ',
+  },
+  {
+    sku: 'IH-AD-JIC-012',
+    keepSku: 'IH-AD-JIC-015',
+    why: 'the JIC female 74° seat cap, source family 9J',
+  },
+  {
+    sku: 'IH-AD-JIC-017',
+    keepSku: 'IH-AD-JIC-011',
+    why: 'the JIC male x female 90° elbow, source family 2J9',
+  },
+  {
+    sku: 'IH-AD-JIC-018',
+    keepSku: 'IH-AD-JIC-011',
+    why: 'the JIC male x female 90° elbow, source family 2J9',
+  },
+  {
+    sku: 'IH-AD-JIC-021',
+    keepSku: 'IH-AD-JIC-013',
+    why: 'the JIC male x female union, source family 2J',
+  },
   // metric and NPT
-  { sku: 'IH-AD-MET-009', keepSku: 'IH-AD-MET-007', why: 'the metric male O-ring plug, source family 4E' },
-  { sku: 'IH-AD-NPT-012', keepSku: 'IH-AD-NPT-019',
-    why: 'the reducing sizes are rows of -019, not a separate fitting; source family 1N' },
+  {
+    sku: 'IH-AD-MET-009',
+    keepSku: 'IH-AD-MET-007',
+    why: 'the metric male O-ring plug, source family 4E',
+  },
+  {
+    sku: 'IH-AD-NPT-012',
+    keepSku: 'IH-AD-NPT-019',
+    why: 'the reducing sizes are rows of -019, not a separate fitting; source family 1N',
+  },
   { sku: 'IH-AD-NPT-014', keepSku: 'IH-AD-NPT-015', why: 'the NPT male plug, source family 4N' },
 ]
 
@@ -118,7 +178,7 @@ async function main() {
     if (dupe._count.variants > 0) {
       throw new Error(
         `${r.sku} has ${dupe._count.variants} sizes of its own — it is not an empty duplicate, ` +
-          `so retiring it would delete data. Re-check the pairing before running this.`,
+          `so retiring it would delete data. Re-check the pairing before running this.`
       )
     }
     const held = await blockers(dupe.id)

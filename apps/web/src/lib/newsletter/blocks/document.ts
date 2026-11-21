@@ -52,7 +52,11 @@ export const DEFAULT_SETTINGS: DesignSettings = {
   bodyFont: 'sans',
 }
 
-export const SETTINGS_FIELDS: { key: keyof DesignSettings; label: string; kind: 'color' | 'font' }[] = [
+export const SETTINGS_FIELDS: {
+  key: keyof DesignSettings
+  label: string
+  kind: 'color' | 'font'
+}[] = [
   { key: 'pageBackground', label: 'Behind the email', kind: 'color' },
   { key: 'contentBackground', label: 'Email background', kind: 'color' },
   { key: 'textColor', label: 'Text', kind: 'color' },
@@ -104,23 +108,39 @@ function cleanRecords(v: unknown): RecordsValue | null {
   const ids: string[] = []
   const labels: string[] = []
   rawIds.forEach((id, i) => {
-    if (typeof id !== 'string' || !RECORD_ID.test(id) || ids.includes(id) || ids.length >= RECORDS_MAX) return
+    if (
+      typeof id !== 'string' ||
+      !RECORD_ID.test(id) ||
+      ids.includes(id) ||
+      ids.length >= RECORDS_MAX
+    )
+      return
     ids.push(id)
     // Labels stay paired with their id, so a dropped id takes its label with it.
     labels.push(str(rawLabels[i], 200).replace(/[\r\n]+/g, ' '))
   })
-  const layout = (RECORD_LAYOUTS as readonly unknown[]).includes(o.layout) ? (o.layout as RecordLayout) : 'grid'
+  const layout = (RECORD_LAYOUTS as readonly unknown[]).includes(o.layout)
+    ? (o.layout as RecordLayout)
+    : 'grid'
   return { kind: o.kind as RecordKind, ids, labels, layout }
 }
 
 function cleanScalar(f: ScalarFieldDef, v: unknown, fallback: unknown): unknown {
   switch (f.kind) {
     case 'text':
-      return typeof v === 'string' ? str(v, f.max ?? TEXT_MAX).replace(/[\r\n]+/g, ' ') : (fallback ?? '')
+      return typeof v === 'string'
+        ? str(v, f.max ?? TEXT_MAX).replace(/[\r\n]+/g, ' ')
+        : (fallback ?? '')
     case 'textarea':
-      return typeof v === 'string' ? str(v, f.max ?? TEXTAREA_MAX).replace(/\r\n?/g, '\n') : (fallback ?? '')
+      return typeof v === 'string'
+        ? str(v, f.max ?? TEXTAREA_MAX).replace(/\r\n?/g, '\n')
+        : (fallback ?? '')
     case 'url':
-      return typeof v === 'string' ? str(v, URL_MAX).replace(/[\r\n]+/g, '').trim() : (fallback ?? '')
+      return typeof v === 'string'
+        ? str(v, URL_MAX)
+            .replace(/[\r\n]+/g, '')
+            .trim()
+        : (fallback ?? '')
     case 'color': {
       if (typeof v === 'string' && HEX.test(v.trim())) return v.trim().toLowerCase()
       if (v === '' && f.allowBlank) return ''
@@ -143,7 +163,9 @@ function cleanScalar(f: ScalarFieldDef, v: unknown, fallback: unknown): unknown 
 /** One field's value into `out`. */
 function cleanField(f: FieldDef, raw: Props, defaults: Props, out: Props): void {
   if (f.kind === 'items') {
-    const list = Array.isArray(raw[f.key]) ? (raw[f.key] as unknown[]) : ((defaults[f.key] as unknown[] | undefined) ?? [])
+    const list = Array.isArray(raw[f.key])
+      ? (raw[f.key] as unknown[])
+      : ((defaults[f.key] as unknown[] | undefined) ?? [])
     out[f.key] = list.slice(0, f.max).map((item) => {
       const src = item && typeof item === 'object' ? (item as Props) : {}
       const clean: Props = {}
@@ -195,7 +217,11 @@ export function normaliseDesign(raw: unknown): Design {
     let id = typeof o.id === 'string' && /^[a-z0-9-]{1,40}$/i.test(o.id) ? o.id : blockId()
     while (seen.has(id)) id = blockId()
     seen.add(id)
-    blocks.push({ id, type: def.type, props: normaliseProps(def, o.props && typeof o.props === 'object' ? (o.props as Props) : {}) })
+    blocks.push({
+      id,
+      type: def.type,
+      props: normaliseProps(def, o.props && typeof o.props === 'object' ? (o.props as Props) : {}),
+    })
   }
   return { version: 1, settings: normaliseSettings(src.settings), blocks }
 }
@@ -204,7 +230,11 @@ export function normaliseDesign(raw: unknown): Design {
 export function newBlock(type: string, props: Props = {}): Block {
   const def = blockDef(type)
   if (!def) throw new Error(`Unknown block type ${type}`)
-  return { id: blockId(), type: def.type, props: normaliseProps(def, { ...structuredClone(def.defaults), ...structuredClone(props) }) }
+  return {
+    id: blockId(),
+    type: def.type,
+    props: normaliseProps(def, { ...structuredClone(def.defaults), ...structuredClone(props) }),
+  }
 }
 
 /**
@@ -221,7 +251,8 @@ export function recordRefs(design: Design): { kind: RecordKind; ids: string[] }[
         if (value && value.ids.length) out.push({ kind: value.kind, ids: value.ids })
       } else if (f.kind === 'items') {
         const items = Array.isArray(props[f.key]) ? (props[f.key] as unknown[]) : []
-        for (const item of items) if (item && typeof item === 'object') visit(f.fields, item as Props)
+        for (const item of items)
+          if (item && typeof item === 'object') visit(f.fields, item as Props)
       }
     }
   }
@@ -246,7 +277,12 @@ export function linkSlots(design: Design): { blockLabel: string; label: string; 
           items.forEach((item, i) => visit(f.fields, item, `${f.itemLabel} ${i + 1}`))
         } else if (f.kind === 'url') {
           const value = typeof props[f.key] === 'string' ? (props[f.key] as string).trim() : ''
-          if (value) out.push({ blockLabel, label: itemLabel ? `${itemLabel} › ${f.label}` : f.label, value })
+          if (value)
+            out.push({
+              blockLabel,
+              label: itemLabel ? `${itemLabel} › ${f.label}` : f.label,
+              value,
+            })
         }
       }
     }
@@ -267,7 +303,10 @@ export function isUsableLink(raw: string): boolean {
   const v = raw.trim()
   if (!v) return true
   if (TOKEN_LEAD.test(v)) return /^[^\s"'<>]+$/.test(v.replace(TOKEN_LEAD, ''))
-  return /^(https?:\/\/[^\s"'<>/][^\s"'<>]*|mailto:[^\s"'<>]+|tel:[^\s"'<>]+)$/i.test(v) || /^\/(?!\/)[^\s"'<>\\]*$/.test(v)
+  return (
+    /^(https?:\/\/[^\s"'<>/][^\s"'<>]*|mailto:[^\s"'<>]+|tel:[^\s"'<>]+)$/i.test(v) ||
+    /^\/(?!\/)[^\s"'<>\\]*$/.test(v)
+  )
 }
 
 /**
@@ -277,7 +316,8 @@ export function isUsableLink(raw: string): boolean {
  */
 export function placeholderIn(text: string): boolean {
   if (!text) return false
-  if (/\[(?:your|write|insert|add|enter|placeholder|replace|tbc|tbd)\b[^\]]*\](?!\()/i.test(text)) return true
+  if (/\[(?:your|write|insert|add|enter|placeholder|replace|tbc|tbd)\b[^\]]*\](?!\()/i.test(text))
+    return true
   if (/\blorem ipsum\b/i.test(text)) return true
   if (/\bTODO\b/.test(text) || /\bxxx+\b/i.test(text)) return true
   for (const m of text.matchAll(/\{\{([^{}]*)\}\}/g)) {

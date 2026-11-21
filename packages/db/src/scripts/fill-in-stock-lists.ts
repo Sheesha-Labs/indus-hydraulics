@@ -29,7 +29,14 @@ const STOCK_LIST_MARKER = '<!-- fill-in:stock-list -->'
 /** ProseBlockSchema allows 20,000 characters; leave headroom. */
 const MAX_HTML = 18000
 /** Blocks that close an article; the list goes in front of the first of them if there is no product block. */
-const CLOSING = new Set(['faq_block', 'references', 'related_articles', 'as_of_stamp', 'cta_block', 'market_reach'])
+const CLOSING = new Set([
+  'faq_block',
+  'references',
+  'related_articles',
+  'as_of_stamp',
+  'cta_block',
+  'market_reach',
+])
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
@@ -58,7 +65,10 @@ async function main() {
   const entries = only ? FILL_INS.filter((f) => f.post === only) : FILL_INS
 
   const allShelves = [...new Set(entries.flatMap((e) => e.shelves))]
-  const cats = await db.category.findMany({ where: { slug: { in: allShelves } }, select: { id: true, slug: true, name: true } })
+  const cats = await db.category.findMany({
+    where: { slug: { in: allShelves } },
+    select: { id: true, slug: true, name: true },
+  })
   const catBySlug = new Map(cats.map((c) => [c.slug, c]))
   const missingCats = allShelves.filter((s) => !catBySlug.has(s))
   if (missingCats.length) throw new Error(`unknown categories: ${missingCats.join(', ')}`)
@@ -68,7 +78,10 @@ async function main() {
   const touched: string[] = []
 
   for (const entry of entries) {
-    const post = await db.blogPost.findUnique({ where: { slug: entry.post }, select: { id: true, slug: true, status: true, bodyBlocks: true } })
+    const post = await db.blogPost.findUnique({
+      where: { slug: entry.post },
+      select: { id: true, slug: true, status: true, bodyBlocks: true },
+    })
     if (!post || post.status !== 'published') {
       console.log(`  ! ${entry.post}: not found or not published`)
       problems++
@@ -83,7 +96,10 @@ async function main() {
     })
     // Keep shelf order, then title order within a shelf.
     const order = new Map(shelves.map((c, i) => [c.id, i]))
-    products.sort((a, b) => order.get(a.categoryId!)! - order.get(b.categoryId!)! || a.title.localeCompare(b.title))
+    products.sort(
+      (a, b) =>
+        order.get(a.categoryId!)! - order.get(b.categoryId!)! || a.title.localeCompare(b.title)
+    )
     if (products.length === 0) {
       console.log(`  ! ${entry.post}: no active products on ${entry.shelves.join(', ')}`)
       problems++
@@ -91,12 +107,18 @@ async function main() {
     }
 
     const names = shelves.map((c) => c.name)
-    const shelfText = names.length === 1 ? names[0]! : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]!}`
+    const shelfText =
+      names.length === 1
+        ? names[0]!
+        : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]!}`
     const intro = `Every listing on our ${esc(shelfText)} ${names.length === 1 ? 'shelf' : 'shelves'}:`
     const listBlocks = buildBlocks(intro, products)
 
     const existing = (Array.isArray(post.bodyBlocks) ? post.bodyBlocks : []) as Block[]
-    const kept = existing.filter((b) => !(b.type === 'prose' && typeof b.html === 'string' && b.html.startsWith(STOCK_LIST_MARKER)))
+    const kept = existing.filter(
+      (b) =>
+        !(b.type === 'prose' && typeof b.html === 'string' && b.html.startsWith(STOCK_LIST_MARKER))
+    )
     let at = kept.findIndex((b) => b.type === 'product_embed')
     if (at < 0) at = kept.findIndex((b) => CLOSING.has(b.type))
     if (at < 0) at = kept.length
@@ -104,14 +126,18 @@ async function main() {
 
     const parsed = BlogBlocksSchema.safeParse(next)
     if (!parsed.success) {
-      console.log(`  ✗ ${entry.post}: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`)
+      console.log(
+        `  ✗ ${entry.post}: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`
+      )
       problems++
       continue
     }
 
     linked += products.length
     touched.push(post.slug)
-    console.log(`  ${dryRun ? '[dry-run] ' : ''}${post.slug}: ${products.length} listings in ${listBlocks.length} block(s) from ${entry.shelves.join(', ')}`)
+    console.log(
+      `  ${dryRun ? '[dry-run] ' : ''}${post.slug}: ${products.length} listings in ${listBlocks.length} block(s) from ${entry.shelves.join(', ')}`
+    )
     if (dryRun) continue
 
     const blocks = parsed.data as BlogBlocks
@@ -125,7 +151,9 @@ async function main() {
     await syncBlogPostLinks(post.id, blocks, db)
   }
 
-  console.log(`\n${dryRun ? '[dry-run] ' : ''}${touched.length} posts, ${linked} listing links, ${problems} problem(s)`)
+  console.log(
+    `\n${dryRun ? '[dry-run] ' : ''}${touched.length} posts, ${linked} listing links, ${problems} problem(s)`
+  )
   console.log(`slugs: ${touched.join(' ')}`)
   await db.$disconnect()
   if (problems) process.exitCode = 1

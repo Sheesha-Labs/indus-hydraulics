@@ -20,10 +20,7 @@ export const MAX_QUERY_LEN = 80
  * shorter than `MIN_QUERY_LEN` / longer than `MAX_QUERY_LEN`, signalling
  * the caller to skip the storage write.
  */
-export function pushRecentQuery(
-  recents: ReadonlyArray<string>,
-  query: string,
-): string[] | null {
+export function pushRecentQuery(recents: ReadonlyArray<string>, query: string): string[] | null {
   const trimmed = query.trim()
   if (trimmed.length < MIN_QUERY_LEN || trimmed.length > MAX_QUERY_LEN) return null
 
@@ -62,10 +59,7 @@ export function sanitiseRecents(input: unknown): string[] {
  * "× Clear" button next to each recent in the dropdown). Case-insensitive
  * match. Returns a new array; never mutates input.
  */
-export function removeRecentQuery(
-  recents: ReadonlyArray<string>,
-  query: string,
-): string[] {
+export function removeRecentQuery(recents: ReadonlyArray<string>, query: string): string[] {
   const lowered = query.trim().toLowerCase()
   return recents.filter((r) => r.toLowerCase() !== lowered)
 }

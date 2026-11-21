@@ -49,7 +49,12 @@ const OptionalUuid = z
 
 const CreateCategorySchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(120),
-  slug: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : '')),
+  slug: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : '')),
   parentId: OptionalUuid,
   defaultSpecTemplateId: OptionalUuid,
   position: z.coerce.number().int().min(0).default(0),
@@ -134,7 +139,9 @@ export async function updateCategory(formData: FormData): Promise<Result<void>> 
     })
 
     if (parsed.parentId === parsed.id) {
-      return fail('VALIDATION', 'A category cannot be its own parent', { parentId: ['Cannot self-reference'] })
+      return fail('VALIDATION', 'A category cannot be its own parent', {
+        parentId: ['Cannot self-reference'],
+      })
     }
 
     // Walk parent chain to detect cycles.
@@ -169,7 +176,10 @@ export async function updateCategory(formData: FormData): Promise<Result<void>> 
     // `bsp-hose-fittings-uae-2` produces a URL nobody asked for and a redirect
     // pointing at it. Report the clash instead.
     const slug = slugify(parsed.slug)
-    const clash = await db.category.findUnique({ where: { slug }, select: { id: true, name: true } })
+    const clash = await db.category.findUnique({
+      where: { slug },
+      select: { id: true, name: true },
+    })
     if (clash && clash.id !== parsed.id) {
       return fail('VALIDATION', `The slug "${slug}" is already used by "${clash.name}"`, {
         slug: ['Already in use by another category'],
@@ -208,7 +218,7 @@ export async function updateCategory(formData: FormData): Promise<Result<void>> 
             toPath: newPath,
             notes: `Auto-created when category "${parsed.name}" was renamed`,
           })
-        },
+        }
       )
     } else {
       await db.category.update({ where: { id: parsed.id }, data })
@@ -316,7 +326,7 @@ const MoveCategorySchema = z.object({
  * write an ordering derived from a tree that no longer exists.
  */
 export async function moveCategory(
-  input: z.input<typeof MoveCategorySchema>,
+  input: z.input<typeof MoveCategorySchema>
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -348,7 +358,7 @@ export async function moveCategory(
         'VALIDATION',
         height === 0
           ? `Categories can only nest ${MAX_CATEGORY_DEPTH + 1} levels deep`
-          : `"${moving.name}" has sub-categories of its own — moving it there would nest them too deep`,
+          : `"${moving.name}" has sub-categories of its own — moving it there would nest them too deep`
       )
     }
 
@@ -360,8 +370,8 @@ export async function moveCategory(
         db.category.update({
           where: { id: row.id },
           data: { parentId: row.parentId, position: row.position },
-        }),
-      ),
+        })
+      )
     )
 
     // Reparenting deliberately does NOT touch slugs or write a redirect.
@@ -391,7 +401,7 @@ const BulkPublishSchema = z.object({
  * rather than silently rewriting a curated menu here.
  */
 export async function bulkSetPublished(
-  input: z.input<typeof BulkPublishSchema>,
+  input: z.input<typeof BulkPublishSchema>
 ): Promise<Result<{ count: number }>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -423,7 +433,7 @@ const BulkMoveSchema = z.object({
  * and the editor has already drawn the move as done.
  */
 export async function bulkMoveCategories(
-  input: z.input<typeof BulkMoveSchema>,
+  input: z.input<typeof BulkMoveSchema>
 ): Promise<Result<{ count: number }>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -444,10 +454,7 @@ export async function bulkMoveCategories(
       }
       for (const id of ids) {
         if (descendantIds(nodes, id).includes(newParentId)) {
-          return fail(
-            'VALIDATION',
-            `Cannot move "${byId.get(id)!.name}" inside its own sub-tree`,
-          )
+          return fail('VALIDATION', `Cannot move "${byId.get(id)!.name}" inside its own sub-tree`)
         }
       }
     }
@@ -457,7 +464,7 @@ export async function bulkMoveCategories(
       if (parentDepth + subtreeHeight(nodes, id) > MAX_CATEGORY_DEPTH) {
         return fail(
           'VALIDATION',
-          `"${byId.get(id)!.name}" has sub-categories that would nest too deep there`,
+          `"${byId.get(id)!.name}" has sub-categories that would nest too deep there`
         )
       }
     }
@@ -497,8 +504,8 @@ export async function bulkMoveCategories(
         db.category.update({
           where: { id: row.id },
           data: { parentId: row.parentId, position: row.position },
-        }),
-      ),
+        })
+      )
     )
 
     invalidateCategoryTree()

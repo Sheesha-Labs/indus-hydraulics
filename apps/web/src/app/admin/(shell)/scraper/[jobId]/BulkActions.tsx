@@ -31,7 +31,12 @@ export default function BulkActions({
         setResult({ kind: 'error', message: r.message })
         return
       }
-      setResult({ kind: 'done', ingested: r.data.ingested, failed: r.data.failed, errors: r.data.errors })
+      setResult({
+        kind: 'done',
+        ingested: r.data.ingested,
+        failed: r.data.failed,
+        errors: r.data.errors,
+      })
       router.refresh()
     })
   }
@@ -52,25 +57,25 @@ export default function BulkActions({
   if (!jobReady) return null
 
   return (
-    <div className="flex items-center gap-3 flex-wrap">
+    <div className="flex flex-wrap items-center gap-3">
       <button
         type="button"
         onClick={onClick}
         disabled={pending || selectedCount === 0}
-        className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] uppercase tracking-wider disabled:opacity-50"
+        className="bg-ih-accent text-ih-accent-fg h-9 px-4 text-[12px] tracking-wider uppercase tabular-nums disabled:opacity-50"
       >
         {pending
           ? `Ingesting ${selectedCount}…`
           : selectedCount === 0
-          ? 'Ingest all selected'
-          : `Ingest all selected (${selectedCount})`}
+            ? 'Ingest all selected'
+            : `Ingest all selected (${selectedCount})`}
       </button>
 
       <button
         type="button"
         onClick={onSkipDupes}
         disabled={skipPending}
-        className="rounded-md h-9 px-4 border border-ih-border text-ih-ink-2 tabular-nums text-[12px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+        className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-md border px-4 text-[12px] tracking-wider uppercase tabular-nums disabled:opacity-50"
         title="Mark every row whose SKU already exists on indushydraulics.com as 'skipped'"
       >
         {skipPending ? 'Skipping…' : 'Skip duplicates'}
@@ -79,14 +84,14 @@ export default function BulkActions({
       {result.kind === 'done' && (
         <div
           role="status"
-          className="rounded-lg border border-[oklch(0.4_0.14_145)] bg-ih-success-soft text-[oklch(0.3_0.14_145)] px-3 py-1.5 text-[12px]"
+          className="bg-ih-success-soft rounded-lg border border-[oklch(0.4_0.14_145)] px-3 py-1.5 text-[12px] text-[oklch(0.3_0.14_145)]"
         >
           {result.ingested} ingested
           {result.failed > 0 ? `, ${result.failed} failed` : ''}.
           {result.errors.length > 0 && (
             <details className="mt-1">
               <summary className="cursor-pointer text-[11px] underline">View errors</summary>
-              <ul className="mt-1 text-[11px] list-disc list-inside">
+              <ul className="mt-1 list-inside list-disc text-[11px]">
                 {result.errors.map((e, i) => (
                   <li key={i}>{e}</li>
                 ))}
@@ -99,7 +104,7 @@ export default function BulkActions({
       {result.kind === 'skipped' && (
         <div
           role="status"
-          className="rounded-lg border border-ih-border bg-ih-surface-2 text-ih-ink-2 px-3 py-1.5 text-[12px]"
+          className="border-ih-border bg-ih-surface-2 text-ih-ink-2 rounded-lg border px-3 py-1.5 text-[12px]"
         >
           {result.count === 0
             ? 'No duplicate SKUs found — nothing to skip.'
@@ -110,7 +115,7 @@ export default function BulkActions({
       {result.kind === 'error' && (
         <div
           role="alert"
-          className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-3 py-1.5 text-[12px]"
+          className="bg-ih-danger-soft rounded-lg border border-[oklch(0.4_0.18_25)] px-3 py-1.5 text-[12px] text-[oklch(0.3_0.18_25)]"
         >
           {result.message}
         </div>

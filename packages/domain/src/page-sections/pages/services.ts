@@ -11,7 +11,8 @@ export const SERVICES_PAGE: MasterPageDef = {
     {
       key: 'hero',
       label: 'Hero',
-      description: 'Headline, the three figures under it and the two buttons. (The standfirst is kept but not shown.)',
+      description:
+        'Headline, the three figures under it and the two buttons. (The standfirst is kept but not shown.)',
       locked: true,
       fields: [
         eyebrow(),
@@ -81,7 +82,13 @@ export const SERVICES_PAGE: MasterPageDef = {
               help: '16:9, shown above the panel copy. Blank keeps the hatched placeholder.',
             },
             { key: 'panel_tag', label: 'Panel eyebrow', kind: 'text', max: 80, optional: true },
-            { key: 'panel_title', label: 'Panel heading', kind: 'textarea', max: 300, optional: true },
+            {
+              key: 'panel_title',
+              label: 'Panel heading',
+              kind: 'textarea',
+              max: 300,
+              optional: true,
+            },
             { key: 'panel_body', label: 'Panel body', kind: 'textarea', max: 900, optional: true },
             {
               key: 'panel_deliverables',
@@ -108,7 +115,8 @@ export const SERVICES_PAGE: MasterPageDef = {
               'Every asset gets a 4-hour intake — photographed, tagged, logged before anyone touches it.',
             panel_body:
               'On-site or in our Jebel Ali yard, intake is the first defensible step. Walk-around photos, fluid sample, OEM nameplate, recerts audit. The intake report is on the operator’s desk inside 4 hours of the asset being on the ground — before a single bay-hour is billed.',
-            panel_deliverables: 'Walk-around photo log\nFluid sample\nOEM nameplate capture\nRecerts audit',
+            panel_deliverables:
+              'Walk-around photo log\nFluid sample\nOEM nameplate capture\nRecerts audit',
           },
           {
             enabled: true,
@@ -138,7 +146,8 @@ export const SERVICES_PAGE: MasterPageDef = {
             name: 'Document & dispatch',
             desc: 'Return packet with serials, torque values, test results, photos.',
             panel_tag: 'STEP 04 · DOCUMENT & DISPATCH',
-            panel_title: 'Two paper copies of the sign-off pack ride back to the rig with the asset.',
+            panel_title:
+              'Two paper copies of the sign-off pack ride back to the rig with the asset.',
             panel_body:
               'Serials, torque values, NACE certs, test curves, photos — the complete return packet. ADNOC / Aramco / KOC / PDO supplier-spec compliant. Signed off by an HSE rep where the operator requires it.',
             panel_deliverables:

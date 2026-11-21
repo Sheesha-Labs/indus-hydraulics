@@ -21,7 +21,10 @@ describe('the shipped posture', () => {
     expect(CATALOGUE_STOCK_POSTURE.deliveryDays).toBe(3)
     // Butterfly valves are supplier surplus, not Dubai stock (2026-09-25); below-the-hook
     // beams and frames are built to order or shipped from the maker's stock (2026-11-16).
-    expect(CATALOGUE_STOCK_POSTURE.exemptCategories).toEqual(['butterfly-valves', 'below-the-hook-lifting'])
+    expect(CATALOGUE_STOCK_POSTURE.exemptCategories).toEqual([
+      'butterfly-valves',
+      'below-the-hook-lifting',
+    ])
   })
 })
 
@@ -47,7 +50,7 @@ describe('productAvailability', () => {
   it('prefers a counted stock figure over the blanket claim', () => {
     const state = productAvailability(
       { status: 'active', stockQty: 12, stockWarehouse: 'Jebel Ali' },
-      posture(),
+      posture()
     )
     expect(state.kind).toBe('counted_stock')
     expect(state.label).toBe('In stock · 12 units · Jebel Ali')
@@ -63,7 +66,7 @@ describe('productAvailability', () => {
   it('falls back to the recorded lead time for an exempt category', () => {
     const state = productAvailability(
       { status: 'active', leadTimeDays: 240, categorySlugs: ['bop-ram', 'blowout-preventers'] },
-      posture({ exemptCategories: ['blowout-preventers'] }),
+      posture({ exemptCategories: ['blowout-preventers'] })
     )
     expect(state.kind).toBe('lead_time')
     expect(state.label).toBe('Lead time · 240 days')
@@ -78,7 +81,7 @@ describe('productAvailability', () => {
     */
     const leafOnly = productAvailability(
       { status: 'active', leadTimeDays: 84, categorySlugs: ['oilfield-gate-valves'] },
-      posture({ exemptCategories: ['oilfield-valve-suppliers-uae'] }),
+      posture({ exemptCategories: ['oilfield-valve-suppliers-uae'] })
     )
     expect(leafOnly.kind).toBe('ex_stock')
 
@@ -88,7 +91,7 @@ describe('productAvailability', () => {
         leadTimeDays: 84,
         categorySlugs: ['oilfield-gate-valves', 'oilfield-valve-suppliers-uae'],
       },
-      posture({ exemptCategories: ['oilfield-valve-suppliers-uae'] }),
+      posture({ exemptCategories: ['oilfield-valve-suppliers-uae'] })
     )
     expect(withChain.kind).toBe('lead_time')
   })
@@ -96,7 +99,7 @@ describe('productAvailability', () => {
   it('falls back cleanly when the posture is switched off entirely', () => {
     const withLead = productAvailability(
       { status: 'active', leadTimeDays: 7 },
-      posture({ exStock: false }),
+      posture({ exStock: false })
     )
     expect(withLead.kind).toBe('lead_time')
 
@@ -114,9 +117,16 @@ describe('countInStock', () => {
       posture the pills use.
     */
     const products = [
-      { status: 'active', categorySlugs: ['wire-rope-anticorrosive-greases', 'industrial-lubricant-suppliers-uae'] },
+      {
+        status: 'active',
+        categorySlugs: ['wire-rope-anticorrosive-greases', 'industrial-lubricant-suppliers-uae'],
+      },
       { status: 'active', stockQty: 4, categorySlugs: ['lifting-beams', 'below-the-hook-lifting'] },
-      { status: 'active', leadTimeDays: 14, categorySlugs: ['lifting-beams', 'below-the-hook-lifting'] },
+      {
+        status: 'active',
+        leadTimeDays: 14,
+        categorySlugs: ['lifting-beams', 'below-the-hook-lifting'],
+      },
       { status: 'discontinued', stockQty: 9, categorySlugs: ['wire-rope-anticorrosive-greases'] },
     ]
     const p = posture({ exemptCategories: ['below-the-hook-lifting'] })

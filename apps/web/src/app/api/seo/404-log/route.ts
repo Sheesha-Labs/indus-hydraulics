@@ -27,15 +27,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false }, { status: 400 })
   }
   const body = payload as Record<string, unknown>
-  const path =
-    typeof body.path === 'string' ? body.path.slice(0, MAX_PATH) : ''
+  const path = typeof body.path === 'string' ? body.path.slice(0, MAX_PATH) : ''
   if (!path || !path.startsWith('/')) {
     return NextResponse.json({ ok: false }, { status: 400 })
   }
-  const referer =
-    typeof body.referer === 'string' ? body.referer.slice(0, MAX_REFERER) : null
-  const userAgent =
-    typeof body.userAgent === 'string' ? body.userAgent.slice(0, MAX_UA) : null
+  const referer = typeof body.referer === 'string' ? body.referer.slice(0, MAX_REFERER) : null
+  const userAgent = typeof body.userAgent === 'string' ? body.userAgent.slice(0, MAX_UA) : null
 
   try {
     const now = new Date()

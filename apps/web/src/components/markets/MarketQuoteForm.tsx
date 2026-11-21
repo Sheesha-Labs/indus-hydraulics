@@ -73,9 +73,9 @@ export default function MarketQuoteForm({
   }
 
   return (
-    <div className="grid grid-cols-1 overflow-hidden rounded-lg border border-ih-border bg-ih-surface shadow-[var(--shadow-1)] lg:grid-cols-[minmax(0,1fr)_minmax(0,348px)]">
-      <div className="px-6 py-8 sm:px-9 sm:pb-9 sm:pt-[34px]">
-        <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface grid grid-cols-1 overflow-hidden rounded-lg border shadow-[var(--shadow-1)] lg:grid-cols-[minmax(0,1fr)_minmax(0,348px)]">
+      <div className="px-6 py-8 sm:px-9 sm:pt-[34px] sm:pb-9">
+        <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
           Export quote · {countryCode}
         </p>
         <h2 className="mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
@@ -88,7 +88,7 @@ export default function MarketQuoteForm({
           </div>
         ) : (
           <>
-            <p className="mt-2.5 max-w-[620px] text-[13.5px] leading-[1.6] text-ih-muted">
+            <p className="text-ih-muted mt-2.5 max-w-[620px] text-[13.5px] leading-[1.6]">
               Part numbers if you have them; bore, thread and pressure if you do not. A photo of the
               failed part is usually enough.
             </p>
@@ -109,10 +109,22 @@ export default function MarketQuoteForm({
 
               <div className="mt-6 grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
                 <Field label="Company">
-                  <Input name="company" required autoComplete="organization" placeholder="Registered name" className="h-11 sm:h-9" />
+                  <Input
+                    name="company"
+                    required
+                    autoComplete="organization"
+                    placeholder="Registered name"
+                    className="h-11 sm:h-9"
+                  />
                 </Field>
                 <Field label="Contact name">
-                  <Input name="contactName" required autoComplete="name" placeholder="Who we reply to" className="h-11 sm:h-9" />
+                  <Input
+                    name="contactName"
+                    required
+                    autoComplete="name"
+                    placeholder="Who we reply to"
+                    className="h-11 sm:h-9"
+                  />
                 </Field>
                 <Field label="Delivery city">
                   {/* Defaults to empty so the choice is deliberate — a
@@ -164,7 +176,9 @@ export default function MarketQuoteForm({
                 <Textarea
                   name="partList"
                   rows={4}
-                  placeholder={'IH-2SN-12-BSP · 40 m · crimped both ends\n3/4" bore, JIC 37° female, 275 bar · qty 12'}
+                  placeholder={
+                    'IH-2SN-12-BSP · 40 m · crimped both ends\n3/4" bore, JIC 37° female, 275 bar · qty 12'
+                  }
                 />
               </Field>
 
@@ -206,8 +220,10 @@ export default function MarketQuoteForm({
         )}
       </div>
 
-      <aside className="flex flex-col bg-ih-navy px-7 py-8 sm:py-[34px]">
-        <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-steel">What comes back</p>
+      <aside className="bg-ih-navy flex flex-col px-7 py-8 sm:py-[34px]">
+        <p className="mono text-ih-steel text-[10px] tracking-[0.14em] uppercase">
+          What comes back
+        </p>
         <ul className="mt-[18px] flex list-none flex-col gap-3.5 p-0">
           {[
             `A quote in ${currency} against real stock, not an indication.`,
@@ -223,21 +239,29 @@ export default function MarketQuoteForm({
         </ul>
 
         <div className="mt-auto border-t border-white/15 pt-6">
-          <p className="mono text-[10px] uppercase tracking-[0.12em] text-ih-steel">
+          <p className="mono text-ih-steel text-[10px] tracking-[0.12em] uppercase">
             Or reach the export desk
           </p>
           {contactPhone && (
-            <a href={`tel:${contactPhone}`} className="mono mt-2.5 block text-[14px] text-white hover:text-ih-steel">
+            <a
+              href={`tel:${contactPhone}`}
+              className="mono hover:text-ih-steel mt-2.5 block text-[14px] text-white"
+            >
               {contactPhone}
             </a>
           )}
           {contactEmail && (
-            <a href={`mailto:${contactEmail}`} className="mt-1.5 block text-[12.5px] text-white/80 hover:text-white">
+            <a
+              href={`mailto:${contactEmail}`}
+              className="mt-1.5 block text-[12.5px] text-white/80 hover:text-white"
+            >
               {contactEmail}
             </a>
           )}
           {contactHours && (
-            <p className="mono mt-3 text-[10px] uppercase tracking-[0.08em] text-white/60">{contactHours}</p>
+            <p className="mono mt-3 text-[10px] tracking-[0.08em] text-white/60 uppercase">
+              {contactHours}
+            </p>
           )}
         </div>
       </aside>

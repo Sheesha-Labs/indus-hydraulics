@@ -37,7 +37,7 @@ function miss(status: 404 | 502): Response {
 
 export async function GET(
   _request: Request,
-  { params }: { params: Promise<{ path: string[] }> },
+  { params }: { params: Promise<{ path: string[] }> }
 ): Promise<Response> {
   const { path } = await params
   const upstream = storageUrlForMediaPath(path)

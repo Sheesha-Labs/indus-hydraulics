@@ -91,7 +91,8 @@ const CALLBACK_STAGE: Record<string, InboxStage> = {
 }
 
 export function stageOf(source: InboxSource, status: string): InboxStage {
-  const map = source === 'website' ? RFQ_STAGE : source === 'tender' ? ENQUIRY_STAGE : CALLBACK_STAGE
+  const map =
+    source === 'website' ? RFQ_STAGE : source === 'tender' ? ENQUIRY_STAGE : CALLBACK_STAGE
   return map[status] ?? 'working'
 }
 
@@ -165,7 +166,9 @@ export function sortInbox(rows: InboxRow[], now = Date.now()): InboxRow[] {
     const rb = attentionRank(b, now)
     if (ra !== rb) return ra - rb
     // Open work: oldest waiting first. Finished work: newest first.
-    return ra === 3 ? b.receivedAt.getTime() - a.receivedAt.getTime() : a.receivedAt.getTime() - b.receivedAt.getTime()
+    return ra === 3
+      ? b.receivedAt.getTime() - a.receivedAt.getTime()
+      : a.receivedAt.getTime() - b.receivedAt.getTime()
   })
 }
 

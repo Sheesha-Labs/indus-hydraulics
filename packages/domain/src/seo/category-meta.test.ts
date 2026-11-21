@@ -10,7 +10,7 @@ import {
 describe('stripSiteName', () => {
   it('removes the suffix the layout already appends', () => {
     expect(stripSiteName('Pressure Washer Fittings — Dubai | Indus Hydraulics')).toBe(
-      'Pressure Washer Fittings — Dubai',
+      'Pressure Washer Fittings — Dubai'
     )
   })
 
@@ -27,7 +27,7 @@ describe('fitCategoryTitle', () => {
   it('keeps the head and re-adds what fits', () => {
     // 60 characters stored is 79 rendered, and Google shows about 60.
     expect(
-      fitCategoryTitle('Ram BOPs — Cameron U / Shaffer SL / Coiled Tubing / Snubbing', 'Ram BOPs'),
+      fitCategoryTitle('Ram BOPs — Cameron U / Shaffer SL / Coiled Tubing / Snubbing', 'Ram BOPs')
     ).toBe('Ram BOPs — Cameron U / Shaffer SL')
   })
 
@@ -40,14 +40,14 @@ describe('fitCategoryTitle', () => {
     expect(
       fitCategoryTitle(
         'BOP Ram Blocks — Pipe / VBR / Blind / Shear / Blind-Shear',
-        'BOP Ram Blocks',
-      ),
+        'BOP Ram Blocks'
+      )
     ).toBe('BOP Ram Blocks — Pipe / VBR / Blind')
     expect(
       fitCategoryTitle(
         'Well Service & Intervention Hoses — Frac, Stimulation, Well Test',
-        'Well Service & Intervention Hoses',
-      ),
+        'Well Service & Intervention Hoses'
+      )
     ).toBe('Well Service & Intervention Hoses')
   })
 
@@ -56,15 +56,15 @@ describe('fitCategoryTitle', () => {
     expect(
       fitCategoryTitle(
         'Blowout Preventers (BOP), Ram Blocks, Control Units & Services',
-        'Blowout Preventers (BOP)',
-      ),
+        'Blowout Preventers (BOP)'
+      )
     ).toBe('Blowout Preventers (BOP), Ram Blocks')
   })
 
   it('keeps the comma style of a title that has no dash', () => {
     const fitted = fitCategoryTitle(
       'Blowout Preventers (BOP), Ram Blocks, Control Units & Services',
-      'Blowout Preventers (BOP)',
+      'Blowout Preventers (BOP)'
     )
     expect(fitted).not.toContain('—')
   })
@@ -97,7 +97,7 @@ describe('fitCategoryDescription', () => {
 
   it('falls back to the on-page paragraph when nothing is stored', () => {
     expect(fitCategoryDescription(null, 'Velocity-drop dust collectors.')).toBe(
-      'Velocity-drop dust collectors.',
+      'Velocity-drop dust collectors.'
     )
   })
 
@@ -120,14 +120,14 @@ describe('fitCategoryDescription', () => {
     const source =
       'Cameron / FMC / Stream-Flo / NOV API 6A wellhead components — tubing heads, casing heads, Christmas trees, frac trees, tubing hangers, casing hangers. 2K-20K psi, sour-service trim.'
     expect(fitCategoryDescription(source, null)).toBe(
-      'Cameron / FMC / Stream-Flo / NOV API 6A wellhead components — tubing heads, casing heads, Christmas trees, frac trees, tubing hangers, casing hangers.',
+      'Cameron / FMC / Stream-Flo / NOV API 6A wellhead components — tubing heads, casing heads, Christmas trees, frac trees, tubing hangers, casing hangers.'
     )
   })
 
   it('never ends on a dangling conjunction or separator', () => {
     const fitted = fitCategoryDescription(
       'Top-hole diverter systems for offshore jack-up and platform drilling with shallow-gas protection on ADNOC offshore fields, Saudi Aramco offshore fields, and equivalent GCC operations',
-      null,
+      null
     )!
     expect(fitted).not.toMatch(/\s(and|or|with|for)$/i)
     expect(fitted).not.toMatch(/[,;:—–·-]$/)

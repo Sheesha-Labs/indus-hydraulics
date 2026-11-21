@@ -24,19 +24,19 @@ export default function MoreOnTopic({
 
   return (
     <section aria-labelledby="more-on-topic" className="mt-12 min-[761px]:mt-[72px]">
-      <div className="mb-1 flex flex-col items-start gap-1 border-b border-ih-border pb-4 min-[761px]:mb-7 min-[761px]:flex-row min-[761px]:items-end min-[761px]:justify-between min-[761px]:gap-6">
+      <div className="border-ih-border mb-1 flex flex-col items-start gap-1 border-b pb-4 min-[761px]:mb-7 min-[761px]:flex-row min-[761px]:items-end min-[761px]:justify-between min-[761px]:gap-6">
         <div>
           <p className="eyebrow">Keep reading</p>
           <h2
             id="more-on-topic"
-            className="mt-2 font-serif text-[26px] font-normal leading-[1.08] tracking-[-0.01em] text-ih-ink min-[761px]:text-[34px]"
+            className="text-ih-ink mt-2 font-serif text-[26px] leading-[1.08] font-normal tracking-[-0.01em] min-[761px]:text-[34px]"
           >
             More on {topic.name}
           </h2>
         </div>
         <Link
           href={`/blog/c/${topic.slug}`}
-          className="inline-flex min-h-10 shrink-0 items-center gap-2 text-[13.5px] font-medium text-ih-accent hover:text-ih-accent-hover"
+          className="text-ih-accent hover:text-ih-accent-hover inline-flex min-h-10 shrink-0 items-center gap-2 text-[13.5px] font-medium"
         >
           All articles in this topic
           <ArrowRightIcon />
@@ -46,9 +46,9 @@ export default function MoreOnTopic({
         {articles.map((article) => (
           <article
             key={article.slug}
-            className="group relative grid min-w-0 grid-cols-[minmax(0,1fr)_88px] items-start gap-x-3.5 gap-y-1.5 border-b border-ih-border py-4 min-[761px]:flex min-[761px]:flex-col min-[761px]:items-stretch min-[761px]:gap-2 min-[761px]:border-b-0 min-[761px]:py-0"
+            className="group border-ih-border relative grid min-w-0 grid-cols-[minmax(0,1fr)_88px] items-start gap-x-3.5 gap-y-1.5 border-b py-4 min-[761px]:flex min-[761px]:flex-col min-[761px]:items-stretch min-[761px]:gap-2 min-[761px]:border-b-0 min-[761px]:py-0"
           >
-            <div className="relative col-start-2 row-span-2 row-start-1 aspect-square overflow-hidden rounded-md bg-ih-surface-3 min-[761px]:mb-2 min-[761px]:aspect-video min-[761px]:rounded-lg">
+            <div className="bg-ih-surface-3 relative col-start-2 row-span-2 row-start-1 aspect-square overflow-hidden rounded-md min-[761px]:mb-2 min-[761px]:aspect-video min-[761px]:rounded-lg">
               {article.heroPath ? (
                 <Image
                   src={mediaUrl(article.heroPath)}
@@ -59,21 +59,21 @@ export default function MoreOnTopic({
                 />
               ) : null}
             </div>
-            <h3 className="col-start-1 row-start-1 text-[15px] font-medium leading-[1.32] tracking-[-0.015em] text-ih-ink min-[761px]:text-[17px]">
+            <h3 className="text-ih-ink col-start-1 row-start-1 text-[15px] leading-[1.32] font-medium tracking-[-0.015em] min-[761px]:text-[17px]">
               <Link
                 href={`/blog/${article.slug}`}
-                className="transition-colors duration-150 after:absolute after:inset-0 after:content-[''] group-hover:text-ih-accent motion-reduce:transition-none"
+                className="group-hover:text-ih-accent transition-colors duration-150 after:absolute after:inset-0 after:content-[''] motion-reduce:transition-none"
               >
                 {article.title}
               </Link>
             </h3>
             {article.excerpt && (
-              <p className="hidden text-[13.5px] leading-[1.55] text-ih-ink-2 min-[761px]:line-clamp-3">
+              <p className="text-ih-ink-2 hidden text-[13.5px] leading-[1.55] min-[761px]:line-clamp-3">
                 {article.excerpt}
               </p>
             )}
             {article.readingMinutes ? (
-              <p className="col-start-1 row-start-2 font-mono text-[11px] text-ih-muted">
+              <p className="text-ih-muted col-start-1 row-start-2 font-mono text-[11px]">
                 {article.readingMinutes} min read
               </p>
             ) : null}

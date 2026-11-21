@@ -51,7 +51,7 @@ export default async function SubPageKindIndex({ params }: Props) {
 
   const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
@@ -60,7 +60,7 @@ export default async function SubPageKindIndex({ params }: Props) {
       breadcrumbs={
         <Link
           href="/admin/pages"
-          className="inline-flex items-center gap-1 text-ih-muted transition-colors hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 transition-colors"
         >
           <ChevronLeft size={12} strokeWidth={1.8} aria-hidden="true" />
           Pages &amp; Blocks
@@ -68,9 +68,7 @@ export default async function SubPageKindIndex({ params }: Props) {
       }
       bodyClassName="flex flex-col gap-8"
     >
-      <p className="max-w-[80ch] text-[13px] leading-[1.6] text-ih-ink-2">
-        {kindDef.description}
-      </p>
+      <p className="text-ih-ink-2 max-w-[80ch] text-[13px] leading-[1.6]">{kindDef.description}</p>
 
       <SubPageTable
         heading="Live"
@@ -126,21 +124,20 @@ function SubPageTable({
     <section className="flex flex-col gap-3">
       <div>
         <h2 className="text-[15px] font-medium tracking-[-0.01em]">
-          {heading}{' '}
-          <span className="tabular-nums text-[12px] text-ih-muted">· {rows.length}</span>
+          {heading} <span className="text-ih-muted text-[12px] tabular-nums">· {rows.length}</span>
         </h2>
         {note ? (
-          <p className="mt-1 max-w-[80ch] text-[12.5px] leading-[1.55] text-ih-muted">{note}</p>
+          <p className="text-ih-muted mt-1 max-w-[80ch] text-[12.5px] leading-[1.55]">{note}</p>
         ) : null}
       </div>
 
       {rows.length === 0 ? (
-        <p className="rounded-lg border border-dashed border-ih-border bg-ih-surface-2 px-4 py-6 text-center text-[13px] text-ih-muted">
+        <p className="border-ih-border bg-ih-surface-2 text-ih-muted rounded-lg border border-dashed px-4 py-6 text-center text-[13px]">
           {emptyMessage}
         </p>
       ) : (
-        <div className="overflow-hidden rounded-lg border border-ih-border">
-          <div className="grid grid-cols-[1fr_70px_120px_70px] border-b border-ih-border bg-ih-bg px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
+          <div className="border-ih-border bg-ih-bg text-ih-muted grid grid-cols-[1fr_70px_120px_70px] border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             <div>{kind === 'market' ? 'Market' : 'Brand'}</div>
             <div>Code</div>
             <div className="text-right">Edited</div>
@@ -149,7 +146,7 @@ function SubPageTable({
           {rows.map((row, i) => (
             <div
               key={row.slug}
-              className={`grid grid-cols-[1fr_70px_120px_70px] items-center bg-ih-surface px-4 py-3 ${i > 0 ? 'border-t border-ih-border' : ''}`}
+              className={`bg-ih-surface grid grid-cols-[1fr_70px_120px_70px] items-center px-4 py-3 ${i > 0 ? 'border-ih-border border-t' : ''}`}
             >
               {/* The NAME is the link to the editor, the way every other admin
                   list works (products, blog). A row whose only target was a
@@ -158,16 +155,16 @@ function SubPageTable({
               <div className="min-w-0">
                 <Link
                   href={`/admin/pages/sub/${kind}/${row.slug}`}
-                  className="block truncate text-[13px] font-medium text-ih-ink hover:text-ih-accent"
+                  className="text-ih-ink hover:text-ih-accent block truncate text-[13px] font-medium"
                 >
                   {row.name}
                 </Link>
-                <div className="truncate tabular-nums text-[11px] text-ih-muted">
+                <div className="text-ih-muted truncate text-[11px] tabular-nums">
                   {pathPrefix}/{row.slug}
                 </div>
               </div>
-              <div className="tabular-nums text-[11.5px] text-ih-muted">{row.code}</div>
-              <div className="text-right tabular-nums text-[11.5px] text-ih-muted">
+              <div className="text-ih-muted text-[11.5px] tabular-nums">{row.code}</div>
+              <div className="text-ih-muted text-right text-[11.5px] tabular-nums">
                 {row.updatedAt
                   ? row.updatedAt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
                   : '—'}
@@ -185,7 +182,7 @@ function SubPageTable({
                     href={`${storefront}${pathPrefix}/${row.slug}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="tabular-nums text-[11px] text-ih-accent hover:underline"
+                    className="text-ih-accent text-[11px] tabular-nums hover:underline"
                   >
                     View ↗
                   </a>
@@ -196,12 +193,12 @@ function SubPageTable({
                      own. */
                   <Link
                     href={`/admin/markets/${row.slug}`}
-                    className="tabular-nums text-[11px] text-ih-accent hover:underline"
+                    className="text-ih-accent text-[11px] tabular-nums hover:underline"
                   >
                     Draft
                   </Link>
                 ) : (
-                  <span className="tabular-nums text-[11px] text-ih-muted-2">—</span>
+                  <span className="text-ih-muted-2 text-[11px] tabular-nums">—</span>
                 )}
               </div>
             </div>

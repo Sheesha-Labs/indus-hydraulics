@@ -36,11 +36,19 @@ const POSTS = [
 ]
 
 const blocks = [
-  { type: 'direct_answer', question: 'How do you identify a fitting?', answer: 'By thread, seat and gender.' },
+  {
+    type: 'direct_answer',
+    question: 'How do you identify a fitting?',
+    answer: 'By thread, seat and gender.',
+  },
   { type: 'paragraph', html: 'Guide body.' },
   { type: 'category_link', slug: 'adapters', label: 'Adapters by family' },
   { type: 'direct_answer', question: 'A second question?', answer: 'Rendered inline.' },
-  { type: 'cta_block', heading: 'Send a photograph of the end face.', body: 'We will identify it.' },
+  {
+    type: 'cta_block',
+    heading: 'Send a photograph of the end face.',
+    body: 'We will identify it.',
+  },
 ] as unknown as BlogBlock[]
 
 function body(over: Partial<ResolvedBlogArticle> = {}): ResolvedBlogArticle {
@@ -49,7 +57,9 @@ function body(over: Partial<ResolvedBlogArticle> = {}): ResolvedBlogArticle {
     toc: [],
     faqs: [],
     productsBySku: new Map(),
-    categoriesBySlug: new Map([['adapters', { slug: 'adapters', name: 'Adapters', shortDescription: null }]]),
+    categoriesBySlug: new Map([
+      ['adapters', { slug: 'adapters', name: 'Adapters', shortDescription: null }],
+    ]),
     articlesBySlug: new Map(),
     livePageLinks: new Set(),
     figuresById: new Map(),
@@ -61,7 +71,11 @@ function body(over: Partial<ResolvedBlogArticle> = {}): ResolvedBlogArticle {
 function render(props: Partial<Parameters<typeof BlogTopicHub>[0]> = {}) {
   return renderToStaticMarkup(
     <BlogTopicHub
-      category={{ name: 'Thread & fitting identification', slug: 'fitting-identification', lede: 'Six families.' }}
+      category={{
+        name: 'Thread & fitting identification',
+        slug: 'fitting-identification',
+        lede: 'Six families.',
+      }}
       posts={POSTS}
       body={body()}
       topics={[
@@ -70,7 +84,7 @@ function render(props: Partial<Parameters<typeof BlogTopicHub>[0]> = {}) {
       ]}
       contact={{ whatsappUrl: null, emailUrl: 'mailto:sales@example.com', phone: null }}
       {...props}
-    />,
+    />
   )
 }
 
@@ -140,6 +154,8 @@ describe('BlogTopicHub', () => {
   })
 
   it('marks the current topic in the topics bar', () => {
-    expect(render()).toMatch(/aria-current="page"[^>]*href="\/blog\/c\/fitting-identification"|href="\/blog\/c\/fitting-identification"[^>]*aria-current="page"/)
+    expect(render()).toMatch(
+      /aria-current="page"[^>]*href="\/blog\/c\/fitting-identification"|href="\/blog\/c\/fitting-identification"[^>]*aria-current="page"/
+    )
   })
 })

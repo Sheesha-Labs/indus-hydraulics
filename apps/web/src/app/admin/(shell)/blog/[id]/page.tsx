@@ -25,18 +25,26 @@ export default async function BlogPostEditorPage({ params }: Props) {
     : await db.blogPost.findUnique({
         where: { id },
         include: {
-        hero: true,
-        author: { select: { name: true } },
-        blogAuthor: { select: { name: true } },
-        category: { select: { name: true } },
-      },
+          hero: true,
+          author: { select: { name: true } },
+          blogAuthor: { select: { name: true } },
+          category: { select: { name: true } },
+        },
       })
   if (!isNew && !post) notFound()
 
   // Recent media for the OG picker + the currently-attached OG image. Skip on
   // the "new" path since there's no SEO drawer there yet.
   const [recentMedia, ogMedia] = isNew
-    ? [[] as Array<{ id: string; storagePath: string; alt: string | null; originalFilename: string }>, null as { storagePath: string } | null]
+    ? [
+        [] as Array<{
+          id: string
+          storagePath: string
+          alt: string | null
+          originalFilename: string
+        }>,
+        null as { storagePath: string } | null,
+      ]
     : await Promise.all([
         db.media.findMany({
           where: { kind: 'image' },
@@ -102,7 +110,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
 
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
@@ -160,8 +168,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
               robotsFollow: post.robotsFollow,
               ogImageMediaId: post.ogImageMediaId,
               ogImageStoragePath: ogMedia?.storagePath ?? null,
-              sitemapPriority:
-                post.sitemapPriority != null ? Number(post.sitemapPriority) : null,
+              sitemapPriority: post.sitemapPriority != null ? Number(post.sitemapPriority) : null,
               sitemapChangeFreq: post.sitemapChangeFreq,
               excludeFromSitemap: post.excludeFromSitemap,
               jsonLdOverride: post.jsonLdOverride

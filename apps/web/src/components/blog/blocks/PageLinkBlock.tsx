@@ -27,5 +27,12 @@ export default function PageLinkBlockView({
 }) {
   if (!livePageLinks.has(`${block.kind}:${block.slug}`)) return null
 
-  return <LinkCard href={pageLinkHref(block)} eyebrow={KIND_LABEL[block.kind]} label={block.label} blurb={block.blurb} />
+  return (
+    <LinkCard
+      href={pageLinkHref(block)}
+      eyebrow={KIND_LABEL[block.kind]}
+      label={block.label}
+      blurb={block.blurb}
+    />
+  )
 }

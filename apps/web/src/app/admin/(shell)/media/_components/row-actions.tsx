@@ -71,8 +71,8 @@ function IconButton({
       disabled={disabled || pending}
       aria-label={label}
       className={cn(
-        'inline-flex h-7 w-7 items-center justify-center rounded-sm text-ih-muted transition-all',
-        'outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
+        'text-ih-muted inline-flex h-7 w-7 items-center justify-center rounded-sm transition-all',
+        'focus-visible:ring-ih-accent-soft outline-none focus-visible:ring-[3px]',
         !disabled && !pending && (danger ? DANGER_HOVER : NEUTRAL_HOVER),
         (disabled || pending) && 'opacity-40'
       )}
@@ -185,15 +185,20 @@ export function MediaRowActions({
               <DialogTitle>Delete this file permanently?</DialogTitle>
               <DialogDescription>This cannot be undone.</DialogDescription>
             </DialogHeader>
-            <DialogBody className="flex flex-col gap-2 text-[13px] text-ih-ink-2">
-              <p className="tabular-nums text-[12px] break-all">{detail.originalFilename}</p>
+            <DialogBody className="text-ih-ink-2 flex flex-col gap-2 text-[13px]">
+              <p className="text-[12px] break-all tabular-nums">{detail.originalFilename}</p>
               <p>
                 The file is removed from storage and its record is deleted. Nothing currently
                 references it — {summariseUsage(detail.usages).toLowerCase()}.
               </p>
             </DialogBody>
             <DialogFooter>
-              <Button kind="ghost" size="sm" onClick={() => setConfirming(false)} disabled={pending}>
+              <Button
+                kind="ghost"
+                size="sm"
+                onClick={() => setConfirming(false)}
+                disabled={pending}
+              >
                 Cancel
               </Button>
               <Button
@@ -238,8 +243,8 @@ export function MediaBulkBar({
   const blocked = selectedCount - eligibleCount
 
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-md border border-ih-accent bg-ih-accent-soft px-3 py-2 text-[12.5px]">
-      <span className="font-medium text-ih-accent">
+    <div className="border-ih-accent bg-ih-accent-soft flex flex-wrap items-center gap-3 rounded-md border px-3 py-2 text-[12.5px]">
+      <span className="text-ih-accent font-medium">
         <span className="tabular-nums">{selectedCount}</span> selected
       </span>
       {blocked > 0 ? (

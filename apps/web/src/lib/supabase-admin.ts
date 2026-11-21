@@ -33,16 +33,18 @@ export type StorageBucket = (typeof STORAGE_BUCKETS)[keyof typeof STORAGE_BUCKET
 export async function uploadToStorage(
   bucket: StorageBucket,
   file: File,
-  pathPrefix: string,
+  pathPrefix: string
 ): Promise<{ storagePath: string; bytes: number; mimeType: string }> {
   const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_').slice(-180)
   const objectPath = `${pathPrefix}/${Date.now()}-${safeName}`
 
-  const { error } = await supabaseAdmin().storage.from(bucket).upload(objectPath, file, {
-    cacheControl: '3600',
-    upsert: false,
-    contentType: file.type || 'application/octet-stream',
-  })
+  const { error } = await supabaseAdmin()
+    .storage.from(bucket)
+    .upload(objectPath, file, {
+      cacheControl: '3600',
+      upsert: false,
+      contentType: file.type || 'application/octet-stream',
+    })
   if (error) throw new Error(`Storage upload failed: ${error.message}`)
 
   const storagePath =
@@ -67,15 +69,17 @@ export async function uploadToStorageWithName(
   bucket: StorageBucket,
   file: File,
   pathPrefix: string,
-  objectName: string,
+  objectName: string
 ): Promise<{ storagePath: string; bytes: number; mimeType: string }> {
   const objectPath = `${pathPrefix}/${objectName}`
 
-  const { error } = await supabaseAdmin().storage.from(bucket).upload(objectPath, file, {
-    cacheControl: '3600',
-    upsert: false,
-    contentType: file.type || 'application/octet-stream',
-  })
+  const { error } = await supabaseAdmin()
+    .storage.from(bucket)
+    .upload(objectPath, file, {
+      cacheControl: '3600',
+      upsert: false,
+      contentType: file.type || 'application/octet-stream',
+    })
   if (error) throw new Error(`Storage upload failed: ${error.message}`)
 
   const storagePath =

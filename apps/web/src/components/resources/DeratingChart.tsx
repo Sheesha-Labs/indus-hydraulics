@@ -34,25 +34,47 @@ const fmt = (n: number) => n.toLocaleString('en-GB')
 
 function Panel({ id }: { id: RatingConnectionId }) {
   const conn = ratingConnection(id)
-  const values = SIZES.map((dash) => ({ dash, psi: RATING_ROWS.find((r) => r.dash === dash)?.psi[id] }))
-  const rated = values.filter((v): v is { dash: (typeof SIZES)[number]; psi: number } => v.psi !== undefined)
+  const values = SIZES.map((dash) => ({
+    dash,
+    psi: RATING_ROWS.find((r) => r.dash === dash)?.psi[id],
+  }))
+  const rated = values.filter(
+    (v): v is { dash: (typeof SIZES)[number]; psi: number } => v.psi !== undefined
+  )
   const first = rated[0]
   const last = rated[rated.length - 1]
   const summary = `${conn.name}: ${rated.map((v) => `-${v.dash} ${fmt(v.psi)} psi`).join(', ')}.`
 
   return (
-    <figure className="rounded-lg border border-ih-border bg-ih-surface px-4 pb-3 pt-4">
+    <figure className="border-ih-border bg-ih-surface rounded-lg border px-4 pt-4 pb-3">
       <figcaption className="flex items-baseline justify-between gap-3">
-        <span className="text-[14px] font-medium tracking-[-0.01em] text-ih-ink">{conn.short}</span>
-        <span className="mono text-[10px] text-ih-muted">
+        <span className="text-ih-ink text-[14px] font-medium tracking-[-0.01em]">{conn.short}</span>
+        <span className="mono text-ih-muted text-[10px]">
           {first && last ? `${fmt(first.psi)} → ${fmt(last.psi)} psi` : null}
         </span>
       </figcaption>
-      <svg viewBox={`0 0 ${W} ${H}`} className="mt-1 h-auto w-full overflow-visible" role="img" aria-label={summary}>
+      <svg
+        viewBox={`0 0 ${W} ${H}`}
+        className="mt-1 h-auto w-full overflow-visible"
+        role="img"
+        aria-label={summary}
+      >
         {ticks(MAX - 1000, STEP).map((t) => (
           <g key={t}>
-            <line x1={PAD.left} x2={W - PAD.right} y1={y(t)} y2={y(t)} className="stroke-ih-border" strokeWidth="1" />
-            <text x={PAD.left - 6} y={y(t) + 3} textAnchor="end" className="fill-ih-muted font-mono text-[9px]">
+            <line
+              x1={PAD.left}
+              x2={W - PAD.right}
+              y1={y(t)}
+              y2={y(t)}
+              className="stroke-ih-border"
+              strokeWidth="1"
+            />
+            <text
+              x={PAD.left - 6}
+              y={y(t) + 3}
+              textAnchor="end"
+              className="fill-ih-muted font-mono text-[9px]"
+            >
               {t === 0 ? '0' : `${t / 1000}k`}
             </text>
           </g>
@@ -66,36 +88,60 @@ function Panel({ id }: { id: RatingConnectionId }) {
                 <>
                   <title>{`-${v.dash}: ${fmt(v.psi)} psi`}</title>
                   {/* Hit target wider and taller than the mark. */}
-                  <rect x={PAD.left + i * slot} y={PAD.top} width={slot} height={PLOT_H} className="fill-transparent" />
+                  <rect
+                    x={PAD.left + i * slot}
+                    y={PAD.top}
+                    width={slot}
+                    height={PLOT_H}
+                    className="fill-transparent"
+                  />
                   <path
                     d={columnPath(x, y(0), barWidth, y(0) - y(v.psi))}
-                    className="fill-ih-accent transition-[fill] duration-150 group-hover:fill-ih-accent-hover"
+                    className="fill-ih-accent group-hover:fill-ih-accent-hover transition-[fill] duration-150"
                   />
                   <text
                     x={cx}
                     y={y(v.psi) - 5}
                     textAnchor="middle"
-                    className="pointer-events-none fill-ih-ink font-mono text-[9.5px] opacity-0 group-hover:opacity-100"
+                    className="fill-ih-ink pointer-events-none font-mono text-[9.5px] opacity-0 group-hover:opacity-100"
                   >
                     {fmt(v.psi)}
                   </text>
                 </>
               ) : (
-                <line x1={cx - 3} x2={cx + 3} y1={y(0) - 2} y2={y(0) - 2} className="stroke-ih-muted-2" strokeWidth="1" />
+                <line
+                  x1={cx - 3}
+                  x2={cx + 3}
+                  y1={y(0) - 2}
+                  y2={y(0) - 2}
+                  className="stroke-ih-muted-2"
+                  strokeWidth="1"
+                />
               )}
-              <text x={cx} y={H - 10} textAnchor="middle" className="fill-ih-muted font-mono text-[8.5px]">
+              <text
+                x={cx}
+                y={H - 10}
+                textAnchor="middle"
+                className="fill-ih-muted font-mono text-[8.5px]"
+              >
                 {v.dash}
               </text>
             </g>
           )
         })}
       </svg>
-      <p className="mono -mt-0.5 text-right text-[9px] uppercase tracking-[0.1em] text-ih-muted-2">Dash size</p>
+      <p className="mono text-ih-muted-2 -mt-0.5 text-right text-[9px] tracking-[0.1em] uppercase">
+        Dash size
+      </p>
     </figure>
   )
 }
 
-export default function DeratingChart({ connections }: { connections: readonly RatingConnectionId[] }) {
+export default function DeratingChart({
+  connections,
+}: {
+  connections: readonly RatingConnectionId[]
+}) {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {connections.map((id) => (

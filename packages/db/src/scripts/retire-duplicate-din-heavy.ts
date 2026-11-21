@@ -63,12 +63,12 @@ async function main() {
     if (keepVariants === 0) {
       throw new Error(
         `${keepSku} has no size table yet — run the legacy-fitting-size-tables payload first, ` +
-          `or retiring ${dupeSku} loses its ${dupe._count.variants} sizes`,
+          `or retiring ${dupeSku} loses its ${dupe._count.variants} sizes`
       )
     }
 
     console.log(
-      `${dryRun ? '[dry-run] ' : ''}delete ${dupeSku} (/p/${dupe.slug}) → 301 to /p/${keep.slug}`,
+      `${dryRun ? '[dry-run] ' : ''}delete ${dupeSku} (/p/${dupe.slug}) → 301 to /p/${keep.slug}`
     )
     if (!dryRun) {
       await db.$transaction(async (tx) => {

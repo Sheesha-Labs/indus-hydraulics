@@ -55,5 +55,7 @@ export async function GET(request: Request) {
   // Relative redirect, so this cannot be turned into an open redirect by a
   // crafted `slug`. encodeURIComponent keeps a slug with odd characters from
   // escaping the path segment.
-  return NextResponse.redirect(new URL(`/p/${encodeURIComponent(slug)}`, request.url), { status: 307 })
+  return NextResponse.redirect(new URL(`/p/${encodeURIComponent(slug)}`, request.url), {
+    status: 307,
+  })
 }

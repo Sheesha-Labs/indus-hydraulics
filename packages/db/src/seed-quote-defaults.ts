@@ -70,7 +70,10 @@ async function main() {
   }
 
   await db.storeSettings.update({ where: { id: existing.id }, data: patch })
-  console.log(`✓ backfilled ${Object.keys(patch).length} StoreSettings field(s):`, Object.keys(patch).join(', '))
+  console.log(
+    `✓ backfilled ${Object.keys(patch).length} StoreSettings field(s):`,
+    Object.keys(patch).join(', ')
+  )
 }
 
 main()

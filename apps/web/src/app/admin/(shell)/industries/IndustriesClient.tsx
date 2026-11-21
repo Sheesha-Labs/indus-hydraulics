@@ -42,7 +42,7 @@ export default function IndustriesClient({ industries }: Props) {
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-8 items-center rounded-lg px-2.5 text-[14px] font-medium transition-colors"
         >
           {showCreate ? '× Cancel' : '+ New industry'}
         </button>
@@ -63,7 +63,7 @@ export default function IndustriesClient({ industries }: Props) {
         <TableBody>
           {industries.length === 0 ? (
             <TableRow>
-              <TableCell colSpan={5} className="py-14 text-center text-ih-muted">
+              <TableCell colSpan={5} className="text-ih-muted py-14 text-center">
                 No industries yet — create the first one above.
               </TableCell>
             </TableRow>
@@ -78,14 +78,16 @@ export default function IndustriesClient({ industries }: Props) {
               ) : (
                 <TableRow key={ind.id}>
                   <TableCell>
-                    <div className="font-medium text-ih-ink">{ind.name}</div>
+                    <div className="text-ih-ink font-medium">{ind.name}</div>
                     {ind.description && (
-                      <div className="mt-0.5 line-clamp-1 text-[12px] text-ih-muted">
+                      <div className="text-ih-muted mt-0.5 line-clamp-1 text-[12px]">
                         {ind.description}
                       </div>
                     )}
                   </TableCell>
-                  <TableCell className="tabular-nums text-[12px] text-ih-muted">{ind.slug}</TableCell>
+                  <TableCell className="text-ih-muted text-[12px] tabular-nums">
+                    {ind.slug}
+                  </TableCell>
                   <TableCell numeric>{ind.accountCount}</TableCell>
                   <TableCell className="text-center">
                     <StatusPill tone={ind.isPublished ? 'success' : 'neutral'}>
@@ -97,13 +99,13 @@ export default function IndustriesClient({ industries }: Props) {
                       <button
                         type="button"
                         onClick={() => setEditingId(ind.id)}
-                        className="text-[12px] text-ih-muted hover:text-ih-ink"
+                        className="text-ih-muted hover:text-ih-ink text-[12px]"
                       >
                         Edit
                       </button>
                       <Link
                         href={`/admin/industries/${ind.id}/edit`}
-                        className="text-[12px] text-ih-muted hover:text-ih-ink"
+                        className="text-ih-muted hover:text-ih-ink text-[12px]"
                         title="Open dedicated SEO editor"
                       >
                         SEO
@@ -121,13 +123,7 @@ export default function IndustriesClient({ industries }: Props) {
   )
 }
 
-function IndustryForm({
-  existing,
-  onDone,
-}: {
-  existing?: Industry
-  onDone: () => void
-}) {
+function IndustryForm({ existing, onDone }: { existing?: Industry; onDone: () => void }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
 
@@ -146,18 +142,13 @@ function IndustryForm({
   return (
     <form
       action={onSubmit}
-      className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3"
+      className="border-ih-border bg-ih-surface grid gap-3 rounded-lg border p-5"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
-          <Input
-            required
-            name="name"
-            defaultValue={existing?.name ?? ''}
-            placeholder="Oil & Gas"
-          />
+          <Input required name="name" defaultValue={existing?.name ?? ''} placeholder="Oil & Gas" />
         </Field>
 
         <Field label="Slug" hint="Auto-generated from name">
@@ -165,40 +156,26 @@ function IndustryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="oil-gas"
-          className="tabular-nums"
+            className="tabular-nums"
           />
         </Field>
       </div>
 
       <Field label="Description">
-        <Textarea
-          name="description"
-          defaultValue={existing?.description ?? ''}
-          rows={2}
-        />
+        <Textarea name="description" defaultValue={existing?.description ?? ''} rows={2} />
       </Field>
 
       <div className="grid grid-cols-2 gap-3">
         <Field label="SEO title">
-          <Input
-            name="seoTitle"
-            defaultValue={existing?.seoTitle ?? ''}
-          />
+          <Input name="seoTitle" defaultValue={existing?.seoTitle ?? ''} />
         </Field>
         <Field label="SEO description">
-          <Input
-            name="seoDescription"
-            defaultValue={existing?.seoDescription ?? ''}
-          />
+          <Input name="seoDescription" defaultValue={existing?.seoDescription ?? ''} />
         </Field>
       </div>
 
-      <label className="flex items-center gap-2 h-9 text-[12px] text-ih-ink-2">
-        <Input
-          type="checkbox"
-          name="isPublished"
-          defaultChecked={existing?.isPublished ?? false}
-        />
+      <label className="text-ih-ink-2 flex h-9 items-center gap-2 text-[12px]">
+        <Input type="checkbox" name="isPublished" defaultChecked={existing?.isPublished ?? false} />
         Published (visible on storefront)
       </label>
 
@@ -206,19 +183,19 @@ function IndustryForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+          className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
         >
           {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
         </button>
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-3 text-[12px] text-ih-muted hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink h-9 px-3 text-[12px]"
         >
           Cancel
         </button>
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}
@@ -227,13 +204,7 @@ function IndustryForm({
   )
 }
 
-function DeleteIndustryButton({
-  id,
-  hasAccounts,
-}: {
-  id: string
-  hasAccounts: boolean
-}) {
+function DeleteIndustryButton({ id, hasAccounts }: { id: string; hasAccounts: boolean }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
 
@@ -254,7 +225,7 @@ function DeleteIndustryButton({
           })
         }}
       />
-      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
+      {error && <span className="text-ih-danger-ink text-[11px]">{error}</span>}
     </>
   )
 }

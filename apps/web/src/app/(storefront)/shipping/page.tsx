@@ -53,13 +53,19 @@ const FAQS = [
 const SECTIONS = [
   { id: 'where-we-ship-from', title: '1. Where we ship from' },
   { id: 'lead-times', title: '2. Lead times' },
-  { id: 'destinations-and-typical-transit-times', title: '3. Destinations and typical transit times' },
+  {
+    id: 'destinations-and-typical-transit-times',
+    title: '3. Destinations and typical transit times',
+  },
   { id: 'incoterms-2020', title: '4. Incoterms 2020' },
   { id: 'freight-insurance-and-packaging', title: '5. Freight, insurance, and packaging' },
   { id: 'export-documentation', title: '6. Export documentation' },
   { id: 'hazardous-and-oversized-items', title: '7. Hazardous and oversized items' },
   { id: 'tracking-and-delivery-confirmation', title: '8. Tracking and delivery confirmation' },
-  { id: 'damaged-short-or-wrong-item-shipments', title: '9. Damaged, short, or wrong-item shipments' },
+  {
+    id: 'damaged-short-or-wrong-item-shipments',
+    title: '9. Damaged, short, or wrong-item shipments',
+  },
   { id: 'contact', title: '10. Contact' },
 ] as const
 
@@ -74,8 +80,8 @@ export default async function ShippingPage({ params }: Props) {
 
   if (cms?.isPublished) {
     return (
-      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
+      <article className="mx-auto max-w-[820px] px-8 py-16 pb-24">
+        <h1 className="mb-2 text-[36px] font-semibold tracking-tight">{cms.title}</h1>
         <div
           className="ih-rich-text text-[15px] leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: cms.body }}
@@ -97,9 +103,13 @@ export default async function ShippingPage({ params }: Props) {
   })
 
   return (
-    <PolicyLayout slug="shipping" title="Shipping Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
+    <PolicyLayout
+      slug="shipping"
+      title="Shipping Policy"
+      effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`}
+      sections={SECTIONS}
+    >
       <JsonLd data={[faqLd, breadcrumbLd]} />
-
 
       <PolicySectionBody id="where-we-ship-from" title="1. Where we ship from">
         <p>
@@ -113,11 +123,11 @@ export default async function ShippingPage({ params }: Props) {
         <p>
           Lead times depend on whether the item is stock, regional, special-order, or drop-ship:
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
-            <strong>In stock (Dubai warehouse):</strong> typically dispatched within 24 working hours
-            of order confirmation. UAE delivery in 1–3 working days; same-day courier available in
-            Dubai and Sharjah on request.
+            <strong>In stock (Dubai warehouse):</strong> typically dispatched within 24 working
+            hours of order confirmation. UAE delivery in 1–3 working days; same-day courier
+            available in Dubai and Sharjah on request.
           </li>
           <li>
             <strong>Regional stock (authorized supplier in MENA):</strong> 3–7 working days to
@@ -129,9 +139,9 @@ export default async function ShippingPage({ params }: Props) {
             commonly run 2–6 weeks.
           </li>
           <li>
-            <strong>Drop-ship from manufacturer:</strong> follows the manufacturer’s published
-            lead time plus international freight. We will flag this option on the Estimate when it
-            beats our warehouse lead time.
+            <strong>Drop-ship from manufacturer:</strong> follows the manufacturer’s published lead
+            time plus international freight. We will flag this option on the Estimate when it beats
+            our warehouse lead time.
           </li>
         </ul>
         <p>
@@ -141,8 +151,11 @@ export default async function ShippingPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="destinations-and-typical-transit-times" title="3. Destinations and typical transit times">
-        <ul className="list-disc pl-6 space-y-1">
+      <PolicySectionBody
+        id="destinations-and-typical-transit-times"
+        title="3. Destinations and typical transit times"
+      >
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             <strong>UAE:</strong> 1–3 working days from dispatch.
           </li>
@@ -156,18 +169,18 @@ export default async function ShippingPage({ params }: Props) {
             depending on the lane.
           </li>
           <li>
-            <strong>Africa:</strong> variable. East African ports (Mombasa, Dar es Salaam,
-            Djibouti) are typically 10–20 working days by sea, faster by air. West Africa, North
-            Africa, and landlocked destinations are quoted on a case-by-case basis.
+            <strong>Africa:</strong> variable. East African ports (Mombasa, Dar es Salaam, Djibouti)
+            are typically 10–20 working days by sea, faster by air. West Africa, North Africa, and
+            landlocked destinations are quoted on a case-by-case basis.
           </li>
           <li>
-            <strong>The Americas and the Caribbean:</strong> quoted on a case-by-case basis.
-            Routing and transit are stated on the Estimate for the specific consignment rather
-            than against a standing schedule.
+            <strong>The Americas and the Caribbean:</strong> quoted on a case-by-case basis. Routing
+            and transit are stated on the Estimate for the specific consignment rather than against
+            a standing schedule.
           </li>
           <li>
-            <strong>Asia and the CIS:</strong> quoted on a case-by-case basis, on the same terms
-            — the routing that applies to a consignment is named on its Estimate.
+            <strong>Asia and the CIS:</strong> quoted on a case-by-case basis, on the same terms —
+            the routing that applies to a consignment is named on its Estimate.
           </li>
         </ul>
         <p>
@@ -182,7 +195,7 @@ export default async function ShippingPage({ params }: Props) {
           We quote on Incoterms 2020. The applicable Incoterm is stated explicitly on every
           Estimate; common defaults are:
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             <strong>UAE deliveries:</strong> DAP (Delivered At Place) to the buyer’s site.
           </li>
@@ -201,7 +214,10 @@ export default async function ShippingPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="freight-insurance-and-packaging" title="5. Freight, insurance, and packaging">
+      <PolicySectionBody
+        id="freight-insurance-and-packaging"
+        title="5. Freight, insurance, and packaging"
+      >
         <p>
           Standard packaging is industrial-grade for export. For sea freight and long-haul road
           freight we use marine-grade cartons, shrink-wrapped pallets, and moisture barriers for
@@ -217,7 +233,7 @@ export default async function ShippingPage({ params }: Props) {
 
       <PolicySectionBody id="export-documentation" title="6. Export documentation">
         <p>Every export shipment includes:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>Commercial invoice and packing list</li>
           <li>Certificate of Origin (Dubai Chamber attested where applicable)</li>
           <li>MSDS / Safety Data Sheets for fluids, lubricants, and sealants</li>
@@ -230,12 +246,15 @@ export default async function ShippingPage({ params }: Props) {
         </ul>
       </PolicySectionBody>
 
-      <PolicySectionBody id="hazardous-and-oversized-items" title="7. Hazardous and oversized items">
+      <PolicySectionBody
+        id="hazardous-and-oversized-items"
+        title="7. Hazardous and oversized items"
+      >
         <p>
           Hydraulic oils, greases, sealants, cleaning chemicals, and certain accumulators are
           classified as dangerous goods. They ship under IATA, IMDG, or ADR rules depending on the
-          mode of transport. Some lanes (notably air) restrict or prohibit certain classes — we
-          will flag this on the Estimate and propose an alternative routing where possible.
+          mode of transport. Some lanes (notably air) restrict or prohibit certain classes — we will
+          flag this on the Estimate and propose an alternative routing where possible.
         </p>
         <p>
           Oversized items such as large hydraulic cylinders, power packs, and skid-mounted systems
@@ -244,7 +263,10 @@ export default async function ShippingPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="tracking-and-delivery-confirmation" title="8. Tracking and delivery confirmation">
+      <PolicySectionBody
+        id="tracking-and-delivery-confirmation"
+        title="8. Tracking and delivery confirmation"
+      >
         <p>
           Once dispatched, we share the carrier reference and tracking link by email and WhatsApp.
           For freight-forwarded shipments we coordinate handover and provide the airway bill (AWB)
@@ -253,7 +275,10 @@ export default async function ShippingPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="damaged-short-or-wrong-item-shipments" title="9. Damaged, short, or wrong-item shipments">
+      <PolicySectionBody
+        id="damaged-short-or-wrong-item-shipments"
+        title="9. Damaged, short, or wrong-item shipments"
+      >
         <p>
           You must inspect goods on delivery and notify us in writing of any visible damage,
           shortage, or non-conformity within seven (7) days. Take photos of damaged packaging and
@@ -280,7 +305,7 @@ export default async function ShippingPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
+      <footer className="border-ih-border text-ih-muted-2 mt-12 border-t pt-6 text-[12px] leading-[1.6]">
         This policy is the customer-facing companion to section 4 (Delivery and risk) of our{' '}
         <Link className="underline" href="/terms">
           Terms of Service
@@ -290,4 +315,3 @@ export default async function ShippingPage({ params }: Props) {
     </PolicyLayout>
   )
 }
-

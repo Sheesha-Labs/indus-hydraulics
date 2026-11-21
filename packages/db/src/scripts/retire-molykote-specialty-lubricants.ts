@@ -59,7 +59,7 @@ async function main() {
 
   console.log(
     `[molykote] ${from.name} -> ${to.name}: ${products.length} product(s), ` +
-      `${navItems.length} menu entr(y|ies), published=${from.isPublished}`,
+      `${navItems.length} menu entr(y|ies), published=${from.isPublished}`
   )
   for (const p of products) console.log(`   move ${p.sku} — ${p.title}`)
   for (const n of navItems) console.log(`   remove menu entry "${n.label}"`)
@@ -88,7 +88,7 @@ async function main() {
   const left = await db.product.count({ where: { categoryId: from.id } })
   console.log(
     `\n[molykote] done — ${products.length} product(s) moved to ${to.name}, ` +
-      `${navItems.length} menu entr(y|ies) removed, ${FROM} unpublished (${left} products left on it)`,
+      `${navItems.length} menu entr(y|ies) removed, ${FROM} unpublished (${left} products left on it)`
   )
 }
 

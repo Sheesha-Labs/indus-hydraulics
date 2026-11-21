@@ -46,29 +46,29 @@ export default function ToolsIndexPage() {
         })}
       />
       <header className="max-w-[720px] py-12">
-        <p className="mono mb-3 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+        <p className="mono text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase">
           Reference
         </p>
-        <h1 className="mb-4 font-serif text-[clamp(34px,5vw,52px)] font-normal leading-[1.08] tracking-[-0.02em]">
+        <h1 className="mb-4 font-serif text-[clamp(34px,5vw,52px)] leading-[1.08] font-normal tracking-[-0.02em]">
           Hydraulic tools & reference
         </h1>
-        <p className="text-[17px] leading-[1.55] text-ih-muted">{DESCRIPTION}</p>
+        <p className="text-ih-muted text-[17px] leading-[1.55]">{DESCRIPTION}</p>
       </header>
       <div className="grid grid-cols-1 gap-4 pb-8 sm:grid-cols-2 lg:grid-cols-3">
         {TOOLS.map((tool) => (
           <Link
             key={tool.href}
             href={tool.href}
-            className="group flex min-w-0 flex-col rounded-lg border border-ih-border bg-ih-surface p-6 transition-colors hover:border-ih-accent"
+            className="group border-ih-border bg-ih-surface hover:border-ih-accent flex min-w-0 flex-col rounded-lg border p-6 transition-colors"
           >
-            <h2 className="mb-2 text-[18px] font-semibold text-ih-ink group-hover:text-ih-accent">
+            <h2 className="text-ih-ink group-hover:text-ih-accent mb-2 text-[18px] font-semibold">
               {tool.name}
             </h2>
-            <p className="text-[14px] leading-[1.55] text-ih-muted">{tool.blurb}</p>
+            <p className="text-ih-muted text-[14px] leading-[1.55]">{tool.blurb}</p>
           </Link>
         ))}
       </div>
-      <p className="pb-20 text-[14px] leading-[1.6] text-ih-muted">
+      <p className="text-ih-muted pb-20 text-[14px] leading-[1.6]">
         Thread dimensions, crimp diameters and fitting pressure ratings are in the{' '}
         <Link href="/resources" className="text-ih-accent hover:underline">
           reference library

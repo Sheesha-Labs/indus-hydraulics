@@ -21,8 +21,12 @@ describe('hero geo coverage', () => {
    */
   it('has wording for every export market', () => {
     const covered = new Set(HERO_GEO_CODES)
-    const missing = MARKETS.filter((m) => !covered.has(m.countryCode)).map((m) => `${m.countryCode} ${m.name}`)
-    expect(missing, 'add these to HERO_GEO_VARIANTS, with the possessive written by hand').toEqual([])
+    const missing = MARKETS.filter((m) => !covered.has(m.countryCode)).map(
+      (m) => `${m.countryCode} ${m.name}`
+    )
+    expect(missing, 'add these to HERO_GEO_VARIANTS, with the possessive written by hand').toEqual(
+      []
+    )
   })
 
   it('covers home and the fallback on top of the markets', () => {
@@ -38,7 +42,7 @@ describe('hero geo coverage', () => {
     // it is a claim with nothing supporting it.
     const markets = new Set(MARKETS.map((m) => m.countryCode))
     const unbacked = HERO_GEO_CODES.filter(
-      (c) => c !== 'AE' && c !== HERO_GEO_FALLBACK_CODE && !markets.has(c),
+      (c) => c !== 'AE' && c !== HERO_GEO_FALLBACK_CODE && !markets.has(c)
     )
     expect(unbacked, 'these have hero wording but no /markets page').toEqual([])
   })
@@ -67,7 +71,9 @@ describe('hero geo wording', () => {
   })
 
   it('prefixes "The" only where the country name takes an article', () => {
-    const withArticle = HERO_GEO_VARIANTS.filter((v) => /^The /.test(v.possessive)).map((v) => v.code)
+    const withArticle = HERO_GEO_VARIANTS.filter((v) => /^The /.test(v.possessive)).map(
+      (v) => v.code
+    )
     expect(withArticle.sort()).toEqual(['AE', 'CD', 'CI', 'DO', 'GB', 'NL', 'PH', 'US'])
   })
 

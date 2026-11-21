@@ -76,10 +76,7 @@ export const MEDIA_USAGE_KIND_ORDER: readonly MediaUsageKind[] = [
  * "Site settings" is invariant and "Category" needs `ies`; a table costs
  * nothing and cannot be wrong.
  */
-export const MEDIA_USAGE_KIND_LABELS: Record<
-  MediaUsageKind,
-  { one: string; many: string }
-> = {
+export const MEDIA_USAGE_KIND_LABELS: Record<MediaUsageKind, { one: string; many: string }> = {
   product: { one: 'product', many: 'products' },
   category: { one: 'category', many: 'categories' },
   brand: { one: 'brand', many: 'brands' },
@@ -493,7 +490,10 @@ export function normaliseMediaUrl(value: string): string {
  * so apply it only to the assets whose path is not a URL. In the current data
  * that is 2 rows out of 665.
  */
-export function htmlMentionsStoragePath(html: string | null | undefined, storagePath: string): boolean {
+export function htmlMentionsStoragePath(
+  html: string | null | undefined,
+  storagePath: string
+): boolean {
   if (!html || !storagePath.trim()) return false
   return html.includes(storagePath.trim())
 }

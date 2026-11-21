@@ -104,7 +104,12 @@ export default async function BlogAuthorPage({ params }: Props) {
       ...(author.avatar ? { image: crawlableImageUrl(author.avatar.storagePath) } : {}),
       ...(author.linkedinUrl ? { sameAs: [author.linkedinUrl] } : {}),
       ...(author.credentials
-        ? { hasCredential: { '@type': 'EducationalOccupationalCredential', name: author.credentials } }
+        ? {
+            hasCredential: {
+              '@type': 'EducationalOccupationalCredential',
+              name: author.credentials,
+            },
+          }
         : {}),
       worksFor: { '@type': 'Organization', '@id': ORG_ID, name: SITE_NAME },
     },
@@ -122,7 +127,7 @@ export default async function BlogAuthorPage({ params }: Props) {
     <main className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
       <JsonLd data={[profileLd, breadcrumbLd]} />
 
-      <nav className="mono flex items-center gap-2 pt-8 text-[12px] text-ih-muted">
+      <nav className="mono text-ih-muted flex items-center gap-2 pt-8 text-[12px]">
         <Link href="/" className="hover:text-ih-ink">
           Home
         </Link>
@@ -134,8 +139,8 @@ export default async function BlogAuthorPage({ params }: Props) {
         <span className="text-ih-ink">{author.name}</span>
       </nav>
 
-      <header className="flex max-w-[760px] flex-col gap-5 border-b border-ih-border py-8 sm:flex-row sm:items-start">
-        <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-ih-border bg-ih-surface-2">
+      <header className="border-ih-border flex max-w-[760px] flex-col gap-5 border-b py-8 sm:flex-row sm:items-start">
+        <div className="border-ih-border bg-ih-surface-2 relative h-20 w-20 shrink-0 overflow-hidden rounded-full border">
           {author.avatar ? (
             <Image
               src={mediaUrl(author.avatar.storagePath)}
@@ -145,16 +150,16 @@ export default async function BlogAuthorPage({ params }: Props) {
               className="object-cover"
             />
           ) : (
-            <span className="mono absolute inset-0 grid place-items-center text-[20px] text-ih-muted">
+            <span className="mono text-ih-muted absolute inset-0 grid place-items-center text-[20px]">
               {author.name.charAt(0)}
             </span>
           )}
         </div>
         <div>
-          <h1 className="mb-1 font-serif text-[clamp(26px,3.5vw,36px)] font-normal leading-[1.1] tracking-[-0.02em]">
+          <h1 className="mb-1 font-serif text-[clamp(26px,3.5vw,36px)] leading-[1.1] font-normal tracking-[-0.02em]">
             {author.name}
           </h1>
-          <div className="mono mb-3 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11.5px] uppercase tracking-[0.1em] text-ih-muted">
+          <div className="mono text-ih-muted mb-3 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11.5px] tracking-[0.1em] uppercase">
             {author.jobTitle && <span>{author.jobTitle}</span>}
             {author.yearsExperience && (
               <>
@@ -170,14 +175,14 @@ export default async function BlogAuthorPage({ params }: Props) {
             )}
           </div>
           {author.bio && (
-            <p className="max-w-[560px] text-[15px] leading-[1.6] text-ih-ink-2">{author.bio}</p>
+            <p className="text-ih-ink-2 max-w-[560px] text-[15px] leading-[1.6]">{author.bio}</p>
           )}
           {author.linkedinUrl && (
             <a
               href={author.linkedinUrl}
               target="_blank"
               rel="noopener"
-              className="mono mt-3 inline-block text-[11.5px] text-ih-accent hover:underline"
+              className="mono text-ih-accent mt-3 inline-block text-[11.5px] hover:underline"
             >
               LinkedIn ↗
             </a>
@@ -186,12 +191,12 @@ export default async function BlogAuthorPage({ params }: Props) {
       </header>
 
       {posts.length === 0 ? (
-        <div className="my-12 border border-dashed border-ih-border py-16 text-center">
+        <div className="border-ih-border my-12 border border-dashed py-16 text-center">
           <p className="text-ih-muted">No published articles yet.</p>
         </div>
       ) : (
         <>
-          <p className="mono py-6 text-[12px] text-ih-muted">
+          <p className="mono text-ih-muted py-6 text-[12px]">
             <b className="text-ih-ink">{posts.length}</b>{' '}
             {posts.length === 1 ? 'article' : 'articles'}
           </p>

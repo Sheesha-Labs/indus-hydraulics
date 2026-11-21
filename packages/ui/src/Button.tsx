@@ -72,7 +72,8 @@ const buttonVariants = cva(
          * action clusters next to a dozen neutral controls. The weight
          * belongs on the confirmation, not on the trigger.
          */
-        danger: 'border-transparent bg-ih-danger-soft text-ih-danger-ink hover:bg-ih-danger hover:text-white',
+        danger:
+          'border-transparent bg-ih-danger-soft text-ih-danger-ink hover:bg-ih-danger hover:text-white',
       },
       size: {
         /** Dense admin tables and card footers only — see CLAUDE.md §10.8. */
@@ -96,7 +97,8 @@ const buttonVariants = cva(
 )
 
 export interface ButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'color'>,
+  extends
+    Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'color'>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean
   loading?: boolean
@@ -119,7 +121,18 @@ const Spinner = () => (
 )
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-  { className, kind, size, block, asChild = false, loading = false, icon, iconAfter, children, ...props },
+  {
+    className,
+    kind,
+    size,
+    block,
+    asChild = false,
+    loading = false,
+    icon,
+    iconAfter,
+    children,
+    ...props
+  },
   ref
 ) {
   const classes = cn(buttonVariants({ kind, size, block }), className)

@@ -28,14 +28,15 @@ const COPY = {
   },
   declined: {
     subject: (code: string) => `Quotation ${code} closed`,
-    intro:
-      'Thank you for letting us know. We have marked this quotation as closed on our end.',
+    intro: 'Thank you for letting us know. We have marked this quotation as closed on our end.',
     next: 'If your requirements change or you would like a revised offer, just reply and we will reopen the conversation.',
   },
 } as const
 
 export function renderQuoteAck(props: QuoteAckProps): { subject: string; html: string } {
-  const codeDisplay = props.revisionLabel ? `${props.quoteCode} ${props.revisionLabel}` : props.quoteCode
+  const codeDisplay = props.revisionLabel
+    ? `${props.quoteCode} ${props.revisionLabel}`
+    : props.quoteCode
   const copy = COPY[props.outcome]
   const subject = copy.subject(codeDisplay)
 

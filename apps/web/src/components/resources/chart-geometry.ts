@@ -12,7 +12,13 @@
  */
 
 /** A column with its top corners rounded and its foot square on the baseline. */
-export function columnPath(x: number, baseline: number, width: number, height: number, radius = 4): string {
+export function columnPath(
+  x: number,
+  baseline: number,
+  width: number,
+  height: number,
+  radius = 4
+): string {
   if (height <= 0) return ''
   const r = Math.min(radius, width / 2, height)
   const top = baseline - height

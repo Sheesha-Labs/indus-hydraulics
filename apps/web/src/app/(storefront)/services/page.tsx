@@ -2,7 +2,15 @@ import type { Metadata } from 'next'
 import { Fragment, Suspense, type ReactNode } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
 import Link from 'next/link'
-import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList, type ImageValue, enquiryMailto } from '@indus/domain'
+import {
+  MANUFACTURING_PAGE,
+  QUALITY_CONTROL_PAGE,
+  lines,
+  str,
+  visibleList,
+  type ImageValue,
+  enquiryMailto,
+} from '@indus/domain'
 import { pageMetadata } from '../../../lib/seo'
 import {
   categoryCounts,
@@ -117,9 +125,10 @@ export default async function ServicesIndexPage() {
       // taken. Dropping it leaves the panel with the copy, which is what an
       // editor can actually change.
       placeholderLabel: '',
-      image: step.panel_image?.mediaId && step.panel_image.url
-        ? { url: step.panel_image.url, alt: step.panel_image.alt }
-        : null,
+      image:
+        step.panel_image?.mediaId && step.panel_image.url
+          ? { url: step.panel_image.url, alt: step.panel_image.alt }
+          : null,
     },
   }))
 
@@ -178,7 +187,7 @@ export default async function ServicesIndexPage() {
 
     stories:
       twoUp.length === 2 && twoUp[0] && twoUp[1] ? (
-        <section className="border-b border-ih-border py-20">
+        <section className="border-ih-border border-b py-20">
           <div className="flex items-baseline justify-between gap-4">
             <div>
               <span className="eyebrow">{str(stories, 'eyebrow')}</span>
@@ -214,15 +223,15 @@ export default async function ServicesIndexPage() {
           wrapping anchor is invalid markup that screen readers and browsers
           disagree about how to resolve.
         */}
-        <div className="grid grid-cols-1 items-center gap-8 rounded-lg border border-ih-border bg-ih-steel-soft px-8 py-9 lg:grid-cols-[1.35fr_1fr] lg:px-11">
+        <div className="border-ih-border bg-ih-steel-soft grid grid-cols-1 items-center gap-8 rounded-lg border px-8 py-9 lg:grid-cols-[1.35fr_1fr] lg:px-11">
           <div>
-            <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <p className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
               {str(capability, 'eyebrow')}
             </p>
-            <h2 className="mt-3 max-w-[560px] text-balance font-serif text-[26px] font-normal leading-[1.15] tracking-[-0.01em] sm:text-[30px]">
+            <h2 className="mt-3 max-w-[560px] font-serif text-[26px] leading-[1.15] font-normal tracking-[-0.01em] text-balance sm:text-[30px]">
               {str(capability, 'heading')}
             </h2>
-            <p className="mt-2.5 max-w-[600px] text-[14px] leading-[1.6] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-2.5 max-w-[600px] text-[14px] leading-[1.6]">
               {str(capability, 'body')}
             </p>
           </div>
@@ -230,12 +239,15 @@ export default async function ServicesIndexPage() {
           <div>
             <dl className="grid grid-cols-3 gap-5">
               {MANUFACTURING_PAGE.hero.stats.slice(0, 3).map((stat) => (
-                <div key={stat.label} className="border-t-2 border-ih-accent pt-3">
+                <div key={stat.label} className="border-ih-accent border-t-2 pt-3">
                   <dt className="sr-only">{stat.label}</dt>
                   <dd className="font-mono text-[24px] leading-none tracking-[-0.03em] tabular-nums">
                     {stat.value}
                   </dd>
-                  <p aria-hidden="true" className="mt-2 font-mono text-[10px] uppercase leading-[1.4] tracking-[0.1em] text-ih-muted">
+                  <p
+                    aria-hidden="true"
+                    className="text-ih-muted mt-2 font-mono text-[10px] leading-[1.4] tracking-[0.1em] uppercase"
+                  >
                     {stat.label}
                   </p>
                 </div>
@@ -245,7 +257,7 @@ export default async function ServicesIndexPage() {
               {str(capability, 'cta_label') ? (
                 <Link
                   href={MANUFACTURING_PAGE.path}
-                  className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-ih-accent hover:underline"
+                  className="text-ih-accent inline-flex items-center gap-1.5 text-[13.5px] font-medium hover:underline"
                 >
                   {str(capability, 'cta_label')}
                   <span aria-hidden="true">→</span>
@@ -254,7 +266,7 @@ export default async function ServicesIndexPage() {
               {str(capability, 'cta_label_quality') ? (
                 <Link
                   href={QUALITY_CONTROL_PAGE.path}
-                  className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-ih-accent hover:underline"
+                  className="text-ih-accent inline-flex items-center gap-1.5 text-[13.5px] font-medium hover:underline"
                 >
                   {str(capability, 'cta_label_quality')}
                   <span aria-hidden="true">→</span>
@@ -285,7 +297,7 @@ export default async function ServicesIndexPage() {
     <main>
       <div className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
         {content.order.map((key) =>
-          sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+          sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null
         )}
       </div>
     </main>

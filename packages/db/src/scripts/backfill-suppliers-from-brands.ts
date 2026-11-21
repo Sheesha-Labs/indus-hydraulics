@@ -75,8 +75,12 @@ async function main() {
   const withContacts = await db.supplier.count({ where: { contacts: { some: {} } } })
 
   console.log(`created ${created}, updated ${updated}`)
-  console.log(`ledger now holds ${total} suppliers, ${authorised} authorised, ${withContacts} with a contact`)
-  console.log('No contacts were invented — every brand row lacks an email, and a guessed address is worse than none.')
+  console.log(
+    `ledger now holds ${total} suppliers, ${authorised} authorised, ${withContacts} with a contact`
+  )
+  console.log(
+    'No contacts were invented — every brand row lacks an email, and a guessed address is worse than none.'
+  )
 }
 
 main()

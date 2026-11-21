@@ -21,8 +21,10 @@ import { cn } from './lib/utils'
  * that stand alone among labelled buttons (delete this product); keep row and
  * list-item actions icon-only.
  */
-export interface DeleteButtonProps
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'children' | 'aria-label'> {
+export interface DeleteButtonProps extends Omit<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  'children' | 'aria-label'
+> {
   label: string
   /** Swaps the icon for a spinner and disables the button. */
   pending?: boolean
@@ -32,14 +34,29 @@ export interface DeleteButtonProps
 }
 
 const Spinner = ({ className }: { className: string }) => (
-  <svg className={cn('animate-spin motion-reduce:animate-none', className)} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <svg
+    className={cn('animate-spin motion-reduce:animate-none', className)}
+    viewBox="0 0 24 24"
+    fill="none"
+    aria-hidden="true"
+  >
     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
   </svg>
 )
 
 const DeleteButton = React.forwardRef<HTMLButtonElement, DeleteButtonProps>(function DeleteButton(
-  { label, pending = false, size = 'md', showLabel = false, className, title, disabled, type = 'button', ...props },
+  {
+    label,
+    pending = false,
+    size = 'md',
+    showLabel = false,
+    className,
+    title,
+    disabled,
+    type = 'button',
+    ...props
+  },
   ref
 ) {
   const iconClass = size === 'sm' ? 'h-3.5 w-3.5' : 'h-4 w-4'
@@ -52,18 +69,22 @@ const DeleteButton = React.forwardRef<HTMLButtonElement, DeleteButtonProps>(func
       aria-busy={pending || undefined}
       disabled={disabled || pending}
       className={cn(
-        'inline-flex shrink-0 items-center justify-center gap-1.5 rounded-md text-ih-muted',
+        'text-ih-muted inline-flex shrink-0 items-center justify-center gap-1.5 rounded-md',
         'transition-[background-color,color] duration-150 ease-[ease]',
         'hover:bg-ih-danger-soft hover:text-ih-danger-ink',
-        'outline-none focus-visible:text-ih-danger-ink focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
-        'disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:bg-transparent disabled:hover:text-ih-muted',
+        'focus-visible:text-ih-danger-ink focus-visible:ring-ih-accent-soft outline-none focus-visible:ring-[3px]',
+        'disabled:hover:text-ih-muted disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:bg-transparent',
         size === 'sm' ? 'h-7' : 'h-8',
         showLabel ? 'px-2.5 text-[12.5px] font-medium' : size === 'sm' ? 'w-7' : 'w-8',
         className
       )}
       {...props}
     >
-      {pending ? <Spinner className={iconClass} /> : <Trash2 className={iconClass} strokeWidth={1.75} aria-hidden="true" />}
+      {pending ? (
+        <Spinner className={iconClass} />
+      ) : (
+        <Trash2 className={iconClass} strokeWidth={1.75} aria-hidden="true" />
+      )}
       {showLabel ? <span aria-hidden="true">{label}</span> : null}
     </button>
   )

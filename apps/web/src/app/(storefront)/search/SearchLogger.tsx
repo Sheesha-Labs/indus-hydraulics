@@ -57,10 +57,9 @@ export default function SearchLogger({ query, resultsCount, usedFallback }: Prop
       const q = anchor.getAttribute('data-search-result-q')
       if (!sku || !q) return
       const sessionId = ensureSessionId()
-      const blob = new Blob(
-        [JSON.stringify({ query: q, clickedSku: sku, sessionId })],
-        { type: 'application/json' },
-      )
+      const blob = new Blob([JSON.stringify({ query: q, clickedSku: sku, sessionId })], {
+        type: 'application/json',
+      })
       navigator.sendBeacon?.('/api/search/log', blob)
     }
     document.addEventListener('click', handler, true)

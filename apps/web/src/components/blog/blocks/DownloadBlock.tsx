@@ -4,7 +4,7 @@ export default function DownloadBlockView({ block }: { block: DownloadBlock }) {
   return (
     <section className="min-w-0">
       {block.heading && (
-        <p className="mono mb-2.5 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+        <p className="mono text-ih-muted mb-2.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
           {block.heading}
         </p>
       )}
@@ -13,10 +13,10 @@ export default function DownloadBlockView({ block }: { block: DownloadBlock }) {
           <li key={i}>
             <a
               href={item.url}
-              className="flex min-h-10 items-center justify-between gap-4 rounded-md border border-ih-border bg-ih-surface px-4 py-3 text-[14px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+              className="border-ih-border bg-ih-surface text-ih-ink hover:border-ih-accent hover:text-ih-accent flex min-h-10 items-center justify-between gap-4 rounded-md border px-4 py-3 text-[14px] transition-colors"
             >
               <span className="font-medium">{item.label}</span>
-              <span className="mono shrink-0 text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+              <span className="mono text-ih-muted shrink-0 text-[10.5px] tracking-[0.1em] uppercase">
                 {item.format ? `${item.format} · ` : ''}
                 {item.size}
               </span>

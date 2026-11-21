@@ -66,44 +66,41 @@ export default async function SpecTemplateEditPage({ params }: Props) {
       sub={tpl.slug}
       actions={
         <Link
-        href={`/admin/spec-templates`}
-        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink"
+          href={`/admin/spec-templates`}
+          className="text-ih-muted hover:text-ih-ink text-[11px] tabular-nums"
         >
-        ← Back to templates
+          ← Back to templates
         </Link>
       }
     >
-        {tpl.categories.length > 0 && (
-          <div className="rounded-lg mb-6 px-4 py-3 bg-[oklch(0.97_0.03_240)] border border-[oklch(0.85_0.07_240)] text-[12px]">
-            <b>Default for {tpl.categories.length} categor{tpl.categories.length === 1 ? 'y' : 'ies'}:</b>{' '}
-            {tpl.categories.map((c, i) => (
-              <span key={c.id}>
-                {i > 0 && ', '}
-                <Link
-                  href={`/admin/categories`}
-                  className="underline hover:text-ih-accent"
-                >
-                  {c.name}
-                </Link>
-              </span>
-            ))}
-            . New products in these categories will be pre-assigned this template.
-          </div>
-        )}
+      {tpl.categories.length > 0 && (
+        <div className="mb-6 rounded-lg border border-[oklch(0.85_0.07_240)] bg-[oklch(0.97_0.03_240)] px-4 py-3 text-[12px]">
+          <b>
+            Default for {tpl.categories.length} categor{tpl.categories.length === 1 ? 'y' : 'ies'}:
+          </b>{' '}
+          {tpl.categories.map((c, i) => (
+            <span key={c.id}>
+              {i > 0 && ', '}
+              <Link href={`/admin/categories`} className="hover:text-ih-accent underline">
+                {c.name}
+              </Link>
+            </span>
+          ))}
+          . New products in these categories will be pre-assigned this template.
+        </div>
+      )}
 
-        <TemplateEditorClient
-         
-          template={{
-            id: tpl.id,
-            slug: tpl.slug,
-            name: tpl.name,
-            description: tpl.description,
-          }}
-          fields={fields}
-          products={products}
-          totalProductCount={tpl._count.products}
-        />
-    
+      <TemplateEditorClient
+        template={{
+          id: tpl.id,
+          slug: tpl.slug,
+          name: tpl.name,
+          description: tpl.description,
+        }}
+        fields={fields}
+        products={products}
+        totalProductCount={tpl._count.products}
+      />
     </AdminPageShell>
   )
 }

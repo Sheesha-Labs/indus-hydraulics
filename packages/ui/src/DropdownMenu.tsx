@@ -61,8 +61,9 @@ const DropdownMenuContent = React.forwardRef<
 ))
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName
 
-export interface DropdownMenuItemProps
-  extends React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Item> {
+export interface DropdownMenuItemProps extends React.ComponentPropsWithoutRef<
+  typeof DropdownMenuPrimitive.Item
+> {
   /** Danger styling for removals. Pair with a confirmation for anything irreversible. */
   destructive?: boolean
 }
@@ -95,7 +96,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <DropdownMenuPrimitive.CheckboxItem
     ref={ref}
-    className={cn(itemClasses, 'pl-7 text-ih-ink-2', className)}
+    className={cn(itemClasses, 'text-ih-ink-2 pl-7', className)}
     {...props}
   >
     <span className="absolute left-2 inline-flex h-3.5 w-3.5 items-center justify-center">
@@ -114,7 +115,7 @@ const DropdownMenuRadioItem = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <DropdownMenuPrimitive.RadioItem
     ref={ref}
-    className={cn(itemClasses, 'pl-7 text-ih-ink-2', className)}
+    className={cn(itemClasses, 'text-ih-ink-2 pl-7', className)}
     {...props}
   >
     <span className="absolute left-2 inline-flex h-3.5 w-3.5 items-center justify-center">
@@ -134,7 +135,7 @@ const DropdownMenuLabel = React.forwardRef<
   <DropdownMenuPrimitive.Label
     ref={ref}
     className={cn(
-      'px-2 py-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted',
+      'text-ih-muted px-2 py-1.5 font-mono text-[10px] tracking-[0.1em] uppercase',
       className
     )}
     {...props}
@@ -148,7 +149,7 @@ const DropdownMenuSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DropdownMenuPrimitive.Separator
     ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-ih-border', className)}
+    className={cn('bg-ih-border -mx-1 my-1 h-px', className)}
     {...props}
   />
 ))

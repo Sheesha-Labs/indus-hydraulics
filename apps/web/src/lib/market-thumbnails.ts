@@ -187,7 +187,9 @@ function compute(market: Market): MarketThumbnail | null {
     would put a claim on the card that the page behind it does not make.
   */
   const page = releasedMarketPage(market.slug)
-  const projected = page ? projection(page.map.crossing.coords as unknown as [number, number]) : null
+  const projected = page
+    ? projection(page.map.crossing.coords as unknown as [number, number])
+    : null
   const port =
     projected && Number.isFinite(projected[0]) && Number.isFinite(projected[1])
       ? { x: projected[0], y: projected[1] }
@@ -230,7 +232,11 @@ function compute(market: Market): MarketThumbnail | null {
  */
 function framingFeature(target: CountryFeature): CountryFeature {
   const geometry = target.geometry as { type?: string; coordinates?: number[][][][] }
-  if (geometry.type !== 'MultiPolygon' || !geometry.coordinates || geometry.coordinates.length < 2) {
+  if (
+    geometry.type !== 'MultiPolygon' ||
+    !geometry.coordinates ||
+    geometry.coordinates.length < 2
+  ) {
     return target
   }
 
@@ -299,11 +305,7 @@ function thinAndCull(sink: GeoStream): GeoStream {
       maxY = -Infinity
     },
     point(x: number, y: number) {
-      if (
-        xs.length > 0 &&
-        Math.abs(x - lastX) < MIN_SEGMENT &&
-        Math.abs(y - lastY) < MIN_SEGMENT
-      ) {
+      if (xs.length > 0 && Math.abs(x - lastX) < MIN_SEGMENT && Math.abs(y - lastY) < MIN_SEGMENT) {
         return
       }
       xs.push(x)

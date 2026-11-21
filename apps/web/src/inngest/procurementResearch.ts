@@ -46,9 +46,7 @@ type CachedCandidates = { candidates: ResearchedCandidate[] }
  * as a Supplier is the SAME supplier, and inherits its relationship and reply
  * history rather than being ranked as a cold candidate.
  */
-async function toScoreable(
-  researched: ResearchedCandidate[],
-): Promise<SupplierCandidate[]> {
+async function toScoreable(researched: ResearchedCandidate[]): Promise<SupplierCandidate[]> {
   const domains = researched.map((c) => c.domain).filter((d): d is string => !!d)
   const names = researched.map((c) => c.name)
 
@@ -80,7 +78,8 @@ async function toScoreable(
   const byName = new Map(known.map((s) => [s.name.toLowerCase(), s]))
 
   return researched.map((c) => {
-    const match = (c.domain ? byDomain.get(c.domain) : undefined) ?? byName.get(c.name.toLowerCase())
+    const match =
+      (c.domain ? byDomain.get(c.domain) : undefined) ?? byName.get(c.name.toLowerCase())
     const contact = match?.contacts[0]
 
     return {
@@ -158,7 +157,7 @@ export const procurementResearchStart = inngest.createFunction(
         db.researchRun.update({
           where: { id: researchRunId },
           data: { status: 'completed', finishedAt: new Date() },
-        }),
+        })
       )
       return { items: 0 }
     }
@@ -196,11 +195,11 @@ export const procurementResearchStart = inngest.createFunction(
             requiredCertifications: signature.standards,
           },
         }
-      }),
+      })
     )
 
     return { items: lines.length }
-  },
+  }
 )
 
 /**
@@ -283,7 +282,7 @@ export const procurementResearchItem = inngest.createFunction(
           description,
           requiredCertifications,
           destinationCountry: DESTINATION_COUNTRY,
-        }),
+        })
       )
       researched = found.candidates
       cost = found.costUsdMicros
@@ -362,7 +361,7 @@ export const procurementResearchItem = inngest.createFunction(
     await step.run('settle-run', () => settleRun(researchRunId))
 
     return { candidates: researched.length, cacheHit: !!cached }
-  },
+  }
 )
 
 /**

@@ -29,7 +29,7 @@ function Form() {
        the card, not inside it. */
     <form action={onSubmit} className="flex max-w-2xl flex-col gap-5">
       {/* FE-3: fields never sit naked on the page ground. */}
-      <div className="flex flex-col gap-5 rounded-lg border border-ih-border bg-ih-surface p-6">
+      <div className="border-ih-border bg-ih-surface flex flex-col gap-5 rounded-lg border p-6">
         <Field
           label="Title or subject line"
           hint="Paste the subject verbatim. A bid number or revision token glued to the front is split off automatically."
@@ -75,7 +75,7 @@ function Form() {
         <Button type="submit" kind="primary" loading={pending}>
           Extract line items
         </Button>
-        <p className="text-[13px] text-ih-muted">
+        <p className="text-ih-muted text-[13px]">
           Extraction is deterministic. Every line records the exact text it came from.
         </p>
       </div>

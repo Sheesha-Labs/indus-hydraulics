@@ -12,7 +12,10 @@ export const FALLBACK_COUNTRY: DialCountry = ['AE', '+971', 'United Arab Emirate
  * The dial-code select's order: the default first, then the GCC, then
  * everything else in the order given (the server sorts it by country name).
  */
-export function orderCountries(countries: readonly DialCountry[], defaultIso: string): DialCountry[] {
+export function orderCountries(
+  countries: readonly DialCountry[],
+  defaultIso: string
+): DialCountry[] {
   const byIso = new Map(countries.map((c) => [c[0], c] as const))
   if (!byIso.has(FALLBACK_COUNTRY[0])) byIso.set(FALLBACK_COUNTRY[0], FALLBACK_COUNTRY)
   const out: DialCountry[] = []
@@ -37,7 +40,10 @@ export function flagSrc(iso: string): string {
 
 /** Lower-case, accent-free text for matching ("Côte d'Ivoire" → "cote d'ivoire"). */
 function fold(s: string): string {
-  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  return s
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
 }
 
 /**
@@ -60,7 +66,10 @@ export function filterCountries(countries: readonly DialCountry[], query: string
 
 /** Keep digits and spaces only — what the phone field accepts as typed. */
 export function cleanPhoneInput(raw: string): string {
-  return raw.replace(/[^\d\s]/g, '').replace(/\s{2,}/g, ' ').slice(0, 20)
+  return raw
+    .replace(/[^\d\s]/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .slice(0, 20)
 }
 
 /**
@@ -83,7 +92,10 @@ export function toE164(dial: string, national: string): string | null {
 export function displayPhone(e164: string, dial: string): string {
   const cc = dial.replace(/\D/g, '')
   const rest = e164.replace(/^\+/, '').slice(cc.length)
-  const groups = rest.length > 7 ? [rest.slice(0, 2), rest.slice(2, 5), rest.slice(5)] : [rest.slice(0, 3), rest.slice(3)]
+  const groups =
+    rest.length > 7
+      ? [rest.slice(0, 2), rest.slice(2, 5), rest.slice(5)]
+      : [rest.slice(0, 3), rest.slice(3)]
   return `+${cc} ${groups.filter(Boolean).join(' ')}`
 }
 
@@ -108,7 +120,7 @@ export function readGeoCountry(): string | null {
 export function defaultPhoneCountry(
   countries: readonly DialCountry[],
   preferred?: string | null,
-  geo: string | null = readGeoCountry(),
+  geo: string | null = readGeoCountry()
 ): string {
   for (const c of [preferred, geo]) {
     const iso = c?.toUpperCase()

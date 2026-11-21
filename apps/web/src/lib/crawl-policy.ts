@@ -135,7 +135,7 @@ export const ALWAYS_DISALLOW: readonly string[] = [
 /** Append every ALWAYS_DISALLOW rule (plus `extra`) a robots group is missing. */
 export function withAlwaysDisallowed<T extends { disallow?: string | string[] }>(
   rule: T,
-  extra: readonly string[] = [],
+  extra: readonly string[] = []
 ): T {
   const existing =
     rule.disallow == null ? [] : Array.isArray(rule.disallow) ? rule.disallow : [rule.disallow]
@@ -221,7 +221,10 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
  * empty path (the home page) is the one entry that can never match, and is
  * handled explicitly rather than left to `''.startsWith('/admin')`.
  */
-export function isDisallowed(path: string, disallow: readonly string[] = DEFAULT_DISALLOW): boolean {
+export function isDisallowed(
+  path: string,
+  disallow: readonly string[] = DEFAULT_DISALLOW
+): boolean {
   if (path === '') return false
   return disallow.some((rule) => path === rule || path.startsWith(rule))
 }
@@ -233,7 +236,7 @@ export function isDisallowed(path: string, disallow: readonly string[] = DEFAULT
  */
 export function sitemapPathsBlockedByRobots(
   paths: readonly StaticSitemapPath[] = STATIC_SITEMAP_PATHS,
-  disallow: readonly string[] = DEFAULT_DISALLOW,
+  disallow: readonly string[] = DEFAULT_DISALLOW
 ): string[] {
   return paths.filter((p) => isDisallowed(p.path, disallow)).map((p) => p.path)
 }

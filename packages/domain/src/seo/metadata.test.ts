@@ -138,14 +138,14 @@ describe('buildMetadata', () => {
 
 describe('stripTrailingSiteName', () => {
   it('drops a suffix the stored title already carries', () => {
-    expect(stripTrailingSiteName('Female Thread Cross | Indus Hydraulics', 'Indus Hydraulics')).toBe(
-      'Female Thread Cross',
-    )
+    expect(
+      stripTrailingSiteName('Female Thread Cross | Indus Hydraulics', 'Indus Hydraulics')
+    ).toBe('Female Thread Cross')
   })
 
   it('drops it however many times it was appended', () => {
     expect(
-      stripTrailingSiteName('Foo | Indus Hydraulics | Indus Hydraulics', 'Indus Hydraulics'),
+      stripTrailingSiteName('Foo | Indus Hydraulics | Indus Hydraulics', 'Indus Hydraulics')
     ).toBe('Foo')
   })
 
@@ -161,7 +161,7 @@ describe('stripTrailingSiteName', () => {
   it('never strips the title down to nothing', () => {
     expect(stripTrailingSiteName('Indus Hydraulics', 'Indus Hydraulics')).toBe('Indus Hydraulics')
     expect(stripTrailingSiteName('| Indus Hydraulics', 'Indus Hydraulics')).toBe(
-      '| Indus Hydraulics',
+      '| Indus Hydraulics'
     )
   })
 
@@ -171,7 +171,10 @@ describe('stripTrailingSiteName', () => {
 
   it('drops a dash-separated suffix too — em, en or hyphen', () => {
     expect(
-      stripTrailingSiteName('Replacements & cross-references — Indus Hydraulics', 'Indus Hydraulics'),
+      stripTrailingSiteName(
+        'Replacements & cross-references — Indus Hydraulics',
+        'Indus Hydraulics'
+      )
     ).toBe('Replacements & cross-references')
     expect(stripTrailingSiteName('Foo – Indus Hydraulics', 'Indus Hydraulics')).toBe('Foo')
     expect(stripTrailingSiteName('Foo - Indus Hydraulics', 'Indus Hydraulics')).toBe('Foo')

@@ -134,7 +134,7 @@ function allThreads(text: string): ThreadStandard[] {
 function isAccessory(title: string): boolean {
   if (
     /\b(bolt|washer|screw|nut kit|seal kit|gasket|o-?ring kit|repair kit|spare part|accessor)/i.test(
-      title,
+      title
     )
   ) {
     return true
@@ -356,7 +356,8 @@ export function readFittingAttributes(input: {
   const genderSpec = specValue(specs, 'Thread Gender') ?? specValue(specs, 'Port A Gender')
   const threadSpec = specValue(specs, 'Thread Form') ?? specValue(specs, 'Port A Thread')
   const sealSpec = specValue(specs, 'Sealing Form') ?? specValue(specs, 'Port A Sealing')
-  const configSpec = specValue(specs, 'Fitting Configuration') ?? specValue(specs, 'Body Configuration')
+  const configSpec =
+    specValue(specs, 'Fitting Configuration') ?? specValue(specs, 'Body Configuration')
 
   // `Fitting Configuration` carries values like "90-elbow" and "straight".
   const configFromSpec = configSpec

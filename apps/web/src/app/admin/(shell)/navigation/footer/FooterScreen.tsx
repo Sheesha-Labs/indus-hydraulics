@@ -105,7 +105,7 @@ function FieldLabel({ htmlFor, children }: { htmlFor?: string; children: React.R
   return (
     <label
       htmlFor={htmlFor}
-      className="mb-1.5 block tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted"
+      className="text-ih-muted mb-1.5 block text-[10.5px] tracking-[0.13em] uppercase tabular-nums"
     >
       {children}
     </label>
@@ -124,13 +124,12 @@ function Card({
   children: React.ReactNode
 }) {
   return (
-    <section className="rounded-lg border border-ih-border bg-ih-surface p-6">
+    <section className="border-ih-border bg-ih-surface rounded-lg border p-6">
       <AdminSectionHead variant="panel" title={title} description={description} actions={actions} />
       <div className="flex flex-col gap-5">{children}</div>
     </section>
   )
 }
-
 
 // The help text shows what the footer would print. Read at module load, not
 // during render, so the component stays pure for the React Compiler.
@@ -160,7 +159,7 @@ export default function FooterScreen({
   const columnsDiff = useMemo(() => diffNavDraft(data.columns, columns), [data.columns, columns])
   const legalDiff = useMemo(
     () => diffNavDraft(data.legalLinks, legalLinks),
-    [data.legalLinks, legalLinks],
+    [data.legalLinks, legalLinks]
   )
 
   const settingsSnapshot = JSON.stringify({ brand, contact, legalLine })
@@ -173,12 +172,11 @@ export default function FooterScreen({
         legalLine: data.legal.footerLegalLine,
       }),
       socials: JSON.stringify(data.socials),
-    }),
+    })
   )
   const current = JSON.stringify({ settings: settingsSnapshot, socials: socialsSnapshot })
 
-  const isDirty =
-    current !== baseline || !isEmptyDiff(columnsDiff) || !isEmptyDiff(legalDiff)
+  const isDirty = current !== baseline || !isEmptyDiff(columnsDiff) || !isEmptyDiff(legalDiff)
   useUnsavedGuard(isDirty)
 
   function onSave() {
@@ -198,7 +196,7 @@ export default function FooterScreen({
         setError(
           result.fieldErrors
             ? `${result.message} — ${Object.values(result.fieldErrors).flat().join('; ')}`
-            : result.message,
+            : result.message
         )
         return
       }
@@ -223,7 +221,7 @@ export default function FooterScreen({
           href="/"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 text-[12.5px] text-ih-muted hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1.5 text-[12.5px]"
         >
           View on site <ExternalLink size={12} />
         </Link>
@@ -231,7 +229,7 @@ export default function FooterScreen({
     >
       <div className="flex flex-col gap-5">
         {!canEditSettings && (
-          <p className="rounded-md border border-ih-border bg-ih-bg px-4 py-3 text-[12.5px] text-ih-muted">
+          <p className="border-ih-border bg-ih-bg text-ih-muted rounded-md border px-4 py-3 text-[12.5px]">
             Your role can edit the footer’s link columns, social profiles and bottom-bar links. The
             brand blurb, contact details and copyright line are shared with the contact page and the
             site’s structured data, so they need a manager or administrator.
@@ -372,9 +370,9 @@ export default function FooterScreen({
               className={FIELD}
               placeholder={`© ${FOOTER_LEGAL_YEAR_TOKEN} ${legalFallbackEntity}. All rights reserved.`}
             />
-            <p className="mt-1.5 text-[11.5px] text-ih-muted">
-              Type <code className="tabular-nums">{FOOTER_LEGAL_YEAR_TOKEN}</code> where the year goes
-              and it stays current. Left blank, the footer shows “© {EXAMPLE_YEAR}{' '}
+            <p className="text-ih-muted mt-1.5 text-[11.5px]">
+              Type <code className="tabular-nums">{FOOTER_LEGAL_YEAR_TOKEN}</code> where the year
+              goes and it stays current. Left blank, the footer shows “© {EXAMPLE_YEAR}{' '}
               {legalFallbackEntity}. All rights reserved.”
             </p>
           </div>
@@ -390,7 +388,7 @@ export default function FooterScreen({
         {error ? (
           <p
             role="alert"
-            className="rounded-md border border-ih-danger bg-ih-danger-soft px-4 py-3 text-[13px] text-ih-danger-ink"
+            className="border-ih-danger bg-ih-danger-soft text-ih-danger-ink rounded-md border px-4 py-3 text-[13px]"
           >
             {error}
           </p>
@@ -428,7 +426,7 @@ function SocialList({
 }) {
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
-    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   )
 
   function onDragEnd(event: DragEndEvent) {
@@ -442,7 +440,7 @@ function SocialList({
 
   if (socials.length === 0) {
     return (
-      <p className="text-[13px] text-ih-muted">
+      <p className="text-ih-muted text-[13px]">
         None yet. With no profiles the footer draws no social row at all.
       </p>
     )
@@ -481,7 +479,7 @@ function SocialRow({
   return (
     <li
       ref={setNodeRef}
-      className="rounded-md border border-ih-border bg-ih-bg px-2 py-2"
+      className="border-ih-border bg-ih-bg rounded-md border px-2 py-2"
       style={{
         transform: CSS.Transform.toString(transform),
         transition,
@@ -492,7 +490,7 @@ function SocialRow({
         <button
           type="button"
           aria-label="Reorder — press space, then arrow keys"
-          className="inline-flex h-7 w-5 shrink-0 cursor-grab items-center justify-center text-ih-muted hover:text-ih-ink active:cursor-grabbing"
+          className="text-ih-muted hover:text-ih-ink inline-flex h-7 w-5 shrink-0 cursor-grab items-center justify-center active:cursor-grabbing"
           {...listeners}
           {...attributes}
         >
@@ -501,7 +499,9 @@ function SocialRow({
         <select
           aria-label="Platform"
           value={social.platform}
-          onChange={(e) => onChange({ ...social, platform: e.target.value as FooterSocialPlatform })}
+          onChange={(e) =>
+            onChange({ ...social, platform: e.target.value as FooterSocialPlatform })
+          }
           className={`${FIELD} w-[140px]`}
         >
           {FOOTER_SOCIAL_PLATFORMS.map((platform) => (
@@ -548,8 +548,8 @@ function SocialRow({
           title={social.isVisible ? 'Visible — click to hide' : 'Hidden — click to show'}
           className={
             social.isVisible
-              ? 'inline-flex h-7 w-7 items-center justify-center rounded-md text-ih-muted hover:text-ih-ink'
-              : 'inline-flex h-7 w-7 items-center justify-center rounded-md text-ih-danger-ink'
+              ? 'text-ih-muted hover:text-ih-ink inline-flex h-7 w-7 items-center justify-center rounded-md'
+              : 'text-ih-danger-ink inline-flex h-7 w-7 items-center justify-center rounded-md'
           }
         >
           {social.isVisible ? <Eye size={14} /> : <EyeOff size={14} />}
@@ -558,7 +558,7 @@ function SocialRow({
           type="button"
           onClick={onRemove}
           aria-label={`Remove ${social.label || 'this profile'}`}
-          className="inline-flex h-7 w-7 items-center justify-center rounded-md text-ih-muted hover:text-ih-danger-ink"
+          className="text-ih-muted hover:text-ih-danger-ink inline-flex h-7 w-7 items-center justify-center rounded-md"
         >
           <Trash2 size={14} />
         </button>

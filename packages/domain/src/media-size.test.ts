@@ -88,7 +88,9 @@ function stubFetch(
 
 describe('measureRemoteBytes', () => {
   it('reads Content-Length from a HEAD and does not fall back', async () => {
-    const { impl, calls } = stubFetch({ HEAD: { status: 200, headers: { 'content-length': '197353' } } })
+    const { impl, calls } = stubFetch({
+      HEAD: { status: 200, headers: { 'content-length': '197353' } },
+    })
     await expect(measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })).resolves.toEqual({
       ok: true,
       bytes: 197353,
@@ -135,15 +137,22 @@ describe('measureRemoteBytes', () => {
     // The distinction is the point: missing means the row is orphaned, and
     // unreachable means try again. Collapsing them invents orphans.
     const { impl } = stubFetch({ HEAD: { status: 404 } })
-    await expect(measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })).resolves.toMatchObject({
+    await expect(
+      measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })
+    ).resolves.toMatchObject({
       ok: false,
       reason: 'missing',
     })
   })
 
   it('reports a total network failure as unreachable', async () => {
-    const { impl } = stubFetch({ HEAD: { status: 0, throws: true }, GET: { status: 0, throws: true } })
-    await expect(measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })).resolves.toMatchObject({
+    const { impl } = stubFetch({
+      HEAD: { status: 0, throws: true },
+      GET: { status: 0, throws: true },
+    })
+    await expect(
+      measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })
+    ).resolves.toMatchObject({
       ok: false,
       reason: 'unreachable',
     })
@@ -151,7 +160,9 @@ describe('measureRemoteBytes', () => {
 
   it('reports a reachable file with no usable length as unmeasurable', async () => {
     const { impl } = stubFetch({ HEAD: { status: 200 }, GET: { status: 206 } })
-    await expect(measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })).resolves.toMatchObject({
+    await expect(
+      measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })
+    ).resolves.toMatchObject({
       ok: false,
       reason: 'unmeasurable',
     })
@@ -163,7 +174,9 @@ describe('measureRemoteBytes', () => {
       HEAD: { status: 200, headers: { 'content-length': '0' } },
       GET: { status: 206 },
     })
-    await expect(measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })).resolves.toMatchObject({
+    await expect(
+      measureRemoteBytes('https://x.test/a.pdf', { fetchImpl: impl })
+    ).resolves.toMatchObject({
       ok: false,
     })
   })

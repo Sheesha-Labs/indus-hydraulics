@@ -57,7 +57,7 @@ describe('isEligibleForRetry — third retry (retryCount=2)', () => {
   test('requires 3-hour wait from lastAttemptAt', () => {
     expect(isEligibleForRetry(2, ago(24 * 60 * 60 * 1000), ago(3 * 60 * 60 * 1000), NOW)).toBe(true)
     expect(isEligibleForRetry(2, ago(24 * 60 * 60 * 1000), ago(2.5 * 60 * 60 * 1000), NOW)).toBe(
-      false,
+      false
     )
   })
 })
@@ -65,7 +65,7 @@ describe('isEligibleForRetry — third retry (retryCount=2)', () => {
 describe('isEligibleForRetry — terminal states', () => {
   test('retryCount=3 is dead_letter — never eligible', () => {
     expect(isEligibleForRetry(3, ago(24 * 60 * 60 * 1000), ago(24 * 60 * 60 * 1000), NOW)).toBe(
-      false,
+      false
     )
   })
 

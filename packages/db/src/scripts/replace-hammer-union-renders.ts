@@ -55,24 +55,48 @@ const PAIRS: readonly {
     sku: 'IH-FI-HU-100-NPT-1K-STD-INDUS',
     stamp: 'Figure 100, 5 in threaded',
     photos: [
-      { file: 'figure-100-5-threaded-1000-psi-hammer-unions-371-1.jpg', key: 'fig-100-threaded-assembled', view: 'assembled, side view' },
-      { file: 'figure-100-5-threaded-1000-psi-hammer-unions-371-2.jpg', key: 'fig-100-threaded-nut', view: 'wing nut' },
+      {
+        file: 'figure-100-5-threaded-1000-psi-hammer-unions-371-1.jpg',
+        key: 'fig-100-threaded-assembled',
+        view: 'assembled, side view',
+      },
+      {
+        file: 'figure-100-5-threaded-1000-psi-hammer-unions-371-2.jpg',
+        key: 'fig-100-threaded-nut',
+        view: 'wing nut',
+      },
     ],
   },
   {
     sku: 'IH-FI-HU-602-BW-6K-STD-INDUS',
     stamp: 'FIG 602, 2 in and 4 in butt weld',
     photos: [
-      { file: 'nfc-figure-602-2-buttweld-6000-psi-hammer-unions-339-1.jpg', key: 'fig-602-buttweld-2in-side', view: '2 in, side view' },
-      { file: 'nfc-figure-602-2-buttweld-6000-psi-hammer-unions-339-2.jpg', key: 'fig-602-buttweld-2in-face', view: '2 in, face view' },
-      { file: 'nfc-figure-602-4-buttweld-6000-psi-hammer-unions-661.jpg', key: 'fig-602-buttweld-4in-face', view: '4 in, face view' },
+      {
+        file: 'nfc-figure-602-2-buttweld-6000-psi-hammer-unions-339-1.jpg',
+        key: 'fig-602-buttweld-2in-side',
+        view: '2 in, side view',
+      },
+      {
+        file: 'nfc-figure-602-2-buttweld-6000-psi-hammer-unions-339-2.jpg',
+        key: 'fig-602-buttweld-2in-face',
+        view: '2 in, face view',
+      },
+      {
+        file: 'nfc-figure-602-4-buttweld-6000-psi-hammer-unions-661.jpg',
+        key: 'fig-602-buttweld-4in-face',
+        view: '4 in, face view',
+      },
     ],
   },
   {
     sku: 'IH-FI-HU-1002-BW-10K-STD-INDUS',
     stamp: 'FIG 1002, 10000 CWP, 4 in butt weld',
     photos: [
-      { file: 'nfc-figure-1002-4-buttweld-hammer-unions-10000-psi-662.jpg', key: 'fig-1002-buttweld-4in', view: '4 in, face view' },
+      {
+        file: 'nfc-figure-1002-4-buttweld-hammer-unions-10000-psi-662.jpg',
+        key: 'fig-1002-buttweld-4in',
+        view: '4 in, face view',
+      },
     ],
   },
   {
@@ -81,21 +105,33 @@ const PAIRS: readonly {
     sku: 'IH-FI-HU-1002-NPT-10K-STD-INDUS',
     stamp: 'FIG 1002, 4 in threaded',
     photos: [
-      { file: 'nfc-figure-1002-4-threaded-hammer-unions-10000-psi-663.jpg', key: 'fig-1002-threaded-4in', view: '4 in, face view' },
+      {
+        file: 'nfc-figure-1002-4-threaded-hammer-unions-10000-psi-663.jpg',
+        key: 'fig-1002-threaded-4in',
+        view: '4 in, face view',
+      },
     ],
   },
   {
     sku: 'IH-FI-HU-1502-BW-15K-STD-INDUS',
     stamp: 'FIG 1502, 15000 CWP, 2 in butt weld',
     photos: [
-      { file: 'nfc-figure-1502-2-buttweld-hammer-unions-15000-psi-659.jpg', key: 'fig-1502-buttweld-2in', view: '2 in, face view' },
+      {
+        file: 'nfc-figure-1502-2-buttweld-hammer-unions-15000-psi-659.jpg',
+        key: 'fig-1502-buttweld-2in',
+        view: '2 in, face view',
+      },
     ],
   },
   {
     sku: 'IH-FI-HU-1502-NPT-15K-STD-INDUS',
     stamp: 'FIG 1502, 2 in threaded',
     photos: [
-      { file: 'nfc-figure-1502-2-threaded-hammer-unions-15000-psi-660.jpg', key: 'fig-1502-threaded-2in', view: '2 in, face view' },
+      {
+        file: 'nfc-figure-1502-2-threaded-hammer-unions-15000-psi-660.jpg',
+        key: 'fig-1502-threaded-2in',
+        view: '2 in, face view',
+      },
     ],
   },
 ] as const
@@ -208,7 +244,8 @@ async function renumber(productId: string, photoOrder: readonly string[]) {
     return i >= 0 ? i : photoOrder.length
   }
   const sorted = [...rows].sort(
-    (a, b) => rank(a.media.originalFilename) - rank(b.media.originalFilename) || a.position - b.position
+    (a, b) =>
+      rank(a.media.originalFilename) - rank(b.media.originalFilename) || a.position - b.position
   )
   await db.$transaction(
     sorted
@@ -347,7 +384,12 @@ async function main() {
                 select: { id: true },
               })
               await tx.productImage.create({
-                data: { productId: product.id, mediaId: media.id, position: p.position, alt: p.alt },
+                data: {
+                  productId: product.id,
+                  mediaId: media.id,
+                  position: p.position,
+                  alt: p.alt,
+                },
               })
             }
           },
@@ -368,11 +410,19 @@ async function main() {
         continue
       }
 
-      backup.push({ productSku: product.sku, productTitle: product.title, position: old.position, alt: old.alt, media: old.media })
+      backup.push({
+        productSku: product.sku,
+        productTitle: product.title,
+        position: old.position,
+        alt: old.alt,
+        media: old.media,
+      })
       if (!dryRun) writeFileSync(backupPath, JSON.stringify(backup, null, 2))
 
       if (dryRun) {
-        console.log(`[dry-run] unlink + trash ${old.media.originalFilename} (${old.media.id}) from ${pair.sku}`)
+        console.log(
+          `[dry-run] unlink + trash ${old.media.originalFilename} (${old.media.id}) from ${pair.sku}`
+        )
       } else {
         await db.$transaction([
           db.productImage.delete({ where: { id: old.id } }),
@@ -382,11 +432,17 @@ async function main() {
       trashed++
     }
 
-    if (!dryRun) await renumber(product.id, pair.photos.map((p) => p.file))
+    if (!dryRun)
+      await renumber(
+        product.id,
+        pair.photos.map((p) => p.file)
+      )
   }
 
   if (backup.length > 0) {
-    console.log(`\n[backup] ${backup.length} rows ${dryRun ? 'would go' : 'written'} to ${backupPath}`)
+    console.log(
+      `\n[backup] ${backup.length} rows ${dryRun ? 'would go' : 'written'} to ${backupPath}`
+    )
   }
   console.log(
     `\n[hammer-union-photos] ${attached} attached, ${alreadyPresent} already present, ` +

@@ -20,16 +20,16 @@ const COLS_AT_LG: Record<number, string> = {
 export default function ApproachGridBlockView({ block }: { block: ApproachGridBlock }) {
   return (
     <div
-      className={`my-2 mb-6 grid grid-cols-1 gap-px border border-ih-border bg-ih-border font-sans sm:grid-cols-2 ${COLS_AT_LG[Math.min(block.phases.length, 4)] ?? COLS_AT_LG[4]}`}
+      className={`border-ih-border bg-ih-border my-2 mb-6 grid grid-cols-1 gap-px border font-sans sm:grid-cols-2 ${COLS_AT_LG[Math.min(block.phases.length, 4)] ?? COLS_AT_LG[4]}`}
     >
       {block.phases.map((p, i) => (
-        <div key={i} className="flex min-h-[220px] flex-col bg-ih-surface px-5 pb-6 pt-5">
-          <span className="mono text-[11px] uppercase tracking-[0.1em] text-ih-accent">
+        <div key={i} className="bg-ih-surface flex min-h-[220px] flex-col px-5 pt-5 pb-6">
+          <span className="mono text-ih-accent text-[11px] tracking-[0.1em] uppercase">
             {p.number}
           </span>
-          <h4 className="mb-2 mt-2 text-[17px] tracking-[-0.01em] leading-tight">{p.title}</h4>
-          <p className="m-0 text-[13px] leading-[1.55] text-ih-muted">{p.body}</p>
-          <div className="mono mt-auto border-t border-dashed border-ih-border pt-3 text-[10.5px] uppercase tracking-[0.08em] text-ih-ink">
+          <h4 className="mt-2 mb-2 text-[17px] leading-tight tracking-[-0.01em]">{p.title}</h4>
+          <p className="text-ih-muted m-0 text-[13px] leading-[1.55]">{p.body}</p>
+          <div className="mono border-ih-border text-ih-ink mt-auto border-t border-dashed pt-3 text-[10.5px] tracking-[0.08em] uppercase">
             {p.duration}
           </div>
         </div>

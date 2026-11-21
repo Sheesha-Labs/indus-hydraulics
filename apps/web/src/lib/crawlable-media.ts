@@ -62,7 +62,7 @@ function isCrawlableBucket(bucket: string): boolean {
 export function toCrawlableMediaUrl(
   url: string,
   baseUrl: string,
-  supabaseUrl: string | undefined = process.env.NEXT_PUBLIC_SUPABASE_URL,
+  supabaseUrl: string | undefined = process.env.NEXT_PUBLIC_SUPABASE_URL
 ): string {
   if (!url) return url
   const host = storageHost(supabaseUrl)
@@ -102,7 +102,7 @@ export function toCrawlableMediaUrl(
  */
 export function storageUrlForMediaPath(
   segments: readonly string[],
-  supabaseUrl: string | undefined = process.env.NEXT_PUBLIC_SUPABASE_URL,
+  supabaseUrl: string | undefined = process.env.NEXT_PUBLIC_SUPABASE_URL
 ): string | null {
   if (!supabaseUrl || segments.length < 2) return null
   const [bucket, ...key] = segments

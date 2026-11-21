@@ -147,7 +147,16 @@ describe('orderCountries', () => {
   ] as const
 
   it('puts the default first, then the GCC, then the rest', () => {
-    expect(orderCountries(list, 'KE').map((c) => c[0])).toEqual(['KE', 'AE', 'SA', 'OM', 'KW', 'QA', 'BH', 'NG'])
+    expect(orderCountries(list, 'KE').map((c) => c[0])).toEqual([
+      'KE',
+      'AE',
+      'SA',
+      'OM',
+      'KW',
+      'QA',
+      'BH',
+      'NG',
+    ])
   })
 
   it('falls back to the UAE, which is always present', () => {
@@ -223,7 +232,12 @@ describe('toE164', () => {
 })
 
 describe('validateCallbackFields', () => {
-  const ok = { name: 'Fatima Al Hashimi', email: 'f@company.ae', dial: '+971', phone: '52 123 4567' }
+  const ok = {
+    name: 'Fatima Al Hashimi',
+    email: 'f@company.ae',
+    dial: '+971',
+    phone: '52 123 4567',
+  }
 
   it('passes a complete request', () => {
     expect(validateCallbackFields(ok)).toEqual({})
@@ -248,7 +262,7 @@ describe('whatsappHref', () => {
   it('names the page without the site suffix', () => {
     const href = whatsappHref('971522477942', '2SN hose | Indus Hydraulics')
     expect(href).toBe(
-      `https://wa.me/971522477942?text=${encodeURIComponent("Hello, I'm on 2SN hose and need help finding a part.")}`,
+      `https://wa.me/971522477942?text=${encodeURIComponent("Hello, I'm on 2SN hose and need help finding a part.")}`
     )
   })
 })

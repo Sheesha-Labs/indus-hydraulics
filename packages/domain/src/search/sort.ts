@@ -13,12 +13,7 @@
  */
 
 export type SortMode =
-  | 'relevance'
-  | 'price_asc'
-  | 'price_desc'
-  | 'newest'
-  | 'name_asc'
-  | 'name_desc'
+  'relevance' | 'price_asc' | 'price_desc' | 'newest' | 'name_asc' | 'name_desc'
 
 export const SORT_MODES: ReadonlyArray<SortMode> = [
   'relevance',
@@ -52,9 +47,9 @@ export function parseSortParam(raw: string | undefined | null): SortMode {
  * `price_asc` / `price_desc` use `{ sort, nulls: 'last' }` so listPrice =
  * null products sink to the bottom regardless of direction.
  */
-export type ProductOrderBy =
-  | null
-  | Array<Record<string, 'asc' | 'desc' | { sort: 'asc' | 'desc'; nulls: 'first' | 'last' }>>
+export type ProductOrderBy = null | Array<
+  Record<string, 'asc' | 'desc' | { sort: 'asc' | 'desc'; nulls: 'first' | 'last' }>
+>
 
 export function sortToOrderBy(mode: SortMode): ProductOrderBy {
   switch (mode) {

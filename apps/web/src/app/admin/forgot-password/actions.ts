@@ -5,10 +5,9 @@ import { linkOrigin } from '../../../lib/request-origin'
 import { issueStaffLink, normaliseEmail } from '../../../lib/staff-invitations'
 import type { ForgotState } from './copy'
 
-
 export async function requestStaffPasswordReset(
   _prev: ForgotState,
-  formData: FormData,
+  formData: FormData
 ): Promise<ForgotState> {
   const email = normaliseEmail(String(formData.get('email') ?? ''))
   if (!email || !email.includes('@')) return { error: 'Enter a valid email address.' }

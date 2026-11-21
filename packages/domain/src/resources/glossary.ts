@@ -111,7 +111,10 @@ const RAW: readonly GlossaryTerm[] = [
     definition:
       'The two pressure classes of SAE J518 four-bolt flange. Code 61 is standard pressure, Code 62 high pressure, with a thicker head and wider bolt spacing at the same size. They do not interchange.',
     see: ['four-bolt-flange'],
-    link: { href: '/blog/sae-j518-code-61-code-62-flanges', label: 'Telling Code 61 and Code 62 apart' },
+    link: {
+      href: '/blog/sae-j518-code-61-code-62-flanges',
+      label: 'Telling Code 61 and Code 62 apart',
+    },
   },
   {
     term: 'Compact hose',
@@ -437,7 +440,10 @@ const RAW: readonly GlossaryTerm[] = [
     definition:
       'A set of toothed blades, each cut to one pitch. The blade that sits in the thread with no light under it gives the pitch.',
     see: ['pitch'],
-    link: { href: '/blog/identify-any-hydraulic-fitting', label: 'Identify any fitting in four steps' },
+    link: {
+      href: '/blog/identify-any-hydraulic-fitting',
+      label: 'Identify any fitting in four steps',
+    },
   },
   {
     term: 'Port',
@@ -552,7 +558,8 @@ const RAW: readonly GlossaryTerm[] = [
   {
     term: 'TPI',
     slug: 'tpi',
-    definition: 'Threads per inch: the pitch of an inch thread, counted along one inch of its length.',
+    definition:
+      'Threads per inch: the pitch of an inch thread, counted along one inch of its length.',
     see: ['pitch', 'pitch-gauge'],
   },
   {
@@ -617,7 +624,7 @@ const RAW: readonly GlossaryTerm[] = [
 
 /** Alphabetical by term, case-insensitive, ignoring leading punctuation. */
 export const GLOSSARY: readonly GlossaryTerm[] = [...RAW].sort((a, b) =>
-  a.term.localeCompare(b.term, 'en', { sensitivity: 'base' }),
+  a.term.localeCompare(b.term, 'en', { sensitivity: 'base' })
 )
 
 const BY_SLUG = new Map(GLOSSARY.map((t) => [t.slug, t]))

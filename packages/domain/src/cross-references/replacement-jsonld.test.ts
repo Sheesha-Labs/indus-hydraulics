@@ -43,7 +43,11 @@ describe('buildReplacementCollectionLd', () => {
       matches: [
         { productUrl: 'https://example.com/p/a', productName: 'A', compatibility: 'direct' },
         { productUrl: 'https://example.com/p/b', productName: 'B', compatibility: 'compatible' },
-        { productUrl: 'https://example.com/p/c', productName: 'C', compatibility: 'superseded_by_us' },
+        {
+          productUrl: 'https://example.com/p/c',
+          productName: 'C',
+          compatibility: 'superseded_by_us',
+        },
       ],
     })
     const itemList = ld.mainEntity as Record<string, unknown>

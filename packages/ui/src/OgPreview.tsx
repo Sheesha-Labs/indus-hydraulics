@@ -24,32 +24,24 @@ export function OgPreview({
 }: OgPreviewProps) {
   return (
     <div
-      className={cn(
-        'border border-ih-border bg-white max-w-[500px] overflow-hidden',
-        className,
-      )}
+      className={cn('border-ih-border max-w-[500px] overflow-hidden border bg-white', className)}
     >
-      <div className="aspect-[1.91/1] bg-ih-surface-2 flex items-center justify-center text-ih-muted text-[11px]">
+      <div className="bg-ih-surface-2 text-ih-muted flex aspect-[1.91/1] items-center justify-center text-[11px]">
         {imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={imageUrl} alt="OG preview" className="w-full h-full object-cover" />
+          <img src={imageUrl} alt="OG preview" className="h-full w-full object-cover" />
         ) : (
           'No OG image'
         )}
       </div>
-      <div
-        className={cn(
-          'p-3 border-t border-ih-border',
-          variant === 'twitter' && 'border-t-0',
-        )}
-      >
-        <div className="text-[11px] text-[#65676b] uppercase tracking-wide truncate">
+      <div className={cn('border-ih-border border-t p-3', variant === 'twitter' && 'border-t-0')}>
+        <div className="truncate text-[11px] tracking-wide text-[#65676b] uppercase">
           {prettyHost(url)}
         </div>
-        <div className="text-[14px] font-semibold text-[#1d2129] truncate mt-0.5">
+        <div className="mt-0.5 truncate text-[14px] font-semibold text-[#1d2129]">
           {title || 'No title'}
         </div>
-        <div className="text-[12px] text-[#65676b] line-clamp-2 mt-0.5">
+        <div className="mt-0.5 line-clamp-2 text-[12px] text-[#65676b]">
           {description || 'No description'}
         </div>
       </div>

@@ -13,27 +13,27 @@ export default async function NotFound() {
     .catch(() => [])
 
   return (
-    <div className="max-w-[680px] mx-auto px-8 py-20 pb-32 text-center">
+    <div className="mx-auto max-w-[680px] px-8 py-20 pb-32 text-center">
       <NotFoundLogger />
-      <div className="mb-6 font-mono text-[80px] leading-none tabular-nums text-ih-border-strong">
+      <div className="text-ih-border-strong mb-6 font-mono text-[80px] leading-none tabular-nums">
         404
       </div>
-      <h1 className="text-[28px] font-semibold tracking-tight mb-3">Page not found</h1>
-      <p className="text-[14px] text-ih-muted mb-8 leading-[1.6]">
+      <h1 className="mb-3 text-[28px] font-semibold tracking-tight">Page not found</h1>
+      <p className="text-ih-muted mb-8 text-[14px] leading-[1.6]">
         The page you&apos;re looking for doesn&apos;t exist or may have been moved.
       </p>
 
       <form method="GET" action="/search" className="mb-8">
-        <div className="flex border border-ih-border bg-ih-surface max-w-[400px] mx-auto">
+        <div className="border-ih-border bg-ih-surface mx-auto flex max-w-[400px] border">
           <input
             name="q"
             type="text"
             placeholder="Search products…"
-            className="flex-1 px-4 py-2.5 bg-transparent text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none"
+            className="text-ih-ink placeholder:text-ih-muted-2 flex-1 bg-transparent px-4 py-2.5 text-[13px] focus:outline-none"
           />
           <button
             type="submit"
-            className="px-4 border-l border-ih-border bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
+            className="border-ih-border bg-ih-accent border-l px-4 font-mono text-[12px] text-white hover:opacity-90"
           >
             Search
           </button>
@@ -42,7 +42,7 @@ export default async function NotFound() {
 
       {categories.length > 0 && (
         <div>
-          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+          <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
             Browse Categories
           </p>
           <div className="flex flex-wrap justify-center gap-2">
@@ -50,7 +50,7 @@ export default async function NotFound() {
               <Link
                 key={cat.slug}
                 href={`/c/${cat.slug}`}
-                className="px-4 py-2 border border-ih-border bg-ih-surface font-mono text-[12px] text-ih-ink-2 hover:border-ih-accent hover:text-ih-ink transition-colors"
+                className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-ink border px-4 py-2 font-mono text-[12px] transition-colors"
               >
                 {cat.name}
               </Link>
@@ -60,7 +60,7 @@ export default async function NotFound() {
       )}
 
       <div className="mt-8">
-        <Link href="/" className="font-mono text-[12px] text-ih-accent hover:underline">
+        <Link href="/" className="text-ih-accent font-mono text-[12px] hover:underline">
           ← Back to home
         </Link>
       </div>

@@ -15,7 +15,7 @@ export default async function AiRunsPage() {
   })
 
   const actorIds = Array.from(
-    new Set(rows.map((r) => r.createdById).filter((id): id is string => !!id)),
+    new Set(rows.map((r) => r.createdById).filter((id): id is string => !!id))
   )
   const actors = actorIds.length
     ? await db.staffUser.findMany({
@@ -27,7 +27,7 @@ export default async function AiRunsPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="rounded-lg border border-ih-border py-16 text-center max-w-[800px]">
+      <div className="border-ih-border max-w-[800px] rounded-lg border py-16 text-center">
         <p className="text-ih-muted text-[13px]">
           No AI suggestions yet. Click &ldquo;Suggest&rdquo; in any SEO drawer to generate one.
         </p>
@@ -36,10 +36,10 @@ export default async function AiRunsPage() {
   }
 
   return (
-    <div className="rounded-lg border border-ih-border overflow-hidden max-w-full">
+    <div className="border-ih-border max-w-full overflow-hidden rounded-lg border">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-ih-border bg-ih-surface-2">
+          <tr className="border-ih-border bg-ih-surface-2 border-b">
             <Th>When</Th>
             <Th>Actor</Th>
             <Th>Entity</Th>
@@ -52,13 +52,13 @@ export default async function AiRunsPage() {
         </thead>
         <tbody>
           {rows.map((row) => {
-            const actorName = row.createdById ? actorById.get(row.createdById) ?? null : null
+            const actorName = row.createdById ? (actorById.get(row.createdById) ?? null) : null
             return (
               <tr
                 key={row.id}
-                className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2 align-top"
+                className="border-ih-border hover:bg-ih-surface-2 border-b align-top last:border-0"
               >
-                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
+                <td className="text-ih-muted px-3 py-3 text-[11px] whitespace-nowrap tabular-nums">
                   {row.createdAt.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -66,31 +66,27 @@ export default async function AiRunsPage() {
                     minute: '2-digit',
                   })}
                 </td>
-                <td className="px-3 py-3 text-[12px] text-ih-ink-2">
+                <td className="text-ih-ink-2 px-3 py-3 text-[12px]">
                   {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
-                <td className="px-3 py-3 tabular-nums text-[11px]">
+                <td className="px-3 py-3 text-[11px] tabular-nums">
                   <div>{row.entityType}</div>
-                  <div className="text-ih-muted text-[11px] truncate max-w-[160px]">
+                  <div className="text-ih-muted max-w-[160px] truncate text-[11px]">
                     {row.entityId}
                   </div>
                 </td>
-                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-ink-2">
-                  {row.field}
-                </td>
-                <td className="px-3 py-3 text-[12px] max-w-[360px] whitespace-pre-wrap break-words">
+                <td className="text-ih-ink-2 px-3 py-3 text-[11px] tabular-nums">{row.field}</td>
+                <td className="max-w-[360px] px-3 py-3 text-[12px] break-words whitespace-pre-wrap">
                   {row.output}
                 </td>
                 <td className="px-3 py-3">
                   <StatusPill status={row.status} />
                 </td>
-                <td className="px-3 py-3 text-[11px] text-ih-muted tabular-nums whitespace-nowrap">
+                <td className="text-ih-muted px-3 py-3 text-[11px] whitespace-nowrap tabular-nums">
                   ${(row.costUsdMicros / 1_000_000).toFixed(4)}
                 </td>
-                <td className="px-3 py-3 text-[11px] text-ih-muted tabular-nums">
-                  {row.cacheHitRatio !== null
-                    ? `${(row.cacheHitRatio * 100).toFixed(0)}%`
-                    : '—'}
+                <td className="text-ih-muted px-3 py-3 text-[11px] tabular-nums">
+                  {row.cacheHitRatio !== null ? `${(row.cacheHitRatio * 100).toFixed(0)}%` : '—'}
                 </td>
               </tr>
             )
@@ -111,7 +107,9 @@ function StatusPill({ status }: { status: string }) {
           ? 'text-ih-muted bg-ih-surface-2'
           : 'text-ih-warning-ink bg-ih-warning-soft'
   return (
-    <span className={`inline-block px-2 py-0.5 tabular-nums text-[10.5px] uppercase tracking-wider ${tone}`}>
+    <span
+      className={`inline-block px-2 py-0.5 text-[10.5px] tracking-wider uppercase tabular-nums ${tone}`}
+    >
       {status}
     </span>
   )
@@ -119,7 +117,7 @@ function StatusPill({ status }: { status: string }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

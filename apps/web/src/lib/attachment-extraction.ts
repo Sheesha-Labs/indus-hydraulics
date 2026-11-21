@@ -69,8 +69,14 @@ const SCHEMA = {
           qty: { type: ['number', 'null'] },
           unit: { type: ['string', 'null'] },
           partNumber: { type: ['string', 'null'] },
-          certification: { type: ['string', 'null'], description: 'e.g. 3.1 MTC, IACS. Null if not stated.' },
-          sourceText: { type: 'string', description: 'Verbatim text from the document for this row.' },
+          certification: {
+            type: ['string', 'null'],
+            description: 'e.g. 3.1 MTC, IACS. Null if not stated.',
+          },
+          sourceText: {
+            type: 'string',
+            description: 'Verbatim text from the document for this row.',
+          },
         },
       },
     },
@@ -94,7 +100,8 @@ Rules, in order of importance:
 function costMicros(u: { input_tokens?: number; output_tokens?: number } | undefined): number {
   if (!u) return 0
   return Math.round(
-    (((u.input_tokens ?? 0) / 1e6) * PRICE.input + ((u.output_tokens ?? 0) / 1e6) * PRICE.output) * 1e6,
+    (((u.input_tokens ?? 0) / 1e6) * PRICE.input + ((u.output_tokens ?? 0) / 1e6) * PRICE.output) *
+      1e6
   )
 }
 
@@ -114,7 +121,7 @@ function appearsVerbatim(quote: string, haystack: string): boolean {
  */
 export function keepEvidencedLines(
   raw: unknown,
-  documentText: string | null,
+  documentText: string | null
 ): { kept: ExtractedAttachmentLine[]; dropped: number } {
   if (!Array.isArray(raw)) return { kept: [], dropped: 0 }
 
@@ -122,18 +129,31 @@ export function keepEvidencedLines(
   let dropped = 0
 
   for (const item of raw) {
-    if (typeof item !== 'object' || item === null) { dropped += 1; continue }
+    if (typeof item !== 'object' || item === null) {
+      dropped += 1
+      continue
+    }
     const l = item as Partial<ExtractedAttachmentLine>
 
-    if (typeof l.description !== 'string' || !l.description.trim()) { dropped += 1; continue }
-    if (typeof l.sourceText !== 'string' || !l.sourceText.trim()) { dropped += 1; continue }
-    if (documentText !== null && !appearsVerbatim(l.sourceText, documentText)) { dropped += 1; continue }
+    if (typeof l.description !== 'string' || !l.description.trim()) {
+      dropped += 1
+      continue
+    }
+    if (typeof l.sourceText !== 'string' || !l.sourceText.trim()) {
+      dropped += 1
+      continue
+    }
+    if (documentText !== null && !appearsVerbatim(l.sourceText, documentText)) {
+      dropped += 1
+      continue
+    }
 
     kept.push({
       description: l.description.trim(),
       qty: typeof l.qty === 'number' && Number.isFinite(l.qty) ? l.qty : null,
       unit: typeof l.unit === 'string' && l.unit.trim() ? l.unit.trim().toUpperCase() : null,
-      partNumber: typeof l.partNumber === 'string' && l.partNumber.trim() ? l.partNumber.trim() : null,
+      partNumber:
+        typeof l.partNumber === 'string' && l.partNumber.trim() ? l.partNumber.trim() : null,
       certification:
         typeof l.certification === 'string' && l.certification.trim()
           ? l.certification.trim().toUpperCase()
@@ -164,7 +184,10 @@ export async function sheetToText(buffer: Buffer): Promise<string> {
       const cells: string[] = []
       row.eachCell({ includeEmpty: true }, (cell) => {
         const v = cell.value
-        if (v === null || v === undefined) { cells.push(''); return }
+        if (v === null || v === undefined) {
+          cells.push('')
+          return
+        }
         if (typeof v === 'object' && 'richText' in v) {
           cells.push((v.richText as Array<{ text: string }>).map((t) => t.text).join(''))
         } else if (typeof v === 'object' && 'text' in v) {
@@ -197,14 +220,26 @@ async function extractFromText(text: string, kind: string): Promise<AttachmentEx
   const cost = costMicros(response.usage)
   const block = response.content.find((b): b is Anthropic.TextBlock => b.type === 'text')
   if (!block) {
-    return { status: 'failed', note: 'The model returned no output.', lines: [], costUsdMicros: cost, extractorName: `attachment-${kind}/v1` }
+    return {
+      status: 'failed',
+      note: 'The model returned no output.',
+      lines: [],
+      costUsdMicros: cost,
+      extractorName: `attachment-${kind}/v1`,
+    }
   }
 
   let parsed: { lines?: unknown }
   try {
     parsed = JSON.parse(block.text) as { lines?: unknown }
   } catch {
-    return { status: 'failed', note: 'The model output was not valid JSON.', lines: [], costUsdMicros: cost, extractorName: `attachment-${kind}/v1` }
+    return {
+      status: 'failed',
+      note: 'The model output was not valid JSON.',
+      lines: [],
+      costUsdMicros: cost,
+      extractorName: `attachment-${kind}/v1`,
+    }
   }
 
   const { kept, dropped } = keepEvidencedLines(parsed.lines, text)
@@ -241,7 +276,11 @@ async function extractFromPdf(buffer: Buffer): Promise<AttachmentExtraction> {
         content: [
           {
             type: 'document',
-            source: { type: 'base64', media_type: 'application/pdf', data: buffer.toString('base64') },
+            source: {
+              type: 'base64',
+              media_type: 'application/pdf',
+              data: buffer.toString('base64'),
+            },
           },
           { type: 'text', text: 'Return the line items from this RFQ sheet.' },
         ],
@@ -252,14 +291,26 @@ async function extractFromPdf(buffer: Buffer): Promise<AttachmentExtraction> {
   const cost = costMicros(response.usage)
   const block = response.content.find((b): b is Anthropic.TextBlock => b.type === 'text')
   if (!block) {
-    return { status: 'failed', note: 'The model returned no output.', lines: [], costUsdMicros: cost, extractorName: 'attachment-pdf/v1' }
+    return {
+      status: 'failed',
+      note: 'The model returned no output.',
+      lines: [],
+      costUsdMicros: cost,
+      extractorName: 'attachment-pdf/v1',
+    }
   }
 
   let parsed: { lines?: unknown }
   try {
     parsed = JSON.parse(block.text) as { lines?: unknown }
   } catch {
-    return { status: 'failed', note: 'The model output was not valid JSON.', lines: [], costUsdMicros: cost, extractorName: 'attachment-pdf/v1' }
+    return {
+      status: 'failed',
+      note: 'The model output was not valid JSON.',
+      lines: [],
+      costUsdMicros: cost,
+      extractorName: 'attachment-pdf/v1',
+    }
   }
 
   // The model read the file itself, so there is no extracted text to check a
@@ -291,7 +342,13 @@ export async function extractFromAttachment(input: {
   if (mime.includes('spreadsheetml') || ext === 'xlsx') {
     const text = await sheetToText(input.buffer)
     if (!text.trim()) {
-      return { status: 'failed', note: 'The workbook appeared to be empty.', lines: [], costUsdMicros: 0, extractorName: 'attachment-xlsx/v1' }
+      return {
+        status: 'failed',
+        note: 'The workbook appeared to be empty.',
+        lines: [],
+        costUsdMicros: 0,
+        extractorName: 'attachment-xlsx/v1',
+      }
     }
     return extractFromText(text, 'xlsx')
   }

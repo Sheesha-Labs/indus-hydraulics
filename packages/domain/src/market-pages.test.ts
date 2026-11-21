@@ -164,7 +164,9 @@ describe('market page records', () => {
     for (const page of pages) {
       const first = page.faqs[0]!
       expect(first.question, page.slug).toMatch(/^Do you have a branch in .+\?$/)
-      expect(first.answer.startsWith('No.'), `${page.slug}: ${first.answer.slice(0, 40)}`).toBe(true)
+      expect(first.answer.startsWith('No.'), `${page.slug}: ${first.answer.slice(0, 40)}`).toBe(
+        true
+      )
     }
   })
 

@@ -79,7 +79,7 @@ import { computeQuoteTotals, type QuoteTotals } from '@indus/domain'
 export type EstimateTotals = QuoteTotals
 
 export function computeTotals(
-  input: Pick<EstimateInput, 'lines' | 'vatRatePct' | 'discountTotal' | 'shipping'>,
+  input: Pick<EstimateInput, 'lines' | 'vatRatePct' | 'discountTotal' | 'shipping'>
 ): EstimateTotals {
   return computeQuoteTotals({
     lines: input.lines,

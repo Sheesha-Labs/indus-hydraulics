@@ -63,7 +63,7 @@ describe('RFQ state machine — canonical transitions per CLAUDE.md §7', () => 
   test('getValidTransitions returns the right next-state set for each state', () => {
     expect(getValidTransitions('draft').sort()).toEqual(['cancelled', 'submitted'].sort())
     expect(getValidTransitions('engineer_review').sort()).toEqual(
-      ['cancelled', 'engineer_questions_pending', 'quote_sent'].sort(),
+      ['cancelled', 'engineer_questions_pending', 'quote_sent'].sort()
     )
   })
 

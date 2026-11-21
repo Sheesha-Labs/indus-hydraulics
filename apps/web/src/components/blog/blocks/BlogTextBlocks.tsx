@@ -20,10 +20,12 @@ export function BlogSectionHeadView({ block }: { block: SectionHeadBlock }) {
   return (
     <h2
       id={block.anchor}
-      className="mt-5 flex scroll-mt-[124px] flex-col gap-2.5 border-t border-ih-border pt-6 min-[761px]:mt-8 min-[761px]:scroll-mt-[184px] min-[761px]:pt-7"
+      className="border-ih-border mt-5 flex scroll-mt-[124px] flex-col gap-2.5 border-t pt-6 min-[761px]:mt-8 min-[761px]:scroll-mt-[184px] min-[761px]:pt-7"
     >
-      <span className="font-mono text-[12px] font-medium tracking-[0.08em] text-ih-accent">{block.number}</span>
-      <span className="text-balance font-serif text-[28px] font-normal leading-[1.08] tracking-[-0.01em] text-ih-ink min-[761px]:text-[38px]">
+      <span className="text-ih-accent font-mono text-[12px] font-medium tracking-[0.08em]">
+        {block.number}
+      </span>
+      <span className="text-ih-ink font-serif text-[28px] leading-[1.08] font-normal tracking-[-0.01em] text-balance min-[761px]:text-[38px]">
         {block.title}
       </span>
     </h2>
@@ -44,7 +46,7 @@ const BODY: Record<BlogTextVariant, string> = {
 export function BlogLeadView({ block }: { block: LeadBlock }) {
   return (
     <p
-      className="ih-article-html text-pretty text-[18px] leading-[1.6] text-ih-ink min-[761px]:text-[21px]"
+      className="ih-article-html text-ih-ink text-[18px] leading-[1.6] text-pretty min-[761px]:text-[21px]"
       dangerouslySetInnerHTML={{ __html: block.html }}
     />
   )
@@ -59,7 +61,7 @@ export function BlogParagraphView({
 }) {
   return (
     <p
-      className={`ih-article-html text-pretty text-ih-ink-2 ${BODY[variant]}`}
+      className={`ih-article-html text-ih-ink-2 text-pretty ${BODY[variant]}`}
       dangerouslySetInnerHTML={{ __html: block.html }}
     />
   )
@@ -76,10 +78,16 @@ export function BlogParagraphView({
  * The HTML is sanitised on the way IN (`sanitizeBlogProseHtml`, on save), not
  * here.
  */
-export function BlogProseView({ block, variant = 'article' }: { block: ProseBlock; variant?: BlogTextVariant }) {
+export function BlogProseView({
+  block,
+  variant = 'article',
+}: {
+  block: ProseBlock
+  variant?: BlogTextVariant
+}) {
   return (
     <div
-      className={`ih-article-html text-pretty text-ih-ink-2 ${BODY[variant]}`}
+      className={`ih-article-html text-ih-ink-2 text-pretty ${BODY[variant]}`}
       dangerouslySetInnerHTML={{ __html: block.html }}
     />
   )

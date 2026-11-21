@@ -6,7 +6,16 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, countInStock, str, enquiryMailto, enquiryBody } from '@indus/domain'
+import {
+  buildBrandLd,
+  buildBreadcrumbLd,
+  buildCollectionLd,
+  buildFaqLd,
+  countInStock,
+  str,
+  enquiryMailto,
+  enquiryBody,
+} from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { CategoryFaqBand, categoryFaqs } from '../../../../components/category/CategoryBands'
 import { mediaUrl } from '../../../../lib/media'
@@ -125,7 +134,12 @@ export default async function BrandPage({ params }: Props) {
             stockQty: true,
             stockWarehouse: true,
             leadTimeDays: true,
-            category: { select: { slug: true, parent: { select: { slug: true, parent: { select: { slug: true } } } } } },
+            category: {
+              select: {
+                slug: true,
+                parent: { select: { slug: true, parent: { select: { slug: true } } } },
+              },
+            },
           },
         })
         .then((rows) =>
@@ -135,11 +149,13 @@ export default async function BrandPage({ params }: Props) {
               stockQty: r.stockQty,
               stockWarehouse: r.stockWarehouse,
               leadTimeDays: r.leadTimeDays,
-              categorySlugs: [r.category?.slug, r.category?.parent?.slug, r.category?.parent?.parent?.slug].filter(
-                (slug): slug is string => Boolean(slug),
-              ),
-            })),
-          ),
+              categorySlugs: [
+                r.category?.slug,
+                r.category?.parent?.slug,
+                r.category?.parent?.parent?.slug,
+              ].filter((slug): slug is string => Boolean(slug)),
+            }))
+          )
         ),
       db.product
         .groupBy({
@@ -240,14 +256,14 @@ export default async function BrandPage({ params }: Props) {
       <section className="border-ih-navy-2 bg-ih-navy border-b py-12 text-white">
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_320px] xl:px-12">
           <div>
-            <div className="text-ih-steel mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+            <div className="text-ih-steel mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
               <Link href={`/brands`} className="text-ih-steel hover:text-white">
                 BRANDS
               </Link>
               {brand.country ? ` / ${brand.country.toUpperCase()} · ` : ' / '}
               {brand.name.toUpperCase()}
             </div>
-            <h1 className="mb-2 mt-2 font-serif text-[clamp(34px,5vw,52px)] font-normal leading-[1.04] tracking-[-0.01em] text-white">
+            <h1 className="mt-2 mb-2 font-serif text-[clamp(34px,5vw,52px)] leading-[1.04] font-normal tracking-[-0.01em] text-white">
               {over(heroCopy, 'heading', brand.name)}
             </h1>
             {(str(heroCopy, 'description') ?? brand.description) ? (
@@ -297,7 +313,7 @@ export default async function BrandPage({ params }: Props) {
               specialist don't ship a generic-feeling placeholder. */}
               {brand.accountManagerName && (
                 <div className="border-ih-navy-2 bg-ih-navy-2/40 rounded-lg border p-5">
-                  <div className="mb-2.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-[oklch(0.68_0.03_250)]">
+                  <div className="mb-2.5 font-mono text-[10.5px] font-medium tracking-[0.12em] text-[oklch(0.68_0.03_250)] uppercase">
                     {over(
                       heroCopy,
                       'specialist_label',
@@ -353,10 +369,10 @@ export default async function BrandPage({ params }: Props) {
           >
             {statCells.map((cell) => (
               <div key={cell.label} className="border-ih-accent flex flex-col border-t-2 pt-3.5">
-                <div className="text-ih-muted order-2 mt-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em]">
+                <div className="text-ih-muted order-2 mt-2.5 font-mono text-[10.5px] tracking-[0.1em] uppercase">
                   {cell.label}
                 </div>
-                <div className="order-1 font-mono text-[26px] tabular-nums leading-none tracking-[-0.03em]">
+                <div className="order-1 font-mono text-[26px] leading-none tracking-[-0.03em] tabular-nums">
                   {cell.value}
                 </div>
                 {cell.context && (
@@ -443,7 +459,7 @@ export default async function BrandPage({ params }: Props) {
                   </div>
                   <div className="p-3">
                     <div className="text-ih-muted font-mono text-[10px]">{product.sku}</div>
-                    <div className="mb-2 mt-0.5 line-clamp-2 text-[13px] font-medium leading-[1.3]">
+                    <div className="mt-0.5 mb-2 line-clamp-2 text-[13px] leading-[1.3] font-medium">
                       {product.title}
                     </div>
                     <div className="text-ih-accent font-mono text-[11px]">Get quote →</div>
@@ -460,7 +476,7 @@ export default async function BrandPage({ params }: Props) {
     // stale templated story — that predates the editor and still holds.
     case_studies:
       brand.caseStudies.length > 0 ? (
-        <section className="bg-ih-surface border-ih-border border-b border-t">
+        <section className="bg-ih-surface border-ih-border border-t border-b">
           <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-5 py-12 sm:px-8 xl:px-12">
             {brand.caseStudies.map((cs, idx) => {
               const csStats = Array.isArray(cs.stats)
@@ -482,10 +498,10 @@ export default async function BrandPage({ params }: Props) {
                   }`}
                 >
                   <div>
-                    <div className="text-ih-muted mb-2 font-mono text-[11px] uppercase tracking-[0.14em]">
+                    <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.14em] uppercase">
                       {cs.tag}
                     </div>
-                    <h2 className="mb-3 text-[30px] font-semibold leading-[1.15] tracking-[-0.02em]">
+                    <h2 className="mb-3 text-[30px] leading-[1.15] font-semibold tracking-[-0.02em]">
                       {cs.title}
                     </h2>
                     <p className="text-ih-ink-2 mb-4 leading-[1.6]">{cs.description}</p>
@@ -545,7 +561,7 @@ export default async function BrandPage({ params }: Props) {
                   <div className="text-[13px] font-medium">{doc.title}</div>
                   <div className="text-ih-muted font-mono text-[11px]">{doc.product.sku}</div>
                 </div>
-                <span className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-8 shrink-0 items-center whitespace-nowrap border px-3 font-mono text-[11px] transition-colors">
+                <span className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-8 shrink-0 items-center border px-3 font-mono text-[11px] whitespace-nowrap transition-colors">
                   Download ↓
                 </span>
               </a>
@@ -573,7 +589,10 @@ export default async function BrandPage({ params }: Props) {
             `Our applications engineers carry deep ${brand.name} expertise. Send us the part number, a photo of the unit on the bench, or a use-case description — we reply within one business day with availability, lead time and a fixed-price quote.`
           )}
           whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${brand.name} products`)}
-          emailUrl={enquiryMailto({ subject: `${brand.name} enquiry`, body: enquiryBody({ about: `${brand.name} products`, url: brandUrl }) })}
+          emailUrl={enquiryMailto({
+            subject: `${brand.name} enquiry`,
+            body: enquiryBody({ about: `${brand.name} products`, url: brandUrl }),
+          })}
           phone={settings.contactPhone}
         />
       </section>

@@ -41,7 +41,7 @@ export default async function SuppliersPage() {
     <AdminPageShell
       title="Suppliers"
       sub={
-        <span className="text-[13px] text-ih-muted">
+        <span className="text-ih-muted text-[13px]">
           {suppliers.length} active · {reachable} reachable ({coverage}%) · contact coverage is the
           number that matters, not the supplier count
         </span>
@@ -65,7 +65,7 @@ export default async function SuppliersPage() {
             cell: (row) => (
               <div className="flex flex-col gap-0.5">
                 <span className="text-ih-ink">{row.name}</span>
-                <span className="text-[12px] text-ih-muted">
+                <span className="text-ih-muted text-[12px]">
                   {row.kind}
                   {row.country ? ` · ${row.country}` : ''}
                 </span>
@@ -88,7 +88,7 @@ export default async function SuppliersPage() {
             key: 'origin',
             header: 'Source',
             cell: (row) => (
-              <span className="tabular-nums text-[12px] text-ih-ink-2">
+              <span className="text-ih-ink-2 text-[12px] tabular-nums">
                 {ORIGIN_LABEL[row.origin] ?? row.origin}
               </span>
             ),
@@ -111,7 +111,7 @@ export default async function SuppliersPage() {
             header: 'RFQs / replies',
             numeric: true,
             cell: (row) => (
-              <span className="tabular-nums text-ih-ink-2">
+              <span className="text-ih-ink-2 tabular-nums">
                 {row.rfqsSent} / {row.repliesReceived}
               </span>
             ),

@@ -102,7 +102,7 @@ describe('imagery', () => {
   it('serves every image from the quality-control-images bucket', () => {
     for (const image of everyImage()) {
       expect(image.src).toMatch(
-        /^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/quality-control-images\//,
+        /^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/quality-control-images\//
       )
     }
   })
@@ -163,9 +163,7 @@ describe('the designed-page family is fully interlinked', () => {
     expect(MANUFACTURING_PAGE.oem.ctaHref).toBe(page.path)
     expect(MANUFACTURING_PAGE.related.map((r) => r.href)).toContain(page.path)
 
-    const dataCentre = DESIGNED_INDUSTRY_PAGES.find(
-      (p) => p.slug === 'data-center-liquid-cooling',
-    )
+    const dataCentre = DESIGNED_INDUSTRY_PAGES.find((p) => p.slug === 'data-center-liquid-cooling')
     expect(dataCentre?.risk.ctaHref).toBe(page.path)
   })
 })

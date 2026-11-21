@@ -98,7 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${geist.variable} ${instrumentSerif.variable} h-full`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-ih-bg text-ih-ink">
+      <body className="bg-ih-bg text-ih-ink flex min-h-full flex-col">
         {children}
         <VercelAnalytics />
       </body>

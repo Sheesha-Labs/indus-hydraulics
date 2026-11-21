@@ -52,12 +52,30 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
  * OG image still use it.
  */
 const HEROES: readonly { slug: string; alt: string }[] = [
-  { slug: 'oil-gas', alt: 'A BOP accumulator unit with rows of pressure bottles, a pump skid and bundled hydraulic hoses at the base of a desert land rig at sunset' },
-  { slug: 'mining', alt: 'Close-up of a mining shovel’s hydraulic boom cylinders and hoses as it loads a haul truck in an open-pit mine' },
-  { slug: 'marine', alt: 'A hydraulic anchor-handling winch on the wet aft deck of an offshore supply vessel, an oil platform on the horizon' },
-  { slug: 'steel', alt: 'A glowing steel strip passing through a hot rolling mill stand with its hydraulic cylinders and tubing' },
-  { slug: 'construction', alt: 'An excavator’s boom cylinders and hydraulic hoses on a construction site, a hazy city skyline behind' },
-  { slug: 'power', alt: 'Spillway radial gates on a hydroelectric dam, each raised by a pair of hydraulic cylinders, water rushing beneath' },
+  {
+    slug: 'oil-gas',
+    alt: 'A BOP accumulator unit with rows of pressure bottles, a pump skid and bundled hydraulic hoses at the base of a desert land rig at sunset',
+  },
+  {
+    slug: 'mining',
+    alt: 'Close-up of a mining shovel’s hydraulic boom cylinders and hoses as it loads a haul truck in an open-pit mine',
+  },
+  {
+    slug: 'marine',
+    alt: 'A hydraulic anchor-handling winch on the wet aft deck of an offshore supply vessel, an oil platform on the horizon',
+  },
+  {
+    slug: 'steel',
+    alt: 'A glowing steel strip passing through a hot rolling mill stand with its hydraulic cylinders and tubing',
+  },
+  {
+    slug: 'construction',
+    alt: 'An excavator’s boom cylinders and hydraulic hoses on a construction site, a hazy city skyline behind',
+  },
+  {
+    slug: 'power',
+    alt: 'Spillway radial gates on a hydroelectric dam, each raised by a pair of hydraulic cylinders, water rushing beneath',
+  },
 ] as const
 
 /**
@@ -65,34 +83,142 @@ const HEROES: readonly { slug: string; alt: string }[] = [
  * the match key — an edited title is reported, never guessed at.
  */
 const CASES: readonly { slug: string; n: number; title: string; alt: string }[] = [
-  { slug: 'oil-gas', n: 1, title: 'Mumbai Refinery — HPU overhaul on 14 FCC control valves', alt: 'Two technicians replacing a hydraulic actuator on a refinery control valve, a hydraulic power unit beside them' },
-  { slug: 'oil-gas', n: 2, title: 'BHS Neelam — BOP accumulator recharge', alt: 'A technician working on a BOP accumulator unit with charge pumps on an offshore platform deck' },
-  { slug: 'oil-gas', n: 3, title: 'Jamnagar DTA — actuator upgrade programme', alt: 'A technician commissioning a row of valve actuators on pipeline valves with a laptop, storage tanks behind' },
-  { slug: 'mining', n: 1, title: 'Singrauli — 48-unit roof support valve overhaul', alt: 'A miner with a cap lamp working on the hydraulic control valve of a longwall roof support underground' },
-  { slug: 'mining', n: 2, title: 'Lanjigarh — Komatsu 930E haul truck fleet', alt: 'Crates of hydraulic pump kits unloaded beside a line of large haul trucks in a mine yard' },
-  { slug: 'mining', n: 3, title: 'Mahan — continuous miner pump replacement', alt: 'A fitter lowering a hydraulic pump into a continuous miner underground, its cutter drum raised' },
-  { slug: 'marine', n: 1, title: 'VLGC Bhuvan — full hydraulics retrofit', alt: 'A gas carrier in dry dock with workers on scaffolding, hydraulic cylinders and power packs on the dock floor' },
-  { slug: 'marine', n: 2, title: 'AHTS Greatship Ahalya — winch upgrade', alt: 'Technicians working on the hydraulic anchor winch on the aft deck of a tug moored at a port quay' },
-  { slug: 'marine', n: 3, title: 'TSHD Aquarius — cutter drive overhaul', alt: 'A trailing suction hopper dredger at sea with its drag arm lowered over the side' },
-  { slug: 'steel', n: 1, title: 'Jamshedpur HSM — AGC servo valve overhaul', alt: 'A technician fitting a servo valve onto a hydraulic manifold beside a hot strip mill stand' },
-  { slug: 'steel', n: 2, title: 'Raigarh — continuous caster hydraulics', alt: 'Glowing steel billets running out of a multi-strand continuous casting machine' },
-  { slug: 'steel', n: 3, title: 'Renukoot — foil rolling press', alt: 'An overhead crane lowering a large hydraulic cylinder into a rolling press, aluminium coils behind' },
-  { slug: 'construction', n: 1, title: 'Bandra Dharavi — Cat 390 main pump', alt: 'A mechanic lifting a hydraulic pump assembly out of a large excavator on a city building site' },
-  { slug: 'construction', n: 2, title: 'Zojila tunnel — Liebherr LTM crane', alt: 'An all-terrain mobile crane on outriggers at a mountain tunnel portal in the snow' },
-  { slug: 'construction', n: 3, title: 'Pune — PM 47Z boom pump rebuild', alt: 'Technicians rebuilding the hydraulic cylinders of a concrete pump truck in a workshop' },
-  { slug: 'power', n: 1, title: 'Salal hydro — Kaplan runner blade controls', alt: 'A technician at an open turbine governor hydraulic cabinet in a hydroelectric generator hall' },
-  { slug: 'power', n: 2, title: 'Rojmal wind farm — pitch HPU overhaul', alt: 'A service technician standing on a wind turbine nacelle at sunrise above a wind farm' },
-  { slug: 'power', n: 3, title: 'Panchet dam — radial gate operators', alt: 'A crane on a dam crest lifting a hydraulic gate cylinder into place beside radial spillway gates' },
+  {
+    slug: 'oil-gas',
+    n: 1,
+    title: 'Mumbai Refinery — HPU overhaul on 14 FCC control valves',
+    alt: 'Two technicians replacing a hydraulic actuator on a refinery control valve, a hydraulic power unit beside them',
+  },
+  {
+    slug: 'oil-gas',
+    n: 2,
+    title: 'BHS Neelam — BOP accumulator recharge',
+    alt: 'A technician working on a BOP accumulator unit with charge pumps on an offshore platform deck',
+  },
+  {
+    slug: 'oil-gas',
+    n: 3,
+    title: 'Jamnagar DTA — actuator upgrade programme',
+    alt: 'A technician commissioning a row of valve actuators on pipeline valves with a laptop, storage tanks behind',
+  },
+  {
+    slug: 'mining',
+    n: 1,
+    title: 'Singrauli — 48-unit roof support valve overhaul',
+    alt: 'A miner with a cap lamp working on the hydraulic control valve of a longwall roof support underground',
+  },
+  {
+    slug: 'mining',
+    n: 2,
+    title: 'Lanjigarh — Komatsu 930E haul truck fleet',
+    alt: 'Crates of hydraulic pump kits unloaded beside a line of large haul trucks in a mine yard',
+  },
+  {
+    slug: 'mining',
+    n: 3,
+    title: 'Mahan — continuous miner pump replacement',
+    alt: 'A fitter lowering a hydraulic pump into a continuous miner underground, its cutter drum raised',
+  },
+  {
+    slug: 'marine',
+    n: 1,
+    title: 'VLGC Bhuvan — full hydraulics retrofit',
+    alt: 'A gas carrier in dry dock with workers on scaffolding, hydraulic cylinders and power packs on the dock floor',
+  },
+  {
+    slug: 'marine',
+    n: 2,
+    title: 'AHTS Greatship Ahalya — winch upgrade',
+    alt: 'Technicians working on the hydraulic anchor winch on the aft deck of a tug moored at a port quay',
+  },
+  {
+    slug: 'marine',
+    n: 3,
+    title: 'TSHD Aquarius — cutter drive overhaul',
+    alt: 'A trailing suction hopper dredger at sea with its drag arm lowered over the side',
+  },
+  {
+    slug: 'steel',
+    n: 1,
+    title: 'Jamshedpur HSM — AGC servo valve overhaul',
+    alt: 'A technician fitting a servo valve onto a hydraulic manifold beside a hot strip mill stand',
+  },
+  {
+    slug: 'steel',
+    n: 2,
+    title: 'Raigarh — continuous caster hydraulics',
+    alt: 'Glowing steel billets running out of a multi-strand continuous casting machine',
+  },
+  {
+    slug: 'steel',
+    n: 3,
+    title: 'Renukoot — foil rolling press',
+    alt: 'An overhead crane lowering a large hydraulic cylinder into a rolling press, aluminium coils behind',
+  },
+  {
+    slug: 'construction',
+    n: 1,
+    title: 'Bandra Dharavi — Cat 390 main pump',
+    alt: 'A mechanic lifting a hydraulic pump assembly out of a large excavator on a city building site',
+  },
+  {
+    slug: 'construction',
+    n: 2,
+    title: 'Zojila tunnel — Liebherr LTM crane',
+    alt: 'An all-terrain mobile crane on outriggers at a mountain tunnel portal in the snow',
+  },
+  {
+    slug: 'construction',
+    n: 3,
+    title: 'Pune — PM 47Z boom pump rebuild',
+    alt: 'Technicians rebuilding the hydraulic cylinders of a concrete pump truck in a workshop',
+  },
+  {
+    slug: 'power',
+    n: 1,
+    title: 'Salal hydro — Kaplan runner blade controls',
+    alt: 'A technician at an open turbine governor hydraulic cabinet in a hydroelectric generator hall',
+  },
+  {
+    slug: 'power',
+    n: 2,
+    title: 'Rojmal wind farm — pitch HPU overhaul',
+    alt: 'A service technician standing on a wind turbine nacelle at sunrise above a wind farm',
+  },
+  {
+    slug: 'power',
+    n: 3,
+    title: 'Panchet dam — radial gate operators',
+    alt: 'A crane on a dam crest lifting a hydraulic gate cylinder into place beside radial spillway gates',
+  },
 ] as const
 
 /** 4:3 panel beside each page's support block — 1600×1200 JPEG. */
 const SUPPORT: readonly { slug: string; alt: string }[] = [
-  { slug: 'oil-gas', alt: 'Two service engineers in coveralls unloading a crate of spare valves and actuators from a pickup at an oil and gas facility' },
-  { slug: 'mining', alt: 'A technician fitting an exchange hydraulic pump to a haul truck in a mine workshop, a colleague handing him a spanner' },
-  { slug: 'marine', alt: 'Two service engineers carrying tool bags and a crate of spares up the gangway of a supply vessel at a port quay' },
-  { slug: 'steel', alt: 'An engineer testing a servo valve on a portable test bench with a laptop beside a rolling mill during a shutdown' },
-  { slug: 'construction', alt: 'A technician handing a replacement hydraulic pump from a service van to an excavator operator on a construction site' },
-  { slug: 'power', alt: 'An engineer with a tablet checking the gauges of a turbine governor hydraulic power unit in a power station' },
+  {
+    slug: 'oil-gas',
+    alt: 'Two service engineers in coveralls unloading a crate of spare valves and actuators from a pickup at an oil and gas facility',
+  },
+  {
+    slug: 'mining',
+    alt: 'A technician fitting an exchange hydraulic pump to a haul truck in a mine workshop, a colleague handing him a spanner',
+  },
+  {
+    slug: 'marine',
+    alt: 'Two service engineers carrying tool bags and a crate of spares up the gangway of a supply vessel at a port quay',
+  },
+  {
+    slug: 'steel',
+    alt: 'An engineer testing a servo valve on a portable test bench with a laptop beside a rolling mill during a shutdown',
+  },
+  {
+    slug: 'construction',
+    alt: 'A technician handing a replacement hydraulic pump from a service van to an excavator operator on a construction site',
+  },
+  {
+    slug: 'power',
+    alt: 'An engineer with a tablet checking the gauges of a turbine governor hydraulic power unit in a power station',
+  },
 ] as const
 
 /** Loads the Supabase storage credentials, which only live in the web app's env file. */
@@ -209,7 +335,9 @@ async function main() {
       continue
     }
     if (ind.heroId) {
-      problems.push(`${hero.slug}: already has a different hero (${ind.hero?.originalFilename ?? ind.heroId}) — left alone`)
+      problems.push(
+        `${hero.slug}: already has a different hero (${ind.hero?.originalFilename ?? ind.heroId}) — left alone`
+      )
       continue
     }
     const up = await upload(sb, dir, file, `heroes/${file}`, hero.alt, dryRun)
@@ -306,7 +434,13 @@ async function main() {
         await t.media.create({ data: up.media, select: { id: true } })
         await t.industry.update({
           where: { id: ind.id },
-          data: { supportBlock: { ...(block as Record<string, unknown>), image: publicUrl, imageAlt: sp.alt } },
+          data: {
+            supportBlock: {
+              ...(block as Record<string, unknown>),
+              image: publicUrl,
+              imageAlt: sp.alt,
+            },
+          },
         })
       }, tx)
       console.log(`support ${file} -> ${ind.name}`)

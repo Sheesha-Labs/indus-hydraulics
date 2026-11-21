@@ -43,35 +43,37 @@ export default function JointRatingCalculator() {
           limiting ? 'border-ih-accent bg-ih-accent-soft' : 'border-ih-border bg-ih-surface'
         }`}
       >
-        <span className="mono text-[9.5px] uppercase tracking-[0.12em] text-ih-muted">{label}</span>
-        <span className="text-[13.5px] font-medium text-ih-ink">{ratingConnection(id).name}</span>
-        <span className="font-mono text-[18px] tabular-nums tracking-[-0.02em] text-ih-ink">
+        <span className="mono text-ih-muted text-[9.5px] tracking-[0.12em] uppercase">{label}</span>
+        <span className="text-ih-ink text-[13.5px] font-medium">{ratingConnection(id).name}</span>
+        <span className="text-ih-ink font-mono text-[18px] tracking-[-0.02em] tabular-nums">
           {psi === undefined ? (
-            <span className="text-[13px] text-ih-muted">Not rated at this size</span>
+            <span className="text-ih-muted text-[13px]">Not rated at this size</span>
           ) : (
             <>
-              {fmt(psi)} <span className="text-[12px] text-ih-muted">psi</span>
-              <span className="ml-3 text-[14px] text-ih-ink-2">{fmt(psiToBar(psi))}</span>{' '}
-              <span className="text-[12px] text-ih-muted">bar</span>
+              {fmt(psi)} <span className="text-ih-muted text-[12px]">psi</span>
+              <span className="text-ih-ink-2 ml-3 text-[14px]">{fmt(psiToBar(psi))}</span>{' '}
+              <span className="text-ih-muted text-[12px]">bar</span>
             </>
           )}
         </span>
         {limiting ? (
-          <span className="mono text-[10px] uppercase tracking-[0.1em] text-ih-accent">Limits the joint</span>
+          <span className="mono text-ih-accent text-[10px] tracking-[0.1em] uppercase">
+            Limits the joint
+          </span>
         ) : null}
       </div>
     )
   }
 
   return (
-    <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
+    <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
       <form
         aria-label="Rate a joint"
         onSubmit={(event) => event.preventDefault()}
-        className="grid grid-cols-1 gap-3 border-b border-ih-border bg-ih-surface-2 p-4 sm:grid-cols-3"
+        className="border-ih-border bg-ih-surface-2 grid grid-cols-1 gap-3 border-b p-4 sm:grid-cols-3"
       >
         <label className="flex flex-col gap-1.5">
-          <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">End A</span>
+          <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">End A</span>
           <Select
             id="joint-end-a"
             className="h-10 text-[13.5px]"
@@ -86,7 +88,7 @@ export default function JointRatingCalculator() {
           </Select>
         </label>
         <label className="flex flex-col gap-1.5">
-          <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">End B</span>
+          <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">End B</span>
           <Select
             id="joint-end-b"
             className="h-10 text-[13.5px]"
@@ -101,7 +103,7 @@ export default function JointRatingCalculator() {
           </Select>
         </label>
         <label className="flex flex-col gap-1.5">
-          <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">Size</span>
+          <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">Size</span>
           <Select
             id="joint-size"
             className="h-10 text-[13.5px]"
@@ -123,18 +125,23 @@ export default function JointRatingCalculator() {
           {endCard(endB, 'End B')}
         </div>
 
-        <div aria-live="polite" className="flex flex-col justify-center border-t border-ih-border pt-5 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+        <div
+          aria-live="polite"
+          className="border-ih-border flex flex-col justify-center border-t pt-5 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8"
+        >
           {result.status === 'rated' ? (
             <>
-              <p className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">Joint working pressure</p>
-              <p className="mt-2 font-mono text-[40px] leading-none tracking-[-0.03em] text-ih-ink">
-                {fmt(result.psi)}
-                <span className="ml-1.5 text-[15px] tracking-normal text-ih-muted">psi</span>
+              <p className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">
+                Joint working pressure
               </p>
-              <p className="mono mt-1.5 text-[15px] text-ih-ink-2">
+              <p className="text-ih-ink mt-2 font-mono text-[40px] leading-none tracking-[-0.03em]">
+                {fmt(result.psi)}
+                <span className="text-ih-muted ml-1.5 text-[15px] tracking-normal">psi</span>
+              </p>
+              <p className="mono text-ih-ink-2 mt-1.5 text-[15px]">
                 {fmt(psiToBar(result.psi))} <span className="text-ih-muted">bar</span>
               </p>
-              <p className="mt-3 text-[13px] leading-[1.55] text-ih-muted">
+              <p className="text-ih-muted mt-3 text-[13px] leading-[1.55]">
                 {result.governedBy.length > 1
                   ? 'Both ends share the limit at this size.'
                   : `The ${ratingConnection(result.governedBy[0] as RatingConnectionId).short} end sets the limit.`}
@@ -145,12 +152,14 @@ export default function JointRatingCalculator() {
             </>
           ) : (
             <>
-              <p className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">Joint working pressure</p>
-              <p className="mt-2 text-[15px] font-medium text-ih-ink">No published figure</p>
-              <p className="mt-2 text-[13px] leading-[1.55] text-ih-muted">
+              <p className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">
+                Joint working pressure
+              </p>
+              <p className="text-ih-ink mt-2 text-[15px] font-medium">No published figure</p>
+              <p className="text-ih-muted mt-2 text-[13px] leading-[1.55]">
                 {result.missing.map((id) => ratingConnection(id).short).join(' and ')}{' '}
-                {result.missing.length > 1 ? 'have' : 'has'} no published rating at -{dash}. That is not a high rating —
-                ask us before using it.
+                {result.missing.length > 1 ? 'have' : 'has'} no published rating at -{dash}. That is
+                not a high rating — ask us before using it.
               </p>
             </>
           )}

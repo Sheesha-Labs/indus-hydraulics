@@ -44,7 +44,7 @@ function normalisePath(path: string): string {
  */
 export async function recordSlugRedirect(
   tx: Tx,
-  opts: { fromPath: string; toPath: string; statusCode?: number; notes?: string },
+  opts: { fromPath: string; toPath: string; statusCode?: number; notes?: string }
 ): Promise<void> {
   const fromPath = normalisePath(opts.fromPath)
   const toPath = normalisePath(opts.toPath)

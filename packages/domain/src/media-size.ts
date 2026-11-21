@@ -89,7 +89,8 @@ export function parseMediaStoragePath(storagePath: string): MediaStorageRef {
   }
 
   const slash = raw.indexOf('/')
-  if (slash > 0) return { kind: 'bucket-key', bucket: raw.slice(0, slash), key: raw.slice(slash + 1) }
+  if (slash > 0)
+    return { kind: 'bucket-key', bucket: raw.slice(0, slash), key: raw.slice(slash + 1) }
 
   return { kind: 'bare-key', key: raw }
 }
@@ -161,7 +162,12 @@ export async function measureRemoteBytes(
     const controller = new AbortController()
     const timer = setTimeout(() => controller.abort(), timeoutMs)
     try {
-      return await fetchImpl(url, { method, redirect: 'follow', signal: controller.signal, headers })
+      return await fetchImpl(url, {
+        method,
+        redirect: 'follow',
+        signal: controller.signal,
+        headers,
+      })
     } finally {
       clearTimeout(timer)
     }
@@ -209,6 +215,10 @@ export async function measureRemoteBytes(
       detail: `HEAD ${headStatus === -1 ? 'failed' : headStatus}, GET ${ranged.status}, no length`,
     }
   } catch (err) {
-    return { ok: false, reason: 'unreachable', detail: err instanceof Error ? err.message : String(err) }
+    return {
+      ok: false,
+      reason: 'unreachable',
+      detail: err instanceof Error ? err.message : String(err),
+    }
   }
 }

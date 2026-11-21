@@ -20,7 +20,7 @@ import { stockLine } from '../../lib/category-bands'
 
 function Eyebrow({ children }: { children: string }) {
   return (
-    <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+    <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
       {children}
     </p>
   )
@@ -28,7 +28,7 @@ function Eyebrow({ children }: { children: string }) {
 
 function Heading({ children }: { children: string }) {
   return (
-    <h2 className="mb-4 font-serif text-[clamp(22px,2.6vw,28px)] font-normal leading-[1.12] tracking-[-0.01em]">
+    <h2 className="mb-4 font-serif text-[clamp(22px,2.6vw,28px)] leading-[1.12] font-normal tracking-[-0.01em]">
       {children}
     </h2>
   )
@@ -99,10 +99,10 @@ export function CategorySizeBand({ summary }: { summary: CategorySizeSummary | n
 function Figure({ value, label }: { value: string; label: string }) {
   return (
     <div className="flex flex-col gap-1">
-      <span className="font-mono text-[24px] font-medium tabular-nums leading-none tracking-[-0.02em]">
+      <span className="font-mono text-[24px] leading-none font-medium tracking-[-0.02em] tabular-nums">
         {value}
       </span>
-      <span className="text-ih-muted font-mono text-[11px] uppercase tracking-[0.1em]">
+      <span className="text-ih-muted font-mono text-[11px] tracking-[0.1em] uppercase">
         {label}
       </span>
     </div>
@@ -178,7 +178,7 @@ export function CategoryDeliveryBand({
               className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-[12.5px] transition-colors"
             >
               {market.name}
-              <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
+              <span className="text-ih-muted font-mono text-[10.5px] tracking-[0.08em] uppercase">
                 {market.leadTime}
               </span>
             </Link>
@@ -187,13 +187,13 @@ export function CategoryDeliveryBand({
       )}
       {exportRegions && (
         <div className="border-ih-border mt-6 border-t pt-5">
-          <p className="mono text-ih-muted mb-3 text-[10.5px] uppercase tracking-[0.12em]">
+          <p className="mono text-ih-muted mb-3 text-[10.5px] tracking-[0.12em] uppercase">
             Beyond the Gulf
           </p>
           <dl className="grid gap-x-8 gap-y-4 sm:grid-cols-3">
             {exportRegions.groups.map((group) => (
               <div key={group.region}>
-                <dt className="mono text-ih-muted text-[10.5px] uppercase tracking-[0.12em]">
+                <dt className="mono text-ih-muted text-[10.5px] tracking-[0.12em] uppercase">
                   {group.region}
                 </dt>
                 <dd className="text-ih-ink m-0 mt-1 text-[14px] leading-[1.55]">
@@ -269,11 +269,11 @@ function BriefCard({
 }) {
   return (
     <article className="group/brief border-ih-border bg-ih-surface flex w-[280px] shrink-0 snap-start flex-col rounded-lg border p-4 md:w-auto">
-      <p className="text-ih-muted font-mono text-[10px] font-medium uppercase tracking-[0.13em]">
+      <p className="text-ih-muted font-mono text-[10px] font-medium tracking-[0.13em] uppercase">
         {eyebrow}
       </p>
       {title && (
-        <h2 className="mt-1.5 text-[14.5px] font-semibold leading-[1.3] tracking-[-0.01em]">
+        <h2 className="mt-1.5 text-[14.5px] leading-[1.3] font-semibold tracking-[-0.01em]">
           {title}
         </h2>
       )}
@@ -292,7 +292,9 @@ function BriefCard({
               +
             </span>
           </summary>
-          <div className="text-ih-ink-2 mt-2 flex flex-col gap-2 text-[13px] leading-[1.55]">{more}</div>
+          <div className="text-ih-ink-2 mt-2 flex flex-col gap-2 text-[13px] leading-[1.55]">
+            {more}
+          </div>
         </details>
       )}
     </article>
@@ -323,13 +325,15 @@ export function CategoryProseBrief({
       title={heading}
       lead={first ? <p>{first}</p> : null}
       more={
-        needsMore
-          ? rest.length > 0
-            ? rest.map((paragraph) => <p key={paragraph.slice(0, 40)}>{paragraph}</p>)
-            : // Nothing left to reveal but the clamped tail: the open state
-              // lifts the clamp, so the disclosure only has to exist.
-              <span className="sr-only">Full text shown above</span>
-          : undefined
+        needsMore ? (
+          rest.length > 0 ? (
+            rest.map((paragraph) => <p key={paragraph.slice(0, 40)}>{paragraph}</p>)
+          ) : (
+            // Nothing left to reveal but the clamped tail: the open state
+            // lifts the clamp, so the disclosure only has to exist.
+            <span className="sr-only">Full text shown above</span>
+          )
+        ) : undefined
       }
     />
   )
@@ -367,10 +371,12 @@ export function CategorySizeBrief({ summary }: { summary: CategorySizeSummary | 
 function BriefFigure({ value, label }: { value: string; label: string }) {
   return (
     <span className="flex flex-col">
-      <span className="text-ih-ink font-mono text-[18px] font-medium tabular-nums leading-tight tracking-[-0.02em]">
+      <span className="text-ih-ink font-mono text-[18px] leading-tight font-medium tracking-[-0.02em] tabular-nums">
         {value}
       </span>
-      <span className="text-ih-muted font-mono text-[10px] uppercase tracking-[0.1em]">{label}</span>
+      <span className="text-ih-muted font-mono text-[10px] tracking-[0.1em] uppercase">
+        {label}
+      </span>
     </span>
   )
 }
@@ -395,7 +401,10 @@ export function CategoryDeliveryBrief({
   const paragraphs = paragraphsOf(str(values, 'body'))
   const generated = paragraphs.length === 0 && exportRegions ? exportRegions.body : null
   const lead = stock ?? paragraphs[0] ?? generated
-  const restParagraphs = [...(stock ? paragraphs : paragraphs.slice(1)), ...(generated && lead !== generated ? [generated] : [])]
+  const restParagraphs = [
+    ...(stock ? paragraphs : paragraphs.slice(1)),
+    ...(generated && lead !== generated ? [generated] : []),
+  ]
 
   return (
     <BriefCard
@@ -417,7 +426,7 @@ export function CategoryDeliveryBrief({
                     className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] transition-colors"
                   >
                     {market.name}
-                    <span className="text-ih-muted font-mono text-[10px] uppercase tracking-[0.06em]">
+                    <span className="text-ih-muted font-mono text-[10px] tracking-[0.06em] uppercase">
                       {market.leadTime}
                     </span>
                   </Link>
@@ -429,7 +438,7 @@ export function CategoryDeliveryBrief({
             <dl className="m-0 flex flex-col gap-2">
               {exportRegions.groups.map((group) => (
                 <div key={group.region}>
-                  <dt className="text-ih-muted font-mono text-[10px] uppercase tracking-[0.12em]">
+                  <dt className="text-ih-muted font-mono text-[10px] tracking-[0.12em] uppercase">
                     {group.region}
                   </dt>
                   <dd className="m-0 mt-0.5">
@@ -472,7 +481,7 @@ export function CategoryBriefStrip({ children }: { children: ReactNode[] }) {
   // the full bands further down the page still carry the same copy there.
   return (
     <div className="border-ih-border hidden border-b py-4 md:block">
-      <div className="no-scrollbar -mx-5 flex snap-x snap-mandatory scroll-px-5 items-start gap-3 sm:scroll-px-8 md:items-stretch overflow-x-auto px-5 sm:-mx-8 sm:px-8 md:mx-0 md:grid md:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] md:overflow-visible md:px-0">
+      <div className="no-scrollbar -mx-5 flex snap-x snap-mandatory scroll-px-5 items-start gap-3 overflow-x-auto px-5 sm:-mx-8 sm:scroll-px-8 sm:px-8 md:mx-0 md:grid md:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] md:items-stretch md:overflow-visible md:px-0">
         {cards}
       </div>
     </div>
@@ -516,7 +525,7 @@ export function CategoryFaqBand({ values }: { values: SectionValues }) {
             key={faq.question}
             className={`flex flex-col gap-2 py-4 ${index > 0 ? 'border-ih-border border-t' : ''}`}
           >
-            <dt className="flex gap-3 text-[15.5px] font-medium leading-[1.4]">
+            <dt className="flex gap-3 text-[15.5px] leading-[1.4] font-medium">
               <span className="text-ih-accent font-mono text-[12px]">
                 {String(index + 1).padStart(2, '0')}
               </span>

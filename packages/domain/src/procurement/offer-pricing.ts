@@ -17,7 +17,19 @@
  */
 
 /** Order matters: later terms include more of the cost of getting it here. */
-export const INCOTERMS = ['EXW', 'FCA', 'FAS', 'FOB', 'CFR', 'CIF', 'CPT', 'CIP', 'DAP', 'DPU', 'DDP'] as const
+export const INCOTERMS = [
+  'EXW',
+  'FCA',
+  'FAS',
+  'FOB',
+  'CFR',
+  'CIF',
+  'CPT',
+  'CIP',
+  'DAP',
+  'DPU',
+  'DDP',
+] as const
 export type Incoterm = (typeof INCOTERMS)[number]
 
 /** Terms at or beyond this point already include main-carriage freight. */
@@ -94,7 +106,13 @@ export function computeLandedCost(input: LandedCostInput): LandedCost {
   const empty = { goodsAed: null, freightAed: null, dutyAed: null, moqWasteAed: null }
 
   if (offer.unitPrice == null) {
-    return { perUnitAed: null, totalAed: null, purchaseQty: 0, flags: ['no_price'], breakdown: empty }
+    return {
+      perUnitAed: null,
+      totalAed: null,
+      purchaseQty: 0,
+      flags: ['no_price'],
+      breakdown: empty,
+    }
   }
 
   // We must buy at least the MOQ, but the customer only needs requestedQty.
@@ -120,8 +138,13 @@ export function computeLandedCost(input: LandedCostInput): LandedCost {
   if (!freightIncluded && input.freightPerUnitAed == null) flags.push('freight_unknown')
   if (!dutyIncluded && input.dutyPct == null) flags.push('duty_unknown')
 
-  const blocking = flags.some((f) =>
-    f === 'fx_missing' || f === 'fx_stale' || f === 'freight_unknown' || f === 'duty_unknown' || f === 'incoterm_unknown',
+  const blocking = flags.some(
+    (f) =>
+      f === 'fx_missing' ||
+      f === 'fx_stale' ||
+      f === 'freight_unknown' ||
+      f === 'duty_unknown' ||
+      f === 'incoterm_unknown'
   )
   if (blocking || fx == null) {
     return { perUnitAed: null, totalAed: null, purchaseQty, flags, breakdown: empty }
@@ -181,7 +204,7 @@ export type RankedOffer = {
  */
 export function rankOffers(
   offers: Array<{ offer: SupplierOfferLine; landed: LandedCost }>,
-  opts: { leadTimeWeightAedPerDay?: number } = {},
+  opts: { leadTimeWeightAedPerDay?: number } = {}
 ): RankedOffer[] {
   const perDay = opts.leadTimeWeightAedPerDay ?? 0
 
@@ -189,7 +212,12 @@ export function rankOffers(
     const incomparable = landed.perUnitAed == null
     const base = landed.perUnitAed ?? Number.POSITIVE_INFINITY
     const leadPenalty = perDay > 0 && offer.leadTimeDays != null ? offer.leadTimeDays * perDay : 0
-    return { offer, landed, score: incomparable ? Number.POSITIVE_INFINITY : base + leadPenalty, incomparable }
+    return {
+      offer,
+      landed,
+      score: incomparable ? Number.POSITIVE_INFINITY : base + leadPenalty,
+      incomparable,
+    }
   })
 
   return scored.sort((a, b) => {
@@ -209,11 +237,11 @@ export function rankOffers(
  */
 export function basketCoverage(
   supplierName: string,
-  allLines: Array<{ offers: SupplierOfferLine[] }>,
+  allLines: Array<{ offers: SupplierOfferLine[] }>
 ): { quoted: number; total: number; pct: number } {
   const total = allLines.length
   const quoted = allLines.filter((line) =>
-    line.offers.some((o) => o.supplierName === supplierName && o.unitPrice != null),
+    line.offers.some((o) => o.supplierName === supplierName && o.unitPrice != null)
   ).length
   return { quoted, total, pct: total === 0 ? 0 : Math.round((quoted / total) * 100) }
 }

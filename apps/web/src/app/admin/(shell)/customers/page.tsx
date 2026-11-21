@@ -74,25 +74,32 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
       title={'Customers'}
       actions={
         <Link
-        href={`/admin/customers/new`}
-        className="h-9 px-4 flex items-center bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
+          href={`/admin/customers/new`}
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center px-4 text-[12px] tabular-nums"
         >
-        + New Account
+          + New Account
         </Link>
       }
     >
       {/* Search + filters */}
-      <div className="flex flex-wrap items-center gap-3 mb-6">
-        <form method="GET" action={`/admin/customers`} className="rounded-md flex border border-ih-border bg-ih-surface h-9">
+      <div className="mb-6 flex flex-wrap items-center gap-3">
+        <form
+          method="GET"
+          action={`/admin/customers`}
+          className="border-ih-border bg-ih-surface flex h-9 rounded-md border"
+        >
           <input
             name="q"
             defaultValue={query}
             placeholder="Search by name or code…"
-            className="w-52 px-3 bg-transparent text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none"
+            className="text-ih-ink placeholder:text-ih-muted-2 w-52 bg-transparent px-3 text-[13px] focus:outline-none"
           />
           {statusFilter && <input type="hidden" name="status" value={statusFilter} />}
           {tierFilter && <input type="hidden" name="tier" value={tierFilter} />}
-          <button type="submit" className="px-3 border-l border-ih-border tabular-nums text-[11px] text-ih-muted hover:text-ih-ink">
+          <button
+            type="submit"
+            className="border-ih-border text-ih-muted hover:text-ih-ink border-l px-3 text-[11px] tabular-nums"
+          >
             Search
           </button>
         </form>
@@ -102,7 +109,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
             <Link
               key={s}
               href={filterUrl({ status: s || undefined })}
-              className={`rounded-lg px-3 py-1.5 tabular-nums text-[11px] border transition-colors capitalize ${
+              className={`rounded-lg border px-3 py-1.5 text-[11px] capitalize tabular-nums transition-colors ${
                 statusFilter === s
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -118,7 +125,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
             <Link
               key={t}
               href={filterUrl({ tier: t || undefined })}
-              className={`rounded-lg px-3 py-1.5 tabular-nums text-[11px] border transition-colors capitalize ${
+              className={`rounded-lg border px-3 py-1.5 text-[11px] capitalize tabular-nums transition-colors ${
                 tierFilter === t
                   ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
@@ -129,17 +136,19 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
           ))}
         </div>
 
-        <div className="ml-auto tabular-nums text-[12px] text-ih-muted">{accounts.length} accounts</div>
+        <div className="text-ih-muted ml-auto text-[12px] tabular-nums">
+          {accounts.length} accounts
+        </div>
       </div>
 
       {accounts.length === 0 ? (
-        <div className="py-16 rounded-lg border border-ih-border text-center">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted">No accounts match these filters.</p>
         </div>
       ) : (
-        <div className="overflow-hidden rounded-lg border border-ih-border">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           {/* Header */}
-          <div className="grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <div className="bg-ih-bg border-ih-border text-ih-muted grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             <div>Account</div>
             <div className="text-center">Tier</div>
             <div className="text-center">Status</div>
@@ -153,35 +162,42 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
             <Link
               key={acc.id}
               href={`/admin/customers/${acc.id}`}
-              className={`grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] px-4 py-3.5 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
+              className={`bg-ih-surface hover:bg-ih-surface-2 grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] items-center px-4 py-3.5 transition-colors ${i > 0 ? 'border-ih-border border-t' : ''}`}
             >
               <div>
-                <div className="text-[13px] font-medium text-ih-ink">{acc.legalName}</div>
-                <div className="tabular-nums text-[11px] text-ih-muted">{acc.code}</div>
+                <div className="text-ih-ink text-[13px] font-medium">{acc.legalName}</div>
+                <div className="text-ih-muted text-[11px] tabular-nums">{acc.code}</div>
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 tabular-nums text-[11px] font-medium capitalize ${TIER_COLORS[acc.tier] ?? ''}`}>
+                <span
+                  className={`px-2 py-0.5 text-[11px] font-medium capitalize tabular-nums ${TIER_COLORS[acc.tier] ?? ''}`}
+                >
                   {acc.tier}
                 </span>
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 tabular-nums text-[11px] font-medium capitalize ${STATUS_COLORS[acc.status] ?? ''}`}>
+                <span
+                  className={`px-2 py-0.5 text-[11px] font-medium capitalize tabular-nums ${STATUS_COLORS[acc.status] ?? ''}`}
+                >
                   {acc.status.replace('_', ' ')}
                 </span>
               </div>
-              <div className="text-[12px] text-ih-ink-2 truncate">
+              <div className="text-ih-ink-2 truncate text-[12px]">
                 {acc.assignedRep?.name ?? <span className="text-ih-muted-2">Unassigned</span>}
               </div>
-              <div className="text-center tabular-nums text-[13px] text-ih-ink">{acc._count.rfqs}</div>
-              <div className="text-center tabular-nums text-[13px] text-ih-ink">{acc._count.contacts}</div>
-              <div className="text-right tabular-nums text-[12px] text-ih-muted">
+              <div className="text-ih-ink text-center text-[13px] tabular-nums">
+                {acc._count.rfqs}
+              </div>
+              <div className="text-ih-ink text-center text-[13px] tabular-nums">
+                {acc._count.contacts}
+              </div>
+              <div className="text-ih-muted text-right text-[12px] tabular-nums">
                 {new Date(acc.createdAt).toLocaleDateString()}
               </div>
             </Link>
           ))}
         </div>
       )}
-    
     </AdminPageShell>
   )
 }

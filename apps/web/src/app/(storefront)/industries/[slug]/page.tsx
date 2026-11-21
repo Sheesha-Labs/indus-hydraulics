@@ -3,7 +3,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildServiceLd, designedIndustryPage, designedIndustrySlugs, industryMarketReach, type DesignedIndustryPage, enquiryMailto, enquiryBody } from '@indus/domain'
+import {
+  buildBreadcrumbLd,
+  buildServiceLd,
+  designedIndustryPage,
+  designedIndustrySlugs,
+  industryMarketReach,
+  type DesignedIndustryPage,
+  enquiryMailto,
+  enquiryBody,
+} from '@indus/domain'
 import { Breadcrumb, JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import DesignedIndustryLanding from '../../../../components/industries/DesignedIndustryLanding'
 import MarketReachSection from '../../../../components/markets/MarketReachSection'
@@ -57,7 +66,9 @@ type CategoryImageNode = {
 } | null
 
 /** The nearest category up the chain that has a card image. */
-function nearestCategoryImage(node: CategoryImageNode): { src: string; categoryName: string } | null {
+function nearestCategoryImage(
+  node: CategoryImageNode
+): { src: string; categoryName: string } | null {
   for (let n = node; n; n = n.parent ?? null) {
     if (n.image) return { src: n.image.storagePath, categoryName: n.name }
   }
@@ -209,7 +220,7 @@ export default async function IndustryPage({ params }: Props) {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.25fr_1fr]">
             <div>
               {ind.headline && (
-                <h1 className="mb-4 max-w-[16ch] text-balance font-serif text-[clamp(34px,4.5vw,50px)] font-normal leading-[1.05] tracking-[-0.01em]">
+                <h1 className="mb-4 max-w-[16ch] font-serif text-[clamp(34px,4.5vw,50px)] leading-[1.05] font-normal tracking-[-0.01em] text-balance">
                   {ind.headline}
                 </h1>
               )}
@@ -223,7 +234,7 @@ export default async function IndustryPage({ params }: Props) {
                   {ind.chips.map((chip) => (
                     <span
                       key={chip}
-                      className="border-ih-border bg-ih-surface-2 text-ih-ink-2 inline-flex h-[26px] items-center rounded-full border px-3 font-mono text-[10.5px] uppercase tracking-[0.08em]"
+                      className="border-ih-border bg-ih-surface-2 text-ih-ink-2 inline-flex h-[26px] items-center rounded-full border px-3 font-mono text-[10.5px] tracking-[0.08em] uppercase"
                     >
                       {chip}
                     </span>
@@ -243,7 +254,7 @@ export default async function IndustryPage({ params }: Props) {
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
               ) : (
-                <span className="text-ih-muted-2 absolute inset-0 grid place-items-center px-6 text-center font-mono text-[10.5px] uppercase tracking-[0.1em]">
+                <span className="text-ih-muted-2 absolute inset-0 grid place-items-center px-6 text-center font-mono text-[10.5px] tracking-[0.1em] uppercase">
                   {ind.name}
                 </span>
               )}
@@ -255,10 +266,10 @@ export default async function IndustryPage({ params }: Props) {
             <div className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {ind.stats.map((stat) => (
                 <div key={stat.label} className="border-ih-accent border-t-2 pt-3.5">
-                  <div className="font-mono text-[30px] tabular-nums leading-none tracking-[-0.03em]">
+                  <div className="font-mono text-[30px] leading-none tracking-[-0.03em] tabular-nums">
                     {stat.value}
                   </div>
-                  <div className="text-ih-muted mt-2.5 font-mono text-[10.5px] uppercase leading-normal tracking-[0.1em]">
+                  <div className="text-ih-muted mt-2.5 font-mono text-[10.5px] leading-normal tracking-[0.1em] uppercase">
                     {stat.label}
                   </div>
                 </div>
@@ -278,10 +289,10 @@ export default async function IndustryPage({ params }: Props) {
           <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-4">
             {ind.deliveryAreas.map((area) => (
               <div key={area.category} className="border-ih-border bg-ih-surface border p-5">
-                <div className="text-ih-accent mb-2 font-mono text-[11px] uppercase tracking-[0.1em]">
+                <div className="text-ih-accent mb-2 font-mono text-[11px] tracking-[0.1em] uppercase">
                   {area.category}
                 </div>
-                <h3 className="mb-1.5 text-[17px] font-semibold leading-snug">{area.title}</h3>
+                <h3 className="mb-1.5 text-[17px] leading-snug font-semibold">{area.title}</h3>
                 <p className="text-ih-muted mb-2.5 text-[13px] leading-[1.5]">{area.description}</p>
                 <div className="text-ih-muted font-mono text-[11px]">{area.skuCount} →</div>
               </div>
@@ -319,7 +330,10 @@ export default async function IndustryPage({ params }: Props) {
                         sizes="(max-width: 1360px) 25vw, 320px"
                       />
                     ) : fallback ? (
-                      <CategoryFallbackImage src={fallback.src} categoryName={fallback.categoryName} />
+                      <CategoryFallbackImage
+                        src={fallback.src}
+                        categoryName={fallback.categoryName}
+                      />
                     ) : (
                       <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         IMG
@@ -328,7 +342,7 @@ export default async function IndustryPage({ params }: Props) {
                   </div>
                   <div className="p-3">
                     <div className="text-ih-muted font-mono text-[10px]">{product.sku}</div>
-                    <div className="mb-1 mt-0.5 line-clamp-2 text-[13px] font-medium leading-snug">
+                    <div className="mt-0.5 mb-1 line-clamp-2 text-[13px] leading-snug font-medium">
                       {product.title}
                     </div>
                     {product.brand && (
@@ -346,9 +360,9 @@ export default async function IndustryPage({ params }: Props) {
 
       {/* ── Reference installs (case studies) ─────────────────── */}
       {ind.caseStudies.length > 0 && (
-        <section className="bg-ih-surface border-ih-border mt-8 border-b border-t py-14">
+        <section className="bg-ih-surface border-ih-border mt-8 border-t border-b py-14">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-            <div className="text-ih-muted mb-2 font-mono text-[11px] uppercase tracking-[0.14em]">
+            <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.14em] uppercase">
               Reference installs
             </div>
             <h2 className="mb-6 text-[32px] font-semibold tracking-[-0.02em]">
@@ -371,10 +385,10 @@ export default async function IndustryPage({ params }: Props) {
                     )}
                   </div>
                   <div className="p-[18px]">
-                    <div className="text-ih-muted font-mono text-[11px] uppercase tracking-[0.08em]">
+                    <div className="text-ih-muted font-mono text-[11px] tracking-[0.08em] uppercase">
                       {cs.tag}
                     </div>
-                    <h3 className="mb-2 mt-1.5 text-[18px] font-semibold leading-snug">
+                    <h3 className="mt-1.5 mb-2 text-[18px] leading-snug font-semibold">
                       {cs.title}
                     </h3>
                     <p className="text-ih-ink-2 text-[13px] leading-[1.5]">{cs.description}</p>
@@ -395,7 +409,13 @@ export default async function IndustryPage({ params }: Props) {
         heading={`Quoting a project in ${ind.name}?`}
         body={`Tell our applications team what you're specifying. We reply within one business day with availability, lead time and a fixed-price quote — no obligation.`}
         whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${ind.name} project`)}
-        emailUrl={enquiryMailto({ subject: `${ind.name} project enquiry`, body: enquiryBody({ about: `${ind.name} project`, url: urlFor(`/industries/${ind.slug}`) }) })}
+        emailUrl={enquiryMailto({
+          subject: `${ind.name} project enquiry`,
+          body: enquiryBody({
+            about: `${ind.name} project`,
+            url: urlFor(`/industries/${ind.slug}`),
+          }),
+        })}
         phone={settings.contactPhone}
       />
 
@@ -404,10 +424,10 @@ export default async function IndustryPage({ params }: Props) {
         <section className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 xl:px-12">
           <div className="grid grid-cols-2 items-center gap-12">
             <div>
-              <div className="text-ih-muted mb-2 font-mono text-[11px] uppercase tracking-[0.14em]">
+              <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.14em] uppercase">
                 {ind.supportBlock.eyebrow}
               </div>
-              <h2 className="mb-3.5 text-[32px] font-semibold leading-snug tracking-[-0.02em]">
+              <h2 className="mb-3.5 text-[32px] leading-snug font-semibold tracking-[-0.02em]">
                 {ind.supportBlock.headline}
               </h2>
               <p className="text-ih-ink-2 mb-4 text-[15px] leading-[1.6]">
@@ -506,7 +526,10 @@ async function renderDesigned(page: DesignedIndustryPage) {
         contactPhone={settings.contactPhone}
         contactEmail={settings.contactEmail}
         whatsappHref={buildWhatsappHref(settings.contactPhone, `Enquiry: ${page.card.name}`)}
-        mailtoHref={enquiryMailto({ subject: `${page.card.name} project enquiry`, body: enquiryBody({ about: `${page.card.name} project`, url: pageUrl }) })}
+        mailtoHref={enquiryMailto({
+          subject: `${page.card.name} project enquiry`,
+          body: enquiryBody({ about: `${page.card.name} project`, url: pageUrl }),
+        })}
       />
 
       {/* Same container the designed page's own bands use — see SECTION in

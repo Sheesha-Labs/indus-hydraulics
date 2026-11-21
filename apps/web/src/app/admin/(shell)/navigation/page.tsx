@@ -82,40 +82,40 @@ export default async function NavigationHubPage() {
           <Link
             key={entry.key}
             href={entry.href}
-            className="group flex items-start gap-4 rounded-lg border border-ih-border bg-ih-surface p-5 transition-colors hover:border-ih-accent"
+            className="group border-ih-border bg-ih-surface hover:border-ih-accent flex items-start gap-4 rounded-lg border p-5 transition-colors"
           >
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2.5">
                 <h2 className="text-[15px] font-medium tracking-tight">{entry.title}</h2>
                 {entry.isPublished === false ? (
-                  <span className="rounded-full border border-ih-border px-2 py-0.5 tabular-nums text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+                  <span className="border-ih-border text-ih-muted rounded-full border px-2 py-0.5 text-[10px] tracking-[0.1em] uppercase tabular-nums">
                     Draft
                   </span>
                 ) : null}
                 {entry.count === null ? (
-                  <span className="rounded-full border border-ih-border px-2 py-0.5 tabular-nums text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+                  <span className="border-ih-border text-ih-muted rounded-full border px-2 py-0.5 text-[10px] tracking-[0.1em] uppercase tabular-nums">
                     Not created
                   </span>
                 ) : null}
               </div>
-              <p className="mt-1 max-w-[70ch] text-[13px] leading-relaxed text-ih-ink-2">
+              <p className="text-ih-ink-2 mt-1 max-w-[70ch] text-[13px] leading-relaxed">
                 {entry.renders}
               </p>
               {entry.warning ? (
-                <p className="mt-2 flex items-start gap-1.5 text-[12.5px] text-ih-danger-ink">
+                <p className="text-ih-danger-ink mt-2 flex items-start gap-1.5 text-[12.5px]">
                   <TriangleAlert size={13} className="mt-[2px] shrink-0" />
                   <span>{entry.warning}</span>
                 </p>
               ) : null}
               {entry.count !== null ? (
-                <p className="mt-2 tabular-nums text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+                <p className="text-ih-muted mt-2 text-[11px] tracking-[0.08em] uppercase tabular-nums">
                   {entry.count} {entry.count === 1 ? 'item' : 'items'}
                 </p>
               ) : null}
             </div>
             <ChevronRight
               size={16}
-              className="mt-1 shrink-0 text-ih-muted transition-colors group-hover:text-ih-accent"
+              className="text-ih-muted group-hover:text-ih-accent mt-1 shrink-0 transition-colors"
             />
           </Link>
         ))}
@@ -126,7 +126,7 @@ export default async function NavigationHubPage() {
 
 function card(
   location: MenuLocation,
-  byLocation: Map<MenuLocation, { slug: string; isPublished: boolean; _count: { items: number } }>,
+  byLocation: Map<MenuLocation, { slug: string; isPublished: boolean; _count: { items: number } }>
 ) {
   const surface = NAV_SURFACES[location]
   const menu = byLocation.get(location)

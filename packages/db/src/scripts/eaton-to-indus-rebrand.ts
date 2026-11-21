@@ -443,7 +443,8 @@ function buildFaqs(c: Coupler, s: SpecMap, oneLiner: string) {
     },
     {
       question: 'What is the typical lead time?',
-      answer: 'Standard lead time is 14 working days from order. Stocked configurations ship the same week, and non-standard sizes or seal compounds add two to three weeks. Air freight to the UAE and GCC is available for plant-down emergencies — flag it on the RFQ.',
+      answer:
+        'Standard lead time is 14 working days from order. Stocked configurations ship the same week, and non-standard sizes or seal compounds add two to three weeks. Air freight to the UAE and GCC is available for plant-down emergencies — flag it on the RFQ.',
     },
   ]
 }
@@ -471,7 +472,7 @@ async function main() {
     return
   }
   console.log(
-    `all ${COUPLERS.length} triples validate (title length, keyword in title and slug, sku/slug shape)\n`,
+    `all ${COUPLERS.length} triples validate (title length, keyword in title and slug, sku/slug shape)\n`
   )
 
   const indus = await db.brand.findUnique({ where: { slug: 'indus' }, select: { id: true } })
@@ -497,7 +498,11 @@ async function main() {
   for (const c of COUPLERS) {
     const p = await db.product.findUnique({
       where: { sku: c.from },
-      select: { id: true, descriptionShort: true, specs: { select: { label: true, value: true, templateField: { select: { key: true } } } } },
+      select: {
+        id: true,
+        descriptionShort: true,
+        specs: { select: { label: true, value: true, templateField: { select: { key: true } } } },
+      },
     })
     if (!p) {
       console.log(`  gone     ${c.from.padEnd(22)} not found — skipped`)
@@ -511,7 +516,7 @@ async function main() {
     const oneLiner = (p.descriptionShort ?? '').replace(/\s+/g, ' ').trim()
     const seoDescription = fitDescription(
       oneLiner,
-      `Supplied under the Indus Hydraulics brand. Interchangeable with ${c.interchange}.`,
+      `Supplied under the Indus Hydraulics brand. Interchangeable with ${c.interchange}.`
     )
 
     console.log(`  ${c.from.padEnd(22)} -> ${c.sku}`)
@@ -571,10 +576,12 @@ async function main() {
     const before = h.descriptionLong ?? ''
     const after = before.replace(
       /in addition to the Eaton Aeroquip reference/gi,
-      'in addition to the Indus reference',
+      'in addition to the Indus reference'
     )
     const changed = after !== before
-    console.log(`     ${h.sku.padEnd(18)} clause rewritten: ${changed ? 'yes' : 'no (already clean)'}`)
+    console.log(
+      `     ${h.sku.padEnd(18)} clause rewritten: ${changed ? 'yes' : 'no (already clean)'}`
+    )
     if (apply) {
       await db.product.update({
         where: { id: h.id },
@@ -599,11 +606,14 @@ async function main() {
     })
     for (const m of moved) {
       if (/eaton|aeroquip/i.test(m.title)) leftovers.push({ sku: m.sku, where: 'title' })
-      if (/eaton|aeroquip/i.test(m.seoTitle ?? '')) leftovers.push({ sku: m.sku, where: 'seoTitle' })
+      if (/eaton|aeroquip/i.test(m.seoTitle ?? ''))
+        leftovers.push({ sku: m.sku, where: 'seoTitle' })
       // Body and specs legitimately name Eaton as an interchange reference.
       const bodyHits = (m.descriptionLong ?? '').match(/Eaton|Aeroquip/gi)?.length ?? 0
-      const interchangeHits = (m.descriptionLong ?? '').match(/Interchange|interchangeable/gi)?.length ?? 0
-      if (bodyHits > 0 && interchangeHits === 0) leftovers.push({ sku: m.sku, where: 'body (not an interchange note)' })
+      const interchangeHits =
+        (m.descriptionLong ?? '').match(/Interchange|interchangeable/gi)?.length ?? 0
+      if (bodyHits > 0 && interchangeHits === 0)
+        leftovers.push({ sku: m.sku, where: 'body (not an interchange note)' })
       for (const f of m.faqs) {
         if (/Aeroquip|Eaton (catalogue|datasheet|USA)/i.test(f.question + f.answer)) {
           leftovers.push({ sku: m.sku, where: `faq: ${f.question.slice(0, 40)}` })
@@ -613,14 +623,16 @@ async function main() {
     console.log(
       leftovers.length === 0
         ? '\n  audit: no Eaton branding left outside interchange references'
-        : `\n  audit: ${leftovers.length} leftover(s) to review`,
+        : `\n  audit: ${leftovers.length} leftover(s) to review`
     )
     for (const l of leftovers) console.log(`     ${l.sku}  ${l.where}`)
   }
 
   const remaining = await db.product.count({ where: { brand: { slug: 'eaton-aeroquip' } } })
   console.log(`\n${prefix} ${done} coupler(s) and ${hoses.length} hose(s) processed.`)
-  console.log(`Products still on brand eaton-aeroquip: ${apply ? remaining : '(unchanged in dry-run)'}`)
+  console.log(
+    `Products still on brand eaton-aeroquip: ${apply ? remaining : '(unchanged in dry-run)'}`
+  )
   console.log('No redirects written — the old /p/eaton-* URLs will 404, as instructed.')
 }
 

@@ -34,7 +34,7 @@ export function serializeJsonLd(item: Record<string, unknown>): string {
 
 export function JsonLd({ data }: JsonLdProps) {
   const items = (Array.isArray(data) ? data : [data]).filter(
-    (x): x is Record<string, unknown> => !!x,
+    (x): x is Record<string, unknown> => !!x
   )
   if (items.length === 0) return null
   return (
