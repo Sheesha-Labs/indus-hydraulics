@@ -31,7 +31,8 @@ function typographyIsInstalled(): boolean {
     devDependencies?: Record<string, string>
   }
   return Boolean(
-    pkg.dependencies?.['@tailwindcss/typography'] ?? pkg.devDependencies?.['@tailwindcss/typography'],
+    pkg.dependencies?.['@tailwindcss/typography'] ??
+    pkg.devDependencies?.['@tailwindcss/typography']
   )
 }
 
@@ -64,7 +65,7 @@ describe('CMS-authored HTML has real styles', () => {
     }
     expect(
       offenders,
-      '`prose` compiles to no CSS without @tailwindcss/typography — use `ih-rich-text`',
+      '`prose` compiles to no CSS without @tailwindcss/typography — use `ih-rich-text`'
     ).toEqual([])
   })
 

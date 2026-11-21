@@ -28,9 +28,11 @@ function Inner({ enquiryId, linesPriced }: { enquiryId: string; linesPriced: num
       <input type="hidden" name="enquiryId" value={enquiryId} />
       <div className="grid gap-4 md:grid-cols-3">
         <Field label="Markup mode" hint="Percentage is on cost; target margin is on sell price.">
-          <Select name="markupMode" defaultValue="percentage"><option value="percentage">Percentage on cost</option>
+          <Select name="markupMode" defaultValue="percentage">
+            <option value="percentage">Percentage on cost</option>
             <option value="target_margin">Target margin on sell</option>
-            <option value="absolute">Absolute AED per unit</option></Select>
+            <option value="absolute">Absolute AED per unit</option>
+          </Select>
         </Field>
         <Field label="Value">
           <Input name="markupValue" type="number" step="0.01" min="0" defaultValue="30" />
@@ -43,7 +45,7 @@ function Inner({ enquiryId, linesPriced }: { enquiryId: string; linesPriced: num
         <Button type="submit" kind="primary" loading={pending}>
           Generate estimate
         </Button>
-        <p className="text-[13px] text-ih-muted">
+        <p className="text-ih-muted text-[13px]">
           {linesPriced} {linesPriced === 1 ? 'line' : 'lines'} will be included.
         </p>
       </div>

@@ -67,8 +67,8 @@ export default function BrandIdentityForm({
   }
 
   return (
-    <form action={handleSubmit} className="max-w-[720px] flex flex-col gap-4">
-      <p className="text-[13px] leading-[1.6] text-ih-muted">
+    <form action={handleSubmit} className="flex max-w-[720px] flex-col gap-4">
+      <p className="text-ih-muted text-[13px] leading-[1.6]">
         The marks that stand for Indus Hydraulics on the storefront. Each surface takes its own file
         because each one wants a different one — the footer is dark, a tab strip is 16px wide, and a
         search result is a small circular chip.
@@ -87,12 +87,7 @@ export default function BrandIdentityForm({
 
       <FooterLogoField value={footerLogo} options={options} onChange={setFooterLogo} />
 
-      <FaviconField
-        value={favicon}
-        brandName={brandName}
-        options={options}
-        onChange={setFavicon}
-      />
+      <FaviconField value={favicon} brandName={brandName} options={options} onChange={setFavicon} />
 
       <SearchLogoField
         value={searchLogo}
@@ -106,7 +101,7 @@ export default function BrandIdentityForm({
       />
 
       {error && (
-        <p className="text-[12px] text-ih-danger" role="alert">
+        <p className="text-ih-danger text-[12px]" role="alert">
           {error}
         </p>
       )}
@@ -115,11 +110,11 @@ export default function BrandIdentityForm({
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-5 text-[13px] font-medium disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save brand & identity'}
         </button>
-        {saved && <span className="text-[12px] text-ih-success">Saved.</span>}
+        {saved && <span className="text-ih-success text-[12px]">Saved.</span>}
       </div>
     </form>
   )

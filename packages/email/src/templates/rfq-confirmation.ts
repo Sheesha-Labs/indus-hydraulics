@@ -25,7 +25,10 @@ const URGENCY_RESPONSE: Record<RfqConfirmationProps['urgency'], string> = {
   plant_down: 'within 30 minutes (24/7 plant-down support)',
 }
 
-export function renderRfqConfirmation(props: RfqConfirmationProps): { subject: string; html: string } {
+export function renderRfqConfirmation(props: RfqConfirmationProps): {
+  subject: string
+  html: string
+} {
   const subject = `We received your request — ${props.rfqCode}`
 
   const body = `

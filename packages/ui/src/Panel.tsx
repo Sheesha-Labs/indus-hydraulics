@@ -84,7 +84,8 @@ const panelVariants = cva(
 )
 
 export interface PanelProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends
+    React.HTMLAttributes<HTMLDivElement>,
     Pick<VariantProps<typeof panelVariants>, 'padding'> {
   /** Clickable card: CP-3's border darken on hover. */
   interactive?: boolean

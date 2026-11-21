@@ -71,7 +71,8 @@ const calloutVariants = cva('flex items-start gap-2 rounded-md border px-3 py-2'
 })
 
 export interface CalloutProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>,
+  extends
+    Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>,
     VariantProps<typeof calloutVariants> {
   /**
    * A lucide icon COMPONENT, not an element — `icon={AlertTriangle}` — so the
@@ -89,7 +90,15 @@ export interface CalloutProps
   action?: React.ReactNode
 }
 
-export function Callout({ className, tone, icon: Icon, title, action, children, ...props }: CalloutProps) {
+export function Callout({
+  className,
+  tone,
+  icon: Icon,
+  title,
+  action,
+  children,
+  ...props
+}: CalloutProps) {
   return (
     <div className={cn(calloutVariants({ tone }), className)} {...props}>
       {Icon ? (
@@ -99,7 +108,7 @@ export function Callout({ className, tone, icon: Icon, title, action, children, 
         <Icon size={14} strokeWidth={1.8} aria-hidden="true" className="mt-0.5 shrink-0" />
       ) : null}
       <div className="min-w-0 flex-1">
-        {title ? <p className="text-[13px] font-medium leading-[1.35]">{title}</p> : null}
+        {title ? <p className="text-[13px] leading-[1.35] font-medium">{title}</p> : null}
         {children ? (
           // Colour is inherited from the band, so a body-only callout and the
           // body under a title are the same ink — one tone per band.

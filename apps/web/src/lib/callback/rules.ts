@@ -105,7 +105,10 @@ export type CloseMethod = 'x' | 'esc' | 'scrim' | 'swipe' | 'done'
 
 // ── Paths ─────────────────────────────────────────────────────────────────
 
-export function isExcludedPath(path: string, prefixes: readonly string[] = CALLBACK_CONFIG.excludePaths): boolean {
+export function isExcludedPath(
+  path: string,
+  prefixes: readonly string[] = CALLBACK_CONFIG.excludePaths
+): boolean {
   return prefixes.some((p) => path === p || path.startsWith(`${p}/`))
 }
 
@@ -188,7 +191,11 @@ export function suppressionReason(ctx: PromptContext): SuppressionReason | null 
   if (ctx.fieldFocused) return 'field_focused'
   if (ctx.pageFormDirty) return 'form_dirty'
   if (ctx.trigger === 'exit' && ctx.msOnPage < CALLBACK_CONFIG.minPageMs) return 'too_early'
-  if (ctx.trigger === 'inactivity' && ctx.pageviews < 2 && ctx.msOnPage < CALLBACK_CONFIG.bounceGuardMs) {
+  if (
+    ctx.trigger === 'inactivity' &&
+    ctx.pageviews < 2 &&
+    ctx.msOnPage < CALLBACK_CONFIG.bounceGuardMs
+  ) {
     return 'bounce_guard'
   }
   return null
@@ -202,7 +209,12 @@ export function readEpoch(raw: string | null | undefined): number {
 
 /** Crawlers and automation never see the prompt. */
 export function looksLikeBot(userAgent: string, webdriver: boolean): boolean {
-  return webdriver || /bot|crawl|spider|slurp|lighthouse|headless|preview|facebookexternalhit|bingpreview/i.test(userAgent)
+  return (
+    webdriver ||
+    /bot|crawl|spider|slurp|lighthouse|headless|preview|facebookexternalhit|bingpreview/i.test(
+      userAgent
+    )
+  )
 }
 
 // ── Countries ─────────────────────────────────────────────────────────────

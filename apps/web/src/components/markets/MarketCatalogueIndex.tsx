@@ -66,11 +66,11 @@ export default function MarketCatalogueIndex({
   const subRangeTotal = clusters.reduce((sum, c) => sum + c.subRanges.length, 0)
 
   return (
-    <section className="border-b border-ih-border bg-ih-bg px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
+    <section className="border-ih-border bg-ih-bg border-b px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
       <div className="mx-auto max-w-[1440px]">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
           <div>
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
+            <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">
               Catalogue · {clusters.length} clusters · {subRangeTotal} ranges
             </p>
             <h2 className="mt-3.5 font-serif text-[30px] leading-[1.08] sm:text-[40px]">
@@ -84,7 +84,7 @@ export default function MarketCatalogueIndex({
           </Button>
         </div>
 
-        <p className="mb-8 mt-3 max-w-[780px] text-[15px] leading-[1.6] text-ih-muted">
+        <p className="text-ih-muted mt-3 mb-8 max-w-[780px] text-[15px] leading-[1.6]">
           Everything below ships from the same Dubai warehouse, so a mixed order travels as one
           consignment under one set of documents. Open any card for its full list of ranges, or
           follow a heading through to specifications and an RFQ.
@@ -124,7 +124,7 @@ function ClusterCard({
   const rest = collapses ? cluster.subRanges.slice(CATALOGUE_VISIBLE_RANGES) : []
 
   return (
-    <article className="group/card @container flex flex-col rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent">
+    <article className="group/card border-ih-border bg-ih-surface hover:border-ih-accent @container flex flex-col rounded-lg border transition-colors">
       <div className="flex gap-4 px-5 pt-5 sm:px-6">
         {/*
           A 4:3 thumbnail beside the heading, not a strip across the card. The
@@ -138,21 +138,21 @@ function ClusterCard({
           label={cluster.name}
           ratio="aspect-[4/3]"
           sizes="(max-width: 640px) 112px, 136px"
-          className="w-[112px] shrink-0 rounded-md border border-ih-border sm:w-[136px]"
+          className="border-ih-border w-[112px] shrink-0 rounded-md border sm:w-[136px]"
         />
         <div className="min-w-0 flex-1">
           <div className="flex items-start gap-2">
-            <span className="mono pt-[3px] text-[10.5px] tracking-[0.06em] text-ih-muted-2">
+            <span className="mono text-ih-muted-2 pt-[3px] text-[10.5px] tracking-[0.06em]">
               {String(index + 1).padStart(2, '0')}
             </span>
-            <h3 className="flex-1 text-[16.5px] font-medium leading-[1.25] tracking-[-0.01em]">
+            <h3 className="flex-1 text-[16.5px] leading-[1.25] font-medium tracking-[-0.01em]">
               <Link href={`/c/${cluster.slug}`} className="hover:text-ih-accent">
                 {cluster.name} supplier in {marketName}
               </Link>
             </h3>
           </div>
           {count > 0 && (
-            <p className="mono mt-2 text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+            <p className="mono text-ih-muted-2 mt-2 text-[10.5px] tracking-[0.1em] uppercase">
               {count} {count === 1 ? 'range' : 'ranges'}
             </p>
           )}
@@ -162,20 +162,18 @@ function ClusterCard({
       {cluster.description && (
         // Clamped to three lines until the card is opened. The full text is in
         // the HTML either way — the clamp is paint, not omission.
-        <p className="mt-3 line-clamp-3 px-5 text-[12.5px] leading-[1.55] text-ih-muted group-has-[details[open]]/card:line-clamp-none sm:px-6">
+        <p className="text-ih-muted mt-3 line-clamp-3 px-5 text-[12.5px] leading-[1.55] group-has-[details[open]]/card:line-clamp-none sm:px-6">
           {cluster.description}
         </p>
       )}
 
       {count > 0 && (
-        <div className="mt-4 flex-1 border-t border-ih-border px-5 pb-1 sm:px-6">
+        <div className="border-ih-border mt-4 flex-1 border-t px-5 pb-1 sm:px-6">
           <RangeList ranges={shown} marketName={marketName} />
 
           {rest.length > 0 && (
             <details className="group/more">
-              <summary
-                className="flex cursor-pointer list-none items-center justify-between gap-3 border-t border-ih-border py-3 text-[12.5px] font-medium text-ih-accent marker:content-none hover:text-ih-ink [&::-webkit-details-marker]:hidden"
-              >
+              <summary className="border-ih-border text-ih-accent hover:text-ih-ink flex cursor-pointer list-none items-center justify-between gap-3 border-t py-3 text-[12.5px] font-medium marker:content-none [&::-webkit-details-marker]:hidden">
                 <span>
                   <span className="group-open/more:hidden">
                     Show all {count} {cluster.name} ranges
@@ -210,7 +208,7 @@ function RangeList({ ranges, marketName }: { ranges: CatalogueSubRange[]; market
         <li key={range.slug} className="break-inside-avoid">
           <Link
             href={`/c/${range.slug}`}
-            className="block border-b border-dotted border-ih-border py-[6px] text-[12.5px] text-ih-ink-2 transition-colors hover:text-ih-accent"
+            className="border-ih-border text-ih-ink-2 hover:text-ih-accent block border-b border-dotted py-[6px] text-[12.5px] transition-colors"
           >
             {range.name} in {marketName}
           </Link>

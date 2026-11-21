@@ -58,8 +58,18 @@ describe('parseMediaSort', () => {
 })
 
 describe('compareMedia', () => {
-  const older = item({ id: 'a', createdAt: new Date('2026-01-01'), bytes: 10, originalFilename: 'b.png' })
-  const newer = item({ id: 'b', createdAt: new Date('2026-06-01'), bytes: 99, originalFilename: 'a.png' })
+  const older = item({
+    id: 'a',
+    createdAt: new Date('2026-01-01'),
+    bytes: 10,
+    originalFilename: 'b.png',
+  })
+  const newer = item({
+    id: 'b',
+    createdAt: new Date('2026-06-01'),
+    bytes: 99,
+    originalFilename: 'a.png',
+  })
 
   test('newest and oldest are inverses', () => {
     expect(compareMedia('newest')(older, newer)).toBeGreaterThan(0)
@@ -253,7 +263,9 @@ describe('mediaThumbnailSrc', () => {
     // A bucket-prefixed key points into the PRIVATE documents bucket and needs a
     // signed URL; a bare key has no bucket at all. Emitting either into an
     // <img src> yields a broken image, which is worse than a type tile.
-    expect(mediaThumbnailSrc({ kind: 'image', storagePath: 'product-documents/a/b.png' })).toBeNull()
+    expect(
+      mediaThumbnailSrc({ kind: 'image', storagePath: 'product-documents/a/b.png' })
+    ).toBeNull()
     expect(mediaThumbnailSrc({ kind: 'image', storagePath: '2026/quote-r1.png' })).toBeNull()
     expect(mediaThumbnailSrc({ kind: 'image', storagePath: '' })).toBeNull()
   })

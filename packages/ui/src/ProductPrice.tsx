@@ -57,10 +57,7 @@ export function ProductPrice({
   if (formatted.isQuoteOnly) {
     return (
       <span
-        className={cn(
-          'font-mono text-ih-muted text-[12px] uppercase tracking-wider',
-          className,
-        )}
+        className={cn('text-ih-muted font-mono text-[12px] tracking-wider uppercase', className)}
       >
         {quoteCta ?? 'Request quote'}
       </span>
@@ -74,7 +71,7 @@ export function ProductPrice({
       <div className={cn('flex flex-col items-end gap-0.5', className)}>
         <span className={primaryCls}>{formatted.primary}</span>
         {formatted.compareAt && (
-          <span className="font-mono text-[11px] text-ih-muted-2 line-through">
+          <span className="text-ih-muted-2 font-mono text-[11px] line-through">
             {formatted.compareAt}
           </span>
         )}
@@ -86,7 +83,7 @@ export function ProductPrice({
     <span className={cn('inline-flex items-baseline gap-2', className)}>
       <span className={primaryCls}>{formatted.primary}</span>
       {formatted.compareAt && (
-        <span className="font-mono text-[11px] text-ih-muted-2 line-through">
+        <span className="text-ih-muted-2 font-mono text-[11px] line-through">
           {formatted.compareAt}
         </span>
       )}

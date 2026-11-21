@@ -9,8 +9,12 @@ type ResearchManifest = {
 }
 
 async function main() {
-  const input = resolve(readArg('--input=') ?? '../../data/catalogue-enrichment/first-100-image-research.json')
-  const output = resolve(readArg('--output=') ?? '../../data/catalogue-enrichment/first-100-image-review.html')
+  const input = resolve(
+    readArg('--input=') ?? '../../data/catalogue-enrichment/first-100-image-research.json'
+  )
+  const output = resolve(
+    readArg('--output=') ?? '../../data/catalogue-enrichment/first-100-image-review.html'
+  )
   const manifest = JSON.parse(await readFile(input, 'utf8')) as ResearchManifest
   const payload = JSON.stringify(manifest.products).replaceAll('<', '\\u003c')
 
@@ -20,7 +24,10 @@ async function main() {
 }
 
 function readArg(prefix: string) {
-  return process.argv.slice(2).find((arg) => arg.startsWith(prefix))?.slice(prefix.length)
+  return process.argv
+    .slice(2)
+    .find((arg) => arg.startsWith(prefix))
+    ?.slice(prefix.length)
 }
 
 function renderHtml(payload: string) {

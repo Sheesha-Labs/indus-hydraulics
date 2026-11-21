@@ -168,7 +168,9 @@ test.describe('storefront never scrolls sideways', () => {
         })
 
         if (result) {
-          failures.push(`@${width}px: +${result.overflow}px — ${result.worst || '(no single element; check for an unconstrained grid track)'}`)
+          failures.push(
+            `@${width}px: +${result.overflow}px — ${result.worst || '(no single element; check for an unconstrained grid track)'}`
+          )
         }
       }
 

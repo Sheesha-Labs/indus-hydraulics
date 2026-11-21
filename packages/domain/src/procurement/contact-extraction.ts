@@ -23,16 +23,44 @@ const MAILTO_RE = /mailto:([^"'?\s>]+)/gi
 
 /** Addresses that are never a supplier contact. */
 const REJECT_LOCAL = new Set([
-  'noreply', 'no-reply', 'donotreply', 'do-not-reply', 'postmaster', 'mailer-daemon',
-  'abuse', 'webmaster', 'hostmaster', 'privacy', 'dpo', 'unsubscribe', 'bounce',
-  'wordpress', 'wp', 'sentry', 'example', 'test', 'user', 'name', 'email', 'your',
+  'noreply',
+  'no-reply',
+  'donotreply',
+  'do-not-reply',
+  'postmaster',
+  'mailer-daemon',
+  'abuse',
+  'webmaster',
+  'hostmaster',
+  'privacy',
+  'dpo',
+  'unsubscribe',
+  'bounce',
+  'wordpress',
+  'wp',
+  'sentry',
+  'example',
+  'test',
+  'user',
+  'name',
+  'email',
+  'your',
 ])
 
 /** Matched exactly, or as a suffix (`mail.sentry.io`). */
 const REJECT_DOMAINS = [
-  'example.com', 'example.org', 'example.net', 'sentry.io', 'wordpress.org',
-  'w3.org', 'schema.org', 'godaddy.com', 'wixpress.com', 'squarespace.com',
-  'shopify.com', 'sentry-cdn.com',
+  'example.com',
+  'example.org',
+  'example.net',
+  'sentry.io',
+  'wordpress.org',
+  'w3.org',
+  'schema.org',
+  'godaddy.com',
+  'wixpress.com',
+  'squarespace.com',
+  'shopify.com',
+  'sentry-cdn.com',
 ]
 
 /**
@@ -42,18 +70,54 @@ const REJECT_DOMAINS = [
  * `yourdomain` nor ends with `.yourdomain`.
  */
 const PLACEHOLDER_LABELS = new Set([
-  'yourdomain', 'mydomain', 'domain', 'yourcompany', 'company', 'yoursite',
-  'website', 'email', 'mail-example', 'sitename',
+  'yourdomain',
+  'mydomain',
+  'domain',
+  'yourcompany',
+  'company',
+  'yoursite',
+  'website',
+  'email',
+  'mail-example',
+  'sitename',
 ])
 
 /** Image and asset suffixes that a naive regex reads as a TLD. */
-const ASSET_TLD = new Set(['png', 'jpg', 'jpeg', 'gif', 'webp', 'svg', 'css', 'js', 'woff', 'woff2'])
+const ASSET_TLD = new Set([
+  'png',
+  'jpg',
+  'jpeg',
+  'gif',
+  'webp',
+  'svg',
+  'css',
+  'js',
+  'woff',
+  'woff2',
+])
 
 /** Generic mailbox names — real, usable, but worth less than a named person. */
 const ROLE_LOCALS = new Set([
-  'sales', 'info', 'enquiry', 'enquiries', 'inquiry', 'inquiries', 'contact',
-  'office', 'export', 'trade', 'orders', 'purchase', 'commercial', 'marketing',
-  'support', 'service', 'admin', 'mail', 'general', 'hello',
+  'sales',
+  'info',
+  'enquiry',
+  'enquiries',
+  'inquiry',
+  'inquiries',
+  'contact',
+  'office',
+  'export',
+  'trade',
+  'orders',
+  'purchase',
+  'commercial',
+  'marketing',
+  'support',
+  'service',
+  'admin',
+  'mail',
+  'general',
+  'hello',
 ])
 
 export type ExtractedContact = {
@@ -85,7 +149,11 @@ function isPlausible(local: string, domain: string): boolean {
   return true
 }
 
-function scoreConfidence(local: string, onOwnDomain: boolean, fromMailto: boolean): ExtractedContact['confidence'] {
+function scoreConfidence(
+  local: string,
+  onOwnDomain: boolean,
+  fromMailto: boolean
+): ExtractedContact['confidence'] {
   if (!onOwnDomain) return 'low'
   if (fromMailto) return 'high'
   return ROLE_LOCALS.has(local.toLowerCase()) ? 'medium' : 'medium'
@@ -176,7 +244,7 @@ const BASE_CONTACT_PATHS = [
 const LANGUAGE_PREFIXES = ['', '/en'] as const
 
 export const CONTACT_PATHS: readonly string[] = LANGUAGE_PREFIXES.flatMap((prefix) =>
-  BASE_CONTACT_PATHS.map((path) => `${prefix}${path}`),
+  BASE_CONTACT_PATHS.map((path) => `${prefix}${path}`)
 )
 
 /** Pick the single best address to put on an RFQ. Null when none is usable. */

@@ -54,8 +54,7 @@ const formFooterVariants = cva('flex items-center justify-end gap-3', {
 })
 
 export interface FormFooterProps
-  extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof formFooterVariants> {
+  extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof formFooterVariants> {
   /**
    * The left-hand readout — dirty state, last-saved time, the record
    * reference. Typography is applied here so fifteen forms cannot each pick a
@@ -73,7 +72,7 @@ export function FormFooter({ className, status, sticky, children, ...props }: Fo
         // `min-w-0` is load-bearing: without it a long readout ("Editing
         // RFQ-2026-0417 · unsaved changes") refuses to shrink and pushes the
         // submit button off the right edge of a capped form body.
-        <span className="mr-auto min-w-0 text-[12px] text-ih-muted">{status}</span>
+        <span className="text-ih-muted mr-auto min-w-0 text-[12px]">{status}</span>
       ) : null}
       {children}
     </div>

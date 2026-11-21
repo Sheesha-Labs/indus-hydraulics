@@ -22,7 +22,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       {state?.error && (
         <div
           role="alert"
-          className="rounded-lg px-4 py-3 text-sm text-[oklch(0.65_0.18_25)] border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)]"
+          className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-[oklch(0.15_0.04_25)] px-4 py-3 text-sm text-[oklch(0.65_0.18_25)]"
         >
           {state.error}
         </div>
@@ -60,7 +60,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       <button
         type="submit"
         disabled={pending}
-        className="h-11 bg-ih-accent text-ih-accent-fg text-sm font-medium hover:bg-ih-accent-hover transition-opacity disabled:opacity-50 mt-1"
+        className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover mt-1 h-11 text-sm font-medium transition-opacity disabled:opacity-50"
       >
         {pending ? 'Signing in…' : 'Sign in →'}
       </button>

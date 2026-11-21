@@ -58,7 +58,8 @@ export function countryFeatures(): CountryFeature[] {
  */
 export function findCountryFeature(names: readonly string[]): CountryFeature | null {
   return (
-    countryFeatures().find((f) => f.properties?.name != null && names.includes(f.properties.name)) ??
-    null
+    countryFeatures().find(
+      (f) => f.properties?.name != null && names.includes(f.properties.name)
+    ) ?? null
   )
 }

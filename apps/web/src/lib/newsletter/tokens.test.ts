@@ -1,7 +1,12 @@
 import { createHash } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
 import { isNewsletterToken } from '@indus/domain'
-import { generateNewsletterToken, hashNewsletterToken, newsletterEmailHash, recipientAddress } from './tokens'
+import {
+  generateNewsletterToken,
+  hashNewsletterToken,
+  newsletterEmailHash,
+  recipientAddress,
+} from './tokens'
 import {
   listUnsubscribeHeaders,
   newsletterConfirmUrl,
@@ -48,17 +53,21 @@ describe('recipientAddress', () => {
 describe('newsletter links', () => {
   const t = 'c'.repeat(48)
   it('builds every URL from the base without double slashes', () => {
-    expect(newsletterConfirmUrl('https://indushydraulics.com/', t)).toBe(`https://indushydraulics.com/newsletter/confirm/${t}`)
+    expect(newsletterConfirmUrl('https://indushydraulics.com/', t)).toBe(
+      `https://indushydraulics.com/newsletter/confirm/${t}`
+    )
     expect(newsletterUnsubscribePageUrl('https://indushydraulics.com', t)).toBe(
-      `https://indushydraulics.com/newsletter/unsubscribe/${t}`,
+      `https://indushydraulics.com/newsletter/unsubscribe/${t}`
     )
     expect(newsletterOneClickUrl('https://indushydraulics.com', t)).toBe(
-      `https://indushydraulics.com/api/newsletter/unsubscribe?token=${t}`,
+      `https://indushydraulics.com/api/newsletter/unsubscribe?token=${t}`
     )
   })
   it('emits the RFC 8058 header pair', () => {
     const h = listUnsubscribeHeaders('https://indushydraulics.com', t)
-    expect(h['List-Unsubscribe']).toBe(`<https://indushydraulics.com/api/newsletter/unsubscribe?token=${t}>`)
+    expect(h['List-Unsubscribe']).toBe(
+      `<https://indushydraulics.com/api/newsletter/unsubscribe?token=${t}>`
+    )
     expect(h['List-Unsubscribe-Post']).toBe('List-Unsubscribe=One-Click')
   })
 })

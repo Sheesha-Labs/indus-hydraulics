@@ -33,9 +33,9 @@ export default function RelatedReading({
   if (articles.length === 0) return null
 
   return (
-    <section className="border-t border-ih-border pb-16 pt-8">
+    <section className="border-ih-border border-t pt-8 pb-16">
       <div className="mb-6">
-        <p className="mono mb-2 text-[11px] uppercase tracking-[0.16em] text-ih-muted">{eyebrow}</p>
+        <p className="mono text-ih-muted mb-2 text-[11px] tracking-[0.16em] uppercase">{eyebrow}</p>
         <h2 className="text-[28px] font-semibold tracking-[-0.02em]">{heading}</h2>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -43,23 +43,23 @@ export default function RelatedReading({
           <Link
             key={article.slug}
             href={`/blog/${article.slug}`}
-            className="group flex min-w-0 flex-col border border-ih-border bg-ih-surface p-5 transition-colors hover:border-ih-accent"
+            className="group border-ih-border bg-ih-surface hover:border-ih-accent flex min-w-0 flex-col border p-5 transition-colors"
           >
             {article.categoryName && (
-              <p className="mono mb-2 text-[10.5px] uppercase tracking-[0.12em] text-ih-muted">
+              <p className="mono text-ih-muted mb-2 text-[10.5px] tracking-[0.12em] uppercase">
                 {article.categoryName}
               </p>
             )}
-            <h3 className="mb-2 text-[16px] font-semibold leading-[1.3] text-ih-ink group-hover:text-ih-accent">
+            <h3 className="text-ih-ink group-hover:text-ih-accent mb-2 text-[16px] leading-[1.3] font-semibold">
               {article.title}
             </h3>
             {article.excerpt && (
-              <p className="line-clamp-3 text-[13.5px] leading-[1.5] text-ih-muted">
+              <p className="text-ih-muted line-clamp-3 text-[13.5px] leading-[1.5]">
                 {article.excerpt}
               </p>
             )}
             {article.readingMinutes && (
-              <p className="mono mt-auto pt-3 text-[11px] text-ih-muted-2">
+              <p className="mono text-ih-muted-2 mt-auto pt-3 text-[11px]">
                 {article.readingMinutes} min read
               </p>
             )}

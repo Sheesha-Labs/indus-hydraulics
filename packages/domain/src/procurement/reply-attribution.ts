@@ -63,14 +63,14 @@ export function attributeSupplier(input: {
   const text = input.rawText.toLowerCase()
 
   const byDomain = input.candidates.filter(
-    (c) => c.domain && text.includes(`@${c.domain.toLowerCase()}`),
+    (c) => c.domain && text.includes(`@${c.domain.toLowerCase()}`)
   )
   if (byDomain.length === 1) return { supplierId: byDomain[0]!.id, method: 'reference_token' }
   if (byDomain.length > 1) return { supplierId: null, method: 'manual' }
 
   // Names shorter than this match too much ordinary prose to be evidence.
   const byName = input.candidates.filter(
-    (c) => c.name.length >= 5 && text.includes(c.name.toLowerCase()),
+    (c) => c.name.length >= 5 && text.includes(c.name.toLowerCase())
   )
   if (byName.length === 1) return { supplierId: byName[0]!.id, method: 'fuzzy' }
 

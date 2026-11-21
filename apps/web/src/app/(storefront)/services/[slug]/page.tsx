@@ -1,7 +1,12 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { unstable_cache } from 'next/cache'
-import { buildArticleLd, GalleryImageIdsSchema, serviceCaseMarketReach, enquiryMailto } from '@indus/domain'
+import {
+  buildArticleLd,
+  GalleryImageIdsSchema,
+  serviceCaseMarketReach,
+  enquiryMailto,
+} from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import {
   getGalleryMedia,
@@ -100,7 +105,9 @@ export default async function ServiceCasePage({ params }: Props) {
     getStoreSettingsCached(),
     getGalleryMedia(figureIds),
   ])
-  const figureMedia = Object.fromEntries(figureRows.map((m) => [m.id, { storagePath: m.storagePath, alt: m.alt }]))
+  const figureMedia = Object.fromEntries(
+    figureRows.map((m) => [m.id, { storagePath: m.storagePath, alt: m.alt }])
+  )
 
   const articleLd = buildArticleLd({
     headline: c.title,

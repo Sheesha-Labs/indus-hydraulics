@@ -187,17 +187,17 @@ describe('proposeAlternates — combined sources', () => {
 
 describe('proposeAlternates — defensive', () => {
   test('empty query returns nothing', () => {
+    expect(proposeAlternates({ query: '', synonyms: [], redirects: [], resultCount: 0 })).toEqual(
+      []
+    )
     expect(
-      proposeAlternates({ query: '', synonyms: [], redirects: [], resultCount: 0 }),
-    ).toEqual([])
-    expect(
-      proposeAlternates({ query: '   ', synonyms: [], redirects: [], resultCount: 0 }),
+      proposeAlternates({ query: '   ', synonyms: [], redirects: [], resultCount: 0 })
     ).toEqual([])
   })
 
   test('no synonyms or redirects → empty', () => {
     expect(
-      proposeAlternates({ query: 'pump', synonyms: [], redirects: [], resultCount: 0 }),
+      proposeAlternates({ query: 'pump', synonyms: [], redirects: [], resultCount: 0 })
     ).toEqual([])
   })
 })

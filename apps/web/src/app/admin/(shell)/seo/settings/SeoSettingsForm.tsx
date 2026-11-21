@@ -34,9 +34,12 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
   }
 
   return (
-    <form action={handleSave} className="max-w-[640px] flex flex-col gap-5">
+    <form action={handleSave} className="flex max-w-[640px] flex-col gap-5">
       <div>
-        <label htmlFor="seosettings-defaultMetaTitleTemplate" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label
+          htmlFor="seosettings-defaultMetaTitleTemplate"
+          className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+        >
           Default Title Template
         </label>
         <Input
@@ -44,14 +47,19 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
           name="defaultMetaTitleTemplate"
           type="text"
           defaultValue={seoSetting?.defaultMetaTitleTemplate ?? ''}
-          placeholder="%s — Indus Hydraulics" />
-        <p className="mt-1 text-[11px] text-ih-muted">
-          Use %s for the page-specific title part. The OS falls back to the plain title if applying the template would push past 70 characters.
+          placeholder="%s — Indus Hydraulics"
+        />
+        <p className="text-ih-muted mt-1 text-[11px]">
+          Use %s for the page-specific title part. The OS falls back to the plain title if applying
+          the template would push past 70 characters.
         </p>
       </div>
 
       <div>
-        <label htmlFor="seosettings-defaultMetaDescription" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label
+          htmlFor="seosettings-defaultMetaDescription"
+          className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+        >
           Default Meta Description
         </label>
         <Textarea
@@ -59,22 +67,22 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
           name="defaultMetaDescription"
           rows={3}
           defaultValue={seoSetting?.defaultMetaDescription ?? ''}
-          placeholder="Indus Hydraulics — precision hydraulic components for industrial applications." className="resize-none" />
+          placeholder="Indus Hydraulics — precision hydraulic components for industrial applications."
+          className="resize-none"
+        />
       </div>
 
       <div className="flex items-center gap-3 pt-2">
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-5 text-[12px] tabular-nums disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save Settings'}
         </button>
-        {saved && (
-          <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
-        )}
+        {saved && <span className="text-ih-success text-[11px] tabular-nums">Saved ✓</span>}
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}

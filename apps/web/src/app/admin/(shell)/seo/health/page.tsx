@@ -43,7 +43,7 @@ const SEO_SELECT = {
 export default async function SeoHealthPage() {
   const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   // Server component renders once per request — Date.now is the right
@@ -64,30 +64,30 @@ export default async function SeoHealthPage() {
     topQueries,
     zeroResultQueries,
   ] = await Promise.all([
-      db.product.findMany({
-        select: { ...SEO_SELECT, title: true, status: true },
-      }),
-      db.category.findMany({
-        select: { ...SEO_SELECT, name: true, isPublished: true },
-      }),
-      db.brand.findMany({
-        select: { ...SEO_SELECT, name: true, isPublished: true },
-      }),
-      db.industry.findMany({
-        select: { ...SEO_SELECT, name: true, isPublished: true },
-      }),
-      db.blogPost.findMany({
-        // Trashed posts are off the site, so an SEO warning about one is noise.
-        where: { deletedAt: null },
-        select: { ...SEO_SELECT, title: true, isPublished: true },
-      }),
-      db.cmsPage.findMany({
-        select: { ...SEO_SELECT, title: true, isPublished: true },
-      }),
-      db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
-      db.notFoundLog.count({ where: { resolvedRedirectId: null } }),
-      db.redirect.count({ where: { isActive: true } }),
-      db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
+    db.product.findMany({
+      select: { ...SEO_SELECT, title: true, status: true },
+    }),
+    db.category.findMany({
+      select: { ...SEO_SELECT, name: true, isPublished: true },
+    }),
+    db.brand.findMany({
+      select: { ...SEO_SELECT, name: true, isPublished: true },
+    }),
+    db.industry.findMany({
+      select: { ...SEO_SELECT, name: true, isPublished: true },
+    }),
+    db.blogPost.findMany({
+      // Trashed posts are off the site, so an SEO warning about one is noise.
+      where: { deletedAt: null },
+      select: { ...SEO_SELECT, title: true, isPublished: true },
+    }),
+    db.cmsPage.findMany({
+      select: { ...SEO_SELECT, title: true, isPublished: true },
+    }),
+    db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
+    db.notFoundLog.count({ where: { resolvedRedirectId: null } }),
+    db.redirect.count({ where: { isActive: true } }),
+    db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
         SELECT normalized, COUNT(*)::bigint AS count
         FROM search_query_logs
         WHERE "createdAt" >= ${since}
@@ -95,7 +95,7 @@ export default async function SeoHealthPage() {
         ORDER BY count DESC
         LIMIT 10
       `),
-      db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
+    db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
         SELECT normalized, COUNT(*)::bigint AS count
         FROM search_query_logs
         WHERE "createdAt" >= ${since} AND "resultsCount" = 0
@@ -103,7 +103,7 @@ export default async function SeoHealthPage() {
         ORDER BY count DESC
         LIMIT 10
       `),
-    ])
+  ])
 
   const defaultOgPresent = !!seoSetting?.ogDefaultImageId
 
@@ -151,7 +151,7 @@ export default async function SeoHealthPage() {
   return (
     <div className="max-w-[1080px]">
       {/* Top tiles */}
-      <div className="grid grid-cols-4 gap-3 mb-6">
+      <div className="mb-6 grid grid-cols-4 gap-3">
         <Tile label="URLs scored" value={rows.length.toLocaleString()} />
         <Tile label="Avg score" value={summary.avg.toFixed(0)} accent={summary.avg >= 80} />
         <Tile
@@ -159,15 +159,19 @@ export default async function SeoHealthPage() {
           value={summary.critical.toLocaleString()}
           danger={summary.critical > 0}
         />
-        <Tile label="Healthy (≥ 80)" value={summary.healthy.toLocaleString()} accent={summary.healthy > summary.critical} />
+        <Tile
+          label="Healthy (≥ 80)"
+          value={summary.healthy.toLocaleString()}
+          accent={summary.healthy > summary.critical}
+        />
       </div>
 
       {/* Per-type breakdown */}
       <Section title="By entity type">
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>Type</Th>
                 <Th>Total</Th>
                 <Th>Avg score</Th>
@@ -180,22 +184,22 @@ export default async function SeoHealthPage() {
               {Object.entries(summary.byType).map(([type, s]) => (
                 <tr
                   key={type}
-                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
                 >
-                  <td className="px-3 py-2.5 tabular-nums text-[11px] uppercase tracking-[0.08em] text-ih-ink-2">
+                  <td className="text-ih-ink-2 px-3 py-2.5 text-[11px] tracking-[0.08em] uppercase tabular-nums">
                     {TYPE_LABELS[type as SeoEntityType]}
                   </td>
                   <td className="px-3 py-2.5 text-[12px] tabular-nums">{s.total}</td>
                   <td className="px-3 py-2.5">
                     <SeoHealthBadge score={Math.round(s.avg)} size="sm" />
                   </td>
-                  <td className="px-3 py-2.5 text-[12px] tabular-nums text-ih-success-ink">
+                  <td className="text-ih-success-ink px-3 py-2.5 text-[12px] tabular-nums">
                     {s.healthy}
                   </td>
-                  <td className="px-3 py-2.5 text-[12px] tabular-nums text-ih-warning-ink">
+                  <td className="text-ih-warning-ink px-3 py-2.5 text-[12px] tabular-nums">
                     {s.warn}
                   </td>
-                  <td className="px-3 py-2.5 text-[12px] tabular-nums text-ih-danger-ink">
+                  <td className="text-ih-danger-ink px-3 py-2.5 text-[12px] tabular-nums">
                     {s.critical}
                   </td>
                 </tr>
@@ -210,10 +214,10 @@ export default async function SeoHealthPage() {
         {worstOffenders.length === 0 ? (
           <Empty>Nothing critical right now.</Empty>
         ) : (
-          <div className="rounded-lg border border-ih-border overflow-hidden">
+          <div className="border-ih-border overflow-hidden rounded-lg border">
             <table className="w-full text-[13px]">
               <thead>
-                <tr className="border-b border-ih-border bg-ih-surface-2">
+                <tr className="border-ih-border bg-ih-surface-2 border-b">
                   <Th>Score</Th>
                   <Th>Type</Th>
                   <Th>Title</Th>
@@ -225,12 +229,12 @@ export default async function SeoHealthPage() {
                   return (
                     <tr
                       key={`${r.entityType}-${r.entityId}`}
-                      className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                      className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
                     >
                       <td className="px-3 py-2.5">
                         <SeoHealthBadge score={r.score} size="sm" />
                       </td>
-                      <td className="px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+                      <td className="text-ih-muted px-3 py-2.5 text-[10.5px] tracking-[0.08em] uppercase tabular-nums">
                         {TYPE_LABELS[r.entityType]}
                       </td>
                       <td className="px-3 py-2.5">
@@ -253,25 +257,25 @@ export default async function SeoHealthPage() {
 
       {/* Infrastructure stats */}
       <Section title="Infrastructure">
-        <div className="grid grid-cols-2 gap-3 max-w-[640px]">
+        <div className="grid max-w-[640px] grid-cols-2 gap-3">
           <Link
             href="/admin/seo/redirects"
-            className="rounded-lg border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
+            className="border-ih-border bg-ih-surface hover:bg-ih-surface-2 rounded-lg border p-4 transition-colors"
           >
-            <p className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+            <p className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
               Active redirects
             </p>
-            <p className="text-[28px] font-medium mt-1">{totalRedirects}</p>
+            <p className="mt-1 text-[28px] font-medium">{totalRedirects}</p>
           </Link>
           <Link
             href="/admin/seo/redirects/not-found"
-            className="rounded-lg border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
+            className="border-ih-border bg-ih-surface hover:bg-ih-surface-2 rounded-lg border p-4 transition-colors"
           >
-            <p className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+            <p className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
               Unresolved 404s
             </p>
             <p
-              className={`text-[28px] font-medium mt-1 ${
+              className={`mt-1 text-[28px] font-medium ${
                 unresolved404 > 0 ? 'text-ih-danger-ink' : ''
               }`}
             >
@@ -327,38 +331,31 @@ function SearchPanel({
   warn?: boolean
 }) {
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="flex items-center justify-between mb-3">
-        <p className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="mb-3 flex items-center justify-between">
+        <p className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
           {heading}
         </p>
-        <Link
-          href={ctaHref}
-          className="tabular-nums text-[11px] text-ih-accent hover:underline"
-        >
+        <Link href={ctaHref} className="text-ih-accent text-[11px] tabular-nums hover:underline">
           {ctaLabel}
         </Link>
       </div>
       {rows.length === 0 ? (
-        <p className="text-[12px] text-ih-muted py-4 text-center">{empty}</p>
+        <p className="text-ih-muted py-4 text-center text-[12px]">{empty}</p>
       ) : (
         <ul className="flex flex-col gap-1">
           {rows.map((r) => (
             <li
               key={r.label}
-              className="flex items-baseline justify-between gap-3 tabular-nums text-[12px]"
+              className="flex items-baseline justify-between gap-3 text-[12px] tabular-nums"
             >
               <span
-                className={`truncate ${
-                  warn ? 'text-ih-danger-ink' : 'text-ih-ink-2'
-                }`}
+                className={`truncate ${warn ? 'text-ih-danger-ink' : 'text-ih-ink-2'}`}
                 title={r.label}
               >
                 {r.label}
               </span>
-              <span className="text-ih-muted tabular-nums whitespace-nowrap">
-                {r.value}
-              </span>
+              <span className="text-ih-muted whitespace-nowrap tabular-nums">{r.value}</span>
             </li>
           ))}
         </ul>
@@ -400,7 +397,7 @@ function pushSimple(
   baseUrl: string,
   pathPrefix: string,
   defaultOgPresent: boolean,
-  hasStructuredData: boolean | null = true,
+  hasStructuredData: boolean | null = true
 ) {
   for (const e of list) {
     const title = e.name ?? e.title ?? ''
@@ -417,8 +414,7 @@ function pushSimple(
         url: `/${e.slug}`,
         hasStructuredData: hasStructuredData ?? false,
         isIndexable: e.robotsIndex && e.isPublished && !e.excludeFromSitemap,
-        canonicalCorrect:
-          !e.canonicalUrl || e.canonicalUrl === `${baseUrl}${pathPrefix}${e.slug}`,
+        canonicalCorrect: !e.canonicalUrl || e.canonicalUrl === `${baseUrl}${pathPrefix}${e.slug}`,
         ogComplete: !!e.ogImageMediaId || defaultOgPresent,
       }).score,
     })
@@ -427,9 +423,7 @@ function pushSimple(
 
 type TypeSummary = { total: number; avg: number; healthy: number; warn: number; critical: number }
 
-function computeSummary(
-  rows: Array<{ entityType: SeoEntityType; score: number }>,
-): {
+function computeSummary(rows: Array<{ entityType: SeoEntityType; score: number }>): {
   avg: number
   healthy: number
   warn: number
@@ -504,17 +498,13 @@ function Tile({
   danger?: boolean
 }) {
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         {label}
       </div>
       <div
-        className={`text-[28px] font-medium mt-1 ${
-          danger
-            ? 'text-ih-danger-ink'
-            : accent
-              ? 'text-ih-accent'
-              : ''
+        className={`mt-1 text-[28px] font-medium ${
+          danger ? 'text-ih-danger-ink' : accent ? 'text-ih-accent' : ''
         }`}
       >
         {value}
@@ -526,7 +516,7 @@ function Tile({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h2 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+      <h2 className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
         {title}
       </h2>
       {children}
@@ -536,7 +526,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Empty({ children }: { children: React.ReactNode }) {
   return (
-    <div className="py-10 text-center rounded-lg border border-ih-border text-[13px] text-ih-muted">
+    <div className="border-ih-border text-ih-muted rounded-lg border py-10 text-center text-[13px]">
       {children}
     </div>
   )
@@ -544,7 +534,7 @@ function Empty({ children }: { children: React.ReactNode }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

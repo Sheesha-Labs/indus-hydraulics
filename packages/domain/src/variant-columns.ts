@@ -271,7 +271,8 @@ export type ValveDimensionKey = 'lFf' | 'lRf' | 'lRtj' | 'lBw' | 'weightRfKg' | 
  * connections and the trim as the maker words them — a valve's working pressure
  * can depend on both, so they sit beside the class rather than in the copy.
  */
-export type ValveTextKey = 'dn' | 'pressureClass' | 'port' | 'model' | 'setRange' | 'ends' | 'service'
+export type ValveTextKey =
+  'dn' | 'pressureClass' | 'port' | 'model' | 'setRange' | 'ends' | 'service'
 
 /**
  * Lifting & rigging columns.
@@ -519,7 +520,8 @@ export type VariantColumn = {
   grouped?: boolean
 }
 
-const RATING_HELP = 'as the manufacturer publishes it. A circuit is limited by its lowest-rated component.'
+const RATING_HELP =
+  'as the manufacturer publishes it. A circuit is limited by its lowest-rated component.'
 /**
  * Equipment and coupling ratings, in the order a table should show them:
  * what the unit is (capacity, bore, stroke, displacement), then what it is
@@ -528,42 +530,183 @@ const RATING_HELP = 'as the manufacturer publishes it. A circuit is limited by i
  */
 function ratingColumns(): VariantColumn[] {
   return [
-    { key: 'capacityTon', label: 'Capacity', unit: 'ton', help: 'Rated capacity in tons, as the manufacturer publishes it.', grouped: true },
-    { key: 'capacityLbs', label: 'Capacity', unit: 'lbs', help: 'Rated capacity in pounds, as the manufacturer publishes it for small threaded-body cylinders.', grouped: true },
+    {
+      key: 'capacityTon',
+      label: 'Capacity',
+      unit: 'ton',
+      help: 'Rated capacity in tons, as the manufacturer publishes it.',
+      grouped: true,
+    },
+    {
+      key: 'capacityLbs',
+      label: 'Capacity',
+      unit: 'lbs',
+      help: 'Rated capacity in pounds, as the manufacturer publishes it for small threaded-body cylinders.',
+      grouped: true,
+    },
     { key: 'boreIn', label: 'Bore', unit: 'in', help: 'Cylinder bore diameter, as published.' },
     { key: 'rodIn', label: 'Rod', unit: 'in', help: 'Piston rod diameter, as published.' },
     { key: 'strokeIn', label: 'Stroke', unit: 'in', help: 'Cylinder stroke, as published.' },
-    { key: 'retractedIn', label: 'Retracted', unit: 'in', help: 'Length with the rod retracted, as published.' },
-    { key: 'extendedIn', label: 'Extended', unit: 'in', help: 'Length with the rod extended, as published.' },
-    { key: 'displacementCc', label: 'Displacement', unit: 'cm³/rev', help: 'Displacement per revolution, as published.' },
-    { key: 'displacementCuIn', label: 'Displacement', unit: 'in³/rev', help: 'Displacement per revolution, as published.' },
-    { key: 'ratedPsi', label: 'Rated pressure', unit: 'psi', help: `Rated working pressure, ${RATING_HELP}`, grouped: true },
-    { key: 'maxPsi', label: 'Max pressure', unit: 'psi', help: `Maximum (intermittent) pressure, ${RATING_HELP}`, grouped: true },
-    { key: 'contPsi', label: 'Continuous pressure', unit: 'psi', help: `Continuous pressure, ${RATING_HELP}`, grouped: true },
-    { key: 'flowGpm', label: 'Rated flow', unit: 'GPM', help: `Rated flow in US gallons per minute, ${RATING_HELP}` },
-    { key: 'maxFlowGpm', label: 'Max flow', unit: 'GPM', help: `Maximum flow in US gallons per minute, ${RATING_HELP}` },
-    { key: 'ratedRpm', label: 'Rated speed', unit: 'rpm', help: 'Rated shaft speed, as published.', grouped: true },
-    { key: 'maxRpm', label: 'Max speed', unit: 'rpm', help: 'Maximum shaft speed, as published.', grouped: true },
-    { key: 'torqueLbIn', label: 'Max torque', unit: 'lb-in', help: 'Maximum output torque, as published.', grouped: true },
-    { key: 'columnLoadLbs', label: 'Column load', unit: 'lbs', help: 'Rated column (push) load, as published.', grouped: true },
+    {
+      key: 'retractedIn',
+      label: 'Retracted',
+      unit: 'in',
+      help: 'Length with the rod retracted, as published.',
+    },
+    {
+      key: 'extendedIn',
+      label: 'Extended',
+      unit: 'in',
+      help: 'Length with the rod extended, as published.',
+    },
+    {
+      key: 'displacementCc',
+      label: 'Displacement',
+      unit: 'cm³/rev',
+      help: 'Displacement per revolution, as published.',
+    },
+    {
+      key: 'displacementCuIn',
+      label: 'Displacement',
+      unit: 'in³/rev',
+      help: 'Displacement per revolution, as published.',
+    },
+    {
+      key: 'ratedPsi',
+      label: 'Rated pressure',
+      unit: 'psi',
+      help: `Rated working pressure, ${RATING_HELP}`,
+      grouped: true,
+    },
+    {
+      key: 'maxPsi',
+      label: 'Max pressure',
+      unit: 'psi',
+      help: `Maximum (intermittent) pressure, ${RATING_HELP}`,
+      grouped: true,
+    },
+    {
+      key: 'contPsi',
+      label: 'Continuous pressure',
+      unit: 'psi',
+      help: `Continuous pressure, ${RATING_HELP}`,
+      grouped: true,
+    },
+    {
+      key: 'flowGpm',
+      label: 'Rated flow',
+      unit: 'GPM',
+      help: `Rated flow in US gallons per minute, ${RATING_HELP}`,
+    },
+    {
+      key: 'maxFlowGpm',
+      label: 'Max flow',
+      unit: 'GPM',
+      help: `Maximum flow in US gallons per minute, ${RATING_HELP}`,
+    },
+    {
+      key: 'ratedRpm',
+      label: 'Rated speed',
+      unit: 'rpm',
+      help: 'Rated shaft speed, as published.',
+      grouped: true,
+    },
+    {
+      key: 'maxRpm',
+      label: 'Max speed',
+      unit: 'rpm',
+      help: 'Maximum shaft speed, as published.',
+      grouped: true,
+    },
+    {
+      key: 'torqueLbIn',
+      label: 'Max torque',
+      unit: 'lb-in',
+      help: 'Maximum output torque, as published.',
+      grouped: true,
+    },
+    {
+      key: 'columnLoadLbs',
+      label: 'Column load',
+      unit: 'lbs',
+      help: 'Rated column (push) load, as published.',
+      grouped: true,
+    },
     // A gearbox is chosen on output torque and ratio, a winch on line pull and rope. The torque basis differs by
     // range (T2max peak, T2 FEM), so the page states which one the column carries.
-    { key: 'stages', label: 'Stages', unit: '', help: 'Number of planetary reduction stages, as published.' },
-    { key: 'outputTorqueNm', label: 'Output torque', unit: 'Nm', help: `Rated output torque, ${RATING_HELP} The page states which rating it is.`, grouped: true },
-    { key: 'peakTorqueNm', label: 'Peak torque', unit: 'Nm', help: `Maximum (peak) output torque, ${RATING_HELP}`, grouped: true },
-    { key: 'linePullDan', label: 'Line pull, 1st layer', unit: 'daN', help: `Rope pull on the first drum layer, ${RATING_HELP}`, grouped: true },
-    { key: 'ropeSpeed', label: 'Rope speed, 1st layer', unit: 'm/min', help: 'Rope speed on the first drum layer at the stated oil flow, as published.' },
-    { key: 'ropeDia', label: 'Rope dia.', unit: 'mm', help: 'Wire rope diameter the drum is grooved or sized for, as published.' },
-    { key: 'ropeCapacityM', label: 'Rope capacity', unit: 'm', help: 'Rope the drum holds on its last layer, as published.' },
-    { key: 'brakeTorqueNm', label: 'Brake torque', unit: 'Nm', help: 'Static torque of the negative (spring-applied) brake, as published.' },
-    { key: 'weightKg', label: 'Weight', unit: 'kg', help: 'Weight as the manufacturer publishes it.' },
+    {
+      key: 'stages',
+      label: 'Stages',
+      unit: '',
+      help: 'Number of planetary reduction stages, as published.',
+    },
+    {
+      key: 'outputTorqueNm',
+      label: 'Output torque',
+      unit: 'Nm',
+      help: `Rated output torque, ${RATING_HELP} The page states which rating it is.`,
+      grouped: true,
+    },
+    {
+      key: 'peakTorqueNm',
+      label: 'Peak torque',
+      unit: 'Nm',
+      help: `Maximum (peak) output torque, ${RATING_HELP}`,
+      grouped: true,
+    },
+    {
+      key: 'linePullDan',
+      label: 'Line pull, 1st layer',
+      unit: 'daN',
+      help: `Rope pull on the first drum layer, ${RATING_HELP}`,
+      grouped: true,
+    },
+    {
+      key: 'ropeSpeed',
+      label: 'Rope speed, 1st layer',
+      unit: 'm/min',
+      help: 'Rope speed on the first drum layer at the stated oil flow, as published.',
+    },
+    {
+      key: 'ropeDia',
+      label: 'Rope dia.',
+      unit: 'mm',
+      help: 'Wire rope diameter the drum is grooved or sized for, as published.',
+    },
+    {
+      key: 'ropeCapacityM',
+      label: 'Rope capacity',
+      unit: 'm',
+      help: 'Rope the drum holds on its last layer, as published.',
+    },
+    {
+      key: 'brakeTorqueNm',
+      label: 'Brake torque',
+      unit: 'Nm',
+      help: 'Static torque of the negative (spring-applied) brake, as published.',
+    },
+    {
+      key: 'weightKg',
+      label: 'Weight',
+      unit: 'kg',
+      help: 'Weight as the manufacturer publishes it.',
+    },
   ]
 }
 
 /** Keys only a pump, motor or cylinder row carries — they make a table `equipment`. */
 const EQUIPMENT_MARKERS: ReadonlySet<string> = new Set([
-  'capacityTon', 'capacityLbs', 'boreIn', 'strokeIn', 'displacementCc', 'displacementCuIn', 'ratedRpm', 'maxRpm', 'torqueLbIn',
-  'outputTorqueNm', 'linePullDan',
+  'capacityTon',
+  'capacityLbs',
+  'boreIn',
+  'strokeIn',
+  'displacementCc',
+  'displacementCuIn',
+  'ratedRpm',
+  'maxRpm',
+  'torqueLbIn',
+  'outputTorqueNm',
+  'linePullDan',
 ])
 
 /**
@@ -654,33 +797,128 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     "Y HEX" (and "Y1 HEX" for a second hex). The letter is kept so the table
     matches the drawing on the same listing; the meaning comes from the header.
   */
-  { key: 'Y', label: 'Y', unit: 'mm', help: 'Hex across flats — printed "Y HEX" on the manufacturer drawing.' },
-  { key: 'Y1', label: 'Y1', unit: 'mm', help: 'Second hex across flats — printed "Y1 HEX" on the manufacturer drawing.' },
-  { key: 'S1', label: 'S1', unit: 'mm', help: 'Dimension S1 on the manufacturer dimension drawing.' },
-  { key: 'S2', label: 'S2', unit: 'mm', help: 'Dimension S2 on the manufacturer dimension drawing.' },
-  { key: 'S3', label: 'S3', unit: 'mm', help: 'Dimension S3 on the manufacturer dimension drawing.' },
-  { key: 'S4', label: 'S4', unit: 'mm', help: 'Dimension S4 on the manufacturer dimension drawing.' },
+  {
+    key: 'Y',
+    label: 'Y',
+    unit: 'mm',
+    help: 'Hex across flats — printed "Y HEX" on the manufacturer drawing.',
+  },
+  {
+    key: 'Y1',
+    label: 'Y1',
+    unit: 'mm',
+    help: 'Second hex across flats — printed "Y1 HEX" on the manufacturer drawing.',
+  },
+  {
+    key: 'S1',
+    label: 'S1',
+    unit: 'mm',
+    help: 'Dimension S1 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'S2',
+    label: 'S2',
+    unit: 'mm',
+    help: 'Dimension S2 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'S3',
+    label: 'S3',
+    unit: 'mm',
+    help: 'Dimension S3 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'S4',
+    label: 'S4',
+    unit: 'mm',
+    help: 'Dimension S4 on the manufacturer dimension drawing.',
+  },
   { key: 'A', label: 'A', unit: 'mm', help: 'Dimension A on the manufacturer dimension drawing.' },
   { key: 'B', label: 'B', unit: 'mm', help: 'Dimension B on the manufacturer dimension drawing.' },
   { key: 'C', label: 'C', unit: 'mm', help: 'Dimension C on the manufacturer dimension drawing.' },
   { key: 'D', label: 'D', unit: 'mm', help: 'Dimension D on the manufacturer dimension drawing.' },
-  { key: 'D1', label: 'D1', unit: 'mm', help: 'Dimension D1 on the manufacturer dimension drawing.' },
-  { key: 'D2', label: 'D2', unit: 'mm', help: 'Dimension D2 on the manufacturer dimension drawing.' },
-  { key: 'D3', label: 'D3', unit: 'mm', help: 'Dimension D3 on the manufacturer dimension drawing.' },
-  { key: 'D4', label: 'D4', unit: 'mm', help: 'Dimension D4 on the manufacturer dimension drawing.' },
+  {
+    key: 'D1',
+    label: 'D1',
+    unit: 'mm',
+    help: 'Dimension D1 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'D2',
+    label: 'D2',
+    unit: 'mm',
+    help: 'Dimension D2 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'D3',
+    label: 'D3',
+    unit: 'mm',
+    help: 'Dimension D3 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'D4',
+    label: 'D4',
+    unit: 'mm',
+    help: 'Dimension D4 on the manufacturer dimension drawing.',
+  },
   { key: 'E', label: 'E', unit: 'mm', help: 'Dimension E on the manufacturer dimension drawing.' },
   { key: 'F', label: 'F', unit: 'mm', help: 'Dimension F on the manufacturer dimension drawing.' },
   { key: 'H', label: 'H', unit: 'mm', help: 'Dimension H on the manufacturer dimension drawing.' },
   { key: 'L', label: 'L', unit: 'mm', help: 'Dimension L on the manufacturer dimension drawing.' },
-  { key: 'L1', label: 'L1', unit: 'mm', help: 'Dimension L1 on the manufacturer dimension drawing.' },
-  { key: 'L2', label: 'L2', unit: 'mm', help: 'Dimension L2 on the manufacturer dimension drawing.' },
-  { key: 'L3', label: 'L3', unit: 'mm', help: 'Dimension L3 on the manufacturer dimension drawing.' },
-  { key: 'L4', label: 'L4', unit: 'mm', help: 'Dimension L4 on the manufacturer dimension drawing.' },
-  { key: 'L5', label: 'L5', unit: 'mm', help: 'Dimension L5 on the manufacturer dimension drawing.' },
-  { key: 'L6', label: 'L6', unit: 'mm', help: 'Dimension L6 on the manufacturer dimension drawing.' },
-  { key: 'M1', label: 'M1', unit: 'mm', help: 'Dimension M1 on the manufacturer dimension drawing.' },
-  { key: 'M2', label: 'M2', unit: 'mm', help: 'Dimension M2 on the manufacturer dimension drawing.' },
-  { key: 'M3', label: 'M3', unit: 'mm', help: 'Dimension M3 on the manufacturer dimension drawing.' },
+  {
+    key: 'L1',
+    label: 'L1',
+    unit: 'mm',
+    help: 'Dimension L1 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'L2',
+    label: 'L2',
+    unit: 'mm',
+    help: 'Dimension L2 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'L3',
+    label: 'L3',
+    unit: 'mm',
+    help: 'Dimension L3 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'L4',
+    label: 'L4',
+    unit: 'mm',
+    help: 'Dimension L4 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'L5',
+    label: 'L5',
+    unit: 'mm',
+    help: 'Dimension L5 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'L6',
+    label: 'L6',
+    unit: 'mm',
+    help: 'Dimension L6 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'M1',
+    label: 'M1',
+    unit: 'mm',
+    help: 'Dimension M1 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'M2',
+    label: 'M2',
+    unit: 'mm',
+    help: 'Dimension M2 on the manufacturer dimension drawing.',
+  },
+  {
+    key: 'M3',
+    label: 'M3',
+    unit: 'mm',
+    help: 'Dimension M3 on the manufacturer dimension drawing.',
+  },
   { key: 'Q', label: 'Q', unit: 'mm', help: 'Dimension Q on the manufacturer dimension drawing.' },
   { key: 'X', label: 'X', unit: 'mm', help: 'Dimension X on the manufacturer dimension drawing.' },
   { key: 'I', label: 'I', unit: 'mm', help: 'Dimension I on the manufacturer dimension drawing.' },
@@ -712,41 +950,153 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
     help: 'O-ring size supplied with the fitting, as inside diameter × section.',
   },
   // Lay-flat hose: inside diameter with tolerance and wall thickness, as printed.
-  { key: 'insideDia', label: 'I.D. (mm)', help: 'Inside diameter in millimetres with its tolerance, as published.', lead: true },
-  { key: 'wall', label: 'Wall (mm)', help: 'Wall thickness in millimetres, as published — a single figure or a band.', lead: true },
+  {
+    key: 'insideDia',
+    label: 'I.D. (mm)',
+    help: 'Inside diameter in millimetres with its tolerance, as published.',
+    lead: true,
+  },
+  {
+    key: 'wall',
+    label: 'Wall (mm)',
+    help: 'Wall thickness in millimetres, as published — a single figure or a band.',
+    lead: true,
+  },
   // Hose sold by the box, coil, reel or cut length: one row per way it is supplied.
-  { key: 'supply', label: 'Supply', help: 'Length and packaging the part number is supplied in, as published.', lead: true },
-  { key: 'item', label: 'Description', help: 'What this part number is, as the manufacturer lists it.', lead: true },
-  { key: 'half', label: 'Type', help: 'Which part of the coupling this is: coupler (female half), nipple (male half), complete set, dust cap or adapter.', lead: true },
-  { key: 'bodySize', label: 'Body size', help: 'Nominal body size of the coupling, which sets which halves mate.', lead: true },
+  {
+    key: 'supply',
+    label: 'Supply',
+    help: 'Length and packaging the part number is supplied in, as published.',
+    lead: true,
+  },
+  {
+    key: 'item',
+    label: 'Description',
+    help: 'What this part number is, as the manufacturer lists it.',
+    lead: true,
+  },
+  {
+    key: 'half',
+    label: 'Type',
+    help: 'Which part of the coupling this is: coupler (female half), nipple (male half), complete set, dust cap or adapter.',
+    lead: true,
+  },
+  {
+    key: 'bodySize',
+    label: 'Body size',
+    help: 'Nominal body size of the coupling, which sets which halves mate.',
+    lead: true,
+  },
   { key: 'mount', label: 'Mount', help: 'Mounting flange or pattern, as published.' },
   { key: 'shaft', label: 'Shaft', help: 'Drive shaft, as published.' },
   { key: 'ports', label: 'Ports', help: 'Port type and size, as published.' },
-  { key: 'rotation', label: 'Rotation', help: 'Direction of rotation viewed from the shaft end, as published.' },
+  {
+    key: 'rotation',
+    label: 'Rotation',
+    help: 'Direction of rotation viewed from the shaft end, as published.',
+  },
   { key: 'action', label: 'Action', help: 'Single- or double-acting, as published.' },
-  { key: 'ratio', label: 'Ratio', help: 'Reduction ratio, or the range of ratios the model is built in, as published.' },
+  {
+    key: 'ratio',
+    label: 'Ratio',
+    help: 'Reduction ratio, or the range of ratios the model is built in, as published.',
+  },
   // Screw-in cartridge valves — see CartridgeTextKey.
-  { key: 'series', label: 'Series', help: 'Frame size the cartridge is built in, as the maker numbers it; one series shares one cavity size.', lead: true },
-  { key: 'cavity', label: 'Cavity', help: 'Cavity the cartridge screws into, as the maker designates it.', lead: true },
-  { key: 'capacity', label: 'Capacity', help: 'Rated flow capacity as published, in US and metric units.' },
+  {
+    key: 'series',
+    label: 'Series',
+    help: 'Frame size the cartridge is built in, as the maker numbers it; one series shares one cavity size.',
+    lead: true,
+  },
+  {
+    key: 'cavity',
+    label: 'Cavity',
+    help: 'Cavity the cartridge screws into, as the maker designates it.',
+    lead: true,
+  },
+  {
+    key: 'capacity',
+    label: 'Capacity',
+    help: 'Rated flow capacity as published, in US and metric units.',
+  },
   // Lubrication pumps and lubricators — see LubricationTextKey.
-  { key: 'systemType', label: 'System', help: 'Lubrication system the pump feeds — SLR (single-line resistance), PDI (positive-displacement injector), progressive, Dualine or multi-line — as published.' },
-  { key: 'lubricant', label: 'Lubricant', help: 'Oil or grease, with the viscosity or NLGI range the pump handles, as published.' },
-  { key: 'reservoir', label: 'Reservoir', help: 'Reservoir capacity in the unit the maker publishes it.' },
-  { key: 'pressureRatio', label: 'Pressure ratio', help: 'Air-motor to fluid pressure ratio of an air-operated pump, as published.' },
-  { key: 'container', label: 'Fits', help: 'Container or drum the pump is built to fit, as published.' },
-  { key: 'voltage', label: 'Supply', help: 'Motor or control voltage, phase and frequency, as published.' },
-  { key: 'output', label: 'Output', help: 'Lubricant output per cycle or per minute, as published.' },
-  { key: 'maxPressure', label: 'Max pressure', help: 'Maximum pressure as the maker publishes it, in psi and bar.' },
+  {
+    key: 'systemType',
+    label: 'System',
+    help: 'Lubrication system the pump feeds — SLR (single-line resistance), PDI (positive-displacement injector), progressive, Dualine or multi-line — as published.',
+  },
+  {
+    key: 'lubricant',
+    label: 'Lubricant',
+    help: 'Oil or grease, with the viscosity or NLGI range the pump handles, as published.',
+  },
+  {
+    key: 'reservoir',
+    label: 'Reservoir',
+    help: 'Reservoir capacity in the unit the maker publishes it.',
+  },
+  {
+    key: 'pressureRatio',
+    label: 'Pressure ratio',
+    help: 'Air-motor to fluid pressure ratio of an air-operated pump, as published.',
+  },
+  {
+    key: 'container',
+    label: 'Fits',
+    help: 'Container or drum the pump is built to fit, as published.',
+  },
+  {
+    key: 'voltage',
+    label: 'Supply',
+    help: 'Motor or control voltage, phase and frequency, as published.',
+  },
+  {
+    key: 'output',
+    label: 'Output',
+    help: 'Lubricant output per cycle or per minute, as published.',
+  },
+  {
+    key: 'maxPressure',
+    label: 'Max pressure',
+    help: 'Maximum pressure as the maker publishes it, in psi and bar.',
+  },
   { key: 'outletThread', label: 'Outlet', help: 'Outlet port thread, as published.' },
-  { key: 'monitoring', label: 'Monitoring', help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.' },
-  { key: 'usedOn', label: 'For', help: 'Pump, or pump version, the maker lists the spare part under.' },
+  {
+    key: 'monitoring',
+    label: 'Monitoring',
+    help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.',
+  },
+  {
+    key: 'usedOn',
+    label: 'For',
+    help: 'Pump, or pump version, the maker lists the spare part under.',
+  },
   // Valve spare parts and repair kits — see SparePartTextKey.
-  { key: 'fits', label: 'Fits', help: 'Model, size or equipment the maker lists the part or kit for.', lead: true },
+  {
+    key: 'fits',
+    label: 'Fits',
+    help: 'Model, size or equipment the maker lists the part or kit for.',
+    lead: true,
+  },
   // Drilling pressure gauges — see GaugeTextKey.
-  { key: 'range', label: 'Range', help: 'Dial range and unit, as printed on the dial face.', lead: true },
-  { key: 'dial', label: 'Dial face', help: 'Dial face style — standard, luminous, or dual units — as published.', lead: true },
-  { key: 'trim', label: 'Service', help: 'Service trim — standard, sour gas (H2S), salt water — as published.', lead: true },
+  {
+    key: 'range',
+    label: 'Range',
+    help: 'Dial range and unit, as printed on the dial face.',
+    lead: true,
+  },
+  {
+    key: 'dial',
+    label: 'Dial face',
+    help: 'Dial face style — standard, luminous, or dual units — as published.',
+    lead: true,
+  },
+  {
+    key: 'trim',
+    label: 'Service',
+    help: 'Service trim — standard, sour gas (H2S), salt water — as published.',
+    lead: true,
+  },
   { key: 'connection', label: 'End connection', help: 'End connection, as published.', lead: true },
 ]
 
@@ -755,7 +1105,13 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
  * make a table `equipment`.
  */
 const EQUIPMENT_TEXT_MARKERS: ReadonlySet<string> = new Set([
-  'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'usedOn', 'cavity',
+  'systemType',
+  'lubricant',
+  'reservoir',
+  'pressureRatio',
+  'container',
+  'usedOn',
+  'cavity',
 ])
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
@@ -782,19 +1138,84 @@ export const LIFTING_LOAD_COLUMNS: readonly VariantColumn[] = [
   { key: 'wllKg', label: 'WLL', unit: 'kg', help: WLL_HELP },
   { key: 'wllLbs', label: 'WLL', unit: 'lbs', help: WLL_HELP },
   { key: 'wllKn', label: 'WLL', unit: 'kN', help: WLL_HELP },
-  { key: 'wllSf4Lbs', label: 'WLL 4:1', unit: 'lbs', help: 'Working load limit at a 4:1 design factor, as published.' },
-  { key: 'wllSf5Lbs', label: 'WLL 5:1', unit: 'lbs', help: 'Working load limit at a 5:1 design factor, as published.' },
-  { key: 'wllSf5T', label: 'WLL 5:1', unit: 't', help: 'Working load limit at a 5:1 design factor, as published.' },
-  { key: 'wllSf6T', label: 'WLL 6:1', unit: 't', help: 'Working load limit at a 6:1 design factor, as published.' },
-  { key: 'wllSf4T', label: 'WLL 4:1', unit: 't', help: 'Working load limit at a 4:1 design factor, as published.' },
-  { key: 'wllHookLbs', label: 'WLL, hook ends', unit: 'lbs', help: 'Working load limit with hook end fittings, which rate lower than eyes or jaws.' },
-  { key: 'wllEyeJawLbs', label: 'WLL, eye / jaw ends', unit: 'lbs', help: 'Working load limit with eye, jaw or stub end fittings.' },
-  { key: 'wllKgDoubleFall', label: 'WLL, 2 falls', unit: 'kg', help: 'Rated load with the hook reeved in two falls through the pulley block.' },
-  { key: 'wllKnSingle', label: 'WLL single leg', unit: 'kN', help: 'Working load of one leg hanging vertically.' },
-  { key: 'wllKnDouble45', label: 'WLL 2-leg ≤45°', unit: 'kN', help: 'Working load of a two-leg sling with each leg up to 45° from vertical.' },
-  { key: 'wllKnDouble90', label: 'WLL 2-leg 45–90°', unit: 'kN', help: 'Working load of a two-leg sling with each leg 45° to 90° from vertical.' },
-  { key: 'wllKnFour45', label: 'WLL 4-leg ≤45°', unit: 'kN', help: 'Working load of a four-leg sling with each leg up to 45° from vertical.' },
-  { key: 'wllKnFour90', label: 'WLL 4-leg 45–90°', unit: 'kN', help: 'Working load of a four-leg sling with each leg 45° to 90° from vertical.' },
+  {
+    key: 'wllSf4Lbs',
+    label: 'WLL 4:1',
+    unit: 'lbs',
+    help: 'Working load limit at a 4:1 design factor, as published.',
+  },
+  {
+    key: 'wllSf5Lbs',
+    label: 'WLL 5:1',
+    unit: 'lbs',
+    help: 'Working load limit at a 5:1 design factor, as published.',
+  },
+  {
+    key: 'wllSf5T',
+    label: 'WLL 5:1',
+    unit: 't',
+    help: 'Working load limit at a 5:1 design factor, as published.',
+  },
+  {
+    key: 'wllSf6T',
+    label: 'WLL 6:1',
+    unit: 't',
+    help: 'Working load limit at a 6:1 design factor, as published.',
+  },
+  {
+    key: 'wllSf4T',
+    label: 'WLL 4:1',
+    unit: 't',
+    help: 'Working load limit at a 4:1 design factor, as published.',
+  },
+  {
+    key: 'wllHookLbs',
+    label: 'WLL, hook ends',
+    unit: 'lbs',
+    help: 'Working load limit with hook end fittings, which rate lower than eyes or jaws.',
+  },
+  {
+    key: 'wllEyeJawLbs',
+    label: 'WLL, eye / jaw ends',
+    unit: 'lbs',
+    help: 'Working load limit with eye, jaw or stub end fittings.',
+  },
+  {
+    key: 'wllKgDoubleFall',
+    label: 'WLL, 2 falls',
+    unit: 'kg',
+    help: 'Rated load with the hook reeved in two falls through the pulley block.',
+  },
+  {
+    key: 'wllKnSingle',
+    label: 'WLL single leg',
+    unit: 'kN',
+    help: 'Working load of one leg hanging vertically.',
+  },
+  {
+    key: 'wllKnDouble45',
+    label: 'WLL 2-leg ≤45°',
+    unit: 'kN',
+    help: 'Working load of a two-leg sling with each leg up to 45° from vertical.',
+  },
+  {
+    key: 'wllKnDouble90',
+    label: 'WLL 2-leg 45–90°',
+    unit: 'kN',
+    help: 'Working load of a two-leg sling with each leg 45° to 90° from vertical.',
+  },
+  {
+    key: 'wllKnFour45',
+    label: 'WLL 4-leg ≤45°',
+    unit: 'kN',
+    help: 'Working load of a four-leg sling with each leg up to 45° from vertical.',
+  },
+  {
+    key: 'wllKnFour90',
+    label: 'WLL 4-leg 45–90°',
+    unit: 'kN',
+    help: 'Working load of a four-leg sling with each leg 45° to 90° from vertical.',
+  },
   { key: 'proofT', label: 'Proof load', unit: 't', help: PROOF_HELP },
   { key: 'proofKg', label: 'Proof load', unit: 'kg', help: PROOF_HELP },
   { key: 'proofLbs', label: 'Proof load', unit: 'lbs', help: PROOF_HELP },
@@ -803,73 +1224,273 @@ export const LIFTING_LOAD_COLUMNS: readonly VariantColumn[] = [
   { key: 'mblKg', label: 'Min breaking load', unit: 'kg', help: MBL_HELP },
   { key: 'mblLbs', label: 'Min breaking load', unit: 'lbs', help: MBL_HELP },
   { key: 'mblKn', label: 'Min breaking load', unit: 'kN', help: MBL_HELP },
-  { key: 'mblFcKn', label: 'MBL, fibre core', unit: 'kN', help: 'Minimum breaking load of the rope with a fibre core.' },
-  { key: 'mblIwrcKn', label: 'MBL, steel core', unit: 'kN', help: 'Minimum breaking load of the rope with a steel (IWRC) core.' },
-  { key: 'mbl1370Kn', label: 'MBL 1370', unit: 'kN', help: 'Minimum breaking load at 1370 N/mm² wire grade.' },
-  { key: 'mbl1470Kn', label: 'MBL 1470', unit: 'kN', help: 'Minimum breaking load at 1470 N/mm² wire grade.' },
-  { key: 'mbl1570Kn', label: 'MBL 1570', unit: 'kN', help: 'Minimum breaking load at 1570 N/mm² wire grade.' },
-  { key: 'mbl1770FcKn', label: 'MBL 1770 FC', unit: 'kN', help: 'Minimum breaking load, 1770 N/mm² rope grade, fibre core.' },
-  { key: 'mbl1770IwrcKn', label: 'MBL 1770 IWRC', unit: 'kN', help: 'Minimum breaking load, 1770 N/mm² rope grade, steel core.' },
-  { key: 'mbl1960FcKn', label: 'MBL 1960 FC', unit: 'kN', help: 'Minimum breaking load, 1960 N/mm² rope grade, fibre core.' },
-  { key: 'mbl1960IwrcKn', label: 'MBL 1960 IWRC', unit: 'kN', help: 'Minimum breaking load, 1960 N/mm² rope grade, steel core.' },
+  {
+    key: 'mblFcKn',
+    label: 'MBL, fibre core',
+    unit: 'kN',
+    help: 'Minimum breaking load of the rope with a fibre core.',
+  },
+  {
+    key: 'mblIwrcKn',
+    label: 'MBL, steel core',
+    unit: 'kN',
+    help: 'Minimum breaking load of the rope with a steel (IWRC) core.',
+  },
+  {
+    key: 'mbl1370Kn',
+    label: 'MBL 1370',
+    unit: 'kN',
+    help: 'Minimum breaking load at 1370 N/mm² wire grade.',
+  },
+  {
+    key: 'mbl1470Kn',
+    label: 'MBL 1470',
+    unit: 'kN',
+    help: 'Minimum breaking load at 1470 N/mm² wire grade.',
+  },
+  {
+    key: 'mbl1570Kn',
+    label: 'MBL 1570',
+    unit: 'kN',
+    help: 'Minimum breaking load at 1570 N/mm² wire grade.',
+  },
+  {
+    key: 'mbl1770FcKn',
+    label: 'MBL 1770 FC',
+    unit: 'kN',
+    help: 'Minimum breaking load, 1770 N/mm² rope grade, fibre core.',
+  },
+  {
+    key: 'mbl1770IwrcKn',
+    label: 'MBL 1770 IWRC',
+    unit: 'kN',
+    help: 'Minimum breaking load, 1770 N/mm² rope grade, steel core.',
+  },
+  {
+    key: 'mbl1960FcKn',
+    label: 'MBL 1960 FC',
+    unit: 'kN',
+    help: 'Minimum breaking load, 1960 N/mm² rope grade, fibre core.',
+  },
+  {
+    key: 'mbl1960IwrcKn',
+    label: 'MBL 1960 IWRC',
+    unit: 'kN',
+    help: 'Minimum breaking load, 1960 N/mm² rope grade, steel core.',
+  },
   { key: 'lcKg', label: 'LC', unit: 'kg', help: LC_HELP },
   { key: 'lcKn', label: 'LC', unit: 'kN', help: LC_HELP },
   { key: 'lcDaN', label: 'LC', unit: 'daN', help: LC_HELP },
-  { key: 'pullKn', label: 'Pull load', unit: 'kN', help: 'Pull the stopper or fitting is rated to hold, as the manufacturer publishes it. Split by the chain grade it is made for.', grouped: true },
-  { key: 'uhpT', label: 'Holding capacity', unit: 't', help: 'Ultimate holding capacity the maker gives for the stated seabed. Actual holding depends on the soil, the fluke angle and how the anchor is set.', grouped: true },
+  {
+    key: 'pullKn',
+    label: 'Pull load',
+    unit: 'kN',
+    help: 'Pull the stopper or fitting is rated to hold, as the manufacturer publishes it. Split by the chain grade it is made for.',
+    grouped: true,
+  },
+  {
+    key: 'uhpT',
+    label: 'Holding capacity',
+    unit: 't',
+    help: 'Ultimate holding capacity the maker gives for the stated seabed. Actual holding depends on the soil, the fluke angle and how the anchor is set.',
+    grouped: true,
+  },
 ]
 
 /** Hoist and trolley performance, headed in the source by what each one is. */
 export const LIFTING_PERFORMANCE_COLUMNS: readonly VariantColumn[] = [
-  { key: 'liftHeight', label: 'Standard lift', unit: 'm', help: 'Lift supplied as standard; longer lifts to order.' },
-  { key: 'liftHeightDoubleFall', label: 'Standard lift, 2 falls', unit: 'm', help: 'Lift supplied as standard when reeved in two falls.' },
-  { key: 'liftSpeed', label: 'Lift speed', unit: 'm/min', help: 'Lifting speed at rated load, as published.' },
-  { key: 'liftSpeedDoubleFall', label: 'Lift speed, 2 falls', unit: 'm/min', help: 'Lifting speed when reeved in two falls.' },
-  { key: 'handEffort', label: 'Hand pull', unit: 'N', help: 'Pull on the hand chain needed to lift the rated load.' },
+  {
+    key: 'liftHeight',
+    label: 'Standard lift',
+    unit: 'm',
+    help: 'Lift supplied as standard; longer lifts to order.',
+  },
+  {
+    key: 'liftHeightDoubleFall',
+    label: 'Standard lift, 2 falls',
+    unit: 'm',
+    help: 'Lift supplied as standard when reeved in two falls.',
+  },
+  {
+    key: 'liftSpeed',
+    label: 'Lift speed',
+    unit: 'm/min',
+    help: 'Lifting speed at rated load, as published.',
+  },
+  {
+    key: 'liftSpeedDoubleFall',
+    label: 'Lift speed, 2 falls',
+    unit: 'm/min',
+    help: 'Lifting speed when reeved in two falls.',
+  },
+  {
+    key: 'handEffort',
+    label: 'Hand pull',
+    unit: 'N',
+    help: 'Pull on the hand chain needed to lift the rated load.',
+  },
   { key: 'loadChainDia', label: 'Load chain', unit: 'mm', help: 'Diameter of the load chain.' },
   { key: 'chainFalls', label: 'Falls', unit: '', help: 'Number of falls of load chain.' },
   { key: 'motorKw', label: 'Motor', unit: 'kW', help: 'Hoist motor power.' },
-  { key: 'minHookDistance', label: 'Min. hook distance', unit: 'mm', help: 'Headroom — the closest the two hooks come.' },
-  { key: 'minCurveRadius', label: 'Min. curve radius', unit: 'm', help: 'Tightest beam curve the trolley runs round.' },
-  { key: 'extraWeightPerMetre', label: 'Extra lift weight', unit: 'kg/m', help: 'Weight added by each extra metre of lift.' },
+  {
+    key: 'minHookDistance',
+    label: 'Min. hook distance',
+    unit: 'mm',
+    help: 'Headroom — the closest the two hooks come.',
+  },
+  {
+    key: 'minCurveRadius',
+    label: 'Min. curve radius',
+    unit: 'm',
+    help: 'Tightest beam curve the trolley runs round.',
+  },
+  {
+    key: 'extraWeightPerMetre',
+    label: 'Extra lift weight',
+    unit: 'kg/m',
+    help: 'Weight added by each extra metre of lift.',
+  },
   { key: 'lengthM', label: 'Length', unit: 'm', help: 'Effective working length, as published.' },
   // Spreader beams: the shortest top sling leg that keeps the sling angle inside the chart's limit at that span.
-  { key: 'minSlingM', label: 'Min. top sling', unit: 'm', help: 'Shortest top sling leg that keeps the sling angle within the stated limit at this span, as the load chart gives it.' },
-  { key: 'energyKnm', label: 'Energy absorption', unit: 'kNm', help: 'Energy the fender absorbs at its rated deflection, as published.' },
-  { key: 'reactionKn', label: 'Reaction force', unit: 'kN', help: 'Force the fender returns at its rated deflection, as published.' },
-  { key: 'torqueNm', label: 'Tightening torque', unit: 'Nm', help: 'Torque to tighten the bolt to, as the manufacturer states it.' },
-  { key: 'buoyancyKg', label: 'Net buoyancy', unit: 'kg', help: 'Net buoyancy — the weight in water the buoy can carry — as published. A depth-rated buoy loses buoyancy as its rating rises.', grouped: true },
-  { key: 'volumeL', label: 'Volume', unit: 'L', help: 'Displaced volume of the buoy, as published.', grouped: true },
-  { key: 'linksPerShot', label: 'Links per shot', unit: '', help: 'Number of links in one 27.5 m (15 fathom) shot of chain cable, as published.' },
+  {
+    key: 'minSlingM',
+    label: 'Min. top sling',
+    unit: 'm',
+    help: 'Shortest top sling leg that keeps the sling angle within the stated limit at this span, as the load chart gives it.',
+  },
+  {
+    key: 'energyKnm',
+    label: 'Energy absorption',
+    unit: 'kNm',
+    help: 'Energy the fender absorbs at its rated deflection, as published.',
+  },
+  {
+    key: 'reactionKn',
+    label: 'Reaction force',
+    unit: 'kN',
+    help: 'Force the fender returns at its rated deflection, as published.',
+  },
+  {
+    key: 'torqueNm',
+    label: 'Tightening torque',
+    unit: 'Nm',
+    help: 'Torque to tighten the bolt to, as the manufacturer states it.',
+  },
+  {
+    key: 'buoyancyKg',
+    label: 'Net buoyancy',
+    unit: 'kg',
+    help: 'Net buoyancy — the weight in water the buoy can carry — as published. A depth-rated buoy loses buoyancy as its rating rises.',
+    grouped: true,
+  },
+  {
+    key: 'volumeL',
+    label: 'Volume',
+    unit: 'L',
+    help: 'Displaced volume of the buoy, as published.',
+    grouped: true,
+  },
+  {
+    key: 'linksPerShot',
+    label: 'Links per shot',
+    unit: '',
+    help: 'Number of links in one 27.5 m (15 fathom) shot of chain cable, as published.',
+  },
 ]
 
 /** Geometry the source heads by name rather than by letter. */
 export const LIFTING_GEOMETRY_COLUMNS: readonly VariantColumn[] = [
-  { key: 'materialDia', label: 'Material dia.', unit: 'mm', help: 'Diameter of the link or bar stock.' },
+  {
+    key: 'materialDia',
+    label: 'Material dia.',
+    unit: 'mm',
+    help: 'Diameter of the link or bar stock.',
+  },
   { key: 'wireDia', label: 'Wire dia.', unit: 'mm', help: 'Diameter of the individual wire.' },
   { key: 'pinDia', label: 'Pin dia.', unit: 'mm', help: 'Diameter of the pin or bolt.' },
-  { key: 'insideLength', label: 'Inside length', unit: 'mm', help: 'Inside length of the link or bow.' },
-  { key: 'insideWidth', label: 'Inside width', unit: 'mm', help: 'Inside width of the link or jaw.' },
-  { key: 'insideWidthSmall', label: 'Inside width, small end', unit: 'mm', help: 'Inside width at the small end of the link.' },
-  { key: 'insideWidthLarge', label: 'Inside width, large end', unit: 'mm', help: 'Inside width at the large end of the link.' },
+  {
+    key: 'insideLength',
+    label: 'Inside length',
+    unit: 'mm',
+    help: 'Inside length of the link or bow.',
+  },
+  {
+    key: 'insideWidth',
+    label: 'Inside width',
+    unit: 'mm',
+    help: 'Inside width of the link or jaw.',
+  },
+  {
+    key: 'insideWidthSmall',
+    label: 'Inside width, small end',
+    unit: 'mm',
+    help: 'Inside width at the small end of the link.',
+  },
+  {
+    key: 'insideWidthLarge',
+    label: 'Inside width, large end',
+    unit: 'mm',
+    help: 'Inside width at the large end of the link.',
+  },
   { key: 'outsideWidth', label: 'Outside width', unit: 'mm', help: 'Outside width of the link.' },
   { key: 'insideDia', label: 'Inside dia.', unit: 'mm', help: 'Inside diameter of the ring.' },
   { key: 'overallLength', label: 'Overall length', unit: 'mm', help: 'Overall length.' },
-  { key: 'bodyLength', label: 'Body length', unit: 'mm', help: 'Length of the body between the threaded ends.' },
-  { key: 'threadLength', label: 'Thread length', unit: 'mm', help: 'Length of the threaded shank.' },
+  {
+    key: 'bodyLength',
+    label: 'Body length',
+    unit: 'mm',
+    help: 'Length of the body between the threaded ends.',
+  },
+  {
+    key: 'threadLength',
+    label: 'Thread length',
+    unit: 'mm',
+    help: 'Length of the threaded shank.',
+  },
   { key: 'eyeId', label: 'Eye I.D.', unit: 'mm', help: 'Inside diameter of the eye.' },
   { key: 'holeDia', label: 'Hole dia.', unit: 'mm', help: 'Diameter of the fixing hole.' },
-  { key: 'afterSwage', label: 'Max. after swage', unit: 'mm', help: 'Largest dimension across the sleeve once swaged.' },
-  { key: 'handleLength', label: 'Handle length', unit: 'mm', help: 'Length of the operating handle.' },
+  {
+    key: 'afterSwage',
+    label: 'Max. after swage',
+    unit: 'mm',
+    help: 'Largest dimension across the sleeve once swaged.',
+  },
+  {
+    key: 'handleLength',
+    label: 'Handle length',
+    unit: 'mm',
+    help: 'Length of the operating handle.',
+  },
   { key: 'takeUp', label: 'Take-up', unit: 'mm', help: 'Adjustment the binder takes up.' },
-  { key: 'pitch', label: 'Pitch', unit: 'mm', help: 'Thread pitch or link pitch, as the source heads it.' },
-  { key: 'usableLength', label: 'Usable length', unit: 'mm', help: 'Length of pin available to pass through the parts.' },
+  {
+    key: 'pitch',
+    label: 'Pitch',
+    unit: 'mm',
+    help: 'Thread pitch or link pitch, as the source heads it.',
+  },
+  {
+    key: 'usableLength',
+    label: 'Usable length',
+    unit: 'mm',
+    help: 'Length of pin available to pass through the parts.',
+  },
   { key: 'shankLength', label: 'Shank length', unit: 'mm', help: 'Length of the pin shank.' },
   { key: 'headDia', label: 'Head dia.', unit: 'mm', help: 'Diameter of the pin head.' },
   { key: 'headHeight', label: 'Head height', unit: 'mm', help: 'Height of the pin head.' },
-  { key: 'wireClearance', label: 'Wire clearance', unit: 'mm', help: 'Clearance inside the locking wire or loop.' },
+  {
+    key: 'wireClearance',
+    label: 'Wire clearance',
+    unit: 'mm',
+    help: 'Clearance inside the locking wire or loop.',
+  },
   { key: 'ringId', label: 'Ring I.D.', unit: 'mm', help: 'Inside diameter of the ring.' },
-  { key: 'heightMm', label: 'Height', unit: 'mm', help: 'Overall height, as published.', grouped: true },
+  {
+    key: 'heightMm',
+    label: 'Height',
+    unit: 'mm',
+    help: 'Overall height, as published.',
+    grouped: true,
+  },
 ]
 
 /**
@@ -926,17 +1547,68 @@ export const LIFTING_LETTER_COLUMNS: readonly VariantColumn[] = [
 export const LIFTING_WEIGHT_COLUMNS: readonly VariantColumn[] = [
   { key: 'weightKg', label: 'Weight', unit: 'kg', help: WEIGHT_HELP },
   { key: 'weightLbs', label: 'Weight', unit: 'lbs', help: WEIGHT_HELP },
-  { key: 'weightPer100Kg', label: 'Weight', unit: 'kg/100 pcs', help: 'Weight of 100 pieces, as published.' },
-  { key: 'weightPer100Lbs', label: 'Weight', unit: 'lbs/100 pcs', help: 'Weight of 100 pieces, as published.' },
-  { key: 'weightPer1000Kg', label: 'Weight', unit: 'kg/1000 pcs', help: 'Weight of 1,000 pieces, as published.' },
+  {
+    key: 'weightPer100Kg',
+    label: 'Weight',
+    unit: 'kg/100 pcs',
+    help: 'Weight of 100 pieces, as published.',
+  },
+  {
+    key: 'weightPer100Lbs',
+    label: 'Weight',
+    unit: 'lbs/100 pcs',
+    help: 'Weight of 100 pieces, as published.',
+  },
+  {
+    key: 'weightPer1000Kg',
+    label: 'Weight',
+    unit: 'kg/1000 pcs',
+    help: 'Weight of 1,000 pieces, as published.',
+  },
   { key: 'weightPerMetre', label: 'Weight', unit: 'kg/m', help: 'Weight per metre, as published.' },
-  { key: 'weightPer100m', label: 'Weight', unit: 'kg/100 m', help: 'Weight per 100 metres, as published.' },
-  { key: 'weightFcPer100m', label: 'Weight, fibre core', unit: 'kg/100 m', help: 'Weight per 100 m with a fibre core.' },
-  { key: 'weightNfcPer100m', label: 'Weight, natural fibre core', unit: 'kg/100 m', help: 'Weight per 100 m with a natural fibre core.' },
-  { key: 'weightIwrcPer100m', label: 'Weight, steel core', unit: 'kg/100 m', help: 'Weight per 100 m with a steel (IWRC) core.' },
-  { key: 'weightPer100FtLbs', label: 'Weight', unit: 'lbs/100 ft', help: 'Weight per 100 feet, as published.' },
-  { key: 'weightPer220mKg', label: 'Weight', unit: 'kg/220 m', help: 'Weight of a 220 m coil, as published.' },
-  { key: 'weightPerShotKg', label: 'Weight per shot', unit: 'kg', help: 'Approximate weight of one 27.5 m (15 fathom) shot of chain cable, as published.', grouped: true },
+  {
+    key: 'weightPer100m',
+    label: 'Weight',
+    unit: 'kg/100 m',
+    help: 'Weight per 100 metres, as published.',
+  },
+  {
+    key: 'weightFcPer100m',
+    label: 'Weight, fibre core',
+    unit: 'kg/100 m',
+    help: 'Weight per 100 m with a fibre core.',
+  },
+  {
+    key: 'weightNfcPer100m',
+    label: 'Weight, natural fibre core',
+    unit: 'kg/100 m',
+    help: 'Weight per 100 m with a natural fibre core.',
+  },
+  {
+    key: 'weightIwrcPer100m',
+    label: 'Weight, steel core',
+    unit: 'kg/100 m',
+    help: 'Weight per 100 m with a steel (IWRC) core.',
+  },
+  {
+    key: 'weightPer100FtLbs',
+    label: 'Weight',
+    unit: 'lbs/100 ft',
+    help: 'Weight per 100 feet, as published.',
+  },
+  {
+    key: 'weightPer220mKg',
+    label: 'Weight',
+    unit: 'kg/220 m',
+    help: 'Weight of a 220 m coil, as published.',
+  },
+  {
+    key: 'weightPerShotKg',
+    label: 'Weight per shot',
+    unit: 'kg',
+    help: 'Approximate weight of one 27.5 m (15 fathom) shot of chain cable, as published.',
+    grouped: true,
+  },
 ]
 
 /** Every lifting numeric column, in table order. */
@@ -951,116 +1623,459 @@ export const LIFTING_DIMENSION_COLUMNS: readonly VariantColumn[] = [
 export const LIFTING_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'size', label: 'Size', help: 'Nominal size as the manufacturer states it.', lead: true },
   // Below-the-hook beams and frames: one row per rigged configuration and span, as the load chart prints it.
-  { key: 'configuration', label: 'Configuration', help: 'How the beam is assembled and rigged for this row, as the load chart names it.', lead: true },
-  { key: 'span', label: 'Span', help: 'Distance between the lifting points the load hangs from, as the load chart prints it.', lead: true },
-  { key: 'grade', label: 'Grade', help: 'Material grade of this row — carbon and alloy versions share a frame but not a rating.', lead: true },
+  {
+    key: 'configuration',
+    label: 'Configuration',
+    help: 'How the beam is assembled and rigged for this row, as the load chart names it.',
+    lead: true,
+  },
+  {
+    key: 'span',
+    label: 'Span',
+    help: 'Distance between the lifting points the load hangs from, as the load chart prints it.',
+    lead: true,
+  },
+  {
+    key: 'grade',
+    label: 'Grade',
+    help: 'Material grade of this row — carbon and alloy versions share a frame but not a rating.',
+    lead: true,
+  },
   { key: 'type', label: 'Type', help: 'Manufacturer type within the size.', lead: true },
-  { key: 'linkType', label: 'Link', help: 'DIN 5685 form: A is short link, C is long link.', lead: true },
-  { key: 'pitchTolerance', label: 'Pitch tolerance', help: 'Tolerance on the inside link length (pitch).', lead: true },
+  {
+    key: 'linkType',
+    label: 'Link',
+    help: 'DIN 5685 form: A is short link, C is long link.',
+    lead: true,
+  },
+  {
+    key: 'pitchTolerance',
+    label: 'Pitch tolerance',
+    help: 'Tolerance on the inside link length (pitch).',
+    lead: true,
+  },
   { key: 'construction', label: 'Construction', help: 'Strand construction.', lead: true },
-  { key: 'tensileGrade', label: 'Wire grade', help: 'Nominal tensile strength of the wire.', lead: true },
+  {
+    key: 'tensileGrade',
+    label: 'Wire grade',
+    help: 'Nominal tensile strength of the wire.',
+    lead: true,
+  },
   { key: 'chainSize', label: 'Chain size', help: 'Chain the fitting is made for.', lead: true },
-  { key: 'ropeSize', label: 'Rope size', help: 'Rope diameter the sheave is made for.', lead: true },
+  {
+    key: 'ropeSize',
+    label: 'Rope size',
+    help: 'Rope diameter the sheave is made for.',
+    lead: true,
+  },
   { key: 'beamFlange', label: 'Beam flange', help: 'Beam flange width the trolley or clamp fits.' },
   { key: 'jawOpening', label: 'Jaw opening', help: 'Plate thickness range the clamp grips.' },
   { key: 'powerSupply', label: 'Supply', help: 'Electrical supply.' },
   { key: 'dutyClass', label: 'Duty class', help: 'Mechanism duty classification as published.' },
   { key: 'maxTap', label: 'Max. tap', help: 'Largest tap size the eye nut can be re-tapped to.' },
-  { key: 'colour', label: 'Colour', help: 'Sling colour. Under EN 1492 the colour marks the rated capacity; check the label on the sling.', lead: true },
+  {
+    key: 'colour',
+    label: 'Colour',
+    help: 'Sling colour. Under EN 1492 the colour marks the rated capacity; check the label on the sling.',
+    lead: true,
+  },
   { key: 'length', label: 'Length', help: 'Length as published.' },
-  { key: 'ratchet', label: 'Ratchet / fitting', help: 'Ratchet handle and end fitting, as published.' },
+  {
+    key: 'ratchet',
+    label: 'Ratchet / fitting',
+    help: 'Ratchet handle and end fitting, as published.',
+  },
   { key: 'section', label: 'Section', help: 'Cross-section of the link, as published.' },
   { key: 'loopSize', label: 'Eye size', help: 'Size of the sling eye, as published.' },
-  { key: 'pillar', label: 'Pillar', help: 'Pillar tube outside diameter × wall thickness, as published.' },
+  {
+    key: 'pillar',
+    label: 'Pillar',
+    help: 'Pillar tube outside diameter × wall thickness, as published.',
+  },
   { key: 'steelCore', label: 'Steel core', help: 'Diameter of the steel core, as published.' },
-  { key: 'wireMm', label: 'Wire rope', help: 'Wire rope diameter range the socket is made for, in millimetres.', lead: true },
-  { key: 'wireIn', label: 'Wire rope (in)', help: 'The same wire rope range in inches, as published.' },
-  { key: 'depth', label: 'Depth rating', help: 'Water depth the buoy is rated to; buoyancy is given at that depth.' },
-  { key: 'anchorMass', label: 'For anchor', help: 'Anchor mass the fitting is sized for, as published.' },
+  {
+    key: 'wireMm',
+    label: 'Wire rope',
+    help: 'Wire rope diameter range the socket is made for, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'wireIn',
+    label: 'Wire rope (in)',
+    help: 'The same wire rope range in inches, as published.',
+  },
+  {
+    key: 'depth',
+    label: 'Depth rating',
+    help: 'Water depth the buoy is rated to; buoyancy is given at that depth.',
+  },
+  {
+    key: 'anchorMass',
+    label: 'For anchor',
+    help: 'Anchor mass the fitting is sized for, as published.',
+  },
   { key: 'thread', label: 'Thread', help: 'Thread of the swivel nut, as published.' },
 ]
 
 /** Tube and pipe rows, in reading order. See `TubeTextKey`. */
 export const TUBE_TEXT_COLUMNS: readonly VariantTextColumn[] = [
-  { key: 'tubeType', label: 'Type', help: 'Product or standard type of this row, where one listing covers several.', lead: true },
-  { key: 'nps', label: 'NPS', help: 'Nominal pipe size, as the standard publishes it.', lead: true },
-  { key: 'odMm', label: 'O.D. (mm)', help: 'Outside diameter of the tube or pipe in millimetres.', lead: true },
-  { key: 'odIn', label: 'O.D. (in)', help: 'The same outside diameter in inches, as the trade orders it.', lead: true },
-  { key: 'baseTube', label: 'Base tube (mm)', help: 'Oval base tube, major × minor axis in millimetres.', lead: true },
-  { key: 'bwg', label: 'BWG', help: 'Birmingham Wire Gauge of the wall, the usual way heat-exchanger tube wall is ordered.', lead: true },
-  { key: 'schedule', label: 'Schedule', help: 'Pipe schedule or weight class (STD, XS, XXS), as the standard publishes it.', lead: true },
-  { key: 'wallMm', label: 'Wall (mm)', help: 'Wall thickness in millimetres: minimum or average wall per the governing standard and the order.', lead: true },
+  {
+    key: 'tubeType',
+    label: 'Type',
+    help: 'Product or standard type of this row, where one listing covers several.',
+    lead: true,
+  },
+  {
+    key: 'nps',
+    label: 'NPS',
+    help: 'Nominal pipe size, as the standard publishes it.',
+    lead: true,
+  },
+  {
+    key: 'odMm',
+    label: 'O.D. (mm)',
+    help: 'Outside diameter of the tube or pipe in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'odIn',
+    label: 'O.D. (in)',
+    help: 'The same outside diameter in inches, as the trade orders it.',
+    lead: true,
+  },
+  {
+    key: 'baseTube',
+    label: 'Base tube (mm)',
+    help: 'Oval base tube, major × minor axis in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'bwg',
+    label: 'BWG',
+    help: 'Birmingham Wire Gauge of the wall, the usual way heat-exchanger tube wall is ordered.',
+    lead: true,
+  },
+  {
+    key: 'schedule',
+    label: 'Schedule',
+    help: 'Pipe schedule or weight class (STD, XS, XXS), as the standard publishes it.',
+    lead: true,
+  },
+  {
+    key: 'wallMm',
+    label: 'Wall (mm)',
+    help: 'Wall thickness in millimetres: minimum or average wall per the governing standard and the order.',
+    lead: true,
+  },
   { key: 'wallIn', label: 'Wall (in)', help: 'The same wall thickness in inches.', lead: true },
-  { key: 'minWallMm', label: 'Min. wall (mm)', help: 'Minimum wall thickness in millimetres.', lead: true },
-  { key: 'minWallIn', label: 'Min. wall (in)', help: 'The same minimum wall in inches.', lead: true },
+  {
+    key: 'minWallMm',
+    label: 'Min. wall (mm)',
+    help: 'Minimum wall thickness in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'minWallIn',
+    label: 'Min. wall (in)',
+    help: 'The same minimum wall in inches.',
+    lead: true,
+  },
   { key: 'idMm', label: 'I.D. (mm)', help: 'Inside diameter in millimetres.', lead: true },
   { key: 'finType', label: 'Fin type', help: 'Fin form on this row, as published.', lead: true },
-  { key: 'finOdMm', label: 'Fin O.D. (mm)', help: 'Outside diameter over the fins in millimetres.', lead: true },
-  { key: 'finSize', label: 'Fin size (mm)', help: 'Fin plate size in millimetres, as published.', lead: true },
-  { key: 'finHeightMm', label: 'Fin height (mm)', help: 'Height of the fin above the tube surface in millimetres.', lead: true },
-  { key: 'finThicknessMm', label: 'Fin thickness (mm)', help: 'Fin strip or plate thickness in millimetres.', lead: true },
-  { key: 'fpi', label: 'Fins per inch', help: 'Fin density in fins per inch; a band means any density in it can be made.', lead: true },
-  { key: 'finsPerM', label: 'Fins per metre', help: 'The same fin density in fins per metre.', lead: true },
-  { key: 'finPitchMm', label: 'Fin pitch (mm)', help: 'Distance between fins in millimetres.', lead: true },
-  { key: 'segmentWidthMm', label: 'Segment width (mm)', help: 'Width of each segment on a serrated (segmented) fin, in millimetres.', lead: true },
-  { key: 'rootDiaMm', label: 'Root dia. (mm)', help: 'Diameter at the root of the fins, in millimetres.', lead: true },
-  { key: 'wallUnderFinMm', label: 'Wall under fin (mm)', help: 'Average wall thickness under the fins, in millimetres.', lead: true },
-  { key: 'grooveHeightMm', label: 'Groove height (mm)', help: 'Height of the internal grooves, in millimetres.', lead: true },
+  {
+    key: 'finOdMm',
+    label: 'Fin O.D. (mm)',
+    help: 'Outside diameter over the fins in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'finSize',
+    label: 'Fin size (mm)',
+    help: 'Fin plate size in millimetres, as published.',
+    lead: true,
+  },
+  {
+    key: 'finHeightMm',
+    label: 'Fin height (mm)',
+    help: 'Height of the fin above the tube surface in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'finThicknessMm',
+    label: 'Fin thickness (mm)',
+    help: 'Fin strip or plate thickness in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'fpi',
+    label: 'Fins per inch',
+    help: 'Fin density in fins per inch; a band means any density in it can be made.',
+    lead: true,
+  },
+  {
+    key: 'finsPerM',
+    label: 'Fins per metre',
+    help: 'The same fin density in fins per metre.',
+    lead: true,
+  },
+  {
+    key: 'finPitchMm',
+    label: 'Fin pitch (mm)',
+    help: 'Distance between fins in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'segmentWidthMm',
+    label: 'Segment width (mm)',
+    help: 'Width of each segment on a serrated (segmented) fin, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'rootDiaMm',
+    label: 'Root dia. (mm)',
+    help: 'Diameter at the root of the fins, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'wallUnderFinMm',
+    label: 'Wall under fin (mm)',
+    help: 'Average wall thickness under the fins, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'grooveHeightMm',
+    label: 'Groove height (mm)',
+    help: 'Height of the internal grooves, in millimetres.',
+    lead: true,
+  },
   { key: 'grooves', label: 'Grooves', help: 'Number of internal grooves.', lead: true },
-  { key: 'helixDeg', label: 'Helix angle (°)', help: 'Helix angle of the internal grooves, in degrees.', lead: true },
-  { key: 'outsideAreaM2m', label: 'Outside area (m²/m)', help: 'Outside surface area per metre of finned length.', lead: true },
+  {
+    key: 'helixDeg',
+    label: 'Helix angle (°)',
+    help: 'Helix angle of the internal grooves, in degrees.',
+    lead: true,
+  },
+  {
+    key: 'outsideAreaM2m',
+    label: 'Outside area (m²/m)',
+    help: 'Outside surface area per metre of finned length.',
+    lead: true,
+  },
   { key: 'studDiaMm', label: 'Stud dia. (mm)', help: 'Stud diameter in millimetres.', lead: true },
-  { key: 'studDiaIn', label: 'Stud dia. (in)', help: 'The same stud diameter in inches.', lead: true },
-  { key: 'studHeightMm', label: 'Stud height (mm)', help: 'Stud height above the tube surface, in millimetres.', lead: true },
-  { key: 'rowSpacingMm', label: 'Row spacing (mm)', help: 'Distance between stud rows along the tube, in millimetres.', lead: true },
-  { key: 'rowsPerM', label: 'Rows per metre', help: 'Stud rows per metre of studded length.', lead: true },
-  { key: 'coatingMm', label: 'Coating (mm)', help: 'Coating thickness in millimetres.', lead: true },
-  { key: 'overallOdMm', label: 'O.D. over coating (mm)', help: 'Outside diameter over the coating, in millimetres.', lead: true },
-  { key: 'ctcSrMm', label: 'Short radius, C-to-C (mm)', help: 'Centre-to-centre distance of a short-radius 180° return, per ASME B16.9.', lead: true },
-  { key: 'btfSrMm', label: 'Short radius, back to face (mm)', help: 'Back-to-face distance of a short-radius 180° return, per ASME B16.9.', lead: true },
-  { key: 'ctcLrMm', label: 'Long radius, C-to-C (mm)', help: 'Centre-to-centre distance of a long-radius 180° return, per ASME B16.9.', lead: true },
-  { key: 'btfLrMm', label: 'Long radius, back to face (mm)', help: 'Back-to-face distance of a long-radius 180° return, per ASME B16.9.', lead: true },
-  { key: 'weightLbFt', label: 'Nominal weight (lb/ft)', help: 'Nominal weight per foot with threads and couplings (non-upset), as the standard lists it.', lead: true },
-  { key: 'weightUpsetLbFt', label: 'Upset weight (lb/ft)', help: 'Nominal weight per foot with external-upset ends.', lead: true },
-  { key: 'weightPlainEndLbFt', label: 'Plain-end weight (lb/ft)', help: 'Weight per foot of plain-end pipe.', lead: true },
-  { key: 'grades', label: 'Grades', help: 'Steel grades this size is listed in, as the standard publishes them.' },
+  {
+    key: 'studDiaIn',
+    label: 'Stud dia. (in)',
+    help: 'The same stud diameter in inches.',
+    lead: true,
+  },
+  {
+    key: 'studHeightMm',
+    label: 'Stud height (mm)',
+    help: 'Stud height above the tube surface, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'rowSpacingMm',
+    label: 'Row spacing (mm)',
+    help: 'Distance between stud rows along the tube, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'rowsPerM',
+    label: 'Rows per metre',
+    help: 'Stud rows per metre of studded length.',
+    lead: true,
+  },
+  {
+    key: 'coatingMm',
+    label: 'Coating (mm)',
+    help: 'Coating thickness in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'overallOdMm',
+    label: 'O.D. over coating (mm)',
+    help: 'Outside diameter over the coating, in millimetres.',
+    lead: true,
+  },
+  {
+    key: 'ctcSrMm',
+    label: 'Short radius, C-to-C (mm)',
+    help: 'Centre-to-centre distance of a short-radius 180° return, per ASME B16.9.',
+    lead: true,
+  },
+  {
+    key: 'btfSrMm',
+    label: 'Short radius, back to face (mm)',
+    help: 'Back-to-face distance of a short-radius 180° return, per ASME B16.9.',
+    lead: true,
+  },
+  {
+    key: 'ctcLrMm',
+    label: 'Long radius, C-to-C (mm)',
+    help: 'Centre-to-centre distance of a long-radius 180° return, per ASME B16.9.',
+    lead: true,
+  },
+  {
+    key: 'btfLrMm',
+    label: 'Long radius, back to face (mm)',
+    help: 'Back-to-face distance of a long-radius 180° return, per ASME B16.9.',
+    lead: true,
+  },
+  {
+    key: 'weightLbFt',
+    label: 'Nominal weight (lb/ft)',
+    help: 'Nominal weight per foot with threads and couplings (non-upset), as the standard lists it.',
+    lead: true,
+  },
+  {
+    key: 'weightUpsetLbFt',
+    label: 'Upset weight (lb/ft)',
+    help: 'Nominal weight per foot with external-upset ends.',
+    lead: true,
+  },
+  {
+    key: 'weightPlainEndLbFt',
+    label: 'Plain-end weight (lb/ft)',
+    help: 'Weight per foot of plain-end pipe.',
+    lead: true,
+  },
+  {
+    key: 'grades',
+    label: 'Grades',
+    help: 'Steel grades this size is listed in, as the standard publishes them.',
+  },
   { key: 'coilLength', label: 'Coil length', help: 'Length supplied in one coil, as published.' },
-  { key: 'tubeMaterial', label: 'Material', help: 'Tube materials this size is made in, as published.' },
+  {
+    key: 'tubeMaterial',
+    label: 'Material',
+    help: 'Tube materials this size is made in, as published.',
+  },
   { key: 'finish', label: 'Finish', help: 'Surface finish or coating, as published.' },
-  { key: 'maxLengthM', label: 'Max. length (m)', help: 'Longest single length usually made, in metres; longer on request.' },
+  {
+    key: 'maxLengthM',
+    label: 'Max. length (m)',
+    help: 'Longest single length usually made, in metres; longer on request.',
+  },
 ]
 
 /** Keys only a tube or pipe row carries. Checked first: no other table has them. */
-const TUBE_MARKERS: readonly TubeTextKey[] = ['odMm', 'odIn', 'nps', 'bwg', 'baseTube', 'finOdMm', 'studDiaMm']
+const TUBE_MARKERS: readonly TubeTextKey[] = [
+  'odMm',
+  'odIn',
+  'nps',
+  'bwg',
+  'baseTube',
+  'finOdMm',
+  'studDiaMm',
+]
 
 /** Valve rows lead with size, DN, class and port. See `ValveDimensionKey`. */
 export const VALVE_TEXT_COLUMNS: readonly VariantTextColumn[] = [
-  { key: 'model', label: 'Model', help: 'Manufacturer model code, where one listing covers several models.', lead: true },
-  { key: 'type', label: 'Type', help: 'Valve type of this row, where one listing covers several.', lead: true },
+  {
+    key: 'model',
+    label: 'Model',
+    help: 'Manufacturer model code, where one listing covers several models.',
+    lead: true,
+  },
+  {
+    key: 'type',
+    label: 'Type',
+    help: 'Valve type of this row, where one listing covers several.',
+    lead: true,
+  },
   { key: 'size', label: 'Size', help: 'Nominal pipe size (NPS), as published.', lead: true },
   { key: 'dn', label: 'DN', help: 'Nominal diameter (DN), as published.', lead: true },
-  { key: 'pressureClass', label: 'Class', help: 'Pressure class or working pressure the row is built to (ASME Class, PN or psi), as published.', lead: true },
-  { key: 'setRange', label: 'Set range', help: 'Range the relief pressure can be set within, as published. It is not the body rating.', lead: true },
+  {
+    key: 'pressureClass',
+    label: 'Class',
+    help: 'Pressure class or working pressure the row is built to (ASME Class, PN or psi), as published.',
+    lead: true,
+  },
+  {
+    key: 'setRange',
+    label: 'Set range',
+    help: 'Range the relief pressure can be set within, as published. It is not the body rating.',
+    lead: true,
+  },
   { key: 'port', label: 'Port', help: 'Full bore or reduced bore, as published.', lead: true },
-  { key: 'ends', label: 'End connections', help: 'Inlet and outlet end connections, as published.', lead: true },
-  { key: 'service', label: 'Service', help: 'Service trim — standard, sour gas (H2S), waterflood, low temperature — as published.', lead: true },
+  {
+    key: 'ends',
+    label: 'End connections',
+    help: 'Inlet and outlet end connections, as published.',
+    lead: true,
+  },
+  {
+    key: 'service',
+    label: 'Service',
+    help: 'Service trim — standard, sour gas (H2S), waterflood, low temperature — as published.',
+    lead: true,
+  },
 ]
 
 const VALVE_LENGTH_COLUMNS: readonly VariantColumn[] = [
-  { key: 'lFf', label: 'Face to face', unit: 'mm', help: 'Face-to-face length of a wafer or lug body, which sits between the pipe flanges, as published.' },
-  { key: 'lRf', label: 'L (RF)', unit: 'mm', help: 'Face-to-face length with raised-face flanged ends, as published.' },
-  { key: 'lRtj', label: 'L (RTJ)', unit: 'mm', help: 'Face-to-face length with ring-type-joint flanged ends, as published.' },
-  { key: 'lBw', label: 'L (BW)', unit: 'mm', help: 'End-to-end length with butt-weld ends, as published.' },
+  {
+    key: 'lFf',
+    label: 'Face to face',
+    unit: 'mm',
+    help: 'Face-to-face length of a wafer or lug body, which sits between the pipe flanges, as published.',
+  },
+  {
+    key: 'lRf',
+    label: 'L (RF)',
+    unit: 'mm',
+    help: 'Face-to-face length with raised-face flanged ends, as published.',
+  },
+  {
+    key: 'lRtj',
+    label: 'L (RTJ)',
+    unit: 'mm',
+    help: 'Face-to-face length with ring-type-joint flanged ends, as published.',
+  },
+  {
+    key: 'lBw',
+    label: 'L (BW)',
+    unit: 'mm',
+    help: 'End-to-end length with butt-weld ends, as published.',
+  },
 ]
 
 const VALVE_WEIGHT_COLUMNS: readonly VariantColumn[] = [
-  { key: 'weightRfKg', label: 'Weight (flanged)', unit: 'kg', help: 'Weight with flanged ends, as published.', grouped: true },
-  { key: 'weightBwKg', label: 'Weight (BW)', unit: 'kg', help: 'Weight with butt-weld ends, as published.', grouped: true },
-  { key: 'weightKg', label: 'Weight', unit: 'kg', help: 'Weight as the manufacturer publishes it.', grouped: true },
+  {
+    key: 'weightRfKg',
+    label: 'Weight (flanged)',
+    unit: 'kg',
+    help: 'Weight with flanged ends, as published.',
+    grouped: true,
+  },
+  {
+    key: 'weightBwKg',
+    label: 'Weight (BW)',
+    unit: 'kg',
+    help: 'Weight with butt-weld ends, as published.',
+    grouped: true,
+  },
+  {
+    key: 'weightKg',
+    label: 'Weight',
+    unit: 'kg',
+    help: 'Weight as the manufacturer publishes it.',
+    grouped: true,
+  },
 ]
 
 /** Keys only a valve row carries. Checked before the lifting markers, since a valve row also has `size`. */
-const VALVE_MARKERS: ReadonlySet<string> = new Set<string>(['pressureClass', 'dn', 'lFf', 'lRf', 'lRtj', 'lBw', 'setRange', 'ends', 'service'])
+const VALVE_MARKERS: ReadonlySet<string> = new Set<string>([
+  'pressureClass',
+  'dn',
+  'lFf',
+  'lRf',
+  'lRtj',
+  'lBw',
+  'setRange',
+  'ends',
+  'service',
+])
 
 const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
   ...LIFTING_LOAD_COLUMNS.map((c) => c.key),
@@ -1077,24 +2092,62 @@ const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
  * core". A qualifier missing from this map is dropped, like any unknown key.
  */
 export const QUALIFIER_LABELS: Readonly<Record<string, string>> = {
-  a0: 'at 0°', a90: 'at 90°', upto90: 'up to 90°', a90to120: '90–120°',
-  vertical: 'vertical', choker: 'choker', basket: 'basket',
+  a0: 'at 0°',
+  a90: 'at 90°',
+  upto90: 'up to 90°',
+  a90to120: '90–120°',
+  vertical: 'vertical',
+  choker: 'choker',
+  basket: 'basket',
   // A spreader beam's chart is read by the top sling angle, measured from the vertical (STV).
-  stv45: '45° to vertical', stv30: '30° to vertical', stv20: '20° to vertical',
-  fc: 'fibre core', iwrc: 'steel core',
-  g1570: '1570 grade', g1770: '1770 grade', g1960: '1960 grade',
-  g1570_fc: '1570 grade, fibre core', g1570_iwrc: '1570 grade, steel core',
-  g1770_fc: '1770 grade, fibre core', g1770_iwrc: '1770 grade, steel core',
-  g1180_1770: '1180/1770 grade', g1320_1620: '1320/1620 grade', g1370_1570: '1370/1570 grade', g1570_1770: '1570/1770 grade',
-  g80: 'Grade 80', g100: 'Grade 100', galv: 'galvanized', ss304: '304 stainless',
-  u1: 'grade U1', u2: 'grade U2', u3: 'grade U3',
-  orq: 'grade ORQ', r3: 'grade R3', r3s: 'grade R3S', r4: 'grade R4', r4s: 'grade R4S', r5: 'grade R5',
-  mooring1: 'mooring, one rope', mooring2: 'mooring, two ropes', towing: 'towing',
-  iso: 'ISO 2307', meg4: 'MEG4 LDBF',
-  type1_iso: 'type I, ISO 2307', type1_dry_iso: 'type I, dry, ISO 2307', type1_meg4: 'type I, MEG4 LDBF',
-  type2_iso: 'type II, ISO 2307', type2_dry_iso: 'type II, dry, ISO 2307', type2_meg4: 'type II, MEG4 LDBF',
-  pp: 'polypropylene', ppMulti: 'PP multifilament', pe: 'polyethylene', polyester: 'polyester', nylon: 'nylon',
-  polyolefin: 'polyolefin', mixed: 'polyester/polyolefin', paPes: 'polyamide/polyester',
+  stv45: '45° to vertical',
+  stv30: '30° to vertical',
+  stv20: '20° to vertical',
+  fc: 'fibre core',
+  iwrc: 'steel core',
+  g1570: '1570 grade',
+  g1770: '1770 grade',
+  g1960: '1960 grade',
+  g1570_fc: '1570 grade, fibre core',
+  g1570_iwrc: '1570 grade, steel core',
+  g1770_fc: '1770 grade, fibre core',
+  g1770_iwrc: '1770 grade, steel core',
+  g1180_1770: '1180/1770 grade',
+  g1320_1620: '1320/1620 grade',
+  g1370_1570: '1370/1570 grade',
+  g1570_1770: '1570/1770 grade',
+  g80: 'Grade 80',
+  g100: 'Grade 100',
+  galv: 'galvanized',
+  ss304: '304 stainless',
+  u1: 'grade U1',
+  u2: 'grade U2',
+  u3: 'grade U3',
+  orq: 'grade ORQ',
+  r3: 'grade R3',
+  r3s: 'grade R3S',
+  r4: 'grade R4',
+  r4s: 'grade R4S',
+  r5: 'grade R5',
+  mooring1: 'mooring, one rope',
+  mooring2: 'mooring, two ropes',
+  towing: 'towing',
+  iso: 'ISO 2307',
+  meg4: 'MEG4 LDBF',
+  type1_iso: 'type I, ISO 2307',
+  type1_dry_iso: 'type I, dry, ISO 2307',
+  type1_meg4: 'type I, MEG4 LDBF',
+  type2_iso: 'type II, ISO 2307',
+  type2_dry_iso: 'type II, dry, ISO 2307',
+  type2_meg4: 'type II, MEG4 LDBF',
+  pp: 'polypropylene',
+  ppMulti: 'PP multifilament',
+  pe: 'polyethylene',
+  polyester: 'polyester',
+  nylon: 'nylon',
+  polyolefin: 'polyolefin',
+  mixed: 'polyester/polyolefin',
+  paPes: 'polyamide/polyester',
 }
 const QUALIFIER_ORDER = Object.keys(QUALIFIER_LABELS)
 
@@ -1117,7 +2170,14 @@ function letterSort(a: string, b: string): number {
     const body = s.replace(/^Ø/, '')
     const ch = body.charAt(0)
     const n = Number(/\d+/.exec(body)?.[0] ?? -1)
-    return [phi, ch.toLowerCase(), ch === ch.toUpperCase() ? 0 : 1, body.length > 1 && /[A-Za-z]/.test(body.charAt(1)) ? 1 : 0, n, body] as const
+    return [
+      phi,
+      ch.toLowerCase(),
+      ch === ch.toUpperCase() ? 0 : 1,
+      body.length > 1 && /[A-Za-z]/.test(body.charAt(1)) ? 1 : 0,
+      n,
+      body,
+    ] as const
   }
   const ka = k(a)
   const kb = k(b)
@@ -1201,24 +2261,36 @@ export function variantTableKind(variants: readonly VariantLike[]): VariantTable
     return Object.keys(raw)
   }
   // Tube first: its columns are all text and no other table carries them.
-  if (variants.some((v) => TUBE_MARKERS.some((k) => variantText(v.dimensions, k) !== null))) return 'tube'
+  if (variants.some((v) => TUBE_MARKERS.some((k) => variantText(v.dimensions, k) !== null)))
+    return 'tube'
   // Valve next: a valve row carries `size` just as a rigging row does, and it is
   // the class, DN and face-to-face columns that say which one it is.
   if (variants.some((v) => rawKeys(v).some((k) => VALVE_MARKERS.has(k)))) return 'valve'
   // Lifting next: a chain row carries `weightPerMetre` exactly as a hose row
   // does, and it is the load columns — which no hose or fitting ever has — that
   // say which one it is.
-  const isLifting = variants.some((v) => rawKeys(v).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!)))
+  const isLifting = variants.some((v) =>
+    rawKeys(v).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!))
+  )
   if (isLifting) return 'lifting'
   // A pump, motor or cylinder: rated by displacement, bore, stroke or speed —
   // keys no fitting or hose row carries.
   const isEquipment = variants.some(
     (v) =>
       Object.keys(variantDimensions(v.dimensions)).some((k) => EQUIPMENT_MARKERS.has(k)) ||
-      [...EQUIPMENT_TEXT_MARKERS].some((k) => variantText(v.dimensions, k as VariantTextKey) !== null),
+      [...EQUIPMENT_TEXT_MARKERS].some(
+        (k) => variantText(v.dimensions, k as VariantTextKey) !== null
+      )
   )
   if (isEquipment) return 'equipment'
-  const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre', 'tensileKg']
+  const hoseKeys: VariantDimensionKey[] = [
+    'hoseOD',
+    'burstPressure',
+    'vacuum',
+    'bendRadius',
+    'weightPerMetre',
+    'tensileKg',
+  ]
   const isHose = variants.some((v) => {
     const dims = variantDimensions(v.dimensions)
     return hoseKeys.some((k) => k in dims)
@@ -1273,7 +2345,9 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
   if (kind === 'tube') return []
   if (kind === 'valve') {
     // Named lengths, then whatever drawing letters the rows carry, then weights.
-    const named = new Set<string>([...VALVE_LENGTH_COLUMNS, ...VALVE_WEIGHT_COLUMNS].map((c) => c.key))
+    const named = new Set<string>(
+      [...VALVE_LENGTH_COLUMNS, ...VALVE_WEIGHT_COLUMNS].map((c) => c.key)
+    )
     const letters = [...present]
       .filter((k) => !named.has(k) && DRAWING_LETTER.test(k))
       .sort(letterSort)
@@ -1296,7 +2370,8 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
         .map((k) => ({ k, q: k.slice(c.key.length + 1) }))
         .filter(({ q }) => q in QUALIFIER_LABELS)
         .sort((x, y) => QUALIFIER_ORDER.indexOf(x.q) - QUALIFIER_ORDER.indexOf(y.q))
-      for (const { k, q } of splits) out.push({ ...c, key: k, label: `${c.label}, ${QUALIFIER_LABELS[q]}` })
+      for (const { k, q } of splits)
+        out.push({ ...c, key: k, label: `${c.label}, ${QUALIFIER_LABELS[q]}` })
       return out
     })
   const named = new Set<string>(LIFTING_DIMENSION_COLUMNS.map((c) => c.key))
@@ -1310,8 +2385,11 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
       return q === undefined || q in QUALIFIER_LABELS
     })
     .sort((a, b) => {
-      const [ba, qa] = a.split('@'), [bb, qb] = b.split('@')
-      return ba === bb ? QUALIFIER_ORDER.indexOf(qa ?? '') - QUALIFIER_ORDER.indexOf(qb ?? '') : letterSort(ba!, bb!)
+      const [ba, qa] = a.split('@'),
+        [bb, qb] = b.split('@')
+      return ba === bb
+        ? QUALIFIER_ORDER.indexOf(qa ?? '') - QUALIFIER_ORDER.indexOf(qb ?? '')
+        : letterSort(ba!, bb!)
     })
     .map((k) => {
       const [base, q] = k.split('@')
@@ -1348,9 +2426,7 @@ export function variantColumnUnit(column: VariantColumn): string | null {
  * side.
  */
 export function variantPortHeading(variants: readonly VariantLike[]): string {
-  const labels = variants
-    .map((v) => v.portLabel?.trim())
-    .filter((l): l is string => Boolean(l))
+  const labels = variants.map((v) => v.portLabel?.trim()).filter((l): l is string => Boolean(l))
   if (labels.length === 0) return 'Port'
   // A hammer union names a pipe end, not a port: `2" butt weld, Sch XXS` or
   // `3" LP thread`. That is visible in the value, same as the thread test
@@ -1358,7 +2434,8 @@ export function variantPortHeading(variants: readonly VariantLike[]): string {
   const isPipeEnd = (l: string) => /\b(butt weld|socket weld|lp thread|line pipe|npt)\b/i.test(l)
   if (labels.every(isPipeEnd)) return 'End connection'
   // A gauge is chosen by its scale: `0–160 psi`, `30"Hg vac – 0 – 150 psi`.
-  const isRange = (l: string) => /\b(psi|bar|kpa|mpa)\b|"\s*hg\b/i.test(l) && !/["']\s*(npt|bsp)/i.test(l)
+  const isRange = (l: string) =>
+    /\b(psi|bar|kpa|mpa)\b|"\s*hg\b/i.test(l) && !/["']\s*(npt|bsp)/i.test(l)
   if (labels.every(isRange)) return 'Range'
   // Checked before threads: `1/4" tube, push-in` carries a hyphen that is not a pitch.
   const isTube = (l: string) => /^[\d.\/\s-]+(?:"|mm)?\s*(?:o\.?d\.?\s*)?tube\b/i.test(l)
@@ -1402,7 +2479,7 @@ const INDUS_PART_NUMBER = /^IH-/i
  */
 export function variantPartNumberHeading(
   variants: readonly Pick<VariantLike, 'partNumber'>[],
-  brand: { slug: string; name: string } | null | undefined,
+  brand: { slug: string; name: string } | null | undefined
 ): string {
   const indusRows = variants.filter((v) => INDUS_PART_NUMBER.test(v.partNumber)).length
   if (indusRows === variants.length) return 'Indus part no.'
@@ -1422,7 +2499,7 @@ export function hasVariantEquivalents(variants: readonly VariantLike[]): boolean
  */
 export function variantEquivalentBrand(variants: readonly VariantLike[]): string | null {
   const brands = new Set(
-    variants.map((v) => v.competitorBrand).filter((b): b is string => Boolean(b)),
+    variants.map((v) => v.competitorBrand).filter((b): b is string => Boolean(b))
   )
   return brands.size === 1 ? [...brands][0]! : null
 }
@@ -1444,9 +2521,7 @@ export function variantHoseLabel(v: VariantLike): string | null {
  * `nominal_size_range` spec field already uses elsewhere in the catalogue.
  */
 export function variantBoreRange(variants: readonly VariantLike[]): string | null {
-  const dashes = variants
-    .map((v) => v.hoseDash)
-    .filter((d): d is number => typeof d === 'number')
+  const dashes = variants.map((v) => v.hoseDash).filter((d): d is number => typeof d === 'number')
   if (dashes.length === 0) return null
   const lo = Math.min(...dashes)
   const hi = Math.max(...dashes)

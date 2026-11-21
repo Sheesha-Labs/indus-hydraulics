@@ -27,7 +27,10 @@ export type EnquiryMailtoInput = {
  * (RFC 6068 §5).
  */
 export function enquiryMailto({ subject, body }: EnquiryMailtoInput): string {
-  const params = [`cc=${encodeURIComponent(ENQUIRY_EMAIL_CC)}`, `subject=${encodeURIComponent(subject)}`]
+  const params = [
+    `cc=${encodeURIComponent(ENQUIRY_EMAIL_CC)}`,
+    `subject=${encodeURIComponent(subject)}`,
+  ]
   if (body) params.push(`body=${encodeURIComponent(body.replace(/\r?\n/g, '\r\n'))}`)
   return `mailto:${ENQUIRY_EMAIL_TO}?${params.join('&')}`
 }
@@ -37,7 +40,11 @@ export function enquiryMailto({ subject, body }: EnquiryMailtoInput): string {
  * article or industry. Gives the buyer the lines the desk always asks for, so
  * the first reply can be a price rather than a question.
  */
-export function enquiryBody(input: { about: string; url: string; partNumber?: string | null }): string {
+export function enquiryBody(input: {
+  about: string
+  url: string
+  partNumber?: string | null
+}): string {
   return [
     'Hello Indus Hydraulics,',
     '',

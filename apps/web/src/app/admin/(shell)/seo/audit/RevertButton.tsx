@@ -18,7 +18,7 @@ export default function RevertButton({ auditLogId, beforeSummary }: Props) {
     if (done) return
     if (
       !confirm(
-        `Revert this change?\n\nThe field will return to:\n${truncate(beforeSummary, 280)}\n\nA new audit row tagged "reverted" will be appended.`,
+        `Revert this change?\n\nThe field will return to:\n${truncate(beforeSummary, 280)}\n\nA new audit row tagged "reverted" will be appended.`
       )
     ) {
       return
@@ -35,9 +35,7 @@ export default function RevertButton({ auditLogId, beforeSummary }: Props) {
   }
 
   if (done) {
-    return (
-      <span className="tabular-nums text-[11px] text-ih-success-ink">Reverted ✓</span>
-    )
+    return <span className="text-ih-success-ink text-[11px] tabular-nums">Reverted ✓</span>
   }
 
   return (
@@ -46,12 +44,12 @@ export default function RevertButton({ auditLogId, beforeSummary }: Props) {
         type="button"
         onClick={handleClick}
         disabled={pending}
-        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
+        className="text-ih-muted hover:text-ih-ink text-[11px] tabular-nums disabled:opacity-50"
       >
         {pending ? 'Reverting…' : 'Revert'}
       </button>
       {error && (
-        <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+        <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
           {error}
         </span>
       )}

@@ -10,11 +10,7 @@
 import * as Sentry from '@sentry/nextjs'
 import { useEffect } from 'react'
 
-export default function GlobalError({
-  error,
-}: {
-  error: Error & { digest?: string }
-}) {
+export default function GlobalError({ error }: { error: Error & { digest?: string } }) {
   useEffect(() => {
     Sentry.captureException(error)
   }, [error])
@@ -23,8 +19,7 @@ export default function GlobalError({
     <html lang="en">
       <body
         style={{
-          fontFamily:
-            '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
           maxWidth: 480,
           margin: '80px auto',
           padding: '0 24px',
@@ -34,8 +29,7 @@ export default function GlobalError({
       >
         <h1 style={{ fontSize: 24, marginBottom: 8 }}>Something went wrong</h1>
         <p style={{ color: '#6b6b6b', lineHeight: 1.6, marginBottom: 24 }}>
-          The page failed to load. Our team has been notified. Please try again
-          in a moment.
+          The page failed to load. Our team has been notified. Please try again in a moment.
         </p>
         {error.digest ? (
           <p

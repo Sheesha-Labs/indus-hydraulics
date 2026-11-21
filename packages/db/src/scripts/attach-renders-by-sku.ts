@@ -126,7 +126,9 @@ async function main() {
     }
     if (product.images.length > 0) {
       problems.push(`${sku}: already has ${product.images.length} other image(s) — left alone`)
-      console.log(`  CONFLICT ${sku.padEnd(22)} has ${product.images.length} other image(s), skipping`)
+      console.log(
+        `  CONFLICT ${sku.padEnd(22)} has ${product.images.length} other image(s), skipping`
+      )
       continue
     }
 
@@ -140,7 +142,7 @@ async function main() {
 
     const key = objectKeyFor(sku)
     console.log(
-      `  attach   ${sku.padEnd(22)} ${size.width}×${size.height}, ${Math.round(bytes.length / 1024)} KB`,
+      `  attach   ${sku.padEnd(22)} ${size.width}×${size.height}, ${Math.round(bytes.length / 1024)} KB`
     )
     if (dryRun) continue
 

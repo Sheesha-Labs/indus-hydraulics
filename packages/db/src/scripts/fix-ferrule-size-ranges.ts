@@ -33,7 +33,11 @@ const CATEGORIES = ['single-ferrule-tube-fittings', 'double-ferrule-tube-fitting
  * handful of listings. Their ends are threads, not tube: the headline range
  * is the first end's, written without the word "tube".
  */
-const ADAPTER_CATEGORIES = ['stainless-steel-jic-adapters', 'stainless-steel-orb-adapters', 'stainless-steel-npt-pipe-adapters']
+const ADAPTER_CATEGORIES = [
+  'stainless-steel-jic-adapters',
+  'stainless-steel-orb-adapters',
+  'stainless-steel-npt-pipe-adapters',
+]
 const PORTS = ['portLabel', 'port2Label', 'port3Label'] as const
 
 /** Leading size of a label in inches: `1-1/2" tube` → 1.5, `12 mm tube` → 12/25.4. */
@@ -81,7 +85,8 @@ function tubeRange(labels: string[]): string | null {
 const esc = (s: string) => s.replace(/"/g, '&quot;')
 
 /** `17 part numbers, 1/4" to 2"` — the count, then one or two inch sizes. */
-const SIZE_SPAN = (noun: string, q: string) => new RegExp(`(\\d+ ${noun}, )[\\d/-]+${q}(?: to [\\d/-]+${q})?`)
+const SIZE_SPAN = (noun: string, q: string) =>
+  new RegExp(`(\\d+ ${noun}, )[\\d/-]+${q}(?: to [\\d/-]+${q})?`)
 
 async function main() {
   const dryRun = process.argv.includes('--dry-run')
@@ -95,7 +100,9 @@ async function main() {
       descriptionShort: true,
       descriptionLong: true,
       seoDescription: true,
-      variants: { select: { id: true, position: true, portLabel: true, port2Label: true, port3Label: true } },
+      variants: {
+        select: { id: true, position: true, portLabel: true, port2Label: true, port3Label: true },
+      },
       specs: { where: { label: 'Size Range' }, select: { id: true, value: true } },
       faqs: { select: { id: true, answer: true } },
     },
@@ -111,7 +118,9 @@ async function main() {
     const adapter = ADAPTER_CATEGORIES.includes(p.category?.slug ?? '')
     // On an adapter the headline range is the first end's (`21 part numbers,
     // 1/4" to 2"` on a JIC × NPT elbow is the JIC end), so compare with that.
-    const overall = adapter ? rangeText(p.variants.map((v) => v.portLabel).filter((x): x is string => !!x)) : tubeRange(all)
+    const overall = adapter
+      ? rangeText(p.variants.map((v) => v.portLabel).filter((x): x is string => !!x))
+      : tubeRange(all)
     if (!overall) continue
     const unit = adapter ? '' : ' tube'
 
@@ -153,10 +162,21 @@ async function main() {
       .map((sp) => ({ id: sp.id, from: sp.value, to: `${overall}${unit}` }))
       .filter((w) => w.from !== w.to)
     const faqWrites = p.faqs
-      .map((f) => ({ id: f.id, from: f.answer, to: adapter ? f.answer.replace(SIZE_SPAN('part numbers', '"'), `$1${overall}`) : f.answer.replace(/(\d+ part numbers, ).*? tube\./, `$1${overall} tube.`) }))
+      .map((f) => ({
+        id: f.id,
+        from: f.answer,
+        to: adapter
+          ? f.answer.replace(SIZE_SPAN('part numbers', '"'), `$1${overall}`)
+          : f.answer.replace(/(\d+ part numbers, ).*? tube\./, `$1${overall} tube.`),
+      }))
       .filter((w) => w.from !== w.to)
 
-    const changed = specWrites.length > 0 || faqWrites.length > 0 || short !== (p.descriptionShort ?? '') || seo !== (p.seoDescription ?? '') || long !== (p.descriptionLong ?? '')
+    const changed =
+      specWrites.length > 0 ||
+      faqWrites.length > 0 ||
+      short !== (p.descriptionShort ?? '') ||
+      seo !== (p.seoDescription ?? '') ||
+      long !== (p.descriptionLong ?? '')
 
     const order = [...p.variants].sort((a, b) => {
       for (const k of PORTS) {
@@ -165,31 +185,56 @@ async function main() {
       }
       return 0
     })
-    const moves = order.map((v, i) => ({ id: v.id, from: v.position, to: i })).filter((m) => m.from !== m.to)
+    const moves = order
+      .map((v, i) => ({ id: v.id, from: v.position, to: i }))
+      .filter((m) => m.from !== m.to)
 
     if (!changed && moves.length === 0) continue
     if (changed) textChanged++
     if (moves.length) reordered++
     slugs.push(p.slug)
-    console.log(`${p.sku}: ${changed ? `range -> ${overall}` : 'text ok'}${moves.length ? `, ${moves.length} rows re-sorted` : ''}`)
+    console.log(
+      `${p.sku}: ${changed ? `range -> ${overall}` : 'text ok'}${moves.length ? `, ${moves.length} rows re-sorted` : ''}`
+    )
 
     if (process.argv.includes('--verbose') && changed) {
-      const show = (a: string, b: string) => { if (a !== b) console.log(`   - ${a.match(/\d+ (?:part numbers|sizes), [^.;]*|<li>End[^<]*/g)?.join(' | ')}\n   + ${b.match(/\d+ (?:part numbers|sizes), [^.;]*|<li>End[^<]*/g)?.join(' | ')}`) }
-      for (const w of [...specWrites, ...faqWrites]) console.log(`   - ${w.from.slice(0, 80)}\n   + ${w.to.slice(0, 80)}`)
-      show(p.descriptionShort ?? '', short); show(p.seoDescription ?? '', seo); show(p.descriptionLong ?? '', long)
+      const show = (a: string, b: string) => {
+        if (a !== b)
+          console.log(
+            `   - ${a.match(/\d+ (?:part numbers|sizes), [^.;]*|<li>End[^<]*/g)?.join(' | ')}\n   + ${b.match(/\d+ (?:part numbers|sizes), [^.;]*|<li>End[^<]*/g)?.join(' | ')}`
+          )
+      }
+      for (const w of [...specWrites, ...faqWrites])
+        console.log(`   - ${w.from.slice(0, 80)}\n   + ${w.to.slice(0, 80)}`)
+      show(p.descriptionShort ?? '', short)
+      show(p.seoDescription ?? '', seo)
+      show(p.descriptionLong ?? '', long)
     }
     if (dryRun) continue
     await db.$transaction([
       ...(changed
-        ? [db.product.update({ where: { id: p.id }, data: { descriptionShort: short, seoDescription: seo, descriptionLong: long } })]
+        ? [
+            db.product.update({
+              where: { id: p.id },
+              data: { descriptionShort: short, seoDescription: seo, descriptionLong: long },
+            }),
+          ]
         : []),
-      ...specWrites.map((w) => db.productSpec.update({ where: { id: w.id }, data: { value: w.to } })),
-      ...faqWrites.map((w) => db.productFaq.update({ where: { id: w.id }, data: { answer: w.to } })),
-      ...moves.map((m) => db.productVariant.update({ where: { id: m.id }, data: { position: m.to } })),
+      ...specWrites.map((w) =>
+        db.productSpec.update({ where: { id: w.id }, data: { value: w.to } })
+      ),
+      ...faqWrites.map((w) =>
+        db.productFaq.update({ where: { id: w.id }, data: { answer: w.to } })
+      ),
+      ...moves.map((m) =>
+        db.productVariant.update({ where: { id: m.id }, data: { position: m.to } })
+      ),
     ])
   }
 
-  console.log(`\n${dryRun ? '[dry-run] ' : ''}${textChanged} listings re-stated, ${reordered} size tables re-sorted`)
+  console.log(
+    `\n${dryRun ? '[dry-run] ' : ''}${textChanged} listings re-stated, ${reordered} size tables re-sorted`
+  )
   console.log(`slugs: ${slugs.join(' ')}`)
   await db.$disconnect()
 }

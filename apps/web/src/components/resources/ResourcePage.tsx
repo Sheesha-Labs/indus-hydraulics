@@ -4,7 +4,12 @@ import { Card, Eyebrow, SpecList, Stat } from '@indus/ui'
 import { RESOURCES_LAST_CHECKED, type ResourceEntry, enquiryMailto } from '@indus/domain'
 import { ArrowRightIcon } from '../designed/icons'
 import type { ResourceContact, ResourceCtaCopy } from '../../lib/resources-content'
-import { RESOURCE_GUTTER, RESOURCE_WIDTH, ResourceBreadcrumbStrip, ResourceCtaBand } from './ResourceLayout'
+import {
+  RESOURCE_GUTTER,
+  RESOURCE_WIDTH,
+  ResourceBreadcrumbStrip,
+  ResourceCtaBand,
+} from './ResourceLayout'
 
 /**
  * The shell for a reference page: hero, a two-column body with a sticky rail,
@@ -52,23 +57,33 @@ export default function ResourcePage({
   return (
     <div className="bg-ih-surface">
       <ResourceBreadcrumbStrip
-        trail={[{ label: 'Home', href: '/' }, { label: 'Resources', href: '/resources' }, { label: entry.title }]}
+        trail={[
+          { label: 'Home', href: '/' },
+          { label: 'Resources', href: '/resources' },
+          { label: entry.title },
+        ]}
         meta={`Checked ${RESOURCES_LAST_CHECKED}`}
       />
 
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className={`border-b border-ih-border bg-ih-surface pb-12 pt-10 lg:pb-14 lg:pt-12 ${RESOURCE_GUTTER}`}>
+      <section
+        className={`border-ih-border bg-ih-surface border-b pt-10 pb-12 lg:pt-12 lg:pb-14 ${RESOURCE_GUTTER}`}
+      >
         <div className={RESOURCE_WIDTH}>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-end lg:gap-16">
             <div>
               <Eyebrow>{hero.eyebrow}</Eyebrow>
-              <h1 className="mt-[18px] text-balance font-serif text-[34px] font-normal leading-[1.04] tracking-[-0.01em] sm:text-[44px] lg:text-[54px]">
+              <h1 className="mt-[18px] font-serif text-[34px] leading-[1.04] font-normal tracking-[-0.01em] text-balance sm:text-[44px] lg:text-[54px]">
                 {hero.lead} <em>{hero.emphasis}</em>
               </h1>
-              <p className="mt-5 max-w-[640px] text-pretty text-[16px] leading-[1.6] text-ih-ink-2">{hero.lede}</p>
+              <p className="text-ih-ink-2 mt-5 max-w-[640px] text-[16px] leading-[1.6] text-pretty">
+                {hero.lede}
+              </p>
             </div>
             <div>
-              <p className="mono mb-1 text-[10px] uppercase tracking-[0.14em] text-ih-muted">About this reference</p>
+              <p className="mono text-ih-muted mb-1 text-[10px] tracking-[0.14em] uppercase">
+                About this reference
+              </p>
               <SpecList rows={hero.spec} />
             </div>
           </div>
@@ -88,13 +103,15 @@ export default function ResourcePage({
         >
           <div className="min-w-0">
             <nav aria-label="On this page" className="mb-10 lg:hidden">
-              <p className="mono mb-2.5 text-[10px] uppercase tracking-[0.14em] text-ih-muted">On this page</p>
+              <p className="mono text-ih-muted mb-2.5 text-[10px] tracking-[0.14em] uppercase">
+                On this page
+              </p>
               <ul className="flex flex-wrap gap-2">
                 {contents.map((item) => (
                   <li key={item.id}>
                     <a
                       href={`#${item.id}`}
-                      className="inline-flex h-[30px] items-center rounded-full border border-ih-border bg-ih-surface px-3 text-[12.5px] text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent"
+                      className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] items-center rounded-full border px-3 text-[12.5px]"
                     >
                       {item.label}
                     </a>
@@ -109,15 +126,17 @@ export default function ResourcePage({
             <div className="sticky top-[124px] flex flex-col gap-4">
               <Card>
                 <nav aria-label="On this page" className="px-5 py-[18px]">
-                  <p className="mono mb-3 text-[10px] uppercase tracking-[0.14em] text-ih-muted">On this page</p>
+                  <p className="mono text-ih-muted mb-3 text-[10px] tracking-[0.14em] uppercase">
+                    On this page
+                  </p>
                   <ol className="flex flex-col">
                     {contents.map((item, i) => (
                       <li key={item.id}>
                         <a
                           href={`#${item.id}`}
-                          className="group flex items-baseline gap-3 border-t border-ih-border py-2.5 text-[13px] text-ih-ink-2 first:border-t-0 hover:text-ih-accent"
+                          className="group border-ih-border text-ih-ink-2 hover:text-ih-accent flex items-baseline gap-3 border-t py-2.5 text-[13px] first:border-t-0"
                         >
-                          <span className="mono w-6 shrink-0 text-[10.5px] text-ih-muted-2 group-hover:text-ih-accent">
+                          <span className="mono text-ih-muted-2 group-hover:text-ih-accent w-6 shrink-0 text-[10.5px]">
                             {String(i + 1).padStart(2, '0')}
                           </span>
                           {item.label}
@@ -128,19 +147,25 @@ export default function ResourcePage({
                 </nav>
               </Card>
 
-              <div className="rounded-lg border border-[oklch(0.88_0.04_248)] bg-ih-accent-soft px-5 py-[18px]">
-                <p className="mono text-[10px] uppercase tracking-[0.14em] text-[oklch(0.38_0.09_248)]">{railNote.title}</p>
-                <div className="mt-2.5 text-[13px] leading-[1.6] text-[oklch(0.33_0.07_248)]">{railNote.body}</div>
+              <div className="bg-ih-accent-soft rounded-lg border border-[oklch(0.88_0.04_248)] px-5 py-[18px]">
+                <p className="mono text-[10px] tracking-[0.14em] text-[oklch(0.38_0.09_248)] uppercase">
+                  {railNote.title}
+                </p>
+                <div className="mt-2.5 text-[13px] leading-[1.6] text-[oklch(0.33_0.07_248)]">
+                  {railNote.body}
+                </div>
               </div>
 
               <Card className="bg-ih-steel-soft px-5 py-[18px]">
-                <p className="text-[13.5px] font-medium leading-[1.4] text-ih-ink">Need the part, not just the figure?</p>
-                <p className="mt-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
+                <p className="text-ih-ink text-[13.5px] leading-[1.4] font-medium">
+                  Need the part, not just the figure?
+                </p>
+                <p className="text-ih-muted mt-1.5 text-[12.5px] leading-[1.55]">
                   Send the part number or the measurements and we quote the same day.
                 </p>
                 <a
                   href={enquiryMailto({ subject: `Enquiry from ${entry.title}` })}
-                  className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+                  className="text-ih-accent hover:text-ih-accent-hover mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium"
                 >
                   Email an enquiry
                   <ArrowRightIcon size={14} />
@@ -154,16 +179,19 @@ export default function ResourcePage({
       {/* ─── Other references ──────────────────────────────────────────── */}
       <section
         aria-labelledby="other-references-heading"
-        className={`border-t border-ih-border bg-ih-surface py-12 lg:py-14 ${RESOURCE_GUTTER}`}
+        className={`border-ih-border bg-ih-surface border-t py-12 lg:py-14 ${RESOURCE_GUTTER}`}
       >
         <div className={RESOURCE_WIDTH}>
           <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
-            <h2 id="other-references-heading" className="font-serif text-[26px] font-normal tracking-[-0.01em] sm:text-[30px]">
+            <h2
+              id="other-references-heading"
+              className="font-serif text-[26px] font-normal tracking-[-0.01em] sm:text-[30px]"
+            >
               Other references
             </h2>
             <Link
               href="/resources"
-              className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+              className="text-ih-accent hover:text-ih-accent-hover inline-flex items-center gap-1.5 text-[13px] font-medium"
             >
               All resources
               <ArrowRightIcon size={14} />
@@ -174,14 +202,18 @@ export default function ResourcePage({
               <li key={item.key}>
                 <Link
                   href={item.href}
-                  className="group flex h-full flex-col rounded-lg border border-ih-border bg-ih-surface p-5 transition-colors duration-150 hover:border-ih-accent"
+                  className="group border-ih-border bg-ih-surface hover:border-ih-accent flex h-full flex-col rounded-lg border p-5 transition-colors duration-150"
                 >
-                  <span className="mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">{item.basis}</span>
-                  <span className="mt-2.5 text-[17px] font-medium tracking-[-0.02em] text-ih-ink group-hover:text-ih-accent">
+                  <span className="mono text-ih-steel text-[9.5px] tracking-[0.12em] uppercase">
+                    {item.basis}
+                  </span>
+                  <span className="text-ih-ink group-hover:text-ih-accent mt-2.5 text-[17px] font-medium tracking-[-0.02em]">
                     {item.title}
                   </span>
-                  <span className="mt-1.5 flex-1 text-[13px] leading-[1.55] text-ih-muted">{item.summary}</span>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent">
+                  <span className="text-ih-muted mt-1.5 flex-1 text-[13px] leading-[1.55]">
+                    {item.summary}
+                  </span>
+                  <span className="text-ih-accent mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium">
                     {item.cta}
                     <ArrowRightIcon size={14} />
                   </span>

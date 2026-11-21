@@ -55,10 +55,12 @@ export default function CopyLinkButton({ url }: { url: string }) {
     <button
       type="button"
       onClick={copy}
-      className="inline-flex h-10 items-center gap-2 whitespace-nowrap rounded-md border border-ih-border-strong bg-ih-surface px-3.5 text-[13px] font-medium text-ih-ink transition-colors duration-150 hover:border-ih-accent hover:text-ih-accent motion-reduce:transition-none"
+      className="border-ih-border-strong bg-ih-surface text-ih-ink hover:border-ih-accent hover:text-ih-accent inline-flex h-10 items-center gap-2 rounded-md border px-3.5 text-[13px] font-medium whitespace-nowrap transition-colors duration-150 motion-reduce:transition-none"
     >
       {state === 'copied' ? <CheckIcon size={16} /> : <LinkIcon />}
-      <span aria-live="polite">{state === 'copied' ? 'Copied' : state === 'failed' ? 'Copy failed' : 'Copy link'}</span>
+      <span aria-live="polite">
+        {state === 'copied' ? 'Copied' : state === 'failed' ? 'Copy failed' : 'Copy link'}
+      </span>
     </button>
   )
 }

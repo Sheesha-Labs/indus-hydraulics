@@ -24,7 +24,7 @@ describe('offersStainlessOnRequest', () => {
     expect(STAINLESS_ON_REQUEST_TEMPLATES).not.toContain('hammer-union-spec')
   })
 
-  it('is withheld from listings sold under another maker\'s brand', () => {
+  it("is withheld from listings sold under another maker's brand", () => {
     expect(offersStainlessOnRequest('threaded-fitting-spec', 'parker')).toBe(false)
     expect(offersStainlessOnRequest('hydraulic-adapter-spec', 'tompkins')).toBe(false)
   })

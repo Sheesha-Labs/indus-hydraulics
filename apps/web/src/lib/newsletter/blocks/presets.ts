@@ -7,7 +7,13 @@
 import { BRAND } from '@indus/domain'
 import type { BlockPreset } from './types'
 
-const P = (id: string, type: string, label: string, description: string, props: BlockPreset['props'] = {}): BlockPreset => ({
+const P = (
+  id: string,
+  type: string,
+  label: string,
+  description: string,
+  props: BlockPreset['props'] = {}
+): BlockPreset => ({
   id,
   type,
   label,
@@ -19,23 +25,40 @@ const emptyImage = { image: null, alt: '', link: '', caption: '' }
 
 export const PRESETS: BlockPreset[] = [
   // Headers
-  P('hero-new-stock', 'hero', 'New in stock', 'Navy band (or a photo) with the name, “New in stock” and a button.'),
-  P('hero-left', 'hero', 'Hero, words on the left', 'Headline and button set to the left, darker overlay.', {
-    align: 'start',
-    overlayOpacity: 60,
-    eyebrow: 'Product focus',
-    heading: 'Hydraulic hose, cut to length',
-    text: 'One- and two-wire braided and multi-spiral hose, crimped and tested in the UAE.',
-    buttonLabel: 'Browse hoses',
-  }),
-  P('hero-update', 'hero', 'Monthly update, no photo', 'A short navy band with the month and a headline — for when there is no picture.', {
-    height: 's',
-    eyebrow: 'Monthly update',
-    heading: 'What is new at Indus',
-    text: '',
-    buttonLabel: '',
-    buttonUrl: '',
-  }),
+  P(
+    'hero-new-stock',
+    'hero',
+    'New in stock',
+    'Navy band (or a photo) with the name, “New in stock” and a button.'
+  ),
+  P(
+    'hero-left',
+    'hero',
+    'Hero, words on the left',
+    'Headline and button set to the left, darker overlay.',
+    {
+      align: 'start',
+      overlayOpacity: 60,
+      eyebrow: 'Product focus',
+      heading: 'Hydraulic hose, cut to length',
+      text: 'One- and two-wire braided and multi-spiral hose, crimped and tested in the UAE.',
+      buttonLabel: 'Browse hoses',
+    }
+  ),
+  P(
+    'hero-update',
+    'hero',
+    'Monthly update, no photo',
+    'A short navy band with the month and a headline — for when there is no picture.',
+    {
+      height: 's',
+      eyebrow: 'Monthly update',
+      heading: 'What is new at Indus',
+      text: '',
+      buttonLabel: '',
+      buttonUrl: '',
+    }
+  ),
   P('hero-photo', 'hero', 'Photograph only', 'The picture and the logo, nothing else.', {
     eyebrow: '',
     heading: '',
@@ -45,50 +68,110 @@ export const PRESETS: BlockPreset[] = [
     height: 'l',
     overlayOpacity: 10,
   }),
-  P('hero-poster', 'hero', 'Poster headline', 'Navy band, heavy capitals with one phrase in steel blue, a white button.', {
-    caps: true,
-    heading: 'Line down? ==We move fast.==',
-    highlightColor: BRAND.steel,
-    eyebrow: 'Breakdown support',
-    text: 'Send a photo of the nameplate. An engineer matches it and quotes the same day.',
-    buttonLabel: 'Request a quote',
-    buttonUrl: '/contact',
+  P(
+    'hero-poster',
+    'hero',
+    'Poster headline',
+    'Navy band, heavy capitals with one phrase in steel blue, a white button.',
+    {
+      caps: true,
+      heading: 'Line down? ==We move fast.==',
+      highlightColor: BRAND.steel,
+      eyebrow: 'Breakdown support',
+      text: 'Send a photo of the nameplate. An engineer matches it and quotes the same day.',
+      buttonLabel: 'Request a quote',
+      buttonUrl: '/contact',
+    }
+  ),
+  P(
+    'masthead-news',
+    'masthead',
+    'Masthead, “Product news”',
+    'Navy band: white logo, the issue on the right, a large faint word across the foot.'
+  ),
+  P(
+    'masthead-plain',
+    'masthead',
+    'Masthead, logo only',
+    'Navy band with the white logo and a line on the right — no faint word.',
+    {
+      label: 'The Indus Bulletin',
+      title: 'This month',
+      watermark: '',
+      padding: 's',
+    }
+  ),
+  P(
+    'topbar-points',
+    'topbar',
+    'Top strip',
+    'Three short points on an accent strip, above everything.'
+  ),
+  P(
+    'topbar-amber',
+    'topbar',
+    'Top strip, amber',
+    'An amber strip with navy words — for stock alerts.',
+    {
+      items: [
+        { text: 'On the shelf now' },
+        { text: 'Ships this week' },
+        { text: 'While stock lasts' },
+      ],
+      background: BRAND.warning,
+      textColor: BRAND.navy,
+    }
+  ),
+  P('logo-plain', 'logo', 'Logo', 'The logo on white, at the left.'),
+  P('logo-navy', 'logo', 'Logo on navy', 'The company name in white on a navy band.', {
+    logo: 'wordmark',
+    background: BRAND.navy,
+    textColor: BRAND.white,
   }),
-  P('masthead-news', 'masthead', 'Masthead, “Product news”', 'Navy band: white logo, the issue on the right, a large faint word across the foot.'),
-  P('masthead-plain', 'masthead', 'Masthead, logo only', 'Navy band with the white logo and a line on the right — no faint word.', {
-    label: 'The Indus Bulletin',
-    title: 'This month',
-    watermark: '',
+  P('logo-link', 'logo', 'Logo with a link', 'Logo at the left, a link at the right.', {
+    linkLabel: 'indushydraulics.com',
+    linkUrl: '/',
     padding: 's',
   }),
-  P('topbar-points', 'topbar', 'Top strip', 'Three short points on an accent strip, above everything.'),
-  P('topbar-amber', 'topbar', 'Top strip, amber', 'An amber strip with navy words — for stock alerts.', {
-    items: [{ text: 'On the shelf now' }, { text: 'Ships this week' }, { text: 'While stock lasts' }],
-    background: BRAND.warning,
-    textColor: BRAND.navy,
-  }),
-  P('logo-plain', 'logo', 'Logo', 'The logo on white, at the left.'),
-  P('logo-navy', 'logo', 'Logo on navy', 'The company name in white on a navy band.', { logo: 'wordmark', background: BRAND.navy, textColor: BRAND.white }),
-  P('logo-link', 'logo', 'Logo with a link', 'Logo at the left, a link at the right.', { linkLabel: 'indushydraulics.com', linkUrl: '/', padding: 's' }),
 
   // Text
   P('heading-serif', 'heading', 'Serif heading', 'A large serif heading.'),
-  P('heading-eyebrow', 'heading', 'Heading with a line above', 'Small capitals over a heading.', { eyebrow: 'In this issue', heading: 'What is new this month' }),
-  P('heading-centre', 'heading', 'Centred heading', 'A medium heading, centred.', { align: 'center', size: 'm' }),
-  P('heading-poster', 'heading', 'Poster heading on navy', 'Heavy capitals on navy, one phrase in steel blue.', {
-    heading: 'Repaired. Tested. ==Certified.==',
-    size: 'xl',
-    caps: true,
-    highlightColor: BRAND.steel,
-    align: 'center',
-    textColor: BRAND.white,
-    background: BRAND.navy,
-    padding: 'l',
+  P('heading-eyebrow', 'heading', 'Heading with a line above', 'Small capitals over a heading.', {
+    eyebrow: 'In this issue',
+    heading: 'What is new this month',
   }),
+  P('heading-centre', 'heading', 'Centred heading', 'A medium heading, centred.', {
+    align: 'center',
+    size: 'm',
+  }),
+  P(
+    'heading-poster',
+    'heading',
+    'Poster heading on navy',
+    'Heavy capitals on navy, one phrase in steel blue.',
+    {
+      heading: 'Repaired. Tested. ==Certified.==',
+      size: 'xl',
+      caps: true,
+      highlightColor: BRAND.steel,
+      align: 'center',
+      textColor: BRAND.white,
+      background: BRAND.navy,
+      padding: 'l',
+    }
+  ),
   P('text-plain', 'text', 'Paragraph', 'Prose, set to the left.'),
   P('text-lead', 'text', 'Large intro', 'An opening line in a larger size.', { size: 'l' }),
-  P('section-grey', 'section', 'Intro on grey', 'Heading, paragraph and button on a light grey band.'),
-  P('section-white', 'section', 'Intro on white', 'Heading, paragraph and button on white.', { background: '', padding: 'm' }),
+  P(
+    'section-grey',
+    'section',
+    'Intro on grey',
+    'Heading, paragraph and button on a light grey band.'
+  ),
+  P('section-white', 'section', 'Intro on white', 'Heading, paragraph and button on white.', {
+    background: '',
+    padding: 'm',
+  }),
   P('section-navy', 'section', 'Intro on navy', 'White words on a navy band.', {
     background: BRAND.navy,
     textColor: BRAND.white,
@@ -97,7 +180,8 @@ export const PRESETS: BlockPreset[] = [
   }),
   P('quote-customer', 'quote', 'Customer’s words', 'A testimonial with who said it.'),
   P('quote-engineer', 'quote', 'Engineer’s tip', 'A pull quote from the workshop, on grey.', {
-    quote: 'Most hose failures we see start at the fitting. Match the fitting series to the hose and crimp to the maker’s chart.',
+    quote:
+      'Most hose failures we see start at the fitting. Match the fitting series to the hose and crimp to the maker’s chart.',
     author: 'Indus workshop',
     role: 'Hose assembly team',
     background: BRAND.surface2,
@@ -105,23 +189,53 @@ export const PRESETS: BlockPreset[] = [
 
   // Images
   P('image-bleed', 'image', 'Photograph, edge to edge', 'A full-width picture between sections.'),
-  P('image-inset', 'image', 'Photograph with margins', 'A picture with a margin, rounded corners and a caption.', { fullBleed: false, rounded: true, padding: 's' }),
-  P('image-text-left', 'image-text', 'Photo, text beside it', 'Picture on the left, words on the right.'),
-  P('image-text-right', 'image-text', 'Text, photo beside it', 'Words on the left, picture on the right.', { side: 'end' }),
+  P(
+    'image-inset',
+    'image',
+    'Photograph with margins',
+    'A picture with a margin, rounded corners and a caption.',
+    { fullBleed: false, rounded: true, padding: 's' }
+  ),
+  P(
+    'image-text-left',
+    'image-text',
+    'Photo, text beside it',
+    'Picture on the left, words on the right.'
+  ),
+  P(
+    'image-text-right',
+    'image-text',
+    'Text, photo beside it',
+    'Words on the left, picture on the right.',
+    { side: 'end' }
+  ),
   P('gallery-two', 'gallery', 'Two photos', 'Two pictures side by side.'),
-  P('gallery-three', 'gallery', 'Three photos', 'Three pictures side by side.', { items: [emptyImage, emptyImage, emptyImage] }),
-
-  P('image-grid-two', 'image-grid', 'Photo grid, captions on bars', 'Four photos two to a row, each with a navy caption bar.'),
-  P('image-grid-three', 'image-grid', 'Photo grid, three across', 'Three photos in a row with plain captions under them.', {
-    columns: '3',
-    captionStyle: 'below',
-    background: '',
-    items: [
-      { image: null, alt: '', caption: '', link: '' },
-      { image: null, alt: '', caption: '', link: '' },
-      { image: null, alt: '', caption: '', link: '' },
-    ],
+  P('gallery-three', 'gallery', 'Three photos', 'Three pictures side by side.', {
+    items: [emptyImage, emptyImage, emptyImage],
   }),
+
+  P(
+    'image-grid-two',
+    'image-grid',
+    'Photo grid, captions on bars',
+    'Four photos two to a row, each with a navy caption bar.'
+  ),
+  P(
+    'image-grid-three',
+    'image-grid',
+    'Photo grid, three across',
+    'Three photos in a row with plain captions under them.',
+    {
+      columns: '3',
+      captionStyle: 'below',
+      background: '',
+      items: [
+        { image: null, alt: '', caption: '', link: '' },
+        { image: null, alt: '', caption: '', link: '' },
+        { image: null, alt: '', caption: '', link: '' },
+      ],
+    }
+  ),
 
   // Columns
   P('steps-order', 'steps', 'How to order', 'Three numbered steps from part number to delivery.'),
@@ -149,17 +263,50 @@ export const PRESETS: BlockPreset[] = [
     background: '',
     cardBackground: BRAND.surface2,
     items: [
-      { image: null, title: 'Hose assembly', text: 'Made to order and pressure-tested.', linkLabel: 'Find out more', url: '/services' },
-      { image: null, title: 'Cylinder repair', text: 'Strip-down, reseal and test.', linkLabel: 'Find out more', url: '/services' },
-      { image: null, title: 'Part identification', text: 'From a nameplate or a photo.', linkLabel: 'Find out more', url: '/contact' },
+      {
+        image: null,
+        title: 'Hose assembly',
+        text: 'Made to order and pressure-tested.',
+        linkLabel: 'Find out more',
+        url: '/services',
+      },
+      {
+        image: null,
+        title: 'Cylinder repair',
+        text: 'Strip-down, reseal and test.',
+        linkLabel: 'Find out more',
+        url: '/services',
+      },
+      {
+        image: null,
+        title: 'Part identification',
+        text: 'From a nameplate or a photo.',
+        linkLabel: 'Find out more',
+        url: '/contact',
+      },
     ],
   }),
   P('stats-plain', 'stats', 'Three figures', 'Big figures with a label under each.'),
-  P('stats-navy', 'stats', 'Figures on navy', 'White figures on a navy band.', { background: BRAND.navy, textColor: BRAND.onNavy, valueColor: BRAND.white }),
+  P('stats-navy', 'stats', 'Figures on navy', 'White figures on a navy band.', {
+    background: BRAND.navy,
+    textColor: BRAND.onNavy,
+    valueColor: BRAND.white,
+  }),
 
   // Lists & details
-  P('checklist-pills', 'checklist', 'Highlights as pills', 'White pills with a blue tick, on navy.'),
-  P('checklist-bars', 'checklist', 'Highlights as bars', 'Solid blue bars on navy, a heading in capitals.', { style: 'bars', caps: true, heading: 'Why order from stock' }),
+  P(
+    'checklist-pills',
+    'checklist',
+    'Highlights as pills',
+    'White pills with a blue tick, on navy.'
+  ),
+  P(
+    'checklist-bars',
+    'checklist',
+    'Highlights as bars',
+    'Solid blue bars on navy, a heading in capitals.',
+    { style: 'bars', caps: true, heading: 'Why order from stock' }
+  ),
   P('checklist-tiles', 'checklist', 'Highlights as tiles', 'Ticked tiles two to a row, on grey.', {
     style: 'tiles',
     heading: 'Key takeaways',
@@ -174,10 +321,19 @@ export const PRESETS: BlockPreset[] = [
     heading: 'Sizes in stock',
     shape: 'square',
     background: BRAND.surface2,
-    items: [{ label: '1/4"' }, { label: '3/8"' }, { label: '1/2"' }, { label: '3/4"' }, { label: '1"' }],
+    items: [
+      { label: '1/4"' },
+      { label: '3/8"' },
+      { label: '1/2"' },
+      { label: '3/4"' },
+      { label: '1"' },
+    ],
   }),
   P('list-ticks', 'list', 'Ticked list', 'Two columns with ticks.'),
-  P('list-rules', 'list', 'Ruled list', 'One column with a line under each item.', { columns: '1', marker: 'rule' }),
+  P('list-rules', 'list', 'Ruled list', 'One column with a line under each item.', {
+    columns: '1',
+    marker: 'rule',
+  }),
   P('kv-spec', 'key-values', 'Spec table', 'Label and value on each line, on grey.'),
   P('kv-event', 'key-values', 'Event details', 'Date, time and venue.', {
     heading: 'The details',
@@ -189,12 +345,21 @@ export const PRESETS: BlockPreset[] = [
     ],
   }),
   P('person-sales', 'person', 'Sales contact', 'A photo, name and how to reach them.'),
-  P('contact-details', 'contact', 'Contact and links', 'Company, address, phone and a row of links.'),
+  P(
+    'contact-details',
+    'contact',
+    'Contact and links',
+    'Company, address, phone and a row of links.'
+  ),
 
   // Calls to action
   P('button-solid', 'button', 'Solid button', 'An accent button, centred.'),
-  P('button-outline', 'button', 'Outline button', 'An outlined button.', { buttonStyle: 'outline' }),
-  P('button-wide', 'button', 'Full-width button', 'A button across the column.', { fullWidth: true }),
+  P('button-outline', 'button', 'Outline button', 'An outlined button.', {
+    buttonStyle: 'outline',
+  }),
+  P('button-wide', 'button', 'Full-width button', 'A button across the column.', {
+    fullWidth: true,
+  }),
   P('cta-navy', 'cta-band', 'Closing band, navy', 'Heading, line and two buttons on navy.'),
   P('cta-single', 'cta-band', 'One button on grey', 'A single ask on a light grey band.', {
     background: BRAND.surface2,
@@ -204,22 +369,39 @@ export const PRESETS: BlockPreset[] = [
     secondaryLabel: '',
     secondaryUrl: '',
   }),
-  P('offer-percent', 'offer', 'Offer with a badge', 'A promotion card: badge, offer, terms and a button.'),
-  P('offer-products', 'offer', 'Offer on picked products', 'The offer, then the products it covers as cards.', {
-    badge: 'Ex-stock',
-    heading: 'Ready to ship this week',
-    text: 'These items are on the shelf in the UAE and can leave the same day the order is confirmed.',
-    terms: 'While stock lasts. Quantities confirmed on the quote.',
-    records: { kind: 'product', ids: [], labels: [], layout: 'grid' },
-  }),
+  P(
+    'offer-percent',
+    'offer',
+    'Offer with a badge',
+    'A promotion card: badge, offer, terms and a button.'
+  ),
+  P(
+    'offer-products',
+    'offer',
+    'Offer on picked products',
+    'The offer, then the products it covers as cards.',
+    {
+      badge: 'Ex-stock',
+      heading: 'Ready to ship this week',
+      text: 'These items are on the shelf in the UAE and can leave the same day the order is confirmed.',
+      terms: 'While stock lasts. Quantities confirmed on the quote.',
+      records: { kind: 'product', ids: [], labels: [], layout: 'grid' },
+    }
+  ),
   P('social-links', 'social', 'Social links', 'LinkedIn and the website, centred.'),
-  P('social-badges', 'social', 'Social badges on navy', 'Round white badges on a navy band — for the foot of the email.', {
-    style: 'badges',
-    badgeColor: BRAND.white,
-    badgeTextColor: BRAND.navy,
-    background: BRAND.navy,
-    padding: 'm',
-  }),
+  P(
+    'social-badges',
+    'social',
+    'Social badges on navy',
+    'Round white badges on a navy band — for the foot of the email.',
+    {
+      style: 'badges',
+      badgeColor: BRAND.white,
+      badgeTextColor: BRAND.navy,
+      background: BRAND.navy,
+      padding: 'm',
+    }
+  ),
 
   // From the site
   P('records-brands', 'records', 'Brands', 'Brand cards with their photo or logo.', {
@@ -228,21 +410,36 @@ export const PRESETS: BlockPreset[] = [
     buttonLabel: 'All brands',
     buttonUrl: '/brands',
   }),
-  P('records-products', 'records', 'Products', 'Product cards, two to a row.', { heading: 'New in stock', records: { kind: 'product', ids: [], labels: [], layout: 'grid' } }),
-  P('records-rows', 'records', 'Products in alternating rows', 'A white card per product — photo, name, maker, a line and a button — sides alternating, on grey.', {
-    heading: '',
-    records: { kind: 'product', ids: [], labels: [], layout: 'rows' },
-    itemLabel: 'Discover',
-    buttonLabel: '',
-    background: BRAND.surface2,
+  P('records-products', 'records', 'Products', 'Product cards, two to a row.', {
+    heading: 'New in stock',
+    records: { kind: 'product', ids: [], labels: [], layout: 'grid' },
   }),
-  P('records-tiles', 'records', 'Product tiles', 'Small tiles three to a row, the last one a blue “and many more” tile.', {
-    heading: 'More new arrivals',
-    records: { kind: 'product', ids: [], labels: [], layout: 'tiles' },
-    buttonLabel: 'And many other products…',
-    align: 'center',
-    background: BRAND.surface2,
-  }),
+  P(
+    'records-rows',
+    'records',
+    'Products in alternating rows',
+    'A white card per product — photo, name, maker, a line and a button — sides alternating, on grey.',
+    {
+      heading: '',
+      records: { kind: 'product', ids: [], labels: [], layout: 'rows' },
+      itemLabel: 'Discover',
+      buttonLabel: '',
+      background: BRAND.surface2,
+    }
+  ),
+  P(
+    'records-tiles',
+    'records',
+    'Product tiles',
+    'Small tiles three to a row, the last one a blue “and many more” tile.',
+    {
+      heading: 'More new arrivals',
+      records: { kind: 'product', ids: [], labels: [], layout: 'tiles' },
+      buttonLabel: 'And many other products…',
+      align: 'center',
+      background: BRAND.surface2,
+    }
+  ),
   P('records-cases', 'records', 'Case studies', 'Jobs from the workshop, as alternating rows.', {
     heading: 'From the workshop',
     records: { kind: 'service', ids: [], labels: [], layout: 'rows' },
@@ -270,10 +467,21 @@ export const PRESETS: BlockPreset[] = [
   }),
 
   // Spacing
-  P('stripe-blue', 'stripe', 'Blue stripe', 'An 8px blue bar with a thin steel line — between bands.'),
-  P('stripe-amber', 'stripe', 'Amber stripe', 'An amber bar with a thin navy line.', { color: BRAND.warning, secondColor: BRAND.navy2 }),
+  P(
+    'stripe-blue',
+    'stripe',
+    'Blue stripe',
+    'An 8px blue bar with a thin steel line — between bands.'
+  ),
+  P('stripe-amber', 'stripe', 'Amber stripe', 'An amber bar with a thin navy line.', {
+    color: BRAND.warning,
+    secondColor: BRAND.navy2,
+  }),
   P('divider', 'divider', 'Line', 'A thin line.'),
   P('divider-short', 'divider', 'Short line', 'A short centred line.', { width: 20 }),
   P('spacer', 'spacer', 'Space', '32px of space.'),
-  P('spacer-grey', 'spacer', 'Grey space', 'A grey gap between bands.', { background: BRAND.surface2, height: 24 }),
+  P('spacer-grey', 'spacer', 'Grey space', 'A grey gap between bands.', {
+    background: BRAND.surface2,
+    height: 24,
+  }),
 ]

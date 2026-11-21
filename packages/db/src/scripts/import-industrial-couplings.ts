@@ -137,7 +137,10 @@ function loadWebEnv() {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 /**
@@ -173,10 +176,14 @@ async function fetchAsset(url: string, attempts = 3): Promise<Response | null> {
  */
 function detectImage(buf: Buffer): { mime: string; ext: string } | null {
   if (buf.length >= 12) {
-    if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return { mime: 'image/jpeg', ext: 'jpg' }
+    if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff)
+      return { mime: 'image/jpeg', ext: 'jpg' }
     if (buf.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])))
       return { mime: 'image/png', ext: 'png' }
-    if (buf.subarray(0, 4).toString('ascii') === 'RIFF' && buf.subarray(8, 12).toString('ascii') === 'WEBP')
+    if (
+      buf.subarray(0, 4).toString('ascii') === 'RIFF' &&
+      buf.subarray(8, 12).toString('ascii') === 'WEBP'
+    )
       return { mime: 'image/webp', ext: 'webp' }
     if (buf.subarray(0, 3).toString('ascii') === 'GIF') return { mime: 'image/gif', ext: 'gif' }
   }
@@ -212,14 +219,12 @@ async function main() {
   // page shipped with. Refuse the data rather than repeat it.
   const doubled = [
     ...payload.newCategories.map((c) => [c.slug, c.seoTitle] as const),
-    ...payload.entries.flatMap((e) =>
-      e.create ? [[e.sku, e.create.seoTitle] as const] : [],
-    ),
+    ...payload.entries.flatMap((e) => (e.create ? [[e.sku, e.create.seoTitle] as const] : [])),
   ].filter(([, t]) => /indus hydraulics/i.test(t))
   if (doubled.length) {
     throw new Error(
       `seoTitle must not contain the site name (the layout appends it): ` +
-        doubled.map(([k]) => k).join(', '),
+        doubled.map(([k]) => k).join(', ')
     )
   }
 
@@ -241,7 +246,10 @@ async function main() {
   if (!template) throw new Error(`missing spec template ${payload.specTemplateSlug}`)
   const fieldByKey = new Map(template.fields.map((f) => [f.key, f.id]))
 
-  const brand = await db.brand.findUnique({ where: { slug: payload.brandSlug }, select: { id: true } })
+  const brand = await db.brand.findUnique({
+    where: { slug: payload.brandSlug },
+    select: { id: true },
+  })
   if (!brand) throw new Error(`missing brand ${payload.brandSlug}`)
 
   const maxSibling = await db.category.aggregate({
@@ -349,7 +357,10 @@ async function main() {
     }
     if (!navParent) {
       if (dryRun) console.log(`[dry-run] create nav group ${g.label}`)
-      else problems.push(`nav section "${g.parentLabel}" not found in ${NAV_MENU_SLUG} — no menu entries added`)
+      else
+        problems.push(
+          `nav section "${g.parentLabel}" not found in ${NAV_MENU_SLUG} — no menu entries added`
+        )
     } else {
       const maxNav = await db.navMenuItem.aggregate({
         where: { parentId: navParent.id },
@@ -530,15 +541,15 @@ async function main() {
     if (dryRun) {
       console.log(
         `[dry-run] ${e.action} ${e.sku}: ${e.specs.length} specs, ` +
-          `${e.create?.faqs.length ?? 0} faqs, image ${e.image.file}`,
+          `${e.create?.faqs.length ?? 0} faqs, image ${e.image.file}`
       )
       continue
     }
 
     // ── feature image ────────────────────────────────────────────────────
     const imageStem = e.image.file.replace(/\.[a-z0-9]+$/i, '')
-    const hasImage = product.images.some((i) =>
-      i.media.originalFilename.replace(/\.[a-z0-9]+$/i, '') === imageStem,
+    const hasImage = product.images.some(
+      (i) => i.media.originalFilename.replace(/\.[a-z0-9]+$/i, '') === imageStem
     )
     if (hasImage) {
       imagesSkipped++
@@ -553,7 +564,7 @@ async function main() {
         const detected = detectImage(buf)
         if (!detected) {
           problems.push(
-            `${e.sku}: ${e.image.url} answered ${res.headers.get('content-type')}, not an image`,
+            `${e.sku}: ${e.image.url} answered ${res.headers.get('content-type')}, not an image`
           )
         } else {
           const { mime, ext } = detected
@@ -596,7 +607,7 @@ async function main() {
                   },
                 })
               },
-              { maxWait: 30_000, timeout: 30_000 },
+              { maxWait: 30_000, timeout: 30_000 }
             )
             images++
           }
@@ -682,7 +693,7 @@ async function main() {
           hasFocusKeyword: Boolean(product!.focusKeyword),
           hasSeoTitleAndDescription: Boolean(product!.seoTitle && product!.seoDescription),
           hasCommerceAttributes: Boolean(
-            product!.weightKg && product!.countryOfOrigin && product!.mpn,
+            product!.weightKg && product!.countryOfOrigin && product!.mpn
           ),
         })
         await tx.product.update({
@@ -690,7 +701,7 @@ async function main() {
           data: { contentScore: score.score },
         })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
 
     const done = created + updated
@@ -702,7 +713,7 @@ async function main() {
       `${images} images attached, ${imagesSkipped} images already present, ` +
       `${categoriesCreated} categories created, ${navCreated} menu entries added, ` +
       `${renamed} titles corrected, ${refreshed} listings refreshed, ` +
-      `${problems.length} problems`,
+      `${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
 }

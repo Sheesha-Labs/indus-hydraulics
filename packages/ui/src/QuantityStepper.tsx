@@ -33,8 +33,8 @@ export function QuantityStepper({
   return (
     <div
       className={cn(
-        'inline-flex items-center border border-ih-border bg-ih-surface',
-        disabled && 'opacity-50 pointer-events-none',
+        'border-ih-border bg-ih-surface inline-flex items-center border',
+        disabled && 'pointer-events-none opacity-50',
         className
       )}
     >
@@ -42,7 +42,7 @@ export function QuantityStepper({
         type="button"
         onClick={decrement}
         disabled={disabled || value <= min}
-        className="flex items-center justify-center w-8 h-8 text-ih-muted hover:text-ih-ink hover:bg-ih-surface-2 transition-colors disabled:opacity-30"
+        className="text-ih-muted hover:text-ih-ink hover:bg-ih-surface-2 flex h-8 w-8 items-center justify-center transition-colors disabled:opacity-30"
         aria-label="Decrease quantity"
       >
         −
@@ -54,14 +54,14 @@ export function QuantityStepper({
         max={max}
         onChange={handleInput}
         disabled={disabled}
-        className="w-12 h-8 text-center text-sm font-mono font-medium text-ih-ink border-x border-ih-border bg-transparent focus:outline-none focus:bg-ih-surface-2 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+        className="text-ih-ink border-ih-border focus:bg-ih-surface-2 h-8 w-12 [appearance:textfield] border-x bg-transparent text-center font-mono text-sm font-medium focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
         aria-label="Quantity"
       />
       <button
         type="button"
         onClick={increment}
         disabled={disabled || value >= max}
-        className="flex items-center justify-center w-8 h-8 text-ih-muted hover:text-ih-ink hover:bg-ih-surface-2 transition-colors disabled:opacity-30"
+        className="text-ih-muted hover:text-ih-ink hover:bg-ih-surface-2 flex h-8 w-8 items-center justify-center transition-colors disabled:opacity-30"
         aria-label="Increase quantity"
       >
         +

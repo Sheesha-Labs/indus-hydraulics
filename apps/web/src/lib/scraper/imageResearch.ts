@@ -73,7 +73,7 @@ export function buildImageSearchQuery(product: ResearchProduct): string {
 
 export function rankImageResults(
   product: ResearchProduct,
-  results: ImageSearchResult[],
+  results: ImageSearchResult[]
 ): ImageSearchResult[] {
   return results
     .filter((result) => isHttpUrl(result.image))
@@ -121,7 +121,7 @@ export function preferredModelToken(product: ResearchProduct): string | null {
 
 export async function researchProductImages(
   product: ResearchProduct,
-  fetchImpl: typeof fetch = fetch,
+  fetchImpl: typeof fetch = fetch
 ): Promise<ResearchedProduct> {
   const query = buildImageSearchQuery(product)
   const results = await searchDuckDuckGoImages(query, fetchImpl)
@@ -299,8 +299,7 @@ const CURATED_IMAGE_OVERRIDES: Record<
   },
   'EATON-5600-VALVED': {
     title: 'Eaton Aeroquip 5600 Series valved hydraulic quick coupling',
-    image:
-      'https://www.kvmtools.com/cdn/shop/files/2F539_AS01-623587_1200x1200.jpg?v=1715270935',
+    image: 'https://www.kvmtools.com/cdn/shop/files/2F539_AS01-623587_1200x1200.jpg?v=1715270935',
     url: 'https://www.kvmtools.com/products/aeroquip-5602-6-6s-hydraulic-quick-connect-hose-coupling-3-8-in-coupling-size-steel-6-lpm-max-flow-rate',
     width: 1200,
     height: 1200,
@@ -314,8 +313,7 @@ const CURATED_IMAGE_OVERRIDES: Record<
   },
   'EATON-FD70-FD76': {
     title: 'Danfoss FD72/FD76 ISO 5675 agricultural coupling',
-    image:
-      'https://www.robeckfluidpower.com/images/thumbs/0150644_fd76-1010-08-10_280.jpeg',
+    image: 'https://www.robeckfluidpower.com/images/thumbs/0150644_fd76-1010-08-10_280.jpeg',
     url: 'https://www.robeckfluidpower.com/fd72fd76-series-connect-under-pressure-farm-iso-5675-interchange',
     width: 280,
     height: 280,
@@ -388,7 +386,9 @@ export function resolveImageSelections(rows: ResearchedProduct[]): ResearchedPro
       continue
     }
 
-    const relevant = row.candidates.find((candidate) => isProductTypeRelevant(row.product, candidate))
+    const relevant = row.candidates.find((candidate) =>
+      isProductTypeRelevant(row.product, candidate)
+    )
     if (relevant) {
       row.selected = relevant
       row.selectionMethod = 'relevant-search'
@@ -399,7 +399,7 @@ export function resolveImageSelections(rows: ResearchedProduct[]): ResearchedPro
 
 export async function searchDuckDuckGoImages(
   query: string,
-  fetchImpl: typeof fetch = fetch,
+  fetchImpl: typeof fetch = fetch
 ): Promise<ImageSearchResult[]> {
   const encoded = encodeURIComponent(query)
   const searchUrl = `https://duckduckgo.com/?q=${encoded}&iax=images&ia=images`
@@ -424,11 +424,13 @@ export async function searchDuckDuckGoImages(
 
   return (payload.results ?? [])
     .filter(
-      (item): item is Required<Pick<ImageSearchResult, 'title' | 'image' | 'url'>> &
+      (
+        item
+      ): item is Required<Pick<ImageSearchResult, 'title' | 'image' | 'url'>> &
         Omit<ImageSearchResult, 'title' | 'image' | 'url'> =>
         typeof item.title === 'string' &&
         typeof item.image === 'string' &&
-        typeof item.url === 'string',
+        typeof item.url === 'string'
     )
     .map((item) => ({
       title: item.title,
@@ -464,7 +466,7 @@ function extractVqd(html: string): string | null {
 
 async function probeImage(
   url: string,
-  fetchImpl: typeof fetch,
+  fetchImpl: typeof fetch
 ): Promise<{ ok: boolean; contentType?: string; bytes?: number }> {
   try {
     const head = await fetchWithTimeout(fetchImpl, url, {
@@ -502,7 +504,7 @@ function acceptedImage(contentType: string | undefined, bytes: number | undefine
 async function fetchWithTimeout(
   fetchImpl: typeof fetch,
   url: string,
-  init: RequestInit,
+  init: RequestInit
 ): Promise<Response> {
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), IMAGE_TIMEOUT_MS)
@@ -532,14 +534,14 @@ function meaningfulTokens(value: string): string[] {
     new Set(
       normalize(value)
         .split(' ')
-        .filter((token) => token.length >= 3 && !ignored.has(token)),
-    ),
+        .filter((token) => token.length >= 3 && !ignored.has(token))
+    )
   )
 }
 
 function bestFamilyDonor(
   target: ResearchedProduct,
-  rows: ResearchedProduct[],
+  rows: ResearchedProduct[]
 ): ResearchedProduct | null {
   const targetTokens = meaningfulTokens(target.product.title)
   let best: { row: ResearchedProduct; score: number } | null = null

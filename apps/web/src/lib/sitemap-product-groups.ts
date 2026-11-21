@@ -21,7 +21,9 @@ export const PRODUCT_SITEMAP_GROUPS: readonly ProductSitemapGroup[] = [
 ] as const
 
 /** Root-category slugs per group. Anything not listed is `other`. */
-export const PRODUCT_GROUP_ROOTS: Readonly<Record<Exclude<ProductSitemapGroup, 'other'>, readonly string[]>> = {
+export const PRODUCT_GROUP_ROOTS: Readonly<
+  Record<Exclude<ProductSitemapGroup, 'other'>, readonly string[]>
+> = {
   hoses: [
     'hydraulic-hose-fittings-suppliers-uae',
     'industrial-hose-suppliers-uae',
@@ -50,7 +52,9 @@ export type CategoryNode = { id: string; parentId: string | null; slug: string }
  * parent stops the walk at the last node reached rather than looping, and
  * that node's slug decides the group.
  */
-export function categoryGroups(categories: readonly CategoryNode[]): Map<string, ProductSitemapGroup> {
+export function categoryGroups(
+  categories: readonly CategoryNode[]
+): Map<string, ProductSitemapGroup> {
   const byId = new Map(categories.map((c) => [c.id, c]))
   const groups = new Map<string, ProductSitemapGroup>()
   for (const category of categories) {
@@ -70,7 +74,7 @@ export function categoryGroups(categories: readonly CategoryNode[]): Map<string,
 /** Category ids whose products belong in `group`. */
 export function categoryIdsForGroup(
   groups: ReadonlyMap<string, ProductSitemapGroup>,
-  group: ProductSitemapGroup,
+  group: ProductSitemapGroup
 ): string[] {
   return [...groups].filter(([, g]) => g === group).map(([id]) => id)
 }

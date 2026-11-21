@@ -504,7 +504,7 @@ describe('video', () => {
     expect(BlogBlockSchema.safeParse(ok).success).toBe(true)
     expect(
       BlogBlockSchema.safeParse({ ...ok, duration: 'PT2M30S', caption: 'Bench crimp, 2SN -08.' })
-        .success,
+        .success
     ).toBe(true)
   })
 

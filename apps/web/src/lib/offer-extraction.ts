@@ -40,7 +40,12 @@ export type ExtractedOffer = {
   lines: RawOfferLine[]
   decimalConvention: DecimalConvention
   /** Money values parsed under the voted convention, aligned with `lines`. */
-  parsed: Array<{ unitPrice: number | null; qty: number | null; moq: number | null; total: number | null }>
+  parsed: Array<{
+    unitPrice: number | null
+    qty: number | null
+    moq: number | null
+    total: number | null
+  }>
   costUsdMicros: number
   droppedForNoEvidence: number
 }
@@ -51,7 +56,10 @@ const SCHEMA = {
   required: ['supplierName', 'currency', 'incoterm', 'validUntil', 'lines'],
   properties: {
     supplierName: { type: ['string', 'null'] },
-    currency: { type: ['string', 'null'], description: 'ISO code as stated, e.g. EUR. Null if not stated.' },
+    currency: {
+      type: ['string', 'null'],
+      description: 'ISO code as stated, e.g. EUR. Null if not stated.',
+    },
     incoterm: { type: ['string', 'null'], description: 'e.g. FOB, CIF, DDP. Null if not stated.' },
     validUntil: { type: ['string', 'null'], description: 'ISO date, or null. Never infer one.' },
     lines: {
@@ -60,7 +68,16 @@ const SCHEMA = {
       items: {
         type: 'object',
         additionalProperties: false,
-        required: ['description', 'kind', 'unitPriceRaw', 'qtyRaw', 'moqRaw', 'totalRaw', 'leadTimeDays', 'sourceQuote'],
+        required: [
+          'description',
+          'kind',
+          'unitPriceRaw',
+          'qtyRaw',
+          'moqRaw',
+          'totalRaw',
+          'leadTimeDays',
+          'sourceQuote',
+        ],
         properties: {
           description: { type: 'string' },
           kind: { type: 'string', enum: ['quoted', 'alternative', 'declined'] },
@@ -95,7 +112,9 @@ Rules, in order of importance:
 function costMicros(usage: { input_tokens?: number; output_tokens?: number } | undefined): number {
   if (!usage) return 0
   return Math.round(
-    (((usage.input_tokens ?? 0) / 1e6) * PRICE.input + ((usage.output_tokens ?? 0) / 1e6) * PRICE.output) * 1e6,
+    (((usage.input_tokens ?? 0) / 1e6) * PRICE.input +
+      ((usage.output_tokens ?? 0) / 1e6) * PRICE.output) *
+      1e6
   )
 }
 
@@ -115,7 +134,7 @@ function appearsVerbatim(quote: string, haystack: string): boolean {
  */
 export function keepOnlyEvidencedLines(
   lines: unknown,
-  rawText: string,
+  rawText: string
 ): { kept: RawOfferLine[]; dropped: number } {
   if (!Array.isArray(lines)) return { kept: [], dropped: 0 }
 
@@ -123,10 +142,16 @@ export function keepOnlyEvidencedLines(
   let dropped = 0
 
   for (const item of lines) {
-    if (typeof item !== 'object' || item === null) { dropped += 1; continue }
+    if (typeof item !== 'object' || item === null) {
+      dropped += 1
+      continue
+    }
     const l = item as Partial<RawOfferLine>
 
-    if (typeof l.description !== 'string' || !l.description.trim()) { dropped += 1; continue }
+    if (typeof l.description !== 'string' || !l.description.trim()) {
+      dropped += 1
+      continue
+    }
     if (typeof l.sourceQuote !== 'string' || !appearsVerbatim(l.sourceQuote, rawText)) {
       dropped += 1
       continue
@@ -139,7 +164,10 @@ export function keepOnlyEvidencedLines(
       qtyRaw: typeof l.qtyRaw === 'string' ? l.qtyRaw : null,
       moqRaw: typeof l.moqRaw === 'string' ? l.moqRaw : null,
       totalRaw: typeof l.totalRaw === 'string' ? l.totalRaw : null,
-      leadTimeDays: typeof l.leadTimeDays === 'number' && Number.isFinite(l.leadTimeDays) ? l.leadTimeDays : null,
+      leadTimeDays:
+        typeof l.leadTimeDays === 'number' && Number.isFinite(l.leadTimeDays)
+          ? l.leadTimeDays
+          : null,
       sourceQuote: l.sourceQuote,
     })
   }
@@ -163,8 +191,15 @@ export async function extractOffer(input: { rawText: string }): Promise<Extracte
   const block = response.content.find((b): b is Anthropic.TextBlock => b.type === 'text')
 
   const empty: ExtractedOffer = {
-    supplierName: null, currency: null, incoterm: null, validUntil: null,
-    lines: [], decimalConvention: 'ambiguous', parsed: [], costUsdMicros: cost, droppedForNoEvidence: 0,
+    supplierName: null,
+    currency: null,
+    incoterm: null,
+    validUntil: null,
+    lines: [],
+    decimalConvention: 'ambiguous',
+    parsed: [],
+    costUsdMicros: cost,
+    droppedForNoEvidence: 0,
   }
   if (!block) return empty
 
@@ -180,7 +215,7 @@ export async function extractOffer(input: { rawText: string }): Promise<Extracte
   // Vote the decimal convention across EVERY money string in the document at
   // once — that is the whole defence against a 1000x misread.
   const moneyStrings = kept.flatMap((l) =>
-    [l.unitPriceRaw, l.totalRaw, l.qtyRaw, l.moqRaw].filter((s): s is string => !!s),
+    [l.unitPriceRaw, l.totalRaw, l.qtyRaw, l.moqRaw].filter((s): s is string => !!s)
   )
   const convention = detectDecimalConvention(moneyStrings)
 

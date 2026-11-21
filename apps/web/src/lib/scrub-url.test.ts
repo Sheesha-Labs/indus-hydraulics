@@ -14,14 +14,18 @@ describe('scrubUrl', () => {
   })
 
   test('keeps the parameters analytics exists to measure', () => {
-    expect(scrubUrl('/search', sp('q=pump&page=2&sort=relevance'))).toBe('/search?q=pump&page=2&sort=relevance')
+    expect(scrubUrl('/search', sp('q=pump&page=2&sort=relevance'))).toBe(
+      '/search?q=pump&page=2&sort=relevance'
+    )
     expect(scrubUrl('/', sp('utm_source=linkedin&utm_campaign=launch'))).toBe(
-      '/?utm_source=linkedin&utm_campaign=launch',
+      '/?utm_source=linkedin&utm_campaign=launch'
     )
   })
 
   test('strips only the sensitive params when mixed', () => {
-    expect(scrubUrl('/quote/RFQ-1', sp('token=secret&utm_source=email'))).toBe('/quote/RFQ-1?utm_source=email')
+    expect(scrubUrl('/quote/RFQ-1', sp('token=secret&utm_source=email'))).toBe(
+      '/quote/RFQ-1?utm_source=email'
+    )
   })
 
   test('strips every repeat of a sensitive param', () => {

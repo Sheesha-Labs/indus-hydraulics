@@ -40,8 +40,8 @@ describe('resolveSearchIcon', () => {
           faviconUrl: 'https://cdn.test/favicon.png',
           logoUrl: 'https://cdn.test/logo.png',
         },
-        BASE,
-      ),
+        BASE
+      )
     ).toBe('https://cdn.test/search.png')
   })
 
@@ -53,15 +53,15 @@ describe('resolveSearchIcon', () => {
           faviconUrl: 'https://cdn.test/favicon.png',
           logoUrl: 'https://cdn.test/logo.png',
         },
-        BASE,
-      ),
+        BASE
+      )
     ).toBe('https://cdn.test/favicon.png')
 
     expect(
       resolveSearchIcon(
         { searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://cdn.test/logo.png' },
-        BASE,
-      ),
+        BASE
+      )
     ).toBe('https://cdn.test/logo.png')
   })
 
@@ -71,7 +71,9 @@ describe('resolveSearchIcon', () => {
    * any of these fields existed.
    */
   it('is null when nothing at all is set', () => {
-    expect(resolveSearchIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)).toBeNull()
+    expect(
+      resolveSearchIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)
+    ).toBeNull()
   })
 
   /**
@@ -82,7 +84,7 @@ describe('resolveSearchIcon', () => {
    */
   it('absolutises a same-origin path', () => {
     expect(
-      resolveSearchIcon({ searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null }, BASE),
+      resolveSearchIcon({ searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null }, BASE)
     ).toBe('https://indushydraulics.com/brand/mark.png')
   })
 
@@ -90,17 +92,21 @@ describe('resolveSearchIcon', () => {
     expect(
       resolveSearchIcon(
         { searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null },
-        'https://indushydraulics.com/',
-      ),
+        'https://indushydraulics.com/'
+      )
     ).toBe('https://indushydraulics.com/brand/mark.png')
   })
 
   it('leaves an absolute URL alone', () => {
     expect(
       resolveSearchIcon(
-        { searchLogoUrl: 'https://xyz.supabase.co/storage/v1/object/public/x.png', faviconUrl: null, logoUrl: null },
-        BASE,
-      ),
+        {
+          searchLogoUrl: 'https://xyz.supabase.co/storage/v1/object/public/x.png',
+          faviconUrl: null,
+          logoUrl: null,
+        },
+        BASE
+      )
     ).toBe('https://xyz.supabase.co/storage/v1/object/public/x.png')
   })
 })
@@ -118,15 +124,25 @@ describe('searchIconUrl', () => {
     const stable = 'https://indushydraulics.com/brand-icon.png'
     expect(
       searchIconUrl(
-        { searchLogoUrl: 'https://xyz.supabase.co/storage/mark.png', faviconUrl: null, logoUrl: null },
-        BASE,
-      ),
+        {
+          searchLogoUrl: 'https://xyz.supabase.co/storage/mark.png',
+          faviconUrl: null,
+          logoUrl: null,
+        },
+        BASE
+      )
     ).toBe(stable)
     expect(
-      searchIconUrl({ searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/f.png', logoUrl: null }, BASE),
+      searchIconUrl(
+        { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/f.png', logoUrl: null },
+        BASE
+      )
     ).toBe(stable)
     expect(
-      searchIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://xyz.supabase.co/l.png' }, BASE),
+      searchIconUrl(
+        { searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://xyz.supabase.co/l.png' },
+        BASE
+      )
     ).toBe(stable)
   })
 
@@ -136,7 +152,10 @@ describe('searchIconUrl', () => {
 
   it('does not double the slash on a base URL with a trailing one', () => {
     expect(
-      searchIconUrl({ searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null }, `${BASE}/`),
+      searchIconUrl(
+        { searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null },
+        `${BASE}/`
+      )
     ).toBe('https://indushydraulics.com/brand-icon.png')
   })
 })
@@ -153,22 +172,31 @@ describe('resolveTabIcon', () => {
           faviconUrl: 'https://cdn.test/favicon.png',
           logoUrl: 'https://cdn.test/logo.png',
         },
-        BASE,
-      ),
+        BASE
+      )
     ).toBe('https://cdn.test/favicon.png')
     expect(
       resolveTabIcon(
-        { searchLogoUrl: 'https://cdn.test/search.png', faviconUrl: null, logoUrl: 'https://cdn.test/logo.png' },
-        BASE,
-      ),
+        {
+          searchLogoUrl: 'https://cdn.test/search.png',
+          faviconUrl: null,
+          logoUrl: 'https://cdn.test/logo.png',
+        },
+        BASE
+      )
     ).toBe('https://cdn.test/search.png')
     expect(
-      resolveTabIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://cdn.test/logo.png' }, BASE),
+      resolveTabIcon(
+        { searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://cdn.test/logo.png' },
+        BASE
+      )
     ).toBe('https://cdn.test/logo.png')
   })
 
   it('is null when the operator has uploaded nothing', () => {
-    expect(resolveTabIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)).toBeNull()
+    expect(
+      resolveTabIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)
+    ).toBeNull()
   })
 })
 
@@ -183,14 +211,20 @@ describe('tabIconUrl', () => {
    */
   it('is this site\u2019s own route whichever field is set', () => {
     expect(
-      tabIconUrl({ searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/f.png', logoUrl: null }, BASE),
+      tabIconUrl(
+        { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/f.png', logoUrl: null },
+        BASE
+      )
     ).toBe(STABLE)
     expect(
-      tabIconUrl({ searchLogoUrl: 'https://xyz.supabase.co/s.png', faviconUrl: null, logoUrl: null }, BASE),
+      tabIconUrl(
+        { searchLogoUrl: 'https://xyz.supabase.co/s.png', faviconUrl: null, logoUrl: null },
+        BASE
+      )
     ).toBe(STABLE)
-    expect(tabIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: '/brand/mark.png' }, `${BASE}/`)).toBe(
-      STABLE,
-    )
+    expect(
+      tabIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: '/brand/mark.png' }, `${BASE}/`)
+    ).toBe(STABLE)
   })
 
   it('is null when there is nothing behind it to serve', () => {
@@ -221,9 +255,21 @@ describe('buildIconMetadata', () => {
         faviconUrl: 'https://xyz.supabase.co/storage/favicon.png',
         logoUrl: 'https://xyz.supabase.co/storage/logo.png',
       },
-      { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/storage/favicon.png', logoUrl: null },
-      { searchLogoUrl: 'https://xyz.supabase.co/storage/search.png', faviconUrl: null, logoUrl: null },
-      { searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://xyz.supabase.co/storage/logo.png' },
+      {
+        searchLogoUrl: null,
+        faviconUrl: 'https://xyz.supabase.co/storage/favicon.png',
+        logoUrl: null,
+      },
+      {
+        searchLogoUrl: 'https://xyz.supabase.co/storage/search.png',
+        faviconUrl: null,
+        logoUrl: null,
+      },
+      {
+        searchLogoUrl: null,
+        faviconUrl: null,
+        logoUrl: 'https://xyz.supabase.co/storage/logo.png',
+      },
     ]) {
       expect(JSON.stringify(buildIconMetadata(urls, BASE))).not.toContain('supabase.co')
     }
@@ -241,7 +287,7 @@ describe('buildIconMetadata', () => {
         faviconUrl: 'https://xyz.supabase.co/storage/favicon.png',
         logoUrl: null,
       },
-      BASE,
+      BASE
     )
     expect(icons?.icon).toEqual([
       { url: TAB, type: 'image/png' },
@@ -258,8 +304,12 @@ describe('buildIconMetadata', () => {
    */
   it('emits both links when the operator uploaded only a favicon', () => {
     const icons = buildIconMetadata(
-      { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/storage/favicon.png', logoUrl: null },
-      BASE,
+      {
+        searchLogoUrl: null,
+        faviconUrl: 'https://xyz.supabase.co/storage/favicon.png',
+        logoUrl: null,
+      },
+      BASE
     )
     expect(icons?.icon).toEqual([
       { url: TAB, type: 'image/png' },
@@ -272,7 +322,7 @@ describe('buildIconMetadata', () => {
   it('emits both links when the operator uploaded only a search mark', () => {
     const icons = buildIconMetadata(
       { searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null },
-      BASE,
+      BASE
     )
     expect(icons?.icon).toEqual([
       { url: TAB, type: 'image/png' },

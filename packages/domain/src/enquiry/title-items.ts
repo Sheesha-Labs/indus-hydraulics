@@ -33,8 +33,14 @@ export function dropSelfRepeat(text: string): string {
   if (words.length < 2 || words.length % 2 !== 0) return text.trim()
 
   const half = words.length / 2
-  const a = words.slice(0, half).map(w => w.toLowerCase()).join(' ')
-  const b = words.slice(half).map(w => w.toLowerCase()).join(' ')
+  const a = words
+    .slice(0, half)
+    .map((w) => w.toLowerCase())
+    .join(' ')
+  const b = words
+    .slice(half)
+    .map((w) => w.toLowerCase())
+    .join(' ')
   return a === b ? words.slice(half).join(' ') : text.trim()
 }
 

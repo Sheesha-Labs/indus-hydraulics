@@ -90,7 +90,7 @@ export function assertMarketingSender(fromEmail: string): void {
     throw new Error(
       `Marketing email must send from @${MARKETING_DOMAIN}, got "${fromEmail}". ` +
         `Bulk sending from @${MAIL_DOMAIN} risks the transactional reputation that ` +
-        `quotes and password resets depend on.`,
+        `quotes and password resets depend on.`
     )
   }
 }

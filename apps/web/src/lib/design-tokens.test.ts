@@ -30,11 +30,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../.
 const TREES = ['apps/web/src', 'packages/ui/src', 'packages/domain/src']
 
 /** Non-`ih` custom properties that are legitimately referenced. */
-const ALLOWED = new Set([
-  '--color-transparent',
-  '--color-current',
-  '--color-inherit',
-])
+const ALLOWED = new Set(['--color-transparent', '--color-current', '--color-inherit'])
 
 const VAR_REF = /var\(\s*(--color-[a-z0-9-]+)/g
 
@@ -82,7 +78,7 @@ describe('design tokens', () => {
   test('the ih namespace is defined in exactly one place', () => {
     const globals = readFileSync(path.join(ROOT, 'apps/web/src/app/globals.css'), 'utf8')
     const declared = new Set(
-      [...globals.matchAll(/^\s*(--color-ih-[a-z0-9-]+)\s*:/gm)].map((m) => m[1]!),
+      [...globals.matchAll(/^\s*(--color-ih-[a-z0-9-]+)\s*:/gm)].map((m) => m[1]!)
     )
     // Named, not counted — a count assertion breaks every time the palette
     // grows, and a regex that silently matched nothing would still pass one.

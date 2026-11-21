@@ -192,7 +192,7 @@ function findCycle(items: DraftItem[]): string | null {
 export async function applyMenuTree(
   client: Prisma.TransactionClient | typeof db,
   menuId: string,
-  items: DraftItem[],
+  items: DraftItem[]
 ): Promise<Result<{ slug: string }>> {
   const menu = await client.navMenu.findUnique({ where: { id: menuId }, select: { slug: true } })
   if (!menu) return fail('NOT_FOUND', 'That menu no longer exists.')
@@ -312,4 +312,3 @@ export async function applyMenuTree(
 
   return ok({ slug: menu.slug })
 }
-

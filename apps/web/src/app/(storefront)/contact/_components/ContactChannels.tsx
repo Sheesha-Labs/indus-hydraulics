@@ -49,7 +49,7 @@ export default function ContactChannels({
       {channels.map((channel) => {
         const Icon = ICONS[channel.kind]
         const body: ReactNode = channel.lines ? (
-          <address className="not-italic leading-[1.55] text-[15px]">
+          <address className="text-[15px] leading-[1.55] not-italic">
             {channel.lines.map((line) => (
               <span key={line} className="block">
                 {line}
@@ -61,8 +61,13 @@ export default function ContactChannels({
         )
 
         return (
-          <div key={channel.kind} className="flex gap-4 border-t border-ih-border py-5">
-            <Icon size={19} strokeWidth={1.6} aria-hidden className="mt-0.5 shrink-0 text-ih-accent" />
+          <div key={channel.kind} className="border-ih-border flex gap-4 border-t py-5">
+            <Icon
+              size={19}
+              strokeWidth={1.6}
+              aria-hidden
+              className="text-ih-accent mt-0.5 shrink-0"
+            />
             <div className="min-w-0 flex-1">
               <div className="eyebrow">{channel.label}</div>
               <div className="mt-1.5 min-w-0 break-words">
@@ -70,7 +75,7 @@ export default function ContactChannels({
                   <a
                     href={channel.href}
                     {...(channel.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    className="text-ih-ink transition-colors hover:text-ih-accent"
+                    className="text-ih-ink hover:text-ih-accent transition-colors"
                   >
                     {body}
                   </a>
@@ -78,7 +83,9 @@ export default function ContactChannels({
                   <span className="text-ih-ink">{body}</span>
                 )}
               </div>
-              {channel.note ? <p className="mt-1.5 text-[12.5px] text-ih-muted">{channel.note}</p> : null}
+              {channel.note ? (
+                <p className="text-ih-muted mt-1.5 text-[12.5px]">{channel.note}</p>
+              ) : null}
             </div>
           </div>
         )

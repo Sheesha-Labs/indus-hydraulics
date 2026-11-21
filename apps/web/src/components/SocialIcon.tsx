@@ -22,7 +22,8 @@ export default function SocialIcon({
   platform: FooterSocialPlatform
   className?: string
 }) {
-  if (platform === 'other') return <ExternalLink className={className} aria-hidden strokeWidth={1.6} />
+  if (platform === 'other')
+    return <ExternalLink className={className} aria-hidden strokeWidth={1.6} />
 
   return (
     <svg

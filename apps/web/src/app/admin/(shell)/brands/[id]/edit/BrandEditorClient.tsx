@@ -28,14 +28,7 @@ type Brand = {
   ogImageStoragePath: string | null
   sitemapPriority: number | null
   sitemapChangeFreq:
-    | 'always'
-    | 'hourly'
-    | 'daily'
-    | 'weekly'
-    | 'monthly'
-    | 'yearly'
-    | 'never'
-    | null
+    'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | null
   excludeFromSitemap: boolean
   jsonLdOverride: string | null
 }
@@ -70,20 +63,17 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
       sub={<span className="tabular-nums">/brands/{brand.slug}</span>}
       actions={
         <>
-        {savedAt && (
-          <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
-        )}
-        <Link
-          href="/admin/brands"
-          className="flex h-8 items-center rounded-lg border border-ih-border-strong px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
-        >
-          ← All brands
-        </Link>
+          {savedAt && <span className="text-ih-success-ink text-[12px]">Saved at {savedAt}</span>}
+          <Link
+            href="/admin/brands"
+            className="border-ih-border-strong text-ih-ink hover:bg-ih-surface-2 flex h-8 items-center rounded-lg border px-2.5 text-[14px] font-medium transition-colors"
+          >
+            ← All brands
+          </Link>
         </>
       }
     >
-
-      <div className="mb-6 flex border-b border-ih-border">
+      <div className="border-ih-border mb-6 flex border-b">
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -92,7 +82,7 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
             className={`-mb-px border-b-2 px-3 py-2.5 text-[14px] font-medium ${
               tab === t.id
                 ? 'border-ih-accent text-ih-ink'
-                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+                : 'text-ih-muted hover:text-ih-ink-2 border-transparent'
             }`}
           >
             {t.label}

@@ -35,10 +35,10 @@ export default function MarketIndustries({
   sectorImages?: Record<string, MarketSectorImage>
 }) {
   return (
-    <section className="border-t border-ih-border bg-ih-surface px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
+    <section className="border-ih-border bg-ih-surface border-t px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
       <div className="mx-auto max-w-[1440px]">
-        <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">Industries</p>
-        <h2 className="mb-6 mt-3 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
+        <p className="mono text-ih-muted text-[10px] tracking-[0.14em] uppercase">Industries</p>
+        <h2 className="mt-3 mb-6 font-serif text-[26px] leading-[1.12] sm:text-[32px]">
           Who we supply in {marketName}
         </h2>
 
@@ -47,7 +47,7 @@ export default function MarketIndustries({
             <Link
               key={sector.slug}
               href={`/industries/${sector.slug}`}
-              className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
+              className="group border-ih-border bg-ih-surface hover:border-ih-accent flex flex-col overflow-hidden rounded-lg border transition-colors"
             >
               <MarketFigure
                 src={sectorImages[sector.slug]?.url ?? null}
@@ -57,20 +57,20 @@ export default function MarketIndustries({
                 label={MARKET_SECTOR_SHOTS[sector.slug]}
                 ratio="aspect-[16/9]"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 437px"
-                className="border-b border-ih-border"
+                className="border-ih-border border-b"
               />
-              <div className="flex flex-1 flex-col gap-2.5 px-5 pb-5 pt-5 sm:px-6">
+              <div className="flex flex-1 flex-col gap-2.5 px-5 pt-5 pb-5 sm:px-6">
                 {/* `oil-gas` reads as "OIL · GAS" — the hyphen is a slug
                     artefact, and a middot is how the rest of the page separates
                     paired terms. */}
-                <span className="mono text-[9.5px] uppercase tracking-[0.12em] text-ih-muted-2">
+                <span className="mono text-ih-muted-2 text-[9.5px] tracking-[0.12em] uppercase">
                   {sector.slug.replace(/-/g, ' · ')}
                 </span>
-                <h3 className="text-[19px] font-medium leading-[1.25] tracking-[-0.01em] group-hover:text-ih-accent">
+                <h3 className="group-hover:text-ih-accent text-[19px] leading-[1.25] font-medium tracking-[-0.01em]">
                   {sector.name} in {marketName}
                 </h3>
-                <p className="text-[13px] leading-[1.6] text-ih-muted">{sector.description}</p>
-                <span className="mt-1 flex items-center gap-1.5 text-[13px] text-ih-accent">
+                <p className="text-ih-muted text-[13px] leading-[1.6]">{sector.description}</p>
+                <span className="text-ih-accent mt-1 flex items-center gap-1.5 text-[13px]">
                   Industry page <span aria-hidden="true">→</span>
                 </span>
               </div>
@@ -79,8 +79,8 @@ export default function MarketIndustries({
         </div>
 
         {brands.length > 0 && (
-          <div className="mt-9 border-t border-ih-border pt-6">
-            <p className="mono mb-3.5 text-[10px] uppercase tracking-[0.14em] text-ih-muted">
+          <div className="border-ih-border mt-9 border-t pt-6">
+            <p className="mono text-ih-muted mb-3.5 text-[10px] tracking-[0.14em] uppercase">
               Brands stocked for {marketName}
             </p>
             <ul className="flex list-none flex-wrap gap-2 p-0">
@@ -88,7 +88,7 @@ export default function MarketIndustries({
                 <li key={brand.slug}>
                   <Link
                     href={`/brands/${brand.slug}`}
-                    className="mono inline-flex h-8 items-center rounded-sm border border-ih-border bg-ih-surface px-3 text-[11.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+                    className="mono border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-8 items-center rounded-sm border px-3 text-[11.5px] transition-colors"
                   >
                     {brand.name}
                   </Link>

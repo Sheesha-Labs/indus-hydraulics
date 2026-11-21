@@ -146,7 +146,7 @@ function validate(r: Rename): string[] {
 async function carryReferences(
   tx: Prisma.TransactionClient,
   from: string,
-  to: string,
+  to: string
 ): Promise<{ nav: number; blog: number; industries: number }> {
   // Rewrite only the path segment, so `?sub=hose` survives.
   const nav = await tx.$executeRaw`
@@ -164,12 +164,17 @@ async function carryReferences(
     const blocks = p.bodyBlocks as unknown
     if (!Array.isArray(blocks)) continue
     const next = blocks.map((b) =>
-      b && typeof b === 'object' && (b as { type?: string }).type === 'category_link' &&
+      b &&
+      typeof b === 'object' &&
+      (b as { type?: string }).type === 'category_link' &&
       (b as { slug?: string }).slug === from
         ? { ...(b as object), slug: to }
-        : b,
+        : b
     )
-    await tx.blogPost.update({ where: { id: p.id }, data: { bodyBlocks: next as Prisma.InputJsonValue } })
+    await tx.blogPost.update({
+      where: { id: p.id },
+      data: { bodyBlocks: next as Prisma.InputJsonValue },
+    })
   }
 
   const inds = await tx.industry.findMany({
@@ -181,7 +186,9 @@ async function carryReferences(
     if (!Array.isArray(slugs)) continue
     await tx.industry.update({
       where: { id: i.id },
-      data: { featuredCategorySlugs: slugs.map((s) => (s === from ? to : s)) as Prisma.InputJsonValue },
+      data: {
+        featuredCategorySlugs: slugs.map((s) => (s === from ? to : s)) as Prisma.InputJsonValue,
+      },
     })
   }
 
@@ -189,7 +196,9 @@ async function carryReferences(
 }
 
 /** Same three sources, counted for the dry run. */
-async function countReferences(): Promise<Map<string, { nav: number; blog: number; industries: number }>> {
+async function countReferences(): Promise<
+  Map<string, { nav: number; blog: number; industries: number }>
+> {
   const out = new Map<string, { nav: number; blog: number; industries: number }>()
   for (const r of RENAMES) {
     const nav = await db.navMenuItem.count({
@@ -262,7 +271,7 @@ async function main() {
       })
       const carried = await carryReferences(tx, r.from, r.slug)
       console.log(
-        `  written — nav ${carried.nav}, blog ${carried.blog}, industries ${carried.industries}`,
+        `  written — nav ${carried.nav}, blog ${carried.blog}, industries ${carried.industries}`
       )
     })
   }

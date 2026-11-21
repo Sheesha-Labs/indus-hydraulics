@@ -21,7 +21,9 @@ const base: EnquiryReceivedProps = {
 
 describe('renderEnquiryReceived', () => {
   it('puts the reference, company and form in the subject', () => {
-    expect(renderEnquiryReceived(base).subject).toBe('Enquiry RFQ-2611-0042 — Gulf Drilling — Contact form · Quotation request')
+    expect(renderEnquiryReceived(base).subject).toBe(
+      'Enquiry RFQ-2611-0042 — Gulf Drilling — Contact form · Quotation request'
+    )
   })
 
   it('falls back to the name and a generic subject without company or reference', () => {
@@ -31,7 +33,9 @@ describe('renderEnquiryReceived', () => {
 
   it('thanks the sender by first name and repeats what they sent', () => {
     const { html, text } = renderEnquiryReceived(base)
-    expect(text).toContain('Thank you, Amal. We have received your enquiry. Your reference is RFQ-2611-0042.')
+    expect(text).toContain(
+      'Thank you, Amal. We have received your enquiry. Your reference is RFQ-2611-0042.'
+    )
     expect(text).toContain('Phone: +971 50 000 0000')
     expect(text).toContain('Attachments: 2 files')
     expect(html).toContain('2 x SAE 100R2 1/2&quot; assemblies')
@@ -44,14 +48,20 @@ describe('renderEnquiryReceived', () => {
   })
 
   it('escapes what the visitor typed', () => {
-    const { html } = renderEnquiryReceived({ ...base, senderName: '<script>x</script>', message: '<a href="http://evil">click</a>' })
+    const { html } = renderEnquiryReceived({
+      ...base,
+      senderName: '<script>x</script>',
+      message: '<a href="http://evil">click</a>',
+    })
     expect(html).not.toContain('<script>x')
     expect(html).not.toContain('<a href="http://evil"')
   })
 
   it('names files that were received but not attached', () => {
     const { text, html } = renderEnquiryReceived({ ...base, notAttached: ['site-drawing.pdf'] })
-    expect(text).toContain('Too large to attach to this email, but received and kept on file with your enquiry: site-drawing.pdf.')
+    expect(text).toContain(
+      'Too large to attach to this email, but received and kept on file with your enquiry: site-drawing.pdf.'
+    )
     expect(html).toContain('site-drawing.pdf')
     expect(renderEnquiryReceived(base).text).not.toContain('Too large to attach')
   })

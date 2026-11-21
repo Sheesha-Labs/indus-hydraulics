@@ -17,7 +17,12 @@ import { loadEmailBranding } from '../email-branding'
 import { BASE_URL } from '../seo'
 import type { EmailEvent } from './events'
 import { listUnsubscribeHeaders, newsletterConfirmUrl, newsletterUnsubscribePageUrl } from './links'
-import { generateNewsletterToken, hashNewsletterToken, newsletterEmailHash, recipientAddress } from './tokens'
+import {
+  generateNewsletterToken,
+  hashNewsletterToken,
+  newsletterEmailHash,
+  recipientAddress,
+} from './tokens'
 
 /**
  * Everything the newsletter's public flow does to the database and the
@@ -34,7 +39,10 @@ const HARD_SUPPRESSIONS = new Set(['bounced', 'complained'])
 export async function newsletterBranding() {
   const branding = await loadEmailBranding()
   return {
-    branding: { legalName: branding.legalName, registeredAddressLines: branding.registeredAddressLines },
+    branding: {
+      legalName: branding.legalName,
+      registeredAddressLines: branding.registeredAddressLines,
+    },
     replyTo: branding.replyTo ?? undefined,
   }
 }
@@ -81,7 +89,10 @@ export async function requestSubscription(input: SignupInput): Promise<SignupOut
   if (input.ipHash) {
     for (const limit of NEWSLETTER_IP_LIMITS) {
       const recent = await db.newsletterSubscriber.count({
-        where: { ipHash: input.ipHash, confirmationSentAt: { gte: new Date(now.getTime() - limit.windowMs) } },
+        where: {
+          ipHash: input.ipHash,
+          confirmationSentAt: { gte: new Date(now.getTime() - limit.windowMs) },
+        },
       })
       if (recent >= limit.max) return 'rate_limited'
     }
@@ -140,9 +151,7 @@ export async function requestSubscription(input: SignupInput): Promise<SignupOut
 // ── Confirm ────────────────────────────────────────────────────────────
 
 export type ConfirmLookup =
-  | { status: 'ready'; maskedEmail: string }
-  | { status: 'expired' }
-  | { status: 'not_found' }
+  { status: 'ready'; maskedEmail: string } | { status: 'expired' } | { status: 'not_found' }
 
 function isExpired(sentAt: Date | null, now: Date): boolean {
   return !sentAt || now.getTime() - sentAt.getTime() > NEWSLETTER_CONFIRMATION_TTL_MS
@@ -160,7 +169,8 @@ export async function lookupConfirmation(token: string, now = new Date()): Promi
   return { status: 'ready', maskedEmail: maskEmail(row.email) }
 }
 
-export type ConfirmOutcome = { status: 'confirmed'; maskedEmail: string } | { status: 'expired' } | { status: 'not_found' }
+export type ConfirmOutcome =
+  { status: 'confirmed'; maskedEmail: string } | { status: 'expired' } | { status: 'not_found' }
 
 /**
  * Confirm a subscription and send the welcome email. Only ever called from
@@ -169,12 +179,21 @@ export type ConfirmOutcome = { status: 'confirmed'; maskedEmail: string } | { st
  * The update is conditional on the token hash still being on the row, so two
  * clicks racing cannot both send a welcome.
  */
-export async function confirmSubscription(token: string, now = new Date()): Promise<ConfirmOutcome> {
+export async function confirmSubscription(
+  token: string,
+  now = new Date()
+): Promise<ConfirmOutcome> {
   if (!isNewsletterToken(token)) return { status: 'not_found' }
   const tokenHash = hashNewsletterToken(token)
   const row = await db.newsletterSubscriber.findUnique({
     where: { confirmationTokenHash: tokenHash },
-    select: { id: true, email: true, status: true, confirmationSentAt: true, unsubscribeToken: true },
+    select: {
+      id: true,
+      email: true,
+      status: true,
+      confirmationSentAt: true,
+      unsubscribeToken: true,
+    },
   })
   if (!row || row.status !== 'pending') return { status: 'not_found' }
   if (isExpired(row.confirmationSentAt, now)) return { status: 'expired' }
@@ -232,7 +251,9 @@ export async function lookupUnsubscribe(token: string): Promise<UnsubscribeLooku
   })
   if (!contact) return { status: 'not_found' }
   const maskedEmail = maskEmail(contact.email)
-  return contact.status === 'active' ? { status: 'subscribed', maskedEmail } : { status: 'unsubscribed', maskedEmail }
+  return contact.status === 'active'
+    ? { status: 'subscribed', maskedEmail }
+    : { status: 'unsubscribed', maskedEmail }
 }
 
 /**
@@ -243,9 +264,15 @@ export async function lookupUnsubscribe(token: string): Promise<UnsubscribeLooku
  * `not_found` is for the page's wording only — the one-click endpoint answers
  * 200 either way, so it cannot be used to test which tokens exist.
  */
-export async function unsubscribeByToken(token: string, now = new Date()): Promise<'unsubscribed' | 'not_found'> {
+export async function unsubscribeByToken(
+  token: string,
+  now = new Date()
+): Promise<'unsubscribed' | 'not_found'> {
   if (!isNewsletterToken(token)) return 'not_found'
-  const row = await db.newsletterSubscriber.findUnique({ where: { unsubscribeToken: token }, select: { id: true } })
+  const row = await db.newsletterSubscriber.findUnique({
+    where: { unsubscribeToken: token },
+    select: { id: true },
+  })
   if (row) {
     await db.newsletterSubscriber.updateMany({
       where: { id: row.id, status: { in: ['pending', 'confirmed'] } },
@@ -255,7 +282,10 @@ export async function unsubscribeByToken(token: string, now = new Date()): Promi
   }
   // A list contact: unsubscribing here suppresses the address everywhere
   // and ends any subscription too (the contact status trigger).
-  const contact = await db.newsletterListContact.findUnique({ where: { unsubscribeToken: token }, select: { id: true } })
+  const contact = await db.newsletterListContact.findUnique({
+    where: { unsubscribeToken: token },
+    select: { id: true },
+  })
   if (!contact) return 'not_found'
   await db.newsletterListContact.updateMany({
     where: { id: contact.id, status: 'active' },
@@ -266,7 +296,12 @@ export async function unsubscribeByToken(token: string, now = new Date()): Promi
 
 // ── Delivery events (Resend webhook) ───────────────────────────────────
 
-export type EventOutcome = { email: boolean; subscribers: number; contacts: number; suppressed: number }
+export type EventOutcome = {
+  email: boolean
+  subscribers: number
+  contacts: number
+  suppressed: number
+}
 
 /**
  * Apply one Resend event. Resend retries until it gets a 2xx, so every write
@@ -286,9 +321,17 @@ export type EventOutcome = { email: boolean; subscribers: number; contacts: numb
  *   newsletter to.
  */
 export async function recordEmailEvent(event: EmailEvent): Promise<EventOutcome> {
-  const recipients = [...new Set(event.recipients.map(recipientAddress).filter((r): r is string => r !== null))]
+  const recipients = [
+    ...new Set(event.recipients.map(recipientAddress).filter((r): r is string => r !== null)),
+  ]
   const stamp =
-    event.type === 'delivered' ? 'deliveredAt' : event.type === 'complained' ? 'complainedAt' : event.permanent ? 'bouncedAt' : null
+    event.type === 'delivered'
+      ? 'deliveredAt'
+      : event.type === 'complained'
+        ? 'complainedAt'
+        : event.permanent
+          ? 'bouncedAt'
+          : null
 
   return db.$transaction(async (tx) => {
     const email = stamp
@@ -307,8 +350,14 @@ export async function recordEmailEvent(event: EmailEvent): Promise<EventOutcome>
         ).count > 0
       : false
 
-    const reason = event.type === 'complained' ? 'complained' : event.type === 'bounced' && event.permanent ? 'bounced' : null
-    if (!reason || recipients.length === 0) return { email, subscribers: 0, contacts: 0, suppressed: 0 }
+    const reason =
+      event.type === 'complained'
+        ? 'complained'
+        : event.type === 'bounced' && event.permanent
+          ? 'bounced'
+          : null
+    if (!reason || recipients.length === 0)
+      return { email, subscribers: 0, contacts: 0, suppressed: 0 }
 
     const suppressed = await tx.newsletterSuppression.createMany({
       data: recipients.map((r) => ({ emailHash: newsletterEmailHash(r), reason })),
@@ -328,6 +377,11 @@ export async function recordEmailEvent(event: EmailEvent): Promise<EventOutcome>
       where: { email: { in: recipients }, status: 'active' },
       data: { status: reason === 'bounced' ? 'bounced' : 'unsubscribed', unsubscribedAt: event.at },
     })
-    return { email, subscribers: subscribers.count, contacts: contacts.count, suppressed: suppressed.count }
+    return {
+      email,
+      subscribers: subscribers.count,
+      contacts: contacts.count,
+      suppressed: suppressed.count,
+    }
   })
 }

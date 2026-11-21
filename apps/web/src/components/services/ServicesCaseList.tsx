@@ -58,8 +58,8 @@ export default function ServicesCaseList({
           ))}
         </section>
       ) : (
-        <section className="py-16 text-center text-ih-muted">
-          <p className="mono text-xs uppercase tracking-[0.1em]">{emptyMessage}</p>
+        <section className="text-ih-muted py-16 text-center">
+          <p className="mono text-xs tracking-[0.1em] uppercase">{emptyMessage}</p>
         </section>
       )}
     </>

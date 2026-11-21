@@ -85,15 +85,15 @@ export default function BlogPublishCard({
   }
 
   return (
-    <div className="flex flex-col gap-4 rounded-lg border border-ih-border bg-ih-surface p-5">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface flex flex-col gap-4 rounded-lg border p-5">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
         Publish
       </div>
 
       <dl className="flex flex-col gap-2 text-[12.5px]">
         <Row label="Status">
           <span
-            className={`rounded-full px-2 py-0.5 tabular-nums text-[11px] font-medium ${STATUS_STYLE[status]}`}
+            className={`rounded-full px-2 py-0.5 text-[11px] font-medium tabular-nums ${STATUS_STYLE[status]}`}
           >
             {STATUS_LABEL[status]}
           </span>
@@ -111,7 +111,7 @@ export default function BlogPublishCard({
           name="publish"
           value="0"
           disabled={busy}
-          className="h-9 rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 disabled:opacity-50"
+          className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-md border text-[13px] font-medium transition-colors disabled:opacity-50"
         >
           {saving ? 'Saving…' : 'Save draft'}
         </button>
@@ -123,7 +123,7 @@ export default function BlogPublishCard({
               name="publish"
               value="1"
               disabled={busy}
-              className="flex h-9 items-center justify-center gap-1.5 rounded-md bg-ih-accent text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
+              className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center justify-center gap-1.5 rounded-md text-[13px] font-medium transition-opacity disabled:opacity-50"
             >
               <CheckCircle2 size={14} strokeWidth={1.8} />
               Save &amp; update live post
@@ -132,7 +132,7 @@ export default function BlogPublishCard({
               type="button"
               disabled={busy}
               onClick={() => run(() => setPublished(postId, false))}
-              className="flex h-9 items-center justify-center gap-1.5 rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 disabled:opacity-50"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-9 items-center justify-center gap-1.5 rounded-md border text-[13px] font-medium transition-colors disabled:opacity-50"
             >
               <RotateCcw size={14} strokeWidth={1.8} />
               Revert to draft
@@ -141,7 +141,7 @@ export default function BlogPublishCard({
               href={publicUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-1 pt-0.5 text-center tabular-nums text-[11.5px] text-ih-accent hover:underline"
+              className="text-ih-accent flex items-center justify-center gap-1 pt-0.5 text-center text-[11.5px] tabular-nums hover:underline"
             >
               View on the site
               <ExternalLink size={11} />
@@ -153,7 +153,7 @@ export default function BlogPublishCard({
             name="publish"
             value="1"
             disabled={busy}
-            className="flex h-9 items-center justify-center gap-1.5 rounded-md bg-ih-accent text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center justify-center gap-1.5 rounded-md text-[13px] font-medium transition-opacity disabled:opacity-50"
           >
             <CheckCircle2 size={14} strokeWidth={1.8} />
             Save &amp; publish
@@ -164,7 +164,7 @@ export default function BlogPublishCard({
           type="button"
           disabled={busy}
           onClick={() => run(() => setArchived(postId, status !== 'archived'))}
-          className="flex h-9 items-center justify-center gap-1.5 rounded-md text-[13px] font-medium text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink disabled:opacity-50"
+          className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink flex h-9 items-center justify-center gap-1.5 rounded-md text-[13px] font-medium transition-colors disabled:opacity-50"
         >
           {status === 'archived' ? (
             <>
@@ -196,8 +196,8 @@ export default function BlogPublishCard({
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
-      <dt className="shrink-0 text-ih-muted">{label}</dt>
-      <dd className="min-w-0 truncate text-right text-ih-ink-2">{children}</dd>
+      <dt className="text-ih-muted shrink-0">{label}</dt>
+      <dd className="text-ih-ink-2 min-w-0 truncate text-right">{children}</dd>
     </div>
   )
 }

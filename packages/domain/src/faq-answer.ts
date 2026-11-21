@@ -17,8 +17,7 @@
  */
 
 export type FaqAnswerSegment =
-  | { kind: 'text'; text: string }
-  | { kind: 'link'; text: string; href: string }
+  { kind: 'text'; text: string } | { kind: 'link'; text: string; href: string }
 
 // [text](/path) — text without brackets or newlines, path same-origin only.
 const LINK = /\[([^\[\]\n]{1,200})\]\((\/(?!\/)[A-Za-z0-9\-._~/?#=&%+]*)\)/g

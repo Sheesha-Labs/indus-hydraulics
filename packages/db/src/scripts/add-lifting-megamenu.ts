@@ -47,7 +47,10 @@ async function main() {
           id: true,
           name: true,
           isPublished: true,
-          children: { orderBy: { position: 'asc' }, select: { id: true, name: true, isPublished: true } },
+          children: {
+            orderBy: { position: 'asc' },
+            select: { id: true, name: true, isPublished: true },
+          },
         },
       },
     },
@@ -55,10 +58,17 @@ async function main() {
   if (!root) throw new Error(`category ${ROOT_SLUG} not found`)
   const unpublished = [root, ...root.children].filter((c) => !c.isPublished).length
   if (unpublished > 0 && !dryRun) {
-    throw new Error(`${unpublished} of ${ROOT_SLUG} and its groups are unpublished — publish them before adding the menu`)
+    throw new Error(
+      `${unpublished} of ${ROOT_SLUG} and its groups are unpublished — publish them before adding the menu`
+    )
   }
-  const skipped = root.children.flatMap((g) => g.children.filter((c) => !c.isPublished).map((c) => c.name))
-  const groups = root.children.map((g) => ({ ...g, children: g.children.filter((c) => c.isPublished) }))
+  const skipped = root.children.flatMap((g) =>
+    g.children.filter((c) => !c.isPublished).map((c) => c.name)
+  )
+  const groups = root.children.map((g) => ({
+    ...g,
+    children: g.children.filter((c) => c.isPublished),
+  }))
 
   const existing = await db.navMenuItem.findFirst({
     where: { menuId: menu.id, parentId: null, categoryId: root.id },
@@ -76,8 +86,10 @@ async function main() {
 
   const links = groups.reduce((n, g) => n + g.children.length, 0)
   if (dryRun) {
-    console.log(`[dry-run] ${existing ? 'rebuild' : `add at position ${position}`} "${SECTION_LABEL}": ` +
-      `${groups.length} groups, ${links} links (${unpublished} of root and groups still unpublished)`)
+    console.log(
+      `[dry-run] ${existing ? 'rebuild' : `add at position ${position}`} "${SECTION_LABEL}": ` +
+        `${groups.length} groups, ${links} links (${unpublished} of root and groups still unpublished)`
+    )
     if (skipped.length) console.log(`  left out, unpublished: ${skipped.join(', ')}`)
     for (const g of groups) console.log(`  ${g.name}: ${g.children.map((c) => c.name).join(', ')}`)
     return
@@ -90,14 +102,27 @@ async function main() {
       await tx.navMenuItem.deleteMany({ where: { parentId: sectionId } })
     } else {
       const section = await tx.navMenuItem.create({
-        data: { menuId: menu.id, label: SECTION_LABEL, linkType: 'category', categoryId: root.id, position: position! },
+        data: {
+          menuId: menu.id,
+          label: SECTION_LABEL,
+          linkType: 'category',
+          categoryId: root.id,
+          position: position!,
+        },
         select: { id: true },
       })
       sectionId = section.id
     }
     for (const [gi, g] of groups.entries()) {
       const group = await tx.navMenuItem.create({
-        data: { menuId: menu.id, parentId: sectionId, label: g.name, linkType: 'category', categoryId: g.id, position: gi },
+        data: {
+          menuId: menu.id,
+          parentId: sectionId,
+          label: g.name,
+          linkType: 'category',
+          categoryId: g.id,
+          position: gi,
+        },
         select: { id: true },
       })
       await tx.navMenuItem.createMany({
@@ -112,8 +137,10 @@ async function main() {
       })
     }
   })
-  console.log(`[megamenu] ${existing ? 'rebuilt' : 'added'} "${SECTION_LABEL}": ${groups.length} groups, ${links} links` +
-    (skipped.length ? ` (left out, unpublished: ${skipped.join(', ')})` : ''))
+  console.log(
+    `[megamenu] ${existing ? 'rebuilt' : 'added'} "${SECTION_LABEL}": ${groups.length} groups, ${links} links` +
+      (skipped.length ? ` (left out, unpublished: ${skipped.join(', ')})` : '')
+  )
   await db.$disconnect()
 }
 

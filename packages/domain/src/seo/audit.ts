@@ -14,12 +14,7 @@ export type AuditEntry = {
   after: unknown
 }
 
-const NEUTRAL_KEYS = new Set([
-  'updatedAt',
-  'seoUpdatedAt',
-  'seoUpdatedById',
-  'createdAt',
-])
+const NEUTRAL_KEYS = new Set(['updatedAt', 'seoUpdatedAt', 'seoUpdatedById', 'createdAt'])
 
 export function isEqual(a: unknown, b: unknown): boolean {
   if (a === b) return true
@@ -45,7 +40,7 @@ export function isEqual(a: unknown, b: unknown): boolean {
  */
 export function diffSnapshots(
   before: Record<string, unknown>,
-  after: Record<string, unknown>,
+  after: Record<string, unknown>
 ): AuditEntry[] {
   const fields = new Set<string>([...Object.keys(before), ...Object.keys(after)])
   const entries: AuditEntry[] = []
@@ -80,7 +75,7 @@ export const SEO_AUDITED_FIELDS = [
 export type SeoAuditedField = (typeof SEO_AUDITED_FIELDS)[number]
 
 export function projectSeoFields<T extends Record<string, unknown>>(
-  entity: T,
+  entity: T
 ): Partial<Record<SeoAuditedField, unknown>> {
   const out: Partial<Record<SeoAuditedField, unknown>> = {}
   for (const f of SEO_AUDITED_FIELDS) {

@@ -46,12 +46,25 @@ type Props = {
   deskEmail: string
 }
 
-type OpenState = { surface: CallbackSurface; trigger: CallbackTrigger; override: boolean; openedAt: number }
+type OpenState = {
+  surface: CallbackSurface
+  trigger: CallbackTrigger
+  override: boolean
+  openedAt: number
+}
 
-const ACTIVITY_EVENTS = ['scroll', 'pointermove', 'pointerdown', 'keydown', 'touchstart', 'wheel'] as const
+const ACTIVITY_EVENTS = [
+  'scroll',
+  'pointermove',
+  'pointerdown',
+  'keydown',
+  'touchstart',
+  'wheel',
+] as const
 
 /** Selectors for "something else is already over the page". */
-const OVERLAY_SELECTOR = '[aria-modal="true"], dialog[open], [data-overlay-open="true"], header [aria-expanded="true"]'
+const OVERLAY_SELECTOR =
+  '[aria-modal="true"], dialog[open], [data-overlay-open="true"], header [aria-expanded="true"]'
 const FIELD_SELECTOR = 'input, textarea, select, [contenteditable="true"], [contenteditable=""]'
 const ROOT_ATTR = 'data-callback-root'
 
@@ -113,7 +126,11 @@ export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: P
         shownThisSession: storageGet('session', CALLBACK_STORAGE.shown) === '1',
         dismissedUntil: readEpoch(storageGet('local', CALLBACK_STORAGE.dismissedUntil)),
         submittedUntil: readEpoch(storageGet('local', CALLBACK_STORAGE.submittedUntil)),
-        fieldFocused: !!active && active !== document.body && active.matches(FIELD_SELECTOR) && !insidePrompt(active),
+        fieldFocused:
+          !!active &&
+          active !== document.body &&
+          active.matches(FIELD_SELECTOR) &&
+          !insidePrompt(active),
         pageFormDirty: dirtyRef.current,
         overlayOpen: !!document.querySelector(OVERLAY_SELECTOR),
         bot:
@@ -126,7 +143,7 @@ export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: P
       storageSet('session', CALLBACK_STORAGE.shown, '1')
       show({ surface, trigger, override: false, openedAt: Date.now() })
     },
-    [show],
+    [show]
   )
 
   // Per page: the clock for "time on page", the pageview count for the bounce
@@ -146,11 +163,13 @@ export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: P
         const v = params.get(k)
         if (v) utm[k] = v.slice(0, 120)
       }
-      if (Object.keys(utm).length > 0) storageSet('session', CALLBACK_STORAGE.utm, JSON.stringify(utm))
+      if (Object.keys(utm).length > 0)
+        storageSet('session', CALLBACK_STORAGE.utm, JSON.stringify(utm))
     }
 
     const forced = overrideSurface(search)
-    if (forced && !openRef.current) show({ surface: forced, trigger: 'manual', override: true, openedAt: Date.now() })
+    if (forced && !openRef.current)
+      show({ surface: forced, trigger: 'manual', override: true, openedAt: Date.now() })
   }, [pathname, show])
 
   // The triggers. One set of listeners for the life of the layout.
@@ -218,10 +237,16 @@ export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: P
 
     // Fetch the surfaces' code while nothing else is happening, so the first
     // prompt opens without a network round trip.
-    const idle = (window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number })
-      .requestIdleCallback
+    const idle = (
+      window as Window & {
+        requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number
+      }
+    ).requestIdleCallback
     const prefetch = () => void import('./CallbackSurfaces').catch(() => undefined)
-    const prefetchTimer = setTimeout(() => (idle ? idle(prefetch, { timeout: 5000 }) : prefetch()), 10_000)
+    const prefetchTimer = setTimeout(
+      () => (idle ? idle(prefetch, { timeout: 5000 }) : prefetch()),
+      10_000
+    )
 
     return () => {
       clearTimeout(timer)
@@ -239,7 +264,11 @@ export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: P
     const state = openRef.current
     if (!state) return
     if (!state.override && method !== 'done') {
-      storageSet('local', CALLBACK_STORAGE.dismissedUntil, String(Date.now() + CALLBACK_CONFIG.dismissDays * DAY_MS))
+      storageSet(
+        'local',
+        CALLBACK_STORAGE.dismissedUntil,
+        String(Date.now() + CALLBACK_CONFIG.dismissDays * DAY_MS)
+      )
     }
     trackCallback('callback_prompt_closed', {
       surface: state.surface,
@@ -252,7 +281,11 @@ export default function CallbackPrompt({ openingHours, deskPhone, deskEmail }: P
   const handleSubmitted = useCallback(() => {
     const state = openRef.current
     if (!state || state.override) return
-    storageSet('local', CALLBACK_STORAGE.submittedUntil, String(Date.now() + CALLBACK_CONFIG.submitDays * DAY_MS))
+    storageSet(
+      'local',
+      CALLBACK_STORAGE.submittedUntil,
+      String(Date.now() + CALLBACK_CONFIG.submitDays * DAY_MS)
+    )
   }, [])
 
   const handleClosed = useCallback(() => {

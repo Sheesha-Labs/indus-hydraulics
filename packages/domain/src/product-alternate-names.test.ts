@@ -45,9 +45,9 @@ describe('readFittingAttributes', () => {
   })
 
   it('reads a leading angle as an elbow even without the word', () => {
-    expect(readFittingAttributes({ title: '90° JIC Female 37° Seat Hose Fitting' }).configuration).toBe(
-      'elbow-90',
-    )
+    expect(
+      readFittingAttributes({ title: '90° JIC Female 37° Seat Hose Fitting' }).configuration
+    ).toBe('elbow-90')
   })
 
   it('tolerates the masculine ordinal that appears in some titles', () => {
@@ -292,7 +292,9 @@ describe('hasEnoughToName', () => {
   it('does not count a straight body as identifying', () => {
     // "mâle BSP" passed before this: thread + gender + straight. It is a pair
     // of words, not a designation anyone types into a search box.
-    expect(hasEnoughToName({ thread: 'bsp', gender: 'male', configuration: 'straight' })).toBe(false)
+    expect(hasEnoughToName({ thread: 'bsp', gender: 'male', configuration: 'straight' })).toBe(
+      false
+    )
     expect(hasEnoughToName({ thread: 'bsp', gender: 'male', configuration: 'elbow-90' })).toBe(true)
   })
 
@@ -338,7 +340,7 @@ describe('buildAlternateNames', () => {
     // BSP is BSP in every catalogue in every language. Translating it would
     // invent a term nobody searches for.
     const names = buildAlternateNames(
-      readFittingAttributes({ title: 'BSP Female 60° Cone Adapter (Light Series)' }),
+      readFittingAttributes({ title: 'BSP Female 60° Cone Adapter (Light Series)' })
     )
     for (const n of names) expect(n.name, n.lang).toContain('BSP')
   })

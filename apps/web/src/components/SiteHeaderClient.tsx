@@ -36,7 +36,7 @@ function getDropdownKind(
   item: NavChromeItem,
   megamenuItems: NavChromeItem[],
   brands: NavListEntry[],
-  industries: NavListEntry[],
+  industries: NavListEntry[]
 ): DropdownKind {
   if (item.href === '/c' || item.href === '/c/') {
     return megamenuItems.length > 0 ? 'mega' : null
@@ -156,10 +156,10 @@ export default function SiteHeaderClient({
   const browseAllHref = activeCat?.href ?? '/c'
 
   const brandsHeaderItem = headerItems.find(
-    (item) => item.href === '/brands' || item.href === '/brands/',
+    (item) => item.href === '/brands' || item.href === '/brands/'
   )
   const industriesHeaderItem = headerItems.find(
-    (item) => item.href === '/industries' || item.href === '/industries/',
+    (item) => item.href === '/industries' || item.href === '/industries/'
   )
 
   /*
@@ -204,8 +204,8 @@ export default function SiteHeaderClient({
           only sticky chrome there and the contact routes are in the menu and
           the footer. Anything pinned under the header uses top-[73px]
           below sm and top-[107px] from sm. */}
-      <div className="hidden bg-ih-navy text-[oklch(0.82_0.02_250)] sm:block">
-        <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 sm:px-8 xl:px-12 font-mono text-[11px] tracking-[0.04em]">
+      <div className="bg-ih-navy hidden text-[oklch(0.82_0.02_250)] sm:block">
+        <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 font-mono text-[11px] tracking-[0.04em] sm:px-8 xl:px-12">
           {/*
             Phone and sales email, on every breakpoint. The opening hours used
             to sit here; they dropped out at <768 anyway, and most visitors
@@ -312,7 +312,7 @@ export default function SiteHeaderClient({
                     <Link
                       href={href}
                       aria-current={isActive(href) ? 'page' : undefined}
-                      className={`flex shrink-0 items-center gap-1 whitespace-nowrap border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                      className={`flex shrink-0 items-center gap-1 border-b-[1.5px] py-1.5 text-[13.5px] whitespace-nowrap transition-colors ${
                         isActive(href) || isOpen
                           ? 'border-ih-accent text-ih-accent'
                           : 'text-ih-ink-2 hover:text-ih-ink border-transparent'
@@ -355,7 +355,7 @@ export default function SiteHeaderClient({
                     bar looking broken. Every label the menu has carried until
                     now was one word, so nothing surfaced it.
                   */
-                  className={`flex shrink-0 items-center whitespace-nowrap border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                  className={`flex shrink-0 items-center border-b-[1.5px] py-1.5 text-[13.5px] whitespace-nowrap transition-colors ${
                     isActive(href)
                       ? 'border-ih-accent text-ih-accent'
                       : 'text-ih-ink-2 hover:text-ih-ink border-transparent'
@@ -447,7 +447,7 @@ export default function SiteHeaderClient({
       {megamenuItems.length > 0 && (
         <div
           hidden={!megamenuOpen}
-          className="border-ih-border bg-ih-surface absolute left-0 right-0 border-t shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
+          className="border-ih-border bg-ih-surface absolute right-0 left-0 border-t shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
           style={{ top: '100%', zIndex: 50 }}
           onMouseEnter={() => openDropdown('mega')}
           onMouseLeave={closeDropdown}
@@ -457,7 +457,7 @@ export default function SiteHeaderClient({
             <div className="grid min-h-[420px] grid-cols-[360px_420px_1fr]">
               {/* ── Column 1: Top-level categories ── */}
               <div className="border-ih-border border-r py-7 pr-0">
-                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                   Categories
                 </div>
                 <div className="flex flex-col">
@@ -482,7 +482,7 @@ export default function SiteHeaderClient({
 
               {/* ── Column 2: Sub-categories ── */}
               <div className="border-ih-border border-r px-6 py-7">
-                <div className="text-ih-muted mb-3 whitespace-nowrap font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] whitespace-nowrap uppercase">
                   {activeCat?.label}
                 </div>
                 {megamenuItems.map((cat, catIdx) => (
@@ -516,7 +516,7 @@ export default function SiteHeaderClient({
 
               {/* ── Column 3: Leaf items ── */}
               <div className="flex flex-col px-6 py-7">
-                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                   {activeSub?.label}
                 </div>
                 <div className="flex flex-1 flex-col">
@@ -538,13 +538,16 @@ export default function SiteHeaderClient({
                             onClick={closeDropdownImmediate}
                           >
                             <span>{leaf.label}</span>
-                            <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
+                            <span
+                              aria-hidden="true"
+                              className="text-ih-muted-2 font-mono text-[11px]"
+                            >
                               ›
                             </span>
                           </Link>
                         ))}
                       </div>
-                    )),
+                    ))
                   )}
                 </div>
 
@@ -566,7 +569,7 @@ export default function SiteHeaderClient({
                     </div>
                     <div className="px-4 py-3">
                       {activeCat.promoHeading ? (
-                        <div className="text-ih-ink text-[14px] font-medium leading-[1.35]">
+                        <div className="text-ih-ink text-[14px] leading-[1.35] font-medium">
                           {activeCat.promoHeading}
                         </div>
                       ) : null}
@@ -613,7 +616,7 @@ export default function SiteHeaderClient({
           */}
           <div className="border-ih-border bg-ih-surface-2 border-t">
             <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-x-[26px] gap-y-2 px-5 py-3.5 sm:px-8 xl:px-12">
-              <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 Quick links
               </span>
               <Link
@@ -650,37 +653,37 @@ export default function SiteHeaderClient({
       {/* Mounted always and hidden when closed, like the megamenu, so its
           links are in the server HTML. */}
       <NavListDropdown
-          hidden={!brandsOpen}
-          items={brands}
-          hrefPrefix="/brands/"
-          viewAllHref="/brands"
-          viewAllLabel="View all brands"
-          sectionLabel="Brands"
-          promoImageUrl={brandsHeaderItem?.promoImageUrl}
-          promoHeading={brandsHeaderItem?.promoHeading}
-          promoBody={brandsHeaderItem?.promoBody}
-          promoLinkUrl={brandsHeaderItem?.promoLinkUrl}
-          onMouseEnter={() => openDropdown('brands')}
-          onMouseLeave={closeDropdown}
-          onItemClick={closeDropdownImmediate}
-        />
+        hidden={!brandsOpen}
+        items={brands}
+        hrefPrefix="/brands/"
+        viewAllHref="/brands"
+        viewAllLabel="View all brands"
+        sectionLabel="Brands"
+        promoImageUrl={brandsHeaderItem?.promoImageUrl}
+        promoHeading={brandsHeaderItem?.promoHeading}
+        promoBody={brandsHeaderItem?.promoBody}
+        promoLinkUrl={brandsHeaderItem?.promoLinkUrl}
+        onMouseEnter={() => openDropdown('brands')}
+        onMouseLeave={closeDropdown}
+        onItemClick={closeDropdownImmediate}
+      />
 
       {/* ── Industries dropdown ───────────────────────────── */}
       <NavListDropdown
-          hidden={!industriesOpen}
-          items={industries}
-          hrefPrefix="/industries/"
-          viewAllHref="/industries"
-          viewAllLabel="View all industries"
-          sectionLabel="Industries"
-          promoImageUrl={industriesHeaderItem?.promoImageUrl}
-          promoHeading={industriesHeaderItem?.promoHeading}
-          promoBody={industriesHeaderItem?.promoBody}
-          promoLinkUrl={industriesHeaderItem?.promoLinkUrl}
-          onMouseEnter={() => openDropdown('industries')}
-          onMouseLeave={closeDropdown}
-          onItemClick={closeDropdownImmediate}
-        />
+        hidden={!industriesOpen}
+        items={industries}
+        hrefPrefix="/industries/"
+        viewAllHref="/industries"
+        viewAllLabel="View all industries"
+        sectionLabel="Industries"
+        promoImageUrl={industriesHeaderItem?.promoImageUrl}
+        promoHeading={industriesHeaderItem?.promoHeading}
+        promoBody={industriesHeaderItem?.promoBody}
+        promoLinkUrl={industriesHeaderItem?.promoLinkUrl}
+        onMouseEnter={() => openDropdown('industries')}
+        onMouseLeave={closeDropdown}
+        onItemClick={closeDropdownImmediate}
+      />
 
       {/* ── Mobile nav ─────────────────────────────────────── */}
       {mobileOpen && (
@@ -700,7 +703,7 @@ export default function SiteHeaderClient({
 
           {megamenuItems.length > 0 ? (
             <div className="border-ih-border border-b px-5 py-4">
-              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 Categories
               </p>
               <div className="flex flex-col gap-0.5">
@@ -720,7 +723,7 @@ export default function SiteHeaderClient({
 
           {brands.length > 0 ? (
             <div className="border-ih-border border-b px-5 py-4">
-              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 Brands
               </p>
               <div className="flex flex-col gap-0.5">
@@ -753,7 +756,7 @@ export default function SiteHeaderClient({
 
           {industries.length > 0 ? (
             <div className="border-ih-border border-b px-5 py-4">
-              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 Industries
               </p>
               <div className="flex flex-col gap-0.5">
@@ -783,7 +786,6 @@ export default function SiteHeaderClient({
               </div>
             </div>
           ) : null}
-
         </div>
       )}
     </header>

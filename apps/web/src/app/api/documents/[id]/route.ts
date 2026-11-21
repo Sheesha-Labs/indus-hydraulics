@@ -45,7 +45,7 @@ export async function GET(_request: Request, { params }: Params) {
   if (doc.isGated) {
     return NextResponse.redirect(
       new URL('/contact', process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'),
-      { status: 307, headers: { 'cache-control': 'no-store' } },
+      { status: 307, headers: { 'cache-control': 'no-store' } }
     )
   }
 

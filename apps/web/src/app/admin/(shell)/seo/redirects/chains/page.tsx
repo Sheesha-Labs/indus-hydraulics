@@ -66,16 +66,16 @@ export default async function RedirectChainsPage() {
 
   return (
     <div className="max-w-[960px]">
-      <div className="mb-6 max-w-[720px] text-[13px] text-ih-muted">
-        Multi-hop redirects waste crawl budget and slow real users. Cycles outright break the
-        page. Each row below is a redirect whose target itself redirects — flatten by editing
-        the source row to point straight at the final destination.{' '}
+      <div className="text-ih-muted mb-6 max-w-[720px] text-[13px]">
+        Multi-hop redirects waste crawl budget and slow real users. Cycles outright break the page.
+        Each row below is a redirect whose target itself redirects — flatten by editing the source
+        row to point straight at the final destination.{' '}
         <Link href="/admin/seo/redirects" className="underline">
           ← Back to redirects
         </Link>
       </div>
 
-      <div className="grid grid-cols-3 gap-3 mb-6">
+      <div className="mb-6 grid grid-cols-3 gap-3">
         <Tile label="Active redirects" value={redirects.length.toLocaleString()} />
         <Tile
           label="Chains (≥ 2 hops)"
@@ -90,16 +90,16 @@ export default async function RedirectChainsPage() {
       </div>
 
       {chains.length === 0 ? (
-        <div className="rounded-lg border border-ih-border py-16 text-center">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted text-[13px]">
             No chains or cycles. Every redirect hops exactly once.
           </p>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>Source</Th>
                 <Th>Path</Th>
                 <Th>Hops</Th>
@@ -109,26 +109,24 @@ export default async function RedirectChainsPage() {
               {chains.map((c) => (
                 <tr
                   key={c.fromPath}
-                  className={`border-b border-ih-border last:border-0 hover:bg-ih-surface-2 align-top ${
+                  className={`border-ih-border hover:bg-ih-surface-2 border-b align-top last:border-0 ${
                     c.isCycle ? 'bg-ih-danger-soft/40' : ''
                   }`}
                 >
-                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2">
+                  <td className="text-ih-ink-2 px-3 py-3 text-[12px] tabular-nums">
                     {c.fromPath}
                     {c.isCycle && (
-                      <div className="tabular-nums text-[10.5px] text-ih-danger-ink uppercase tracking-wider mt-1">
+                      <div className="text-ih-danger-ink mt-1 text-[10.5px] tracking-wider uppercase tabular-nums">
                         cycle
                       </div>
                     )}
                   </td>
-                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted">
+                  <td className="text-ih-muted px-3 py-3 text-[11px] tabular-nums">
                     {c.hops.map((h, i) => (
                       <span key={i}>
-                        {i > 0 && <span className="opacity-50 mx-1">→</span>}
+                        {i > 0 && <span className="mx-1 opacity-50">→</span>}
                         <span
-                          className={
-                            i === c.hops.length - 1 && !c.isCycle ? 'text-ih-ink-2' : ''
-                          }
+                          className={i === c.hops.length - 1 && !c.isCycle ? 'text-ih-ink-2' : ''}
                         >
                           {h}
                         </span>
@@ -158,17 +156,13 @@ function Tile({
   danger?: boolean
 }) {
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         {label}
       </div>
       <div
-        className={`text-[28px] font-medium mt-1 ${
-          danger
-            ? 'text-ih-danger-ink'
-            : accent
-              ? 'text-ih-accent'
-              : ''
+        className={`mt-1 text-[28px] font-medium ${
+          danger ? 'text-ih-danger-ink' : accent ? 'text-ih-accent' : ''
         }`}
       >
         {value}
@@ -179,7 +173,7 @@ function Tile({
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

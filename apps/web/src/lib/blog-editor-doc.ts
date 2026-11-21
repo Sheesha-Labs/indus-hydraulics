@@ -100,7 +100,7 @@ function blockToHtml(block: BlogBlocks[number]): string {
       // the alternative is that opening an article in the editor and pressing
       // save deletes its comparison tables.
       return `<div data-blog-block="${escapeHtml(block.type)}" data-json="${escapeHtml(
-        JSON.stringify(block),
+        JSON.stringify(block)
       )}"></div>`
   }
 }
@@ -153,7 +153,7 @@ export function editorDocToBlocks(doc: EditorNode | null | undefined): BlogBlock
           typeof node.attrs?.anchor === 'string' && node.attrs.anchor
             ? node.attrs.anchor
             : slugifyAnchor(title),
-          usedAnchors,
+          usedAnchors
         ),
       })
       continue
@@ -219,7 +219,9 @@ function blockNodeToHtml(node: EditorNode): string {
           // adds a blank line on the article, so it is unwrapped here.
           const inner = (li.content ?? [])
             .map((child) =>
-              child.type === 'paragraph' ? inlineToHtml(child.content ?? []) : blockNodeToHtml(child),
+              child.type === 'paragraph'
+                ? inlineToHtml(child.content ?? [])
+                : blockNodeToHtml(child)
             )
             .join('')
           return inner.trim() ? `<li>${inner}</li>` : ''
@@ -299,7 +301,12 @@ function stringAttr(node: EditorNode, key: string): string | null {
 }
 
 function isBlankFragment(html: string): boolean {
-  return html.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim().length === 0
+  return (
+    html
+      .replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;/g, ' ')
+      .trim().length === 0
+  )
 }
 
 /** Kebab-case, matching the `anchor` pattern the block schema enforces. */
@@ -314,8 +321,9 @@ export function slugifyAnchor(title: string): string {
   // fragment a reader can see, and `…accounts-for-a-large-sha` reads as a
   // truncation bug even though it works.
   const cut = full.slice(0, 80)
-  const slug = (full.length > 80 && cut.includes('-') ? cut.slice(0, cut.lastIndexOf('-')) : cut)
-    .replace(/-+$/g, '')
+  const slug = (
+    full.length > 80 && cut.includes('-') ? cut.slice(0, cut.lastIndexOf('-')) : cut
+  ).replace(/-+$/g, '')
   // The schema rejects an empty anchor, and two headings of pure punctuation
   // would both produce one. `section` is a valid fallback that stays unique
   // through `uniqueAnchor`.

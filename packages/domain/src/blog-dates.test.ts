@@ -16,7 +16,7 @@ describe('blogPostModifiedAt', () => {
         updatedAt: d('2026-09-03T12:00:00Z'),
         seoUpdatedAt: d('2026-08-30T00:00:00Z'),
         reviewedAt: null,
-      }),
+      })
     ).toEqual(d('2026-09-03T12:00:00Z'))
   })
 
@@ -28,7 +28,7 @@ describe('blogPostModifiedAt', () => {
         publishedAt: d('2026-08-24T00:00:00Z'),
         seoUpdatedAt: d('2026-08-25T00:00:00Z'),
         updatedAt: d('2026-10-01T00:00:00Z'),
-      }),
+      })
     ).toEqual(d('2026-10-01T00:00:00Z'))
   })
 
@@ -38,7 +38,7 @@ describe('blogPostModifiedAt', () => {
         publishedAt: d('2026-08-24T00:00:00Z'),
         updatedAt: d('2026-08-24T00:00:00Z'),
         reviewedAt: d('2026-09-15T00:00:00Z'),
-      }),
+      })
     ).toEqual(d('2026-09-15T00:00:00Z'))
   })
 
@@ -82,29 +82,59 @@ describe('resolveReviewedAt', () => {
 
   it('clears the date when the reviewer is cleared', () => {
     expect(
-      resolveReviewedAt({ reviewerId: null, explicit: before, existing: before, existingReviewerId: 'a', now }),
+      resolveReviewedAt({
+        reviewerId: null,
+        explicit: before,
+        existing: before,
+        existingReviewerId: 'a',
+        now,
+      })
     ).toBeNull()
   })
 
   it('uses an explicit date', () => {
     const explicit = new Date('2026-09-20T00:00:00Z')
     expect(
-      resolveReviewedAt({ reviewerId: 'a', explicit, existing: before, existingReviewerId: 'a', now }),
+      resolveReviewedAt({
+        reviewerId: 'a',
+        explicit,
+        existing: before,
+        existingReviewerId: 'a',
+        now,
+      })
     ).toEqual(explicit)
   })
 
   it('keeps the sign-off when the same reviewer is saved again', () => {
     expect(
-      resolveReviewedAt({ reviewerId: 'a', explicit: null, existing: before, existingReviewerId: 'a', now }),
+      resolveReviewedAt({
+        reviewerId: 'a',
+        explicit: null,
+        existing: before,
+        existingReviewerId: 'a',
+        now,
+      })
     ).toEqual(before)
   })
 
   it('stamps today for a new reviewer', () => {
     expect(
-      resolveReviewedAt({ reviewerId: 'b', explicit: null, existing: before, existingReviewerId: 'a', now }),
+      resolveReviewedAt({
+        reviewerId: 'b',
+        explicit: null,
+        existing: before,
+        existingReviewerId: 'a',
+        now,
+      })
     ).toEqual(now)
     expect(
-      resolveReviewedAt({ reviewerId: 'b', explicit: null, existing: null, existingReviewerId: null, now }),
+      resolveReviewedAt({
+        reviewerId: 'b',
+        explicit: null,
+        existing: null,
+        existingReviewerId: null,
+        now,
+      })
     ).toEqual(now)
   })
 })

@@ -32,7 +32,7 @@ export default async function QueryAnalyticsPage() {
         GROUP BY normalized
         ORDER BY count DESC
         LIMIT 50
-      `,
+      `
     ),
     db.$queryRaw<Array<{ normalized: string; count: bigint; lastSeen: Date }>>(
       Prisma.sql`
@@ -45,7 +45,7 @@ export default async function QueryAnalyticsPage() {
         GROUP BY normalized
         ORDER BY count DESC
         LIMIT 50
-      `,
+      `
     ),
     db.$queryRaw<Array<{ normalized: string; count: bigint; avgResults: number }>>(
       Prisma.sql`
@@ -60,7 +60,7 @@ export default async function QueryAnalyticsPage() {
            AND COUNT(*) FILTER (WHERE "clickedSku" IS NOT NULL) = 0
         ORDER BY count DESC
         LIMIT 50
-      `,
+      `
     ),
     db.$queryRaw<Array<{ totalQueries: bigint; uniqueQueries: bigint; clickThroughRate: number }>>(
       Prisma.sql`
@@ -70,7 +70,7 @@ export default async function QueryAnalyticsPage() {
                   / GREATEST(COUNT(*), 1)) AS "clickThroughRate"
         FROM search_query_logs
         WHERE "createdAt" >= ${since}
-      `,
+      `
     ),
   ])
 
@@ -81,7 +81,7 @@ export default async function QueryAnalyticsPage() {
 
   return (
     <div className="max-w-[960px]">
-      <div className="grid grid-cols-3 gap-3 mb-6">
+      <div className="mb-6 grid grid-cols-3 gap-3">
         <Tile label={`Queries (last ${WINDOW_DAYS}d)`} value={totalQueries.toLocaleString()} />
         <Tile label="Unique queries" value={uniqueQueries.toLocaleString()} />
         <Tile label="Click-through rate" value={`${(ctr * 100).toFixed(1)}%`} accent />
@@ -105,7 +105,7 @@ export default async function QueryAnalyticsPage() {
       </Section>
 
       <Section title="Zero-result queries">
-        <p className="mb-3 text-[12px] text-ih-muted">
+        <p className="text-ih-muted mb-3 text-[12px]">
           These returned nothing. Each one is a synonym candidate — define a group on{' '}
           <code>/seo/search/synonyms</code> to fix in one click.
         </p>
@@ -128,9 +128,9 @@ export default async function QueryAnalyticsPage() {
       </Section>
 
       <Section title="High volume / no clicks">
-        <p className="mb-3 text-[12px] text-ih-muted">
-          Queries that ran ≥5 times, returned results, but nobody clicked. UX or relevance issue
-          — fix with synonym groups, query redirects, or boosts.
+        <p className="text-ih-muted mb-3 text-[12px]">
+          Queries that ran ≥5 times, returned results, but nobody clicked. UX or relevance issue —
+          fix with synonym groups, query redirects, or boosts.
         </p>
         {noClickQueries.length === 0 ? (
           <Empty>Nothing here — click-through looks healthy.</Empty>
@@ -157,11 +157,11 @@ function formatRate(num: number, den: number): string {
 
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         {label}
       </div>
-      <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>
+      <div className={`mt-1 text-[28px] font-medium ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>
@@ -171,7 +171,7 @@ function Tile({ label, value, accent }: { label: string; value: string; accent?:
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h2 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+      <h2 className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
         {title}
       </h2>
       {children}
@@ -181,30 +181,22 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Empty({ children }: { children: React.ReactNode }) {
   return (
-    <div className="py-10 text-center rounded-lg border border-ih-border text-[13px] text-ih-muted">
+    <div className="border-ih-border text-ih-muted rounded-lg border py-10 text-center text-[13px]">
       {children}
     </div>
   )
 }
 
-function Table({
-  cols,
-  rows,
-  mono,
-}: {
-  cols: string[]
-  rows: string[][]
-  mono: boolean[]
-}) {
+function Table({ cols, rows, mono }: { cols: string[]; rows: string[][]; mono: boolean[] }) {
   return (
-    <div className="rounded-lg border border-ih-border overflow-hidden">
+    <div className="border-ih-border overflow-hidden rounded-lg border">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-ih-border bg-ih-surface-2">
+          <tr className="border-ih-border bg-ih-surface-2 border-b">
             {cols.map((c) => (
               <th
                 key={c}
-                className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted"
+                className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums"
               >
                 {c}
               </th>
@@ -213,12 +205,12 @@ function Table({
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2">
+            <tr key={i} className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0">
               {row.map((cell, j) => (
                 <td
                   key={j}
                   className={`px-3 py-2 ${
-                    mono[j] ? 'tabular-nums text-[12px] text-ih-ink-2' : 'text-ih-muted'
+                    mono[j] ? 'text-ih-ink-2 text-[12px] tabular-nums' : 'text-ih-muted'
                   }`}
                 >
                   {cell}

@@ -80,10 +80,7 @@ describe('sortServiceCases', () => {
   })
 
   it('does not mutate the array it is given', () => {
-    const rows = [
-      makeCase({ id: 'a', savingsAmount: 1 }),
-      makeCase({ id: 'b', savingsAmount: 2 }),
-    ]
+    const rows = [makeCase({ id: 'a', savingsAmount: 1 }), makeCase({ id: 'b', savingsAmount: 2 })]
     sortServiceCases(rows, 'savings')
     expect(ids(rows)).toEqual(['a', 'b'])
   })

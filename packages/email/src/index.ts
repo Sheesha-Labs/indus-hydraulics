@@ -1,4 +1,10 @@
-export { sendEmail, sendEmailBatch, sendCampaignBatch, sendingDomainStatus, BATCH_LIMIT } from './send'
+export {
+  sendEmail,
+  sendEmailBatch,
+  sendCampaignBatch,
+  sendingDomainStatus,
+  BATCH_LIMIT,
+} from './send'
 export type { SendingDomainStatus, CampaignBatchResult } from './send'
 export type {
   SendEmailInput,
@@ -34,6 +40,9 @@ export type { QuoteAckProps } from './templates/quote-ack'
 export type { QuoteExpiryReminderProps } from './templates/quote-expiry-reminder'
 export type { QuoteExpiredProps } from './templates/quote-expired'
 export type { StaffInvitationProps } from './templates/staff-invitation'
-export type { NewsletterConfirmationProps, NewsletterBranding } from './templates/newsletter-confirmation'
+export type {
+  NewsletterConfirmationProps,
+  NewsletterBranding,
+} from './templates/newsletter-confirmation'
 export type { NewsletterWelcomeProps } from './templates/newsletter-welcome'
 export type { EnquiryReceivedProps } from './templates/enquiry-received'

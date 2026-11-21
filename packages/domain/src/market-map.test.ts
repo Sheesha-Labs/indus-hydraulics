@@ -16,7 +16,12 @@ describe('greatCircleKm', () => {
   it('measures a known leg', () => {
     // Jebel Ali to Onne as the crow flies — about a quarter of the way round
     // the planet, and nothing like the distance a ship actually covers.
-    expect(greatCircleKm([[55.03, 25.01], [7.15, 4.7]])).toBeCloseTo(5580, -2)
+    expect(
+      greatCircleKm([
+        [55.03, 25.01],
+        [7.15, 4.7],
+      ])
+    ).toBeCloseTo(5580, -2)
   })
 
   it('returns zero for a single point', () => {

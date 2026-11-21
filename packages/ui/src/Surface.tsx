@@ -27,7 +27,7 @@ export function Card({ className, flat, raised, ...props }: CardProps) {
   return (
     <div
       className={cn(
-        'overflow-hidden border border-ih-border bg-ih-surface',
+        'border-ih-border bg-ih-surface overflow-hidden border',
         flat ? 'rounded-md' : 'rounded-lg',
         raised && 'shadow-[0_1px_2px_rgba(20,28,45,.04),0_8px_24px_rgba(20,28,45,.04)]',
         className
@@ -57,11 +57,12 @@ const chipVariants = cva(
 )
 
 export interface ChipProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
-    VariantProps<typeof chipVariants> {}
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>, VariantProps<typeof chipVariants> {}
 
 export function Chip({ className, on, ghost, ...props }: ChipProps) {
-  return <span className={cn(chipVariants({ on, ghost }), on && 'bg-ih-accent', className)} {...props} />
+  return (
+    <span className={cn(chipVariants({ on, ghost }), on && 'bg-ih-accent', className)} {...props} />
+  )
 }
 
 /* ─── Avatar ───────────────────────────────────────────────────────────── */
@@ -107,8 +108,8 @@ export function Note({ className, tone = 'accent', ...props }: NoteProps) {
       className={cn(
         'rounded-md border px-[14px] py-3 text-[12.5px] leading-relaxed',
         tone === 'accent'
-          ? 'border-[oklch(0.88_0.04_248)] bg-ih-accent-soft text-[oklch(0.38_0.09_248)]'
-          : 'border-[oklch(0.88_0.05_28)] bg-ih-danger-soft text-[oklch(0.44_0.14_28)]',
+          ? 'bg-ih-accent-soft border-[oklch(0.88_0.04_248)] text-[oklch(0.38_0.09_248)]'
+          : 'bg-ih-danger-soft border-[oklch(0.88_0.05_28)] text-[oklch(0.44_0.14_28)]',
         className
       )}
       {...props}
@@ -125,7 +126,10 @@ export function Note({ className, tone = 'accent', ...props }: NoteProps) {
 export function Eyebrow({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
   return (
     <p
-      className={cn('font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted', className)}
+      className={cn(
+        'text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase',
+        className
+      )}
       {...props}
     />
   )
@@ -144,12 +148,22 @@ export interface SectionHeadProps {
   className?: string
 }
 
-export function SectionHead({ eyebrow, title, serif, number, action, className }: SectionHeadProps) {
+export function SectionHead({
+  eyebrow,
+  title,
+  serif,
+  number,
+  action,
+  className,
+}: SectionHeadProps) {
   return (
     <div className={cn('mb-7 flex items-end justify-between gap-8', className)}>
       <div>
         {number ? (
-          <span aria-hidden="true" className="mb-2 block font-mono text-[11px] tracking-[0.06em] text-ih-accent">
+          <span
+            aria-hidden="true"
+            className="text-ih-accent mb-2 block font-mono text-[11px] tracking-[0.06em]"
+          >
             {number}
           </span>
         ) : null}
@@ -157,7 +171,9 @@ export function SectionHead({ eyebrow, title, serif, number, action, className }
         <h2
           className={cn(
             'max-w-[620px] text-pretty',
-            serif ? 'font-serif text-[34px] font-normal tracking-[-0.01em]' : 'text-[30px] font-medium tracking-[-0.02em]'
+            serif
+              ? 'font-serif text-[34px] font-normal tracking-[-0.01em]'
+              : 'text-[30px] font-medium tracking-[-0.02em]'
           )}
         >
           {title}
@@ -185,10 +201,10 @@ export function SpecList({ rows, className, ...props }: SpecListProps) {
       {rows.map(([k, v], i) => (
         <div
           key={i}
-          className="flex justify-between gap-5 border-b border-ih-border py-2.5 text-[13px] last:border-b-0"
+          className="border-ih-border flex justify-between gap-5 border-b py-2.5 text-[13px] last:border-b-0"
         >
           <dt className="text-ih-muted">{k}</dt>
-          <dd className="text-right font-mono text-[12.5px] text-ih-ink">{v}</dd>
+          <dd className="text-ih-ink text-right font-mono text-[12.5px]">{v}</dd>
         </div>
       ))}
     </dl>
@@ -209,11 +225,22 @@ export interface StatProps {
 /** The bordered card form — used in the console. */
 export function StatTile({ label, value, delta, down, className }: StatProps) {
   return (
-    <div className={cn('rounded-lg border border-ih-border bg-ih-surface px-5 py-[18px]', className)}>
-      <div className="text-xs text-ih-muted">{label}</div>
-      <div className="mt-[5px] text-[28px] font-medium tracking-[-0.025em] tabular-nums">{value}</div>
+    <div
+      className={cn('border-ih-border bg-ih-surface rounded-lg border px-5 py-[18px]', className)}
+    >
+      <div className="text-ih-muted text-xs">{label}</div>
+      <div className="mt-[5px] text-[28px] font-medium tracking-[-0.025em] tabular-nums">
+        {value}
+      </div>
       {delta ? (
-        <div className={cn('mt-2 font-mono text-[11.5px]', down ? 'text-ih-danger' : 'text-ih-success')}>{delta}</div>
+        <div
+          className={cn(
+            'mt-2 font-mono text-[11.5px]',
+            down ? 'text-ih-danger' : 'text-ih-success'
+          )}
+        >
+          {delta}
+        </div>
       ) : null}
     </div>
   )
@@ -223,15 +250,31 @@ export function StatTile({ label, value, delta, down, className }: StatProps) {
  * The rule-topped form — the most-repeated device in the system. Sits in a
  * grid; each item takes a 2px accent top border, or steel when on navy.
  */
-export function Stat({ label, value, onNavy, className }: Omit<StatProps, 'delta' | 'down'> & { onNavy?: boolean }) {
+export function Stat({
+  label,
+  value,
+  onNavy,
+  className,
+}: Omit<StatProps, 'delta' | 'down'> & { onNavy?: boolean }) {
   return (
-    <div className={cn('border-t-2 pt-3.5', onNavy ? 'border-ih-steel' : 'border-ih-accent', className)}>
-      <div className={cn('font-mono text-[30px] leading-none tracking-[-0.03em] tabular-nums', onNavy && 'text-white')}>
+    <div
+      className={cn(
+        'border-t-2 pt-3.5',
+        onNavy ? 'border-ih-steel' : 'border-ih-accent',
+        className
+      )}
+    >
+      <div
+        className={cn(
+          'font-mono text-[30px] leading-none tracking-[-0.03em] tabular-nums',
+          onNavy && 'text-white'
+        )}
+      >
         {value}
       </div>
       <div
         className={cn(
-          'mt-2.5 font-mono text-[10.5px] uppercase leading-normal tracking-[0.1em]',
+          'mt-2.5 font-mono text-[10.5px] leading-normal tracking-[0.1em] uppercase',
           onNavy ? 'text-ih-steel' : 'text-ih-muted'
         )}
       >
@@ -253,10 +296,16 @@ export interface BreadcrumbItem {
  * is a sequence and the markup should say so. The last item is the current
  * page and carries aria-current.
  */
-export function Breadcrumb({ items, className }: { items: readonly BreadcrumbItem[]; className?: string }) {
+export function Breadcrumb({
+  items,
+  className,
+}: {
+  items: readonly BreadcrumbItem[]
+  className?: string
+}) {
   return (
     <nav aria-label="Breadcrumb" className={className}>
-      <ol className="flex flex-wrap items-center gap-2 text-[12.5px] text-ih-muted">
+      <ol className="text-ih-muted flex flex-wrap items-center gap-2 text-[12.5px]">
         {items.map((item, i) => {
           const last = i === items.length - 1
           return (
@@ -271,7 +320,10 @@ export function Breadcrumb({ items, className }: { items: readonly BreadcrumbIte
                   {item.label}
                 </a>
               ) : (
-                <span className={cn(last && 'text-ih-ink-2')} aria-current={last ? 'page' : undefined}>
+                <span
+                  className={cn(last && 'text-ih-ink-2')}
+                  aria-current={last ? 'page' : undefined}
+                >
                   {item.label}
                 </span>
               )}
@@ -330,11 +382,7 @@ export function HairlineCell({
 }: React.HTMLAttributes<HTMLDivElement> & { tone?: 'light' | 'navy' }) {
   return (
     <div
-      className={cn(
-        'px-5 py-[18px]',
-        tone === 'navy' ? 'bg-ih-navy' : 'bg-ih-surface',
-        className
-      )}
+      className={cn('px-5 py-[18px]', tone === 'navy' ? 'bg-ih-navy' : 'bg-ih-surface', className)}
       {...props}
     />
   )

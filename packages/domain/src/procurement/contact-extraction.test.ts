@@ -26,7 +26,7 @@ describe('finding addresses', () => {
 
   it('decodes a percent-encoded mailto', () => {
     expect(run('<a href="mailto:sales%40acme-valves.de">x</a>')[0]!.email).toBe(
-      'sales@acme-valves.de',
+      'sales@acme-valves.de'
     )
   })
 
@@ -136,6 +136,8 @@ describe('contact paths', () => {
 
 describe('never guesses', () => {
   it('returns nothing for a page with no address, rather than inventing sales@', () => {
-    expect(run('<html><body><h1>Acme Valves</h1><p>Contact form below.</p></body></html>')).toEqual([])
+    expect(run('<html><body><h1>Acme Valves</h1><p>Contact form below.</p></body></html>')).toEqual(
+      []
+    )
   })
 })

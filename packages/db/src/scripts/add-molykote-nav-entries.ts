@@ -79,7 +79,9 @@ async function main() {
     added++
   }
 
-  console.log(`\n[molykote] ${dryRun ? 'dry run — ' : ''}${added} menu entr${added === 1 ? 'y' : 'ies'} added`)
+  console.log(
+    `\n[molykote] ${dryRun ? 'dry run — ' : ''}${added} menu entr${added === 1 ? 'y' : 'ies'} added`
+  )
 }
 
 main()

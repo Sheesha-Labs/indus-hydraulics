@@ -24,7 +24,7 @@ function clauses() {
         page: page.key,
         section: section.key,
         html: str(section.defaults, 'body') ?? '',
-      })),
+      }))
   )
 }
 
@@ -33,7 +33,10 @@ describe('policy clause HTML', () => {
     const found = clauses()
     expect(found.length).toBeGreaterThanOrEqual(20)
     for (const key of POLICY_KEYS) {
-      expect(found.some((c) => c.page === key), `${key} has no rich-text clauses`).toBe(true)
+      expect(
+        found.some((c) => c.page === key),
+        `${key} has no rich-text clauses`
+      ).toBe(true)
     }
   })
 
@@ -41,7 +44,7 @@ describe('policy clause HTML', () => {
     for (const clause of clauses()) {
       expect(
         sanitizeBlogProseHtml(clause.html),
-        `${clause.page}/${clause.section} loses markup when saved`,
+        `${clause.page}/${clause.section} loses markup when saved`
       ).toBe(clause.html)
     }
   })

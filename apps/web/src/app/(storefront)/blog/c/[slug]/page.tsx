@@ -92,7 +92,10 @@ export default async function BlogCategoryPage({ params }: Props) {
   const hubBody = category.bodyBlocks ? await resolveBlogArticle(category.bodyBlocks) : null
   const contact = {
     whatsappUrl: buildWhatsappHref(settings.contactPhone, `Enquiry: ${category.name}`),
-    emailUrl: enquiryMailto({ subject: `${category.name} — enquiry`, body: enquiryBody({ about: category.name, url: hubUrl }) }),
+    emailUrl: enquiryMailto({
+      subject: `${category.name} — enquiry`,
+      body: enquiryBody({ about: category.name, url: hubUrl }),
+    }),
     phone: settings.contactPhone,
   }
 
@@ -116,7 +119,11 @@ export default async function BlogCategoryPage({ params }: Props) {
     <>
       <JsonLd data={[collectionLd, breadcrumbLd]} />
       <BlogTopicHub
-        category={{ name: category.name, slug: category.slug, lede: category.heroCopy ?? category.description }}
+        category={{
+          name: category.name,
+          slug: category.slug,
+          lede: category.heroCopy ?? category.description,
+        }}
         posts={posts}
         body={hubBody && hubBody.blocks.length > 0 ? hubBody : null}
         topics={topics}

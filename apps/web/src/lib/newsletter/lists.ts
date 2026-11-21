@@ -146,7 +146,10 @@ export function nameOf(row: string[], mapping: ColumnMapping): string {
   const raw =
     mapping.name !== null
       ? (row[mapping.name] ?? '')
-      : [mapping.first !== null ? row[mapping.first] : '', mapping.last !== null ? row[mapping.last] : '']
+      : [
+          mapping.first !== null ? row[mapping.first] : '',
+          mapping.last !== null ? row[mapping.last] : '',
+        ]
           .filter(Boolean)
           .join(' ')
   return raw.replace(/\s+/g, ' ').trim().slice(0, 120)
@@ -194,7 +197,13 @@ export function toImportPairs(rows: string[][], mapping: ColumnMapping): [string
   return body.map((r) => [String(r[mapping.email] ?? ''), nameOf(r, mapping)])
 }
 
-export const PAIR_MAPPING: ColumnMapping = { email: 0, name: 1, first: null, last: null, header: false }
+export const PAIR_MAPPING: ColumnMapping = {
+  email: 0,
+  name: 1,
+  first: null,
+  last: null,
+  header: false,
+}
 
 /** One cell, safe for a spreadsheet: formula-leading text is defused, then CSV-quoted if needed. */
 export function csvCell(value: string): string {

@@ -15,7 +15,14 @@
 /** An image chosen from (or uploaded to) the media library, or pasted as an https URL. */
 export type ImageValue = { url: string; alt?: string; mediaId?: string | null }
 
-export const RECORD_KINDS = ['product', 'category', 'article', 'industry', 'brand', 'service'] as const
+export const RECORD_KINDS = [
+  'product',
+  'category',
+  'article',
+  'industry',
+  'brand',
+  'service',
+] as const
 export type RecordKind = (typeof RECORD_KINDS)[number]
 
 /**
@@ -28,7 +35,12 @@ export const RECORD_LAYOUTS = ['list', 'grid', 'cards', 'rows', 'tiles'] as cons
 export type RecordLayout = (typeof RECORD_LAYOUTS)[number]
 
 /** Stored value of a records field: ids, never copied words. labels = what the editor showed when picked (for "missing record" messages). */
-export type RecordsValue = { kind: RecordKind; ids: string[]; labels: string[]; layout: RecordLayout }
+export type RecordsValue = {
+  kind: RecordKind
+  ids: string[]
+  labels: string[]
+  layout: RecordLayout
+}
 
 export type Props = Record<string, unknown>
 

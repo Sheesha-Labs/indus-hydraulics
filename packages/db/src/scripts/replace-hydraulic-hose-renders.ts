@@ -188,7 +188,10 @@ async function main() {
   let bytesFreed = 0
   const problems: string[] = []
   const backup: unknown[] = []
-  const backupPath = join(BACKUP_DIR, `retired-hose-images-${new Date().toISOString().slice(0, 10)}.json`)
+  const backupPath = join(
+    BACKUP_DIR,
+    `retired-hose-images-${new Date().toISOString().slice(0, 10)}.json`
+  )
 
   for (const pair of PAIRS) {
     if (!onDisk.has(pair.file)) {

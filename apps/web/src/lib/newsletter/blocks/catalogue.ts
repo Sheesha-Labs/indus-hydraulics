@@ -13,7 +13,11 @@ import type { BlockDef, FieldDef, ScalarFieldDef } from './types'
 
 // ── Field helpers ────────────────────────────────────────────────
 
-const text = (key: string, label: string, extra: { help?: string; placeholder?: string; max?: number } = {}): ScalarFieldDef => ({
+const text = (
+  key: string,
+  label: string,
+  extra: { help?: string; placeholder?: string; max?: number } = {}
+): ScalarFieldDef => ({
   kind: 'text',
   key,
   label,
@@ -32,10 +36,29 @@ const url = (key: string, label: string): ScalarFieldDef => ({
   placeholder: 'https://… or /page on the site',
   help: 'A full address, a page on the site (/c/hydraulic-hoses), mailto: or tel:.',
 })
-const color = (key: string, label: string, allowBlank = true): ScalarFieldDef => ({ kind: 'color', key, label, allowBlank })
-const image = (key: string, label: string, help?: string): ScalarFieldDef => ({ kind: 'image', key, label, help })
-const toggle = (key: string, label: string, help?: string): ScalarFieldDef => ({ kind: 'toggle', key, label, help })
-const select = (key: string, label: string, options: readonly (readonly [string, string])[]): ScalarFieldDef => ({
+const color = (key: string, label: string, allowBlank = true): ScalarFieldDef => ({
+  kind: 'color',
+  key,
+  label,
+  allowBlank,
+})
+const image = (key: string, label: string, help?: string): ScalarFieldDef => ({
+  kind: 'image',
+  key,
+  label,
+  help,
+})
+const toggle = (key: string, label: string, help?: string): ScalarFieldDef => ({
+  kind: 'toggle',
+  key,
+  label,
+  help,
+})
+const select = (
+  key: string,
+  label: string,
+  options: readonly (readonly [string, string])[]
+): ScalarFieldDef => ({
   kind: 'select',
   key,
   label,
@@ -111,14 +134,39 @@ export const BLOCKS: BlockDef[] = [
     type: 'hero',
     label: 'Hero',
     category: 'Headers',
-    description: 'A full-width band — a photograph or a colour — with a logo, headline, line and button over it.',
+    description:
+      'A full-width band — a photograph or a colour — with a logo, headline, line and button over it.',
     fields: [
-      image('image', 'Background image', 'Wide and at least 1200px across. The overlay colour fills in where an inbox will not show it.'),
+      image(
+        'image',
+        'Background image',
+        'Wide and at least 1200px across. The overlay colour fills in where an inbox will not show it.'
+      ),
       color('overlayColor', 'Overlay colour', false),
-      { kind: 'number', key: 'overlayOpacity', label: 'Overlay strength', min: 0, max: 90, step: 5, unit: '%' },
+      {
+        kind: 'number',
+        key: 'overlayOpacity',
+        label: 'Overlay strength',
+        min: 0,
+        max: 90,
+        step: 5,
+        unit: '%',
+      },
       select('logo', 'Logo', [...LOGO_OPTIONS, ['none', 'No logo']]),
-      image('logoImage', 'Logo image', 'Used when the logo is “Another image”. PNG, twice its display width.'),
-      { kind: 'number', key: 'logoWidth', label: 'Logo width', min: 60, max: 320, step: 10, unit: 'px' },
+      image(
+        'logoImage',
+        'Logo image',
+        'Used when the logo is “Another image”. PNG, twice its display width.'
+      ),
+      {
+        kind: 'number',
+        key: 'logoWidth',
+        label: 'Logo width',
+        min: 60,
+        max: 320,
+        step: 10,
+        unit: 'px',
+      },
       text('eyebrow', 'Small line above'),
       headline('heading', 'Headline'),
       ...POSTER,
@@ -162,15 +210,35 @@ export const BLOCKS: BlockDef[] = [
     type: 'masthead',
     label: 'Masthead',
     category: 'Headers',
-    description: 'A trade-magazine top: the logo, the issue on the far side and a large faint word across the band — “PRODUCT NEWS”.',
+    description:
+      'A trade-magazine top: the logo, the issue on the far side and a large faint word across the band — “PRODUCT NEWS”.',
     fields: [
       select('logo', 'Logo', [...LOGO_OPTIONS, ['none', 'No logo']]),
       image('logoImage', 'Logo image'),
-      { kind: 'number', key: 'logoWidth', label: 'Logo width', min: 60, max: 260, step: 10, unit: 'px' },
+      {
+        kind: 'number',
+        key: 'logoWidth',
+        label: 'Logo width',
+        min: 60,
+        max: 260,
+        step: 10,
+        unit: 'px',
+      },
       text('label', 'Small line, far side', { help: '“This month’s selection”, “Issue 12”.' }),
       text('title', 'Title, far side', { help: '“Hydraulics & fluid power”, “November 2026”.' }),
-      text('watermark', 'Large faint word', { help: 'Drawn big and pale across the bottom of the band. Leave blank for none.', max: 30 }),
-      { kind: 'number', key: 'watermarkStrength', label: 'Faint word strength', min: 5, max: 40, step: 1, unit: '%' },
+      text('watermark', 'Large faint word', {
+        help: 'Drawn big and pale across the bottom of the band. Leave blank for none.',
+        max: 30,
+      }),
+      {
+        kind: 'number',
+        key: 'watermarkStrength',
+        label: 'Faint word strength',
+        min: 5,
+        max: 40,
+        step: 1,
+        unit: '%',
+      },
       color('textColor', 'Text colour', false),
       color('background', 'Background', false),
       PADDING,
@@ -192,16 +260,29 @@ export const BLOCKS: BlockDef[] = [
     type: 'topbar',
     label: 'Top strip',
     category: 'Headers',
-    description: 'A slim band of short points above everything else — “Ex-stock in Dubai · Same-day quotes · GCC delivery”.',
+    description:
+      'A slim band of short points above everything else — “Ex-stock in Dubai · Same-day quotes · GCC delivery”.',
     fields: [
-      { kind: 'items', key: 'items', label: 'Points', itemLabel: 'Point', min: 1, max: 4, fields: [text('text', 'Point', { max: 60 })] },
+      {
+        kind: 'items',
+        key: 'items',
+        label: 'Points',
+        itemLabel: 'Point',
+        min: 1,
+        max: 4,
+        fields: [text('text', 'Point', { max: 60 })],
+      },
       url('url', 'Link (optional)'),
       ALIGN,
       color('textColor', 'Text colour', false),
       color('background', 'Background', false),
     ],
     defaults: {
-      items: [{ text: 'Ex-stock in Dubai' }, { text: 'Same-day quotes' }, { text: 'GCC-wide delivery' }],
+      items: [
+        { text: 'Ex-stock in Dubai' },
+        { text: 'Same-day quotes' },
+        { text: 'GCC-wide delivery' },
+      ],
       url: '',
       align: 'center',
       textColor: BRAND.white,
@@ -216,14 +297,34 @@ export const BLOCKS: BlockDef[] = [
     fields: [
       select('logo', 'Logo', LOGO_OPTIONS),
       image('logoImage', 'Logo image'),
-      { kind: 'number', key: 'logoWidth', label: 'Logo width', min: 60, max: 320, step: 10, unit: 'px' },
-      text('linkLabel', 'Link on the far side', { help: '“indushydraulics.com”, “Request a quote”…' }),
+      {
+        kind: 'number',
+        key: 'logoWidth',
+        label: 'Logo width',
+        min: 60,
+        max: 320,
+        step: 10,
+        unit: 'px',
+      },
+      text('linkLabel', 'Link on the far side', {
+        help: '“indushydraulics.com”, “Request a quote”…',
+      }),
       url('linkUrl', 'Its link'),
       ALIGN,
       TEXT_COLOR,
       ...BOX,
     ],
-    defaults: { logo: 'brand', logoImage: null, logoWidth: 140, linkLabel: '', linkUrl: '', align: 'start', textColor: '', background: '', padding: 'm' },
+    defaults: {
+      logo: 'brand',
+      logoImage: null,
+      logoWidth: 140,
+      linkLabel: '',
+      linkUrl: '',
+      align: 'start',
+      textColor: '',
+      background: '',
+      padding: 'm',
+    },
   },
   {
     type: 'heading',
@@ -287,7 +388,17 @@ export const BLOCKS: BlockDef[] = [
     label: 'Heading, text and button',
     category: 'Text',
     description: 'An introduction: heading, a paragraph and a call to action, on a band.',
-    fields: [text('eyebrow', 'Small line above'), headline(), HEADING_SIZE, ...POSTER, textarea('text', 'Text'), ...BUTTON, ALIGN, TEXT_COLOR, ...BOX],
+    fields: [
+      text('eyebrow', 'Small line above'),
+      headline(),
+      HEADING_SIZE,
+      ...POSTER,
+      textarea('text', 'Text'),
+      ...BUTTON,
+      ALIGN,
+      TEXT_COLOR,
+      ...BOX,
+    ],
     defaults: {
       eyebrow: '',
       heading: 'Need a part fast?',
@@ -321,7 +432,8 @@ export const BLOCKS: BlockDef[] = [
       ...BOX,
     ],
     defaults: {
-      quote: 'They had the replacement coupling on site the next morning. The rig was back running before the end of the shift.',
+      quote:
+        'They had the replacement coupling on site the next morning. The rig was back running before the end of the shift.',
       author: 'Maintenance supervisor',
       role: 'Drilling contractor, Abu Dhabi',
       portrait: null,
@@ -345,7 +457,16 @@ export const BLOCKS: BlockDef[] = [
       toggle('rounded', 'Rounded corners'),
       ...BOX,
     ],
-    defaults: { image: null, alt: '', link: '', caption: '', fullBleed: true, rounded: false, background: '', padding: 'none' },
+    defaults: {
+      image: null,
+      alt: '',
+      link: '',
+      caption: '',
+      fullBleed: true,
+      rounded: false,
+      background: '',
+      padding: 'none',
+    },
   },
   {
     type: 'image-text',
@@ -396,7 +517,12 @@ export const BLOCKS: BlockDef[] = [
         itemLabel: 'Image',
         min: 2,
         max: 3,
-        fields: [image('image', 'Image'), text('alt', 'Describe it'), url('link', 'Link'), text('caption', 'Caption')],
+        fields: [
+          image('image', 'Image'),
+          text('alt', 'Describe it'),
+          url('link', 'Link'),
+          text('caption', 'Caption'),
+        ],
       },
       toggle('rounded', 'Rounded corners'),
       ...BOX,
@@ -415,7 +541,8 @@ export const BLOCKS: BlockDef[] = [
     type: 'image-grid',
     label: 'Photo grid',
     category: 'Images',
-    description: 'Two to six photographs in a grid, each with a caption bar under it — services, sites, what comes in the box.',
+    description:
+      'Two to six photographs in a grid, each with a caption bar under it — services, sites, what comes in the box.',
     fields: [
       headline(),
       ...POSTER,
@@ -426,7 +553,12 @@ export const BLOCKS: BlockDef[] = [
         itemLabel: 'Photo',
         min: 2,
         max: 6,
-        fields: [image('image', 'Photo'), text('alt', 'Describe it'), text('caption', 'Caption', { max: 60 }), url('link', 'Link')],
+        fields: [
+          image('image', 'Photo'),
+          text('alt', 'Describe it'),
+          text('caption', 'Caption', { max: 60 }),
+          url('link', 'Link'),
+        ],
       },
       COLUMNS_23,
       select('captionStyle', 'Captions', [
@@ -461,7 +593,8 @@ export const BLOCKS: BlockDef[] = [
     type: 'features',
     label: 'Feature columns',
     category: 'Columns',
-    description: 'Two to four short points side by side — “Ex-stock · Same-day quotes · GCC delivery”.',
+    description:
+      'Two to four short points side by side — “Ex-stock · Same-day quotes · GCC delivery”.',
     fields: [
       text('heading', 'Heading'),
       HEADING_SIZE,
@@ -472,7 +605,15 @@ export const BLOCKS: BlockDef[] = [
         itemLabel: 'Column',
         min: 2,
         max: 4,
-        fields: [image('icon', 'Icon or photo', 'Optional. A small PNG for an icon; a photo fills the column.'), text('title', 'Title'), textarea('text', 'Text')],
+        fields: [
+          image(
+            'icon',
+            'Icon or photo',
+            'Optional. A small PNG for an icon; a photo fills the column.'
+          ),
+          text('title', 'Title'),
+          textarea('text', 'Text'),
+        ],
       },
       toggle('dividers', 'Lines between columns'),
       ALIGN,
@@ -498,7 +639,8 @@ export const BLOCKS: BlockDef[] = [
     type: 'cards',
     label: 'Cards',
     category: 'Columns',
-    description: 'One to three cards, each a photo, title, line and link — services, offers, events.',
+    description:
+      'One to three cards, each a photo, title, line and link — services, offers, events.',
     fields: [
       text('heading', 'Heading'),
       {
@@ -508,7 +650,13 @@ export const BLOCKS: BlockDef[] = [
         itemLabel: 'Card',
         min: 1,
         max: 3,
-        fields: [image('image', 'Photo'), text('title', 'Title'), textarea('text', 'Text'), text('linkLabel', 'Link label'), url('url', 'Link')],
+        fields: [
+          image('image', 'Photo'),
+          text('title', 'Title'),
+          textarea('text', 'Text'),
+          text('linkLabel', 'Link label'),
+          url('url', 'Link'),
+        ],
       },
       color('cardBackground', 'Card background'),
       TEXT_COLOR,
@@ -517,8 +665,20 @@ export const BLOCKS: BlockDef[] = [
     defaults: {
       heading: 'Our services',
       items: [
-        { image: null, title: 'Hose assembly', text: 'Made to order and pressure-tested.', linkLabel: 'Find out more', url: '/services' },
-        { image: null, title: 'Cylinder repair', text: 'Strip-down, reseal and test.', linkLabel: 'Find out more', url: '/services' },
+        {
+          image: null,
+          title: 'Hose assembly',
+          text: 'Made to order and pressure-tested.',
+          linkLabel: 'Find out more',
+          url: '/services',
+        },
+        {
+          image: null,
+          title: 'Cylinder repair',
+          text: 'Strip-down, reseal and test.',
+          linkLabel: 'Find out more',
+          url: '/services',
+        },
       ],
       cardBackground: BRAND.white,
       textColor: '',
@@ -558,7 +718,10 @@ export const BLOCKS: BlockDef[] = [
       highlightColor: '',
       items: [
         { title: 'Send the part', text: 'A part number, a nameplate photo or the old part.' },
-        { title: 'We match and quote', text: 'An engineer confirms the match, price and lead time.' },
+        {
+          title: 'We match and quote',
+          text: 'An engineer confirms the match, price and lead time.',
+        },
         { title: 'Delivered', text: 'Shipped to your site, anywhere in the GCC.' },
       ],
       numberColor: '',
@@ -582,7 +745,10 @@ export const BLOCKS: BlockDef[] = [
         itemLabel: 'Figure',
         min: 2,
         max: 4,
-        fields: [text('value', 'Figure', { help: '“Same day”, “24 h”, “1/4" to 2"”.' }), text('label', 'Label')],
+        fields: [
+          text('value', 'Figure', { help: '“Same day”, “24 h”, “1/4" to 2"”.' }),
+          text('label', 'Label'),
+        ],
       },
       color('valueColor', 'Figure colour'),
       TEXT_COLOR,
@@ -605,14 +771,23 @@ export const BLOCKS: BlockDef[] = [
     type: 'checklist',
     label: 'Highlights',
     category: 'Lists & details',
-    description: 'Short points with a tick — as white pills, solid bars or tinted tiles. Built for dark bands.',
+    description:
+      'Short points with a tick — as white pills, solid bars or tinted tiles. Built for dark bands.',
     fields: [
       text('eyebrow', 'Small line above'),
       headline(),
       HEADING_SIZE,
       ...POSTER,
       textarea('intro', 'Line under the heading'),
-      { kind: 'items', key: 'items', label: 'Points', itemLabel: 'Point', min: 1, max: 8, fields: [text('text', 'Point', { max: 120 })] },
+      {
+        kind: 'items',
+        key: 'items',
+        label: 'Points',
+        itemLabel: 'Point',
+        min: 1,
+        max: 8,
+        fields: [text('text', 'Point', { max: 120 })],
+      },
       select('style', 'Style', [
         ['pills', 'White pills with a tick'],
         ['bars', 'Solid bars'],
@@ -633,7 +808,12 @@ export const BLOCKS: BlockDef[] = [
       caps: false,
       highlightColor: '',
       intro: '',
-      items: [{ text: 'Part matched by an engineer' }, { text: 'Certificate of conformity' }, { text: 'Pressure test report on assemblies' }, { text: 'Delivery across the GCC' }],
+      items: [
+        { text: 'Part matched by an engineer' },
+        { text: 'Certificate of conformity' },
+        { text: 'Pressure test report on assemblies' },
+        { text: 'Delivery across the GCC' },
+      ],
       style: 'pills',
       markColor: '',
       pillColor: '',
@@ -658,7 +838,15 @@ export const BLOCKS: BlockDef[] = [
       text('heading', 'Heading'),
       HEADING_SIZE,
       textarea('intro', 'Line under the heading'),
-      { kind: 'items', key: 'items', label: 'Tags', itemLabel: 'Tag', min: 1, max: 12, fields: [text('label', 'Tag')] },
+      {
+        kind: 'items',
+        key: 'items',
+        label: 'Tags',
+        itemLabel: 'Tag',
+        min: 1,
+        max: 12,
+        fields: [text('label', 'Tag')],
+      },
       select('shape', 'Shape', [
         ['square', 'Square'],
         ['rounded', 'Rounded'],
@@ -674,7 +862,12 @@ export const BLOCKS: BlockDef[] = [
       heading: 'Standards we stock to',
       size: 'm',
       intro: '',
-      items: [{ label: 'SAE J517' }, { label: 'EN 853' }, { label: 'EN 856' }, { label: 'ISO 18752' }],
+      items: [
+        { label: 'SAE J517' },
+        { label: 'EN 853' },
+        { label: 'EN 856' },
+        { label: 'ISO 18752' },
+      ],
       shape: 'pill',
       chipColor: '',
       chipFill: '',
@@ -693,7 +886,15 @@ export const BLOCKS: BlockDef[] = [
       text('heading', 'Heading'),
       HEADING_SIZE,
       textarea('intro', 'Line under the heading'),
-      { kind: 'items', key: 'items', label: 'Items', itemLabel: 'Item', min: 1, max: 24, fields: [text('text', 'Item')] },
+      {
+        kind: 'items',
+        key: 'items',
+        label: 'Items',
+        itemLabel: 'Item',
+        min: 1,
+        max: 24,
+        fields: [text('text', 'Item')],
+      },
       select('columns', 'Columns', [
         ['1', 'One'],
         ['2', 'Two'],
@@ -712,7 +913,12 @@ export const BLOCKS: BlockDef[] = [
       heading: 'What every order includes',
       size: 'm',
       intro: '',
-      items: [{ text: 'Part matched by an engineer' }, { text: 'Certificate of conformity' }, { text: 'Pressure test report on assemblies' }, { text: 'Delivery across the GCC' }],
+      items: [
+        { text: 'Part matched by an engineer' },
+        { text: 'Certificate of conformity' },
+        { text: 'Pressure test report on assemblies' },
+        { text: 'Delivery across the GCC' },
+      ],
       columns: '2',
       marker: 'check',
       align: 'start',
@@ -884,8 +1090,14 @@ export const BLOCKS: BlockDef[] = [
       text('heading', 'Heading'),
       HEADING_SIZE,
       textarea('text', 'What the offer is'),
-      text('terms', 'Terms', { help: 'Validity and conditions, in one line. Shown small under the offer.', max: 200 }),
-      text('code', 'Quote reference', { help: 'Optional — what a buyer quotes to claim it.', max: 40 }),
+      text('terms', 'Terms', {
+        help: 'Validity and conditions, in one line. Shown small under the offer.',
+        max: 200,
+      }),
+      text('code', 'Quote reference', {
+        help: 'Optional — what a buyer quotes to claim it.',
+        max: 40,
+      }),
       { kind: 'records', key: 'records', label: 'Products in the offer (optional)' },
       ...BUTTON,
       color('borderColor', 'Card border', false),
@@ -900,7 +1112,8 @@ export const BLOCKS: BlockDef[] = [
       heading: 'Hose assemblies, made up and tested the same week',
       size: 'm',
       text: 'Send us your part numbers or a sample and we will quote the assemblies, crimped and pressure-tested in the UAE.',
-      terms: 'Valid on orders placed by the end of the month. Stock and lead times confirmed on the quote.',
+      terms:
+        'Valid on orders placed by the end of the month. Stock and lead times confirmed on the quote.',
       code: '',
       records: null,
       buttonLabel: 'Request a quote',
@@ -918,13 +1131,17 @@ export const BLOCKS: BlockDef[] = [
     type: 'records',
     label: 'Featured from the site',
     category: 'From the site',
-    description: 'Products, brands, categories, articles or industries picked from the site — drawn from the live record when the email is sent.',
+    description:
+      'Products, brands, categories, articles or industries picked from the site — drawn from the live record when the email is sent.',
     fields: [
       text('heading', 'Heading'),
       HEADING_SIZE,
       textarea('intro', 'Line under the heading'),
       { kind: 'records', key: 'records', label: 'What to feature' },
-      text('itemLabel', 'Button on each one', { help: 'Alternating rows only. Blank says “View product”, “Read the case study”…', max: 40 }),
+      text('itemLabel', 'Button on each one', {
+        help: 'Alternating rows only. Blank says “View product”, “Read the case study”…',
+        max: 40,
+      }),
       text('buttonLabel', '“View all” label', { help: 'With tiles, this is the last tile.' }),
       url('buttonUrl', '“View all” link'),
       color('cardBackground', 'Card colour', true),
@@ -1029,12 +1246,21 @@ export const BLOCKS: BlockDef[] = [
     type: 'stripe',
     label: 'Accent stripe',
     category: 'Spacing',
-    description: 'A bold bar of colour between bands, with a thin second line under it if you like.',
+    description:
+      'A bold bar of colour between bands, with a thin second line under it if you like.',
     fields: [
       color('color', 'Bar colour', false),
       { kind: 'number', key: 'height', label: 'Bar height', min: 2, max: 24, step: 1, unit: 'px' },
       color('secondColor', 'Second line colour', true),
-      { kind: 'number', key: 'secondHeight', label: 'Second line height', min: 0, max: 12, step: 1, unit: 'px' },
+      {
+        kind: 'number',
+        key: 'secondHeight',
+        label: 'Second line height',
+        min: 0,
+        max: 12,
+        step: 1,
+        unit: 'px',
+      },
     ],
     defaults: { color: BRAND.accent, height: 8, secondColor: BRAND.steel, secondHeight: 3 },
   },
@@ -1043,7 +1269,11 @@ export const BLOCKS: BlockDef[] = [
     label: 'Divider',
     category: 'Spacing',
     description: 'A thin line across the column.',
-    fields: [color('color', 'Line colour'), { kind: 'number', key: 'width', label: 'Width', min: 10, max: 100, step: 5, unit: '%' }, ...BOX],
+    fields: [
+      color('color', 'Line colour'),
+      { kind: 'number', key: 'width', label: 'Width', min: 10, max: 100, step: 5, unit: '%' },
+      ...BOX,
+    ],
     defaults: { color: '', width: 100, background: '', padding: 's' },
   },
   {
@@ -1051,7 +1281,10 @@ export const BLOCKS: BlockDef[] = [
     label: 'Space',
     category: 'Spacing',
     description: 'Empty space, in a colour if you like.',
-    fields: [{ kind: 'number', key: 'height', label: 'Height', min: 8, max: 120, step: 4, unit: 'px' }, BACKGROUND],
+    fields: [
+      { kind: 'number', key: 'height', label: 'Height', min: 8, max: 120, step: 4, unit: 'px' },
+      BACKGROUND,
+    ],
     defaults: { height: 32, background: '' },
   },
 ]
@@ -1060,7 +1293,11 @@ const BY_TYPE = new Map(BLOCKS.map((b) => [b.type, b]))
 
 // Bazar spelled these with underscores; a design or preset ported from there
 // still resolves rather than being dropped as an unknown block.
-const ALIASES: Record<string, string> = { image_text: 'image-text', key_values: 'key-values', cta_band: 'cta-band' }
+const ALIASES: Record<string, string> = {
+  image_text: 'image-text',
+  key_values: 'key-values',
+  cta_band: 'cta-band',
+}
 
 export function blockDef(type: string): BlockDef | undefined {
   return BY_TYPE.get(ALIASES[type] ?? type)

@@ -38,7 +38,13 @@ const POPUP_BEFORE_FOOTER_PX = 320
  * region, not a dialog. `data-bottom-dock` lets the call-back card lift
  * itself above whichever of the two is showing.
  */
-export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl, emailUrl }: Props) {
+export default function ProductStickyBar({
+  title,
+  sku,
+  datasheetUrl,
+  whatsappUrl,
+  emailUrl,
+}: Props) {
   const [phase, setPhase] = useState<Phase>('hidden')
   // A ref, not state: it only gates the next scroll update, and reading
   // sessionStorage lazily keeps it out of render.
@@ -95,24 +101,36 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
       <section
         data-bottom-dock
         aria-label="Enquire about this part"
-        className="fixed inset-x-3 bottom-3 z-30 rounded-[var(--radius-lg)] border border-ih-border bg-ih-surface p-4 shadow-[0_18px_48px_rgba(20,28,45,0.18)] motion-safe:animate-[ih-pop-in_180ms_ease-out] sm:inset-x-auto sm:right-6 sm:bottom-6 sm:w-[380px] sm:p-5"
+        className="border-ih-border bg-ih-surface fixed inset-x-3 bottom-3 z-30 rounded-[var(--radius-lg)] border p-4 shadow-[0_18px_48px_rgba(20,28,45,0.18)] motion-safe:animate-[ih-pop-in_180ms_ease-out] sm:inset-x-auto sm:right-6 sm:bottom-6 sm:w-[380px] sm:p-5"
       >
         <button
           type="button"
           onClick={dismiss}
           aria-label="Close"
-          className="absolute right-2 top-2 grid h-10 w-10 place-items-center rounded-full text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink"
+          className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink absolute top-2 right-2 grid h-10 w-10 place-items-center rounded-full"
         >
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
         </button>
-        <p className="pr-10 text-[12px] font-semibold uppercase tracking-[0.08em] text-ih-accent">Need a price or lead time?</p>
-        <p className="mt-1.5 pr-8 text-[15px] font-semibold leading-snug tracking-[-0.01em] text-ih-ink">
+        <p className="text-ih-accent pr-10 text-[12px] font-semibold tracking-[0.08em] uppercase">
+          Need a price or lead time?
+        </p>
+        <p className="text-ih-ink mt-1.5 pr-8 text-[15px] leading-snug font-semibold tracking-[-0.01em]">
           Ask about <span className="line-clamp-2">{title}</span>
         </p>
-        <p className="mt-1 text-[12.5px] text-ih-muted">
-          Part <span className="tabular-nums">{sku}</span> · an engineer replies within working hours.
+        <p className="text-ih-muted mt-1 text-[12.5px]">
+          Part <span className="tabular-nums">{sku}</span> · an engineer replies within working
+          hours.
         </p>
         <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
           {whatsappUrl ? (
@@ -128,7 +146,7 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
           ) : null}
           <a
             href={emailUrl}
-            className={`inline-flex h-11 items-center justify-center gap-2 rounded-[var(--radius-md)] border border-ih-ink bg-ih-surface px-4 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2 ${
+            className={`border-ih-ink bg-ih-surface text-ih-ink hover:bg-ih-surface-2 inline-flex h-11 items-center justify-center gap-2 rounded-[var(--radius-md)] border px-4 text-[14px] font-medium transition-colors ${
               whatsappUrl ? '' : 'sm:col-span-2'
             }`}
           >
@@ -143,12 +161,14 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
   return (
     <div
       data-bottom-dock
-      className="fixed bottom-0 left-0 right-0 z-30 border-t border-ih-border bg-ih-surface shadow-[0_-4px_20px_-8px_rgba(17,20,24,0.1)]"
+      className="border-ih-border bg-ih-surface fixed right-0 bottom-0 left-0 z-30 border-t shadow-[0_-4px_20px_-8px_rgba(17,20,24,0.1)]"
     >
       <div className="mx-auto flex max-w-[1440px] items-center gap-3 px-5 py-2.5 sm:gap-4 sm:px-8 sm:py-3 xl:px-12">
         <div className="flex min-w-0 flex-1 items-center gap-3">
           <b className="truncate text-[13.5px] font-semibold sm:text-[14px]">{title}</b>
-          <span className="hidden shrink-0 text-[12px] tabular-nums text-ih-muted sm:inline">{sku}</span>
+          <span className="text-ih-muted hidden shrink-0 text-[12px] tabular-nums sm:inline">
+            {sku}
+          </span>
         </div>
         <div className="flex shrink-0 gap-2">
           {datasheetUrl && (
@@ -156,7 +176,7 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
               href={datasheetUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden h-10 items-center rounded-[var(--radius-md)] border border-ih-border px-4 text-[13px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 md:flex"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 hidden h-10 items-center rounded-[var(--radius-md)] border px-4 text-[13px] transition-colors md:flex"
             >
               ↓ Datasheet
             </a>
@@ -164,7 +184,7 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
           <a
             href={emailUrl}
             aria-label="Enquire by email"
-            className="flex h-10 items-center gap-2 rounded-[var(--radius-md)] border border-ih-ink bg-ih-surface px-3 text-[13px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2 sm:px-4"
+            className="border-ih-ink bg-ih-surface text-ih-ink hover:bg-ih-surface-2 flex h-10 items-center gap-2 rounded-[var(--radius-md)] border px-3 text-[13px] font-medium transition-colors sm:px-4"
           >
             <MailGlyph />
             <span className="hidden sm:inline">Enquire</span>
@@ -197,7 +217,17 @@ function WhatsAppGlyph() {
 
 function MailGlyph() {
   return (
-    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      width="17"
+      height="17"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <rect x="3" y="5" width="18" height="14" rx="2" />
       <path d="m3.5 6.5 8.5 6 8.5-6" />
     </svg>

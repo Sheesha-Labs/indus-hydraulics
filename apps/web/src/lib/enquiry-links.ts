@@ -20,7 +20,7 @@ import { enquiryBody, enquiryMailto } from '@indus/domain'
  */
 export function whatsappHref(
   phone: string | null,
-  product: { title: string; url?: string | null } | string,
+  product: { title: string; url?: string | null } | string
 ): string | null {
   if (!phone) return null
   const digits = phone.replace(/\D/g, '')

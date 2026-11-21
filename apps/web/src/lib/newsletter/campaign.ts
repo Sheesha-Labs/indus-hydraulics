@@ -2,8 +2,21 @@ import sanitizeHtml from 'sanitize-html'
 import { z } from 'zod'
 import { BRAND, BRAND_FONT } from '@indus/domain'
 
-import { isUsableLink, linkSlots, normaliseDesign, placeholderIn, recordRefs } from './blocks/document'
-import { recordKey, renderDesign, renderShell, type DesignRenderContext, type RenderedDesign, type ResolvedRecord } from './blocks/render'
+import {
+  isUsableLink,
+  linkSlots,
+  normaliseDesign,
+  placeholderIn,
+  recordRefs,
+} from './blocks/document'
+import {
+  recordKey,
+  renderDesign,
+  renderShell,
+  type DesignRenderContext,
+  type RenderedDesign,
+  type ResolvedRecord,
+} from './blocks/render'
 
 /**
  * A newsletter campaign: what a draft must have before it can go, and how it
@@ -47,7 +60,9 @@ export const campaignDraftSchema = z.object({
   design: z.unknown().nullable(),
   bodyHtml: z.string().max(200_000, 'The newsletter is too long.'),
   audience: z.enum(AUDIENCES),
-  listIds: z.array(z.string().uuid()).max(MAX_CAMPAIGN_LISTS, `Pick at most ${MAX_CAMPAIGN_LISTS} lists.`),
+  listIds: z
+    .array(z.string().uuid())
+    .max(MAX_CAMPAIGN_LISTS, `Pick at most ${MAX_CAMPAIGN_LISTS} lists.`),
 })
 export type CampaignDraft = z.infer<typeof campaignDraftSchema>
 
@@ -64,15 +79,37 @@ const H = (size: number) =>
  * or site-relative; images only https.
  */
 export function sanitiseEmailHtml(html: string, siteUrl: string): string {
-  const abs = (url: string) => (url.startsWith('/') && !url.startsWith('//') ? `${siteUrl}${url}` : url)
+  const abs = (url: string) =>
+    url.startsWith('/') && !url.startsWith('//') ? `${siteUrl}${url}` : url
   return sanitizeHtml(html, {
-    allowedTags: ['p', 'br', 'strong', 'b', 'em', 'i', 'u', 's', 'a', 'h2', 'h3', 'h4', 'ul', 'ol', 'li', 'blockquote', 'hr', 'img'],
+    allowedTags: [
+      'p',
+      'br',
+      'strong',
+      'b',
+      'em',
+      'i',
+      'u',
+      's',
+      'a',
+      'h2',
+      'h3',
+      'h4',
+      'ul',
+      'ol',
+      'li',
+      'blockquote',
+      'hr',
+      'img',
+    ],
     // `style` only on tags transformTags rewrites: their attributes are
     // replaced wholesale, so a pasted style never survives — only ours.
     allowedAttributes: {
       a: ['href', 'style'],
       img: ['src', 'alt', 'width', 'height', 'style'],
-      ...Object.fromEntries(['p', 'h2', 'h3', 'h4', 'ul', 'ol', 'li', 'blockquote', 'hr'].map((t) => [t, ['style']])),
+      ...Object.fromEntries(
+        ['p', 'h2', 'h3', 'h4', 'ul', 'ol', 'li', 'blockquote', 'hr'].map((t) => [t, ['style']])
+      ),
     },
     allowedSchemes: ['http', 'https', 'mailto', 'tel'],
     allowedSchemesByTag: { img: ['https'] },
@@ -87,12 +124,20 @@ export function sanitiseEmailHtml(html: string, siteUrl: string): string {
       li: () => ({ tagName: 'li', attribs: { style: 'margin:0 0 6px 0;' } }),
       blockquote: () => ({
         tagName: 'blockquote',
-        attribs: { style: `margin:0 0 16px 0;padding:4px 0 4px 16px;border-left:3px solid ${BRAND.accent};color:${BRAND.ink};` },
+        attribs: {
+          style: `margin:0 0 16px 0;padding:4px 0 4px 16px;border-left:3px solid ${BRAND.accent};color:${BRAND.ink};`,
+        },
       }),
-      hr: () => ({ tagName: 'hr', attribs: { style: `border:0;border-top:1px solid ${BRAND.border};margin:24px 0;` } }),
+      hr: () => ({
+        tagName: 'hr',
+        attribs: { style: `border:0;border-top:1px solid ${BRAND.border};margin:24px 0;` },
+      }),
       a: (_tag, attribs) => ({
         tagName: 'a',
-        attribs: { href: abs(attribs.href ?? ''), style: `color:${BRAND.accent};text-decoration:underline;` },
+        attribs: {
+          href: abs(attribs.href ?? ''),
+          style: `color:${BRAND.accent};text-decoration:underline;`,
+        },
       }),
       img: (_tag, attribs) => ({
         tagName: 'img',
@@ -111,10 +156,13 @@ export function sanitiseEmailHtml(html: string, siteUrl: string): string {
 /** Plain text from email HTML: block ends become line breaks, links keep their URL. */
 export function htmlToText(html: string): string {
   return html
-    .replace(/<a\b[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_m, href: string, label: string) => {
-      const text = label.replace(/<[^>]+>/g, '').trim()
-      return text && text !== href ? `${text} (${href})` : href
-    })
+    .replace(
+      /<a\b[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi,
+      (_m, href: string, label: string) => {
+        const text = label.replace(/<[^>]+>/g, '').trim()
+        return text && text !== href ? `${text} (${href})` : href
+      }
+    )
     .replace(/<li\b[^>]*>/gi, '- ')
     .replace(/<(br|hr)\b[^>]*>/gi, '\n')
     .replace(/<\/(p|h[1-6]|li|blockquote|ul|ol)>/gi, '\n\n')
@@ -133,7 +181,13 @@ export function htmlToText(html: string): string {
 /** True when the rich body shows a reader nothing: no text, no picture. */
 export function isBlankBody(html: string | null | undefined): boolean {
   if (!html) return true
-  return html.replace(/<img\b[^>]*>/gi, 'x').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim() === ''
+  return (
+    html
+      .replace(/<img\b[^>]*>/gi, 'x')
+      .replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;/g, ' ')
+      .trim() === ''
+  )
 }
 
 /** Every href in rich HTML, for the link check. */
@@ -158,7 +212,8 @@ export function campaignProblems(c: CampaignDraft, ctx: GateContext): Record<str
   const problems: Record<string, string> = {}
   if (!c.subject.trim()) problems.subject = 'Write a subject.'
   else if (placeholderIn(c.subject)) problems.subject = 'The subject still has template text in it.'
-  if (placeholderIn(c.preheader)) problems.preheader = 'The preview text still has template text in it.'
+  if (placeholderIn(c.preheader))
+    problems.preheader = 'The preview text still has template text in it.'
 
   if (c.format === 'blocks') {
     const design = normaliseDesign(c.design)
@@ -166,7 +221,8 @@ export function campaignProblems(c: CampaignDraft, ctx: GateContext): Record<str
     else {
       const text = JSON.stringify(design.blocks.map((b) => b.props))
       const badLink = linkSlots(design).find((l) => l.value && !isUsableLink(l.value))
-      if (placeholderIn(text)) problems.body = 'Replace the template text the starter left in the blocks.'
+      if (placeholderIn(text))
+        problems.body = 'Replace the template text the starter left in the blocks.'
       else if (badLink) {
         problems.body = `${badLink.blockLabel} › ${badLink.label} is not a link an email can follow. Use https://…, a page on the site (/contact), mailto: or tel:.`
       } else if (ctx.missingRecords > 0) {
@@ -175,21 +231,27 @@ export function campaignProblems(c: CampaignDraft, ctx: GateContext): Record<str
     }
   } else {
     if (isBlankBody(c.bodyHtml)) problems.body = 'Write the newsletter.'
-    else if (placeholderIn(htmlToText(c.bodyHtml))) problems.body = 'Replace the template text the starter left in.'
+    else if (placeholderIn(htmlToText(c.bodyHtml)))
+      problems.body = 'Replace the template text the starter left in.'
     else {
       const bad = richLinks(c.bodyHtml).find((h) => !isUsableLink(h))
       if (bad) problems.body = `“${bad.slice(0, 60)}” is not a link an email can follow.`
     }
   }
 
-  if (c.audience === 'none' && c.listIds.length === 0) problems.audience = 'Pick who receives it: the subscribers, a list, or both.'
-  else if (ctx.listsFound < c.listIds.length) problems.audience = 'A list chosen for this newsletter has been deleted. Remove it.'
+  if (c.audience === 'none' && c.listIds.length === 0)
+    problems.audience = 'Pick who receives it: the subscribers, a list, or both.'
+  else if (ctx.listsFound < c.listIds.length)
+    problems.audience = 'A list chosen for this newsletter has been deleted. Remove it.'
   return problems
 }
 
 // ── Rendering ──────────────────────────────────────────────────────────
 
-export type CampaignContent = Pick<CampaignDraft, 'subject' | 'preheader' | 'format' | 'design' | 'bodyHtml'>
+export type CampaignContent = Pick<
+  CampaignDraft,
+  'subject' | 'preheader' | 'format' | 'design' | 'bodyHtml'
+>
 
 export type RecipientKind = 'subscriber' | 'list'
 
@@ -200,7 +262,10 @@ export function footerReason(kind: RecipientKind): string {
     : 'You are receiving this because you are on an Indus Hydraulics mailing list.'
 }
 
-export type CampaignRenderOptions = Omit<DesignRenderContext, 'subject' | 'preheader' | 'footerReason'> & {
+export type CampaignRenderOptions = Omit<
+  DesignRenderContext,
+  'subject' | 'preheader' | 'footerReason'
+> & {
   recipient: RecipientKind
   /** `[Test] ` for a test send. */
   subjectPrefix?: string
@@ -212,12 +277,21 @@ export function campaignRecordRefs(c: Pick<CampaignContent, 'format' | 'design'>
 }
 
 /** How many named records the map does not have. */
-export function countMissingRecords(c: Pick<CampaignContent, 'format' | 'design'>, records: Map<string, ResolvedRecord>): number {
-  return campaignRecordRefs(c).reduce((n, r) => n + r.ids.filter((id) => !records.has(recordKey(r.kind, id))).length, 0)
+export function countMissingRecords(
+  c: Pick<CampaignContent, 'format' | 'design'>,
+  records: Map<string, ResolvedRecord>
+): number {
+  return campaignRecordRefs(c).reduce(
+    (n, r) => n + r.ids.filter((id) => !records.has(recordKey(r.kind, id))).length,
+    0
+  )
 }
 
 /** A campaign as one email: subject, HTML and text, with the legal footer and unsubscribe link. */
-export function renderCampaign(c: CampaignContent, opts: CampaignRenderOptions): { subject: string } & RenderedDesign {
+export function renderCampaign(
+  c: CampaignContent,
+  opts: CampaignRenderOptions
+): { subject: string } & RenderedDesign {
   const subject = `${opts.subjectPrefix ?? ''}${c.subject.trim()}`
   const ctx: DesignRenderContext = {
     siteUrl: opts.siteUrl,

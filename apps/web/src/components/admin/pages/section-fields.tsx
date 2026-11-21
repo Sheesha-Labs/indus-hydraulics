@@ -31,7 +31,7 @@ import { MediaBrowserDialog } from '../MediaBrowserDialog'
 const RichTextEditor = dynamic(() => import('../rich-text/RichTextEditor'), {
   ssr: false,
   loading: () => (
-    <div className="h-[280px] animate-pulse rounded-lg border border-ih-border bg-ih-surface-2" />
+    <div className="border-ih-border bg-ih-surface-2 h-[280px] animate-pulse rounded-lg border" />
   ),
 })
 
@@ -53,9 +53,9 @@ export function FieldLabel({
 }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
-      <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
-      {count ? <span className="tabular-nums text-[10.5px] text-ih-muted-2">{count}</span> : null}
-      {help && !count ? <span className="text-[10.5px] text-ih-muted-2">{help}</span> : null}
+      <span className="text-ih-ink-2 text-[12px] font-medium">{label}</span>
+      {count ? <span className="text-ih-muted-2 text-[10.5px] tabular-nums">{count}</span> : null}
+      {help && !count ? <span className="text-ih-muted-2 text-[10.5px]">{help}</span> : null}
     </div>
   )
 }
@@ -78,7 +78,7 @@ export function FieldEditor({
       <div className="flex flex-col gap-2">
         <FieldLabel label={field.label} help={field.help} count={`${items.length}/${field.max}`} />
         {items.length === 0 ? (
-          <p className="text-[11.5px] text-ih-muted">
+          <p className="text-ih-muted text-[11.5px]">
             Empty — the section keeps the list it ships with. Add one to take the whole list over.
           </p>
         ) : null}
@@ -86,10 +86,10 @@ export function FieldEditor({
           {items.map((item, i) => (
             <li
               key={i}
-              className="flex flex-col gap-2.5 rounded-md border border-ih-border bg-ih-surface-2 p-3"
+              className="border-ih-border bg-ih-surface-2 flex flex-col gap-2.5 rounded-md border p-3"
             >
               <div className="flex items-center justify-between">
-                <span className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+                <span className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
                   {field.itemLabel} {i + 1}
                 </span>
                 <div className="flex items-center gap-1">
@@ -155,14 +155,7 @@ export function FieldEditor({
     )
   }
 
-  return (
-    <ScalarField
-      field={field}
-      value={value as ItemValue}
-      onChange={onChange}
-      seeds={seeds}
-    />
-  )
+  return <ScalarField field={field} value={value as ItemValue} onChange={onChange} seeds={seeds} />
 }
 
 function swap<T>(items: T[], a: number, b: number): T[] {
@@ -195,12 +188,12 @@ function ScalarField({
   if (isToggleField(field)) {
     const on = value !== false
     return (
-      <label className="flex cursor-pointer select-none items-center gap-2 text-[12.5px]">
+      <label className="flex cursor-pointer items-center gap-2 text-[12.5px] select-none">
         <input
           type="checkbox"
           checked={on}
           onChange={(e) => onChange(e.target.checked)}
-          className="h-3.5 w-3.5 accent-ih-accent"
+          className="accent-ih-accent h-3.5 w-3.5"
         />
         <span className={cn(!on && 'text-ih-muted')}>
           {on ? field.label : `${field.label} — hidden`}
@@ -214,7 +207,9 @@ function ScalarField({
     // or the other, never both.
     const options: SeedItem[] = field.options
       ? field.options.map((o) => ({ slug: o.value, name: o.label }))
-      : (field.optionsKey ? (seeds[field.optionsKey] ?? []) : [])
+      : field.optionsKey
+        ? (seeds[field.optionsKey] ?? [])
+        : []
     const picked = typeof value === 'string' ? value : ''
     const missing = picked !== '' && !options.some((o) => o.slug === picked)
     return (
@@ -236,7 +231,7 @@ function ScalarField({
           ))}
         </select>
         {missing ? (
-          <span className="text-[11px] text-ih-danger-ink">
+          <span className="text-ih-danger-ink text-[11px]">
             This record isn&apos;t published any more — it won&apos;t appear on the page.
           </span>
         ) : null}
@@ -268,7 +263,9 @@ function ScalarField({
         help={simple.help}
         // The prose editor keeps its own counter in its footer, and counting
         // HTML source characters against a prose limit would read as nonsense.
-        count={simple.max && simple.kind !== 'richtext' ? `${textValue.length}/${simple.max}` : undefined}
+        count={
+          simple.max && simple.kind !== 'richtext' ? `${textValue.length}/${simple.max}` : undefined
+        }
       />
       {simple.kind === 'richtext' ? (
         <RichTextEditor
@@ -293,7 +290,7 @@ function ScalarField({
         />
       )}
       {simple.help && simple.max ? (
-        <span className="text-[10.5px] text-ih-muted-2">{simple.help}</span>
+        <span className="text-ih-muted-2 text-[10.5px]">{simple.help}</span>
       ) : null}
     </div>
   )
@@ -347,7 +344,7 @@ export function ImageField({
     <div className="flex flex-col gap-1.5">
       <FieldLabel label={label} help={help} />
       <div className="flex items-start gap-3">
-        <div className="relative h-16 w-24 shrink-0 overflow-hidden rounded-md border border-ih-border bg-ih-surface-2">
+        <div className="border-ih-border bg-ih-surface-2 relative h-16 w-24 shrink-0 overflow-hidden rounded-md border">
           {thumb ? (
             // The library stores absolute R2 URLs for some rows and keys for
             // others, and `next/image` needs a configured host for each — so
@@ -359,7 +356,7 @@ export function ImageField({
               className="h-full w-full object-cover"
             />
           ) : (
-            <span className="absolute inset-0 grid place-items-center text-ih-muted-2">
+            <span className="text-ih-muted-2 absolute inset-0 grid place-items-center">
               <ImageOff size={16} strokeWidth={1.6} aria-hidden="true" />
             </span>
           )}
@@ -380,7 +377,7 @@ export function ImageField({
               </Button>
             ) : null}
             {picked ? (
-              <span className="truncate tabular-nums text-[11px] text-ih-muted">
+              <span className="text-ih-muted truncate text-[11px] tabular-nums">
                 {picked.originalFilename}
               </span>
             ) : null}

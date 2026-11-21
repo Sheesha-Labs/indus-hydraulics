@@ -44,7 +44,7 @@ import { expect, test } from '@playwright/test'
  * so the two cannot disagree about what is being tested.
  */
 const EDGE_HOSTED = !(process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:3000').includes(
-  'localhost',
+  'localhost'
 )
 
 const EDGE_SKIP_REASON =
@@ -142,7 +142,9 @@ test.describe('homepage geo headline', () => {
     expect(response.headers()['cache-control'] ?? '').not.toContain('no-store')
   })
 
-  test('caches each country separately, so one country is not served to all', async ({ request }) => {
+  test('caches each country separately, so one country is not served to all', async ({
+    request,
+  }) => {
     // What the `no-store` assertion used to protect, protected differently.
     // Caching per country is only safe because each one is cached on its own
     // path; if the rewrite collapsed them onto one entry, whichever country
@@ -188,7 +190,9 @@ test.describe('homepage geo headline', () => {
 })
 
 test.describe('homepage rotating term', () => {
-  test('server-renders the lead term, so a crawler reads a complete heading', async ({ request }) => {
+  test('server-renders the lead term, so a crawler reads a complete heading', async ({
+    request,
+  }) => {
     // Fetched without a browser: this is the HTML before any JavaScript runs,
     // which is what Googlebot indexes. An empty slot here would mean shipping
     // a homepage whose <h1> names no product at all.
@@ -201,7 +205,12 @@ test.describe('homepage rotating term', () => {
     const html = await (await request.get('/')).text()
     const inHeading = html.slice(html.indexOf('<h1'), html.indexOf('</h1>'))
     expect(inHeading).toContain('hydraulic hoses')
-    for (const other of ['hydraulic adapters', 'industrial hoses', 'oil &amp; gas hoses', 'Molykote lubricants']) {
+    for (const other of [
+      'hydraulic adapters',
+      'industrial hoses',
+      'oil &amp; gas hoses',
+      'Molykote lubricants',
+    ]) {
       expect(inHeading, `${other} should not be in the <h1>`).not.toContain(other)
     }
   })

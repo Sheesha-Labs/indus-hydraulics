@@ -26,7 +26,7 @@ describe('slugify', () => {
 describe('slugifyLastPathSegment', () => {
   it('takes the last segment of a normal path', () => {
     expect(slugifyLastPathSegment('https://competitor.com/products/a10vso-axial-pump')).toBe(
-      'a10vso-axial-pump',
+      'a10vso-axial-pump'
     )
   })
   it('ignores trailing slash', () => {

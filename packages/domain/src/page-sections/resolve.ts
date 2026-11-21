@@ -37,7 +37,7 @@ import {
  */
 export function resolveSections(
   def: MasterPageDef,
-  stored: StoredSection[] | null,
+  stored: StoredSection[] | null
 ): ResolvedSection[] {
   const byKey = new Map((stored ?? []).map((s) => [s.key, s]))
   const ordered: SectionDef[] = []
@@ -148,7 +148,7 @@ export function list<T = Record<string, ItemValue>>(values: SectionValues, key: 
  */
 export function visibleList<T>(values: SectionValues, key: string): T[] {
   return list<T>(values, key).filter(
-    (item) => (item as { enabled?: ItemValue } | null)?.enabled !== false,
+    (item) => (item as { enabled?: ItemValue } | null)?.enabled !== false
   )
 }
 
@@ -174,8 +174,7 @@ export function lines(value: unknown): string[] {
 export type ValidationIssue = { section: string; field: string; message: string }
 
 export type ValidateResult =
-  | { ok: true; sections: StoredSection[] }
-  | { ok: false; issues: ValidationIssue[] }
+  { ok: true; sections: StoredSection[] } | { ok: false; issues: ValidationIssue[] }
 
 /**
  * Validate + normalise an incoming document against the registry.
@@ -185,10 +184,7 @@ export type ValidateResult =
  * the field definitions rather than hand-written per section, so the registry
  * stays the single source of truth.
  */
-export function validateSections(
-  def: MasterPageDef,
-  incoming: StoredSection[],
-): ValidateResult {
+export function validateSections(def: MasterPageDef, incoming: StoredSection[]): ValidateResult {
   const issues: ValidationIssue[] = []
   const seen = new Set<string>()
   const sections: StoredSection[] = []
@@ -217,7 +213,7 @@ export function validateSections(
               sub,
               (item as Record<string, unknown>)?.[sub.key],
               sectionDef.label,
-              issues,
+              issues
             )
           }
           return out
@@ -250,7 +246,7 @@ function normaliseScalar(
   field: Exclude<FieldDef, { kind: 'list' }>,
   value: unknown,
   sectionLabel: string,
-  issues: ValidationIssue[],
+  issues: ValidationIssue[]
 ): ItemValue {
   if (isToggleField(field)) {
     // Anything but an explicit false reads as on, so a card added by an older
@@ -357,7 +353,7 @@ export function collectMediaIds(sections: ResolvedSection[]): string[] {
  */
 export function attachMedia(
   sections: ResolvedSection[],
-  lookup: (id: string) => { url: string; width: number | null; height: number | null } | null,
+  lookup: (id: string) => { url: string; width: number | null; height: number | null } | null
 ): void {
   const walk = (value: unknown): void => {
     if (!value || typeof value !== 'object') return

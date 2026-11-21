@@ -64,7 +64,7 @@ async function main() {
     totalChanged += changed
     console.log(
       `${dryRun ? '[dry-run] ' : ''}${t.name.padEnd(11)} ${String(changed).padStart(5)} ` +
-        `of ${String(rows.length).padStart(5)} matched rows rewritten`,
+        `of ${String(rows.length).padStart(5)} matched rows rewritten`
     )
   }
 

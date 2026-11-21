@@ -31,10 +31,13 @@ export default async function IndustriesPage({ params }: Props) {
   return (
     <AdminPageShell
       title={'Industries'}
-      sub={<>{industries.length} {industries.length === 1 ? 'industry' : 'industries'}</>}
+      sub={
+        <>
+          {industries.length} {industries.length === 1 ? 'industry' : 'industries'}
+        </>
+      }
     >
       <IndustriesClient industries={industries} />
-    
     </AdminPageShell>
   )
 }

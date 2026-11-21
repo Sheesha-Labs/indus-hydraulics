@@ -89,7 +89,7 @@ const BLANK = 'Blank keeps the built-in wording.'
 const override = (
   key: string,
   label: string,
-  extra: Partial<SimpleFieldDef> = {},
+  extra: Partial<SimpleFieldDef> = {}
 ): SimpleFieldDef => text(key, label, { max: 200, optional: true, help: BLANK, ...extra })
 
 const overrideBody = (key: string, label: string): SimpleFieldDef =>
@@ -123,7 +123,7 @@ const marketList = (
   itemLabel: string,
   max: number,
   help: string,
-  fields: ListFieldDef['fields'],
+  fields: ListFieldDef['fields']
 ): ListFieldDef => ({ key, label, kind: 'list', itemLabel, max, help, fields })
 
 /** The six sector slugs a market card can link to — each is an `Industry.slug`. */
@@ -148,10 +148,14 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
       overrideEyebrow('eyebrow', 'Eyebrow'),
       override('heading', 'Headline'),
       overrideBody('lede', 'Lede'),
-      marketList('facts', 'The four facts', 'fact', 4, 'Exactly four rows — Typical transit, Freight, Incoterms 2020, Documentation — or the record\u2019s four render.', [
-        text('label', 'Label', { max: 40 }),
-        text('value', 'Value', { max: 300 }),
-      ]),
+      marketList(
+        'facts',
+        'The four facts',
+        'fact',
+        4,
+        'Exactly four rows — Typical transit, Freight, Incoterms 2020, Documentation — or the record\u2019s four render.',
+        [text('label', 'Label', { max: 40 }), text('value', 'Value', { max: 300 })]
+      ),
       override('primary_cta_label', 'Quote button label', { max: 60 }),
       override('whatsapp_cta_label', 'WhatsApp button label', { max: 60 }),
       override('meta_title', 'Meta title', { max: 70 }),
@@ -177,10 +181,14 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     description: 'The navy band of six facts under the hero.',
     dataNote: 'Blank keeps the six pairs in the market record.',
     fields: [
-      marketList('items', 'Six facts', 'fact', 6, 'Exactly six rows, or the record\u2019s six render.', [
-        text('label', 'Label', { max: 40 }),
-        text('value', 'Value', { max: 80 }),
-      ]),
+      marketList(
+        'items',
+        'Six facts',
+        'fact',
+        6,
+        'Exactly six rows, or the record\u2019s six render.',
+        [text('label', 'Label', { max: 40 }), text('value', 'Value', { max: 80 })]
+      ),
     ],
     defaults: {},
   },
@@ -188,19 +196,19 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     'operations',
     'Operations band',
     'The four captioned photographs of the Dubai facility.',
-    'The captions are shared by every market; only the fourth names the destination.',
+    'The captions are shared by every market; only the fourth names the destination.'
   ),
   structural(
     'catalogue',
     'Catalogue index',
     'What we supply, by cluster.',
-    'The clusters are the live catalogue.',
+    'The clusters are the live catalogue.'
   ),
   structural(
     'quote_form',
     'Quote form (mid page)',
     'The lead form in the middle of the page.',
-    'Its fields, currency and delivery cities come from the market record. Switching it off moves the hero button to the closing form.',
+    'Its fields, currency and delivery cities come from the market record. Switching it off moves the hero button to the closing form.'
   ),
   {
     key: 'standards',
@@ -224,12 +232,19 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     fields: [
       overrideEyebrow('eyebrow', 'Left eyebrow'),
       override('heading', 'Left heading'),
-      marketList('modes', 'Freight modes', 'mode', 3, 'Exactly three, fastest realistic first, or the record\u2019s three render.', [
-        text('name', 'Mode', { max: 60 }),
-        text('transit', 'Transit', { max: 30 }),
-        text('route', 'Route', { max: 120 }),
-        text('useCase', 'Use case', { max: 200 }),
-      ]),
+      marketList(
+        'modes',
+        'Freight modes',
+        'mode',
+        3,
+        'Exactly three, fastest realistic first, or the record\u2019s three render.',
+        [
+          text('name', 'Mode', { max: 60 }),
+          text('transit', 'Transit', { max: 30 }),
+          text('route', 'Route', { max: 120 }),
+          text('useCase', 'Use case', { max: 200 }),
+        ]
+      ),
       overrideEyebrow('sequence_eyebrow', 'Right eyebrow'),
       override('sequence_heading', 'Right heading'),
       override('order_step_3', 'Order step 3', { max: 300 }),
@@ -248,13 +263,21 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     key: 'sectors',
     label: 'Industries and brands',
     description: 'The six sectors this market buys for, and the brands we stock.',
-    dataNote: 'Blank keeps the six sectors in the market record; the brands are the live catalogue.',
+    dataNote:
+      'Blank keeps the six sectors in the market record; the brands are the live catalogue.',
     fields: [
-      marketList('items', 'Six sectors', 'sector', 6, 'Exactly six, most relevant to this market first, each a different industry — or the record\u2019s six render.', [
-        choice('slug', 'Industry', MARKET_SECTOR_OPTIONS),
-        text('name', 'Name', { max: 40 }),
-        text('description', 'What it buys here', { max: 400 }),
-      ]),
+      marketList(
+        'items',
+        'Six sectors',
+        'sector',
+        6,
+        'Exactly six, most relevant to this market first, each a different industry — or the record\u2019s six render.',
+        [
+          choice('slug', 'Industry', MARKET_SECTOR_OPTIONS),
+          text('name', 'Name', { max: 40 }),
+          text('description', 'What it buys here', { max: 400 }),
+        ]
+      ),
     ],
     defaults: {},
   },
@@ -326,7 +349,7 @@ export const BRAND_SECTIONS: readonly SectionDef[] = [
     'stats',
     'Figures strip',
     'Lead time, largest install, partner-since.',
-    'Each cell renders only when the brand record carries that figure, so a brand with none shows no strip at all.',
+    'Each cell renders only when the brand record carries that figure, so a brand with none shows no strip at all.'
   ),
   {
     key: 'series',
@@ -348,7 +371,7 @@ export const BRAND_SECTIONS: readonly SectionDef[] = [
     'case_studies',
     'Case studies',
     'The curated installs for this brand.',
-    'The cases come from the brand record. The band hides itself when a brand has none.',
+    'The cases come from the brand record. The band hides itself when a brand has none.'
   ),
   {
     key: 'resources',
@@ -411,7 +434,7 @@ export const CATEGORY_SECTIONS: readonly SectionDef[] = [
     'children',
     'Sub-category chips',
     'The row of links to the shelves beneath this one.',
-    'The chips are this category’s published children.',
+    'The chips are this category’s published children.'
   ),
   {
     key: 'guidance',
@@ -442,7 +465,7 @@ export const CATEGORY_SECTIONS: readonly SectionDef[] = [
     'sizes',
     'Size range',
     'The bore and thread range covered by the size tables on this shelf.',
-    'Read live from the product size tables. The band hides itself where no product on the shelf has one.',
+    'Read live from the product size tables. The band hides itself where no product on the shelf has one.'
   ),
   {
     key: 'service',
@@ -484,18 +507,14 @@ export const CATEGORY_SECTIONS: readonly SectionDef[] = [
     description: 'Questions buyers ask about this range.',
     dataNote:
       'Published to Google as FAQ structured data, so the markup follows this section being switched on or off. Write real questions; an empty list hides the band.',
-    fields: [
-      overrideEyebrow('eyebrow', 'Eyebrow'),
-      override('heading', 'Heading'),
-      faqList(8),
-    ],
+    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading'), faqList(8)],
     defaults: { eyebrow: null, heading: null, items: [] },
   },
   structural(
     'reading',
     'Written about this range',
     'Links to the articles that cover this shelf.',
-    'The articles are chosen by the blog’s own linking. The band hides itself when there are none.',
+    'The articles are chosen by the blog’s own linking. The band hides itself when there are none.'
   ),
 ]
 
@@ -535,7 +554,7 @@ export function marketPageDef(record: { name: string; slug: string }): MasterPag
 /** Definition for a sub-page of any kind. */
 export function subPageDef(
   kind: SubPageKind,
-  record: { name: string; slug: string },
+  record: { name: string; slug: string }
 ): MasterPageDef {
   switch (kind) {
     case 'market':

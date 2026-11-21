@@ -98,7 +98,7 @@ describe('validateRequiredFields', () => {
       [
         { id: 'f1', label: 'Pressure', isRequired: true },
         { id: 'f2', label: 'Unit', isRequired: false },
-      ],
+      ]
     )
     expect(result.ok).toBe(true)
   })
@@ -114,7 +114,7 @@ describe('validateRequiredFields', () => {
         { id: 'f1', label: 'Pressure', isRequired: true },
         { id: 'f2', label: 'Bore diameter', isRequired: true },
         { id: 'f3', label: 'Optional thing', isRequired: false },
-      ],
+      ]
     )
     expect(result.ok).toBe(false)
     if (!result.ok) {
@@ -125,7 +125,7 @@ describe('validateRequiredFields', () => {
   it('ignores updates whose fieldId is unknown (defensive)', () => {
     const result = validateRequiredFields(
       [{ fieldId: 'unknown', value: '' }],
-      [{ id: 'f1', label: 'X', isRequired: true }],
+      [{ id: 'f1', label: 'X', isRequired: true }]
     )
     expect(result.ok).toBe(true)
   })
@@ -133,7 +133,7 @@ describe('validateRequiredFields', () => {
   it('does NOT flag a non-required field that is empty', () => {
     const result = validateRequiredFields(
       [{ fieldId: 'f1', value: '' }],
-      [{ id: 'f1', label: 'X', isRequired: false }],
+      [{ id: 'f1', label: 'X', isRequired: false }]
     )
     expect(result.ok).toBe(true)
   })

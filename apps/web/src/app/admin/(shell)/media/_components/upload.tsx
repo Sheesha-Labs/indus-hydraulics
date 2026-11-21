@@ -48,9 +48,27 @@ interface QueueItem {
  * tracks on a 200px bar.
  */
 const WIDTHS = [
-  'w-0', 'w-[5%]', 'w-[10%]', 'w-[15%]', 'w-[20%]', 'w-[25%]', 'w-[30%]', 'w-[35%]',
-  'w-[40%]', 'w-[45%]', 'w-[50%]', 'w-[55%]', 'w-[60%]', 'w-[65%]', 'w-[70%]', 'w-[75%]',
-  'w-[80%]', 'w-[85%]', 'w-[90%]', 'w-[95%]', 'w-full',
+  'w-0',
+  'w-[5%]',
+  'w-[10%]',
+  'w-[15%]',
+  'w-[20%]',
+  'w-[25%]',
+  'w-[30%]',
+  'w-[35%]',
+  'w-[40%]',
+  'w-[45%]',
+  'w-[50%]',
+  'w-[55%]',
+  'w-[60%]',
+  'w-[65%]',
+  'w-[70%]',
+  'w-[75%]',
+  'w-[80%]',
+  'w-[85%]',
+  'w-[90%]',
+  'w-[95%]',
+  'w-full',
 ] as const
 
 function widthClass(fraction: number): string {
@@ -186,17 +204,17 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
         )}
       >
         <UploadCloud size={20} strokeWidth={1.6} aria-hidden="true" className="text-ih-muted" />
-        <p className="text-[13px] text-ih-ink-2">
+        <p className="text-ih-ink-2 text-[13px]">
           Drag files here, or{' '}
           <button
             type="button"
             onClick={() => inputRef.current?.click()}
-            className="text-ih-accent underline underline-offset-2 outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+            className="text-ih-accent focus-visible:ring-ih-accent-soft underline underline-offset-2 outline-none focus-visible:ring-[3px]"
           >
             browse
           </button>
         </p>
-        <p className="text-[11.5px] text-ih-muted">
+        <p className="text-ih-muted text-[11.5px]">
           {MEDIA_UPLOAD_ACCEPT_LABEL} · up to {MAX_MEDIA_UPLOAD_BYTES / 1024 / 1024} MB each
         </p>
         <input
@@ -219,7 +237,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
           {items.map((item) => (
             <li
               key={item.id}
-              className="flex items-center gap-3 rounded-md border border-ih-border bg-ih-surface px-3 py-2"
+              className="border-ih-border bg-ih-surface flex items-center gap-3 rounded-md border px-3 py-2"
             >
               <span className="w-8 flex-shrink-0">
                 {item.status === 'done' ? (
@@ -232,7 +250,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
                     aria-hidden="true"
                   />
                 ) : (
-                  <span className="text-[11px] tabular-nums text-ih-muted">
+                  <span className="text-ih-muted text-[11px] tabular-nums">
                     {item.status === 'uploading' ? `${Math.round(item.progress * 100)}%` : '—'}
                   </span>
                 )}
@@ -243,12 +261,12 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
                   {item.file.name}
                 </span>
                 {item.status === 'error' ? (
-                  <span className="text-[11.5px] text-ih-danger" role="alert">
+                  <span className="text-ih-danger text-[11.5px]" role="alert">
                     {item.message}
                   </span>
                 ) : item.status === 'uploading' ? (
                   <span
-                    className="block h-1 overflow-hidden rounded-full bg-ih-surface-2"
+                    className="bg-ih-surface-2 block h-1 overflow-hidden rounded-full"
                     role="progressbar"
                     aria-valuenow={Math.round(item.progress * 100)}
                     aria-valuemin={0}
@@ -257,7 +275,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
                   >
                     <span
                       className={cn(
-                        'block h-full rounded-full bg-ih-accent transition-[width] duration-150',
+                        'bg-ih-accent block h-full rounded-full transition-[width] duration-150',
                         widthClass(item.progress)
                       )}
                     />
@@ -281,7 +299,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
                     type="button"
                     onClick={() => setItems((prev) => prev.filter((i) => i.id !== item.id))}
                     aria-label={`Remove ${item.file.name} from the queue`}
-                    className="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-sm text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+                    className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-sm transition-colors"
                   >
                     <X size={12} strokeWidth={1.8} aria-hidden="true" />
                   </button>
@@ -294,14 +312,20 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
 
       {items.length > 0 ? (
         <div className="flex items-center gap-2">
-          <Button kind="primary" size="sm" onClick={uploadAll} loading={busy} disabled={queued.length === 0}>
+          <Button
+            kind="primary"
+            size="sm"
+            onClick={uploadAll}
+            loading={busy}
+            disabled={queued.length === 0}
+          >
             Upload {queued.length > 0 ? queued.length : ''}
           </Button>
           <Button kind="ghost" size="sm" onClick={() => setItems([])} disabled={busy}>
             Clear
           </Button>
           {done > 0 ? (
-            <span className="text-[12px] text-ih-muted" role="status">
+            <span className="text-ih-muted text-[12px]" role="status">
               {done} uploaded
             </span>
           ) : null}

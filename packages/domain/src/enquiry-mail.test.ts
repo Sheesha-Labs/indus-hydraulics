@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { ENQUIRY_EMAIL_CC, ENQUIRY_EMAIL_TO, ENQUIRY_RECIPIENTS, enquiryAttachmentFilename, enquiryBody, enquiryMailto } from './enquiry-mail'
+import {
+  ENQUIRY_EMAIL_CC,
+  ENQUIRY_EMAIL_TO,
+  ENQUIRY_RECIPIENTS,
+  enquiryAttachmentFilename,
+  enquiryBody,
+  enquiryMailto,
+} from './enquiry-mail'
 
 describe('enquiryMailto', () => {
   it('addresses sales with purchase in CC', () => {
@@ -26,7 +33,11 @@ describe('enquiryMailto', () => {
 
 describe('enquiryBody', () => {
   it('names the item, part number and page, then the questions the desk asks', () => {
-    const body = enquiryBody({ about: 'Bauer coupling', partNumber: 'IH-123', url: 'https://indushydraulics.com/p/x' })
+    const body = enquiryBody({
+      about: 'Bauer coupling',
+      partNumber: 'IH-123',
+      url: 'https://indushydraulics.com/p/x',
+    })
     expect(body).toContain('I would like a quote for: Bauer coupling')
     expect(body).toContain('Part number: IH-123')
     expect(body).toContain('Page: https://indushydraulics.com/p/x')
@@ -48,12 +59,16 @@ describe('enquiryAttachmentFilename', () => {
   const path = 'rfq-attachments/2026-11-20/0f8c1d2e-1111-4222-8333-944455556666.pdf'
 
   it("keeps the visitor's name with the server's extension", () => {
-    expect(enquiryAttachmentFilename({ path, label: 'GA drawing rev B.pdf' })).toBe('GA drawing rev B.pdf')
+    expect(enquiryAttachmentFilename({ path, label: 'GA drawing rev B.pdf' })).toBe(
+      'GA drawing rev B.pdf'
+    )
     expect(enquiryAttachmentFilename({ path, label: 'drawing.exe' })).toBe('drawing.pdf')
   })
 
   it('strips characters that break a MIME header or a path', () => {
-    expect(enquiryAttachmentFilename({ path, label: '../../etc/pass"wd\r\nX: y' })).toBe('.._.._etc_pass_wd_X_ y.pdf')
+    expect(enquiryAttachmentFilename({ path, label: '../../etc/pass"wd\r\nX: y' })).toBe(
+      '.._.._etc_pass_wd_X_ y.pdf'
+    )
   })
 
   it('falls back when nothing usable is left', () => {

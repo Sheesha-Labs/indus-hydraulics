@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
-import { PRODUCT_INDEX_MIN_CONTENT_SCORE, PRODUCT_INDEX_MIN_SIZE_ROWS, isProductIndexable } from '@indus/domain'
+import {
+  PRODUCT_INDEX_MIN_CONTENT_SCORE,
+  PRODUCT_INDEX_MIN_SIZE_ROWS,
+  isProductIndexable,
+} from '@indus/domain'
 
 export const metadata: Metadata = { title: 'Sitemap — Indus Admin' }
 
@@ -24,10 +28,16 @@ export default async function SitemapPage() {
         _count: { select: { variants: true } },
       },
     }),
-    db.category.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
+    db.category.count({
+      where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true },
+    }),
     db.brand.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
-    db.blogPost.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
-    db.cmsPage.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
+    db.blogPost.count({
+      where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true },
+    }),
+    db.cmsPage.count({
+      where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true },
+    }),
     db.product.count({ where: { excludeFromSitemap: true } }),
     db.product.count({ where: { robotsIndex: false } }),
   ])
@@ -39,7 +49,7 @@ export default async function SitemapPage() {
 
   return (
     <div className="max-w-[800px]">
-      <div className="grid grid-cols-3 gap-3 mb-6">
+      <div className="mb-6 grid grid-cols-3 gap-3">
         <Tile label="Products" value={products} />
         <Tile label="Categories" value={categories} />
         <Tile label="Brands" value={brands} />
@@ -48,26 +58,26 @@ export default async function SitemapPage() {
         <Tile label="Total URLs" value={total} accent />
       </div>
 
-      <div className="rounded-lg border border-ih-border p-4 mb-4">
-        <h3 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+      <div className="border-ih-border mb-4 rounded-lg border p-4">
+        <h3 className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           Exclusions
         </h3>
         <div className="grid grid-cols-2 gap-3 text-[13px]">
           <div>
             <div className="text-ih-muted">Excluded from sitemap (products)</div>
-            <div className="font-medium text-[18px]">{excluded}</div>
+            <div className="text-[18px] font-medium">{excluded}</div>
           </div>
           <div>
             <div className="text-ih-muted">Noindexed (products)</div>
-            <div className="font-medium text-[18px]">{noindexed}</div>
+            <div className="text-[18px] font-medium">{noindexed}</div>
           </div>
           <div className="col-span-2">
             <div className="text-ih-muted">
-              Held back for thin content (products scoring below {PRODUCT_INDEX_MIN_CONTENT_SCORE} with
-              fewer than {PRODUCT_INDEX_MIN_SIZE_ROWS} size-table rows)
+              Held back for thin content (products scoring below {PRODUCT_INDEX_MIN_CONTENT_SCORE}{' '}
+              with fewer than {PRODUCT_INDEX_MIN_SIZE_ROWS} size-table rows)
             </div>
-            <div className="font-medium text-[18px]">{thin}</div>
-            <p className="mt-1 text-[12px] text-ih-muted">
+            <div className="text-[18px] font-medium">{thin}</div>
+            <p className="text-ih-muted mt-1 text-[12px]">
               Out of the sitemap and marked noindex until an edit lifts the content score over the
               line or adds a size table. They re-enter both automatically.
             </p>
@@ -79,15 +89,14 @@ export default async function SitemapPage() {
         href="/sitemap.xml"
         target="_blank"
         rel="noopener"
-        className="rounded-md inline-block h-9 px-4 border border-ih-border grid place-items-center tabular-nums text-[12px] hover:bg-ih-surface-2"
+        className="border-ih-border hover:bg-ih-surface-2 grid inline-block h-9 place-items-center rounded-md border px-4 text-[12px] tabular-nums"
       >
         Open /sitemap.xml ↗
       </a>
 
-      <p className="mt-4 tabular-nums text-[11px] text-ih-muted">
-        Per-entity sitemap priority &amp; changefreq overrides are configured from the SEO drawer
-        on each entity edit page. A sitemap-index split (when total &gt; 50k URLs) lands in
-        Phase 2.
+      <p className="text-ih-muted mt-4 text-[11px] tabular-nums">
+        Per-entity sitemap priority &amp; changefreq overrides are configured from the SEO drawer on
+        each entity edit page. A sitemap-index split (when total &gt; 50k URLs) lands in Phase 2.
       </p>
     </div>
   )
@@ -95,11 +104,11 @@ export default async function SitemapPage() {
 
 function Tile({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         {label}
       </div>
-      <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>
+      <div className={`mt-1 text-[28px] font-medium ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>

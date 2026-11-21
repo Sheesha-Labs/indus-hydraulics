@@ -161,7 +161,7 @@ async function main() {
       // put one here, so stop rather than displace it.
       problems.push(`${sku}: already has ${product.images.length} image(s) — left alone`)
       console.log(
-        `  CONFLICT ${sku.padEnd(22)} already has ${product.images.length} image(s), skipping`,
+        `  CONFLICT ${sku.padEnd(22)} already has ${product.images.length} image(s), skipping`
       )
       continue
     }
@@ -176,7 +176,7 @@ async function main() {
 
     const key = objectKeyFor(sku)
     console.log(
-      `  attach   ${sku.padEnd(22)} ${file} (${size.width}×${size.height}, ${Math.round(bytes.length / 1024)} KB) -> ${key}`,
+      `  attach   ${sku.padEnd(22)} ${file} (${size.width}×${size.height}, ${Math.round(bytes.length / 1024)} KB) -> ${key}`
     )
     if (dryRun) continue
 

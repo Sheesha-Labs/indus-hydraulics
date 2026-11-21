@@ -15,12 +15,7 @@ import { failFromError, ok, type Result } from '../../../../../../lib/result'
  */
 
 const RedirectSchema = z.object({
-  query: z
-    .string()
-    .trim()
-    .toLowerCase()
-    .min(1, 'Query is required')
-    .max(200, 'Query is too long'),
+  query: z.string().trim().toLowerCase().min(1, 'Query is required').max(200, 'Query is too long'),
   targetUrl: z.string().trim().min(1, 'Target URL is required').max(2048),
 })
 

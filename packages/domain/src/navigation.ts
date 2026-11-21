@@ -1,20 +1,10 @@
 // Mirrors `MenuLocation` enum in packages/db/prisma/schema.prisma
 export type MenuLocation =
-  | 'primary_header'
-  | 'primary_megamenu'
-  | 'footer_main'
-  | 'footer_legal'
-  | 'mobile_drawer'
+  'primary_header' | 'primary_megamenu' | 'footer_main' | 'footer_legal' | 'mobile_drawer'
 
 // Mirrors `MenuLinkType` enum in packages/db/prisma/schema.prisma
 export type MenuLinkType =
-  | 'none'
-  | 'category'
-  | 'brand'
-  | 'industry'
-  | 'cms_page'
-  | 'product'
-  | 'custom_url'
+  'none' | 'category' | 'brand' | 'industry' | 'cms_page' | 'product' | 'custom_url'
 
 export const MENU_LOCATIONS: readonly MenuLocation[] = [
   'primary_header',
@@ -160,7 +150,7 @@ export interface NavChromeItem {
  */
 export function toNavChromeItems(
   items: readonly ResolvedNavItem[],
-  opts: { withPromo?: boolean } = {},
+  opts: { withPromo?: boolean } = {}
 ): NavChromeItem[] {
   return items.map((item) => {
     const out: NavChromeItem = { label: item.label, href: item.href }

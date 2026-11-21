@@ -59,13 +59,13 @@ export default function HelpGrid({
   if (tiles.length === 0) return null
 
   return (
-    <section className="border-t border-ih-border bg-ih-surface-2 py-14">
+    <section className="border-ih-border bg-ih-surface-2 border-t py-14">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
         <span className="eyebrow">{eyebrow}</span>
-        <h2 className="mt-2 max-w-[24ch] text-balance font-serif text-[clamp(26px,3vw,36px)] font-normal leading-[1.1] tracking-[-0.01em]">
+        <h2 className="mt-2 max-w-[24ch] font-serif text-[clamp(26px,3vw,36px)] leading-[1.1] font-normal tracking-[-0.01em] text-balance">
           {heading} {headingEmphasis ? <em className="italic">{headingEmphasis}</em> : null}
         </h2>
-        <p className="mt-3 max-w-[58ch] text-[15px] leading-[1.6] text-ih-muted">{body}</p>
+        <p className="text-ih-muted mt-3 max-w-[58ch] text-[15px] leading-[1.6]">{body}</p>
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tiles.map((tile) => {
@@ -74,15 +74,15 @@ export default function HelpGrid({
               <Link
                 key={tile.href}
                 href={tile.href}
-                className="group flex items-center gap-4 rounded-lg border border-ih-border bg-ih-surface p-5 transition-colors hover:border-ih-accent"
+                className="group border-ih-border bg-ih-surface hover:border-ih-accent flex items-center gap-4 rounded-lg border p-5 transition-colors"
               >
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-ih-accent-soft text-ih-accent">
+                <span className="bg-ih-accent-soft text-ih-accent flex h-11 w-11 shrink-0 items-center justify-center rounded-md">
                   <Icon size={19} strokeWidth={1.6} aria-hidden />
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="block text-[15px] font-medium">{tile.label}</span>
                   {tile.sub ? (
-                    <span className="mt-0.5 block text-[12.5px] leading-[1.45] text-ih-muted">
+                    <span className="text-ih-muted mt-0.5 block text-[12.5px] leading-[1.45]">
                       {tile.sub}
                     </span>
                   ) : null}
@@ -91,7 +91,7 @@ export default function HelpGrid({
                   size={16}
                   strokeWidth={1.7}
                   aria-hidden
-                  className="shrink-0 text-ih-muted transition-transform group-hover:translate-x-0.5"
+                  className="text-ih-muted shrink-0 transition-transform group-hover:translate-x-0.5"
                 />
               </Link>
             )

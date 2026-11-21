@@ -64,8 +64,7 @@ export type CompareValidationError =
     }
 
 export type CompareValidationResult =
-  | { ok: true; categoryId: string; specTemplateId: string }
-  | CompareValidationError
+  { ok: true; categoryId: string; specTemplateId: string } | CompareValidationError
 
 /**
  * A valid compare set has 1..MAX_COMPARE products that all share the same
@@ -85,7 +84,11 @@ export function validateCompareSet(products: CompareProductInput[]): CompareVali
 
   const missingTemplate = products.filter((p) => p.specTemplateId === null)
   if (missingTemplate.length > 0) {
-    return { ok: false, reason: 'missing_template', offendingSkus: missingTemplate.map((p) => p.sku) }
+    return {
+      ok: false,
+      reason: 'missing_template',
+      offendingSkus: missingTemplate.map((p) => p.sku),
+    }
   }
 
   const byCategory = groupBySkus(products, (p) => p.categoryId)
@@ -112,14 +115,18 @@ export function validateCompareSet(products: CompareProductInput[]): CompareVali
   const categoryId = products[0]!.categoryId
   const specTemplateId = products[0]!.specTemplateId
   if (categoryId === null) {
-    return { ok: false, reason: 'mixed_category', categoryIds: [{ categoryId: null, skus: products.map((p) => p.sku) }] }
+    return {
+      ok: false,
+      reason: 'mixed_category',
+      categoryIds: [{ categoryId: null, skus: products.map((p) => p.sku) }],
+    }
   }
   return { ok: true, categoryId, specTemplateId: specTemplateId! }
 }
 
 function groupBySkus<K>(
   products: CompareProductInput[],
-  key: (p: CompareProductInput) => K,
+  key: (p: CompareProductInput) => K
 ): Array<[K, string[]]> {
   const map = new Map<K, string[]>()
   for (const p of products) {
@@ -169,7 +176,7 @@ export type CompareSection = {
  */
 export function buildCompareRows(
   products: CompareProductInput[],
-  template: CompareTemplate,
+  template: CompareTemplate
 ): CompareSection[] {
   const orderedFields = [...template.fields].sort((a, b) => {
     const groupCmp = (a.group ?? '').localeCompare(b.group ?? '')

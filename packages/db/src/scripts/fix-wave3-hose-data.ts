@@ -24,7 +24,15 @@ const db = new PrismaClient()
 const PAYLOAD = join(__dirname, '../../data/catalogue-maker-hydraulic-hoses/catalogue.json')
 const AEROQUIP = 'aeroquip-chemical-hose-assembly'
 
-const INCH: Record<number, string> = { 12: '3/4"', 16: '1"', 20: '1 1/4"', 24: '1 1/2"', 32: '2"', 48: '3"', 64: '4"' }
+const INCH: Record<number, string> = {
+  12: '3/4"',
+  16: '1"',
+  20: '1 1/4"',
+  24: '1 1/2"',
+  32: '2"',
+  48: '3"',
+  64: '4"',
+}
 function sizeFromCode(pn: string): number | null {
   const m = /^H0\d{3}(\d{2})-/.exec(pn)
   return m && INCH[Number(m[1])] ? Number(m[1]) : null
@@ -42,13 +50,17 @@ const MINERAL: Record<string, { app: string; seo: string }> = {
     seo: 'Indus A125 multi-purpose mineral oil and air hose, 20 bar, 6–25 mm ID, non-conductive NBR tube for oils and compressed air.',
   },
 }
-const OLD_APP = /(?:Low|Medium) pressure, electrically conductive fuel delivery hose for diesel, heating oils and petroleum including unleaded fuel for use across a variety of industries including automotive sector/
+const OLD_APP =
+  /(?:Low|Medium) pressure, electrically conductive fuel delivery hose for diesel, heating oils and petroleum including unleaded fuel for use across a variety of industries including automotive sector/
 
 async function main() {
   const write = process.argv.includes('--write')
 
   // 1. Aeroquip rows.
-  const aq = await db.product.findUniqueOrThrow({ where: { slug: AEROQUIP }, select: { id: true, variants: true } })
+  const aq = await db.product.findUniqueOrThrow({
+    where: { slug: AEROQUIP },
+    select: { id: true, variants: true },
+  })
   const rowFixes = aq.variants
     .map((v) => ({ v, dash: sizeFromCode(v.partNumber) }))
     .filter((r) => r.dash !== null && r.v.hoseDash !== r.dash)
@@ -62,8 +74,15 @@ async function main() {
     const at = lines.findIndex((l) => l.includes(`"partNumber": ${JSON.stringify(r.v.partNumber)}`))
     if (at < 0) continue
     for (let i = at; i < at + 20 && i < lines.length && !/^\s*\},?$/.test(lines[i]!); i++) {
-      if (/"hoseInch":/.test(lines[i]!)) { lines[i] = lines[i]!.replace(/"hoseInch": "(?:[^"\\]|\\.)*"/, `"hoseInch": ${JSON.stringify(INCH[r.dash!])}`); payloadFixed++ }
-      if (/"hoseDash":/.test(lines[i]!)) lines[i] = lines[i]!.replace(/"hoseDash": \d+/, `"hoseDash": ${r.dash}`)
+      if (/"hoseInch":/.test(lines[i]!)) {
+        lines[i] = lines[i]!.replace(
+          /"hoseInch": "(?:[^"\\]|\\.)*"/,
+          `"hoseInch": ${JSON.stringify(INCH[r.dash!])}`
+        )
+        payloadFixed++
+      }
+      if (/"hoseDash":/.test(lines[i]!))
+        lines[i] = lines[i]!.replace(/"hoseDash": \d+/, `"hoseDash": ${r.dash}`)
     }
   }
   writeFileSync(PAYLOAD, lines.join('\n'))
@@ -72,7 +91,13 @@ async function main() {
   // 2. Mineral oil hoses.
   const mineral = await db.product.findMany({
     where: { slug: { in: Object.keys(MINERAL) } },
-    select: { id: true, slug: true, descriptionShort: true, descriptionLong: true, seoDescription: true },
+    select: {
+      id: true,
+      slug: true,
+      descriptionShort: true,
+      descriptionLong: true,
+      seoDescription: true,
+    },
   })
   const textFixes = mineral.map((p) => {
     const m = MINERAL[p.slug]!
@@ -85,21 +110,32 @@ async function main() {
       changed: OLD_APP.test(p.descriptionLong ?? '') || OLD_APP.test(p.descriptionShort ?? ''),
     }
   })
-  for (const t of textFixes) console.log(`${t.slug}: ${t.changed ? 'application text replaced' : 'already fixed'}`)
+  for (const t of textFixes)
+    console.log(`${t.slug}: ${t.changed ? 'application text replaced' : 'already fixed'}`)
 
   if (!write) {
     console.log('Dry run for the database — add --write to apply.')
     return
   }
-  await db.$transaction(async (tx) => {
-    for (const r of rowFixes)
-      await tx.productVariant.update({ where: { id: r.v.id }, data: { hoseDash: r.dash!, hoseInch: INCH[r.dash!]! } })
-    for (const t of textFixes.filter((x) => x.changed))
-      await tx.product.update({
-        where: { id: t.id },
-        data: { descriptionShort: t.descriptionShort, descriptionLong: t.descriptionLong, seoDescription: t.seoDescription },
-      })
-  }, { timeout: 60_000 })
+  await db.$transaction(
+    async (tx) => {
+      for (const r of rowFixes)
+        await tx.productVariant.update({
+          where: { id: r.v.id },
+          data: { hoseDash: r.dash!, hoseInch: INCH[r.dash!]! },
+        })
+      for (const t of textFixes.filter((x) => x.changed))
+        await tx.product.update({
+          where: { id: t.id },
+          data: {
+            descriptionShort: t.descriptionShort,
+            descriptionLong: t.descriptionLong,
+            seoDescription: t.seoDescription,
+          },
+        })
+    },
+    { timeout: 60_000 }
+  )
   console.log('written')
 }
 

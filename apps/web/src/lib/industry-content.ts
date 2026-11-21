@@ -160,7 +160,7 @@ const loadIndustryList = unstable_cache(
   },
   // v3: rows gained `heroImageAlt` (2026-10-08).
   ['industries-list-v3'],
-  { revalidate: 3600, tags: ['industries'] },
+  { revalidate: 3600, tags: ['industries'] }
 )
 
 /**
@@ -245,7 +245,7 @@ const loadIndustryBySlug = unstable_cache(
   },
   // v3: hero and case studies gained their `Media.alt` (2026-10-08).
   ['industry-detail-v3'],
-  { revalidate: 3600, tags: ['industries'] },
+  { revalidate: 3600, tags: ['industries'] }
 )
 
 /**
@@ -257,7 +257,7 @@ const loadIndustryBySlug = unstable_cache(
 export const getIndustryList = cache(async (): Promise<IndustryListItem[]> => {
   const rows = await loadIndustryList()
   return [...designedIndustryCards(), ...rows].sort(
-    (a, b) => a.position - b.position || a.name.localeCompare(b.name),
+    (a, b) => a.position - b.position || a.name.localeCompare(b.name)
   )
 })
 export const getIndustryBySlug = cache(async (slug: string) => loadIndustryBySlug(slug))
@@ -277,5 +277,5 @@ export const getIndustrySitemapEntries = unstable_cache(
     })
   },
   ['industries-sitemap'],
-  { revalidate: 3600, tags: ['industries'] },
+  { revalidate: 3600, tags: ['industries'] }
 )

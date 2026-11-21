@@ -46,7 +46,7 @@ export default function DownloadCsvButton({ action, label = 'Export CSV' }: Prop
         {pending ? 'Exporting…' : label}
       </Button>
       {error ? (
-        <span role="alert" className="text-[12.5px] text-ih-danger-ink">
+        <span role="alert" className="text-ih-danger-ink text-[12.5px]">
           {error}
         </span>
       ) : null}

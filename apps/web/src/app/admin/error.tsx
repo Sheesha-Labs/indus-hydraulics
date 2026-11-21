@@ -28,13 +28,13 @@ export default function AdminPublicError({
     <div className="grid min-h-screen place-items-center bg-[var(--color-ih-navy)] p-6">
       <div className="w-full max-w-[380px]">
         <div className="mb-8 flex items-center gap-3">
-          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#ffffff] tabular-nums text-[14px] font-medium text-[#111]">
+          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#ffffff] text-[14px] font-medium text-[#111] tabular-nums">
             IH
-            <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-ih-accent" />
+            <span className="bg-ih-accent absolute -right-0.5 -bottom-0.5 h-2 w-2" />
           </div>
           <div>
-            <div className="font-medium leading-tight text-white">Indus Hydraulics</div>
-            <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-[oklch(0.68_0.03_250)]">
+            <div className="leading-tight font-medium text-white">Indus Hydraulics</div>
+            <div className="text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase tabular-nums">
               Admin Portal
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function AdminPublicError({
           <button
             type="button"
             onClick={reset}
-            className="h-11 w-full bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-11 w-full text-sm font-medium transition-opacity"
           >
             Try again
           </button>
@@ -63,7 +63,7 @@ export default function AdminPublicError({
           </Link>
 
           {error.digest && (
-            <p className="mt-6 border-t border-[var(--color-ih-navy)] pt-4 text-center tabular-nums text-[11px] text-[oklch(0.62_0.03_250)]">
+            <p className="mt-6 border-t border-[var(--color-ih-navy)] pt-4 text-center text-[11px] text-[oklch(0.62_0.03_250)] tabular-nums">
               Reference: {error.digest}
             </p>
           )}

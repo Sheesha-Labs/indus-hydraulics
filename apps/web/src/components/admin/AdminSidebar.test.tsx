@@ -60,7 +60,7 @@ describe('AdminSidebar brand', () => {
         logoUrl="https://cdn.example/indus-logo.png"
         logoStyle="logo_only"
         brandName="Indus Hydraulics"
-      />,
+      />
     )
     const logo = el.querySelector('img')
     expect(logo?.getAttribute('src')).toBe('https://cdn.example/indus-logo.png')
@@ -77,7 +77,7 @@ describe('AdminSidebar brand', () => {
         logoUrl={null}
         logoStyle="logo_only"
         brandName="Indus Hydraulics"
-      />,
+      />
     )
     expect(el.textContent).toContain('Indus Hydraulics')
     expect(el.textContent).toContain('Admin panel')
@@ -95,7 +95,9 @@ const sidebar = () => (
 )
 
 function sectionButton(el: HTMLElement, name: string) {
-  const button = [...el.querySelectorAll('button[aria-expanded]')].find((b) => b.textContent?.trim() === name)
+  const button = [...el.querySelectorAll('button[aria-expanded]')].find(
+    (b) => b.textContent?.trim() === name
+  )
   if (!button) throw new Error(`no section button ${name}`)
   return button as HTMLButtonElement
 }
@@ -114,7 +116,9 @@ describe('AdminSidebar folding groups', () => {
   test('a folded group is inert, so its links leave the tab order', () => {
     pathname = '/admin'
     const el = render(sidebar())
-    const panel = document.getElementById(sectionButton(el, 'Operations').getAttribute('aria-controls')!)
+    const panel = document.getElementById(
+      sectionButton(el, 'Operations').getAttribute('aria-controls')!
+    )
     expect(panel?.hasAttribute('inert')).toBe(true)
     expect(panel?.textContent).toContain('Enquiries')
   })

@@ -37,7 +37,7 @@ export default function ServicesHero({
   secondaryHref,
 }: Props) {
   return (
-    <section className="border-b border-ih-border py-10">
+    <section className="border-ih-border border-b py-10">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
         <div>
           <span className="eyebrow">{eyebrow ?? 'SERVICES · WORKSHOPS · ON-SITE'}</span>
@@ -47,7 +47,7 @@ export default function ServicesHero({
             §3 — the italic clause is the emphasis, and you never bold inside
             a serif headline.
           */}
-          <h1 className="mt-3 max-w-[30ch] text-balance font-serif text-[clamp(32px,4vw,46px)] font-normal leading-[1.06] tracking-[-0.01em]">
+          <h1 className="mt-3 max-w-[30ch] font-serif text-[clamp(32px,4vw,46px)] leading-[1.06] font-normal tracking-[-0.01em] text-balance">
             {headingLead ?? 'Things people'}{' '}
             {headingEmphasis ? <em className="italic">{headingEmphasis}</em> : null}
             {headingTail ?? ', and what we sent back.'}
@@ -56,15 +56,20 @@ export default function ServicesHero({
           {stats.length > 0 ? (
             <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
               {stats.map((s) => (
-                <div key={s.label} className="border-l-2 border-ih-accent pl-3.5">
+                <div key={s.label} className="border-ih-accent border-l-2 pl-3.5">
                   <dt className="sr-only">{s.label}</dt>
-                  <dd className="text-[24px] font-semibold leading-none tracking-[-0.02em] tabular-nums">
+                  <dd className="text-[24px] leading-none font-semibold tracking-[-0.02em] tabular-nums">
                     {s.value}
                     {s.smallSuffix ? (
-                      <small className="ml-0.5 text-sm font-medium text-ih-muted">{s.smallSuffix}</small>
+                      <small className="text-ih-muted ml-0.5 text-sm font-medium">
+                        {s.smallSuffix}
+                      </small>
                     ) : null}
                   </dd>
-                  <p aria-hidden="true" className="mt-1.5 text-[12px] font-medium uppercase tracking-[0.08em] text-ih-muted">
+                  <p
+                    aria-hidden="true"
+                    className="text-ih-muted mt-1.5 text-[12px] font-medium tracking-[0.08em] uppercase"
+                  >
                     {s.label}
                   </p>
                 </div>
@@ -77,7 +82,7 @@ export default function ServicesHero({
           {primaryLabel ? (
             <Link
               href={primaryHref ?? '/contact'}
-              className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] bg-ih-navy px-5 text-sm font-medium text-white hover:bg-ih-ink"
+              className="bg-ih-navy hover:bg-ih-ink inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] px-5 text-sm font-medium text-white"
             >
               {primaryLabel}
             </Link>
@@ -85,7 +90,7 @@ export default function ServicesHero({
           {secondaryLabel ? (
             <Link
               href={secondaryHref ?? '/contact'}
-              className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] border border-ih-border bg-ih-surface px-5 text-sm font-medium hover:border-ih-accent"
+              className="border-ih-border bg-ih-surface hover:border-ih-accent inline-flex h-10 items-center gap-2 rounded-[var(--radius-md)] border px-5 text-sm font-medium"
             >
               {secondaryLabel}
             </Link>

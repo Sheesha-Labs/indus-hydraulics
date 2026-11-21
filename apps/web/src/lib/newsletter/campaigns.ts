@@ -16,7 +16,12 @@ import {
   type RecipientKind,
 } from './campaign'
 import { resolveRecords } from './records'
-import { DEFAULT_SENDER_SETTINGS, resolveSender, type NewsletterSender, type NewsletterSenderSettings } from './sender'
+import {
+  DEFAULT_SENDER_SETTINGS,
+  resolveSender,
+  type NewsletterSender,
+  type NewsletterSenderSettings,
+} from './sender'
 
 /**
  * Campaigns on the server: the sender, the brand, rendering (preview, test,
@@ -25,7 +30,9 @@ import { DEFAULT_SENDER_SETTINGS, resolveSender, type NewsletterSender, type New
 
 export async function loadSenderSettings(): Promise<NewsletterSenderSettings> {
   const row = await db.newsletterSettings.findUnique({ where: { id: 'default' } })
-  return row ? { fromName: row.fromName, fromLocal: row.fromLocal, replyTo: row.replyTo } : DEFAULT_SENDER_SETTINGS
+  return row
+    ? { fromName: row.fromName, fromLocal: row.fromLocal, replyTo: row.replyTo }
+    : DEFAULT_SENDER_SETTINGS
 }
 
 export async function loadSender(): Promise<NewsletterSender> {
@@ -41,23 +48,45 @@ export async function loadSender(): Promise<NewsletterSender> {
 export async function campaignBrand() {
   const [b, s] = await Promise.all([loadEmailBranding(), getStoreSettings()])
   const https = (u: string | null) => (u && u.startsWith('https://') ? u : null)
-  return { legalName: b.legalName, addressLines: b.registeredAddressLines, logoUrl: https(s.logoUrl), logoOnDarkUrl: https(s.footerLogoUrl) }
+  return {
+    legalName: b.legalName,
+    addressLines: b.registeredAddressLines,
+    logoUrl: https(s.logoUrl),
+    logoOnDarkUrl: https(s.footerLogoUrl),
+  }
 }
 
 /** The send gate with live data: missing records, deleted lists. */
 export async function campaignProblemsLive(draft: CampaignDraft): Promise<Record<string, string>> {
   const [records, listsFound] = await Promise.all([
     resolveRecords(campaignRecordRefs(draft)),
-    draft.listIds.length ? db.newsletterList.count({ where: { id: { in: draft.listIds } } }) : Promise.resolve(0),
+    draft.listIds.length
+      ? db.newsletterList.count({ where: { id: { in: draft.listIds } } })
+      : Promise.resolve(0),
   ])
-  return campaignProblems(draft, { missingRecords: countMissingRecords(draft, records), listsFound })
+  return campaignProblems(draft, {
+    missingRecords: countMissingRecords(draft, records),
+    listsFound,
+  })
 }
 
 /** Render for the composer's preview: live records, a dead unsubscribe link. */
-export async function renderPreview(content: CampaignContent, recipient: RecipientKind = 'subscriber') {
-  const [records, brand] = await Promise.all([resolveRecords(campaignRecordRefs(content)), campaignBrand()])
+export async function renderPreview(
+  content: CampaignContent,
+  recipient: RecipientKind = 'subscriber'
+) {
+  const [records, brand] = await Promise.all([
+    resolveRecords(campaignRecordRefs(content)),
+    campaignBrand(),
+  ])
   return {
-    ...renderCampaign(content, { siteUrl: BASE_URL, brand, records, unsubscribeUrl: null, recipient }),
+    ...renderCampaign(content, {
+      siteUrl: BASE_URL,
+      brand,
+      records,
+      unsubscribeUrl: null,
+      recipient,
+    }),
     missingRecords: countMissingRecords(content, records),
   }
 }
@@ -70,7 +99,11 @@ export type TestSendOutcome = { ok: true } | { ok: false; error: string }
  * the tester). Sent from the real newsletter sender, so it lands the way the
  * campaign will.
  */
-export async function sendTest(campaignId: string, content: CampaignContent, to: string): Promise<TestSendOutcome> {
+export async function sendTest(
+  campaignId: string,
+  content: CampaignContent,
+  to: string
+): Promise<TestSendOutcome> {
   const [rendered, sender] = await Promise.all([renderPreview(content), loadSender()])
   const r = await sendEmail({
     kind: 'newsletter_test',
@@ -83,7 +116,10 @@ export async function sendTest(campaignId: string, content: CampaignContent, to:
     text: rendered.text,
   })
   if (!r.ok) return { ok: false, error: r.error ?? 'The test email could not be sent.' }
-  await db.newsletterCampaign.update({ where: { id: campaignId }, data: { testSentAt: new Date() } })
+  await db.newsletterCampaign.update({
+    where: { id: campaignId },
+    data: { testSentAt: new Date() },
+  })
   return { ok: true }
 }
 

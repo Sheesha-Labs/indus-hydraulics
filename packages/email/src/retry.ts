@@ -35,7 +35,7 @@ export function isEligibleForRetry(
   retryCount: number,
   attemptedAt: Date,
   lastAttemptAt: Date | null,
-  now: Date = new Date(),
+  now: Date = new Date()
 ): boolean {
   if (retryCount >= MAX_RETRIES) return false
   const wait = RETRY_BACKOFF_MS[retryCount]
@@ -65,7 +65,10 @@ function formatFrom(p: RetryablePayload): string {
  * retried by a concurrent cron, status changed, no payload, etc.) the
  * function returns early without side effects.
  */
-export async function retryFailedEmail(sentEmailId: string, now: Date = new Date()): Promise<RetryOutcome | null> {
+export async function retryFailedEmail(
+  sentEmailId: string,
+  now: Date = new Date()
+): Promise<RetryOutcome | null> {
   const row = await db.sentEmail.findUnique({ where: { id: sentEmailId } })
   if (!row) return null
   if (row.status !== 'failed') return null
@@ -156,7 +159,7 @@ export async function retryFailedEmail(sentEmailId: string, now: Date = new Date
  */
 export async function findRetryableEmailIds(
   limit: number = 50,
-  now: Date = new Date(),
+  now: Date = new Date()
 ): Promise<string[]> {
   const earliest = new Date(now.getTime() - (RETRY_BACKOFF_MS[0] ?? 0))
   const rows = await db.sentEmail.findMany({

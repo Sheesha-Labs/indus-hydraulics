@@ -199,8 +199,7 @@ export function isPriceOutlier(price: number, peers: number[], factor = 20): boo
 
   const sorted = [...usable].sort((a, b) => a - b)
   const mid = Math.floor(sorted.length / 2)
-  const median =
-    sorted.length % 2 === 0 ? (sorted[mid - 1]! + sorted[mid]!) / 2 : sorted[mid]!
+  const median = sorted.length % 2 === 0 ? (sorted[mid - 1]! + sorted[mid]!) / 2 : sorted[mid]!
   if (median <= 0) return false
 
   return price > median * factor || price < median / factor

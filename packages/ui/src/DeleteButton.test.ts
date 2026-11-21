@@ -3,7 +3,8 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { DeleteButton } from './DeleteButton'
 
-const render = (props: Parameters<typeof DeleteButton>[0]) => renderToStaticMarkup(createElement(DeleteButton, props))
+const render = (props: Parameters<typeof DeleteButton>[0]) =>
+  renderToStaticMarkup(createElement(DeleteButton, props))
 
 describe('DeleteButton', () => {
   it('renders a trash icon, not the word, with the label as name and tooltip', () => {
@@ -16,7 +17,11 @@ describe('DeleteButton', () => {
   })
 
   it('lets title explain a disabled state', () => {
-    const html = render({ label: 'Delete brand', title: 'Cannot delete: products reference this brand', disabled: true })
+    const html = render({
+      label: 'Delete brand',
+      title: 'Cannot delete: products reference this brand',
+      disabled: true,
+    })
     expect(html).toContain('title="Cannot delete: products reference this brand"')
     expect(html).toContain('disabled=""')
   })

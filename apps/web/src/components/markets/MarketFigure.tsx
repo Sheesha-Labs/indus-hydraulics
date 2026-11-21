@@ -50,7 +50,7 @@ export default function MarketFigure({
   className?: string
 }) {
   return (
-    <div className={cn('relative overflow-hidden bg-ih-surface-2', ratio, className)}>
+    <div className={cn('bg-ih-surface-2 relative overflow-hidden', ratio, className)}>
       {src ? (
         <Image
           src={src}
@@ -61,7 +61,7 @@ export default function MarketFigure({
           className="object-cover"
         />
       ) : (
-        <span className="mono absolute inset-0 grid place-items-center px-4 text-center text-[10px] uppercase leading-[1.5] tracking-[0.1em] text-ih-muted-2">
+        <span className="mono text-ih-muted-2 absolute inset-0 grid place-items-center px-4 text-center text-[10px] leading-[1.5] tracking-[0.1em] uppercase">
           {label}
         </span>
       )}

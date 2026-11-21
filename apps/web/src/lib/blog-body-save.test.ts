@@ -7,7 +7,7 @@ describe('readBodyBlocks', () => {
       JSON.stringify([
         { type: 'paragraph', html: 'Safe.<script>alert(1)</script>' },
         { type: 'prose', html: '<p onclick="steal()">Hi</p><iframe src="//evil"></iframe>' },
-      ]),
+      ])
     )
     // `nonTextTags` matters here: without it the script's CONTENTS survive as a
     // bare `alert(1)` text node in the middle of the article.
@@ -17,7 +17,7 @@ describe('readBodyBlocks', () => {
 
   test('a javascript: link loses its href', () => {
     const blocks = readBodyBlocks(
-      JSON.stringify([{ type: 'paragraph', html: '<a href="javascript:alert(1)">x</a>' }]),
+      JSON.stringify([{ type: 'paragraph', html: '<a href="javascript:alert(1)">x</a>' }])
     )
     expect(blocks[0]).toEqual({ type: 'paragraph', html: '<a>x</a>' })
   })
@@ -36,17 +36,19 @@ describe('readBodyBlocks', () => {
         { type: 'paragraph', html: 'Keeps.' },
         { type: 'comparison_table', columns: ['A'], rows: [] },
         { type: 'paragraph', html: 'Also keeps.' },
-      ]),
+      ])
     )
     expect(blocks.map((b) => b.type)).toEqual(['paragraph', 'paragraph'])
   })
 
-  test.each([['', 0], ['not json', 0], ['{}', 0], ['null', 0]])(
-    'a payload of %j yields no blocks rather than throwing',
-    (raw, expected) => {
-      expect(readBodyBlocks(raw)).toHaveLength(expected as number)
-    },
-  )
+  test.each([
+    ['', 0],
+    ['not json', 0],
+    ['{}', 0],
+    ['null', 0],
+  ])('a payload of %j yields no blocks rather than throwing', (raw, expected) => {
+    expect(readBodyBlocks(raw)).toHaveLength(expected as number)
+  })
 })
 
 describe('blocksToPlainText', () => {

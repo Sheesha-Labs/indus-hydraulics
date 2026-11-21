@@ -40,7 +40,7 @@ const optionalMediaId = z
   .transform((v) => (v && v.length ? v : null))
   .refine(
     (v) => v === null || /^[0-9a-f-]{36}$/i.test(v),
-    'Pick an image from the library rather than typing an id.',
+    'Pick an image from the library rather than typing an id.'
   )
 
 const linesToArray = (raw: FormDataEntryValue | null): string[] =>
@@ -52,7 +52,12 @@ const linesToArray = (raw: FormDataEntryValue | null): string[] =>
 const StoreSettingsSchema = z.object({
   name: z.string().trim().min(1, 'Store name is required').max(120),
   supportEmail: optionalEmail,
-  defaultIncoterm: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
+  defaultIncoterm: z
+    .string()
+    .trim()
+    .max(40)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   defaultPaymentTerms: z.coerce.number().int().min(0).max(365).default(30),
 
   // Brand identity (storefront header + footer)
@@ -252,7 +257,7 @@ export async function saveBrandIdentity(formData: FormData): Promise<Result<void
       if (missing.length > 0) {
         return fail(
           'NOT_FOUND',
-          'One of the selected images is no longer in the media library. Re-pick it and save again.',
+          'One of the selected images is no longer in the media library. Re-pick it and save again.'
         )
       }
     }
@@ -284,7 +289,7 @@ export async function saveBrandIdentity(formData: FormData): Promise<Result<void
  * well under the 5 MB a product photo gets.
  */
 export async function uploadBrandImage(
-  formData: FormData,
+  formData: FormData
 ): Promise<Result<{ mediaId: string; url: string; filename: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.SETTINGS_WRITE)
@@ -300,7 +305,7 @@ export async function uploadBrandImage(
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      'brand',
+      'brand'
     )
     const media = await db.media.create({
       data: {

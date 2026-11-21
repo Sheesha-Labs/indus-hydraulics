@@ -131,7 +131,7 @@ export const dynamicParams = true
  */
 const STATIC_PDP_LIMIT = 5
 
-async function staticParamsFromDb() : Promise< { slug: string }[]> {
+async function staticParamsFromDb(): Promise<{ slug: string }[]> {
   const rows = await db.product.findMany({
     where: { status: 'active' },
     select: { slug: true },
@@ -352,7 +352,7 @@ export default async function ProductPage({ params }: Props) {
     isStandard: isStandardDesignation(s.brand),
   }))
   const intermixWarning = sizeCrossRefs.some(
-    (r) => r.compatibility === 'compatible' && NON_INTERMIX_BRANDS.includes(r.competitorBrand),
+    (r) => r.compatibility === 'compatible' && NON_INTERMIX_BRANDS.includes(r.competitorBrand)
   )
 
   const tabCrossRefs = familyCrossRefs.map((r) => ({
@@ -389,7 +389,9 @@ export default async function ProductPage({ params }: Props) {
   })()
   // Every maker named anywhere on the page, for the not-affiliated line.
   const makerBrands = [
-    ...new Set(product.crossReferences.map((r) => r.competitorBrand).filter((b) => !isStandardDesignation(b))),
+    ...new Set(
+      product.crossReferences.map((r) => r.competitorBrand).filter((b) => !isStandardDesignation(b))
+    ),
   ]
   const equivalenceBrand =
     makerBrands.length === 0
@@ -426,7 +428,11 @@ export default async function ProductPage({ params }: Props) {
 
   // JSON-LD assembly. Pages with FAQs additionally emit a FAQPage entity.
   const productUrl = urlFor(`/p/${product.slug}`)
-  const enquiryHref = productEnquiryHref({ sku: product.sku, title: product.title, url: productUrl })
+  const enquiryHref = productEnquiryHref({
+    sku: product.sku,
+    title: product.title,
+    url: productUrl,
+  })
   const waHref = whatsappHref(settings.contactPhone, { title: product.title, url: productUrl })
   // One source for what this page says about availability — the pill, the
   // delivery row and this Offer all read `productAvailability`, so a crawler
@@ -583,7 +589,7 @@ export default async function ProductPage({ params }: Props) {
               )}
             </div>
 
-            <h1 className="text-[clamp(26px,3vw,34px)] font-medium leading-[1.12] tracking-[-0.02em]">
+            <h1 className="text-[clamp(26px,3vw,34px)] leading-[1.12] font-medium tracking-[-0.02em]">
               {product.title}
             </h1>
 
@@ -628,7 +634,7 @@ export default async function ProductPage({ params }: Props) {
           <div className="flex flex-col lg:col-start-2 lg:row-start-2">
             {/* Short description — prose blurb above the bullet list. */}
             {product.descriptionShort && (
-              <p className="text-ih-ink-2 mb-5 whitespace-pre-line text-[16px] leading-[1.6]">
+              <p className="text-ih-ink-2 mb-5 text-[16px] leading-[1.6] whitespace-pre-line">
                 {product.descriptionShort}
               </p>
             )}
@@ -637,7 +643,7 @@ export default async function ProductPage({ params }: Props) {
                 fields are flagged as Key feature, or no values have been entered. */}
             {keyFeatures.length > 0 && (
               <div className="pb-6">
-                <h3 className="text-ih-muted mb-3.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                <h3 className="text-ih-muted mb-3.5 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                   Key features
                 </h3>
                 <ul className="flex flex-col gap-2.5">
@@ -666,7 +672,7 @@ export default async function ProductPage({ params }: Props) {
                       key={spec.id}
                       className={`border-ih-border flex flex-col px-4 py-3 ${i % 2 === 0 ? 'border-r' : ''} ${i < quickSpecs.length - 2 ? 'border-b' : ''}`}
                     >
-                      <dt className="text-ih-muted font-mono text-[10px] uppercase tracking-[0.08em]">
+                      <dt className="text-ih-muted font-mono text-[10px] tracking-[0.08em] uppercase">
                         {spec.label}
                       </dt>
                       <dd className="text-ih-ink mt-1 font-mono text-[13px]">
@@ -703,7 +709,7 @@ export default async function ProductPage({ params }: Props) {
 
             {/* Datasheet card */}
             {product.documents[0] && (
-              <div className="border-ih-border bg-ih-surface mb-6 mt-1 flex items-center gap-3 rounded-lg border p-4">
+              <div className="border-ih-border bg-ih-surface mt-1 mb-6 flex items-center gap-3 rounded-lg border p-4">
                 <div className="border-ih-border bg-ih-surface-2 text-ih-accent grid h-11 w-9 shrink-0 place-items-center rounded-sm border font-mono text-[9px] font-medium">
                   {product.documents[0].kind.toUpperCase().slice(0, 4)}
                 </div>
@@ -787,7 +793,10 @@ export default async function ProductPage({ params }: Props) {
           }
           variantEquivalenceNote={equivalenceNote}
           variantEquivalenceBrand={equivalenceBrand}
-          variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug, product.brand?.slug)}
+          variantStainlessOnRequest={offersStainlessOnRequest(
+            product.specTemplate?.slug,
+            product.brand?.slug
+          )}
           variantPartNumberHeading={variantPartNumberHeading(tabVariants, product.brand)}
           faqs={product.faqs.map((f) => ({
             id: f.id,
@@ -821,9 +830,9 @@ export default async function ProductPage({ params }: Props) {
           composer declined to name the product.
         */}
         {alternateNames.length > 0 && (
-          <section className="border-ih-border border-t pb-2 pt-8">
+          <section className="border-ih-border border-t pt-8 pb-2">
             <div className="mb-4">
-              <div className="mono text-ih-muted mb-2 text-[11px] uppercase tracking-[0.16em]">
+              <div className="mono text-ih-muted mb-2 text-[11px] tracking-[0.16em] uppercase">
                 Also known as
               </div>
               <p className="text-ih-muted max-w-[720px] text-[14px] leading-[1.6]">
@@ -833,7 +842,7 @@ export default async function ProductPage({ params }: Props) {
             <dl className="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
               {alternateNames.map((n) => (
                 <div key={n.lang} className="border-ih-border flex gap-3 border-b py-2">
-                  <dt className="mono text-ih-muted w-8 shrink-0 pt-[2px] text-[11px] uppercase tracking-[0.1em]">
+                  <dt className="mono text-ih-muted w-8 shrink-0 pt-[2px] text-[11px] tracking-[0.1em] uppercase">
                     {n.lang}
                   </dt>
                   <dd className="text-ih-ink-2 text-[14px] leading-[1.5]">{n.name}</dd>
@@ -857,12 +866,12 @@ export default async function ProductPage({ params }: Props) {
           image, title, brand — with no part number, so the title has room.
         */}
         {related.length > 0 && (
-          <section className="border-ih-border border-t pb-16 pt-8 sm:pb-20">
+          <section className="border-ih-border border-t pt-8 pb-16 sm:pb-20">
             <div className="mb-5">
-              <div className="text-ih-muted mb-2 font-mono text-[11px] uppercase tracking-[0.16em]">
+              <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.16em] uppercase">
                 RELATED · OFTEN PAIRED WITH
               </div>
-              <h2 className="text-[17px] font-semibold leading-tight tracking-[-0.015em] sm:text-[24px]">
+              <h2 className="text-[17px] leading-tight font-semibold tracking-[-0.015em] sm:text-[24px]">
                 Engineers viewing this also looked at
               </h2>
             </div>
@@ -892,7 +901,7 @@ export default async function ProductPage({ params }: Props) {
                       )}
                     </div>
                     <div className="flex flex-1 flex-col gap-1.5 p-3 sm:p-4">
-                      <h3 className="group-hover:text-ih-accent line-clamp-3 text-[13.5px] font-medium leading-[1.35] transition-colors sm:text-[14px]">
+                      <h3 className="group-hover:text-ih-accent line-clamp-3 text-[13.5px] leading-[1.35] font-medium transition-colors sm:text-[14px]">
                         {rel.title}
                       </h3>
                       {rel.brand && (

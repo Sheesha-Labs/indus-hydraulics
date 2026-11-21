@@ -17,7 +17,15 @@ import DeratingChart from '../../../../components/resources/DeratingChart'
 import JointRatingCalculator from '../../../../components/resources/JointRatingCalculator'
 import ResourcePage from '../../../../components/resources/ResourcePage'
 import { ResourceSection } from '../../../../components/resources/ResourceLayout'
-import { RefTable, TD, TD_NUM, TD_ROW_HEAD, TH, TH_NUM, TR } from '../../../../components/resources/RefTable'
+import {
+  RefTable,
+  TD,
+  TD_NUM,
+  TD_ROW_HEAD,
+  TH,
+  TH_NUM,
+  TR,
+} from '../../../../components/resources/RefTable'
 import { getResourcesShared } from '../../../../lib/resources-content'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 
@@ -75,7 +83,7 @@ function Rating({ psi }: { psi: number | undefined }) {
   return (
     <span className="flex flex-col items-end leading-tight">
       <span className="text-ih-ink">{fmt(psi)}</span>
-      <span className="text-[11px] text-ih-muted">{fmt(psiToBar(psi))} bar</span>
+      <span className="text-ih-muted text-[11px]">{fmt(psiToBar(psi))} bar</span>
     </span>
   )
 }
@@ -91,7 +99,12 @@ export default async function FittingPressureRatingsPage() {
     description: `Maximum working pressure for carbon steel hydraulic adapters and fittings by connection type and dash size — ${totals.ratings} ratings.`,
     url: urlFor(PATH),
     isAccessibleForFree: true,
-    variableMeasured: ['Connection type', 'Dash size', 'Maximum working pressure (psi)', 'Maximum working pressure (bar)'],
+    variableMeasured: [
+      'Connection type',
+      'Dash size',
+      'Maximum working pressure (psi)',
+      'Maximum working pressure (bar)',
+    ],
   }
 
   return (
@@ -140,8 +153,9 @@ export default async function FittingPressureRatingsPage() {
           title: 'A guideline, not a guarantee',
           body: (
             <>
-              These are the maker’s recommended maximums for carbon steel. For stainless, brass, temperature above 100 °C or
-              shock loads, send us the service and we will confirm the rating in writing.
+              These are the maker’s recommended maximums for carbon steel. For stainless, brass,
+              temperature above 100 °C or shock loads, send us the service and we will confirm the
+              rating in writing.
             </>
           ),
         }}
@@ -166,9 +180,9 @@ export default async function FittingPressureRatingsPage() {
         >
           <HairlineGrid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
             {CONDITIONS.map((item) => (
-              <HairlineCell key={item.title} className="flex flex-col gap-2 px-5 pb-5 pt-[18px]">
+              <HairlineCell key={item.title} className="flex flex-col gap-2 px-5 pt-[18px] pb-5">
                 <h3 className="text-[15.5px] font-medium tracking-[-0.02em]">{item.title}</h3>
-                <p className="text-[12.5px] leading-[1.6] text-ih-muted">{item.body}</p>
+                <p className="text-ih-muted text-[12.5px] leading-[1.6]">{item.body}</p>
               </HairlineCell>
             ))}
           </HairlineGrid>
@@ -180,9 +194,13 @@ export default async function FittingPressureRatingsPage() {
           title="Inch connections, carbon steel."
           lede={
             <>
-              Maximum working pressure in psi, with bar beneath. The last column is two-wire SAE 100R2 hose of the same
-              size — when it is lower than both ends, the hose is the limit, not the fitting. Hose ratings by grade are in{' '}
-              <Link href="/blog/hydraulic-hose-pressure-by-size" className="text-ih-accent hover:underline">
+              Maximum working pressure in psi, with bar beneath. The last column is two-wire SAE
+              100R2 hose of the same size — when it is lower than both ends, the hose is the limit,
+              not the fitting. Hose ratings by grade are in{' '}
+              <Link
+                href="/blog/hydraulic-hose-pressure-by-size"
+                className="text-ih-accent hover:underline"
+              >
                 hose pressure by size
               </Link>
               .
@@ -202,7 +220,7 @@ export default async function FittingPressureRatingsPage() {
                     {c.short}
                   </th>
                 ))}
-                <th scope="col" className={`${TH_NUM} border-l border-ih-border`}>
+                <th scope="col" className={`${TH_NUM} border-ih-border border-l`}>
                   100R2 hose <span className="text-ih-muted-2">ref.</span>
                 </th>
               </tr>
@@ -212,14 +230,14 @@ export default async function FittingPressureRatingsPage() {
               <tr key={row.dash} className={TR}>
                 <th scope="row" className={TD_ROW_HEAD}>
                   -{row.dash}
-                  <span className="ml-2 font-normal text-ih-muted">{row.nominal}</span>
+                  <span className="text-ih-muted ml-2 font-normal">{row.nominal}</span>
                 </th>
                 {RATING_CONNECTIONS.map((c) => (
                   <td key={c.id} className={TD_NUM}>
                     <Rating psi={row.psi[c.id]} />
                   </td>
                 ))}
-                <td className={`${TD_NUM} border-l border-ih-border bg-ih-surface-2/50`}>
+                <td className={`${TD_NUM} border-ih-border bg-ih-surface-2/50 border-l`}>
                   <Rating psi={row.r2 ?? undefined} />
                 </td>
               </tr>
@@ -227,8 +245,8 @@ export default async function FittingPressureRatingsPage() {
           </RefTable>
           <ul className="mt-5 grid grid-cols-1 gap-x-8 gap-y-2.5 md:grid-cols-2">
             {RATING_CONNECTIONS.map((c) => (
-              <li key={c.id} className="text-[13px] leading-[1.55] text-ih-ink-2">
-                <span className="mono mr-2 text-[11px] text-ih-ink">{c.short}</span>
+              <li key={c.id} className="text-ih-ink-2 text-[13px] leading-[1.55]">
+                <span className="mono text-ih-ink mr-2 text-[11px]">{c.short}</span>
                 <span className="text-ih-muted">{c.standard} · </span>
                 {c.note}
               </li>

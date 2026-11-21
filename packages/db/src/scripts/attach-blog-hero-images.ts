@@ -175,387 +175,1730 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
     alt: 'A technician working on the hydraulic hose where it crosses from chassis to body on a raised tipper, safety prop fitted, mixer parked behind',
   },
   // ── Second sprint, 2026-08-25. The 63 articles published after PR #271.
-  { slug: 'cross-threaded-hydraulic-port', alt: 'A gloved hand backing a steel adapter out of a hydraulic valve manifold, the adapter sitting visibly askew in the port, a second adapter with bruised threads held up beside it' },
-  { slug: 'hose-burst-at-the-fitting', alt: 'A failed hydraulic hose split open where it enters its crimped steel ferrule, frayed reinforcement wire fanned out at the break' },
-  { slug: 'hose-failure-post-mortem', alt: 'Five cut sections of failed hydraulic hose laid in a row on a workbench beside a steel rule and calipers, each showing a different kind of damage' },
-  { slug: 'hydraulic-hose-abrasion-failure', alt: 'A hydraulic hose worn through its cover against a sharp steel edge on a machine frame, silver reinforcement braid showing at the flat' },
-  { slug: 'hydraulic-hose-cover-blistering', alt: 'Macro of raised blisters swelling out of a black hydraulic hose cover, one with a pinhole at its crown' },
-  { slug: 'hydraulic-hose-cover-cracking', alt: 'A sun-aged hydraulic hose cover crazed with a fine network of cracks, the black surface gone chalky grey' },
-  { slug: 'hydraulic-hose-crimp-faults', alt: 'Two crimped hose ends side by side on a steel bench with a vernier caliper set across the flats of one ferrule' },
-  { slug: 'hydraulic-hose-installed-with-a-twist', alt: 'A hydraulic hose fitted between two machine ports with its printed line corkscrewing around the cover instead of running straight' },
-  { slug: 'hydraulic-hose-kinked', alt: 'A hydraulic hose buckled into a sharp kink immediately where it leaves a straight fitting on a cylinder' },
-  { slug: 'hydraulic-hose-tube-swelling', alt: 'A cut length of hydraulic hose held to camera, its inner tube swollen soft and glossy and closing down the bore' },
-  { slug: 'hydraulic-hose-wire-corrosion', alt: 'The cut end of a hydraulic hose with a sound outer cover but rust-orange, pitted reinforcement wire inside' },
-  { slug: 'new-hydraulic-hose-weeping', alt: 'A technician wiping a freshly fitted hydraulic hose joint dry with a rag, a bead of oil forming at the union nut' },
-  { slug: 'split-female-quick-coupler', alt: 'The female half of a hydraulic quick coupler on a bench with a clean lengthwise crack through the body at the locking ball groove' },
-  { slug: 'bspp-bonded-seal-sizing', alt: 'Gloved fingers sliding a bonded seal down the parallel male thread of a steel adapter, a tray of assorted bonded seals behind' },
-  { slug: 'hydraulic-thread-size-and-pitch-reference', alt: 'A bench identification station with thread pitch gauges fanned open, a vernier caliper and an array of steel hydraulic fittings' },
-  { slug: 'photographing-a-hydraulic-fitting', alt: 'A technician photographing a hydraulic fitting with a phone, the fitting standing square-on beside a steel rule under a work lamp' },
-  { slug: 'stacking-hydraulic-adapters', alt: 'Three steel adapters threaded end to end out of one port on a hydraulic valve block, a hose hanging from the last at an angle' },
-  { slug: 'desalination-and-water-treatment-hose', alt: 'A flexible hose flanged to a manifold inside a desalination plant, rows of white pressure vessels and stainless pipework behind' },
-  { slug: 'hydraulic-hose-coastal-corrosion', alt: 'Hydraulic hose fittings at a coastal port pitted with white salt bloom and rust creeping out from under the ferrule' },
-  { slug: 'hydraulic-hose-in-uae-heat', alt: 'An excavator boom cylinder and its hydraulic hoses in an open desert yard at midday, heat shimmer distorting the air above the machine' },
-  { slug: 'hydraulic-hose-sand-abrasion', alt: 'Hydraulic hoses on a machine arm coated in fine desert sand, one showing a scoured sand-blasted patch' },
-  { slug: 'hydraulic-hose-shelf-life-storage', alt: 'Coiled hydraulic hose assemblies hung and stacked on a warehouse stores rack, some coils bright and new, others visibly dusty' },
-  { slug: 'hydraulic-hose-uv-and-ozone', alt: 'A sun-bleached hydraulic hose gone chalky grey and finely crazed fitted beside a newer black hose on the same machine' },
-  { slug: 'offshore-hydraulic-hose', alt: 'A technician in helmet and lifejacket checking hydraulic hose connections on offshore deck machinery, open grey water beyond the handrail' },
-  { slug: 'why-summer-is-harder-on-hydraulic-hose', alt: 'Hydraulic hose assemblies coiled on hot concrete in a machinery yard at the peak of a Gulf summer afternoon' },
-  { slug: 'field-re-hosing-kit', alt: 'The open side doors of a mobile hose service van on site, showing bulk hose reels, fitting drawers, a bolted-down crimper and finished assemblies on a rail' },
-  { slug: 'how-to-measure-a-hydraulic-hose', alt: 'A hydraulic hose lying straight on a bench with a steel tape stretched from one sealing face to the other' },
-  { slug: 'hydraulic-fitting-make-up-torque', alt: 'Two spanners working one hydraulic joint in opposition, one holding the adapter body while the other turns the union nut' },
-  { slug: 'hydraulic-quick-couplers-iso-7241', alt: 'Hydraulic quick coupler halves arranged on a steel bench, showing flush flat faces, recessed poppets and a threaded collar side by side' },
-  { slug: 'backhoe-hydraulic-hose', alt: 'A backhoe loader on site with hose runs visible along both the front loader arms and the rear excavator boom, a technician crouched at the boom pivot' },
-  { slug: 'boom-lift-hydraulic-hose', alt: 'Bundled hydraulic hoses strapped along the raised boom of a self-propelled access platform, seen from below against the sky' },
-  { slug: 'concrete-pump-hydraulic-hose', alt: 'The base of a deployed concrete placing boom, dense with high-pressure hydraulic lines and steel pipework under concrete dust' },
-  { slug: 'detaching-a-hose-on-a-modern-machine', alt: 'A technician reaching into an opened access compartment on an excavator where hoses run through moulded clamp blocks, removed fasteners laid out on a rag' },
-  { slug: 'injection-moulding-hydraulic-hose', alt: 'Hydraulic hoses and steel lines running close past the hot heater bands of a plastic injection moulding machine' },
-  { slug: 'log-splitter-and-shop-press-hose', alt: 'A hydraulic workshop press with its ram partway onto a steel workpiece, pump unit, pressure gauge and two hoses in frame' },
-  { slug: 'mobile-crane-hydraulic-hose', alt: 'Hydraulic hoses feeding an outrigger leg on an all-terrain mobile crane set up on site' },
-  { slug: 'port-equipment-hydraulic-hose', alt: 'A reach stacker working in a container terminal, hydraulic hose runs along the lifting boom, stacked containers and a gantry crane behind' },
-  { slug: 'refuse-truck-hydraulic-hose', alt: 'The raised tailgate of a refuse collection truck exposing grimy compaction cylinders, hoses and a hydraulic manifold' },
-  { slug: 'removing-a-seized-hydraulic-fitting', alt: 'A technician working two spanners on a corroded hydraulic fitting in a machine manifold, the hex visibly rounding, penetrating fluid to hand' },
-  { slug: 'skid-steer-hydraulic-hose', alt: 'The auxiliary quick couplers on a skid steer loader arm with dust caps hanging beside them, a gloved hand wiping a coupler face clean' },
-  { slug: 'tractor-hydraulic-hose', alt: 'The rear remote coupler bank of an agricultural tractor, oil-darkened and mismatched, with two implement hoses plugged in and one hanging loose' },
-  { slug: 'truck-crane-hydraulic-hose', alt: 'Hydraulic hoses tracking around the articulated joints of a knuckle-boom crane mounted behind a flatbed truck cab' },
-  { slug: 'wheel-loader-hydraulic-hose', alt: 'A technician checking the hoses running down a wheel loader lift arm to its lift cylinder, quarry stockpiles behind' },
-  { slug: 'contamination-during-a-hose-change', alt: 'Open hydraulic ports on a machine capped with coloured plastic plugs, the removed hose assembly capped at both ends in a clean drain tray' },
-  { slug: 'grease-and-zerk-fittings', alt: 'A grease gun coupler pushed onto a small grease nipple on a machine pivot pin, fresh grease just emerging from the joint' },
-  { slug: 'mini-excavator-hose-maintenance', alt: 'A technician crouched at the boom-to-arm crossing of a mini excavator, lifting a hose to inspect underneath it' },
-  { slug: 'bulk-hose-or-finished-assemblies', alt: 'A warehouse aisle with reels of bulk hydraulic hose racked on one side and finished tagged hose assemblies hanging on the other' },
-  { slug: 'how-to-cross-reference-a-hydraulic-hose', alt: 'A staff member at a trade counter comparing a customer’s oil-stained hose assembly against a new one, calipers to hand' },
-  { slug: 'hydraulic-hose-assembly-cost', alt: 'An assembly bench from above with a cut hose length, two fittings, two ferrules and a set of crimp dies laid out ready to build' },
-  { slug: 'hydraulic-hose-kits-for-a-fleet', alt: 'An open transport case packed with coiled and tagged hydraulic hose assemblies in divided compartments, a gloved hand lifting one out' },
-  { slug: 'hydraulic-hose-lead-times', alt: 'A distribution warehouse aisle of pallet racking stacked with hose reels, boxed fittings and shrink-wrapped export pallets' },
-  { slug: 'hydraulic-hose-stocking-policy', alt: 'A wall of small parts bins in a stores area densely filled with steel hydraulic fittings sorted by type' },
-  { slug: 'should-you-buy-a-hose-crimper', alt: 'A hydraulic hose crimping machine on a bench with its full set of die rings laid out in an arc from largest to smallest' },
-  { slug: 'unbranded-hydraulic-fittings', alt: 'Two trays of similar steel hydraulic fittings side by side, one set carrying faint forged markings on the hex flats and the other completely bare' },
-  { slug: 'what-to-send-for-a-hose-quote', alt: 'A customer handing a failed hydraulic hose assembly across a trade counter, a phone showing photographs on the counter beside them' },
-  { slug: 'trapped-pressure-quick-coupler', alt: 'A hydraulic breaker attachment lying on hot concrete in full sun, its capped coupler halves in the foreground and an operator crouched beside them' },
-  { slug: 'en-853-856-857-vs-sae-100r', alt: 'Four hydraulic hose sections stood on end showing different internal constructions in cut face, from single wire braid to multiple spiral layers' },
-  { slug: 'how-to-read-a-hose-layline', alt: 'Raking light along the cover of a hydraulic hose, the printed lay-line catching as a raised pale ribbon running away into soft focus' },
-  { slug: 'hydraulic-hose-dash-sizes', alt: 'Seven cut hydraulic hose lengths stood on end in a line from smallest bore to largest, every open bore visible' },
-  { slug: 'sae-100r-hose-types', alt: 'Hydraulic hose samples fanned out on a bench, each cut back in steps to expose tube, reinforcement and cover' },
-  { slug: 'sae-j518-code-61-code-62-flanges', alt: 'Two four-bolt split flange heads of the same bore side by side, one visibly thicker with wider bolt spacing, a steel rule across both' },
-  { slug: 'stopping-an-npt-thread-leak', alt: 'Gloved hands applying anaerobic thread sealant to the tapered male thread of a steel hydraulic fitting, a roll of PTFE tape set aside' },
-  { slug: 'where-jic-is-the-wrong-choice', alt: 'Two hydraulic fittings upright side by side, one presenting a machined 37 degree cone and the other a flat face with a seated O-ring' },
+  {
+    slug: 'cross-threaded-hydraulic-port',
+    alt: 'A gloved hand backing a steel adapter out of a hydraulic valve manifold, the adapter sitting visibly askew in the port, a second adapter with bruised threads held up beside it',
+  },
+  {
+    slug: 'hose-burst-at-the-fitting',
+    alt: 'A failed hydraulic hose split open where it enters its crimped steel ferrule, frayed reinforcement wire fanned out at the break',
+  },
+  {
+    slug: 'hose-failure-post-mortem',
+    alt: 'Five cut sections of failed hydraulic hose laid in a row on a workbench beside a steel rule and calipers, each showing a different kind of damage',
+  },
+  {
+    slug: 'hydraulic-hose-abrasion-failure',
+    alt: 'A hydraulic hose worn through its cover against a sharp steel edge on a machine frame, silver reinforcement braid showing at the flat',
+  },
+  {
+    slug: 'hydraulic-hose-cover-blistering',
+    alt: 'Macro of raised blisters swelling out of a black hydraulic hose cover, one with a pinhole at its crown',
+  },
+  {
+    slug: 'hydraulic-hose-cover-cracking',
+    alt: 'A sun-aged hydraulic hose cover crazed with a fine network of cracks, the black surface gone chalky grey',
+  },
+  {
+    slug: 'hydraulic-hose-crimp-faults',
+    alt: 'Two crimped hose ends side by side on a steel bench with a vernier caliper set across the flats of one ferrule',
+  },
+  {
+    slug: 'hydraulic-hose-installed-with-a-twist',
+    alt: 'A hydraulic hose fitted between two machine ports with its printed line corkscrewing around the cover instead of running straight',
+  },
+  {
+    slug: 'hydraulic-hose-kinked',
+    alt: 'A hydraulic hose buckled into a sharp kink immediately where it leaves a straight fitting on a cylinder',
+  },
+  {
+    slug: 'hydraulic-hose-tube-swelling',
+    alt: 'A cut length of hydraulic hose held to camera, its inner tube swollen soft and glossy and closing down the bore',
+  },
+  {
+    slug: 'hydraulic-hose-wire-corrosion',
+    alt: 'The cut end of a hydraulic hose with a sound outer cover but rust-orange, pitted reinforcement wire inside',
+  },
+  {
+    slug: 'new-hydraulic-hose-weeping',
+    alt: 'A technician wiping a freshly fitted hydraulic hose joint dry with a rag, a bead of oil forming at the union nut',
+  },
+  {
+    slug: 'split-female-quick-coupler',
+    alt: 'The female half of a hydraulic quick coupler on a bench with a clean lengthwise crack through the body at the locking ball groove',
+  },
+  {
+    slug: 'bspp-bonded-seal-sizing',
+    alt: 'Gloved fingers sliding a bonded seal down the parallel male thread of a steel adapter, a tray of assorted bonded seals behind',
+  },
+  {
+    slug: 'hydraulic-thread-size-and-pitch-reference',
+    alt: 'A bench identification station with thread pitch gauges fanned open, a vernier caliper and an array of steel hydraulic fittings',
+  },
+  {
+    slug: 'photographing-a-hydraulic-fitting',
+    alt: 'A technician photographing a hydraulic fitting with a phone, the fitting standing square-on beside a steel rule under a work lamp',
+  },
+  {
+    slug: 'stacking-hydraulic-adapters',
+    alt: 'Three steel adapters threaded end to end out of one port on a hydraulic valve block, a hose hanging from the last at an angle',
+  },
+  {
+    slug: 'desalination-and-water-treatment-hose',
+    alt: 'A flexible hose flanged to a manifold inside a desalination plant, rows of white pressure vessels and stainless pipework behind',
+  },
+  {
+    slug: 'hydraulic-hose-coastal-corrosion',
+    alt: 'Hydraulic hose fittings at a coastal port pitted with white salt bloom and rust creeping out from under the ferrule',
+  },
+  {
+    slug: 'hydraulic-hose-in-uae-heat',
+    alt: 'An excavator boom cylinder and its hydraulic hoses in an open desert yard at midday, heat shimmer distorting the air above the machine',
+  },
+  {
+    slug: 'hydraulic-hose-sand-abrasion',
+    alt: 'Hydraulic hoses on a machine arm coated in fine desert sand, one showing a scoured sand-blasted patch',
+  },
+  {
+    slug: 'hydraulic-hose-shelf-life-storage',
+    alt: 'Coiled hydraulic hose assemblies hung and stacked on a warehouse stores rack, some coils bright and new, others visibly dusty',
+  },
+  {
+    slug: 'hydraulic-hose-uv-and-ozone',
+    alt: 'A sun-bleached hydraulic hose gone chalky grey and finely crazed fitted beside a newer black hose on the same machine',
+  },
+  {
+    slug: 'offshore-hydraulic-hose',
+    alt: 'A technician in helmet and lifejacket checking hydraulic hose connections on offshore deck machinery, open grey water beyond the handrail',
+  },
+  {
+    slug: 'why-summer-is-harder-on-hydraulic-hose',
+    alt: 'Hydraulic hose assemblies coiled on hot concrete in a machinery yard at the peak of a Gulf summer afternoon',
+  },
+  {
+    slug: 'field-re-hosing-kit',
+    alt: 'The open side doors of a mobile hose service van on site, showing bulk hose reels, fitting drawers, a bolted-down crimper and finished assemblies on a rail',
+  },
+  {
+    slug: 'how-to-measure-a-hydraulic-hose',
+    alt: 'A hydraulic hose lying straight on a bench with a steel tape stretched from one sealing face to the other',
+  },
+  {
+    slug: 'hydraulic-fitting-make-up-torque',
+    alt: 'Two spanners working one hydraulic joint in opposition, one holding the adapter body while the other turns the union nut',
+  },
+  {
+    slug: 'hydraulic-quick-couplers-iso-7241',
+    alt: 'Hydraulic quick coupler halves arranged on a steel bench, showing flush flat faces, recessed poppets and a threaded collar side by side',
+  },
+  {
+    slug: 'backhoe-hydraulic-hose',
+    alt: 'A backhoe loader on site with hose runs visible along both the front loader arms and the rear excavator boom, a technician crouched at the boom pivot',
+  },
+  {
+    slug: 'boom-lift-hydraulic-hose',
+    alt: 'Bundled hydraulic hoses strapped along the raised boom of a self-propelled access platform, seen from below against the sky',
+  },
+  {
+    slug: 'concrete-pump-hydraulic-hose',
+    alt: 'The base of a deployed concrete placing boom, dense with high-pressure hydraulic lines and steel pipework under concrete dust',
+  },
+  {
+    slug: 'detaching-a-hose-on-a-modern-machine',
+    alt: 'A technician reaching into an opened access compartment on an excavator where hoses run through moulded clamp blocks, removed fasteners laid out on a rag',
+  },
+  {
+    slug: 'injection-moulding-hydraulic-hose',
+    alt: 'Hydraulic hoses and steel lines running close past the hot heater bands of a plastic injection moulding machine',
+  },
+  {
+    slug: 'log-splitter-and-shop-press-hose',
+    alt: 'A hydraulic workshop press with its ram partway onto a steel workpiece, pump unit, pressure gauge and two hoses in frame',
+  },
+  {
+    slug: 'mobile-crane-hydraulic-hose',
+    alt: 'Hydraulic hoses feeding an outrigger leg on an all-terrain mobile crane set up on site',
+  },
+  {
+    slug: 'port-equipment-hydraulic-hose',
+    alt: 'A reach stacker working in a container terminal, hydraulic hose runs along the lifting boom, stacked containers and a gantry crane behind',
+  },
+  {
+    slug: 'refuse-truck-hydraulic-hose',
+    alt: 'The raised tailgate of a refuse collection truck exposing grimy compaction cylinders, hoses and a hydraulic manifold',
+  },
+  {
+    slug: 'removing-a-seized-hydraulic-fitting',
+    alt: 'A technician working two spanners on a corroded hydraulic fitting in a machine manifold, the hex visibly rounding, penetrating fluid to hand',
+  },
+  {
+    slug: 'skid-steer-hydraulic-hose',
+    alt: 'The auxiliary quick couplers on a skid steer loader arm with dust caps hanging beside them, a gloved hand wiping a coupler face clean',
+  },
+  {
+    slug: 'tractor-hydraulic-hose',
+    alt: 'The rear remote coupler bank of an agricultural tractor, oil-darkened and mismatched, with two implement hoses plugged in and one hanging loose',
+  },
+  {
+    slug: 'truck-crane-hydraulic-hose',
+    alt: 'Hydraulic hoses tracking around the articulated joints of a knuckle-boom crane mounted behind a flatbed truck cab',
+  },
+  {
+    slug: 'wheel-loader-hydraulic-hose',
+    alt: 'A technician checking the hoses running down a wheel loader lift arm to its lift cylinder, quarry stockpiles behind',
+  },
+  {
+    slug: 'contamination-during-a-hose-change',
+    alt: 'Open hydraulic ports on a machine capped with coloured plastic plugs, the removed hose assembly capped at both ends in a clean drain tray',
+  },
+  {
+    slug: 'grease-and-zerk-fittings',
+    alt: 'A grease gun coupler pushed onto a small grease nipple on a machine pivot pin, fresh grease just emerging from the joint',
+  },
+  {
+    slug: 'mini-excavator-hose-maintenance',
+    alt: 'A technician crouched at the boom-to-arm crossing of a mini excavator, lifting a hose to inspect underneath it',
+  },
+  {
+    slug: 'bulk-hose-or-finished-assemblies',
+    alt: 'A warehouse aisle with reels of bulk hydraulic hose racked on one side and finished tagged hose assemblies hanging on the other',
+  },
+  {
+    slug: 'how-to-cross-reference-a-hydraulic-hose',
+    alt: 'A staff member at a trade counter comparing a customer’s oil-stained hose assembly against a new one, calipers to hand',
+  },
+  {
+    slug: 'hydraulic-hose-assembly-cost',
+    alt: 'An assembly bench from above with a cut hose length, two fittings, two ferrules and a set of crimp dies laid out ready to build',
+  },
+  {
+    slug: 'hydraulic-hose-kits-for-a-fleet',
+    alt: 'An open transport case packed with coiled and tagged hydraulic hose assemblies in divided compartments, a gloved hand lifting one out',
+  },
+  {
+    slug: 'hydraulic-hose-lead-times',
+    alt: 'A distribution warehouse aisle of pallet racking stacked with hose reels, boxed fittings and shrink-wrapped export pallets',
+  },
+  {
+    slug: 'hydraulic-hose-stocking-policy',
+    alt: 'A wall of small parts bins in a stores area densely filled with steel hydraulic fittings sorted by type',
+  },
+  {
+    slug: 'should-you-buy-a-hose-crimper',
+    alt: 'A hydraulic hose crimping machine on a bench with its full set of die rings laid out in an arc from largest to smallest',
+  },
+  {
+    slug: 'unbranded-hydraulic-fittings',
+    alt: 'Two trays of similar steel hydraulic fittings side by side, one set carrying faint forged markings on the hex flats and the other completely bare',
+  },
+  {
+    slug: 'what-to-send-for-a-hose-quote',
+    alt: 'A customer handing a failed hydraulic hose assembly across a trade counter, a phone showing photographs on the counter beside them',
+  },
+  {
+    slug: 'trapped-pressure-quick-coupler',
+    alt: 'A hydraulic breaker attachment lying on hot concrete in full sun, its capped coupler halves in the foreground and an operator crouched beside them',
+  },
+  {
+    slug: 'en-853-856-857-vs-sae-100r',
+    alt: 'Four hydraulic hose sections stood on end showing different internal constructions in cut face, from single wire braid to multiple spiral layers',
+  },
+  {
+    slug: 'how-to-read-a-hose-layline',
+    alt: 'Raking light along the cover of a hydraulic hose, the printed lay-line catching as a raised pale ribbon running away into soft focus',
+  },
+  {
+    slug: 'hydraulic-hose-dash-sizes',
+    alt: 'Seven cut hydraulic hose lengths stood on end in a line from smallest bore to largest, every open bore visible',
+  },
+  {
+    slug: 'sae-100r-hose-types',
+    alt: 'Hydraulic hose samples fanned out on a bench, each cut back in steps to expose tube, reinforcement and cover',
+  },
+  {
+    slug: 'sae-j518-code-61-code-62-flanges',
+    alt: 'Two four-bolt split flange heads of the same bore side by side, one visibly thicker with wider bolt spacing, a steel rule across both',
+  },
+  {
+    slug: 'stopping-an-npt-thread-leak',
+    alt: 'Gloved hands applying anaerobic thread sealant to the tapered male thread of a steel hydraulic fitting, a roll of PTFE tape set aside',
+  },
+  {
+    slug: 'where-jic-is-the-wrong-choice',
+    alt: 'Two hydraulic fittings upright side by side, one presenting a machined 37 degree cone and the other a flat face with a seated O-ring',
+  },
   // ── Third sprint, 2026-10-08. The 139 articles published without a hero
   // after the second sprint: the 1 Sep batch, the lifting waves and the October
   // waves. Generated with GPT Image 2.5 (one with Nano Banana 2.1) and checked
   // against each article before upload.
-  { slug: "hydraulic-hose-assembly-guide", alt: "A technician feeding a hydraulic hose and fitting into a crimping machine, finished hose assemblies hanging on a rack behind" },
-  { slug: "braided-vs-spiral-hose-fittings", alt: "Two hydraulic hose assemblies side by side, a thinner hose with a short crimped ferrule and a thicker hose with a longer, heavier ferrule" },
-  { slug: "what-to-send-for-a-fittings-quote", alt: "A used hydraulic adapter on a desk beside a caliper and a phone photographing it for a quote request" },
-  { slug: "cross-referencing-a-fitting-part-number", alt: "Hands holding a worn hydraulic fitting next to a new replacement of the same shape over an open parts catalogue" },
-  { slug: "adapter-kit-for-a-mixed-fleet", alt: "An open compartment case of sorted hydraulic adapters on a workshop bench, mixed machines parked in the yard beyond" },
-  { slug: "spares-list-for-a-remote-site", alt: "A shipping container site store at a remote camp, shelves of hydraulic fittings, hoses and seal kits inside" },
-  { slug: "inspecting-fittings-on-arrival", alt: "A gloved hand holding a hydraulic adapter up to check its thread beside an open carton of bagged fittings on a loading bay" },
-  { slug: "plating-and-corrosion-on-fittings", alt: "A row of hydraulic fittings showing different platings, from bright zinc-nickel to white corrosion and red rust at the hex edges" },
-  { slug: "when-stainless-is-worth-it", alt: "A stainless and a plated carbon steel hydraulic adapter side by side on a wet steel plate at a coastal quay" },
-  { slug: "air-or-sea-for-a-fittings-order", alt: "A small parcel of hydraulic fittings on an air cargo pallet, a container ship visible through the terminal windows" },
-  { slug: "consolidating-fittings-with-a-hose-order", alt: "A worker stretch-wrapping one pallet of hydraulic hose coils and cartons of fittings for a single consignment" },
-  { slug: "substituting-a-fitting-safely", alt: "At night by a work lamp, a technician compares two similar hydraulic fittings beside a stopped excavator" },
-  { slug: "ss316l-hydraulic-fittings", alt: "Passivated 316L stainless hydraulic fittings — adapters, elbows, tees, a banjo and an SAE flange — laid out on a bench" },
-  { slug: "reading-a-weeping-joint", alt: "A gloved hand with a rag beside a hydraulic hose joint on a yellow machine, a drop of oil forming under the swivel nut" },
-  { slug: "over-tightened-fitting-diagnosis", alt: "A disassembled hydraulic fitting with a crushed seat and a cracked swivel nut, a torque wrench beside it" },
-  { slug: "why-fittings-seize-in-coastal-air", alt: "A hydraulic fitting joint crusted with rust and salt on a port machine, a spanner on the seized nut" },
-  { slug: "damaged-port-repair-or-scrap", alt: "A hydraulic valve block with a damaged threaded port under a flashlight, a tap set beside it" },
-  { slug: "sealant-on-hydraulic-threads", alt: "A taped tapered-thread fitting beside a cone-seat fitting with shredded PTFE tape caught on its seat" },
-  { slug: "galvanic-corrosion-in-fittings", alt: "A bright stainless fitting in a plated steel port with corrosion forming only on the plated metal around it" },
-  { slug: "dirt-ingress-in-transit-and-storage", alt: "An uncapped hydraulic adapter with grit in its bore beside a clean capped and bagged fitting on a warehouse shelf" },
-  { slug: "copper-mine-hydraulic-fittings", alt: "A giant haul truck in an open-pit copper mine, its hoist cylinder hoses visible, the concentrator in the distance" },
-  { slug: "gold-plant-hydraulic-fittings", alt: "Hydraulic lines on a slurry pump inside a gold processing plant, leach tanks behind" },
-  { slug: "oilfield-fittings-in-west-africa", alt: "A tropical oilfield yard with flow equipment on one side and crates of plated hydraulic fittings on the other" },
-  { slug: "agriculture-and-construction-fittings", alt: "A rural workshop yard with a tractor, backhoe loader and tipper, a mechanic sorting hydraulic fittings at the bench" },
-  { slug: "quarry-and-crusher-fittings", alt: "Dust-coated hydraulic hoses and fittings clamped to a jaw crusher frame in a quarry" },
-  { slug: "water-well-drilling-rig-fittings", alt: "A truck-mounted water well drilling rig on dry savanna, an open toolbox of hydraulic spares on the deck" },
-  { slug: "port-and-terminal-fittings", alt: "A reach stacker working a container terminal at dusk, its hydraulic hoses in close focus" },
-  { slug: "sugar-mill-and-agro-processing-fittings", alt: "A cane loader working beside piles of sugar cane at a sugar mill during harvest" },
-  { slug: "buying-fittings-in-south-africa", alt: "A customer handing a used hose assembly over a hydraulics trade counter, shelves of hose and fittings behind" },
-  { slug: "factory-and-fixed-plant-fittings", alt: "A hydraulic power unit with neat steel tubing and uniform fittings on a clean factory floor" },
-  { slug: "saber-certificate-for-hydraulic-hose", alt: "A gloved hand on a shrink-wrapped coil of hydraulic hose on a pallet, a clipboard of certificates and a laptop beside it" },
-  { slug: "gulf-conformity-mark-hose-fittings", alt: "A hose sample and fittings on a procurement desk beside a binder of compliance documents, a Gulf city skyline outside" },
-  { slug: "certificate-of-origin-gcc-duty", alt: "A customs officer with a clipboard checking an open container of hydraulic hose in a Gulf port" },
-  { slug: "hose-assembly-test-certificate", alt: "A hose assembly under proof test inside a steel safety cage, a technician watching the pressure gauge" },
-  { slug: "material-test-certificate-en-10204", alt: "Forged fitting blanks and bar stock with a heat tag, a mill test certificate clipped beside them" },
-  { slug: "nace-mr0175-hose-documentation", alt: "A heavy oilfield hose assembly with stainless end fittings on a rack, a document wallet tied to it" },
-  { slug: "vendor-approval-for-hose-supply", alt: "A delivery truck stopped at a desert oil facility checkpoint, a guard checking papers" },
-  { slug: "verifying-a-genuine-hydraulic-hose", alt: "A gloved hand holding a hydraulic hose behind its crimped fitting, the printed layline running along the cover" },
-  { slug: "gcc-import-documents-for-hose", alt: "Freight trucks queued at a desert customs checkpoint, one carrying wrapped coils of hydraulic hose" },
-  { slug: "oilfield-hose-document-pack", alt: "A rotary drilling hose coiled on a skid with a document wallet of certificates strapped to it, a rig behind" },
-  { slug: "cam-and-groove-coupling-types", alt: "Cam and groove couplings on a bench: female couplers with cam arms, male adapters with threaded and hose-shank ends, one coupler on a suction hose" },
-  { slug: "storz-coupling-sizes", alt: "Aluminium Storz couplings of several sizes on a fire station bench, one on a red fire hose" },
-  { slug: "bauer-couplings-explained", alt: "A galvanised Bauer lever coupling joining two irrigation pipes on a farm field" },
-  { slug: "guillemin-couplings-explained", alt: "Two symmetrical Guillemin couplings being joined by hand on an industrial water hose" },
-  { slug: "gost-barcelona-and-geka-couplings", alt: "A GOST, a Barcelona and a Geka coupling side by side on a bench, three symmetrical patterns that fit only themselves" },
-  { slug: "universal-air-couplings-explained", alt: "Two universal claw air couplings locked together with a safety whip check on a compressor hose" },
-  { slug: "kc-nipples-and-shank-couplings", alt: "Galvanised KC nipples, a pin-lug shank coupling and a hose mender laid out on a bench, one clamped into a rubber hose" },
-  { slug: "ground-joint-steam-couplings", alt: "A steam hose with a ground joint coupling and bolted clamp in a plant room, insulated steam pipework behind" },
-  { slug: "en-14420-hose-fittings-explained", alt: "A stainless hose tail held in an industrial hose with a bolted two-piece safety clamp, other fitting ends nearby" },
-  { slug: "industrial-hose-clamps", alt: "Industrial hose clamps on a bench: a safety clamp, an interlocking clamp, a spiral wire clamp and a sanitary clamp" },
-  { slug: "flanged-hose-connections", alt: "A large-bore hose with a steel flanged end bolted to a pipe spool on a refinery rack" },
-  { slug: "oil-suction-and-discharge-hose", alt: "A heavy oil suction and discharge hose connected to a pump skid at a tank farm" },
-  { slug: "tanker-loading-and-vapour-recovery-hose", alt: "Liquid and vapour recovery hoses connected to a fuel tanker's bottom-loading valves at a gantry" },
-  { slug: "compressed-air-hose-selection", alt: "A red air hose running from a towable compressor to a jackhammer on a construction site" },
-  { slug: "uhmwpe-chemical-hose", alt: "A chemical transfer hose with a white UHMWPE lining visible at its end, coupled to a chemical tote" },
-  { slug: "composite-hose-explained", alt: "A cut composite hose with an outer wire helix over a fabric cover and layers of film inside, a composite hose fitting beside it" },
-  { slug: "pvc-or-rubber-suction-hose", alt: "A clear PVC suction hose and a black rubber suction hose side by side on a dewatering pump in strong sun" },
-  { slug: "bulk-material-and-sandblast-hose", alt: "A sandblast hose and nozzle holder in the foreground as an operator blasts a steel structure" },
-  { slug: "food-hose-materials-compared", alt: "Food-grade hoses of different materials with sanitary fittings on a stainless table in a dairy plant" },
-  { slug: "industrial-hose-safety-factors", alt: "An industrial hose split open under burst test inside a protective chamber" },
-  { slug: "reading-an-industrial-hose-layline", alt: "A fingertip on the printed layline running along a coiled black industrial hose on a warehouse shelf" },
-  { slug: "corrugated-stainless-steel-hose", alt: "A stainless metal hose with its braid peeled back to show the corrugated core, a braided hose with a flange beside it" },
-  { slug: "exotic-alloy-metal-hose", alt: "Corrugated metal hose sections in stainless, nickel alloy and bronze laid out with welded end fittings" },
-  { slug: "high-pressure-metal-hose", alt: "A double-braided high-pressure metal hose with heavy forged end fittings installed on a test rig" },
-  { slug: "ptfe-hose-explained", alt: "A smoothbore and a convoluted PTFE hose cut open on a bench, each with stainless braid and a crimped fitting" },
-  { slug: "cryogenic-transfer-hose", alt: "A frosted stainless cryogenic hose connected to a liquid nitrogen tank, vapour rolling off it" },
-  { slug: "industrial-hose-guide", alt: "Tall racks of industrial hose reels and coils in many colours in a hose warehouse" },
-  { slug: "industrial-hose-couplings-guide", alt: "A grid of industrial hose couplings — cam and groove, Storz, claw, Bauer, ground joint, tails and flanges" },
-  { slug: "metal-hose-guide", alt: "Braided stainless metal hoses installed on refinery pipework, one linking a pump to a pipeline" },
-  { slug: "working-load-limit-vs-breaking-strength", alt: "A chain sling stretched in a horizontal tensile test bed in a lifting gear workshop" },
-  { slug: "types-of-shackles", alt: "Four galvanised shackles in a row on a workbench: bow and D shapes, screw-pin and bolt-type with nut and cotter pin, a wire rope sling behind" },
-  { slug: "chain-grades-explained", alt: "Lengths of red, blue, gold and galvanised chain laid side by side on a workshop floor" },
-  { slug: "wire-rope-construction-explained", alt: "Cut wire rope ends with strands fanned open, one with a steel strand core and one with a fibre core" },
-  { slug: "sling-angle-chart", alt: "A crane lifting a steel beam on a two-leg chain sling, the legs spread at a wide angle" },
-  { slug: "wire-rope-clips-installation", alt: "A wire rope eye around a thimble, the tail turned back and held to the main rope by three U-bolt clips, a ring spanner on one nut" },
-  { slug: "lifting-equipment-inspection-uae", alt: "An inspector measuring a chain sling hook with a caliper in a lifting gear store" },
-  { slug: "eye-bolt-types-and-angled-loads", alt: "A plain, a shoulder and a collar eye bolt in a steel block, a sling pulling on one at an angle" },
-  { slug: "turnbuckle-types", alt: "Galvanised turnbuckles with hook, eye and jaw ends, open and closed bodies, laid side by side" },
-  { slug: "sling-colour-code-chart", alt: "Polyester slings hanging on a rack in violet, green, yellow, grey, red, brown, blue and orange" },
-  { slug: "types-of-lifting-slings", alt: "A chain sling, a wire rope sling, a webbing sling and a round sling laid out in a row on a yard floor" },
-  { slug: "snatch-block-vs-pulley-block", alt: "A snatch block with its side plate open beside a closed pulley block on a timber deck" },
-  { slug: "chain-block-vs-lever-hoist-vs-electric-hoist", alt: "A chain block, a lever hoist and an electric chain hoist hanging side by side from a workshop gantry" },
-  { slug: "master-links-explained", alt: "A master link assembly with sub-links gathering chain sling legs on a steel deck, a crane hook behind" },
-  { slug: "lifting-hook-types", alt: "Forged lifting hooks on a bench — eye, clevis and swivel hooks with latches, and a grab hook gripping a chain link" },
-  { slug: "pad-eye-vs-swivel-lifting-point", alt: "A weld-on pad eye, a bolt-on swivel lifting point and an eye bolt fitted to a steel fabrication" },
-  { slug: "wire-rope-thimble-types", alt: "A standard, an extra-heavy and a solid thimble laid out, one fitted in a wire rope eye" },
-  { slug: "wire-rope-eye-terminations", alt: "A ferrule-secured eye, a Flemish eye and a hand-spliced eye in wire rope side by side" },
-  { slug: "spelter-sockets-open-vs-closed", alt: "An open and a closed spelter socket fitted to thick wire ropes on a timber deck" },
-  { slug: "stainless-vs-galvanized-rigging-gulf", alt: "Stainless and corroding galvanised shackles and turnbuckles on a Gulf marina pontoon" },
-  { slug: "ratchet-strap-vs-chain-and-binder", alt: "A load on a flatbed secured with a ratchet strap on one side and a chain and binder on the other" },
-  { slug: "lever-vs-ratchet-load-binder", alt: "A lever binder and a ratchet binder tensioning chains on a flatbed trailer" },
-  { slug: "din-link-chain-standards", alt: "Galvanised short-link and long-link chains hanging in a chain store, a bucket elevator conveyor behind" },
-  { slug: "lifting-gear-rejection-criteria", alt: "A quarantine bin of rejected lifting gear: a kinked wire sling, an opened hook, worn chain and a cut webbing sling" },
-  { slug: "lifting-gear-test-certificate", alt: "A new shackle and chain sling on a desk beside a printed test certificate" },
-  { slug: "crosby-pattern-numbers-explained", alt: "Shackles, a swivel hook, a wire rope clip and a master link laid out on a timber bench" },
-  { slug: "precast-concrete-lifting-clutch", alt: "A ring clutch locked onto a cast-in anchor at the top of a precast concrete panel being lifted" },
-  { slug: "types-of-marine-fenders", alt: "Black rubber cone and cylindrical fenders lining a port quay beside a ship's hull" },
-  { slug: "types-of-marine-anchors", alt: "Black stockless anchor, a lightweight fluke anchor and a claw anchor on gravel in a marine yard, chain behind" },
-  { slug: "anchor-chain-grades-u1-u2-u3", alt: "Heavy stud link anchor chain on a ship's foredeck, each link with a stud across its middle, the windlass behind" },
-  { slug: "types-of-mooring-bollards", alt: "Mooring ropes on a T-head bollard and double bitts on a quay beside a moored ship" },
-  { slug: "fibre-rope-materials-compared", alt: "Coils of polypropylene, nylon, polyester and HMPE fibre rope side by side on a dock" },
-  { slug: "snap-hooks-and-quick-links", alt: "Snap hooks and screw-gate quick links laid on a wooden bench, a short chain on one link" },
-  { slug: "chain-sling-codes-explained", alt: "Single-leg, two-leg and four-leg chain slings hanging from master links on a rack" },
-  { slug: "vertical-vs-horizontal-plate-lifting-clamps", alt: "A vertical plate clamp lifting a plate upright, a pair of horizontal clamps on a flat plate nearby" },
-  { slug: "storing-fittings-and-seals-on-site", alt: "Steel shelves of bins with hydraulic fittings and bagged seal kits in a workshop store" },
-  { slug: "reusing-fittings-in-a-rebuild", alt: "A tray of rebuild parts under a bench lamp, good fittings sorted from damaged ones" },
-  { slug: "crimping-on-site-or-adapting", alt: "A technician using a portable crimper on a van tailgate beside a broken-down wheel loader" },
-  { slug: "molykote-lubricant-types-explained", alt: "Unbranded lubricant containers — grease, paste, aerosol, oil and dispersion — beside a bearing and gear" },
-  { slug: "anti-seize-and-assembly-pastes", alt: "A brush applying copper anti-seize paste to a large bolt thread, open tins beside it" },
-  { slug: "anti-friction-coatings-explained", alt: "A technician spraying a dry-film coating onto machine parts in a spray booth, a curing oven beside it" },
-  { slug: "grease-selection-base-oil-thickener-nlgi", alt: "Grease samples of varying consistency and colour spread on a white tile with a spatula and grease gun" },
-  { slug: "hammer-union-figure-numbers", alt: "A red three-lug hammer union joining two pup joints on timber dunnage at a desert well site, a pump unit behind" },
-  { slug: "ring-joint-gaskets-r-rx-bx", alt: "Three metal ring joint gaskets on a bench with oval, octagonal and BX profiles, beside a flange face with a ring groove" },
-  { slug: "flow-iron-explained", alt: "A treating line of pup joints, swivels and tees joined by hammer unions running to a wellhead" },
-  { slug: "api-6a-nameplate-markings", alt: "A riveted nameplate on a wellhead gate valve" },
-  { slug: "wellhead-components-explained", alt: "A wellhead and christmas tree with master and wing valves in a desert oilfield" },
-  { slug: "mud-gate-valve-repair-kits", alt: "A disassembled mud gate valve with gate, seats and seals laid out beside the body" },
-  { slug: "lubricated-vs-non-lubricated-plug-valves", alt: "Two plug valves with quarter-turn handles on a treating line skid" },
-  { slug: "oilfield-check-valves-explained", alt: "Cutaway dart and swing check valves with a drill pipe float valve on a bench" },
-  { slug: "positive-vs-adjustable-chokes", alt: "A choke manifold with positive and adjustable chokes and gauges on a well test site" },
-  { slug: "ram-vs-annular-bop", alt: "A BOP stack under a rig floor, the annular preventer above the ram preventers" },
-  { slug: "demco-butterfly-valve-part-numbers", alt: "Lug butterfly valves with hand levers on a pallet, one disc open to show the seat" },
-  { slug: "ball-valve-pressure-ratings-cwp-wog", alt: "A small threaded brass ball valve beside three larger steel ball valves with flanged and threaded ends on a workshop bench" },
-  { slug: "oilfield-hose-guide", alt: "A rotary drilling hose looping from the standpipe to the top drive on a land rig" },
-  { slug: "well-service-and-stimulation-hose", alt: "High-pressure hoses connecting frac pump trucks to a manifold trailer at a well pad" },
-  { slug: "riser-tensioner-and-compensator-hose", alt: "Riser tensioner cylinders with looping hydraulic hoses around a floating rig's moonpool" },
-  { slug: "hydraulic-hose-guide", alt: "Cut hydraulic hose samples standing on a bench — braid, spiral, compact, thermoplastic and PTFE" },
-  { slug: "fittings-on-a-chinese-excavator", alt: "A technician loosening a cone hydraulic fitting at an excavator's open valve bank" },
-  { slug: "fittings-on-a-used-japanese-machine", alt: "A gloved hand on a hose fitting at a used excavator's main valve" },
-  { slug: "tractor-hydraulic-fittings", alt: "Hydraulic quick couplers and hoses at the rear of a tractor connected to an implement" },
-  { slug: "fittings-on-american-machines", alt: "Hose fittings and a split flange at the articulation joint of a large wheel loader" },
-  { slug: "fittings-on-european-machines", alt: "Metric compression fittings on rigid steel tubes at a compact loader's valve" },
-  { slug: "korean-excavator-hydraulic-fittings", alt: "Hoses and fittings at an excavator's boom cylinder on a construction site" },
-  { slug: "bsp-or-metric-fittings", alt: "A BSP and a metric hydraulic adapter side by side with a thread pitch gauge across them" },
-  { slug: "measuring-a-fitting-without-gauges", alt: "A mechanic measuring a fitting's thread with a caliper beside a known bolt on a tailgate" },
-  { slug: "building-a-thread-reference-board", alt: "A technician comparing a fitting to a wall board of mounted sample hydraulic fittings" },
-  { slug: "bridging-two-thread-standards", alt: "One adapter joining two thread standards, a discarded stack of three adapters on the bench beside it" },
-  { slug: "hydraulic-fittings-guide", alt: "A flat-lay of many hydraulic fittings and adapters across thread families" },
-  { slug: "npt-npsm-and-sae-hose-fittings", alt: "NPT, NPSM swivel, 37-degree flare and O-ring boss hose fittings side by side on a bench" },
+  {
+    slug: 'hydraulic-hose-assembly-guide',
+    alt: 'A technician feeding a hydraulic hose and fitting into a crimping machine, finished hose assemblies hanging on a rack behind',
+  },
+  {
+    slug: 'braided-vs-spiral-hose-fittings',
+    alt: 'Two hydraulic hose assemblies side by side, a thinner hose with a short crimped ferrule and a thicker hose with a longer, heavier ferrule',
+  },
+  {
+    slug: 'what-to-send-for-a-fittings-quote',
+    alt: 'A used hydraulic adapter on a desk beside a caliper and a phone photographing it for a quote request',
+  },
+  {
+    slug: 'cross-referencing-a-fitting-part-number',
+    alt: 'Hands holding a worn hydraulic fitting next to a new replacement of the same shape over an open parts catalogue',
+  },
+  {
+    slug: 'adapter-kit-for-a-mixed-fleet',
+    alt: 'An open compartment case of sorted hydraulic adapters on a workshop bench, mixed machines parked in the yard beyond',
+  },
+  {
+    slug: 'spares-list-for-a-remote-site',
+    alt: 'A shipping container site store at a remote camp, shelves of hydraulic fittings, hoses and seal kits inside',
+  },
+  {
+    slug: 'inspecting-fittings-on-arrival',
+    alt: 'A gloved hand holding a hydraulic adapter up to check its thread beside an open carton of bagged fittings on a loading bay',
+  },
+  {
+    slug: 'plating-and-corrosion-on-fittings',
+    alt: 'A row of hydraulic fittings showing different platings, from bright zinc-nickel to white corrosion and red rust at the hex edges',
+  },
+  {
+    slug: 'when-stainless-is-worth-it',
+    alt: 'A stainless and a plated carbon steel hydraulic adapter side by side on a wet steel plate at a coastal quay',
+  },
+  {
+    slug: 'air-or-sea-for-a-fittings-order',
+    alt: 'A small parcel of hydraulic fittings on an air cargo pallet, a container ship visible through the terminal windows',
+  },
+  {
+    slug: 'consolidating-fittings-with-a-hose-order',
+    alt: 'A worker stretch-wrapping one pallet of hydraulic hose coils and cartons of fittings for a single consignment',
+  },
+  {
+    slug: 'substituting-a-fitting-safely',
+    alt: 'At night by a work lamp, a technician compares two similar hydraulic fittings beside a stopped excavator',
+  },
+  {
+    slug: 'ss316l-hydraulic-fittings',
+    alt: 'Passivated 316L stainless hydraulic fittings — adapters, elbows, tees, a banjo and an SAE flange — laid out on a bench',
+  },
+  {
+    slug: 'reading-a-weeping-joint',
+    alt: 'A gloved hand with a rag beside a hydraulic hose joint on a yellow machine, a drop of oil forming under the swivel nut',
+  },
+  {
+    slug: 'over-tightened-fitting-diagnosis',
+    alt: 'A disassembled hydraulic fitting with a crushed seat and a cracked swivel nut, a torque wrench beside it',
+  },
+  {
+    slug: 'why-fittings-seize-in-coastal-air',
+    alt: 'A hydraulic fitting joint crusted with rust and salt on a port machine, a spanner on the seized nut',
+  },
+  {
+    slug: 'damaged-port-repair-or-scrap',
+    alt: 'A hydraulic valve block with a damaged threaded port under a flashlight, a tap set beside it',
+  },
+  {
+    slug: 'sealant-on-hydraulic-threads',
+    alt: 'A taped tapered-thread fitting beside a cone-seat fitting with shredded PTFE tape caught on its seat',
+  },
+  {
+    slug: 'galvanic-corrosion-in-fittings',
+    alt: 'A bright stainless fitting in a plated steel port with corrosion forming only on the plated metal around it',
+  },
+  {
+    slug: 'dirt-ingress-in-transit-and-storage',
+    alt: 'An uncapped hydraulic adapter with grit in its bore beside a clean capped and bagged fitting on a warehouse shelf',
+  },
+  {
+    slug: 'copper-mine-hydraulic-fittings',
+    alt: 'A giant haul truck in an open-pit copper mine, its hoist cylinder hoses visible, the concentrator in the distance',
+  },
+  {
+    slug: 'gold-plant-hydraulic-fittings',
+    alt: 'Hydraulic lines on a slurry pump inside a gold processing plant, leach tanks behind',
+  },
+  {
+    slug: 'oilfield-fittings-in-west-africa',
+    alt: 'A tropical oilfield yard with flow equipment on one side and crates of plated hydraulic fittings on the other',
+  },
+  {
+    slug: 'agriculture-and-construction-fittings',
+    alt: 'A rural workshop yard with a tractor, backhoe loader and tipper, a mechanic sorting hydraulic fittings at the bench',
+  },
+  {
+    slug: 'quarry-and-crusher-fittings',
+    alt: 'Dust-coated hydraulic hoses and fittings clamped to a jaw crusher frame in a quarry',
+  },
+  {
+    slug: 'water-well-drilling-rig-fittings',
+    alt: 'A truck-mounted water well drilling rig on dry savanna, an open toolbox of hydraulic spares on the deck',
+  },
+  {
+    slug: 'port-and-terminal-fittings',
+    alt: 'A reach stacker working a container terminal at dusk, its hydraulic hoses in close focus',
+  },
+  {
+    slug: 'sugar-mill-and-agro-processing-fittings',
+    alt: 'A cane loader working beside piles of sugar cane at a sugar mill during harvest',
+  },
+  {
+    slug: 'buying-fittings-in-south-africa',
+    alt: 'A customer handing a used hose assembly over a hydraulics trade counter, shelves of hose and fittings behind',
+  },
+  {
+    slug: 'factory-and-fixed-plant-fittings',
+    alt: 'A hydraulic power unit with neat steel tubing and uniform fittings on a clean factory floor',
+  },
+  {
+    slug: 'saber-certificate-for-hydraulic-hose',
+    alt: 'A gloved hand on a shrink-wrapped coil of hydraulic hose on a pallet, a clipboard of certificates and a laptop beside it',
+  },
+  {
+    slug: 'gulf-conformity-mark-hose-fittings',
+    alt: 'A hose sample and fittings on a procurement desk beside a binder of compliance documents, a Gulf city skyline outside',
+  },
+  {
+    slug: 'certificate-of-origin-gcc-duty',
+    alt: 'A customs officer with a clipboard checking an open container of hydraulic hose in a Gulf port',
+  },
+  {
+    slug: 'hose-assembly-test-certificate',
+    alt: 'A hose assembly under proof test inside a steel safety cage, a technician watching the pressure gauge',
+  },
+  {
+    slug: 'material-test-certificate-en-10204',
+    alt: 'Forged fitting blanks and bar stock with a heat tag, a mill test certificate clipped beside them',
+  },
+  {
+    slug: 'nace-mr0175-hose-documentation',
+    alt: 'A heavy oilfield hose assembly with stainless end fittings on a rack, a document wallet tied to it',
+  },
+  {
+    slug: 'vendor-approval-for-hose-supply',
+    alt: 'A delivery truck stopped at a desert oil facility checkpoint, a guard checking papers',
+  },
+  {
+    slug: 'verifying-a-genuine-hydraulic-hose',
+    alt: 'A gloved hand holding a hydraulic hose behind its crimped fitting, the printed layline running along the cover',
+  },
+  {
+    slug: 'gcc-import-documents-for-hose',
+    alt: 'Freight trucks queued at a desert customs checkpoint, one carrying wrapped coils of hydraulic hose',
+  },
+  {
+    slug: 'oilfield-hose-document-pack',
+    alt: 'A rotary drilling hose coiled on a skid with a document wallet of certificates strapped to it, a rig behind',
+  },
+  {
+    slug: 'cam-and-groove-coupling-types',
+    alt: 'Cam and groove couplings on a bench: female couplers with cam arms, male adapters with threaded and hose-shank ends, one coupler on a suction hose',
+  },
+  {
+    slug: 'storz-coupling-sizes',
+    alt: 'Aluminium Storz couplings of several sizes on a fire station bench, one on a red fire hose',
+  },
+  {
+    slug: 'bauer-couplings-explained',
+    alt: 'A galvanised Bauer lever coupling joining two irrigation pipes on a farm field',
+  },
+  {
+    slug: 'guillemin-couplings-explained',
+    alt: 'Two symmetrical Guillemin couplings being joined by hand on an industrial water hose',
+  },
+  {
+    slug: 'gost-barcelona-and-geka-couplings',
+    alt: 'A GOST, a Barcelona and a Geka coupling side by side on a bench, three symmetrical patterns that fit only themselves',
+  },
+  {
+    slug: 'universal-air-couplings-explained',
+    alt: 'Two universal claw air couplings locked together with a safety whip check on a compressor hose',
+  },
+  {
+    slug: 'kc-nipples-and-shank-couplings',
+    alt: 'Galvanised KC nipples, a pin-lug shank coupling and a hose mender laid out on a bench, one clamped into a rubber hose',
+  },
+  {
+    slug: 'ground-joint-steam-couplings',
+    alt: 'A steam hose with a ground joint coupling and bolted clamp in a plant room, insulated steam pipework behind',
+  },
+  {
+    slug: 'en-14420-hose-fittings-explained',
+    alt: 'A stainless hose tail held in an industrial hose with a bolted two-piece safety clamp, other fitting ends nearby',
+  },
+  {
+    slug: 'industrial-hose-clamps',
+    alt: 'Industrial hose clamps on a bench: a safety clamp, an interlocking clamp, a spiral wire clamp and a sanitary clamp',
+  },
+  {
+    slug: 'flanged-hose-connections',
+    alt: 'A large-bore hose with a steel flanged end bolted to a pipe spool on a refinery rack',
+  },
+  {
+    slug: 'oil-suction-and-discharge-hose',
+    alt: 'A heavy oil suction and discharge hose connected to a pump skid at a tank farm',
+  },
+  {
+    slug: 'tanker-loading-and-vapour-recovery-hose',
+    alt: "Liquid and vapour recovery hoses connected to a fuel tanker's bottom-loading valves at a gantry",
+  },
+  {
+    slug: 'compressed-air-hose-selection',
+    alt: 'A red air hose running from a towable compressor to a jackhammer on a construction site',
+  },
+  {
+    slug: 'uhmwpe-chemical-hose',
+    alt: 'A chemical transfer hose with a white UHMWPE lining visible at its end, coupled to a chemical tote',
+  },
+  {
+    slug: 'composite-hose-explained',
+    alt: 'A cut composite hose with an outer wire helix over a fabric cover and layers of film inside, a composite hose fitting beside it',
+  },
+  {
+    slug: 'pvc-or-rubber-suction-hose',
+    alt: 'A clear PVC suction hose and a black rubber suction hose side by side on a dewatering pump in strong sun',
+  },
+  {
+    slug: 'bulk-material-and-sandblast-hose',
+    alt: 'A sandblast hose and nozzle holder in the foreground as an operator blasts a steel structure',
+  },
+  {
+    slug: 'food-hose-materials-compared',
+    alt: 'Food-grade hoses of different materials with sanitary fittings on a stainless table in a dairy plant',
+  },
+  {
+    slug: 'industrial-hose-safety-factors',
+    alt: 'An industrial hose split open under burst test inside a protective chamber',
+  },
+  {
+    slug: 'reading-an-industrial-hose-layline',
+    alt: 'A fingertip on the printed layline running along a coiled black industrial hose on a warehouse shelf',
+  },
+  {
+    slug: 'corrugated-stainless-steel-hose',
+    alt: 'A stainless metal hose with its braid peeled back to show the corrugated core, a braided hose with a flange beside it',
+  },
+  {
+    slug: 'exotic-alloy-metal-hose',
+    alt: 'Corrugated metal hose sections in stainless, nickel alloy and bronze laid out with welded end fittings',
+  },
+  {
+    slug: 'high-pressure-metal-hose',
+    alt: 'A double-braided high-pressure metal hose with heavy forged end fittings installed on a test rig',
+  },
+  {
+    slug: 'ptfe-hose-explained',
+    alt: 'A smoothbore and a convoluted PTFE hose cut open on a bench, each with stainless braid and a crimped fitting',
+  },
+  {
+    slug: 'cryogenic-transfer-hose',
+    alt: 'A frosted stainless cryogenic hose connected to a liquid nitrogen tank, vapour rolling off it',
+  },
+  {
+    slug: 'industrial-hose-guide',
+    alt: 'Tall racks of industrial hose reels and coils in many colours in a hose warehouse',
+  },
+  {
+    slug: 'industrial-hose-couplings-guide',
+    alt: 'A grid of industrial hose couplings — cam and groove, Storz, claw, Bauer, ground joint, tails and flanges',
+  },
+  {
+    slug: 'metal-hose-guide',
+    alt: 'Braided stainless metal hoses installed on refinery pipework, one linking a pump to a pipeline',
+  },
+  {
+    slug: 'working-load-limit-vs-breaking-strength',
+    alt: 'A chain sling stretched in a horizontal tensile test bed in a lifting gear workshop',
+  },
+  {
+    slug: 'types-of-shackles',
+    alt: 'Four galvanised shackles in a row on a workbench: bow and D shapes, screw-pin and bolt-type with nut and cotter pin, a wire rope sling behind',
+  },
+  {
+    slug: 'chain-grades-explained',
+    alt: 'Lengths of red, blue, gold and galvanised chain laid side by side on a workshop floor',
+  },
+  {
+    slug: 'wire-rope-construction-explained',
+    alt: 'Cut wire rope ends with strands fanned open, one with a steel strand core and one with a fibre core',
+  },
+  {
+    slug: 'sling-angle-chart',
+    alt: 'A crane lifting a steel beam on a two-leg chain sling, the legs spread at a wide angle',
+  },
+  {
+    slug: 'wire-rope-clips-installation',
+    alt: 'A wire rope eye around a thimble, the tail turned back and held to the main rope by three U-bolt clips, a ring spanner on one nut',
+  },
+  {
+    slug: 'lifting-equipment-inspection-uae',
+    alt: 'An inspector measuring a chain sling hook with a caliper in a lifting gear store',
+  },
+  {
+    slug: 'eye-bolt-types-and-angled-loads',
+    alt: 'A plain, a shoulder and a collar eye bolt in a steel block, a sling pulling on one at an angle',
+  },
+  {
+    slug: 'turnbuckle-types',
+    alt: 'Galvanised turnbuckles with hook, eye and jaw ends, open and closed bodies, laid side by side',
+  },
+  {
+    slug: 'sling-colour-code-chart',
+    alt: 'Polyester slings hanging on a rack in violet, green, yellow, grey, red, brown, blue and orange',
+  },
+  {
+    slug: 'types-of-lifting-slings',
+    alt: 'A chain sling, a wire rope sling, a webbing sling and a round sling laid out in a row on a yard floor',
+  },
+  {
+    slug: 'snatch-block-vs-pulley-block',
+    alt: 'A snatch block with its side plate open beside a closed pulley block on a timber deck',
+  },
+  {
+    slug: 'chain-block-vs-lever-hoist-vs-electric-hoist',
+    alt: 'A chain block, a lever hoist and an electric chain hoist hanging side by side from a workshop gantry',
+  },
+  {
+    slug: 'master-links-explained',
+    alt: 'A master link assembly with sub-links gathering chain sling legs on a steel deck, a crane hook behind',
+  },
+  {
+    slug: 'lifting-hook-types',
+    alt: 'Forged lifting hooks on a bench — eye, clevis and swivel hooks with latches, and a grab hook gripping a chain link',
+  },
+  {
+    slug: 'pad-eye-vs-swivel-lifting-point',
+    alt: 'A weld-on pad eye, a bolt-on swivel lifting point and an eye bolt fitted to a steel fabrication',
+  },
+  {
+    slug: 'wire-rope-thimble-types',
+    alt: 'A standard, an extra-heavy and a solid thimble laid out, one fitted in a wire rope eye',
+  },
+  {
+    slug: 'wire-rope-eye-terminations',
+    alt: 'A ferrule-secured eye, a Flemish eye and a hand-spliced eye in wire rope side by side',
+  },
+  {
+    slug: 'spelter-sockets-open-vs-closed',
+    alt: 'An open and a closed spelter socket fitted to thick wire ropes on a timber deck',
+  },
+  {
+    slug: 'stainless-vs-galvanized-rigging-gulf',
+    alt: 'Stainless and corroding galvanised shackles and turnbuckles on a Gulf marina pontoon',
+  },
+  {
+    slug: 'ratchet-strap-vs-chain-and-binder',
+    alt: 'A load on a flatbed secured with a ratchet strap on one side and a chain and binder on the other',
+  },
+  {
+    slug: 'lever-vs-ratchet-load-binder',
+    alt: 'A lever binder and a ratchet binder tensioning chains on a flatbed trailer',
+  },
+  {
+    slug: 'din-link-chain-standards',
+    alt: 'Galvanised short-link and long-link chains hanging in a chain store, a bucket elevator conveyor behind',
+  },
+  {
+    slug: 'lifting-gear-rejection-criteria',
+    alt: 'A quarantine bin of rejected lifting gear: a kinked wire sling, an opened hook, worn chain and a cut webbing sling',
+  },
+  {
+    slug: 'lifting-gear-test-certificate',
+    alt: 'A new shackle and chain sling on a desk beside a printed test certificate',
+  },
+  {
+    slug: 'crosby-pattern-numbers-explained',
+    alt: 'Shackles, a swivel hook, a wire rope clip and a master link laid out on a timber bench',
+  },
+  {
+    slug: 'precast-concrete-lifting-clutch',
+    alt: 'A ring clutch locked onto a cast-in anchor at the top of a precast concrete panel being lifted',
+  },
+  {
+    slug: 'types-of-marine-fenders',
+    alt: "Black rubber cone and cylindrical fenders lining a port quay beside a ship's hull",
+  },
+  {
+    slug: 'types-of-marine-anchors',
+    alt: 'Black stockless anchor, a lightweight fluke anchor and a claw anchor on gravel in a marine yard, chain behind',
+  },
+  {
+    slug: 'anchor-chain-grades-u1-u2-u3',
+    alt: "Heavy stud link anchor chain on a ship's foredeck, each link with a stud across its middle, the windlass behind",
+  },
+  {
+    slug: 'types-of-mooring-bollards',
+    alt: 'Mooring ropes on a T-head bollard and double bitts on a quay beside a moored ship',
+  },
+  {
+    slug: 'fibre-rope-materials-compared',
+    alt: 'Coils of polypropylene, nylon, polyester and HMPE fibre rope side by side on a dock',
+  },
+  {
+    slug: 'snap-hooks-and-quick-links',
+    alt: 'Snap hooks and screw-gate quick links laid on a wooden bench, a short chain on one link',
+  },
+  {
+    slug: 'chain-sling-codes-explained',
+    alt: 'Single-leg, two-leg and four-leg chain slings hanging from master links on a rack',
+  },
+  {
+    slug: 'vertical-vs-horizontal-plate-lifting-clamps',
+    alt: 'A vertical plate clamp lifting a plate upright, a pair of horizontal clamps on a flat plate nearby',
+  },
+  {
+    slug: 'storing-fittings-and-seals-on-site',
+    alt: 'Steel shelves of bins with hydraulic fittings and bagged seal kits in a workshop store',
+  },
+  {
+    slug: 'reusing-fittings-in-a-rebuild',
+    alt: 'A tray of rebuild parts under a bench lamp, good fittings sorted from damaged ones',
+  },
+  {
+    slug: 'crimping-on-site-or-adapting',
+    alt: 'A technician using a portable crimper on a van tailgate beside a broken-down wheel loader',
+  },
+  {
+    slug: 'molykote-lubricant-types-explained',
+    alt: 'Unbranded lubricant containers — grease, paste, aerosol, oil and dispersion — beside a bearing and gear',
+  },
+  {
+    slug: 'anti-seize-and-assembly-pastes',
+    alt: 'A brush applying copper anti-seize paste to a large bolt thread, open tins beside it',
+  },
+  {
+    slug: 'anti-friction-coatings-explained',
+    alt: 'A technician spraying a dry-film coating onto machine parts in a spray booth, a curing oven beside it',
+  },
+  {
+    slug: 'grease-selection-base-oil-thickener-nlgi',
+    alt: 'Grease samples of varying consistency and colour spread on a white tile with a spatula and grease gun',
+  },
+  {
+    slug: 'hammer-union-figure-numbers',
+    alt: 'A red three-lug hammer union joining two pup joints on timber dunnage at a desert well site, a pump unit behind',
+  },
+  {
+    slug: 'ring-joint-gaskets-r-rx-bx',
+    alt: 'Three metal ring joint gaskets on a bench with oval, octagonal and BX profiles, beside a flange face with a ring groove',
+  },
+  {
+    slug: 'flow-iron-explained',
+    alt: 'A treating line of pup joints, swivels and tees joined by hammer unions running to a wellhead',
+  },
+  { slug: 'api-6a-nameplate-markings', alt: 'A riveted nameplate on a wellhead gate valve' },
+  {
+    slug: 'wellhead-components-explained',
+    alt: 'A wellhead and christmas tree with master and wing valves in a desert oilfield',
+  },
+  {
+    slug: 'mud-gate-valve-repair-kits',
+    alt: 'A disassembled mud gate valve with gate, seats and seals laid out beside the body',
+  },
+  {
+    slug: 'lubricated-vs-non-lubricated-plug-valves',
+    alt: 'Two plug valves with quarter-turn handles on a treating line skid',
+  },
+  {
+    slug: 'oilfield-check-valves-explained',
+    alt: 'Cutaway dart and swing check valves with a drill pipe float valve on a bench',
+  },
+  {
+    slug: 'positive-vs-adjustable-chokes',
+    alt: 'A choke manifold with positive and adjustable chokes and gauges on a well test site',
+  },
+  {
+    slug: 'ram-vs-annular-bop',
+    alt: 'A BOP stack under a rig floor, the annular preventer above the ram preventers',
+  },
+  {
+    slug: 'demco-butterfly-valve-part-numbers',
+    alt: 'Lug butterfly valves with hand levers on a pallet, one disc open to show the seat',
+  },
+  {
+    slug: 'ball-valve-pressure-ratings-cwp-wog',
+    alt: 'A small threaded brass ball valve beside three larger steel ball valves with flanged and threaded ends on a workshop bench',
+  },
+  {
+    slug: 'oilfield-hose-guide',
+    alt: 'A rotary drilling hose looping from the standpipe to the top drive on a land rig',
+  },
+  {
+    slug: 'well-service-and-stimulation-hose',
+    alt: 'High-pressure hoses connecting frac pump trucks to a manifold trailer at a well pad',
+  },
+  {
+    slug: 'riser-tensioner-and-compensator-hose',
+    alt: "Riser tensioner cylinders with looping hydraulic hoses around a floating rig's moonpool",
+  },
+  {
+    slug: 'hydraulic-hose-guide',
+    alt: 'Cut hydraulic hose samples standing on a bench — braid, spiral, compact, thermoplastic and PTFE',
+  },
+  {
+    slug: 'fittings-on-a-chinese-excavator',
+    alt: "A technician loosening a cone hydraulic fitting at an excavator's open valve bank",
+  },
+  {
+    slug: 'fittings-on-a-used-japanese-machine',
+    alt: "A gloved hand on a hose fitting at a used excavator's main valve",
+  },
+  {
+    slug: 'tractor-hydraulic-fittings',
+    alt: 'Hydraulic quick couplers and hoses at the rear of a tractor connected to an implement',
+  },
+  {
+    slug: 'fittings-on-american-machines',
+    alt: 'Hose fittings and a split flange at the articulation joint of a large wheel loader',
+  },
+  {
+    slug: 'fittings-on-european-machines',
+    alt: "Metric compression fittings on rigid steel tubes at a compact loader's valve",
+  },
+  {
+    slug: 'korean-excavator-hydraulic-fittings',
+    alt: "Hoses and fittings at an excavator's boom cylinder on a construction site",
+  },
+  {
+    slug: 'bsp-or-metric-fittings',
+    alt: 'A BSP and a metric hydraulic adapter side by side with a thread pitch gauge across them',
+  },
+  {
+    slug: 'measuring-a-fitting-without-gauges',
+    alt: "A mechanic measuring a fitting's thread with a caliper beside a known bolt on a tailgate",
+  },
+  {
+    slug: 'building-a-thread-reference-board',
+    alt: 'A technician comparing a fitting to a wall board of mounted sample hydraulic fittings',
+  },
+  {
+    slug: 'bridging-two-thread-standards',
+    alt: 'One adapter joining two thread standards, a discarded stack of three adapters on the bench beside it',
+  },
+  {
+    slug: 'hydraulic-fittings-guide',
+    alt: 'A flat-lay of many hydraulic fittings and adapters across thread families',
+  },
+  {
+    slug: 'npt-npsm-and-sae-hose-fittings',
+    alt: 'NPT, NPSM swivel, 37-degree flare and O-ring boss hose fittings side by side on a bench',
+  },
   // ── Fourth sprint, 2026-10-20. The 28 lifting posts published without a hero on
   // 13–14 Oct: the six capacity charts and lifting waves 8–10. Generated with GPT Image 2.5
   // (medium, 1k) and checked against each article before upload. `caption` is the
   // reader caption, written here because these posts never had one.
-  { slug: "site-mobilisation-rigging-kit", alt: "Rigging store in a site container: colour-coded round slings, chain slings, bins of shackles and a chain block", caption: "A matched, registered rigging loft on day one sets the habits for the whole project." },
-  { slug: "steel-erection-rigging-equipment", alt: "Steel erectors on a high-rise frame guiding an I-beam on a two-leg chain sling, a tag line held from below", caption: "Two-leg chain slings and a tag line: the everyday steel lift, landed precisely at height." },
-  { slug: "precast-panel-and-beam-rigging", alt: "Precast wall panel on a four-leg chain sling with clutches in its top anchors, a rigger holding the tag line", caption: "The anchors are cast in; the clutches, slings and links above them decide how the load is shared." },
-  { slug: "lifting-chillers-and-rooftop-plant", alt: "Rooftop chiller on wire rope slings below a spreader beam, lifted by mobile crane, riggers on the roof with tag lines", caption: "A spreader keeps the slings clear of the casing — the maker’s rigging instructions start every plant lift." },
-  { slug: "tower-crane-rigging-gear", alt: "Banksman with a radio watching a rebar bundle on two webbing slings in a choker hitch under a tower crane hook", caption: "A small kit, used hundreds of times a week: the tower crane crew’s slings, shackles and tag lines." },
-  { slug: "shutdown-and-turnaround-rigging", alt: "Pump motor hung from a chain block on a beam trolley inside a refinery unit, two technicians guiding it", caption: "Where no crane can reach, chain blocks on beam trolleys do the shutdown’s lifting." },
-  { slug: "cable-pulling-socks-and-grips", alt: "Workers pulling a power cable into a trench with a woven cable sock and swivel on the rope, cable drum behind", caption: "The cable sock is the one part of the pull that touches the cable — size it, fit it and swivel it." },
-  { slug: "jetty-and-marine-construction-rigging", alt: "Steel pile hanging on a two-leg wire rope sling with shackles beside a crawler crane on a barge, breakwater behind", caption: "Salt, tides and barge motion: marine works are the hardest environment on any site for rigging." },
-  { slug: "lifting-equipment-register-uae", alt: "Inspector fixing a coloured inspection tag to a chain sling at a site rigging store, a tablet register on the bench", caption: "Every item tagged, every tag in the register: the record an auditor asks for first." },
-  { slug: "asme-b30-26-rigging-hardware-explained", alt: "Shackles, oblong master links, an eye-and-eye swivel and a jaw turnbuckle on a bench, a caliper on one shackle", caption: "Shackles, links, swivels and turnbuckles: the hardware ASME B30.26 covers, and the checks it sets." },
-  { slug: "rigging-hardware-rfq-checklist", alt: "Bolt-type shackle, a short length of chain, a vernier caliper and a printed enquiry form on an office desk", caption: "Pattern, pin, grade and length: a specific enquiry gets the right item quoted first time." },
-  { slug: "lifting-equipment-rules-saudi-arabia", alt: "Inspector in coveralls checking a two-leg chain sling on a crane hook at a desert processing plant", caption: "In Saudi Arabia the national regulation is the floor; the client’s standards set the site rules." },
-  { slug: "lifting-equipment-rules-gcc", alt: "Inspector and rigging foreman reviewing a clipboard beside racks of tagged slings and shackles at a gas plant site", caption: "One contractor, six countries, several rulebooks — and the client contract on top of each." },
-  { slug: "proof-load-testing-lifting-gear", alt: "Galvanized bow shackle in a horizontal proof test bed, hydraulic cylinder and load cell cable, technician behind", caption: "A proof test proves this item was made right — it does not raise its working load limit." },
-  { slug: "how-to-spot-counterfeit-rigging-hardware", alt: "Cleanly forged shackle beside a rough, porous one with casting seams, a magnifying glass over the rough shackle", caption: "Read every mark: a forged rating is a rating nobody tested." },
-  { slug: "grade-80-vs-grade-100-chain-slings", alt: "Two single-leg chain slings on a workshop floor, one black chain and one blue, each with master link and latch hook", caption: "Same size, about a quarter more capacity: Grade 100 lets a smaller, lighter sling do the job." },
-  { slug: "hammerlock-vs-clevis-chain-fittings", alt: "Alloy master link joined to chain by a hammerlock connecting link, a clevis hook pinned to the chain's last link", caption: "Every chain sling is joined somewhere — matched, rated connectors keep the rating intact." },
-  { slug: "chain-sling-shortening-clutches-and-grab-hooks", alt: "Two-leg chain sling with one leg taken up through a shortening clutch, its slack loop hanging, hooks on a steel beam", caption: "A shortening clutch evens out the legs without giving away the chain’s rating." },
-  { slug: "lifting-swivels-explained", alt: "Crane hook with a swivel below it and a two-leg wire rope sling cradling a steel cylinder in a construction yard", caption: "A swivel lets the rigging untwist — only a bearing swivel is made to turn under load." },
-  { slug: "beam-trolley-guide", alt: "Worker pushing a gearbox hung from a chain block on a push trolley running along an overhead I-beam", caption: "A trolley on an I-beam turns a chain block into a travelling hoist." },
-  { slug: "lynch-pins-r-clips-and-wire-lock-pins", alt: "Lynch pins, R-clips and wire lock pins on a steel bench next to a shackle whose pin is held by an R-clip", caption: "Small, cheap and easy to lose — the pins that keep the load pins in." },
-  { slug: "stainless-steel-lifting-chain", alt: "Polished stainless steel chain sling lifting a stainless process vessel by its lugs in a food plant", caption: "Stainless chain lifts where rust and zinc flakes are not welcome — at a lower rating." },
-  { slug: "chain-sling-capacity-chart", alt: "Four-leg chain sling laid flat on concrete, legs fanned out from the master link to four yellow self-locking hooks", caption: "Chain size, grade, number of legs and leg angle together set what a chain sling may lift." },
-  { slug: "wire-rope-sling-capacity-chart", alt: "Wire rope slings with ferrule-pressed eyes and round tags hanging on a store rack, from thin to thick", caption: "Rope diameter, construction and the hitch used decide a wire rope sling’s working load limit." },
-  { slug: "webbing-and-round-sling-capacity-chart", alt: "Violet, green and yellow webbing slings and grey, red and orange round slings laid out on a workbench", caption: "The colour gives a quick read of the rating; the sewn label is the record." },
-  { slug: "shackle-size-and-capacity-chart", alt: "Seven galvanized screw-pin bow shackles lined up by size, smallest to largest, on a dark steel plate", caption: "Body and pin grow with the working load limit; the forged marks confirm which size you hold." },
-  { slug: "eye-bolt-capacity-chart", alt: "Four collar eye bolts of rising size on a steel plate, a larger one screwed down flat into a machine casting", caption: "An eye bolt’s rating assumes the collar is seated flat and the pull is in line; angled loads cut it." },
-  { slug: "wire-rope-breaking-strength-chart", alt: "Cut ends of steel wire ropes of several diameters showing strands laid around a core, rope reels behind", caption: "Breaking strength depends on diameter, construction, core and rope grade — not on diameter alone." },
+  {
+    slug: 'site-mobilisation-rigging-kit',
+    alt: 'Rigging store in a site container: colour-coded round slings, chain slings, bins of shackles and a chain block',
+    caption: 'A matched, registered rigging loft on day one sets the habits for the whole project.',
+  },
+  {
+    slug: 'steel-erection-rigging-equipment',
+    alt: 'Steel erectors on a high-rise frame guiding an I-beam on a two-leg chain sling, a tag line held from below',
+    caption:
+      'Two-leg chain slings and a tag line: the everyday steel lift, landed precisely at height.',
+  },
+  {
+    slug: 'precast-panel-and-beam-rigging',
+    alt: 'Precast wall panel on a four-leg chain sling with clutches in its top anchors, a rigger holding the tag line',
+    caption:
+      'The anchors are cast in; the clutches, slings and links above them decide how the load is shared.',
+  },
+  {
+    slug: 'lifting-chillers-and-rooftop-plant',
+    alt: 'Rooftop chiller on wire rope slings below a spreader beam, lifted by mobile crane, riggers on the roof with tag lines',
+    caption:
+      'A spreader keeps the slings clear of the casing — the maker’s rigging instructions start every plant lift.',
+  },
+  {
+    slug: 'tower-crane-rigging-gear',
+    alt: 'Banksman with a radio watching a rebar bundle on two webbing slings in a choker hitch under a tower crane hook',
+    caption:
+      'A small kit, used hundreds of times a week: the tower crane crew’s slings, shackles and tag lines.',
+  },
+  {
+    slug: 'shutdown-and-turnaround-rigging',
+    alt: 'Pump motor hung from a chain block on a beam trolley inside a refinery unit, two technicians guiding it',
+    caption: 'Where no crane can reach, chain blocks on beam trolleys do the shutdown’s lifting.',
+  },
+  {
+    slug: 'cable-pulling-socks-and-grips',
+    alt: 'Workers pulling a power cable into a trench with a woven cable sock and swivel on the rope, cable drum behind',
+    caption:
+      'The cable sock is the one part of the pull that touches the cable — size it, fit it and swivel it.',
+  },
+  {
+    slug: 'jetty-and-marine-construction-rigging',
+    alt: 'Steel pile hanging on a two-leg wire rope sling with shackles beside a crawler crane on a barge, breakwater behind',
+    caption:
+      'Salt, tides and barge motion: marine works are the hardest environment on any site for rigging.',
+  },
+  {
+    slug: 'lifting-equipment-register-uae',
+    alt: 'Inspector fixing a coloured inspection tag to a chain sling at a site rigging store, a tablet register on the bench',
+    caption: 'Every item tagged, every tag in the register: the record an auditor asks for first.',
+  },
+  {
+    slug: 'asme-b30-26-rigging-hardware-explained',
+    alt: 'Shackles, oblong master links, an eye-and-eye swivel and a jaw turnbuckle on a bench, a caliper on one shackle',
+    caption:
+      'Shackles, links, swivels and turnbuckles: the hardware ASME B30.26 covers, and the checks it sets.',
+  },
+  {
+    slug: 'rigging-hardware-rfq-checklist',
+    alt: 'Bolt-type shackle, a short length of chain, a vernier caliper and a printed enquiry form on an office desk',
+    caption:
+      'Pattern, pin, grade and length: a specific enquiry gets the right item quoted first time.',
+  },
+  {
+    slug: 'lifting-equipment-rules-saudi-arabia',
+    alt: 'Inspector in coveralls checking a two-leg chain sling on a crane hook at a desert processing plant',
+    caption:
+      'In Saudi Arabia the national regulation is the floor; the client’s standards set the site rules.',
+  },
+  {
+    slug: 'lifting-equipment-rules-gcc',
+    alt: 'Inspector and rigging foreman reviewing a clipboard beside racks of tagged slings and shackles at a gas plant site',
+    caption:
+      'One contractor, six countries, several rulebooks — and the client contract on top of each.',
+  },
+  {
+    slug: 'proof-load-testing-lifting-gear',
+    alt: 'Galvanized bow shackle in a horizontal proof test bed, hydraulic cylinder and load cell cable, technician behind',
+    caption:
+      'A proof test proves this item was made right — it does not raise its working load limit.',
+  },
+  {
+    slug: 'how-to-spot-counterfeit-rigging-hardware',
+    alt: 'Cleanly forged shackle beside a rough, porous one with casting seams, a magnifying glass over the rough shackle',
+    caption: 'Read every mark: a forged rating is a rating nobody tested.',
+  },
+  {
+    slug: 'grade-80-vs-grade-100-chain-slings',
+    alt: 'Two single-leg chain slings on a workshop floor, one black chain and one blue, each with master link and latch hook',
+    caption:
+      'Same size, about a quarter more capacity: Grade 100 lets a smaller, lighter sling do the job.',
+  },
+  {
+    slug: 'hammerlock-vs-clevis-chain-fittings',
+    alt: "Alloy master link joined to chain by a hammerlock connecting link, a clevis hook pinned to the chain's last link",
+    caption:
+      'Every chain sling is joined somewhere — matched, rated connectors keep the rating intact.',
+  },
+  {
+    slug: 'chain-sling-shortening-clutches-and-grab-hooks',
+    alt: 'Two-leg chain sling with one leg taken up through a shortening clutch, its slack loop hanging, hooks on a steel beam',
+    caption: 'A shortening clutch evens out the legs without giving away the chain’s rating.',
+  },
+  {
+    slug: 'lifting-swivels-explained',
+    alt: 'Crane hook with a swivel below it and a two-leg wire rope sling cradling a steel cylinder in a construction yard',
+    caption:
+      'A swivel lets the rigging untwist — only a bearing swivel is made to turn under load.',
+  },
+  {
+    slug: 'beam-trolley-guide',
+    alt: 'Worker pushing a gearbox hung from a chain block on a push trolley running along an overhead I-beam',
+    caption: 'A trolley on an I-beam turns a chain block into a travelling hoist.',
+  },
+  {
+    slug: 'lynch-pins-r-clips-and-wire-lock-pins',
+    alt: 'Lynch pins, R-clips and wire lock pins on a steel bench next to a shackle whose pin is held by an R-clip',
+    caption: 'Small, cheap and easy to lose — the pins that keep the load pins in.',
+  },
+  {
+    slug: 'stainless-steel-lifting-chain',
+    alt: 'Polished stainless steel chain sling lifting a stainless process vessel by its lugs in a food plant',
+    caption:
+      'Stainless chain lifts where rust and zinc flakes are not welcome — at a lower rating.',
+  },
+  {
+    slug: 'chain-sling-capacity-chart',
+    alt: 'Four-leg chain sling laid flat on concrete, legs fanned out from the master link to four yellow self-locking hooks',
+    caption:
+      'Chain size, grade, number of legs and leg angle together set what a chain sling may lift.',
+  },
+  {
+    slug: 'wire-rope-sling-capacity-chart',
+    alt: 'Wire rope slings with ferrule-pressed eyes and round tags hanging on a store rack, from thin to thick',
+    caption:
+      'Rope diameter, construction and the hitch used decide a wire rope sling’s working load limit.',
+  },
+  {
+    slug: 'webbing-and-round-sling-capacity-chart',
+    alt: 'Violet, green and yellow webbing slings and grey, red and orange round slings laid out on a workbench',
+    caption: 'The colour gives a quick read of the rating; the sewn label is the record.',
+  },
+  {
+    slug: 'shackle-size-and-capacity-chart',
+    alt: 'Seven galvanized screw-pin bow shackles lined up by size, smallest to largest, on a dark steel plate',
+    caption:
+      'Body and pin grow with the working load limit; the forged marks confirm which size you hold.',
+  },
+  {
+    slug: 'eye-bolt-capacity-chart',
+    alt: 'Four collar eye bolts of rising size on a steel plate, a larger one screwed down flat into a machine casting',
+    caption:
+      'An eye bolt’s rating assumes the collar is seated flat and the pull is in line; angled loads cut it.',
+  },
+  {
+    slug: 'wire-rope-breaking-strength-chart',
+    alt: 'Cut ends of steel wire ropes of several diameters showing strands laid around a core, rope reels behind',
+    caption:
+      'Breaking strength depends on diameter, construction, core and rope grade — not on diameter alone.',
+  },
   // Cylinders, pumps & motors wave, 2026-10-21 (Higgsfield gpt_image_2_5, medium, 1k, 3:2; two re-generated
   // after review — the first telescopic hoist showed a single plain tube, the first motor line-up an electric
   // gearmotor).
-  { slug: 'hydraulic-cylinder-guide', alt: 'Four blue double-acting welded hydraulic cylinders of decreasing bore laid side by side on a steel workbench, chrome rods part-extended with clevis ends and capped ports', caption: 'Same family, four bores: force rises with the square of the bore, so each step up matters more than it looks.' },
-  { slug: 'welded-vs-tie-rod-hydraulic-cylinders', alt: 'A tie-rod hydraulic cylinder with square end caps and four external tie rods beside a smooth-barrelled welded cylinder with a welded clevis cap', caption: 'Four external rods clamp one together; the other is a welded tube — and that decides how each one is rebuilt.' },
-  { slug: 'hydraulic-cylinder-force-and-speed', alt: 'A grey hydraulic cylinder clamped on a workshop test bench with a pressure gauge on a short hose and a tape measure laid along its extended chrome rod', caption: 'Pressure on the gauge sets the force; the flow behind it sets how fast the rod covers the tape.' },
-  { slug: 'hydraulic-cylinder-mounting-styles', alt: 'The cap end of a black welded hydraulic cylinder on a red tillage implement, its clevis pinned through a steel bracket, with a cross-tube cylinder behind it', caption: 'A clevis lets the cylinder swing with the implement; pin it tight and it starts carrying side load instead.' },
-  { slug: 'telescopic-hydraulic-cylinders', alt: 'A multi-stage telescopic hoist cylinder fully extended under a raised dump body, its chrome stages narrowing one inside the next above a wide outer barrel', caption: 'Each stage is narrower than the one below it, so the hoist pushes hardest at the start of the lift.' },
-  { slug: 'high-pressure-hydraulic-cylinders-and-pumps', alt: 'A red single-acting 10,000 psi jacking cylinder with a ribbed saddle under a steel beam on a base plate, timber cribbing beside it and a hand pump with gauge connected by hose', caption: 'The cribbing beside the jack is the point: a hydraulic cylinder lifts a load, it does not hold one.' },
-  { slug: 'hydraulic-cylinder-drift-diagnosis', alt: 'Gloved hands wiping the chrome rod of a hydraulic cylinder on a yellow loader arm, a film of oil visible at the gland seal', caption: 'Oil at the gland points to the rod seal; a load that sinks with a dry rod usually points somewhere else.' },
-  { slug: 'hydraulic-pump-types-gear-vane-piston', alt: 'Three hydraulic pumps side by side on a grey backdrop: a small aluminium gear pump, a cast-iron vane pump with two-bolt flange and a larger axial piston pump with control block', caption: 'Gear, vane and piston pumps all trap and push a fixed volume; they differ in pressure, noise and how clean the oil must be.' },
-  { slug: 'how-to-size-a-hydraulic-pump', alt: 'An electric motor coupled through a bell housing to a hydraulic gear pump on a steel frame beside a reservoir, with suction and pressure hoses and a gauge manifold', caption: 'Flow comes from displacement and motor speed; how long the pump lasts is mostly decided by that suction hose.' },
-  { slug: 'vane-pump-guide-v10-v20-t6', alt: 'A dismantled vane pump on a workbench: cast-iron body, slotted rotor, flat vanes, cam ring, two side plates, O-rings and the keyed drive shaft', caption: 'The rotor, vanes, ring and plates are the cartridge — the part that wears, and the part that is replaced.' },
-  { slug: 'two-stage-hydraulic-pumps-log-splitter', alt: 'A towable log splitter with a small petrol engine driving a two-section gear pump and a hydraulic cylinder pushing a hardwood log onto a wedge', caption: 'Two gear sections let a small engine run the ram fast to the log and still split it at full pressure.' },
-  { slug: 'dump-pumps-and-pto-pumps', alt: 'Underside of a truck chassis showing a power take-off on the side of the transmission with a direct-mounted hydraulic gear pump, hoses running to a chassis-mounted tank', caption: 'On a truck the pump runs off the gearbox, so the PTO ratio sets its speed and the PTO decides its rotation.' },
-  { slug: 'orbital-hydraulic-motor-guide', alt: 'Three black orbital hydraulic motors on a grey backdrop: a small two-bolt motor with keyed shaft, a square four-bolt motor with splined shaft and a wheel motor with tapered shaft', caption: 'Flange, shaft and ports identify an orbital motor faster than a worn tag does.' },
-  { slug: 'hydraulic-motor-torque-and-speed', alt: 'A black orbital hydraulic motor with two hoses coupled directly to a soil-covered auger on an excavator attachment', caption: 'An auger is sized by the torque it needs to restart in packed ground, not by the torque that keeps it turning.' },
-  { slug: 'gear-orbital-or-piston-hydraulic-motor', alt: 'Four hydraulic motors from smallest to largest on a grey backdrop: an aluminium gear motor, a black orbital motor, an angled bent-axis piston motor and a large round radial piston motor', caption: 'From fast and light to slow and enormous: the motor type follows the speed and torque the load needs.' },
-  { slug: 'instrumentation-tube-fittings-guide', alt: 'A stainless instrument panel with small-bore tubing runs joined by compression tube fittings, valves and pressure gauges', caption: 'Small-bore stainless tubing and two-ferrule fittings carry the signal from process to instrument.' },
-  { slug: 'single-vs-double-ferrule-tube-fittings', alt: 'Stainless compression fitting nuts laid out beside their single and two-piece front and back ferrules', caption: 'One ferrule or two: the parts inside the nut decide how the fitting grips and seals the tube.' },
-  { slug: 'how-to-make-up-a-compression-fitting', alt: 'Two spanners making up a stainless compression fitting on instrument tubing, one holding the body and one turning the nut', caption: 'Hold the body, turn the nut, count the turns: make-up is a measured job, not a feel.' },
-  { slug: 'instrumentation-tubing-pressure-ratings', alt: 'Lengths of seamless stainless instrument tubing on a bench with a hand tube bender and a tube cutter', caption: 'Wall thickness, not the fitting, usually sets the working pressure of an instrument line.' },
-  { slug: 'stainless-tube-fittings-corrosion-gulf', alt: 'Stainless tubing on an offshore platform showing brown tea staining and crevice corrosion where it passes through a clamp', caption: 'Salt, heat and a crevice under a clamp: where 316 tubing starts to stain on a Gulf site.' },
-  { slug: 'tube-fitting-end-connections', alt: 'Six stainless fitting ends: flare, female thread, O-ring boss, bulkhead, socket weld and bonded-seal male thread', caption: 'The tube end grips the same way; the other end decides how the fitting joins the system.' },
-  { slug: 'compression-fitting-leaks', alt: 'A gloved hand spraying leak detection fluid on a stainless compression fitting, with bubbles forming at the nut', caption: 'Bubbles at the nut: a leak test before the line goes into service.' },
-  { slug: 'pressure-gauge-guide', alt: 'Four dry stainless Bourdon tube pressure gauges in increasing dial sizes, three bottom-mount and the largest back-mount', caption: 'Dial size, mounting, accuracy class and case: the choices behind every pressure gauge.' },
-  { slug: 'how-to-choose-a-pressure-gauge-range', alt: 'A stainless pressure gauge on an instrument manifold above a hydraulic power unit, pointer near mid-scale', caption: 'Normal working pressure should sit near the middle of the dial, not at the top.' },
-  { slug: 'glycerine-filled-vs-dry-pressure-gauges', alt: 'Two stainless pressure gauges side by side, the left dry and the right liquid-filled with a fill plug on top', caption: 'Same gauge, two builds: a liquid fill damps pump vibration and keeps the movement alive.' },
-  { slug: 'high-pressure-hydraulic-gauges', alt: 'A red hydraulic cylinder under a steel beam with a hose and an inline pressure gauge running to a hand pump', caption: 'On a 10,000 psi lift, the gauge is the only reading of the load.' },
-  { slug: 'oilfield-pressure-and-flow-instrumentation', alt: 'Pressure transmitters and a gauge on a hammer-union flowline at a desert well site, with service trucks behind', caption: 'Gauges, transmitters and flow meters on a temporary flowline at a desert wellsite.' },
-  { slug: 'stainless-steel-pipe-fittings-guide', alt: 'A stainless steel process skid with butt-welded elbows and tees, bolted weld neck flanges and a small threaded branch line', caption: 'One skid, four ways of joining stainless pipe: welded, flanged, threaded and tube fittings.' },
-  { slug: '304-vs-316-stainless-steel-fittings', alt: 'Two stainless butt-weld elbows side by side, the left with brown tea staining and the right still bright', caption: 'Same shape, different alloy: molybdenum is what keeps 316 bright where 304 stains.' },
-  { slug: 'stainless-steel-butt-weld-fittings', alt: 'Stainless butt-weld fittings with bevelled ends: 90° and 45° elbows, tee, concentric and eccentric reducers, cap', caption: 'Bevelled ends, no threads: butt-weld fittings become part of the pipe.' },
-  { slug: 'stainless-threaded-pipe-fittings-150-vs-3000', alt: 'Cast 150# stainless threaded fittings with beaded edges beside heavier forged 3000# fittings, a union and two pipe nipples', caption: 'Cast on the left, forged on the right: the class, not the thread, sets the pressure.' },
-  { slug: 'stainless-steel-weld-outlets', alt: 'A stainless branch pipe rising from a saddle-shaped weld outlet on a larger pipe, with a threaded outlet further along', caption: 'A branch outlet takes a smaller line off the run without cutting in a full tee.' },
-  { slug: 'stainless-steel-flanges-asme-b16-5', alt: 'Stainless raised-face flanges: weld neck, slip-on, threaded, blind, and a lap joint flange with its stub end', caption: 'Five flange types, one bolt pattern per class: the hub is what changes.' },
-  { slug: 'sanitary-tri-clamp-fittings-guide', alt: 'Polished sanitary tubing in a process plant joined by tri-clamp connections with white gaskets, a tee and an elbow', caption: 'Clamp, two ferrules and a gasket: a joint that comes apart for cleaning in seconds.' },
-  { slug: 'stainless-hydraulic-adapters-guide', alt: 'An assortment of 316 stainless hydraulic adapters: straight connectors, elbows, tees, hex plugs and a bonded sealing washer', caption: 'Thread families decide the adapter; 316 decides how long it lasts in salt air.' },
-  { slug: 'stainless-jic-fittings', alt: 'Stainless 37° flare tube fittings and swivel nuts on a hydraulic manifold block on an offshore platform', caption: 'Offshore, every fitting in the panel is 316 or the first rust stain starts there.' },
-  { slug: 'stainless-orfs-and-orb-fittings', alt: 'Stainless O-ring hydraulic fittings with black O-rings on face and thread shoulder, including an adjustable 90° elbow', caption: 'Two O-ring seals that stop weeps where metal-to-metal seats struggle.' },
-  { slug: 'stainless-din-2353-and-flareless-bite-fittings', alt: 'A stainless bite-type tube union with 24° cones, nuts and loose cutting rings, beside tube with a pre-set ring', caption: 'A ring that bites the tube: preset it right and the joint holds for decades.' },
-  { slug: 'stainless-hose-barbs-and-push-on-fittings', alt: 'Stainless barbed and push-on hose fittings in clear and black hose on a food-plant bench, with a hose clamp', caption: 'Barbed ends are for low-pressure hose; the clamp and the hose set the limit.' },
-  { slug: 'jic-adapters-guide', alt: 'Zinc-plated steel 37° JIC adapters: straight union, 90° elbow, tee, bulkhead union with lock nut and a swivel connector', caption: 'The 37° flare nose on every end: the most common adapter family on inch-thread machines.' },
-  { slug: 'bsp-hydraulic-adapters-guide', alt: 'Zinc-plated steel BSP adapters: male studs with bonded seals, a female swivel with a 60° cone seat, a hex plug and an elbow', caption: 'BSPP seals on a washer or a cone, never on the thread: the seal travels with the adapter.' },
-  { slug: 'metric-hydraulic-adapters-guide', alt: 'Zinc-plated steel metric adapters in a valve block, one with an O-ring at the port face and others with flat sealing faces', caption: 'Metric ports seal on an O-ring, a bonded seal or a cutting edge: check which before ordering.' },
-  { slug: 'din-2353-adapters-guide', alt: 'Zinc-plated steel 24° cone bite-type fittings joining bent hydraulic tubes into a valve block on a European machine', caption: 'Plain metric tube, a cutting ring and a 24° cone: the standard tube joint on European machines.' },
-  { slug: 'orfs-and-orb-adapters-guide', alt: 'Zinc-plated steel ORFS adapters with face O-rings, ORB adapters, an adjustable elbow and a box of assorted O-rings', caption: 'Two O-ring seals and a box of spares: the O-ring is the part that wears.' },
-  { slug: 'npt-and-npsm-adapters-guide', alt: 'Zinc-plated steel NPT adapters: hex nipples, a female swivel, elbows, a tee, plug and cap, with two weld-on adapters', caption: 'Tapered NPT seals on the thread; the NPSM swivel seals on a 30° seat.' },
-  { slug: 'sae-flange-adapters-guide', alt: 'A four-bolt SAE split flange clamping a flanged adapter head to a hydraulic pump outlet port, with a steel tube', caption: 'Four bolts and an O-ring: how large, high-pressure pump ports are connected.' },
-  { slug: 'brass-air-brake-fittings-guide', alt: 'Brass air brake fittings connecting red and green nylon air brake tubing to a valve under a truck chassis', caption: 'Brass compression and push-in fittings carry the air on most truck brake systems.' },
-  { slug: 'brass-pipe-fittings-nptf-and-bsp', alt: 'Brass threaded pipe fittings: hex nipple, street elbow, tee, coupling, union, hex bushing, square-head plug and cap', caption: 'Brass pipe fittings: for air, water, fuel and gauges, not hydraulic pressure.' },
-  { slug: 'brass-flare-and-compression-fittings', alt: 'Brass 45° flare fittings, flared copper tube, compression fittings with sleeves, and an inverted flare union on steel tube', caption: 'Three ways to join small tube in brass: a 45° flare, an inverted double flare or a compression sleeve.' },
-  { slug: 'push-to-connect-air-fittings', alt: 'Plastic push-to-connect pneumatic fittings with blue and black polyurethane air tubes on a machine manifold', caption: 'Push the tube in to connect, press the collet to release: air lines without tools.' },
-  { slug: 'braided-hose-crimp-fittings-guide', alt: 'Zinc-plated steel crimp fittings and ferrules for braided hydraulic hose, with one crimped assembly showing crimp marks', caption: 'Stem, ferrule and the right crimp diameter: three parts of one joint.' },
-  { slug: 'spiral-hose-crimp-fittings-guide', alt: 'A heavy four-spiral hydraulic hose crimped to a flange-head fitting, beside a 90° flange fitting and a heavy ferrule', caption: 'Spiral hose carries the highest pressures, and its fittings are built to match.' },
-  { slug: 'thermoplastic-hose-fittings-guide', alt: 'Twin orange non-conductive thermoplastic hydraulic hoses with crimped fittings along the boom of an aerial work platform', caption: 'Orange cover, thermoplastic core: the hose that works near power lines.' },
-  { slug: 'ptfe-and-textile-hose-ends', alt: 'Stainless braided PTFE hose with stainless hose ends and a cut section of white PTFE tube, beside a textile-covered hose', caption: 'PTFE for heat and chemicals, textile braid for medium pressure: each needs its own end.' },
-  { slug: 'bsp-metric-din-and-jis-hose-fittings', alt: 'Steel hose fittings with metric and BSP swivels: 24° cone with O-ring, 60° cone, banjo with bolt and washers, JIS flange', caption: 'The hose end must match the port family the machine was built with.' },
-  { slug: 'jic-orfs-and-npt-hose-fittings', alt: 'Steel hose fittings: JIC 37° female swivels straight, 45° and 90°, an ORFS female swivel with O-ring, and an NPT male', caption: 'Three inch-thread hose ends: a 37° flare, an O-ring face and a tapered pipe thread.' },
-  { slug: 'stainless-316l-hose-fittings', alt: 'Polished 316L stainless hose fittings: BSP and JIC swivels, a flange head, a standpipe, a banjo, and stainless crimp ferrules', caption: 'Stainless hose ends for the lines where plated steel would rust.' },
-  { slug: 'hose-barbs-and-push-lock-fittings', alt: 'Brass barbed and push-lock hose fittings, a zinc-plated steel barb adapter and red push-lock hose on one barb', caption: 'Barbs and push-lock ends for low-pressure air, water and return lines.' },
-  { slug: 'crimped-reusable-or-ready-made-hose-assemblies', alt: 'A crimping machine crimping a braided hose assembly, finished assemblies on a rack, and a reusable fitting on the bench', caption: 'Crimp in the shop, reuse in the field, or buy the assembly made up.' },
+  {
+    slug: 'hydraulic-cylinder-guide',
+    alt: 'Four blue double-acting welded hydraulic cylinders of decreasing bore laid side by side on a steel workbench, chrome rods part-extended with clevis ends and capped ports',
+    caption:
+      'Same family, four bores: force rises with the square of the bore, so each step up matters more than it looks.',
+  },
+  {
+    slug: 'welded-vs-tie-rod-hydraulic-cylinders',
+    alt: 'A tie-rod hydraulic cylinder with square end caps and four external tie rods beside a smooth-barrelled welded cylinder with a welded clevis cap',
+    caption:
+      'Four external rods clamp one together; the other is a welded tube — and that decides how each one is rebuilt.',
+  },
+  {
+    slug: 'hydraulic-cylinder-force-and-speed',
+    alt: 'A grey hydraulic cylinder clamped on a workshop test bench with a pressure gauge on a short hose and a tape measure laid along its extended chrome rod',
+    caption:
+      'Pressure on the gauge sets the force; the flow behind it sets how fast the rod covers the tape.',
+  },
+  {
+    slug: 'hydraulic-cylinder-mounting-styles',
+    alt: 'The cap end of a black welded hydraulic cylinder on a red tillage implement, its clevis pinned through a steel bracket, with a cross-tube cylinder behind it',
+    caption:
+      'A clevis lets the cylinder swing with the implement; pin it tight and it starts carrying side load instead.',
+  },
+  {
+    slug: 'telescopic-hydraulic-cylinders',
+    alt: 'A multi-stage telescopic hoist cylinder fully extended under a raised dump body, its chrome stages narrowing one inside the next above a wide outer barrel',
+    caption:
+      'Each stage is narrower than the one below it, so the hoist pushes hardest at the start of the lift.',
+  },
+  {
+    slug: 'high-pressure-hydraulic-cylinders-and-pumps',
+    alt: 'A red single-acting 10,000 psi jacking cylinder with a ribbed saddle under a steel beam on a base plate, timber cribbing beside it and a hand pump with gauge connected by hose',
+    caption:
+      'The cribbing beside the jack is the point: a hydraulic cylinder lifts a load, it does not hold one.',
+  },
+  {
+    slug: 'hydraulic-cylinder-drift-diagnosis',
+    alt: 'Gloved hands wiping the chrome rod of a hydraulic cylinder on a yellow loader arm, a film of oil visible at the gland seal',
+    caption:
+      'Oil at the gland points to the rod seal; a load that sinks with a dry rod usually points somewhere else.',
+  },
+  {
+    slug: 'hydraulic-pump-types-gear-vane-piston',
+    alt: 'Three hydraulic pumps side by side on a grey backdrop: a small aluminium gear pump, a cast-iron vane pump with two-bolt flange and a larger axial piston pump with control block',
+    caption:
+      'Gear, vane and piston pumps all trap and push a fixed volume; they differ in pressure, noise and how clean the oil must be.',
+  },
+  {
+    slug: 'how-to-size-a-hydraulic-pump',
+    alt: 'An electric motor coupled through a bell housing to a hydraulic gear pump on a steel frame beside a reservoir, with suction and pressure hoses and a gauge manifold',
+    caption:
+      'Flow comes from displacement and motor speed; how long the pump lasts is mostly decided by that suction hose.',
+  },
+  {
+    slug: 'vane-pump-guide-v10-v20-t6',
+    alt: 'A dismantled vane pump on a workbench: cast-iron body, slotted rotor, flat vanes, cam ring, two side plates, O-rings and the keyed drive shaft',
+    caption:
+      'The rotor, vanes, ring and plates are the cartridge — the part that wears, and the part that is replaced.',
+  },
+  {
+    slug: 'two-stage-hydraulic-pumps-log-splitter',
+    alt: 'A towable log splitter with a small petrol engine driving a two-section gear pump and a hydraulic cylinder pushing a hardwood log onto a wedge',
+    caption:
+      'Two gear sections let a small engine run the ram fast to the log and still split it at full pressure.',
+  },
+  {
+    slug: 'dump-pumps-and-pto-pumps',
+    alt: 'Underside of a truck chassis showing a power take-off on the side of the transmission with a direct-mounted hydraulic gear pump, hoses running to a chassis-mounted tank',
+    caption:
+      'On a truck the pump runs off the gearbox, so the PTO ratio sets its speed and the PTO decides its rotation.',
+  },
+  {
+    slug: 'orbital-hydraulic-motor-guide',
+    alt: 'Three black orbital hydraulic motors on a grey backdrop: a small two-bolt motor with keyed shaft, a square four-bolt motor with splined shaft and a wheel motor with tapered shaft',
+    caption: 'Flange, shaft and ports identify an orbital motor faster than a worn tag does.',
+  },
+  {
+    slug: 'hydraulic-motor-torque-and-speed',
+    alt: 'A black orbital hydraulic motor with two hoses coupled directly to a soil-covered auger on an excavator attachment',
+    caption:
+      'An auger is sized by the torque it needs to restart in packed ground, not by the torque that keeps it turning.',
+  },
+  {
+    slug: 'gear-orbital-or-piston-hydraulic-motor',
+    alt: 'Four hydraulic motors from smallest to largest on a grey backdrop: an aluminium gear motor, a black orbital motor, an angled bent-axis piston motor and a large round radial piston motor',
+    caption:
+      'From fast and light to slow and enormous: the motor type follows the speed and torque the load needs.',
+  },
+  {
+    slug: 'instrumentation-tube-fittings-guide',
+    alt: 'A stainless instrument panel with small-bore tubing runs joined by compression tube fittings, valves and pressure gauges',
+    caption:
+      'Small-bore stainless tubing and two-ferrule fittings carry the signal from process to instrument.',
+  },
+  {
+    slug: 'single-vs-double-ferrule-tube-fittings',
+    alt: 'Stainless compression fitting nuts laid out beside their single and two-piece front and back ferrules',
+    caption:
+      'One ferrule or two: the parts inside the nut decide how the fitting grips and seals the tube.',
+  },
+  {
+    slug: 'how-to-make-up-a-compression-fitting',
+    alt: 'Two spanners making up a stainless compression fitting on instrument tubing, one holding the body and one turning the nut',
+    caption: 'Hold the body, turn the nut, count the turns: make-up is a measured job, not a feel.',
+  },
+  {
+    slug: 'instrumentation-tubing-pressure-ratings',
+    alt: 'Lengths of seamless stainless instrument tubing on a bench with a hand tube bender and a tube cutter',
+    caption:
+      'Wall thickness, not the fitting, usually sets the working pressure of an instrument line.',
+  },
+  {
+    slug: 'stainless-tube-fittings-corrosion-gulf',
+    alt: 'Stainless tubing on an offshore platform showing brown tea staining and crevice corrosion where it passes through a clamp',
+    caption:
+      'Salt, heat and a crevice under a clamp: where 316 tubing starts to stain on a Gulf site.',
+  },
+  {
+    slug: 'tube-fitting-end-connections',
+    alt: 'Six stainless fitting ends: flare, female thread, O-ring boss, bulkhead, socket weld and bonded-seal male thread',
+    caption:
+      'The tube end grips the same way; the other end decides how the fitting joins the system.',
+  },
+  {
+    slug: 'compression-fitting-leaks',
+    alt: 'A gloved hand spraying leak detection fluid on a stainless compression fitting, with bubbles forming at the nut',
+    caption: 'Bubbles at the nut: a leak test before the line goes into service.',
+  },
+  {
+    slug: 'pressure-gauge-guide',
+    alt: 'Four dry stainless Bourdon tube pressure gauges in increasing dial sizes, three bottom-mount and the largest back-mount',
+    caption:
+      'Dial size, mounting, accuracy class and case: the choices behind every pressure gauge.',
+  },
+  {
+    slug: 'how-to-choose-a-pressure-gauge-range',
+    alt: 'A stainless pressure gauge on an instrument manifold above a hydraulic power unit, pointer near mid-scale',
+    caption: 'Normal working pressure should sit near the middle of the dial, not at the top.',
+  },
+  {
+    slug: 'glycerine-filled-vs-dry-pressure-gauges',
+    alt: 'Two stainless pressure gauges side by side, the left dry and the right liquid-filled with a fill plug on top',
+    caption:
+      'Same gauge, two builds: a liquid fill damps pump vibration and keeps the movement alive.',
+  },
+  {
+    slug: 'high-pressure-hydraulic-gauges',
+    alt: 'A red hydraulic cylinder under a steel beam with a hose and an inline pressure gauge running to a hand pump',
+    caption: 'On a 10,000 psi lift, the gauge is the only reading of the load.',
+  },
+  {
+    slug: 'oilfield-pressure-and-flow-instrumentation',
+    alt: 'Pressure transmitters and a gauge on a hammer-union flowline at a desert well site, with service trucks behind',
+    caption: 'Gauges, transmitters and flow meters on a temporary flowline at a desert wellsite.',
+  },
+  {
+    slug: 'stainless-steel-pipe-fittings-guide',
+    alt: 'A stainless steel process skid with butt-welded elbows and tees, bolted weld neck flanges and a small threaded branch line',
+    caption:
+      'One skid, four ways of joining stainless pipe: welded, flanged, threaded and tube fittings.',
+  },
+  {
+    slug: '304-vs-316-stainless-steel-fittings',
+    alt: 'Two stainless butt-weld elbows side by side, the left with brown tea staining and the right still bright',
+    caption: 'Same shape, different alloy: molybdenum is what keeps 316 bright where 304 stains.',
+  },
+  {
+    slug: 'stainless-steel-butt-weld-fittings',
+    alt: 'Stainless butt-weld fittings with bevelled ends: 90° and 45° elbows, tee, concentric and eccentric reducers, cap',
+    caption: 'Bevelled ends, no threads: butt-weld fittings become part of the pipe.',
+  },
+  {
+    slug: 'stainless-threaded-pipe-fittings-150-vs-3000',
+    alt: 'Cast 150# stainless threaded fittings with beaded edges beside heavier forged 3000# fittings, a union and two pipe nipples',
+    caption: 'Cast on the left, forged on the right: the class, not the thread, sets the pressure.',
+  },
+  {
+    slug: 'stainless-steel-weld-outlets',
+    alt: 'A stainless branch pipe rising from a saddle-shaped weld outlet on a larger pipe, with a threaded outlet further along',
+    caption: 'A branch outlet takes a smaller line off the run without cutting in a full tee.',
+  },
+  {
+    slug: 'stainless-steel-flanges-asme-b16-5',
+    alt: 'Stainless raised-face flanges: weld neck, slip-on, threaded, blind, and a lap joint flange with its stub end',
+    caption: 'Five flange types, one bolt pattern per class: the hub is what changes.',
+  },
+  {
+    slug: 'sanitary-tri-clamp-fittings-guide',
+    alt: 'Polished sanitary tubing in a process plant joined by tri-clamp connections with white gaskets, a tee and an elbow',
+    caption: 'Clamp, two ferrules and a gasket: a joint that comes apart for cleaning in seconds.',
+  },
+  {
+    slug: 'stainless-hydraulic-adapters-guide',
+    alt: 'An assortment of 316 stainless hydraulic adapters: straight connectors, elbows, tees, hex plugs and a bonded sealing washer',
+    caption: 'Thread families decide the adapter; 316 decides how long it lasts in salt air.',
+  },
+  {
+    slug: 'stainless-jic-fittings',
+    alt: 'Stainless 37° flare tube fittings and swivel nuts on a hydraulic manifold block on an offshore platform',
+    caption: 'Offshore, every fitting in the panel is 316 or the first rust stain starts there.',
+  },
+  {
+    slug: 'stainless-orfs-and-orb-fittings',
+    alt: 'Stainless O-ring hydraulic fittings with black O-rings on face and thread shoulder, including an adjustable 90° elbow',
+    caption: 'Two O-ring seals that stop weeps where metal-to-metal seats struggle.',
+  },
+  {
+    slug: 'stainless-din-2353-and-flareless-bite-fittings',
+    alt: 'A stainless bite-type tube union with 24° cones, nuts and loose cutting rings, beside tube with a pre-set ring',
+    caption: 'A ring that bites the tube: preset it right and the joint holds for decades.',
+  },
+  {
+    slug: 'stainless-hose-barbs-and-push-on-fittings',
+    alt: 'Stainless barbed and push-on hose fittings in clear and black hose on a food-plant bench, with a hose clamp',
+    caption: 'Barbed ends are for low-pressure hose; the clamp and the hose set the limit.',
+  },
+  {
+    slug: 'jic-adapters-guide',
+    alt: 'Zinc-plated steel 37° JIC adapters: straight union, 90° elbow, tee, bulkhead union with lock nut and a swivel connector',
+    caption:
+      'The 37° flare nose on every end: the most common adapter family on inch-thread machines.',
+  },
+  {
+    slug: 'bsp-hydraulic-adapters-guide',
+    alt: 'Zinc-plated steel BSP adapters: male studs with bonded seals, a female swivel with a 60° cone seat, a hex plug and an elbow',
+    caption:
+      'BSPP seals on a washer or a cone, never on the thread: the seal travels with the adapter.',
+  },
+  {
+    slug: 'metric-hydraulic-adapters-guide',
+    alt: 'Zinc-plated steel metric adapters in a valve block, one with an O-ring at the port face and others with flat sealing faces',
+    caption:
+      'Metric ports seal on an O-ring, a bonded seal or a cutting edge: check which before ordering.',
+  },
+  {
+    slug: 'din-2353-adapters-guide',
+    alt: 'Zinc-plated steel 24° cone bite-type fittings joining bent hydraulic tubes into a valve block on a European machine',
+    caption:
+      'Plain metric tube, a cutting ring and a 24° cone: the standard tube joint on European machines.',
+  },
+  {
+    slug: 'orfs-and-orb-adapters-guide',
+    alt: 'Zinc-plated steel ORFS adapters with face O-rings, ORB adapters, an adjustable elbow and a box of assorted O-rings',
+    caption: 'Two O-ring seals and a box of spares: the O-ring is the part that wears.',
+  },
+  {
+    slug: 'npt-and-npsm-adapters-guide',
+    alt: 'Zinc-plated steel NPT adapters: hex nipples, a female swivel, elbows, a tee, plug and cap, with two weld-on adapters',
+    caption: 'Tapered NPT seals on the thread; the NPSM swivel seals on a 30° seat.',
+  },
+  {
+    slug: 'sae-flange-adapters-guide',
+    alt: 'A four-bolt SAE split flange clamping a flanged adapter head to a hydraulic pump outlet port, with a steel tube',
+    caption: 'Four bolts and an O-ring: how large, high-pressure pump ports are connected.',
+  },
+  {
+    slug: 'brass-air-brake-fittings-guide',
+    alt: 'Brass air brake fittings connecting red and green nylon air brake tubing to a valve under a truck chassis',
+    caption: 'Brass compression and push-in fittings carry the air on most truck brake systems.',
+  },
+  {
+    slug: 'brass-pipe-fittings-nptf-and-bsp',
+    alt: 'Brass threaded pipe fittings: hex nipple, street elbow, tee, coupling, union, hex bushing, square-head plug and cap',
+    caption: 'Brass pipe fittings: for air, water, fuel and gauges, not hydraulic pressure.',
+  },
+  {
+    slug: 'brass-flare-and-compression-fittings',
+    alt: 'Brass 45° flare fittings, flared copper tube, compression fittings with sleeves, and an inverted flare union on steel tube',
+    caption:
+      'Three ways to join small tube in brass: a 45° flare, an inverted double flare or a compression sleeve.',
+  },
+  {
+    slug: 'push-to-connect-air-fittings',
+    alt: 'Plastic push-to-connect pneumatic fittings with blue and black polyurethane air tubes on a machine manifold',
+    caption: 'Push the tube in to connect, press the collet to release: air lines without tools.',
+  },
+  {
+    slug: 'braided-hose-crimp-fittings-guide',
+    alt: 'Zinc-plated steel crimp fittings and ferrules for braided hydraulic hose, with one crimped assembly showing crimp marks',
+    caption: 'Stem, ferrule and the right crimp diameter: three parts of one joint.',
+  },
+  {
+    slug: 'spiral-hose-crimp-fittings-guide',
+    alt: 'A heavy four-spiral hydraulic hose crimped to a flange-head fitting, beside a 90° flange fitting and a heavy ferrule',
+    caption: 'Spiral hose carries the highest pressures, and its fittings are built to match.',
+  },
+  {
+    slug: 'thermoplastic-hose-fittings-guide',
+    alt: 'Twin orange non-conductive thermoplastic hydraulic hoses with crimped fittings along the boom of an aerial work platform',
+    caption: 'Orange cover, thermoplastic core: the hose that works near power lines.',
+  },
+  {
+    slug: 'ptfe-and-textile-hose-ends',
+    alt: 'Stainless braided PTFE hose with stainless hose ends and a cut section of white PTFE tube, beside a textile-covered hose',
+    caption:
+      'PTFE for heat and chemicals, textile braid for medium pressure: each needs its own end.',
+  },
+  {
+    slug: 'bsp-metric-din-and-jis-hose-fittings',
+    alt: 'Steel hose fittings with metric and BSP swivels: 24° cone with O-ring, 60° cone, banjo with bolt and washers, JIS flange',
+    caption: 'The hose end must match the port family the machine was built with.',
+  },
+  {
+    slug: 'jic-orfs-and-npt-hose-fittings',
+    alt: 'Steel hose fittings: JIC 37° female swivels straight, 45° and 90°, an ORFS female swivel with O-ring, and an NPT male',
+    caption: 'Three inch-thread hose ends: a 37° flare, an O-ring face and a tapered pipe thread.',
+  },
+  {
+    slug: 'stainless-316l-hose-fittings',
+    alt: 'Polished 316L stainless hose fittings: BSP and JIC swivels, a flange head, a standpipe, a banjo, and stainless crimp ferrules',
+    caption: 'Stainless hose ends for the lines where plated steel would rust.',
+  },
+  {
+    slug: 'hose-barbs-and-push-lock-fittings',
+    alt: 'Brass barbed and push-lock hose fittings, a zinc-plated steel barb adapter and red push-lock hose on one barb',
+    caption: 'Barbs and push-lock ends for low-pressure air, water and return lines.',
+  },
+  {
+    slug: 'crimped-reusable-or-ready-made-hose-assemblies',
+    alt: 'A crimping machine crimping a braided hose assembly, finished assemblies on a rack, and a reusable fitting on the bench',
+    caption: 'Crimp in the shop, reuse in the field, or buy the assembly made up.',
+  },
   // Hydraulic tools & bolting (2026-10-21).
-  { slug: 'hydraulic-torque-wrenches-guide', alt: 'Square-drive hydraulic torque wrench with impact socket on a pipeline flange nut, reaction arm on the next nut', caption: 'The reaction arm braces on the next nut, so the force goes into the bolt, not the operator.' },
-  { slug: 'bolt-tensioning-nut-splitters-and-flange-tools', alt: 'Hydraulic bolt tensioners on a large offshore flange, with a nut splitter and wedge flange spreader on the deck', caption: 'Tensioners stretch every stud at once; the splitter and spreader open the joint when it has to come apart.' },
-  { slug: 'hydraulic-jacks-wedges-and-skates', alt: 'Machine base on timber cribbing, raised by red bottle jacks set on roller load skates on a concrete floor', caption: 'Lift, crib, then roll: the load rests on timber between every lift.' },
-  { slug: 'hydraulic-pullers-presses-and-cutters', alt: 'Three-jaw hydraulic puller on a gear and shaft, with an H-frame workshop press and a hydraulic chain cutter', caption: 'Size the puller to the shaft, and check reach and spread before force.' },
-  { slug: 'hydraulic-power-tools-and-power-units', alt: 'Portable hydraulic power unit with hoses to a breaker on broken concrete, a cut-off saw and a submersible pump', caption: 'One open-centre power unit can run a whole kit of tools, if every tool is in its flow class.' },
+  {
+    slug: 'hydraulic-torque-wrenches-guide',
+    alt: 'Square-drive hydraulic torque wrench with impact socket on a pipeline flange nut, reaction arm on the next nut',
+    caption:
+      'The reaction arm braces on the next nut, so the force goes into the bolt, not the operator.',
+  },
+  {
+    slug: 'bolt-tensioning-nut-splitters-and-flange-tools',
+    alt: 'Hydraulic bolt tensioners on a large offshore flange, with a nut splitter and wedge flange spreader on the deck',
+    caption:
+      'Tensioners stretch every stud at once; the splitter and spreader open the joint when it has to come apart.',
+  },
+  {
+    slug: 'hydraulic-jacks-wedges-and-skates',
+    alt: 'Machine base on timber cribbing, raised by red bottle jacks set on roller load skates on a concrete floor',
+    caption: 'Lift, crib, then roll: the load rests on timber between every lift.',
+  },
+  {
+    slug: 'hydraulic-pullers-presses-and-cutters',
+    alt: 'Three-jaw hydraulic puller on a gear and shaft, with an H-frame workshop press and a hydraulic chain cutter',
+    caption: 'Size the puller to the shaft, and check reach and spread before force.',
+  },
+  {
+    slug: 'hydraulic-power-tools-and-power-units',
+    alt: 'Portable hydraulic power unit with hoses to a breaker on broken concrete, a cut-off saw and a submersible pump',
+    caption:
+      'One open-centre power unit can run a whole kit of tools, if every tool is in its flow class.',
+  },
   // Valves (2026-10-21).
-  { slug: 'butterfly-valves-wafer-lug-and-grooved', alt: 'Wafer, lug and grooved-end butterfly valves side by side, blue ductile iron bodies with lever handles', caption: 'Same disc, three bodies: only the lug and grooved styles can hold a line with the far side removed.' },
-  { slug: 'mobile-hydraulic-control-valves-guide', alt: 'Two-spool monoblock directional valve with lever handles, a cartridge flow control, in-line check and gear flow divider', caption: 'Direction, pressure, speed and split: four valve jobs in one circuit.' },
-  { slug: 'oilfield-pressure-relief-valves', alt: 'Spring-loaded relief valve on a red flow line at a desert wellsite, with a pilot-operated valve on a skid behind', caption: 'Set the relief below the weakest part of the line, and pipe the discharge somewhere safe.' },
-  { slug: 'needle-globe-and-instrumentation-valves', alt: 'Stainless needle valve, monoflange valve, two-handle block and bleed manifold and a flanged globe valve', caption: 'Isolate, bleed, then change the gauge: the small valves that make instrument work safe.' },
-  { slug: 'surface-safety-valves-and-esd-systems', alt: 'Hydraulically actuated surface safety gate valve on a flow line beside a stainless ESD control panel with gauges', caption: 'Held open by hydraulic pressure, closed by a spring the moment that pressure is lost.' },
+  {
+    slug: 'butterfly-valves-wafer-lug-and-grooved',
+    alt: 'Wafer, lug and grooved-end butterfly valves side by side, blue ductile iron bodies with lever handles',
+    caption:
+      'Same disc, three bodies: only the lug and grooved styles can hold a line with the far side removed.',
+  },
+  {
+    slug: 'mobile-hydraulic-control-valves-guide',
+    alt: 'Two-spool monoblock directional valve with lever handles, a cartridge flow control, in-line check and gear flow divider',
+    caption: 'Direction, pressure, speed and split: four valve jobs in one circuit.',
+  },
+  {
+    slug: 'oilfield-pressure-relief-valves',
+    alt: 'Spring-loaded relief valve on a red flow line at a desert wellsite, with a pilot-operated valve on a skid behind',
+    caption:
+      'Set the relief below the weakest part of the line, and pipe the discharge somewhere safe.',
+  },
+  {
+    slug: 'needle-globe-and-instrumentation-valves',
+    alt: 'Stainless needle valve, monoflange valve, two-handle block and bleed manifold and a flanged globe valve',
+    caption:
+      'Isolate, bleed, then change the gauge: the small valves that make instrument work safe.',
+  },
+  {
+    slug: 'surface-safety-valves-and-esd-systems',
+    alt: 'Hydraulically actuated surface safety gate valve on a flow line beside a stainless ESD control panel with gauges',
+    caption:
+      'Held open by hydraulic pressure, closed by a spring the moment that pressure is lost.',
+  },
   // Hose specials (2026-10-21).
-  { slug: 'marine-hose-fuel-exhaust-and-bilge', alt: 'Boat engine room with double-clamped black and blue wet exhaust hose and clear helix bilge hose to a bilge pump', caption: 'Two clamps on every exhaust joint, and nothing clear-PVC below the waterline.' },
-  { slug: 'fire-sleeves-and-metal-hose-guards', alt: 'Braided metal hose in a red silicone fire sleeve, interlocked lock-section hose, ball-joint armour guard and fire tape', caption: 'Sleeve, interlock or armour: each protects a hose from something different.' },
-  { slug: 'cryogenic-jacketed-and-heated-metal-hose', alt: 'Insulated braided stainless cryogenic hose from a tanker to a plant fill point, with a metal pipe loop behind', caption: 'Cryogenic hose loses far less product per fill with its insulation cover on.' },
+  {
+    slug: 'marine-hose-fuel-exhaust-and-bilge',
+    alt: 'Boat engine room with double-clamped black and blue wet exhaust hose and clear helix bilge hose to a bilge pump',
+    caption: 'Two clamps on every exhaust joint, and nothing clear-PVC below the waterline.',
+  },
+  {
+    slug: 'fire-sleeves-and-metal-hose-guards',
+    alt: 'Braided metal hose in a red silicone fire sleeve, interlocked lock-section hose, ball-joint armour guard and fire tape',
+    caption: 'Sleeve, interlock or armour: each protects a hose from something different.',
+  },
+  {
+    slug: 'cryogenic-jacketed-and-heated-metal-hose',
+    alt: 'Insulated braided stainless cryogenic hose from a tanker to a plant fill point, with a metal pipe loop behind',
+    caption: 'Cryogenic hose loses far less product per fill with its insulation cover on.',
+  },
   // Oilfield packages (2026-10-21).
-  { slug: 'surface-well-testing-equipment', alt: 'Well test spread on a desert site: horizontal three-phase separator, vertical surge tank, red flow iron and choke manifold', caption: 'Choke, separate, settle, flare: each skid on a test spread does one job.' },
-  { slug: 'frac-and-stimulation-equipment', alt: 'Aerial view of a frac spread: rows of trailer-mounted pumpers, a red frac manifold, sand silos, frac tanks and data van', caption: 'Blender to pumpers to manifold to well, controlled from the data van.' },
-  { slug: 'cementing-and-drilling-fluid-equipment', alt: 'Skid-mounted cementing pump unit beside bulk cement silos, with mud tanks and a vertical degasser behind', caption: 'Cement and mud are both mixed to a density, and both are pumped from surface.' },
-  { slug: 'hydraulic-power-unit-components', alt: 'Hydraulic reservoir with breather and sight glass, bell housing, jaw coupling hubs and spider, filter and accumulator', caption: 'The cheap parts around the pump decide how long the pump lasts.' },
-  { slug: 'safety-relief-valve-types', alt: 'Two flanged spring-loaded safety relief valves on a twin manifold with a changeover valve, discharging into a header pipe', caption: 'A duty and standby pair on a changeover valve lets one relief valve come out for testing while the other keeps the vessel protected.' },
-  { slug: 'cryogenic-valves-explained', alt: 'Stainless cryogenic ball valve welded into an insulated LNG line, long extended bonnet rising above the frosted body', caption: 'The long bonnet is what makes it a cryogenic valve: frost stops low on the neck, and the stem seal at the top stays warm and tight.' },
-  { slug: 'api-600-602-603-gate-and-globe-valves', alt: 'Cast steel bolted-bonnet gate valve with rising stem, a globe valve and a small forged gate valve on refinery piping', caption: 'The three valves most plant data sheets call up: an API 600 gate, a globe valve for throttling and an API 602 forged gate on a drain.' },
-  { slug: 'industrial-check-valve-types', alt: 'Swing check valve with bolted cover and a wafer dual plate check valve on parallel pump discharge lines in a pump house', caption: 'Pump discharge is where check valves slam — the disc design decides how fast it shuts after a pump trip.' },
-  { slug: 'floating-vs-trunnion-mounted-ball-valves', alt: 'Large side-entry trunnion ball valve with flanged ends beside a small lever-operated floating ball valve on a test bench', caption: 'The size gap is the point: floating balls stay small because line pressure loads one seat, so large and high-class valves are trunnion-mounted.' },
-  { slug: 'centralised-lubrication-systems', alt: 'Electric oil lubrication pump with clear reservoir feeding copper lines and meter units on a CNC machine side panel', caption: 'One pump, one main line and a meter unit at each point: the simplest centralised system, single-line resistance, on a machine tool.' },
-  { slug: 'grease-and-oil-drum-pumps-and-manual-lubricators', alt: 'Air-operated grease pump in a 200-litre drum, feeding a grease gun by hose, with a one-shot oil lubricator on a bench', caption: 'The drum pump feeds grease to the gun at the pressure set by its ratio; a hand lubricator covers the few points on a small machine.' },
-  { slug: 'control-valve-types-and-trim', alt: 'Globe control valve in a process line with a pneumatic diaphragm actuator and positioner on its yoke, bypass behind', caption: 'Body, trim, actuator and positioner come as one tested assembly: the trim inside decides whether the valve controls, cavitates or wears out.' },
-  { slug: 'waterworks-valves-guide', alt: 'Blue epoxy-coated butterfly, swing check and gate valves on a pump station header, with an air valve on top', caption: 'A pump station header carries all four waterworks families — isolation, non-return, butterfly and air valves — each to its own standard.' },
+  {
+    slug: 'surface-well-testing-equipment',
+    alt: 'Well test spread on a desert site: horizontal three-phase separator, vertical surge tank, red flow iron and choke manifold',
+    caption: 'Choke, separate, settle, flare: each skid on a test spread does one job.',
+  },
+  {
+    slug: 'frac-and-stimulation-equipment',
+    alt: 'Aerial view of a frac spread: rows of trailer-mounted pumpers, a red frac manifold, sand silos, frac tanks and data van',
+    caption: 'Blender to pumpers to manifold to well, controlled from the data van.',
+  },
+  {
+    slug: 'cementing-and-drilling-fluid-equipment',
+    alt: 'Skid-mounted cementing pump unit beside bulk cement silos, with mud tanks and a vertical degasser behind',
+    caption: 'Cement and mud are both mixed to a density, and both are pumped from surface.',
+  },
+  {
+    slug: 'hydraulic-power-unit-components',
+    alt: 'Hydraulic reservoir with breather and sight glass, bell housing, jaw coupling hubs and spider, filter and accumulator',
+    caption: 'The cheap parts around the pump decide how long the pump lasts.',
+  },
+  {
+    slug: 'safety-relief-valve-types',
+    alt: 'Two flanged spring-loaded safety relief valves on a twin manifold with a changeover valve, discharging into a header pipe',
+    caption:
+      'A duty and standby pair on a changeover valve lets one relief valve come out for testing while the other keeps the vessel protected.',
+  },
+  {
+    slug: 'cryogenic-valves-explained',
+    alt: 'Stainless cryogenic ball valve welded into an insulated LNG line, long extended bonnet rising above the frosted body',
+    caption:
+      'The long bonnet is what makes it a cryogenic valve: frost stops low on the neck, and the stem seal at the top stays warm and tight.',
+  },
+  {
+    slug: 'api-600-602-603-gate-and-globe-valves',
+    alt: 'Cast steel bolted-bonnet gate valve with rising stem, a globe valve and a small forged gate valve on refinery piping',
+    caption:
+      'The three valves most plant data sheets call up: an API 600 gate, a globe valve for throttling and an API 602 forged gate on a drain.',
+  },
+  {
+    slug: 'industrial-check-valve-types',
+    alt: 'Swing check valve with bolted cover and a wafer dual plate check valve on parallel pump discharge lines in a pump house',
+    caption:
+      'Pump discharge is where check valves slam — the disc design decides how fast it shuts after a pump trip.',
+  },
+  {
+    slug: 'floating-vs-trunnion-mounted-ball-valves',
+    alt: 'Large side-entry trunnion ball valve with flanged ends beside a small lever-operated floating ball valve on a test bench',
+    caption:
+      'The size gap is the point: floating balls stay small because line pressure loads one seat, so large and high-class valves are trunnion-mounted.',
+  },
+  {
+    slug: 'centralised-lubrication-systems',
+    alt: 'Electric oil lubrication pump with clear reservoir feeding copper lines and meter units on a CNC machine side panel',
+    caption:
+      'One pump, one main line and a meter unit at each point: the simplest centralised system, single-line resistance, on a machine tool.',
+  },
+  {
+    slug: 'grease-and-oil-drum-pumps-and-manual-lubricators',
+    alt: 'Air-operated grease pump in a 200-litre drum, feeding a grease gun by hose, with a one-shot oil lubricator on a bench',
+    caption:
+      'The drum pump feeds grease to the gun at the pressure set by its ratio; a hand lubricator covers the few points on a small machine.',
+  },
+  {
+    slug: 'control-valve-types-and-trim',
+    alt: 'Globe control valve in a process line with a pneumatic diaphragm actuator and positioner on its yoke, bypass behind',
+    caption:
+      'Body, trim, actuator and positioner come as one tested assembly: the trim inside decides whether the valve controls, cavitates or wears out.',
+  },
+  {
+    slug: 'waterworks-valves-guide',
+    alt: 'Blue epoxy-coated butterfly, swing check and gate valves on a pump station header, with an air valve on top',
+    caption:
+      'A pump station header carries all four waterworks families — isolation, non-return, butterfly and air valves — each to its own standard.',
+  },
   // Pneumatics hub, 2026-10-22.
-  { slug: 'pneumatic-cylinder-types-guide', alt: 'Four air cylinders on a steel bench: tie-rod, extruded profile, slim round-body mini and compact', caption: 'Tie-rod, profile, round-body and compact: four ways of building the same piston, rod and barrel.' },
-  { slug: 'how-to-size-a-pneumatic-cylinder', alt: 'A tie-rod air cylinder pushing a steel block, fed through a regulator with a gauge, beside a ruler and calculator', caption: 'Force is pressure at the cylinder times piston area — so the gauge that matters is the one next to it.' },
-  { slug: 'pneumatic-cylinder-cushioning-and-mounting', alt: 'A tie-rod air cylinder on a rear clevis bracket driving a hinged lever through a rod-end clevis', caption: 'A pivot mount at both ends lets the cylinder follow the lever’s arc instead of taking it as side load.' },
-  { slug: 'solenoid-valve-functions-3-2-5-2-5-3', alt: 'Eight solenoid valves on an aluminium manifold in a control cabinet, coils lit green, blue and black air tubes in the ports', caption: 'One manifold, one supply, one exhaust: each valve on it sends air to one cylinder.' },
-  { slug: 'sizing-pneumatic-valves-flow-cv', alt: 'A test bench with a regulator, flow meter and four-valve solenoid manifold feeding a double-acting air cylinder', caption: 'A valve’s flow rating decides how fast the cylinder at the end of the tube can move.' },
-  { slug: 'cylinder-speed-control-and-quick-exhaust-valves', alt: 'Two elbow speed controllers in the ports of an aluminium air cylinder, and a quick exhaust valve with a silencer', caption: 'Speed controllers in the cylinder ports meter the exhaust; a quick exhaust valve dumps it close to the cylinder.' },
-  { slug: 'manual-and-pilot-operated-air-valves', alt: 'Manual air valves on a bench: hand lever, guarded foot pedal, red mushroom push button and roller lever', caption: 'Lever, pedal, button or cam: the operator changes, the valve function underneath does not.' },
-  { slug: 'frl-filter-regulator-lubricator-guide', alt: 'A modular filter, regulator and lubricator on a wall drop, with metal bowl guards and a pressure gauge', caption: 'Filter first, then regulator, then lubricator — the order is the same on every FRL.' },
-  { slug: 'compressed-air-quality-iso-8573-1', alt: 'A clear-bowl filter on a compressed-air line draining condensate into a floor grate, an air dryer behind it', caption: 'Water condenses out of compressed air as it cools; drains and dryers are where it should leave the system.' },
-  { slug: 'air-safety-relief-soft-start-and-lockout-valves', alt: 'A brass pop safety valve on a red air receiver, and a padlocked lockout valve with a yellow tag on the line', caption: 'A safety valve protects the receiver; a lockout valve protects the person working on the machine.' },
-  { slug: 'pneumatic-tubing-materials-guide', alt: 'Coils of blue, black, clear, orange, white and green air tubing on a bench with a tube cutter and fittings', caption: 'Polyurethane, nylon, polyethylene or fluoropolymer: the colour tells you nothing, the data sheet does.' },
-  { slug: 'push-to-connect-fittings-and-silencers', alt: 'Nickel-plated brass push-in fittings with coloured release collars and blue tube, beside sintered bronze silencers', caption: 'A push-in fitting grips the outside of the tube, so the tube’s outside diameter has to be right.' },
-  { slug: 'pneumatic-grippers-and-vacuum-guide', alt: 'A two-jaw parallel gripper on a robot arm holding a part, beside vacuum cups on a frame lifting a steel sheet', caption: 'Jaws for parts with edges to hold; suction for flat sheet that has none.' },
-  { slug: 'air-motors-guide', alt: 'A vane air motor with planetary gearbox driving a mixer shaft over a stainless tank, fed through a regulator', caption: 'Air motors are at home where electric motors are not: wet, washed-down and stalled under load.' },
+  {
+    slug: 'pneumatic-cylinder-types-guide',
+    alt: 'Four air cylinders on a steel bench: tie-rod, extruded profile, slim round-body mini and compact',
+    caption:
+      'Tie-rod, profile, round-body and compact: four ways of building the same piston, rod and barrel.',
+  },
+  {
+    slug: 'how-to-size-a-pneumatic-cylinder',
+    alt: 'A tie-rod air cylinder pushing a steel block, fed through a regulator with a gauge, beside a ruler and calculator',
+    caption:
+      'Force is pressure at the cylinder times piston area — so the gauge that matters is the one next to it.',
+  },
+  {
+    slug: 'pneumatic-cylinder-cushioning-and-mounting',
+    alt: 'A tie-rod air cylinder on a rear clevis bracket driving a hinged lever through a rod-end clevis',
+    caption:
+      'A pivot mount at both ends lets the cylinder follow the lever’s arc instead of taking it as side load.',
+  },
+  {
+    slug: 'solenoid-valve-functions-3-2-5-2-5-3',
+    alt: 'Eight solenoid valves on an aluminium manifold in a control cabinet, coils lit green, blue and black air tubes in the ports',
+    caption: 'One manifold, one supply, one exhaust: each valve on it sends air to one cylinder.',
+  },
+  {
+    slug: 'sizing-pneumatic-valves-flow-cv',
+    alt: 'A test bench with a regulator, flow meter and four-valve solenoid manifold feeding a double-acting air cylinder',
+    caption: 'A valve’s flow rating decides how fast the cylinder at the end of the tube can move.',
+  },
+  {
+    slug: 'cylinder-speed-control-and-quick-exhaust-valves',
+    alt: 'Two elbow speed controllers in the ports of an aluminium air cylinder, and a quick exhaust valve with a silencer',
+    caption:
+      'Speed controllers in the cylinder ports meter the exhaust; a quick exhaust valve dumps it close to the cylinder.',
+  },
+  {
+    slug: 'manual-and-pilot-operated-air-valves',
+    alt: 'Manual air valves on a bench: hand lever, guarded foot pedal, red mushroom push button and roller lever',
+    caption:
+      'Lever, pedal, button or cam: the operator changes, the valve function underneath does not.',
+  },
+  {
+    slug: 'frl-filter-regulator-lubricator-guide',
+    alt: 'A modular filter, regulator and lubricator on a wall drop, with metal bowl guards and a pressure gauge',
+    caption: 'Filter first, then regulator, then lubricator — the order is the same on every FRL.',
+  },
+  {
+    slug: 'compressed-air-quality-iso-8573-1',
+    alt: 'A clear-bowl filter on a compressed-air line draining condensate into a floor grate, an air dryer behind it',
+    caption:
+      'Water condenses out of compressed air as it cools; drains and dryers are where it should leave the system.',
+  },
+  {
+    slug: 'air-safety-relief-soft-start-and-lockout-valves',
+    alt: 'A brass pop safety valve on a red air receiver, and a padlocked lockout valve with a yellow tag on the line',
+    caption:
+      'A safety valve protects the receiver; a lockout valve protects the person working on the machine.',
+  },
+  {
+    slug: 'pneumatic-tubing-materials-guide',
+    alt: 'Coils of blue, black, clear, orange, white and green air tubing on a bench with a tube cutter and fittings',
+    caption:
+      'Polyurethane, nylon, polyethylene or fluoropolymer: the colour tells you nothing, the data sheet does.',
+  },
+  {
+    slug: 'push-to-connect-fittings-and-silencers',
+    alt: 'Nickel-plated brass push-in fittings with coloured release collars and blue tube, beside sintered bronze silencers',
+    caption:
+      'A push-in fitting grips the outside of the tube, so the tube’s outside diameter has to be right.',
+  },
+  {
+    slug: 'pneumatic-grippers-and-vacuum-guide',
+    alt: 'A two-jaw parallel gripper on a robot arm holding a part, beside vacuum cups on a frame lifting a steel sheet',
+    caption: 'Jaws for parts with edges to hold; suction for flat sheet that has none.',
+  },
+  {
+    slug: 'air-motors-guide',
+    alt: 'A vane air motor with planetary gearbox driving a mixer shaft over a stainless tank, fed through a regulator',
+    caption:
+      'Air motors are at home where electric motors are not: wet, washed-down and stalled under load.',
+  },
   // 2026-11-08: the 14 anchor chain & mooring articles from PR #589 (published
   // without heroes). Higgsfield GPT Image 2.6, medium, 2k 3:2 -> 1536x1024 JPEG.
-  { slug: 'anchor-chain-cable-arrangement', alt: 'A black stockless anchor on a quay, its D-shackle joined through a swivel and end link to black stud link anchor chain', caption: 'An anchor cable is built up from parts: anchor shackle, swivel, end links, then 27.5 m lengths of common links.' },
-  { slug: 'anchor-chain-size-chart', alt: 'Sample lengths of stud link anchor chain on a factory floor, laid side by side from small to very large diameters', caption: 'Chain size is the bar diameter of a common link — and proof and breaking loads climb steeply with it.' },
-  { slug: 'stud-link-vs-studless-chain', alt: 'Two heavy chains side by side on a wet quay: stud link chain with a bar across every link, and plain studless chain', caption: 'The stud stops a link closing up and the chain kinking; studless chain saves weight and the joint that can work loose.' },
-  { slug: 'offshore-mooring-chain-grades-r3-r4-r5', alt: 'Huge studless offshore mooring chain running out over the stern roller of an anchor-handling vessel in a rough sea', caption: 'Offshore mooring chain is graded R3 to R5: higher strength and toughness for lines that stay in the water for decades.' },
-  { slug: 'anchor-chain-weight-chart', alt: 'A crane lifting a bundle of black stud link anchor chain on a crane scale, more chain stacked in the stockyard', caption: 'Chain weight per metre sets windlass load, deck strength and freight — and two published tables rarely agree exactly.' },
-  { slug: 'how-anchor-chain-is-made', alt: 'A glowing hot steel bar bent into a chain link in a chain-making machine, threaded through the previous link', caption: 'Each link is bent hot through the one before it, then flash-butt welded shut, studded and heat treated.' },
-  { slug: 'anchor-chain-testing-proof-break-ndt', alt: 'A length of stud link anchor chain stretched taut on a long proof-load test bench, an inspector watching', caption: 'Every length is proof loaded end to end before it is certified; samples are broken to prove the margin.' },
-  { slug: 'equipment-number-anchor-chain-sizing', alt: 'Two anchor windlasses on a ship\'s forecastle with stud link chain running through stoppers into the hawse pipes', caption: 'Anchor mass, chain length and chain size all come from one figure in the class rules: the equipment number.' },
-  { slug: 'anchor-chain-wear-limits', alt: 'Gloved hands measuring a worn stud link anchor chain link with outside calipers where links rub together', caption: 'Class rules allow a link to wear 12% below its nominal diameter; measure at the crown, where links rub.' },
-  { slug: 'chain-locker-volume', alt: 'Black stud link anchor chain piled in a ship\'s chain locker beneath the spurling pipe, a ladder on the bulkhead', caption: 'The locker has to hold the whole cable and let it pile and run free, without the chain fouling itself.' },
-  { slug: 'how-to-assemble-a-kenter-shackle', alt: 'A Kenter shackle taken apart on a workbench: two halves, the stud, a taper pin and lead plug, with a punch and hammer', caption: 'Two halves, a stud and a taper pin locked by a lead plug: the Kenter shackle joins chain without changing its shape.' },
-  { slug: 'anchor-proof-load-testing', alt: 'A black stockless anchor held in a proof-load test frame, a hydraulic ram pulling on the shackle at its shank', caption: 'An anchor is proof loaded to a figure set by its mass before it gets a certificate.' },
-  { slug: 'offshore-mooring-components', alt: 'Mooring connectors on a vessel deck: H-link, pear link, triangle plate, joining shackle and swivel, by studless chain', caption: 'Every connector in a mooring leg is rated to the line\'s grade; each one exists to join or turn a different pair of parts.' },
-  { slug: 'anchor-chain-marking-and-certificates', alt: 'A gloved finger pointing to stamped marks on a link of black anchor chain, a clipboard with a certificate behind', caption: 'The stamps on the chain have to match the certificate before the cable goes aboard.' },
+  {
+    slug: 'anchor-chain-cable-arrangement',
+    alt: 'A black stockless anchor on a quay, its D-shackle joined through a swivel and end link to black stud link anchor chain',
+    caption:
+      'An anchor cable is built up from parts: anchor shackle, swivel, end links, then 27.5 m lengths of common links.',
+  },
+  {
+    slug: 'anchor-chain-size-chart',
+    alt: 'Sample lengths of stud link anchor chain on a factory floor, laid side by side from small to very large diameters',
+    caption:
+      'Chain size is the bar diameter of a common link — and proof and breaking loads climb steeply with it.',
+  },
+  {
+    slug: 'stud-link-vs-studless-chain',
+    alt: 'Two heavy chains side by side on a wet quay: stud link chain with a bar across every link, and plain studless chain',
+    caption:
+      'The stud stops a link closing up and the chain kinking; studless chain saves weight and the joint that can work loose.',
+  },
+  {
+    slug: 'offshore-mooring-chain-grades-r3-r4-r5',
+    alt: 'Huge studless offshore mooring chain running out over the stern roller of an anchor-handling vessel in a rough sea',
+    caption:
+      'Offshore mooring chain is graded R3 to R5: higher strength and toughness for lines that stay in the water for decades.',
+  },
+  {
+    slug: 'anchor-chain-weight-chart',
+    alt: 'A crane lifting a bundle of black stud link anchor chain on a crane scale, more chain stacked in the stockyard',
+    caption:
+      'Chain weight per metre sets windlass load, deck strength and freight — and two published tables rarely agree exactly.',
+  },
+  {
+    slug: 'how-anchor-chain-is-made',
+    alt: 'A glowing hot steel bar bent into a chain link in a chain-making machine, threaded through the previous link',
+    caption:
+      'Each link is bent hot through the one before it, then flash-butt welded shut, studded and heat treated.',
+  },
+  {
+    slug: 'anchor-chain-testing-proof-break-ndt',
+    alt: 'A length of stud link anchor chain stretched taut on a long proof-load test bench, an inspector watching',
+    caption:
+      'Every length is proof loaded end to end before it is certified; samples are broken to prove the margin.',
+  },
+  {
+    slug: 'equipment-number-anchor-chain-sizing',
+    alt: "Two anchor windlasses on a ship's forecastle with stud link chain running through stoppers into the hawse pipes",
+    caption:
+      'Anchor mass, chain length and chain size all come from one figure in the class rules: the equipment number.',
+  },
+  {
+    slug: 'anchor-chain-wear-limits',
+    alt: 'Gloved hands measuring a worn stud link anchor chain link with outside calipers where links rub together',
+    caption:
+      'Class rules allow a link to wear 12% below its nominal diameter; measure at the crown, where links rub.',
+  },
+  {
+    slug: 'chain-locker-volume',
+    alt: "Black stud link anchor chain piled in a ship's chain locker beneath the spurling pipe, a ladder on the bulkhead",
+    caption:
+      'The locker has to hold the whole cable and let it pile and run free, without the chain fouling itself.',
+  },
+  {
+    slug: 'how-to-assemble-a-kenter-shackle',
+    alt: 'A Kenter shackle taken apart on a workbench: two halves, the stud, a taper pin and lead plug, with a punch and hammer',
+    caption:
+      'Two halves, a stud and a taper pin locked by a lead plug: the Kenter shackle joins chain without changing its shape.',
+  },
+  {
+    slug: 'anchor-proof-load-testing',
+    alt: 'A black stockless anchor held in a proof-load test frame, a hydraulic ram pulling on the shackle at its shank',
+    caption: 'An anchor is proof loaded to a figure set by its mass before it gets a certificate.',
+  },
+  {
+    slug: 'offshore-mooring-components',
+    alt: 'Mooring connectors on a vessel deck: H-link, pear link, triangle plate, joining shackle and swivel, by studless chain',
+    caption:
+      "Every connector in a mooring leg is rated to the line's grade; each one exists to join or turn a different pair of parts.",
+  },
+  {
+    slug: 'anchor-chain-marking-and-certificates',
+    alt: 'A gloved finger pointing to stamped marks on a link of black anchor chain, a clipboard with a certificate behind',
+    caption: 'The stamps on the chain have to match the certificate before the cable goes aboard.',
+  },
   // Below-the-hook lifting, 2026-11-16 (Higgsfield gpt_image_2_6 medium 2k 3:2, cropped 1536×1024).
-  { slug: 'spreader-beam-vs-lifting-beam', alt: 'Crawler crane lifting a pipe spool on a yellow spreader beam, angled top slings to the hook and vertical drops to the pipe', caption: 'A spreader beam: the top slings lean in to the hook, the drops hang straight, and the beam is squeezed between them.' },
-  { slug: 'sling-angle-compression-force', alt: 'Two-leg chain sling at a wide angle lifting a long flat precast concrete panel in a casting yard, riggers on tag lines', caption: 'Two legs from one hook: every tonne lifted this way also pushes the panel’s ends toward each other.' },
-  { slug: 'centre-of-gravity-in-lifting', alt: 'Pump skid with a large motor at one end hanging level from a four-leg chain sling with legs of different lengths', caption: 'The heavy motor end pulls the centre of gravity off-centre, so the legs are cut to put the hook over it.' },
-  { slug: 'spreader-beam-misuse', alt: 'Two riggers checking a bolt on a yellow bolted modular spreader beam laid on timber blocks, shackles at both end units', caption: 'Most spreader errors can be caught on the ground: wrong bolts, mixed struts, a span the chart does not list.' },
-  { slug: 'bolted-flange-vs-end-cap-spreader-beams', alt: 'Close-up of a bolted flange joint between two yellow spreader beam struts on timber dunnage, torque wrench beside it', caption: 'A bolted flange joint: maker-supplied struts and bolts, tightened to a set torque, certified as one system.' },
-  { slug: 'lifting-bars-for-air-handling-units', alt: 'Grey air handling unit lifted on two steel bars under its base frame, slings rising to a yellow spreader frame on the hook', caption: 'Two rated bars under the base, slings to a spreader frame: the unit is held at four points and cannot roll.' },
+  {
+    slug: 'spreader-beam-vs-lifting-beam',
+    alt: 'Crawler crane lifting a pipe spool on a yellow spreader beam, angled top slings to the hook and vertical drops to the pipe',
+    caption:
+      'A spreader beam: the top slings lean in to the hook, the drops hang straight, and the beam is squeezed between them.',
+  },
+  {
+    slug: 'sling-angle-compression-force',
+    alt: 'Two-leg chain sling at a wide angle lifting a long flat precast concrete panel in a casting yard, riggers on tag lines',
+    caption:
+      'Two legs from one hook: every tonne lifted this way also pushes the panel’s ends toward each other.',
+  },
+  {
+    slug: 'centre-of-gravity-in-lifting',
+    alt: 'Pump skid with a large motor at one end hanging level from a four-leg chain sling with legs of different lengths',
+    caption:
+      'The heavy motor end pulls the centre of gravity off-centre, so the legs are cut to put the hook over it.',
+  },
+  {
+    slug: 'spreader-beam-misuse',
+    alt: 'Two riggers checking a bolt on a yellow bolted modular spreader beam laid on timber blocks, shackles at both end units',
+    caption:
+      'Most spreader errors can be caught on the ground: wrong bolts, mixed struts, a span the chart does not list.',
+  },
+  {
+    slug: 'bolted-flange-vs-end-cap-spreader-beams',
+    alt: 'Close-up of a bolted flange joint between two yellow spreader beam struts on timber dunnage, torque wrench beside it',
+    caption:
+      'A bolted flange joint: maker-supplied struts and bolts, tightened to a set torque, certified as one system.',
+  },
+  {
+    slug: 'lifting-bars-for-air-handling-units',
+    alt: 'Grey air handling unit lifted on two steel bars under its base frame, slings rising to a yellow spreader frame on the hook',
+    caption:
+      'Two rated bars under the base, slings to a spreader frame: the unit is held at four points and cannot roll.',
+  },
   // Oteco drilling rig equipment posts, 2026-11-20 (Higgsfield GPT Image 2.6, medium, 2k, downscaled to 1536×1024).
-  { slug: 'oteco-drilling-equipment-guide', alt: 'Rig floor at dusk with a standpipe manifold of red gate valves, a large drilling pressure gauge and the derrick behind', caption: 'The standpipe manifold: gate valves, a gauge, a relief valve and long-sweep fittings carry every barrel the mud pumps send downhole.' },
-  { slug: 'model-72-vs-dm-gate-valve', alt: 'Two mud gate valves on a bench: a handwheel valve with rising stem and end subs beside a compact T-handle bolted-bonnet valve', caption: 'A rising-stem valve with replaceable end subs, and a compact in-line repairable valve: two ways to build a mud gate valve.' },
-  { slug: 'rebuilding-a-model-72-gate-valve', alt: 'Technician rebuilding a mud gate valve in a vice, gate and stem, wear plates, packing and studs laid out on a cloth', caption: 'A minor kit renews the seals; a major kit adds the gate, stem and wear parts — and the valve body stays in the line.' },
-  { slug: 'shear-pin-vs-reset-relief-valve', alt: 'Triplex mud pump in a rig pump house with a cylindrical relief valve on its discharge line piped back to the mud tank', caption: 'Every mud pump discharge carries a relief valve: shear-pin valves are re-pinned after they open, reset valves snap shut again.' },
-  { slug: 'drilling-pressure-gauge-models', alt: 'Large round drilling pressure gauge on a heavy threaded steel sub at a standpipe manifold, rig floor out of focus', caption: 'A drilling gauge is a diaphragm, a hydraulic fill and a dial: the sub it screws into sets how much pressure it can see.' },
-  { slug: 'drill-pipe-float-valve-models', alt: 'Plunger and flapper drill pipe float valves on a workbench beside a bit sub, a tray of seals and a puller tool', caption: 'Plunger or flapper: both sit in a bit sub above the bit and stop mud flowing back up the drill string.' },
-  { slug: 'mud-pump-pistons-explained', alt: 'Mud pump pistons with black rubber and yellow urethane seals on steel hubs beside a chrome mud pump liner', caption: 'Liner size, hub series and rod fit decide the piston; rubber or bonded urethane decides how long it lasts.' },
-  { slug: 'mud-pump-valves-and-dampener-diaphragms', alt: 'Triplex mud pump fluid end with a spherical pulsation dampener on the discharge, a technician removing a valve cover', caption: 'Valves and seats wear with every stroke; the dampener above them evens out the pulses — charged with nitrogen only.' },
-  { slug: 'swivel-washpipe-and-packing', alt: 'Swivel washpipe tube, black and red packing rings, spacers and packing nuts laid out in order on a rig workbench', caption: 'The washpipe and its packing are the swivel’s wearing parts: ordered by swivel make and model, changed on a routine.' },
-  { slug: 'pipe-wipers-and-mud-guards', alt: 'Drill pipe pulled through a red rubber pipe wiper at the rotary table, a hinged mud guard clamped on a connection', caption: 'A wiper strips the outside of the pipe and a mud guard catches what is inside it: mud saved and a safer floor.' },
-  { slug: 'manifold-fitting-pressure-ratings', alt: 'Yellow cast long-sweep elbows, tees, crosses and a gooseneck on pallets in a pipe yard, a welder at a manifold behind', caption: 'The casting is only half the rating: the end connection — threaded, Sch. 80, Sch. 160 or XXS — sets the working pressure.' },
-  { slug: 'annular-bop-packing-unit-compounds', alt: 'Three annular BOP packing units with steel inserts, one black and two red, on a pallet with seal kits behind', caption: 'Natural rubber, nitrile or neoprene: the compound is chosen by the mud system and the temperature, not by habit.' },
+  {
+    slug: 'oteco-drilling-equipment-guide',
+    alt: 'Rig floor at dusk with a standpipe manifold of red gate valves, a large drilling pressure gauge and the derrick behind',
+    caption:
+      'The standpipe manifold: gate valves, a gauge, a relief valve and long-sweep fittings carry every barrel the mud pumps send downhole.',
+  },
+  {
+    slug: 'model-72-vs-dm-gate-valve',
+    alt: 'Two mud gate valves on a bench: a handwheel valve with rising stem and end subs beside a compact T-handle bolted-bonnet valve',
+    caption:
+      'A rising-stem valve with replaceable end subs, and a compact in-line repairable valve: two ways to build a mud gate valve.',
+  },
+  {
+    slug: 'rebuilding-a-model-72-gate-valve',
+    alt: 'Technician rebuilding a mud gate valve in a vice, gate and stem, wear plates, packing and studs laid out on a cloth',
+    caption:
+      'A minor kit renews the seals; a major kit adds the gate, stem and wear parts — and the valve body stays in the line.',
+  },
+  {
+    slug: 'shear-pin-vs-reset-relief-valve',
+    alt: 'Triplex mud pump in a rig pump house with a cylindrical relief valve on its discharge line piped back to the mud tank',
+    caption:
+      'Every mud pump discharge carries a relief valve: shear-pin valves are re-pinned after they open, reset valves snap shut again.',
+  },
+  {
+    slug: 'drilling-pressure-gauge-models',
+    alt: 'Large round drilling pressure gauge on a heavy threaded steel sub at a standpipe manifold, rig floor out of focus',
+    caption:
+      'A drilling gauge is a diaphragm, a hydraulic fill and a dial: the sub it screws into sets how much pressure it can see.',
+  },
+  {
+    slug: 'drill-pipe-float-valve-models',
+    alt: 'Plunger and flapper drill pipe float valves on a workbench beside a bit sub, a tray of seals and a puller tool',
+    caption:
+      'Plunger or flapper: both sit in a bit sub above the bit and stop mud flowing back up the drill string.',
+  },
+  {
+    slug: 'mud-pump-pistons-explained',
+    alt: 'Mud pump pistons with black rubber and yellow urethane seals on steel hubs beside a chrome mud pump liner',
+    caption:
+      'Liner size, hub series and rod fit decide the piston; rubber or bonded urethane decides how long it lasts.',
+  },
+  {
+    slug: 'mud-pump-valves-and-dampener-diaphragms',
+    alt: 'Triplex mud pump fluid end with a spherical pulsation dampener on the discharge, a technician removing a valve cover',
+    caption:
+      'Valves and seats wear with every stroke; the dampener above them evens out the pulses — charged with nitrogen only.',
+  },
+  {
+    slug: 'swivel-washpipe-and-packing',
+    alt: 'Swivel washpipe tube, black and red packing rings, spacers and packing nuts laid out in order on a rig workbench',
+    caption:
+      'The washpipe and its packing are the swivel’s wearing parts: ordered by swivel make and model, changed on a routine.',
+  },
+  {
+    slug: 'pipe-wipers-and-mud-guards',
+    alt: 'Drill pipe pulled through a red rubber pipe wiper at the rotary table, a hinged mud guard clamped on a connection',
+    caption:
+      'A wiper strips the outside of the pipe and a mud guard catches what is inside it: mud saved and a safer floor.',
+  },
+  {
+    slug: 'manifold-fitting-pressure-ratings',
+    alt: 'Yellow cast long-sweep elbows, tees, crosses and a gooseneck on pallets in a pipe yard, a welder at a manifold behind',
+    caption:
+      'The casting is only half the rating: the end connection — threaded, Sch. 80, Sch. 160 or XXS — sets the working pressure.',
+  },
+  {
+    slug: 'annular-bop-packing-unit-compounds',
+    alt: 'Three annular BOP packing units with steel inserts, one black and two red, on a pallet with seal kits behind',
+    caption:
+      'Natural rubber, nitrile or neoprene: the compound is chosen by the mud system and the temperature, not by habit.',
+  },
 ] as const
 
 /**

@@ -56,7 +56,7 @@ export async function withSeoAudit<T>(
     actorId: string | null
     reason?: string
   },
-  fn: (tx: Tx) => Promise<T>,
+  fn: (tx: Tx) => Promise<T>
 ): Promise<T> {
   return db.$transaction(async (tx) => {
     const result = await fn(tx)
@@ -67,8 +67,10 @@ export async function withSeoAudit<T>(
           entityType: opts.entityType,
           entityId: opts.entityId,
           field: entry.field,
-          before: entry.before === undefined ? Prisma.JsonNull : (entry.before as Prisma.InputJsonValue),
-          after: entry.after === undefined ? Prisma.JsonNull : (entry.after as Prisma.InputJsonValue),
+          before:
+            entry.before === undefined ? Prisma.JsonNull : (entry.before as Prisma.InputJsonValue),
+          after:
+            entry.after === undefined ? Prisma.JsonNull : (entry.after as Prisma.InputJsonValue),
           actorId: opts.actorId,
           reason: opts.reason ?? null,
         })),

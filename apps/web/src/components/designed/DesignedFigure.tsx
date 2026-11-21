@@ -78,7 +78,7 @@ export default function DesignedFigure({
     <figure className={cn('m-0', fill && 'sm:h-full', className)}>
       <div
         className={cn(
-          'relative overflow-hidden bg-ih-surface-2',
+          'bg-ih-surface-2 relative overflow-hidden',
           RATIO_CLASS[image.ratio],
           fill && 'sm:aspect-auto sm:h-full sm:min-h-[240px]',
           flush ? 'rounded-none' : 'rounded-lg'
@@ -95,7 +95,7 @@ export default function DesignedFigure({
         {children}
       </div>
       {caption ? (
-        <figcaption className="mt-2.5 font-mono text-[10.5px] uppercase leading-[1.5] tracking-[0.07em] text-ih-muted">
+        <figcaption className="text-ih-muted mt-2.5 font-mono text-[10.5px] leading-[1.5] tracking-[0.07em] uppercase">
           {caption}
         </figcaption>
       ) : null}

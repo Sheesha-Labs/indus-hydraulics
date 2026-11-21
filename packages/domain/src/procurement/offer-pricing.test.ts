@@ -44,7 +44,9 @@ describe('landed cost — refuses to guess', () => {
   })
 
   it('returns null when the Incoterm excludes freight and no freight is supplied', () => {
-    const r = computeLandedCost(landedInput({ offer: offer({ incoterm: 'EXW' }), freightPerUnitAed: null }))
+    const r = computeLandedCost(
+      landedInput({ offer: offer({ incoterm: 'EXW' }), freightPerUnitAed: null })
+    )
     expect(r.perUnitAed).toBeNull()
     expect(r.flags).toContain('freight_unknown')
   })
@@ -57,7 +59,7 @@ describe('landed cost — refuses to guess', () => {
 
   it('does not require freight for a CFR offer — it is already included', () => {
     const r = computeLandedCost(
-      landedInput({ offer: offer({ incoterm: 'CFR' }), freightPerUnitAed: null, dutyPct: 5 }),
+      landedInput({ offer: offer({ incoterm: 'CFR' }), freightPerUnitAed: null, dutyPct: 5 })
     )
     expect(r.flags).not.toContain('freight_unknown')
     expect(r.perUnitAed).toBe(105)
@@ -82,7 +84,7 @@ describe('landed cost — refuses to guess', () => {
         fxToAed: 4,
         fxAsOf: new Date('2026-08-01'),
         now: new Date('2026-09-01'),
-      }),
+      })
     )
     expect(r.perUnitAed).toBeNull()
     expect(r.flags).toContain('fx_stale')
@@ -108,20 +110,22 @@ describe('landed cost — refuses to guess', () => {
 
 describe('landed cost — the money', () => {
   it('converts currency', () => {
-    const r = computeLandedCost(landedInput({ offer: offer({ currency: 'EUR', unitPrice: 25 }), fxToAed: 4 }))
+    const r = computeLandedCost(
+      landedInput({ offer: offer({ currency: 'EUR', unitPrice: 25 }), fxToAed: 4 })
+    )
     expect(r.perUnitAed).toBe(100)
   })
 
   it('adds freight per unit', () => {
     const r = computeLandedCost(
-      landedInput({ offer: offer({ incoterm: 'FOB' }), freightPerUnitAed: 10, dutyPct: 0 }),
+      landedInput({ offer: offer({ incoterm: 'FOB' }), freightPerUnitAed: 10, dutyPct: 0 })
     )
     expect(r.perUnitAed).toBe(110)
   })
 
   it('applies duty to goods value only, not to freight', () => {
     const r = computeLandedCost(
-      landedInput({ offer: offer({ incoterm: 'FOB' }), freightPerUnitAed: 10, dutyPct: 5 }),
+      landedInput({ offer: offer({ incoterm: 'FOB' }), freightPerUnitAed: 10, dutyPct: 5 })
     )
     // goods 1000 + freight 100 + duty 50 = 1150 over 10 units
     expect(r.perUnitAed).toBe(115)
@@ -172,7 +176,7 @@ describe('rankOffers', () => {
         withLanded(offer({ supplierName: 'Slow', leadTimeDays: 60 }), 90),
         withLanded(offer({ supplierName: 'Fast', leadTimeDays: 7 }), 100),
       ],
-      { leadTimeWeightAedPerDay: 1 },
+      { leadTimeWeightAedPerDay: 1 }
     )
     expect(ranked[0]!.offer.supplierName).toBe('Fast')
   })
@@ -195,7 +199,10 @@ describe('rankOffers', () => {
   })
 
   it('breaks ties deterministically by name', () => {
-    const a = rankOffers([withLanded(offer({ supplierName: 'Zeta' }), 100), withLanded(offer({ supplierName: 'Alpha' }), 100)])
+    const a = rankOffers([
+      withLanded(offer({ supplierName: 'Zeta' }), 100),
+      withLanded(offer({ supplierName: 'Alpha' }), 100),
+    ])
     expect(a[0]!.offer.supplierName).toBe('Alpha')
   })
 })
@@ -203,7 +210,12 @@ describe('rankOffers', () => {
 describe('basketCoverage', () => {
   const lines = [
     { offers: [offer({ supplierName: 'Full' }), offer({ supplierName: 'Partial' })] },
-    { offers: [offer({ supplierName: 'Full' }), offer({ supplierName: 'Partial', unitPrice: null })] },
+    {
+      offers: [
+        offer({ supplierName: 'Full' }),
+        offer({ supplierName: 'Partial', unitPrice: null }),
+      ],
+    },
     { offers: [offer({ supplierName: 'Full' })] },
   ]
 
@@ -271,7 +283,7 @@ describe('resolveMarkupRule precedence', () => {
         quote: { mode: 'absolute', value: 2 },
         category: { mode: 'absolute', value: 3 },
         fallback,
-      }).value,
+      }).value
     ).toBe(1)
   })
 

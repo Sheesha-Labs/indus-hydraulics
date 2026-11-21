@@ -38,8 +38,7 @@ import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
  */
 
 type SubmitResult =
-  | { success: true; code: string; token: string }
-  | { success: false; error: string }
+  { success: true; code: string; token: string } | { success: false; error: string }
 
 const EnquirySchema = z.object({
   industrySlug: z.string().trim().min(1).max(80),
@@ -67,7 +66,10 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
 
   if (!parsed.success) {
     const issue = parsed.error.issues[0]
-    return { success: false, error: `Please check the form — we need ${issue?.message ?? 'the missing details'}.` }
+    return {
+      success: false,
+      error: `Please check the form — we need ${issue?.message ?? 'the missing details'}.`,
+    }
   }
 
   const input = parsed.data
@@ -80,13 +82,19 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
   */
   const page = designedIndustryPage(input.industrySlug)
   if (!page) {
-    return { success: false, error: 'That page is no longer listed. Email sales@indushydraulics.me.' }
+    return {
+      success: false,
+      error: 'That page is no longer listed. Email sales@indushydraulics.me.',
+    }
   }
 
   const application = allowedChoice(input.application, page.review.applications)
 
   if (formData.get('attachmentsPending') === '1') {
-    return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }
+    return {
+      success: false,
+      error: 'An attachment is still uploading. Give it a moment and try again.',
+    }
   }
 
   const attachments = readAttachments(formData.get('attachments'))
@@ -100,7 +108,8 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
   if (!input.description && attachments.length === 0) {
     return {
       success: false,
-      error: 'Tell us what you need — material, sizes, end connections and quantity — or attach a drawing or BOM.',
+      error:
+        'Tell us what you need — material, sizes, end connections and quantity — or attach a drawing or BOM.',
     }
   }
 
@@ -154,7 +163,12 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
         },
       })
       await tx.rfqAttachment.create({
-        data: { rfqId: created.id, mediaId: media.id, uploaderType: 'contact', uploaderId: contactId },
+        data: {
+          rfqId: created.id,
+          mediaId: media.id,
+          uploaderType: 'contact',
+          uploaderId: contactId,
+        },
       })
     }
 

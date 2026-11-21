@@ -2,7 +2,11 @@ import { describe, expect, it } from 'vitest'
 import { geoContains } from 'd3-geo'
 import { feature } from 'topojson-client'
 import rawTopology from 'world-atlas/countries-50m.json'
-import { ALL_MARKET_PAGE_RECORDS as MARKET_PAGE_RECORDS, marketPageBySlug, type MarketPage } from '@indus/domain'
+import {
+  ALL_MARKET_PAGE_RECORDS as MARKET_PAGE_RECORDS,
+  marketPageBySlug,
+  type MarketPage,
+} from '@indus/domain'
 import { buildMarketMapModel } from './market-geometry'
 
 /**
@@ -37,7 +41,10 @@ describe('buildMarketMapModel', () => {
 
   it('places every marker inside the drawn frame', () => {
     const inFrame = (x: number, y: number) =>
-      x >= model.pad && x <= model.width - model.pad && y >= model.pad && y <= model.height - model.pad
+      x >= model.pad &&
+      x <= model.width - model.pad &&
+      y >= model.pad &&
+      y <= model.height - model.pad
     expect(inFrame(model.crossing.x, model.crossing.y)).toBe(true)
     for (const city of model.cities) {
       expect(inFrame(city.x, city.y), `${city.label.text} is outside the frame`).toBe(true)
@@ -47,9 +54,7 @@ describe('buildMarketMapModel', () => {
   it('plots only the cities the record asks for', () => {
     const plotted = nigeria.cities.filter((c) => c.plot)
     expect(model.cities).toHaveLength(plotted.length)
-    expect(model.cities.map((c) => c.label.text)).toEqual(
-      plotted.map((c) => c.name.toUpperCase())
-    )
+    expect(model.cities.map((c) => c.label.text)).toEqual(plotted.map((c) => c.name.toUpperCase()))
   })
 
   it('suppresses the origin marker and says so in the annotation', () => {
@@ -87,7 +92,9 @@ describe('buildMarketMapModel', () => {
     // Four suppression rules, each of which fixed a real collision. If any one
     // is removed a label lands on top of a marker or under the corridor text.
     for (const label of model.neighbourLabels) {
-      expect(Math.hypot(label.x - model.crossing.x, label.y - model.crossing.y)).toBeGreaterThanOrEqual(68)
+      expect(
+        Math.hypot(label.x - model.crossing.x, label.y - model.crossing.y)
+      ).toBeGreaterThanOrEqual(68)
       const inAnnotationBox = label.x < model.pad + 300 && label.y < model.pad + 34
       expect(inAnnotationBox, `${label.text} sits under the corridor annotation`).toBe(false)
     }
@@ -231,9 +238,7 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
   it('matches Natural Earth geometry for every one', () => {
     // Counted, not hard-coded: the set grows every time a market is authored,
     // and a test named for today's total is a test nobody updates.
-    const failed = MARKET_PAGE_RECORDS.filter(
-      (page) => modelFor(page) === null
-    ).map((p) => p.slug)
+    const failed = MARKET_PAGE_RECORDS.filter((page) => modelFor(page) === null).map((p) => p.slug)
     expect(failed).toEqual([])
   })
 
@@ -257,7 +262,10 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
           city.x <= model.width - model.pad &&
           city.y >= model.pad &&
           city.y <= model.height - model.pad
-        expect(inFrame, `${page.slug}: ${city.label.text} at ${Math.round(city.x)},${Math.round(city.y)}`).toBe(true)
+        expect(
+          inFrame,
+          `${page.slug}: ${city.label.text} at ${Math.round(city.x)},${Math.round(city.y)}`
+        ).toBe(true)
       }
     }
   })
@@ -282,7 +290,10 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
       const usableW = model.width - model.pad * 2
       const usableH = model.height - model.pad * 2
       const fill = Math.max(w / usableW, h / usableH)
-      expect(fill, `${page.slug} fills only ${(fill * 100).toFixed(0)}% of its frame`).toBeGreaterThan(0.25)
+      expect(
+        fill,
+        `${page.slug} fills only ${(fill * 100).toFixed(0)}% of its frame`
+      ).toBeGreaterThan(0.25)
     }
   })
 
@@ -298,9 +309,9 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
   })
 
   it('shows the origin marker only on the three lanes fitted to it', () => {
-    const shown = MARKET_PAGE_RECORDS.filter(
-      (page) => modelFor(page)!.origin !== null
-    ).map((p) => p.slug)
+    const shown = MARKET_PAGE_RECORDS.filter((page) => modelFor(page)!.origin !== null).map(
+      (p) => p.slug
+    )
     expect(shown.sort()).toEqual(['iraq', 'oman', 'saudi-arabia'])
   })
 

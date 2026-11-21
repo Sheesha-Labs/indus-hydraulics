@@ -18,7 +18,7 @@ import { safeNextPath } from '../../../lib/safe-next-path'
  */
 export async function adminSignInAction(
   _prevState: { error?: string } | null,
-  formData: FormData,
+  formData: FormData
 ): Promise<{ error?: string } | null> {
   try {
     await signIn('credentials', {

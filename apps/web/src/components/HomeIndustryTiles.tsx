@@ -28,12 +28,12 @@ export type HomeIndustry = {
  */
 export default function HomeIndustryTiles({ industries }: { industries: HomeIndustry[] }) {
   return (
-    <ul className="no-scrollbar -mx-5 flex list-none snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto px-5 py-1 sm:-mx-8 sm:scroll-px-8 sm:px-8 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-4 lg:overflow-visible lg:px-0">
+    <ul className="no-scrollbar -mx-5 flex snap-x snap-mandatory scroll-px-5 list-none gap-3 overflow-x-auto px-5 py-1 sm:-mx-8 sm:scroll-px-8 sm:px-8 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-4 lg:overflow-visible lg:px-0">
       {industries.map((industry) => (
         <li key={industry.slug} className="w-[220px] shrink-0 snap-start sm:w-[240px] lg:w-auto">
           <Link
             href={`/industries/${industry.slug}`}
-            className="group relative isolate flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-lg bg-ih-navy p-4 text-white lg:aspect-[4/3] lg:p-5 focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+            className="group bg-ih-navy relative isolate flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-lg p-4 text-white focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none lg:aspect-[4/3] lg:p-5"
           >
             {industry.heroImage ? (
               <Image
@@ -50,11 +50,11 @@ export default function HomeIndustryTiles({ industries }: { industries: HomeIndu
               aria-hidden="true"
               className="absolute inset-0 -z-10 bg-gradient-to-t from-[oklch(0_0_0/0.86)] via-[oklch(0_0_0/0.35)] to-[oklch(0_0_0/0.05)] transition-colors"
             />
-            <span className="absolute left-3 top-3 rounded-[3px] bg-[oklch(0_0_0/0.45)] px-1.5 py-0.5 font-mono text-[10px] tracking-[0.08em] text-white/85">
+            <span className="absolute top-3 left-3 rounded-[3px] bg-[oklch(0_0_0/0.45)] px-1.5 py-0.5 font-mono text-[10px] tracking-[0.08em] text-white/85">
               {industry.code}
             </span>
             <span className="flex items-end justify-between gap-2">
-              <span className="text-[16px] font-semibold leading-[1.2] tracking-[-0.01em] lg:text-[19px]">
+              <span className="text-[16px] leading-[1.2] font-semibold tracking-[-0.01em] lg:text-[19px]">
                 {industry.name}
               </span>
               <span
@@ -65,7 +65,7 @@ export default function HomeIndustryTiles({ industries }: { industries: HomeIndu
               </span>
             </span>
             {industry.tagline ? (
-              <span className="mt-1.5 line-clamp-2 font-mono text-[10px] uppercase leading-[1.5] tracking-[0.08em] text-white/75 lg:text-[10.5px]">
+              <span className="mt-1.5 line-clamp-2 font-mono text-[10px] leading-[1.5] tracking-[0.08em] text-white/75 uppercase lg:text-[10.5px]">
                 {industry.tagline}
               </span>
             ) : null}

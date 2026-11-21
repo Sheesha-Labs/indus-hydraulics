@@ -56,10 +56,9 @@ export default function NotFoundList({ rows: initialRows }: Props) {
 
   return (
     <div className="max-w-[1080px]">
-      <div className="mb-4 max-w-[640px] text-[13px] text-ih-muted">
-        Storefront 404s, top hits first. Resolve each by adding a 301
-        redirect, or Ignore to stash. The storefront&apos;s{' '}
-        <code>not-found.tsx</code> fires a beacon on render — so this list
+      <div className="text-ih-muted mb-4 max-w-[640px] text-[13px]">
+        Storefront 404s, top hits first. Resolve each by adding a 301 redirect, or Ignore to stash.
+        The storefront&apos;s <code>not-found.tsx</code> fires a beacon on render — so this list
         only fills in once visitors actually hit broken paths.{' '}
         <Link href="/admin/seo/redirects" className="underline">
           Existing redirects →
@@ -67,22 +66,22 @@ export default function NotFoundList({ rows: initialRows }: Props) {
       </div>
 
       {error && (
-        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink mb-4 text-[12px] tabular-nums" role="alert">
           {error}
         </p>
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center rounded-lg border border-ih-border">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted text-[13px]">
             Nothing unresolved — every captured 404 either has a redirect or was ignored.
           </p>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>Path</Th>
                 <Th>Hits</Th>
                 <Th>Referer</Th>
@@ -94,18 +93,18 @@ export default function NotFoundList({ rows: initialRows }: Props) {
               {rows.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b align-top last:border-0"
                 >
-                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2 truncate max-w-[300px]">
+                  <td className="text-ih-ink-2 max-w-[300px] truncate px-3 py-3 text-[12px] tabular-nums">
                     {r.path}
                   </td>
-                  <td className="px-3 py-3 text-[12px] tabular-nums text-ih-ink-2">
+                  <td className="text-ih-ink-2 px-3 py-3 text-[12px] tabular-nums">
                     {r.hits.toLocaleString()}
                   </td>
-                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted truncate max-w-[280px]">
+                  <td className="text-ih-muted max-w-[280px] truncate px-3 py-3 text-[11px] tabular-nums">
                     {r.referer ?? '—'}
                   </td>
-                  <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
+                  <td className="text-ih-muted px-3 py-3 text-[11px] whitespace-nowrap tabular-nums">
                     {new Date(r.lastSeenAt).toLocaleDateString('en-GB', {
                       day: 'numeric',
                       month: 'short',
@@ -113,18 +112,18 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                   </td>
                   <td className="px-3 py-3 text-right whitespace-nowrap">
                     {editingId === r.id ? (
-                      <form action={handleResolve} className="flex gap-2 items-center justify-end">
+                      <form action={handleResolve} className="flex items-center justify-end gap-2">
                         <input type="hidden" name="notFoundId" value={r.id} />
                         <input
                           name="toPath"
                           required
                           placeholder="/replacement-path"
-                          className="rounded-md h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:outline-none focus:border-ih-accent w-[200px]"
+                          className="border-ih-border bg-ih-surface focus:border-ih-accent h-8 w-[200px] rounded-md border px-2 text-[12px] focus:outline-none"
                         />
                         <select
                           name="statusCode"
                           defaultValue="301"
-                          className="rounded-md h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
+                          className="border-ih-border bg-ih-surface h-8 rounded-md border px-2 text-[12px]"
                         >
                           <option value="301">301</option>
                           <option value="302">302</option>
@@ -134,14 +133,14 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg tabular-nums text-[11px] disabled:opacity-50"
+                          className="bg-ih-accent text-ih-accent-fg h-8 px-3 text-[11px] tabular-nums disabled:opacity-50"
                         >
                           Save
                         </button>
                         <button
                           type="button"
                           onClick={() => setEditingId(null)}
-                          className="rounded-md h-8 px-3 border border-ih-border tabular-nums text-[11px]"
+                          className="border-ih-border h-8 rounded-md border px-3 text-[11px] tabular-nums"
                         >
                           Cancel
                         </button>
@@ -152,7 +151,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           type="button"
                           onClick={() => setEditingId(r.id)}
                           disabled={pending}
-                          className="tabular-nums text-[11px] text-ih-accent hover:underline mr-3 disabled:opacity-50"
+                          className="text-ih-accent mr-3 text-[11px] tabular-nums hover:underline disabled:opacity-50"
                         >
                           Resolve
                         </button>
@@ -160,7 +159,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           type="button"
                           onClick={() => handleIgnore(r.id)}
                           disabled={pending}
-                          className="tabular-nums text-[11px] text-ih-muted hover:underline disabled:opacity-50"
+                          className="text-ih-muted text-[11px] tabular-nums hover:underline disabled:opacity-50"
                         >
                           Ignore
                         </button>
@@ -179,7 +178,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

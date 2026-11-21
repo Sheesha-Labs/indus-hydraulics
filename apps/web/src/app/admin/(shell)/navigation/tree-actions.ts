@@ -26,7 +26,10 @@ export async function saveMenuTree(input: SaveMenuTreeInput): Promise<Result<voi
 }
 
 /** Publish state, unchanged in behaviour — re-exported here so the unified editor has one import. */
-export async function setMenuPublished(menuId: string, isPublished: boolean): Promise<Result<void>> {
+export async function setMenuPublished(
+  menuId: string,
+  isPublished: boolean
+): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
     z.string().uuid().parse(menuId)

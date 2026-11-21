@@ -117,7 +117,8 @@ export default function ProductTabs({
     if (!strip) return
     if (anchorTop.current !== null) {
       const drift = strip.getBoundingClientRect().top - anchorTop.current
-      if (Math.abs(drift) > 1) window.scrollBy({ top: drift, behavior: 'instant' as ScrollBehavior })
+      if (Math.abs(drift) > 1)
+        window.scrollBy({ top: drift, behavior: 'instant' as ScrollBehavior })
       anchorTop.current = null
     }
     const btn = strip.querySelector<HTMLElement>('[aria-selected="true"]')
@@ -125,7 +126,8 @@ export default function ProductTabs({
       const left = btn.offsetLeft - strip.offsetLeft
       const right = left + btn.offsetWidth
       if (left < strip.scrollLeft) strip.scrollTo({ left: left - 8, behavior: 'smooth' })
-      else if (right > strip.scrollLeft + strip.clientWidth) strip.scrollTo({ left: right - strip.clientWidth + 8, behavior: 'smooth' })
+      else if (right > strip.scrollLeft + strip.clientWidth)
+        strip.scrollTo({ left: right - strip.clientWidth + 8, behavior: 'smooth' })
     }
   }, [active])
 
@@ -176,7 +178,7 @@ export default function ProductTabs({
   }
 
   return (
-    <div className="mb-8 border-t border-ih-border pt-8">
+    <div className="border-ih-border mb-8 border-t pt-8">
       {/* Tab headers */}
       {/*
         The tab labels are whitespace-nowrap and five of them do not fit a
@@ -194,7 +196,7 @@ export default function ProductTabs({
         ref={stripRef}
         role="tablist"
         aria-label="Product information"
-        className="no-scrollbar mb-8 flex snap-x snap-proximity overflow-x-auto overscroll-x-none border-b border-ih-border"
+        className="no-scrollbar border-ih-border mb-8 flex snap-x snap-proximity overflow-x-auto overscroll-x-none border-b"
       >
         {tabs.map((tab, i) => (
           <button
@@ -204,10 +206,10 @@ export default function ProductTabs({
             aria-selected={i === active}
             aria-controls={`tab-panel-${tab.id}`}
             onClick={() => choose(i)}
-            className={`-mb-px shrink-0 snap-start whitespace-nowrap border-b-[1.5px] px-4 py-3 text-[13.5px] transition-colors sm:px-5 ${
+            className={`-mb-px shrink-0 snap-start border-b-[1.5px] px-4 py-3 text-[13.5px] whitespace-nowrap transition-colors sm:px-5 ${
               i === active
                 ? 'border-ih-accent text-ih-accent'
-                : 'border-transparent text-ih-muted hover:text-ih-ink'
+                : 'text-ih-muted hover:text-ih-ink border-transparent'
             }`}
           >
             {tab.label}
@@ -219,7 +221,9 @@ export default function ProductTabs({
       <TabPanel id="description" activeId={activeId}>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Product description</h2>
+            <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">
+              Product description
+            </h2>
             {descriptionLong ? (
               /*
                 `ih-rich-text` (globals.css), not `prose`. @tailwindcss/typography
@@ -233,29 +237,36 @@ export default function ProductTabs({
                 dangerouslySetInnerHTML={{ __html: descriptionLong }}
               />
             ) : descriptionShort ? (
-              <p className="text-[14px] text-ih-muted leading-[1.65] mb-4">{descriptionShort}</p>
+              <p className="text-ih-muted mb-4 text-[14px] leading-[1.65]">{descriptionShort}</p>
             ) : (
-              <p className="text-[14px] text-ih-muted">No description available.</p>
+              <p className="text-ih-muted text-[14px]">No description available.</p>
             )}
 
             {allSpecs.length > 0 && (
               <div className="mt-8">
                 {Object.entries(specGroups).map(([group, specs]) => (
                   <div key={group} className="mb-6">
-                    <h4 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">{group}</h4>
-                    <table className="w-full font-mono text-[13px] border border-ih-border">
+                    <h4 className="text-ih-muted mb-2 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+                      {group}
+                    </h4>
+                    <table className="border-ih-border w-full border font-mono text-[13px]">
                       <thead>
                         <tr>
-                          <th className="px-3.5 py-2.5 text-left bg-ih-surface-2 text-ih-muted text-[11px] tracking-[0.08em] uppercase font-medium w-1/2">Parameter</th>
-                          <th className="px-3.5 py-2.5 text-left bg-ih-surface-2 text-ih-muted text-[11px] tracking-[0.08em] uppercase font-medium">Value</th>
+                          <th className="bg-ih-surface-2 text-ih-muted w-1/2 px-3.5 py-2.5 text-left text-[11px] font-medium tracking-[0.08em] uppercase">
+                            Parameter
+                          </th>
+                          <th className="bg-ih-surface-2 text-ih-muted px-3.5 py-2.5 text-left text-[11px] font-medium tracking-[0.08em] uppercase">
+                            Value
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
                         {specs.map((spec) => (
-                          <tr key={spec.id} className="border-t border-ih-border">
-                            <td className="px-3.5 py-2.5 text-ih-muted">{spec.label}</td>
-                            <td className="px-3.5 py-2.5 font-medium text-ih-ink">
-                              {spec.value}{spec.unit ? ` ${spec.unit}` : ''}
+                          <tr key={spec.id} className="border-ih-border border-t">
+                            <td className="text-ih-muted px-3.5 py-2.5">{spec.label}</td>
+                            <td className="text-ih-ink px-3.5 py-2.5 font-medium">
+                              {spec.value}
+                              {spec.unit ? ` ${spec.unit}` : ''}
                             </td>
                           </tr>
                         ))}
@@ -269,7 +280,9 @@ export default function ProductTabs({
 
           {/* Shipping column — driven entirely by product DB fields */}
           <div>
-            <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Shipping &amp; lead time</h2>
+            <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">
+              Shipping &amp; lead time
+            </h2>
             <ShippingTable
               availability={availability}
               warrantyMonths={warrantyMonths}
@@ -312,17 +325,22 @@ export default function ProductTabs({
       {inHtml.documents && (
         <TabPanel id="documents" activeId={activeId}>
           {documents.length === 0 ? (
-            <p className="text-[14px] text-ih-muted">No documents available for this product.</p>
+            <p className="text-ih-muted text-[14px]">No documents available for this product.</p>
           ) : (
             <div className="flex flex-col gap-2">
               {documents.map((doc) => (
-                <div key={doc.id} className="flex items-center gap-4 p-4 border border-ih-border bg-ih-surface">
-                  <div className="w-9 h-11 bg-ih-bg border border-ih-border grid place-items-center font-mono text-[9px] font-semibold text-ih-accent shrink-0">
+                <div
+                  key={doc.id}
+                  className="border-ih-border bg-ih-surface flex items-center gap-4 border p-4"
+                >
+                  <div className="bg-ih-bg border-ih-border text-ih-accent grid h-11 w-9 shrink-0 place-items-center border font-mono text-[9px] font-semibold">
                     {documentKindBadge(doc.kind)}
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="text-[14px] font-medium truncate">{doc.title}</div>
-                    <div className="font-mono text-[11px] text-ih-muted mt-0.5">{documentKindLabel(doc.kind)} · {doc.language.toUpperCase()}</div>
+                  <div className="min-w-0 flex-1">
+                    <div className="truncate text-[14px] font-medium">{doc.title}</div>
+                    <div className="text-ih-muted mt-0.5 font-mono text-[11px]">
+                      {documentKindLabel(doc.kind)} · {doc.language.toUpperCase()}
+                    </div>
                   </div>
                   {/*
                     Always a link. /api/documents/<id> checks the session at
@@ -334,7 +352,7 @@ export default function ProductTabs({
                     href={doc.mediaUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="shrink-0 h-8 px-4 flex items-center border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+                    className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-8 shrink-0 items-center border px-4 font-mono text-[11px] transition-colors"
                   >
                     {doc.isGated ? '🔒 On request' : '↓ Download'}
                   </a>
@@ -350,33 +368,42 @@ export default function ProductTabs({
         <TabPanel id="compatibility" activeId={activeId}>
           {seriesSummaries.length > 0 && (
             <div className="mb-8">
-              <p className="text-[14px] text-ih-muted mb-4">
-                This listing is matched size by size to the series below. The size table gives the exact
-                equivalent part number for every Indus part number.
+              <p className="text-ih-muted mb-4 text-[14px]">
+                This listing is matched size by size to the series below. The size table gives the
+                exact equivalent part number for every Indus part number.
               </p>
-              <div className="overflow-x-auto border border-ih-border">
+              <div className="border-ih-border overflow-x-auto border">
                 <table className="w-full min-w-[520px] font-mono text-[12.5px]">
                   <thead>
-                    <tr className="bg-ih-surface-2 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
-                      <th scope="col" className="px-3.5 py-2.5 text-left font-medium">Maker / standard</th>
-                      <th scope="col" className="px-3.5 py-2.5 text-left font-medium">Series</th>
-                      <th scope="col" className="px-3.5 py-2.5 text-right font-medium">Sizes matched</th>
+                    <tr className="bg-ih-surface-2 text-ih-muted text-[11px] tracking-[0.08em] uppercase">
+                      <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
+                        Maker / standard
+                      </th>
+                      <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
+                        Series
+                      </th>
+                      <th scope="col" className="px-3.5 py-2.5 text-right font-medium">
+                        Sizes matched
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     {seriesSummaries.map((s) => (
-                      <tr key={s.brand} className="border-t border-ih-border">
-                        <th scope="row" className="px-3.5 py-2.5 text-left font-medium text-ih-ink">
+                      <tr key={s.brand} className="border-ih-border border-t">
+                        <th scope="row" className="text-ih-ink px-3.5 py-2.5 text-left font-medium">
                           {s.isStandard ? (
                             s.brand
                           ) : (
-                            <Link href={`/replacement/${competitorBrandSlug(s.brand)}`} className="hover:text-ih-accent">
+                            <Link
+                              href={`/replacement/${competitorBrandSlug(s.brand)}`}
+                              className="hover:text-ih-accent"
+                            >
                               {s.brand}
                             </Link>
                           )}
                         </th>
-                        <td className="px-3.5 py-2.5 text-ih-ink-2">{s.series.join(', ')}</td>
-                        <td className="px-3.5 py-2.5 text-right text-ih-ink-2">{s.sizes}</td>
+                        <td className="text-ih-ink-2 px-3.5 py-2.5">{s.series.join(', ')}</td>
+                        <td className="text-ih-ink-2 px-3.5 py-2.5 text-right">{s.sizes}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -384,23 +411,33 @@ export default function ProductTabs({
               </div>
             </div>
           )}
-          {crossReferences.length === 0 && seriesSummaries.length > 0 ? null : crossReferences.length === 0 ? (
-            <p className="text-[14px] text-ih-muted">No cross-reference data available. Contact our team for compatibility assistance.</p>
+          {crossReferences.length === 0 &&
+          seriesSummaries.length > 0 ? null : crossReferences.length === 0 ? (
+            <p className="text-ih-muted text-[14px]">
+              No cross-reference data available. Contact our team for compatibility assistance.
+            </p>
           ) : (
             <div>
-              <p className="text-[14px] text-ih-muted mb-6">The following competitor part numbers are compatible with or superseded by this SKU. Click through to the dedicated replacement page for each.</p>
+              <p className="text-ih-muted mb-6 text-[14px]">
+                The following competitor part numbers are compatible with or superseded by this SKU.
+                Click through to the dedicated replacement page for each.
+              </p>
               <div className="grid grid-cols-3 gap-2">
                 {crossReferences.map((ref) => {
                   const href = replacementUrlPath(ref.competitorBrand, ref.competitorMpn)
                   const inner = (
                     <>
-                      <div className="text-ih-muted text-[10px] uppercase tracking-[0.08em] mb-0.5">{ref.competitorBrand}</div>
-                      <div className="text-ih-ink font-medium text-[13px]">{ref.competitorMpn}</div>
+                      <div className="text-ih-muted mb-0.5 text-[10px] tracking-[0.08em] uppercase">
+                        {ref.competitorBrand}
+                      </div>
+                      <div className="text-ih-ink text-[13px] font-medium">{ref.competitorMpn}</div>
                       {ref.compatibility && (
-                        <div className="text-ih-muted text-[10px] mt-1">{ref.compatibility}</div>
+                        <div className="text-ih-muted mt-1 text-[10px]">{ref.compatibility}</div>
                       )}
                       {href && (
-                        <div className="font-mono text-[10px] text-ih-accent mt-1.5">View replacement →</div>
+                        <div className="text-ih-accent mt-1.5 font-mono text-[10px]">
+                          View replacement →
+                        </div>
                       )}
                     </>
                   )
@@ -408,12 +445,15 @@ export default function ProductTabs({
                     <Link
                       key={ref.id}
                       href={href}
-                      className="block px-4 py-3 border border-ih-border bg-ih-surface font-mono text-[12px] hover:border-ih-accent transition-colors"
+                      className="border-ih-border bg-ih-surface hover:border-ih-accent block border px-4 py-3 font-mono text-[12px] transition-colors"
                     >
                       {inner}
                     </Link>
                   ) : (
-                    <div key={ref.id} className="px-4 py-3 border border-ih-border bg-ih-surface font-mono text-[12px]">
+                    <div
+                      key={ref.id}
+                      className="border-ih-border bg-ih-surface border px-4 py-3 font-mono text-[12px]"
+                    >
                       {inner}
                     </div>
                   )
@@ -428,33 +468,33 @@ export default function ProductTabs({
       {inHtml.faq && (
         <TabPanel id="faq" activeId={activeId} className="max-w-[820px]">
           {faqs.length === 0 ? (
-            <p className="text-[14px] text-ih-muted">
-              No FAQs for this product yet.
-            </p>
+            <p className="text-ih-muted text-[14px]">No FAQs for this product yet.</p>
           ) : (
             <div className="flex flex-col gap-2">
               {faqs.map((f) => (
                 <details
                   key={f.id}
-                  className="group border border-ih-border bg-ih-surface [&[open]>summary>span:last-child]:rotate-180"
+                  className="group border-ih-border bg-ih-surface border [&[open]>summary>span:last-child]:rotate-180"
                 >
-                  <summary className="px-5 py-4 flex items-center justify-between gap-4 cursor-pointer text-[14px] font-medium text-ih-ink list-none [&::-webkit-details-marker]:hidden hover:bg-ih-surface-2 transition-colors">
+                  <summary className="text-ih-ink hover:bg-ih-surface-2 flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-[14px] font-medium transition-colors [&::-webkit-details-marker]:hidden">
                     <span>{f.question}</span>
-                    <span className="font-mono text-[14px] text-ih-muted transition-transform shrink-0">▾</span>
+                    <span className="text-ih-muted shrink-0 font-mono text-[14px] transition-transform">
+                      ▾
+                    </span>
                   </summary>
-                  <div className="px-5 pb-5 pt-1 text-[14px] text-ih-ink-2 leading-[1.6] whitespace-pre-wrap border-t border-ih-border">
+                  <div className="text-ih-ink-2 border-ih-border border-t px-5 pt-1 pb-5 text-[14px] leading-[1.6] whitespace-pre-wrap">
                     {parseFaqAnswer(f.answer).map((seg, i) =>
                       seg.kind === 'link' ? (
                         <Link
                           key={i}
                           href={seg.href}
-                          className="text-ih-accent underline underline-offset-2 hover:text-ih-accent-hover"
+                          className="text-ih-accent hover:text-ih-accent-hover underline underline-offset-2"
                         >
                           {seg.text}
                         </Link>
                       ) : (
                         seg.text
-                      ),
+                      )
                     )}
                   </div>
                 </details>
@@ -522,20 +562,19 @@ function ShippingTable({
   }
 
   return (
-    <div className="border border-ih-border bg-ih-surface p-6 flex flex-col gap-4">
+    <div className="border-ih-border bg-ih-surface flex flex-col gap-4 border p-6">
       {rows.map((row) => (
         <div
           key={row.lbl}
-          className="grid gap-4 pb-4 border-b border-ih-border last:pb-0 last:border-0"
+          className="border-ih-border grid gap-4 border-b pb-4 last:border-0 last:pb-0"
           style={{ gridTemplateColumns: '110px 1fr' }}
         >
-          <span className="font-mono text-[11px] tracking-[0.08em] uppercase text-ih-muted pt-0.5">
+          <span className="text-ih-muted pt-0.5 font-mono text-[11px] tracking-[0.08em] uppercase">
             {row.lbl}
           </span>
-          <span className="text-[14px] text-ih-ink-2 leading-[1.5]">{row.val}</span>
+          <span className="text-ih-ink-2 text-[14px] leading-[1.5]">{row.val}</span>
         </div>
       ))}
     </div>
   )
 }
-

@@ -20,9 +20,17 @@ type ProductEnquiryLinkProps = {
  * RSC payload carries only `sku`, `title` and `url`; the HTML is identical,
  * because the server still renders the full href.
  */
-export default function ProductEnquiryLink({ product, className, children }: ProductEnquiryLinkProps) {
+export default function ProductEnquiryLink({
+  product,
+  className,
+  children,
+}: ProductEnquiryLinkProps) {
   return (
-    <a href={productEnquiryHref(product)} aria-label={`Inquire about ${product.title}`} className={className}>
+    <a
+      href={productEnquiryHref(product)}
+      aria-label={`Inquire about ${product.title}`}
+      className={className}
+    >
       {children}
     </a>
   )

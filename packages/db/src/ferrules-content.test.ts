@@ -16,7 +16,7 @@ import { describe, expect, test } from 'vitest'
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const payload = JSON.parse(
-  readFileSync(path.join(HERE, '../data/ferrules-content.json'), 'utf8'),
+  readFileSync(path.join(HERE, '../data/ferrules-content.json'), 'utf8')
 ) as {
   hub: { slug: string; seoTitle: string }
   series: {
@@ -84,7 +84,7 @@ describe('ferrules payload', () => {
       for (const row of s.sizes) {
         expect(
           prefixes.some((p) => row.part.startsWith(p)),
-          `${row.part} is not covered by "${s.partPrefixes}"`,
+          `${row.part} is not covered by "${s.partPrefixes}"`
         ).toBe(true)
       }
     }
@@ -105,7 +105,7 @@ describe('ferrules payload', () => {
       for (const row of s.sizes) {
         expect(DN_FOR_DASH[row.dash], `unknown dash ${row.dash} on ${row.part}`).toBeDefined()
         expect(row.dn, `${row.part}: DN${row.dn} does not match ${row.dash}`).toBe(
-          DN_FOR_DASH[row.dash],
+          DN_FOR_DASH[row.dash]
         )
       }
     }
@@ -117,7 +117,10 @@ describe('ferrules payload', () => {
       for (const row of s.sizes) {
         expect(row.dn, `${s.categorySlug} is not ordered by bore`).toBeGreaterThanOrEqual(previous)
         previous = row.dn
-        for (const [key, value] of [['D', row.d], ['L', row.l]] as const) {
+        for (const [key, value] of [
+          ['D', row.d],
+          ['L', row.l],
+        ] as const) {
           expect(value, `${row.part} ${key} is not a decimal`).toMatch(/^\d+(\.\d+)?$/)
           expect(Number(value), `${row.part} ${key} is not positive`).toBeGreaterThan(0)
         }
@@ -137,8 +140,10 @@ describe('ferrules payload', () => {
       for (let i = 1; i < bores.length; i++) {
         const smaller = Math.max(...byBore.get(bores[i - 1]!)!)
         const larger = Math.max(...byBore.get(bores[i]!)!)
-        expect(larger, `${s.categorySlug}: D shrinks from DN${bores[i - 1]} to DN${bores[i]}`)
-          .toBeGreaterThan(smaller)
+        expect(
+          larger,
+          `${s.categorySlug}: D shrinks from DN${bores[i - 1]} to DN${bores[i]}`
+        ).toBeGreaterThan(smaller)
       }
     }
   })
@@ -158,7 +163,7 @@ describe('ferrules payload', () => {
     ]
     for (const t of titles) {
       expect(t.toLowerCase(), `"${t}" already carries the site name`).not.toContain(
-        'indus hydraulics',
+        'indus hydraulics'
       )
     }
   })
@@ -170,7 +175,7 @@ describe('ferrules payload', () => {
     expect(tree).toContain(`category: '${payload.hub.slug}'`)
     for (const s of payload.series) {
       expect(tree, `${s.categorySlug} missing from megamenu-tree.ts`).toContain(
-        `category: '${s.categorySlug}'`,
+        `category: '${s.categorySlug}'`
       )
       expect(tree, `${s.navLabel} missing from megamenu-tree.ts`).toContain(`'${s.navLabel}'`)
     }

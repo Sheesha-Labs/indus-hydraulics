@@ -21,13 +21,13 @@ const createMany = vi.fn<(args: CreateManyArgs) => Promise<{ count: number }>>()
 
 type TxCallback<T> = (tx: { seoAuditLog: { createMany: typeof createMany } }) => Promise<T>
 
-const transaction = vi.fn(async <T,>(callback: TxCallback<T>): Promise<T> => {
+const transaction = vi.fn(async <T>(callback: TxCallback<T>): Promise<T> => {
   return callback({ seoAuditLog: { createMany } })
 })
 
 vi.mock('@indus/db', () => ({
   db: {
-    $transaction: <T,>(cb: TxCallback<T>) => transaction(cb),
+    $transaction: <T>(cb: TxCallback<T>) => transaction(cb),
   },
   Prisma: { TransactionClient: undefined, InputJsonValue: undefined },
 }))
@@ -51,7 +51,7 @@ describe('withSeoAudit', () => {
       },
       async () => {
         // entity update would happen here in real code
-      },
+      }
     )
 
     expect(transaction).toHaveBeenCalledOnce()
@@ -77,7 +77,7 @@ describe('withSeoAudit', () => {
         after: { seoTitle: 'same' },
         actorId: null,
       },
-      async () => undefined,
+      async () => undefined
     )
     expect(createMany).not.toHaveBeenCalled()
   })
@@ -94,8 +94,8 @@ describe('withSeoAudit', () => {
         },
         async () => {
           throw new Error('update failed')
-        },
-      ),
+        }
+      )
     ).rejects.toThrow('update failed')
     expect(createMany).not.toHaveBeenCalled()
   })
@@ -110,7 +110,7 @@ describe('withSeoAudit', () => {
         actorId: 'staff-1',
         reason: 'manual edit',
       },
-      async () => 42,
+      async () => 42
     )
     expect(result).toBe(42)
   })
@@ -125,7 +125,7 @@ describe('withSeoAudit', () => {
         actorId: null,
         reason: 'reverted',
       },
-      async () => undefined,
+      async () => undefined
     )
     const call = createMany.mock.calls[0]?.[0]
     expect(call?.data.every((row) => row.reason === 'reverted')).toBe(true)

@@ -51,8 +51,14 @@ const FAQS = [
 ]
 
 const SECTIONS = [
-  { id: 'our-role-as-an-authorized-distributor', title: '1. Our role as an authorized distributor' },
-  { id: 'manufacturers-we-administer-warranty-for', title: '2. Manufacturers we administer warranty for' },
+  {
+    id: 'our-role-as-an-authorized-distributor',
+    title: '1. Our role as an authorized distributor',
+  },
+  {
+    id: 'manufacturers-we-administer-warranty-for',
+    title: '2. Manufacturers we administer warranty for',
+  },
   { id: 'warranty-period', title: '3. Warranty period' },
   { id: 'what-is-covered', title: '4. What is covered' },
   { id: 'what-is-excluded', title: '5. What is excluded' },
@@ -73,8 +79,8 @@ export default async function WarrantyPage({ params }: Props) {
 
   if (cms?.isPublished) {
     return (
-      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
+      <article className="mx-auto max-w-[820px] px-8 py-16 pb-24">
+        <h1 className="mb-2 text-[36px] font-semibold tracking-tight">{cms.title}</h1>
         <div
           className="ih-rich-text text-[15px] leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: cms.body }}
@@ -96,16 +102,23 @@ export default async function WarrantyPage({ params }: Props) {
   })
 
   return (
-    <PolicyLayout slug="warranty" title="Warranty Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
+    <PolicyLayout
+      slug="warranty"
+      title="Warranty Policy"
+      effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`}
+      sections={SECTIONS}
+    >
       <JsonLd data={[faqLd, breadcrumbLd]} />
 
-
-      <PolicySectionBody id="our-role-as-an-authorized-distributor" title="1. Our role as an authorized distributor">
+      <PolicySectionBody
+        id="our-role-as-an-authorized-distributor"
+        title="1. Our role as an authorized distributor"
+      >
         <p>
-          Indus Hydraulic Power Trading LLC is an authorized distributor for the manufacturers
-          whose products we supply. Every product is sold with the original manufacturer’s warranty
-          and we administer warranty claims end-to-end with the manufacturer on your behalf. We do
-          not modify, extend, or reduce the manufacturer’s warranty terms.
+          Indus Hydraulic Power Trading LLC is an authorized distributor for the manufacturers whose
+          products we supply. Every product is sold with the original manufacturer’s warranty and we
+          administer warranty claims end-to-end with the manufacturer on your behalf. We do not
+          modify, extend, or reduce the manufacturer’s warranty terms.
         </p>
         <p>
           We operate under an ISO 9001:2015 quality management system and supply only genuine,
@@ -113,7 +126,10 @@ export default async function WarrantyPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="manufacturers-we-administer-warranty-for" title="2. Manufacturers we administer warranty for">
+      <PolicySectionBody
+        id="manufacturers-we-administer-warranty-for"
+        title="2. Manufacturers we administer warranty for"
+      >
         <p>
           As an authorized distributor we handle warranty claims for the brands listed on our{' '}
           <Link className="text-ih-accent hover:underline" href="/brands">
@@ -121,7 +137,7 @@ export default async function WarrantyPage({ params }: Props) {
           </Link>
           , including:
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>Parker Hannifin</li>
           <li>Bosch Rexroth</li>
           <li>Yuken</li>
@@ -139,22 +155,22 @@ export default async function WarrantyPage({ params }: Props) {
       </PolicySectionBody>
 
       <PolicySectionBody id="warranty-period" title="3. Warranty period">
-        <p>
-          The warranty period is set by the manufacturer of each product. Typical periods are:
-        </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <p>The warranty period is set by the manufacturer of each product. Typical periods are:</p>
+        <ul className="list-disc space-y-1 pl-6">
           <li>
-            <strong>Standard industrial hydraulics:</strong> 12 months from delivery against
-            defects in material and workmanship.
+            <strong>Standard industrial hydraulics:</strong> 12 months from delivery against defects
+            in material and workmanship.
           </li>
           <li>
-            <strong>Selected pumps, motors, and valves:</strong> 18–24 months for certain Parker
-            and Bosch Rexroth product families. Check the product datasheet or Estimate.
+            <strong>Selected pumps, motors, and valves:</strong> 18–24 months for certain Parker and
+            Bosch Rexroth product families. Check the product datasheet or Estimate.
           </li>
           <li>
-            <strong>Wear items (seals, filter elements, gaskets, O-rings, hose-end fittings used
-            with hose assemblies):</strong> covered against manufacturing defect only, not against
-            normal service life.
+            <strong>
+              Wear items (seals, filter elements, gaskets, O-rings, hose-end fittings used with hose
+              assemblies):
+            </strong>{' '}
+            covered against manufacturing defect only, not against normal service life.
           </li>
         </ul>
         <p>
@@ -169,7 +185,7 @@ export default async function WarrantyPage({ params }: Props) {
           Defects in materials and workmanship under normal industrial use within the product’s
           rated operating conditions:
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>Operating pressure within the maximum rated working pressure</li>
           <li>Operating temperature within the rated range</li>
           <li>Fluid type and viscosity compatible with the product’s seal and material spec</li>
@@ -179,10 +195,9 @@ export default async function WarrantyPage({ params }: Props) {
       </PolicySectionBody>
 
       <PolicySectionBody id="what-is-excluded" title="5. What is excluded">
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
-            Operation outside the rated pressure, temperature, fluid, or duty-cycle
-            specifications
+            Operation outside the rated pressure, temperature, fluid, or duty-cycle specifications
           </li>
           <li>
             Contamination of hydraulic fluid (particulate, water ingress, chemical) caused by the
@@ -214,15 +229,15 @@ export default async function WarrantyPage({ params }: Props) {
       </PolicySectionBody>
 
       <PolicySectionBody id="claims-process" title="6. Claims process">
-        <ol className="list-decimal pl-6 space-y-1">
+        <ol className="list-decimal space-y-1 pl-6">
           <li>
             <strong>Notify us within 7 days</strong> of discovering the fault. Email{' '}
             <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
               sales@indushydraulics.me
             </a>{' '}
             with the Estimate or invoice number, product part number and serial / batch number,
-            photographs of the failure, the operating conditions at the time of failure
-            (pressure, temperature, fluid, hours in service), and the installation context.
+            photographs of the failure, the operating conditions at the time of failure (pressure,
+            temperature, fluid, hours in service), and the installation context.
           </li>
           <li>
             <strong>Initial assessment:</strong> We respond within five (5) business days with one
@@ -232,8 +247,8 @@ export default async function WarrantyPage({ params }: Props) {
           <li>
             <strong>Return for technical evaluation:</strong> Where the manufacturer requires the
             failed unit for inspection, we issue an RMA and packaging instructions. The unit is
-            returned to us at the buyer’s cost (we cover return freight where the failure is
-            clearly within warranty on visual inspection).
+            returned to us at the buyer’s cost (we cover return freight where the failure is clearly
+            within warranty on visual inspection).
           </li>
           <li>
             <strong>Manufacturer evaluation:</strong> The unit is forwarded to the manufacturer’s
@@ -262,7 +277,10 @@ export default async function WarrantyPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="field-service-and-emergency-support" title="8. Field service and emergency support">
+      <PolicySectionBody
+        id="field-service-and-emergency-support"
+        title="8. Field service and emergency support"
+      >
         <p>
           For hydraulic systems we supplied and commissioned, our technicians can attend on site to
           assess a failure under warranty. Travel, accommodation, and time are charged at standard
@@ -286,7 +304,7 @@ export default async function WarrantyPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
+      <footer className="border-ih-border text-ih-muted-2 mt-12 border-t pt-6 text-[12px] leading-[1.6]">
         This policy is the customer-facing companion to section 6 (Warranty) of our{' '}
         <Link className="underline" href="/terms">
           Terms of Service
@@ -301,4 +319,3 @@ export default async function WarrantyPage({ params }: Props) {
     </PolicyLayout>
   )
 }
-

@@ -68,7 +68,13 @@ async function main() {
     },
   })
   for (const p of products) {
-    const fields = [p.descriptionShort, p.descriptionLong, p.seoTitle, p.seoDescription, p.focusKeyword]
+    const fields = [
+      p.descriptionShort,
+      p.descriptionLong,
+      p.seoTitle,
+      p.seoDescription,
+      p.focusKeyword,
+    ]
     if (!fields.some(isBroken)) continue
     fixed++
     console.log(`${dryRun ? '[dry-run] ' : ''}${p.sku} — product copy`)
@@ -89,7 +95,14 @@ async function main() {
   // pass has come back clean here before while category SEO copy still carried
   // the supplier's text.
   const categories = await db.category.findMany({
-    select: { id: true, slug: true, name: true, shortDescription: true, seoTitle: true, seoDescription: true },
+    select: {
+      id: true,
+      slug: true,
+      name: true,
+      shortDescription: true,
+      seoTitle: true,
+      seoDescription: true,
+    },
   })
   for (const c of categories) {
     const fields = [c.name, c.shortDescription, c.seoTitle, c.seoDescription]

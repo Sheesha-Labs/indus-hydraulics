@@ -10,7 +10,12 @@ const logo = (id: string, alt: string, bytes = 1000, width = 400, height = 100) 
   bytes,
 })
 
-const row = (slug: string, name: string, skuCount: number, l: MarqueeBrandRow['logo']): MarqueeBrandRow => ({
+const row = (
+  slug: string,
+  name: string,
+  skuCount: number,
+  l: MarqueeBrandRow['logo']
+): MarqueeBrandRow => ({
   slug,
   name,
   skuCount,
@@ -50,7 +55,12 @@ describe('selectMarqueeBrands', () => {
   it('treats the same file under two storage keys as one picture', () => {
     const out = selectMarqueeBrands([
       row('dixon', 'Dixon', 7, logo('d1', 'Dixon logo', 13462, 290, 132)),
-      row('dixon-valve', 'Dixon Valve & Coupling', 405, logo('d2', 'Dixon Valve & Coupling logo', 13462, 290, 132)),
+      row(
+        'dixon-valve',
+        'Dixon Valve & Coupling',
+        405,
+        logo('d2', 'Dixon Valve & Coupling logo', 13462, 290, 132)
+      ),
     ])
     expect(out.map((b) => b.slug)).toEqual(['dixon-valve'])
   })

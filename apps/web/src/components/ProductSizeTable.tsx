@@ -72,7 +72,11 @@ type Props = {
 /** A column headed by a bare drawing letter — A, d1, Ø2, L′, R max — rather than a word. */
 const DRAWING_LETTER_LABEL = /^(?:Ø?[A-Za-z]{1,2}\d{0,2}′?(?: max| min)?|Ø\d{0,2})$/
 
-function formatCell(value: number | undefined, kind: VariantTableKind, column: VariantColumn): string {
+function formatCell(
+  value: number | undefined,
+  kind: VariantTableKind,
+  column: VariantColumn
+): string {
   if (value === undefined) return '—'
   return kind === 'lifting' || column.grouped
     ? value.toLocaleString('en-GB', { maximumFractionDigits: 3 })
@@ -100,18 +104,32 @@ type SizeColumn = {
 }
 
 /** A size as a card: part number on top, every other column as label → value. */
-function SizeCard({ v, cols, partNumberHeading }: { v: VariantLike; cols: SizeColumn[]; partNumberHeading: string }) {
+function SizeCard({
+  v,
+  cols,
+  partNumberHeading,
+}: {
+  v: VariantLike
+  cols: SizeColumn[]
+  partNumberHeading: string
+}) {
   return (
-    <li className="rounded-[var(--radius-lg)] border border-ih-border bg-ih-surface">
-      <div className="flex items-baseline justify-between gap-3 border-b border-ih-border px-4 py-2.5">
-        <span className="text-[11px] font-medium uppercase tracking-[0.08em] text-ih-muted">{partNumberHeading}</span>
-        <span className="text-[14px] font-semibold tabular-nums text-ih-ink">{v.partNumber}</span>
+    <li className="border-ih-border bg-ih-surface rounded-[var(--radius-lg)] border">
+      <div className="border-ih-border flex items-baseline justify-between gap-3 border-b px-4 py-2.5">
+        <span className="text-ih-muted text-[11px] font-medium tracking-[0.08em] uppercase">
+          {partNumberHeading}
+        </span>
+        <span className="text-ih-ink text-[14px] font-semibold tabular-nums">{v.partNumber}</span>
       </div>
       <dl className="grid grid-cols-2 gap-x-4 gap-y-2.5 px-4 py-3">
         {cols.map((c) => (
           <div key={c.key} className="min-w-0">
-            <dt className="text-[11px] font-medium uppercase tracking-[0.06em] text-ih-muted">{c.heading}</dt>
-            <dd className="mt-0.5 break-words text-[13.5px] tabular-nums text-ih-ink">{c.cell(v)}</dd>
+            <dt className="text-ih-muted text-[11px] font-medium tracking-[0.06em] uppercase">
+              {c.heading}
+            </dt>
+            <dd className="text-ih-ink mt-0.5 text-[13.5px] break-words tabular-nums">
+              {c.cell(v)}
+            </dd>
           </div>
         ))}
       </dl>
@@ -120,7 +138,19 @@ function SizeCard({ v, cols, partNumberHeading }: { v: VariantLike; cols: SizeCo
 }
 
 /** Columns that carry a manufacturer's rating — they get the lowest-rated-component note. */
-const RATING_KEYS = new Set(['ratedPsi', 'maxPsi', 'contPsi', 'flowGpm', 'maxFlowGpm', 'ratedRpm', 'maxRpm', 'torqueLbIn', 'columnLoadLbs', 'capacityTon', 'capacityLbs'])
+const RATING_KEYS = new Set([
+  'ratedPsi',
+  'maxPsi',
+  'contPsi',
+  'flowGpm',
+  'maxFlowGpm',
+  'ratedRpm',
+  'maxRpm',
+  'torqueLbIn',
+  'columnLoadLbs',
+  'capacityTon',
+  'capacityLbs',
+])
 
 /**
  * The orderable sizes under one listing.
@@ -148,7 +178,7 @@ export default function ProductSizeTable({
 }: Props) {
   if (variants.length === 0) {
     return (
-      <p className="text-[14px] text-ih-muted">
+      <p className="text-ih-muted text-[14px]">
         Size table not published for this product yet — tell us the bore and port size you need and
         we will confirm the part number.
       </p>
@@ -199,7 +229,11 @@ export default function ProductSizeTable({
     <>
       {/* A drawing letter keeps its case: `d` and `D` are different dimensions on
           the same drawing, and the row's uppercase styling would merge them. */}
-      {DRAWING_LETTER_LABEL.test(c.label) ? <span className="normal-case">{c.label}</span> : c.label}
+      {DRAWING_LETTER_LABEL.test(c.label) ? (
+        <span className="normal-case">{c.label}</span>
+      ) : (
+        c.label
+      )}
       {variantColumnUnit(c) && (
         <>
           {' '}
@@ -210,11 +244,13 @@ export default function ProductSizeTable({
   )
   const cols: SizeColumn[] = [
     ...(showEquivalents
-      ? [{
-          key: 'competitorMpn',
-          heading: equivalentBrand ? `${equivalentBrand} equivalent` : 'Equivalent',
-          cell: (v: VariantLike) => v.competitorMpn ?? '—',
-        }]
+      ? [
+          {
+            key: 'competitorMpn',
+            heading: equivalentBrand ? `${equivalentBrand} equivalent` : 'Equivalent',
+            cell: (v: VariantLike) => v.competitorMpn ?? '—',
+          },
+        ]
       : []),
     ...xrefBrands.map((b) => ({
       key: `xref-${b}`,
@@ -229,8 +265,18 @@ export default function ProductSizeTable({
       nowrap: true,
       cell: (v: VariantLike) => variantText(v.dimensions, c.key) ?? '—',
     })),
-    ...(showHose ? [{ key: 'hose', heading: sizeHeading, cell: (v: VariantLike) => variantHoseLabel(v) ?? '—' }] : []),
-    ...(showPort ? [{ key: 'port', heading: portHeading, cell: (v: VariantLike) => v.portLabel ?? '—' }] : []),
+    ...(showHose
+      ? [
+          {
+            key: 'hose',
+            heading: sizeHeading,
+            cell: (v: VariantLike) => variantHoseLabel(v) ?? '—',
+          },
+        ]
+      : []),
+    ...(showPort
+      ? [{ key: 'port', heading: portHeading, cell: (v: VariantLike) => v.portLabel ?? '—' }]
+      : []),
     ...endColumns.map((c) => ({
       key: `end-${c.key}`,
       heading: c.label,
@@ -252,10 +298,32 @@ export default function ProductSizeTable({
       cell: (v: VariantLike) => variantText(v.dimensions, c.key) ?? '—',
     })),
     ...(showWeight
-      ? [{ key: 'weight', heading: <>Weight <span className="text-ih-muted-2">(g)</span></>, align: 'right' as const, cell: (v: VariantLike) => v.weightG ?? '—' }]
+      ? [
+          {
+            key: 'weight',
+            heading: (
+              <>
+                Weight <span className="text-ih-muted-2">(g)</span>
+              </>
+            ),
+            align: 'right' as const,
+            cell: (v: VariantLike) => v.weightG ?? '—',
+          },
+        ]
       : []),
     ...(showPressure
-      ? [{ key: 'pressure', heading: <>Working pressure <span className="text-ih-muted-2">(bar)</span></>, align: 'right' as const, cell: (v: VariantLike) => v.pressureBar ?? '—' }]
+      ? [
+          {
+            key: 'pressure',
+            heading: (
+              <>
+                Working pressure <span className="text-ih-muted-2">(bar)</span>
+              </>
+            ),
+            align: 'right' as const,
+            cell: (v: VariantLike) => v.pressureBar ?? '—',
+          },
+        ]
       : []),
   ]
 
@@ -265,13 +333,13 @@ export default function ProductSizeTable({
         <h2 className="font-serif text-[26px] font-normal tracking-[-0.01em]">
           Sizes &amp; part numbers
         </h2>
-        <span className="text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+        <span className="text-ih-muted text-[11px] tracking-[0.08em] uppercase">
           {variants.length} size{variants.length === 1 ? '' : 's'}
         </span>
       </div>
 
       {equivalenceNote && (
-        <p className="mb-5 text-[14px] leading-[1.6] text-ih-ink-2">{equivalenceNote}</p>
+        <p className="text-ih-ink-2 mb-5 text-[14px] leading-[1.6]">{equivalenceNote}</p>
       )}
 
       {/*
@@ -294,14 +362,19 @@ export default function ProductSizeTable({
       </ol>
       {variants.length > MOBILE_PREVIEW && (
         <details className="group/sizes mt-2.5 md:hidden">
-          <summary className="flex h-11 cursor-pointer list-none items-center justify-center rounded-[var(--radius-md)] border border-ih-border-strong bg-ih-surface text-[13.5px] font-medium text-ih-ink [&::-webkit-details-marker]:hidden">
+          <summary className="border-ih-border-strong bg-ih-surface text-ih-ink flex h-11 cursor-pointer list-none items-center justify-center rounded-[var(--radius-md)] border text-[13.5px] font-medium [&::-webkit-details-marker]:hidden">
             <span className="group-open/sizes:hidden">Show all {variants.length} sizes</span>
             <span className="hidden group-open/sizes:inline">Show fewer sizes</span>
           </summary>
           {variants.length <= MOBILE_ALL_CARDS_MAX ? (
             <ol className="mt-2.5 flex flex-col gap-2.5">
               {variants.slice(MOBILE_PREVIEW).map((v) => (
-                <SizeCard key={v.partNumber} v={v} cols={cols} partNumberHeading={partNumberHeading} />
+                <SizeCard
+                  key={v.partNumber}
+                  v={v}
+                  cols={cols}
+                  partNumberHeading={partNumberHeading}
+                />
               ))}
             </ol>
           ) : null}
@@ -311,13 +384,15 @@ export default function ProductSizeTable({
       {/* On a phone the table only appears for a long range, once "Show all"
           is opened (the wrapper's :has() sees the open <details>). */}
       <div
-        className={`overflow-x-auto overscroll-x-contain border border-ih-border md:mt-0 md:block ${
-          variants.length > MOBILE_ALL_CARDS_MAX ? 'mt-2.5 hidden [.ih-sizes:has(details[open])_&]:block' : 'hidden'
+        className={`border-ih-border overflow-x-auto overscroll-x-contain border md:mt-0 md:block ${
+          variants.length > MOBILE_ALL_CARDS_MAX
+            ? 'mt-2.5 hidden [.ih-sizes:has(details[open])_&]:block'
+            : 'hidden'
         }`}
       >
         <table className="w-full min-w-[640px] text-[13px] tabular-nums">
           <thead>
-            <tr className="bg-ih-surface-2 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+            <tr className="bg-ih-surface-2 text-ih-muted text-[11px] tracking-[0.08em] uppercase">
               <th scope="col" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap">
                 {partNumberHeading}
               </th>
@@ -335,14 +410,17 @@ export default function ProductSizeTable({
           </thead>
           <tbody>
             {variants.map((v) => (
-              <tr key={v.partNumber} className="border-t border-ih-border">
-                <th scope="row" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap text-ih-ink">
+              <tr key={v.partNumber} className="border-ih-border border-t">
+                <th
+                  scope="row"
+                  className="text-ih-ink px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
+                >
                   {v.partNumber}
                 </th>
                 {cols.map((c) => (
                   <td
                     key={c.key}
-                    className={`px-3.5 py-2.5 text-ih-ink-2 ${c.nowrap ? 'whitespace-nowrap' : ''} ${c.align === 'right' ? 'text-right' : ''}`}
+                    className={`text-ih-ink-2 px-3.5 py-2.5 ${c.nowrap ? 'whitespace-nowrap' : ''} ${c.align === 'right' ? 'text-right' : ''}`}
                   >
                     {c.cell(v)}
                   </td>
@@ -353,7 +431,7 @@ export default function ProductSizeTable({
         </table>
       </div>
 
-      <div className="mt-4 flex flex-col gap-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
+      <div className="text-ih-muted mt-4 flex flex-col gap-1.5 text-[12.5px] leading-[1.55]">
         {(leadTextColumns.length > 0 ||
           endColumns.length > 0 ||
           dimensionColumns.length > 0 ||
@@ -415,9 +493,8 @@ export default function ProductSizeTable({
         )}
         {breakingOnly && (
           <p>
-            This range is published with a breaking load only, not a working load limit. Tell us
-            the duty before using it to lift, and we will confirm a rating or recommend a rated
-            part.
+            This range is published with a breaking load only, not a working load limit. Tell us the
+            duty before using it to lift, and we will confirm a rating or recommend a rated part.
           </p>
         )}
         {kind === 'valve' && dimensionColumns.length > 0 && (
@@ -450,8 +527,8 @@ export default function ProductSizeTable({
         )}
         {stainlessOnRequest && (
           <p>
-            Every size is available in 316 stainless steel on request — add “-SS” to the part
-            number when you enquire.
+            Every size is available in 316 stainless steel on request — add “-SS” to the part number
+            when you enquire.
           </p>
         )}
         {disclaimerBrand && (

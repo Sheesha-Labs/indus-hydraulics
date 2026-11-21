@@ -114,7 +114,7 @@ export default function BrandLockup({
           {name}
           {sublabel ? (
             <small
-              className={`mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] ${g.sublabel}`}
+              className={`mt-1 block font-mono text-[9px] tracking-[0.14em] uppercase ${g.sublabel}`}
             >
               {sublabel}
             </small>

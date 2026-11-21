@@ -67,13 +67,14 @@ export default function DesignedIndustryLanding({
   whatsappHref: string | null
   mailtoHref: string
 }) {
-  const { hero, architecture, buyers, locations, families, qc, risk, review, closing, related } = page
+  const { hero, architecture, buyers, locations, families, qc, risk, review, closing, related } =
+    page
 
   return (
     <div>
       {/* ─── 1 · HERO ─────────────────────────────────────────────────── */}
-      <section className="border-b border-ih-border bg-ih-surface">
-        <div className={`${SECTION} pb-12 pt-7 lg:pb-[52px]`}>
+      <section className="border-ih-border bg-ih-surface border-b">
+        <div className={`${SECTION} pt-7 pb-12 lg:pb-[52px]`}>
           <Breadcrumb
             className="mb-6"
             items={[
@@ -95,18 +96,18 @@ export default function DesignedIndustryLanding({
 
             <div>
               <Eyebrow>{hero.eyebrow}</Eyebrow>
-              <h1 className="mt-[18px] text-balance font-serif text-[32px] font-normal leading-[1.04] tracking-[-0.01em] sm:text-[40px] lg:text-[52px]">
+              <h1 className="mt-[18px] font-serif text-[32px] leading-[1.04] font-normal tracking-[-0.01em] text-balance sm:text-[40px] lg:text-[52px]">
                 {hero.headingLead} <em>{hero.headingEmphasis}</em>.
               </h1>
-              <p className="mt-[18px] max-w-[600px] text-[15px] leading-[1.6] text-ih-ink-2 sm:text-[16px]">
+              <p className="text-ih-ink-2 mt-[18px] max-w-[600px] text-[15px] leading-[1.6] sm:text-[16px]">
                 {hero.lede}
               </p>
 
               <ul className="mt-[26px] flex list-none flex-col gap-[11px] p-0">
                 {hero.checks.map((check) => (
                   <li key={check} className="flex items-start gap-2.5">
-                    <CheckIcon className="mt-0.5 shrink-0 text-ih-accent" />
-                    <span className="text-[13.5px] leading-[1.5] text-ih-ink-2">{check}</span>
+                    <CheckIcon className="text-ih-accent mt-0.5 shrink-0" />
+                    <span className="text-ih-ink-2 text-[13.5px] leading-[1.5]">{check}</span>
                   </li>
                 ))}
               </ul>
@@ -152,7 +153,7 @@ export default function DesignedIndustryLanding({
           />
           <div>
             <Eyebrow>{architecture.eyebrow}</Eyebrow>
-            <h2 className="mt-3.5 font-serif text-[26px] font-normal leading-[1.15] tracking-[-0.01em] sm:text-[30px]">
+            <h2 className="mt-3.5 font-serif text-[26px] leading-[1.15] font-normal tracking-[-0.01em] sm:text-[30px]">
               {architecture.heading}
             </h2>
             <Note className="mt-5 text-[13px]">
@@ -163,7 +164,7 @@ export default function DesignedIndustryLanding({
               because that is the claim it qualifies: we locate equipment on the
               drawing, we do not certify the coolant against it.
             */}
-            <p className="mt-[18px] text-[14px] leading-[1.65] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-[18px] text-[14px] leading-[1.65]">
               {architecture.disclaimer}
             </p>
           </div>
@@ -178,13 +179,13 @@ export default function DesignedIndustryLanding({
         <HairlineGrid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
           {buyers.items.map((buyer) => (
             <HairlineCell key={buyer.title} className="flex flex-col gap-2.5 px-6 py-[26px]">
-              <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+              <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                 {buyer.kicker}
               </p>
-              <h3 className="text-[18px] font-medium leading-[1.25] tracking-[-0.02em]">
+              <h3 className="text-[18px] leading-[1.25] font-medium tracking-[-0.02em]">
                 {buyer.title}
               </h3>
-              <p className="text-[12.5px] leading-[1.6] text-ih-muted">{buyer.body}</p>
+              <p className="text-ih-muted text-[12.5px] leading-[1.6]">{buyer.body}</p>
             </HairlineCell>
           ))}
         </HairlineGrid>
@@ -203,18 +204,18 @@ export default function DesignedIndustryLanding({
                 flush
                 sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 24vw"
               >
-                <Badge kind="navy" square className="absolute left-3 top-3 z-[1]">
+                <Badge kind="navy" square className="absolute top-3 left-3 z-[1]">
                   {location.number}
                 </Badge>
               </DesignedFigure>
 
               <div className="flex flex-1 flex-col gap-[11px] p-[22px]">
-                <h3 className="text-[17px] font-medium leading-[1.28] tracking-[-0.02em]">
+                <h3 className="text-[17px] leading-[1.28] font-medium tracking-[-0.02em]">
                   {location.title}
                 </h3>
-                <p className="flex-1 text-[12.5px] leading-[1.6] text-ih-muted">{location.body}</p>
-                <div className="border-t border-ih-border pt-[13px]">
-                  <p className="mb-2 font-mono text-[9.5px] uppercase tracking-[0.1em] text-ih-muted">
+                <p className="text-ih-muted flex-1 text-[12.5px] leading-[1.6]">{location.body}</p>
+                <div className="border-ih-border border-t pt-[13px]">
+                  <p className="text-ih-muted mb-2 font-mono text-[9.5px] tracking-[0.1em] uppercase">
                     Relevant products
                   </p>
                   {/*
@@ -255,7 +256,10 @@ export default function DesignedIndustryLanding({
 
         <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
           {families.items.map((family) => (
-            <Card key={family.title} className="grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)]">
+            <Card
+              key={family.title}
+              className="grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)]"
+            >
               <DesignedFigure
                 image={family.image}
                 flush
@@ -264,22 +268,26 @@ export default function DesignedIndustryLanding({
               />
 
               <div className="flex flex-col gap-3 px-[26px] py-6">
-                <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+                <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                   {family.kicker}
                 </p>
-                <h3 className="text-[21px] font-medium leading-[1.2] tracking-[-0.02em]">
+                <h3 className="text-[21px] leading-[1.2] font-medium tracking-[-0.02em]">
                   {family.title}
                 </h3>
                 <ul className="flex list-none flex-col gap-2 p-0">
                   {family.points.map((point) => (
                     <li key={point} className="flex items-start gap-2.5">
-                      <CheckIcon size={13} strokeWidth={2.4} className="mt-0.5 shrink-0 text-ih-accent" />
-                      <span className="text-[12.5px] leading-[1.5] text-ih-ink-2">{point}</span>
+                      <CheckIcon
+                        size={13}
+                        strokeWidth={2.4}
+                        className="text-ih-accent mt-0.5 shrink-0"
+                      />
+                      <span className="text-ih-ink-2 text-[12.5px] leading-[1.5]">{point}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="pt-1 text-[12.5px] leading-[1.6] text-ih-muted">
-                  <strong className="font-medium text-ih-ink-2">Includes:</strong> {family.includes}
+                <p className="text-ih-muted pt-1 text-[12.5px] leading-[1.6]">
+                  <strong className="text-ih-ink-2 font-medium">Includes:</strong> {family.includes}
                 </p>
                 {/*
                   The designed link here reads "View <family> →" and points at a
@@ -290,7 +298,7 @@ export default function DesignedIndustryLanding({
                 */}
                 <a
                   href={`#${ENQUIRY_ANCHOR}`}
-                  className="mt-auto inline-flex items-center gap-1.5 border-t border-ih-border pt-3 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+                  className="border-ih-border text-ih-accent hover:text-ih-accent-hover mt-auto inline-flex items-center gap-1.5 border-t pt-3 text-[13px] font-medium"
                 >
                   Enquire about {family.title.toLowerCase()}
                   <ArrowRightIcon size={14} />
@@ -300,9 +308,9 @@ export default function DesignedIndustryLanding({
           ))}
         </div>
 
-        <Card className="mt-5 flex flex-col items-start gap-5 bg-ih-steel-soft px-[26px] py-[22px] lg:flex-row lg:items-center lg:gap-6">
-          <DocIcon size={22} className="shrink-0 text-ih-accent" />
-          <p className="flex-1 text-[13.5px] leading-[1.6] text-ih-ink-2">
+        <Card className="bg-ih-steel-soft mt-5 flex flex-col items-start gap-5 px-[26px] py-[22px] lg:flex-row lg:items-center lg:gap-6">
+          <DocIcon size={22} className="text-ih-accent shrink-0" />
+          <p className="text-ih-ink-2 flex-1 text-[13.5px] leading-[1.6]">
             <strong className="font-medium">{families.stripLabel}</strong> {families.strip}
           </p>
           <DrawingCta
@@ -320,11 +328,11 @@ export default function DesignedIndustryLanding({
           often the same one who wants to know how they are made, and the
           manufacturing page is the only place on the site that answers it.
         */}
-        <Card className="mt-5 flex flex-col gap-2 bg-ih-surface-2 p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
-          <p className="text-[13px] leading-[1.55] text-ih-ink-2">{related.body}</p>
+        <Card className="bg-ih-surface-2 mt-5 flex flex-col gap-2 p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+          <p className="text-ih-ink-2 text-[13px] leading-[1.55]">{related.body}</p>
           <Link
             href={related.href}
-            className="inline-flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+            className="text-ih-accent hover:text-ih-accent-hover inline-flex shrink-0 items-center gap-1.5 text-[13px] font-medium"
           >
             {related.label}
             <ArrowRightIcon size={14} />
@@ -345,14 +353,14 @@ export default function DesignedIndustryLanding({
                 caption={step.image.alt}
                 sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 24vw"
               />
-              <div className="mt-4 border-t-2 border-ih-accent pt-4">
-                <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-muted">
+              <div className="border-ih-accent mt-4 border-t-2 pt-4">
+                <p className="text-ih-muted font-mono text-[9.5px] tracking-[0.12em] uppercase">
                   {step.number} · {step.kicker}
                 </p>
-                <h3 className="mt-2.5 text-[17px] font-medium leading-[1.28] tracking-[-0.02em]">
+                <h3 className="mt-2.5 text-[17px] leading-[1.28] font-medium tracking-[-0.02em]">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-[12.5px] leading-[1.6] text-ih-muted">{step.body}</p>
+                <p className="text-ih-muted mt-2 text-[12.5px] leading-[1.6]">{step.body}</p>
               </div>
             </div>
           ))}
@@ -365,7 +373,7 @@ export default function DesignedIndustryLanding({
           <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-[52px]">
             <div>
               <Eyebrow className="text-ih-steel">{risk.eyebrow}</Eyebrow>
-              <h2 className="mt-4 max-w-[640px] text-balance font-serif text-[27px] font-normal leading-[1.14] tracking-[-0.01em] text-white sm:text-[34px]">
+              <h2 className="mt-4 max-w-[640px] font-serif text-[27px] leading-[1.14] font-normal tracking-[-0.01em] text-balance text-white sm:text-[34px]">
                 {risk.headingLead} <em>{risk.headingEmphasis}</em>.
               </h2>
               <p className="mt-4 max-w-[620px] text-[14px] leading-[1.65] text-white/80">
@@ -377,18 +385,16 @@ export default function DesignedIndustryLanding({
                   <HairlineCell
                     key={item.number}
                     tone="navy"
-                    className="flex flex-col gap-2.5 px-[22px] pb-5 pt-[22px]"
+                    className="flex flex-col gap-2.5 px-[22px] pt-[22px] pb-5"
                   >
-                    <p className="font-mono text-[9.5px] uppercase tracking-[0.11em] text-ih-steel">
+                    <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.11em] uppercase">
                       {item.number} · {item.risk}
                     </p>
                     <p className="text-[12.5px] leading-[1.55] text-white/85">
                       <strong className="font-medium text-white">Control:</strong> {item.control}
                     </p>
                     <p className="mt-auto border-t border-white/12 pt-2.5 text-[11.5px] leading-[1.5] text-white/65">
-                      <strong className="font-medium text-white/85">
-                        Project record:
-                      </strong>{' '}
+                      <strong className="font-medium text-white/85">Project record:</strong>{' '}
                       {item.record}
                     </p>
                   </HairlineCell>
@@ -416,14 +422,17 @@ export default function DesignedIndustryLanding({
         <div className="grid grid-cols-1 items-start gap-8 xl:grid-cols-[minmax(0,1fr)_460px]">
           <HairlineGrid className="grid-cols-1 sm:grid-cols-2">
             {review.steps.map((step) => (
-              <HairlineCell key={step.kicker} className="flex flex-col gap-2.5 px-[26px] pb-6 pt-[26px]">
-                <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+              <HairlineCell
+                key={step.kicker}
+                className="flex flex-col gap-2.5 px-[26px] pt-[26px] pb-6"
+              >
+                <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                   {step.kicker}
                 </p>
-                <h3 className="text-[18px] font-medium leading-[1.25] tracking-[-0.02em]">
+                <h3 className="text-[18px] leading-[1.25] font-medium tracking-[-0.02em]">
                   {step.title}
                 </h3>
-                <p className="text-[12.5px] leading-[1.6] text-ih-muted">{step.body}</p>
+                <p className="text-ih-muted text-[12.5px] leading-[1.6]">{step.body}</p>
               </HairlineCell>
             ))}
           </HairlineGrid>
@@ -465,12 +474,12 @@ export default function DesignedIndustryLanding({
 
       {/* ─── 9 · CLOSING CTA ──────────────────────────────────────────── */}
       <section className={`${SECTION} ${BAND_TIGHT}`}>
-        <Card className="grid grid-cols-1 items-center gap-8 bg-ih-steel-soft px-8 py-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-11">
+        <Card className="bg-ih-steel-soft grid grid-cols-1 items-center gap-8 px-8 py-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-11">
           <div>
-            <h2 className="font-serif text-[26px] font-normal leading-[1.15] tracking-[-0.01em] sm:text-[30px]">
+            <h2 className="font-serif text-[26px] leading-[1.15] font-normal tracking-[-0.01em] sm:text-[30px]">
               {closing.heading}
             </h2>
-            <p className="mt-2.5 max-w-[560px] text-[14.5px] leading-[1.6] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-2.5 max-w-[560px] text-[14.5px] leading-[1.6]">
               {closing.body}
             </p>
           </div>
@@ -497,11 +506,14 @@ export default function DesignedIndustryLanding({
                 </a>
               </Button>
             </div>
-            <p className="mt-3.5 text-[12.5px] leading-[1.5] text-ih-muted">
+            <p className="text-ih-muted mt-3.5 text-[12.5px] leading-[1.5]">
               Project desk{' '}
               {contactPhone && (
                 <>
-                  <a href={`tel:${contactPhone.replace(/\s/g, '')}`} className="font-medium text-ih-accent hover:underline">
+                  <a
+                    href={`tel:${contactPhone.replace(/\s/g, '')}`}
+                    className="text-ih-accent font-medium hover:underline"
+                  >
                     {contactPhone}
                   </a>
                   {contactEmail ? ' · ' : null}

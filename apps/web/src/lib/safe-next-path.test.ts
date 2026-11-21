@@ -22,7 +22,13 @@ describe('safeNextPath', () => {
   })
 
   test('rejects absolute URLs and non-path values', () => {
-    for (const value of ['https://evil.example', 'http://evil.example', 'javascript:alert(1)', 'products', '']) {
+    for (const value of [
+      'https://evil.example',
+      'http://evil.example',
+      'javascript:alert(1)',
+      'products',
+      '',
+    ]) {
       expect(safeNextPath(value), value).toBeNull()
     }
   })

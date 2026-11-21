@@ -126,7 +126,9 @@ export function areasServed(): string[] {
 export function formatOfficeAddress(office: Office): string {
   const a = office.address
   const cityLine = [a.addressLocality, a.postalCode].filter(Boolean).join(' ')
-  const regionLine = [a.addressRegion, regionToCountryName(a.addressCountry)].filter(Boolean).join(', ')
+  const regionLine = [a.addressRegion, regionToCountryName(a.addressCountry)]
+    .filter(Boolean)
+    .join(', ')
   return [a.streetAddress, cityLine, regionLine].filter((s) => s && s.length > 0).join('\n')
 }
 

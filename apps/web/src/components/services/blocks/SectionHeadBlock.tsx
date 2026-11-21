@@ -4,12 +4,12 @@ export default function SectionHeadBlockView({ block }: { block: SectionHeadBloc
   return (
     <div
       id={block.anchor}
-      className="mb-4 mt-14 flex scroll-mt-6 items-baseline gap-3.5 border-t border-ih-border pt-4 first:mt-0 first:border-t-0 first:pt-0"
+      className="border-ih-border mt-14 mb-4 flex scroll-mt-6 items-baseline gap-3.5 border-t pt-4 first:mt-0 first:border-t-0 first:pt-0"
     >
-      <span className="mono text-xs uppercase tracking-[0.12em] text-ih-accent">
+      <span className="mono text-ih-accent text-xs tracking-[0.12em] uppercase">
         {block.number}
       </span>
-      <h2 className="m-0 flex-1 font-sans text-3xl font-semibold leading-[1.1] tracking-[-0.02em] text-ih-ink">
+      <h2 className="text-ih-ink m-0 flex-1 font-sans text-3xl leading-[1.1] font-semibold tracking-[-0.02em]">
         {block.title}
       </h2>
     </div>

@@ -19,7 +19,11 @@
 
 import * as cheerio from 'cheerio'
 import type { Adapter, ScrapedProductDraft, ScraperContext, CandidateImage } from '../types'
-import { discoverFromSitemap, filterUrlsToProductPages, MAX_DISCOVERED_URLS } from '../sitemapDiscover'
+import {
+  discoverFromSitemap,
+  filterUrlsToProductPages,
+  MAX_DISCOVERED_URLS,
+} from '../sitemapDiscover'
 import { extractImageCandidates, resolveAsset } from '../resolveAsset'
 import { fetchXml } from '../fetch'
 
@@ -88,7 +92,11 @@ export function parseGenericProductPage(html: string, pageUrl: string): ScrapedP
 
   // 2. Open Graph fallbacks (don't overwrite JSON-LD)
   if (!draft.title) {
-    draft.title = ($('meta[property="og:title"]').attr('content') ?? $('title').first().text() ?? '').trim()
+    draft.title = (
+      $('meta[property="og:title"]').attr('content') ??
+      $('title').first().text() ??
+      ''
+    ).trim()
   }
   if (!draft.description) {
     const ogd = $('meta[property="og:description"]').attr('content')
@@ -115,7 +123,9 @@ export function parseGenericProductPage(html: string, pageUrl: string): ScrapedP
 
   // 4. Breadcrumb → categoryText (last non-Home item)
   if (!draft.categoryText) {
-    const crumbs = $('nav.breadcrumbs a, ol.breadcrumb a, [class*="breadcrumb"] a, [aria-label="Breadcrumb"] a')
+    const crumbs = $(
+      'nav.breadcrumbs a, ol.breadcrumb a, [class*="breadcrumb"] a, [aria-label="Breadcrumb"] a'
+    )
       .map((_, el) => $(el).text().trim())
       .get()
       .filter((s) => s && s.toLowerCase() !== 'home')

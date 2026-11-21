@@ -25,12 +25,12 @@ export default function PressureConverter() {
   const results = valid ? pressureInAllUnits(parsed, unit) : null
 
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-6">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-6">
       <div className="mb-5 flex flex-wrap items-end gap-3">
         <div className="min-w-[160px] flex-1">
           <label
             htmlFor="pressure-value"
-            className="mono mb-1.5 block text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+            className="mono text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase"
           >
             Pressure
           </label>
@@ -42,11 +42,11 @@ export default function PressureConverter() {
             step="any"
             value={raw}
             onChange={(e) => setRaw(e.target.value)}
-            className="h-10 w-full rounded-md border border-ih-border bg-white px-3 font-mono text-[15px] text-ih-ink"
+            className="border-ih-border text-ih-ink h-10 w-full rounded-md border bg-white px-3 font-mono text-[15px]"
           />
         </div>
         <div>
-          <span className="mono mb-1.5 block text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+          <span className="mono text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase">
             Unit
           </span>
           <div className="flex gap-1" role="group" aria-label="Input unit">
@@ -72,24 +72,24 @@ export default function PressureConverter() {
       {results ? (
         <dl className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {UNITS.map((u) => (
-            <div key={u.id} className="rounded-md border border-ih-border bg-ih-surface-2 p-4">
-              <dt className="mono mb-1 text-[10.5px] uppercase tracking-[0.12em] text-ih-muted">
+            <div key={u.id} className="border-ih-border bg-ih-surface-2 rounded-md border p-4">
+              <dt className="mono text-ih-muted mb-1 text-[10.5px] tracking-[0.12em] uppercase">
                 {u.label}
               </dt>
-              <dd className="mono text-[22px] font-medium tabular-nums text-ih-ink">
+              <dd className="mono text-ih-ink text-[22px] font-medium tabular-nums">
                 {formatPressure(results[u.id])}
               </dd>
-              <p className="mt-1 text-[11.5px] leading-[1.4] text-ih-muted-2">{u.hint}</p>
+              <p className="text-ih-muted-2 mt-1 text-[11.5px] leading-[1.4]">{u.hint}</p>
             </div>
           ))}
         </dl>
       ) : (
-        <p className="text-[13.5px] text-ih-muted" role="status">
+        <p className="text-ih-muted text-[13.5px]" role="status">
           Enter a positive number to convert.
         </p>
       )}
 
-      <p className="mt-4 border-t border-ih-border pt-3 text-[12px] leading-[1.5] text-ih-muted">
+      <p className="border-ih-border text-ih-muted mt-4 border-t pt-3 text-[12px] leading-[1.5]">
         Converts working pressure between units. It does <strong>not</strong> tell you whether a
         hose is rated for the result — take the rating for the specific grade and size from its
         datasheet.

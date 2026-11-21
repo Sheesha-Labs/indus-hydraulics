@@ -85,12 +85,7 @@ export function getValidTransitions(from: RfqStatus): RfqStatus[] {
  * `order_created` and `shipped` are no longer terminal because the admin
  * can advance them forward.
  */
-export const TERMINAL_STATES: RfqStatus[] = [
-  'delivered',
-  'declined',
-  'expired',
-  'cancelled',
-]
+export const TERMINAL_STATES: RfqStatus[] = ['delivered', 'declined', 'expired', 'cancelled']
 
 export function isTerminal(status: RfqStatus): boolean {
   return TERMINAL_STATES.includes(status)

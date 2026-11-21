@@ -13,10 +13,7 @@ export type RfqInternalAlertProps = {
   shipToCity?: string | null
   shipToCountry?: string | null
   adminUrl: string
-  branding: Pick<
-    LayoutInput,
-    'legalName' | 'vatTrn' | 'registeredAddressLines'
-  >
+  branding: Pick<LayoutInput, 'legalName' | 'vatTrn' | 'registeredAddressLines'>
 }
 
 const URGENCY_LABEL: Record<RfqInternalAlertProps['urgency'], string> = {
@@ -25,8 +22,12 @@ const URGENCY_LABEL: Record<RfqInternalAlertProps['urgency'], string> = {
   plant_down: '🔴 Plant Down — reply within 30 minutes',
 }
 
-export function renderRfqInternalAlert(props: RfqInternalAlertProps): { subject: string; html: string } {
-  const urgencyPrefix = props.urgency === 'plant_down' ? '🔴 PLANT DOWN — ' : props.urgency === 'priority' ? '🟡 ' : ''
+export function renderRfqInternalAlert(props: RfqInternalAlertProps): {
+  subject: string
+  html: string
+} {
+  const urgencyPrefix =
+    props.urgency === 'plant_down' ? '🔴 PLANT DOWN — ' : props.urgency === 'priority' ? '🟡 ' : ''
   const subjectLine = `${urgencyPrefix}New RFQ ${props.rfqCode} — ${props.accountLegalName}`
 
   const shipTo = [props.shipToCity, props.shipToCountry].filter(Boolean).join(', ')

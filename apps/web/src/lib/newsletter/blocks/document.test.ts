@@ -16,18 +16,34 @@ import {
 
 describe('normaliseDesign', () => {
   it('turns junk into an empty design, never throwing', () => {
-    for (const junk of [null, undefined, 42, 'x', [], { blocks: 'no' }, { blocks: [null, 1, 'a', { type: 3 }] }]) {
+    for (const junk of [
+      null,
+      undefined,
+      42,
+      'x',
+      [],
+      { blocks: 'no' },
+      { blocks: [null, 1, 'a', { type: 3 }] },
+    ]) {
       expect(normaliseDesign(junk)).toEqual(emptyDesign())
     }
   })
 
   it('drops unknown block types and keeps the rest in order', () => {
-    const d = normaliseDesign({ blocks: [{ type: 'nope', props: {} }, { type: 'text', props: {} }, { type: 'spacer', props: {} }] })
+    const d = normaliseDesign({
+      blocks: [
+        { type: 'nope', props: {} },
+        { type: 'text', props: {} },
+        { type: 'spacer', props: {} },
+      ],
+    })
     expect(d.blocks.map((b) => b.type)).toEqual(['text', 'spacer'])
   })
 
   it('caps the block count', () => {
-    const d = normaliseDesign({ blocks: Array.from({ length: MAX_BLOCKS + 15 }, () => ({ type: 'spacer', props: {} })) })
+    const d = normaliseDesign({
+      blocks: Array.from({ length: MAX_BLOCKS + 15 }, () => ({ type: 'spacer', props: {} })),
+    })
     expect(d.blocks).toHaveLength(MAX_BLOCKS)
   })
 
@@ -35,8 +51,16 @@ describe('normaliseDesign', () => {
     const d = normaliseDesign({
       settings: { headingColor: 'red', buttonColor: '#123ABC', headingFont: 'comic' },
       blocks: [
-        { type: 'heading', id: 'a', props: { heading: 'x'.repeat(1000), textColor: 'javascript:alert(1)', size: 'huge' } },
-        { type: 'hero', id: 'b', props: { overlayColor: 'navy', overlayOpacity: 500, logoWidth: '-4' } },
+        {
+          type: 'heading',
+          id: 'a',
+          props: { heading: 'x'.repeat(1000), textColor: 'javascript:alert(1)', size: 'huge' },
+        },
+        {
+          type: 'hero',
+          id: 'b',
+          props: { overlayColor: 'navy', overlayOpacity: 500, logoWidth: '-4' },
+        },
         { type: 'spacer', id: 'c', props: { height: 'tall', background: '#fff' } },
       ],
     })
@@ -56,7 +80,12 @@ describe('normaliseDesign', () => {
 
   it('drops prop keys the block does not define, at the top and inside items', () => {
     const d = normaliseDesign({
-      blocks: [{ type: 'list', props: { heading: 'H', onclick: 'x', text_ar: 'ع', items: [{ text: 'a', evil: '<b>' }] } }],
+      blocks: [
+        {
+          type: 'list',
+          props: { heading: 'H', onclick: 'x', text_ar: 'ع', items: [{ text: 'a', evil: '<b>' }] },
+        },
+      ],
     })
     const props = d.blocks[0]?.props ?? {}
     expect(props).not.toHaveProperty('onclick')
@@ -70,7 +99,12 @@ describe('normaliseDesign', () => {
         { type: 'image', props: { image: { url: 'http://insecure/x.png' } } },
         { type: 'image', props: { image: { url: 'javascript:alert(1)' } } },
         { type: 'image', props: { image: { url: '//evil.com/x.png' } } },
-        { type: 'image', props: { image: { url: 'https://cdn.example.com/a.jpg', alt: 'A', mediaId: 'm_1', extra: 1 } } },
+        {
+          type: 'image',
+          props: {
+            image: { url: 'https://cdn.example.com/a.jpg', alt: 'A', mediaId: 'm_1', extra: 1 },
+          },
+        },
         { type: 'image', props: { image: { url: '/media/a.jpg' } } },
       ],
     })
@@ -101,17 +135,36 @@ describe('normaliseDesign', () => {
   it('cleans records: known kind, safe unique ids, labels paired, layout defaulted', () => {
     const d = normaliseDesign({
       blocks: [
-        { type: 'records', props: { records: { kind: 'product', ids: ['a', 'a', 'b c', 7, 'b'], labels: ['A', 'A2', 'bad', 'n', 'B'], layout: 'carousel' } } },
+        {
+          type: 'records',
+          props: {
+            records: {
+              kind: 'product',
+              ids: ['a', 'a', 'b c', 7, 'b'],
+              labels: ['A', 'A2', 'bad', 'n', 'B'],
+              layout: 'carousel',
+            },
+          },
+        },
         { type: 'records', props: { records: { kind: 'property', ids: ['x'] } } },
       ],
     })
-    expect(d.blocks[0]?.props.records).toEqual({ kind: 'product', ids: ['a', 'b'], labels: ['A', 'B'], layout: 'grid' })
+    expect(d.blocks[0]?.props.records).toEqual({
+      kind: 'product',
+      ids: ['a', 'b'],
+      labels: ['A', 'B'],
+      layout: 'grid',
+    })
     expect(d.blocks[1]?.props.records).toBeNull()
   })
 
   it('normalises settings on their own, tolerating junk', () => {
     expect(normaliseSettings('x')).toEqual(DEFAULT_SETTINGS)
-    expect(normaliseSettings({ bodyFont: 'serif', textColor: ' #ABCDEF ' })).toEqual({ ...DEFAULT_SETTINGS, bodyFont: 'serif', textColor: '#abcdef' })
+    expect(normaliseSettings({ bodyFont: 'serif', textColor: ' #ABCDEF ' })).toEqual({
+      ...DEFAULT_SETTINGS,
+      bodyFont: 'serif',
+      textColor: '#abcdef',
+    })
     expect(SETTINGS_FIELDS.map((f) => f.key).sort()).toEqual(Object.keys(DEFAULT_SETTINGS).sort())
   })
 })
@@ -134,9 +187,13 @@ describe('recordRefs and linkSlots', () => {
     const design = {
       ...emptyDesign(),
       blocks: [
-        newBlock('records', { records: { kind: 'product', ids: ['p1', 'p2'], labels: [], layout: 'grid' } }),
+        newBlock('records', {
+          records: { kind: 'product', ids: ['p1', 'p2'], labels: [], layout: 'grid' },
+        }),
         newBlock('text'),
-        newBlock('records', { records: { kind: 'article', ids: ['a1'], labels: ['A'], layout: 'list' } }),
+        newBlock('records', {
+          records: { kind: 'article', ids: ['a1'], labels: ['A'], layout: 'list' },
+        }),
         newBlock('records', { records: { kind: 'category', ids: [], labels: [], layout: 'list' } }),
         newBlock('records'),
       ],
@@ -148,7 +205,13 @@ describe('recordRefs and linkSlots', () => {
   })
 
   it('lists every filled link field with where it is', () => {
-    const design = { ...emptyDesign(), blocks: [newBlock('button', { url: '/contact' }), newBlock('contact', { links: [{ label: 'A', url: 'javascript:x' }] })] }
+    const design = {
+      ...emptyDesign(),
+      blocks: [
+        newBlock('button', { url: '/contact' }),
+        newBlock('contact', { links: [{ label: 'A', url: 'javascript:x' }] }),
+      ],
+    }
     expect(linkSlots(design)).toEqual([
       { blockLabel: '1. Button', label: 'Link', value: '/contact' },
       { blockLabel: '2. Contact details', label: 'Link 1 › Link', value: 'javascript:x' },

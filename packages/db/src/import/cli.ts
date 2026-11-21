@@ -58,7 +58,7 @@ function parseArgs(argv: string[]): CliArgs {
       const v = arg.slice('--mode='.length)
       if (v !== 'add-only' && v !== 'overwrite-edits' && v !== 'update-only') {
         throw new Error(
-          `--mode must be one of: add-only, overwrite-edits, update-only (got "${v}")`,
+          `--mode must be one of: add-only, overwrite-edits, update-only (got "${v}")`
         )
       }
       mode = v
@@ -73,7 +73,7 @@ function parseArgs(argv: string[]): CliArgs {
 
   if (!dataFilePath) {
     throw new Error(
-      'Usage: db:import <data-file> [--dry-run] [--mode=add-only|overwrite-edits|update-only]',
+      'Usage: db:import <data-file> [--dry-run] [--mode=add-only|overwrite-edits|update-only]'
     )
   }
 
@@ -95,7 +95,7 @@ async function loadDataFile(path: string): Promise<unknown> {
 async function runImport(
   batch: ImportBatch,
   mode: ImportMode,
-  dryRun: boolean,
+  dryRun: boolean
 ): Promise<ImportSummary> {
   const summary: ImportSummary = {
     brands: { created: 0, updated: 0 },
@@ -167,9 +167,7 @@ async function runImport(
 
         // 7. Navigation linking — single config or array of configs
         if (batch.navigation) {
-          const navConfigs = Array.isArray(batch.navigation)
-            ? batch.navigation
-            : [batch.navigation]
+          const navConfigs = Array.isArray(batch.navigation) ? batch.navigation : [batch.navigation]
           for (const navConfig of navConfigs) {
             const nav = await replacePlaceholderLeaves(navConfig, tx)
             summary.navigation.leavesDeleted += nav.leavesDeleted
@@ -190,7 +188,7 @@ async function runImport(
         // even larger batches.
         maxWait: 60_000,
         timeout: Number(process.env.INDUS_IMPORT_TIMEOUT_MS ?? 900_000),
-      },
+      }
     )
   } catch (err) {
     if (err instanceof DryRunRollback) {
@@ -219,26 +217,26 @@ function printSummary(args: CliArgs, batch: ImportBatch, summary: ImportSummary)
   console.log(`Mode: ${args.mode}`)
   console.log('')
   console.log(
-    `  Brands             — created ${summary.brands.created}, updated ${summary.brands.updated}`,
+    `  Brands             — created ${summary.brands.created}, updated ${summary.brands.updated}`
   )
   console.log(
-    `  Categories         — created ${summary.categories.created}, updated ${summary.categories.updated}`,
+    `  Categories         — created ${summary.categories.created}, updated ${summary.categories.updated}`
   )
   console.log(
     `  Spec templates     — created ${summary.specTemplates.created}, updated ${summary.specTemplates.updated} ` +
-      `(${summary.specTemplateFields.created} fields created, ${summary.specTemplateFields.updated} updated)`,
+      `(${summary.specTemplateFields.created} fields created, ${summary.specTemplateFields.updated} updated)`
   )
   console.log(
-    `  Products           — created ${summary.products.created}, updated ${summary.products.updated}`,
+    `  Products           — created ${summary.products.created}, updated ${summary.products.updated}`
   )
   console.log(
-    `  Product specs      — created ${summary.productSpecs.created}, updated ${summary.productSpecs.updated}, skipped ${summary.productSpecs.skipped}`,
+    `  Product specs      — created ${summary.productSpecs.created}, updated ${summary.productSpecs.updated}, skipped ${summary.productSpecs.skipped}`
   )
   console.log(
-    `  Product FAQs       — created ${summary.productFaqs.created}, skipped ${summary.productFaqs.skipped}`,
+    `  Product FAQs       — created ${summary.productFaqs.created}, skipped ${summary.productFaqs.skipped}`
   )
   console.log(
-    `  Megamenu nav links — deleted ${summary.navigation.leavesDeleted}, inserted ${summary.navigation.leavesInserted}`,
+    `  Megamenu nav links — deleted ${summary.navigation.leavesDeleted}, inserted ${summary.navigation.leavesInserted}`
   )
 
   if (summary.warnings.length > 0) {
@@ -286,7 +284,7 @@ async function main() {
   } catch (err) {
     console.error('')
     console.error('Import failed (transaction rolled back):')
-    console.error(err instanceof Error ? err.stack ?? err.message : String(err))
+    console.error(err instanceof Error ? (err.stack ?? err.message) : String(err))
     await db.$disconnect()
     process.exit(2)
   }

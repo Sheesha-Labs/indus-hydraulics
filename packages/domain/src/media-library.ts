@@ -238,7 +238,9 @@ export function formatBytesOrUnknown(bytes: number): string {
  * (`mediaUrl()` short-circuits on `startsWith('http')` while being named for
  * R2, which nothing uses any more).
  */
-export function mediaThumbnailSrc(item: Pick<MediaListItem, 'kind' | 'storagePath'>): string | null {
+export function mediaThumbnailSrc(
+  item: Pick<MediaListItem, 'kind' | 'storagePath'>
+): string | null {
   if (item.kind !== 'image') return null
   const path = item.storagePath.trim()
   return /^https?:\/\//.test(path) ? path : null

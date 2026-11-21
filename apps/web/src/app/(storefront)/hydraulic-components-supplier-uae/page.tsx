@@ -71,8 +71,8 @@ export default async function AboutPage({ params }: Props) {
 
   if (page) {
     return (
-      <div className="max-w-[860px] mx-auto px-8 py-10 pb-20">
-        <h1 className="text-[32px] font-semibold tracking-tight mb-8">{page.title}</h1>
+      <div className="mx-auto max-w-[860px] px-8 py-10 pb-20">
+        <h1 className="mb-8 text-[32px] font-semibold tracking-tight">{page.title}</h1>
         <div
           className="ih-rich-text max-w-none leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: page.body }}
@@ -101,7 +101,7 @@ export default async function AboutPage({ params }: Props) {
   const timeline = visibleList<{ tag?: string; name?: string; desc?: string }>(story, 'items')
   const people = visibleList<{ tag?: string; name?: string; desc?: string; image?: ImageValue }>(
     team,
-    'items',
+    'items'
   )
   const principles = visibleList<{ tag?: string; name?: string; desc?: string }>(values, 'items')
 
@@ -112,43 +112,55 @@ export default async function AboutPage({ params }: Props) {
   const sections: Record<string, ReactNode> = {
     hero: (
       /* ── Hero ──────────────────────────────────────────────── */
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-16 pb-8 grid grid-cols-1 gap-14 items-end lg:grid-cols-[1.2fr_1fr]">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-14 px-5 pt-16 pb-8 sm:px-8 lg:grid-cols-[1.2fr_1fr] xl:px-12">
         <div>
-          <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-3">{t(str(hero, 'eyebrow'))}</div>
-          <h1 className="text-[clamp(44px,5.5vw,72px)] tracking-[-0.035em] leading-[1.02] font-semibold">
+          <div className="text-ih-muted mb-3 font-mono text-[11px] tracking-[0.16em] uppercase">
+            {t(str(hero, 'eyebrow'))}
+          </div>
+          <h1 className="text-[clamp(44px,5.5vw,72px)] leading-[1.02] font-semibold tracking-[-0.035em]">
             {t(str(hero, 'heading'))}
           </h1>
         </div>
-        <p className="text-[17px] text-ih-muted leading-[1.55] max-w-[520px]">
+        <p className="text-ih-muted max-w-[520px] text-[17px] leading-[1.55]">
           {t(str(hero, 'body'))}
         </p>
       </div>
     ),
 
-    stats: statRows.length > 0 ? (
-      /* ── Stats strip ───────────────────────────────────────── */
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-        <div className="grid grid-cols-2 border-t border-b border-ih-border sm:grid-cols-4">
-          {statRows.map((stat, i) => (
-            <div key={`${stat.label ?? ''}-${i}`} className={`px-6 py-6 ${i < statRows.length - 1 ? 'border-r border-ih-border' : ''}`}>
-              <div className="font-mono text-[40px] tracking-[-0.03em] font-medium">{t(stat.value ?? '')}</div>
-              <div className="font-mono text-[11px] text-ih-muted tracking-[0.08em] uppercase mt-1">{stat.label}</div>
-            </div>
-          ))}
+    stats:
+      statRows.length > 0 ? (
+        /* ── Stats strip ───────────────────────────────────────── */
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <div className="border-ih-border grid grid-cols-2 border-t border-b sm:grid-cols-4">
+            {statRows.map((stat, i) => (
+              <div
+                key={`${stat.label ?? ''}-${i}`}
+                className={`px-6 py-6 ${i < statRows.length - 1 ? 'border-ih-border border-r' : ''}`}
+              >
+                <div className="font-mono text-[40px] font-medium tracking-[-0.03em]">
+                  {t(stat.value ?? '')}
+                </div>
+                <div className="text-ih-muted mt-1 font-mono text-[11px] tracking-[0.08em] uppercase">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    ) : null,
+      ) : null,
 
     story: (
       /* ── Timeline ──────────────────────────────────────────── */
-      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 xl:px-12">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_2fr]">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-2">{t(str(story, 'eyebrow'))}</div>
-            <h2 className="text-[36px] font-semibold tracking-[-0.02em] leading-[1.1] mb-4">{t(str(story, 'heading'))}</h2>
-            <p className="text-ih-muted leading-[1.6] text-[14px]">
-              {t(str(story, 'body'))}
-            </p>
+            <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.16em] uppercase">
+              {t(str(story, 'eyebrow'))}
+            </div>
+            <h2 className="mb-4 text-[36px] leading-[1.1] font-semibold tracking-[-0.02em]">
+              {t(str(story, 'heading'))}
+            </h2>
+            <p className="text-ih-muted text-[14px] leading-[1.6]">{t(str(story, 'body'))}</p>
           </div>
           <div>
             {timeline.map((item, i) => (
@@ -157,12 +169,12 @@ export default async function AboutPage({ params }: Props) {
                 /* Class, not inline: an inline gridTemplateColumns beats the
                    responsive utilities, so the 80px year column plus body
                    text ran past a 390px viewport. */
-                className={`grid grid-cols-[64px_1fr] gap-4 py-5 sm:grid-cols-[80px_1fr] sm:gap-6 ${i < timeline.length - 1 ? 'border-b border-ih-border' : ''}`}
+                className={`grid grid-cols-[64px_1fr] gap-4 py-5 sm:grid-cols-[80px_1fr] sm:gap-6 ${i < timeline.length - 1 ? 'border-ih-border border-b' : ''}`}
               >
-                <span className="font-mono text-[16px] text-ih-accent">{item.tag}</span>
+                <span className="text-ih-accent font-mono text-[16px]">{item.tag}</span>
                 <div className="min-w-0">
-                  <h4 className="text-[17px] font-semibold mb-1.5">{item.name}</h4>
-                  <p className="text-[14px] text-ih-muted leading-[1.55]">{item.desc}</p>
+                  <h4 className="mb-1.5 text-[17px] font-semibold">{item.name}</h4>
+                  <p className="text-ih-muted text-[14px] leading-[1.55]">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -171,82 +183,107 @@ export default async function AboutPage({ params }: Props) {
       </section>
     ),
 
-    team: people.length > 0 ? (
-      /* ── Team ──────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-16">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="flex justify-between items-end mb-8">
-            <div>
-              <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-2">{t(str(team, 'eyebrow'))}</div>
-              <h2 className="text-[32px] font-semibold tracking-[-0.02em]">{t(str(team, 'heading'))}</h2>
+    team:
+      people.length > 0 ? (
+        /* ── Team ──────────────────────────────────────────────── */
+        <section className="border-ih-border border-t py-16">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+            <div className="mb-8 flex items-end justify-between">
+              <div>
+                <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.16em] uppercase">
+                  {t(str(team, 'eyebrow'))}
+                </div>
+                <h2 className="text-[32px] font-semibold tracking-[-0.02em]">
+                  {t(str(team, 'heading'))}
+                </h2>
+              </div>
             </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {people.map((person, i) => (
-              <div key={`${person.name ?? ''}-${i}`} className="border border-ih-border bg-ih-surface overflow-hidden">
-                <div className="relative aspect-[4/5] bg-ih-surface-2 border-b border-ih-border grid place-items-center">
-                  {/* A photograph replaces the initials disc. Until one is
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {people.map((person, i) => (
+                <div
+                  key={`${person.name ?? ''}-${i}`}
+                  className="border-ih-border bg-ih-surface overflow-hidden border"
+                >
+                  <div className="bg-ih-surface-2 border-ih-border relative grid aspect-[4/5] place-items-center border-b">
+                    {/* A photograph replaces the initials disc. Until one is
                       picked the disc IS the portrait — it is not a loading
                       state, so it never renders alongside the image. */}
-                  {person.image?.url ? (
-                    <Image
-                      src={person.image.url}
-                      alt={person.image.alt ?? person.name ?? ''}
-                      fill
-                      sizes="(max-width: 1024px) 50vw, 25vw"
-                      className="object-cover"
-                    />
-                  ) : (
-                    <div className="w-20 h-20 rounded-full bg-ih-navy text-white grid place-items-center text-[28px] font-semibold">
-                      {person.tag}
-                    </div>
-                  )}
+                    {person.image?.url ? (
+                      <Image
+                        src={person.image.url}
+                        alt={person.image.alt ?? person.name ?? ''}
+                        fill
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="bg-ih-navy grid h-20 w-20 place-items-center rounded-full text-[28px] font-semibold text-white">
+                        {person.tag}
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-4 pb-5">
+                    <h4 className="text-[15px] font-semibold">{person.name}</h4>
+                    <p className="text-ih-muted mt-1 font-mono text-[11px] tracking-[0.04em]">
+                      {person.desc}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4 pb-5">
-                  <h4 className="text-[15px] font-semibold">{person.name}</h4>
-                  <p className="font-mono text-[11px] text-ih-muted tracking-[0.04em] mt-1">{person.desc}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    ) : null,
+        </section>
+      ) : null,
 
-    values: principles.length > 0 ? (
-      /* ── Values ────────────────────────────────────────────── */
-      <section className="border-t border-ih-border bg-ih-surface py-16">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-2">{t(str(values, 'eyebrow'))}</div>
-          <h2 className="text-[32px] font-semibold tracking-[-0.02em] mb-10">{t(str(values, 'heading'))}</h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {principles.map((item, i) => (
-              <div key={`${item.name ?? ''}-${i}`}>
-                <div className="font-mono text-[32px] font-semibold text-ih-muted opacity-30 mb-4">{item.tag}</div>
-                <h3 className="text-[20px] font-semibold tracking-[-0.01em] mb-3">{item.name}</h3>
-                <p className="text-[14px] text-ih-muted leading-[1.6]">{item.desc}</p>
-              </div>
-            ))}
+    values:
+      principles.length > 0 ? (
+        /* ── Values ────────────────────────────────────────────── */
+        <section className="border-ih-border bg-ih-surface border-t py-16">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+            <div className="text-ih-muted mb-2 font-mono text-[11px] tracking-[0.16em] uppercase">
+              {t(str(values, 'eyebrow'))}
+            </div>
+            <h2 className="mb-10 text-[32px] font-semibold tracking-[-0.02em]">
+              {t(str(values, 'heading'))}
+            </h2>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              {principles.map((item, i) => (
+                <div key={`${item.name ?? ''}-${i}`}>
+                  <div className="text-ih-muted mb-4 font-mono text-[32px] font-semibold opacity-30">
+                    {item.tag}
+                  </div>
+                  <h3 className="mb-3 text-[20px] font-semibold tracking-[-0.01em]">{item.name}</h3>
+                  <p className="text-ih-muted text-[14px] leading-[1.6]">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    ) : null,
+        </section>
+      ) : null,
 
     cta: (
       /* ── CTA ───────────────────────────────────────────────── */
-      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16 grid grid-cols-1 gap-8 items-center md:grid-cols-[1fr_auto]">
+      <section className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-8 px-5 py-16 sm:px-8 md:grid-cols-[1fr_auto] xl:px-12">
         <div>
-          <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-2">{t(str(cta, 'heading'))}</h2>
-          <p className="text-[14px] text-ih-muted">{t(str(cta, 'body'))}</p>
+          <h2 className="mb-2 text-[28px] font-semibold tracking-[-0.02em]">
+            {t(str(cta, 'heading'))}
+          </h2>
+          <p className="text-ih-muted text-[14px]">{t(str(cta, 'body'))}</p>
         </div>
         <div className="flex flex-wrap gap-3 sm:shrink-0">
           {str(cta, 'primary_cta_label') && str(cta, 'primary_cta_href') ? (
-            <Link href={str(cta, 'primary_cta_href') ?? '/contact'} className="h-11 px-6 flex items-center bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
+            <Link
+              href={str(cta, 'primary_cta_href') ?? '/contact'}
+              className="bg-ih-accent flex h-11 items-center px-6 text-[14px] font-medium whitespace-nowrap text-white transition-opacity hover:opacity-90"
+            >
               {str(cta, 'primary_cta_label')}
             </Link>
           ) : null}
           {str(cta, 'secondary_cta_label') && str(cta, 'secondary_cta_href') ? (
-            <Link href={str(cta, 'secondary_cta_href') ?? '/contact'} className="h-11 px-5 flex items-center border border-ih-border text-[14px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors whitespace-nowrap">
+            <Link
+              href={str(cta, 'secondary_cta_href') ?? '/contact'}
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-11 items-center border px-5 text-[14px] whitespace-nowrap transition-colors"
+            >
               {str(cta, 'secondary_cta_label')}
             </Link>
           ) : null}
@@ -258,7 +295,7 @@ export default async function AboutPage({ params }: Props) {
   return (
     <div>
       {content.order.map((key) =>
-        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null
       )}
     </div>
   )

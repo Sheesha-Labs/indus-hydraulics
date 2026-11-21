@@ -98,22 +98,25 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
       window.scrollTo({ top: target, behavior: reduce ? 'auto' : 'smooth' })
     },
-    [pinned, steps.length],
+    [pinned, steps.length]
   )
 
   const active = steps[activeIdx] ?? steps[0]
   if (!active) return null
 
   return (
-    <section className="-mx-[var(--spacing-page-gutter)] border-y border-ih-border bg-ih-surface px-[var(--spacing-page-gutter)]">
-      <div ref={trackRef} className={`relative ${pinned ? (TRACK_HEIGHT[steps.length] ?? TRACK_HEIGHT[6]) : ''}`}>
+    <section className="border-ih-border bg-ih-surface -mx-[var(--spacing-page-gutter)] border-y px-[var(--spacing-page-gutter)]">
+      <div
+        ref={trackRef}
+        className={`relative ${pinned ? (TRACK_HEIGHT[steps.length] ?? TRACK_HEIGHT[6]) : ''}`}
+      >
         <div
           className={`mx-auto flex max-w-[var(--spacing-max-w)] flex-col justify-center py-14 lg:py-8 lg:[@media(max-height:820px)]:py-5 ${
             pinned ? 'lg:sticky lg:top-[107px] lg:h-[calc(100svh-107px)]' : ''
           }`}
         >
           <span className="eyebrow">{eyebrow ?? 'HOW WE WORK · A LOOK INSIDE'}</span>
-          <h2 className="mb-6 mt-2.5 max-w-[920px] text-2xl font-semibold leading-[1.1] tracking-[-0.02em] sm:text-[30px]">
+          <h2 className="mt-2.5 mb-6 max-w-[920px] text-2xl leading-[1.1] font-semibold tracking-[-0.02em] sm:text-[30px]">
             {heading ??
               'The same four steps run every service, every time — from a piston seal to a BOP recert.'}
           </h2>
@@ -131,12 +134,10 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
                       aria-pressed={isActive}
                       aria-controls={isActive ? panelId : undefined}
                       className={`grid w-full grid-cols-[32px_1fr] items-baseline gap-3 rounded-[var(--radius-md)] border px-4 py-3 text-left transition-colors ${
-                        isActive
-                          ? 'border-ih-border bg-ih-bg'
-                          : 'border-transparent hover:bg-ih-bg'
+                        isActive ? 'border-ih-border bg-ih-bg' : 'hover:bg-ih-bg border-transparent'
                       }`}
                     >
-                      <span className="mono pt-0.5 text-xs text-ih-muted-2">{step.number}</span>
+                      <span className="mono text-ih-muted-2 pt-0.5 text-xs">{step.number}</span>
                       <span>
                         <span
                           className={`block text-[15px] font-medium ${isActive ? 'text-ih-accent' : ''}`}
@@ -144,7 +145,7 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
                           {step.title}
                         </span>
                         {isActive ? null : (
-                          <span className="mt-0.5 block text-[13px] leading-[1.45] text-ih-muted">
+                          <span className="text-ih-muted mt-0.5 block text-[13px] leading-[1.45]">
                             {step.body}
                           </span>
                         )}
@@ -152,9 +153,9 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
                     </button>
 
                     {isActive ? (
-                      <div id={panelId} className="px-4 pb-2 pl-[60px] pt-2">
+                      <div id={panelId} className="px-4 pt-2 pb-2 pl-[60px]">
                         {active.preview.title ? (
-                          <p className="m-0 text-[15px] font-semibold leading-snug tracking-[-0.01em] text-ih-ink">
+                          <p className="text-ih-ink m-0 text-[15px] leading-snug font-semibold tracking-[-0.01em]">
                             {active.preview.title}
                           </p>
                         ) : null}
@@ -162,7 +163,7 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
                             tall) so the pinned frame still fits; the lead line
                             and deliverables carry the step there. */}
                         {active.preview.body ? (
-                          <p className="mb-0 mt-2 text-[13.5px] leading-[1.55] text-ih-ink-2 lg:[@media(max-height:820px)]:hidden">
+                          <p className="text-ih-ink-2 mt-2 mb-0 text-[13.5px] leading-[1.55] lg:[@media(max-height:820px)]:hidden">
                             {active.preview.body}
                           </p>
                         ) : null}
@@ -171,7 +172,7 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
                             {active.preview.deliverables.map((d) => (
                               <span
                                 key={d}
-                                className="mono rounded-[var(--radius-sm)] border border-ih-border px-2 py-0.5 text-[10.5px] tracking-[0.04em] text-ih-ink-2"
+                                className="mono border-ih-border text-ih-ink-2 rounded-[var(--radius-sm)] border px-2 py-0.5 text-[10.5px] tracking-[0.04em]"
                               >
                                 {d}
                               </span>
@@ -188,10 +189,10 @@ export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
             {/* Right: the active step's board, capped by the viewport height so
                 the band fits one screen — width follows from 16:9. */}
             <div className="order-first w-full lg:order-none lg:max-w-[calc((100svh-107px-230px)*16/9)] lg:justify-self-end">
-              <span className="mono mb-2 block text-[11px] uppercase tracking-[0.12em] text-ih-accent">
+              <span className="mono text-ih-accent mb-2 block text-[11px] tracking-[0.12em] uppercase">
                 {active.preview.tagLabel}
               </span>
-              <div className="overflow-hidden rounded-[var(--radius-lg)] border border-ih-border bg-ih-bg">
+              <div className="border-ih-border bg-ih-bg overflow-hidden rounded-[var(--radius-lg)] border">
                 <PlaceholderImage
                   storagePath={active.preview.image?.url ?? null}
                   alt={active.preview.image?.alt ?? active.preview.title}

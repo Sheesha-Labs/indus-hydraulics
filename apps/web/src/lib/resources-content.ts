@@ -1,5 +1,13 @@
 import { db } from '@indus/db'
-import { interpolate, list, resourceTotals, RESOURCES_LAST_CHECKED, str, type CopyTokens, enquiryMailto } from '@indus/domain'
+import {
+  interpolate,
+  list,
+  resourceTotals,
+  RESOURCES_LAST_CHECKED,
+  str,
+  type CopyTokens,
+  enquiryMailto,
+} from '@indus/domain'
 import { buildWhatsappHref } from '@indus/ui'
 import { getMasterPageContent, type PageContent } from './page-content'
 import { getStoreSettings } from './store-settings'
@@ -39,7 +47,10 @@ export type ResourcesShared = {
 }
 
 export async function getResourcesShared(enquirySubject: string): Promise<ResourcesShared> {
-  const [content, settings] = await Promise.all([getMasterPageContent('resources'), getStoreSettings()])
+  const [content, settings] = await Promise.all([
+    getMasterPageContent('resources'),
+    getStoreSettings(),
+  ])
   const totals = resourceTotals()
   const tokens: CopyTokens = {
     connectionTypes: totals.connectionTypes,
@@ -94,13 +105,25 @@ export async function getResourceGuides(slugs: readonly string[]): Promise<Resou
   try {
     const rows = await db.blogPost.findMany({
       where: { slug: { in: [...slugs] }, status: 'published', deletedAt: null },
-      select: { slug: true, title: true, readingMinutes: true, category: { select: { name: true } } },
+      select: {
+        slug: true,
+        title: true,
+        readingMinutes: true,
+        category: { select: { name: true } },
+      },
     })
     const bySlug = new Map(rows.map((row) => [row.slug, row]))
     return slugs.flatMap((slug) => {
       const row = bySlug.get(slug)
       return row
-        ? [{ slug: row.slug, title: row.title, category: row.category?.name ?? null, readingMinutes: row.readingMinutes }]
+        ? [
+            {
+              slug: row.slug,
+              title: row.title,
+              category: row.category?.name ?? null,
+              readingMinutes: row.readingMinutes,
+            },
+          ]
         : []
     })
   } catch (error) {

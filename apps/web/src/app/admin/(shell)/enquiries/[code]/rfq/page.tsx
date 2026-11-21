@@ -37,7 +37,10 @@ export default async function EnquiryRfqPage({ params }: Props) {
   ])
 
   // Collect every supplier that appeared in the ranked results, best score first.
-  const bySupplier = new Map<string, { name: string; country: string | null; score: number; supplierId: string | null }>()
+  const bySupplier = new Map<
+    string,
+    { name: string; country: string | null; score: number; supplierId: string | null }
+  >()
   for (const result of latestRun?.results ?? []) {
     for (const entry of (result.candidates as unknown as RankedCandidate[]) ?? []) {
       const key = entry.candidate.supplierId ?? entry.candidate.name.toLowerCase()
@@ -84,7 +87,7 @@ export default async function EnquiryRfqPage({ params }: Props) {
     <AdminPageShell
       title="Supplier RFQs"
       breadcrumbs={
-        <span className="tabular-nums text-[12px] text-ih-muted">
+        <span className="text-ih-muted text-[12px] tabular-nums">
           {enquiry.code} · {ranked.length} suppliers · {reachable} reachable
         </span>
       }
@@ -140,7 +143,7 @@ export default async function EnquiryRfqPage({ params }: Props) {
         )}
 
         {ranked.length > 0 && reachable < ranked.length ? (
-          <p className="text-[13px] text-ih-muted">
+          <p className="text-ih-muted text-[13px]">
             {ranked.length - reachable} of these have no contact address we could verify. Nothing
             was guessed — add an address by hand if you have one.
           </p>

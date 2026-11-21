@@ -18,8 +18,5 @@ export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 
 export function GET() {
-  return NextResponse.json(
-    { status: 'ok' },
-    { headers: { 'cache-control': 'no-store' } },
-  )
+  return NextResponse.json({ status: 'ok' }, { headers: { 'cache-control': 'no-store' } })
 }

@@ -649,12 +649,8 @@
     "jsx_a11y/alt-text": [
       "warn",
       {
-        "elements": [
-          "img"
-        ],
-        "img": [
-          "Image"
-        ]
+        "elements": ["img"],
+        "img": ["Image"]
       }
     ],
     "nextjs/no-html-link-for-pages": "error",
@@ -664,12 +660,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.mts",
-        "**/*.cts"
-      ],
+      "files": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
       "rules": {
         "eslint/no-var": "error",
         "eslint/prefer-const": "error",
@@ -678,9 +669,7 @@
       }
     },
     {
-      "files": [
-        "apps/web/**"
-      ],
+      "files": ["apps/web/**"],
       "rules": {
         "eslint/no-restricted-imports": [
           "error",
@@ -707,11 +696,7 @@
           {
             "patterns": [
               {
-                "group": [
-                  "**/lib/admin-auth",
-                  "**/lib/staff-session",
-                  "**/lib/rbac"
-                ],
+                "group": ["**/lib/admin-auth", "**/lib/staff-session", "**/lib/rbac"],
                 "message": "Storefront code has no session \u2014 lib/admin-auth, lib/staff-session and lib/rbac belong to the STAFF Auth.js instance."
               }
             ],
@@ -726,36 +711,26 @@
       }
     },
     {
-      "files": [
-        "apps/web/cache/**/*.js"
-      ],
+      "files": ["apps/web/cache/**/*.js"],
       "rules": {
         "typescript/no-require-imports": "off"
       }
     },
     {
-      "files": [
-        "**/*.cjs"
-      ],
+      "files": ["**/*.cjs"],
       "rules": {
         "typescript/no-require-imports": "off"
       }
     },
     {
-      "files": [
-        "packages/db/src/imports/**",
-        "packages/db/data/**"
-      ],
+      "files": ["packages/db/src/imports/**", "packages/db/data/**"],
       "rules": {
         "typescript/no-explicit-any": "warn",
         "eslint/prefer-const": "warn"
       }
     },
     {
-      "files": [
-        "apps/**",
-        "packages/**"
-      ],
+      "files": ["apps/**", "packages/**"],
       "rules": {
         "eslint/no-restricted-globals": [
           "error",

@@ -55,7 +55,9 @@ test.describe('storefront smoke', () => {
     expect(response?.status()).toBe(200)
     // Loose product-detail signal — title text varies by seed but a brand
     // name or pump-related word should always be present.
-    await expect(page.locator('h1').first()).toContainText(/Parker|Bosch|Rexroth|Pump|Hose|Vane|Piston/i)
+    await expect(page.locator('h1').first()).toContainText(
+      /Parker|Bosch|Rexroth|Pump|Hose|Vane|Piston/i
+    )
   })
 
   test('/brands page loads', async ({ page }) => {

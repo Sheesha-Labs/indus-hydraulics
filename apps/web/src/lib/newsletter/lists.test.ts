@@ -72,14 +72,19 @@ describe('detectColumns', () => {
   })
 
   it('falls back to the first column when nothing looks like an address', () => {
-    expect(detectColumns([['Company', 'Contact'], ['Acme', 'Jane']]).email).toBe(0)
+    expect(
+      detectColumns([
+        ['Company', 'Contact'],
+        ['Acme', 'Jane'],
+      ]).email
+    ).toBe(0)
   })
 })
 
 describe('contactsFromRows', () => {
   it('lower-cases, dedupes, and reports the unusable lines by file line number', () => {
     const rows = parseCsv(
-      'Full Name,E-mail Address\nJane Doe, JANE@Example.com \nNo Address,\nBad,not-an-email\nJane again,jane@example.com\n',
+      'Full Name,E-mail Address\nJane Doe, JANE@Example.com \nNo Address,\nBad,not-an-email\nJane again,jane@example.com\n'
     )
     const r = contactsFromRows(rows, detectColumns(rows))
     expect(r.contacts).toEqual([{ email: 'jane@example.com', name: 'Jane Doe' }])
@@ -105,12 +110,21 @@ describe('contactsFromRows', () => {
 
   it('joins first and last names and collapses whitespace', () => {
     const rows = parseCsv('first name,last name,email\n  Jane ,  Doe ,j@x.com')
-    expect(contactsFromRows(rows, detectColumns(rows)).contacts[0]).toEqual({ email: 'j@x.com', name: 'Jane Doe' })
+    expect(contactsFromRows(rows, detectColumns(rows)).contacts[0]).toEqual({
+      email: 'j@x.com',
+      name: 'Jane Doe',
+    })
   })
 
   it('stops at the cap and counts what it left', () => {
     const rows = Array.from({ length: LIST_IMPORT_MAX + 3 }, (_, i) => [`p${i}@x.com`])
-    const r = contactsFromRows(rows, { email: 0, name: null, first: null, last: null, header: false })
+    const r = contactsFromRows(rows, {
+      email: 0,
+      name: null,
+      first: null,
+      last: null,
+      header: false,
+    })
     expect(r.contacts).toHaveLength(LIST_IMPORT_MAX)
     expect(r.truncated).toBe(3)
   })
@@ -152,6 +166,8 @@ describe('CSV out', () => {
     expect(csvCell('-1')).toBe(`'-1`)
     expect(csvCell('@SUM(A1)')).toBe(`'@SUM(A1)`)
     expect(csvCell('plain')).toBe('plain')
-    expect(toCsv(['email', 'name'], [['a@b.com', 'Doe, Jane']])).toBe('email,name\na@b.com,"Doe, Jane"')
+    expect(toCsv(['email', 'name'], [['a@b.com', 'Doe, Jane']])).toBe(
+      'email,name\na@b.com,"Doe, Jane"'
+    )
   })
 })

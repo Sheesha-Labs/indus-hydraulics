@@ -46,7 +46,7 @@ export function topoSortCategories(items: CategoryPayload[]): CategoryPayload[] 
  */
 export async function upsertCategory(
   payload: CategoryPayload,
-  tx: Tx,
+  tx: Tx
 ): Promise<CategoryUpsertResult> {
   let parentId: string | null = null
   if (payload.parentSlug) {
@@ -56,7 +56,7 @@ export async function upsertCategory(
     })
     if (!parent) {
       throw new Error(
-        `Category "${payload.slug}" references unknown parentSlug "${payload.parentSlug}"`,
+        `Category "${payload.slug}" references unknown parentSlug "${payload.parentSlug}"`
       )
     }
     parentId = parent.id
@@ -98,10 +98,7 @@ export async function upsertCategory(
  * templates are upserted. Called from the CLI orchestrator after both
  * categories[] and specTemplates[] are processed.
  */
-export async function wireDefaultSpecTemplates(
-  payloads: CategoryPayload[],
-  tx: Tx,
-): Promise<void> {
+export async function wireDefaultSpecTemplates(payloads: CategoryPayload[], tx: Tx): Promise<void> {
   for (const cat of payloads) {
     if (!cat.defaultSpecTemplateSlug) continue
     const tpl = await tx.specTemplate.findUnique({
@@ -110,7 +107,7 @@ export async function wireDefaultSpecTemplates(
     })
     if (!tpl) {
       throw new Error(
-        `Category "${cat.slug}" references unknown defaultSpecTemplateSlug "${cat.defaultSpecTemplateSlug}"`,
+        `Category "${cat.slug}" references unknown defaultSpecTemplateSlug "${cat.defaultSpecTemplateSlug}"`
       )
     }
     await tx.category.update({

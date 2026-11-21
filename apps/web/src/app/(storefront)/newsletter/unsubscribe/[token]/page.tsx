@@ -27,8 +27,8 @@ export default async function NewsletterUnsubscribePage({ params }: Props) {
     return (
       <NewsletterNotice title="This link is no longer valid">
         <p>
-          The address may already have been removed. If you are still getting emails you did not ask for, write to
-          sales@indushydraulics.me and we will take you off by hand.
+          The address may already have been removed. If you are still getting emails you did not ask
+          for, write to sales@indushydraulics.me and we will take you off by hand.
         </p>
       </NewsletterNotice>
     )
@@ -37,8 +37,8 @@ export default async function NewsletterUnsubscribePage({ params }: Props) {
     return (
       <NewsletterNotice title="You're unsubscribed">
         <p>
-          <span className="font-medium text-ih-ink">{lookup.maskedEmail}</span> no longer receives the Indus Hydraulics
-          newsletter.
+          <span className="text-ih-ink font-medium">{lookup.maskedEmail}</span> no longer receives
+          the Indus Hydraulics newsletter.
         </p>
       </NewsletterNotice>
     )
@@ -53,14 +53,21 @@ export default async function NewsletterUnsubscribePage({ params }: Props) {
         title: 'Unsubscribe from the newsletter?',
         body: (
           <p>
-            Press the button and <span className="font-medium text-ih-ink">{lookup.maskedEmail}</span> will stop
-            receiving the Indus Hydraulics newsletter. Quotes and replies to your enquiries are not affected.
+            Press the button and{' '}
+            <span className="text-ih-ink font-medium">{lookup.maskedEmail}</span> will stop
+            receiving the Indus Hydraulics newsletter. Quotes and replies to your enquiries are not
+            affected.
           </p>
         ),
       }}
       done={{
         title: "You're unsubscribed",
-        body: <p>You will not receive the newsletter again. Changed your mind? You can sign up again on the home page.</p>,
+        body: (
+          <p>
+            You will not receive the newsletter again. Changed your mind? You can sign up again on
+            the home page.
+          </p>
+        ),
       }}
     />
   )

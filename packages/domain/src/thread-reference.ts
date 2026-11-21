@@ -244,7 +244,7 @@ const FAMILY_ORDER: Array<Exclude<ThreadFamily, 'unknown'>> = [
  * readings are dropped — see the file header.
  */
 export function buildThreadReference(
-  rows: ReadonlyArray<{ label: string; variants: number }>,
+  rows: ReadonlyArray<{ label: string; variants: number }>
 ): ThreadReading[] {
   const merged = new Map<string, { reading: ThreadReading; variants: number }>()
 
@@ -263,7 +263,7 @@ export function buildThreadReference(
 
 /** Rows grouped by family, in the order the table presents them. */
 export function groupThreadReference(
-  readings: readonly ThreadReading[],
+  readings: readonly ThreadReading[]
 ): Array<{ family: Exclude<ThreadFamily, 'unknown'>; rows: ThreadReading[] }> {
   return FAMILY_ORDER.map((family) => ({
     family,

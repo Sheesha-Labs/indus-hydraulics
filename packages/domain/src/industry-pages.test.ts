@@ -67,7 +67,7 @@ describe('imagery', () => {
     // they block cross-origin requests, which is why the files were copied.
     for (const image of everyImage()) {
       expect(image.src).toMatch(
-        /^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/industry-images\//,
+        /^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/industry-images\//
       )
     }
   })

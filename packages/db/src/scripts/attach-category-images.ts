@@ -43,28 +43,79 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 
 /** `alt` describes what is in the frame; the `/c` card renders it. */
 const IMAGES: readonly { slug: string; alt: string }[] = [
-  { slug: 'industrial-hose-suppliers-uae', alt: 'A group of industrial hoses — red air hose, black suction hose with a helix, clear PVC suction hose and corrugated stainless hose — with cam and groove, Storz and claw couplings and a hose clamp in front' },
-  { slug: 'lifting-rigging-equipment-uae', alt: 'A group of lifting and rigging gear — a four-leg chain sling, a wire rope sling, a yellow webbing sling, shackles, a swivel hook, a turnbuckle and a manual chain block' },
-  { slug: 'oil-gas-hoses', alt: 'A group of oilfield hoses — a coiled rotary drilling hose with a forged coupling, an armoured flexible line with a flange end and a red hose with a hammer union, a safety clamp in front' },
-  { slug: 'oilfield-valve-suppliers-uae', alt: 'A group of oilfield valves — a flanged gate valve with handwheel, a ball valve with lever, a lug butterfly valve, a check valve, a union-end valve and a needle valve' },
-  { slug: 'flow-iron-wellhead-equipment-uae', alt: 'A group of red flow iron — pup joints with hammer union nuts, a swivel joint, a tee and a plug valve, with metal ring joint gaskets in front' },
-  { slug: 'blowout-preventers', alt: 'A red blowout preventer with an annular preventer on a ram body, a ram block assembly and rubber packer elements in front' },
-  { slug: 'pneumatics', alt: 'A group of pneumatic parts: tie-rod air cylinder, solenoid valve, filter-regulator, blue tube, push-in fittings and a gripper' },
-  { slug: 'instrumentation-controls', alt: 'A group of oilfield instruments — a pressure gauge, pressure transmitters, a turbine flowmeter, a magnetic flowmeter, a thermowell, a proximity sensor and an explosion-proof junction box' },
-  { slug: 'well-testing-equipment', alt: 'A skid-mounted horizontal three-phase separator with valves and gauges, beside a vertical surge tank on its own skid' },
-  { slug: 'cementing-equipment', alt: 'A skid-mounted cementing unit with twin triplex pumps, mixing and displacement tanks and a control cabin' },
-  { slug: 'drilling-workover-systems', alt: 'A skid-mounted triplex mud pump with its electric motor, beside a mud manifold of gate valves on a frame' },
-  { slug: 'stimulation-equipment', alt: 'A skid-mounted stimulation pumping unit with a diesel engine, a triplex pump and a blending tank' },
-  { slug: 'fracturing-equipment', alt: 'A frac pumper on a tri-axle semi-trailer — diesel engine and transmission at the front, plunger pump at the rear, discharge iron along the side' },
+  {
+    slug: 'industrial-hose-suppliers-uae',
+    alt: 'A group of industrial hoses — red air hose, black suction hose with a helix, clear PVC suction hose and corrugated stainless hose — with cam and groove, Storz and claw couplings and a hose clamp in front',
+  },
+  {
+    slug: 'lifting-rigging-equipment-uae',
+    alt: 'A group of lifting and rigging gear — a four-leg chain sling, a wire rope sling, a yellow webbing sling, shackles, a swivel hook, a turnbuckle and a manual chain block',
+  },
+  {
+    slug: 'oil-gas-hoses',
+    alt: 'A group of oilfield hoses — a coiled rotary drilling hose with a forged coupling, an armoured flexible line with a flange end and a red hose with a hammer union, a safety clamp in front',
+  },
+  {
+    slug: 'oilfield-valve-suppliers-uae',
+    alt: 'A group of oilfield valves — a flanged gate valve with handwheel, a ball valve with lever, a lug butterfly valve, a check valve, a union-end valve and a needle valve',
+  },
+  {
+    slug: 'flow-iron-wellhead-equipment-uae',
+    alt: 'A group of red flow iron — pup joints with hammer union nuts, a swivel joint, a tee and a plug valve, with metal ring joint gaskets in front',
+  },
+  {
+    slug: 'blowout-preventers',
+    alt: 'A red blowout preventer with an annular preventer on a ram body, a ram block assembly and rubber packer elements in front',
+  },
+  {
+    slug: 'pneumatics',
+    alt: 'A group of pneumatic parts: tie-rod air cylinder, solenoid valve, filter-regulator, blue tube, push-in fittings and a gripper',
+  },
+  {
+    slug: 'instrumentation-controls',
+    alt: 'A group of oilfield instruments — a pressure gauge, pressure transmitters, a turbine flowmeter, a magnetic flowmeter, a thermowell, a proximity sensor and an explosion-proof junction box',
+  },
+  {
+    slug: 'well-testing-equipment',
+    alt: 'A skid-mounted horizontal three-phase separator with valves and gauges, beside a vertical surge tank on its own skid',
+  },
+  {
+    slug: 'cementing-equipment',
+    alt: 'A skid-mounted cementing unit with twin triplex pumps, mixing and displacement tanks and a control cabin',
+  },
+  {
+    slug: 'drilling-workover-systems',
+    alt: 'A skid-mounted triplex mud pump with its electric motor, beside a mud manifold of gate valves on a frame',
+  },
+  {
+    slug: 'stimulation-equipment',
+    alt: 'A skid-mounted stimulation pumping unit with a diesel engine, a triplex pump and a blending tank',
+  },
+  {
+    slug: 'fracturing-equipment',
+    alt: 'A frac pumper on a tri-axle semi-trailer — diesel engine and transmission at the front, plunger pump at the rear, discharge iron along the side',
+  },
   // 2026-11-08: the three roots added after the first run (Marine,
   // Gearboxes & Winches, Industrial Process Valves). Higgsfield GPT Image 2.6,
   // medium, 2k 3:2, resized to 1536×1024 JPEG q78 (< 400 KB each).
-  { slug: 'marine-equipment-uae', alt: 'Marine hardware: stockless and fluke anchors, stud-link and studless chain, a Kenter shackle, a bow shackle and a swivel' },
-  { slug: 'gearboxes-winches', alt: 'Hydraulic winches, a slewing drive with pinion, planetary gearboxes, a wheel drive hub and a hydraulic motor' },
-  { slug: 'industrial-process-valves', alt: 'Process valves: flanged gate, trunnion ball, globe, actuated ball, butterfly, safety relief and swing check valves' },
+  {
+    slug: 'marine-equipment-uae',
+    alt: 'Marine hardware: stockless and fluke anchors, stud-link and studless chain, a Kenter shackle, a bow shackle and a swivel',
+  },
+  {
+    slug: 'gearboxes-winches',
+    alt: 'Hydraulic winches, a slewing drive with pinion, planetary gearboxes, a wheel drive hub and a hydraulic motor',
+  },
+  {
+    slug: 'industrial-process-valves',
+    alt: 'Process valves: flanged gate, trunnion ball, globe, actuated ball, butterfly, safety relief and swing check valves',
+  },
   // 2026-11-18: Seamless Finned Tubes (root 26, added 2026-11-15). Same
   // settings as the 2026-11-08 round; resized to 1536×1024 JPEG q82, 340 KB.
-  { slug: 'seamless-finned-tubes-uae', alt: 'Heat-exchanger tubes: seamless steel boiler tubes, aluminium and serrated fin tubes, a U-bend and copper-alloy tubes' },
+  {
+    slug: 'seamless-finned-tubes-uae',
+    alt: 'Heat-exchanger tubes: seamless steel boiler tubes, aluminium and serrated fin tubes, a U-bend and copper-alloy tubes',
+  },
 ] as const
 
 /** Loads the Supabase storage credentials, which only live in the web app's env file. */
@@ -132,7 +183,12 @@ async function main() {
     }
     const cat = await db.category.findUnique({
       where: { slug: item.slug },
-      select: { id: true, name: true, imageId: true, image: { select: { originalFilename: true } } },
+      select: {
+        id: true,
+        name: true,
+        imageId: true,
+        image: { select: { originalFilename: true } },
+      },
     })
     if (!cat) {
       problems.push(`${item.slug}: no category with that slug`)
@@ -143,7 +199,9 @@ async function main() {
       continue
     }
     if (cat.imageId) {
-      problems.push(`${item.slug}: already has a different image (${cat.image?.originalFilename ?? cat.imageId}) — left alone`)
+      problems.push(
+        `${item.slug}: already has a different image (${cat.image?.originalFilename ?? cat.imageId}) — left alone`
+      )
       continue
     }
 

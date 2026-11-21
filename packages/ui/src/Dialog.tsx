@@ -56,8 +56,9 @@ const DialogOverlay = React.forwardRef<
 ))
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName
 
-export interface DialogContentProps
-  extends React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> {
+export interface DialogContentProps extends React.ComponentPropsWithoutRef<
+  typeof DialogPrimitive.Content
+> {
   /** Hides the built-in top-right close button. The dialog still closes on Escape. */
   hideClose?: boolean
   /** Applied to the overlay rather than the panel — use to change the backdrop. */
@@ -83,9 +84,9 @@ const DialogContent = React.forwardRef<
         className={cn(
           // Cards are 10px in v2 (CLAUDE.md §2.3). shadow-2 is the true-overlay
           // shadow; everything resting in this language is a 1px border.
-          'relative my-auto w-full max-w-lg rounded-lg border border-ih-border bg-ih-surface shadow-2',
+          'border-ih-border bg-ih-surface shadow-2 relative my-auto w-full max-w-lg rounded-lg border',
           // See the docblock: the portal escapes [data-surface='admin'].
-          'font-sans text-[13px] text-ih-ink',
+          'text-ih-ink font-sans text-[13px]',
           'focus:outline-none',
           'data-[state=open]:animate-[ih-dialog-in_140ms_cubic-bezier(0.32,0.72,0,1)]',
           'data-[state=closed]:animate-[ih-dialog-out_100ms_ease-in]',
@@ -98,9 +99,9 @@ const DialogContent = React.forwardRef<
         {hideClose ? null : (
           <DialogPrimitive.Close
             className={cn(
-              'absolute right-3 top-3 inline-flex h-7 w-7 items-center justify-center rounded-sm',
-              'text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink',
-              'outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft'
+              'absolute top-3 right-3 inline-flex h-7 w-7 items-center justify-center rounded-sm',
+              'text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink transition-colors',
+              'focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft outline-none focus-visible:ring-[3px]'
             )}
           >
             <X size={14} strokeWidth={1.8} aria-hidden="true" />
@@ -116,7 +117,7 @@ DialogContent.displayName = DialogPrimitive.Content.displayName
 function DialogHeader({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
-      className={cn('flex flex-col gap-1 border-b border-ih-border px-5 py-4 pr-12', className)}
+      className={cn('border-ih-border flex flex-col gap-1 border-b px-5 py-4 pr-12', className)}
       {...props}
     />
   )
@@ -130,7 +131,7 @@ function DialogFooter({ className, ...props }: React.HTMLAttributes<HTMLDivEleme
   return (
     <div
       className={cn(
-        'flex flex-col-reverse gap-2 border-t border-ih-border px-5 py-4 sm:flex-row sm:justify-end',
+        'border-ih-border flex flex-col-reverse gap-2 border-t px-5 py-4 sm:flex-row sm:justify-end',
         className
       )}
       {...props}
@@ -144,7 +145,7 @@ const DialogTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Title
     ref={ref}
-    className={cn('text-[15px] font-medium tracking-[-0.01em] text-ih-ink', className)}
+    className={cn('text-ih-ink text-[15px] font-medium tracking-[-0.01em]', className)}
     {...props}
   />
 ))
@@ -156,7 +157,7 @@ const DialogDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DialogPrimitive.Description
     ref={ref}
-    className={cn('text-[12.5px] leading-[1.5] text-ih-muted', className)}
+    className={cn('text-ih-muted text-[12.5px] leading-[1.5]', className)}
     {...props}
   />
 ))

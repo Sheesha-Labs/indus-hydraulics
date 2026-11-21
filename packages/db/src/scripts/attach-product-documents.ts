@@ -61,24 +61,36 @@ function slug(s: string): string {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 async function rescore(productId: string) {
-  const [faqCount, specCount, documentCount, imageCount, crossReferenceCount, p] = await Promise.all([
-    db.productFaq.count({ where: { productId } }),
-    db.productSpec.count({ where: { productId } }),
-    db.productDocument.count({ where: { productId } }),
-    db.productImage.count({ where: { productId } }),
-    db.productCrossReference.count({ where: { productId } }),
-    db.product.findUniqueOrThrow({
-      where: { id: productId },
-      select: {
-        brandId: true, categoryId: true, focusKeyword: true, seoTitle: true, seoDescription: true,
-        descriptionShort: true, descriptionLong: true, weightKg: true, countryOfOrigin: true, mpn: true,
-      },
-    }),
-  ])
+  const [faqCount, specCount, documentCount, imageCount, crossReferenceCount, p] =
+    await Promise.all([
+      db.productFaq.count({ where: { productId } }),
+      db.productSpec.count({ where: { productId } }),
+      db.productDocument.count({ where: { productId } }),
+      db.productImage.count({ where: { productId } }),
+      db.productCrossReference.count({ where: { productId } }),
+      db.product.findUniqueOrThrow({
+        where: { id: productId },
+        select: {
+          brandId: true,
+          categoryId: true,
+          focusKeyword: true,
+          seoTitle: true,
+          seoDescription: true,
+          descriptionShort: true,
+          descriptionLong: true,
+          weightKg: true,
+          countryOfOrigin: true,
+          mpn: true,
+        },
+      }),
+    ])
   const score = scoreProductContent({
     descriptionShortWords: words(p.descriptionShort ?? ''),
     descriptionLongWords: words(p.descriptionLong ?? ''),
@@ -103,22 +115,30 @@ async function main() {
   const dryRun = argv.includes('--dry-run')
   const name = argv.find((a) => a.startsWith('--payload='))?.split('=')[1]
   const docDir = argv.find((a) => a.startsWith('--doc-dir='))?.slice('--doc-dir='.length)
-  if (!name || !/^[a-z0-9-]+$/.test(name)) throw new Error('--payload=<folder under packages/db/data> is required')
-  if (!docDir || !existsSync(docDir)) throw new Error('--doc-dir=<folder with the documents> is required')
+  if (!name || !/^[a-z0-9-]+$/.test(name))
+    throw new Error('--payload=<folder under packages/db/data> is required')
+  if (!docDir || !existsSync(docDir))
+    throw new Error('--doc-dir=<folder with the documents> is required')
   const manifest: { documents: Entry[]; keyPrefix?: string; caption?: string } = JSON.parse(
-    readFileSync(join(DATA_DIR, name, 'documents.json'), 'utf8'),
+    readFileSync(join(DATA_DIR, name, 'documents.json'), 'utf8')
   )
   // Storage folder and Media caption are per maker. The MannTek manifest predates both fields.
   const keyPrefix = manifest.keyPrefix ?? 'manntek'
-  const caption = manifest.caption ?? 'MannTek website, Downloads > Service Downloads (fetched 2026-10-17). Maker document.'
-  if (!/^[a-z0-9-]+$/.test(keyPrefix)) throw new Error(`keyPrefix ${keyPrefix} must be a lowercase slug`)
+  const caption =
+    manifest.caption ??
+    'MannTek website, Downloads > Service Downloads (fetched 2026-10-17). Maker document.'
+  if (!/^[a-z0-9-]+$/.test(keyPrefix))
+    throw new Error(`keyPrefix ${keyPrefix} must be a lowercase slug`)
 
   const problems: string[] = []
   for (const e of manifest.documents) {
     if (!existsSync(join(docDir, e.file))) problems.push(`${e.sku}: missing ${e.file}`)
   }
   const skus = [...new Set(manifest.documents.map((e) => e.sku))]
-  const products = await db.product.findMany({ where: { sku: { in: skus } }, select: { id: true, sku: true } })
+  const products = await db.product.findMany({
+    where: { sku: { in: skus } },
+    select: { id: true, sku: true },
+  })
   const idBySku = new Map(products.map((p) => [p.sku, p.id]))
   for (const sku of skus) if (!idBySku.has(sku)) problems.push(`${sku}: no such product`)
   if (problems.length) {
@@ -139,7 +159,10 @@ async function main() {
 
   for (const e of manifest.documents) {
     const productId = idBySku.get(e.sku)!
-    const exists = await db.productDocument.findFirst({ where: { productId, title: e.title }, select: { id: true } })
+    const exists = await db.productDocument.findFirst({
+      where: { productId, title: e.title },
+      select: { id: true },
+    })
     if (exists) {
       skipped++
       continue
@@ -187,7 +210,15 @@ async function main() {
     }
     mediaByMd5.set(e.md5, mediaId)
     await db.productDocument.create({
-      data: { productId, kind: e.kind, title: e.title, language: e.language, isGated: false, mediaId, position: e.position },
+      data: {
+        productId,
+        kind: e.kind,
+        title: e.title,
+        language: e.language,
+        isGated: false,
+        mediaId,
+        position: e.position,
+      },
     })
     attached++
     touched.add(productId)
@@ -196,7 +227,7 @@ async function main() {
   for (const id of touched) await rescore(id)
   console.log(
     `\n[documents:${name}] ${attached} ${dryRun ? 'to attach' : 'attached'}, ${uploaded} files uploaded, ` +
-      `${skipped} already present, ${touched.size} products rescored, ${problems.length} problems`,
+      `${skipped} already present, ${touched.size} products rescored, ${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
   await db.$disconnect()

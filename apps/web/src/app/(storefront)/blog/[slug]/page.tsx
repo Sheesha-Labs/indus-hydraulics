@@ -1,13 +1,33 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import { blogPostModifiedAt, blogReferencedArticleSlugs, blogVideoBlocks, buildArticleLd, buildBreadcrumbLd, buildFaqLd, buildVideoLd, estimateReadingMinutes, shouldShowUpdatedDate, youtubeVideoId, enquiryMailto, enquiryBody } from '@indus/domain'
+import {
+  blogPostModifiedAt,
+  blogReferencedArticleSlugs,
+  blogVideoBlocks,
+  buildArticleLd,
+  buildBreadcrumbLd,
+  buildFaqLd,
+  buildVideoLd,
+  estimateReadingMinutes,
+  shouldShowUpdatedDate,
+  youtubeVideoId,
+  enquiryMailto,
+  enquiryBody,
+} from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import BlogArticleLayout from '../../../../components/blog/BlogArticleLayout'
 import { resolveBlogArticle } from '../../../../lib/blog-article'
 import { searchIconUrl } from '../../../../lib/brand-identity'
 import { getMoreFromBlogCategory } from '../../../../lib/related-reading'
-import { BASE_URL, ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
+import {
+  BASE_URL,
+  ORG_ID,
+  SITE_NAME,
+  crawlableImageUrl,
+  pageMetadata,
+  urlFor,
+} from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import { staticParamsOrNone } from '../../../../lib/static-params'
 
@@ -70,7 +90,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         select: { storagePath: true, alt: true },
       })
     : null
-  const ogPath = post.ogImageMediaId ? (ogMedia?.storagePath ?? null) : (post.hero?.storagePath ?? null)
+  const ogPath = post.ogImageMediaId
+    ? (ogMedia?.storagePath ?? null)
+    : (post.hero?.storagePath ?? null)
   const ogAlt = post.ogImageMediaId
     ? (ogMedia?.alt ?? null)
     : post.hero
@@ -92,8 +114,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: blogPostModifiedAt(post),
       section: post.category?.isPublished ? post.category.name : null,
       tags: readTags(post.tags),
-      authors:
-        post.blogAuthor?.isPublished ? [urlFor(`/blog/author/${post.blogAuthor.slug}`)] : null,
+      authors: post.blogAuthor?.isPublished
+        ? [urlFor(`/blog/author/${post.blogAuthor.slug}`)]
+        : null,
     },
   })
 }
@@ -239,7 +262,10 @@ export default async function BlogPostPage({ params }: Props) {
 
   const contact = {
     whatsappUrl: buildWhatsappHref(settings.contactPhone, `Enquiry: ${post.title}`),
-    emailUrl: enquiryMailto({ subject: `${post.title} — enquiry`, body: enquiryBody({ about: `parts covered in "${post.title}"`, url: postUrl }) }),
+    emailUrl: enquiryMailto({
+      subject: `${post.title} — enquiry`,
+      body: enquiryBody({ about: `parts covered in "${post.title}"`, url: postUrl }),
+    }),
     phone: settings.contactPhone,
   }
 
@@ -265,7 +291,11 @@ export default async function BlogPostPage({ params }: Props) {
           href: authorProfileUrl ? `/blog/author/${post.blogAuthor!.slug}` : null,
           jobTitle: post.blogAuthor?.jobTitle ?? null,
         }}
-        reviewer={reviewer ? { name: reviewer.name, href: reviewer.href, jobTitle: reviewer.jobTitle } : null}
+        reviewer={
+          reviewer
+            ? { name: reviewer.name, href: reviewer.href, jobTitle: reviewer.jobTitle }
+            : null
+        }
         reviewedAt={post.reviewedAt}
         publishedAt={post.publishedAt}
         updatedAt={showUpdated ? modifiedAt : null}

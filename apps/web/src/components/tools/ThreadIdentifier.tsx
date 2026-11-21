@@ -23,7 +23,8 @@ type Result = { id: string; family: string; detail: string; categorySlug?: strin
 const STEPS: Record<string, Step> = {
   taper: {
     id: 'taper',
-    question: 'Measure across the thread crests at the first thread and at the last. Does the diameter change?',
+    question:
+      'Measure across the thread crests at the first thread and at the last. Does the diameter change?',
     help: 'This single measurement separates the two tapered families from everything else.',
     answers: [
       { label: 'It grows along the thread — tapered', next: 'taper-angle' },
@@ -137,23 +138,25 @@ export default function ThreadIdentifier() {
   }
 
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-6">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-6">
       {step && (
         <>
-          <p className="mono mb-2 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+          <p className="mono text-ih-muted mb-2 text-[10.5px] font-medium tracking-[0.13em] uppercase">
             Step {trail.length + 1}
           </p>
-          <h2 className="mb-2 text-[19px] font-semibold leading-[1.3] text-ih-ink">
+          <h2 className="text-ih-ink mb-2 text-[19px] leading-[1.3] font-semibold">
             {step.question}
           </h2>
-          {step.help && <p className="mb-4 text-[13.5px] leading-[1.5] text-ih-muted">{step.help}</p>}
+          {step.help && (
+            <p className="text-ih-muted mb-4 text-[13.5px] leading-[1.5]">{step.help}</p>
+          )}
           <div className="flex flex-col gap-2">
             {step.answers.map((a) => (
               <button
                 key={a.next}
                 type="button"
                 onClick={() => choose(a.next)}
-                className="rounded-md border border-ih-border bg-ih-surface-2 px-4 py-3 text-left text-[14.5px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+                className="border-ih-border bg-ih-surface-2 text-ih-ink hover:border-ih-accent hover:text-ih-accent rounded-md border px-4 py-3 text-left text-[14.5px] transition-colors"
               >
                 {a.label}
               </button>
@@ -164,18 +167,18 @@ export default function ThreadIdentifier() {
 
       {result && (
         <>
-          <p className="mono mb-2 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+          <p className="mono text-ih-muted mb-2 text-[10.5px] font-medium tracking-[0.13em] uppercase">
             Most likely
           </p>
-          <h2 className="mb-2 text-[24px] font-semibold tracking-[-0.01em] text-ih-ink">
+          <h2 className="text-ih-ink mb-2 text-[24px] font-semibold tracking-[-0.01em]">
             {result.family}
           </h2>
-          <p className="mb-4 text-[14.5px] leading-[1.6] text-ih-ink-2">{result.detail}</p>
+          <p className="text-ih-ink-2 mb-4 text-[14.5px] leading-[1.6]">{result.detail}</p>
           <div className="flex flex-wrap gap-2">
             {result.categorySlug && (
               <Link
                 href={`/c/${result.categorySlug}`}
-                className="mono inline-flex h-10 items-center rounded-md bg-ih-accent px-4 text-[12px] uppercase tracking-[0.08em] text-ih-accent-fg hover:opacity-90"
+                className="mono bg-ih-accent text-ih-accent-fg inline-flex h-10 items-center rounded-md px-4 text-[12px] tracking-[0.08em] uppercase hover:opacity-90"
               >
                 Browse this range
               </Link>
@@ -185,7 +188,7 @@ export default function ThreadIdentifier() {
                 subject: 'Thread identification — photo attached',
                 body: 'Hello Indus Hydraulics,\n\nPlease identify the attached fitting and quote a replacement.\n\nQuantity:\nName:\nCompany:\nPhone / WhatsApp:',
               })}
-              className="inline-flex h-10 items-center rounded-md border border-ih-border px-4 text-[12px] uppercase tracking-[0.08em] text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent"
+              className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-10 items-center rounded-md border px-4 text-[12px] tracking-[0.08em] uppercase"
             >
               Email us a photo
             </a>
@@ -193,12 +196,12 @@ export default function ThreadIdentifier() {
         </>
       )}
 
-      <div className="mt-5 flex gap-3 border-t border-ih-border pt-4">
+      <div className="border-ih-border mt-5 flex gap-3 border-t pt-4">
         {trail.length > 0 && (
           <button
             type="button"
             onClick={back}
-            className="mono text-[12px] text-ih-accent hover:underline"
+            className="mono text-ih-accent text-[12px] hover:underline"
           >
             ← Back
           </button>
@@ -207,14 +210,14 @@ export default function ThreadIdentifier() {
           <button
             type="button"
             onClick={restart}
-            className="mono text-[12px] text-ih-muted hover:text-ih-ink"
+            className="mono text-ih-muted hover:text-ih-ink text-[12px]"
           >
             Start again
           </button>
         )}
       </div>
 
-      <p className="mt-4 text-[12px] leading-[1.5] text-ih-muted">
+      <p className="text-ih-muted mt-4 text-[12px] leading-[1.5]">
         This narrows a fitting to a <strong>family</strong>, not a part number. Size and series
         still need measuring, and on a port you cannot easily re-machine it is worth confirming
         before you commit the joint.

@@ -40,17 +40,19 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
   return (
     <div className="relative">
       {value ? (
-        <div className="rounded-lg flex items-center gap-2 px-3 py-2 border border-ih-border bg-ih-bg text-[13px]">
-          <div className="flex-1 min-w-0">
-            <div className="font-medium truncate">{value.label}</div>
+        <div className="border-ih-border bg-ih-bg flex items-center gap-2 rounded-lg border px-3 py-2 text-[13px]">
+          <div className="min-w-0 flex-1">
+            <div className="truncate font-medium">{value.label}</div>
             {value.sublabel ? (
-              <div className="tabular-nums text-[11px] text-ih-muted truncate">{value.sublabel}</div>
+              <div className="text-ih-muted truncate text-[11px] tabular-nums">
+                {value.sublabel}
+              </div>
             ) : null}
           </div>
           <button
             type="button"
             onClick={() => onChange(null)}
-            className="text-[12px] text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink text-[12px]"
           >
             Change
           </button>
@@ -65,14 +67,14 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
               setOpen(true)
             }}
             onFocus={() => setOpen(true)}
-            className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-md border px-3 text-[13px]"
           />
           {open ? (
-            <div className="rounded-lg absolute z-10 left-0 right-0 mt-1 bg-ih-surface border border-ih-border max-h-64 overflow-y-auto">
+            <div className="bg-ih-surface border-ih-border absolute right-0 left-0 z-10 mt-1 max-h-64 overflow-y-auto rounded-lg border">
               {pending ? (
-                <div className="px-3 py-2 text-[12px] text-ih-muted">Searching…</div>
+                <div className="text-ih-muted px-3 py-2 text-[12px]">Searching…</div>
               ) : results.length === 0 ? (
-                <div className="px-3 py-2 text-[12px] text-ih-muted">No matches</div>
+                <div className="text-ih-muted px-3 py-2 text-[12px]">No matches</div>
               ) : (
                 results.map((r) => (
                   <button
@@ -83,11 +85,11 @@ export default function LinkTargetPicker({ linkType, value, onChange }: Props) {
                       setOpen(false)
                       setQuery('')
                     }}
-                    className="block w-full text-left px-3 py-2 hover:bg-ih-bg text-[13px]"
+                    className="hover:bg-ih-bg block w-full px-3 py-2 text-left text-[13px]"
                   >
                     <div className="font-medium">{r.label}</div>
                     {r.sublabel ? (
-                      <div className="tabular-nums text-[11px] text-ih-muted">{r.sublabel}</div>
+                      <div className="text-ih-muted text-[11px] tabular-nums">{r.sublabel}</div>
                     ) : null}
                   </button>
                 ))

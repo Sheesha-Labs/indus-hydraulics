@@ -61,7 +61,10 @@ const BAND_TIGHT = 'pb-14 lg:pb-[72px]'
 const LEDE = 'max-w-[900px] text-[15px] leading-[1.6] text-ih-ink-2 sm:text-[16px]'
 
 /** The OEM step icons, by the record's closed union. */
-const OEM_ICON: Record<ManufacturingOemStep['icon'], (props: { size?: number; className?: string }) => ReactNode> = {
+const OEM_ICON: Record<
+  ManufacturingOemStep['icon'],
+  (props: { size?: number; className?: string }) => ReactNode
+> = {
   upload: UploadIcon,
   gauge: GaugeIcon,
   wrench: WrenchIcon,
@@ -89,8 +92,8 @@ export default function ManufacturingLanding({
   return (
     <div>
       {/* ─── 1 · HERO ─────────────────────────────────────────────────── */}
-      <section className="border-b border-ih-border bg-ih-surface">
-        <div className={`${SECTION} pb-12 pt-7 lg:pb-[52px]`}>
+      <section className="border-ih-border bg-ih-surface border-b">
+        <div className={`${SECTION} pt-7 pb-12 lg:pb-[52px]`}>
           <Breadcrumb
             className="mb-6"
             items={[
@@ -107,10 +110,10 @@ export default function ManufacturingLanding({
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.25fr_1fr] lg:items-end lg:gap-14">
             <div>
               <Eyebrow>{hero.eyebrow}</Eyebrow>
-              <h1 className="mt-[18px] text-balance font-serif text-[32px] font-normal leading-[1.04] tracking-[-0.01em] sm:text-[40px] lg:text-[54px]">
+              <h1 className="mt-[18px] font-serif text-[32px] leading-[1.04] font-normal tracking-[-0.01em] text-balance sm:text-[40px] lg:text-[54px]">
                 {hero.headingLead} <em>{hero.headingEmphasis}</em>
               </h1>
-              <p className="mt-[18px] max-w-[640px] text-[15px] leading-[1.6] text-ih-ink-2 sm:text-[16px]">
+              <p className="text-ih-ink-2 mt-[18px] max-w-[640px] text-[15px] leading-[1.6] sm:text-[16px]">
                 {hero.lede}
               </p>
 
@@ -150,23 +153,20 @@ export default function ManufacturingLanding({
 
         <div className="flex flex-col">
           {workshops.items.map((shop, i) => (
-            <div
-              key={shop.name}
-              className={i === 0 ? '' : 'mt-11 border-t border-ih-border pt-11'}
-            >
+            <div key={shop.name} className={i === 0 ? '' : 'border-ih-border mt-11 border-t pt-11'}>
               {/*
                 The spec tag is pushed right by `ml-auto` at sm and up. Below
                 that it wraps onto its own line rather than compressing the
                 workshop name — `basis-full` after a wrap is what puts it there.
               */}
               <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1.5 pb-5">
-                <span className="font-mono text-[10px] tracking-[0.12em] text-ih-accent">
+                <span className="text-ih-accent font-mono text-[10px] tracking-[0.12em]">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <h3 className="text-[21px] font-medium tracking-[-0.02em] sm:text-[24px]">
                   {shop.name}
                 </h3>
-                <span className="basis-full font-mono text-[10px] tracking-[0.1em] text-ih-steel sm:basis-auto sm:ml-auto">
+                <span className="text-ih-steel basis-full font-mono text-[10px] tracking-[0.1em] sm:ml-auto sm:basis-auto">
                   {shop.tag}
                 </span>
               </div>
@@ -182,8 +182,12 @@ export default function ManufacturingLanding({
                   <ul className="flex list-none flex-col gap-[13px] p-0">
                     {shop.points.map((point) => (
                       <li key={point} className="flex items-start gap-2.5">
-                        <CheckIcon size={14} strokeWidth={2.3} className="mt-1 shrink-0 text-ih-accent" />
-                        <span className="text-[13.5px] leading-[1.55] text-ih-ink-2">{point}</span>
+                        <CheckIcon
+                          size={14}
+                          strokeWidth={2.3}
+                          className="text-ih-accent mt-1 shrink-0"
+                        />
+                        <span className="text-ih-ink-2 text-[13.5px] leading-[1.55]">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -212,14 +216,11 @@ export default function ManufacturingLanding({
 
         <HairlineGrid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {process.items.map((stage) => (
-            <HairlineCell
-              key={stage.stage}
-              className="flex flex-col gap-2.5 px-[22px] pb-5 pt-6"
-            >
-              <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+            <HairlineCell key={stage.stage} className="flex flex-col gap-2.5 px-[22px] pt-6 pb-5">
+              <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                 Stage {stage.stage}
               </p>
-              <h3 className="text-[16.5px] font-medium leading-[1.25] tracking-[-0.02em]">
+              <h3 className="text-[16.5px] leading-[1.25] font-medium tracking-[-0.02em]">
                 {stage.title}
               </h3>
               {/*
@@ -227,12 +228,12 @@ export default function ManufacturingLanding({
                 every guarantee rule on a shared baseline across a row. Without
                 it the rules stagger with the body length.
               */}
-              <p className="flex-1 text-[12.5px] leading-[1.6] text-ih-muted">{stage.body}</p>
-              <div className="mt-1 border-t border-ih-border pt-[11px]">
-                <p className="mb-1.5 font-mono text-[9.5px] uppercase tracking-[0.1em] text-ih-accent">
+              <p className="text-ih-muted flex-1 text-[12.5px] leading-[1.6]">{stage.body}</p>
+              <div className="border-ih-border mt-1 border-t pt-[11px]">
+                <p className="text-ih-accent mb-1.5 font-mono text-[9.5px] tracking-[0.1em] uppercase">
                   Guarantee
                 </p>
-                <p className="text-[11.5px] leading-[1.5] text-ih-ink-2">{stage.guarantee}</p>
+                <p className="text-ih-ink-2 text-[11.5px] leading-[1.5]">{stage.guarantee}</p>
               </div>
             </HairlineCell>
           ))}
@@ -244,7 +245,7 @@ export default function ManufacturingLanding({
         <div className={`${SECTION} py-14 lg:py-[56px]`}>
           <div className="max-w-[780px]">
             <Eyebrow className="text-ih-steel">{oem.eyebrow}</Eyebrow>
-            <h2 className="mt-4 text-balance font-serif text-[27px] font-normal leading-[1.14] tracking-[-0.01em] text-white sm:text-[34px]">
+            <h2 className="mt-4 font-serif text-[27px] leading-[1.14] font-normal tracking-[-0.01em] text-balance text-white sm:text-[34px]">
               {oem.headingLead} <em>{oem.headingEmphasis}</em>
             </h2>
             <p className="mt-4 text-[14px] leading-[1.65] text-white/80">{oem.body}</p>
@@ -265,10 +266,10 @@ export default function ManufacturingLanding({
                   <span className="text-ih-steel">
                     <Icon size={22} />
                   </span>
-                  <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+                  <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                     Step {step.step}
                   </p>
-                  <h3 className="text-[16.5px] font-medium leading-[1.25] tracking-[-0.02em] text-white">
+                  <h3 className="text-[16.5px] leading-[1.25] font-medium tracking-[-0.02em] text-white">
                     {step.title}
                   </h3>
                   <p className="text-[12.5px] leading-[1.55] text-white/75">{step.body}</p>
@@ -291,17 +292,19 @@ export default function ManufacturingLanding({
         <div className="grid grid-cols-1 items-start gap-10 xl:grid-cols-[minmax(0,1fr)_460px] xl:gap-11">
           <div>
             <SectionHead eyebrow={build.eyebrow} title={build.heading} className="mb-4" />
-            <p className="max-w-[620px] text-[15px] leading-[1.6] text-ih-ink-2 sm:text-[16px]">
+            <p className="text-ih-ink-2 max-w-[620px] text-[15px] leading-[1.6] sm:text-[16px]">
               {build.lede}
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
               {build.requirements.map((requirement) => (
-                <div key={requirement.label} className="border-t-2 border-ih-accent pt-3.5">
-                  <p className="font-mono text-[9.5px] uppercase tracking-[0.11em] text-ih-muted">
+                <div key={requirement.label} className="border-ih-accent border-t-2 pt-3.5">
+                  <p className="text-ih-muted font-mono text-[9.5px] tracking-[0.11em] uppercase">
                     {requirement.label}
                   </p>
-                  <p className="mt-2.5 text-[13px] leading-[1.6] text-ih-ink-2">{requirement.body}</p>
+                  <p className="text-ih-ink-2 mt-2.5 text-[13px] leading-[1.6]">
+                    {requirement.body}
+                  </p>
                 </div>
               ))}
             </div>
@@ -313,11 +316,11 @@ export default function ManufacturingLanding({
             */}
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {related.map((link) => (
-                <Card key={link.href} className="flex flex-col gap-2 bg-ih-surface-2 p-5">
-                  <p className="flex-1 text-[13px] leading-[1.55] text-ih-ink-2">{link.body}</p>
+                <Card key={link.href} className="bg-ih-surface-2 flex flex-col gap-2 p-5">
+                  <p className="text-ih-ink-2 flex-1 text-[13px] leading-[1.55]">{link.body}</p>
                   <Link
                     href={link.href}
-                    className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+                    className="text-ih-accent hover:text-ih-accent-hover inline-flex items-center gap-1.5 text-[13px] font-medium"
                   >
                     {link.label}
                     <ArrowRightIcon size={14} />
@@ -360,12 +363,12 @@ export default function ManufacturingLanding({
 
       {/* ─── 6 · CLOSING CTA ──────────────────────────────────────────── */}
       <section className={`${SECTION} ${BAND_TIGHT}`}>
-        <Card className="grid grid-cols-1 items-center gap-8 bg-ih-steel-soft px-8 py-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-11">
+        <Card className="bg-ih-steel-soft grid grid-cols-1 items-center gap-8 px-8 py-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-11">
           <div>
-            <h2 className="font-serif text-[26px] font-normal leading-[1.15] tracking-[-0.01em] sm:text-[30px]">
+            <h2 className="font-serif text-[26px] leading-[1.15] font-normal tracking-[-0.01em] sm:text-[30px]">
               {closing.heading}
             </h2>
-            <p className="mt-2.5 max-w-[560px] text-[14.5px] leading-[1.6] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-2.5 max-w-[560px] text-[14.5px] leading-[1.6]">
               {closing.body}
             </p>
           </div>
@@ -392,13 +395,13 @@ export default function ManufacturingLanding({
                 </a>
               </Button>
             </div>
-            <p className="mt-3.5 text-[12.5px] leading-[1.5] text-ih-muted">
+            <p className="text-ih-muted mt-3.5 text-[12.5px] leading-[1.5]">
               Project desk{' '}
               {contactPhone && (
                 <>
                   <a
                     href={`tel:${contactPhone.replace(/\s/g, '')}`}
-                    className="font-medium text-ih-accent hover:underline"
+                    className="text-ih-accent font-medium hover:underline"
                   >
                     {contactPhone}
                   </a>

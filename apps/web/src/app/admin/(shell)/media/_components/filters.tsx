@@ -86,7 +86,7 @@ export function FolderRail({
           active={!trashed && active === 'all'}
         />
 
-        <li aria-hidden="true" className="my-1.5 h-px bg-ih-border" />
+        <li aria-hidden="true" className="bg-ih-border my-1.5 h-px" />
 
         {contentFolders.map((folder) => {
           const count = counts[folder] ?? 0
@@ -103,7 +103,7 @@ export function FolderRail({
           )
         })}
 
-        <li aria-hidden="true" className="my-1.5 h-px bg-ih-border" />
+        <li aria-hidden="true" className="bg-ih-border my-1.5 h-px" />
 
         <RailItem
           href={buildUrl({ folder: 'unused', trash: undefined, page: undefined })}
@@ -149,7 +149,7 @@ function RailItem({
         className={cn(
           'flex items-center gap-2 rounded-sm px-3 py-2 text-[13px] transition-colors',
           active
-            ? 'bg-ih-navy font-medium text-ih-bg'
+            ? 'bg-ih-navy text-ih-bg font-medium'
             : muted
               ? 'text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink-2'
               : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
@@ -158,10 +158,7 @@ function RailItem({
         <Icon size={13} strokeWidth={1.6} aria-hidden="true" className="flex-shrink-0" />
         <span className="min-w-0 flex-1 truncate">{label}</span>
         <span
-          className={cn(
-            'text-[11px] tabular-nums',
-            active ? 'text-white/75' : 'text-ih-muted'
-          )}
+          className={cn('text-[11px] tabular-nums', active ? 'text-white/75' : 'text-ih-muted')}
         >
           {count}
         </span>
@@ -187,7 +184,7 @@ export function StateTabs({
     <div
       role="group"
       aria-label="Filter by usage"
-      className="inline-flex rounded-md border border-ih-border bg-ih-bg p-0.5"
+      className="border-ih-border bg-ih-bg inline-flex rounded-md border p-0.5"
     >
       {STATE_TABS.map((state) => {
         const isActive = active === state
@@ -199,9 +196,7 @@ export function StateTabs({
             title={state === 'all' ? 'Every file in this folder' : MEDIA_STATE_HINTS[state]}
             className={cn(
               'inline-flex h-7 items-center gap-1.5 rounded-sm px-2.5 text-[12px] transition-colors',
-              isActive
-                ? 'bg-ih-navy font-medium text-ih-bg'
-                : 'text-ih-ink-2 hover:text-ih-ink'
+              isActive ? 'bg-ih-navy text-ih-bg font-medium' : 'text-ih-ink-2 hover:text-ih-ink'
             )}
           >
             {state === 'all' ? 'All' : MEDIA_STATE_LABELS[state]}
@@ -231,7 +226,7 @@ export function ViewToggle({ active, buildUrl }: { active: MediaViewMode; buildU
     <div
       role="group"
       aria-label="View mode"
-      className="inline-flex rounded-md border border-ih-border bg-ih-bg p-0.5"
+      className="border-ih-border bg-ih-bg inline-flex rounded-md border p-0.5"
     >
       {options.map(({ mode, icon: Icon, label }) => {
         const isActive = active === mode

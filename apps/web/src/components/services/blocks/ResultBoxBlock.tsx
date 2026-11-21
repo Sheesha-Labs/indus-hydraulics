@@ -20,11 +20,13 @@ const COLS_AT_SM: Record<number, string> = {
 export default function ResultBoxBlockView({ block }: { block: ResultBoxBlock }) {
   const cols = Math.min(block.cells.length, 4)
   return (
-    <div className="sc-on-dark my-8 rounded-[var(--radius-lg)] bg-ih-navy px-6 pb-6 pt-7 font-sans text-white sm:px-8 sm:pb-7 sm:pt-8">
-      <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-ih-steel">
+    <div className="sc-on-dark bg-ih-navy my-8 rounded-[var(--radius-lg)] px-6 pt-7 pb-6 font-sans text-white sm:px-8 sm:pt-8 sm:pb-7">
+      <div className="text-ih-steel mb-2 text-[11px] font-semibold tracking-[0.12em] uppercase">
         {block.label}
       </div>
-      <h3 className="mb-4 text-[24px] font-semibold leading-[1.15] tracking-[-0.02em] text-white sm:text-[28px]">{block.title}</h3>
+      <h3 className="mb-4 text-[24px] leading-[1.15] font-semibold tracking-[-0.02em] text-white sm:text-[28px]">
+        {block.title}
+      </h3>
       <p className="m-0 mb-6 max-w-[620px] text-[15px] leading-[1.55] text-[oklch(0.78_0.01_240)]">
         {block.body}
       </p>
@@ -36,7 +38,7 @@ export default function ResultBoxBlockView({ block }: { block: ResultBoxBlock })
             <div
               // Every figure is white (owner call, 2026-11-19): the accent
               // blue on navy read as a different, dimmer kind of number.
-              className="text-[26px] font-semibold leading-none tracking-[-0.02em] tabular-nums text-white"
+              className="text-[26px] leading-none font-semibold tracking-[-0.02em] text-white tabular-nums"
             >
               {cell.value}
               {cell.valueSmall ? (
@@ -45,7 +47,7 @@ export default function ResultBoxBlockView({ block }: { block: ResultBoxBlock })
                 </small>
               ) : null}
             </div>
-            <div className="mt-2 text-[11px] font-medium uppercase tracking-[0.08em] text-[oklch(0.72_0.01_240)]">
+            <div className="mt-2 text-[11px] font-medium tracking-[0.08em] text-[oklch(0.72_0.01_240)] uppercase">
               {cell.label}
             </div>
           </div>

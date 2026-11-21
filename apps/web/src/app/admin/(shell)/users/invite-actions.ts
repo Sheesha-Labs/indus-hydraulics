@@ -9,7 +9,6 @@ import { issueStaffLink, normaliseEmail } from '../../../../lib/staff-invitation
 
 export type InviteState = { error?: string; warning?: string; ok?: string } | null
 
-
 /**
  * Invite a colleague to the staff admin.
  *
@@ -24,7 +23,7 @@ export type InviteState = { error?: string; warning?: string; ok?: string } | nu
  */
 export async function inviteStaffUser(
   _prev: InviteState,
-  formData: FormData,
+  formData: FormData
 ): Promise<InviteState> {
   let inviterId: string | null = null
   try {

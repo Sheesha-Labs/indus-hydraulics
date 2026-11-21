@@ -27,10 +27,23 @@ import {
   Wrench,
   type LucideIcon,
 } from 'lucide-react'
-import { Button, Dialog, DialogBody, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, Input } from '@indus/ui'
+import {
+  Button,
+  Dialog,
+  DialogBody,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  Input,
+} from '@indus/ui'
 import { useEffect, useState, useTransition } from 'react'
 
-import { createCampaignAction, searchRecordsAction } from '../../../app/admin/(shell)/newsletter/campaign-actions'
+import {
+  createCampaignAction,
+  searchRecordsAction,
+} from '../../../app/admin/(shell)/newsletter/campaign-actions'
 import {
   BUILT_IN_TEMPLATES,
   NEEDS_LABEL,
@@ -112,7 +125,11 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
     else create(t.id, { template: t.id as BuiltInTemplateId })
   }
 
-  const shelves: Shelf[] = [...TEMPLATE_SECTIONS.filter((s) => s !== 'Rich text'), ...(saved.length ? (['Your templates'] as const) : []), 'Rich text']
+  const shelves: Shelf[] = [
+    ...TEMPLATE_SECTIONS.filter((s) => s !== 'Rich text'),
+    ...(saved.length ? (['Your templates'] as const) : []),
+    'Rich text',
+  ]
   const shown = shelf === 'all' ? shelves : shelves.filter((s) => s === shelf)
   const builtIn = (t: BuiltInTemplate) => (
     <Card
@@ -141,30 +158,51 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
         }
       }}
     >
-      <Button type="button" kind="primary" size="dense" icon={<Plus size={14} aria-hidden />} onClick={() => setOpen(true)}>
+      <Button
+        type="button"
+        kind="primary"
+        size="dense"
+        icon={<Plus size={14} aria-hidden />}
+        onClick={() => setOpen(true)}
+      >
         New newsletter
       </Button>
       <DialogContent className="max-w-5xl">
         {picking ? (
-          <RecordStep template={picking} busy={busy !== null} onBack={() => setPicking(null)} onCreate={(recordId) => create(picking.id, { template: picking.id as BuiltInTemplateId, recordId })} error={error} />
+          <RecordStep
+            template={picking}
+            busy={busy !== null}
+            onBack={() => setPicking(null)}
+            onCreate={(recordId) =>
+              create(picking.id, { template: picking.id as BuiltInTemplateId, recordId })
+            }
+            error={error}
+          />
         ) : (
           <>
             <DialogHeader>
               <DialogTitle>New newsletter</DialogTitle>
               <DialogDescription>
-                Pick a template — a product-news issue, a case study, an ex-stock alert, a bulletin — or start from scratch. Products, brands,
-                articles and case studies fill in from the live site; every word, colour and block can be changed in the editor.
+                Pick a template — a product-news issue, a case study, an ex-stock alert, a bulletin
+                — or start from scratch. Products, brands, articles and case studies fill in from
+                the live site; every word, colour and block can be changed in the editor.
               </DialogDescription>
             </DialogHeader>
-            <div role="group" aria-label="Show templates for" className="flex flex-wrap gap-1.5 border-b border-ih-border px-6 pb-3 pt-1">
+            <div
+              role="group"
+              aria-label="Show templates for"
+              className="border-ih-border flex flex-wrap gap-1.5 border-b px-6 pt-1 pb-3"
+            >
               {(['all', ...shelves] as const).map((x) => (
                 <button
                   key={x}
                   type="button"
                   aria-pressed={shelf === x}
                   onClick={() => setShelf(x)}
-                  className={`rounded-full border px-3 py-1 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
-                    shelf === x ? 'border-ih-navy bg-ih-navy text-white' : 'border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-border-strong'
+                  className={`focus-visible:ring-ih-accent-soft rounded-full border px-3 py-1 text-[12.5px] transition-colors focus-visible:ring-2 focus-visible:outline-none ${
+                    shelf === x
+                      ? 'border-ih-navy bg-ih-navy text-white'
+                      : 'border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-border-strong'
                   }`}
                 >
                   {x === 'all' ? 'All' : x}
@@ -173,7 +211,10 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
             </div>
             <DialogBody className="flex h-[64vh] flex-col gap-6 overflow-y-auto">
               {error ? (
-                <p role="alert" className="rounded-md bg-ih-danger-soft px-3 py-2 text-[13px] text-ih-danger-ink">
+                <p
+                  role="alert"
+                  className="bg-ih-danger-soft text-ih-danger-ink rounded-md px-3 py-2 text-[13px]"
+                >
                   {error}
                 </p>
               ) : null}
@@ -196,7 +237,7 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
                   <Section key={s} title={s}>
                     {BUILT_IN_TEMPLATES.filter((t) => t.section === s).map(builtIn)}
                   </Section>
-                ),
+                )
               )}
             </DialogBody>
           </>
@@ -209,7 +250,7 @@ export default function NewNewsletterDialog({ saved }: { saved: SavedTemplate[] 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="flex flex-col gap-2.5">
-      <h3 className="text-[13.5px] font-medium text-ih-ink">{title}</h3>
+      <h3 className="text-ih-ink text-[13.5px] font-medium">{title}</h3>
       <div className="grid gap-3 sm:grid-cols-2">{children}</div>
     </section>
   )
@@ -240,22 +281,33 @@ function Card({
       onClick={onClick}
       disabled={disabled}
       aria-busy={busy || undefined}
-      className="group flex items-start gap-4 rounded-lg border border-ih-border bg-ih-surface p-3.5 text-left transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft disabled:cursor-default disabled:opacity-60 disabled:hover:shadow-none"
+      className="group border-ih-border bg-ih-surface hover:border-ih-border-strong focus-visible:ring-ih-accent-soft flex items-start gap-4 rounded-lg border p-3.5 text-left transition-[border-color,box-shadow] hover:shadow-sm focus-visible:ring-2 focus-visible:outline-none disabled:cursor-default disabled:opacity-60 disabled:hover:shadow-none"
     >
       {sketch && sketch.length > 2 ? (
-        <TemplateSketch bands={sketch} className="transition-transform group-hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-y-0" />
+        <TemplateSketch
+          bands={sketch}
+          className="transition-transform group-hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:group-hover:translate-y-0"
+        />
       ) : (
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md border border-ih-border bg-ih-surface-2 text-ih-ink-2">
+        <span className="border-ih-border bg-ih-surface-2 text-ih-ink-2 grid h-10 w-10 shrink-0 place-items-center rounded-md border">
           <Icon size={17} strokeWidth={1.7} aria-hidden />
         </span>
       )}
       <span className="flex min-w-0 flex-1 flex-col gap-1 pt-0.5">
-        <span className="flex items-center gap-2 text-[14px] font-medium text-ih-ink">
-          {busy ? <Loader2 size={14} className="animate-spin motion-reduce:animate-none" aria-hidden /> : <Icon size={14} strokeWidth={1.8} aria-hidden className="text-ih-muted" />}
+        <span className="text-ih-ink flex items-center gap-2 text-[14px] font-medium">
+          {busy ? (
+            <Loader2 size={14} className="animate-spin motion-reduce:animate-none" aria-hidden />
+          ) : (
+            <Icon size={14} strokeWidth={1.8} aria-hidden className="text-ih-muted" />
+          )}
           {title}
         </span>
-        <span className="text-[12.5px] leading-snug text-ih-muted">{text}</span>
-        {hint ? <span className="mt-1 w-fit rounded-full bg-ih-surface-2 px-2 py-0.5 text-[11.5px] text-ih-ink-2">{hint}</span> : null}
+        <span className="text-ih-muted text-[12.5px] leading-snug">{text}</span>
+        {hint ? (
+          <span className="bg-ih-surface-2 text-ih-ink-2 mt-1 w-fit rounded-full px-2 py-0.5 text-[11.5px]">
+            {hint}
+          </span>
+        ) : null}
       </span>
     </button>
   )
@@ -304,42 +356,87 @@ function RecordStep({
     <>
       <DialogHeader>
         <DialogTitle>{template.label}</DialogTitle>
-        <DialogDescription>{NEEDS_LABEL[kind].question} The newsletter takes its photo and words from it, and fills the rest from the site.</DialogDescription>
+        <DialogDescription>
+          {NEEDS_LABEL[kind].question} The newsletter takes its photo and words from it, and fills
+          the rest from the site.
+        </DialogDescription>
       </DialogHeader>
       <DialogBody className="flex flex-col gap-3">
         <div className="relative">
-          <Search size={14} aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ih-muted" />
-          <Input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={NEEDS_LABEL[kind].placeholder} aria-label={NEEDS_LABEL[kind].placeholder} className="pl-9" autoFocus />
+          <Search
+            size={14}
+            aria-hidden="true"
+            className="text-ih-muted pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
+          />
+          <Input
+            type="search"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder={NEEDS_LABEL[kind].placeholder}
+            aria-label={NEEDS_LABEL[kind].placeholder}
+            className="pl-9"
+            autoFocus
+          />
         </div>
-        <div role="radiogroup" aria-label={NEEDS_LABEL[kind].question} className="flex max-h-[45vh] flex-col gap-1.5 overflow-y-auto">
-          {options === null ? <p className="text-[13px] text-ih-muted">Loading…</p> : null}
-          {options && options.length === 0 && !searchError ? <p className="text-[13px] text-ih-muted">Nothing published matches “{q}”.</p> : null}
+        <div
+          role="radiogroup"
+          aria-label={NEEDS_LABEL[kind].question}
+          className="flex max-h-[45vh] flex-col gap-1.5 overflow-y-auto"
+        >
+          {options === null ? <p className="text-ih-muted text-[13px]">Loading…</p> : null}
+          {options && options.length === 0 && !searchError ? (
+            <p className="text-ih-muted text-[13px]">Nothing published matches “{q}”.</p>
+          ) : null}
           {options?.map((o) => (
             <label
               key={o.id}
               className={`flex cursor-pointer items-center gap-3 rounded-lg border px-3.5 py-2.5 transition-colors ${
-                picked === o.id ? 'border-ih-navy bg-ih-surface-2 shadow-[inset_0_0_0_1px_var(--color-ih-navy)]' : 'border-ih-border hover:border-ih-border-strong'
+                picked === o.id
+                  ? 'border-ih-navy bg-ih-surface-2 shadow-[inset_0_0_0_1px_var(--color-ih-navy)]'
+                  : 'border-ih-border hover:border-ih-border-strong'
               }`}
             >
-              <input type="radio" name="template-record" checked={picked === o.id} onChange={() => setPicked(o.id)} className="h-4 w-4 accent-[var(--color-ih-navy)]" />
+              <input
+                type="radio"
+                name="template-record"
+                checked={picked === o.id}
+                onChange={() => setPicked(o.id)}
+                className="h-4 w-4 accent-[var(--color-ih-navy)]"
+              />
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-[13.5px] text-ih-ink">{o.label}</span>
-                {o.hint ? <span className="block truncate text-[12px] text-ih-muted">{o.hint}</span> : null}
+                <span className="text-ih-ink block truncate text-[13.5px]">{o.label}</span>
+                {o.hint ? (
+                  <span className="text-ih-muted block truncate text-[12px]">{o.hint}</span>
+                ) : null}
               </span>
             </label>
           ))}
         </div>
         {searchError || error ? (
-          <p role="alert" className="text-[13px] text-ih-danger-ink">
+          <p role="alert" className="text-ih-danger-ink text-[13px]">
             {error ?? searchError}
           </p>
         ) : null}
       </DialogBody>
       <DialogFooter>
-        <Button type="button" kind="ghost" size="dense" icon={<ChevronLeft size={14} aria-hidden />} onClick={onBack} disabled={busy}>
+        <Button
+          type="button"
+          kind="ghost"
+          size="dense"
+          icon={<ChevronLeft size={14} aria-hidden />}
+          onClick={onBack}
+          disabled={busy}
+        >
           Back
         </Button>
-        <Button type="button" kind="primary" size="dense" loading={busy} disabled={!picked || busy} onClick={() => picked && onCreate(picked)}>
+        <Button
+          type="button"
+          kind="primary"
+          size="dense"
+          loading={busy}
+          disabled={!picked || busy}
+          onClick={() => picked && onCreate(picked)}
+        >
           Create
         </Button>
       </DialogFooter>

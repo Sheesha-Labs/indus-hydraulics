@@ -18,7 +18,11 @@ import {
 } from '../../../../../lib/newsletter/admin'
 import { ROLES, hasRole } from '../../../../../lib/rbac'
 import { requireStaffRole } from '../../../../../lib/staff-session'
-import { exportSubscribersAction, resendConfirmationsAction, unsubscribeSubscriberAction } from '../actions'
+import {
+  exportSubscribersAction,
+  resendConfirmationsAction,
+  unsubscribeSubscriberAction,
+} from '../actions'
 
 export const metadata: Metadata = { title: 'Newsletter subscribers — Indus Admin' }
 export const dynamic = 'force-dynamic'
@@ -66,8 +70,15 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
   const canExport = hasRole(session, ROLES.NEWSLETTER_SEND)
   const sp = await searchParams
 
-  const status = (SUBSCRIBER_STATUSES as readonly string[]).includes(sp.status ?? '') ? (sp.status as SubscriberStatus) : null
-  const filters: SubscriberFilters = { status, q: sp.q ?? null, from: sp.from ?? null, to: sp.to ?? null }
+  const status = (SUBSCRIBER_STATUSES as readonly string[]).includes(sp.status ?? '')
+    ? (sp.status as SubscriberStatus)
+    : null
+  const filters: SubscriberFilters = {
+    status,
+    q: sp.q ?? null,
+    from: sp.from ?? null,
+    to: sp.to ?? null,
+  }
   const page = Math.max(1, Number.parseInt(sp.page ?? '1', 10) || 1)
   const where = subscriberWhere(filters)
 
@@ -101,7 +112,9 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
       page: page === 1 ? undefined : String(page),
       ...overrides,
     }
-    const qs = new URLSearchParams(Object.entries(merged).filter((e): e is [string, string] => Boolean(e[1]))).toString()
+    const qs = new URLSearchParams(
+      Object.entries(merged).filter((e): e is [string, string] => Boolean(e[1]))
+    ).toString()
     return `/admin/newsletter/subscribers${qs ? `?${qs}` : ''}`
   }
 
@@ -123,32 +136,54 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
               Re-send pending confirmations
             </ActionButton>
           ) : null}
-          {canExport ? <DownloadCsvButton action={exportSubscribersAction.bind(null, filters)} /> : null}
+          {canExport ? (
+            <DownloadCsvButton action={exportSubscribersAction.bind(null, filters)} />
+          ) : null}
         </>
       }
     >
       <div className="flex flex-col gap-6">
         <NewsletterTabs active="subscribers" />
 
-        <form method="GET" action="/admin/newsletter/subscribers" className="flex flex-wrap items-end gap-2">
-          <label className="flex flex-col gap-1 text-[12px] text-ih-muted">
+        <form
+          method="GET"
+          action="/admin/newsletter/subscribers"
+          className="flex flex-wrap items-end gap-2"
+        >
+          <label className="text-ih-muted flex flex-col gap-1 text-[12px]">
             Email contains
-            <input name="q" defaultValue={filters.q ?? ''} placeholder="name@company.com" className={`${inputClass} w-64`} />
+            <input
+              name="q"
+              defaultValue={filters.q ?? ''}
+              placeholder="name@company.com"
+              className={`${inputClass} w-64`}
+            />
           </label>
-          <label className="flex flex-col gap-1 text-[12px] text-ih-muted">
+          <label className="text-ih-muted flex flex-col gap-1 text-[12px]">
             Signed up from
-            <input type="date" name="from" defaultValue={filters.from ?? ''} className={inputClass} />
+            <input
+              type="date"
+              name="from"
+              defaultValue={filters.from ?? ''}
+              className={inputClass}
+            />
           </label>
-          <label className="flex flex-col gap-1 text-[12px] text-ih-muted">
+          <label className="text-ih-muted flex flex-col gap-1 text-[12px]">
             to
             <input type="date" name="to" defaultValue={filters.to ?? ''} className={inputClass} />
           </label>
           {status ? <input type="hidden" name="status" value={status} /> : null}
-          <button type="submit" className="h-9 rounded-lg bg-ih-navy px-4 text-[14px] font-medium text-ih-bg hover:bg-ih-ink">
+          <button
+            type="submit"
+            className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 rounded-lg px-4 text-[14px] font-medium"
+          >
             Apply
           </button>
           {filtered ? (
-            <Link href={url({ q: undefined, from: undefined, to: undefined, page: undefined })} className="ml-1 self-center text-[12.5px] text-ih-muted underline underline-offset-2 hover:text-ih-ink">
+            <Link
+              href={url({ q: undefined, from: undefined, to: undefined, page: undefined })}
+              className="text-ih-muted hover:text-ih-ink ml-1 self-center text-[12.5px] underline underline-offset-2"
+            >
               Clear
             </Link>
           ) : null}
@@ -158,7 +193,12 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
           variant="chip"
           label="Filter by status"
           items={[
-            { href: url({ status: undefined, page: undefined }), active: !status, label: 'All', count: counts.all },
+            {
+              href: url({ status: undefined, page: undefined }),
+              active: !status,
+              label: 'All',
+              count: counts.all,
+            },
             ...SUBSCRIBER_STATUSES.map((s) => ({
               href: url({ status: s, page: undefined }),
               active: status === s,
@@ -173,18 +213,39 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
           rows={rows}
           rowKey={(r) => r.id}
           columns={[
-            { key: 'email', header: 'Email', width: '35%', cell: (r) => <span className="tabular-nums text-ih-ink">{r.email}</span> },
+            {
+              key: 'email',
+              header: 'Email',
+              width: '35%',
+              cell: (r) => <span className="text-ih-ink tabular-nums">{r.email}</span>,
+            },
             {
               key: 'status',
               header: 'Status',
-              cell: (r) => <StatusPill tone={STATUS_TONE[r.status as SubscriberStatus]}>{STATUS_LABEL[r.status as SubscriberStatus]}</StatusPill>,
+              cell: (r) => (
+                <StatusPill tone={STATUS_TONE[r.status as SubscriberStatus]}>
+                  {STATUS_LABEL[r.status as SubscriberStatus]}
+                </StatusPill>
+              ),
             },
-            { key: 'source', header: 'From', cell: (r) => <span className="text-ih-ink-2">{SOURCE_LABEL[r.source ?? ''] ?? r.source ?? '—'}</span> },
-            { key: 'signed', header: 'Signed up', cell: (r) => <span className="tabular-nums text-ih-ink-2">{day(r.createdAt)}</span> },
+            {
+              key: 'source',
+              header: 'From',
+              cell: (r) => (
+                <span className="text-ih-ink-2">
+                  {SOURCE_LABEL[r.source ?? ''] ?? r.source ?? '—'}
+                </span>
+              ),
+            },
+            {
+              key: 'signed',
+              header: 'Signed up',
+              cell: (r) => <span className="text-ih-ink-2 tabular-nums">{day(r.createdAt)}</span>,
+            },
             {
               key: 'confirmed',
               header: 'Confirmed',
-              cell: (r) => <span className="tabular-nums text-ih-ink-2">{day(r.confirmedAt)}</span>,
+              cell: (r) => <span className="text-ih-ink-2 tabular-nums">{day(r.confirmedAt)}</span>,
             },
             {
               key: 'actions',
@@ -192,7 +253,10 @@ export default async function NewsletterSubscribersPage({ searchParams }: Props)
               cell: (r) => (
                 <div className="flex flex-wrap justify-end gap-1">
                   {r.status === 'pending' && resendDue(r.confirmationSentAt) ? (
-                    <ActionButton action={resendConfirmationsAction.bind(null, [r.id])} aria-label={`Re-send confirmation to ${r.email}`}>
+                    <ActionButton
+                      action={resendConfirmationsAction.bind(null, [r.id])}
+                      aria-label={`Re-send confirmation to ${r.email}`}
+                    >
                       Re-send
                     </ActionButton>
                   ) : null}

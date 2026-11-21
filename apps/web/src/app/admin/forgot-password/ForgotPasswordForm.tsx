@@ -11,7 +11,7 @@ const inputCls =
 export default function ForgotPasswordForm() {
   const [state, formAction, pending] = useActionState<ForgotState, FormData>(
     requestStaffPasswordReset,
-    null,
+    null
   )
 
   // Swap the form for confirmation rather than showing both. Leaving the form
@@ -22,12 +22,12 @@ export default function ForgotPasswordForm() {
         <h1 className="mb-2 text-[22px] font-medium text-white">Check your email</h1>
         <p className="mb-2 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">{NEUTRAL}</p>
         <p className="mb-7 text-[13px] leading-relaxed text-[oklch(0.68_0.03_250)]">
-          The link is valid for 60 minutes and can be used once. Your current password keeps
-          working until you set a new one.
+          The link is valid for 60 minutes and can be used once. Your current password keeps working
+          until you set a new one.
         </p>
         <Link
           href="/admin/sign-in"
-          className="rounded-lg inline-flex h-11 w-full items-center justify-center border border-[var(--color-ih-navy-2)] text-sm font-medium text-[#ffffff] transition-colors hover:bg-[var(--color-ih-navy)]"
+          className="inline-flex h-11 w-full items-center justify-center rounded-lg border border-[var(--color-ih-navy-2)] text-sm font-medium text-[#ffffff] transition-colors hover:bg-[var(--color-ih-navy)]"
         >
           Back to sign in
         </Link>
@@ -56,13 +56,20 @@ export default function ForgotPasswordForm() {
           <label className="text-[12px] font-medium text-[oklch(0.75_0.02_250)]" htmlFor="email">
             Work email
           </label>
-          <input id="email" name="email" type="email" autoComplete="email" required className={inputCls} />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            className={inputCls}
+          />
         </div>
 
         <button
           type="submit"
           disabled={pending}
-          className="mt-1 h-11 bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover mt-1 h-11 text-sm font-medium transition-opacity disabled:opacity-50"
         >
           {pending ? 'Sending…' : 'Email me a link'}
         </button>

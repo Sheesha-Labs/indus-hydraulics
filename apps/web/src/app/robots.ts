@@ -37,7 +37,14 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       },
     })
     .catch((err: unknown) => {
-      console.warn(`[robots] seo settings unavailable, serving the default: ${String((err as Error)?.message ?? err).split('\n').filter(Boolean).slice(-1)[0]}`)
+      console.warn(
+        `[robots] seo settings unavailable, serving the default: ${
+          String((err as Error)?.message ?? err)
+            .split('\n')
+            .filter(Boolean)
+            .slice(-1)[0]
+        }`
+      )
       return null
     })
 
@@ -142,7 +149,6 @@ function toRule(c: { userAgent: string; allow: string[]; disallow: string[] }) {
 // editable from the SEO console, and an internal page drifting into the index
 // is the kind of thing nobody notices until it ranks.
 const RESERVED_DISALLOW = ['/admin', '/admin/', '/design']
-
 
 /**
  * `MetadataRoute.Robots['rules']` is `Rule | RuleWithRequiredUserAgent[]`, so

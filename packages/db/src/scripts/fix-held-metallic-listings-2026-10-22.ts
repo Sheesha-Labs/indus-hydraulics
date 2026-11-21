@@ -15,9 +15,22 @@ import { PrismaClient } from '@prisma/client'
 const db = new PrismaClient()
 
 const DROP_SPECS = [
-  'OEM Part Code', 'Nominal ID Range', 'Bend Radius (Static)', 'Bend Radius (Dynamic)', 'Live Length for Vibration', 'Weight',
-  'Max Working Pressure', 'Min Burst Pressure', 'Safety Factor', 'Min Operating Temperature', 'Max Operating Temperature',
-  'PED 2014/68/EU Module', 'ASME Compliance', 'NACE MR0175 / ISO 15156', 'CGA / UL / Chlorine Institute Certs', 'End Fitting Material',
+  'OEM Part Code',
+  'Nominal ID Range',
+  'Bend Radius (Static)',
+  'Bend Radius (Dynamic)',
+  'Live Length for Vibration',
+  'Weight',
+  'Max Working Pressure',
+  'Min Burst Pressure',
+  'Safety Factor',
+  'Min Operating Temperature',
+  'Max Operating Temperature',
+  'PED 2014/68/EU Module',
+  'ASME Compliance',
+  'NACE MR0175 / ISO 15156',
+  'CGA / UL / Chlorine Institute Certs',
+  'End Fitting Material',
 ]
 
 const ORDER =
@@ -35,7 +48,8 @@ const CRYO_POINTS = [
 
 const REWRITES: Record<string, { short: string; long: string }> = {
   'IH-MH-HOSE-MASTER-CGA96-AR': {
-    short: 'Hose Master braided stainless steel hose assembly for argon, nitrogen and CO₂ transfer. End connections, pressure rating and certification confirmed per build.',
+    short:
+      'Hose Master braided stainless steel hose assembly for argon, nitrogen and CO₂ transfer. End connections, pressure rating and certification confirmed per build.',
     long: body(
       'A <strong>Hose Master corrugated stainless steel hose assembly for industrial gas service</strong> — argon, nitrogen or carbon dioxide — built to the bore, length and end connections the installation needs.',
       [
@@ -44,11 +58,16 @@ const REWRITES: Record<string, { short: string; long: string }> = {
         '“CGA96” in a hose description refers to a Canadian Gas Association fuel-gas certification, not an industrial-gas standard; confirm the certification the project needs.',
         'Pressure, temperature and bend radius confirmed per build.',
       ],
-      ['Argon and mixed-gas supply to welding cells', 'Nitrogen blanketing and purge lines', 'CO₂ supply lines'],
+      [
+        'Argon and mixed-gas supply to welding cells',
+        'Nitrogen blanketing and purge lines',
+        'CO₂ supply lines',
+      ]
     ),
   },
   'IH-MH-THORBURN-CGA96-O2': {
-    short: 'Thorburn braided stainless steel hose for oxygen service, cleaned and capped for oxygen. Connections, pressure rating and certification confirmed per build.',
+    short:
+      'Thorburn braided stainless steel hose for oxygen service, cleaned and capped for oxygen. Connections, pressure rating and certification confirmed per build.',
     long: body(
       'A <strong>Thorburn corrugated stainless steel hose for oxygen service</strong>. Thorburn supplies hose assemblies degreased, cleaned and capped for oxygen service, and uses CGA96 as a model family on its cryogenic transfer hose.',
       [
@@ -56,11 +75,16 @@ const REWRITES: Record<string, { short: string; long: string }> = {
         'Oxygen end connections, so the hose cannot be connected to another gas system.',
         'Pressure, temperature and bend radius confirmed per build — oxygen service limits velocity and material choice, so give the full duty.',
       ],
-      ['Oxygen supply to cutting and welding stations', 'Liquid and gaseous oxygen transfer', 'Plant oxygen distribution'],
+      [
+        'Oxygen supply to cutting and welding stations',
+        'Liquid and gaseous oxygen transfer',
+        'Plant oxygen distribution',
+      ]
     ),
   },
   'IH-MH-SENIOR-FLEX-BARTLETT-FIRESAFE': {
-    short: 'Senior Flexonics all-metal corrugated stainless hose assembly for hydrocarbon lines where fire resistance matters. Ratings and fire-test evidence confirmed per build.',
+    short:
+      'Senior Flexonics all-metal corrugated stainless hose assembly for hydrocarbon lines where fire resistance matters. Ratings and fire-test evidence confirmed per build.',
     long: body(
       'A <strong>Senior Flexonics all-metal corrugated hose assembly</strong> for hydrocarbon and process lines where a rubber hose would fail in a fire. Senior Flexonics builds metal hose at its Bartlett, Illinois plant.',
       [
@@ -68,11 +92,16 @@ const REWRITES: Record<string, { short: string; long: string }> = {
         'Fire-test standards differ: API 607, API 6FA and ISO 10497 are valve fire tests, so ask for the evidence that applies to a hose assembly.',
         'Pressure, temperature and end connections confirmed per build.',
       ],
-      ['Hydrocarbon transfer near fire risk', 'Refinery and petrochemical flexible connections', 'Pump and equipment connections in fire zones'],
+      [
+        'Hydrocarbon transfer near fire risk',
+        'Refinery and petrochemical flexible connections',
+        'Pump and equipment connections in fire zones',
+      ]
     ),
   },
   'IH-MH-THORBURN-THERMACOVER-CRYO': {
-    short: 'Thorburn removable insulation cover for cryogenic hose — cuts heat gain, icing and product loss. Fabric and core chosen for the hose and temperature.',
+    short:
+      'Thorburn removable insulation cover for cryogenic hose — cuts heat gain, icing and product loss. Fabric and core chosen for the hose and temperature.',
     long: body(
       'A <strong>Thorburn removable insulation cover for cryogenic hose</strong>, made to fit the hose or fitting and taken off for inspection.',
       [
@@ -80,15 +109,27 @@ const REWRITES: Record<string, { short: string; long: string }> = {
         'Reduces heat gain, external icing and product lost per fill.',
         'Cover material and thickness confirmed for the hose size and service temperature.',
       ],
-      ['Liquid nitrogen, oxygen and argon transfer hose', 'Personnel protection on cold lines', 'Reducing frost and ice build-up'],
+      [
+        'Liquid nitrogen, oxygen and argon transfer hose',
+        'Personnel protection on cold lines',
+        'Reducing frost and ice build-up',
+      ]
     ),
   },
   'IH-MH-SENIOR-FLEX-CRYO-LNG': {
-    short: 'Senior Flexonics stainless metal hose assembly for LNG transfer. Insulation, end connections, pressure rating and class approval confirmed per build.',
-    long: body('A <strong>Senior Flexonics corrugated stainless hose assembly for LNG transfer</strong>, built to the bore, length, connections and approvals of the installation.', CRYO_POINTS.concat(['LNG bunkering hose is normally specified with a classification-society approval — state which one the vessel or terminal requires.']), ['LNG bunkering and tanker transfer', 'Terminal and plant LNG lines']),
+    short:
+      'Senior Flexonics stainless metal hose assembly for LNG transfer. Insulation, end connections, pressure rating and class approval confirmed per build.',
+    long: body(
+      'A <strong>Senior Flexonics corrugated stainless hose assembly for LNG transfer</strong>, built to the bore, length, connections and approvals of the installation.',
+      CRYO_POINTS.concat([
+        'LNG bunkering hose is normally specified with a classification-society approval — state which one the vessel or terminal requires.',
+      ]),
+      ['LNG bunkering and tanker transfer', 'Terminal and plant LNG lines']
+    ),
   },
   'IH-MH-SENIOR-FLEX-TSJ-CHEMICAL': {
-    short: 'Senior Flexonics steam-jacketed hose for chemical process lines — a hose within a hose that keeps the product hot. Ratings and flanges confirmed per build.',
+    short:
+      'Senior Flexonics steam-jacketed hose for chemical process lines — a hose within a hose that keeps the product hot. Ratings and flanges confirmed per build.',
     long: body(
       'A <strong>Senior Flexonics steam-jacketed hose</strong>: the product runs in an inner metal hose, steam or another heating medium in the outer, keeping viscous or temperature-sensitive chemicals fluid.',
       [
@@ -96,12 +137,21 @@ const REWRITES: Record<string, { short: string; long: string }> = {
         'Flange standard (EN or ASME) chosen to match the plant.',
         'Pressure and temperature of both the product and jacket confirmed per build.',
       ],
-      ['Resin and specialty-chemical transfer', 'Viscous products that set if they cool', 'Heated loading lines'],
+      [
+        'Resin and specialty-chemical transfer',
+        'Viscous products that set if they cool',
+        'Heated loading lines',
+      ]
     ),
   },
   'IH-MH-WITZENMANN-CRYO-LAR': {
-    short: 'Witzenmann stainless metal hose for liquid argon transfer. Insulation, connections and ratings confirmed per build.',
-    long: body('A <strong>Witzenmann corrugated stainless hose assembly for liquid argon</strong>. Witzenmann’s standard corrugated hose has a 316L core and 304 braid and covers −270 to 550 °C across its range.', CRYO_POINTS, ['Liquid argon supply to welding and fabrication', 'Tanker and storage-tank transfer']),
+    short:
+      'Witzenmann stainless metal hose for liquid argon transfer. Insulation, connections and ratings confirmed per build.',
+    long: body(
+      'A <strong>Witzenmann corrugated stainless hose assembly for liquid argon</strong>. Witzenmann’s standard corrugated hose has a 316L core and 304 braid and covers −270 to 550 °C across its range.',
+      CRYO_POINTS,
+      ['Liquid argon supply to welding and fabrication', 'Tanker and storage-tank transfer']
+    ),
   },
 }
 
@@ -109,12 +159,24 @@ async function main() {
   const dryRun = process.argv.includes('--dry-run')
   for (const [sku, r] of Object.entries(REWRITES)) {
     const p = await db.product.findUnique({ where: { sku }, select: { id: true } })
-    if (!p) { console.log(`  ! ${sku} not found`); continue }
-    const drop = await db.productSpec.count({ where: { productId: p.id, label: { in: DROP_SPECS } } })
+    if (!p) {
+      console.log(`  ! ${sku} not found`)
+      continue
+    }
+    const drop = await db.productSpec.count({
+      where: { productId: p.id, label: { in: DROP_SPECS } },
+    })
     console.log(`  ${dryRun ? '[dry-run] ' : ''}${sku}: copy rewritten, ${drop} spec rows removed`)
     if (dryRun) continue
     await db.$transaction([
-      db.product.update({ where: { id: p.id }, data: { descriptionShort: r.short, descriptionLong: r.long, seoDescription: r.short.slice(0, 300) } }),
+      db.product.update({
+        where: { id: p.id },
+        data: {
+          descriptionShort: r.short,
+          descriptionLong: r.long,
+          seoDescription: r.short.slice(0, 300),
+        },
+      }),
       db.productSpec.deleteMany({ where: { productId: p.id, label: { in: DROP_SPECS } } }),
     ])
   }

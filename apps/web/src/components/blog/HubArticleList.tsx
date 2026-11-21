@@ -38,17 +38,17 @@ export default function HubArticleList({
   return (
     <div className="max-w-[1000px] min-w-0">
       {showHead && (
-        <div className="flex flex-col items-start gap-3 border-b border-ih-ink pb-3.5 min-[761px]:flex-row min-[761px]:items-center min-[761px]:justify-between min-[761px]:gap-4">
+        <div className="border-ih-ink flex flex-col items-start gap-3 border-b pb-3.5 min-[761px]:flex-row min-[761px]:items-center min-[761px]:justify-between min-[761px]:gap-4">
           <h2
             id="hub-articles-heading"
-            className="font-serif text-[28px] font-normal leading-[1.08] tracking-[-0.01em] text-ih-ink min-[761px]:text-[34px]"
+            className="text-ih-ink font-serif text-[28px] leading-[1.08] font-normal tracking-[-0.01em] min-[761px]:text-[34px]"
           >
             All {total} articles
           </h2>
           <div
             role="group"
             aria-label="Sort articles"
-            className="inline-flex h-10 items-center rounded-md border border-ih-border-strong bg-ih-surface p-[3px]"
+            className="border-ih-border-strong bg-ih-surface inline-flex h-10 items-center rounded-md border p-[3px]"
           >
             {SORTS.map((option) => {
               const on = sort === option.key
@@ -73,7 +73,7 @@ export default function HubArticleList({
       {sort === 'newest' ? (
         groupByMonth(items).map((group) => (
           <div key={group.key}>
-            <h3 className="flex justify-between border-b border-ih-border pb-2 pt-[22px] font-mono text-[11px] font-medium uppercase tracking-[0.1em] text-ih-ink-2">
+            <h3 className="border-ih-border text-ih-ink-2 flex justify-between border-b pt-[22px] pb-2 font-mono text-[11px] font-medium tracking-[0.1em] uppercase">
               {group.label}
               <span className="text-ih-muted">{group.items.length}</span>
             </h3>
@@ -93,18 +93,20 @@ function Rows({ items }: { items: HubListItem[] }) {
       {items.map((item) => (
         <li
           key={item.slug}
-          className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-3 gap-y-1 border-b border-ih-border py-3.5 min-[761px]:grid-cols-[110px_minmax(0,1fr)_56px] min-[761px]:items-baseline min-[761px]:gap-5"
+          className="border-ih-border grid grid-cols-[minmax(0,1fr)_auto] gap-x-3 gap-y-1 border-b py-3.5 min-[761px]:grid-cols-[110px_minmax(0,1fr)_56px] min-[761px]:items-baseline min-[761px]:gap-5"
         >
           <Link
             href={`/blog/${item.slug}`}
-            className="col-span-2 text-pretty text-[15px] font-medium leading-[1.4] tracking-[-0.01em] text-ih-ink transition-colors duration-150 hover:text-ih-accent motion-reduce:transition-none min-[761px]:col-span-1 min-[761px]:col-start-2 min-[761px]:row-start-1 min-[761px]:text-[16px]"
+            className="text-ih-ink hover:text-ih-accent col-span-2 text-[15px] leading-[1.4] font-medium tracking-[-0.01em] text-pretty transition-colors duration-150 motion-reduce:transition-none min-[761px]:col-span-1 min-[761px]:col-start-2 min-[761px]:row-start-1 min-[761px]:text-[16px]"
           >
             {item.title}
           </Link>
-          <span className="font-mono text-[11.5px] text-ih-muted min-[761px]:col-start-1 min-[761px]:row-start-1">
-            {item.dateTime && item.dateLabel ? <time dateTime={item.dateTime}>{item.dateLabel}</time> : null}
+          <span className="text-ih-muted font-mono text-[11.5px] min-[761px]:col-start-1 min-[761px]:row-start-1">
+            {item.dateTime && item.dateLabel ? (
+              <time dateTime={item.dateTime}>{item.dateLabel}</time>
+            ) : null}
           </span>
-          <span className="text-right font-mono text-[11.5px] text-ih-muted min-[761px]:col-start-3 min-[761px]:row-start-1">
+          <span className="text-ih-muted text-right font-mono text-[11.5px] min-[761px]:col-start-3 min-[761px]:row-start-1">
             {item.minutes ? `${item.minutes} min` : null}
           </span>
         </li>

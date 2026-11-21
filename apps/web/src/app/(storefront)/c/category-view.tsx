@@ -37,7 +37,12 @@ import {
   CategorySizeBrief,
   categoryFaqs,
 } from '../../../components/category/CategoryBands'
-import { categorySizeSummary, gccMarketLinks, getShelfBrandCounts, getShelfSpecRows } from '../../../lib/category-bands'
+import {
+  categorySizeSummary,
+  gccMarketLinks,
+  getShelfBrandCounts,
+  getShelfSpecRows,
+} from '../../../lib/category-bands'
 import { getSubPageContent } from '../../../lib/page-content'
 import { getArticlesForCategory } from '../../../lib/related-reading'
 import {
@@ -480,24 +485,24 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
         <div className="border-ih-border border-b py-5">
           {/* Phones show the name alone: no eyebrow, no intro paragraph
               (owner call, 2026-11-19). Both stay in the page from sm up. */}
-          <p className="text-ih-muted mb-2 hidden font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] sm:block">
+          <p className="text-ih-muted mb-2 hidden font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase sm:block">
             {over(heroCopy, 'eyebrow', 'Category')}
           </p>
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
-            <h1 className="font-serif text-[clamp(28px,3.6vw,38px)] font-normal leading-[1.06] tracking-[-0.01em]">
+            <h1 className="font-serif text-[clamp(28px,3.6vw,38px)] leading-[1.06] font-normal tracking-[-0.01em]">
               {over(heroCopy, 'heading', category.name)}
             </h1>
-          <div className="text-ih-muted flex gap-6 font-mono text-[12px]">
-            <span>
-              <b className="text-ih-ink font-medium">{total}</b> SKUs
-            </span>
-            {/* Own-label ranges carry no brand, and "0 brands" reads as broken. */}
-            {allBrands.length > 0 && (
+            <div className="text-ih-muted flex gap-6 font-mono text-[12px]">
               <span>
-                <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
+                <b className="text-ih-ink font-medium">{total}</b> SKUs
               </span>
-            )}
-          </div>
+              {/* Own-label ranges carry no brand, and "0 brands" reads as broken. */}
+              {allBrands.length > 0 && (
+                <span>
+                  <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
+                </span>
+              )}
+            </div>
           </div>
           {heroIntro && (
             <p className="text-ih-muted mt-2 hidden max-w-[760px] text-[14px] leading-[1.55] sm:block">
@@ -516,7 +521,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
               <Link
                 key={child.id}
                 href={`/c/${child.slug}`}
-                className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] shrink-0 items-center whitespace-nowrap rounded-full border px-3 text-[12.5px] transition-colors"
+                className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] shrink-0 items-center rounded-full border px-3 text-[12.5px] whitespace-nowrap transition-colors"
               >
                 {child.name}
               </Link>
@@ -551,11 +556,11 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
           */}
           <aside
             id="refine"
-            className="order-2 scroll-mt-[120px] self-start lg:order-none lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto"
+            className="order-2 scroll-mt-[120px] self-start lg:sticky lg:top-[124px] lg:order-none lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto"
           >
             <div className="flex flex-col gap-6">
               <div className="flex items-center justify-between">
-                <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                   Refine{activeFilterCount > 0 ? ` · ${activeFilterCount} active` : ''}
                 </span>
                 {activeFilterCount > 0 && (
@@ -780,10 +785,12 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] items-center rounded-md border px-3 text-[12.5px] transition-colors lg:hidden"
                   >
                     Refine{activeFilterCount > 0 ? ` · ${activeFilterCount}` : ''}
-                    <span aria-hidden="true" className="ml-1">↓</span>
+                    <span aria-hidden="true" className="ml-1">
+                      ↓
+                    </span>
                   </a>
                 )}
-                <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
+                <span className="text-ih-muted font-mono text-[10.5px] tracking-[0.08em] uppercase">
                   Sort
                 </span>
                 <div className="border-ih-border flex overflow-hidden rounded-md border">
@@ -832,7 +839,17 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     message="This category has no published SKUs. Tell us what you need and an engineer will source it."
                     action={
                       <Button asChild kind="primary">
-                        <a href={enquiryMailto({ subject: `Enquiry: ${category.name}`, body: enquiryBody({ about: category.name, url: urlFor(`/c/${category.slug}`) }) })}>Email an enquiry</a>
+                        <a
+                          href={enquiryMailto({
+                            subject: `Enquiry: ${category.name}`,
+                            body: enquiryBody({
+                              about: category.name,
+                              url: urlFor(`/c/${category.slug}`),
+                            }),
+                          })}
+                        >
+                          Email an enquiry
+                        </a>
                       </Button>
                     }
                   />
@@ -845,7 +862,11 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     key={product.id}
                     product={product}
                     fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
-                    inquire={{ sku: product.sku, title: product.title, url: urlFor(`/p/${product.slug}`) }}
+                    inquire={{
+                      sku: product.sku,
+                      title: product.title,
+                      url: urlFor(`/p/${product.slug}`),
+                    }}
                   />
                 ))}
               </div>
@@ -908,10 +929,28 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     Same data, same null-when-unwritten rule as the full bands.
   */
   const briefs: Record<string, ReactNode> = {
-    guidance: <CategoryProseBrief key="guidance" values={content.values('guidance')} fallbackEyebrow="How to choose" />,
-    standards: <CategoryProseBrief key="standards" values={content.values('standards')} fallbackEyebrow="Standards" />,
+    guidance: (
+      <CategoryProseBrief
+        key="guidance"
+        values={content.values('guidance')}
+        fallbackEyebrow="How to choose"
+      />
+    ),
+    standards: (
+      <CategoryProseBrief
+        key="standards"
+        values={content.values('standards')}
+        fallbackEyebrow="Standards"
+      />
+    ),
     sizes: <CategorySizeBrief key="sizes" summary={sizeSummary} />,
-    service: <CategoryProseBrief key="service" values={content.values('service')} fallbackEyebrow="Service" />,
+    service: (
+      <CategoryProseBrief
+        key="service"
+        values={content.values('service')}
+        fallbackEyebrow="Service"
+      />
+    ),
     delivery: (
       <CategoryDeliveryBrief
         key="delivery"
@@ -934,14 +973,14 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
   */
   const listingAt = content.order.indexOf('listing')
   const stripKeys = content.order.filter(
-    (key, i) => (listingAt === -1 || i < listingAt) && key in briefs,
+    (key, i) => (listingAt === -1 || i < listingAt) && key in briefs
   )
   const rendered: ReactNode[] = []
   for (const key of content.order) {
     if (stripKeys.includes(key)) continue
     if (key === 'listing') {
       rendered.push(
-        <CategoryBriefStrip key="brief-strip">{stripKeys.map((k) => briefs[k])}</CategoryBriefStrip>,
+        <CategoryBriefStrip key="brief-strip">{stripKeys.map((k) => briefs[k])}</CategoryBriefStrip>
       )
     }
     rendered.push(bands[key] ?? null)

@@ -60,7 +60,7 @@ async function persist(
   kind: SubPageKind,
   slug: string,
   sections: StoredSection[],
-  staffId: string,
+  staffId: string
 ): Promise<SaveSubPageResult> {
   const key = subPageContentKey(kind, slug)
   try {
@@ -91,7 +91,7 @@ async function persist(
 
 export async function saveSubPage(
   pageId: string,
-  sections: StoredSection[],
+  sections: StoredSection[]
 ): Promise<SaveSubPageResult> {
   const editor = await editorId()
   if ('error' in editor) return editor.error

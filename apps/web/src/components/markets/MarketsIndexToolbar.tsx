@@ -86,7 +86,7 @@ export default function MarketsIndexToolbar({
         Above `sm` it costs a single row and earns its place across a
         9,000px page.
       */
-      className="border-b border-ih-border bg-ih-surface/95 backdrop-blur supports-[backdrop-filter]:bg-ih-surface/85 sm:sticky sm:top-[107px] sm:z-30"
+      className="border-ih-border bg-ih-surface/95 supports-[backdrop-filter]:bg-ih-surface/85 border-b backdrop-blur sm:sticky sm:top-[107px] sm:z-30"
     >
       {matcher && (
         <style>
@@ -99,7 +99,10 @@ export default function MarketsIndexToolbar({
 
       <div className="mx-auto flex max-w-[1440px] flex-col gap-3 px-5 py-3 sm:px-8 lg:flex-row lg:items-center lg:gap-6 lg:px-12">
         <div className="flex items-center gap-2.5">
-          <label htmlFor="mk-filter" className="mono shrink-0 text-[10px] uppercase tracking-[0.13em] text-ih-muted">
+          <label
+            htmlFor="mk-filter"
+            className="mono text-ih-muted shrink-0 text-[10px] tracking-[0.13em] uppercase"
+          >
             Find a destination
           </label>
           <input
@@ -109,7 +112,7 @@ export default function MarketsIndexToolbar({
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Country or region"
             autoComplete="off"
-            className="h-9 w-full min-w-0 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[13.5px] text-ih-ink outline-none transition-[border-color,box-shadow] duration-150 placeholder:text-ih-muted focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft lg:w-[220px]"
+            className="border-ih-border bg-ih-surface text-ih-ink placeholder:text-ih-muted focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft h-9 w-full min-w-0 rounded-lg border px-2.5 text-[13.5px] transition-[border-color,box-shadow] duration-150 outline-none focus-visible:ring-[3px] lg:w-[220px]"
           />
         </div>
 
@@ -124,7 +127,7 @@ export default function MarketsIndexToolbar({
             <a
               key={region.anchor}
               href={`#region-${region.anchor}`}
-              className="mono shrink-0 whitespace-nowrap rounded-sm px-2 py-1.5 text-[10px] uppercase tracking-[0.1em] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-accent"
+              className="mono text-ih-muted hover:bg-ih-surface-2 hover:text-ih-accent shrink-0 rounded-sm px-2 py-1.5 text-[10px] tracking-[0.1em] whitespace-nowrap uppercase transition-colors"
             >
               {region.name} <span className="text-ih-muted-2">{region.count}</span>
             </a>
@@ -133,7 +136,11 @@ export default function MarketsIndexToolbar({
 
         {/* Announced on change so a screen-reader user learns the grid
             shrank — the visual cue is 100 cards vanishing. */}
-        <p role="status" aria-live="polite" className="mono shrink-0 text-[10px] uppercase tracking-[0.1em] text-ih-muted-2">
+        <p
+          role="status"
+          aria-live="polite"
+          className="mono text-ih-muted-2 shrink-0 text-[10px] tracking-[0.1em] uppercase"
+        >
           {matches === null
             ? ''
             : matches === 0

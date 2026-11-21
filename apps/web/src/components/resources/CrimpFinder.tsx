@@ -36,11 +36,20 @@ export default function CrimpFinder() {
   const byHose = useMemo(() => CRIMP_SPECS.filter((r) => hose === ALL || r.hose === hose), [hose])
   const seriesOptions = useMemo(
     () => CRIMP_SERIES.filter((s) => byHose.some((r) => r.series === s.code)),
-    [byHose],
+    [byHose]
   )
-  const bySeries = useMemo(() => byHose.filter((r) => series === ALL || r.series === series), [byHose, series])
-  const dashOptions = useMemo(() => [...new Set(bySeries.map((r) => r.dash))].sort((a, b) => a - b), [bySeries])
-  const rows = useMemo(() => bySeries.filter((r) => dash === ALL || r.dash === dash), [bySeries, dash])
+  const bySeries = useMemo(
+    () => byHose.filter((r) => series === ALL || r.series === series),
+    [byHose, series]
+  )
+  const dashOptions = useMemo(
+    () => [...new Set(bySeries.map((r) => r.dash))].sort((a, b) => a - b),
+    [bySeries]
+  )
+  const rows = useMemo(
+    () => bySeries.filter((r) => dash === ALL || r.dash === dash),
+    [bySeries, dash]
+  )
 
   const hoseName = new Map(CRIMP_HOSES.map((h) => [h.code, h.name]))
   const seriesName = new Map(CRIMP_SERIES.map((s) => [s.code, s.name]))
@@ -52,10 +61,10 @@ export default function CrimpFinder() {
         role="search"
         aria-label="Filter crimp settings"
         onSubmit={(event) => event.preventDefault()}
-        className="grid grid-cols-1 items-end gap-3 rounded-lg border border-ih-border bg-ih-surface p-4 sm:grid-cols-2 lg:grid-cols-[repeat(3,minmax(0,1fr))_auto]"
+        className="border-ih-border bg-ih-surface grid grid-cols-1 items-end gap-3 rounded-lg border p-4 sm:grid-cols-2 lg:grid-cols-[repeat(3,minmax(0,1fr))_auto]"
       >
         <label className="flex flex-col gap-1.5">
-          <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">Hose</span>
+          <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">Hose</span>
           <Select
             id="crimp-hose"
             className="h-10 text-[13.5px]"
@@ -75,7 +84,9 @@ export default function CrimpFinder() {
           </Select>
         </label>
         <label className="flex flex-col gap-1.5">
-          <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">Fitting series</span>
+          <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">
+            Fitting series
+          </span>
           <Select
             id="crimp-series"
             className="h-10 text-[13.5px]"
@@ -94,12 +105,14 @@ export default function CrimpFinder() {
           </Select>
         </label>
         <label className="flex flex-col gap-1.5">
-          <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">Size</span>
+          <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">Size</span>
           <Select
             id="crimp-size"
             className="h-10 text-[13.5px]"
             value={String(dash)}
-            onChange={(event) => setDash(event.target.value === ALL ? ALL : Number(event.target.value))}
+            onChange={(event) =>
+              setDash(event.target.value === ALL ? ALL : Number(event.target.value))
+            }
           >
             <option value={ALL}>All sizes</option>
             {dashOptions.map((d) => (
@@ -124,7 +137,7 @@ export default function CrimpFinder() {
       </form>
 
       {/* Announced politely so a screen-reader user hears the count change. */}
-      <p aria-live="polite" className="mono text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+      <p aria-live="polite" className="mono text-ih-muted text-[11px] tracking-[0.08em] uppercase">
         {rows.length === CRIMP_SPECS.length
           ? `All ${rows.length} crimp settings`
           : `${rows.length} of ${CRIMP_SPECS.length} crimp settings`}
@@ -168,9 +181,13 @@ export default function CrimpFinder() {
             <td className={TD}>-{row.dash}</td>
             <td className={TD}>{row.bore}</td>
             <td className={TD}>{seriesName.get(row.series)}</td>
-            <td className={`${TD_NUM} text-[14px] font-medium text-ih-ink`}>{row.crimpIn.toFixed(2)}</td>
+            <td className={`${TD_NUM} text-ih-ink text-[14px] font-medium`}>
+              {row.crimpIn.toFixed(2)}
+            </td>
             <td className={TD_NUM}>{row.crimpMm.toFixed(2)}</td>
-            <td className={`${TD} font-sans text-[12.5px]`}>{CRIMP_DIE_POSITIONS[row.die].label}</td>
+            <td className={`${TD} font-sans text-[12.5px]`}>
+              {CRIMP_DIE_POSITIONS[row.die].label}
+            </td>
           </tr>
         ))}
       </RefTable>

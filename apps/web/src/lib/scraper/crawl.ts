@@ -59,7 +59,10 @@ export type CrawlResult = {
 
 const DEFAULT_MAX_URLS = 500
 
-export async function discoverAndCrawl(startUrl: string, opts: CrawlOptions = {}): Promise<CrawlResult> {
+export async function discoverAndCrawl(
+  startUrl: string,
+  opts: CrawlOptions = {}
+): Promise<CrawlResult> {
   const hostname = hostnameOf(startUrl)
   const ctx = createScraperContext({
     hostname,
@@ -82,7 +85,7 @@ export async function discoverAndCrawl(startUrl: string, opts: CrawlOptions = {}
 export async function crawlUrlList(
   startUrl: string,
   urls: string[],
-  opts: CrawlOptions = {},
+  opts: CrawlOptions = {}
 ): Promise<CrawlResult> {
   const hostname = hostnameOf(startUrl)
   const ctx = createScraperContext({
@@ -100,7 +103,7 @@ async function crawlInternal(
   ctx: ScraperContext,
   adapter: Adapter,
   urls: string[],
-  opts: CrawlOptions,
+  opts: CrawlOptions
 ): Promise<{
   products: ScrapedProductDraft[]
   errors: Array<{ url: string; message: string }>

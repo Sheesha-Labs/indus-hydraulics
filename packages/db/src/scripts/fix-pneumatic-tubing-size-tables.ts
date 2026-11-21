@@ -45,7 +45,12 @@ const CATALOGUE = resolve(DIR, 'catalogue.json')
 const RATINGS = resolve(DIR, 'maker-ratings-2026-11-19.json')
 
 type Dims = Record<string, string | number | null | undefined>
-type Variant = { partNumber: string; position: number; pressureBar?: number | null; dimensions?: Dims | null }
+type Variant = {
+  partNumber: string
+  position: number
+  pressureBar?: number | null
+  dimensions?: Dims | null
+}
 type Product = {
   slug: string
   category: string
@@ -60,7 +65,13 @@ type Ratings = {
   smcInchSizesMm: Record<string, Record<string, [number, number]>>
   parkerFluoropolymer: Record<
     string,
-    { odMm: number; idMm: number; wallMm: number; workingPressureBar: number; workingPressurePsi: number }
+    {
+      odMm: number
+      idMm: number
+      wallMm: number
+      workingPressureBar: number
+      workingPressurePsi: number
+    }
   >
   parkerAS81914: Record<string, { maxIdMm: number; maxOdMm: number }>
 }
@@ -68,34 +79,111 @@ type Ratings = {
 const SKIP = new Set(['atp-tubings', 'nycoil-tubings'])
 
 const SMC_COLOURS: Record<string, string> = {
-  B: 'Black', W: 'White', R: 'Red', BU: 'Blue', Y: 'Yellow', G: 'Green', C: 'Clear', YR: 'Orange',
-  N: 'Translucent', BU1: 'Solid blue', BU2: 'Clear blue', BU3: 'Medium blue', BR1: 'Brown',
-  G1: 'Solid green', G2: 'Clear green', G3: 'Neon green', G4: 'Dark green', GR1: 'Gray', GR2: 'Light gray',
-  P1: 'Neon pink', PU1: 'Solid purple', PU2: 'Clear purple', R1: 'Solid red', R2: 'Clear red', S1: 'Silver',
-  Y1: 'Solid yellow', Y2: 'Clear yellow', Y3: 'Neon yellow', YR1: 'Clear orange', YR2: 'Neon orange',
+  B: 'Black',
+  W: 'White',
+  R: 'Red',
+  BU: 'Blue',
+  Y: 'Yellow',
+  G: 'Green',
+  C: 'Clear',
+  YR: 'Orange',
+  N: 'Translucent',
+  BU1: 'Solid blue',
+  BU2: 'Clear blue',
+  BU3: 'Medium blue',
+  BR1: 'Brown',
+  G1: 'Solid green',
+  G2: 'Clear green',
+  G3: 'Neon green',
+  G4: 'Dark green',
+  GR1: 'Gray',
+  GR2: 'Light gray',
+  P1: 'Neon pink',
+  PU1: 'Solid purple',
+  PU2: 'Clear purple',
+  R1: 'Solid red',
+  R2: 'Clear red',
+  S1: 'Silver',
+  Y1: 'Solid yellow',
+  Y2: 'Clear yellow',
+  Y3: 'Neon yellow',
+  YR1: 'Clear orange',
+  YR2: 'Neon orange',
 }
 const SMC_SERIES: Record<string, string> = {
-  T: 'SMC T nylon tube', TIA: 'SMC TIA nylon tube', TS: 'SMC TS soft nylon tube', TISA: 'SMC TISA soft nylon tube',
-  TU: 'SMC TU polyurethane tube', TIUB: 'SMC TIUB polyurethane tube', TUH: 'SMC TUH hard polyurethane tube',
-  TUZ: 'SMC TUZ wear-resistant polyurethane tube', TCU: 'SMC TCU polyurethane coil tube',
-  TRS: 'SMC TRS flame-resistant soft nylon tube', TIRS: 'SMC TIRS flame-resistant soft nylon tube', TRB: 'SMC TRB flame-resistant double-layer tube',
-  TRBU: 'SMC TRBU flame-resistant double-layer polyurethane tube', TRTU: 'SMC TRTU flame-resistant three-layer tube',
-  TPH: 'SMC TPH clean polyolefin tube', TPS: 'SMC TPS clean soft polyolefin tube', TL: 'SMC TL Super PFA tube',
-  TLM: 'SMC TLM PFA tube', TIL: 'SMC TIL Super PFA tube', TILB: 'SMC TIL Super PFA tube', TILM: 'SMC TILM PFA tube',
-  TH: 'SMC TH FEP tube', TIH: 'SMC TIH FEP tube', TIHA: 'SMC TIH FEP tube', TIHB: 'SMC TIH FEP tube',
-  TD: 'SMC TD modified PTFE tube', TID: 'SMC TID modified PTFE tube', TQ: 'SMC TQ two-layer fluoropolymer tube',
-  TAS: 'SMC TAS antistatic soft nylon tube', TAU: 'SMC TAU antistatic polyurethane tube', TIV: 'SMC TIV tube',
+  T: 'SMC T nylon tube',
+  TIA: 'SMC TIA nylon tube',
+  TS: 'SMC TS soft nylon tube',
+  TISA: 'SMC TISA soft nylon tube',
+  TU: 'SMC TU polyurethane tube',
+  TIUB: 'SMC TIUB polyurethane tube',
+  TUH: 'SMC TUH hard polyurethane tube',
+  TUZ: 'SMC TUZ wear-resistant polyurethane tube',
+  TCU: 'SMC TCU polyurethane coil tube',
+  TRS: 'SMC TRS flame-resistant soft nylon tube',
+  TIRS: 'SMC TIRS flame-resistant soft nylon tube',
+  TRB: 'SMC TRB flame-resistant double-layer tube',
+  TRBU: 'SMC TRBU flame-resistant double-layer polyurethane tube',
+  TRTU: 'SMC TRTU flame-resistant three-layer tube',
+  TPH: 'SMC TPH clean polyolefin tube',
+  TPS: 'SMC TPS clean soft polyolefin tube',
+  TL: 'SMC TL Super PFA tube',
+  TLM: 'SMC TLM PFA tube',
+  TIL: 'SMC TIL Super PFA tube',
+  TILB: 'SMC TIL Super PFA tube',
+  TILM: 'SMC TILM PFA tube',
+  TH: 'SMC TH FEP tube',
+  TIH: 'SMC TIH FEP tube',
+  TIHA: 'SMC TIH FEP tube',
+  TIHB: 'SMC TIH FEP tube',
+  TD: 'SMC TD modified PTFE tube',
+  TID: 'SMC TID modified PTFE tube',
+  TQ: 'SMC TQ two-layer fluoropolymer tube',
+  TAS: 'SMC TAS antistatic soft nylon tube',
+  TAU: 'SMC TAU antistatic polyurethane tube',
+  TIV: 'SMC TIV tube',
   PEAPP: 'SMC PEAPP polyethylene tube',
 }
 const INCH_OD: Record<string, string> = {
-  '01': '1/8"', '05': '3/16"', '07': '1/4"', '11': '3/8"', '13': '1/2"', '19': '3/4"', '25': '1"',
+  '01': '1/8"',
+  '05': '3/16"',
+  '07': '1/4"',
+  '11': '3/8"',
+  '13': '1/2"',
+  '19': '3/4"',
+  '25': '1"',
 }
-const INCH_OD_MM: Record<string, number> = { '01': 3.18, '05': 4.76, '07': 6.35, '11': 9.53, '13': 12.7, '19': 19.05, '25': 25.4 }
-const FT_FOR_M: Record<string, string> = { '16': '50 ft', '33': '100 ft', '77': '250 ft', '153': '500 ft', '305': '1,000 ft' }
+const INCH_OD_MM: Record<string, number> = {
+  '01': 3.18,
+  '05': 4.76,
+  '07': 6.35,
+  '11': 9.53,
+  '13': 12.7,
+  '19': 19.05,
+  '25': 25.4,
+}
+const FT_FOR_M: Record<string, string> = {
+  '16': '50 ft',
+  '33': '100 ft',
+  '77': '250 ft',
+  '153': '500 ft',
+  '305': '1,000 ft',
+}
 
 const PARKER_COLOURS: Record<string, string> = {
-  NT: 'Natural', '0T': 'Black', '2T': 'Red', '5T': 'Green', '6T': 'Blue', '9T': 'White',
-  BLK: 'Black', BLU: 'Blue', GRN: 'Green', RED: 'Red', TBL: 'Translucent blue', YEL: 'Yellow', WHT: 'White',
+  NT: 'Natural',
+  '0T': 'Black',
+  '2T': 'Red',
+  '5T': 'Green',
+  '6T': 'Blue',
+  '9T': 'White',
+  BLK: 'Black',
+  BLU: 'Blue',
+  GRN: 'Green',
+  RED: 'Red',
+  TBL: 'Translucent blue',
+  YEL: 'Yellow',
+  WHT: 'White',
 }
 
 const r2 = (n: number) => Math.round(n * 100) / 100
@@ -115,9 +203,16 @@ function smcMetricSize(code: string): [number, number] | null {
 
 type Rebuilt = { pressureBar: number | null; dimensions: Dims } | null
 
-function rebuildSmc(pn: string, ratings: Ratings): { rebuilt: Rebuilt; series: string | null; size: string | null } {
-  const metric = pn.match(/^(TRBU|TRTU|TRS|TRB|TUH|TUZ|TCU|TPH|TPS|TLM|TAS|TAU|TS|TU|TL|TH|TD|TQ|T)(\d{4})([A-Z]{1,2}\d?)?-(\d+)(?:-(\d+))?(?:-(X[0-9A-Z]+))?$/)
-  const inch = pn.match(/^(TISA|TIUB|TIRS|TILB|TILM|TIHA|TIHB|TIA|TIL|TIH|TID|TIV)(\d{2})([A-Z]{1,2}\d?)?(?:-(\d+))?(?:-(X[0-9A-Z]+))?$/)
+function rebuildSmc(
+  pn: string,
+  ratings: Ratings
+): { rebuilt: Rebuilt; series: string | null; size: string | null } {
+  const metric = pn.match(
+    /^(TRBU|TRTU|TRS|TRB|TUH|TUZ|TCU|TPH|TPS|TLM|TAS|TAU|TS|TU|TL|TH|TD|TQ|T)(\d{4})([A-Z]{1,2}\d?)?-(\d+)(?:-(\d+))?(?:-(X[0-9A-Z]+))?$/
+  )
+  const inch = pn.match(
+    /^(TISA|TIUB|TIRS|TILB|TILM|TIHA|TIHB|TIA|TIL|TIH|TID|TIV)(\d{2})([A-Z]{1,2}\d?)?(?:-(\d+))?(?:-(X[0-9A-Z]+))?$/
+  )
   const pe = pn.match(/^(PEAPP)(\d{2})([A-Z]{1,2}\d?)?-(\d+)$/)
   if (metric) {
     const [, series, code, colourCode, a, b, mto] = metric
@@ -125,7 +220,7 @@ function rebuildSmc(pn: string, ratings: Ratings): { rebuilt: Rebuilt; series: s
     const isCoil = series === 'TCU'
     const lengthM = isCoil ? null : a!
     const table = ratings.smcWorkingPressureBar[series!]
-    const pressure = table ? table[code!] ?? table['*'] ?? null : undefined
+    const pressure = table ? (table[code!] ?? table['*'] ?? null) : undefined
     const dims: Dims = {}
     let desc = SMC_SERIES[series!] ?? `SMC ${series} tube`
     if (size) {
@@ -145,7 +240,11 @@ function rebuildSmc(pn: string, ratings: Ratings): { rebuilt: Rebuilt; series: s
     }
     if (mto) desc += ' (made to order)'
     dims.item = desc
-    return { rebuilt: { pressureBar: pressure === undefined ? NaN : pressure, dimensions: dims }, series: series!, size: code! }
+    return {
+      rebuilt: { pressureBar: pressure === undefined ? NaN : pressure, dimensions: dims },
+      series: series!,
+      size: code!,
+    }
   }
   if (inch || pe) {
     const m = (inch ?? pe)!
@@ -176,15 +275,29 @@ function rebuildSmc(pn: string, ratings: Ratings): { rebuilt: Rebuilt; series: s
     if (mto) desc += ' (made to order)'
     dims.item = desc
     const table = ratings.smcWorkingPressureBar[series!]
-    const pressure = table ? table[code!] ?? table['*'] ?? null : undefined
-    return { rebuilt: { pressureBar: pressure === undefined ? NaN : pressure, dimensions: dims }, series: series!, size: code! }
+    const pressure = table ? (table[code!] ?? table['*'] ?? null) : undefined
+    return {
+      rebuilt: { pressureBar: pressure === undefined ? NaN : pressure, dimensions: dims },
+      series: series!,
+      size: code!,
+    }
   }
   return { rebuilt: null, series: null, size: null }
 }
 
 const inchFrac = (sixteenths: number): string => {
   const map: Record<number, string> = {
-    2: '1/8"', 2.5: '5/32"', 3: '3/16"', 4: '1/4"', 5: '5/16"', 6: '3/8"', 7: '7/16"', 8: '1/2"', 10: '5/8"', 12: '3/4"', 16: '1"',
+    2: '1/8"',
+    2.5: '5/32"',
+    3: '3/16"',
+    4: '1/4"',
+    5: '5/16"',
+    6: '3/8"',
+    7: '7/16"',
+    8: '1/2"',
+    10: '5/8"',
+    12: '3/4"',
+    16: '1"',
   }
   return map[sixteenths] ?? `${sixteenths}/16"`
 }
@@ -196,12 +309,15 @@ function rebuildParker(pn: string, ratings: Ratings): { rebuilt: Rebuilt; group:
     const stem = `${series}-${odCode}${wallCode}`
     const metric = series!.startsWith('2')
     const material =
-      { '01': 'PTFE', '03': 'FEP', '04': 'PFA', '05': 'high-purity PFA' }[series!.slice(1)] ?? 'fluoropolymer'
+      { '01': 'PTFE', '03': 'FEP', '04': 'PFA', '05': 'high-purity PFA' }[series!.slice(1)] ??
+      'fluoropolymer'
     const t = ratings.parkerFluoropolymer[stem]
     const od = t?.odMm ?? (metric ? Number(odCode) / 100 : (Number(odCode) / 1000) * 25.4)
     const wall = t?.wallMm ?? (metric ? Number(wallCode) / 100 : (Number(wallCode) / 1000) * 25.4)
     const id = t?.idMm ?? od - 2 * wall
-    const odLabel = metric ? `${fmt(od)} mm OD × ${fmt(wall)} mm wall` : `${(Number(odCode) / 1000).toFixed(3)}" OD × ${(Number(wallCode) / 1000).toFixed(3)}" wall`
+    const odLabel = metric
+      ? `${fmt(od)} mm OD × ${fmt(wall)} mm wall`
+      : `${(Number(odCode) / 1000).toFixed(3)}" OD × ${(Number(wallCode) / 1000).toFixed(3)}" wall`
     const colour = PARKER_COLOURS[colourCode!] ?? colourCode!
     return {
       group: stem,
@@ -238,8 +354,17 @@ function rebuildParker(pn: string, ratings: Ratings): { rebuilt: Rebuilt; group:
     const [, series, dash, wallCode, colourCode, len] = pu
     const odIn = Number(dash) / 16
     const wallIn = wallCode ? Number(wallCode) / 1000 : null
-    const material = { '95U': 'polyurethane', '95FR': 'flame-resistant polyurethane', NBR: 'nylon', NNR: 'nylon' }[series!]!
-    const colour = colourCode ? PARKER_COLOURS[colourCode] ?? colourCode : series === 'NBR' ? 'Black' : 'Natural'
+    const material = {
+      '95U': 'polyurethane',
+      '95FR': 'flame-resistant polyurethane',
+      NBR: 'nylon',
+      NNR: 'nylon',
+    }[series!]!
+    const colour = colourCode
+      ? (PARKER_COLOURS[colourCode] ?? colourCode)
+      : series === 'NBR'
+        ? 'Black'
+        : 'Natural'
     const dims: Dims = {
       item: `Parker ${series} ${material} tube, ${inchFrac(Number(dash))} OD${wallIn ? ` × ${wallIn.toFixed(3)}" wall` : ''}, ${colour.toLowerCase()}, ${Number(len)} ft`,
       OD: r2(odIn * 25.4),
@@ -250,7 +375,10 @@ function rebuildParker(pn: string, ratings: Ratings): { rebuilt: Rebuilt; group:
       dims.wall = fmt(wallIn * 25.4)
       dims.insideDia = fmt((odIn - 2 * wallIn) * 25.4)
     }
-    return { group: `${series}-${dash}-${wallCode ?? ''}`, rebuilt: { pressureBar: NaN, dimensions: dims } }
+    return {
+      group: `${series}-${dash}-${wallCode ?? ''}`,
+      rebuilt: { pressureBar: NaN, dimensions: dims },
+    }
   }
   const pum = pn.match(/^(95UM|EB)-(\d+)X([\d.]+)(?:-([A-Z]{3}))?-(\d{4})$/)
   if (pum) {
@@ -259,7 +387,11 @@ function rebuildParker(pn: string, ratings: Ratings): { rebuilt: Rebuilt; group:
     const wall = Number(wallS)
     const material = series === 'EB' ? 'polyethylene' : 'polyurethane'
     // Parker E = natural polyethylene, EB = black.
-    const colour = colourCode ? PARKER_COLOURS[colourCode] ?? colourCode : series === 'EB' ? 'Black' : 'Natural'
+    const colour = colourCode
+      ? (PARKER_COLOURS[colourCode] ?? colourCode)
+      : series === 'EB'
+        ? 'Black'
+        : 'Natural'
     return {
       group: `${series}-${odS}X${wallS}`,
       rebuilt: {
@@ -316,7 +448,9 @@ function settleUnrated(rows: { v: Variant; group: string | null; next: Rebuilt }
   }
   for (const r of rows) {
     if (!r.next || !Number.isNaN(r.next.pressureBar)) continue
-    const set = (r.group ? byGroup.get(r.group) : undefined) ?? new Set(typeof r.v.pressureBar === 'number' ? [r.v.pressureBar] : [])
+    const set =
+      (r.group ? byGroup.get(r.group) : undefined) ??
+      new Set(typeof r.v.pressureBar === 'number' ? [r.v.pressureBar] : [])
     const only = set.size === 1 ? [...set][0] : null
     const lengthCode = Number(r.v.partNumber.match(/-(\d+)(?:-X[0-9A-Z]+)?$/)?.[1])
     const ok = typeof only === 'number' && only >= 3 && only <= 40 && only !== lengthCode
@@ -331,21 +465,35 @@ function pressureLine(variants: Variant[]): string | null {
   const hi = Math.max(...ps)
   // psi is a conversion, not the maker's printed figure — rounded and marked as such.
   const psi = (b: number) => (Math.round((b * 14.5038) / 5) * 5).toLocaleString('en-US')
-  const bar = lo === hi ? `${lo} bar (about ${psi(lo)} psi)` : `${lo} to ${hi} bar (about ${psi(lo)} to ${psi(hi)} psi)`
-  const covered = ps.length < variants.length ? ', on the sizes the maker rates' : lo === hi ? '' : ', by size'
+  const bar =
+    lo === hi
+      ? `${lo} bar (about ${psi(lo)} psi)`
+      : `${lo} to ${hi} bar (about ${psi(lo)} to ${psi(hi)} psi)`
+  const covered =
+    ps.length < variants.length ? ', on the sizes the maker rates' : lo === hi ? '' : ', by size'
   return `Working pressure stated by the maker at room temperature: ${bar}${covered}`
 }
 
 const MATERIAL_FIXES: Record<string, { from: RegExp; to: string; short?: [RegExp, string] }[]> = {
   'smc-t-series-nylon-tubing': [
-    { from: /<li>Material: Urethane<\/li>/, to: '<li>Material: Nylon 12</li>', short: [/ in urethane:/, ' in nylon 12:'] },
+    {
+      from: /<li>Material: Urethane<\/li>/,
+      to: '<li>Material: Nylon 12</li>',
+      short: [/ in urethane:/, ' in nylon 12:'],
+    },
   ],
   'smc-ts-series-soft-nylon-tubing': [
-    { from: /<li>Temperature: 140°F<\/li>/, to: '<li>Temperature: -40 to +100°C with air; water 0 to +50°C</li>' },
+    {
+      from: /<li>Temperature: 140°F<\/li>/,
+      to: '<li>Temperature: -40 to +100°C with air; water 0 to +50°C</li>',
+    },
   ],
 }
 
-function fixDescription(p: Product, variants: Variant[]): { short: string | null; long: string | null } {
+function fixDescription(
+  p: Product,
+  variants: Variant[]
+): { short: string | null; long: string | null } {
   let long = p.descriptionLong ?? ''
   let short = p.descriptionShort
   const line = pressureLine(variants)
@@ -387,7 +535,9 @@ async function main() {
   const write = process.argv.includes('--write')
   const catalogue = JSON.parse(readFileSync(CATALOGUE, 'utf8')) as { products: Product[] }
   const ratings = JSON.parse(readFileSync(RATINGS, 'utf8')) as Ratings
-  const tubing = catalogue.products.filter((p) => p.category === 'pneumatic-tubing' && !SKIP.has(p.slug))
+  const tubing = catalogue.products.filter(
+    (p) => p.category === 'pneumatic-tubing' && !SKIP.has(p.slug)
+  )
 
   const summary: string[] = []
   const unparsed: string[] = []
@@ -396,7 +546,7 @@ async function main() {
       const smc = p.slug.startsWith('smc-') ? rebuildSmc(v.partNumber, ratings) : null
       const parker = p.slug.startsWith('parker-') ? rebuildParker(v.partNumber, ratings) : null
       const next = smc?.rebuilt ?? parker?.rebuilt ?? null
-      const group = smc ? (smc.series ? `${smc.series}${smc.size}` : null) : parker?.group ?? null
+      const group = smc ? (smc.series ? `${smc.series}${smc.size}` : null) : (parker?.group ?? null)
       if (!next) unparsed.push(`${p.slug}: ${v.partNumber}`)
       return { v, group, next }
     })
@@ -413,9 +563,11 @@ async function main() {
     const descChanged = short !== p.descriptionShort || long !== p.descriptionLong
     p.descriptionShort = short
     p.descriptionLong = long
-    const ps = p.variants.map((v) => v.pressureBar).filter((x): x is number => typeof x === 'number')
+    const ps = p.variants
+      .map((v) => v.pressureBar)
+      .filter((x): x is number => typeof x === 'number')
     summary.push(
-      `${p.slug}: ${changed}/${p.variants.length} rows changed, pressure ${ps.length ? `${Math.min(...ps)}–${Math.max(...ps)} bar on ${ps.length}` : 'none'}${descChanged ? ', description updated' : ''}`,
+      `${p.slug}: ${changed}/${p.variants.length} rows changed, pressure ${ps.length ? `${Math.min(...ps)}–${Math.max(...ps)} bar on ${ps.length}` : 'none'}${descChanged ? ', description updated' : ''}`
     )
   }
   for (const s of summary) console.log(s)
@@ -453,7 +605,7 @@ async function main() {
           data: { descriptionShort: p.descriptionShort, descriptionLong: p.descriptionLong },
         })
       },
-      { timeout: 60_000, maxWait: 10_000 },
+      { timeout: 60_000, maxWait: 10_000 }
     )
     console.log(`  wrote ${p.slug}`)
   }
