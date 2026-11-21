@@ -39,6 +39,17 @@ jobs:
         with:
           # Blobless: history without file contents we never read.
           filter: blob:none
+          # Skip the catalogue payloads (packages/db/data, 106 of the repo's
+          # 130 MB): CI reads only the three payloads below, which import-script
+          # tests open. A test that needs another one fails loudly with ENOENT;
+          # add its folder here.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/packages/db/data/
+            /packages/db/data/sealfast-size-tables/
+            /packages/db/data/older-coupling-copy/
+            /packages/db/data/sunpool-size-tables/
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -64,6 +75,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           filter: blob:none
+          # Skip the catalogue payloads (packages/db/data, 106 of the repo's
+          # 130 MB): CI reads only the three payloads below, which import-script
+          # tests open. A test that needs another one fails loudly with ENOENT;
+          # add its folder here.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/packages/db/data/
+            /packages/db/data/sealfast-size-tables/
+            /packages/db/data/older-coupling-copy/
+            /packages/db/data/sunpool-size-tables/
           # The PR merge commit and its parents: HEAD^1 is the base tip that
           # test selection diffs against.
           fetch-depth: 2
