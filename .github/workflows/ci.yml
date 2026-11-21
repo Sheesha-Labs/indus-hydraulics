@@ -7,6 +7,16 @@ on:
   # The merge queue runs the full suite on exactly what will land on main.
   merge_group:
 
+permissions:
+  contents: read
+  # scripts/ci/budget.sh reads this run's own job timings.
+  actions: read
+
+env:
+  # `enforce` fails a job that runs over its time budget; unset, the same
+  # numbers are reported as warnings. See scripts/ci/budget.sh.
+  CI_BUDGETS: ${{ vars.CI_BUDGETS }}
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
@@ -32,9 +42,14 @@ jobs:
       - name: Typecheck, lint and format
         run: >
           scripts/ci/run-all.sh
-          "typecheck::bun run typecheck"
-          "lint::bun run lint"
-          "format::bun run format:check"
+          "typecheck:5::bun run typecheck"
+          "lint:1::bun run lint"
+          "format:1::bun run format:check"
+
+      - name: Time budget
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/ci/budget.sh checks "Typecheck, lint and format"
 
   test:
     name: test
@@ -59,6 +74,11 @@ jobs:
           # earlier with the `ci:select` label.
           TEST_SELECTION: ${{ vars.TEST_SELECTION || (contains(github.event.pull_request.labels.*.name, 'ci:select') && 'on' || 'off') }}
         run: scripts/ci/test.sh
+
+      - name: Time budget
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/ci/budget.sh test Test
 
   build:
     name: build
