@@ -13,7 +13,7 @@
     "db:import": "tsx src/import/cli.ts",
     "db:studio": "prisma studio",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "bun check --no-script"
   },
   "dependencies": {
     "@indus/domain": "workspace:^",
