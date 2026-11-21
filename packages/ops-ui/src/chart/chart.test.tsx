@@ -171,8 +171,17 @@ describe('FxTag', () => {
         state: 'locked',
         pair: 'EUR → AED 3.9789',
         lockedOn: new Date('2026-10-02T08:00:00Z'),
+        now: new Date('2026-11-20T06:00:00Z'),
       })
     ).toBe('Locked 2 Oct · EUR → AED 3.9789')
+    expect(
+      fxText({
+        state: 'locked',
+        pair: 'EUR → AED 3.9789',
+        lockedOn: new Date('2025-10-02T08:00:00Z'),
+        now: new Date('2026-11-20T06:00:00Z'),
+      })
+    ).toBe('Locked 2 Oct 2025 · EUR → AED 3.9789')
     expect(fxText({ state: 'stale', pair: 'GBP → AED 4.6678', ageDays: 3 })).toBe(
       'Rate is 3 days old · GBP → AED 4.6678'
     )

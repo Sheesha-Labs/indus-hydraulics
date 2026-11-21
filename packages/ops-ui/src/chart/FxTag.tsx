@@ -1,3 +1,4 @@
+import { formatDate } from '../format'
 import { cn } from '../lib/cn'
 
 export type FxState = 'live' | 'locked' | 'stale'
@@ -10,6 +11,8 @@ export interface FxTagProps {
   lockedOn?: Date
   /** How old the rate is (state stale). */
   ageDays?: number
+  /** The clock "this year" is read from (default now); the kit specimen passes its frozen moment. */
+  now?: Date
   className?: string
 }
 
@@ -19,18 +22,11 @@ const TONE: Record<FxState, string> = {
   stale: 'bg-io-warn-tint text-io-warn',
 }
 
-// TODO(S01-T10): use formatDate from packages/ops-ui/src/format.ts (S01-T05) once it lands.
-const DAY = new Intl.DateTimeFormat('en-GB', {
-  day: 'numeric',
-  month: 'short',
-  timeZone: 'Asia/Dubai',
-})
-
 /** The words always say which rate this is, so the tint is never the only signal. */
-export function fxText({ state, pair, lockedOn, ageDays }: FxTagProps): string {
+export function fxText({ state, pair, lockedOn, ageDays, now }: FxTagProps): string {
   if (state === 'live') return `Live · ${pair}`
   if (state === 'locked')
-    return `${lockedOn ? `Locked ${DAY.format(lockedOn)}` : 'Locked'} · ${pair}`
+    return `${lockedOn ? `Locked ${formatDate(lockedOn, now ? { now } : {})}` : 'Locked'} · ${pair}`
   const age =
     ageDays === undefined
       ? 'Rate is out of date'

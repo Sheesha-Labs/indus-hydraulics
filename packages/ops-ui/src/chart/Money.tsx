@@ -1,12 +1,5 @@
-import {
-  formatDecimal,
-  isWhole,
-  mul,
-  parseDecimal,
-  round,
-  toDecimalString,
-  type DecimalString,
-} from '@indus/ops-core'
+import { mul, parseDecimal, round, toDecimalString, type DecimalString } from '@indus/ops-core'
+import { formatMoney } from '../format'
 import { cn } from '../lib/cn'
 import type { Ccy } from './tones'
 
@@ -37,14 +30,6 @@ const SIZE: Record<MoneySize, string> = {
   24: 'text-[24px]',
 }
 
-// TODO(S01-T10): use formatMoney from packages/ops-ui/src/format.ts (S01-T05) once it lands; this
-// formats with the same rules through ops-core's fixed-point helper.
-function display(amount: DecimalString, decimals: 'doc' | 'list') {
-  const dp = decimals === 'list' && isWhole(amount) ? 0 : 2
-  const { negative, digits } = formatDecimal(amount, dp)
-  return { negative, text: negative ? `(${digits})` : digits }
-}
-
 /** Money with its currency code first (kit K-12 Money); negatives in brackets and bad. */
 export default function Money({
   ccy,
@@ -54,16 +39,17 @@ export default function Money({
   decimals = 'doc',
   className,
 }: MoneyProps) {
-  const empty = amount.trim() === ''
-  const shown = empty ? null : display(amount, decimals)
-  const rate = aed && ccy !== 'AED' && !empty ? aed.rate : undefined
+  const shown = formatMoney(ccy, amount, { decimals })
+  const rate = aed && ccy !== 'AED' && !shown.empty ? aed.rate : undefined
   const equivalent =
-    rate === undefined ? null : display(toDecimalString(round(mul(amount, rate), 2), 2), 'doc').text
+    rate === undefined ? null : formatMoney('AED', toDecimalString(round(mul(amount, rate), 2), 2))
   return (
     <span className={cn('inline-flex flex-col gap-0.5', className)}>
       <span className="flex items-baseline gap-1.5">
         <span className="text-io-ink-3 text-[11.5px] font-medium tracking-[.02em]">{ccy}</span>
-        {shown ? (
+        {shown.empty ? (
+          <span className={cn('text-io-ink-4', SIZE[size])}>{shown.amount}</span>
+        ) : (
           <span
             className={cn(
               'font-medium tracking-[-.01em]',
@@ -71,15 +57,13 @@ export default function Money({
               shown.negative && 'text-io-bad'
             )}
           >
-            {shown.text}
+            {shown.amount}
           </span>
-        ) : (
-          <span className={cn('text-io-ink-4', SIZE[size])}>—</span>
         )}
       </span>
       {rate !== undefined && equivalent !== null ? (
         <span className="text-io-ink-3 text-[11.5px]">
-          ≈ <b className="text-io-ink-2 font-medium">AED {equivalent}</b>{' '}
+          ≈ <b className="text-io-ink-2 font-medium">{equivalent.text}</b>{' '}
           {aed?.label ?? `at ${ccy} 1 = ${toDecimalString(parseDecimal(rate))}`}
         </span>
       ) : null}

@@ -86,6 +86,7 @@
   --color-io-sheet-line: var(--io-sheet-line);
   --color-io-caret: var(--io-caret);
   --color-io-ok-solid-strong: var(--io-ok-solid-strong);
+  --color-io-ink-3-sel: var(--io-ink-3-sel);
 
   /* families: Geist everywhere; font-mono deliberately resolves to Geist too */
   --font-sans: var(--io-sans);
@@ -213,4 +214,7 @@
 }
 @utility z-io-tooltip {
   z-index: var(--io-z-tooltip);
+}
+@utility z-io-raised {
+  z-index: var(--io-z-raised);
 }

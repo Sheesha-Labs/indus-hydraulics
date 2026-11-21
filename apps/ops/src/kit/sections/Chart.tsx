@@ -10,7 +10,7 @@ import {
   vatBlockRows,
 } from '@indus/ops-ui/chart'
 import type { ReactNode } from 'react'
-import { BARS, FX, MARGIN, MONEY, OUTCOMES, OVERDUE } from '../fixtures'
+import { BARS, FX, KIT_NOW, MARGIN, MONEY, OUTCOMES, OVERDUE } from '../fixtures'
 
 /** Set to 'built' when S01-T08 lands: visual tests skip pending sections. */
 export const status: 'built' | 'pending' = 'built'
@@ -103,6 +103,7 @@ export default function ChartSpecimen() {
             state="locked"
             pair={`EUR → AED ${FX.EUR}`}
             lockedOn={new Date('2026-10-02T08:00:00Z')}
+            now={KIT_NOW}
           />
           <FxTag state="stale" pair={`GBP → AED ${FX.GBP}`} ageDays={3} />
           <FxTag state="live" pair={`USD → AED ${FX.USD}`} />

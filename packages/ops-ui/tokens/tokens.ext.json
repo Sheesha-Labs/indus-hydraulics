@@ -525,5 +525,17 @@
     "kind": "color",
     "signoff": "awaiting",
     "source": "Status/Chip solid-ok ground: the kit's ok-solid under white 11px text is 4.0:1 (fails WCAG AA, axe serious); this is 4.75:1"
+  },
+  "io-z-raised": {
+    "value": "1",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Table: a row's check cell above the row's stretched link (one tab stop per row, checkbox still clickable)"
+  },
+  "io-ink-3-sel": {
+    "value": "oklch(0.53 0.013 255)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Table: muted text in a selected row. ink-3 on accent-wash is 4.39:1 (fails WCAG AA, axe serious); this is 4.77:1"
   }
 }
