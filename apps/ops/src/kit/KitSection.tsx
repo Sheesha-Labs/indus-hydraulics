@@ -1,3 +1,4 @@
+import { cn } from '@indus/ops-ui/lib/cn'
 import type { ReactNode } from 'react'
 import { SectionHead } from './SectionHead'
 
@@ -9,6 +10,11 @@ interface KitSectionProps {
   text?: string
   /** 'pending' until the kit task lands; visual tests skip pending sections. */
   status?: 'built' | 'pending'
+  /**
+   * Which sheet the card mirrors. L0's .cv-spec is 1440 including its padding (border-box); L1's is
+   * 1440 of content plus padding and border (1506 overall).
+   */
+  sheet?: 'l0' | 'l1'
   children: ReactNode
 }
 
@@ -21,6 +27,7 @@ export default function KitSection({
   title,
   text,
   status = 'built',
+  sheet = 'l1',
   children,
 }: KitSectionProps) {
   return (
@@ -33,7 +40,10 @@ export default function KitSection({
       <SectionHead crumb={crumb} title={title} {...(text ? { text } : {})} />
       <div
         data-kit-part="spec"
-        className="rounded-io-8 border-io-sheet-line bg-io-card shadow-io-e1 flex w-[1440px] flex-col gap-[22px] border px-8 py-7"
+        className={cn(
+          'rounded-io-8 border-io-sheet-line bg-io-card shadow-io-e1 flex w-[1440px] flex-col gap-[22px] border px-8 py-7',
+          sheet === 'l1' && 'box-content'
+        )}
       >
         {children}
       </div>

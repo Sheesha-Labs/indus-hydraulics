@@ -8,6 +8,8 @@ node_modules
 out
 dist
 build
+# Source, not output: the Ops token generator (packages/ops-ui/src/build/generate-tokens.ts).
+!packages/ops-ui/src/build/
 .turbo
 
 # Environment variables

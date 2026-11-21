@@ -57,6 +57,7 @@ const tintNote = (tint: string, use: string) => `on ${tint} ${IO_VALUES[tint]} �
 function Identity() {
   return (
     <KitSection
+      sheet="l0"
       id="f01"
       crumb="F-01 · Identity"
       title="Indus Operations"
@@ -89,6 +90,7 @@ function Identity() {
 function Colour() {
   return (
     <KitSection
+      sheet="l0"
       id="f02"
       crumb="F-02 · Colour"
       title="Colour"
@@ -149,6 +151,7 @@ function TypeRow({ name, spec, children }: { name: string; spec: string; childre
 function Type() {
   return (
     <KitSection
+      sheet="l0"
       id="f03"
       crumb="F-03 · Type"
       title="Type"
@@ -263,6 +266,7 @@ const SIZES: [string, string][] = [
 function Shape() {
   return (
     <KitSection
+      sheet="l0"
       id="f04"
       crumb="F-04 · Shape and space"
       title="Radius, elevation and sizes"
@@ -343,6 +347,7 @@ const FORMATS: [string, string, string][] = [
 function Data() {
   return (
     <KitSection
+      sheet="l0"
       id="f05"
       crumb="F-05 · Data"
       title="Numbers, references and dates"
@@ -374,6 +379,7 @@ function FormatRow({ k, v, n }: { k: string; v: string; n: string }) {
 function StatusVocabulary() {
   return (
     <KitSection
+      sheet="l0"
       id="f06"
       crumb="F-06 · Status"
       title="Status vocabulary"
@@ -421,6 +427,7 @@ const RULES: [string, string][] = [
 function Rules() {
   return (
     <KitSection
+      sheet="l0"
       id="f07"
       crumb="F-07 · Rules"
       title="Standing rules"
