@@ -149,6 +149,84 @@
     "signoff": "awaiting",
     "source": "Document/A4 signature line"
   },
+  "io-est-ink": {
+    "value": "#1f2430",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate body text (the Zoho Estimate look clients receive)"
+  },
+  "io-est-strong": {
+    "value": "#111111",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate company name, note headings"
+  },
+  "io-est-ink-2": {
+    "value": "#333333",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate notes text"
+  },
+  "io-est-co": {
+    "value": "#444444",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate company block"
+  },
+  "io-est-sign": {
+    "value": "#555555",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate signer strip text"
+  },
+  "io-est-meta": {
+    "value": "#666666",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate labels and footer"
+  },
+  "io-est-sub": {
+    "value": "#777777",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate item sub-line, gap row"
+  },
+  "io-est-line": {
+    "value": "#999999",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate signer rule"
+  },
+  "io-est-foot": {
+    "value": "#ccccdd",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate footer rule"
+  },
+  "io-est-rule": {
+    "value": "#e3e5ea",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate item row rule"
+  },
+  "io-est-total": {
+    "value": "#eef0f4",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate grand total band"
+  },
+  "io-est-rev": {
+    "value": "#fbf3e2",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate revision band"
+  },
+  "io-est-tf": {
+    "value": "#9a6a12",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Estimate \"Price to follow\" cell"
+  },
   "io-mail-ink": {
     "value": "#202124",
     "kind": "color",

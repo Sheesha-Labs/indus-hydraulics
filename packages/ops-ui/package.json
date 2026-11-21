@@ -23,6 +23,7 @@
     "./mail": "./src/mail/index.ts",
     "./assistant": "./src/assistant/index.ts",
     "./document": "./src/document/index.ts",
+    "./fixtures/documents": "./src/__fixtures__/documents.ts",
     "./templates": "./src/templates/index.ts",
     "./format": "./src/format/index.ts"
   },
