@@ -9,12 +9,16 @@
 // because the generated folder is a package of its own and may not be imported by path.
 import { Prisma, PrismaClient } from '#ops-client'
 import { buildDatasourceUrl } from './datasource-url'
+import { pinQueryEngine } from './query-engine'
 
 export const OPS_DB = '@indus/ops-db' as const
 
 const globalForOpsDb = globalThis as unknown as { opsDb?: PrismaClient }
 
 const datasourceUrl = buildDatasourceUrl()
+
+// On Vercel the bundled client cannot find its engine on its own (src/query-engine.ts).
+pinQueryEngine()
 
 export const opsDb: PrismaClient =
   globalForOpsDb.opsDb ??
