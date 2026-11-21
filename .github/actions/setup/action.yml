@@ -1,0 +1,60 @@
+name: Setup
+description: >
+  Pinned Bun and this repo's node_modules, both from cache. One place so every
+  job sets up the same way.
+
+runs:
+  using: composite
+  steps:
+    # `bun lint` exists only in canary builds, so the exact canary is pinned
+    # (the same version as package.json "packageManager"). The binary comes
+    # from npm's registry and is checked against its published integrity.
+    - name: Restore Bun
+      id: bun-cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.bun-pinned
+        key: bun-${{ runner.os }}-${{ runner.arch }}-1.4.5-canary.20261120.1
+
+    - name: Download Bun
+      if: steps.bun-cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        set -euo pipefail
+        version=1.4.5-canary.20261120.1
+        integrity='sha512-WeORe6WhB0QEhPu739WCWKFswaplOIoP21RgEk3NmHC5gNOOKmHMiQZuy29bnEwtGqQ8LuBZ+SI57RHxbOhfZQ=='
+        tgz="$RUNNER_TEMP/bun.tgz"
+        curl -fsSL "https://registry.npmjs.org/@oven/bun-linux-x64/-/bun-linux-x64-${version}.tgz" -o "$tgz"
+        actual="sha512-$(openssl dgst -sha512 -binary "$tgz" | base64 -w0)"
+        if [ "$actual" != "$integrity" ]; then
+          echo "::error::Bun tarball integrity mismatch"; exit 1
+        fi
+        mkdir -p ~/.bun-pinned
+        tar -xzf "$tgz" -C "$RUNNER_TEMP"
+        install -m 0755 "$RUNNER_TEMP/package/bin/bun" ~/.bun-pinned/bun
+        ln -sf bun ~/.bun-pinned/bunx
+
+    - name: Put Bun on PATH
+      shell: bash
+      run: |
+        echo "$HOME/.bun-pinned" >> "$GITHUB_PATH"
+        "$HOME/.bun-pinned/bun" --version
+
+    # node_modules itself, keyed on the lockfile and the Prisma schema (the
+    # generated client lives in node_modules). main saves the entry on every
+    # push; PR runs read main's entry.
+    - name: Restore node_modules
+      id: nm-cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          node_modules
+          apps/*/node_modules
+          packages/*/node_modules
+        key: nm-${{ runner.os }}-${{ hashFiles('bun.lock', 'packages/db/prisma/schema.prisma') }}
+
+    # Runs on a hit too: on a complete node_modules it is a sub-second no-op,
+    # and it still fails if bun.lock and package.json disagree.
+    - name: Install
+      shell: bash
+      run: bun install --frozen-lockfile
