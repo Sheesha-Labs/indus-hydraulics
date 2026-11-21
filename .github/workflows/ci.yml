@@ -10,13 +10,19 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  ci:
-    name: typecheck · lint · test
+  # Lint, typecheck and the other quick checks share one job and one list of
+  # failures (scripts/ci/run-all.sh keeps going after a failure). Tests run
+  # beside it, never after it: no required job waits on another.
+  checks:
+    name: checks
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Blobless: history without file contents we never read.
+          filter: blob:none
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -28,30 +34,67 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Generate Prisma client
-        run: pnpm db:generate
-
-      - name: Cache turbo
+      # node_modules itself, keyed on the lockfile and the Prisma schema (the
+      # generated client lives in node_modules). main saves it on every push,
+      # and PR runs read main's entry, so a PR that keeps the lockfile hits.
+      - name: Restore node_modules
+        id: nm
         uses: actions/cache@v4
         with:
-          path: .turbo
-          key: turbo-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            turbo-${{ runner.os }}-
+          path: |
+            node_modules
+            apps/*/node_modules
+            packages/*/node_modules
+          key: nm-${{ runner.os }}-node20-${{ hashFiles('pnpm-lock.yaml', 'packages/db/prisma/schema.prisma') }}
 
-      - name: Typecheck
-        run: pnpm typecheck
+      - name: Install dependencies
+        if: steps.nm.outputs.cache-hit != 'true'
+        run: pnpm install --frozen-lockfile
 
-      - name: Lint
-        run: pnpm lint
+      - name: Typecheck and lint
+        run: >
+          scripts/ci/run-all.sh
+          "typecheck::pnpm turbo typecheck --output-logs=errors-only"
+          "lint::pnpm turbo lint --output-logs=errors-only"
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Restore node_modules
+        id: nm
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            apps/*/node_modules
+            packages/*/node_modules
+          key: nm-${{ runner.os }}-node20-${{ hashFiles('pnpm-lock.yaml', 'packages/db/prisma/schema.prisma') }}
+
+      - name: Install dependencies
+        if: steps.nm.outputs.cache-hit != 'true'
+        run: pnpm install --frozen-lockfile
 
       - name: Test
-        run: pnpm test
+        run: pnpm turbo test --output-logs=errors-only
 
   build:
     name: build
