@@ -1,0 +1,24 @@
+{
+  "name": "@indus/ops-pdf",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Indus Operations A4 documents rendered from DocumentData.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "bun check --no-script",
+    "test": "bun test --parallel --isolate=modules --randomize"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "dependencies": {
+    "@indus/ops-core": "workspace:^",
+    "@react-pdf/renderer": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "react": "19.2.4"
+  }
+}

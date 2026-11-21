@@ -47,14 +47,27 @@ runs:
       id: nm-cache
       uses: actions/cache@v4
       with:
+        # The Ops Prisma client generates into packages/ops-db/generated, not
+        # node_modules, so it is cached alongside and keyed on its schema too.
         path: |
           node_modules
           apps/*/node_modules
           packages/*/node_modules
-        key: nm-${{ runner.os }}-${{ hashFiles('bun.lock', 'packages/db/prisma/schema.prisma') }}
+          packages/ops-db/generated
+        key: nm-${{ runner.os }}-${{ hashFiles('bun.lock', 'packages/db/prisma/schema.prisma', 'packages/ops-db/prisma/schema.prisma') }}
 
     # Runs on a hit too: on a complete node_modules it is a sub-second no-op,
     # and it still fails if bun.lock and package.json disagree.
     - name: Install
       shell: bash
       run: bun install --frozen-lockfile
+
+    # Both Prisma clients must exist before anything typechecks or tests against
+    # them. They generate in postinstall; a cache hit skips that, so assert.
+    - name: Assert Prisma clients
+      shell: bash
+      run: |
+        test -f node_modules/.prisma/client/index.d.ts || ls node_modules/.bun/@prisma+client*/node_modules/.prisma/client/index.d.ts >/dev/null
+        if [ -f packages/ops-db/prisma/schema.prisma ]; then
+          test -f packages/ops-db/generated/client/index.d.ts
+        fi

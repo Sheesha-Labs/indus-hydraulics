@@ -678,6 +678,36 @@
               {
                 "name": "next-auth/react",
                 "message": "Use the server actions (adminSignInAction / adminSignOutAction) \u2014 next-auth/react resolves to /api/auth, and the only Auth.js instance lives at /admin/api/auth."
+              },
+              {
+                "name": "@indus/ops-core",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-db",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-ai",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-pdf",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-ui",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-crosscheck",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              }
+            ],
+            "patterns": [
+              {
+                "group": ["@indus/ops-*", "@indus/ops-*/**"],
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
               }
             ]
           }
@@ -698,12 +728,40 @@
               {
                 "group": ["**/lib/admin-auth", "**/lib/staff-session", "**/lib/rbac"],
                 "message": "Storefront code has no session \u2014 lib/admin-auth, lib/staff-session and lib/rbac belong to the STAFF Auth.js instance."
+              },
+              {
+                "group": ["@indus/ops-*", "@indus/ops-*/**"],
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
               }
             ],
             "paths": [
               {
                 "name": "next-auth/react",
                 "message": "Use the admin server actions \u2014 next-auth/react resolves to /api/auth, which does not exist."
+              },
+              {
+                "name": "@indus/ops-core",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-db",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-ai",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-pdf",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-ui",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
+              },
+              {
+                "name": "@indus/ops-crosscheck",
+                "message": "Indus Operations packages are not for the website: importing one couples the storefront's deploy to Ops (every Ops change would rebuild the storefront and wipe its ISR cache). Only @indus/intake is shared."
               }
             ]
           }
@@ -737,6 +795,52 @@
           {
             "name": "Bun",
             "message": "The app runs on Node (Vercel). Bun's types are loaded only so tests type-check; the Bun global does not exist at runtime."
+          }
+        ]
+      }
+    },
+    {
+      "files": ["apps/ops/**", "packages/ops-*/**", "packages/intake/**"],
+      "rules": {
+        "eslint/no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "@indus/db",
+                "message": "Indus Operations is a separate app: website packages and apps/web code are not dependencies of Ops (deploy coupling, and the website's data and auth are not Ops's)."
+              },
+              {
+                "name": "@indus/ui",
+                "message": "Indus Operations is a separate app: website packages and apps/web code are not dependencies of Ops (deploy coupling, and the website's data and auth are not Ops's)."
+              },
+              {
+                "name": "@indus/email",
+                "message": "Indus Operations is a separate app: website packages and apps/web code are not dependencies of Ops (deploy coupling, and the website's data and auth are not Ops's)."
+              },
+              {
+                "name": "@indus/pdf",
+                "message": "Indus Operations is a separate app: website packages and apps/web code are not dependencies of Ops (deploy coupling, and the website's data and auth are not Ops's)."
+              },
+              {
+                "name": "@indus/domain",
+                "message": "Indus Operations is a separate app: website packages and apps/web code are not dependencies of Ops (deploy coupling, and the website's data and auth are not Ops's)."
+              },
+              {
+                "name": "next-auth/react",
+                "message": "Ops signs in through its own Auth.js instance's server actions; next-auth/react resolves to the wrong base path."
+              }
+            ],
+            "patterns": [
+              {
+                "group": ["@indus/db/*", "@indus/ui/*", "@indus/domain/*", "**/apps/web/**"],
+                "message": "Indus Operations is a separate app: website packages and apps/web code are not dependencies of Ops (deploy coupling, and the website's data and auth are not Ops's)."
+              },
+              {
+                "group": ["@indus/ops-crosscheck", "@indus/ops-crosscheck/**"],
+                "message": "ops-crosscheck is test-only and imported by nothing."
+              }
+            ]
           }
         ]
       }

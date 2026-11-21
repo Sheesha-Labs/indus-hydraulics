@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["bom1"],
+  "ignoreCommand": "bash ../../scripts/vercel-ignore-build.sh @indus/ops",
+  "installCommand": "npx --yes bun@1.4.5-canary.20261120.1 install --frozen-lockfile"
+}

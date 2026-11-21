@@ -1,0 +1,4 @@
+[test]
+# `bun test` from apps/ops: only the co-located unit tests under src/.
+root = "src"
+preload = ["./src/test/bun-preload.ts"]

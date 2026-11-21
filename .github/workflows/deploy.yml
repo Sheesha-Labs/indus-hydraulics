@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
     paths-ignore:
-      # The same rule as apps/web/vercel-ignore-build.sh: a commit that cannot
+      # The same rule as scripts/vercel-ignore-build.sh (rule 2): a commit that cannot
       # change the site should not cost a deploy. A deploy is not free even
       # here — it is build minutes, and a restart.
       - 'docs/**'
