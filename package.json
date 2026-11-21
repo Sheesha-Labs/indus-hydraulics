@@ -11,7 +11,7 @@
     "dev": "bun run --filter web dev",
     "lint": "bun lint --no-script --type-aware apps packages",
     "typecheck": "bun run --filter '*' typecheck",
-    "test": "bun test --parallel --isolate=modules --randomize ./apps/web/src ./packages",
+    "test": "bun test --parallel --isolate=modules --randomize ./apps/web/src ./apps/ops/src ./packages",
     "test:e2e": "playwright test",
     "format": "bun fmt --no-script",
     "db:generate": "bun run --filter @indus/db db:generate",

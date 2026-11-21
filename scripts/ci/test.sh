@@ -13,13 +13,13 @@
 set -euo pipefail
 
 FLAGS=(--parallel --isolate=modules --randomize)
-ROOTS=(./apps/web/src ./packages)
-TEST_GLOBS=('apps/web/src/**/*.test.ts' 'apps/web/src/**/*.test.tsx' 'packages/*/src/**/*.test.ts' 'packages/*/src/**/*.test.tsx')
+ROOTS=(./apps/web/src ./apps/ops/src ./packages)
+TEST_GLOBS=('apps/web/src/**/*.test.ts' 'apps/web/src/**/*.test.tsx' 'apps/ops/src/**/*.test.ts' 'apps/ops/src/**/*.test.tsx' 'packages/*/src/**/*.test.ts' 'packages/*/src/**/*.test.tsx')
 
 # A change to any of these can change the result of any test, so it reruns
 # everything: the toolchain and its config, dependencies, TypeScript config and
 # shared types, the test preload, CI itself.
-FULL_RUN_INPUTS='^(bun\.lock|bunfig\.toml|package\.json|tsconfig\.base\.json|\.oxlintrc\.json|\.prettierrc|types/|\.github/|scripts/ci/|apps/web/bunfig\.toml|apps/web/tsconfig\.json|apps/web/package\.json|apps/web/src/test/|packages/[^/]+/package\.json|packages/[^/]+/tsconfig\.json|packages/db/prisma/)'
+FULL_RUN_INPUTS='^(bun\.lock|bunfig\.toml|package\.json|tsconfig\.base\.json|\.oxlintrc\.json|\.prettierrc|types/|\.github/|scripts/ci/|apps/web/bunfig\.toml|apps/web/tsconfig\.json|apps/web/package\.json|apps/web/src/test/|apps/ops/(bunfig\.toml|tsconfig\.json|package\.json)|apps/ops/src/test/|packages/[^/]+/package\.json|packages/[^/]+/tsconfig\.json|packages/db/prisma/)'
 
 # bun test --changed follows the import graph. A test that reads files from
 # disk, spawns a process or imports by computed path depends on files it never
