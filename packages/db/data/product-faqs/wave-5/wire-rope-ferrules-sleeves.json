@@ -330,12 +330,12 @@
         {
           "slot": "B",
           "q": "How do I read Aluminium Oval Sleeve part numbers such as IH-LR-FS-AOV-025?",
-          "a": "IH-LR-FS-AOV-025 is the 1/4″ size, IH-LR-FS-AOV-062 the 5/8″ size and IH-LR-FS-AOV-150 the 1-1/2″ size. The size table lists every Indus part number with its own dimensions and rating, so quote the full part number rather than the series name."
+          "a": "IH-LR-FS-AOV-025 is the 1/4″ size, IH-LR-FS-AOV-062 the 5/8″ size and IH-LR-FS-AOV-150 the 1-1/2″ size. The size table lists every Indus part number with its weight, so quote the full part number rather than the series name."
         },
         {
           "slot": "D",
           "q": "What size range does the Aluminium Oval Sleeve cover?",
-          "a": "Sizes on the Aluminium Oval Sleeve run 1/4″ to 1-1/2″. The size table gives each one its own Indus part number and dimensions, and the [wire rope ferrules & sleeves shelf](/c/wire-rope-ferrules-sleeves) lists the neighbouring products."
+          "a": "Sizes on the Aluminium Oval Sleeve run 1/4″ to 1-1/2″. The size table gives each one its own Indus part number, and the [wire rope ferrules & sleeves shelf](/c/wire-rope-ferrules-sleeves) lists the neighbouring products."
         },
         {
           "slot": "D",
@@ -345,7 +345,7 @@
         {
           "slot": "E",
           "q": "What load rating does the Aluminium Oval Sleeve carry?",
-          "a": "No load rating is published on the Aluminium Oval Sleeve listing, only dimensions, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
+          "a": "No load rating is published on the Aluminium Oval Sleeve listing, so we state none here. Send the load and application on the RFQ and we confirm a suitable rated option."
         },
         {
           "slot": "F",
