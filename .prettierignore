@@ -1,0 +1,16 @@
+# Read by `bun fmt`. Formatting covers code and config: TypeScript, JavaScript,
+# CSS, YAML and config JSON.
+#
+# Prose and data are not reformatted:
+#   - Markdown: docs, plans and import notes.
+#   - Catalogue payloads under packages/db/data/, and the generated one-off
+#     import scripts under packages/db/src/imports/ (diagram-roundtrip.test.ts
+#     reads their SVG strings in the quoting the generator wrote).
+#   - The design handoff, which is a reference copy, not our code.
+*.md
+**/*.md
+packages/db/data/
+packages/db/src/imports/
+design_handoff_indus_hydraulics_v2/
+bun.lock
+**/*.snap

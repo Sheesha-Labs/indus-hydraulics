@@ -13,15 +13,14 @@
     "typecheck": "bun run --filter '*' typecheck",
     "test": "bun test --parallel --isolate=modules --randomize ./apps/web/src ./packages",
     "test:e2e": "playwright test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "bun fmt --no-script",
     "db:generate": "bun run --filter @indus/db db:generate",
     "db:push": "bun run --filter @indus/db db:push",
     "db:migrate": "bun run --filter @indus/db db:migrate",
-    "db:seed": "bun run --filter @indus/db db:seed"
+    "db:seed": "bun run --filter @indus/db db:seed",
+    "format:check": "bun fmt --no-script --check"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5.8.3",
     "@playwright/test": "^1.50.0",
     "@types/bun": "1.4.5"
