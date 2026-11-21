@@ -11506,11 +11506,6 @@
      "position": 0,
      "dimensions": {
       "size": "1/4″",
-      "A": 7.5,
-      "B": 15.1,
-      "C": 13.5,
-      "D": 21.4,
-      "L": 25.4,
       "weightPer100Lbs": 2.3
      }
     },
@@ -11519,11 +11514,6 @@
      "position": 1,
      "dimensions": {
       "size": "5/16″",
-      "A": 9.5,
-      "B": 19.0,
-      "C": 16.7,
-      "D": 8.7,
-      "L": 30.5,
       "weightPer100Lbs": 4.3
      }
     },
@@ -11532,11 +11522,6 @@
      "position": 2,
      "dimensions": {
       "size": "3/8″",
-      "A": 11.1,
-      "B": 21.4,
-      "C": 19.0,
-      "D": 11.9,
-      "L": 41.3,
       "weightPer100Lbs": 5.3
      }
     },
@@ -11545,11 +11530,6 @@
      "position": 3,
      "dimensions": {
       "size": "7/16″",
-      "A": 12.7,
-      "B": 25.4,
-      "C": 23.0,
-      "D": 35.7,
-      "L": 43.7,
       "weightPer100Lbs": 11.0
      }
     },
@@ -11558,11 +11538,6 @@
      "position": 4,
      "dimensions": {
       "size": "1/2″",
-      "A": 15.1,
-      "B": 29.8,
-      "C": 8.7,
-      "D": 47.6,
-      "L": 49.2,
       "weightPer100Lbs": 16.5
      }
     },
@@ -11571,11 +11546,6 @@
      "position": 5,
      "dimensions": {
       "size": "9/16″",
-      "A": 18.3,
-      "B": 41.3,
-      "C": 13.5,
-      "D": 48.0,
-      "L": 21.4,
       "weightPer100Lbs": 22.0
      }
     },
@@ -11584,11 +11554,6 @@
      "position": 6,
      "dimensions": {
       "size": "5/8″",
-      "A": 19.0,
-      "B": 139.7,
-      "C": 41.3,
-      "D": 18.3,
-      "L": 63.5,
       "weightPer100Lbs": 32.0
      }
     },
@@ -11597,11 +11562,6 @@
      "position": 7,
      "dimensions": {
       "size": "3/4″",
-      "A": 21.0,
-      "B": 42.9,
-      "C": 139.7,
-      "D": 73.0,
-      "L": 85.7,
       "weightPer100Lbs": 52.0
      }
     },
@@ -11610,11 +11570,6 @@
      "position": 8,
      "dimensions": {
       "size": "7/8″",
-      "A": 24.2,
-      "B": 54.0,
-      "C": 42.9,
-      "D": 79.4,
-      "L": 76.2,
       "weightPer100Lbs": 67.0
      }
     },
@@ -11623,11 +11578,6 @@
      "position": 9,
      "dimensions": {
       "size": "1″",
-      "A": 10.3,
-      "B": 21.4,
-      "C": 50.0,
-      "D": 26.2,
-      "L": 209.5,
       "weightPer100Lbs": 125.0
      }
     },
@@ -11636,11 +11586,6 @@
      "position": 10,
      "dimensions": {
       "size": "1-1/8″",
-      "A": 15.1,
-      "B": 46.0,
-      "C": 39.7,
-      "D": 91.3,
-      "L": 38.9,
       "weightPer100Lbs": 172.0
      }
     },
@@ -11649,11 +11594,6 @@
      "position": 11,
      "dimensions": {
       "size": "1-1/4″",
-      "A": 35.7,
-      "B": 70.6,
-      "C": 266.7,
-      "D": 117.5,
-      "L": 74.6,
       "weightPer100Lbs": 214.0
      }
     },
@@ -11662,11 +11602,6 @@
      "position": 12,
      "dimensions": {
       "size": "1-1/2″",
-      "A": 42.1,
-      "B": 83.7,
-      "C": 98.4,
-      "D": 273.1,
-      "L": 140.9,
       "weightPer100Lbs": 390.0
      }
     }
@@ -31792,7 +31727,7 @@
      "position": 0,
      "dimensions": {
       "size": "0.5 t",
-      "beamFlange": "64-140",
+      "beamFlange": "64-140 mm",
       "A": 230.0,
       "B": 212.0,
       "C": 198.5,
@@ -31805,7 +31740,7 @@
      "position": 1,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "64-140",
+      "beamFlange": "64-140 mm",
       "A": 254.0,
       "B": 255.0,
       "C": 231.5,
@@ -31818,7 +31753,7 @@
      "position": 2,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "76-203",
+      "beamFlange": "76-203 mm",
       "A": 294.0,
       "B": 302.0,
       "C": 278.0,
@@ -31831,7 +31766,7 @@
      "position": 3,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "76-203",
+      "beamFlange": "76-203 mm",
       "A": 344.0,
       "B": 344.0,
       "C": 338.0,
@@ -31844,7 +31779,7 @@
      "position": 4,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "88-203",
+      "beamFlange": "88-203 mm",
       "A": 360.0,
       "B": 378.0,
       "C": 393.0,
@@ -31857,7 +31792,7 @@
      "position": 5,
      "dimensions": {
       "size": "10 t",
-      "beamFlange": "125-203",
+      "beamFlange": "125-203 mm",
       "A": 403.0,
       "B": 455.0,
       "C": 490.0,
@@ -31870,7 +31805,7 @@
      "position": 6,
      "dimensions": {
       "size": "20 t",
-      "beamFlange": "136-203",
+      "beamFlange": "136-203 mm",
       "A": 475.0,
       "B": 642.0,
       "C": 622.0,
@@ -31961,7 +31896,7 @@
      "position": 0,
      "dimensions": {
       "size": "0.5 t",
-      "beamFlange": "64-140",
+      "beamFlange": "64-140 mm",
       "A": 308.5,
       "B": 212.0,
       "C": 198.5,
@@ -31974,7 +31909,7 @@
      "position": 1,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "64-140",
+      "beamFlange": "64-140 mm",
       "A": 328.5,
       "B": 255.0,
       "C": 231.5,
@@ -31987,7 +31922,7 @@
      "position": 2,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "76-165",
+      "beamFlange": "76-165 mm",
       "A": 361.5,
       "B": 302.0,
       "C": 278.0,
@@ -32000,7 +31935,7 @@
      "position": 3,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "76-203",
+      "beamFlange": "76-203 mm",
       "A": 428.5,
       "B": 344.0,
       "C": 338.0,
@@ -32013,7 +31948,7 @@
      "position": 4,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "88-203",
+      "beamFlange": "88-203 mm",
       "A": 434.0,
       "B": 378.0,
       "C": 393.0,
@@ -32026,7 +31961,7 @@
      "position": 5,
      "dimensions": {
       "size": "10 t",
-      "beamFlange": "125-203",
+      "beamFlange": "125-203 mm",
       "A": 487.5,
       "B": 455.0,
       "C": 490.0,
@@ -32039,7 +31974,7 @@
      "position": 6,
      "dimensions": {
       "size": "20 t",
-      "beamFlange": "136-203",
+      "beamFlange": "136-203 mm",
       "A": 547.0,
       "B": 642.0,
       "C": 622.0,
@@ -32130,7 +32065,7 @@
      "position": 0,
      "dimensions": {
       "size": "0.5 t",
-      "beamFlange": "50-220",
+      "beamFlange": "50-220 mm",
       "A": 285.0,
       "B": 198.0,
       "C": 158.0,
@@ -32143,7 +32078,7 @@
      "position": 1,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "58-220",
+      "beamFlange": "58-220 mm",
       "A": 285.0,
       "B": 238.0,
       "C": 183.0,
@@ -32156,7 +32091,7 @@
      "position": 2,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "66-220",
+      "beamFlange": "66-220 mm",
       "A": 300.0,
       "B": 277.0,
       "C": 208.0,
@@ -32169,7 +32104,7 @@
      "position": 3,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "74-220",
+      "beamFlange": "74-220 mm",
       "A": 321.0,
       "B": 324.0,
       "C": 249.0,
@@ -32182,7 +32117,7 @@
      "position": 4,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "90-220",
+      "beamFlange": "90-220 mm",
       "A": 354.0,
       "B": 373.0,
       "C": 296.5,
@@ -32273,7 +32208,7 @@
      "position": 0,
      "dimensions": {
       "size": "0.5 t",
-      "beamFlange": "50-220",
+      "beamFlange": "50-220 mm",
       "A": 352.5,
       "B": 198.0,
       "C": 158.0,
@@ -32286,7 +32221,7 @@
      "position": 1,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "58-220",
+      "beamFlange": "58-220 mm",
       "A": 353.5,
       "B": 238.0,
       "C": 183.0,
@@ -32299,7 +32234,7 @@
      "position": 2,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "66-220",
+      "beamFlange": "66-220 mm",
       "A": 362.0,
       "B": 277.0,
       "C": 208.0,
@@ -32312,7 +32247,7 @@
      "position": 3,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "74-220",
+      "beamFlange": "74-220 mm",
       "A": 406.5,
       "B": 324.0,
       "C": 249.0,
@@ -32325,7 +32260,7 @@
      "position": 4,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "90-220",
+      "beamFlange": "90-220 mm",
       "A": 434.5,
       "B": 373.0,
       "C": 296.5,
@@ -32416,7 +32351,7 @@
      "position": 0,
      "dimensions": {
       "size": "0.5 t",
-      "beamFlange": "75-125",
+      "beamFlange": "75-125 mm",
       "weightKg": 5.0,
       "A": 208.0,
       "B": 170.0,
@@ -32429,7 +32364,7 @@
      "position": 1,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "75-125",
+      "beamFlange": "75-125 mm",
       "weightKg": 8.0,
       "A": 220.0,
       "B": 206.0,
@@ -32442,7 +32377,7 @@
      "position": 2,
      "dimensions": {
       "size": "1.5 t",
-      "beamFlange": "100-150",
+      "beamFlange": "100-150 mm",
       "weightKg": 13.0,
       "A": 260.0,
       "B": 228.0,
@@ -32455,7 +32390,7 @@
      "position": 3,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "100-150",
+      "beamFlange": "100-150 mm",
       "weightKg": 13.0,
       "A": 260.0,
       "B": 240.0,
@@ -32468,7 +32403,7 @@
      "position": 4,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "100-150",
+      "beamFlange": "100-150 mm",
       "weightKg": 25.0,
       "A": 285.0,
       "B": 282.0,
@@ -32481,7 +32416,7 @@
      "position": 5,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "125-175",
+      "beamFlange": "125-175 mm",
       "weightKg": 44.0,
       "A": 338.0,
       "B": 327.0,
@@ -32494,7 +32429,7 @@
      "position": 6,
      "dimensions": {
       "size": "10 t",
-      "beamFlange": "125-180",
+      "beamFlange": "125-180 mm",
       "weightKg": 90.0,
       "A": 362.0,
       "B": 389.0,
@@ -32585,7 +32520,7 @@
      "position": 0,
      "dimensions": {
       "size": "0.5 t",
-      "beamFlange": "75-125",
+      "beamFlange": "75-125 mm",
       "weightKg": 12.0,
       "A": 271.0,
       "B": 170.0,
@@ -32598,7 +32533,7 @@
      "position": 1,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "75-125",
+      "beamFlange": "75-125 mm",
       "weightKg": 15.0,
       "A": 277.0,
       "B": 206.0,
@@ -32611,7 +32546,7 @@
      "position": 2,
      "dimensions": {
       "size": "1.5 t",
-      "beamFlange": "100-150",
+      "beamFlange": "100-150 mm",
       "weightKg": 18.0,
       "A": 311.0,
       "B": 228.0,
@@ -32624,7 +32559,7 @@
      "position": 3,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "100-150",
+      "beamFlange": "100-150 mm",
       "weightKg": 18.0,
       "A": 311.0,
       "B": 240.0,
@@ -32637,7 +32572,7 @@
      "position": 4,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "100-150",
+      "beamFlange": "100-150 mm",
       "weightKg": 35.0,
       "A": 358.0,
       "B": 282.0,
@@ -32650,7 +32585,7 @@
      "position": 5,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "125-175",
+      "beamFlange": "125-175 mm",
       "weightKg": 54.0,
       "A": 401.0,
       "B": 327.0,
@@ -32663,7 +32598,7 @@
      "position": 6,
      "dimensions": {
       "size": "10 t",
-      "beamFlange": "125-180",
+      "beamFlange": "125-180 mm",
       "weightKg": 100.0,
       "A": 442.0,
       "B": 389.0,
@@ -34952,7 +34887,7 @@
      "position": 0,
      "dimensions": {
       "size": "1 t",
-      "beamFlange": "75-220",
+      "beamFlange": "75-220 mm",
       "AMax": 260.0,
       "BMin": 180.0,
       "BMax": 360.0,
@@ -34970,7 +34905,7 @@
      "position": 1,
      "dimensions": {
       "size": "2 t",
-      "beamFlange": "75-220",
+      "beamFlange": "75-220 mm",
       "AMax": 260.0,
       "BMin": 180.0,
       "BMax": 360.0,
@@ -34988,7 +34923,7 @@
      "position": 2,
      "dimensions": {
       "size": "3 t",
-      "beamFlange": "80-220",
+      "beamFlange": "80-220 mm",
       "AMax": 354.0,
       "BMin": 235.0,
       "BMax": 490.0,
@@ -35006,7 +34941,7 @@
      "position": 3,
      "dimensions": {
       "size": "5 t",
-      "beamFlange": "80-220",
+      "beamFlange": "80-220 mm",
       "AMax": 354.0,
       "BMin": 235.0,
       "BMax": 490.0,
@@ -35024,7 +34959,7 @@
      "position": 4,
      "dimensions": {
       "size": "10 t",
-      "beamFlange": "90-320",
+      "beamFlange": "90-320 mm",
       "AMax": 365.0,
       "BMin": 320.0,
       "BMax": 505.0,
