@@ -175,6 +175,7 @@ jobs:
         # Replaces the `deployment_status` trigger in smoke-e2e.yml, which only
         # Vercel's GitHub integration emits and which stops firing on cutover.
         env:
+          SMOKE_BYPASS_TOKEN: ${{ secrets.SMOKE_BYPASS_TOKEN }}
           PLAYWRIGHT_BASE_URL: https://indushydraulics.com
           PLAYWRIGHT_REUSE_SERVER: '1'
         run: bunx playwright test smoke hero-geo category-caching

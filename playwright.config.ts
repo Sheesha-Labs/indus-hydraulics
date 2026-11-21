@@ -13,13 +13,17 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      // Full Chromium in new headless mode, not the headless shell: the shell
+      // renders without a GPU path that paints backdrop-filter, so the frosted
+      // header reads as transparent in screenshots and the contrast check
+      // measures text against the band beneath instead of the bar.
+      use: { ...devices['Desktop Chrome'], channel: 'chromium' },
     },
   ],
   webServer: process.env.PLAYWRIGHT_REUSE_SERVER
     ? undefined
     : {
-        command: 'pnpm -F web dev',
+        command: 'bun run --filter web dev',
         url: BASE_URL,
         reuseExistingServer: true,
         timeout: 120_000,

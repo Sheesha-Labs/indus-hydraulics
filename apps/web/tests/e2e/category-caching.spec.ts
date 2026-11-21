@@ -1,4 +1,5 @@
-import { expect, test } from '@playwright/test'
+// Filtered shelves sit behind the catalogue-filter firewall rules; see fixtures.ts.
+import { expect, test } from './fixtures'
 
 /**
  * `/c/<slug>` is prerendered; `/c/<slug>?brands=…` is not.
@@ -89,10 +90,12 @@ test.describe('category pagination', () => {
   test('page 2 lives at a path, and lists products', async ({ page }) => {
     await page.goto(`${BIG}/page/2`)
     expect(await page.locator('a[href^="/p/"]').count()).toBeGreaterThan(0)
-    // Deep pages have always been noindex-follow, so crawlers reach the
-    // products without indexing a thin duplicate of the shelf. Moving them
-    // into the path must not change that.
-    await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(1)
+    // Deep pages are indexable with a self-canonical since the 2026-09-26
+    // indexability audit (they used to be noindex-follow): each page lists
+    // different products, so it is not a duplicate of page 1.
+    await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(0)
+    const canonical = await page.locator('link[rel="canonical"]').getAttribute('href')
+    expect(new URL(canonical!).pathname).toBe(`${BIG}/page/2`)
   })
 
   test('the old ?page= form redirects to the path form', async ({ page }) => {
