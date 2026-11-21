@@ -219,7 +219,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       sourceBrandText: r.sourceBrandText,
       sourceCategoryText: r.sourceCategoryText,
       candidateImages: (r.candidateImages ?? []) as unknown as ScrapedRowData['candidateImages'],
-      deselectedImageUrls: ((r.deselectedImageUrls ?? []) as unknown as string[]) ?? [],
+      deselectedImageUrls: (r.deselectedImageUrls ?? []) as unknown as string[],
       selectionStatus: r.selectionStatus,
       ingestMode: r.ingestMode,
       targetProduct:
