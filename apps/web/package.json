@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "bun check --no-script",
     "test": "vitest run",
     "scraper:crawl": "tsx src/lib/scraper/cli.ts",
     "scraper:research-images": "tsx --env-file=.env.local src/lib/scraper/imageResearchCli.ts",
