@@ -69,6 +69,7 @@
   --color-io-mail-ink: var(--io-mail-ink);
   --color-io-mail-meta: var(--io-mail-meta);
   --color-io-mail-rule: var(--io-mail-rule);
+  --color-io-sheet-line: var(--io-sheet-line);
 
   /* families: Geist everywhere; font-mono deliberately resolves to Geist too */
   --font-sans: var(--io-sans);
@@ -144,9 +145,9 @@
   --text-io-headline--line-height: 1.35;
   --text-io-headline--letter-spacing: -0.01em;
   --text-io-headline--font-weight: 500;
-  --text-io-card: 15px;
-  --text-io-card--letter-spacing: -0.01em;
-  --text-io-card--font-weight: 500;
+  --text-io-card-title: 15px;
+  --text-io-card-title--letter-spacing: -0.01em;
+  --text-io-card-title--font-weight: 500;
   --text-io-body: 13px;
   --text-io-body--line-height: 1.45;
   --text-io-body--letter-spacing: -0.005em;

@@ -132,4 +132,6 @@
   --io-z-command: 60;
   --io-z-toast: 70;
   --io-z-tooltip: 80;
+  /* ext · color */
+  --io-sheet-line: rgba(20,28,45,.08);
 }

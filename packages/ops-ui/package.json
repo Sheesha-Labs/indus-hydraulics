@@ -8,10 +8,23 @@
   "exports": {
     ".": "./src/index.ts",
     "./styles/*": "./src/styles/*",
-    "./templates": "./src/templates/index.ts",
+    "./lib/cn": "./src/lib/cn.ts",
+    "./tokens": "./src/tokens.generated.ts",
+    "./tokens.pdf": "./src/tokens.pdf.ts",
+    "./controls": "./src/controls/index.ts",
     "./status": "./src/status/index.ts",
-    "./format": "./src/format/index.ts",
-    "./lib/cn": "./src/lib/cn.ts"
+    "./table": "./src/table/index.ts",
+    "./card": "./src/card/index.ts",
+    "./form": "./src/form/index.ts",
+    "./states": "./src/states/index.ts",
+    "./overlay": "./src/overlay/index.ts",
+    "./timeline": "./src/timeline/index.ts",
+    "./chart": "./src/chart/index.ts",
+    "./mail": "./src/mail/index.ts",
+    "./assistant": "./src/assistant/index.ts",
+    "./document": "./src/document/index.ts",
+    "./templates": "./src/templates/index.ts",
+    "./format": "./src/format/index.ts"
   },
   "scripts": {
     "typecheck": "bun check --no-script",

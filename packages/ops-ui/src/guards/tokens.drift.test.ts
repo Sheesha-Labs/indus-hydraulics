@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { generateAll, type CoreTokens, type ExtTokens } from '../build/generate-tokens'
+import { IO_COLORS, IO_TEXT_ROLES } from '../tokens.generated'
 
 /**
  * Tokens are generated, never hand-edited (ADR-29). Regenerates every output in memory and
@@ -18,6 +19,12 @@ describe('token drift', () => {
       expect(readFileSync(join(PKG, file), 'utf8')).toBe(expected)
     })
   }
+
+  it('no type role shares a name with a colour (text-io-<x> must mean one thing)', () => {
+    // text-io-card once set both 15px and the white card colour: the text vanished.
+    const colours = new Set<string>(IO_COLORS)
+    expect(IO_TEXT_ROLES.filter((r) => colours.has(r))).toEqual([])
+  })
 
   it('every ext token records its sign-off state and where it is used', () => {
     for (const [name, t] of Object.entries(ext)) {

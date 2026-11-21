@@ -10,7 +10,7 @@
     "test": "bun test --parallel --isolate=modules --randomize",
     "test:e2e": "playwright test --project=ops-e2e",
     "test:visual": "playwright test --project=ops-visual",
-    "test:visual:design": "OPS_VISUAL_LAYER=design playwright test --project=ops-visual-design"
+    "test:visual:design": "playwright test --project=ops-visual-design"
   },
   "dependencies": {
     "@indus/intake": "workspace:^",
@@ -27,10 +27,14 @@
     "zod": "^4.4.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pngjs": "^6.0.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "pixelmatch": "^8.0.0",
+    "pngjs": "^7.0.0",
     "tailwindcss": "^4"
   }
 }

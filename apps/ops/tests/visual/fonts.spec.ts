@@ -1,8 +1,7 @@
 import { expect, test } from '@playwright/test'
 
-// Runs in the ops-visual project, created in S01-T02.
-test.skip('Geist 400/500/600 and Instrument Serif 400 are loaded', async ({ page }) => {
-  await page.goto('/sign-in')
+test('Geist 400/500/600 and Instrument Serif 400 are loaded', async ({ page }) => {
+  await page.goto('/_kit/l0')
   await page.evaluate(() => document.fonts.ready)
   const faces = await page.evaluate(() =>
     [...document.fonts].map((f) => `${f.family.replace(/['"]/g, '')}|${f.weight}|${f.status}`)

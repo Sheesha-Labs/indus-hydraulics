@@ -10,7 +10,7 @@ const PROTECTED_PAGES = [
   '/today',
   '/enquiries/ENQ-2026-0001',
   '/settings/team',
-  '/_kit',
+  '/_kitx',
   '/sign-inx',
   '/qa',
 ]
@@ -39,6 +39,14 @@ function expectHardened(headers: Record<string, string>) {
 }
 
 test.describe('proxy', () => {
+  // The test server runs with OPS_KIT=1 (playwright.config.ts) so the visual projects can reach the
+  // specimen. Without it /_kit is protected like any page: public-paths.test.ts covers both modes.
+  test('/_kit is public in kit mode, noindex and hardened', async ({ request }) => {
+    const res = await request.get('/_kit/l0', { maxRedirects: 0 })
+    expect(res.status()).toBe(200)
+    expectHardened(res.headers())
+  })
+
   for (const path of PROTECTED_PAGES) {
     test(`${path} redirects to sign-in with next preserved`, async ({ request }) => {
       const res = await request.get(path, { maxRedirects: 0 })

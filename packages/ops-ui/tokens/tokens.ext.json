@@ -417,5 +417,11 @@
     "kind": "z",
     "signoff": "awaiting",
     "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-sheet-line": {
+    "value": "rgba(20,28,45,.08)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Specimen sheet chrome only (L0/L1 cv-spec border, swatch ring); never product UI"
   }
 }
