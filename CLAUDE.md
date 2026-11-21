@@ -276,7 +276,9 @@ Any state → cancelled  (admin only)
 
 3. **Tests run in CI** on every PR. PRs with failing tests are not merged.
 
-4. **Test files co-located with source:** `rfq-state-machine.test.ts` next to `rfq-state-machine.ts`.
+4. **Test failures are logged** in `docs/ci/test-failure-log.md` until 2026-12-05 (see `AGENTS.md`).
+
+5. **Test files co-located with source:** `rfq-state-machine.test.ts` next to `rfq-state-machine.ts`.
 
 ---
 
