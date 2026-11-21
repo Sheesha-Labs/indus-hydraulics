@@ -19,7 +19,11 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": false,
-    "incremental": false
+    "incremental": false,
+    // TypeScript 7 no longer loads every @types package by default.
+    "types": ["node", "bun"]
   },
+  // Lets test files' `vitest` imports type-check against bun:test.
+  "files": ["./types/vitest.d.ts"],
   "exclude": ["node_modules"]
 }
