@@ -17,9 +17,13 @@ env:
   # numbers are reported as warnings. See scripts/ci/budget.sh.
   CI_BUDGETS: ${{ vars.CI_BUDGETS }}
 
+# A new commit on a branch cancels that branch's run in progress, main
+# included: the merge queue has already run the full suite on what lands, and
+# a superseded run only spends runner minutes. Each merge-queue entry has its
+# own ref, so queue runs never cancel each other.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: true
 
 jobs:
   # Lint, typecheck and the other quick checks share one job and one list of
