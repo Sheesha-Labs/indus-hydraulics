@@ -25,6 +25,7 @@
     "./assistant": "./src/assistant/index.ts",
     "./document": "./src/document/index.ts",
     "./fixtures/documents": "./src/__fixtures__/documents.ts",
+    "./fixtures/mail": "./src/__fixtures__/mail.ts",
     "./templates": "./src/templates/index.ts",
     "./format": "./src/format/index.ts"
   },
@@ -47,6 +48,9 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.12",
     "@radix-ui/react-tooltip": "^1.2.7",
+    "@tiptap/pm": "^3",
+    "@tiptap/react": "^3",
+    "@tiptap/starter-kit": "^3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.14.0",

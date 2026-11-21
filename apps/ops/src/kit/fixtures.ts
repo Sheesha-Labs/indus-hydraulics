@@ -615,3 +615,14 @@ export const SAMPLE_SUPPLIERS: SampleSupplier[] = [
     win: '',
   },
 ]
+
+/**
+ * Mail kit (K-06) samples. Invented people on example domains only: no real mailbox, person, company or
+ * email content. Our own mailboxes are shown as sales@ / purchase@ on an example domain too.
+ */
+export const MAIL = {
+  mailboxes: { sales: 'sales@ops-sample.example', purchase: 'purchase@ops-sample.example' },
+  supplier: { name: 'Pat Example', address: 'pat@example-valve.example' },
+  client: { name: 'Sam Sample', address: 'buyer@sample-client.example' },
+  unknown: { name: 'Info Desk', address: 'info@unknown-sender.example' },
+} as const

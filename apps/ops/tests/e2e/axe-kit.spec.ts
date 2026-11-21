@@ -7,7 +7,7 @@ import { expect, test } from '@playwright/test'
  * kit's own parts); the section head is the Shell kit's SectionHead, checked when S02 builds it.
  * Hydration finishes first, so client parts are scanned as users meet them.
  */
-const BUILT_KITS = ['controls', 'status', 'overlay', 'table', 'card'] as const
+const BUILT_KITS = ['controls', 'status', 'overlay', 'table', 'card', 'mail'] as const
 
 for (const kit of BUILT_KITS) {
   test(`axe-kit ${kit}: no critical or serious findings`, async ({ page }) => {
@@ -15,6 +15,9 @@ for (const kit of BUILT_KITS) {
     await page.evaluate(() => document.fonts.ready)
     const { violations } = await new AxeBuilder({ page })
       .include(`[data-kit-section="${kit}"] [data-kit-part="spec"]`)
+      // Email bodies are sandboxed frames without scripts (Mail kit): axe cannot run inside them and waits
+      // for them until the test times out. Their title and sandbox are asserted by SandboxedBody.test.tsx.
+      .exclude('iframe[sandbox]')
       .analyze()
     const blocking = violations
       .filter((v) => v.impact === 'critical' || v.impact === 'serious')
