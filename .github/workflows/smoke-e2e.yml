@@ -21,20 +21,27 @@ name: Smoke E2E
 
 on:
   deployment_status:
+  # Run by hand against the live site, e.g. after fixing this workflow.
+  workflow_dispatch:
 
 jobs:
   smoke:
     name: smoke (production)
     if: |
-      github.event.deployment_status.state == 'success' &&
-      github.event.deployment.environment == 'Production – indus-hydraulics'
-    runs-on: ubuntu-latest
+      github.event_name == 'workflow_dispatch' || (
+        github.event.deployment_status.state == 'success' &&
+        github.event.deployment.environment == 'Production – indus-hydraulics'
+      )
+    # Pinned: ubuntu-latest became Ubuntu 26.04, where Playwright cannot
+    # install Chromium ("Playwright does not support chromium on
+    # ubuntu26.04-x64"), so every production smoke failed at install.
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - name: Checkout (commit being deployed)
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.deployment.sha }}
+          ref: ${{ github.event.deployment.sha || github.sha }}
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -65,7 +72,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-trace-${{ github.event.deployment.sha }}
+          name: playwright-trace-${{ github.event.deployment.sha || github.sha }}
           path: |
             test-results/
             playwright-report/
