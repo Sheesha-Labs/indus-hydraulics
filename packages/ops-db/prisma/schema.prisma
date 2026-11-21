@@ -1,0 +1,5759 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Indus Operations — Prisma schema for the `ops` Postgres schema
+//
+// Lives at packages/ops-db/prisma/schema.prisma. Same Supabase database as the
+// website (`public` schema, packages/db), separate schema, separate generated
+// client, separate Postgres role (`ops_app`).
+//
+// Conventions (read before editing):
+//   * Ids are UUIDv7 (`uuid(7)`, native `uuid` type). Human references (ENQ-…,
+//     INDUS/Q…, IH-RFQ-…) are separate unique text columns, allocated by
+//     ops.allocate_number() in SQL. Never use a human ref as a foreign key.
+//   * Every DateTime is timestamptz. Calendar dates (validity, due date) are
+//     `@db.Date`.
+//   * Money: Decimal(18,4) + a Char(3) ISO currency column. FX rates:
+//     Decimal(20,10). Percentages: Decimal(9,4) holding percent (15.4 = 15.4%).
+//     Quantities: Decimal(18,4).
+//   * Currency (Char(3)) and country (Char(2)) columns are foreign keys /
+//     CHECKs in SQL only; they are not Prisma relations.
+//   * Actor columns named `*ById` reference ops.user(id) through a SQL foreign
+//     key. Only the actor columns the UI navigates are modelled as Prisma
+//     relations; the rest are plain uuid columns, to keep `User` readable.
+//   * Polymorphic links use (subjectType, subjectId). The deal space is the
+//     Enquiry: anything that belongs to one carries a real `enquiryId` FK.
+//   * The schema is NEVER pushed. SQL migrations in
+//     packages/ops-db/migrations/YYYYMMDDHHMM_ops_*.sql are the source of truth for
+//     the database; this file must be kept in step by hand
+//     (CLAUDE.md §5.4). `tsvector` columns are generated in SQL and appear
+//     here as Unsupported.
+//   * Column names stay camelCase (quoted in SQL), table names snake_case via
+//     @@map — the same convention as packages/db.
+//   * This file is the S00 BASE schema. From S00 on, packages/ops-db/prisma/
+//     schema.prisma in the repo is the schema of record; models added by later
+//     sprints (architecture §5.1 "Schema deltas", e.g. ReminderStep, RfqChaser,
+//     OrderException) exist only there. S37-T06 copies the as-built file back
+//     next to this one as 06-ops-schema.as-built.prisma.
+// ─────────────────────────────────────────────────────────────────────────────
+
+generator client {
+  provider        = "prisma-client-js"
+  // A separate output path is mandatory: packages/db generates the default
+  // @prisma/client, and under Bun's isolated store both packages resolve the
+  // same @prisma/client directory, so two clients generated to the default
+  // place overwrite each other. Git-ignored; src/client-path.test.ts pins it.
+  output          = "../generated/client"
+  binaryTargets   = ["native", "debian-openssl-3.0.x", "linux-arm64-openssl-3.0.x"]
+  previewFeatures = ["views", "fullTextSearchPostgres"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  // Supavisor transaction pooler (6543) as ops_app, ?pgbouncer=true&connection_limit=1&pool_timeout=20.
+  // The Ops Vercel project has its own env, so the names match packages/db.
+  url       = env("DATABASE_URL")
+  // Direct connection for `prisma db execute` only (migrations), never at runtime.
+  directUrl = env("DIRECT_URL")
+  schemas   = ["ops"]
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// ENUMS
+// ═════════════════════════════════════════════════════════════════════════════
+
+// ── People and access ────────────────────────────────────────────────────────
+
+enum UserRole {
+  owner
+  helper
+
+  @@schema("ops")
+}
+
+enum UserStatus {
+  invited
+  active
+  suspended
+  removed
+
+  @@schema("ops")
+}
+
+enum SignInMethod {
+  google
+  password
+
+  @@schema("ops")
+}
+
+enum AuthEventKind {
+  sign_in
+  sign_in_failed
+  locked
+  unlocked
+  sign_out
+  session_expired
+  session_revoked
+  password_set
+  password_reset
+  totp_enabled
+  backup_code_used
+  invite_sent
+  invite_accepted
+  invite_revoked
+  ownership_transferred
+
+  @@schema("ops")
+}
+
+// ── Mail ────────────────────────────────────────────────────────────────────
+
+enum MailboxRole {
+  client
+  supplier
+  read_only
+  personal
+
+  @@schema("ops")
+}
+
+enum MailboxStatus {
+  connecting
+  backfilling
+  live
+  behind
+  limit_reached
+  backfill_paused
+  paused
+  disconnected
+
+  @@schema("ops")
+}
+
+enum MailDirection {
+  inbound
+  outbound
+
+  @@schema("ops")
+}
+
+enum MailClass {
+  unclassified
+  client_enquiry
+  client_reply
+  client_po
+  supplier_quote
+  supplier_question
+  supplier_documents
+  supplier_price_list
+  supplier_other
+  freight
+  payment
+  auto_reply
+  bounce
+  phishing
+  not_business
+  other
+
+  @@schema("ops")
+}
+
+enum MailHandledState {
+  unsure
+  not_linked
+  needs_you
+  handled
+
+  @@schema("ops")
+}
+
+enum Confidence {
+  sure
+  likely
+  unsure
+
+  @@schema("ops")
+}
+
+enum LinkedBy {
+  assistant
+  user
+  rule
+  import
+
+  @@schema("ops")
+}
+
+enum OutboundKind {
+  client_acknowledgement
+  client_questions
+  client_question_reminder
+  quotation
+  quotation_correction
+  follow_up
+  regret
+  po_receipt
+  order_acknowledgement
+  advance_request
+  advance_reminder
+  payment_receipt
+  delivery_update
+  ready_for_collection
+  invoice
+  payment_reminder
+  client_document_correction
+  supplier_rfq
+  supplier_rfq_change
+  supplier_rfq_withdrawal
+  supplier_chaser
+  supplier_question_relay
+  client_answer_share
+  supplier_hold_request
+  supplier_document_reminder
+  supplier_po
+  supplier_po_amendment
+  supplier_production_chase
+  supplier_query
+  forwarder_request
+  forwarder_claim
+  visitor_acknowledgement
+  visitor_callback_confirmation
+  morning_brief
+  evening_summary
+  month_pack
+  other
+
+  @@schema("ops")
+}
+
+enum OutboundChannel {
+  gmail
+  system
+
+  @@schema("ops")
+}
+
+enum OutboundStatus {
+  draft
+  awaiting_approval
+  queued
+  waiting_for_mailbox
+  sending
+  sent
+  failed
+  cancelled
+  undone
+
+  @@schema("ops")
+}
+
+enum ThreadMode {
+  client_thread
+  rfq_thread
+  new_thread_per_recipient
+  new_thread
+
+  @@schema("ops")
+}
+
+// ── Companies and contacts ─────────────────────────────────────────────────
+
+enum CompanySource {
+  manual
+  email
+  website
+  callback
+  research
+  history_import
+  legacy_admin
+  zoho
+
+  @@schema("ops")
+}
+
+enum SupplierType {
+  manufacturer
+  principal
+  oem
+  distributor
+  stockist
+  trader
+  local_shop
+  forwarder
+  marketplace
+  unknown
+
+  @@schema("ops")
+}
+
+enum SupplierTier {
+  contact_only
+  trial
+  approved
+  principal
+  blocked
+
+  @@schema("ops")
+}
+
+enum BlockReason {
+  fake_company
+  counterfeit
+  payment_fraud_attempt
+  persistent_non_delivery
+  quality_failure
+  other
+
+  @@schema("ops")
+}
+
+enum VatTreatment {
+  export_zero_rated
+  local_standard
+  mixed
+
+  @@schema("ops")
+}
+
+enum PartialFollowUpPreference {
+  supplementary
+  revision
+  ask_each_time
+
+  @@schema("ops")
+}
+
+enum ContactSourceKind {
+  verified_on_page
+  directory_only
+  email_signature
+  email_header
+  manual
+  history_import
+  website_form
+
+  @@schema("ops")
+}
+
+enum ContactStatus {
+  active
+  bouncing
+  left
+  do_not_use
+
+  @@schema("ops")
+}
+
+enum BankAccountStatus {
+  pending_verification
+  verified
+  rejected
+  superseded
+
+  @@schema("ops")
+}
+
+enum ComplianceDocKind {
+  trade_licence
+  vat_certificate
+  iso_certificate
+  atex_certificate
+  api_licence
+  approval
+  bank_letter
+  company_profile
+  past_performance_letter
+  insurance
+  other
+
+  @@schema("ops")
+}
+
+enum ScreeningKind {
+  sanctions
+  company_registry
+  domain_record
+  blocked_list
+
+  @@schema("ops")
+}
+
+enum ScreeningResult {
+  clear
+  possible_match
+  hit
+  error
+
+  @@schema("ops")
+}
+
+enum LessonScope {
+  supplier
+  trade
+  part
+  client
+  general
+
+  @@schema("ops")
+}
+
+enum PreferenceScope {
+  global
+  client
+  supplier
+  trade
+  mailbox
+
+  @@schema("ops")
+}
+
+enum PreferenceKind {
+  salutation
+  phrase_use
+  phrase_avoid
+  tone_sample
+  margin_habit
+  rounding
+  quoting_currency
+  supplier_exclusion
+  classification_rule
+  line_display
+  chaser_pause
+  acknowledgement_skip
+  other
+
+  @@schema("ops")
+}
+
+enum PreferenceSource {
+  learned
+  manual
+
+  @@schema("ops")
+}
+
+// ── Intake ──────────────────────────────────────────────────────────────────
+
+enum LeadStage {
+  new
+  contacted
+  qualified
+  converted
+  dropped
+
+  @@schema("ops")
+}
+
+enum LeadSource {
+  callback
+  website
+  email
+  manual
+  import
+
+  @@schema("ops")
+}
+
+enum CallbackStatus {
+  new
+  calling
+  called
+  no_answer
+  converted_lead
+  converted_enquiry
+  merged
+  spam
+  closed
+
+  @@schema("ops")
+}
+
+enum WebsiteSubmissionStatus {
+  received
+  enquiry_created
+  merged
+  spam
+  rejected
+
+  @@schema("ops")
+}
+
+enum PortalSubmissionKind {
+  accept
+  ask_changes
+  upload_payment_advice
+  request_fresh_link
+
+  @@schema("ops")
+}
+
+enum PortalSubmissionStatus {
+  received
+  processed
+  dismissed
+
+  @@schema("ops")
+}
+
+// ── Enquiry and lines ──────────────────────────────────────────────────────
+
+enum ReceivedVia {
+  email
+  forwarded_email
+  website_rfq
+  callback
+  manual
+  file_upload
+  client_portal
+  history_import
+  legacy_admin
+
+  @@schema("ops")
+}
+
+enum EnquiryStage {
+  new
+  qualifying
+  sourcing
+  quotes_in
+  pricing
+  quoted
+  negotiation
+  won
+  lost
+  regretted
+  closed
+
+  @@schema("ops")
+}
+
+enum QualificationPath {
+  quote_fully
+  quote_partial
+  ask_client_first
+  regret
+  no_source
+  ignore_spam
+
+  @@schema("ops")
+}
+
+enum LostReason {
+  price
+  lead_time
+  specification
+  went_direct_to_oem
+  no_decision
+  cancelled
+  other
+
+  @@schema("ops")
+}
+
+enum ClosedReason {
+  merged
+  duplicate
+  spam
+  withdrawn_by_client
+  other
+
+  @@schema("ops")
+}
+
+enum EquivalentsPolicy {
+  unknown
+  exact_only
+  equivalents_allowed
+
+  @@schema("ops")
+}
+
+enum LineStatus {
+  open
+  held
+  sourcing
+  quoted
+  to_follow
+  not_quoted
+  no_source
+  regretted
+  cancelled
+
+  @@schema("ops")
+}
+
+enum LineRegretReason {
+  not_our_range
+  no_source_found
+  obsolete
+  client_dropped
+  other
+
+  @@schema("ops")
+}
+
+enum ClientQuestionStatus {
+  draft
+  sent
+  answered
+  proceeded_on_assumption
+  left_out
+  withdrawn
+
+  @@schema("ops")
+}
+
+enum SupplierQuestionStatus {
+  received
+  bundled
+  relayed
+  answered
+  shared_back
+  dismissed
+
+  @@schema("ops")
+}
+
+// ── Supplier RFQs ──────────────────────────────────────────────────────────
+
+enum RfqKind {
+  primary
+  supplementary
+
+  @@schema("ops")
+}
+
+enum RfqStatus {
+  reserved
+  draft
+  awaiting_approval
+  scheduled
+  sent
+  closed
+  withdrawn
+  released
+
+  @@schema("ops")
+}
+
+enum RecipientStatus {
+  draft
+  awaiting_approval
+  scheduled
+  sent
+  opened
+  auto_reply
+  bounced
+  replied_question
+  partial_quote
+  quoted
+  regretted
+  no_reply
+  withdrawn
+
+  @@schema("ops")
+}
+
+enum RfqChangeKind {
+  add_lines
+  change_quantity
+  drop_lines
+  spec_update
+  deadline_change
+
+  @@schema("ops")
+}
+
+enum RfqLanguage {
+  en
+  en_zh
+
+  @@schema("ops")
+}
+
+// ── Research and parts ─────────────────────────────────────────────────────
+
+enum ResearchRunStatus {
+  queued
+  running
+  done
+  stopped
+  budget_reached
+  failed
+
+  @@schema("ops")
+}
+
+enum CandidatePriority {
+  a
+  b
+  c
+
+  @@schema("ops")
+}
+
+enum CandidateStatus {
+  found
+  verifying
+  verified
+  directory_only
+  marketplace_only
+  not_suitable
+  added
+  added_to_rfq
+  merged
+  rejected
+
+  @@schema("ops")
+}
+
+enum EquivalenceRelation {
+  equivalent
+  alternative
+  not_equivalent
+
+  @@schema("ops")
+}
+
+enum EquivalenceStatus {
+  proposed
+  accepted
+  rejected
+
+  @@schema("ops")
+}
+
+enum EquivalenceSource {
+  website
+  learned
+  research
+  manual
+  import
+
+  @@schema("ops")
+}
+
+enum CatalogueSuggestionStatus {
+  not_suggested
+  suggested
+  drafted
+  sent
+  published
+  declined
+
+  @@schema("ops")
+}
+
+// ── Tenders ────────────────────────────────────────────────────────────────
+
+enum TenderStatus {
+  preparing
+  submitted
+  under_evaluation
+  clarification_requested
+  awarded
+  not_awarded
+  withdrawn
+
+  @@schema("ops")
+}
+
+enum SubmissionMethod {
+  email
+  portal
+  hand_delivery
+
+  @@schema("ops")
+}
+
+enum PlanStepStatus {
+  planned
+  done
+  late
+  at_risk
+  hard_deadline
+
+  @@schema("ops")
+}
+
+enum RequirementCategory {
+  commercial
+  technical
+  form
+  submission
+  approved_makes
+  other
+
+  @@schema("ops")
+}
+
+enum RequirementStatus {
+  ready
+  missing
+  in_progress
+  not_applicable
+
+  @@schema("ops")
+}
+
+enum TenderQueryStatus {
+  draft
+  posted
+  answered
+  pending
+
+  @@schema("ops")
+}
+
+enum TenderQueryOrigin {
+  ours
+  supplier
+  buyer
+
+  @@schema("ops")
+}
+
+enum VendorCheckResult {
+  listed
+  not_listed
+  excluded
+  offered_as_alternative
+
+  @@schema("ops")
+}
+
+enum BidPackItemKind {
+  priced_schedule
+  compliance_statement
+  deviation_list
+  technical_documents
+  company_documents
+  form
+  other
+
+  @@schema("ops")
+}
+
+// ── Supplier quotes, compare, pricing ──────────────────────────────────────
+
+enum SupplierQuoteStatus {
+  capturing
+  needs_review
+  confirmed
+  superseded
+  rejected
+  duplicate
+
+  @@schema("ops")
+}
+
+enum SupplierQuoteLineKind {
+  exact
+  alternative
+  conditional
+  partial
+  regret
+  to_follow
+
+  @@schema("ops")
+}
+
+enum StockStatus {
+  ex_stock
+  production
+  unknown
+
+  @@schema("ops")
+}
+
+enum QuoteExceptionKind {
+  quantity_differs
+  moq
+  make_differs
+  certification_below
+  currency_unclear
+  unreadable_value
+  mapping_unsure
+  substitution
+  total_mismatch
+  password_protected
+  portal_link
+
+  @@schema("ops")
+}
+
+enum QuoteExceptionStatus {
+  open
+  resolved
+  deferred
+
+  @@schema("ops")
+}
+
+enum SourceContribution {
+  all
+  prices
+  lead_times
+  freight
+  terms
+
+  @@schema("ops")
+}
+
+enum LandedComponentKind {
+  freight
+  insurance
+  duty
+  bank_charges
+  inspection
+  packing
+  other
+
+  @@schema("ops")
+}
+
+enum LandedBasis {
+  data
+  default_pct
+  override
+
+  @@schema("ops")
+}
+
+enum SelectionScenario {
+  lowest_landed
+  fewest_suppliers
+  fastest
+  assistant_pick
+  custom
+
+  @@schema("ops")
+}
+
+enum SelectedBy {
+  assistant
+  user
+
+  @@schema("ops")
+}
+
+enum DeviationField {
+  make
+  material
+  trim
+  certification
+  standard
+  pressure_rating
+  dimensions
+  quantity
+  lead_time
+  other
+
+  @@schema("ops")
+}
+
+enum DeviationStatus {
+  pending
+  accepted
+  ask_client
+  excluded
+  no_deviation
+
+  @@schema("ops")
+}
+
+enum QuotationKind {
+  standard
+  revision
+  supplementary
+
+  @@schema("ops")
+}
+
+enum QuotationStatus {
+  draft
+  awaiting_approval
+  approved
+  sent
+  viewed
+  evaluating
+  won
+  lost
+  superseded
+  cancelled
+
+  @@schema("ops")
+}
+
+enum QuotationClientStatus {
+  received
+  technical_review
+  budget_approval
+  evaluating
+  shortlisted
+  asked_for_changes
+  asked_for_discount
+  counter_offer
+  no_reply
+  still_deciding
+  po_to_follow
+  po_received
+
+  @@schema("ops")
+}
+
+enum QuotationLineStatus {
+  priced
+  price_to_follow
+  not_quoted
+
+  @@schema("ops")
+}
+
+enum RevisionReason {
+  discount
+  quantities
+  alternative
+  price_to_follow_added
+  correction
+  client_revision
+  other
+
+  @@schema("ops")
+}
+
+enum RecordOrigin {
+  ops
+  history_import
+  legacy_admin
+  zoho
+
+  @@schema("ops")
+}
+
+enum FollowUpChannel {
+  call
+  email
+  meeting
+  view
+  note
+
+  @@schema("ops")
+}
+
+enum FollowUpOutcome {
+  still_deciding
+  asks_for_changes
+  counter_offer
+  purchase_order
+  lost
+  no_answer
+
+  @@schema("ops")
+}
+
+// ── Orders ─────────────────────────────────────────────────────────────────
+
+enum OrderStage {
+  confirmed
+  advance
+  production
+  inspection
+  freight
+  shipped
+  delivered
+  invoiced
+  paid
+  closed
+  cancelled
+
+  @@schema("ops")
+}
+
+enum PartialShipmentPolicy {
+  allowed
+  not_allowed
+  silent
+
+  @@schema("ops")
+}
+
+enum PoCheckField {
+  line_qty
+  line_price
+  line_description
+  payment_terms
+  delivery_terms
+  delivery_date
+  late_delivery_clause
+  inspection
+  documents
+  other
+
+  @@schema("ops")
+}
+
+enum PoCheckDecision {
+  pending
+  accept
+  ask_client
+  reject
+  not_applicable
+
+  @@schema("ops")
+}
+
+enum OrderChangeKind {
+  date_change
+  quantity_change
+  cancellation
+  address_change
+  spec_change
+
+  @@schema("ops")
+}
+
+enum OrderChangeStatus {
+  received
+  assessing
+  decided
+  applied
+  rejected
+
+  @@schema("ops")
+}
+
+enum ChargePolicy {
+  per_terms
+  cost_only
+  waive
+
+  @@schema("ops")
+}
+
+enum SupplierPoStatus {
+  draft
+  awaiting_approval
+  approved
+  sent
+  acknowledged
+  in_production
+  ready
+  inspected
+  shipped
+  delivered
+  invoiced
+  closed
+  cancelled
+
+  @@schema("ops")
+}
+
+enum LineMatchStatus {
+  pending
+  in_balance
+  mismatch
+  held
+  accepted
+  resolved
+
+  @@schema("ops")
+}
+
+enum MatchIssueStatus {
+  open
+  in_query
+  resolved
+  accepted
+
+  @@schema("ops")
+}
+
+enum ChaseEventKind {
+  acknowledged
+  status_reply
+  chase_sent
+  new_ready_date
+  escalated
+  photos_requested
+  note
+
+  @@schema("ops")
+}
+
+enum InspectionStatus {
+  planned
+  booked
+  in_progress
+  hold
+  failed
+  passed
+  released
+  released_with_exception
+  cancelled
+
+  @@schema("ops")
+}
+
+enum InspectorKind {
+  client_tpi
+  third_party
+  indus
+  supplier_self
+
+  @@schema("ops")
+}
+
+enum ItpPointType {
+  review
+  witness
+  hold_point
+
+  @@schema("ops")
+}
+
+enum ItpResult {
+  open
+  pass
+  fail
+  not_applicable
+
+  @@schema("ops")
+}
+
+enum InspectionDocStatus {
+  received
+  requested
+  pending
+  missing
+  not_applicable
+
+  @@schema("ops")
+}
+
+enum CostAllocation {
+  supplier
+  indus
+  client
+
+  @@schema("ops")
+}
+
+enum FreightMode {
+  sea_lcl
+  sea_fcl
+  air_consolidation
+  air_express
+  road
+  courier
+  client_collection
+
+  @@schema("ops")
+}
+
+enum FreightQuoteStatus {
+  requested
+  received
+  selected
+  rejected
+  expired
+
+  @@schema("ops")
+}
+
+enum ShipmentStatus {
+  planned
+  booked
+  ready_for_collection
+  collected
+  in_transit
+  arrived
+  customs_cleared
+  out_for_delivery
+  delivered
+  delivered_with_remarks
+  partially_delivered
+  cancelled
+
+  @@schema("ops")
+}
+
+enum DeliveryCondition {
+  accepted_in_full
+  accepted_with_remarks
+  partial
+
+  @@schema("ops")
+}
+
+enum ClientConsent {
+  not_needed
+  pending
+  given
+  refused
+
+  @@schema("ops")
+}
+
+enum ExtraFreightPolicy {
+  absorb
+  charge_client
+
+  @@schema("ops")
+}
+
+enum DocIssuer {
+  supplier
+  freight
+  indus
+  client
+
+  @@schema("ops")
+}
+
+enum ShippingDocStatus {
+  awaited
+  requested
+  received
+  generated
+  not_applicable
+
+  @@schema("ops")
+}
+
+enum ClaimStatus {
+  open
+  with_back_to_back
+  resolved
+  rejected
+  withdrawn
+
+  @@schema("ops")
+}
+
+enum IndusClaimPosition {
+  accept_replace
+  repair
+  credit_note
+  reject
+
+  @@schema("ops")
+}
+
+enum ClaimPartyKind {
+  forwarder
+  insurer
+  supplier
+
+  @@schema("ops")
+}
+
+enum OrderCostKind {
+  supplier
+  freight
+  duty
+  inspection
+  bank_charges
+  insurance
+  storage
+  restocking
+  other
+
+  @@schema("ops")
+}
+
+// ── Documents and files ────────────────────────────────────────────────────
+
+enum DocumentKind {
+  quotation
+  supplier_rfq
+  order_acknowledgement
+  proforma_invoice
+  supplier_po
+  packing_list
+  delivery_note
+  collection_note
+  tax_invoice
+  credit_note
+  client_po
+  client_rfq
+  supplier_quote
+  supplier_acknowledgement
+  supplier_proforma
+  supplier_invoice
+  supplier_packing_list
+  mill_test_certificate
+  certificate_of_origin
+  certificate_of_conformity
+  test_report
+  inspection_test_plan
+  inspection_release
+  air_waybill
+  bill_of_lading
+  insurance_certificate
+  customs_declaration
+  exit_certificate
+  proof_of_delivery
+  freight_quote
+  tender_document
+  tender_addendum
+  bid_pack
+  datasheet
+  drawing
+  cleaned_datasheet
+  payment_advice
+  claim_letter
+  photo
+  other
+
+  @@schema("ops")
+}
+
+enum DocumentDirection {
+  produced
+  received
+
+  @@schema("ops")
+}
+
+enum DocumentStatus {
+  draft
+  approved
+  sent
+  superseded
+  cancelled
+  received
+  void
+
+  @@schema("ops")
+}
+
+enum ReissueReason {
+  wrong_price
+  wrong_address
+  wrong_quantity
+  wrong_attachment
+  client_request
+  typo
+  other
+
+  @@schema("ops")
+}
+
+enum FileSource {
+  gmail_attachment
+  upload
+  generated
+  client_portal
+  research_capture
+  import
+
+  @@schema("ops")
+}
+
+enum ExtractionStatus {
+  pending
+  extracted
+  partial
+  unsupported
+  password_protected
+  unreadable
+  failed
+
+  @@schema("ops")
+}
+
+enum ShareEventKind {
+  opened
+  downloaded_pdf
+  accepted
+  changes_requested
+  fresh_link_requested
+  payment_advice_uploaded
+
+  @@schema("ops")
+}
+
+// ── Money ──────────────────────────────────────────────────────────────────
+
+enum ClientInvoiceKind {
+  proforma_advance
+  tax_invoice
+  credit_note
+
+  @@schema("ops")
+}
+
+enum ClientInvoiceStatus {
+  draft
+  sent
+  part_paid
+  short_paid
+  paid
+  disputed
+  overdue
+  written_off
+  void
+
+  @@schema("ops")
+}
+
+enum PaymentAllocationStatus {
+  unallocated
+  partially_allocated
+  allocated
+  held_wrong_entity
+
+  @@schema("ops")
+}
+
+enum SupplierInvoiceStatus {
+  awaited
+  received
+  matched
+  mismatch
+  accepted
+
+  @@schema("ops")
+}
+
+enum SupplierPaymentKind {
+  advance
+  balance
+  other
+
+  @@schema("ops")
+}
+
+enum PaymentTrigger {
+  with_po
+  before_dispatch
+  after_inspection
+  on_bill_of_lading
+  on_delivery
+  days_after_invoice
+  other
+
+  @@schema("ops")
+}
+
+enum SupplierPaymentStatus {
+  draft
+  checks_pending
+  blocked
+  ready_for_approval
+  approved
+  paid
+  cancelled
+
+  @@schema("ops")
+}
+
+enum ExportEvidenceKind {
+  bill_of_lading
+  air_waybill
+  exit_certificate
+  other
+
+  @@schema("ops")
+}
+
+enum EvidenceStatus {
+  provided
+  requested
+  missing
+  not_applicable
+
+  @@schema("ops")
+}
+
+enum MonthCloseStatus {
+  open
+  in_review
+  closed
+
+  @@schema("ops")
+}
+
+enum ZohoObject {
+  contact
+  estimate
+  invoice
+  credit_note
+  payment_received
+  payment_made
+  bill
+  tax_rate
+  item
+  account
+  currency
+
+  @@schema("ops")
+}
+
+enum SyncDirection {
+  push
+  pull
+
+  @@schema("ops")
+}
+
+enum SyncStatus {
+  queued
+  done
+  error
+  retrying
+  skipped
+
+  @@schema("ops")
+}
+
+enum IntegrationProvider {
+  google_workspace
+  zoho_books
+  website
+  fx_source
+  anthropic
+  resend
+
+  @@schema("ops")
+}
+
+enum IntegrationStatus {
+  not_connected
+  connected
+  error
+  paused
+  disconnected
+
+  @@schema("ops")
+}
+
+enum FxSource {
+  cbuae
+  bank
+  zoho
+  manual
+
+  @@schema("ops")
+}
+
+// ── Assistant, audit, attention ────────────────────────────────────────────
+
+enum AutopilotLevel {
+  off
+  suggest
+  draft_and_ask
+  do_and_tell
+  do_quietly
+  never
+
+  @@schema("ops")
+}
+
+enum AutopilotGroup {
+  mail
+  enquiries
+  sourcing
+  quotes
+  after_sending
+  orders
+  money
+  system
+
+  @@schema("ops")
+}
+
+enum ActionState {
+  proposed
+  later
+  approved
+  edited_approved
+  rejected
+  queued
+  running
+  done
+  failed
+  undone
+  reverted
+  corrected
+  cancelled
+
+  @@schema("ops")
+}
+
+enum ActorKind {
+  user
+  assistant
+  system
+  client
+  import
+
+  @@schema("ops")
+}
+
+enum GuardrailKind {
+  value_threshold
+  first_contact
+  margin_floor
+  credit_hold
+  working_hours
+  holiday_calendar
+  daily_send_cap
+  fixed_client_prices
+  fixed_no_money
+  ai_budget
+  research_cap
+
+  @@schema("ops")
+}
+
+enum AiPurpose {
+  read_mail
+  classify
+  extract
+  research
+  draft
+  compare
+  price
+  summarise
+  translate
+  other
+
+  @@schema("ops")
+}
+
+enum ActivityKind {
+  money
+  documents
+  supplier
+  quantity
+  terms
+  decision
+  status
+  link
+  contact
+  settings
+  other
+
+  @@schema("ops")
+}
+
+enum TaskKind {
+  call
+  register_portal
+  download_portal_file
+  bid_bond
+  confirm_with_bank
+  record_callback
+  help_request
+  follow_up
+  general
+
+  @@schema("ops")
+}
+
+enum TaskSource {
+  manual
+  assistant
+  system
+
+  @@schema("ops")
+}
+
+enum TaskStatus {
+  open
+  done
+  cancelled
+
+  @@schema("ops")
+}
+
+enum NotificationSeverity {
+  info
+  warning
+  urgent
+  critical
+
+  @@schema("ops")
+}
+
+enum NotificationEvent {
+  new_enquiry
+  high_value_enquiry
+  tender_deadline
+  quote_captured
+  all_quotes_in
+  client_replied
+  po_received
+  supplier_late
+  payment_received
+  bank_detail_change
+  assistant_paused
+  mailbox_disconnected
+  callback_overdue
+  fresh_link_requested
+  document_expiring
+  sync_error
+  budget_threshold
+  action_failed
+  other
+
+  @@schema("ops")
+}
+
+enum DeliveryChannel {
+  in_app
+  push
+  email
+  brief_only
+  off
+
+  @@schema("ops")
+}
+
+enum SearchKind {
+  enquiry
+  quotation
+  supplier_rfq
+  supplier_quote
+  order
+  supplier_po
+  company
+  contact
+  part
+  mail_message
+  attachment
+  document
+  tender
+
+  @@schema("ops")
+}
+
+/// Polymorphic subject for links, tasks, notifications, actions and activity.
+enum RecordType {
+  enquiry
+  enquiry_line
+  trade_group
+  supplier_rfq
+  supplier_rfq_recipient
+  supplier_quote
+  supplier_quote_line
+  quotation
+  order
+  order_line
+  supplier_po
+  shipment
+  inspection
+  claim
+  document
+  company
+  contact
+  part
+  tender
+  client_invoice
+  supplier_payment
+  mail_message
+  mail_thread
+  task
+  research_run
+  import_job
+  lead
+  callback_request
+  mailbox
+  user
+  settings
+
+  @@schema("ops")
+}
+
+// ── Import, checklists, numbering ──────────────────────────────────────────
+
+enum ImportSource {
+  gmail_sales
+  gmail_purchase
+  zoho_books
+  legacy_admin
+
+  @@schema("ops")
+}
+
+enum ImportJobStatus {
+  draft
+  running
+  paused
+  reviewing
+  finished
+  undone
+  failed
+
+  @@schema("ops")
+}
+
+enum ImportStageStatus {
+  queued
+  running
+  paused
+  done
+  failed
+  skipped
+
+  @@schema("ops")
+}
+
+enum ImportEntity {
+  company
+  contact
+  enquiry
+  enquiry_line
+  quotation
+  supplier_quote_line
+  supplier_rfq
+  part
+  order
+  callback
+
+  @@schema("ops")
+}
+
+enum ImportCandidateStatus {
+  pending
+  accepted
+  skipped
+  merged
+  fixed
+  failed
+
+  @@schema("ops")
+}
+
+enum ChecklistKind {
+  setup
+  cutover
+  first_hour
+
+  @@schema("ops")
+}
+
+enum ChecklistItemStatus {
+  todo
+  in_progress
+  done
+  skipped
+  rolled_back
+
+  @@schema("ops")
+}
+
+enum NumberScopeKind {
+  global
+  year
+  month
+  day
+  parent
+
+  @@schema("ops")
+}
+
+enum IssuedNumberStatus {
+  reserved
+  issued
+  released
+  void
+
+  @@schema("ops")
+}
+
+enum ExternalNumberSource {
+  gmail_sent
+  zoho
+  legacy_admin
+  history_import
+  manual
+
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// REFERENCE DATA AND SETTINGS (content lives in the database, not in code)
+// ═════════════════════════════════════════════════════════════════════════════
+
+/// ISO 4217 currencies the console may quote, buy or report in. Every
+/// Char(3) currency column FKs here in SQL.
+model Currency {
+  code       String  @id @db.Char(3)
+  name       String
+  minorUnits Int     @default(2)
+  active     Boolean @default(true)
+
+  @@map("currency")
+  @@schema("ops")
+}
+
+/// Trade / category taxonomy: drives trade groups, margin per category,
+/// supplier line cards, lessons and part grouping.
+model Trade {
+  id               String    @id @default(uuid(7)) @db.Uuid
+  name             String    @unique
+  slug             String    @unique
+  parentId         String?   @db.Uuid
+  parent           Trade?    @relation("TradeTree", fields: [parentId], references: [id])
+  children         Trade[]   @relation("TradeTree")
+  defaultMarginPct Decimal?  @db.Decimal(9, 4)
+  position         Int       @default(0)
+  archivedAt       DateTime? @db.Timestamptz(3)
+  createdAt        DateTime  @default(now()) @db.Timestamptz(3)
+
+  tradeGroups TradeGroup[]
+  lineCards   SupplierLineCard[]
+  parts       Part[]
+  lessons     Lesson[]
+
+  @@map("trade")
+  @@schema("ops")
+}
+
+/// Typed key/value settings validated by Zod in code (pricing.*, vat.*,
+/// fx.*, intake.*, assistant.mode, brief.*, retention.*, company.profile …).
+model SettingsEntry {
+  key         String   @id
+  value       Json
+  version     Int      @default(0)
+  ownerOnly   Boolean  @default(false)
+  updatedById String?  @db.Uuid
+  updatedAt   DateTime @updatedAt @db.Timestamptz(3)
+
+  @@map("settings_entry")
+  @@schema("ops")
+}
+
+/// Working calendar: UAE public holidays and Ramadan hours. Used for
+/// working-day maths (reply-by, give-up dates, call-back countdown).
+model WorkCalendarDay {
+  date       DateTime @id @db.Date
+  label      String
+  isHoliday  Boolean  @default(true)
+  hoursStart String?
+  hoursEnd   String?
+  country    String   @default("AE") @db.Char(2)
+
+  @@map("work_calendar_day")
+  @@schema("ops")
+}
+
+model FollowUpCadence {
+  id        String  @id @default(uuid(7)) @db.Uuid
+  name      String  @unique
+  /// [{ afterDays: 7, kind: "reminder_to_user" }, …]
+  steps     Json
+  isDefault Boolean @default(false)
+
+  clients ClientProfile[]
+
+  @@map("follow_up_cadence")
+  @@schema("ops")
+}
+
+model HelpArticle {
+  id        String   @id @default(uuid(7)) @db.Uuid
+  slug      String   @unique
+  section   String
+  title     String
+  body      String
+  published Boolean  @default(true)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+
+  @@map("help_article")
+  @@schema("ops")
+}
+
+// ── Numbering ──────────────────────────────────────────────────────────────
+
+/// One row per document family. Patterns are data (Settings › Numbering, 214).
+model NumberSequence {
+  key             String          @id
+  label           String
+  pattern         String
+  revisionPattern String?
+  scopeKind       NumberScopeKind @default(global)
+  padTo           Int             @default(0)
+  ownerOnly       Boolean         @default(true)
+  /// Allocation is refused until a seed has been confirmed (INDUS/Q hand-over).
+  seededAt        DateTime?       @db.Timestamptz(3)
+  seededById      String?         @db.Uuid
+  seedEvidence    Json?
+  updatedAt       DateTime        @updatedAt @db.Timestamptz(3)
+
+  counters     NumberCounter[]
+  issued       IssuedNumber[]
+  observations ExternalNumberObservation[]
+
+  @@map("number_sequence")
+  @@schema("ops")
+}
+
+model NumberCounter {
+  sequenceKey String
+  sequence    NumberSequence @relation(fields: [sequenceKey], references: [key])
+  /// '' for global, '2026', '2611', '26-09-23', or a parent ref.
+  scope       String         @default("")
+  nextValue   BigInt
+  updatedAt   DateTime       @updatedAt @db.Timestamptz(3)
+
+  @@id([sequenceKey, scope])
+  @@map("number_counter")
+  @@schema("ops")
+}
+
+/// Every number ever handed out. The continuity check and gap audit read this.
+model IssuedNumber {
+  id          String             @id @default(uuid(7)) @db.Uuid
+  sequenceKey String
+  sequence    NumberSequence     @relation(fields: [sequenceKey], references: [key])
+  scope       String             @default("")
+  value       BigInt
+  formatted   String
+  status      IssuedNumberStatus @default(issued)
+  recordType  RecordType?
+  recordId    String?            @db.Uuid
+  issuedAt    DateTime           @default(now()) @db.Timestamptz(3)
+  issuedById  String?            @db.Uuid
+  releasedAt  DateTime?          @db.Timestamptz(3)
+
+  @@unique([sequenceKey, formatted])
+  @@unique([sequenceKey, scope, value])
+  @@index([recordType, recordId])
+  @@map("issued_number")
+  @@schema("ops")
+}
+
+/// Numbers seen outside Ops (Gmail sent mail, Zoho, legacy admin). The
+/// allocator skips any value found here.
+model ExternalNumberObservation {
+  id          String               @id @default(uuid(7)) @db.Uuid
+  sequenceKey String
+  sequence    NumberSequence       @relation(fields: [sequenceKey], references: [key])
+  formatted   String
+  value       BigInt?
+  scope       String               @default("")
+  source      ExternalNumberSource
+  sourceRef   String?
+  observedAt  DateTime             @default(now()) @db.Timestamptz(3)
+
+  @@unique([sequenceKey, formatted, source])
+  @@index([sequenceKey, scope, value])
+  @@map("external_number_observation")
+  @@schema("ops")
+}
+
+// ── Autopilot, guardrails, templates, terms ────────────────────────────────
+
+/// Catalogue of Assistant action types: the 32 Autopilot rows plus
+/// non-configurable system actions (fx refresh, merge, revert, import …).
+model AutopilotActionDef {
+  key             String          @id
+  group           AutopilotGroup
+  label           String
+  description     String?
+  ruleText        String?
+  position        Int             @default(0)
+  configurable    Boolean         @default(true)
+  /// Set for Send quotation and Supplier POs (draft_and_ask) and Supplier payments (never).
+  lockedLevel     AutopilotLevel?
+  /// Highest level allowed (autonomy order off < suggest < draft_and_ask < do_and_tell < do_quietly).
+  /// draft_and_ask for the priced client sends #26, #27, #31 and for regret_client, correction_email,
+  /// supplier_not_chosen_notice, order_exception_email, instruction. Enforced by ops.locked_level_guard().
+  maxLevel        AutopilotLevel?
+  defaultCareful  AutopilotLevel
+  defaultBalanced AutopilotLevel
+  defaultHandsOff AutopilotLevel
+  minutesSaved    Decimal?        @db.Decimal(9, 2)
+  originBoard     String?
+
+  setting AutopilotSetting?
+  actions AssistantAction[]
+
+  @@map("autopilot_action_def")
+  @@schema("ops")
+}
+
+model AutopilotSetting {
+  actionKey   String             @id
+  def         AutopilotActionDef @relation(fields: [actionKey], references: [key])
+  level       AutopilotLevel
+  /// Per-action rules, e.g. chaser { firstAfterDays: 1, everyDays: 2, max: 3 }.
+  rules       Json               @default("{}")
+  version     Int                @default(0)
+  updatedById String?            @db.Uuid
+  updatedAt   DateTime           @updatedAt @db.Timestamptz(3)
+
+  @@map("autopilot_setting")
+  @@schema("ops")
+}
+
+model Guardrail {
+  key         String        @id
+  kind        GuardrailKind
+  label       String
+  enabled     Boolean       @default(true)
+  /// Fixed rules cannot be switched off from the UI.
+  fixed       Boolean       @default(false)
+  params      Json          @default("{}")
+  version     Int           @default(0)
+  updatedById String?       @db.Uuid
+  updatedAt   DateTime      @updatedAt @db.Timestamptz(3)
+
+  @@map("guardrail")
+  @@schema("ops")
+}
+
+model EmailTemplate {
+  id              String       @id @default(uuid(7)) @db.Uuid
+  key             String       @unique
+  label           String
+  mailboxRole     MailboxRole?
+  subjectTemplate String
+  bodyTemplate    String
+  toneNotes       String?
+  variables       String[]
+  learnFromSent   Boolean      @default(false)
+  version         Int          @default(0)
+  archivedAt      DateTime?    @db.Timestamptz(3)
+  updatedById     String?      @db.Uuid
+  updatedAt       DateTime     @updatedAt @db.Timestamptz(3)
+
+  @@map("email_template")
+  @@schema("ops")
+}
+
+/// Settings › Sending (87): From, CC, signature and thread per mail kind.
+model SendingRule {
+  kind              OutboundKind @id
+  fromRole          MailboxRole
+  ccRole            MailboxRole?
+  /// e.g. "accounts_contact" for invoices.
+  ccSpecial         String?
+  signatureUserId   String?      @db.Uuid
+  threadMode        ThreadMode
+  holdMinutes       Int          @default(5)
+  respectSendWindow Boolean      @default(true)
+  updatedAt         DateTime     @updatedAt @db.Timestamptz(3)
+
+  @@map("sending_rule")
+  @@schema("ops")
+}
+
+model DocumentTemplate {
+  id         String       @id @default(uuid(7)) @db.Uuid
+  kind       DocumentKind
+  name       String
+  version    Int          @default(1)
+  /// Layout key, e.g. "zoho-estimate-v1".
+  layout     String
+  definition Json
+  isActive   Boolean      @default(true)
+  createdAt  DateTime     @default(now()) @db.Timestamptz(3)
+
+  versions DocumentVersion[]
+
+  @@unique([kind, name, version])
+  @@map("document_template")
+  @@schema("ops")
+}
+
+model TermsClause {
+  id           String    @id @default(uuid(7)) @db.Uuid
+  /// payment | delivery | lead_time | validity | make_origin | vat | documents |
+  /// inspection | warranty | packing | disclaimer | cancellation
+  category     String
+  code         String    @unique
+  title        String
+  body         String
+  /// Variable defaults, e.g. { advance_pct: 30, balance_days: 60 }.
+  variables    Json      @default("{}")
+  locked       Boolean   @default(false)
+  approvalRule String?
+  version      Int       @default(0)
+  archivedAt   DateTime? @db.Timestamptz(3)
+  updatedAt    DateTime  @updatedAt @db.Timestamptz(3)
+
+  presets        TermsPresetClause[]
+  quotationTerms QuotationTerm[]
+
+  @@index([category])
+  @@map("terms_clause")
+  @@schema("ops")
+}
+
+model TermsPreset {
+  id                    String    @id @default(uuid(7)) @db.Uuid
+  name                  String    @unique
+  description           String?
+  isDefaultForNewClient Boolean   @default(false)
+  archivedAt            DateTime? @db.Timestamptz(3)
+
+  clauses    TermsPresetClause[]
+  clients    ClientProfile[]
+  quotations Quotation[]
+  orders     Order[]
+
+  @@map("terms_preset")
+  @@schema("ops")
+}
+
+model TermsPresetClause {
+  presetId       String      @db.Uuid
+  preset         TermsPreset @relation(fields: [presetId], references: [id], onDelete: Cascade)
+  clauseId       String      @db.Uuid
+  clause         TermsClause @relation(fields: [clauseId], references: [id])
+  variableValues Json        @default("{}")
+  position       Int         @default(0)
+
+  @@id([presetId, clauseId])
+  @@map("terms_preset_clause")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// PEOPLE AND ACCESS (own auth, separate from the website admin's staff_user)
+// ═════════════════════════════════════════════════════════════════════════════
+
+model User {
+  id                  String     @id @default(uuid(7)) @db.Uuid
+  email               String     @unique
+  name                String
+  initials            String     @db.VarChar(3)
+  role                UserRole
+  status              UserStatus @default(invited)
+  phone               String?
+  /// Mailbox this person signs from (sales@ for KB, purchase@ for AB).
+  primaryMailboxId    String?    @db.Uuid
+  passwordHash        String?
+  /// AES-256-GCM, key in OPS_ENCRYPTION_KEY. Never returned to the client.
+  totpSecretEnc       Bytes?
+  totpEnabledAt       DateTime?  @db.Timestamptz(3)
+  failedAttempts      Int        @default(0)
+  lockedUntil         DateTime?  @db.Timestamptz(3)
+  lastSignInAt        DateTime?  @db.Timestamptz(3)
+  /// Helper toggles (P01 84): only meaningful when role = helper.
+  canSeeMargins       Boolean    @default(false)
+  canSendSupplierMail Boolean    @default(false)
+  canEditChaserRules  Boolean    @default(false)
+  signatureHtml       String?
+  createdAt           DateTime   @default(now()) @db.Timestamptz(3)
+  updatedAt           DateTime   @updatedAt @db.Timestamptz(3)
+  removedAt           DateTime?  @db.Timestamptz(3)
+
+  authAccounts        AuthAccount[]
+  sessions            UserSession[]
+  backupCodes         BackupCode[]
+  passwordResets      PasswordResetToken[]
+  authEvents          AuthEvent[]
+  invitesSent         UserInvite[]             @relation("InviteSender")
+  preference          UserPreference?
+  notificationPrefs   NotificationPreference[]
+  notifications       Notification[]
+  tasks               Task[]                   @relation("TaskAssignee")
+  savedSearches       SavedSearch[]
+  tipStates           TipState[]
+  ownedEnquiries      Enquiry[]                @relation("EnquiryOwner")
+  ownedMailboxes      Mailbox[]                @relation("MailboxOwner")
+  decidedActions      AssistantAction[]        @relation("ActionDecidedBy")
+  approvedQuotations  Quotation[]              @relation("QuotationApprovedBy")
+  approvedSupplierPos SupplierPo[]             @relation("SupplierPoApprovedBy")
+  approvedPayments    SupplierPayment[]        @relation("PaymentApprovedBy")
+
+  @@map("user")
+  @@schema("ops")
+}
+
+/// Google identity link (Auth.js adapter "account" shape).
+model AuthAccount {
+  id                String   @id @default(uuid(7)) @db.Uuid
+  userId            String   @db.Uuid
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider          String
+  providerAccountId String
+  createdAt         DateTime @default(now()) @db.Timestamptz(3)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+  @@map("auth_account")
+  @@schema("ops")
+}
+
+/// Database sessions: one per device, revocable (Devices list, 84).
+model UserSession {
+  id           String       @id @default(uuid(7)) @db.Uuid
+  sessionToken String       @unique
+  userId       String       @db.Uuid
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  method       SignInMethod
+  deviceLabel  String?
+  userAgent    String?
+  city         String?
+  country      String?      @db.Char(2)
+  createdAt    DateTime     @default(now()) @db.Timestamptz(3)
+  lastSeenAt   DateTime     @default(now()) @db.Timestamptz(3)
+  expires      DateTime     @db.Timestamptz(3)
+  revokedAt    DateTime?    @db.Timestamptz(3)
+
+  @@index([userId, revokedAt])
+  @@map("user_session")
+  @@schema("ops")
+}
+
+model UserInvite {
+  id          String    @id @default(uuid(7)) @db.Uuid
+  email       String
+  role        UserRole  @default(helper)
+  tokenHash   String    @unique
+  invitedById String    @db.Uuid
+  invitedBy   User      @relation("InviteSender", fields: [invitedById], references: [id])
+  expiresAt   DateTime  @db.Timestamptz(3)
+  acceptedAt  DateTime? @db.Timestamptz(3)
+  revokedAt   DateTime? @db.Timestamptz(3)
+  createdAt   DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@index([email])
+  @@map("user_invite")
+  @@schema("ops")
+}
+
+model BackupCode {
+  id       String    @id @default(uuid(7)) @db.Uuid
+  userId   String    @db.Uuid
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  codeHash String
+  usedAt   DateTime? @db.Timestamptz(3)
+
+  @@index([userId])
+  @@map("backup_code")
+  @@schema("ops")
+}
+
+model PasswordResetToken {
+  id        String    @id @default(uuid(7)) @db.Uuid
+  userId    String    @db.Uuid
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String    @unique
+  expiresAt DateTime  @db.Timestamptz(3)
+  usedAt    DateTime? @db.Timestamptz(3)
+  createdAt DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@map("password_reset_token")
+  @@schema("ops")
+}
+
+/// Append-only sign-in log ("Last sign-in Today 08:41 · Google · Dubai").
+model AuthEvent {
+  id        String        @id @default(uuid(7)) @db.Uuid
+  userId    String?       @db.Uuid
+  user      User?         @relation(fields: [userId], references: [id])
+  email     String?
+  kind      AuthEventKind
+  method    SignInMethod?
+  city      String?
+  country   String?       @db.Char(2)
+  userAgent String?
+  ipHash    String?
+  at        DateTime      @default(now()) @db.Timestamptz(3)
+
+  @@index([userId, at])
+  @@index([email, at])
+  @@map("auth_event")
+  @@schema("ops")
+}
+
+model UserPreference {
+  userId          String    @id @db.Uuid
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  timezone        String    @default("Asia/Dubai")
+  briefTime       String    @default("07:30")
+  briefEnabled    Boolean   @default(true)
+  eveningSummary  Boolean   @default(false)
+  quietHoursStart String    @default("22:00")
+  quietHoursEnd   String    @default("07:00")
+  /// same_as_weekdays | urgent_only | off
+  weekendMode     String    @default("urgent_only")
+  travelModeUntil DateTime? @db.Timestamptz(3)
+  todayView       String    @default("owner")
+  updatedAt       DateTime  @updatedAt @db.Timestamptz(3)
+
+  @@map("user_preference")
+  @@schema("ops")
+}
+
+/// Events × channels (181). bank_detail_change and mailbox_disconnected /
+/// assistant_paused rows are forced on in SQL (CHECK) and in code.
+model NotificationPreference {
+  userId  String            @db.Uuid
+  user    User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event   NotificationEvent
+  channel DeliveryChannel
+  locked  Boolean           @default(false)
+
+  @@id([userId, event])
+  @@map("notification_preference")
+  @@schema("ops")
+}
+
+model TipState {
+  userId      String   @db.Uuid
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tipKey      String
+  dismissedAt DateTime @default(now()) @db.Timestamptz(3)
+
+  @@id([userId, tipKey])
+  @@map("tip_state")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// INTEGRATIONS AND MAIL
+// ═════════════════════════════════════════════════════════════════════════════
+
+model IntegrationConnection {
+  provider      IntegrationProvider @id
+  status        IntegrationStatus   @default(not_connected)
+  /// Encrypted OAuth tokens (Zoho refresh token etc.). Never the Gmail tokens:
+  /// those live on Mailbox.
+  tokensEnc     Bytes?
+  externalOrg   String?
+  /// Provider cursors, e.g. { paymentsSince: "...", fxLastDate: "2026-11-20" }.
+  cursor        Json                @default("{}")
+  lastSyncAt    DateTime?           @db.Timestamptz(3)
+  lastError     String?
+  errorCount    Int                 @default(0)
+  connectedAt   DateTime?           @db.Timestamptz(3)
+  connectedById String?             @db.Uuid
+  updatedAt     DateTime            @updatedAt @db.Timestamptz(3)
+
+  @@map("integration_connection")
+  @@schema("ops")
+}
+
+model Mailbox {
+  id              String        @id @default(uuid(7)) @db.Uuid
+  address         String        @unique
+  displayName     String
+  role            MailboxRole
+  status          MailboxStatus @default(connecting)
+  statusReason    String?
+  ownerUserId     String?       @db.Uuid
+  owner           User?         @relation("MailboxOwner", fields: [ownerUserId], references: [id])
+  googleSub       String?
+  /// AES-256-GCM encrypted Google refresh token.
+  refreshTokenEnc Bytes?
+  scopes          String[]
+  canRead         Boolean       @default(true)
+  canDraft        Boolean       @default(false)
+  canSend         Boolean       @default(false)
+  canLabel        Boolean       @default(false)
+  signatureHtml   String?
+  sendAsAliases   String[]
+  dailySendCap    Int           @default(40)
+  backfillMonths  Int           @default(12)
+  backfillTotal   Int?
+  backfillDone    Int           @default(0)
+  connectedAt     DateTime?     @db.Timestamptz(3)
+  connectedById   String?       @db.Uuid
+  pausedAt        DateTime?     @db.Timestamptz(3)
+  pausedById      String?       @db.Uuid
+  disconnectedAt  DateTime?     @db.Timestamptz(3)
+  createdAt       DateTime      @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime      @updatedAt @db.Timestamptz(3)
+
+  syncState MailboxSyncState?
+  labels    GmailLabel[]
+  threads   MailThread[]
+  messages  MailMessage[]
+  outbound  OutboundEmail[]
+
+  @@map("mailbox")
+  @@schema("ops")
+}
+
+/// Hot, frequently updated sync cursor, kept apart from Mailbox config.
+model MailboxSyncState {
+  mailboxId           String    @id @db.Uuid
+  mailbox             Mailbox   @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
+  /// Gmail historyId (uint64 as text).
+  historyId           String?
+  watchExpiresAt      DateTime? @db.Timestamptz(3)
+  lastPushAt          DateTime? @db.Timestamptz(3)
+  lastMessageAt       DateTime? @db.Timestamptz(3)
+  lastIncrementalAt   DateTime? @db.Timestamptz(3)
+  backfillPageToken   String?
+  backfillBefore      DateTime? @db.Timestamptz(3)
+  backfillPausedUntil DateTime? @db.Timestamptz(3)
+  lagSeconds          Int       @default(0)
+  sentToday           Int       @default(0)
+  sentTodayDate       DateTime? @db.Date
+  errorCount          Int       @default(0)
+  lastError           String?
+  updatedAt           DateTime  @updatedAt @db.Timestamptz(3)
+
+  @@map("mailbox_sync_state")
+  @@schema("ops")
+}
+
+model GmailLabel {
+  id           String  @id @default(uuid(7)) @db.Uuid
+  mailboxId    String  @db.Uuid
+  mailbox      Mailbox @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
+  name         String
+  gmailLabelId String
+
+  @@unique([mailboxId, name])
+  @@map("gmail_label")
+  @@schema("ops")
+}
+
+model MailThread {
+  id            String    @id @default(uuid(7)) @db.Uuid
+  mailboxId     String    @db.Uuid
+  mailbox       Mailbox   @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
+  gmailThreadId String
+  subject       String?
+  lastMessageAt DateTime? @db.Timestamptz(3)
+  enquiryId     String?   @db.Uuid
+  enquiry       Enquiry?  @relation(fields: [enquiryId], references: [id])
+
+  messages      MailMessage[]
+  outbound      OutboundEmail[]
+  rfqRecipients SupplierRfqRecipient[]
+
+  @@unique([mailboxId, gmailThreadId])
+  @@index([enquiryId])
+  @@map("mail_thread")
+  @@schema("ops")
+}
+
+/// Annotation of a Gmail message. Gmail stays the record.
+model MailMessage {
+  id                   String                   @id @default(uuid(7)) @db.Uuid
+  mailboxId            String                   @db.Uuid
+  mailbox              Mailbox                  @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
+  threadId             String                   @db.Uuid
+  thread               MailThread               @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  gmailMessageId       String
+  /// RFC 822 Message-ID: cross-mailbox de-duplication and In-Reply-To.
+  rfcMessageId         String?
+  direction            MailDirection
+  fromAddress          String
+  fromName             String?
+  toAddresses          String[]
+  ccAddresses          String[]
+  subject              String?
+  snippet              String?
+  /// Plain-text body (for extraction and search). Cleared after retention.
+  bodyText             String?
+  bodyPurgedAt         DateTime?                @db.Timestamptz(3)
+  sentAt               DateTime                 @db.Timestamptz(3)
+  receivedAt           DateTime                 @default(now()) @db.Timestamptz(3)
+  classification       MailClass                @default(unclassified)
+  confidence           Confidence?
+  unsureReason         String?
+  alternatives         Json?
+  handledState         MailHandledState         @default(not_linked)
+  classifiedByActionId String?                  @db.Uuid
+  labelsApplied        String[]
+  language             String?                  @db.VarChar(8)
+  summaryEn            String?
+  isForward            Boolean                  @default(false)
+  originalSender       String?
+  outOfOfficeUntil     DateTime?                @db.Date
+  bouncedAddress       String?
+  hasAttachments       Boolean                  @default(false)
+  sizeBytes            Int?
+  searchTsv            Unsupported("tsvector")?
+
+  attachments       MailAttachment[]
+  links             MailLink[]
+  quoteSources      SupplierQuoteSource[]
+  supplierQuestions SupplierQuestion[]
+
+  @@unique([mailboxId, gmailMessageId])
+  @@index([threadId, sentAt])
+  @@index([rfcMessageId])
+  @@index([handledState, sentAt])
+  @@index([classification, sentAt])
+  @@index([fromAddress])
+  @@map("mail_message")
+  @@schema("ops")
+}
+
+model MailAttachment {
+  id                String           @id @default(uuid(7)) @db.Uuid
+  messageId         String           @db.Uuid
+  message           MailMessage      @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  gmailAttachmentId String
+  filename          String
+  mimeType          String?
+  sizeBytes         Int?
+  sha256            String?
+  fileId            String?          @db.Uuid
+  file              StoredFile?      @relation(fields: [fileId], references: [id])
+  extractionStatus  ExtractionStatus @default(pending)
+  extractionNote    String?
+  pageCount         Int?
+
+  @@index([messageId])
+  @@index([sha256])
+  @@map("mail_attachment")
+  @@schema("ops")
+}
+
+/// Message ↔ record link; a message can sit on more than one record.
+model MailLink {
+  id          String      @id @default(uuid(7)) @db.Uuid
+  messageId   String      @db.Uuid
+  message     MailMessage @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  enquiryId   String?     @db.Uuid
+  enquiry     Enquiry?    @relation(fields: [enquiryId], references: [id])
+  subjectType RecordType
+  subjectId   String      @db.Uuid
+  linkedBy    LinkedBy
+  confidence  Confidence?
+  actionId    String?     @db.Uuid
+  createdAt   DateTime    @default(now()) @db.Timestamptz(3)
+  removedAt   DateTime?   @db.Timestamptz(3)
+
+  @@unique([messageId, subjectType, subjectId])
+  @@index([subjectType, subjectId])
+  @@index([enquiryId])
+  @@map("mail_link")
+  @@schema("ops")
+}
+
+/// Every email the console drafts or sends (Gmail or the system sender).
+model OutboundEmail {
+  id                String           @id @default(uuid(7)) @db.Uuid
+  channel           OutboundChannel  @default(gmail)
+  kind              OutboundKind
+  mailboxId         String?          @db.Uuid
+  mailbox           Mailbox?         @relation(fields: [mailboxId], references: [id])
+  threadId          String?          @db.Uuid
+  thread            MailThread?      @relation(fields: [threadId], references: [id])
+  inReplyToRfcId    String?
+  toAddresses       String[]
+  ccAddresses       String[]
+  bccAddresses      String[]
+  subject           String
+  bodyHtml          String
+  bodyText          String?
+  status            OutboundStatus   @default(draft)
+  /// Supplier-local or send-window time; null = as soon as approved + hold.
+  scheduledFor      DateTime?        @db.Timestamptz(3)
+  undoUntil         DateTime?        @db.Timestamptz(3)
+  sentAt            DateTime?        @db.Timestamptz(3)
+  gmailMessageId    String?
+  gmailDraftId      String?
+  providerMessageId String?
+  /// delivered | bounced | complained (system channel only)
+  deliveryStatus    String?
+  failureReason     String?
+  /// Unique per logical send; a retry after failure gets a new key only by a
+  /// person's click. Guarantees no silent double send.
+  idempotencyKey    String           @unique
+  identifierCheck   Json?
+  actionId          String?          @db.Uuid
+  action            AssistantAction? @relation(fields: [actionId], references: [id])
+  enquiryId         String?          @db.Uuid
+  enquiry           Enquiry?         @relation(fields: [enquiryId], references: [id])
+  subjectType       RecordType?
+  subjectId         String?          @db.Uuid
+  companyId         String?          @db.Uuid
+  contactId         String?          @db.Uuid
+  retryOfId         String?          @db.Uuid
+  createdById       String?          @db.Uuid
+  createdAt         DateTime         @default(now()) @db.Timestamptz(3)
+  updatedAt         DateTime         @updatedAt @db.Timestamptz(3)
+
+  attachments OutboundAttachment[]
+
+  @@index([status, scheduledFor])
+  @@index([mailboxId, sentAt])
+  @@index([enquiryId])
+  @@index([subjectType, subjectId])
+  @@map("outbound_email")
+  @@schema("ops")
+}
+
+model OutboundAttachment {
+  id         String        @id @default(uuid(7)) @db.Uuid
+  outboundId String        @db.Uuid
+  outbound   OutboundEmail @relation(fields: [outboundId], references: [id], onDelete: Cascade)
+  fileId     String        @db.Uuid
+  file       StoredFile    @relation(fields: [fileId], references: [id])
+  documentId String?       @db.Uuid
+  filename   String
+  position   Int           @default(0)
+
+  @@index([outboundId])
+  @@map("outbound_attachment")
+  @@schema("ops")
+}
+
+model ZohoMapping {
+  id        String     @id @default(uuid(7)) @db.Uuid
+  object    ZohoObject
+  localKey  String
+  zohoId    String
+  label     String?
+  updatedAt DateTime   @updatedAt @db.Timestamptz(3)
+
+  @@unique([object, localKey])
+  @@unique([object, zohoId])
+  @@map("zoho_mapping")
+  @@schema("ops")
+}
+
+model ZohoSyncLog {
+  id        String        @id @default(uuid(7)) @db.Uuid
+  direction SyncDirection
+  object    ZohoObject
+  localType RecordType?
+  localId   String?       @db.Uuid
+  zohoId    String?
+  summary   String
+  status    SyncStatus
+  error     String?
+  attempt   Int           @default(1)
+  at        DateTime      @default(now()) @db.Timestamptz(3)
+
+  @@index([at])
+  @@index([status, at])
+  @@index([localType, localId])
+  @@map("zoho_sync_log")
+  @@schema("ops")
+}
+
+/// Daily reference rates to AED. Locks are snapshots on the quote/quotation.
+model FxRate {
+  id        String   @id @default(uuid(7)) @db.Uuid
+  currency  String   @db.Char(3)
+  /// AED per 1 unit (JPY per 1, not per 100).
+  rateToAed Decimal  @db.Decimal(20, 10)
+  rateDate  DateTime @db.Date
+  source    FxSource
+  fetchedAt DateTime @default(now()) @db.Timestamptz(3)
+
+  supplierQuotes SupplierQuote[]
+
+  @@unique([currency, rateDate, source])
+  @@map("fx_rate")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// COMPANIES, CONTACTS, TRUST
+// ═════════════════════════════════════════════════════════════════════════════
+
+/// A client, a supplier, a forwarder, or several at once.
+model Company {
+  id            String                   @id @default(uuid(7)) @db.Uuid
+  name          String
+  legalName     String?
+  isClient      Boolean                  @default(false)
+  isSupplier    Boolean                  @default(false)
+  country       String?                  @db.Char(2)
+  city          String?
+  trn           String?
+  website       String?
+  primaryDomain String?
+  domains       String[]
+  /// Look-alike names merged during import ("Arkan OFS").
+  aliases       String[]
+  industry      String?
+  phone         String?
+  source        CompanySource            @default(manual)
+  notes         String?
+  zohoContactId String?                  @unique
+  mergedIntoId  String?                  @db.Uuid
+  mergedInto    Company?                 @relation("CompanyMerge", fields: [mergedIntoId], references: [id])
+  mergedFrom    Company[]                @relation("CompanyMerge")
+  archivedAt    DateTime?                @db.Timestamptz(3)
+  createdAt     DateTime                 @default(now()) @db.Timestamptz(3)
+  updatedAt     DateTime                 @updatedAt @db.Timestamptz(3)
+  searchTsv     Unsupported("tsvector")?
+
+  clientProfile      ClientProfile?
+  supplierProfile    SupplierProfile?
+  contacts           Contact[]
+  lineCards          SupplierLineCard[]
+  bankAccounts       SupplierBankAccount[]
+  complianceDocs     ComplianceDocument[]
+  screenings         ScreeningCheck[]
+  lessons            Lesson[]
+  preferences        Preference[]
+  leads              Lead[]
+  enquiries          Enquiry[]              @relation("EnquiryClient")
+  rfqRecipients      SupplierRfqRecipient[]
+  supplierQuotes     SupplierQuote[]
+  quotations         Quotation[]            @relation("QuotationClient")
+  orders             Order[]                @relation("OrderClient")
+  supplierPos        SupplierPo[]
+  freightQuotes      FreightQuote[]
+  shipments          Shipment[]             @relation("ShipmentForwarder")
+  freightRateCards   FreightRateCard[]
+  clientInvoices     ClientInvoice[]
+  paymentsReceived   PaymentReceived[]
+  supplierInvoices   SupplierInvoice[]
+  supplierPayments   SupplierPayment[]
+  approvedMakes      ApprovedMake[]
+  researchCandidates ResearchCandidate[]
+  claimParties       ClaimParty[]
+
+  @@index([name])
+  @@index([primaryDomain])
+  @@index([isClient])
+  @@index([isSupplier])
+  @@map("company")
+  @@schema("ops")
+}
+
+model ClientProfile {
+  companyId             String                    @id @db.Uuid
+  company               Company                   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  vendorCode            String?
+  clientSince           DateTime?                 @db.Date
+  quotingCurrency       String                    @default("USD") @db.Char(3)
+  vatTreatmentDefault   VatTreatment?
+  termsPresetId         String?                   @db.Uuid
+  termsPreset           TermsPreset?              @relation(fields: [termsPresetId], references: [id])
+  paymentTermsText      String?
+  followUpCadenceId     String?                   @db.Uuid
+  followUpCadence       FollowUpCadence?          @relation(fields: [followUpCadenceId], references: [id])
+  partialFollowUp       PartialFollowUpPreference @default(supplementary)
+  acknowledgeEnquiries  Boolean                   @default(true)
+  roundingRule          Json?
+  creditHold            Boolean                   @default(false)
+  creditHoldReason      String?
+  creditHoldSince       DateTime?                 @db.Timestamptz(3)
+  usualPaymentDelayDays Int?
+  updatedAt             DateTime                  @updatedAt @db.Timestamptz(3)
+
+  @@map("client_profile")
+  @@schema("ops")
+}
+
+model SupplierProfile {
+  companyId           String       @id @db.Uuid
+  company             Company      @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  type                SupplierType @default(unknown)
+  tier                SupplierTier @default(contact_only)
+  tierSince           DateTime?    @db.Timestamptz(3)
+  regions             String[]
+  quotesCurrency      String?      @db.Char(3)
+  usualIncoterm       String?
+  usualIncotermPlace  String?
+  defaultPaymentTerms String?
+  /// IANA zone for supplier-local send times.
+  timezone            String?
+  trialPoLimit        Int          @default(3)
+  trialPoMaxAmount    Decimal      @default(25000) @db.Decimal(18, 4)
+  trialPoMaxCurrency  String       @default("USD") @db.Char(3)
+  trialPosUsed        Int          @default(0)
+  blockReason         BlockReason?
+  blockNote           String?
+  blockedAt           DateTime?    @db.Timestamptz(3)
+  blockedById         String?      @db.Uuid
+  firstContactAt      DateTime?    @db.Timestamptz(3)
+  // Reliability (recomputed nightly; withdrawn RFQs excluded)
+  rfqsAsked           Int          @default(0)
+  repliesCount        Int          @default(0)
+  quotesCount         Int          @default(0)
+  regretsCount        Int          @default(0)
+  replyRatePct        Decimal?     @db.Decimal(9, 4)
+  medianReplyHours    Decimal?     @db.Decimal(9, 2)
+  linesQuotedPct      Decimal?     @db.Decimal(9, 4)
+  winSharePct         Decimal?     @db.Decimal(9, 4)
+  onTimePct           Decimal?     @db.Decimal(9, 4)
+  posCount            Int          @default(0)
+  lastQuoteAt         DateTime?    @db.Timestamptz(3)
+  reliabilitySummary  String?
+  reliabilityAt       DateTime?    @db.Timestamptz(3)
+  updatedAt           DateTime     @updatedAt @db.Timestamptz(3)
+
+  @@index([tier])
+  @@index([type])
+  @@map("supplier_profile")
+  @@schema("ops")
+}
+
+model Contact {
+  id               String            @id @default(uuid(7)) @db.Uuid
+  companyId        String            @db.Uuid
+  company          Company           @relation(fields: [companyId], references: [id])
+  name             String?
+  firstName        String?
+  salutation       String?
+  email            String?
+  phone            String?
+  role             String?
+  isPreferred      Boolean           @default(false)
+  status           ContactStatus     @default(active)
+  bouncedAt        DateTime?         @db.Timestamptz(3)
+  outOfOfficeUntil DateTime?         @db.Date
+  sourceKind       ContactSourceKind @default(manual)
+  sourceUrl        String?
+  verifiedAt       DateTime?         @db.Timestamptz(3)
+  archivedAt       DateTime?         @db.Timestamptz(3)
+  createdAt        DateTime          @default(now()) @db.Timestamptz(3)
+  updatedAt        DateTime          @updatedAt @db.Timestamptz(3)
+
+  enquiries     Enquiry[]
+  rfqRecipients SupplierRfqRecipient[]
+  quotations    Quotation[]
+  orders        Order[]
+  supplierPos   SupplierPo[]
+
+  @@index([companyId])
+  @@index([email])
+  @@map("contact")
+  @@schema("ops")
+}
+
+/// What a supplier carries (brands × trades), learned or entered (52).
+model SupplierLineCard {
+  id          String    @id @default(uuid(7)) @db.Uuid
+  supplierId  String    @db.Uuid
+  supplier    Company   @relation(fields: [supplierId], references: [id], onDelete: Cascade)
+  tradeId     String?   @db.Uuid
+  trade       Trade?    @relation(fields: [tradeId], references: [id])
+  brand       String?
+  authorised  Boolean   @default(false)
+  /// Authorisation evidence, e.g. maker's distributor-locator page.
+  evidenceUrl String?
+  verifiedAt  DateTime? @db.Timestamptz(3)
+  learned     Boolean   @default(false)
+  timesQuoted Int       @default(0)
+  notes       String?
+  createdAt   DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@unique([supplierId, tradeId, brand])
+  @@index([tradeId])
+  @@index([brand])
+  @@map("supplier_line_card")
+  @@schema("ops")
+}
+
+/// Supplier bank details. A change blocks payments until a call-back is
+/// recorded, then a cooling-off period (132, 204).
+model SupplierBankAccount {
+  id                    String            @id @default(uuid(7)) @db.Uuid
+  supplierId            String            @db.Uuid
+  supplier              Company           @relation(fields: [supplierId], references: [id])
+  bankName              String
+  accountName           String
+  currency              String?           @db.Char(3)
+  ibanEnc               Bytes
+  ibanLast4             String            @db.VarChar(4)
+  swift                 String?
+  status                BankAccountStatus @default(pending_verification)
+  requestedViaMessageId String?           @db.Uuid
+  requestedAt           DateTime?         @db.Timestamptz(3)
+  riskFlags             Json?
+  callbackNumber        String?
+  callbackSpokeTo       String?
+  callbackAt            DateTime?         @db.Timestamptz(3)
+  callbackRecordedById  String?           @db.Uuid
+  callbackGenuine       Boolean?
+  coolingOffUntil       DateTime?         @db.Timestamptz(3)
+  supersededAt          DateTime?         @db.Timestamptz(3)
+  createdAt             DateTime          @default(now()) @db.Timestamptz(3)
+
+  payments SupplierPayment[]
+
+  @@index([supplierId, status])
+  @@map("supplier_bank_account")
+  @@schema("ops")
+}
+
+/// Licences, certificates, approvals. companyId null = Indus's own (213).
+model ComplianceDocument {
+  id             String            @id @default(uuid(7)) @db.Uuid
+  companyId      String?           @db.Uuid
+  company        Company?          @relation(fields: [companyId], references: [id])
+  kind           ComplianceDocKind
+  title          String
+  number         String?
+  issuer         String?
+  scope          String?
+  issuedAt       DateTime?         @db.Date
+  expiresAt      DateTime?         @db.Date
+  reminderDays   Int[]             @default([60, 30, 7])
+  lastReminderAt DateTime?         @db.Timestamptz(3)
+  fileId         String?           @db.Uuid
+  file           StoredFile?       @relation(fields: [fileId], references: [id])
+  usedIn         String[]
+  archivedAt     DateTime?         @db.Timestamptz(3)
+  createdAt      DateTime          @default(now()) @db.Timestamptz(3)
+
+  @@index([companyId])
+  @@index([expiresAt])
+  @@map("compliance_document")
+  @@schema("ops")
+}
+
+model ScreeningCheck {
+  id          String          @id @default(uuid(7)) @db.Uuid
+  companyId   String          @db.Uuid
+  company     Company         @relation(fields: [companyId], references: [id])
+  kind        ScreeningKind
+  result      ScreeningResult
+  subjectText String?
+  evidence    Json?
+  triggeredBy String?
+  checkedAt   DateTime        @default(now()) @db.Timestamptz(3)
+
+  @@index([companyId, kind, checkedAt])
+  @@map("screening_check")
+  @@schema("ops")
+}
+
+/// Indus's own bank accounts, printed on quotations, PIs and invoices.
+model OwnBankAccount {
+  id              String    @id @default(uuid(7)) @db.Uuid
+  bankName        String
+  accountName     String
+  currency        String    @db.Char(3)
+  iban            String
+  swift           String?
+  showOnDocuments Boolean   @default(true)
+  isDefaultForCcy Boolean   @default(false)
+  archivedAt      DateTime? @db.Timestamptz(3)
+
+  @@map("own_bank_account")
+  @@schema("ops")
+}
+
+/// Lessons saved from order profit (73) and shown on Compare (152).
+model Lesson {
+  id         String      @id @default(uuid(7)) @db.Uuid
+  scope      LessonScope
+  companyId  String?     @db.Uuid
+  company    Company?    @relation(fields: [companyId], references: [id])
+  tradeId    String?     @db.Uuid
+  trade      Trade?      @relation(fields: [tradeId], references: [id])
+  partId     String?     @db.Uuid
+  part       Part?       @relation(fields: [partId], references: [id])
+  text       String
+  /// Machine-readable effect, e.g. { landed: { freightMode: "air", whenLeadWeeksOver: 12 } }.
+  effect     Json?
+  sourceType RecordType?
+  sourceId   String?     @db.Uuid
+  active     Boolean     @default(true)
+  savedById  String?     @db.Uuid
+  createdAt  DateTime    @default(now()) @db.Timestamptz(3)
+
+  @@index([companyId])
+  @@index([tradeId])
+  @@map("lesson")
+  @@schema("ops")
+}
+
+/// Learned preference (P06 115).
+model Preference {
+  id            String           @id @default(uuid(7)) @db.Uuid
+  scope         PreferenceScope
+  kind          PreferenceKind
+  companyId     String?          @db.Uuid
+  company       Company?         @relation(fields: [companyId], references: [id])
+  tradeId       String?          @db.Uuid
+  mailboxId     String?          @db.Uuid
+  description   String
+  value         Json
+  source        PreferenceSource @default(learned)
+  active        Boolean          @default(true)
+  evidenceCount Int              @default(0)
+  createdAt     DateTime         @default(now()) @db.Timestamptz(3)
+  updatedAt     DateTime         @updatedAt @db.Timestamptz(3)
+
+  evidence PreferenceEvidence[]
+
+  @@index([scope, kind, active])
+  @@index([companyId])
+  @@map("preference")
+  @@schema("ops")
+}
+
+model PreferenceEvidence {
+  preferenceId String          @db.Uuid
+  preference   Preference      @relation(fields: [preferenceId], references: [id], onDelete: Cascade)
+  actionId     String          @db.Uuid
+  action       AssistantAction @relation(fields: [actionId], references: [id])
+
+  @@id([preferenceId, actionId])
+  @@map("preference_evidence")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// INTAKE: LEADS, CALL-BACKS, WEBSITE, CLIENT PAGES
+// ═════════════════════════════════════════════════════════════════════════════
+
+model Lead {
+  id                 String     @id @default(uuid(7)) @db.Uuid
+  name               String
+  companyName        String?
+  companyId          String?    @db.Uuid
+  company            Company?   @relation(fields: [companyId], references: [id])
+  email              String?
+  phone              String?
+  source             LeadSource
+  interest           String?
+  estValue           Decimal?   @db.Decimal(18, 4)
+  estCurrency        String?    @db.Char(3)
+  stage              LeadStage  @default(new)
+  nextAction         String?
+  nextActionAt       DateTime?  @db.Timestamptz(3)
+  convertedEnquiryId String?    @unique @db.Uuid
+  convertedEnquiry   Enquiry?   @relation(fields: [convertedEnquiryId], references: [id])
+  createdAt          DateTime   @default(now()) @db.Timestamptz(3)
+  updatedAt          DateTime   @updatedAt @db.Timestamptz(3)
+
+  callbacks CallbackRequest[]
+
+  @@index([stage])
+  @@map("lead")
+  @@schema("ops")
+}
+
+/// Website call-back popup request, with the one-working-hour promise (234).
+model CallbackRequest {
+  id              String         @id @default(uuid(7)) @db.Uuid
+  receivedAt      DateTime       @default(now()) @db.Timestamptz(3)
+  name            String
+  email           String
+  phoneE164       String
+  phoneCountry    String         @db.Char(2)
+  category        String?
+  description     String?
+  surface         String
+  trigger         String
+  pageUrl         String?
+  pageTitle       String?
+  referrer        String?
+  market          String?
+  utm             Json?
+  ipHash          String?
+  deskOpen        Boolean        @default(false)
+  /// One working hour from receipt, holiday-aware.
+  dueAt           DateTime       @db.Timestamptz(3)
+  alertAt         DateTime?      @db.Timestamptz(3)
+  status          CallbackStatus @default(new)
+  calledAt        DateTime?      @db.Timestamptz(3)
+  calledById      String?        @db.Uuid
+  callNotes       String?
+  voiceNoteFileId String?        @db.Uuid
+  duplicateOfId   String?        @db.Uuid
+  leadId          String?        @db.Uuid
+  lead            Lead?          @relation(fields: [leadId], references: [id])
+  enquiryId       String?        @db.Uuid
+  enquiry         Enquiry?       @relation(fields: [enquiryId], references: [id])
+  /// public.callback_leads.id when imported at cutover.
+  legacyId        String?        @unique
+
+  @@index([status, dueAt])
+  @@index([email, receivedAt])
+  @@map("callback_request")
+  @@schema("ops")
+}
+
+/// Raw website RFQ form payload, delivered by signed webhook from the storefront.
+model WebsiteSubmission {
+  id         String                  @id @default(uuid(7)) @db.Uuid
+  receivedAt DateTime                @default(now()) @db.Timestamptz(3)
+  payload    Json
+  visitor    Json?
+  /// HMAC-verified delivery id from the storefront, for idempotency.
+  deliveryId String                  @unique
+  status     WebsiteSubmissionStatus @default(received)
+  enquiryId  String?                 @db.Uuid
+  enquiry    Enquiry?                @relation(fields: [enquiryId], references: [id])
+  spamReason String?
+  legacyId   String?                 @unique
+
+  @@index([status, receivedAt])
+  @@map("website_submission")
+  @@schema("ops")
+}
+
+/// Accept / ask-for-changes / payment-advice posts from client pages (P26).
+model ClientPortalSubmission {
+  id              String                 @id @default(uuid(7)) @db.Uuid
+  shareLinkId     String                 @db.Uuid
+  shareLink       ShareLink              @relation(fields: [shareLinkId], references: [id])
+  kind            PortalSubmissionKind
+  status          PortalSubmissionStatus @default(received)
+  name            String?
+  email           String?
+  poNumber        String?
+  deliveryAddress String?
+  lineNumbers     Int[]
+  message         String?
+  fileIds         String[]               @db.Uuid
+  enquiryId       String?                @db.Uuid
+  enquiry         Enquiry?               @relation(fields: [enquiryId], references: [id])
+  createdAt       DateTime               @default(now()) @db.Timestamptz(3)
+  processedAt     DateTime?              @db.Timestamptz(3)
+
+  @@index([status, createdAt])
+  @@map("client_portal_submission")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// ENQUIRY: the deal space
+// ═════════════════════════════════════════════════════════════════════════════
+
+model Enquiry {
+  id                    String                   @id @default(uuid(7)) @db.Uuid
+  /// ENQ-2026-0419. Also the reply-attribution token in subjects.
+  ref                   String                   @unique
+  title                 String
+  clientId              String?                  @db.Uuid
+  client                Company?                 @relation("EnquiryClient", fields: [clientId], references: [id])
+  contactId             String?                  @db.Uuid
+  contact               Contact?                 @relation(fields: [contactId], references: [id])
+  clientRef             String?
+  receivedVia           ReceivedVia
+  receivedAt            DateTime                 @db.Timestamptz(3)
+  /// Client closing date.
+  deadline              DateTime?                @db.Timestamptz(3)
+  /// What we promised in the acknowledgement ("revert by 26 Sep").
+  revertBy              DateTime?                @db.Timestamptz(3)
+  /// Client decision date, compared with supplier validity (65, 146).
+  decisionBy            DateTime?                @db.Date
+  stage                 EnquiryStage             @default(new)
+  stageChangedAt        DateTime                 @default(now()) @db.Timestamptz(3)
+  ownerId               String?                  @db.Uuid
+  owner                 User?                    @relation("EnquiryOwner", fields: [ownerId], references: [id])
+  // Qualification (167) — never scored by country
+  legitimacy            Confidence?
+  legitimacyNotes       Json?
+  fitNotes              Json?
+  effortNotes           Json?
+  suggestedPath         QualificationPath?
+  chosenPath            QualificationPath?
+  pathChosenAt          DateTime?                @db.Timestamptz(3)
+  pathChosenById        String?                  @db.Uuid
+  estValueMin           Decimal?                 @db.Decimal(18, 4)
+  estValueMax           Decimal?                 @db.Decimal(18, 4)
+  estCurrency           String?                  @db.Char(3)
+  // Terms found in the client's mail (92)
+  requestedIncoterm     String?
+  deliveryPoint         String?
+  requestedPayment      String?
+  complianceNote        String?
+  requiresDeviationList Boolean                  @default(false)
+  isTender              Boolean                  @default(false)
+  responseClockPausedAt DateTime?                @db.Timestamptz(3)
+  // Close-out (29)
+  lostReason            LostReason?
+  lostWinningPrice      Decimal?                 @db.Decimal(18, 4)
+  lostWinningCcy        String?                  @db.Char(3)
+  lostToName            String?
+  closedReason          ClosedReason?
+  closeNote             String?
+  closedAt              DateTime?                @db.Timestamptz(3)
+  mergedIntoId          String?                  @db.Uuid
+  mergedInto            Enquiry?                 @relation("EnquiryMerge", fields: [mergedIntoId], references: [id])
+  mergedFrom            Enquiry[]                @relation("EnquiryMerge")
+  splitFromId           String?                  @db.Uuid
+  splitFrom             Enquiry?                 @relation("EnquirySplit", fields: [splitFromId], references: [id])
+  splitInto             Enquiry[]                @relation("EnquirySplit")
+  origin                RecordOrigin             @default(ops)
+  version               Int                      @default(0)
+  createdAt             DateTime                 @default(now()) @db.Timestamptz(3)
+  updatedAt             DateTime                 @updatedAt @db.Timestamptz(3)
+  searchTsv             Unsupported("tsvector")?
+
+  lines              EnquiryLine[]
+  revisions          EnquiryRevision[]
+  assumptions        EnquiryAssumption[]
+  clientQuestions    ClientQuestion[]
+  tradeGroups        TradeGroup[]
+  rfqs               SupplierRfq[]
+  supplierQuotes     SupplierQuote[]
+  researchRuns       ResearchRun[]
+  quotations         Quotation[]
+  orders             Order[]
+  tender             Tender?
+  followUps          FollowUpEntry[]
+  threads            MailThread[]
+  mailLinks          MailLink[]
+  outbound           OutboundEmail[]
+  documents          Document[]
+  tasks              Task[]
+  notifications      Notification[]
+  actions            AssistantAction[]
+  activity           ActivityEvent[]
+  lead               Lead?
+  callbacks          CallbackRequest[]
+  websiteSubmissions WebsiteSubmission[]
+  portalSubmissions  ClientPortalSubmission[]
+
+  @@index([stage, deadline])
+  @@index([clientId, receivedAt])
+  @@index([clientRef])
+  @@index([ownerId, stage])
+  @@map("enquiry")
+  @@schema("ops")
+}
+
+/// A client revision of the request (24): R2 with its changes.
+model EnquiryRevision {
+  id              String    @id @default(uuid(7)) @db.Uuid
+  enquiryId       String    @db.Uuid
+  enquiry         Enquiry   @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  label           String
+  sourceMessageId String?   @db.Uuid
+  /// [{ lineNo, field, was, now }]
+  changes         Json
+  appliedAt       DateTime? @db.Timestamptz(3)
+  appliedById     String?   @db.Uuid
+  createdAt       DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@unique([enquiryId, label])
+  @@map("enquiry_revision")
+  @@schema("ops")
+}
+
+model EnquiryAssumption {
+  id               String       @id @default(uuid(7)) @db.Uuid
+  enquiryId        String       @db.Uuid
+  enquiry          Enquiry      @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  lineId           String?      @db.Uuid
+  line             EnquiryLine? @relation(fields: [lineId], references: [id])
+  text             String
+  printOnQuotation Boolean      @default(true)
+  createdAt        DateTime     @default(now()) @db.Timestamptz(3)
+
+  @@index([enquiryId])
+  @@map("enquiry_assumption")
+  @@schema("ops")
+}
+
+model EnquiryLine {
+  id                     String             @id @default(uuid(7)) @db.Uuid
+  enquiryId              String             @db.Uuid
+  enquiry                Enquiry            @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  no                     Int
+  clientPartNo           String?
+  clientItemCode         String?
+  description            String
+  qty                    Decimal            @db.Decimal(18, 4)
+  uom                    String             @default("pcs")
+  specNotes              String?
+  requestedMake          String?
+  equivalentsPolicy      EquivalentsPolicy  @default(unknown)
+  requiredCertification  String?
+  partId                 String?            @db.Uuid
+  part                   Part?              @relation(fields: [partId], references: [id])
+  matchConfidence        Confidence?
+  /// public.products.id / product_variants.partNumber when catalogue-linked.
+  catalogueProductId     String?
+  catalogueVariantPartNo String?
+  status                 LineStatus         @default(open)
+  statusReason           String?
+  heldReason             String?
+  regretReason           LineRegretReason?
+  notQuotedReason        String?
+  /// "To follow": promised-by date and give-up date (10 working days default).
+  followBy               DateTime?          @db.Date
+  giveUpAt               DateTime?          @db.Date
+  tradeGroupId           String?            @db.Uuid
+  tradeGroup             TradeGroup?        @relation(fields: [tradeGroupId], references: [id])
+  quotedByCount          Int                @default(0)
+  selectedQuoteLineId    String?            @unique @db.Uuid
+  selectedQuoteLine      SupplierQuoteLine? @relation("SelectedQuoteLine", fields: [selectedQuoteLineId], references: [id])
+  // Source of the extracted value (Why?)
+  sourceDocumentId       String?            @db.Uuid
+  sourceMessageId        String?            @db.Uuid
+  sourcePage             Int?
+  sourceSpan             Json?
+  extractionConfidence   Confidence?
+  extractedByActionId    String?            @db.Uuid
+  qtyChangedAt           DateTime?          @db.Timestamptz(3)
+  cancelledAt            DateTime?          @db.Timestamptz(3)
+  version                Int                @default(0)
+  createdAt              DateTime           @default(now()) @db.Timestamptz(3)
+  updatedAt              DateTime           @updatedAt @db.Timestamptz(3)
+
+  assumptions       EnquiryAssumption[]
+  clientQuestions   ClientQuestion[]
+  supplierQuestions SupplierQuestion[]
+  rfqLines          SupplierRfqLine[]
+  quoteLines        SupplierQuoteLine[] @relation("QuoteLineForLine")
+  selections        LineSelection[]
+  deviations        Deviation[]
+  landedCosts       LandedCost[]
+  quotationLines    QuotationLine[]
+  orderLines        OrderLine[]
+  tenderQueries     TenderQuery[]
+  vendorChecks      ApprovedMakeCheck[]
+
+  @@unique([enquiryId, no])
+  @@index([status])
+  @@index([partId])
+  @@index([tradeGroupId])
+  @@map("enquiry_line")
+  @@schema("ops")
+}
+
+/// Questions to the client before sourcing (171). Held lines only.
+model ClientQuestion {
+  id                 String               @id @default(uuid(7)) @db.Uuid
+  enquiryId          String               @db.Uuid
+  enquiry            Enquiry              @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  lineId             String?              @db.Uuid
+  line               EnquiryLine?         @relation(fields: [lineId], references: [id])
+  question           String
+  fallbackAssumption String?
+  status             ClientQuestionStatus @default(draft)
+  outboundId         String?              @db.Uuid
+  sentAt             DateTime?            @db.Timestamptz(3)
+  reminderSentAt     DateTime?            @db.Timestamptz(3)
+  answerMessageId    String?              @db.Uuid
+  answerText         String?
+  answeredAt         DateTime?            @db.Timestamptz(3)
+  /// Questions relayed from suppliers land here, names removed (108).
+  relayedFrom        SupplierQuestion[]
+  createdAt          DateTime             @default(now()) @db.Timestamptz(3)
+
+  @@index([enquiryId, status])
+  @@map("client_question")
+  @@schema("ops")
+}
+
+/// Lines grouped by trade; one IH-RFQ ref per group (134).
+model TradeGroup {
+  id        String   @id @default(uuid(7)) @db.Uuid
+  enquiryId String   @db.Uuid
+  enquiry   Enquiry  @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  name      String
+  tradeId   String?  @db.Uuid
+  trade     Trade?   @relation(fields: [tradeId], references: [id])
+  position  Int      @default(0)
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+
+  lines              EnquiryLine[]
+  rfqs               SupplierRfq[]
+  researchCandidates ResearchCandidate[]
+
+  @@index([enquiryId])
+  @@map("trade_group")
+  @@schema("ops")
+}
+
+// ── Supplier RFQs ──────────────────────────────────────────────────────────
+
+model SupplierRfq {
+  id                     String      @id @default(uuid(7)) @db.Uuid
+  /// IH-RFQ-2611-P04, running per month.
+  ref                    String      @unique
+  enquiryId              String      @db.Uuid
+  enquiry                Enquiry     @relation(fields: [enquiryId], references: [id])
+  tradeGroupId           String?     @db.Uuid
+  tradeGroup             TradeGroup? @relation(fields: [tradeGroupId], references: [id])
+  kind                   RfqKind     @default(primary)
+  status                 RfqStatus   @default(reserved)
+  replyBy                DateTime?   @db.Date
+  language               RfqLanguage @default(en)
+  attachPdf              Boolean     @default(false)
+  cleanedDatasheetFileId String?     @db.Uuid
+  identifierCheck        Json?
+  withdrawnReason        String?
+  withdrawnAt            DateTime?   @db.Timestamptz(3)
+  createdById            String?     @db.Uuid
+  createdAt              DateTime    @default(now()) @db.Timestamptz(3)
+  updatedAt              DateTime    @updatedAt @db.Timestamptz(3)
+
+  lines      SupplierRfqLine[]
+  recipients SupplierRfqRecipient[]
+  changes    RfqChange[]
+  quotes     SupplierQuote[]
+
+  @@index([enquiryId])
+  @@index([status])
+  @@map("supplier_rfq")
+  @@schema("ops")
+}
+
+model SupplierRfqLine {
+  rfqId            String      @db.Uuid
+  rfq              SupplierRfq @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  lineId           String      @db.Uuid
+  line             EnquiryLine @relation(fields: [lineId], references: [id])
+  position         Int
+  qtyAsked         Decimal     @db.Decimal(18, 4)
+  /// Description as sent (client identifiers stripped).
+  sentDescription  String?
+  addedAfterSendAt DateTime?   @db.Timestamptz(3)
+  droppedAt        DateTime?   @db.Timestamptz(3)
+
+  @@id([rfqId, lineId])
+  @@index([lineId])
+  @@map("supplier_rfq_line")
+  @@schema("ops")
+}
+
+model SupplierRfqRecipient {
+  id                String          @id @default(uuid(7)) @db.Uuid
+  rfqId             String          @db.Uuid
+  rfq               SupplierRfq     @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  supplierId        String          @db.Uuid
+  supplier          Company         @relation(fields: [supplierId], references: [id])
+  contactId         String?         @db.Uuid
+  contact           Contact?        @relation(fields: [contactId], references: [id])
+  status            RecipientStatus @default(draft)
+  askCurrency       String?         @db.Char(3)
+  askPort           Boolean         @default(true)
+  supplierTimezone  String?
+  sendAt            DateTime?       @db.Timestamptz(3)
+  sentAt            DateTime?       @db.Timestamptz(3)
+  threadId          String?         @db.Uuid
+  thread            MailThread?     @relation(fields: [threadId], references: [id])
+  outboundId        String?         @db.Uuid
+  firstContact      Boolean         @default(false)
+  openerSentence    String?
+  openerSourceUrl   String?
+  chasersSent       Int             @default(0)
+  lastChasedAt      DateTime?       @db.Timestamptz(3)
+  nextChaseAt       DateTime?       @db.Timestamptz(3)
+  escalatedAt       DateTime?       @db.Timestamptz(3)
+  outOfOfficeUntil  DateTime?       @db.Date
+  repliedAt         DateTime?       @db.Timestamptz(3)
+  linesQuoted       Int             @default(0)
+  promisedBy        DateTime?       @db.Date
+  bounceReason      String?
+  withdrawnAt       DateTime?       @db.Timestamptz(3)
+  excludedFromStats Boolean         @default(false)
+  createdAt         DateTime        @default(now()) @db.Timestamptz(3)
+  updatedAt         DateTime        @updatedAt @db.Timestamptz(3)
+
+  quotes    SupplierQuote[]
+  questions SupplierQuestion[]
+
+  @@unique([rfqId, supplierId])
+  @@index([status, nextChaseAt])
+  @@index([supplierId])
+  @@map("supplier_rfq_recipient")
+  @@schema("ops")
+}
+
+/// Extra lines or changes after sending (139).
+model RfqChange {
+  id           String        @id @default(uuid(7)) @db.Uuid
+  rfqId        String        @db.Uuid
+  rfq          SupplierRfq   @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  kind         RfqChangeKind
+  details      Json
+  causeType    RecordType?
+  causeId      String?       @db.Uuid
+  recipientIds String[]      @db.Uuid
+  actionId     String?       @db.Uuid
+  createdAt    DateTime      @default(now()) @db.Timestamptz(3)
+
+  @@index([rfqId])
+  @@map("rfq_change")
+  @@schema("ops")
+}
+
+/// Question from a supplier, bundled and relayed to the client without names (64, 108).
+model SupplierQuestion {
+  id               String                 @id @default(uuid(7)) @db.Uuid
+  recipientId      String                 @db.Uuid
+  recipient        SupplierRfqRecipient   @relation(fields: [recipientId], references: [id], onDelete: Cascade)
+  lineId           String?                @db.Uuid
+  line             EnquiryLine?           @relation(fields: [lineId], references: [id])
+  sourceMessageId  String                 @db.Uuid
+  sourceMessage    MailMessage            @relation(fields: [sourceMessageId], references: [id])
+  question         String
+  status           SupplierQuestionStatus @default(received)
+  clientQuestionId String?                @db.Uuid
+  clientQuestion   ClientQuestion?        @relation(fields: [clientQuestionId], references: [id])
+  answerSharedAt   DateTime?              @db.Timestamptz(3)
+  createdAt        DateTime               @default(now()) @db.Timestamptz(3)
+
+  @@index([status])
+  @@map("supplier_question")
+  @@schema("ops")
+}
+
+// ── Supplier discovery (P08) ───────────────────────────────────────────────
+
+model ResearchRun {
+  id            String            @id @default(uuid(7)) @db.Uuid
+  enquiryId     String            @db.Uuid
+  enquiry       Enquiry           @relation(fields: [enquiryId], references: [id])
+  status        ResearchRunStatus @default(queued)
+  /// Per-group briefs: spec only, never the client's name.
+  briefs        Json
+  regionsOrder  String[]
+  currentRegion String?
+  capUsd        Decimal           @db.Decimal(12, 6)
+  costUsd       Decimal           @default(0) @db.Decimal(12, 6)
+  startedById   String?           @db.Uuid
+  actionId      String?           @db.Uuid
+  startedAt     DateTime?         @db.Timestamptz(3)
+  endedAt       DateTime?         @db.Timestamptz(3)
+  stoppedReason String?
+
+  candidates ResearchCandidate[]
+
+  @@index([enquiryId])
+  @@index([status])
+  @@map("research_run")
+  @@schema("ops")
+}
+
+model ResearchCandidate {
+  id           String             @id @default(uuid(7)) @db.Uuid
+  runId        String             @db.Uuid
+  run          ResearchRun        @relation(fields: [runId], references: [id], onDelete: Cascade)
+  tradeGroupId String?            @db.Uuid
+  tradeGroup   TradeGroup?        @relation(fields: [tradeGroupId], references: [id])
+  companyId    String?            @db.Uuid
+  company      Company?           @relation(fields: [companyId], references: [id])
+  name         String
+  country      String?            @db.Char(2)
+  city         String?
+  typeGuess    SupplierType?
+  priority     CandidatePriority?
+  reason       String?
+  listsText    String?
+  shipsToUae   String?
+  /// [{ flag, evidenceUrl }]
+  riskFlags    Json?
+  /// [{ kind: email|phone|person, value, verification: on_page|directory_only, sourceUrl, fetchedAt }]
+  contacts     Json
+  sourceUrls   String[]
+  region       String?
+  status       CandidateStatus    @default(found)
+  decidedById  String?            @db.Uuid
+  createdAt    DateTime           @default(now()) @db.Timestamptz(3)
+
+  @@index([runId])
+  @@map("research_candidate")
+  @@schema("ops")
+}
+
+// ── Parts (P14) ────────────────────────────────────────────────────────────
+
+/// The memory of every part ever asked for. Price history is derived from
+/// supplier quote lines and quotation lines; it is not stored here.
+model Part {
+  id                     String                   @id @default(uuid(7)) @db.Uuid
+  partNo                 String
+  /// Upper-case, alphanumerics only: "6316-C3" → "6316C3".
+  partNoNorm             String
+  /// '' when the brand is unknown, so the unique key works.
+  brand                  String                   @default("")
+  description            String?
+  tradeId                String?                  @db.Uuid
+  trade                  Trade?                   @relation(fields: [tradeId], references: [id])
+  catalogueProductId     String?
+  catalogueVariantPartNo String?
+  datasheetFileIds       String[]                 @db.Uuid
+  timesAsked12m          Int                      @default(0)
+  clientsAsked12m        Int                      @default(0)
+  conflictingBrandClaims Boolean                  @default(false)
+  firstAskedEnquiryId    String?                  @db.Uuid
+  notes                  String?
+  archivedAt             DateTime?                @db.Timestamptz(3)
+  createdAt              DateTime                 @default(now()) @db.Timestamptz(3)
+  updatedAt              DateTime                 @updatedAt @db.Timestamptz(3)
+  searchTsv              Unsupported("tsvector")?
+
+  aliases       PartAlias[]
+  equivalencesA PartEquivalence[]    @relation("EquivA")
+  equivalencesB PartEquivalence[]    @relation("EquivB")
+  lines         EnquiryLine[]
+  quoteLines    SupplierQuoteLine[]
+  lessons       Lesson[]
+  suggestion    CatalogueSuggestion?
+
+  @@unique([partNoNorm, brand])
+  @@index([partNoNorm])
+  @@map("part")
+  @@schema("ops")
+}
+
+model PartAlias {
+  id     String @id @default(uuid(7)) @db.Uuid
+  partId String @db.Uuid
+  part   Part   @relation(fields: [partId], references: [id], onDelete: Cascade)
+  text   String
+  norm   String
+  /// seen | learned | website | import
+  source String
+
+  @@unique([partId, norm])
+  @@index([norm])
+  @@map("part_alias")
+  @@schema("ops")
+}
+
+/// Stored once per unordered pair: partAId < partBId (CHECK in SQL).
+model PartEquivalence {
+  id          String              @id @default(uuid(7)) @db.Uuid
+  partAId     String              @db.Uuid
+  partA       Part                @relation("EquivA", fields: [partAId], references: [id])
+  partBId     String              @db.Uuid
+  partB       Part                @relation("EquivB", fields: [partBId], references: [id])
+  relation    EquivalenceRelation
+  status      EquivalenceStatus   @default(proposed)
+  source      EquivalenceSource
+  evidence    Json?
+  seenOnCount Int                 @default(0)
+  decidedById String?             @db.Uuid
+  decidedAt   DateTime?           @db.Timestamptz(3)
+  createdAt   DateTime            @default(now()) @db.Timestamptz(3)
+
+  @@unique([partAId, partBId])
+  @@index([partBId])
+  @@map("part_equivalence")
+  @@schema("ops")
+}
+
+/// Hand-off to the website team (166). Ops never edits the catalogue.
+model CatalogueSuggestion {
+  id               String                    @id @default(uuid(7)) @db.Uuid
+  partId           String                    @unique @db.Uuid
+  part             Part                      @relation(fields: [partId], references: [id])
+  status           CatalogueSuggestionStatus @default(not_suggested)
+  askedCount       Int                       @default(0)
+  clientCount      Int                       @default(0)
+  windowStart      DateTime?                 @db.Date
+  websiteProductId String?
+  sentAt           DateTime?                 @db.Timestamptz(3)
+  publishedAt      DateTime?                 @db.Timestamptz(3)
+  updatedAt        DateTime                  @updatedAt @db.Timestamptz(3)
+
+  @@index([status])
+  @@map("catalogue_suggestion")
+  @@schema("ops")
+}
+
+// ── Tenders (P16) ──────────────────────────────────────────────────────────
+
+model Tender {
+  id                    String            @id @default(uuid(7)) @db.Uuid
+  enquiryId             String            @unique @db.Uuid
+  enquiry               Enquiry           @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  tenderRef             String
+  buyerName             String?
+  submissionMethod      SubmissionMethod  @default(portal)
+  portalUrl             String?
+  issuedAt              DateTime?         @db.Timestamptz(3)
+  tqDeadline            DateTime?         @db.Timestamptz(3)
+  siteVisitAt           DateTime?         @db.Timestamptz(3)
+  clarificationsCloseAt DateTime?         @db.Timestamptz(3)
+  closingAt             DateTime          @db.Timestamptz(3)
+  closingTimezone       String            @default("Asia/Dubai")
+  bidValidityDays       Int?
+  bidValidUntil         DateTime?         @db.Date
+  bidBondRequired       Boolean           @default(false)
+  bidBondPct            Decimal?          @db.Decimal(9, 4)
+  bidBondAmount         Decimal?          @db.Decimal(18, 4)
+  bidBondCurrency       String?           @db.Char(3)
+  bidBondBank           String?
+  bidBondValidDays      Int?
+  bidBondRef            String?
+  awardExpectedAt       DateTime?         @db.Date
+  status                TenderStatus      @default(preparing)
+  submittedAt           DateTime?         @db.Timestamptz(3)
+  submittedById         String?           @db.Uuid
+  submittedVia          SubmissionMethod?
+  submissionReceiptRef  String?
+  receiptFileId         String?           @db.Uuid
+  packFileId            String?           @db.Uuid
+  awardPoRef            String?
+  createdAt             DateTime          @default(now()) @db.Timestamptz(3)
+  updatedAt             DateTime          @updatedAt @db.Timestamptz(3)
+
+  planSteps     TenderPlanStep[]
+  requirements  TenderRequirement[]
+  queries       TenderQuery[]
+  addenda       TenderAddendum[]
+  bidPackItems  BidPackItem[]
+  approvedMakes ApprovedMake[]
+
+  @@index([closingAt])
+  @@map("tender")
+  @@schema("ops")
+}
+
+model TenderPlanStep {
+  id        String         @id @default(uuid(7)) @db.Uuid
+  tenderId  String         @db.Uuid
+  tender    Tender         @relation(fields: [tenderId], references: [id], onDelete: Cascade)
+  key       String
+  label     String
+  plannedAt DateTime       @db.Timestamptz(3)
+  actualAt  DateTime?      @db.Timestamptz(3)
+  status    PlanStepStatus @default(planned)
+  position  Int
+
+  @@unique([tenderId, key])
+  @@map("tender_plan_step")
+  @@schema("ops")
+}
+
+model TenderRequirement {
+  id                   String              @id @default(uuid(7)) @db.Uuid
+  tenderId             String              @db.Uuid
+  tender               Tender              @relation(fields: [tenderId], references: [id], onDelete: Cascade)
+  category             RequirementCategory
+  text                 String
+  sourceDocumentId     String?             @db.Uuid
+  sourcePage           Int?
+  status               RequirementStatus   @default(missing)
+  evidenceDocumentId   String?             @db.Uuid
+  complianceDocumentId String?             @db.Uuid
+  position             Int                 @default(0)
+
+  @@index([tenderId])
+  @@map("tender_requirement")
+  @@schema("ops")
+}
+
+/// Technical query log (174).
+model TenderQuery {
+  id              String            @id @default(uuid(7)) @db.Uuid
+  tenderId        String            @db.Uuid
+  tender          Tender            @relation(fields: [tenderId], references: [id], onDelete: Cascade)
+  ref             String
+  lineId          String?           @db.Uuid
+  line            EnquiryLine?      @relation(fields: [lineId], references: [id])
+  origin          TenderQueryOrigin
+  /// Internal only: which supplier prompted it. Never printed.
+  fromSupplierId  String?           @db.Uuid
+  question        String
+  buyerFormatText String?
+  status          TenderQueryStatus @default(draft)
+  raisedAt        DateTime          @default(now()) @db.Timestamptz(3)
+  postedAt        DateTime?         @db.Timestamptz(3)
+  postedById      String?           @db.Uuid
+  answer          String?
+  answeredAt      DateTime?         @db.Timestamptz(3)
+  relayedAt       DateTime?         @db.Timestamptz(3)
+
+  @@unique([tenderId, ref])
+  @@map("tender_query")
+  @@schema("ops")
+}
+
+model TenderAddendum {
+  id               String    @id @default(uuid(7)) @db.Uuid
+  tenderId         String    @db.Uuid
+  tender           Tender    @relation(fields: [tenderId], references: [id], onDelete: Cascade)
+  no               Int
+  receivedAt       DateTime  @db.Timestamptz(3)
+  summary          String
+  closingMovedTo   DateTime? @db.Timestamptz(3)
+  changes          Json?
+  sourceDocumentId String?   @db.Uuid
+
+  @@unique([tenderId, no])
+  @@map("tender_addendum")
+  @@schema("ops")
+}
+
+/// Buyer's approved makes per commodity; remembered across tenders (175).
+model ApprovedMake {
+  id        String   @id @default(uuid(7)) @db.Uuid
+  buyerId   String   @db.Uuid
+  buyer     Company  @relation(fields: [buyerId], references: [id])
+  tenderId  String?  @db.Uuid
+  tender    Tender?  @relation(fields: [tenderId], references: [id])
+  commodity String
+  make      String
+  sourceRef String?
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+
+  @@unique([buyerId, commodity, make])
+  @@map("approved_make")
+  @@schema("ops")
+}
+
+model ApprovedMakeCheck {
+  id                  String            @id @default(uuid(7)) @db.Uuid
+  lineId              String            @db.Uuid
+  line                EnquiryLine       @relation(fields: [lineId], references: [id], onDelete: Cascade)
+  supplierQuoteLineId String?           @db.Uuid
+  offeredMake         String
+  result              VendorCheckResult
+  decidedById         String?           @db.Uuid
+  createdAt           DateTime          @default(now()) @db.Timestamptz(3)
+
+  @@index([lineId])
+  @@map("approved_make_check")
+  @@schema("ops")
+}
+
+model BidPackItem {
+  id          String            @id @default(uuid(7)) @db.Uuid
+  tenderId    String            @db.Uuid
+  tender      Tender            @relation(fields: [tenderId], references: [id], onDelete: Cascade)
+  kind        BidPackItemKind
+  label       String
+  documentIds String[]          @db.Uuid
+  status      RequirementStatus @default(missing)
+  position    Int
+
+  @@index([tenderId])
+  @@map("bid_pack_item")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// SUPPLIER QUOTES, LANDED COST, COMPARE
+// ═════════════════════════════════════════════════════════════════════════════
+
+model SupplierQuote {
+  id               String                @id @default(uuid(7)) @db.Uuid
+  enquiryId        String                @db.Uuid
+  enquiry          Enquiry               @relation(fields: [enquiryId], references: [id])
+  rfqId            String?               @db.Uuid
+  rfq              SupplierRfq?          @relation(fields: [rfqId], references: [id])
+  recipientId      String?               @db.Uuid
+  recipient        SupplierRfqRecipient? @relation(fields: [recipientId], references: [id])
+  supplierId       String                @db.Uuid
+  supplier         Company               @relation(fields: [supplierId], references: [id])
+  /// The supplier's own number, e.g. AWB-Q-11872.
+  supplierRef      String?
+  quoteDate        DateTime?             @db.Date
+  version          Int                   @default(1)
+  supersedesId     String?               @unique @db.Uuid
+  supersedes       SupplierQuote?        @relation("QuoteVersion", fields: [supersedesId], references: [id])
+  supersededBy     SupplierQuote?        @relation("QuoteVersion")
+  status           SupplierQuoteStatus   @default(capturing)
+  currency         String?               @db.Char(3)
+  incoterm         String?
+  incotermPlace    String?
+  validityDays     Int?
+  validUntil       DateTime?             @db.Date
+  paymentTerms     String?
+  countryOfOrigin  String?
+  certification    String?
+  packingIncluded  Boolean?
+  freightIncluded  Boolean?
+  moqText          String?
+  totalAmount      Decimal?              @db.Decimal(18, 4)
+  printedTotal     String?
+  totalsMatch      Boolean?
+  // FX lock at capture (146)
+  fxRateId         String?               @db.Uuid
+  fxRate           FxRate?               @relation(fields: [fxRateId], references: [id])
+  fxRateToAed      Decimal?              @db.Decimal(20, 10)
+  fxLockedAt       DateTime?             @db.Timestamptz(3)
+  receivedAt       DateTime              @db.Timestamptz(3)
+  arrivedAtMailbox String?
+  language         String?               @db.VarChar(8)
+  summaryEn        String?
+  /// sha256 of the source file, for de-duplication of forwarded copies.
+  fileHash         String?
+  flags            Json?
+  captureActionId  String?               @db.Uuid
+  confirmedById    String?               @db.Uuid
+  confirmedAt      DateTime?             @db.Timestamptz(3)
+  recordOrigin     RecordOrigin          @default(ops)
+  createdAt        DateTime              @default(now()) @db.Timestamptz(3)
+  updatedAt        DateTime              @updatedAt @db.Timestamptz(3)
+
+  sources     SupplierQuoteSource[]
+  lines       SupplierQuoteLine[]
+  exceptions  QuoteException[]
+  supplierPos SupplierPo[]
+
+  @@unique([supplierId, supplierRef, version])
+  @@index([enquiryId])
+  @@index([rfqId])
+  @@index([status])
+  @@index([fileHash])
+  @@map("supplier_quote")
+  @@schema("ops")
+}
+
+/// A quote can arrive over several emails (147); each value is tagged with its source.
+model SupplierQuoteSource {
+  id          String             @id @default(uuid(7)) @db.Uuid
+  quoteId     String             @db.Uuid
+  quote       SupplierQuote      @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  messageId   String?            @db.Uuid
+  message     MailMessage?       @relation(fields: [messageId], references: [id])
+  documentId  String?            @db.Uuid
+  contributes SourceContribution @default(all)
+  manual      Boolean            @default(false)
+  createdAt   DateTime           @default(now()) @db.Timestamptz(3)
+
+  @@index([quoteId])
+  @@map("supplier_quote_source")
+  @@schema("ops")
+}
+
+model SupplierQuoteLine {
+  id                 String                @id @default(uuid(7)) @db.Uuid
+  quoteId            String                @db.Uuid
+  quote              SupplierQuote         @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  enquiryLineId      String?               @db.Uuid
+  enquiryLine        EnquiryLine?          @relation("QuoteLineForLine", fields: [enquiryLineId], references: [id])
+  supplierItemNo     String?
+  offeredPartNo      String?
+  offeredMake        String?
+  offeredDescription String?
+  partId             String?               @db.Uuid
+  part               Part?                 @relation(fields: [partId], references: [id])
+  kind               SupplierQuoteLineKind @default(exact)
+  qtyOffered         Decimal?              @db.Decimal(18, 4)
+  uom                String?
+  unitPrice          Decimal?              @db.Decimal(18, 4)
+  /// Exactly as printed ("1.385,00"). Captured values are never retyped.
+  printedUnitPrice   String?
+  conversionNote     String?
+  lineTotal          Decimal?              @db.Decimal(18, 4)
+  leadTimeText       String?
+  leadTimeDays       Int?
+  stock              StockStatus           @default(unknown)
+  moq                Decimal?              @db.Decimal(18, 4)
+  conditions         String?
+  conditionLineIds   String[]              @db.Uuid
+  promisedBy         DateTime?             @db.Date
+  unreadable         Boolean               @default(false)
+  /// e.g. "quantity_changed_awaiting_revision", "certificate_expired".
+  staleReason        String?
+  /// { documentId, page, bbox: [x,y,w,h] } or { messageId, start, end }.
+  sourceHighlight    Json?
+  sourceSourceId     String?               @db.Uuid
+  createdAt          DateTime              @default(now()) @db.Timestamptz(3)
+
+  selectedFor    EnquiryLine?     @relation("SelectedQuoteLine")
+  selections     LineSelection[]
+  landedCosts    LandedCost[]
+  deviations     Deviation[]
+  quotationLines QuotationLine[]
+  exceptions     QuoteException[]
+
+  @@index([quoteId])
+  @@index([enquiryLineId])
+  @@index([partId, createdAt])
+  @@map("supplier_quote_line")
+  @@schema("ops")
+}
+
+/// Mapping exceptions resolved by Krishan (143).
+model QuoteException {
+  id           String               @id @default(uuid(7)) @db.Uuid
+  quoteId      String               @db.Uuid
+  quote        SupplierQuote        @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  quoteLineId  String?              @db.Uuid
+  quoteLine    SupplierQuoteLine?   @relation(fields: [quoteLineId], references: [id])
+  kind         QuoteExceptionKind
+  details      Json
+  status       QuoteExceptionStatus @default(open)
+  resolution   String?
+  resolvedById String?              @db.Uuid
+  resolvedAt   DateTime?            @db.Timestamptz(3)
+  actionId     String?              @db.Uuid
+
+  @@index([quoteId, status])
+  @@map("quote_exception")
+  @@schema("ops")
+}
+
+/// Landed cost per supplier quote line to the delivery point (149).
+/// Inputs and overrides are stored, not only the result.
+model LandedCost {
+  id                  String            @id @default(uuid(7)) @db.Uuid
+  supplierQuoteLineId String            @db.Uuid
+  supplierQuoteLine   SupplierQuoteLine @relation(fields: [supplierQuoteLineId], references: [id], onDelete: Cascade)
+  enquiryLineId       String            @db.Uuid
+  enquiryLine         EnquiryLine       @relation(fields: [enquiryLineId], references: [id])
+  deliveryPoint       String?
+  supplierUnitPrice   Decimal           @db.Decimal(18, 4)
+  supplierCurrency    String            @db.Char(3)
+  fxRateToAed         Decimal           @db.Decimal(20, 10)
+  /// True when the drawer shows a refreshed rate instead of the lock (logged).
+  fxRefreshed         Boolean           @default(false)
+  convertedUnitAed    Decimal           @db.Decimal(18, 4)
+  landedUnitAed       Decimal           @db.Decimal(18, 4)
+  weightKgPerUnit     Decimal?          @db.Decimal(18, 4)
+  hsCode              String?
+  isCurrent           Boolean           @default(true)
+  computedAt          DateTime          @default(now()) @db.Timestamptz(3)
+
+  components LandedCostComponent[]
+
+  @@index([supplierQuoteLineId, isCurrent])
+  @@index([enquiryLineId])
+  @@map("landed_cost")
+  @@schema("ops")
+}
+
+model LandedCostComponent {
+  id             String              @id @default(uuid(7)) @db.Uuid
+  landedCostId   String              @db.Uuid
+  landedCost     LandedCost          @relation(fields: [landedCostId], references: [id], onDelete: Cascade)
+  kind           LandedComponentKind
+  basis          LandedBasis
+  amountAed      Decimal             @db.Decimal(18, 4)
+  pct            Decimal?            @db.Decimal(9, 4)
+  sourceText     String?
+  rateCardId     String?             @db.Uuid
+  overriddenById String?             @db.Uuid
+  overrideReason String?
+
+  @@index([landedCostId])
+  @@map("landed_cost_component")
+  @@schema("ops")
+}
+
+/// Forwarder rate cards used for freight estimates per line.
+model FreightRateCard {
+  id               String      @id @default(uuid(7)) @db.Uuid
+  forwarderId      String      @db.Uuid
+  forwarder        Company     @relation(fields: [forwarderId], references: [id])
+  origin           String
+  destination      String
+  mode             FreightMode
+  ratePerKg        Decimal?    @db.Decimal(18, 4)
+  ratePerCbm       Decimal?    @db.Decimal(18, 4)
+  minCharge        Decimal?    @db.Decimal(18, 4)
+  currency         String      @db.Char(3)
+  transitDays      Int?
+  validFrom        DateTime?   @db.Date
+  validTo          DateTime?   @db.Date
+  sourceDocumentId String?     @db.Uuid
+
+  @@index([destination, mode])
+  @@map("freight_rate_card")
+  @@schema("ops")
+}
+
+model HsCode {
+  code        String  @id
+  description String?
+  dutyPct     Decimal @db.Decimal(9, 4)
+  region      String  @default("GCC")
+
+  @@map("hs_code")
+  @@schema("ops")
+}
+
+/// Pick per line: Assistant's pick and every override, newest current (148).
+model LineSelection {
+  id                  String            @id @default(uuid(7)) @db.Uuid
+  enquiryLineId       String            @db.Uuid
+  enquiryLine         EnquiryLine       @relation(fields: [enquiryLineId], references: [id], onDelete: Cascade)
+  supplierQuoteLineId String            @db.Uuid
+  supplierQuoteLine   SupplierQuoteLine @relation(fields: [supplierQuoteLineId], references: [id])
+  selectedBy          SelectedBy
+  scenario            SelectionScenario
+  reason              String?
+  actionId            String?           @db.Uuid
+  userId              String?           @db.Uuid
+  isCurrent           Boolean           @default(true)
+  selectedAt          DateTime          @default(now()) @db.Timestamptz(3)
+
+  @@index([enquiryLineId, isCurrent])
+  @@map("line_selection")
+  @@schema("ops")
+}
+
+/// Deviation register: asked vs offered, kept on the line (150).
+model Deviation {
+  id                  String             @id @default(uuid(7)) @db.Uuid
+  enquiryLineId       String             @db.Uuid
+  enquiryLine         EnquiryLine        @relation(fields: [enquiryLineId], references: [id], onDelete: Cascade)
+  supplierQuoteLineId String?            @db.Uuid
+  supplierQuoteLine   SupplierQuoteLine? @relation(fields: [supplierQuoteLineId], references: [id])
+  field               DeviationField
+  asked               String?
+  offered             String?
+  status              DeviationStatus    @default(pending)
+  printText           String?
+  clientQuestionId    String?            @db.Uuid
+  decidedById         String?            @db.Uuid
+  decidedAt           DateTime?          @db.Timestamptz(3)
+  createdAt           DateTime           @default(now()) @db.Timestamptz(3)
+
+  quotationDeviations QuotationDeviation[]
+
+  @@index([enquiryLineId])
+  @@map("deviation")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// QUOTATION (INDUS/Q, Zoho Estimate layout)
+// ═════════════════════════════════════════════════════════════════════════════
+
+model Quotation {
+  id                   String                   @id @default(uuid(7)) @db.Uuid
+  enquiryId            String                   @db.Uuid
+  enquiry              Enquiry                  @relation(fields: [enquiryId], references: [id])
+  clientId             String?                  @db.Uuid
+  client               Company?                 @relation("QuotationClient", fields: [clientId], references: [id])
+  attentionId          String?                  @db.Uuid
+  attention            Contact?                 @relation(fields: [attentionId], references: [id])
+  /// Numeric part of INDUS/Q26941; null until allocated at approval.
+  baseNumber           Int?
+  /// 1 = no suffix; 2 = -R2.
+  revision             Int                      @default(1)
+  /// INDUS/Q26941-R2. Null while a draft.
+  number               String?                  @unique
+  kind                 QuotationKind            @default(standard)
+  supersedesId         String?                  @unique @db.Uuid
+  supersedes           Quotation?               @relation("QuotationRevision", fields: [supersedesId], references: [id])
+  supersededBy         Quotation?               @relation("QuotationRevision")
+  supplementaryOfId    String?                  @db.Uuid
+  supplementaryOf      Quotation?               @relation("QuotationSupplementary", fields: [supplementaryOfId], references: [id])
+  supplementaries      Quotation[]              @relation("QuotationSupplementary")
+  status               QuotationStatus          @default(draft)
+  clientStatus         QuotationClientStatus?
+  quotationDate        DateTime?                @db.Date
+  clientRef            String?
+  currency             String                   @db.Char(3)
+  incoterm             String?
+  incotermPlace        String?
+  validityDays         Int                      @default(30)
+  validUntil           DateTime?                @db.Date
+  vatTreatment         VatTreatment
+  vatNoteLine          Boolean                  @default(false)
+  fxRateToAed          Decimal?                 @db.Decimal(20, 10)
+  termsPresetId        String?                  @db.Uuid
+  termsPreset          TermsPreset?             @relation(fields: [termsPresetId], references: [id])
+  notes                String?
+  subtotal             Decimal                  @default(0) @db.Decimal(18, 4)
+  vatAmount            Decimal                  @default(0) @db.Decimal(18, 4)
+  vatAmountAed         Decimal?                 @db.Decimal(18, 4)
+  total                Decimal                  @default(0) @db.Decimal(18, 4)
+  // Internal economics — never rendered on client documents or for a Helper without canSeeMargins
+  landedTotalAed       Decimal?                 @db.Decimal(18, 4)
+  sellTotalAed         Decimal?                 @db.Decimal(18, 4)
+  grossProfitAed       Decimal?                 @db.Decimal(18, 4)
+  marginPct            Decimal?                 @db.Decimal(9, 4)
+  markupPct            Decimal?                 @db.Decimal(9, 4)
+  cashNeedAed          Decimal?                 @db.Decimal(18, 4)
+  priceGuard           Json?
+  approvedWithWarnings Boolean                  @default(false)
+  // Revision
+  revisionReason       RevisionReason?
+  revisionNote         String?
+  printChangesNote     Boolean                  @default(false)
+  // Pipeline
+  probabilityPct       Int?
+  expectedPoAt         DateTime?                @db.Date
+  nextTouchAt          DateTime?                @db.Date
+  nextTouchNote        String?
+  remindersPausedUntil DateTime?                @db.Date
+  targetPrice          Decimal?                 @db.Decimal(18, 4)
+  // Approval and send
+  approvalActionId     String?                  @db.Uuid
+  approvedById         String?                  @db.Uuid
+  approvedBy           User?                    @relation("QuotationApprovedBy", fields: [approvedById], references: [id])
+  approvedAt           DateTime?                @db.Timestamptz(3)
+  sentAt               DateTime?                @db.Timestamptz(3)
+  sentOutboundId       String?                  @db.Uuid
+  documentId           String?                  @unique @db.Uuid
+  zohoEstimateId       String?                  @unique
+  origin               RecordOrigin             @default(ops)
+  wonAt                DateTime?                @db.Timestamptz(3)
+  lostAt               DateTime?                @db.Timestamptz(3)
+  version              Int                      @default(0)
+  createdById          String?                  @db.Uuid
+  createdAt            DateTime                 @default(now()) @db.Timestamptz(3)
+  updatedAt            DateTime                 @updatedAt @db.Timestamptz(3)
+  searchTsv            Unsupported("tsvector")?
+
+  lines      QuotationLine[]
+  deviations QuotationDeviation[]
+  terms      QuotationTerm[]
+  followUps  FollowUpEntry[]
+  orders     Order[]
+
+  @@unique([baseNumber, revision])
+  @@index([enquiryId])
+  @@index([status, nextTouchAt])
+  @@index([clientId, sentAt])
+  @@map("quotation")
+  @@schema("ops")
+}
+
+model QuotationLine {
+  id                 String              @id @default(uuid(7)) @db.Uuid
+  quotationId        String              @db.Uuid
+  quotation          Quotation           @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+  enquiryLineId      String?             @db.Uuid
+  enquiryLine        EnquiryLine?        @relation(fields: [enquiryLineId], references: [id])
+  position           Int
+  lineNo             Int
+  description        String
+  clientPartNo       String?
+  qty                Decimal             @db.Decimal(18, 4)
+  uom                String
+  rate               Decimal?            @db.Decimal(18, 4)
+  leadWeeks          Decimal?            @db.Decimal(9, 2)
+  leadText           String?
+  taxPct             Decimal?            @db.Decimal(9, 4)
+  taxAmount          Decimal?            @db.Decimal(18, 4)
+  amount             Decimal?            @db.Decimal(18, 4)
+  status             QuotationLineStatus @default(priced)
+  notQuotedReason    String?
+  expectedBy         DateTime?           @db.Date
+  vatTreatment       VatTreatment?
+  // Internal only
+  costUnitAed        Decimal?            @db.Decimal(18, 4)
+  suggestedMarginPct Decimal?            @db.Decimal(9, 4)
+  marginPct          Decimal?            @db.Decimal(9, 4)
+  markupPct          Decimal?            @db.Decimal(9, 4)
+  marginReason       String?
+  roundingApplied    String?
+  priceGuardFlags    Json?
+  sourceQuoteLineId  String?             @db.Uuid
+  sourceQuoteLine    SupplierQuoteLine?  @relation(fields: [sourceQuoteLineId], references: [id])
+
+  orderLines OrderLine[]
+
+  @@unique([quotationId, position])
+  @@index([enquiryLineId])
+  @@map("quotation_line")
+  @@schema("ops")
+}
+
+/// Printed deviation list, snapshotted at approval.
+model QuotationDeviation {
+  id          String     @id @default(uuid(7)) @db.Uuid
+  quotationId String     @db.Uuid
+  quotation   Quotation  @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+  deviationId String?    @db.Uuid
+  deviation   Deviation? @relation(fields: [deviationId], references: [id])
+  text        String
+  position    Int
+
+  @@index([quotationId])
+  @@map("quotation_deviation")
+  @@schema("ops")
+}
+
+/// Printed terms, resolved from clauses at approval (variables filled).
+model QuotationTerm {
+  id                   String       @id @default(uuid(7)) @db.Uuid
+  quotationId          String       @db.Uuid
+  quotation            Quotation    @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+  clauseId             String?      @db.Uuid
+  clause               TermsClause? @relation(fields: [clauseId], references: [id])
+  category             String
+  text                 String
+  differsFromClientRfq Boolean      @default(false)
+  position             Int
+
+  @@index([quotationId])
+  @@map("quotation_term")
+  @@schema("ops")
+}
+
+/// Follow-up timeline after sending (67).
+model FollowUpEntry {
+  id             String                 @id @default(uuid(7)) @db.Uuid
+  enquiryId      String                 @db.Uuid
+  enquiry        Enquiry                @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  quotationId    String?                @db.Uuid
+  quotation      Quotation?             @relation(fields: [quotationId], references: [id])
+  at             DateTime               @db.Timestamptz(3)
+  channel        FollowUpChannel
+  summary        String
+  clientStatus   QuotationClientStatus?
+  outcome        FollowUpOutcome?
+  probabilityPct Int?
+  expectedPoAt   DateTime?              @db.Date
+  nextTouchAt    DateTime?              @db.Date
+  nextTouchNote  String?
+  byUserId       String?                @db.Uuid
+  actionId       String?                @db.Uuid
+  createdAt      DateTime               @default(now()) @db.Timestamptz(3)
+
+  @@index([enquiryId, at])
+  @@map("follow_up_entry")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// ORDER (after the win)
+// ═════════════════════════════════════════════════════════════════════════════
+
+model Order {
+  id                          String                   @id @default(uuid(7)) @db.Uuid
+  /// SO-2402 (derived from the enquiry number).
+  ref                         String                   @unique
+  enquiryId                   String                   @db.Uuid
+  enquiry                     Enquiry                  @relation(fields: [enquiryId], references: [id])
+  quotationId                 String?                  @db.Uuid
+  quotation                   Quotation?               @relation(fields: [quotationId], references: [id])
+  clientId                    String                   @db.Uuid
+  client                      Company                  @relation("OrderClient", fields: [clientId], references: [id])
+  contactId                   String?                  @db.Uuid
+  contact                     Contact?                 @relation(fields: [contactId], references: [id])
+  clientPoNumber              String
+  clientPoDate                DateTime?                @db.Date
+  clientPoDocumentId          String?                  @db.Uuid
+  poCheckDoneAt               DateTime?                @db.Timestamptz(3)
+  stage                       OrderStage               @default(confirmed)
+  stageChangedAt              DateTime                 @default(now()) @db.Timestamptz(3)
+  currency                    String                   @db.Char(3)
+  incoterm                    String?
+  deliveryPoint               String?
+  requiredDeliveryDate        DateTime?                @db.Date
+  latestReadyDate             DateTime?                @db.Date
+  partialShipment             PartialShipmentPolicy    @default(silent)
+  termsPresetId               String?                  @db.Uuid
+  termsPreset                 TermsPreset?             @relation(fields: [termsPresetId], references: [id])
+  paymentTermsText            String?
+  orderValue                  Decimal                  @db.Decimal(18, 4)
+  vatAmount                   Decimal                  @default(0) @db.Decimal(18, 4)
+  total                       Decimal                  @db.Decimal(18, 4)
+  advancePct                  Decimal?                 @db.Decimal(9, 4)
+  advanceAmount               Decimal?                 @db.Decimal(18, 4)
+  holdSupplierPosUntilAdvance Boolean                  @default(true)
+  /// Release when this share of the advance is received (95% default).
+  releaseThresholdPct         Decimal                  @default(95) @db.Decimal(9, 4)
+  advanceReceivedAt           DateTime?                @db.Timestamptz(3)
+  /// Estimate snapshot at quotation, in AED: { revenue, supplier, freight, duty, inspection, bank, grossProfit, marginPct }.
+  estimateAed                 Json?
+  profitFinalAt               DateTime?                @db.Timestamptz(3)
+  carryingCostRatePct         Decimal?                 @db.Decimal(9, 4)
+  cancelledAt                 DateTime?                @db.Timestamptz(3)
+  closedAt                    DateTime?                @db.Timestamptz(3)
+  version                     Int                      @default(0)
+  createdAt                   DateTime                 @default(now()) @db.Timestamptz(3)
+  updatedAt                   DateTime                 @updatedAt @db.Timestamptz(3)
+  searchTsv                   Unsupported("tsvector")?
+
+  lines          OrderLine[]
+  poChecks       PoCheckItem[]
+  changes        OrderChange[]
+  supplierPos    SupplierPo[]
+  freightQuotes  FreightQuote[]
+  shipments      Shipment[]
+  shippingDocs   ShippingDocRequirement[]
+  claims         Claim[]
+  costs          OrderCost[]
+  documents      Document[]
+  clientInvoices ClientInvoice[]
+  shareLinks     ShareLink[]
+
+  @@index([enquiryId])
+  @@index([stage])
+  @@index([clientId])
+  @@map("order")
+  @@schema("ops")
+}
+
+model OrderLine {
+  id              String         @id @default(uuid(7)) @db.Uuid
+  orderId         String         @db.Uuid
+  order           Order          @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  enquiryLineId   String?        @db.Uuid
+  enquiryLine     EnquiryLine?   @relation(fields: [enquiryLineId], references: [id])
+  quotationLineId String?        @db.Uuid
+  quotationLine   QuotationLine? @relation(fields: [quotationLineId], references: [id])
+  lineNo          Int
+  clientPartNo    String?
+  description     String
+  qty             Decimal        @db.Decimal(18, 4)
+  uom             String
+  rate            Decimal        @db.Decimal(18, 4)
+  amount          Decimal        @db.Decimal(18, 4)
+  readyDate       DateTime?      @db.Date
+  cancelledQty    Decimal        @default(0) @db.Decimal(18, 4)
+
+  supplierPoLines SupplierPoLine[]
+  shipmentLines   ShipmentLine[]
+  receivingCounts ReceivingCount[]
+  claims          Claim[]
+
+  @@unique([orderId, lineNo])
+  @@map("order_line")
+  @@schema("ops")
+}
+
+/// Client PO checked line by line against the quotation (69).
+model PoCheckItem {
+  id             String          @id @default(uuid(7)) @db.Uuid
+  orderId        String          @db.Uuid
+  order          Order           @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  lineNo         Int?
+  field          PoCheckField
+  quotationValue String?
+  poValue        String?
+  decision       PoCheckDecision @default(pending)
+  note           String?
+  decidedById    String?         @db.Uuid
+  decidedAt      DateTime?       @db.Timestamptz(3)
+
+  @@index([orderId])
+  @@map("po_check_item")
+  @@schema("ops")
+}
+
+/// Client changes or cancels after the PO (198).
+model OrderChange {
+  id                   String            @id @default(uuid(7)) @db.Uuid
+  orderId              String            @db.Uuid
+  order                Order             @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  kind                 OrderChangeKind
+  status               OrderChangeStatus @default(received)
+  requestedAt          DateTime          @db.Timestamptz(3)
+  sourceMessageId      String?           @db.Uuid
+  details              Json
+  chargePolicy         ChargePolicy?
+  chargeAmount         Decimal?          @db.Decimal(18, 4)
+  chargeCurrency       String?           @db.Char(3)
+  costToIndusAed       Decimal?          @db.Decimal(18, 4)
+  oaRevisionDocumentId String?           @db.Uuid
+  decidedById          String?           @db.Uuid
+  decidedAt            DateTime?         @db.Timestamptz(3)
+
+  @@index([orderId])
+  @@map("order_change")
+  @@schema("ops")
+}
+
+model SupplierPo {
+  id                     String           @id @default(uuid(7)) @db.Uuid
+  /// INDUS/PO10231 (or the Round-4 pattern, per Settings › Numbering).
+  number                 String?          @unique
+  revision               Int              @default(1)
+  orderId                String           @db.Uuid
+  order                  Order            @relation(fields: [orderId], references: [id])
+  supplierId             String           @db.Uuid
+  supplier               Company          @relation(fields: [supplierId], references: [id])
+  contactId              String?          @db.Uuid
+  contact                Contact?         @relation(fields: [contactId], references: [id])
+  supplierQuoteId        String?          @db.Uuid
+  supplierQuote          SupplierQuote?   @relation(fields: [supplierQuoteId], references: [id])
+  status                 SupplierPoStatus @default(draft)
+  currency               String           @db.Char(3)
+  incoterm               String?
+  incotermPlace          String?
+  paymentTerms           String?
+  advancePct             Decimal?         @db.Decimal(9, 4)
+  total                  Decimal          @db.Decimal(18, 4)
+  lateDeliveryClause     String?
+  inspectionRequired     Boolean          @default(false)
+  markingInstructions    String?
+  holdUntilClientAdvance Boolean          @default(true)
+  /// Worked back from the client delivery date (194).
+  readyDateRequested     DateTime?        @db.Date
+  readyDatePromised      DateTime?        @db.Date
+  readyDateCurrent       DateTime?        @db.Date
+  ackRequestedBy         DateTime?        @db.Date
+  acknowledgedAt         DateTime?        @db.Timestamptz(3)
+  ackDocumentId          String?          @db.Uuid
+  proformaDocumentId     String?          @db.Uuid
+  approvalActionId       String?          @db.Uuid
+  approvedById           String?          @db.Uuid
+  approvedBy             User?            @relation("SupplierPoApprovedBy", fields: [approvedById], references: [id])
+  approvedAt             DateTime?        @db.Timestamptz(3)
+  sentAt                 DateTime?        @db.Timestamptz(3)
+  sentOutboundId         String?          @db.Uuid
+  documentId             String?          @unique @db.Uuid
+  replacesId             String?          @db.Uuid
+  replaces               SupplierPo?      @relation("PoReplacement", fields: [replacesId], references: [id])
+  replacedBy             SupplierPo[]     @relation("PoReplacement")
+  cancelledAt            DateTime?        @db.Timestamptz(3)
+  cancelReason           String?
+  version                Int              @default(0)
+  createdAt              DateTime         @default(now()) @db.Timestamptz(3)
+  updatedAt              DateTime         @updatedAt @db.Timestamptz(3)
+
+  lines       SupplierPoLine[]
+  matchIssues OrderMatchIssue[]
+  chaseEvents SupplierChaseEvent[]
+  inspections Inspection[]
+  invoices    SupplierInvoice[]
+  payments    SupplierPayment[]
+
+  @@index([orderId])
+  @@index([supplierId])
+  @@index([status, readyDateCurrent])
+  @@map("supplier_po")
+  @@schema("ops")
+}
+
+model SupplierPoLine {
+  id             String          @id @default(uuid(7)) @db.Uuid
+  supplierPoId   String          @db.Uuid
+  supplierPo     SupplierPo      @relation(fields: [supplierPoId], references: [id], onDelete: Cascade)
+  orderLineId    String          @db.Uuid
+  orderLine      OrderLine       @relation(fields: [orderLineId], references: [id])
+  position       Int
+  description    String
+  partNo         String?
+  qty            Decimal         @db.Decimal(18, 4)
+  unitPrice      Decimal         @db.Decimal(18, 4)
+  amount         Decimal         @db.Decimal(18, 4)
+  readyDate      DateTime?       @db.Date
+  ackQty         Decimal?        @db.Decimal(18, 4)
+  ackUnitPrice   Decimal?        @db.Decimal(18, 4)
+  ackDescription String?
+  matchStatus    LineMatchStatus @default(pending)
+
+  @@unique([supplierPoId, position])
+  @@map("supplier_po_line")
+  @@schema("ops")
+}
+
+/// Supplier order matching: client PO → RFQ → offer → our PO → ack → proforma → invoice (71, 200).
+model OrderMatchIssue {
+  id               String           @id @default(uuid(7)) @db.Uuid
+  supplierPoId     String           @db.Uuid
+  supplierPo       SupplierPo       @relation(fields: [supplierPoId], references: [id], onDelete: Cascade)
+  supplierPoLineId String?          @db.Uuid
+  /// e.g. facing, packing_charge, incoterm, ready_date, invoice_total
+  field            String
+  expected         String?
+  found            String?
+  sourceDocumentId String?          @db.Uuid
+  amountDelta      Decimal?         @db.Decimal(18, 4)
+  status           MatchIssueStatus @default(open)
+  resolution       String?
+  decidedById      String?          @db.Uuid
+  decidedAt        DateTime?        @db.Timestamptz(3)
+  createdAt        DateTime         @default(now()) @db.Timestamptz(3)
+
+  @@index([supplierPoId, status])
+  @@map("order_match_issue")
+  @@schema("ops")
+}
+
+model SupplierChaseEvent {
+  id           String         @id @default(uuid(7)) @db.Uuid
+  supplierPoId String         @db.Uuid
+  supplierPo   SupplierPo     @relation(fields: [supplierPoId], references: [id], onDelete: Cascade)
+  at           DateTime       @db.Timestamptz(3)
+  kind         ChaseEventKind
+  text         String?
+  readyDate    DateTime?      @db.Date
+  messageId    String?        @db.Uuid
+  actionId     String?        @db.Uuid
+
+  @@index([supplierPoId, at])
+  @@map("supplier_chase_event")
+  @@schema("ops")
+}
+
+model Inspection {
+  id               String           @id @default(uuid(7)) @db.Uuid
+  supplierPoId     String           @db.Uuid
+  supplierPo       SupplierPo       @relation(fields: [supplierPoId], references: [id])
+  location         String?
+  scheduledAt      DateTime?        @db.Timestamptz(3)
+  bookedAt         DateTime?        @db.Timestamptz(3)
+  inspectorKind    InspectorKind
+  inspectorName    String?
+  status           InspectionStatus @default(planned)
+  decisionNote     String?
+  decidedById      String?          @db.Uuid
+  decidedAt        DateTime?        @db.Timestamptz(3)
+  reinspectionOfId String?          @db.Uuid
+  reinspectionOf   Inspection?      @relation("Reinspection", fields: [reinspectionOfId], references: [id])
+  reinspections    Inspection[]     @relation("Reinspection")
+  reworkReadyBy    DateTime?        @db.Date
+  cost             Decimal?         @db.Decimal(18, 4)
+  costCurrency     String?          @db.Char(3)
+  costAllocation   CostAllocation?
+  photoFileIds     String[]         @db.Uuid
+  createdAt        DateTime         @default(now()) @db.Timestamptz(3)
+
+  items     InspectionItem[]
+  docChecks InspectionDocumentCheck[]
+
+  @@index([supplierPoId])
+  @@map("inspection")
+  @@schema("ops")
+}
+
+model InspectionItem {
+  id           String       @id @default(uuid(7)) @db.Uuid
+  inspectionId String       @db.Uuid
+  inspection   Inspection   @relation(fields: [inspectionId], references: [id], onDelete: Cascade)
+  name         String
+  pointType    ItpPointType
+  result       ItpResult    @default(open)
+  note         String?
+  position     Int
+
+  @@index([inspectionId])
+  @@map("inspection_item")
+  @@schema("ops")
+}
+
+model InspectionDocumentCheck {
+  id           String              @id @default(uuid(7)) @db.Uuid
+  inspectionId String              @db.Uuid
+  inspection   Inspection          @relation(fields: [inspectionId], references: [id], onDelete: Cascade)
+  documentKind DocumentKind
+  against      String?
+  documentId   String?             @db.Uuid
+  status       InspectionDocStatus @default(pending)
+  checkResult  String?
+  ok           Boolean?
+  dueAt        DateTime?           @db.Date
+
+  @@index([inspectionId])
+  @@map("inspection_document_check")
+  @@schema("ops")
+}
+
+model FreightQuote {
+  id               String             @id @default(uuid(7)) @db.Uuid
+  orderId          String             @db.Uuid
+  order            Order              @relation(fields: [orderId], references: [id])
+  shipmentId       String?            @db.Uuid
+  forwarderId      String             @db.Uuid
+  forwarder        Company            @relation(fields: [forwarderId], references: [id])
+  forwarderRef     String?
+  mode             FreightMode
+  route            String?
+  transitDays      Int?
+  etaDate          DateTime?          @db.Date
+  amount           Decimal            @db.Decimal(18, 4)
+  currency         String             @db.Char(3)
+  amountUsd        Decimal?           @db.Decimal(18, 4)
+  /// { pickup, exportClearance, insurance, uaeCustoms, delivery }
+  includes         Json
+  validUntil       DateTime?          @db.Date
+  sourceDocumentId String?            @db.Uuid
+  status           FreightQuoteStatus @default(received)
+  selectedById     String?            @db.Uuid
+  createdAt        DateTime           @default(now()) @db.Timestamptz(3)
+
+  shipments Shipment[]
+
+  @@index([orderId])
+  @@map("freight_quote")
+  @@schema("ops")
+}
+
+model Shipment {
+  id                 String              @id @default(uuid(7)) @db.Uuid
+  orderId            String              @db.Uuid
+  order              Order               @relation(fields: [orderId], references: [id])
+  /// "A", "B" …; documents numbered -01, -02.
+  label              String
+  seq                Int
+  status             ShipmentStatus      @default(planned)
+  mode               FreightMode?
+  forwarderId        String?             @db.Uuid
+  forwarder          Company?            @relation("ShipmentForwarder", fields: [forwarderId], references: [id])
+  freightQuoteId     String?             @db.Uuid
+  freightQuote       FreightQuote?       @relation(fields: [freightQuoteId], references: [id])
+  cases              Int?
+  grossKg            Decimal?            @db.Decimal(18, 4)
+  volumeM3           Decimal?            @db.Decimal(18, 4)
+  plannedCollectAt   DateTime?           @db.Date
+  eta                DateTime?           @db.Date
+  awbNumber          String?
+  blNumber           String?
+  /// Shown to the client only if Krishan adds it.
+  clientTrackingNo   String?
+  clientConsent      ClientConsent       @default(not_needed)
+  extraFreightAmount Decimal?            @db.Decimal(18, 4)
+  extraFreightCcy    String?             @db.Char(3)
+  extraFreightPolicy ExtraFreightPolicy?
+  // Ex-Dubai collection (195)
+  carrierName        String?
+  driverName         String?
+  driverPhone        String?
+  vehicleNo          String?
+  collectionWindow   String?
+  collectedAt        DateTime?           @db.Timestamptz(3)
+  // Proof of delivery (45)
+  deliveredAt        DateTime?           @db.Timestamptz(3)
+  podReceivedBy      String?
+  podStampPresent    Boolean?
+  deliveryCondition  DeliveryCondition?
+  deliveryRemarks    Json?
+  createdAt          DateTime            @default(now()) @db.Timestamptz(3)
+  updatedAt          DateTime            @updatedAt @db.Timestamptz(3)
+
+  lines           ShipmentLine[]
+  events          ShipmentEvent[]
+  receivingCounts ReceivingCount[]
+  shippingDocs    ShippingDocRequirement[]
+  claims          Claim[]
+  clientInvoices  ClientInvoice[]
+
+  @@unique([orderId, label])
+  @@map("shipment")
+  @@schema("ops")
+}
+
+model ShipmentLine {
+  shipmentId  String    @db.Uuid
+  shipment    Shipment  @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  orderLineId String    @db.Uuid
+  orderLine   OrderLine @relation(fields: [orderLineId], references: [id])
+  qty         Decimal   @db.Decimal(18, 4)
+
+  @@id([shipmentId, orderLineId])
+  @@map("shipment_line")
+  @@schema("ops")
+}
+
+model ShipmentEvent {
+  id            String   @id @default(uuid(7)) @db.Uuid
+  shipmentId    String   @db.Uuid
+  shipment      Shipment @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  at            DateTime @db.Timestamptz(3)
+  kind          String
+  location      String?
+  text          String?
+  /// Whether the client status page may show it (never supplier/forwarder names).
+  clientVisible Boolean  @default(false)
+
+  @@index([shipmentId, at])
+  @@map("shipment_event")
+  @@schema("ops")
+}
+
+/// Receiving check at the forwarder's warehouse (195).
+model ReceivingCount {
+  id           String    @id @default(uuid(7)) @db.Uuid
+  shipmentId   String    @db.Uuid
+  shipment     Shipment  @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  orderLineId  String    @db.Uuid
+  orderLine    OrderLine @relation(fields: [orderLineId], references: [id])
+  poQty        Decimal   @db.Decimal(18, 4)
+  countedQty   Decimal   @db.Decimal(18, 4)
+  photoFileIds String[]  @db.Uuid
+  note         String?
+  countedAt    DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@index([shipmentId])
+  @@map("receiving_count")
+  @@schema("ops")
+}
+
+/// Shipping document checklist per order/shipment (44).
+model ShippingDocRequirement {
+  id             String            @id @default(uuid(7)) @db.Uuid
+  orderId        String            @db.Uuid
+  order          Order             @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  shipmentId     String?           @db.Uuid
+  shipment       Shipment?         @relation(fields: [shipmentId], references: [id])
+  documentKind   DocumentKind
+  issuer         DocIssuer
+  requiredCount  Int               @default(1)
+  receivedCount  Int               @default(0)
+  status         ShippingDocStatus @default(awaited)
+  documentIds    String[]          @db.Uuid
+  clientRequired Boolean           @default(false)
+  note           String?
+
+  @@index([orderId])
+  @@map("shipping_doc_requirement")
+  @@schema("ops")
+}
+
+model Claim {
+  id                     String              @id @default(uuid(7)) @db.Uuid
+  orderId                String              @db.Uuid
+  order                  Order               @relation(fields: [orderId], references: [id])
+  shipmentId             String?             @db.Uuid
+  shipment               Shipment?           @relation(fields: [shipmentId], references: [id])
+  orderLineId            String?             @db.Uuid
+  orderLine              OrderLine?          @relation(fields: [orderLineId], references: [id])
+  qtyAffected            Decimal?            @db.Decimal(18, 4)
+  description            String
+  clientLetterDocumentId String?             @db.Uuid
+  indusPosition          IndusClaimPosition?
+  status                 ClaimStatus         @default(open)
+  replacementCost        Decimal?            @db.Decimal(18, 4)
+  replacementCcy         String?             @db.Char(3)
+  netCostAed             Decimal?            @db.Decimal(18, 4)
+  creditNoteId           String?             @db.Uuid
+  openedAt               DateTime            @default(now()) @db.Timestamptz(3)
+  resolvedAt             DateTime?           @db.Timestamptz(3)
+
+  parties ClaimParty[]
+
+  @@index([orderId])
+  @@map("claim")
+  @@schema("ops")
+}
+
+model ClaimParty {
+  id             String         @id @default(uuid(7)) @db.Uuid
+  claimId        String         @db.Uuid
+  claim          Claim          @relation(fields: [claimId], references: [id], onDelete: Cascade)
+  kind           ClaimPartyKind
+  companyId      String?        @db.Uuid
+  company        Company?       @relation(fields: [companyId], references: [id])
+  reference      String?
+  amountClaimed  Decimal?       @db.Decimal(18, 4)
+  currency       String?        @db.Char(3)
+  status         ClaimStatus    @default(open)
+  sentOutboundId String?        @db.Uuid
+  note           String?
+
+  @@index([claimId])
+  @@map("claim_party")
+  @@schema("ops")
+}
+
+/// Estimate vs actual per cost line (73).
+model OrderCost {
+  id               String        @id @default(uuid(7)) @db.Uuid
+  orderId          String        @db.Uuid
+  order            Order         @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  kind             OrderCostKind
+  label            String?
+  estimateAed      Decimal?      @db.Decimal(18, 4)
+  actualAmount     Decimal?      @db.Decimal(18, 4)
+  actualCurrency   String?       @db.Char(3)
+  actualAed        Decimal?      @db.Decimal(18, 4)
+  sourceDocumentId String?       @db.Uuid
+  zohoBillId       String?
+  bookedAt         DateTime?     @db.Timestamptz(3)
+  note             String?
+
+  @@index([orderId])
+  @@map("order_cost")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// DOCUMENTS AND FILES
+// ═════════════════════════════════════════════════════════════════════════════
+
+/// An object in a private Supabase Storage bucket.
+model StoredFile {
+  id           String     @id @default(uuid(7)) @db.Uuid
+  /// Private buckets (architecture C29): ops-mail (Gmail attachments), ops-documents (produced and
+  /// received documents), ops-uploads (manual, client and supplier uploads), ops-company (company
+  /// documents), ops-imports (history-import files), ops-evals (Assistant evaluation sets),
+  /// ops-backup (exports and backups).
+  bucket       String     @default("ops-documents")
+  path         String
+  filename     String
+  mimeType     String
+  sizeBytes    Int
+  sha256       String
+  pageCount    Int?
+  source       FileSource
+  uploadedById String?    @db.Uuid
+  createdAt    DateTime   @default(now()) @db.Timestamptz(3)
+  purgedAt     DateTime?  @db.Timestamptz(3)
+
+  mailAttachments     MailAttachment[]
+  outboundAttachments OutboundAttachment[]
+  complianceDocs      ComplianceDocument[]
+  documentVersions    DocumentVersion[]
+  texts               DocumentText[]
+
+  @@unique([bucket, path])
+  @@index([sha256])
+  @@map("stored_file")
+  @@schema("ops")
+}
+
+/// Every A4 document the console produces or receives.
+model Document {
+  id              String            @id @default(uuid(7)) @db.Uuid
+  kind            DocumentKind
+  direction       DocumentDirection
+  /// Display number: INDUS/OA1088, INDUS/PI1142-R1, AWB-Q-11872 …
+  number          String?
+  revision        Int               @default(1)
+  enquiryId       String?           @db.Uuid
+  enquiry         Enquiry?          @relation(fields: [enquiryId], references: [id])
+  orderId         String?           @db.Uuid
+  order           Order?            @relation(fields: [orderId], references: [id])
+  subjectType     RecordType?
+  subjectId       String?           @db.Uuid
+  companyId       String?           @db.Uuid
+  status          DocumentStatus
+  currentVersion  Int               @default(1)
+  supersedesId    String?           @unique @db.Uuid
+  supersedes      Document?         @relation("DocumentReissue", fields: [supersedesId], references: [id])
+  supersededBy    Document?         @relation("DocumentReissue")
+  reissueReason   ReissueReason?
+  reissueNote     String?
+  cancelledAt     DateTime?         @db.Timestamptz(3)
+  cancelledById   String?           @db.Uuid
+  issuedAt        DateTime?         @db.Timestamptz(3)
+  sentAt          DateTime?         @db.Timestamptz(3)
+  shareOnline     Boolean           @default(false)
+  /// Fields read from a received document, each with a source highlight.
+  extractedFields Json?
+  sourceMessageId String?           @db.Uuid
+  zohoId          String?
+  createdAt       DateTime          @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime          @updatedAt @db.Timestamptz(3)
+
+  versions   DocumentVersion[]
+  shareLinks ShareLink[]
+
+  @@unique([kind, number, revision])
+  @@index([enquiryId])
+  @@index([orderId])
+  @@index([subjectType, subjectId])
+  @@map("document")
+  @@schema("ops")
+}
+
+/// Produced documents render from a data snapshot through one template.
+model DocumentVersion {
+  id             String            @id @default(uuid(7)) @db.Uuid
+  documentId     String            @db.Uuid
+  document       Document          @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  version        Int
+  fileId         String?           @db.Uuid
+  file           StoredFile?       @relation(fields: [fileId], references: [id])
+  templateId     String?           @db.Uuid
+  template       DocumentTemplate? @relation(fields: [templateId], references: [id])
+  dataSnapshot   Json?
+  watermark      String?
+  note           String?
+  /// "Sent to client" marker: the outbound email this version left in.
+  sentOutboundId String?           @db.Uuid
+  createdByKind  ActorKind
+  createdById    String?           @db.Uuid
+  createdAt      DateTime          @default(now()) @db.Timestamptz(3)
+
+  @@unique([documentId, version])
+  @@map("document_version")
+  @@schema("ops")
+}
+
+/// Extracted text per page, for attachment search and Why? highlights.
+model DocumentText {
+  id        String                   @id @default(uuid(7)) @db.Uuid
+  fileId    String                   @db.Uuid
+  file      StoredFile               @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  page      Int
+  text      String
+  /// Word boxes for highlight rendering: [{ t, x, y, w, h }]
+  layout    Json?
+  searchTsv Unsupported("tsvector")?
+
+  @@unique([fileId, page])
+  @@map("document_text")
+  @@schema("ops")
+}
+
+/// Signed client link: opens one document (or the order status page) only.
+model ShareLink {
+  id                String    @id @default(uuid(7)) @db.Uuid
+  documentId        String?   @db.Uuid
+  document          Document? @relation(fields: [documentId], references: [id])
+  orderId           String?   @db.Uuid
+  order             Order?    @relation(fields: [orderId], references: [id])
+  /// sha256 of the random token; the token itself is only in the URL.
+  tokenHash         String    @unique
+  pathPrefix        String
+  expiresAt         DateTime  @db.Timestamptz(3)
+  revokedAt         DateTime? @db.Timestamptz(3)
+  regeneratedFromId String?   @db.Uuid
+  createdById       String?   @db.Uuid
+  createdAt         DateTime  @default(now()) @db.Timestamptz(3)
+
+  events      ShareLinkEvent[]
+  submissions ClientPortalSubmission[]
+
+  @@index([documentId])
+  @@index([orderId])
+  @@map("share_link")
+  @@schema("ops")
+}
+
+model ShareLinkEvent {
+  id          String         @id @default(uuid(7)) @db.Uuid
+  linkId      String         @db.Uuid
+  link        ShareLink      @relation(fields: [linkId], references: [id], onDelete: Cascade)
+  kind        ShareEventKind
+  at          DateTime       @default(now()) @db.Timestamptz(3)
+  deviceHash  String?
+  isNewDevice Boolean        @default(false)
+  city        String?
+  country     String?        @db.Char(2)
+
+  @@index([linkId, at])
+  @@map("share_link_event")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// MONEY (Zoho Books is the ledger; these are mirrors and drafts)
+// ═════════════════════════════════════════════════════════════════════════════
+
+model ClientInvoice {
+  id              String              @id @default(uuid(7)) @db.Uuid
+  kind            ClientInvoiceKind
+  number          String?             @unique
+  orderId         String              @db.Uuid
+  order           Order               @relation(fields: [orderId], references: [id])
+  shipmentId      String?             @db.Uuid
+  shipment        Shipment?           @relation(fields: [shipmentId], references: [id])
+  clientId        String              @db.Uuid
+  client          Company             @relation(fields: [clientId], references: [id])
+  currency        String              @db.Char(3)
+  subtotal        Decimal             @db.Decimal(18, 4)
+  vatAmount       Decimal             @default(0) @db.Decimal(18, 4)
+  vatAmountAed    Decimal?            @db.Decimal(18, 4)
+  fxRateToAed     Decimal?            @db.Decimal(20, 10)
+  total           Decimal             @db.Decimal(18, 4)
+  advanceDeducted Decimal             @default(0) @db.Decimal(18, 4)
+  amountDue       Decimal             @db.Decimal(18, 4)
+  amountPaid      Decimal             @default(0) @db.Decimal(18, 4)
+  issuedAt        DateTime?           @db.Date
+  dueAt           DateTime?           @db.Date
+  status          ClientInvoiceStatus @default(draft)
+  creditNoteForId String?             @db.Uuid
+  creditNoteFor   ClientInvoice?      @relation("CreditNote", fields: [creditNoteForId], references: [id])
+  creditNotes     ClientInvoice[]     @relation("CreditNote")
+  disputeReason   String?
+  remindersPaused Boolean             @default(false)
+  writtenOffAt    DateTime?           @db.Timestamptz(3)
+  writtenOffById  String?             @db.Uuid
+  writeOffReason  String?
+  documentId      String?             @unique @db.Uuid
+  zohoInvoiceId   String?             @unique
+  zohoSyncedAt    DateTime?           @db.Timestamptz(3)
+  createdAt       DateTime            @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime            @updatedAt @db.Timestamptz(3)
+
+  allocations    PaymentAllocation[]
+  exportEvidence ExportEvidence[]
+
+  @@index([orderId])
+  @@index([status, dueAt])
+  @@index([clientId])
+  @@map("client_invoice")
+  @@schema("ops")
+}
+
+/// Payment received, pulled from Zoho (no bank feed in v1).
+model PaymentReceived {
+  id            String                  @id @default(uuid(7)) @db.Uuid
+  zohoPaymentId String?                 @unique
+  clientId      String?                 @db.Uuid
+  client        Company?                @relation(fields: [clientId], references: [id])
+  amount        Decimal                 @db.Decimal(18, 4)
+  currency      String                  @db.Char(3)
+  bankRateToAed Decimal?                @db.Decimal(20, 10)
+  receivedAt    DateTime                @db.Date
+  reference     String?
+  payeeEntity   String?
+  status        PaymentAllocationStatus @default(unallocated)
+  manualById    String?                 @db.Uuid
+  createdAt     DateTime                @default(now()) @db.Timestamptz(3)
+
+  allocations PaymentAllocation[]
+
+  @@index([status])
+  @@map("payment_received")
+  @@schema("ops")
+}
+
+model PaymentAllocation {
+  paymentId         String          @db.Uuid
+  payment           PaymentReceived @relation(fields: [paymentId], references: [id], onDelete: Cascade)
+  invoiceId         String          @db.Uuid
+  invoice           ClientInvoice   @relation(fields: [invoiceId], references: [id])
+  amount            Decimal         @db.Decimal(18, 4)
+  /// Short-paid difference absorbed as bank charges (≥ 95% rule).
+  absorbedShortfall Decimal         @default(0) @db.Decimal(18, 4)
+
+  @@id([paymentId, invoiceId])
+  @@map("payment_allocation")
+  @@schema("ops")
+}
+
+model SupplierInvoice {
+  id             String                @id @default(uuid(7)) @db.Uuid
+  supplierPoId   String                @db.Uuid
+  supplierPo     SupplierPo            @relation(fields: [supplierPoId], references: [id])
+  supplierId     String                @db.Uuid
+  supplier       Company               @relation(fields: [supplierId], references: [id])
+  number         String?
+  amount         Decimal?              @db.Decimal(18, 4)
+  currency       String?               @db.Char(3)
+  receivedAt     DateTime?             @db.Timestamptz(3)
+  documentId     String?               @db.Uuid
+  status         SupplierInvoiceStatus @default(awaited)
+  mismatchAmount Decimal?              @db.Decimal(18, 4)
+  mismatchNote   String?
+  zohoBillId     String?               @unique
+
+  @@index([supplierPoId])
+  @@map("supplier_invoice")
+  @@schema("ops")
+}
+
+/// The Assistant prepares and checks; Krishan approves and pays at the bank.
+model SupplierPayment {
+  id              String                @id @default(uuid(7)) @db.Uuid
+  supplierPoId    String                @db.Uuid
+  supplierPo      SupplierPo            @relation(fields: [supplierPoId], references: [id])
+  supplierId      String                @db.Uuid
+  supplier        Company               @relation(fields: [supplierId], references: [id])
+  kind            SupplierPaymentKind
+  amount          Decimal               @db.Decimal(18, 4)
+  currency        String                @db.Char(3)
+  trigger         PaymentTrigger
+  triggerDays     Int?
+  triggerMetAt    DateTime?             @db.Timestamptz(3)
+  dueAt           DateTime?             @db.Date
+  status          SupplierPaymentStatus @default(draft)
+  /// [{ key: po_match|proforma_match|invoice_match|advance_paid|trigger_met|inspection_released|bank_verified|screening, status: pass|fail|pending, ref }]
+  checks          Json                  @default("[]")
+  blockedReason   String?
+  bankAccountId   String?               @db.Uuid
+  bankAccount     SupplierBankAccount?  @relation(fields: [bankAccountId], references: [id])
+  fxRateAtQuoting Decimal?              @db.Decimal(20, 10)
+  fxRateToday     Decimal?              @db.Decimal(20, 10)
+  requestedByKind ActorKind
+  requestedById   String?               @db.Uuid
+  approvedById    String?               @db.Uuid
+  approvedBy      User?                 @relation("PaymentApprovedBy", fields: [approvedById], references: [id])
+  approvedAt      DateTime?             @db.Timestamptz(3)
+  /// Entered by a person after paying at the bank, or matched from Zoho.
+  paidAt          DateTime?             @db.Timestamptz(3)
+  releasedById    String?               @db.Uuid
+  bankReference   String?
+  zohoPaymentId   String?               @unique
+  createdAt       DateTime              @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime              @updatedAt @db.Timestamptz(3)
+
+  @@index([status, dueAt])
+  @@index([supplierPoId])
+  @@map("supplier_payment")
+  @@schema("ops")
+}
+
+/// Zero-rated export evidence (203).
+model ExportEvidence {
+  id         String             @id @default(uuid(7)) @db.Uuid
+  invoiceId  String             @db.Uuid
+  invoice    ClientInvoice      @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  kind       ExportEvidenceKind
+  status     EvidenceStatus     @default(missing)
+  reference  String?
+  documentId String?            @db.Uuid
+
+  @@unique([invoiceId, kind])
+  @@map("export_evidence")
+  @@schema("ops")
+}
+
+model MonthClose {
+  period     String           @id
+  status     MonthCloseStatus @default(open)
+  checks     Json             @default("[]")
+  summary    Json?
+  closedById String?          @db.Uuid
+  closedAt   DateTime?        @db.Timestamptz(3)
+  packSentAt DateTime?        @db.Timestamptz(3)
+
+  @@map("month_close")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// ASSISTANT, AUDIT, AI COST
+// ═════════════════════════════════════════════════════════════════════════════
+
+/// The heart of the audit trail (P06). Rows are never deleted; only the
+/// lifecycle columns may change (enforced by trigger), and every change is
+/// also written to assistant_action_event.
+model AssistantAction {
+  id             String             @id @default(uuid(7)) @db.Uuid
+  /// A-26-09-23-0412
+  ref            String             @unique
+  actionKey      String
+  def            AutopilotActionDef @relation(fields: [actionKey], references: [key])
+  levelAtTime    AutopilotLevel
+  /// Guardrail keys that forced this into Review.
+  guardrails     String[]
+  enquiryId      String?            @db.Uuid
+  enquiry        Enquiry?           @relation(fields: [enquiryId], references: [id])
+  subjectType    RecordType?
+  subjectId      String?            @db.Uuid
+  // Proposal (immutable once written)
+  headline       String
+  /// [{ text, source: { type, id, url, page, span } }]
+  reasons        Json
+  preview        Json?
+  /// [{ label, status: pass|warn|fail, detail }]
+  checks         Json?
+  confidence     Confidence?
+  unsureAbout    String?
+  onApproveText  String?
+  /// Judgement-call options (107): [{ key, label, consequence }]
+  options        Json?
+  inputs         Json?
+  output         Json?
+  // Lifecycle (mutable)
+  state          ActionState
+  chosenOption   String?
+  editDiff       Json?
+  rejectReason   String?
+  laterUntil     DateTime?          @db.Timestamptz(3)
+  decidedById    String?            @db.Uuid
+  decidedBy      User?              @relation("ActionDecidedBy", fields: [decidedById], references: [id])
+  decidedAt      DateTime?          @db.Timestamptz(3)
+  undoUntil      DateTime?          @db.Timestamptz(3)
+  doneAt         DateTime?          @db.Timestamptz(3)
+  failureReason  String?
+  retryOfId      String?            @db.Uuid
+  correctionOfId String?            @db.Uuid
+  correctionOf   AssistantAction?   @relation("Correction", fields: [correctionOfId], references: [id])
+  corrections    AssistantAction[]  @relation("Correction")
+  revertOfId     String?            @db.Uuid
+  batchKey       String?
+  costUsd        Decimal            @default(0) @db.Decimal(12, 6)
+  createdAt      DateTime           @default(now()) @db.Timestamptz(3)
+  updatedAt      DateTime           @updatedAt @db.Timestamptz(3)
+
+  events             AssistantActionEvent[]
+  aiCalls            AiCall[]
+  outbound           OutboundEmail[]
+  preferenceEvidence PreferenceEvidence[]
+
+  @@index([state, createdAt])
+  @@index([enquiryId, createdAt])
+  @@index([actionKey, createdAt])
+  @@index([subjectType, subjectId])
+  @@index([undoUntil])
+  @@map("assistant_action")
+  @@schema("ops")
+}
+
+/// Append-only: one row per state transition (INSERT-only grant).
+model AssistantActionEvent {
+  id        String          @id @default(uuid(7)) @db.Uuid
+  actionId  String          @db.Uuid
+  action    AssistantAction @relation(fields: [actionId], references: [id])
+  fromState ActionState?
+  toState   ActionState
+  actorKind ActorKind
+  actorId   String?         @db.Uuid
+  note      String?
+  at        DateTime        @default(now()) @db.Timestamptz(3)
+
+  @@index([actionId, at])
+  @@map("assistant_action_event")
+  @@schema("ops")
+}
+
+/// One row per model call; the budget and Cost & limits (101) read this.
+model AiCall {
+  id               String           @id @default(uuid(7)) @db.Uuid
+  actionId         String?          @db.Uuid
+  action           AssistantAction? @relation(fields: [actionId], references: [id])
+  enquiryId        String?          @db.Uuid
+  purpose          AiPurpose
+  model            String
+  inputTokens      Int
+  outputTokens     Int
+  cacheReadTokens  Int              @default(0)
+  cacheWriteTokens Int              @default(0)
+  webSearches      Int              @default(0)
+  costUsd          Decimal          @db.Decimal(12, 6)
+  latencyMs        Int?
+  ok               Boolean          @default(true)
+  error            String?
+  at               DateTime         @default(now()) @db.Timestamptz(3)
+
+  @@index([at])
+  @@index([enquiryId, purpose])
+  @@map("ai_call")
+  @@schema("ops")
+}
+
+/// Append-only field-level history for every record (113). INSERT-only grant.
+model ActivityEvent {
+  id          String       @id @default(uuid(7)) @db.Uuid
+  at          DateTime     @default(now()) @db.Timestamptz(3)
+  actorKind   ActorKind
+  actorId     String?      @db.Uuid
+  actionId    String?      @db.Uuid
+  enquiryId   String?      @db.Uuid
+  enquiry     Enquiry?     @relation(fields: [enquiryId], references: [id])
+  subjectType RecordType
+  subjectId   String       @db.Uuid
+  kind        ActivityKind
+  field       String?
+  before      Json?
+  after       Json?
+  note        String?
+  /// Hidden from a Helper without canSeeMargins (margin, cost, sell).
+  sensitive   Boolean      @default(false)
+
+  @@index([enquiryId, at])
+  @@index([subjectType, subjectId, at])
+  @@map("activity_event")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// WORK AND ATTENTION
+// ═════════════════════════════════════════════════════════════════════════════
+
+model Task {
+  id                String      @id @default(uuid(7)) @db.Uuid
+  title             String
+  kind              TaskKind    @default(general)
+  source            TaskSource  @default(manual)
+  status            TaskStatus  @default(open)
+  dueAt             DateTime?   @db.Timestamptz(3)
+  assigneeId        String?     @db.Uuid
+  assignee          User?       @relation("TaskAssignee", fields: [assigneeId], references: [id])
+  enquiryId         String?     @db.Uuid
+  enquiry           Enquiry?    @relation(fields: [enquiryId], references: [id])
+  subjectType       RecordType?
+  subjectId         String?     @db.Uuid
+  notes             String?
+  createdByActionId String?     @db.Uuid
+  createdById       String?     @db.Uuid
+  completedAt       DateTime?   @db.Timestamptz(3)
+  createdAt         DateTime    @default(now()) @db.Timestamptz(3)
+
+  @@index([assigneeId, status, dueAt])
+  @@index([enquiryId])
+  @@map("task")
+  @@schema("ops")
+}
+
+/// Resolves itself when the thing is done (resolvedAt).
+model Notification {
+  id          String               @id @default(uuid(7)) @db.Uuid
+  userId      String               @db.Uuid
+  user        User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event       NotificationEvent
+  severity    NotificationSeverity @default(info)
+  title       String
+  body        String?
+  enquiryId   String?              @db.Uuid
+  enquiry     Enquiry?             @relation(fields: [enquiryId], references: [id])
+  subjectType RecordType?
+  subjectId   String?              @db.Uuid
+  actionUrl   String?
+  /// e.g. "bank_change:<accountId>" — one open notification per thing.
+  dedupeKey   String
+  channels    DeliveryChannel[]
+  createdAt   DateTime             @default(now()) @db.Timestamptz(3)
+  readAt      DateTime?            @db.Timestamptz(3)
+  resolvedAt  DateTime?            @db.Timestamptz(3)
+
+  /// Partial unique in SQL: (userId, dedupeKey) WHERE resolvedAt IS NULL.
+  @@index([userId, dedupeKey])
+  @@index([userId, resolvedAt, createdAt])
+  @@map("notification")
+  @@schema("ops")
+}
+
+model SavedSearch {
+  id         String   @id @default(uuid(7)) @db.Uuid
+  userId     String   @db.Uuid
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name       String
+  queryText  String
+  /// The structured query the Assistant ran, shown to the user (209).
+  structured Json?
+  position   Int      @default(0)
+  createdAt  DateTime @default(now()) @db.Timestamptz(3)
+
+  @@map("saved_search")
+  @@schema("ops")
+}
+
+/// One row per searchable record, maintained by triggers (command bar, 208).
+model SearchDocument {
+  id          String                   @id @default(uuid(7)) @db.Uuid
+  kind        SearchKind
+  recordId    String                   @db.Uuid
+  enquiryId   String?                  @db.Uuid
+  /// Primary reference(s): "ENQ-2026-0419", "INDUS/Q26941-R2 Q26941 26941".
+  refs        String[]
+  title       String
+  body        String?
+  partNosNorm String[]
+  occurredAt  DateTime?                @db.Timestamptz(3)
+  /// Contains margin or cost terms; hidden from a Helper without canSeeMargins.
+  sensitive   Boolean                  @default(false)
+  searchTsv   Unsupported("tsvector")?
+  updatedAt   DateTime                 @updatedAt @db.Timestamptz(3)
+
+  @@unique([kind, recordId])
+  @@index([enquiryId])
+  @@map("search_document")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// HISTORY IMPORT (P07), CHECKLISTS, CUTOVER
+// ═════════════════════════════════════════════════════════════════════════════
+
+model ImportJob {
+  id          String          @id @default(uuid(7)) @db.Uuid
+  sources     ImportSource[]
+  monthsBack  Int             @default(24)
+  exclusions  Json            @default("{}")
+  budgetUsd   Decimal         @db.Decimal(12, 6)
+  costUsd     Decimal         @default(0) @db.Decimal(12, 6)
+  status      ImportJobStatus @default(draft)
+  counters    Json            @default("{}")
+  startedById String?         @db.Uuid
+  startedAt   DateTime?       @db.Timestamptz(3)
+  pausedAt    DateTime?       @db.Timestamptz(3)
+  finishedAt  DateTime?       @db.Timestamptz(3)
+  undoneAt    DateTime?       @db.Timestamptz(3)
+  createdAt   DateTime        @default(now()) @db.Timestamptz(3)
+
+  stages     ImportStage[]
+  candidates ImportCandidate[]
+  records    ImportedRecord[]
+
+  @@map("import_job")
+  @@schema("ops")
+}
+
+model ImportStage {
+  id         String            @id @default(uuid(7)) @db.Uuid
+  jobId      String            @db.Uuid
+  job        ImportJob         @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  key        String
+  label      String
+  status     ImportStageStatus @default(queued)
+  total      Int?
+  done       Int               @default(0)
+  /// Resumable cursor (page token, last id, last date).
+  cursor     Json?
+  position   Int
+  startedAt  DateTime?         @db.Timestamptz(3)
+  finishedAt DateTime?         @db.Timestamptz(3)
+
+  @@unique([jobId, key])
+  @@map("import_stage")
+  @@schema("ops")
+}
+
+/// Staging row proposed for review (118–120). Nothing reaches the live
+/// tables until accepted.
+model ImportCandidate {
+  id           String                @id @default(uuid(7)) @db.Uuid
+  jobId        String                @db.Uuid
+  job          ImportJob             @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  entity       ImportEntity
+  sourceSystem ImportSource
+  sourceKey    String
+  payload      Json
+  confidence   Confidence
+  evidence     Json?
+  flags        Json?
+  status       ImportCandidateStatus @default(pending)
+  mergeWithId  String?               @db.Uuid
+  targetType   RecordType?
+  targetId     String?               @db.Uuid
+  decidedById  String?               @db.Uuid
+  decidedAt    DateTime?             @db.Timestamptz(3)
+
+  @@unique([jobId, entity, sourceSystem, sourceKey])
+  @@index([jobId, entity, status, confidence])
+  @@map("import_candidate")
+  @@schema("ops")
+}
+
+/// Provenance for undo and idempotent re-runs: one row per live record an
+/// import (or the cutover) created.
+model ImportedRecord {
+  id           String       @id @default(uuid(7)) @db.Uuid
+  jobId        String?      @db.Uuid
+  job          ImportJob?   @relation(fields: [jobId], references: [id])
+  sourceSystem ImportSource
+  /// e.g. "public.quotes:5b1e…", "zoho.estimate:4600000123", "gmail:sales:18c…"
+  sourceKey    String
+  recordType   RecordType
+  recordId     String       @db.Uuid
+  createdAt    DateTime     @default(now()) @db.Timestamptz(3)
+  undoneAt     DateTime?    @db.Timestamptz(3)
+
+  @@unique([sourceSystem, sourceKey, recordType])
+  @@index([jobId])
+  @@index([recordType, recordId])
+  @@map("imported_record")
+  @@schema("ops")
+}
+
+/// Setup wizard (78–83), cutover checklist (237), first hour (224).
+model ChecklistItem {
+  id           String              @id @default(uuid(7)) @db.Uuid
+  checklist    ChecklistKind
+  key          String
+  label        String
+  position     Int
+  ownerOnly    Boolean             @default(false)
+  status       ChecklistItemStatus @default(todo)
+  detail       Json?
+  rollbackNote String?
+  doneById     String?             @db.Uuid
+  doneAt       DateTime?           @db.Timestamptz(3)
+
+  @@unique([checklist, key])
+  @@map("checklist_item")
+  @@schema("ops")
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
+// READ-ONLY CATALOGUE VIEWS over the website's `public` schema.
+// Owned by postgres (security definer semantics) so ops_app needs no grant on
+// public tables. Only active products, only the columns Ops needs.
+// ═════════════════════════════════════════════════════════════════════════════
+
+view CatalogueProduct {
+  id           String   @unique
+  sku          String
+  mpn          String?
+  mpnNorm      String?
+  slug         String
+  title        String
+  brandName    String?
+  categoryName String?
+  url          String
+  hsCode       String?
+  weightKg     Decimal? @db.Decimal(8, 3)
+
+  @@map("catalogue_product_v")
+  @@schema("ops")
+}
+
+view CatalogueVariant {
+  partNumber     String @unique
+  partNumberNorm String
+  productId      String
+
+  @@map("catalogue_variant_v")
+  @@schema("ops")
+}
+
+view CatalogueCrossRef {
+  id                String  @unique
+  productId         String
+  competitorBrand   String
+  competitorMpn     String
+  competitorMpnNorm String
+  compatibility     String
+  variantPartNumber String?
+
+  @@map("catalogue_cross_ref_v")
+  @@schema("ops")
+}

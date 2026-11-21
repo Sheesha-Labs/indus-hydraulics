@@ -18,6 +18,8 @@ build
 
 # Prisma
 packages/db/generated
+# Ops client output (prisma generate, packages/ops-db/prisma/schema.prisma)
+packages/ops-db/generated/
 
 # Misc
 .DS_Store

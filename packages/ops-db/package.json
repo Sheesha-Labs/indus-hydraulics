@@ -5,7 +5,14 @@
   "description": "Indus Operations Prisma schema (Postgres schema \"ops\"), client and migrations.",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
+  "imports": {
+    "#ops-client": {
+      "types": "./generated/client/index.d.ts",
+      "default": "./generated/client/index.js"
+    }
+  },
   "scripts": {
+    "postinstall": "prisma generate",
     "typecheck": "bun check --no-script",
     "test": "bun test --parallel --isolate=modules --randomize",
     "db:generate": "prisma generate",
