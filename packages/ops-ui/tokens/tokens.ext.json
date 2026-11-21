@@ -1,0 +1,421 @@
+{
+  "io-stroke-hover": {
+    "value": "oklch(0.75 0.01 255)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Controls/Button secondary + FilterChip hover border"
+  },
+  "io-navy-hover": {
+    "value": "oklch(0.33 0.06 252)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Controls/Button navy hover"
+  },
+  "io-bad-hover-tint": {
+    "value": "oklch(0.985 0.012 28)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Controls/Button danger hover; Table bad row"
+  },
+  "io-bad-hover-line": {
+    "value": "oklch(0.85 0.06 28)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Controls/Button danger hover border"
+  },
+  "io-row-hover": {
+    "value": "oklch(0.985 0.003 250)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Table/Mail row hover; Overlay/Modal footer ground"
+  },
+  "io-flag-row": {
+    "value": "color-mix(in oklch, var(--io-warn-tint) 45%, transparent)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Table flag row"
+  },
+  "io-note-warn": {
+    "value": "color-mix(in oklch, var(--io-warn-tint) 60%, transparent)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Form/Note warn; Assistant Unsure row"
+  },
+  "io-dropzone": {
+    "value": "color-mix(in oklch, var(--io-accent-tint) 50%, transparent)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Form/Dropzone ready"
+  },
+  "io-ok-mark": {
+    "value": "oklch(0.42 0.11 150)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Status check glyph on ok-tint (Check, List, Checks)"
+  },
+  "io-banner-warn-ink": {
+    "value": "oklch(0.36 0.08 62)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "States/Banner warn text"
+  },
+  "io-banner-bad-ink": {
+    "value": "oklch(0.4 0.12 28)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "States/Banner bad text"
+  },
+  "io-banner-ok-ink": {
+    "value": "oklch(0.33 0.08 150)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "States/Banner ok text"
+  },
+  "io-pill-ok-bg": {
+    "value": "oklch(0.955 0.04 150)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Assistant/Pill running ground"
+  },
+  "io-pill-warn-ink": {
+    "value": "oklch(0.42 0.1 62)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Assistant/Pill paused/unsure text"
+  },
+  "io-pill-warn-dot": {
+    "value": "oklch(0.72 0.14 70)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Assistant/Pill paused/unsure dot"
+  },
+  "io-pill-bad-dot": {
+    "value": "oklch(0.58 0.17 28)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Assistant/Pill disconnected dot"
+  },
+  "io-activity-warn": {
+    "value": "oklch(0.7 0.13 70)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Timeline/Activity warn dot"
+  },
+  "io-activity-open": {
+    "value": "oklch(0.7 0.013 250)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Timeline/Activity open-dot ring"
+  },
+  "io-option-sub": {
+    "value": "oklch(0.45 0.014 255)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Assistant/Option sub-text"
+  },
+  "io-highlight-on": {
+    "value": "oklch(0.9 0.05 248)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/Highlight active"
+  },
+  "io-toast-action": {
+    "value": "oklch(0.85 0.06 248)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Overlay/Toast undo link on navy"
+  },
+  "io-scrim": {
+    "value": "oklch(0.35 0.02 255 / .35)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Overlay/Modal, Drawer, CommandBar scrim"
+  },
+  "io-well": {
+    "value": "oklch(0.915 0.008 250)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document viewer well"
+  },
+  "io-doc-rule": {
+    "value": "oklch(0.885 0.008 250)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/A4 row rules"
+  },
+  "io-doc-sign": {
+    "value": "oklch(0.80 0.013 250)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Document/A4 signature line"
+  },
+  "io-mail-ink": {
+    "value": "#202124",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Mail/Email only (recipient's view)"
+  },
+  "io-mail-meta": {
+    "value": "#5f6368",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Mail/Email only (recipient's view)"
+  },
+  "io-mail-rule": {
+    "value": "#e3e5e8",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Mail/Email only (recipient's view)"
+  },
+  "io-mail-font": {
+    "value": "Arial, Helvetica, sans-serif",
+    "kind": "font",
+    "signoff": "awaiting",
+    "source": "Mail/Email only (recipient's view)"
+  },
+  "io-e-toast": {
+    "value": "0 12px 32px rgba(20,28,45,.2)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Overlay/Toast"
+  },
+  "io-e-drawer": {
+    "value": "-12px 0 32px rgba(20,28,45,.12)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Overlay/Drawer"
+  },
+  "io-e-tip": {
+    "value": "0 6px 18px rgba(20,28,45,.18)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Overlay/Tooltip; collapsed-nav tip"
+  },
+  "io-e-raised": {
+    "value": "0 8px 28px rgba(20,28,45,.08)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Assistant/ProposalCard raised"
+  },
+  "io-e-mail": {
+    "value": "0 4px 12px rgba(20,28,45,.08)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Mail/Email rendered"
+  },
+  "io-e-page": {
+    "value": "0 4px 12px rgba(20,28,45,.06), 0 16px 48px rgba(20,28,45,.08)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Document/A4 at full scale"
+  },
+  "io-btn-xs": {
+    "value": "26px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Controls/Button xs (design-tokens.md; missing from tokens.css)"
+  },
+  "io-field": {
+    "value": "36px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Form/Field"
+  },
+  "io-select-inline": {
+    "value": "30px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Controls/Select inline"
+  },
+  "io-row": {
+    "value": "40px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Table/Row"
+  },
+  "io-row-dense": {
+    "value": "32px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Table/Row dense"
+  },
+  "io-row-head": {
+    "value": "34px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Table/Head"
+  },
+  "io-row-group": {
+    "value": "30px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Table/Group row"
+  },
+  "io-chip-sm": {
+    "value": "18px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Status/Chip sm"
+  },
+  "io-chip-lg": {
+    "value": "26px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Status/Chip lg"
+  },
+  "io-tag-action": {
+    "value": "22px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Status/ActionTag"
+  },
+  "io-w-preview": {
+    "value": "360px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T-templates preview pane",
+    "utility": "io-preview"
+  },
+  "io-w-rail": {
+    "value": "330px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T-templates right rail",
+    "utility": "io-rail"
+  },
+  "io-w-queue": {
+    "value": "440px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T-templates queue",
+    "utility": "io-queue"
+  },
+  "io-w-folders": {
+    "value": "210px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Mail folders column",
+    "utility": "io-folders"
+  },
+  "io-w-threads": {
+    "value": "400px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Mail threads column",
+    "utility": "io-threads"
+  },
+  "io-w-subnav": {
+    "value": "220px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Settings subnav",
+    "utility": "io-subnav"
+  },
+  "io-w-label-col": {
+    "value": "260px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Settings label column",
+    "utility": "io-label-col"
+  },
+  "io-w-well": {
+    "value": "560px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Document well width",
+    "utility": "io-well"
+  },
+  "io-w-strip": {
+    "value": "40px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Assistant strip",
+    "utility": "io-strip"
+  },
+  "io-w-exception-main": {
+    "value": "705px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Exception template main",
+    "utility": "io-exception-main"
+  },
+  "io-w-exception-side": {
+    "value": "420px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Exception template side",
+    "utility": "io-exception-side"
+  },
+  "io-r-3": {
+    "value": "3px",
+    "kind": "radius",
+    "signoff": "awaiting",
+    "source": "Table brand tag, Assistant field tag, diff marks (off the radius ladder, Q4)"
+  },
+  "io-r-5": {
+    "value": "5px",
+    "kind": "radius",
+    "signoff": "awaiting",
+    "source": "Controls/Button xs (off the radius ladder, Q4)"
+  },
+  "io-r-7": {
+    "value": "7px",
+    "kind": "radius",
+    "signoff": "awaiting",
+    "source": "Assistant avatar (off the radius ladder, Q4)"
+  },
+  "io-r-8": {
+    "value": "8px",
+    "kind": "radius",
+    "signoff": "awaiting",
+    "source": "Mail/Message, Overlay/Modal consequences box (off the radius ladder, Q4)"
+  },
+  "io-r-9": {
+    "value": "9px",
+    "kind": "radius",
+    "signoff": "awaiting",
+    "source": "States/Empty mark (off the radius ladder, Q4)"
+  },
+  "io-z-sticky": {
+    "value": "10",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-z-panel": {
+    "value": "30",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-z-drawer": {
+    "value": "40",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-z-modal": {
+    "value": "50",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-z-command": {
+    "value": "60",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-z-toast": {
+    "value": "70",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  },
+  "io-z-tooltip": {
+    "value": "80",
+    "kind": "z",
+    "signoff": "awaiting",
+    "source": "Z-order (05 \u00a71.7)"
+  }
+}

@@ -10,10 +10,12 @@
     "./styles/*": "./src/styles/*",
     "./templates": "./src/templates/index.ts",
     "./status": "./src/status/index.ts",
-    "./format": "./src/format/index.ts"
+    "./format": "./src/format/index.ts",
+    "./lib/cn": "./src/lib/cn.ts"
   },
   "scripts": {
     "typecheck": "bun check --no-script",
+    "tokens": "bun scripts/gen-tokens.ts",
     "test": "bun test --parallel --isolate=modules --randomize"
   },
   "peerDependencies": {
@@ -21,12 +23,17 @@
     "react-dom": "^19.0.0"
   },
   "dependencies": {
-    "@indus/ops-core": "workspace:^"
+    "@indus/ops-core": "workspace:^",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@types/culori": "^4.0.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "culori": "^4.0.2",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   }

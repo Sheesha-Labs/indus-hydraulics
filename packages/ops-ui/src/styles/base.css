@@ -1,0 +1,137 @@
+/* Hand-written base for Indus Operations (05 §1.3, §1.5, §1.7). Tokens come from tokens.css; utilities from theme.css. */
+
+html {
+  font-size: 16px;
+}
+
+/* The 13px lives on body, not a wrapper: Radix portals render into body. */
+body {
+  background: var(--io-paper);
+  color: var(--io-ink);
+  font-family: var(--io-sans);
+  font-size: 13px;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::placeholder {
+  color: var(--io-ink-4);
+}
+
+@utility io-eyebrow {
+  font-size: var(--text-io-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--io-ink-3);
+}
+
+/* Instrument Serif has weight 400 only: never bold a serif. */
+@utility io-display {
+  font-family: var(--io-serif);
+  font-weight: 400;
+}
+
+/* Explicit tabular numerals for portals and SVG text. */
+@utility io-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Buttons, chips, tabs, rows, links, toggles. Keyboard focus only; never removed. */
+@utility io-focus {
+  outline: none;
+  &:focus-visible {
+    box-shadow:
+      0 0 0 2px var(--io-card),
+      0 0 0 4px var(--io-accent);
+  }
+}
+
+/* Inputs, search, selects. */
+@utility io-focus-field {
+  outline: none;
+  &:focus-visible,
+  &:focus-within {
+    border-color: var(--io-accent);
+    box-shadow: 0 0 0 3px var(--io-accent-tint);
+  }
+}
+
+@utility io-anim-slide {
+  animation: io-slide-in 180ms ease-out both;
+}
+
+@utility io-spin {
+  animation: io-spin 0.8s linear infinite;
+}
+
+@utility io-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    var(--io-fill) 0%,
+    var(--io-line-2) 50%,
+    var(--io-fill) 100%
+  );
+  background-size: 200% 100%;
+  animation: io-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes io-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes io-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes io-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes io-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Reduced motion: drop translate and scale, keep 100ms fades. Focus indicators are untouched. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    transition-property: opacity, background-color, border-color, color !important;
+    transition-duration: 100ms !important;
+  }
+  .io-anim-slide {
+    animation-name: io-fade !important;
+    animation-duration: 100ms !important;
+  }
+  .io-spin {
+    animation: none !important;
+    border-right-color: currentColor;
+    opacity: 0.55;
+  }
+  .io-shimmer {
+    animation: none !important;
+  }
+}
