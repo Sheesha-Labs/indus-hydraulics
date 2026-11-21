@@ -26,7 +26,6 @@ set -euo pipefail
 # only" and skip a production deploy that ships real code. That failure is
 # silent: the check passes, the merge goes green, and the change simply never
 # reaches the site.
-cd "$(git rev-parse --show-toplevel)"
 
 # ── Rule 1: previews are opt-in ──────────────────────────────────────────────
 # Put [preview] in the commit message when a change wants a preview URL.
