@@ -19,6 +19,7 @@ export default async function SiteFooter() {
 
   const cmsColumns = main?.items ?? []
   const legalLinks = legal?.items ?? []
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const year = new Date().getFullYear()
   // Resolved here, not in the bottom bar below, because the fallback needs the
   // legal entity and the year together and the bar should render a string.

@@ -36,6 +36,7 @@ export default async function UsersPage() {
   // left in place rather than swept — they are the record that an invite was
   // sent and never taken up.
   const pendingRows = await db.staffInvitation.findMany({
+    // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
     where: { purpose: 'invite', activatedAt: null, expiresAt: { gt: new Date() } },
     orderBy: { createdAt: 'desc' },
     select: {

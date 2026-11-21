@@ -63,6 +63,7 @@ export default async function AboutPage({ params }: Props) {
     // Section order, visibility and copy, edited under Pages & Blocks.
     getMasterPageContent('about'),
   ])
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
   // Floor to the nearest 100 so the hero claim never overstates the
   // catalogue — adding SKUs only ever ratchets the number up.

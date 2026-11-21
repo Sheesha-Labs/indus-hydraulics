@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { db } from '@indus/db'
 import { notFound } from 'next/navigation'
 import { buildBreadcrumbLd, buildFaqLd } from '@indus/domain'
@@ -258,9 +259,9 @@ export default async function ShippingPage({ params }: Props) {
           shortage, or non-conformity within seven (7) days. Take photos of damaged packaging and
           contents before unpacking further, and retain all packaging until we confirm next steps.
           Concealed defects must be reported promptly upon discovery. See the{' '}
-          <a className="text-ih-accent hover:underline" href="/returns">
+          <Link className="text-ih-accent hover:underline" href="/returns">
             Returns Policy
-          </a>{' '}
+          </Link>{' '}
           for the RMA process.
         </p>
       </PolicySectionBody>
@@ -272,18 +273,18 @@ export default async function ShippingPage({ params }: Props) {
             sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
-          <a className="text-ih-accent hover:underline" href="/contact">
+          <Link className="text-ih-accent hover:underline" href="/contact">
             contact page
-          </a>
+          </Link>
           .
         </p>
       </PolicySectionBody>
 
       <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 4 (Delivery and risk) of our{' '}
-        <a className="underline" href="/terms">
+        <Link className="underline" href="/terms">
           Terms of Service
-        </a>
+        </Link>
         . Where the Estimate or contract document differs, those take precedence.
       </footer>
     </PolicyLayout>

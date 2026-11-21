@@ -48,6 +48,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
     // Section order, visibility and copy, edited under Pages & Blocks.
     getMasterPageContent('industries'),
   ])
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
 
   const hero = content.values('hero')

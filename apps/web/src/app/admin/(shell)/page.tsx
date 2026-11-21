@@ -37,6 +37,7 @@ export default async function AdminDashboardPage({ params }: Props) {
   const session = await requireStaff()
 
   const firstName = session?.user?.name?.split(' ')[0] ?? 'there'
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const now = new Date()
   const timeOfDay = now.getHours() < 12 ? 'morning' : now.getHours() < 17 ? 'afternoon' : 'evening'
   const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
