@@ -45,7 +45,7 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 /**
  * One row per published article, across the hero sprints — the 30 from
  * PR #271, the 63 commissioned on 2026-08-25, the 139 generated on 2026-10-08,
- * the 28 lifting posts on 2026-10-20, the 14 anchor chain posts on 2026-11-08 and the 6 below-the-hook posts on 2026-11-16, and the 12 drilling rig equipment posts on 2026-11-20. `alt` describes what is
+ * the 28 lifting posts on 2026-10-20, the 14 anchor chain posts on 2026-11-08 and the 6 below-the-hook posts on 2026-11-16, and the 12 drilling rig equipment posts on 2026-11-20, and the 13 search-gap articles on 2026-11-21. `alt` describes what is
  * actually in the frame: it is read aloud by a screen reader and indexed as
  * image text, so it is not the article title repeated.
  *
@@ -556,6 +556,20 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'pipe-wipers-and-mud-guards', alt: 'Drill pipe pulled through a red rubber pipe wiper at the rotary table, a hinged mud guard clamped on a connection', caption: 'A wiper strips the outside of the pipe and a mud guard catches what is inside it: mud saved and a safer floor.' },
   { slug: 'manifold-fitting-pressure-ratings', alt: 'Yellow cast long-sweep elbows, tees, crosses and a gooseneck on pallets in a pipe yard, a welder at a manifold behind', caption: 'The casting is only half the rating: the end connection — threaded, Sch. 80, Sch. 160 or XXS — sets the working pressure.' },
   { slug: 'annular-bop-packing-unit-compounds', alt: 'Three annular BOP packing units with steel inserts, one black and two red, on a pallet with seal kits behind', caption: 'Natural rubber, nitrile or neoprene: the compound is chosen by the mud system and the temperature, not by habit.' },
+  // Search-gap articles, 2026-11-21 (Higgsfield GPT Image 2.6, medium 2k 3:2).
+  { slug: 'what-are-round-slings-used-for', alt: 'Polished machined steel shaft lifted by two orange polyester round slings in a basket hitch, a rigger holding a tag line', caption: 'Round slings earn their place on finished surfaces: the soft sleeve spreads the contact where chain or wire rope would mark it.' },
+  { slug: 'how-to-use-wire-rope-ferrules', alt: 'Wire rope eye on a thimble secured by a pressed ferrule, beside an unpressed ferrule, split press dies and a gauge', caption: 'Ferrule, die and gauge must all match the rope size: a ferrule pressed in the wrong die can look right and hold far less.' },
+  { slug: 'ratchet-straps-vs-tie-downs', alt: 'Wooden crates on a flatbed trailer held by orange ratchet straps hooked to the rail, cam buckle straps coiled on the deck', caption: 'Every ratchet strap is a tie-down, but not every tie-down can be tensioned as hard: the ratchet is the difference.' },
+  { slug: 'what-are-beam-clamps', alt: 'Yellow beam clamp on the bottom flange of a steel I-beam with a manual chain block hung from its shackle', caption: 'A beam clamp makes a temporary lifting point without welding or drilling, sized to the flange width it grips.' },
+  { slug: 'below-the-hook-lifting-device-inspection', alt: 'Inspector with a torch and clipboard checking the lifting lug welds on a yellow spreader beam, shackles and chain beside it', caption: 'Lugs, welds and markings are where a periodic inspection starts, and the record of it is kept with the device.' },
+  { slug: 'what-are-dust-caps-used-for', alt: 'Hydraulic quick couplers on a dusty tractor rear, red, blue, yellow and black dust caps fitted, one hanging open', caption: 'One uncapped coupler in a dusty yard is enough to put grit into the system the next time it connects.' },
+  { slug: 'swivel-joint-types', alt: 'Stainless ball race swivel joint, in-line and 90° live swivels and a hose end on a workshop bench', caption: 'In-line, 90° or ball race: the right swivel depends on whether the line turns under pressure or only while it is handled.' },
+  { slug: 'suction-hose-vs-delivery-hose', alt: 'Site dewatering pump with a black helix suction hose in the pit water and blue lay flat delivery hose from the outlet', caption: 'Suction on the inlet, delivery on the outlet: the helix keeps the suction hose open when the pump pulls a vacuum.' },
+  { slug: 'hose-barb-size-chart', alt: 'Brass and stainless male threaded hose barbs in increasing sizes beside a steel rule, clear braided hose on one barb', caption: 'A barb is sized by the hose bore it fits; the thread on the other end is chosen separately for the port.' },
+  { slug: 'how-a-hose-reel-works', alt: 'Worker winding blue lay flat hose flat and even onto a trailer-mounted steel reel at a pumping site', caption: 'Drained, flat and under even tension: how the hose goes onto the reel decides how it comes off next time.' },
+  { slug: 'stainless-steel-bsp-socket-dimensions', alt: 'Stainless steel threaded sockets and hex couplings in several sizes with a thread pitch gauge and digital caliper', caption: 'The thread standard fixes the pitch and diameter; body length, wall and hex are set by the fitting maker.' },
+  { slug: 'stainless-steel-pipe-nipple-size-chart', alt: 'Stainless steel pipe nipples from close to long, hex and reducing hex nipples in a row, a thread gauge beside them', caption: 'Nominal size, length and schedule describe a nipple; the threads at both ends decide where it fits.' },
+  { slug: 'pneumatic-quick-coupler-types', alt: 'Brass and steel pneumatic quick coupler sockets with matching plugs in pairs, a coiled blue air hose and blow gun behind', caption: 'Couplers of the same nominal size can still refuse each other: the plug profile has to match the socket.' },
 ] as const
 
 /**
