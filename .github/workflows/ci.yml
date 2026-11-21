@@ -24,39 +24,14 @@ jobs:
           # Blobless: history without file contents we never read.
           filter: blob:none
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.0
-          run_install: false
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      # node_modules itself, keyed on the lockfile and the Prisma schema (the
-      # generated client lives in node_modules). main saves it on every push,
-      # and PR runs read main's entry, so a PR that keeps the lockfile hits.
-      - name: Restore node_modules
-        id: nm
-        uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            apps/*/node_modules
-            packages/*/node_modules
-          key: nm-${{ runner.os }}-node20-${{ hashFiles('pnpm-lock.yaml', 'packages/db/prisma/schema.prisma') }}
-
-      - name: Install dependencies
-        if: steps.nm.outputs.cache-hit != 'true'
-        run: pnpm install --frozen-lockfile
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Typecheck and lint
         run: >
           scripts/ci/run-all.sh
-          "typecheck::pnpm turbo typecheck --output-logs=errors-only"
-          "lint::pnpm turbo lint --output-logs=errors-only"
+          "typecheck::bun run typecheck"
+          "lint::bun run lint"
 
   test:
     name: test
@@ -68,33 +43,11 @@ jobs:
         with:
           filter: blob:none
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.0
-          run_install: false
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Restore node_modules
-        id: nm
-        uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            apps/*/node_modules
-            packages/*/node_modules
-          key: nm-${{ runner.os }}-node20-${{ hashFiles('pnpm-lock.yaml', 'packages/db/prisma/schema.prisma') }}
-
-      - name: Install dependencies
-        if: steps.nm.outputs.cache-hit != 'true'
-        run: pnpm install --frozen-lockfile
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Test
-        run: pnpm turbo test --output-logs=errors-only
+        run: bun run test
 
   build:
     name: build
@@ -114,23 +67,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.0
-          run_install: false
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Generate Prisma client
-        run: pnpm db:generate
+          node-version: 24
 
       - name: Build
         # This app needs more than a database at BUILD time, which the first run
@@ -151,7 +94,7 @@ jobs:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_BASE_URL: https://indushydraulics.com
           APP_ENV: production
-        run: pnpm build
+        run: bun run build
 
       - name: Assert the artifact is complete
         # `standalone` does not copy these two, and the failure mode without
