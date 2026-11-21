@@ -9,7 +9,7 @@
   "scripts": {
     "build": "bun run --filter web build",
     "dev": "bun run --filter web dev",
-    "lint": "bun run --filter '*' lint",
+    "lint": "bun lint --no-script --type-aware apps packages",
     "typecheck": "bun run --filter '*' typecheck",
     "test": "bun run --filter '*' test",
     "test:e2e": "playwright test",

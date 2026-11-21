@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { db } from '@indus/db'
 import { notFound } from 'next/navigation'
 import { buildBreadcrumbLd, buildFaqLd } from '@indus/domain'
@@ -137,9 +138,9 @@ export default async function ReturnsPage({ params }: Props) {
         <p>
           The following items cannot be returned for credit. They may still be replaced under
           warranty if they prove defective — see our{' '}
-          <a className="text-ih-accent hover:underline" href="/warranty">
+          <Link className="text-ih-accent hover:underline" href="/warranty">
             Warranty Policy
-          </a>
+          </Link>
           .
         </p>
         <ul className="list-disc pl-6 space-y-1">
@@ -240,23 +241,23 @@ export default async function ReturnsPage({ params }: Props) {
             sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
-          <a className="text-ih-accent hover:underline" href="/contact">
+          <Link className="text-ih-accent hover:underline" href="/contact">
             contact page
-          </a>
+          </Link>
           .
         </p>
       </PolicySectionBody>
 
       <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 7 (Returns) of our{' '}
-        <a className="underline" href="/terms">
+        <Link className="underline" href="/terms">
           Terms of Service
-        </a>
+        </Link>
         . Where the Estimate or contract document differs, those take precedence. Manufacturer
         defect claims are handled under our{' '}
-        <a className="underline" href="/warranty">
+        <Link className="underline" href="/warranty">
           Warranty Policy
-        </a>
+        </Link>
         .
       </footer>
     </PolicyLayout>

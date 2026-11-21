@@ -314,6 +314,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   // hole in it.
   const heroLead = heroLeadFor(geoCode ?? null)
 
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const yearsInBusiness = new Date().getFullYear() - 2003
   // Match the hero claim to the catalogue we actually have. Rounded
   // down to the nearest 100 so the number can never overstate reality.

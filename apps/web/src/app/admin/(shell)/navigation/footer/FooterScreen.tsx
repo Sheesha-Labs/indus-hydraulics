@@ -131,6 +131,11 @@ function Card({
   )
 }
 
+
+// The help text shows what the footer would print. Read at module load, not
+// during render, so the component stays pure for the React Compiler.
+const EXAMPLE_YEAR = new Date().getFullYear()
+
 export default function FooterScreen({
   data,
   canEditSettings,
@@ -369,7 +374,7 @@ export default function FooterScreen({
             />
             <p className="mt-1.5 text-[11.5px] text-ih-muted">
               Type <code className="tabular-nums">{FOOTER_LEGAL_YEAR_TOKEN}</code> where the year goes
-              and it stays current. Left blank, the footer shows “© {new Date().getFullYear()}{' '}
+              and it stays current. Left blank, the footer shows “© {EXAMPLE_YEAR}{' '}
               {legalFallbackEntity}. All rights reserved.”
             </p>
           </div>

@@ -4,6 +4,8 @@ import Link from 'next/link'
 export const metadata: Metadata = { title: 'Down for Maintenance' }
 
 export default function MaintenancePage() {
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
+  const year = new Date().getFullYear()
   return (
     <div className="min-h-screen bg-ih-bg flex flex-col items-center justify-center px-8 py-20 text-center">
       <div className="max-w-[560px]">
@@ -67,7 +69,7 @@ export default function MaintenancePage() {
         </div>
 
         <p className="font-mono text-[11px] text-ih-muted-2">
-          © {new Date().getFullYear()} Indus Hydraulics. All rights reserved.
+          © {year} Indus Hydraulics. All rights reserved.
         </p>
       </div>
     </div>

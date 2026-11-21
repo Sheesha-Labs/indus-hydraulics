@@ -60,7 +60,7 @@ const nextConfig: NextConfig = {
    * it now lives: `typecheck · lint · test` is a REQUIRED status check on the
    * `main` ruleset, with `strict_required_status_checks_policy` on — so the
    * branch must be up to date with main when it passes — and the `pull_request`
-   * rule blocks direct pushes. Nothing reaches main without tsc and eslint
+   * rule blocks direct pushes. Nothing reaches main without the typecheck and the linter
    * passing on exactly the state that gets merged.
    *
    * What would have to break for a type error to ship: someone removes that
