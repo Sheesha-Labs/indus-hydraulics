@@ -1,5 +1,6 @@
 import path from 'node:path'
 import type { NextConfig } from 'next'
+import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
   output: 'standalone',
@@ -23,4 +24,18 @@ const nextConfig: NextConfig = {
   typedRoutes: true,
 }
 
-export default nextConfig
+// Source-map upload and releases need SENTRY_AUTH_TOKEN, which exists only on
+// Vercel; without it the upload half is switched off so builds stay quiet. Runtime
+// error reporting needs only the DSN (sentry.*.config.ts).
+const sentryAuthToken = process.env.SENTRY_AUTH_TOKEN
+
+export default withSentryConfig(nextConfig, {
+  org: process.env.SENTRY_ORG,
+  project: 'indus-operations',
+  authToken: sentryAuthToken,
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  sourcemaps: sentryAuthToken ? { deleteSourcemapsAfterUpload: true } : { disable: true },
+  release: sentryAuthToken ? { create: true } : { create: false, name: '' },
+  webpack: { treeshake: { removeDebugLogging: true } },
+})
