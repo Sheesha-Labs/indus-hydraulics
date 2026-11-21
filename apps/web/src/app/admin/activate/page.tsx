@@ -27,6 +27,8 @@ export default async function ActivatePage({ searchParams }: Props) {
   const token = (await searchParams).token ?? ''
   const { invitation, state } = await loadActivationLink(token)
 
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
+  const year = new Date().getFullYear()
   return (
     <div className="grid min-h-screen place-items-center bg-[var(--color-ih-navy)] p-6">
       <div className="w-full max-w-[380px]">
@@ -55,7 +57,7 @@ export default async function ActivatePage({ searchParams }: Props) {
         )}
 
         <p className="mt-6 text-center tabular-nums text-[11px] text-[oklch(0.62_0.03_250)]">
-          © {new Date().getFullYear()} Indus Hydraulics
+          © {year} Indus Hydraulics
         </p>
       </div>
     </div>

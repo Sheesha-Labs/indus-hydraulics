@@ -255,9 +255,9 @@ export default async function WarrantyPage({ params }: Props) {
           manufacturer’s discretion. We will not provide consequential cover beyond what the
           manufacturer offers (such as loss of production, downtime, or third-party labour costs).
           See the Limitation of Liability section of our{' '}
-          <a className="text-ih-accent hover:underline" href="/terms">
+          <Link className="text-ih-accent hover:underline" href="/terms">
             Terms of Service
-          </a>
+          </Link>
           .
         </p>
       </PolicySectionBody>
@@ -279,22 +279,22 @@ export default async function WarrantyPage({ params }: Props) {
             sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
-          <a className="text-ih-accent hover:underline" href="/contact">
+          <Link className="text-ih-accent hover:underline" href="/contact">
             contact page
-          </a>
+          </Link>
           .
         </p>
       </PolicySectionBody>
 
       <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 6 (Warranty) of our{' '}
-        <a className="underline" href="/terms">
+        <Link className="underline" href="/terms">
           Terms of Service
-        </a>{' '}
+        </Link>{' '}
         and is administered alongside our{' '}
-        <a className="underline" href="/returns">
+        <Link className="underline" href="/returns">
           Returns Policy
-        </a>
+        </Link>
         . Where a manufacturer’s warranty document or your contract differs from this page, that
         document takes precedence.
       </footer>
