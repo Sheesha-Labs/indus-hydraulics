@@ -626,3 +626,187 @@ export const MAIL = {
   client: { name: 'Sam Sample', address: 'buyer@sample-client.example' },
   unknown: { name: 'Info Desk', address: 'info@unknown-sender.example' },
 } as const
+
+/**
+ * Assistant kit (K-05) samples. Invented proposals on the neutral refs; every figure is made up. The L1
+ * mirror's texts keep the sheet's line counts (the parity check fails on a height difference over 2px).
+ */
+export const ASSISTANT = {
+  rfq: {
+    id: 'A-26-11-20-0001',
+    type: 'Send supplier RFQs',
+    record: `${REFS.enquiry} · ${REFS.supplierRfq}`,
+    level: 'Asks you',
+    headline: `Send ${REFS.supplierRfq} to 5 suppliers for 6 bearing lines.`,
+    why: [
+      {
+        text: '6 of the 9 enquiry lines are bearings; the 3 gauge lines go separately as P02.',
+        evidence: { label: 'Lines tab', evidenceId: 'ev-lines-0001' },
+      },
+      {
+        text: `${COMPANIES.supplier} and ${COMPANIES.other} quoted the same sizes on ${REFS.enquiry} in September.`,
+        evidence: { label: '2 past quotes', evidenceId: 'ev-quotes-0001' },
+      },
+      {
+        text: 'Client wants prices by 2 Oct, so suppliers get 5 working days.',
+        evidence: { label: 'Client email', evidenceId: 'ev-mail-0001' },
+      },
+    ],
+    preview: {
+      title: 'Preview · email 1 of 5',
+      lines: [
+        { key: 'to', text: 'To quotes@examplevalve.example · Cc sales@' },
+        {
+          key: 'subject',
+          kind: 'bold',
+          text: `RFQ ${REFS.supplierRfq} — Bearings · 6 lines · reply by 30 Sep`,
+        },
+        {
+          key: 'body',
+          kind: 'muted',
+          text: 'Dear Sales team, please quote for the 6 lines in the attached RFQ, in AED, with stock and lead time per line…',
+        },
+        { key: 'open', kind: 'link', text: 'Open all 5 emails and the A4 RFQ ↗', href: '#k05' },
+      ],
+    },
+    checks: [
+      { key: 'ids', mark: 'ok', text: 'Client identifiers: none found', right: '6 fields' },
+      { key: 'ccy', mark: 'ok', text: 'Currency asked: AED for local suppliers', right: '2 of 5' },
+      { key: 'new', mark: 'warn', text: `First email to ${COMPANIES.other}`, right: 'research' },
+    ],
+    confidence: {
+      level: 'Likely',
+      reason: `${COMPANIES.other}’s range comes from its website, not a past quote.`,
+    },
+    onApprove:
+      '5 emails go from purchase@ with the Helper’s signature, Cc sales@, in 5 minutes. Reply-by 30 Sep; chasers start 1 Oct.',
+  },
+  chase: {
+    id: 'A-26-11-20-0002',
+    type: 'Chase suppliers',
+    record: 'IH-RFQ-2611-P02',
+    level: 'Does it, tells you',
+    headline: `Chase ${COMPANIES.supplier} a second time on line 4.`,
+    note: 'Sent 10:05',
+  },
+  relay: {
+    id: 'A-26-11-20-0003',
+    type: 'Relay supplier questions',
+    headline: `Ask ${COMPANIES.client} 3 questions from 2 suppliers`,
+    note: 'answer from the datasheet instead',
+  },
+  quotation: {
+    id: 'A-26-11-20-0004',
+    type: 'Send quotation',
+    record: REFS.quotationRevised,
+    level: 'Locked · you send',
+    headline: `Send ${REFS.quotationRevised} to ${COMPANIES.client} for 11 of 12 lines.`,
+    approveLabel: 'Review and send',
+  },
+  judgement: {
+    id: 'A-26-11-20-0005',
+    type: 'Judgement call',
+    record: `${REFS.enquiry} · ${REFS.quotation}`,
+    level: 'Asks you',
+    headline: 'Quote line 4 at 9.5% (floor 12%).',
+    why: [
+      {
+        text: 'The maker’s direct offer is about USD 3,100 each.',
+        evidence: { label: 'Client email', evidenceId: 'ev-mail-0002' },
+      },
+      {
+        text: `${COMPANIES.supplier} is the only quote; at 12% we would sell about 2% above that offer.`,
+      },
+    ],
+    legend: 'Choose one',
+    options: [
+      {
+        value: 'approve',
+        title: 'Approve at 9.5%',
+        sub: 'USD 3,080.00 each; quotation margin 16.8%.',
+        suggested: true,
+      },
+      { value: 'keep', title: 'Keep 12% and risk losing the line', sub: 'USD 3,165.00 each.' },
+      {
+        value: 'ask',
+        title: `Ask ${COMPANIES.supplier} for a better price first`,
+        sub: 'The quotation waits up to 1 working day.',
+        tag: 'Drafts the ask',
+      },
+    ],
+    checks: [
+      { key: 'floor', mark: 'warn', text: 'Margin 9.5% below the 12% floor', right: 'guardrail' },
+      { key: 'paid', mark: 'ok', text: 'Client paid 6 of 6 invoices on time' },
+    ],
+    confidence: {
+      level: 'Likely',
+      reason: 'The maker’s figure is from the client’s email, not a document we have seen.',
+    },
+    onApprove:
+      'Line 4 is repriced and the quotation card returns to Review; nothing reaches the client.',
+  },
+  qualify: {
+    id: 'A-26-11-20-0006',
+    type: 'Is it worth quoting?',
+    record: REFS.enquiry,
+    level: 'Asks you',
+    headline: `Quote ${REFS.enquiry}: 9 of 12 lines are in our range.`,
+    signals: [
+      {
+        key: 'fit',
+        mark: 'ok',
+        text: '9 of 12 lines match supplier ranges we hold',
+        right: 'Lines',
+      },
+      { key: 'new', mark: 'warn', text: 'First enquiry from this client', right: 'Directory' },
+      { key: 'due', mark: 'ok', text: 'Deadline leaves 8 working days', right: 'Client email' },
+    ],
+    toggle: {
+      name: 'regret-rest',
+      label: 'Send a polite regret for the 3 other lines',
+      defaultOn: true,
+    },
+    aside: 'Regrets go from sales@ in the client’s thread and never name a supplier.',
+    confidence: { level: 'Sure' },
+  },
+  regret: {
+    id: 'A-26-11-20-0007',
+    type: 'Regret',
+    record: REFS.enquiry,
+    level: 'Asks you',
+    headline: `Send ${COMPANIES.client} a regret for lines 10 to 12.`,
+    chipsLabel: 'Regret reason',
+    chips: [
+      { value: 'range', label: 'Outside our range' },
+      { value: 'time', label: 'Not enough time' },
+      { value: 'price', label: 'Cannot meet the target price' },
+    ],
+    chip: 'range',
+    confidence: { level: 'Sure' },
+  },
+  unsure: {
+    question: 'Is PN-10-228 an equivalent of PN-10-220?',
+    reason: 'Seen on 3 RFQs; the maker lists them as different media.',
+  },
+  options: [
+    {
+      value: 'one',
+      title: `${COMPANIES.supplier} for both valve lines`,
+      sub: 'Lowest landed cost on 2 of 3 lines, 6 weeks.',
+      suggested: true,
+    },
+    {
+      value: 'split',
+      title: 'Split line 5 and line 6 between two suppliers',
+      sub: 'AED 1,240 more, 1 week sooner on line 6.',
+    },
+  ],
+  source: {
+    doc: 'EVC-Q-10001.pdf',
+    meta: `${COMPANIES.supplier} · 14 Nov`,
+    text: 'Item 1: BRG-6316-C3, quoting AED 418.00 per piece, ex-stock, valid for 30 days.',
+    match: 'AED 418.00',
+    location: 'Line 3 · unit price',
+  },
+  highlight: { text: 'Line 3 offered as PN-10-228 instead.', match: 'PN-10-228' },
+} as const
