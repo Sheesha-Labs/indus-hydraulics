@@ -54,6 +54,7 @@ export const IO_PDF_COLORS = {
   'io-option-sub': '#50565D',
   'io-highlight-on': '#C5E2FE',
   'io-toast-action': '#AFD2F4',
+  'io-toast-warn-ink': '#321B05',
   'io-scrim': '#B8BABE',
   'io-well': '#DFE3E8',
   'io-doc-rule': '#D5DADE',

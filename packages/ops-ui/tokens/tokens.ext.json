@@ -125,6 +125,12 @@
     "signoff": "awaiting",
     "source": "Overlay/Toast undo link on navy"
   },
+  "io-toast-warn-ink": {
+    "value": "oklch(0.25 0.05 62)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Overlay/Toast warning glyph mark on warn-solid"
+  },
   "io-scrim": {
     "value": "oklch(0.35 0.02 255 / .35)",
     "kind": "color",

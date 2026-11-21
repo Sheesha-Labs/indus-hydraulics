@@ -223,3 +223,77 @@ export const LINES = [
   { pn: 'BRG-6316-C3', description: 'Deep groove ball bearing, C3', qty: '24 ea' },
   { pn: 'GSK-2001', description: 'Spiral wound gasket, 3", class 600', qty: '40 ea' },
 ] as const
+
+/** Overlay kit (K-10) samples. */
+export const OVERLAY = {
+  block: {
+    title: `Block ${COMPANIES.supplier}?`,
+    text: `New RFQs and POs to ${COMPANIES.supplier} stop. Open quotes stay on file and still show in Compare, marked Blocked.`,
+    consequences: [
+      `2 open RFQs on ${REFS.enquiry} are withdrawn with a short note`,
+      `${REFS.po} stays open; payments need your call-back first`,
+      'You can unblock from the supplier page',
+    ],
+    confirm: 'Block supplier',
+  },
+  why: {
+    eyebrow: 'Why?',
+    title: 'Why this supplier for line 5',
+    tabs: [{ label: 'Reasons' }, { label: 'Sources · 3' }, { label: 'History' }],
+    sections: [
+      {
+        heading: 'Lowest landed cost',
+        text: `AED 1,000.00 per set against ${COMPANIES.other} at AED 1,100.00, using the locked EUR rate of 2 Oct.`,
+      },
+      {
+        heading: 'Lead time fits',
+        text: '5 weeks from order; the client needs delivery by 10 Dec.',
+      },
+      { heading: 'Past orders', text: '3 orders in 2026, all on time, no inspection holds.' },
+    ],
+  },
+  toasts: [
+    {
+      kind: 'success',
+      title: `Quotation ${REFS.quotationRevised} sent to ${COMPANIES.client}`,
+      action: 'Undo',
+    },
+    { kind: 'running', title: 'Sending 5 RFQs from purchase@…', action: 'Undo' },
+    { kind: 'error', title: 'Couldn’t reach Zoho Books', action: 'Retry' },
+  ],
+  moreToasts: [
+    { kind: 'info', title: 'History import paused at 40%; it resumes at 18:00' },
+    { kind: 'warning', title: 'purchase@ sends are held while the Assistant is paused' },
+    { kind: 'success', title: '5 RFQs go from purchase@ at 10:47', action: 'Undo 4:59' },
+  ],
+  menu: [
+    { type: 'item', label: 'Open' },
+    { type: 'item', label: 'Open in new tab', shortcut: '⌘↵' },
+    { type: 'separator' },
+    { type: 'item', label: 'Link to enquiry…' },
+    { type: 'item', label: 'Move to…' },
+    { type: 'item', label: 'Merge with…' },
+    { type: 'separator' },
+    { type: 'group', label: 'Assistant' },
+    { type: 'item', label: 'Explain this', shortcut: '?' },
+    { type: 'item', label: 'Undo last action', shortcut: '⌘Z' },
+    { type: 'separator' },
+    { type: 'item', label: 'Delete draft', danger: true },
+  ],
+  menuStates: [
+    { type: 'item', label: 'Approve and send', shortcut: '⌘↵' },
+    { type: 'item', label: 'Send quotation', disabled: true },
+    { type: 'item', label: 'Open the A4 RFQ', href: '#overlay-menu' },
+    { type: 'separator' },
+    { type: 'item', label: 'Cancel order', danger: true },
+  ],
+  popover: {
+    title: 'Landed cost',
+    text: [
+      'Supplier price + freight + insurance + duty + bank and FX, in AED at the locked rate.',
+      'Default % fills any part you have not entered.',
+    ],
+    action: 'Open landed-cost breakdown',
+  },
+  tooltip: 'Assistant · running',
+} as const
