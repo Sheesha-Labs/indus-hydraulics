@@ -110,6 +110,81 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: scripts/ci/budget.sh test Test
 
+  # Required. The repository is public and Actions logs are public: the denylist
+  # is a secret and a match is reported by location only (scripts/ci/leak-guard.sh).
+  repo-leak-guard:
+    name: repo-leak-guard
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          fetch-depth: 0
+
+      - name: Leak guard
+        env:
+          SUPPLIER_DENYLIST: ${{ secrets.SUPPLIER_DENYLIST }}
+          BASE_REF: ${{ github.base_ref }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_HEAD: ${{ github.head_ref }}
+        run: scripts/ci/leak-guard.sh
+
+  # Not required yet. Builds Indus Operations with a database URL that cannot
+  # connect, proving the build opens no connection, whenever the change reaches
+  # @indus/ops by the same rule the Vercel ignore step uses.
+  ops-build:
+    name: ops-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          fetch-depth: 0
+
+      - name: Affected?
+        id: affected
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before || 'HEAD^' }}
+        run: |
+          out="$(node scripts/affected-workspaces.mjs "$BASE" HEAD)"
+          if [ "$out" = "ALL" ] || printf '%s\n' "$out" | grep -qxF '@indus/ops'; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "@indus/ops not affected; skipping the build"
+          fi
+
+      - name: Setup
+        if: steps.affected.outputs.run == 'true'
+        uses: ./.github/actions/setup
+
+      - name: Build
+        if: steps.affected.outputs.run == 'true'
+        env:
+          DATABASE_URL: postgresql://nobody@127.0.0.1:1/none
+          DIRECT_URL: postgresql://nobody@127.0.0.1:1/none
+          APP_ENV: ci
+          NEXT_PUBLIC_OPS_BASE_URL: https://operations.indushydraulics.com
+        run: bun run --filter @indus/ops build
+
+      - name: Assert the artifact
+        if: steps.affected.outputs.run == 'true'
+        run: |
+          test -f apps/ops/.next/standalone/apps/ops/server.js
+          if grep -rq "localhost:3100" apps/ops/.next/server; then
+            echo "::error::localhost:3100 is baked into the Ops server bundle"; exit 1
+          fi
+          if [ -f packages/ops-db/prisma/schema.prisma ]; then
+            find apps/ops/.next/standalone -name 'libquery_engine-*' | grep -q . \
+              || { echo "::error::no Prisma query engine traced into the standalone output"; exit 1; }
+          fi
+
   build:
     name: build
     runs-on: ubuntu-latest

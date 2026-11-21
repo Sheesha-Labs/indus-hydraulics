@@ -19,7 +19,7 @@ TEST_GLOBS=('apps/web/src/**/*.test.ts' 'apps/web/src/**/*.test.tsx' 'apps/ops/s
 # A change to any of these can change the result of any test, so it reruns
 # everything: the toolchain and its config, dependencies, TypeScript config and
 # shared types, the test preload, CI itself.
-FULL_RUN_INPUTS='^(bun\.lock|bunfig\.toml|package\.json|tsconfig\.base\.json|\.oxlintrc\.json|\.prettierrc|types/|\.github/|scripts/ci/|apps/web/bunfig\.toml|apps/web/tsconfig\.json|apps/web/package\.json|apps/web/src/test/|apps/ops/(bunfig\.toml|tsconfig\.json|package\.json)|apps/ops/src/test/|packages/[^/]+/package\.json|packages/[^/]+/tsconfig\.json|packages/db/prisma/)'
+FULL_RUN_INPUTS='^(bun\.lock|bunfig\.toml|package\.json|tsconfig\.base\.json|\.oxlintrc\.json|\.prettierrc|types/|\.github/|scripts/ci/|apps/web/bunfig\.toml|apps/web/tsconfig\.json|apps/web/package\.json|apps/web/src/test/|apps/ops/(bunfig\.toml|tsconfig\.json|package\.json)|apps/ops/src/test/|packages/[^/]+/package\.json|packages/[^/]+/tsconfig\.json|packages/db/prisma/|packages/ops-db/prisma/|packages/ops-db/migrations/)'
 
 # bun test --changed follows the import graph. A test that reads files from
 # disk, spawns a process or imports by computed path depends on files it never

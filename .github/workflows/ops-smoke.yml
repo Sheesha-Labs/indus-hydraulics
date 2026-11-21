@@ -1,0 +1,43 @@
+name: Ops smoke
+
+# Checks the live Indus Operations deployment after every successful production
+# deploy of the indus-operations Vercel project: the default-deny proxy, noindex
+# and robots. The storefront's smoke-e2e.yml only fires for
+# 'Production – indus-hydraulics', so the two never overlap.
+on:
+  deployment_status:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    name: ops smoke (production)
+    if: |
+      github.event_name == 'workflow_dispatch' || (
+        github.event.deployment_status.state == 'success' &&
+        github.event.deployment.environment == 'Production – indus-operations'
+      )
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      BASE: https://operations.indushydraulics.com
+    steps:
+      - name: Liveness
+        run: curl -fsS --retry 3 "$BASE/api/health/live"
+
+      - name: Sign-in page is public and noindex
+        run: |
+          headers="$(curl -fsS -D - -o /dev/null "$BASE/sign-in")"
+          echo "$headers" | grep -qi '^x-robots-tag:.*noindex'
+
+      - name: Console pages redirect to sign-in
+        run: |
+          read -r code location < <(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$BASE/today")
+          test "$code" = 307
+          case "$location" in "$BASE/sign-in"*) ;; *) echo "redirected to $location"; exit 1 ;; esac
+
+      - name: APIs answer 401 without a session
+        run: test "$(curl -s -o /dev/null -w '%{http_code}' "$BASE/api/health")" = 401
+
+      - name: robots.txt disallows everything
+        run: |
+          curl -fsS "$BASE/robots.txt" | grep -q 'Disallow: /'
