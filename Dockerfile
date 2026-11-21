@@ -22,10 +22,11 @@ ARG NODE_VERSION=22-bookworm-slim
 # ── deps ─────────────────────────────────────────────────────────────────────
 FROM node:${NODE_VERSION} AS deps
 WORKDIR /app
-RUN corepack enable && corepack prepare pnpm@9.15.0 --activate
+# The exact Bun canary pinned in package.json "packageManager".
+RUN npm install -g bun@1.4.5-canary.20261120.1
 
 # Manifests first, so a source-only change reuses the install layer.
-COPY pnpm-lock.yaml pnpm-workspace.yaml package.json ./
+COPY bun.lock package.json ./
 COPY apps/web/package.json apps/web/
 COPY packages/db/package.json packages/db/
 COPY packages/domain/package.json packages/domain/
@@ -35,19 +36,19 @@ COPY packages/pdf/package.json packages/pdf/
 
 # `--ignore-scripts` because packages/db's postinstall runs `prisma generate`,
 # which needs the schema — not copied yet. Generated explicitly in the next stage.
-RUN pnpm install --frozen-lockfile --ignore-scripts
+RUN bun install --frozen-lockfile --ignore-scripts
 
 # ── build ────────────────────────────────────────────────────────────────────
 FROM node:${NODE_VERSION} AS build
 WORKDIR /app
-RUN corepack enable && corepack prepare pnpm@9.15.0 --activate
+RUN npm install -g bun@1.4.5-canary.20261120.1
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
 COPY --from=deps /app/packages ./packages
 COPY . .
 
-RUN pnpm --filter @indus/db exec prisma generate
+RUN bun run --filter @indus/db db:generate
 
 # NEXT_PUBLIC_* are inlined into the client bundle at build time, so they are
 # build args rather than runtime env. Getting one wrong here freezes it into
@@ -82,7 +83,7 @@ RUN --mount=type=secret,id=DATABASE_URL \
     DIRECT_URL="$(cat /run/secrets/DIRECT_URL)" \
     STAFF_AUTH_SECRET="$(cat /run/secrets/STAFF_AUTH_SECRET)" \
     SUPABASE_SERVICE_ROLE_KEY="$(cat /run/secrets/SUPABASE_SERVICE_ROLE_KEY)" \
-    pnpm build
+    bun run build
 
 # ── runner ───────────────────────────────────────────────────────────────────
 FROM node:${NODE_VERSION} AS runner
@@ -102,7 +103,7 @@ RUN apt-get update \
 RUN groupadd --system --gid 1001 nodejs \
  && useradd --system --uid 1001 --gid nodejs nextjs
 
-# `standalone` traces the server and its dependencies, resolving pnpm's symlinks
+# `standalone` traces the server and its dependencies, resolving the isolated install's symlinks
 # on the way — which is what makes this runnable on a machine with no store.
 COPY --from=build --chown=nextjs:nodejs /app/apps/web/.next/standalone ./
 # It deliberately does NOT copy these two. Without them the site serves HTML

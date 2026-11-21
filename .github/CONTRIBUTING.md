@@ -5,11 +5,11 @@
 Every push to `main` and every pull request runs `.github/workflows/ci.yml`,
 which executes:
 
-1. `pnpm install --frozen-lockfile`
-2. `pnpm db:generate` (Prisma client)
-3. `pnpm typecheck`
-4. `pnpm lint`
-5. `pnpm test`
+1. `bun install --frozen-lockfile` (also generates the Prisma client)
+2. `bun run db:generate` (only after a schema change)
+3. `bun run typecheck`
+4. `bun run lint`
+5. `bun run test`
 
 A red CI run blocks merge **only if branch protection is enabled** in
 GitHub settings. To enable:
@@ -31,7 +31,7 @@ protection via the CLI.
 Before opening a PR, run the same commands locally:
 
 ```bash
-pnpm typecheck && pnpm lint && pnpm test
+bun run typecheck && bun run lint && bun run test
 ```
 
 If any of those fail, CI will fail too. The `chore/lint-and-test-baseline`

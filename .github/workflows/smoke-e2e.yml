@@ -36,25 +36,11 @@ jobs:
         with:
           ref: ${{ github.event.deployment.sha }}
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.0
-          run_install: false
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Install dependencies
-        # --ignore-scripts skips the Prisma generate postinstall: smoke runs
-        # against the deployed URL so we don't need a local Prisma client.
-        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Install Playwright Chromium
-        run: pnpm exec playwright install --with-deps chromium
+        run: bunx playwright install --with-deps chromium
 
       - name: Run smoke E2E
         env:
@@ -73,7 +59,7 @@ jobs:
           # mode a smoke test exists to prevent.
           PLAYWRIGHT_BASE_URL: https://indushydraulics.com
           PLAYWRIGHT_REUSE_SERVER: '1'
-        run: pnpm test:e2e
+        run: bun run test:e2e
 
       - name: Upload Playwright trace on failure
         if: failure()

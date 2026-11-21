@@ -3,5 +3,6 @@
   "regions": [
     "bom1"
   ],
-  "ignoreCommand": "bash vercel-ignore-build.sh"
+  "ignoreCommand": "bash vercel-ignore-build.sh",
+  "installCommand": "npx --yes bun@1.4.5-canary.20261120.1 install --frozen-lockfile"
 }

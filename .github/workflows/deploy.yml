@@ -168,19 +168,12 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm exec playwright install --with-deps chromium
+      - uses: ./.github/actions/setup
+      - run: bunx playwright install --with-deps chromium
       - name: Smoke the live site
         # Replaces the `deployment_status` trigger in smoke-e2e.yml, which only
         # Vercel's GitHub integration emits and which stops firing on cutover.
         env:
           PLAYWRIGHT_BASE_URL: https://indushydraulics.com
           PLAYWRIGHT_REUSE_SERVER: '1'
-        run: pnpm exec playwright test smoke hero-geo category-caching
+        run: bunx playwright test smoke hero-geo category-caching
