@@ -38,7 +38,7 @@ type TransitionMap = Partial<Record<RfqStatus, RfqStatus[]>>
 // model is currently being written. Reserved values therefore have empty
 // transition lists.
 const TRANSITIONS: TransitionMap = {
-  draft: ['submitted', 'cancelled'],
+  draft: ['submitted', 'cancelled', 'quote_sent'],
   submitted: ['engineer_review', 'cancelled'],
   engineer_review: ['engineer_questions_pending', 'quote_sent', 'cancelled'],
   engineer_questions_pending: ['engineer_review', 'cancelled'],
