@@ -750,6 +750,21 @@
         "typescript/no-explicit-any": "warn",
         "eslint/prefer-const": "warn"
       }
+    },
+    {
+      "files": [
+        "apps/**",
+        "packages/**"
+      ],
+      "rules": {
+        "eslint/no-restricted-globals": [
+          "error",
+          {
+            "name": "Bun",
+            "message": "The app runs on Node (Vercel). Bun's types are loaded only so tests type-check; the Bun global does not exist at runtime."
+          }
+        ]
+      }
     }
   ]
 }
