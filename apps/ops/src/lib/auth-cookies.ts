@@ -1,11 +1,21 @@
 /**
- * Cookie names for the Ops Auth.js instance (ADR-05). Named explicitly so they
- * can never collide with the website admin's cookies, and the session cookie
- * name doubles as the JWT salt in proxy.ts and lib/auth.ts — they must agree.
+ * Cookies for the Ops Auth.js instance (ADR-05).
  *
- * `__Host-` and `__Secure-` prefixes require HTTPS, so local development on
- * http://localhost uses the same names without the prefix.
+ * Every cookie is named explicitly, so none can collide with the website admin's
+ * (`indus.staff-*`) or inherit an Auth.js default. The session cookie name is
+ * also the JWT salt: proxy.ts decodes with cookieName === salt === this name, and
+ * lib/auth.ts issues with it. They must agree or every request looks signed out.
+ *
+ * `__Host-` and `__Secure-` require HTTPS, so plain-http local development uses
+ * the same names without the prefix. No cookie ever carries a Domain attribute:
+ * a `__Host-` cookie cannot, and the others must not reach indushydraulics.com.
  */
+export function secureCookiesEnabled(
+  baseUrl = process.env.NEXT_PUBLIC_OPS_BASE_URL ?? ''
+): boolean {
+  return baseUrl.startsWith('https://')
+}
+
 export function opsCookieNames(secure: boolean) {
   const host = secure ? '__Host-' : ''
   const sec = secure ? '__Secure-' : ''
@@ -19,9 +29,36 @@ export function opsCookieNames(secure: boolean) {
   } as const
 }
 
-/** Secure cookies everywhere except plain-http local development. */
-export function secureCookiesEnabled(
-  baseUrl = process.env.NEXT_PUBLIC_OPS_BASE_URL ?? ''
-): boolean {
-  return baseUrl.startsWith('https://')
+type CookieOption = {
+  name: string
+  options: { httpOnly: true; sameSite: 'lax'; path: '/'; secure: boolean }
+}
+
+/** The six cookies Auth.js may set, in its config shape. */
+export function opsCookieOptions(
+  secure: boolean
+): Record<
+  'sessionToken' | 'csrfToken' | 'callbackUrl' | 'pkceCodeVerifier' | 'state' | 'nonce',
+  CookieOption
+> {
+  const names = opsCookieNames(secure)
+  const options = { httpOnly: true, sameSite: 'lax', path: '/', secure } as const
+  return {
+    sessionToken: { name: names.session, options },
+    csrfToken: { name: names.csrf, options },
+    callbackUrl: { name: names.callbackUrl, options },
+    pkceCodeVerifier: { name: names.pkce, options },
+    state: { name: names.state, options },
+    nonce: { name: names.nonce, options },
+  }
+}
+
+export const OPS_SESSION_COOKIE = opsCookieNames(secureCookiesEnabled()).session
+
+/** The Ops JWT secret. Separate from the website's STAFF_AUTH_SECRET. */
+export function requireOpsSecret(value = process.env.OPS_AUTH_SECRET): string {
+  if (!value || value.length < 32) {
+    throw new Error('OPS_AUTH_SECRET is missing or shorter than 32 characters')
+  }
+  return value
 }

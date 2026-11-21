@@ -25,7 +25,8 @@ export const opsDb: PrismaClient =
 
 if (process.env.NODE_ENV !== 'production') globalForOpsDb.opsDb = opsDb
 
-export { Prisma }
+// PrismaClient as a value for scripts that need their own connection (e.g. create-owner over DIRECT_URL).
+export { Prisma, PrismaClient }
 export { buildDatasourceUrl, OPS_CONNECTION_LIMIT, OPS_POOL_TIMEOUT } from './datasource-url'
 // Every generated model and enum type. Enum VALUES are under `$Enums` (e.g.
 // `$Enums.UserRole.owner`): the linter cannot see a CommonJS module's names through `export *`.

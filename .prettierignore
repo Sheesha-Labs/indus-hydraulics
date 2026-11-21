@@ -16,3 +16,6 @@ design_handoff_indus_hydraulics_v2/
 docs/
 bun.lock
 **/*.snap
+# Written by `next dev` / `next build` and git-ignored; bun fmt reads only this
+# file and the root .gitignore, not apps/*/.gitignore.
+**/next-env.d.ts
