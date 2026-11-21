@@ -164,7 +164,8 @@ jobs:
   smoke:
     name: smoke
     needs: deploy
-    runs-on: ubuntu-latest
+    # Pinned for Playwright's Chromium; see smoke-e2e.yml.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
