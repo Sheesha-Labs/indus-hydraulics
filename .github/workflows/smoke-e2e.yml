@@ -51,6 +51,9 @@ jobs:
 
       - name: Run smoke E2E
         env:
+          # Lets the suite past the catalogue-filter firewall rules on filtered
+          # shelves (firewall rule smoke-bypass; apps/web/tests/e2e/fixtures.ts).
+          SMOKE_BYPASS_TOKEN: ${{ secrets.SMOKE_BYPASS_TOKEN }}
           # The customer-facing domain, not the vercel.app alias.
           #
           # The alias serves a DIFFERENT build. Measured on 2026-08-24 at the

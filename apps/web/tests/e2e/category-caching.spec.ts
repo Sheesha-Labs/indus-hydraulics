@@ -1,4 +1,5 @@
-import { expect, test } from '@playwright/test'
+// Filtered shelves sit behind the catalogue-filter firewall rules; see fixtures.ts.
+import { expect, test } from './fixtures'
 
 /**
  * `/c/<slug>` is prerendered; `/c/<slug>?brands=…` is not.
