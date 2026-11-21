@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
+  # The merge queue runs the full suite on exactly what will land on main.
+  merge_group:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
