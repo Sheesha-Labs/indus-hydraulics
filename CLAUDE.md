@@ -297,6 +297,9 @@ Types: `feat`, `fix`, `chore`, `docs`, `test`, `refactor`, `perf`
 
 Scopes: `auth`, `catalogue`, `rfq`, `quote`, `account`, `admin`, `db`, `ui`, `cms`, `seo`
 
+Indus Operations (`apps/ops`, `packages/ops-*`): `ops` for cross-cutting work and `ops-<area>`
+for one package or surface, e.g. `feat(ops-db): ops schema, roles and RLS`.
+
 ### Branch naming
 
 ```
@@ -320,11 +323,11 @@ chore/prisma-schema-update
 3. Focus rings are visible — never `outline: none` without a replacement. v2 focus-visible is
    `box-shadow: 0 0 0 3px var(--color-accent-soft)` plus `border-color: var(--color-accent)`.
 4. Keyboard navigation works for all flows
-5. **Nothing handles this for us.** Dialogs, dropdowns, selects, checkboxes and tooltips are all
-   hand-rolled here — only three Radix primitives are imported, and none of them covers an
-   overlay. Any new overlay owns its own focus trap, `role`/`aria-modal`, Escape handling and
-   focus restoration. *(Superseded: "Radix primitives via shadcn handle most of this" — shadcn is
-   not installed.)*
+5. **Overlays come from Radix, never hand-rolled.** The website (`packages/ui`) imports Radix
+   Dialog, DropdownMenu, Tooltip, Tabs, RadioGroup and Slot; Indus Operations uses Dialog,
+   AlertDialog, Popover, DropdownMenu, Tooltip, Tabs and Slot. Every overlay must still trap
+   focus, set `role`/`aria-modal`, close on Escape and restore focus on close — Radix delivers
+   that; a custom overlay has to deliver it itself. shadcn is not installed.
 6. Every page carries a skip-to-content link: visually hidden until focused, then a standard
    focused control at top-left.
 7. Honour `prefers-reduced-motion: reduce` — drop translate and scale, keep opacity fades at
@@ -339,6 +342,9 @@ chore/prisma-schema-update
 ## 11. File Structure Reference
 
 **One app serves both surfaces.** `apps/admin` no longer exists.
+
+`apps/ops` is Indus Operations, a separate console with its own Vercel project, auth and `ops`
+schema: read `apps/ops/CLAUDE.md` before touching `apps/ops` or `packages/ops-*`.
 
 ```
 apps/web/
