@@ -39,7 +39,7 @@ describe('editorDocToBlocks', () => {
           { type: 'listItem', content: [p('One')] },
           { type: 'listItem', content: [p('Two')] },
         ],
-      }),
+      })
     )
     // Folding the two paragraphs together would rewrite the body of every
     // article written before this editor existed, all of which is `paragraph`.
@@ -63,7 +63,7 @@ describe('editorDocToBlocks', () => {
             marks: [{ type: 'link', attrs: { href: 'https://example.com' } }],
           },
         ],
-      }),
+      })
     )
     expect(blocks).toEqual([
       {
@@ -80,8 +80,8 @@ describe('editorDocToBlocks', () => {
       doc(
         { type: 'heading', attrs: { level: 2 }, content: [{ type: 'text', text: 'Start here.' }] },
         p('Body.'),
-        { type: 'heading', attrs: { level: 2 }, content: [{ type: 'text', text: 'Start here.' }] },
-      ),
+        { type: 'heading', attrs: { level: 2 }, content: [{ type: 'text', text: 'Start here.' }] }
+      )
     )
     expect(blocks[0]).toEqual({
       type: 'section_head',
@@ -100,7 +100,7 @@ describe('editorDocToBlocks', () => {
         type: 'heading',
         attrs: { level: 2, anchor: 'published-fragment' },
         content: [{ type: 'text', text: 'Renamed after publication' }],
-      }),
+      })
     )
     expect(blocks[0]).toMatchObject({ anchor: 'published-fragment' })
   })
@@ -110,8 +110,8 @@ describe('editorDocToBlocks', () => {
       doc(
         { type: 'heading', attrs: { level: 3 }, content: [{ type: 'text', text: 'Sub' }] },
         { type: 'blockquote', content: [p('Quoted.')] },
-        p('x'),
-      ),
+        p('x')
+      )
     )
     expect(blocks).toEqual([
       { type: 'prose', html: '<h3>Sub</h3><blockquote><p>Quoted.</p></blockquote>' },
@@ -121,21 +121,21 @@ describe('editorDocToBlocks', () => {
 
   test('a lead paragraph round-trips as a lead block', () => {
     const blocks = editorDocToBlocks(
-      doc({ type: 'leadParagraph', content: [{ type: 'text', text: 'Opening line.' }] }),
+      doc({ type: 'leadParagraph', content: [{ type: 'text', text: 'Opening line.' }] })
     )
     expect(blocks).toEqual([{ type: 'lead', html: 'Opening line.' }])
   })
 
   test('empty paragraphs are dropped', () => {
-    expect(editorDocToBlocks(doc({ type: 'paragraph' }, { type: 'paragraph', content: [] }))).toEqual(
-      [],
-    )
+    expect(
+      editorDocToBlocks(doc({ type: 'paragraph' }, { type: 'paragraph', content: [] }))
+    ).toEqual([])
   })
 
   test('a structured block carries its data through verbatim', () => {
     const data = { type: 'callout', tone: 'warning', title: 'Careful', body: 'Mind the seat.' }
     const blocks = editorDocToBlocks(
-      doc(p('Before.'), { type: 'structuredBlock', attrs: { data } }, p('After.')),
+      doc(p('Before.'), { type: 'structuredBlock', attrs: { data } }, p('After.'))
     )
     expect(blocks).toEqual([
       { type: 'paragraph', html: 'Before.' },
@@ -150,7 +150,7 @@ describe('editorDocToBlocks', () => {
         type: 'figureImage',
         attrs: { storagePath: 'blog/body/hose.jpg', captionPrefix: 'FIG. 01', aspectRatio: '4/3' },
         content: [{ type: 'text', text: 'A crimped hose end.' }],
-      }),
+      })
     )
     expect(blocks).toEqual([
       {
@@ -204,11 +204,13 @@ describe('slugifyAnchor', () => {
 
   test('a long heading is cut at a word boundary, not mid-word', () => {
     const anchor = slugifyAnchor(
-      'The one worth dwelling on is abrasion because it accounts for a large share of failures',
+      'The one worth dwelling on is abrasion because it accounts for a large share of failures'
     )
     expect(anchor.length).toBeLessThanOrEqual(80)
     expect(anchor.endsWith('-')).toBe(false)
-    expect(anchor).toBe('the-one-worth-dwelling-on-is-abrasion-because-it-accounts-for-a-large-share-of')
+    expect(anchor).toBe(
+      'the-one-worth-dwelling-on-is-abrasion-because-it-accounts-for-a-large-share-of'
+    )
   })
 })
 
@@ -232,7 +234,7 @@ describe('round trip', () => {
       },
       p('Plain body copy.'),
       { type: 'structuredBlock', attrs: { data: original[2] } },
-      p('Closing copy.'),
+      p('Closing copy.')
     )
 
     expect(parseBlogBlocks(editorDocToBlocks(parsed)).blocks).toEqual(original)

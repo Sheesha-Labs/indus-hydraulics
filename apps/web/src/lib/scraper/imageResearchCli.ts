@@ -31,17 +31,19 @@ async function main() {
     process.stderr.write(`Reusing ${rawResearch.length} researched products from ${args.reuse}\n`)
   } else {
     const products = await selectCohort(args.limit)
-    process.stderr.write(`Researching ${products.length} products with concurrency ${args.concurrency}\n`)
+    process.stderr.write(
+      `Researching ${products.length} products with concurrency ${args.concurrency}\n`
+    )
     rawResearch = await mapConcurrent(products, args.concurrency, async (product, index) => {
       try {
         const result = await researchProductImages(product)
         process.stderr.write(
-          `[${index + 1}/${products.length}] ${product.sku}: ${result.selected ? `selected score ${result.selected.score}` : 'review required'}\n`,
+          `[${index + 1}/${products.length}] ${product.sku}: ${result.selected ? `selected score ${result.selected.score}` : 'review required'}\n`
         )
         return result
       } catch (error) {
         process.stderr.write(
-          `[${index + 1}/${products.length}] ${product.sku}: ${(error as Error).message}\n`,
+          `[${index + 1}/${products.length}] ${product.sku}: ${(error as Error).message}\n`
         )
         return { product, query: '', candidates: [], selected: null } satisfies ResearchedProduct
       }
@@ -76,8 +78,8 @@ async function main() {
         selected: args.autoSelect ? researched.filter((row) => row.selected).length : 0,
       },
       null,
-      2,
-    ),
+      2
+    )
   )
 }
 
@@ -228,7 +230,7 @@ function toResearchProduct(row: {
 async function mapConcurrent<T, R>(
   items: T[],
   concurrency: number,
-  worker: (item: T, index: number) => Promise<R>,
+  worker: (item: T, index: number) => Promise<R>
 ): Promise<R[]> {
   const results = new Array<R>(items.length)
   let cursor = 0

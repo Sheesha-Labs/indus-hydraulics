@@ -10,9 +10,24 @@ import { revalidatePath } from 'next/cache'
 import { invalidateSeoSettings } from '../../../../lib/cache-tags'
 
 const SeoSettingsSchema = z.object({
-  defaultMetaTitleTemplate: z.string().trim().max(180).optional().transform((v) => v ?? null),
-  defaultMetaDescription: z.string().trim().max(320).optional().transform((v) => v ?? null),
-  robotsTxt: z.string().trim().max(8000).optional().transform((v) => v ?? null),
+  defaultMetaTitleTemplate: z
+    .string()
+    .trim()
+    .max(180)
+    .optional()
+    .transform((v) => v ?? null),
+  defaultMetaDescription: z
+    .string()
+    .trim()
+    .max(320)
+    .optional()
+    .transform((v) => v ?? null),
+  robotsTxt: z
+    .string()
+    .trim()
+    .max(8000)
+    .optional()
+    .transform((v) => v ?? null),
 })
 
 export async function saveSeoSettings(formData: FormData): Promise<Result<void>> {
@@ -52,7 +67,7 @@ export async function saveSeoSettings(formData: FormData): Promise<Result<void>>
         } else {
           await tx.seoSetting.create({ data: parsed })
         }
-      },
+      }
     )
 
     revalidatePath('/admin/seo')
@@ -78,8 +93,8 @@ const RedirectSchema = z.object({
     .max(500)
     .regex(/^\//, 'From path must start with "/"'),
   toPath: z.string().trim().min(1, 'To path is required').max(500),
-  statusCode: z
-    .coerce.number()
+  statusCode: z.coerce
+    .number()
     .int()
     .refine((n) => n === 301 || n === 302 || n === 307 || n === 308, {
       message: 'Status must be 301, 302, 307, or 308',
@@ -124,7 +139,7 @@ export async function addRedirect(formData: FormData): Promise<Result<void>> {
           update: { toPath: parsed.toPath, statusCode: parsed.statusCode },
           create: parsed,
         })
-      },
+      }
     )
 
     revalidatePath('/admin/seo')
@@ -162,7 +177,7 @@ export async function deleteRedirect(id: string): Promise<Result<void>> {
       },
       async (tx) => {
         await tx.redirect.delete({ where: { id } })
-      },
+      }
     )
 
     revalidatePath('/admin/seo')

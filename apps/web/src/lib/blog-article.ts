@@ -86,9 +86,7 @@ export async function resolveBlogArticle(
   // path here; handing the id itself to an <img> is what the shared
   // service-case view does, and it is why no figure has ever rendered.
   const figureIds = [
-    ...new Set(
-      blocks.flatMap((b) => (b.type === 'figure' && b.imageId ? [b.imageId] : [])),
-    ),
+    ...new Set(blocks.flatMap((b) => (b.type === 'figure' && b.imageId ? [b.imageId] : []))),
   ]
 
   const articleSlugs = blogReferencedArticleSlugs(blocks).filter((slug) => slug !== selfSlug)
@@ -96,62 +94,63 @@ export async function resolveBlogArticle(
   const wantedServices = pageLinks.filter((l) => l.kind === 'service').map((l) => l.slug)
   const wantedIndustries = pageLinks.filter((l) => l.kind === 'industry').map((l) => l.slug)
 
-  const [products, categories, relatedPosts, services, industries, figureMedia] =
-    await Promise.all([
-    skus.length
-      ? db.product.findMany({
-          where: { sku: { in: skus }, status: 'active' },
-          select: {
-            sku: true,
-            slug: true,
-            title: true,
-            descriptionShort: true,
-            brand: { select: { name: true } },
-            images: {
-              orderBy: { position: 'asc' },
-              take: 1,
-              select: { alt: true, media: { select: { storagePath: true, alt: true } } },
+  const [products, categories, relatedPosts, services, industries, figureMedia] = await Promise.all(
+    [
+      skus.length
+        ? db.product.findMany({
+            where: { sku: { in: skus }, status: 'active' },
+            select: {
+              sku: true,
+              slug: true,
+              title: true,
+              descriptionShort: true,
+              brand: { select: { name: true } },
+              images: {
+                orderBy: { position: 'asc' },
+                take: 1,
+                select: { alt: true, media: { select: { storagePath: true, alt: true } } },
+              },
             },
-          },
-        })
-      : Promise.resolve([]),
-    categorySlugs.length
-      ? db.category.findMany({
-          where: { slug: { in: categorySlugs }, isPublished: true },
-          select: { slug: true, name: true, shortDescription: true },
-        })
-      : Promise.resolve([]),
-    articleSlugs.length
-      ? db.blogPost.findMany({
-          where: { slug: { in: articleSlugs }, isPublished: true, deletedAt: null },
-          select: {
-            slug: true,
-            title: true,
-            excerpt: true,
-            readingMinutes: true,
-            category: { select: { name: true, slug: true, isPublished: true } },
-          },
-        })
-      : Promise.resolve([]),
-    wantedServices.length
-      ? db.serviceCase.findMany({
-          where: { slug: { in: wantedServices }, status: 'published' },
-          select: { slug: true },
-        })
-      : Promise.resolve([]),
-    wantedIndustries.length
-      ? db.industry.findMany({
-          where: { slug: { in: wantedIndustries }, isPublished: true },
-          select: { slug: true },
-        })
-      : Promise.resolve([]),
-    figureIds.length
-      ? db.media.findMany({
-          where: { id: { in: figureIds }, deletedAt: null },
-          select: { id: true, storagePath: true, alt: true },
-        })
-      : Promise.resolve([]),
-  ])
+          })
+        : Promise.resolve([]),
+      categorySlugs.length
+        ? db.category.findMany({
+            where: { slug: { in: categorySlugs }, isPublished: true },
+            select: { slug: true, name: true, shortDescription: true },
+          })
+        : Promise.resolve([]),
+      articleSlugs.length
+        ? db.blogPost.findMany({
+            where: { slug: { in: articleSlugs }, isPublished: true, deletedAt: null },
+            select: {
+              slug: true,
+              title: true,
+              excerpt: true,
+              readingMinutes: true,
+              category: { select: { name: true, slug: true, isPublished: true } },
+            },
+          })
+        : Promise.resolve([]),
+      wantedServices.length
+        ? db.serviceCase.findMany({
+            where: { slug: { in: wantedServices }, status: 'published' },
+            select: { slug: true },
+          })
+        : Promise.resolve([]),
+      wantedIndustries.length
+        ? db.industry.findMany({
+            where: { slug: { in: wantedIndustries }, isPublished: true },
+            select: { slug: true },
+          })
+        : Promise.resolve([]),
+      figureIds.length
+        ? db.media.findMany({
+            where: { id: { in: figureIds }, deletedAt: null },
+            select: { id: true, storagePath: true, alt: true },
+          })
+        : Promise.resolve([]),
+    ]
+  )
 
   const productsBySku = new Map<string, EmbeddedProduct>(
     products.map((p) => [
@@ -211,7 +210,7 @@ export async function resolveBlogArticle(
   )
 
   const figuresById = new Map<string, EmbeddedFigure>(
-    figureMedia.map((m) => [m.id, { storagePath: m.storagePath, alt: m.alt }]),
+    figureMedia.map((m) => [m.id, { storagePath: m.storagePath, alt: m.alt }])
   )
 
   return {

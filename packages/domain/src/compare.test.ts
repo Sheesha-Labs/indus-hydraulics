@@ -48,7 +48,11 @@ describe('validateCompareSet', () => {
 
   it('rejects more than MAX_COMPARE products', () => {
     const result = validateCompareSet([
-      product('A'), product('B'), product('C'), product('D'), product('E'),
+      product('A'),
+      product('B'),
+      product('C'),
+      product('D'),
+      product('E'),
     ])
     expect(result.ok).toBe(false)
     if (!result.ok && result.reason === 'too_many') {
@@ -58,10 +62,7 @@ describe('validateCompareSet', () => {
   })
 
   it('rejects when any product is missing a spec template', () => {
-    const result = validateCompareSet([
-      product('A'),
-      product('B', { specTemplateId: null }),
-    ])
+    const result = validateCompareSet([product('A'), product('B', { specTemplateId: null })])
     expect(result.ok).toBe(false)
     if (!result.ok && result.reason === 'missing_template') {
       expect(result.offendingSkus).toEqual(['B'])
@@ -118,9 +119,30 @@ describe('buildCompareRows', () => {
     id: 'tpl-pump',
     name: 'Variable axial pump',
     fields: [
-      { id: 'f-disp', key: 'displacement', label: 'Displacement', unit: 'cc/rev', group: 'Hydraulic performance', position: 0 },
-      { id: 'f-pressure', key: 'nominal_pressure', label: 'Nominal pressure', unit: 'bar', group: 'Hydraulic performance', position: 1 },
-      { id: 'f-weight', key: 'weight', label: 'Weight', unit: 'kg', group: 'Mechanical', position: 0 },
+      {
+        id: 'f-disp',
+        key: 'displacement',
+        label: 'Displacement',
+        unit: 'cc/rev',
+        group: 'Hydraulic performance',
+        position: 0,
+      },
+      {
+        id: 'f-pressure',
+        key: 'nominal_pressure',
+        label: 'Nominal pressure',
+        unit: 'bar',
+        group: 'Hydraulic performance',
+        position: 1,
+      },
+      {
+        id: 'f-weight',
+        key: 'weight',
+        label: 'Weight',
+        unit: 'kg',
+        group: 'Mechanical',
+        position: 0,
+      },
     ],
   }
 
@@ -135,7 +157,7 @@ describe('buildCompareRows', () => {
           ],
         }),
       ],
-      template,
+      template
     )
     expect(sections.map((s) => s.group)).toEqual(['Hydraulic performance', 'Mechanical'])
     expect(sections[0]?.rows.map((r) => r.fieldKey)).toEqual(['displacement', 'nominal_pressure'])
@@ -149,7 +171,7 @@ describe('buildCompareRows', () => {
         product('B', { specs: [{ templateFieldId: 'f-disp', value: '180', unit: null }] }),
         product('C', { specs: [{ templateFieldId: 'f-disp', value: '71', unit: null }] }),
       ],
-      template,
+      template
     )
     const dispRow = sections[0]?.rows[0]
     expect(dispRow?.cells.map((c) => c.rawValue)).toEqual(['71', '180', '71'])
@@ -158,7 +180,7 @@ describe('buildCompareRows', () => {
   it('falls back to the template field unit when a product spec has no unit', () => {
     const sections = buildCompareRows(
       [product('A', { specs: [{ templateFieldId: 'f-disp', value: '71', unit: null }] })],
-      template,
+      template
     )
     expect(sections[0]?.rows[0]?.cells[0]?.display).toBe('71 cc/rev')
   })
@@ -166,7 +188,7 @@ describe('buildCompareRows', () => {
   it('prefers the per-product spec unit over the template field unit', () => {
     const sections = buildCompareRows(
       [product('A', { specs: [{ templateFieldId: 'f-disp', value: '71', unit: 'cm³/rev' }] })],
-      template,
+      template
     )
     expect(sections[0]?.rows[0]?.cells[0]?.display).toBe('71 cm³/rev')
   })
@@ -177,7 +199,7 @@ describe('buildCompareRows', () => {
         product('A', { specs: [{ templateFieldId: 'f-disp', value: '71', unit: null }] }),
         product('B', { specs: [] }),
       ],
-      template,
+      template
     )
     expect(sections[0]?.rows[0]?.cells[1]).toEqual({ display: null, rawValue: null })
   })
@@ -192,7 +214,7 @@ describe('buildCompareRows', () => {
           ],
         }),
       ],
-      template,
+      template
     )
     const allRowKeys = sections.flatMap((s) => s.rows.map((r) => r.fieldKey))
     expect(allRowKeys).toEqual(['displacement', 'nominal_pressure', 'weight'])
@@ -205,7 +227,7 @@ describe('buildCompareRows', () => {
     }
     const sections = buildCompareRows(
       [product('A', { specs: [{ templateFieldId: 'f-misc', value: 'x', unit: null }] })],
-      tpl,
+      tpl
     )
     expect(sections[0]?.group).toBe('General')
   })

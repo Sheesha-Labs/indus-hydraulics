@@ -54,7 +54,10 @@ export default async function EnquiryDetailPage({ params }: Props) {
     where: { enquiryId: enquiry.id },
     orderBy: { createdAt: 'desc' },
     include: {
-      results: { orderBy: { createdAt: 'asc' }, include: { enquiryLine: { select: { description: true, position: true } } } },
+      results: {
+        orderBy: { createdAt: 'asc' },
+        include: { enquiryLine: { select: { description: true, position: true } } },
+      },
     },
   })
 
@@ -66,7 +69,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
     <AdminPageShell
       title={enquiry.title}
       breadcrumbs={
-        <span className="inline-flex min-w-0 items-center gap-1 tabular-nums text-[12px] text-ih-muted">
+        <span className="text-ih-muted inline-flex min-w-0 items-center gap-1 text-[12px] tabular-nums">
           <Link href="/admin/enquiries?source=tender">Enquiries</Link>
           <ChevronRight size={11} aria-hidden="true" className="shrink-0" />
           {enquiry.code}
@@ -77,9 +80,15 @@ export default async function EnquiryDetailPage({ params }: Props) {
       }
       actions={
         <div className="flex items-center gap-3">
-          <Link className="text-[13px] text-ih-ink-2 hover:underline" href={`${nav}/rfq`}>Supplier RFQs</Link>
-          <Link className="text-[13px] text-ih-ink-2 hover:underline" href={`${nav}/offers`}>Offers</Link>
-          <Link className="text-[13px] text-ih-ink-2 hover:underline" href={`${nav}/pricing`}>Pricing</Link>
+          <Link className="text-ih-ink-2 text-[13px] hover:underline" href={`${nav}/rfq`}>
+            Supplier RFQs
+          </Link>
+          <Link className="text-ih-ink-2 text-[13px] hover:underline" href={`${nav}/offers`}>
+            Offers
+          </Link>
+          <Link className="text-ih-ink-2 text-[13px] hover:underline" href={`${nav}/pricing`}>
+            Pricing
+          </Link>
           <ResearchButton
             enquiryId={enquiry.id}
             disabled={enquiry.lines.length === 0 || running}
@@ -128,10 +137,14 @@ export default async function EnquiryDetailPage({ params }: Props) {
                       <div className="flex flex-col gap-1">
                         <span className="text-ih-ink">{r.description}</span>
                         {r.partNumber ? (
-                          <span className="tabular-nums text-[12px] text-ih-muted">P/N {r.partNumber}</span>
+                          <span className="text-ih-muted text-[12px] tabular-nums">
+                            P/N {r.partNumber}
+                          </span>
                         ) : null}
                         {r.certification ? (
-                          <span className="tabular-nums text-[12px] text-ih-ink-2">{r.certification}</span>
+                          <span className="text-ih-ink-2 text-[12px] tabular-nums">
+                            {r.certification}
+                          </span>
                         ) : null}
                       </div>
                     ),
@@ -190,16 +203,14 @@ export default async function EnquiryDetailPage({ params }: Props) {
 
               <div className="mt-4 flex flex-col gap-3">
                 {latestRun.results.length === 0 ? (
-                  <p className="text-[13px] text-ih-muted">
-                    No per-item results yet.
-                  </p>
+                  <p className="text-ih-muted text-[13px]">No per-item results yet.</p>
                 ) : (
                   latestRun.results.map((result) => {
                     const ranked = (result.candidates as unknown as RankedCandidate[]) ?? []
                     return (
-                      <div key={result.id} className="rounded-lg border border-ih-border p-3">
+                      <div key={result.id} className="border-ih-border rounded-lg border p-3">
                         <div className="flex flex-wrap items-baseline justify-between gap-2">
-                          <span className="text-[14px] text-ih-ink">
+                          <span className="text-ih-ink text-[14px]">
                             {result.enquiryLine?.position}. {result.enquiryLine?.description}
                           </span>
                           <span className="flex items-center gap-2">
@@ -219,25 +230,29 @@ export default async function EnquiryDetailPage({ params }: Props) {
                           </span>
                         </div>
                         {result.error ? (
-                          <p className="mt-1 text-[12px] text-ih-danger">{result.error}</p>
+                          <p className="text-ih-danger mt-1 text-[12px]">{result.error}</p>
                         ) : null}
                         {ranked.length > 0 ? (
                           <ul className="mt-2 flex flex-col gap-1">
                             {ranked.slice(0, 5).map((entry, i) => (
-                              <li key={`${entry.candidate.name}-${i}`} className="text-[13px] text-ih-ink-2">
+                              <li
+                                key={`${entry.candidate.name}-${i}`}
+                                className="text-ih-ink-2 text-[13px]"
+                              >
                                 <span className="text-ih-ink">{entry.candidate.name}</span>
-                                <span className="tabular-nums text-[12px] text-ih-muted">
-                                  {entry.candidate.country ? ` · ${entry.candidate.country}` : ''} · {entry.score}
+                                <span className="text-ih-muted text-[12px] tabular-nums">
+                                  {entry.candidate.country ? ` · ${entry.candidate.country}` : ''} ·{' '}
+                                  {entry.score}
                                 </span>
                               </li>
                             ))}
                           </ul>
                         ) : result.status === 'completed' ? (
-                          <p className="mt-1 text-[12px] text-ih-muted">
+                          <p className="text-ih-muted mt-1 text-[12px]">
                             No suppliers cleared the filters for this item.
                           </p>
                         ) : null}
-                        <p className="mt-1 text-[12px] text-ih-muted">
+                        <p className="text-ih-muted mt-1 text-[12px]">
                           {result.reachableCount} of {result.candidateCount} reachable
                         </p>
                       </div>
@@ -254,7 +269,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
               title="Source text"
               description="Verbatim, after line-ending normalisation. Every line above traces back to this."
             />
-            <pre className="mt-4 max-h-[420px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-ih-border bg-ih-surface-2 p-3 tabular-nums text-[12px] leading-relaxed text-ih-ink-2">
+            <pre className="border-ih-border bg-ih-surface-2 text-ih-ink-2 mt-4 max-h-[420px] overflow-auto rounded-lg border p-3 text-[12px] leading-relaxed break-words whitespace-pre-wrap tabular-nums">
               {enquiry.rawText}
             </pre>
           </Panel>
@@ -266,11 +281,11 @@ export default async function EnquiryDetailPage({ params }: Props) {
             <dl className="mt-4 flex flex-col gap-3 text-[13px]">
               <div>
                 <dt className="text-ih-muted">Status</dt>
-                <dd className="tabular-nums text-ih-ink">{enquiry.status}</dd>
+                <dd className="text-ih-ink tabular-nums">{enquiry.status}</dd>
               </div>
               <div>
                 <dt className="text-ih-muted">Closes</dt>
-                <dd className="tabular-nums text-ih-ink">
+                <dd className="text-ih-ink tabular-nums">
                   {enquiry.closingAt
                     ? enquiry.closingAt.toISOString().slice(0, 16).replace('T', ' ')
                     : '—'}
@@ -282,7 +297,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
               </div>
               <div>
                 <dt className="text-ih-muted">Extractor</dt>
-                <dd className="tabular-nums text-ih-ink">{enquiry.extractorName ?? '—'}</dd>
+                <dd className="text-ih-ink tabular-nums">{enquiry.extractorName ?? '—'}</dd>
               </div>
             </dl>
           </Panel>

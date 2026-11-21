@@ -17,7 +17,11 @@ import { randomUUID } from 'node:crypto'
 import { auth } from '../../../../lib/admin-auth'
 import { invalidateMediaConsumers } from '../../../../lib/cache-tags'
 import { buildMediaUsageIndexFromDb } from '../../../../lib/queries/media-usage'
-import { removeFromStorageStrict, STORAGE_BUCKETS, supabaseAdmin } from '../../../../lib/supabase-admin'
+import {
+  removeFromStorageStrict,
+  STORAGE_BUCKETS,
+  supabaseAdmin,
+} from '../../../../lib/supabase-admin'
 import { fail, ok, failFromError, type Result } from '../../../../lib/result'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 
@@ -213,7 +217,12 @@ export async function deleteMediaPermanently(
       // documents, RFQ attachments, homepage slides), so the database refuses
       // the delete even if the usage check somehow passed. That is the backstop
       // working, and it deserves a readable message rather than a Prisma code.
-      if (err && typeof err === 'object' && 'code' in err && (err as { code?: string }).code === 'P2003') {
+      if (
+        err &&
+        typeof err === 'object' &&
+        'code' in err &&
+        (err as { code?: string }).code === 'P2003'
+      ) {
         return fail(
           'PRECONDITION_FAILED',
           'Something still references this file. Detach it and try again.'
@@ -386,7 +395,8 @@ export async function finaliseMediaUpload(
     })
     if (!check.ok) return fail('VALIDATION', check.message)
 
-    const expectedBucket = check.kind === 'image' ? STORAGE_BUCKETS.images : STORAGE_BUCKETS.documents
+    const expectedBucket =
+      check.kind === 'image' ? STORAGE_BUCKETS.images : STORAGE_BUCKETS.documents
     if (parsed.bucket !== expectedBucket) {
       return fail('VALIDATION', 'That upload could not be verified.')
     }
@@ -394,7 +404,10 @@ export async function finaliseMediaUpload(
     const storage = supabaseAdmin().storage.from(parsed.bucket)
     const folder = parsed.key.slice(0, parsed.key.lastIndexOf('/'))
     const name = parsed.key.slice(parsed.key.lastIndexOf('/') + 1)
-    const { data: listed, error: listError } = await storage.list(folder, { limit: 1, search: name })
+    const { data: listed, error: listError } = await storage.list(folder, {
+      limit: 1,
+      search: name,
+    })
     const object = listed?.find((o) => o.name === name)
     if (listError || !object) {
       return fail('NOT_FOUND', 'The upload did not complete. Try again.')
@@ -511,7 +524,9 @@ export async function searchMediaForPicker(
 }
 
 /** Resolves the currently-selected file so a picker can show it by id alone. */
-export async function getMediaById(input: z.input<typeof IdSchema>): Promise<Result<PickerResult | null>> {
+export async function getMediaById(
+  input: z.input<typeof IdSchema>
+): Promise<Result<PickerResult | null>> {
   try {
     requireRole(await auth(), ROLES.ANY_STAFF)
     const { id } = IdSchema.parse(input)

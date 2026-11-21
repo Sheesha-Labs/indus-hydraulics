@@ -39,7 +39,7 @@ export default function SpecTemplatesClient({ templates }: Props) {
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-8 items-center rounded-lg px-2.5 text-[14px] font-medium transition-colors"
         >
           {showCreate ? '× Cancel' : '+ New template'}
         </button>
@@ -62,14 +62,14 @@ export default function SpecTemplatesClient({ templates }: Props) {
           {templates.length === 0 ? (
             <TableRow>
               <TableCell colSpan={6} className="py-14 text-center">
-                <p className="mb-3 text-ih-muted">
-                  No templates yet. A template defines the typed schema for a category of
-                  products — &quot;Hydraulic Hose&quot; defines bore, pressure and construction.
+                <p className="text-ih-muted mb-3">
+                  No templates yet. A template defines the typed schema for a category of products —
+                  &quot;Hydraulic Hose&quot; defines bore, pressure and construction.
                 </p>
                 <button
                   type="button"
                   onClick={() => setShowCreate(true)}
-                  className="inline-flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover"
+                  className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover inline-flex h-8 items-center rounded-lg px-2.5 text-[14px] font-medium"
                 >
                   + Create your first template
                 </button>
@@ -81,17 +81,17 @@ export default function SpecTemplatesClient({ templates }: Props) {
                 <TableCell>
                   <Link
                     href={`/admin/spec-templates/${t.id}`}
-                    className="font-medium text-ih-ink hover:text-ih-accent"
+                    className="text-ih-ink hover:text-ih-accent font-medium"
                   >
                     {t.name}
                   </Link>
                   {t.description && (
-                    <div className="mt-0.5 line-clamp-1 text-[12px] text-ih-muted">
+                    <div className="text-ih-muted mt-0.5 line-clamp-1 text-[12px]">
                       {t.description}
                     </div>
                   )}
                 </TableCell>
-                <TableCell className="tabular-nums text-[12px] text-ih-muted">{t.slug}</TableCell>
+                <TableCell className="text-ih-muted text-[12px] tabular-nums">{t.slug}</TableCell>
                 <TableCell numeric>{t.fieldCount}</TableCell>
                 <TableCell numeric>{t.productCount}</TableCell>
                 <TableCell numeric>{t.categoryCount}</TableCell>
@@ -99,7 +99,7 @@ export default function SpecTemplatesClient({ templates }: Props) {
                   <span className="inline-flex items-center justify-end gap-2">
                     <Link
                       href={`/admin/spec-templates/${t.id}`}
-                      className="text-[12px] text-ih-muted hover:text-ih-ink"
+                      className="text-ih-muted hover:text-ih-ink text-[12px]"
                     >
                       Edit
                     </Link>
@@ -132,21 +132,16 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
   }
 
   return (
-    <form action={onSubmit} className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3">
+    <form
+      action={onSubmit}
+      className="border-ih-border bg-ih-surface grid gap-3 rounded-lg border p-5"
+    >
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
-          <Input
-            required
-            name="name"
-            placeholder="Hydraulic Hose"
-          />
+          <Input required name="name" placeholder="Hydraulic Hose" />
         </Field>
         <Field label="Slug" hint="Auto-generated from name">
-          <Input
-            name="slug"
-            placeholder="hydraulic-hose"
-          className="tabular-nums"
-          />
+          <Input name="slug" placeholder="hydraulic-hose" className="tabular-nums" />
         </Field>
       </div>
       <Field label="Description">
@@ -160,19 +155,19 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+          className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
         >
           {pending ? 'Creating…' : 'Create template'}
         </button>
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-3 text-[12px] text-ih-muted hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink h-9 px-3 text-[12px]"
         >
           Cancel
         </button>
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}
@@ -181,13 +176,7 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
   )
 }
 
-function DeleteTemplateButton({
-  id,
-  hasProducts,
-}: {
-  id: string
-  hasProducts: boolean
-}) {
+function DeleteTemplateButton({ id, hasProducts }: { id: string; hasProducts: boolean }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
 
@@ -208,7 +197,7 @@ function DeleteTemplateButton({
           })
         }}
       />
-      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
+      {error && <span className="text-ih-danger-ink text-[11px]">{error}</span>}
     </>
   )
 }

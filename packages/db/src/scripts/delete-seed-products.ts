@@ -57,13 +57,7 @@ import { PrismaClient } from '@prisma/client'
 const db = new PrismaClient()
 const BACKUP_DIR = resolve(__dirname, '../../data')
 
-const SKUS = [
-  'IH-TEST-9991',
-  'IH-JIC-90-08',
-  'IH-451-12',
-  'IH-421-08',
-  'IH-HH-001',
-] as const
+const SKUS = ['IH-TEST-9991', 'IH-JIC-90-08', 'IH-451-12', 'IH-421-08', 'IH-HH-001'] as const
 
 async function main() {
   const dryRun = process.argv.includes('--dry-run')
@@ -93,7 +87,8 @@ async function main() {
 
   const found = new Set(products.map((p) => p.sku))
   for (const s of SKUS) {
-    if (!found.has(s)) console.log(`  gone     ${s.padEnd(16)} not in the database — already deleted`)
+    if (!found.has(s))
+      console.log(`  gone     ${s.padEnd(16)} not in the database — already deleted`)
   }
 
   // ── Guard: anything referenced by a RESTRICT relation is not seed data ──
@@ -146,9 +141,7 @@ async function main() {
       `${p.documents.length} docs`,
       `${p.crossReferences.length} xrefs`,
     ].join(', ')
-    console.log(
-      `  delete   ${p.sku.padEnd(16)} ${p.title}\n           cascades: ${kids}`,
-    )
+    console.log(`  delete   ${p.sku.padEnd(16)} ${p.title}\n           cascades: ${kids}`)
     for (const i of p.images) freedMedia.push(`${i.media.id}  ${i.media.originalFilename}`)
     for (const d of p.documents) freedMedia.push(`${d.media.id}  ${d.media.originalFilename}`)
     if (!dryRun) await db.product.delete({ where: { id: p.id } })

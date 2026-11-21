@@ -33,7 +33,7 @@ export function readBodyBlocks(raw: unknown): BlogBlocks {
   return blocks.map((block) =>
     block.type === 'prose' || block.type === 'paragraph' || block.type === 'lead'
       ? { ...block, html: sanitizeBlogProseHtml(block.html) }
-      : block,
+      : block
   )
 }
 
@@ -103,13 +103,13 @@ export function blocksToPlainText(blocks: Array<BlogBlocks[number] | BlogBlockIn
 export function deriveExcerpt(
   typed: string | null | undefined,
   blocks: Array<BlogBlocks[number] | BlogBlockInput>,
-  maxChars = 240,
+  maxChars = 240
 ): string | null {
   const cleaned = (typed ?? '').trim()
   if (cleaned) return cleaned.slice(0, maxChars)
 
   const prose = blocks.filter(
-    (b) => b.type === 'lead' || b.type === 'paragraph' || b.type === 'prose',
+    (b) => b.type === 'lead' || b.type === 'paragraph' || b.type === 'prose'
   )
   const text = blocksToPlainText(prose).replace(/\n+/g, ' ').trim()
   if (!text) return null

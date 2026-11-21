@@ -102,14 +102,14 @@ async function main() {
   // These three relations have no cascade, so a referenced product cannot be
   // deleted. Better to stop with the catalogue intact than to delete half.
   const referenced = products.filter(
-    (p) => p._count.rfqLines || p._count.orderLines || p._count.savedListItems,
+    (p) => p._count.rfqLines || p._count.orderLines || p._count.savedListItems
   )
   if (referenced.length) {
     console.error('[molykote] refusing to delete — these are referenced by real records:')
     for (const p of referenced) {
       console.error(
         `  ${p.sku}: ${p._count.rfqLines} RFQ lines, ${p._count.orderLines} order lines, ` +
-          `${p._count.savedListItems} saved-list items`,
+          `${p._count.savedListItems} saved-list items`
       )
     }
     process.exitCode = 1
@@ -134,7 +134,7 @@ async function main() {
     for (const p of products) {
       console.log(
         `[dry-run] delete ${p.sku} — ${p.title} (${p.category?.slug ?? 'no category'}, ` +
-          `${p.specs.length} specs, ${p.faqs.length} faqs, score ${p.contentScore})`,
+          `${p.specs.length} specs, ${p.faqs.length} faqs, score ${p.contentScore})`
       )
     }
     console.log(`\n[molykote] dry run — ${products.length} products would be deleted`)

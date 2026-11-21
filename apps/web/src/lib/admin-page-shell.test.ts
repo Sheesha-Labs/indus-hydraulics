@@ -21,10 +21,7 @@ import { describe, expect, test } from 'vitest'
  * layout does (the SEO tree, where one layout owns the bar for 18 routes).
  */
 
-const SHELL = path.resolve(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '../app/admin/(shell)',
-)
+const SHELL = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../app/admin/(shell)')
 
 /**
  * Pages whose header has not been hoisted yet.
@@ -37,7 +34,12 @@ const SHELL = path.resolve(
 const PENDING = new Set<string>([])
 
 /** Pure `redirect()` stubs — no JSX at all, so there is nothing to render. */
-const REDIRECT_STUBS = new Set(['seo/page.tsx', 'seo/search/page.tsx', 'footer/page.tsx', 'rfqs/page.tsx'])
+const REDIRECT_STUBS = new Set([
+  'seo/page.tsx',
+  'seo/search/page.tsx',
+  'footer/page.tsx',
+  'rfqs/page.tsx',
+])
 
 function walk(dir: string, acc: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {

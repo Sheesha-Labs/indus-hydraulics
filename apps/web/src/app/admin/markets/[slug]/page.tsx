@@ -76,20 +76,17 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
 
   return (
     <>
-      <div className="sticky top-0 z-20 border-b border-ih-warning bg-ih-warning-soft px-5 py-3 sm:px-8 lg:px-12">
+      <div className="border-ih-warning bg-ih-warning-soft sticky top-0 z-20 border-b px-5 py-3 sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-x-6 gap-y-2">
-          <p className="tabular-nums text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
+          <p className="text-ih-warning-ink text-[11px] tracking-[0.1em] uppercase tabular-nums">
             {isReleased ? 'Live' : 'Draft · not public'} · {market.name} · regulatory copy{' '}
             {page.regulatoryCopy === 'verified' ? 'verified' : 'NOT verified by the forwarder'}
           </p>
-          <span className="tabular-nums text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
+          <span className="text-ih-warning-ink text-[11px] tracking-[0.1em] uppercase tabular-nums">
             {/* The count is only news while something is held; at zero it is
                 noise on every preview. The edit link is always useful. */}
             {pending > 0 ? `${pending} markets awaiting review · ` : ''}
-            <Link
-              href={`/admin/pages/sub/market/${slug}`}
-              className="underline underline-offset-2"
-            >
+            <Link href={`/admin/pages/sub/market/${slug}`} className="underline underline-offset-2">
               edit bands
             </Link>
           </span>
@@ -115,7 +112,10 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
             phone: settings.contactPhone,
             email: settings.contactEmail,
             hours: settings.contactHours,
-            whatsappUrl: buildWhatsappHref(settings.contactPhone, `Export enquiry — ${market.name}`),
+            whatsappUrl: buildWhatsappHref(
+              settings.contactPhone,
+              `Export enquiry — ${market.name}`
+            ),
           }}
           content={content}
           showAuditStrip

@@ -61,7 +61,14 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'Hydraulic hose repair in Dubai: bring a failed assembly to our Dubai hose bay, or have one made at the machine in Al Quoz, Ras Al Khor, Jebel Ali or DIP.',
     intro:
       'Dubai is where our hose bay is, which makes it the one area where bringing an assembly in and having one built at the machine are genuinely close calls. Both are available; which is faster depends on whether the machine can move and what the traffic is doing.',
-    zones: ['Al Quoz', 'Ras Al Khor', 'Jebel Ali and JAFZA', 'Dubai Investment Park', 'Al Qusais', 'Al Aweer'],
+    zones: [
+      'Al Quoz',
+      'Ras Al Khor',
+      'Jebel Ali and JAFZA',
+      'Dubai Investment Park',
+      'Al Qusais',
+      'Al Aweer',
+    ],
     alternateNames: ['Al Qouz', 'Jabal Ali', 'DIP'],
     demand: [
       'Workshops and fabricators across Al Quoz and Ras Al Khor',
@@ -74,7 +81,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'Distance is rarely the issue in Dubai; the working day is. Where a site needs induction before a contractor can work, arranging it ahead of a failure is worth more than any amount of speed afterwards.',
     },
-    relatedArticles: ['on-site-hydraulic-hose-service-uae', 'getting-a-hydraulic-hose-made', 'bulk-hose-refit-and-tagging'],
+    relatedArticles: [
+      'on-site-hydraulic-hose-service-uae',
+      'getting-a-hydraulic-hose-made',
+      'bulk-hose-refit-and-tagging',
+    ],
     relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
     position: 1,
   },
@@ -86,7 +97,12 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'On-site hydraulic hose service across Mussafah, ICAD and the Abu Dhabi industrial belt, plus certified assemblies for plant and rig work.',
     intro:
       'Mussafah and ICAD hold the densest concentration of heavy-fleet workshops and fabricators in Abu Dhabi. The hydraulics are varied and the work is largely conventional — the planning item is site access rather than the hose.',
-    zones: ['Mussafah M9, M11, M16', 'ICAD I, II and III', 'KIZAD and Khalifa Port', 'Abu Dhabi city and the islands'],
+    zones: [
+      'Mussafah M9, M11, M16',
+      'ICAD I, II and III',
+      'KIZAD and Khalifa Port',
+      'Abu Dhabi city and the islands',
+    ],
     alternateNames: ['Musaffah', 'Musafah', 'Abu Dhabi'],
     demand: [
       'Heavy fleet and plant workshops across the Mussafah M-blocks',
@@ -99,7 +115,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'Most Mussafah and ICAD work can be dispatched and inducted the same day. Restricted and industrial-estate sites need passes arranged in advance — tell us the access regime when you call, not at the gate.',
     },
-    relatedArticles: ['on-site-hydraulic-hose-service-uae', 'rig-site-hose-replacement-abu-dhabi', 'excavator-hydraulic-hose-replacement'],
+    relatedArticles: [
+      'on-site-hydraulic-hose-service-uae',
+      'rig-site-hose-replacement-abu-dhabi',
+      'excavator-hydraulic-hose-replacement',
+    ],
     relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
     position: 2,
   },
@@ -111,7 +131,12 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'Hydraulic hose service and certified assemblies for drilling, gas processing and plant hydraulics across Habshan and the Al Dhafra region.',
     intro:
       'Habshan and the wider Al Dhafra region are gas and processing country, and the access regime reflects it. The hose work itself is often straightforward; the permit, the escort and the training verification are what set the timeline.',
-    zones: ['Habshan', 'Al Dhafra region', 'Ruwais industrial area', 'Western Region drilling and plant sites'],
+    zones: [
+      'Habshan',
+      'Al Dhafra region',
+      'Ruwais industrial area',
+      'Western Region drilling and plant sites',
+    ],
     alternateNames: ['Habshan', 'Al Dhafrah', 'Western Region'],
     demand: [
       'Drilling and workover rig hydraulics — HPUs, tongs, catwalks and auxiliaries',
@@ -124,7 +149,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'Access is the binding constraint, not availability. Permit to work, escorted movement and verified safety training including H₂S awareness are entry conditions that cannot be resolved on the day — which is why pre-staging the critical assemblies pays for itself here more than anywhere.',
     },
-    relatedArticles: ['rig-site-hose-replacement-abu-dhabi', 'api-7k-16c-16d-which-standard', 'api-7k-rotary-vibrator-hose'],
+    relatedArticles: [
+      'rig-site-hose-replacement-abu-dhabi',
+      'api-7k-16c-16d-which-standard',
+      'api-7k-rotary-vibrator-hose',
+    ],
     relatedCategories: ['oil-gas-hoses', 'drilling-hoses'],
     position: 3,
   },
@@ -136,7 +165,12 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'On-site hydraulic hose assembly across Sajja and the Sharjah industrial areas, where several jobs usually fit into one visit.',
     intro:
       'Sajja and the Sharjah industrial areas hold one of the densest concentrations of workshops, fabricators and transport fleets in the country. The practical consequence is that a single mobilisation frequently covers several machines within a few streets.',
-    zones: ['Sajja', 'Industrial Areas 10, 11, 13 and 15', 'Hamriyah Free Zone', 'Sharjah Airport Free Zone'],
+    zones: [
+      'Sajja',
+      'Industrial Areas 10, 11, 13 and 15',
+      'Hamriyah Free Zone',
+      'Sharjah Airport Free Zone',
+    ],
     alternateNames: ['Al Sajaa', 'Saja’a', 'Sharjah Industrial Area'],
     demand: [
       'Manufacturing and assembly workshops',
@@ -149,7 +183,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'Nothing is far away here, so the lever is how many machines you can put in front of one visit. Tell us everything that is waiting when you call rather than one machine at a time — the mobilisation is the cost, not the extra assembly.',
     },
-    relatedArticles: ['hose-service-northern-emirates', 'on-site-hydraulic-hose-service-uae', 'tipper-and-transit-mixer-hose'],
+    relatedArticles: [
+      'hose-service-northern-emirates',
+      'on-site-hydraulic-hose-service-uae',
+      'tipper-and-transit-mixer-hose',
+    ],
     relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
     position: 4,
   },
@@ -173,7 +211,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'Access is rarely the problem, so the difference between one visit and two is whether we knew the bore, construction and fitting type before setting off. Have those ready when you call.',
     },
-    relatedArticles: ['hose-service-northern-emirates', 'getting-a-hydraulic-hose-made', 'forklift-hydraulic-hose-replacement'],
+    relatedArticles: [
+      'hose-service-northern-emirates',
+      'getting-a-hydraulic-hose-made',
+      'forklift-hydraulic-hose-replacement',
+    ],
     relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'crimp-ferrules'],
     position: 5,
   },
@@ -198,7 +240,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'The useful visit here is the one where somebody looks at why a run keeps failing — a clamp that has gone, a guard never fitted, a route that should have changed when the attachment did. A heavier hose in the same bad position fails the same way, slightly later.',
     },
-    relatedArticles: ['hose-service-northern-emirates', 'why-hydraulic-hoses-fail', 'hose-routing-bend-radius-twist'],
+    relatedArticles: [
+      'hose-service-northern-emirates',
+      'why-hydraulic-hoses-fail',
+      'hose-routing-bend-radius-twist',
+    ],
     relatedCategories: ['hydraulic-hoses', 'hydraulic-hose-fittings-suppliers-uae'],
     position: 6,
   },
@@ -223,7 +269,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       detail:
         'Gate passes and site induction are not arranged at short notice. Customers who work to vessel schedules benefit disproportionately from having the paperwork in place before it is needed rather than starting it during a failure.',
     },
-    relatedArticles: ['hose-service-northern-emirates', 'industrial-hose-is-not-hydraulic-hose', 'chemical-transfer-hose-selection'],
+    relatedArticles: [
+      'hose-service-northern-emirates',
+      'industrial-hose-is-not-hydraulic-hose',
+      'chemical-transfer-hose-selection',
+    ],
     relatedCategories: ['industrial-hose-suppliers-uae', 'composite-hoses'],
     position: 7,
   },

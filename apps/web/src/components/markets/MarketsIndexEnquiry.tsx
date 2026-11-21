@@ -59,10 +59,10 @@ export default function MarketsIndexEnquiry({
   }
 
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-6 sm:px-7 sm:pb-7 sm:pt-[26px]">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-6 sm:px-7 sm:pt-[26px] sm:pb-7">
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="text-[18px] font-medium tracking-[-0.01em]">Ask about a destination</h3>
-        <span className="mono text-[10px] uppercase tracking-[0.1em] text-ih-muted-2">RFQ</span>
+        <span className="mono text-ih-muted-2 text-[10px] tracking-[0.1em] uppercase">RFQ</span>
       </div>
 
       {result ? (
@@ -112,7 +112,12 @@ export default function MarketsIndexEnquiry({
               <Input name="contactName" required autoComplete="name" placeholder="Your name" />
             </Field>
             <Field label="Company">
-              <Input name="company" required autoComplete="organization" placeholder="Registered name" />
+              <Input
+                name="company"
+                required
+                autoComplete="organization"
+                placeholder="Registered name"
+              />
             </Field>
             <Field label="Work email">
               <Input
@@ -137,14 +142,22 @@ export default function MarketsIndexEnquiry({
             />
           </Field>
 
-          {error && <MarketEnquiryError error={error} contactEmail={contactEmail} className="mt-4" />}
+          {error && (
+            <MarketEnquiryError error={error} contactEmail={contactEmail} className="mt-4" />
+          )}
 
-          <Button type="submit" kind="primary" size="lg" disabled={isPending} className="mt-4 w-full">
+          <Button
+            type="submit"
+            kind="primary"
+            size="lg"
+            disabled={isPending}
+            className="mt-4 w-full"
+          >
             {isPending ? 'Sending…' : 'Send the enquiry'}
             <span aria-hidden="true">{isPending ? '' : '→'}</span>
           </Button>
 
-          <p className="mt-3 text-[11.5px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted mt-3 text-[11.5px] leading-[1.55]">
             No account needed. We reply from the Dubai export desk, Mon–Fri 09:00–18:00 GST.
           </p>
         </form>

@@ -4,7 +4,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { MAX_COMPARE } from '@indus/domain'
-import { clearTray, compareUrl, getTray, removeFromTray, type CompareTrayItem, COMPARE_TRAY_EVENT } from '../lib/compare-tray'
+import {
+  clearTray,
+  compareUrl,
+  getTray,
+  removeFromTray,
+  type CompareTrayItem,
+  COMPARE_TRAY_EVENT,
+} from '../lib/compare-tray'
 
 /**
  * The docked compare tray.
@@ -41,7 +48,10 @@ export default function CompareTrayBadge() {
   const remaining = MAX_COMPARE - tray.length
 
   return (
-    <div data-bottom-dock className="fixed inset-x-0 bottom-0 z-40 animate-[ih-dock_220ms_cubic-bezier(.32,.72,0,1)] border-t border-ih-navy-2 bg-ih-navy motion-reduce:animate-none">
+    <div
+      data-bottom-dock
+      className="border-ih-navy-2 bg-ih-navy fixed inset-x-0 bottom-0 z-40 animate-[ih-dock_220ms_cubic-bezier(.32,.72,0,1)] border-t motion-reduce:animate-none"
+    >
       {/* Count changes are announced — the tray is otherwise a purely visual
           confirmation that a click did anything. 03 §8. */}
       <p aria-live="polite" className="sr-only">
@@ -50,8 +60,10 @@ export default function CompareTrayBadge() {
 
       <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-4 px-5 py-3 sm:px-8 xl:px-12">
         <div className="shrink-0">
-          <div className="font-mono text-[22px] leading-none tabular-nums text-white">{tray.length}</div>
-          <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-ih-steel">
+          <div className="font-mono text-[22px] leading-none text-white tabular-nums">
+            {tray.length}
+          </div>
+          <div className="text-ih-steel mt-1 font-mono text-[10px] tracking-[0.12em] uppercase">
             of {MAX_COMPARE} staged
           </div>
         </div>
@@ -60,22 +72,30 @@ export default function CompareTrayBadge() {
           {tray.map((item) => (
             <li
               key={item.sku}
-              className="flex items-center gap-2.5 rounded-md border border-ih-navy-2 bg-ih-navy-2/50 py-1.5 pl-1.5 pr-2.5"
+              className="border-ih-navy-2 bg-ih-navy-2/50 flex items-center gap-2.5 rounded-md border py-1.5 pr-2.5 pl-1.5"
             >
               <span className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-sm bg-white">
                 {item.imageUrl ? (
-                  <Image src={item.imageUrl} alt="" fill className="object-contain p-1" sizes="36px" />
+                  <Image
+                    src={item.imageUrl}
+                    alt=""
+                    fill
+                    className="object-contain p-1"
+                    sizes="36px"
+                  />
                 ) : (
-                  <span className="font-mono text-[8px] text-ih-muted">IH</span>
+                  <span className="text-ih-muted font-mono text-[8px]">IH</span>
                 )}
               </span>
               <span className="min-w-0">
                 {item.title && (
-                  <span className="block max-w-[190px] truncate text-[12.5px] font-medium leading-tight text-white">
+                  <span className="block max-w-[190px] truncate text-[12.5px] leading-tight font-medium text-white">
                     {item.title}
                   </span>
                 )}
-                <span className="mt-0.5 block font-mono text-[10.5px] text-[oklch(0.75_0.02_250)]">{item.sku}</span>
+                <span className="mt-0.5 block font-mono text-[10.5px] text-[oklch(0.75_0.02_250)]">
+                  {item.sku}
+                </span>
               </span>
               <button
                 type="button"
@@ -93,7 +113,7 @@ export default function CompareTrayBadge() {
           {remaining > 0 && (
             <li
               aria-hidden="true"
-              className="flex h-[52px] items-center rounded-md border border-dashed border-ih-navy-2 px-4 font-mono text-[10.5px] uppercase tracking-[0.1em] text-[oklch(0.68_0.03_250)]"
+              className="border-ih-navy-2 flex h-[52px] items-center rounded-md border border-dashed px-4 font-mono text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase"
             >
               add {remaining} more
             </li>
@@ -110,7 +130,7 @@ export default function CompareTrayBadge() {
           </button>
           <Link
             href={compareUrl(tray)}
-            className="inline-flex h-10 items-center rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover inline-flex h-10 items-center rounded-md px-[18px] text-[13.5px] font-medium transition-colors"
           >
             Compare {tray.length}
           </Link>

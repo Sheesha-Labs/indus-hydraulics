@@ -26,7 +26,7 @@ export function canonicalHostRedirect(
   host: string | null,
   pathname: string,
   search: string,
-  baseUrl: string,
+  baseUrl: string
 ): string | null {
   if (!host) return null
   const hostname = host.toLowerCase().replace(/:\d+$/, '')

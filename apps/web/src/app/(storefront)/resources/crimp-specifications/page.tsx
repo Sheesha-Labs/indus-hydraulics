@@ -15,7 +15,15 @@ import { HairlineCell, HairlineGrid, JsonLd } from '@indus/ui'
 import CrimpFinder from '../../../../components/resources/CrimpFinder'
 import ResourcePage from '../../../../components/resources/ResourcePage'
 import { ResourceSection } from '../../../../components/resources/ResourceLayout'
-import { RefTable, TD, TD_NUM, TD_ROW_HEAD, TH, TH_NUM, TR } from '../../../../components/resources/RefTable'
+import {
+  RefTable,
+  TD,
+  TD_NUM,
+  TD_ROW_HEAD,
+  TH,
+  TH_NUM,
+  TR,
+} from '../../../../components/resources/RefTable'
 import { getResourcesShared } from '../../../../lib/resources-content'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 
@@ -76,7 +84,14 @@ export default async function CrimpSpecificationsPage() {
     description: `Finished crimp diameter and die position for ${totals.settings} hose and fitting series combinations.`,
     url: urlFor(PATH),
     isAccessibleForFree: true,
-    variableMeasured: ['Hose type', 'Dash size', 'Fitting series', 'Crimp diameter (in)', 'Crimp diameter (mm)', 'Die position'],
+    variableMeasured: [
+      'Hose type',
+      'Dash size',
+      'Fitting series',
+      'Crimp diameter (in)',
+      'Crimp diameter (mm)',
+      'Die position',
+    ],
   }
 
   return (
@@ -124,8 +139,9 @@ export default async function CrimpSpecificationsPage() {
           title: 'A matched pair, never a universal chart',
           body: (
             <>
-              Each figure is for one maker’s hose in the same maker’s fitting series. Another maker’s 100R2, or a fitting
-              from another series, needs that maker’s figure — the outside diameters, wire and ferrule wall all differ.
+              Each figure is for one maker’s hose in the same maker’s fitting series. Another
+              maker’s 100R2, or a fitting from another series, needs that maker’s figure — the
+              outside diameters, wire and ferrule wall all differ.
             </>
           ),
         }}
@@ -141,24 +157,31 @@ export default async function CrimpSpecificationsPage() {
         >
           <div
             role="note"
-            className="mb-5 flex gap-3 rounded-md border border-[oklch(0.86_0.08_78)] bg-ih-warning-soft px-4 py-3.5"
+            className="bg-ih-warning-soft mb-5 flex gap-3 rounded-md border border-[oklch(0.86_0.08_78)] px-4 py-3.5"
           >
-            <span className="mono shrink-0 pt-px text-[10px] uppercase tracking-[0.12em] text-ih-warning-ink">Read first</span>
-            <p className="text-[13.5px] leading-[1.6] text-ih-ink-2">
-              These settings apply only to the hose and fitting series named in each row. Never crimp another maker’s hose
-              or fitting to them. If you are not sure whose hose you have,{' '}
-              <Link href="/blog/how-to-read-a-hose-layline" className="text-ih-accent hover:underline">
+            <span className="mono text-ih-warning-ink shrink-0 pt-px text-[10px] tracking-[0.12em] uppercase">
+              Read first
+            </span>
+            <p className="text-ih-ink-2 text-[13.5px] leading-[1.6]">
+              These settings apply only to the hose and fitting series named in each row. Never
+              crimp another maker’s hose or fitting to them. If you are not sure whose hose you
+              have,{' '}
+              <Link
+                href="/blog/how-to-read-a-hose-layline"
+                className="text-ih-accent hover:underline"
+              >
                 read the layline
               </Link>{' '}
               or send us a photo.
             </p>
           </div>
           <CrimpFinder />
-          <p className="mt-4 text-[12.5px] leading-[1.6] text-ih-muted">
-            Die positions: <strong className="font-medium text-ih-ink-2">{CRIMP_DIE_POSITIONS.full.label}</strong> —{' '}
-            {CRIMP_DIE_POSITIONS.full.description.toLowerCase()}{' '}
-            <strong className="font-medium text-ih-ink-2">{CRIMP_DIE_POSITIONS.knurl.label}</strong> —{' '}
-            {CRIMP_DIE_POSITIONS.knurl.description.toLowerCase()}
+          <p className="text-ih-muted mt-4 text-[12.5px] leading-[1.6]">
+            Die positions:{' '}
+            <strong className="text-ih-ink-2 font-medium">{CRIMP_DIE_POSITIONS.full.label}</strong>{' '}
+            — {CRIMP_DIE_POSITIONS.full.description.toLowerCase()}{' '}
+            <strong className="text-ih-ink-2 font-medium">{CRIMP_DIE_POSITIONS.knurl.label}</strong>{' '}
+            — {CRIMP_DIE_POSITIONS.knurl.description.toLowerCase()}
           </p>
         </ResourceSection>
 
@@ -168,9 +191,13 @@ export default async function CrimpSpecificationsPage() {
           title="Measuring a finished crimp."
           lede={
             <>
-              The crimper’s dial is a setting, not a result. Tooling wear and die tolerances move the finished diameter, so
-              every first crimp of a run gets measured. Why it matters is in{' '}
-              <Link href="/blog/hydraulic-hose-crimp-faults" className="text-ih-accent hover:underline">
+              The crimper’s dial is a setting, not a result. Tooling wear and die tolerances move
+              the finished diameter, so every first crimp of a run gets measured. Why it matters is
+              in{' '}
+              <Link
+                href="/blog/hydraulic-hose-crimp-faults"
+                className="text-ih-accent hover:underline"
+              >
                 crimp too tight, crimp too loose
               </Link>
               .
@@ -179,12 +206,12 @@ export default async function CrimpSpecificationsPage() {
         >
           <HairlineGrid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
             {MEASURE_STEPS.map((step, i) => (
-              <HairlineCell key={step.title} className="flex flex-col gap-2 px-5 pb-5 pt-[18px]">
-                <span className="font-mono text-[10.5px] tracking-[0.1em] text-ih-accent">
+              <HairlineCell key={step.title} className="flex flex-col gap-2 px-5 pt-[18px] pb-5">
+                <span className="text-ih-accent font-mono text-[10.5px] tracking-[0.1em]">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <h3 className="text-[15.5px] font-medium tracking-[-0.02em]">{step.title}</h3>
-                <p className="text-[12.5px] leading-[1.6] text-ih-muted">{step.body}</p>
+                <p className="text-ih-muted text-[12.5px] leading-[1.6]">{step.body}</p>
               </HairlineCell>
             ))}
           </HairlineGrid>
@@ -270,7 +297,9 @@ export default async function CrimpSpecificationsPage() {
                 <th scope="row" className={TD_ROW_HEAD}>
                   {series.name}
                 </th>
-                <td className={`${TD} whitespace-normal font-sans text-[13.5px]`}>{series.description}</td>
+                <td className={`${TD} font-sans text-[13.5px] whitespace-normal`}>
+                  {series.description}
+                </td>
                 <td className={TD_NUM}>{countBySeries.get(series.code) ?? 0}</td>
                 <td className={`${TD} font-sans text-[13px]`}>
                   {series.href ? (

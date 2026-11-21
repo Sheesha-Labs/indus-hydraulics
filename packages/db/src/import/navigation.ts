@@ -32,7 +32,7 @@ export type NavReplaceResult = {
  */
 export async function replacePlaceholderLeaves(
   config: NavReplaceLeavesConfig,
-  tx: Tx,
+  tx: Tx
 ): Promise<NavReplaceResult> {
   const warnings: string[] = []
 
@@ -53,7 +53,7 @@ export async function replacePlaceholderLeaves(
   })
   if (!parentCategory) {
     warnings.push(
-      `Parent column category "${config.parentColumnCategorySlug}" not found — skipping nav linking`,
+      `Parent column category "${config.parentColumnCategorySlug}" not found — skipping nav linking`
     )
     return { leavesDeleted: 0, leavesInserted: 0, warnings }
   }
@@ -69,7 +69,7 @@ export async function replacePlaceholderLeaves(
   if (!column) {
     if (!config.createColumnIfMissing) {
       warnings.push(
-        `No top-level megamenu column found with category="${config.parentColumnCategorySlug}" — skipping nav linking`,
+        `No top-level megamenu column found with category="${config.parentColumnCategorySlug}" — skipping nav linking`
       )
       return { leavesDeleted: 0, leavesInserted: 0, warnings }
     }
@@ -123,7 +123,7 @@ export async function replacePlaceholderLeaves(
   if (!subItem) {
     if (!config.createSubSectionIfMissing) {
       warnings.push(
-        `No sub-section labelled "${config.parentSubLabel}" under "${config.parentColumnCategorySlug}" — skipping nav linking`,
+        `No sub-section labelled "${config.parentSubLabel}" under "${config.parentColumnCategorySlug}" — skipping nav linking`
       )
       return { leavesDeleted: 0, leavesInserted: 0, warnings }
     }
@@ -188,7 +188,9 @@ export async function replacePlaceholderLeaves(
     const r = config.replacements[idx]!
     const categoryId = catIdBySlug.get(r.categorySlug)
     if (!categoryId) {
-      warnings.push(`Replacement target category "${r.categorySlug}" not found — leaf "${r.label}" not inserted`)
+      warnings.push(
+        `Replacement target category "${r.categorySlug}" not found — leaf "${r.label}" not inserted`
+      )
       continue
     }
     await tx.navMenuItem.create({

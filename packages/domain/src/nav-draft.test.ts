@@ -193,10 +193,7 @@ describe('draftDepths', () => {
   })
 
   it('does not hang on a cycle in client state', () => {
-    const items = [
-      item({ uid: 'x', parentUid: 'y' }),
-      item({ uid: 'y', parentUid: 'x' }),
-    ]
+    const items = [item({ uid: 'x', parentUid: 'y' }), item({ uid: 'y', parentUid: 'x' })]
     // A cycle would otherwise recurse until the stack gives out, taking the
     // whole editor down during a render rather than failing a save.
     expect(() => draftDepths(items)).not.toThrow()
@@ -204,7 +201,13 @@ describe('draftDepths', () => {
 })
 
 describe('navRowUnchanged', () => {
-  const before = { parentId: 'p', position: 2, label: 'Pumps', isVisible: true, customUrl: '/c/pumps' }
+  const before = {
+    parentId: 'p',
+    position: 2,
+    label: 'Pumps',
+    isVisible: true,
+    customUrl: '/c/pumps',
+  }
 
   it('is true when nothing differs', () => {
     expect(
@@ -212,7 +215,7 @@ describe('navRowUnchanged', () => {
         parentId: 'p',
         position: 2,
         columns: { label: 'Pumps', isVisible: true, customUrl: '/c/pumps' },
-      }),
+      })
     ).toBe(true)
   })
 
@@ -222,7 +225,7 @@ describe('navRowUnchanged', () => {
         parentId: 'p',
         position: 2,
         columns: { label: 'Renamed', isVisible: true, customUrl: '/c/pumps' },
-      }),
+      })
     ).toBe(false)
   })
 
@@ -234,7 +237,7 @@ describe('navRowUnchanged', () => {
         parentId: 'p',
         position: 0,
         columns: { label: 'Pumps', isVisible: true, customUrl: '/c/pumps' },
-      }),
+      })
     ).toBe(false)
   })
 
@@ -244,7 +247,7 @@ describe('navRowUnchanged', () => {
         parentId: 'other',
         position: 2,
         columns: { label: 'Pumps', isVisible: true, customUrl: '/c/pumps' },
-      }),
+      })
     ).toBe(false)
   })
 
@@ -254,7 +257,7 @@ describe('navRowUnchanged', () => {
         parentId: 'p',
         position: 2,
         columns: { label: 'Pumps', isVisible: true, customUrl: null },
-      }),
+      })
     ).toBe(false)
   })
 })

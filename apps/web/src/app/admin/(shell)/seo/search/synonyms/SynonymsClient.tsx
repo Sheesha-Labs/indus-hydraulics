@@ -25,8 +25,8 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
         termsRaw
           .split(/[,\n]/)
           .map((t) => t.trim().toLowerCase())
-          .filter((t) => t.length > 0),
-      ),
+          .filter((t) => t.length > 0)
+      )
     )
     startTransition(async () => {
       const res = await upsertSynonymGroup(formData)
@@ -37,12 +37,10 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
       setGroups((prev) => {
         const exists = prev.find((g) => g.group === groupName)
         if (exists) {
-          return prev.map((g) =>
-            g.group === groupName ? { ...g, terms, isActive: true } : g,
-          )
+          return prev.map((g) => (g.group === groupName ? { ...g, terms, isActive: true } : g))
         }
         return [...prev, { group: groupName, terms, isActive: true }].sort((a, b) =>
-          a.group.localeCompare(b.group),
+          a.group.localeCompare(b.group)
         )
       })
       setEditing(null)
@@ -50,7 +48,12 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
   }
 
   function handleDelete(group: string) {
-    if (!confirm(`Delete the synonym group "${group}"? Storefront search will lose the expansion immediately.`)) return
+    if (
+      !confirm(
+        `Delete the synonym group "${group}"? Storefront search will lose the expansion immediately.`
+      )
+    )
+      return
     setError(null)
     startTransition(async () => {
       const res = await deleteSynonymGroup(group)
@@ -76,30 +79,31 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
 
   return (
     <div className="max-w-[860px]">
-      <div className="mb-6 max-w-[640px] text-[13px] text-ih-muted">
-        Synonyms are bidirectional within a group. When a shopper searches for any term in a
-        group, the FTS query expands to include all of the group&apos;s terms.
+      <div className="text-ih-muted mb-6 max-w-[640px] text-[13px]">
+        Synonyms are bidirectional within a group. When a shopper searches for any term in a group,
+        the FTS query expands to include all of the group&apos;s terms.
       </div>
 
       {/* Add new group */}
-      <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
-        <summary className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
+      <details className="border-ih-border bg-ih-surface mb-6 rounded-lg border p-4">
+        <summary className="text-ih-muted cursor-pointer text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           Add synonym group
         </summary>
-        <form action={handleSave} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
+        <form action={handleSave} className="mt-3 grid grid-cols-[200px_1fr_auto] items-end gap-3">
           <div>
-            <label htmlFor="synonym-group" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="synonym-group"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Group name
             </label>
-            <Input
-              id="synonym-group"
-              name="group"
-              type="text"
-              required
-              placeholder="o-ring" />
+            <Input id="synonym-group" name="group" type="text" required placeholder="o-ring" />
           </div>
           <div>
-            <label htmlFor="synonym-terms" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="synonym-terms"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Terms (comma- or newline-separated)
             </label>
             <Input
@@ -107,12 +111,13 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
               name="terms"
               type="text"
               required
-              placeholder="o-ring, oring, o ring" />
+              placeholder="o-ring, oring, o ring"
+            />
           </div>
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] tabular-nums disabled:opacity-50"
           >
             Add
           </button>
@@ -120,20 +125,20 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink mb-4 text-[12px] tabular-nums" role="alert">
           {error}
         </p>
       )}
 
       {groups.length === 0 ? (
-        <div className="py-16 text-center rounded-lg border border-ih-border">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted text-[13px]">No synonym groups yet.</p>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>Group</Th>
                 <Th>Terms</Th>
                 <Th>Status</Th>
@@ -144,14 +149,14 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
               {groups.map((g) => (
                 <tr
                   key={g.group}
-                  className="border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b align-top last:border-0"
                 >
-                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2 whitespace-nowrap">
+                  <td className="text-ih-ink-2 px-3 py-3 text-[12px] whitespace-nowrap tabular-nums">
                     {g.group}
                   </td>
                   <td className="px-3 py-3">
                     {editing === g.group ? (
-                      <form action={handleSave} className="flex gap-2 items-center">
+                      <form action={handleSave} className="flex items-center gap-2">
                         <input type="hidden" name="group" value={g.group} />
                         {/*
                           No id: this renders once per row, so a static one
@@ -164,18 +169,20 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                           name="terms"
                           type="text"
                           aria-label={`Terms for ${g.group}`}
-                          defaultValue={g.terms.join(', ')} className="flex-1 h-8 text-[12px]" />
+                          defaultValue={g.terms.join(', ')}
+                          className="h-8 flex-1 text-[12px]"
+                        />
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg tabular-nums text-[11px] disabled:opacity-50"
+                          className="bg-ih-accent text-ih-accent-fg h-8 px-3 text-[11px] tabular-nums disabled:opacity-50"
                         >
                           Save
                         </button>
                         <button
                           type="button"
                           onClick={() => setEditing(null)}
-                          className="rounded-md h-8 px-3 border border-ih-border tabular-nums text-[11px]"
+                          className="border-ih-border h-8 rounded-md border px-3 text-[11px] tabular-nums"
                         >
                           Cancel
                         </button>
@@ -185,7 +192,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         {g.terms.map((t) => (
                           <span
                             key={t}
-                            className="rounded-[3px] px-1.5 py-0.5 tabular-nums text-[11px] bg-ih-surface-2 border border-ih-border"
+                            className="bg-ih-surface-2 border-ih-border rounded-[3px] border px-1.5 py-0.5 text-[11px] tabular-nums"
                           >
                             {t}
                           </span>
@@ -198,7 +205,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       type="button"
                       onClick={() => handleToggle(g.group, g.isActive)}
                       disabled={pending}
-                      className={`tabular-nums text-[11px] px-2 py-0.5 ${
+                      className={`px-2 py-0.5 text-[11px] tabular-nums ${
                         g.isActive
                           ? 'text-ih-success-ink bg-ih-success-soft'
                           : 'text-ih-muted bg-ih-surface-2'
@@ -212,12 +219,17 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       <button
                         type="button"
                         onClick={() => setEditing(g.group)}
-                        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink mr-3"
+                        className="text-ih-muted hover:text-ih-ink mr-3 text-[11px] tabular-nums"
                       >
                         Edit
                       </button>
                     )}
-                    <DeleteButton label={`Delete synonym group ${g.group}`} size="sm" onClick={() => handleDelete(g.group)} disabled={pending} />
+                    <DeleteButton
+                      label={`Delete synonym group ${g.group}`}
+                      size="sm"
+                      onClick={() => handleDelete(g.group)}
+                      disabled={pending}
+                    />
                   </td>
                 </tr>
               ))}
@@ -231,7 +243,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

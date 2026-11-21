@@ -37,13 +37,15 @@ export function RefTable({
   children: ReactNode
 }) {
   return (
-    <div className="overflow-x-auto rounded-lg border border-ih-border bg-ih-surface">
-      <table className={`w-full border-collapse font-mono text-[13px] tabular-nums ${minWidthClass}`}>
+    <div className="border-ih-border bg-ih-surface overflow-x-auto rounded-lg border">
+      <table
+        className={`w-full border-collapse font-mono text-[13px] tabular-nums ${minWidthClass}`}
+      >
         <caption
           className={
             captionHidden
               ? 'sr-only'
-              : 'caption-top border-b border-ih-border px-3.5 py-2.5 text-left text-[10.5px] uppercase tracking-[0.12em] text-ih-muted'
+              : 'border-ih-border text-ih-muted caption-top border-b px-3.5 py-2.5 text-left text-[10.5px] tracking-[0.12em] uppercase'
           }
         >
           {caption}
@@ -60,7 +62,7 @@ export function Dual({ inches, millimetres }: { inches: string; millimetres: str
   return (
     <>
       {inches}
-      <span className="ml-2 text-ih-muted">{millimetres}</span>
+      <span className="text-ih-muted ml-2">{millimetres}</span>
     </>
   )
 }

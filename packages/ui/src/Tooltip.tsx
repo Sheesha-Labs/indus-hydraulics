@@ -89,7 +89,7 @@ export function Tooltip({
             className={cn(
               // Inverted chip: ink ground, paper text. Reads over both the
               // surface and imagery, which a bordered light bubble does not.
-              'z-50 max-w-[280px] rounded-md bg-ih-ink px-2.5 py-1.5',
+              'bg-ih-ink z-50 max-w-[280px] rounded-md px-2.5 py-1.5',
               'font-sans text-[12px] leading-[1.45] text-white',
               'shadow-2 select-none',
               'data-[state=delayed-open]:animate-[ih-fade-in_100ms_ease-out]',

@@ -18,16 +18,18 @@ import type { ReferencesBlock } from '@indus/domain'
  */
 export default function ReferencesBlockView({ block }: { block: ReferencesBlock }) {
   return (
-    <section className="mt-8 border-t border-ih-border pt-7">
-      <h2 className="mb-4 text-[17px] font-semibold text-ih-ink">{block.heading ?? 'References'}</h2>
+    <section className="border-ih-border mt-8 border-t pt-7">
+      <h2 className="text-ih-ink mb-4 text-[17px] font-semibold">
+        {block.heading ?? 'References'}
+      </h2>
       <ol className="list-none space-y-2.5 p-0">
         {block.entries.map((entry, i) => (
           <li
             key={entry.id}
             id={`ref-${entry.id}`}
-            className="grid scroll-mt-[124px] grid-cols-[2rem_1fr] text-[14px] leading-[1.6] text-ih-ink-2 min-[761px]:scroll-mt-[184px]"
+            className="text-ih-ink-2 grid scroll-mt-[124px] grid-cols-[2rem_1fr] text-[14px] leading-[1.6] min-[761px]:scroll-mt-[184px]"
           >
-            <span className="mono text-[11.5px] text-ih-muted">{i + 1}.</span>
+            <span className="mono text-ih-muted text-[11.5px]">{i + 1}.</span>
             <span>
               {entry.text}
               {entry.url ? (
@@ -38,7 +40,7 @@ export default function ReferencesBlockView({ block }: { block: ReferencesBlock 
                     rel="nofollow noopener"
                     target="_blank"
                     aria-label="Open source"
-                    className="mono inline-flex min-h-10 min-w-10 items-center justify-center text-[11.5px] text-ih-accent hover:underline"
+                    className="mono text-ih-accent inline-flex min-h-10 min-w-10 items-center justify-center text-[11.5px] hover:underline"
                   >
                     ↗
                   </a>

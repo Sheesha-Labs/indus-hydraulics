@@ -37,7 +37,7 @@ function parseBody(html: string): { doc: Document; body: HTMLElement } {
 
 function isEmptyParagraph(node: Element | null | undefined): boolean {
   return Boolean(
-    node && node.tagName === 'P' && node.children.length === 0 && !node.textContent?.trim(),
+    node && node.tagName === 'P' && node.children.length === 0 && !node.textContent?.trim()
   )
 }
 

@@ -33,10 +33,7 @@ export async function homeMetadata(): Promise<Metadata> {
   // Pull live counts so the meta description matches the catalogue we
   // actually have, not an aspirational number. Rounded down to the
   // nearest 100 so the claim stays defensible as new SKUs are added.
-  const [skuCount, brandCount] = await Promise.all([
-    getActiveSkuCount(),
-    getPublishedBrandCount(),
-  ])
+  const [skuCount, brandCount] = await Promise.all([getActiveSkuCount(), getPublishedBrandCount()])
   const skuFloor = Math.max(100, Math.floor(skuCount / 100) * 100)
   return {
     // `absolute`, because the brand is already in it. `/` sits in the same
@@ -88,7 +85,7 @@ const getHomeCategories = unstable_cache(
     // own count is zero and every card would read "0 SKUs".
     const rollup = rollUpCounts(
       new Map(allCategories.map((c) => [c.id, c.parentId])),
-      new Map(grouped.map((g) => [g.categoryId as string, g._count._all])),
+      new Map(grouped.map((g) => [g.categoryId as string, g._count._all]))
     )
     const published = allCategories.filter((c) => c.isPublished)
     return published
@@ -106,7 +103,7 @@ const getHomeCategories = unstable_cache(
       }))
   },
   ['home-category-index'],
-  { revalidate: 3600, tags: ['categories', 'product-count'] },
+  { revalidate: 3600, tags: ['categories', 'product-count'] }
 )
 
 // Every published brand with a logo — the same set /brands shows as logo
@@ -120,16 +117,25 @@ const getHomeBrands = unstable_cache(
       select: {
         slug: true,
         name: true,
-        logo: { select: { id: true, storagePath: true, alt: true, width: true, height: true, bytes: true } },
+        logo: {
+          select: {
+            id: true,
+            storagePath: true,
+            alt: true,
+            width: true,
+            height: true,
+            bytes: true,
+          },
+        },
         _count: { select: { products: { where: { status: 'active' } } } },
       },
     })
     return selectMarqueeBrands(
-      rows.map((b) => ({ slug: b.slug, name: b.name, logo: b.logo, skuCount: b._count.products })),
+      rows.map((b) => ({ slug: b.slug, name: b.name, logo: b.logo, skuCount: b._count.products }))
     )
   },
   ['home-brands-marquee'],
-  { revalidate: 3600, tags: ['brands'] },
+  { revalidate: 3600, tags: ['brands'] }
 )
 
 /** Tiles in the product sample — eight across, three rows, on a wide screen. */
@@ -184,14 +190,17 @@ const getHomeFeaturedProducts = unstable_cache(
           slug: row.slug,
           title: row.title,
           // §13: the listing's own alt, then the media's, then the title.
-          image: { storagePath: image.media.storagePath, alt: image.alt ?? image.media.alt ?? null },
+          image: {
+            storagePath: image.media.storagePath,
+            alt: image.alt ?? image.media.alt ?? null,
+          },
           category: { slug: root.slug, name: root.name },
         },
       ]
     })
   },
   ['home-product-mix'],
-  { revalidate: 3600, tags: ['products'] },
+  { revalidate: 3600, tags: ['products'] }
 )
 
 /** Articles in the home page's blog mosaic: a 2×2 lead and eight tiles. */
@@ -226,19 +235,19 @@ const getHomeBlogPosts = unstable_cache(
     }))
   },
   ['home-blog-mosaic'],
-  { revalidate: 3600, tags: ['blog-posts'] },
+  { revalidate: 3600, tags: ['blog-posts'] }
 )
 
 const getActiveSkuCount = unstable_cache(
   () => db.product.count({ where: { status: 'active' } }),
   ['home-active-sku-count'],
-  { revalidate: 3600, tags: ['product-count'] },
+  { revalidate: 3600, tags: ['product-count'] }
 )
 
 const getPublishedBrandCount = unstable_cache(
   () => db.brand.count({ where: { isPublished: true } }),
   ['home-published-brand-count'],
-  { revalidate: 3600, tags: ['brands'] },
+  { revalidate: 3600, tags: ['brands'] }
 )
 
 // Hero carousel slides (right-side visual). Cached longer than products
@@ -275,7 +284,7 @@ const getHomeHeroSlides = unstable_cache(
     }))
   },
   ['home-hero-slides'],
-  { revalidate: 3600, tags: ['homepage-hero'] },
+  { revalidate: 3600, tags: ['homepage-hero'] }
 )
 
 /**
@@ -290,7 +299,16 @@ const getHomeHeroSlides = unstable_cache(
  * each variant be cached on its own path.
  */
 export default async function HomeView({ geoCode }: { geoCode?: string | null }) {
-  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount, heroSlides, content] = await Promise.all([
+  const [
+    categories,
+    brands,
+    featuredProducts,
+    blogPosts,
+    activeSkuCount,
+    publishedBrandCount,
+    heroSlides,
+    content,
+  ] = await Promise.all([
     getHomeCategories(),
     getHomeBrands(),
     getHomeFeaturedProducts(),
@@ -314,6 +332,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   // hole in it.
   const heroLead = heroLeadFor(geoCode ?? null)
 
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const yearsInBusiness = new Date().getFullYear() - 2003
   // Match the hero claim to the catalogue we actually have. Rounded
   // down to the nearest 100 so the number can never overstate reality.
@@ -375,7 +394,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   const sections: Record<string, ReactNode> = {
     hero: (
       /* ── HERO ─────────────────────────────────────────────────────────── */
-      <section className="relative isolate overflow-hidden border-b border-ih-border bg-ih-surface">
+      <section className="border-ih-border bg-ih-surface relative isolate overflow-hidden border-b">
         {/* Phones only: the newsletter's blueprint texture, whitewashed, as
             the hero ground (owner call, 2026-11-19). Anchored on the hose
             linework (right of the file), faded in from the top so the
@@ -386,32 +405,31 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             browsers skip the download there. */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-[url('/textures/newsletter-blueprint-blue.jpg')] bg-[length:auto_115%] bg-[position:92%_70%] bg-no-repeat opacity-[0.55] [filter:invert(1)_hue-rotate(180deg)_saturate(0.9)] [mask-image:linear-gradient(180deg,transparent_0%,rgba(0,0,0,0.45)_30%,#000_65%,#000_100%)] sm:hidden"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[url('/textures/newsletter-blueprint-blue.jpg')] [mask-image:linear-gradient(180deg,transparent_0%,rgba(0,0,0,0.45)_30%,#000_65%,#000_100%)] bg-[length:auto_115%] bg-[position:92%_70%] bg-no-repeat opacity-[0.55] [filter:invert(1)_hue-rotate(180deg)_saturate(0.9)] sm:hidden"
         />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(120%_70%_at_0%_0%,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.55)_55%,rgba(255,255,255,0)_100%)] sm:hidden"
         />
-        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 pb-10 pt-6 sm:px-8 sm:py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 xl:px-12">
-
+        <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 pt-6 pb-10 sm:px-8 sm:py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 xl:px-12">
           {/* Left copy */}
           <div>
             {/* Phones open straight on the headline (owner call, 2026-11-19). */}
-            <span className="hidden font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted sm:inline">
+            <span className="text-ih-muted hidden font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase sm:inline">
               {t(str(hero, 'eyebrow'))}
             </span>
             {/* The rotating term sits on its own line deliberately. The six
                 terms differ in length; inline, every swap reflows the whole
                 headline, which reads as cheap. On its own line the reflow is
                 invisible and the term carries the emphasis anyway. */}
-            <h1 className="mb-4 mt-0 text-balance font-serif sm:mb-5 sm:mt-5 text-[clamp(38px,5vw,56px)] font-normal leading-[1.04] tracking-[-0.01em]">
+            <h1 className="mt-0 mb-4 font-serif text-[clamp(38px,5vw,56px)] leading-[1.04] font-normal tracking-[-0.01em] text-balance sm:mt-5 sm:mb-5">
               {/* An override replaces the country-aware line entirely — an
                   editor who types one has decided the geo wording is wrong for
                   everyone, not for one country. */}
               <span className="block">{t(str(hero, 'lead_override')) ?? heroLead}</span>
               <HeroTermRotator terms={HERO_TERMS} className="block" />
             </h1>
-            <p className="max-w-[540px] text-[16px] leading-[1.6] text-ih-ink-2">
+            <p className="text-ih-ink-2 max-w-[540px] text-[16px] leading-[1.6]">
               {t(str(hero, 'body'))}
             </p>
 
@@ -423,31 +441,35 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             <form
               action={`/search`}
               method="GET"
-              className="mt-6 flex max-w-[540px] flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-1.5 sm:rounded-md sm:border sm:border-ih-border-strong sm:bg-white sm:p-1.5 sm:shadow-[0_1px_2px_rgba(20,28,45,0.05),0_8px_24px_rgba(20,28,45,0.06)]"
+              className="sm:border-ih-border-strong mt-6 flex max-w-[540px] flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-1.5 sm:rounded-md sm:border sm:bg-white sm:p-1.5 sm:shadow-[0_1px_2px_rgba(20,28,45,0.05),0_8px_24px_rgba(20,28,45,0.06)]"
             >
               {/* On phones the category filter is a bar of its own above the
                   search row, so it reads as a separate control. */}
               <select
                 name="category"
                 aria-label="Category"
-                className="h-11 w-full rounded-md border border-ih-border-strong bg-ih-surface-2 px-3 text-[14px] font-medium text-ih-ink outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft sm:h-auto sm:w-[170px] sm:rounded-sm sm:border-0 sm:bg-transparent sm:text-[13.5px] sm:font-normal sm:text-ih-ink-2"
+                className="border-ih-border-strong bg-ih-surface-2 text-ih-ink focus-visible:ring-ih-accent-soft sm:text-ih-ink-2 h-11 w-full rounded-md border px-3 text-[14px] font-medium outline-none focus-visible:ring-[3px] sm:h-auto sm:w-[170px] sm:rounded-sm sm:border-0 sm:bg-transparent sm:text-[13.5px] sm:font-normal"
               >
                 <option value="">All categories</option>
                 {categories.map((c) => (
-                  <option key={c.slug} value={c.slug}>{c.name}</option>
+                  <option key={c.slug} value={c.slug}>
+                    {c.name}
+                  </option>
                 ))}
               </select>
-              <div className="flex min-w-0 flex-1 gap-1.5 rounded-md border border-ih-border-strong bg-white p-1.5 shadow-[0_1px_2px_rgba(20,28,45,0.05),0_8px_24px_rgba(20,28,45,0.06)] sm:border-0 sm:p-0 sm:shadow-none">
+              <div className="border-ih-border-strong flex min-w-0 flex-1 gap-1.5 rounded-md border bg-white p-1.5 shadow-[0_1px_2px_rgba(20,28,45,0.05),0_8px_24px_rgba(20,28,45,0.06)] sm:border-0 sm:p-0 sm:shadow-none">
                 <input
                   name="q"
                   type="search"
                   aria-label="Search the catalogue"
-                  placeholder={str(hero, 'search_placeholder') ?? 'Search by SKU, spec or part number…'}
-                  className="w-full min-w-0 flex-1 rounded-sm border-0 bg-white px-3 py-2 text-[14px] text-ih-ink outline-none placeholder:text-ih-muted focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft sm:text-[13.5px]"
+                  placeholder={
+                    str(hero, 'search_placeholder') ?? 'Search by SKU, spec or part number…'
+                  }
+                  className="text-ih-ink placeholder:text-ih-muted focus-visible:ring-ih-accent-soft w-full min-w-0 flex-1 rounded-sm border-0 bg-white px-3 py-2 text-[14px] outline-none focus-visible:ring-[3px] sm:text-[13.5px]"
                 />
                 <button
                   type="submit"
-                  className="h-10 shrink-0 rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+                  className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-10 shrink-0 rounded-md px-[18px] text-[13.5px] font-medium transition-colors"
                 >
                   {str(hero, 'search_button') ?? 'Search'}
                 </button>
@@ -458,9 +480,16 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             {heroStats.length > 0 ? (
               <div className="mt-10 hidden grid-cols-2 gap-7 sm:grid sm:grid-cols-4">
                 {heroStats.map((stat, i) => (
-                  <div key={`${stat.label ?? ''}-${i}`} className="border-t-2 border-ih-accent pt-3.5">
-                    <span className="block font-mono text-[26px] leading-none tracking-[-0.03em] tabular-nums">{t(stat.value ?? '')}</span>
-                    <span className="mt-2.5 block font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{stat.label}</span>
+                  <div
+                    key={`${stat.label ?? ''}-${i}`}
+                    className="border-ih-accent border-t-2 pt-3.5"
+                  >
+                    <span className="block font-mono text-[26px] leading-none tracking-[-0.03em] tabular-nums">
+                      {t(stat.value ?? '')}
+                    </span>
+                    <span className="text-ih-muted mt-2.5 block font-mono text-[10.5px] tracking-[0.1em] uppercase">
+                      {stat.label}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -475,36 +504,42 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             {heroSlides.length > 0 ? (
               <HomeHeroCarousel slides={heroSlides} />
             ) : (
-              <div className="relative aspect-[1.05/1] overflow-hidden border border-ih-border bg-ih-bg">
+              <div className="border-ih-border bg-ih-bg relative aspect-[1.05/1] overflow-hidden border">
                 {/* Grid overlay */}
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,currentColor_1px,transparent_1px),linear-gradient(to_bottom,currentColor_1px,transparent_1px)] bg-[length:40px_40px] opacity-[0.04]" />
                 {/* Floating callouts */}
-                <div className="absolute top-8 left-8 bg-ih-navy text-white font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-ih-accent shrink-0" />
+                <div className="bg-ih-navy absolute top-8 left-8 flex items-center gap-2 px-3 py-2 font-mono text-[11px] tracking-[0.06em] text-white">
+                  <span className="bg-ih-accent h-1.5 w-1.5 shrink-0 rounded-full" />
                   EXPLODED VIEW · 01
                 </div>
-                <div className="absolute top-1/2 right-6 -translate-y-1/2 bg-ih-navy text-white font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-ih-accent shrink-0" />
+                <div className="bg-ih-navy absolute top-1/2 right-6 flex -translate-y-1/2 items-center gap-2 px-3 py-2 font-mono text-[11px] tracking-[0.06em] text-white">
+                  <span className="bg-ih-accent h-1.5 w-1.5 shrink-0 rounded-full" />
                   P-MAX 350 BAR
                 </div>
-                <div className="absolute bottom-20 right-8 bg-ih-navy text-white font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-ih-accent shrink-0" />
+                <div className="bg-ih-navy absolute right-8 bottom-20 flex items-center gap-2 px-3 py-2 font-mono text-[11px] tracking-[0.06em] text-white">
+                  <span className="bg-ih-accent h-1.5 w-1.5 shrink-0 rounded-full" />
                   CETOP-3 · NG6
                 </div>
                 {/* Placeholder image area */}
-                <div className="absolute inset-6 border border-dashed border-ih-border-strong flex items-center justify-center">
+                <div className="border-ih-border-strong absolute inset-6 flex items-center justify-center border border-dashed">
                   <div className="text-center">
-                    <p className="font-mono text-[11px] text-ih-muted-2 leading-[1.7]">
-                      Hero render<br />
-                      &ldquo;Cutaway of axial piston pump&rdquo;<br />
+                    <p className="text-ih-muted-2 font-mono text-[11px] leading-[1.7]">
+                      Hero render
+                      <br />
+                      &ldquo;Cutaway of axial piston pump&rdquo;
+                      <br />
                       1200×1100 · transparent PNG
                     </p>
                   </div>
                 </div>
                 {/* Spec bar */}
-                <div className="absolute bottom-0 left-0 right-0 bg-ih-surface border-t border-ih-border px-4 py-3 flex justify-between font-mono text-[12px] text-ih-muted">
-                  <span>FILE: <strong className="text-ih-ink font-medium">HERO_PUMP_CUTAWAY.PNG</strong></span>
-                  <span>REV: <strong className="text-ih-ink font-medium">04 · 2026-04</strong></span>
+                <div className="bg-ih-surface border-ih-border text-ih-muted absolute right-0 bottom-0 left-0 flex justify-between border-t px-4 py-3 font-mono text-[12px]">
+                  <span>
+                    FILE: <strong className="text-ih-ink font-medium">HERO_PUMP_CUTAWAY.PNG</strong>
+                  </span>
+                  <span>
+                    REV: <strong className="text-ih-ink font-medium">04 · 2026-04</strong>
+                  </span>
                 </div>
               </div>
             )}
@@ -513,22 +548,25 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
       </section>
     ),
 
-    usp: uspItems.length > 0 ? (
-      /* ── USP STRIP ────────────────────────────────────────────────────── */
-      <section className="hidden bg-ih-navy py-[34px] text-[oklch(0.75_0.02_250)] sm:block">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {uspItems.map((item, i) => (
-            <div key={`${item.name ?? ''}-${i}`} className="flex gap-3.5 items-start">
-              <span className="mt-0.5 shrink-0 font-mono text-[11px] text-ih-steel">/{String(i + 1).padStart(2, '0')}</span>
-              <div>
-                <h4 className="text-[14px] font-medium text-white">{item.name}</h4>
-                <p className="mt-1.5 text-[12.5px] leading-[1.55]">{item.desc}</p>
+    usp:
+      uspItems.length > 0 ? (
+        /* ── USP STRIP ────────────────────────────────────────────────────── */
+        <section className="bg-ih-navy hidden py-[34px] text-[oklch(0.75_0.02_250)] sm:block">
+          <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-8 px-5 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 xl:px-12">
+            {uspItems.map((item, i) => (
+              <div key={`${item.name ?? ''}-${i}`} className="flex items-start gap-3.5">
+                <span className="text-ih-steel mt-0.5 shrink-0 font-mono text-[11px]">
+                  /{String(i + 1).padStart(2, '0')}
+                </span>
+                <div>
+                  <h4 className="text-[14px] font-medium text-white">{item.name}</h4>
+                  <p className="mt-1.5 text-[12.5px] leading-[1.55]">{item.desc}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    ) : null,
+            ))}
+          </div>
+        </section>
+      ) : null,
 
     brands: (
       /* ── BRANDS RAIL ──────────────────────────────────────────────────── */
@@ -537,21 +575,21 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
          bottom rule, so hero, strip and logos read as one block. It carries
          its own top and bottom padding, so it still sits cleanly if an
          editor moves it elsewhere under Pages & Blocks. */
-      <section className="border-b border-ih-border bg-ih-surface py-8 sm:py-12">
+      <section className="border-ih-border bg-ih-surface border-b py-8 sm:py-12">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="flex items-end justify-between mb-6">
+          <div className="mb-6 flex items-end justify-between">
             <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 {t(str(brandsCopy, 'eyebrow'))}
               </span>
-              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
+              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] leading-[1.12] font-normal tracking-[-0.01em]">
                 {t(str(brandsCopy, 'heading'))}
               </h2>
             </div>
             {str(brandsCopy, 'cta_label') && str(brandsCopy, 'cta_href') ? (
               <Link
                 href={str(brandsCopy, 'cta_href') ?? '/brands'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 hidden h-10 shrink-0 items-center border px-4 text-[13px] font-medium transition-colors sm:flex"
               >
                 {str(brandsCopy, 'cta_label')}
               </Link>
@@ -567,19 +605,19 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
       /* ── CATEGORIES ───────────────────────────────────────────────────── */
       <section className="py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="flex items-end justify-between mb-8">
+          <div className="mb-8 flex items-end justify-between">
             <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 {t(str(categoriesCopy, 'eyebrow'))}
               </span>
-              <h2 className="mt-2 font-serif text-[clamp(26px,3vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
+              <h2 className="mt-2 font-serif text-[clamp(26px,3vw,34px)] leading-[1.12] font-normal tracking-[-0.01em]">
                 {t(str(categoriesCopy, 'heading'))}
               </h2>
             </div>
             {str(categoriesCopy, 'cta_label') && str(categoriesCopy, 'cta_href') ? (
               <Link
                 href={str(categoriesCopy, 'cta_href') ?? '/c'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 hidden h-10 shrink-0 items-center border px-4 text-[13px] font-medium transition-colors sm:flex"
               >
                 {str(categoriesCopy, 'cta_label')}
               </Link>
@@ -593,7 +631,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
           {str(categoriesCopy, 'cta_label') && str(categoriesCopy, 'cta_href') ? (
             <Link
               href={str(categoriesCopy, 'cta_href') ?? '/c'}
-              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 mt-6 flex h-10 items-center justify-center rounded-md border text-[13px] font-medium transition-colors sm:hidden"
             >
               {str(categoriesCopy, 'cta_label')}
             </Link>
@@ -602,54 +640,61 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
       </section>
     ),
 
-    featured_products: featuredProducts.length > 0 ? (
-      /* ── FEATURED PRODUCTS ────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-10 sm:py-[72px]">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="flex items-end justify-between mb-8">
-            <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(featuredCopy, 'eyebrow'))}</span>
-              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">{t(str(featuredCopy, 'heading'))}</h2>
+    featured_products:
+      featuredProducts.length > 0 ? (
+        /* ── FEATURED PRODUCTS ────────────────────────────────────────────── */
+        <section className="border-ih-border border-t py-10 sm:py-[72px]">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+            <div className="mb-8 flex items-end justify-between">
+              <div>
+                <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+                  {t(str(featuredCopy, 'eyebrow'))}
+                </span>
+                <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] leading-[1.12] font-normal tracking-[-0.01em]">
+                  {t(str(featuredCopy, 'heading'))}
+                </h2>
+              </div>
+              {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
+                <Link
+                  href={str(featuredCopy, 'cta_href') ?? '/c'}
+                  className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 hidden h-10 shrink-0 items-center border px-4 text-[13px] font-medium transition-colors sm:flex"
+                >
+                  {str(featuredCopy, 'cta_label')}
+                </Link>
+              ) : null}
             </div>
+
+            <HomeProductMix products={featuredProducts} />
+
+            {/* The header's link is hidden below sm. */}
             {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
               <Link
                 href={str(featuredCopy, 'cta_href') ?? '/c'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 mt-6 flex h-10 items-center justify-center rounded-md border text-[13px] font-medium transition-colors sm:hidden"
               >
                 {str(featuredCopy, 'cta_label')}
               </Link>
             ) : null}
           </div>
-
-          <HomeProductMix products={featuredProducts} />
-
-          {/* The header's link is hidden below sm. */}
-          {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
-            <Link
-              href={str(featuredCopy, 'cta_href') ?? '/c'}
-              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
-            >
-              {str(featuredCopy, 'cta_label')}
-            </Link>
-          ) : null}
-        </div>
-      </section>
-    ) : null,
+        </section>
+      ) : null,
 
     industries: (
       /* ── INDUSTRIES ───────────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-10 sm:py-[72px]">
+      <section className="border-ih-border border-t py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="mb-8 flex items-end justify-between gap-6">
             <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(industriesCopy, 'eyebrow'))}</span>
-              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+                {t(str(industriesCopy, 'eyebrow'))}
+              </span>
+              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] leading-[1.12] font-normal tracking-[-0.01em]">
                 {t(str(industriesCopy, 'heading'))}
               </h2>
             </div>
             <Link
               href="/industries"
-              className="hidden h-10 shrink-0 items-center border border-ih-border px-4 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:flex"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 hidden h-10 shrink-0 items-center border px-4 text-[13px] font-medium transition-colors sm:flex"
             >
               All industries →
             </Link>
@@ -657,7 +702,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
           <HomeIndustryTiles industries={industries} />
           <Link
             href="/industries"
-            className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+            className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 mt-5 flex h-10 items-center justify-center rounded-md border text-[13px] font-medium transition-colors sm:hidden"
           >
             All industries →
           </Link>
@@ -667,14 +712,16 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     why: (
       /* ── WHY INDUS ────────────────────────────────────────────────────── */
-      <section className="border-t border-ih-border py-10 sm:py-[72px]">
+      <section className="border-ih-border border-t py-10 sm:py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 border border-ih-border bg-ih-surface overflow-hidden">
+          <div className="border-ih-border bg-ih-surface grid grid-cols-1 overflow-hidden border lg:grid-cols-2">
             {/* Left */}
-            <div className="p-12 flex flex-col gap-7">
+            <div className="flex flex-col gap-7 p-12">
               <div>
-                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(why, 'eyebrow'))}</span>
-                <h2 className="mt-4 max-w-[480px] font-serif text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.01em]">
+                <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+                  {t(str(why, 'eyebrow'))}
+                </span>
+                <h2 className="mt-4 max-w-[480px] font-serif text-[clamp(26px,3vw,36px)] leading-[1.15] font-normal tracking-[-0.01em]">
                   {t(str(why, 'heading'))}
                 </h2>
               </div>
@@ -682,12 +729,14 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                 {whyItems.map((item, i) => (
                   <div
                     key={`${item.name ?? ''}-${i}`}
-                    className={`grid grid-cols-[32px_1fr] gap-4 py-[18px] ${i > 0 ? 'border-t border-ih-border' : ''}`}
+                    className={`grid grid-cols-[32px_1fr] gap-4 py-[18px] ${i > 0 ? 'border-ih-border border-t' : ''}`}
                   >
-                    <span className="font-mono text-[13px] text-ih-accent pt-0.5">/{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-ih-accent pt-0.5 font-mono text-[13px]">
+                      /{String(i + 1).padStart(2, '0')}
+                    </span>
                     <div>
-                      <h4 className="text-[16px] font-semibold mb-1.5">{item.name}</h4>
-                      <p className="text-[14px] text-ih-muted leading-[1.5]">{item.desc}</p>
+                      <h4 className="mb-1.5 text-[16px] font-semibold">{item.name}</h4>
+                      <p className="text-ih-muted text-[14px] leading-[1.5]">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -695,7 +744,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             </div>
 
             {/* Right — dark panel with quote */}
-            <div className="relative flex min-h-[420px] flex-col justify-between overflow-hidden rounded-lg bg-ih-navy p-12 text-white">
+            <div className="bg-ih-navy relative flex min-h-[420px] flex-col justify-between overflow-hidden rounded-lg p-12 text-white">
               {/* The photograph, when one is picked: shown at full strength
                   under a black scrim — 70% at the top where the quote sits,
                   easing to 55% so the scene still reads — rather than faded
@@ -716,9 +765,11 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                   />
                 </>
               ) : (
-                <div className="absolute inset-0 opacity-[0.15] flex items-center justify-center">
-                  <p className="font-mono text-[11px] text-ih-muted text-center">
-                    &ldquo;Engineer at workbench&rdquo;<br />720×800
+                <div className="absolute inset-0 flex items-center justify-center opacity-[0.15]">
+                  <p className="text-ih-muted text-center font-mono text-[11px]">
+                    &ldquo;Engineer at workbench&rdquo;
+                    <br />
+                    720×800
                   </p>
                 </div>
               )}
@@ -726,13 +777,15 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                 {/* Steel, not accent: the accent blue drops under 3:1 on the dark
                     scrim; steel is the tone the navy USP strip uses for the
                     same job. */}
-                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-steel">{str(why, 'quote_eyebrow')}</span>
-                <p className="text-[22px] leading-[1.4] tracking-[-0.01em] max-w-[380px] mt-3">
+                <span className="text-ih-steel font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+                  {str(why, 'quote_eyebrow')}
+                </span>
+                <p className="mt-3 max-w-[380px] text-[22px] leading-[1.4] tracking-[-0.01em]">
                   &ldquo;{str(why, 'quote')}&rdquo;
                 </p>
               </div>
               {str(why, 'quote_name') ? (
-                <div className="relative flex items-center gap-3 mt-8 pt-8 border-t border-[oklch(1_0_0_/_0.1)]">
+                <div className="relative mt-8 flex items-center gap-3 border-t border-[oklch(1_0_0_/_0.1)] pt-8">
                   {quoteAvatar?.url ? (
                     <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-[oklch(1_0_0/0.18)]">
                       <Image
@@ -744,11 +797,13 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                       />
                     </span>
                   ) : (
-                    <div className="w-10 h-10 rounded-full bg-[#2a2e35] shrink-0" />
+                    <div className="h-10 w-10 shrink-0 rounded-full bg-[#2a2e35]" />
                   )}
                   <div>
                     <div className="text-[14px] font-medium">{str(why, 'quote_name')}</div>
-                    <div className="font-mono text-[12px] text-[#8a8f97]">{str(why, 'quote_title')}</div>
+                    <div className="font-mono text-[12px] text-[#8a8f97]">
+                      {str(why, 'quote_title')}
+                    </div>
                   </div>
                 </div>
               ) : null}
@@ -762,17 +817,19 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
       /* ── BLOG TEASER ──────────────────────────────────────────────────── */
       <section className="pb-10 sm:pb-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="flex items-end justify-between mb-8">
+          <div className="mb-8 flex items-end justify-between">
             <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(blog, 'eyebrow'))}</span>
-              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+                {t(str(blog, 'eyebrow'))}
+              </span>
+              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] leading-[1.12] font-normal tracking-[-0.01em]">
                 {t(str(blog, 'heading'))}
               </h2>
             </div>
             {str(blog, 'cta_label') && str(blog, 'cta_href') ? (
               <Link
                 href={str(blog, 'cta_href') ?? '/blog'}
-                className="hidden sm:flex h-10 px-4 items-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 hidden h-10 shrink-0 items-center border px-4 text-[13px] font-medium transition-colors sm:flex"
               >
                 {str(blog, 'cta_label')}
               </Link>
@@ -786,7 +843,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
               {str(blog, 'cta_label') && str(blog, 'cta_href') ? (
                 <Link
                   href={str(blog, 'cta_href') ?? '/blog'}
-                  className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+                  className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 mt-5 flex h-10 items-center justify-center rounded-md border text-[13px] font-medium transition-colors sm:hidden"
                 >
                   {str(blog, 'cta_label')}
                 </Link>
@@ -798,14 +855,12 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                links that all went to /blog — which reads as real editorial to
                a visitor and to a crawler. An empty rail is honest; a fake one
                is a credibility problem the moment it renders. */
-            <div className="rounded-lg border border-ih-border bg-ih-surface px-6 py-10 text-center">
-              <p className="text-[15px] text-ih-muted">
-                {str(blog, 'empty_message')}
-              </p>
+            <div className="border-ih-border bg-ih-surface rounded-lg border px-6 py-10 text-center">
+              <p className="text-ih-muted text-[15px]">{str(blog, 'empty_message')}</p>
               {str(blog, 'empty_cta_label') ? (
                 <Link
                   href={str(blog, 'cta_href') ?? '/blog'}
-                  className="mt-4 inline-flex h-10 items-center border border-ih-border px-4 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+                  className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 mt-4 inline-flex h-10 items-center border px-4 text-[13px] font-medium transition-colors"
                 >
                   {str(blog, 'empty_cta_label')}
                 </Link>
@@ -818,20 +873,23 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     newsletter: (
       /* ── NEWSLETTER CTA ───────────────────────────────────────────────── */
-      <section className="border-t border-ih-border pb-10 sm:pb-16">
+      <section className="border-ih-border border-t pb-10 sm:pb-16">
         <div className="mx-auto max-w-[1440px] px-5 pt-10 sm:px-8 sm:pt-16 xl:px-12">
           {/* Blueprint texture under a navy wash (owner call, 2026-11-19).
               The wash, not the photo, sets the contrast: white text stays
               above 7:1 over the brightest part of the linework. */}
-          <div className="relative isolate grid grid-cols-1 items-center gap-8 overflow-hidden rounded-[14px] bg-ih-navy bg-[url('/textures/newsletter-blueprint-blue.jpg')] bg-cover bg-[position:70%_center] p-6 text-white sm:gap-12 sm:p-12 lg:grid-cols-[1.2fr_1fr] lg:p-14">
-            <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(6,18,48,0.55)_0%,rgba(6,18,48,0.35)_55%,rgba(6,18,48,0.6)_100%)]" />
+          <div className="bg-ih-navy relative isolate grid grid-cols-1 items-center gap-8 overflow-hidden rounded-[14px] bg-[url('/textures/newsletter-blueprint-blue.jpg')] bg-cover bg-[position:70%_center] p-6 text-white sm:gap-12 sm:p-12 lg:grid-cols-[1.2fr_1fr] lg:p-14">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(6,18,48,0.55)_0%,rgba(6,18,48,0.35)_55%,rgba(6,18,48,0.6)_100%)]"
+            />
             <div>
               {/* On the accent band the eyebrow inverts — accent-on-accent
                   was invisible. */}
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-white/75">
+              <span className="font-mono text-[10.5px] font-medium tracking-[0.13em] text-white/75 uppercase">
                 {t(str(newsletter, 'eyebrow'))}
               </span>
-              <h2 className="mb-3 mt-3.5 font-serif text-[clamp(24px,3vw,32px)] font-normal leading-[1.15] tracking-[-0.01em]">
+              <h2 className="mt-3.5 mb-3 font-serif text-[clamp(24px,3vw,32px)] leading-[1.15] font-normal tracking-[-0.01em]">
                 {t(str(newsletter, 'heading'))}
               </h2>
               <p className="max-w-[460px] text-[15px] leading-[1.55] text-white/85">
@@ -848,7 +906,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
   return (
     <div>
       {content.order.map((key) =>
-        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null
       )}
     </div>
   )

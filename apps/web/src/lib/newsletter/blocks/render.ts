@@ -18,7 +18,16 @@
 import { BRAND, BRAND_FONT } from '@indus/domain'
 import { SOCIAL_NETWORKS, blockDef } from './catalogue'
 import { DEFAULT_SETTINGS, normaliseDesign, normaliseProps } from './document'
-import type { Block, Design, DesignSettings, ImageValue, Props, RecordKind, RecordLayout, RecordsValue } from './types'
+import type {
+  Block,
+  Design,
+  DesignSettings,
+  ImageValue,
+  Props,
+  RecordKind,
+  RecordLayout,
+  RecordsValue,
+} from './types'
 
 export type ResolvedRecord = {
   kind: RecordKind
@@ -41,7 +50,12 @@ export type DesignRenderContext = {
   /** Hidden preview text. */
   preheader?: string
   /** logoUrl = the logo for light grounds; logoOnDarkUrl = the white one, for navy bands. */
-  brand: { legalName: string; addressLines: string[]; logoUrl?: string | null; logoOnDarkUrl?: string | null }
+  brand: {
+    legalName: string
+    addressLines: string[]
+    logoUrl?: string | null
+    logoOnDarkUrl?: string | null
+  }
   /** Keyed `${kind}:${id}` (see recordKey); a missing record is silently left out of the email. */
   records: Map<string, ResolvedRecord>
   /** null = preview/test: the link renders as href="#" with the same text. */
@@ -69,12 +83,20 @@ export function recordKey(kind: RecordKind, id: string): string {
 // ── Small helpers ───────────────────────────────────────────────
 
 function esc(s: string): string {
-  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
 }
 
 const siteBase = (ctx: Pick<DesignRenderContext, 'siteUrl'>) => ctx.siteUrl.replace(/\/+$/, '')
 
-function tokenValue(name: string, ctx: Pick<DesignRenderContext, 'siteUrl' | 'unsubscribeUrl'>): string | null {
+function tokenValue(
+  name: string,
+  ctx: Pick<DesignRenderContext, 'siteUrl' | 'unsubscribeUrl'>
+): string | null {
   if (name === 'site_url') return siteBase(ctx)
   if (name === 'unsubscribe_url') return ctx.unsubscribeUrl ?? '#'
   return null
@@ -85,26 +107,37 @@ function fill(s: string, ctx: Pick<DesignRenderContext, 'siteUrl' | 'unsubscribe
 }
 
 /** A link field's value as an address an inbox may follow, or null. */
-function href(raw: unknown, ctx: Pick<DesignRenderContext, 'siteUrl' | 'unsubscribeUrl'>): string | null {
+function href(
+  raw: unknown,
+  ctx: Pick<DesignRenderContext, 'siteUrl' | 'unsubscribeUrl'>
+): string | null {
   if (typeof raw !== 'string') return null
   const value = fill(raw.trim(), ctx)
   if (!value) return null
   if (value === '#') return '#'
-  if (/^(https?:\/\/[^\s"'<>/][^\s"'<>]*|mailto:[^\s"'<>]+|tel:[^\s"'<>]+)$/i.test(value)) return value
+  if (/^(https?:\/\/[^\s"'<>/][^\s"'<>]*|mailto:[^\s"'<>]+|tel:[^\s"'<>]+)$/i.test(value))
+    return value
   if (/^\/(?!\/)[^\s"'<>\\]*$/.test(value)) return `${siteBase(ctx)}${value}`
   return null
 }
 
 /** An image address an inbox may load: https as is, a site path made absolute, anything else nothing. */
 function imageSrc(raw: unknown, ctx: Pick<DesignRenderContext, 'siteUrl'>): string {
-  const url = typeof raw === 'string' ? raw.trim() : raw && typeof raw === 'object' ? String((raw as ImageValue).url ?? '').trim() : ''
+  const url =
+    typeof raw === 'string'
+      ? raw.trim()
+      : raw && typeof raw === 'object'
+        ? String((raw as ImageValue).url ?? '').trim()
+        : ''
   if (/^https:\/\/[^\s"'<>()\\/][^\s"'<>()\\]*$/.test(url)) return url
   if (/^\/(?!\/)[^\s"'<>()\\]*$/.test(url)) return `${siteBase(ctx)}${url}`
   return ''
 }
 
 function imageAlt(v: unknown): string {
-  return v && typeof v === 'object' && typeof (v as ImageValue).alt === 'string' ? ((v as ImageValue).alt as string) : ''
+  return v && typeof v === 'object' && typeof (v as ImageValue).alt === 'string'
+    ? ((v as ImageValue).alt as string)
+    : ''
 }
 
 function str(props: Props, key: string): string {
@@ -121,8 +154,16 @@ function inline(raw: string, ctx: Ctx, linkColor: string): string {
   s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
   s = s.replace(/==(.+?)==/g, `<span style="color:${ctx.highlight}">$1</span>`)
   s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_m, label: string, target: string) => {
-    const to = href(target.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"'), ctx)
-    return to ? `<a href="${esc(to)}" style="color:${linkColor};text-decoration:underline">${label}</a>` : label
+    const to = href(
+      target
+        .replace(/&amp;/g, '&')
+        .replace(/&#39;/g, "'")
+        .replace(/&quot;/g, '"'),
+      ctx
+    )
+    return to
+      ? `<a href="${esc(to)}" style="color:${linkColor};text-decoration:underline">${label}</a>`
+      : label
   })
   return s.replace(/\n/g, '<br>')
 }
@@ -143,11 +184,21 @@ function paragraphs(raw: string, ctx: Ctx, style: string, linkColor: string): st
     .split(/\n{2,}/)
     .map((p) => p.trim())
     .filter(Boolean)
-  return list.map((p, i) => `<p style="margin:0 0 ${i === list.length - 1 ? 0 : 14}px 0;${style}">${inline(p, ctx, linkColor)}</p>`).join('')
+  return list
+    .map(
+      (p, i) =>
+        `<p style="margin:0 0 ${i === list.length - 1 ? 0 : 14}px 0;${style}">${inline(p, ctx, linkColor)}</p>`
+    )
+    .join('')
 }
 
 function font(ctx: Ctx, which: 'heading' | 'body' | 'serif' | 'sans'): string {
-  const choice = which === 'heading' ? ctx.settings.headingFont : which === 'body' ? ctx.settings.bodyFont : which
+  const choice =
+    which === 'heading'
+      ? ctx.settings.headingFont
+      : which === 'body'
+        ? ctx.settings.bodyFont
+        : which
   return BRAND_FONT[choice]
 }
 
@@ -164,7 +215,8 @@ function mix(fg: string, bg: string, amount: number): string {
   const a = Number.parseInt(fg.slice(1), 16)
   const b = Number.parseInt(bg.slice(1), 16)
   const t = Math.max(0, Math.min(1, amount))
-  const ch = (shift: number) => Math.round(((a >> shift) & 255) * t + ((b >> shift) & 255) * (1 - t))
+  const ch = (shift: number) =>
+    Math.round(((a >> shift) & 255) * t + ((b >> shift) & 255) * (1 - t))
   return `#${[16, 8, 0].map((sh) => ch(sh).toString(16).padStart(2, '0')).join('')}`
 }
 
@@ -174,7 +226,11 @@ function rgba(hex: string, opacity: number): string {
 }
 
 /** One block's row: full width, its own background and vertical padding. */
-function row(inner: string, props: Props, opts: { gutter?: boolean; padding?: number } = {}): string {
+function row(
+  inner: string,
+  props: Props,
+  opts: { gutter?: boolean; padding?: number } = {}
+): string {
   const bg = color(props.background, '')
   const pad = opts.padding ?? PAD[String(props.padding ?? 'm')] ?? 32
   const gutter = opts.gutter === false ? 0 : GUTTER
@@ -194,7 +250,15 @@ function eyebrow(text: string, ctx: Ctx, align: string, ink: string): string {
 function headingHtml(
   text: string,
   ctx: Ctx,
-  o: { size: unknown; align: string; ink: string; font?: unknown; level?: 1 | 2; margin?: number; caps?: unknown },
+  o: {
+    size: unknown
+    align: string
+    ink: string
+    font?: unknown
+    level?: 1 | 2
+    margin?: number
+    caps?: unknown
+  }
 ): string {
   if (!text) return ''
   ctx.text.push(plain(text, ctx))
@@ -213,7 +277,16 @@ function bodyStyle(ctx: Ctx, ink: string, align: string, size = 15): string {
   return `font-family:${font(ctx, 'body')};font-size:${size}px;line-height:1.6;color:${ink};text-align:${align}`
 }
 
-type ButtonSpec = { label: string; url: unknown; fill: string; ink: string; style: unknown; shape?: unknown; fullWidth?: boolean; align: string }
+type ButtonSpec = {
+  label: string
+  url: unknown
+  fill: string
+  ink: string
+  style: unknown
+  shape?: unknown
+  fullWidth?: boolean
+  align: string
+}
 
 function button(b: ButtonSpec, ctx: Ctx): string {
   const to = href(b.url, ctx)
@@ -233,7 +306,13 @@ function button(b: ButtonSpec, ctx: Ctx): string {
   return `<table ${TABLE}${b.align === 'center' ? ' align="center"' : ''}${width} style="margin:${margin}"><tr><td align="center"${outline ? '' : ` bgcolor="${bg}"`} style="background-color:${bg};border-radius:${radius}px;border:1px solid ${b.fill}"><a href="${esc(to)}" style="display:${b.fullWidth ? 'block' : 'inline-block'};padding:12px 24px;font-family:${BRAND_FONT.sans};font-size:14px;font-weight:600;line-height:1.2;color:${ink};text-decoration:none;border-radius:${radius}px">${label}</a></td></tr></table>`
 }
 
-function blockButton(props: Props, ctx: Ctx, align: string, prefix = 'button', style?: string): string {
+function blockButton(
+  props: Props,
+  ctx: Ctx,
+  align: string,
+  prefix = 'button',
+  style?: string
+): string {
   return button(
     {
       label: str(props, `${prefix}Label`),
@@ -243,7 +322,7 @@ function blockButton(props: Props, ctx: Ctx, align: string, prefix = 'button', s
       style: style ?? props[`${prefix}Style`] ?? 'solid',
       align,
     },
-    ctx,
+    ctx
   )
 }
 
@@ -253,7 +332,13 @@ function blockButton(props: Props, ctx: Ctx, align: string, prefix = 'button', s
  * cannot stretch a row of tiles. (Outlook on Windows ignores max-height and
  * draws it full size; everything else keeps the row even.)
  */
-function img(src: string, alt: string, width: number, ctx: Ctx, o: { rounded?: boolean; link?: unknown; center?: boolean; box?: number } = {}): string {
+function img(
+  src: string,
+  alt: string,
+  width: number,
+  ctx: Ctx,
+  o: { rounded?: boolean; link?: unknown; center?: boolean; box?: number } = {}
+): string {
   if (!src) return ''
   const size = o.box
     ? `margin:0 auto;width:auto;max-width:100%;max-height:${o.box}px;height:auto`
@@ -261,11 +346,16 @@ function img(src: string, alt: string, width: number, ctx: Ctx, o: { rounded?: b
   const tag = `<img src="${esc(src)}" alt="${esc(alt)}"${o.box ? '' : ` width="${width}"`} style="display:block;${size};border:0;outline:none;text-decoration:none${o.rounded ? ';border-radius:10px' : ''}">`
   const to = href(o.link, ctx)
   const linked = to ? `<a href="${esc(to)}" style="text-decoration:none">${tag}</a>` : tag
-  return o.box ? `<table ${TABLE} width="100%"><tr><td height="${o.box}" align="center" valign="middle" style="height:${o.box}px;text-align:center">${linked}</td></tr></table>` : linked
+  return o.box
+    ? `<table ${TABLE} width="100%"><tr><td height="${o.box}" align="center" valign="middle" style="height:${o.box}px;text-align:center">${linked}</td></tr></table>`
+    : linked
 }
 
 /** Columns side by side; fluid widths, since there is no <style> to stack them on a phone. */
-function columns(cells: string[], o: { gap?: number; dividers?: string; valign?: string } = {}): string {
+function columns(
+  cells: string[],
+  o: { gap?: number; dividers?: string; valign?: string } = {}
+): string {
   const gap = o.gap ?? 20
   const width = Math.floor(100 / cells.length)
   const tds = cells
@@ -280,7 +370,9 @@ function columns(cells: string[], o: { gap?: number; dividers?: string; valign?:
 }
 
 function items(props: Props, key = 'items'): Props[] {
-  return Array.isArray(props[key]) ? (props[key] as Props[]).filter((i) => i && typeof i === 'object') : []
+  return Array.isArray(props[key])
+    ? (props[key] as Props[]).filter((i) => i && typeof i === 'object')
+    : []
 }
 
 function chunk<T>(list: T[], size: number): T[][] {
@@ -300,16 +392,26 @@ function reachLinks(p: Props, ctx: Ctx, ink: string, size: number): string[] {
     out.push(
       to
         ? `<a href="${esc(to)}" style="font-family:${font(ctx, 'sans')};font-size:${size}px;color:${ink};text-decoration:none">${shown}</a>`
-        : `<span style="font-family:${font(ctx, 'sans')};font-size:${size}px;color:${ink}">${shown}</span>`,
+        : `<span style="font-family:${font(ctx, 'sans')};font-size:${size}px;color:${ink}">${shown}</span>`
     )
   }
   const digits = (v: string) => v.replace(/[^\d]/g, '')
   const phone = str(p, 'phone')
-  add('Tel', phone, digits(phone).length >= 6 ? `tel:${phone.trim().startsWith('+') ? '+' : ''}${digits(phone)}` : null)
+  add(
+    'Tel',
+    phone,
+    digits(phone).length >= 6
+      ? `tel:${phone.trim().startsWith('+') ? '+' : ''}${digits(phone)}`
+      : null
+  )
   const wa = str(p, 'whatsapp')
   add('WhatsApp', wa, digits(wa).length >= 6 ? `https://wa.me/${digits(wa)}` : null)
   const email = str(p, 'email').trim()
-  add('Email', email, /^[^\s@<>"'()]+@[^\s@<>"'()]+\.[a-z]{2,}$/i.test(email) ? `mailto:${email}` : null)
+  add(
+    'Email',
+    email,
+    /^[^\s@<>"'()]+@[^\s@<>"'()]+\.[a-z]{2,}$/i.test(email) ? `mailto:${email}` : null
+  )
   return out
 }
 
@@ -353,11 +455,17 @@ function recordCell(r: ResolvedRecord, ctx: Ctx, layout: RecordLayout, imageWidt
   const src = imageSrc(r.imageUrl ?? '', ctx)
   // A content image always says what it shows: the record's own alt, else its title (CLAUDE.md §13).
   // Grid photos sit in an even frame, so a tall one does not push its row out of line.
-  const picture = img(src, r.imageAlt?.trim() || r.title, imageWidth, ctx, { link: r.url, rounded: layout !== 'list', box: layout === 'grid' ? 170 : undefined })
+  const picture = img(src, r.imageAlt?.trim() || r.title, imageWidth, ctx, {
+    link: r.url,
+    rounded: layout !== 'list',
+    box: layout === 'grid' ? 170 : undefined,
+  })
   const titleSize = layout === 'cards' ? 20 : layout === 'grid' ? 17 : 16
   const titleText = esc(r.title)
   const title = `<p style="margin:0 0 4px 0;font-family:${font(ctx, layout === 'cards' ? 'heading' : 'body')};font-size:${titleSize}px;line-height:1.3;font-weight:${layout === 'cards' && ctx.settings.headingFont === 'serif' ? 400 : 600};color:${head}">${to ? `<a href="${esc(to)}" style="color:${head};text-decoration:none">${titleText}</a>` : titleText}</p>`
-  const subtitle = r.subtitle ? `<p style="margin:0 0 4px 0;${bodyStyle(ctx, ink, 'left', 13)}">${esc(layout === 'grid' ? clip(r.subtitle, 150) : r.subtitle)}</p>` : ''
+  const subtitle = r.subtitle
+    ? `<p style="margin:0 0 4px 0;${bodyStyle(ctx, ink, 'left', 13)}">${esc(layout === 'grid' ? clip(r.subtitle, 150) : r.subtitle)}</p>`
+    : ''
   const meta = r.meta
     ? `<p style="margin:0 0 6px 0;font-family:${BRAND_FONT.mono};font-size:11px;line-height:1.5;letter-spacing:0.04em;color:${ctx.settings.mutedColor}">${esc(r.meta)}</p>`
     : ''
@@ -375,7 +483,9 @@ function recordCell(r: ResolvedRecord, ctx: Ctx, layout: RecordLayout, imageWidt
 }
 
 function resolveRecords(value: RecordsValue, ctx: Ctx): ResolvedRecord[] {
-  return value.ids.map((id) => ctx.records.get(recordKey(value.kind, id))).filter((r): r is ResolvedRecord => Boolean(r && r.title))
+  return value.ids
+    .map((id) => ctx.records.get(recordKey(value.kind, id)))
+    .filter((r): r is ResolvedRecord => Boolean(r && r.title))
 }
 
 function clip(s: string, n: number): string {
@@ -386,18 +496,42 @@ function clip(s: string, n: number): string {
 }
 
 /** One record as a white card: picture on one side, title, line, summary and a button on the other. */
-function recordRow(r: ResolvedRecord, ctx: Ctx, flip: boolean, o: { itemLabel: string; card: string }): string {
+function recordRow(
+  r: ResolvedRecord,
+  ctx: Ctx,
+  flip: boolean,
+  o: { itemLabel: string; card: string }
+): string {
   const to = href(r.url, ctx)
   const src = imageSrc(r.imageUrl ?? '', ctx)
-  const picture = img(src, r.imageAlt?.trim() || r.title, 232, ctx, { link: r.url, rounded: true, box: 190 })
+  const picture = img(src, r.imageAlt?.trim() || r.title, 232, ctx, {
+    link: r.url,
+    rounded: true,
+    box: 190,
+  })
   const title = esc(r.title)
   const summary = r.summary ?? (r.kind === 'product' ? null : r.subtitle)
   const words =
     `<p style="margin:0 0 4px 0;font-family:${font(ctx, 'body')};font-size:17px;line-height:1.3;font-weight:700;color:${ctx.settings.linkColor}">${to ? `<a href="${esc(to)}" style="color:${ctx.settings.linkColor};text-decoration:none">${title}</a>` : title}</p>` +
-    (r.subtitle && r.subtitle !== summary ? `<p style="margin:0 0 8px 0;font-family:${font(ctx, 'body')};font-size:13px;font-weight:600;line-height:1.4;color:${ctx.settings.headingColor}">${esc(r.subtitle)}</p>` : '') +
-    (summary ? `<p style="margin:0 0 16px 0;${bodyStyle(ctx, ctx.settings.textColor, 'left', 13)};line-height:1.5">${esc(clip(summary, 170))}</p>` : '') +
+    (r.subtitle && r.subtitle !== summary
+      ? `<p style="margin:0 0 8px 0;font-family:${font(ctx, 'body')};font-size:13px;font-weight:600;line-height:1.4;color:${ctx.settings.headingColor}">${esc(r.subtitle)}</p>`
+      : '') +
+    (summary
+      ? `<p style="margin:0 0 16px 0;${bodyStyle(ctx, ctx.settings.textColor, 'left', 13)};line-height:1.5">${esc(clip(summary, 170))}</p>`
+      : '') +
     (to
-      ? button({ label: o.itemLabel || RECORD_LINK[r.kind], url: r.url, fill: ctx.settings.buttonColor, ink: ctx.settings.buttonTextColor, style: 'solid', shape: 'square', align: 'left' }, ctx)
+      ? button(
+          {
+            label: o.itemLabel || RECORD_LINK[r.kind],
+            url: r.url,
+            fill: ctx.settings.buttonColor,
+            ink: ctx.settings.buttonTextColor,
+            style: 'solid',
+            shape: 'square',
+            align: 'left',
+          },
+          ctx
+        )
       : '')
   const cells = picture ? (flip ? [words, picture] : [picture, words]) : [words]
   return `<table ${TABLE} width="100%" bgcolor="${o.card}" style="background-color:${o.card};border:1px solid ${BRAND.border};border-radius:10px;border-collapse:separate"><tr><td style="padding:20px">${columns(cells, { gap: 24, valign: 'middle' })}</td></tr></table>`
@@ -407,7 +541,10 @@ function recordRow(r: ResolvedRecord, ctx: Ctx, flip: boolean, o: { itemLabel: s
 function recordTile(r: ResolvedRecord, ctx: Ctx, width: number, card: string): string {
   const to = href(r.url, ctx)
   const src = imageSrc(r.imageUrl ?? '', ctx)
-  const picture = img(src, r.imageAlt?.trim() || r.title, width - 20, ctx, { link: r.url, box: 112 })
+  const picture = img(src, r.imageAlt?.trim() || r.title, width - 20, ctx, {
+    link: r.url,
+    box: 112,
+  })
   const name = esc(clip(r.title, 60))
   return `<table ${TABLE} width="100%" bgcolor="${card}" style="background-color:${card};border:1px solid ${BRAND.border};border-radius:8px;border-collapse:separate"><tr><td style="padding:10px 10px 12px">${picture}${picture ? spacer(10) : ''}<p style="margin:0;font-family:${font(ctx, 'body')};font-size:12.5px;line-height:1.35;color:${ctx.settings.headingColor}">${to ? `<a href="${esc(to)}" style="color:${ctx.settings.headingColor};text-decoration:none">${name}</a>` : name}</p></td></tr></table>`
 }
@@ -423,14 +560,23 @@ function askTile(label: string, url: unknown, ctx: Ctx): string {
 
 type RecordsLook = { itemLabel?: string; card?: string; ask?: { label: string; url: unknown } }
 
-function drawRecords(found: ResolvedRecord[], layout: RecordLayout, ctx: Ctx, look: RecordsLook = {}): string {
+function drawRecords(
+  found: ResolvedRecord[],
+  layout: RecordLayout,
+  ctx: Ctx,
+  look: RecordsLook = {}
+): string {
   for (const r of found) {
     const to = href(r.url, ctx)
-    ctx.text.push([r.subtitle ? `${r.title} — ${r.subtitle}` : r.title, to ?? ''].filter(Boolean).join('\n'))
+    ctx.text.push(
+      [r.subtitle ? `${r.title} — ${r.subtitle}` : r.title, to ?? ''].filter(Boolean).join('\n')
+    )
   }
   const card = look.card || BRAND.white
   if (layout === 'rows') {
-    return found.map((r, i) => recordRow(r, ctx, i % 2 === 1, { itemLabel: look.itemLabel ?? '', card })).join(spacer(16))
+    return found
+      .map((r, i) => recordRow(r, ctx, i % 2 === 1, { itemLabel: look.itemLabel ?? '', card }))
+      .join(spacer(16))
   }
   if (layout === 'tiles') {
     const width = Math.floor((INNER - 24) / 3)
@@ -438,13 +584,20 @@ function drawRecords(found: ResolvedRecord[], layout: RecordLayout, ctx: Ctx, lo
     const ask = look.ask ? askTile(look.ask.label, look.ask.url, ctx) : ''
     if (ask) cells.push(ask)
     return chunk(cells, 3)
-      .map((three) => columns(three.concat(Array.from({ length: 3 - three.length }, () => '')), { gap: 12 }))
+      .map((three) =>
+        columns(three.concat(Array.from({ length: 3 - three.length }, () => '')), { gap: 12 })
+      )
       .join(spacer(12))
   }
   if (layout === 'grid') {
     const width = Math.floor((INNER - 20) / 2)
     return chunk(found, 2)
-      .map((pair) => columns(pair.map((r) => recordCell(r, ctx, 'grid', width)).concat(pair.length === 1 ? [''] : []), { gap: 20 }))
+      .map((pair) =>
+        columns(
+          pair.map((r) => recordCell(r, ctx, 'grid', width)).concat(pair.length === 1 ? [''] : []),
+          { gap: 20 }
+        )
+      )
       .join(spacer(24))
   }
   if (layout === 'cards') {
@@ -452,14 +605,26 @@ function drawRecords(found: ResolvedRecord[], layout: RecordLayout, ctx: Ctx, lo
   }
   const rule = rgba(ctx.settings.mutedColor, 0.3)
   return `<table ${TABLE} width="100%">${found
-    .map((r, i) => `<tr><td style="padding:14px 0;${i < found.length - 1 ? `border-bottom:1px solid ${rule};` : ''}">${recordCell(r, ctx, 'list', 96)}</td></tr>`)
+    .map(
+      (r, i) =>
+        `<tr><td style="padding:14px 0;${i < found.length - 1 ? `border-bottom:1px solid ${rule};` : ''}">${recordCell(r, ctx, 'list', 96)}</td></tr>`
+    )
     .join('')}</table>`
 }
 
 // ── The blocks ──────────────────────────────────────────────────
 
 /** What each network's round badge says — letters, since an inbox will not load an icon font. */
-const BADGE: Record<string, string> = { linkedin: 'in', instagram: 'IG', facebook: 'f', x: 'X', youtube: 'YT', whatsapp: 'WA', website: 'www', email: '@' }
+const BADGE: Record<string, string> = {
+  linkedin: 'in',
+  instagram: 'IG',
+  facebook: 'f',
+  x: 'X',
+  youtube: 'YT',
+  whatsapp: 'WA',
+  website: 'www',
+  email: '@',
+}
 
 /** A tick in a filled circle. */
 function tick(fill: string, ink: string, size = 26): string {
@@ -494,7 +659,9 @@ const DRAW: Record<string, Drawer> = {
       head +
       (value ? paragraphs(value, ctx, bodyStyle(ctx, ink, align, 16), ink) : '') +
       (cta ? spacer(24) + cta : '') +
-      (note ? `<p style="margin:24px 0 0 0;${bodyStyle(ctx, ink, align, 11)};opacity:0.85">${inline(note, ctx, ink)}</p>` : '')
+      (note
+        ? `<p style="margin:24px 0 0 0;${bodyStyle(ctx, ink, align, 11)};opacity:0.85">${inline(note, ctx, ink)}</p>`
+        : '')
     return `<tr><td align="${align}" valign="middle"${src ? ` background="${esc(src)}"` : ''} bgcolor="${overlay}" style="${bg}padding:${pad}px ${GUTTER}px;text-align:${align}">${body}</td></tr>`
   },
 
@@ -508,7 +675,7 @@ const DRAW: Record<string, Drawer> = {
     const link = `<a href="${esc(to)}" style="font-family:${font(ctx, 'sans')};font-size:12px;color:${ink};text-decoration:underline">${inline(label, ctx, ink)}</a>`
     return row(
       `<table ${TABLE} width="100%"><tr><td valign="middle" style="text-align:left">${logoHtml(p, ctx, 'left', ctx.settings.headingColor)}</td><td valign="middle" style="text-align:right">${link}</td></tr></table>`,
-      p,
+      p
     )
   },
 
@@ -516,7 +683,14 @@ const DRAW: Record<string, Drawer> = {
     const align = alignOf(p.align)
     const html =
       eyebrow(str(p, 'eyebrow'), ctx, align, color(p.textColor, ctx.settings.mutedColor)) +
-      headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink: color(p.textColor, ctx.settings.headingColor), font: p.font, margin: 0, caps: p.caps })
+      headingHtml(str(p, 'heading'), ctx, {
+        size: p.size,
+        align,
+        ink: color(p.textColor, ctx.settings.headingColor),
+        font: p.font,
+        margin: 0,
+        caps: p.caps,
+      })
     return html ? row(html, p) : ''
   },
 
@@ -525,7 +699,15 @@ const DRAW: Record<string, Drawer> = {
     if (!value.trim()) return ''
     ctx.text.push(plain(value, ctx))
     const size = { s: 13, m: 15, l: 18 }[String(p.size)] ?? 15
-    return row(paragraphs(value, ctx, bodyStyle(ctx, color(p.textColor, ctx.settings.textColor), alignOf(p.align), size), ctx.settings.linkColor), p)
+    return row(
+      paragraphs(
+        value,
+        ctx,
+        bodyStyle(ctx, color(p.textColor, ctx.settings.textColor), alignOf(p.align), size),
+        ctx.settings.linkColor
+      ),
+      p
+    )
   },
 
   section(p, ctx) {
@@ -534,10 +716,18 @@ const DRAW: Record<string, Drawer> = {
     const value = str(p, 'text')
     const head =
       eyebrow(str(p, 'eyebrow'), ctx, align, color(p.textColor, ctx.settings.mutedColor)) +
-      headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink: color(p.textColor, ctx.settings.headingColor), caps: p.caps })
+      headingHtml(str(p, 'heading'), ctx, {
+        size: p.size,
+        align,
+        ink: color(p.textColor, ctx.settings.headingColor),
+        caps: p.caps,
+      })
     if (value) ctx.text.push(plain(value, ctx))
     const cta = blockButton(p, ctx, align)
-    const html = head + (value ? paragraphs(value, ctx, bodyStyle(ctx, ink, align), ctx.settings.linkColor) : '') + (cta ? spacer(24) + cta : '')
+    const html =
+      head +
+      (value ? paragraphs(value, ctx, bodyStyle(ctx, ink, align), ctx.settings.linkColor) : '') +
+      (cta ? spacer(24) + cta : '')
     return html ? row(html, p) : ''
   },
 
@@ -559,14 +749,20 @@ const DRAW: Record<string, Drawer> = {
         (who.length
           ? `<p style="margin:0;${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), align, 13)}"><strong>${inline(who[0] ?? '', ctx, ink)}</strong>${who[1] ? `<br>${inline(who[1], ctx, ink)}` : ''}</p>`
           : ''),
-      p,
+      p
     )
   },
 
   image(p, ctx) {
     const bleed = p.fullBleed === true
     const caption = str(p, 'caption')
-    const html = img(imageSrc(p.image, ctx), str(p, 'alt') || imageAlt(p.image) || caption, bleed ? COLUMN : INNER, ctx, { rounded: p.rounded === true, link: p.link })
+    const html = img(
+      imageSrc(p.image, ctx),
+      str(p, 'alt') || imageAlt(p.image) || caption,
+      bleed ? COLUMN : INNER,
+      ctx,
+      { rounded: p.rounded === true, link: p.link }
+    )
     if (!html) return ''
     if (caption) ctx.text.push(plain(caption, ctx))
     const cap = caption
@@ -578,14 +774,29 @@ const DRAW: Record<string, Drawer> = {
   'image-text'(p, ctx) {
     const ink = color(p.textColor, ctx.settings.textColor)
     const heading = str(p, 'heading')
-    const picture = img(imageSrc(p.image, ctx), str(p, 'alt') || imageAlt(p.image) || heading, 250, ctx, { rounded: true })
+    const picture = img(
+      imageSrc(p.image, ctx),
+      str(p, 'alt') || imageAlt(p.image) || heading,
+      250,
+      ctx,
+      { rounded: true }
+    )
     const value = str(p, 'text')
     const head =
       eyebrow(str(p, 'eyebrow'), ctx, 'left', ctx.settings.mutedColor) +
-      headingHtml(heading, ctx, { size: 'm', align: 'left', ink: color(p.textColor, ctx.settings.headingColor) })
+      headingHtml(heading, ctx, {
+        size: 'm',
+        align: 'left',
+        ink: color(p.textColor, ctx.settings.headingColor),
+      })
     if (value) ctx.text.push(plain(value, ctx))
     const cta = blockButton(p, ctx, 'left')
-    const words = head + (value ? paragraphs(value, ctx, bodyStyle(ctx, ink, 'left', 14), ctx.settings.linkColor) : '') + (cta ? spacer(16) + cta : '')
+    const words =
+      head +
+      (value
+        ? paragraphs(value, ctx, bodyStyle(ctx, ink, 'left', 14), ctx.settings.linkColor)
+        : '') +
+      (cta ? spacer(16) + cta : '')
     if (!words && !picture) return ''
     const cells = picture ? (p.side === 'end' ? [words, picture] : [picture, words]) : [words]
     return row(columns(cells, { gap: 28, valign: 'middle' }), p)
@@ -599,8 +810,13 @@ const DRAW: Record<string, Drawer> = {
       const caption = str(i, 'caption')
       if (caption) ctx.text.push(plain(caption, ctx))
       return (
-        img(imageSrc(i.image, ctx), str(i, 'alt') || imageAlt(i.image) || caption, width, ctx, { rounded: p.rounded === true, link: i.link }) +
-        (caption ? `<p style="margin:8px 0 0 0;${bodyStyle(ctx, ctx.settings.mutedColor, 'left', 12)}">${inline(caption, ctx, ctx.settings.linkColor)}</p>` : '')
+        img(imageSrc(i.image, ctx), str(i, 'alt') || imageAlt(i.image) || caption, width, ctx, {
+          rounded: p.rounded === true,
+          link: i.link,
+        }) +
+        (caption
+          ? `<p style="margin:8px 0 0 0;${bodyStyle(ctx, ctx.settings.mutedColor, 'left', 12)}">${inline(caption, ctx, ctx.settings.linkColor)}</p>`
+          : '')
       )
     })
     return row(columns(cells, { gap: 16 }), p)
@@ -611,23 +827,45 @@ const DRAW: Record<string, Drawer> = {
     const ink = color(p.textColor, ctx.settings.textColor)
     const list = items(p)
     if (list.length === 0) return ''
-    const head = headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink: color(p.textColor, ctx.settings.headingColor), margin: 20 })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: p.size,
+      align,
+      ink: color(p.textColor, ctx.settings.headingColor),
+      margin: 20,
+    })
     const iconWidth = Math.floor(INNER / list.length) - 20
     const cells = list.map((i) => {
       const title = str(i, 'title')
       const body = str(i, 'text')
-      const line = [title, body].filter(Boolean).map((t) => plain(t, ctx)).join(' — ')
+      const line = [title, body]
+        .filter(Boolean)
+        .map((t) => plain(t, ctx))
+        .join(' — ')
       if (line) ctx.text.push(line)
-      const icon = img(imageSrc(i.icon, ctx), title || imageAlt(i.icon), iconWidth, ctx, { center: align === 'center' })
+      const icon = img(imageSrc(i.icon, ctx), title || imageAlt(i.icon), iconWidth, ctx, {
+        center: align === 'center',
+      })
       return (
         (icon ? `<div style="margin:0 0 12px 0">${icon}</div>` : '') +
         (title
           ? `<p style="margin:0 0 6px 0;font-family:${font(ctx, 'body')};font-size:15px;font-weight:600;line-height:1.3;color:${color(p.textColor, ctx.settings.headingColor)};text-align:${align}">${inline(title, ctx, ink)}</p>`
           : '') +
-        (body ? `<p style="margin:0;${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), align, 13)};line-height:1.45">${inline(body, ctx, ctx.settings.linkColor)}</p>` : '')
+        (body
+          ? `<p style="margin:0;${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), align, 13)};line-height:1.45">${inline(body, ctx, ctx.settings.linkColor)}</p>`
+          : '')
       )
     })
-    return row(head + columns(cells, { gap: 20, dividers: p.dividers === true ? rgba(color(p.textColor, ctx.settings.mutedColor), 0.35) : undefined }), p)
+    return row(
+      head +
+        columns(cells, {
+          gap: 20,
+          dividers:
+            p.dividers === true
+              ? rgba(color(p.textColor, ctx.settings.mutedColor), 0.35)
+              : undefined,
+        }),
+      p
+    )
   },
 
   cards(p, ctx) {
@@ -635,15 +873,35 @@ const DRAW: Record<string, Drawer> = {
     if (list.length === 0) return ''
     const ink = color(p.textColor, ctx.settings.textColor)
     const card = color(p.cardBackground, BRAND.white)
-    const head = headingHtml(str(p, 'heading'), ctx, { size: 'm', align: 'center', ink: color(p.textColor, ctx.settings.headingColor), margin: 20 })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: 'm',
+      align: 'center',
+      ink: color(p.textColor, ctx.settings.headingColor),
+      margin: 20,
+    })
     const width = Math.floor((INNER - 16 * (list.length - 1)) / list.length)
     const cells = list.map((i) => {
       const title = str(i, 'title')
       const body = str(i, 'text')
-      const line = [title, body].filter(Boolean).map((t) => plain(t, ctx)).join(' — ')
+      const line = [title, body]
+        .filter(Boolean)
+        .map((t) => plain(t, ctx))
+        .join(' — ')
       if (line) ctx.text.push(line)
-      const link = button({ label: str(i, 'linkLabel'), url: i.url, fill: ctx.settings.linkColor, ink, style: 'link', align: 'left' }, ctx)
-      const picture = img(imageSrc(i.image, ctx), title || imageAlt(i.image), width, ctx, { link: i.url })
+      const link = button(
+        {
+          label: str(i, 'linkLabel'),
+          url: i.url,
+          fill: ctx.settings.linkColor,
+          ink,
+          style: 'link',
+          align: 'left',
+        },
+        ctx
+      )
+      const picture = img(imageSrc(i.image, ctx), title || imageAlt(i.image), width, ctx, {
+        link: i.url,
+      })
       return `<table ${TABLE} width="100%" bgcolor="${card}" style="background-color:${card};border:1px solid ${BRAND.border};border-radius:10px;border-collapse:separate;overflow:hidden">${picture ? `<tr><td>${picture}</td></tr>` : ''}<tr><td style="padding:16px 18px 18px">${
         title
           ? `<p style="margin:0 0 6px 0;font-family:${font(ctx, 'heading')};font-size:19px;line-height:1.25;color:${color(p.textColor, ctx.settings.headingColor)}">${inline(title, ctx, ink)}</p>`
@@ -657,7 +915,12 @@ const DRAW: Record<string, Drawer> = {
     const list = items(p).filter((i) => str(i, 'value') || str(i, 'label'))
     if (list.length === 0) return ''
     const valueInk = color(p.valueColor, ctx.settings.headingColor)
-    const head = headingHtml(str(p, 'heading'), ctx, { size: 'm', align: 'center', ink: color(p.textColor, ctx.settings.headingColor), margin: 20 })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: 'm',
+      align: 'center',
+      ink: color(p.textColor, ctx.settings.headingColor),
+      margin: 20,
+    })
     // Long figures ("ISO 9001:2015") step down a size rather than break over two lines.
     const longest = Math.max(...list.map((i) => str(i, 'value').length))
     const per = Math.floor(INNER / list.length)
@@ -665,7 +928,12 @@ const DRAW: Record<string, Drawer> = {
     const cells = list.map((i) => {
       const value = str(i, 'value')
       const label = str(i, 'label')
-      ctx.text.push([value, label].filter(Boolean).map((t) => plain(t, ctx)).join(' — '))
+      ctx.text.push(
+        [value, label]
+          .filter(Boolean)
+          .map((t) => plain(t, ctx))
+          .join(' — ')
+      )
       return `<p style="margin:0 0 4px 0;font-family:${BRAND_FONT.mono};font-size:${px}px;white-space:nowrap;font-weight:500;line-height:1.15;color:${valueInk};text-align:center">${inline(value, ctx, valueInk)}</p><p style="margin:0;${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), 'center', 12)}">${inline(label, ctx, valueInk)}</p>`
     })
     return row(head + columns(cells, { gap: 12 }), p)
@@ -680,18 +948,29 @@ const DRAW: Record<string, Drawer> = {
     const labels = items(p)
       .map((i) => str(i, 'label'))
       .filter(Boolean)
-    const head = headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink: color(p.textColor, ctx.settings.headingColor) })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: p.size,
+      align,
+      ink: color(p.textColor, ctx.settings.headingColor),
+    })
     if (intro) ctx.text.push(plain(intro, ctx))
     if (labels.length) ctx.text.push(labels.map((l) => plain(l, ctx)).join(' · '))
     const pills = labels
       .map(
         (l) =>
-          `<span style="display:inline-block;margin:4px;padding:6px 14px;border:1px solid ${chip};border-radius:${radius}px;${chipFill ? `background-color:${chipFill};` : ''}font-family:${font(ctx, 'body')};font-size:13px;line-height:1.3;color:${chip}">${inline(l, ctx, chip)}</span>`,
+          `<span style="display:inline-block;margin:4px;padding:6px 14px;border:1px solid ${chip};border-radius:${radius}px;${chipFill ? `background-color:${chipFill};` : ''}font-family:${font(ctx, 'body')};font-size:13px;line-height:1.3;color:${chip}">${inline(l, ctx, chip)}</span>`
       )
       .join('')
     const html =
       head +
-      (intro ? paragraphs(intro, ctx, bodyStyle(ctx, color(p.textColor, ctx.settings.textColor), align), ctx.settings.linkColor) + spacer(10) : '') +
+      (intro
+        ? paragraphs(
+            intro,
+            ctx,
+            bodyStyle(ctx, color(p.textColor, ctx.settings.textColor), align),
+            ctx.settings.linkColor
+          ) + spacer(10)
+        : '') +
       (pills ? `<div style="text-align:${align}">${pills}</div>` : '')
     return html ? row(html, p) : ''
   },
@@ -704,11 +983,18 @@ const DRAW: Record<string, Drawer> = {
       .map((i) => str(i, 'text'))
       .filter(Boolean)
     if (entries.length === 0) return ''
-    const head = headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink: color(p.textColor, ctx.settings.headingColor) })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: p.size,
+      align,
+      ink: color(p.textColor, ctx.settings.headingColor),
+    })
     const intro = str(p, 'intro')
     if (intro) ctx.text.push(plain(intro, ctx))
     ctx.text.push(entries.map((e) => `• ${plain(e, ctx)}`).join('\n'))
-    const marker = ({ dot: '&bull;', check: '&#10003;', dash: '&ndash;', rule: '' } as Record<string, string>)[String(p.marker)] ?? ''
+    const marker =
+      ({ dot: '&bull;', check: '&#10003;', dash: '&ndash;', rule: '' } as Record<string, string>)[
+        String(p.marker)
+      ] ?? ''
     const line = (e: string) =>
       `<tr><td style="padding:7px 0;${p.marker === 'rule' ? `border-bottom:1px solid ${rule};` : ''}${bodyStyle(ctx, ink, 'left', 14)}">${marker ? `<span style="color:${ctx.settings.linkColor};padding-right:8px">${marker}</span>` : ''}${inline(e, ctx, ctx.settings.linkColor)}</td></tr>`
     const two = p.columns === '2' && entries.length > 1
@@ -717,9 +1003,11 @@ const DRAW: Record<string, Drawer> = {
     const tables = lists.map((l) => `<table ${TABLE} width="100%">${l.map(line).join('')}</table>`)
     return row(
       head +
-        (intro ? paragraphs(intro, ctx, bodyStyle(ctx, ink, align), ctx.settings.linkColor) + spacer(12) : '') +
+        (intro
+          ? paragraphs(intro, ctx, bodyStyle(ctx, ink, align), ctx.settings.linkColor) + spacer(12)
+          : '') +
         (two ? columns(tables, { gap: 32 }) : (tables[0] ?? '')),
-      p,
+      p
     )
   },
 
@@ -730,13 +1018,17 @@ const DRAW: Record<string, Drawer> = {
       .map((i) => [str(i, 'label'), str(i, 'value')] as const)
       .filter(([l, v]) => l || v)
     if (lines.length === 0) return ''
-    const head = headingHtml(str(p, 'heading'), ctx, { size: p.size, align: 'left', ink: color(p.textColor, ctx.settings.headingColor) })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: p.size,
+      align: 'left',
+      ink: color(p.textColor, ctx.settings.headingColor),
+    })
     ctx.text.push(lines.map(([l, v]) => `${plain(l, ctx)}: ${plain(v, ctx)}`).join('\n'))
     const border = p.rules === true ? `border-bottom:1px solid ${rule};` : ''
     const body = lines
       .map(
         ([l, v]) =>
-          `<tr><td valign="top" style="padding:8px 12px 8px 0;${border}${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), 'left', 14)}">${inline(l, ctx, ink)}</td><td valign="top" style="padding:8px 0;${border}${bodyStyle(ctx, ink, 'right', 14)}${p.boldValues === true ? ';font-weight:600' : ''}">${inline(v, ctx, ctx.settings.linkColor)}</td></tr>`,
+          `<tr><td valign="top" style="padding:8px 12px 8px 0;${border}${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), 'left', 14)}">${inline(l, ctx, ink)}</td><td valign="top" style="padding:8px 0;${border}${bodyStyle(ctx, ink, 'right', 14)}${p.boldValues === true ? ';font-weight:600' : ''}">${inline(v, ctx, ctx.settings.linkColor)}</td></tr>`
       )
       .join('')
     return row(head + `<table ${TABLE} width="100%">${body}</table>`, p)
@@ -747,7 +1039,10 @@ const DRAW: Record<string, Drawer> = {
     const name = str(p, 'name')
     const role = str(p, 'role')
     const said = str(p, 'text')
-    const who = [name, role].filter(Boolean).map((t) => plain(t, ctx)).join(', ')
+    const who = [name, role]
+      .filter(Boolean)
+      .map((t) => plain(t, ctx))
+      .join(', ')
     if (who) ctx.text.push(who)
     if (said) ctx.text.push(plain(said, ctx))
     const links = reachLinks(p, ctx, ctx.settings.linkColor, 13)
@@ -755,7 +1050,9 @@ const DRAW: Record<string, Drawer> = {
       (name
         ? `<p style="margin:0 0 2px 0;font-family:${font(ctx, 'heading')};font-size:22px;line-height:1.2;color:${color(p.textColor, ctx.settings.headingColor)}">${inline(name, ctx, ink)}</p>`
         : '') +
-      (role ? `<p style="margin:0 0 10px 0;${bodyStyle(ctx, ctx.settings.mutedColor, 'left', 13)}">${inline(role, ctx, ink)}</p>` : '') +
+      (role
+        ? `<p style="margin:0 0 10px 0;${bodyStyle(ctx, ctx.settings.mutedColor, 'left', 13)}">${inline(role, ctx, ink)}</p>`
+        : '') +
       (said ? paragraphs(said, ctx, bodyStyle(ctx, ink, 'left', 14), ctx.settings.linkColor) : '') +
       (links.length ? `<p style="margin:10px 0 0 0;line-height:1.8">${links.join('<br>')}</p>` : '')
     if (!words) return ''
@@ -764,8 +1061,10 @@ const DRAW: Record<string, Drawer> = {
       ? `<img src="${esc(photo)}" alt="${esc(name || imageAlt(p.photo))}" width="96" height="96" style="display:block;width:96px;height:96px;border-radius:48px;border:0">`
       : ''
     return row(
-      pic ? `<table ${TABLE} width="100%"><tr><td width="116" valign="top" style="width:116px">${pic}</td><td valign="top">${words}</td></tr></table>` : words,
-      p,
+      pic
+        ? `<table ${TABLE} width="100%"><tr><td width="116" valign="top" style="width:116px">${pic}</td><td valign="top">${words}</td></tr></table>`
+        : words,
+      p
     )
   },
 
@@ -781,7 +1080,7 @@ const DRAW: Record<string, Drawer> = {
         fullWidth: p.fullWidth === true,
         align: alignOf(p.align),
       },
-      ctx,
+      ctx
     )
     return html ? row(html, p) : ''
   },
@@ -790,7 +1089,9 @@ const DRAW: Record<string, Drawer> = {
     const align = alignOf(p.align)
     const ink = color(p.textColor, BRAND.white)
     const value = str(p, 'text')
-    const head = eyebrow(str(p, 'eyebrow'), ctx, align, ink) + headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink, caps: p.caps })
+    const head =
+      eyebrow(str(p, 'eyebrow'), ctx, align, ink) +
+      headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink, caps: p.caps })
     if (value) ctx.text.push(plain(value, ctx))
     const first = blockButton(p, ctx, align, 'primary', 'solid')
     const second = blockButton(p, ctx, align, 'secondary', 'outline')
@@ -809,10 +1110,18 @@ const DRAW: Record<string, Drawer> = {
     const badge = badgeText
       ? `<table ${TABLE} style="margin:0 0 14px 0"><tr><td bgcolor="${color(p.badgeColor, BRAND.accent)}" style="background-color:${color(p.badgeColor, BRAND.accent)};border-radius:999px;padding:5px 12px;font-family:${BRAND_FONT.sans};font-size:12px;font-weight:600;line-height:1.2;color:${color(p.badgeTextColor, BRAND.white)}">${inline(badgeText, ctx, color(p.badgeTextColor, BRAND.white))}</td></tr></table>`
       : ''
-    const head = eyebrow(str(p, 'eyebrow'), ctx, 'left', ctx.settings.mutedColor) + headingHtml(str(p, 'heading'), ctx, { size: p.size, align: 'left', ink: ctx.settings.headingColor })
+    const head =
+      eyebrow(str(p, 'eyebrow'), ctx, 'left', ctx.settings.mutedColor) +
+      headingHtml(str(p, 'heading'), ctx, {
+        size: p.size,
+        align: 'left',
+        ink: ctx.settings.headingColor,
+      })
     const value = str(p, 'text')
     if (value) ctx.text.push(plain(value, ctx))
-    const body = value ? paragraphs(value, ctx, bodyStyle(ctx, ink, 'left'), ctx.settings.linkColor) : ''
+    const body = value
+      ? paragraphs(value, ctx, bodyStyle(ctx, ink, 'left'), ctx.settings.linkColor)
+      : ''
     const code = str(p, 'code')
     if (code) ctx.text.push(`Quote: ${plain(code, ctx)}`)
     const codeHtml = code
@@ -820,7 +1129,10 @@ const DRAW: Record<string, Drawer> = {
       : ''
     const recordsValue = p.records as RecordsValue | null
     const found = recordsValue ? resolveRecords(recordsValue, ctx) : []
-    const drawn = found.length ? spacer(20) + drawRecords(found, recordsValue!.layout, ctx, { card: ctx.settings.contentBackground }) : ''
+    const drawn = found.length
+      ? spacer(20) +
+        drawRecords(found, recordsValue!.layout, ctx, { card: ctx.settings.contentBackground })
+      : ''
     const cta = blockButton(p, ctx, 'left')
     const terms = str(p, 'terms')
     if (terms) ctx.text.push(plain(terms, ctx))
@@ -833,7 +1145,7 @@ const DRAW: Record<string, Drawer> = {
     const card = color(p.cardBackground, BRAND.white)
     return row(
       `<table ${TABLE} width="100%"><tr><td bgcolor="${card}" style="background-color:${card};border:1px solid ${border};border-radius:10px;padding:28px">${inner}</td></tr></table>`,
-      p,
+      p
     )
   },
 
@@ -843,10 +1155,22 @@ const DRAW: Record<string, Drawer> = {
     // Every pick missing (unpublished, deleted): the block goes, heading and all.
     if (!value || found.length === 0) return ''
     const align = alignOf(p.align)
-    const head = headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink: ctx.settings.headingColor, margin: 18 })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: p.size,
+      align,
+      ink: ctx.settings.headingColor,
+      margin: 18,
+    })
     const intro = str(p, 'intro')
     if (intro) ctx.text.push(plain(intro, ctx))
-    const introHtml = intro ? paragraphs(intro, ctx, bodyStyle(ctx, ctx.settings.textColor, align), ctx.settings.linkColor) + spacer(16) : ''
+    const introHtml = intro
+      ? paragraphs(
+          intro,
+          ctx,
+          bodyStyle(ctx, ctx.settings.textColor, align),
+          ctx.settings.linkColor
+        ) + spacer(16)
+      : ''
     const tiles = value.layout === 'tiles'
     const drawn = drawRecords(found, value.layout, ctx, {
       itemLabel: str(p, 'itemLabel'),
@@ -875,7 +1199,9 @@ const DRAW: Record<string, Drawer> = {
           return `<a href="${esc(to)}" title="${esc(name)}" aria-label="${esc(name)}" style="display:inline-block;margin:0 5px;width:38px;height:38px;line-height:38px;border-radius:19px;background-color:${fill};font-family:${BRAND_FONT.sans};font-size:${code.length > 2 ? 11 : 14}px;font-weight:700;color:${mark};text-align:center;text-decoration:none">${esc(code)}</a>`
         })
         .filter(Boolean)
-      return badges.length ? row(`<p style="margin:0;text-align:${align};line-height:38px">${badges.join('')}</p>`, p) : ''
+      return badges.length
+        ? row(`<p style="margin:0;text-align:${align};line-height:38px">${badges.join('')}</p>`, p)
+        : ''
     }
     const links = items(p)
       .map((i) => {
@@ -886,7 +1212,12 @@ const DRAW: Record<string, Drawer> = {
         return `<a href="${esc(to)}" style="font-family:${font(ctx, 'sans')};font-size:13px;font-weight:600;color:${ink};text-decoration:none">${esc(name)}</a>`
       })
       .filter(Boolean)
-    return links.length ? row(`<p style="margin:0;text-align:${align}">${links.join(`<span style="color:${ctx.settings.mutedColor}">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>`)}</p>`, p) : ''
+    return links.length
+      ? row(
+          `<p style="margin:0;text-align:${align}">${links.join(`<span style="color:${ctx.settings.mutedColor}">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>`)}</p>`,
+          p
+        )
+      : ''
   },
 
   contact(p, ctx) {
@@ -897,16 +1228,21 @@ const DRAW: Record<string, Drawer> = {
     if (company) {
       ctx.text.push(plain(company, ctx))
       lines.push(
-        `<p style="margin:0 0 6px 0;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;color:${color(p.textColor, ctx.settings.textColor)};text-align:${align}">${inline(company, ctx, ink)}</p>`,
+        `<p style="margin:0 0 6px 0;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;color:${color(p.textColor, ctx.settings.textColor)};text-align:${align}">${inline(company, ctx, ink)}</p>`
       )
     }
     const address = str(p, 'address')
     if (address) {
       ctx.text.push(plain(address, ctx))
-      lines.push(`<p style="margin:0 0 8px 0;${bodyStyle(ctx, ink, align, 12)}">${inline(address, ctx, ink)}</p>`)
+      lines.push(
+        `<p style="margin:0 0 8px 0;${bodyStyle(ctx, ink, align, 12)}">${inline(address, ctx, ink)}</p>`
+      )
     }
     const reach = reachLinks(p, ctx, ink, 12)
-    if (reach.length) lines.push(`<p style="margin:0 0 8px 0;text-align:${align}">${reach.join('&nbsp;&nbsp;&middot;&nbsp;&nbsp;')}</p>`)
+    if (reach.length)
+      lines.push(
+        `<p style="margin:0 0 8px 0;text-align:${align}">${reach.join('&nbsp;&nbsp;&middot;&nbsp;&nbsp;')}</p>`
+      )
     const links = items(p, 'links')
       .map((l) => {
         const label = str(l, 'label')
@@ -916,7 +1252,10 @@ const DRAW: Record<string, Drawer> = {
         return `<a href="${esc(to)}" style="font-family:${font(ctx, 'sans')};font-size:12px;color:${ink};text-decoration:underline">${inline(label, ctx, ink)}</a>`
       })
       .filter(Boolean)
-    if (links.length) lines.push(`<p style="margin:0;text-align:${align}">${links.join('&nbsp;&nbsp;&middot;&nbsp;&nbsp;')}</p>`)
+    if (links.length)
+      lines.push(
+        `<p style="margin:0;text-align:${align}">${links.join('&nbsp;&nbsp;&middot;&nbsp;&nbsp;')}</p>`
+      )
     return lines.length ? row(lines.join(''), p) : ''
   },
 
@@ -926,11 +1265,21 @@ const DRAW: Record<string, Drawer> = {
     const pad = PAD[String(p.padding ?? 'm')] ?? 32
     const label = str(p, 'label')
     const title = str(p, 'title')
-    if (label || title) ctx.text.push([label, title].filter(Boolean).map((t) => plain(t, ctx)).join(': '))
+    if (label || title)
+      ctx.text.push(
+        [label, title]
+          .filter(Boolean)
+          .map((t) => plain(t, ctx))
+          .join(': ')
+      )
     const logo = logoHtml(p, ctx, 'left', ink)
     const right =
-      (label ? `<p style="margin:0 0 2px 0;font-family:${BRAND_FONT.sans};font-size:12px;line-height:1.3;letter-spacing:0.08em;text-transform:uppercase;color:${mix(ink, bg, 0.75)};text-align:right">${inline(label, ctx, ink)}</p>` : '') +
-      (title ? `<p style="margin:0;font-family:${BRAND_FONT.sans};font-size:16px;font-weight:700;line-height:1.3;color:${ink};text-align:right">${inline(title, ctx, ink)}</p>` : '')
+      (label
+        ? `<p style="margin:0 0 2px 0;font-family:${BRAND_FONT.sans};font-size:12px;line-height:1.3;letter-spacing:0.08em;text-transform:uppercase;color:${mix(ink, bg, 0.75)};text-align:right">${inline(label, ctx, ink)}</p>`
+        : '') +
+      (title
+        ? `<p style="margin:0;font-family:${BRAND_FONT.sans};font-size:16px;font-weight:700;line-height:1.3;color:${ink};text-align:right">${inline(title, ctx, ink)}</p>`
+        : '')
     const top = right
       ? `<table ${TABLE} width="100%"><tr><td valign="middle" style="text-align:left">${logo}</td><td valign="middle" style="text-align:right;padding-left:16px">${right}</td></tr></table>`
       : logo
@@ -951,9 +1300,13 @@ const DRAW: Record<string, Drawer> = {
       .filter(Boolean)
     if (points.length === 0) return ''
     ctx.text.push(points.map((t) => plain(t, ctx)).join(' · '))
-    const line = points.map((t) => inline(t, ctx, ink)).join(`<span style="color:${mix(ink, bg, 0.55)}">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>`)
+    const line = points
+      .map((t) => inline(t, ctx, ink))
+      .join(`<span style="color:${mix(ink, bg, 0.55)}">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>`)
     const to = href(p.url, ctx)
-    const words = to ? `<a href="${esc(to)}" style="color:${ink};text-decoration:none">${line}</a>` : line
+    const words = to
+      ? `<a href="${esc(to)}" style="color:${ink};text-decoration:none">${line}</a>`
+      : line
     return `<tr><td bgcolor="${bg}" style="background-color:${bg};padding:10px ${GUTTER}px;font-family:${BRAND_FONT.sans};font-size:11.5px;font-weight:700;line-height:1.4;letter-spacing:0.08em;text-transform:uppercase;color:${ink};text-align:${alignOf(p.align)}">${words}</td></tr>`
   },
 
@@ -965,11 +1318,23 @@ const DRAW: Record<string, Drawer> = {
     const width = Math.floor((INNER - gap * (per - 1)) / per)
     const bar = color(p.barColor, BRAND.navy)
     const barInk = color(p.barTextColor, BRAND.white)
-    const head = headingHtml(str(p, 'heading'), ctx, { size: 'm', align: 'center', ink: color(p.textColor, ctx.settings.headingColor), margin: 22, caps: p.caps })
+    const head = headingHtml(str(p, 'heading'), ctx, {
+      size: 'm',
+      align: 'center',
+      ink: color(p.textColor, ctx.settings.headingColor),
+      margin: 22,
+      caps: p.caps,
+    })
     const cells = list.map((i) => {
       const caption = str(i, 'caption')
       if (caption) ctx.text.push(plain(caption, ctx))
-      const picture = img(imageSrc(i.image, ctx), str(i, 'alt') || imageAlt(i.image) || caption, width, ctx, { link: i.link })
+      const picture = img(
+        imageSrc(i.image, ctx),
+        str(i, 'alt') || imageAlt(i.image) || caption,
+        width,
+        ctx,
+        { link: i.link }
+      )
       if (p.captionStyle === 'below') {
         return `${picture}${caption ? `<p style="margin:10px 0 0 0;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;line-height:1.3;color:${color(p.textColor, ctx.settings.headingColor)};text-align:center">${inline(caption, ctx, ctx.settings.linkColor)}</p>` : ''}`
       }
@@ -992,15 +1357,30 @@ const DRAW: Record<string, Drawer> = {
     const numInk = color(p.numberTextColor, ctx.settings.buttonTextColor)
     const head =
       eyebrow(str(p, 'eyebrow'), ctx, 'center', color(p.textColor, ctx.settings.mutedColor)) +
-      headingHtml(str(p, 'heading'), ctx, { size: p.size, align: 'center', ink: color(p.textColor, ctx.settings.headingColor), margin: 24, caps: p.caps })
+      headingHtml(str(p, 'heading'), ctx, {
+        size: p.size,
+        align: 'center',
+        ink: color(p.textColor, ctx.settings.headingColor),
+        margin: 24,
+        caps: p.caps,
+      })
     const cells = list.map((i, n) => {
       const title = str(i, 'title')
       const body = str(i, 'text')
-      ctx.text.push(`${n + 1}. ${[title, body].filter(Boolean).map((t) => plain(t, ctx)).join(' — ')}`)
+      ctx.text.push(
+        `${n + 1}. ${[title, body]
+          .filter(Boolean)
+          .map((t) => plain(t, ctx))
+          .join(' — ')}`
+      )
       return (
         `<table ${TABLE} align="center" style="margin:0 auto 12px"><tr><td width="44" height="44" align="center" valign="middle" bgcolor="${fill}" style="width:44px;height:44px;border-radius:22px;background-color:${fill};font-family:${BRAND_FONT.sans};font-size:18px;font-weight:800;line-height:44px;color:${numInk};text-align:center">${n + 1}</td></tr></table>` +
-        (title ? `<p style="margin:0 0 6px 0;font-family:${font(ctx, 'body')};font-size:15px;font-weight:700;line-height:1.3;color:${color(p.textColor, ctx.settings.headingColor)};text-align:center">${inline(title, ctx, ctx.settings.linkColor)}</p>` : '') +
-        (body ? `<p style="margin:0;${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), 'center', 13)};line-height:1.45">${inline(body, ctx, ctx.settings.linkColor)}</p>` : '')
+        (title
+          ? `<p style="margin:0 0 6px 0;font-family:${font(ctx, 'body')};font-size:15px;font-weight:700;line-height:1.3;color:${color(p.textColor, ctx.settings.headingColor)};text-align:center">${inline(title, ctx, ctx.settings.linkColor)}</p>`
+          : '') +
+        (body
+          ? `<p style="margin:0;${bodyStyle(ctx, color(p.textColor, ctx.settings.mutedColor), 'center', 13)};line-height:1.45">${inline(body, ctx, ctx.settings.linkColor)}</p>`
+          : '')
       )
     })
     return row(head + columns(cells, { gap: 20 }), p)
@@ -1016,11 +1396,15 @@ const DRAW: Record<string, Drawer> = {
     const mark = color(p.markColor, ctx.settings.buttonColor)
     const pill = color(p.pillColor, BRAND.white)
     const pillInk = color(p.pillTextColor, BRAND.ink)
-    const head = eyebrow(str(p, 'eyebrow'), ctx, align, ink) + headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink, margin: 16, caps: p.caps })
+    const head =
+      eyebrow(str(p, 'eyebrow'), ctx, align, ink) +
+      headingHtml(str(p, 'heading'), ctx, { size: p.size, align, ink, margin: 16, caps: p.caps })
     const intro = str(p, 'intro')
     if (intro) ctx.text.push(plain(intro, ctx))
     ctx.text.push(points.map((t) => `✓ ${plain(t, ctx)}`).join('\n'))
-    const introHtml = intro ? paragraphs(intro, ctx, bodyStyle(ctx, ink, align), ink) + spacer(18) : ''
+    const introHtml = intro
+      ? paragraphs(intro, ctx, bodyStyle(ctx, ink, align), ink) + spacer(18)
+      : ''
     const centred = align === 'center' ? ' align="center"' : ''
     const margin = align === 'center' ? 'margin:0 auto' : 'margin:0'
     let list: string
@@ -1028,13 +1412,13 @@ const DRAW: Record<string, Drawer> = {
       list = points
         .map(
           (t) =>
-            `<table ${TABLE} width="88%"${centred} style="${margin}"><tr><td bgcolor="${mark}" style="background-color:${mark};border-radius:4px;padding:10px 16px;font-family:${BRAND_FONT.sans};font-size:14px;font-weight:700;line-height:1.35;color:${pillInk === BRAND.ink ? BRAND.white : pillInk};text-align:center">${inline(t, ctx, BRAND.white)}</td></tr></table>`,
+            `<table ${TABLE} width="88%"${centred} style="${margin}"><tr><td bgcolor="${mark}" style="background-color:${mark};border-radius:4px;padding:10px 16px;font-family:${BRAND_FONT.sans};font-size:14px;font-weight:700;line-height:1.35;color:${pillInk === BRAND.ink ? BRAND.white : pillInk};text-align:center">${inline(t, ctx, BRAND.white)}</td></tr></table>`
         )
         .join(spacer(8))
     } else if (p.style === 'tiles') {
       const cells = points.map(
         (t) =>
-          `<table ${TABLE} width="100%" bgcolor="${pill}" style="background-color:${pill};border-radius:8px;border-collapse:separate"><tr><td width="42" valign="top" style="width:42px;padding:14px 0 14px 14px">${tick(mark, BRAND.white, 24)}</td><td valign="middle" style="padding:14px 14px 14px 10px;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;line-height:1.4;color:${pillInk}">${inline(t, ctx, pillInk)}</td></tr></table>`,
+          `<table ${TABLE} width="100%" bgcolor="${pill}" style="background-color:${pill};border-radius:8px;border-collapse:separate"><tr><td width="42" valign="top" style="width:42px;padding:14px 0 14px 14px">${tick(mark, BRAND.white, 24)}</td><td valign="middle" style="padding:14px 14px 14px 10px;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;line-height:1.4;color:${pillInk}">${inline(t, ctx, pillInk)}</td></tr></table>`
       )
       list = chunk(cells, 2)
         .map((two) => columns(two.concat(two.length === 1 ? [''] : []), { gap: 12 }))
@@ -1043,7 +1427,7 @@ const DRAW: Record<string, Drawer> = {
       list = points
         .map(
           (t) =>
-            `<table ${TABLE} width="88%"${centred} style="${margin}"><tr><td bgcolor="${pill}" style="background-color:${pill};border-radius:999px;padding:6px 18px 6px 6px"><table ${TABLE} width="100%"><tr><td width="32" valign="middle" style="width:32px">${tick(mark, BRAND.white, 28)}</td><td valign="middle" style="padding-left:10px;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;line-height:1.35;color:${pillInk};text-align:${align === 'center' ? 'center' : 'left'}">${inline(t, ctx, pillInk)}</td></tr></table></td></tr></table>`,
+            `<table ${TABLE} width="88%"${centred} style="${margin}"><tr><td bgcolor="${pill}" style="background-color:${pill};border-radius:999px;padding:6px 18px 6px 6px"><table ${TABLE} width="100%"><tr><td width="32" valign="middle" style="width:32px">${tick(mark, BRAND.white, 28)}</td><td valign="middle" style="padding-left:10px;font-family:${font(ctx, 'body')};font-size:14px;font-weight:600;line-height:1.35;color:${pillInk};text-align:${align === 'center' ? 'center' : 'left'}">${inline(t, ctx, pillInk)}</td></tr></table></td></tr></table>`
         )
         .join(spacer(10))
     }
@@ -1066,7 +1450,7 @@ const DRAW: Record<string, Drawer> = {
     const width = Number(p.width ?? 100)
     return row(
       `<table ${TABLE} width="${width}%" align="center" style="margin:0 auto"><tr><td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:${rgba(line, 0.35)}">&nbsp;</td></tr></table>`,
-      p,
+      p
     )
   },
 
@@ -1088,13 +1472,20 @@ function drawBlock(block: Block, ctx: Ctx): string {
     return draw(props, ctx)
   } catch (error) {
     // A block that throws is left out rather than costing the whole email.
-    console.warn(`[newsletter] block ${block.type} failed to render:`, error instanceof Error ? error.message : error)
+    console.warn(
+      `[newsletter] block ${block.type} failed to render:`,
+      error instanceof Error ? error.message : error
+    )
     return ''
   }
 }
 
 /** One block's table row (`<tr>…</tr>`), or "" when it has nothing to show. Settings default to the Indus palette. */
-export function renderBlock(block: Block, ctx: DesignRenderContext, settings: DesignSettings = DEFAULT_SETTINGS): string {
+export function renderBlock(
+  block: Block,
+  ctx: DesignRenderContext,
+  settings: DesignSettings = DEFAULT_SETTINGS
+): string {
   return drawBlock(block, { ...ctx, settings, text: [], highlight: settings.linkColor })
 }
 
@@ -1102,13 +1493,23 @@ export function renderBlock(block: Block, ctx: DesignRenderContext, settings: De
 
 function footerHtml(ctx: DesignRenderContext): string {
   const unsubscribe = ctx.unsubscribeUrl ? (href(ctx.unsubscribeUrl, ctx) ?? '#') : '#'
-  const address = ctx.brand.addressLines.filter((l) => l.trim()).map(esc).join('<br>')
+  const address = ctx.brand.addressLines
+    .filter((l) => l.trim())
+    .map(esc)
+    .join('<br>')
   return `<tr><td bgcolor="${BRAND.navy}" style="padding:18px ${GUTTER}px;background-color:${BRAND.navy};border-top:1px solid ${BRAND.border};font-family:${BRAND_FONT.sans};font-size:11px;color:${BRAND.onNavy};line-height:1.6;text-align:left"><strong style="color:${BRAND.white};">${esc(ctx.brand.legalName)}</strong>${address ? `<br>${address}` : ''}<div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.15);">${esc(ctx.footerReason)} <a href="${esc(unsubscribe)}" style="color:${BRAND.white};text-decoration:underline;">Unsubscribe</a>.</div></td></tr>`
 }
 
 function footerText(ctx: DesignRenderContext): string {
   const unsubscribe = ctx.unsubscribeUrl ? (href(ctx.unsubscribeUrl, ctx) ?? '#') : '#'
-  return ['--', ctx.brand.legalName, ...ctx.brand.addressLines.filter((l) => l.trim()), '', ctx.footerReason, `Unsubscribe: ${unsubscribe}`].join('\n')
+  return [
+    '--',
+    ctx.brand.legalName,
+    ...ctx.brand.addressLines.filter((l) => l.trim()),
+    '',
+    ctx.footerReason,
+    `Unsubscribe: ${unsubscribe}`,
+  ].join('\n')
 }
 
 /**
@@ -1121,7 +1522,11 @@ function footerText(ctx: DesignRenderContext): string {
  * body font, size and colour for prose to inherit — give prose its own side
  * padding (renderDesign's rows carry theirs).
  */
-export function renderShell(inner: { html: string; text: string }, settings: DesignSettings, ctx: DesignRenderContext): RenderedDesign {
+export function renderShell(
+  inner: { html: string; text: string },
+  settings: DesignSettings,
+  ctx: DesignRenderContext
+): RenderedDesign {
   const s = settings
   const preheader = ctx.preheader?.trim()
   const html = `<!DOCTYPE html>
@@ -1153,7 +1558,12 @@ ${footerHtml(ctx)}
 /** The whole email: normalised first, every block drawn, the legal footer always last. */
 export function renderDesign(raw: Design | unknown, ctx: DesignRenderContext): RenderedDesign {
   const design = normaliseDesign(raw)
-  const c: Ctx = { ...ctx, settings: design.settings, text: [], highlight: design.settings.linkColor }
+  const c: Ctx = {
+    ...ctx,
+    settings: design.settings,
+    text: [],
+    highlight: design.settings.linkColor,
+  }
   const rows: string[] = []
   for (const block of design.blocks) {
     const before = c.text.length
@@ -1162,7 +1572,9 @@ export function renderDesign(raw: Design | unknown, ctx: DesignRenderContext): R
     // A blank line between blocks in the text part; a block that drew nothing adds none.
     if (c.text.length > before) c.text.push('')
   }
-  const inner = rows.length ? `<table ${TABLE} width="100%" style="width:100%">\n${rows.join('\n')}\n</table>` : ''
+  const inner = rows.length
+    ? `<table ${TABLE} width="100%" style="width:100%">\n${rows.join('\n')}\n</table>`
+    : ''
   const text = c.text
     .join('\n')
     .replace(/\n{3,}/g, '\n\n')

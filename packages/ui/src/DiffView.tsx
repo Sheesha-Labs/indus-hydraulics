@@ -24,21 +24,17 @@ export function DiffView({
 }: DiffViewProps) {
   return (
     <div className={cn('grid grid-cols-2 gap-3 text-[12px]', className)}>
-      <div className="border border-ih-border bg-ih-surface-2 p-3">
-        <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted mb-2">
+      <div className="border-ih-border bg-ih-surface-2 border p-3">
+        <div className="text-ih-muted mb-2 font-mono text-[10px] tracking-[0.1em] uppercase">
           {beforeLabel}
         </div>
-        <div className="whitespace-pre-wrap text-ih-muted">
-          {before ?? <em>(empty)</em>}
-        </div>
+        <div className="text-ih-muted whitespace-pre-wrap">{before ?? <em>(empty)</em>}</div>
       </div>
-      <div className="border border-ih-accent bg-ih-accent-soft/20 p-3">
-        <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-accent mb-2">
+      <div className="border-ih-accent bg-ih-accent-soft/20 border p-3">
+        <div className="text-ih-accent mb-2 font-mono text-[10px] tracking-[0.1em] uppercase">
           {afterLabel}
         </div>
-        <div className="whitespace-pre-wrap text-ih-ink-2">
-          {after ?? <em>(empty)</em>}
-        </div>
+        <div className="text-ih-ink-2 whitespace-pre-wrap">{after ?? <em>(empty)</em>}</div>
       </div>
     </div>
   )

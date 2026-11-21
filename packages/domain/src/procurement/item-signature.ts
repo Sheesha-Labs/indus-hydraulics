@@ -19,10 +19,52 @@
 
 /** Words that carry no identifying information for a supplier search. */
 const STOPWORDS = new Set([
-  'a', 'an', 'and', 'as', 'at', 'by', 'for', 'from', 'in', 'of', 'on', 'or', 'the', 'to', 'with',
-  'x', 'nos', 'no', 'pc', 'pcs', 'piece', 'pieces', 'set', 'sets', 'ea', 'each', 'unit', 'units',
-  'qty', 'quantity', 'supply', 'supplying', 'provide', 'item', 'items', 'assorted', 'various',
-  'required', 'reqd', 'spare', 'spares', 'new', 'genuine', 'original', 'equivalent', 'equiv',
+  'a',
+  'an',
+  'and',
+  'as',
+  'at',
+  'by',
+  'for',
+  'from',
+  'in',
+  'of',
+  'on',
+  'or',
+  'the',
+  'to',
+  'with',
+  'x',
+  'nos',
+  'no',
+  'pc',
+  'pcs',
+  'piece',
+  'pieces',
+  'set',
+  'sets',
+  'ea',
+  'each',
+  'unit',
+  'units',
+  'qty',
+  'quantity',
+  'supply',
+  'supplying',
+  'provide',
+  'item',
+  'items',
+  'assorted',
+  'various',
+  'required',
+  'reqd',
+  'spare',
+  'spares',
+  'new',
+  'genuine',
+  'original',
+  'equivalent',
+  'equiv',
 ])
 
 /** Inch sizes: 6", 6 IN, 6 INCH, 6-INCH, 1/2", 1-1/2" */
@@ -33,7 +75,8 @@ const INCH =
 const MM = /\b(?:dn\s*)?(\d+(?:\.\d+)?)\s*mm\b|\bdn\s*(\d+)\b/gi
 
 /** Pressure class: 300LB, 300#, CLASS 300, 300 LBS, PN16, ANSI 150 */
-const CLASS_LB = /\b(?:class\s*|ansi\s*)?(\d{2,4})\s*(?:#|lbs?\b)|(?:\bclass|\bansi)\s*(\d{2,4})\b/gi
+const CLASS_LB =
+  /\b(?:class\s*|ansi\s*)?(\d{2,4})\s*(?:#|lbs?\b)|(?:\bclass|\bansi)\s*(\d{2,4})\b/gi
 const CLASS_PN = /\bpn\s*(\d{1,3})\b/gi
 
 const MATERIALS: Array<[RegExp, string]> = [

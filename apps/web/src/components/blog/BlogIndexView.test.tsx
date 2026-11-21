@@ -7,7 +7,9 @@ import type { BlogPostCardData } from './BlogPostCard'
 // The view only needs the page size from the loader module; the module itself
 // opens a database client on import.
 vi.mock('../../lib/blog-index', () => ({ BLOG_PAGE_SIZE: 12 }))
-vi.mock('../../actions/newsletter', () => ({ subscribeToNewsletter: async () => ({ success: true }) }))
+vi.mock('../../actions/newsletter', () => ({
+  subscribeToNewsletter: async () => ({ success: true }),
+}))
 
 const { default: BlogIndexView } = await import('./BlogIndexView')
 
@@ -60,7 +62,7 @@ function render(props: Partial<Parameters<typeof BlogIndexView>[0]> = {}) {
       totalPages={20}
       content={content()}
       {...props}
-    />,
+    />
   )
 }
 
@@ -109,7 +111,9 @@ describe('BlogIndexView', () => {
 
   it('renders the band panels in the editor order, ignoring topics_card', () => {
     const html = render({
-      content: content({ order: ['hero', 'help_card', 'topics_card', 'newsletter_card', 'topics', 'articles'] }),
+      content: content({
+        order: ['hero', 'help_card', 'topics_card', 'newsletter_card', 'topics', 'articles'],
+      }),
     })
     expect(html.indexOf('Have a question?')).toBeLessThan(html.indexOf('Never miss a teardown.'))
   })

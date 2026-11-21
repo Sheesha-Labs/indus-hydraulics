@@ -26,8 +26,7 @@
 const path = require('node:path')
 const fs = require('node:fs')
 
-const FileSystemCache =
-  require('next/dist/server/lib/incremental-cache/file-system-cache').default
+const FileSystemCache = require('next/dist/server/lib/incremental-cache/file-system-cache').default
 
 const { cacheNamespace, isStale, tagsFor } = require('./keys.js')
 

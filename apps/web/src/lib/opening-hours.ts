@@ -136,7 +136,8 @@ export function dubaiNow(date: Date = new Date()): { day: number; minutes: numbe
     minute: '2-digit',
     hour12: false,
   }).formatToParts(date)
-  const get = (type: Intl.DateTimeFormatPartTypes) => parts.find((p) => p.type === type)?.value ?? ''
+  const get = (type: Intl.DateTimeFormatPartTypes) =>
+    parts.find((p) => p.type === type)?.value ?? ''
   // `hour12: false` yields "24" for midnight on some ICU versions.
   const hour = Number(get('hour')) % 24
   return {
@@ -155,7 +156,10 @@ export function rotateToToday(rows: HoursRow[], today: number | null): HoursRow[
  * The Google-style summary line: open now and when it closes, or shut and when
  * it next opens. Null when no row carries usable times.
  */
-export function statusFor(rows: HoursRow[], now: { day: number; minutes: number }): HoursStatus | null {
+export function statusFor(
+  rows: HoursRow[],
+  now: { day: number; minutes: number }
+): HoursStatus | null {
   const byDay = new Map<number, HoursRow>()
   for (const row of rows) if (!byDay.has(row.index)) byDay.set(row.index, row)
   if (![...byDay.values()].some((r) => r.openMinutes !== null)) return null
@@ -178,7 +182,11 @@ export function statusFor(rows: HoursRow[], now: { day: number; minutes: number 
     const next = byDay.get((now.day + step) % 7)
     if (next?.openMinutes == null) continue
     const label = step === 1 ? 'tomorrow' : DAY_SHORT[(now.day + step) % 7]
-    return { open: false, state: 'Closed', detail: `Opens ${label} ${formatMinutes(next.openMinutes)}` }
+    return {
+      open: false,
+      state: 'Closed',
+      detail: `Opens ${label} ${formatMinutes(next.openMinutes)}`,
+    }
   }
 
   // Every row is closed — say so without inventing a time.
@@ -235,4 +243,3 @@ export function deskStatus(rows: HoursRow[], now: { day: number; minutes: number
 
   return { open: false, nextOpen: null }
 }
-

@@ -40,7 +40,9 @@ const createSchema = z.object({
  * came from — a DB CHECK enforces that for non-manual rows. Lines land as
  * `needs_review`; nothing here is treated as confirmed.
  */
-export async function createEnquiryFromPaste(formData: FormData): Promise<Result<{ code: string }>> {
+export async function createEnquiryFromPaste(
+  formData: FormData
+): Promise<Result<{ code: string }>> {
   try {
     const session = await auth()
     requireRole(session, ROLES.RFQ_REVIEW)
@@ -145,7 +147,9 @@ export async function setLineReviewStatus(formData: FormData): Promise<Result<vo
  * still moving — two concurrent runs on one enquiry double the bill and race
  * each other's result rows.
  */
-export async function startSupplierResearch(formData: FormData): Promise<Result<{ runId: string; mode: 'background' | 'inline' }>> {
+export async function startSupplierResearch(
+  formData: FormData
+): Promise<Result<{ runId: string; mode: 'background' | 'inline' }>> {
   try {
     const session = await auth()
     requireRole(session, ROLES.RFQ_REVIEW)
@@ -176,7 +180,8 @@ export async function startSupplierResearch(formData: FormData): Promise<Result<
       },
       data: {
         status: 'failed',
-        error: 'Timed out before starting. Background jobs may not be configured — see INNGEST_SETUP.md.',
+        error:
+          'Timed out before starting. Background jobs may not be configured — see INNGEST_SETUP.md.',
         finishedAt: new Date(),
       },
     })
@@ -223,7 +228,9 @@ export async function startSupplierResearch(formData: FormData): Promise<Result<
  * than filing it here. A mis-attributed reply prices the wrong enquiry, the
  * numbers all look real, and the error only surfaces on an invoice.
  */
-export async function recordSupplierOffer(formData: FormData): Promise<Result<{ offerId: string; lines: number; dropped: number }>> {
+export async function recordSupplierOffer(
+  formData: FormData
+): Promise<Result<{ offerId: string; lines: number; dropped: number }>> {
   try {
     const session = await auth()
     requireRole(session, ROLES.RFQ_REVIEW)
@@ -251,7 +258,7 @@ export async function recordSupplierOffer(formData: FormData): Promise<Result<{ 
     if (attribution.enquiryCode && attribution.enquiryCode !== enquiry.code) {
       return fail(
         'PRECONDITION_FAILED',
-        `This reply quotes ${attribution.enquiryCode}, not ${enquiry.code}. File it against that enquiry instead.`,
+        `This reply quotes ${attribution.enquiryCode}, not ${enquiry.code}. File it against that enquiry instead.`
       )
     }
 
@@ -290,7 +297,8 @@ export async function recordSupplierOffer(formData: FormData): Promise<Result<{ 
           create: extracted.lines.map((line, i) => {
             const money = extracted.parsed[i]
             const flags: string[] = []
-            if (extracted.decimalConvention === 'ambiguous') flags.push('decimal_convention_ambiguous')
+            if (extracted.decimalConvention === 'ambiguous')
+              flags.push('decimal_convention_ambiguous')
             if (line.unitPriceRaw && money?.unitPrice == null) flags.push('price_unreadable')
             if (line.kind === 'alternative') flags.push('alternative_part')
             return {
@@ -312,7 +320,11 @@ export async function recordSupplierOffer(formData: FormData): Promise<Result<{ 
     })
 
     revalidatePath(`/admin/enquiries/${enquiry.code}/offers`)
-    return ok({ offerId: offer.id, lines: extracted.lines.length, dropped: extracted.droppedForNoEvidence })
+    return ok({
+      offerId: offer.id,
+      lines: extracted.lines.length,
+      dropped: extracted.droppedForNoEvidence,
+    })
   } catch (error) {
     return failFromError(error)
   }
@@ -343,11 +355,18 @@ export async function selectOfferLine(formData: FormData): Promise<Result<void>>
 
     const line = await db.supplierOfferLine.findUnique({
       where: { id: parsed.data.offerLineId },
-      select: { id: true, unitPrice: true, offer: { select: { enquiry: { select: { code: true } } } } },
+      select: {
+        id: true,
+        unitPrice: true,
+        offer: { select: { enquiry: { select: { code: true } } } },
+      },
     })
     if (!line) return fail('NOT_FOUND', 'That offer line no longer exists.')
     if (line.unitPrice == null) {
-      return fail('PRECONDITION_FAILED', 'That line has no readable price — fix it before selecting it.')
+      return fail(
+        'PRECONDITION_FAILED',
+        'That line has no readable price — fix it before selecting it.'
+      )
     }
 
     await db.$transaction(async (tx) => {
@@ -415,7 +434,11 @@ export async function generateEnquiryQuote(formData: FormData): Promise<Result<{
         lines: {
           orderBy: { position: 'asc' },
           select: {
-            id: true, position: true, description: true, qty: true, unit: true,
+            id: true,
+            position: true,
+            description: true,
+            qty: true,
+            unit: true,
             offerLines: {
               where: { selectedAt: { not: null } },
               select: { id: true, unitPrice: true, offer: { select: { supplierName: true } } },
@@ -565,7 +588,10 @@ export async function attachToEnquiry(formData: FormData): Promise<Result<{ id: 
     if (!parsed.success) return failFromError(parsed.error)
 
     const [enquiry, media] = await Promise.all([
-      db.enquiry.findUnique({ where: { id: parsed.data.enquiryId }, select: { id: true, code: true } }),
+      db.enquiry.findUnique({
+        where: { id: parsed.data.enquiryId },
+        select: { id: true, code: true },
+      }),
       db.media.findUnique({
         where: { id: parsed.data.mediaId },
         select: { id: true, mimeType: true, bytes: true },
@@ -602,7 +628,9 @@ export async function attachToEnquiry(formData: FormData): Promise<Result<{ id: 
  * records both the verbatim text it came from and which attachment produced it,
  * so a wrong quantity can be traced back to the page it was read off.
  */
-export async function extractAttachmentLines(formData: FormData): Promise<Result<{ added: number; status: string; note: string | null }>> {
+export async function extractAttachmentLines(
+  formData: FormData
+): Promise<Result<{ added: number; status: string; note: string | null }>> {
   try {
     requireRole(await auth(), ROLES.RFQ_REVIEW)
 
@@ -614,7 +642,9 @@ export async function extractAttachmentLines(formData: FormData): Promise<Result
     const attachment = await db.enquiryAttachment.findUnique({
       where: { id: parsed.data.attachmentId },
       select: {
-        id: true, filename: true, mimeType: true,
+        id: true,
+        filename: true,
+        mimeType: true,
         enquiry: { select: { id: true, code: true } },
         media: { select: { storagePath: true } },
       },

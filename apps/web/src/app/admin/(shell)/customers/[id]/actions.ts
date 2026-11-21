@@ -14,7 +14,12 @@ const UpdateAccountMetaSchema = z.object({
   id: z.string().uuid(),
   tier: Tier,
   status: Status,
-  assignedRepId: z.string().uuid().optional().or(z.literal('')).transform((v) => (v ? v : null)),
+  assignedRepId: z
+    .string()
+    .uuid()
+    .optional()
+    .or(z.literal(''))
+    .transform((v) => (v ? v : null)),
   creditLimit: z.coerce.number().min(0).optional(),
   paymentTermsDays: z.coerce.number().int().min(0).max(365).optional(),
 })
@@ -78,7 +83,10 @@ export async function addActivityNote(formData: FormData): Promise<Result<void>>
   }
 }
 
-export async function deactivateContact(contactId: string, accountId: string): Promise<Result<void>> {
+export async function deactivateContact(
+  contactId: string,
+  accountId: string
+): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.ACCOUNT_WRITE)
     z.string().uuid().parse(contactId)
@@ -91,7 +99,10 @@ export async function deactivateContact(contactId: string, accountId: string): P
   }
 }
 
-export async function reactivateContact(contactId: string, accountId: string): Promise<Result<void>> {
+export async function reactivateContact(
+  contactId: string,
+  accountId: string
+): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.ACCOUNT_WRITE)
     z.string().uuid().parse(contactId)

@@ -15,7 +15,10 @@ import type { RelatedArticle } from '../RelatedReading'
  * Slugs that do not resolve are skipped, and the block renders nothing at all
  * once every slug has been skipped — an empty heading is worse than none.
  */
-export function resolvedRelated(block: RelatedArticlesBlock, articlesBySlug: Map<string, RelatedArticle>) {
+export function resolvedRelated(
+  block: RelatedArticlesBlock,
+  articlesBySlug: Map<string, RelatedArticle>
+) {
   return block.slugs
     .map((slug) => articlesBySlug.get(slug))
     .filter((a): a is RelatedArticle => Boolean(a))
@@ -39,9 +42,9 @@ export default function RelatedArticlesBlockView({
   return (
     <nav aria-label={heading} className="min-w-0">
       {step ? (
-        <h3 className="mb-1.5 text-[15px] font-semibold text-ih-ink">{heading}</h3>
+        <h3 className="text-ih-ink mb-1.5 text-[15px] font-semibold">{heading}</h3>
       ) : (
-        <h2 className="mb-1.5 text-[15px] font-semibold text-ih-ink">{heading}</h2>
+        <h2 className="text-ih-ink mb-1.5 text-[15px] font-semibold">{heading}</h2>
       )}
       <ol
         className={`m-0 grid list-none grid-cols-1 p-0 ${
@@ -49,13 +52,15 @@ export default function RelatedArticlesBlockView({
         }`}
       >
         {articles.map((article) => (
-          <li key={article.slug} className="min-w-0 border-b border-ih-border">
+          <li key={article.slug} className="border-ih-border min-w-0 border-b">
             <Link href={`/blog/${article.slug}`} className="group flex flex-col gap-1 py-3.5">
-              <span className="text-[15px] font-medium leading-[1.4] text-ih-ink transition-colors duration-150 group-hover:text-ih-accent motion-reduce:transition-none">
+              <span className="text-ih-ink group-hover:text-ih-accent text-[15px] leading-[1.4] font-medium transition-colors duration-150 motion-reduce:transition-none">
                 {article.title}
               </span>
               {article.excerpt && (
-                <span className="line-clamp-2 text-[13.5px] leading-[1.55] text-ih-ink-2">{article.excerpt}</span>
+                <span className="text-ih-ink-2 line-clamp-2 text-[13.5px] leading-[1.55]">
+                  {article.excerpt}
+                </span>
               )}
             </Link>
           </li>

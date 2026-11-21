@@ -33,10 +33,16 @@ describe('format helpers — pure', () => {
 })
 
 type FakeCounterRow = { scope: string; year: number; value: number }
+type UpsertArgs = {
+  where: { scope_year: { scope: string; year: number } }
+  update: { value: { increment?: number } }
+  create: { scope: string; year: number; value: number }
+  select?: { value: boolean }
+}
 
 function makeFakeClient(initialRows: FakeCounterRow[] = []) {
   const rows = new Map(initialRows.map((r) => [`${r.scope}:${r.year}`, r.value]))
-  const upsert = vi.fn(async ({ where, update, create }: any) => {
+  const upsert = vi.fn(async ({ where, update, create }: UpsertArgs) => {
     const key = `${where.scope_year.scope}:${where.scope_year.year}`
     const existing = rows.get(key)
     if (existing === undefined) {
@@ -47,12 +53,16 @@ function makeFakeClient(initialRows: FakeCounterRow[] = []) {
     rows.set(key, next)
     return { value: next }
   })
-  const findMany = vi.fn(async () => [])
+  const findMany = vi.fn(async (): Promise<Array<{ code: string; revision: number }>> => [])
   return {
-    client: {
-      counter: { upsert } as any,
-      quote: { findMany } as any,
-    } as any,
+    // A fake that implements only the two delegates codes.ts calls. The cast
+    // is to the client type the functions take, through unknown, because the
+    // fake does not (and should not) implement the rest of Prisma.
+    client: { counter: { upsert }, quote: { findMany } } as unknown as NonNullable<
+      Parameters<typeof nextRfqCode>[0]
+    > & {
+      quote: { findMany: typeof findMany }
+    },
     upsert,
     findMany,
     snapshot: () => Array.from(rows.entries()),

@@ -33,7 +33,7 @@ export function verifyResendSignature(
   body: string,
   headers: SignatureHeaders,
   secret: string,
-  now: Date = new Date(),
+  now: Date = new Date()
 ): boolean {
   const { id, timestamp, signature } = headers
   if (!id || !timestamp || !signature || !secret) return false
@@ -110,14 +110,17 @@ export function parseEmailEvent(payload: unknown): EmailEvent | null {
   if (typeof type !== 'string' || !(type in HANDLED)) return null
   if (!data || typeof data.email_id !== 'string' || !data.email_id) return null
 
-  const recipients = Array.isArray(data.to) ? data.to.filter((r): r is string => typeof r === 'string') : []
+  const recipients = Array.isArray(data.to)
+    ? data.to.filter((r): r is string => typeof r === 'string')
+    : []
   const stamp = typeof created_at === 'string' ? Date.parse(created_at) : Number.NaN
 
   return {
     type: HANDLED[type as keyof typeof HANDLED],
     emailId: data.email_id,
     recipients,
-    permanent: typeof data.bounce?.type === 'string' && data.bounce.type.toLowerCase() === 'permanent',
+    permanent:
+      typeof data.bounce?.type === 'string' && data.bounce.type.toLowerCase() === 'permanent',
     at: Number.isNaN(stamp) ? new Date() : new Date(stamp),
     senderDomain: domainOf(data.from),
   }

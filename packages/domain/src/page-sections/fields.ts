@@ -17,13 +17,13 @@ import type {
 export const text = (
   key: string,
   label: string,
-  extra: Partial<SimpleFieldDef> = {},
+  extra: Partial<SimpleFieldDef> = {}
 ): SimpleFieldDef => ({ key, label, kind: 'text', max: 160, ...extra })
 
 export const area = (
   key: string,
   label: string,
-  extra: Partial<SimpleFieldDef> = {},
+  extra: Partial<SimpleFieldDef> = {}
 ): SimpleFieldDef => ({
   key,
   label,
@@ -41,7 +41,7 @@ export const area = (
 export const richText = (
   key: string,
   label: string,
-  extra: Partial<SimpleFieldDef> = {},
+  extra: Partial<SimpleFieldDef> = {}
 ): SimpleFieldDef => ({
   key,
   label,
@@ -54,7 +54,7 @@ export const richText = (
 export const link = (
   key: string,
   label: string,
-  extra: Partial<SimpleFieldDef> = {},
+  extra: Partial<SimpleFieldDef> = {}
 ): SimpleFieldDef => ({
   key,
   label,
@@ -85,7 +85,7 @@ export const select = (
   key: string,
   label: string,
   optionsKey: SeedKey,
-  extra: Partial<Omit<SelectFieldDef, 'kind' | 'optionsKey'>> = {},
+  extra: Partial<Omit<SelectFieldDef, 'kind' | 'optionsKey'>> = {}
 ): SelectFieldDef => ({ key, label, kind: 'select', optionsKey, ...extra })
 
 /** A pick from a fixed set declared in code rather than from live records. */
@@ -93,7 +93,7 @@ export const choice = (
   key: string,
   label: string,
   options: readonly { value: string; label: string }[],
-  extra: Partial<Omit<SelectFieldDef, 'kind' | 'options' | 'optionsKey'>> = {},
+  extra: Partial<Omit<SelectFieldDef, 'kind' | 'options' | 'optionsKey'>> = {}
 ): SelectFieldDef => ({ key, label, kind: 'select', options, ...extra })
 
 export const eyebrow = (extra: Partial<SimpleFieldDef> = {}) =>
@@ -105,10 +105,7 @@ export const heading = (extra: Partial<SimpleFieldDef> = {}) =>
 export const body = (extra: Partial<SimpleFieldDef> = {}) => area('body', 'Body', { ...extra })
 
 /** Label + link, the pair every call-to-action on the site is made of. */
-export const ctaPair = (
-  prefix = '',
-  labelText = 'Button label',
-): SimpleFieldDef[] => {
+export const ctaPair = (prefix = '', labelText = 'Button label'): SimpleFieldDef[] => {
   const k = (n: string) => (prefix ? `${prefix}_${n}` : n)
   return [
     text(k('cta_label'), labelText, { max: 60, optional: true }),
@@ -119,7 +116,7 @@ export const ctaPair = (
 export const statList = (
   max = 6,
   label = 'Stats',
-  opts: { withSuffix?: boolean } = {},
+  opts: { withSuffix?: boolean } = {}
 ): ListFieldDef => ({
   key: 'stats',
   label,
@@ -132,9 +129,7 @@ export const statList = (
     // the `%` in "100%". It is a separate field rather than part of the figure
     // because the design sizes the two differently, and a suffix typed into
     // `value` would render at full size with no way to tell.
-    ...(opts.withSuffix
-      ? [text('suffix', 'Small unit', { max: 8, optional: true })]
-      : []),
+    ...(opts.withSuffix ? [text('suffix', 'Small unit', { max: 8, optional: true })] : []),
     text('label', 'Caption', { max: 60 }),
   ],
 })
@@ -171,7 +166,7 @@ export const cardList = (
     withLink?: boolean
     /** Adds a short leading token — a year, an index number, a tag. */
     withTag?: string
-  } = {},
+  } = {}
 ): ListFieldDef => ({
   key,
   label,

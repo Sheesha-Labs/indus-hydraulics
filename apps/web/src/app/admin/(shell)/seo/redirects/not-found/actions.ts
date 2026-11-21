@@ -14,7 +14,10 @@ const ResolveSchema = z.object({
   statusCode: z
     .union([z.string(), z.number()])
     .transform((v) => Number(v))
-    .refine((n) => n === 301 || n === 302 || n === 307 || n === 308, 'Status must be 301/302/307/308'),
+    .refine(
+      (n) => n === 301 || n === 302 || n === 307 || n === 308,
+      'Status must be 301/302/307/308'
+    ),
 })
 
 /**
@@ -22,9 +25,7 @@ const ResolveSchema = z.object({
  * upserts a Redirect row pointing at the chosen target, marks the 404
  * row resolved (so it disappears from the unresolved list).
  */
-export async function resolveNotFoundWithRedirect(
-  formData: FormData,
-): Promise<Result<void>> {
+export async function resolveNotFoundWithRedirect(formData: FormData): Promise<Result<void>> {
   try {
     const session = requireRole(await auth(), ROLES.SEO_INFRASTRUCTURE)
     const parsed = ResolveSchema.parse({
@@ -36,7 +37,9 @@ export async function resolveNotFoundWithRedirect(
     const nf = await db.notFoundLog.findUnique({ where: { id: parsed.notFoundId } })
     if (!nf) return failFromError(new Error('Not-found row no longer exists'))
     if (!nf.path.startsWith('/')) {
-      return failFromError(new Error(`404 path "${nf.path}" is not a relative URL — refusing to redirect`))
+      return failFromError(
+        new Error(`404 path "${nf.path}" is not a relative URL — refusing to redirect`)
+      )
     }
 
     await withSeoAudit(
@@ -73,7 +76,7 @@ export async function resolveNotFoundWithRedirect(
           where: { id: nf.id },
           data: { resolvedRedirectId: r.id },
         })
-      },
+      }
     )
 
     revalidatePath('/admin/seo/redirects/not-found')

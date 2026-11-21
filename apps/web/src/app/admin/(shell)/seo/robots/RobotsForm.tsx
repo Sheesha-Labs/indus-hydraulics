@@ -39,15 +39,18 @@ export default function RobotsForm({ seoSetting }: Props) {
   }
 
   return (
-    <form action={handleSave} className="max-w-[800px] flex flex-col gap-5">
-      <div className="rounded-lg border border-[oklch(0.75_0.12_70)]/40 bg-ih-warning-soft/40 px-4 py-3 text-[12px] leading-relaxed">
-        <strong>Infrastructure change.</strong> Edits here ship to <code>/robots.txt</code> on
-        next request. A bad rule can deindex the entire site — the audit log records every
-        change so you can revert quickly.
+    <form action={handleSave} className="flex max-w-[800px] flex-col gap-5">
+      <div className="bg-ih-warning-soft/40 rounded-lg border border-[oklch(0.75_0.12_70)]/40 px-4 py-3 text-[12px] leading-relaxed">
+        <strong>Infrastructure change.</strong> Edits here ship to <code>/robots.txt</code> on next
+        request. A bad rule can deindex the entire site — the audit log records every change so you
+        can revert quickly.
       </div>
 
       <div>
-        <label htmlFor="robots-robotsTxt" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label
+          htmlFor="robots-robotsTxt"
+          className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+        >
           robots.txt content
         </label>
         <Textarea
@@ -57,8 +60,10 @@ export default function RobotsForm({ seoSetting }: Props) {
           defaultValue={
             seoSetting?.robotsTxt ??
             'User-agent: *\nAllow: /\n\nSitemap: https://indushydraulics.com/sitemap.xml'
-          } className="tabular-nums text-[12px] resize-none" />
-        <p className="mt-2 text-[11px] text-ih-muted">
+          }
+          className="resize-none text-[12px] tabular-nums"
+        />
+        <p className="text-ih-muted mt-2 text-[11px]">
           Lines starting with <code>#</code> are comments. The Sitemap directive is appended
           automatically when present in `SeoSetting.robotsTxtAutoAppendSitemap`.
         </p>
@@ -68,15 +73,13 @@ export default function RobotsForm({ seoSetting }: Props) {
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-5 text-[12px] tabular-nums disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save robots.txt'}
         </button>
-        {saved && (
-          <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
-        )}
+        {saved && <span className="text-ih-success text-[11px] tabular-nums">Saved ✓</span>}
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}

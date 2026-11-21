@@ -36,8 +36,7 @@ import PhoneInput from '../phone/PhoneInput'
  */
 
 export type DesignedEnquiryResult =
-  | { success: true; code: string; token: string }
-  | { success: false; error: string }
+  { success: true; code: string; token: string } | { success: false; error: string }
 
 export default function DesignedEnquiryForm({
   action,
@@ -120,24 +119,24 @@ export default function DesignedEnquiryForm({
 
       {result ? (
         <div className="mt-5 flex flex-col items-start gap-4" role="status" aria-live="polite">
-          <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-ih-accent">
+          <span className="text-ih-accent font-mono text-[10px] tracking-[0.14em] uppercase">
             Enquiry received · {result.code}
           </span>
-          <p className="text-[13.5px] leading-[1.6] text-ih-ink-2">{confirmation}</p>
+          <p className="text-ih-ink-2 text-[13.5px] leading-[1.6]">{confirmation}</p>
           <Link
             href={`/quote/${result.code}?token=${encodeURIComponent(result.token)}`}
-            className="text-[13.5px] text-ih-accent underline underline-offset-4 hover:text-ih-accent-hover"
+            className="text-ih-accent hover:text-ih-accent-hover text-[13.5px] underline underline-offset-4"
           >
             Track this enquiry →
           </Link>
-          <p className="text-[12.5px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted text-[12.5px] leading-[1.55]">
             A copy is on its way to the address you gave. If it does not arrive, check the spam
             folder before assuming the enquiry did not land.
           </p>
         </div>
       ) : (
         <>
-          <p className="mt-2 text-[12.5px] leading-[1.55] text-ih-muted">{body}</p>
+          <p className="text-ih-muted mt-2 text-[12.5px] leading-[1.55]">{body}</p>
 
           <form onSubmit={handleSubmit}>
             {/* Honeypot. Off-screen rather than display:none — some bots skip
@@ -189,7 +188,11 @@ export default function DesignedEnquiryForm({
                 <PhoneInput size="lg" />
               </Field>
               <Field label={choice.label} className="sm:col-span-2">
-                <Select name={choice.name} defaultValue={choice.defaultValue} className="h-11 sm:h-10">
+                <Select
+                  name={choice.name}
+                  defaultValue={choice.defaultValue}
+                  className="h-11 sm:h-10"
+                >
                   {choice.defaultValue === '' ? <option value="">Select…</option> : null}
                   {choice.options.map((option) => (
                     <option key={option} value={option}>
@@ -220,7 +223,14 @@ export default function DesignedEnquiryForm({
               />
             )}
 
-            <Button type="submit" kind="primary" size="lg" block className="mt-4" disabled={isPending}>
+            <Button
+              type="submit"
+              kind="primary"
+              size="lg"
+              block
+              className="mt-4"
+              disabled={isPending}
+            >
               {isPending ? 'Sending…' : submitLabel}
               <span aria-hidden="true">{isPending ? '' : '→'}</span>
             </Button>

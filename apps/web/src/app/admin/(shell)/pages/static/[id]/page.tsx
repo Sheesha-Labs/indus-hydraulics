@@ -15,7 +15,15 @@ export default async function CmsPageEditorPage({ params }: Props) {
   if (!isNew && !page) notFound()
 
   const [recentMedia, ogMedia] = isNew
-    ? [[] as Array<{ id: string; storagePath: string; alt: string | null; originalFilename: string }>, null as { storagePath: string } | null]
+    ? [
+        [] as Array<{
+          id: string
+          storagePath: string
+          alt: string | null
+          originalFilename: string
+        }>,
+        null as { storagePath: string } | null,
+      ]
     : await Promise.all([
         db.media.findMany({
           where: { kind: 'image' },
@@ -33,7 +41,7 @@ export default async function CmsPageEditorPage({ params }: Props) {
 
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
@@ -56,8 +64,7 @@ export default async function CmsPageEditorPage({ params }: Props) {
               robotsFollow: page.robotsFollow,
               ogImageMediaId: page.ogImageMediaId,
               ogImageStoragePath: ogMedia?.storagePath ?? null,
-              sitemapPriority:
-                page.sitemapPriority != null ? Number(page.sitemapPriority) : null,
+              sitemapPriority: page.sitemapPriority != null ? Number(page.sitemapPriority) : null,
               sitemapChangeFreq: page.sitemapChangeFreq,
               excludeFromSitemap: page.excludeFromSitemap,
               jsonLdOverride: page.jsonLdOverride

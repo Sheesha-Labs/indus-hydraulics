@@ -17,7 +17,7 @@ export type ActivateState = { error?: string } | { ok: true; email: string } | n
  */
 export async function activateStaffAccount(
   _prev: ActivateState,
-  formData: FormData,
+  formData: FormData
 ): Promise<ActivateState> {
   const token = String(formData.get('token') ?? '')
   const password = String(formData.get('password') ?? '')
@@ -84,4 +84,3 @@ export async function activateStaffAccount(
 
   return { ok: true, email }
 }
-

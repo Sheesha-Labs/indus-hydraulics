@@ -121,12 +121,12 @@ function DetailBody({
 
       <DialogBody className="flex max-h-[62vh] flex-col gap-5 overflow-y-auto">
         <div className="flex gap-4">
-          <div className="h-28 w-36 flex-shrink-0 overflow-hidden rounded-md border border-ih-border bg-ih-surface-2">
+          <div className="border-ih-border bg-ih-surface-2 h-28 w-36 flex-shrink-0 overflow-hidden rounded-md border">
             {thumb ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={thumb} alt={detail.alt ?? ''} className="h-full w-full object-cover" />
             ) : (
-              <span className="grid h-full w-full place-items-center tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+              <span className="text-ih-muted-2 grid h-full w-full place-items-center text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
                 {detail.kind}
               </span>
             )}
@@ -152,7 +152,7 @@ function DetailBody({
         </div>
 
         {/* ── Editable fields ─────────────────────────────────────────── */}
-        <div className="flex flex-col gap-3 border-t border-ih-border pt-4">
+        <div className="border-ih-border flex flex-col gap-3 border-t pt-4">
           <Field
             label="Alt text"
             hint="Describes the image for screen readers and search engines. Leave blank only if it is purely decorative."
@@ -166,7 +166,10 @@ function DetailBody({
               maxLength={300}
             />
           </Field>
-          <Field label="Caption" hint="Optional. Shown under the image where a surface supports it.">
+          <Field
+            label="Caption"
+            hint="Optional. Shown under the image where a surface supports it."
+          >
             <Textarea
               value={caption}
               onChange={(e) => setCaption(e.target.value)}
@@ -176,23 +179,23 @@ function DetailBody({
             />
           </Field>
           {!canEdit ? (
-            <p className="text-[12px] text-ih-muted">
+            <p className="text-ih-muted text-[12px]">
               Your role can view the library but not edit file details.
             </p>
           ) : null}
         </div>
 
         {/* ── Usage list ──────────────────────────────────────────────── */}
-        <div className="flex flex-col gap-2 border-t border-ih-border pt-4">
-          <h3 className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+        <div className="border-ih-border flex flex-col gap-2 border-t pt-4">
+          <h3 className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             Where this is used
           </h3>
           {usages.length === 0 ? (
-            <p className="text-[13px] text-ih-ink-2">
+            <p className="text-ih-ink-2 text-[13px]">
               No record references this file. It can safely be deleted.
             </p>
           ) : (
-            <ul className="divide-y divide-ih-border text-[13px]">
+            <ul className="divide-ih-border divide-y text-[13px]">
               {usages.map((u, i) => (
                 <UsageRow key={`${u.kind}-${u.id}-${u.role}-${i}`} usage={u} />
               ))}
@@ -220,17 +223,22 @@ function UsageRow({ usage }: { usage: MediaUsage }) {
     <li className="flex items-center gap-3 py-2">
       {/* Fixed-width mono eyebrow. That column is what makes a mixed list of
           products, blog posts and RFQs scannable rather than a wall of text. */}
-      <span className="w-24 flex-shrink-0 tabular-nums text-[10.5px] uppercase tracking-[0.09em] text-ih-muted">
+      <span className="text-ih-muted w-24 flex-shrink-0 text-[10.5px] tracking-[0.09em] uppercase tabular-nums">
         {MEDIA_USAGE_KIND_LABELS[usage.kind].one}
       </span>
       <span className="min-w-0 flex-1 truncate" title={usage.label}>
         {usage.href ? (
           <Link
             href={usage.href}
-            className="inline-flex items-center gap-1 text-ih-ink-2 transition-colors hover:text-ih-accent"
+            className="text-ih-ink-2 hover:text-ih-accent inline-flex items-center gap-1 transition-colors"
           >
             <span className="truncate">{usage.label}</span>
-            <ExternalLink size={10} strokeWidth={1.8} aria-hidden="true" className="flex-shrink-0" />
+            <ExternalLink
+              size={10}
+              strokeWidth={1.8}
+              aria-hidden="true"
+              className="flex-shrink-0"
+            />
           </Link>
         ) : (
           // ServiceCase, BlogCategory and BlogAuthor have no admin editor, so
@@ -238,7 +246,7 @@ function UsageRow({ usage }: { usage: MediaUsage }) {
           <span className="text-ih-ink-2">{usage.label}</span>
         )}
       </span>
-      <span className="flex-shrink-0 text-[11.5px] text-ih-muted">{usage.role}</span>
+      <span className="text-ih-muted flex-shrink-0 text-[11.5px]">{usage.role}</span>
       <span
         className={cn(
           'inline-flex h-5 flex-shrink-0 items-center rounded-full px-1.5 text-[10.5px]',
@@ -266,8 +274,13 @@ function Meta({
 }) {
   return (
     <div className="min-w-0">
-      <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.09em] text-ih-muted">{label}</dt>
-      <dd className={cn('truncate text-ih-ink-2', mono && 'tabular-nums text-[11.5px]')} title={hint}>
+      <dt className="text-ih-muted text-[10.5px] tracking-[0.09em] uppercase tabular-nums">
+        {label}
+      </dt>
+      <dd
+        className={cn('text-ih-ink-2 truncate', mono && 'text-[11.5px] tabular-nums')}
+        title={hint}
+      >
         {value}
       </dd>
     </div>

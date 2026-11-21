@@ -25,11 +25,7 @@ describe('pushRecentQuery — happy path', () => {
 
 describe('pushRecentQuery — dedup', () => {
   test('duplicate (case-insensitive) is removed and re-prepended', () => {
-    expect(pushRecentQuery(['pump', 'valve', 'hose'], 'PUMP')).toEqual([
-      'PUMP',
-      'valve',
-      'hose',
-    ])
+    expect(pushRecentQuery(['pump', 'valve', 'hose'], 'PUMP')).toEqual(['PUMP', 'valve', 'hose'])
   })
 
   test('exact-match duplicate moves to front', () => {

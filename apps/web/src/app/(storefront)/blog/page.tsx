@@ -21,7 +21,9 @@ export const metadata: Metadata = {
   // it, so no reader or crawler finds it without being told the URL.
   alternates: {
     canonical: urlFor('/blog'),
-    types: { 'application/rss+xml': [{ url: urlFor('/blog/rss.xml'), title: 'Indus Hydraulics — Blog' }] },
+    types: {
+      'application/rss+xml': [{ url: urlFor('/blog/rss.xml'), title: 'Indus Hydraulics — Blog' }],
+    },
   },
 }
 

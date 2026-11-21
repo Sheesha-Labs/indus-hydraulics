@@ -31,7 +31,7 @@ export function bboxOf(
   data: Uint8ClampedArray,
   width: number,
   height: number,
-  threshold = 8,
+  threshold = 8
 ): Bbox | null {
   let left = width
   let top = height

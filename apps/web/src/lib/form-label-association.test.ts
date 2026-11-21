@@ -187,7 +187,9 @@ describe('every form label names a control', () => {
   test('a fixed file is removed from the backlog rather than left stale', () => {
     const stale = Object.entries(ALLOWED)
       .filter(([rel, expected]) => (counts.get(rel)?.length ?? 0) < expected)
-      .map(([rel, expected]) => `${rel}: now ${counts.get(rel)?.length ?? 0}, listed as ${expected}`)
+      .map(
+        ([rel, expected]) => `${rel}: now ${counts.get(rel)?.length ?? 0}, listed as ${expected}`
+      )
 
     expect(stale).toEqual([])
   })

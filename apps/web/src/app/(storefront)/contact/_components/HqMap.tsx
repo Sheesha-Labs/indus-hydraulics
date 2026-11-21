@@ -34,15 +34,15 @@ export default function HqMap({
   const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapQuery)}`
 
   return (
-    <section className="border-t border-ih-border py-14">
+    <section className="border-ih-border border-t py-14">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
           <div>
             <span className="eyebrow">Head office</span>
-            <h2 className="mt-2 font-serif text-[clamp(26px,3vw,34px)] font-normal leading-[1.1] tracking-[-0.01em]">
+            <h2 className="mt-2 font-serif text-[clamp(26px,3vw,34px)] leading-[1.1] font-normal tracking-[-0.01em]">
               Come and see us in {city}.
             </h2>
-            <address className="mt-3 not-italic text-[14px] leading-[1.6] text-ih-muted">
+            <address className="text-ih-muted mt-3 text-[14px] leading-[1.6] not-italic">
               {addressLines.map((line) => (
                 <span key={line} className="block">
                   {line}
@@ -55,7 +55,7 @@ export default function HqMap({
             target="_blank"
             rel="noopener noreferrer"
             data-testid="hq-get-directions"
-            className="inline-flex h-11 items-center gap-2 rounded-sm bg-ih-navy px-5 text-[13.5px] font-medium text-white transition-colors hover:bg-ih-ink"
+            className="bg-ih-navy hover:bg-ih-ink inline-flex h-11 items-center gap-2 rounded-sm px-5 text-[13.5px] font-medium text-white transition-colors"
           >
             <Navigation size={15} strokeWidth={1.8} aria-hidden />
             Get directions
@@ -64,7 +64,7 @@ export default function HqMap({
 
         <div className={`grid gap-4 ${photo ? 'lg:grid-cols-[0.85fr_1.15fr]' : 'grid-cols-1'}`}>
           {photo ? (
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-ih-border lg:aspect-auto">
+            <div className="border-ih-border relative aspect-[4/3] overflow-hidden rounded-lg border lg:aspect-auto">
               <Image
                 src={photo.src}
                 alt={photo.alt}
@@ -80,11 +80,11 @@ export default function HqMap({
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
-            className="h-[320px] w-full rounded-lg border border-ih-border md:h-[400px]"
+            className="border-ih-border h-[320px] w-full rounded-lg border md:h-[400px]"
           />
         </div>
 
-        {note ? <p className="mt-4 text-[12.5px] text-ih-muted">{note}</p> : null}
+        {note ? <p className="text-ih-muted mt-4 text-[12.5px]">{note}</p> : null}
       </div>
     </section>
   )

@@ -1,6 +1,10 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { MARKETING_DOMAIN, WEBSITE_DOMAIN } from '@indus/domain'
-import { isOwnSender, parseEmailEvent, verifyResendSignature } from '../../../../lib/newsletter/events'
+import {
+  isOwnSender,
+  parseEmailEvent,
+  verifyResendSignature,
+} from '../../../../lib/newsletter/events'
 import { recordEmailEvent } from '../../../../lib/newsletter/service'
 
 /** How long after the event an unmatched newsletter event is retried. */
@@ -33,7 +37,7 @@ export async function POST(req: NextRequest) {
       timestamp: req.headers.get('svix-timestamp'),
       signature: req.headers.get('svix-signature'),
     },
-    secret,
+    secret
   )
   if (!signed) return NextResponse.json({ ok: false }, { status: 401 })
 
@@ -58,13 +62,21 @@ export async function POST(req: NextRequest) {
     // so a fast `delivered` can arrive first and match nothing. Ask Resend to
     // retry a recent one rather than lose the stamp. (Suppression is keyed
     // on the address and has already happened either way.)
-    if (!outcome.email && event.senderDomain === MARKETING_DOMAIN && Date.now() - event.at.getTime() < RETRY_UNMATCHED_MS) {
+    if (
+      !outcome.email &&
+      event.senderDomain === MARKETING_DOMAIN &&
+      Date.now() - event.at.getTime() < RETRY_UNMATCHED_MS
+    ) {
       return NextResponse.json({ ok: false, reason: 'no matching email yet' }, { status: 503 })
     }
     return NextResponse.json({ ok: true, ...outcome })
   } catch (err) {
     // The message id and type only — never the recipients.
-    console.error('[webhooks.resend] write failed', { type: event.type, emailId: event.emailId, err })
+    console.error('[webhooks.resend] write failed', {
+      type: event.type,
+      emailId: event.emailId,
+      err,
+    })
     return NextResponse.json({ ok: false }, { status: 500 })
   }
 }

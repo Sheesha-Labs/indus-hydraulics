@@ -28,7 +28,16 @@ type Props = {
  * One button, one server action, its outcome said beside it. For row actions
  * and small bulk actions that need no form.
  */
-export default function ActionButton({ action, children, confirm, kind = 'ghost', size = 'dense-sm', trash = false, icon, ...rest }: Props) {
+export default function ActionButton({
+  action,
+  children,
+  confirm,
+  kind = 'ghost',
+  size = 'dense-sm',
+  trash = false,
+  icon,
+  ...rest
+}: Props) {
   const [pending, start] = useTransition()
   const [note, setNote] = useState<{ ok: boolean; text: string } | null>(null)
 
@@ -44,14 +53,32 @@ export default function ActionButton({ action, children, confirm, kind = 'ghost'
   return (
     <span className="inline-flex flex-wrap items-center gap-2">
       {trash ? (
-        <DeleteButton label={rest['aria-label'] ?? 'Delete'} size="sm" onClick={run} pending={pending} />
+        <DeleteButton
+          label={rest['aria-label'] ?? 'Delete'}
+          size="sm"
+          onClick={run}
+          pending={pending}
+        />
       ) : (
-        <Button type="button" kind={kind} size={size} onClick={run} disabled={pending} aria-label={rest['aria-label']} icon={pending ? undefined : icon}>
+        <Button
+          type="button"
+          kind={kind}
+          size={size}
+          onClick={run}
+          disabled={pending}
+          aria-label={rest['aria-label']}
+          icon={pending ? undefined : icon}
+        >
           {pending ? 'Working…' : children}
         </Button>
       )}
       {note ? (
-        <span role={note.ok ? 'status' : 'alert'} className={note.ok ? 'text-[12.5px] text-ih-success-ink' : 'text-[12.5px] text-ih-danger-ink'}>
+        <span
+          role={note.ok ? 'status' : 'alert'}
+          className={
+            note.ok ? 'text-ih-success-ink text-[12.5px]' : 'text-ih-danger-ink text-[12.5px]'
+          }
+        >
           {note.text}
         </span>
       ) : null}

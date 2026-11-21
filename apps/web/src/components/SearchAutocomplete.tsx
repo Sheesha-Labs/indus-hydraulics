@@ -94,10 +94,9 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
       abortRef.current = ctrl
       setPending(true)
       try {
-        const res = await fetch(
-          `/api/search/suggest?q=${encodeURIComponent(trimmed)}`,
-          { signal: ctrl.signal },
-        )
+        const res = await fetch(`/api/search/suggest?q=${encodeURIComponent(trimmed)}`, {
+          signal: ctrl.signal,
+        })
         if (!res.ok) return
         const data = (await res.json()) as { items: Suggestion[] }
         setItems(data.items ?? [])
@@ -151,11 +150,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
     //    to that PDP instead of the search page.
     const skuCandidate = extractExactSkuQuery(trimmed)
     const firstItem = items[0]
-    if (
-      skuCandidate &&
-      firstItem &&
-      firstItem.sku.toUpperCase() === skuCandidate
-    ) {
+    if (skuCandidate && firstItem && firstItem.sku.toUpperCase() === skuCandidate) {
       recordSubmit(trimmed)
       router.push(firstItem.url)
       setOpen(false)
@@ -198,7 +193,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
             global `:focus-visible` outline (orange accent) is suppressed
             on the input itself; visual focus feedback shifts to the
             wrapper border via `focus-within`. */}
-        <div className="relative flex flex-1 border border-ih-border bg-ih-surface focus-within:border-ih-accent transition-colors">
+        <div className="border-ih-border bg-ih-surface focus-within:border-ih-accent relative flex flex-1 border transition-colors">
           <input
             ref={inputRef}
             type="search"
@@ -212,97 +207,101 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
             placeholder="Search products, SKUs, MPNs…"
             aria-label="Search"
             aria-autocomplete="list"
-            className="flex-1 px-3 py-2 bg-transparent text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus-visible:outline-none"
+            className="text-ih-ink placeholder:text-ih-muted-2 flex-1 bg-transparent px-3 py-2 text-[13px] focus:outline-none focus-visible:outline-none"
           />
 
           {showPanel && (
             <div
               role="listbox"
-              className="absolute left-0 right-0 top-full mt-1 border border-ih-border bg-white shadow-md z-30"
+              className="border-ih-border absolute top-full right-0 left-0 z-30 mt-1 border bg-white shadow-md"
             >
-          {showRecents && (
-            <>
-              <div className="px-3 py-1.5 font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted-2 border-b border-ih-border">
-                Recent
-              </div>
-              {recents.map((recent) => (
-                <div
-                  key={recent}
-                  className="flex items-center justify-between gap-2 px-3 py-2 text-[13px] hover:bg-ih-surface-2"
-                >
-                  <Link
-                    href={`/search?q=${encodeURIComponent(recent)}`}
-                    onClick={() => setOpen(false)}
-                    className="flex-1 truncate text-ih-ink-2"
-                  >
-                    <span aria-hidden="true" className="mr-2 text-ih-muted-2">↺</span>
-                    {recent}
-                  </Link>
-                  <button
-                    type="button"
-                    aria-label={`Remove ${recent} from recent searches`}
-                    onClick={(e) => {
-                      e.preventDefault()
-                      e.stopPropagation()
-                      clearRecent(recent)
-                    }}
-                    className="font-mono text-[11px] text-ih-muted-2 hover:text-ih-danger"
-                  >
-                    ×
-                  </button>
-                </div>
-              ))}
-            </>
-          )}
+              {showRecents && (
+                <>
+                  <div className="text-ih-muted-2 border-ih-border border-b px-3 py-1.5 font-mono text-[10px] tracking-[0.1em] uppercase">
+                    Recent
+                  </div>
+                  {recents.map((recent) => (
+                    <div
+                      key={recent}
+                      className="hover:bg-ih-surface-2 flex items-center justify-between gap-2 px-3 py-2 text-[13px]"
+                    >
+                      <Link
+                        href={`/search?q=${encodeURIComponent(recent)}`}
+                        onClick={() => setOpen(false)}
+                        className="text-ih-ink-2 flex-1 truncate"
+                      >
+                        <span aria-hidden="true" className="text-ih-muted-2 mr-2">
+                          ↺
+                        </span>
+                        {recent}
+                      </Link>
+                      <button
+                        type="button"
+                        aria-label={`Remove ${recent} from recent searches`}
+                        onClick={(e) => {
+                          e.preventDefault()
+                          e.stopPropagation()
+                          clearRecent(recent)
+                        }}
+                        className="text-ih-muted-2 hover:text-ih-danger font-mono text-[11px]"
+                      >
+                        ×
+                      </button>
+                    </div>
+                  ))}
+                </>
+              )}
 
-          {showSuggestions && pending && items.length === 0 && (
-            <div className="px-3 py-2 font-mono text-[11px] text-ih-muted">Searching…</div>
-          )}
-          {showSuggestions &&
-            items.map((item, i) => (
-              <Link
-                key={item.sku}
-                href={item.url}
-                role="option"
-                aria-selected={highlighted === i}
-                onMouseEnter={() => setHighlighted(i)}
-                onClick={() => {
-                  recordSubmit(trimmedQuery)
-                  setOpen(false)
-                }}
-                className={`block px-3 py-2 text-[13px] hover:bg-ih-surface-2 ${
-                  highlighted === i ? 'bg-ih-surface-2' : ''
-                }`}
-              >
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-medium text-ih-ink truncate">{item.title}</span>
-                  <span className="font-mono text-[10px] text-ih-muted whitespace-nowrap">
-                    {item.sku}
-                  </span>
-                </div>
-                {item.brandName && (
-                  <div className="font-mono text-[10px] text-ih-muted-2 mt-0.5">{item.brandName}</div>
-                )}
-              </Link>
-            ))}
-          {showSuggestions && items.length > 0 && (
-            <Link
-              href={`/search?q=${encodeURIComponent(trimmedQuery)}`}
-              onClick={() => {
-                recordSubmit(trimmedQuery)
-                setOpen(false)
-              }}
-              className="block px-3 py-2 font-mono text-[11px] text-ih-accent border-t border-ih-border hover:bg-ih-surface-2"
-            >
-              See all results for &ldquo;{trimmedQuery}&rdquo; →
-            </Link>
-          )}
+              {showSuggestions && pending && items.length === 0 && (
+                <div className="text-ih-muted px-3 py-2 font-mono text-[11px]">Searching…</div>
+              )}
+              {showSuggestions &&
+                items.map((item, i) => (
+                  <Link
+                    key={item.sku}
+                    href={item.url}
+                    role="option"
+                    aria-selected={highlighted === i}
+                    onMouseEnter={() => setHighlighted(i)}
+                    onClick={() => {
+                      recordSubmit(trimmedQuery)
+                      setOpen(false)
+                    }}
+                    className={`hover:bg-ih-surface-2 block px-3 py-2 text-[13px] ${
+                      highlighted === i ? 'bg-ih-surface-2' : ''
+                    }`}
+                  >
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="text-ih-ink truncate font-medium">{item.title}</span>
+                      <span className="text-ih-muted font-mono text-[10px] whitespace-nowrap">
+                        {item.sku}
+                      </span>
+                    </div>
+                    {item.brandName && (
+                      <div className="text-ih-muted-2 mt-0.5 font-mono text-[10px]">
+                        {item.brandName}
+                      </div>
+                    )}
+                  </Link>
+                ))}
+              {showSuggestions && items.length > 0 && (
+                <Link
+                  href={`/search?q=${encodeURIComponent(trimmedQuery)}`}
+                  onClick={() => {
+                    recordSubmit(trimmedQuery)
+                    setOpen(false)
+                  }}
+                  className="text-ih-accent border-ih-border hover:bg-ih-surface-2 block border-t px-3 py-2 font-mono text-[11px]"
+                >
+                  See all results for &ldquo;{trimmedQuery}&rdquo; →
+                </Link>
+              )}
             </div>
           )}
         </div>
         <button
           type="submit"
-          className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 transition-opacity shrink-0"
+          className="bg-ih-accent h-9 shrink-0 px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
         >
           Search
         </button>

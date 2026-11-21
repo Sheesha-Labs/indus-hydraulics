@@ -9,9 +9,9 @@ export default function FigureCaption({
   caption: ReactNode
 }) {
   return (
-    <figcaption className="mt-2.5 flex gap-2.5 text-[13.5px] leading-[1.5] text-ih-muted">
+    <figcaption className="text-ih-muted mt-2.5 flex gap-2.5 text-[13.5px] leading-[1.5]">
       {prefix ? (
-        <b className="whitespace-nowrap pt-0.5 font-mono text-[11px] font-medium uppercase tracking-[0.06em] text-ih-ink-2">
+        <b className="text-ih-ink-2 pt-0.5 font-mono text-[11px] font-medium tracking-[0.06em] whitespace-nowrap uppercase">
           {prefix}
         </b>
       ) : null}

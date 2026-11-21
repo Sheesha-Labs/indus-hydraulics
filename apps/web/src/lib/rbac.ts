@@ -32,7 +32,15 @@ export function isStaffRole(value: unknown): value is StaffRole {
  */
 export const ROLES = {
   /** Anyone signed-in to the admin app. */
-  ANY_STAFF: ['super_admin', 'manager', 'sales_rep', 'engineer', 'warehouse', 'finance', 'cms_editor'] as const,
+  ANY_STAFF: [
+    'super_admin',
+    'manager',
+    'sales_rep',
+    'engineer',
+    'warehouse',
+    'finance',
+    'cms_editor',
+  ] as const,
   /** Catalogue mutations (product/category/brand/industry/media write). */
   CATALOGUE_WRITE: ['super_admin', 'manager'] as const,
   /** Destructive deletes — strictest tier. */
@@ -80,7 +88,10 @@ export class AuthorizationError extends Error {
 
 export class ForbiddenError extends Error {
   readonly code = 'FORBIDDEN'
-  constructor(public readonly required: readonly string[], public readonly actual: string | null) {
+  constructor(
+    public readonly required: readonly string[],
+    public readonly actual: string | null
+  ) {
     super(`Requires one of: ${required.join(', ')} (have: ${actual ?? 'none'})`)
     this.name = 'ForbiddenError'
   }
@@ -115,10 +126,7 @@ export function requireRole(
 }
 
 /** Non-throwing variant — returns true/false. */
-export function hasRole(
-  session: Session | null,
-  allowed: readonly StaffRole[]
-): boolean {
+export function hasRole(session: Session | null, allowed: readonly StaffRole[]): boolean {
   return isStaffPrincipal(session) && allowed.includes(session.user.role as StaffRole)
 }
 
@@ -130,7 +138,7 @@ export function hasRole(
  * the cookie split, so a legitimate staff session always carries it.
  */
 function isStaffPrincipal(
-  session: Session | null,
+  session: Session | null
 ): session is Session & { user: { id: string; role: string; kind: 'staff' } } {
   const user = session?.user
   return !!user && !!user.id && user.kind === 'staff' && isStaffRole(user.role)

@@ -86,9 +86,7 @@ async function dumpTable(tableName, modelName) {
   const BATCH = 200
   for (let i = 0; i < rows.length; i += BATCH) {
     const slice = rows.slice(i, i + BATCH)
-    const values = slice
-      .map((r) => `(${cols.map((c) => literal(r[c])).join(',')})`)
-      .join(',\n  ')
+    const values = slice.map((r) => `(${cols.map((c) => literal(r[c])).join(',')})`).join(',\n  ')
     lines.push(`INSERT INTO "${tableName}" (${colsSql}) VALUES\n  ${values};`)
   }
   fs.writeFileSync(path.join(OUT_DIR, `${tableName}.sql`), lines.join('\n') + '\n')
@@ -108,8 +106,5 @@ for (const [tableName, modelName] of ORDER) {
 }
 
 await db.$disconnect()
-fs.writeFileSync(
-  path.join(OUT_DIR, '_summary.json'),
-  JSON.stringify(summary, null, 2),
-)
+fs.writeFileSync(path.join(OUT_DIR, '_summary.json'), JSON.stringify(summary, null, 2))
 process.stdout.write(`\nDone. Files in ${OUT_DIR}\n`)

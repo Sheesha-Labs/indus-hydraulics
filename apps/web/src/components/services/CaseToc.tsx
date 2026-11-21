@@ -22,16 +22,16 @@ export default function CaseToc({ bodyBlocksRaw, estimatedMinutes = 10 }: Props)
 
   return (
     <nav className="mono text-[11.5px]">
-      <div className="mb-1 border-b border-ih-border pb-3 uppercase tracking-[0.12em] text-ih-muted-2">
+      <div className="border-ih-border text-ih-muted-2 mb-1 border-b pb-3 tracking-[0.12em] uppercase">
         In this case
       </div>
       {sections.map((s) => (
         <a
           key={s.anchor}
           href={`#${s.anchor}`}
-          className="flex gap-2.5 border-b border-dashed border-ih-border py-2.5 leading-[1.4] text-ih-muted hover:text-ih-accent"
+          className="border-ih-border text-ih-muted hover:text-ih-accent flex gap-2.5 border-b border-dashed py-2.5 leading-[1.4]"
         >
-          <span className="w-[18px] flex-shrink-0 text-ih-muted-2">{s.number}</span>
+          <span className="text-ih-muted-2 w-[18px] flex-shrink-0">{s.number}</span>
           <span>{stripTrailingPeriod(s.title)}</span>
         </a>
       ))}

@@ -104,7 +104,8 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
   const description =
     (input.description ?? '').trim() || (input.defaultDescription ?? '').trim() || ''
 
-  const canonical = (input.canonicalUrl?.trim() || input.pageUrl).replace(/\/$/, '') || input.pageUrl
+  const canonical =
+    (input.canonicalUrl?.trim() || input.pageUrl).replace(/\/$/, '') || input.pageUrl
   const ogImage = input.ogImageUrl ?? input.defaultOgImageUrl ?? undefined
   const ogImageAlt = (input.ogImageUrl && input.ogImageAlt?.trim()) || undefined
 

@@ -14,13 +14,14 @@ export interface CharCounterProps {
  */
 export function CharCounter({ value, min, max, className }: CharCounterProps) {
   const len = value.length
-  const tone = len === 0
-    ? 'text-ih-muted'
-    : len < min
-      ? 'text-[oklch(0.5_0.14_70)]'
-      : len > max
-        ? 'text-[oklch(0.5_0.18_25)]'
-        : 'text-[oklch(0.4_0.14_145)]'
+  const tone =
+    len === 0
+      ? 'text-ih-muted'
+      : len < min
+        ? 'text-[oklch(0.5_0.14_70)]'
+        : len > max
+          ? 'text-[oklch(0.5_0.18_25)]'
+          : 'text-[oklch(0.4_0.14_145)]'
   return (
     <span className={cn('font-mono text-[10px] tabular-nums', tone, className)}>
       {len}/{max}

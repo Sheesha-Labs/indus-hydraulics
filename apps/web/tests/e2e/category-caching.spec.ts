@@ -18,7 +18,7 @@ import { expect, test } from '@playwright/test'
 const SHELF = '/c/crimp-ferrules'
 
 const EDGE_HOSTED = !(process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:3000').includes(
-  'localhost',
+  'localhost'
 )
 
 test.describe('category shelf caching', () => {

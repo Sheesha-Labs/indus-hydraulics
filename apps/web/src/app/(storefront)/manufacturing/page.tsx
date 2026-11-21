@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
-import { MANUFACTURING_ENQUIRY, MANUFACTURING_PAGE, buildBreadcrumbLd, designedPageMarketReach, type JsonLd as JsonLdData, enquiryMailto } from '@indus/domain'
+import {
+  MANUFACTURING_ENQUIRY,
+  MANUFACTURING_PAGE,
+  buildBreadcrumbLd,
+  designedPageMarketReach,
+  type JsonLd as JsonLdData,
+  enquiryMailto,
+} from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import ManufacturingLanding from '../../../components/manufacturing/ManufacturingLanding'
 import MarketReachSection from '../../../components/markets/MarketReachSection'

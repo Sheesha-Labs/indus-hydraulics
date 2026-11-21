@@ -24,8 +24,13 @@ describe('checkMediaUpload', () => {
   })
 
   test('tolerates the parameters browsers append to a content type', () => {
-    expect(checkMediaUpload({ filename: 'a.png', contentType: 'image/png; charset=binary', bytes: 10 }).ok).toBe(true)
-    expect(checkMediaUpload({ filename: 'a.png', contentType: 'IMAGE/PNG', bytes: 10 }).ok).toBe(true)
+    expect(
+      checkMediaUpload({ filename: 'a.png', contentType: 'image/png; charset=binary', bytes: 10 })
+        .ok
+    ).toBe(true)
+    expect(checkMediaUpload({ filename: 'a.png', contentType: 'IMAGE/PNG', bytes: 10 }).ok).toBe(
+      true
+    )
   })
 
   test('rejects an empty file', () => {
@@ -46,7 +51,11 @@ describe('checkMediaUpload', () => {
 
   test('accepts a file exactly on the limit', () => {
     expect(
-      checkMediaUpload({ filename: 'a.png', contentType: 'image/png', bytes: MAX_MEDIA_UPLOAD_BYTES }).ok
+      checkMediaUpload({
+        filename: 'a.png',
+        contentType: 'image/png',
+        bytes: MAX_MEDIA_UPLOAD_BYTES,
+      }).ok
     ).toBe(true)
   })
 
@@ -56,7 +65,13 @@ describe('checkMediaUpload', () => {
   })
 
   test('rejects executables and unknown types', () => {
-    for (const type of ['application/x-msdownload', 'text/html', 'application/zip', '', 'image/png/../..']) {
+    for (const type of [
+      'application/x-msdownload',
+      'text/html',
+      'application/zip',
+      '',
+      'image/png/../..',
+    ]) {
       expect(checkMediaUpload({ filename: 'x', contentType: type, bytes: 10 }).ok, type).toBe(false)
     }
   })
@@ -64,8 +79,12 @@ describe('checkMediaUpload', () => {
   test('ignores the filename extension entirely', () => {
     // The declared type decides. A .png named file that is really HTML is
     // rejected; a .txt named file that is really a PNG is accepted.
-    expect(checkMediaUpload({ filename: 'evil.png', contentType: 'text/html', bytes: 10 }).ok).toBe(false)
-    expect(checkMediaUpload({ filename: 'photo.txt', contentType: 'image/png', bytes: 10 }).ok).toBe(true)
+    expect(checkMediaUpload({ filename: 'evil.png', contentType: 'text/html', bytes: 10 }).ok).toBe(
+      false
+    )
+    expect(
+      checkMediaUpload({ filename: 'photo.txt', contentType: 'image/png', bytes: 10 }).ok
+    ).toBe(true)
   })
 
   test('the accept attribute lists exactly the allowed types', () => {
@@ -81,16 +100,16 @@ describe('mediaStorageKey', () => {
   })
 
   test('zero-pads the month', () => {
-    expect(mediaStorageKey({ uuid: UUID, ext: 'pdf', now: new Date('2026-01-05T00:00:00Z') })).toContain(
-      'library/2026-01/'
-    )
+    expect(
+      mediaStorageKey({ uuid: UUID, ext: 'pdf', now: new Date('2026-01-05T00:00:00Z') })
+    ).toContain('library/2026-01/')
   })
 
   test('uses UTC, so the folder does not depend on server timezone', () => {
     // 31 Dec 23:00 UTC is 1 Jan locally in some zones; the key must not move.
-    expect(mediaStorageKey({ uuid: UUID, ext: 'png', now: new Date('2026-12-31T23:00:00Z') })).toContain(
-      'library/2026-12/'
-    )
+    expect(
+      mediaStorageKey({ uuid: UUID, ext: 'png', now: new Date('2026-12-31T23:00:00Z') })
+    ).toContain('library/2026-12/')
   })
 
   test('every minted key passes its own verifier', () => {
@@ -104,11 +123,11 @@ describe('mediaStorageKey', () => {
 describe('isMintedMediaKey', () => {
   test('rejects a key this server did not mint', () => {
     for (const key of [
-      'products/SKU-1/photo.png',              // another prefix
-      'library/2026-08/photo.png',             // not a uuid
-      `library/2026-08/${UUID}`,               // no extension
-      `library/08-2026/${UUID}.png`,           // wrong date shape
-      `../library/2026-08/${UUID}.png`,        // traversal
+      'products/SKU-1/photo.png', // another prefix
+      'library/2026-08/photo.png', // not a uuid
+      `library/2026-08/${UUID}`, // no extension
+      `library/08-2026/${UUID}.png`, // wrong date shape
+      `../library/2026-08/${UUID}.png`, // traversal
       `library/2026-08/../../secrets/${UUID}.png`,
       `library/2026-08/${UUID}.png/../evil`,
       '',

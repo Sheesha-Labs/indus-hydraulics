@@ -102,8 +102,18 @@ async function uniqueSlug(base: string, ignoreId?: string): Promise<string> {
 const CreateProductSchema = z.object({
   sku: z.string().trim().min(1, 'SKU is required').max(64),
   title: z.string().trim().min(1, 'Title is required').max(255),
-  brandId: z.string().uuid().optional().or(z.literal('')).transform((v) => (v ? v : null)),
-  categoryId: z.string().uuid().optional().or(z.literal('')).transform((v) => (v ? v : null)),
+  brandId: z
+    .string()
+    .uuid()
+    .optional()
+    .or(z.literal(''))
+    .transform((v) => (v ? v : null)),
+  categoryId: z
+    .string()
+    .uuid()
+    .optional()
+    .or(z.literal(''))
+    .transform((v) => (v ? v : null)),
   status: ProductStatus.default('draft'),
 })
 
@@ -122,7 +132,9 @@ export async function createProduct(formData: FormData): Promise<Result<{ id: st
 
     const existingSku = await db.product.findUnique({ where: { sku: parsed.sku } })
     if (existingSku) {
-      return fail('CONFLICT', `SKU "${parsed.sku}" is already in use`, { sku: ['SKU must be unique'] })
+      return fail('CONFLICT', `SKU "${parsed.sku}" is already in use`, {
+        sku: ['SKU must be unique'],
+      })
     }
 
     const slug = await uniqueSlug(parsed.title)
@@ -169,12 +181,37 @@ export async function createProduct(formData: FormData): Promise<Result<{ id: st
 const UpdateProductCoreSchema = z.object({
   id: z.string().uuid(),
   sku: z.string().trim().min(1).max(64),
-  mpn: z.string().trim().max(128).optional().transform((v) => (v && v.length ? v : null)),
+  mpn: z
+    .string()
+    .trim()
+    .max(128)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   title: z.string().trim().min(1).max(255),
-  slug: z.string().trim().max(120).optional().transform((v) => (v && v.length ? v : '')),
-  descriptionShort: z.string().trim().max(500).optional().transform((v) => (v && v.length ? v : null)),
-  brandId: z.string().uuid().optional().or(z.literal('')).transform((v) => (v ? v : null)),
-  categoryId: z.string().uuid().optional().or(z.literal('')).transform((v) => (v ? v : null)),
+  slug: z
+    .string()
+    .trim()
+    .max(120)
+    .optional()
+    .transform((v) => (v && v.length ? v : '')),
+  descriptionShort: z
+    .string()
+    .trim()
+    .max(500)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  brandId: z
+    .string()
+    .uuid()
+    .optional()
+    .or(z.literal(''))
+    .transform((v) => (v ? v : null)),
+  categoryId: z
+    .string()
+    .uuid()
+    .optional()
+    .or(z.literal(''))
+    .transform((v) => (v ? v : null)),
   status: ProductStatus,
 })
 
@@ -232,7 +269,12 @@ export async function updateProductCore(formData: FormData): Promise<Result<void
 
 const UpdateDescriptionSchema = z.object({
   id: z.string().uuid(),
-  descriptionLong: z.string().trim().max(20000).optional().transform((v) => (v && v.length ? v : null)),
+  descriptionLong: z
+    .string()
+    .trim()
+    .max(20000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
 })
 
 export async function updateProductDescription(formData: FormData): Promise<Result<void>> {
@@ -262,13 +304,17 @@ const optionalDecimal = z
   .string()
   .optional()
   .transform((v) => (v && v.trim() ? Number(v) : null))
-  .refine((v) => v === null || (!Number.isNaN(v) && v >= 0), { message: 'Must be a non-negative number' })
+  .refine((v) => v === null || (!Number.isNaN(v) && v >= 0), {
+    message: 'Must be a non-negative number',
+  })
 
 const optionalInt = z
   .string()
   .optional()
   .transform((v) => (v && v.trim() ? Number(v) : null))
-  .refine((v) => v === null || (Number.isInteger(v) && v >= 0), { message: 'Must be a non-negative integer' })
+  .refine((v) => v === null || (Number.isInteger(v) && v >= 0), {
+    message: 'Must be a non-negative integer',
+  })
 
 const UpdateCommerceSchema = z
   .object({
@@ -287,17 +333,31 @@ const UpdateCommerceSchema = z
       .string()
       .optional()
       .transform((v) => (v && v.trim() ? Number(v) : 0))
-      .refine((v) => Number.isInteger(v) && v >= 0, { message: 'Stock must be a non-negative integer' }),
-    stockWarehouse: z.string().trim().max(120).optional().transform((v) => (v && v.length ? v : null)),
-    countryOfOrigin: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
-    hsCode: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
+      .refine((v) => Number.isInteger(v) && v >= 0, {
+        message: 'Stock must be a non-negative integer',
+      }),
+    stockWarehouse: z
+      .string()
+      .trim()
+      .max(120)
+      .optional()
+      .transform((v) => (v && v.length ? v : null)),
+    countryOfOrigin: z
+      .string()
+      .trim()
+      .max(80)
+      .optional()
+      .transform((v) => (v && v.length ? v : null)),
+    hsCode: z
+      .string()
+      .trim()
+      .max(40)
+      .optional()
+      .transform((v) => (v && v.length ? v : null)),
   })
   .refine(
-    (v) =>
-      v.compareAtPrice === null ||
-      v.listPrice === null ||
-      v.compareAtPrice > v.listPrice,
-    { message: 'Compare-at price must be greater than List price', path: ['compareAtPrice'] },
+    (v) => v.compareAtPrice === null || v.listPrice === null || v.compareAtPrice > v.listPrice,
+    { message: 'Compare-at price must be greater than List price', path: ['compareAtPrice'] }
   )
 
 export async function updateProductCommerce(formData: FormData): Promise<Result<void>> {
@@ -387,7 +447,7 @@ const UpdateProductSeoSchema = z.object({
   seoDescription: optionalString(320),
   canonicalUrl: optionalString(2048).refine(
     (v) => v === null || /^https?:\/\//i.test(v),
-    'Canonical must be a full https:// URL or empty',
+    'Canonical must be a full https:// URL or empty'
   ),
   focusKeyword: optionalString(120),
   robotsIndex: z.preprocess((v) => v === 'true' || v === true, z.boolean()),
@@ -513,9 +573,7 @@ export async function updateProductSeo(formData: FormData): Promise<Result<void>
             robotsFollow: after.robotsFollow,
             ogImageMediaId: after.ogImageMediaId,
             sitemapPriority:
-              after.sitemapPriority !== null
-                ? new Prisma.Decimal(after.sitemapPriority)
-                : null,
+              after.sitemapPriority !== null ? new Prisma.Decimal(after.sitemapPriority) : null,
             sitemapChangeFreq: after.sitemapChangeFreq,
             excludeFromSitemap: after.excludeFromSitemap,
             jsonLdOverride: after.jsonLdOverride ?? Prisma.DbNull,
@@ -523,7 +581,7 @@ export async function updateProductSeo(formData: FormData): Promise<Result<void>
             seoUpdatedById: session.user.id,
           },
         })
-      },
+      }
     )
     await recomputeContentScore(parsed.id)
 
@@ -540,7 +598,7 @@ export async function updateProductSeo(formData: FormData): Promise<Result<void>
 // ── uploadProductOgImage — used by the SEO drawer's OG picker ──────────────
 
 export async function uploadProductOgImage(
-  formData: FormData,
+  formData: FormData
 ): Promise<
   Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>
 > {
@@ -564,7 +622,7 @@ export async function uploadProductOgImage(
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      `seo/og`,
+      `seo/og`
     )
     const media = await db.media.create({
       data: {
@@ -610,7 +668,12 @@ const SpecBodySchema = z.object({
   group: z.string().trim().max(80).default('General'),
   label: z.string().trim().min(1, 'Label is required').max(120),
   value: z.string().trim().min(1, 'Value is required').max(500),
-  unit: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
+  unit: z
+    .string()
+    .trim()
+    .max(40)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isFilterable: z.boolean().default(false),
 })
 
@@ -735,7 +798,10 @@ export async function updateProductCrossReference(formData: FormData): Promise<R
   }
 }
 
-export async function deleteProductCrossReference(crId: string, productId: string): Promise<Result<void>> {
+export async function deleteProductCrossReference(
+  crId: string,
+  productId: string
+): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     z.string().uuid().parse(crId)
@@ -778,7 +844,7 @@ export async function uploadProductImage(formData: FormData): Promise<Result<voi
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      `products/${productId}`,
+      `products/${productId}`
     )
 
     const max = await db.productImage.aggregate({
@@ -822,7 +888,12 @@ export async function uploadProductImage(formData: FormData): Promise<Result<voi
 const AddImageSchema = z.object({
   productId: z.string().uuid(),
   url: z.string().url('Must be a valid URL').max(2048),
-  alt: z.string().trim().max(200).optional().transform((v) => (v && v.length ? v : null)),
+  alt: z
+    .string()
+    .trim()
+    .max(200)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
 })
 
 function inferMime(url: string): string {
@@ -850,7 +921,12 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
     // must not stop an editor attaching an image.
     const measured = await measureRemoteBytes(parsed.url, { fetchImpl: fetch as never })
     if (!measured.ok) {
-      console.warn('[products] could not measure image', parsed.url, measured.reason, measured.detail)
+      console.warn(
+        '[products] could not measure image',
+        parsed.url,
+        measured.reason,
+        measured.detail
+      )
     }
 
     // Create Media row + ProductImage row in one transaction.
@@ -890,7 +966,10 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
   }
 }
 
-export async function deleteProductImage(imageId: string, productId: string): Promise<Result<void>> {
+export async function deleteProductImage(
+  imageId: string,
+  productId: string
+): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     z.string().uuid().parse(imageId)
@@ -918,7 +997,7 @@ export async function deleteProductImage(imageId: string, productId: string): Pr
 export async function reorderProductImage(
   imageId: string,
   direction: 'up' | 'down',
-  productId: string,
+  productId: string
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -950,12 +1029,7 @@ export async function reorderProductImage(
 
 // ── Product documents — file upload via Supabase Storage ───────────────────
 
-const DATASHEET_MIME_TYPES = new Set([
-  'application/pdf',
-  'image/png',
-  'image/jpeg',
-  'image/jpg',
-])
+const DATASHEET_MIME_TYPES = new Set(['application/pdf', 'image/png', 'image/jpeg', 'image/jpg'])
 
 const DATASHEET_URL_EXTENSIONS = /\.(pdf|png|jpe?g)(\?|#|$)/i
 
@@ -971,7 +1045,7 @@ const DATASHEET_URL_EXTENSIONS = /\.(pdf|png|jpe?g)(\?|#|$)/i
  */
 async function replaceExistingDatasheet(
   tx: Prisma.TransactionClient,
-  productId: string,
+  productId: string
 ): Promise<{ storagePaths: string[]; preservedPosition: number | null }> {
   const existing = await tx.productDocument.findMany({
     where: { productId, kind: 'datasheet' },
@@ -1008,7 +1082,12 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
     const productId = z.string().uuid().parse(formData.get('productId'))
     const kind = DocumentKind.parse(formData.get('kind') ?? 'datasheet')
     const title = z.string().trim().min(1).max(200).parse(formData.get('title'))
-    const language = z.string().trim().min(2).max(8).parse(formData.get('language') ?? 'en')
+    const language = z
+      .string()
+      .trim()
+      .min(2)
+      .max(8)
+      .parse(formData.get('language') ?? 'en')
     const isGated = formData.get('isGated') === 'on'
 
     const file = formData.get('file')
@@ -1019,17 +1098,15 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
       return fail('VALIDATION', `Document must be under ${MAX_DOCUMENT_BYTES / 1024 / 1024}MB`)
     }
     if (kind === 'datasheet' && !DATASHEET_MIME_TYPES.has(file.type)) {
-      return fail(
-        'VALIDATION',
-        'Datasheet must be a PDF, PNG, or JPEG file',
-        { file: ['Invalid file type'] },
-      )
+      return fail('VALIDATION', 'Datasheet must be a PDF, PNG, or JPEG file', {
+        file: ['Invalid file type'],
+      })
     }
 
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.documents,
       file,
-      `products/${productId}`,
+      `products/${productId}`
     )
 
     let staleStoragePaths: string[] = []
@@ -1111,11 +1188,9 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
     })
 
     if (body.kind === 'datasheet' && !DATASHEET_URL_EXTENSIONS.test(body.url)) {
-      return fail(
-        'VALIDATION',
-        'Datasheet URL must point to a PDF, PNG, or JPEG file',
-        { url: ['Invalid file type — must end in .pdf, .png, .jpg, or .jpeg'] },
-      )
+      return fail('VALIDATION', 'Datasheet URL must point to a PDF, PNG, or JPEG file', {
+        url: ['Invalid file type — must end in .pdf, .png, .jpg, or .jpeg'],
+      })
     }
 
     // The file is hosted by someone else, so there is no upload to read a size
@@ -1131,7 +1206,12 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
     // shows as unknown rather than as "0 B".
     const measured = await measureRemoteBytes(body.url, { fetchImpl: fetch as never })
     if (!measured.ok) {
-      console.warn('[products] could not measure document', body.url, measured.reason, measured.detail)
+      console.warn(
+        '[products] could not measure document',
+        body.url,
+        measured.reason,
+        measured.detail
+      )
     }
     const bytes = measured.ok ? measured.bytes : 0
 
@@ -1175,9 +1255,7 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
 
     // Externally-hosted URLs that we replaced may still live in our storage
     // bucket if they were previously uploaded; clean those up best-effort.
-    await bestEffortDeleteFromStorage(
-      staleStoragePaths.filter((p) => !p.startsWith('http')),
-    )
+    await bestEffortDeleteFromStorage(staleStoragePaths.filter((p) => !p.startsWith('http')))
 
     revalidatePath(`/admin/products/${productId}/edit`)
     await revalidateStorefrontProduct(productId)
@@ -1188,7 +1266,10 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
   }
 }
 
-export async function deleteProductDocument(docId: string, productId: string): Promise<Result<void>> {
+export async function deleteProductDocument(
+  docId: string,
+  productId: string
+): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     z.string().uuid().parse(docId)
@@ -1288,7 +1369,7 @@ export async function deleteProductFaq(id: string, productId: string): Promise<R
 export async function reorderProductFaq(
   id: string,
   direction: 'up' | 'down',
-  productId: string,
+  productId: string
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)

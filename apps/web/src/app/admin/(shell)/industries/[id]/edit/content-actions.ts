@@ -34,7 +34,7 @@ type PrismaJsonInput = Prisma.InputJsonValue | typeof Prisma.JsonNull
 
 function parseJson(
   v: FormDataEntryValue | null,
-  fallback: PrismaJsonInput,
+  fallback: PrismaJsonInput
 ): { value: PrismaJsonInput; error: string | null } {
   if (typeof v !== 'string' || v.trim().length === 0) return { value: fallback, error: null }
   try {
@@ -60,7 +60,7 @@ const UpdateContentBaseSchema = z.object({
   gradient: optionalString(400),
   position: z.preprocess(
     (v) => (typeof v === 'string' && v.trim().length ? Number(v) : 0),
-    z.number().int(),
+    z.number().int()
   ),
 })
 
@@ -131,7 +131,7 @@ const CaseStudyBaseSchema = z.object({
     .transform((v) => (v ? v : null)),
   position: z.preprocess(
     (v) => (typeof v === 'string' && v.trim().length ? Number(v) : 0),
-    z.number().int(),
+    z.number().int()
   ),
   isPublished: z.preprocess((v) => v === 'on' || v === 'true' || v === true, z.boolean()),
 })
@@ -198,12 +198,10 @@ export async function updateCaseStudy(formData: FormData): Promise<Result<void>>
 export async function deleteCaseStudy(formData: FormData): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
-    const parsed = z
-      .object({ id: z.string().uuid(), industryId: z.string().uuid() })
-      .parse({
-        id: formData.get('id'),
-        industryId: formData.get('industryId'),
-      })
+    const parsed = z.object({ id: z.string().uuid(), industryId: z.string().uuid() }).parse({
+      id: formData.get('id'),
+      industryId: formData.get('industryId'),
+    })
     await db.industryCaseStudy.delete({ where: { id: parsed.id } })
     invalidate(parsed.industryId)
     return ok(undefined)

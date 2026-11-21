@@ -88,8 +88,9 @@ describe('normalisation', () => {
 
   it('truncates a runaway snippet', () => {
     const long = 'x'.repeat(2000)
-    expect(normaliseCandidates([candidate({ evidenceSnippet: long })])[0]!.evidenceSnippet)
-      .toHaveLength(500)
+    expect(
+      normaliseCandidates([candidate({ evidenceSnippet: long })])[0]!.evidenceSnippet
+    ).toHaveLength(500)
   })
 })
 
@@ -103,10 +104,7 @@ describe('deduplication and caps', () => {
   })
 
   it('de-duplicates on name when no website is given', () => {
-    const out = normaliseCandidates([
-      candidate({ website: null }),
-      candidate({ website: null }),
-    ])
+    const out = normaliseCandidates([candidate({ website: null }), candidate({ website: null })])
     expect(out).toHaveLength(1)
   })
 
@@ -120,7 +118,7 @@ describe('deduplication and caps', () => {
 
   it('enforces the per-item cap', () => {
     const many = Array.from({ length: 25 }, (_, i) =>
-      candidate({ name: `Supplier ${i}`, website: `https://supplier-${i}.com` }),
+      candidate({ name: `Supplier ${i}`, website: `https://supplier-${i}.com` })
     )
     expect(normaliseCandidates(many)).toHaveLength(MAX_CANDIDATES_PER_ITEM)
   })

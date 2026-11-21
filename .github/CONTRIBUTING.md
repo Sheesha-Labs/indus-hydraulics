@@ -5,11 +5,11 @@
 Every push to `main` and every pull request runs `.github/workflows/ci.yml`,
 which executes:
 
-1. `pnpm install --frozen-lockfile`
-2. `pnpm db:generate` (Prisma client)
-3. `pnpm typecheck`
-4. `pnpm lint`
-5. `pnpm test`
+1. `bun install --frozen-lockfile` (also generates the Prisma client)
+2. `bun run db:generate` (only after a schema change)
+3. `bun run typecheck`
+4. `bun run lint`
+5. `bun run test`
 
 A red CI run blocks merge **only if branch protection is enabled** in
 GitHub settings. To enable:
@@ -28,10 +28,21 @@ protection via the CLI.
 
 ## Local pre-flight
 
-Before opening a PR, run the same commands locally:
+Git hooks run the checks for you. Install [hk](https://hk.jdx.dev) once, then in
+each clone:
 
 ```bash
-pnpm typecheck && pnpm lint && pnpm test
+hk install
+```
+
+- **pre-commit** formats and lints the staged files and fixes what it can.
+- **pre-push** runs what CI checks (`scripts/ci/local.sh`): typecheck, lint,
+  format and every test, in under 9 seconds.
+
+To run the same thing by hand:
+
+```bash
+scripts/ci/local.sh
 ```
 
 If any of those fail, CI will fail too. The `chore/lint-and-test-baseline`

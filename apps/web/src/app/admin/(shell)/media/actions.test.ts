@@ -52,9 +52,8 @@ vi.mock('../../../../lib/admin-auth', () => ({
     authMock.role ? { user: { id: 'u1', role: authMock.role, kind: 'staff' } } : null,
 }))
 
-const { bulkTrashMedia, deleteMediaPermanently, restoreMedia, trashMedia } = await import(
-  './actions'
-)
+const { bulkTrashMedia, deleteMediaPermanently, restoreMedia, trashMedia } =
+  await import('./actions')
 
 const ID = '11111111-1111-4111-8111-111111111111'
 const OTHER = '22222222-2222-4222-8222-222222222222'

@@ -46,7 +46,7 @@ const DAY_MS = 24 * 60 * 60 * 1000
 /** Whether to show an "Updated <date>" line beside the published date. */
 export function shouldShowUpdatedDate(
   publishedAt: Date | null | undefined,
-  modifiedAt: Date | null | undefined,
+  modifiedAt: Date | null | undefined
 ): boolean {
   if (!valid(publishedAt) || !valid(modifiedAt)) return false
   return modifiedAt.getTime() - publishedAt.getTime() >= BLOG_UPDATED_LABEL_MIN_DAYS * DAY_MS

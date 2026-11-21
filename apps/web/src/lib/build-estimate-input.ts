@@ -33,7 +33,7 @@ export type EstimateOverrides = {
  */
 export async function buildEstimateInputFromRfq(
   rfqCode: string,
-  overrides: EstimateOverrides = {},
+  overrides: EstimateOverrides = {}
 ): Promise<EstimateInput | null> {
   const [rfq, settings] = await Promise.all([
     db.rfq.findUnique({
@@ -43,7 +43,9 @@ export async function buildEstimateInputFromRfq(
         shipToAddress: true,
         lines: {
           orderBy: { position: 'asc' },
-          include: { product: { select: { sku: true, title: true, brand: { select: { name: true } } } } },
+          include: {
+            product: { select: { sku: true, title: true, brand: { select: { name: true } } } },
+          },
         },
       },
     }),
@@ -70,9 +72,7 @@ export async function buildEstimateInputFromRfq(
   const vat = computeVatRate({
     shipToCountryCode: rfq.shipToAddress?.countryCode ?? null,
     ...(overrides.vatRatePct !== undefined ? { override: overrides.vatRatePct } : {}),
-    ...(settings?.defaultVatRatePct
-      ? { defaultRate: Number(settings.defaultVatRatePct) }
-      : {}),
+    ...(settings?.defaultVatRatePct ? { defaultRate: Number(settings.defaultVatRatePct) } : {}),
   })
   const vatRatePct = vat.rate
   const vatLabel = vat.label
@@ -126,9 +126,12 @@ export async function buildEstimateInputFromRfq(
 
   // Pick subject — composer can override; otherwise use RFQ.subject.
   const resolvedSubject = overrides.subject !== undefined ? overrides.subject : rfq.subject
-  const resolvedNotes = overrides.notes !== undefined ? overrides.notes : settings?.defaultQuoteNotes ?? null
+  const resolvedNotes =
+    overrides.notes !== undefined ? overrides.notes : (settings?.defaultQuoteNotes ?? null)
   const resolvedDisclaimer =
-    overrides.disclaimer !== undefined ? overrides.disclaimer : settings?.defaultQuoteDisclaimer ?? null
+    overrides.disclaimer !== undefined
+      ? overrides.disclaimer
+      : (settings?.defaultQuoteDisclaimer ?? null)
 
   return {
     documentTitle: 'Estimate',

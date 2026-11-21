@@ -15,11 +15,21 @@ const EXCEL = /\.(xlsx|xlsm|xls)$/i
 export async function rowsFromBytes(bytes: ArrayBuffer, fileName: string): Promise<string[][]> {
   if (EXCEL.test(fileName)) {
     const XLSX = await import('xlsx')
-    const wb = XLSX.read(bytes, { type: 'array', cellDates: false, cellFormula: false, cellHTML: false })
+    const wb = XLSX.read(bytes, {
+      type: 'array',
+      cellDates: false,
+      cellFormula: false,
+      cellHTML: false,
+    })
     const first = wb.SheetNames[0]
     if (!first) return []
     const sheet = wb.Sheets[first]!
-    const rows = XLSX.utils.sheet_to_json<unknown[]>(sheet, { header: 1, raw: false, defval: '', blankrows: false })
+    const rows = XLSX.utils.sheet_to_json<unknown[]>(sheet, {
+      header: 1,
+      raw: false,
+      defval: '',
+      blankrows: false,
+    })
     return rows
       .map((r) => r.map((c) => (c === null || c === undefined ? '' : String(c))))
       .filter((r) => r.some((c) => c.trim() !== ''))

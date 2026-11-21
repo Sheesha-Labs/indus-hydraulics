@@ -12,8 +12,8 @@
     "db:seed": "tsx src/seed.ts",
     "db:import": "tsx src/import/cli.ts",
     "db:studio": "prisma studio",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "test": "bun test --parallel --isolate=modules --randomize",
+    "typecheck": "bun check --no-script"
   },
   "dependencies": {
     "@indus/domain": "workspace:^",
@@ -25,6 +25,6 @@
     "prisma": "^6.19.3",
     "tsx": "^4.21.0",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.2"
+    "@types/node": "^20"
   }
 }

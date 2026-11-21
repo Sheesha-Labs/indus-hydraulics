@@ -9,7 +9,7 @@ describe('diffSnapshots', () => {
   it('reports changed fields', () => {
     const diff = diffSnapshots(
       { seoTitle: 'A', robotsIndex: true },
-      { seoTitle: 'B', robotsIndex: true },
+      { seoTitle: 'B', robotsIndex: true }
     )
     expect(diff).toEqual([{ field: 'seoTitle', before: 'A', after: 'B' }])
   })
@@ -17,7 +17,7 @@ describe('diffSnapshots', () => {
   it('ignores bookkeeping fields', () => {
     const diff = diffSnapshots(
       { seoTitle: 'A', updatedAt: new Date('2026-01-01') },
-      { seoTitle: 'A', updatedAt: new Date('2026-04-01') },
+      { seoTitle: 'A', updatedAt: new Date('2026-04-01') }
     )
     expect(diff).toEqual([])
   })
@@ -30,7 +30,7 @@ describe('diffSnapshots', () => {
   it('detects nested object changes', () => {
     const diff = diffSnapshots(
       { jsonLdOverride: { description: 'old' } },
-      { jsonLdOverride: { description: 'new' } },
+      { jsonLdOverride: { description: 'new' } }
     )
     expect(diff[0]?.field).toBe('jsonLdOverride')
   })
@@ -49,7 +49,7 @@ describe('projectSeoFields', () => {
       description: 'irrelevant',
     } as Record<string, unknown>)
     expect(Object.keys(projected).sort()).toEqual(
-      ['canonicalUrl', 'jsonLdOverride', 'robotsIndex', 'seoDescription', 'seoTitle'].sort(),
+      ['canonicalUrl', 'jsonLdOverride', 'robotsIndex', 'seoDescription', 'seoTitle'].sort()
     )
   })
 })

@@ -74,60 +74,57 @@ export default async function EditUserPage({ params }: Props) {
       actions={
         <Link
           href="/admin/users"
-          className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-md border px-4 text-[13px] font-medium transition-colors"
         >
           ← All staff
         </Link>
       }
     >
       <div className="max-w-[560px]">
-
         <form action={saveUser} className="flex flex-col gap-5">
           <div>
-            <label htmlFor="user-name" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="user-name"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Full Name
             </label>
-            <Input
-              id="user-name"
-              name="name"
-              type="text"
-              required
-              defaultValue={user.name} />
+            <Input id="user-name" name="name" type="text" required defaultValue={user.name} />
           </div>
 
           <div>
-            <label htmlFor="user-email" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="user-email"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Email Address
             </label>
-            <Input
-              id="user-email"
-              name="email"
-              type="email"
-              required
-              defaultValue={user.email} />
+            <Input id="user-email" name="email" type="email" required defaultValue={user.email} />
           </div>
 
           <div>
-            <label htmlFor="user-password" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
-              New Password <span className="normal-case text-ih-muted-2">(leave blank to keep current)</span>
+            <label
+              htmlFor="user-password"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
+              New Password{' '}
+              <span className="text-ih-muted-2 normal-case">(leave blank to keep current)</span>
             </label>
-            <Input
-              id="user-password"
-              name="password"
-              type="password"
-              autoComplete="new-password" />
+            <Input id="user-password" name="password" type="password" autoComplete="new-password" />
           </div>
 
           <div>
-            <label htmlFor="user-role" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="user-role"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Role
             </label>
-            <Select
-              id="user-role"
-              name="role"
-              defaultValue={user.role}>
+            <Select id="user-role" name="role" defaultValue={user.role}>
               {ROLES.map((r) => (
-                <option key={r.value} value={r.value}>{r.label}</option>
+                <option key={r.value} value={r.value}>
+                  {r.label}
+                </option>
               ))}
             </Select>
           </div>
@@ -139,38 +136,38 @@ export default async function EditUserPage({ params }: Props) {
               name="isActive"
               value="1"
               defaultChecked={user.isActive}
-              className="w-4 h-4"
+              className="h-4 w-4"
             />
-            <label htmlFor="isActive" className="text-[13px] text-ih-ink-2">
+            <label htmlFor="isActive" className="text-ih-ink-2 text-[13px]">
               Active account
             </label>
           </div>
 
-          <div className="flex items-center gap-3 pt-2 border-t border-ih-border">
+          <div className="border-ih-border flex items-center gap-3 border-t pt-2">
             <button
               type="submit"
-              className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
+              className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-5 text-[12px] tabular-nums"
             >
               Save Changes
             </button>
             <Link
               href="/admin/users"
-              className="rounded-md h-9 px-4 flex items-center border border-ih-border tabular-nums text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-9 items-center rounded-md border px-4 text-[12px] tabular-nums"
             >
               Cancel
             </Link>
           </div>
         </form>
 
-        <div className="mt-8 pt-6 border-t border-ih-border">
-          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+        <div className="border-ih-border mt-8 border-t pt-6">
+          <p className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
             Danger Zone
           </p>
           {user.isActive ? (
             <form action={deactivateUser}>
               <button
                 type="submit"
-                className="rounded-md h-9 px-4 border border-ih-danger tabular-nums text-[12px] text-ih-danger hover:bg-[var(--color-ih-danger)] hover:text-white transition-colors"
+                className="border-ih-danger text-ih-danger h-9 rounded-md border px-4 text-[12px] tabular-nums transition-colors hover:bg-[var(--color-ih-danger)] hover:text-white"
               >
                 Deactivate Account
               </button>
@@ -179,7 +176,7 @@ export default async function EditUserPage({ params }: Props) {
             <form action={activateUser}>
               <button
                 type="submit"
-                className="rounded-md h-9 px-4 border border-ih-border tabular-nums text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-md border px-4 text-[12px] tabular-nums"
               >
                 Reactivate Account
               </button>

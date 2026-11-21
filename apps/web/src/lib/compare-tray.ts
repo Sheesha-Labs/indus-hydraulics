@@ -55,7 +55,10 @@ function safeRead(): CompareTrayItem[] {
     if (!Array.isArray(parsed)) return []
     return parsed.filter(
       (i): i is CompareTrayItem =>
-        i && typeof i.sku === 'string' && typeof i.categoryId === 'string' && typeof i.specTemplateId === 'string',
+        i &&
+        typeof i.sku === 'string' &&
+        typeof i.categoryId === 'string' &&
+        typeof i.specTemplateId === 'string'
     )
   } catch {
     return []
@@ -83,7 +86,10 @@ export function addToTray(item: CompareTrayItem): AddToTrayResult {
   if (existing) return { ok: true, items: current, alreadyIn: true }
 
   const head = current[0]
-  if (head && (head.categoryId !== item.categoryId || head.specTemplateId !== item.specTemplateId)) {
+  if (
+    head &&
+    (head.categoryId !== item.categoryId || head.specTemplateId !== item.specTemplateId)
+  ) {
     return { ok: false, reason: 'mismatch', current, incoming: item }
   }
 

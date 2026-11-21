@@ -37,11 +37,7 @@ export type SearchPlan =
  * Used for synonym/redirect lookups so "O-Ring  " matches "o-ring".
  */
 export function normaliseQuery(q: string): string {
-  return q
-    .toLowerCase()
-    .normalize('NFKC')
-    .replace(/\s+/g, ' ')
-    .trim()
+  return q.toLowerCase().normalize('NFKC').replace(/\s+/g, ' ').trim()
 }
 
 /**
@@ -49,10 +45,7 @@ export function normaliseQuery(q: string): string {
  * normalised query plus every synonym term that shares a group with any
  * normalised token in the query.
  */
-export function expandSynonyms(
-  normalised: string,
-  groups: SynonymGroup[],
-): string[] {
+export function expandSynonyms(normalised: string, groups: SynonymGroup[]): string[] {
   const tokens = normalised.split(' ').filter(Boolean)
   const expansions = new Set<string>([normalised])
   for (const group of groups) {
@@ -70,9 +63,7 @@ export function expandSynonyms(
  * quoting — we just need to give it a multi-term string.
  */
 export function buildTsQueryExpression(expansions: string[]): string {
-  return expansions
-    .map((e) => e.includes(' ') ? `"${e}"` : e)
-    .join(' OR ')
+  return expansions.map((e) => (e.includes(' ') ? `"${e}"` : e)).join(' OR ')
 }
 
 export function planSearch(input: SearchInput): SearchPlan {

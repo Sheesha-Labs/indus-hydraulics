@@ -24,11 +24,11 @@ export default function FigureBlockView({
         alt={media?.alt ?? block.caption}
         sizes="(min-width: 1100px) 760px, 100vw"
         placeholderLabel={block.placeholderLabel ?? `"${block.caption}\\nfigure"`}
-        className={`rounded-[var(--radius-lg)] border border-ih-border ${aspectClass[block.aspectRatio ?? '16/9'] ?? 'aspect-video'}`}
+        className={`border-ih-border rounded-[var(--radius-lg)] border ${aspectClass[block.aspectRatio ?? '16/9'] ?? 'aspect-video'}`}
       />
-      <figcaption className="mt-2.5 text-[13px] leading-[1.5] text-ih-muted">
+      <figcaption className="text-ih-muted mt-2.5 text-[13px] leading-[1.5]">
         {block.captionPrefix ? (
-          <strong className="mr-1.5 text-ih-ink">{block.captionPrefix}</strong>
+          <strong className="text-ih-ink mr-1.5">{block.captionPrefix}</strong>
         ) : null}
         {block.caption}
       </figcaption>

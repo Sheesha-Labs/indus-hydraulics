@@ -4,7 +4,9 @@ import { attributeReply, attributeSupplier } from './reply-attribution'
 
 describe('attributeReply', () => {
   it('finds the reference our own RFQ template plants', () => {
-    const r = attributeReply('Thank you for your enquiry.\n\nOur reference: ENQ-2026-0007\n\nPlease find our offer.')
+    const r = attributeReply(
+      'Thank you for your enquiry.\n\nOur reference: ENQ-2026-0007\n\nPlease find our offer.'
+    )
     expect(r.enquiryCode).toBe('ENQ-2026-0007')
     expect(r.method).toBe('reference_token')
   })

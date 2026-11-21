@@ -181,12 +181,11 @@ export function scoreEntity(input: ScoreInput): SeoHealthScore {
     id: 'indexableAndCanonical',
     pass: input.isIndexable && input.canonicalCorrect,
     weight: WEIGHTS.indexableAndCanonical,
-    message:
-      !input.isIndexable
-        ? 'Page is not indexable (robots noindex)'
-        : !input.canonicalCorrect
-          ? 'Canonical URL looks incorrect'
-          : 'Page is indexable with a correct canonical',
+    message: !input.isIndexable
+      ? 'Page is not indexable (robots noindex)'
+      : !input.canonicalCorrect
+        ? 'Canonical URL looks incorrect'
+        : 'Page is indexable with a correct canonical',
   })
 
   checks.push({
@@ -211,9 +210,7 @@ export function scoreEntity(input: ScoreInput): SeoHealthScore {
   }
 
   const totalWeight = checks.reduce((sum, c) => sum + c.weight, 0)
-  const weightedPass = checks
-    .filter((c) => c.pass)
-    .reduce((sum, c) => sum + c.weight, 0)
+  const weightedPass = checks.filter((c) => c.pass).reduce((sum, c) => sum + c.weight, 0)
   const score = totalWeight === 0 ? 0 : Math.round((100 * weightedPass) / totalWeight)
 
   return { score, breakdown: checks }

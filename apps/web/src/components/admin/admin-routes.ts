@@ -91,7 +91,9 @@ export function deriveCrumbs(pathname: string): Crumb[] {
 
   const crumbs: Crumb[] = [{ label: top.section }]
   // The top-level item links back to itself only when we're deeper than it.
-  crumbs.push(rest.length > 0 ? { label: top.label, href: adminPath(`/${first}`) } : { label: top.label })
+  crumbs.push(
+    rest.length > 0 ? { label: top.label, href: adminPath(`/${first}`) } : { label: top.label }
+  )
 
   for (const seg of rest) {
     if (isIdLike(seg)) continue

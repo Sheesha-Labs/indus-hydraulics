@@ -2,30 +2,41 @@
   "name": "indus-hydraulics",
   "version": "0.0.1",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "typecheck": "turbo typecheck",
-    "test": "turbo test",
+    "build": "bun run --filter web build",
+    "dev": "bun run --filter web dev",
+    "lint": "bun lint --no-script --type-aware apps packages",
+    "typecheck": "bun run --filter '*' typecheck",
+    "test": "bun test --parallel --isolate=modules --randomize ./apps/web/src ./packages",
     "test:e2e": "playwright test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "db:generate": "turbo db:generate",
-    "db:push": "turbo db:push",
-    "db:migrate": "turbo db:migrate",
-    "db:seed": "turbo db:seed"
+    "format": "bun fmt --no-script",
+    "db:generate": "bun run --filter @indus/db db:generate",
+    "db:push": "bun run --filter @indus/db db:push",
+    "db:migrate": "bun run --filter @indus/db db:migrate",
+    "db:seed": "bun run --filter @indus/db db:seed",
+    "format:check": "bun fmt --no-script --check"
   },
   "devDependencies": {
-    "turbo": "^2.5.3",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.2",
-    "@playwright/test": "^1.50.0"
+    "@playwright/test": "^1.50.0",
+    "@types/bun": "1.4.5"
   },
   "engines": {
     "node": ">=20",
-    "pnpm": ">=9"
+    "bun": ">=1.4.5"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "bun@1.4.5-canary.20261120.1",
+  "trustedDependencies": [
+    "@prisma/client",
+    "@prisma/engines",
+    "@sentry/cli",
+    "esbuild",
+    "prisma",
+    "protobufjs",
+    "unrs-resolver"
+  ]
 }

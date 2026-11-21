@@ -58,7 +58,7 @@ export type TemplateField = {
 export async function buildImportContext(
   payloads: ProductImportPayload[],
   mode: ImportMode,
-  tx: Tx,
+  tx: Tx
 ): Promise<ProductImportContext> {
   const brandSlugs = new Set<string>()
   const categorySlugs = new Set<string>()
@@ -93,7 +93,7 @@ export async function buildImportContext(
 
   // Pull in templates referenced by category defaults too.
   const defaultIds = new Set(
-    categories.map((c) => c.defaultSpecTemplateId).filter((id): id is string => !!id),
+    categories.map((c) => c.defaultSpecTemplateId).filter((id): id is string => !!id)
   )
   if (defaultIds.size > 0) {
     const extra = await tx.specTemplate.findMany({
@@ -109,7 +109,7 @@ export async function buildImportContext(
     brandIdBySlug: new Map(brands.map((b) => [b.slug, b.id])),
     categoryIdBySlug: new Map(categories.map((c) => [c.slug, c.id])),
     categoryDefaultTemplateIdBySlug: new Map(
-      categories.map((c) => [c.slug, c.defaultSpecTemplateId ?? null] as const),
+      categories.map((c) => [c.slug, c.defaultSpecTemplateId ?? null] as const)
     ),
     templateFieldsBySlug: new Map(
       templates.map((t) => [
@@ -127,7 +127,7 @@ export async function buildImportContext(
           isKeyFeature: f.isKeyFeature,
           isRequired: f.isRequired,
         })),
-      ]),
+      ])
     ),
     templateIdBySlug: new Map(templates.map((t) => [t.slug, t.id])),
     slugsClaimed: new Set<string>(),
@@ -147,7 +147,7 @@ export async function buildImportContext(
 export async function upsertProductWithRelations(
   payload: ProductImportPayload,
   ctx: ProductImportContext,
-  tx: Tx,
+  tx: Tx
 ): Promise<ProductUpsertResult> {
   const warnings: string[] = []
 
@@ -156,14 +156,18 @@ export async function upsertProductWithRelations(
   if (payload.brandSlug) {
     brandId = ctx.brandIdBySlug.get(payload.brandSlug) ?? null
     if (!brandId) {
-      throw new Error(`Product "${payload.sku}" references unknown brandSlug "${payload.brandSlug}"`)
+      throw new Error(
+        `Product "${payload.sku}" references unknown brandSlug "${payload.brandSlug}"`
+      )
     }
   }
   let categoryId: string | null = null
   if (payload.categorySlug) {
     categoryId = ctx.categoryIdBySlug.get(payload.categorySlug) ?? null
     if (!categoryId) {
-      throw new Error(`Product "${payload.sku}" references unknown categorySlug "${payload.categorySlug}"`)
+      throw new Error(
+        `Product "${payload.sku}" references unknown categorySlug "${payload.categorySlug}"`
+      )
     }
   }
 
@@ -174,7 +178,7 @@ export async function upsertProductWithRelations(
     templateId = ctx.templateIdBySlug.get(payload.specTemplateSlug) ?? null
     if (!templateId) {
       throw new Error(
-        `Product "${payload.sku}" references unknown specTemplateSlug "${payload.specTemplateSlug}"`,
+        `Product "${payload.sku}" references unknown specTemplateSlug "${payload.specTemplateSlug}"`
       )
     }
     templateFields = ctx.templateFieldsBySlug.get(payload.specTemplateSlug) ?? []
@@ -215,7 +219,7 @@ export async function upsertProductWithRelations(
       existing.brandId !== brandId
     ) {
       warnings.push(
-        `SKU collision: "${payload.sku}" already exists with different title/category/brand. Existing will be overwritten with new values.`,
+        `SKU collision: "${payload.sku}" already exists with different title/category/brand. Existing will be overwritten with new values.`
       )
     }
   }
@@ -276,14 +280,7 @@ export async function upsertProductWithRelations(
   if (ctx.mode === 'update-only') {
     specsSkipped = Object.keys(specValues).length
   } else {
-    const result = await syncSpecs(
-      productId,
-      specValues,
-      templateFields,
-      ctx.mode,
-      tx,
-      warnings,
-    )
+    const result = await syncSpecs(productId, specValues, templateFields, ctx.mode, tx, warnings)
     specsCreated = result.created
     specsUpdated = result.updated
     specsSkipped = result.skipped
@@ -329,11 +326,11 @@ export async function syncSpecs(
   templateFields: TemplateField[],
   mode: ImportMode,
   tx: Tx,
-  warnings: string[],
+  warnings: string[]
 ): Promise<{ created: number; updated: number; skipped: number }> {
   if (templateFields.length === 0 && Object.keys(values).length > 0) {
     warnings.push(
-      `Product has spec values but no spec template attached — values ignored: ${Object.keys(values).join(', ')}`,
+      `Product has spec values but no spec template attached — values ignored: ${Object.keys(values).join(', ')}`
     )
     return { created: 0, updated: 0, skipped: Object.keys(values).length }
   }
@@ -432,7 +429,7 @@ export async function syncFaqs(
   productId: string,
   faqs: FaqEntry[],
   mode: ImportMode,
-  tx: Tx,
+  tx: Tx
 ): Promise<{ created: number; skipped: number }> {
   if (faqs.length === 0) return { created: 0, skipped: 0 }
 

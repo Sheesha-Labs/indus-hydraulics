@@ -37,7 +37,7 @@ export type DiscoverDeps = {
 export async function discoverFromSitemap(
   sitemapUrl: string,
   deps: DiscoverDeps,
-  depth = 0,
+  depth = 0
 ): Promise<SitemapEntry[]> {
   if (depth > MAX_SITEMAP_DEPTH) return []
 
@@ -104,14 +104,14 @@ export function parseSitemapXml(xml: string): ParsedSitemap {
  */
 export function filterUrlsToProductPages(
   urls: string[],
-  options: { includePatterns?: string[]; excludePatterns?: string[] } = {},
+  options: { includePatterns?: string[]; excludePatterns?: string[] } = {}
 ): string[] {
-  const include = (options.includePatterns ?? ['/products/', '/product/', '/p/', '/item/', '/items/']).map((s) =>
-    s.toLowerCase(),
-  )
-  const exclude = (options.excludePatterns ?? ['/category/', '/categories/', '/c/', '/blog/', '/news/']).map((s) =>
-    s.toLowerCase(),
-  )
+  const include = (
+    options.includePatterns ?? ['/products/', '/product/', '/p/', '/item/', '/items/']
+  ).map((s) => s.toLowerCase())
+  const exclude = (
+    options.excludePatterns ?? ['/category/', '/categories/', '/c/', '/blog/', '/news/']
+  ).map((s) => s.toLowerCase())
 
   return urls.filter((u) => {
     const lower = u.toLowerCase()

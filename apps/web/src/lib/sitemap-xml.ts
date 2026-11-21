@@ -57,7 +57,9 @@ export function renderUrlset(entries: MetadataRoute.Sitemap): string {
       }
       for (const image of entry.images ?? []) {
         anyImages = true
-        parts.push(`    <image:image>\n      <image:loc>${escapeXml(image)}</image:loc>\n    </image:image>`)
+        parts.push(
+          `    <image:image>\n      <image:loc>${escapeXml(image)}</image:loc>\n    </image:image>`
+        )
       }
       return `  <url>\n${parts.join('\n')}\n  </url>`
     })

@@ -64,32 +64,44 @@ export const newsletterCampaignSend = inngest.createFunction(
 
     if (!continuation) {
       const started = await step.run('start', async () => {
-        const c = await db.newsletterCampaign.findUnique({ where: { id: campaignId }, select: { status: true, scheduledAt: true } })
+        const c = await db.newsletterCampaign.findUnique({
+          where: { id: campaignId },
+          select: { status: true, scheduledAt: true },
+        })
         // Already started with rows still queued: this step's own first
         // attempt committed and its answer was lost, or an earlier run died.
         // Resume — claims take queued rows only, and one run per campaign
         // runs at a time, so nothing is sent twice.
         if (c?.status === 'sending') {
-          const queued = await db.newsletterDelivery.count({ where: { campaignId, status: 'queued' } })
+          const queued = await db.newsletterDelivery.count({
+            where: { campaignId, status: 'queued' },
+          })
           return queued > 0 ? queued : null
         }
         // A rescheduled or unscheduled campaign leaves its old event in
         // flight; it must do nothing.
-        if (scheduledAt && (c?.status !== 'scheduled' || c.scheduledAt?.toISOString() !== scheduledAt)) return null
+        if (
+          scheduledAt &&
+          (c?.status !== 'scheduled' || c.scheduledAt?.toISOString() !== scheduledAt)
+        )
+          return null
         return startCampaign(campaignId)
       })
       if (started === null) return { campaignId, skipped: 'not startable' }
     }
 
     const paceRow = await step.run('pace', () =>
-      db.newsletterCampaign.findUnique({ where: { id: campaignId }, select: { maxPerHour: true } }),
+      db.newsletterCampaign.findUnique({ where: { id: campaignId }, select: { maxPerHour: true } })
     )
     const pause = pauseSeconds(paceRow?.maxPerHour ?? 600)
 
     let totals = { sent: 0, skipped: 0, failed: 0 }
     for (let i = 0; i < MAX_BATCHES_PER_RUN; i++) {
       const claim = await step.run(`claim-${i}`, async () => {
-        const c = await db.newsletterCampaign.findUnique({ where: { id: campaignId }, select: { status: true } })
+        const c = await db.newsletterCampaign.findUnique({
+          where: { id: campaignId },
+          select: { status: true },
+        })
         if (c?.status === 'cancelled') return { cancelled: true, ids: [] as string[] }
         return { cancelled: false, ids: await claimBatch(campaignId, BATCH_SIZE) }
       })
@@ -100,13 +112,20 @@ export const newsletterCampaignSend = inngest.createFunction(
       if (claim.ids.length === 0) break
 
       const r = await step.run(`send-${i}`, () => sendBatch(campaignId, claim.ids, attempt))
-      totals = { sent: totals.sent + r.sent, skipped: totals.skipped + r.skipped, failed: totals.failed + r.failed }
+      totals = {
+        sent: totals.sent + r.sent,
+        skipped: totals.skipped + r.skipped,
+        failed: totals.failed + r.failed,
+      }
 
       if (claim.ids.length < BATCH_SIZE) break
       await step.sleep(`pause-${i}`, `${pause}s`)
 
       if (i === MAX_BATCHES_PER_RUN - 1) {
-        await step.sendEvent('continue', { name: NEWSLETTER_SEND_EVENT, data: { campaignId, continuation: true } })
+        await step.sendEvent('continue', {
+          name: NEWSLETTER_SEND_EVENT,
+          data: { campaignId, continuation: true },
+        })
         return { campaignId, ...totals, continued: true }
       }
     }
@@ -120,5 +139,5 @@ export const newsletterCampaignSend = inngest.createFunction(
       closed = await step.run('finish-again', () => finishCampaign(campaignId))
     }
     return { campaignId, ...totals, closed }
-  },
+  }
 )

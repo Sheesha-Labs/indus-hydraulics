@@ -23,7 +23,7 @@ const OptionalText = (max: number) =>
     .transform((v) => v || null)
 
 const PlatformSchema = z.enum(
-  FOOTER_SOCIAL_PLATFORMS as readonly [FooterSocialPlatform, ...FooterSocialPlatform[]],
+  FOOTER_SOCIAL_PLATFORMS as readonly [FooterSocialPlatform, ...FooterSocialPlatform[]]
 )
 
 const SocialSchema = z.object({
@@ -114,60 +114,62 @@ export async function saveFooter(input: SaveFooterInput): Promise<Result<void>> 
     const settingsChanged =
       settings === null ||
       (Object.keys(settingsPayload) as (keyof typeof settingsPayload)[]).some(
-        (key) => (settings[key] ?? null) !== settingsPayload[key],
+        (key) => (settings[key] ?? null) !== settingsPayload[key]
       )
     if (settingsChanged && !hasRole(session, ROLES.SETTINGS_WRITE)) {
       return fail(
         'FORBIDDEN',
-        'Your role can edit the footer’s links but not its brand, contact or legal details.',
+        'Your role can edit the footer’s links but not its brand, contact or legal details.'
       )
     }
 
     let treeError: Result<void> | null = null
 
-    await db.$transaction(
-      async (tx) => {
-        if (settings) {
-          await tx.storeSettings.update({ where: { id: settings.id }, data: settingsPayload })
-        } else {
-          await tx.storeSettings.create({ data: settingsPayload })
-        }
+    await db
+      .$transaction(
+        async (tx) => {
+          if (settings) {
+            await tx.storeSettings.update({ where: { id: settings.id }, data: settingsPayload })
+          } else {
+            await tx.storeSettings.create({ data: settingsPayload })
+          }
 
-        const columns = await applyMenuTree(tx, parsed.columnsMenuId, parsed.columns)
-        if (!columns.success) {
-          treeError = columns
-          // Thrown, not returned: a `return` here commits everything written
-          // before it, which is exactly the half-saved footer the transaction
-          // is here to prevent.
-          throw new TransactionAbort()
-        }
-        const legal = await applyMenuTree(tx, parsed.legalMenuId, parsed.legalLinks)
-        if (!legal.success) {
-          treeError = legal
-          throw new TransactionAbort()
-        }
+          const columns = await applyMenuTree(tx, parsed.columnsMenuId, parsed.columns)
+          if (!columns.success) {
+            treeError = columns
+            // Thrown, not returned: a `return` here commits everything written
+            // before it, which is exactly the half-saved footer the transaction
+            // is here to prevent.
+            throw new TransactionAbort()
+          }
+          const legal = await applyMenuTree(tx, parsed.legalMenuId, parsed.legalLinks)
+          if (!legal.success) {
+            treeError = legal
+            throw new TransactionAbort()
+          }
 
-        // Socials are replace-all, unlike the menus. There are at most twelve,
-        // nothing references a social row by id, and they carry no children —
-        // so the reasons the menus need a diff do not apply.
-        await tx.footerSocial.deleteMany({})
-        if (parsed.socials.length > 0) {
-          await tx.footerSocial.createMany({
-            data: parsed.socials.map((social, index) => ({
-              position: index,
-              label: social.label,
-              platform: social.platform,
-              href: social.href,
-              isVisible: social.isVisible,
-            })),
-          })
-        }
-      },
-      { timeout: 30_000 },
-    ).catch((err: unknown) => {
-      if (err instanceof TransactionAbort) return
-      throw err
-    })
+          // Socials are replace-all, unlike the menus. There are at most twelve,
+          // nothing references a social row by id, and they carry no children —
+          // so the reasons the menus need a diff do not apply.
+          await tx.footerSocial.deleteMany({})
+          if (parsed.socials.length > 0) {
+            await tx.footerSocial.createMany({
+              data: parsed.socials.map((social, index) => ({
+                position: index,
+                label: social.label,
+                platform: social.platform,
+                href: social.href,
+                isVisible: social.isVisible,
+              })),
+            })
+          }
+        },
+        { timeout: 30_000 }
+      )
+      .catch((err: unknown) => {
+        if (err instanceof TransactionAbort) return
+        throw err
+      })
 
     if (treeError) return treeError
 

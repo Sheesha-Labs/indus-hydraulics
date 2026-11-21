@@ -23,11 +23,7 @@ export type {
   EmailTemplate,
   ServiceCase,
 } from '@prisma/client'
-export {
-  ServiceCaseStatus,
-  ServiceCaseCategory,
-  ServiceCaseCardTagStyle,
-} from '@prisma/client'
+export { ServiceCaseStatus, ServiceCaseCategory, ServiceCaseCardTagStyle } from '@prisma/client'
 export {
   nextRfqCode,
   nextAccountCode,

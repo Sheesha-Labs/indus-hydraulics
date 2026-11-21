@@ -68,7 +68,13 @@ export default async function ThreadChartPage() {
     description: `Thread size, pitch and male and female diameters for ${totals.connectionTypes} hydraulic connection types, in inches and millimetres.`,
     url: urlFor(PATH),
     isAccessibleForFree: true,
-    variableMeasured: ['Dash size', 'Thread', 'Threads per inch or pitch', 'Male thread O.D.', 'Female thread I.D.'],
+    variableMeasured: [
+      'Dash size',
+      'Thread',
+      'Threads per inch or pitch',
+      'Male thread O.D.',
+      'Female thread I.D.',
+    ],
   }
 
   return (
@@ -116,8 +122,9 @@ export default async function ThreadChartPage() {
           title: 'Measure, never machine',
           body: (
             <>
-              Female I.D. figures are approximate minor diameters, good for telling families apart. Do not machine a port
-              or a thread to them; take dimensions from the standard named on each table.
+              Female I.D. figures are approximate minor diameters, good for telling families apart.
+              Do not machine a port or a thread to them; take dimensions from the standard named on
+              each table.
             </>
           ),
         }}
@@ -142,12 +149,12 @@ export default async function ThreadChartPage() {
           {/* A real sequence, so the cells are numbered. */}
           <HairlineGrid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
             {STEPS.map((step, i) => (
-              <HairlineCell key={step.title} className="flex flex-col gap-2 px-5 pb-5 pt-[18px]">
-                <span className="font-mono text-[10.5px] tracking-[0.1em] text-ih-accent">
+              <HairlineCell key={step.title} className="flex flex-col gap-2 px-5 pt-[18px] pb-5">
+                <span className="text-ih-accent font-mono text-[10.5px] tracking-[0.1em]">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <h3 className="text-[15.5px] font-medium tracking-[-0.02em]">{step.title}</h3>
-                <p className="text-[12.5px] leading-[1.6] text-ih-muted">{step.body}</p>
+                <p className="text-ih-muted text-[12.5px] leading-[1.6]">{step.body}</p>
               </HairlineCell>
             ))}
           </HairlineGrid>
@@ -235,7 +242,7 @@ function FamilyJumpList({ families }: { families: readonly { id: string; name: s
           <li key={family.id}>
             <a
               href={`#${family.id}`}
-              className="inline-flex h-[30px] items-center rounded-full border border-ih-border bg-ih-surface px-3 text-[12.5px] text-ih-ink-2 transition-colors duration-150 hover:border-ih-accent hover:text-ih-accent"
+              className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] items-center rounded-full border px-3 text-[12.5px] transition-colors duration-150"
             >
               {family.name}
             </a>

@@ -105,7 +105,7 @@ export const PRIVACY_PAGE: MasterPageDef = {
       fields: [clauseHeading(), clauseBody()],
       defaults: {
         heading: 'International transfers',
-        body: '<p>Some of our service providers (including Vercel, Supabase, and Resend) operate from data centres outside the United Arab Emirates. Where this is the case, transfers are governed by the providers\' standard contractual safeguards.</p>',
+        body: "<p>Some of our service providers (including Vercel, Supabase, and Resend) operate from data centres outside the United Arab Emirates. Where this is the case, transfers are governed by the providers' standard contractual safeguards.</p>",
       },
     },
     {

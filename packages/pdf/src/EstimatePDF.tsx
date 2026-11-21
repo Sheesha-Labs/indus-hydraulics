@@ -199,14 +199,29 @@ function formatMoney(n: number, currency: string): string {
 function formatDate(d: Date): string {
   // "24 Apr 2026" — matches the Zoho template
   const day = d.getUTCDate()
-  const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][d.getUTCMonth()]
+  const month = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ][d.getUTCMonth()]
   const year = d.getUTCFullYear()
   return `${day} ${month} ${year}`
 }
 
 function hasBankDetails(bank: EstimateInput['bank']): boolean {
   if (!bank) return false
-  return Boolean(bank.accountName || bank.accountNo || bank.bankName || bank.branch || bank.iban || bank.swift)
+  return Boolean(
+    bank.accountName || bank.accountNo || bank.bankName || bank.branch || bank.iban || bank.swift
+  )
 }
 
 function BankLine({ label, value }: { label: string; value: string }) {
@@ -244,7 +259,9 @@ export function EstimatePDF(props: EstimateInput) {
         {/* Company block under logo */}
         <View style={styles.companyBlock}>
           <Text style={styles.companyName}>{props.branding.legalName}</Text>
-          {props.branding.vatTrn ? <Text style={styles.companyLine}>TRN {props.branding.vatTrn}</Text> : null}
+          {props.branding.vatTrn ? (
+            <Text style={styles.companyLine}>TRN {props.branding.vatTrn}</Text>
+          ) : null}
           {props.branding.addressLines.map((line, i) => (
             <Text key={i} style={styles.companyLine}>
               {line}
@@ -324,7 +341,9 @@ export function EstimatePDF(props: EstimateInput) {
         ) : null}
         {props.vatRatePct > 0 ? (
           <View style={styles.totalsRow}>
-            <Text style={styles.totalLabel}>{props.vatLabel ?? `VAT @ ${props.vatRatePct.toFixed(0)}%`}</Text>
+            <Text style={styles.totalLabel}>
+              {props.vatLabel ?? `VAT @ ${props.vatRatePct.toFixed(0)}%`}
+            </Text>
             <Text style={styles.totalValue}>{formatMoney(totals.vatAmount, '')}</Text>
           </View>
         ) : null}
@@ -377,8 +396,12 @@ export function EstimatePDF(props: EstimateInput) {
           <Text style={styles.sigName}>{props.signature.name}</Text>
           <Text style={styles.sigLine}>{props.signature.title}</Text>
           <Text style={styles.sigLine}>{props.signature.company}</Text>
-          {props.signature.phone ? <Text style={styles.sigLine}>Mob: {props.signature.phone}</Text> : null}
-          {props.signature.email ? <Text style={styles.sigLine}>Email: {props.signature.email}</Text> : null}
+          {props.signature.phone ? (
+            <Text style={styles.sigLine}>Mob: {props.signature.phone}</Text>
+          ) : null}
+          {props.signature.email ? (
+            <Text style={styles.sigLine}>Email: {props.signature.email}</Text>
+          ) : null}
           {props.signature.addressLines?.map((line, i) => (
             <Text key={i} style={styles.sigLine}>
               {line}
@@ -389,10 +412,14 @@ export function EstimatePDF(props: EstimateInput) {
         {hasBankDetails(props.bank) ? (
           <View style={styles.bankBlock}>
             <Text style={styles.sectionTitle}>Bank details</Text>
-            {props.bank?.accountName ? <BankLine label="Account name" value={props.bank.accountName} /> : null}
+            {props.bank?.accountName ? (
+              <BankLine label="Account name" value={props.bank.accountName} />
+            ) : null}
             {props.bank?.bankName ? <BankLine label="Bank" value={props.bank.bankName} /> : null}
             {props.bank?.branch ? <BankLine label="Branch" value={props.bank.branch} /> : null}
-            {props.bank?.accountNo ? <BankLine label="Account no" value={props.bank.accountNo} /> : null}
+            {props.bank?.accountNo ? (
+              <BankLine label="Account no" value={props.bank.accountNo} />
+            ) : null}
             {props.bank?.iban ? <BankLine label="IBAN" value={props.bank.iban} /> : null}
             {props.bank?.swift ? <BankLine label="SWIFT" value={props.bank.swift} /> : null}
           </View>

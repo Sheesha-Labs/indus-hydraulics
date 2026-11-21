@@ -17,13 +17,16 @@ function Inner({ enquiryId, disabled, disabledReason }: Props) {
       if (res.success) {
         toast(
           res.data.mode === 'background'
-            ? { title: 'Researching suppliers', description: 'Results appear per item as they land.' }
+            ? {
+                title: 'Researching suppliers',
+                description: 'Results appear per item as they land.',
+              }
             : {
                 title: 'Research finished',
                 description:
                   'Ran in the request because background jobs are not configured, so only the first few items were attempted.',
                 duration: 8000,
-              },
+              }
         )
         router.refresh()
         return
@@ -39,7 +42,7 @@ function Inner({ enquiryId, disabled, disabledReason }: Props) {
         Find suppliers
       </Button>
       {disabled && disabledReason ? (
-        <p className="mt-1 text-[12px] text-ih-muted">{disabledReason}</p>
+        <p className="text-ih-muted mt-1 text-[12px]">{disabledReason}</p>
       ) : null}
     </form>
   )

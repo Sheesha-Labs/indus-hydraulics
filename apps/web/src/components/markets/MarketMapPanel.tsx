@@ -36,17 +36,17 @@ export default function MarketMapPanel({
   return (
     <figure className="border-ih-border bg-ih-surface m-0 overflow-hidden rounded-lg border">
       <div className="border-ih-border bg-ih-surface-2 flex items-center justify-between gap-4 border-b px-4 py-[11px]">
-        <span className="mono text-ih-ink-2 text-[10px] uppercase tracking-[0.12em]">
+        <span className="mono text-ih-ink-2 text-[10px] tracking-[0.12em] uppercase">
           Fig. 01 · Export lane {lane}
         </span>
-        <span className="mono text-ih-muted text-[10px] uppercase tracking-[0.12em]">
+        <span className="mono text-ih-muted text-[10px] tracking-[0.12em] uppercase">
           Mercator · WGS 84
         </span>
       </div>
 
       {model ? (
         <>
-          <div className="px-0 pb-0.5 pt-1.5">
+          <div className="px-0 pt-1.5 pb-0.5">
             <MapSvg model={model} slug={slug} />
           </div>
           <figcaption className="border-ih-border flex flex-wrap gap-x-[18px] gap-y-2 border-t px-4 py-3">
@@ -91,7 +91,7 @@ export default function MarketMapPanel({
           map would have carried is already in the manifest strip above.
         */
         <div className="bg-ih-surface-2 grid aspect-[664/524] place-items-center">
-          <span className="mono text-ih-muted-2 px-6 text-center text-[10.5px] uppercase tracking-[0.1em]">
+          <span className="mono text-ih-muted-2 px-6 text-center text-[10.5px] tracking-[0.1em] uppercase">
             {countryName} — lane map unavailable
           </span>
         </div>
@@ -102,7 +102,7 @@ export default function MarketMapPanel({
 
 function LegendItem({ children }: { children: React.ReactNode }) {
   return (
-    <span className="mono text-ih-muted flex items-center gap-[7px] text-[9.5px] uppercase tracking-[0.08em]">
+    <span className="mono text-ih-muted flex items-center gap-[7px] text-[9.5px] tracking-[0.08em] uppercase">
       {children}
     </span>
   )

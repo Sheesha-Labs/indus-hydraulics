@@ -19,7 +19,7 @@ function node(
   id: string,
   parentId: string | null,
   position: number,
-  name = id,
+  name = id
 ): CategoryTreeNode & { slug: string } {
   return { id, parentId, position, name, slug: name.toLowerCase().replace(/\W+/g, '-') }
 }
@@ -82,7 +82,7 @@ describe('flattenTree', () => {
 
   test('collapsing a leaf changes nothing', () => {
     expect(flattenTree(TREE, new Set(['gear'])).map((i) => i.node.id)).toEqual(
-      flattenTree(TREE).map((i) => i.node.id),
+      flattenTree(TREE).map((i) => i.node.id)
     )
   })
 
@@ -106,19 +106,27 @@ describe('flattenTree', () => {
 describe('groupByParent', () => {
   test('sorts each sibling set by position', () => {
     const shuffled = [node('x', null, 5), node('y', null, 1), node('z', null, 3)]
-    expect(groupByParent(shuffled).get(null)!.map((n) => n.id)).toEqual(['y', 'z', 'x'])
+    expect(
+      groupByParent(shuffled)
+        .get(null)!
+        .map((n) => n.id)
+    ).toEqual(['y', 'z', 'x'])
   })
 
   test('breaks a position tie by name so order is at least stable', () => {
     const tied = [node('b', null, 0, 'Beta'), node('a', null, 0, 'Alpha')]
-    expect(groupByParent(tied).get(null)!.map((n) => n.id)).toEqual(['a', 'b'])
+    expect(
+      groupByParent(tied)
+        .get(null)!
+        .map((n) => n.id)
+    ).toEqual(['a', 'b'])
   })
 })
 
 describe('descendantIds / subtreeHeight / ancestorPath', () => {
   test('descendantIds collects the whole branch, excluding the root', () => {
     expect(descendantIds(TREE, 'hoses').sort()).toEqual(
-      ['couplings', 'ferrules', 'no-skive', 'skive'].sort(),
+      ['couplings', 'ferrules', 'no-skive', 'skive'].sort()
     )
   })
 
@@ -315,7 +323,7 @@ describe('buildMoveOrdering', () => {
 
   test('a drag that lands where it started writes nothing', () => {
     expect(
-      buildMoveOrdering({ nodes: TREE, activeId: 'ferrules', newParentId: 'hoses', newIndex: 0 }),
+      buildMoveOrdering({ nodes: TREE, activeId: 'ferrules', newParentId: 'hoses', newIndex: 0 })
     ).toEqual([])
   })
 
@@ -323,12 +331,7 @@ describe('buildMoveOrdering', () => {
     // Ties are what made the old integer box unusable: two rows at the same
     // position means display order falls back to the name tiebreak, and the
     // next drag computes an index against an order nobody chose.
-    const sparse = [
-      node('r', null, 0),
-      node('a', 'r', 10),
-      node('b', 'r', 10),
-      node('c', 'r', 40),
-    ]
+    const sparse = [node('r', null, 0), node('a', 'r', 10), node('b', 'r', 10), node('c', 'r', 40)]
     const writes = buildMoveOrdering({
       nodes: sparse,
       activeId: 'c',
@@ -364,7 +367,7 @@ describe('buildMoveOrdering', () => {
 
   test('an unknown id is a no-op rather than a throw', () => {
     expect(
-      buildMoveOrdering({ nodes: TREE, activeId: 'ghost', newParentId: null, newIndex: 0 }),
+      buildMoveOrdering({ nodes: TREE, activeId: 'ghost', newParentId: null, newIndex: 0 })
     ).toEqual([])
   })
 

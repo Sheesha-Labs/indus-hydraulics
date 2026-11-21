@@ -14,12 +14,7 @@ import {
 
 import CategoryTree from './CategoryTree'
 import CategoryForm from './CategoryForm'
-import {
-  bulkMoveCategories,
-  bulkSetPublished,
-  deleteCategory,
-  moveCategory,
-} from './actions'
+import { bulkMoveCategories, bulkSetPublished, deleteCategory, moveCategory } from './actions'
 import type { Cat, TemplateOption } from './types'
 
 interface Props {
@@ -53,7 +48,9 @@ function loadCollapsed(): Set<string> | null {
     const raw = window.localStorage?.getItem(COLLAPSE_STORAGE_KEY)
     if (!raw) return null
     const parsed: unknown = JSON.parse(raw)
-    return Array.isArray(parsed) ? new Set(parsed.filter((v): v is string => typeof v === 'string')) : null
+    return Array.isArray(parsed)
+      ? new Set(parsed.filter((v): v is string => typeof v === 'string'))
+      : null
   } catch {
     return null
   }
@@ -121,7 +118,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
     const stored = loadCollapsed()
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setCollapsed(
-      stored ?? new Set(serverCategories.filter((c) => c.parentId === null).map((c) => c.id)),
+      stored ?? new Set(serverCategories.filter((c) => c.parentId === null).map((c) => c.id))
     )
     setCollapseReady(true)
     // Mount-only on purpose: re-running on every `serverCategories` change
@@ -156,19 +153,19 @@ export default function CategoriesClient({ categories: serverCategories, templat
 
   const visibleIds = useMemo(
     () => (query.trim() ? matchingWithAncestors(categories, query) : null),
-    [categories, query],
+    [categories, query]
   )
 
   // A search that keeps its matches folded away has found nothing useful, so
   // filtering forces every surviving branch open.
   const effectiveCollapsed = useMemo(
     () => (visibleIds ? new Set<string>() : collapsed),
-    [visibleIds, collapsed],
+    [visibleIds, collapsed]
   )
 
   const navGaps = useMemo(
     () => categories.filter((c) => c.isPublished && c.navItemCount === 0),
-    [categories],
+    [categories]
   )
 
   const toggleCollapse = useCallback((id: string) => {
@@ -196,7 +193,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
         return next
       })
     },
-    [categories],
+    [categories]
   )
 
   const runMove = useCallback(
@@ -236,7 +233,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
         router.refresh()
       })
     },
-    [categories, serverCategories, router],
+    [categories, serverCategories, router]
   )
 
   function runBulkPublish(isPublished: boolean) {
@@ -252,7 +249,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
       setNotice(
         `${result.data.count} ${result.data.count === 1 ? 'category' : 'categories'} ${
           isPublished ? 'published' : 'unpublished'
-        }.`,
+        }.`
       )
       setSelected(new Set())
       router.refresh()
@@ -272,7 +269,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
       setNotice(
         result.data.count === 0
           ? 'Everything selected was already there.'
-          : `${result.data.count} ${result.data.count === 1 ? 'category' : 'categories'} moved.`,
+          : `${result.data.count} ${result.data.count === 1 ? 'category' : 'categories'} moved.`
       )
       setSelected(new Set())
       router.refresh()
@@ -287,7 +284,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
     })
     if (blocked.length > 0) {
       setError(
-        `${blocked.length} of the selected categories still have products or sub-categories and cannot be deleted.`,
+        `${blocked.length} of the selected categories still have products or sub-categories and cannot be deleted.`
       )
       return
     }
@@ -308,7 +305,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
     })
   }
 
-  const editing = editingId ? categories.find((c) => c.id === editingId) ?? null : null
+  const editing = editingId ? (categories.find((c) => c.id === editingId) ?? null) : null
 
   return (
     <div className="flex flex-col gap-4">
@@ -319,14 +316,14 @@ export default function CategoriesClient({ categories: serverCategories, templat
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Name or slug…"
-            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-3 text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-3 text-[13px]"
           />
         </Field>
 
         <button
           type="button"
           onClick={() => setCollapsed(new Set())}
-          className="h-9 rounded-lg border border-ih-border px-3 text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+          className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-lg border px-3 text-[12px]"
         >
           Expand all
         </button>
@@ -335,7 +332,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
           onClick={() =>
             setCollapsed(new Set(categories.filter((c) => c.childCount > 0).map((c) => c.id)))
           }
-          className="h-9 rounded-lg border border-ih-border px-3 text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
+          className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-9 rounded-lg border px-3 text-[12px]"
         >
           Collapse all
         </button>
@@ -346,7 +343,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
               setShowCreate(true)
               setEditingId(null)
             }}
-            className="h-9 rounded-lg bg-ih-accent px-3 text-[13px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 rounded-lg px-3 text-[13px] font-medium transition-colors"
           >
             + New category
           </button>
@@ -355,7 +352,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
 
       {/* ─── megamenu coverage ───────────────────────────────────────── */}
       {navGaps.length > 0 && (
-        <p className="rounded-[6px] border border-ih-warning bg-ih-warning-soft px-3 py-2 text-[12px] text-ih-warning-ink">
+        <p className="border-ih-warning bg-ih-warning-soft text-ih-warning-ink rounded-[6px] border px-3 py-2 text-[12px]">
           <b className="font-medium">
             {navGaps.length} live {navGaps.length === 1 ? 'category is' : 'categories are'} not in
             the megamenu.
@@ -393,25 +390,28 @@ export default function CategoriesClient({ categories: serverCategories, templat
       )}
 
       {error && (
-        <p className="rounded-[6px] border border-ih-danger bg-ih-danger-soft px-3 py-2 text-[12px] text-ih-danger-ink" role="alert">
+        <p
+          className="border-ih-danger bg-ih-danger-soft text-ih-danger-ink rounded-[6px] border px-3 py-2 text-[12px]"
+          role="alert"
+        >
           {error}
         </p>
       )}
       {notice && !error && (
-        <p className="rounded-[6px] border border-ih-success bg-ih-success-soft px-3 py-2 text-[12px] text-ih-success-ink">
+        <p className="border-ih-success bg-ih-success-soft text-ih-success-ink rounded-[6px] border px-3 py-2 text-[12px]">
           {notice}
         </p>
       )}
 
       {/* ─── bulk bar ────────────────────────────────────────────────── */}
       {selected.size > 0 && (
-        <div className="flex flex-wrap items-center gap-2 rounded-[6px] border border-ih-border bg-ih-surface-2 px-3 py-2">
-          <span className="tabular-nums text-[11.5px] text-ih-ink-2">{selected.size} selected</span>
+        <div className="border-ih-border bg-ih-surface-2 flex flex-wrap items-center gap-2 rounded-[6px] border px-3 py-2">
+          <span className="text-ih-ink-2 text-[11.5px] tabular-nums">{selected.size} selected</span>
           <button
             type="button"
             disabled={pending}
             onClick={() => runBulkPublish(true)}
-            className="h-8 rounded-[4px] border border-ih-border bg-ih-surface px-2.5 text-[12px] hover:bg-ih-surface-3 disabled:opacity-50"
+            className="border-ih-border bg-ih-surface hover:bg-ih-surface-3 h-8 rounded-[4px] border px-2.5 text-[12px] disabled:opacity-50"
           >
             Publish
           </button>
@@ -419,12 +419,12 @@ export default function CategoriesClient({ categories: serverCategories, templat
             type="button"
             disabled={pending}
             onClick={() => runBulkPublish(false)}
-            className="h-8 rounded-[4px] border border-ih-border bg-ih-surface px-2.5 text-[12px] hover:bg-ih-surface-3 disabled:opacity-50"
+            className="border-ih-border bg-ih-surface hover:bg-ih-surface-3 h-8 rounded-[4px] border px-2.5 text-[12px] disabled:opacity-50"
           >
             Unpublish
           </button>
 
-          <label className="flex items-center gap-1.5 text-[12px] text-ih-ink-2">
+          <label className="text-ih-ink-2 flex items-center gap-1.5 text-[12px]">
             Move under
             <select
               disabled={pending}
@@ -435,7 +435,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
                 if (value === '') return
                 runBulkMove(value === '__root__' ? null : value)
               }}
-              className="h-8 rounded-[4px] border border-ih-border bg-ih-surface px-2 text-[12px]"
+              className="border-ih-border bg-ih-surface h-8 rounded-[4px] border px-2 text-[12px]"
             >
               <option value="">Choose…</option>
               <option value="__root__">— Top level —</option>
@@ -443,7 +443,10 @@ export default function CategoriesClient({ categories: serverCategories, templat
                 .filter((c) => !selected.has(c.id))
                 .map((c) => ({ cat: c, path: ancestorPath(categories, c.id) }))
                 .sort((a, b) =>
-                  a.path.map((p) => p.name).join(' › ').localeCompare(b.path.map((p) => p.name).join(' › ')),
+                  a.path
+                    .map((p) => p.name)
+                    .join(' › ')
+                    .localeCompare(b.path.map((p) => p.name).join(' › '))
                 )
                 .map(({ cat, path }) => (
                   <option key={cat.id} value={cat.id}>
@@ -453,11 +456,17 @@ export default function CategoriesClient({ categories: serverCategories, templat
             </select>
           </label>
 
-          <DeleteButton label="Delete" showLabel title="Delete selected categories" disabled={pending} onClick={runBulkDelete} />
+          <DeleteButton
+            label="Delete"
+            showLabel
+            title="Delete selected categories"
+            disabled={pending}
+            onClick={runBulkDelete}
+          />
           <button
             type="button"
             onClick={() => setSelected(new Set())}
-            className="ml-auto h-8 px-2 text-[12px] text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink ml-auto h-8 px-2 text-[12px]"
           >
             Clear
           </button>
@@ -465,9 +474,9 @@ export default function CategoriesClient({ categories: serverCategories, templat
       )}
 
       {query.trim() && (
-        <p className="text-[11.5px] text-ih-muted">
-          Dragging is off while a search is active — the rows around a drop target would not be
-          the ones you can see.{' '}
+        <p className="text-ih-muted text-[11.5px]">
+          Dragging is off while a search is active — the rows around a drop target would not be the
+          ones you can see.{' '}
           <button type="button" onClick={() => setQuery('')} className="underline">
             Clear the search
           </button>{' '}
@@ -492,7 +501,7 @@ export default function CategoriesClient({ categories: serverCategories, templat
         dragDisabled={pending || !!query.trim()}
       />
 
-      <p className="text-[11.5px] text-ih-muted">
+      <p className="text-ih-muted text-[11.5px]">
         Drag a row up or down to reorder it, or sideways to nest it under the row above. Keyboard:
         tab to a handle, press space, then use the arrow keys and space again to drop. Moving a
         category never changes its web address — only renaming it does.

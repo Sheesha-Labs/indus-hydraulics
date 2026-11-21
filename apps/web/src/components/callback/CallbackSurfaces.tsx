@@ -80,9 +80,9 @@ function useCallbackForm(props: Props) {
     () =>
       defaultPhoneCountry(
         DIAL_COUNTRIES,
-        document.querySelector('[data-callback-market]')?.getAttribute('data-callback-market'),
+        document.querySelector('[data-callback-market]')?.getAttribute('data-callback-market')
       ),
-    [],
+    []
   )
   const ordered = useMemo(() => orderCountries(DIAL_COUNTRIES, defaultIso), [defaultIso])
   // The leading "suggested" rows — the default and the GCC — before the A–Z list.
@@ -124,80 +124,101 @@ function useCallbackForm(props: Props) {
   const focusField = (formEl: HTMLFormElement, key: FieldKey) =>
     formEl.querySelector<HTMLInputElement>(`[name="${key}"]`)?.focus()
 
-  const submit = useCallback(async (formEl: HTMLFormElement) => {
-    if (status === 'submitting' || status === 'success') return
-    setAttempted(true)
-    const found = validateCallbackFields({ name, email, dial, phone })
-    setServerErrors({})
-    const firstBad = (['name', 'email', 'phone'] as FieldKey[]).find((k) => found[k])
-    trackCallback('callback_submit_attempt', { surface, valid: !firstBad })
-    if (firstBad) {
-      focusField(formEl, firstBad)
-      return
-    }
-    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
-      setStatus('error')
-      trackCallback('callback_submit_error', { surface, status: 'offline' })
-      return
-    }
+  const submit = useCallback(
+    async (formEl: HTMLFormElement) => {
+      if (status === 'submitting' || status === 'success') return
+      setAttempted(true)
+      const found = validateCallbackFields({ name, email, dial, phone })
+      setServerErrors({})
+      const firstBad = (['name', 'email', 'phone'] as FieldKey[]).find((k) => found[k])
+      trackCallback('callback_submit_attempt', { surface, valid: !firstBad })
+      if (firstBad) {
+        focusField(formEl, firstBad)
+        return
+      }
+      if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+        setStatus('error')
+        trackCallback('callback_submit_error', { surface, status: 'offline' })
+        return
+      }
 
-    const fd = new FormData()
-    const path = window.location.pathname
-    fd.set('surface', surface)
-    fd.set('trigger', trigger)
-    if (surface === 'B') {
-      fd.set('category', category)
-      fd.set('description', description)
-    }
-    fd.set('name', name)
-    fd.set('email', email.trim().toLowerCase())
-    fd.set('phoneCountry', iso)
-    fd.set('phone', phone)
-    fd.set('pageUrl', `${window.location.origin}${path}`)
-    fd.set('pageTitle', document.title)
-    fd.set('referrer', document.referrer)
-    const market = marketSlugFromPath(path)
-    if (market) fd.set('market', market)
-    try {
-      const utm = JSON.parse(window.sessionStorage.getItem(CALLBACK_STORAGE.utm) ?? '{}') as Record<string, string>
-      for (const [k, v] of Object.entries(utm)) fd.set(k, v)
-    } catch {
-      // No stored campaign; nothing to send.
-    }
-    const trap = new FormData(formEl).get('website')
-    fd.set('website', typeof trap === 'string' ? trap : '')
-    fd.set('elapsedMs', String(Date.now() - openedAt))
+      const fd = new FormData()
+      const path = window.location.pathname
+      fd.set('surface', surface)
+      fd.set('trigger', trigger)
+      if (surface === 'B') {
+        fd.set('category', category)
+        fd.set('description', description)
+      }
+      fd.set('name', name)
+      fd.set('email', email.trim().toLowerCase())
+      fd.set('phoneCountry', iso)
+      fd.set('phone', phone)
+      fd.set('pageUrl', `${window.location.origin}${path}`)
+      fd.set('pageTitle', document.title)
+      fd.set('referrer', document.referrer)
+      const market = marketSlugFromPath(path)
+      if (market) fd.set('market', market)
+      try {
+        const utm = JSON.parse(
+          window.sessionStorage.getItem(CALLBACK_STORAGE.utm) ?? '{}'
+        ) as Record<string, string>
+        for (const [k, v] of Object.entries(utm)) fd.set(k, v)
+      } catch {
+        // No stored campaign; nothing to send.
+      }
+      const trap = new FormData(formEl).get('website')
+      fd.set('website', typeof trap === 'string' ? trap : '')
+      fd.set('elapsedMs', String(Date.now() - openedAt))
 
-    setStatus('submitting')
-    try {
-      const result = await requestCallback(fd)
-      if (result.success) {
-        setDesk(result.data)
-        setStatus('success')
-        onSubmitted()
-        trackCallback('callback_submit_success', {
+      setStatus('submitting')
+      try {
+        const result = await requestCallback(fd)
+        if (result.success) {
+          setDesk(result.data)
+          setStatus('success')
+          onSubmitted()
+          trackCallback('callback_submit_success', {
+            surface,
+            trigger,
+            category: surface === 'B' ? category : null,
+            market,
+          })
+          return
+        }
+        if (result.error === 'invalid') {
+          setServerErrors(result.fieldErrors)
+          setStatus('idle')
+          const bad = (['name', 'email', 'phone'] as FieldKey[]).find((k) => result.fieldErrors[k])
+          if (bad) focusField(formEl, bad)
+          trackCallback('callback_submit_error', { surface, status: 422 })
+          return
+        }
+        setStatus('error')
+        trackCallback('callback_submit_error', {
           surface,
-          trigger,
-          category: surface === 'B' ? category : null,
-          market,
+          status: result.error === 'rate_limited' ? 429 : 500,
         })
-        return
+      } catch {
+        setStatus('error')
+        trackCallback('callback_submit_error', { surface, status: 'network' })
       }
-      if (result.error === 'invalid') {
-        setServerErrors(result.fieldErrors)
-        setStatus('idle')
-        const bad = (['name', 'email', 'phone'] as FieldKey[]).find((k) => result.fieldErrors[k])
-        if (bad) focusField(formEl, bad)
-        trackCallback('callback_submit_error', { surface, status: 422 })
-        return
-      }
-      setStatus('error')
-      trackCallback('callback_submit_error', { surface, status: result.error === 'rate_limited' ? 429 : 500 })
-    } catch {
-      setStatus('error')
-      trackCallback('callback_submit_error', { surface, status: 'network' })
-    }
-  }, [status, name, email, dial, phone, iso, surface, trigger, category, description, openedAt, onSubmitted])
+    },
+    [
+      status,
+      name,
+      email,
+      dial,
+      phone,
+      iso,
+      surface,
+      trigger,
+      category,
+      description,
+      openedAt,
+      onSubmitted,
+    ]
+  )
 
   const phoneE164 = toE164(dial, phone)
 
@@ -257,7 +278,16 @@ const outlineBtnCls = buttonVariants({ kind: 'outline', size: 'md' })
 
 function CloseIcon({ size }: { size: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      aria-hidden="true"
+    >
       <path d="M6 6l12 12M18 6 6 18" />
     </svg>
   )
@@ -265,7 +295,12 @@ function CloseIcon({ size }: { size: number }) {
 
 function Spinner() {
   return (
-    <svg className="h-4 w-4 animate-spin motion-reduce:animate-none" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg
+      className="h-4 w-4 animate-spin motion-reduce:animate-none"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
     </svg>
@@ -281,7 +316,7 @@ function Honeypot() {
       tabIndex={-1}
       autoComplete="off"
       aria-hidden="true"
-      className="absolute -left-[9999px] top-0 h-px w-px opacity-0"
+      className="absolute top-0 -left-[9999px] h-px w-px opacity-0"
     />
   )
 }
@@ -306,7 +341,7 @@ function PhoneGroup({
   return (
     <div className="relative">
       <div
-        className={`flex ${height} overflow-hidden rounded-md border bg-ih-surface transition-[border-color,box-shadow] duration-150 focus-within:border-ih-accent focus-within:ring-[3px] focus-within:ring-ih-accent-soft ${fieldState(invalid)}`}
+        className={`flex ${height} bg-ih-surface focus-within:border-ih-accent focus-within:ring-ih-accent-soft overflow-hidden rounded-md border transition-[border-color,box-shadow] duration-150 focus-within:ring-[3px] ${fieldState(invalid)}`}
       >
         <CountryPicker
           countries={form.ordered}
@@ -327,7 +362,7 @@ function PhoneGroup({
           aria-invalid={invalid || undefined}
           aria-describedby={describedBy}
           onChange={(e) => form.setPhone(e.target.value)}
-          className="min-w-0 flex-1 border-0 bg-transparent px-[14px] text-[14px] tabular-nums text-ih-ink outline-none placeholder:text-ih-muted max-[767px]:text-[16px]"
+          className="text-ih-ink placeholder:text-ih-muted min-w-0 flex-1 border-0 bg-transparent px-[14px] text-[14px] tabular-nums outline-none max-[767px]:text-[16px]"
         />
         {trailing}
       </div>
@@ -338,13 +373,18 @@ function PhoneGroup({
 function FailureLine({ form, deskPhone }: { form: Form; deskPhone: string }) {
   if (form.status !== 'error') return null
   return (
-    <p role="alert" className="text-[12.5px] leading-[1.5] text-ih-danger-ink">
+    <p role="alert" className="text-ih-danger-ink text-[12.5px] leading-[1.5]">
       That didn&rsquo;t send. Call{' '}
       <a href={form.tel} className="underline underline-offset-[3px]">
         {deskPhone}
       </a>{' '}
       or{' '}
-      <a href={form.whatsapp} target="_blank" rel="noopener noreferrer" className="underline underline-offset-[3px]">
+      <a
+        href={form.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline underline-offset-[3px]"
+      >
         WhatsApp us
       </a>
       .
@@ -352,7 +392,15 @@ function FailureLine({ form, deskPhone }: { form: Form; deskPhone: string }) {
   )
 }
 
-function PrimaryButton({ form, label, className = '' }: { form: Form; label: string; className?: string }) {
+function PrimaryButton({
+  form,
+  label,
+  className = '',
+}: {
+  form: Form
+  label: string
+  className?: string
+}) {
   return (
     <button
       type="submit"
@@ -372,7 +420,15 @@ function PrimaryButton({ form, label, className = '' }: { form: Form; label: str
   )
 }
 
-function SuccessPanel({ form, onDone, compact = false }: { form: Form; onDone: () => void; compact?: boolean }) {
+function SuccessPanel({
+  form,
+  onDone,
+  compact = false,
+}: {
+  form: Form
+  onDone: () => void
+  compact?: boolean
+}) {
   const when = form.desk?.deskOpen
     ? 'within one working hour'
     : form.desk?.nextOpen
@@ -380,15 +436,27 @@ function SuccessPanel({ form, onDone, compact = false }: { form: Form; onDone: (
       : 'as soon as the desk opens'
   return (
     <div className={compact ? 'pt-4' : ''}>
-      <span className="grid h-7 w-7 place-items-center rounded-full bg-ih-accent-soft text-ih-accent" aria-hidden="true">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <span
+        className="bg-ih-accent-soft text-ih-accent grid h-7 w-7 place-items-center rounded-full"
+        aria-hidden="true"
+      >
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M5 12.5l4.5 4.5L19 7.5" />
         </svg>
       </span>
-      <p className="mt-3 text-[18px] font-medium text-ih-ink">Thanks, {firstName(form.name)}.</p>
-      <p className="mt-1.5 text-[14px] leading-[1.55] text-ih-ink-2">
-        An engineer will call <span className="font-mono text-[13.5px]">{form.phoneRead}</span> {when}. We&rsquo;ve sent a copy
-        to {form.email.trim().toLowerCase()}.
+      <p className="text-ih-ink mt-3 text-[18px] font-medium">Thanks, {firstName(form.name)}.</p>
+      <p className="text-ih-ink-2 mt-1.5 text-[14px] leading-[1.55]">
+        An engineer will call <span className="font-mono text-[13.5px]">{form.phoneRead}</span>{' '}
+        {when}. We&rsquo;ve sent a copy to {form.email.trim().toLowerCase()}.
       </p>
       <button type="button" onClick={onDone} className={`${outlineBtnCls} mt-5`}>
         Back to the page
@@ -459,7 +527,14 @@ const RAIL_POINTS = [
 ]
 
 function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
-  const ids = { chips: useId(), desc: useId(), name: useId(), email: useId(), phone: useId(), err: useId() }
+  const ids = {
+    chips: useId(),
+    desc: useId(),
+    name: useId(),
+    email: useId(),
+    phone: useId(),
+    err: useId(),
+  }
   const firstChip = useRef<HTMLButtonElement>(null)
   const chipRefs = useRef(new Map<string, HTMLButtonElement>())
   const mailto = `mailto:${deskEmail}?subject=${encodeURIComponent('Enquiry from website')}`
@@ -469,7 +544,7 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
       <Dialog.Portal>
         <Dialog.Overlay
           {...ROOT}
-          className={`fixed inset-0 z-[90] grid place-items-center overflow-y-auto bg-ih-scrim px-6 py-8 ${
+          className={`bg-ih-scrim fixed inset-0 z-[90] grid place-items-center overflow-y-auto px-6 py-8 ${
             exit.closing
               ? 'animate-[ih-fade-out_140ms_ease-in_forwards]'
               : 'animate-[ih-fade-in_180ms_ease-out]'
@@ -492,7 +567,7 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
               exit.requestClose('scrim')
             }}
             onInteractOutside={(e) => e.preventDefault()}
-            className={`relative grid w-[820px] max-w-full grid-cols-[300px_1fr] overflow-hidden rounded-lg bg-ih-surface shadow-[0_24px_64px_rgba(10,16,30,.28)] outline-none max-[859px]:grid-cols-[260px_1fr] ${
+            className={`bg-ih-surface relative grid w-[820px] max-w-full grid-cols-[300px_1fr] overflow-hidden rounded-lg shadow-[0_24px_64px_rgba(10,16,30,.28)] outline-none max-[859px]:grid-cols-[260px_1fr] ${
               exit.closing
                 ? 'animate-[ih-fade-out_140ms_ease-in_forwards]'
                 : 'animate-[ih-cb-rise_220ms_cubic-bezier(.2,.7,.2,1)] motion-reduce:animate-[ih-fade-in_180ms_ease-out]'
@@ -500,17 +575,20 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
           >
             <LiveRegion form={form} />
             {/* Navy rail */}
-            <div className="flex flex-col bg-ih-navy px-8 py-9">
-              <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-on-navy-eyebrow">
+            <div className="bg-ih-navy flex flex-col px-8 py-9">
+              <p className="text-ih-on-navy-eyebrow font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 Indus export desk
               </p>
-              <Dialog.Title className="mt-3.5 font-serif text-[30px] font-normal leading-[1.12] text-white">
+              <Dialog.Title className="mt-3.5 font-serif text-[30px] leading-[1.12] font-normal text-white">
                 Before you go — <em>let us find it for you.</em>
               </Dialog.Title>
-              <ol className="mt-7 flex flex-col gap-3 text-[13px] leading-[1.45] text-ih-on-navy-body">
+              <ol className="text-ih-on-navy-body mt-7 flex flex-col gap-3 text-[13px] leading-[1.45]">
                 {RAIL_POINTS.map((point, i) => (
                   <li key={point} className="flex items-start gap-2.5">
-                    <span className="mt-px grid h-[18px] w-[18px] shrink-0 place-items-center rounded-full bg-white/12 text-[11px] text-white" aria-hidden="true">
+                    <span
+                      className="mt-px grid h-[18px] w-[18px] shrink-0 place-items-center rounded-full bg-white/12 text-[11px] text-white"
+                      aria-hidden="true"
+                    >
                       {i + 1}
                     </span>
                     {point}
@@ -520,15 +598,19 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
               <div className="mt-auto border-t border-white/14 pt-[22px]">
                 <a
                   href={form.tel}
-                  onClick={() => trackCallback('callback_alt_click', { surface: 'B', channel: 'tel' })}
+                  onClick={() =>
+                    trackCallback('callback_alt_click', { surface: 'B', channel: 'tel' })
+                  }
                   className="block font-mono text-[14px] text-white hover:underline"
                 >
                   {deskPhone}
                 </a>
                 <a
                   href={`mailto:${deskEmail}`}
-                  onClick={() => trackCallback('callback_alt_click', { surface: 'B', channel: 'email' })}
-                  className="mt-1 block text-[12.5px] text-ih-on-navy-body hover:text-white hover:underline"
+                  onClick={() =>
+                    trackCallback('callback_alt_click', { surface: 'B', channel: 'email' })
+                  }
+                  className="text-ih-on-navy-body mt-1 block text-[12.5px] hover:text-white hover:underline"
                 >
                   {deskEmail}
                 </a>
@@ -536,10 +618,10 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
             </div>
 
             {/* Form panel */}
-            <div className="relative px-9 pb-8 pt-9">
+            <div className="relative px-9 pt-9 pb-8">
               <Dialog.Close
                 aria-label="Close"
-                className="absolute right-[18px] top-[18px] grid h-8 w-8 place-items-center rounded-md text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ih-accent"
+                className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink focus-visible:outline-ih-accent absolute top-[18px] right-[18px] grid h-8 w-8 place-items-center rounded-md transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 <CloseIcon size={18} />
               </Dialog.Close>
@@ -577,7 +659,7 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
                           if (el) chipRefs.current.set(c.value, el)
                           if (i === 0) firstChip.current = el
                         }}
-                        className="inline-flex h-8 items-center whitespace-nowrap rounded-full border border-ih-border bg-ih-surface px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-border-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ih-accent data-[state=checked]:border-ih-accent data-[state=checked]:bg-ih-accent data-[state=checked]:text-white"
+                        className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-border-strong focus-visible:outline-ih-accent data-[state=checked]:border-ih-accent data-[state=checked]:bg-ih-accent inline-flex h-8 items-center rounded-full border px-3 text-[12.5px] whitespace-nowrap transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 data-[state=checked]:text-white"
                       >
                         {c.label}
                       </RadioGroup.Item>
@@ -585,7 +667,8 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
                   </RadioGroup.Root>
 
                   <label htmlFor={ids.desc} className={`${labelCls} mt-5`}>
-                    Part number or short description <span className="font-normal text-ih-muted">— optional</span>
+                    Part number or short description{' '}
+                    <span className="text-ih-muted font-normal">— optional</span>
                   </label>
                   <input
                     id={ids.desc}
@@ -666,11 +749,13 @@ function SplitModal({ form, exit, deskPhone, deskEmail }: SurfaceProps) {
                     <FailureLine form={form} deskPhone={deskPhone} />
                   </div>
                   <PrimaryButton form={form} label="Call me back" className="mt-4" />
-                  <p className="mt-2.5 text-center text-[12px] text-ih-muted">
+                  <p className="text-ih-muted mt-2.5 text-center text-[12px]">
                     Prefer email?{' '}
                     <a
                       href={mailto}
-                      onClick={() => trackCallback('callback_alt_click', { surface: 'B', channel: 'email' })}
+                      onClick={() =>
+                        trackCallback('callback_alt_click', { surface: 'B', channel: 'email' })
+                      }
                       className={linkCls}
                     >
                       Write to us
@@ -750,7 +835,7 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
           exit.requestClose('esc')
         }
       }}
-      className={`fixed bottom-[calc(28px+var(--ih-dock,0px))] right-7 z-[45] w-[380px] max-w-[calc(100vw-32px)] rounded-lg border border-ih-border bg-ih-surface px-6 pb-[22px] pt-6 shadow-[0_12px_40px_rgba(10,16,30,.18)] transition-[bottom] duration-200 ${
+      className={`border-ih-border bg-ih-surface fixed right-7 bottom-[calc(28px+var(--ih-dock,0px))] z-[45] w-[380px] max-w-[calc(100vw-32px)] rounded-lg border px-6 pt-6 pb-[22px] shadow-[0_12px_40px_rgba(10,16,30,.18)] transition-[bottom] duration-200 ${
         exit.closing
           ? 'animate-[ih-fade-out_160ms_ease-in_forwards]'
           : 'animate-[ih-cb-corner_260ms_cubic-bezier(.2,.7,.2,1)] motion-reduce:animate-[ih-fade-in_180ms_ease-out]'
@@ -761,22 +846,32 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
         type="button"
         aria-label="Close"
         onClick={() => exit.requestClose('x')}
-        className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-md text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ih-accent"
+        className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink focus-visible:outline-ih-accent absolute top-3 right-3 grid h-8 w-8 place-items-center rounded-md transition-colors focus-visible:outline-2 focus-visible:outline-offset-2"
       >
         <CloseIcon size={16} />
       </button>
 
       <div className="flex items-center gap-3">
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-ih-navy text-[14px] font-medium text-white" aria-hidden="true">
+        <span
+          className="bg-ih-navy grid h-10 w-10 shrink-0 place-items-center rounded-full text-[14px] font-medium text-white"
+          aria-hidden="true"
+        >
           IH
         </span>
         <div>
-          <p id={titleId} className="text-[14px] font-medium text-ih-ink">
+          <p id={titleId} className="text-ih-ink text-[14px] font-medium">
             Welcome back
           </p>
-          <p className="flex items-center gap-1.5 text-[12px] text-ih-muted">
-            <span className={`inline-block h-1.5 w-1.5 shrink-0 rounded-full ${deskOpen ? 'bg-ih-success' : 'bg-ih-muted'}`} aria-hidden="true" />
-            {deskOpen ? 'Export desk online' : nextOpen ? `Back ${nextOpen}` : 'Export desk offline'}
+          <p className="text-ih-muted flex items-center gap-1.5 text-[12px]">
+            <span
+              className={`inline-block h-1.5 w-1.5 shrink-0 rounded-full ${deskOpen ? 'bg-ih-success' : 'bg-ih-muted'}`}
+              aria-hidden="true"
+            />
+            {deskOpen
+              ? 'Export desk online'
+              : nextOpen
+                ? `Back ${nextOpen}`
+                : 'Export desk offline'}
           </p>
         </div>
       </div>
@@ -793,7 +888,7 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
           className="relative"
         >
           <Honeypot />
-          <p className="mb-3.5 mt-4 text-[14px] leading-[1.55] text-ih-ink-2">
+          <p className="text-ih-ink-2 mt-4 mb-3.5 text-[14px] leading-[1.55]">
             Can&rsquo;t find the part you need? Leave your number and we&rsquo;ll call you back.
           </p>
           <div className="mb-2.5 grid grid-cols-2 gap-2.5">
@@ -835,7 +930,7 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
                 disabled={form.busy}
                 aria-busy={form.busy || undefined}
                 aria-label={form.busy ? 'Sending' : undefined}
-                className="relative inline-flex shrink-0 items-center justify-center bg-ih-accent px-3.5 text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white disabled:opacity-70"
+                className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover relative inline-flex shrink-0 items-center justify-center px-3.5 text-[13.5px] font-medium transition-colors focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white disabled:opacity-70"
               >
                 <span className={form.busy ? 'invisible' : ''}>Call me</span>
                 {form.busy ? (
@@ -859,7 +954,9 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
           <div className="mt-3.5 flex gap-4 text-[13px]">
             <a
               href={`mailto:${deskEmail}?subject=${encodeURIComponent('Enquiry from website')}`}
-              onClick={() => trackCallback('callback_alt_click', { surface: 'D', channel: 'email' })}
+              onClick={() =>
+                trackCallback('callback_alt_click', { surface: 'D', channel: 'email' })
+              }
               className={linkCls}
             >
               Write to us
@@ -868,7 +965,9 @@ function CornerCard({ form, exit, deskPhone, deskEmail, openingHours }: SurfaceP
               href={form.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackCallback('callback_alt_click', { surface: 'D', channel: 'whatsapp' })}
+              onClick={() =>
+                trackCallback('callback_alt_click', { surface: 'D', channel: 'whatsapp' })
+              }
               className={linkCls}
             >
               WhatsApp
@@ -946,8 +1045,10 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
       <Dialog.Portal>
         <Dialog.Overlay
           {...ROOT}
-          className={`fixed inset-0 z-[90] flex flex-col justify-end bg-ih-scrim ${
-            exit.closing ? 'animate-[ih-fade-out_220ms_ease-in_forwards]' : 'animate-[ih-fade-in_180ms_ease-out]'
+          className={`bg-ih-scrim fixed inset-0 z-[90] flex flex-col justify-end ${
+            exit.closing
+              ? 'animate-[ih-fade-out_220ms_ease-in_forwards]'
+              : 'animate-[ih-fade-in_180ms_ease-out]'
           }`}
         >
           <Dialog.Content
@@ -970,7 +1071,7 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
               exit.requestClose('scrim')
             }}
             onInteractOutside={(e) => e.preventDefault()}
-            className={`relative mb-[var(--ih-kb,0px)] max-h-[min(90dvh,calc(var(--ih-vvh,100dvh)-24px))] w-full translate-y-[var(--ih-cb-drag,0px)] overflow-y-auto overscroll-contain rounded-t-xl bg-ih-surface px-[22px] pb-[calc(28px+env(safe-area-inset-bottom))] pt-3.5 outline-none ${
+            className={`bg-ih-surface relative mb-[var(--ih-kb,0px)] max-h-[min(90dvh,calc(var(--ih-vvh,100dvh)-24px))] w-full translate-y-[var(--ih-cb-drag,0px)] overflow-y-auto overscroll-contain rounded-t-xl px-[22px] pt-3.5 pb-[calc(28px+env(safe-area-inset-bottom))] outline-none ${
               exit.closing
                 ? 'animate-[ih-cb-drop_220ms_ease-in_forwards] motion-reduce:animate-[ih-fade-out_100ms_ease-in_forwards]'
                 : 'animate-[ih-dock_280ms_cubic-bezier(.32,.72,0,1)] motion-reduce:animate-[ih-fade-in_180ms_ease-out]'
@@ -984,11 +1085,16 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
               onPointerUp={onPointerUp}
               onPointerCancel={onPointerUp}
             >
-              <div className="mx-auto mb-[18px] h-1 w-10 rounded-sm bg-ih-border-strong" aria-hidden="true" />
+              <div
+                className="bg-ih-border-strong mx-auto mb-[18px] h-1 w-10 rounded-sm"
+                aria-hidden="true"
+              />
               {form.status === 'success' ? null : (
                 <>
-                  <Dialog.Title className="pr-10 text-[24px] font-medium tracking-[-0.02em] text-ih-ink">Leaving so soon?</Dialog.Title>
-                  <p className="mt-0.5 font-serif text-[26px] leading-[1.1] text-ih-accent">
+                  <Dialog.Title className="text-ih-ink pr-10 text-[24px] font-medium tracking-[-0.02em]">
+                    Leaving so soon?
+                  </Dialog.Title>
+                  <p className="text-ih-accent mt-0.5 font-serif text-[26px] leading-[1.1]">
                     <em>Tell us what you were looking for.</em>
                   </p>
                 </>
@@ -996,7 +1102,7 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
             </div>
             <Dialog.Close
               aria-label="Close"
-              className="absolute right-px top-[7px] grid h-11 w-11 place-items-center rounded-md text-ih-muted hover:text-ih-ink focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-ih-accent"
+              className="text-ih-muted hover:text-ih-ink focus-visible:outline-ih-accent absolute top-[7px] right-px grid h-11 w-11 place-items-center rounded-md focus-visible:outline-2 focus-visible:-outline-offset-4"
             >
               <CloseIcon size={18} />
             </Dialog.Close>
@@ -1016,7 +1122,9 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
                 className="relative"
               >
                 <Honeypot />
-                <p className="mb-2 mt-[18px] text-[13.5px] font-medium text-ih-ink-2">Share your details for a call-back.</p>
+                <p className="text-ih-ink-2 mt-[18px] mb-2 text-[13.5px] font-medium">
+                  Share your details for a call-back.
+                </p>
                 <div className="flex flex-col gap-2.5">
                   <div>
                     <input
@@ -1064,7 +1172,7 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
                 <div className="mt-2.5">
                   <PhoneGroup
                     form={form}
-                            height="h-12"
+                    height="h-12"
                     id={ids.phone}
                     describedBy={form.errors.phone ? `${ids.err}-phone` : undefined}
                   />
@@ -1085,20 +1193,26 @@ function MobileSheet({ form, exit, deskPhone }: SurfaceProps) {
                     href={form.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackCallback('callback_alt_click', { surface: 'E', channel: 'whatsapp' })}
+                    onClick={() =>
+                      trackCallback('callback_alt_click', { surface: 'E', channel: 'whatsapp' })
+                    }
                     className={`${outlineBtnCls} h-11`}
                   >
                     WhatsApp
                   </a>
                   <a
                     href={form.tel}
-                    onClick={() => trackCallback('callback_alt_click', { surface: 'E', channel: 'tel' })}
+                    onClick={() =>
+                      trackCallback('callback_alt_click', { surface: 'E', channel: 'tel' })
+                    }
                     className={`${outlineBtnCls} h-11`}
                   >
                     Call now
                   </a>
                 </div>
-                <p className="mt-3 text-center text-[12px] text-ih-muted">Your number is used for this call-back only.</p>
+                <p className="text-ih-muted mt-3 text-center text-[12px]">
+                  Your number is used for this call-back only.
+                </p>
               </form>
             )}
           </Dialog.Content>

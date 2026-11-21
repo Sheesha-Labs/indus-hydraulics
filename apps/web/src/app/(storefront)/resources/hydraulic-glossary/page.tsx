@@ -95,7 +95,12 @@ export default async function HydraulicGlossaryPage() {
         ]}
         railNote={{
           title: 'Missing a word?',
-          body: <>If a term you met on a datasheet is not here, send it to us. We add the ones people actually ask about.</>,
+          body: (
+            <>
+              If a term you met on a datasheet is not here, send it to us. We add the ones people
+              actually ask about.
+            </>
+          ),
         }}
         related={resourceEntries().filter((e) => e.key !== 'hydraulic-glossary')}
         cta={shared.cta}
@@ -116,13 +121,13 @@ export default async function HydraulicGlossaryPage() {
           title="Linking to a term."
           lede="Each term has a permanent anchor made from its name. Add it to the page address to send someone straight to the definition."
         >
-          <div className="overflow-x-auto rounded-lg border border-ih-border bg-ih-surface px-5 py-4">
-            <code className="mono whitespace-nowrap text-[13px] text-ih-ink">
+          <div className="border-ih-border bg-ih-surface overflow-x-auto rounded-lg border px-5 py-4">
+            <code className="mono text-ih-ink text-[13px] whitespace-nowrap">
               {urlFor(PATH)}
               <span className="text-ih-accent">#{SAMPLE}</span>
             </code>
           </div>
-          <p className="mt-3 text-[13px] leading-[1.6] text-ih-muted">
+          <p className="text-ih-muted mt-3 text-[13px] leading-[1.6]">
             <a href={`#${SAMPLE}`} className="text-ih-accent hover:underline">
               Try it
             </a>{' '}

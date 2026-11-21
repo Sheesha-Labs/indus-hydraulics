@@ -94,7 +94,7 @@ export default function NavMenuScreen({
             href={viewHref}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-[12.5px] text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1.5 text-[12.5px]"
           >
             View on site <ExternalLink size={12} />
           </Link>
@@ -112,29 +112,29 @@ export default function NavMenuScreen({
     >
       <div className="flex flex-col gap-5">
         {surface.notWired ? (
-          <p className="flex items-start gap-2 rounded-md border border-ih-danger bg-ih-danger-soft px-4 py-3 text-[13px] text-ih-danger-ink">
+          <p className="border-ih-danger bg-ih-danger-soft text-ih-danger-ink flex items-start gap-2 rounded-md border px-4 py-3 text-[13px]">
             <TriangleAlert size={15} className="mt-[2px] shrink-0" />
             <span>{surface.notWired}</span>
           </p>
         ) : !menu.isPublished ? (
-          <p className="rounded-md border border-ih-border bg-ih-bg px-4 py-3 text-[13px] text-ih-muted">
+          <p className="border-ih-border bg-ih-bg text-ih-muted rounded-md border px-4 py-3 text-[13px]">
             This menu is a draft — nothing here is on the storefront yet. Publish it when you are
             ready.
           </p>
         ) : null}
 
-        <div className="tabular-nums text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+        <div className="text-ih-muted text-[11px] tracking-[0.08em] uppercase tabular-nums">
           {counts}
         </div>
 
-        <section className="rounded-lg border border-ih-border bg-ih-surface p-6">
+        <section className="border-ih-border bg-ih-surface rounded-lg border p-6">
           <NavTreeEditor surface={surface} items={items} onChange={setItems} />
         </section>
 
         {error ? (
           <p
             role="alert"
-            className="rounded-md border border-ih-danger bg-ih-danger-soft px-4 py-3 text-[13px] text-ih-danger-ink"
+            className="border-ih-danger bg-ih-danger-soft text-ih-danger-ink rounded-md border px-4 py-3 text-[13px]"
           >
             {error}
           </p>

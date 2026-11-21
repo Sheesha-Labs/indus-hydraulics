@@ -2,7 +2,13 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildServiceLd, serviceAreaBySlug, serviceAreasOrdered, enquiryMailto } from '@indus/domain'
+import {
+  buildBreadcrumbLd,
+  buildServiceLd,
+  serviceAreaBySlug,
+  serviceAreasOrdered,
+  enquiryMailto,
+} from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
@@ -16,7 +22,9 @@ type Props = { params: Promise<{ slug: string }> }
  * from there. See /p/[slug] for the full reasoning and the build-time cost.
  */
 export function generateStaticParams() {
-  return serviceAreasOrdered().slice(0, 2).map((a) => ({ slug: a.slug }))
+  return serviceAreasOrdered()
+    .slice(0, 2)
+    .map((a) => ({ slug: a.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -88,22 +96,26 @@ export default async function ServiceAreaPage({ params }: Props) {
         ]}
       />
 
-      <nav className="mono flex items-center gap-2 pt-8 text-[12px] text-ih-muted">
-        <Link href="/" className="hover:text-ih-ink">Home</Link>
+      <nav className="mono text-ih-muted flex items-center gap-2 pt-8 text-[12px]">
+        <Link href="/" className="hover:text-ih-ink">
+          Home
+        </Link>
         <span className="opacity-40">/</span>
-        <Link href="/locations" className="hover:text-ih-ink">Service areas</Link>
+        <Link href="/locations" className="hover:text-ih-ink">
+          Service areas
+        </Link>
         <span className="opacity-40">/</span>
         <span className="text-ih-ink">{area.name}</span>
       </nav>
 
       <header className="max-w-[760px] py-8">
-        <p className="mono mb-3 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+        <p className="mono text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase">
           {area.region}
         </p>
-        <h1 className="mb-4 font-serif text-[clamp(30px,4.5vw,46px)] font-normal leading-[1.1] tracking-[-0.02em]">
+        <h1 className="mb-4 font-serif text-[clamp(30px,4.5vw,46px)] leading-[1.1] font-normal tracking-[-0.02em]">
           Hydraulic hose service in {area.name}
         </h1>
-        <p className="text-[17px] leading-[1.6] text-ih-muted">{area.intro}</p>
+        <p className="text-ih-muted text-[17px] leading-[1.6]">{area.intro}</p>
       </header>
 
       <div className="grid grid-cols-1 items-start gap-10 pb-12 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -116,7 +128,7 @@ export default async function ServiceAreaPage({ params }: Props) {
               {area.zones.map((zone) => (
                 <li
                   key={zone}
-                  className="mono rounded-md border border-ih-border bg-ih-surface px-3 py-1.5 text-[12px] text-ih-ink-2"
+                  className="mono border-ih-border bg-ih-surface text-ih-ink-2 rounded-md border px-3 py-1.5 text-[12px]"
                 >
                   {zone}
                 </li>
@@ -125,20 +137,22 @@ export default async function ServiceAreaPage({ params }: Props) {
             <h3 className="mb-2.5 text-[16px] font-semibold">What we mostly see here</h3>
             <ul className="flex list-none flex-col gap-2 p-0">
               {area.demand.map((item) => (
-                <li key={item} className="flex gap-3 text-[14.5px] leading-[1.55] text-ih-ink-2">
-                  <span aria-hidden="true" className="mono shrink-0 text-ih-accent">·</span>
+                <li key={item} className="text-ih-ink-2 flex gap-3 text-[14.5px] leading-[1.55]">
+                  <span aria-hidden="true" className="mono text-ih-accent shrink-0">
+                    ·
+                  </span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </section>
 
-          <section className="mb-10 rounded-lg border-l-4 border-ih-accent bg-ih-surface-2 p-5">
-            <p className="mono mb-1.5 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+          <section className="border-ih-accent bg-ih-surface-2 mb-10 rounded-lg border-l-4 p-5">
+            <p className="mono text-ih-muted mb-1.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
               What sets the timeline here
             </p>
-            <p className="mb-1.5 text-[15px] font-semibold text-ih-ink">{area.constraint.label}</p>
-            <p className="text-[14px] leading-[1.6] text-ih-ink-2">{area.constraint.detail}</p>
+            <p className="text-ih-ink mb-1.5 text-[15px] font-semibold">{area.constraint.label}</p>
+            <p className="text-ih-ink-2 text-[14px] leading-[1.6]">{area.constraint.detail}</p>
           </section>
 
           {orderedArticles.length > 0 && (
@@ -151,18 +165,18 @@ export default async function ServiceAreaPage({ params }: Props) {
                   <Link
                     key={article.slug}
                     href={`/blog/${article.slug}`}
-                    className="group flex min-w-0 flex-col rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
+                    className="group border-ih-border bg-ih-surface hover:border-ih-accent flex min-w-0 flex-col rounded-lg border p-4 transition-colors"
                   >
-                    <h3 className="mb-1.5 text-[15px] font-semibold leading-[1.3] text-ih-ink group-hover:text-ih-accent">
+                    <h3 className="text-ih-ink group-hover:text-ih-accent mb-1.5 text-[15px] leading-[1.3] font-semibold">
                       {article.title}
                     </h3>
                     {article.excerpt && (
-                      <p className="line-clamp-2 text-[13px] leading-[1.5] text-ih-muted">
+                      <p className="text-ih-muted line-clamp-2 text-[13px] leading-[1.5]">
                         {article.excerpt}
                       </p>
                     )}
                     {article.readingMinutes && (
-                      <p className="mono mt-auto pt-2 text-[11px] text-ih-muted-2">
+                      <p className="mono text-ih-muted-2 mt-auto pt-2 text-[11px]">
                         {article.readingMinutes} min read
                       </p>
                     )}
@@ -174,25 +188,25 @@ export default async function ServiceAreaPage({ params }: Props) {
         </div>
 
         <aside className="flex min-w-0 flex-col gap-4 lg:sticky lg:top-24">
-          <div className="rounded-lg border border-ih-border bg-ih-surface p-5">
-            <p className="mono mb-2.5 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+          <div className="border-ih-border bg-ih-surface rounded-lg border p-5">
+            <p className="mono text-ih-muted mb-2.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
               What to have ready
             </p>
-            <ul className="flex list-none flex-col gap-1.5 p-0 text-[13.5px] leading-[1.5] text-ih-ink-2">
+            <ul className="text-ih-ink-2 flex list-none flex-col gap-1.5 p-0 text-[13.5px] leading-[1.5]">
               <li>Bore, and the hose grade if the layline is legible</li>
               <li>Both fitting types, and the angle between them</li>
               <li>Overall length</li>
               <li>Whether the site needs a permit or induction</li>
             </ul>
-            <p className="mt-3 text-[12.5px] leading-[1.5] text-ih-muted-2">
+            <p className="text-ih-muted-2 mt-3 text-[12.5px] leading-[1.5]">
               That determines whether the parts are already on the van — which is the difference
               between one visit and two.
             </p>
           </div>
 
           {categories.length > 0 && (
-            <div className="rounded-lg border border-ih-border bg-ih-surface p-5">
-              <p className="mono mb-2.5 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+            <div className="border-ih-border bg-ih-surface rounded-lg border p-5">
+              <p className="mono text-ih-muted mb-2.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 Stocked ranges
               </p>
               <ul className="flex list-none flex-col gap-2 p-0">
@@ -200,7 +214,7 @@ export default async function ServiceAreaPage({ params }: Props) {
                   <li key={c.slug}>
                     <Link
                       href={`/c/${c.slug}`}
-                      className="text-[14px] font-medium text-ih-ink hover:text-ih-accent"
+                      className="text-ih-ink hover:text-ih-accent text-[14px] font-medium"
                     >
                       {c.name} →
                     </Link>
@@ -216,15 +230,18 @@ export default async function ServiceAreaPage({ params }: Props) {
         <LeadCapturePanel
           heading={`Machine down in ${area.name}?`}
           body="Tell us where it is, what failed and whether the site needs a permit. We will tell you plainly whether it is an on-site job or a bay job before anyone travels."
-          whatsappUrl={buildWhatsappHref(settings.contactPhone, `On-site hose service — ${area.name}`)}
+          whatsappUrl={buildWhatsappHref(
+            settings.contactPhone,
+            `On-site hose service — ${area.name}`
+          )}
           emailUrl={enquiryMailto({ subject: `On-site hose service enquiry — ${area.name}` })}
           phone={settings.contactPhone}
           ctaLabel="Email for on-site service"
         />
       </div>
 
-      <nav className="border-t border-ih-border py-8" aria-label="Other service areas">
-        <p className="mono mb-3 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+      <nav className="border-ih-border border-t py-8" aria-label="Other service areas">
+        <p className="mono text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase">
           Other areas we service
         </p>
         <div className="flex flex-wrap gap-2">
@@ -234,7 +251,7 @@ export default async function ServiceAreaPage({ params }: Props) {
               <Link
                 key={a.slug}
                 href={`/locations/${a.slug}`}
-                className="rounded-md border border-ih-border bg-ih-surface px-3.5 py-2 text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+                className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent rounded-md border px-3.5 py-2 text-[13px] transition-colors"
               >
                 {a.name}
               </Link>

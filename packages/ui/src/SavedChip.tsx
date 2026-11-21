@@ -67,8 +67,10 @@ const savedChipVariants = cva(
 /** The two things a non-autosaving editor can truthfully report. */
 export type SavedChipState = 'saved' | 'error'
 
-export interface SavedChipProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'children' | 'color'> {
+export interface SavedChipProps extends Omit<
+  React.HTMLAttributes<HTMLSpanElement>,
+  'children' | 'color'
+> {
   /** When the write landed, or was attempted. A `Date` or an ISO 8601 string. */
   at: Date | string
   state?: SavedChipState

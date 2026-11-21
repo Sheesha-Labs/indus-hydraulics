@@ -9,9 +9,10 @@ import { mediaUrl } from './media'
  * resolves OG image storage paths, and casts to Next's `Metadata` type.
  */
 
-export const BASE_URL = (
-  process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'
-).replace(/\/$/, '')
+export const BASE_URL = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
+  /\/$/,
+  ''
+)
 
 export const SITE_NAME = 'Indus Hydraulics'
 

@@ -40,7 +40,7 @@ export function signPreviewToken(sku: string, ttlMs: number = DEFAULT_TTL_MS): s
 
 export function verifyPreviewToken(
   token: string | undefined | null,
-  sku: string,
+  sku: string
 ): {
   valid: boolean
   reason?: 'missing' | 'malformed' | 'bad-signature' | 'expired' | 'sku-mismatch' | 'wrong-type'

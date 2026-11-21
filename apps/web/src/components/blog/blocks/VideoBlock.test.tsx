@@ -31,7 +31,7 @@ describe('VideoBlockView', () => {
 
   it('renders nothing for a URL that names no YouTube video', () => {
     const html = renderToStaticMarkup(
-      <VideoBlockView block={{ ...block, url: 'https://vimeo.com/123' }} />,
+      <VideoBlockView block={{ ...block, url: 'https://vimeo.com/123' }} />
     )
     expect(html).toBe('')
   })

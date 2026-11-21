@@ -67,14 +67,17 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
     <div className="max-w-[960px]">
       <form
         action={handleAdd}
-        className="rounded-lg border border-ih-border bg-ih-surface p-4 mb-6"
+        className="border-ih-border bg-ih-surface mb-6 rounded-lg border p-4"
       >
-        <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+        <p className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           Add redirect
         </p>
-        <div className="flex gap-3 items-end">
+        <div className="flex items-end gap-3">
           <div className="flex-1">
-            <label htmlFor="redirect-fromPath" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="redirect-fromPath"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               From path
             </label>
             <Input
@@ -82,10 +85,14 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               name="fromPath"
               type="text"
               required
-              placeholder="/old-page" />
+              placeholder="/old-page"
+            />
           </div>
           <div className="flex-1">
-            <label htmlFor="redirect-toPath" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="redirect-toPath"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               To path
             </label>
             <Input
@@ -93,15 +100,17 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               name="toPath"
               type="text"
               required
-              placeholder="/new-page" />
+              placeholder="/new-page"
+            />
           </div>
           <div className="w-24">
-            <label htmlFor="redirect-statusCode" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="redirect-statusCode"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Code
             </label>
-            <Select
-              id="redirect-statusCode"
-              name="statusCode">
+            <Select id="redirect-statusCode" name="statusCode">
               <option value="301">301</option>
               <option value="302">302</option>
               <option value="307">307</option>
@@ -111,27 +120,27 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
           <button
             type="submit"
             disabled={isPending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 shrink-0"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 shrink-0 px-4 text-[12px] tabular-nums disabled:opacity-50"
           >
             Add
           </button>
         </div>
         {error && (
-          <p className="mt-2 tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <p className="text-ih-danger-ink mt-2 text-[11px] tabular-nums" role="alert">
             {error}
           </p>
         )}
       </form>
 
       {redirects.length === 0 ? (
-        <div className="py-16 text-center rounded-lg border border-ih-border">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted text-[13px]">No redirects configured.</p>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>From</Th>
                 <Th>To</Th>
                 <Th>Code</Th>
@@ -144,21 +153,22 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               {redirects.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
                 >
-                  <td className="px-4 py-3 tabular-nums text-[12px] text-ih-muted">
-                    {r.fromPath}
-                  </td>
-                  <td className="px-4 py-3 text-ih-ink-2">{r.toPath}</td>
-                  <td className="px-4 py-3 tabular-nums text-[12px]">{r.statusCode}</td>
-                  <td className="px-4 py-3 text-[12px] tabular-nums">
-                    {r.hits ?? 0}
-                  </td>
-                  <td className="px-4 py-3 tabular-nums text-[11px] text-ih-muted">
+                  <td className="text-ih-muted px-4 py-3 text-[12px] tabular-nums">{r.fromPath}</td>
+                  <td className="text-ih-ink-2 px-4 py-3">{r.toPath}</td>
+                  <td className="px-4 py-3 text-[12px] tabular-nums">{r.statusCode}</td>
+                  <td className="px-4 py-3 text-[12px] tabular-nums">{r.hits ?? 0}</td>
+                  <td className="text-ih-muted px-4 py-3 text-[11px] tabular-nums">
                     {r.lastHitAt ? new Date(r.lastHitAt).toLocaleDateString() : '—'}
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <DeleteButton label={`Delete redirect from ${r.fromPath}`} size="sm" onClick={() => handleDelete(r.id)} disabled={isPending} />
+                    <DeleteButton
+                      label={`Delete redirect from ${r.fromPath}`}
+                      size="sm"
+                      onClick={() => handleDelete(r.id)}
+                      disabled={isPending}
+                    />
                   </td>
                 </tr>
               ))}
@@ -172,7 +182,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-4 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

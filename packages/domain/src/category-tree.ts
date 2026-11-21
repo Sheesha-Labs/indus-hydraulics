@@ -96,7 +96,7 @@ export function groupByParent<T extends CategoryTreeNode>(nodes: T[]): Map<strin
  */
 export function flattenTree<T extends CategoryTreeNode>(
   nodes: T[],
-  collapsed: ReadonlySet<string> = new Set(),
+  collapsed: ReadonlySet<string> = new Set()
 ): FlatCategory<T>[] {
   const byParent = groupByParent(nodes)
   const out: FlatCategory<T>[] = []
@@ -193,9 +193,14 @@ function clamp(value: number, min: number, max: number): number {
  */
 function withoutSubtree<T extends CategoryTreeNode>(
   items: FlatCategory<T>[],
-  activeId: string,
+  activeId: string
 ): FlatCategory<T>[] {
-  const excluded = new Set(descendantIds(items.map((i) => i.node), activeId))
+  const excluded = new Set(
+    descendantIds(
+      items.map((i) => i.node),
+      activeId
+    )
+  )
   return items.filter((i) => !excluded.has(i.node.id))
 }
 
@@ -317,11 +322,14 @@ export function buildMoveOrdering<T extends CategoryTreeNode>({
   if (!active) return []
 
   const byParent = groupByParent(nodes)
-  const oldParentId = active.parentId && nodes.some((n) => n.id === active.parentId) ? active.parentId : null
+  const oldParentId =
+    active.parentId && nodes.some((n) => n.id === active.parentId) ? active.parentId : null
 
   const source = (byParent.get(oldParentId) ?? []).filter((n) => n.id !== activeId)
   const target =
-    oldParentId === newParentId ? source : (byParent.get(newParentId) ?? []).filter((n) => n.id !== activeId)
+    oldParentId === newParentId
+      ? source
+      : (byParent.get(newParentId) ?? []).filter((n) => n.id !== activeId)
 
   const placed = [...target]
   placed.splice(clamp(newIndex, 0, placed.length), 0, active)
@@ -395,7 +403,7 @@ export function arrayMove<T>(list: readonly T[], from: number, to: number): T[] 
  */
 export function matchingWithAncestors<T extends CategoryTreeNode & { slug?: string }>(
   nodes: T[],
-  query: string,
+  query: string
 ): Set<string> {
   const needle = query.trim().toLowerCase()
   if (!needle) return new Set(nodes.map((n) => n.id))

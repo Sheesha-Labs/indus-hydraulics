@@ -20,10 +20,7 @@ import { requireRole, ROLES } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 import { inngest } from '../../../../inngest/client'
 import { slugifyLastPathSegment } from '../../../../lib/scraper/sku'
-import {
-  ingestScrapedProduct,
-  ScraperIngestError,
-} from '../../../../lib/scraper/ingest'
+import { ingestScrapedProduct, ScraperIngestError } from '../../../../lib/scraper/ingest'
 
 const StartScrapeSchema = z
   .object({
@@ -100,7 +97,7 @@ export async function cancelJob(jobId: string): Promise<Result<void>> {
     if (job.status === 'completed' || job.status === 'failed' || job.status === 'cancelled') {
       return fail(
         'PRECONDITION_FAILED',
-        `Job is already ${job.status} — cancel is only valid for queued or running jobs`,
+        `Job is already ${job.status} — cancel is only valid for queued or running jobs`
       )
     }
 
@@ -184,7 +181,7 @@ const SelectionStatusInput = z.enum(['pending', 'selected', 'skipped'])
 
 export async function setRowSelection(
   scrapedProductId: string,
-  status: z.infer<typeof SelectionStatusInput>,
+  status: z.infer<typeof SelectionStatusInput>
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.COMPETITOR_SCRAPE)
@@ -215,7 +212,7 @@ const IngestModeInput = z.discriminatedUnion('mode', [
 
 export async function setRowIngestMode(
   scrapedProductId: string,
-  input: z.infer<typeof IngestModeInput>,
+  input: z.infer<typeof IngestModeInput>
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.COMPETITOR_SCRAPE)
@@ -271,7 +268,7 @@ const UpdateMappingInput = z.object({
 
 export async function updateRowMapping(
   scrapedProductId: string,
-  input: z.infer<typeof UpdateMappingInput>,
+  input: z.infer<typeof UpdateMappingInput>
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.COMPETITOR_SCRAPE)
@@ -343,7 +340,7 @@ export async function searchProductsForAttach(query: string): Promise<Result<Att
         slug: r.slug,
         imageCount: r._count.images,
         brandName: r.brand?.name ?? null,
-      })),
+      }))
     )
   } catch (err) {
     return failFromError(err)
@@ -368,9 +365,7 @@ export async function ingestRow(scrapedProductId: string): Promise<Result<{ prod
   }
 }
 
-export async function skipAllWithExistingSku(
-  jobId: string,
-): Promise<Result<{ skipped: number }>> {
+export async function skipAllWithExistingSku(jobId: string): Promise<Result<{ skipped: number }>> {
   try {
     requireRole(await auth(), ROLES.COMPETITOR_SCRAPE)
 
@@ -389,7 +384,11 @@ export async function skipAllWithExistingSku(
     // Compute effective SKU per row + look them all up in one query.
     const skus = new Map<string, string[]>() // sku → rowIds
     for (const r of rows) {
-      const effective = (r.editedSku?.trim() || r.sourceSku?.trim() || slugifyLastPathSegment(r.sourceUrl)).slice(0, 64)
+      const effective = (
+        r.editedSku?.trim() ||
+        r.sourceSku?.trim() ||
+        slugifyLastPathSegment(r.sourceUrl)
+      ).slice(0, 64)
       if (!effective) continue
       const ids = skus.get(effective) ?? []
       ids.push(r.id)
@@ -422,7 +421,7 @@ export async function skipAllWithExistingSku(
 }
 
 export async function ingestSelected(
-  jobId: string,
+  jobId: string
 ): Promise<Result<{ ingested: number; failed: number; errors: string[] }>> {
   try {
     requireRole(await auth(), ROLES.COMPETITOR_SCRAPE)

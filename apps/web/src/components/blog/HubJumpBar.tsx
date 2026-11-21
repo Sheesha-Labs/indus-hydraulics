@@ -46,7 +46,7 @@ export default function HubJumpBar({ targets }: { targets: JumpTarget[] }) {
   if (targets.length === 0) return null
 
   return (
-    <nav aria-label="On this page" className="sticky top-[73px] z-30 bg-ih-bg sm:top-[107px]">
+    <nav aria-label="On this page" className="bg-ih-bg sticky top-[73px] z-30 sm:top-[107px]">
       <div className="no-scrollbar mx-auto flex max-w-[var(--spacing-max-w)] gap-1 overflow-x-auto px-5 py-3 min-[761px]:overflow-visible min-[761px]:px-8 min-[761px]:py-4 min-[1181px]:px-12">
         {targets.map((target, i) => {
           const on = i === active
@@ -63,7 +63,9 @@ export default function HubJumpBar({ targets }: { targets: JumpTarget[] }) {
             >
               {target.label}
               {target.count !== undefined && (
-                <span className={`font-mono text-[11px] ${on ? 'text-ih-steel' : 'text-ih-muted'}`}>{target.count}</span>
+                <span className={`font-mono text-[11px] ${on ? 'text-ih-steel' : 'text-ih-muted'}`}>
+                  {target.count}
+                </span>
               )}
             </a>
           )

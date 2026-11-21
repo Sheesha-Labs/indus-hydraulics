@@ -36,7 +36,7 @@ export default async function HomepageHeroPage({ params }: Props) {
       breadcrumbs={
         <Link
           href="/admin/pages"
-          className="inline-flex items-center gap-1 text-ih-muted transition-colors hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 transition-colors"
         >
           <ChevronLeft size={12} strokeWidth={1.8} aria-hidden="true" />
           Pages &amp; Blocks
@@ -44,7 +44,7 @@ export default async function HomepageHeroPage({ params }: Props) {
       }
       sub={undefined}
     >
-      <p className="mb-6 max-w-[74ch] text-[13px] leading-[1.55] text-ih-muted">
+      <p className="text-ih-muted mb-6 max-w-[74ch] text-[13px] leading-[1.55]">
         The visual on the right of the homepage hero. With no slides uploaded the hero falls back to
         the built-in placeholder, so removing the last one is safe.
       </p>

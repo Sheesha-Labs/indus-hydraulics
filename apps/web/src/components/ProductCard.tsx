@@ -52,8 +52,8 @@ export default function ProductCard({ product, fallbackImage, inquire }: Product
   const imgUrl = image ? mediaUrl(image.media.storagePath) : null
 
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors focus-within:border-ih-accent hover:border-ih-accent">
-      <div className="relative aspect-square border-b border-ih-border bg-ih-surface-2">
+    <div className="group border-ih-border bg-ih-surface focus-within:border-ih-accent hover:border-ih-accent relative flex flex-col overflow-hidden rounded-lg border transition-colors">
+      <div className="border-ih-border bg-ih-surface-2 relative aspect-square border-b">
         {imgUrl ? (
           <Image
             src={imgUrl}
@@ -63,29 +63,37 @@ export default function ProductCard({ product, fallbackImage, inquire }: Product
             sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
           />
         ) : fallbackImage ? (
-          <CategoryFallbackImage src={fallbackImage.src} categoryName={fallbackImage.categoryName} />
+          <CategoryFallbackImage
+            src={fallbackImage.src}
+            categoryName={fallbackImage.categoryName}
+          />
         ) : (
           <div className="absolute inset-0 grid place-items-center px-4">
-            <span className="text-center font-mono text-[10.5px] tracking-[0.02em] text-ih-muted">{product.sku}</span>
+            <span className="text-ih-muted text-center font-mono text-[10.5px] tracking-[0.02em]">
+              {product.sku}
+            </span>
           </div>
         )}
       </div>
 
-      <div className="flex flex-1 flex-col gap-[7px] px-4 pb-4 pt-3.5">
+      <div className="flex flex-1 flex-col gap-[7px] px-4 pt-3.5 pb-4">
         {/*
           The link wraps only the title but is stretched over the whole card
           with an overlay. That keeps one link per card for assistive tech and
           for crawlers — the accessible name is the product title, not a soup
           of SKU, specs and brand — while the entire card stays clickable.
         */}
-        <h3 className="text-[14px] font-medium leading-[1.35] tracking-[-0.01em]">
-          <Link href={`/p/${product.slug}`} className="after:absolute after:inset-0 after:content-['']">
+        <h3 className="text-[14px] leading-[1.35] font-medium tracking-[-0.01em]">
+          <Link
+            href={`/p/${product.slug}`}
+            className="after:absolute after:inset-0 after:content-['']"
+          >
             {product.title}
           </Link>
         </h3>
 
-        <div className="mt-auto flex flex-wrap gap-x-2.5 gap-y-1 pt-2 text-[12px] text-ih-muted">
-          {product.brand && <b className="font-medium text-ih-ink-2">{product.brand.name}</b>}
+        <div className="text-ih-muted mt-auto flex flex-wrap gap-x-2.5 gap-y-1 pt-2 text-[12px]">
+          {product.brand && <b className="text-ih-ink-2 font-medium">{product.brand.name}</b>}
           {product.specs.slice(0, 2).map((spec) => (
             <span key={spec.label}>
               {spec.value}
@@ -102,7 +110,7 @@ export default function ProductCard({ product, fallbackImage, inquire }: Product
         {inquire ? (
           <ProductEnquiryLink
             product={inquire}
-            className="relative z-10 mt-3 inline-flex h-10 items-center justify-center rounded-[var(--radius-md)] border border-ih-border-strong text-[13px] font-medium text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:text-ih-accent relative z-10 mt-3 inline-flex h-10 items-center justify-center rounded-[var(--radius-md)] border text-[13px] font-medium transition-colors"
           >
             Inquire
           </ProductEnquiryLink>
@@ -139,9 +147,9 @@ export function CategoryFallbackImage({
         sizes={sizes}
       />
       {showTag && (
-      <span className="absolute bottom-2 left-2 max-w-[calc(100%-1rem)] truncate rounded-[3px] border border-ih-border bg-ih-surface px-1.5 py-0.5 font-mono text-[9.5px] uppercase tracking-[0.08em] text-ih-muted">
-        Category image · {categoryName}
-      </span>
+        <span className="border-ih-border bg-ih-surface text-ih-muted absolute bottom-2 left-2 max-w-[calc(100%-1rem)] truncate rounded-[3px] border px-1.5 py-0.5 font-mono text-[9.5px] tracking-[0.08em] uppercase">
+          Category image · {categoryName}
+        </span>
       )}
     </>
   )

@@ -74,7 +74,12 @@ export const MARKETS: Market[] = [
       'Saudi Arabia is the largest of the export lanes we run from Dubai, and the one where paperwork governs the timeline more than freight does. Goods move by road or by air, and the part worth planning around is SABER registration: a shipment with its conformity documents already in order clears; one without them waits, however fast it travelled.',
     leadTime: 'Typically 3 working days from dispatch',
     routes: ['Road freight from Dubai', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'SASO Certificate of Conformity',
       'SABER product and shipment registration',
@@ -96,7 +101,12 @@ export const MARKETS: Market[] = [
       'Oman is a short lane from Dubai and most consignments go by road. The catalogue that moves here is broad rather than specialised — hydraulic hose and fittings for plant and workshops, industrial hose for water, air and chemical service, and the adapters and couplings that go with both.',
     leadTime: 'Typically 3 working days from dispatch',
     routes: ['Road freight from Dubai', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: ['Certificate of Origin, Dubai Chamber attested'],
     context: {
       heading: 'Close enough that road freight usually wins',
@@ -114,7 +124,12 @@ export const MARKETS: Market[] = [
       'Qatar is served from the same Dubai stock as the rest of the Gulf, by road or by air depending on how the schedule sits. Because everything ships from one warehouse, a mixed order — hose, fittings, adapters, valves, lubricants — travels as one consignment with one set of documents rather than several.',
     leadTime: 'Typically 3 working days from dispatch',
     routes: ['Road freight from Dubai', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: ['Certificate of Origin, Dubai Chamber attested'],
     context: {
       heading: 'One consignment instead of five',
@@ -132,7 +147,12 @@ export const MARKETS: Market[] = [
       'Bahrain runs on the same three-day lane as the rest of the Gulf, by road or by air. The practical advantage of buying from Dubai rather than locally is range: the whole catalogue is one order away, so a fitting that would otherwise be a special import is stock.',
     leadTime: 'Typically 3 working days from dispatch',
     routes: ['Road freight from Dubai', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: ['Certificate of Origin, Dubai Chamber attested'],
     context: {
       heading: 'Range, rather than proximity',
@@ -150,7 +170,12 @@ export const MARKETS: Market[] = [
       'Kuwait is the longest of the road lanes we run and the one where air freight is chosen most often when a machine is down. Either way the order is picked from the same Dubai stock, so what is listed on the catalogue is what ships.',
     leadTime: 'Typically 3 working days from dispatch',
     routes: ['Road freight from Dubai', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: ['Certificate of Origin, Dubai Chamber attested'],
     context: {
       heading: 'When the machine is already down',
@@ -168,7 +193,12 @@ export const MARKETS: Market[] = [
       'Iraq runs on the same lane as the Gulf markets, by road or by air. Most of what moves here is replacement rather than project stock — the hose, fittings and adapters that keep drilling, power and construction plant running, ordered against a part number when something has already failed.',
     leadTime: 'Typically 3 working days from dispatch',
     routes: ['Road freight from Dubai', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: ['Certificate of Origin, Dubai Chamber attested'],
     context: {
       heading: 'Ordered against a failure, not a forecast',
@@ -269,7 +299,10 @@ export const MARKETS: Market[] = [
     intro:
       'Rwanda is landlocked, so a consignment arrives through a neighbouring port and completes its journey overland. Our shipping policy quotes landlocked destinations per consignment for that reason — the sea leg is predictable, the inland leg is what varies.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -290,7 +323,10 @@ export const MARKETS: Market[] = [
     intro:
       'Burundi is landlocked and sits at the far end of the regional corridor, so consignments route through a coastal port and travel a long way overland afterwards. That is why the lane is quoted per consignment rather than against a published transit time.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -320,7 +356,7 @@ export const MARKETS: Market[] = [
     ],
     context: {
       heading: 'Worth importing only when it is genuinely hard to source',
-      body: 'We are not the obvious answer for a standard two-wire hose in a market with its own manufacturers and distributors, and pretending otherwise would waste everyone\'s time. Where importing does make sense is the long tail: metallic assemblies in Hastelloy, Inconel or Monel, couplings to standards that are common in the Gulf and CIS but not here, food-grade and chemical-transfer hose in specifications that local stock does not run to. Send the specification rather than the part number for those, because the equivalent we hold may carry a different designation entirely.',
+      body: "We are not the obvious answer for a standard two-wire hose in a market with its own manufacturers and distributors, and pretending otherwise would waste everyone's time. Where importing does make sense is the long tail: metallic assemblies in Hastelloy, Inconel or Monel, couplings to standards that are common in the Gulf and CIS but not here, food-grade and chemical-transfer hose in specifications that local stock does not run to. Send the specification rather than the part number for those, because the equivalent we hold may carry a different designation entirely.",
     },
     position: 13,
   },
@@ -523,7 +559,10 @@ export const MARKETS: Market[] = [
     intro:
       'South Sudan is landlocked and sits a long way inland from any port, so consignments arrive infrequently and the interval between them is measured in weeks rather than days. Oil production and the plant supporting it account for most enquiries.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -565,7 +604,10 @@ export const MARKETS: Market[] = [
     intro:
       'Uganda is landlocked and served through the East African corridor, so a consignment lands at a coastal port and completes its journey by road. Construction plant, agriculture processing and a developing energy sector generate most of the demand.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -586,7 +628,10 @@ export const MARKETS: Market[] = [
     intro:
       'Copper and cobalt extraction dominates industrial demand in DR Congo, and most of it sits deep inland, a long way from any port. That distance shapes both the freight and what is worth putting on an order.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -607,7 +652,10 @@ export const MARKETS: Market[] = [
     intro:
       'Zambia is landlocked, and copper mining on the Copperbelt drives most industrial demand. Plant there runs to planned shutdown cycles, which makes procurement here more schedulable than in most of the markets we ship to.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -628,7 +676,10 @@ export const MARKETS: Market[] = [
     intro:
       'Industrial plant in Zimbabwe tends to be long-lived and mixed in origin, assembled over decades from British, South African, Chinese and Eastern European equipment. The practical result is a workshop dealing with several thread standards at once.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -776,7 +827,10 @@ export const MARKETS: Market[] = [
     intro:
       'Botswana is landlocked and its industrial base is concentrated in mining and mineral processing. Water is scarce and heavily recycled through those plants, which puts more demand on transfer and slurry lines than a first look at the sector would suggest.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -818,7 +872,10 @@ export const MARKETS: Market[] = [
     intro:
       'Gold mining drives industrial demand in Mali, on sites that are landlocked, remote and dusty. Those three conditions together make fluid cleanliness a bigger determinant of component life than almost anything else in the specification.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -839,7 +896,10 @@ export const MARKETS: Market[] = [
     intro:
       'Burkina Faso is landlocked, and inland freight reaches it over routes that behave differently at different times of year. Gold extraction accounts for most of the hydraulics demand, on sites well away from the capital.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -860,7 +920,10 @@ export const MARKETS: Market[] = [
     intro:
       'Niger is landlocked, largely desert, and its industrial activity is concentrated in extraction. Airborne dust is constant rather than occasional, and it finds its way into the places an assembly is most vulnerable.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -944,7 +1007,10 @@ export const MARKETS: Market[] = [
     intro:
       'Chad is landlocked and sits further from a seaport than almost anywhere else we ship to, with oil production as the main industrial driver. A consignment spends far longer on a truck than on a ship.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -965,7 +1031,10 @@ export const MARKETS: Market[] = [
     intro:
       'Ethiopia is landlocked with a large and rapidly expanding manufacturing and construction base. A great deal of the plant is new, and new plant arrives from a wide range of origins with whatever fittings its manufacturer happened to use.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -1178,7 +1247,10 @@ export const MARKETS: Market[] = [
     intro:
       'Bolivia is landlocked and much of its mining sits at extreme altitude — several thousand metres above sea level, where the air is thin enough to change how a hydraulic system behaves. That is a real engineering consideration, not a curiosity.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -1240,7 +1312,7 @@ export const MARKETS: Market[] = [
     summary:
       'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Ecuador from our Dubai warehouse, quoted per consignment with full export documentation.',
     intro:
-      'Much of Ecuador\'s oil production sits in the Amazon basin, on sites that are genuinely difficult to reach and sometimes served by air rather than road. Access constraints shape what is practical to order as much as the specification does.',
+      "Much of Ecuador's oil production sits in the Amazon basin, on sites that are genuinely difficult to reach and sometimes served by air rather than road. Access constraints shape what is practical to order as much as the specification does.",
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight', 'Air freight where the schedule is tighter'],
     incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
@@ -1350,7 +1422,10 @@ export const MARKETS: Market[] = [
     intro:
       'Paraguay is landlocked, and unusually among the markets we ship to, a large share of its freight arrives by river rather than by road. Agricultural processing and materials handling account for most of the hydraulics demand.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then river barge or road', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then river barge or road',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -1435,7 +1510,11 @@ export const MARKETS: Market[] = [
       'Indonesia is an archipelago of thousands of islands with coal and nickel extraction spread widely across them. Where a consignment lands is a bigger decision here than in almost any other market we ship to.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF to the nominated port', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF to the nominated port',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Pre-shipment inspection where the destination requires it',
@@ -1561,7 +1640,10 @@ export const MARKETS: Market[] = [
     intro:
       'Laos is landlocked and its largest industrial installations are hydroelectric. Dam hydraulics look nothing like mobile plant: very large actuators, very long strokes, and duty cycles measured in operations per week rather than per minute.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    routes: [
+      'Sea freight to a regional port, then overland',
+      'Air freight where the schedule is tighter',
+    ],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -1685,7 +1767,7 @@ export const MARKETS: Market[] = [
     summary:
       'Hydraulic hose, fittings, adapters, deck machinery hose and industrial hose supplied to Panama from our Dubai warehouse, quoted per consignment.',
     intro:
-      'Panama\'s industrial hydraulics sit around the canal and the ports serving it — tugs, line handling, deck machinery and terminal equipment. Towing and mooring work loads a hydraulic circuit in a way most industrial duty never does.',
+      "Panama's industrial hydraulics sit around the canal and the ports serving it — tugs, line handling, deck machinery and terminal equipment. Towing and mooring work loads a hydraulic circuit in a way most industrial duty never does.",
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight', 'Air freight where the schedule is tighter'],
     incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
@@ -1878,7 +1960,12 @@ export const MARKETS: Market[] = [
       'Dutch dredging and marine contractors work all over the world, and a good deal of the equipment registered here spends its life somewhere else entirely. That changes where goods should actually be sent.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -1899,7 +1986,12 @@ export const MARKETS: Market[] = [
       'Germany manufactures a large share of the hydraulics in this catalogue, so importing standard product here makes no sense at all. What does make sense involves German equipment that has left Germany.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -1920,7 +2012,12 @@ export const MARKETS: Market[] = [
       'French engineering and construction groups operate extensively across West and North Africa, in several of the markets we already ship to. Procurement for those sites is frequently run from France even though nothing is destined for it.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -1938,7 +2035,7 @@ export const MARKETS: Market[] = [
     summary:
       'Hydraulic hose, fittings, adapters and marine-specification assemblies supplied to Italy from our Dubai warehouse, quoted per consignment.',
     intro:
-      'Italy is a major hose manufacturing country in its own right, and it is also the centre of the world\'s yacht building industry. The second of those has requirements that industrial hydraulics rarely encounters.',
+      "Italy is a major hose manufacturing country in its own right, and it is also the centre of the world's yacht building industry. The second of those has requirements that industrial hydraulics rarely encounters.",
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
     incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
@@ -1959,10 +2056,15 @@ export const MARKETS: Market[] = [
     summary:
       'Hydraulic hose, fittings, adapters and high-temperature transfer hose supplied to Spain from our Dubai warehouse, quoted per consignment.',
     intro:
-      'Spain built much of the world\'s early concentrated solar capacity and continues to engineer it for export, including into the Gulf. Those plants circulate heat transfer fluid at temperatures that rule out ordinary hose entirely.',
+      "Spain built much of the world's early concentrated solar capacity and continues to engineer it for export, including into the Gulf. Those plants circulate heat transfer fluid at temperatures that rule out ordinary hose entirely.",
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -1980,7 +2082,7 @@ export const MARKETS: Market[] = [
     summary:
       'Hydraulic hose, fittings, adapters and process transfer hose supplied to Portugal from our Dubai warehouse, quoted per consignment.',
     intro:
-      'Pulp and paper is among Portugal\'s larger heavy industries, and a pulp mill is an unusually demanding hydraulic environment — hot, wet, chemically active and running continuously for months between shutdowns.',
+      "Pulp and paper is among Portugal's larger heavy industries, and a pulp mill is an unusually demanding hydraulic environment — hot, wet, chemically active and running continuously for months between shutdowns.",
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
     incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
@@ -2068,7 +2170,12 @@ export const MARKETS: Market[] = [
       'Danish industry is closely tied to offshore wind, both in manufacturing and in the service operations that keep installed turbines running. Turbine hydraulics are a peculiar duty: small in volume, awkward to reach and expensive to attend.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -2152,7 +2259,12 @@ export const MARKETS: Market[] = [
       'Austrian engineering has a strong position in ropeways and Alpine infrastructure, exported to mountain and desert resorts alike. Passenger-carrying equipment is governed differently from industrial plant, and that governs the hydraulics too.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -2174,7 +2286,12 @@ export const MARKETS: Market[] = [
       'Swiss engineering has an outsized position in tunnelling, and tunnel boring machines are among the most hydraulically intensive pieces of equipment built. They also work in a place nothing can easily be brought to.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -2216,7 +2333,12 @@ export const MARKETS: Market[] = [
       'Czech machine-building has a long history and a strong export position, particularly in machine tools and heavy equipment. A good deal of that output ends up in markets we already supply.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -2321,7 +2443,12 @@ export const MARKETS: Market[] = [
       'Greek owners control one of the largest merchant fleets in the world, and almost none of it is in Greece at any given moment. Procurement happens in Piraeus; the ship needing the part is somewhere else entirely.',
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight where the schedule allows'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to an agent at a port of call', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to an agent at a port of call',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -2384,8 +2511,17 @@ export const MARKETS: Market[] = [
     intro:
       'Turkey manufactures hydraulics competitively and its contractors build across Central Asia, the Caucasus and North Africa. Both facts point the same way: the useful conversation is rarely about supplying Turkey itself.',
     leadTime: 'Quoted per consignment',
-    routes: ['Air freight', 'Sea freight where the schedule allows', 'Overland where the routing suits'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    routes: [
+      'Air freight',
+      'Sea freight where the schedule allows',
+      'Overland where the routing suits',
+    ],
+    incoterms: [
+      'CIF',
+      'FOB Jebel Ali',
+      'DAP to a project site',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Manufacturer certificate of conformity on request',
@@ -2487,7 +2623,7 @@ export const MARKETS: Market[] = [
     summary:
       'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to North Macedonia from our Dubai warehouse, quoted per consignment.',
     intro:
-      'North Macedonia is landlocked with a manufacturing base concentrated in free-economic zones supplying automotive and electrical assemblers. Those operations run to their parent group\'s standards rather than to local ones.',
+      "North Macedonia is landlocked with a manufacturing base concentrated in free-economic zones supplying automotive and electrical assemblers. Those operations run to their parent group's standards rather than to local ones.",
     leadTime: 'Quoted per consignment',
     routes: ['Air freight', 'Sea freight to a regional port, then overland'],
     incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
@@ -2594,7 +2730,11 @@ export const MARKETS: Market[] = [
     intro:
       'Georgia sits on the transit corridor between the Caspian and the Black Sea, and its ports and pipeline infrastructure handle volumes far beyond what its own economy generates. Transit is the industry.',
     leadTime: 'Quoted per consignment',
-    routes: ['Air freight', 'Sea freight where the schedule allows', 'Overland where the routing suits'],
+    routes: [
+      'Air freight',
+      'Sea freight where the schedule allows',
+      'Overland where the routing suits',
+    ],
     incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -2699,8 +2839,17 @@ export const MARKETS: Market[] = [
     intro:
       'Jordan is the furthest point a truck from our Dubai warehouse reaches: across Saudi Arabia in transit and into the Kingdom at Al-Omari. Heavier cargo goes by sea to Aqaba instead, on the Red Sea, with no canal in the way.',
     leadTime: 'Typically 5–15 working days from dispatch',
-    routes: ['Road freight across Saudi Arabia', 'Sea freight into Aqaba', 'Air freight where the schedule is tighter'],
-    incoterms: ['DAP to the buyer’s site', 'CIF Aqaba', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    routes: [
+      'Road freight across Saudi Arabia',
+      'Sea freight into Aqaba',
+      'Air freight where the schedule is tighter',
+    ],
+    incoterms: [
+      'DAP to the buyer’s site',
+      'CIF Aqaba',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'JSMO conformity where a line is a regulated product',
@@ -2742,7 +2891,11 @@ export const MARKETS: Market[] = [
       'India has one of the deepest domestic hose and fittings industries anywhere, so the case for a Dubai warehouse is narrow and specific: the items domestic distributors do not hold quickly, five to eight days away by sea.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight to Nhava Sheva or Mundra', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF Nhava Sheva or Mundra', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF Nhava Sheva or Mundra',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'BIS licence where a line falls under a Quality Control Order',
@@ -2784,7 +2937,10 @@ export const MARKETS: Market[] = [
     intro:
       'Bangladesh is close on the map and two to three weeks away in practice, because Chattogram is served by feeders out of Colombo and Singapore rather than by the mainline vessels that leave Jebel Ali.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to Chattogram, transhipped', 'Air freight into Dhaka where the schedule is tighter'],
+    routes: [
+      'Sea freight to Chattogram, transhipped',
+      'Air freight into Dhaka where the schedule is tighter',
+    ],
     incoterms: ['CFR or CIF Chattogram', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
@@ -2806,7 +2962,12 @@ export const MARKETS: Market[] = [
       'Sri Lanka is served on direct mainline sailings from Jebel Ali to Colombo, about a week to the quay. It is also a useful place to meet a ship, since so much of the Indian Ocean’s traffic calls there.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight to Colombo', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF Colombo', 'DAP to the buyer’s site', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF Colombo',
+      'DAP to the buyer’s site',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'SLSI import inspection where a line is on the scheme',
@@ -2848,7 +3009,12 @@ export const MARKETS: Market[] = [
       'Benin is reached by sea around the Cape into Cotonou, with an electronic cargo tracking note raised before the vessel arrives and a document set in French that has to agree with the declaration line for line.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight to Cotonou, via the Cape', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF Cotonou', 'DAP to the buyer’s site', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: [
+      'CIF Cotonou',
+      'DAP to the buyer’s site',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
+    ],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'BESC electronic cargo tracking note',
@@ -2870,11 +3036,13 @@ export const MARKETS: Market[] = [
       'Togo is served through Lomé, a deep-water port with mainline calls round the Cape and the head of the road corridor north into the Sahel. A good deal of what lands there is bound somewhere else.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight to Lomé, via the Cape', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF Lomé', 'DAP to the buyer’s site', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
-    conformity: [
-      'Certificate of Origin, Dubai Chamber attested',
-      'Commercial documents in French',
+    incoterms: [
+      'CIF Lomé',
+      'DAP to the buyer’s site',
+      'FOB Jebel Ali',
+      'EXW Dubai for a nominated forwarder',
     ],
+    conformity: ['Certificate of Origin, Dubai Chamber attested', 'Commercial documents in French'],
     context: {
       heading: 'Import or transit, decided before it sails',
       body: 'Lomé serves Burkina Faso, Niger and Mali as well as Togo, and every consignment landed there moves under one of two declarations: entered and cleared in Togo, or declared through it to a country beyond. The choice is made before the container is loaded, because the documents differ and turning an import into a transit consignment at the quay — or the reverse — costs a trip through customs and the time that goes with it. Tell us where the goods will be used rather than where they will land, and we prepare the set for that.',
@@ -2890,12 +3058,12 @@ export const MARKETS: Market[] = [
     intro:
       'Papua New Guinea is the far end of the Malacca lane, transhipped at Singapore onto a feeder for Lae or Port Moresby. The two ports have no road between them, and most of the mines are a long way from either.',
     leadTime: 'Quoted per consignment',
-    routes: ['Sea freight to Lae or Port Moresby, transhipped at Singapore', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF Lae or Port Moresby', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
-    conformity: [
-      'Certificate of Origin, Dubai Chamber attested',
-      'ISPM 15 treated timber packing',
+    routes: [
+      'Sea freight to Lae or Port Moresby, transhipped at Singapore',
+      'Air freight where the schedule is tighter',
     ],
+    incoterms: ['CIF Lae or Port Moresby', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: ['Certificate of Origin, Dubai Chamber attested', 'ISPM 15 treated timber packing'],
     context: {
       heading: 'Plan the leg after the quay with the order',
       body: 'A container landed at Lae is not yet at a mine in the Highlands or on an island in New Ireland, and the last few hundred kilometres can take longer than the sea leg from Singapore. Sites are supplied through their own logistics bases by highway, barge or air, each with its own weight and dimension limits. We plan that leg with the order rather than after the vessel arrives, pack to the limits of the mode that will carry it, and quote delivered terms only where the inland leg can genuinely be committed. Consolidating into one consignment saves more here than on any other lane we run.',

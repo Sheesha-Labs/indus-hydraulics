@@ -54,11 +54,7 @@ export function formatPrice(input: FormatPriceInput): FormattedPrice {
   const safeList = Math.max(0, listPrice)
   const primary = formatOne(safeList, locale, currency)
 
-  if (
-    compareAtPrice === null ||
-    compareAtPrice === undefined ||
-    compareAtPrice <= safeList
-  ) {
+  if (compareAtPrice === null || compareAtPrice === undefined || compareAtPrice <= safeList) {
     return { primary, compareAt: undefined, isQuoteOnly: false }
   }
 

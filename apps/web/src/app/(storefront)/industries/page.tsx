@@ -48,6 +48,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
     // Section order, visibility and copy, edited under Pages & Blocks.
     getMasterPageContent('industries'),
   ])
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
 
   const hero = content.values('hero')
@@ -67,15 +68,15 @@ export default async function IndustriesIndexPage({ params }: Props) {
   const sections: Record<string, ReactNode> = {
     hero: (
       /* Hero */
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-14 pb-10">
-        <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-3">
+      <div className="mx-auto max-w-[1440px] px-5 pt-14 pb-10 sm:px-8 xl:px-12">
+        <div className="text-ih-muted mb-3 font-mono text-[11px] tracking-[0.16em] uppercase">
           {t(str(hero, 'eyebrow'))}
         </div>
-        <div className="grid grid-cols-1 gap-12 items-end lg:grid-cols-[1.2fr_1fr]">
-          <h1 className="text-[clamp(40px,5vw,64px)] tracking-[-0.03em] leading-[1.05] font-semibold">
+        <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-[1.2fr_1fr]">
+          <h1 className="text-[clamp(40px,5vw,64px)] leading-[1.05] font-semibold tracking-[-0.03em]">
             {t(str(hero, 'heading'))}
           </h1>
-          <p className="text-[17px] text-ih-muted leading-[1.55] max-w-[520px]">
+          <p className="text-ih-muted max-w-[520px] text-[17px] leading-[1.55]">
             {t(str(hero, 'body'))}
           </p>
         </div>
@@ -86,16 +87,16 @@ export default async function IndustriesIndexPage({ params }: Props) {
       statRows.length > 0 ? (
         /* Stats strip */
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-          <div className="grid grid-cols-2 border-t border-b border-ih-border sm:grid-cols-4">
+          <div className="border-ih-border grid grid-cols-2 border-t border-b sm:grid-cols-4">
             {statRows.map((stat, i) => (
               <div
                 key={`${stat.label ?? ''}-${i}`}
-                className={`px-6 py-5 ${i < statRows.length - 1 ? 'border-r border-ih-border' : ''}`}
+                className={`px-6 py-5 ${i < statRows.length - 1 ? 'border-ih-border border-r' : ''}`}
               >
-                <div className="font-mono text-[36px] tracking-[-0.03em] font-medium">
+                <div className="font-mono text-[36px] font-medium tracking-[-0.03em]">
                   {t(stat.value ?? '')}
                 </div>
-                <div className="font-mono text-[11px] text-ih-muted tracking-[0.08em] uppercase mt-1">
+                <div className="text-ih-muted mt-1 font-mono text-[11px] tracking-[0.08em] uppercase">
                   {stat.label}
                 </div>
               </div>
@@ -106,20 +107,20 @@ export default async function IndustriesIndexPage({ params }: Props) {
 
     grid: (
       /* Industry cards grid */
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-12 pb-20">
+      <div className="mx-auto max-w-[1440px] px-5 py-12 pb-20 sm:px-8 xl:px-12">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((ind) => (
             <Link
               key={ind.slug}
               href={`/industries/${ind.slug}`}
-              className="group flex flex-col overflow-hidden border border-ih-border hover:border-ih-accent transition-colors"
+              className="group border-ih-border hover:border-ih-accent flex flex-col overflow-hidden border transition-colors"
             >
               {/* Dark hero band. With a hero photograph, the photo sits under a
                   bottom-weighted scrim (the CaseHero figcaption treatment) so
                   the white tagline, name and chips keep their contrast; without
                   one, the band keeps its gradient. */}
               <div
-                className="relative isolate overflow-hidden px-7 py-8 flex min-h-[160px] flex-col gap-3 text-white"
+                className="relative isolate flex min-h-[160px] flex-col gap-3 overflow-hidden px-7 py-8 text-white"
                 style={{ background: ind.gradient ?? DEFAULT_GRADIENT }}
               >
                 {ind.heroImage && (
@@ -142,7 +143,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
                 >
                   {ind.tagline ?? ''}
                 </div>
-                <h2 className="text-[22px] font-semibold tracking-[-0.015em] leading-tight">
+                <h2 className="text-[22px] leading-tight font-semibold tracking-[-0.015em]">
                   {ind.name}
                 </h2>
                 <div className="mt-auto flex flex-wrap gap-1.5">
@@ -158,15 +159,17 @@ export default async function IndustriesIndexPage({ params }: Props) {
               </div>
 
               {/* Card body */}
-              <div className="px-7 py-5 bg-ih-surface flex flex-col gap-3 flex-1">
+              <div className="bg-ih-surface flex flex-1 flex-col gap-3 px-7 py-5">
                 {ind.description && (
-                  <p className="text-[13px] text-ih-muted leading-[1.6]">{ind.description}</p>
+                  <p className="text-ih-muted text-[13px] leading-[1.6]">{ind.description}</p>
                 )}
-                <div className="flex items-center justify-between mt-auto pt-3 border-t border-ih-border">
-                  <span className="font-mono text-[11px] text-ih-muted">
+                <div className="border-ih-border mt-auto flex items-center justify-between border-t pt-3">
+                  <span className="text-ih-muted font-mono text-[11px]">
                     {str(grid, 'cta_label')}
                   </span>
-                  <span className="font-mono text-[12px] text-ih-accent group-hover:underline">→</span>
+                  <span className="text-ih-accent font-mono text-[12px] group-hover:underline">
+                    →
+                  </span>
                 </div>
               </div>
             </Link>
@@ -177,19 +180,19 @@ export default async function IndustriesIndexPage({ params }: Props) {
 
     cta: (
       /* Bottom CTA */
-      <div className="border-t border-ih-border bg-ih-surface py-14">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 flex flex-wrap items-center justify-between gap-8">
+      <div className="border-ih-border bg-ih-surface border-t py-14">
+        <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-8 px-5 sm:px-8 xl:px-12">
           <div>
-            <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-2">
+            <h2 className="mb-2 text-[28px] font-semibold tracking-[-0.02em]">
               {t(str(cta, 'heading'))}
             </h2>
-            <p className="text-[14px] text-ih-muted">{t(str(cta, 'body'))}</p>
+            <p className="text-ih-muted text-[14px]">{t(str(cta, 'body'))}</p>
           </div>
           <div className="flex flex-wrap gap-3 sm:shrink-0">
             {str(cta, 'primary_cta_label') ? (
               <Link
                 href={str(cta, 'primary_cta_href') ?? '/contact'}
-                className="h-11 px-6 flex items-center bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap"
+                className="bg-ih-accent flex h-11 items-center px-6 text-[14px] font-medium whitespace-nowrap text-white transition-opacity hover:opacity-90"
               >
                 {str(cta, 'primary_cta_label')}
               </Link>
@@ -197,7 +200,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
             {str(cta, 'secondary_cta_label') ? (
               <Link
                 href={str(cta, 'secondary_cta_href') ?? '/contact'}
-                className="h-11 px-5 flex items-center border border-ih-border text-[14px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors whitespace-nowrap"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-11 items-center border px-5 text-[14px] whitespace-nowrap transition-colors"
               >
                 {str(cta, 'secondary_cta_label')}
               </Link>
@@ -211,7 +214,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
   return (
     <div>
       {content.order.map((key) =>
-        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null
       )}
     </div>
   )

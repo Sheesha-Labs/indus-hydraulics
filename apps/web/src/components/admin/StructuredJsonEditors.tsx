@@ -23,7 +23,7 @@ export function ChipsEditor({ name, defaultValue }: { name: string; defaultValue
     <div className="flex flex-col gap-2">
       <input type="hidden" name={name} value={JSON.stringify(items)} />
       {items.map((chip, i) => (
-        <div key={i} className="flex gap-2 items-center">
+        <div key={i} className="flex items-center gap-2">
           <input
             type="text"
             value={chip}
@@ -33,15 +33,19 @@ export function ChipsEditor({ name, defaultValue }: { name: string; defaultValue
               update(next)
             }}
             placeholder='e.g. "API 6A / 16A RATED"'
-            className="rounded-md flex-1 h-9 px-3 border border-ih-border text-[13px]"
+            className="border-ih-border h-9 flex-1 rounded-md border px-3 text-[13px]"
           />
-          <DeleteButton label="Remove item" className="h-9 w-9" onClick={() => update(items.filter((_, idx) => idx !== i))} />
+          <DeleteButton
+            label="Remove item"
+            className="h-9 w-9"
+            onClick={() => update(items.filter((_, idx) => idx !== i))}
+          />
         </div>
       ))}
       <button
         type="button"
         onClick={() => update([...items, ''])}
-        className="rounded-md self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
+        className="border-ih-border bg-ih-surface hover:border-ih-accent h-8 self-start rounded-md border px-3 text-[11px]"
       >
         + Add chip
       </button>
@@ -54,7 +58,7 @@ export function ChipsEditor({ name, defaultValue }: { name: string; defaultValue
 export function StatsEditor({ name, defaultValue }: { name: string; defaultValue: string }) {
   const initial = useMemo(
     () => parseObjArray<{ value: string; label: string }>(defaultValue, { value: '', label: '' }),
-    [defaultValue],
+    [defaultValue]
   )
   const [items, setItems] = useState(initial)
   const update = (next: typeof items) => setItems(next)
@@ -63,7 +67,7 @@ export function StatsEditor({ name, defaultValue }: { name: string; defaultValue
     <div className="flex flex-col gap-2">
       <input type="hidden" name={name} value={JSON.stringify(items)} />
       {items.map((row, i) => (
-        <div key={i} className="grid grid-cols-[1fr_2fr_auto] gap-2 items-center">
+        <div key={i} className="grid grid-cols-[1fr_2fr_auto] items-center gap-2">
           <input
             type="text"
             value={row.value}
@@ -73,7 +77,7 @@ export function StatsEditor({ name, defaultValue }: { name: string; defaultValue
               update(next)
             }}
             placeholder='value e.g. "220+"'
-            className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+            className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
           />
           <input
             type="text"
@@ -84,15 +88,19 @@ export function StatsEditor({ name, defaultValue }: { name: string; defaultValue
               update(next)
             }}
             placeholder='label e.g. "OIL & GAS CUSTOMERS"'
-            className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+            className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
           />
-          <DeleteButton label="Remove item" className="h-9 w-9" onClick={() => update(items.filter((_, idx) => idx !== i))} />
+          <DeleteButton
+            label="Remove item"
+            className="h-9 w-9"
+            onClick={() => update(items.filter((_, idx) => idx !== i))}
+          />
         </div>
       ))}
       <button
         type="button"
         onClick={() => update([...items, { value: '', label: '' }])}
-        className="rounded-md self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
+        className="border-ih-border bg-ih-surface hover:border-ih-accent h-8 self-start rounded-md border px-3 text-[11px]"
       >
         + Add stat
       </button>
@@ -113,9 +121,9 @@ export function DeliveryAreasEditor({
     () =>
       parseObjArray<{ category: string; title: string; description: string; skuCount: string }>(
         defaultValue,
-        { category: '', title: '', description: '', skuCount: '' },
+        { category: '', title: '', description: '', skuCount: '' }
       ),
-    [defaultValue],
+    [defaultValue]
   )
   const [items, setItems] = useState(initial)
   const update = (next: typeof items) => setItems(next)
@@ -124,8 +132,8 @@ export function DeliveryAreasEditor({
     <div className="flex flex-col gap-3">
       <input type="hidden" name={name} value={JSON.stringify(items)} />
       {items.map((row, i) => (
-        <div key={i} className="rounded-lg border border-ih-border p-3 flex flex-col gap-2">
-          <div className="grid grid-cols-[2fr_3fr_1fr_auto] gap-2 items-start">
+        <div key={i} className="border-ih-border flex flex-col gap-2 rounded-lg border p-3">
+          <div className="grid grid-cols-[2fr_3fr_1fr_auto] items-start gap-2">
             <input
               type="text"
               value={row.category}
@@ -135,7 +143,7 @@ export function DeliveryAreasEditor({
                 update(next)
               }}
               placeholder='category e.g. "WELLHEAD & BOP"'
-              className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+              className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
             />
             <input
               type="text"
@@ -146,7 +154,7 @@ export function DeliveryAreasEditor({
                 update(next)
               }}
               placeholder="title"
-              className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+              className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
             />
             <input
               type="text"
@@ -157,9 +165,13 @@ export function DeliveryAreasEditor({
                 update(next)
               }}
               placeholder='SKU count e.g. "78 SKUs"'
-              className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+              className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
             />
-            <DeleteButton label="Remove item" className="h-9 w-9" onClick={() => update(items.filter((_, idx) => idx !== i))} />
+            <DeleteButton
+              label="Remove item"
+              className="h-9 w-9"
+              onClick={() => update(items.filter((_, idx) => idx !== i))}
+            />
           </div>
           <textarea
             value={row.description}
@@ -170,7 +182,7 @@ export function DeliveryAreasEditor({
             }}
             placeholder="description"
             rows={2}
-            className="rounded-md px-3 py-2 border border-ih-border text-[13px] resize-vertical"
+            className="border-ih-border resize-vertical rounded-md border px-3 py-2 text-[13px]"
           />
         </div>
       ))}
@@ -179,7 +191,7 @@ export function DeliveryAreasEditor({
         onClick={() =>
           update([...items, { category: '', title: '', description: '', skuCount: '' }])
         }
-        className="rounded-md self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
+        className="border-ih-border bg-ih-surface hover:border-ih-accent h-8 self-start rounded-md border px-3 text-[11px]"
       >
         + Add delivery area
       </button>
@@ -189,13 +201,7 @@ export function DeliveryAreasEditor({
 
 // ── supportBlock: { eyebrow, headline, description, bullets[], cta, image?, imageAlt? } ───
 
-export function SupportBlockEditor({
-  name,
-  defaultValue,
-}: {
-  name: string
-  defaultValue: string
-}) {
+export function SupportBlockEditor({ name, defaultValue }: { name: string; defaultValue: string }) {
   const initial = useMemo(() => {
     try {
       const parsed = JSON.parse(defaultValue || 'null') as unknown
@@ -243,7 +249,7 @@ export function SupportBlockEditor({
   }, [state])
 
   return (
-    <div className="rounded-lg border border-ih-border p-3 flex flex-col gap-3">
+    <div className="border-ih-border flex flex-col gap-3 rounded-lg border p-3">
       <input type="hidden" name={name} value={serialised} />
       <div className="grid grid-cols-2 gap-3">
         <input
@@ -251,14 +257,14 @@ export function SupportBlockEditor({
           value={state.eyebrow}
           onChange={(e) => setState({ ...state, eyebrow: e.target.value })}
           placeholder='eyebrow e.g. "PLANT-DOWN SUPPORT"'
-          className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+          className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
         />
         <input
           type="text"
           value={state.cta}
           onChange={(e) => setState({ ...state, cta: e.target.value })}
           placeholder='CTA label e.g. "Request plant-down support →"'
-          className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+          className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
         />
       </div>
       <input
@@ -266,14 +272,14 @@ export function SupportBlockEditor({
         value={state.headline}
         onChange={(e) => setState({ ...state, headline: e.target.value })}
         placeholder="headline"
-        className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+        className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
       />
       <textarea
         value={state.description}
         onChange={(e) => setState({ ...state, description: e.target.value })}
         placeholder="description"
         rows={3}
-        className="rounded-md px-3 py-2 border border-ih-border text-[13px] resize-vertical"
+        className="border-ih-border resize-vertical rounded-md border px-3 py-2 text-[13px]"
       />
       <div className="grid grid-cols-2 gap-3">
         <input
@@ -281,22 +287,22 @@ export function SupportBlockEditor({
           value={state.image}
           onChange={(e) => setState({ ...state, image: e.target.value })}
           placeholder="image URL (4:3 panel beside the copy)"
-          className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+          className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
         />
         <input
           type="text"
           value={state.imageAlt}
           onChange={(e) => setState({ ...state, imageAlt: e.target.value })}
           placeholder="image alt text"
-          className="rounded-md h-9 px-3 border border-ih-border text-[13px]"
+          className="border-ih-border h-9 rounded-md border px-3 text-[13px]"
         />
       </div>
       <div className="flex flex-col gap-2">
-        <span className="text-[11px] tabular-nums uppercase tracking-[0.1em] text-ih-muted">
+        <span className="text-ih-muted text-[11px] tracking-[0.1em] uppercase tabular-nums">
           Bullets
         </span>
         {state.bullets.map((b, i) => (
-          <div key={i} className="flex gap-2 items-center">
+          <div key={i} className="flex items-center gap-2">
             <input
               type="text"
               value={b}
@@ -306,7 +312,7 @@ export function SupportBlockEditor({
                 setState({ ...state, bullets: next })
               }}
               placeholder="single bullet"
-              className="rounded-md flex-1 h-9 px-3 border border-ih-border text-[13px]"
+              className="border-ih-border h-9 flex-1 rounded-md border px-3 text-[13px]"
             />
             <DeleteButton
               label="Remove bullet"
@@ -320,7 +326,7 @@ export function SupportBlockEditor({
         <button
           type="button"
           onClick={() => setState({ ...state, bullets: [...state.bullets, ''] })}
-          className="rounded-md self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
+          className="border-ih-border bg-ih-surface hover:border-ih-accent h-8 self-start rounded-md border px-3 text-[11px]"
         >
           + Add bullet
         </button>

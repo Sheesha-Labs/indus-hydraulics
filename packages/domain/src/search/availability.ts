@@ -31,13 +31,9 @@ export const AVAILABILITY_LABELS: Record<AvailabilityMode, string> = {
   ships_24h: 'Ships in 24h',
 }
 
-export function parseAvailabilityParam(
-  raw: string | undefined | null,
-): AvailabilityMode | null {
+export function parseAvailabilityParam(raw: string | undefined | null): AvailabilityMode | null {
   if (!raw) return null
-  return AVAILABILITY_MODES.includes(raw as AvailabilityMode)
-    ? (raw as AvailabilityMode)
-    : null
+  return AVAILABILITY_MODES.includes(raw as AvailabilityMode) ? (raw as AvailabilityMode) : null
 }
 
 /**
@@ -47,7 +43,7 @@ export function parseAvailabilityParam(
  */
 export function availabilityToWhere(
   mode: AvailabilityMode | null,
-  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE
 ): Record<string, unknown> | null {
   if (!mode) return null
   if (mode === 'in_stock') {
@@ -69,7 +65,11 @@ export function availabilityToWhere(
                 status: 'active',
                 NOT: {
                   category: {
-                    OR: [{ slug: exempt }, { parent: { slug: exempt } }, { parent: { parent: { slug: exempt } } }],
+                    OR: [
+                      { slug: exempt },
+                      { parent: { slug: exempt } },
+                      { parent: { parent: { slug: exempt } } },
+                    ],
                   },
                 },
               },
@@ -96,7 +96,7 @@ export function availabilityToWhere(
  * still accepts the value, so an old bookmark keeps working.
  */
 export function offeredAvailabilityModes(
-  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE
 ): ReadonlyArray<AvailabilityMode> {
   if (posture.exStock && posture.deliveryDays > 1) return ['in_stock']
   return AVAILABILITY_MODES

@@ -27,10 +27,15 @@ export default function ServicesTopicRail({
   chipOrder,
 }: Props) {
   return (
-    <nav aria-label="Service categories" className="border-b border-ih-border py-3.5">
-      <ul className="-mx-1 flex flex-nowrap gap-1.5 overflow-x-auto px-1 py-0.5 [mask-image:linear-gradient(90deg,#000_0,#000_calc(100%-48px),transparent_100%)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <nav aria-label="Service categories" className="border-ih-border border-b py-3.5">
+      <ul className="-mx-1 flex flex-nowrap gap-1.5 overflow-x-auto [mask-image:linear-gradient(90deg,#000_0,#000_calc(100%-48px),transparent_100%)] px-1 py-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <li className="shrink-0">
-          <Chip href="/services" active={activeCategory === null} label="All services" count={totalCount} />
+          <Chip
+            href="/services"
+            active={activeCategory === null}
+            label="All services"
+            count={totalCount}
+          />
         </li>
         {chipOrder.map((cat) => (
           <li key={cat} className="shrink-0">
@@ -67,7 +72,7 @@ function Chip({
     <Link
       href={href}
       aria-current={active ? 'page' : undefined}
-      className={`inline-flex h-10 items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 text-[13px] font-medium ${cls}`}
+      className={`inline-flex h-10 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-medium whitespace-nowrap ${cls}`}
     >
       {label}
       <span className="text-[11.5px] tabular-nums opacity-60">{count}</span>

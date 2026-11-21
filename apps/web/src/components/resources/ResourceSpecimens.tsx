@@ -23,11 +23,14 @@ import { columnPath } from './chart-geometry'
 
 function ThreadSpecimen() {
   const family = THREAD_FAMILIES.find((f) => f.id === 'unf-jic-orb-flareless')
-  const rows = family && family.kind === 'thread' ? family.rows.filter((r) => [4, 6, 8, 12].includes(r.dash ?? 0)) : []
+  const rows =
+    family && family.kind === 'thread'
+      ? family.rows.filter((r) => [4, 6, 8, 12].includes(r.dash ?? 0))
+      : []
   return (
     <table className="w-full font-mono text-[11.5px] tabular-nums">
       <thead>
-        <tr className="text-[9px] uppercase tracking-[0.1em] text-ih-muted">
+        <tr className="text-ih-muted text-[9px] tracking-[0.1em] uppercase">
           <th className="pb-2 text-left font-medium">Dash</th>
           <th className="pb-2 text-left font-medium">Thread</th>
           <th className="pb-2 text-right font-medium">Male O.D.</th>
@@ -36,11 +39,13 @@ function ThreadSpecimen() {
       </thead>
       <tbody>
         {rows.map((row) => (
-          <tr key={row.thread} className="border-t border-ih-border">
-            <td className="py-1.5 text-ih-ink">-{row.dash}</td>
-            <td className="py-1.5 text-ih-ink-2">{row.thread}</td>
-            <td className="py-1.5 text-right text-ih-ink-2">{row.maleOd.toFixed(3)}</td>
-            <td className="py-1.5 text-right text-ih-muted">{convertLength(row.maleOd, 'in').millimetres.toFixed(2)}</td>
+          <tr key={row.thread} className="border-ih-border border-t">
+            <td className="text-ih-ink py-1.5">-{row.dash}</td>
+            <td className="text-ih-ink-2 py-1.5">{row.thread}</td>
+            <td className="text-ih-ink-2 py-1.5 text-right">{row.maleOd.toFixed(3)}</td>
+            <td className="text-ih-muted py-1.5 text-right">
+              {convertLength(row.maleOd, 'in').millimetres.toFixed(2)}
+            </td>
           </tr>
         ))}
       </tbody>
@@ -49,29 +54,36 @@ function ThreadSpecimen() {
 }
 
 function CrimpSpecimen() {
-  const row = CRIMP_SPECS.find((r) => r.hose === 'R2S' && r.dash === 8 && r.series === 'BW') ?? CRIMP_SPECS[0]
+  const row =
+    CRIMP_SPECS.find((r) => r.hose === 'R2S' && r.dash === 8 && r.series === 'BW') ?? CRIMP_SPECS[0]
   if (!row) return null
   return (
     <div className="flex h-full flex-col justify-between">
       <div className="flex flex-wrap gap-1.5">
-        {[crimpHose(row.hose).name, `-${row.dash} · ${row.bore}`, crimpSeries(row.series).name].map((chip) => (
-          <span
-            key={chip}
-            className="mono inline-flex h-6 items-center rounded-full border border-ih-border bg-ih-surface px-2.5 text-[10.5px] text-ih-ink-2"
-          >
-            {chip}
-          </span>
-        ))}
+        {[crimpHose(row.hose).name, `-${row.dash} · ${row.bore}`, crimpSeries(row.series).name].map(
+          (chip) => (
+            <span
+              key={chip}
+              className="mono border-ih-border bg-ih-surface text-ih-ink-2 inline-flex h-6 items-center rounded-full border px-2.5 text-[10.5px]"
+            >
+              {chip}
+            </span>
+          )
+        )}
       </div>
       <div>
-        <p className="mono text-[9px] uppercase tracking-[0.12em] text-ih-muted">Finished crimp diameter</p>
-        <p className="mt-1.5 font-mono text-[34px] leading-none tracking-[-0.03em] text-ih-ink">
-          {row.crimpIn.toFixed(2)}
-          <span className="ml-1.5 text-[14px] tracking-normal text-ih-muted">in</span>
-          <span className="ml-4 text-[20px] text-ih-ink-2">{row.crimpMm.toFixed(2)}</span>
-          <span className="ml-1 text-[12px] tracking-normal text-ih-muted">mm</span>
+        <p className="mono text-ih-muted text-[9px] tracking-[0.12em] uppercase">
+          Finished crimp diameter
         </p>
-        <p className="mono mt-2 text-[10.5px] text-ih-muted">{CRIMP_DIE_POSITIONS[row.die].label}</p>
+        <p className="text-ih-ink mt-1.5 font-mono text-[34px] leading-none tracking-[-0.03em]">
+          {row.crimpIn.toFixed(2)}
+          <span className="text-ih-muted ml-1.5 text-[14px] tracking-normal">in</span>
+          <span className="text-ih-ink-2 ml-4 text-[20px]">{row.crimpMm.toFixed(2)}</span>
+          <span className="text-ih-muted ml-1 text-[12px] tracking-normal">mm</span>
+        </p>
+        <p className="mono text-ih-muted mt-2 text-[10.5px]">
+          {CRIMP_DIE_POSITIONS[row.die].label}
+        </p>
       </div>
     </div>
   )
@@ -98,7 +110,10 @@ function PressureSpecimen() {
           const x = i * slot + (slot - bar) / 2
           return (
             <g key={row.dash}>
-              <path d={columnPath(x, plot, bar, (psi / ceiling) * plot)} className="fill-ih-accent" />
+              <path
+                d={columnPath(x, plot, bar, (psi / ceiling) * plot)}
+                className="fill-ih-accent"
+              />
               <text
                 x={i * slot + slot / 2}
                 y={plot + 12}
@@ -111,7 +126,7 @@ function PressureSpecimen() {
           )
         })}
       </svg>
-      <p className="mono mt-2 text-[10.5px] text-ih-muted">
+      <p className="mono text-ih-muted mt-2 text-[10.5px]">
         NPTF, carbon steel · {(rows[0]?.psi.nptf ?? 0).toLocaleString('en-GB')} →{' '}
         {(rows[rows.length - 1]?.psi.nptf ?? 0).toLocaleString('en-GB')} psi
       </p>
@@ -124,16 +139,23 @@ function GlossarySpecimen() {
   if (!term) return null
   return (
     <div className="flex h-full flex-col justify-center">
-      <p className="mono text-[9px] uppercase tracking-[0.12em] text-ih-muted">D · term</p>
-      <p className="mt-2 font-serif text-[30px] leading-none tracking-[-0.01em] text-ih-ink">{term.term}</p>
-      <p className="mt-3 line-clamp-3 text-[12.5px] leading-[1.55] text-ih-ink-2">{term.definition}</p>
+      <p className="mono text-ih-muted text-[9px] tracking-[0.12em] uppercase">D · term</p>
+      <p className="text-ih-ink mt-2 font-serif text-[30px] leading-none tracking-[-0.01em]">
+        {term.term}
+      </p>
+      <p className="text-ih-ink-2 mt-3 line-clamp-3 text-[12.5px] leading-[1.55]">
+        {term.definition}
+      </p>
     </div>
   )
 }
 
 export default function ResourceSpecimen({ resource }: { resource: ResourceKey }) {
   return (
-    <div aria-hidden="true" className="h-[196px] border-b border-ih-border bg-ih-surface-2 px-6 py-5">
+    <div
+      aria-hidden="true"
+      className="border-ih-border bg-ih-surface-2 h-[196px] border-b px-6 py-5"
+    >
       {resource === 'thread-chart' ? <ThreadSpecimen /> : null}
       {resource === 'crimp-specifications' ? <CrimpSpecimen /> : null}
       {resource === 'fitting-pressure-ratings' ? <PressureSpecimen /> : null}

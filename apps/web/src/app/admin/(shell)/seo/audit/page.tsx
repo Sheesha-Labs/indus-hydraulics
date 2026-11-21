@@ -18,7 +18,7 @@ export default async function SeoAuditPage() {
 
   // Resolve actor names in one round-trip rather than N+1.
   const actorIds = Array.from(
-    new Set(rows.map((r) => r.actorId).filter((id): id is string => !!id)),
+    new Set(rows.map((r) => r.actorId).filter((id): id is string => !!id))
   )
   const actors = actorIds.length
     ? await db.staffUser.findMany({
@@ -30,20 +30,20 @@ export default async function SeoAuditPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="rounded-lg border border-ih-border py-16 text-center max-w-[800px]">
+      <div className="border-ih-border max-w-[800px] rounded-lg border py-16 text-center">
         <p className="text-ih-muted text-[13px]">
-          No audit entries yet. Edits made from the SEO entity drawer or
-          infrastructure pages will start populating this log.
+          No audit entries yet. Edits made from the SEO entity drawer or infrastructure pages will
+          start populating this log.
         </p>
       </div>
     )
   }
 
   return (
-    <div className="rounded-lg border border-ih-border overflow-hidden max-w-full">
+    <div className="border-ih-border max-w-full overflow-hidden rounded-lg border">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-ih-border bg-ih-surface-2">
+          <tr className="border-ih-border bg-ih-surface-2 border-b">
             <Th>When</Th>
             <Th>Actor</Th>
             <Th>Entity</Th>
@@ -55,17 +55,17 @@ export default async function SeoAuditPage() {
         </thead>
         <tbody>
           {rows.map((row) => {
-            const actorName = row.actorId ? actorById.get(row.actorId) ?? null : null
+            const actorName = row.actorId ? (actorById.get(row.actorId) ?? null) : null
             const isRevert = row.reason === 'reverted'
             const isInfra = row.entityType.startsWith('global:') || row.entityType === 'redirect'
             return (
               <tr
                 key={row.id}
-                className={`border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2 ${
+                className={`border-ih-border hover:bg-ih-surface-2 border-b align-top last:border-0 ${
                   isInfra ? 'bg-[oklch(0.98_0.02_70)]/40' : ''
                 }`}
               >
-                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
+                <td className="text-ih-muted px-3 py-3 text-[11px] whitespace-nowrap tabular-nums">
                   {row.createdAt.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -73,33 +73,29 @@ export default async function SeoAuditPage() {
                     minute: '2-digit',
                   })}
                 </td>
-                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-ink-2">
+                <td className="text-ih-ink-2 px-3 py-3 text-[11px] tabular-nums">
                   {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
-                <td className="px-3 py-3 tabular-nums text-[11px]">
+                <td className="px-3 py-3 text-[11px] tabular-nums">
                   <div className={isInfra ? 'text-ih-warning-ink' : ''}>{row.entityType}</div>
                   {row.entityId && (
-                    <div className="text-ih-muted text-[11px] truncate max-w-[160px]">
+                    <div className="text-ih-muted max-w-[160px] truncate text-[11px]">
                       {row.entityId}
                     </div>
                   )}
                 </td>
-                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-ink-2">
-                  {row.field}
-                </td>
-                <td className="px-3 py-3 text-[12px] max-w-[480px]">
+                <td className="text-ih-ink-2 px-3 py-3 text-[11px] tabular-nums">{row.field}</td>
+                <td className="max-w-[480px] px-3 py-3 text-[12px]">
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="tabular-nums text-[11px] text-ih-muted whitespace-pre-wrap break-all">
+                    <div className="text-ih-muted text-[11px] break-all whitespace-pre-wrap tabular-nums">
                       {formatValue(row.before)}
                     </div>
-                    <div className="tabular-nums text-[11px] text-ih-ink-2 whitespace-pre-wrap break-all">
+                    <div className="text-ih-ink-2 text-[11px] break-all whitespace-pre-wrap tabular-nums">
                       {formatValue(row.after)}
                     </div>
                   </div>
                 </td>
-                <td className="px-3 py-3 text-[12px] text-ih-muted">
-                  {row.reason ?? '—'}
-                </td>
+                <td className="text-ih-muted px-3 py-3 text-[12px]">{row.reason ?? '—'}</td>
                 <td className="px-3 py-3 text-right whitespace-nowrap">
                   {!isRevert && (
                     <RevertButton
@@ -125,7 +121,7 @@ function formatValue(v: unknown): string {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

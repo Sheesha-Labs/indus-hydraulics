@@ -75,7 +75,9 @@ const DEFAULT_DURATION: Record<Tone, number> = {
 export function useToast(): ToastContextValue {
   const ctx = React.useContext(ToastContext)
   if (!ctx) {
-    throw new Error('useToast must be used inside a <ToastProvider>. Mount one above this component.')
+    throw new Error(
+      'useToast must be used inside a <ToastProvider>. Mount one above this component.'
+    )
   }
   return ctx
 }
@@ -195,7 +197,7 @@ function ToastRegion({
     <div
       // `pointer-events-none` on the region and `auto` on each toast keeps the
       // empty column from swallowing clicks on whatever sits beneath it.
-      className="pointer-events-none fixed bottom-0 right-0 z-[60] flex w-full max-w-[380px] flex-col gap-2 p-4"
+      className="pointer-events-none fixed right-0 bottom-0 z-[60] flex w-full max-w-[380px] flex-col gap-2 p-4"
       onMouseEnter={onPause}
       onMouseLeave={onResume}
       onFocusCapture={onPause}
@@ -210,26 +212,31 @@ function ToastRegion({
             role={t.tone === 'danger' ? 'alert' : 'status'}
             aria-live={t.tone === 'danger' ? 'assertive' : 'polite'}
             className={cn(
-              'pointer-events-auto flex items-start gap-2.5 rounded-md border border-ih-border border-l-2 bg-ih-surface p-3 shadow-2',
-              'font-sans text-[13px] text-ih-ink',
+              'border-ih-border bg-ih-surface shadow-2 pointer-events-auto flex items-start gap-2.5 rounded-md border border-l-2 p-3',
+              'text-ih-ink font-sans text-[13px]',
               'animate-[ih-toast-in_160ms_cubic-bezier(0.32,0.72,0,1)] motion-reduce:animate-none',
               tone.border
             )}
           >
-            <Icon size={14} strokeWidth={2} aria-hidden="true" className={cn('mt-0.5 shrink-0', tone.icon)} />
+            <Icon
+              size={14}
+              strokeWidth={2}
+              aria-hidden="true"
+              className={cn('mt-0.5 shrink-0', tone.icon)}
+            />
             <div className="flex min-w-0 flex-1 flex-col gap-0.5">
-              <span className="font-medium leading-[1.4]">{t.title}</span>
+              <span className="leading-[1.4] font-medium">{t.title}</span>
               {t.description ? (
-                <span className="text-[12.5px] leading-[1.45] text-ih-muted">{t.description}</span>
+                <span className="text-ih-muted text-[12.5px] leading-[1.45]">{t.description}</span>
               ) : null}
             </div>
             <button
               type="button"
               onClick={() => onDismiss(t.id)}
               className={cn(
-                'inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-sm text-ih-muted',
-                'transition-colors hover:bg-ih-surface-2 hover:text-ih-ink',
-                'outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft'
+                'text-ih-muted inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-sm',
+                'hover:bg-ih-surface-2 hover:text-ih-ink transition-colors',
+                'focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft outline-none focus-visible:ring-[3px]'
               )}
             >
               <X size={12} strokeWidth={1.8} aria-hidden="true" />

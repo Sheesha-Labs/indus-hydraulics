@@ -11,7 +11,12 @@ import { AuthorizationError, ForbiddenError } from './rbac'
  */
 export type Result<T = void> =
   | { success: true; data: T }
-  | { success: false; code: ResultErrorCode; message: string; fieldErrors?: Record<string, string[]> }
+  | {
+      success: false
+      code: ResultErrorCode
+      message: string
+      fieldErrors?: Record<string, string[]>
+    }
 
 export type ResultErrorCode =
   | 'UNAUTHORIZED'
@@ -57,11 +62,21 @@ export function failFromError(err: unknown): Result<never> {
     return fail('FORBIDDEN', err.message)
   }
   // Prisma unique constraint
-  if (err && typeof err === 'object' && 'code' in err && (err as { code?: string }).code === 'P2002') {
+  if (
+    err &&
+    typeof err === 'object' &&
+    'code' in err &&
+    (err as { code?: string }).code === 'P2002'
+  ) {
     return fail('CONFLICT', 'A record with these values already exists')
   }
   // Prisma not found
-  if (err && typeof err === 'object' && 'code' in err && (err as { code?: string }).code === 'P2025') {
+  if (
+    err &&
+    typeof err === 'object' &&
+    'code' in err &&
+    (err as { code?: string }).code === 'P2025'
+  ) {
     return fail('NOT_FOUND', 'Record not found')
   }
   throw err

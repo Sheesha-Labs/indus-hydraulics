@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!market) return {}
   // Per-country meta from Pages & Blocks; blank keeps the built-in pair.
   const meta = marketMeta(
-    (await getSubPageContent('market', { name: market.name, slug: market.slug })).values,
+    (await getSubPageContent('market', { name: market.name, slug: market.slug })).values
   )
   return pageMetadata({
     title: meta.title ?? `Hydraulic & Industrial Hose Supplier in ${market.name}`,

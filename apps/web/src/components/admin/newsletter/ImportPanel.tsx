@@ -34,7 +34,11 @@ function columnLabel(rows: string[][], mapping: ColumnMapping, c: number): strin
   const head = mapping.header ? (rows[0]?.[c] ?? '').trim() : ''
   const sample = (rows[mapping.header ? 1 : 0]?.[c] ?? '').trim()
   const letter = String.fromCharCode(65 + (c % 26))
-  return [`Column ${letter}`, head ? `“${head.slice(0, 30)}”` : '', sample ? `e.g. ${sample.slice(0, 30)}` : '']
+  return [
+    `Column ${letter}`,
+    head ? `“${head.slice(0, 30)}”` : '',
+    sample ? `e.g. ${sample.slice(0, 30)}` : '',
+  ]
     .filter(Boolean)
     .join(' · ')
 }
@@ -54,7 +58,10 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
   const [result, setResult] = useState<{ ok: boolean; text: string } | null>(null)
   const [pending, start] = useTransition()
 
-  const preview = useMemo(() => (rows && mapping ? contactsFromRows(rows, mapping) : null), [rows, mapping])
+  const preview = useMemo(
+    () => (rows && mapping ? contactsFromRows(rows, mapping) : null),
+    [rows, mapping]
+  )
   const width = rows ? columnCount(rows) : 0
 
   async function onFile(file: File | undefined) {
@@ -86,7 +93,11 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
     setMapping((m) => (m ? { ...m, [key]: value } : m))
   }
 
-  function columnSelect(key: 'email' | 'name' | 'first' | 'last', label: string, optional: boolean) {
+  function columnSelect(
+    key: 'email' | 'name' | 'first' | 'last',
+    label: string,
+    optional: boolean
+  ) {
     if (!rows || !mapping) return null
     const value = mapping[key]
     return (
@@ -130,7 +141,7 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
           type="file"
           accept=".csv,.txt,.xlsx,.xls,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"
           onChange={(e) => void onFile(e.target.files?.[0])}
-          className="block text-[13.5px] text-ih-ink file:mr-3 file:h-8 file:cursor-pointer file:rounded-lg file:border file:border-ih-border-strong file:bg-ih-surface file:px-2.5 file:text-[13.5px] file:font-medium file:text-ih-ink hover:file:border-ih-accent"
+          className="text-ih-ink file:border-ih-border-strong file:bg-ih-surface file:text-ih-ink hover:file:border-ih-accent block text-[13.5px] file:mr-3 file:h-8 file:cursor-pointer file:rounded-lg file:border file:px-2.5 file:text-[13.5px] file:font-medium"
         />
       </Field>
 
@@ -156,55 +167,75 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
 
           <dl className="grid grid-cols-2 gap-x-6 gap-y-1 text-[13.5px] sm:grid-cols-4">
             <div>
-              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Addresses</dt>
-              <dd className="tabular-nums text-ih-ink">{preview.contacts.length.toLocaleString('en-US')}</dd>
+              <dt className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Addresses
+              </dt>
+              <dd className="text-ih-ink tabular-nums">
+                {preview.contacts.length.toLocaleString('en-US')}
+              </dd>
             </div>
             <div>
-              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Not addresses</dt>
-              <dd className="tabular-nums text-ih-ink">{preview.invalid.length.toLocaleString('en-US')}</dd>
+              <dt className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Not addresses
+              </dt>
+              <dd className="text-ih-ink tabular-nums">
+                {preview.invalid.length.toLocaleString('en-US')}
+              </dd>
             </div>
             <div>
-              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Duplicates</dt>
-              <dd className="tabular-nums text-ih-ink">{preview.duplicates.toLocaleString('en-US')}</dd>
+              <dt className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Duplicates
+              </dt>
+              <dd className="text-ih-ink tabular-nums">
+                {preview.duplicates.toLocaleString('en-US')}
+              </dd>
             </div>
             <div>
-              <dt className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">Over the limit</dt>
-              <dd className="tabular-nums text-ih-ink">{preview.truncated.toLocaleString('en-US')}</dd>
+              <dt className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Over the limit
+              </dt>
+              <dd className="text-ih-ink tabular-nums">
+                {preview.truncated.toLocaleString('en-US')}
+              </dd>
             </div>
           </dl>
-          <p className="text-[13px] text-ih-muted">
-            Addresses already on this list, and any that unsubscribed or bounced before, are left out when you import — the
-            server checks and reports them.
+          <p className="text-ih-muted text-[13px]">
+            Addresses already on this list, and any that unsubscribed or bounced before, are left
+            out when you import — the server checks and reports them.
           </p>
 
           {preview.contacts.length > 0 ? (
-            <div className="overflow-x-auto rounded-[10px] border border-ih-border">
+            <div className="border-ih-border overflow-x-auto rounded-[10px] border">
               <table className="w-full text-[13px]">
                 <caption className="sr-only">First rows as they will be imported</caption>
                 <thead>
-                  <tr className="border-b border-ih-border bg-ih-surface-2 text-left tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+                  <tr className="border-ih-border bg-ih-surface-2 text-ih-muted border-b text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
                     <th className="px-3 py-2">Email</th>
                     <th className="px-3 py-2">Name</th>
                   </tr>
                 </thead>
                 <tbody>
                   {preview.contacts.slice(0, 5).map((c) => (
-                    <tr key={c.email} className="border-b border-ih-border last:border-0">
-                      <td className="px-3 py-1.5 tabular-nums text-ih-ink">{c.email}</td>
-                      <td className="px-3 py-1.5 text-ih-ink-2">{c.name || '—'}</td>
+                    <tr key={c.email} className="border-ih-border border-b last:border-0">
+                      <td className="text-ih-ink px-3 py-1.5 tabular-nums">{c.email}</td>
+                      <td className="text-ih-ink-2 px-3 py-1.5">{c.name || '—'}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
           ) : (
-            <Callout tone="warning">No addresses in that column. Pick the column that holds the email addresses.</Callout>
+            <Callout tone="warning">
+              No addresses in that column. Pick the column that holds the email addresses.
+            </Callout>
           )}
 
           {preview.invalid.length > 0 ? (
-            <details className="text-[13px] text-ih-ink-2">
-              <summary className="cursor-pointer">Rows that will be skipped ({preview.invalid.length})</summary>
-              <ul className="mt-2 max-h-48 overflow-y-auto tabular-nums text-[12px]">
+            <details className="text-ih-ink-2 text-[13px]">
+              <summary className="cursor-pointer">
+                Rows that will be skipped ({preview.invalid.length})
+              </summary>
+              <ul className="mt-2 max-h-48 overflow-y-auto text-[12px] tabular-nums">
                 {preview.invalid.slice(0, 200).map((i) => (
                   <li key={i.line}>
                     Row {i.line}: {i.reason}
@@ -215,7 +246,11 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
             </details>
           ) : null}
 
-          <Checkbox label={consentText} checked={consent} onChange={(e) => setConsent(e.target.checked)} />
+          <Checkbox
+            label={consentText}
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+          />
 
           <div>
             <Button
@@ -225,7 +260,9 @@ export default function ImportPanel({ listId, action, consentText }: Props) {
               onClick={submit}
               disabled={pending || !consent || preview.contacts.length === 0}
             >
-              {pending ? 'Importing…' : `Import ${preview.contacts.length.toLocaleString('en-US')} addresses`}
+              {pending
+                ? 'Importing…'
+                : `Import ${preview.contacts.length.toLocaleString('en-US')} addresses`}
             </Button>
           </div>
         </>

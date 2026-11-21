@@ -128,10 +128,13 @@ async function main() {
   // ── 2. DIXOIL / DIXCHEM trade names ──────────────────────────────────────
   console.log(`\n── tradenames ──`)
   const tnSpecs = await db.productSpec.findMany({
-    where: { product: { categoryId: { in: catIds } }, OR: [
-      { value: { contains: 'DIXOIL', mode: 'insensitive' } },
-      { value: { contains: 'DIXCHEM', mode: 'insensitive' } },
-    ] },
+    where: {
+      product: { categoryId: { in: catIds } },
+      OR: [
+        { value: { contains: 'DIXOIL', mode: 'insensitive' } },
+        { value: { contains: 'DIXCHEM', mode: 'insensitive' } },
+      ],
+    },
     select: { id: true, value: true, product: { select: { sku: true } } },
   })
   for (const s of tnSpecs) {
@@ -141,10 +144,13 @@ async function main() {
     )
   }
   const tnProducts = await db.product.findMany({
-    where: { categoryId: { in: catIds }, OR: [
-      { descriptionLong: { contains: 'DIXOIL', mode: 'insensitive' } },
-      { descriptionLong: { contains: 'DIXCHEM', mode: 'insensitive' } },
-    ] },
+    where: {
+      categoryId: { in: catIds },
+      OR: [
+        { descriptionLong: { contains: 'DIXOIL', mode: 'insensitive' } },
+        { descriptionLong: { contains: 'DIXCHEM', mode: 'insensitive' } },
+      ],
+    },
     select: { id: true, sku: true, descriptionLong: true },
   })
   for (const p of tnProducts) {

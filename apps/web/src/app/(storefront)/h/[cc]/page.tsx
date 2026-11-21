@@ -46,11 +46,7 @@ export function generateStaticParams() {
  */
 export const dynamicParams = true
 
-export default async function HomeGeoVariantPage({
-  params,
-}: {
-  params: Promise<{ cc: string }>
-}) {
+export default async function HomeGeoVariantPage({ params }: { params: Promise<{ cc: string }> }) {
   const { cc } = await params
   return <HomeView geoCode={cc} />
 }

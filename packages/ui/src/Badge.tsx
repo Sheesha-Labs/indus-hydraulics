@@ -39,8 +39,7 @@ const badgeVariants = cva(
 )
 
 export interface BadgeProps
-  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>,
-    VariantProps<typeof badgeVariants> {
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, 'color'>, VariantProps<typeof badgeVariants> {
   /** Prepends a 6px currentColor dot. */
   dot?: boolean
 }
@@ -48,7 +47,12 @@ export interface BadgeProps
 export function Badge({ className, kind, square, dot, children, ...props }: BadgeProps) {
   return (
     <span className={cn(badgeVariants({ kind, square }), className)} {...props}>
-      {dot ? <span aria-hidden="true" className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-current" /> : null}
+      {dot ? (
+        <span
+          aria-hidden="true"
+          className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-current"
+        />
+      ) : null}
       {children}
     </span>
   )

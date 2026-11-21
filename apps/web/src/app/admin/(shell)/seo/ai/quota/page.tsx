@@ -21,7 +21,7 @@ export default async function AiQuotaPage() {
 
   if (quotas.length === 0) {
     return (
-      <div className="rounded-lg border border-ih-border py-16 text-center max-w-[800px]">
+      <div className="border-ih-border max-w-[800px] rounded-lg border py-16 text-center">
         <p className="text-ih-muted text-[13px]">
           No AI usage yet. Quota rows are created on first use.
         </p>
@@ -30,10 +30,10 @@ export default async function AiQuotaPage() {
   }
 
   return (
-    <div className="rounded-lg border border-ih-border overflow-hidden max-w-[800px]">
+    <div className="border-ih-border max-w-[800px] overflow-hidden rounded-lg border">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-ih-border bg-ih-surface-2">
+          <tr className="border-ih-border bg-ih-surface-2 border-b">
             <Th>User</Th>
             <Th>Spent</Th>
             <Th>Cap</Th>
@@ -43,9 +43,8 @@ export default async function AiQuotaPage() {
         <tbody>
           {quotas.map((q) => {
             const u = userById.get(q.staffUserId)
-            const pct = q.monthlyUsdCapMicros > 0
-              ? (q.spentThisMonthMicros / q.monthlyUsdCapMicros) * 100
-              : 0
+            const pct =
+              q.monthlyUsdCapMicros > 0 ? (q.spentThisMonthMicros / q.monthlyUsdCapMicros) * 100 : 0
             /*
               Plain CSS values: this feeds an inline style, where Tailwind's
               underscore-for-space arbitrary-value syntax is not valid CSS.
@@ -63,21 +62,23 @@ export default async function AiQuotaPage() {
             return (
               <tr
                 key={q.id}
-                className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
               >
                 <td className="px-3 py-3">
                   <div className="text-ih-ink-2">{u?.name ?? '(unknown)'}</div>
-                  <div className="tabular-nums text-[11px] text-ih-muted">{u?.email ?? q.staffUserId}</div>
+                  <div className="text-ih-muted text-[11px] tabular-nums">
+                    {u?.email ?? q.staffUserId}
+                  </div>
                 </td>
                 <td className="min-w-[220px] px-3 py-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex-1 h-2 bg-ih-surface-2 overflow-hidden">
+                    <div className="bg-ih-surface-2 h-2 flex-1 overflow-hidden">
                       <div
                         className="h-full"
                         style={{ width: `${Math.min(100, pct)}%`, background: tone }}
                       />
                     </div>
-                    <span className="text-[11px] text-ih-muted tabular-nums whitespace-nowrap">
+                    <span className="text-ih-muted text-[11px] whitespace-nowrap tabular-nums">
                       ${(q.spentThisMonthMicros / 1_000_000).toFixed(2)}
                     </span>
                   </div>
@@ -85,7 +86,7 @@ export default async function AiQuotaPage() {
                 <td className="px-3 py-3 text-[12px] tabular-nums">
                   ${(q.monthlyUsdCapMicros / 1_000_000).toFixed(0)}
                 </td>
-                <td className="px-3 py-3 tabular-nums text-[11px] text-ih-muted">
+                <td className="text-ih-muted px-3 py-3 text-[11px] tabular-nums">
                   {q.resetAt.toLocaleDateString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -103,7 +104,7 @@ export default async function AiQuotaPage() {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

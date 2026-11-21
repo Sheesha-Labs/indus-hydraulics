@@ -36,18 +36,13 @@ export type SaveSectionsResult =
  * constrains it — the value arrives as a plain string — so this is the
  * boundary, and it runs on save rather than on render.
  */
-function sanitiseRichText(
-  pageKey: string,
-  sections: StoredSection[],
-): StoredSection[] {
+function sanitiseRichText(pageKey: string, sections: StoredSection[]): StoredSection[] {
   const def = getMasterPage(pageKey)
   if (!def) return sections
   return sections.map((section) => {
     const sectionDef = def.sections.find((d) => d.key === section.key)
     if (!sectionDef) return section
-    const richKeys = sectionDef.fields
-      .filter((f) => f.kind === 'richtext')
-      .map((f) => f.key)
+    const richKeys = sectionDef.fields.filter((f) => f.kind === 'richtext').map((f) => f.key)
     if (richKeys.length === 0) return section
     const values = { ...section.values }
     for (const key of richKeys) {
@@ -61,7 +56,7 @@ function sanitiseRichText(
 async function persist(
   pageKey: string,
   sections: StoredSection[],
-  staffId: string,
+  staffId: string
 ): Promise<SaveSectionsResult> {
   const def = getMasterPage(pageKey)
   if (!def) return { status: 'error', message: 'Unknown page.' }
@@ -115,7 +110,7 @@ async function editorId(): Promise<{ id: string } | { error: SaveSectionsResult 
 
 export async function saveMasterPage(
   pageKey: string,
-  sections: StoredSection[],
+  sections: StoredSection[]
 ): Promise<SaveSectionsResult> {
   const editor = await editorId()
   if ('error' in editor) return editor.error

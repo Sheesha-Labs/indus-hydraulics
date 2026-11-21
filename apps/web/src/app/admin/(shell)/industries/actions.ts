@@ -33,10 +33,30 @@ async function uniqueSlug(base: string, ignoreId?: string): Promise<string> {
 
 const CreateIndustrySchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(120),
-  slug: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : '')),
-  description: z.string().trim().max(2000).optional().transform((v) => (v && v.length ? v : null)),
-  seoTitle: z.string().trim().max(180).optional().transform((v) => (v && v.length ? v : null)),
-  seoDescription: z.string().trim().max(320).optional().transform((v) => (v && v.length ? v : null)),
+  slug: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : '')),
+  description: z
+    .string()
+    .trim()
+    .max(2000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  seoTitle: z
+    .string()
+    .trim()
+    .max(180)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  seoDescription: z
+    .string()
+    .trim()
+    .max(320)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isPublished: z.boolean().default(false),
 })
 
@@ -76,9 +96,24 @@ const UpdateIndustrySchema = z.object({
   id: z.string().uuid(),
   name: z.string().trim().min(1).max(120),
   slug: z.string().trim().min(1).max(80),
-  description: z.string().trim().max(2000).optional().transform((v) => (v && v.length ? v : null)),
-  seoTitle: z.string().trim().max(180).optional().transform((v) => (v && v.length ? v : null)),
-  seoDescription: z.string().trim().max(320).optional().transform((v) => (v && v.length ? v : null)),
+  description: z
+    .string()
+    .trim()
+    .max(2000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  seoTitle: z
+    .string()
+    .trim()
+    .max(180)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
+  seoDescription: z
+    .string()
+    .trim()
+    .max(320)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isPublished: z.boolean().default(false),
 })
 

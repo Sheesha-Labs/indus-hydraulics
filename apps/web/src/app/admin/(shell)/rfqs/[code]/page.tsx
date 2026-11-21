@@ -75,7 +75,11 @@ export default async function AdminRfqDetailPage({ params }: Props) {
       lines: {
         include: {
           product: {
-            select: { sku: true, title: true, images: { take: 1, orderBy: { position: 'asc' }, include: { media: true } } },
+            select: {
+              sku: true,
+              title: true,
+              images: { take: 1, orderBy: { position: 'asc' }, include: { media: true } },
+            },
           },
         },
         orderBy: { position: 'asc' },
@@ -94,7 +98,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
       id: att.id,
       filename: att.media.originalFilename,
       href: await signedUrlFor(att.media.storagePath),
-    })),
+    }))
   )
 
   const [engineers, settings] = await Promise.all([
@@ -110,11 +114,13 @@ export default async function AdminRfqDetailPage({ params }: Props) {
   // Compose preview-of-totals values for the SendQuoteComposer
   const currentSubtotal = rfq.lines.reduce(
     (sum, l) => sum + l.requestedQty * Number(l.engineerUnitPrice ?? 0),
-    0,
+    0
   )
   const isUaeShipTo = rfq.shipToAddress?.countryCode?.toUpperCase() === 'AE'
   const defaultVatRatePct = isUaeShipTo ? Number(settings?.defaultVatRatePct ?? 5) : 0
-  const canCompose = ['engineer_review', 'engineer_questions_pending', 'quote_sent'].includes(rfq.status)
+  const canCompose = ['engineer_review', 'engineer_questions_pending', 'quote_sent'].includes(
+    rfq.status
+  )
 
   return (
     <AdminPageShell
@@ -141,21 +147,20 @@ export default async function AdminRfqDetailPage({ params }: Props) {
             advancing the RFQ.
           */}
           <StatusBadge status={rfq.status} />
-          <span className="tabular-nums text-[11px] text-ih-muted">
+          <span className="text-ih-muted text-[11px] tabular-nums">
             {URGENCY_LABEL[rfq.urgency] ?? rfq.urgency}
           </span>
           <Link
             href={`${ADMIN_PREFIX}/rfqs`}
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             ← RFQ Queue
           </Link>
         </>
       }
     >
-
       {/* Status action buttons + quote preview link */}
-      <div className="flex flex-wrap items-center gap-2 mb-6 pb-6 border-b border-ih-border">
+      <div className="border-ih-border mb-6 flex flex-wrap items-center gap-2 border-b pb-6">
         {validTransitions.map((transition) => (
           <form
             key={transition}
@@ -166,7 +171,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           >
             <button
               type="submit"
-              className={`h-9 px-4 tabular-nums text-[12px] transition-colors ${TRANSITION_STYLES[transition] ?? 'border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2'}`}
+              className={`h-9 px-4 text-[12px] tabular-nums transition-colors ${TRANSITION_STYLES[transition] ?? 'border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 border'}`}
             >
               {TRANSITION_LABELS[transition] ?? transition}
             </button>
@@ -176,7 +181,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           href={`/api/rfqs/${rfq.code}/preview-pdf`}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-md h-9 px-4 ml-auto inline-flex items-center gap-1.5 border border-ih-border tabular-nums text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+          className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 ml-auto inline-flex h-9 items-center gap-1.5 rounded-md border px-4 text-[12px] tabular-nums transition-colors"
           title="Open the quote PDF preview in a new tab. Uses current line prices and store defaults."
         >
           Preview Quote PDF →
@@ -185,31 +190,33 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
       {/* Issued quotes (revisions history) — show only after the first send */}
       {rfq.quotes.length > 0 ? (
-        <div className="mb-6 overflow-hidden rounded-lg border border-ih-border">
-          <div className="px-4 py-2 bg-ih-surface-2 border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="border-ih-border mb-6 overflow-hidden rounded-lg border">
+          <div className="bg-ih-surface-2 border-ih-border text-ih-muted border-b px-4 py-2 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             Issued quotes
           </div>
           {rfq.quotes.map((q) => (
             <div
               key={q.id}
-              className="grid grid-cols-[1fr_140px_120px_140px_auto] gap-3 items-center px-4 py-3 border-b border-ih-border last:border-0 text-[13px]"
+              className="border-ih-border grid grid-cols-[1fr_140px_120px_140px_auto] items-center gap-3 border-b px-4 py-3 text-[13px] last:border-0"
             >
               <div>
-                <div className="tabular-nums text-[13px] text-ih-ink">
+                <div className="text-ih-ink text-[13px] tabular-nums">
                   {q.code}
-                  {q.revision > 1 ? <span className="text-ih-muted ml-2">R{q.revision}</span> : null}
+                  {q.revision > 1 ? (
+                    <span className="text-ih-muted ml-2">R{q.revision}</span>
+                  ) : null}
                 </div>
-                <div className="tabular-nums text-[11px] text-ih-muted-2 mt-0.5">
+                <div className="text-ih-muted-2 mt-0.5 text-[11px] tabular-nums">
                   Sent {q.sentAt ? formatDayMonthYear(q.sentAt) : '—'}
                 </div>
               </div>
-              <div className="text-right text-ih-ink-2 tabular-nums text-[12px]">
+              <div className="text-ih-ink-2 text-right text-[12px] tabular-nums">
                 {formatAed(Number(q.total))}
               </div>
-              <div className="text-right text-ih-muted tabular-nums text-[11px]">
+              <div className="text-ih-muted text-right text-[11px] tabular-nums">
                 Net {q.termsValidityDays}d
               </div>
-              <div className="text-right text-ih-muted tabular-nums text-[11px]">
+              <div className="text-ih-muted text-right text-[11px] tabular-nums">
                 {q.expiresAt ? `exp ${formatDayMonthYear(q.expiresAt)}` : '—'}
               </div>
               <div className="text-right">
@@ -218,12 +225,12 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     href={`/api/quotes/${q.code}/pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="tabular-nums text-[11px] text-ih-accent hover:underline"
+                    className="text-ih-accent text-[11px] tabular-nums hover:underline"
                   >
                     Download PDF →
                   </a>
                 ) : (
-                  <span className="tabular-nums text-[11px] text-ih-muted">no PDF</span>
+                  <span className="text-ih-muted text-[11px] tabular-nums">no PDF</span>
                 )}
               </div>
             </div>
@@ -246,7 +253,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         />
       ) : null}
 
-      <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-8">
+      <div className="grid grid-cols-1 gap-8 xl:grid-cols-[1fr_320px]">
         {/* Main: engineer review form */}
         <div>
           <form
@@ -258,38 +265,46 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           >
             <input type="hidden" name="rfqId" value={rfq.id} />
 
-            <h2 className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+            <h2 className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
               Line Items ({rfq.lines.length})
             </h2>
 
-            <div className="overflow-hidden rounded-lg border border-ih-border mb-4">
+            <div className="border-ih-border mb-4 overflow-hidden rounded-lg border">
               {/* Header */}
-              <div className="grid grid-cols-[1fr_120px_120px] px-4 py-2 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+              <div className="bg-ih-bg border-ih-border text-ih-muted grid grid-cols-[1fr_120px_120px] border-b px-4 py-2 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
                 <div>Product</div>
                 <div className="text-right">Unit Price (AED)</div>
                 <div className="text-right">Lead Time (days)</div>
               </div>
 
               {rfq.lines.map((line, i) => (
-                <div key={line.id} className={`border-b border-ih-border last:border-0 ${i % 2 === 0 ? 'bg-ih-surface' : 'bg-ih-bg'}`}>
-                  <div className="grid grid-cols-[1fr_120px_120px] px-4 py-3 items-center">
+                <div
+                  key={line.id}
+                  className={`border-ih-border border-b last:border-0 ${i % 2 === 0 ? 'bg-ih-surface' : 'bg-ih-bg'}`}
+                >
+                  <div className="grid grid-cols-[1fr_120px_120px] items-center px-4 py-3">
                     <div>
                       <div className="text-[13px] font-medium">{line.product.title}</div>
-                      <div className="tabular-nums text-[11px] text-ih-muted">{line.product.sku}</div>
-                      <div className="tabular-nums text-[11px] text-ih-muted-2 mt-0.5">
+                      <div className="text-ih-muted text-[11px] tabular-nums">
+                        {line.product.sku}
+                      </div>
+                      <div className="text-ih-muted-2 mt-0.5 text-[11px] tabular-nums">
                         Qty requested: {line.requestedQty}
-                        {line.customerTargetPrice && ` · Target: AED ${Number(line.customerTargetPrice).toFixed(2)}`}
+                        {line.customerTargetPrice &&
+                          ` · Target: AED ${Number(line.customerTargetPrice).toFixed(2)}`}
                       </div>
                     </div>
                     <div className="flex justify-end">
                       <input
                         type="number"
                         name={`unitPrice_${line.id}`}
-                        defaultValue={line.engineerUnitPrice ? Number(line.engineerUnitPrice).toString() : ''}
+                        defaultValue={
+                          line.engineerUnitPrice ? Number(line.engineerUnitPrice).toString() : ''
+                        }
                         step="0.01"
                         min="0"
                         placeholder="—"
-                        className="rounded-md w-24 h-8 px-2 border border-ih-border bg-ih-surface tabular-nums text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
+                        className="border-ih-border bg-ih-surface text-ih-ink focus:border-ih-accent placeholder:text-ih-muted-2 h-8 w-24 rounded-md border px-2 text-right text-[13px] tabular-nums focus:outline-none"
                       />
                     </div>
                     <div className="flex justify-end">
@@ -299,7 +314,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                         defaultValue={line.engineerLeadTimeDays ?? ''}
                         min="0"
                         placeholder="—"
-                        className="rounded-md w-24 h-8 px-2 border border-ih-border bg-ih-surface tabular-nums text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
+                        className="border-ih-border bg-ih-surface text-ih-ink focus:border-ih-accent placeholder:text-ih-muted-2 h-8 w-24 rounded-md border px-2 text-right text-[13px] tabular-nums focus:outline-none"
                       />
                     </div>
                   </div>
@@ -310,7 +325,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                       name={`lineNote_${line.id}`}
                       defaultValue={line.engineerNotes ?? ''}
                       placeholder="Engineer note for this line (optional)"
-                      className="rounded-md w-full h-7 px-2 border border-ih-border bg-transparent tabular-nums text-[11px] text-ih-ink-2 placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
+                      className="border-ih-border text-ih-ink-2 placeholder:text-ih-muted-2 focus:border-ih-accent h-7 w-full rounded-md border bg-transparent px-2 text-[11px] tabular-nums focus:outline-none"
                     />
                   </div>
                 </div>
@@ -319,7 +334,10 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
             {/* Internal notes */}
             <div className="mb-4">
-              <label htmlFor="rfqdetail-internalNotes" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="rfqdetail-internalNotes"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Internal Notes
               </label>
               <Textarea
@@ -327,12 +345,14 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                 name="internalNotes"
                 defaultValue={rfq.internalNotes ?? ''}
                 rows={4}
-                placeholder="Notes visible to staff only — not shown to customer" className="tabular-nums resize-none" />
+                placeholder="Notes visible to staff only — not shown to customer"
+                className="resize-none tabular-nums"
+              />
             </div>
 
             <button
               type="submit"
-              className="h-10 px-6 bg-ih-navy text-ih-bg tabular-nums text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors"
+              className="bg-ih-navy text-ih-bg h-10 px-6 text-[12px] tabular-nums transition-colors hover:bg-[var(--color-ih-ink-2)]"
             >
               Save Review
             </button>
@@ -342,36 +362,54 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         {/* Sidebar */}
         <div className="flex flex-col gap-4">
           {/* Account */}
-          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-            <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account</h3>
-            <Link href={`/admin/customers/${rfq.account.id}`} className="text-[13px] font-medium text-ih-accent hover:underline">
+          <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+            <h3 className="text-ih-muted mb-3 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+              Account
+            </h3>
+            <Link
+              href={`/admin/customers/${rfq.account.id}`}
+              className="text-ih-accent text-[13px] font-medium hover:underline"
+            >
               {rfq.account.legalName}
             </Link>
-            <div className="tabular-nums text-[11px] text-ih-muted mt-0.5">{rfq.account.code}</div>
+            <div className="text-ih-muted mt-0.5 text-[11px] tabular-nums">{rfq.account.code}</div>
             {rfq.submittedBy && (
-              <div className="mt-2 text-[12px] text-ih-ink-2">
+              <div className="text-ih-ink-2 mt-2 text-[12px]">
                 <span className="text-ih-muted">Submitted by: </span>
                 {rfq.submittedBy.firstName} {rfq.submittedBy.lastName}
-                <div className="tabular-nums text-[11px] text-ih-muted">{rfq.submittedBy.email}</div>
+                <div className="text-ih-muted text-[11px] tabular-nums">
+                  {rfq.submittedBy.email}
+                </div>
               </div>
             )}
           </div>
 
           {/* Assignment */}
-          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-            <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Assignment</h3>
-            <form action={async (fd: FormData) => {
-              'use server'
-              const { assignEngineer } = await import('./actions')
-              const eId = fd.get('engineerId') as string
-              if (eId) await assignEngineer(rfq.id, eId)
-            }}>
-              <label htmlFor="rfqdetail-engineerId" className="block tabular-nums text-[11px] text-ih-muted mb-1">Engineer</label>
+          <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+            <h3 className="text-ih-muted mb-3 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+              Assignment
+            </h3>
+            <form
+              action={async (fd: FormData) => {
+                'use server'
+                const { assignEngineer } = await import('./actions')
+                const eId = fd.get('engineerId') as string
+                if (eId) await assignEngineer(rfq.id, eId)
+              }}
+            >
+              <label
+                htmlFor="rfqdetail-engineerId"
+                className="text-ih-muted mb-1 block text-[11px] tabular-nums"
+              >
+                Engineer
+              </label>
               <div className="flex gap-2">
                 <Select
                   id="rfqdetail-engineerId"
                   name="engineerId"
-                  defaultValue={rfq.assignedEngineerId ?? ''} className="flex-1 h-8">
+                  defaultValue={rfq.assignedEngineerId ?? ''}
+                  className="h-8 flex-1"
+                >
                   <option value="">— Unassigned —</option>
                   {engineers.map((eng) => (
                     <option key={eng.id} value={eng.id}>
@@ -379,7 +417,10 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     </option>
                   ))}
                 </Select>
-                <button type="submit" className="rounded-md h-8 px-3 border border-ih-border tabular-nums text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
+                <button
+                  type="submit"
+                  className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-8 rounded-md border px-3 text-[11px] tabular-nums transition-colors"
+                >
                   Save
                 </button>
               </div>
@@ -387,31 +428,41 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           </div>
 
           {/* Dates */}
-          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-            <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Timeline</h3>
+          <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+            <h3 className="text-ih-muted mb-3 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+              Timeline
+            </h3>
             <dl className="flex flex-col gap-2 text-[13px]">
               {rfq.submittedAt && (
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Submitted</dt>
-                  <dd className="tabular-nums text-ih-ink">{new Date(rfq.submittedAt).toLocaleDateString()}</dd>
+                  <dd className="text-ih-ink tabular-nums">
+                    {new Date(rfq.submittedAt).toLocaleDateString()}
+                  </dd>
                 </div>
               )}
               {rfq.requestedDeliveryDate && (
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Req. delivery</dt>
-                  <dd className="tabular-nums text-ih-ink">{new Date(rfq.requestedDeliveryDate).toLocaleDateString()}</dd>
+                  <dd className="text-ih-ink tabular-nums">
+                    {new Date(rfq.requestedDeliveryDate).toLocaleDateString()}
+                  </dd>
                 </div>
               )}
               {rfq.quoteSentAt && (
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Quote sent</dt>
-                  <dd className="tabular-nums text-ih-ink">{new Date(rfq.quoteSentAt).toLocaleDateString()}</dd>
+                  <dd className="text-ih-ink tabular-nums">
+                    {new Date(rfq.quoteSentAt).toLocaleDateString()}
+                  </dd>
                 </div>
               )}
               {rfq.acceptedAt && (
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Accepted</dt>
-                  <dd className="tabular-nums text-ih-ink">{new Date(rfq.acceptedAt).toLocaleDateString()}</dd>
+                  <dd className="text-ih-ink tabular-nums">
+                    {new Date(rfq.acceptedAt).toLocaleDateString()}
+                  </dd>
                 </div>
               )}
             </dl>
@@ -419,47 +470,74 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Ship-to */}
           {rfq.shipToAddress && (
-            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-              <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Ship-to</h3>
-              <div className="text-[12px] text-ih-ink-2">
+            <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+              <h3 className="text-ih-muted mb-2 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Ship-to
+              </h3>
+              <div className="text-ih-ink-2 text-[12px]">
                 <div className="font-medium">{rfq.shipToAddress.label}</div>
-                {(rfq.shipToAddress.lines as string[]).map((l, i) => <div key={i}>{l}</div>)}
-                <div>{rfq.shipToAddress.city}, {rfq.shipToAddress.countryCode}</div>
+                {(rfq.shipToAddress.lines as string[]).map((l, i) => (
+                  <div key={i}>{l}</div>
+                ))}
+                <div>
+                  {rfq.shipToAddress.city}, {rfq.shipToAddress.countryCode}
+                </div>
               </div>
             </div>
           )}
 
           {/* Tracking */}
-          <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-            <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Tracking</h3>
-            <p className="text-[11px] text-ih-muted mb-3 leading-[1.5]">
-              Free-text. Surfaces under the Shipped step on the customer&apos;s
-              /quote/[code] timeline.
+          <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+            <h3 className="text-ih-muted mb-2 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+              Tracking
+            </h3>
+            <p className="text-ih-muted mb-3 text-[11px] leading-[1.5]">
+              Free-text. Surfaces under the Shipped step on the customer&apos;s /quote/[code]
+              timeline.
             </p>
-            <form action={async (fd: FormData) => {
-              'use server'
-              const { updateTracking } = await import('./actions')
-              const r = await updateTracking(fd)
-              if (!r.success) throw new Error(r.message)
-            }}>
+            <form
+              action={async (fd: FormData) => {
+                'use server'
+                const { updateTracking } = await import('./actions')
+                const r = await updateTracking(fd)
+                if (!r.success) throw new Error(r.message)
+              }}
+            >
               <input type="hidden" name="rfqId" value={rfq.id} />
-              <label htmlFor="rfqdetail-trackingCarrier" className="block tabular-nums text-[11px] text-ih-muted mb-1">Carrier</label>
+              <label
+                htmlFor="rfqdetail-trackingCarrier"
+                className="text-ih-muted mb-1 block text-[11px] tabular-nums"
+              >
+                Carrier
+              </label>
               <Input
                 id="rfqdetail-trackingCarrier"
                 type="text"
                 name="trackingCarrier"
                 defaultValue={rfq.trackingCarrier ?? ''}
                 placeholder="e.g. Aramex, DHL"
-                maxLength={120} className="h-8 mb-2" />
-              <label htmlFor="rfqdetail-trackingNumber" className="block tabular-nums text-[11px] text-ih-muted mb-1">Tracking number</label>
+                maxLength={120}
+                className="mb-2 h-8"
+              />
+              <label
+                htmlFor="rfqdetail-trackingNumber"
+                className="text-ih-muted mb-1 block text-[11px] tabular-nums"
+              >
+                Tracking number
+              </label>
               <Input
                 id="rfqdetail-trackingNumber"
                 type="text"
                 name="trackingNumber"
                 defaultValue={rfq.trackingNumber ?? ''}
                 placeholder="AWB / consignment #"
-                maxLength={120} className="h-8 mb-2 tabular-nums" />
-              <button type="submit" className="rounded-md h-8 px-3 border border-ih-border tabular-nums text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
+                maxLength={120}
+                className="mb-2 h-8 tabular-nums"
+              />
+              <button
+                type="submit"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-8 rounded-md border px-3 text-[11px] tabular-nums transition-colors"
+              >
                 Save
               </button>
             </form>
@@ -467,24 +545,30 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Application context */}
           {rfq.applicationContext && (
-            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-              <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Application Context</h3>
-              <p className="text-[12px] text-ih-ink-2 leading-[1.5]">{rfq.applicationContext}</p>
+            <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+              <h3 className="text-ih-muted mb-2 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Application Context
+              </h3>
+              <p className="text-ih-ink-2 text-[12px] leading-[1.5]">{rfq.applicationContext}</p>
             </div>
           )}
 
           {/* Customer message */}
           {rfq.customerMessage && (
-            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-              <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-2">Customer Message</h3>
-              <p className="text-[12px] text-ih-ink-2 leading-[1.5]">{rfq.customerMessage}</p>
+            <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+              <h3 className="text-ih-muted mb-2 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Customer Message
+              </h3>
+              <p className="text-ih-ink-2 text-[12px] leading-[1.5]">{rfq.customerMessage}</p>
             </div>
           )}
 
           {/* Attachments */}
           {rfq.attachments.length > 0 && (
-            <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-              <h3 className="tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Attachments</h3>
+            <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+              <h3 className="text-ih-muted mb-3 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+                Attachments
+              </h3>
               <div className="flex flex-col gap-2">
                 {attachmentLinks.map((att) => (
                   <a
@@ -492,7 +576,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     href={att.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 tabular-nums text-[12px] text-ih-accent hover:underline"
+                    className="text-ih-accent flex items-center gap-2 text-[12px] tabular-nums hover:underline"
                   >
                     ↓ {att.filename}
                   </a>
@@ -517,7 +601,9 @@ function StatusBadge({ status }: { status: string }) {
   }
 
   return (
-    <span className={`inline-flex items-center px-3 py-1 tabular-nums text-[11px] font-medium tracking-[0.06em] ${colorMap[status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
+    <span
+      className={`inline-flex items-center px-3 py-1 text-[11px] font-medium tracking-[0.06em] tabular-nums ${colorMap[status] ?? 'text-ih-muted bg-ih-surface-2'}`}
+    >
       {STATUS_LABELS[status] ?? status}
     </span>
   )

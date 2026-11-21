@@ -21,11 +21,14 @@ export const CATEGORY_WITH_IMAGE_CHAIN = {
   },
 } as const satisfies Prisma.CategoryDefaultArgs
 
-type ChainLink = {
-  name: string
-  image?: { storagePath: string } | null
-  parent?: ChainLink | null
-} | null | undefined
+type ChainLink =
+  | {
+      name: string
+      image?: { storagePath: string } | null
+      parent?: ChainLink | null
+    }
+  | null
+  | undefined
 
 export type CategoryFallback = { src: string; categoryName: string }
 

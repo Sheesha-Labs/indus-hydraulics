@@ -70,7 +70,13 @@ type Props = {
  * over one bad block, with the page chrome still rendering as if nothing were
  * wrong. Here invalid blocks are dropped upstream and logged by name.
  */
-export default function BlogArticleRenderer({ article, contact, skip, id, variant = 'article' }: Props) {
+export default function BlogArticleRenderer({
+  article,
+  contact,
+  skip,
+  id,
+  variant = 'article',
+}: Props) {
   if (article.dropped.length > 0) {
     console.error(
       '[BlogArticleRenderer] dropped invalid blocks',
@@ -85,7 +91,15 @@ export default function BlogArticleRenderer({ article, contact, skip, id, varian
     // Same fix as the service ArticleRenderer.
     <div id={id} className="flex min-w-0 flex-col gap-6">
       {article.blocks.map((block, i) =>
-        skip?.has(i) ? null : <BlockSwitch key={i} block={block} article={article} contact={contact} variant={variant} />,
+        skip?.has(i) ? null : (
+          <BlockSwitch
+            key={i}
+            block={block}
+            article={article}
+            contact={contact}
+            variant={variant}
+          />
+        )
       )}
     </div>
   )

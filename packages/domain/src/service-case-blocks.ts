@@ -15,11 +15,9 @@ import { z } from 'zod'
 
 // ── Shared atoms ──────────────────────────────────────────────────────────
 
-const NonEmpty = (max: number) =>
-  z.string().trim().min(1).max(max)
+const NonEmpty = (max: number) => z.string().trim().min(1).max(max)
 
-const OptionalText = (max: number) =>
-  z.string().trim().max(max).optional().nullable()
+const OptionalText = (max: number) => z.string().trim().max(max).optional().nullable()
 
 const OutcomeStyleEnum = z.enum(['neutral', 'good', 'accent'])
 
@@ -86,10 +84,7 @@ export const FigureBlockSchema = z.object({
   captionPrefix: OptionalText(20),
   caption: NonEmpty(400),
   /** Aspect ratio CSS-style ("16/9", "21/9"). Default 16/9. */
-  aspectRatio: z
-    .enum(['16/9', '21/9', '4/3', '1/1'])
-    .optional()
-    .default('16/9'),
+  aspectRatio: z.enum(['16/9', '21/9', '4/3', '1/1']).optional().default('16/9'),
 })
 export type FigureBlock = z.infer<typeof FigureBlockSchema>
 
@@ -114,7 +109,7 @@ export const ApproachGridBlockSchema = z.object({
         body: NonEmpty(400),
         /** Mono footer, e.g. "Days 0 — 2" */
         duration: NonEmpty(40),
-      }),
+      })
     )
     .min(2)
     .max(6),
@@ -143,10 +138,10 @@ export const SopBlockSchema = z.object({
               who: NonEmpty(40),
               tool: NonEmpty(40),
               done: z.boolean().default(true),
-            }),
+            })
           )
           .min(1),
-      }),
+      })
     )
     .min(1),
 })
@@ -171,7 +166,7 @@ export const SpecTableBlockSchema = z.object({
         asFoundStyle: z.enum(['bad', 'num', 'plain']).default('plain'),
         /** After-rebuild cell is always green if pass, else 'num'. */
         afterStyle: z.enum(['good', 'num', 'plain']).default('good'),
-      }),
+      })
     )
     .min(1)
     .max(40),
@@ -193,7 +188,7 @@ export const ResultBoxBlockSchema = z.object({
         valueSmall: OptionalText(20),
         label: NonEmpty(40),
         style: OutcomeStyleEnum.default('neutral'),
-      }),
+      })
     )
     .min(2)
     .max(6),
@@ -212,7 +207,7 @@ export const TeamListBlockSchema = z.object({
         role: NonEmpty(120),
         location: OptionalText(120),
         scope: NonEmpty(400),
-      }),
+      })
     )
     .min(1)
     .max(20),

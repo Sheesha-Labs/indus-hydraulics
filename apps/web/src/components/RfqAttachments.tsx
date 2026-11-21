@@ -104,14 +104,20 @@ export default function RfqAttachments({
                   contentType: file.type || 'application/octet-stream',
                 },
               }
-            : r,
-        ),
+            : r
+        )
       )
     } catch (err) {
       setRows((prev) =>
         prev.map((r) =>
-          r.id === id ? { ...r, status: 'error', error: err instanceof Error ? err.message : 'Upload failed.' } : r,
-        ),
+          r.id === id
+            ? {
+                ...r,
+                status: 'error',
+                error: err instanceof Error ? err.message : 'Upload failed.',
+              }
+            : r
+        )
       )
     }
   }, [])
@@ -135,7 +141,7 @@ export default function RfqAttachments({
         return [...prev, ...next]
       })
     },
-    [upload],
+    [upload]
   )
 
   const autoId = useId()
@@ -153,7 +159,7 @@ export default function RfqAttachments({
       */}
       <label
         htmlFor={fileInputId}
-        className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+        className="text-ih-muted mb-1.5 block font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase"
       >
         {label}
       </label>
@@ -176,20 +182,22 @@ export default function RfqAttachments({
           accept(e.dataTransfer.files)
         }}
         className={`rounded-lg border-[1.5px] border-dashed p-6 text-center transition-colors ${
-          dragging ? 'border-ih-accent bg-ih-accent-soft' : 'border-ih-border-strong bg-ih-surface-2'
+          dragging
+            ? 'border-ih-accent bg-ih-accent-soft'
+            : 'border-ih-border-strong bg-ih-surface-2'
         }`}
       >
-        <p className="text-[13px] text-ih-ink-2">
+        <p className="text-ih-ink-2 text-[13px]">
           Drag and drop, or{' '}
           <button
             type="button"
             onClick={() => inputRef.current?.click()}
-            className="font-medium text-ih-accent underline underline-offset-2"
+            className="text-ih-accent font-medium underline underline-offset-2"
           >
             browse files
           </button>
         </p>
-        <p className="mt-1.5 font-mono text-[10.5px] text-ih-muted">
+        <p className="text-ih-muted mt-1.5 font-mono text-[10.5px]">
           {hint ?? `PDF · JPG · PNG · HEIC · STEP · DWG — up to 25 MB each`}, {MAX_FILES} files
         </p>
         <input
@@ -212,23 +220,23 @@ export default function RfqAttachments({
           {rows.map((row) => (
             <li
               key={row.id}
-              className="flex items-center gap-3 rounded-md border border-ih-border bg-ih-surface px-3 py-2"
+              className="border-ih-border bg-ih-surface flex items-center gap-3 rounded-md border px-3 py-2"
             >
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-[13px]">{row.file.name}</span>
-                <span className="mt-0.5 block font-mono text-[10.5px] text-ih-muted">
+                <span className="text-ih-muted mt-0.5 block font-mono text-[10.5px]">
                   {humanSize(row.file.size)}
                   {row.status === 'uploading' && ' · uploading…'}
                   {row.status === 'error' && ` · ${row.error}`}
                 </span>
               </span>
               {row.status === 'done' && (
-                <span className="shrink-0 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-success">
+                <span className="text-ih-success shrink-0 font-mono text-[10.5px] tracking-[0.08em] uppercase">
                   attached
                 </span>
               )}
               {row.status === 'error' && (
-                <span className="shrink-0 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-danger">
+                <span className="text-ih-danger shrink-0 font-mono text-[10.5px] tracking-[0.08em] uppercase">
                   failed
                 </span>
               )}
@@ -236,7 +244,7 @@ export default function RfqAttachments({
                 type="button"
                 onClick={() => setRows((prev) => prev.filter((r) => r.id !== row.id))}
                 aria-label={`Remove ${row.file.name}`}
-                className="shrink-0 rounded-sm px-1 text-[15px] leading-none text-ih-muted transition-colors hover:text-ih-danger"
+                className="text-ih-muted hover:text-ih-danger shrink-0 rounded-sm px-1 text-[15px] leading-none transition-colors"
               >
                 ×
               </button>
@@ -246,7 +254,9 @@ export default function RfqAttachments({
       )}
 
       <p aria-live="polite" className="sr-only">
-        {busy ? 'Uploading attachments' : `${ready.length} attachment${ready.length === 1 ? '' : 's'} ready`}
+        {busy
+          ? 'Uploading attachments'
+          : `${ready.length} attachment${ready.length === 1 ? '' : 's'} ready`}
       </p>
     </div>
   )

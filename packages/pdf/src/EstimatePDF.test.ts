@@ -30,9 +30,17 @@ const INPUT: EstimateInput = {
     addressLines: ['PO Box 44219', 'Jebel Ali Free Zone', 'Dubai, United Arab Emirates'],
   },
   lines: [
-    { description: 'Axial Piston Pump A10VSO 71 DFR1/31R-PPA12N00 — Bosch Rexroth, genuine', qty: 2, rate: 8450 },
+    {
+      description: 'Axial Piston Pump A10VSO 71 DFR1/31R-PPA12N00 — Bosch Rexroth, genuine',
+      qty: 2,
+      rate: 8450,
+    },
     { description: 'Seal kit, FKM (Viton) — A10VSO 71 series 31', qty: 4, rate: 385 },
-    { description: 'Bench test to ISO 4413 with certificate — 1.5x MAWP, 30 min hold', qty: 2, rate: 640 },
+    {
+      description: 'Bench test to ISO 4413 with certificate — 1.5x MAWP, 30 min hold',
+      qty: 2,
+      rate: 640,
+    },
   ],
   currency: 'AED',
   vatRatePct: 5,

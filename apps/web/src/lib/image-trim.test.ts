@@ -9,7 +9,7 @@ function canvasWith(
   width: number,
   height: number,
   rect: { x: number; y: number; w: number; h: number },
-  alpha = 255,
+  alpha = 255
 ): Uint8ClampedArray {
   const data = new Uint8ClampedArray(width * height * 4)
   for (let y = rect.y; y < rect.y + rect.h; y++) {

@@ -34,7 +34,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: page?.seoTitle ?? 'Contact',
     alternates: { canonical: '/contact' },
-    description: page?.seoDescription ?? 'Talk to a real applications engineer. Send us a part number, circuit diagram, or photo of the failure.',
+    description:
+      page?.seoDescription ??
+      'Talk to a real applications engineer. Send us a part number, circuit diagram, or photo of the failure.',
   }
 }
 
@@ -150,14 +152,17 @@ export default async function ContactPage({ params }: Props) {
   const localBusinessLds = OFFICES.map((office) =>
     buildLocalBusinessLd({
       id: `${BASE_URL}#location-${office.slug}`,
-      name: office.kind === 'hq' ? `${SITE_NAME} — ${office.city} (HQ)` : `${SITE_NAME} — ${office.city}`,
+      name:
+        office.kind === 'hq'
+          ? `${SITE_NAME} — ${office.city} (HQ)`
+          : `${SITE_NAME} — ${office.city}`,
       url: urlFor('/contact'),
       telephone: office.telephone,
       email: office.email,
       address: office.address,
       openingHours: office.openingHours,
       parentOrganization: { id: ORG_ID, name: SITE_NAME },
-    }),
+    })
   )
   /*
     FAQPage schema is emitted only when the FAQ section is actually on the
@@ -179,19 +184,19 @@ export default async function ContactPage({ params }: Props) {
   const sections: Record<string, ReactNode> = {
     hero: (
       /* ── Hero ──────────────────────────────────────────────── */
-      <section className={`${CONTAINER} border-b border-ih-border py-14`}>
+      <section className={`${CONTAINER} border-ih-border border-b py-14`}>
         <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
           <div>
             <span className="eyebrow">{str(hero, 'eyebrow')}</span>
             {/* The v2 display pattern: a declarative sentence ending in a
                 period, closing clause in italic serif. 01-design-language.md §3. */}
-            <h1 className="my-4 max-w-[22ch] text-balance font-serif text-[clamp(38px,5.5vw,60px)] font-normal leading-[1.04] tracking-[-0.01em]">
+            <h1 className="my-4 max-w-[22ch] font-serif text-[clamp(38px,5.5vw,60px)] leading-[1.04] font-normal tracking-[-0.01em] text-balance">
               {str(hero, 'heading')}{' '}
               {str(hero, 'heading_emphasis') ? (
                 <em className="italic">{str(hero, 'heading_emphasis')}</em>
               ) : null}
             </h1>
-            <p className="max-w-xl text-[17px] leading-[1.55] text-ih-muted">{str(hero, 'body')}</p>
+            <p className="text-ih-muted max-w-xl text-[17px] leading-[1.55]">{str(hero, 'body')}</p>
           </div>
 
           {/* The response promises as figures. This column is where an office
@@ -202,12 +207,12 @@ export default async function ContactPage({ params }: Props) {
               {heroStats.map((stat, i) => (
                 <div
                   key={`${stat.label ?? ''}-${i}`}
-                  className="rounded-sm border border-ih-border bg-ih-surface px-4 pb-4 pt-3.5"
+                  className="border-ih-border bg-ih-surface rounded-sm border px-4 pt-3.5 pb-4"
                 >
-                  <div className="whitespace-nowrap text-[clamp(17px,4.4vw,28px)] font-semibold leading-none tracking-[-0.02em]">
+                  <div className="text-[clamp(17px,4.4vw,28px)] leading-none font-semibold tracking-[-0.02em] whitespace-nowrap">
                     {stat.value}
                   </div>
-                  <div className="mono mt-2 text-[10.5px] uppercase leading-[1.35] tracking-[0.1em] text-ih-muted">
+                  <div className="mono text-ih-muted mt-2 text-[10.5px] leading-[1.35] tracking-[0.1em] uppercase">
                     {stat.label}
                   </div>
                 </div>
@@ -231,15 +236,15 @@ export default async function ContactPage({ params }: Props) {
             {/* RFQ CTA — the one thing a contact form is worse at than a
                 purpose-built page, so it is offered rather than buried. */}
             {str(channelsCopy, 'rfq_heading') ? (
-              <div className="mt-8 rounded-lg border border-ih-border bg-ih-surface p-5">
+              <div className="border-ih-border bg-ih-surface mt-8 rounded-lg border p-5">
                 <b className="text-[14px]">{str(channelsCopy, 'rfq_heading')}</b>
-                <p className="mb-3 mt-1 text-[13px] leading-[1.55] text-ih-muted">
+                <p className="text-ih-muted mt-1 mb-3 text-[13px] leading-[1.55]">
                   {str(channelsCopy, 'rfq_body')}
                 </p>
                 {str(channelsCopy, 'rfq_cta_label') ? (
                   <Link
                     href={str(channelsCopy, 'rfq_cta_href') ?? '/contact'}
-                    className="mono inline-flex h-9 items-center rounded-sm border border-ih-border px-4 text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-ink"
+                    className="mono border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-ink inline-flex h-9 items-center rounded-sm border px-4 text-[12px] transition-colors"
                   >
                     {str(channelsCopy, 'rfq_cta_label')}
                   </Link>
@@ -278,28 +283,28 @@ export default async function ContactPage({ params }: Props) {
     faq:
       faqs.length > 0 ? (
         /* ── FAQ ───────────────────────────────────────────────── */
-        <section className="border-t border-ih-border py-16">
+        <section className="border-ih-border border-t py-16">
           <div className={`${CONTAINER} grid grid-cols-1 gap-10 lg:grid-cols-[1fr_2fr] lg:gap-14`}>
             <div>
               <span className="eyebrow">{str(faq, 'eyebrow')}</span>
-              <h2 className="mt-2 font-serif text-[clamp(26px,3vw,36px)] font-normal leading-[1.1] tracking-[-0.01em]">
+              <h2 className="mt-2 font-serif text-[clamp(26px,3vw,36px)] leading-[1.1] font-normal tracking-[-0.01em]">
                 {str(faq, 'heading')}
               </h2>
-              <p className="mt-3 text-[14px] leading-[1.6] text-ih-muted">{str(faq, 'body')}</p>
+              <p className="text-ih-muted mt-3 text-[14px] leading-[1.6]">{str(faq, 'body')}</p>
             </div>
             <div className="flex flex-col">
               {faqs.map((item, i) => (
                 <details
                   key={`${item.q ?? ''}-${i}`}
-                  className="group border-b border-ih-border py-[18px] first:pt-0"
+                  className="group border-ih-border border-b py-[18px] first:pt-0"
                 >
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                     <h3 className="flex-1 text-[16px] font-medium">{item.q}</h3>
-                    <span className="mono shrink-0 text-[18px] text-ih-muted transition-colors group-open:text-ih-accent">
+                    <span className="mono text-ih-muted group-open:text-ih-accent shrink-0 text-[18px] transition-colors">
                       +
                     </span>
                   </summary>
-                  <p className="mt-3 text-[14px] leading-[1.6] text-ih-muted">{item.a}</p>
+                  <p className="text-ih-muted mt-3 text-[14px] leading-[1.6]">{item.a}</p>
                 </details>
               ))}
             </div>
@@ -312,11 +317,11 @@ export default async function ContactPage({ params }: Props) {
     <div>
       <JsonLd
         data={[...localBusinessLds, faqLd, breadcrumbLd].filter(
-          (node): node is NonNullable<typeof node> => node !== null,
+          (node): node is NonNullable<typeof node> => node !== null
         )}
       />
       {content.order.map((key) =>
-        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null
       )}
     </div>
   )

@@ -100,9 +100,11 @@ function Section({
   children: ReactNode
 }) {
   return (
-    <section className="border-b border-ih-border px-12 py-14 last:border-b-0">
+    <section className="border-ih-border border-b px-12 py-14 last:border-b-0">
       <SectionHead number={n} title={title} />
-      {note ? <p className="-mt-3 mb-7 max-w-[72ch] text-[13px] leading-relaxed text-ih-muted">{note}</p> : null}
+      {note ? (
+        <p className="text-ih-muted -mt-3 mb-7 max-w-[72ch] text-[13px] leading-relaxed">{note}</p>
+      ) : null}
       {children}
     </section>
   )
@@ -110,28 +112,35 @@ function Section({
 
 export default function DesignFoundationPage() {
   return (
-    <main id="main" className="mx-auto max-w-[1440px] bg-ih-bg pb-24">
-      <header className="border-b border-ih-border bg-ih-surface px-12 py-14">
+    <main id="main" className="bg-ih-bg mx-auto max-w-[1440px] pb-24">
+      <header className="border-ih-border bg-ih-surface border-b px-12 py-14">
         <Eyebrow>Design language · v2 · Indus · Bazar grammar</Eyebrow>
-        <h1 className="mt-4 max-w-[24ch] text-pretty font-serif text-[46px] font-normal leading-[1.05] tracking-[-0.01em]">
-          Quiet paper, one blue that <em className="italic">means something</em>, and data set in mono.
+        <h1 className="mt-4 max-w-[24ch] font-serif text-[46px] leading-[1.05] font-normal tracking-[-0.01em] text-pretty">
+          Quiet paper, one blue that <em className="italic">means something</em>, and data set in
+          mono.
         </h1>
-        <p className="mt-5 max-w-[68ch] text-[16px] leading-[1.6] text-ih-ink-2">
-          Every primitive in every state. If a component drifts from the contract, it shows here first — which is
-          the whole reason this route exists.
+        <p className="text-ih-ink-2 mt-5 max-w-[68ch] text-[16px] leading-[1.6]">
+          Every primitive in every state. If a component drifts from the contract, it shows here
+          first — which is the whole reason this route exists.
         </p>
         <div className="mt-6">
-          <Breadcrumb items={[{ label: 'INTERNAL' }, { label: 'DESIGN' }, { label: 'FOUNDATION' }]} />
+          <Breadcrumb
+            items={[{ label: 'INTERNAL' }, { label: 'DESIGN' }, { label: 'FOUNDATION' }]}
+          />
         </div>
       </header>
 
-      <Section n="/01" title="The blue family." note="One loud colour. Everything else is ink, paper and rule. Semantic colours are deliberately low-chroma so they never compete with the accent.">
+      <Section
+        n="/01"
+        title="The blue family."
+        note="One loud colour. Everything else is ink, paper and rule. Semantic colours are deliberately low-chroma so they never compete with the accent."
+      >
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5">
           {SWATCHES.map(([name, bg, token, use]) => (
             <div key={token}>
-              <div className={`h-16 rounded-lg border border-ih-border ${bg}`} />
+              <div className={`border-ih-border h-16 rounded-lg border ${bg}`} />
               <div className="mt-2.5 text-[12.5px] font-medium">{name}</div>
-              <div className="mt-1 font-mono text-[10px] leading-relaxed text-ih-muted">
+              <div className="text-ih-muted mt-1 font-mono text-[10px] leading-relaxed">
                 {token}
                 <br />
                 {use}
@@ -141,13 +150,22 @@ export default function DesignFoundationPage() {
         </div>
       </Section>
 
-      <Section n="/02" title="Type." note="Two families. Geist for UI and for data (tabular figures keep numbers aligned), Instrument Serif for display (weight 400 only — never bold inside a serif headline). No monospace since 2026-11-19.">
+      <Section
+        n="/02"
+        title="Type."
+        note="Two families. Geist for UI and for data (tabular figures keep numbers aligned), Instrument Serif for display (weight 400 only — never bold inside a serif headline). No monospace since 2026-11-19."
+      >
         <div className="flex flex-col gap-6">
           {TYPE_SCALE.map(([role, family, cls]) => (
-            <div key={role} className="grid grid-cols-[180px_1fr] items-baseline gap-8 border-b border-ih-border pb-5">
+            <div
+              key={role}
+              className="border-ih-border grid grid-cols-[180px_1fr] items-baseline gap-8 border-b pb-5"
+            >
               <div>
                 <div className="text-[12.5px] font-medium">{role}</div>
-                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">{family}</div>
+                <div className="text-ih-muted mt-1 font-mono text-[10px] tracking-[0.08em] uppercase">
+                  {family}
+                </div>
               </div>
               <p className={cls}>Pressure-tested to 350 bar</p>
             </div>
@@ -155,18 +173,28 @@ export default function DesignFoundationPage() {
           <div className="grid grid-cols-[180px_1fr] items-baseline gap-8">
             <div>
               <div className="text-[12.5px] font-medium">Data / SKU</div>
-              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">mono · tnum</div>
+              <div className="text-ih-muted mt-1 font-mono text-[10px] tracking-[0.08em] uppercase">
+                mono · tnum
+              </div>
             </div>
-            <p className="font-mono text-[13px] tabular-nums">A10VSO 71 DFR/31R-PPA12N00 · 350 bar · 71 cc/rev</p>
+            <p className="font-mono text-[13px] tabular-nums">
+              A10VSO 71 DFR/31R-PPA12N00 · 350 bar · 71 cc/rev
+            </p>
           </div>
         </div>
       </Section>
 
-      <Section n="/03" title="Buttons." note="Five kinds, three sizes, five states each. Note the outline hover — it goes accent-bordered and accent-texted, not grey. One primary action per view.">
+      <Section
+        n="/03"
+        title="Buttons."
+        note="Five kinds, three sizes, five states each. Note the outline hover — it goes accent-bordered and accent-texted, not grey. One primary action per view."
+      >
         <div className="flex flex-col gap-7">
           {(['primary', 'navy', 'outline', 'ghost'] as const).map((kind) => (
             <div key={kind} className="flex flex-wrap items-center gap-3">
-              <span className="w-20 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">{kind}</span>
+              <span className="text-ih-muted w-20 font-mono text-[10.5px] tracking-[0.08em] uppercase">
+                {kind}
+              </span>
               <Button kind={kind} size="sm">
                 Small
               </Button>
@@ -182,8 +210,10 @@ export default function DesignFoundationPage() {
               </Button>
             </div>
           ))}
-          <div className="flex flex-wrap items-center gap-3 rounded-lg bg-ih-navy p-5">
-            <span className="w-20 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-steel">onnavy</span>
+          <div className="bg-ih-navy flex flex-wrap items-center gap-3 rounded-lg p-5">
+            <span className="text-ih-steel w-20 font-mono text-[10.5px] tracking-[0.08em] uppercase">
+              onnavy
+            </span>
             <Button kind="onnavy" size="sm">
               Small
             </Button>
@@ -192,14 +222,18 @@ export default function DesignFoundationPage() {
               Disabled
             </Button>
           </div>
-          <p className="text-[12.5px] text-ih-muted">
-            Tab through the row above — every control takes an accent border plus a 3px accent-soft halo. Focus is
-            never removed without a replacement.
+          <p className="text-ih-muted text-[12.5px]">
+            Tab through the row above — every control takes an accent border plus a 3px accent-soft
+            halo. Focus is never removed without a replacement.
           </p>
         </div>
       </Section>
 
-      <Section n="/04" title="Fields." note="40px tall, radius 6. Validation is on blur, never on keystroke. An error replaces the hint rather than stacking under it, so the control never changes height.">
+      <Section
+        n="/04"
+        title="Fields."
+        note="40px tall, radius 6. Validation is on blur, never on keystroke. An error replaces the hint rather than stacking under it, so the control never changes height."
+      >
         <div className="grid max-w-[860px] grid-cols-2 gap-6">
           <Field label="Part number" hint="As printed on the nameplate." htmlFor="d-sku">
             <Input id="d-sku" placeholder="e.g. A10VSO 71" />
@@ -212,12 +246,21 @@ export default function DesignFoundationPage() {
             </Select>
           </Field>
           <Field label="Work email" error="Enter a company email address." htmlFor="d-email">
-            <Input id="d-email" defaultValue="me@gmail.com" error="Enter a company email address." />
+            <Input
+              id="d-email"
+              defaultValue="me@gmail.com"
+              error="Enter a company email address."
+            />
           </Field>
           <Field label="Disabled" hint="Not editable in this state." htmlFor="d-dis">
             <Input id="d-dis" defaultValue="IH-PGH4-21-020" disabled />
           </Field>
-          <Field label="Requirement" hint="Free text is fine — an engineer reads every one." className="col-span-2" htmlFor="d-req">
+          <Field
+            label="Requirement"
+            hint="Free text is fine — an engineer reads every one."
+            className="col-span-2"
+            htmlFor="d-req"
+          >
             <Textarea id="d-req" placeholder="What failed, and what it sits in." />
           </Field>
           <div className="col-span-2 flex gap-8">
@@ -262,15 +305,23 @@ export default function DesignFoundationPage() {
         </div>
       </Section>
 
-      <Section n="/06" title="Containers." note="1px rules do the separating work. Shadow-1 is for a genuinely raised card; shadow-2 is reserved for true overlays.">
+      <Section
+        n="/06"
+        title="Containers."
+        note="1px rules do the separating work. Shadow-1 is for a genuinely raised card; shadow-2 is reserved for true overlays."
+      >
         <div className="grid grid-cols-3 gap-5">
           <Card className="p-5">
             <Eyebrow>Card</Eyebrow>
-            <p className="mt-3 text-[13px] text-ih-ink-2">The workhorse container. Radius 10, hairline border, no shadow.</p>
+            <p className="text-ih-ink-2 mt-3 text-[13px]">
+              The workhorse container. Radius 10, hairline border, no shadow.
+            </p>
           </Card>
           <Card raised className="p-5">
             <Eyebrow>Card · raised</Eyebrow>
-            <p className="mt-3 text-[13px] text-ih-ink-2">Shadow-1. Rare — most separation is a border.</p>
+            <p className="text-ih-ink-2 mt-3 text-[13px]">
+              Shadow-1. Rare — most separation is a border.
+            </p>
           </Card>
           <Note>
             The one editorial aside per page. Accent-soft ground with a matching border, 12.5px.
@@ -286,15 +337,17 @@ export default function DesignFoundationPage() {
               ['HANDLING', 'Tongs & elevators', 'Hydraulic power units.'],
             ].map(([tag, title, body]) => (
               <HairlineCell key={tag}>
-                <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-accent">{tag}</div>
+                <div className="text-ih-accent font-mono text-[10px] tracking-[0.1em] uppercase">
+                  {tag}
+                </div>
                 <h4 className="mt-2.5 text-[15px] font-medium">{title}</h4>
-                <p className="mt-1.5 text-[12.5px] leading-relaxed text-ih-muted">{body}</p>
+                <p className="text-ih-muted mt-1.5 text-[12.5px] leading-relaxed">{body}</p>
               </HairlineCell>
             ))}
           </HairlineGrid>
-          <p className="mt-3 text-[12.5px] text-ih-muted">
-            The four-up hairline grid — 1px gaps over a border-coloured ground, so no cell doubles its neighbour&rsquo;s
-            rule.
+          <p className="text-ih-muted mt-3 text-[12.5px]">
+            The four-up hairline grid — 1px gaps over a border-coloured ground, so no cell doubles
+            its neighbour&rsquo;s rule.
           </p>
         </div>
       </Section>
@@ -319,9 +372,9 @@ export default function DesignFoundationPage() {
                     ['RFQ-4819', 'Jebel Ali Terminal', 'Pumps · 2 lines', '2h 04m'],
                   ].map(([ref, cust, scope, wait]) => (
                     <TableRow key={ref}>
-                      <TableCell className="font-mono text-xs text-ih-accent">{ref}</TableCell>
+                      <TableCell className="text-ih-accent font-mono text-xs">{ref}</TableCell>
                       <TableCell className="font-medium">{cust}</TableCell>
-                      <TableCell className="text-[12.5px] text-ih-muted">{scope}</TableCell>
+                      <TableCell className="text-ih-muted text-[12.5px]">{scope}</TableCell>
                       <TableCell numeric>{wait}</TableCell>
                     </TableRow>
                   ))}
@@ -330,7 +383,9 @@ export default function DesignFoundationPage() {
             </Card>
             <div className="mt-3 flex items-center gap-3">
               <StaleAt at="2026-08-16T09:42:00Z" />
-              <span className="text-[12.5px] text-ih-muted">— cached figures always carry their read time.</span>
+              <span className="text-ih-muted text-[12.5px]">
+                — cached figures always carry their read time.
+              </span>
             </div>
           </div>
 
@@ -400,19 +455,31 @@ export default function DesignFoundationPage() {
         </div>
       </Section>
 
-      <Section n="/09" title="The navy band." note="Exactly one dark panel per long page, used for the support or CTA moment. Eyebrow in steel, white serif heading, body at 82% lightness, checklist with steel ticks.">
-        <div className="rounded-lg bg-ih-navy px-12 py-14">
+      <Section
+        n="/09"
+        title="The navy band."
+        note="Exactly one dark panel per long page, used for the support or CTA moment. Eyebrow in steel, white serif heading, body at 82% lightness, checklist with steel ticks."
+      >
+        <div className="bg-ih-navy rounded-lg px-12 py-14">
           <Eyebrow className="text-ih-steel">Support</Eyebrow>
-          <h3 className="mt-3 max-w-[22ch] text-pretty font-serif text-[34px] font-normal text-white">
+          <h3 className="mt-3 max-w-[22ch] font-serif text-[34px] font-normal text-pretty text-white">
             An engineer answers, <em className="italic">not a call centre.</em>
           </h3>
           <p className="mt-4 max-w-[62ch] text-[14.5px] leading-relaxed text-[oklch(0.82_0.02_250)]">
-            Send a part number, a photo of a nameplate, or a description of what failed. If we do not have an
-            interchange on file, we will say so.
+            Send a part number, a photo of a nameplate, or a description of what failed. If we do
+            not have an interchange on file, we will say so.
           </p>
           <div className="mt-8 grid max-w-[820px] grid-cols-2 gap-x-8 gap-y-3">
-            {['Same-day dispatch from Jebel Ali', 'Datasheets and 3D models on every SKU', 'Cross-reference on obsolete codes', '24-month manufacturer warranty'].map((t) => (
-              <div key={t} className="flex items-baseline gap-2.5 text-[13.5px] text-[oklch(0.86_0.02_250)]">
+            {[
+              'Same-day dispatch from Jebel Ali',
+              'Datasheets and 3D models on every SKU',
+              'Cross-reference on obsolete codes',
+              '24-month manufacturer warranty',
+            ].map((t) => (
+              <div
+                key={t}
+                className="flex items-baseline gap-2.5 text-[13.5px] text-[oklch(0.86_0.02_250)]"
+              >
                 <span aria-hidden="true" className="text-ih-steel">
                   ✓
                 </span>

@@ -38,7 +38,7 @@ const MIN_FORM_DURATION_MS = 1500
 
 export async function submitContactForm(
   _prev: ContactFormState,
-  formData: FormData,
+  formData: FormData
 ): Promise<ContactFormState> {
   // Honeypot — real browsers never populate this. Show a generic success
   // state so the bot never learns we filtered it.
@@ -117,7 +117,8 @@ export async function submitContactForm(
           applicationContext,
           currency: 'AED',
           customerMessage: data.message || null,
-          internalNotes: 'Submitted from the contact page — verify contact details before fulfilment.',
+          internalNotes:
+            'Submitted from the contact page — verify contact details before fulfilment.',
           status: 'submitted',
           submittedAt: new Date(),
         },

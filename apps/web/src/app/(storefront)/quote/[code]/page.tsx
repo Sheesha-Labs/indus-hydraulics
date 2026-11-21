@@ -30,13 +30,38 @@ const URGENCY_COLORS: Record<string, string> = {
 // records when it was reached. The page reads the most recent matching
 // activity row and surfaces the timestamp next to the label.
 const TIMELINE_STEPS = [
-  { key: 'submitted', label: 'Received', desc: 'auto-acknowledged · confirmation email sent', verb: 'submitted_rfq' },
-  { key: 'engineer_review', label: 'Engineer reviewing', desc: 'checking stock · preparing quote', verb: 'review_started' },
-  { key: 'quote_sent', label: 'Quote PDF prepared', desc: 'sent for your approval', verb: 'quote_sent' },
+  {
+    key: 'submitted',
+    label: 'Received',
+    desc: 'auto-acknowledged · confirmation email sent',
+    verb: 'submitted_rfq',
+  },
+  {
+    key: 'engineer_review',
+    label: 'Engineer reviewing',
+    desc: 'checking stock · preparing quote',
+    verb: 'review_started',
+  },
+  {
+    key: 'quote_sent',
+    label: 'Quote PDF prepared',
+    desc: 'sent for your approval',
+    verb: 'quote_sent',
+  },
   { key: 'accepted', label: 'Approved', desc: 'order being placed', verb: 'quote_accepted' },
-  { key: 'order_created', label: 'Order placed', desc: 'allocated · being prepared for dispatch', verb: 'order_placed' },
+  {
+    key: 'order_created',
+    label: 'Order placed',
+    desc: 'allocated · being prepared for dispatch',
+    verb: 'order_placed',
+  },
   { key: 'shipped', label: 'Shipped', desc: 'in transit', verb: 'order_shipped' },
-  { key: 'delivered', label: 'Delivered', desc: 'received at destination', verb: 'order_delivered' },
+  {
+    key: 'delivered',
+    label: 'Delivered',
+    desc: 'received at destination',
+    verb: 'order_delivered',
+  },
 ] as const
 
 const STATUS_ORDER = [
@@ -131,8 +156,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   const isFreshSubmission = sp.confirmed === '1'
 
   return (
-    <div className="max-w-[900px] mx-auto px-6 py-10 pb-20">
-
+    <div className="mx-auto max-w-[900px] px-6 py-10 pb-20">
       {isFreshSubmission && (
         <AnalyticsEvent
           name="rfq_submitted"
@@ -146,47 +170,83 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
       )}
 
       {/* ── Confirmation header ─────────────────────────────────── */}
-      <div className="text-center mb-10">
-        <div className="w-16 h-16 rounded-full bg-[oklch(0.95_0.1_150)] text-[oklch(0.4_0.15_150)] grid place-items-center mx-auto mb-5 text-[28px]">
+      <div className="mb-10 text-center">
+        <div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-[oklch(0.95_0.1_150)] text-[28px] text-[oklch(0.4_0.15_150)]">
           ✓
         </div>
-        <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-1">
-          RFQ received · {rfq.submittedAt
-            ? new Date(rfq.submittedAt).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) + ' · ' +
-              new Date(rfq.submittedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase()
+        <div className="text-ih-muted mb-1 font-mono text-[11px] tracking-[0.16em] uppercase">
+          RFQ received ·{' '}
+          {rfq.submittedAt
+            ? new Date(rfq.submittedAt).toLocaleTimeString('en-GB', {
+                hour: '2-digit',
+                minute: '2-digit',
+              }) +
+              ' · ' +
+              new Date(rfq.submittedAt)
+                .toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+                .toUpperCase()
             : 'In progress'}
         </div>
-        <h1 className="font-serif text-[clamp(28px,4vw,36px)] font-normal tracking-[-0.01em] mb-2">Got it. We&apos;re on it.</h1>
-        <p className="text-ih-muted text-[16px] max-w-[560px] mx-auto leading-[1.6]">
+        <h1 className="mb-2 font-serif text-[clamp(28px,4vw,36px)] font-normal tracking-[-0.01em]">
+          Got it. We&apos;re on it.
+        </h1>
+        <p className="text-ih-muted mx-auto max-w-[560px] text-[16px] leading-[1.6]">
           Your request is in front of our applications team.
           {rfq.urgency === 'plant_down' && (
-            <> Because you marked this <b className="text-[oklch(0.5_0.18_25)]">plant down</b>, expect a reply within <b className="text-ih-ink">30 minutes</b> — including evenings and weekends.</>
+            <>
+              {' '}
+              Because you marked this <b className="text-[oklch(0.5_0.18_25)]">plant down</b>,
+              expect a reply within <b className="text-ih-ink">30 minutes</b> — including evenings
+              and weekends.
+            </>
           )}
           {rfq.urgency === 'priority' && (
-            <> We&apos;ll have a response for you within <b className="text-ih-ink">4 hours</b>.</>
+            <>
+              {' '}
+              We&apos;ll have a response for you within <b className="text-ih-ink">4 hours</b>.
+            </>
           )}
           {rfq.urgency === 'routine' && (
-            <> We&apos;ll have a response for you within <b className="text-ih-ink">1 business day</b>.</>
+            <>
+              {' '}
+              We&apos;ll have a response for you within{' '}
+              <b className="text-ih-ink">1 business day</b>.
+            </>
           )}
         </p>
       </div>
 
       {/* ── Reference + Assigned ──────────────────────────────── */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-8">
-        <div className="border border-ih-border bg-ih-surface p-5">
-          <div className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted">RFQ Reference</div>
-          <div className="font-mono text-[24px] font-semibold mt-1.5">{rfq.code}</div>
-          <div className="text-[12px] text-ih-muted mt-1.5">Quote any details with this number · saved to your account</div>
+      <div className="mb-8 grid grid-cols-1 gap-3.5 sm:grid-cols-2">
+        <div className="border-ih-border bg-ih-surface border p-5">
+          <div className="text-ih-muted font-mono text-[10px] tracking-[0.12em] uppercase">
+            RFQ Reference
+          </div>
+          <div className="mt-1.5 font-mono text-[24px] font-semibold">{rfq.code}</div>
+          <div className="text-ih-muted mt-1.5 text-[12px]">
+            Quote any details with this number · saved to your account
+          </div>
         </div>
-        <div className="border border-ih-border bg-ih-surface p-5">
-          <div className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-2">Urgency</div>
-          <span className={`inline-flex items-center gap-2 font-mono text-[11px] px-2.5 py-1 font-medium ${urgencyColor}`}>
+        <div className="border-ih-border bg-ih-surface border p-5">
+          <div className="text-ih-muted mb-2 font-mono text-[10px] tracking-[0.12em] uppercase">
+            Urgency
+          </div>
+          <span
+            className={`inline-flex items-center gap-2 px-2.5 py-1 font-mono text-[11px] font-medium ${urgencyColor}`}
+          >
             ● {urgencyLabel.toUpperCase()}
             {rfq.urgency === 'plant_down' && ' · 30 min SLA'}
           </span>
           {rfq.requestedDeliveryDate && (
-            <div className="mt-3 text-[13px] text-ih-muted">
-              Delivery requested: <b className="text-ih-ink">{new Date(rfq.requestedDeliveryDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</b>
+            <div className="text-ih-muted mt-3 text-[13px]">
+              Delivery requested:{' '}
+              <b className="text-ih-ink">
+                {new Date(rfq.requestedDeliveryDate).toLocaleDateString('en-GB', {
+                  day: 'numeric',
+                  month: 'short',
+                  year: 'numeric',
+                })}
+              </b>
             </div>
           )}
         </div>
@@ -194,10 +254,10 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
 
       {/* ── Status timeline ───────────────────────────────────── */}
       {!isTerminal && (
-        <div className="border border-ih-border bg-ih-surface mb-8 overflow-hidden">
-          <div className="flex justify-between items-center px-5 py-4 border-b border-ih-border">
-            <h3 className="font-semibold text-[16px]">Status</h3>
-            <span className={`font-mono text-[11px] px-2.5 py-0.5 ${urgencyColor}`}>
+        <div className="border-ih-border bg-ih-surface mb-8 overflow-hidden border">
+          <div className="border-ih-border flex items-center justify-between border-b px-5 py-4">
+            <h3 className="text-[16px] font-semibold">Status</h3>
+            <span className={`px-2.5 py-0.5 font-mono text-[11px] ${urgencyColor}`}>
               ● {rfq.status.replace(/_/g, ' ').toUpperCase()}
             </span>
           </div>
@@ -212,29 +272,40 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                     {/* Dot + connector */}
                     <div className="flex flex-col items-center">
                       <div
-                        className={`w-3.5 h-3.5 rounded-full mt-0.5 shrink-0 ${
-                          done ? 'bg-[oklch(0.5_0.13_150)]' :
-                          active ? 'bg-ih-accent' :
-                          'bg-ih-surface-2 border border-ih-border'
+                        className={`mt-0.5 h-3.5 w-3.5 shrink-0 rounded-full ${
+                          done
+                            ? 'bg-[oklch(0.5_0.13_150)]'
+                            : active
+                              ? 'bg-ih-accent'
+                              : 'bg-ih-surface-2 border-ih-border border'
                         }`}
                       />
                       {idx < TIMELINE_STEPS.length - 1 && (
-                        <div className={`w-0.5 flex-1 min-h-[32px] ${done ? 'bg-[oklch(0.5_0.13_150)]' : 'bg-ih-border'}`} />
+                        <div
+                          className={`min-h-[32px] w-0.5 flex-1 ${done ? 'bg-[oklch(0.5_0.13_150)]' : 'bg-ih-border'}`}
+                        />
                       )}
                     </div>
                     {/* Label */}
                     <div className={`pb-6 ${pending ? 'text-ih-muted' : ''}`}>
-                      <div className="flex items-baseline gap-2 flex-wrap">
+                      <div className="flex flex-wrap items-baseline gap-2">
                         <b className={pending ? 'text-ih-ink-2' : ''}>{step.label}</b>
                         {(done || active) && stepTimestamps.get(step.verb) && (
-                          <span className="font-mono text-[11px] text-ih-muted">
-                            {new Date(stepTimestamps.get(step.verb)!).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                          <span className="text-ih-muted font-mono text-[11px]">
+                            {new Date(stepTimestamps.get(step.verb)!).toLocaleDateString('en-GB', {
+                              day: 'numeric',
+                              month: 'short',
+                              year: 'numeric',
+                            })}
                           </span>
                         )}
                       </div>
-                      <div className="font-mono text-[11px] text-ih-muted mt-0.5">{active ? 'In progress · ' : ''}{step.desc}</div>
+                      <div className="text-ih-muted mt-0.5 font-mono text-[11px]">
+                        {active ? 'In progress · ' : ''}
+                        {step.desc}
+                      </div>
                       {step.key === 'shipped' && (done || active) && rfq.trackingCarrier && (
-                        <div className="font-mono text-[11px] text-ih-ink-2 mt-1">
+                        <div className="text-ih-ink-2 mt-1 font-mono text-[11px]">
                           {rfq.trackingCarrier}
                           {rfq.trackingNumber ? ` · ${rfq.trackingNumber}` : ''}
                         </div>
@@ -250,49 +321,69 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
 
       {/* Terminal state */}
       {isTerminal && (
-        <div className={`p-4 mb-8 border font-medium ${rfq.status === 'cancelled' || rfq.status === 'declined' ? 'border-[oklch(0.75_0.1_25)] bg-[oklch(0.97_0.02_25)] text-[oklch(0.5_0.12_25)]' : 'border-ih-border bg-ih-surface text-ih-ink-2'}`}>
-          {rfq.status === 'declined' ? 'Quote declined.' : rfq.status === 'expired' ? 'Quote expired.' : 'RFQ cancelled.'}
+        <div
+          className={`mb-8 border p-4 font-medium ${rfq.status === 'cancelled' || rfq.status === 'declined' ? 'border-[oklch(0.75_0.1_25)] bg-[oklch(0.97_0.02_25)] text-[oklch(0.5_0.12_25)]' : 'border-ih-border bg-ih-surface text-ih-ink-2'}`}
+        >
+          {rfq.status === 'declined'
+            ? 'Quote declined.'
+            : rfq.status === 'expired'
+              ? 'Quote expired.'
+              : 'RFQ cancelled.'}
         </div>
       )}
 
       {/* ── Line items ───────────────────────────────────────── */}
-      <div className="border border-ih-border bg-ih-surface mb-8 overflow-hidden">
-        <div className="px-5 py-4 border-b border-ih-border">
-          <h3 className="font-semibold text-[16px]">Lines on this RFQ</h3>
+      <div className="border-ih-border bg-ih-surface mb-8 overflow-hidden border">
+        <div className="border-ih-border border-b px-5 py-4">
+          <h3 className="text-[16px] font-semibold">Lines on this RFQ</h3>
         </div>
         {rfq.lines.map((line) => (
-          <div key={line.id} className="grid grid-cols-[60px_1fr_auto] gap-4 px-5 py-4 border-b border-ih-border last:border-0 items-center">
-            <div className="aspect-square bg-ih-surface-2 border border-ih-border relative overflow-hidden">
+          <div
+            key={line.id}
+            className="border-ih-border grid grid-cols-[60px_1fr_auto] items-center gap-4 border-b px-5 py-4 last:border-0"
+          >
+            <div className="bg-ih-surface-2 border-ih-border relative aspect-square overflow-hidden border">
               {line.product.images[0] ? (
                 <Image
                   src={mediaUrl(line.product.images[0]!.media.storagePath)}
-                  alt={line.product.images[0]!.alt ?? line.product.images[0]!.media.alt ?? line.product.title}
+                  alt={
+                    line.product.images[0]!.alt ??
+                    line.product.images[0]!.media.alt ??
+                    line.product.title
+                  }
                   fill
                   className="object-contain p-1"
                   sizes="60px"
                 />
               ) : (
-                <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-ih-muted">IMG</div>
+                <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[9px]">
+                  IMG
+                </div>
               )}
             </div>
             <div>
-              <Link href={`/p/${line.product.slug}`} className="font-medium text-[14px] hover:text-ih-accent transition-colors">
+              <Link
+                href={`/p/${line.product.slug}`}
+                className="hover:text-ih-accent text-[14px] font-medium transition-colors"
+              >
                 {line.product.title}
               </Link>
-              <div className="font-mono text-[11px] text-ih-muted mt-0.5">{line.product.sku}</div>
+              <div className="text-ih-muted mt-0.5 font-mono text-[11px]">{line.product.sku}</div>
               {line.engineerNotes && (
-                <div className="text-[12px] text-ih-muted mt-1 italic">{line.engineerNotes}</div>
+                <div className="text-ih-muted mt-1 text-[12px] italic">{line.engineerNotes}</div>
               )}
             </div>
-            <div className="text-right shrink-0">
-              <div className="font-mono text-[13px]">qty <b className="text-ih-ink">{line.requestedQty}</b></div>
+            <div className="shrink-0 text-right">
+              <div className="font-mono text-[13px]">
+                qty <b className="text-ih-ink">{line.requestedQty}</b>
+              </div>
               {line.engineerUnitPrice && (
-                <div className="font-mono text-[11px] text-ih-accent mt-0.5">
+                <div className="text-ih-accent mt-0.5 font-mono text-[11px]">
                   ${Number(line.engineerUnitPrice).toFixed(2)} / unit
                 </div>
               )}
               {line.engineerLeadTimeDays && (
-                <div className="font-mono text-[11px] text-ih-muted">
+                <div className="text-ih-muted font-mono text-[11px]">
                   Lead: {line.engineerLeadTimeDays}d
                 </div>
               )}
@@ -303,24 +394,39 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
 
       {/* ── Quote PDF (latest + previous revisions) ─────────────── */}
       {rfq.quotes.length > 0 && (
-        <div className="border border-ih-border bg-ih-surface p-5 mb-8">
-          <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-1">
+        <div className="border-ih-border bg-ih-surface mb-8 border p-5">
+          <h3 className="text-ih-muted mb-1 font-mono text-[10px] tracking-[0.1em] uppercase">
             Quotation {rfq.quotes.length > 1 ? '(revisions)' : 'ready'}
           </h3>
-          <p className="text-[12px] text-ih-muted mb-4">
-            To accept, please reply to the email we sent you confirming the order. The PDF below is identical to the attachment.
+          <p className="text-ih-muted mb-4 text-[12px]">
+            To accept, please reply to the email we sent you confirming the order. The PDF below is
+            identical to the attachment.
           </p>
           <div className="space-y-2">
             {rfq.quotes.map((q) => (
-              <div key={q.id} className="flex items-center justify-between gap-4 py-2 border-b border-ih-border last:border-0">
+              <div
+                key={q.id}
+                className="border-ih-border flex items-center justify-between gap-4 border-b py-2 last:border-0"
+              >
                 <div>
-                  <div className="font-mono text-[13px] text-ih-ink">
+                  <div className="text-ih-ink font-mono text-[13px]">
                     {q.code}
-                    {q.revision > 1 ? <span className="text-ih-muted ml-2">R{q.revision}</span> : null}
+                    {q.revision > 1 ? (
+                      <span className="text-ih-muted ml-2">R{q.revision}</span>
+                    ) : null}
                   </div>
-                  <div className="font-mono text-[10px] text-ih-muted mt-0.5">
-                    Sent {q.sentAt ? new Date(q.sentAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '—'}
-                    {q.expiresAt ? ` · valid until ${new Date(q.expiresAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}` : ''}
+                  <div className="text-ih-muted mt-0.5 font-mono text-[10px]">
+                    Sent{' '}
+                    {q.sentAt
+                      ? new Date(q.sentAt).toLocaleDateString('en-GB', {
+                          day: '2-digit',
+                          month: 'short',
+                          year: 'numeric',
+                        })
+                      : '—'}
+                    {q.expiresAt
+                      ? ` · valid until ${new Date(q.expiresAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}`
+                      : ''}
                   </div>
                 </div>
                 {q.pdfMedia ? (
@@ -328,12 +434,12 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                     href={`/api/quotes/${encodeURIComponent(q.code)}/pdf?token=${encodeURIComponent(token)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 h-9 px-4 border border-ih-accent text-ih-accent font-mono text-[12px] hover:bg-ih-accent hover:text-white transition-colors whitespace-nowrap"
+                    className="border-ih-accent text-ih-accent hover:bg-ih-accent inline-flex h-9 items-center gap-2 border px-4 font-mono text-[12px] whitespace-nowrap transition-colors hover:text-white"
                   >
                     Download PDF ↓
                   </a>
                 ) : (
-                  <span className="font-mono text-[11px] text-ih-muted">no PDF</span>
+                  <span className="text-ih-muted font-mono text-[11px]">no PDF</span>
                 )}
               </div>
             ))}
@@ -342,28 +448,28 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
       )}
 
       {/* ── CTAs ────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+      <div className="mb-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
         <Link
           href={`/c`}
-          className="h-12 flex items-center justify-center bg-ih-navy text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
+          className="bg-ih-navy flex h-12 items-center justify-center text-[14px] font-medium text-white transition-opacity hover:opacity-90"
         >
           Continue browsing →
         </Link>
         <Link
           href={`/`}
-          className="h-12 flex items-center justify-center border border-ih-border text-ih-ink-2 font-medium text-[14px] hover:bg-ih-surface-2 transition-colors"
+          className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-12 items-center justify-center border text-[14px] font-medium transition-colors"
         >
           Back to home
         </Link>
       </div>
 
       {/* ── Add to RFQ tip ──────────────────────────────────────── */}
-      <div className="p-5 bg-ih-surface border border-ih-border flex gap-4 items-start text-[13px] text-ih-muted leading-[1.6]">
-        <span className="font-mono text-[14px] text-ih-muted shrink-0">ⓘ</span>
+      <div className="bg-ih-surface border-ih-border text-ih-muted flex items-start gap-4 border p-5 text-[13px] leading-[1.6]">
+        <span className="text-ih-muted shrink-0 font-mono text-[14px]">ⓘ</span>
         <div>
-          <b className="text-ih-ink">Need to add to this RFQ?</b>{' '}
-          Reply to the confirmation email or reach out directly — quoting{' '}
-          <b className="font-mono">{rfq.code}</b>. We&apos;ll merge it into a single quote so you don&apos;t get fragmented pricing.
+          <b className="text-ih-ink">Need to add to this RFQ?</b> Reply to the confirmation email or
+          reach out directly — quoting <b className="font-mono">{rfq.code}</b>. We&apos;ll merge it
+          into a single quote so you don&apos;t get fragmented pricing.
         </div>
       </div>
     </div>

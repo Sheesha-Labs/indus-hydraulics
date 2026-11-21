@@ -38,11 +38,7 @@ const PRODUCT_FIELDS = new Set([
 
 const CATEGORY_FIELDS = PRODUCT_FIELDS
 
-const SETTING_FIELDS = new Set([
-  'defaultMetaTitleTemplate',
-  'defaultMetaDescription',
-  'robotsTxt',
-])
+const SETTING_FIELDS = new Set(['defaultMetaTitleTemplate', 'defaultMetaDescription', 'robotsTxt'])
 
 const REDIRECT_FIELDS = new Set(['fromPath', 'toPath', 'statusCode'])
 
@@ -77,7 +73,14 @@ export async function revertChange(auditLogId: string): Promise<Result<void>> {
         if (!PRODUCT_FIELDS.has(row.field)) {
           return fail('PRECONDITION_FAILED', `Field "${row.field}" is not revertible on product`)
         }
-        return revertEntityField('product', row.entityId, row.field, beforeValue, afterValue, session.user.id)
+        return revertEntityField(
+          'product',
+          row.entityId,
+          row.field,
+          beforeValue,
+          afterValue,
+          session.user.id
+        )
       case 'category':
         if (!row.entityId) return fail('PRECONDITION_FAILED', 'Audit row missing entityId')
         if (!CATEGORY_FIELDS.has(row.field)) {
@@ -89,7 +92,7 @@ export async function revertChange(auditLogId: string): Promise<Result<void>> {
           row.field,
           beforeValue,
           afterValue,
-          session.user.id,
+          session.user.id
         )
       case 'global:seo_setting':
       case 'global:robots':
@@ -102,7 +105,7 @@ export async function revertChange(auditLogId: string): Promise<Result<void>> {
           row.field,
           beforeValue,
           afterValue,
-          session.user.id,
+          session.user.id
         )
       case 'redirect':
         if (!REDIRECT_FIELDS.has(row.field)) {
@@ -113,7 +116,7 @@ export async function revertChange(auditLogId: string): Promise<Result<void>> {
           row.field,
           beforeValue,
           afterValue,
-          session.user.id,
+          session.user.id
         )
       default:
         return fail('PRECONDITION_FAILED', `Unknown entity type ${row.entityType}`)
@@ -129,7 +132,7 @@ async function revertEntityField(
   field: string,
   beforeValue: unknown,
   afterValue: unknown,
-  actorId: string,
+  actorId: string
 ): Promise<Result<void>> {
   const data = mapFieldToData(field, beforeValue)
 
@@ -154,7 +157,7 @@ async function revertEntityField(
           data: { ...data, seoUpdatedAt: new Date(), seoUpdatedById: actorId },
         })
       }
-    },
+    }
   )
 
   revalidatePath(`/admin/${entityType === 'product' ? 'products' : 'categories'}/${entityId}/edit`)
@@ -169,7 +172,7 @@ async function revertSettingField(
   field: string,
   beforeValue: unknown,
   afterValue: unknown,
-  actorId: string,
+  actorId: string
 ): Promise<Result<void>> {
   await withSeoAudit(
     {
@@ -188,7 +191,7 @@ async function revertSettingField(
       } else {
         await tx.seoSetting.create({ data })
       }
-    },
+    }
   )
 
   revalidatePath('/admin/seo')
@@ -203,7 +206,7 @@ async function revertRedirectField(
   field: string,
   beforeValue: unknown,
   afterValue: unknown,
-  actorId: string,
+  actorId: string
 ): Promise<Result<void>> {
   if (!entityId) return fail('PRECONDITION_FAILED', 'Audit row missing redirect id')
   // Reverting a delete (before set, after null on all fields) recreates
@@ -227,7 +230,7 @@ async function revertRedirectField(
       }
       // We don't auto-recreate fully-deleted redirects from an audit row —
       // that's a Phase 2 enhancement; today admins re-add via the form.
-    },
+    }
   )
 
   revalidatePath('/admin/seo/redirects')

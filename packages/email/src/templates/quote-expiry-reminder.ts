@@ -25,17 +25,16 @@ export type QuoteExpiryReminderProps = {
   >
 }
 
-export function renderQuoteExpiryReminder(
-  props: QuoteExpiryReminderProps,
-): { subject: string; html: string } {
+export function renderQuoteExpiryReminder(props: QuoteExpiryReminderProps): {
+  subject: string
+  html: string
+} {
   const codeDisplay = props.revisionLabel
     ? `${props.quoteCode} ${props.revisionLabel}`
     : props.quoteCode
 
   const expiryPhrase =
-    props.daysLeft === 0
-      ? 'today'
-      : `in ${props.daysLeft} day${props.daysLeft !== 1 ? 's' : ''}`
+    props.daysLeft === 0 ? 'today' : `in ${props.daysLeft} day${props.daysLeft !== 1 ? 's' : ''}`
 
   const subject = `Reminder: Quotation ${codeDisplay} expires ${expiryPhrase}`
 
@@ -43,10 +42,8 @@ export function renderQuoteExpiryReminder(
 <p style="margin:0 0 16px 0;">Dear ${escapeHtml(props.customerName)},</p>
 
 <p style="margin:0 0 16px 0;">A quick reminder that quotation <b>${escapeHtml(
-    codeDisplay,
-  )}</b> is set to expire on <b>${escapeHtml(
-    props.expiresOnDisplay,
-  )}</b>${
+    codeDisplay
+  )}</b> is set to expire on <b>${escapeHtml(props.expiresOnDisplay)}</b>${
     props.daysLeft === 0
       ? ' &mdash; that&rsquo;s today.'
       : ` &mdash; that&rsquo;s ${escapeHtml(expiryPhrase)}.`
@@ -56,7 +53,7 @@ export function renderQuoteExpiryReminder(
 
 <p style="margin:0 0 24px 0;">
   <a href="${escapeHtml(
-    props.viewUrl,
+    props.viewUrl
   )}" style="display:inline-block;background:${BRAND.accent};color:${BRAND.white};padding:10px 18px;text-decoration:none;font-weight:500;">
     View the quotation online
   </a>

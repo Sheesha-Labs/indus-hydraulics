@@ -202,7 +202,7 @@ describe('media', () => {
     ])
     expect(collectMediaIds(resolved)).toEqual(['abc'])
     attachMedia(resolved, (id) =>
-      id === 'abc' ? { url: 'https://cdn/x.jpg', width: 10, height: 20 } : null,
+      id === 'abc' ? { url: 'https://cdn/x.jpg', width: 10, height: 20 } : null
     )
     expect((resolved[0]!.values.image as { url?: string | null }).url).toBe('https://cdn/x.jpg')
   })
@@ -218,7 +218,12 @@ describe('media', () => {
 
 describe('list readers', () => {
   test('visibleList drops items switched off', () => {
-    const values = { items: [{ enabled: true, name: 'a' }, { enabled: false, name: 'b' }] }
+    const values = {
+      items: [
+        { enabled: true, name: 'a' },
+        { enabled: false, name: 'b' },
+      ],
+    }
     expect(visibleList(values, 'items')).toHaveLength(1)
     expect(list(values, 'items')).toHaveLength(2)
   })
@@ -227,7 +232,7 @@ describe('list readers', () => {
 describe('interpolate', () => {
   test('substitutes known tokens and formats numbers', () => {
     expect(interpolate('{skus}+ SKUs from {brands} brands', { skus: 1234, brands: 27 })).toBe(
-      '1,234+ SKUs from 27 brands',
+      '1,234+ SKUs from 27 brands'
     )
   })
 
@@ -259,12 +264,12 @@ describe('registry', () => {
       for (const section of page.sections) {
         const keys = section.fields.map((f) => f.key)
         expect(new Set(keys).size, `${page.key}/${section.key} duplicate field key`).toBe(
-          keys.length,
+          keys.length
         )
         for (const field of section.fields) {
           expect(
             Object.prototype.hasOwnProperty.call(section.defaults, field.key),
-            `${page.key}/${section.key}/${field.key} has no default`,
+            `${page.key}/${section.key}/${field.key} has no default`
           ).toBe(true)
         }
       }
@@ -349,7 +354,7 @@ describe('sub-pages', () => {
       for (const field of section.fields) {
         expect(
           section.defaults[field.key] ?? null,
-          `${section.key}/${field.key} ships a value instead of an override`,
+          `${section.key}/${field.key} ships a value instead of an override`
         ).toBeNull()
       }
     }
@@ -359,7 +364,7 @@ describe('sub-pages', () => {
     const def = subPageDef('market', { name: 'Nigeria', slug: 'nigeria' })
     const result = validateSections(
       def,
-      def.sections.map((s) => ({ key: s.key, enabled: true, values: {} })),
+      def.sections.map((s) => ({ key: s.key, enabled: true, values: {} }))
     )
     expect(result.ok).toBe(true)
   })
@@ -391,7 +396,7 @@ describe('brand sub-pages', () => {
       for (const field of section.fields) {
         expect(
           section.defaults[field.key] ?? null,
-          `${section.key}/${field.key} ships a value instead of an override`,
+          `${section.key}/${field.key} ships a value instead of an override`
         ).toBeNull()
       }
     }

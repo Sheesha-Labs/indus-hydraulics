@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import AdminSignInForm from './AdminSignInForm'
 import { safeNextPath } from '../../../lib/safe-next-path'
 
@@ -15,41 +16,43 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
   // page has ever read it, so those links were silently dropped.
   const next = safeNextPath((await searchParams).next) ?? undefined
 
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
+  const year = new Date().getFullYear()
   return (
-    <div className="min-h-screen bg-[var(--color-ih-navy)] flex items-center justify-center p-6">
+    <div className="flex min-h-screen items-center justify-center bg-[var(--color-ih-navy)] p-6">
       <div className="w-full max-w-[380px]">
         {/* Brand */}
-        <div className="flex items-center gap-3 mb-8">
-          <div className="relative w-10 h-10 bg-[#ffffff] grid place-items-center tabular-nums font-medium text-[14px] text-[#111] rounded-sm">
+        <div className="mb-8 flex items-center gap-3">
+          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#ffffff] text-[14px] font-medium text-[#111] tabular-nums">
             IH
-            <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-ih-accent" />
+            <span className="bg-ih-accent absolute -right-0.5 -bottom-0.5 h-2 w-2" />
           </div>
           <div>
-            <div className="font-medium text-white leading-tight">Indus Hydraulics</div>
-            <div className="tabular-nums text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase">
+            <div className="leading-tight font-medium text-white">Indus Hydraulics</div>
+            <div className="text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase tabular-nums">
               Admin Portal
             </div>
           </div>
         </div>
 
-        <div className="rounded-lg bg-[var(--color-ih-navy-2)] border border-[var(--color-ih-navy-2)] p-8">
-          <h1 className="text-[22px] font-medium text-white mb-1">Staff sign in</h1>
-          <p className="text-[13px] text-[oklch(0.68_0.03_250)] mb-7">
+        <div className="rounded-lg border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
+          <h1 className="mb-1 text-[22px] font-medium text-white">Staff sign in</h1>
+          <p className="mb-7 text-[13px] text-[oklch(0.68_0.03_250)]">
             This portal is for Indus Hydraulics staff only.
           </p>
 
           <AdminSignInForm next={next} />
 
-          <a
+          <Link
             href="/admin/forgot-password"
             className="mt-5 block text-center text-[13px] text-[oklch(0.68_0.03_250)] transition-colors hover:text-[oklch(0.75_0.02_250)]"
           >
             Forgot your password?
-          </a>
+          </Link>
         </div>
 
-        <p className="text-center tabular-nums text-[11px] text-[oklch(0.62_0.03_250)] mt-6">
-          © {new Date().getFullYear()} Indus Hydraulics
+        <p className="mt-6 text-center text-[11px] text-[oklch(0.62_0.03_250)] tabular-nums">
+          © {year} Indus Hydraulics
         </p>
       </div>
     </div>

@@ -40,7 +40,7 @@ describe('normaliseFacetValue', () => {
 describe('buildSpecFacets', () => {
   it('keeps a spec that genuinely partitions the products', () => {
     const facets = buildSpecFacets(
-      rows({ 'Body Configuration': { straight: ['a', 'b', 'c'], '90 elbow': ['d', 'e'] } }),
+      rows({ 'Body Configuration': { straight: ['a', 'b', 'c'], '90 elbow': ['d', 'e'] } })
     )
     expect(facets).toHaveLength(1)
     expect(facets[0]!.key).toBe('body-configuration')
@@ -50,7 +50,7 @@ describe('buildSpecFacets', () => {
   it('drops a single-value spec', () => {
     // `Max Working Pressure` on BSP adapters: one value across 44 products.
     expect(
-      buildSpecFacets(rows({ 'Max Working Pressure': { 'up to 400 bar': ['a', 'b', 'c'] } })),
+      buildSpecFacets(rows({ 'Max Working Pressure': { 'up to 400 bar': ['a', 'b', 'c'] } }))
     ).toEqual([])
   })
 
@@ -64,7 +64,7 @@ describe('buildSpecFacets', () => {
 
   it('drops a spec where only one value groups anything', () => {
     const facets = buildSpecFacets(
-      rows({ Mixed: { common: ['a', 'b', 'c'], one: ['d'], two: ['e'] } }),
+      rows({ Mixed: { common: ['a', 'b', 'c'], one: ['d'], two: ['e'] } })
     )
     expect(facets).toEqual([])
   })
@@ -77,7 +77,7 @@ describe('buildSpecFacets', () => {
           '90 elbow': ['d'],
           straight: ['e', 'f'],
         },
-      }),
+      })
     )
     const elbow = facets[0]!.values.find((v) => v.key === '90elbow')!
     expect(elbow.count).toBe(4)
@@ -104,7 +104,7 @@ describe('buildSpecFacets', () => {
 
   it('ignores blank values', () => {
     expect(
-      buildSpecFacets(rows({ Material: { '': ['a', 'b'], '  ': ['c'], Steel: ['d', 'e'] } })),
+      buildSpecFacets(rows({ Material: { '': ['a', 'b'], '  ': ['c'], Steel: ['d', 'e'] } }))
     ).toEqual([])
   })
 
@@ -113,7 +113,7 @@ describe('buildSpecFacets', () => {
       rows({
         Narrow: { yes: ['a', 'b'], no: ['c', 'd'] },
         Wide: { one: ['a', 'b'], two: ['c', 'd'], three: ['e', 'f'] },
-      }),
+      })
     )
     expect(facets.map((f) => f.label)).toEqual(['Wide', 'Narrow'])
   })
@@ -130,7 +130,7 @@ describe('the URL round-trip', () => {
           'JIS 30° cone (60° included), BSP thread': ['a', 'b'],
           'Plain end': ['c', 'd'],
         },
-      }),
+      })
     )
     const facet = facets[0]!
     const value = facet.values.find((v) => v.label.startsWith('JIS'))!
@@ -139,15 +139,17 @@ describe('the URL round-trip', () => {
     expect(url).not.toContain('/')
 
     const parsed = parseSpecFilter(url)
-    expect(productIdsMatching(
-      rows({
-        'Figure / Pressure Series': {
-          'JIS 30° cone (60° included), BSP thread': ['a', 'b'],
-          'Plain end': ['c', 'd'],
-        },
-      }),
-      parsed,
-    )).toEqual(new Set(['a', 'b']))
+    expect(
+      productIdsMatching(
+        rows({
+          'Figure / Pressure Series': {
+            'JIS 30° cone (60° included), BSP thread': ['a', 'b'],
+            'Plain end': ['c', 'd'],
+          },
+        }),
+        parsed
+      )
+    ).toEqual(new Set(['a', 'b']))
   })
 
   it('round-trips several facets', () => {
@@ -163,7 +165,9 @@ describe('the URL round-trip', () => {
 
   it('is undefined when nothing is selected', () => {
     expect(serialiseSpecFilter(new Map())).toBeUndefined()
-    expect(serialiseSpecFilter(toggleSpecValue(toggleSpecValue(new Map(), 'a', 'b'), 'a', 'b'))).toBeUndefined()
+    expect(
+      serialiseSpecFilter(toggleSpecValue(toggleSpecValue(new Map(), 'a', 'b'), 'a', 'b'))
+    ).toBeUndefined()
   })
 
   it('ignores malformed input rather than throwing', () => {
@@ -210,27 +214,32 @@ describe('productIdsMatching', () => {
   })
 
   it('ORs values inside one facet', () => {
-    expect(productIdsMatching(data, parseSpecFilter('body-configuration:straight,90elbow'))).toEqual(
-      new Set(['a', 'b', 'c', 'd']),
-    )
+    expect(
+      productIdsMatching(data, parseSpecFilter('body-configuration:straight,90elbow'))
+    ).toEqual(new Set(['a', 'b', 'c', 'd']))
   })
 
   it('ANDs across facets', () => {
     expect(
-      productIdsMatching(data, parseSpecFilter('body-configuration:straight;port-a-sealing:orb')),
+      productIdsMatching(data, parseSpecFilter('body-configuration:straight;port-a-sealing:orb'))
     ).toEqual(new Set(['a']))
   })
 
   it('returns empty when the combination matches nothing', () => {
     expect(
-      productIdsMatching(data, parseSpecFilter('body-configuration:straight;port-a-sealing:nothing')),
+      productIdsMatching(
+        data,
+        parseSpecFilter('body-configuration:straight;port-a-sealing:nothing')
+      )
     ).toEqual(new Set())
   })
 
   it('matches on the normalised value, so a spelling variant still filters', () => {
-    const mixed = rows({ 'Body Configuration': { '90-elbow': ['a'], '90 elbow': ['b'], straight: ['c', 'd'] } })
+    const mixed = rows({
+      'Body Configuration': { '90-elbow': ['a'], '90 elbow': ['b'], straight: ['c', 'd'] },
+    })
     expect(productIdsMatching(mixed, parseSpecFilter('body-configuration:90elbow'))).toEqual(
-      new Set(['a', 'b']),
+      new Set(['a', 'b'])
     )
   })
 })

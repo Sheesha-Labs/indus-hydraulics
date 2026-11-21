@@ -59,7 +59,7 @@ export default function MarketReachSection({
     >
       {groups.map((group) => (
         <div key={group.region}>
-          <dt className="mono text-ih-muted text-[10.5px] uppercase tracking-[0.12em]">
+          <dt className="mono text-ih-muted text-[10.5px] tracking-[0.12em] uppercase">
             {group.region}
           </dt>
           <dd className="text-ih-ink m-0 mt-1 text-[14px] leading-[1.55]">
@@ -95,10 +95,10 @@ export default function MarketReachSection({
       <section className="border-ih-border border-t py-14">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-16">
           <div>
-            <p className="mono text-ih-muted mb-2 text-[10.5px] uppercase tracking-[0.12em]">
+            <p className="mono text-ih-muted mb-2 text-[10.5px] tracking-[0.12em] uppercase">
               Delivery
             </p>
-            <h2 className="text-ih-ink m-0 font-sans text-[28px] font-semibold leading-[1.15] tracking-[-0.02em]">
+            <h2 className="text-ih-ink m-0 font-sans text-[28px] leading-[1.15] font-semibold tracking-[-0.02em]">
               {reach.heading}
             </h2>
           </div>
@@ -118,10 +118,10 @@ export default function MarketReachSection({
 
   return (
     <aside className="border-ih-border bg-ih-surface-2 my-8 rounded-lg border px-5 py-5">
-      <p className="mono text-ih-muted mb-1.5 text-[10.5px] uppercase tracking-[0.12em]">
+      <p className="mono text-ih-muted mb-1.5 text-[10.5px] tracking-[0.12em] uppercase">
         Delivery
       </p>
-      <h2 className="text-ih-ink m-0 font-sans text-[19px] font-semibold leading-[1.25] tracking-[-0.01em]">
+      <h2 className="text-ih-ink m-0 font-sans text-[19px] leading-[1.25] font-semibold tracking-[-0.01em]">
         {reach.heading}
       </h2>
       <p className="text-ih-muted mt-2.5 text-[14.5px] leading-[1.6]">{reach.body}</p>

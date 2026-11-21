@@ -33,7 +33,7 @@ export const getThreadReference = unstable_cache(
     const readings = buildThreadReference(
       rows
         .filter((r): r is typeof r & { portLabel: string } => Boolean(r.portLabel?.trim()))
-        .map((r) => ({ label: r.portLabel, variants: r._count._all })),
+        .map((r) => ({ label: r.portLabel, variants: r._count._all }))
     )
 
     return groupThreadReference(readings)
@@ -43,5 +43,5 @@ export const getThreadReference = unstable_cache(
   // one; when the returned shape changes, the key has to change with it or the
   // page renders yesterday's fields as blanks. Bump it whenever ThreadReading does.
   ['thread-reference', 'v2'],
-  { tags: [STOREFRONT_TAGS.products], revalidate: 3600 },
+  { tags: [STOREFRONT_TAGS.products], revalidate: 3600 }
 )

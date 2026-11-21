@@ -29,14 +29,7 @@ type CmsPage = {
   ogImageStoragePath: string | null
   sitemapPriority: number | null
   sitemapChangeFreq:
-    | 'always'
-    | 'hourly'
-    | 'daily'
-    | 'weekly'
-    | 'monthly'
-    | 'yearly'
-    | 'never'
-    | null
+    'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | null
   excludeFromSitemap: boolean
   jsonLdOverride: string | null
 }
@@ -77,19 +70,17 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
 
   return (
     <AdminPageShell
-      title={isNew ? 'New Page' : page?.title ?? 'Edit Page'}
+      title={isNew ? 'New Page' : (page?.title ?? 'Edit Page')}
       actions={
         <>
           {/* savedAt is client state, bumped by this editor's own tabs. The
               header therefore stays in the client component: moving it up to
               the server page would sever the indicator from every writer and
               it would never appear after a save. */}
-          {savedAt && (
-            <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
-          )}
+          {savedAt && <span className="text-ih-success-ink text-[12px]">Saved at {savedAt}</span>}
           <Link
             href="/admin/pages"
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             ← CMS
           </Link>
@@ -97,18 +88,17 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
       }
       bodyClassName="max-w-[860px]"
     >
-
       {!isNew && (
-        <div className="flex border-b border-ih-border mb-6">
+        <div className="border-ih-border mb-6 flex border-b">
           {TABS.map((t) => (
             <button
               key={t.id}
               type="button"
               onClick={() => setTab(t.id)}
-              className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px ${
+              className={`-mb-px border-b-2 px-4 py-2.5 text-[12px] tabular-nums ${
                 tab === t.id
                   ? 'border-ih-accent text-ih-ink'
-                  : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+                  : 'text-ih-muted hover:text-ih-ink-2 border-transparent'
               }`}
             >
               {t.label}
@@ -137,11 +127,14 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
 function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) {
   return (
     <form action={savePage} className="flex flex-col gap-5">
-      <input type="hidden" name="id" value={isNew ? 'new' : page?.id ?? ''} />
+      <input type="hidden" name="id" value={isNew ? 'new' : (page?.id ?? '')} />
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label htmlFor="cmspage-title" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label
+            htmlFor="cmspage-title"
+            className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+          >
             Title *
           </label>
           <Input
@@ -149,10 +142,15 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             name="title"
             required
             defaultValue={page?.title ?? ''}
-            type="text" className="text-[15px] font-medium" />
+            type="text"
+            className="text-[15px] font-medium"
+          />
         </div>
         <div>
-          <label htmlFor="cmspage-slug" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label
+            htmlFor="cmspage-slug"
+            className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+          >
             Slug *
           </label>
           <Input
@@ -161,12 +159,17 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             required
             defaultValue={page?.slug ?? ''}
             type="text"
-            placeholder="about, contact, terms" className="tabular-nums" />
+            placeholder="about, contact, terms"
+            className="tabular-nums"
+          />
         </div>
       </div>
 
       <div>
-        <label htmlFor="cmspage-body" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label
+          htmlFor="cmspage-body"
+          className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+        >
           Body *
         </label>
         <Textarea
@@ -175,33 +178,47 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           required
           defaultValue={page?.body ?? ''}
           rows={20}
-          placeholder="Page content (HTML)" className="tabular-nums resize-none" />
+          placeholder="Page content (HTML)"
+          className="resize-none tabular-nums"
+        />
       </div>
 
-      <div className="border-t border-ih-border pt-4">
-        <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
+      <div className="border-ih-border border-t pt-4">
+        <p className="text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           SEO basics
         </p>
-        <p className="text-[12px] text-ih-muted-2 mb-3">
-          For canonical URLs, OG images, sitemap controls, and robots overrides, switch to the
-          SEO tab.
+        <p className="text-ih-muted-2 mb-3 text-[12px]">
+          For canonical URLs, OG images, sitemap controls, and robots overrides, switch to the SEO
+          tab.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="cmspage-seoTitle" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Title</label>
+            <label
+              htmlFor="cmspage-seoTitle"
+              className="text-ih-muted mb-1 block text-[11px] tabular-nums"
+            >
+              Meta Title
+            </label>
             <Input
               id="cmspage-seoTitle"
               name="seoTitle"
               defaultValue={page?.seoTitle ?? ''}
-              type="text" />
+              type="text"
+            />
           </div>
           <div>
-            <label htmlFor="cmspage-seoDescription" className="block tabular-nums text-[11px] text-ih-muted mb-1">Meta Description</label>
+            <label
+              htmlFor="cmspage-seoDescription"
+              className="text-ih-muted mb-1 block text-[11px] tabular-nums"
+            >
+              Meta Description
+            </label>
             <Input
               id="cmspage-seoDescription"
               name="seoDescription"
               defaultValue={page?.seoDescription ?? ''}
-              type="text" />
+              type="text"
+            />
           </div>
         </div>
       </div>
@@ -211,7 +228,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           type="submit"
           name="publish"
           value="0"
-          className="rounded-md h-10 px-6 border border-ih-border text-[13px] font-medium hover:bg-ih-surface-2"
+          className="border-ih-border hover:bg-ih-surface-2 h-10 rounded-md border px-6 text-[13px] font-medium"
         >
           Save Draft
         </button>
@@ -219,7 +236,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           type="submit"
           name="publish"
           value="1"
-          className="h-10 px-6 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-10 px-6 text-[13px] font-medium"
         >
           {page?.isPublished ? 'Update' : 'Publish'}
         </button>

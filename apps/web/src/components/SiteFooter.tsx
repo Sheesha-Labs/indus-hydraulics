@@ -19,6 +19,7 @@ export default async function SiteFooter() {
 
   const cmsColumns = main?.items ?? []
   const legalLinks = legal?.items ?? []
+  // eslint-disable-next-line react/purity -- Server Component: reading the clock at render is intended here.
   const year = new Date().getFullYear()
   // Resolved here, not in the bottom bar below, because the fallback needs the
   // legal entity and the year together and the bar should render a string.
@@ -41,9 +42,12 @@ export default async function SiteFooter() {
   } as React.CSSProperties
 
   return (
-    <footer className="mt-auto bg-ih-navy text-[oklch(0.82_0.02_250)]">
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pb-7 pt-16">
-        <div className="grid grid-cols-1 gap-10 md:[grid-template-columns:var(--footer-cols)]" style={gridStyle}>
+    <footer className="bg-ih-navy mt-auto text-[oklch(0.82_0.02_250)]">
+      <div className="mx-auto max-w-[1440px] px-5 pt-16 pb-7 sm:px-8 xl:px-12">
+        <div
+          className="grid grid-cols-1 gap-10 md:[grid-template-columns:var(--footer-cols)]"
+          style={gridStyle}
+        >
           <BrandBlock settings={settings} socials={socials} />
           {cmsColumns.map((column) => (
             <FooterColumn key={column.id} column={column} />
@@ -51,7 +55,7 @@ export default async function SiteFooter() {
           <ContactBlock settings={settings} />
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-10 pt-8 border-t border-ih-navy-2">
+        <div className="border-ih-navy-2 mt-10 flex flex-col items-start justify-between gap-4 border-t pt-8 sm:flex-row sm:items-center">
           <p className="font-mono text-[11px] text-[oklch(0.62_0.03_250)]">{legalLine}</p>
           {legalLinks.length > 0 && (
             <div className="flex gap-6 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">
@@ -62,11 +66,11 @@ export default async function SiteFooter() {
                     href={link.href}
                     target={link.openInNewTab ? '_blank' : undefined}
                     rel={link.openInNewTab ? 'noopener noreferrer' : undefined}
-                    className="hover:text-white transition-colors"
+                    className="transition-colors hover:text-white"
                   >
                     {link.label}
                   </Link>
-                ) : null,
+                ) : null
               )}
             </div>
           )}
@@ -101,11 +105,11 @@ function BrandBlock({
           surface="footer"
         />
       </div>
-      {settings.tagline && (
-        <p className="text-[13px] leading-relaxed">{settings.tagline}</p>
-      )}
+      {settings.tagline && <p className="text-[13px] leading-relaxed">{settings.tagline}</p>}
       {settings.certificationLine && (
-        <p className="mt-4 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">{settings.certificationLine}</p>
+        <p className="mt-4 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">
+          {settings.certificationLine}
+        </p>
       )}
       {socials.length > 0 && (
         /*
@@ -129,7 +133,7 @@ function BrandBlock({
                 */
                 aria-label={social.label}
                 title={social.label}
-                className="flex h-10 w-10 items-center justify-center rounded border border-ih-navy-2 hover:border-[oklch(0.82_0.02_250)] hover:text-white transition-colors"
+                className="border-ih-navy-2 flex h-10 w-10 items-center justify-center rounded border transition-colors hover:border-[oklch(0.82_0.02_250)] hover:text-white"
               >
                 <SocialIcon platform={social.platform} className="h-[18px] w-[18px]" />
               </a>
@@ -144,7 +148,7 @@ function BrandBlock({
 function FooterColumn({ column }: { column: ResolvedNavItem }) {
   return (
     <div>
-      <h3 className="mb-4 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-[oklch(0.68_0.03_250)]">
+      <h3 className="mb-4 font-mono text-[10.5px] font-medium tracking-[0.12em] text-[oklch(0.68_0.03_250)] uppercase">
         {column.label}
       </h3>
       <ul className="flex flex-col gap-2.5 text-[13px]">
@@ -155,12 +159,12 @@ function FooterColumn({ column }: { column: ResolvedNavItem }) {
                 href={item.href}
                 target={item.openInNewTab ? '_blank' : undefined}
                 rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
-                className="hover:text-white transition-colors"
+                className="transition-colors hover:text-white"
               >
                 {item.label}
               </Link>
             </li>
-          ) : null,
+          ) : null
         )}
       </ul>
     </div>
@@ -186,12 +190,17 @@ function ContactBlock({ settings }: { settings: ResolvedStoreSettings }) {
     // street address sized it to the whole line and squeezed the link columns
     // until they overlapped.
     <div className="md:max-w-[260px]">
-      <h3 className="mb-4 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-[oklch(0.68_0.03_250)]">Contact</h3>
+      <h3 className="mb-4 font-mono text-[10.5px] font-medium tracking-[0.12em] text-[oklch(0.68_0.03_250)] uppercase">
+        Contact
+      </h3>
       <div className="flex flex-col gap-3 text-[13px]">
-        {(settings.contactLocationLabel || settings.contactPhone || settings.contactEmail || addressLines.length > 0) && (
+        {(settings.contactLocationLabel ||
+          settings.contactPhone ||
+          settings.contactEmail ||
+          addressLines.length > 0) && (
           <address className="not-italic">
             {settings.contactLocationLabel && (
-              <div className="mb-0.5 font-mono text-[10px] uppercase text-[oklch(0.68_0.03_250)]">
+              <div className="mb-0.5 font-mono text-[10px] text-[oklch(0.68_0.03_250)] uppercase">
                 {settings.contactLocationLabel}
               </div>
             )}
@@ -204,14 +213,20 @@ function ContactBlock({ settings }: { settings: ResolvedStoreSettings }) {
             )}
             {settings.contactPhone && (
               <div>
-                <a href={`tel:${settings.contactPhone.replace(/[^+\d]/g, '')}`} className="hover:text-white transition-colors">
+                <a
+                  href={`tel:${settings.contactPhone.replace(/[^+\d]/g, '')}`}
+                  className="transition-colors hover:text-white"
+                >
                   {settings.contactPhone}
                 </a>
               </div>
             )}
             {settings.contactEmail && (
               <div>
-                <a href={`mailto:${settings.contactEmail}`} className="hover:text-white transition-colors">
+                <a
+                  href={`mailto:${settings.contactEmail}`}
+                  className="transition-colors hover:text-white"
+                >
                   {settings.contactEmail}
                 </a>
               </div>
@@ -220,7 +235,9 @@ function ContactBlock({ settings }: { settings: ResolvedStoreSettings }) {
         )}
         {settings.contactHours && (
           <div>
-            <div className="mb-0.5 font-mono text-[10px] uppercase text-[oklch(0.68_0.03_250)]">Hours</div>
+            <div className="mb-0.5 font-mono text-[10px] text-[oklch(0.68_0.03_250)] uppercase">
+              Hours
+            </div>
             <div>{settings.contactHours}</div>
           </div>
         )}

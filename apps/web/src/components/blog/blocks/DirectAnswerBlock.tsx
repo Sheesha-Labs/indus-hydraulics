@@ -18,13 +18,17 @@ export default function DirectAnswerBlockView({
   return (
     <aside
       aria-label="Quick answer"
-      className="rounded-lg border border-ih-accent-line bg-ih-accent-soft p-5 min-[761px]:px-[26px] min-[761px]:py-6"
+      className="border-ih-accent-line bg-ih-accent-soft rounded-lg border p-5 min-[761px]:px-[26px] min-[761px]:py-6"
     >
-      <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent">Quick answer</p>
-      <Heading className="mt-2.5 text-[18px] font-semibold leading-[1.3] tracking-[-0.015em] text-ih-ink min-[761px]:text-[20px]">
+      <p className="text-ih-accent font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+        Quick answer
+      </p>
+      <Heading className="text-ih-ink mt-2.5 text-[18px] leading-[1.3] font-semibold tracking-[-0.015em] min-[761px]:text-[20px]">
         {block.question}
       </Heading>
-      <p className="mt-2 text-[15.5px] leading-[1.65] text-ih-ink min-[761px]:text-[16.5px]">{block.answer}</p>
+      <p className="text-ih-ink mt-2 text-[15.5px] leading-[1.65] min-[761px]:text-[16.5px]">
+        {block.answer}
+      </p>
     </aside>
   )
 }

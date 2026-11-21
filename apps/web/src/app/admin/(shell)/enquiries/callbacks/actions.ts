@@ -15,11 +15,16 @@ const schema = z.object({
 })
 
 /** Move a call-back along — called, quoted, closed or spam — and keep a note. */
-export async function updateCallbackLead(input: z.input<typeof schema>): Promise<Result<{ message: string }>> {
+export async function updateCallbackLead(
+  input: z.input<typeof schema>
+): Promise<Result<{ message: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.RFQ_REVIEW)
     const { id, status, notes } = schema.parse(input)
-    const found = await db.callbackLead.findUnique({ where: { id }, select: { id: true, assignedToId: true } })
+    const found = await db.callbackLead.findUnique({
+      where: { id },
+      select: { id: true, assignedToId: true },
+    })
     if (!found) return fail('NOT_FOUND', 'That call-back no longer exists.')
     await db.callbackLead.update({
       where: { id },

@@ -15,7 +15,7 @@ import { describe, expect, test } from 'vitest'
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const payload = JSON.parse(
-  readFileSync(path.join(HERE, '../data/crimp-fittings/catalogue.json'), 'utf8'),
+  readFileSync(path.join(HERE, '../data/crimp-fittings/catalogue.json'), 'utf8')
 ) as {
   products: {
     sku: string
@@ -30,7 +30,7 @@ const payload = JSON.parse(
 }
 
 const withMpn = payload.products.flatMap((p) =>
-  p.variants.filter((v) => v.competitorMpn).map((v) => ({ sku: p.sku, refs: p.competitorRefs, v })),
+  p.variants.filter((v) => v.competitorMpn).map((v) => ({ sku: p.sku, refs: p.competitorRefs, v }))
 )
 
 describe('crimp fitting competitor numbers', () => {
@@ -43,10 +43,7 @@ describe('crimp fitting competitor numbers', () => {
       .filter(({ refs, v }) => {
         const m = v.competitorMpn!.match(/^(.+)-(\d+)-(\d+)$/)
         return (
-          !m ||
-          !refs.includes(m[1]!) ||
-          Number(m[2]) !== v.portDash ||
-          Number(m[3]) !== v.hoseDash
+          !m || !refs.includes(m[1]!) || Number(m[2]) !== v.portDash || Number(m[3]) !== v.hoseDash
         )
       })
       .map(({ v }) => `${v.partNumber} ${v.competitorMpn}`)

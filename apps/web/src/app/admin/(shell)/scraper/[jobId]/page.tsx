@@ -80,7 +80,11 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
   if (!job) notFound()
 
   const [brandsRaw, categoriesRaw, countsRaw] = await Promise.all([
-    db.brand.findMany({ where: { isPublished: true }, orderBy: { name: 'asc' }, select: { id: true, name: true } }),
+    db.brand.findMany({
+      where: { isPublished: true },
+      orderBy: { name: 'asc' },
+      select: { id: true, name: true },
+    }),
     db.category.findMany({
       orderBy: { name: 'asc' },
       select: { id: true, name: true, parentId: true },
@@ -144,7 +148,11 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
   // Preload attach-target details for rows in attach mode.
   const attachTargetIds = Array.from(
-    new Set(rowsRaw.flatMap((r) => (r.ingestMode === 'attach_to_existing' && r.targetProductId ? [r.targetProductId] : []))),
+    new Set(
+      rowsRaw.flatMap((r) =>
+        r.ingestMode === 'attach_to_existing' && r.targetProductId ? [r.targetProductId] : []
+      )
+    )
   )
   const attachTargets =
     attachTargetIds.length > 0
@@ -171,7 +179,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
         brandName: p.brand?.name ?? null,
         imageCount: p._count.images,
       },
-    ]),
+    ])
   )
 
   // Pre-compute auto-suggestions + SKU clash detection for the current page.
@@ -183,7 +191,11 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
   //   `hasSkuClash` so the card shows a "DUPE" badge.
   const effectiveSkuByRowId = new Map<string, string>()
   for (const r of rowsRaw) {
-    const s = (r.editedSku?.trim() || r.sourceSku?.trim() || slugifyLastPathSegment(r.sourceUrl)).slice(0, 64)
+    const s = (
+      r.editedSku?.trim() ||
+      r.sourceSku?.trim() ||
+      slugifyLastPathSegment(r.sourceUrl)
+    ).slice(0, 64)
     if (s) effectiveSkuByRowId.set(r.id, s)
   }
   const skuSet = Array.from(new Set(effectiveSkuByRowId.values()))
@@ -195,7 +207,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
               where: { sku: { in: skuSet } },
               select: { sku: true },
             })
-          ).map((p) => p.sku),
+          ).map((p) => p.sku)
         )
       : new Set<string>()
 
@@ -219,12 +231,12 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       sourceBrandText: r.sourceBrandText,
       sourceCategoryText: r.sourceCategoryText,
       candidateImages: (r.candidateImages ?? []) as unknown as ScrapedRowData['candidateImages'],
-      deselectedImageUrls: ((r.deselectedImageUrls ?? []) as unknown as string[]) ?? [],
+      deselectedImageUrls: (r.deselectedImageUrls ?? []) as unknown as string[],
       selectionStatus: r.selectionStatus,
       ingestMode: r.ingestMode,
       targetProduct:
         r.ingestMode === 'attach_to_existing' && r.targetProductId
-          ? attachTargetById.get(r.targetProductId) ?? null
+          ? (attachTargetById.get(r.targetProductId) ?? null)
           : null,
       editedTitle: r.editedTitle,
       editedSku: r.editedSku,
@@ -260,17 +272,19 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
               they qualify it, and dropping them (v2's actions slot is nominally
               buttons-only) would remove the only signal that a crawl is still
               running. */}
-          <span className={`rounded-md px-2 py-0.5 text-[10.5px] tabular-nums uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
+          <span
+            className={`rounded-md px-2 py-0.5 text-[10.5px] tracking-wider uppercase tabular-nums ${STATUS_STYLES[job.status]}`}
+          >
             {STATUS_LABELS[job.status]}
           </span>
           {isLive && (
-            <span className="tabular-nums text-[11px] uppercase tracking-wider text-ih-muted">
+            <span className="text-ih-muted text-[11px] tracking-wider uppercase tabular-nums">
               Auto-refreshing every 3s
             </span>
           )}
           <Link
             href="/admin/scraper"
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             ← Back to crawls
           </Link>
@@ -279,21 +293,27 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
     >
       <AutoRefresh active={isLive} />
 
-      {job.notes && <p className="mb-6 text-[12px] text-ih-ink-2">{job.notes}</p>}
+      {job.notes && <p className="text-ih-ink-2 mb-6 text-[12px]">{job.notes}</p>}
 
       {/* Stat tiles */}
-      <section className="grid grid-cols-2 md:grid-cols-6 gap-3 mb-6">
+      <section className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-6">
         <Stat label="Host" value={job.hostname} />
         <Stat label="Discovered" value={String(job.totalFound)} />
         <Stat label="Selected" value={String(counts.selected)} />
         <Stat label="Skipped" value={String(counts.skipped)} />
         <Stat label="Ingested" value={String(counts.ingested)} />
-        <Stat label="Failed" value={String(counts.ingest_failed)} highlight={counts.ingest_failed > 0} />
+        <Stat
+          label="Failed"
+          value={String(counts.ingest_failed)}
+          highlight={counts.ingest_failed > 0}
+        />
       </section>
 
       {/* Timeline */}
-      <section className="rounded-lg border border-ih-border bg-ih-bg p-4 mb-6 text-[12px]">
-        <h2 className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted mb-3">Timeline</h2>
+      <section className="border-ih-border bg-ih-bg mb-6 rounded-lg border p-4 text-[12px]">
+        <h2 className="text-ih-muted mb-3 text-[10.5px] tracking-wider uppercase tabular-nums">
+          Timeline
+        </h2>
         <dl className="grid grid-cols-3 gap-x-6 gap-y-1.5">
           <Time label="Created" value={job.createdAt} />
           <Time label="Started" value={job.startedAt} />
@@ -302,14 +322,19 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       </section>
 
       {job.errorMessage && (
-        <section role="alert" className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-4 mb-6">
-          <h2 className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-danger-ink mb-1">Error</h2>
+        <section
+          role="alert"
+          className="bg-ih-danger-soft mb-6 rounded-lg border border-[oklch(0.4_0.18_25)] p-4"
+        >
+          <h2 className="text-ih-danger-ink mb-1 text-[10.5px] tracking-wider uppercase tabular-nums">
+            Error
+          </h2>
           <p className="text-[13px] text-[oklch(0.3_0.18_25)]">{job.errorMessage}</p>
         </section>
       )}
 
       {/* Top actions: Cancel (live) + Bulk Ingest (completed) */}
-      <section className="flex items-center gap-3 mb-6 flex-wrap">
+      <section className="mb-6 flex flex-wrap items-center gap-3">
         {isLive && (
           <form
             action={async () => {
@@ -320,7 +345,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           >
             <button
               type="submit"
-              className="rounded-md h-9 px-4 border border-[oklch(0.4_0.18_25)] text-ih-danger-ink tabular-nums text-[12px] uppercase tracking-wider hover:bg-ih-danger-soft"
+              className="text-ih-danger-ink hover:bg-ih-danger-soft h-9 rounded-md border border-[oklch(0.4_0.18_25)] px-4 text-[12px] tracking-wider uppercase tabular-nums"
             >
               Cancel crawl
             </button>
@@ -331,13 +356,13 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {/* Rows */}
       {job.totalFound === 0 ? (
-        <section className="rounded-lg border border-ih-border bg-ih-bg p-6">
-          <p className="text-[13px] text-ih-ink-2">
+        <section className="border-ih-border bg-ih-bg rounded-lg border p-6">
+          <p className="text-ih-ink-2 text-[13px]">
             {job.status === 'queued'
               ? 'Crawl is queued — waiting for the background worker.'
               : job.status === 'running'
-              ? 'Crawl is running. Discovered products will appear here.'
-              : 'No products discovered.'}
+                ? 'Crawl is running. Discovered products will appear here.'
+                : 'No products discovered.'}
           </p>
         </section>
       ) : (
@@ -345,7 +370,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           <JobFilters counts={counts as Record<string, number>} q={q} status={filterStatus} />
           <div className="flex flex-col gap-4">
             {rows.length === 0 ? (
-              <p className="rounded-lg text-[13px] text-ih-muted px-4 py-6 text-center bg-ih-bg border border-ih-border">
+              <p className="text-ih-muted bg-ih-bg border-ih-border rounded-lg border px-4 py-6 text-center text-[13px]">
                 No products match this filter.
               </p>
             ) : (
@@ -362,12 +387,27 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           </div>
 
           {totalPages > 1 && (
-            <nav className="mt-6 flex items-center justify-center gap-2 text-[12px]" aria-label="Pagination">
-              <PageLink page={pageN - 1} disabled={pageN <= 1} label="← Prev" filterStatus={filterStatus} q={q} />
+            <nav
+              className="mt-6 flex items-center justify-center gap-2 text-[12px]"
+              aria-label="Pagination"
+            >
+              <PageLink
+                page={pageN - 1}
+                disabled={pageN <= 1}
+                label="← Prev"
+                filterStatus={filterStatus}
+                q={q}
+              />
               <span className="text-ih-muted tabular-nums">
                 Page {pageN} of {totalPages}
               </span>
-              <PageLink page={pageN + 1} disabled={pageN >= totalPages} label="Next →" filterStatus={filterStatus} q={q} />
+              <PageLink
+                page={pageN + 1}
+                disabled={pageN >= totalPages}
+                label="Next →"
+                filterStatus={filterStatus}
+                q={q}
+              />
             </nav>
           )}
         </>
@@ -398,7 +438,7 @@ function PageLink({
 
   if (disabled) {
     return (
-      <span className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-muted opacity-50 tabular-nums">
+      <span className="border-ih-border text-ih-muted grid h-8 place-items-center rounded-md border px-3 tabular-nums opacity-50">
         {label}
       </span>
     )
@@ -406,7 +446,7 @@ function PageLink({
   return (
     <Link
       href={href}
-      className="rounded-md h-8 px-3 grid place-items-center border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 tabular-nums"
+      className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 grid h-8 place-items-center rounded-md border px-3 tabular-nums"
     >
       {label}
     </Link>
@@ -416,12 +456,16 @@ function PageLink({
 function Stat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div
-      className={`rounded-lg border bg-ih-bg px-3 py-2 ${
+      className={`bg-ih-bg rounded-lg border px-3 py-2 ${
         highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-ih-border'
       }`}
     >
-      <div className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</div>
-      <div className={`text-[15px] font-medium ${highlight ? 'text-ih-danger-ink' : 'text-ih-ink'}`}>
+      <div className="text-ih-muted text-[10.5px] tracking-wider uppercase tabular-nums">
+        {label}
+      </div>
+      <div
+        className={`text-[15px] font-medium ${highlight ? 'text-ih-danger-ink' : 'text-ih-ink'}`}
+      >
         {value}
       </div>
     </div>
@@ -431,8 +475,8 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
 function Time({ label, value }: { label: string; value: Date | null }) {
   return (
     <>
-      <dt className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</dt>
-      <dd className="col-span-2 text-[12px] text-ih-ink-2">
+      <dt className="text-ih-muted text-[10.5px] tracking-wider uppercase tabular-nums">{label}</dt>
+      <dd className="text-ih-ink-2 col-span-2 text-[12px]">
         {value ? value.toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—'}
       </dd>
     </>
@@ -445,7 +489,7 @@ function Time({ label, value }: { label: string; value: Date | null }) {
  * before their children.
  */
 function flattenCategories(
-  rows: Array<{ id: string; name: string; parentId: string | null }>,
+  rows: Array<{ id: string; name: string; parentId: string | null }>
 ): CategoryOption[] {
   const byParent = new Map<string | null, typeof rows>()
   for (const r of rows) {

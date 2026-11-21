@@ -71,7 +71,9 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
       // never sits over the enquiry buttons at the foot.
       const hero = document.getElementById(heroId)
       const body = document.getElementById(bodyId)
-      const pastHero = hero ? hero.getBoundingClientRect().bottom < 0 : (body?.getBoundingClientRect().top ?? 1) < 0
+      const pastHero = hero
+        ? hero.getBoundingClientRect().bottom < 0
+        : (body?.getBoundingClientRect().top ?? 1) < 0
       const inBody = body ? body.getBoundingClientRect().bottom > window.innerHeight * 0.5 : false
       setPillVisible(pastHero && inBody)
     }
@@ -114,7 +116,9 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
     const sheet = sheetRef.current
     if (!sheet) return
     const focusables = () =>
-      [...sheet.querySelectorAll<HTMLElement>('a[href], button:not([disabled])')].filter((el) => el.offsetParent !== null)
+      [...sheet.querySelectorAll<HTMLElement>('a[href], button:not([disabled])')].filter(
+        (el) => el.offsetParent !== null
+      )
     ;(sheet.querySelector<HTMLElement>('[aria-current="location"]') ?? focusables()[0])?.focus()
 
     function onKey(e: KeyboardEvent) {
@@ -149,25 +153,30 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
     <>
       <nav
         aria-label="Article contents"
-        className="sticky top-[107px] z-40 mt-9 hidden border-y border-ih-border bg-ih-surface min-[761px]:block"
+        className="border-ih-border bg-ih-surface sticky top-[107px] z-40 mt-9 hidden border-y min-[761px]:block"
       >
         <div className="mx-auto flex min-h-14 max-w-[var(--spacing-max-w)] items-center gap-5 px-8 min-[1181px]:px-12">
-          <span className="shrink-0 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-ih-muted">
+          <span className="text-ih-muted shrink-0 font-mono text-[10.5px] font-medium tracking-[0.12em] uppercase">
             Contents
           </span>
-          <ol ref={listRef} className="no-scrollbar m-0 flex min-w-0 flex-1 list-none gap-1 overflow-x-auto p-0">
+          <ol
+            ref={listRef}
+            className="no-scrollbar m-0 flex min-w-0 flex-1 list-none gap-1 overflow-x-auto p-0"
+          >
             {entries.map((entry, i) => (
               <li key={entry.anchor} className="shrink-0">
                 <a
                   href={`#${entry.anchor}`}
                   aria-current={i === active ? 'location' : undefined}
-                  className={`flex h-10 items-center gap-2 whitespace-nowrap rounded-md px-3 text-[13.5px] transition-colors duration-150 focus-visible:-outline-offset-2! motion-reduce:transition-none ${
+                  className={`flex h-10 items-center gap-2 rounded-md px-3 text-[13.5px] whitespace-nowrap transition-colors duration-150 focus-visible:-outline-offset-2! motion-reduce:transition-none ${
                     i === active
-                      ? 'bg-ih-accent-soft font-medium text-ih-accent'
+                      ? 'bg-ih-accent-soft text-ih-accent font-medium'
                       : 'text-ih-ink-2 hover:bg-ih-surface-2'
                   }`}
                 >
-                  <span className={`font-mono text-[11px] ${i === active ? 'text-ih-accent' : 'text-ih-muted'}`}>
+                  <span
+                    className={`font-mono text-[11px] ${i === active ? 'text-ih-accent' : 'text-ih-muted'}`}
+                  >
                     {entry.number}
                   </span>
                   {entryTitle(entry.title)}
@@ -175,7 +184,7 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
               </li>
             ))}
           </ol>
-          <span className="shrink-0 font-mono text-[11px] text-ih-muted">
+          <span className="text-ih-muted shrink-0 font-mono text-[11px]">
             {Math.round(progress)}%<span className="sr-only"> read</span>
           </span>
         </div>
@@ -184,7 +193,7 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
           aria-hidden="true"
           value={progress}
           max={100}
-          className="block h-0.5 w-full appearance-none border-0 bg-transparent [&::-moz-progress-bar]:bg-ih-accent [&::-webkit-progress-bar]:bg-transparent [&::-webkit-progress-value]:bg-ih-accent"
+          className="[&::-moz-progress-bar]:bg-ih-accent [&::-webkit-progress-value]:bg-ih-accent block h-0.5 w-full appearance-none border-0 bg-transparent [&::-webkit-progress-bar]:bg-transparent"
         />
       </nav>
 
@@ -196,11 +205,11 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
           onClick={() => setSheetOpen(true)}
           aria-haspopup="dialog"
           aria-label={`Contents, section ${Math.max(active, 0) + 1} of ${entries.length}`}
-          className="fixed bottom-[calc(16px+env(safe-area-inset-bottom))] right-4 z-40 inline-flex h-12 items-center gap-2.5 rounded-full bg-ih-navy px-[18px] text-[14px] font-medium text-white shadow-[0_8px_24px_-8px_rgba(10,20,40,0.5)] focus-visible:outline-ih-steel! min-[761px]:hidden"
+          className="bg-ih-navy focus-visible:outline-ih-steel! fixed right-4 bottom-[calc(16px+env(safe-area-inset-bottom))] z-40 inline-flex h-12 items-center gap-2.5 rounded-full px-[18px] text-[14px] font-medium text-white shadow-[0_8px_24px_-8px_rgba(10,20,40,0.5)] min-[761px]:hidden"
         >
           <ListIcon />
           <span>Contents</span>
-          <span className="font-mono text-[11.5px] font-normal text-ih-steel">
+          <span className="text-ih-steel font-mono text-[11.5px] font-normal">
             {current} / {total}
           </span>
         </button>
@@ -208,18 +217,18 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
 
       {sheetOpen && (
         <div className="fixed inset-0 z-[60] min-[761px]:hidden">
-          <div aria-hidden="true" className="absolute inset-0 bg-ih-ink/40" onClick={closeSheet} />
+          <div aria-hidden="true" className="bg-ih-ink/40 absolute inset-0" onClick={closeSheet} />
           <div
             ref={sheetRef}
             role="dialog"
             aria-modal="true"
             aria-labelledby={sheetTitleId}
-            className="absolute inset-x-0 bottom-0 max-h-[80vh] overflow-y-auto rounded-t-xl bg-ih-surface px-5 pb-[calc(20px+env(safe-area-inset-bottom))] pt-3"
+            className="bg-ih-surface absolute inset-x-0 bottom-0 max-h-[80vh] overflow-y-auto rounded-t-xl px-5 pt-3 pb-[calc(20px+env(safe-area-inset-bottom))]"
           >
-            <div className="flex items-center justify-between border-b border-ih-border pb-2">
+            <div className="border-ih-border flex items-center justify-between border-b pb-2">
               <h2
                 id={sheetTitleId}
-                className="font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-ih-muted"
+                className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.12em] uppercase"
               >
                 Contents
               </h2>
@@ -227,7 +236,7 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
                 type="button"
                 onClick={closeSheet}
                 aria-label="Close contents"
-                className="grid size-11 place-items-center rounded-md text-ih-ink hover:bg-ih-surface-2"
+                className="text-ih-ink hover:bg-ih-surface-2 grid size-11 place-items-center rounded-md"
               >
                 <CloseIcon />
               </button>
@@ -240,10 +249,14 @@ export default function ArticleContents({ entries, bodyId, heroId }: Props) {
                     onClick={closeSheet}
                     aria-current={i === active ? 'location' : undefined}
                     className={`flex min-h-12 items-center gap-3 rounded-md px-3 py-2 text-[15px] ${
-                      i === active ? 'bg-ih-accent-soft font-medium text-ih-accent' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+                      i === active
+                        ? 'bg-ih-accent-soft text-ih-accent font-medium'
+                        : 'text-ih-ink-2 hover:bg-ih-surface-2'
                     }`}
                   >
-                    <span className={`font-mono text-[11px] ${i === active ? 'text-ih-accent' : 'text-ih-muted'}`}>
+                    <span
+                      className={`font-mono text-[11px] ${i === active ? 'text-ih-accent' : 'text-ih-muted'}`}
+                    >
                       {entry.number}
                     </span>
                     {entryTitle(entry.title)}

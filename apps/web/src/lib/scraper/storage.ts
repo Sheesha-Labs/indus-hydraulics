@@ -19,14 +19,16 @@ function client(): SupabaseClient {
 export async function uploadScraperImage(
   file: File,
   productId: string,
-  filename: string,
+  filename: string
 ): Promise<{ storagePath: string; bytes: number; mimeType: string }> {
   const objectPath = `products/${productId}/${filename}`
-  const { error } = await client().storage.from(IMAGES_BUCKET).upload(objectPath, file, {
-    cacheControl: '3600',
-    upsert: false,
-    contentType: file.type || 'application/octet-stream',
-  })
+  const { error } = await client()
+    .storage.from(IMAGES_BUCKET)
+    .upload(objectPath, file, {
+      cacheControl: '3600',
+      upsert: false,
+      contentType: file.type || 'application/octet-stream',
+    })
   if (error) throw new Error(`Storage upload failed: ${error.message}`)
 
   const storagePath = client().storage.from(IMAGES_BUCKET).getPublicUrl(objectPath).data.publicUrl

@@ -41,9 +41,17 @@ export type EnquiryReceivedProps = {
   branding: Branding
 }
 
-export function renderEnquiryReceived(props: EnquiryReceivedProps): { subject: string; html: string; text: string } {
+export function renderEnquiryReceived(props: EnquiryReceivedProps): {
+  subject: string
+  html: string
+  text: string
+} {
   const who = props.company?.trim() || props.senderName
-  const subject = [props.reference ? `Enquiry ${props.reference}` : 'Enquiry received', who, props.formLabel].join(' — ')
+  const subject = [
+    props.reference ? `Enquiry ${props.reference}` : 'Enquiry received',
+    who,
+    props.formLabel,
+  ].join(' — ')
   const first = props.senderName.trim().split(/\s+/)[0] || props.senderName
   const ref = props.reference ? ` Your reference is ${props.reference}.` : ''
   const lead = `Thank you, ${first}. We have received your enquiry.${ref}`
@@ -54,8 +62,17 @@ export function renderEnquiryReceived(props: EnquiryReceivedProps): { subject: s
     ['Name', props.senderName],
     ['Email', props.senderEmail],
     ...(props.company ? [['Company', props.company] as const] : []),
-    ...props.details.filter((d): d is readonly [string, string] => typeof d[1] === 'string' && d[1].trim() !== ''),
-    ...(props.attachmentCount ? [['Attachments', `${props.attachmentCount} file${props.attachmentCount === 1 ? '' : 's'}`] as const] : []),
+    ...props.details.filter(
+      (d): d is readonly [string, string] => typeof d[1] === 'string' && d[1].trim() !== ''
+    ),
+    ...(props.attachmentCount
+      ? [
+          [
+            'Attachments',
+            `${props.attachmentCount} file${props.attachmentCount === 1 ? '' : 's'}`,
+          ] as const,
+        ]
+      : []),
     ...(props.pageUrl ? [['Sent from', props.pageUrl] as const] : []),
   ]
 
@@ -98,7 +115,9 @@ ${
     props.formLabel.toUpperCase(),
     ...rows.map(([label, value]) => `${label}: ${value}`),
     ...(props.message ? ['', 'MESSAGE', props.message] : []),
-    ...(props.notAttached && props.notAttached.length > 0 ? ['', notAttachedNote(props.notAttached)] : []),
+    ...(props.notAttached && props.notAttached.length > 0
+      ? ['', notAttachedNote(props.notAttached)]
+      : []),
     '',
     'If you did not send this enquiry on indushydraulics.com, ignore this email.',
   ].join('\n')

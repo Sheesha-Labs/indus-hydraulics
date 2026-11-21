@@ -66,7 +66,16 @@ const CANDIDATE_SCHEMA = {
       items: {
         type: 'object',
         additionalProperties: false,
-        required: ['name', 'country', 'website', 'kind', 'fit', 'certifications', 'evidenceUrl', 'evidenceSnippet'],
+        required: [
+          'name',
+          'country',
+          'website',
+          'kind',
+          'fit',
+          'certifications',
+          'evidenceUrl',
+          'evidenceSnippet',
+        ],
         properties: {
           name: { type: 'string' },
           country: { type: ['string', 'null'], description: 'ISO 3166-1 alpha-2, or null' },
@@ -122,7 +131,11 @@ function costMicros(usage: { input_tokens?: number; output_tokens?: number } | u
  * rather than the usual ARRAY of results. Branch on that before indexing, or a
  * failed search reads as an empty one.
  */
-function readSearchResponse(content: unknown[]): { text: string; searches: number; toolError: string | null } {
+function readSearchResponse(content: unknown[]): {
+  text: string
+  searches: number
+  toolError: string | null
+} {
   let text = ''
   let searches = 0
   let toolError: string | null = null
@@ -226,9 +239,7 @@ If you cannot find good candidates, say so plainly rather than padding the list.
 
   cost += costMicros(extract.usage)
 
-  const block = extract.content.find(
-    (b): b is Anthropic.TextBlock => b.type === 'text',
-  )
+  const block = extract.content.find((b): b is Anthropic.TextBlock => b.type === 'text')
   if (!block) {
     return { candidates: [], costUsdMicros: cost, searchesUsed: searches, toolError }
   }
@@ -237,7 +248,12 @@ If you cannot find good candidates, say so plainly rather than padding the list.
   try {
     parsed = JSON.parse(block.text) as { candidates?: unknown }
   } catch {
-    return { candidates: [], costUsdMicros: cost, searchesUsed: searches, toolError: 'extraction_not_json' }
+    return {
+      candidates: [],
+      costUsdMicros: cost,
+      searchesUsed: searches,
+      toolError: 'extraction_not_json',
+    }
   }
 
   const candidates = normaliseCandidates(parsed.candidates)
@@ -283,11 +299,13 @@ export function normaliseCandidates(raw: unknown): ResearchedCandidate[] {
     if (seen.has(dedupeKey)) continue
     seen.add(dedupeKey)
 
-    const fit = typeof c.fit === 'number' && Number.isFinite(c.fit) ? Math.min(1, Math.max(0, c.fit)) : 0.3
+    const fit =
+      typeof c.fit === 'number' && Number.isFinite(c.fit) ? Math.min(1, Math.max(0, c.fit)) : 0.3
 
     out.push({
       name: c.name.trim(),
-      country: typeof c.country === 'string' && c.country.length === 2 ? c.country.toUpperCase() : null,
+      country:
+        typeof c.country === 'string' && c.country.length === 2 ? c.country.toUpperCase() : null,
       website,
       domain,
       kind:
@@ -296,7 +314,9 @@ export function normaliseCandidates(raw: unknown): ResearchedCandidate[] {
           : 'unknown',
       fit,
       certifications: Array.isArray(c.certifications)
-        ? c.certifications.filter((s): s is string => typeof s === 'string').map((s) => s.toLowerCase())
+        ? c.certifications
+            .filter((s): s is string => typeof s === 'string')
+            .map((s) => s.toLowerCase())
         : [],
       evidenceUrl: c.evidenceUrl,
       evidenceSnippet: c.evidenceSnippet.trim().slice(0, 500),

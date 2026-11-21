@@ -77,7 +77,11 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
           <label htmlFor={emailId} className="sr-only">
             Work email
           </label>
-          <div className={navy ? 'flex flex-col gap-2 min-[761px]:flex-row' : 'flex flex-col gap-2 sm:flex-row'}>
+          <div
+            className={
+              navy ? 'flex flex-col gap-2 min-[761px]:flex-row' : 'flex flex-col gap-2 sm:flex-row'
+            }
+          >
             <input
               id={emailId}
               type="email"
@@ -90,8 +94,8 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
               disabled={isPending}
               className={
                 navy
-                  ? 'h-10 w-full min-w-0 rounded-md border border-white/20 bg-ih-navy-2 px-3 text-[13.5px] text-white transition-[border-color] duration-150 placeholder:text-ih-on-navy-placeholder focus:border-ih-steel focus-visible:outline-ih-steel! disabled:opacity-50 motion-reduce:transition-none min-[761px]:flex-1'
-                  : 'h-14 w-full min-w-0 shrink-0 rounded-md border border-white/40 bg-white/15 px-4 text-[15px] text-white backdrop-blur-sm sm:h-12 sm:flex-1 sm:text-[13.5px] outline-none transition-colors placeholder:text-white/60 focus:border-white focus:ring-[3px] focus:ring-white/25 disabled:opacity-50'
+                  ? 'bg-ih-navy-2 placeholder:text-ih-on-navy-placeholder focus:border-ih-steel focus-visible:outline-ih-steel! h-10 w-full min-w-0 rounded-md border border-white/20 px-3 text-[13.5px] text-white transition-[border-color] duration-150 disabled:opacity-50 motion-reduce:transition-none min-[761px]:flex-1'
+                  : 'h-14 w-full min-w-0 shrink-0 rounded-md border border-white/40 bg-white/15 px-4 text-[15px] text-white backdrop-blur-sm transition-colors outline-none placeholder:text-white/60 focus:border-white focus:ring-[3px] focus:ring-white/25 disabled:opacity-50 sm:h-12 sm:flex-1 sm:text-[13.5px]'
               }
             />
             <button
@@ -99,8 +103,8 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
               disabled={isPending}
               className={
                 navy
-                  ? 'h-10 w-full shrink-0 rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors duration-150 hover:bg-ih-accent-hover focus-visible:outline-ih-steel! disabled:opacity-50 motion-reduce:transition-none min-[761px]:w-auto'
-                  : 'h-14 w-full shrink-0 rounded-md bg-white px-6 sm:h-12 sm:w-auto text-[14.5px] font-medium text-ih-accent transition-colors hover:bg-white/90 disabled:opacity-50'
+                  ? 'bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover focus-visible:outline-ih-steel! h-10 w-full shrink-0 rounded-md px-[18px] text-[13.5px] font-medium transition-colors duration-150 disabled:opacity-50 motion-reduce:transition-none min-[761px]:w-auto'
+                  : 'text-ih-accent h-14 w-full shrink-0 rounded-md bg-white px-6 text-[14.5px] font-medium transition-colors hover:bg-white/90 disabled:opacity-50 sm:h-12 sm:w-auto'
               }
             >
               {isPending ? '...' : 'Subscribe'}
@@ -113,7 +117,9 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
           )}
           <span
             className={
-              navy ? 'text-[11.5px] leading-[1.5] text-ih-on-navy-fine' : 'text-[12px] leading-[1.5] text-white/80'
+              navy
+                ? 'text-ih-on-navy-fine text-[11.5px] leading-[1.5]'
+                : 'text-[12px] leading-[1.5] text-white/80'
             }
           >
             {CONSENT_BEFORE}

@@ -23,7 +23,11 @@ function Card(props: Props) {
       await navigator.clipboard.writeText(`Subject: ${props.subject}\n\n${props.body}`)
       toast({ title: 'Draft copied', description: 'Paste it into your mail client.' })
     } catch {
-      toast({ title: 'Could not copy', description: 'Select the text below instead.', tone: 'danger' })
+      toast({
+        title: 'Could not copy',
+        description: 'Select the text below instead.',
+        tone: 'danger',
+      })
     }
   }
 
@@ -32,18 +36,18 @@ function Card(props: Props) {
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
-            <h2 className="text-[15px] font-medium text-ih-ink">{props.supplierName}</h2>
+            <h2 className="text-ih-ink text-[15px] font-medium">{props.supplierName}</h2>
             <StatusPill tone={props.email ? 'success' : 'warning'} size="sm">
               {props.email ? 'Reachable' : 'No address'}
             </StatusPill>
           </div>
-          <p className="tabular-nums text-[12px] text-ih-muted">
+          <p className="text-ih-muted text-[12px] tabular-nums">
             {props.country ?? 'country unknown'} · score {props.score}
             {props.email ? ` · ${props.email}` : ''}
           </p>
           {props.evidenceUrl ? (
             <a
-              className="text-[12px] text-ih-muted underline"
+              className="text-ih-muted text-[12px] underline"
               href={props.evidenceUrl}
               target="_blank"
               rel="noreferrer noopener"
@@ -70,8 +74,8 @@ function Card(props: Props) {
 
       {open ? (
         <div className="mt-4 flex flex-col gap-2">
-          <p className="tabular-nums text-[12px] text-ih-ink-2">{props.subject}</p>
-          <pre className="max-h-[420px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-ih-border bg-ih-surface-2 p-3 tabular-nums text-[12px] leading-relaxed text-ih-ink-2">
+          <p className="text-ih-ink-2 text-[12px] tabular-nums">{props.subject}</p>
+          <pre className="border-ih-border bg-ih-surface-2 text-ih-ink-2 max-h-[420px] overflow-auto rounded-lg border p-3 text-[12px] leading-relaxed break-words whitespace-pre-wrap tabular-nums">
             {props.body}
           </pre>
         </div>

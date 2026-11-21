@@ -88,7 +88,10 @@ type Body = { filename?: unknown; contentType?: unknown; size?: unknown }
 export async function POST(request: Request) {
   const ip = clientIp(request.headers)
   if (rateLimited(ip)) {
-    return NextResponse.json({ error: 'Too many uploads. Wait a minute and try again.' }, { status: 429 })
+    return NextResponse.json(
+      { error: 'Too many uploads. Wait a minute and try again.' },
+      { status: 429 }
+    )
   }
 
   let body: Body
@@ -111,7 +114,7 @@ export async function POST(request: Request) {
   if (!ALLOWED.has(contentType)) {
     return NextResponse.json(
       { error: 'That file type is not accepted. Send a PDF, image, or CAD file.' },
-      { status: 415 },
+      { status: 415 }
     )
   }
 

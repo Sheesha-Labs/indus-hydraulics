@@ -43,7 +43,7 @@ export default async function SubPageEditorRoute({ params }: Props) {
 
   const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
   const path = `${kindDef.publicPath}/${slug}`
 
@@ -53,7 +53,7 @@ export default async function SubPageEditorRoute({ params }: Props) {
       breadcrumbs={
         <Link
           href={kindDef.adminPath}
-          className="inline-flex items-center gap-1 text-ih-muted transition-colors hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 transition-colors"
         >
           <ChevronLeft size={12} strokeWidth={1.8} aria-hidden="true" />
           {kindDef.label}
@@ -68,14 +68,14 @@ export default async function SubPageEditorRoute({ params }: Props) {
             href={`${storefront}${path}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 tabular-nums text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-9 items-center gap-1.5 rounded-md border px-3 text-[12px] tabular-nums transition-colors"
           >
             View page <ExternalLink size={12} aria-hidden="true" />
           </a>
         ) : (
           <Link
             href={`/admin/markets/${slug}`}
-            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 tabular-nums text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-9 items-center gap-1.5 rounded-md border px-3 text-[12px] tabular-nums transition-colors"
           >
             Preview draft
           </Link>
@@ -83,15 +83,15 @@ export default async function SubPageEditorRoute({ params }: Props) {
       }
       bodyClassName="max-w-[900px]"
     >
-      <p className="mb-5 text-[13px] leading-[1.6] text-ih-ink-2">
+      <p className="text-ih-ink-2 mb-5 text-[13px] leading-[1.6]">
         Drag a band to move it, use the eye to hide one, and open it to override a heading. Every
         field here is an override — leave it blank and the band keeps the wording the template
         builds from the {kind === 'market' ? 'market' : 'brand'} record.
       </p>
 
       {record.live ? null : (
-        <div className="mb-5 rounded-lg border border-ih-warning bg-ih-warning-soft px-4 py-3">
-          <p className="text-[13px] leading-[1.55] text-ih-warning-ink">
+        <div className="border-ih-warning bg-ih-warning-soft mb-5 rounded-lg border px-4 py-3">
+          <p className="text-ih-warning-ink text-[13px] leading-[1.55]">
             {kind === 'market' ? (
               <>
                 This market renders the plain layout, not the designed template — its regulatory

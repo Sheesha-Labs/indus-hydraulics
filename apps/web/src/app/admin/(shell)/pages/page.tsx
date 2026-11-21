@@ -56,7 +56,7 @@ export default async function AdminPagesIndex({ params }: Props) {
 
   const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
@@ -65,7 +65,7 @@ export default async function AdminPagesIndex({ params }: Props) {
       actions={
         <Link
           href="/admin/pages/static/new"
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 tabular-nums text-[12px] text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center rounded-md px-4 text-[12px] tabular-nums transition-colors"
         >
           <Plus size={13} strokeWidth={1.9} className="mr-1.5" />
           New standalone page
@@ -76,7 +76,7 @@ export default async function AdminPagesIndex({ params }: Props) {
       <section className="flex flex-col gap-3">
         <div>
           <h2 className="text-[15px] font-medium tracking-[-0.01em]">Master pages</h2>
-          <p className="mt-1 max-w-[74ch] text-[13px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted mt-1 max-w-[74ch] text-[13px] leading-[1.55]">
             The top-level routes. Open one to reorder its sections, hide the ones you don&apos;t
             want, and edit its copy, links and images. Anything you leave untouched keeps the
             wording the page ships with.
@@ -89,11 +89,11 @@ export default async function AdminPagesIndex({ params }: Props) {
               <li key={page.key}>
                 <Link
                   href={`/admin/pages/master/${page.key}`}
-                  className="flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
+                  className="border-ih-border bg-ih-surface hover:border-ih-accent flex h-full flex-col gap-1 rounded-lg border p-4 transition-colors"
                 >
-                  <span className="text-[13.5px] font-medium text-ih-ink">{page.label}</span>
-                  <span className="tabular-nums text-[11px] text-ih-muted">{page.path}</span>
-                  <span className="mt-1.5 tabular-nums text-[11px] text-ih-muted-2">
+                  <span className="text-ih-ink text-[13.5px] font-medium">{page.label}</span>
+                  <span className="text-ih-muted text-[11px] tabular-nums">{page.path}</span>
+                  <span className="text-ih-muted-2 mt-1.5 text-[11px] tabular-nums">
                     {page.sections.length} sections ·{' '}
                     {updatedAt
                       ? `edited ${updatedAt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}`
@@ -106,10 +106,10 @@ export default async function AdminPagesIndex({ params }: Props) {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-3 border-t border-ih-border pt-8">
+      <section className="border-ih-border flex flex-col gap-3 border-t pt-8">
         <div>
           <h2 className="text-[15px] font-medium tracking-[-0.01em]">Sub-pages</h2>
-          <p className="mt-1 max-w-[74ch] text-[13px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted mt-1 max-w-[74ch] text-[13px] leading-[1.55]">
             Pages that exist once per record, built from a shared template. Editing one changes that
             page only; everything left blank keeps the wording the template builds from the record.
           </p>
@@ -122,11 +122,13 @@ export default async function AdminPagesIndex({ params }: Props) {
               <li key={kind.kind}>
                 <Link
                   href={kind.adminPath}
-                  className="flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
+                  className="border-ih-border bg-ih-surface hover:border-ih-accent flex h-full flex-col gap-1 rounded-lg border p-4 transition-colors"
                 >
-                  <span className="text-[13.5px] font-medium text-ih-ink">{kind.label}</span>
-                  <span className="tabular-nums text-[11px] text-ih-muted">{kind.publicPath}/…</span>
-                  <span className="mt-1.5 tabular-nums text-[11px] text-ih-muted-2">
+                  <span className="text-ih-ink text-[13.5px] font-medium">{kind.label}</span>
+                  <span className="text-ih-muted text-[11px] tabular-nums">
+                    {kind.publicPath}/…
+                  </span>
+                  <span className="text-ih-muted-2 mt-1.5 text-[11px] tabular-nums">
                     {total} {total === 1 ? kind.itemLabel : `${kind.itemLabel}s`} · {touched} edited
                   </span>
                 </Link>
@@ -136,7 +138,7 @@ export default async function AdminPagesIndex({ params }: Props) {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-3 border-t border-ih-border pt-8">
+      <section className="border-ih-border flex flex-col gap-3 border-t pt-8">
         <div>
           <h2 className="text-[15px] font-medium tracking-[-0.01em]">Other content</h2>
         </div>
@@ -144,14 +146,14 @@ export default async function AdminPagesIndex({ params }: Props) {
           <li>
             <Link
               href="/admin/pages/hero"
-              className="flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
+              className="border-ih-border bg-ih-surface hover:border-ih-accent flex h-full flex-col gap-1 rounded-lg border p-4 transition-colors"
             >
-              <span className="flex items-center gap-2 text-[13.5px] font-medium text-ih-ink">
+              <span className="text-ih-ink flex items-center gap-2 text-[13.5px] font-medium">
                 <Images size={14} strokeWidth={1.7} aria-hidden="true" />
                 Homepage carousel
               </span>
-              <span className="tabular-nums text-[11px] text-ih-muted">Hero visual on /</span>
-              <span className="mt-1.5 tabular-nums text-[11px] text-ih-muted-2">
+              <span className="text-ih-muted text-[11px] tabular-nums">Hero visual on /</span>
+              <span className="text-ih-muted-2 mt-1.5 text-[11px] tabular-nums">
                 {heroSlideCount} {heroSlideCount === 1 ? 'slide' : 'slides'}
               </span>
             </Link>
@@ -159,28 +161,28 @@ export default async function AdminPagesIndex({ params }: Props) {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-3 border-t border-ih-border pt-8">
+      <section className="border-ih-border flex flex-col gap-3 border-t pt-8">
         <div>
           <h2 className="text-[15px] font-medium tracking-[-0.01em]">Standalone pages</h2>
-          <p className="mt-1 max-w-[74ch] text-[13px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted mt-1 max-w-[74ch] text-[13px] leading-[1.55]">
             Free-form pages with a single rich-text body. Publishing one whose slug matches a policy
-            route — <span className="tabular-nums text-[12px] text-ih-ink-2">privacy</span>,{' '}
-            <span className="tabular-nums text-[12px] text-ih-ink-2">terms</span>,{' '}
-            <span className="tabular-nums text-[12px] text-ih-ink-2">shipping</span>,{' '}
-            <span className="tabular-nums text-[12px] text-ih-ink-2">returns</span>,{' '}
-            <span className="tabular-nums text-[12px] text-ih-ink-2">warranty</span>,{' '}
-            <span className="tabular-nums text-[12px] text-ih-ink-2">about</span> — replaces that
+            route — <span className="text-ih-ink-2 text-[12px] tabular-nums">privacy</span>,{' '}
+            <span className="text-ih-ink-2 text-[12px] tabular-nums">terms</span>,{' '}
+            <span className="text-ih-ink-2 text-[12px] tabular-nums">shipping</span>,{' '}
+            <span className="text-ih-ink-2 text-[12px] tabular-nums">returns</span>,{' '}
+            <span className="text-ih-ink-2 text-[12px] tabular-nums">warranty</span>,{' '}
+            <span className="text-ih-ink-2 text-[12px] tabular-nums">about</span> — replaces that
             page&apos;s whole body.
           </p>
         </div>
 
         {standalone.length === 0 ? (
-          <p className="rounded-lg border border-dashed border-ih-border bg-ih-surface-2 px-4 py-6 text-center text-[13px] text-ih-muted">
+          <p className="border-ih-border bg-ih-surface-2 text-ih-muted rounded-lg border border-dashed px-4 py-6 text-center text-[13px]">
             No standalone pages yet.
           </p>
         ) : (
-          <div className="overflow-hidden rounded-lg border border-ih-border">
-            <div className="grid grid-cols-[1fr_100px_110px_70px] border-b border-ih-border bg-ih-bg px-4 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+          <div className="border-ih-border overflow-hidden rounded-lg border">
+            <div className="border-ih-border bg-ih-bg text-ih-muted grid grid-cols-[1fr_100px_110px_70px] border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
               <div>Title</div>
               <div className="text-center">Status</div>
               <div className="text-right">Updated</div>
@@ -189,27 +191,27 @@ export default async function AdminPagesIndex({ params }: Props) {
             {standalone.map((page, i) => (
               <div
                 key={page.id}
-                className={`grid grid-cols-[1fr_100px_110px_70px] items-center bg-ih-surface px-4 py-3.5 ${i > 0 ? 'border-t border-ih-border' : ''}`}
+                className={`bg-ih-surface grid grid-cols-[1fr_100px_110px_70px] items-center px-4 py-3.5 ${i > 0 ? 'border-ih-border border-t' : ''}`}
               >
                 {/* Title is the link, matching every other admin list. */}
                 <div className="min-w-0">
                   <Link
                     href={`/admin/pages/static/${page.id}`}
-                    className="flex items-center gap-1.5 text-[13px] font-medium text-ih-ink hover:text-ih-accent"
+                    className="text-ih-ink hover:text-ih-accent flex items-center gap-1.5 text-[13px] font-medium"
                   >
                     <FileText size={13} strokeWidth={1.7} aria-hidden="true" />
                     <span className="truncate">{page.title}</span>
                   </Link>
-                  <div className="tabular-nums text-[11px] text-ih-muted">/{page.slug}</div>
+                  <div className="text-ih-muted text-[11px] tabular-nums">/{page.slug}</div>
                 </div>
                 <div className="flex justify-center">
                   <span
-                    className={`rounded-full px-2 py-0.5 tabular-nums text-[11px] font-medium ${page.isPublished ? 'bg-ih-success-soft text-ih-success-ink' : 'bg-ih-surface-2 text-ih-muted'}`}
+                    className={`rounded-full px-2 py-0.5 text-[11px] font-medium tabular-nums ${page.isPublished ? 'bg-ih-success-soft text-ih-success-ink' : 'bg-ih-surface-2 text-ih-muted'}`}
                   >
                     {page.isPublished ? 'Published' : 'Draft'}
                   </span>
                 </div>
-                <div className="text-right tabular-nums text-[12px] text-ih-muted">
+                <div className="text-ih-muted text-right text-[12px] tabular-nums">
                   {page.updatedAt.toLocaleDateString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -226,12 +228,12 @@ export default async function AdminPagesIndex({ params }: Props) {
                       href={`${storefront}/${page.slug}`}
                       target="_blank"
                       rel="noreferrer"
-                      className="tabular-nums text-[11px] text-ih-accent hover:underline"
+                      className="text-ih-accent text-[11px] tabular-nums hover:underline"
                     >
                       View ↗
                     </a>
                   ) : (
-                    <span className="tabular-nums text-[11px] text-ih-muted-2">—</span>
+                    <span className="text-ih-muted-2 text-[11px] tabular-nums">—</span>
                   )}
                 </div>
               </div>
@@ -240,7 +242,7 @@ export default async function AdminPagesIndex({ params }: Props) {
         )}
       </section>
 
-      <p className="border-t border-ih-border pt-6 text-[12.5px] text-ih-muted">
+      <p className="border-ih-border text-ih-muted border-t pt-6 text-[12.5px]">
         Looking for articles? They live under{' '}
         <Link href="/admin/blog" className="text-ih-accent hover:underline">
           Blog Editor
@@ -254,7 +256,7 @@ export default async function AdminPagesIndex({ params }: Props) {
           href={storefront}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-ih-accent hover:underline"
+          className="text-ih-accent inline-flex items-center gap-1 hover:underline"
         >
           View the site <ExternalLink size={11} aria-hidden="true" />
         </a>

@@ -123,7 +123,11 @@ describe('datasource url', () => {
 
   test('a non-build NEXT_PHASE does not trigger the widening', () => {
     // next dev / next start set other phases; only the build over-subscribes.
-    const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10', NEXT_PHASE: 'phase-development-server' })!
+    const p = params({
+      DATABASE_URL: BASE,
+      DATABASE_CONNECTION_LIMIT: '10',
+      NEXT_PHASE: 'phase-development-server',
+    })!
     expect(p.get('pool_timeout')).toBeNull()
   })
 })

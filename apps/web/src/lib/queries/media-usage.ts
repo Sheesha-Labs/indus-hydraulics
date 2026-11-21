@@ -371,7 +371,13 @@ function contentSources(): Source[] {
         const [categories, authors] = await Promise.all([
           db.blogCategory.findMany({
             where: { OR: [{ imageId: { not: null } }, { ogImageMediaId: { not: null } }] },
-            select: { id: true, name: true, isPublished: true, imageId: true, ogImageMediaId: true },
+            select: {
+              id: true,
+              name: true,
+              isPublished: true,
+              imageId: true,
+              ogImageMediaId: true,
+            },
           }),
           db.blogAuthor.findMany({
             where: { OR: [{ avatarMediaId: { not: null } }, { ogImageMediaId: { not: null } }] },
@@ -637,7 +643,14 @@ async function resolveHtmlBodies(
   const [posts, pages] = await Promise.all([
     db.blogPost.findMany({
       where: { body: { not: '' } },
-      select: { id: true, title: true, body: true, status: true, isPublished: true, deletedAt: true },
+      select: {
+        id: true,
+        title: true,
+        body: true,
+        status: true,
+        isPublished: true,
+        deletedAt: true,
+      },
     }),
     db.cmsPage.findMany({
       where: { body: { not: '' } },
@@ -657,10 +670,7 @@ async function resolveHtmlBodies(
   }
 
   const out: Entry[] = []
-  const scan = (
-    body: string,
-    usage: (role: string) => MediaUsage
-  ) => {
+  const scan = (body: string, usage: (role: string) => MediaUsage) => {
     for (const url of collectHtmlMediaUrls(body)) {
       const assetId = byUrl.get(url)
       if (assetId) out.push([assetId, usage('In body')])
@@ -673,7 +683,9 @@ async function resolveHtmlBodies(
   for (const p of posts) {
     const live = p.status === 'published' && p.isPublished && p.deletedAt === null
     const label = nonEmpty(p.title, 'Untitled post')
-    scan(p.body, (role) => usageOf('blog_post', p.id, label, role, adminPath(`/blog/${p.id}`), live))
+    scan(p.body, (role) =>
+      usageOf('blog_post', p.id, label, role, adminPath(`/blog/${p.id}`), live)
+    )
   }
   for (const p of pages) {
     const label = nonEmpty(p.title, 'Untitled page')

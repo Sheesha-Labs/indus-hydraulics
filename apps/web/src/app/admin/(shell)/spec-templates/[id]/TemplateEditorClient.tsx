@@ -62,7 +62,7 @@ export default function TemplateEditorClient({
   totalProductCount,
 }: Props) {
   return (
-    <div className="flex flex-col gap-8 max-w-5xl">
+    <div className="flex max-w-5xl flex-col gap-8">
       <Section title="Template details">
         <BasicInfoForm template={template} />
       </Section>
@@ -100,7 +100,10 @@ function BasicInfoForm({ template }: { template: Template }) {
   }
 
   return (
-    <form action={onSubmit} className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3">
+    <form
+      action={onSubmit}
+      className="border-ih-border bg-ih-surface grid gap-3 rounded-lg border p-5"
+    >
       <input type="hidden" name="id" value={template.id} />
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
@@ -108,7 +111,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="name"
             defaultValue={template.name}
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[13px]"
           />
         </Field>
         <Field label="Slug *">
@@ -116,7 +119,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="slug"
             defaultValue={template.slug}
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[12px] tabular-nums"
           />
         </Field>
       </div>
@@ -125,20 +128,20 @@ function BasicInfoForm({ template }: { template: Template }) {
           name="description"
           defaultValue={template.description ?? ''}
           rows={2}
-          className="px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] resize-y"
+          className="border-ih-border bg-ih-surface resize-y rounded-lg border px-3 py-2 text-[13px]"
         />
       </Field>
       <div className="flex items-center gap-2 pt-2">
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+          className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
         >
           {pending ? 'Saving…' : 'Save details'}
         </button>
-        {saved && <span className="tabular-nums text-[11px] text-ih-success-ink">✓ Saved</span>}
+        {saved && <span className="text-ih-success-ink text-[11px] tabular-nums">✓ Saved</span>}
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}
@@ -149,38 +152,32 @@ function BasicInfoForm({ template }: { template: Template }) {
 
 // ── Field manager ──────────────────────────────────────────────────────────
 
-function FieldManager({
-  templateId,
-  fields,
-}: {
-  templateId: string
-  fields: FieldRow[]
-}) {
+function FieldManager({ templateId, fields }: { templateId: string; fields: FieldRow[] }) {
   const [editingId, setEditingId] = useState<string | null>(null)
   const [showAdd, setShowAdd] = useState(false)
 
   return (
     <div className="flex flex-col gap-4">
-      <p className="text-[12px] text-ih-muted -mt-2">
-        Each field becomes a typed input on the product editor. Toggle <b>Key feature</b> to render it
-        as a bullet at the top of the product page; toggle <b>Quick spec</b> to put it in the 6-cell
-        spec table.
+      <p className="text-ih-muted -mt-2 text-[12px]">
+        Each field becomes a typed input on the product editor. Toggle <b>Key feature</b> to render
+        it as a bullet at the top of the product page; toggle <b>Quick spec</b> to put it in the
+        6-cell spec table.
       </p>
 
       {fields.length === 0 ? (
-        <div className="py-10 rounded-lg border border-ih-border text-center">
+        <div className="border-ih-border rounded-lg border py-10 text-center">
           <p className="text-ih-muted mb-3 text-[13px]">No fields yet.</p>
           <button
             type="button"
             onClick={() => setShowAdd(true)}
-            className="inline-flex h-9 px-4 items-center bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover inline-flex h-9 items-center px-4 text-[13px] font-medium"
           >
             + Add first field
           </button>
         </div>
       ) : (
-        <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-          <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
+          <div className="bg-ih-bg border-ih-border text-ih-muted grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             <div />
             <div>Label / key</div>
             <div>Group</div>
@@ -195,41 +192,40 @@ function FieldManager({
             return (
               <div key={f.id}>
                 {isEditing ? (
-                  <div className="border-t border-ih-border bg-ih-surface-2 p-4">
+                  <div className="border-ih-border bg-ih-surface-2 border-t p-4">
                     <FieldForm
-                     
                       templateId={templateId}
                       existing={f}
                       onDone={() => setEditingId(null)}
                     />
                   </div>
                 ) : (
-                  <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-3 items-center text-[13px] border-t border-ih-border">
+                  <div className="border-ih-border grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] items-center border-t px-4 py-3 text-[13px]">
                     <div className="flex flex-col gap-0.5">
                       <ReorderButton
                         templateId={templateId}
                         fieldId={f.id}
-                       
+
                         direction="up"
                         disabled={i === 0}
                       />
                       <ReorderButton
                         templateId={templateId}
                         fieldId={f.id}
-                       
+
                         direction="down"
                         disabled={i === fields.length - 1}
                       />
                     </div>
                     <div>
                       <div className="text-ih-ink font-medium">{f.label}</div>
-                      <div className="text-[11px] text-ih-muted tabular-nums mt-0.5">{f.key}</div>
+                      <div className="text-ih-muted mt-0.5 text-[11px] tabular-nums">{f.key}</div>
                     </div>
-                    <div className="text-[12px] text-ih-ink-2">
+                    <div className="text-ih-ink-2 text-[12px]">
                       {f.group ?? <span className="text-ih-muted-2">General</span>}
                     </div>
-                    <div className="tabular-nums text-[11px] text-ih-muted">{f.dataType}</div>
-                    <div className="text-center tabular-nums text-[11px] text-ih-muted">
+                    <div className="text-ih-muted text-[11px] tabular-nums">{f.dataType}</div>
+                    <div className="text-ih-muted text-center text-[11px] tabular-nums">
                       {f.unit ?? '—'}
                     </div>
                     <div className="flex items-center justify-center gap-1">
@@ -241,7 +237,7 @@ function FieldManager({
                       <button
                         type="button"
                         onClick={() => setEditingId(f.id)}
-                        className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink"
+                        className="text-ih-muted hover:text-ih-ink text-[11px] tabular-nums"
                       >
                         Edit
                       </button>
@@ -260,16 +256,14 @@ function FieldManager({
           <button
             type="button"
             onClick={() => setShowAdd(true)}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[12px] font-medium hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] font-medium"
           >
             + Add field
           </button>
         </div>
       )}
 
-      {showAdd && (
-        <FieldForm templateId={templateId} onDone={() => setShowAdd(false)} />
-      )}
+      {showAdd && <FieldForm templateId={templateId} onDone={() => setShowAdd(false)} />}
     </div>
   )
 }
@@ -302,7 +296,10 @@ function FieldForm({
   }
 
   return (
-    <form action={onSubmit} className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3">
+    <form
+      action={onSubmit}
+      className="border-ih-border bg-ih-surface grid gap-3 rounded-lg border p-5"
+    >
       <input type="hidden" name="templateId" value={templateId} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -313,7 +310,7 @@ function FieldForm({
             name="label"
             defaultValue={existing?.label ?? ''}
             placeholder="Operating pressure"
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[13px]"
           />
         </Field>
         <Field
@@ -328,7 +325,7 @@ function FieldForm({
             name="key"
             defaultValue={existing?.key ?? ''}
             placeholder="operating_pressure"
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[12px] tabular-nums"
           />
         </Field>
       </div>
@@ -339,7 +336,7 @@ function FieldForm({
             name="dataType"
             value={dataType}
             onChange={(e) => setDataType(e.target.value as FieldRow['dataType'])}
-            className="h-9 px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-2 text-[13px]"
           >
             <option value="text">Text</option>
             <option value="number">Number</option>
@@ -352,7 +349,7 @@ function FieldForm({
             name="unit"
             defaultValue={existing?.unit ?? ''}
             placeholder="bar"
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[12px] tabular-nums"
           />
         </Field>
         <Field label="Group" hint="Section header in the tech-specs tab">
@@ -360,7 +357,7 @@ function FieldForm({
             name="group"
             defaultValue={existing?.group ?? ''}
             placeholder="Hydraulic performance"
-            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[13px]"
           />
         </Field>
       </div>
@@ -372,7 +369,7 @@ function FieldForm({
             defaultValue={existing?.options?.join('\n') ?? ''}
             rows={4}
             placeholder={'1-wire\n2-wire\nspiral'}
-            className="px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] tabular-nums resize-y"
+            className="border-ih-border bg-ih-surface resize-y rounded-lg border px-3 py-2 text-[13px] tabular-nums"
           />
         </Field>
       )}
@@ -381,13 +378,13 @@ function FieldForm({
         <input
           name="helpText"
           defaultValue={existing?.helpText ?? ''}
-          className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
+          className="border-ih-border bg-ih-surface h-9 rounded-lg border px-3 text-[13px]"
         />
       </Field>
 
-      <div className="grid grid-cols-[1fr_auto] gap-6 pt-1 items-center">
+      <div className="grid grid-cols-[1fr_auto] items-center gap-6 pt-1">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <label className="flex items-center gap-1.5 text-[12px] text-ih-ink-2">
+          <label className="text-ih-ink-2 flex items-center gap-1.5 text-[12px]">
             <input
               type="checkbox"
               name="isRequired"
@@ -395,7 +392,7 @@ function FieldForm({
             />
             Required
           </label>
-          <label className="flex items-center gap-1.5 text-[12px] text-ih-ink-2">
+          <label className="text-ih-ink-2 flex items-center gap-1.5 text-[12px]">
             <input
               type="checkbox"
               name="isKeyFeature"
@@ -404,7 +401,7 @@ function FieldForm({
             />
             Key feature (PDP bullet)
           </label>
-          <label className="flex items-center gap-1.5 text-[12px] text-ih-ink-2">
+          <label className="text-ih-ink-2 flex items-center gap-1.5 text-[12px]">
             <input
               type="checkbox"
               name="isQuickSpec"
@@ -421,19 +418,19 @@ function FieldForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+          className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
         >
           {pending ? 'Saving…' : existing ? 'Save field' : 'Add field'}
         </button>
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-3 text-[12px] text-ih-muted hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink h-9 px-3 text-[12px]"
         >
           Cancel
         </button>
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}
@@ -456,40 +453,37 @@ function PdpZonePreview({
   isQuickSpec: boolean
 }) {
   const off = 'rounded-lg border border-ih-border bg-ih-surface-2'
-  const onHi =
-    'border border-ih-accent bg-[oklch(0.96_0.06_70)] ring-1 ring-ih-accent'
+  const onHi = 'border border-ih-accent bg-[oklch(0.96_0.06_70)] ring-1 ring-ih-accent'
   return (
     <div className="flex items-start gap-3">
-      <div className="w-[180px] rounded-lg border border-ih-border bg-ih-surface p-2 flex flex-col gap-1.5 select-none">
+      <div className="border-ih-border bg-ih-surface flex w-[180px] flex-col gap-1.5 rounded-lg border p-2 select-none">
         <div className="flex gap-2">
           {/* Image placeholder */}
-          <div className="rounded-lg w-[72px] h-[80px] bg-ih-surface-2 border border-ih-border shrink-0" />
+          <div className="bg-ih-surface-2 border-ih-border h-[80px] w-[72px] shrink-0 rounded-lg border" />
           {/* Info column */}
-          <div className="flex-1 flex flex-col gap-1">
-            <div className="h-1.5 w-2/3 bg-ih-border" />
+          <div className="flex flex-1 flex-col gap-1">
+            <div className="bg-ih-border h-1.5 w-2/3" />
             <div className="h-1 w-1/2 bg-[var(--color-ih-border)]" />
-            <div className="h-px bg-[var(--color-ih-border)] my-0.5" />
+            <div className="my-0.5 h-px bg-[var(--color-ih-border)]" />
             {/* Key feature zone — bullets */}
             <div className={`p-1 ${isKeyFeature ? onHi : off}`}>
               <div className="flex flex-col gap-0.5">
-                <div className="h-1 w-full bg-ih-border" />
-                <div className="h-1 w-4/5 bg-ih-border" />
-                <div className="h-1 w-3/4 bg-ih-border" />
+                <div className="bg-ih-border h-1 w-full" />
+                <div className="bg-ih-border h-1 w-4/5" />
+                <div className="bg-ih-border h-1 w-3/4" />
               </div>
             </div>
             {/* Quick spec zone — 6-cell grid */}
-            <div className={`p-1 grid grid-cols-3 gap-px ${isQuickSpec ? onHi : off}`}>
+            <div className={`grid grid-cols-3 gap-px p-1 ${isQuickSpec ? onHi : off}`}>
               {Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="h-3 bg-ih-surface" />
+                <div key={i} className="bg-ih-surface h-3" />
               ))}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-1 pt-0.5 text-[10.5px] tabular-nums tracking-[0.04em] text-ih-muted min-w-[120px]">
-        <div className="font-medium text-ih-muted-2 uppercase mb-0.5">
-          Renders here
-        </div>
+      <div className="text-ih-muted flex min-w-[120px] flex-col gap-1 pt-0.5 text-[10.5px] tracking-[0.04em] tabular-nums">
+        <div className="text-ih-muted-2 mb-0.5 font-medium uppercase">Renders here</div>
         <div className={isKeyFeature ? 'text-ih-accent font-medium' : ''}>
           {isKeyFeature ? '● Key-feature bullet' : '○ Key feature off'}
         </div>
@@ -497,7 +491,7 @@ function PdpZonePreview({
           {isQuickSpec ? '● Quick-spec cell' : '○ Quick spec off'}
         </div>
         {!isKeyFeature && !isQuickSpec && (
-          <div className="text-ih-muted-2 mt-1 leading-[1.3] normal-case font-sans">
+          <div className="text-ih-muted-2 mt-1 font-sans leading-[1.3] normal-case">
             Field still appears in the Description tab spec table.
           </div>
         )}
@@ -528,20 +522,14 @@ function ReorderButton({
         })
       }
       title={direction === 'up' ? 'Move up' : 'Move down'}
-      className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-30"
+      className="text-ih-muted hover:text-ih-ink text-[11px] tabular-nums disabled:opacity-30"
     >
       {direction === 'up' ? '↑' : '↓'}
     </button>
   )
 }
 
-function DeleteFieldButton({
-  fieldId,
-  templateId,
-}: {
-  fieldId: string
-  templateId: string
-}) {
+function DeleteFieldButton({ fieldId, templateId }: { fieldId: string; templateId: string }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   return (
@@ -553,7 +541,7 @@ function DeleteFieldButton({
         onClick={() => {
           if (
             !confirm(
-              'Delete this field? Existing values on products will become "additional specs" rather than vanish.',
+              'Delete this field? Existing values on products will become "additional specs" rather than vanish.'
             )
           )
             return
@@ -564,7 +552,7 @@ function DeleteFieldButton({
           })
         }}
       />
-      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
+      {error && <span className="text-ih-danger-ink text-[11px]">{error}</span>}
     </>
   )
 }
@@ -580,7 +568,7 @@ function AttachedProductsList({
 }) {
   if (totalCount === 0) {
     return (
-      <p className="text-[13px] text-ih-muted py-4">
+      <p className="text-ih-muted py-4 text-[13px]">
         No products use this template yet. When you create or edit a product and pick this template,
         it will show up here.
       </p>
@@ -588,8 +576,8 @@ function AttachedProductsList({
   }
 
   return (
-    <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-      <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+    <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
+      <div className="bg-ih-bg border-ih-border text-ih-muted grid grid-cols-[140px_1fr_140px_100px_100px] border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         <div>SKU</div>
         <div>Title</div>
         <div>Category</div>
@@ -601,26 +589,28 @@ function AttachedProductsList({
         <Link
           key={p.id}
           href={`/admin/products/${p.id}/edit`}
-          className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-3 items-center text-[13px] border-t border-ih-border hover:bg-ih-surface-2 transition-colors"
+          className="border-ih-border hover:bg-ih-surface-2 grid grid-cols-[140px_1fr_140px_100px_100px] items-center border-t px-4 py-3 text-[13px] transition-colors"
         >
-          <div className="tabular-nums text-[12px] text-ih-muted truncate">{p.sku}</div>
-          <div className="text-ih-ink font-medium truncate">{p.title}</div>
-          <div className="text-[12px] text-ih-ink-2 truncate">
+          <div className="text-ih-muted truncate text-[12px] tabular-nums">{p.sku}</div>
+          <div className="text-ih-ink truncate font-medium">{p.title}</div>
+          <div className="text-ih-ink-2 truncate text-[12px]">
             {p.categoryName ?? <span className="text-ih-muted-2">—</span>}
           </div>
           <div className="flex justify-center">
-            <span className={`px-2 py-0.5 tabular-nums text-[11px] font-medium capitalize ${STATUS_COLORS[p.status] ?? ''}`}>
+            <span
+              className={`px-2 py-0.5 text-[11px] font-medium capitalize tabular-nums ${STATUS_COLORS[p.status] ?? ''}`}
+            >
               {p.status}
             </span>
           </div>
-          <div className="text-right tabular-nums text-[11px] text-ih-muted">
+          <div className="text-ih-muted text-right text-[11px] tabular-nums">
             {new Date(p.updatedAt).toLocaleDateString()}
           </div>
         </Link>
       ))}
 
       {totalCount > products.length && (
-        <div className="px-4 py-3 border-t border-ih-border text-[12px] text-ih-muted">
+        <div className="border-ih-border text-ih-muted border-t px-4 py-3 text-[12px]">
           Showing first {products.length} of {totalCount}.
         </div>
       )}
@@ -633,7 +623,7 @@ function AttachedProductsList({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="text-[14px] font-medium mb-3 text-ih-ink">{title}</h2>
+      <h2 className="text-ih-ink mb-3 text-[14px] font-medium">{title}</h2>
       {children}
     </div>
   )
@@ -650,14 +640,20 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
+      <span className="text-ih-ink-2 text-[11px] font-medium">{label}</span>
       {children}
-      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-ih-muted-2 text-[11px]">{hint}</span>}
     </label>
   )
 }
 
-function Pill({ children, tone }: { children: React.ReactNode; tone: 'success' | 'warning' | 'info' }) {
+function Pill({
+  children,
+  tone,
+}: {
+  children: React.ReactNode
+  tone: 'success' | 'warning' | 'info'
+}) {
   const cls =
     tone === 'success'
       ? 'text-ih-success-ink bg-ih-success-soft'
@@ -665,7 +661,9 @@ function Pill({ children, tone }: { children: React.ReactNode; tone: 'success' |
         ? 'text-[oklch(0.5_0.15_60)] bg-[oklch(0.97_0.04_60)]'
         : 'text-ih-accent bg-[oklch(0.96_0.05_240)]'
   return (
-    <span className={`inline-block px-1.5 py-0.5 tabular-nums text-[10.5px] font-medium uppercase ${cls}`}>
+    <span
+      className={`inline-block px-1.5 py-0.5 text-[10.5px] font-medium uppercase tabular-nums ${cls}`}
+    >
       {children}
     </span>
   )

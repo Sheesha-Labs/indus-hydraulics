@@ -29,7 +29,7 @@ export type GroupedReplacement<T extends CrossRefRow> = {
 }
 
 export function groupCrossReferencesByCompetitor<T extends CrossRefRow>(
-  rows: T[],
+  rows: T[]
 ): GroupedReplacement<T>[] {
   const map = new Map<string, GroupedReplacement<T>>()
   for (const row of rows) {
@@ -55,7 +55,7 @@ export function groupCrossReferencesByCompetitor<T extends CrossRefRow>(
 
 /** Convenience: only the (brand, mpn) keys, sorted, for sitemap generation. */
 export function uniqueReplacementKeys<T extends CrossRefRow>(
-  rows: T[],
+  rows: T[]
 ): Array<{ brandSlug: string; mpnSlug: string; matches: number }> {
   const groups = groupCrossReferencesByCompetitor(rows)
   return groups
@@ -86,7 +86,7 @@ export const REPLACEMENT_INDEX_MIN_MATCHES = 2
  * competitor brand with the count of MPNs we cover.
  */
 export function groupCrossReferencesByBrand<T extends CrossRefRow>(
-  rows: T[],
+  rows: T[]
 ): Array<{ brandSlug: string; competitorBrand: string; mpnCount: number }> {
   const byBrand = new Map<string, { competitorBrand: string; mpns: Set<string> }>()
   for (const row of rows) {

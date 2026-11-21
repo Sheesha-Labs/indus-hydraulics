@@ -43,7 +43,9 @@ describe('each token still works for its own purpose', () => {
   })
 
   test('quote token round-trips', () => {
-    expect(verifyQuoteAccessToken(signQuoteAccessToken('RFQ-2026-0001'), 'RFQ-2026-0001')).toEqual({ valid: true })
+    expect(verifyQuoteAccessToken(signQuoteAccessToken('RFQ-2026-0001'), 'RFQ-2026-0001')).toEqual({
+      valid: true,
+    })
   })
 
   test('each still rejects a mismatched subject', () => {

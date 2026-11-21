@@ -10,7 +10,9 @@ describe('country flags', () => {
   const publicDir = join(__dirname, '../../../public')
 
   it('has a 3:2 flag in public/flags for every dial country', () => {
-    const missing = DIAL_COUNTRIES.map((c) => c[0]).filter((iso) => !existsSync(join(publicDir, flagSrc(iso))))
+    const missing = DIAL_COUNTRIES.map((c) => c[0]).filter(
+      (iso) => !existsSync(join(publicDir, flagSrc(iso)))
+    )
     expect(missing).toEqual([])
   })
 

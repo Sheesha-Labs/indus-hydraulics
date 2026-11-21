@@ -101,18 +101,26 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
     >
       <div className="flex flex-col gap-5">
         <div className="flex flex-wrap items-center gap-3">
-          <nav aria-label="Filter by status" className="inline-flex rounded-md border border-ih-border bg-ih-surface p-0.5">
+          <nav
+            aria-label="Filter by status"
+            className="border-ih-border bg-ih-surface inline-flex rounded-md border p-0.5"
+          >
             <SegmentLink href={href({ status: undefined })} active={!statusFilter} count={total}>
               All
             </SegmentLink>
             {STATUSES.map((s) => (
-              <SegmentLink key={s} href={href({ status: s })} active={statusFilter === s} count={countFor(s)}>
+              <SegmentLink
+                key={s}
+                href={href({ status: s })}
+                active={statusFilter === s}
+                count={countFor(s)}
+              >
                 {STATUS_LABEL[s]}
               </SegmentLink>
             ))}
           </nav>
 
-          <p className="text-[13px] text-ih-muted">
+          <p className="text-ih-muted text-[13px]">
             {shown} {shown === 1 ? 'case' : 'cases'}
             {query ? ' found' : ''}
           </p>
@@ -127,7 +135,7 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
                 size={14}
                 strokeWidth={1.8}
                 aria-hidden="true"
-                className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ih-muted"
+                className="text-ih-muted pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
               />
               <Input
                 id="services-q"
@@ -139,7 +147,10 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
               />
             </span>
             {query && (
-              <Link href={href({ q: undefined })} className="text-[12.5px] text-ih-muted hover:text-ih-ink">
+              <Link
+                href={href({ q: undefined })}
+                className="text-ih-muted hover:text-ih-ink text-[12.5px]"
+              >
                 Clear
               </Link>
             )}
@@ -156,7 +167,7 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[52%] text-ih-ink">Case</TableHead>
+                <TableHead className="text-ih-ink w-[52%]">Case</TableHead>
                 <TableHead className="text-ih-ink">Status</TableHead>
                 <TableHead className="text-ih-ink">Category</TableHead>
                 <TableHead className="text-ih-ink">Published</TableHead>
@@ -172,31 +183,45 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
                 return (
                   <TableRow key={c.id}>
                     <TableCell className="max-w-0 py-3">
-                      <Link href={`/admin/services/${c.id}`} className="group flex min-w-0 items-center gap-3">
+                      <Link
+                        href={`/admin/services/${c.id}`}
+                        className="group flex min-w-0 items-center gap-3"
+                      >
                         {/* Service cases are photo-led on the site; the thumb
                             is how you recognise one at a glance. */}
-                        <span className="grid h-10 w-14 shrink-0 place-items-center overflow-hidden rounded-md border border-ih-border bg-ih-surface-2">
+                        <span className="border-ih-border bg-ih-surface-2 grid h-10 w-14 shrink-0 place-items-center overflow-hidden rounded-md border">
                           {thumb ? (
                             // eslint-disable-next-line @next/next/no-img-element
-                            <img src={thumb} alt="" className="h-full w-full object-cover" loading="lazy" />
+                            <img
+                              src={thumb}
+                              alt=""
+                              className="h-full w-full object-cover"
+                              loading="lazy"
+                            />
                           ) : (
-                            <ImageIcon size={15} strokeWidth={1.5} aria-hidden="true" className="text-ih-muted" />
+                            <ImageIcon
+                              size={15}
+                              strokeWidth={1.5}
+                              aria-hidden="true"
+                              className="text-ih-muted"
+                            />
                           )}
                         </span>
                         <span className="min-w-0">
                           <span className="flex min-w-0 items-center gap-2">
-                            <span className="truncate text-[14px] font-medium text-ih-ink transition-colors group-hover:text-ih-accent">
+                            <span className="text-ih-ink group-hover:text-ih-accent truncate text-[14px] font-medium transition-colors">
                               {c.title}
                             </span>
                             {c.isFeatured ? (
-                              <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-ih-warning-soft px-2 py-0.5 text-[11px] font-medium text-ih-warning-ink">
+                              <span className="bg-ih-warning-soft text-ih-warning-ink inline-flex shrink-0 items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium">
                                 <Star size={11} strokeWidth={2} aria-hidden="true" />
                                 Case of the week
                               </span>
                             ) : null}
                           </span>
-                          <span className="mt-0.5 block truncate text-[12px] text-ih-muted">
-                            <span className="tabular-nums">Case {c.caseNumber}</span> · /services/{c.slug}
+                          <span className="text-ih-muted mt-0.5 block truncate text-[12px]">
+                            <span className="tabular-nums">Case {c.caseNumber}</span> · /services/
+                            {c.slug}
                           </span>
                         </span>
                       </Link>
@@ -208,10 +233,10 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
                         {STATUS_LABEL[status]}
                       </span>
                     </TableCell>
-                    <TableCell className="max-w-[200px] truncate text-[13px] text-ih-ink-2">
+                    <TableCell className="text-ih-ink-2 max-w-[200px] truncate text-[13px]">
                       {SERVICE_CASE_CATEGORY_LABELS[c.category] ?? c.category}
                     </TableCell>
-                    <TableCell className="whitespace-nowrap text-[12.5px] tabular-nums text-ih-muted">
+                    <TableCell className="text-ih-muted text-[12.5px] whitespace-nowrap tabular-nums">
                       {c.publishedAt ? DATE.format(c.publishedAt) : '—'}
                     </TableCell>
                     <TableCell className="text-right">
@@ -222,7 +247,7 @@ export default async function ServiceCasesPage({ searchParams }: Props) {
                           rel="noreferrer"
                           aria-label={`View “${c.title}” on the site`}
                           title="View on the site"
-                          className="inline-flex h-7 items-center gap-1 rounded-md px-2 text-[12.5px] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+                          className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink inline-flex h-7 items-center gap-1 rounded-md px-2 text-[12.5px] transition-colors"
                         >
                           View
                           <ExternalLink size={12} strokeWidth={1.8} aria-hidden="true" />
@@ -255,12 +280,16 @@ function SegmentLink({
     <Link
       href={href}
       aria-current={active ? 'page' : undefined}
-      className={`inline-flex h-7 items-center gap-1.5 rounded px-2.5 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
-        active ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
+      className={`focus-visible:ring-ih-accent-soft inline-flex h-7 items-center gap-1.5 rounded px-2.5 text-[12.5px] transition-colors focus-visible:ring-2 focus-visible:outline-none ${
+        active
+          ? 'bg-ih-navy text-ih-bg font-medium'
+          : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
       }`}
     >
       {children}
-      <span className={`tabular-nums text-[11.5px] ${active ? 'text-ih-bg/75' : 'text-ih-muted'}`}>{count}</span>
+      <span className={`text-[11.5px] tabular-nums ${active ? 'text-ih-bg/75' : 'text-ih-muted'}`}>
+        {count}
+      </span>
     </Link>
   )
 }

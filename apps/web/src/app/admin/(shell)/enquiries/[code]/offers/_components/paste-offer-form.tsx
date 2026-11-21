@@ -47,7 +47,7 @@ function Form({ enquiryId }: { enquiryId: string }) {
         <Button type="submit" kind="primary" loading={pending}>
           Extract offer
         </Button>
-        <p className="text-[13px] text-ih-muted">
+        <p className="text-ih-muted text-[13px]">
           Any price we cannot trace back to your pasted text is dropped, not guessed.
         </p>
       </div>

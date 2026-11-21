@@ -25,17 +25,13 @@ type PreparedImage = {
 }
 
 export type ScraperIngestCode =
-  | 'NOT_FOUND'
-  | 'PRECONDITION_FAILED'
-  | 'VALIDATION'
-  | 'CONFLICT'
-  | 'INTERNAL'
+  'NOT_FOUND' | 'PRECONDITION_FAILED' | 'VALIDATION' | 'CONFLICT' | 'INTERNAL'
 
 export class ScraperIngestError extends Error {
   constructor(
     readonly code: ScraperIngestCode,
     message: string,
-    readonly fieldErrors?: Record<string, string[]>,
+    readonly fieldErrors?: Record<string, string[]>
   ) {
     super(message)
     this.name = 'ScraperIngestError'
@@ -52,7 +48,7 @@ export type ScraperIngestResult = {
 
 export async function ingestScrapedProduct(
   scrapedProductId: string,
-  uploadedByStaffId: string,
+  uploadedByStaffId: string
 ): Promise<ScraperIngestResult> {
   const row = await db.scrapedProduct.findUnique({
     where: { id: scrapedProductId },
@@ -85,7 +81,7 @@ export async function ingestScrapedProduct(
   if (row.job.status !== 'completed') {
     throw new ScraperIngestError(
       'PRECONDITION_FAILED',
-      `Crawl must be completed before ingesting (current status: ${row.job.status})`,
+      `Crawl must be completed before ingesting (current status: ${row.job.status})`
     )
   }
 
@@ -97,7 +93,7 @@ export async function ingestScrapedProduct(
     if (!row.targetProductId) {
       throw new ScraperIngestError(
         'VALIDATION',
-        'Attach mode requires a target product - pick one first',
+        'Attach mode requires a target product - pick one first'
       )
     }
     const target = await db.product.findUnique({
@@ -116,7 +112,7 @@ export async function ingestScrapedProduct(
     if (!sku) {
       throw new ScraperIngestError(
         'VALIDATION',
-        'Could not derive a SKU - edit it manually before ingest',
+        'Could not derive a SKU - edit it manually before ingest'
       )
     }
 
@@ -125,7 +121,7 @@ export async function ingestScrapedProduct(
       throw new ScraperIngestError(
         'CONFLICT',
         `SKU "${sku}" is already in use - rename it in the form, then retry`,
-        { editedSku: ['SKU must be unique'] },
+        { editedSku: ['SKU must be unique'] }
       )
     }
     const description = stripHtml(row.sourceDescription ?? '')
@@ -151,7 +147,7 @@ export async function ingestScrapedProduct(
 
   const candidates = ((row.candidateImages ?? []) as unknown as CandidateImageRow[]).slice()
   const deselected = new Set(
-    ((row.deselectedImageUrls ?? []) as unknown as string[]).map((url) => url),
+    ((row.deselectedImageUrls ?? []) as unknown as string[]).map((url) => url)
   )
   const kept = candidates.filter((candidate) => !deselected.has(candidate.url))
   const titleSlug = slugify(title) || 'image'
@@ -188,7 +184,7 @@ export async function ingestScrapedProduct(
       nextPosition += 1
     } catch (error) {
       partialErrors.push(
-        `#${i + 1} ${candidate.url}: ${(error as Error).message ?? 'unknown error'}`,
+        `#${i + 1} ${candidate.url}: ${(error as Error).message ?? 'unknown error'}`
       )
     }
   }
@@ -313,10 +309,8 @@ async function nextUniqueProductSlug(title: string): Promise<string> {
 }
 
 async function downloadImage(
-  url: string,
-): Promise<
-  { ok: true; buffer: ArrayBuffer; mimeType: string } | { ok: false; message: string }
-> {
+  url: string
+): Promise<{ ok: true; buffer: ArrayBuffer; mimeType: string } | { ok: false; message: string }> {
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), IMAGE_FETCH_TIMEOUT_MS)
   try {

@@ -6,9 +6,7 @@ import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, {
   type SeoDrawerEntity,
 } from '../../../../../components/admin/seo/SeoEntityDrawer'
-import OgImagePicker, {
-  type RecentMedia,
-} from '../../../../../components/admin/seo/OgImagePicker'
+import OgImagePicker, { type RecentMedia } from '../../../../../components/admin/seo/OgImagePicker'
 import {
   savePost,
   setBlogPostArchivedFromEditor,
@@ -77,14 +75,7 @@ type BlogPost = {
   ogImageStoragePath: string | null
   sitemapPriority: number | null
   sitemapChangeFreq:
-    | 'always'
-    | 'hourly'
-    | 'daily'
-    | 'weekly'
-    | 'monthly'
-    | 'yearly'
-    | 'never'
-    | null
+    'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | null
   excludeFromSitemap: boolean
   jsonLdOverride: string | null
 }
@@ -176,7 +167,7 @@ export default function BlogPostEditorClient({
 
   return (
     <AdminPageShell
-      title={isNew ? 'New post' : post?.title ?? 'Edit post'}
+      title={isNew ? 'New post' : (post?.title ?? 'Edit post')}
       // Where you are, above what it is — Bazar's order. The crumb is also the
       // way back to the list, which used to be a separate "← All posts" button.
       breadcrumbs={
@@ -193,7 +184,7 @@ export default function BlogPostEditorClient({
               the server page would sever the indicator from every writer and
               it would never appear after a save. */}
           {savedAt && (
-            <span role="status" className="text-[12.5px] text-ih-success-ink">
+            <span role="status" className="text-ih-success-ink text-[12.5px]">
               Saved at {savedAt}
             </span>
           )}
@@ -202,7 +193,7 @@ export default function BlogPostEditorClient({
               href={post.publicUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-9 items-center gap-1.5 rounded-md px-2.5 text-[13px] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+              className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink inline-flex h-9 items-center gap-1.5 rounded-md px-2.5 text-[13px] transition-colors"
             >
               View on site
               <ExternalLink size={13} strokeWidth={1.8} aria-hidden="true" />
@@ -213,7 +204,11 @@ export default function BlogPostEditorClient({
       bodyClassName="max-w-[1320px]"
     >
       {!isNew && (
-        <div role="tablist" aria-label="Editor sections" className="mb-5 inline-flex rounded-md border border-ih-border bg-ih-surface p-0.5">
+        <div
+          role="tablist"
+          aria-label="Editor sections"
+          className="border-ih-border bg-ih-surface mb-5 inline-flex rounded-md border p-0.5"
+        >
           {TABS.map((t) => (
             <button
               key={t.id}
@@ -221,8 +216,10 @@ export default function BlogPostEditorClient({
               role="tab"
               aria-selected={tab === t.id}
               onClick={() => setTab(t.id)}
-              className={`inline-flex h-7 items-center rounded px-3 text-[12.5px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
-                tab === t.id ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
+              className={`focus-visible:ring-ih-accent-soft inline-flex h-7 items-center rounded px-3 text-[12.5px] transition-colors focus-visible:ring-2 focus-visible:outline-none ${
+                tab === t.id
+                  ? 'bg-ih-navy text-ih-bg font-medium'
+                  : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
               }`}
             >
               {t.label}
@@ -299,12 +296,11 @@ function ContentForm({
   // and they ride to the server in a hidden input, the same way the hero does.
   // A legacy post opens as one prose block holding its old HTML, so the
   // article is visible and editable and the first save migrates it to blocks.
-  const initialBlocks: BlogBlocks =
-    post?.bodyBlocks.length
-      ? post.bodyBlocks
-      : post?.legacyProseHtml
-        ? [{ type: 'prose', html: post.legacyProseHtml }]
-        : []
+  const initialBlocks: BlogBlocks = post?.bodyBlocks.length
+    ? post.bodyBlocks
+    : post?.legacyProseHtml
+      ? [{ type: 'prose', html: post.legacyProseHtml }]
+      : []
   const [blocks, setBlocks] = useState<BlogBlockInput[]>(initialBlocks)
 
   const heroRecent: RecentMedia[] =
@@ -324,7 +320,7 @@ function ContentForm({
 
   return (
     <form action={savePost}>
-      <input type="hidden" name="id" value={isNew ? 'new' : post?.id ?? ''} />
+      <input type="hidden" name="id" value={isNew ? 'new' : (post?.id ?? '')} />
       <input type="hidden" name="heroId" value={heroId ?? ''} />
       <input type="hidden" name="bodyBlocks" value={JSON.stringify(blocks)} />
 
@@ -366,7 +362,11 @@ function ContentForm({
                 htmlFor="blogpost-category"
                 hint="Files the post under a topic hub at /blog/c/…, and puts its chip on the index card."
               >
-                <Select id="blogpost-category" name="categoryId" defaultValue={post?.categoryId ?? ''}>
+                <Select
+                  id="blogpost-category"
+                  name="categoryId"
+                  defaultValue={post?.categoryId ?? ''}
+                >
                   <option value="">Uncategorised</option>
                   {categories.map((c) => (
                     <option key={c.id} value={c.id}>
@@ -378,7 +378,11 @@ function ContentForm({
               </Field>
             </div>
 
-            <Field label="Excerpt" htmlFor="blogpost-excerpt" hint="One or two sentences for blog listings and social previews.">
+            <Field
+              label="Excerpt"
+              htmlFor="blogpost-excerpt"
+              hint="One or two sentences for blog listings and social previews."
+            >
               <Textarea
                 id="blogpost-excerpt"
                 name="excerpt"
@@ -440,14 +444,21 @@ function ContentForm({
             />
           </EditorSection>
 
-          <EditorSection title="Byline and review" description="Who wrote it, who checked it, and the date it carries.">
+          <EditorSection
+            title="Byline and review"
+            description="Who wrote it, who checked it, and the date it carries."
+          >
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <Field
                 label="Byline"
                 htmlFor="blogpost-author"
                 hint="Credits the engineer who wrote it and links to their profile. Without one the post falls back to the staff name."
               >
-                <Select id="blogpost-author" name="blogAuthorId" defaultValue={post?.blogAuthorId ?? ''}>
+                <Select
+                  id="blogpost-author"
+                  name="blogAuthorId"
+                  defaultValue={post?.blogAuthorId ?? ''}
+                >
                   <option value="">No public byline</option>
                   {authors.map((a) => (
                     <option key={a.id} value={a.id}>
@@ -463,12 +474,17 @@ function ContentForm({
                 htmlFor="blogpost-reviewer"
                 hint={
                   <>
-                    Shown as &ldquo;Technically reviewed by&rdquo; under the byline and named in the structured
-                    data. Worth setting on anything quoting pressures, ratings or standards.
+                    Shown as &ldquo;Technically reviewed by&rdquo; under the byline and named in the
+                    structured data. Worth setting on anything quoting pressures, ratings or
+                    standards.
                   </>
                 }
               >
-                <Select id="blogpost-reviewer" name="reviewedById" defaultValue={post?.reviewedById ?? ''}>
+                <Select
+                  id="blogpost-reviewer"
+                  name="reviewedById"
+                  defaultValue={post?.reviewedById ?? ''}
+                >
                   <option value="">Not reviewed</option>
                   {reviewers.map((r) => (
                     <option key={r.id} value={r.id}>
@@ -520,7 +536,11 @@ function ContentForm({
               ) : (
                 <>
                   Canonical URL, social image, sitemap and structured data are in the{' '}
-                  <button type="button" onClick={onOpenSeo} className="text-ih-accent hover:text-ih-navy">
+                  <button
+                    type="button"
+                    onClick={onOpenSeo}
+                    className="text-ih-accent hover:text-ih-navy"
+                  >
                     SEO tab
                   </button>
                   .
@@ -529,10 +549,23 @@ function ContentForm({
             }
           >
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-              <Field label="Meta title" htmlFor="blogpost-seoTitle" hint="Optional. Falls back to the post title.">
-                <Input id="blogpost-seoTitle" name="seoTitle" defaultValue={post?.seoTitle ?? ''} type="text" />
+              <Field
+                label="Meta title"
+                htmlFor="blogpost-seoTitle"
+                hint="Optional. Falls back to the post title."
+              >
+                <Input
+                  id="blogpost-seoTitle"
+                  name="seoTitle"
+                  defaultValue={post?.seoTitle ?? ''}
+                  type="text"
+                />
               </Field>
-              <Field label="Meta description" htmlFor="blogpost-seoDescription" hint="Optional. Falls back to the excerpt.">
+              <Field
+                label="Meta description"
+                htmlFor="blogpost-seoDescription"
+                hint="Optional. Falls back to the excerpt."
+              >
                 <Input
                   id="blogpost-seoDescription"
                   name="seoDescription"
@@ -585,7 +618,7 @@ function Required({ children }: { children: ReactNode }) {
   return (
     <>
       {children}
-      <span aria-hidden="true" className="ml-0.5 text-ih-muted">
+      <span aria-hidden="true" className="text-ih-muted ml-0.5">
         *
       </span>
     </>

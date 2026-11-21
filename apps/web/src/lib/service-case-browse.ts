@@ -20,7 +20,7 @@ import type { ServiceCaseListItem, ServiceCaseSort } from './service-cases'
 
 export function filterServiceCases(
   cases: ServiceCaseListItem[],
-  category: ServiceCaseCategory | null,
+  category: ServiceCaseCategory | null
 ): ServiceCaseListItem[] {
   return category ? cases.filter((c) => c.category === category) : cases
 }
@@ -39,7 +39,7 @@ function publishedAtMs(c: ServiceCaseListItem): number {
 
 export function sortServiceCases(
   cases: ServiceCaseListItem[],
-  sort: ServiceCaseSort,
+  sort: ServiceCaseSort
 ): ServiceCaseListItem[] {
   const rows = [...cases]
   switch (sort) {
@@ -47,13 +47,13 @@ export function sortServiceCases(
       // savingsAmount desc, nulls last; publishedAt desc as the tiebreak.
       return rows.sort(
         (a, b) =>
-          nullsLast(a.savingsAmount, b.savingsAmount, -1) || publishedAtMs(b) - publishedAtMs(a),
+          nullsLast(a.savingsAmount, b.savingsAmount, -1) || publishedAtMs(b) - publishedAtMs(a)
       )
     case 'tat':
       // durationDays asc, nulls last; publishedAt desc as the tiebreak.
       return rows.sort(
         (a, b) =>
-          nullsLast(a.durationDays, b.durationDays, 1) || publishedAtMs(b) - publishedAtMs(a),
+          nullsLast(a.durationDays, b.durationDays, 1) || publishedAtMs(b) - publishedAtMs(a)
       )
     case 'recent':
     default:
@@ -62,7 +62,8 @@ export function sortServiceCases(
       // to the column, and the values are zero-padded so it reads numerically.
       return rows.sort(
         (a, b) =>
-          publishedAtMs(b) - publishedAtMs(a) || (b.caseNumber ?? '').localeCompare(a.caseNumber ?? ''),
+          publishedAtMs(b) - publishedAtMs(a) ||
+          (b.caseNumber ?? '').localeCompare(a.caseNumber ?? '')
       )
   }
 }

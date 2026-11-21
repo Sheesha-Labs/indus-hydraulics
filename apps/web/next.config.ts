@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
    * 2.6 GB working tree.
    *
    * `standalone` traces exactly the files the server needs and copies them,
-   * resolving the pnpm symlinks on the way — which is what makes Prisma work
-   * off a machine that has no pnpm store. It deliberately does NOT copy
+   * resolving the isolated install's symlinks on the way — which is what makes Prisma work
+   * off a machine that has no package store. It deliberately does NOT copy
    * `.next/static` or `public/`; both must be placed alongside the output or
    * the site serves HTML with no assets and no images.
    */
@@ -54,13 +54,13 @@ const nextConfig: NextConfig = {
    * GitHub Actions had already done on the same commit.
    *
    * There is no `eslint` counterpart here: Next 16 dropped that config key, and
-   * `next build` no longer lints. `pnpm lint` in CI is the only linter.
+   * `next build` no longer lints. `bun run lint` in CI is the only linter.
    *
    * The gate moves rather than disappears, and it is worth naming exactly where
    * it now lives: `typecheck · lint · test` is a REQUIRED status check on the
    * `main` ruleset, with `strict_required_status_checks_policy` on — so the
    * branch must be up to date with main when it passes — and the `pull_request`
-   * rule blocks direct pushes. Nothing reaches main without tsc and eslint
+   * rule blocks direct pushes. Nothing reaches main without the typecheck and the linter
    * passing on exactly the state that gets merged.
    *
    * What would have to break for a type error to ship: someone removes that

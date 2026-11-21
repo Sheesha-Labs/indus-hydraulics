@@ -54,9 +54,9 @@ describe('linkState', () => {
   test('used beats expired when a link is both', () => {
     // More actionable: an expired link can be reissued, a used one usually
     // means the person already got what they needed.
-    expect(linkState(row({ activatedAt: new Date(NOW - 1), expiresAt: new Date(NOW - 1) }), NOW)).toEqual(
-      { usable: false, reason: 'used' },
-    )
+    expect(
+      linkState(row({ activatedAt: new Date(NOW - 1), expiresAt: new Date(NOW - 1) }), NOW)
+    ).toEqual({ usable: false, reason: 'used' })
   })
 })
 

@@ -97,25 +97,25 @@ export default async function CategoriesIndexPage() {
         ]}
       />
 
-      <div className="border-b border-ih-border py-4">
+      <div className="border-ih-border border-b py-4">
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Categories' }]} />
       </div>
 
-      <header className="border-b border-ih-border py-10">
-        <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+      <header className="border-ih-border border-b py-10">
+        <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
           Catalogue · {categories.length} groups
         </p>
-        <h1 className="mb-3 max-w-[18ch] text-balance font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
+        <h1 className="mb-3 max-w-[18ch] font-serif text-[clamp(30px,4vw,40px)] leading-[1.06] font-normal tracking-[-0.01em] text-balance">
           The full catalogue, organised the way engineers think.
         </h1>
-        <p className="max-w-[640px] text-[16px] leading-[1.6] text-ih-ink-2">
-          {totalSkus.toLocaleString()} SKUs across {categories.length} groups. Every listing carries a datasheet, and
-          anything not stocked can be cross-referenced from an obsolete code.
+        <p className="text-ih-ink-2 max-w-[640px] text-[16px] leading-[1.6]">
+          {totalSkus.toLocaleString()} SKUs across {categories.length} groups. Every listing carries
+          a datasheet, and anything not stocked can be cross-referenced from an obsolete code.
         </p>
       </header>
 
       {categories.length === 0 ? (
-        <div className="mt-8 rounded-lg border border-ih-border bg-ih-surface">
+        <div className="border-ih-border bg-ih-surface mt-8 rounded-lg border">
           <EmptyState
             condition="Nothing published yet"
             message="The catalogue is being loaded. Tell us what you need and an engineer will source it."
@@ -133,9 +133,9 @@ export default async function CategoriesIndexPage() {
             return (
               <div
                 key={cat.id}
-                className="group relative flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
+                className="group border-ih-border bg-ih-surface hover:border-ih-accent relative flex flex-col overflow-hidden rounded-lg border transition-colors"
               >
-                <div className="relative aspect-[16/9] border-b border-ih-border bg-ih-surface-2">
+                <div className="border-ih-border bg-ih-surface-2 relative aspect-[16/9] border-b">
                   {img ? (
                     <Image
                       src={img}
@@ -145,7 +145,7 @@ export default async function CategoriesIndexPage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
                     />
                   ) : (
-                    <span className="absolute inset-0 grid place-items-center font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+                    <span className="text-ih-muted-2 absolute inset-0 grid place-items-center font-mono text-[10.5px] tracking-[0.1em] uppercase">
                       {cat.name}
                     </span>
                   )}
@@ -155,13 +155,18 @@ export default async function CategoriesIndexPage() {
                   <h2 className="text-[17px] font-medium tracking-[-0.01em]">
                     {/* One link per card, stretched over the whole tile — the
                         accessible name is the category, not the child list. */}
-                    <Link href={`/c/${cat.slug}`} className="after:absolute after:inset-0 after:content-['']">
+                    <Link
+                      href={`/c/${cat.slug}`}
+                      className="after:absolute after:inset-0 after:content-['']"
+                    >
                       {cat.name}
                     </Link>
                   </h2>
 
                   {cat.shortDescription && (
-                    <p className="mt-2 line-clamp-2 text-[13px] leading-[1.55] text-ih-muted">{cat.shortDescription}</p>
+                    <p className="text-ih-muted mt-2 line-clamp-2 text-[13px] leading-[1.55]">
+                      {cat.shortDescription}
+                    </p>
                   )}
 
                   {cat.children.length > 0 && (
@@ -170,7 +175,7 @@ export default async function CategoriesIndexPage() {
                         <li key={child.id}>
                           <Link
                             href={`/c/${child.slug}`}
-                            className="text-[12.5px] text-ih-ink-2 underline-offset-2 hover:text-ih-accent hover:underline"
+                            className="text-ih-ink-2 hover:text-ih-accent text-[12.5px] underline-offset-2 hover:underline"
                           >
                             {child.name}
                           </Link>
@@ -179,7 +184,7 @@ export default async function CategoriesIndexPage() {
                     </ul>
                   )}
 
-                  <div className="mt-auto pt-4 font-mono text-[11px] tabular-nums text-ih-muted">
+                  <div className="text-ih-muted mt-auto pt-4 font-mono text-[11px] tabular-nums">
                     {cat.skuCount.toLocaleString()} SKU{cat.skuCount === 1 ? '' : 's'}
                   </div>
                 </div>

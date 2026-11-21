@@ -42,7 +42,7 @@ export type TemplateSwitchPlan = {
  */
 export function planTemplateSwitch(
   oldSpecs: SpecWithOldKey[],
-  newFields: NewTemplateField[],
+  newFields: NewTemplateField[]
 ): TemplateSwitchPlan {
   const newByKey = new Map<string, NewTemplateField>()
   for (const f of newFields) newByKey.set(f.key, f)
@@ -67,9 +67,7 @@ export type RequiredFieldDef = {
   isRequired: boolean
 }
 
-export type RequiredCheckResult =
-  | { ok: true }
-  | { ok: false; missingLabels: string[] }
+export type RequiredCheckResult = { ok: true } | { ok: false; missingLabels: string[] }
 
 /**
  * Server-side check that no required field arrives with an empty value.
@@ -78,7 +76,7 @@ export type RequiredCheckResult =
  */
 export function validateRequiredFields(
   updates: Array<{ fieldId: string; value: string }>,
-  fields: RequiredFieldDef[],
+  fields: RequiredFieldDef[]
 ): RequiredCheckResult {
   const byId = new Map(fields.map((f) => [f.id, f]))
   const missing: string[] = []
@@ -112,9 +110,7 @@ export function deriveFieldKey(input: string): string {
 
 export type SpecFieldDataType = 'text' | 'number' | 'boolean' | 'select'
 
-export type ValueCoercion =
-  | { ok: true; value: string }
-  | { ok: false; reason: string }
+export type ValueCoercion = { ok: true; value: string } | { ok: false; reason: string }
 
 /**
  * Validate a raw text value against a field's data type. Returns the canonical
@@ -125,7 +121,7 @@ export type ValueCoercion =
 export function coerceFieldValue(
   raw: string,
   dataType: SpecFieldDataType,
-  options: string[] | null = null,
+  options: string[] | null = null
 ): ValueCoercion {
   const trimmed = raw.trim()
   if (trimmed === '') return { ok: true, value: '' }
@@ -187,7 +183,7 @@ export const STAINLESS_ON_REQUEST_TEMPLATES: readonly string[] = [
  */
 export function offersStainlessOnRequest(
   specTemplateSlug: string | null | undefined,
-  brandSlug?: string | null,
+  brandSlug?: string | null
 ): boolean {
   if (brandSlug && brandSlug !== 'indus') return false
   return specTemplateSlug != null && STAINLESS_ON_REQUEST_TEMPLATES.includes(specTemplateSlug)

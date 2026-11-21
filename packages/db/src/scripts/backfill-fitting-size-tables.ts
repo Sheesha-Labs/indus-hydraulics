@@ -56,7 +56,6 @@ import { scoreProductContent } from '@indus/domain'
 
 const db = new PrismaClient()
 
-
 type Variant = {
   partNumber: string
   position: number
@@ -96,7 +95,10 @@ type Payload = {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 /**
@@ -142,7 +144,7 @@ async function main() {
     throw new Error(
       `part numbers already used by another product: ${clashes
         .map((c) => `${c.partNumber} (${c.product.sku})`)
-        .join(', ')}`,
+        .join(', ')}`
     )
   }
 
@@ -177,9 +179,7 @@ async function main() {
     }
 
     if (dryRun) {
-      console.log(
-        `[dry-run] ${e.sku} — ${e.variants.length} sizes from ${e.sources.join(', ')}`,
-      )
+      console.log(`[dry-run] ${e.sku} — ${e.variants.length} sizes from ${e.sources.join(', ')}`)
       updated++
       continue
     }
@@ -213,12 +213,12 @@ async function main() {
           data: {
             searchAliases: mergeAliases(
               product.searchAliases,
-              e.variants.map((v) => v.partNumber),
+              e.variants.map((v) => v.partNumber)
             ),
           },
         })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
     variantsWritten += e.variants.length
     updated++
@@ -226,13 +226,15 @@ async function main() {
     // Content score does not read variants, but it does read the counts this
     // import leaves unchanged — recomputed so the admin's depth column is not
     // stale relative to the row we just touched.
-    const [specCount, faqCount, documentCount, imageCount, crossReferenceCount] = await Promise.all([
-      db.productSpec.count({ where: { productId } }),
-      db.productFaq.count({ where: { productId } }),
-      db.productDocument.count({ where: { productId } }),
-      db.productImage.count({ where: { productId } }),
-      db.productCrossReference.count({ where: { productId } }),
-    ])
+    const [specCount, faqCount, documentCount, imageCount, crossReferenceCount] = await Promise.all(
+      [
+        db.productSpec.count({ where: { productId } }),
+        db.productFaq.count({ where: { productId } }),
+        db.productDocument.count({ where: { productId } }),
+        db.productImage.count({ where: { productId } }),
+        db.productCrossReference.count({ where: { productId } }),
+      ]
+    )
     const score = scoreProductContent({
       descriptionShortWords: words(product.descriptionShort ?? ''),
       descriptionLongWords: words(product.descriptionLong ?? ''),
@@ -254,18 +256,18 @@ async function main() {
 
   console.log(
     `\n[${payloadName}] done — ${updated} listings updated, ${variantsWritten} sizes written, ` +
-      `${replaced} listings already had a table, ${problems.length} problems`,
+      `${replaced} listings already had a table, ${problems.length} problems`
   )
   if (payload.sizeFieldCorrections.length > 0) {
     console.log(
       `  · source rows whose DASH cell contradicted their own part number, taken from the part number: ` +
-        payload.sizeFieldCorrections.join(', '),
+        payload.sizeFieldCorrections.join(', ')
     )
   }
   if (payload.sourceConflicts && payload.sourceConflicts.length > 0) {
     console.log(
       `  \u00b7 ${payload.sourceConflicts.length} part number(s) the source itself prints twice ` +
-        `against different sizes — the first printing is loaded, the second is not:`,
+        `against different sizes — the first printing is loaded, the second is not:`
     )
     for (const c of payload.sourceConflicts) console.log(`      ${c}`)
   }
@@ -276,7 +278,7 @@ async function main() {
   if (payload.duplicateRowsDropped.length > 0) {
     console.log(
       `  · ${payload.duplicateRowsDropped.length} source rows folded away as repeats of a size already in the table` +
-        ` (design variants of the same size, e.g. the "-A" ferrule)`,
+        ` (design variants of the same size, e.g. the "-A" ferrule)`
     )
   }
   for (const p of problems) console.log(`  ! ${p}`)

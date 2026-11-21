@@ -97,7 +97,10 @@ type Payload = {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]*>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 /** `&` and `<` are the only characters that can escape an HTML text node here. */
@@ -127,7 +130,8 @@ function dashRange(sizes: Size[]): string {
 }
 
 const CRIMP_METHOD: Record<Series['ferruleType'], string> = {
-  skive: 'The hose cover is skived back before crimping, so the ferrule closes directly onto the wire reinforcement',
+  skive:
+    'The hose cover is skived back before crimping, so the ferrule closes directly onto the wire reinforcement',
   'no-skive': 'Crimped straight over the hose cover — no skiving step before assembly',
 }
 
@@ -145,7 +149,7 @@ function sizeTableHtml(s: Series): string {
     .map(
       (r) =>
         `<tr><td>${esc(r.part)}</td><td>${r.dn}</td><td>${esc(r.dash)}</td>` +
-        `<td>${esc(r.inch)}</td><td>${esc(r.d)}</td><td>${esc(r.l)}</td></tr>`,
+        `<td>${esc(r.inch)}</td><td>${esc(r.d)}</td><td>${esc(r.l)}</td></tr>`
     )
     .join('\n')
   return (
@@ -200,20 +204,74 @@ function descriptionShort(s: Series): string {
   )
 }
 
-type SpecRow = { group: string; label: string; value: string; unit: string | null; templateKey: string | null }
+type SpecRow = {
+  group: string
+  label: string
+  value: string
+  unit: string | null
+  templateKey: string | null
+}
 
 function specs(s: Series): SpecRow[] {
   const d = numeric(s.sizes.map((x) => x.d))
   const l = numeric(s.sizes.map((x) => x.l))
   return [
-    { group: 'Identification', label: 'Ferrule Type', value: s.ferruleType, unit: null, templateKey: 'ferrule_type' },
-    { group: 'Identification', label: 'Part Reference Range', value: s.partPrefixes, unit: null, templateKey: null },
-    { group: 'Identification', label: 'Compatible Hoses', value: `Manuli ${s.hoseFamily}`, unit: null, templateKey: 'compatible_hoses' },
-    { group: 'Dimensions', label: 'Nominal Size Range', value: bore(s.sizes), unit: null, templateKey: 'nominal_size_range' },
-    { group: 'Dimensions', label: 'Dash Size Range', value: dashRange(s.sizes), unit: null, templateKey: null },
-    { group: 'Dimensions', label: 'Outside Diameter (D) Range', value: `${d.min} – ${d.max}`, unit: 'mm', templateKey: null },
-    { group: 'Dimensions', label: 'Length (L) Range', value: `${l.min} – ${l.max}`, unit: 'mm', templateKey: null },
-    { group: 'Construction', label: 'Crimp Method', value: CRIMP_METHOD[s.ferruleType], unit: null, templateKey: 'crimp_method' },
+    {
+      group: 'Identification',
+      label: 'Ferrule Type',
+      value: s.ferruleType,
+      unit: null,
+      templateKey: 'ferrule_type',
+    },
+    {
+      group: 'Identification',
+      label: 'Part Reference Range',
+      value: s.partPrefixes,
+      unit: null,
+      templateKey: null,
+    },
+    {
+      group: 'Identification',
+      label: 'Compatible Hoses',
+      value: `Manuli ${s.hoseFamily}`,
+      unit: null,
+      templateKey: 'compatible_hoses',
+    },
+    {
+      group: 'Dimensions',
+      label: 'Nominal Size Range',
+      value: bore(s.sizes),
+      unit: null,
+      templateKey: 'nominal_size_range',
+    },
+    {
+      group: 'Dimensions',
+      label: 'Dash Size Range',
+      value: dashRange(s.sizes),
+      unit: null,
+      templateKey: null,
+    },
+    {
+      group: 'Dimensions',
+      label: 'Outside Diameter (D) Range',
+      value: `${d.min} – ${d.max}`,
+      unit: 'mm',
+      templateKey: null,
+    },
+    {
+      group: 'Dimensions',
+      label: 'Length (L) Range',
+      value: `${l.min} – ${l.max}`,
+      unit: 'mm',
+      templateKey: null,
+    },
+    {
+      group: 'Construction',
+      label: 'Crimp Method',
+      value: CRIMP_METHOD[s.ferruleType],
+      unit: null,
+      templateKey: 'crimp_method',
+    },
     { group: 'Commercial', label: 'Sold By', value: 'each', unit: null, templateKey: 'sold_by' },
   ]
 }
@@ -263,7 +321,10 @@ async function main() {
   const payload = JSON.parse(readFileSync(DATA, 'utf8')) as Payload
   const problems: string[] = []
 
-  const brand = await db.brand.findUnique({ where: { slug: payload.brandSlug }, select: { id: true } })
+  const brand = await db.brand.findUnique({
+    where: { slug: payload.brandSlug },
+    select: { id: true },
+  })
   if (!brand) throw new Error(`brand "${payload.brandSlug}" not found`)
 
   const template = await db.specTemplate.findUnique({
@@ -283,7 +344,10 @@ async function main() {
   const h = payload.hub
   let hubId: string | null = null
   let categoriesCreated = 0
-  const existingHub = await db.category.findUnique({ where: { slug: h.slug }, select: { id: true } })
+  const existingHub = await db.category.findUnique({
+    where: { slug: h.slug },
+    select: { id: true },
+  })
   if (existingHub) {
     hubId = existingHub.id
     if (refreshCopy && !dryRun) {
@@ -335,7 +399,10 @@ async function main() {
   const categoryIdBySlug = new Map<string, string>()
   let position = 0
   for (const s of payload.series) {
-    const existing = await db.category.findUnique({ where: { slug: s.categorySlug }, select: { id: true } })
+    const existing = await db.category.findUnique({
+      where: { slug: s.categorySlug },
+      select: { id: true },
+    })
     if (existing) {
       categoryIdBySlug.set(s.categorySlug, existing.id)
       if (refreshCopy && !dryRun) {
@@ -393,7 +460,9 @@ async function main() {
       select: { id: true, menuId: true },
     })
     if (!section) {
-      problems.push(`nav section "${g.parentLabel}" not found in ${NAV_MENU_SLUG} — no menu entries added`)
+      problems.push(
+        `nav section "${g.parentLabel}" not found in ${NAV_MENU_SLUG} — no menu entries added`
+      )
     } else {
       let column = await db.navMenuItem.findFirst({
         where: { label: h.navLabel, parentId: section.id },
@@ -498,12 +567,22 @@ async function main() {
 
     let product = await db.product.findUnique({
       where: { sku: s.sku },
-      select: { id: true, brandId: true, categoryId: true, focusKeyword: true, seoTitle: true, seoDescription: true, _count: { select: { crossReferences: true } } },
+      select: {
+        id: true,
+        brandId: true,
+        categoryId: true,
+        focusKeyword: true,
+        seoTitle: true,
+        seoDescription: true,
+        _count: { select: { crossReferences: true } },
+      },
     })
 
     if (!product) {
       if (dryRun) {
-        console.log(`[dry-run] create ${s.sku} — ${s.title} (${s.sizes.length} sizes, ${words(body)} words)`)
+        console.log(
+          `[dry-run] create ${s.sku} — ${s.title} (${s.sizes.length} sizes, ${words(body)} words)`
+        )
         created++
         continue
       }
@@ -523,7 +602,15 @@ async function main() {
           status: 'active',
           unitOfMeasure: 'each',
         },
-        select: { id: true, brandId: true, categoryId: true, focusKeyword: true, seoTitle: true, seoDescription: true, _count: { select: { crossReferences: true } } },
+        select: {
+          id: true,
+          brandId: true,
+          categoryId: true,
+          focusKeyword: true,
+          seoTitle: true,
+          seoDescription: true,
+          _count: { select: { crossReferences: true } },
+        },
       })
       created++
     } else {
@@ -566,7 +653,9 @@ async function main() {
                 value: spec.value,
                 unit: spec.unit,
                 position: (max._max.position ?? -1) + 1,
-                templateFieldId: spec.templateKey ? (fieldByKey.get(spec.templateKey) ?? null) : null,
+                templateFieldId: spec.templateKey
+                  ? (fieldByKey.get(spec.templateKey) ?? null)
+                  : null,
               },
             })
           } else if (spec.templateKey) {
@@ -588,7 +677,12 @@ async function main() {
           })
           if (hit.count === 0) {
             await tx.productFaq.create({
-              data: { productId: product!.id, question: f.question, answer: f.answer, position: faqPos++ },
+              data: {
+                productId: product!.id,
+                question: f.question,
+                answer: f.answer,
+                position: faqPos++,
+              },
             })
           }
         }
@@ -615,14 +709,14 @@ async function main() {
         })
         await tx.product.update({ where: { id: product!.id }, data: { contentScore: score.score } })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
   }
 
   console.log(
     `\n[ferrules] ${dryRun ? 'dry run — ' : ''}${created} listings created, ${updated} updated, ` +
       `${refreshed} refreshed, ${categoriesCreated} categories created, ` +
-      `${navCreated} menu entries added, ${problems.length} problems`,
+      `${navCreated} menu entries added, ${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
 }

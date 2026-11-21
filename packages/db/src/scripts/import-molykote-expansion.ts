@@ -124,7 +124,10 @@ function loadWebEnv() {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 /** A bare fetch has no timeout, so one stalled asset takes the whole run down. */
@@ -153,8 +156,12 @@ function detectImage(buf: Buffer): { mime: string; ext: string } | null {
   if (buf.length < 12) return null
   if (buf.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])))
     return { mime: 'image/png', ext: 'png' }
-  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return { mime: 'image/jpeg', ext: 'jpg' }
-  if (buf.subarray(0, 4).toString('ascii') === 'RIFF' && buf.subarray(8, 12).toString('ascii') === 'WEBP')
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff)
+    return { mime: 'image/jpeg', ext: 'jpg' }
+  if (
+    buf.subarray(0, 4).toString('ascii') === 'RIFF' &&
+    buf.subarray(8, 12).toString('ascii') === 'WEBP'
+  )
     return { mime: 'image/webp', ext: 'webp' }
   return null
 }
@@ -185,7 +192,9 @@ async function main() {
     ...payload.entries.map((e) => [e.sku, e.seoTitle] as const),
   ].filter(([, t]) => /indus hydraulics/i.test(t))
   if (doubled.length) {
-    throw new Error(`seoTitle must not contain the site name: ${doubled.map(([k]) => k).join(', ')}`)
+    throw new Error(
+      `seoTitle must not contain the site name: ${doubled.map(([k]) => k).join(', ')}`
+    )
   }
 
   const parent = await db.category.findUnique({
@@ -304,7 +313,7 @@ async function main() {
       console.log(
         `[dry-run] ${product ? 'exists' : 'create'} ${e.sku} — ${e.title} ` +
           `(${e.categorySlug}, ${e.specs.length} specs, ${e.faqs.length} faqs, ` +
-          `${e.image ? 'image' : 'NO IMAGE'}, ${e.document ? 'datasheet' : 'no datasheet'})`,
+          `${e.image ? 'image' : 'NO IMAGE'}, ${e.document ? 'datasheet' : 'no datasheet'})`
       )
       if (!product) created++
       continue
@@ -417,10 +426,15 @@ async function main() {
                   data: { position: { increment: 1 } },
                 })
                 await tx.productImage.create({
-                  data: { productId: product!.id, mediaId: media.id, position: 0, alt: product!.title },
+                  data: {
+                    productId: product!.id,
+                    mediaId: media.id,
+                    position: 0,
+                    alt: product!.title,
+                  },
                 })
               },
-              { maxWait: 30_000, timeout: 30_000 },
+              { maxWait: 30_000, timeout: 30_000 }
             )
             images++
           }
@@ -542,7 +556,7 @@ async function main() {
           hasFocusKeyword: Boolean(product!.focusKeyword),
           hasSeoTitleAndDescription: Boolean(product!.seoTitle && product!.seoDescription),
           hasCommerceAttributes: Boolean(
-            product!.weightKg && product!.countryOfOrigin && product!.mpn,
+            product!.weightKg && product!.countryOfOrigin && product!.mpn
           ),
         })
         await tx.product.update({
@@ -551,7 +565,7 @@ async function main() {
         })
         if (e.document) datasheets++
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
 
     const done = created + refreshed
@@ -562,7 +576,7 @@ async function main() {
     `\n[molykote] done — ${created} products created, ${refreshed} refreshed, ` +
       `${images} images attached, ${imagesSkipped} images already present, ` +
       `${datasheets} datasheets linked, ${categoriesCreated} categories created, ` +
-      `${problems.length} problems`,
+      `${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
 }

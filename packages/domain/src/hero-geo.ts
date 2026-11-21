@@ -274,7 +274,9 @@ export function resolveHeroGeoCode(input: HeroGeoInput): string {
 }
 
 export function heroGeoVariant(input: HeroGeoInput): HeroGeoVariant {
-  return VARIANTS_BY_CODE.get(resolveHeroGeoCode(input)) ?? VARIANTS_BY_CODE.get(HERO_GEO_FALLBACK_CODE)!
+  return (
+    VARIANTS_BY_CODE.get(resolveHeroGeoCode(input)) ?? VARIANTS_BY_CODE.get(HERO_GEO_FALLBACK_CODE)!
+  )
 }
 
 /**

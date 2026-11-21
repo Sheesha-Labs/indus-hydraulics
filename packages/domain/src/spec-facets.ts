@@ -74,7 +74,10 @@ export function facetLabelKey(label: string): string {
  * clears "two distinct values" easily and never groups anything.
  */
 export function buildSpecFacets(rows: SpecFacetRow[]): SpecFacet[] {
-  const byLabel = new Map<string, Map<string, { raw: Map<string, number>; products: Set<string> }>>()
+  const byLabel = new Map<
+    string,
+    Map<string, { raw: Map<string, number>; products: Set<string> }>
+  >()
 
   for (const row of rows) {
     const value = row.value.trim()
@@ -108,7 +111,7 @@ export function buildSpecFacets(rows: SpecFacetRow[]): SpecFacet[] {
         // The dominant spelling wins the label, so the merged option reads as
         // whichever variant the catalogue mostly uses.
         label: [...bucket.raw.entries()].sort(
-          (a, b) => b[1] - a[1] || a[0].localeCompare(b[0]),
+          (a, b) => b[1] - a[1] || a[0].localeCompare(b[0])
         )[0]![0],
         count: bucket.products.size,
       }))
@@ -120,9 +123,7 @@ export function buildSpecFacets(rows: SpecFacetRow[]): SpecFacet[] {
   // Most-partitioning facet first: the one with the most options is usually the
   // one a reader wants (configuration, thread), and a two-value yes/no facet is
   // usually a refinement.
-  return facets.sort(
-    (a, b) => b.values.length - a.values.length || a.label.localeCompare(b.label),
-  )
+  return facets.sort((a, b) => b.values.length - a.values.length || a.label.localeCompare(b.label))
 }
 
 // ─── URL round-trip ─────────────────────────────────────────────────────────
@@ -171,7 +172,7 @@ export function serialiseSpecFilter(filter: SpecFilter): string | undefined {
 export function toggleSpecValue(
   filter: SpecFilter,
   labelKey: string,
-  valueKey: string,
+  valueKey: string
 ): SpecFilter {
   const next: SpecFilter = new Map([...filter].map(([k, v]) => [k, new Set(v)]))
   const values = next.get(labelKey) ?? new Set<string>()

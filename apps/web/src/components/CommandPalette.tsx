@@ -25,7 +25,13 @@ import { useRouter } from 'next/navigation'
  */
 
 type Row = { title: string; url: string; hint?: string; sku?: string }
-type Groups = { products: Row[]; categories: Row[]; services: Row[]; pages: Row[]; skuCount: number }
+type Groups = {
+  products: Row[]
+  categories: Row[]
+  services: Row[]
+  pages: Row[]
+  skuCount: number
+}
 
 const EMPTY: Groups = { products: [], categories: [], services: [], pages: [], skuCount: 0 }
 
@@ -93,21 +99,24 @@ export default function CommandPalette() {
   useEffect(() => {
     if (!open) return
     let cancelled = false
-    const id = setTimeout(async () => {
-      setLoading(true)
-      try {
-        const res = await fetch(`/api/search/palette?q=${encodeURIComponent(query.trim())}`)
-        const data = (await res.json()) as Groups
-        if (!cancelled) {
-          setGroups(data)
-          setActive(0)
+    const id = setTimeout(
+      async () => {
+        setLoading(true)
+        try {
+          const res = await fetch(`/api/search/palette?q=${encodeURIComponent(query.trim())}`)
+          const data = (await res.json()) as Groups
+          if (!cancelled) {
+            setGroups(data)
+            setActive(0)
+          }
+        } catch {
+          if (!cancelled) setGroups(EMPTY)
+        } finally {
+          if (!cancelled) setLoading(false)
         }
-      } catch {
-        if (!cancelled) setGroups(EMPTY)
-      } finally {
-        if (!cancelled) setLoading(false)
-      }
-    }, query.trim() ? 130 : 0)
+      },
+      query.trim() ? 130 : 0
+    )
     return () => {
       cancelled = true
       clearTimeout(id)
@@ -166,11 +175,19 @@ export default function CommandPalette() {
         aria-modal="true"
         aria-label="Search everything"
         onKeyDown={onKeyDown}
-        className="mx-auto mt-[96px] w-[min(660px,calc(100vw-32px))] overflow-hidden rounded-lg border border-ih-border bg-ih-surface shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
+        className="border-ih-border bg-ih-surface mx-auto mt-[96px] w-[min(660px,calc(100vw-32px))] overflow-hidden rounded-lg border shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
       >
-        <div className="flex items-center gap-3 border-b border-ih-border px-4">
+        <div className="border-ih-border flex items-center gap-3 border-b px-4">
           <span aria-hidden="true" className="text-ih-muted">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.7}
+              strokeLinecap="round"
+            >
               <circle cx="11" cy="11" r="7" />
               <path d="m20 20-3.5-3.5" />
             </svg>
@@ -185,19 +202,24 @@ export default function CommandPalette() {
             aria-expanded="true"
             aria-controls="ih-palette-list"
             aria-activedescendant={flat[active] ? `ih-palette-row-${active}` : undefined}
-            className="h-14 flex-1 bg-transparent text-[15px] text-ih-ink outline-none placeholder:text-ih-muted"
+            className="text-ih-ink placeholder:text-ih-muted h-14 flex-1 bg-transparent text-[15px] outline-none"
           />
-          {loading && <span className="font-mono text-[10.5px] text-ih-muted-2">…</span>}
+          {loading && <span className="text-ih-muted-2 font-mono text-[10.5px]">…</span>}
         </div>
 
-        <ul id="ih-palette-list" role="listbox" aria-label="Results" className="max-h-[52vh] overflow-y-auto py-2">
+        <ul
+          id="ih-palette-list"
+          role="listbox"
+          aria-label="Results"
+          className="max-h-[52vh] overflow-y-auto py-2"
+        >
           {flat.length === 0 && (
             <li className="px-4 py-8 text-center">
-              <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <p className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
                 {query.trim() ? 'Nothing matched that query' : 'Type to search'}
               </p>
               {query.trim() && (
-                <p className="mt-2 text-[13px] text-ih-ink-2">
+                <p className="text-ih-ink-2 mt-2 text-[13px]">
                   Press Enter to run a full search, or try a part number.
                 </p>
               )}
@@ -209,7 +231,7 @@ export default function CommandPalette() {
             if (rows.length === 0) return null
             return (
               <li key={group}>
-                <p className="px-4 pb-1.5 pt-3 font-mono text-[10px] font-medium uppercase tracking-[0.13em] text-ih-muted-2">
+                <p className="text-ih-muted-2 px-4 pt-3 pb-1.5 font-mono text-[10px] font-medium tracking-[0.13em] uppercase">
                   {group}
                 </p>
                 <ul>
@@ -235,16 +257,18 @@ export default function CommandPalette() {
                       >
                         <span
                           aria-hidden="true"
-                          className="grid h-[30px] w-[30px] shrink-0 place-items-center rounded-sm border border-ih-border bg-ih-surface-2 font-mono text-[9px] text-ih-muted"
+                          className="border-ih-border bg-ih-surface-2 text-ih-muted grid h-[30px] w-[30px] shrink-0 place-items-center rounded-sm border font-mono text-[9px]"
                         >
                           {group.slice(0, 2).toUpperCase()}
                         </span>
                         <span className="min-w-0 flex-1">
-                          <span className={`block truncate text-[13.5px] ${isActive ? 'text-ih-accent' : 'text-ih-ink'}`}>
+                          <span
+                            className={`block truncate text-[13.5px] ${isActive ? 'text-ih-accent' : 'text-ih-ink'}`}
+                          >
                             {row.title}
                           </span>
                           {(row.sku || row.hint) && (
-                            <span className="mt-0.5 block truncate font-mono text-[10.5px] text-ih-muted">
+                            <span className="text-ih-muted mt-0.5 block truncate font-mono text-[10.5px]">
                               {[row.sku, row.hint].filter(Boolean).join(' · ')}
                             </span>
                           )}
@@ -258,11 +282,11 @@ export default function CommandPalette() {
           })}
         </ul>
 
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-ih-border bg-ih-surface-2 px-4 py-2.5">
+        <div className="border-ih-border bg-ih-surface-2 flex flex-wrap items-center gap-x-4 gap-y-2 border-t px-4 py-2.5">
           <Legend keys={['↑', '↓']} label="navigate" />
           <Legend keys={['↵']} label="open" />
           <Legend keys={['esc']} label="close" />
-          <span className="ml-auto font-mono text-[10.5px] tabular-nums text-ih-muted-2">
+          <span className="text-ih-muted-2 ml-auto font-mono text-[10.5px] tabular-nums">
             {groups.skuCount.toLocaleString()} SKUs indexed
           </span>
         </div>
@@ -277,12 +301,12 @@ function Legend({ keys, label }: { keys: string[]; label: string }) {
       {keys.map((k) => (
         <kbd
           key={k}
-          className="grid h-[18px] min-w-[18px] place-items-center rounded-[3px] border border-ih-border bg-ih-surface px-1 font-mono text-[10px] text-ih-ink-2"
+          className="border-ih-border bg-ih-surface text-ih-ink-2 grid h-[18px] min-w-[18px] place-items-center rounded-[3px] border px-1 font-mono text-[10px]"
         >
           {k}
         </kbd>
       ))}
-      <span className="font-mono text-[10.5px] text-ih-muted-2">{label}</span>
+      <span className="text-ih-muted-2 font-mono text-[10.5px]">{label}</span>
     </span>
   )
 }

@@ -42,14 +42,18 @@ describe('weighCategoryKeyword', () => {
   })
 
   it('is case-insensitive on both sides', () => {
-    expect(weighCategoryKeyword('BUTTERFLY VALVES', 'butterfly-valves', 'Butterfly Valves').weight).toBe(
-      CATEGORY_KEYWORD_MIN_WEIGHT,
-    )
+    expect(
+      weighCategoryKeyword('BUTTERFLY VALVES', 'butterfly-valves', 'Butterfly Valves').weight
+    ).toBe(CATEGORY_KEYWORD_MIN_WEIGHT)
   })
 
   it('scores a keyword absent from the title below the bar', () => {
     // Slug and title disagree: "bsp adapters" vs "BSP Hydraulic Adapters".
-    const w = weighCategoryKeyword('bsp adapters', 'bsp-adapters', 'BSP Hydraulic Adapters — BSPP & BSPT')
+    const w = weighCategoryKeyword(
+      'bsp adapters',
+      'bsp-adapters',
+      'BSP Hydraulic Adapters — BSPP & BSPT'
+    )
     expect(w.inUrl).toBe(true)
     expect(w.inTitle).toBe(false)
     expect(w.weight).toBeLessThan(CATEGORY_KEYWORD_MIN_WEIGHT)
@@ -65,11 +69,17 @@ describe('deriveCategoryFocusKeyword', () => {
   it('returns null when slug and title share no specific phrase', () => {
     // `bop-annular` titled "Annular Blowout Preventers" — the bop- prefix is
     // internal taxonomy, not search language, so nothing qualifies.
-    expect(deriveCategoryFocusKeyword('bop-annular', 'Annular', 'Annular Blowout Preventers')).toBeNull()
+    expect(
+      deriveCategoryFocusKeyword('bop-annular', 'Annular', 'Annular Blowout Preventers')
+    ).toBeNull()
   })
 
   it('never returns a bare head noun even when it would score full marks', () => {
-    const got = deriveCategoryFocusKeyword('abrasive-hoses', 'Abrasive Hoses', 'Abrasive & Material Handling Hoses')
+    const got = deriveCategoryFocusKeyword(
+      'abrasive-hoses',
+      'Abrasive Hoses',
+      'Abrasive & Material Handling Hoses'
+    )
     expect(got?.keyword).not.toBe('hoses')
   })
 

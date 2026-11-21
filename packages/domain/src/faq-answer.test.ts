@@ -10,7 +10,7 @@ describe('parseFaqAnswer', () => {
 
   it('splits internal links out of the text, in order', () => {
     expect(
-      parseFaqAnswer('Use the [R2AT ferrule](/p/r2at-ferrule) and see [the guide](/blog/crimping).'),
+      parseFaqAnswer('Use the [R2AT ferrule](/p/r2at-ferrule) and see [the guide](/blog/crimping).')
     ).toEqual([
       { kind: 'text', text: 'Use the ' },
       { kind: 'link', text: 'R2AT ferrule', href: '/p/r2at-ferrule' },
@@ -52,7 +52,7 @@ describe('parseFaqAnswer', () => {
 describe('faqAnswerPlainText', () => {
   it('drops link markup and keeps the words', () => {
     expect(faqAnswerPlainText('Pair it with the [matching seal kit](/p/seal-kit).')).toBe(
-      'Pair it with the matching seal kit.',
+      'Pair it with the matching seal kit.'
     )
   })
 })

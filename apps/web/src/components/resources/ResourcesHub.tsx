@@ -63,27 +63,35 @@ export default function ResourcesHub({
 
   return (
     <div className="bg-ih-surface">
-      <ResourceBreadcrumbStrip trail={[{ label: 'Home', href: '/' }, { label: 'Resources' }]} meta={meta} />
+      <ResourceBreadcrumbStrip
+        trail={[{ label: 'Home', href: '/' }, { label: 'Resources' }]}
+        meta={meta}
+      />
 
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className={`border-b border-ih-border bg-ih-surface pb-12 pt-10 lg:pb-14 lg:pt-14 ${RESOURCE_GUTTER}`}>
+      <section
+        className={`border-ih-border bg-ih-surface border-b pt-10 pb-12 lg:pt-14 lg:pb-14 ${RESOURCE_GUTTER}`}
+      >
         <div
           className={`${RESOURCE_WIDTH} grid grid-cols-1 items-end gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:gap-16`}
         >
           <div>
             {copy.hero.eyebrow ? <Eyebrow>{copy.hero.eyebrow}</Eyebrow> : null}
-            <h1 className="mt-[18px] max-w-[860px] text-balance font-serif text-[38px] font-normal leading-[1.02] tracking-[-0.01em] sm:text-[48px] lg:text-[60px]">
-              {copy.hero.heading} {copy.hero.headingEmphasis ? <em>{copy.hero.headingEmphasis}</em> : null}
+            <h1 className="mt-[18px] max-w-[860px] font-serif text-[38px] leading-[1.02] font-normal tracking-[-0.01em] text-balance sm:text-[48px] lg:text-[60px]">
+              {copy.hero.heading}{' '}
+              {copy.hero.headingEmphasis ? <em>{copy.hero.headingEmphasis}</em> : null}
             </h1>
             {copy.hero.body ? (
-              <p className="mt-5 max-w-[660px] text-pretty text-[16px] leading-[1.6] text-ih-ink-2">{copy.hero.body}</p>
+              <p className="text-ih-ink-2 mt-5 max-w-[660px] text-[16px] leading-[1.6] text-pretty">
+                {copy.hero.body}
+              </p>
             ) : null}
             <div className="mt-[26px] flex flex-wrap gap-2">
               {entries.map((entry) => (
                 <Link
                   key={entry.key}
                   href={entry.href}
-                  className="inline-flex h-[30px] items-center rounded-full border border-ih-border bg-ih-surface px-3 text-[12.5px] text-ih-ink-2 transition-colors duration-150 hover:border-ih-accent hover:text-ih-accent"
+                  className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] items-center rounded-full border px-3 text-[12.5px] transition-colors duration-150"
                 >
                   {entry.title}
                 </Link>
@@ -93,14 +101,20 @@ export default function ResourcesHub({
 
           {/* The 1px gap over the border colour IS the divider. */}
           {copy.hero.tiles.length > 0 ? (
-            <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-ih-border bg-ih-border">
+            <dl className="border-ih-border bg-ih-border grid grid-cols-2 gap-px overflow-hidden rounded-lg border">
               {copy.hero.tiles.map((tile) => (
-                <div key={tile.label} className="bg-ih-surface px-5 pb-5 pt-[18px]">
-                  <dt className="mono text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">{tile.label}</dt>
+                <div key={tile.label} className="bg-ih-surface px-5 pt-[18px] pb-5">
+                  <dt className="mono text-ih-muted text-[9.5px] tracking-[0.13em] uppercase">
+                    {tile.label}
+                  </dt>
                   {/^\d[\d,]*$/.test(tile.value) ? (
-                    <dd className="m-0 mt-1.5 text-[30px] font-medium leading-none tracking-[-0.025em]">{tile.value}</dd>
+                    <dd className="m-0 mt-1.5 text-[30px] leading-none font-medium tracking-[-0.025em]">
+                      {tile.value}
+                    </dd>
                   ) : (
-                    <dd className="m-0 mt-1.5 font-serif text-[24px] leading-none tracking-[-0.025em]">{tile.value}</dd>
+                    <dd className="m-0 mt-1.5 font-serif text-[24px] leading-none tracking-[-0.025em]">
+                      {tile.value}
+                    </dd>
                   )}
                 </div>
               ))}
@@ -112,11 +126,17 @@ export default function ResourcesHub({
       {/* ─── Manifest strip ────────────────────────────────────────────── */}
       {on('manifest') && copy.manifest.length > 0 ? (
         <div className={`bg-ih-navy ${RESOURCE_GUTTER}`}>
-          <dl className={`${RESOURCE_WIDTH} grid grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6`}>
+          <dl
+            className={`${RESOURCE_WIDTH} grid grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6`}
+          >
             {copy.manifest.map((fact) => (
-              <div key={fact.label} className="bg-ih-navy px-5 pb-6 pt-[22px]">
-                <dt className="mono text-[9px] uppercase tracking-[0.16em] text-ih-steel">{fact.label}</dt>
-                <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">{fact.value}</dd>
+              <div key={fact.label} className="bg-ih-navy px-5 pt-[22px] pb-6">
+                <dt className="mono text-ih-steel text-[9px] tracking-[0.16em] uppercase">
+                  {fact.label}
+                </dt>
+                <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">
+                  {fact.value}
+                </dd>
               </div>
             ))}
           </dl>
@@ -125,12 +145,19 @@ export default function ResourcesHub({
 
       {/* ─── 01 · References ───────────────────────────────────────────── */}
       {on('references') ? (
-        <section aria-label="References" className={`bg-ih-bg py-14 lg:py-[72px] ${RESOURCE_GUTTER}`}>
+        <section
+          aria-label="References"
+          className={`bg-ih-bg py-14 lg:py-[72px] ${RESOURCE_GUTTER}`}
+        >
           <div className={RESOURCE_WIDTH}>
-            <div className="grid grid-cols-1 items-end gap-6 border-b border-ih-border pb-[13px] lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-14">
-              <HubSectionHead number="/01" eyebrow={copy.references.eyebrow} title={copy.references.heading} />
+            <div className="border-ih-border grid grid-cols-1 items-end gap-6 border-b pb-[13px] lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-14">
+              <HubSectionHead
+                number="/01"
+                eyebrow={copy.references.eyebrow}
+                title={copy.references.heading}
+              />
               {copy.references.body ? (
-                <p className="text-[13.5px] leading-[1.6] text-ih-muted">{copy.references.body}</p>
+                <p className="text-ih-muted text-[13.5px] leading-[1.6]">{copy.references.body}</p>
               ) : null}
             </div>
 
@@ -142,21 +169,25 @@ export default function ResourcesHub({
                     on the title's anchor, so the card has ONE link in the tab
                     order and one accessible name — not four.
                   */}
-                  <article className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors duration-150 focus-within:border-ih-accent focus-within:ring-[3px] focus-within:ring-ih-accent-soft hover:border-ih-accent">
+                  <article className="group border-ih-border bg-ih-surface focus-within:border-ih-accent focus-within:ring-ih-accent-soft hover:border-ih-accent relative flex h-full flex-col overflow-hidden rounded-lg border transition-colors duration-150 focus-within:ring-[3px]">
                     <ResourceSpecimen resource={entry.key} />
-                    <div className="flex flex-1 flex-col px-6 pb-6 pt-5">
-                      <p className="mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">{entry.basis}</p>
-                      <h3 className="mt-2.5 text-[22px] font-medium leading-[1.2] tracking-[-0.02em]">
+                    <div className="flex flex-1 flex-col px-6 pt-5 pb-6">
+                      <p className="mono text-ih-steel text-[9.5px] tracking-[0.12em] uppercase">
+                        {entry.basis}
+                      </p>
+                      <h3 className="mt-2.5 text-[22px] leading-[1.2] font-medium tracking-[-0.02em]">
                         <Link
                           href={entry.href}
-                          className="outline-none after:absolute after:inset-0 after:content-[''] group-hover:text-ih-accent"
+                          className="group-hover:text-ih-accent outline-none after:absolute after:inset-0 after:content-['']"
                         >
                           {entry.title}
                         </Link>
                       </h3>
-                      <p className="mt-2 text-[13.5px] leading-[1.6] text-ih-muted">{entry.summary}</p>
+                      <p className="text-ih-muted mt-2 text-[13.5px] leading-[1.6]">
+                        {entry.summary}
+                      </p>
                       <SpecList rows={entry.facts} className="mt-4" />
-                      <span className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent">
+                      <span className="text-ih-accent mt-5 inline-flex items-center gap-1.5 text-[13px] font-medium">
                         {entry.cta}
                         <ArrowRightIcon size={14} />
                       </span>
@@ -171,28 +202,40 @@ export default function ResourcesHub({
 
       {/* ─── 02 · Calculators ──────────────────────────────────────────── */}
       {on('calculators') ? (
-        <section aria-label="Calculators" className={`border-t border-ih-border bg-ih-surface py-14 lg:py-[72px] ${RESOURCE_GUTTER}`}>
+        <section
+          aria-label="Calculators"
+          className={`border-ih-border bg-ih-surface border-t py-14 lg:py-[72px] ${RESOURCE_GUTTER}`}
+        >
           <div className={RESOURCE_WIDTH}>
-            <div className="grid grid-cols-1 items-end gap-6 border-b border-ih-border pb-[13px] lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-14">
-              <HubSectionHead number="/02" eyebrow={copy.calculators.eyebrow} title={copy.calculators.heading} />
+            <div className="border-ih-border grid grid-cols-1 items-end gap-6 border-b pb-[13px] lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:gap-14">
+              <HubSectionHead
+                number="/02"
+                eyebrow={copy.calculators.eyebrow}
+                title={copy.calculators.heading}
+              />
               {copy.calculators.body ? (
-                <p className="text-[13.5px] leading-[1.6] text-ih-muted">{copy.calculators.body}</p>
+                <p className="text-ih-muted text-[13.5px] leading-[1.6]">{copy.calculators.body}</p>
               ) : null}
             </div>
 
             <HairlineGrid className="mt-8 grid-cols-1 md:grid-cols-3">
               {calculators.map((tool) => (
-                <HairlineCell key={tool.href} className="group relative flex flex-col gap-2.5 px-6 pb-6 pt-[22px] focus-within:bg-ih-surface-2 hover:bg-ih-surface-2">
-                  <p className="mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">{tool.kind}</p>
+                <HairlineCell
+                  key={tool.href}
+                  className="group focus-within:bg-ih-surface-2 hover:bg-ih-surface-2 relative flex flex-col gap-2.5 px-6 pt-[22px] pb-6"
+                >
+                  <p className="mono text-ih-steel text-[9.5px] tracking-[0.12em] uppercase">
+                    {tool.kind}
+                  </p>
                   <h3 className="text-[17px] font-medium tracking-[-0.02em]">
                     <Link
                       href={tool.href}
-                      className="outline-none after:absolute after:inset-0 after:content-[''] group-hover:text-ih-accent focus-visible:underline"
+                      className="group-hover:text-ih-accent outline-none after:absolute after:inset-0 after:content-[''] focus-visible:underline"
                     >
                       {tool.title}
                     </Link>
                   </h3>
-                  <p className="flex-1 text-[13px] leading-[1.55] text-ih-muted">{tool.summary}</p>
+                  <p className="text-ih-muted flex-1 text-[13px] leading-[1.55]">{tool.summary}</p>
                   <span aria-hidden="true" className="text-ih-accent">
                     <ArrowRightIcon size={15} />
                   </span>
@@ -205,23 +248,38 @@ export default function ResourcesHub({
 
       {/* ─── 03 · Guides ───────────────────────────────────────────────── */}
       {on('guides') && guides.length > 0 ? (
-        <section aria-label="Guides" className={`border-t border-ih-border bg-ih-bg py-14 lg:py-[72px] ${RESOURCE_GUTTER}`}>
+        <section
+          aria-label="Guides"
+          className={`border-ih-border bg-ih-bg border-t py-14 lg:py-[72px] ${RESOURCE_GUTTER}`}
+        >
           <div className={RESOURCE_WIDTH}>
-            <div className="border-b border-ih-border pb-[13px]">
-              <HubSectionHead number="/03" eyebrow={copy.guides.eyebrow} title={copy.guides.heading} />
+            <div className="border-ih-border border-b pb-[13px]">
+              <HubSectionHead
+                number="/03"
+                eyebrow={copy.guides.eyebrow}
+                title={copy.guides.heading}
+              />
             </div>
             {/* Reading order is real, so the numbers are too. */}
             <ol className="mt-2 grid grid-cols-1 gap-x-14 md:grid-cols-2">
               {guides.map((guide, i) => (
-                <li key={guide.slug} className="border-b border-ih-border">
-                  <Link href={`/blog/${guide.slug}`} className="group flex items-baseline gap-4 py-[18px]">
-                    <span className="mono w-6 shrink-0 text-[11px] text-ih-accent">{String(i + 1).padStart(2, '0')}</span>
+                <li key={guide.slug} className="border-ih-border border-b">
+                  <Link
+                    href={`/blog/${guide.slug}`}
+                    className="group flex items-baseline gap-4 py-[18px]"
+                  >
+                    <span className="mono text-ih-accent w-6 shrink-0 text-[11px]">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-[15.5px] font-medium leading-[1.35] tracking-[-0.01em] text-ih-ink group-hover:text-ih-accent">
+                      <span className="text-ih-ink group-hover:text-ih-accent block text-[15.5px] leading-[1.35] font-medium tracking-[-0.01em]">
                         {guide.title}
                       </span>
-                      <span className="mono mt-1.5 block text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
-                        {[guide.category, guide.readingMinutes ? `${guide.readingMinutes} min read` : null]
+                      <span className="mono text-ih-muted mt-1.5 block text-[10.5px] tracking-[0.08em] uppercase">
+                        {[
+                          guide.category,
+                          guide.readingMinutes ? `${guide.readingMinutes} min read` : null,
+                        ]
                           .filter(Boolean)
                           .join(' · ')}
                       </span>

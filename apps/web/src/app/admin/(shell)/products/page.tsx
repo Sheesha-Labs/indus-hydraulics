@@ -119,11 +119,23 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
 
   function sortUrl(col: keyof typeof SORTABLE) {
     // Toggle dir if clicking the active column; default to asc otherwise (except updatedAt which is naturally desc).
-    const newDir = sortKey === col ? (sortDir === 'asc' ? 'desc' : 'asc') : col === 'updatedAt' || col === 'createdAt' ? 'desc' : 'asc'
-    return buildUrl({ sort: col === 'updatedAt' ? undefined : col, dir: newDir === 'desc' ? undefined : newDir, page: undefined })
+    const newDir =
+      sortKey === col
+        ? sortDir === 'asc'
+          ? 'desc'
+          : 'asc'
+        : col === 'updatedAt' || col === 'createdAt'
+          ? 'desc'
+          : 'asc'
+    return buildUrl({
+      sort: col === 'updatedAt' ? undefined : col,
+      dir: newDir === 'desc' ? undefined : newDir,
+      page: undefined,
+    })
   }
 
-  const sortIndicator = (col: keyof typeof SORTABLE) => (sortKey === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '')
+  const sortIndicator = (col: keyof typeof SORTABLE) =>
+    sortKey === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : ''
 
   // Defined here rather than hoisted out: it closes over the current sort.
   const sortHeader = (col: keyof typeof SORTABLE, label: string) => (
@@ -145,13 +157,13 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         <>
           <Link
             href={`/admin/products/import`}
-            className="flex h-8 items-center rounded-lg border border-ih-border-strong bg-ih-surface px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
+            className="border-ih-border-strong bg-ih-surface text-ih-ink hover:bg-ih-surface-2 flex h-8 items-center rounded-lg border px-2.5 text-[14px] font-medium transition-colors"
           >
             ↑ Bulk import
           </Link>
           <Link
             href={`/admin/products/new`}
-            className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-8 items-center rounded-lg px-2.5 text-[14px] font-medium transition-colors"
           >
             + Add product
           </Link>
@@ -163,21 +175,17 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           had the same spacing. */}
       <div className="flex flex-col gap-6">
         {/* Search + filter form (single submission to keep URL canonical) */}
-        <form
-          method="GET"
-          action={`/admin/products`}
-          className="flex flex-wrap items-center gap-2"
-        >
+        <form method="GET" action={`/admin/products`} className="flex flex-wrap items-center gap-2">
           <input
             name="q"
             defaultValue={query}
             placeholder="Search SKU, title, MPN…"
-            className="h-9 w-64 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[14px] text-ih-ink outline-none placeholder:text-ih-muted-2 focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+            className="border-ih-border bg-ih-surface text-ih-ink placeholder:text-ih-muted-2 focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft h-9 w-64 rounded-lg border px-2.5 text-[14px] outline-none focus-visible:ring-[3px]"
           />
           <select
             name="brand"
             defaultValue={brandFilter}
-            className="h-9 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[14px] outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+            className="border-ih-border bg-ih-surface focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft h-9 rounded-lg border px-2.5 text-[14px] outline-none focus-visible:ring-[3px]"
             aria-label="Filter by brand"
           >
             <option value="">All brands</option>
@@ -190,7 +198,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           <select
             name="category"
             defaultValue={categoryFilter}
-            className="h-9 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[14px] outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+            className="border-ih-border bg-ih-surface focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft h-9 rounded-lg border px-2.5 text-[14px] outline-none focus-visible:ring-[3px]"
             aria-label="Filter by category"
           >
             <option value="">All categories</option>
@@ -206,14 +214,14 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           {sortDir === 'asc' && <input type="hidden" name="dir" value="asc" />}
           <button
             type="submit"
-            className="h-9 rounded-lg bg-ih-navy px-4 text-[14px] font-medium text-ih-bg hover:bg-ih-ink"
+            className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 rounded-lg px-4 text-[14px] font-medium"
           >
             Apply
           </button>
           {(statusFilter || brandFilter || categoryFilter || query) && (
             <Link
               href={`/admin/products`}
-              className="tabular-nums text-[11px] text-ih-muted hover:text-ih-ink underline underline-offset-2 ml-1"
+              className="text-ih-muted hover:text-ih-ink ml-1 text-[11px] tabular-nums underline underline-offset-2"
             >
               Clear all
             </Link>
@@ -226,7 +234,12 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           variant="chip"
           label="Filter by status"
           items={[
-            { href: buildUrl({ status: undefined, page: undefined }), active: !statusFilter, label: 'All', count: total },
+            {
+              href: buildUrl({ status: undefined, page: undefined }),
+              active: !statusFilter,
+              label: 'All',
+              count: total,
+            },
             ...(['draft', 'active', 'discontinued'] as const).map((s) => ({
               href: buildUrl({ status: s, page: undefined }),
               active: statusFilter === s,
@@ -239,17 +252,33 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         {/* Content-depth filter — backed by persisted Product.contentScore.
             Thresholds align with bandForScore in @indus/domain. */}
         <div className="flex flex-wrap items-center gap-2">
-          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+          <span className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
             Content depth
           </span>
           <NavTabs
             variant="chip"
             label="Filter by content depth"
             items={[
-              { href: buildUrl({ content: undefined, page: undefined }), active: !contentFilter, label: 'All' },
-              { href: buildUrl({ content: 'thin', page: undefined }), active: contentFilter === 'thin', label: 'Thin (<50)' },
-              { href: buildUrl({ content: 'warn', page: undefined }), active: contentFilter === 'warn', label: 'Needs work (50–79)' },
-              { href: buildUrl({ content: 'strong', page: undefined }), active: contentFilter === 'strong', label: 'Strong (≥80)' },
+              {
+                href: buildUrl({ content: undefined, page: undefined }),
+                active: !contentFilter,
+                label: 'All',
+              },
+              {
+                href: buildUrl({ content: 'thin', page: undefined }),
+                active: contentFilter === 'thin',
+                label: 'Thin (<50)',
+              },
+              {
+                href: buildUrl({ content: 'warn', page: undefined }),
+                active: contentFilter === 'warn',
+                label: 'Needs work (50–79)',
+              },
+              {
+                href: buildUrl({ content: 'strong', page: undefined }),
+                active: contentFilter === 'strong',
+                label: 'Strong (≥80)',
+              },
             ]}
           />
         </div>
@@ -267,7 +296,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
               </p>
               <Link
                 href={`/admin/products/new`}
-                className="inline-flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover"
+                className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover inline-flex h-8 items-center rounded-lg px-2.5 text-[14px] font-medium"
               >
                 + Add your first product
               </Link>
@@ -277,7 +306,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             {
               key: 'sku',
               header: sortHeader('sku', 'SKU'),
-              cell: (p) => <span className="tabular-nums text-[12px] text-ih-muted">{p.sku}</span>,
+              cell: (p) => <span className="text-ih-muted text-[12px] tabular-nums">{p.sku}</span>,
             },
             {
               key: 'title',
@@ -294,7 +323,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
               cell: (p) => (
                 <Link
                   href={`/admin/products/${p.id}/edit`}
-                  className="block truncate font-medium text-ih-ink hover:text-ih-accent"
+                  className="text-ih-ink hover:text-ih-accent block truncate font-medium"
                 >
                   {p.title}
                 </Link>
@@ -318,7 +347,9 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
               numeric: true,
               cell: (p) =>
                 p.stockQty > 0 ? (
-                  <span className="font-medium text-ih-success-ink">{p.stockQty.toLocaleString()}</span>
+                  <span className="text-ih-success-ink font-medium">
+                    {p.stockQty.toLocaleString()}
+                  </span>
                 ) : (
                   <span className="text-ih-muted-2">—</span>
                 ),
@@ -333,7 +364,11 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
               key: 'status',
               header: sortHeader('status', 'Status'),
               align: 'center',
-              cell: (p) => <StatusPill tone={productStatusTone(p.status)} className="capitalize">{p.status}</StatusPill>,
+              cell: (p) => (
+                <StatusPill tone={productStatusTone(p.status)} className="capitalize">
+                  {p.status}
+                </StatusPill>
+              ),
             },
             {
               key: 'updated',

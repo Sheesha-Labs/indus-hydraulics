@@ -72,7 +72,7 @@ export function isSpecificKeyword(candidate: string): boolean {
 export function focusKeywordCandidates(
   slug: string,
   name: string,
-  seoTitle: string | null,
+  seoTitle: string | null
 ): string[] {
   const out: string[] = []
   const slugWords = slug.split('-').filter((w) => w && !STOP.has(w))
@@ -98,7 +98,7 @@ export function focusKeywordCandidates(
 export function weighCategoryKeyword(
   keyword: string,
   slug: string,
-  seoTitle: string | null,
+  seoTitle: string | null
 ): { weight: number; inTitle: boolean; inUrl: boolean } {
   const k = keyword.trim().toLowerCase()
   const inTitle = (seoTitle ?? '').toLowerCase().includes(k)
@@ -131,7 +131,7 @@ export type DerivedFocusKeyword = {
 export function deriveCategoryFocusKeyword(
   slug: string,
   name: string,
-  seoTitle: string | null,
+  seoTitle: string | null
 ): DerivedFocusKeyword | null {
   let best: DerivedFocusKeyword | null = null
   for (const candidate of focusKeywordCandidates(slug, name, seoTitle)) {
@@ -140,7 +140,11 @@ export function deriveCategoryFocusKeyword(
     if (w.weight < CATEGORY_KEYWORD_MIN_WEIGHT) continue
     const candidateWords = candidate.split(' ').length
     const bestWords = best ? best.keyword.split(' ').length : -1
-    if (!best || candidateWords > bestWords || (candidateWords === bestWords && w.weight > best.weight)) {
+    if (
+      !best ||
+      candidateWords > bestWords ||
+      (candidateWords === bestWords && w.weight > best.weight)
+    ) {
       best = { keyword: candidate, ...w }
     }
   }

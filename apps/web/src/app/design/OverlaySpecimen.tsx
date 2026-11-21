@@ -100,10 +100,7 @@ function OverlayRow() {
         </Tooltip>
 
         {/* ── Tooltip, over a DISABLED control ───────────────────── */}
-        <Tooltip
-          label="In use — detach it first. Used in 3 products · 1 blog post."
-          disabledChild
-        >
+        <Tooltip label="In use — detach it first. Used in 3 products · 1 blog post." disabledChild>
           <Button kind="ghost" size="sm" disabled icon={<Trash2 size={13} strokeWidth={1.7} />}>
             Delete
           </Button>
@@ -133,8 +130,8 @@ function OverlayRow() {
       </div>
 
       {/* ── Pagination ───────────────────────────────────────────── */}
-      <div className="border-t border-ih-border pt-6">
-        <p className="mb-1 text-[12px] text-ih-muted">
+      <div className="border-ih-border border-t pt-6">
+        <p className="text-ih-muted mb-1 text-[12px]">
           Page {page} of {totalPages} — walk to either end to see the disabled edges.
         </p>
         <Pagination

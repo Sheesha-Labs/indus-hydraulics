@@ -60,7 +60,10 @@ export default async function SettingsPage({ searchParams }: Props) {
   }))
 
   return (
-    <AdminPageShell title={'Settings'} sub={'Store configuration, brand identity and email templates.'}>
+    <AdminPageShell
+      title={'Settings'}
+      sub={'Store configuration, brand identity and email templates.'}
+    >
       <SettingsPageClient
         activeTab={tab}
         storeSettings={storeSettings}

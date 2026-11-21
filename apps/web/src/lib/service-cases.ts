@@ -104,9 +104,9 @@ export async function featuredServiceCase(): Promise<ServiceCaseListItem | null>
  * Two-up "From the blog" — pulls the 2 most recent featured cases (or most
  * recent if not enough featured rows). Excludes the case currently on screen.
  */
-export async function topTwoStoryCases(opts: { excludeSlugs?: string[] } = {}): Promise<
-  ServiceCaseListItem[]
-> {
+export async function topTwoStoryCases(
+  opts: { excludeSlugs?: string[] } = {}
+): Promise<ServiceCaseListItem[]> {
   const where: Prisma.ServiceCaseWhereInput = {
     ...PUBLISHED_FILTER,
     ...(opts.excludeSlugs && opts.excludeSlugs.length > 0
@@ -169,7 +169,7 @@ export async function getServiceCaseBySlug(slug: string): Promise<ServiceCaseDet
  * Returns rows in the original ID order for stable display.
  */
 export async function getGalleryMedia(
-  imageIds: string[],
+  imageIds: string[]
 ): Promise<Array<{ id: string; storagePath: string; alt: string | null }>> {
   if (imageIds.length === 0) return []
   const rows = await db.media.findMany({

@@ -23,7 +23,7 @@ function Inner(props: Props) {
     if (
       props.requiresConfirmation &&
       !window.confirm(
-        'This is an ALTERNATIVE part, not the one requested. Substituting a part on a hydraulic system is an engineering decision. Select it anyway?',
+        'This is an ALTERNATIVE part, not the one requested. Substituting a part on a hydraulic system is an engineering decision. Select it anyway?'
       )
     ) {
       return
@@ -42,7 +42,12 @@ function Inner(props: Props) {
     <form action={onSubmit}>
       <input type="hidden" name="offerLineId" value={props.offerLineId} />
       <input type="hidden" name="enquiryLineId" value={props.enquiryLineId} />
-      <Button type="submit" kind={props.selected ? 'ghost' : 'outline'} size="dense-sm" loading={pending}>
+      <Button
+        type="submit"
+        kind={props.selected ? 'ghost' : 'outline'}
+        size="dense-sm"
+        loading={pending}
+      >
         {props.selected ? 'Selected' : 'Use this'}
       </Button>
     </form>

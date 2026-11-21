@@ -16,7 +16,7 @@ services:
     # runs with trustHost: true, so a directly-addressable port answers to any
     # Host header.
     ports:
-      - "127.0.0.1:${WEB_PORT:-3000}:3000"
+      - '127.0.0.1:${WEB_PORT:-3000}:3000'
     env_file:
       - /srv/indus/env/web.env
     environment:
@@ -33,7 +33,7 @@ services:
     healthcheck:
       # Liveness only — /api/health queries the database, and using it here
       # restarts a healthy container whenever Supabase blinks.
-      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:3000/api/health/live"]
+      test: ['CMD', 'curl', '-fsS', 'http://127.0.0.1:3000/api/health/live']
       interval: 15s
       timeout: 5s
       start_period: 30s
@@ -51,8 +51,8 @@ services:
       options:
         # A full disk makes this site silently stale rather than loudly broken,
         # which is the worse failure. Bound the logs.
-        max-size: "20m"
-        max-file: "5"
+        max-size: '20m'
+        max-file: '5'
 
   cache:
     image: redis:7-alpine
@@ -61,8 +61,8 @@ services:
     command:
       - redis-server
       - --save
-      - "900"
-      - "1"
+      - '900'
+      - '1'
       - --maxmemory
       - ${REDIS_MAXMEMORY:-512mb}
       # noeviction, not allkeys-lru: this holds the ISR cache and its tag
@@ -73,15 +73,15 @@ services:
     volumes:
       - redis-data:/data
     healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
+      test: ['CMD', 'redis-cli', 'ping']
       interval: 10s
       timeout: 3s
       retries: 5
     logging:
       driver: json-file
       options:
-        max-size: "10m"
-        max-file: "3"
+        max-size: '10m'
+        max-file: '3'
 
 volumes:
   next-cache:

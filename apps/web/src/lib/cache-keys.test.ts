@@ -12,7 +12,7 @@ describe('cacheNamespace', () => {
     // Not an optimisation — serving old HTML after the chunks are replaced
     // gives the visitor a page whose scripts 404.
     expect(cacheNamespace('{"chunks":["a1b2.js"]}', 'x')).not.toBe(
-      cacheNamespace('{"chunks":["e5f6.js"]}', 'x'),
+      cacheNamespace('{"chunks":["e5f6.js"]}', 'x')
     )
   })
 

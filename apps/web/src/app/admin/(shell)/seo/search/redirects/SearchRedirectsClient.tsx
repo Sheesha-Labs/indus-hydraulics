@@ -1,11 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import {
-  upsertSearchRedirect,
-  deleteSearchRedirect,
-  toggleSearchRedirect,
-} from './actions'
+import { upsertSearchRedirect, deleteSearchRedirect, toggleSearchRedirect } from './actions'
 import { Input, DeleteButton } from '@indus/ui'
 
 type Row = { id: string; query: string; targetUrl: string; isActive: boolean }
@@ -33,7 +29,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
         const existing = prev.find((r) => r.query === queryRaw)
         if (existing) {
           return prev.map((r) =>
-            r.query === queryRaw ? { ...r, targetUrl: target, isActive: true } : r,
+            r.query === queryRaw ? { ...r, targetUrl: target, isActive: true } : r
           )
         }
         return [
@@ -76,19 +72,22 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
 
   return (
     <div className="max-w-[860px]">
-      <div className="mb-6 max-w-[640px] text-[13px] text-ih-muted">
+      <div className="text-ih-muted mb-6 max-w-[640px] text-[13px]">
         When a shopper&apos;s normalised query matches one of these rules, the storefront
-        302-redirects them to the configured target instead of running a full FTS search.
-        Distinct from <code>/seo/redirects</code> (those are HTTP-path redirects).
+        302-redirects them to the configured target instead of running a full FTS search. Distinct
+        from <code>/seo/redirects</code> (those are HTTP-path redirects).
       </div>
 
-      <details className="rounded-lg mb-6 border border-ih-border bg-ih-surface p-4">
-        <summary className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
+      <details className="border-ih-border bg-ih-surface mb-6 rounded-lg border p-4">
+        <summary className="text-ih-muted cursor-pointer text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           Add query redirect
         </summary>
-        <form action={handleAdd} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
+        <form action={handleAdd} className="mt-3 grid grid-cols-[200px_1fr_auto] items-end gap-3">
           <div>
-            <label htmlFor="searchredirect-query" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="searchredirect-query"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Query (normalised)
             </label>
             <Input
@@ -96,10 +95,14 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
               name="query"
               type="text"
               required
-              placeholder="hose fitting" />
+              placeholder="hose fitting"
+            />
           </div>
           <div>
-            <label htmlFor="searchredirect-targetUrl" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+            <label
+              htmlFor="searchredirect-targetUrl"
+              className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+            >
               Target URL
             </label>
             <Input
@@ -107,12 +110,13 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
               name="targetUrl"
               type="text"
               required
-              placeholder="/c/hose-fittings" />
+              placeholder="/c/hose-fittings"
+            />
           </div>
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] tabular-nums disabled:opacity-50"
           >
             Add
           </button>
@@ -120,20 +124,20 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 tabular-nums text-[12px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink mb-4 text-[12px] tabular-nums" role="alert">
           {error}
         </p>
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center rounded-lg border border-ih-border">
+        <div className="border-ih-border rounded-lg border py-16 text-center">
           <p className="text-ih-muted text-[13px]">No query redirects yet.</p>
         </div>
       ) : (
-        <div className="rounded-lg border border-ih-border overflow-hidden">
+        <div className="border-ih-border overflow-hidden rounded-lg border">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-ih-border bg-ih-surface-2">
+              <tr className="border-ih-border bg-ih-surface-2 border-b">
                 <Th>Query</Th>
                 <Th>Target</Th>
                 <Th>Status</Th>
@@ -144,10 +148,13 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
               {rows.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
                 >
-                  <td className="px-3 py-3 tabular-nums text-[12px] text-ih-ink-2">{r.query}</td>
-                  <td className="px-3 py-3 text-ih-ink-2 truncate max-w-[400px]" title={r.targetUrl}>
+                  <td className="text-ih-ink-2 px-3 py-3 text-[12px] tabular-nums">{r.query}</td>
+                  <td
+                    className="text-ih-ink-2 max-w-[400px] truncate px-3 py-3"
+                    title={r.targetUrl}
+                  >
                     {r.targetUrl}
                   </td>
                   <td className="px-3 py-3">
@@ -155,7 +162,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
                       type="button"
                       onClick={() => handleToggle(r.id, r.isActive)}
                       disabled={pending}
-                      className={`tabular-nums text-[11px] px-2 py-0.5 ${
+                      className={`px-2 py-0.5 text-[11px] tabular-nums ${
                         r.isActive
                           ? 'text-ih-success-ink bg-ih-success-soft'
                           : 'text-ih-muted bg-ih-surface-2'
@@ -165,7 +172,12 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
                     </button>
                   </td>
                   <td className="px-3 py-3 text-right">
-                    <DeleteButton label={`Delete redirect for ${r.query}`} size="sm" onClick={() => handleDelete(r.id)} disabled={pending} />
+                    <DeleteButton
+                      label={`Delete redirect for ${r.query}`}
+                      size="sm"
+                      onClick={() => handleDelete(r.id)}
+                      disabled={pending}
+                    />
                   </td>
                 </tr>
               ))}
@@ -179,7 +191,7 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-left text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
       {children}
     </th>
   )

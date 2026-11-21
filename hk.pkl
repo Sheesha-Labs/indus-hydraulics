@@ -1,0 +1,42 @@
+// Git hooks, run by hk (https://hk.jdx.dev). Install once per clone: `hk install`.
+//
+// A hook rather than a line in AGENTS.md, because agents skip steps.
+//   pre-commit  formats and lints the staged files, fixing what it can.
+//   pre-push    runs what CI checks (scripts/ci/local.sh): typecheck, lint,
+//               format and every test.
+amends "package://github.com/jdx/hk/releases/download/v2.13.0/hk@2.13.0#/Config.pkl"
+
+local code = List("**/*.ts", "**/*.tsx", "**/*.js", "**/*.mjs", "**/*.cjs")
+local formatted = List(
+  "**/*.ts", "**/*.tsx", "**/*.js", "**/*.mjs", "**/*.cjs",
+  "**/*.css", "**/*.json", "**/*.yaml", "**/*.yml"
+)
+
+hooks {
+  ["pre-commit"] {
+    fix = true
+    stage = true
+    stash = "git"
+    steps {
+      ["format"] {
+        glob = formatted
+        check = "bun fmt --no-script --check --no-error-on-unmatched-pattern {{files}}"
+        fix = "bun fmt --no-script --no-error-on-unmatched-pattern {{files}}"
+      }
+      ["lint"] {
+        glob = code
+        // Lint runs after formatting so it sees the committed text.
+        depends = List("format")
+        check = "bun lint --no-script --type-aware {{files}}"
+        fix = "bun lint --no-script --type-aware --fix {{files}}"
+      }
+    }
+  }
+  ["pre-push"] {
+    steps {
+      ["ci"] {
+        check = "scripts/ci/local.sh"
+      }
+    }
+  }
+}

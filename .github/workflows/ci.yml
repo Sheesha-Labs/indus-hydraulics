@@ -4,54 +4,111 @@ on:
   pull_request:
   push:
     branches: [main]
+  # The merge queue runs the full suite on exactly what will land on main.
+  merge_group:
 
+permissions:
+  contents: read
+  # scripts/ci/budget.sh reads this run's own job timings.
+  actions: read
+
+env:
+  # `enforce` fails a job that runs over its time budget; unset, the same
+  # numbers are reported as warnings. See scripts/ci/budget.sh.
+  CI_BUDGETS: ${{ vars.CI_BUDGETS }}
+
+# A new commit on a branch cancels that branch's run in progress, main
+# included: the merge queue has already run the full suite on what lands, and
+# a superseded run only spends runner minutes. Each merge-queue entry has its
+# own ref, so queue runs never cancel each other.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: true
 
 jobs:
-  ci:
-    name: typecheck · lint · test
+  # Lint, typecheck and the other quick checks share one job and one list of
+  # failures (scripts/ci/run-all.sh keeps going after a failure). Tests run
+  # beside it, never after it: no required job waits on another.
+  checks:
+    name: checks
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
         with:
-          version: 9.15.0
-          run_install: false
+          # Blobless: history without file contents we never read.
+          filter: blob:none
+          # Skip the catalogue payloads (packages/db/data, 106 of the repo's
+          # 130 MB): CI reads only the payloads below, which payload and
+          # import-script tests open. A test that needs another one fails loudly with ENOENT;
+          # add its folder here.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/packages/db/data/
+            /packages/db/data/sealfast-size-tables/
+            /packages/db/data/older-coupling-copy/
+            /packages/db/data/sunpool-size-tables/
+            /packages/db/data/crimp-fittings/catalogue.json
+            /packages/db/data/ferrules-content.json
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Typecheck, lint and format
+        run: >
+          scripts/ci/run-all.sh
+          "typecheck:5::bun run typecheck"
+          "lint:1::bun run lint"
+          "format:1::bun run format:check"
+
+      - name: Time budget
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/ci/budget.sh checks "Typecheck, lint and format"
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          node-version: 20
-          cache: pnpm
+          filter: blob:none
+          # Skip the catalogue payloads (packages/db/data, 106 of the repo's
+          # 130 MB): CI reads only the payloads below, which payload and
+          # import-script tests open. A test that needs another one fails loudly with ENOENT;
+          # add its folder here.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/packages/db/data/
+            /packages/db/data/sealfast-size-tables/
+            /packages/db/data/older-coupling-copy/
+            /packages/db/data/sunpool-size-tables/
+            /packages/db/data/crimp-fittings/catalogue.json
+            /packages/db/data/ferrules-content.json
+          # The PR merge commit and its parents: HEAD^1 is the base tip that
+          # test selection diffs against.
+          fetch-depth: 2
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Generate Prisma client
-        run: pnpm db:generate
-
-      - name: Cache turbo
-        uses: actions/cache@v4
-        with:
-          path: .turbo
-          key: turbo-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            turbo-${{ runner.os }}-
-
-      - name: Typecheck
-        run: pnpm typecheck
-
-      - name: Lint
-        run: pnpm lint
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Test
-        run: pnpm test
+        env:
+          # Selection narrows PR feedback only once the merge queue runs the
+          # full suite (repository variable TEST_SELECTION=on). A PR can try it
+          # earlier with the `ci:select` label.
+          TEST_SELECTION: ${{ vars.TEST_SELECTION || (contains(github.event.pull_request.labels.*.name, 'ci:select') && 'on' || 'off') }}
+        run: scripts/ci/test.sh
+
+      - name: Time budget
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/ci/budget.sh test Test
 
   build:
     name: build
@@ -71,23 +128,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.0
-          run_install: false
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Generate Prisma client
-        run: pnpm db:generate
+          node-version: 24
 
       - name: Build
         # This app needs more than a database at BUILD time, which the first run
@@ -108,7 +155,7 @@ jobs:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_BASE_URL: https://indushydraulics.com
           APP_ENV: production
-        run: pnpm build
+        run: bun run build
 
       - name: Assert the artifact is complete
         # `standalone` does not copy these two, and the failure mode without

@@ -93,10 +93,7 @@ function type(el: HTMLElement, selector: string, value: string): void {
     // React tracks the previous value on the DOM node and swallows an event
     // whose value it thinks is unchanged, so the native setter has to be used
     // rather than assigning `input.value` directly.
-    const setter = Object.getOwnPropertyDescriptor(
-      window.HTMLInputElement.prototype,
-      'value',
-    )!.set!
+    const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')!.set!
     setter.call(input, value)
     input.dispatchEvent(new Event('input', { bubbles: true }))
   })
@@ -105,7 +102,7 @@ function type(el: HTMLElement, selector: string, value: string): void {
 /** Visible category names, in rendered order. */
 function rowNames(el: HTMLElement): string[] {
   return [...el.querySelectorAll('[role="treeitem"]')].map(
-    (r) => r.getAttribute('data-category-name') ?? '',
+    (r) => r.getAttribute('data-category-name') ?? ''
   )
 }
 
@@ -166,7 +163,7 @@ describe('admin category tree', () => {
     expect(text).toContain('Hoses & Fittings')
     expect(text).toContain('Ferrules')
     expect(text, 'a depth-3 category is missing from the tree').toContain(
-      'M03400 No-Skive Ferrules',
+      'M03400 No-Skive Ferrules'
     )
   })
 
@@ -197,9 +194,7 @@ describe('admin category tree', () => {
 
   test('expanding a root reveals its children', () => {
     const el = render(TREE)
-    const expand = el.querySelector<HTMLButtonElement>(
-      '[aria-label="Expand Hoses & Fittings"]',
-    )
+    const expand = el.querySelector<HTMLButtonElement>('[aria-label="Expand Hoses & Fittings"]')
     expect(expand).not.toBeNull()
     act(() => expand!.click())
     expect(rowNames(el)).toContain('Ferrules')
@@ -255,9 +250,7 @@ describe('admin category tree', () => {
   })
 
   test('a live category with no megamenu item is called out', () => {
-    const el = render([
-      cat({ id: 'lonely', name: 'Unlinked Category', navItemCount: 0 }),
-    ])
+    const el = render([cat({ id: 'lonely', name: 'Unlinked Category', navItemCount: 0 })])
     expect(el.textContent).toContain('not in the megamenu')
     expect(el.querySelector('[title*="no megamenu item links to it"]')).not.toBeNull()
   })
@@ -275,7 +268,7 @@ describe('admin category tree', () => {
     const el = render(TREE)
     click(el, '+ New category')
     const options = [...el.querySelectorAll('select[name="parentId"] option')].map((o) =>
-      o.textContent?.trim(),
+      o.textContent?.trim()
     )
     expect(options).toContain('Hoses & Fittings › Ferrules')
     expect(options).toContain('Hoses & Fittings › Ferrules › M03400 No-Skive Ferrules')
@@ -295,7 +288,7 @@ describe('admin category tree', () => {
     // "Detached Category" is the first row, not "Hoses & Fittings".
     click(row(el, 'Hoses & Fittings'), 'Edit')
     const options = [...el.querySelectorAll('select[name="parentId"] option')].map((o) =>
-      o.textContent?.trim(),
+      o.textContent?.trim()
     )
     expect(options).not.toContain('Hoses & Fittings')
     // …nor anything inside it, which would be a cycle.
@@ -306,8 +299,7 @@ describe('admin category tree', () => {
     const el = render(TREE)
     // The root owns nothing directly but has one product two levels down.
     expect(
-      row(el, 'Hoses & Fittings').querySelector('[title*="including sub-categories"]')
-        ?.textContent,
+      row(el, 'Hoses & Fittings').querySelector('[title*="including sub-categories"]')?.textContent
     ).toContain('1')
   })
 })

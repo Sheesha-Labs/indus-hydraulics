@@ -69,7 +69,14 @@ type Facts = { products: FactsProduct[]; [k: string]: unknown }
 
 const TARGET = 12
 const MIN = 10
-const STATIC_PATHS = new Set(['/contact', '/services', '/resources', '/brands', '/blog', '/markets'])
+const STATIC_PATHS = new Set([
+  '/contact',
+  '/services',
+  '/resources',
+  '/brands',
+  '/blog',
+  '/markets',
+])
 // Claims that need support in the facts before an answer may make them.
 const GUARDED_CLAIMS = [
   /\bAPI\s?(5CT|5L|6A|6D|7K|16A|16C|16D|17J|610)\b/gi,
@@ -82,8 +89,10 @@ const GUARDED_CLAIMS = [
   /\bcertified\b/gi,
 ]
 // An answer must never tell a buyer our own page is wrong — fix the data instead.
-const SELF_CRITICISM = /\b(data errors?|typo|(our|the) (size )?table[^.]*\b(conflicts?|incorrect(ly)?|wrong|errors?)\b|rows?[^.]*\b(conflicts?|incorrect(ly)?|errors?)\b|inconsistent)/i
-const VAGUE_QUESTION = /^(what|is|are|does|do|can|how|which|where|why)\b(\s+\w+){0,2}\s+(it|this|they|these)\b/i
+const SELF_CRITICISM =
+  /\b(data errors?|typo|(our|the) (size )?table[^.]*\b(conflicts?|incorrect(ly)?|wrong|errors?)\b|rows?[^.]*\b(conflicts?|incorrect(ly)?|errors?)\b|inconsistent)/i
+const VAGUE_QUESTION =
+  /^(what|is|are|does|do|can|how|which|where|why)\b(\s+\w+){0,2}\s+(it|this|they|these)\b/i
 
 function arg(name: string): string | undefined {
   const hit = process.argv.find((a) => a.startsWith(`--${name}=`))
@@ -98,7 +107,10 @@ function numbers(text: string): string[] {
 }
 
 function normalise(s: string): string {
-  return s.toLowerCase().replace(/,(?=\d{3}\b)/g, '').replace(/\s+/g, ' ')
+  return s
+    .toLowerCase()
+    .replace(/,(?=\d{3}\b)/g, '')
+    .replace(/\s+/g, ' ')
 }
 
 function firstSentence(a: string): string {
@@ -124,7 +136,8 @@ async function main() {
   const factsPath = arg('facts')
   const payloadPath = arg('payload')
   const guardPath =
-    arg('guard') ?? join(homedir(), 'Documents', 'Indus Supplier Research', 'supplier-name-guard.txt')
+    arg('guard') ??
+    join(homedir(), 'Documents', 'Indus Supplier Research', 'supplier-name-guard.txt')
   const write = process.argv.includes('--write')
   const allowLinks = process.argv.includes('--allow-links')
   if (!factsPath || !payloadPath) throw new Error('--facts and --payload are required')
@@ -139,7 +152,7 @@ async function main() {
   const paths = await validPaths()
 
   const familyCorpus = normalise(
-    JSON.stringify({ ...facts, products: undefined }) + JSON.stringify(payload.extraFacts ?? []),
+    JSON.stringify({ ...facts, products: undefined }) + JSON.stringify(payload.extraFacts ?? [])
   )
   const errors: string[] = []
   const warnings: string[] = []
@@ -156,7 +169,8 @@ async function main() {
     const corpus = normalise(JSON.stringify(fp)) + ' ' + familyCorpus
     if (item.faqs.length > TARGET) errors.push(`${where}: ${item.faqs.length} FAQs, max ${TARGET}`)
     if (item.faqs.length < MIN) errors.push(`${where}: ${item.faqs.length} FAQs, min ${MIN}`)
-    else if (item.faqs.length < TARGET) warnings.push(`${where}: ${item.faqs.length} FAQs (target ${TARGET})`)
+    else if (item.faqs.length < TARGET)
+      warnings.push(`${where}: ${item.faqs.length} FAQs (target ${TARGET})`)
 
     const seenQ = new Set<string>()
     let commercial = 0
@@ -164,22 +178,29 @@ async function main() {
       const at = `${where} #${i + 1}`
       const plain = faqAnswerPlainText(f.a)
       if (!f.q.trim().endsWith('?')) errors.push(`${at}: question does not end with "?"`)
-      if (f.q.length < 25 || f.q.length > 160) errors.push(`${at}: question length ${f.q.length} (25–160)`)
-      if (VAGUE_QUESTION.test(f.q)) errors.push(`${at}: question says "it/this" instead of naming the product: ${f.q}`)
-      if (SELF_CRITICISM.test(plain)) errors.push(`${at}: answer says our own data is wrong — fix the data, not the FAQ`)
+      if (f.q.length < 25 || f.q.length > 160)
+        errors.push(`${at}: question length ${f.q.length} (25–160)`)
+      if (VAGUE_QUESTION.test(f.q))
+        errors.push(`${at}: question says "it/this" instead of naming the product: ${f.q}`)
+      if (SELF_CRITICISM.test(plain))
+        errors.push(`${at}: answer says our own data is wrong — fix the data, not the FAQ`)
       if (seenQ.has(normalise(f.q))) errors.push(`${at}: duplicate question`)
       seenQ.add(normalise(f.q))
-      if (plain.length < 120 || plain.length > 650) errors.push(`${at}: answer length ${plain.length} (120–650)`)
+      if (plain.length < 120 || plain.length > 650)
+        errors.push(`${at}: answer length ${plain.length} (120–650)`)
       const lead = firstSentence(f.a)
-      if (lead.length > 260) errors.push(`${at}: first sentence ${lead.length} chars — must answer on its own, ≤260`)
+      if (lead.length > 260)
+        errors.push(`${at}: first sentence ${lead.length} chars — must answer on its own, ≤260`)
       if (f.slot === 'M') commercial++
 
       for (const n of numbers(f.q + ' ' + plain)) {
-        if (!corpus.includes(n)) errors.push(`${at}: number "${n}" not found in the facts or extraFacts`)
+        if (!corpus.includes(n))
+          errors.push(`${at}: number "${n}" not found in the facts or extraFacts`)
       }
       for (const re of GUARDED_CLAIMS) {
         for (const m of (f.q + ' ' + plain).matchAll(re)) {
-          if (!corpus.includes(m[0].toLowerCase())) errors.push(`${at}: claim "${m[0]}" not supported by the facts`)
+          if (!corpus.includes(m[0].toLowerCase()))
+            errors.push(`${at}: claim "${m[0]}" not supported by the facts`)
         }
       }
       for (const name of guard) {
@@ -200,20 +221,26 @@ async function main() {
     if (commercial > 2) errors.push(`${where}: ${commercial} commercial (M) FAQs, max 2`)
     const m = item.faqs.find((f) => f.slot === 'M')
     if (m && fp.availability.kind === 'ex_stock' && !/Dubai/.test(m.a)) {
-      errors.push(`${where}: commercial FAQ on an ex-stock product must state the Dubai stock (decision 5)`)
+      errors.push(
+        `${where}: commercial FAQ on an ex-stock product must state the Dubai stock (decision 5)`
+      )
     }
     if (m && fp.availability.kind !== 'ex_stock' && /in stock/i.test(m.a)) {
-      errors.push(`${where}: product is ${fp.availability.kind}, commercial FAQ must not claim stock`)
+      errors.push(
+        `${where}: product is ${fp.availability.kind}, commercial FAQ must not claim stock`
+      )
     }
   }
   for (const [, uses] of answerUse) {
-    if (uses.length > 3) errors.push(`same answer on ${uses.length} products: ${uses.slice(0, 4).join(', ')}…`)
+    if (uses.length > 3)
+      errors.push(`same answer on ${uses.length} products: ${uses.slice(0, 4).join(', ')}…`)
   }
   // extraFacts are committed with the payload, so the supplier guard applies to them too.
   for (const [i, e] of (payload.extraFacts ?? []).entries()) {
     for (const name of guard) {
       const re = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i')
-      if (re.test(e.fact) || re.test(e.source)) errors.push(`extraFacts #${i + 1}: SUPPLIER NAME "${name}"`)
+      if (re.test(e.fact) || re.test(e.source))
+        errors.push(`extraFacts #${i + 1}: SUPPLIER NAME "${name}"`)
     }
   }
 
@@ -222,7 +249,7 @@ async function main() {
 
   console.log(
     `${payload.family}: ${payload.products.length} products, ` +
-      `${payload.products.reduce((n, p) => n + p.faqs.length, 0)} FAQs, ${linkCount} links`,
+      `${payload.products.reduce((n, p) => n + p.faqs.length, 0)} FAQs, ${linkCount} links`
   )
   for (const w of warnings) console.log(`  warn  ${w}`)
   for (const e of errors) console.log(`  ERROR ${e}`)
@@ -238,7 +265,9 @@ async function main() {
   }
   if (payload.hold) throw new Error(`Payload is on hold: ${payload.hold}`)
   if (linkCount > 0 && !allowLinks) {
-    throw new Error('Payload has links. Pass --allow-links only once the FAQ link renderer is deployed.')
+    throw new Error(
+      'Payload has links. Pass --allow-links only once the FAQ link renderer is deployed.'
+    )
   }
 
   const failed: string[] = []
@@ -263,14 +292,21 @@ async function main() {
           async (tx) => {
             await tx.productFaq.deleteMany({ where: { productId: fp.id } })
             await tx.productFaq.createMany({
-              data: item.faqs.map((f, i) => ({ productId: fp.id, question: f.q.trim(), answer: f.a.trim(), position: i })),
+              data: item.faqs.map((f, i) => ({
+                productId: fp.id,
+                question: f.q.trim(),
+                answer: f.a.trim(),
+                position: i,
+              })),
             })
           },
-          { timeout: 120_000, maxWait: 30_000 },
+          { timeout: 120_000, maxWait: 30_000 }
         )
         ok = true
       } catch (e) {
-        console.log(`  retry ${attempt} ${item.slug}: ${(e as Error).message.split('\n').at(-1)?.slice(0, 160)}`)
+        console.log(
+          `  retry ${attempt} ${item.slug}: ${(e as Error).message.split('\n').at(-1)?.slice(0, 160)}`
+        )
       }
     }
     if (!ok) {
@@ -299,10 +335,16 @@ async function rescore(productId: string) {
   const p = await db.product.findUniqueOrThrow({
     where: { id: productId },
     include: {
-      _count: { select: { faqs: true, specs: true, crossReferences: true, documents: true, images: true } },
+      _count: {
+        select: { faqs: true, specs: true, crossReferences: true, documents: true, images: true },
+      },
     },
   })
-  const words = (s: string) => s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  const words = (s: string) =>
+    s
+      .replace(/<[^>]+>/g, ' ')
+      .split(/\s+/)
+      .filter(Boolean).length
   const score = scoreProductContent({
     descriptionShortWords: words(p.descriptionShort ?? ''),
     descriptionLongWords: words(p.descriptionLong ?? ''),

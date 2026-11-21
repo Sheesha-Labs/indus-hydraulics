@@ -18,13 +18,13 @@ export default function VideoBlockView({ block }: { block: VideoBlock }) {
 
   return (
     <figure className="my-2 min-w-0">
-      <div className="relative aspect-video overflow-hidden rounded-lg border border-ih-border bg-ih-ink">
+      <div className="border-ih-border bg-ih-ink relative aspect-video overflow-hidden rounded-lg border">
         <YouTubePlayer videoId={videoId} title={block.title} />
       </div>
       <FigureCaption
         caption={
           <>
-            <strong className="font-medium text-ih-ink">{block.title}</strong>
+            <strong className="text-ih-ink font-medium">{block.title}</strong>
             {block.caption ? <> — {block.caption}</> : null}
           </>
         }

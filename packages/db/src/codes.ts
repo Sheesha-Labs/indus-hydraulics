@@ -40,7 +40,7 @@ export async function nextRfqCode(client: DbClient = db, now: Date = new Date())
 
 export async function nextAccountCode(
   client: DbClient = db,
-  now: Date = new Date(),
+  now: Date = new Date()
 ): Promise<string> {
   const year = now.getFullYear()
   const value = await nextValue(client, 'account', year)
@@ -49,7 +49,7 @@ export async function nextAccountCode(
 
 export async function nextEnquiryCode(
   client: DbClient = db,
-  now: Date = new Date(),
+  now: Date = new Date()
 ): Promise<string> {
   const year = now.getFullYear()
   const value = await nextValue(client, 'enquiry', year)
@@ -65,7 +65,7 @@ export async function nextEnquiryCode(
  */
 export async function nextQuoteCodeForEnquiry(
   enquiryId: string,
-  client: DbClient = db,
+  client: DbClient = db
 ): Promise<NextQuoteCode> {
   const previous = await client.quote.findMany({
     where: { enquiryId },
@@ -89,7 +89,7 @@ export type NextQuoteCode =
 
 export async function nextQuoteCodeForRfq(
   rfqId: string,
-  client: DbClient = db,
+  client: DbClient = db
 ): Promise<NextQuoteCode> {
   const previous = await client.quote.findMany({
     where: { rfqId },
@@ -102,7 +102,12 @@ export async function nextQuoteCodeForRfq(
     const last = previous[0]!
     const baseCode = last.code.replace(/-R\d+$/, '')
     const nextRev = last.revision + 1
-    return { kind: 'revision', code: `${baseCode}-R${nextRev}`, revision: nextRev, ofCode: last.code }
+    return {
+      kind: 'revision',
+      code: `${baseCode}-R${nextRev}`,
+      revision: nextRev,
+      ofCode: last.code,
+    }
   }
 
   const value = await nextValue(client, 'quote', 0)
@@ -119,7 +124,7 @@ export function formatScrapeCode(year: number, value: number): string {
 
 export async function nextScrapeCode(
   client: DbClient = db,
-  now: Date = new Date(),
+  now: Date = new Date()
 ): Promise<string> {
   const year = now.getFullYear()
   const value = await nextValue(client, 'scrape', year)

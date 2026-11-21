@@ -10,26 +10,23 @@ export default function AdminShellError({
   reset: () => void
 }) {
   useEffect(() => {
-     
     console.error('[admin][shell-error]', error)
   }, [error])
 
   return (
     <div className="px-8 py-12">
-      <div className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-5 max-w-[680px]">
-        <h2 className="text-[15px] font-medium mb-1">This page failed to load</h2>
-        <p className="text-[13px] text-ih-ink-2 mb-3">
+      <div className="bg-ih-danger-soft max-w-[680px] rounded-lg border border-[oklch(0.4_0.18_25)] p-5">
+        <h2 className="mb-1 text-[15px] font-medium">This page failed to load</h2>
+        <p className="text-ih-ink-2 mb-3 text-[13px]">
           The rest of the admin app is still working — just this section ran into an error.
         </p>
         {error.digest && (
-          <p className="tabular-nums text-[11px] text-ih-muted-2 mb-3">
-            Reference: {error.digest}
-          </p>
+          <p className="text-ih-muted-2 mb-3 text-[11px] tabular-nums">Reference: {error.digest}</p>
         )}
         <button
           type="button"
           onClick={reset}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] tabular-nums"
         >
           Retry
         </button>

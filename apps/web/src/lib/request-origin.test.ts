@@ -15,18 +15,28 @@ describe('clientIp', () => {
   it('prefers cf-connecting-ip over everything else', () => {
     // Cloudflare sets this itself and a client cannot forge it through them.
     expect(
-      clientIp(h({ 'cf-connecting-ip': '203.0.113.7', 'x-forwarded-for': '10.0.0.1', 'x-real-ip': '10.0.0.2' })),
+      clientIp(
+        h({
+          'cf-connecting-ip': '203.0.113.7',
+          'x-forwarded-for': '10.0.0.1',
+          'x-real-ip': '10.0.0.2',
+        })
+      )
     ).toBe('203.0.113.7')
   })
 
   it('falls back to x-real-ip when Cloudflare is not in front', () => {
-    expect(clientIp(h({ 'x-real-ip': '198.51.100.4', 'x-forwarded-for': '10.0.0.1' }))).toBe('198.51.100.4')
+    expect(clientIp(h({ 'x-real-ip': '198.51.100.4', 'x-forwarded-for': '10.0.0.1' }))).toBe(
+      '198.51.100.4'
+    )
   })
 
   it('takes the LAST x-forwarded-for hop, not the first', () => {
     // The whole point. The first entry is caller-supplied; the last is what our
     // own proxy appended.
-    expect(clientIp(h({ 'x-forwarded-for': '1.1.1.1, 2.2.2.2, 198.51.100.9' }))).toBe('198.51.100.9')
+    expect(clientIp(h({ 'x-forwarded-for': '1.1.1.1, 2.2.2.2, 198.51.100.9' }))).toBe(
+      '198.51.100.9'
+    )
   })
 
   it('cannot be steered by a forged first hop', () => {

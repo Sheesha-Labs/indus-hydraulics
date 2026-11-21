@@ -119,8 +119,6 @@ export function sanitiseProductHtml(html: string): string {
       safeAttrs.push(`${attrName}="${escaped}"`)
     }
 
-    return safeAttrs.length > 0
-      ? `<${tagName} ${safeAttrs.join(' ')}>`
-      : `<${tagName}>`
+    return safeAttrs.length > 0 ? `<${tagName} ${safeAttrs.join(' ')}>` : `<${tagName}>`
   })
 }

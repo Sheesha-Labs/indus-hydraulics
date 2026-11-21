@@ -25,7 +25,16 @@ const branding = {
 }
 
 // The warm stone + sky blue the templates used to be built from.
-const V1_COLOURS = ['#1c1917', '#44403c', '#78716c', '#e7e5e4', '#f5f5f4', '#fafaf9', '#0c4a6e', '#1a4dbe']
+const V1_COLOURS = [
+  '#1c1917',
+  '#44403c',
+  '#78716c',
+  '#e7e5e4',
+  '#f5f5f4',
+  '#fafaf9',
+  '#0c4a6e',
+  '#1a4dbe',
+]
 
 describe('transactional email rendering', () => {
   const quote = renderQuoteSent({
@@ -75,6 +84,11 @@ describe('transactional email rendering', () => {
   it('writes previews when asked', () => {
     const out = process.env.EMAIL_HTML_OUT
     if (!out) return
-    writeFileSync(out, [quote.html, rfq.html].join('\n<hr style="margin:48px 0;border:0;border-top:1px dashed #bec5cc" />\n'))
+    writeFileSync(
+      out,
+      [quote.html, rfq.html].join(
+        '\n<hr style="margin:48px 0;border:0;border-top:1px dashed #bec5cc" />\n'
+      )
+    )
   })
 })

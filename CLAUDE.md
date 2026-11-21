@@ -15,8 +15,8 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 | Database | PostgreSQL |
 | ORM | Prisma |
 | Auth | NextAuth v5 (Auth.js) |
-| Monorepo | Turborepo + pnpm workspaces |
-| Testing | Vitest (unit) + Playwright (e2e) |
+| Monorepo | Bun workspaces (pinned canary in `package.json` `packageManager`). Bun installs and runs every script. |
+| Testing | `bun test` (unit; test files import from `vitest`, which bun test provides) + Playwright (e2e) |
 
 > **English-only.** This codebase shipped with full English/Arabic next-intl support but Arabic is no longer a product requirement. Routes live at `/`, not `[locale]/`. Strings are inlined as English literals in components — there is no `next-intl`, no `@indus/i18n` package, no message files. If you reintroduce locale routing later, do it as a deliberate new project; do not retrofit it on top of inline strings.
 
@@ -203,12 +203,12 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
    on a duplicate prefix, a malformed name, or a file missing from the README
    table.
 
-   **`pnpm db:push` is broken against this database — do not run it.** It
+   **`bun run db:push` is broken against this database — do not run it.** It
    proposes dropping the FTS-managed `products.search_tsv` generated column and
    stops at Prisma's data-loss guard; `--accept-data-loss` deletes the column
    and breaks `/search` in production. Apply SQL with `prisma db execute` or the
    Supabase MCP `apply_migration`, **before** merging the PR that needs it, and
-   regenerate the client with `pnpm --filter @indus/db db:generate`. Full
+   regenerate the client with `bun run --filter @indus/db db:generate`. Full
    details in `packages/db/migrations/README.md`.
 
 5. **Seed data lives in `packages/db/src/seed.ts`.** It is idempotent — running it twice must not create duplicate records.
@@ -276,7 +276,9 @@ Any state → cancelled  (admin only)
 
 3. **Tests run in CI** on every PR. PRs with failing tests are not merged.
 
-4. **Test files co-located with source:** `rfq-state-machine.test.ts` next to `rfq-state-machine.ts`.
+4. **Test failures are logged** in `docs/ci/test-failure-log.md` until 2026-12-05 (see `AGENTS.md`).
+
+5. **Test files co-located with source:** `rfq-state-machine.test.ts` next to `rfq-state-machine.ts`.
 
 ---
 

@@ -135,7 +135,7 @@ const ADMIN_CSP = [
 function applySecurityHeaders(
   response: NextResponse,
   request: NextRequest,
-  isStaffOnly: boolean,
+  isStaffOnly: boolean
 ): NextResponse {
   response.headers.set('Content-Security-Policy', isStaffOnly ? ADMIN_CSP : STOREFRONT_CSP)
   response.headers.set('X-Content-Type-Options', 'nosniff')
@@ -154,7 +154,7 @@ function applySecurityHeaders(
   // external target, even same-scheme.
   response.headers.set(
     'Referrer-Policy',
-    isStaffOnly ? 'no-referrer' : 'strict-origin-when-cross-origin',
+    isStaffOnly ? 'no-referrer' : 'strict-origin-when-cross-origin'
   )
   if (isStaffOnly) {
     // Structural noindex. Third and last layer, after the `robots` metadata on
@@ -354,8 +354,7 @@ export default async function proxy(request: NextRequest) {
   // reachable by anyone who guessed the URL, which is also why noindex was
   // doing all the work. Gate it for real: same staff-token check as /admin,
   // same hardened headers.
-  const isStaffOnly =
-    underPrefix(pathname, ADMIN_PREFIX) || underPrefix(pathname, DESIGN_PREFIX)
+  const isStaffOnly = underPrefix(pathname, ADMIN_PREFIX) || underPrefix(pathname, DESIGN_PREFIX)
   const done = (res: NextResponse) =>
     applySecurityHeaders(isStaffOnly ? res : withGeoCookie(res, request), request, isStaffOnly)
 
@@ -393,7 +392,7 @@ export default async function proxy(request: NextRequest) {
     request.headers.get('host'),
     pathname,
     request.nextUrl.search,
-    BASE_URL,
+    BASE_URL
   )
   if (canonical) return done(NextResponse.redirect(canonical, 308))
 

@@ -17,7 +17,14 @@ export const dynamic = 'force-dynamic'
 
 type Props = { params: Promise<{ id: string }> }
 
-const DATE_TIME = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Dubai' })
+const DATE_TIME = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZone: 'Asia/Dubai',
+})
 
 const TRIGGER: Record<string, string> = {
   inactivity: 'after a pause on the page',
@@ -34,7 +41,10 @@ const TRIGGER: Record<string, string> = {
 export default async function CallbackPage({ params }: Props) {
   await requireStaffRole(ROLES.RFQ_REVIEW)
   const { id } = await params
-  const lead = await db.callbackLead.findUnique({ where: { id }, include: { assignedTo: { select: { name: true } } } })
+  const lead = await db.callbackLead.findUnique({
+    where: { id },
+    include: { assignedTo: { select: { name: true } } },
+  })
   if (!lead) notFound()
 
   const ref = `CB-${lead.id.slice(0, 6).toUpperCase()}`
@@ -55,7 +65,12 @@ export default async function CallbackPage({ params }: Props) {
     >
       <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="flex min-w-0 flex-col gap-5">
-          <EditorSection title="Call them back" description={lead.deskOpen ? 'Asked while the desk was open.' : 'Asked outside desk hours.'}>
+          <EditorSection
+            title="Call them back"
+            description={
+              lead.deskOpen ? 'Asked while the desk was open.' : 'Asked outside desk hours.'
+            }
+          >
             <div className="flex flex-wrap gap-2">
               <Button asChild kind="primary" size="dense">
                 <a href={`tel:${lead.phoneE164}`}>
@@ -81,13 +96,22 @@ export default async function CallbackPage({ params }: Props) {
           <EditorSection title="What they asked about">
             <dl className="grid grid-cols-[140px_minmax(0,1fr)] gap-x-4 gap-y-2.5 text-[13.5px]">
               <dt className="text-ih-muted">Topic</dt>
-              <dd className="text-ih-ink">{lead.category ? lead.category.replace(/_/g, ' ') : '—'}</dd>
+              <dd className="text-ih-ink">
+                {lead.category ? lead.category.replace(/_/g, ' ') : '—'}
+              </dd>
               <dt className="text-ih-muted">Message</dt>
-              <dd className="whitespace-pre-wrap break-words text-ih-ink">{lead.description || '—'}</dd>
+              <dd className="text-ih-ink break-words whitespace-pre-wrap">
+                {lead.description || '—'}
+              </dd>
               <dt className="text-ih-muted">On the page</dt>
-              <dd className="break-words text-ih-ink-2">
+              <dd className="text-ih-ink-2 break-words">
                 {lead.pageUrl ? (
-                  <a href={lead.pageUrl} target="_blank" rel="noreferrer" className="text-ih-accent hover:text-ih-navy">
+                  <a
+                    href={lead.pageUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-ih-accent hover:text-ih-navy"
+                  >
                     {lead.pageTitle || lead.pageUrl}
                   </a>
                 ) : (
@@ -111,7 +135,7 @@ export default async function CallbackPage({ params }: Props) {
               {lead.referrer ? (
                 <>
                   <dt className="text-ih-muted">Came from</dt>
-                  <dd className="break-words text-ih-ink-2">{lead.referrer}</dd>
+                  <dd className="text-ih-ink-2 break-words">{lead.referrer}</dd>
                 </>
               ) : null}
             </dl>
@@ -120,13 +144,18 @@ export default async function CallbackPage({ params }: Props) {
 
         <aside className="flex min-w-0 flex-col gap-5 lg:sticky lg:top-6">
           <Panel padding="rail" className="flex flex-col gap-4">
-            <p className="text-[11px] font-medium uppercase tracking-[0.1em] text-ih-muted">Status</p>
+            <p className="text-ih-muted text-[11px] font-medium tracking-[0.1em] uppercase">
+              Status
+            </p>
             <dl className="flex flex-col gap-2 text-[13px]">
               <div className="flex justify-between gap-3">
                 <dt className="text-ih-muted">Stage</dt>
                 <dd className="text-ih-ink-2">
                   {STAGE_LABEL[stageOf('callback', lead.status)]}
-                  {(STATUS_LABEL[lead.status] ?? lead.status) !== STAGE_LABEL[stageOf('callback', lead.status)] ? ` · ${STATUS_LABEL[lead.status] ?? lead.status}` : ''}
+                  {(STATUS_LABEL[lead.status] ?? lead.status) !==
+                  STAGE_LABEL[stageOf('callback', lead.status)]
+                    ? ` · ${STATUS_LABEL[lead.status] ?? lead.status}`
+                    : ''}
                 </dd>
               </div>
               <div className="flex justify-between gap-3">

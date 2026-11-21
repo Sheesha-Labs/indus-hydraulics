@@ -1,6 +1,14 @@
 'use client'
 
-import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
+import {
+  useEffect,
+  useId,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type KeyboardEvent,
+} from 'react'
 import type { DialCountry } from '@indus/domain'
 import { filterCountries, flagSrc } from '../../lib/phone'
 
@@ -63,7 +71,12 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
   function openList() {
     if (disabled) return
     setQuery('')
-    setActive(Math.max(0, countries.findIndex((c) => c[0] === value)))
+    setActive(
+      Math.max(
+        0,
+        countries.findIndex((c) => c[0] === value)
+      )
+    )
     setCoarse(window.matchMedia('(pointer: coarse)').matches)
     setOpen(true)
   }
@@ -102,7 +115,10 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
     const above = r.top - top - 12
     const goUp = below < Math.min(PANEL_MAX, 260) && above > below
     setUp(goUp)
-    panelRef.current?.style.setProperty('--ih-cp-max', `${Math.max(PANEL_MIN, Math.min(PANEL_MAX, goUp ? above : below))}px`)
+    panelRef.current?.style.setProperty(
+      '--ih-cp-max',
+      `${Math.max(PANEL_MIN, Math.min(PANEL_MAX, goUp ? above : below))}px`
+    )
   }, [open])
 
   // Focus: the search box with a mouse or keyboard; on touch, the list
@@ -192,11 +208,17 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
             openList()
           }
         }}
-        className="flex h-full items-center gap-2 border-0 border-r border-ih-border bg-ih-surface-2 pl-3 pr-2.5 text-[13px] tabular-nums text-ih-ink outline-none transition-colors hover:bg-ih-border/40 focus-visible:bg-ih-accent-soft disabled:cursor-default max-[767px]:text-[16px]"
+        className="border-ih-border bg-ih-surface-2 text-ih-ink hover:bg-ih-border/40 focus-visible:bg-ih-accent-soft flex h-full items-center gap-2 border-0 border-r pr-2.5 pl-3 text-[13px] tabular-nums transition-colors outline-none disabled:cursor-default max-[767px]:text-[16px]"
       >
         {selected ? <Flag iso={selected[0]} /> : null}
         <span>{selected?.[1]}</span>
-        <svg className={`text-ih-muted transition-transform duration-150 ${open ? 'rotate-180' : ''}`} width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+        <svg
+          className={`text-ih-muted transition-transform duration-150 ${open ? 'rotate-180' : ''}`}
+          width="10"
+          height="6"
+          viewBox="0 0 10 6"
+          aria-hidden="true"
+        >
           <path fill="currentColor" d="M0 0h10L5 6z" />
         </svg>
       </button>
@@ -204,14 +226,26 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
       {open ? (
         <div
           ref={panelRef}
-          className={`absolute left-0 z-20 flex max-h-[var(--ih-cp-max,320px)] w-full min-w-[260px] flex-col overflow-hidden rounded-[10px] border border-ih-border bg-ih-surface shadow-[0_12px_32px_rgba(10,16,30,.18)] animate-[ih-fade-in_120ms_ease-out] ${
+          className={`border-ih-border bg-ih-surface absolute left-0 z-20 flex max-h-[var(--ih-cp-max,320px)] w-full min-w-[260px] animate-[ih-fade-in_120ms_ease-out] flex-col overflow-hidden rounded-[10px] border shadow-[0_12px_32px_rgba(10,16,30,.18)] ${
             up ? 'bottom-[calc(100%+6px)]' : 'top-[calc(100%+6px)]'
           }`}
         >
-          <div className="relative shrink-0 border-b border-ih-border p-2">
-            <svg className="pointer-events-none absolute left-[18px] top-1/2 -translate-y-1/2 text-ih-muted" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <div className="border-ih-border relative shrink-0 border-b p-2">
+            <svg
+              className="text-ih-muted pointer-events-none absolute top-1/2 left-[18px] -translate-y-1/2"
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
               <circle cx="7" cy="7" r="5.25" stroke="currentColor" strokeWidth="1.5" />
-              <path d="m11 11 3.5 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              <path
+                d="m11 11 3.5 3.5"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
             </svg>
             <input
               ref={searchRef}
@@ -231,7 +265,7 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
                 setActive(0)
               }}
               onKeyDown={onListKey}
-              className="h-9 w-full rounded-md border border-ih-border-strong bg-ih-surface pl-8 pr-3 text-[13.5px] text-ih-ink outline-none placeholder:text-ih-muted focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft max-[767px]:text-[16px]"
+              className="border-ih-border-strong bg-ih-surface text-ih-ink placeholder:text-ih-muted focus:border-ih-accent focus:ring-ih-accent-soft h-9 w-full rounded-md border pr-3 pl-8 text-[13.5px] outline-none focus:ring-[3px] max-[767px]:text-[16px]"
             />
           </div>
           <ul
@@ -245,7 +279,7 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
             className="min-h-0 flex-1 overflow-y-auto overscroll-contain py-1 outline-none"
           >
             {results.length === 0 ? (
-              <li role="presentation" className="px-3 py-3 text-[13px] text-ih-muted">
+              <li role="presentation" className="text-ih-muted px-3 py-3 text-[13px]">
                 No country matches &ldquo;{query.trim()}&rdquo;
               </li>
             ) : (
@@ -262,13 +296,30 @@ export default function CountryPicker({ countries, topCount, value, onChange, di
                     onClick={() => choose(iso)}
                     className={`flex min-h-10 cursor-pointer items-center gap-2.5 px-3 text-[13.5px] ${
                       isActive ? 'bg-ih-surface-2' : ''
-                    } ${showRule && i === topCount - 1 ? 'mb-1 border-b border-ih-border pb-1' : ''}`}
+                    } ${showRule && i === topCount - 1 ? 'border-ih-border mb-1 border-b pb-1' : ''}`}
                   >
                     <Flag iso={iso} eager={i < 12} />
-                    <span className={`min-w-0 flex-1 truncate ${isSel ? 'font-medium text-ih-ink' : 'text-ih-ink-2'}`}>{name}</span>
-                    <span className="shrink-0 tabular-nums text-ih-muted">{dial}</span>
-                    <svg className={`shrink-0 text-ih-accent ${isSel ? '' : 'invisible'}`} width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path d="m3 8.5 3.25 3L13 4.5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                    <span
+                      className={`min-w-0 flex-1 truncate ${isSel ? 'text-ih-ink font-medium' : 'text-ih-ink-2'}`}
+                    >
+                      {name}
+                    </span>
+                    <span className="text-ih-muted shrink-0 tabular-nums">{dial}</span>
+                    <svg
+                      className={`text-ih-accent shrink-0 ${isSel ? '' : 'invisible'}`}
+                      width="14"
+                      height="14"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m3 8.5 3.25 3L13 4.5"
+                        stroke="currentColor"
+                        strokeWidth="1.75"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </li>
                 )

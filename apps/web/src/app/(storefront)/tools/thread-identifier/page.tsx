@@ -47,9 +47,12 @@ export default async function ThreadIdentifierPage() {
       <div className="max-w-[760px] pb-8">
         <ThreadIdentifier />
       </div>
-      <p className="max-w-[760px] pb-10 text-[14px] leading-[1.6] text-ih-muted">
+      <p className="text-ih-muted max-w-[760px] pb-10 text-[14px] leading-[1.6]">
         For the full method, including what each family seals on and the pairing that leaks, read{' '}
-        <Link href="/blog/identify-any-hydraulic-fitting" className="text-ih-accent hover:underline">
+        <Link
+          href="/blog/identify-any-hydraulic-fitting"
+          className="text-ih-accent hover:underline"
+        >
           how to identify any hydraulic fitting in four steps
         </Link>
         .

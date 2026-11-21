@@ -110,7 +110,12 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(fun
       ref={ref}
       id={id}
       rows={rows}
-      className={cn(fieldBase, 'h-auto resize-y py-2.5 leading-[1.55]', withError(error), className)}
+      className={cn(
+        fieldBase,
+        'h-auto resize-y py-2.5 leading-[1.55]',
+        withError(error),
+        className
+      )}
       aria-invalid={error ? true : undefined}
       aria-describedby={describedBy}
       {...props}
@@ -154,24 +159,25 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(function 
   )
 })
 
-export const Label = React.forwardRef<HTMLLabelElement, React.LabelHTMLAttributes<HTMLLabelElement>>(
-  function Label({ className, ...props }, ref) {
-    return (
-      <label
-        ref={ref}
-        className={cn('block text-[13px] font-medium leading-none text-ih-ink', className)}
-        {...props}
-      />
-    )
-  }
-)
+export const Label = React.forwardRef<
+  HTMLLabelElement,
+  React.LabelHTMLAttributes<HTMLLabelElement>
+>(function Label({ className, ...props }, ref) {
+  return (
+    <label
+      ref={ref}
+      className={cn('text-ih-ink block text-[13px] leading-none font-medium', className)}
+      {...props}
+    />
+  )
+})
 
 export function Hint({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn('text-[11.5px] text-ih-muted', className)} {...props} />
+  return <p className={cn('text-ih-muted text-[11.5px]', className)} {...props} />
 }
 
 export function ErrorText({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn('text-[11.5px] text-ih-danger-ink', className)} {...props} />
+  return <p className={cn('text-ih-danger-ink text-[11.5px]', className)} {...props} />
 }
 
 export interface FieldProps {
@@ -199,9 +205,7 @@ export function Field({ label, hint, error, htmlFor, className, children }: Fiel
   const hasMessage = Boolean(error || hint)
 
   return (
-    <FieldContext.Provider
-      value={{ id, error, describedBy: hasMessage ? messageId : undefined }}
-    >
+    <FieldContext.Provider value={{ id, error, describedBy: hasMessage ? messageId : undefined }}>
       {/*
         The stack owns the spacing, not the parts. Label/Hint/ErrorText used to
         carry their own `mb-1.5` / `mt-[5px]` margins, so a field composed
@@ -237,11 +241,16 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(functi
   return (
     <label className={cn('group inline-flex cursor-pointer items-center gap-2.5', className)}>
       <span className="relative inline-grid h-4 w-4 shrink-0 place-items-center">
-        <input ref={ref} type="checkbox" className="peer absolute inset-0 z-10 cursor-pointer opacity-0" {...props} />
+        <input
+          ref={ref}
+          type="checkbox"
+          className="peer absolute inset-0 z-10 cursor-pointer opacity-0"
+          {...props}
+        />
         <span
           aria-hidden="true"
           className={cn(
-            'pointer-events-none inline-grid h-4 w-4 place-items-center rounded-[3px] border border-ih-border-strong bg-ih-surface text-white',
+            'border-ih-border-strong bg-ih-surface pointer-events-none inline-grid h-4 w-4 place-items-center rounded-[3px] border text-white',
             'transition-[background-color,border-color] duration-150 ease-[ease]',
             'peer-checked:border-ih-accent peer-checked:bg-ih-accent',
             // The tick is a DESCENDANT of this span, not a sibling of the
@@ -249,16 +258,22 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(functi
             // never match — peer-* compiles to a sibling combinator. Reach it
             // from here instead.
             'peer-checked:[&>svg]:opacity-100',
-            'peer-focus-visible:border-ih-accent peer-focus-visible:ring-[3px] peer-focus-visible:ring-ih-accent-soft',
+            'peer-focus-visible:border-ih-accent peer-focus-visible:ring-ih-accent-soft peer-focus-visible:ring-[3px]',
             'peer-disabled:opacity-45'
           )}
         >
           <svg viewBox="0 0 24 24" className="h-3 w-3 opacity-0" fill="none">
-            <path d="m5 12 5 5L20 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path
+              d="m5 12 5 5L20 7"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </span>
       </span>
-      {label ? <span className="text-[13px] text-ih-ink-2">{label}</span> : null}
+      {label ? <span className="text-ih-ink-2 text-[13px]">{label}</span> : null}
     </label>
   )
 })

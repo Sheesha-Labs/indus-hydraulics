@@ -206,7 +206,7 @@ export default function NavTreeEditor({
   return (
     <div className="flex flex-col gap-3">
       {roots.length === 0 ? (
-        <p className="rounded-md border border-dashed border-ih-border px-4 py-8 text-center text-[13px] text-ih-muted">
+        <p className="border-ih-border text-ih-muted rounded-md border border-dashed px-4 py-8 text-center text-[13px]">
           {emptyHint ?? `No ${rootNoun.toLowerCase()}s yet.`}
         </p>
       ) : (
@@ -275,7 +275,7 @@ function NavLevel({
 }) {
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
-    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   )
 
   function handleDragEnd(event: DragEndEvent) {
@@ -360,8 +360,8 @@ function NavRow({
       ref={setNodeRef}
       className={
         unrendered
-          ? 'rounded-md border border-dashed border-ih-border bg-ih-bg'
-          : 'rounded-md border border-ih-border bg-ih-bg'
+          ? 'border-ih-border bg-ih-bg rounded-md border border-dashed'
+          : 'border-ih-border bg-ih-bg rounded-md border'
       }
       style={{
         transform: CSS.Transform.toString(transform),
@@ -373,7 +373,7 @@ function NavRow({
         <button
           type="button"
           aria-label={`Reorder ${item.label || noun} — press space, then arrow keys`}
-          className="inline-flex h-7 w-5 shrink-0 cursor-grab items-center justify-center text-ih-muted hover:text-ih-ink active:cursor-grabbing"
+          className="text-ih-muted hover:text-ih-ink inline-flex h-7 w-5 shrink-0 cursor-grab items-center justify-center active:cursor-grabbing"
           {...listeners}
           {...attributes}
         >
@@ -386,7 +386,7 @@ function NavRow({
             onClick={() => onToggle(item.uid)}
             aria-expanded={isOpen}
             aria-label={isOpen ? `Collapse ${item.label || noun}` : `Expand ${item.label || noun}`}
-            className="inline-flex h-7 w-6 shrink-0 items-center justify-center rounded-md text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink inline-flex h-7 w-6 shrink-0 items-center justify-center rounded-md"
           >
             {isOpen ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
             <span className="sr-only">
@@ -431,7 +431,7 @@ function NavRow({
         </select>
 
         {children.length > 0 ? (
-          <span className="shrink-0 text-[10.5px] tabular-nums text-ih-muted">
+          <span className="text-ih-muted shrink-0 text-[10.5px] tabular-nums">
             {children.length}
           </span>
         ) : null}
@@ -444,8 +444,8 @@ function NavRow({
           title="Badge, description, icon, new-tab"
           className={
             showAdvanced
-              ? 'inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-accent'
-              : 'inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-muted hover:text-ih-ink'
+              ? 'text-ih-accent inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md'
+              : 'text-ih-muted hover:text-ih-ink inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md'
           }
         >
           <Settings2 size={14} />
@@ -459,8 +459,8 @@ function NavRow({
           title={item.isVisible ? 'Visible — click to hide' : 'Hidden — click to show'}
           className={
             item.isVisible
-              ? 'inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-muted hover:text-ih-ink'
-              : 'inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-danger-ink'
+              ? 'text-ih-muted hover:text-ih-ink inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md'
+              : 'text-ih-danger-ink inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md'
           }
         >
           {item.isVisible ? <Eye size={14} /> : <EyeOff size={14} />}
@@ -470,7 +470,7 @@ function NavRow({
           type="button"
           onClick={() => onRemove(item.uid)}
           aria-label={`Remove ${item.label || noun}`}
-          className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-muted hover:text-ih-danger-ink"
+          className="text-ih-muted hover:text-ih-danger-ink inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md"
         >
           <Trash2 size={14} />
         </button>
@@ -499,15 +499,14 @@ function NavRow({
             }
           />
         ) : (
-          <p className="text-[12px] text-ih-muted">Heading only — not a link.</p>
+          <p className="text-ih-muted text-[12px]">Heading only — not a link.</p>
         )}
 
         {unrendered ? (
-          <p className="mt-2 flex items-start gap-1.5 text-[12px] text-ih-danger-ink">
+          <p className="text-ih-danger-ink mt-2 flex items-start gap-1.5 text-[12px]">
             <TriangleAlert size={13} className="mt-[2px] shrink-0" />
             <span>
-              Saved, but never shown. {surface.title} draws{' '}
-              {(surface.renderedDepth ?? 0) + 1}{' '}
+              Saved, but never shown. {surface.title} draws {(surface.renderedDepth ?? 0) + 1}{' '}
               {(surface.renderedDepth ?? 0) + 1 === 1 ? 'level' : 'levels'}; this one is deeper.
             </span>
           </p>
@@ -519,7 +518,7 @@ function NavRow({
       ) : null}
 
       {isOpen && children.length > 0 ? (
-        <div className="border-t border-ih-border px-2 py-2 pl-6">
+        <div className="border-ih-border border-t px-2 py-2 pl-6">
           <NavLevel
             parentUid={item.uid}
             rows={children}
@@ -575,10 +574,10 @@ function AdvancedFields({
   onPatch: (uid: string, changes: Partial<NavDraftItem>) => void
 }) {
   return (
-    <div className="border-t border-ih-border px-2 py-3 pl-[52px]">
+    <div className="border-ih-border border-t px-2 py-3 pl-[52px]">
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         <label className="flex flex-col gap-1">
-          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+          <span className="text-ih-muted text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
             Badge
           </span>
           <input
@@ -590,7 +589,7 @@ function AdvancedFields({
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+          <span className="text-ih-muted text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
             Description
           </span>
           <input
@@ -608,14 +607,14 @@ function AdvancedFields({
           type="checkbox"
           checked={item.openInNewTab}
           onChange={(e) => onPatch(item.uid, { openInNewTab: e.target.checked })}
-          className="h-4 w-4 rounded-[3px] border-ih-border"
+          className="border-ih-border h-4 w-4 rounded-[3px]"
         />
         Open in a new tab
       </label>
 
       {surface.supportsPromo && depth === 0 ? (
-        <div className="mt-3 flex flex-col gap-3 border-t border-ih-border pt-3">
-          <span className="tabular-nums text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+        <div className="border-ih-border mt-3 flex flex-col gap-3 border-t pt-3">
+          <span className="text-ih-muted text-[10.5px] tracking-[0.13em] uppercase tabular-nums">
             Promo tile
           </span>
           <input
@@ -639,7 +638,7 @@ function AdvancedFields({
             className={FIELD}
             placeholder="/c/something"
           />
-          <p className="text-[12px] text-ih-muted">
+          <p className="text-ih-muted text-[12px]">
             The promo image is set from the Media library — not editable here yet.
           </p>
         </div>

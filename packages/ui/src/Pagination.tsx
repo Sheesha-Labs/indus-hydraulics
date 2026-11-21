@@ -88,7 +88,7 @@ export function Pagination({
 
       {pages.map((p, i) =>
         p === '…' ? (
-          <span key={`gap-${i}`} aria-hidden="true" className="px-2 text-ih-muted">
+          <span key={`gap-${i}`} aria-hidden="true" className="text-ih-muted px-2">
             …
           </span>
         ) : (

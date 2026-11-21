@@ -8,12 +8,26 @@ import { z } from 'zod'
 import { auth } from '../../../../lib/admin-auth'
 import { normaliseDesign } from '../../../../lib/newsletter/blocks/document'
 import { RECORD_KINDS } from '../../../../lib/newsletter/blocks/types'
-import { EDITABLE_STATUSES, campaignDraftSchema, type CampaignDraft, type CampaignStatus } from '../../../../lib/newsletter/campaign'
-import { audienceSize, campaignProblemsLive, draftOf, renderPreview, sendTest } from '../../../../lib/newsletter/campaigns'
+import {
+  EDITABLE_STATUSES,
+  campaignDraftSchema,
+  type CampaignDraft,
+  type CampaignStatus,
+} from '../../../../lib/newsletter/campaign'
+import {
+  audienceSize,
+  campaignProblemsLive,
+  draftOf,
+  renderPreview,
+  sendTest,
+} from '../../../../lib/newsletter/campaigns'
 import { searchRecords, type RecordOption } from '../../../../lib/newsletter/records'
 import { senderSettingsSchema } from '../../../../lib/newsletter/sender'
 import { STARTERS, starterDraft, type Starter } from '../../../../lib/newsletter/starters'
-import { BUILT_IN_TEMPLATE_IDS, type BuiltInTemplateId } from '../../../../lib/newsletter/template-catalogue'
+import {
+  BUILT_IN_TEMPLATE_IDS,
+  type BuiltInTemplateId,
+} from '../../../../lib/newsletter/template-catalogue'
 import { TemplateRecordMissing, builtInTemplateDraft } from '../../../../lib/newsletter/templates'
 import { NEWSLETTER_SEND_EVENT } from '../../../../inngest/newsletterSend'
 import { inngest } from '../../../../inngest/client'
@@ -32,7 +46,8 @@ const TEMPLATES = '/admin/newsletter/templates'
 
 function failure(err: unknown, what: string): Result<never> {
   // Say the first problem in words; the forms here show one message line.
-  if (err instanceof z.ZodError) return fail('VALIDATION', err.issues[0]?.message ?? 'Check the form.')
+  if (err instanceof z.ZodError)
+    return fail('VALIDATION', err.issues[0]?.message ?? 'Check the form.')
   try {
     return failFromError(err)
   } catch {
@@ -47,7 +62,10 @@ function contentData(d: CampaignDraft) {
     subject: d.subject.trim(),
     preheader: d.preheader.trim(),
     format: d.format,
-    design: d.format === 'blocks' ? (normaliseDesign(d.design) as unknown as Prisma.InputJsonValue) : Prisma.DbNull,
+    design:
+      d.format === 'blocks'
+        ? (normaliseDesign(d.design) as unknown as Prisma.InputJsonValue)
+        : Prisma.DbNull,
     bodyHtml: d.format === 'rich' ? d.bodyHtml : '',
   }
 }
@@ -62,7 +80,11 @@ const createSchema = z.union([
 ])
 
 export async function createCampaignAction(
-  input: { template: BuiltInTemplateId; recordId?: string } | { starter: Starter } | { templateId: string } | { duplicateOf: string },
+  input:
+    | { template: BuiltInTemplateId; recordId?: string }
+    | { starter: Starter }
+    | { templateId: string }
+    | { duplicateOf: string }
 ): Promise<Result<never>> {
   let id: string
   try {
@@ -120,16 +142,30 @@ export async function createCampaignAction(
 
 // ── Save, preview, test ────────────────────────────────────────────────
 
-export type SaveResult = { savedAt: string; problems: Record<string, string>; audienceSize: number; unscheduled: boolean }
+export type SaveResult = {
+  savedAt: string
+  problems: Record<string, string>
+  audienceSize: number
+  unscheduled: boolean
+}
 
-export async function saveCampaignAction(id: string, draft: CampaignDraft): Promise<Result<SaveResult>> {
+export async function saveCampaignAction(
+  id: string,
+  draft: CampaignDraft
+): Promise<Result<SaveResult>> {
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
     const d = campaignDraftSchema.parse(draft)
-    const current = await db.newsletterCampaign.findUnique({ where: { id }, select: { status: true } })
+    const current = await db.newsletterCampaign.findUnique({
+      where: { id },
+      select: { status: true },
+    })
     if (!current) return fail('NOT_FOUND', 'That newsletter no longer exists.')
     if (!EDITABLE_STATUSES.includes(current.status as CampaignStatus)) {
-      return fail('PRECONDITION_FAILED', 'This newsletter has already been sent and can no longer be changed.')
+      return fail(
+        'PRECONDITION_FAILED',
+        'This newsletter has already been sent and can no longer be changed.'
+      )
     }
     const now = new Date()
     // A scheduled newsletter was approved by someone who may send. An edit by
@@ -149,8 +185,15 @@ export async function saveCampaignAction(id: string, draft: CampaignDraft): Prom
         ...(unschedule ? { status: 'draft' as const, scheduledAt: null } : {}),
       },
     })
-    if (r.count === 0) return fail('PRECONDITION_FAILED', 'This newsletter started sending and can no longer be changed.')
-    const [problems, size] = await Promise.all([campaignProblemsLive(d), audienceSize(d.audience, d.listIds)])
+    if (r.count === 0)
+      return fail(
+        'PRECONDITION_FAILED',
+        'This newsletter started sending and can no longer be changed.'
+      )
+    const [problems, size] = await Promise.all([
+      campaignProblemsLive(d),
+      audienceSize(d.audience, d.listIds),
+    ])
     revalidatePath(CAMPAIGNS)
     if (unschedule) revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
     return ok({ savedAt: now.toISOString(), problems, audienceSize: size, unscheduled: unschedule })
@@ -161,7 +204,7 @@ export async function saveCampaignAction(id: string, draft: CampaignDraft): Prom
 
 export async function previewCampaignAction(
   draft: CampaignDraft,
-  recipient: 'subscriber' | 'list' = 'subscriber',
+  recipient: 'subscriber' | 'list' = 'subscriber'
 ): Promise<Result<{ subject: string; html: string; text: string; missingRecords: number }>> {
   try {
     requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
@@ -173,13 +216,20 @@ export async function previewCampaignAction(
   }
 }
 
-export async function sendTestAction(id: string, draft: CampaignDraft): Promise<Result<{ message: string }>> {
+export async function sendTestAction(
+  id: string,
+  draft: CampaignDraft
+): Promise<Result<{ message: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
     const d = campaignDraftSchema.parse(draft)
     if (!d.subject.trim()) return fail('VALIDATION', 'Write a subject before sending a test.')
-    const staff = await db.staffUser.findUnique({ where: { id: session.user.id }, select: { email: true } })
-    if (!staff?.email) return fail('NOT_FOUND', 'Your account has no email address to send the test to.')
+    const staff = await db.staffUser.findUnique({
+      where: { id: session.user.id },
+      select: { email: true },
+    })
+    if (!staff?.email)
+      return fail('NOT_FOUND', 'Your account has no email address to send the test to.')
     const r = await sendTest(id, d, staff.email)
     if (!r.ok) return fail('INTERNAL', r.error)
     return ok({ message: `Test sent to ${staff.email}.` })
@@ -192,8 +242,11 @@ export async function sendTestAction(id: string, draft: CampaignDraft): Promise<
 export async function deleteCampaignAction(id: string): Promise<Result<{ message: string }>> {
   try {
     requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
-    const r = await db.newsletterCampaign.deleteMany({ where: { id, status: { in: ['draft', 'cancelled'] } } })
-    if (r.count === 0) return fail('PRECONDITION_FAILED', 'Only a draft or a cancelled newsletter can be deleted.')
+    const r = await db.newsletterCampaign.deleteMany({
+      where: { id, status: { in: ['draft', 'cancelled'] } },
+    })
+    if (r.count === 0)
+      return fail('PRECONDITION_FAILED', 'Only a draft or a cancelled newsletter can be deleted.')
     revalidatePath(CAMPAIGNS)
   } catch (err) {
     return failure(err, 'delete the newsletter')
@@ -207,7 +260,10 @@ export async function duplicateCampaignAction(id: string): Promise<Result<never>
 
 // ── Records picker ─────────────────────────────────────────────────────
 
-export async function searchRecordsAction(kind: string, q: string): Promise<Result<RecordOption[]>> {
+export async function searchRecordsAction(
+  kind: string,
+  q: string
+): Promise<Result<RecordOption[]>> {
   try {
     requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
     const k = z.enum(RECORD_KINDS).parse(kind)
@@ -226,7 +282,7 @@ const templateSchema = z.object({
 
 export async function saveAsTemplateAction(
   campaignId: string,
-  input: { name: string; description: string },
+  input: { name: string; description: string }
 ): Promise<Result<{ message: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
@@ -251,11 +307,21 @@ export async function saveAsTemplateAction(
   }
 }
 
-export async function renameTemplateAction(id: string, _prev: unknown, formData: FormData): Promise<Result<{ message: string }>> {
+export async function renameTemplateAction(
+  id: string,
+  _prev: unknown,
+  formData: FormData
+): Promise<Result<{ message: string }>> {
   try {
     requireRole(await auth(), ROLES.NEWSLETTER_WRITE)
-    const meta = templateSchema.parse({ name: formData.get('name'), description: formData.get('description') ?? '' })
-    const r = await db.newsletterTemplate.updateMany({ where: { id }, data: { ...meta, updatedAt: new Date() } })
+    const meta = templateSchema.parse({
+      name: formData.get('name'),
+      description: formData.get('description') ?? '',
+    })
+    const r = await db.newsletterTemplate.updateMany({
+      where: { id },
+      data: { ...meta, updatedAt: new Date() },
+    })
     if (r.count === 0) return fail('NOT_FOUND', 'That template no longer exists.')
     revalidatePath(TEMPLATES)
     return ok({ message: 'Saved.' })
@@ -278,7 +344,10 @@ export async function deleteTemplateAction(id: string): Promise<Result<{ message
 
 // ── Sender settings ────────────────────────────────────────────────────
 
-export async function saveSenderSettingsAction(_prev: unknown, formData: FormData): Promise<Result<{ message: string }>> {
+export async function saveSenderSettingsAction(
+  _prev: unknown,
+  formData: FormData
+): Promise<Result<{ message: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_SEND)
     const s = senderSettingsSchema.parse({
@@ -301,7 +370,10 @@ export async function saveSenderSettingsAction(_prev: unknown, formData: FormDat
 // ── Send, schedule, cancel (Phase 4) ───────────────────────────────────
 
 const sendOptionsSchema = z.object({
-  maxPerHour: z.number().int().refine((n) => (PACE_OPTIONS as readonly number[]).includes(n), 'Pick a sending pace.'),
+  maxPerHour: z
+    .number()
+    .int()
+    .refine((n) => (PACE_OPTIONS as readonly number[]).includes(n), 'Pick a sending pace.'),
   dryRun: z.boolean(),
 })
 
@@ -309,13 +381,18 @@ const sendOptionsSchema = z.object({
 async function readyToSend(id: string): Promise<Result<{ size: number }>> {
   const row = await db.newsletterCampaign.findUnique({ where: { id } })
   if (!row) return fail('NOT_FOUND', 'That newsletter no longer exists.')
-  if (row.status !== 'draft' && row.status !== 'scheduled') return fail('PRECONDITION_FAILED', 'This newsletter has already been sent.')
+  if (row.status !== 'draft' && row.status !== 'scheduled')
+    return fail('PRECONDITION_FAILED', 'This newsletter has already been sent.')
   const draft = draftOf(row)
   const problems = await campaignProblemsLive(draft)
   const first = Object.values(problems)[0]
   if (first) return fail('PRECONDITION_FAILED', first)
   const size = await audienceSize(draft.audience, draft.listIds)
-  if (size === 0) return fail('PRECONDITION_FAILED', 'Nobody to send to: no confirmed subscribers or active list contacts in the audience.')
+  if (size === 0)
+    return fail(
+      'PRECONDITION_FAILED',
+      'Nobody to send to: no confirmed subscribers or active list contacts in the audience.'
+    )
   return ok({ size })
 }
 
@@ -324,7 +401,10 @@ async function readyToSend(id: string): Promise<Result<{ size: number }>> {
  * let someone mail everyone (Bazar bug 3). The send itself starts in the
  * Inngest function, whose start step is atomic: a double click sends once.
  */
-export async function sendNowAction(id: string, options: { maxPerHour: number; dryRun: boolean }): Promise<Result<{ message: string }>> {
+export async function sendNowAction(
+  id: string,
+  options: { maxPerHour: number; dryRun: boolean }
+): Promise<Result<{ message: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_SEND)
     const opts = sendOptionsSchema.parse(options)
@@ -352,7 +432,7 @@ const MAX_LEAD_MS = 60 * 24 * 60 * 60 * 1000
 
 export async function scheduleAction(
   id: string,
-  options: { at: string; maxPerHour: number; dryRun: boolean },
+  options: { at: string; maxPerHour: number; dryRun: boolean }
 ): Promise<Result<{ message: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.NEWSLETTER_SEND)
@@ -365,12 +445,22 @@ export async function scheduleAction(
     if (!ready.success) return ready
     const r = await db.newsletterCampaign.updateMany({
       where: { id, status: { in: ['draft', 'scheduled'] } },
-      data: { ...opts, status: 'scheduled', scheduledAt: at, sentById: session.user.id, updatedById: session.user.id },
+      data: {
+        ...opts,
+        status: 'scheduled',
+        scheduledAt: at,
+        sentById: session.user.id,
+        updatedById: session.user.id,
+      },
     })
     if (r.count === 0) return fail('PRECONDITION_FAILED', 'This newsletter has already been sent.')
     // The event fires at `ts`; the run checks the campaign is still
     // scheduled for exactly this time, so rescheduling needs no cancel.
-    await inngest.send({ name: NEWSLETTER_SEND_EVENT, data: { campaignId: id, scheduledAt: at.toISOString() }, ts: at.getTime() })
+    await inngest.send({
+      name: NEWSLETTER_SEND_EVENT,
+      data: { campaignId: id, scheduledAt: at.toISOString() },
+      ts: at.getTime(),
+    })
     revalidatePath(`${CAMPAIGNS}/campaigns/${id}`)
     revalidatePath(CAMPAIGNS)
     return ok({ message: `Scheduled for ${at.toUTCString()}.` })

@@ -53,10 +53,17 @@ const CreateMenuSchema = z.object({
   slug: Slug,
   name: z.string().trim().min(1).max(120),
   location: MenuLocationSchema,
-  description: z.string().trim().max(500).optional().transform((v) => v || null),
+  description: z
+    .string()
+    .trim()
+    .max(500)
+    .optional()
+    .transform((v) => v || null),
 })
 
-export async function createMenu(input: z.input<typeof CreateMenuSchema>): Promise<Result<{ id: string; slug: string }>> {
+export async function createMenu(
+  input: z.input<typeof CreateMenuSchema>
+): Promise<Result<{ id: string; slug: string }>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
     const parsed = CreateMenuSchema.parse(input)
@@ -84,7 +91,7 @@ const SearchSchema = z.object({
 })
 
 export async function searchLinkTargets(
-  input: z.input<typeof SearchSchema>,
+  input: z.input<typeof SearchSchema>
 ): Promise<Result<Array<{ id: string; label: string; sublabel: string | null }>>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
@@ -94,7 +101,14 @@ export async function searchLinkTargets(
 
     if (parsed.linkType === 'category') {
       const rows = await db.category.findMany({
-        where: q ? { OR: [{ name: { contains: q, mode: 'insensitive' } }, { slug: { contains: q, mode: 'insensitive' } }] } : undefined,
+        where: q
+          ? {
+              OR: [
+                { name: { contains: q, mode: 'insensitive' } },
+                { slug: { contains: q, mode: 'insensitive' } },
+              ],
+            }
+          : undefined,
         take,
         orderBy: { name: 'asc' },
         select: { id: true, name: true, slug: true },
@@ -103,7 +117,14 @@ export async function searchLinkTargets(
     }
     if (parsed.linkType === 'brand') {
       const rows = await db.brand.findMany({
-        where: q ? { OR: [{ name: { contains: q, mode: 'insensitive' } }, { slug: { contains: q, mode: 'insensitive' } }] } : undefined,
+        where: q
+          ? {
+              OR: [
+                { name: { contains: q, mode: 'insensitive' } },
+                { slug: { contains: q, mode: 'insensitive' } },
+              ],
+            }
+          : undefined,
         take,
         orderBy: { name: 'asc' },
         select: { id: true, name: true, slug: true },
@@ -112,7 +133,14 @@ export async function searchLinkTargets(
     }
     if (parsed.linkType === 'industry') {
       const rows = await db.industry.findMany({
-        where: q ? { OR: [{ name: { contains: q, mode: 'insensitive' } }, { slug: { contains: q, mode: 'insensitive' } }] } : undefined,
+        where: q
+          ? {
+              OR: [
+                { name: { contains: q, mode: 'insensitive' } },
+                { slug: { contains: q, mode: 'insensitive' } },
+              ],
+            }
+          : undefined,
         take,
         orderBy: { name: 'asc' },
         select: { id: true, name: true, slug: true },
@@ -121,7 +149,14 @@ export async function searchLinkTargets(
     }
     if (parsed.linkType === 'cms_page') {
       const rows = await db.cmsPage.findMany({
-        where: q ? { OR: [{ title: { contains: q, mode: 'insensitive' } }, { slug: { contains: q, mode: 'insensitive' } }] } : undefined,
+        where: q
+          ? {
+              OR: [
+                { title: { contains: q, mode: 'insensitive' } },
+                { slug: { contains: q, mode: 'insensitive' } },
+              ],
+            }
+          : undefined,
         take,
         orderBy: { title: 'asc' },
         select: { id: true, title: true, slug: true },
@@ -130,7 +165,14 @@ export async function searchLinkTargets(
     }
     if (parsed.linkType === 'product') {
       const rows = await db.product.findMany({
-        where: q ? { OR: [{ title: { contains: q, mode: 'insensitive' } }, { sku: { contains: q, mode: 'insensitive' } }] } : undefined,
+        where: q
+          ? {
+              OR: [
+                { title: { contains: q, mode: 'insensitive' } },
+                { sku: { contains: q, mode: 'insensitive' } },
+              ],
+            }
+          : undefined,
         take,
         orderBy: { title: 'asc' },
         select: { id: true, title: true, sku: true },

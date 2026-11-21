@@ -51,7 +51,11 @@ export function rejectAsBot(formData: FormData): string | null {
 
   const startedAtRaw = formData.get('formStartedAt')
   const startedAt = typeof startedAtRaw === 'string' ? Number(startedAtRaw) : Number.NaN
-  if (Number.isFinite(startedAt) && startedAt > 0 && Date.now() - startedAt < MIN_FORM_DURATION_MS) {
+  if (
+    Number.isFinite(startedAt) &&
+    startedAt > 0 &&
+    Date.now() - startedAt < MIN_FORM_DURATION_MS
+  ) {
     return 'That was quick — give the form a moment and try again.'
   }
 
@@ -81,7 +85,8 @@ export function readAttachments(raw: FormDataEntryValue | null): EnquiryAttachme
         path,
         label: typeof label === 'string' ? label.slice(0, 180) : 'attachment',
         size: typeof size === 'number' && Number.isFinite(size) ? size : 0,
-        contentType: typeof contentType === 'string' ? contentType.slice(0, 120) : 'application/octet-stream',
+        contentType:
+          typeof contentType === 'string' ? contentType.slice(0, 120) : 'application/octet-stream',
       })
     }
   } catch {

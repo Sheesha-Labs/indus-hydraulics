@@ -19,7 +19,7 @@ export default function ActivateForm({
 }) {
   const [state, formAction, pending] = useActionState<ActivateState, FormData>(
     activateStaffAccount,
-    null,
+    null
   )
 
   // Success dialog rather than a redirect: the person has just set a password
@@ -55,11 +55,11 @@ export default function ActivateForm({
             : 'Your password has been changed. Sign in with your new password.'}
         </p>
 
-        <p className="mt-4 tabular-nums text-[11px] text-[oklch(0.68_0.03_250)]">{state.email}</p>
+        <p className="mt-4 text-[11px] text-[oklch(0.68_0.03_250)] tabular-nums">{state.email}</p>
 
         <Link
           href={`/admin/sign-in?email=${encodeURIComponent(state.email)}`}
-          className="mt-6 inline-flex h-11 w-full items-center justify-center bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover mt-6 inline-flex h-11 w-full items-center justify-center text-sm font-medium transition-opacity"
         >
           Go to sign in →
         </Link>
@@ -116,7 +116,7 @@ export default function ActivateForm({
       <button
         type="submit"
         disabled={pending}
-        className="mt-1 h-11 bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
+        className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover mt-1 h-11 text-sm font-medium transition-opacity disabled:opacity-50"
       >
         {pending ? 'Saving…' : submitLabel}
       </button>

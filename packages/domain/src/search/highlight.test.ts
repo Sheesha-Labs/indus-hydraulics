@@ -13,7 +13,7 @@ describe('sanitiseHighlight — allow-list', () => {
 
   test('multiple `<mark>` survive', () => {
     expect(sanitiseHighlight('<mark>foo</mark> and <mark>bar</mark>')).toBe(
-      '<mark>foo</mark> and <mark>bar</mark>',
+      '<mark>foo</mark> and <mark>bar</mark>'
     )
   })
 
@@ -32,7 +32,7 @@ describe('sanitiseHighlight — allow-list', () => {
 describe('sanitiseHighlight — XSS surface', () => {
   test('script tag escaped', () => {
     expect(sanitiseHighlight('<script>alert(1)</script>')).toBe(
-      '&lt;script&gt;alert(1)&lt;/script&gt;',
+      '&lt;script&gt;alert(1)&lt;/script&gt;'
     )
   })
 
@@ -48,7 +48,7 @@ describe('sanitiseHighlight — XSS surface', () => {
 
   test('a href escaped', () => {
     expect(sanitiseHighlight('<a href="evil">click</a>')).toBe(
-      '&lt;a href=&quot;evil&quot;&gt;click&lt;/a&gt;',
+      '&lt;a href=&quot;evil&quot;&gt;click&lt;/a&gt;'
     )
   })
 
@@ -93,7 +93,7 @@ describe('sanitiseHighlight — XSS surface', () => {
 
   test('mixed legitimate + malicious — only mark passes', () => {
     expect(sanitiseHighlight('<mark>foo</mark><script>x</script>')).toBe(
-      '<mark>foo</mark>&lt;script&gt;x&lt;/script&gt;',
+      '<mark>foo</mark>&lt;script&gt;x&lt;/script&gt;'
     )
   })
 
@@ -118,14 +118,12 @@ describe('sanitiseHighlight — robustness', () => {
   })
 
   test('whitespace inside tag rejected', () => {
-    expect(sanitiseHighlight('< mark >foo< /mark >')).toBe(
-      '&lt; mark &gt;foo&lt; /mark &gt;',
-    )
+    expect(sanitiseHighlight('< mark >foo< /mark >')).toBe('&lt; mark &gt;foo&lt; /mark &gt;')
   })
 
   test('repeated allowed tags', () => {
     expect(sanitiseHighlight('<mark>a</mark><mark>b</mark><mark>c</mark>')).toBe(
-      '<mark>a</mark><mark>b</mark><mark>c</mark>',
+      '<mark>a</mark><mark>b</mark><mark>c</mark>'
     )
   })
 })

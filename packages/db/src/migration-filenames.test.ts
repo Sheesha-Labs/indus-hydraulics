@@ -37,7 +37,7 @@ describe('migration filenames', () => {
     expect(
       bad,
       `Rename these to a UTC-agnostic local timestamp prefix, e.g. ` +
-        `${stamp()}_add_thing.sql — run \`date +%Y%m%d%H%M\`.`,
+        `${stamp()}_add_thing.sql — run \`date +%Y%m%d%H%M\`.`
     ).toEqual([])
   })
 
@@ -55,7 +55,7 @@ describe('migration filenames', () => {
     const collisions = [...seen.entries()].filter(([, files]) => files.length > 1)
     expect(
       collisions.map(([prefix, files]) => `${prefix}: ${files.join(', ')}`),
-      'Bump one of them by a minute — the apply order between them is otherwise undefined.',
+      'Bump one of them by a minute — the apply order between them is otherwise undefined.'
     ).toEqual([])
   })
 
@@ -79,7 +79,7 @@ describe('migration filenames', () => {
     expect(
       missing,
       'Add a row to the table in packages/db/migrations/README.md, ' +
-        'including the date it was applied to prod.',
+        'including the date it was applied to prod.'
     ).toEqual([])
   })
 })

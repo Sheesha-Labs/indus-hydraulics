@@ -9,7 +9,8 @@
  */
 
 /** Mirrors the Prisma `DocumentKind` enum. */
-export type ProductDocumentKind = 'datasheet' | 'step' | 'iges' | 'service_manual' | 'installation_guide' | 'certificate'
+export type ProductDocumentKind =
+  'datasheet' | 'step' | 'iges' | 'service_manual' | 'installation_guide' | 'certificate'
 
 const LABELS: Record<ProductDocumentKind, { label: string; badge: string }> = {
   datasheet: { label: 'Datasheet', badge: 'DATA' },

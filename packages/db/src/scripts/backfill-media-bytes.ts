@@ -149,7 +149,8 @@ async function resolve1(
       const errors: string[] = []
       for (const bucket of BUCKETS) {
         const hit = await sizeInBucket(sb, bucket, ref.key)
-        if (hit.found && hit.bytes !== null) return { ok: true, bytes: hit.bytes, via: `storage:${bucket}` }
+        if (hit.found && hit.bytes !== null)
+          return { ok: true, bytes: hit.bytes, via: `storage:${bucket}` }
         if (!hit.found && hit.error) errors.push(`${bucket}: ${hit.error}`)
       }
       return errors.length
@@ -166,12 +167,20 @@ async function resolve1(
     }
 
     case 'unknown':
-      return { ok: false, reason: 'unresolvable', detail: `unrecognised path ${JSON.stringify(ref.raw)}` }
+      return {
+        ok: false,
+        reason: 'unresolvable',
+        detail: `unrecognised path ${JSON.stringify(ref.raw)}`,
+      }
   }
 }
 
 /** Bounded fan-out. The hosts are third parties; do not hammer them. */
-async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, i: number) => Promise<R>): Promise<R[]> {
+async function mapLimit<T, R>(
+  items: T[],
+  limit: number,
+  fn: (item: T, i: number) => Promise<R>
+): Promise<R[]> {
   const out = new Array<R>(items.length)
   let next = 0
   await Promise.all(
@@ -191,7 +200,10 @@ function fmt(bytes: number): string {
   const units = ['KB', 'MB', 'GB']
   let v = bytes / 1024
   let u = 0
-  while (v >= 1024 && u < units.length - 1) { v /= 1024; u++ }
+  while (v >= 1024 && u < units.length - 1) {
+    v /= 1024
+    u++
+  }
   return `${v < 10 ? v.toFixed(1) : Math.round(v)} ${units[u]}`
 }
 
@@ -222,7 +234,9 @@ async function main(): Promise<void> {
     orderBy: { createdAt: 'asc' },
   })
 
-  console.log(`[backfill] ${rows.length} media rows with bytes = 0${apply ? '' : '  (DRY RUN — pass --apply to write)'}`)
+  console.log(
+    `[backfill] ${rows.length} media rows with bytes = 0${apply ? '' : '  (DRY RUN — pass --apply to write)'}`
+  )
   if (rows.length === 0) return
 
   // One request per distinct path, not per row.
@@ -233,7 +247,9 @@ async function main(): Promise<void> {
     else byPath.set(r.storagePath, [r])
   }
   const paths = [...byPath.keys()].slice(0, limit === Infinity ? undefined : limit)
-  console.log(`[backfill] ${paths.length} distinct storage paths to resolve, concurrency ${concurrency}`)
+  console.log(
+    `[backfill] ${paths.length} distinct storage paths to resolve, concurrency ${concurrency}`
+  )
 
   const shapes = new Map<string, number>()
   for (const p of paths) {
@@ -248,7 +264,11 @@ async function main(): Promise<void> {
     done++
     if (done % 10 === 0) console.log(`[backfill] resolved ${done}/${paths.length}…`)
     if (verbose) {
-      console.log(res.ok ? `  ok   ${fmt(res.bytes).padStart(9)}  ${path}` : `  FAIL ${res.reason.padEnd(12)} ${path}`)
+      console.log(
+        res.ok
+          ? `  ok   ${fmt(res.bytes).padStart(9)}  ${path}`
+          : `  FAIL ${res.reason.padEnd(12)} ${path}`
+      )
     }
     return { path, res }
   })
@@ -292,9 +312,13 @@ async function main(): Promise<void> {
   console.log(`  rows with bytes = 0          ${rows.length}`)
   console.log(`  distinct paths attempted     ${paths.length}`)
   console.log(`  paths resolved               ${pathsResolved}`)
-  console.log(`  rows ${apply ? 'updated                 ' : 'that would be updated   '} ${rowsUpdated}`)
+  console.log(
+    `  rows ${apply ? 'updated                 ' : 'that would be updated   '} ${rowsUpdated}`
+  )
   console.log(`  total size now recorded      ${fmt(bytesRecorded)}`)
-  console.log(`  paths unresolved             ${failures.length} (${rows.length - rowsUpdated} rows left at 0)`)
+  console.log(
+    `  paths unresolved             ${failures.length} (${rows.length - rowsUpdated} rows left at 0)`
+  )
   for (const [reason, n] of byReason) {
     console.log(`    ${reason.padEnd(14)} ${n.paths} paths / ${n.rows} rows`)
   }
@@ -307,14 +331,19 @@ async function main(): Promise<void> {
     for (const reason of order) {
       const group = failures.filter((f) => f.f.reason === reason)
       if (!group.length) continue
-      console.log(`\n  ${reason.toUpperCase()} — ${group.length} paths / ${group.reduce((a, b) => a + b.rows, 0)} rows`)
+      console.log(
+        `\n  ${reason.toUpperCase()} — ${group.length} paths / ${group.reduce((a, b) => a + b.rows, 0)} rows`
+      )
       for (const g of group) {
         console.log(`    ${String(g.rows).padStart(3)} row(s)  ${g.f.detail}`)
         console.log(`             ${g.path}`)
         for (const r of byPath.get(g.path)!.slice(0, 3)) {
-          console.log(`             · ${r.id}  ${r.originalFilename}${r.deletedAt ? '  [in trash]' : ''}`)
+          console.log(
+            `             · ${r.id}  ${r.originalFilename}${r.deletedAt ? '  [in trash]' : ''}`
+          )
         }
-        if (byPath.get(g.path)!.length > 3) console.log(`             · …and ${byPath.get(g.path)!.length - 3} more`)
+        if (byPath.get(g.path)!.length > 3)
+          console.log(`             · …and ${byPath.get(g.path)!.length - 3} more`)
       }
     }
   }

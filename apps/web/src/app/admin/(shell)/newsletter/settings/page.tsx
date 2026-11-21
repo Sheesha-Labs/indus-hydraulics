@@ -15,16 +15,31 @@ export const metadata: Metadata = { title: 'Newsletter sender — Indus Admin' }
 export const dynamic = 'force-dynamic'
 
 const STATUS_COPY = {
-  verified: { tone: 'success', text: `${MARKETING_DOMAIN} is verified in Resend — newsletters can send from it.` },
-  pending: { tone: 'warning', text: `${MARKETING_DOMAIN} is waiting for its DNS records to verify in Resend. Sends will fail until it does.` },
-  failed: { tone: 'danger', text: `${MARKETING_DOMAIN} failed verification in Resend. Check its DNS records before sending.` },
-  not_found: { tone: 'danger', text: `${MARKETING_DOMAIN} is not set up in Resend. Newsletters cannot send until it is added and verified.` },
+  verified: {
+    tone: 'success',
+    text: `${MARKETING_DOMAIN} is verified in Resend — newsletters can send from it.`,
+  },
+  pending: {
+    tone: 'warning',
+    text: `${MARKETING_DOMAIN} is waiting for its DNS records to verify in Resend. Sends will fail until it does.`,
+  },
+  failed: {
+    tone: 'danger',
+    text: `${MARKETING_DOMAIN} failed verification in Resend. Check its DNS records before sending.`,
+  },
+  not_found: {
+    tone: 'danger',
+    text: `${MARKETING_DOMAIN} is not set up in Resend. Newsletters cannot send until it is added and verified.`,
+  },
   unknown: { tone: 'neutral', text: `Could not check ${MARKETING_DOMAIN} with Resend from here.` },
 } as const
 
 export default async function NewsletterSettingsPage() {
   await requireStaffRole(ROLES.NEWSLETTER_SEND)
-  const [settings, domain] = await Promise.all([loadSenderSettings(), sendingDomainStatus(MARKETING_DOMAIN)])
+  const [settings, domain] = await Promise.all([
+    loadSenderSettings(),
+    sendingDomainStatus(MARKETING_DOMAIN),
+  ])
   const status = STATUS_COPY[domain]
 
   return (
@@ -34,17 +49,42 @@ export default async function NewsletterSettingsPage() {
         <Callout tone={status.tone}>{status.text}</Callout>
         <Panel>
           <ActionForm action={saveSenderSettingsAction} submitLabel="Save sender" kind="primary">
-            <Field label="From name" hint="What inboxes show as the sender." className="min-w-[240px]">
+            <Field
+              label="From name"
+              hint="What inboxes show as the sender."
+              className="min-w-[240px]"
+            >
               <Input name="fromName" required maxLength={80} defaultValue={settings.fromName} />
             </Field>
-            <Field label="From address" hint={`Always on ${MARKETING_DOMAIN}, never the domain quotes are sent from.`} className="min-w-[320px]">
+            <Field
+              label="From address"
+              hint={`Always on ${MARKETING_DOMAIN}, never the domain quotes are sent from.`}
+              className="min-w-[320px]"
+            >
               <div className="flex items-center gap-1.5">
-                <Input name="fromLocal" required maxLength={64} defaultValue={settings.fromLocal} className="w-40" aria-label="From address, before the @" />
-                <span className="tabular-nums text-[13px] text-ih-muted">@{MARKETING_DOMAIN}</span>
+                <Input
+                  name="fromLocal"
+                  required
+                  maxLength={64}
+                  defaultValue={settings.fromLocal}
+                  className="w-40"
+                  aria-label="From address, before the @"
+                />
+                <span className="text-ih-muted text-[13px] tabular-nums">@{MARKETING_DOMAIN}</span>
               </div>
             </Field>
-            <Field label="Reply-To" hint="Replies to a newsletter land here — a real, watched inbox." className="min-w-[280px]">
-              <Input name="replyTo" type="email" required maxLength={254} defaultValue={settings.replyTo} />
+            <Field
+              label="Reply-To"
+              hint="Replies to a newsletter land here — a real, watched inbox."
+              className="min-w-[280px]"
+            >
+              <Input
+                name="replyTo"
+                type="email"
+                required
+                maxLength={254}
+                defaultValue={settings.replyTo}
+              />
             </Field>
           </ActionForm>
         </Panel>

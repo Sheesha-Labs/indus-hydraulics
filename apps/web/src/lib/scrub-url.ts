@@ -18,7 +18,10 @@ const SENSITIVE_PARAMS = ['token', 'preview'] as const
  * removed. Retains the other parameters — `q`, `page`, `sort` and the utm_*
  * family are the ones analytics actually exists to measure.
  */
-export function scrubUrl(pathname: string, searchParams: URLSearchParams | null | undefined): string {
+export function scrubUrl(
+  pathname: string,
+  searchParams: URLSearchParams | null | undefined
+): string {
   if (!searchParams) return pathname
 
   const cleaned = new URLSearchParams(searchParams)

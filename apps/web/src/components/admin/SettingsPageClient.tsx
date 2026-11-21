@@ -34,10 +34,26 @@ const TABS = [
 const INCOTERMS = ['EXW', 'FCA', 'CPT', 'CIP', 'DAP', 'DPU', 'DDP', 'FOB', 'CFR', 'CIF']
 
 const EMAIL_KINDS = [
-  { kind: 'rfq_ack', label: 'RFQ Acknowledgement', description: 'Sent to customer when RFQ is submitted' },
-  { kind: 'quote_sent', label: 'Quote Ready', description: 'Sent to customer when quote is issued' },
-  { kind: 'password_reset', label: 'Password Reset', description: 'Sent when customer requests a password reset' },
-  { kind: 'order_shipped', label: 'Order Shipped', description: 'Sent to customer when order is shipped' },
+  {
+    kind: 'rfq_ack',
+    label: 'RFQ Acknowledgement',
+    description: 'Sent to customer when RFQ is submitted',
+  },
+  {
+    kind: 'quote_sent',
+    label: 'Quote Ready',
+    description: 'Sent to customer when quote is issued',
+  },
+  {
+    kind: 'password_reset',
+    label: 'Password Reset',
+    description: 'Sent when customer requests a password reset',
+  },
+  {
+    kind: 'order_shipped',
+    label: 'Order Shipped',
+    description: 'Sent to customer when order is shipped',
+  },
 ]
 
 export default function SettingsPageClient({
@@ -84,15 +100,15 @@ export default function SettingsPageClient({
   return (
     <>
       {/* Tabs */}
-      <div className="flex border-b border-ih-border mb-6">
+      <div className="border-ih-border mb-6 flex border-b">
         {TABS.map((tab) => (
           <Link
             key={tab.id}
             href={`?tab=${tab.id}`}
-            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px transition-colors ${
+            className={`-mb-px border-b-2 px-4 py-2.5 text-[12px] tabular-nums transition-colors ${
               activeTab === tab.id
                 ? 'border-ih-accent text-ih-ink'
-                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+                : 'text-ih-muted hover:text-ih-ink-2 border-transparent'
             }`}
           >
             {tab.label}
@@ -102,9 +118,12 @@ export default function SettingsPageClient({
 
       {/* Store Settings */}
       {activeTab === 'store' && (
-        <form action={handleStoreSettings} className="max-w-[560px] flex flex-col gap-5">
+        <form action={handleStoreSettings} className="flex max-w-[560px] flex-col gap-5">
           <div>
-            <label htmlFor="settings-name" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-name"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Store Name
             </label>
             <Input
@@ -112,11 +131,15 @@ export default function SettingsPageClient({
               name="name"
               type="text"
               required
-              defaultValue={storeSettings?.name ?? 'Indus Hydraulics'} />
+              defaultValue={storeSettings?.name ?? 'Indus Hydraulics'}
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-supportEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-supportEmail"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Support Email
             </label>
             <Input
@@ -124,32 +147,43 @@ export default function SettingsPageClient({
               name="supportEmail"
               type="email"
               defaultValue={storeSettings?.supportEmail ?? ''}
-              placeholder="support@indushydraulics.me" />
+              placeholder="support@indushydraulics.me"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-defaultIncoterm" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-defaultIncoterm"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Default Incoterm
             </label>
             <Select
               id="settings-defaultIncoterm"
               name="defaultIncoterm"
-              defaultValue={storeSettings?.defaultIncoterm ?? ''}>
+              defaultValue={storeSettings?.defaultIncoterm ?? ''}
+            >
               <option value="">— None —</option>
               {INCOTERMS.map((term) => (
-                <option key={term} value={term}>{term}</option>
+                <option key={term} value={term}>
+                  {term}
+                </option>
               ))}
             </Select>
           </div>
 
           <div>
-            <label htmlFor="settings-defaultPaymentTerms" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-defaultPaymentTerms"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Default Payment Terms (days)
             </label>
             <Select
               id="settings-defaultPaymentTerms"
               name="defaultPaymentTerms"
-              defaultValue={storeSettings?.defaultPaymentTerms ?? 30}>
+              defaultValue={storeSettings?.defaultPaymentTerms ?? 30}
+            >
               {[0, 7, 14, 30, 45, 60, 90].map((days) => (
                 <option key={days} value={days}>
                   {days === 0 ? 'Prepayment' : `Net ${days}`}
@@ -158,17 +192,21 @@ export default function SettingsPageClient({
             </Select>
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Brand identity
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
-              Rendered in the storefront footer brand block. The store name above is reused as the brand name.
+            <p className="text-ih-muted mb-4 text-[12px]">
+              Rendered in the storefront footer brand block. The store name above is reused as the
+              brand name.
             </p>
           </div>
 
           <div>
-            <label htmlFor="settings-tagline" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-tagline"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Tagline
             </label>
             <Textarea
@@ -177,11 +215,16 @@ export default function SettingsPageClient({
               rows={2}
               maxLength={280}
               defaultValue={storeSettings?.tagline ?? ''}
-              placeholder="UAE's trusted distributor of industrial hydraulic components since 2003." className="resize-none" />
+              placeholder="UAE's trusted distributor of industrial hydraulic components since 2003."
+              className="resize-none"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-certificationLine" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-certificationLine"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Certification line
             </label>
             <Input
@@ -190,20 +233,24 @@ export default function SettingsPageClient({
               type="text"
               maxLength={120}
               defaultValue={storeSettings?.certificationLine ?? ''}
-              placeholder="ISO 9001:2015 Certified" />
+              placeholder="ISO 9001:2015 Certified"
+            />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Public contact info
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
+            <p className="text-ih-muted mb-4 text-[12px]">
               Rendered in the storefront header topbar (phone + hours) and footer contact block.
             </p>
           </div>
 
           <div>
-            <label htmlFor="settings-contactLocationLabel" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-contactLocationLabel"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Location label
             </label>
             <Input
@@ -212,11 +259,15 @@ export default function SettingsPageClient({
               type="text"
               maxLength={80}
               defaultValue={storeSettings?.contactLocationLabel ?? ''}
-              placeholder="Dubai HQ" />
+              placeholder="Dubai HQ"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-contactPhone" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-contactPhone"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Phone
             </label>
             <Input
@@ -225,11 +276,15 @@ export default function SettingsPageClient({
               type="text"
               maxLength={40}
               defaultValue={storeSettings?.contactPhone ?? ''}
-              placeholder="+971 4 XXX XXXX" />
+              placeholder="+971 4 XXX XXXX"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-contactEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-contactEmail"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Public email
             </label>
             <Input
@@ -237,11 +292,15 @@ export default function SettingsPageClient({
               name="contactEmail"
               type="email"
               defaultValue={storeSettings?.contactEmail ?? ''}
-              placeholder="sales@indushydraulics.me" />
+              placeholder="sales@indushydraulics.me"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-contactHours" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-contactHours"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Hours
             </label>
             <Input
@@ -250,20 +309,25 @@ export default function SettingsPageClient({
               type="text"
               maxLength={120}
               defaultValue={storeSettings?.contactHours ?? ''}
-              placeholder="Mon–Sat 09:00–18:00 GST" />
+              placeholder="Mon–Sat 09:00–18:00 GST"
+            />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Legal entity
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
-              Rendered on every quote PDF and transactional email footer. UAE ship-tos auto-apply 5% VAT; non-UAE ship-tos are zero-rated as exports (TRN still shown).
+            <p className="text-ih-muted mb-4 text-[12px]">
+              Rendered on every quote PDF and transactional email footer. UAE ship-tos auto-apply 5%
+              VAT; non-UAE ship-tos are zero-rated as exports (TRN still shown).
             </p>
           </div>
 
           <div>
-            <label htmlFor="settings-legalName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-legalName"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Legal name
             </label>
             <Input
@@ -272,11 +336,15 @@ export default function SettingsPageClient({
               type="text"
               maxLength={160}
               defaultValue={storeSettings?.legalName ?? ''}
-              placeholder="Indus Hydraulic Power Trading LLC" />
+              placeholder="Indus Hydraulic Power Trading LLC"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-vatTrn" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-vatTrn"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               VAT / TRN number
             </label>
             <Input
@@ -285,24 +353,37 @@ export default function SettingsPageClient({
               type="text"
               maxLength={40}
               defaultValue={storeSettings?.vatTrn ?? ''}
-              placeholder="100548997400003" />
+              placeholder="100548997400003"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-registeredAddressLines" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-registeredAddressLines"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Registered address (one line per line)
             </label>
             <Textarea
               id="settings-registeredAddressLines"
               name="registeredAddressLines"
               rows={4}
-              defaultValue={((storeSettings?.registeredAddressLines as string[] | null) ?? []).join('\n')}
-              placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'} className="resize-none tabular-nums" />
+              defaultValue={((storeSettings?.registeredAddressLines as string[] | null) ?? []).join(
+                '\n'
+              )}
+              placeholder={
+                'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'
+              }
+              className="resize-none tabular-nums"
+            />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-registeredCountryCode" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-registeredCountryCode"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Country (ISO-2)
               </label>
               <Input
@@ -311,10 +392,15 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={2}
                 defaultValue={storeSettings?.registeredCountryCode ?? 'AE'}
-                placeholder="AE" className="uppercase" />
+                placeholder="AE"
+                className="uppercase"
+              />
             </div>
             <div>
-              <label htmlFor="settings-defaultVatRatePct" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-defaultVatRatePct"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Default VAT rate (%)
               </label>
               <Input
@@ -324,22 +410,26 @@ export default function SettingsPageClient({
                 step="0.01"
                 min="0"
                 max="100"
-                defaultValue={storeSettings?.defaultVatRatePct?.toString() ?? '5.00'} />
+                defaultValue={storeSettings?.defaultVatRatePct?.toString() ?? '5.00'}
+              />
             </div>
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Quote signature block
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
+            <p className="text-ih-muted mb-4 text-[12px]">
               Appears at the bottom of every outgoing quote PDF and email.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-signatureName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-signatureName"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Name
               </label>
               <Input
@@ -348,10 +438,14 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.signatureName ?? ''}
-                placeholder="Krishan Bhatia" />
+                placeholder="Krishan Bhatia"
+              />
             </div>
             <div>
-              <label htmlFor="settings-signatureTitle" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-signatureTitle"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Title
               </label>
               <Input
@@ -360,13 +454,17 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.signatureTitle ?? ''}
-                placeholder="Managing Director" />
+                placeholder="Managing Director"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-signaturePhone" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-signaturePhone"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Phone
               </label>
               <Input
@@ -375,10 +473,14 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.signaturePhone ?? ''}
-                placeholder="+971 52 2477942" />
+                placeholder="+971 52 2477942"
+              />
             </div>
             <div>
-              <label htmlFor="settings-signatureEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-signatureEmail"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Email
               </label>
               <Input
@@ -386,22 +488,27 @@ export default function SettingsPageClient({
                 name="signatureEmail"
                 type="email"
                 defaultValue={storeSettings?.signatureEmail ?? ''}
-                placeholder="sales@indushydraulics.me" />
+                placeholder="sales@indushydraulics.me"
+              />
             </div>
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Outbound email
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
-              All transactional email is sent from one shared address. Replies route here too. New-RFQ alerts fan out to the internal recipient list.
+            <p className="text-ih-muted mb-4 text-[12px]">
+              All transactional email is sent from one shared address. Replies route here too.
+              New-RFQ alerts fan out to the internal recipient list.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-quoteFromEmail" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-quoteFromEmail"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 From / Reply-To address
               </label>
               <Input
@@ -409,10 +516,14 @@ export default function SettingsPageClient({
                 name="quoteFromEmail"
                 type="email"
                 defaultValue={storeSettings?.quoteFromEmail ?? ''}
-                placeholder="sales@indushydraulics.me" />
+                placeholder="sales@indushydraulics.me"
+              />
             </div>
             <div>
-              <label htmlFor="settings-quoteFromName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-quoteFromName"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Sender display name
               </label>
               <Input
@@ -421,33 +532,44 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.quoteFromName ?? ''}
-                placeholder="Indus Hydraulics Sales" />
+                placeholder="Indus Hydraulics Sales"
+              />
             </div>
           </div>
 
           <div>
-            <label htmlFor="settings-internalAlertEmails" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-internalAlertEmails"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Internal new-RFQ alert recipients (one email per line)
             </label>
             <Textarea
               id="settings-internalAlertEmails"
               name="internalAlertEmails"
               rows={3}
-              defaultValue={((storeSettings?.internalAlertEmails as string[] | null) ?? []).join('\n')}
-              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'} className="resize-none tabular-nums" />
+              defaultValue={((storeSettings?.internalAlertEmails as string[] | null) ?? []).join(
+                '\n'
+              )}
+              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'}
+              className="resize-none tabular-nums"
+            />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Quote defaults
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
+            <p className="text-ih-muted mb-4 text-[12px]">
               Defaults pre-filled on every new quote. Engineers can override per quote.
             </p>
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteValidityDays" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-defaultQuoteValidityDays"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Validity (days)
             </label>
             <Input
@@ -456,11 +578,16 @@ export default function SettingsPageClient({
               type="number"
               min="1"
               max="365"
-              defaultValue={storeSettings?.defaultQuoteValidityDays ?? 30} className="w-32" />
+              defaultValue={storeSettings?.defaultQuoteValidityDays ?? 30}
+              className="w-32"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteNotes" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-defaultQuoteNotes"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Default Notes (optional)
             </label>
             <Textarea
@@ -468,11 +595,16 @@ export default function SettingsPageClient({
               name="defaultQuoteNotes"
               rows={3}
               defaultValue={storeSettings?.defaultQuoteNotes ?? ''}
-              placeholder="Any standing notes that should appear on every quote." className="resize-none" />
+              placeholder="Any standing notes that should appear on every quote."
+              className="resize-none"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteTerms" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-defaultQuoteTerms"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Default Terms &amp; Conditions
             </label>
             <Textarea
@@ -480,11 +612,18 @@ export default function SettingsPageClient({
               name="defaultQuoteTerms"
               rows={4}
               defaultValue={storeSettings?.defaultQuoteTerms ?? ''}
-              placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'} className="resize-none tabular-nums" />
+              placeholder={
+                'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'
+              }
+              className="resize-none tabular-nums"
+            />
           </div>
 
           <div>
-            <label htmlFor="settings-defaultQuoteDisclaimer" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="settings-defaultQuoteDisclaimer"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Default Disclaimer
             </label>
             <Textarea
@@ -492,21 +631,27 @@ export default function SettingsPageClient({
               name="defaultQuoteDisclaimer"
               rows={3}
               defaultValue={storeSettings?.defaultQuoteDisclaimer ?? ''}
-              placeholder="Once the order is confirmed and processed, the same cannot be changed or cancelled. Material will be supplied as per the offer quoted." className="resize-none" />
+              placeholder="Once the order is confirmed and processed, the same cannot be changed or cancelled. Material will be supplied as per the offer quoted."
+              className="resize-none"
+            />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-ih-border">
-            <h3 className="tabular-nums text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
+          <div className="border-ih-border mt-4 border-t pt-4">
+            <h3 className="text-ih-muted mb-3 text-[11px] tracking-[0.12em] uppercase tabular-nums">
               Bank details (PDF footer)
             </h3>
-            <p className="text-[12px] text-ih-muted mb-4">
-              Rendered on page 2 of every quote PDF below the signature block. All fields optional — leave blank to hide the bank-details section entirely.
+            <p className="text-ih-muted mb-4 text-[12px]">
+              Rendered on page 2 of every quote PDF below the signature block. All fields optional —
+              leave blank to hide the bank-details section entirely.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-bankAccountName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-bankAccountName"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Account name
               </label>
               <Input
@@ -515,10 +660,14 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.bankAccountName ?? ''}
-                placeholder="Indus Hydraulic Power Trading LLC" />
+                placeholder="Indus Hydraulic Power Trading LLC"
+              />
             </div>
             <div>
-              <label htmlFor="settings-bankName" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-bankName"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Bank name
               </label>
               <Input
@@ -527,13 +676,17 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.bankName ?? ''}
-                placeholder="Mashreq Bank" />
+                placeholder="Mashreq Bank"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-bankBranch" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-bankBranch"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Branch
               </label>
               <Input
@@ -542,10 +695,14 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.bankBranch ?? ''}
-                placeholder="Al Quasis Branch, Dubai" />
+                placeholder="Al Quasis Branch, Dubai"
+              />
             </div>
             <div>
-              <label htmlFor="settings-bankAccountNo" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-bankAccountNo"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 Account number
               </label>
               <Input
@@ -554,13 +711,18 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.bankAccountNo ?? ''}
-                placeholder="012345678901" className="tabular-nums" />
+                placeholder="012345678901"
+                className="tabular-nums"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label htmlFor="settings-bankIban" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-bankIban"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 IBAN
               </label>
               <Input
@@ -569,10 +731,15 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.bankIban ?? ''}
-                placeholder="AE07 0331 2345 6789 0123 456" className="tabular-nums" />
+                placeholder="AE07 0331 2345 6789 0123 456"
+                className="tabular-nums"
+              />
             </div>
             <div>
-              <label htmlFor="settings-bankSwift" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label
+                htmlFor="settings-bankSwift"
+                className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+              >
                 SWIFT / BIC
               </label>
               <Input
@@ -581,7 +748,9 @@ export default function SettingsPageClient({
                 type="text"
                 maxLength={20}
                 defaultValue={storeSettings?.bankSwift ?? ''}
-                placeholder="BOMLAEAD" className="tabular-nums" />
+                placeholder="BOMLAEAD"
+                className="tabular-nums"
+              />
             </div>
           </div>
 
@@ -589,15 +758,17 @@ export default function SettingsPageClient({
             <button
               type="submit"
               disabled={isPending}
-              className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+              className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-5 text-[12px] tabular-nums disabled:opacity-50"
             >
               {isPending ? 'Saving…' : 'Save Settings'}
             </button>
             {saved === 'store' && (
-              <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
+              <span className="text-ih-success text-[11px] tabular-nums">Saved ✓</span>
             )}
             {error && activeTab === 'store' && (
-              <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">{error}</span>
+              <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
+                {error}
+              </span>
             )}
           </div>
         </form>
@@ -620,21 +791,21 @@ export default function SettingsPageClient({
       {activeTab === 'emails' && (
         <div className="grid grid-cols-[240px_1fr] gap-6">
           {/* Template list */}
-          <div className="rounded-lg border border-ih-border overflow-hidden h-fit">
+          <div className="border-ih-border h-fit overflow-hidden rounded-lg border">
             {EMAIL_KINDS.map((ek) => (
               <button
                 key={ek.kind}
                 onClick={() => setSelectedEmail(ek.kind)}
-                className={`w-full text-left px-4 py-3 border-b border-ih-border last:border-0 transition-colors ${
+                className={`border-ih-border w-full border-b px-4 py-3 text-left transition-colors last:border-0 ${
                   selectedEmail === ek.kind
-                    ? 'bg-ih-surface-2 border-l-2 border-l-ih-accent'
+                    ? 'bg-ih-surface-2 border-l-ih-accent border-l-2'
                     : 'hover:bg-ih-surface-2'
                 }`}
               >
-                <div className="text-[13px] font-medium text-ih-ink mb-0.5">{ek.label}</div>
-                <div className="tabular-nums text-[11px] text-ih-muted">{ek.description}</div>
+                <div className="text-ih-ink mb-0.5 text-[13px] font-medium">{ek.label}</div>
+                <div className="text-ih-muted text-[11px] tabular-nums">{ek.description}</div>
                 {templateMap[ek.kind] && (
-                  <div className="mt-1 tabular-nums text-[10.5px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success inline-block">
+                  <div className="bg-ih-success-soft text-ih-success mt-1 inline-block px-1.5 py-0.5 text-[10.5px] tabular-nums">
                     configured
                   </div>
                 )}
@@ -647,18 +818,25 @@ export default function SettingsPageClient({
             {(() => {
               const meta = EMAIL_KINDS.find((e) => e.kind === selectedEmail)!
               return (
-                <form action={handleEmailTemplate} key={selectedEmail} className="flex flex-col gap-4">
+                <form
+                  action={handleEmailTemplate}
+                  key={selectedEmail}
+                  className="flex flex-col gap-4"
+                >
                   <input type="hidden" name="kind" value={selectedEmail} />
 
                   <div>
                     <div className="mb-3">
                       <h2 className="text-[15px] font-medium">{meta.label}</h2>
-                      <p className="text-[12px] text-ih-muted">{meta.description}</p>
+                      <p className="text-ih-muted text-[12px]">{meta.description}</p>
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="settings-subject" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+                    <label
+                      htmlFor="settings-subject"
+                      className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+                    >
                       Subject Line
                     </label>
                     <Input
@@ -667,15 +845,19 @@ export default function SettingsPageClient({
                       type="text"
                       required
                       defaultValue={currentTemplate?.subject ?? ''}
-                      placeholder={`Email subject for ${meta.label}`} />
+                      placeholder={`Email subject for ${meta.label}`}
+                    />
                   </div>
 
                   <div>
-                    <label htmlFor="settings-bodyHtml" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+                    <label
+                      htmlFor="settings-bodyHtml"
+                      className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+                    >
                       Body HTML
                     </label>
-                    <div className="rounded-lg border border-ih-border bg-ih-surface p-3 mb-1.5">
-                      <p className="tabular-nums text-[11px] text-ih-muted">
+                    <div className="border-ih-border bg-ih-surface mb-1.5 rounded-lg border p-3">
+                      <p className="text-ih-muted text-[11px] tabular-nums">
                         Available variables:{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{name}}'}</code>{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{rfqCode}}'}</code>{' '}
@@ -687,22 +869,26 @@ export default function SettingsPageClient({
                       name="bodyHtml"
                       rows={16}
                       required
-                      defaultValue={currentTemplate?.bodyHtml ?? ''} className="tabular-nums text-[12px] resize-none" />
+                      defaultValue={currentTemplate?.bodyHtml ?? ''}
+                      className="resize-none text-[12px] tabular-nums"
+                    />
                   </div>
 
                   <div className="flex items-center gap-3">
                     <button
                       type="submit"
                       disabled={isPending}
-                      className="h-9 px-5 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
+                      className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-5 text-[12px] tabular-nums disabled:opacity-50"
                     >
                       {isPending ? 'Saving…' : 'Save Template'}
                     </button>
                     {saved === selectedEmail && (
-                      <span className="tabular-nums text-[11px] text-ih-success">Saved ✓</span>
+                      <span className="text-ih-success text-[11px] tabular-nums">Saved ✓</span>
                     )}
                     {error && activeTab === 'emails' && (
-                      <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">{error}</span>
+                      <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
+                        {error}
+                      </span>
                     )}
                   </div>
                 </form>
