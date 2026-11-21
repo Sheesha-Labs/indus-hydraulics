@@ -1,0 +1,4 @@
+[test]
+# Shared by the root run (`bun run test`) and every package. The preload stands
+# in for `server-only`, which throws outside a React Server Component.
+preload = ["./apps/web/src/test/bun-preload.ts"]

@@ -1,0 +1,5 @@
+[test]
+# `bun test` from apps/web: only the co-located unit tests under src/.
+# Playwright specs in tests/e2e run under `playwright test`, never here.
+root = "src"
+preload = ["./src/test/bun-preload.ts"]

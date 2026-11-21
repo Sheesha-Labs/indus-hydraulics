@@ -16,7 +16,7 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 | ORM | Prisma |
 | Auth | NextAuth v5 (Auth.js) |
 | Monorepo | Bun workspaces (pinned canary in `package.json` `packageManager`). Bun installs and runs every script. |
-| Testing | Vitest (unit) + Playwright (e2e) |
+| Testing | `bun test` (unit; test files import from `vitest`, which bun test provides) + Playwright (e2e) |
 
 > **English-only.** This codebase shipped with full English/Arabic next-intl support but Arabic is no longer a product requirement. Routes live at `/`, not `[locale]/`. Strings are inlined as English literals in components — there is no `next-intl`, no `@indus/i18n` package, no message files. If you reintroduce locale routing later, do it as a deliberate new project; do not retrofit it on top of inline strings.
 

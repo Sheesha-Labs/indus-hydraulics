@@ -33,14 +33,16 @@
         "../../packages/domain/src/index.ts"
       ]
     },
-    "incremental": true
+    "incremental": true,
+    "types": ["node", "bun"]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    ".next/dev/types/**/*.ts",
+    "../../types/vitest.d.ts"
   ],
   "exclude": [
     "node_modules"

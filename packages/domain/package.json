@@ -6,13 +6,13 @@
   "types": "./src/index.ts",
   "scripts": {
     "typecheck": "bun check --no-script",
-    "test": "vitest run"
+    "test": "bun test --parallel --isolate=modules --randomize"
   },
   "dependencies": {
     "zod": "^4.4.1"
   },
   "devDependencies": {
     "typescript": "^5.8.3",
-    "vitest": "^3.2.2"
+    "@types/node": "^20"
   }
 }

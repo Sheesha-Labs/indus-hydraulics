@@ -14,7 +14,7 @@ import { marketBySlug, releasedMarketPage, releasedMarketPageSlugs } from '@indu
  * colours — so the literals are checked against globals.css here.
  */
 describe('baked colours match the design tokens', () => {
-  const css = readFileSync(join(process.cwd(), 'src/app/globals.css'), 'utf8')
+  const css = readFileSync(join(import.meta.dirname, '../app/globals.css'), 'utf8')
 
   function tokenValue(name: string): string | null {
     const m = css.match(new RegExp(`^\\s*--${name}:\\s*([^;]+);`, 'm'))

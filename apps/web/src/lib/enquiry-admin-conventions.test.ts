@@ -11,9 +11,13 @@ import { describe, expect, it } from 'vitest'
  * other test — which is exactly why they need a scan.
  */
 
+// apps/web, resolved from this file so the scan does not depend on the
+// directory the test runner was started in.
+const WEB = path.resolve(import.meta.dirname, '../..')
+
 const ROOTS = [
-  path.join(process.cwd(), 'src/app/admin/(shell)/enquiries'),
-  path.join(process.cwd(), 'src/app/admin/(shell)/suppliers'),
+  path.join(WEB, 'src/app/admin/(shell)/enquiries'),
+  path.join(WEB, 'src/app/admin/(shell)/suppliers'),
 ]
 
 function walk(dir: string): string[] {
@@ -32,7 +36,7 @@ const FILES = ROOTS.flatMap((r) => {
   } catch {
     return []
   }
-}).map((f) => ({ file: path.relative(process.cwd(), f), src: readFileSync(f, 'utf8') }))
+}).map((f) => ({ file: path.relative(WEB, f), src: readFileSync(f, 'utf8') }))
 
 describe('enquiry admin screens exist', () => {
   it('finds the screens to scan', () => {
