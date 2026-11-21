@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3100",
-    "build": "next build",
+    "build": "bun run --cwd ../../packages/ops-db db:generate && next build",
     "start": "next start --port 3100",
     "typecheck": "bun check --no-script",
     "test": "bun test --parallel --isolate=modules --randomize",

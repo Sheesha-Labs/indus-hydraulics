@@ -42,7 +42,13 @@ generator client {
   // same @prisma/client directory, so two clients generated to the default
   // place overwrite each other. Git-ignored; src/client-path.test.ts pins it.
   output          = "../generated/client"
-  binaryTargets   = ["native", "debian-openssl-3.0.x", "linux-arm64-openssl-3.0.x"]
+  // rhel-openssl-3.0.x is the Vercel Functions runtime (Amazon Linux 2023). It is
+  // listed explicitly: Vercel copies the engine of the DEFAULT @prisma/client
+  // location for the website, but nothing does that for this custom path, and the
+  // first Ops production deploy crashed with "could not locate the Query Engine
+  // for runtime rhel-openssl-3.0.x". apps/ops `build` also runs prisma generate
+  // itself, because Bun may skip postinstall on Vercel.
+  binaryTargets   = ["native", "rhel-openssl-3.0.x", "debian-openssl-3.0.x", "linux-arm64-openssl-3.0.x"]
   previewFeatures = ["views", "fullTextSearchPostgres"]
 }
 
