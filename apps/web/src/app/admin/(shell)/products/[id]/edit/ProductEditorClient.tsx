@@ -4,7 +4,9 @@ import { useEffect, useRef, useState, useTransition } from 'react'
 import { controlClassName, controlHeightClassName, DeleteButton } from '@indus/ui'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
-import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../../components/admin/seo/SeoEntityDrawer'
+import SeoEntityDrawer, {
+  type SeoDrawerEntity,
+} from '../../../../../../components/admin/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
 
 /**
@@ -18,9 +20,9 @@ const RichTextEditor = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="h-[480px] animate-pulse rounded-lg border border-ih-border bg-ih-surface-2" />
+      <div className="border-ih-border bg-ih-surface-2 h-[480px] animate-pulse rounded-lg border" />
     ),
-  },
+  }
 )
 
 /** Matches the `max()` on `descriptionLong` in the server action. */
@@ -48,13 +50,8 @@ import {
   reorderProductFaq,
   deleteProduct,
 } from '../../actions'
-import {
-  setProductSpecTemplate,
-  saveProductSpecValues,
-} from '../../../spec-templates/actions'
-import BlueprintImagePanel, {
-  type BlueprintSuggestionRow,
-} from './BlueprintImagePanel'
+import { setProductSpecTemplate, saveProductSpecValues } from '../../../spec-templates/actions'
+import BlueprintImagePanel, { type BlueprintSuggestionRow } from './BlueprintImagePanel'
 import AdminPageShell from '../../../../../../components/admin/AdminPageShell'
 
 type Product = {
@@ -93,14 +90,7 @@ type Product = {
   ogImageStoragePath: string | null
   sitemapPriority: number | null
   sitemapChangeFreq:
-    | 'always'
-    | 'hourly'
-    | 'daily'
-    | 'weekly'
-    | 'monthly'
-    | 'yearly'
-    | 'never'
-    | null
+    'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | null
   excludeFromSitemap: boolean
   jsonLdOverride: string | null
   publicUrl: string
@@ -262,22 +252,20 @@ export default function ProductEditorClient({
             is null when PREVIEW_TOKEN_SECRET is unset, and rendering nothing
             instead would silently remove the control with no hint as to why.
           */}
-          {savedAt && (
-            <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
-          )}
+          {savedAt && <span className="text-ih-success-ink text-[12px]">Saved at {savedAt}</span>}
           {previewUrl ? (
             <a
               href={previewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-9 items-center rounded-md border border-ih-border px-3 text-[12px] text-ih-muted transition-colors hover:border-ih-accent hover:text-ih-accent"
+              className="border-ih-border text-ih-muted hover:border-ih-accent hover:text-ih-accent inline-flex h-9 items-center rounded-md border px-3 text-[12px] transition-colors"
             >
               Preview ↗
             </a>
           ) : (
             <span
               title="Set PREVIEW_TOKEN_SECRET in admin env to enable preview"
-              className="inline-flex h-9 cursor-not-allowed items-center rounded-md border border-ih-border px-3 text-[12px] text-ih-muted-2"
+              className="border-ih-border text-ih-muted-2 inline-flex h-9 cursor-not-allowed items-center rounded-md border px-3 text-[12px]"
             >
               Preview ↗
             </span>
@@ -286,20 +274,19 @@ export default function ProductEditorClient({
         </>
       }
     >
-
       {contentPanel}
 
       {/* Tabs */}
-      <div className="flex gap-0 border-b border-ih-border mt-5 mb-6 overflow-x-auto">
+      <div className="border-ih-border mt-5 mb-6 flex gap-0 overflow-x-auto border-b">
         {TABS.map((t) => (
           <button
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`px-4 py-2.5 text-[13px] font-medium border-b-2 transition-colors -mb-px whitespace-nowrap ${
+            className={`-mb-px border-b-2 px-4 py-2.5 text-[13px] font-medium whitespace-nowrap transition-colors ${
               tab === t.id
                 ? 'border-ih-accent text-ih-ink'
-                : 'border-transparent text-ih-muted hover:text-ih-ink'
+                : 'text-ih-muted hover:text-ih-ink border-transparent'
             }`}
           >
             {t.label}
@@ -315,7 +302,7 @@ export default function ProductEditorClient({
       {tab === 'specs' && (
         <SpecsTab
           productId={product.id}
-         
+
           specs={specs}
           specTemplate={specTemplate}
           availableTemplates={availableTemplates}
@@ -333,8 +320,12 @@ export default function ProductEditorClient({
           onSaved={bumpSaved}
         />
       )}
-      {tab === 'documents' && <DocumentsTab productId={product.id} documents={documents} onSaved={bumpSaved} />}
-      {tab === 'crossref' && <CrossRefsTab productId={product.id} crossRefs={crossRefs} onSaved={bumpSaved} />}
+      {tab === 'documents' && (
+        <DocumentsTab productId={product.id} documents={documents} onSaved={bumpSaved} />
+      )}
+      {tab === 'crossref' && (
+        <CrossRefsTab productId={product.id} crossRefs={crossRefs} onSaved={bumpSaved} />
+      )}
       {tab === 'faq' && <FaqsTab productId={product.id} faqs={faqs} onSaved={bumpSaved} />}
       {tab === 'seo' && (
         <SeoEntityDrawer
@@ -390,17 +381,29 @@ function CoreTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 rounded-lg border border-ih-border bg-ih-surface p-6 max-w-3xl">
+    <form
+      action={onSubmit}
+      className="border-ih-border bg-ih-surface flex max-w-3xl flex-col gap-5 rounded-lg border p-6"
+    >
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
 
       <div className="grid grid-cols-2 gap-4">
         <Field label="SKU *" error={fieldErrors.sku?.[0]}>
-          <input required name="sku" defaultValue={product.sku} className={inputCls + ' tabular-nums'} />
+          <input
+            required
+            name="sku"
+            defaultValue={product.sku}
+            className={inputCls + ' tabular-nums'}
+          />
         </Field>
         <Field label="MPN">
-          <input name="mpn" defaultValue={product.mpn ?? ''} className={inputCls + ' tabular-nums'} />
+          <input
+            name="mpn"
+            defaultValue={product.mpn ?? ''}
+            className={inputCls + ' tabular-nums'}
+          />
         </Field>
       </div>
 
@@ -412,7 +415,10 @@ function CoreTab({
         <input name="slug" defaultValue={product.slug} className={inputCls + ' tabular-nums'} />
       </Field>
 
-      <Field label="Short description" hint="Used as the bullet-point list under the hero. Each line becomes a key feature.">
+      <Field
+        label="Short description"
+        hint="Used as the bullet-point list under the hero. Each line becomes a key feature."
+      >
         <textarea
           name="descriptionShort"
           defaultValue={product.descriptionShort ?? ''}
@@ -458,13 +464,7 @@ function CoreTab({
 
 // ── Description tab (the product page's long description) ───────────────────
 
-function DescriptionTab({
-  product,
-  onSaved,
-}: {
-  product: Product
-  onSaved: () => void
-}) {
+function DescriptionTab({ product, onSaved }: { product: Product; onSaved: () => void }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const [body, setBody] = useState(product.descriptionLong ?? '')
@@ -483,13 +483,16 @@ function DescriptionTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-4 rounded-lg border border-ih-border bg-ih-surface p-6 max-w-4xl">
+    <form
+      action={onSubmit}
+      className="border-ih-border bg-ih-surface flex max-w-4xl flex-col gap-4 rounded-lg border p-6"
+    >
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
 
       <div className="flex flex-col gap-1.5">
-        <span className="text-[12px] font-medium text-ih-ink-2">Long description</span>
+        <span className="text-ih-ink-2 text-[12px] font-medium">Long description</span>
         <RichTextEditor
           value={body}
           onChange={setBody}
@@ -505,13 +508,7 @@ function DescriptionTab({
 
 // ── Pricing & shipping tab ─────────────────────────────────────────────────
 
-function CommerceTab({
-  product,
-  onSaved,
-}: {
-  product: Product
-  onSaved: () => void
-}) {
+function CommerceTab({ product, onSaved }: { product: Product; onSaved: () => void }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
 
@@ -528,7 +525,10 @@ function CommerceTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 rounded-lg border border-ih-border bg-ih-surface p-6 max-w-3xl">
+    <form
+      action={onSubmit}
+      className="border-ih-border bg-ih-surface flex max-w-3xl flex-col gap-5 rounded-lg border p-6"
+    >
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -558,7 +558,11 @@ function CommerceTab({
             />
           </Field>
           <Field label="Currency">
-            <select name="listPriceCurrency" defaultValue={product.listPriceCurrency} className={selectCls}>
+            <select
+              name="listPriceCurrency"
+              defaultValue={product.listPriceCurrency}
+              className={selectCls}
+            >
               <option value="AED">AED</option>
               <option value="USD">USD</option>
               <option value="SAR">SAR</option>
@@ -566,7 +570,7 @@ function CommerceTab({
             </select>
           </Field>
         </div>
-        <div className="grid grid-cols-3 gap-4 mt-4">
+        <div className="mt-4 grid grid-cols-3 gap-4">
           <Field label="Unit of measure">
             <select name="unitOfMeasure" defaultValue={product.unitOfMeasure} className={selectCls}>
               <option value="each">Each</option>
@@ -575,8 +579,12 @@ function CommerceTab({
               <option value="set">Set</option>
             </select>
           </Field>
-          <div className="col-span-2 text-[11px] text-ih-muted flex items-end pb-2 leading-snug">
-            <p>Compare-at price renders as strike-through MSRP on the storefront when set <i>and</i> strictly greater than List price. Leave blank for no strike-through. Leave List price blank to show &ldquo;Request quote&rdquo; instead of a number.</p>
+          <div className="text-ih-muted col-span-2 flex items-end pb-2 text-[11px] leading-snug">
+            <p>
+              Compare-at price renders as strike-through MSRP on the storefront when set <i>and</i>{' '}
+              strictly greater than List price. Leave blank for no strike-through. Leave List price
+              blank to show &ldquo;Request quote&rdquo; instead of a number.
+            </p>
           </div>
         </div>
       </Section>
@@ -625,7 +633,10 @@ function CommerceTab({
 
       <Section title="Stock">
         <div className="grid grid-cols-2 gap-4">
-          <Field label="Stock quantity" hint="0 means out-of-stock — storefront falls back to lead time">
+          <Field
+            label="Stock quantity"
+            hint="0 means out-of-stock — storefront falls back to lead time"
+          >
             <input
               name="stockQty"
               type="number"
@@ -634,7 +645,10 @@ function CommerceTab({
               className={inputCls + ' tabular-nums'}
             />
           </Field>
-          <Field label="Warehouse label" hint="Free-text shown next to the stock pill (e.g. 'Dubai')">
+          <Field
+            label="Warehouse label"
+            hint="Free-text shown next to the stock pill (e.g. 'Dubai')"
+          >
             <input
               name="stockWarehouse"
               defaultValue={product.stockWarehouse ?? ''}
@@ -713,13 +727,15 @@ function SpecsTab({
   // (Specs whose templateFieldId is null OR points at an old template's field
   // that no longer exists — both surface here so values aren't lost on switch.)
   const currentTemplateFieldIds = new Set(specTemplate?.fields.map((f) => f.id) ?? [])
-  const freeFormSpecs = specs.filter((s) => !s.templateFieldId || !currentTemplateFieldIds.has(s.templateFieldId))
+  const freeFormSpecs = specs.filter(
+    (s) => !s.templateFieldId || !currentTemplateFieldIds.has(s.templateFieldId)
+  )
 
   return (
-    <div className="flex flex-col gap-8 max-w-4xl">
+    <div className="flex max-w-4xl flex-col gap-8">
       <TemplateSelector
         productId={productId}
-       
+
         availableTemplates={availableTemplates}
         currentTemplate={specTemplate}
         onSaved={onSaved}
@@ -728,7 +744,7 @@ function SpecsTab({
       {specTemplate && (
         <TemplateSpecForm
           productId={productId}
-         
+
           template={specTemplate}
           values={templateValueByFieldId}
           onSaved={onSaved}
@@ -737,7 +753,7 @@ function SpecsTab({
 
       <FreeFormSpecsSection
         productId={productId}
-       
+
         specs={freeFormSpecs}
         templateAttached={specTemplate !== null}
         onSaved={onSaved}
@@ -768,7 +784,7 @@ function TemplateSelector({
     if (
       currentTemplate &&
       !confirm(
-        'Switching templates: existing values for fields that don\'t exist in the new template move to "Additional specs". Continue?',
+        'Switching templates: existing values for fields that don\'t exist in the new template move to "Additional specs". Continue?'
       )
     ) {
       return
@@ -785,27 +801,27 @@ function TemplateSelector({
   }
 
   return (
-    <section className="rounded-lg border border-ih-border bg-ih-surface p-5 flex flex-col gap-3">
+    <section className="border-ih-border bg-ih-surface flex flex-col gap-3 rounded-lg border p-5">
       <div className="flex items-center justify-between">
-        <h3 className="text-[14px] font-medium text-ih-ink">Spec template</h3>
+        <h3 className="text-ih-ink text-[14px] font-medium">Spec template</h3>
         {currentTemplate && (
           <a
             href={`/admin/spec-templates/${currentTemplate.id}`}
-            className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
+            className="text-ih-muted hover:text-ih-accent text-[11px] tabular-nums"
           >
             Edit template fields →
           </a>
         )}
       </div>
-      <p className="text-[12px] text-ih-muted -mt-1">
-        Picks the typed schema this product follows. Each field below comes from the template; values
-        are saved into product specs automatically.
+      <p className="text-ih-muted -mt-1 text-[12px]">
+        Picks the typed schema this product follows. Each field below comes from the template;
+        values are saved into product specs automatically.
       </p>
       <div className="flex items-center gap-2">
         <select
           value={draftId}
           onChange={(e) => setDraftId(e.target.value)}
-          className="h-9 px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] flex-1 max-w-[300px]"
+          className="border-ih-border bg-ih-surface h-9 max-w-[300px] flex-1 rounded-lg border px-2 text-[13px]"
         >
           <option value="">— None (free-form specs only) —</option>
           {availableTemplates.map((t) => (
@@ -818,12 +834,12 @@ function TemplateSelector({
           type="button"
           onClick={handleApply}
           disabled={pending || draftId === (currentTemplate?.id ?? '')}
-          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+          className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
         >
           {pending ? 'Switching…' : 'Apply'}
         </button>
         {error && (
-          <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
             {error}
           </span>
         )}
@@ -877,21 +893,19 @@ function TemplateSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="rounded-lg border border-ih-border bg-ih-surface flex flex-col"
+      className="border-ih-border bg-ih-surface flex flex-col rounded-lg border"
     >
       <input type="hidden" name="productId" value={productId} />
 
-      <div className="px-5 py-3 border-b border-ih-border flex items-center justify-between">
-        <h3 className="text-[14px] font-medium text-ih-ink">
-          {template.name} — fields
-        </h3>
-        <span className="tabular-nums text-[11px] text-ih-muted">
+      <div className="border-ih-border flex items-center justify-between border-b px-5 py-3">
+        <h3 className="text-ih-ink text-[14px] font-medium">{template.name} — fields</h3>
+        <span className="text-ih-muted text-[11px] tabular-nums">
           {template.fields.length} field{template.fields.length === 1 ? '' : 's'}
         </span>
       </div>
 
       {template.fields.length === 0 ? (
-        <div className="px-5 py-6 text-[13px] text-ih-muted">
+        <div className="text-ih-muted px-5 py-6 text-[13px]">
           This template has no fields yet.{' '}
           <a
             href={`/admin/spec-templates/${template.id}`}
@@ -902,11 +916,11 @@ function TemplateSpecForm({
         </div>
       ) : (
         Object.entries(grouped).map(([group, fields]) => (
-          <div key={group} className="border-b border-ih-border last:border-b-0">
-            <div className="px-5 py-2.5 bg-ih-bg tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <div key={group} className="border-ih-border border-b last:border-b-0">
+            <div className="bg-ih-bg text-ih-muted px-5 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
               {group}
             </div>
-            <div className="px-5 py-4 grid grid-cols-2 gap-x-5 gap-y-4">
+            <div className="grid grid-cols-2 gap-x-5 gap-y-4 px-5 py-4">
               {fields.map((f) => (
                 <TemplateFieldInput key={f.id} field={f} initialValue={values.get(f.id) ?? ''} />
               ))}
@@ -916,17 +930,17 @@ function TemplateSpecForm({
       )}
 
       {template.fields.length > 0 && (
-        <div className="px-5 py-3 bg-ih-bg flex items-center gap-3 border-t border-ih-border">
+        <div className="bg-ih-bg border-ih-border flex items-center gap-3 border-t px-5 py-3">
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[12px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] font-medium disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save spec values'}
           </button>
-          {saved && <span className="tabular-nums text-[11px] text-ih-success-ink">✓ Saved</span>}
+          {saved && <span className="text-ih-success-ink text-[11px] tabular-nums">✓ Saved</span>}
           {error && (
-            <span className="tabular-nums text-[11px] text-ih-danger-ink" role="alert">
+            <span className="text-ih-danger-ink text-[11px] tabular-nums" role="alert">
               {error}
             </span>
           )}
@@ -994,25 +1008,25 @@ function TemplateFieldInput({
 
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-medium text-ih-ink-2 flex items-center gap-1.5">
+      <span className="text-ih-ink-2 flex items-center gap-1.5 text-[12px] font-medium">
         {field.label}
         {field.unit && (
-          <span className="tabular-nums text-[11px] text-ih-muted">({field.unit})</span>
+          <span className="text-ih-muted text-[11px] tabular-nums">({field.unit})</span>
         )}
         {field.isRequired && <span className="text-ih-danger-ink">*</span>}
         {field.isKeyFeature && (
-          <span className="px-1 tabular-nums text-[10.5px] text-ih-success-ink bg-ih-success-soft rounded-sm">
+          <span className="text-ih-success-ink bg-ih-success-soft rounded-sm px-1 text-[10.5px] tabular-nums">
             KEY
           </span>
         )}
         {field.isQuickSpec && (
-          <span className="px-1 tabular-nums text-[10.5px] text-ih-accent bg-[oklch(0.96_0.05_240)] rounded-sm">
+          <span className="text-ih-accent rounded-sm bg-[oklch(0.96_0.05_240)] px-1 text-[10.5px] tabular-nums">
             QUICK
           </span>
         )}
       </span>
       {control}
-      {field.helpText && <span className="text-[11px] text-ih-muted-2">{field.helpText}</span>}
+      {field.helpText && <span className="text-ih-muted-2 text-[11px]">{field.helpText}</span>}
     </label>
   )
 }
@@ -1039,20 +1053,23 @@ function FreeFormSpecsSection({
   return (
     <section className="flex flex-col gap-4">
       <div>
-        <h3 className="text-[14px] font-medium text-ih-ink mb-1">
+        <h3 className="text-ih-ink mb-1 text-[14px] font-medium">
           {templateAttached ? 'Additional specs' : 'Specs'}
         </h3>
-        <p className="text-[12px] text-ih-muted">
+        <p className="text-ih-muted text-[12px]">
           {templateAttached
-            ? 'Free-form rows that aren\'t in the template above. Useful for one-offs or values orphaned from a previous template switch.'
+            ? "Free-form rows that aren't in the template above. Useful for one-offs or values orphaned from a previous template switch."
             : 'Add typed spec rows. Toggle "Filter" to show a row in the quick-spec table on the product page.'}
         </p>
       </div>
 
       {specs.length > 0 &&
         Object.entries(groups).map(([group, items]) => (
-          <div key={group} className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-            <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg tabular-nums text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+          <div
+            key={group}
+            className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border"
+          >
+            <div className="border-ih-border bg-ih-bg text-ih-muted border-b px-4 py-2.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
               {group}
             </div>
             {items.map((s) => (
@@ -1104,7 +1121,7 @@ function SpecRow({
     return (
       <form
         action={onUpdate}
-        className={`${SPEC_COLS_EDIT} items-end border-t border-ih-border bg-ih-bg px-4 py-2.5`}
+        className={`${SPEC_COLS_EDIT} border-ih-border bg-ih-bg items-end border-t px-4 py-2.5`}
       >
         <input type="hidden" name="id" value={spec.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1112,24 +1129,24 @@ function SpecRow({
           name="group"
           defaultValue={spec.group}
           placeholder="Group"
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px]"
         />
         <input
           name="label"
           required
           defaultValue={spec.label}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px]"
         />
         <input
           name="value"
           required
           defaultValue={spec.value}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px] tabular-nums"
         />
         <input
           name="unit"
           defaultValue={spec.unit ?? ''}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px] tabular-nums"
         />
         <label className="flex items-center gap-1 text-[11px]">
           <input type="checkbox" name="isFilterable" defaultChecked={spec.isFilterable} />
@@ -1138,19 +1155,19 @@ function SpecRow({
         <button
           type="submit"
           disabled={pending}
-          className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[11px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-8 px-3 text-[11px] font-medium disabled:opacity-50"
         >
           Save
         </button>
         <button
           type="button"
           onClick={() => setEditing(false)}
-          className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink h-8 px-2 text-[11px]"
         >
           Cancel
         </button>
         {error && (
-          <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
+          <p className="text-ih-danger-ink col-span-full text-[11px]" role="alert">
             {error}
           </p>
         )}
@@ -1159,16 +1176,20 @@ function SpecRow({
   }
 
   return (
-    <div className={`${SPEC_COLS_DISPLAY} items-center border-t border-ih-border px-4 py-2.5 text-[14px]`}>
+    <div
+      className={`${SPEC_COLS_DISPLAY} border-ih-border items-center border-t px-4 py-2.5 text-[14px]`}
+    >
       <div className="text-ih-ink-2">{spec.label}</div>
-      <div className="tabular-nums text-ih-ink">{spec.value}</div>
-      <div className="tabular-nums text-[11px] text-ih-muted">{spec.unit ?? ''}</div>
-      <div className="tabular-nums text-[11px] text-ih-muted-2">{spec.isFilterable ? 'filter' : ''}</div>
-      <div className="flex gap-3 justify-end">
+      <div className="text-ih-ink tabular-nums">{spec.value}</div>
+      <div className="text-ih-muted text-[11px] tabular-nums">{spec.unit ?? ''}</div>
+      <div className="text-ih-muted-2 text-[11px] tabular-nums">
+        {spec.isFilterable ? 'filter' : ''}
+      </div>
+      <div className="flex justify-end gap-3">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
+          className="text-ih-muted hover:text-ih-accent text-[11px] tabular-nums"
         >
           Edit
         </button>
@@ -1178,13 +1199,7 @@ function SpecRow({
   )
 }
 
-function AddSpecForm({
-  productId,
-  onSaved,
-}: {
-  productId: string
-  onSaved: () => void
-}) {
+function AddSpecForm({ productId, onSaved }: { productId: string; onSaved: () => void }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const formRef = useRef<HTMLFormElement>(null)
@@ -1206,7 +1221,7 @@ function AddSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="rounded-lg border border-ih-border bg-ih-surface p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
+      className="border-ih-border bg-ih-surface grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] items-end gap-3 rounded-lg border p-4"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Group">
@@ -1221,19 +1236,19 @@ function AddSpecForm({
       <Field label="Unit">
         <input name="unit" placeholder="bar" className={inputCls + ' tabular-nums'} />
       </Field>
-      <label className="flex items-center gap-1.5 h-9 text-[12px] text-ih-ink-2">
+      <label className="text-ih-ink-2 flex h-9 items-center gap-1.5 text-[12px]">
         <input type="checkbox" name="isFilterable" />
         Filter
       </label>
       <button
         type="submit"
         disabled={pending}
-        className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+        className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
       >
         {pending ? '…' : 'Add row'}
       </button>
       {error && (
-        <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink col-span-full text-[11px]" role="alert">
           {error}
         </p>
       )}
@@ -1293,7 +1308,7 @@ function ImagesTab({
   }
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl">
+    <div className="flex max-w-4xl flex-col gap-6">
       <BlueprintImagePanel
         productId={productId}
         productTitle={productTitle}
@@ -1302,31 +1317,36 @@ function ImagesTab({
         suggestions={blueprintSuggestions}
       />
 
-      <p className="text-[12px] text-ih-muted">
-        Upload images directly to Supabase Storage. Hero image (first in the list) appears full-size; the rest become thumbnails. JPEG / PNG / WebP / SVG, up to 10MB each.
+      <p className="text-ih-muted text-[12px]">
+        Upload images directly to Supabase Storage. Hero image (first in the list) appears
+        full-size; the rest become thumbnails. JPEG / PNG / WebP / SVG, up to 10MB each.
       </p>
 
       {images.length === 0 ? (
-        <p className="text-[13px] text-ih-muted">No images yet — paste a URL below to add the first one.</p>
+        <p className="text-ih-muted text-[13px]">
+          No images yet — paste a URL below to add the first one.
+        </p>
       ) : (
-        <div className="rounded-lg border border-ih-border bg-ih-surface">
+        <div className="border-ih-border bg-ih-surface rounded-lg border">
           {images.map((img, i) => (
             <div
               key={img.id}
-              className={`grid grid-cols-[80px_1fr_120px] gap-4 px-4 py-3 items-center text-[13px] ${
-                i > 0 ? 'border-t border-ih-border' : ''
+              className={`grid grid-cols-[80px_1fr_120px] items-center gap-4 px-4 py-3 text-[13px] ${
+                i > 0 ? 'border-ih-border border-t' : ''
               }`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={img.url}
                 alt={img.alt ?? ''}
-                className="w-20 h-20 object-cover bg-ih-bg border border-ih-border"
+                className="bg-ih-bg border-ih-border h-20 w-20 border object-cover"
               />
-              <div className="flex flex-col gap-1 min-w-0">
-                <span className="tabular-nums text-[11px] text-ih-muted truncate">{img.url}</span>
-                <span className="text-[12px] text-ih-ink-2">{img.alt ?? <em className="text-ih-muted-2">no alt</em>}</span>
-                <span className="tabular-nums text-[11px] text-ih-muted-2">Position {i + 1}</span>
+              <div className="flex min-w-0 flex-col gap-1">
+                <span className="text-ih-muted truncate text-[11px] tabular-nums">{img.url}</span>
+                <span className="text-ih-ink-2 text-[12px]">
+                  {img.alt ?? <em className="text-ih-muted-2">no alt</em>}
+                </span>
+                <span className="text-ih-muted-2 text-[11px] tabular-nums">Position {i + 1}</span>
               </div>
               <div className="flex flex-col items-end gap-1.5">
                 <div className="flex gap-1">
@@ -1334,7 +1354,7 @@ function ImagesTab({
                     type="button"
                     onClick={() => onReorder(img.id, 'up')}
                     disabled={pending || i === 0}
-                    className="rounded-md h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
+                    className="border-ih-border h-7 w-7 rounded-md border text-[12px] disabled:opacity-30"
                     aria-label="Move up"
                   >
                     ↑
@@ -1343,13 +1363,18 @@ function ImagesTab({
                     type="button"
                     onClick={() => onReorder(img.id, 'down')}
                     disabled={pending || i === images.length - 1}
-                    className="rounded-md h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
+                    className="border-ih-border h-7 w-7 rounded-md border text-[12px] disabled:opacity-30"
                     aria-label="Move down"
                   >
                     ↓
                   </button>
                 </div>
-                <DeleteButton label="Remove image" size="sm" onClick={() => onDelete(img.id)} disabled={pending} />
+                <DeleteButton
+                  label="Remove image"
+                  size="sm"
+                  onClick={() => onDelete(img.id)}
+                  disabled={pending}
+                />
               </div>
             </div>
           ))}
@@ -1360,7 +1385,7 @@ function ImagesTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="rounded-lg border border-ih-border bg-ih-surface p-4 flex flex-col gap-3"
+        className="border-ih-border bg-ih-surface flex flex-col gap-3 rounded-lg border p-4"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1370,21 +1395,24 @@ function ImagesTab({
             name="file"
             type="file"
             accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml"
-            className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-ih-border file:bg-ih-bg file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-ih-surface-2"
+            className="file:border-ih-border file:bg-ih-bg file:hover:bg-ih-surface-2 text-[13px] file:mr-3 file:h-9 file:cursor-pointer file:border file:px-3 file:text-[12px] file:font-medium"
           />
         </Field>
-        <Field label="Alt text" hint="Describe the image for accessibility (e.g. '3/4 perspective view of the pump')">
+        <Field
+          label="Alt text"
+          hint="Describe the image for accessibility (e.g. '3/4 perspective view of the pump')"
+        >
           <input name="alt" className={inputCls} />
         </Field>
         <div className="flex items-center gap-3">
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+            className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
           >
             {pending ? 'Uploading…' : '↑ Upload image'}
           </button>
-          {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
+          {error && <span className="text-ih-danger-ink text-[11px]">{error}</span>}
         </div>
       </form>
     </div>
@@ -1442,39 +1470,49 @@ function DocumentsTab({
   }
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl">
-      <p className="text-[12px] text-ih-muted">
-        Datasheets, STEP/IGES CAD, service manuals — anything customers download. Files go to the private <code>product-documents</code> bucket; gated documents are served via short-lived signed URLs. Up to 50MB per file.
+    <div className="flex max-w-4xl flex-col gap-6">
+      <p className="text-ih-muted text-[12px]">
+        Datasheets, STEP/IGES CAD, service manuals — anything customers download. Files go to the
+        private <code>product-documents</code> bucket; gated documents are served via short-lived
+        signed URLs. Up to 50MB per file.
       </p>
 
       {documents.length === 0 ? (
-        <p className="text-[13px] text-ih-muted">No documents yet.</p>
+        <p className="text-ih-muted text-[13px]">No documents yet.</p>
       ) : (
-        <div className="rounded-lg border border-ih-border bg-ih-surface">
+        <div className="border-ih-border bg-ih-surface rounded-lg border">
           {documents.map((d, i) => (
             <div
               key={d.id}
-              className={`grid grid-cols-[120px_1fr_80px_60px_80px] gap-3 px-4 py-3 items-center text-[13px] ${
-                i > 0 ? 'border-t border-ih-border' : ''
+              className={`grid grid-cols-[120px_1fr_80px_60px_80px] items-center gap-3 px-4 py-3 text-[13px] ${
+                i > 0 ? 'border-ih-border border-t' : ''
               }`}
             >
-              <span className="tabular-nums text-[10.5px] tracking-[0.08em] uppercase text-ih-muted bg-ih-bg px-2 py-1 inline-block w-fit">
+              <span className="text-ih-muted bg-ih-bg inline-block w-fit px-2 py-1 text-[10.5px] tracking-[0.08em] uppercase tabular-nums">
                 {DOC_KIND_LABELS[d.kind] ?? d.kind}
               </span>
-              <div className="flex flex-col gap-0.5 min-w-0">
+              <div className="flex min-w-0 flex-col gap-0.5">
                 <span className="text-ih-ink-2 truncate">{d.title}</span>
                 <a
                   href={d.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="tabular-nums text-[11px] text-ih-accent truncate hover:underline"
+                  className="text-ih-accent truncate text-[11px] tabular-nums hover:underline"
                 >
                   {d.url}
                 </a>
               </div>
-              <span className="tabular-nums text-[11px] text-ih-muted uppercase">{d.language}</span>
-              <span className="tabular-nums text-[10.5px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
-              <DeleteButton label="Remove document" size="sm" className="justify-self-end" onClick={() => onDelete(d.id)} disabled={pending} />
+              <span className="text-ih-muted text-[11px] uppercase tabular-nums">{d.language}</span>
+              <span className="text-ih-muted-2 text-[10.5px] tabular-nums">
+                {d.isGated ? 'gated' : 'public'}
+              </span>
+              <DeleteButton
+                label="Remove document"
+                size="sm"
+                className="justify-self-end"
+                onClick={() => onDelete(d.id)}
+                disabled={pending}
+              />
             </div>
           ))}
         </div>
@@ -1483,7 +1521,7 @@ function DocumentsTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="rounded-lg border border-ih-border bg-ih-surface p-4 grid grid-cols-2 gap-3"
+        className="border-ih-border bg-ih-surface grid grid-cols-2 gap-3 rounded-lg border p-4"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1519,13 +1557,18 @@ function DocumentsTab({
             name="file"
             type="file"
             accept={isDatasheet ? datasheetAccept : undefined}
-            className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-ih-border file:bg-ih-bg file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-ih-surface-2"
+            className="file:border-ih-border file:bg-ih-bg file:hover:bg-ih-surface-2 text-[13px] file:mr-3 file:h-9 file:cursor-pointer file:border file:px-3 file:text-[12px] file:font-medium"
           />
         </Field>
         <Field label="Language">
-          <input name="language" defaultValue="en" maxLength={8} className={inputCls + ' tabular-nums'} />
+          <input
+            name="language"
+            defaultValue="en"
+            maxLength={8}
+            className={inputCls + ' tabular-nums'}
+          />
         </Field>
-        <label className="col-span-2 flex items-center gap-1.5 text-[12px] text-ih-ink-2">
+        <label className="text-ih-ink-2 col-span-2 flex items-center gap-1.5 text-[12px]">
           <input type="checkbox" name="isGated" />
           On request only (not downloadable — visitors are sent to Contact)
         </label>
@@ -1533,11 +1576,11 @@ function DocumentsTab({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+            className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
           >
             {pending ? 'Uploading…' : '↑ Upload document'}
           </button>
-          {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
+          {error && <span className="text-ih-danger-ink text-[11px]">{error}</span>}
         </div>
       </form>
     </div>
@@ -1556,12 +1599,14 @@ function CrossRefsTab({
   onSaved: () => void
 }) {
   return (
-    <div className="flex flex-col gap-6 max-w-4xl">
+    <div className="flex max-w-4xl flex-col gap-6">
       {crossRefs.length === 0 ? (
-        <p className="text-[13px] text-ih-muted">No cross-references yet.</p>
+        <p className="text-ih-muted text-[13px]">No cross-references yet.</p>
       ) : (
-        <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-          <div className={`${XREF_COLS_DISPLAY} border-b border-ih-border bg-ih-bg px-4 py-2.5 text-[13px] font-medium text-ih-muted-2`}>
+        <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
+          <div
+            className={`${XREF_COLS_DISPLAY} border-ih-border bg-ih-bg text-ih-muted-2 border-b px-4 py-2.5 text-[13px] font-medium`}
+          >
             <div>Competitor brand</div>
             <div>MPN</div>
             <div>Compatibility</div>
@@ -1615,7 +1660,7 @@ function CrossRefRow({
     return (
       <form
         action={onUpdate}
-        className={`${XREF_COLS_EDIT} items-end border-t border-ih-border bg-ih-bg px-4 py-2.5`}
+        className={`${XREF_COLS_EDIT} border-ih-border bg-ih-bg items-end border-t px-4 py-2.5`}
       >
         <input type="hidden" name="id" value={cr.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1623,18 +1668,18 @@ function CrossRefRow({
           name="competitorBrand"
           required
           defaultValue={cr.competitorBrand}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px]"
         />
         <input
           name="competitorMpn"
           required
           defaultValue={cr.competitorMpn}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px] tabular-nums"
         />
         <select
           name="compatibility"
           defaultValue={cr.compatibility}
-          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
+          className="border-ih-border bg-ih-surface h-8 rounded-lg border px-2 text-[12px]"
         >
           <option value="direct">Direct</option>
           <option value="compatible">Compatible</option>
@@ -1644,20 +1689,20 @@ function CrossRefRow({
           <button
             type="submit"
             disabled={pending}
-            className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[11px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-8 px-3 text-[11px] font-medium disabled:opacity-50"
           >
             Save
           </button>
           <button
             type="button"
             onClick={() => setEditing(false)}
-            className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink h-8 px-2 text-[11px]"
           >
             Cancel
           </button>
         </div>
         {error && (
-          <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
+          <p className="text-ih-danger-ink col-span-full text-[11px]" role="alert">
             {error}
           </p>
         )}
@@ -1666,33 +1711,34 @@ function CrossRefRow({
   }
 
   return (
-    <div className={`${XREF_COLS_DISPLAY} items-center border-t border-ih-border px-4 py-2.5 text-[14px]`}>
+    <div
+      className={`${XREF_COLS_DISPLAY} border-ih-border items-center border-t px-4 py-2.5 text-[14px]`}
+    >
       <div className="text-ih-ink-2">{cr.competitorBrand}</div>
-      <div className="tabular-nums text-ih-ink">{cr.competitorMpn}</div>
-      <div className="tabular-nums text-[11px] text-ih-muted capitalize">
+      <div className="text-ih-ink tabular-nums">{cr.competitorMpn}</div>
+      <div className="text-ih-muted text-[11px] capitalize tabular-nums">
         {cr.compatibility.replace(/_/g, ' ')}
       </div>
-      <div className="flex gap-3 justify-end">
+      <div className="flex justify-end gap-3">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
+          className="text-ih-muted hover:text-ih-accent text-[11px] tabular-nums"
         >
           Edit
         </button>
-        <DeleteButton label="Remove cross-reference" size="sm" onClick={onDelete} disabled={pending} />
+        <DeleteButton
+          label="Remove cross-reference"
+          size="sm"
+          onClick={onDelete}
+          disabled={pending}
+        />
       </div>
     </div>
   )
 }
 
-function AddCrossRefForm({
-  productId,
-  onSaved,
-}: {
-  productId: string
-  onSaved: () => void
-}) {
+function AddCrossRefForm({ productId, onSaved }: { productId: string; onSaved: () => void }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const formRef = useRef<HTMLFormElement>(null)
@@ -1714,14 +1760,19 @@ function AddCrossRefForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="rounded-lg border border-ih-border bg-ih-surface p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
+      className="border-ih-border bg-ih-surface grid grid-cols-[1fr_1fr_140px_auto] items-end gap-3 rounded-lg border p-4"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Competitor brand *">
         <input required name="competitorBrand" placeholder="Parker" className={inputCls} />
       </Field>
       <Field label="Competitor MPN *">
-        <input required name="competitorMpn" placeholder="PV270L1" className={inputCls + ' tabular-nums'} />
+        <input
+          required
+          name="competitorMpn"
+          placeholder="PV270L1"
+          className={inputCls + ' tabular-nums'}
+        />
       </Field>
       <Field label="Compatibility">
         <select name="compatibility" defaultValue="direct" className={selectCls}>
@@ -1733,12 +1784,12 @@ function AddCrossRefForm({
       <button
         type="submit"
         disabled={pending}
-        className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
+        className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 px-4 text-[12px] font-medium disabled:opacity-50"
       >
         {pending ? '…' : 'Add'}
       </button>
       {error && (
-        <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink col-span-full text-[11px]" role="alert">
           {error}
         </p>
       )}
@@ -1758,20 +1809,21 @@ function FaqsTab({
   onSaved: () => void
 }) {
   return (
-    <div className="flex flex-col gap-6 max-w-4xl">
-      <p className="text-[12px] text-ih-muted">
-        Author frequently-asked questions for this product. They render in order on the storefront&apos;s FAQ tab as collapsible Q+A pairs.
+    <div className="flex max-w-4xl flex-col gap-6">
+      <p className="text-ih-muted text-[12px]">
+        Author frequently-asked questions for this product. They render in order on the
+        storefront&apos;s FAQ tab as collapsible Q+A pairs.
       </p>
       {faqs.length === 0 ? (
-        <p className="text-[13px] text-ih-muted">No FAQs yet — add the first one below.</p>
+        <p className="text-ih-muted text-[13px]">No FAQs yet — add the first one below.</p>
       ) : (
-        <div className="rounded-lg border border-ih-border bg-ih-surface flex flex-col">
+        <div className="border-ih-border bg-ih-surface flex flex-col rounded-lg border">
           {faqs.map((f, i) => (
             <FaqRow
               key={f.id}
               faq={f}
               productId={productId}
-             
+
               isFirst={i === 0}
               isLast={i === faqs.length - 1}
               onSaved={onSaved}
@@ -1833,7 +1885,7 @@ function FaqRow({
     return (
       <form
         action={onUpdate}
-        className="px-4 py-3 flex flex-col gap-2 border-t border-ih-border first:border-t-0 bg-ih-bg"
+        className="border-ih-border bg-ih-bg flex flex-col gap-2 border-t px-4 py-3 first:border-t-0"
       >
         <input type="hidden" name="id" value={faq.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1853,19 +1905,19 @@ function FaqRow({
           <button
             type="submit"
             disabled={pending}
-            className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[11px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-8 px-3 text-[11px] font-medium disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save'}
           </button>
           <button
             type="button"
             onClick={() => setEditing(false)}
-            className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink h-8 px-2 text-[11px]"
           >
             Cancel
           </button>
           {error && (
-            <span className="text-[11px] text-ih-danger-ink" role="alert">
+            <span className="text-ih-danger-ink text-[11px]" role="alert">
               {error}
             </span>
           )}
@@ -1875,13 +1927,13 @@ function FaqRow({
   }
 
   return (
-    <div className="px-4 py-3 flex gap-3 items-start border-t border-ih-border first:border-t-0">
+    <div className="border-ih-border flex items-start gap-3 border-t px-4 py-3 first:border-t-0">
       <div className="flex flex-col gap-0.5 pt-0.5">
         <button
           type="button"
           onClick={() => onReorder('up')}
           disabled={isFirst || pending}
-          className="tabular-nums text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
+          className="text-ih-muted hover:text-ih-ink text-[12px] tabular-nums disabled:cursor-not-allowed disabled:opacity-30"
           title="Move up"
         >
           ↑
@@ -1890,23 +1942,23 @@ function FaqRow({
           type="button"
           onClick={() => onReorder('down')}
           disabled={isLast || pending}
-          className="tabular-nums text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
+          className="text-ih-muted hover:text-ih-ink text-[12px] tabular-nums disabled:cursor-not-allowed disabled:opacity-30"
           title="Move down"
         >
           ↓
         </button>
       </div>
-      <div className="flex-1 min-w-0 flex flex-col gap-1">
-        <div className="text-[13px] font-medium text-ih-ink">{faq.question}</div>
-        <div className="text-[12px] text-ih-ink-2 whitespace-pre-wrap leading-[1.5]">
+      <div className="flex min-w-0 flex-1 flex-col gap-1">
+        <div className="text-ih-ink text-[13px] font-medium">{faq.question}</div>
+        <div className="text-ih-ink-2 text-[12px] leading-[1.5] whitespace-pre-wrap">
           {faq.answer}
         </div>
       </div>
-      <div className="flex gap-3 shrink-0">
+      <div className="flex shrink-0 gap-3">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="tabular-nums text-[11px] text-ih-muted hover:text-ih-accent"
+          className="text-ih-muted hover:text-ih-accent text-[11px] tabular-nums"
         >
           Edit
         </button>
@@ -1916,13 +1968,7 @@ function FaqRow({
   )
 }
 
-function AddFaqForm({
-  productId,
-  onSaved,
-}: {
-  productId: string
-  onSaved: () => void
-}) {
+function AddFaqForm({ productId, onSaved }: { productId: string; onSaved: () => void }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const formRef = useRef<HTMLFormElement>(null)
@@ -1944,7 +1990,7 @@ function AddFaqForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="rounded-lg border border-ih-border bg-ih-surface p-4 flex flex-col gap-3"
+      className="border-ih-border bg-ih-surface flex flex-col gap-3 rounded-lg border p-4"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Question *">
@@ -1968,12 +2014,12 @@ function AddFaqForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50 self-start"
+          className="bg-ih-navy text-ih-bg hover:bg-ih-ink h-9 self-start px-4 text-[12px] font-medium disabled:opacity-50"
         >
           {pending ? 'Adding…' : '+ Add FAQ'}
         </button>
         {error && (
-          <span className="text-[11px] text-ih-danger-ink" role="alert">
+          <span className="text-ih-danger-ink text-[11px]" role="alert">
             {error}
           </span>
         )}
@@ -2070,14 +2116,14 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
+      <span className="text-ih-ink-2 text-[12px] font-medium">{label}</span>
       {children}
       {error ? (
-        <span className="text-[11px] text-ih-danger-ink" role="alert">
+        <span className="text-ih-danger-ink text-[11px]" role="alert">
           {error}
         </span>
       ) : (
-        hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>
+        hint && <span className="text-ih-muted-2 text-[11px]">{hint}</span>
       )}
     </label>
   )
@@ -2086,7 +2132,9 @@ function Field({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-3">
-      <span className="tabular-nums text-[10.5px] tracking-[0.12em] uppercase text-ih-muted">{title}</span>
+      <span className="text-ih-muted text-[10.5px] tracking-[0.12em] uppercase tabular-nums">
+        {title}
+      </span>
       {children}
     </div>
   )
@@ -2095,7 +2143,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function ErrorBanner({ message }: { message: string }) {
   return (
     <div
-      className="rounded-lg px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
+      className="bg-ih-danger-soft text-ih-danger-ink rounded-lg border border-[oklch(0.4_0.18_25)] px-4 py-3 text-[13px]"
       role="alert"
     >
       {message}
@@ -2109,7 +2157,7 @@ function SaveButton({ pending, children }: { pending: boolean; children: React.R
       <button
         type="submit"
         disabled={pending}
-        className="h-10 px-5 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+        className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-10 px-5 text-[13px] font-medium disabled:opacity-50"
       >
         {pending ? 'Saving…' : children}
       </button>
@@ -2125,7 +2173,7 @@ function DeleteProductButton({ id }: { id: string }) {
       <DeleteButton
         label="Delete product"
         showLabel
-        className="h-9 border border-ih-border hover:border-ih-danger-line"
+        className="border-ih-border hover:border-ih-danger-line h-9 border"
         pending={pending}
         onClick={() => {
           if (!confirm('Permanently delete this product? This cannot be undone.')) return
@@ -2136,7 +2184,7 @@ function DeleteProductButton({ id }: { id: string }) {
           })
         }}
       />
-      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
+      {error && <span className="text-ih-danger-ink text-[11px]">{error}</span>}
     </>
   )
 }

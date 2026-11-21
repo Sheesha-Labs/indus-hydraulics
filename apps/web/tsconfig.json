@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
@@ -23,15 +19,9 @@
       }
     ],
     "paths": {
-      "@indus/ui": [
-        "../../packages/ui/src/index.ts"
-      ],
-      "@indus/db": [
-        "../../packages/db/src/index.ts"
-      ],
-      "@indus/domain": [
-        "../../packages/domain/src/index.ts"
-      ]
+      "@indus/ui": ["../../packages/ui/src/index.ts"],
+      "@indus/db": ["../../packages/db/src/index.ts"],
+      "@indus/domain": ["../../packages/domain/src/index.ts"]
     },
     "incremental": true,
     "types": ["node", "bun"]
@@ -44,7 +34,5 @@
     ".next/dev/types/**/*.ts",
     "../../types/vitest.d.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

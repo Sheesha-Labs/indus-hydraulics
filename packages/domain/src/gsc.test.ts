@@ -78,8 +78,16 @@ describe('buildGscRequest', () => {
 describe('parseGscRows', () => {
   it('maps page rows and marks them with the page-total sentinel', () => {
     const rows = parseGscRows(
-      [{ keys: ['2026-08-01', 'https://x.test/a'], clicks: 3, impressions: 40, ctr: 0.075, position: 8.2 }],
-      'page',
+      [
+        {
+          keys: ['2026-08-01', 'https://x.test/a'],
+          clicks: 3,
+          impressions: 40,
+          ctr: 0.075,
+          position: 8.2,
+        },
+      ],
+      'page'
     )
     expect(rows).toEqual([
       {
@@ -97,7 +105,7 @@ describe('parseGscRows', () => {
   it('keeps the query on page+query rows', () => {
     const [row] = parseGscRows(
       [{ keys: ['2026-08-01', 'https://x.test/a', 'hose dash size'], clicks: 1, impressions: 9 }],
-      'page_query',
+      'page_query'
     )
     expect(row?.query).toBe('hose dash size')
   })
@@ -117,7 +125,7 @@ describe('parseGscRows', () => {
   it('rounds click and impression counts to integers', () => {
     const [row] = parseGscRows(
       [{ keys: ['2026-08-01', 'https://x.test/a'], clicks: 2.0, impressions: 39.999 }],
-      'page',
+      'page'
     )
     expect(Number.isInteger(row!.clicks)).toBe(true)
     expect(Number.isInteger(row!.impressions)).toBe(true)

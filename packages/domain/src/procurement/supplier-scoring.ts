@@ -121,10 +121,7 @@ function relationshipScore(c: SupplierCandidate): number {
  * Case-insensitive on canonical tokens. An empty requirement list disqualifies
  * nobody.
  */
-export function missingCertifications(
-  candidate: SupplierCandidate,
-  required: string[],
-): string[] {
+export function missingCertifications(candidate: SupplierCandidate, required: string[]): string[] {
   if (required.length === 0) return []
   const held = new Set(candidate.certifications.map((s) => s.toLowerCase()))
   return required.filter((r) => !held.has(r.toLowerCase()))
@@ -135,7 +132,7 @@ export function missingCertifications(
  */
 export function scoreSupplier(
   candidate: SupplierCandidate,
-  context: ScoringContext,
+  context: ScoringContext
 ): ScoredSupplier {
   const missing = missingCertifications(candidate, context.requiredCertifications)
 
@@ -183,7 +180,7 @@ export function scoreSupplier(
 export function rankSuppliers(
   candidates: SupplierCandidate[],
   context: ScoringContext,
-  opts: { limit?: number; includeDisqualified?: boolean } = {},
+  opts: { limit?: number; includeDisqualified?: boolean } = {}
 ): ScoredSupplier[] {
   const limit = opts.limit ?? 10
   const scored = candidates.map((c) => scoreSupplier(c, context))

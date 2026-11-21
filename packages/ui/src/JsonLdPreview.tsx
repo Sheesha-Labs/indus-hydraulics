@@ -21,8 +21,8 @@ export function JsonLdPreview({ data, className }: JsonLdPreviewProps) {
   return (
     <pre
       className={cn(
-        'border border-ih-border bg-ih-surface-2 p-3 font-mono text-[11px] leading-relaxed text-ih-ink-2 overflow-auto max-h-[420px]',
-        className,
+        'border-ih-border bg-ih-surface-2 text-ih-ink-2 max-h-[420px] overflow-auto border p-3 font-mono text-[11px] leading-relaxed',
+        className
       )}
     >
       {text}

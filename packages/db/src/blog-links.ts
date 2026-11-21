@@ -23,7 +23,7 @@ import { db } from './index'
 export async function syncBlogPostLinks(
   postId: string,
   blocks: BlogBlocks,
-  client: PrismaClient = db,
+  client: PrismaClient = db
 ): Promise<void> {
   const skus = blogReferencedSkus(blocks)
   const categorySlugs = blogReferencedCategorySlugs(blocks)
@@ -49,7 +49,7 @@ export async function syncBlogPostLinks(
       data: skus
         .map((sku, i) => ({ postId, productId: productIdBySku.get(sku), position: i }))
         .filter((row): row is { postId: string; productId: string; position: number } =>
-          Boolean(row.productId),
+          Boolean(row.productId)
         ),
       skipDuplicates: true,
     }),
@@ -58,7 +58,7 @@ export async function syncBlogPostLinks(
       data: categorySlugs
         .map((slug, i) => ({ postId, categoryId: categoryIdBySlug.get(slug), position: i }))
         .filter((row): row is { postId: string; categoryId: string; position: number } =>
-          Boolean(row.categoryId),
+          Boolean(row.categoryId)
         ),
       skipDuplicates: true,
     }),

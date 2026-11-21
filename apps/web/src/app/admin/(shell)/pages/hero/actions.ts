@@ -22,7 +22,11 @@ import { db } from '@indus/db'
 import { auth } from '../../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
-import { STORAGE_BUCKETS, deleteFromStorage, uploadToStorage } from '../../../../../lib/supabase-admin'
+import {
+  STORAGE_BUCKETS,
+  deleteFromStorage,
+  uploadToStorage,
+} from '../../../../../lib/supabase-admin'
 
 const MAX_BYTES = 10 * 1024 * 1024 // 10 MB
 const ALLOWED_MIME = new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif'])
@@ -33,7 +37,9 @@ function isImageFile(file: unknown): file is File {
 
 // ── Upload ─────────────────────────────────────────────────────────────────
 
-export async function uploadHomeHeroSlide(formData: FormData): Promise<Result<{ slideId: string }>> {
+export async function uploadHomeHeroSlide(
+  formData: FormData
+): Promise<Result<{ slideId: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.CMS_WRITE)
     const file = formData.get('file')
@@ -56,7 +62,7 @@ export async function uploadHomeHeroSlide(formData: FormData): Promise<Result<{ 
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      'homepage-hero',
+      'homepage-hero'
     )
 
     // Best-effort intrinsic dimensions — Next.js needs these for layout
@@ -114,7 +120,7 @@ const UpdateSchema = z.object({
 })
 
 export async function updateHomeHeroSlide(
-  input: z.input<typeof UpdateSchema>,
+  input: z.input<typeof UpdateSchema>
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
@@ -145,9 +151,7 @@ const MoveSchema = z.object({
   direction: z.enum(['up', 'down']),
 })
 
-export async function moveHomeHeroSlide(
-  input: z.input<typeof MoveSchema>,
-): Promise<Result<void>> {
+export async function moveHomeHeroSlide(input: z.input<typeof MoveSchema>): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
     const { id, direction } = MoveSchema.parse(input)

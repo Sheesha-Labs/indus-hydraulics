@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest'
 import type { BlogBlock } from '@indus/domain'
 import { layoutArticle, stepNumber } from './article-layout'
 
-const b = (type: string, extra: Record<string, unknown> = {}) => ({ type, ...extra }) as unknown as BlogBlock
+const b = (type: string, extra: Record<string, unknown> = {}) =>
+  ({ type, ...extra }) as unknown as BlogBlock
 
 describe('layoutArticle', () => {
   it('lifts the first takeaways and stamp, and gathers every foot block', () => {
@@ -29,7 +30,13 @@ describe('layoutArticle', () => {
   })
 
   it('leaves a second takeaways or stamp inline where it sits', () => {
-    const layout = layoutArticle([b('key_takeaways'), b('as_of_stamp'), b('paragraph'), b('key_takeaways'), b('as_of_stamp')])
+    const layout = layoutArticle([
+      b('key_takeaways'),
+      b('as_of_stamp'),
+      b('paragraph'),
+      b('key_takeaways'),
+      b('as_of_stamp'),
+    ])
     expect(layout.takeaways).toBe(0)
     expect(layout.stamp).toBe(1)
     expect(layout.skip.has(3)).toBe(false)

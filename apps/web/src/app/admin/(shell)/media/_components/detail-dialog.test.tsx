@@ -61,9 +61,21 @@ const DETAIL: MediaDetail = {
   state: 'live',
   usages: [
     usage(),
-    usage({ kind: 'blog_post', label: 'Choosing a hose', role: 'Hero', href: '/admin/blog/b1', live: false }),
+    usage({
+      kind: 'blog_post',
+      label: 'Choosing a hose',
+      role: 'Hero',
+      href: '/admin/blog/b1',
+      live: false,
+    }),
     // No admin editor exists for a service case.
-    usage({ kind: 'service_case', label: 'Offshore BOP rebuild', role: 'In body', href: null, live: false }),
+    usage({
+      kind: 'service_case',
+      label: 'Offshore BOP rebuild',
+      role: 'In body',
+      href: null,
+      live: false,
+    }),
   ],
 }
 
@@ -141,7 +153,9 @@ describe('media detail dialog', () => {
     const inputs = document.querySelectorAll('[role="dialog"] input, [role="dialog"] textarea')
     expect(inputs.length).toBeGreaterThan(0)
     for (const el of inputs) expect((el as HTMLInputElement).disabled).toBe(true)
-    const buttons = [...document.querySelectorAll('[role="dialog"] button')].map((b) => b.textContent)
+    const buttons = [...document.querySelectorAll('[role="dialog"] button')].map(
+      (b) => b.textContent
+    )
     expect(buttons).not.toContain('Save changes')
   })
 })

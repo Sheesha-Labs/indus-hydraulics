@@ -8,7 +8,7 @@ const BACKDATED = new Date('2024-11-05T12:00:00.000Z')
 describe('resolvePublishedAt', () => {
   it('stamps now on first publish', () => {
     expect(resolvePublishedAt({ explicit: null, existing: null, publish: true, now: NOW })).toEqual(
-      NOW,
+      NOW
     )
   })
 
@@ -16,31 +16,31 @@ describe('resolvePublishedAt', () => {
     // The regression this exists to prevent: editing a live post used to
     // re-date it to now, resetting its age in every downstream consumer.
     expect(
-      resolvePublishedAt({ explicit: null, existing: ORIGINAL, publish: true, now: NOW }),
+      resolvePublishedAt({ explicit: null, existing: ORIGINAL, publish: true, now: NOW })
     ).toEqual(ORIGINAL)
   })
 
   it('keeps the date when a post is unpublished', () => {
     expect(
-      resolvePublishedAt({ explicit: null, existing: ORIGINAL, publish: false, now: NOW }),
+      resolvePublishedAt({ explicit: null, existing: ORIGINAL, publish: false, now: NOW })
     ).toEqual(ORIGINAL)
   })
 
   it('leaves a never-published draft with no date', () => {
     expect(
-      resolvePublishedAt({ explicit: null, existing: null, publish: false, now: NOW }),
+      resolvePublishedAt({ explicit: null, existing: null, publish: false, now: NOW })
     ).toBeNull()
   })
 
   it('lets an explicit date win over the existing one', () => {
     expect(
-      resolvePublishedAt({ explicit: BACKDATED, existing: ORIGINAL, publish: true, now: NOW }),
+      resolvePublishedAt({ explicit: BACKDATED, existing: ORIGINAL, publish: true, now: NOW })
     ).toEqual(BACKDATED)
   })
 
   it('lets an explicit date win on an unpublished draft', () => {
     expect(
-      resolvePublishedAt({ explicit: BACKDATED, existing: null, publish: false, now: NOW }),
+      resolvePublishedAt({ explicit: BACKDATED, existing: null, publish: false, now: NOW })
     ).toEqual(BACKDATED)
   })
 })

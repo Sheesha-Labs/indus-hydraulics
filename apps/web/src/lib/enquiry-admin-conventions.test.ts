@@ -61,7 +61,7 @@ describe('FE-6 — controls come from the shared primitives', () => {
       const visible = src
         .replace(/<input\s+type="hidden"[^>]*\/>/g, '')
         .replace(/<input[\s\S]{0,400}?type="file"[\s\S]{0,400}?\/>/g, (m) =>
-          m.includes('className="hidden"') ? '' : m,
+          m.includes('className="hidden"') ? '' : m
         )
       if (/<(input|textarea|select)\b/.test(visible)) offenders.push(file)
     }

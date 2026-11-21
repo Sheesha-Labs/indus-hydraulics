@@ -66,7 +66,7 @@ export default async function MasterPageEditorRoute({ params }: Props) {
 
   const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
@@ -75,7 +75,7 @@ export default async function MasterPageEditorRoute({ params }: Props) {
       breadcrumbs={
         <Link
           href="/admin/pages"
-          className="inline-flex items-center gap-1 text-ih-muted transition-colors hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 transition-colors"
         >
           <ChevronLeft size={12} strokeWidth={1.8} aria-hidden="true" />
           Pages &amp; Blocks
@@ -86,14 +86,14 @@ export default async function MasterPageEditorRoute({ params }: Props) {
           href={`${storefront}${def.path}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 tabular-nums text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+          className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-9 items-center gap-1.5 rounded-md border px-3 text-[12px] tabular-nums transition-colors"
         >
           View page <ExternalLink size={12} aria-hidden="true" />
         </a>
       }
       bodyClassName="max-w-[900px]"
     >
-      <p className="mb-5 text-[13px] leading-[1.6] text-ih-ink-2">
+      <p className="text-ih-ink-2 mb-5 text-[13px] leading-[1.6]">
         {def.description} Drag a section to move it, use the eye to hide one, and open it to edit
         its wording, links and images. Anything you leave alone renders exactly as it does today.
       </p>

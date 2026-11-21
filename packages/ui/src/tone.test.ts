@@ -32,7 +32,7 @@ describe('the vocabulary itself', () => {
 
   it('covers the four meanings a UI actually needs, plus neutral and accent', () => {
     expect([...TONES].sort()).toEqual(
-      ['accent', 'danger', 'info', 'neutral', 'success', 'warning'].sort(),
+      ['accent', 'danger', 'info', 'neutral', 'success', 'warning'].sort()
     )
   })
 

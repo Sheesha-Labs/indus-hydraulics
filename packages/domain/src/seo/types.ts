@@ -5,22 +5,9 @@
  * Keep these in lock-step with `packages/db/prisma/schema.prisma` enums.
  */
 
-export type SeoEntityType =
-  | 'product'
-  | 'category'
-  | 'brand'
-  | 'industry'
-  | 'cms_page'
-  | 'blog_post'
+export type SeoEntityType = 'product' | 'category' | 'brand' | 'industry' | 'cms_page' | 'blog_post'
 
-export type ChangeFreq =
-  | 'always'
-  | 'hourly'
-  | 'daily'
-  | 'weekly'
-  | 'monthly'
-  | 'yearly'
-  | 'never'
+export type ChangeFreq = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
 
 export type AiPromptKind =
   | 'meta_title'

@@ -27,14 +27,7 @@ type Category = {
   ogImageStoragePath: string | null
   sitemapPriority: number | null
   sitemapChangeFreq:
-    | 'always'
-    | 'hourly'
-    | 'daily'
-    | 'weekly'
-    | 'monthly'
-    | 'yearly'
-    | 'never'
-    | null
+    'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | null
   excludeFromSitemap: boolean
   jsonLdOverride: string | null
 }
@@ -69,29 +62,26 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
       sub={<span className="tabular-nums">/c/{category.slug}</span>}
       actions={
         <>
-        {savedAt && (
-          <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
-        )}
-        <Link
-          href="/admin/categories"
-          className="flex h-8 items-center rounded-lg border border-ih-border-strong px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
-        >
-          ← All categories
-        </Link>
+          {savedAt && <span className="text-ih-success-ink text-[12px]">Saved at {savedAt}</span>}
+          <Link
+            href="/admin/categories"
+            className="border-ih-border-strong text-ih-ink hover:bg-ih-surface-2 flex h-8 items-center rounded-lg border px-2.5 text-[14px] font-medium transition-colors"
+          >
+            ← All categories
+          </Link>
         </>
       }
     >
-
-      <div className="flex border-b border-ih-border mt-6 mb-6">
+      <div className="border-ih-border mt-6 mb-6 flex border-b">
         {TABS.map((t) => (
           <button
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px ${
+            className={`-mb-px border-b-2 px-4 py-2.5 text-[12px] tabular-nums ${
               tab === t.id
                 ? 'border-ih-accent text-ih-ink'
-                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+                : 'text-ih-muted hover:text-ih-ink-2 border-transparent'
             }`}
           >
             {t.label}
@@ -100,9 +90,12 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
       </div>
 
       {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-ih-muted rounded-lg border border-ih-border p-6">
+        <div className="text-ih-muted border-ih-border max-w-2xl rounded-lg border p-6 text-[13px]">
           The Core editor for category metadata (name, slug, parent, default spec template,
-          published flag) still lives on the <Link href="/admin/categories" className="underline">Categories list</Link>{' '}
+          published flag) still lives on the{' '}
+          <Link href="/admin/categories" className="underline">
+            Categories list
+          </Link>{' '}
           modal. Migration of those fields into this dedicated page is a follow-up.
         </div>
       )}

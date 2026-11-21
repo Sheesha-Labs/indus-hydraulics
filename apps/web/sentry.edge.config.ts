@@ -16,7 +16,10 @@ Sentry.init({
     const url = event.request?.url
     if (url) {
       try {
-        event.tags = { ...event.tags, app: new URL(url).pathname.startsWith('/admin') ? 'admin' : 'storefront' }
+        event.tags = {
+          ...event.tags,
+          app: new URL(url).pathname.startsWith('/admin') ? 'admin' : 'storefront',
+        }
       } catch {
         // non-URL value; leave the tag unset rather than guessing
       }

@@ -39,12 +39,15 @@ describe('market enquiry error rendering', () => {
     expect(forms.length).toBeGreaterThan(0)
   })
 
-  test.each(forms.map((file) => file.name))('%s renders its error through the shared block', (name) => {
-    const { source } = forms.find((file) => file.name === name)!
-    expect(source).toContain(`<${SHARED}`)
-    // A hand-rolled alert paragraph is how the duplicate address got in.
-    expect(source).not.toMatch(/role="alert"/)
-  })
+  test.each(forms.map((file) => file.name))(
+    '%s renders its error through the shared block',
+    (name) => {
+      const { source } = forms.find((file) => file.name === name)!
+      expect(source).toContain(`<${SHARED}`)
+      // A hand-rolled alert paragraph is how the duplicate address got in.
+      expect(source).not.toMatch(/role="alert"/)
+    }
+  )
 
   test('the shared block suppresses the offer when the message already names the address', () => {
     const source = readFileSync(path.join(HERE, `${SHARED}.tsx`), 'utf8')

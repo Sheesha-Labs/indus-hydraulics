@@ -38,7 +38,7 @@ type Props = {
   onChange: (blocks: BlogBlockInput[]) => void
   media: BodyMedia[]
   uploadAction: (
-    formData: FormData,
+    formData: FormData
   ) => Promise<
     Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>
   >
@@ -130,11 +130,11 @@ export default function BlogBodyEditor({ initialBlocks, onChange, media, uploadA
         })
         .run()
     },
-    [editor],
+    [editor]
   )
 
   return (
-    <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
+    <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
       <Toolbar
         editor={editor}
         onInsertImage={() => setImageOpen(true)}
@@ -167,7 +167,7 @@ function Toolbar({
   onInsertBlock: (type: string) => void
 }) {
   if (!editor) {
-    return <div className="h-9 border-b border-ih-border bg-ih-bg" aria-hidden />
+    return <div className="border-ih-border bg-ih-bg h-9 border-b" aria-hidden />
   }
 
   function setLink() {
@@ -183,7 +183,7 @@ function Toolbar({
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-0.5 border-b border-ih-border bg-ih-bg px-2 py-1.5">
+    <div className="border-ih-border bg-ih-bg flex flex-wrap items-center gap-0.5 border-b px-2 py-1.5">
       <Btn
         label="Bold"
         active={editor.isActive('bold')}
@@ -295,13 +295,13 @@ function InsertBlockMenu({ onInsert }: { onInsert: (type: string) => void }) {
   return (
     <details className="relative">
       <summary
-        className="flex h-7 cursor-pointer list-none items-center gap-1.5 rounded-md px-2 text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+        className="text-ih-ink-2 hover:bg-ih-surface-2 flex h-7 cursor-pointer list-none items-center gap-1.5 rounded-md px-2 text-[12px] transition-colors"
         title="Insert a block"
       >
         <Blocks size={13} strokeWidth={1.9} />
         Block
       </summary>
-      <div className="absolute left-0 top-8 z-20 max-h-[320px] w-[260px] overflow-y-auto rounded-md border border-ih-border bg-ih-surface py-1 shadow-lg">
+      <div className="border-ih-border bg-ih-surface absolute top-8 left-0 z-20 max-h-[320px] w-[260px] overflow-y-auto rounded-md border py-1 shadow-lg">
         {BLOCK_FORMS.map((spec) => (
           <button
             key={spec.type}
@@ -312,10 +312,10 @@ function InsertBlockMenu({ onInsert }: { onInsert: (type: string) => void }) {
               e.preventDefault()
               onInsert(spec.type)
               ;(e.currentTarget.closest('details') as HTMLDetailsElement | null)?.removeAttribute(
-                'open',
+                'open'
               )
             }}
-            className="block w-full px-3 py-1.5 text-left text-[12.5px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+            className="text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink block w-full px-3 py-1.5 text-left text-[12.5px] transition-colors"
           >
             {spec.label}
           </button>
@@ -326,7 +326,7 @@ function InsertBlockMenu({ onInsert }: { onInsert: (type: string) => void }) {
 }
 
 function Divider() {
-  return <span className="mx-1 h-4 w-px bg-ih-border" aria-hidden />
+  return <span className="bg-ih-border mx-1 h-4 w-px" aria-hidden />
 }
 
 function Btn({

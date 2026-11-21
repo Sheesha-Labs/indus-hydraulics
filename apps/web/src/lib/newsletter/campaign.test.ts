@@ -43,24 +43,44 @@ describe('campaignProblems', () => {
   it('wants a subject, a body and an audience', () => {
     expect(campaignProblems({ ...base, subject: '  ' }, OK).subject).toBeTruthy()
     expect(campaignProblems({ ...base, design: emptyDesign() }, OK).body).toBeTruthy()
-    expect(campaignProblems({ ...base, format: 'rich', design: null, bodyHtml: '<p> </p>' }, OK).body).toBeTruthy()
+    expect(
+      campaignProblems({ ...base, format: 'rich', design: null, bodyHtml: '<p> </p>' }, OK).body
+    ).toBeTruthy()
     expect(campaignProblems({ ...base, audience: 'none', listIds: [] }, OK).audience).toBeTruthy()
   })
 
   it('catches template text left in', () => {
     expect(campaignProblems({ ...base, subject: '[Your headline]' }, OK).subject).toBeTruthy()
-    expect(campaignProblems({ ...base, format: 'rich', design: null, bodyHtml: '<p>Lorem ipsum dolor</p>' }, OK).body).toBeTruthy()
+    expect(
+      campaignProblems(
+        { ...base, format: 'rich', design: null, bodyHtml: '<p>Lorem ipsum dolor</p>' },
+        OK
+      ).body
+    ).toBeTruthy()
   })
 
   it('catches a link an email cannot follow', () => {
-    const r = campaignProblems({ ...base, format: 'rich', design: null, bodyHtml: '<p><a href="javascript:alert(1)">x</a></p>' }, OK)
+    const r = campaignProblems(
+      {
+        ...base,
+        format: 'rich',
+        design: null,
+        bodyHtml: '<p><a href="javascript:alert(1)">x</a></p>',
+      },
+      OK
+    )
     expect(r.body).toMatch(/not a link/)
   })
 
   it('reports unpublished records and deleted lists', () => {
-    expect(campaignProblems(base, { missingRecords: 2, listsFound: 0 }).body).toMatch(/2 featured items/)
+    expect(campaignProblems(base, { missingRecords: 2, listsFound: 0 }).body).toMatch(
+      /2 featured items/
+    )
     const listId = '11111111-1111-4111-8111-111111111111'
-    expect(campaignProblems({ ...base, listIds: [listId] }, { missingRecords: 0, listsFound: 0 }).audience).toMatch(/deleted/)
+    expect(
+      campaignProblems({ ...base, listIds: [listId] }, { missingRecords: 0, listsFound: 0 })
+        .audience
+    ).toMatch(/deleted/)
   })
 
   it('validates the stored shape', () => {
@@ -74,7 +94,7 @@ describe('sanitiseEmailHtml', () => {
   it('keeps prose, drops scripts, handlers, styles and classes', () => {
     const out = sanitiseEmailHtml(
       '<p class="x" style="color:red" onclick="steal()">Hello <strong>there</strong></p><script>alert(1)</script><iframe src="x"></iframe>',
-      SITE,
+      SITE
     )
     expect(out).toContain('Hello <strong>there</strong>')
     expect(out).not.toMatch(/script|onclick|iframe|class=|color:red/)
@@ -84,7 +104,7 @@ describe('sanitiseEmailHtml', () => {
   it('keeps only followable links, makes site links absolute, images https only', () => {
     const out = sanitiseEmailHtml(
       '<a href="/c/hoses">Hoses</a> <a href="javascript:alert(1)">bad</a> <a href="//evil.com">evil</a> <img src="http://x.com/a.jpg" alt="a"><img src="https://cdn.x.com/b.jpg" alt="b">',
-      SITE,
+      SITE
     )
     expect(out).toContain(`href="${SITE}/c/hoses"`)
     expect(out).not.toContain('javascript:')
@@ -96,9 +116,11 @@ describe('sanitiseEmailHtml', () => {
 
 describe('htmlToText and isBlankBody', () => {
   it('turns HTML into readable text with link targets', () => {
-    expect(htmlToText('<h2>Title</h2><p>See <a href="https://x.com/a">the range</a>.</p><ul><li>One</li><li>Two</li></ul>')).toBe(
-      'Title\n\nSee the range (https://x.com/a).\n\n- One\n\n- Two',
-    )
+    expect(
+      htmlToText(
+        '<h2>Title</h2><p>See <a href="https://x.com/a">the range</a>.</p><ul><li>One</li><li>Two</li></ul>'
+      )
+    ).toBe('Title\n\nSee the range (https://x.com/a).\n\n- One\n\n- Two')
   })
 
   it('knows an empty body from a picture-only one', () => {
@@ -116,7 +138,10 @@ describe('renderCampaign', () => {
   }
 
   it('renders both formats with the legal footer and the right reason', () => {
-    for (const c of [base, { ...base, format: 'rich' as const, design: null, bodyHtml: '<p>Hello</p>' }]) {
+    for (const c of [
+      base,
+      { ...base, format: 'rich' as const, design: null, bodyHtml: '<p>Hello</p>' },
+    ]) {
       const r = renderCampaign(c, { ...opts, recipient: 'list' })
       expect(r.subject).toBe(base.subject)
       expect(r.html).toContain('Indus Hydraulic Power Trading LLC')
@@ -127,7 +152,12 @@ describe('renderCampaign', () => {
   })
 
   it('prefixes a test subject and kills the unsubscribe link', () => {
-    const r = renderCampaign(base, { ...opts, unsubscribeUrl: null, recipient: 'subscriber', subjectPrefix: '[Test] ' })
+    const r = renderCampaign(base, {
+      ...opts,
+      unsubscribeUrl: null,
+      recipient: 'subscriber',
+      subjectPrefix: '[Test] ',
+    })
     expect(r.subject).toBe(`[Test] ${base.subject}`)
     expect(r.html).not.toContain('/newsletter/unsubscribe/')
   })

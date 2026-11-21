@@ -40,14 +40,8 @@ const TOKEN = /\{([a-zA-Z]+)\}/g
 
 export function interpolate(text: string, tokens: CopyTokens): string
 export function interpolate(text: null | undefined, tokens: CopyTokens): null
-export function interpolate(
-  text: string | null | undefined,
-  tokens: CopyTokens,
-): string | null
-export function interpolate(
-  text: string | null | undefined,
-  tokens: CopyTokens,
-): string | null {
+export function interpolate(text: string | null | undefined, tokens: CopyTokens): string | null
+export function interpolate(text: string | null | undefined, tokens: CopyTokens): string | null {
   if (text === null || text === undefined) return null
   return text.replace(TOKEN, (whole, name: string) => {
     const value = tokens[name as keyof CopyTokens]

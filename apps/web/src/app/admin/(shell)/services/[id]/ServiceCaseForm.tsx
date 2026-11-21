@@ -78,7 +78,13 @@ function fmt(iso: string | null): string {
  * textarea that can silently produce an unrenderable block. Field names are
  * unchanged — `updateServiceCase` reads the same FormData keys as before.
  */
-export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; meta: ServiceCaseMeta }) {
+export default function ServiceCaseForm({
+  row,
+  meta,
+}: {
+  row: ServiceCaseRow
+  meta: ServiceCaseMeta
+}) {
   const [message, setMessage] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [status, setStatus] = useState(row.status)
@@ -98,7 +104,7 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
         setMessage(
           formData.get('status') === 'published'
             ? `Saved at ${new Date().toLocaleTimeString()}. The case and the index are live.`
-            : `Saved at ${new Date().toLocaleTimeString()}.`,
+            : `Saved at ${new Date().toLocaleTimeString()}.`
         )
         router.refresh()
       } else {
@@ -115,9 +121,18 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
 
       <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="flex min-w-0 flex-col gap-5">
-          <EditorSection title="Hero" description="The top of the case page: title, deck and the pills above them.">
+          <EditorSection
+            title="Hero"
+            description="The top of the case page: title, deck and the pills above them."
+          >
             <Field label={<Required>Title</Required>} htmlFor="sc-title">
-              <Input id="sc-title" name="title" defaultValue={row.title} required className="h-10 text-[15px] font-medium" />
+              <Input
+                id="sc-title"
+                name="title"
+                defaultValue={row.title}
+                required
+                className="h-10 text-[15px] font-medium"
+              />
             </Field>
             <Field
               label="Title accent"
@@ -126,7 +141,11 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
             >
               <Input id="sc-titleAccent" name="titleAccent" defaultValue={row.titleAccent ?? ''} />
             </Field>
-            <Field label={<Required>Deck</Required>} htmlFor="sc-deck" hint="The serif paragraph under the title.">
+            <Field
+              label={<Required>Deck</Required>}
+              htmlFor="sc-deck"
+              hint="The serif paragraph under the title."
+            >
               <Textarea id="sc-deck" name="deck" defaultValue={row.deck} rows={3} required />
             </Field>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -135,20 +154,45 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
                 htmlFor="sc-topicLabel"
                 hint="e.g. Cylinders · Hoses · Oilfield"
               >
-                <Input id="sc-topicLabel" name="topicLabel" defaultValue={row.topicLabel} required />
+                <Input
+                  id="sc-topicLabel"
+                  name="topicLabel"
+                  defaultValue={row.topicLabel}
+                  required
+                />
               </Field>
               <Field label="Region pill" htmlFor="sc-region" hint="e.g. 🇦🇪 UAE · Jebel Ali">
                 <Input id="sc-region" name="region" defaultValue={row.region ?? ''} />
               </Field>
             </div>
-            <Field label="Date line" htmlFor="sc-caseDateLabel" hint="The meta line in the hero, e.g. MAR 2026 · BAY 2 / ON-SITE">
-              <Input id="sc-caseDateLabel" name="caseDateLabel" defaultValue={row.caseDateLabel ?? ''} />
+            <Field
+              label="Date line"
+              htmlFor="sc-caseDateLabel"
+              hint="The meta line in the hero, e.g. MAR 2026 · BAY 2 / ON-SITE"
+            >
+              <Input
+                id="sc-caseDateLabel"
+                name="caseDateLabel"
+                defaultValue={row.caseDateLabel ?? ''}
+              />
             </Field>
           </EditorSection>
 
-          <EditorSection title="Index card" description="How the case appears in the grid on /services.">
-            <Field label="One-liner" htmlFor="sc-cardOneLiner" hint="Under the card heading. Leave blank to use the deck.">
-              <Textarea id="sc-cardOneLiner" name="cardOneLiner" defaultValue={row.cardOneLiner ?? ''} rows={2} />
+          <EditorSection
+            title="Index card"
+            description="How the case appears in the grid on /services."
+          >
+            <Field
+              label="One-liner"
+              htmlFor="sc-cardOneLiner"
+              hint="Under the card heading. Leave blank to use the deck."
+            >
+              <Textarea
+                id="sc-cardOneLiner"
+                name="cardOneLiner"
+                defaultValue={row.cardOneLiner ?? ''}
+                rows={2}
+              />
             </Field>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <Field
@@ -156,21 +200,41 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
                 htmlFor="sc-cardTagLabel"
                 hint="On the card image, e.g. OILFIELD. Independent of the category."
               >
-                <Input id="sc-cardTagLabel" name="cardTagLabel" defaultValue={row.cardTagLabel} required />
+                <Input
+                  id="sc-cardTagLabel"
+                  name="cardTagLabel"
+                  defaultValue={row.cardTagLabel}
+                  required
+                />
               </Field>
-              <Field label="Tag style" htmlFor="sc-cardTagStyle" hint="Oil uses the dark oilfield tag.">
+              <Field
+                label="Tag style"
+                htmlFor="sc-cardTagStyle"
+                hint="Oil uses the dark oilfield tag."
+              >
                 <Select id="sc-cardTagStyle" name="cardTagStyle" defaultValue={row.cardTagStyle}>
                   <option value="standard">Standard</option>
                   <option value="oil">Oil</option>
                 </Select>
               </Field>
             </div>
-            <Field label="Duration overlay" htmlFor="sc-cardDurationLabel" hint="Over the card image, e.g. 96 H ON BENCH.">
-              <Input id="sc-cardDurationLabel" name="cardDurationLabel" defaultValue={row.cardDurationLabel ?? ''} />
+            <Field
+              label="Duration overlay"
+              htmlFor="sc-cardDurationLabel"
+              hint="Over the card image, e.g. 96 H ON BENCH."
+            >
+              <Input
+                id="sc-cardDurationLabel"
+                name="cardDurationLabel"
+                defaultValue={row.cardDurationLabel ?? ''}
+              />
             </Field>
           </EditorSection>
 
-          <EditorSection title="Sorting" description="Used by the “fastest turnaround” and “biggest saving” views. Blank sorts last.">
+          <EditorSection
+            title="Sorting"
+            description="Used by the “fastest turnaround” and “biggest saving” views. Blank sorts last."
+          >
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <Field label="Turnaround (days)" htmlFor="sc-durationDays">
                 <Input
@@ -205,7 +269,10 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
             </div>
           </EditorSection>
 
-          <EditorSection title="SEO" description="Search result title and description. Both fall back to the case title and deck.">
+          <EditorSection
+            title="SEO"
+            description="Search result title and description. Both fall back to the case title and deck."
+          >
             <Field
               label={
                 <span className="flex items-center justify-between gap-3">
@@ -216,7 +283,12 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
               htmlFor="sc-seoTitle"
               error={tooLong(seoTitle, SEO_TITLE_MAX)}
             >
-              <Input id="sc-seoTitle" name="seoTitle" value={seoTitle} onChange={(e) => setSeoTitle(e.target.value)} />
+              <Input
+                id="sc-seoTitle"
+                name="seoTitle"
+                value={seoTitle}
+                onChange={(e) => setSeoTitle(e.target.value)}
+              />
             </Field>
             <Field
               label={
@@ -236,13 +308,19 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
                 onChange={(e) => setSeoDescription(e.target.value)}
               />
             </Field>
-            <Checkbox name="robotsIndex" defaultChecked={row.robotsIndex} label="Allow search engines to index this case" />
+            <Checkbox
+              name="robotsIndex"
+              defaultChecked={row.robotsIndex}
+              label="Allow search engines to index this case"
+            />
           </EditorSection>
         </div>
 
         <aside className="flex min-w-0 flex-col gap-5 lg:sticky lg:top-6">
           <Panel padding="rail" className="flex flex-col gap-4">
-            <p className="text-[11px] font-medium uppercase tracking-[0.1em] text-ih-muted">Publish</p>
+            <p className="text-ih-muted text-[11px] font-medium tracking-[0.1em] uppercase">
+              Publish
+            </p>
 
             <dl className="flex flex-col gap-2 text-[13px]">
               <Row label="Status">
@@ -269,7 +347,12 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
                   : undefined
               }
             >
-              <Select id="sc-status" name="status" value={status} onChange={(e) => setStatus(e.target.value)}>
+              <Select
+                id="sc-status"
+                name="status"
+                value={status}
+                onChange={(e) => setStatus(e.target.value)}
+              >
                 <option value="draft">Draft</option>
                 <option value="published">Published</option>
                 <option value="archived">Archived</option>
@@ -277,8 +360,14 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
             </Field>
 
             <div className="flex flex-col gap-1">
-              <Checkbox name="isFeatured" defaultChecked={row.isFeatured} label="Case of the week" />
-              <p className="pl-[26px] text-[11.5px] text-ih-muted">One slot. Setting this clears whoever holds it.</p>
+              <Checkbox
+                name="isFeatured"
+                defaultChecked={row.isFeatured}
+                label="Case of the week"
+              />
+              <p className="text-ih-muted pl-[26px] text-[11.5px]">
+                One slot. Setting this clears whoever holds it.
+              </p>
             </div>
 
             <Button
@@ -287,18 +376,22 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
               size="md"
               block
               loading={pending}
-              icon={pending ? undefined : <CheckCircle2 size={14} strokeWidth={1.8} aria-hidden="true" />}
+              icon={
+                pending ? undefined : (
+                  <CheckCircle2 size={14} strokeWidth={1.8} aria-hidden="true" />
+                )
+              }
             >
               {pending ? 'Saving…' : status === 'published' ? 'Save & update live case' : 'Save'}
             </Button>
 
             {message ? (
-              <p role="status" className="text-[12.5px] text-ih-success-ink">
+              <p role="status" className="text-ih-success-ink text-[12.5px]">
                 {message}
               </p>
             ) : null}
             {error ? (
-              <p role="alert" className="text-[12.5px] text-ih-danger-ink">
+              <p role="alert" className="text-ih-danger-ink text-[12.5px]">
                 {error}
               </p>
             ) : null}
@@ -308,7 +401,7 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
                 href={`/services/${meta.slug}`}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-1 text-[12.5px] text-ih-accent hover:text-ih-navy"
+                className="text-ih-accent hover:text-ih-navy inline-flex items-center justify-center gap-1 text-[12.5px]"
               >
                 View on the site
                 <ExternalLink size={12} strokeWidth={1.8} aria-hidden="true" />
@@ -319,16 +412,27 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
           {/* The hero photo shows here so the case is recognisable while you
               edit its words. It is not editable from this screen yet. */}
           <Panel padding="rail" className="flex flex-col gap-3">
-            <p className="text-[11px] font-medium uppercase tracking-[0.1em] text-ih-muted">Hero image</p>
-            <div className="grid aspect-[4/3] w-full place-items-center overflow-hidden rounded-md border border-ih-border bg-ih-surface-2">
+            <p className="text-ih-muted text-[11px] font-medium tracking-[0.1em] uppercase">
+              Hero image
+            </p>
+            <div className="border-ih-border bg-ih-surface-2 grid aspect-[4/3] w-full place-items-center overflow-hidden rounded-md border">
               {meta.heroUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={meta.heroUrl} alt={meta.heroAlt ?? ''} className="h-full w-full object-cover" />
+                <img
+                  src={meta.heroUrl}
+                  alt={meta.heroAlt ?? ''}
+                  className="h-full w-full object-cover"
+                />
               ) : (
-                <ImageIcon size={20} strokeWidth={1.5} aria-hidden="true" className="text-ih-muted" />
+                <ImageIcon
+                  size={20}
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                  className="text-ih-muted"
+                />
               )}
             </div>
-            <p className="text-[11.5px] text-ih-muted">
+            <p className="text-ih-muted text-[11.5px]">
               The hero image, gallery and article body are not editable here yet.
             </p>
           </Panel>
@@ -341,8 +445,8 @@ export default function ServiceCaseForm({ row, meta }: { row: ServiceCaseRow; me
 function Row({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
-      <dt className="shrink-0 text-ih-muted">{label}</dt>
-      <dd className="min-w-0 truncate text-right text-ih-ink-2">{children}</dd>
+      <dt className="text-ih-muted shrink-0">{label}</dt>
+      <dd className="text-ih-ink-2 min-w-0 truncate text-right">{children}</dd>
     </div>
   )
 }
@@ -352,7 +456,7 @@ function Required({ children }: { children: ReactNode }) {
   return (
     <>
       {children}
-      <span aria-hidden="true" className="ml-0.5 text-ih-muted">
+      <span aria-hidden="true" className="text-ih-muted ml-0.5">
         *
       </span>
     </>

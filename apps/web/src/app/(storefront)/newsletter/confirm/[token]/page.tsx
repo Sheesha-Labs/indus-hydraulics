@@ -28,8 +28,8 @@ export default async function NewsletterConfirmPage({ params }: Props) {
     return (
       <NewsletterNotice title="This link has expired">
         <p>
-          Confirmation links work for 14 days. Sign up again from the form at the bottom of the home page and we will
-          send a fresh one.
+          Confirmation links work for 14 days. Sign up again from the form at the bottom of the home
+          page and we will send a fresh one.
         </p>
       </NewsletterNotice>
     )
@@ -37,7 +37,10 @@ export default async function NewsletterConfirmPage({ params }: Props) {
   if (lookup.status === 'not_found') {
     return (
       <NewsletterNotice title="This link is no longer valid">
-        <p>It may already have been used — if you confirmed earlier, you are subscribed and there is nothing more to do.</p>
+        <p>
+          It may already have been used — if you confirmed earlier, you are subscribed and there is
+          nothing more to do.
+        </p>
       </NewsletterNotice>
     )
   }
@@ -52,13 +55,18 @@ export default async function NewsletterConfirmPage({ params }: Props) {
         body: (
           <p>
             Press the button to start receiving the Indus Hydraulics newsletter at{' '}
-            <span className="font-medium text-ih-ink">{lookup.maskedEmail}</span>.
+            <span className="text-ih-ink font-medium">{lookup.maskedEmail}</span>.
           </p>
         ),
       }}
       done={{
         title: "You're subscribed",
-        body: <p>Thank you for confirming. A welcome email is on its way, and every email has a one-click unsubscribe link.</p>,
+        body: (
+          <p>
+            Thank you for confirming. A welcome email is on its way, and every email has a one-click
+            unsubscribe link.
+          </p>
+        ),
       }}
     />
   )

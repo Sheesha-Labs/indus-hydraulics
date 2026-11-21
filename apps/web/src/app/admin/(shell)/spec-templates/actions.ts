@@ -3,11 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
-import {
-  deriveFieldKey,
-  planTemplateSwitch,
-  validateRequiredFields,
-} from '@indus/domain'
+import { deriveFieldKey, planTemplateSwitch, validateRequiredFields } from '@indus/domain'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
@@ -36,7 +32,11 @@ async function uniqueTemplateSlug(base: string, ignoreId?: string): Promise<stri
   }
 }
 
-async function uniqueFieldKey(templateId: string, base: string, ignoreId?: string): Promise<string> {
+async function uniqueFieldKey(
+  templateId: string,
+  base: string,
+  ignoreId?: string
+): Promise<string> {
   const baseKey = deriveFieldKey(base)
   let key = baseKey
   let n = 1
@@ -54,8 +54,18 @@ async function uniqueFieldKey(templateId: string, base: string, ignoreId?: strin
 
 const CreateTemplateSchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(120),
-  slug: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : '')),
-  description: z.string().trim().max(2000).optional().transform((v) => (v && v.length ? v : null)),
+  slug: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : '')),
+  description: z
+    .string()
+    .trim()
+    .max(2000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
 })
 
 export async function createSpecTemplate(formData: FormData): Promise<Result<{ id: string }>> {
@@ -83,7 +93,12 @@ const UpdateTemplateSchema = z.object({
   id: z.string().uuid(),
   name: z.string().trim().min(1).max(120),
   slug: z.string().trim().min(1).max(80),
-  description: z.string().trim().max(2000).optional().transform((v) => (v && v.length ? v : null)),
+  description: z
+    .string()
+    .trim()
+    .max(2000)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
 })
 
 export async function updateSpecTemplate(formData: FormData): Promise<Result<void>> {
@@ -121,7 +136,7 @@ export async function deleteSpecTemplate(id: string): Promise<Result<void>> {
       return fail(
         'PRECONDITION_FAILED',
         `Cannot delete: ${productCount} product${productCount === 1 ? '' : 's'} use this template`,
-        { _: ['Detach the products first (or pick a different template for them)'] },
+        { _: ['Detach the products first (or pick a different template for them)'] }
       )
     }
     // Categories that default to this template will have defaultSpecTemplateId
@@ -156,15 +171,35 @@ const optionsFromText = z
 const AddFieldSchema = z.object({
   templateId: z.string().uuid(),
   label: z.string().trim().min(1, 'Label is required').max(120),
-  key: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : '')),
-  unit: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
+  key: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : '')),
+  unit: z
+    .string()
+    .trim()
+    .max(40)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   dataType: FieldType.default('text'),
   options: optionsFromText,
-  helpText: z.string().trim().max(500).optional().transform((v) => (v && v.length ? v : null)),
+  helpText: z
+    .string()
+    .trim()
+    .max(500)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
   isRequired: z.boolean().default(false),
   isKeyFeature: z.boolean().default(false),
   isQuickSpec: z.boolean().default(false),
-  group: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
+  group: z
+    .string()
+    .trim()
+    .max(80)
+    .optional()
+    .transform((v) => (v && v.length ? v : null)),
 })
 
 export async function addTemplateField(formData: FormData): Promise<Result<void>> {
@@ -262,7 +297,7 @@ export async function updateTemplateField(formData: FormData): Promise<Result<vo
       return fail(
         'PRECONDITION_FAILED',
         `Cannot change the field key — ${existing._count.productSpecs} product${existing._count.productSpecs === 1 ? '' : 's'} reference this field. Delete the field and re-create it instead.`,
-        { key: ['Locked: in use by products'] },
+        { key: ['Locked: in use by products'] }
       )
     }
     const finalKey = referenced
@@ -310,7 +345,7 @@ export async function updateTemplateField(formData: FormData): Promise<Result<vo
 
 export async function deleteTemplateField(
   fieldId: string,
-  templateId: string,
+  templateId: string
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -330,7 +365,7 @@ export async function deleteTemplateField(
 export async function reorderTemplateField(
   fieldId: string,
   direction: 'up' | 'down',
-  templateId: string,
+  templateId: string
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -362,7 +397,7 @@ export async function reorderTemplateField(
 
 export async function setProductSpecTemplate(
   productId: string,
-  templateId: string | null,
+  templateId: string | null
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -403,7 +438,14 @@ export async function setProductSpecTemplate(
       const newFields = templateId
         ? await tx.specTemplateField.findMany({
             where: { templateId },
-            select: { id: true, key: true, label: true, unit: true, group: true, isQuickSpec: true },
+            select: {
+              id: true,
+              key: true,
+              label: true,
+              unit: true,
+              group: true,
+              isQuickSpec: true,
+            },
           })
         : []
 
@@ -411,7 +453,7 @@ export async function setProductSpecTemplate(
         oldLinkedSpecs
           .filter((s) => s.templateField)
           .map((s) => ({ id: s.id, oldKey: s.templateField!.key })),
-        newFields.map((f) => ({ id: f.id, key: f.key })),
+        newFields.map((f) => ({ id: f.id, key: f.key }))
       )
 
       // 4 — apply the plan: relinks first (with cascaded label/unit/group/isFilterable).
@@ -479,20 +521,23 @@ export async function saveProductSpecValues(formData: FormData): Promise<Result<
     // Server-side required-field check (browser-level `required` is bypassable).
     const requiredCheck = validateRequiredFields(
       updates,
-      fields.map((f) => ({ id: f.id, label: f.label, isRequired: f.isRequired })),
+      fields.map((f) => ({ id: f.id, label: f.label, isRequired: f.isRequired }))
     )
     if (!requiredCheck.ok) {
       return fail(
         'VALIDATION',
         `Required field${requiredCheck.missingLabels.length === 1 ? '' : 's'} cannot be empty: ${requiredCheck.missingLabels.join(', ')}`,
-        { _: requiredCheck.missingLabels.map((l) => `${l} is required`) },
+        { _: requiredCheck.missingLabels.map((l) => `${l} is required`) }
       )
     }
 
     await db.$transaction(async (tx) => {
       // Existing ProductSpec rows for this product, indexed by templateFieldId.
       const existing = await tx.productSpec.findMany({
-        where: { productId: parsed.productId, templateFieldId: { in: updates.map((u) => u.fieldId) } },
+        where: {
+          productId: parsed.productId,
+          templateFieldId: { in: updates.map((u) => u.fieldId) },
+        },
       })
       const existingByFieldId = new Map(existing.map((s) => [s.templateFieldId!, s]))
 

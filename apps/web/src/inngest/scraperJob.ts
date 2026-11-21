@@ -95,7 +95,7 @@ export const scraperJobRun = inngest.createFunction(
       if (existing.status !== 'queued' && existing.status !== 'running') {
         // Already completed/failed — don't re-run.
         throw new NonRetriableError(
-          `ScraperJob ${jobId} is in terminal status ${existing.status}; refusing to re-run`,
+          `ScraperJob ${jobId} is in terminal status ${existing.status}; refusing to re-run`
         )
       }
       await db.scraperJob.update({
@@ -136,12 +136,10 @@ export const scraperJobRun = inngest.createFunction(
       }
       if (explicitUrls.length > 0) {
         result = await step.run('crawl-url-list', () =>
-          crawlUrlList(job.sourceUrl, explicitUrls, crawlOpts),
+          crawlUrlList(job.sourceUrl, explicitUrls, crawlOpts)
         )
       } else {
-        result = await step.run('crawl-sitemap', () =>
-          discoverAndCrawl(job.sourceUrl, crawlOpts),
-        )
+        result = await step.run('crawl-sitemap', () => discoverAndCrawl(job.sourceUrl, crawlOpts))
       }
     } catch (err) {
       // Robots disallow → failed with clear message.
@@ -150,7 +148,7 @@ export const scraperJobRun = inngest.createFunction(
           db.scraperJob.update({
             where: { id: jobId },
             data: { status: 'failed', finishedAt: new Date(), errorMessage: 'robots disallow' },
-          }),
+          })
         )
         throw new NonRetriableError('robots.txt disallows our UA for this host')
       }
@@ -205,7 +203,7 @@ export const scraperJobRun = inngest.createFunction(
               .filter(Boolean)
               .join('; ') || null,
         },
-      }),
+      })
     )
 
     return {
@@ -214,7 +212,7 @@ export const scraperJobRun = inngest.createFunction(
       parsed: result.products.length,
       errors: result.errors.length,
     }
-  },
+  }
 )
 
 async function upsertScrapedProduct(jobId: string, draft: ScrapedProductDraft) {

@@ -30,8 +30,16 @@ export const senderSettingsSchema = z.object({
     .string()
     .trim()
     .toLowerCase()
-    .regex(/^[a-z0-9][a-z0-9._-]{0,63}$/, 'Letters, numbers, dots, dashes and underscores only, starting with a letter or number.'),
-  replyTo: z.string().trim().toLowerCase().email('Enter the address replies should go to.').max(254),
+    .regex(
+      /^[a-z0-9][a-z0-9._-]{0,63}$/,
+      'Letters, numbers, dots, dashes and underscores only, starting with a letter or number.'
+    ),
+  replyTo: z
+    .string()
+    .trim()
+    .toLowerCase()
+    .email('Enter the address replies should go to.')
+    .max(254),
 })
 
 /** Settings → the address campaigns send from. Throws if it is not on the newsletter subdomain. */

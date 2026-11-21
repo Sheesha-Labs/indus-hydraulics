@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function AdminSurfaceLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div data-surface="admin" className="flex-1 min-h-0">
+    <div data-surface="admin" className="min-h-0 flex-1">
       {children}
     </div>
   )

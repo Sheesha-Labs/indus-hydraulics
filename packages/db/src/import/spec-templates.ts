@@ -31,7 +31,7 @@ export type SpecTemplateUpsertResult = {
  */
 export async function upsertSpecTemplate(
   payload: SpecTemplatePayload,
-  tx: Tx,
+  tx: Tx
 ): Promise<SpecTemplateUpsertResult> {
   const existing = await tx.specTemplate.findUnique({
     where: { slug: payload.slug },

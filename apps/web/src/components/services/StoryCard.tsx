@@ -20,9 +20,7 @@ export default function StoryCard({ case: c, variant }: Props) {
   return (
     <article
       className={`flex flex-col overflow-hidden rounded-sm ${
-        isDark
-          ? 'bg-ih-navy text-white'
-          : 'border border-ih-border bg-ih-surface text-ih-ink'
+        isDark ? 'bg-ih-navy text-white' : 'border-ih-border bg-ih-surface text-ih-ink border'
       }`}
     >
       <Link href={`/services/${c.slug}`} className="block">
@@ -36,13 +34,14 @@ export default function StoryCard({ case: c, variant }: Props) {
       </Link>
       <div className="flex flex-1 flex-col gap-3.5 p-8">
         <span
-          className={`mono text-[11px] uppercase tracking-[0.1em] ${
+          className={`mono text-[11px] tracking-[0.1em] uppercase ${
             isDark ? 'opacity-70' : 'text-ih-muted'
           }`}
         >
-          FROM THE FIELD · {c.cardTagLabel} · {c.durationDays ? `${c.durationDays} D ON BENCH` : 'CASE STUDY'}
+          FROM THE FIELD · {c.cardTagLabel} ·{' '}
+          {c.durationDays ? `${c.durationDays} D ON BENCH` : 'CASE STUDY'}
         </span>
-        <h3 className="text-[28px] font-semibold leading-[1.1] tracking-[-0.02em]">
+        <h3 className="text-[28px] leading-[1.1] font-semibold tracking-[-0.02em]">
           <Link href={`/services/${c.slug}`}>{c.title}</Link>
         </h3>
         <p className={`text-[15px] leading-[1.55] ${isDark ? 'opacity-85' : 'text-ih-ink-2'}`}>
@@ -57,14 +56,14 @@ export default function StoryCard({ case: c, variant }: Props) {
             {pills.slice(0, 3).map((p, i) => (
               <div key={i}>
                 <div
-                  className={`text-[22px] font-semibold leading-tight tracking-[-0.015em] ${
+                  className={`text-[22px] leading-tight font-semibold tracking-[-0.015em] ${
                     p.style === 'accent' ? 'text-ih-accent' : ''
                   }`}
                 >
                   {p.label.includes(':') ? (p.label.split(':')[1] ?? '').trim() : p.label}
                 </div>
                 <div
-                  className={`mono mt-1 text-[10px] uppercase tracking-[0.1em] ${
+                  className={`mono mt-1 text-[10px] tracking-[0.1em] uppercase ${
                     isDark ? 'opacity-60' : 'text-ih-muted-2'
                   }`}
                 >

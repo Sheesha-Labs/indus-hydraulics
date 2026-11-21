@@ -38,9 +38,7 @@ export type LinkRow = {
   activatedAt: Date | null
 }
 
-export type LinkState =
-  | { usable: true }
-  | { usable: false; reason: 'unknown' | 'used' | 'expired' }
+export type LinkState = { usable: true } | { usable: false; reason: 'unknown' | 'used' | 'expired' }
 
 /**
  * The single place a link is judged.
@@ -65,7 +63,7 @@ export function linkState(row: LinkRow | null | undefined, nowMs: number): LinkS
  */
 export function linkStateMessage(
   reason: 'unknown' | 'used' | 'expired',
-  purpose: InvitationPurpose,
+  purpose: InvitationPurpose
 ): string {
   const noun = purpose === 'invite' ? 'invitation' : 'password reset link'
   switch (reason) {
@@ -114,6 +112,6 @@ export function validateStaffPassword(password: string, confirm: string): string
   if (password.length < MIN_STAFF_PASSWORD_LENGTH) {
     return `Use at least ${MIN_STAFF_PASSWORD_LENGTH} characters.`
   }
-  if (password !== confirm) return "Both passwords must match."
+  if (password !== confirm) return 'Both passwords must match.'
   return null
 }

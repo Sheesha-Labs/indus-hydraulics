@@ -26,21 +26,21 @@ export function MarketEnquiryResult({
 }) {
   return (
     <div className="flex flex-col items-start gap-4" role="status" aria-live="polite">
-      <span className="mono text-[10px] uppercase tracking-[0.14em] text-ih-accent">
+      <span className="mono text-ih-accent text-[10px] tracking-[0.14em] uppercase">
         Enquiry received · {code}
       </span>
-      <p className="max-w-[52ch] text-[15px] leading-[1.65] text-ih-ink-2">
+      <p className="text-ih-ink-2 max-w-[52ch] text-[15px] leading-[1.65]">
         It is with the Dubai export desk. Someone will come back on the {marketName} lane with a
         priced Estimate, the Incoterm stated rather than assumed, and the document set listed line
         by line.
       </p>
       <Link
         href={`/quote/${code}?token=${encodeURIComponent(token)}`}
-        className="text-[13.5px] text-ih-accent underline underline-offset-4 hover:text-ih-accent-hover"
+        className="text-ih-accent hover:text-ih-accent-hover text-[13.5px] underline underline-offset-4"
       >
         Track this enquiry →
       </Link>
-      <p className="text-[12.5px] text-ih-muted">
+      <p className="text-ih-muted text-[12.5px]">
         A copy is on its way to the address you gave. If it does not arrive, check the spam folder
         before assuming the enquiry did not land.
       </p>

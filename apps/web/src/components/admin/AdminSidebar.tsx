@@ -64,7 +64,9 @@ type NavItem = {
   also?: string[]
 }
 
-const OVERVIEW: NavItem[] = [{ id: 'dashboard', label: 'Dashboard', path: '', Icon: LayoutDashboard }]
+const OVERVIEW: NavItem[] = [
+  { id: 'dashboard', label: 'Dashboard', path: '', Icon: LayoutDashboard },
+]
 
 /**
  * The folding groups. Twenty links in five flat groups were taller than a
@@ -78,7 +80,12 @@ const GROUPS: { section: string; items: NavItem[] }[] = [
       { id: 'products', label: 'Products', path: 'products', Icon: Package },
       { id: 'categories', label: 'Categories', path: 'categories', Icon: FolderTree },
       { id: 'brands', label: 'Brands', path: 'brands', Icon: Award },
-      { id: 'spec-templates', label: 'Spec templates', path: 'spec-templates', Icon: LayoutTemplate },
+      {
+        id: 'spec-templates',
+        label: 'Spec templates',
+        path: 'spec-templates',
+        Icon: LayoutTemplate,
+      },
       { id: 'industries', label: 'Industries', path: 'industries', Icon: ImageIcon },
       { id: 'media', label: 'Media library', path: 'media', Icon: ImageIcon },
       { id: 'scraper', label: 'Competitor scraper', path: 'scraper', Icon: Globe },
@@ -137,7 +144,8 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
   // The reader's open/closed choices live in localStorage. The server
   // snapshot is null, so the first render (server and client alike) opens
   // only the group holding the current page and hydration matches.
-  const saved = parseSections(useSyncExternalStore(subscribeOpenSections, readOpenSections, () => null)) ?? []
+  const saved =
+    parseSections(useSyncExternalStore(subscribeOpenSections, readOpenSections, () => null)) ?? []
 
   // The current page's group is always open — unless the reader folded it
   // while on that page. That exception lasts until they move to another group.
@@ -193,7 +201,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
         scroll is only a fallback when a reader opens every group on a short
         screen.
       */
-      className="hidden w-[240px] flex-col gap-1 border-r border-ih-border bg-ih-surface px-3.5 py-5 md:sticky md:top-0 md:flex md:h-screen"
+      className="border-ih-border bg-ih-surface hidden w-[240px] flex-col gap-1 border-r px-3.5 py-5 md:sticky md:top-0 md:flex md:h-screen"
       aria-label="Primary admin navigation"
     >
       {/*
@@ -212,7 +220,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
           className="flex flex-col items-start gap-2 rounded-md focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
         >
           <BrandLockup logoUrl={logoUrl} logoStyle={logoStyle} name={brandName} surface="header" />
-          <span className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.14em] text-ih-muted">
+          <span className="text-ih-muted text-[10.5px] font-medium tracking-[0.14em] uppercase tabular-nums">
             Admin panel
           </span>
         </Link>
@@ -235,10 +243,10 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
                 onClick={() => toggle(section)}
                 aria-expanded={open}
                 aria-controls={panelId}
-                className="group flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left transition-colors hover:bg-ih-surface-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+                className="group hover:bg-ih-surface-2 focus-visible:ring-ih-accent-soft flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left transition-colors focus-visible:ring-2 focus-visible:outline-none"
               >
                 <span
-                  className={`flex-1 tabular-nums text-[10.5px] font-medium uppercase tracking-[0.1em] ${
+                  className={`flex-1 text-[10.5px] font-medium tracking-[0.1em] uppercase tabular-nums ${
                     holdsActive && !open ? 'text-ih-ink' : 'text-ih-muted-2'
                   }`}
                 >
@@ -246,13 +254,13 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
                 </span>
                 {/* A folded group that holds the current page says so. */}
                 {holdsActive && !open ? (
-                  <span className="h-1.5 w-1.5 rounded-full bg-ih-navy" aria-hidden="true" />
+                  <span className="bg-ih-navy h-1.5 w-1.5 rounded-full" aria-hidden="true" />
                 ) : null}
                 <ChevronRight
                   size={14}
                   strokeWidth={1.8}
                   aria-hidden="true"
-                  className={`text-ih-muted-2 transition-transform duration-150 motion-reduce:transition-none group-hover:text-ih-ink-2 ${
+                  className={`text-ih-muted-2 group-hover:text-ih-ink-2 transition-transform duration-150 motion-reduce:transition-none ${
                     open ? 'rotate-90' : ''
                   }`}
                 />
@@ -281,27 +289,27 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
       </nav>
 
       {/* The only divider left in the rail. */}
-      <div className="mt-auto flex flex-col gap-1 border-t border-ih-border pt-4">
+      <div className="border-ih-border mt-auto flex flex-col gap-1 border-t pt-4">
         <a
           href={process.env.NEXT_PUBLIC_STOREFRONT_URL ?? '/'}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="View storefront in a new tab"
-          className="flex items-center gap-2.5 rounded px-2.5 py-2 text-[13px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+          className="text-ih-ink-2 hover:bg-ih-surface-2 focus-visible:ring-ih-accent-soft flex items-center gap-2.5 rounded px-2.5 py-2 text-[13px] transition-colors focus-visible:ring-2 focus-visible:outline-none"
         >
           <ExternalLink size={15} strokeWidth={1.6} aria-hidden="true" />
           <span>View storefront</span>
         </a>
 
         <div className="grid grid-cols-[32px_1fr_auto] items-center gap-2.5 rounded px-2.5 py-2">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-ih-accent-soft tabular-nums text-[11.5px] font-medium text-ih-accent">
+          <span className="bg-ih-accent-soft text-ih-accent grid h-8 w-8 place-items-center rounded-full text-[11.5px] font-medium tabular-nums">
             {initials}
           </span>
           <span className="min-w-0">
-            <span className="block truncate text-[12.5px] font-medium leading-tight text-ih-ink">
+            <span className="text-ih-ink block truncate text-[12.5px] leading-tight font-medium">
               {userName}
             </span>
-            <span className="block truncate text-[11px] text-ih-muted">
+            <span className="text-ih-muted block truncate text-[11px]">
               {ROLE_LABELS[userRole] ?? userRole}
             </span>
           </span>
@@ -309,7 +317,7 @@ export default function AdminSidebar({ userName, userRole, logoUrl, logoStyle, b
             onClick={() => void adminSignOutAction()}
             aria-label="Sign out"
             title="Sign out"
-            className="grid h-7 w-7 place-items-center rounded text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+            className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink focus-visible:ring-ih-accent-soft grid h-7 w-7 place-items-center rounded transition-colors focus-visible:ring-2 focus-visible:outline-none"
           >
             <LogOut size={14} strokeWidth={1.6} aria-hidden="true" />
           </button>
@@ -324,8 +332,8 @@ function NavLink({ item: { label, path, Icon }, active }: { item: NavItem; activ
     <Link
       href={path ? `${ADMIN_PREFIX}/${path}` : ADMIN_PREFIX}
       aria-current={active ? 'page' : undefined}
-      className={`flex items-center gap-2.5 rounded-md px-2.5 py-2 text-[13px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${
-        active ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+      className={`focus-visible:ring-ih-accent-soft flex items-center gap-2.5 rounded-md px-2.5 py-2 text-[13px] transition-colors focus-visible:ring-2 focus-visible:outline-none ${
+        active ? 'bg-ih-navy text-ih-bg font-medium' : 'text-ih-ink-2 hover:bg-ih-surface-2'
       }`}
     >
       <Icon size={15} strokeWidth={1.6} aria-hidden="true" />

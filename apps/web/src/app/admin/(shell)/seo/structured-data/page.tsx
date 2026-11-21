@@ -10,16 +10,14 @@ export const metadata: Metadata = { title: 'Structured Data — Indus Admin' }
  */
 export default function StructuredDataPage() {
   return (
-    <div className="max-w-[640px] rounded-lg border border-ih-border p-8 text-[13px] text-ih-muted">
-      <h2 className="text-[18px] font-medium text-ih-ink mb-2">
-        Structured data globals
-      </h2>
+    <div className="border-ih-border text-ih-muted max-w-[640px] rounded-lg border p-8 text-[13px]">
+      <h2 className="text-ih-ink mb-2 text-[18px] font-medium">Structured data globals</h2>
       <p className="mb-3">
         The storefront already emits Organization &amp; WebSite JSON-LD on every page using the
-        admin-managed defaults. Custom <code>sameAs</code>, <code>contactPoint</code>, and
-        per-type overrides land in <strong>Phase 2</strong>.
+        admin-managed defaults. Custom <code>sameAs</code>, <code>contactPoint</code>, and per-type
+        overrides land in <strong>Phase 2</strong>.
       </p>
-      <p className="tabular-nums text-[11px]">
+      <p className="text-[11px] tabular-nums">
         Per-entity JSON-LD override is exposed today via the Prisma <code>jsonLdOverride</code>{' '}
         column on every SEO-aware entity (Product, Category, Brand, Industry, BlogPost, CmsPage).
       </p>

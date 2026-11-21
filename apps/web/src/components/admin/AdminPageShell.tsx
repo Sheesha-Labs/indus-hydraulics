@@ -87,12 +87,14 @@ export default function AdminPageShell({
         left edge over the first content element below it, which is the single
         most visible alignment in the console.
       */}
-      <header className="flex h-[60px] shrink-0 items-center gap-4 border-b border-ih-border bg-ih-surface px-7">
+      <header className="border-ih-border bg-ih-surface flex h-[60px] shrink-0 items-center gap-4 border-b px-7">
         <div className="min-w-0 flex-1">
-          {breadcrumbs ?? sub ? (
-            <div className="mb-0.5 truncate text-[11.5px] text-ih-muted [&_a]:text-ih-accent [&_a]:transition-colors [&_a:hover]:text-ih-navy">{breadcrumbs ?? sub}</div>
+          {(breadcrumbs ?? sub) ? (
+            <div className="text-ih-muted [&_a]:text-ih-accent [&_a:hover]:text-ih-navy mb-0.5 truncate text-[11.5px] [&_a]:transition-colors">
+              {breadcrumbs ?? sub}
+            </div>
           ) : null}
-          <h1 className="truncate text-[18px] font-medium tracking-tight text-ih-ink">{title}</h1>
+          <h1 className="text-ih-ink truncate text-[18px] font-medium tracking-tight">{title}</h1>
         </div>
         {/* Rendered only when there are actions — an empty flex box would still
             eat the gap and shift the title's optical centre. */}

@@ -42,7 +42,9 @@ export function pauseSeconds(maxPerHour: number): number {
 
 /** The Resend idempotency key for a batch: stable for the same deliveries, in any order. */
 export function batchKey(campaignId: string, deliveryIds: string[]): string {
-  const h = createHash('sha256').update(`${campaignId}:${[...deliveryIds].sort().join(',')}`).digest('hex')
+  const h = createHash('sha256')
+    .update(`${campaignId}:${[...deliveryIds].sort().join(',')}`)
+    .digest('hex')
   return `newsletter-${h.slice(0, 48)}`
 }
 
@@ -54,7 +56,9 @@ export function batchKey(campaignId: string, deliveryIds: string[]): string {
  * database function so it is atomic and needs no address in Node.
  */
 export async function startCampaign(campaignId: string): Promise<number | null> {
-  const rows = await db.$queryRaw<{ n: number | null }[]>(Prisma.sql`SELECT public.newsletter_start_campaign(${campaignId}) AS n`)
+  const rows = await db.$queryRaw<{ n: number | null }[]>(
+    Prisma.sql`SELECT public.newsletter_start_campaign(${campaignId}) AS n`
+  )
   return rows[0]?.n ?? null
 }
 
@@ -66,7 +70,7 @@ export async function startCampaign(campaignId: string): Promise<number | null> 
  */
 export async function claimBatch(campaignId: string, n = BATCH_SIZE): Promise<string[]> {
   const rows = await db.$queryRaw<{ id: string }[]>(
-    Prisma.sql`SELECT id FROM public.newsletter_claim_deliveries(${campaignId}, ${n}::int)`,
+    Prisma.sql`SELECT id FROM public.newsletter_claim_deliveries(${campaignId}, ${n}::int)`
   )
   return rows.map((r) => r.id)
 }
@@ -79,13 +83,25 @@ export type BatchOutcome = { sent: number; skipped: number; failed: number }
  * failure while attempts remain (Inngest retries the step); on the last
  * attempt marks the batch failed instead.
  */
-export async function sendBatch(campaignId: string, deliveryIds: string[], attempt = 0): Promise<BatchOutcome> {
+export async function sendBatch(
+  campaignId: string,
+  deliveryIds: string[],
+  attempt = 0
+): Promise<BatchOutcome> {
   const out: BatchOutcome = { sent: 0, skipped: 0, failed: 0 }
   if (deliveryIds.length === 0) return out
 
   const campaign = await db.newsletterCampaign.findUnique({
     where: { id: campaignId },
-    select: { status: true, subject: true, preheader: true, format: true, design: true, bodyHtml: true, dryRun: true },
+    select: {
+      status: true,
+      subject: true,
+      preheader: true,
+      format: true,
+      design: true,
+      bodyHtml: true,
+      dryRun: true,
+    },
   })
   const deliveries = await db.newsletterDelivery.findMany({
     where: { id: { in: deliveryIds }, campaignId, status: 'sending' },
@@ -108,7 +124,12 @@ export async function sendBatch(campaignId: string, deliveryIds: string[], attem
   // Still mailable right now? Someone may have left since the snapshot.
   const hashes = deliveries.map((d) => newsletterEmailHash((d.subscriber ?? d.contact)!.email))
   const suppressed = new Set(
-    (await db.newsletterSuppression.findMany({ where: { emailHash: { in: hashes } }, select: { emailHash: true } })).map((s) => s.emailHash),
+    (
+      await db.newsletterSuppression.findMany({
+        where: { emailHash: { in: hashes } },
+        select: { emailHash: true },
+      })
+    ).map((s) => s.emailHash)
   )
 
   const content: CampaignContent = {
@@ -118,13 +139,19 @@ export async function sendBatch(campaignId: string, deliveryIds: string[], attem
     design: campaign.design,
     bodyHtml: campaign.bodyHtml,
   }
-  const [records, brand, sender] = await Promise.all([resolveRecords(campaignRecordRefs(content)), campaignBrand(), loadSender()])
+  const [records, brand, sender] = await Promise.all([
+    resolveRecords(campaignRecordRefs(content)),
+    campaignBrand(),
+    loadSender(),
+  ])
 
   const skip: string[] = []
   const sendable: { id: string; input: SendEmailInput }[] = []
   deliveries.forEach((d, i) => {
     const person = d.subscriber ?? d.contact
-    const active = d.subscriber ? d.subscriber.status === 'confirmed' : d.contact?.status === 'active'
+    const active = d.subscriber
+      ? d.subscriber.status === 'confirmed'
+      : d.contact?.status === 'active'
     if (!person || !active || suppressed.has(hashes[i]!)) {
       skip.push(d.id)
       return
@@ -156,7 +183,10 @@ export async function sendBatch(campaignId: string, deliveryIds: string[], attem
     out.skipped = (
       await db.newsletterDelivery.updateMany({
         where: { id: { in: skip }, status: 'sending' },
-        data: { status: 'skipped', error: 'Unsubscribed, bounced or suppressed since the send started' },
+        data: {
+          status: 'skipped',
+          error: 'Unsubscribed, bounced or suppressed since the send started',
+        },
       })
     ).count
   }
@@ -180,7 +210,7 @@ export async function sendBatch(campaignId: string, deliveryIds: string[], attem
     // retry would send a different payload (someone left in between), Resend
     // refuses the reused key instead of sending — a failed batch, never a
     // duplicate.
-    { idempotencyKey: batchKey(campaignId, deliveryIds) },
+    { idempotencyKey: batchKey(campaignId, deliveryIds) }
   )
   if (!result.ok) {
     if (attempt + 1 < MAX_SEND_ATTEMPTS) throw new Error(`Resend batch failed: ${result.error}`)
@@ -197,9 +227,14 @@ export async function sendBatch(campaignId: string, deliveryIds: string[], attem
     sendable.map((s, i) =>
       db.newsletterDelivery.updateMany({
         where: { id: s.id, status: 'sending' },
-        data: { status: 'sent', sentAt: now, providerId: result.providerIds[i] ?? null, error: null },
-      }),
-    ),
+        data: {
+          status: 'sent',
+          sentAt: now,
+          providerId: result.providerIds[i] ?? null,
+          error: null,
+        },
+      })
+    )
   )
   out.sent = sendable.length
   return out
@@ -221,10 +256,19 @@ export async function skipRemaining(campaignId: string): Promise<number> {
  */
 export async function finishCampaign(campaignId: string, now = new Date()): Promise<boolean> {
   await db.newsletterDelivery.updateMany({
-    where: { campaignId, status: 'sending', claimedAt: { lt: new Date(now.getTime() - ORPHAN_AFTER_MS) } },
-    data: { status: 'failed', error: 'Outcome unknown — the send was interrupted; not retried to avoid a duplicate' },
+    where: {
+      campaignId,
+      status: 'sending',
+      claimedAt: { lt: new Date(now.getTime() - ORPHAN_AFTER_MS) },
+    },
+    data: {
+      status: 'failed',
+      error: 'Outcome unknown — the send was interrupted; not retried to avoid a duplicate',
+    },
   })
-  const open = await db.newsletterDelivery.count({ where: { campaignId, status: { in: ['queued', 'sending'] } } })
+  const open = await db.newsletterDelivery.count({
+    where: { campaignId, status: { in: ['queued', 'sending'] } },
+  })
   if (open > 0) return false
   await db.newsletterCampaign.updateMany({
     where: { id: campaignId, status: 'sending' },
@@ -233,7 +277,10 @@ export async function finishCampaign(campaignId: string, now = new Date()): Prom
   return true
 }
 
-export type DeliveryCounts = Record<'queued' | 'sending' | 'sent' | 'failed' | 'skipped', number> & {
+export type DeliveryCounts = Record<
+  'queued' | 'sending' | 'sent' | 'failed' | 'skipped',
+  number
+> & {
   delivered: number
   bounced: number
   complained: number
@@ -242,14 +289,29 @@ export type DeliveryCounts = Record<'queued' | 'sending' | 'sent' | 'failed' | '
 
 export async function deliveryCounts(campaignId: string): Promise<DeliveryCounts> {
   const [groups, delivered, bounced, complained] = await Promise.all([
-    db.newsletterDelivery.groupBy({ by: ['status'], where: { campaignId }, _count: { _all: true } }),
+    db.newsletterDelivery.groupBy({
+      by: ['status'],
+      where: { campaignId },
+      _count: { _all: true },
+    }),
     db.newsletterDelivery.count({ where: { campaignId, deliveredAt: { not: null } } }),
     db.newsletterDelivery.count({ where: { campaignId, bouncedAt: { not: null } } }),
     db.newsletterDelivery.count({ where: { campaignId, complainedAt: { not: null } } }),
   ])
-  const c: DeliveryCounts = { queued: 0, sending: 0, sent: 0, failed: 0, skipped: 0, delivered, bounced, complained, total: 0 }
+  const c: DeliveryCounts = {
+    queued: 0,
+    sending: 0,
+    sent: 0,
+    failed: 0,
+    skipped: 0,
+    delivered,
+    bounced,
+    complained,
+    total: 0,
+  }
   for (const g of groups) {
-    c[g.status as keyof Omit<DeliveryCounts, 'delivered' | 'bounced' | 'complained' | 'total'>] = g._count._all
+    c[g.status as keyof Omit<DeliveryCounts, 'delivered' | 'bounced' | 'complained' | 'total'>] =
+      g._count._all
     c.total += g._count._all
   }
   return c

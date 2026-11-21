@@ -9,7 +9,7 @@ type Props = {
 export default function RelatedCases({ cases }: Props) {
   if (cases.length === 0) return null
   return (
-    <section className="-mx-[var(--spacing-page-gutter)] border-y border-ih-border bg-ih-surface px-[var(--spacing-page-gutter)] py-16">
+    <section className="border-ih-border bg-ih-surface -mx-[var(--spacing-page-gutter)] border-y px-[var(--spacing-page-gutter)] py-16">
       <div className="mx-auto max-w-[var(--spacing-max-w)]">
         <div className="mb-6 flex items-baseline justify-between gap-4">
           <div>
@@ -20,7 +20,7 @@ export default function RelatedCases({ cases }: Props) {
           </div>
           <Link
             href="/services"
-            className="inline-flex items-center rounded-sm border border-ih-border bg-ih-surface px-4 py-2 text-sm font-medium hover:border-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent inline-flex items-center rounded-sm border px-4 py-2 text-sm font-medium"
           >
             All case studies →
           </Link>
@@ -30,7 +30,7 @@ export default function RelatedCases({ cases }: Props) {
             <Link
               key={c.id}
               href={`/services/${c.slug}`}
-              className="flex flex-col overflow-hidden rounded-sm border border-ih-border bg-ih-bg hover:border-ih-accent"
+              className="border-ih-border bg-ih-bg hover:border-ih-accent flex flex-col overflow-hidden rounded-sm border"
             >
               <PlaceholderImage
                 storagePath={c.heroImage?.storagePath}
@@ -40,13 +40,13 @@ export default function RelatedCases({ cases }: Props) {
                 sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw"
               />
               <div className="p-5">
-                <span className="mono text-[10.5px] uppercase tracking-[0.08em] text-ih-accent">
+                <span className="mono text-ih-accent text-[10.5px] tracking-[0.08em] uppercase">
                   NO. {c.caseNumber} · {c.cardTagLabel}
                 </span>
-                <h4 className="mb-2 mt-1.5 text-[18px] font-semibold leading-tight tracking-[-0.01em]">
+                <h4 className="mt-1.5 mb-2 text-[18px] leading-tight font-semibold tracking-[-0.01em]">
                   {c.title}
                 </h4>
-                <p className="m-0 text-[13px] leading-[1.5] text-ih-muted">
+                <p className="text-ih-muted m-0 text-[13px] leading-[1.5]">
                   {c.cardOneLiner ?? c.deck}
                 </p>
               </div>

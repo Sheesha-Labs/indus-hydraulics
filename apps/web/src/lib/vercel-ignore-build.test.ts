@@ -112,7 +112,7 @@ describe('vercel ignore build step', () => {
         decide({
           'packages/db/data/catalogue-example/catalogue.json': '{}',
           'packages/db/data/catalogue-example/README.md': 'x',
-        }),
+        })
       ).toBe('skip')
     })
 
@@ -121,7 +121,7 @@ describe('vercel ignore build step', () => {
         decide({
           'packages/db/data/catalogue-example/catalogue.json': '{}',
           'packages/db/src/x.ts': 'export {}',
-        }),
+        })
       ).toBe('build')
     })
 

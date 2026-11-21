@@ -55,14 +55,14 @@ export default async function NewUserPage() {
           */}
           <Link
             href="/admin/users"
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             ← All staff
           </Link>
           <button
             type="submit"
             form="new-staff-form"
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center rounded-md px-4 text-[13px] font-medium transition-opacity"
           >
             Create Staff Member
           </button>
@@ -70,32 +70,32 @@ export default async function NewUserPage() {
       }
     >
       <div className="max-w-[560px]">
-
         <form id="new-staff-form" action={createUser} className="flex flex-col gap-5">
           <div>
-            <label htmlFor="newuser-name" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="newuser-name"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Full Name
             </label>
-            <Input
-              id="newuser-name"
-              name="name"
-              type="text"
-              required />
+            <Input id="newuser-name" name="name" type="text" required />
           </div>
 
           <div>
-            <label htmlFor="newuser-email" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="newuser-email"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Email Address
             </label>
-            <Input
-              id="newuser-email"
-              name="email"
-              type="email"
-              required />
+            <Input id="newuser-email" name="email" type="email" required />
           </div>
 
           <div>
-            <label htmlFor="newuser-password" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="newuser-password"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Password
             </label>
             <Input
@@ -103,19 +103,22 @@ export default async function NewUserPage() {
               name="password"
               type="password"
               required
-              autoComplete="new-password" />
+              autoComplete="new-password"
+            />
           </div>
 
           <div>
-            <label htmlFor="newuser-role" className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label
+              htmlFor="newuser-role"
+              className="text-ih-muted mb-1.5 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
+            >
               Role
             </label>
-            <Select
-              id="newuser-role"
-              name="role"
-              defaultValue="sales_rep">
+            <Select id="newuser-role" name="role" defaultValue="sales_rep">
               {ROLES.map((r) => (
-                <option key={r.value} value={r.value}>{r.label}</option>
+                <option key={r.value} value={r.value}>
+                  {r.label}
+                </option>
               ))}
             </Select>
           </div>

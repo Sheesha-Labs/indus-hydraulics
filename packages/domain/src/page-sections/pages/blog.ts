@@ -15,7 +15,8 @@ export const BLOG_PAGE: MasterPageDef = {
     {
       key: 'hero',
       label: 'Hero',
-      description: 'Eyebrow, headline and standfirst. The search box and article count beside them are fixed.',
+      description:
+        'Eyebrow, headline and standfirst. The search box and article count beside them are fixed.',
       locked: true,
       fields: [eyebrow(), heading({ max: 200 }), area('body', 'Standfirst', { max: 400 })],
       defaults: {
@@ -39,7 +40,8 @@ export const BLOG_PAGE: MasterPageDef = {
     {
       key: 'articles',
       label: 'Article list',
-      description: 'The grid of the newest articles, and the message shown when none are published.',
+      description:
+        'The grid of the newest articles, and the message shown when none are published.',
       dataNote: 'The cards are the published articles, newest first.',
       fields: [text('empty_message', 'Message when nothing is published', { max: 160 })],
       defaults: { empty_message: 'No articles have been published yet.' },
@@ -67,8 +69,13 @@ export const BLOG_PAGE: MasterPageDef = {
     {
       key: 'help_card',
       label: 'Navy band — ask an engineer',
-      description: 'The prompt panel in the navy band. The two band panels follow the order of this list.',
-      fields: [heading({ max: 120 }), area('body', 'Body', { max: 300 }), ...ctaPair('', 'Button label')],
+      description:
+        'The prompt panel in the navy band. The two band panels follow the order of this list.',
+      fields: [
+        heading({ max: 120 }),
+        area('body', 'Body', { max: 300 }),
+        ...ctaPair('', 'Button label'),
+      ],
       defaults: {
         heading: 'Have a question?',
         body: 'Send us a circuit, a failure photo or a bare SKU. Our applications engineers reply same business day, no charge.',

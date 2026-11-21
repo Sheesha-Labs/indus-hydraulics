@@ -67,11 +67,7 @@ const PRICING_PER_M: Record<string, { input: number; output: number }> = {
  * preamble. Field names match the SEO column names in the Prisma model.
  */
 export type AiSuggestField =
-  | 'seoTitle'
-  | 'seoDescription'
-  | 'focusKeyword'
-  | 'altText'
-  | 'longDescription'
+  'seoTitle' | 'seoDescription' | 'focusKeyword' | 'altText' | 'longDescription'
 
 const FIELD_SCHEMAS: Record<AiSuggestField, { schema: Record<string, unknown>; key: string }> = {
   seoTitle: {
@@ -187,9 +183,7 @@ export async function generateSuggestion(input: GenerateInput): Promise<Generate
   // Extract the JSON text block. With output_config.format set, the
   // assistant returns a single text block whose contents are valid JSON
   // matching our schema.
-  const textBlock = response.content.find(
-    (b): b is Anthropic.TextBlock => b.type === 'text',
-  )
+  const textBlock = response.content.find((b): b is Anthropic.TextBlock => b.type === 'text')
   if (!textBlock) {
     throw new Error('AI response had no text block')
   }

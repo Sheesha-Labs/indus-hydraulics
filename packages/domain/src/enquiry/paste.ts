@@ -31,10 +31,7 @@ const CERTIFICATION = /\b(EN\s?10204(?:\s?3\.[12])?|3\.[12]\b(?:\s*MTC)?|MTC|IAC
 const PART_NUMBER = /\b(?:P\/?N|PART\s*(?:NO|NUMBER)|REF)\s*[:.#-]?\s*([A-Z0-9][A-Z0-9./-]{3,})\b/i
 
 export type DraftLineFlag =
-  | 'qty_not_stated'
-  | 'unit_not_stated'
-  | 'description_very_short'
-  | 'title_sourced'
+  'qty_not_stated' | 'unit_not_stated' | 'description_very_short' | 'title_sourced'
 
 export type DraftEnquiryLine = {
   position: number
@@ -80,14 +77,13 @@ function buildLine(
   raw: string,
   position: number,
   sourceKind: 'body' | 'title',
-  preset?: { qty?: number; unit?: string },
+  preset?: { qty?: number; unit?: string }
 ): DraftEnquiryLine | null {
   const sourceText = raw.trim()
   if (!sourceText) return null
 
-  const { qty, unit } = preset?.qty != null
-    ? { qty: preset.qty, unit: preset.unit ?? null }
-    : parseQty(sourceText)
+  const { qty, unit } =
+    preset?.qty != null ? { qty: preset.qty, unit: preset.unit ?? null } : parseQty(sourceText)
 
   // Strip the trailing quantity clause out of the human-facing description,
   // but keep sourceText verbatim so the row stays auditable.
@@ -149,7 +145,7 @@ export function extractFromPaste(input: { rawText: string; title?: string }): Pa
     // measured shape where the name is literally repeated before item one.
     lines = splitTitleItems(input.title)
       .map((item, i) =>
-        buildLine(item.description, i + 1, 'title', { qty: item.qty, unit: item.unit }),
+        buildLine(item.description, i + 1, 'title', { qty: item.qty, unit: item.unit })
       )
       .filter((l): l is DraftEnquiryLine => l !== null)
   }

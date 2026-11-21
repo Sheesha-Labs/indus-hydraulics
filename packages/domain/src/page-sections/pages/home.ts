@@ -1,14 +1,4 @@
-import {
-  area,
-  body,
-  cardList,
-  ctaPair,
-  eyebrow,
-  heading,
-  image,
-  statList,
-  text,
-} from '../fields'
+import { area, body, cardList, ctaPair, eyebrow, heading, image, statList, text } from '../fields'
 import type { MasterPageDef } from '../types'
 
 /**
@@ -61,23 +51,39 @@ export const HOME_PAGE: MasterPageDef = {
       key: 'usp',
       label: 'Promise strip',
       description: 'The navy band of four promises directly under the hero.',
-      fields: [
-        cardList('items', 'Promises', { itemLabel: 'promise', max: 6, descMax: 200 }),
-      ],
+      fields: [cardList('items', 'Promises', { itemLabel: 'promise', max: 6, descMax: 200 })],
       defaults: {
         items: [
-          { enabled: true, name: 'Same-day dispatch', desc: 'Stock orders before 14:00 GST ship same day from our Dubai HQ.' },
-          { enabled: true, name: 'Engineering support', desc: 'Speak to a real applications engineer — not a call centre.' },
-          { enabled: true, name: 'Datasheets & CAD', desc: 'Every SKU ships with a PDF datasheet and downloadable 3D model.' },
-          { enabled: true, name: 'Backed by warranty', desc: '24-month manufacturer warranty across the entire catalogue.' },
+          {
+            enabled: true,
+            name: 'Same-day dispatch',
+            desc: 'Stock orders before 14:00 GST ship same day from our Dubai HQ.',
+          },
+          {
+            enabled: true,
+            name: 'Engineering support',
+            desc: 'Speak to a real applications engineer — not a call centre.',
+          },
+          {
+            enabled: true,
+            name: 'Datasheets & CAD',
+            desc: 'Every SKU ships with a PDF datasheet and downloadable 3D model.',
+          },
+          {
+            enabled: true,
+            name: 'Backed by warranty',
+            desc: '24-month manufacturer warranty across the entire catalogue.',
+          },
         ],
       },
     },
     {
       key: 'brands',
       label: 'Brand rail',
-      description: 'The scrolling partner-brand logo strip, closing the hero directly under the promise strip.',
-      dataNote: 'A scrolling strip of every published brand with a logo, one tile per logo, best-stocked first (house brand excluded). Each tile links to the brand page.',
+      description:
+        'The scrolling partner-brand logo strip, closing the hero directly under the promise strip.',
+      dataNote:
+        'A scrolling strip of every published brand with a logo, one tile per logo, best-stocked first (house brand excluded). Each tile links to the brand page.',
       fields: [
         eyebrow({ help: 'Use {brands} for the live count.' }),
         heading(),
@@ -126,7 +132,8 @@ export const HOME_PAGE: MasterPageDef = {
       key: 'industries',
       label: 'Industries strip',
       description: 'Photo tiles for the industries served, each linking to its industry page.',
-      dataNote: 'The tiles are the published industries, in the order set under Catalogue · Industries, each showing that page’s hero photograph, name and tagline (edited there).',
+      dataNote:
+        'The tiles are the published industries, in the order set under Catalogue · Industries, each showing that page’s hero photograph, name and tagline (edited there).',
       fields: [eyebrow(), heading()],
       defaults: {
         eyebrow: 'INDUSTRIES SERVED',
@@ -145,20 +152,45 @@ export const HOME_PAGE: MasterPageDef = {
         area('quote', 'Quote', { max: 400, optional: false }),
         text('quote_name', 'Attributed to', { max: 80, optional: true }),
         text('quote_title', 'Their role', { max: 80, optional: true }),
-        image('quote_image', 'Quote panel image', 'Sits behind the quote. Blank keeps the plain navy panel.'),
-        image('quote_avatar', 'Headshot', 'The round photo beside the name. Use only a real photo of the person quoted, with their consent. Blank keeps a plain disc.'),
+        image(
+          'quote_image',
+          'Quote panel image',
+          'Sits behind the quote. Blank keeps the plain navy panel.'
+        ),
+        image(
+          'quote_avatar',
+          'Headshot',
+          'The round photo beside the name. Use only a real photo of the person quoted, with their consent. Blank keeps a plain disc.'
+        ),
       ],
       defaults: {
         eyebrow: 'WHY INDUS · A FEW REASONS',
         heading: 'We’re a parts supplier that thinks like an engineering desk.',
         items: [
-          { enabled: true, name: 'Specialists, not generalists', desc: 'We carry only hydraulic components — no PPE, no fasteners. Depth over breadth.' },
-          { enabled: true, name: 'Genuine parts, traceable', desc: 'Every SKU comes with origin certificate and batch traceability. No counterfeits.' },
-          { enabled: true, name: 'Stock you can count on', desc: 'Live inventory on the site is real. If it says "in stock", it ships today.' },
-          { enabled: true, name: 'Application help, free', desc: 'Send us a circuit, a failure photo or a bare SKU — our engineers respond same business day.' },
+          {
+            enabled: true,
+            name: 'Specialists, not generalists',
+            desc: 'We carry only hydraulic components — no PPE, no fasteners. Depth over breadth.',
+          },
+          {
+            enabled: true,
+            name: 'Genuine parts, traceable',
+            desc: 'Every SKU comes with origin certificate and batch traceability. No counterfeits.',
+          },
+          {
+            enabled: true,
+            name: 'Stock you can count on',
+            desc: 'Live inventory on the site is real. If it says "in stock", it ships today.',
+          },
+          {
+            enabled: true,
+            name: 'Application help, free',
+            desc: 'Send us a circuit, a failure photo or a bare SKU — our engineers respond same business day.',
+          },
         ],
         quote_eyebrow: 'CUSTOMER · MARINE',
-        quote: 'Indus delivered a 6-week-lead Atos servo valve in 4 days. We didn’t lose a single shift.',
+        quote:
+          'Indus delivered a 6-week-lead Atos servo valve in 4 days. We didn’t lose a single shift.',
         quote_name: 'Captain V. Subramaniam',
         quote_title: 'CHIEF ENGINEER · MARITIME OPS',
         quote_image: { mediaId: null, alt: null },
@@ -168,8 +200,10 @@ export const HOME_PAGE: MasterPageDef = {
     {
       key: 'blog',
       label: 'Blog teaser',
-      description: 'A photo mosaic of recent articles (image and title), or the empty state when nothing is published.',
-      dataNote: 'Nine tiles on wide screens (seven on tablets, five on phones): the newest article from each blog category, newest first, the most recent as the large lead tile. Each tile is the article’s hero image and title.',
+      description:
+        'A photo mosaic of recent articles (image and title), or the empty state when nothing is published.',
+      dataNote:
+        'Nine tiles on wide screens (seven on tablets, five on phones): the newest article from each blog category, newest first, the most recent as the large lead tile. Each tile is the article’s hero image and title.',
       fields: [
         eyebrow(),
         heading(),

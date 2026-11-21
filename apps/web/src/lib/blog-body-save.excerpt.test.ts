@@ -14,13 +14,13 @@ const para = (html: string) => ({ type: 'paragraph' as const, html })
 describe('deriveExcerpt', () => {
   test('what the author typed always wins', () => {
     expect(deriveExcerpt('  Hand-written summary.  ', [para('Body copy.')])).toBe(
-      'Hand-written summary.',
+      'Hand-written summary.'
     )
   })
 
   test('falls back to the article opening, with the markup stripped', () => {
     expect(deriveExcerpt('', [para('Seals on a <strong>flare</strong>, not the threads.')])).toBe(
-      'Seals on a flare, not the threads.',
+      'Seals on a flare, not the threads.'
     )
   })
 
@@ -35,7 +35,7 @@ describe('deriveExcerpt', () => {
 
   test('a lead block counts as the opening', () => {
     expect(deriveExcerpt(null, [lead('An opening line.'), para('Then the body.')])).toBe(
-      'An opening line. Then the body.',
+      'An opening line. Then the body.'
     )
   })
 
@@ -66,7 +66,7 @@ describe('resolveBodyWrite', () => {
         existingBody: '<p>The whole article, in HTML.</p>',
         existingReadingMinutes: 7,
         estimateMinutes: estimate,
-      }),
+      })
     ).toEqual({
       body: '<p>The whole article, in HTML.</p>',
       readingMinutes: 7,
@@ -81,7 +81,7 @@ describe('resolveBodyWrite', () => {
         existingBody: '   ',
         existingReadingMinutes: 3,
         estimateMinutes: estimate,
-      }),
+      })
     ).toEqual({ body: '', readingMinutes: null, preservedLegacy: false })
   })
 
@@ -92,7 +92,7 @@ describe('resolveBodyWrite', () => {
         existingBody: '<p>Old HTML.</p>',
         existingReadingMinutes: 7,
         estimateMinutes: estimate,
-      }),
+      })
     ).toEqual({ body: 'Migrated across.', readingMinutes: 4, preservedLegacy: false })
   })
 })

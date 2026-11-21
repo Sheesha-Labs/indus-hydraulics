@@ -103,7 +103,7 @@ export type ProductAvailability = {
  */
 export function postureCoversCategories(
   categorySlugs: readonly string[],
-  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE
 ): boolean {
   if (!posture.exStock) return false
   if (posture.exemptCategories.length === 0) return true
@@ -123,7 +123,7 @@ function posturedCovers(facts: StockFacts, posture: CatalogueStockPosture): bool
  */
 export function productAvailability(
   facts: StockFacts,
-  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE
 ): ProductAvailability {
   if (facts.status === 'discontinued') {
     return {
@@ -186,7 +186,7 @@ export function productAvailability(
  */
 export function countInStock(
   products: readonly StockFacts[],
-  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE
 ): number {
   return products.filter((p) => productAvailability(p, posture).schema === 'in_stock').length
 }

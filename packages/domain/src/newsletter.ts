@@ -43,7 +43,9 @@ export type NewsletterSource = (typeof NEWSLETTER_SOURCES)[number]
 export function newsletterSource(raw: unknown): NewsletterSource {
   if (typeof raw !== 'string' || raw.trim() === '') return 'homepage_footer'
   const value = raw.trim()
-  return (NEWSLETTER_SOURCES as readonly string[]).includes(value) ? (value as NewsletterSource) : 'other'
+  return (NEWSLETTER_SOURCES as readonly string[]).includes(value)
+    ? (value as NewsletterSource)
+    : 'other'
 }
 
 /** Lower-cased and trimmed — the form every row and every hash uses. */
@@ -61,7 +63,10 @@ export function normaliseNewsletterEmail(email: string): string {
 export function isDotPaddedGmail(email: string): boolean {
   const at = email.lastIndexOf('@')
   if (at < 0) return false
-  const domain = email.slice(at + 1).trim().toLowerCase()
+  const domain = email
+    .slice(at + 1)
+    .trim()
+    .toLowerCase()
   if (domain !== 'gmail.com' && domain !== 'googlemail.com') return false
   const pieces = (email.slice(0, at).split('+')[0] ?? '').split('.')
   return pieces.length >= 4 && pieces.some((p) => p.length === 1)

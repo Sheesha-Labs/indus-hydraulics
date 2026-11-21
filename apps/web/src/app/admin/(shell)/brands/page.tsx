@@ -33,10 +33,13 @@ export default async function BrandsPage({ params }: Props) {
   return (
     <AdminPageShell
       title={'Brands'}
-      sub={<>{brands.length} {brands.length === 1 ? 'brand' : 'brands'}</>}
+      sub={
+        <>
+          {brands.length} {brands.length === 1 ? 'brand' : 'brands'}
+        </>
+      }
     >
       <BrandsClient brands={brands} />
-    
     </AdminPageShell>
   )
 }

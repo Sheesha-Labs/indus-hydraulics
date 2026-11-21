@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { ancestorTrail, descendantIds, indexTree, rollUpCounts, type CategoryNode } from './category-tree'
+import {
+  ancestorTrail,
+  descendantIds,
+  indexTree,
+  rollUpCounts,
+  type CategoryNode,
+} from './category-tree'
 
 /**
  * These replace two loops that each issued one query per tree level. The
@@ -105,7 +111,14 @@ describe('rollUpCounts', () => {
       ['leaf', 'mid'],
       ['other', 'root'],
     ])
-    const out = rollUpCounts(parentOf, new Map([['leaf', 5], ['other', 2], ['mid', 1]]))
+    const out = rollUpCounts(
+      parentOf,
+      new Map([
+        ['leaf', 5],
+        ['other', 2],
+        ['mid', 1],
+      ])
+    )
     expect(out.get('root')).toBe(8)
     expect(out.get('mid')).toBe(6)
     expect(out.get('leaf')).toBe(5)
@@ -117,6 +130,11 @@ describe('rollUpCounts', () => {
       ['a', 'b'],
       ['b', 'a'],
     ])
-    expect(rollUpCounts(parentOf, new Map([['a', 3]]))).toEqual(new Map([['a', 3], ['b', 3]]))
+    expect(rollUpCounts(parentOf, new Map([['a', 3]]))).toEqual(
+      new Map([
+        ['a', 3],
+        ['b', 3],
+      ])
+    )
   })
 })

@@ -50,17 +50,14 @@ describe('certification is a hard filter, not a weighting', () => {
   it('a perfect-fit uncertified supplier still loses to a weak certified one', () => {
     const ctx = { ...CTX, requiredCertifications: ['iacs'] }
     const strong = scoreSupplier(candidate({ name: 'Strong', fit: 1, certifications: [] }), ctx)
-    const weak = scoreSupplier(
-      candidate({ name: 'Weak', fit: 0.2, certifications: ['iacs'] }),
-      ctx,
-    )
+    const weak = scoreSupplier(candidate({ name: 'Weak', fit: 0.2, certifications: ['iacs'] }), ctx)
     expect(strong.score).toBe(0)
     expect(weak.score).toBeGreaterThan(0)
   })
 
   it('matches certifications case-insensitively', () => {
     expect(
-      missingCertifications(candidate({ certifications: ['EN10204-3.1'] }), ['en10204-3.1']),
+      missingCertifications(candidate({ certifications: ['EN10204-3.1'] }), ['en10204-3.1'])
     ).toEqual([])
   })
 
@@ -122,7 +119,7 @@ describe('contactability — a guessed address is not a channel', () => {
         isRoleAddress: false,
         isGuessed: true,
         verified: false,
-      }),
+      })
     ).toBe(0)
   })
 
@@ -132,20 +129,32 @@ describe('contactability — a guessed address is not a channel', () => {
 
   it('ranks a verified address above an unverified named one', () => {
     const verified = contactabilityScore({
-      hasEmail: true, isRoleAddress: false, isGuessed: false, verified: true,
+      hasEmail: true,
+      isRoleAddress: false,
+      isGuessed: false,
+      verified: true,
     })
     const named = contactabilityScore({
-      hasEmail: true, isRoleAddress: false, isGuessed: false, verified: false,
+      hasEmail: true,
+      isRoleAddress: false,
+      isGuessed: false,
+      verified: false,
     })
     expect(verified).toBeGreaterThan(named)
   })
 
   it('ranks a named address above a generic sales@ inbox', () => {
     const named = contactabilityScore({
-      hasEmail: true, isRoleAddress: false, isGuessed: false, verified: false,
+      hasEmail: true,
+      isRoleAddress: false,
+      isGuessed: false,
+      verified: false,
     })
     const role = contactabilityScore({
-      hasEmail: true, isRoleAddress: true, isGuessed: false, verified: false,
+      hasEmail: true,
+      isRoleAddress: true,
+      isGuessed: false,
+      verified: false,
     })
     expect(named).toBeGreaterThan(role)
   })
@@ -172,7 +181,7 @@ describe('rankSuppliers', () => {
         candidate({ name: 'Certified', certifications: ['iacs'] }),
         candidate({ name: 'Uncertified', fit: 1 }),
       ],
-      { ...CTX, requiredCertifications: ['iacs'] },
+      { ...CTX, requiredCertifications: ['iacs'] }
     )
     expect(ranked.map((r) => r.candidate.name)).toEqual(['Certified'])
   })
@@ -197,7 +206,7 @@ describe('rankSuppliers', () => {
     const ranked = rankSuppliers(
       [candidate({ name: 'Uncertified' })],
       { ...CTX, requiredCertifications: ['iacs'] },
-      { includeDisqualified: true },
+      { includeDisqualified: true }
     )
     expect(ranked).toHaveLength(1)
     expect(ranked[0]!.disqualifiedFor).toHaveLength(1)
@@ -210,7 +219,7 @@ describe('rankSuppliers', () => {
         candidate({ name: 'High', fit: 1, isAuthorizedDistributor: true }),
         candidate({ name: 'Mid', fit: 0.5 }),
       ],
-      CTX,
+      CTX
     )
     expect(ranked.map((r) => r.candidate.name)).toEqual(['High', 'Mid', 'Low'])
   })
@@ -227,7 +236,7 @@ describe('reachableCount — the number that says whether research worked', () =
           contact: { hasEmail: true, isRoleAddress: true, isGuessed: true, verified: false },
         }),
       ],
-      CTX,
+      CTX
     )
     expect(ranked).toHaveLength(3)
     expect(reachableCount(ranked)).toBe(1)

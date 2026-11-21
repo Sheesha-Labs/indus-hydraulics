@@ -33,7 +33,7 @@ export default function StartCampaignButton({ input, label, kind = 'outline' }: 
         {pending ? 'Opening…' : label}
       </Button>
       {error ? (
-        <span role="alert" className="text-[12.5px] text-ih-danger-ink">
+        <span role="alert" className="text-ih-danger-ink text-[12.5px]">
           {error}
         </span>
       ) : null}

@@ -29,7 +29,9 @@ export type QuoteSentProps = {
 }
 
 export function renderQuoteSent(props: QuoteSentProps): { subject: string; html: string } {
-  const codeDisplay = props.revisionLabel ? `${props.quoteCode} ${props.revisionLabel}` : props.quoteCode
+  const codeDisplay = props.revisionLabel
+    ? `${props.quoteCode} ${props.revisionLabel}`
+    : props.quoteCode
   const subject = `Quotation ${codeDisplay} — ${props.branding.legalName}`
 
   const body = `

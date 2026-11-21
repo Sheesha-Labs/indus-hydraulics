@@ -180,14 +180,16 @@ export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult>
   if (SANDBOX || !resendClient) {
     const attachInfo = input.attachments?.length ? ` attachments=${input.attachments.length}` : ''
     // eslint-disable-next-line no-console
-    console.info(`[email:sandbox] kind=${input.kind} to=${input.to.join(',')} subject="${input.subject}"${attachInfo}`)
+    console.info(
+      `[email:sandbox] kind=${input.kind} to=${input.to.join(',')} subject="${input.subject}"${attachInfo}`
+    )
     return { ok: true, sentEmailId: audit.id, providerId: null, status: 'sandboxed' }
   }
 
   try {
     const result = await resendClient.emails.send(
       toResendPayload(input),
-      input.idempotencyKey ? { idempotencyKey: input.idempotencyKey } : undefined,
+      input.idempotencyKey ? { idempotencyKey: input.idempotencyKey } : undefined
     )
 
     if (result.error) {
@@ -221,7 +223,11 @@ export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult>
 export const BATCH_LIMIT = 100
 
 export type SendEmailBatchResult =
-  | { ok: true; results: { sentEmailId: string; providerId: string | null }[]; status: 'sent' | 'sandboxed' }
+  | {
+      ok: true
+      results: { sentEmailId: string; providerId: string | null }[]
+      status: 'sent' | 'sandboxed'
+    }
   | { ok: false; sentEmailIds: string[]; error: string }
 
 /**
@@ -238,23 +244,33 @@ export type SendEmailBatchResult =
  */
 export async function sendEmailBatch(
   inputs: SendEmailInput[],
-  options: { idempotencyKey?: string } = {},
+  options: { idempotencyKey?: string } = {}
 ): Promise<SendEmailBatchResult> {
   if (inputs.length === 0) return { ok: true, results: [], status: SANDBOX ? 'sandboxed' : 'sent' }
   if (inputs.length > BATCH_LIMIT) {
-    return { ok: false, sentEmailIds: [], error: `A batch holds at most ${BATCH_LIMIT} emails, got ${inputs.length}.` }
+    return {
+      ok: false,
+      sentEmailIds: [],
+      error: `A batch holds at most ${BATCH_LIMIT} emails, got ${inputs.length}.`,
+    }
   }
   if (inputs.some((i) => i.attachments && i.attachments.length > 0)) {
     return { ok: false, sentEmailIds: [], error: 'The batch API does not take attachments.' }
   }
 
-  const rows = await db.$transaction(inputs.map((input) => db.sentEmail.create({ data: auditData(input), select: { id: true } })))
+  const rows = await db.$transaction(
+    inputs.map((input) => db.sentEmail.create({ data: auditData(input), select: { id: true } }))
+  )
   const ids = rows.map((r) => r.id)
 
   if (SANDBOX || !resendClient) {
     // eslint-disable-next-line no-console
     console.info(`[email:sandbox] batch of ${inputs.length} kind=${inputs[0]?.kind}`)
-    return { ok: true, results: ids.map((sentEmailId) => ({ sentEmailId, providerId: null })), status: 'sandboxed' }
+    return {
+      ok: true,
+      results: ids.map((sentEmailId) => ({ sentEmailId, providerId: null })),
+      status: 'sandboxed',
+    }
   }
 
   const fail = async (error: string): Promise<SendEmailBatchResult> => {
@@ -265,7 +281,7 @@ export async function sendEmailBatch(
   try {
     const result = await resendClient.batch.send(
       inputs.map(toResendPayload),
-      options.idempotencyKey ? { idempotencyKey: options.idempotencyKey } : undefined,
+      options.idempotencyKey ? { idempotencyKey: options.idempotencyKey } : undefined
     )
     if (result.error) return fail(result.error.message)
 
@@ -276,8 +292,8 @@ export async function sendEmailBatch(
         db.sentEmail.update({
           where: { id },
           data: { status: 'sent', providerId: providerIds[i] ?? null, sentAt },
-        }),
-      ),
+        })
+      )
     )
     return {
       ok: true,
@@ -304,17 +320,24 @@ export type CampaignBatchResult =
  */
 export async function sendCampaignBatch(
   inputs: SendEmailInput[],
-  options: { idempotencyKey: string },
+  options: { idempotencyKey: string }
 ): Promise<CampaignBatchResult> {
-  if (inputs.length === 0) return { ok: true, providerIds: [], status: SANDBOX ? 'sandboxed' : 'sent' }
-  if (inputs.length > BATCH_LIMIT) return { ok: false, error: `A batch holds at most ${BATCH_LIMIT} emails, got ${inputs.length}.` }
+  if (inputs.length === 0)
+    return { ok: true, providerIds: [], status: SANDBOX ? 'sandboxed' : 'sent' }
+  if (inputs.length > BATCH_LIMIT)
+    return {
+      ok: false,
+      error: `A batch holds at most ${BATCH_LIMIT} emails, got ${inputs.length}.`,
+    }
   if (SANDBOX || !resendClient) {
     // eslint-disable-next-line no-console
     console.info(`[email:sandbox] campaign batch of ${inputs.length}`)
     return { ok: true, providerIds: inputs.map(() => null), status: 'sandboxed' }
   }
   try {
-    const result = await resendClient.batch.send(inputs.map(toResendPayload), { idempotencyKey: options.idempotencyKey })
+    const result = await resendClient.batch.send(inputs.map(toResendPayload), {
+      idempotencyKey: options.idempotencyKey,
+    })
     if (result.error) return { ok: false, error: result.error.message }
     const ids = result.data?.data.map((d) => d.id) ?? []
     return { ok: true, providerIds: inputs.map((_, i) => ids[i] ?? null), status: 'sent' }

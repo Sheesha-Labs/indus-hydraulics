@@ -2,7 +2,13 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { ChevronDown, Clock } from 'lucide-react'
-import { dubaiNow, rotateToToday, statusFor, type HoursRow, type HoursStatus } from '../../../../lib/opening-hours'
+import {
+  dubaiNow,
+  rotateToToday,
+  statusFor,
+  type HoursRow,
+  type HoursStatus,
+} from '../../../../lib/opening-hours'
 
 /**
  * Opening hours in the contact rail, in the shape of a Google Business Profile
@@ -35,16 +41,18 @@ export default function OpeningHours({ rows, label }: { rows: HoursRow[]; label:
   if (rows.length === 0) return null
 
   return (
-    <div className="flex gap-4 border-t border-ih-border py-5">
-      <Clock size={19} strokeWidth={1.6} aria-hidden className="mt-0.5 shrink-0 text-ih-accent" />
+    <div className="border-ih-border flex gap-4 border-t py-5">
+      <Clock size={19} strokeWidth={1.6} aria-hidden className="text-ih-accent mt-0.5 shrink-0" />
       <div className="min-w-0 flex-1">
         <div className="eyebrow">{label}</div>
         <details className="group mt-1.5" data-testid="opening-hours">
-          <summary className="flex cursor-pointer list-none items-center gap-3 rounded-sm text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-ih-accent [&::-webkit-details-marker]:hidden">
+          <summary className="focus-visible:ring-ih-accent flex cursor-pointer list-none items-center gap-3 rounded-sm text-[15px] outline-none focus-visible:ring-2 [&::-webkit-details-marker]:hidden">
             <span className="flex-1">
               {status ? (
                 <>
-                  <span className={status.open ? 'font-medium text-ih-success-ink' : 'text-ih-muted'}>
+                  <span
+                    className={status.open ? 'text-ih-success-ink font-medium' : 'text-ih-muted'}
+                  >
                     {status.state}
                   </span>
                   {status.detail ? <span className="text-ih-ink-2"> · {status.detail}</span> : null}
@@ -57,7 +65,7 @@ export default function OpeningHours({ rows, label }: { rows: HoursRow[]; label:
               size={16}
               strokeWidth={1.7}
               aria-hidden
-              className="shrink-0 text-ih-muted transition-transform group-open:rotate-180"
+              className="text-ih-muted shrink-0 transition-transform group-open:rotate-180"
             />
           </summary>
           <ul className="mt-3 flex flex-col gap-1.5">
@@ -67,7 +75,7 @@ export default function OpeningHours({ rows, label }: { rows: HoursRow[]; label:
                 <li
                   key={row.index}
                   className={`flex items-baseline justify-between gap-6 text-[13.5px] ${
-                    isToday ? 'font-medium text-ih-ink' : 'text-ih-ink-2'
+                    isToday ? 'text-ih-ink font-medium' : 'text-ih-ink-2'
                   }`}
                 >
                   <span>{row.day}</span>

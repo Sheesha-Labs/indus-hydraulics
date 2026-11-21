@@ -27,14 +27,14 @@ export default async function NewProductPage({ params }: Props) {
           */}
           <Link
             href={`/admin/products`}
-            className="flex h-9 items-center rounded-md rounded-lg border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="border-ih-border bg-ih-surface hover:border-ih-accent hover:text-ih-accent flex h-9 items-center rounded-lg rounded-md border px-4 text-[13px] font-medium transition-colors"
           >
             Cancel
           </Link>
           <button
             type="submit"
             form="new-product-form"
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+            className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-9 items-center rounded-md px-4 text-[13px] font-medium transition-opacity"
           >
             Create product
           </button>
@@ -42,83 +42,80 @@ export default async function NewProductPage({ params }: Props) {
       }
       bodyClassName="max-w-2xl"
     >
-
-        {/* createProduct returns Result<...>; the void-returning wrapper
+      {/* createProduct returns Result<...>; the void-returning wrapper
             keeps `<form action>` happy. Errors propagate via `redirect()` /
             error.tsx — there's no client-state error UI on this thin page. */}
-        <form
-          id="new-product-form"
-          action={async (fd: FormData) => {
-            'use server'
-            const r = await createProduct(fd)
-            if (r && !r.success) throw new Error(r.message)
-          }}
-          className="flex flex-col gap-5 rounded-lg border border-ih-border bg-ih-surface p-6"
-        >
+      <form
+        id="new-product-form"
+        action={async (fd: FormData) => {
+          'use server'
+          const r = await createProduct(fd)
+          if (r && !r.success) throw new Error(r.message)
+        }}
+        className="border-ih-border bg-ih-surface flex flex-col gap-5 rounded-lg border p-6"
+      >
+        <Field label="SKU *" hint="Unique stock-keeping unit code (e.g. IH-PP-11KW-30-DS)">
+          <input
+            required
+            name="sku"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-3 text-[13px] tabular-nums"
+            placeholder="IH-XXXX-0000"
+          />
+        </Field>
 
-          <Field label="SKU *" hint="Unique stock-keeping unit code (e.g. IH-PP-11KW-30-DS)">
-            <input
-              required
-              name="sku"
-              className="h-9 w-full px-3 rounded-lg border border-ih-border bg-ih-surface tabular-nums text-[13px]"
-              placeholder="IH-XXXX-0000"
-            />
-          </Field>
+        <Field label="Title *">
+          <input
+            required
+            name="title"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-3 text-[13px]"
+            placeholder="Standard Hydraulic Power Pack 11kW 30L/min"
+          />
+        </Field>
 
-          <Field label="Title *">
-            <input
-              required
-              name="title"
-              className="h-9 w-full px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
-              placeholder="Standard Hydraulic Power Pack 11kW 30L/min"
-            />
-          </Field>
-
-          <div className="grid grid-cols-2 gap-4">
-            <Field label="Brand">
-              <select
-                name="brandId"
-                defaultValue=""
-                className="h-9 w-full px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
-              >
-                <option value="">— None —</option>
-                {brands.map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {b.name}
-                  </option>
-                ))}
-              </select>
-            </Field>
-
-            <Field label="Category">
-              <select
-                name="categoryId"
-                defaultValue=""
-                className="h-9 w-full px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
-              >
-                <option value="">— None —</option>
-                {categories.map((c) => (
-                  <option key={c.id} value={c.id}>
-                    {c.name}
-                  </option>
-                ))}
-              </select>
-            </Field>
-          </div>
-
-          <Field label="Status">
+        <div className="grid grid-cols-2 gap-4">
+          <Field label="Brand">
             <select
-              name="status"
-              defaultValue="draft"
-              className="h-9 w-full px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
+              name="brandId"
+              defaultValue=""
+              className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-2 text-[13px]"
             >
-              <option value="draft">Draft</option>
-              <option value="active">Active</option>
-              <option value="discontinued">Discontinued</option>
+              <option value="">— None —</option>
+              {brands.map((b) => (
+                <option key={b.id} value={b.id}>
+                  {b.name}
+                </option>
+              ))}
             </select>
           </Field>
 
-        </form>
+          <Field label="Category">
+            <select
+              name="categoryId"
+              defaultValue=""
+              className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-2 text-[13px]"
+            >
+              <option value="">— None —</option>
+              {categories.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
+          </Field>
+        </div>
+
+        <Field label="Status">
+          <select
+            name="status"
+            defaultValue="draft"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-2 text-[13px]"
+          >
+            <option value="draft">Draft</option>
+            <option value="active">Active</option>
+            <option value="discontinued">Discontinued</option>
+          </select>
+        </Field>
+      </form>
     </AdminPageShell>
   )
 }
@@ -134,9 +131,9 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
+      <span className="text-ih-ink-2 text-[12px] font-medium">{label}</span>
       {children}
-      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-ih-muted-2 text-[11px]">{hint}</span>}
     </label>
   )
 }

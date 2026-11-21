@@ -22,105 +22,100 @@ import { ImageResponse } from 'next/og'
  * scrapers that fetch it, and one less warning forever.
  */
 
-export const alt =
-  'Indus Hydraulics — Industrial hydraulic distributor in Dubai, UAE'
+export const alt = 'Indus Hydraulics — Industrial hydraulic distributor in Dubai, UAE'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default async function OpenGraphImage() {
   return new ImageResponse(
-    (
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        padding: 72,
+        background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)',
+        color: '#FFFFFF',
+      }}
+    >
       <div
         style={{
-          width: '100%',
-          height: '100%',
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          padding: 72,
-          background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)',
-          color: '#FFFFFF',
+          alignItems: 'center',
+          gap: 16,
+          fontSize: 18,
+          letterSpacing: 4,
+          color: '#888888',
+          textTransform: 'uppercase',
         }}
       >
         <div
           style={{
+            width: 44,
+            height: 44,
             display: 'flex',
             alignItems: 'center',
-            gap: 16,
-            fontSize: 18,
-            letterSpacing: 4,
-            color: '#888888',
-            textTransform: 'uppercase',
+            justifyContent: 'center',
+            background: '#E85A0C',
+            color: '#FFFFFF',
+            fontSize: 20,
+            fontWeight: 700,
+            letterSpacing: 0,
           }}
         >
-          <div
-            style={{
-              width: 44,
-              height: 44,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              background: '#E85A0C',
-              color: '#FFFFFF',
-              fontSize: 20,
-              fontWeight: 700,
-              letterSpacing: 0,
-            }}
-          >
-            IH
-          </div>
-          <span>Indus Hydraulics</span>
+          IH
         </div>
+        <span>Indus Hydraulics</span>
+      </div>
 
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 24,
+        }}
+      >
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 24,
+            fontSize: 76,
+            fontWeight: 700,
+            lineHeight: 1.05,
+            letterSpacing: -1.5,
+            color: '#FFFFFF',
           }}
         >
-          <div
-            style={{
-              fontSize: 76,
-              fontWeight: 700,
-              lineHeight: 1.05,
-              letterSpacing: -1.5,
-              color: '#FFFFFF',
-            }}
-          >
-            Industrial hydraulic distribution.
-          </div>
-          <div
-            style={{
-              fontSize: 28,
-              lineHeight: 1.35,
-              color: '#BBBBBB',
-              maxWidth: 920,
-            }}
-          >
-            Pumps, valves, cylinders, and hose assemblies for engineers who
-            can&apos;t afford downtime.
-          </div>
+          Industrial hydraulic distribution.
         </div>
-
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            fontSize: 18,
-            color: '#888888',
-            borderTop: '1px solid #2A2A2A',
-            paddingTop: 28,
+            fontSize: 28,
+            lineHeight: 1.35,
+            color: '#BBBBBB',
+            maxWidth: 920,
           }}
         >
-          <span>
-            Authorized distributor · Parker · Bosch Rexroth · Yuken · HYDAC
-          </span>
-          <span style={{ letterSpacing: 2 }}>DUBAI · UAE</span>
+          Pumps, valves, cylinders, and hose assemblies for engineers who can&apos;t afford
+          downtime.
         </div>
       </div>
-    ),
-    { ...size },
+
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          fontSize: 18,
+          color: '#888888',
+          borderTop: '1px solid #2A2A2A',
+          paddingTop: 28,
+        }}
+      >
+        <span>Authorized distributor · Parker · Bosch Rexroth · Yuken · HYDAC</span>
+        <span style={{ letterSpacing: 2 }}>DUBAI · UAE</span>
+      </div>
+    </div>,
+    { ...size }
   )
 }

@@ -32,13 +32,16 @@ export default async function SeoAiPage() {
   ])
 
   const spendMicros = totalSpend._sum.costUsdMicros ?? 0
-  const acceptRate =
-    totalSuggestions > 0 ? acceptanceCount / totalSuggestions : null
+  const acceptRate = totalSuggestions > 0 ? acceptanceCount / totalSuggestions : null
 
   return (
     <div className="max-w-[960px]">
-      <div className="grid grid-cols-3 gap-3 mb-6">
-        <Tile label="Spend (this month)" value={`$${(spendMicros / 1_000_000).toFixed(2)}`} accent />
+      <div className="mb-6 grid grid-cols-3 gap-3">
+        <Tile
+          label="Spend (this month)"
+          value={`$${(spendMicros / 1_000_000).toFixed(2)}`}
+          accent
+        />
         <Tile label="Suggestions generated" value={totalSuggestions.toLocaleString()} />
         <Tile
           label="Acceptance rate"
@@ -47,25 +50,25 @@ export default async function SeoAiPage() {
       </div>
 
       {myQuota && (
-        <div className="rounded-lg border border-ih-border p-4 mb-6 max-w-[640px]">
-          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+        <div className="border-ih-border mb-6 max-w-[640px] rounded-lg border p-4">
+          <p className="text-ih-muted mb-2 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
             Your quota
           </p>
           <div className="flex items-center gap-3">
             <div className="flex-1">
-              <div className="h-2 bg-ih-surface-2 overflow-hidden">
+              <div className="bg-ih-surface-2 h-2 overflow-hidden">
                 <div
-                  className="h-full bg-ih-accent"
+                  className="bg-ih-accent h-full"
                   style={{
                     width: `${Math.min(
                       100,
-                      (myQuota.spentThisMonthMicros / myQuota.monthlyUsdCapMicros) * 100,
+                      (myQuota.spentThisMonthMicros / myQuota.monthlyUsdCapMicros) * 100
                     )}%`,
                   }}
                 />
               </div>
             </div>
-            <span className="text-[12px] tabular-nums text-ih-muted whitespace-nowrap">
+            <span className="text-ih-muted text-[12px] whitespace-nowrap tabular-nums">
               ${(myQuota.spentThisMonthMicros / 1_000_000).toFixed(2)} / $
               {(myQuota.monthlyUsdCapMicros / 1_000_000).toFixed(0)}
             </span>
@@ -73,31 +76,31 @@ export default async function SeoAiPage() {
         </div>
       )}
 
-      <div className="flex gap-3 max-w-[640px]">
+      <div className="flex max-w-[640px] gap-3">
         <Link
           href="/admin/seo/ai/runs"
-          className="rounded-lg flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
+          className="border-ih-border hover:bg-ih-surface-2 flex-1 rounded-lg border p-4 transition-colors"
         >
-          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
+          <p className="text-ih-muted mb-1 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
             Suggestion log
           </p>
-          <p className="text-[14px] text-ih-ink">Recent generations →</p>
+          <p className="text-ih-ink text-[14px]">Recent generations →</p>
         </Link>
         <Link
           href="/admin/seo/ai/quota"
-          className="rounded-lg flex-1 border border-ih-border p-4 hover:bg-ih-surface-2 transition-colors"
+          className="border-ih-border hover:bg-ih-surface-2 flex-1 rounded-lg border p-4 transition-colors"
         >
-          <p className="tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">
+          <p className="text-ih-muted mb-1 text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
             Usage quota
           </p>
-          <p className="text-[14px] text-ih-ink">Per-user spend →</p>
+          <p className="text-ih-ink text-[14px]">Per-user spend →</p>
         </Link>
       </div>
 
-      <p className="tabular-nums text-[11px] text-ih-muted mt-6 max-w-[640px]">
-        Per-entity &ldquo;Suggest&rdquo; buttons appear next to title / description / focus
-        keyword fields in every SEO drawer. Bulk catalogue generation via Anthropic Batches +
-        Inngest is a Phase 2 carry-forward.
+      <p className="text-ih-muted mt-6 max-w-[640px] text-[11px] tabular-nums">
+        Per-entity &ldquo;Suggest&rdquo; buttons appear next to title / description / focus keyword
+        fields in every SEO drawer. Bulk catalogue generation via Anthropic Batches + Inngest is a
+        Phase 2 carry-forward.
       </p>
     </div>
   )
@@ -110,11 +113,11 @@ function monthStart(): Date {
 
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         {label}
       </div>
-      <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>
+      <div className={`mt-1 text-[28px] font-medium ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>

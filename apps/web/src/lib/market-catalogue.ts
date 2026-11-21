@@ -85,17 +85,18 @@ const loadClusters = unstable_cache(
       children: (byParent.get(row.id) ?? []).map(build),
     })
 
-    return (byParent.get('root') ?? [])
-      .map(build)
-      .map((node) => ({
-        slug: node.slug,
-        name: node.name,
-        description: node.shortDescription,
-        imageUrl: node.imageUrl,
-        imageAlt: node.imageAlt ?? node.name,
-        subRanges: leafSubRanges(node),
-      }))
-      /*
+    return (
+      (byParent.get('root') ?? [])
+        .map(build)
+        .map((node) => ({
+          slug: node.slug,
+          name: node.name,
+          description: node.shortDescription,
+          imageUrl: node.imageUrl,
+          imageAlt: node.imageAlt ?? node.name,
+          subRanges: leafSubRanges(node),
+        }))
+        /*
         A top-level category with neither sub-ranges nor a description has
         nothing to say here, and an empty card is worse than no card. Three
         categories currently fall out on that rule — Hydraulic Pumps, Hydraulic
@@ -103,7 +104,8 @@ const loadClusters = unstable_cache(
         `shortDescription` written yet. Give any of them a description in admin
         and it appears on all 126 market pages with no code change.
       */
-      .filter((cluster) => cluster.subRanges.length > 0 || cluster.description)
+        .filter((cluster) => cluster.subRanges.length > 0 || cluster.description)
+    )
   },
   // v2: wide-cluster-first ordering dropped (2026-10) — admin order now rules.
   ['market-catalogue-clusters-v2'],
@@ -172,9 +174,11 @@ export function marketSectorImages(): Promise<Record<string, MarketSectorImage>>
  * the storefront cache still holds.
  */
 export async function marketOperationsImages(
-  fresh = false,
+  fresh = false
 ): Promise<Partial<Record<string, { url: string; alt: string }>>> {
-  const hub = fresh ? await getMasterPageContentFresh('markets') : await getMasterPageContent('markets')
+  const hub = fresh
+    ? await getMasterPageContentFresh('markets')
+    : await getMasterPageContent('markets')
   const values = hub.values('market_photos')
   const out: Partial<Record<string, { url: string; alt: string }>> = {}
   for (const op of MARKET_OPERATIONS) {

@@ -74,8 +74,8 @@ export default function QualityControlLanding({
   return (
     <div>
       {/* ─── 1 · HERO ─────────────────────────────────────────────────── */}
-      <section className="border-b border-ih-border bg-ih-surface">
-        <div className={`${SECTION} pb-12 pt-7 lg:pb-[52px]`}>
+      <section className="border-ih-border bg-ih-surface border-b">
+        <div className={`${SECTION} pt-7 pb-12 lg:pb-[52px]`}>
           <Breadcrumb
             className="mb-6"
             items={[
@@ -89,10 +89,10 @@ export default function QualityControlLanding({
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.25fr_1fr] lg:items-end lg:gap-14">
             <div>
               <Eyebrow>{hero.eyebrow}</Eyebrow>
-              <h1 className="mt-[18px] text-balance font-serif text-[32px] font-normal leading-[1.04] tracking-[-0.01em] sm:text-[40px] lg:text-[54px]">
+              <h1 className="mt-[18px] font-serif text-[32px] leading-[1.04] font-normal tracking-[-0.01em] text-balance sm:text-[40px] lg:text-[54px]">
                 {hero.headingLead} <em>{hero.headingEmphasis}</em>
               </h1>
-              <p className="mt-[18px] max-w-[640px] text-[15px] leading-[1.6] text-ih-ink-2 sm:text-[16px]">
+              <p className="text-ih-ink-2 mt-[18px] max-w-[640px] text-[15px] leading-[1.6] sm:text-[16px]">
                 {hero.lede}
               </p>
 
@@ -138,14 +138,14 @@ export default function QualityControlLanding({
                 flush
                 sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 24vw"
               />
-              <div className="flex flex-col gap-[7px] px-5 pb-5 pt-[18px]">
-                <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+              <div className="flex flex-col gap-[7px] px-5 pt-[18px] pb-5">
+                <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                   {instrument.category}
                 </p>
-                <h3 className="text-[15.5px] font-medium leading-[1.3] tracking-[-0.02em]">
+                <h3 className="text-[15.5px] leading-[1.3] font-medium tracking-[-0.02em]">
                   {instrument.name}
                 </h3>
-                <p className="text-[12px] leading-[1.55] text-ih-muted">{instrument.description}</p>
+                <p className="text-ih-muted text-[12px] leading-[1.55]">{instrument.description}</p>
               </div>
             </Card>
           ))}
@@ -192,23 +192,26 @@ export default function QualityControlLanding({
 
         <div className="flex flex-col">
           {stages.items.map((stage, i) => (
-            <div key={stage.number} className={i === 0 ? '' : 'mt-10 border-t border-ih-border pt-10'}>
+            <div
+              key={stage.number}
+              className={i === 0 ? '' : 'border-ih-border mt-10 border-t pt-10'}
+            >
               {/*
                 The stage tag is pushed right from sm up; below that it wraps to
                 its own line rather than compressing the stage name.
               */}
               <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1.5 pb-2">
-                <span className="font-mono text-[10px] tracking-[0.12em] text-ih-accent">
+                <span className="text-ih-accent font-mono text-[10px] tracking-[0.12em]">
                   {stage.number}
                 </span>
                 <h3 className="text-[21px] font-medium tracking-[-0.02em] sm:text-[24px]">
                   {stage.name}
                 </h3>
-                <span className="basis-full font-mono text-[10px] tracking-[0.1em] text-ih-steel sm:ml-auto sm:basis-auto">
+                <span className="text-ih-steel basis-full font-mono text-[10px] tracking-[0.1em] sm:ml-auto sm:basis-auto">
                   {stage.tag}
                 </span>
               </div>
-              <p className="max-w-[720px] pb-6 text-[14px] leading-[1.6] text-ih-ink-2">
+              <p className="text-ih-ink-2 max-w-[720px] pb-6 text-[14px] leading-[1.6]">
                 {stage.intro}
               </p>
 
@@ -220,11 +223,11 @@ export default function QualityControlLanding({
                       flush
                       sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 24vw"
                     />
-                    <div className="flex flex-col gap-[9px] px-[22px] pb-[22px] pt-5">
-                      <h4 className="text-[15.5px] font-medium leading-[1.3] tracking-[-0.02em]">
+                    <div className="flex flex-col gap-[9px] px-[22px] pt-5 pb-[22px]">
+                      <h4 className="text-[15.5px] leading-[1.3] font-medium tracking-[-0.02em]">
                         {check.title}
                       </h4>
-                      <p className="text-[12.5px] leading-[1.6] text-ih-muted">{check.body}</p>
+                      <p className="text-ih-muted text-[12.5px] leading-[1.6]">{check.body}</p>
                     </div>
                   </Card>
                 ))}
@@ -240,7 +243,7 @@ export default function QualityControlLanding({
           <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[1.45fr_1fr] lg:gap-[52px]">
             <div>
               <Eyebrow className="text-ih-steel">{records.eyebrow}</Eyebrow>
-              <h2 className="mt-4 max-w-[620px] text-balance font-serif text-[27px] font-normal leading-[1.14] tracking-[-0.01em] text-white sm:text-[34px]">
+              <h2 className="mt-4 max-w-[620px] font-serif text-[27px] leading-[1.14] font-normal tracking-[-0.01em] text-balance text-white sm:text-[34px]">
                 {records.headingLead} <em>{records.headingEmphasis}</em>.
               </h2>
               <p className="mt-4 max-w-[620px] text-[14px] leading-[1.65] text-white/80">
@@ -252,12 +255,12 @@ export default function QualityControlLanding({
                   <HairlineCell
                     key={record.code}
                     tone="navy"
-                    className="flex flex-col gap-2.5 px-[22px] pb-5 pt-[22px]"
+                    className="flex flex-col gap-2.5 px-[22px] pt-[22px] pb-5"
                   >
-                    <p className="font-mono text-[9.5px] uppercase tracking-[0.12em] text-ih-steel">
+                    <p className="text-ih-steel font-mono text-[9.5px] tracking-[0.12em] uppercase">
                       {record.code}
                     </p>
-                    <h3 className="text-[16px] font-medium leading-[1.25] tracking-[-0.02em] text-white">
+                    <h3 className="text-[16px] leading-[1.25] font-medium tracking-[-0.02em] text-white">
                       {record.title}
                     </h3>
                     <p className="text-[12.5px] leading-[1.55] text-white/75">{record.body}</p>
@@ -283,17 +286,19 @@ export default function QualityControlLanding({
         <div className="grid grid-cols-1 items-start gap-10 xl:grid-cols-[minmax(0,1fr)_460px] xl:gap-11">
           <div>
             <SectionHead eyebrow={scope.eyebrow} title={scope.heading} className="mb-4" />
-            <p className="max-w-[620px] text-[15px] leading-[1.6] text-ih-ink-2 sm:text-[16px]">
+            <p className="text-ih-ink-2 max-w-[620px] text-[15px] leading-[1.6] sm:text-[16px]">
               {scope.lede}
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
               {scope.requirements.map((requirement) => (
-                <div key={requirement.label} className="border-t-2 border-ih-accent pt-3.5">
-                  <p className="font-mono text-[9.5px] uppercase tracking-[0.11em] text-ih-muted">
+                <div key={requirement.label} className="border-ih-accent border-t-2 pt-3.5">
+                  <p className="text-ih-muted font-mono text-[9.5px] tracking-[0.11em] uppercase">
                     {requirement.label}
                   </p>
-                  <p className="mt-2.5 text-[13px] leading-[1.6] text-ih-ink-2">{requirement.body}</p>
+                  <p className="text-ih-ink-2 mt-2.5 text-[13px] leading-[1.6]">
+                    {requirement.body}
+                  </p>
                 </div>
               ))}
             </div>
@@ -302,11 +307,11 @@ export default function QualityControlLanding({
                 usually the same one weighing the factory and the range. */}
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {related.map((link) => (
-                <Card key={link.href} className="flex flex-col gap-2 bg-ih-surface-2 p-5">
-                  <p className="flex-1 text-[13px] leading-[1.55] text-ih-ink-2">{link.body}</p>
+                <Card key={link.href} className="bg-ih-surface-2 flex flex-col gap-2 p-5">
+                  <p className="text-ih-ink-2 flex-1 text-[13px] leading-[1.55]">{link.body}</p>
                   <Link
                     href={link.href}
-                    className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+                    className="text-ih-accent hover:text-ih-accent-hover inline-flex items-center gap-1.5 text-[13px] font-medium"
                   >
                     {link.label}
                     <ArrowRightIcon size={14} />
@@ -349,12 +354,12 @@ export default function QualityControlLanding({
 
       {/* ─── 7 · CLOSING CTA ──────────────────────────────────────────── */}
       <section className={`${SECTION} ${BAND_TIGHT}`}>
-        <Card className="grid grid-cols-1 items-center gap-8 bg-ih-steel-soft px-8 py-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-11">
+        <Card className="bg-ih-steel-soft grid grid-cols-1 items-center gap-8 px-8 py-10 lg:grid-cols-[1.3fr_1fr] lg:gap-12 lg:px-11">
           <div>
-            <h2 className="font-serif text-[26px] font-normal leading-[1.15] tracking-[-0.01em] sm:text-[30px]">
+            <h2 className="font-serif text-[26px] leading-[1.15] font-normal tracking-[-0.01em] sm:text-[30px]">
               {closing.heading}
             </h2>
-            <p className="mt-2.5 max-w-[560px] text-[14.5px] leading-[1.6] text-ih-ink-2">
+            <p className="text-ih-ink-2 mt-2.5 max-w-[560px] text-[14.5px] leading-[1.6]">
               {closing.body}
             </p>
           </div>
@@ -381,13 +386,13 @@ export default function QualityControlLanding({
                 </a>
               </Button>
             </div>
-            <p className="mt-3.5 text-[12.5px] leading-[1.5] text-ih-muted">
+            <p className="text-ih-muted mt-3.5 text-[12.5px] leading-[1.5]">
               {closing.deskLabel}{' '}
               {contactPhone && (
                 <>
                   <a
                     href={`tel:${contactPhone.replace(/\s/g, '')}`}
-                    className="font-medium text-ih-accent hover:underline"
+                    className="text-ih-accent font-medium hover:underline"
                   >
                     {contactPhone}
                   </a>

@@ -1,6 +1,13 @@
 import type { Session } from 'next-auth'
 import { describe, expect, test } from 'vitest'
-import { AuthorizationError, ForbiddenError, ROLES, hasRole, isStaffRole, requireRole } from './rbac'
+import {
+  AuthorizationError,
+  ForbiddenError,
+  ROLES,
+  hasRole,
+  isStaffRole,
+  requireRole,
+} from './rbac'
 
 function session(user: Record<string, unknown>): Session {
   return { user, expires: '2099-01-01T00:00:00.000Z' } as unknown as Session
@@ -60,7 +67,8 @@ describe('isStaffRole', () => {
   })
 
   test('rejects ContactRole-only values and non-strings', () => {
-    for (const role of ['procurement', 'ap', 'approver', 'admin']) expect(isStaffRole(role)).toBe(false)
+    for (const role of ['procurement', 'ap', 'approver', 'admin'])
+      expect(isStaffRole(role)).toBe(false)
     for (const value of [null, undefined, 42, {}, []]) expect(isStaffRole(value)).toBe(false)
   })
 })

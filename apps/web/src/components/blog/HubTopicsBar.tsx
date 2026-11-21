@@ -10,7 +10,13 @@ import type { BlogTopic } from './BlogIndexView'
  * scrolling the current topic into view when the row overflows — via
  * `scrollLeft` on the list, because `scrollIntoView` would also scroll the page.
  */
-export default function HubTopicsBar({ topics, current }: { topics: BlogTopic[]; current: string }) {
+export default function HubTopicsBar({
+  topics,
+  current,
+}: {
+  topics: BlogTopic[]
+  current: string
+}) {
   const listRef = useRef<HTMLUListElement>(null)
 
   useEffect(() => {
@@ -26,15 +32,21 @@ export default function HubTopicsBar({ topics, current }: { topics: BlogTopic[];
   }, [current])
 
   return (
-    <nav aria-label="Other topics" className="mt-7 border-y border-ih-border bg-ih-surface min-[761px]:mt-10">
+    <nav
+      aria-label="Other topics"
+      className="border-ih-border bg-ih-surface mt-7 border-y min-[761px]:mt-10"
+    >
       <div className="mx-auto flex min-h-14 max-w-[var(--spacing-max-w)] items-center gap-4 pl-5 min-[761px]:px-8 min-[1181px]:px-12">
         <Link
           href="/blog"
-          className="inline-flex min-h-10 shrink-0 items-center font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-ih-muted hover:text-ih-accent"
+          className="text-ih-muted hover:text-ih-accent inline-flex min-h-10 shrink-0 items-center font-mono text-[10.5px] font-medium tracking-[0.12em] uppercase"
         >
           All topics
         </Link>
-        <ul ref={listRef} className="no-scrollbar m-0 flex min-w-0 flex-1 list-none gap-1 overflow-x-auto p-0">
+        <ul
+          ref={listRef}
+          className="no-scrollbar m-0 flex min-w-0 flex-1 list-none gap-1 overflow-x-auto p-0"
+        >
           {topics.map((topic) => {
             const on = topic.slug === current
             return (
@@ -42,12 +54,18 @@ export default function HubTopicsBar({ topics, current }: { topics: BlogTopic[];
                 <Link
                   href={`/blog/c/${topic.slug}`}
                   aria-current={on ? 'page' : undefined}
-                  className={`flex h-10 items-center gap-2 whitespace-nowrap rounded-md px-3 text-[13.5px] transition-colors duration-150 focus-visible:-outline-offset-2! motion-reduce:transition-none ${
-                    on ? 'bg-ih-accent-soft font-medium text-ih-accent' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+                  className={`flex h-10 items-center gap-2 rounded-md px-3 text-[13.5px] whitespace-nowrap transition-colors duration-150 focus-visible:-outline-offset-2! motion-reduce:transition-none ${
+                    on
+                      ? 'bg-ih-accent-soft text-ih-accent font-medium'
+                      : 'text-ih-ink-2 hover:bg-ih-surface-2'
                   }`}
                 >
                   {topic.name}
-                  <span className={`font-mono text-[11px] ${on ? 'text-ih-accent' : 'text-ih-muted'}`}>{topic.count}</span>
+                  <span
+                    className={`font-mono text-[11px] ${on ? 'text-ih-accent' : 'text-ih-muted'}`}
+                  >
+                    {topic.count}
+                  </span>
                 </Link>
               </li>
             )

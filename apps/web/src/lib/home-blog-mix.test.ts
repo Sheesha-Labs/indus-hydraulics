@@ -5,12 +5,23 @@ const post = (id: string, categoryId: string | null) => ({ id, categoryId })
 
 describe('pickBlogMix', () => {
   it('takes the newest article from each topic first', () => {
-    const posts = [post('a1', 'anchor'), post('a2', 'anchor'), post('h1', 'hoses'), post('a3', 'anchor'), post('l1', 'lifting')]
+    const posts = [
+      post('a1', 'anchor'),
+      post('a2', 'anchor'),
+      post('h1', 'hoses'),
+      post('a3', 'anchor'),
+      post('l1', 'lifting'),
+    ]
     expect(pickBlogMix(posts, 3).map((p) => p.id)).toEqual(['a1', 'h1', 'l1'])
   })
 
   it('fills remaining slots with the next-newest when topics run out', () => {
-    const posts = [post('a1', 'anchor'), post('a2', 'anchor'), post('h1', 'hoses'), post('a3', 'anchor')]
+    const posts = [
+      post('a1', 'anchor'),
+      post('a2', 'anchor'),
+      post('h1', 'hoses'),
+      post('a3', 'anchor'),
+    ]
     expect(pickBlogMix(posts, 4).map((p) => p.id)).toEqual(['a1', 'a2', 'h1', 'a3'])
   })
 

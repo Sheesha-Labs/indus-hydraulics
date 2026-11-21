@@ -46,8 +46,7 @@ function legKm(a: LonLat, b: LonLat): number {
   const lat2 = b[1] * toRad
   const dLat = lat2 - lat1
   const dLon = (b[0] - a[0]) * toRad
-  const h =
-    Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2
   return 2 * Math.asin(Math.min(1, Math.sqrt(h))) * EARTH_RADIUS_KM
 }
 
@@ -122,7 +121,9 @@ export function pickScaleBar(measure: (km: number) => number): { km: number; px:
   // those two cases backwards — an 800 KM bar drawn 3 px wide on a city map.
   const smallest = SCALE_BAR_STEPS[0]
   const largest = SCALE_BAR_STEPS[SCALE_BAR_STEPS.length - 1]!
-  return measure(smallest) > 170 ? { km: smallest, px: measure(smallest) } : { km: largest, px: measure(largest) }
+  return measure(smallest) > 170
+    ? { km: smallest, px: measure(smallest) }
+    : { km: largest, px: measure(largest) }
 }
 
 /**

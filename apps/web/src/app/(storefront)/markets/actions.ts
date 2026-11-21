@@ -50,8 +50,7 @@ import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
  */
 
 type SubmitResult =
-  | { success: true; code: string; token: string }
-  | { success: false; error: string }
+  { success: true; code: string; token: string } | { success: false; error: string }
 
 /**
  * Anti-spam floor. A human takes a few seconds over these fields; a bot posts
@@ -96,12 +95,19 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   // person who somehow trips it still has a way through.
   const honeypot = formData.get('website')
   if (typeof honeypot === 'string' && honeypot.trim().length > 0) {
-    return { success: false, error: 'Something went wrong. Email sales@indushydraulics.me and we will pick it up.' }
+    return {
+      success: false,
+      error: 'Something went wrong. Email sales@indushydraulics.me and we will pick it up.',
+    }
   }
 
   const startedAtRaw = formData.get('formStartedAt')
   const startedAt = typeof startedAtRaw === 'string' ? Number(startedAtRaw) : Number.NaN
-  if (Number.isFinite(startedAt) && startedAt > 0 && Date.now() - startedAt < MIN_FORM_DURATION_MS) {
+  if (
+    Number.isFinite(startedAt) &&
+    startedAt > 0 &&
+    Date.now() - startedAt < MIN_FORM_DURATION_MS
+  ) {
     return { success: false, error: 'That was quick — give the form a moment and try again.' }
   }
 
@@ -122,7 +128,10 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
 
   if (!parsed.success) {
     const issue = parsed.error.issues[0]
-    return { success: false, error: `Please check the form — we need ${issue?.message ?? 'the missing details'}.` }
+    return {
+      success: false,
+      error: `Please check the form — we need ${issue?.message ?? 'the missing details'}.`,
+    }
   }
 
   const input = parsed.data
@@ -145,7 +154,10 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
       return { success: false, error: 'Please check the form — we need a destination country.' }
     }
   } else if (!market) {
-    return { success: false, error: 'That market is no longer listed. Email sales@indushydraulics.me.' }
+    return {
+      success: false,
+      error: 'That market is no longer listed. Email sales@indushydraulics.me.',
+    }
   }
 
   const destinationName = market?.name ?? input.destinationCountry ?? ''
@@ -159,7 +171,10 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   const page = market ? releasedMarketPage(market.slug) : undefined
 
   if (formData.get('attachmentsPending') === '1') {
-    return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }
+    return {
+      success: false,
+      error: 'An attachment is still uploading. Give it a moment and try again.',
+    }
   }
 
   const attachments = readAttachments(formData.get('attachments'))
@@ -173,7 +188,8 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   if (!input.partList && attachments.length === 0) {
     return {
       success: false,
-      error: 'Tell us what you need — part numbers, or bore, thread and pressure — or attach a drawing.',
+      error:
+        'Tell us what you need — part numbers, or bore, thread and pressure — or attach a drawing.',
     }
   }
 
@@ -218,7 +234,8 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
         // creates work at the buyer's bank.
         currency: page?.currency ?? 'AED',
         customerMessage: input.partList || null,
-        internalNotes: 'Submitted from the export-market page — verify contact details before fulfilment.',
+        internalNotes:
+          'Submitted from the export-market page — verify contact details before fulfilment.',
         status: 'submitted',
         submittedAt: new Date(),
       },
@@ -242,7 +259,12 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
         },
       })
       await tx.rfqAttachment.create({
-        data: { rfqId: created.id, mediaId: media.id, uploaderType: 'contact', uploaderId: contactId },
+        data: {
+          rfqId: created.id,
+          mediaId: media.id,
+          uploaderType: 'contact',
+          uploaderId: contactId,
+        },
       })
     }
 
@@ -321,7 +343,8 @@ function readAttachments(
         path,
         label: typeof label === 'string' ? label.slice(0, 180) : 'attachment',
         size: typeof size === 'number' && Number.isFinite(size) ? size : 0,
-        contentType: typeof contentType === 'string' ? contentType.slice(0, 120) : 'application/octet-stream',
+        contentType:
+          typeof contentType === 'string' ? contentType.slice(0, 120) : 'application/octet-stream',
       })
     }
   } catch {

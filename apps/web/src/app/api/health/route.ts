@@ -15,7 +15,7 @@ export async function GET() {
         durationMs: Date.now() - startedAt,
         timestamp: new Date().toISOString(),
       },
-      { status: 200, headers: { 'Cache-Control': 'no-store' } },
+      { status: 200, headers: { 'Cache-Control': 'no-store' } }
     )
   } catch (error) {
     console.error('[api/health] db check failed', error)
@@ -26,7 +26,7 @@ export async function GET() {
         durationMs: Date.now() - startedAt,
         timestamp: new Date().toISOString(),
       },
-      { status: 503, headers: { 'Cache-Control': 'no-store' } },
+      { status: 503, headers: { 'Cache-Control': 'no-store' } }
     )
   }
 }

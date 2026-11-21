@@ -34,7 +34,12 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { PrismaClient, type Prisma } from '@prisma/client'
 import { createClient } from '@supabase/supabase-js'
-import { getMasterPage, masterContentKey, validateSections, type SectionValues } from '@indus/domain'
+import {
+  getMasterPage,
+  masterContentKey,
+  validateSections,
+  type SectionValues,
+} from '@indus/domain'
 
 const db = new PrismaClient()
 
@@ -130,7 +135,9 @@ async function main() {
     const publicUrl = sb.storage.from(BUCKET).getPublicUrl(objectPath).data.publicUrl
 
     if (dryRun) {
-      console.log(`[dry-run] upload ${objectPath} (${size?.width}×${size?.height}, ${buf.byteLength} B)`)
+      console.log(
+        `[dry-run] upload ${objectPath} (${size?.width}×${size?.height}, ${buf.byteLength} B)`
+      )
       mediaIds.push(`dry-run-${b.file}`)
       continue
     }
@@ -191,7 +198,7 @@ async function main() {
     Object.fromEntries(
       s.fields
         .filter((f) => f.kind === 'list' && Array.isArray(s.defaults[f.key]))
-        .map((f) => [f.key, s.defaults[f.key]]),
+        .map((f) => [f.key, s.defaults[f.key]])
     )
   const doc = SERVICES_PAGE.sections.map((s) => ({
     key: s.key,

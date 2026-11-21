@@ -12,7 +12,10 @@
  */
 export type BlogMixCandidate = { id: string; categoryId: string | null }
 
-export function pickBlogMix<T extends BlogMixCandidate>(newestFirst: readonly T[], count: number): T[] {
+export function pickBlogMix<T extends BlogMixCandidate>(
+  newestFirst: readonly T[],
+  count: number
+): T[] {
   const picked: T[] = []
   const seenTopics = new Set<string>()
   const pickedIds = new Set<string>()

@@ -37,13 +37,16 @@ export function Table({ className, ...props }: React.TableHTMLAttributes<HTMLTab
       reading as a data dump; that was the single most-cited finding in the
       admin audit.
     */
-    <div className="w-full overflow-x-auto rounded-lg border border-ih-border bg-ih-surface">
+    <div className="border-ih-border bg-ih-surface w-full overflow-x-auto rounded-lg border">
       <table className={cn('w-full border-collapse text-[14px]', className)} {...props} />
     </div>
   )
 }
 
-export function TableHeader({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
+export function TableHeader({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLTableSectionElement>) {
   return <thead className={className} {...props} />
 }
 
@@ -53,8 +56,11 @@ export function TableBody({ className, ...props }: React.HTMLAttributes<HTMLTabl
   return <tbody className={cn('[&>tr:last-child>td]:border-b-0', className)} {...props} />
 }
 
-export function TableFooter({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
-  return <tfoot className={cn('border-t border-ih-border', className)} {...props} />
+export function TableFooter({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLTableSectionElement>) {
+  return <tfoot className={cn('border-ih-border border-t', className)} {...props} />
 }
 
 export function TableRow({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) {
@@ -74,8 +80,8 @@ export function TableHead({ className, numeric, scope = 'col', ...props }: Table
     <th
       scope={scope}
       className={cn(
-        'whitespace-nowrap border-b border-ih-border px-3 py-3 text-left align-middle first:pl-4',
-        'text-[13px] font-medium text-ih-muted-2',
+        'border-ih-border border-b px-3 py-3 text-left align-middle whitespace-nowrap first:pl-4',
+        'text-ih-muted-2 text-[13px] font-medium',
         numeric && 'text-right',
         className
       )}
@@ -92,7 +98,7 @@ export function TableCell({ className, numeric, ...props }: TableCellProps) {
   return (
     <td
       className={cn(
-        'border-b border-ih-border px-3 py-3 align-middle first:pl-4',
+        'border-ih-border border-b px-3 py-3 align-middle first:pl-4',
         numeric && 'text-right font-mono tabular-nums',
         className
       )}
@@ -101,6 +107,11 @@ export function TableCell({ className, numeric, ...props }: TableCellProps) {
   )
 }
 
-export function TableCaption({ className, ...props }: React.HTMLAttributes<HTMLTableCaptionElement>) {
-  return <caption className={cn('pb-3 text-left text-[13px] text-ih-muted', className)} {...props} />
+export function TableCaption({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLTableCaptionElement>) {
+  return (
+    <caption className={cn('text-ih-muted pb-3 text-left text-[13px]', className)} {...props} />
+  )
 }

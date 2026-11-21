@@ -46,21 +46,21 @@ export default async function GscPage() {
       </div>
 
       <div
-        className={`rounded-lg mb-6 border px-4 py-3 text-[13px] ${
+        className={`mb-6 rounded-lg border px-4 py-3 text-[13px] ${
           access.ok
             ? 'border-ih-border bg-ih-surface-2 text-ih-ink-2'
             : 'border-ih-border bg-ih-surface text-ih-ink-2'
         }`}
       >
-        <span className="tabular-nums mr-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
+        <span className="mr-2 text-[10.5px] font-medium tracking-[0.12em] uppercase tabular-nums">
           {access.ok ? 'Connected' : 'Not connected'}
         </span>
         {access.detail}
       </div>
 
       {sites && (
-        <div className="rounded-lg border-ih-border bg-ih-surface mb-6 border px-4 py-3 text-[13px]">
-          <p className="tabular-nums text-ih-muted mb-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
+        <div className="border-ih-border bg-ih-surface mb-6 rounded-lg border px-4 py-3 text-[13px]">
+          <p className="text-ih-muted mb-2 text-[10.5px] font-medium tracking-[0.12em] uppercase tabular-nums">
             Properties this service account can see
           </p>
           {!sites.ok && <p className="text-ih-ink-2">{sites.detail}</p>}
@@ -75,13 +75,14 @@ export default async function GscPage() {
           {sites.ok && sites.sites.length > 0 && (
             <>
               <p className="text-ih-ink-2 mb-2">
-                One of these is the correct value for <code className="tabular-nums">GSC_SITE_URL</code>.
-                Copy it exactly — a domain property is not interchangeable with the URL-prefix one
-                and they hold different data.
+                One of these is the correct value for{' '}
+                <code className="tabular-nums">GSC_SITE_URL</code>. Copy it exactly — a domain
+                property is not interchangeable with the URL-prefix one and they hold different
+                data.
               </p>
               <ul className="space-y-1">
                 {sites.sites.map((site) => (
-                  <li key={site.siteUrl} className="tabular-nums text-[11.5px]">
+                  <li key={site.siteUrl} className="text-[11.5px] tabular-nums">
                     {site.siteUrl} <span className="text-ih-muted">— {site.permissionLevel}</span>
                   </li>
                 ))}
@@ -95,7 +96,7 @@ export default async function GscPage() {
         <SyncNowButton disabled={!access.ok} />
       </div>
 
-      <div className="rounded-lg border-ih-border bg-ih-surface border p-6">
+      <div className="border-ih-border bg-ih-surface rounded-lg border p-6">
         <h2 className="mb-2 text-[15px] font-medium">Setup</h2>
         <p className="text-ih-muted mb-4 text-[13px]">
           The sync runs nightly at 05:00 and backfills roughly the full retention window on its
@@ -114,21 +115,21 @@ export default async function GscPage() {
             In Search Console, open <strong>Settings → Users and permissions → Add user</strong> and
             add the service account address with <strong>Full</strong> or{' '}
             <strong>Restricted</strong> access:
-            <pre className="tabular-nums bg-ih-surface-2 mt-1 p-2 text-[11px] leading-relaxed">
+            <pre className="bg-ih-surface-2 mt-1 p-2 text-[11px] leading-relaxed tabular-nums">
               {config.ok ? config.config.clientEmail : 'the client_email from the JSON key'}
             </pre>
           </li>
           <li>
             Set two environment variables in Vercel (Production), then redeploy:
-            <pre className="tabular-nums bg-ih-surface-2 mt-1 whitespace-pre-wrap p-2 text-[11px] leading-relaxed">
+            <pre className="bg-ih-surface-2 mt-1 p-2 text-[11px] leading-relaxed whitespace-pre-wrap tabular-nums">
               {`GSC_SITE_URL=https://indushydraulics.com/
 GSC_SERVICE_ACCOUNT_JSON={"type":"service_account", ...}`}
             </pre>
             <span className="text-ih-muted mt-1 block">
               The whole JSON key goes in as one line. A URL-prefix property needs the trailing
               slash; a domain property is written{' '}
-              <code className="tabular-nums">sc-domain:example.com</code>. They are different properties
-              with different data.
+              <code className="tabular-nums">sc-domain:example.com</code>. They are different
+              properties with different data.
             </span>
           </li>
         </ol>
@@ -146,8 +147,10 @@ GSC_SERVICE_ACCOUNT_JSON={"type":"service_account", ...}`}
 
 function Tile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border-ih-border bg-ih-surface border p-4">
-      <div className="tabular-nums text-ih-muted text-[10.5px] uppercase tracking-[0.1em]">{label}</div>
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
+        {label}
+      </div>
       <div className="mt-1 text-[22px] font-medium">{value}</div>
     </div>
   )

@@ -88,7 +88,7 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
     // without a printed header is how a made-up dimension meaning reaches a
     // customer.
     const guessed = VARIANT_DIMENSION_COLUMNS.filter(
-      (c) => !c.help.includes('dimension drawing'),
+      (c) => !c.help.includes('dimension drawing')
     ).map((c) => c.key)
     expect(guessed).toEqual([
       'OD',
@@ -166,9 +166,38 @@ describe('text columns', () => {
 
   it('does not claim S1 or S2 mean across-flats', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
-      'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action', 'ratio',
-      'series', 'cavity', 'capacity', 'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'voltage', 'output', 'maxPressure', 'outletThread',
-      'monitoring', 'usedOn', 'fits', 'range', 'dial', 'trim', 'connection',
+      'oRing',
+      'insideDia',
+      'wall',
+      'supply',
+      'item',
+      'half',
+      'bodySize',
+      'mount',
+      'shaft',
+      'ports',
+      'rotation',
+      'action',
+      'ratio',
+      'series',
+      'cavity',
+      'capacity',
+      'systemType',
+      'lubricant',
+      'reservoir',
+      'pressureRatio',
+      'container',
+      'voltage',
+      'output',
+      'maxPressure',
+      'outletThread',
+      'monitoring',
+      'usedOn',
+      'fits',
+      'range',
+      'dial',
+      'trim',
+      'connection',
     ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
@@ -179,7 +208,10 @@ describe('text columns', () => {
 
 describe('supply column', () => {
   it('shows how a hose row is supplied, and only when a row carries it', () => {
-    const rows = [v({ dimensions: { supply: '50 ft box' } }), v({ dimensions: { supply: '100 ft coil' } })]
+    const rows = [
+      v({ dimensions: { supply: '50 ft box' } }),
+      v({ dimensions: { supply: '100 ft coil' } }),
+    ]
     expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['supply'])
     expect(variantTextColumns([v({ dimensions: {} })])).toEqual([])
   })
@@ -188,31 +220,53 @@ describe('supply column', () => {
 describe('lay-flat hose columns', () => {
   it('prints bore tolerance and wall as text and tensile strength as a hose column', () => {
     const rows = [
-      v({ pressureBar: 21, dimensions: { insideDia: '39 +1.5', wall: '2.6', burstPressure: 63, weightPerMetre: 0.45, tensileKg: 5800 } }),
-      v({ pressureBar: 85, dimensions: { insideDia: '76', wall: '5.5 ±0.5', burstPressure: 170, weightPerMetre: 1.55, tensileKg: 24000 } }),
+      v({
+        pressureBar: 21,
+        dimensions: {
+          insideDia: '39 +1.5',
+          wall: '2.6',
+          burstPressure: 63,
+          weightPerMetre: 0.45,
+          tensileKg: 5800,
+        },
+      }),
+      v({
+        pressureBar: 85,
+        dimensions: {
+          insideDia: '76',
+          wall: '5.5 ±0.5',
+          burstPressure: 170,
+          weightPerMetre: 1.55,
+          tensileKg: 24000,
+        },
+      }),
     ]
     expect(variantTableKind(rows)).toBe('hose')
     expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['insideDia', 'wall'])
-    expect(variantDimensionColumns(rows).map((c) => c.key)).toEqual(['burstPressure', 'weightPerMetre', 'tensileKg'])
+    expect(variantDimensionColumns(rows).map((c) => c.key)).toEqual([
+      'burstPressure',
+      'weightPerMetre',
+      'tensileKg',
+    ])
   })
 })
 
 describe('variantPortHeading', () => {
   it('reads inch threads with a pitch as threads', () => {
     expect(variantPortHeading([v({ portLabel: '1/4"-18' }), v({ portLabel: '1.1/16"-12' })])).toBe(
-      'Thread',
+      'Thread'
     )
   })
 
   it('reads BSP and metric threads as threads', () => {
     expect(variantPortHeading([v({ portLabel: 'G1/2"-14' }), v({ portLabel: 'M18X1.5' })])).toBe(
-      'Thread',
+      'Thread'
     )
   })
 
   it('reads bare inch fractions as flange sizes', () => {
     expect(variantPortHeading([v({ portLabel: '3/4"' }), v({ portLabel: '1.1/4"' })])).toBe(
-      'Flange size',
+      'Flange size'
     )
   })
 
@@ -221,22 +275,36 @@ describe('variantPortHeading', () => {
   })
 
   it('reads a single tube end as a tube size, even with a hyphen in it', () => {
-    expect(variantPortHeading([v({ portLabel: '1/16" tube' }), v({ portLabel: '6 mm tube (M12×1.5), L series' })])).toBe(
-      'Tube size',
-    )
-    expect(variantPortHeading([v({ portLabel: '1/4" tube, push-in' }), v({ portLabel: '3/16" tube O.D. (JIC 3/8-24)' })])).toBe(
-      'Tube size',
-    )
+    expect(
+      variantPortHeading([
+        v({ portLabel: '1/16" tube' }),
+        v({ portLabel: '6 mm tube (M12×1.5), L series' }),
+      ])
+    ).toBe('Tube size')
+    expect(
+      variantPortHeading([
+        v({ portLabel: '1/4" tube, push-in' }),
+        v({ portLabel: '3/16" tube O.D. (JIC 3/8-24)' }),
+      ])
+    ).toBe('Tube size')
   })
 
   it('gives any other non-thread end the neutral size heading, not a flange size', () => {
-    expect(variantPortHeading([v({ portLabel: '3/16" SAE 45° flare' }), v({ portLabel: '1/8" plastic tube, 0.08" insert OD' })])).toBe(
-      'Size',
-    )
+    expect(
+      variantPortHeading([
+        v({ portLabel: '3/16" SAE 45° flare' }),
+        v({ portLabel: '1/8" plastic tube, 0.08" insert OD' }),
+      ])
+    ).toBe('Size')
   })
 
   it('reads a gauge scale as a range', () => {
-    expect(variantPortHeading([v({ portLabel: '0–160 psi' }), v({ portLabel: '30"Hg vac – 0 – 150 psi' })])).toBe('Range')
+    expect(
+      variantPortHeading([
+        v({ portLabel: '0–160 psi' }),
+        v({ portLabel: '30"Hg vac – 0 – 150 psi' }),
+      ])
+    ).toBe('Range')
   })
 
   it('falls back to the neutral heading on a mixed or empty set', () => {
@@ -258,13 +326,13 @@ describe('equivalents', () => {
         v({ competitorBrand: 'Parker', competitorMpn: 'a' }),
         v({ competitorBrand: 'Parker', competitorMpn: 'b' }),
         v(),
-      ]),
+      ])
     ).toBe('Parker')
     expect(
       variantEquivalentBrand([
         v({ competitorBrand: 'Parker', competitorMpn: 'a' }),
         v({ competitorBrand: 'Eaton', competitorMpn: 'b' }),
-      ]),
+      ])
     ).toBeNull()
     expect(variantEquivalentBrand([v()])).toBeNull()
   })
@@ -278,14 +346,16 @@ describe('variantHoseLabel', () => {
   })
 
   it('does not pad a dash that is already two digits', () => {
-    expect(variantHoseLabel(v({ hoseDash: 32, hoseInch: '2"', hoseDn: 50 }))).toBe('-32 · 2" · DN50')
+    expect(variantHoseLabel(v({ hoseDash: 32, hoseInch: '2"', hoseDn: 50 }))).toBe(
+      '-32 · 2" · DN50'
+    )
   })
 })
 
 describe('variantBoreRange', () => {
   it('formats the span in the same shape as the nominal_size_range spec', () => {
     expect(variantBoreRange([v({ hoseDash: 4 }), v({ hoseDash: 24 }), v({ hoseDash: 8 })])).toBe(
-      '-04 to -24',
+      '-04 to -24'
     )
   })
 
@@ -382,18 +452,25 @@ describe('line-component columns', () => {
 
   it('heads the size column "Nominal size" when no row carries a bore code', () => {
     expect(
-      variantSizeHeading([union('2" butt weld, Sch XXS', '2"'), union('3" butt weld, Sch XXS', '3"')]),
+      variantSizeHeading([
+        union('2" butt weld, Sch XXS', '2"'),
+        union('3" butt weld, Sch XXS', '3"'),
+      ])
     ).toBe('Nominal size')
   })
 
   it('still heads it "Hose bore" when a dash or DN is present', () => {
-    expect(variantSizeHeading([{ partNumber: 'x', hoseDash: 8, hoseInch: '1/2"' }])).toBe('Hose bore')
-    expect(variantSizeHeading([{ partNumber: 'x', hoseDn: 12, hoseInch: '1/2"' }])).toBe('Hose bore')
+    expect(variantSizeHeading([{ partNumber: 'x', hoseDash: 8, hoseInch: '1/2"' }])).toBe(
+      'Hose bore'
+    )
+    expect(variantSizeHeading([{ partNumber: 'x', hoseDn: 12, hoseInch: '1/2"' }])).toBe(
+      'Hose bore'
+    )
   })
 
   it('heads the port column "End connection" for pipe ends', () => {
     expect(
-      variantPortHeading([union('2" butt weld, Sch 80', '2"'), union('3" LP thread (NPT)', '3"')]),
+      variantPortHeading([union('2" butt weld, Sch 80', '2"'), union('3" LP thread (NPT)', '3"')])
     ).toBe('End connection')
   })
 
@@ -427,7 +504,12 @@ describe('hose size tables', () => {
 
   it('renders a hose table in catalogue order, with its own units', () => {
     const cols = variantDimensionColumns([hoseRow(19)])
-    expect(cols.map((c) => c.key)).toEqual(['hoseOD', 'burstPressure', 'bendRadius', 'weightPerMetre'])
+    expect(cols.map((c) => c.key)).toEqual([
+      'hoseOD',
+      'burstPressure',
+      'bendRadius',
+      'weightPerMetre',
+    ])
     expect(cols.map((c) => c.unit)).toEqual(['mm', 'bar', 'mm', 'kg/m'])
   })
 
@@ -446,7 +528,9 @@ describe('hose size tables', () => {
     */
     expect(variantTableKind([hoseRow(19)])).toBe('hose')
     expect(
-      variantTableKind([{ partNumber: 'y', hoseDash: 8, portLabel: '9/16"-18', dimensions: { A: 40, B: 22 } }]),
+      variantTableKind([
+        { partNumber: 'y', hoseDash: 8, portLabel: '9/16"-18', dimensions: { A: 40, B: 22 } },
+      ])
     ).toBe('fitting')
   })
 
@@ -467,17 +551,24 @@ describe('lifting tables', () => {
   })
 
   it('is recognised by a size label alone', () => {
-    expect(variantTableKind([{ partNumber: 'x', dimensions: { size: '6 mm', A: 3 } }])).toBe('lifting')
+    expect(variantTableKind([{ partNumber: 'x', dimensions: { size: '6 mm', A: 3 } }])).toBe(
+      'lifting'
+    )
   })
 
   it('wins over hose detection when a chain row carries weight per metre', () => {
-    const chain = { partNumber: 'IH-LR-CH-G80-10MM', dimensions: { size: '10 mm', wllKg: 3200, weightPerMetre: 2.22 } }
+    const chain = {
+      partNumber: 'IH-LR-CH-G80-10MM',
+      dimensions: { size: '10 mm', wllKg: 3200, weightPerMetre: 2.22 },
+    }
     expect(variantTableKind([chain])).toBe('lifting')
   })
 
   it('leaves hose and fitting tables alone', () => {
     expect(variantTableKind([v()])).toBe('fitting')
-    expect(variantTableKind([{ partNumber: 'h', dimensions: { hoseOD: 19, weightPerMetre: 0.5 } }])).toBe('hose')
+    expect(
+      variantTableKind([{ partNumber: 'h', dimensions: { hoseOD: 19, weightPerMetre: 0.5 } }])
+    ).toBe('hose')
   })
 
   it('orders loads before geometry, letters and weight', () => {
@@ -497,7 +588,9 @@ describe('lifting tables', () => {
 
   it('puts size and grade in the leading text columns', () => {
     const cols = variantTextColumns([
-      shackle({ dimensions: { size: '1/4″', grade: 'Alloy steel', wllLbs: 3500, ropeSize: '3/8″' } }),
+      shackle({
+        dimensions: { size: '1/4″', grade: 'Alloy steel', wllLbs: 3500, ropeSize: '3/8″' },
+      }),
     ])
     expect(cols.map((c) => [c.key, Boolean(c.lead)])).toEqual([
       ['size', true],
@@ -514,13 +607,18 @@ describe('lifting tables', () => {
   })
 
   it('drops an unknown key rather than printing it', () => {
-    const cols = variantDimensionColumns([shackle({ dimensions: { size: '1″', wllT: 8.5, ZZ: 1 } })])
+    const cols = variantDimensionColumns([
+      shackle({ dimensions: { size: '1″', wllT: 8.5, ZZ: 1 } }),
+    ])
     expect(cols.map((c) => c.key)).toEqual(['wllT'])
   })
 
   it('splits a qualified load into its own column, after the plain one', () => {
     const cols = variantDimensionColumns([
-      { partNumber: 'r', dimensions: { size: '12 mm', mblKn: 90, 'mblKn@g1770_fc': 80, 'mblKn@g1570_fc': 70 } },
+      {
+        partNumber: 'r',
+        dimensions: { size: '12 mm', mblKn: 90, 'mblKn@g1770_fc': 80, 'mblKn@g1570_fc': 70 },
+      },
     ])
     expect(cols.map((c) => [c.key, c.label, c.unit])).toEqual([
       ['mblKn', 'Min breaking load', 'kN'],
@@ -530,20 +628,38 @@ describe('lifting tables', () => {
   })
 
   it('recognises a table whose only loads are qualified', () => {
-    expect(variantTableKind([{ partNumber: 'c', dimensions: { 'proofKn@u2': 100, 'mblKn@u2': 140 } }])).toBe('lifting')
+    expect(
+      variantTableKind([{ partNumber: 'c', dimensions: { 'proofKn@u2': 100, 'mblKn@u2': 140 } }])
+    ).toBe('lifting')
   })
 
   it('drops a qualifier it has no label for', () => {
-    const cols = variantDimensionColumns([{ partNumber: 'r', dimensions: { size: '1 t', wllT: 1, 'wllT@nonsense': 2 } }])
+    const cols = variantDimensionColumns([
+      { partNumber: 'r', dimensions: { size: '1 t', wllT: 1, 'wllT@nonsense': 2 } },
+    ])
     expect(cols.map((c) => c.key)).toEqual(['wllT'])
   })
 
   it('renders drawing letters the registry does not list, after the listed ones', () => {
     const cols = variantDimensionColumns([
-      { partNumber: 'b', dimensions: { size: 'DN 200', wllKn: 72, A: 600, d1: 145, A1: 270, 'Ø1': 20, Lp: 18, t2: 9, weightKg: 181 } },
+      {
+        partNumber: 'b',
+        dimensions: {
+          size: 'DN 200',
+          wllKn: 72,
+          A: 600,
+          d1: 145,
+          A1: 270,
+          Ø1: 20,
+          Lp: 18,
+          t2: 9,
+          weightKg: 181,
+        },
+      },
     ])
     expect(cols.map((c) => c.label)).toEqual(['WLL', 'A', 'A1', 'd1', 'L′', 't2', 'Ø1', 'Weight'])
-    for (const c of cols.filter((x) => !['WLL', 'Weight'].includes(x.label))) expect(c.help).toContain('dimension drawing')
+    for (const c of cols.filter((x) => !['WLL', 'Weight'].includes(x.label)))
+      expect(c.help).toContain('dimension drawing')
   })
 
   it('splits offshore mooring chain loads by grade, in grade order', () => {
@@ -552,21 +668,39 @@ describe('lifting tables', () => {
         partNumber: 'IH-MR-MC-SL-0760',
         dimensions: {
           size: '3″ (76 mm)',
-          'mblKn@r5': 7009, 'proofKn@r3': 3417, 'mblKn@r3': 4885, 'proofKn@orq': 3074, 'mblKn@orq': 4632,
-          'proofKn@r4': 4731, 'mblKn@r4': 6002, 'proofKn@r5': 5498, weightPerShotKg: 3713, linksPerShot: 59,
+          'mblKn@r5': 7009,
+          'proofKn@r3': 3417,
+          'mblKn@r3': 4885,
+          'proofKn@orq': 3074,
+          'mblKn@orq': 4632,
+          'proofKn@r4': 4731,
+          'mblKn@r4': 6002,
+          'proofKn@r5': 5498,
+          weightPerShotKg: 3713,
+          linksPerShot: 59,
         },
       },
     ])
     expect(cols.map((c) => c.label)).toEqual([
-      'Proof load, grade ORQ', 'Proof load, grade R3', 'Proof load, grade R4', 'Proof load, grade R5',
-      'Min breaking load, grade ORQ', 'Min breaking load, grade R3', 'Min breaking load, grade R4', 'Min breaking load, grade R5',
-      'Links per shot', 'Weight per shot',
+      'Proof load, grade ORQ',
+      'Proof load, grade R3',
+      'Proof load, grade R4',
+      'Proof load, grade R5',
+      'Min breaking load, grade ORQ',
+      'Min breaking load, grade R3',
+      'Min breaking load, grade R4',
+      'Min breaking load, grade R5',
+      'Links per shot',
+      'Weight per shot',
     ])
   })
 
   it('splits an unlisted drawing letter by grade', () => {
     const cols = variantDimensionColumns([
-      { partNumber: 's', dimensions: { size: '22–24 mm', L: 377, 'd1@u3': 60, 'd1@u2': 58, d2: 31, 'd1@bogus': 1 } },
+      {
+        partNumber: 's',
+        dimensions: { size: '22–24 mm', L: 377, 'd1@u3': 60, 'd1@u2': 58, d2: 31, 'd1@bogus': 1 },
+      },
     ])
     expect(cols.map((c) => [c.key, c.label])).toEqual([
       ['L', 'L'],
@@ -577,7 +711,19 @@ describe('lifting tables', () => {
   })
 
   it('carries buoy columns', () => {
-    const rows = [{ partNumber: 'b', dimensions: { size: '730 kg buoyancy', volumeL: 830, buoyancyKg: 730, weightKg: 130, heightMm: 900, depth: 'Surface' } }]
+    const rows = [
+      {
+        partNumber: 'b',
+        dimensions: {
+          size: '730 kg buoyancy',
+          volumeL: 830,
+          buoyancyKg: 730,
+          weightKg: 130,
+          heightMm: 900,
+          depth: 'Surface',
+        },
+      },
+    ]
     expect(variantTableKind(rows)).toBe('lifting')
     expect(variantDimensionColumns(rows).map((c) => [c.label, c.unit])).toEqual([
       ['Net buoyancy', 'kg'],
@@ -593,14 +739,19 @@ describe('lifting tables', () => {
         partNumber: 'IH-LR-BH-MSB-8-0300',
         dimensions: {
           span: '3.0 m',
-          'wllT@stv45': 5, 'minSlingM@stv45': 2.1,
-          'wllT@stv30': 8, 'minSlingM@stv30': 2.9,
-          'wllT@stv20': 8, 'minSlingM@stv20': 4.3,
+          'wllT@stv45': 5,
+          'minSlingM@stv45': 2.1,
+          'wllT@stv30': 8,
+          'minSlingM@stv30': 2.9,
+          'wllT@stv20': 8,
+          'minSlingM@stv20': 4.3,
         },
       },
     ]
     expect(variantTableKind(rows)).toBe('lifting')
-    expect(variantTextColumns(rows).map((c) => [c.key, c.label, c.lead])).toEqual([['span', 'Span', true]])
+    expect(variantTextColumns(rows).map((c) => [c.key, c.label, c.lead])).toEqual([
+      ['span', 'Span', true],
+    ])
     expect(variantDimensionColumns(rows).map((c) => [c.label, c.unit])).toEqual([
       ['WLL, 45° to vertical', 't'],
       ['WLL, 30° to vertical', 't'],
@@ -613,7 +764,10 @@ describe('lifting tables', () => {
 
   it('leads a multi-configuration beam chart with the configuration', () => {
     const rows: VariantLike[] = [
-      { partNumber: 'IH-LR-BH-MCB-16-LB-0300', dimensions: { configuration: 'Lifting beam', span: '3 m', wllT: 16 } },
+      {
+        partNumber: 'IH-LR-BH-MCB-16-LB-0300',
+        dimensions: { configuration: 'Lifting beam', span: '3 m', wllT: 16 },
+      },
     ]
     expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['configuration', 'span'])
   })
@@ -623,7 +777,9 @@ describe('lifting tables', () => {
   })
 
   it('carries lashing capacity as its own column', () => {
-    const cols = variantDimensionColumns([{ partNumber: 'l', dimensions: { size: '8 mm', lcKn: 50, mblKn: 100 } }])
+    const cols = variantDimensionColumns([
+      { partNumber: 'l', dimensions: { size: '8 mm', lcKn: 50, mblKn: 100 } },
+    ])
     expect(cols.map((c) => [c.key, c.label])).toEqual([
       ['mblKn', 'Min breaking load'],
       ['lcKn', 'LC'],
@@ -631,7 +787,9 @@ describe('lifting tables', () => {
   })
 
   it('renders a count with no unit', () => {
-    const falls = variantDimensionColumns([{ partNumber: 'h', dimensions: { size: '2 t', wllT: 2, chainFalls: 2 } }])
+    const falls = variantDimensionColumns([
+      { partNumber: 'h', dimensions: { size: '2 t', wllT: 2, chainFalls: 2 } },
+    ])
     expect(falls.map((c) => variantColumnUnit(c))).toEqual(['t', null])
   })
 })
@@ -639,8 +797,21 @@ describe('lifting tables', () => {
 describe('coupling and equipment ratings', () => {
   it('shows a coupling’s rating and flow in the units it is sold in, on a fitting table', () => {
     const rows: VariantLike[] = [
-      { partNumber: 'FEM-501-8FP', portLabel: '1/2-14 NPSF', dimensions: { half: 'Coupler (female half)', bodySize: '1/2"', ratedPsi: 3625, flowGpm: 12 } },
-      { partNumber: 'FEM-502-8FP', portLabel: '1/2-14 NPSF', dimensions: { half: 'Nipple (male half)', bodySize: '1/2"', ratedPsi: 3625 } },
+      {
+        partNumber: 'FEM-501-8FP',
+        portLabel: '1/2-14 NPSF',
+        dimensions: {
+          half: 'Coupler (female half)',
+          bodySize: '1/2"',
+          ratedPsi: 3625,
+          flowGpm: 12,
+        },
+      },
+      {
+        partNumber: 'FEM-502-8FP',
+        portLabel: '1/2-14 NPSF',
+        dimensions: { half: 'Nipple (male half)', bodySize: '1/2"', ratedPsi: 3625 },
+      },
     ]
     expect(variantTableKind(rows)).toBe('fitting')
     const cols = variantDimensionColumns(rows)
@@ -653,28 +824,77 @@ describe('coupling and equipment ratings', () => {
   })
 
   it('reads a pump, motor or cylinder table as equipment, not a fitting', () => {
-    expect(variantTableKind([{ partNumber: 'p', dimensions: { displacementCc: 19.5, maxPsi: 2500 } }])).toBe('equipment')
-    expect(variantTableKind([{ partNumber: 'c', dimensions: { boreIn: 3, strokeIn: 24, rodIn: 1.5 } }])).toBe('equipment')
+    expect(
+      variantTableKind([{ partNumber: 'p', dimensions: { displacementCc: 19.5, maxPsi: 2500 } }])
+    ).toBe('equipment')
+    expect(
+      variantTableKind([{ partNumber: 'c', dimensions: { boreIn: 3, strokeIn: 24, rodIn: 1.5 } }])
+    ).toBe('equipment')
     expect(variantTableKind([{ partNumber: 'q', dimensions: { ratedPsi: 3000 } }])).toBe('fitting')
   })
 
   it('orders cylinder columns size first, ratings after', () => {
     const cols = variantDimensionColumns([
-      { partNumber: 'c', dimensions: { ratedPsi: 3500, strokeIn: 24, boreIn: 2, rodIn: 1.25, retractedIn: 31, extendedIn: 55, columnLoadLbs: 8400 } },
+      {
+        partNumber: 'c',
+        dimensions: {
+          ratedPsi: 3500,
+          strokeIn: 24,
+          boreIn: 2,
+          rodIn: 1.25,
+          retractedIn: 31,
+          extendedIn: 55,
+          columnLoadLbs: 8400,
+        },
+      },
     ])
-    expect(cols.map((c) => c.key)).toEqual(['boreIn', 'rodIn', 'strokeIn', 'retractedIn', 'extendedIn', 'ratedPsi', 'columnLoadLbs'])
+    expect(cols.map((c) => c.key)).toEqual([
+      'boreIn',
+      'rodIn',
+      'strokeIn',
+      'retractedIn',
+      'extendedIn',
+      'ratedPsi',
+      'columnLoadLbs',
+    ])
   })
 
   it('reads a gearbox or winch table as equipment and orders its ratings', () => {
     const gearbox: VariantLike[] = [
-      { partNumber: 'IH-DO-RE-212', dimensions: { item: 'RE 212', ratio: '12.11 – 33.28', weightKg: 23, peakTorqueNm: 1780, outputTorqueNm: 680, stages: 2 } },
+      {
+        partNumber: 'IH-DO-RE-212',
+        dimensions: {
+          item: 'RE 212',
+          ratio: '12.11 – 33.28',
+          weightKg: 23,
+          peakTorqueNm: 1780,
+          outputTorqueNm: 680,
+          stages: 2,
+        },
+      },
     ]
     expect(variantTableKind(gearbox)).toBe('equipment')
-    expect(variantDimensionColumns(gearbox).map((c) => c.key)).toEqual(['stages', 'outputTorqueNm', 'peakTorqueNm', 'weightKg'])
+    expect(variantDimensionColumns(gearbox).map((c) => c.key)).toEqual([
+      'stages',
+      'outputTorqueNm',
+      'peakTorqueNm',
+      'weightKg',
+    ])
     expect(variantTextColumns(gearbox).map((c) => c.key)).toEqual(['item', 'ratio'])
 
     const winch: VariantLike[] = [
-      { partNumber: 'IH-DO-S-15', dimensions: { item: 'S15', linePullDan: 2000, ropeSpeed: 30, ropeDia: 10, ropeCapacityM: 95, displacementCc: 80, maxFlowLpm: 60 } },
+      {
+        partNumber: 'IH-DO-S-15',
+        dimensions: {
+          item: 'S15',
+          linePullDan: 2000,
+          ropeSpeed: 30,
+          ropeDia: 10,
+          ropeCapacityM: 95,
+          displacementCc: 80,
+          maxFlowLpm: 60,
+        },
+      },
     ]
     expect(variantTableKind(winch)).toBe('equipment')
     expect(variantDimensionColumns(winch).map((c) => [c.label, variantColumnUnit(c)])).toEqual([
@@ -706,17 +926,38 @@ describe('coupling and equipment ratings', () => {
     ]
     expect(variantTableKind(pump)).toBe('equipment')
     expect(variantTextColumns(pump).map((c) => c.key)).toEqual([
-      'item', 'systemType', 'lubricant', 'reservoir', 'voltage', 'output', 'maxPressure', 'outletThread', 'monitoring',
+      'item',
+      'systemType',
+      'lubricant',
+      'reservoir',
+      'voltage',
+      'output',
+      'maxPressure',
+      'outletThread',
+      'monitoring',
     ])
-    const barrel: VariantLike[] = [{ partNumber: 'IH-BD-F531411', dimensions: { item: 'PM45 40:1', pressureRatio: '40:1', container: '400 lb drum' } }]
+    const barrel: VariantLike[] = [
+      {
+        partNumber: 'IH-BD-F531411',
+        dimensions: { item: 'PM45 40:1', pressureRatio: '40:1', container: '400 lb drum' },
+      },
+    ]
     expect(variantTableKind(barrel)).toBe('equipment')
-    expect(variantTableKind([{ partNumber: 'x', dimensions: { item: 'Elbow', outletThread: '1/8NPT' } }])).toBe('fitting')
+    expect(
+      variantTableKind([{ partNumber: 'x', dimensions: { item: 'Elbow', outletThread: '1/8NPT' } }])
+    ).toBe('fitting')
   })
 
   it('reads a pump spare-parts table as equipment, with the pump each part is for', () => {
     const spares: VariantLike[] = [
-      { partNumber: 'IH-BD-71128', dimensions: { item: '71128 — KIT SF II GEAR PUMP', usedOn: 'SureFire II 1-phase' } },
-      { partNumber: 'IH-BD-71167', dimensions: { item: '71167 — KIT SF II GEAR PUMP 500CC', usedOn: 'SureFire II 3-phase' } },
+      {
+        partNumber: 'IH-BD-71128',
+        dimensions: { item: '71128 — KIT SF II GEAR PUMP', usedOn: 'SureFire II 1-phase' },
+      },
+      {
+        partNumber: 'IH-BD-71167',
+        dimensions: { item: '71167 — KIT SF II GEAR PUMP 500CC', usedOn: 'SureFire II 3-phase' },
+      },
     ]
     expect(variantTableKind(spares)).toBe('equipment')
     expect(variantTextColumns(spares).map((c) => [c.key, c.label])).toEqual([
@@ -727,8 +968,24 @@ describe('coupling and equipment ratings', () => {
 
   it('reads a cartridge valve table as equipment, led by series and cavity', () => {
     const cartridges: VariantLike[] = [
-      { partNumber: 'CBCA', dimensions: { series: '1', cavity: 'T-11A', capacity: '15 gpm / 60 L/min', maxPressure: '5000 psi / 350 bar' } },
-      { partNumber: 'CBEA', dimensions: { series: '2', cavity: 'T-2A', capacity: '30 gpm / 120 L/min', maxPressure: '5000 psi / 350 bar' } },
+      {
+        partNumber: 'CBCA',
+        dimensions: {
+          series: '1',
+          cavity: 'T-11A',
+          capacity: '15 gpm / 60 L/min',
+          maxPressure: '5000 psi / 350 bar',
+        },
+      },
+      {
+        partNumber: 'CBEA',
+        dimensions: {
+          series: '2',
+          cavity: 'T-2A',
+          capacity: '30 gpm / 120 L/min',
+          maxPressure: '5000 psi / 350 bar',
+        },
+      },
     ]
     expect(variantTableKind(cartridges)).toBe('equipment')
     expect(variantTextColumns(cartridges).map((c) => [c.key, c.label, Boolean(c.lead)])).toEqual([
@@ -740,11 +997,15 @@ describe('coupling and equipment ratings', () => {
   })
 
   it('does not read a fitting table as equipment just because it carries a capacity', () => {
-    expect(variantTableKind([{ partNumber: 'x', dimensions: { item: 'Tee', capacity: '15 gpm' } }])).toBe('fitting')
+    expect(
+      variantTableKind([{ partNumber: 'x', dimensions: { item: 'Tee', capacity: '15 gpm' } }])
+    ).toBe('fitting')
   })
 
   it('gives the row description its own leading column', () => {
-    const cols = variantTextColumns([{ partNumber: '43200', dimensions: { item: 'Elbow, .38 in cone' } }])
+    const cols = variantTextColumns([
+      { partNumber: '43200', dimensions: { item: 'Elbow, .38 in cone' } },
+    ])
     expect(cols.map((c) => [c.key, c.label, c.lead])).toEqual([['item', 'Description', true]])
   })
 })
@@ -756,17 +1017,17 @@ describe('variantPartNumberHeading', () => {
 
   it('heads Indus numbers "Indus part no." even on a listing branded by the maker', () => {
     expect(variantPartNumberHeading(rows('IH-MNT-DCC-TU-025', 'IH-MNT-DCC-HU-025'), manntek)).toBe(
-      'Indus part no.',
+      'Indus part no.'
     )
-    expect(variantPartNumberHeading(rows('IH-CGC-90-A-150'), { slug: 'sealfast', name: 'Sealfast' })).toBe(
-      'Indus part no.',
-    )
+    expect(
+      variantPartNumberHeading(rows('IH-CGC-90-A-150'), { slug: 'sealfast', name: 'Sealfast' })
+    ).toBe('Indus part no.')
   })
 
   it('heads Indus numbers "Indus part no." on Indus and unbranded listings', () => {
-    expect(variantPartNumberHeading(rows('IH-ST-9169-04-04-10'), { slug: 'indus', name: 'Indus' })).toBe(
-      'Indus part no.',
-    )
+    expect(
+      variantPartNumberHeading(rows('IH-ST-9169-04-04-10'), { slug: 'indus', name: 'Indus' })
+    ).toBe('Indus part no.')
     expect(variantPartNumberHeading(rows('IH-LR-ST-SSSTTUST-012'), null)).toBe('Indus part no.')
   })
 
@@ -775,9 +1036,11 @@ describe('variantPartNumberHeading', () => {
   })
 
   it("names the maker when every row carries the maker's own code", () => {
-    expect(variantPartNumberHeading(rows('15S26-10-10', '11356-12-12'), parker)).toBe('Parker part no.')
+    expect(variantPartNumberHeading(rows('15S26-10-10', '11356-12-12'), parker)).toBe(
+      'Parker part no.'
+    )
     expect(variantPartNumberHeading(rows('0306-03'), { slug: 'tompkins', name: 'Tompkins' })).toBe(
-      'Tompkins part no.',
+      'Tompkins part no.'
     )
   })
 
@@ -786,12 +1049,16 @@ describe('variantPartNumberHeading', () => {
   })
 
   it('falls back to "Part no." for a mixed set', () => {
-    expect(variantPartNumberHeading(rows('IH-MNT-DCC-TU-025', '15S26-10-10'), parker)).toBe('Part no.')
+    expect(variantPartNumberHeading(rows('IH-MNT-DCC-TU-025', '15S26-10-10'), parker)).toBe(
+      'Part no.'
+    )
   })
 
   it('falls back to "Part no." for maker codes with no maker to name', () => {
     expect(variantPartNumberHeading(rows('15S26-10-10'), null)).toBe('Part no.')
-    expect(variantPartNumberHeading(rows('15S26-10-10'), { slug: 'indus', name: 'Indus' })).toBe('Part no.')
+    expect(variantPartNumberHeading(rows('15S26-10-10'), { slug: 'indus', name: 'Indus' })).toBe(
+      'Part no.'
+    )
   })
 })
 
@@ -805,8 +1072,28 @@ describe('valve tables', () => {
     dimensions: dims,
   })
   const rows = [
-    row('IH-PV-GTC-150-02', { size: '2"', dn: '50', pressureClass: 'Class 150', lRf: 178, lBw: 216, H: 381, W: 200, weightRfKg: 21, weightBwKg: 17 }),
-    row('IH-PV-GTC-150-03', { size: '3"', dn: '80', pressureClass: 'Class 150', lRf: 203, lBw: 283, H: 432, W: 250, weightRfKg: 32, weightBwKg: 27 }),
+    row('IH-PV-GTC-150-02', {
+      size: '2"',
+      dn: '50',
+      pressureClass: 'Class 150',
+      lRf: 178,
+      lBw: 216,
+      H: 381,
+      W: 200,
+      weightRfKg: 21,
+      weightBwKg: 17,
+    }),
+    row('IH-PV-GTC-150-03', {
+      size: '3"',
+      dn: '80',
+      pressureClass: 'Class 150',
+      lRf: 203,
+      lBw: 283,
+      H: 432,
+      W: 250,
+      weightRfKg: 32,
+      weightBwKg: 27,
+    }),
   ]
 
   it('is read as a valve table even though the rows carry size, as rigging rows do', () => {
@@ -819,7 +1106,14 @@ describe('valve tables', () => {
   })
 
   it('orders lengths, then drawing letters, then weights', () => {
-    expect(variantDimensionColumns(rows).map((c) => c.key)).toEqual(['lRf', 'lBw', 'H', 'W', 'weightRfKg', 'weightBwKg'])
+    expect(variantDimensionColumns(rows).map((c) => c.key)).toEqual([
+      'lRf',
+      'lBw',
+      'H',
+      'W',
+      'weightRfKg',
+      'weightBwKg',
+    ])
   })
 
   it('does not call a valve W a hex across flats', () => {
@@ -829,7 +1123,14 @@ describe('valve tables', () => {
   })
 
   it('leads with the valve type when one listing covers several types', () => {
-    const mixed = [row('IH-PV-PSV-G-900-0200', { type: 'Gate', size: '2"', pressureClass: 'Class 900', lBw: 216 })]
+    const mixed = [
+      row('IH-PV-PSV-G-900-0200', {
+        type: 'Gate',
+        size: '2"',
+        pressureClass: 'Class 900',
+        lBw: 216,
+      }),
+    ]
     expect(variantTextColumns(mixed).map((c) => c.key)).toEqual(['type', 'size', 'pressureClass'])
   })
 
@@ -839,46 +1140,87 @@ describe('valve tables', () => {
 
   it('reads a mud gate valve row by model, class, ends and service, with no lengths', () => {
     const gate = [
-      row('IH-OTC-112501', { model: 'GV250', size: '2"', pressureClass: '5,000 psi', ends: '2" line pipe thread', service: 'Standard' }),
+      row('IH-OTC-112501', {
+        model: 'GV250',
+        size: '2"',
+        pressureClass: '5,000 psi',
+        ends: '2" line pipe thread',
+        service: 'Standard',
+      }),
     ]
     expect(variantTableKind(gate)).toBe('valve')
-    expect(variantTextColumns(gate).map((c) => c.key)).toEqual(['model', 'size', 'pressureClass', 'ends', 'service'])
+    expect(variantTextColumns(gate).map((c) => c.key)).toEqual([
+      'model',
+      'size',
+      'pressureClass',
+      'ends',
+      'service',
+    ])
     expect(variantDimensionColumns(gate)).toEqual([])
   })
 
   it('reads a relief valve by its set range, which is not a class', () => {
-    const relief = [row('IH-OTC-132050', { model: '21050', size: '2"', setRange: '1,000–5,000 psi', ends: '2" LPT' })]
+    const relief = [
+      row('IH-OTC-132050', {
+        model: '21050',
+        size: '2"',
+        setRange: '1,000–5,000 psi',
+        ends: '2" LPT',
+      }),
+    ]
     expect(variantTableKind(relief)).toBe('valve')
     const set = variantTextColumns(relief).find((c) => c.key === 'setRange')!
     expect(set.help).toMatch(/not the body rating/)
   })
 
   it('reads a float valve row as a valve on its service alone, although it carries size', () => {
-    expect(variantTableKind([row('IH-OTC-480124200', { model: 'Model F', size: '4R', service: 'Standard' })])).toBe('valve')
+    expect(
+      variantTableKind([
+        row('IH-OTC-480124200', { model: 'Model F', size: '4R', service: 'Standard' }),
+      ])
+    ).toBe('valve')
   })
 })
 
 describe('spare part and gauge columns', () => {
-  const row = (partNumber: string, dims: Record<string, string>): VariantLike => ({ partNumber, dimensions: dims })
+  const row = (partNumber: string, dims: Record<string, string>): VariantLike => ({
+    partNumber,
+    dimensions: dims,
+  })
 
   it('leads a spare-part table with what the part is and what it fits, without making it equipment', () => {
-    const parts = [row('IH-OTC-120012', { item: 'Minor repair kit, NBR, stainless inserts', fits: '224' })]
+    const parts = [
+      row('IH-OTC-120012', { item: 'Minor repair kit, NBR, stainless inserts', fits: '224' }),
+    ]
     expect(variantTableKind(parts)).toBe('fitting')
     expect(variantTextColumns(parts).map((c) => c.key)).toEqual(['item', 'fits'])
   })
 
   it('leads a gauge table with range, dial, service and end connection', () => {
     const gauge = [
-      row('IH-OTC-360000', { range: '0–10,000 psi', dial: 'Standard', trim: 'Standard', connection: '2-1/16" 10,000 psi API flange (BX-152)' }),
+      row('IH-OTC-360000', {
+        range: '0–10,000 psi',
+        dial: 'Standard',
+        trim: 'Standard',
+        connection: '2-1/16" 10,000 psi API flange (BX-152)',
+      }),
     ]
     expect(variantTableKind(gauge)).toBe('fitting')
-    expect(variantTextColumns(gauge).map((c) => c.key)).toEqual(['range', 'dial', 'trim', 'connection'])
+    expect(variantTextColumns(gauge).map((c) => c.key)).toEqual([
+      'range',
+      'dial',
+      'trim',
+      'connection',
+    ])
     expect(variantTextColumns(gauge).every((c) => c.lead)).toBe(true)
   })
 })
 
 describe('tube columns', () => {
-  const tube = (dimensions: Record<string, string>): VariantLike => ({ partNumber: 'IH-TF-CB-CS-0254-211', dimensions })
+  const tube = (dimensions: Record<string, string>): VariantLike => ({
+    partNumber: 'IH-TF-CB-CS-0254-211',
+    dimensions,
+  })
 
   it('reads a tube table off its rows and prints every column as published text', () => {
     const rows = [
@@ -886,7 +1228,13 @@ describe('tube columns', () => {
       tube({ odMm: '25.4', odIn: '1', bwg: '12', minWallMm: '2.77', minWallIn: '0.109' }),
     ]
     expect(variantTableKind(rows)).toBe('tube')
-    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['odMm', 'odIn', 'bwg', 'minWallMm', 'minWallIn'])
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual([
+      'odMm',
+      'odIn',
+      'bwg',
+      'minWallMm',
+      'minWallIn',
+    ])
     expect(variantDimensionColumns(rows)).toEqual([])
   })
 
@@ -897,6 +1245,10 @@ describe('tube columns', () => {
   })
 
   it('does not take a lay-flat hose row for tube', () => {
-    expect(variantTableKind([{ partNumber: 'IH-LF-1', dimensions: { insideDia: '39 +1.5', wall: '4.5' } }])).not.toBe('tube')
+    expect(
+      variantTableKind([
+        { partNumber: 'IH-LF-1', dimensions: { insideDia: '39 +1.5', wall: '4.5' } },
+      ])
+    ).not.toBe('tube')
   })
 })

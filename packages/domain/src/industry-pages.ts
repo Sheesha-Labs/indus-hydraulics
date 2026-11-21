@@ -335,7 +335,11 @@ const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
         number: '03',
         title: 'Rack Manifold Distribution',
         body: 'Manifold inlets, outlets, branch ports and isolation points.',
-        image: img('data-center-manifold-tube.webp', 'Data centre rack manifold tube assembly', '4/3'),
+        image: img(
+          'data-center-manifold-tube.webp',
+          'Data centre rack manifold tube assembly',
+          '4/3'
+        ),
         relevant: ['Socket-weld fittings', 'Sanitary fittings', 'Sanitary valves'],
       },
       {
@@ -366,7 +370,8 @@ const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
           'Welded joints reduce the number of detachable connection points',
           'Drawing-based dimensions available for equipment and manifold interfaces',
         ],
-        includes: 'Elbows, tees, couplings and reducers for facility-water, CDU and manifold piping.',
+        includes:
+          'Elbows, tees, couplings and reducers for facility-water, CDU and manifold piping.',
       },
       {
         kicker: '316L · CLAMP END',
@@ -412,11 +417,13 @@ const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
           'Drawing-based machining supports accurate mating geometry',
           'Detachable interfaces simplify equipment installation and removal',
         ],
-        includes: 'Flanges and custom adapters for skid, manifold, equipment and facility-piping interfaces.',
+        includes:
+          'Flanges and custom adapters for skid, manifold, equipment and facility-piping interfaces.',
       },
     ],
     stripLabel: 'Submit drawing or BOM:',
-    strip: 'we review manufacturability, material, end connections and inspection scope before quotation.',
+    strip:
+      'we review manufacturability, material, end connections and inspection scope before quotation.',
   },
 
   qc: {

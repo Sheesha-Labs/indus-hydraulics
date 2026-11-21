@@ -32,7 +32,9 @@ function walk(dir: string, out: string[] = []): string[] {
 /** Strip // and /* *\/ comments so prose about mono does not trip the scan. */
 function code(source: string): string {
   // Keep the newlines a block comment spanned, so reported line numbers hold.
-  return source.replace(/\/\*[\s\S]*?\*\//g, (c) => c.replace(/[^\n]/g, '')).replace(/(^|[^:])\/\/.*$/gm, '$1')
+  return source
+    .replace(/\/\*[\s\S]*?\*\//g, (c) => c.replace(/[^\n]/g, ''))
+    .replace(/(^|[^:])\/\/.*$/gm, '$1')
 }
 
 const BANNED: { name: string; re: RegExp }[] = [
@@ -60,16 +62,23 @@ describe('admin has no monospace', () => {
         // The .mono class: a bare `mono` token inside a string literal. A
         // `mono` prop or variable outside quotes is not a class.
         for (const [, body] of line.matchAll(/(["'`])((?:(?!\1).)*)\1/g)) {
-          if (/(^|\s)mono(\s|$)/.test(body ?? '')) hits.push(`${where} .mono class: ${line.trim().slice(0, 120)}`)
+          if (/(^|\s)mono(\s|$)/.test(body ?? ''))
+            hits.push(`${where} .mono class: ${line.trim().slice(0, 120)}`)
         }
       })
     }
-    expect(hits, `Use Geist + tabular-nums in the admin, never mono:\n${hits.join('\n')}`).toEqual([])
+    expect(hits, `Use Geist + tabular-nums in the admin, never mono:\n${hits.join('\n')}`).toEqual(
+      []
+    )
   })
 
   test('globals.css re-points the mono token on admin pages', () => {
     const css = readFileSync(path.join(SRC, 'app/globals.css'), 'utf8')
-    expect(css).toMatch(/:root:has\(\[data-surface='admin'\]\)\s*\{[^}]*--font-mono:\s*var\(--font-sans\)/)
-    expect(css).toMatch(/:root:has\(\[data-surface='admin'\]\)\s*\{[^}]*--default-mono-font-family:\s*var\(--font-sans\)/)
+    expect(css).toMatch(
+      /:root:has\(\[data-surface='admin'\]\)\s*\{[^}]*--font-mono:\s*var\(--font-sans\)/
+    )
+    expect(css).toMatch(
+      /:root:has\(\[data-surface='admin'\]\)\s*\{[^}]*--default-mono-font-family:\s*var\(--font-sans\)/
+    )
   })
 })

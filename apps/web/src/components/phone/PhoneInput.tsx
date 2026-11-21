@@ -4,7 +4,14 @@ import { useMemo, useState, useSyncExternalStore } from 'react'
 import { useFieldWiring } from '@indus/ui'
 import { DIAL_COUNTRIES } from '@indus/domain'
 import CountryPicker from './CountryPicker'
-import { FALLBACK_COUNTRY, GCC_ORDER, composePhone, defaultPhoneCountry, orderCountries, readGeoCountry } from '../../lib/phone'
+import {
+  FALLBACK_COUNTRY,
+  GCC_ORDER,
+  composePhone,
+  defaultPhoneCountry,
+  orderCountries,
+  readGeoCountry,
+} from '../../lib/phone'
 
 type Props = {
   /** Name of the hidden field the form submits: "+971 52 123 4567". */
@@ -73,7 +80,7 @@ export default function PhoneInput({
   return (
     <div className="relative">
       <div
-        className={`flex ${height} overflow-hidden rounded-lg border bg-ih-surface transition-[border-color,box-shadow] duration-150 focus-within:border-ih-accent focus-within:ring-[3px] focus-within:ring-ih-accent-soft ${
+        className={`flex ${height} bg-ih-surface focus-within:border-ih-accent focus-within:ring-ih-accent-soft overflow-hidden rounded-lg border transition-[border-color,box-shadow] duration-150 focus-within:ring-[3px] ${
           isInvalid ? 'border-ih-danger' : 'border-ih-border'
         }`}
       >
@@ -95,7 +102,7 @@ export default function PhoneInput({
           aria-invalid={isInvalid || undefined}
           aria-describedby={describedBy ?? wiring.describedBy}
           onChange={(e) => setNational(e.target.value.slice(0, 24))}
-          className="min-w-0 flex-1 border-0 bg-transparent px-2.5 text-[14px] tabular-nums text-ih-ink outline-none placeholder:text-ih-muted max-[767px]:text-[16px]"
+          className="text-ih-ink placeholder:text-ih-muted min-w-0 flex-1 border-0 bg-transparent px-2.5 text-[14px] tabular-nums outline-none max-[767px]:text-[16px]"
         />
       </div>
       <input type="hidden" name={name} value={composePhone(dial, national)} />

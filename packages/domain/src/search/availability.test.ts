@@ -57,7 +57,11 @@ describe('availabilityToWhere — in_stock', () => {
           status: 'active',
           NOT: {
             category: {
-              OR: [{ slug: exempt }, { parent: { slug: exempt } }, { parent: { parent: { slug: exempt } } }],
+              OR: [
+                { slug: exempt },
+                { parent: { slug: exempt } },
+                { parent: { parent: { slug: exempt } } },
+              ],
             },
           },
         },
@@ -109,7 +113,7 @@ describe('offeredAvailabilityModes', () => {
 
   test('offers both once the posture stops answering for the catalogue', () => {
     expect(
-      offeredAvailabilityModes({ exStock: false, deliveryDays: 3, exemptCategories: [] }),
+      offeredAvailabilityModes({ exStock: false, deliveryDays: 3, exemptCategories: [] })
     ).toEqual(['in_stock', 'ships_24h'])
   })
 })

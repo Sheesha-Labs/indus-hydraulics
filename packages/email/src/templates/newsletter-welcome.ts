@@ -23,7 +23,8 @@ export function renderNewsletterWelcome(props: NewsletterWelcomeProps): {
   text: string
 } {
   const subject = "You're subscribed to the Indus Hydraulics newsletter"
-  const reason = 'You are receiving this because you subscribed to the Indus Hydraulics newsletter at indushydraulics.com.'
+  const reason =
+    'You are receiving this because you subscribed to the Indus Hydraulics newsletter at indushydraulics.com.'
   const blog = `${props.siteUrl}/blog`
   const catalogue = `${props.siteUrl}/c`
 

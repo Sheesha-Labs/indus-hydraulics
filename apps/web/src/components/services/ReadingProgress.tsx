@@ -60,11 +60,11 @@ export default function ReadingProgress({
   const progress = useReadingProgress(targetSelector)
 
   return (
-    <div className="mt-4 rounded-sm border border-ih-border bg-ih-surface p-3.5 font-mono">
+    <div className="border-ih-border bg-ih-surface mt-4 rounded-sm border p-3.5 font-mono">
       <small className="text-ih-muted">READING</small>
-      <div className="relative my-2 h-0.5 overflow-hidden bg-ih-surface-2">
+      <div className="bg-ih-surface-2 relative my-2 h-0.5 overflow-hidden">
         <div
-          className="absolute left-0 top-0 h-full bg-ih-accent transition-[width]"
+          className="bg-ih-accent absolute top-0 left-0 h-full transition-[width]"
           style={{ width: `${progress}%` }}
         />
       </div>

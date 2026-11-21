@@ -33,7 +33,7 @@ export type PendingInvite = {
 export default function InviteStaffPanel({ pending }: { pending: PendingInvite[] }) {
   const [state, formAction, submitting] = useActionState<InviteState, FormData>(
     inviteStaffUser,
-    null,
+    null
   )
   const [open, setOpen] = useState(false)
 
@@ -42,14 +42,14 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-[15px] font-medium">Invite a colleague</h2>
-          <p className="mt-0.5 text-[12px] text-ih-muted">
+          <p className="text-ih-muted mt-0.5 text-[12px]">
             They&apos;ll get an email link to set their own password. Any email address works.
           </p>
         </div>
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="h-9 bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[13px] font-medium transition-opacity"
         >
           {open ? 'Close' : 'Invite staff'}
         </button>
@@ -58,22 +58,29 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
       {open && (
         <form
           action={formAction}
-          className="rounded-lg mt-4 grid grid-cols-1 gap-3 border border-ih-border bg-ih-surface p-4 sm:grid-cols-[1.4fr_1fr_1fr_auto]"
+          className="border-ih-border bg-ih-surface mt-4 grid grid-cols-1 gap-3 rounded-lg border p-4 sm:grid-cols-[1.4fr_1fr_1fr_auto]"
         >
           <div className="flex flex-col gap-1">
-            <label className="text-[11px] font-medium text-ih-muted" htmlFor="inv-email">
+            <label className="text-ih-muted text-[11px] font-medium" htmlFor="inv-email">
               Email
             </label>
             <input id="inv-email" name="email" type="email" required className={inputCls} />
           </div>
           <div className="flex flex-col gap-1">
-            <label className="text-[11px] font-medium text-ih-muted" htmlFor="inv-name">
+            <label className="text-ih-muted text-[11px] font-medium" htmlFor="inv-name">
               Full name
             </label>
-            <input id="inv-name" name="name" type="text" required minLength={2} className={inputCls} />
+            <input
+              id="inv-name"
+              name="name"
+              type="text"
+              required
+              minLength={2}
+              className={inputCls}
+            />
           </div>
           <div className="flex flex-col gap-1">
-            <label className="text-[11px] font-medium text-ih-muted" htmlFor="inv-role">
+            <label className="text-ih-muted text-[11px] font-medium" htmlFor="inv-role">
               Role
             </label>
             <select id="inv-role" name="role" defaultValue="sales_rep" className={inputCls}>
@@ -88,7 +95,7 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
             <button
               type="submit"
               disabled={submitting}
-              className="h-9 w-full bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50 sm:w-auto"
+              className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 w-full px-4 text-[13px] font-medium transition-opacity disabled:opacity-50 sm:w-auto"
             >
               {submitting ? 'Sending…' : 'Send invite'}
             </button>
@@ -106,14 +113,20 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
   )
 }
 
-function Notice({ tone, children }: { tone: 'danger' | 'warning' | 'success'; children: React.ReactNode }) {
+function Notice({
+  tone,
+  children,
+}: {
+  tone: 'danger' | 'warning' | 'success'
+  children: React.ReactNode
+}) {
   const cls = {
     danger: 'border-ih-danger text-ih-danger',
     warning: 'border-[var(--color-ih-warning)] text-ih-ink',
     success: 'border-[var(--color-ih-success)] text-ih-success',
   }[tone]
   return (
-    <div role="status" className={`rounded-lg mt-3 border px-3 py-2 text-[12px] ${cls}`}>
+    <div role="status" className={`mt-3 rounded-lg border px-3 py-2 text-[12px] ${cls}`}>
       {children}
     </div>
   )
@@ -129,8 +142,8 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
         Pending invitations <span className="text-ih-muted">({rows.length})</span>
       </h3>
       {msg && <Notice tone="success">{msg}</Notice>}
-      <table className="w-full border border-ih-border text-[13px]">
-        <thead className="bg-ih-surface-2 text-[11px] uppercase tracking-wide text-ih-muted">
+      <table className="border-ih-border w-full border text-[13px]">
+        <thead className="bg-ih-surface-2 text-ih-muted text-[11px] tracking-wide uppercase">
           <tr>
             <th className="px-3 py-2 text-left font-medium">Email</th>
             <th className="px-3 py-2 text-left font-medium">Name</th>
@@ -141,11 +154,11 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
         </thead>
         <tbody>
           {rows.map((r) => (
-            <tr key={r.id} className="border-t border-ih-border">
-              <td className="px-3 py-2 tabular-nums text-[12px]">{r.email}</td>
+            <tr key={r.id} className="border-ih-border border-t">
+              <td className="px-3 py-2 text-[12px] tabular-nums">{r.email}</td>
               <td className="px-3 py-2">{r.name}</td>
               <td className="px-3 py-2">{r.role.replace(/_/g, ' ')}</td>
-              <td className="px-3 py-2 text-ih-muted">{r.expiresAt}</td>
+              <td className="text-ih-muted px-3 py-2">{r.expiresAt}</td>
               <td className="px-3 py-2 text-right">
                 <button
                   type="button"
@@ -156,7 +169,7 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
                       setMsg(res?.ok ?? res?.error ?? null)
                     })
                   }
-                  className="mr-3 text-[12px] text-ih-accent hover:underline disabled:opacity-50"
+                  className="text-ih-accent mr-3 text-[12px] hover:underline disabled:opacity-50"
                 >
                   Resend
                 </button>
@@ -169,7 +182,7 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
                       setMsg(res?.ok ?? res?.error ?? null)
                     })
                   }
-                  className="text-[12px] text-ih-danger hover:underline disabled:opacity-50"
+                  className="text-ih-danger text-[12px] hover:underline disabled:opacity-50"
                 >
                   Revoke
                 </button>

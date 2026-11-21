@@ -50,7 +50,9 @@ describe('buildSitemapEntries', () => {
 
   it('passes through lastModified when provided', () => {
     const date = new Date('2026-04-01T00:00:00Z')
-    const [entry] = buildSitemapEntries(origin, 'blog_post', [{ slug: 'hello', lastModified: date }])
+    const [entry] = buildSitemapEntries(origin, 'blog_post', [
+      { slug: 'hello', lastModified: date },
+    ])
     expect(entry?.lastModified).toEqual(date)
   })
 })
@@ -128,7 +130,9 @@ describe('buildSitemapEntries — images', () => {
   })
 
   it('omits the key when there are no images', () => {
-    const [entry] = buildSitemapEntries('https://example.com', 'product', [{ slug: 'p', images: [] }])
+    const [entry] = buildSitemapEntries('https://example.com', 'product', [
+      { slug: 'p', images: [] },
+    ])
     expect(entry).not.toHaveProperty('images')
   })
 })

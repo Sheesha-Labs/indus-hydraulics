@@ -908,7 +908,12 @@ const FORMS: BlockFormSpec[] = [
       },
     ],
     template: () =>
-      ({ type: 'diagram', svg: '<svg viewBox="0 0 760 400"></svg>', caption: '', alt: '' }) as BlogBlockInput,
+      ({
+        type: 'diagram',
+        svg: '<svg viewBox="0 0 760 400"></svg>',
+        caption: '',
+        alt: '',
+      }) as BlogBlockInput,
   },
   {
     type: 'video',
@@ -983,8 +988,7 @@ const FORMS: BlockFormSpec[] = [
         ],
       },
     ],
-    template: () =>
-      ({ type: 'references', entries: [{ id: '', text: '' }] }) as BlogBlockInput,
+    template: () => ({ type: 'references', entries: [{ id: '', text: '' }] }) as BlogBlockInput,
   },
 ]
 

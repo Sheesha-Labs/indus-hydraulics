@@ -88,11 +88,7 @@ export type ListFieldDef = {
 export type SeedKey = 'brands' | 'industries' | 'categories' | 'markets'
 
 export type FieldDef =
-  | SimpleFieldDef
-  | ImageFieldDef
-  | ToggleFieldDef
-  | SelectFieldDef
-  | ListFieldDef
+  SimpleFieldDef | ImageFieldDef | ToggleFieldDef | SelectFieldDef | ListFieldDef
 
 /** A picked media asset. `mediaId` null ⇒ the section keeps its built-in art. */
 export type ImageValue = {
@@ -111,12 +107,7 @@ export type ImageValue = {
 
 export type ItemValue = string | boolean | null | ImageValue
 
-export type FieldValue =
-  | string
-  | boolean
-  | null
-  | ImageValue
-  | Record<string, ItemValue>[]
+export type FieldValue = string | boolean | null | ImageValue | Record<string, ItemValue>[]
 
 export type SectionValues = Record<string, FieldValue>
 

@@ -32,7 +32,7 @@ export type TrimResult =
  */
 export async function trimTransparentPadding(
   source: File | string,
-  filename: string,
+  filename: string
 ): Promise<TrimResult> {
   try {
     const blob =

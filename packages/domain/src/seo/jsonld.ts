@@ -295,14 +295,20 @@ export type WebsiteLdInput = {
 
 // ── Builders ──────────────────────────────────────────────────────────────
 
-const SCHEMA_AVAILABILITY: Record<NonNullable<ProductLdInput['offers']>['availability'] & string, string> = {
+const SCHEMA_AVAILABILITY: Record<
+  NonNullable<ProductLdInput['offers']>['availability'] & string,
+  string
+> = {
   in_stock: 'https://schema.org/InStock',
   out_of_stock: 'https://schema.org/OutOfStock',
   preorder: 'https://schema.org/PreOrder',
   lead_time: 'https://schema.org/BackOrder',
 }
 
-const SCHEMA_ITEM_CONDITION: Record<NonNullable<NonNullable<ProductLdInput['offers']>['itemCondition']>, string> = {
+const SCHEMA_ITEM_CONDITION: Record<
+  NonNullable<NonNullable<ProductLdInput['offers']>['itemCondition']>,
+  string
+> = {
   new: 'https://schema.org/NewCondition',
   refurbished: 'https://schema.org/RefurbishedCondition',
   used: 'https://schema.org/UsedCondition',
@@ -611,7 +617,7 @@ export function buildServiceLd(input: ServiceLdInput): JsonLd {
     areaServed: input.areaServed.map((a) =>
       typeof a === 'string'
         ? { '@type': 'AdministrativeArea', name: a }
-        : { '@type': a.type, name: a.name },
+        : { '@type': a.type, name: a.name }
     ),
   }
   return mergeJsonLd(base, input.override)

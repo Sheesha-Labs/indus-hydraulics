@@ -65,7 +65,13 @@ type MappedRow = {
 }
 
 type RowResult =
-  | { ok: true; rowNumber: number; raw: Record<string, string>; mapped: MappedRow; existingId: string | null }
+  | {
+      ok: true
+      rowNumber: number
+      raw: Record<string, string>
+      mapped: MappedRow
+      existingId: string | null
+    }
   | { ok: false; rowNumber: number; raw: Record<string, string>; messages: string[] }
 
 // ── Helpers ─────────────────────────────────────────────────────────────────
@@ -115,7 +121,9 @@ function parseCsv(text: string): { rows: Record<string, string>[]; errors: strin
     transformHeader: (h) => h.trim().toLowerCase().replace(/\s+/g, '_'),
     transform: (v) => (typeof v === 'string' ? v.trim() : v),
   })
-  const errors = result.errors.slice(0, 5).map((e) => `${e.type}: ${e.message} (row ~${(e.row ?? 0) + 2})`)
+  const errors = result.errors
+    .slice(0, 5)
+    .map((e) => `${e.type}: ${e.message} (row ~${(e.row ?? 0) + 2})`)
   return { rows: result.data ?? [], errors }
 }
 
@@ -150,7 +158,13 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
     rowsToCreate: number
     rowsToUpdate: number
     rowsWithErrors: number
-    sample: Array<{ rowNumber: number; sku: string; title: string; outcome: string; messages: string[] }>
+    sample: Array<{
+      rowNumber: number
+      sku: string
+      title: string
+      outcome: string
+      messages: string[]
+    }>
   }>
 > {
   try {
@@ -188,7 +202,10 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
       return fail('VALIDATION', 'No data rows found — make sure the first row is a header')
     }
     if (parsedRows.length > MAX_ROWS) {
-      return fail('VALIDATION', `Too many rows (${parsedRows.length}) — split into files of ≤ ${MAX_ROWS}`)
+      return fail(
+        'VALIDATION',
+        `Too many rows (${parsedRows.length}) — split into files of ≤ ${MAX_ROWS}`
+      )
     }
 
     // Header check.
@@ -197,7 +214,7 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
     if (missingRequired.length) {
       return fail(
         'VALIDATION',
-        `Missing required column${missingRequired.length > 1 ? 's' : ''}: ${missingRequired.join(', ')}`,
+        `Missing required column${missingRequired.length > 1 ? 's' : ''}: ${missingRequired.join(', ')}`
       )
     }
 
@@ -215,7 +232,10 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
     }
     const [brands, categories, templates] = await Promise.all([
       brandSlugs.size
-        ? db.brand.findMany({ where: { slug: { in: [...brandSlugs] } }, select: { id: true, slug: true } })
+        ? db.brand.findMany({
+            where: { slug: { in: [...brandSlugs] } },
+            select: { id: true, slug: true },
+          })
         : Promise.resolve([]),
       categorySlugs.size
         ? db.category.findMany({
@@ -238,7 +258,7 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
     // those templates too — so a row that omits spec_template_slug but has
     // a category with a default still benefits from typed validation.
     const defaultTemplateIds = new Set(
-      categories.map((c) => c.defaultSpecTemplateId).filter((id): id is string => !!id),
+      categories.map((c) => c.defaultSpecTemplateId).filter((id): id is string => !!id)
     )
     if (defaultTemplateIds.size > 0) {
       const defaults = await db.specTemplate.findMany({
@@ -349,7 +369,9 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
         if (templateFields.length === 0) {
           // No template attached — record once that attrs are being ignored.
           if (seenUnknownAttrs.length === 0) {
-            messages.push(`attr_* column${'s'} present but row has no spec_template_slug or category default template`)
+            messages.push(
+              `attr_* column${'s'} present but row has no spec_template_slug or category default template`
+            )
           }
           continue
         }
@@ -369,7 +391,7 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
       }
       if (seenUnknownAttrs.length > 0) {
         messages.push(
-          `unknown attr_* column${seenUnknownAttrs.length === 1 ? '' : 's'} for template: ${seenUnknownAttrs.slice(0, 5).join(', ')}${seenUnknownAttrs.length > 5 ? `, +${seenUnknownAttrs.length - 5} more` : ''}`,
+          `unknown attr_* column${seenUnknownAttrs.length === 1 ? '' : 's'} for template: ${seenUnknownAttrs.slice(0, 5).join(', ')}${seenUnknownAttrs.length > 5 ? `, +${seenUnknownAttrs.length - 5} more` : ''}`
         )
       }
 
@@ -380,31 +402,39 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
             fieldId: f.id,
             value: submittedFieldIds.has(f.id) ? 'x' : '', // empty = missing for the helper
           })),
-          templateFields.map((f) => ({ id: f.id, label: f.label, isRequired: f.isRequired })),
+          templateFields.map((f) => ({ id: f.id, label: f.label, isRequired: f.isRequired }))
         )
         if (!requiredCheck.ok) {
           messages.push(
-            `missing required spec field${requiredCheck.missingLabels.length === 1 ? '' : 's'}: ${requiredCheck.missingLabels.join(', ')}`,
+            `missing required spec field${requiredCheck.missingLabels.length === 1 ? '' : 's'}: ${requiredCheck.missingLabels.join(', ')}`
           )
         }
       }
 
       // Numeric coercion.
       const listPrice = parseDecimal(raw.list_price)
-      if (raw.list_price && listPrice === undefined) messages.push(`list_price not a number: ${raw.list_price}`)
+      if (raw.list_price && listPrice === undefined)
+        messages.push(`list_price not a number: ${raw.list_price}`)
       const compareAtPrice = parseDecimal(raw.compare_at_price)
-      if (raw.compare_at_price && compareAtPrice === undefined) messages.push(`compare_at_price not a number: ${raw.compare_at_price}`)
+      if (raw.compare_at_price && compareAtPrice === undefined)
+        messages.push(`compare_at_price not a number: ${raw.compare_at_price}`)
       if (compareAtPrice != null && listPrice != null && compareAtPrice <= listPrice) {
-        messages.push(`compare_at_price (${compareAtPrice}) must be greater than list_price (${listPrice}); leave blank for no MSRP display`)
+        messages.push(
+          `compare_at_price (${compareAtPrice}) must be greater than list_price (${listPrice}); leave blank for no MSRP display`
+        )
       }
       const weightKg = parseDecimal(raw.weight_kg)
-      if (raw.weight_kg && weightKg === undefined) messages.push(`weight_kg not a number: ${raw.weight_kg}`)
+      if (raw.weight_kg && weightKg === undefined)
+        messages.push(`weight_kg not a number: ${raw.weight_kg}`)
       const leadTimeDays = parseInteger(raw.lead_time_days)
-      if (raw.lead_time_days && leadTimeDays === undefined) messages.push(`lead_time_days not an integer`)
+      if (raw.lead_time_days && leadTimeDays === undefined)
+        messages.push(`lead_time_days not an integer`)
       const warrantyMonths = parseInteger(raw.warranty_months)
-      if (raw.warranty_months && warrantyMonths === undefined) messages.push(`warranty_months not an integer`)
+      if (raw.warranty_months && warrantyMonths === undefined)
+        messages.push(`warranty_months not an integer`)
       const stockQty = parseInteger(raw.stock_qty) ?? 0
-      if (raw.stock_qty && parseInteger(raw.stock_qty) === undefined) messages.push(`stock_qty not an integer`)
+      if (raw.stock_qty && parseInteger(raw.stock_qty) === undefined)
+        messages.push(`stock_qty not an integer`)
 
       // Slug — derive from title if not provided, dedupe within file.
       let slug = trimOrNull(raw.slug ?? '') ?? slugify(title || sku)
@@ -498,7 +528,10 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
         rowNumber: r.rowNumber,
         sku: trimOrNull(r.raw.sku) ?? '(missing)',
         title: trimOrNull(r.raw.title) ?? '(missing)',
-        outcome: r.ok && specCount > 0 ? `${baseOutcome} + ${specCount} spec${specCount === 1 ? '' : 's'}` : baseOutcome,
+        outcome:
+          r.ok && specCount > 0
+            ? `${baseOutcome} + ${specCount} spec${specCount === 1 ? '' : 's'}`
+            : baseOutcome,
         messages: r.ok ? [] : r.messages,
       }
     })
@@ -518,7 +551,9 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
 
 // ── Action: commit ──────────────────────────────────────────────────────────
 
-export async function commitProductImport(jobId: string): Promise<Result<{ created: number; updated: number; failed: number }>> {
+export async function commitProductImport(
+  jobId: string
+): Promise<Result<{ created: number; updated: number; failed: number }>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     z.string().uuid().parse(jobId)
@@ -528,9 +563,13 @@ export async function commitProductImport(jobId: string): Promise<Result<{ creat
       include: { rows: { where: { outcome: { in: ['created', 'updated'] } } } },
     })
     if (!job) return fail('NOT_FOUND', 'Import job not found')
-    if (job.status !== 'previewing') return fail('PRECONDITION_FAILED', `Job is in status ${job.status}, expected previewing`)
+    if (job.status !== 'previewing')
+      return fail('PRECONDITION_FAILED', `Job is in status ${job.status}, expected previewing`)
 
-    await db.importJob.update({ where: { id: jobId }, data: { status: 'committing', startedAt: new Date() } })
+    await db.importJob.update({
+      where: { id: jobId },
+      data: { status: 'committing', startedAt: new Date() },
+    })
 
     let created = 0
     let updated = 0
@@ -618,11 +657,13 @@ export async function commitProductImport(jobId: string): Promise<Result<{ creat
               where: { id: r.id },
               data: {
                 outcome: 'error',
-                messages: [err instanceof Error ? err.message : 'unknown error'] as Prisma.InputJsonValue,
+                messages: [
+                  err instanceof Error ? err.message : 'unknown error',
+                ] as Prisma.InputJsonValue,
               },
             })
           }
-        }),
+        })
       )
     }
 
@@ -665,7 +706,8 @@ export async function cancelImportPreview(jobId: string): Promise<Result<void>> 
     z.string().uuid().parse(jobId)
     const job = await db.importJob.findUnique({ where: { id: jobId }, select: { status: true } })
     if (!job) return ok(undefined) // already gone
-    if (job.status !== 'previewing') return fail('PRECONDITION_FAILED', `Cannot cancel a ${job.status} job`)
+    if (job.status !== 'previewing')
+      return fail('PRECONDITION_FAILED', `Cannot cancel a ${job.status} job`)
     // Rows have ON DELETE CASCADE → drop the parent.
     await db.importJob.delete({ where: { id: jobId } })
     revalidatePath(`/admin/products/import`)
@@ -701,12 +743,13 @@ export async function getImportTemplateCsv(): Promise<string> {
         default:
           return [f.key, '']
       }
-    }) ?? [],
+    }) ?? []
   )
 
   const allCols = [...PRODUCT_IMPORT_COLUMNS.map((c) => c.key), ...attrCols]
 
-  const csvEscape = (v: string) => (v.includes(',') || v.includes('"') ? `"${v.replace(/"/g, '""')}"` : v)
+  const csvEscape = (v: string) =>
+    v.includes(',') || v.includes('"') ? `"${v.replace(/"/g, '""')}"` : v
   const header = allCols.map(csvEscape).join(',')
 
   // Row 1 — fully populated example

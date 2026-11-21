@@ -57,7 +57,8 @@ export type ThreadStandard =
   // be conflated with the `oring` flag, which says the seal carries an O-ring.
   | 'orb'
 /** Sealing geometry — the angle is part of the designation, not a dimension. */
-export type Seat = 'cone-24' | 'cone-37' | 'cone-45' | 'cone-60' | 'flat' | 'oring-flat' | 'inverted-flare'
+export type Seat =
+  'cone-24' | 'cone-37' | 'cone-45' | 'cone-60' | 'flat' | 'oring-flat' | 'inverted-flare'
 /** DIN 2353 tube series. */
 export type Series = 'light' | 'heavy'
 export type Kind = 'hose-fitting' | 'crimp-fitting' | 'adapter' | 'coupling' | 'nut'
@@ -513,7 +514,11 @@ function dinDesignation(attrs: FittingAttributes): string | null {
 }
 
 function join(parts: (string | null | undefined)[]): string {
-  return parts.filter((p): p is string => !!p && p.length > 0).join(' ').replace(/\s+/g, ' ').trim()
+  return parts
+    .filter((p): p is string => !!p && p.length > 0)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 // ── Per-language composition ────────────────────────────────────────────────
@@ -526,7 +531,7 @@ function endPhrase(
     thread?: ThreadStandard | null | undefined
     gender?: Gender | null | undefined
     seat?: Seat | null | undefined
-  },
+  }
 ): string {
   return join([
     end.thread ? THREAD[end.thread][lang] : null,
@@ -587,7 +592,9 @@ function composeDe(a: FittingAttributes): string {
     // Guard C4: BODY.union.de and the generic connector noun are the same
     // German word, so never print it twice.
     a.body
-      ? (a.kind && KIND[a.kind].de === BODY[a.body].de ? null : BODY[a.body].de)
+      ? a.kind && KIND[a.kind].de === BODY[a.body].de
+        ? null
+        : BODY[a.body].de
       : a.kind
         ? KIND[a.kind].de
         : null,
@@ -705,7 +712,7 @@ export function buildAlternateNames(attrs: FittingAttributes): AlternateName[] {
     it: composeIt(attrs),
   }
   return ALTERNATE_NAME_LANGS.map((lang) => ({ lang, name: composed[lang] })).filter(
-    (n) => n.name.length > 0,
+    (n) => n.name.length > 0
   )
 }
 

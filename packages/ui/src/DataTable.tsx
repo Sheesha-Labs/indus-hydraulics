@@ -125,7 +125,7 @@ export function DataTable<Row>({
               the whole card for a dashed box — which thirty admin pages do
               today — makes the page jump between "has rows" and "has none".
             */}
-            <TableCell colSpan={columns.length} className="py-14 text-center text-ih-muted">
+            <TableCell colSpan={columns.length} className="text-ih-muted py-14 text-center">
               {emptyState ?? 'Nothing here yet.'}
             </TableCell>
           </TableRow>

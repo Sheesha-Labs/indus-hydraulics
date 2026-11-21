@@ -3,7 +3,11 @@ import { describe, expect, it, vi } from 'vitest'
 vi.mock('server-only', () => ({}))
 vi.mock('./records', () => ({
   latestRecordIds: async (kind: string, n: number) =>
-    Array.from({ length: Math.min(n, 2) }, (_, i) => ({ id: `${kind}-${i}`, label: `${kind} ${i}`, hint: '' })),
+    Array.from({ length: Math.min(n, 2) }, (_, i) => ({
+      id: `${kind}-${i}`,
+      label: `${kind} ${i}`,
+      hint: '',
+    })),
 }))
 
 const { STARTERS, STARTER_META, starterDraft } = await import('./starters')

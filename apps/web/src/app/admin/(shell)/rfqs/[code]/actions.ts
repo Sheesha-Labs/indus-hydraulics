@@ -42,7 +42,10 @@ export async function updateRfqStatus(rfqId: string, to: string): Promise<Result
     try {
       assertTransition(rfq.status, parsed.to as never)
     } catch (e) {
-      return fail('PRECONDITION_FAILED', e instanceof Error ? e.message : 'Invalid state transition')
+      return fail(
+        'PRECONDITION_FAILED',
+        e instanceof Error ? e.message : 'Invalid state transition'
+      )
     }
 
     const previousStatus = rfq.status
@@ -81,13 +84,19 @@ export async function updateRfqStatus(rfqId: string, to: string): Promise<Result
     })
 
     // Side effects on terminal customer-visible transitions
-    if ((parsed.to === 'accepted' || parsed.to === 'declined') && rfq.submittedBy && rfq.quotes[0]) {
+    if (
+      (parsed.to === 'accepted' || parsed.to === 'declined') &&
+      rfq.submittedBy &&
+      rfq.quotes[0]
+    ) {
       void fireQuoteAckSideEffects({
         rfqId: rfq.id,
         rfqCode: rfq.code,
         outcome: parsed.to,
         contactId: rfq.submittedByContactId,
-        contactName: `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email,
+        contactName:
+          `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() ||
+          rfq.submittedBy.email,
         contactEmail: rfq.submittedBy.email,
         quote: rfq.quotes[0],
       })
@@ -162,7 +171,6 @@ async function fireQuoteAckSideEffects(input: {
       quoteId: input.quote.id,
     })
   } catch (err) {
-     
     console.error('[updateRfqStatus] ack side-effect error', err)
   }
 }
@@ -226,7 +234,10 @@ export async function updateTracking(formData: FormData): Promise<Result<void>> 
 
 const SaveLineReviewSchema = z.object({
   rfqId: z.string().uuid(),
-  internalNotes: z.string().optional().transform((v) => v ?? null),
+  internalNotes: z
+    .string()
+    .optional()
+    .transform((v) => v ?? null),
 })
 
 export async function saveLineReview(formData: FormData): Promise<Result<void>> {
@@ -360,7 +371,10 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
 
     const allowedStates = ['engineer_review', 'engineer_questions_pending', 'quote_sent']
     if (!allowedStates.includes(rfq.status)) {
-      return fail('PRECONDITION_FAILED', `Cannot send a quote from status "${rfq.status}". Move to engineer_review first.`)
+      return fail(
+        'PRECONDITION_FAILED',
+        `Cannot send a quote from status "${rfq.status}". Move to engineer_review first.`
+      )
     }
 
     const codeInfo = await nextQuoteCodeForRfq(rfq.id)
@@ -394,7 +408,10 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
     const total = baseTotals.total
 
     if (subtotal <= 0) {
-      return fail('PRECONDITION_FAILED', 'Cannot send a quote with no priced line items. Set engineer unit prices first.')
+      return fail(
+        'PRECONDITION_FAILED',
+        'Cannot send a quote with no priced line items. Set engineer unit prices first.'
+      )
     }
 
     const pdf = await renderEstimatePdf(estimate)
@@ -445,7 +462,13 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
           actorType: 'staff',
           actorId: staffId,
           verb: 'quote_sent',
-          payload: { rfqId: rfq.id, rfqCode: rfq.code, quoteId: created.id, quoteCode: created.code, revision: created.revision },
+          payload: {
+            rfqId: rfq.id,
+            rfqCode: rfq.code,
+            quoteId: created.id,
+            quoteCode: created.code,
+            revision: created.revision,
+          },
         },
       })
 
@@ -462,9 +485,13 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
       // the sending domain has no MX, so a customer's reply would vanish.
       const replyTo = resolveReplyTo(settings?.contactEmail)
       const fromName = settings?.quoteFromName ?? null
-      const customerName = `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email
+      const customerName =
+        `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email
 
-      const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
+      const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(
+        /\/$/,
+        ''
+      )
       // Signed access token so a non-logged-in recipient (e.g. the procurement
       // person who got the email forwarded) can still view + download the PDF.
       const accessToken = signQuoteAccessToken(rfq.code)
@@ -509,7 +536,6 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
         quoteId: quote.id,
       })
     } catch (err) {
-       
       console.error('[sendQuote] email send error', err)
     }
 

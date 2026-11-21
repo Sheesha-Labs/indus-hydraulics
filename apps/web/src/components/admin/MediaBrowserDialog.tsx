@@ -122,7 +122,7 @@ function BrowserBody({
               size={13}
               strokeWidth={1.8}
               aria-hidden="true"
-              className="text-ih-muted pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2"
+              className="text-ih-muted pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"
             />
             <input
               id="media-browser-search"
@@ -131,7 +131,7 @@ function BrowserBody({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search filename, alt text or caption…"
-              className="border-ih-border bg-ih-surface focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft h-8 w-full rounded-md border pl-7 pr-2.5 text-[12.5px] outline-none focus-visible:ring-[3px]"
+              className="border-ih-border bg-ih-surface focus-visible:border-ih-accent focus-visible:ring-ih-accent-soft h-8 w-full rounded-md border pr-2.5 pl-7 text-[12.5px] outline-none focus-visible:ring-[3px]"
             />
           </div>
           {fixedKind ? null : (
@@ -145,7 +145,7 @@ function BrowserBody({
                   className={cn(
                     'h-7 rounded-sm px-2.5 text-[12px] transition-colors',
                     kind === k.value
-                      ? 'bg-ih-navy font-medium text-ih-bg'
+                      ? 'bg-ih-navy text-ih-bg font-medium'
                       : 'text-ih-ink-2 hover:text-ih-ink'
                   )}
                 >
@@ -180,7 +180,7 @@ function BrowserBody({
                       onDoubleClick={() => onSelect(m)}
                       aria-pressed={isChosen}
                       className={cn(
-                        'flex w-full flex-col overflow-hidden rounded-md border text-left outline-none transition-colors',
+                        'flex w-full flex-col overflow-hidden rounded-md border text-left transition-colors outline-none',
                         isChosen
                           ? 'border-ih-accent ring-ih-accent-soft ring-[3px]'
                           : 'border-ih-border hover:border-ih-border-strong'
@@ -196,12 +196,12 @@ function BrowserBody({
                             className="h-full w-full object-cover"
                           />
                         ) : (
-                          <span className="text-ih-muted-2 grid h-full w-full place-items-center tabular-nums text-[10.5px] uppercase tracking-[0.1em]">
+                          <span className="text-ih-muted-2 grid h-full w-full place-items-center text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
                             {m.kind}
                           </span>
                         )}
                         {isChosen ? (
-                          <span className="bg-ih-accent absolute right-1 top-1 inline-flex h-5 w-5 items-center justify-center rounded-full text-ih-accent-fg">
+                          <span className="bg-ih-accent text-ih-accent-fg absolute top-1 right-1 inline-flex h-5 w-5 items-center justify-center rounded-full">
                             <Check size={11} strokeWidth={2.4} aria-hidden="true" />
                           </span>
                         ) : null}

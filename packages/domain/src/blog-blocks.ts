@@ -421,23 +421,24 @@ export type DiagramBlock = z.infer<typeof DiagramBlockSchema>
 //
 // `id` is the anchor a body reference links to, so "(Bainbridge, 1983)" in a
 // prose block can be an actual link to the entry rather than a cue to scroll.
-export const ReferencesBlockSchema = z.object({
-  type: z.literal('references'),
-  heading: OptionalText(120),
-  entries: z
-    .array(
-      z.object({
-        /** Stable anchor slug, e.g. "bainbridge-1983". Unique within the block. */
-        id: Slug(80),
-        /** The full reference, already formatted in the article's citation style. */
-        text: NonEmpty(600),
-        /** DOI or landing page. */
-        url: OptionalText(800),
-      })
-    )
-    .min(1)
-    .max(80),
-})
+export const ReferencesBlockSchema = z
+  .object({
+    type: z.literal('references'),
+    heading: OptionalText(120),
+    entries: z
+      .array(
+        z.object({
+          /** Stable anchor slug, e.g. "bainbridge-1983". Unique within the block. */
+          id: Slug(80),
+          /** The full reference, already formatted in the article's citation style. */
+          text: NonEmpty(600),
+          /** DOI or landing page. */
+          url: OptionalText(800),
+        })
+      )
+      .min(1)
+      .max(80),
+  })
   .refine(
     (block) => new Set(block.entries.map((e) => e.id)).size === block.entries.length,
     // Duplicate ids mean two entries answer to the same anchor, so half the

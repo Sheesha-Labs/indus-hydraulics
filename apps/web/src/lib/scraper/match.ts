@@ -28,7 +28,7 @@ const DEFAULT_MIN_SCORE = 60
 export function matchTextToOption(
   text: string | null | undefined,
   options: readonly MatchOption[],
-  opts: { minScore?: number } = {},
+  opts: { minScore?: number } = {}
 ): MatchResult | null {
   if (!text) return null
   const minScore = opts.minScore ?? DEFAULT_MIN_SCORE

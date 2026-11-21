@@ -16,7 +16,8 @@ import { threadChartTotals } from './thread-chart'
  * without anyone editing a sentence.
  */
 
-export type ResourceKey = 'thread-chart' | 'crimp-specifications' | 'fitting-pressure-ratings' | 'hydraulic-glossary'
+export type ResourceKey =
+  'thread-chart' | 'crimp-specifications' | 'fitting-pressure-ratings' | 'hydraulic-glossary'
 
 export interface ResourceEntry {
   readonly key: ResourceKey
@@ -143,7 +144,8 @@ export const RESOURCE_CALCULATORS: readonly {
     href: '/tools/dash-size-chart',
     kind: 'Chart',
     title: 'Dash size chart',
-    summary: 'Dash number to inches and millimetres, with the two caveats that cause most ordering mistakes.',
+    summary:
+      'Dash number to inches and millimetres, with the two caveats that cause most ordering mistakes.',
   },
 ]
 

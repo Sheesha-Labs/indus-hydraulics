@@ -81,7 +81,7 @@ function UsageLine({ usages, className }: { usages: MediaUsage[]; className?: st
   const first = usages[0]
   return (
     <span
-      className={cn('block truncate text-[11.5px] text-ih-muted', className)}
+      className={cn('text-ih-muted block truncate text-[11.5px]', className)}
       // The native tooltip carries the full list, so hovering answers "where
       // else?" without opening anything.
       title={
@@ -116,7 +116,7 @@ function Thumb({
 }) {
   const src = mediaThumbnailSrc(item)
   return (
-    <div className={cn('relative overflow-hidden bg-ih-surface-2', className)}>
+    <div className={cn('bg-ih-surface-2 relative overflow-hidden', className)}>
       {/* A plain <img>, not next/image: storagePath holds four different shapes
           and only some are absolute URLs, so next/image would need a loader per
           shape for no benefit at 4:3 thumbnail size — and its remote patterns
@@ -131,14 +131,14 @@ function Thumb({
           className="h-full w-full object-cover"
         />
       ) : (
-        <span className="grid h-full w-full place-items-center tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+        <span className="text-ih-muted-2 grid h-full w-full place-items-center text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
           {subtype(item)}
         </span>
       )}
 
       {usages.length > 0 ? (
         <span
-          className="absolute bottom-1.5 left-1.5 inline-flex h-5 items-center gap-1 rounded-sm bg-ih-ink/80 px-1.5 text-[11px] font-medium text-white backdrop-blur-[2px]"
+          className="bg-ih-ink/80 absolute bottom-1.5 left-1.5 inline-flex h-5 items-center gap-1 rounded-sm px-1.5 text-[11px] font-medium text-white backdrop-blur-[2px]"
           title={summariseUsage(usages)}
         >
           <Link2 size={9} strokeWidth={2} aria-hidden="true" />
@@ -196,7 +196,7 @@ export function MediaGrid(props: RowProps) {
         <li
           key={row.id}
           className={cn(
-            'relative flex flex-col overflow-hidden rounded-lg border bg-ih-surface transition-colors',
+            'bg-ih-surface relative flex flex-col overflow-hidden rounded-lg border transition-colors',
             selected.has(row.id) ? 'border-ih-accent' : 'border-ih-border'
           )}
         >
@@ -204,14 +204,14 @@ export function MediaGrid(props: RowProps) {
             checked={selected.has(row.id)}
             onToggle={() => onToggleSelect(row.id)}
             filename={row.originalFilename}
-            className="absolute left-1.5 top-1.5 z-10 bg-ih-surface/85 backdrop-blur-[2px]"
+            className="bg-ih-surface/85 absolute top-1.5 left-1.5 z-10 backdrop-blur-[2px]"
           />
 
           <button
             type="button"
             onClick={() => onOpen(row.id)}
             aria-label={`Details for ${row.originalFilename}`}
-            className="flex flex-1 flex-col text-left outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-inset focus-visible:ring-ih-accent-soft"
+            className="hover:bg-ih-surface-2 focus-visible:ring-ih-accent-soft flex flex-1 flex-col text-left transition-colors outline-none focus-visible:ring-[3px] focus-visible:ring-inset"
           >
             <Thumb item={row} usages={row.usages} className="aspect-[4/3]" />
             <div className="flex flex-1 flex-col gap-1.5 px-3 pt-2.5">
@@ -226,7 +226,7 @@ export function MediaGrid(props: RowProps) {
           </button>
 
           {/* Sibling of the button, not a child — see the warning above. */}
-          <div className="flex items-center gap-2 px-3 pb-2 pt-1.5 tabular-nums text-[11px] text-ih-muted">
+          <div className="text-ih-muted flex items-center gap-2 px-3 pt-1.5 pb-2 text-[11px] tabular-nums">
             <span
               className="tabular-nums"
               title={row.bytes > 0 ? undefined : 'File size was not recorded at upload'}
@@ -234,7 +234,7 @@ export function MediaGrid(props: RowProps) {
               {formatBytesOrUnknown(row.bytes)}
             </span>
             <span aria-hidden="true">·</span>
-            <span className="truncate uppercase tracking-[0.06em]">{row.kind}</span>
+            <span className="truncate tracking-[0.06em] uppercase">{row.kind}</span>
             <span className="ml-auto">
               <MediaRowActions
                 detail={row}
@@ -258,8 +258,8 @@ export function MediaGrid(props: RowProps) {
 export function MediaList(props: RowProps) {
   const { rows, onOpen, selected, onToggleSelect } = props
   return (
-    <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-      <ul className="divide-y divide-ih-border">
+    <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
+      <ul className="divide-ih-border divide-y">
         {rows.map((row) => (
           <li
             key={row.id}
@@ -279,7 +279,7 @@ export function MediaList(props: RowProps) {
               type="button"
               onClick={() => onOpen(row.id)}
               aria-label={`Details for ${row.originalFilename}`}
-              className="flex min-w-0 flex-1 items-center gap-4 py-2.5 text-left text-[13px] outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-inset focus-visible:ring-ih-accent-soft"
+              className="hover:bg-ih-surface-2 focus-visible:ring-ih-accent-soft flex min-w-0 flex-1 items-center gap-4 py-2.5 text-left text-[13px] transition-colors outline-none focus-visible:ring-[3px] focus-visible:ring-inset"
             >
               <Thumb
                 item={row}
@@ -295,12 +295,12 @@ export function MediaList(props: RowProps) {
               <MediaStatePill state={row.state} />
               {/* Fixed widths so the columns line up without a table element. */}
               <span
-                className="w-16 text-right text-[11px] tabular-nums text-ih-muted"
+                className="text-ih-muted w-16 text-right text-[11px] tabular-nums"
                 title={row.bytes > 0 ? undefined : 'File size was not recorded at upload'}
               >
                 {formatBytesOrUnknown(row.bytes)}
               </span>
-              <span className="hidden w-16 tabular-nums text-[11px] uppercase tracking-[0.06em] text-ih-muted sm:block">
+              <span className="text-ih-muted hidden w-16 text-[11px] tracking-[0.06em] uppercase tabular-nums sm:block">
                 {row.kind}
               </span>
             </button>
@@ -333,28 +333,28 @@ export function MediaEmptyState({
   resetHref: string
 }) {
   return (
-    <div className="rounded-lg border border-ih-border py-16 text-center">
+    <div className="border-ih-border rounded-lg border py-16 text-center">
       {trashed ? (
         <>
-          <p className="text-[13.5px] text-ih-ink-2">Trash is empty.</p>
-          <p className="mt-1 text-[12px] text-ih-muted">
+          <p className="text-ih-ink-2 text-[13.5px]">Trash is empty.</p>
+          <p className="text-ih-muted mt-1 text-[12px]">
             Unused files you delete land here first, and stay for 30 days.
           </p>
         </>
       ) : filtered ? (
         <>
-          <p className="text-[13.5px] text-ih-ink-2">Nothing matches these filters.</p>
+          <p className="text-ih-ink-2 text-[13.5px]">Nothing matches these filters.</p>
           <Link
             href={resetHref}
-            className="mt-2 inline-block text-[12px] text-ih-accent underline underline-offset-2"
+            className="text-ih-accent mt-2 inline-block text-[12px] underline underline-offset-2"
           >
             Clear filters
           </Link>
         </>
       ) : (
         <>
-          <p className="text-[13.5px] text-ih-ink-2">No media yet.</p>
-          <p className="mt-1 text-[12px] text-ih-muted">
+          <p className="text-ih-ink-2 text-[13.5px]">No media yet.</p>
+          <p className="text-ih-muted mt-1 text-[12px]">
             Images and documents uploaded from a product, brand or blog post appear here.
           </p>
         </>

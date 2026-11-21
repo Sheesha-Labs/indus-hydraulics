@@ -144,7 +144,13 @@ async function main() {
   for (const r of REWRITES) {
     const c = await db.category.findUnique({
       where: { slug: r.slug },
-      select: { id: true, slug: true, seoTitle: true, seoDescription: true, shortDescription: true },
+      select: {
+        id: true,
+        slug: true,
+        seoTitle: true,
+        seoDescription: true,
+        shortDescription: true,
+      },
     })
     if (!c) {
       problems.push(`${r.slug}: category not found`)
@@ -187,7 +193,9 @@ async function main() {
   console.log(`\n── categories still naming Dixon: ${remaining.length} ──`)
   for (const x of remaining) {
     const kept = INTENTIONALLY_KEPT.includes(x.slug as (typeof INTENTIONALLY_KEPT)[number])
-    console.log(`  ${x.slug}${kept ? '  (intentional — Dixon products live here)' : '  <-- UNEXPECTED'}`)
+    console.log(
+      `  ${x.slug}${kept ? '  (intentional — Dixon products live here)' : '  <-- UNEXPECTED'}`
+    )
   }
   if (unexpected.length && !dryRun) {
     problems.push(`unexpected Dixon rows remain: ${unexpected.join(', ')}`)

@@ -30,9 +30,22 @@ const ADMIN_TREES = ['app/admin', 'components/admin', 'inngest']
 
 /** Top-level admin sections. A path starting with one of these belongs to admin. */
 const ADMIN_SECTIONS = [
-  'products', 'categories', 'brands', 'industries', 'media', 'scraper', 'rfqs',
-  'customers', 'cms', 'navigation', 'seo', 'users', 'settings', 'spec-templates',
-  'enquiries', 'suppliers',
+  'products',
+  'categories',
+  'brands',
+  'industries',
+  'media',
+  'scraper',
+  'rfqs',
+  'customers',
+  'cms',
+  'navigation',
+  'seo',
+  'users',
+  'settings',
+  'spec-templates',
+  'enquiries',
+  'suppliers',
 ]
 
 /**
@@ -154,7 +167,7 @@ function scanTemplateLiterals(): Hit[] {
     (f) =>
       !f.endsWith('.test.ts') &&
       !f.endsWith('.test.tsx') &&
-      !STOREFRONT_LINK_FILES.has(f.split(path.sep).join('/')),
+      !STOREFRONT_LINK_FILES.has(f.split(path.sep).join('/'))
   )
   const RE = /`\/([a-z][a-z0-9-]*)(?=[`/$?])/g
 

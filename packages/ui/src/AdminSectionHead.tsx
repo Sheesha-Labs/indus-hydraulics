@@ -123,7 +123,7 @@ export function AdminSectionHead({
         {actions ? <div className="flex shrink-0 items-center gap-2">{actions}</div> : null}
       </div>
       {description ? (
-        <p className="mt-1 text-[12.5px] leading-[1.55] text-ih-muted">{description}</p>
+        <p className="text-ih-muted mt-1 text-[12.5px] leading-[1.55]">{description}</p>
       ) : null}
     </div>
   )

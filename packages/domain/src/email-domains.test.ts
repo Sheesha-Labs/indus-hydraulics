@@ -207,7 +207,7 @@ describe('resolving the configured sender', () => {
 
   test('case and surrounding space do not defeat the check', () => {
     expect(resolveFromEmail(` SALES@${SENDING_DOMAIN.toUpperCase()} `)).toBe(
-      `SALES@${SENDING_DOMAIN.toUpperCase()}`,
+      `SALES@${SENDING_DOMAIN.toUpperCase()}`
     )
   })
 
@@ -234,6 +234,8 @@ describe('resolving the configured reply-to', () => {
   })
 
   test('From and Reply-To can never resolve to the same address', () => {
-    expect(resolveFromEmail(`sales@${MAIL_DOMAIN}`)).not.toBe(resolveReplyTo(`sales@${SENDING_DOMAIN}`))
+    expect(resolveFromEmail(`sales@${MAIL_DOMAIN}`)).not.toBe(
+      resolveReplyTo(`sales@${SENDING_DOMAIN}`)
+    )
   })
 })

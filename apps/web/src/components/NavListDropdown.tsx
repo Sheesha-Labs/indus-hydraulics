@@ -58,20 +58,20 @@ export default function NavListDropdown({
   return (
     <div
       hidden={hidden}
-      className="absolute left-0 right-0 bg-ih-surface border-t border-ih-border"
+      className="bg-ih-surface border-ih-border absolute right-0 left-0 border-t"
       style={{ top: '100%', boxShadow: '0 24px 64px rgba(33,28,16,0.12)', zIndex: 50 }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       role="menu"
     >
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-7">
+      <div className="mx-auto max-w-[1440px] px-5 py-7 sm:px-8 xl:px-12">
         <div
           className="grid gap-10"
           style={hasPromo ? { gridTemplateColumns: '1fr 360px' } : undefined}
         >
           {/* List section */}
           <div>
-            <div className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-4 flex justify-between items-center">
+            <div className="text-ih-muted mb-4 flex items-center justify-between font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
               <span>{sectionLabel}</span>
               <span className="font-normal">{items.length}</span>
             </div>
@@ -81,22 +81,30 @@ export default function NavListDropdown({
                   key={item.slug}
                   href={`${hrefPrefix}${item.slug}`}
                   role="menuitem"
-                  className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-ih-ink-2 hover:bg-ih-bg hover:border-ih-accent hover:text-ih-ink transition-colors"
+                  className="text-ih-ink-2 hover:bg-ih-bg hover:border-ih-accent hover:text-ih-ink flex items-center justify-between border-l-2 border-transparent px-3 py-2.5 text-[14px] transition-colors"
                   onClick={onItemClick}
                 >
                   <span>{item.name}</span>
-                  <span className="font-mono text-[11px] text-ih-muted-2">›</span>
+                  <span className="text-ih-muted-2 font-mono text-[11px]">›</span>
                 </Link>
               ))}
             </div>
-            <div className="mt-5 pt-4 border-t border-ih-border">
+            <div className="border-ih-border mt-5 border-t pt-4">
               <Link
                 href={viewAllHref}
-                className="inline-flex items-center justify-between gap-2 h-10 px-4 border border-ih-border text-[13px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 inline-flex h-10 items-center justify-between gap-2 border px-4 text-[13px] transition-colors"
                 onClick={onItemClick}
               >
                 <span>{viewAllLabel}</span>
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                >
                   <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
               </Link>
@@ -108,25 +116,17 @@ export default function NavListDropdown({
             <Link
               href={promoLinkUrl ?? viewAllHref}
               onClick={onItemClick}
-              className="block bg-ih-bg border border-ih-border overflow-hidden self-start"
+              className="bg-ih-bg border-ih-border block self-start overflow-hidden border"
             >
-              <div className="relative w-full h-40">
-                <Image
-                  src={promoImageUrl}
-                  alt=""
-                  fill
-                  className="object-cover"
-                  sizes="360px"
-                />
+              <div className="relative h-40 w-full">
+                <Image src={promoImageUrl} alt="" fill className="object-cover" sizes="360px" />
               </div>
               <div className="px-4 py-3">
                 {promoHeading ? (
-                  <div className="text-[13px] font-medium text-ih-ink">
-                    {promoHeading}
-                  </div>
+                  <div className="text-ih-ink text-[13px] font-medium">{promoHeading}</div>
                 ) : null}
                 {promoBody ? (
-                  <div className="text-[12px] text-ih-muted mt-1">{promoBody}</div>
+                  <div className="text-ih-muted mt-1 text-[12px]">{promoBody}</div>
                 ) : null}
               </div>
             </Link>

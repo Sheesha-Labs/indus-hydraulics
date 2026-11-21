@@ -4,11 +4,7 @@
 import { act } from 'react'
 import { createRoot } from 'react-dom/client'
 import { afterEach, describe, expect, test, vi } from 'vitest'
-import {
-  diffNavDraft,
-  NAV_SURFACES,
-  type NavDraftItem,
-} from '@indus/domain'
+import { diffNavDraft, NAV_SURFACES, type NavDraftItem } from '@indus/domain'
 
 import NavTreeEditor from './NavTreeEditor'
 
@@ -180,9 +176,7 @@ describe('NavTreeEditor', () => {
   })
 
   test('changing link type clears every stale target id', () => {
-    const items = [
-      node({ uid: 'a', linkType: 'category', categoryId: 'cat-1', customUrl: null }),
-    ]
+    const items = [node({ uid: 'a', linkType: 'category', categoryId: 'cat-1', customUrl: null })]
     render(items)
     const select = byLabel('a link type') as HTMLSelectElement
     act(() => {
@@ -225,8 +219,8 @@ describe('NavTreeEditor', () => {
   test('a flat surface offers no child rows', () => {
     // Header items have no second level — the header is one row of links.
     render([node({ uid: 'x' })], NAV_SURFACES.primary_header)
-    const addChild = [...container.querySelectorAll('button')].filter((b) =>
-      b.textContent?.startsWith('Add link') && b.textContent !== 'Add link',
+    const addChild = [...container.querySelectorAll('button')].filter(
+      (b) => b.textContent?.startsWith('Add link') && b.textContent !== 'Add link'
     )
     expect(addChild).toHaveLength(0)
   })

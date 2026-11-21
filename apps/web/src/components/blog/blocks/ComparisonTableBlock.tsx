@@ -25,13 +25,15 @@ export default function ComparisonTableBlockView({ block }: { block: ComparisonT
   return (
     <figure className="m-0 min-w-0">
       {block.caption && (
-        <figcaption className="mb-2.5 text-[13.5px] font-medium text-ih-ink-2">{block.caption}</figcaption>
+        <figcaption className="text-ih-ink-2 mb-2.5 text-[13.5px] font-medium">
+          {block.caption}
+        </figcaption>
       )}
       <div
         tabIndex={0}
         role="region"
         aria-label={block.caption ?? 'Comparison table'}
-        className="overflow-x-auto rounded-lg border border-ih-border bg-ih-surface max-[760px]:overflow-visible max-[760px]:rounded-none max-[760px]:border-0 max-[760px]:bg-transparent"
+        className="border-ih-border bg-ih-surface overflow-x-auto rounded-lg border max-[760px]:overflow-visible max-[760px]:rounded-none max-[760px]:border-0 max-[760px]:bg-transparent"
       >
         <table className="w-full border-collapse text-[14px] leading-[1.45] max-[760px]:block">
           <thead className="max-[760px]:hidden">
@@ -40,7 +42,7 @@ export default function ComparisonTableBlockView({ block }: { block: ComparisonT
                 <th
                   key={column}
                   scope="col"
-                  className="whitespace-nowrap border-b border-ih-border bg-ih-surface-2 px-4 py-3 text-left font-mono text-[10.5px] font-medium uppercase tracking-[0.1em] text-ih-muted"
+                  className="border-ih-border bg-ih-surface-2 text-ih-muted border-b px-4 py-3 text-left font-mono text-[10.5px] font-medium tracking-[0.1em] whitespace-nowrap uppercase"
                 >
                   {column}
                 </th>
@@ -53,7 +55,7 @@ export default function ComparisonTableBlockView({ block }: { block: ComparisonT
               return (
                 <tr
                   key={i}
-                  className={`[&:last-child>*]:border-b-0 max-[760px]:block max-[760px]:overflow-hidden max-[760px]:rounded-lg max-[760px]:border max-[760px]:bg-ih-surface ${
+                  className={`max-[760px]:bg-ih-surface max-[760px]:block max-[760px]:overflow-hidden max-[760px]:rounded-lg max-[760px]:border [&:last-child>*]:border-b-0 ${
                     row.highlight
                       ? 'min-[761px]:[&>*]:bg-ih-highlight max-[760px]:border-ih-warning-line'
                       : 'max-[760px]:border-ih-border'
@@ -61,13 +63,13 @@ export default function ComparisonTableBlockView({ block }: { block: ComparisonT
                 >
                   <th
                     scope="row"
-                    className={`${ROW_CELL} font-semibold text-ih-ink min-[761px]:whitespace-nowrap max-[760px]:block max-[760px]:border-b! max-[760px]:py-3 ${
+                    className={`${ROW_CELL} text-ih-ink font-semibold max-[760px]:block max-[760px]:border-b! max-[760px]:py-3 min-[761px]:whitespace-nowrap ${
                       row.highlight ? 'max-[760px]:bg-ih-highlight' : ''
                     }`}
                   >
                     {label}
                     {row.highlight && (
-                      <span className="ml-2 inline-block rounded-sm bg-ih-highlight-tag px-1.5 py-0.5 align-middle font-mono text-[9.5px] font-medium uppercase tracking-[0.08em] text-ih-highlight-ink">
+                      <span className="bg-ih-highlight-tag text-ih-highlight-ink ml-2 inline-block rounded-sm px-1.5 py-0.5 align-middle font-mono text-[9.5px] font-medium tracking-[0.08em] uppercase">
                         Highlighted
                       </span>
                     )}
@@ -76,7 +78,7 @@ export default function ComparisonTableBlockView({ block }: { block: ComparisonT
                     <td
                       key={j}
                       data-k={block.columns[j + 1]}
-                      className={`${ROW_CELL} text-ih-ink-2 max-[760px]:grid max-[760px]:grid-cols-[112px_minmax(0,1fr)] max-[760px]:gap-3 max-[760px]:last:border-b-0 max-[760px]:before:pt-0.5 max-[760px]:before:font-mono max-[760px]:before:text-[10px] max-[760px]:before:uppercase max-[760px]:before:tracking-[0.08em] max-[760px]:before:text-ih-muted max-[760px]:before:content-[attr(data-k)]`}
+                      className={`${ROW_CELL} text-ih-ink-2 max-[760px]:before:text-ih-muted max-[760px]:grid max-[760px]:grid-cols-[112px_minmax(0,1fr)] max-[760px]:gap-3 max-[760px]:before:pt-0.5 max-[760px]:before:font-mono max-[760px]:before:text-[10px] max-[760px]:before:tracking-[0.08em] max-[760px]:before:uppercase max-[760px]:before:content-[attr(data-k)] max-[760px]:last:border-b-0`}
                     >
                       {cell}
                     </td>

@@ -42,7 +42,10 @@ export async function savePost(formData: FormData) {
   const seoTitle = (formData.get('seoTitle') as string | null) || undefined
   const seoDescription = (formData.get('seoDescription') as string | null) || undefined
   const tagsRaw = (formData.get('tags') as string | null) || ''
-  const tags = tagsRaw.split(',').map((t) => t.trim()).filter(Boolean)
+  const tags = tagsRaw
+    .split(',')
+    .map((t) => t.trim())
+    .filter(Boolean)
   const publish = formData.get('publish') === '1'
 
   // Hero image. The picker submits '' to mean "no hero", which must clear the
@@ -249,7 +252,7 @@ const UpdateBlogPostSeoSchema = z.object({
   seoDescription: optionalString(320),
   canonicalUrl: optionalString(2048).refine(
     (v) => v === null || /^https?:\/\//i.test(v),
-    'Canonical must be a full https:// URL or empty',
+    'Canonical must be a full https:// URL or empty'
   ),
   focusKeyword: optionalString(120),
   robotsIndex: z.preprocess((v) => v === 'true' || v === true, z.boolean()),
@@ -374,9 +377,7 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
             robotsFollow: after.robotsFollow,
             ogImageMediaId: after.ogImageMediaId,
             sitemapPriority:
-              after.sitemapPriority !== null
-                ? new Prisma.Decimal(after.sitemapPriority)
-                : null,
+              after.sitemapPriority !== null ? new Prisma.Decimal(after.sitemapPriority) : null,
             sitemapChangeFreq: after.sitemapChangeFreq,
             excludeFromSitemap: after.excludeFromSitemap,
             jsonLdOverride: after.jsonLdOverride ?? Prisma.DbNull,
@@ -384,7 +385,7 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
             seoUpdatedById: session.user.id,
           },
         })
-      },
+      }
     )
 
     revalidatePath(`/admin/blog/${parsed.id}`)
@@ -408,9 +409,7 @@ type UploadedImage = {
   originalFilename: string
 }
 
-export async function uploadBlogPostOgImage(
-  formData: FormData,
-): Promise<Result<UploadedImage>> {
+export async function uploadBlogPostOgImage(formData: FormData): Promise<Result<UploadedImage>> {
   return uploadBlogPostImage(formData, 'seo/og')
 }
 
@@ -423,21 +422,17 @@ export async function uploadBlogPostOgImage(
  * separable in storage from the hero and the OG card, which are different
  * jobs at different sizes.
  */
-export async function uploadBlogPostBodyImage(
-  formData: FormData,
-): Promise<Result<UploadedImage>> {
+export async function uploadBlogPostBodyImage(formData: FormData): Promise<Result<UploadedImage>> {
   return uploadBlogPostImage(formData, 'blog/body')
 }
 
-export async function uploadBlogPostHeroImage(
-  formData: FormData,
-): Promise<Result<UploadedImage>> {
+export async function uploadBlogPostHeroImage(formData: FormData): Promise<Result<UploadedImage>> {
   return uploadBlogPostImage(formData, 'blog/hero')
 }
 
 async function uploadBlogPostImage(
   formData: FormData,
-  folder: string,
+  folder: string
 ): Promise<Result<UploadedImage>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
@@ -459,7 +454,7 @@ async function uploadBlogPostImage(
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      folder,
+      folder
     )
     const media = await db.media.create({
       data: {
@@ -496,7 +491,7 @@ async function uploadBlogPostImage(
  */
 export async function setBlogPostPublished(
   id: string,
-  published: boolean,
+  published: boolean
 ): Promise<Result<{ message: string }>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
@@ -544,7 +539,7 @@ export async function setBlogPostPublished(
 /** Archive keeps the slug reserved; un-archiving returns the post to draft. */
 export async function setBlogPostArchivedFromEditor(
   id: string,
-  archived: boolean,
+  archived: boolean
 ): Promise<Result<{ message: string }>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)

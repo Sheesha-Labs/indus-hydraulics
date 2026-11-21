@@ -444,7 +444,8 @@ describe('category reach into Europe', () => {
 describe('marketRegionBridge', () => {
   const bySlug = new Map(MARKETS.map((m) => [m.name, m.slug]))
   const regionOf = new Map<string, string>()
-  for (const [region, names] of MARKET_REGIONS) for (const n of names) regionOf.set(bySlug.get(n)!, region)
+  for (const [region, names] of MARKET_REGIONS)
+    for (const n of names) regionOf.set(bySlug.get(n)!, region)
   const excluded = new Set(REACH_EXCLUDED_MARKET_SLUGS)
   const released = new Set(releasedMarketPageSlugs())
 
@@ -470,7 +471,9 @@ describe('marketRegionBridge', () => {
 
   it('gives every advertisable market at least one link from outside its region', () => {
     const inbound = new Map<string, number>()
-    for (const m of MARKETS) for (const b of marketRegionBridge(m.slug)) inbound.set(b.slug, (inbound.get(b.slug) ?? 0) + 1)
+    for (const m of MARKETS)
+      for (const b of marketRegionBridge(m.slug))
+        inbound.set(b.slug, (inbound.get(b.slug) ?? 0) + 1)
     for (const m of MARKETS) {
       if (excluded.has(m.slug) || !released.has(m.slug)) continue
       expect(inbound.get(m.slug) ?? 0, m.slug).toBeGreaterThan(0)

@@ -91,7 +91,13 @@ describe('body', () => {
 
   it('asks for everything the comparison step needs', () => {
     const body = renderRfqDraft(input()).body
-    for (const ask of ['Unit price', 'Minimum order quantity', 'Lead time', 'Incoterm', 'Validity']) {
+    for (const ask of [
+      'Unit price',
+      'Minimum order quantity',
+      'Lead time',
+      'Incoterm',
+      'Validity',
+    ]) {
       expect(body).toContain(ask)
     }
   })

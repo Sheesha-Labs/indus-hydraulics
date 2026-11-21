@@ -165,7 +165,10 @@ type Payload = {
 }
 
 function words(s: string): number {
-  return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  return s
+    .replace(/<[^>]+>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 /**
@@ -209,7 +212,7 @@ async function main() {
     throw new Error(
       `seoTitle must not contain the site name (the layout appends it): ${doubled
         .map(([k]) => k)
-        .join(', ')}`,
+        .join(', ')}`
     )
   }
 
@@ -235,7 +238,10 @@ async function main() {
     throw new Error(`missing spec template(s): ${missingTemplate.join(', ')}`)
   }
   const templateBySlug = new Map(
-    templates.map((t) => [t.slug, { id: t.id, fieldByKey: new Map(t.fields.map((f) => [f.key, f.id])) }]),
+    templates.map((t) => [
+      t.slug,
+      { id: t.id, fieldByKey: new Map(t.fields.map((f) => [f.key, f.id])) },
+    ])
   )
 
   // ── categories ─────────────────────────────────────────────────────────
@@ -333,7 +339,7 @@ async function main() {
       : null
     if (!navGroup) {
       problems.push(
-        `nav column "${payload.navGroupLabel}" not found under "${payload.navParentLabel}" — no menu entries added`,
+        `nav column "${payload.navGroupLabel}" not found under "${payload.navParentLabel}" — no menu entries added`
       )
     } else {
       const after = await db.navMenuItem.findFirst({
@@ -565,7 +571,7 @@ async function main() {
           })),
         })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
     variantsWritten += e.variants.length
 
@@ -637,12 +643,12 @@ async function main() {
           hasFocusKeyword: Boolean(product!.focusKeyword),
           hasSeoTitleAndDescription: Boolean(product!.seoTitle && product!.seoDescription),
           hasCommerceAttributes: Boolean(
-            product!.weightKg && product!.countryOfOrigin && product!.mpn,
+            product!.weightKg && product!.countryOfOrigin && product!.mpn
           ),
         })
         await tx.product.update({ where: { id: productId }, data: { contentScore: score.score } })
       },
-      { maxWait: 30_000, timeout: 30_000 },
+      { maxWait: 30_000, timeout: 30_000 }
     )
 
     const done = created + updated
@@ -651,20 +657,20 @@ async function main() {
 
   const derived = payload.products.filter((p) => p.competitorRefsDerived.length > 0)
   const corrected = payload.products.flatMap((p) =>
-    p.variants.filter((v) => v.sourcePartCorrected).map((v) => `${v.sourcePart} → ${v.partNumber}`),
+    p.variants.filter((v) => v.sourcePartCorrected).map((v) => `${v.sourcePart} → ${v.partNumber}`)
   )
 
   console.log(
     `\n[crimp-fittings] done — ${created} listings created, ${updated} updated, ` +
       `${variantsWritten} sizes written, ${crossRefs} cross references added, ` +
       `${imagesAttached} images attached, ${categoriesCreated} categories created, ` +
-      `${navCreated} menu entries added, ${problems.length} problems`,
+      `${navCreated} menu entries added, ${problems.length} problems`
   )
   if (!publish) {
     console.log(
       '  · listings are DRAFT, categories unpublished, no menu entries. Re-run with --publish' +
         ' once the PDP size-table code has deployed — the copy promises a table this build may' +
-        ' not render yet.',
+        ' not render yet.'
     )
   }
   if (withoutImage.length > 0) {
@@ -673,11 +679,13 @@ async function main() {
   if (derived.length > 0) {
     console.log(
       `  · competitor reference derived from the source's own convention (verify before relying on it): ` +
-        derived.map((p) => `${p.sku}=${p.competitorRefsDerived.join('/')}`).join(', '),
+        derived.map((p) => `${p.sku}=${p.competitorRefsDerived.join('/')}`).join(', ')
     )
   }
   if (corrected.length > 0) {
-    console.log(`  · source part numbers corrected against their own row data: ${corrected.join(', ')}`)
+    console.log(
+      `  · source part numbers corrected against their own row data: ${corrected.join(', ')}`
+    )
   }
   for (const p of problems) console.log(`  ! ${p}`)
 }

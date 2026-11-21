@@ -193,7 +193,11 @@ export function TruckIcon(props: IconProps) {
 }
 
 /** The bullet tick. Heavier stroke because it renders at 13–15px. */
-export function CheckIcon({ size = 15, strokeWidth = 2.2, className }: IconProps & { strokeWidth?: number }) {
+export function CheckIcon({
+  size = 15,
+  strokeWidth = 2.2,
+  className,
+}: IconProps & { strokeWidth?: number }) {
   return (
     <Icon size={size} strokeWidth={strokeWidth} className={className}>
       <path d="m5 12 5 5L20 7" />

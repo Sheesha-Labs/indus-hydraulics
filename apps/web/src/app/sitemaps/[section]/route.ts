@@ -25,7 +25,7 @@ export function generateStaticParams(): { section: string }[] {
 
 export async function GET(
   _request: Request,
-  ctx: { params: Promise<{ section: string }> },
+  ctx: { params: Promise<{ section: string }> }
 ): Promise<Response> {
   const { section } = await ctx.params
   const id = section.replace(/\.xml$/, '')

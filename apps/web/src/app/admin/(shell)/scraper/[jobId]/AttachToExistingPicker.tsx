@@ -36,12 +36,12 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
 
   if (selected) {
     return (
-      <div className="rounded-lg border border-ih-border bg-ih-surface-2 px-3 py-2.5 text-[13px]">
+      <div className="border-ih-border bg-ih-surface-2 rounded-lg border px-3 py-2.5 text-[13px]">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <div className="tabular-nums text-[12px] text-ih-ink truncate">{selected.sku}</div>
-            <div className="text-[12px] text-ih-ink-2 truncate">{selected.title}</div>
-            <div className="text-[11px] text-ih-muted mt-0.5">
+            <div className="text-ih-ink truncate text-[12px] tabular-nums">{selected.sku}</div>
+            <div className="text-ih-ink-2 truncate text-[12px]">{selected.title}</div>
+            <div className="text-ih-muted mt-0.5 text-[11px]">
               {selected.brandName ? `${selected.brandName} · ` : ''}
               {selected.imageCount} existing image{selected.imageCount === 1 ? '' : 's'}
             </div>
@@ -50,7 +50,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
             type="button"
             disabled={disabled}
             onClick={() => onSelect(null)}
-            className="text-[11px] tabular-nums uppercase tracking-wider text-ih-muted hover:text-ih-ink disabled:opacity-50"
+            className="text-ih-muted hover:text-ih-ink text-[11px] tracking-wider uppercase tabular-nums disabled:opacity-50"
           >
             Change
           </button>
@@ -67,33 +67,29 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search existing products by SKU, title, MPN…"
         disabled={disabled}
-        className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent disabled:opacity-50"
+        className="border-ih-border bg-ih-bg focus:ring-ih-accent h-9 w-full rounded-md border px-3 text-[13px] focus:ring-2 focus:outline-none disabled:opacity-50"
       />
-      {error && (
-        <p className="text-[11px] text-ih-danger-ink mt-1">{error}</p>
-      )}
+      {error && <p className="text-ih-danger-ink mt-1 text-[11px]">{error}</p>}
       {query.trim().length >= 2 && (
-        <div className="rounded-b-md border border-t-0 border-ih-border bg-ih-bg max-h-[260px] overflow-y-auto">
+        <div className="border-ih-border bg-ih-bg max-h-[260px] overflow-y-auto rounded-b-md border border-t-0">
           {pending && hits.length === 0 && (
-            <p className="px-3 py-2 text-[12px] text-ih-muted">Searching…</p>
+            <p className="text-ih-muted px-3 py-2 text-[12px]">Searching…</p>
           )}
           {!pending && hits.length === 0 && (
-            <p className="px-3 py-2 text-[12px] text-ih-muted">No matches</p>
+            <p className="text-ih-muted px-3 py-2 text-[12px]">No matches</p>
           )}
           {hits.map((h) => (
             <button
               key={h.id}
               type="button"
               onClick={() => onSelect(h)}
-              className="w-full text-left px-3 py-2 border-t border-ih-border hover:bg-ih-surface-2 focus:bg-ih-surface-2 focus:outline-none"
+              className="border-ih-border hover:bg-ih-surface-2 focus:bg-ih-surface-2 w-full border-t px-3 py-2 text-left focus:outline-none"
             >
               <div className="flex items-baseline gap-3">
-                <span className="tabular-nums text-[12px] text-ih-ink flex-shrink-0">
-                  {h.sku}
-                </span>
-                <span className="text-[12px] text-ih-ink-2 truncate">{h.title}</span>
+                <span className="text-ih-ink flex-shrink-0 text-[12px] tabular-nums">{h.sku}</span>
+                <span className="text-ih-ink-2 truncate text-[12px]">{h.title}</span>
               </div>
-              <div className="text-[11px] text-ih-muted mt-0.5">
+              <div className="text-ih-muted mt-0.5 text-[11px]">
                 {h.brandName ? `${h.brandName} · ` : ''}
                 {h.imageCount} image{h.imageCount === 1 ? '' : 's'}
               </div>

@@ -49,11 +49,16 @@ export default function JobFilters({
   }
 
   return (
-    <div className="flex items-center gap-3 flex-wrap mb-4">
-      <div className="flex items-center gap-1 flex-wrap" role="tablist" aria-label="Filter by selection status">
+    <div className="mb-4 flex flex-wrap items-center gap-3">
+      <div
+        className="flex flex-wrap items-center gap-1"
+        role="tablist"
+        aria-label="Filter by selection status"
+      >
         {STATUS_OPTIONS.map((opt) => {
           const active = opt.value === (status as typeof opt.value)
-          const count = opt.value === '' ? Object.values(counts).reduce((a, b) => a + b, 0) : counts[opt.value]
+          const count =
+            opt.value === '' ? Object.values(counts).reduce((a, b) => a + b, 0) : counts[opt.value]
           return (
             <button
               key={opt.value || 'all'}
@@ -62,7 +67,7 @@ export default function JobFilters({
               aria-selected={active}
               disabled={pending}
               onClick={() => pushParams({ status: opt.value || null })}
-              className={`rounded-md h-8 px-3 text-[11px] tabular-nums uppercase tracking-wider border ${
+              className={`h-8 rounded-md border px-3 text-[11px] tracking-wider uppercase tabular-nums ${
                 active
                   ? 'bg-ih-navy text-ih-bg border-ih-ink'
                   : 'bg-ih-bg text-ih-ink-2 border-ih-border hover:bg-ih-surface-2'
@@ -80,12 +85,12 @@ export default function JobFilters({
           type="search"
           defaultValue={q}
           placeholder="Search by title or SKU…"
-          className="rounded-md h-8 w-64 px-2 border border-ih-border bg-ih-bg text-[12px]"
+          className="border-ih-border bg-ih-bg h-8 w-64 rounded-md border px-2 text-[12px]"
         />
         <button
           type="submit"
           disabled={pending}
-          className="rounded-md h-8 px-3 border border-ih-border text-ih-ink-2 tabular-nums text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+          className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 h-8 rounded-md border px-3 text-[11px] tracking-wider uppercase tabular-nums disabled:opacity-50"
         >
           Search
         </button>
@@ -93,7 +98,7 @@ export default function JobFilters({
           <button
             type="button"
             onClick={() => pushParams({ q: null, status: null })}
-            className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
+            className="text-ih-muted hover:text-ih-ink h-8 px-2 text-[11px]"
           >
             Clear
           </button>

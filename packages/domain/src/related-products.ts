@@ -38,7 +38,7 @@ export const RELATED_PRODUCT_COUNT = 8
 export function relatedProductWindow(
   ordered: readonly string[],
   current: string,
-  count: number = RELATED_PRODUCT_COUNT,
+  count: number = RELATED_PRODUCT_COUNT
 ): string[] {
   const index = ordered.indexOf(current)
 

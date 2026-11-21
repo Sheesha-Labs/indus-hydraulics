@@ -133,19 +133,47 @@ export interface RatingRow {
 }
 
 export const RATING_ROWS: readonly RatingRow[] = [
-  { dash: 2, nominal: '1/8"', r2: null, psi: { nptf: 5000, npsm: 5000, jic: 5000, 'jic-swivel': 5000 } },
+  {
+    dash: 2,
+    nominal: '1/8"',
+    r2: null,
+    psi: { nptf: 5000, npsm: 5000, jic: 5000, 'jic-swivel': 5000 },
+  },
   {
     dash: 4,
     nominal: '1/4"',
     r2: 5000,
-    psi: { nptf: 4000, npsm: 5000, jic: 5000, 'jic-swivel': 4500, flareless: 6000, orfs: 6000, 'orfs-adjustable': 6000, bsp: 6500 },
+    psi: {
+      nptf: 4000,
+      npsm: 5000,
+      jic: 5000,
+      'jic-swivel': 4500,
+      flareless: 6000,
+      orfs: 6000,
+      'orfs-adjustable': 6000,
+      bsp: 6500,
+    },
   },
-  { dash: 5, nominal: '5/16"', r2: 4250, psi: { jic: 5000, 'jic-swivel': 4000, orfs: 6000, 'orfs-adjustable': 6000 } },
+  {
+    dash: 5,
+    nominal: '5/16"',
+    r2: 4250,
+    psi: { jic: 5000, 'jic-swivel': 4000, orfs: 6000, 'orfs-adjustable': 6000 },
+  },
   {
     dash: 6,
     nominal: '3/8"',
     r2: 4000,
-    psi: { nptf: 3000, npsm: 4000, jic: 5000, 'jic-swivel': 4000, flareless: 6000, orfs: 6000, 'orfs-adjustable': 6000, bsp: 5500 },
+    psi: {
+      nptf: 3000,
+      npsm: 4000,
+      jic: 5000,
+      'jic-swivel': 4000,
+      flareless: 6000,
+      orfs: 6000,
+      'orfs-adjustable': 6000,
+      bsp: 5500,
+    },
   },
   {
     dash: 8,
@@ -168,7 +196,14 @@ export const RATING_ROWS: readonly RatingRow[] = [
     dash: 10,
     nominal: '5/8"',
     r2: 2750,
-    psi: { jic: 3500, 'jic-swivel': 3000, flareless: 5000, orfs: 6000, 'orfs-adjustable': 6000, bsp: 4000 },
+    psi: {
+      jic: 3500,
+      'jic-swivel': 3000,
+      flareless: 5000,
+      orfs: 6000,
+      'orfs-adjustable': 6000,
+      bsp: 4000,
+    },
   },
   {
     dash: 12,
@@ -187,7 +222,12 @@ export const RATING_ROWS: readonly RatingRow[] = [
       code62: 6000,
     },
   },
-  { dash: 14, nominal: '7/8"', r2: 2000, psi: { jic: 3050, 'jic-swivel': 2500, orfs: 6000, 'orfs-adjustable': 6000 } },
+  {
+    dash: 14,
+    nominal: '7/8"',
+    r2: 2000,
+    psi: { jic: 3050, 'jic-swivel': 2500, orfs: 6000, 'orfs-adjustable': 6000 },
+  },
   {
     dash: 16,
     nominal: '1"',
@@ -241,7 +281,15 @@ export const RATING_ROWS: readonly RatingRow[] = [
     dash: 32,
     nominal: '2"',
     r2: 1125,
-    psi: { nptf: 1000, npsm: 1125, jic: 1500, 'jic-swivel': 1150, bsp: 2000, code61: 3000, code62: 6000 },
+    psi: {
+      nptf: 1000,
+      npsm: 1125,
+      jic: 1500,
+      'jic-swivel': 1150,
+      bsp: 2000,
+      code61: 3000,
+      code62: 6000,
+    },
   },
   { dash: 40, nominal: '2-1/2"', r2: null, psi: { code61: 2500 } },
   { dash: 48, nominal: '3"', r2: null, psi: { code61: 2000 } },
@@ -261,19 +309,35 @@ export const CONE_RATING_ROWS: readonly ConeRatingRow[] = [
   { tubeOd: 4, series: { LL: { thread: 'M8×1', psi: 1500 } } },
   {
     tubeOd: 6,
-    series: { LL: { thread: 'M10×1', psi: 1500 }, L: { thread: 'M12×1.5', psi: 3750 }, S: { thread: 'M14×1.5', psi: 9450 } },
+    series: {
+      LL: { thread: 'M10×1', psi: 1500 },
+      L: { thread: 'M12×1.5', psi: 3750 },
+      S: { thread: 'M14×1.5', psi: 9450 },
+    },
   },
   {
     tubeOd: 8,
-    series: { LL: { thread: 'M12×1', psi: 1500 }, L: { thread: 'M14×1.5', psi: 3750 }, S: { thread: 'M16×1.5', psi: 9450 } },
+    series: {
+      LL: { thread: 'M12×1', psi: 1500 },
+      L: { thread: 'M14×1.5', psi: 3750 },
+      S: { thread: 'M16×1.5', psi: 9450 },
+    },
   },
   {
     tubeOd: 10,
-    series: { LL: { thread: 'M14×1', psi: 1500 }, L: { thread: 'M16×1.5', psi: 3750 }, S: { thread: 'M18×1.5', psi: 9450 } },
+    series: {
+      LL: { thread: 'M14×1', psi: 1500 },
+      L: { thread: 'M16×1.5', psi: 3750 },
+      S: { thread: 'M18×1.5', psi: 9450 },
+    },
   },
   {
     tubeOd: 12,
-    series: { LL: { thread: 'M16×1', psi: 1500 }, L: { thread: 'M18×1.5', psi: 3750 }, S: { thread: 'M20×1.5', psi: 9450 } },
+    series: {
+      LL: { thread: 'M16×1', psi: 1500 },
+      L: { thread: 'M18×1.5', psi: 3750 },
+      S: { thread: 'M20×1.5', psi: 9450 },
+    },
   },
   { tubeOd: 14, series: { S: { thread: 'M22×1.5', psi: 9450 } } },
   { tubeOd: 15, series: { L: { thread: 'M22×1.5', psi: 3750 } } },
@@ -305,7 +369,12 @@ export function ratingRow(dash: number): RatingRow | undefined {
 }
 
 export type JointRating =
-  | { readonly status: 'rated'; readonly psi: number; readonly governedBy: readonly RatingConnectionId[]; readonly r2: number | null }
+  | {
+      readonly status: 'rated'
+      readonly psi: number
+      readonly governedBy: readonly RatingConnectionId[]
+      readonly r2: number | null
+    }
   | { readonly status: 'unrated'; readonly missing: readonly RatingConnectionId[] }
 
 /**
@@ -315,7 +384,11 @@ export type JointRating =
  * falls back to the other end's number — a missing rating is not a high one.
  * `governedBy` lists every end that sets the limit, so a tie names both.
  */
-export function jointRating(a: RatingConnectionId, b: RatingConnectionId, dash: number): JointRating {
+export function jointRating(
+  a: RatingConnectionId,
+  b: RatingConnectionId,
+  dash: number
+): JointRating {
   const row = ratingRow(dash)
   const ends = a === b ? [a] : [a, b]
   const missing = ends.filter((id) => row?.psi[id] === undefined)

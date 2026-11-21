@@ -44,7 +44,7 @@ export default function BrandMarquee({ brands, label }: Props) {
       className="group relative overflow-hidden [mask-image:linear-gradient(90deg,transparent_0,#000_7%,#000_93%,transparent_100%)] [-webkit-mask-image:linear-gradient(90deg,transparent_0,#000_7%,#000_93%,transparent_100%)] motion-reduce:overflow-x-auto motion-reduce:[scrollbar-width:none]"
     >
       <ul
-        className={`flex w-max [animation-name:ih-marquee] [animation-timing-function:linear] [animation-iteration-count:infinite] ${marqueeDurationClass(brands.length)} group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused] group-active:[animation-play-state:paused] motion-reduce:[animation-name:none]`}
+        className={`flex w-max [animation-iteration-count:infinite] [animation-name:ih-marquee] [animation-timing-function:linear] ${marqueeDurationClass(brands.length)} group-focus-within:[animation-play-state:paused] group-hover:[animation-play-state:paused] group-active:[animation-play-state:paused] motion-reduce:[animation-name:none]`}
       >
         {loop.map((brand, i) => {
           const duplicate = i >= brands.length
@@ -57,7 +57,7 @@ export default function BrandMarquee({ brands, label }: Props) {
               <Link
                 href={`/brands/${brand.slug}`}
                 tabIndex={duplicate ? -1 : undefined}
-                className="flex h-[108px] min-w-[200px] items-center justify-center rounded-lg border border-ih-border bg-ih-surface px-8 transition-colors duration-150 hover:border-ih-border-strong focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none md:h-[128px] md:min-w-[240px] md:px-10"
+                className="border-ih-border bg-ih-surface hover:border-ih-border-strong focus-visible:border-ih-accent flex h-[108px] min-w-[200px] items-center justify-center rounded-lg border px-8 transition-colors duration-150 focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none md:h-[128px] md:min-w-[240px] md:px-10"
               >
                 <span className="relative block h-12 w-[132px] md:h-14 md:w-40">
                   <Image

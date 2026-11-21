@@ -13,17 +13,17 @@ const SUB_TABS = [
 export default function SearchSubTabsNav() {
   const pathname = usePathname()
   return (
-    <div className="flex border-b border-ih-border mb-6 overflow-x-auto">
+    <div className="border-ih-border mb-6 flex overflow-x-auto border-b">
       {SUB_TABS.map((tab) => {
         const active = pathname === tab.path || pathname?.startsWith(`${tab.path}/`)
         return (
           <Link
             key={tab.id}
             href={tab.path}
-            className={`px-4 py-2.5 tabular-nums text-[12px] border-b-2 -mb-px whitespace-nowrap ${
+            className={`-mb-px border-b-2 px-4 py-2.5 text-[12px] whitespace-nowrap tabular-nums ${
               active
                 ? 'border-ih-accent text-ih-ink'
-                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
+                : 'text-ih-muted hover:text-ih-ink-2 border-transparent'
             }`}
           >
             {tab.label}

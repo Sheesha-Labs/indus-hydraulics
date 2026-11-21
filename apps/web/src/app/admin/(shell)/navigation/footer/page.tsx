@@ -46,8 +46,12 @@ export default async function FooterNavPage() {
 
   if (!columnsMenu || !legalMenu) {
     return (
-      <AdminPageShell title="Footer" breadcrumbs="Content · Navigation" sub="Everything below the page.">
-        <p className="rounded-md border border-ih-border bg-ih-surface px-4 py-3 text-[13px]">
+      <AdminPageShell
+        title="Footer"
+        breadcrumbs="Content · Navigation"
+        sub="Everything below the page."
+      >
+        <p className="border-ih-border bg-ih-surface rounded-md border px-4 py-3 text-[13px]">
           The footer’s menus don’t exist yet. Create them from{' '}
           <Link href="/admin/navigation" className="text-ih-accent hover:underline">
             Navigation

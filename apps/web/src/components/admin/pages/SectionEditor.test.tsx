@@ -92,7 +92,7 @@ function render(initial: EditorSection[] = SECTIONS): HTMLDivElement {
             return { status: 'ok', message: 'Reset.' }
           },
         }}
-      />,
+      />
     )
   })
   return host
@@ -100,7 +100,7 @@ function render(initial: EditorSection[] = SECTIONS): HTMLDivElement {
 
 function button(el: HTMLElement, label: string): HTMLButtonElement {
   const found = [...el.querySelectorAll('button')].find(
-    (b) => b.textContent?.trim().startsWith(label) || b.getAttribute('aria-label') === label,
+    (b) => b.textContent?.trim().startsWith(label) || b.getAttribute('aria-label') === label
   )
   if (!found) throw new Error(`No button matching "${label}"`)
   return found
@@ -127,10 +127,14 @@ describe('section editor', () => {
 
   test('a locked section offers no drag handle and no hide toggle', () => {
     const el = render()
-    expect([...el.querySelectorAll('button')].some((b) => b.getAttribute('aria-label') === 'Reorder Hero')).toBe(false)
+    expect(
+      [...el.querySelectorAll('button')].some(
+        (b) => b.getAttribute('aria-label') === 'Reorder Hero'
+      )
+    ).toBe(false)
     // The eye is rendered for every row, but disabled on a locked one.
     const eye = [...el.querySelectorAll('button')].find(
-      (b) => b.getAttribute('aria-label') === 'Hide section',
+      (b) => b.getAttribute('aria-label') === 'Hide section'
     )
     expect(eye?.disabled).toBe(true)
   })
@@ -139,8 +143,8 @@ describe('section editor', () => {
     const el = render()
     expect(
       [...el.querySelectorAll('button')].some(
-        (b) => b.getAttribute('aria-label') === 'Reorder Promise strip',
-      ),
+        (b) => b.getAttribute('aria-label') === 'Reorder Promise strip'
+      )
     ).toBe(true)
   })
 
@@ -154,7 +158,7 @@ describe('section editor', () => {
     act(() => {
       // Row 2 — the first row's toggle is disabled because the hero is locked.
       const toggles = [...el.querySelectorAll('button')].filter(
-        (b) => b.getAttribute('aria-label') === 'Hide section' && !b.disabled,
+        (b) => b.getAttribute('aria-label') === 'Hide section' && !b.disabled
       )
       toggles[0]!.click()
     })
@@ -194,7 +198,7 @@ describe('section editor', () => {
     act(() => {
       const setter = Object.getOwnPropertyDescriptor(
         window.HTMLInputElement.prototype,
-        'value',
+        'value'
       )!.set!
       setter.call(input, 'Reworded promise')
       input.dispatchEvent(new Event('input', { bubbles: true }))
@@ -221,9 +225,7 @@ describe('section editor', () => {
       },
     ])
     act(() => {
-      ;[...el.querySelectorAll('button')]
-        .find((b) => b.textContent?.includes('Live data'))
-        ?.click()
+      ;[...el.querySelectorAll('button')].find((b) => b.textContent?.includes('Live data'))?.click()
     })
     expect(el.textContent).toContain('Nothing to edit here')
   })

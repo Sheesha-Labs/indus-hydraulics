@@ -1,12 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import {
-  scoreEntity,
-  TITLE_RANGE,
-  DESCRIPTION_RANGE,
-  type SeoEntityType,
-} from '@indus/domain'
+import { scoreEntity, TITLE_RANGE, DESCRIPTION_RANGE, type SeoEntityType } from '@indus/domain'
 import { Input, Select, SeoHealthBadge } from '@indus/ui'
 import { ADMIN_PREFIX } from '../../../../../lib/admin-paths'
 
@@ -45,11 +40,7 @@ const TYPE_LABELS: Record<SeoEntityType, string> = {
   blog_post: 'Blog',
 }
 
-export default async function SeoInspectorPage({
-  searchParams,
-}: {
-  searchParams: SearchParams
-}) {
+export default async function SeoInspectorPage({ searchParams }: { searchParams: SearchParams }) {
   const sp = await searchParams
   const rows = await loadAllRows()
 
@@ -60,7 +51,7 @@ export default async function SeoInspectorPage({
         ? `${r.title} ${r.seoTitle ?? ''} ${r.seoDescription ?? ''} ${r.slug}`
             .toLowerCase()
             .includes(sp.q.toLowerCase())
-        : true,
+        : true
     )
     .filter((r) =>
       sp.status === 'ok'
@@ -69,7 +60,7 @@ export default async function SeoInspectorPage({
           ? r.score >= 50 && r.score < 80
           : sp.status === 'danger'
             ? r.score < 50
-            : true,
+            : true
     )
 
   const sort = sp.sort ?? 'score'
@@ -90,7 +81,7 @@ export default async function SeoInspectorPage({
   return (
     <div>
       {/* Summary tiles */}
-      <div className="grid grid-cols-4 gap-3 mb-6">
+      <div className="mb-6 grid grid-cols-4 gap-3">
         <SummaryTile label="Total URLs" value={counts.total} tone="neutral" />
         <SummaryTile label="Healthy (≥ 80)" value={counts.ok} tone="success" />
         <SummaryTile label="Needs work (50–79)" value={counts.warn} tone="warning" />
@@ -98,9 +89,12 @@ export default async function SeoInspectorPage({
       </div>
 
       {/* Filters */}
-      <form className="flex gap-3 items-end mb-4 flex-wrap" method="get">
-        <div className="flex-1 min-w-[240px]">
-          <label htmlFor="inspector-q" className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+      <form className="mb-4 flex flex-wrap items-end gap-3" method="get">
+        <div className="min-w-[240px] flex-1">
+          <label
+            htmlFor="inspector-q"
+            className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums"
+          >
             Search
           </label>
           {/* h-9 to match the selects and buttons in this items-end row. */}
@@ -110,7 +104,8 @@ export default async function SeoInspectorPage({
             type="text"
             name="q"
             defaultValue={sp.q ?? ''}
-            placeholder="Title, slug, description…" />
+            placeholder="Title, slug, description…"
+          />
         </div>
         <SelectFilter name="type" label="Type" value={sp.type ?? ''}>
           <option value="">All types</option>
@@ -133,23 +128,23 @@ export default async function SeoInspectorPage({
         </SelectFilter>
         <button
           type="submit"
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] hover:bg-ih-accent-hover"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover h-9 px-4 text-[12px] tabular-nums"
         >
           Apply
         </button>
         <Link
           href="/admin/seo/inspector"
-          className="rounded-md h-9 px-4 grid place-items-center border border-ih-border tabular-nums text-[12px] text-ih-muted hover:text-ih-ink-2"
+          className="border-ih-border text-ih-muted hover:text-ih-ink-2 grid h-9 place-items-center rounded-md border px-4 text-[12px] tabular-nums"
         >
           Reset
         </Link>
       </form>
 
       {/* Grid */}
-      <div className="rounded-lg border border-ih-border overflow-x-auto">
+      <div className="border-ih-border overflow-x-auto rounded-lg border">
         <table className="w-full text-[13px]">
           <thead>
-            <tr className="border-b border-ih-border bg-ih-surface-2 text-left">
+            <tr className="border-ih-border bg-ih-surface-2 border-b text-left">
               <Th>Health</Th>
               <Th>Type</Th>
               <Th>Title (length)</Th>
@@ -164,7 +159,7 @@ export default async function SeoInspectorPage({
           <tbody>
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={9} className="px-4 py-12 text-center text-ih-muted">
+                <td colSpan={9} className="text-ih-muted px-4 py-12 text-center">
                   No URLs match those filters.
                 </td>
               </tr>
@@ -172,30 +167,30 @@ export default async function SeoInspectorPage({
               filtered.map((row) => (
                 <tr
                   key={`${row.entityType}-${row.entityId}`}
-                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
+                  className="border-ih-border hover:bg-ih-surface-2 border-b last:border-0"
                 >
                   <td className="px-3 py-2">
                     <SeoHealthBadge score={row.score} size="sm" />
                   </td>
                   <td className="px-3 py-2">
-                    <span className="tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+                    <span className="text-ih-muted text-[10.5px] tracking-[0.08em] uppercase tabular-nums">
                       {TYPE_LABELS[row.entityType]}
                     </span>
                   </td>
-                  <td className="px-3 py-2 max-w-[280px]">
+                  <td className="max-w-[280px] px-3 py-2">
                     {(() => {
                       const editPath = editPathFor(row.entityType, row.entityId)
                       const titleText = row.seoTitle ?? row.title
                       return editPath ? (
                         <Link
                           href={editPath}
-                          className="truncate block text-ih-ink-2 hover:text-ih-accent"
+                          className="text-ih-ink-2 hover:text-ih-accent block truncate"
                           title={titleText}
                         >
                           {titleText}
                         </Link>
                       ) : (
-                        <div className="truncate text-ih-ink-2" title={titleText}>
+                        <div className="text-ih-ink-2 truncate" title={titleText}>
                           {titleText}
                         </div>
                       )
@@ -206,8 +201,8 @@ export default async function SeoInspectorPage({
                       max={TITLE_RANGE.max}
                     />
                   </td>
-                  <td className="px-3 py-2 max-w-[320px]">
-                    <div className="truncate text-ih-muted" title={row.seoDescription ?? ''}>
+                  <td className="max-w-[320px] px-3 py-2">
+                    <div className="text-ih-muted truncate" title={row.seoDescription ?? ''}>
                       {row.seoDescription ?? <em className="opacity-60">missing</em>}
                     </div>
                     <LengthHint
@@ -216,31 +211,31 @@ export default async function SeoInspectorPage({
                       max={DESCRIPTION_RANGE.max}
                     />
                   </td>
-                  <td className="px-3 py-2 tabular-nums text-[11px]">
+                  <td className="px-3 py-2 text-[11px] tabular-nums">
                     {row.robotsIndex ? (
                       <span className="text-ih-success-ink">index</span>
                     ) : (
                       <span className="text-ih-danger-ink">noindex</span>
                     )}
                   </td>
-                  <td className="px-3 py-2 tabular-nums text-[11px]">
+                  <td className="px-3 py-2 text-[11px] tabular-nums">
                     {row.ogImagePresent ? '✓' : <span className="text-ih-muted">—</span>}
                   </td>
-                  <td className="px-3 py-2 tabular-nums text-[11px]">
+                  <td className="px-3 py-2 text-[11px] tabular-nums">
                     {row.hasStructuredData ? '✓' : <span className="text-ih-muted">—</span>}
                   </td>
-                  <td className="px-3 py-2 tabular-nums text-[11px] text-ih-muted max-w-[260px]">
+                  <td className="text-ih-muted max-w-[260px] px-3 py-2 text-[11px] tabular-nums">
                     <a
                       href={row.url}
                       target="_blank"
                       rel="noopener"
-                      className="hover:text-ih-accent truncate inline-block max-w-full align-bottom"
+                      className="hover:text-ih-accent inline-block max-w-full truncate align-bottom"
                       title={row.url}
                     >
                       {row.url.replace(/^https?:\/\//, '')}
                     </a>
                   </td>
-                  <td className="px-3 py-2 tabular-nums text-[11px] text-ih-muted whitespace-nowrap">
+                  <td className="text-ih-muted px-3 py-2 text-[11px] whitespace-nowrap tabular-nums">
                     {row.lastModified
                       ? row.lastModified.toLocaleDateString('en-GB', {
                           day: 'numeric',
@@ -255,8 +250,9 @@ export default async function SeoInspectorPage({
         </table>
       </div>
 
-      <p className="mt-4 tabular-nums text-[11px] text-ih-muted">
-        Showing {filtered.length} of {rows.length} URL(s). Health score is recomputed on every page load.
+      <p className="text-ih-muted mt-4 text-[11px] tabular-nums">
+        Showing {filtered.length} of {rows.length} URL(s). Health score is recomputed on every page
+        load.
       </p>
     </div>
   )
@@ -267,48 +263,52 @@ export default async function SeoInspectorPage({
 // ─────────────────────────────────────────────────────────────────────────────
 
 async function loadAllRows(): Promise<EntityRow[]> {
-  const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(/\/$/, '')
+  const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
+    /\/$/,
+    ''
+  )
 
-  const [products, categories, brands, industries, blogPosts, cmsPages, seoSetting] = await Promise.all([
-    db.product.findMany({
-      select: {
-        id: true,
-        slug: true,
-        title: true,
-        seoTitle: true,
-        seoDescription: true,
-        focusKeyword: true,
-        canonicalUrl: true,
-        robotsIndex: true,
-        robotsFollow: true,
-        ogImageMediaId: true,
-        excludeFromSitemap: true,
-        seoUpdatedAt: true,
-        updatedAt: true,
-        status: true,
-      },
-    }),
-    db.category.findMany({
-      select: seoSelectNamed(),
-    }),
-    db.brand.findMany({ select: seoSelectNamed() }),
-    db.industry.findMany({ select: seoSelectNamed() }),
-    db.blogPost.findMany({
-      // Trashed posts are off the site, so an SEO warning about one is noise.
-      where: { deletedAt: null },
-      select: {
-        ...seoSelectTitled(),
-        publishedAt: true,
-      },
-    }),
-    db.cmsPage.findMany({
-      select: {
-        ...seoSelectTitled(),
-        updatedAt: true,
-      },
-    }),
-    db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
-  ])
+  const [products, categories, brands, industries, blogPosts, cmsPages, seoSetting] =
+    await Promise.all([
+      db.product.findMany({
+        select: {
+          id: true,
+          slug: true,
+          title: true,
+          seoTitle: true,
+          seoDescription: true,
+          focusKeyword: true,
+          canonicalUrl: true,
+          robotsIndex: true,
+          robotsFollow: true,
+          ogImageMediaId: true,
+          excludeFromSitemap: true,
+          seoUpdatedAt: true,
+          updatedAt: true,
+          status: true,
+        },
+      }),
+      db.category.findMany({
+        select: seoSelectNamed(),
+      }),
+      db.brand.findMany({ select: seoSelectNamed() }),
+      db.industry.findMany({ select: seoSelectNamed() }),
+      db.blogPost.findMany({
+        // Trashed posts are off the site, so an SEO warning about one is noise.
+        where: { deletedAt: null },
+        select: {
+          ...seoSelectTitled(),
+          publishedAt: true,
+        },
+      }),
+      db.cmsPage.findMany({
+        select: {
+          ...seoSelectTitled(),
+          updatedAt: true,
+        },
+      }),
+      db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
+    ])
 
   const defaultOgPresent = !!seoSetting?.ogDefaultImageId
 
@@ -334,12 +334,15 @@ async function loadAllRows(): Promise<EntityRow[]> {
         defaultOgPresent,
         // Product gets full Product+Breadcrumb+(FAQ) JSON-LD; assume true.
         hasStructuredData: true,
-      }),
+      })
     )
   }
-  for (const c of categories) pushSimple(rows, c, 'category', `${baseUrl}/c/${c.slug}`, defaultOgPresent)
-  for (const b of brands) pushSimple(rows, b, 'brand', `${baseUrl}/brands/${b.slug}`, defaultOgPresent)
-  for (const i of industries) pushSimple(rows, i, 'industry', `${baseUrl}/industries/${i.slug}`, defaultOgPresent)
+  for (const c of categories)
+    pushSimple(rows, c, 'category', `${baseUrl}/c/${c.slug}`, defaultOgPresent)
+  for (const b of brands)
+    pushSimple(rows, b, 'brand', `${baseUrl}/brands/${b.slug}`, defaultOgPresent)
+  for (const i of industries)
+    pushSimple(rows, i, 'industry', `${baseUrl}/industries/${i.slug}`, defaultOgPresent)
   for (const bp of blogPosts) {
     rows.push(
       buildRow({
@@ -359,7 +362,7 @@ async function loadAllRows(): Promise<EntityRow[]> {
         url: `${baseUrl}/blog/${bp.slug}`,
         defaultOgPresent,
         hasStructuredData: true,
-      }),
+      })
     )
   }
   for (const cp of cmsPages) {
@@ -381,7 +384,7 @@ async function loadAllRows(): Promise<EntityRow[]> {
         url: `${baseUrl}/${cp.slug}`,
         defaultOgPresent,
         hasStructuredData: false, // CMS pages don't emit JSON-LD yet.
-      }),
+      })
     )
   }
 
@@ -443,7 +446,7 @@ function pushSimple(
   },
   entityType: SeoEntityType,
   url: string,
-  defaultOgPresent: boolean,
+  defaultOgPresent: boolean
 ) {
   rows.push(
     buildRow({
@@ -463,7 +466,7 @@ function pushSimple(
       url,
       defaultOgPresent,
       hasStructuredData: true,
-    }),
+    })
   )
 }
 
@@ -520,7 +523,7 @@ function buildRow(p: {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="px-3 py-2.5 tabular-nums text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+    <th className="text-ih-muted px-3 py-2.5 text-[10.5px] tracking-[0.08em] uppercase tabular-nums">
       {children}
     </th>
   )
@@ -544,11 +547,11 @@ function SummaryTile({
           ? 'text-ih-danger-ink'
           : 'text-ih-ink-2'
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
-      <div className="tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
+      <div className="text-ih-muted text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         {label}
       </div>
-      <div className={`text-[28px] font-medium mt-1 ${toneClass}`}>{value}</div>
+      <div className={`mt-1 text-[28px] font-medium ${toneClass}`}>{value}</div>
     </div>
   )
 }
@@ -569,7 +572,7 @@ function SelectFilter({
   const id = `seo-filter-${name}`
   return (
     <div className="min-w-[150px]">
-      <label htmlFor={id} className="block tabular-nums text-[10.5px] uppercase text-ih-muted mb-1">
+      <label htmlFor={id} className="text-ih-muted mb-1 block text-[10.5px] uppercase tabular-nums">
         {label}
       </label>
       <Select id={id} name={name} defaultValue={value} className="h-9">
@@ -611,5 +614,9 @@ function LengthHint({ len, min, max }: { len: number; min: number; max: number }
         : len > max
           ? 'text-ih-danger-ink'
           : 'text-ih-success-ink'
-  return <span className={`text-[11px] tabular-nums ${tone}`}>{len}/{max}</span>
+  return (
+    <span className={`text-[11px] tabular-nums ${tone}`}>
+      {len}/{max}
+    </span>
+  )
 }

@@ -44,8 +44,14 @@ export const MEDIA_UPLOAD_TYPES: Record<string, { ext: string; kind: MediaUpload
   // an .xlsx with `xlsx` (SheetJS) 0.18.5 — it is the last npm release and
   // carries CVE-2023-30533 (prototype pollution) and CVE-2024-22363 (ReDoS).
   // Use exceljs on any inbound path. See lib/attachment-extraction.ts.
-  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': { ext: 'xlsx', kind: 'document' },
-  'application/vnd.openxmlformats-officedocument.wordprocessingml.document': { ext: 'docx', kind: 'document' },
+  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': {
+    ext: 'xlsx',
+    kind: 'document',
+  },
+  'application/vnd.openxmlformats-officedocument.wordprocessingml.document': {
+    ext: 'docx',
+    kind: 'document',
+  },
   'model/step': { ext: 'step', kind: 'cad' },
   'application/step': { ext: 'step', kind: 'cad' },
   'model/iges': { ext: 'iges', kind: 'cad' },
@@ -63,7 +69,8 @@ export interface UploadCandidate {
   bytes: number
 }
 
-export type UploadCheck = { ok: true; kind: MediaUploadKind; ext: string } | { ok: false; message: string }
+export type UploadCheck =
+  { ok: true; kind: MediaUploadKind; ext: string } | { ok: false; message: string }
 
 /**
  * Whether a file may be uploaded at all.
@@ -148,9 +155,5 @@ const MINTED_KEY = new RegExp(
  */
 export function suggestAltFromFilename(filename: string): string {
   const stem = filename.replace(/\.[^.]+$/, '')
-  return stem
-    .replace(/[_-]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .slice(0, 120)
+  return stem.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120)
 }

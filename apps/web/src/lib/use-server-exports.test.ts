@@ -79,7 +79,7 @@ describe(`'use server' modules`, () => {
   test('export async functions and nothing else', () => {
     expect(
       offenders.map((o) => `${o.file}: ${o.bad.join(' | ')}`),
-      'move constants and types to a plain sibling module',
+      'move constants and types to a plain sibling module'
     ).toEqual([])
   })
 })

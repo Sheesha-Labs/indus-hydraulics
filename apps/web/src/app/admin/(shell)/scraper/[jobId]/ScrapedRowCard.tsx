@@ -5,12 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import AttachToExistingPicker from './AttachToExistingPicker'
 import type { AttachSearchHit } from '../actions'
-import {
-  setRowSelection,
-  setRowIngestMode,
-  updateRowMapping,
-  ingestRow,
-} from '../actions'
+import { setRowSelection, setRowIngestMode, updateRowMapping, ingestRow } from '../actions'
 
 type CandidateImage = {
   url: string
@@ -84,7 +79,9 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
   const [editedTitle, setEditedTitle] = useState(row.editedTitle ?? '')
   const [editedSku, setEditedSku] = useState(row.editedSku ?? '')
   const [brandId, setBrandId] = useState(row.mappedBrandId ?? row.suggestedBrand?.id ?? '')
-  const [categoryId, setCategoryId] = useState(row.mappedCategoryId ?? row.suggestedCategory?.id ?? '')
+  const [categoryId, setCategoryId] = useState(
+    row.mappedCategoryId ?? row.suggestedCategory?.id ?? ''
+  )
   const [mode, setMode] = useState<ScrapedRowData['ingestMode']>(row.ingestMode)
   const [target, setTarget] = useState<AttachSearchHit | null>(row.targetProduct)
   const [deselected, setDeselected] = useState<Set<string>>(new Set(row.deselectedImageUrls))
@@ -157,7 +154,10 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
       const r =
         next === 'create_new'
           ? await setRowIngestMode(row.id, { mode: 'create_new' })
-          : await setRowIngestMode(row.id, { mode: 'attach_to_existing', targetProductId: target!.id })
+          : await setRowIngestMode(row.id, {
+              mode: 'attach_to_existing',
+              targetProductId: target!.id,
+            })
       if (!r.success) setError(r.message)
     })
   }
@@ -174,7 +174,10 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
       return
     }
     startTransition(async () => {
-      const r = await setRowIngestMode(row.id, { mode: 'attach_to_existing', targetProductId: hit.id })
+      const r = await setRowIngestMode(row.id, {
+        mode: 'attach_to_existing',
+        targetProductId: hit.id,
+      })
       if (!r.success) setError(r.message)
     })
   }
@@ -207,15 +210,15 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
       aria-label={`Scraped product ${row.sourceTitle}`}
     >
       {/* Row header */}
-      <header className="px-4 py-3 border-b border-ih-border flex items-center gap-3 flex-wrap">
+      <header className="border-ih-border flex flex-wrap items-center gap-3 border-b px-4 py-3">
         <span
-          className={`px-2 py-0.5 text-[10.5px] tabular-nums uppercase tracking-wider ${SELECTION_STYLE[row.selectionStatus]}`}
+          className={`px-2 py-0.5 text-[10.5px] tracking-wider uppercase tabular-nums ${SELECTION_STYLE[row.selectionStatus]}`}
         >
           {SELECTION_LABEL[row.selectionStatus]}
         </span>
         {row.hasSkuClash && row.selectionStatus !== 'ingested' && (
           <span
-            className="px-2 py-0.5 text-[10.5px] tabular-nums uppercase tracking-wider text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]"
+            className="bg-[oklch(0.94_0.06_85)] px-2 py-0.5 text-[10.5px] tracking-wider text-[oklch(0.4_0.14_85)] uppercase tabular-nums"
             title="A product with this SKU already exists on indushydraulics.com — consider attach-mode or skipping this row."
           >
             Existing SKU
@@ -225,30 +228,30 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           href={row.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[11px] tabular-nums text-ih-muted hover:text-ih-ink truncate flex-1"
+          className="text-ih-muted hover:text-ih-ink flex-1 truncate text-[11px] tabular-nums"
         >
           {row.sourceUrl} ↗
         </a>
         {row.ingestedProductId && (
           <Link
             href={`/admin/products/${row.ingestedProductId}/edit`}
-            className="text-[11px] tabular-nums uppercase tracking-wider text-ih-accent hover:underline"
+            className="text-ih-accent text-[11px] tracking-wider uppercase tabular-nums hover:underline"
           >
             Open product →
           </Link>
         )}
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-0">
+      <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1fr_1fr]">
         {/* LEFT: image carousel */}
-        <section className="p-4 border-b lg:border-b-0 lg:border-r border-ih-border">
-          <h3 className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted mb-2">
+        <section className="border-ih-border border-b p-4 lg:border-r lg:border-b-0">
+          <h3 className="text-ih-muted mb-2 text-[10.5px] tracking-wider uppercase tabular-nums">
             Candidate images ({kept.length} of {row.candidateImages.length} selected)
           </h3>
           {row.candidateImages.length === 0 ? (
-            <p className="text-[12px] text-ih-muted italic">No images discovered on this page.</p>
+            <p className="text-ih-muted text-[12px] italic">No images discovered on this page.</p>
           ) : (
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
               {row.candidateImages.map((img) => {
                 const isDeselected = deselected.has(img.url)
                 return (
@@ -259,10 +262,8 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                     disabled={locked}
                     aria-pressed={!isDeselected}
                     aria-label={`Toggle image ${img.position + 1}`}
-                    className={`rounded-md relative aspect-square border bg-ih-surface-2 overflow-hidden focus:outline-none focus:ring-2 focus:ring-ih-accent ${
-                      isDeselected
-                        ? 'border-ih-border opacity-40'
-                        : 'border-ih-accent'
+                    className={`bg-ih-surface-2 focus:ring-ih-accent relative aspect-square overflow-hidden rounded-md border focus:ring-2 focus:outline-none ${
+                      isDeselected ? 'border-ih-border opacity-40' : 'border-ih-accent'
                     }`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -271,12 +272,12 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                       alt={img.alt ?? ''}
                       loading="lazy"
                       referrerPolicy="no-referrer"
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 h-full w-full object-cover"
                       onError={(e) => {
                         ;(e.currentTarget as HTMLImageElement).style.display = 'none'
                       }}
                     />
-                    <span className="absolute bottom-1 left-1 tabular-nums text-[11px] bg-black/60 text-white px-1">
+                    <span className="absolute bottom-1 left-1 bg-black/60 px-1 text-[11px] text-white tabular-nums">
                       #{img.position + 1}
                     </span>
                   </button>
@@ -287,24 +288,28 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
         </section>
 
         {/* RIGHT: mapping form */}
-        <section className="p-4 flex flex-col gap-3">
+        <section className="flex flex-col gap-3 p-4">
           <div>
-            <h3 className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted mb-2">
+            <h3 className="text-ih-muted mb-2 text-[10.5px] tracking-wider uppercase tabular-nums">
               Source signals
             </h3>
-            <p className="text-[13px] text-ih-ink font-medium">{row.sourceTitle}</p>
-            <div className="text-[11px] text-ih-muted mt-1 flex gap-2 flex-wrap">
-              {row.sourceSku && <span>SKU: <span className="tabular-nums">{row.sourceSku}</span></span>}
+            <p className="text-ih-ink text-[13px] font-medium">{row.sourceTitle}</p>
+            <div className="text-ih-muted mt-1 flex flex-wrap gap-2 text-[11px]">
+              {row.sourceSku && (
+                <span>
+                  SKU: <span className="tabular-nums">{row.sourceSku}</span>
+                </span>
+              )}
               {row.sourceBrandText && <span>Brand: {row.sourceBrandText}</span>}
               {row.sourceCategoryText && <span>Category: {row.sourceCategoryText}</span>}
             </div>
           </div>
 
-          <fieldset className="rounded-lg border border-ih-border p-3 flex flex-col gap-2">
-            <legend className="tabular-nums uppercase tracking-wider text-[10.5px] text-ih-muted px-1">
+          <fieldset className="border-ih-border flex flex-col gap-2 rounded-lg border p-3">
+            <legend className="text-ih-muted px-1 text-[10.5px] tracking-wider uppercase tabular-nums">
               Ingest mode
             </legend>
-            <label className="flex items-start gap-2 text-[12px] text-ih-ink-2">
+            <label className="text-ih-ink-2 flex items-start gap-2 text-[12px]">
               <input
                 type="radio"
                 name={`mode-${row.id}`}
@@ -315,10 +320,11 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 className="mt-0.5"
               />
               <span>
-                <strong>Create a new product</strong> on indushydraulics.com and attach the selected images to it.
+                <strong>Create a new product</strong> on indushydraulics.com and attach the selected
+                images to it.
               </span>
             </label>
-            <label className="flex items-start gap-2 text-[12px] text-ih-ink-2">
+            <label className="text-ih-ink-2 flex items-start gap-2 text-[12px]">
               <input
                 type="radio"
                 name={`mode-${row.id}`}
@@ -329,7 +335,8 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 className="mt-0.5"
               />
               <span>
-                <strong>Attach to an existing product</strong> — for when you already have the product but no images.
+                <strong>Attach to an existing product</strong> — for when you already have the
+                product but no images.
               </span>
             </label>
           </fieldset>
@@ -339,7 +346,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           ) : (
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">
-                <span className="text-[10.5px] tabular-nums uppercase tracking-wider text-ih-muted">
+                <span className="text-ih-muted text-[10.5px] tracking-wider uppercase tabular-nums">
                   Title
                 </span>
                 <input
@@ -347,11 +354,11 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedTitle(e.target.value)}
                   placeholder={row.sourceTitle}
                   disabled={locked}
-                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
+                  className="border-ih-border bg-ih-bg h-8 rounded-md border px-2 text-[12px]"
                 />
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10.5px] tabular-nums uppercase tracking-wider text-ih-muted">
+                <span className="text-ih-muted text-[10.5px] tracking-wider uppercase tabular-nums">
                   SKU
                 </span>
                 <input
@@ -359,21 +366,23 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedSku(e.target.value)}
                   placeholder={row.sourceSku ?? row.defaultSku}
                   disabled={locked}
-                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px] tabular-nums"
+                  className="border-ih-border bg-ih-bg h-8 rounded-md border px-2 text-[12px] tabular-nums"
                 />
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10.5px] tabular-nums uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
+                <span className="text-ih-muted flex items-baseline gap-1.5 text-[10.5px] tracking-wider uppercase tabular-nums">
                   Brand
-                  {row.suggestedBrand && brandId === row.suggestedBrand.id && row.mappedBrandId === null && (
-                    <span className="text-[10.5px] text-ih-accent normal-case">auto-matched</span>
-                  )}
+                  {row.suggestedBrand &&
+                    brandId === row.suggestedBrand.id &&
+                    row.mappedBrandId === null && (
+                      <span className="text-ih-accent text-[10.5px] normal-case">auto-matched</span>
+                    )}
                 </span>
                 <select
                   value={brandId}
                   onChange={(e) => setBrandId(e.target.value)}
                   disabled={locked}
-                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
+                  className="border-ih-border bg-ih-bg h-8 rounded-md border px-2 text-[12px]"
                 >
                   <option value="">— None —</option>
                   {brands.map((b) => (
@@ -384,17 +393,19 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 </select>
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10.5px] tabular-nums uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
+                <span className="text-ih-muted flex items-baseline gap-1.5 text-[10.5px] tracking-wider uppercase tabular-nums">
                   Category
-                  {row.suggestedCategory && categoryId === row.suggestedCategory.id && row.mappedCategoryId === null && (
-                    <span className="text-[10.5px] text-ih-accent normal-case">auto-matched</span>
-                  )}
+                  {row.suggestedCategory &&
+                    categoryId === row.suggestedCategory.id &&
+                    row.mappedCategoryId === null && (
+                      <span className="text-ih-accent text-[10.5px] normal-case">auto-matched</span>
+                    )}
                 </span>
                 <select
                   value={categoryId}
                   onChange={(e) => setCategoryId(e.target.value)}
                   disabled={locked}
-                  className="rounded-md h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
+                  className="border-ih-border bg-ih-bg h-8 rounded-md border px-2 text-[12px]"
                 >
                   <option value="">— None —</option>
                   {categories.map((c) => (
@@ -409,15 +420,16 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           )}
 
           {mode === 'create_new' && !locked && (
-            <p className="text-[11px] text-ih-muted">
-              On ingest, we&rsquo;ll create <code className="tabular-nums">{effectiveSku}</code> — <span>{effectiveTitle}</span>
+            <p className="text-ih-muted text-[11px]">
+              On ingest, we&rsquo;ll create <code className="tabular-nums">{effectiveSku}</code> —{' '}
+              <span>{effectiveTitle}</span>
             </p>
           )}
 
           {row.ingestError && (
             <p
               role="alert"
-              className="rounded-lg text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
+              className="text-ih-danger-ink bg-ih-danger-soft rounded-lg border border-[oklch(0.4_0.18_25)] px-2 py-1.5 text-[11px]"
             >
               {row.ingestError}
             </p>
@@ -426,19 +438,19 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           {error && (
             <p
               role="alert"
-              className="rounded-lg text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
+              className="text-ih-danger-ink bg-ih-danger-soft rounded-lg border border-[oklch(0.4_0.18_25)] px-2 py-1.5 text-[11px]"
             >
               {error}
             </p>
           )}
 
-          <div className="flex items-center gap-2 mt-1 flex-wrap">
+          <div className="mt-1 flex flex-wrap items-center gap-2">
             {!locked && row.selectionStatus !== 'selected' && (
               <button
                 type="button"
                 onClick={onSelect}
                 disabled={pending}
-                className="rounded-md h-8 px-3 border border-ih-accent text-ih-accent tabular-nums text-[11px] uppercase tracking-wider hover:bg-ih-accent-soft disabled:opacity-50"
+                className="border-ih-accent text-ih-accent hover:bg-ih-accent-soft h-8 rounded-md border px-3 text-[11px] tracking-wider uppercase tabular-nums disabled:opacity-50"
               >
                 Mark selected
               </button>
@@ -448,32 +460,40 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onSkip}
                 disabled={pending}
-                className="rounded-md h-8 px-3 border border-ih-border text-ih-muted tabular-nums text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
+                className="border-ih-border text-ih-muted hover:bg-ih-surface-2 h-8 rounded-md border px-3 text-[11px] tracking-wider uppercase tabular-nums disabled:opacity-50"
               >
                 Skip
               </button>
             )}
-            {!locked && row.selectionStatus !== 'pending' && row.selectionStatus !== 'ingest_failed' && (
-              <button
-                type="button"
-                onClick={onReset}
-                disabled={pending}
-                className="h-8 px-3 text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
-              >
-                Reset
-              </button>
-            )}
-            {!locked && jobReady && (mode === 'create_new' || (mode === 'attach_to_existing' && target)) && (
-              <button
-                type="button"
-                onClick={onIngest}
-                disabled={pending || kept.length === 0}
-                className="h-8 px-3 bg-ih-accent text-ih-accent-fg tabular-nums text-[11px] uppercase tracking-wider ml-auto disabled:opacity-50"
-                title={kept.length === 0 ? 'Toggle at least one image back on' : undefined}
-              >
-                {pending ? 'Ingesting…' : row.selectionStatus === 'ingest_failed' ? 'Retry ingest' : 'Ingest now'}
-              </button>
-            )}
+            {!locked &&
+              row.selectionStatus !== 'pending' &&
+              row.selectionStatus !== 'ingest_failed' && (
+                <button
+                  type="button"
+                  onClick={onReset}
+                  disabled={pending}
+                  className="text-ih-muted hover:text-ih-ink h-8 px-3 text-[11px] disabled:opacity-50"
+                >
+                  Reset
+                </button>
+              )}
+            {!locked &&
+              jobReady &&
+              (mode === 'create_new' || (mode === 'attach_to_existing' && target)) && (
+                <button
+                  type="button"
+                  onClick={onIngest}
+                  disabled={pending || kept.length === 0}
+                  className="bg-ih-accent text-ih-accent-fg ml-auto h-8 px-3 text-[11px] tracking-wider uppercase tabular-nums disabled:opacity-50"
+                  title={kept.length === 0 ? 'Toggle at least one image back on' : undefined}
+                >
+                  {pending
+                    ? 'Ingesting…'
+                    : row.selectionStatus === 'ingest_failed'
+                      ? 'Retry ingest'
+                      : 'Ingest now'}
+                </button>
+              )}
           </div>
         </section>
       </div>

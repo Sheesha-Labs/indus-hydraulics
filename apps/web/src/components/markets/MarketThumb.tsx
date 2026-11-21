@@ -44,7 +44,7 @@ export default function MarketThumb({
         role="img"
         aria-label={`Outline map of ${countryName} unavailable`}
       >
-        <span className="mono text-ih-muted-2 px-3 text-center text-[9px] uppercase tracking-[0.1em]">
+        <span className="mono text-ih-muted-2 px-3 text-center text-[9px] tracking-[0.1em] uppercase">
           Map unavailable
         </span>
       </div>

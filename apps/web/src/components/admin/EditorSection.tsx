@@ -28,8 +28,8 @@ export default function EditorSection({
     <Panel padding="form" className="flex flex-col gap-5">
       <div className="flex items-start justify-between gap-4">
         <div className="flex min-w-0 flex-col gap-1">
-          <h2 className="text-[15px] font-medium text-ih-ink">{title}</h2>
-          {description ? <p className="text-[12.5px] text-ih-muted">{description}</p> : null}
+          <h2 className="text-ih-ink text-[15px] font-medium">{title}</h2>
+          {description ? <p className="text-ih-muted text-[12.5px]">{description}</p> : null}
         </div>
         {aside ? <div className="shrink-0">{aside}</div> : null}
       </div>

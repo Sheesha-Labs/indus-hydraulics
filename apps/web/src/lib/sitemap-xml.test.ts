@@ -61,7 +61,7 @@ describe('renderUrlset', () => {
     ])
     expect(withImages).toContain('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')
     expect(withImages).toContain(
-      '<image:loc>https://example.com/media/product-images/a.jpg?x=1&amp;y=2</image:loc>',
+      '<image:loc>https://example.com/media/product-images/a.jpg?x=1&amp;y=2</image:loc>'
     )
 
     const without = renderUrlset([{ url: 'https://example.com/p/b' }])

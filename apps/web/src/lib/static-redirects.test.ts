@@ -16,7 +16,7 @@ describe('static storefront redirects', () => {
     // redirected on to an intent slug. Two fetches to reach one page.
     const sources = staticRedirectSources()
     const chains = STATIC_STOREFRONT_REDIRECTS.filter((r) => sources.has(r.destination)).map(
-      (r) => `${r.source} -> ${r.destination}`,
+      (r) => `${r.source} -> ${r.destination}`
     )
     expect(chains).toEqual([])
   })

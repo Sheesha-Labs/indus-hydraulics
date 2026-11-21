@@ -41,7 +41,7 @@ describe('evidence gate', () => {
   it('drops a row whose quote was invented', () => {
     const { kept, dropped } = keepOnlyEvidencedLines(
       [line({ sourceQuote: 'EUR 999,00 each — special discount' })],
-      REPLY,
+      REPLY
     )
     expect(kept).toEqual([])
     expect(dropped).toBe(1)
@@ -50,7 +50,7 @@ describe('evidence gate', () => {
   it('tolerates re-wrapped whitespace, which mail clients always do', () => {
     const { kept } = keepOnlyEvidencedLines(
       [line({ sourceQuote: 'EUR   1.234,56\n  each,  MOQ 5, 4 weeks' })],
-      REPLY,
+      REPLY
     )
     expect(kept).toHaveLength(1)
   })
@@ -66,7 +66,7 @@ describe('evidence gate', () => {
   it('keeps the good rows and drops only the bad ones', () => {
     const { kept, dropped } = keepOnlyEvidencedLines(
       [line(), line({ sourceQuote: 'not in the reply anywhere' })],
-      REPLY,
+      REPLY
     )
     expect(kept).toHaveLength(1)
     expect(dropped).toBe(1)
@@ -81,17 +81,21 @@ describe('normalisation', () => {
   it('keeps a declined line, since a stated "cannot supply" is information', () => {
     const { kept } = keepOnlyEvidencedLines(
       [line({ kind: 'declined', unitPriceRaw: null, sourceQuote: 'we cannot supply this item' })],
-      REPLY,
+      REPLY
     )
     expect(kept[0]!.kind).toBe('declined')
   })
 
   it('falls back to "quoted" for an unrecognised kind rather than trusting it', () => {
-    expect(keepOnlyEvidencedLines([line({ kind: 'substitute' })], REPLY).kept[0]!.kind).toBe('quoted')
+    expect(keepOnlyEvidencedLines([line({ kind: 'substitute' })], REPLY).kept[0]!.kind).toBe(
+      'quoted'
+    )
   })
 
   it('nulls a non-numeric lead time instead of coercing it', () => {
-    expect(keepOnlyEvidencedLines([line({ leadTimeDays: '4 weeks' })], REPLY).kept[0]!.leadTimeDays).toBeNull()
+    expect(
+      keepOnlyEvidencedLines([line({ leadTimeDays: '4 weeks' })], REPLY).kept[0]!.leadTimeDays
+    ).toBeNull()
   })
 })
 

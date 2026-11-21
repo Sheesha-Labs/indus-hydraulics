@@ -2,7 +2,12 @@ import 'server-only'
 
 import { db } from '@indus/db'
 import { ENQUIRY_EMAIL_TO, ENQUIRY_RECIPIENTS, enquiryAttachmentFilename } from '@indus/domain'
-import { renderEnquiryReceived, sendEmail, type EmailAttachment, type EnquiryReceivedProps } from '@indus/email'
+import {
+  renderEnquiryReceived,
+  sendEmail,
+  type EmailAttachment,
+  type EnquiryReceivedProps,
+} from '@indus/email'
 import { loadEmailBranding } from './email-branding'
 import { STORAGE_BUCKETS, supabaseAdmin } from './supabase-admin'
 
@@ -37,9 +42,13 @@ export const ATTACHMENT_BUDGET_BYTES = 25 * 1024 * 1024
 /** A file the visitor uploaded: its key in the documents bucket, their filename, its type. */
 export type EnquiryFile = { path: string; label: string; contentType: string }
 
-export const ENQUIRY_NEXT_STEP = 'An engineer on our export desk will reply to this email, usually within 4 business hours.'
+export const ENQUIRY_NEXT_STEP =
+  'An engineer on our export desk will reply to this email, usually within 4 business hours.'
 
-export type EnquiryEmailInput = Omit<EnquiryReceivedProps, 'branding' | 'nextStep' | 'notAttached'> & {
+export type EnquiryEmailInput = Omit<
+  EnquiryReceivedProps,
+  'branding' | 'nextStep' | 'notAttached'
+> & {
   nextStep?: string
   rfqId?: string
   /** Uploaded files to attach (see ATTACHMENTS above). */
@@ -109,7 +118,9 @@ async function ccUnderCap(email: string): Promise<boolean> {
  * A file that fails to download is named in `left` like an oversized one —
  * the email still goes, and the file is still on the RFQ.
  */
-async function loadAttachments(files: readonly EnquiryFile[]): Promise<{ files: EmailAttachment[]; left: string[] }> {
+async function loadAttachments(
+  files: readonly EnquiryFile[]
+): Promise<{ files: EmailAttachment[]; left: string[] }> {
   const out: EmailAttachment[] = []
   const left: string[] = []
   if (files.length === 0) return { files: out, left }
@@ -125,7 +136,7 @@ async function loadAttachments(files: readonly EnquiryFile[]): Promise<{ files: 
         console.error('[sendEnquiryEmail] attachment download failed', file.path, err)
         return { file, content: null }
       }
-    }),
+    })
   )
 
   let used = 0

@@ -1,10 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import {
-  convertPressure,
-  dashSizeTable,
-  dashToSize,
-  pressureInAllUnits,
-} from './hydraulic-units'
+import { convertPressure, dashSizeTable, dashToSize, pressureInAllUnits } from './hydraulic-units'
 
 describe('convertPressure', () => {
   it('is exact for bar to MPa', () => {

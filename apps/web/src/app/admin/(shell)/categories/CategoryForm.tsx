@@ -56,13 +56,18 @@ export default function CategoryForm({
 
   const options = parents
     .filter((p) => !forbidden.has(p.id))
-    .map((p) => ({ cat: p, label: ancestorPath(parents, p.id).map((a) => a.name).join(' › ') }))
+    .map((p) => ({
+      cat: p,
+      label: ancestorPath(parents, p.id)
+        .map((a) => a.name)
+        .join(' › '),
+    }))
     .sort((a, b) => a.label.localeCompare(b.label))
 
   return (
     <form
       action={onSubmit}
-      className="flex flex-col gap-4 rounded-[10px] border border-ih-border bg-ih-surface p-5"
+      className="border-ih-border bg-ih-surface flex flex-col gap-4 rounded-[10px] border p-5"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -73,7 +78,7 @@ export default function CategoryForm({
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Hydraulic Pumps"
-            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-3 text-[13px]"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-3 text-[13px]"
           />
         </Field>
 
@@ -85,7 +90,7 @@ export default function CategoryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="hydraulic-pumps"
-            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-3 tabular-nums text-[12px]"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-3 text-[12px] tabular-nums"
           />
         </Field>
 
@@ -93,7 +98,7 @@ export default function CategoryForm({
           <select
             name="parentId"
             defaultValue={existing?.parentId ?? ''}
-            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-2 text-[12px]"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-2 text-[12px]"
           >
             <option value="">— Top level —</option>
             {options.map(({ cat, label }) => (
@@ -110,7 +115,7 @@ export default function CategoryForm({
           <select
             name="defaultSpecTemplateId"
             defaultValue={existing?.defaultSpecTemplateId ?? ''}
-            className="h-9 w-full rounded-lg border border-ih-border bg-ih-surface px-2 text-[12px]"
+            className="border-ih-border bg-ih-surface h-9 w-full rounded-lg border px-2 text-[12px]"
           >
             <option value="">— None —</option>
             {templates.map((t) => (
@@ -121,15 +126,19 @@ export default function CategoryForm({
           </select>
         </Field>
 
-        <label className="mt-[26px] flex h-9 items-center gap-2 whitespace-nowrap text-[12px] text-ih-ink-2">
-          <Input type="checkbox" name="isPublished" defaultChecked={existing?.isPublished ?? false} />
+        <label className="text-ih-ink-2 mt-[26px] flex h-9 items-center gap-2 text-[12px] whitespace-nowrap">
+          <Input
+            type="checkbox"
+            name="isPublished"
+            defaultChecked={existing?.isPublished ?? false}
+          />
           Published
         </label>
 
         <button
           type="submit"
           disabled={pending}
-          className="mt-[26px] h-9 whitespace-nowrap rounded-lg bg-ih-accent px-4 text-[12px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover mt-[26px] h-9 rounded-lg px-4 text-[12px] font-medium whitespace-nowrap disabled:opacity-50"
         >
           {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
         </button>
@@ -137,14 +146,14 @@ export default function CategoryForm({
         <button
           type="button"
           onClick={onDone}
-          className="mt-[26px] h-9 whitespace-nowrap px-3 text-[12px] text-ih-muted hover:text-ih-ink"
+          className="text-ih-muted hover:text-ih-ink mt-[26px] h-9 px-3 text-[12px] whitespace-nowrap"
         >
           Cancel
         </button>
       </div>
 
       {error && (
-        <p className="text-[11.5px] text-ih-danger-ink" role="alert">
+        <p className="text-ih-danger-ink text-[11.5px]" role="alert">
           {error}
         </p>
       )}

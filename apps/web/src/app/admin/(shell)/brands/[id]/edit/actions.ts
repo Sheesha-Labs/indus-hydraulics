@@ -37,7 +37,7 @@ const UpdateBrandSeoSchema = z.object({
   seoDescription: optionalString(320),
   canonicalUrl: optionalString(2048).refine(
     (v) => v === null || /^https?:\/\//i.test(v),
-    'Canonical must be a full https:// URL or empty',
+    'Canonical must be a full https:// URL or empty'
   ),
   focusKeyword: optionalString(120),
   robotsIndex: z.preprocess((v) => v === 'true' || v === true, z.boolean()),
@@ -161,9 +161,7 @@ export async function updateBrandSeo(formData: FormData): Promise<Result<void>> 
             robotsFollow: after.robotsFollow,
             ogImageMediaId: after.ogImageMediaId,
             sitemapPriority:
-              after.sitemapPriority !== null
-                ? new Prisma.Decimal(after.sitemapPriority)
-                : null,
+              after.sitemapPriority !== null ? new Prisma.Decimal(after.sitemapPriority) : null,
             sitemapChangeFreq: after.sitemapChangeFreq,
             excludeFromSitemap: after.excludeFromSitemap,
             jsonLdOverride: after.jsonLdOverride ?? Prisma.DbNull,
@@ -171,7 +169,7 @@ export async function updateBrandSeo(formData: FormData): Promise<Result<void>> 
             seoUpdatedById: session.user.id,
           },
         })
-      },
+      }
     )
 
     revalidatePath(`/admin/brands/${parsed.id}/edit`)
@@ -187,7 +185,7 @@ const MAX_IMAGE_BYTES = 10 * 1024 * 1024
 const ACCEPTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif']
 
 export async function uploadBrandOgImage(
-  formData: FormData,
+  formData: FormData
 ): Promise<
   Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>
 > {
@@ -211,7 +209,7 @@ export async function uploadBrandOgImage(
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      'seo/og',
+      'seo/og'
     )
     const media = await db.media.create({
       data: {

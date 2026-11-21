@@ -52,7 +52,12 @@ const SHELVES = [
 
 type Dims = Record<string, unknown>
 type Spec = { label: string; value: string; [k: string]: unknown }
-type Variant = { partNumber: string; position: number; dimensions: Dims | null; [k: string]: unknown }
+type Variant = {
+  partNumber: string
+  position: number
+  dimensions: Dims | null
+  [k: string]: unknown
+}
 type P = {
   slug: string
   title: string
@@ -73,7 +78,8 @@ const log: string[] = []
 const note = (slug: string, msg: string) => log.push(`${slug}: ${msg}`)
 
 // ── helpers ────────────────────────────────────────────────────────────────
-const num = (x: unknown): number | null => (typeof x === 'number' ? x : typeof x === 'string' && /^\d+(\.\d+)?$/.test(x) ? Number(x) : null)
+const num = (x: unknown): number | null =>
+  typeof x === 'number' ? x : typeof x === 'string' && /^\d+(\.\d+)?$/.test(x) ? Number(x) : null
 const item = (v: Variant) => String(v.dimensions?.item ?? '')
 const rows = (p: P, re: RegExp) => p.variants.filter((v) => re.test(v.partNumber))
 function setDim(p: P, v: Variant, key: string, value: unknown) {
@@ -87,7 +93,11 @@ function setItem(p: P, re: RegExp, from: RegExp | string, to: string) {
 }
 function dropSpec(p: P, label: string | RegExp, valueRe?: RegExp) {
   p.specs = p.specs.filter(
-    (s) => !((typeof label === 'string' ? s.label === label : label.test(s.label)) && (!valueRe || valueRe.test(s.value))),
+    (s) =>
+      !(
+        (typeof label === 'string' ? s.label === label : label.test(s.label)) &&
+        (!valueRe || valueRe.test(s.value))
+      )
   )
 }
 function setSpec(p: P, label: string, value: string) {
@@ -150,7 +160,10 @@ function ruleMount(p: P) {
 function ruleFractions(p: P) {
   for (const v of p.variants) {
     const t = item(v)
-    const fixed = t.replace(/(\d+) (\d+)\/(25|50)"/g, (_, w, n, d) => `${(Number(w) + Number(n) / Number(d)).toFixed(2)}"`)
+    const fixed = t.replace(
+      /(\d+) (\d+)\/(25|50)"/g,
+      (_, w, n, d) => `${(Number(w) + Number(n) / Number(d)).toFixed(2)}"`
+    )
     if (fixed !== t) setDim(p, v, 'item', fixed)
   }
 }
@@ -165,7 +178,12 @@ function ruleHs(p: P) {
     else if (/valve/i.test(t)) p.hsCode = HS_VALVE
     else p.hsCode = null // lubricators etc.: no code beats the wrong chapter
   }
-  if (/filter/i.test(t) && !/regulator/i.test(t) && (p.hsCode?.startsWith('842129') || p.hsCode === '848110')) p.hsCode = HS_FILTER
+  if (
+    /filter/i.test(t) &&
+    !/regulator/i.test(t) &&
+    (p.hsCode?.startsWith('842129') || p.hsCode === '848110')
+  )
+    p.hsCode = HS_FILTER
 }
 
 const MAKER_PRESSURE = /<li>Pressure stated by the maker:[^<]*<\/li>/
@@ -198,7 +216,8 @@ const on = (slugs: string | RegExp, fn: (p: P) => void) => {
 // Air motors
 on(/^ingersoll-rand-/, (p) => {
   dropSpec(p, 'Application', /Equipmentas/)
-  if (/m00[24]-series/.test(p.slug) || p.variants.some((v) => /RVR/.test(v.partNumber))) dropSpec(p, 'Reversible', /^No$/)
+  if (/m00[24]-series/.test(p.slug) || p.variants.some((v) => /RVR/.test(v.partNumber)))
+    dropSpec(p, 'Reversible', /^No$/)
 })
 on('ingersoll-rand-3800-series-in-line-planetary-gear-multi-vane-air-motors', (p) => {
   dropSpec(p, 'Application', /Equipmentas/)
@@ -209,9 +228,11 @@ on('dixon-series-1-frls-b07-series-miniature-filters-regulators', (p) => {
   p.variants = p.variants.filter((v) => v.partNumber !== 'PND-B07-202MGC')
   dropSpec(p, 'Drain Type')
 })
-const NORGREN_LOW = /^norgren-(excelon-)?plus-8[24]-series-air-(filter-regulators|regulators|micro-fog-lubricators)$/
+const NORGREN_LOW =
+  /^norgren-(excelon-)?plus-8[24]-series-air-(filter-regulators|regulators|micro-fog-lubricators)$/
 on(NORGREN_LOW, (p) => {
-  for (const v of p.variants) if ((num(v.dimensions?.maxPsi) ?? 99) <= 5) setDim(p, v, 'maxPsi', null)
+  for (const v of p.variants)
+    if ((num(v.dimensions?.maxPsi) ?? 99) <= 5) setDim(p, v, 'maxPsi', null)
 })
 on('norgren-excelon-plus-82-series-air-filters', (p) => {
   dropSpec(p, 'Includes', /0\.01 Micron/)
@@ -226,12 +247,17 @@ on('parker-main-line-compressed-air-filters', (p) => {
   setItem(p, /^A[AO]PX030GN/, /\b1 Inch Npt/i, '1 1/2 Inch Npt')
 })
 on(/^parker-p31-mini-global-modular-/, (p) => {
-  for (const s of p.specs) s.value = s.value.replace(/\b5 mm Particulate/, '5 Micron Particulate').replace(/\b0\.01 mm Coalescing/, '0.01 Micron Coalescing').replace(/Baffles Intered/, 'Baffles Sintered')
+  for (const s of p.specs)
+    s.value = s.value
+      .replace(/\b5 mm Particulate/, '5 Micron Particulate')
+      .replace(/\b0\.01 mm Coalescing/, '0.01 Micron Coalescing')
+      .replace(/Baffles Intered/, 'Baffles Sintered')
 })
 on('parker-pneumatic-regulator-nonrising-knob', (p) => {
   for (const v of p.variants) {
     const m = /(\d{3}) Psi/i.exec(item(v))
-    if (m && num(v.dimensions?.maxPsi) === 125 && Number(m[1]) > 125) setDim(p, v, 'maxPsi', Number(m[1]))
+    if (m && num(v.dimensions?.maxPsi) === 125 && Number(m[1]) > 125)
+      setDim(p, v, 'maxPsi', Number(m[1]))
   }
   if (p.variants.some((v) => /R119/.test(v.partNumber))) dropSpec(p, /^Adj/)
 })
@@ -245,7 +271,9 @@ on('wilkerson-filter-regulators', (p) => {
 
 // Control valves
 on('parker-miniature-high-speed-pneumatic-logic-control-valves', (p) => {
-  for (const v of p.variants) if (num(v.dimensions?.maxPsi) === 44 && /3\s*-\s*8 bar/i.test(item(v))) setDim(p, v, 'maxPsi', 116)
+  for (const v of p.variants)
+    if (num(v.dimensions?.maxPsi) === 44 && /3\s*-\s*8 bar/i.test(item(v)))
+      setDim(p, v, 'maxPsi', 116)
 })
 on(/^parker-b-series-single-air-piloted-valves-/, (p) => {
   for (const v of p.variants) {
@@ -253,14 +281,19 @@ on(/^parker-b-series-single-air-piloted-valves-/, (p) => {
     if (m) setDim(p, v, 'ports', `${m[1]}"`)
   }
 })
-on('parker-viking-xtreme-series-manual-mechanical-valves-3-way-2-position-inline-perpendicular-lever', (p) => {
-  const size: Record<string, string> = { A: '1/8"', B: '1/4"', C: '3/8"', D: '1/2"' }
-  for (const v of p.variants) {
-    const m = /^P2L([ABCD])/.exec(v.partNumber)
-    if (m) setDim(p, v, 'ports', size[m[1]!])
+on(
+  'parker-viking-xtreme-series-manual-mechanical-valves-3-way-2-position-inline-perpendicular-lever',
+  (p) => {
+    const size: Record<string, string> = { A: '1/8"', B: '1/4"', C: '3/8"', D: '1/2"' }
+    for (const v of p.variants) {
+      const m = /^P2L([ABCD])/.exec(v.partNumber)
+      if (m) setDim(p, v, 'ports', size[m[1]!])
+    }
   }
-})
-on('parker-n-series-valve-air-pilot-3-way', (p) => setItem(p, /^N35441091$/, '1 1/2 Inch Inlet', '1/2 Inch Inlet'))
+)
+on('parker-n-series-valve-air-pilot-3-way', (p) =>
+  setItem(p, /^N35441091$/, '1 1/2 Inch Inlet', '1/2 Inch Inlet')
+)
 
 // Cylinders
 const FOURMA_1P = /^parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore/
@@ -286,24 +319,27 @@ on('parker-4ma-series-tie-rod-pneumatic-cylinders-1-inch-bore-short-female-rod-n
   if (p.weightKg !== undefined) p.weightKg = null
 })
 on('parker-lp-series-compact-pneumatic-cylinders-1-inch-bore', (p) =>
-  retitle(p, 'Parker LP Series Compact Pneumatic Cylinders, 1-1/8 to 4 Inch Bore, 1P Part Numbers'),
+  retitle(p, 'Parker LP Series Compact Pneumatic Cylinders, 1-1/8 to 4 Inch Bore, 1P Part Numbers')
 )
 on('parker-lpm-series-compact-pneumatic-cylinders-1-inch-bore', (p) =>
-  retitle(p, 'Parker LPM Series Compact Pneumatic Cylinders, 1-1/8 to 4 Inch Bore, 1P Part Numbers'),
+  retitle(p, 'Parker LPM Series Compact Pneumatic Cylinders, 1-1/8 to 4 Inch Bore, 1P Part Numbers')
 )
 on(/^parker-p1f-series-/, (p) => {
   for (const v of p.variants) {
     const m = /^P1F-[A-Z](\d{3})/.exec(v.partNumber)
     if (!m) continue
     const mm = Number(m[1])
-    const t = item(v).replace(/\b(\d{2,3}) mm Bore/, (all, b) => (Number(b) === mm ? all : `${mm} mm Bore`))
+    const t = item(v).replace(/\b(\d{2,3}) mm Bore/, (all, b) =>
+      Number(b) === mm ? all : `${mm} mm Bore`
+    )
     setDim(p, v, 'item', t)
   }
 })
 
 // Grippers
 on(/^destaco-dgc-/, (p) => {
-  for (const v of rows(p, /^DGC-45/)) if (num(v.dimensions?.strokeIn) === 1.81) setDim(p, v, 'strokeIn', 1.18)
+  for (const v of rows(p, /^DGC-45/))
+    if (num(v.dimensions?.strokeIn) === 1.81) setDim(p, v, 'strokeIn', 1.18)
 })
 on('destaco-dpds-series-compact-robust-parallel-grippers', (p) => {
   for (const v of rows(p, /^DPDS-056M-006$/)) setDim(p, v, 'boreIn', 0.563)
@@ -311,24 +347,38 @@ on('destaco-dpds-series-compact-robust-parallel-grippers', (p) => {
 on('destaco-rps-series-parallel-grippers-sealed', (p) => {
   for (const v of p.variants) if (num(v.dimensions?.boreIn) === 46.1) setDim(p, v, 'boreIn', 1.815)
 })
-on('destaco-pneumatic-grippers', (p) => retitle(p, 'Destaco Gripper Accessories, Sensor Kits and Power Slides'))
+on('destaco-pneumatic-grippers', (p) =>
+  retitle(p, 'Destaco Gripper Accessories, Sensor Kits and Power Slides')
+)
 on('destaco-g110-series-grippers', (p) => retitle(p, 'Destaco G110 Series Gripper Finger Kits'))
 on(/^destaco-/, (p) => {
   if (!/clamp/i.test(p.title)) dropSpec(p, /^(Handle Color|Spindle Included)$/)
 })
 
 // Flow and check valves
-on('smc-speed-control-valve-with-5-32-tube-size', (p) => setSpec(p, 'Air Line Connection', '5/32" Tube'))
+on('smc-speed-control-valve-with-5-32-tube-size', (p) =>
+  setSpec(p, 'Air Line Connection', '5/32" Tube')
+)
 on(/^smc-speed-control-valve-with-/, (p) => setSpec(p, 'Body Material', 'Brass'))
 on('smc-air-cylinder-speed-controls', (p) => {
-  setItem(p, /^AS4201FG-N04-13S$/, /1\/8 Inch Port Size, 3\/16 Inch Tube Size/, '1/2 Inch Port Size, 1/2 Inch Tube Size')
+  setItem(
+    p,
+    /^AS4201FG-N04-13S$/,
+    /1\/8 Inch Port Size, 3\/16 Inch Tube Size/,
+    '1/2 Inch Port Size, 1/2 Inch Tube Size'
+  )
   setItem(p, /^AS1211F-M5-/, /NPT x Tube, 1\/8 Inch Valve Port Size/, 'M5 x Tube')
   setItem(p, /^AS1201F-U10\/32-/, /NPT x Tube/, '10-32 UNF x Tube')
-  setSpec(p, 'Connection Type', 'R (BSPT), NPT, M5 or 10-32 UNF x Tube, or Tube x Tube, by part number')
+  setSpec(
+    p,
+    'Connection Type',
+    'R (BSPT), NPT, M5 or 10-32 UNF x Tube, or Tube x Tube, by part number'
+  )
 })
 on('smc-akm-series-check-valve', (p) => setSpec(p, 'Thread Type', 'Rc, NPT or G, by part number'))
 on('smc-exhaust-port-flow-controls', (p) => {
-  for (const v of rows(p, /^ASN2-(01|N04-S)$/)) if (/145 ?psi/i.test(item(v))) setDim(p, v, 'maxPsi', 145)
+  for (const v of rows(p, /^ASN2-(01|N04-S)$/))
+    if (/145 ?psi/i.test(item(v))) setDim(p, v, 'maxPsi', 145)
 })
 
 // Safety, relief and lockout
@@ -341,10 +391,14 @@ on('dixon-standard-safety-pop-off-valves', (p) => {
 })
 
 // Solenoid valves
-on(/^(parker-b-series-(single|double)-solenoid-valves-4-way-2-position|parker-solenoid-air-control-valve-2-way-normally-closed|numatics-solenoid-air-control-valve-4-way-3-position-5-port|numatics-solenoid-air-control-valve-4-way-2-position-5-port-detented)$/, (p) => {
-  // Minimum pilot / operating pressure stored as the maximum; no maximum on the row.
-  for (const v of p.variants) if ((num(v.dimensions?.maxPsi) ?? 99) <= 35) setDim(p, v, 'maxPsi', null)
-})
+on(
+  /^(parker-b-series-(single|double)-solenoid-valves-4-way-2-position|parker-solenoid-air-control-valve-2-way-normally-closed|numatics-solenoid-air-control-valve-4-way-3-position-5-port|numatics-solenoid-air-control-valve-4-way-2-position-5-port-detented)$/,
+  (p) => {
+    // Minimum pilot / operating pressure stored as the maximum; no maximum on the row.
+    for (const v of p.variants)
+      if ((num(v.dimensions?.maxPsi) ?? 99) <= 35) setDim(p, v, 'maxPsi', null)
+  }
+)
 on(/^smc-solenoid-air-control-valve-5-way-2-position(-5-port)?$/, (p) => {
   for (const v of p.variants) {
     const mp = num(v.dimensions?.maxPsi)
@@ -354,13 +408,17 @@ on(/^smc-solenoid-air-control-valve-5-way-2-position(-5-port)?$/, (p) => {
   for (const v of rows(p, /^VFS2100-5FZ$/)) setDim(p, v, 'powerSupply', '24V DC')
   dropSpec(p, /^(Series|Actuator Type|Center Position|Return Action)$/)
 })
-on(/^smc-solenoid-air-control-valve-5-way-3-position(-5-port)?$/, (p) => dropSpec(p, 'Center Position'))
+on(/^smc-solenoid-air-control-valve-5-way-3-position(-5-port)?$/, (p) =>
+  dropSpec(p, 'Center Position')
+)
 on(/^smc-solenoid-air-control-valve-[45]-way-3-position/, (p) => {
-  for (const v of rows(p, /^SV\d300/)) setDim(p, v, 'item', item(v).replace(/\b(\d\.\d+) ?CFM\b/, 'Cv $1'))
+  for (const v of rows(p, /^SV\d300/))
+    setDim(p, v, 'item', item(v).replace(/\b(\d\.\d+) ?CFM\b/, 'Cv $1'))
 })
 on('smc-valve', (p) => {
   setItem(p, /^VP4150/, /(?:^|(?<=[^\d.]))(?:0\.)*2 MPa to 0\.9 MPa/, '0.2 MPa to 0.9 MPa')
-  for (const v of p.variants) setDim(p, v, 'item', item(v).replace(/,?\s*Driving Type Show More/g, ''))
+  for (const v of p.variants)
+    setDim(p, v, 'item', item(v).replace(/,?\s*Driving Type Show More/g, ''))
 })
 on('smc-pvq-series-proportional-valve', (p) => {
   setSpec(p, 'Seal Type', 'Soft Seal')
@@ -369,7 +427,8 @@ on('smc-pvq-series-proportional-valve', (p) => {
 on('smc-sy7000-series-manifold', (p) => {
   retitle(p, 'SMC SY7000 and SY9000 Series Manifolds')
   dropSpec(p, 'Stations')
-  for (const v of rows(p, /^SS5Y9-/)) setDim(p, v, 'item', item(v).replace(/ \d+ Inch Port Size/, ''))
+  for (const v of rows(p, /^SS5Y9-/))
+    setDim(p, v, 'item', item(v).replace(/ \d+ Inch Port Size/, ''))
 })
 on(/^smc-(ss3y1|ss3yj5|ss3yj7|ss5yj7|ss5y5)-series-manifold$/, (p) => dropSpec(p, 'Stations'))
 on('smc-vt4-series-solenoid-valve', (p) => {
@@ -388,17 +447,47 @@ on(/^smc-vacuum-pad-/, (p) => dropSpec(p, /^(Pad Material|Durometer|Temp\.?.*)$/
 
 // Rows filed on the wrong listing → the listing of their own series.
 const MOVES: { from: string; re: RegExp; to: string }[] = [
-  { from: 'wilkerson-frls-l16-series-economist-compact-lubricators', re: /^L18-/, to: 'wilkerson-l18-economist-lubricators' },
-  { from: 'wilkerson-frls-l16-series-economist-compact-lubricators', re: /^L28-/, to: 'wilkerson-l28-economist-lubricators' },
-  { from: 'wilkerson-frls-l16-series-economist-compact-lubricators', re: /^L30-/, to: 'wilkerson-l30-economist-lubricators' },
+  {
+    from: 'wilkerson-frls-l16-series-economist-compact-lubricators',
+    re: /^L18-/,
+    to: 'wilkerson-l18-economist-lubricators',
+  },
+  {
+    from: 'wilkerson-frls-l16-series-economist-compact-lubricators',
+    re: /^L28-/,
+    to: 'wilkerson-l28-economist-lubricators',
+  },
+  {
+    from: 'wilkerson-frls-l16-series-economist-compact-lubricators',
+    re: /^L30-/,
+    to: 'wilkerson-l30-economist-lubricators',
+  },
   { from: 'wilkerson-air-regulators', re: /^R30-/, to: 'wilkerson-r30-regulators' },
-  { from: 'wilkerson-filter-regulators', re: /^BB3-/, to: 'wilkerson-frls-bb3-series-miniature-filters-regulators' },
-  { from: 'wilkerson-filter-regulators', re: /^CB6-/, to: 'wilkerson-frls-cb6-series-compact-filters-regulators' },
-  { from: 'destaco-2p-series-parallel-grippers', re: /^16503P-H$/, to: 'destaco-3p-series-parallel-grippers' },
+  {
+    from: 'wilkerson-filter-regulators',
+    re: /^BB3-/,
+    to: 'wilkerson-frls-bb3-series-miniature-filters-regulators',
+  },
+  {
+    from: 'wilkerson-filter-regulators',
+    re: /^CB6-/,
+    to: 'wilkerson-frls-cb6-series-compact-filters-regulators',
+  },
+  {
+    from: 'destaco-2p-series-parallel-grippers',
+    re: /^16503P-H$/,
+    to: 'destaco-3p-series-parallel-grippers',
+  },
 ]
 
 const pressures = (p: P) =>
-  JSON.stringify(p.variants.map((v) => [v.partNumber, v.dimensions?.maxPsi ?? null, v.dimensions?.ratedPsi ?? null]))
+  JSON.stringify(
+    p.variants.map((v) => [
+      v.partNumber,
+      v.dimensions?.maxPsi ?? null,
+      v.dimensions?.ratedPsi ?? null,
+    ])
+  )
 
 function applyAll(products: Map<string, P>, scope: (p: P) => boolean) {
   const was = new Map([...products.values()].map((p) => [p.slug, pressures(p)] as const))
@@ -423,16 +512,29 @@ function applyAll(products: Map<string, P>, scope: (p: P) => boolean) {
     for (const v of moving) b.variants.push({ ...v, position: pos++ })
   }
   // Only where a pressure column changed: other lines carry a maker figure the rows do not repeat.
-  for (const p of products.values()) if (scope(p) && pressures(p) !== was.get(p.slug)) rulePressureLine(p)
+  for (const p of products.values())
+    if (scope(p) && pressures(p) !== was.get(p.slug)) rulePressureLine(p)
 }
 
 // ── database side ──────────────────────────────────────────────────────────
-async function loadDb(): Promise<{ map: Map<string, P>; ids: Map<string, string>; cats: Map<string, string> }> {
-  const cats = new Map((await db.category.findMany({ select: { id: true, slug: true } })).map((c) => [c.slug, c.id] as const))
+async function loadDb(): Promise<{
+  map: Map<string, P>
+  ids: Map<string, string>
+  cats: Map<string, string>
+}> {
+  const cats = new Map(
+    (await db.category.findMany({ select: { id: true, slug: true } })).map(
+      (c) => [c.slug, c.id] as const
+    )
+  )
   const shelfIds = SHELVES.map((s) => cats.get(s)).filter((x): x is string => !!x)
   const ps = await db.product.findMany({
     where: { status: 'active', categoryId: { in: shelfIds } },
-    include: { specs: { orderBy: { position: 'asc' } }, variants: { orderBy: { position: 'asc' } }, category: { select: { slug: true } } },
+    include: {
+      specs: { orderBy: { position: 'asc' } },
+      variants: { orderBy: { position: 'asc' } },
+      category: { select: { slug: true } },
+    },
   })
   const map = new Map<string, P>()
   const ids = new Map<string, string>()
@@ -450,13 +552,26 @@ async function loadDb(): Promise<{ map: Map<string, P>; ids: Map<string, string>
       category: p.category!.slug,
       weightKg: p.weightKg?.toString() ?? null,
       specs: p.specs.map((s) => ({ label: s.label, value: s.value, id: s.id })),
-      variants: p.variants.map((v) => ({ partNumber: v.partNumber, position: v.position, dimensions: (v.dimensions as Dims | null) ?? null, id: v.id })),
+      variants: p.variants.map((v) => ({
+        partNumber: v.partNumber,
+        position: v.position,
+        dimensions: (v.dimensions as Dims | null) ?? null,
+        id: v.id,
+      })),
     })
   }
   return { map, ids, cats }
 }
 
-const PRODUCT_FIELDS = ['title', 'seoTitle', 'focusKeyword', 'descriptionShort', 'descriptionLong', 'seoDescription', 'hsCode'] as const
+const PRODUCT_FIELDS = [
+  'title',
+  'seoTitle',
+  'focusKeyword',
+  'descriptionShort',
+  'descriptionLong',
+  'seoDescription',
+  'hsCode',
+] as const
 
 async function main() {
   const write = process.argv.includes('--write')
@@ -466,27 +581,49 @@ async function main() {
   const before = new Map([...map].map(([k, v]) => [k, JSON.parse(JSON.stringify(v)) as P]))
   applyAll(map, () => true)
 
-  const ops: { slug: string; what: string[]; run: (tx: Prisma.TransactionClient) => Promise<void> }[] = []
+  const ops: {
+    slug: string
+    what: string[]
+    run: (tx: Prisma.TransactionClient) => Promise<void>
+  }[] = []
   const owner = new Map<string, string>() // partNumber → slug after the edit
   for (const p of map.values()) for (const v of p.variants) owner.set(v.partNumber, p.slug)
   for (const [slug, p] of map) {
     const b = before.get(slug)!
     const what: string[] = []
     const data: Prisma.ProductUpdateInput = {}
-    for (const f of PRODUCT_FIELDS) if (p[f] !== b[f]) { (data as Record<string, unknown>)[f] = p[f]; what.push(f) }
-    if (p.category !== b.category) { data.category = { connect: { id: cats.get(p.category)! } }; what.push(`category→${p.category}`) }
-    if ((p.weightKg ?? null) !== (b.weightKg ?? null)) { data.weightKg = p.weightKg === null ? null : new Prisma.Decimal(String(p.weightKg)); what.push('weightKg') }
+    for (const f of PRODUCT_FIELDS)
+      if (p[f] !== b[f]) {
+        ;(data as Record<string, unknown>)[f] = p[f]
+        what.push(f)
+      }
+    if (p.category !== b.category) {
+      data.category = { connect: { id: cats.get(p.category)! } }
+      what.push(`category→${p.category}`)
+    }
+    if ((p.weightKg ?? null) !== (b.weightKg ?? null)) {
+      data.weightKg = p.weightKg === null ? null : new Prisma.Decimal(String(p.weightKg))
+      what.push('weightKg')
+    }
     const specDrops = b.specs.filter((s) => !p.specs.some((x) => x.id === s.id))
     const specEdits = p.specs.filter((s) => b.specs.find((x) => x.id === s.id)?.value !== s.value)
-    if (specDrops.length) what.push(`-${specDrops.length} specs (${specDrops.map((s) => s.label).join(', ')})`)
-    if (specEdits.length) what.push(`~${specEdits.length} specs (${specEdits.map((s) => s.label).join(', ')})`)
+    if (specDrops.length)
+      what.push(`-${specDrops.length} specs (${specDrops.map((s) => s.label).join(', ')})`)
+    if (specEdits.length)
+      what.push(`~${specEdits.length} specs (${specEdits.map((s) => s.label).join(', ')})`)
     const bv = new Map(b.variants.map((v) => [v.partNumber, v]))
-    const dimEdits = p.variants.filter((v) => bv.has(v.partNumber) && JSON.stringify(bv.get(v.partNumber)!.dimensions) !== JSON.stringify(v.dimensions))
+    const dimEdits = p.variants.filter(
+      (v) =>
+        bv.has(v.partNumber) &&
+        JSON.stringify(bv.get(v.partNumber)!.dimensions) !== JSON.stringify(v.dimensions)
+    )
     const movedIn = p.variants.filter((v) => !bv.has(v.partNumber))
     const gone = b.variants.filter((v) => !owner.has(v.partNumber))
     if (dimEdits.length) what.push(`${dimEdits.length} rows edited`)
-    if (movedIn.length) what.push(`${movedIn.length} rows moved in (${movedIn.map((v) => v.partNumber).join(', ')})`)
-    if (gone.length) what.push(`${gone.length} rows deleted (${gone.map((v) => v.partNumber).join(', ')})`)
+    if (movedIn.length)
+      what.push(`${movedIn.length} rows moved in (${movedIn.map((v) => v.partNumber).join(', ')})`)
+    if (gone.length)
+      what.push(`${gone.length} rows deleted (${gone.map((v) => v.partNumber).join(', ')})`)
     if (!what.length) continue
     const id = ids.get(slug)!
     ops.push({
@@ -494,11 +631,30 @@ async function main() {
       what,
       run: async (tx) => {
         if (Object.keys(data).length) await tx.product.update({ where: { id }, data })
-        if (specDrops.length) await tx.productSpec.deleteMany({ where: { id: { in: specDrops.map((s) => s.id as string) } } })
-        for (const s of specEdits) await tx.productSpec.update({ where: { id: s.id as string }, data: { value: s.value } })
-        for (const v of dimEdits) await tx.productVariant.update({ where: { id: v.id as string }, data: { dimensions: (v.dimensions ?? Prisma.JsonNull) as Prisma.InputJsonValue } })
-        for (const v of movedIn) await tx.productVariant.update({ where: { id: v.id as string }, data: { productId: id, position: v.position, dimensions: (v.dimensions ?? Prisma.JsonNull) as Prisma.InputJsonValue } })
-        if (gone.length) await tx.productVariant.deleteMany({ where: { id: { in: gone.map((v) => v.id as string) } } })
+        if (specDrops.length)
+          await tx.productSpec.deleteMany({
+            where: { id: { in: specDrops.map((s) => s.id as string) } },
+          })
+        for (const s of specEdits)
+          await tx.productSpec.update({ where: { id: s.id as string }, data: { value: s.value } })
+        for (const v of dimEdits)
+          await tx.productVariant.update({
+            where: { id: v.id as string },
+            data: { dimensions: (v.dimensions ?? Prisma.JsonNull) as Prisma.InputJsonValue },
+          })
+        for (const v of movedIn)
+          await tx.productVariant.update({
+            where: { id: v.id as string },
+            data: {
+              productId: id,
+              position: v.position,
+              dimensions: (v.dimensions ?? Prisma.JsonNull) as Prisma.InputJsonValue,
+            },
+          })
+        if (gone.length)
+          await tx.productVariant.deleteMany({
+            where: { id: { in: gone.map((v) => v.id as string) } },
+          })
       },
     })
   }
@@ -540,7 +696,9 @@ function spliceProducts(text: string, products: P[]): string {
     let end = at
     while (!/^  \},?$/.test(lines[end]!)) end++
     const comma = lines[end]!.endsWith(',') ? ',' : ''
-    const block = JSON.stringify(p, null, 1).split('\n').map((l) => `  ${l}`)
+    const block = JSON.stringify(p, null, 1)
+      .split('\n')
+      .map((l) => `  ${l}`)
     block[block.length - 1] += comma
     lines.splice(start, end - start + 1, ...block)
   }

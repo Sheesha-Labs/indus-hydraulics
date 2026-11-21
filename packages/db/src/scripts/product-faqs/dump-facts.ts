@@ -98,7 +98,7 @@ async function main() {
            from gsc_metric_daily
           where query <> '' and url like any($1::text[])
           group by 1, 2 order by 3 desc`,
-        urls,
+        urls
       )
     : []
 
@@ -152,8 +152,17 @@ async function main() {
         weightKg: p.weightKg?.toString() ?? null,
         leadTimeDays: p.leadTimeDays,
         warrantyMonths: p.warrantyMonths,
-        availability: { kind: availability.kind, label: availability.label, note: availability.deliveryNote },
-        specs: p.specs.map((s) => ({ group: s.group, label: s.label, value: s.value, unit: s.unit })),
+        availability: {
+          kind: availability.kind,
+          label: availability.label,
+          note: availability.deliveryNote,
+        },
+        specs: p.specs.map((s) => ({
+          group: s.group,
+          label: s.label,
+          value: s.value,
+          unit: s.unit,
+        })),
         variants: p.variants.map((v) => ({
           partNumber: v.partNumber,
           hoseInch: v.hoseInch,
@@ -165,7 +174,9 @@ async function main() {
           pressureBar: v.pressureBar,
           weightG: v.weightG,
           dimensions: v.dimensions,
-          competitor: v.competitorBrand ? `${v.competitorBrand} ${v.competitorMpn ?? ''}`.trim() : null,
+          competitor: v.competitorBrand
+            ? `${v.competitorBrand} ${v.competitorMpn ?? ''}`.trim()
+            : null,
         })),
         crossReferences: p.crossReferences.map((x) => ({
           brand: x.competitorBrand,
@@ -179,7 +190,11 @@ async function main() {
         existingFaqs: p.faqs.map((f) => ({ q: f.question, a: f.answer })),
         searchQueries: gsc
           .filter((g) => g.url.endsWith(`/p/${p.slug}`))
-          .map((g) => ({ query: g.query, impressions: g.imp, position: Math.round(g.pos * 10) / 10 })),
+          .map((g) => ({
+            query: g.query,
+            impressions: g.imp,
+            position: Math.round(g.pos * 10) / 10,
+          })),
       }
     }),
   }

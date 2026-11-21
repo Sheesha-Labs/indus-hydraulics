@@ -23,7 +23,7 @@ export default function ContentScoreBadge({ score, compact = false }: ContentSco
   if (compact) {
     return (
       <span
-        className={`inline-flex items-center justify-center min-w-[36px] h-5 px-1.5 tabular-nums text-[11px] font-medium ${BAND_CLASSES[band]}`}
+        className={`inline-flex h-5 min-w-[36px] items-center justify-center px-1.5 text-[11px] font-medium tabular-nums ${BAND_CLASSES[band]}`}
         title={`Content depth: ${BAND_LABELS[band]}`}
       >
         {score}
@@ -32,7 +32,7 @@ export default function ContentScoreBadge({ score, compact = false }: ContentSco
   }
   return (
     <span
-      className={`inline-flex items-center gap-2 px-2.5 py-1 tabular-nums text-[11px] font-medium ${BAND_CLASSES[band]}`}
+      className={`inline-flex items-center gap-2 px-2.5 py-1 text-[11px] font-medium tabular-nums ${BAND_CLASSES[band]}`}
     >
       <span>{score}</span>
       <span className="opacity-80">·</span>

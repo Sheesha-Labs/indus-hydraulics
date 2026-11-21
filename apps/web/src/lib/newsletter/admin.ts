@@ -3,7 +3,14 @@ import { db, Prisma } from '@indus/db'
 import { renderNewsletterConfirmation, sendEmailBatch, type SendEmailInput } from '@indus/email'
 import { BASE_URL } from '../seo'
 import { newsletterConfirmUrl } from './links'
-import { LIST_IMPORT_MAX, PAIR_MAPPING, contactsFromRows, isValidListEmail, normaliseListEmail, toCsv } from './lists'
+import {
+  LIST_IMPORT_MAX,
+  PAIR_MAPPING,
+  contactsFromRows,
+  isValidListEmail,
+  normaliseListEmail,
+  toCsv,
+} from './lists'
 import { newsletterBranding, newsletterSender } from './service'
 import { generateNewsletterToken, hashNewsletterToken, newsletterEmailHash } from './tokens'
 
@@ -31,22 +38,32 @@ export type SubscriberFilters = {
 const DAY = /^\d{4}-\d{2}-\d{2}$/
 
 /** Filters → a Prisma where. Anything malformed is ignored, not trusted. */
-export function subscriberWhere(f: SubscriberFilters, opts: { withStatus?: boolean } = {}): Prisma.NewsletterSubscriberWhereInput {
+export function subscriberWhere(
+  f: SubscriberFilters,
+  opts: { withStatus?: boolean } = {}
+): Prisma.NewsletterSubscriberWhereInput {
   const where: Prisma.NewsletterSubscriberWhereInput = {}
-  if (opts.withStatus !== false && f.status && (SUBSCRIBER_STATUSES as readonly string[]).includes(f.status)) {
+  if (
+    opts.withStatus !== false &&
+    f.status &&
+    (SUBSCRIBER_STATUSES as readonly string[]).includes(f.status)
+  ) {
     where.status = f.status
   }
   const q = f.q?.trim()
   if (q) where.email = { contains: q.toLowerCase(), mode: 'insensitive' }
   const createdAt: Prisma.DateTimeFilter = {}
   if (f.from && DAY.test(f.from)) createdAt.gte = new Date(`${f.from}T00:00:00.000Z`)
-  if (f.to && DAY.test(f.to)) createdAt.lt = new Date(new Date(`${f.to}T00:00:00.000Z`).getTime() + 86_400_000)
+  if (f.to && DAY.test(f.to))
+    createdAt.lt = new Date(new Date(`${f.to}T00:00:00.000Z`).getTime() + 86_400_000)
   if (createdAt.gte || createdAt.lt) where.createdAt = createdAt
   return where
 }
 
 /** Counts per status under the other filters, for the tabs. */
-export async function subscriberCounts(f: SubscriberFilters): Promise<Record<SubscriberStatus | 'all', number>> {
+export async function subscriberCounts(
+  f: SubscriberFilters
+): Promise<Record<SubscriberStatus | 'all', number>> {
   const groups = await db.newsletterSubscriber.groupBy({
     by: ['status'],
     where: subscriberWhere(f, { withStatus: false }),
@@ -63,7 +80,9 @@ export async function subscriberCounts(f: SubscriberFilters): Promise<Record<Sub
 const EXPORT_PAGE = 2_000
 
 /** The filtered subscribers as CSV. Paged reads, so a big list never loads in one query. */
-export async function exportSubscribersCsv(f: SubscriberFilters): Promise<{ csv: string; rows: number }> {
+export async function exportSubscribersCsv(
+  f: SubscriberFilters
+): Promise<{ csv: string; rows: number }> {
   const where = subscriberWhere(f)
   const rows: string[][] = []
   let cursor: string | undefined
@@ -73,7 +92,16 @@ export async function exportSubscribersCsv(f: SubscriberFilters): Promise<{ csv:
       orderBy: { id: 'asc' },
       take: EXPORT_PAGE,
       ...(cursor ? { skip: 1, cursor: { id: cursor } } : {}),
-      select: { id: true, email: true, status: true, source: true, createdAt: true, confirmedAt: true, unsubscribedAt: true, consentVersion: true },
+      select: {
+        id: true,
+        email: true,
+        status: true,
+        source: true,
+        createdAt: true,
+        confirmedAt: true,
+        unsubscribedAt: true,
+        consentVersion: true,
+      },
     })
     for (const r of page) {
       rows.push([
@@ -90,7 +118,10 @@ export async function exportSubscribersCsv(f: SubscriberFilters): Promise<{ csv:
     cursor = page[page.length - 1]!.id
   }
   return {
-    csv: toCsv(['email', 'status', 'source', 'signed_up', 'confirmed', 'unsubscribed', 'consent_version'], rows),
+    csv: toCsv(
+      ['email', 'status', 'source', 'signed_up', 'confirmed', 'unsubscribed', 'consent_version'],
+      rows
+    ),
     rows: rows.length,
   }
 }
@@ -112,7 +143,10 @@ export type ResendOutcome = { sent: number; skipped: number; failed: number }
  * cooldown and any hard-suppressed address. Each gets a new one-time token;
  * the old link stops working. Sent through the batch API, one call per 100.
  */
-export async function resendConfirmations(ids: string[] | null, now = new Date()): Promise<ResendOutcome> {
+export async function resendConfirmations(
+  ids: string[] | null,
+  now = new Date()
+): Promise<ResendOutcome> {
   const cutoff = new Date(now.getTime() - RESEND_CONFIRMATION_COOLDOWN_MS)
   const due = await db.newsletterSubscriber.findMany({
     where: {
@@ -133,7 +167,7 @@ export async function resendConfirmations(ids: string[] | null, now = new Date()
         where: { emailHash: { in: hashes }, reason: { in: ['bounced', 'complained'] } },
         select: { emailHash: true },
       })
-    ).map((s) => s.emailHash),
+    ).map((s) => s.emailHash)
   )
   const targets = due.filter((d) => !blocked.has(newsletterEmailHash(d.email)))
   if (targets.length === 0) return { sent: 0, skipped: requested, failed: 0 }
@@ -155,7 +189,11 @@ export async function resendConfirmations(ids: string[] | null, now = new Date()
       to: [t.email],
       ...sender,
       ...(replyTo ? { replyTo } : {}),
-      ...renderNewsletterConfirmation({ confirmUrl: newsletterConfirmUrl(BASE_URL, token), validityWindow: '14 days', branding }),
+      ...renderNewsletterConfirmation({
+        confirmUrl: newsletterConfirmUrl(BASE_URL, token),
+        validityWindow: '14 days',
+        branding,
+      }),
     })
   }
 
@@ -163,7 +201,9 @@ export async function resendConfirmations(ids: string[] | null, now = new Date()
   let failed = 0
   for (let i = 0; i < inputs.length; i += 100) {
     const chunk = inputs.slice(i, i + 100)
-    const result = await sendEmailBatch(chunk, { idempotencyKey: `newsletter-resend-${now.getTime()}-${i}` })
+    const result = await sendEmailBatch(chunk, {
+      idempotencyKey: `newsletter-resend-${now.getTime()}-${i}`,
+    })
     if (result.ok) sent += chunk.length
     else {
       failed += chunk.length
@@ -184,11 +224,21 @@ export async function unsubscribeSubscriber(id: string, now = new Date()): Promi
 
 // ── Lists ──────────────────────────────────────────────────────────────
 
-export type ListSummary = { id: string; name: string; description: string; active: number; total: number; updatedAt: Date }
+export type ListSummary = {
+  id: string
+  name: string
+  description: string
+  active: number
+  total: number
+  updatedAt: Date
+}
 
 export async function listSummaries(): Promise<ListSummary[]> {
   const [lists, counts] = await Promise.all([
-    db.newsletterList.findMany({ orderBy: { name: 'asc' }, select: { id: true, name: true, description: true, updatedAt: true } }),
+    db.newsletterList.findMany({
+      orderBy: { name: 'asc' },
+      select: { id: true, name: true, description: true, updatedAt: true },
+    }),
     db.newsletterListContact.groupBy({ by: ['listId', 'status'], _count: { _all: true } }),
   ])
   return lists.map((l) => {
@@ -207,16 +257,26 @@ export type AddContactOutcome = 'added' | 'already_on_list' | 'suppressed' | 'in
 export async function addContact(
   listId: string,
   input: { email: string; name: string },
-  staffId: string | null,
+  staffId: string | null
 ): Promise<AddContactOutcome> {
   const email = normaliseListEmail(input.email)
   if (!isValidListEmail(email)) return 'invalid'
   const list = await db.newsletterList.findUnique({ where: { id: listId }, select: { id: true } })
   if (!list) return 'no_list'
-  const blocked = await db.newsletterSuppression.findUnique({ where: { emailHash: newsletterEmailHash(email) } })
+  const blocked = await db.newsletterSuppression.findUnique({
+    where: { emailHash: newsletterEmailHash(email) },
+  })
   if (blocked) return 'suppressed'
   const r = await db.newsletterListContact.createMany({
-    data: [{ listId, email, name: input.name.replace(/\s+/g, ' ').trim().slice(0, 120), source: 'manual', addedById: staffId }],
+    data: [
+      {
+        listId,
+        email,
+        name: input.name.replace(/\s+/g, ' ').trim().slice(0, 120),
+        source: 'manual',
+        addedById: staffId,
+      },
+    ],
     skipDuplicates: true,
   })
   if (r.count === 0) return 'already_on_list'
@@ -242,8 +302,7 @@ export type ImportReport = {
 }
 
 export type ImportOutcome =
-  | { status: 'ok'; importId: string; report: ImportReport }
-  | { status: 'error'; message: string }
+  { status: 'ok'; importId: string; report: ImportReport } | { status: 'error'; message: string }
 
 const SUPPRESSION_LOOKUP = 1_000
 const INSERT_CHUNK = 1_000
@@ -268,21 +327,35 @@ export async function importContacts(input: {
   staffId: string | null
 }): Promise<ImportOutcome> {
   if (!input.consent) {
-    return { status: 'error', message: 'Confirm that everyone on the list agreed to hear from Indus before importing it.' }
+    return {
+      status: 'error',
+      message: 'Confirm that everyone on the list agreed to hear from Indus before importing it.',
+    }
   }
   if (
     !Array.isArray(input.pairs) ||
-    !input.pairs.every((p) => Array.isArray(p) && p.length === 2 && p.every((c) => typeof c === 'string' && c.length <= 1_000))
+    !input.pairs.every(
+      (p) =>
+        Array.isArray(p) &&
+        p.length === 2 &&
+        p.every((c) => typeof c === 'string' && c.length <= 1_000)
+    )
   ) {
     return { status: 'error', message: 'The upload could not be read. Choose the file again.' }
   }
   const pairs = input.pairs as [string, string][]
   if (pairs.length === 0) return { status: 'error', message: 'The file has no rows.' }
   if (pairs.length > LIST_IMPORT_MAX * 2) {
-    return { status: 'error', message: `Keep a file under ${LIST_IMPORT_MAX.toLocaleString('en-US')} rows — split it in two.` }
+    return {
+      status: 'error',
+      message: `Keep a file under ${LIST_IMPORT_MAX.toLocaleString('en-US')} rows — split it in two.`,
+    }
   }
 
-  const list = await db.newsletterList.findUnique({ where: { id: input.listId }, select: { id: true } })
+  const list = await db.newsletterList.findUnique({
+    where: { id: input.listId },
+    select: { id: true },
+  })
   if (!list) return { status: 'error', message: 'That list no longer exists.' }
 
   const parsed = contactsFromRows(pairs, PAIR_MAPPING)
@@ -305,7 +378,13 @@ export async function importContacts(input: {
   const { importId, added } = await db.$transaction(
     async (tx) => {
       const imp = await tx.newsletterListImport.create({
-        data: { listId: input.listId, fileName, consentText: LIST_IMPORT_CONSENT, importedById: input.staffId, rows: pairs.length },
+        data: {
+          listId: input.listId,
+          fileName,
+          consentText: LIST_IMPORT_CONSENT,
+          importedById: input.staffId,
+          rows: pairs.length,
+        },
         select: { id: true },
       })
       let n = 0
@@ -325,7 +404,7 @@ export async function importContacts(input: {
       }
       return { importId: imp.id, added: n }
     },
-    { timeout: 60_000 },
+    { timeout: 60_000 }
   )
 
   const report: ImportReport = {
@@ -346,21 +425,30 @@ export async function importContacts(input: {
 
 /** One report line, the way the import screen and the history table say it. */
 export function describeImport(r: ImportReport): string {
-  const plural = (n: number, one: string, many: string) => `${n.toLocaleString('en-US')} ${n === 1 ? one : many}`
+  const plural = (n: number, one: string, many: string) =>
+    `${n.toLocaleString('en-US')} ${n === 1 ? one : many}`
   return [
     plural(r.added, 'added', 'added'),
     r.alreadyOnList ? `${r.alreadyOnList.toLocaleString('en-US')} already on the list` : '',
-    r.suppressed ? `${plural(r.suppressed, 'left out', 'left out')} — unsubscribed or bounced before` : '',
+    r.suppressed
+      ? `${plural(r.suppressed, 'left out', 'left out')} — unsubscribed or bounced before`
+      : '',
     r.invalid ? plural(r.invalid, "row wasn't an address", "rows weren't addresses") : '',
     r.duplicates ? plural(r.duplicates, 'duplicate', 'duplicates') : '',
-    r.truncated ? `${r.truncated.toLocaleString('en-US')} past the ${LIST_IMPORT_MAX.toLocaleString('en-US')}-row limit` : '',
+    r.truncated
+      ? `${r.truncated.toLocaleString('en-US')} past the ${LIST_IMPORT_MAX.toLocaleString('en-US')}-row limit`
+      : '',
   ]
     .filter(Boolean)
     .join(', ')
 }
 
 /** Staff unsubscribing a list contact: suppresses the address everywhere (trigger). */
-export async function unsubscribeContact(listId: string, contactId: string, now = new Date()): Promise<boolean> {
+export async function unsubscribeContact(
+  listId: string,
+  contactId: string,
+  now = new Date()
+): Promise<boolean> {
   const r = await db.newsletterListContact.updateMany({
     where: { id: contactId, listId, status: 'active' },
     data: { status: 'unsubscribed', unsubscribedAt: now },
@@ -375,7 +463,9 @@ export async function removeContact(listId: string, contactId: string): Promise<
 }
 
 /** A list as CSV. */
-export async function exportListCsv(listId: string): Promise<{ csv: string; rows: number; name: string } | null> {
+export async function exportListCsv(
+  listId: string
+): Promise<{ csv: string; rows: number; name: string } | null> {
   const list = await db.newsletterList.findUnique({ where: { id: listId }, select: { name: true } })
   if (!list) return null
   const rows: string[][] = []
@@ -386,27 +476,52 @@ export async function exportListCsv(listId: string): Promise<{ csv: string; rows
       orderBy: { id: 'asc' },
       take: EXPORT_PAGE,
       ...(cursor ? { skip: 1, cursor: { id: cursor } } : {}),
-      select: { id: true, email: true, name: true, status: true, source: true, createdAt: true, unsubscribedAt: true },
+      select: {
+        id: true,
+        email: true,
+        name: true,
+        status: true,
+        source: true,
+        createdAt: true,
+        unsubscribedAt: true,
+      },
     })
     for (const r of page) {
-      rows.push([r.email, r.name, r.status, r.source, r.createdAt.toISOString(), r.unsubscribedAt?.toISOString() ?? ''])
+      rows.push([
+        r.email,
+        r.name,
+        r.status,
+        r.source,
+        r.createdAt.toISOString(),
+        r.unsubscribedAt?.toISOString() ?? '',
+      ])
     }
     if (page.length < EXPORT_PAGE) break
     cursor = page[page.length - 1]!.id
   }
-  return { csv: toCsv(['email', 'name', 'status', 'source', 'added', 'unsubscribed'], rows), rows: rows.length, name: list.name }
+  return {
+    csv: toCsv(['email', 'name', 'status', 'source', 'added', 'unsubscribed'], rows),
+    rows: rows.length,
+    name: list.name,
+  }
 }
 
 /** A file name for a download: the slug of a title plus today's date. */
 export function exportFileName(title: string, now = new Date()): string {
-  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'export'
+  const slug =
+    title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '') || 'export'
   return `${slug}-${now.toISOString().slice(0, 10)}.csv`
 }
 
 // ── Suppressions ───────────────────────────────────────────────────────
 
 /** Whether one address is suppressed, and why — without storing or logging it. */
-export async function suppressionFor(email: string): Promise<{ reason: string; createdAt: Date } | null> {
+export async function suppressionFor(
+  email: string
+): Promise<{ reason: string; createdAt: Date } | null> {
   const e = normaliseListEmail(email)
   if (!e) return null
   return db.newsletterSuppression.findUnique({

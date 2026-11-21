@@ -45,7 +45,7 @@ async function loadPost(id: string) {
 
 export async function setBlogPostArchived(
   id: string,
-  archived: boolean,
+  archived: boolean
 ): Promise<Result<{ message: string }>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
@@ -62,9 +62,7 @@ export async function setBlogPostArchived(
 
     revalidateBlog(post.slug)
     return ok({
-      message: archived
-        ? `"${post.title}" archived.`
-        : `"${post.title}" moved back to draft.`,
+      message: archived ? `"${post.title}" archived.` : `"${post.title}" moved back to draft.`,
     })
   } catch (err) {
     return failFromError(err)
@@ -119,9 +117,7 @@ export async function restoreBlogPost(id: string): Promise<Result<{ message: str
  * only for the roles trusted with catalogue deletes — a `cms_editor` can trash
  * a post but cannot destroy it.
  */
-export async function deleteBlogPostPermanently(
-  id: string,
-): Promise<Result<{ message: string }>> {
+export async function deleteBlogPostPermanently(id: string): Promise<Result<{ message: string }>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_DELETE)
     const post = await loadPost(id)

@@ -12,9 +12,8 @@ vi.mock('@indus/db', () => ({
   },
 }))
 
-const { findRedirect, recordRedirectHit, normalisePath, __resetRedirectCache } = await import(
-  './redirects'
-)
+const { findRedirect, recordRedirectHit, normalisePath, __resetRedirectCache } =
+  await import('./redirects')
 
 const ROW = { id: 'r1', fromPath: '/p/old', toPath: '/p/new', statusCode: 301 }
 

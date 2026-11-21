@@ -87,25 +87,29 @@ export default async function BrandReplacementsPage({ params }: Props) {
   })
 
   return (
-    <div className="mx-auto max-w-[1100px] px-5 sm:px-8 py-8 pb-16">
+    <div className="mx-auto max-w-[1100px] px-5 py-8 pb-16 sm:px-8">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
 
-      <nav className="py-2 font-mono text-[12px] text-ih-muted flex gap-2 items-center mb-6">
-        <Link href={`/`} className="hover:text-ih-ink">Home</Link>
+      <nav className="text-ih-muted mb-6 flex items-center gap-2 py-2 font-mono text-[12px]">
+        <Link href={`/`} className="hover:text-ih-ink">
+          Home
+        </Link>
         <span className="opacity-40">/</span>
-        <Link href={`/replacement`} className="hover:text-ih-ink">Replacements</Link>
+        <Link href={`/replacement`} className="hover:text-ih-ink">
+          Replacements
+        </Link>
         <span className="opacity-40">/</span>
         <span className="text-ih-ink">{competitorBrand}</span>
       </nav>
 
       <header className="mb-8">
-        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+        <p className="text-ih-muted mb-2 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
           Cross-reference
         </p>
-        <h1 className="font-serif text-[clamp(28px,4vw,40px)] font-normal tracking-[-0.02em] leading-[1.1] mb-3">
+        <h1 className="mb-3 font-serif text-[clamp(28px,4vw,40px)] leading-[1.1] font-normal tracking-[-0.02em]">
           {competitorBrand} cross-reference and replacements
         </h1>
-        <p className="text-[15px] text-ih-muted max-w-[680px] leading-[1.55]">
+        <p className="text-ih-muted max-w-[680px] text-[15px] leading-[1.55]">
           <b className="text-ih-ink">{partNumberCount}</b> {competitorBrand} part number
           {partNumberCount === 1 ? '' : 's'} matched to Indus Hydraulics equivalents
           {series.length > 0 ? ' size by size' : ''}. Find the series below and open the listing:
@@ -116,31 +120,47 @@ export default async function BrandReplacementsPage({ params }: Props) {
 
       {series.length > 0 && (
         <section className="mb-10">
-          <h2 className="font-serif text-[24px] font-normal mb-4">By series</h2>
-          <div className="overflow-x-auto border border-ih-border bg-white">
+          <h2 className="mb-4 font-serif text-[24px] font-normal">By series</h2>
+          <div className="border-ih-border overflow-x-auto border bg-white">
             <table className="w-full min-w-[640px] text-[13px]">
               <thead>
-                <tr className="bg-ih-surface-2 font-mono text-[11px] uppercase tracking-[0.08em] text-ih-muted">
-                  <th scope="col" className="px-4 py-2.5 text-left font-medium">{competitorBrand} series</th>
-                  <th scope="col" className="px-4 py-2.5 text-left font-medium">Indus equivalent</th>
-                  <th scope="col" className="px-4 py-2.5 text-right font-medium">Sizes</th>
-                  <th scope="col" className="px-4 py-2.5 text-left font-medium">Match</th>
+                <tr className="bg-ih-surface-2 text-ih-muted font-mono text-[11px] tracking-[0.08em] uppercase">
+                  <th scope="col" className="px-4 py-2.5 text-left font-medium">
+                    {competitorBrand} series
+                  </th>
+                  <th scope="col" className="px-4 py-2.5 text-left font-medium">
+                    Indus equivalent
+                  </th>
+                  <th scope="col" className="px-4 py-2.5 text-right font-medium">
+                    Sizes
+                  </th>
+                  <th scope="col" className="px-4 py-2.5 text-left font-medium">
+                    Match
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {series.map((s) => (
-                  <tr key={`${s.series}|${s.product.slug}`} className="border-t border-ih-border">
-                    <th scope="row" className="px-4 py-2.5 text-left font-mono font-medium text-ih-ink whitespace-nowrap">
+                  <tr key={`${s.series}|${s.product.slug}`} className="border-ih-border border-t">
+                    <th
+                      scope="row"
+                      className="text-ih-ink px-4 py-2.5 text-left font-mono font-medium whitespace-nowrap"
+                    >
                       {s.series}
                     </th>
                     <td className="px-4 py-2.5">
-                      <Link href={`/p/${s.product.slug}`} className="text-ih-ink hover:text-ih-accent">
+                      <Link
+                        href={`/p/${s.product.slug}`}
+                        className="text-ih-ink hover:text-ih-accent"
+                      >
                         {s.product.title}
                       </Link>
-                      <span className="ml-2 font-mono text-[11px] text-ih-muted">{s.product.sku}</span>
+                      <span className="text-ih-muted ml-2 font-mono text-[11px]">
+                        {s.product.sku}
+                      </span>
                     </td>
-                    <td className="px-4 py-2.5 text-right font-mono text-ih-ink-2">{s.sizes}</td>
-                    <td className="px-4 py-2.5 font-mono text-[11px] text-ih-muted whitespace-nowrap">
+                    <td className="text-ih-ink-2 px-4 py-2.5 text-right font-mono">{s.sizes}</td>
+                    <td className="text-ih-muted px-4 py-2.5 font-mono text-[11px] whitespace-nowrap">
                       {COMPATIBILITY_LABEL[s.compatibility]}
                     </td>
                   </tr>
@@ -148,37 +168,41 @@ export default async function BrandReplacementsPage({ params }: Props) {
               </tbody>
             </table>
           </div>
-          <p className="mt-3 text-[12.5px] leading-[1.55] text-ih-muted">
-            Series are {competitorBrand} part numbers with the size removed; every listing&rsquo;s size table
-            gives the exact {competitorBrand} number for each Indus part number.
+          <p className="text-ih-muted mt-3 text-[12.5px] leading-[1.55]">
+            Series are {competitorBrand} part numbers with the size removed; every listing&rsquo;s
+            size table gives the exact {competitorBrand} number for each Indus part number.
             {intermix &&
               ' Tube-fitting equivalents do the same job in the same size, but nuts, ferrules and bodies from two makers must never be mixed in one joint.'}{' '}
-            Indus Hydraulics is not affiliated with {competitorBrand}; its part numbers are shown for
-            cross-reference only.
+            Indus Hydraulics is not affiliated with {competitorBrand}; its part numbers are shown
+            for cross-reference only.
           </p>
         </section>
       )}
 
       {parts.length > 0 && (
         <section className="mb-10">
-          {series.length > 0 && <h2 className="font-serif text-[24px] font-normal mb-4">By part number</h2>}
-          <div className="border border-ih-border bg-white">
+          {series.length > 0 && (
+            <h2 className="mb-4 font-serif text-[24px] font-normal">By part number</h2>
+          )}
+          <div className="border-ih-border border bg-white">
             {parts.map((it, i) => (
               <Link
                 key={`${it.brandSlug}/${it.mpnSlug}`}
                 href={`/replacement/${it.brandSlug}/${it.mpnSlug}`}
-                className={`grid grid-cols-[1fr_auto_120px] gap-4 px-4 py-3 items-center hover:bg-ih-surface-2 transition-colors ${
-                  i > 0 ? 'border-t border-ih-border' : ''
+                className={`hover:bg-ih-surface-2 grid grid-cols-[1fr_auto_120px] items-center gap-4 px-4 py-3 transition-colors ${
+                  i > 0 ? 'border-ih-border border-t' : ''
                 }`}
               >
                 <div>
-                  <div className="font-mono text-[11px] text-ih-muted tracking-[0.04em]">{competitorBrand}</div>
-                  <div className="text-[14px] font-medium text-ih-ink">{it.competitorMpn}</div>
+                  <div className="text-ih-muted font-mono text-[11px] tracking-[0.04em]">
+                    {competitorBrand}
+                  </div>
+                  <div className="text-ih-ink text-[14px] font-medium">{it.competitorMpn}</div>
                 </div>
-                <span className="font-mono text-[11px] text-ih-muted">
+                <span className="text-ih-muted font-mono text-[11px]">
                   {it.matchCount} match{it.matchCount === 1 ? '' : 'es'}
                 </span>
-                <span className="font-mono text-[11px] text-ih-accent text-right">View →</span>
+                <span className="text-ih-accent text-right font-mono text-[11px]">View →</span>
               </Link>
             ))}
           </div>
@@ -191,7 +215,10 @@ export default async function BrandReplacementsPage({ params }: Props) {
           variant="compact"
           heading={`Don't see your ${competitorBrand} part?`}
           body={`We carry over a thousand SKUs that aren't all in the cross-reference table yet. Send us the part number and our applications team will confirm interchangeability and lead time within one business day.`}
-          whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${competitorBrand} part not in cross-reference`)}
+          whatsappUrl={buildWhatsappHref(
+            settings.contactPhone,
+            `Enquiry: ${competitorBrand} part not in cross-reference`
+          )}
           emailUrl={enquiryMailto({ subject: `${competitorBrand} replacement enquiry` })}
           phone={settings.contactPhone}
         />

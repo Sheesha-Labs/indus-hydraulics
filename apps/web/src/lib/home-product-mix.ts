@@ -47,7 +47,7 @@ export function pickProductMix(
   candidates: readonly MixCandidate[],
   categories: readonly MixCategory[],
   count: number,
-  random: () => number = Math.random,
+  random: () => number = Math.random
 ): MixPick[] {
   const byId = new Map(categories.map((c) => [c.id, c]))
   const byRoot = new Map<string, string[]>()

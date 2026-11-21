@@ -54,9 +54,7 @@ export const MARKETS_PAGE: MasterPageDef = {
       key: 'manifest',
       label: 'Manifest strip',
       description: 'The navy band of six facts under the hero.',
-      fields: [
-        pairList('items', 'Facts', 'fact', 8),
-      ],
+      fields: [pairList('items', 'Facts', 'fact', 8)],
       defaults: {
         items: [
           { label: 'Origin', value: 'Jebel Ali · Dubai' },

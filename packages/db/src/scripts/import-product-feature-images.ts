@@ -133,7 +133,7 @@ async function main() {
   const usable = rows.filter((r) => !skip.has(r.confidence) && r.productSku)
   console.log(
     `[import] ${rows.length} CSV rows, ${usable.length} with a product, ` +
-      `${rows.length - usable.length} unmatched or superseded (skipped)`,
+      `${rows.length - usable.length} unmatched or superseded (skipped)`
   )
 
   // A handful of source files carry stray spaces the spreadsheet doesn't
@@ -159,7 +159,11 @@ async function main() {
 
     const product = await db.product.findUnique({
       where: { sku: row.productSku },
-      select: { id: true, title: true, images: { select: { media: { select: { originalFilename: true } } } } },
+      select: {
+        id: true,
+        title: true,
+        images: { select: { media: { select: { originalFilename: true } } } },
+      },
     })
     if (!product) {
       problems.push(`${row.image}: no product with sku ${row.productSku}`)
@@ -221,7 +225,7 @@ async function main() {
             data: { productId: product.id, mediaId: media.id, position: 0, alt: product.title },
           })
         },
-        { maxWait: 30_000, timeout: 30_000 },
+        { maxWait: 30_000, timeout: 30_000 }
       )
 
     try {
@@ -243,7 +247,7 @@ async function main() {
   }
 
   console.log(
-    `\n[import] done — ${created} attached, ${skipped} already present, ${problems.length} problems`,
+    `\n[import] done — ${created} attached, ${skipped} already present, ${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
   await db.$disconnect()

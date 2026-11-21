@@ -25,20 +25,29 @@ type Props = {
  * before JavaScript has loaded too.
  */
 export default function NewsletterTokenButton({ token, action, buttonLabel, ready, done }: Props) {
-  const [state, formAction, pending] = useActionState(action, { status: 'idle' } as NewsletterTokenState)
+  const [state, formAction, pending] = useActionState(action, {
+    status: 'idle',
+  } as NewsletterTokenState)
 
-  if (state.status === 'done') return <NewsletterNotice title={done.title}>{done.body}</NewsletterNotice>
+  if (state.status === 'done')
+    return <NewsletterNotice title={done.title}>{done.body}</NewsletterNotice>
   if (state.status === 'expired') {
     return (
       <NewsletterNotice title="This link has expired">
-        <p>Confirmation links work for 14 days. Sign up again from the form at the bottom of the home page and we will send a fresh one.</p>
+        <p>
+          Confirmation links work for 14 days. Sign up again from the form at the bottom of the home
+          page and we will send a fresh one.
+        </p>
       </NewsletterNotice>
     )
   }
   if (state.status === 'not_found') {
     return (
       <NewsletterNotice title="This link is no longer valid">
-        <p>It may already have been used. If you are still getting emails you did not ask for, write to sales@indushydraulics.me.</p>
+        <p>
+          It may already have been used. If you are still getting emails you did not ask for, write
+          to sales@indushydraulics.me.
+        </p>
       </NewsletterNotice>
     )
   }

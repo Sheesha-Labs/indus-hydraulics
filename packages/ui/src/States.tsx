@@ -35,9 +35,16 @@ export interface EmptyStateProps {
 
 export function EmptyState({ condition, message, action, className }: EmptyStateProps) {
   return (
-    <div className={cn('flex flex-col items-center justify-center gap-3 px-6 py-16 text-center', className)}>
-      <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{condition}</p>
-      <p className="max-w-[46ch] text-[15px] leading-relaxed text-ih-ink-2">{message}</p>
+    <div
+      className={cn(
+        'flex flex-col items-center justify-center gap-3 px-6 py-16 text-center',
+        className
+      )}
+    >
+      <p className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+        {condition}
+      </p>
+      <p className="text-ih-ink-2 max-w-[46ch] text-[15px] leading-relaxed">{message}</p>
       {action ? <div className="mt-1">{action}</div> : null}
     </div>
   )
@@ -73,13 +80,19 @@ export function Skeleton({ className, radius = 'sm', ...props }: SkeletonProps) 
 }
 
 /** Product grid placeholder — eight cards at the real card size. */
-export function SkeletonProductGrid({ count = 8, className }: { count?: number; className?: string }) {
+export function SkeletonProductGrid({
+  count = 8,
+  className,
+}: {
+  count?: number
+  className?: string
+}) {
   return (
     <div className={cn('grid grid-cols-2 gap-4 lg:grid-cols-4', className)} aria-busy="true">
       {Array.from({ length: count }, (_, i) => (
-        <div key={i} className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
+        <div key={i} className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
           <Skeleton className="aspect-square rounded-none" />
-          <div className="flex flex-col gap-2 px-4 pb-4 pt-3.5">
+          <div className="flex flex-col gap-2 px-4 pt-3.5 pb-4">
             <Skeleton className="h-[10px] w-20" />
             <Skeleton className="h-3.5 w-full" />
             <Skeleton className="h-3.5 w-2/3" />
@@ -97,7 +110,7 @@ export function SkeletonTableRows({ rows = 6, columns = 4 }: { rows?: number; co
       {Array.from({ length: rows }, (_, r) => (
         <tr key={r} aria-busy="true">
           {Array.from({ length: columns }, (_, c) => (
-            <td key={c} className="border-b border-ih-border px-4 py-3.5">
+            <td key={c} className="border-ih-border border-b px-4 py-3.5">
               <Skeleton className={cn('h-3.5', c === 0 ? 'w-32' : 'w-20')} />
             </td>
           ))}
@@ -116,12 +129,25 @@ export interface InlineErrorProps {
   className?: string
 }
 
-export function InlineError({ message, onRetry, retryLabel = 'Try again', className }: InlineErrorProps) {
+export function InlineError({
+  message,
+  onRetry,
+  retryLabel = 'Try again',
+  className,
+}: InlineErrorProps) {
   return (
-    <Note tone="danger" role="alert" className={cn('flex items-center justify-between gap-4', className)}>
+    <Note
+      tone="danger"
+      role="alert"
+      className={cn('flex items-center justify-between gap-4', className)}
+    >
       <span>{message}</span>
       {onRetry ? (
-        <button type="button" onClick={onRetry} className="shrink-0 font-medium underline underline-offset-2">
+        <button
+          type="button"
+          onClick={onRetry}
+          className="shrink-0 font-medium underline underline-offset-2"
+        >
           {retryLabel}
         </button>
       ) : null}
@@ -138,7 +164,7 @@ export function InlineError({ message, onRetry, retryLabel = 'Try again', classN
 export function StaleAt({ at, className }: { at: Date | string; className?: string }) {
   const iso = typeof at === 'string' ? at : at.toISOString()
   return (
-    <time dateTime={iso} className={cn('font-mono text-[10.5px] text-ih-muted', className)}>
+    <time dateTime={iso} className={cn('text-ih-muted font-mono text-[10.5px]', className)}>
       as at {iso.slice(0, 16).replace('T', ' ')} GST
     </time>
   )
@@ -157,10 +183,10 @@ export function SkipToContent({ targetId = 'main' }: { targetId?: string }) {
       href={`#${targetId}`}
       className={cn(
         'sr-only focus:not-sr-only',
-        'focus:fixed focus:left-4 focus:top-4 focus:z-[100]',
+        'focus:fixed focus:top-4 focus:left-4 focus:z-[100]',
         'focus:inline-flex focus:h-10 focus:items-center focus:rounded-md',
-        'focus:bg-ih-accent focus:px-[18px] focus:text-[13.5px] focus:font-medium focus:text-ih-accent-fg',
-        'focus:ring-[3px] focus:ring-ih-accent-soft focus:outline-none'
+        'focus:bg-ih-accent focus:text-ih-accent-fg focus:px-[18px] focus:text-[13.5px] focus:font-medium',
+        'focus:ring-ih-accent-soft focus:ring-[3px] focus:outline-none'
       )}
     >
       Skip to content

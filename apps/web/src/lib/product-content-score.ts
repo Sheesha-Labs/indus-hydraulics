@@ -1,8 +1,4 @@
-import {
-  scoreProductContent,
-  wordCount,
-  type SeoHealthScore,
-} from '@indus/domain'
+import { scoreProductContent, wordCount, type SeoHealthScore } from '@indus/domain'
 
 /**
  * Adapter shape for the product content scorer. Accepts the loosely-

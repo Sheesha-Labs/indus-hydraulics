@@ -89,7 +89,11 @@ const navTabItemVariants = cva(
       // The active underline label takes ACCENT, not ink (LT-16a): with ink the
       // only selected signal is a 2px rule, which is invisible at a glance.
       { variant: 'underline', active: true, class: 'border-ih-accent text-ih-accent' },
-      { variant: 'underline', active: false, class: 'border-transparent text-ih-muted hover:text-ih-ink-2' },
+      {
+        variant: 'underline',
+        active: false,
+        class: 'border-transparent text-ih-muted hover:text-ih-ink-2',
+      },
       // Navy is the nav-active fill (CS-4) — chip and tray are nav, not signal.
       { variant: 'chip', active: true, class: 'bg-ih-navy text-ih-bg' },
       { variant: 'chip', active: false, class: 'text-ih-ink-2 hover:bg-ih-surface-2' },
@@ -160,7 +164,9 @@ export function NavTabs({ items, variant = 'underline', label, className }: NavT
         >
           {item.label}
           {item.count !== undefined ? (
-            <span className={navTabCountVariants({ variant, active: item.active })}>{item.count}</span>
+            <span className={navTabCountVariants({ variant, active: item.active })}>
+              {item.count}
+            </span>
           ) : null}
         </a>
       ))}

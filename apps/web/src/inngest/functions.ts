@@ -6,7 +6,14 @@ import { gscDailySync } from './gscSync'
 import { newsletterCampaignSend } from './newsletterSend'
 import { procurementResearchItem, procurementResearchStart } from './procurementResearch'
 import { db } from '@indus/db'
-import { assertTransition, resolveFromEmail, resolveReplyTo, scoreEntity, signQuoteAccessToken, type SeoEntityType } from '@indus/domain'
+import {
+  assertTransition,
+  resolveFromEmail,
+  resolveReplyTo,
+  scoreEntity,
+  signQuoteAccessToken,
+  type SeoEntityType,
+} from '@indus/domain'
 import {
   findRetryableEmailIds,
   renderQuoteExpired,
@@ -44,35 +51,40 @@ export const recomputeHealthScores = inngest.createFunction(
   async ({ step }) => {
     const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
       /\/$/,
-      '',
+      ''
     )
     const seoSetting = await step.run('load-seo-setting', () =>
-      db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
+      db.seoSetting.findFirst({ select: { ogDefaultImageId: true } })
     )
     const defaultOgPresent = !!seoSetting?.ogDefaultImageId
 
     const products = await step.run('fetch-products', () =>
       db.product.findMany({
         select: { ...SEO_SELECT, title: true, status: true },
-      }),
+      })
     )
     const categories = await step.run('fetch-categories', () =>
-      db.category.findMany({ select: { ...SEO_SELECT, name: true, isPublished: true } }),
+      db.category.findMany({ select: { ...SEO_SELECT, name: true, isPublished: true } })
     )
     const brands = await step.run('fetch-brands', () =>
-      db.brand.findMany({ select: { ...SEO_SELECT, name: true, isPublished: true } }),
+      db.brand.findMany({ select: { ...SEO_SELECT, name: true, isPublished: true } })
     )
     const industries = await step.run('fetch-industries', () =>
-      db.industry.findMany({ select: { ...SEO_SELECT, name: true, isPublished: true } }),
+      db.industry.findMany({ select: { ...SEO_SELECT, name: true, isPublished: true } })
     )
     const blogPosts = await step.run('fetch-blog-posts', () =>
-      db.blogPost.findMany({ select: { ...SEO_SELECT, title: true, isPublished: true } }),
+      db.blogPost.findMany({ select: { ...SEO_SELECT, title: true, isPublished: true } })
     )
     const cmsPages = await step.run('fetch-cms-pages', () =>
-      db.cmsPage.findMany({ select: { ...SEO_SELECT, title: true, isPublished: true } }),
+      db.cmsPage.findMany({ select: { ...SEO_SELECT, title: true, isPublished: true } })
     )
 
-    const upserts: Array<{ entityType: SeoEntityType; entityId: string; score: number; breakdown: unknown }> = []
+    const upserts: Array<{
+      entityType: SeoEntityType
+      entityId: string
+      score: number
+      breakdown: unknown
+    }> = []
     for (const p of products) {
       const r = scoreEntity({
         title: p.seoTitle ?? p.title,
@@ -84,7 +96,12 @@ export const recomputeHealthScores = inngest.createFunction(
         canonicalCorrect: !p.canonicalUrl || p.canonicalUrl === `${baseUrl}/p/${p.slug}`,
         ogComplete: !!p.ogImageMediaId || defaultOgPresent,
       })
-      upserts.push({ entityType: 'product', entityId: p.id, score: r.score, breakdown: r.breakdown })
+      upserts.push({
+        entityType: 'product',
+        entityId: p.id,
+        score: r.score,
+        breakdown: r.breakdown,
+      })
     }
     pushSimpleScores(upserts, categories, 'category', baseUrl, '/c/', defaultOgPresent)
     pushSimpleScores(upserts, brands, 'brand', baseUrl, '/brands/', defaultOgPresent)
@@ -120,7 +137,7 @@ export const recomputeHealthScores = inngest.createFunction(
     }
 
     return { scored: upserts.length }
-  },
+  }
 )
 
 type SimpleEntity = {
@@ -145,7 +162,7 @@ function pushSimpleScores(
   baseUrl: string,
   pathPrefix: string,
   defaultOgPresent: boolean,
-  hasStructuredData = true,
+  hasStructuredData = true
 ) {
   for (const e of list) {
     const r = scoreEntity({
@@ -186,17 +203,12 @@ export const quoteExpiryReminder = inngest.createFunction(
     const windowEnd = new Date(now.getTime() + REMINDER_WINDOW_DAYS * 24 * 60 * 60 * 1000)
     const dedupeFrom = new Date(now.getTime() - REMINDER_DEDUPE_HOURS * 60 * 60 * 1000)
 
-    const branding = await step.run('load-branding', () =>
-      db.storeSettings.findFirst(),
-    )
+    const branding = await step.run('load-branding', () => db.storeSettings.findFirst())
     const fromEmail = resolveFromEmail(branding?.quoteFromEmail)
     // Reply-To is the Workspace inbox — the sending domain cannot receive.
     const replyTo = resolveReplyTo(branding?.contactEmail)
     const fromName = branding?.quoteFromName ?? null
-    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(
-      /\/$/,
-      '',
-    )
+    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
 
     const expiring = await step.run('find-expiring-quotes', () =>
       db.quote.findMany({
@@ -216,7 +228,7 @@ export const quoteExpiryReminder = inngest.createFunction(
           },
         },
         orderBy: { expiresAt: 'asc' },
-      }),
+      })
     )
 
     let sent = 0
@@ -250,7 +262,7 @@ export const quoteExpiryReminder = inngest.createFunction(
             attemptedAt: { gte: dedupeFrom },
           },
           select: { id: true },
-        }),
+        })
       )
       if (recentReminder) {
         skipped++
@@ -268,7 +280,7 @@ export const quoteExpiryReminder = inngest.createFunction(
       })
       const daysLeft = Math.max(
         0,
-        Math.ceil((expiresAt.getTime() - now.getTime()) / (24 * 60 * 60 * 1000)),
+        Math.ceil((expiresAt.getTime() - now.getTime()) / (24 * 60 * 60 * 1000))
       )
 
       const email = renderQuoteExpiryReminder({
@@ -281,8 +293,7 @@ export const quoteExpiryReminder = inngest.createFunction(
         branding: {
           legalName: branding?.legalName ?? 'Indus Hydraulic Power Trading LLC',
           vatTrn: branding?.vatTrn ?? null,
-          registeredAddressLines:
-            (branding?.registeredAddressLines as string[] | null) ?? [],
+          registeredAddressLines: (branding?.registeredAddressLines as string[] | null) ?? [],
           signatureName: branding?.signatureName ?? null,
           signatureTitle: branding?.signatureTitle ?? null,
           signaturePhone: branding?.signaturePhone ?? null,
@@ -300,13 +311,13 @@ export const quoteExpiryReminder = inngest.createFunction(
           ...(fromName ? { fromName } : {}),
           replyTo,
           quoteId: quote.id,
-        }),
+        })
       )
       sent++
     }
 
     return { checked: expiring.length, sent, skipped, unaddressable }
-  },
+  }
 )
 
 /**
@@ -332,17 +343,12 @@ export const quoteAutoExpiry = inngest.createFunction(
   async ({ step }) => {
     const now = new Date()
 
-    const branding = await step.run('load-branding', () =>
-      db.storeSettings.findFirst(),
-    )
+    const branding = await step.run('load-branding', () => db.storeSettings.findFirst())
     const fromEmail = resolveFromEmail(branding?.quoteFromEmail)
     // Reply-To is the Workspace inbox — the sending domain cannot receive.
     const replyTo = resolveReplyTo(branding?.contactEmail)
     const fromName = branding?.quoteFromName ?? null
-    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(
-      /\/$/,
-      '',
-    )
+    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
 
     const expired = await step.run('find-expired-quotes', () =>
       db.quote.findMany({
@@ -367,7 +373,7 @@ export const quoteAutoExpiry = inngest.createFunction(
             },
           },
         },
-      }),
+      })
     )
 
     let transitioned = 0
@@ -396,7 +402,7 @@ export const quoteAutoExpiry = inngest.createFunction(
         db.rfq.updateMany({
           where: { id: parentRfqId, status: 'quote_sent' },
           data: { status: 'expired' },
-        }),
+        })
       )
 
       if (result.count === 0) {
@@ -420,7 +426,7 @@ export const quoteAutoExpiry = inngest.createFunction(
               expiresAt: quote.expiresAt,
             },
           },
-        }),
+        })
       )
 
       const submittedBy = parentRfq.submittedBy
@@ -433,7 +439,7 @@ export const quoteAutoExpiry = inngest.createFunction(
         db.sentEmail.findFirst({
           where: { kind: 'quote_expired', quoteId: quote.id },
           select: { id: true },
-        }),
+        })
       )
       if (recentExpired) {
         alreadyEmailed++
@@ -444,13 +450,14 @@ export const quoteAutoExpiry = inngest.createFunction(
         `${submittedBy.firstName} ${submittedBy.lastName}`.trim() || submittedBy.email
       const accessToken = signQuoteAccessToken(parentRfq.code)
       const rfqUrl = `${baseUrl}/quote/${quote.rfq.code}?token=${encodeURIComponent(accessToken)}`
-      const expiredOnDisplay = new Date(
-        quote.expiresAt as unknown as string,
-      ).toLocaleDateString('en-GB', {
-        day: 'numeric',
-        month: 'short',
-        year: 'numeric',
-      })
+      const expiredOnDisplay = new Date(quote.expiresAt as unknown as string).toLocaleDateString(
+        'en-GB',
+        {
+          day: 'numeric',
+          month: 'short',
+          year: 'numeric',
+        }
+      )
 
       const email = renderQuoteExpired({
         customerName,
@@ -461,8 +468,7 @@ export const quoteAutoExpiry = inngest.createFunction(
         branding: {
           legalName: branding?.legalName ?? 'Indus Hydraulic Power Trading LLC',
           vatTrn: branding?.vatTrn ?? null,
-          registeredAddressLines:
-            (branding?.registeredAddressLines as string[] | null) ?? [],
+          registeredAddressLines: (branding?.registeredAddressLines as string[] | null) ?? [],
           signatureName: branding?.signatureName ?? null,
           signatureTitle: branding?.signatureTitle ?? null,
           signaturePhone: branding?.signaturePhone ?? null,
@@ -480,7 +486,7 @@ export const quoteAutoExpiry = inngest.createFunction(
           ...(fromName ? { fromName } : {}),
           replyTo,
           quoteId: quote.id,
-        }),
+        })
       )
       emailed++
     }
@@ -493,7 +499,7 @@ export const quoteAutoExpiry = inngest.createFunction(
       unaddressable,
       alreadyEmailed,
     }
-  },
+  }
 )
 
 /**
@@ -538,7 +544,7 @@ export const retryFailedEmails = inngest.createFunction(
     }
 
     return { checked: ids.length, retried, succeeded, stillFailing, deadLettered, skipped }
-  },
+  }
 )
 
 export const allFunctions = [

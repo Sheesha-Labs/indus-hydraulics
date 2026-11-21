@@ -27,7 +27,7 @@ describe('image research', () => {
         ...product,
         sku: 'IH-IH-A901GG',
         brandName: 'Dixon',
-      }),
+      })
     ).toBe('A901GG')
   })
 

@@ -36,8 +36,8 @@ export default async function PrivacyPage({ params }: Props) {
 
   if (cms?.isPublished) {
     return (
-      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
+      <article className="mx-auto max-w-[820px] px-8 py-16 pb-24">
+        <h1 className="mb-2 text-[36px] font-semibold tracking-tight">{cms.title}</h1>
         <div
           className="ih-rich-text text-[15px] leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: cms.body }}

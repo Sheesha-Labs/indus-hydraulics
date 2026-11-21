@@ -111,7 +111,7 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
   },
   'lifting-rigging-equipment-uae': {
     heading: 'Where we ship lifting and rigging gear',
-    body: 'Rigging hardware is bought on its working load limit and its certificate, and both travel with the part: every shackle, hook, chain and sling ships from Dubai with the manufacturer\'s test certificate, so the receiving inspection checks a document against a stamp rather than a claim. Hardware and fittings go by air or courier in cartons; wire rope, chain, hoists and anchors are heavy enough that sea freight is usually the sensible answer.',
+    body: "Rigging hardware is bought on its working load limit and its certificate, and both travel with the part: every shackle, hook, chain and sling ships from Dubai with the manufacturer's test certificate, so the receiving inspection checks a document against a stamp rather than a claim. Hardware and fittings go by air or courier in cartons; wire rope, chain, hoists and anchors are heavy enough that sea freight is usually the sensible answer.",
     primaryRegion: 'GCC & Middle East',
     rotatingRegions: [
       'East Africa',

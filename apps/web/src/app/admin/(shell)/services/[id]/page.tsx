@@ -43,7 +43,7 @@ export default async function EditServiceCasePage({ params }: Props) {
             href={`/services/${row.slug}`}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-9 items-center gap-1.5 rounded-md px-2.5 text-[13px] text-ih-muted transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+            className="text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink inline-flex h-9 items-center gap-1.5 rounded-md px-2.5 text-[13px] transition-colors"
           >
             View on site
             <ExternalLink size={13} strokeWidth={1.8} aria-hidden="true" />

@@ -46,13 +46,14 @@ function fromB64url(s: string): Buffer {
  */
 function signingSecret(): string {
   const secret = process.env.QUOTE_TOKEN_SECRET ?? process.env.PREVIEW_TOKEN_SECRET
-  if (!secret) throw new Error('QUOTE_TOKEN_SECRET (or legacy PREVIEW_TOKEN_SECRET) env var is not set')
+  if (!secret)
+    throw new Error('QUOTE_TOKEN_SECRET (or legacy PREVIEW_TOKEN_SECRET) env var is not set')
   return secret
 }
 
 function verificationSecrets(): string[] {
   const secrets = [process.env.QUOTE_TOKEN_SECRET, process.env.PREVIEW_TOKEN_SECRET].filter(
-    (s): s is string => !!s,
+    (s): s is string => !!s
   )
   if (secrets.length === 0) {
     throw new Error('QUOTE_TOKEN_SECRET (or legacy PREVIEW_TOKEN_SECRET) env var is not set')
@@ -76,12 +77,7 @@ function signatureMatches(payload: string, sig: string): boolean {
 const TOKEN_TYPE = 'quote'
 
 export type QuoteAccessTokenReason =
-  | 'missing'
-  | 'malformed'
-  | 'bad-signature'
-  | 'expired'
-  | 'rfq-mismatch'
-  | 'wrong-type'
+  'missing' | 'malformed' | 'bad-signature' | 'expired' | 'rfq-mismatch' | 'wrong-type'
 
 /**
  * Sign a token granting read access to /quote/[rfqCode].
@@ -103,7 +99,7 @@ export function signQuoteAccessToken(rfqCode: string, ttlMs: number = DEFAULT_TT
  */
 export function verifyQuoteAccessToken(
   token: string | undefined | null,
-  rfqCode: string,
+  rfqCode: string
 ): { valid: true } | { valid: false; reason: QuoteAccessTokenReason } {
   if (!token) return { valid: false, reason: 'missing' }
   const parts = token.split('.')

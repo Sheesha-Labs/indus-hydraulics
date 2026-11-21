@@ -58,7 +58,9 @@ function makeFakeClient(initialRows: FakeCounterRow[] = []) {
     // A fake that implements only the two delegates codes.ts calls. The cast
     // is to the client type the functions take, through unknown, because the
     // fake does not (and should not) implement the rest of Prisma.
-    client: { counter: { upsert }, quote: { findMany } } as unknown as NonNullable<Parameters<typeof nextRfqCode>[0]> & {
+    client: { counter: { upsert }, quote: { findMany } } as unknown as NonNullable<
+      Parameters<typeof nextRfqCode>[0]
+    > & {
       quote: { findMany: typeof findMany }
     },
     upsert,

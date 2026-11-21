@@ -44,7 +44,7 @@ export default function BlogFigureBlockView({
   return (
     <figure className="my-2 min-w-0">
       <div
-        className={`relative overflow-hidden rounded-lg bg-ih-surface-3 ${
+        className={`bg-ih-surface-3 relative overflow-hidden rounded-lg ${
           ASPECT[block.aspectRatio ?? '16/9'] ?? 'aspect-video'
         }`}
       >

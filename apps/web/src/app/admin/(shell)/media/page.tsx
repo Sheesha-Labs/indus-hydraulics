@@ -148,7 +148,12 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
     internal: 0,
     unused: 0,
   }
-  const kindCounts: Record<string, number> = { all: decorated.length, image: 0, document: 0, cad: 0 }
+  const kindCounts: Record<string, number> = {
+    all: decorated.length,
+    image: 0,
+    document: 0,
+    cad: 0,
+  }
   let totalBytes = 0
   let reclaimableBytes = 0
   // A row whose size could not be measured still holds 0, and the total is
@@ -236,9 +241,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               defaultValue={query}
               hidden={hiddenFilters({ kind, state, folder, sort, view, trashed })}
             />
-            {trashed ? null : (
-              <StateTabs counts={stateCounts} active={state} buildUrl={buildUrl} />
-            )}
+            {trashed ? null : <StateTabs counts={stateCounts} active={state} buildUrl={buildUrl} />}
             <div className="ml-auto flex items-center gap-3">
               <MediaSortSelect value={sort} options={sortOptions} />
               <ViewToggle active={view} buildUrl={buildUrl} />
@@ -252,18 +255,24 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
           {usageIndex.partial ? (
             <p
               role="alert"
-              className="flex items-start gap-2 rounded-md border border-ih-warning bg-ih-warning-soft px-3 py-2 text-[12.5px] text-[oklch(0.42_0.1_62)]"
+              className="border-ih-warning bg-ih-warning-soft flex items-start gap-2 rounded-md border px-3 py-2 text-[12.5px] text-[oklch(0.42_0.1_62)]"
             >
-              <AlertTriangle size={13} strokeWidth={1.9} aria-hidden="true" className="mt-0.5 flex-shrink-0" />
+              <AlertTriangle
+                size={13}
+                strokeWidth={1.9}
+                aria-hidden="true"
+                className="mt-0.5 flex-shrink-0"
+              />
               <span>
                 Usage couldn&apos;t be read from{' '}
-                <span className="tabular-nums">{usageIndex.failedSources.join(', ')}</span>. Files may
-                look unused when they are not, so deleting stays disabled until this loads cleanly.
+                <span className="tabular-nums">{usageIndex.failedSources.join(', ')}</span>. Files
+                may look unused when they are not, so deleting stays disabled until this loads
+                cleanly.
               </span>
             </p>
           ) : null}
 
-          <p className="text-[12.5px] text-ih-muted">
+          <p className="text-ih-muted text-[12.5px]">
             <span className="tabular-nums">{selected.total.toLocaleString()}</span> of{' '}
             <span className="tabular-nums">{decorated.length.toLocaleString()}</span> files
             {trashed ? ' in trash' : ''} ·{' '}
@@ -271,16 +280,15 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
             {!trashed && reclaimableBytes > 0 ? (
               <>
                 {' · '}
-                <span className="tabular-nums">{formatBytes(reclaimableBytes)}</span>{' '}
-                reclaimable
+                <span className="tabular-nums">{formatBytes(reclaimableBytes)}</span> reclaimable
               </>
             ) : null}
             {unknownSizeCount > 0 ? (
               <>
                 {' · '}
                 <span title="These were uploaded without their size being recorded, so the total above is a floor.">
-                  <span className="tabular-nums">{unknownSizeCount.toLocaleString()}</span>{' '}
-                  of unknown size
+                  <span className="tabular-nums">{unknownSizeCount.toLocaleString()}</span> of
+                  unknown size
                 </span>
               </>
             ) : null}

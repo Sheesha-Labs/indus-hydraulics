@@ -161,22 +161,36 @@ describe('deskStatus', () => {
   })
 
   it('says "at" for later today', () => {
-    expect(deskStatus(week, { day: 2, minutes: 7 * 60 })).toEqual({ open: false, nextOpen: 'at 09:00 GST' })
+    expect(deskStatus(week, { day: 2, minutes: 7 * 60 })).toEqual({
+      open: false,
+      nextOpen: 'at 09:00 GST',
+    })
   })
 
   it('says "tomorrow" after closing on a working day', () => {
-    expect(deskStatus(week, { day: 2, minutes: 18 * 60 })).toEqual({ open: false, nextOpen: 'tomorrow at 09:00 GST' })
+    expect(deskStatus(week, { day: 2, minutes: 18 * 60 })).toEqual({
+      open: false,
+      nextOpen: 'tomorrow at 09:00 GST',
+    })
   })
 
   it('names the weekday across the weekend', () => {
     // Friday evening → Monday.
-    expect(deskStatus(week, { day: 5, minutes: 19 * 60 })).toEqual({ open: false, nextOpen: 'Monday at 09:00 GST' })
+    expect(deskStatus(week, { day: 5, minutes: 19 * 60 })).toEqual({
+      open: false,
+      nextOpen: 'Monday at 09:00 GST',
+    })
     // Saturday → Monday.
-    expect(deskStatus(week, { day: 6, minutes: 12 * 60 })).toEqual({ open: false, nextOpen: 'Monday at 09:00 GST' })
+    expect(deskStatus(week, { day: 6, minutes: 12 * 60 })).toEqual({
+      open: false,
+      nextOpen: 'Monday at 09:00 GST',
+    })
   })
 
   it('invents nothing when no hours are known', () => {
-    expect(deskStatus(parseOpeningHours([]), { day: 2, minutes: 600 })).toEqual({ open: false, nextOpen: null })
+    expect(deskStatus(parseOpeningHours([]), { day: 2, minutes: 600 })).toEqual({
+      open: false,
+      nextOpen: null,
+    })
   })
 })
-

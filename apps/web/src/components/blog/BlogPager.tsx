@@ -27,7 +27,7 @@ export default function BlogPager({ page, totalPages }: Props) {
   return (
     <nav
       aria-label="Article pages"
-      className="mt-8 flex flex-wrap items-center justify-between gap-x-2 gap-y-4 border-t border-ih-border pt-5 min-[761px]:mt-14 min-[761px]:flex-nowrap min-[761px]:gap-4"
+      className="border-ih-border mt-8 flex flex-wrap items-center justify-between gap-x-2 gap-y-4 border-t pt-5 min-[761px]:mt-14 min-[761px]:flex-nowrap min-[761px]:gap-4"
     >
       {page > 1 ? (
         <Link href={blogPageHref(page - 1)} rel="prev" className={DIR_ON}>
@@ -41,7 +41,13 @@ export default function BlogPager({ page, totalPages }: Props) {
         </span>
       )}
 
-      <PageRun page={page} totalPages={totalPages} back={2} ahead={4} className="hidden min-[761px]:flex" />
+      <PageRun
+        page={page}
+        totalPages={totalPages}
+        back={2}
+        ahead={4}
+        className="hidden min-[761px]:flex"
+      />
       <PageRun
         page={page}
         totalPages={totalPages}
@@ -80,7 +86,7 @@ function PageRun({
           <li
             key={`gap-${i}`}
             aria-hidden="true"
-            className="grid h-10 min-w-10 place-items-center px-1.5 font-mono text-[13px] text-ih-muted"
+            className="text-ih-muted grid h-10 min-w-10 place-items-center px-1.5 font-mono text-[13px]"
           >
             …
           </li>
@@ -93,13 +99,13 @@ function PageRun({
               className={`grid h-10 min-w-10 place-items-center rounded-md border px-1.5 font-mono text-[13px] transition-colors duration-150 motion-reduce:transition-none ${
                 n === page
                   ? 'border-ih-accent bg-ih-accent-soft text-ih-accent'
-                  : 'border-transparent text-ih-ink-2 hover:bg-ih-surface-2'
+                  : 'text-ih-ink-2 hover:bg-ih-surface-2 border-transparent'
               }`}
             >
               {n}
             </Link>
           </li>
-        ),
+        )
       )}
     </ol>
   )

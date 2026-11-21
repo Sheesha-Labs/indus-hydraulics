@@ -126,7 +126,10 @@ describe('buildApplicationContext', () => {
     const base = { marketName: 'Nigeria', countryCode: 'NG' } as const
     const long = buildApplicationContext({ ...base, source: 'market_quote_form' })
     const short = buildApplicationContext({ ...base, source: 'market_quick_enquiry' })
-    const index = buildApplicationContext({ marketName: 'Nigeria', source: 'markets_index_enquiry' })
+    const index = buildApplicationContext({
+      marketName: 'Nigeria',
+      source: 'markets_index_enquiry',
+    })
     expect(new Set([long, short, index]).size).toBe(3)
   })
 

@@ -30,7 +30,7 @@ export default function DiagramBlockView({ block }: { block: DiagramBlock }) {
 
   return (
     <figure className="my-2 min-w-0">
-      <div className="overflow-x-auto rounded-lg border border-ih-border bg-ih-surface">
+      <div className="border-ih-border bg-ih-surface overflow-x-auto rounded-lg border">
         {/*
           `role="img"` plus the label is what makes this one object to a screen
           reader. Without it the reader walks every `<text>` node in the chart

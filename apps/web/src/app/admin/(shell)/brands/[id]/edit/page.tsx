@@ -44,68 +44,64 @@ export default async function EditBrandPage({ params }: Props) {
 
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
-    '',
+    ''
   )
 
   return (
-
     <BrandEditorClient
       contentEditor={
-      <BrandContentEditor
-        brand={{
-          id: brand.id,
-          position: brand.position,
-          accountManagerName: brand.accountManagerName,
-          accountManagerTitle: brand.accountManagerTitle,
-          accountManagerYearsExp: brand.accountManagerYearsExp,
-          accountManagerInitials: brand.accountManagerInitials,
-          fastestLeadTime: brand.fastestLeadTime,
-          largestInstallValue: brand.largestInstallValue,
-          largestInstallContext: brand.largestInstallContext,
-          partnerSince: brand.partnerSince,
-        }}
-        caseStudies={brand.caseStudies.map((c) => ({
-          id: c.id,
-          tag: c.tag,
-          title: c.title,
-          description: c.description,
-          year: c.year,
-          imageId: c.imageId,
-          position: c.position,
-          isPublished: c.isPublished,
-          stats: c.stats == null ? '[]' : JSON.stringify(c.stats, null, 2),
-        }))}
-      />
+        <BrandContentEditor
+          brand={{
+            id: brand.id,
+            position: brand.position,
+            accountManagerName: brand.accountManagerName,
+            accountManagerTitle: brand.accountManagerTitle,
+            accountManagerYearsExp: brand.accountManagerYearsExp,
+            accountManagerInitials: brand.accountManagerInitials,
+            fastestLeadTime: brand.fastestLeadTime,
+            largestInstallValue: brand.largestInstallValue,
+            largestInstallContext: brand.largestInstallContext,
+            partnerSince: brand.partnerSince,
+          }}
+          caseStudies={brand.caseStudies.map((c) => ({
+            id: c.id,
+            tag: c.tag,
+            title: c.title,
+            description: c.description,
+            year: c.year,
+            imageId: c.imageId,
+            position: c.position,
+            isPublished: c.isPublished,
+            stats: c.stats == null ? '[]' : JSON.stringify(c.stats, null, 2),
+          }))}
+        />
       }
-        brand={{
-          id: brand.id,
-          slug: brand.slug,
-          name: brand.name,
-          isPublished: brand.isPublished,
-          publicUrl: `${storefrontUrl}/brands/${brand.slug}`,
-          logoUrl: resolveMediaUrl(brand.logo?.storagePath ?? null),
-          seoTitle: brand.seoTitle,
-          seoDescription: brand.seoDescription,
-          canonicalUrl: brand.canonicalUrl,
-          focusKeyword: brand.focusKeyword,
-          robotsIndex: brand.robotsIndex,
-          robotsFollow: brand.robotsFollow,
-          ogImageMediaId: brand.ogImageMediaId,
-          ogImageStoragePath: ogMedia?.storagePath ?? null,
-          sitemapPriority:
-            brand.sitemapPriority != null ? Number(brand.sitemapPriority) : null,
-          sitemapChangeFreq: brand.sitemapChangeFreq,
-          excludeFromSitemap: brand.excludeFromSitemap,
-          jsonLdOverride: brand.jsonLdOverride
-            ? JSON.stringify(brand.jsonLdOverride, null, 2)
-            : null,
-        }}
-        recentImages={recentMedia.map((m) => ({
-          id: m.id,
-          storagePath: m.storagePath,
-          alt: m.alt,
-          originalFilename: m.originalFilename,
-        }))}
-      />
+      brand={{
+        id: brand.id,
+        slug: brand.slug,
+        name: brand.name,
+        isPublished: brand.isPublished,
+        publicUrl: `${storefrontUrl}/brands/${brand.slug}`,
+        logoUrl: resolveMediaUrl(brand.logo?.storagePath ?? null),
+        seoTitle: brand.seoTitle,
+        seoDescription: brand.seoDescription,
+        canonicalUrl: brand.canonicalUrl,
+        focusKeyword: brand.focusKeyword,
+        robotsIndex: brand.robotsIndex,
+        robotsFollow: brand.robotsFollow,
+        ogImageMediaId: brand.ogImageMediaId,
+        ogImageStoragePath: ogMedia?.storagePath ?? null,
+        sitemapPriority: brand.sitemapPriority != null ? Number(brand.sitemapPriority) : null,
+        sitemapChangeFreq: brand.sitemapChangeFreq,
+        excludeFromSitemap: brand.excludeFromSitemap,
+        jsonLdOverride: brand.jsonLdOverride ? JSON.stringify(brand.jsonLdOverride, null, 2) : null,
+      }}
+      recentImages={recentMedia.map((m) => ({
+        id: m.id,
+        storagePath: m.storagePath,
+        alt: m.alt,
+        originalFilename: m.originalFilename,
+      }))}
+    />
   )
 }

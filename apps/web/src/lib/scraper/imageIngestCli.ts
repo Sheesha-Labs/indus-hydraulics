@@ -46,8 +46,8 @@ async function main() {
           message: 'Re-run with --apply to ingest the selected images.',
         },
         null,
-        2,
-      ),
+        2
+      )
     )
     return
   }
@@ -82,15 +82,15 @@ async function main() {
         errors: errors.slice(0, 20),
       },
       null,
-      2,
-    ),
+      2
+    )
   )
 }
 
 async function mapConcurrent<T>(
   items: T[],
   concurrency: number,
-  worker: (item: T, index: number) => Promise<void>,
+  worker: (item: T, index: number) => Promise<void>
 ): Promise<void> {
   let cursor = 0
   async function run() {

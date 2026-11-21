@@ -34,7 +34,7 @@ export function convertPressure(value: number, from: PressureUnit, to: PressureU
 /** All three units at once — what a converter UI actually needs. */
 export function pressureInAllUnits(
   value: number,
-  from: PressureUnit,
+  from: PressureUnit
 ): Record<PressureUnit, number> {
   return {
     psi: convertPressure(value, from, 'psi'),

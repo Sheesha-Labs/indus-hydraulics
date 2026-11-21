@@ -85,7 +85,7 @@ const readDocument = unstable_cache(
     return row?.sections ?? null
   },
   ['page-content'],
-  { revalidate: 3600, tags: ['page-content'] },
+  { revalidate: 3600, tags: ['page-content'] }
 )
 
 /**
@@ -114,7 +114,7 @@ export async function getMasterPageContent(key: string): Promise<PageContent> {
  */
 export async function getSubPageContent(
   kind: SubPageKind,
-  record: { name: string; slug: string },
+  record: { name: string; slug: string }
 ): Promise<PageContent> {
   const def = subPageDef(kind, record)
   try {
@@ -128,7 +128,7 @@ export async function getSubPageContent(
 /** Admin-side read: uncached, so the editor never opens on a stale document. */
 export async function getSubPageContentFresh(
   kind: SubPageKind,
-  record: { name: string; slug: string },
+  record: { name: string; slug: string }
 ): Promise<PageContent> {
   const def = subPageDef(kind, record)
   const row = await db.pageContent.findUnique({

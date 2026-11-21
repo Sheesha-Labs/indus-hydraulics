@@ -100,7 +100,7 @@ const COMPARED_FIELDS = [
  * else.
  */
 export function flattenDraft(
-  items: NavDraftItem[],
+  items: NavDraftItem[]
 ): { uid: string; parentUid: string | null; position: number }[] {
   const perParent = new Map<string | null, number>()
   return items.map((item) => {
@@ -123,9 +123,7 @@ function changed(a: NavDraftItem, b: NavDraftItem): boolean {
  */
 export function diffNavDraft(original: NavDraftItem[], draft: NavDraftItem[]): NavDiff {
   const originalByUid = new Map(original.map((item) => [item.uid, item]))
-  const originalPlacement = new Map(
-    flattenDraft(original).map((row) => [row.uid, row]),
-  )
+  const originalPlacement = new Map(flattenDraft(original).map((row) => [row.uid, row]))
   const draftPlacement = new Map(flattenDraft(draft).map((row) => [row.uid, row]))
 
   const created: NavDraftItem[] = []
@@ -147,8 +145,7 @@ export function diffNavDraft(original: NavDraftItem[], draft: NavDraftItem[]): N
     const placement = draftPlacement.get(item.uid)!
     const wasPlacement = originalPlacement.get(item.uid)!
     const moved =
-      placement.parentUid !== wasPlacement.parentUid ||
-      placement.position !== wasPlacement.position
+      placement.parentUid !== wasPlacement.parentUid || placement.position !== wasPlacement.position
     if (moved || changed(before, item)) {
       updated.push({ ...item, id: item.id, position: placement.position })
     }
@@ -163,9 +160,7 @@ export function diffNavDraft(original: NavDraftItem[], draft: NavDraftItem[]): N
 }
 
 export function isEmptyDiff(diff: NavDiff): boolean {
-  return (
-    diff.created.length === 0 && diff.updated.length === 0 && diff.deletedIds.length === 0
-  )
+  return diff.created.length === 0 && diff.updated.length === 0 && diff.deletedIds.length === 0
 }
 
 /**
@@ -224,7 +219,7 @@ export function draftDepths(items: NavDraftItem[]): Map<string, number> {
  */
 export function navRowUnchanged(
   before: Record<string, unknown> & { parentId: string | null; position: number },
-  next: { parentId: string | null; position: number; columns: Record<string, unknown> },
+  next: { parentId: string | null; position: number; columns: Record<string, unknown> }
 ): boolean {
   if (before.parentId !== next.parentId) return false
   if (before.position !== next.position) return false

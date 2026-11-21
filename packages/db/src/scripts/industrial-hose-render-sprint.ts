@@ -316,10 +316,7 @@ function repointBar(html: string, oldBar: number, newBar: number): string {
   return html
     .replace(new RegExp(`\\b${oldBar}\\s*BAR\\b`, 'g'), `${newBar} BAR`)
     .replace(new RegExp(`\\b${oldBar}\\s*bar\\b`, 'g'), `${newBar} bar`)
-    .replace(
-      /<li><strong>Min burst pressure:<\/strong>[^<]*<\/li>\s*/i,
-      ''
-    )
+    .replace(/<li><strong>Min burst pressure:<\/strong>[^<]*<\/li>\s*/i, '')
 }
 
 async function uniqueSlug(candidate: string, excludeId?: string): Promise<string> {
@@ -371,9 +368,7 @@ async function otherReferences(mediaId: string, ownProductImageIds: string[]) {
     },
   })
   if (!m) return ['media row already gone']
-  const foreign = m.productImages
-    .map((r) => r.id)
-    .filter((id) => !ownProductImageIds.includes(id))
+  const foreign = m.productImages.map((r) => r.id).filter((id) => !ownProductImageIds.includes(id))
   const refs: string[] = []
   if (foreign.length) refs.push(`${foreign.length} other product_images`)
 
@@ -651,7 +646,10 @@ async function main() {
 
   // ── Phase 3: attach renders ───────────────────────────────────────────────
   const attached: unknown[] = []
-  const displaced: { productImageId: string; media: { id: string; storagePath: string; originalFilename: string | null } }[] = []
+  const displaced: {
+    productImageId: string
+    media: { id: string; storagePath: string; originalFilename: string | null }
+  }[] = []
   if (run('attach')) {
     const sb = supabase()
     console.log(`\n── attach: ${PAIRS.length} renders ──`)

@@ -19,7 +19,12 @@ import { useEffect, useMemo, useState } from 'react'
 import { searchRecordsAction } from '../../../app/admin/(shell)/newsletter/campaign-actions'
 import { mediaUrl } from '../../../lib/media'
 import { BLOCKS, blockDef } from '../../../lib/newsletter/blocks/catalogue'
-import { MAX_BLOCKS, SETTINGS_FIELDS, blockId, newBlock } from '../../../lib/newsletter/blocks/document'
+import {
+  MAX_BLOCKS,
+  SETTINGS_FIELDS,
+  blockId,
+  newBlock,
+} from '../../../lib/newsletter/blocks/document'
 import { INDUS_SWATCHES } from '../../../lib/newsletter/blocks/palette'
 import { PRESETS } from '../../../lib/newsletter/blocks/presets'
 import {
@@ -44,8 +49,21 @@ type Props_ = {
   disabled?: boolean
 }
 
-const KIND_LABEL: Record<RecordKind, string> = { product: 'Products', category: 'Categories', article: 'Blog articles', industry: 'Industries', brand: 'Brands', service: 'Case studies' }
-const LAYOUT_LABEL: Record<string, string> = { list: 'List', grid: 'Grid', cards: 'Cards', rows: 'Alternating rows', tiles: 'Tiles' }
+const KIND_LABEL: Record<RecordKind, string> = {
+  product: 'Products',
+  category: 'Categories',
+  article: 'Blog articles',
+  industry: 'Industries',
+  brand: 'Brands',
+  service: 'Case studies',
+}
+const LAYOUT_LABEL: Record<string, string> = {
+  list: 'List',
+  grid: 'Grid',
+  cards: 'Cards',
+  rows: 'Alternating rows',
+  tiles: 'Tiles',
+}
 
 /**
  * The block designer, in Bazar's shape: the page settings as a folding row,
@@ -65,7 +83,8 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
   const full = design.blocks.length >= MAX_BLOCKS
 
   const setBlocks = (blocks: Block[]) => onChange({ ...design, blocks })
-  const setProps = (id: string, props: Props) => setBlocks(design.blocks.map((b) => (b.id === id ? { ...b, props } : b)))
+  const setProps = (id: string, props: Props) =>
+    setBlocks(design.blocks.map((b) => (b.id === id ? { ...b, props } : b)))
   const move = (i: number, by: number) => {
     const j = i + by
     if (j < 0 || j >= design.blocks.length) return
@@ -88,27 +107,39 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
 
   return (
     <div className="flex flex-col gap-2.5">
-      <div className="rounded-lg border border-ih-border bg-ih-surface-2">
+      <div className="border-ih-border bg-ih-surface-2 rounded-lg border">
         <button
           type="button"
           onClick={() => setShowSettings((v) => !v)}
           aria-expanded={showSettings}
-          className="flex w-full items-center gap-2.5 rounded-lg px-3.5 py-3 text-left text-[13.5px] text-ih-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+          className="text-ih-ink focus-visible:ring-ih-accent-soft flex w-full items-center gap-2.5 rounded-lg px-3.5 py-3 text-left text-[13.5px] focus-visible:ring-2 focus-visible:outline-none"
         >
           <Palette size={15} strokeWidth={1.7} aria-hidden="true" className="text-ih-muted" />
           <span className="flex-1">Page colours and typefaces</span>
-          <ChevronRight size={15} aria-hidden="true" className={`text-ih-muted transition-transform ${showSettings ? 'rotate-90' : ''}`} />
+          <ChevronRight
+            size={15}
+            aria-hidden="true"
+            className={`text-ih-muted transition-transform ${showSettings ? 'rotate-90' : ''}`}
+          />
         </button>
         {showSettings ? (
-          <div className="grid gap-3 border-t border-ih-border bg-ih-surface px-3.5 py-3.5 sm:grid-cols-2">
+          <div className="border-ih-border bg-ih-surface grid gap-3 border-t px-3.5 py-3.5 sm:grid-cols-2">
             {SETTINGS_FIELDS.map((f) =>
               f.kind === 'font' ? (
-                <label key={f.key} className="flex flex-col gap-1.5 text-[13px] font-medium text-ih-ink">
+                <label
+                  key={f.key}
+                  className="text-ih-ink flex flex-col gap-1.5 text-[13px] font-medium"
+                >
                   {f.label}
                   <Select
                     value={String(design.settings[f.key])}
                     disabled={disabled}
-                    onChange={(e) => onChange({ ...design, settings: { ...design.settings, [f.key]: e.target.value } })}
+                    onChange={(e) =>
+                      onChange({
+                        ...design,
+                        settings: { ...design.settings, [f.key]: e.target.value },
+                      })
+                    }
                   >
                     <option value="serif">Serif (headings like the site)</option>
                     <option value="sans">Sans-serif</option>
@@ -121,16 +152,18 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
                   value={String(design.settings[f.key])}
                   allowBlank={false}
                   disabled={disabled}
-                  onChange={(v) => onChange({ ...design, settings: { ...design.settings, [f.key]: v } })}
+                  onChange={(v) =>
+                    onChange({ ...design, settings: { ...design.settings, [f.key]: v } })
+                  }
                 />
-              ),
+              )
             )}
           </div>
         ) : null}
       </div>
 
       {design.blocks.length === 0 ? (
-        <p className="rounded-lg border border-dashed border-ih-border p-6 text-center text-[13.5px] text-ih-muted">
+        <p className="border-ih-border text-ih-muted rounded-lg border border-dashed p-6 text-center text-[13.5px]">
           No blocks yet. Add a header, some text, a few products.
         </p>
       ) : null}
@@ -141,25 +174,54 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
           const isOpen = open === b.id
           const words = summary(b)
           return (
-            <li key={b.id} className={`rounded-lg border bg-ih-surface ${isOpen ? 'border-ih-accent shadow-[0_0_0_3px_var(--color-ih-accent-soft)]' : 'border-ih-border'}`}>
-              <div className="flex items-center gap-1 py-1.5 pl-1.5 pr-2">
+            <li
+              key={b.id}
+              className={`bg-ih-surface rounded-lg border ${isOpen ? 'border-ih-accent shadow-[0_0_0_3px_var(--color-ih-accent-soft)]' : 'border-ih-border'}`}
+            >
+              <div className="flex items-center gap-1 py-1.5 pr-2 pl-1.5">
                 <button
                   type="button"
                   aria-expanded={isOpen}
                   onClick={() => setOpen(isOpen ? null : b.id)}
-                  className="flex min-w-0 flex-1 items-center gap-2.5 rounded-md px-2 py-1.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+                  className="focus-visible:ring-ih-accent-soft flex min-w-0 flex-1 items-center gap-2.5 rounded-md px-2 py-1.5 text-left focus-visible:ring-2 focus-visible:outline-none"
                 >
-                  <ChevronRight size={15} aria-hidden="true" className={`shrink-0 text-ih-muted transition-transform ${isOpen ? 'rotate-90' : ''}`} />
-                  <span className="w-5 shrink-0 text-right tabular-nums text-[12.5px] text-ih-muted">{i + 1}</span>
-                  <span className="min-w-0 max-w-[60%] shrink-0 truncate text-[14px] font-medium text-ih-ink">{def?.label ?? b.type}</span>
-                  {words ? <span className="min-w-0 truncate text-[13px] text-ih-muted">· {words}</span> : null}
+                  <ChevronRight
+                    size={15}
+                    aria-hidden="true"
+                    className={`text-ih-muted shrink-0 transition-transform ${isOpen ? 'rotate-90' : ''}`}
+                  />
+                  <span className="text-ih-muted w-5 shrink-0 text-right text-[12.5px] tabular-nums">
+                    {i + 1}
+                  </span>
+                  <span className="text-ih-ink max-w-[60%] min-w-0 shrink-0 truncate text-[14px] font-medium">
+                    {def?.label ?? b.type}
+                  </span>
+                  {words ? (
+                    <span className="text-ih-muted min-w-0 truncate text-[13px]">· {words}</span>
+                  ) : null}
                 </button>
                 {!disabled ? (
                   <span className="flex shrink-0 items-center">
-                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Move up" title="Move up" disabled={i === 0} onClick={() => move(i, -1)}>
+                    <Button
+                      type="button"
+                      kind="ghost"
+                      size="icon-sm"
+                      aria-label="Move up"
+                      title="Move up"
+                      disabled={i === 0}
+                      onClick={() => move(i, -1)}
+                    >
                       <ArrowUp size={15} aria-hidden />
                     </Button>
-                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Move down" title="Move down" disabled={i === design.blocks.length - 1} onClick={() => move(i, 1)}>
+                    <Button
+                      type="button"
+                      kind="ghost"
+                      size="icon-sm"
+                      aria-label="Move down"
+                      title="Move down"
+                      disabled={i === design.blocks.length - 1}
+                      onClick={() => move(i, 1)}
+                    >
                       <ArrowDown size={15} aria-hidden />
                     </Button>
                     <Button
@@ -169,23 +231,51 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
                       aria-label="Duplicate block"
                       title="Duplicate"
                       disabled={full}
-                      onClick={() => insert({ id: blockId(), type: b.type, props: structuredClone(b.props) }, i + 1)}
+                      onClick={() =>
+                        insert(
+                          { id: blockId(), type: b.type, props: structuredClone(b.props) },
+                          i + 1
+                        )
+                      }
                     >
                       <Copy size={15} aria-hidden />
                     </Button>
-                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Add a block below" title="Add a block below" disabled={full} onClick={() => setInsertAt(i + 1)}>
+                    <Button
+                      type="button"
+                      kind="ghost"
+                      size="icon-sm"
+                      aria-label="Add a block below"
+                      title="Add a block below"
+                      disabled={full}
+                      onClick={() => setInsertAt(i + 1)}
+                    >
                       <Plus size={15} aria-hidden />
                     </Button>
-                    <Button type="button" kind="ghost" size="icon-sm" aria-label="Remove block" title="Remove" onClick={() => remove(b)}>
+                    <Button
+                      type="button"
+                      kind="ghost"
+                      size="icon-sm"
+                      aria-label="Remove block"
+                      title="Remove"
+                      onClick={() => remove(b)}
+                    >
                       <Trash2 size={15} aria-hidden />
                     </Button>
                   </span>
                 ) : null}
               </div>
               {isOpen && def ? (
-                <fieldset disabled={disabled} className="grid gap-4 border-t border-ih-border px-4 py-4 sm:grid-cols-2">
+                <fieldset
+                  disabled={disabled}
+                  className="border-ih-border grid gap-4 border-t px-4 py-4 sm:grid-cols-2"
+                >
                   {def.fields.map((f) => (
-                    <FieldEditor key={f.key} field={f} value={b.props[f.key]} onChange={(v) => setProps(b.id, { ...b.props, [f.key]: v })} />
+                    <FieldEditor
+                      key={f.key}
+                      field={f}
+                      value={b.props[f.key]}
+                      onChange={(v) => setProps(b.id, { ...b.props, [f.key]: v })}
+                    />
                   ))}
                 </fieldset>
               ) : null}
@@ -196,10 +286,17 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
 
       {!disabled ? (
         <div className="flex flex-wrap items-center gap-3 pt-1">
-          <Button type="button" kind="outline" size="dense" icon={<Plus size={14} aria-hidden />} disabled={full} onClick={() => setInsertAt(design.blocks.length)}>
+          <Button
+            type="button"
+            kind="outline"
+            size="dense"
+            icon={<Plus size={14} aria-hidden />}
+            disabled={full}
+            onClick={() => setInsertAt(design.blocks.length)}
+          >
             Add a block
           </Button>
-          <span className="text-[12.5px] text-ih-muted">
+          <span className="text-ih-muted text-[12.5px]">
             <span className="tabular-nums">{design.blocks.length}</span> of {MAX_BLOCKS} blocks
           </span>
         </div>
@@ -219,17 +316,41 @@ export default function BlockDesigner({ design, onChange, disabled }: Props_) {
 /** A few words from the block's main text, so a closed stack is scannable. */
 function summary(b: Block): string {
   const p = b.props
-  const t = [p.heading, p.text, p.label, p.quote, p.name, p.badge].find((v) => typeof v === 'string' && v.trim())
+  const t = [p.heading, p.text, p.label, p.quote, p.name, p.badge].find(
+    (v) => typeof v === 'string' && v.trim()
+  )
   return typeof t === 'string' ? t : ''
 }
 
-type LibraryEntry = { key: string; label: string; description: string; category: BlockCategory; make: () => Block }
+type LibraryEntry = {
+  key: string
+  label: string
+  description: string
+  category: BlockCategory
+  make: () => Block
+}
 
 const LIBRARY: LibraryEntry[] = [
-  ...BLOCKS.map((b) => ({ key: `block:${b.type}`, label: b.label, description: b.description, category: b.category, make: () => newBlock(b.type) })),
+  ...BLOCKS.map((b) => ({
+    key: `block:${b.type}`,
+    label: b.label,
+    description: b.description,
+    category: b.category,
+    make: () => newBlock(b.type),
+  })),
   ...PRESETS.flatMap((p) => {
     const def = blockDef(p.type)
-    return def ? [{ key: `preset:${p.id}`, label: p.label, description: p.description, category: def.category, make: () => newBlock(p.type, p.props) }] : []
+    return def
+      ? [
+          {
+            key: `preset:${p.id}`,
+            label: p.label,
+            description: p.description,
+            category: def.category,
+            make: () => newBlock(p.type, p.props),
+          },
+        ]
+      : []
   }),
 ]
 
@@ -237,12 +358,22 @@ const LIBRARY: LibraryEntry[] = [
  * Bazar's block library: a dialog with search and a category list, rather
  * than a panel that pushed the whole stack down the page.
  */
-function BlockLibrary({ open, onOpenChange, onPick }: { open: boolean; onOpenChange: (o: boolean) => void; onPick: (b: Block) => void }) {
+function BlockLibrary({
+  open,
+  onOpenChange,
+  onPick,
+}: {
+  open: boolean
+  onOpenChange: (o: boolean) => void
+  onPick: (b: Block) => void
+}) {
   const [q, setQ] = useState('')
   const [cat, setCat] = useState<BlockCategory | 'all'>('all')
   const term = q.trim().toLowerCase()
   const shown = LIBRARY.filter(
-    (e) => (cat === 'all' || e.category === cat) && (!term || `${e.label} ${e.description}`.toLowerCase().includes(term)),
+    (e) =>
+      (cat === 'all' || e.category === cat) &&
+      (!term || `${e.label} ${e.description}`.toLowerCase().includes(term))
   )
   return (
     <Dialog
@@ -258,15 +389,33 @@ function BlockLibrary({ open, onOpenChange, onPick }: { open: boolean; onOpenCha
       <DialogContent className="max-w-4xl">
         <DialogHeader>
           <DialogTitle>Add a block</DialogTitle>
-          <DialogDescription>Every block is a starting point — its words, colours and images stay editable once it is in the email.</DialogDescription>
+          <DialogDescription>
+            Every block is a starting point — its words, colours and images stay editable once it is
+            in the email.
+          </DialogDescription>
         </DialogHeader>
         <DialogBody>
           <div className="relative mb-4">
-            <Search size={14} aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ih-muted" />
-            <Input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search blocks" aria-label="Search blocks" className="pl-9" autoFocus />
+            <Search
+              size={14}
+              aria-hidden="true"
+              className="text-ih-muted pointer-events-none absolute top-1/2 left-3 -translate-y-1/2"
+            />
+            <Input
+              type="search"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="Search blocks"
+              aria-label="Search blocks"
+              className="pl-9"
+              autoFocus
+            />
           </div>
           <div className="grid gap-4 md:grid-cols-[180px_minmax(0,1fr)]">
-            <nav aria-label="Block categories" className="flex flex-row flex-wrap gap-1 md:flex-col">
+            <nav
+              aria-label="Block categories"
+              className="flex flex-row flex-wrap gap-1 md:flex-col"
+            >
               {(['all', ...BLOCK_CATEGORIES] as const).map((c) => (
                 <button
                   key={c}
@@ -274,7 +423,9 @@ function BlockLibrary({ open, onOpenChange, onPick }: { open: boolean; onOpenCha
                   aria-current={cat === c ? 'true' : undefined}
                   onClick={() => setCat(c)}
                   className={`rounded-md px-2.5 py-1.5 text-left text-[13px] transition-colors ${
-                    cat === c ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+                    cat === c
+                      ? 'bg-ih-navy text-ih-bg font-medium'
+                      : 'text-ih-ink-2 hover:bg-ih-surface-2'
                   }`}
                 >
                   {c === 'all' ? 'All blocks' : c}
@@ -282,17 +433,19 @@ function BlockLibrary({ open, onOpenChange, onPick }: { open: boolean; onOpenCha
               ))}
             </nav>
             <ul className="grid max-h-[60vh] gap-2 overflow-y-auto pr-1 sm:grid-cols-2">
-              {shown.length === 0 ? <li className="text-[13px] text-ih-muted">No block matches “{q}”.</li> : null}
+              {shown.length === 0 ? (
+                <li className="text-ih-muted text-[13px]">No block matches “{q}”.</li>
+              ) : null}
               {shown.map((e) => (
                 <li key={e.key}>
                   <button
                     type="button"
                     onClick={() => onPick(e.make())}
-                    className="flex h-full w-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-3 text-left transition-[border-color,box-shadow] hover:border-ih-border-strong hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft"
+                    className="border-ih-border bg-ih-surface hover:border-ih-border-strong focus-visible:ring-ih-accent-soft flex h-full w-full flex-col gap-1 rounded-lg border p-3 text-left transition-[border-color,box-shadow] hover:shadow-sm focus-visible:ring-2 focus-visible:outline-none"
                   >
-                    <span className="text-[13.5px] font-medium text-ih-ink">{e.label}</span>
-                    <span className="text-[12px] leading-snug text-ih-muted">{e.description}</span>
-                    <span className="mt-auto pt-1 text-[11.5px] text-ih-muted">{e.category}</span>
+                    <span className="text-ih-ink text-[13.5px] font-medium">{e.label}</span>
+                    <span className="text-ih-muted text-[12px] leading-snug">{e.description}</span>
+                    <span className="text-ih-muted mt-auto pt-1 text-[11.5px]">{e.category}</span>
                   </button>
                 </li>
               ))}
@@ -304,15 +457,38 @@ function BlockLibrary({ open, onOpenChange, onPick }: { open: boolean; onOpenCha
   )
 }
 
-function FieldEditor({ field, value, onChange }: { field: FieldDef; value: unknown; onChange: (v: unknown) => void }) {
+function FieldEditor({
+  field,
+  value,
+  onChange,
+}: {
+  field: FieldDef
+  value: unknown
+  onChange: (v: unknown) => void
+}) {
   if (field.kind === 'items') return <ItemsEditor field={field} value={value} onChange={onChange} />
-  if (field.kind === 'records') return <RecordsEditor label={field.label} value={value as RecordsValue | null} onChange={onChange} />
+  if (field.kind === 'records')
+    return (
+      <RecordsEditor label={field.label} value={value as RecordsValue | null} onChange={onChange} />
+    )
   return <ScalarEditor field={field} value={value} onChange={onChange} />
 }
 
-function Labelled({ label, help, wide, children }: { label: string; help?: string; wide?: boolean; children: React.ReactNode }) {
+function Labelled({
+  label,
+  help,
+  wide,
+  children,
+}: {
+  label: string
+  help?: string
+  wide?: boolean
+  children: React.ReactNode
+}) {
   return (
-    <label className={`flex flex-col gap-1 text-[12.5px] text-ih-muted ${wide ? 'sm:col-span-2' : ''}`}>
+    <label
+      className={`text-ih-muted flex flex-col gap-1 text-[12.5px] ${wide ? 'sm:col-span-2' : ''}`}
+    >
       {label}
       {children}
       {help ? <span className="text-[11.5px]">{help}</span> : null}
@@ -320,7 +496,15 @@ function Labelled({ label, help, wide, children }: { label: string; help?: strin
   )
 }
 
-function ScalarEditor({ field, value, onChange }: { field: ScalarFieldDef; value: unknown; onChange: (v: unknown) => void }) {
+function ScalarEditor({
+  field,
+  value,
+  onChange,
+}: {
+  field: ScalarFieldDef
+  value: unknown
+  onChange: (v: unknown) => void
+}) {
   switch (field.kind) {
     case 'text':
     case 'url':
@@ -328,7 +512,9 @@ function ScalarEditor({ field, value, onChange }: { field: ScalarFieldDef; value
         <Labelled label={field.label} help={field.help}>
           <Input
             value={typeof value === 'string' ? value : ''}
-            placeholder={field.placeholder ?? (field.kind === 'url' ? 'https://… or /contact' : undefined)}
+            placeholder={
+              field.placeholder ?? (field.kind === 'url' ? 'https://… or /contact' : undefined)
+            }
             maxLength={field.kind === 'text' ? field.max : 2000}
             onChange={(e) => onChange(e.target.value)}
           />
@@ -336,8 +522,18 @@ function ScalarEditor({ field, value, onChange }: { field: ScalarFieldDef; value
       )
     case 'textarea':
       return (
-        <Labelled label={field.label} help={field.help ?? 'A blank line starts a new paragraph.'} wide>
-          <Textarea rows={4} value={typeof value === 'string' ? value : ''} placeholder={field.placeholder} maxLength={field.max} onChange={(e) => onChange(e.target.value)} />
+        <Labelled
+          label={field.label}
+          help={field.help ?? 'A blank line starts a new paragraph.'}
+          wide
+        >
+          <Textarea
+            rows={4}
+            value={typeof value === 'string' ? value : ''}
+            placeholder={field.placeholder}
+            maxLength={field.max}
+            onChange={(e) => onChange(e.target.value)}
+          />
         </Labelled>
       )
     case 'select':
@@ -355,25 +551,78 @@ function ScalarEditor({ field, value, onChange }: { field: ScalarFieldDef; value
     case 'number':
       return (
         <Labelled label={`${field.label}${field.unit ? ` (${field.unit})` : ''}`} help={field.help}>
-          <Input type="number" min={field.min} max={field.max} step={field.step ?? 1} value={typeof value === 'number' ? value : field.min} onChange={(e) => onChange(Number(e.target.value))} />
+          <Input
+            type="number"
+            min={field.min}
+            max={field.max}
+            step={field.step ?? 1}
+            value={typeof value === 'number' ? value : field.min}
+            onChange={(e) => onChange(Number(e.target.value))}
+          />
         </Labelled>
       )
     case 'toggle':
-      return <Checkbox label={field.label} checked={value === true} onChange={(e) => onChange(e.target.checked)} />
+      return (
+        <Checkbox
+          label={field.label}
+          checked={value === true}
+          onChange={(e) => onChange(e.target.checked)}
+        />
+      )
     case 'color':
-      return <ColorField label={field.label} value={typeof value === 'string' ? value : ''} allowBlank={Boolean(field.allowBlank)} onChange={onChange} />
+      return (
+        <ColorField
+          label={field.label}
+          value={typeof value === 'string' ? value : ''}
+          allowBlank={Boolean(field.allowBlank)}
+          onChange={onChange}
+        />
+      )
     case 'image':
-      return <ImageEditor label={field.label} value={(value as ImageValue | null) ?? null} onChange={onChange} />
+      return (
+        <ImageEditor
+          label={field.label}
+          value={(value as ImageValue | null) ?? null}
+          onChange={onChange}
+        />
+      )
   }
 }
 
-function ColorField({ label, value, allowBlank, disabled, onChange }: { label: string; value: string; allowBlank: boolean; disabled?: boolean; onChange: (v: string) => void }) {
+function ColorField({
+  label,
+  value,
+  allowBlank,
+  disabled,
+  onChange,
+}: {
+  label: string
+  value: string
+  allowBlank: boolean
+  disabled?: boolean
+  onChange: (v: string) => void
+}) {
   return (
-    <div className="flex flex-col gap-1 text-[12.5px] text-ih-muted">
+    <div className="text-ih-muted flex flex-col gap-1 text-[12.5px]">
       <span>{label}</span>
       <div className="flex flex-wrap items-center gap-1.5">
-        <input type="color" aria-label={`${label} colour`} value={value || '#ffffff'} disabled={disabled} onChange={(e) => onChange(e.target.value)} className="h-8 w-10 cursor-pointer rounded border border-ih-border bg-transparent p-0.5" />
-        <Input value={value} disabled={disabled} maxLength={7} placeholder={allowBlank ? 'Default' : '#000000'} onChange={(e) => onChange(e.target.value)} className="w-24 tabular-nums" aria-label={`${label} hex value`} />
+        <input
+          type="color"
+          aria-label={`${label} colour`}
+          value={value || '#ffffff'}
+          disabled={disabled}
+          onChange={(e) => onChange(e.target.value)}
+          className="border-ih-border h-8 w-10 cursor-pointer rounded border bg-transparent p-0.5"
+        />
+        <Input
+          value={value}
+          disabled={disabled}
+          maxLength={7}
+          placeholder={allowBlank ? 'Default' : '#000000'}
+          onChange={(e) => onChange(e.target.value)}
+          className="w-24 tabular-nums"
+          aria-label={`${label} hex value`}
+        />
         {INDUS_SWATCHES.map((s) => (
           <button
             key={s.value}
@@ -382,7 +631,7 @@ function ColorField({ label, value, allowBlank, disabled, onChange }: { label: s
             aria-label={`${label}: ${s.label}`}
             disabled={disabled}
             onClick={() => onChange(s.value)}
-            className={`h-5 w-5 overflow-hidden rounded-full border ${value.toLowerCase() === s.value.toLowerCase() ? 'border-ih-accent ring-2 ring-ih-accent-soft' : 'border-ih-border'}`}
+            className={`h-5 w-5 overflow-hidden rounded-full border ${value.toLowerCase() === s.value.toLowerCase() ? 'border-ih-accent ring-ih-accent-soft ring-2' : 'border-ih-border'}`}
           >
             {/* An SVG fill, not style=: the swatch is a stored hex value no token can name. */}
             <svg viewBox="0 0 10 10" className="block h-full w-full" aria-hidden>
@@ -391,7 +640,12 @@ function ColorField({ label, value, allowBlank, disabled, onChange }: { label: s
           </button>
         ))}
         {allowBlank && value ? (
-          <button type="button" className="text-[11.5px] underline underline-offset-2" onClick={() => onChange('')} disabled={disabled}>
+          <button
+            type="button"
+            className="text-[11.5px] underline underline-offset-2"
+            onClick={() => onChange('')}
+            disabled={disabled}
+          >
             Default
           </button>
         ) : null}
@@ -400,15 +654,27 @@ function ColorField({ label, value, allowBlank, disabled, onChange }: { label: s
   )
 }
 
-function ImageEditor({ label, value, onChange }: { label: string; value: ImageValue | null; onChange: (v: ImageValue | null) => void }) {
+function ImageEditor({
+  label,
+  value,
+  onChange,
+}: {
+  label: string
+  value: ImageValue | null
+  onChange: (v: ImageValue | null) => void
+}) {
   const [open, setOpen] = useState(false)
   return (
-    <div className="flex flex-col gap-1 text-[12.5px] text-ih-muted sm:col-span-2">
+    <div className="text-ih-muted flex flex-col gap-1 text-[12.5px] sm:col-span-2">
       <span>{label}</span>
       <div className="flex flex-wrap items-start gap-3">
         {value?.url ? (
           // eslint-disable-next-line @next/next/no-img-element -- a thumbnail of an arbitrary chosen image, not a page image
-          <img src={value.url} alt="" className="h-16 w-24 rounded border border-ih-border object-cover" />
+          <img
+            src={value.url}
+            alt=""
+            className="border-ih-border h-16 w-24 rounded border object-cover"
+          />
         ) : null}
         <div className="flex min-w-[220px] flex-1 flex-col gap-1.5">
           <div className="flex gap-1.5">
@@ -422,7 +688,13 @@ function ImageEditor({ label, value, onChange }: { label: string; value: ImageVa
             ) : null}
           </div>
           {value?.url ? (
-            <Input value={value.alt ?? ''} maxLength={160} placeholder="Describe the picture (alt text)" aria-label={`${label} alt text`} onChange={(e) => onChange({ ...value, alt: e.target.value })} />
+            <Input
+              value={value.alt ?? ''}
+              maxLength={160}
+              placeholder="Describe the picture (alt text)"
+              aria-label={`${label} alt text`}
+              onChange={(e) => onChange({ ...value, alt: e.target.value })}
+            />
           ) : null}
         </div>
       </div>
@@ -440,42 +712,97 @@ function ImageEditor({ label, value, onChange }: { label: string; value: ImageVa
   )
 }
 
-function ItemsEditor({ field, value, onChange }: { field: Extract<FieldDef, { kind: 'items' }>; value: unknown; onChange: (v: unknown) => void }) {
+function ItemsEditor({
+  field,
+  value,
+  onChange,
+}: {
+  field: Extract<FieldDef, { kind: 'items' }>
+  value: unknown
+  onChange: (v: unknown) => void
+}) {
   const items = Array.isArray(value) ? (value as Props[]) : []
-  const blank = () => Object.fromEntries(field.fields.map((f) => [f.key, f.kind === 'toggle' ? false : f.kind === 'number' ? f.min : f.kind === 'image' ? null : f.kind === 'select' ? (f.options[0]?.value ?? '') : '']))
+  const blank = () =>
+    Object.fromEntries(
+      field.fields.map((f) => [
+        f.key,
+        f.kind === 'toggle'
+          ? false
+          : f.kind === 'number'
+            ? f.min
+            : f.kind === 'image'
+              ? null
+              : f.kind === 'select'
+                ? (f.options[0]?.value ?? '')
+                : '',
+      ])
+    )
   return (
     <div className="flex flex-col gap-2 sm:col-span-2">
-      <p className="text-[12.5px] text-ih-muted">
+      <p className="text-ih-muted text-[12.5px]">
         {field.label} ({items.length}/{field.max})
       </p>
       {items.map((item, i) => (
-        <div key={i} className="rounded-md border border-ih-border p-2">
+        <div key={i} className="border-ih-border rounded-md border p-2">
           <div className="mb-2 flex items-center justify-between">
-            <span className="text-[12.5px] font-medium text-ih-ink">
+            <span className="text-ih-ink text-[12.5px] font-medium">
               {field.itemLabel} {i + 1}
             </span>
             <span className="flex gap-0.5">
-              <Button type="button" kind="ghost" size="icon-xs" aria-label={`Move ${field.itemLabel} up`} disabled={i === 0} onClick={() => onChange(swap(items, i, i - 1))}>
+              <Button
+                type="button"
+                kind="ghost"
+                size="icon-xs"
+                aria-label={`Move ${field.itemLabel} up`}
+                disabled={i === 0}
+                onClick={() => onChange(swap(items, i, i - 1))}
+              >
                 <ArrowUp size={13} aria-hidden />
               </Button>
-              <Button type="button" kind="ghost" size="icon-xs" aria-label={`Move ${field.itemLabel} down`} disabled={i === items.length - 1} onClick={() => onChange(swap(items, i, i + 1))}>
+              <Button
+                type="button"
+                kind="ghost"
+                size="icon-xs"
+                aria-label={`Move ${field.itemLabel} down`}
+                disabled={i === items.length - 1}
+                onClick={() => onChange(swap(items, i, i + 1))}
+              >
                 <ArrowDown size={13} aria-hidden />
               </Button>
-              <Button type="button" kind="ghost" size="icon-xs" aria-label={`Remove ${field.itemLabel}`} disabled={items.length <= field.min} onClick={() => onChange(items.filter((_, j) => j !== i))}>
+              <Button
+                type="button"
+                kind="ghost"
+                size="icon-xs"
+                aria-label={`Remove ${field.itemLabel}`}
+                disabled={items.length <= field.min}
+                onClick={() => onChange(items.filter((_, j) => j !== i))}
+              >
                 <Trash2 size={13} aria-hidden />
               </Button>
             </span>
           </div>
           <div className="grid gap-2 sm:grid-cols-2">
             {field.fields.map((f) => (
-              <ScalarEditor key={f.key} field={f} value={item[f.key]} onChange={(v) => onChange(items.map((it, j) => (j === i ? { ...it, [f.key]: v } : it)))} />
+              <ScalarEditor
+                key={f.key}
+                field={f}
+                value={item[f.key]}
+                onChange={(v) =>
+                  onChange(items.map((it, j) => (j === i ? { ...it, [f.key]: v } : it)))
+                }
+              />
             ))}
           </div>
         </div>
       ))}
       {items.length < field.max ? (
         <div>
-          <Button type="button" kind="ghost" size="dense-sm" onClick={() => onChange([...items, blank()])}>
+          <Button
+            type="button"
+            kind="ghost"
+            size="dense-sm"
+            onClick={() => onChange([...items, blank()])}
+          >
             + Add {field.itemLabel.toLowerCase()}
           </Button>
         </div>
@@ -490,7 +817,15 @@ function swap<T>(arr: T[], i: number, j: number): T[] {
   return next
 }
 
-function RecordsEditor({ label, value, onChange }: { label: string; value: RecordsValue | null; onChange: (v: RecordsValue | null) => void }) {
+function RecordsEditor({
+  label,
+  value,
+  onChange,
+}: {
+  label: string
+  value: RecordsValue | null
+  onChange: (v: RecordsValue | null) => void
+}) {
   const current: RecordsValue = value ?? { kind: 'product', ids: [], labels: [], layout: 'grid' }
   const [q, setQ] = useState('')
   const [results, setResults] = useState<{ id: string; label: string; hint: string }[]>([])
@@ -517,7 +852,7 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
 
   return (
     <div className="flex flex-col gap-2 sm:col-span-2">
-      <p className="text-[12.5px] text-ih-muted">{label}</p>
+      <p className="text-ih-muted text-[12.5px]">{label}</p>
       <div className="flex flex-wrap gap-2">
         <Select
           aria-label="What to feature"
@@ -531,7 +866,12 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
             </option>
           ))}
         </Select>
-        <Select aria-label="Layout" value={current.layout} onChange={(e) => set({ layout: e.target.value as RecordsValue['layout'] })} className="w-44">
+        <Select
+          aria-label="Layout"
+          value={current.layout}
+          onChange={(e) => set({ layout: e.target.value as RecordsValue['layout'] })}
+          className="w-44"
+        >
           {RECORD_LAYOUTS.map((l) => (
             <option key={l} value={l}>
               {LAYOUT_LABEL[l] ?? l}
@@ -542,9 +882,21 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
       {current.ids.length ? (
         <ol className="flex flex-col gap-1">
           {current.ids.map((id, i) => (
-            <li key={id} className="flex items-center gap-2 rounded-md bg-ih-surface-2 px-2 py-1 text-[13px] text-ih-ink">
+            <li
+              key={id}
+              className="bg-ih-surface-2 text-ih-ink flex items-center gap-2 rounded-md px-2 py-1 text-[13px]"
+            >
               <span className="min-w-0 flex-1 truncate">{current.labels[i] ?? id}</span>
-              <Button type="button" kind="ghost" size="icon-xs" aria-label="Move up" disabled={i === 0} onClick={() => set({ ids: swap(current.ids, i, i - 1), labels: swap(current.labels, i, i - 1) })}>
+              <Button
+                type="button"
+                kind="ghost"
+                size="icon-xs"
+                aria-label="Move up"
+                disabled={i === 0}
+                onClick={() =>
+                  set({ ids: swap(current.ids, i, i - 1), labels: swap(current.labels, i, i - 1) })
+                }
+              >
                 <ArrowUp size={13} aria-hidden />
               </Button>
               <Button
@@ -552,7 +904,12 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
                 kind="ghost"
                 size="icon-xs"
                 aria-label={`Remove ${current.labels[i] ?? 'item'}`}
-                onClick={() => set({ ids: current.ids.filter((_, j) => j !== i), labels: current.labels.filter((_, j) => j !== i) })}
+                onClick={() =>
+                  set({
+                    ids: current.ids.filter((_, j) => j !== i),
+                    labels: current.labels.filter((_, j) => j !== i),
+                  })
+                }
               >
                 <Trash2 size={13} aria-hidden />
               </Button>
@@ -560,25 +917,40 @@ function RecordsEditor({ label, value, onChange }: { label: string; value: Recor
           ))}
         </ol>
       ) : (
-        <p className="text-[12.5px] text-ih-muted">Nothing picked yet.</p>
+        <p className="text-ih-muted text-[12.5px]">Nothing picked yet.</p>
       )}
-      <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder={`Search ${KIND_LABEL[current.kind].toLowerCase()}`} aria-label={`Search ${KIND_LABEL[current.kind]}`} />
-      {error ? <p role="alert" className="text-[12.5px] text-ih-danger-ink">{error}</p> : null}
-      <ul className="max-h-48 overflow-y-auto rounded-md border border-ih-border">
+      <Input
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        placeholder={`Search ${KIND_LABEL[current.kind].toLowerCase()}`}
+        aria-label={`Search ${KIND_LABEL[current.kind]}`}
+      />
+      {error ? (
+        <p role="alert" className="text-ih-danger-ink text-[12.5px]">
+          {error}
+        </p>
+      ) : null}
+      <ul className="border-ih-border max-h-48 overflow-y-auto rounded-md border">
         {results.map((r) => (
           <li key={r.id}>
             <button
               type="button"
               disabled={picked.has(r.id) || current.ids.length >= 12}
-              onClick={() => set({ ids: [...current.ids, r.id], labels: [...current.labels, r.label] })}
-              className="flex w-full items-baseline justify-between gap-2 px-2 py-1 text-left text-[13px] hover:bg-ih-surface-2 disabled:opacity-45"
+              onClick={() =>
+                set({ ids: [...current.ids, r.id], labels: [...current.labels, r.label] })
+              }
+              className="hover:bg-ih-surface-2 flex w-full items-baseline justify-between gap-2 px-2 py-1 text-left text-[13px] disabled:opacity-45"
             >
-              <span className="truncate text-ih-ink">{r.label}</span>
-              <span className="shrink-0 tabular-nums text-[11px] text-ih-muted">{picked.has(r.id) ? 'added' : r.hint}</span>
+              <span className="text-ih-ink truncate">{r.label}</span>
+              <span className="text-ih-muted shrink-0 text-[11px] tabular-nums">
+                {picked.has(r.id) ? 'added' : r.hint}
+              </span>
             </button>
           </li>
         ))}
-        {results.length === 0 ? <li className="px-2 py-1 text-[12.5px] text-ih-muted">No matches.</li> : null}
+        {results.length === 0 ? (
+          <li className="text-ih-muted px-2 py-1 text-[12.5px]">No matches.</li>
+        ) : null}
       </ul>
     </div>
   )

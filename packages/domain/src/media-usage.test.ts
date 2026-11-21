@@ -46,9 +46,9 @@ describe('deriveMediaState', () => {
   })
 
   test('live beats internal — one published usage is enough to matter', () => {
-    expect(
-      deriveMediaState([usage({ kind: 'rfq', internal: true }), usage({ live: true })])
-    ).toBe('live')
+    expect(deriveMediaState([usage({ kind: 'rfq', internal: true }), usage({ live: true })])).toBe(
+      'live'
+    )
   })
 
   test('is internal only when every usage is internal', () => {
@@ -156,9 +156,9 @@ describe('summariseUsage', () => {
   })
 
   test('reports kinds in display order, not first-seen order', () => {
-    expect(
-      summariseUsage([usage({ kind: 'quote' }), usage({ kind: 'blog_post' }), usage()])
-    ).toBe('1 product · 1 blog post · 1 quote')
+    expect(summariseUsage([usage({ kind: 'quote' }), usage({ kind: 'blog_post' }), usage()])).toBe(
+      '1 product · 1 blog post · 1 quote'
+    )
   })
 
   test('handles the irregular and invariant plurals', () => {
@@ -322,9 +322,9 @@ describe('collectHtmlMediaUrls', () => {
   })
 
   test('deduplicates repeated references', () => {
-    expect(
-      collectHtmlMediaUrls(`<img src="${BASE}/a.jpg"><img src="${BASE}/a.jpg">`)
-    ).toEqual([`${BASE}/a.jpg`])
+    expect(collectHtmlMediaUrls(`<img src="${BASE}/a.jpg"><img src="${BASE}/a.jpg">`)).toEqual([
+      `${BASE}/a.jpg`,
+    ])
   })
 
   test('returns nothing for empty, null and undefined bodies', () => {

@@ -44,7 +44,7 @@ export default function StartScrapeForm() {
           name="sourceUrl"
           type="url"
           placeholder="https://competitor.example/sitemap.xml"
-          className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent"
+          className="border-ih-border bg-ih-bg focus:ring-ih-accent h-9 w-full rounded-md border px-3 text-[13px] focus:ring-2 focus:outline-none"
         />
       </Field>
 
@@ -56,8 +56,10 @@ export default function StartScrapeForm() {
         <textarea
           name="urlListText"
           rows={6}
-          placeholder={'https://competitor.example/products/a10vso-71\nhttps://competitor.example/products/a4vg-125\n…'}
-          className="rounded-md w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] tabular-nums focus:outline-none focus:ring-2 focus:ring-ih-accent"
+          placeholder={
+            'https://competitor.example/products/a10vso-71\nhttps://competitor.example/products/a4vg-125\n…'
+          }
+          className="border-ih-border bg-ih-bg focus:ring-ih-accent w-full rounded-md border px-3 py-2 text-[13px] tabular-nums focus:ring-2 focus:outline-none"
         />
       </Field>
 
@@ -65,7 +67,7 @@ export default function StartScrapeForm() {
         <input
           name="notes"
           maxLength={500}
-          className="rounded-md h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px]"
+          className="border-ih-border bg-ih-bg h-9 w-full rounded-md border px-3 text-[13px]"
           placeholder="e.g. 'New competitor, axial-piston focus'"
         />
       </Field>
@@ -73,7 +75,7 @@ export default function StartScrapeForm() {
       {state.kind === 'error' && (
         <div
           role="alert"
-          className="rounded-lg border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-4 py-3 text-[13px]"
+          className="bg-ih-danger-soft rounded-lg border border-[oklch(0.4_0.18_25)] px-4 py-3 text-[13px] text-[oklch(0.3_0.18_25)]"
         >
           {state.message}
         </div>
@@ -83,12 +85,13 @@ export default function StartScrapeForm() {
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg tabular-nums text-[12px] tracking-wider uppercase disabled:opacity-50"
+          className="bg-ih-accent text-ih-accent-fg h-9 px-4 text-[12px] tracking-wider uppercase tabular-nums disabled:opacity-50"
         >
           {pending ? 'Starting…' : 'Start crawl'}
         </button>
-        <p className="text-[11px] text-ih-muted">
-          Discovery runs in the background — you&rsquo;ll land on the job page and watch progress live.
+        <p className="text-ih-muted text-[11px]">
+          Discovery runs in the background — you&rsquo;ll land on the job page and watch progress
+          live.
         </p>
       </div>
     </form>
@@ -108,14 +111,14 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] tabular-nums tracking-wider uppercase text-ih-muted">
+      <span className="text-ih-muted text-[12px] tracking-wider uppercase tabular-nums">
         {label}
       </span>
       {children}
       {error ? (
-        <span className="text-[12px] text-ih-danger-ink">{error}</span>
+        <span className="text-ih-danger-ink text-[12px]">{error}</span>
       ) : hint ? (
-        <span className="text-[11px] text-ih-muted">{hint}</span>
+        <span className="text-ih-muted text-[11px]">{hint}</span>
       ) : null}
     </label>
   )

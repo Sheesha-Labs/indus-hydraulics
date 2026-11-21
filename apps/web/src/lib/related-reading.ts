@@ -58,7 +58,7 @@ function dedupe(rows: Row[], limit: number): RelatedArticle[] {
 
 export async function getArticlesForProduct(
   productId: string,
-  limit = 3,
+  limit = 3
 ): Promise<RelatedArticle[]> {
   const links = await db.blogPostProduct.findMany({
     where: { productId, post: { isPublished: true } },
@@ -99,7 +99,7 @@ async function categoryAndDescendantIds(categoryId: string): Promise<string[]> {
  */
 export async function getArticlesForCategory(
   categoryId: string,
-  limit = 3,
+  limit = 3
 ): Promise<RelatedArticle[]> {
   const ids = await categoryAndDescendantIds(categoryId)
 
@@ -112,7 +112,10 @@ export async function getArticlesForCategory(
   })
   const own = categoryLinks.filter((l) => l.categoryId === categoryId)
   const below = categoryLinks.filter((l) => l.categoryId !== categoryId)
-  const fromCategories = dedupe([...own, ...below].map((l) => l.post), limit)
+  const fromCategories = dedupe(
+    [...own, ...below].map((l) => l.post),
+    limit
+  )
   if (fromCategories.length >= limit) return fromCategories
 
   const productLinks = await db.blogPostProduct.findMany({
@@ -126,7 +129,7 @@ export async function getArticlesForCategory(
   })
   return dedupe(
     [...[...own, ...below].map((l) => l.post), ...productLinks.map((l) => l.post)],
-    limit,
+    limit
   )
 }
 
@@ -140,7 +143,7 @@ export async function getArticlesForCategory(
  */
 export async function getRelatedReadingForProduct(
   product: { id: string; categoryId: string | null },
-  limit = 3,
+  limit = 3
 ): Promise<{ articles: RelatedArticle[]; heading: string }> {
   const direct = await getArticlesForProduct(product.id, limit)
   if (direct.length > 0 || !product.categoryId) {
@@ -163,7 +166,7 @@ export async function getRelatedReadingForProduct(
 export async function getMoreFromBlogCategory(
   blogCategoryId: string,
   exclude: readonly string[],
-  limit = 3,
+  limit = 3
 ): Promise<BlogPostCardData[]> {
   return listBlogPosts({ categoryId: blogCategoryId, excludeSlugs: exclude, take: limit })
 }
@@ -177,7 +180,10 @@ export async function getMoreFromBlogCategory(
  * posts, so a containment filter is acceptable where it would not be on a
  * product page.
  */
-export async function getArticlesForMarket(marketSlug: string, limit = 6): Promise<RelatedArticle[]> {
+export async function getArticlesForMarket(
+  marketSlug: string,
+  limit = 6
+): Promise<RelatedArticle[]> {
   const rows = await db.blogPost.findMany({
     where: {
       isPublished: true,

@@ -79,7 +79,7 @@ export async function listSubPageRecords(kind: SubPageKind): Promise<SubPageReco
 
 export async function findSubPageRecord(
   kind: SubPageKind,
-  slug: string,
+  slug: string
 ): Promise<SubPageRecord | null> {
   const records = await listSubPageRecords(kind)
   return records.find((r) => r.slug === slug) ?? null
@@ -87,7 +87,7 @@ export async function findSubPageRecord(
 
 /** How many pages of each kind exist, for the counts on the Pages index. */
 export async function countSubPageRecords(
-  kinds: readonly SubPageKind[],
+  kinds: readonly SubPageKind[]
 ): Promise<Record<string, number>> {
   const out: Record<string, number> = {}
   for (const kind of kinds) out[kind] = (await listSubPageRecords(kind)).length

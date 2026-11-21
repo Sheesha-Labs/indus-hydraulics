@@ -47,13 +47,13 @@ export default async function BrandsPage() {
   const sections: Record<string, ReactNode> = {
     hero: (
       <div>
-        <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+        <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
           {t(str(hero, 'eyebrow'))}
         </p>
-        <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
+        <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] leading-[1.06] font-normal tracking-[-0.01em]">
           {t(str(hero, 'heading'))}
         </h1>
-        <p className="mb-8 max-w-[680px] text-[16px] leading-[1.6] text-ih-ink-2">
+        <p className="text-ih-ink-2 mb-8 max-w-[680px] text-[16px] leading-[1.6]">
           {t(str(hero, 'body'))}
         </p>
       </div>
@@ -61,7 +61,7 @@ export default async function BrandsPage() {
 
     grid:
       brands.length === 0 ? (
-        <p className="rounded-lg border border-dashed border-ih-border px-6 py-12 text-center text-[15px] text-ih-muted">
+        <p className="border-ih-border text-ih-muted rounded-lg border border-dashed px-6 py-12 text-center text-[15px]">
           {str(grid, 'empty_message')}
         </p>
       ) : (
@@ -70,10 +70,10 @@ export default async function BrandsPage() {
             <Link
               key={brand.id}
               href={`/brands/${brand.slug}`}
-              className="group overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
+              className="group border-ih-border bg-ih-surface hover:border-ih-accent overflow-hidden rounded-lg border transition-colors"
             >
               {/* Brand hero area */}
-              <div className="relative grid aspect-[16/7] place-items-center border-b border-ih-border bg-ih-surface-2">
+              <div className="border-ih-border bg-ih-surface-2 relative grid aspect-[16/7] place-items-center border-b">
                 {brand.logo ? (
                   // A fixed box, not the file's own size: the logos range from
                   // 120px to 1200px wide and would otherwise render at wildly
@@ -88,23 +88,23 @@ export default async function BrandsPage() {
                     />
                   </div>
                 ) : (
-                  <span className="font-mono text-[22px] tracking-[-0.02em] text-ih-muted transition-colors group-hover:text-ih-accent">
+                  <span className="text-ih-muted group-hover:text-ih-accent font-mono text-[22px] tracking-[-0.02em] transition-colors">
                     {brand.name.toUpperCase()}
                   </span>
                 )}
                 {brand.country && (
-                  <span className="absolute right-2.5 top-2.5 rounded-[3px] bg-ih-steel-soft px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-[oklch(0.42_0.07_240)]">
+                  <span className="bg-ih-steel-soft absolute top-2.5 right-2.5 rounded-[3px] px-2 py-0.5 font-mono text-[10px] tracking-[0.06em] text-[oklch(0.42_0.07_240)] uppercase">
                     {brand.country}
                   </span>
                 )}
               </div>
               <div className="p-4">
                 {brand.description && (
-                  <p className="mb-3 line-clamp-2 text-[13px] leading-[1.5] text-ih-muted">
+                  <p className="text-ih-muted mb-3 line-clamp-2 text-[13px] leading-[1.5]">
                     {brand.description}
                   </p>
                 )}
-                <div className="flex items-center justify-between font-mono text-[11px] text-ih-muted">
+                <div className="text-ih-muted flex items-center justify-between font-mono text-[11px]">
                   <span>{brand._count.products} SKUs</span>
                   <span className="text-ih-accent">
                     {brand.isAuthorizedDistributor
@@ -126,7 +126,7 @@ export default async function BrandsPage() {
       </div>
 
       {content.order.map((key) =>
-        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null
       )}
     </div>
   )

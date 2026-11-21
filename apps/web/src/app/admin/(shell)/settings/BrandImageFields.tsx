@@ -18,7 +18,9 @@ export type BrandImageOption = { id: string; filename: string; url: string }
 function trimNote(trim: Extract<TrimResult, { status: 'trimmed' }>): string {
   const padding = Math.round((1 - trim.coverage) * 100)
   const size = `Now ${trim.width}×${trim.height}.`
-  return padding >= 2 ? `Cropped ${padding}% transparent padding. ${size}` : `Resized for the web. ${size}`
+  return padding >= 2
+    ? `Cropped ${padding}% transparent padding. ${size}`
+    : `Resized for the web. ${size}`
 }
 
 /**
@@ -64,7 +66,9 @@ function BrandImagePicker({
   const selectId = useId()
   const [library, setLibrary] = useState(options)
   const [busy, setBusy] = useState(false)
-  const [note, setNote] = useState<{ tone: 'success' | 'info' | 'danger'; text: string } | null>(null)
+  const [note, setNote] = useState<{ tone: 'success' | 'info' | 'danger'; text: string } | null>(
+    null
+  )
   const inputRef = useRef<HTMLInputElement>(null)
 
   const picked = library.find((o) => o.id === value)
@@ -79,9 +83,14 @@ function BrandImagePicker({
     }
     setNote({
       tone: 'success',
-      text: extra ? `Uploaded "${file.name}". ${extra}` : `Uploaded "${file.name}" to the media library.`,
+      text: extra
+        ? `Uploaded "${file.name}". ${extra}`
+        : `Uploaded "${file.name}" to the media library.`,
     })
-    setLibrary((cur) => [{ id: res.data.mediaId, filename: res.data.filename, url: res.data.url }, ...cur])
+    setLibrary((cur) => [
+      { id: res.data.mediaId, filename: res.data.filename, url: res.data.url },
+      ...cur,
+    ])
     onChange(res.data.mediaId)
     return true
   }
@@ -139,12 +148,12 @@ function BrandImagePicker({
   }
 
   return (
-    <div className="rounded-lg border border-ih-border bg-ih-surface p-4">
+    <div className="border-ih-border bg-ih-surface rounded-lg border p-4">
       <input type="hidden" name={name} value={value} />
 
       <label
         htmlFor={selectId}
-        className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2"
+        className="text-ih-muted mb-2 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums"
       >
         {label}
       </label>
@@ -157,7 +166,7 @@ function BrandImagePicker({
           previews on navy instead — that is the surface it actually lands on.
         */}
         <div
-          className={`rounded-lg relative shrink-0 overflow-hidden border border-ih-border ${
+          className={`border-ih-border relative shrink-0 overflow-hidden rounded-lg border ${
             previewOnInk ? 'bg-ih-navy' : 'bg-ih-surface-2 ih-checkerboard'
           } ${previewClassName}`}
         >
@@ -170,7 +179,7 @@ function BrandImagePicker({
             />
           ) : (
             <span
-              className={`absolute inset-0 grid place-items-center tabular-nums text-[11px] ${
+              className={`absolute inset-0 grid place-items-center text-[11px] tabular-nums ${
                 previewOnInk ? 'text-white/45' : 'text-ih-muted-2'
               }`}
             >
@@ -179,10 +188,10 @@ function BrandImagePicker({
           )}
         </div>
 
-        <div className="flex-1 min-w-0 flex flex-col gap-2">
+        <div className="flex min-w-0 flex-1 flex-col gap-2">
           <select
             id={selectId}
-            className="rounded-md w-full h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:border-ih-accent outline-none"
+            className="border-ih-border bg-ih-surface focus:border-ih-accent h-8 w-full rounded-md border px-2 text-[12px] outline-none"
             value={value}
             onChange={(e) => onChange(e.target.value)}
           >
@@ -199,7 +208,7 @@ function BrandImagePicker({
               type="button"
               disabled={busy}
               onClick={() => inputRef.current?.click()}
-              className="inline-flex items-center gap-1 text-[11.5px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
+              className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 text-[11.5px] disabled:opacity-50"
             >
               <Upload size={11} strokeWidth={1.8} />
               {busy ? 'Working…' : 'Upload new'}
@@ -210,7 +219,7 @@ function BrandImagePicker({
                   type="button"
                   disabled={busy}
                   onClick={() => void trimCurrent()}
-                  className="inline-flex items-center gap-1 text-[11.5px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
+                  className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 text-[11.5px] disabled:opacity-50"
                   title="Crop the transparent margin off this file and save the result as a new asset."
                 >
                   <Crop size={11} strokeWidth={1.8} /> Trim padding
@@ -218,7 +227,7 @@ function BrandImagePicker({
                 <button
                   type="button"
                   onClick={() => onChange('')}
-                  className="inline-flex items-center gap-1 text-[11.5px] text-ih-muted hover:text-ih-ink"
+                  className="text-ih-muted hover:text-ih-ink inline-flex items-center gap-1 text-[11.5px]"
                 >
                   <X size={11} /> Remove
                 </button>
@@ -226,7 +235,7 @@ function BrandImagePicker({
             ) : null}
           </div>
 
-          <p className="text-[11px] leading-[1.5] text-ih-muted">{help}</p>
+          <p className="text-ih-muted text-[11px] leading-[1.5]">{help}</p>
 
           {note ? (
             <p
@@ -285,33 +294,33 @@ export function LogoField({
       previewClassName="h-20 w-20"
       help={
         <>
-          PNG, WebP or AVIF with a transparent background. The top bar draws it 44px tall, so anything
-          above ~256px on the long edge is only weight. Artboard padding is cropped off on upload —
-          export it however you like. SVG is not accepted: it can carry script.
+          PNG, WebP or AVIF with a transparent background. The top bar draws it 44px tall, so
+          anything above ~256px on the long edge is only weight. Artboard padding is cropped off on
+          upload — export it however you like. SVG is not accepted: it can carry script.
         </>
       }
     >
       {/* Only meaningful once there is a logo — with none, both options render
           the same built-in mark and the choice is noise. */}
       <div className="mt-4">
-        <span className="block tabular-nums text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+        <span className="text-ih-muted mb-2 block text-[10.5px] font-medium tracking-[0.13em] uppercase tabular-nums">
           Placement
         </span>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
           {LOGO_STYLES.map((option) => (
             <button
               key={option}
               type="button"
               onClick={() => onStyleChange(option)}
               aria-pressed={style === option}
-              className={`rounded-md text-left border px-3 py-2 transition-colors ${
+              className={`rounded-md border px-3 py-2 text-left transition-colors ${
                 style === option
                   ? 'border-ih-accent bg-ih-accent-soft'
                   : 'border-ih-border hover:border-ih-accent'
               }`}
             >
-              <span className="block text-[13px] text-ih-ink">{LOGO_STYLE_LABEL[option]}</span>
-              <span className="block text-[11px] leading-[1.5] text-ih-muted mt-0.5">
+              <span className="text-ih-ink block text-[13px]">{LOGO_STYLE_LABEL[option]}</span>
+              <span className="text-ih-muted mt-0.5 block text-[11px] leading-[1.5]">
                 {LOGO_STYLE_DESCRIPTION[option]}
               </span>
             </button>
@@ -386,25 +395,25 @@ export function FaviconField({
       previewClassName="h-20 w-20"
       help={
         <>
-          Square PNG, 512×512 or smaller. This is read at 16px in a tab strip, so a full lockup turns
-          to mud — use the mark alone. Artboard padding is cropped off on upload, which matters more
-          here than anywhere: the browser fixes the size, so margin in the file is the one thing that
-          makes a favicon small. Browsers cache favicons hard — expect to hard-refresh, or to see the
-          old one for a while.
+          Square PNG, 512×512 or smaller. This is read at 16px in a tab strip, so a full lockup
+          turns to mud — use the mark alone. Artboard padding is cropped off on upload, which
+          matters more here than anywhere: the browser fixes the size, so margin in the file is the
+          one thing that makes a favicon small. Browsers cache favicons hard — expect to
+          hard-refresh, or to see the old one for a while.
         </>
       }
     >
       {/* Tab-strip rehearsal at true size. A favicon that looks fine in the
           80px preview and illegible here is the whole failure mode. */}
       <div className="mt-4 flex items-center gap-2">
-        <span className="rounded-t-md inline-flex items-center gap-1.5 border border-b-0 border-ih-border bg-ih-surface-2 px-2.5 py-1.5">
+        <span className="border-ih-border bg-ih-surface-2 inline-flex items-center gap-1.5 rounded-t-md border border-b-0 px-2.5 py-1.5">
           {/* Plain <img>: 16px is below every optimizer breakpoint, so
               next/image would only add a request for the same bytes. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={picked?.url} alt="" width={16} height={16} className="h-4 w-4 object-contain" />
-          <span className="text-[11px] text-ih-ink">{brandName}</span>
+          <span className="text-ih-ink text-[11px]">{brandName}</span>
         </span>
-        <span className="text-[11px] text-ih-muted">Tab preview, actual size</span>
+        <span className="text-ih-muted text-[11px]">Tab preview, actual size</span>
       </div>
     </BrandImagePicker>
   )
@@ -465,31 +474,31 @@ export function SearchLogoField({
         about the fallback when the field is empty.
       */}
       <div className="mt-4">
-        <div className="rounded-lg border border-ih-border bg-ih-surface-2 px-3 py-2.5">
+        <div className="border-ih-border bg-ih-surface-2 rounded-lg border px-3 py-2.5">
           <div className="flex items-center gap-2">
-            <span className="grid h-7 w-7 shrink-0 place-items-center overflow-hidden rounded-full border border-ih-border bg-ih-surface">
+            <span className="border-ih-border bg-ih-surface grid h-7 w-7 shrink-0 place-items-center overflow-hidden rounded-full border">
               {shown ? (
                 /* Plain <img>: 28px is below every optimizer breakpoint. */
                 /* eslint-disable-next-line @next/next/no-img-element */
                 <img src={shown} alt="" width={20} height={20} className="h-5 w-5 object-contain" />
               ) : (
-                <span className="h-3 w-3 rounded-full bg-ih-muted-2" />
+                <span className="bg-ih-muted-2 h-3 w-3 rounded-full" />
               )}
             </span>
             <span className="min-w-0">
-              <span className="block truncate text-[12px] text-ih-ink">{brandName}</span>
-              <span className="block truncate text-[11px] text-ih-muted">indushydraulics.com</span>
+              <span className="text-ih-ink block truncate text-[12px]">{brandName}</span>
+              <span className="text-ih-muted block truncate text-[11px]">indushydraulics.com</span>
             </span>
           </div>
-          <span className="mt-1.5 block text-[13px] text-ih-accent">
+          <span className="text-ih-accent mt-1.5 block text-[13px]">
             {brandName} — Industrial Hydraulic Components
           </span>
-          <span className="mt-0.5 block text-[11.5px] leading-[1.5] text-ih-muted">
+          <span className="text-ih-muted mt-0.5 block text-[11.5px] leading-[1.5]">
             {tagline ??
               'Pumps, cylinders, valves, hoses and consumables for engineers who can’t afford downtime.'}
           </span>
         </div>
-        <p className="mt-1.5 text-[11px] text-ih-muted">
+        <p className="text-ih-muted mt-1.5 text-[11px]">
           {picked
             ? 'Search-result preview, approximate size'
             : 'Search-result preview — currently showing the fallback'}

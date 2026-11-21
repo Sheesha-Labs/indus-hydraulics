@@ -26,17 +26,12 @@ export function SerpPreview({
   const descClass =
     variant === 'desktop' ? 'text-[14px] leading-[1.45]' : 'text-[13px] leading-[1.45]'
   return (
-    <div
-      className={cn(
-        'border border-ih-border bg-white p-4 max-w-[600px]',
-        className,
-      )}
-    >
-      <div className="text-[12px] text-[#5f6368] mb-1 truncate">{prettyUrl(url)}</div>
-      <div className={cn('text-[#1a0dab] font-normal truncate', titleClass)}>
+    <div className={cn('border-ih-border max-w-[600px] border bg-white p-4', className)}>
+      <div className="mb-1 truncate text-[12px] text-[#5f6368]">{prettyUrl(url)}</div>
+      <div className={cn('truncate font-normal text-[#1a0dab]', titleClass)}>
         {title || 'No title'}
       </div>
-      <div className={cn('text-[#4d5156] mt-1 line-clamp-2', descClass)}>
+      <div className={cn('mt-1 line-clamp-2 text-[#4d5156]', descClass)}>
         {description || 'No description'}
       </div>
     </div>

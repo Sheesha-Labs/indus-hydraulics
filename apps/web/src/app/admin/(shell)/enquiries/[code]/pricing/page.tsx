@@ -26,18 +26,32 @@ export default async function EnquiryPricingPage({ params }: Props) {
       lines: {
         orderBy: { position: 'asc' },
         select: {
-          id: true, position: true, description: true, qty: true, unit: true,
+          id: true,
+          position: true,
+          description: true,
+          qty: true,
+          unit: true,
           offerLines: {
             orderBy: { unitPrice: 'asc' },
             select: {
-              id: true, unitPrice: true, moq: true, leadTimeDays: true, kind: true,
-              selectedAt: true, reviewFlags: true, sourceQuote: true,
+              id: true,
+              unitPrice: true,
+              moq: true,
+              leadTimeDays: true,
+              kind: true,
+              selectedAt: true,
+              reviewFlags: true,
+              sourceQuote: true,
               offer: { select: { supplierName: true, currency: true, incoterm: true } },
             },
           },
         },
       },
-      quotes: { orderBy: { revision: 'desc' }, take: 1, select: { code: true, revision: true, total: true } },
+      quotes: {
+        orderBy: { revision: 'desc' },
+        take: 1,
+        select: { code: true, revision: true, total: true },
+      },
     },
   })
   if (!enquiry) notFound()
@@ -49,7 +63,7 @@ export default async function EnquiryPricingPage({ params }: Props) {
     <AdminPageShell
       title="Pricing"
       breadcrumbs={
-        <span className="tabular-nums text-[12px] text-ih-muted">
+        <span className="text-ih-muted text-[12px] tabular-nums">
           {enquiry.code} · {selectedCount} of {enquiry.lines.length} lines priced
           {latestQuote ? ` · ${latestQuote.code}` : ''}
         </span>
@@ -72,46 +86,58 @@ export default async function EnquiryPricingPage({ params }: Props) {
           enquiry.lines.map((line) => (
             <Panel key={line.id}>
               <header className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-                <h2 className="text-[15px] font-medium text-ih-ink">
+                <h2 className="text-ih-ink text-[15px] font-medium">
                   {line.position}. {line.description}
                 </h2>
-                <span className="tabular-nums text-[12px] text-ih-muted">
+                <span className="text-ih-muted text-[12px] tabular-nums">
                   {line.qty ? `${line.qty.toString()} ${line.unit ?? ''}`.trim() : 'qty to confirm'}
                 </span>
               </header>
 
               {line.offerLines.length === 0 ? (
-                <p className="text-[13px] text-ih-muted">
-                  No supplier has quoted this line yet.
-                </p>
+                <p className="text-ih-muted text-[13px]">No supplier has quoted this line yet.</p>
               ) : (
                 <ul className="flex flex-col gap-2">
                   {line.offerLines.map((o) => {
                     const cost = o.unitPrice ? Number(o.unitPrice) : null
                     const preview =
-                      cost != null ? applyMarkup(cost, { mode: 'percentage', value: PREVIEW_MARKUP }) : null
+                      cost != null
+                        ? applyMarkup(cost, { mode: 'percentage', value: PREVIEW_MARKUP })
+                        : null
                     return (
                       <li
                         key={o.id}
-                        className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-ih-border bg-ih-surface px-3 py-2"
+                        className="border-ih-border bg-ih-surface flex flex-wrap items-center justify-between gap-3 rounded-lg border px-3 py-2"
                       >
                         <div className="flex flex-col gap-0.5">
                           <div className="flex items-center gap-2">
-                            <span className="text-[14px] text-ih-ink">{o.offer.supplierName}</span>
-                            {o.selectedAt ? <StatusPill tone="success" size="sm">Selected</StatusPill> : null}
+                            <span className="text-ih-ink text-[14px]">{o.offer.supplierName}</span>
+                            {o.selectedAt ? (
+                              <StatusPill tone="success" size="sm">
+                                Selected
+                              </StatusPill>
+                            ) : null}
                             {o.kind === 'alternative' ? (
-                              <StatusPill tone="warning" size="sm">Alternative part</StatusPill>
+                              <StatusPill tone="warning" size="sm">
+                                Alternative part
+                              </StatusPill>
                             ) : null}
                             {o.kind === 'declined' ? (
-                              <StatusPill tone="danger" size="sm">Declined</StatusPill>
+                              <StatusPill tone="danger" size="sm">
+                                Declined
+                              </StatusPill>
                             ) : null}
                           </div>
-                          <span className="tabular-nums text-[12px] text-ih-muted">
-                            {cost != null ? `${o.offer.currency ?? ''} ${cost}`.trim() : 'no readable price'}
+                          <span className="text-ih-muted text-[12px] tabular-nums">
+                            {cost != null
+                              ? `${o.offer.currency ?? ''} ${cost}`.trim()
+                              : 'no readable price'}
                             {o.moq ? ` · MOQ ${o.moq.toString()}` : ''}
                             {o.leadTimeDays ? ` · ${o.leadTimeDays}d` : ''}
                             {o.offer.incoterm ? ` · ${o.offer.incoterm}` : ''}
-                            {preview ? ` · sells at ${preview.sellPerUnitAed} (${preview.marginPct}% margin)` : ''}
+                            {preview
+                              ? ` · sells at ${preview.sellPerUnitAed} (${preview.marginPct}% margin)`
+                              : ''}
                           </span>
                         </div>
                         {cost != null && o.kind !== 'declined' ? (
@@ -134,8 +160,8 @@ export default async function EnquiryPricingPage({ params }: Props) {
         {selectedCount > 0 ? (
           <Panel>
             <header className="mb-4 flex flex-col gap-1">
-              <h2 className="text-[15px] font-medium text-ih-ink">Generate the estimate</h2>
-              <p className="text-[13px] text-ih-muted">
+              <h2 className="text-ih-ink text-[15px] font-medium">Generate the estimate</h2>
+              <p className="text-ih-muted text-[13px]">
                 Uses your existing Estimate template. A 30% markup is a 23.08% margin — pick the
                 mode you actually mean.
               </p>

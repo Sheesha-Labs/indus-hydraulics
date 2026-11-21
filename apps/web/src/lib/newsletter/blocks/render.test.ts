@@ -1,7 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import { BLOCKS } from './catalogue'
 import { DEFAULT_SETTINGS, emptyDesign, newBlock } from './document'
-import { recordKey, renderBlock, renderDesign, renderShell, type DesignRenderContext, type ResolvedRecord } from './render'
+import {
+  recordKey,
+  renderBlock,
+  renderDesign,
+  renderShell,
+  type DesignRenderContext,
+  type ResolvedRecord,
+} from './render'
 import { RECORD_LAYOUTS, type Design } from './types'
 
 const SITE = 'https://indushydraulics.com'
@@ -9,17 +16,44 @@ const UNSUB = `${SITE}/newsletter/unsubscribe/tok123`
 const REASON = 'You are receiving this because you subscribed to the Indus Hydraulics newsletter.'
 
 const records: ResolvedRecord[] = [
-  { kind: 'product', id: 'p1', title: '2SN hydraulic hose', subtitle: 'Two-wire braid', meta: 'IH-2SN-08', url: '/p/2sn-hose', imageUrl: 'https://cdn.example.com/hose.jpg', imageAlt: 'Coil of 2SN hose' },
-  { kind: 'product', id: 'p2', title: 'JIC female swivel', url: `${SITE}/p/jic-swivel`, imageUrl: null },
+  {
+    kind: 'product',
+    id: 'p1',
+    title: '2SN hydraulic hose',
+    subtitle: 'Two-wire braid',
+    meta: 'IH-2SN-08',
+    url: '/p/2sn-hose',
+    imageUrl: 'https://cdn.example.com/hose.jpg',
+    imageAlt: 'Coil of 2SN hose',
+  },
+  {
+    kind: 'product',
+    id: 'p2',
+    title: 'JIC female swivel',
+    url: `${SITE}/p/jic-swivel`,
+    imageUrl: null,
+  },
   { kind: 'article', id: 'a1', title: 'How to read a hose layline', url: '/blog/hose-layline' },
-  { kind: 'brand', id: 'b1', title: 'Parker', subtitle: 'Authorised distributor', meta: 'USA', url: '/brands/parker', imageUrl: 'https://cdn.example.com/parker.jpg', imageAlt: 'Parker hose fittings' },
+  {
+    kind: 'brand',
+    id: 'b1',
+    title: 'Parker',
+    subtitle: 'Authorised distributor',
+    meta: 'USA',
+    url: '/brands/parker',
+    imageUrl: 'https://cdn.example.com/parker.jpg',
+    imageAlt: 'Parker hose fittings',
+  },
 ]
 
 const ctx = (over: Partial<DesignRenderContext> = {}): DesignRenderContext => ({
   siteUrl: SITE,
   subject: 'November update',
   preheader: 'New hose and fittings in stock',
-  brand: { legalName: 'Indus Hydraulics', addressLines: ['Warehouse 1', 'Dubai, United Arab Emirates'] },
+  brand: {
+    legalName: 'Indus Hydraulics',
+    addressLines: ['Warehouse 1', 'Dubai, United Arab Emirates'],
+  },
   records: new Map(records.map((r) => [recordKey(r.kind, r.id), r])),
   unsubscribeUrl: UNSUB,
   footerReason: REASON,
@@ -40,7 +74,10 @@ describe('renderDesign document', () => {
   })
 
   it('escapes the subject and preheader', () => {
-    const { html } = renderDesign(emptyDesign(), ctx({ subject: '<b>x</b>', preheader: '"><img src=x>' }))
+    const { html } = renderDesign(
+      emptyDesign(),
+      ctx({ subject: '<b>x</b>', preheader: '"><img src=x>' })
+    )
     expect(html).toContain('<title>&lt;b&gt;x&lt;/b&gt;</title>')
     expect(html).not.toContain('"><img src=x>')
   })
@@ -73,13 +110,21 @@ describe('legal footer', () => {
 
   it('links to "#" with the same text in a preview (no unsubscribe URL)', () => {
     const out = renderDesign(emptyDesign(), ctx({ unsubscribeUrl: null }))
-    expect(out.html).toContain('<a href="#" style="color:#ffffff;text-decoration:underline;">Unsubscribe</a>')
+    expect(out.html).toContain(
+      '<a href="#" style="color:#ffffff;text-decoration:underline;">Unsubscribe</a>'
+    )
     expect(out.text).toContain('Unsubscribe: #')
     expect(out.html).not.toContain('tok123')
   })
 
   it('escapes the legal name, address and reason', () => {
-    const out = renderDesign(emptyDesign(), ctx({ brand: { legalName: '<i>Co</i>', addressLines: ['<b>'] }, footerReason: '<script>x</script>' }))
+    const out = renderDesign(
+      emptyDesign(),
+      ctx({
+        brand: { legalName: '<i>Co</i>', addressLines: ['<b>'] },
+        footerReason: '<script>x</script>',
+      })
+    )
     expect(out.html).not.toMatch(/<i>Co|<b>|<script>/)
     expect(out.html).toContain('&lt;script&gt;x&lt;/script&gt;')
   })
@@ -87,7 +132,10 @@ describe('legal footer', () => {
 
 describe('renderShell', () => {
   it('wraps inner html verbatim in the document, with the footer and unsubscribe link', () => {
-    const inner = { html: '<p style="padding:0 32px">Rich <em>text</em> body</p>', text: 'Rich text body' }
+    const inner = {
+      html: '<p style="padding:0 32px">Rich <em>text</em> body</p>',
+      text: 'Rich text body',
+    }
     const out = renderShell(inner, DEFAULT_SETTINGS, ctx())
     expect(out.html).toContain(inner.html)
     expect(out.html).toContain('<!DOCTYPE html>')
@@ -104,15 +152,22 @@ describe('renderShell', () => {
     // Same chrome either side of the content: everything before the content cell, and the footer onwards.
     const cell = '<tr><td style="padding:0;'
     const footer = '<tr><td bgcolor="#122942"'
-    expect(out.html.slice(0, out.html.indexOf(cell))).toBe(shell.html.slice(0, shell.html.indexOf(cell)))
-    expect(out.html.slice(out.html.indexOf(footer))).toBe(shell.html.slice(shell.html.indexOf(footer)))
+    expect(out.html.slice(0, out.html.indexOf(cell))).toBe(
+      shell.html.slice(0, shell.html.indexOf(cell))
+    )
+    expect(out.html.slice(out.html.indexOf(footer))).toBe(
+      shell.html.slice(shell.html.indexOf(footer))
+    )
     expect(out.html.slice(out.html.indexOf(cell), out.html.indexOf(footer))).toContain('Same shell')
   })
 })
 
 describe('escaping', () => {
   it('escapes a script in a heading, in the html', () => {
-    const { html, text } = renderDesign(design(newBlock('heading', { heading: '<script>alert(1)</script>' })), ctx())
+    const { html, text } = renderDesign(
+      design(newBlock('heading', { heading: '<script>alert(1)</script>' })),
+      ctx()
+    )
     expect(html).not.toContain('<script>')
     expect(html).toContain('&lt;script&gt;alert(1)&lt;/script&gt;')
     expect(text).toContain('<script>alert(1)</script>')
@@ -120,14 +175,20 @@ describe('escaping', () => {
 
   it('escapes an attribute-breaking alt', () => {
     const evil = '"><img onerror=x>'
-    const { html } = renderDesign(design(newBlock('image', { image: { url: 'https://cdn.example.com/a.jpg' }, alt: evil })), ctx())
+    const { html } = renderDesign(
+      design(newBlock('image', { image: { url: 'https://cdn.example.com/a.jpg' }, alt: evil })),
+      ctx()
+    )
     expect(html).not.toContain(evil)
     expect(html).not.toContain('<img onerror')
     expect(html).toContain('alt="&quot;&gt;&lt;img onerror=x&gt;"')
   })
 
   it('never emits raw HTML from a textarea, and keeps paragraphs and line breaks', () => {
-    const { html } = renderDesign(design(newBlock('text', { text: '<b>one</b>\nline two\n\n**para** two' })), ctx())
+    const { html } = renderDesign(
+      design(newBlock('text', { text: '<b>one</b>\nline two\n\n**para** two' })),
+      ctx()
+    )
     expect(html).not.toContain('<b>one</b>')
     expect(html).toContain('&lt;b&gt;one&lt;/b&gt;<br>line two</p>')
     expect(html).toMatch(/<p [^>]*><strong>para<\/strong> two<\/p>/)
@@ -135,7 +196,12 @@ describe('escaping', () => {
 })
 
 describe('links', () => {
-  const bad = ['javascript:alert(1)', 'data:text/html;base64,PHNjcmlwdD4=', '//evil.com', 'vbscript:x']
+  const bad = [
+    'javascript:alert(1)',
+    'data:text/html;base64,PHNjcmlwdD4=',
+    '//evil.com',
+    'vbscript:x',
+  ]
 
   it.each(bad)('never emits %s as an href, anywhere a link can go', (url) => {
     const d = design(
@@ -144,7 +210,7 @@ describe('links', () => {
       newBlock('image', { image: { url: 'https://cdn.example.com/a.jpg' }, alt: 'A', link: url }),
       newBlock('social', { items: [{ network: 'website', url }] }),
       newBlock('contact', { links: [{ label: 'L', url }] }),
-      newBlock('cta-band', { primaryUrl: url, secondaryUrl: url }),
+      newBlock('cta-band', { primaryUrl: url, secondaryUrl: url })
     )
     const { html, text } = renderDesign(d, ctx())
     const hrefs = [...html.matchAll(/href="([^"]*)"/g)].map((m) => m[1])
@@ -154,14 +220,19 @@ describe('links', () => {
   })
 
   it('makes a site path absolute', () => {
-    const { html, text } = renderDesign(design(newBlock('button', { label: 'Hoses', url: '/c/hoses' })), ctx())
+    const { html, text } = renderDesign(
+      design(newBlock('button', { label: 'Hoses', url: '/c/hoses' })),
+      ctx()
+    )
     expect(html).toContain('href="https://indushydraulics.com/c/hoses"')
     expect(text).toContain('Hoses: https://indushydraulics.com/c/hoses')
   })
 
   it('keeps mailto, tel and https, and fills the known tokens', () => {
     const d = design(
-      newBlock('text', { text: '[Mail](mailto:sales@indushydraulics.com) [Call](tel:+97140000000) [Blog]({{site_url}}/blog) [Leave]({{unsubscribe_url}})' }),
+      newBlock('text', {
+        text: '[Mail](mailto:sales@indushydraulics.com) [Call](tel:+97140000000) [Blog]({{site_url}}/blog) [Leave]({{unsubscribe_url}})',
+      })
     )
     const { html } = renderDesign(d, ctx())
     expect(html).toContain('href="mailto:sales@indushydraulics.com"')
@@ -171,7 +242,10 @@ describe('links', () => {
   })
 
   it('draws an unusable link as plain text', () => {
-    const { html } = renderDesign(design(newBlock('text', { text: 'See [our page](vbscript:x) now' })), ctx())
+    const { html } = renderDesign(
+      design(newBlock('text', { text: 'See [our page](vbscript:x) now' })),
+      ctx()
+    )
     expect(html).toContain('See our page now')
   })
 })
@@ -179,8 +253,10 @@ describe('links', () => {
 describe('images', () => {
   it('loads only https or site images, always with an alt and a fluid width', () => {
     const d = design(
-      newBlock('image', { image: { url: 'https://cdn.example.com/a.jpg', alt: 'From the library' } }),
-      newBlock('image', { image: { url: '/media/b.jpg' }, alt: 'Site photo' }),
+      newBlock('image', {
+        image: { url: 'https://cdn.example.com/a.jpg', alt: 'From the library' },
+      }),
+      newBlock('image', { image: { url: '/media/b.jpg' }, alt: 'Site photo' })
     )
     const { html } = renderDesign(d, ctx())
     const imgs = [...html.matchAll(/<img [^>]*>/g)].map((m) => m[0])
@@ -195,30 +271,47 @@ describe('images', () => {
   })
 
   it('draws an image block with no usable picture as nothing', () => {
-    expect(renderBlock(newBlock('image', { image: { url: 'http://insecure/x.jpg' } }), ctx())).toBe('')
+    expect(renderBlock(newBlock('image', { image: { url: 'http://insecure/x.jpg' } }), ctx())).toBe(
+      ''
+    )
   })
 })
 
 describe('records block', () => {
   const block = (layout: string, ids = ['p1', 'missing', 'p2']) =>
-    newBlock('records', { heading: 'New in stock', records: { kind: 'product', ids, labels: ids.map(() => ''), layout } })
+    newBlock('records', {
+      heading: 'New in stock',
+      records: { kind: 'product', ids, labels: ids.map(() => ''), layout },
+    })
 
-  it.each(RECORD_LAYOUTS)('draws resolved records with their urls in the %s layout, skipping missing ids', (layout) => {
-    const { html, text } = renderDesign(design(block(layout)), ctx())
-    expect(html).toContain('New in stock')
-    expect(html).toContain('2SN hydraulic hose')
-    expect(html).toContain('JIC female swivel')
-    expect(html).toContain('href="https://indushydraulics.com/p/2sn-hose"')
-    expect(html).toContain('href="https://indushydraulics.com/p/jic-swivel"')
-    expect(html).toContain('alt="Coil of 2SN hose"')
-    expect(html).not.toContain('missing')
-    expect(text).toContain('2SN hydraulic hose — Two-wire braid\nhttps://indushydraulics.com/p/2sn-hose')
-    expect(text).toContain('JIC female swivel\nhttps://indushydraulics.com/p/jic-swivel')
-    expect(html.indexOf('2SN hydraulic hose')).toBeLessThan(html.indexOf('JIC female swivel'))
-  })
+  it.each(RECORD_LAYOUTS)(
+    'draws resolved records with their urls in the %s layout, skipping missing ids',
+    (layout) => {
+      const { html, text } = renderDesign(design(block(layout)), ctx())
+      expect(html).toContain('New in stock')
+      expect(html).toContain('2SN hydraulic hose')
+      expect(html).toContain('JIC female swivel')
+      expect(html).toContain('href="https://indushydraulics.com/p/2sn-hose"')
+      expect(html).toContain('href="https://indushydraulics.com/p/jic-swivel"')
+      expect(html).toContain('alt="Coil of 2SN hose"')
+      expect(html).not.toContain('missing')
+      expect(text).toContain(
+        '2SN hydraulic hose — Two-wire braid\nhttps://indushydraulics.com/p/2sn-hose'
+      )
+      expect(text).toContain('JIC female swivel\nhttps://indushydraulics.com/p/jic-swivel')
+      expect(html.indexOf('2SN hydraulic hose')).toBeLessThan(html.indexOf('JIC female swivel'))
+    }
+  )
 
   it('reads only records of its own kind', () => {
-    const { html } = renderDesign(design(newBlock('records', { records: { kind: 'article', ids: ['p1', 'a1'], labels: [], layout: 'list' } })), ctx())
+    const { html } = renderDesign(
+      design(
+        newBlock('records', {
+          records: { kind: 'article', ids: ['p1', 'a1'], labels: [], layout: 'list' },
+        })
+      ),
+      ctx()
+    )
     expect(html).toContain('How to read a hose layline')
     expect(html).not.toContain('2SN hydraulic hose')
   })
@@ -237,7 +330,11 @@ describe('records block', () => {
 
 describe('text alternative', () => {
   it('carries headings, prose and links as "label: url"', () => {
-    const d = design(newBlock('heading', { heading: 'This month' }), newBlock('text', { text: 'Read [the guide](/blog/x).' }), newBlock('button'))
+    const d = design(
+      newBlock('heading', { heading: 'This month' }),
+      newBlock('text', { text: 'Read [the guide](/blog/x).' }),
+      newBlock('button')
+    )
     const { text } = renderDesign(d, ctx())
     expect(text).toContain('This month')
     expect(text).toContain('Read the guide: https://indushydraulics.com/blog/x.')
@@ -248,7 +345,13 @@ describe('text alternative', () => {
 
 describe('offer block', () => {
   it('draws the badge, offer, quote reference, terms and button', () => {
-    const block = newBlock('offer', { badge: '15% off', heading: 'Fittings offer', text: 'On all JIC fittings.', code: 'NOV-15', terms: 'Valid to 30 Nov.' })
+    const block = newBlock('offer', {
+      badge: '15% off',
+      heading: 'Fittings offer',
+      text: 'On all JIC fittings.',
+      code: 'NOV-15',
+      terms: 'Valid to 30 Nov.',
+    })
     const { html, text } = renderDesign(design(block), ctx())
     expect(html).toContain('15% off')
     expect(html).toContain('Fittings offer')
@@ -260,7 +363,9 @@ describe('offer block', () => {
   })
 
   it('draws the products it covers from live records and drops missing ones', () => {
-    const block = newBlock('offer', { records: { kind: 'product', ids: ['p1', 'gone'], labels: ['2SN', 'Gone'], layout: 'grid' } })
+    const block = newBlock('offer', {
+      records: { kind: 'product', ids: ['p1', 'gone'], labels: ['2SN', 'Gone'], layout: 'grid' },
+    })
     const { html } = renderDesign(design(block), ctx())
     expect(html).toContain('2SN hydraulic hose')
     expect(html).not.toContain('Gone')
@@ -275,7 +380,10 @@ describe('offer block', () => {
 
 describe('brand records', () => {
   it('draw a brand card with its photo and link', () => {
-    const block = newBlock('records', { heading: 'Brands', records: { kind: 'brand', ids: ['b1'], labels: ['Parker'], layout: 'cards' } })
+    const block = newBlock('records', {
+      heading: 'Brands',
+      records: { kind: 'brand', ids: ['b1'], labels: ['Parker'], layout: 'cards' },
+    })
     const { html } = renderDesign(design(block), ctx())
     expect(html).toContain('Parker')
     expect(html).toContain('/brands/parker')

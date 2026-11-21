@@ -17,10 +17,7 @@ export type BrandUpsertResult = {
  * driven step (`/admin/brands/[id]/edit` SEO tab + the list-page modal for
  * core fields). The PR body documents this for editors.
  */
-export async function upsertBrand(
-  payload: BrandPayload,
-  tx: Tx,
-): Promise<BrandUpsertResult> {
+export async function upsertBrand(payload: BrandPayload, tx: Tx): Promise<BrandUpsertResult> {
   const existing = await tx.brand.findUnique({
     where: { slug: payload.slug },
     select: { id: true },

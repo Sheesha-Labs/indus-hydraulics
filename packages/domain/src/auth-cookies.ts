@@ -108,8 +108,14 @@ export const staffCookies: AuthCookieConfig = {
   csrfToken: { name: `${PREFIX}indus.staff-csrf`, options: base(STAFF_COOKIE_PATH) },
   // Credentials-only surface, so these are never issued. Named anyway, so that
   // adding an OAuth provider later cannot silently inherit a shared default.
-  pkceCodeVerifier: { name: `${PREFIX}indus.staff-pkce`, options: { ...base(STAFF_COOKIE_PATH), maxAge: 900 } },
-  state: { name: `${PREFIX}indus.staff-state`, options: { ...base(STAFF_COOKIE_PATH), maxAge: 900 } },
+  pkceCodeVerifier: {
+    name: `${PREFIX}indus.staff-pkce`,
+    options: { ...base(STAFF_COOKIE_PATH), maxAge: 900 },
+  },
+  state: {
+    name: `${PREFIX}indus.staff-state`,
+    options: { ...base(STAFF_COOKIE_PATH), maxAge: 900 },
+  },
   nonce: { name: `${PREFIX}indus.staff-nonce`, options: base(STAFF_COOKIE_PATH) },
 }
 
@@ -127,7 +133,7 @@ export function requireAuthSecret(name: 'STAFF_AUTH_SECRET'): string {
   if (!value || value.length < 32) {
     throw new Error(
       `${name} is missing or shorter than 32 characters. ` +
-        `Generate with: openssl rand -base64 32`,
+        `Generate with: openssl rand -base64 32`
     )
   }
   return value

@@ -84,7 +84,7 @@ export const TAB_ICON_PATH = '/tab-icon.png'
 export function resolveTabIcon(urls: BrandUrls, baseUrl: string): string | null {
   return resolveSearchIcon(
     { searchLogoUrl: urls.faviconUrl, faviconUrl: urls.searchLogoUrl, logoUrl: urls.logoUrl },
-    baseUrl,
+    baseUrl
   )
 }
 

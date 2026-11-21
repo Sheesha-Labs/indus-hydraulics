@@ -36,13 +36,15 @@ export default function CalloutBlockView({ block }: { block: CalloutBlock }) {
       className={`rounded-lg border px-[22px] py-5 ${tone.box}`}
     >
       <p
-        className={`flex items-center gap-2 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] ${tone.label}`}
+        className={`flex items-center gap-2 font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase ${tone.label}`}
       >
         <tone.Icon />
         {tone.name}
       </p>
-      <h3 className="mt-2.5 text-[17px] font-semibold leading-[1.35] tracking-[-0.01em] text-ih-ink">{block.title}</h3>
-      <p className="mt-1.5 text-[15px] leading-[1.65] text-ih-ink-2">{block.body}</p>
+      <h3 className="text-ih-ink mt-2.5 text-[17px] leading-[1.35] font-semibold tracking-[-0.01em]">
+        {block.title}
+      </h3>
+      <p className="text-ih-ink-2 mt-1.5 text-[15px] leading-[1.65]">{block.body}</p>
     </aside>
   )
 }

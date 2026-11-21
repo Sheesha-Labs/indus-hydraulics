@@ -52,7 +52,10 @@ const FAQS = [
 
 const SECTIONS = [
   { id: 'how-returns-work-in-our-business', title: '1. How returns work in our business' },
-  { id: 'inspection-window-damage-shortage-wrong-item', title: '2. Inspection window — damage, shortage, wrong item' },
+  {
+    id: 'inspection-window-damage-shortage-wrong-item',
+    title: '2. Inspection window — damage, shortage, wrong item',
+  },
   { id: 'returnable-items', title: '3. Returnable items' },
   { id: 'non-returnable-items', title: '4. Non-returnable items' },
   { id: 'restocking-fee', title: '5. Restocking fee' },
@@ -73,8 +76,8 @@ export default async function ReturnsPage({ params }: Props) {
 
   if (cms?.isPublished) {
     return (
-      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
+      <article className="mx-auto max-w-[820px] px-8 py-16 pb-24">
+        <h1 className="mb-2 text-[36px] font-semibold tracking-tight">{cms.title}</h1>
         <div
           className="ih-rich-text text-[15px] leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: cms.body }}
@@ -96,11 +99,18 @@ export default async function ReturnsPage({ params }: Props) {
   })
 
   return (
-    <PolicyLayout slug="returns" title="Returns &amp; RMA Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
+    <PolicyLayout
+      slug="returns"
+      title="Returns &amp; RMA Policy"
+      effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`}
+      sections={SECTIONS}
+    >
       <JsonLd data={[faqLd, breadcrumbLd]} />
 
-
-      <PolicySectionBody id="how-returns-work-in-our-business" title="1. How returns work in our business">
+      <PolicySectionBody
+        id="how-returns-work-in-our-business"
+        title="1. How returns work in our business"
+      >
         <p>
           We supply industrial hydraulic equipment to operators, OEMs, and service contractors. Our
           returns policy reflects that — it is more permissive than a typical consumer policy when
@@ -108,13 +118,16 @@ export default async function ReturnsPage({ params }: Props) {
           mind on items that have been removed from inventory specifically for your order.
         </p>
         <p>
-          All returns require a written Return Material Authorization (RMA) from us before goods
-          are shipped back. Returns without an RMA are refused at our dock and the buyer remains
+          All returns require a written Return Material Authorization (RMA) from us before goods are
+          shipped back. Returns without an RMA are refused at our dock and the buyer remains
           responsible for the goods and any freight incurred.
         </p>
       </PolicySectionBody>
 
-      <PolicySectionBody id="inspection-window-damage-shortage-wrong-item" title="2. Inspection window — damage, shortage, wrong item">
+      <PolicySectionBody
+        id="inspection-window-damage-shortage-wrong-item"
+        title="2. Inspection window — damage, shortage, wrong item"
+      >
         <p>
           You must inspect goods on delivery and notify us in writing of any visible damage,
           shortage, or non-conformity within <strong>seven (7) calendar days</strong> of delivery.
@@ -126,10 +139,12 @@ export default async function ReturnsPage({ params }: Props) {
 
       <PolicySectionBody id="returnable-items" title="3. Returnable items">
         <p>Stock items may be returned within thirty (30) calendar days of delivery if they are:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>Unused and uninstalled</li>
           <li>In their original packaging, with seals and labels intact</li>
-          <li>Accompanied by the original Estimate or invoice reference and a written RMA from us</li>
+          <li>
+            Accompanied by the original Estimate or invoice reference and a written RMA from us
+          </li>
           <li>In resaleable condition on inspection at our Dubai warehouse</li>
         </ul>
       </PolicySectionBody>
@@ -143,15 +158,15 @@ export default async function ReturnsPage({ params }: Props) {
           </Link>
           .
         </p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             <strong>Special-order, made-to-spec, or drop-ship items.</strong> Anything ordered
-            specifically against your RFQ from a manufacturer or supplier, including non-stock
-            seal kits and configured valves.
+            specifically against your RFQ from a manufacturer or supplier, including non-stock seal
+            kits and configured valves.
           </li>
           <li>
-            <strong>Cut-to-length hose assemblies and crimped fittings.</strong> Once cut or
-            crimped to your specification, these cannot be returned to stock.
+            <strong>Cut-to-length hose assemblies and crimped fittings.</strong> Once cut or crimped
+            to your specification, these cannot be returned to stock.
           </li>
           <li>
             <strong>Custom-built power packs, manifolds, and skid-mounted systems.</strong>
@@ -178,7 +193,7 @@ export default async function ReturnsPage({ params }: Props) {
           credit issued.
         </p>
         <p>The restocking fee is waived where the return is caused by:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>Our error in picking, packing, or labelling</li>
           <li>A short shipment or missing item</li>
           <li>Transit damage where we arranged the freight (CIF / DAP / CIP terms)</li>
@@ -199,7 +214,7 @@ export default async function ReturnsPage({ params }: Props) {
       </PolicySectionBody>
 
       <PolicySectionBody id="rma-process-and-timelines" title="7. RMA process and timelines">
-        <ol className="list-decimal pl-6 space-y-1">
+        <ol className="list-decimal space-y-1 pl-6">
           <li>
             <strong>Request:</strong> Email{' '}
             <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
@@ -214,13 +229,13 @@ export default async function ReturnsPage({ params }: Props) {
             applicable restocking-fee notice.
           </li>
           <li>
-            <strong>Return shipment:</strong> Ship the goods back per the RMA instructions, with
-            the RMA number on the outside of the package.
+            <strong>Return shipment:</strong> Ship the goods back per the RMA instructions, with the
+            RMA number on the outside of the package.
           </li>
           <li>
-            <strong>Inspection and resolution:</strong> On receipt at our Dubai warehouse we
-            inspect within five (5) business days. Credit, refund to the original payment method,
-            or replacement is issued within ten (10) business days of inspection.
+            <strong>Inspection and resolution:</strong> On receipt at our Dubai warehouse we inspect
+            within five (5) business days. Credit, refund to the original payment method, or
+            replacement is issued within ten (10) business days of inspection.
           </li>
         </ol>
       </PolicySectionBody>
@@ -228,9 +243,9 @@ export default async function ReturnsPage({ params }: Props) {
       <PolicySectionBody id="refunds-and-credits" title="8. Refunds and credits">
         <p>
           For accounts on credit terms, approved returns are issued as a credit note against the
-          original invoice. For prepaid orders, the refund is issued to the original payment
-          method, net of any restocking fee. Bank charges or currency-conversion losses on
-          international refunds are at the buyer’s cost.
+          original invoice. For prepaid orders, the refund is issued to the original payment method,
+          net of any restocking fee. Bank charges or currency-conversion losses on international
+          refunds are at the buyer’s cost.
         </p>
       </PolicySectionBody>
 
@@ -248,7 +263,7 @@ export default async function ReturnsPage({ params }: Props) {
         </p>
       </PolicySectionBody>
 
-      <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
+      <footer className="border-ih-border text-ih-muted-2 mt-12 border-t pt-6 text-[12px] leading-[1.6]">
         This policy is the customer-facing companion to section 7 (Returns) of our{' '}
         <Link className="underline" href="/terms">
           Terms of Service
@@ -263,4 +278,3 @@ export default async function ReturnsPage({ params }: Props) {
     </PolicyLayout>
   )
 }
-

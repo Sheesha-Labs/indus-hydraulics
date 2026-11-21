@@ -80,7 +80,7 @@ function fillField(field: Field): Record<string, unknown> {
       return {
         [field.key]: Array.from(
           { length: field.min },
-          (_, i) => field.placeholder ?? `Point ${i + 1}`,
+          (_, i) => field.placeholder ?? `Point ${i + 1}`
         ),
       }
     case 'rows':
@@ -92,7 +92,7 @@ function fillField(field: Field): Record<string, unknown> {
         [field.key]: Array.from({ length: field.min }, () => ({
           ...fillRow(field.fields),
           [field.nested.key]: Array.from({ length: field.nested.min }, () =>
-            fillRow(field.nested.fields),
+            fillRow(field.nested.fields)
           ),
         })),
       }
@@ -119,7 +119,7 @@ describe.each(BLOCK_FORMS.map((spec) => [spec.label, spec] as const))('%s', (_la
   test('a filled-in form produces a block the schema accepts', () => {
     const parsed = BlogBlockSchema.safeParse(fillForm(spec))
     expect(
-      parsed.success ? null : parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`),
+      parsed.success ? null : parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`)
     ).toBeNull()
   })
 

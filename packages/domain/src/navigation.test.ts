@@ -132,7 +132,7 @@ describe('toNavChromeItems', () => {
     expect(toNavChromeItems([resolved()])[0]).not.toHaveProperty('openInNewTab')
     expect(toNavChromeItems([resolved({ openInNewTab: true })])[0]).toHaveProperty(
       'openInNewTab',
-      true,
+      true
     )
   })
 
@@ -167,7 +167,7 @@ describe('toNavChromeItems', () => {
 
   it('is materially smaller than the resolved tree once serialised', () => {
     const tree = Array.from({ length: 40 }, (_, i) =>
-      resolved({ label: `Cat ${i}`, children: [resolved({ label: `Sub ${i}` })] }),
+      resolved({ label: `Cat ${i}`, children: [resolved({ label: `Sub ${i}` })] })
     )
     const before = JSON.stringify(tree).length
     const after = JSON.stringify(toNavChromeItems(tree)).length

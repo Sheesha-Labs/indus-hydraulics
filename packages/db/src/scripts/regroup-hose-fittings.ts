@@ -183,8 +183,18 @@ type Backup = {
   createdAt: string
   hubsCreated: string[]
   moves: { slug: string; fromParentId: string | null; toHubSlug: string }[]
-  navLinked: { itemId: string; label: string; previousLinkType: string; previousCategoryId: string | null }[]
-  quickCouplers: { name: string; seoTitle: string | null; seoDescription: string | null; focusKeyword: string | null } | null
+  navLinked: {
+    itemId: string
+    label: string
+    previousLinkType: string
+    previousCategoryId: string | null
+  }[]
+  quickCouplers: {
+    name: string
+    seoTitle: string | null
+    seoDescription: string | null
+    focusKeyword: string | null
+  } | null
 }
 
 async function rollback(file: string) {
@@ -225,7 +235,9 @@ async function main() {
 
   for (const h of HUBS) {
     if (/indus\s*hydraulics/i.test(h.seoTitle)) {
-      throw new Error(`${h.slug}: seoTitle must not contain "Indus Hydraulics" — the layout appends it`)
+      throw new Error(
+        `${h.slug}: seoTitle must not contain "Indus Hydraulics" — the layout appends it`
+      )
     }
   }
 
@@ -242,28 +254,45 @@ async function main() {
   }
   if (HUBS.some((h) => seen.has(h.slug))) throw new Error('a hub is listed as its own child')
   if (new Set(HUBS.map((h) => h.slug)).size !== HUBS.length) throw new Error('duplicate hub slug')
-  if (new Set(HUBS.map((h) => h.navLabel)).size !== HUBS.length) throw new Error('duplicate nav label')
+  if (new Set(HUBS.map((h) => h.navLabel)).size !== HUBS.length)
+    throw new Error('duplicate nav label')
 
-  const parent = await db.category.findUnique({ where: { slug: PARENT_SLUG }, select: { id: true, name: true } })
+  const parent = await db.category.findUnique({
+    where: { slug: PARENT_SLUG },
+    select: { id: true, name: true },
+  })
   if (!parent) throw new Error(`parent category ${PARENT_SLUG} not found`)
 
-  const backup: Backup = { createdAt: new Date().toISOString(), hubsCreated: [], moves: [], navLinked: [], quickCouplers: null }
+  const backup: Backup = {
+    createdAt: new Date().toISOString(),
+    hubsCreated: [],
+    moves: [],
+    navLinked: [],
+    quickCouplers: null,
+  }
   const label = execute ? '' : '[dry-run] '
 
-  const menu = await db.navMenu.findUnique({ where: { slug: 'primary-megamenu' }, select: { id: true } })
+  const menu = await db.navMenu.findUnique({
+    where: { slug: 'primary-megamenu' },
+    select: { id: true },
+  })
   const section = menu
     ? await db.navMenuItem.findFirst({
         where: { menuId: menu.id, parentId: null, label: { contains: 'Hose, Tube' } },
         select: { id: true },
       })
     : null
-  if (!section) console.warn('! megamenu section "Hose, Tube…" not found — nav columns will not be linked')
+  if (!section)
+    console.warn('! megamenu section "Hose, Tube…" not found — nav columns will not be linked')
 
   for (const h of HUBS) {
     // ── the hub category ────────────────────────────────────────────────
     let hub = await db.category.findUnique({ where: { slug: h.slug }, select: { id: true } })
     if (!hub) {
-      const maxSibling = await db.category.aggregate({ where: { parentId: parent.id }, _max: { position: true } })
+      const maxSibling = await db.category.aggregate({
+        where: { parentId: parent.id },
+        _max: { position: true },
+      })
       console.log(`${label}create hub /c/${h.slug} "${h.name}"`)
       if (execute) {
         hub = await db.category.create({
@@ -307,7 +336,10 @@ async function main() {
     // ── move the children under it ──────────────────────────────────────
     let position = 0
     for (const slug of h.children) {
-      const child = await db.category.findUnique({ where: { slug }, select: { id: true, parentId: true } })
+      const child = await db.category.findUnique({
+        where: { slug },
+        select: { id: true, parentId: true },
+      })
       if (!child) {
         console.warn(`  ! ${slug} not found — skipped`)
         continue
@@ -320,7 +352,10 @@ async function main() {
       console.log(`  ${label}move ${slug} → ${h.slug}`)
       if (execute && hub) {
         backup.moves.push({ slug, fromParentId: child.parentId, toHubSlug: h.slug })
-        await db.category.update({ where: { id: child.id }, data: { parentId: hub.id, position: position } })
+        await db.category.update({
+          where: { id: child.id },
+          data: { parentId: hub.id, position: position },
+        })
       }
       position++
     }
@@ -368,7 +403,9 @@ async function main() {
   } else if (qc.name === QUICK_COUPLERS.name && qc.focusKeyword === QUICK_COUPLERS.focusKeyword) {
     console.log(`${label}${QUICK_COUPLERS.slug} already retargeted`)
   } else {
-    console.log(`${label}retarget ${QUICK_COUPLERS.slug} → "${QUICK_COUPLERS.name}" (${QUICK_COUPLERS.focusKeyword})`)
+    console.log(
+      `${label}retarget ${QUICK_COUPLERS.slug} → "${QUICK_COUPLERS.name}" (${QUICK_COUPLERS.focusKeyword})`
+    )
     if (execute) {
       backup.quickCouplers = {
         name: qc.name,
@@ -390,7 +427,10 @@ async function main() {
 
   if (execute) {
     mkdirSync(BACKUP_DIR, { recursive: true })
-    const file = resolve(BACKUP_DIR, `regroup-hose-fittings-${backup.createdAt.replace(/[:.]/g, '-')}.json`)
+    const file = resolve(
+      BACKUP_DIR,
+      `regroup-hose-fittings-${backup.createdAt.replace(/[:.]/g, '-')}.json`
+    )
     writeFileSync(file, JSON.stringify(backup, null, 2))
     console.log(`\nBackup written to ${file}`)
     console.log(`Rollback with: --rollback=${file}`)

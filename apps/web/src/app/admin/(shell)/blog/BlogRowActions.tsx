@@ -49,7 +49,7 @@ export default function BlogRowActions({ id, title, archived, trashed, canDestro
   if (busy) {
     return (
       <span className="flex justify-end">
-        <Loader2 size={14} className="animate-spin text-ih-muted" aria-label="Working" />
+        <Loader2 size={14} className="text-ih-muted animate-spin" aria-label="Working" />
       </span>
     )
   }
@@ -69,7 +69,7 @@ export default function BlogRowActions({ id, title, archived, trashed, canDestro
                 onClick={() => {
                   if (
                     !window.confirm(
-                      `Permanently delete "${title}"? The post and its content are gone for good.`,
+                      `Permanently delete "${title}"? The post and its content are gone for good.`
                     )
                   )
                     return
@@ -98,7 +98,7 @@ export default function BlogRowActions({ id, title, archived, trashed, canDestro
           </>
         )}
       </span>
-      {error && <span className="text-right text-[11px] text-ih-danger">{error}</span>}
+      {error && <span className="text-ih-danger text-right text-[11px]">{error}</span>}
     </span>
   )
 }
@@ -120,7 +120,7 @@ function IconButton({
       onClick={onClick}
       aria-label={label}
       title={label}
-      className={`flex h-7 w-7 items-center justify-center rounded-md text-ih-muted transition-colors ${
+      className={`text-ih-muted flex h-7 w-7 items-center justify-center rounded-md transition-colors ${
         danger
           ? 'hover:bg-ih-danger-soft hover:text-ih-danger'
           : 'hover:bg-ih-surface-2 hover:text-ih-ink'

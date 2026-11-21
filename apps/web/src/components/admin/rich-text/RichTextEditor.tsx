@@ -71,7 +71,7 @@ export default function RichTextEditor(props: Props) {
   if (!mounted) {
     return (
       <div
-        className="animate-pulse rounded-lg border border-ih-border bg-ih-surface-2"
+        className="border-ih-border bg-ih-surface-2 animate-pulse rounded-lg border"
         style={{ height: (props.minHeight ?? 420) + 76 }}
         aria-hidden
       />
@@ -145,7 +145,7 @@ function Editable({
   const over = length > maxLength
 
   return (
-    <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
+    <div className="border-ih-border bg-ih-surface overflow-hidden rounded-lg border">
       <Toolbar
         editor={editor}
         showSource={showSource}
@@ -158,20 +158,20 @@ function Editable({
           onChange={(event) => setSource(event.target.value)}
           spellCheck={false}
           aria-label={`${ariaLabel} — HTML source`}
-          className="w-full resize-y bg-ih-surface px-5 py-4 tabular-nums text-[12.5px] leading-relaxed text-ih-ink-2 focus:outline-none"
+          className="bg-ih-surface text-ih-ink-2 w-full resize-y px-5 py-4 text-[12.5px] leading-relaxed tabular-nums focus:outline-none"
           style={{ minHeight }}
         />
       ) : (
         <EditorContent editor={editor} />
       )}
 
-      <div className="flex items-center justify-between gap-3 border-t border-ih-border bg-ih-bg px-3 py-1.5">
-        <span className="text-[11px] text-ih-muted-2">
+      <div className="border-ih-border bg-ih-bg flex items-center justify-between gap-3 border-t px-3 py-1.5">
+        <span className="text-ih-muted-2 text-[11px]">
           {showSource
             ? 'Editing the HTML directly. Switch back to check it still reads right.'
             : 'Formatting is saved as HTML — what you see here is what the product page shows.'}
         </span>
-        <span className={`tabular-nums text-[11px] ${over ? 'text-ih-danger' : 'text-ih-muted-2'}`}>
+        <span className={`text-[11px] tabular-nums ${over ? 'text-ih-danger' : 'text-ih-muted-2'}`}>
           {length.toLocaleString()} / {maxLength.toLocaleString()}
         </span>
       </div>
@@ -218,7 +218,7 @@ function Toolbar({
   onToggleSource: () => void
 }) {
   if (!editor) {
-    return <div className="h-10 border-b border-ih-border bg-ih-bg" aria-hidden />
+    return <div className="border-ih-border bg-ih-bg h-10 border-b" aria-hidden />
   }
 
   const state = toolbarState(editor)
@@ -248,7 +248,7 @@ function Toolbar({
   }
 
   return (
-    <div className="border-b border-ih-border bg-ih-bg">
+    <div className="border-ih-border bg-ih-bg border-b">
       <div className="flex flex-wrap items-center gap-0.5 px-2 py-1.5">
         <Btn
           label="Bold"
@@ -296,7 +296,12 @@ function Toolbar({
           disabled={showSource}
           active={state.paragraph}
           onClick={() =>
-            editor.chain().focus().setParagraph().updateAttributes('paragraph', { variant: null }).run()
+            editor
+              .chain()
+              .focus()
+              .setParagraph()
+              .updateAttributes('paragraph', { variant: null })
+              .run()
           }
         >
           <Pilcrow size={13} strokeWidth={1.9} />
@@ -342,12 +347,7 @@ function Toolbar({
           <Quote size={13} strokeWidth={1.9} />
         </Btn>
         <Divider />
-        <Btn
-          label="Add link"
-          disabled={showSource}
-          active={state.link}
-          onClick={setLink}
-        >
+        <Btn label="Add link" disabled={showSource} active={state.link} onClick={setLink}>
           <LinkIcon size={13} strokeWidth={1.9} />
         </Btn>
         <Btn label="Insert image" disabled={showSource} onClick={insertImage}>
@@ -397,16 +397,22 @@ function Toolbar({
 
 function TableBar({ editor, caption }: { editor: Editor; caption: string }) {
   return (
-    <div className="flex flex-wrap items-center gap-0.5 border-t border-ih-border bg-ih-surface-2 px-2 py-1.5">
-      <span className="mr-1 flex items-center gap-1.5 tabular-nums text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
+    <div className="border-ih-border bg-ih-surface-2 flex flex-wrap items-center gap-0.5 border-t px-2 py-1.5">
+      <span className="text-ih-muted mr-1 flex items-center gap-1.5 text-[10.5px] tracking-[0.1em] uppercase tabular-nums">
         <TableIcon size={12} strokeWidth={1.9} />
         Table
       </span>
-      <TextBtn label="Add a row below the caret" onClick={() => editor.chain().focus().addRowAfter().run()}>
+      <TextBtn
+        label="Add a row below the caret"
+        onClick={() => editor.chain().focus().addRowAfter().run()}
+      >
         <Rows3 size={12} strokeWidth={1.9} />
         Add row
       </TextBtn>
-      <TextBtn label="Delete the row the caret is in" onClick={() => editor.chain().focus().deleteRow().run()}>
+      <TextBtn
+        label="Delete the row the caret is in"
+        onClick={() => editor.chain().focus().deleteRow().run()}
+      >
         Delete row
       </TextBtn>
       <Divider />
@@ -450,12 +456,15 @@ function TableBar({ editor, caption }: { editor: Editor; caption: string }) {
           `tableRow+` and a <caption> element has nowhere to sit. Showing it
           here is what stops it from being invisible while you work. */}
       {caption && (
-        <span className="max-w-[280px] truncate text-[12px] italic text-ih-muted" title={caption}>
+        <span className="text-ih-muted max-w-[280px] truncate text-[12px] italic" title={caption}>
           “{caption}”
         </span>
       )}
       <div className="ml-auto">
-        <TextBtn label="Delete the whole table" onClick={() => editor.chain().focus().deleteTable().run()}>
+        <TextBtn
+          label="Delete the whole table"
+          onClick={() => editor.chain().focus().deleteTable().run()}
+        >
           Delete table
         </TextBtn>
       </div>
@@ -464,7 +473,7 @@ function TableBar({ editor, caption }: { editor: Editor; caption: string }) {
 }
 
 function Divider() {
-  return <span className="mx-1 h-4 w-px bg-ih-border" aria-hidden />
+  return <span className="bg-ih-border mx-1 h-4 w-px" aria-hidden />
 }
 
 function Btn({

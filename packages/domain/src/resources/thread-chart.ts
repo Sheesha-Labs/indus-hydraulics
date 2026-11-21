@@ -78,7 +78,11 @@ interface ThreadChartFamilyBase {
 }
 
 export type ThreadChartFamily =
-  | (ThreadChartFamilyBase & { readonly kind: 'thread'; readonly unit: ThreadChartUnit; readonly rows: readonly ThreadChartRow[] })
+  | (ThreadChartFamilyBase & {
+      readonly kind: 'thread'
+      readonly unit: ThreadChartUnit
+      readonly rows: readonly ThreadChartRow[]
+    })
   | (ThreadChartFamilyBase & { readonly kind: 'flange'; readonly rows: readonly FlangeChartRow[] })
   | (ThreadChartFamilyBase & { readonly kind: 'cone'; readonly rows: readonly ConeChartRow[] })
 
@@ -88,12 +92,24 @@ const r = (
   thread: string,
   pitch: string,
   maleOd: number,
-  femaleId: number | null,
+  femaleId: number | null
 ): ThreadChartRow => ({ dash, nominal, thread, pitch, maleOd, femaleId })
 
 /** Metric parallel thread: male O.D. is the nominal, female ≈ nominal − pitch (the tap drill). */
-const metric = (dash: number | null, nominal: string, size: number, pitch: number): ThreadChartRow =>
-  r(dash, nominal, `M${size}×${pitch.toFixed(pitch % 1 === 0 ? 0 : 1)}`, pitch.toFixed(1), size, +(size - pitch).toFixed(2))
+const metric = (
+  dash: number | null,
+  nominal: string,
+  size: number,
+  pitch: number
+): ThreadChartRow =>
+  r(
+    dash,
+    nominal,
+    `M${size}×${pitch.toFixed(pitch % 1 === 0 ? 0 : 1)}`,
+    pitch.toFixed(1),
+    size,
+    +(size - pitch).toFixed(2)
+  )
 
 export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
   {
@@ -104,8 +120,7 @@ export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
     name: 'NPT, NPTF and NPSM',
     covers: ['NPT', 'NPTF (Dryseal)', 'NPSM'],
     standard: 'ASME B1.20.1 · ASME B1.20.3',
-    seal:
-      'NPT and NPTF taper, and seal on the thread itself — NPTF by crushing the crests, NPT with sealant. NPSM is straight and seals on a 30° seat inside the female swivel, which also mates a chamfered NPTF male.',
+    seal: 'NPT and NPTF taper, and seal on the thread itself — NPTF by crushing the crests, NPT with sealant. NPSM is straight and seals on a 30° seat inside the female swivel, which also mates a chamfered NPTF male.',
     note: 'All three share a pitch at every size, so a pitch gauge alone cannot separate them. Hold a straight edge along the male: a taper shows daylight at one end.',
     shopHref: '/c/npt-adapters',
     shopLabel: 'NPT adapters',
@@ -129,8 +144,7 @@ export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
     name: 'JIC 37°, SAE O-ring boss and SAE flareless',
     covers: ['JIC 37° flare', 'SAE O-ring boss (ORB)', 'SAE flareless (bite-type)'],
     standard: 'SAE J514 · SAE J1926',
-    seal:
-      'Same UN/UNF thread, three different seals. JIC seals metal to metal on a 37° flare. ORB seals with an O-ring pressed into a chamfer at the port face. Flareless seals where a sleeve bites into the tube on a 24° seat.',
+    seal: 'Same UN/UNF thread, three different seals. JIC seals metal to metal on a 37° flare. ORB seals with an O-ring pressed into a chamfer at the port face. Flareless seals where a sleeve bites into the tube on a 24° seat.',
     note: 'Because the thread is identical, measuring it only narrows the field to these three. Look at the end: a cone is JIC, an O-ring under a flat face is ORB, a sleeve on a tube is flareless.',
     shopHref: '/c/jic-adapters',
     shopLabel: 'JIC adapters',
@@ -233,14 +247,70 @@ export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
     shopHref: '/c/sae-flange-adapters',
     shopLabel: 'SAE flange adapters',
     rows: [
-      { dash: 8, nominal: '1/2"', code61Spacing: 1.5, code61Od: 1.188, code62Spacing: 1.594, code62Od: 1.25 },
-      { dash: 12, nominal: '3/4"', code61Spacing: 1.875, code61Od: 1.5, code62Spacing: 2.0, code62Od: 1.625 },
-      { dash: 16, nominal: '1"', code61Spacing: 2.062, code61Od: 1.75, code62Spacing: 2.25, code62Od: 1.875 },
-      { dash: 20, nominal: '1-1/4"', code61Spacing: 2.312, code61Od: 2.0, code62Spacing: 2.625, code62Od: 2.125 },
-      { dash: 24, nominal: '1-1/2"', code61Spacing: 2.75, code61Od: 2.375, code62Spacing: 3.125, code62Od: 2.5 },
-      { dash: 32, nominal: '2"', code61Spacing: 3.062, code61Od: 2.812, code62Spacing: 3.812, code62Od: 3.125 },
-      { dash: 40, nominal: '2-1/2"', code61Spacing: 3.5, code61Od: 3.312, code62Spacing: null, code62Od: null },
-      { dash: 48, nominal: '3"', code61Spacing: 4.188, code61Od: 4.0, code62Spacing: null, code62Od: null },
+      {
+        dash: 8,
+        nominal: '1/2"',
+        code61Spacing: 1.5,
+        code61Od: 1.188,
+        code62Spacing: 1.594,
+        code62Od: 1.25,
+      },
+      {
+        dash: 12,
+        nominal: '3/4"',
+        code61Spacing: 1.875,
+        code61Od: 1.5,
+        code62Spacing: 2.0,
+        code62Od: 1.625,
+      },
+      {
+        dash: 16,
+        nominal: '1"',
+        code61Spacing: 2.062,
+        code61Od: 1.75,
+        code62Spacing: 2.25,
+        code62Od: 1.875,
+      },
+      {
+        dash: 20,
+        nominal: '1-1/4"',
+        code61Spacing: 2.312,
+        code61Od: 2.0,
+        code62Spacing: 2.625,
+        code62Od: 2.125,
+      },
+      {
+        dash: 24,
+        nominal: '1-1/2"',
+        code61Spacing: 2.75,
+        code61Od: 2.375,
+        code62Spacing: 3.125,
+        code62Od: 2.5,
+      },
+      {
+        dash: 32,
+        nominal: '2"',
+        code61Spacing: 3.062,
+        code61Od: 2.812,
+        code62Spacing: 3.812,
+        code62Od: 3.125,
+      },
+      {
+        dash: 40,
+        nominal: '2-1/2"',
+        code61Spacing: 3.5,
+        code61Od: 3.312,
+        code62Spacing: null,
+        code62Od: null,
+      },
+      {
+        dash: 48,
+        nominal: '3"',
+        code61Spacing: 4.188,
+        code61Od: 4.0,
+        code62Spacing: null,
+        code62Od: null,
+      },
     ],
   },
   {
@@ -251,8 +321,7 @@ export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
     name: 'BSPP, BSPT and JIS 30° flare',
     covers: ['BSPP (G)', 'BSPT (R)', 'JIS 30° flare'],
     standard: 'ISO 228-1 · ISO 7-1 · JIS B 8363',
-    seal:
-      'BSPP is parallel and seals with a bonded washer, an O-ring or a 60° cone in the female swivel. BSPT tapers and seals on the thread. JIS 30° flare uses the BSPP thread with a 30° seat.',
+    seal: 'BSPP is parallel and seals with a bonded washer, an O-ring or a 60° cone in the female swivel. BSPT tapers and seals on the thread. JIS 30° flare uses the BSPP thread with a 30° seat.',
     note: 'The 55° flank angle and these pitches separate BSP from NPT: at 1/2" both are 14 TPI, but a BSP male measures 20.96 mm against NPT’s 21.34 mm.',
     shopHref: '/c/bsp-hydraulic-adapters-uae',
     shopLabel: 'BSP adapters',
@@ -277,8 +346,7 @@ export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
     name: 'Metric parallel threads',
     covers: ['ISO 6149 O-ring port', 'ISO 9974 / DIN 3852 flat-face port'],
     standard: 'ISO 261 · ISO 6149 · ISO 9974',
-    seal:
-      'ISO 6149 ports seal with an O-ring in a chamfer, like SAE ORB, and carry a ring groove on the spot face to say so. ISO 9974 and DIN 3852 ports seal on a flat face with a bonded washer or edge seal.',
+    seal: 'ISO 6149 ports seal with an O-ring in a chamfer, like SAE ORB, and carry a ring groove on the spot face to say so. ISO 9974 and DIN 3852 ports seal on a flat face with a bonded washer or edge seal.',
     note: 'A metric thread is named by its real size: M18×1.5 is 18 mm across the crests with 1.5 mm between them. The female figure is the tap drill size.',
     shopHref: '/c/metric-adapters',
     shopLabel: 'Metric adapters',
@@ -356,7 +424,10 @@ export const THREAD_FAMILIES: readonly ThreadChartFamily[] = [
 ]
 
 /** The other unit, rounded for display: 2 dp in mm, 3 dp in inches. */
-export function convertLength(value: number, from: ThreadChartUnit): { inches: number; millimetres: number } {
+export function convertLength(
+  value: number,
+  from: ThreadChartUnit
+): { inches: number; millimetres: number } {
   return from === 'in'
     ? { inches: value, millimetres: Math.round(value * 25.4 * 100) / 100 }
     : { inches: Math.round((value / 25.4) * 1000) / 1000, millimetres: value }
@@ -385,16 +456,88 @@ export const THREAD_SEATS: readonly {
   readonly standard: string
   readonly anchor: string
 }[] = [
-  { connection: 'JIC 37° flare', seat: '37° cone (74° included)', sealsOn: 'Metal to metal', standard: 'SAE J514', anchor: 'unf-jic-orb-flareless' },
-  { connection: 'SAE 45° flare', seat: '45° cone', sealsOn: 'Metal to metal', standard: 'SAE J512', anchor: 'sae-45-flare' },
-  { connection: 'SAE inverted flare', seat: '42° seat in the female', sealsOn: 'Metal to metal', standard: 'SAE J512', anchor: 'sae-inverted-flare' },
-  { connection: 'SAE flareless', seat: '24° seat', sealsOn: 'Sleeve biting the tube', standard: 'SAE J514', anchor: 'unf-jic-orb-flareless' },
-  { connection: 'DIN 2353 / ISO 8434-1', seat: '24° cone', sealsOn: 'Cutting ring biting the tube', standard: 'ISO 8434-1', anchor: 'din-24-cone' },
-  { connection: 'JIS 30° and Komatsu', seat: '30° seat (60° included)', sealsOn: 'Metal to metal', standard: 'JIS B 8363', anchor: 'bsp-jis' },
-  { connection: 'BSPP female swivel', seat: '60° cone', sealsOn: 'Metal to metal', standard: 'ISO 228-1', anchor: 'bsp-jis' },
-  { connection: 'NPSM female swivel', seat: '30° seat (60° included)', sealsOn: 'Metal to metal', standard: 'ASME B1.20.1', anchor: 'npt-nptf-npsm' },
-  { connection: 'SAE ORB and ISO 6149', seat: 'Chamfer at the port face', sealsOn: 'O-ring', standard: 'SAE J1926 · ISO 6149', anchor: 'unf-jic-orb-flareless' },
-  { connection: 'ORFS', seat: 'Flat face', sealsOn: 'O-ring in the male face', standard: 'SAE J1453', anchor: 'orfs' },
-  { connection: 'Code 61 / Code 62 flange', seat: 'Flat port face', sealsOn: 'O-ring in the flange head', standard: 'SAE J518', anchor: 'four-bolt-flange' },
-  { connection: 'NPT, NPTF, BSPT', seat: 'None — tapered thread', sealsOn: 'The thread', standard: 'ASME B1.20.1/.3 · ISO 7-1', anchor: 'npt-nptf-npsm' },
+  {
+    connection: 'JIC 37° flare',
+    seat: '37° cone (74° included)',
+    sealsOn: 'Metal to metal',
+    standard: 'SAE J514',
+    anchor: 'unf-jic-orb-flareless',
+  },
+  {
+    connection: 'SAE 45° flare',
+    seat: '45° cone',
+    sealsOn: 'Metal to metal',
+    standard: 'SAE J512',
+    anchor: 'sae-45-flare',
+  },
+  {
+    connection: 'SAE inverted flare',
+    seat: '42° seat in the female',
+    sealsOn: 'Metal to metal',
+    standard: 'SAE J512',
+    anchor: 'sae-inverted-flare',
+  },
+  {
+    connection: 'SAE flareless',
+    seat: '24° seat',
+    sealsOn: 'Sleeve biting the tube',
+    standard: 'SAE J514',
+    anchor: 'unf-jic-orb-flareless',
+  },
+  {
+    connection: 'DIN 2353 / ISO 8434-1',
+    seat: '24° cone',
+    sealsOn: 'Cutting ring biting the tube',
+    standard: 'ISO 8434-1',
+    anchor: 'din-24-cone',
+  },
+  {
+    connection: 'JIS 30° and Komatsu',
+    seat: '30° seat (60° included)',
+    sealsOn: 'Metal to metal',
+    standard: 'JIS B 8363',
+    anchor: 'bsp-jis',
+  },
+  {
+    connection: 'BSPP female swivel',
+    seat: '60° cone',
+    sealsOn: 'Metal to metal',
+    standard: 'ISO 228-1',
+    anchor: 'bsp-jis',
+  },
+  {
+    connection: 'NPSM female swivel',
+    seat: '30° seat (60° included)',
+    sealsOn: 'Metal to metal',
+    standard: 'ASME B1.20.1',
+    anchor: 'npt-nptf-npsm',
+  },
+  {
+    connection: 'SAE ORB and ISO 6149',
+    seat: 'Chamfer at the port face',
+    sealsOn: 'O-ring',
+    standard: 'SAE J1926 · ISO 6149',
+    anchor: 'unf-jic-orb-flareless',
+  },
+  {
+    connection: 'ORFS',
+    seat: 'Flat face',
+    sealsOn: 'O-ring in the male face',
+    standard: 'SAE J1453',
+    anchor: 'orfs',
+  },
+  {
+    connection: 'Code 61 / Code 62 flange',
+    seat: 'Flat port face',
+    sealsOn: 'O-ring in the flange head',
+    standard: 'SAE J518',
+    anchor: 'four-bolt-flange',
+  },
+  {
+    connection: 'NPT, NPTF, BSPT',
+    seat: 'None — tapered thread',
+    sealsOn: 'The thread',
+    standard: 'ASME B1.20.1/.3 · ISO 7-1',
+    anchor: 'npt-nptf-npsm',
+  },
 ]

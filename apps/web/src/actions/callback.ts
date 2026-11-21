@@ -51,7 +51,13 @@ const optionalText = (max: number) =>
     .string()
     .trim()
     .max(4000)
-    .transform((v) => v.replace(/<[^>]*>/g, '').slice(0, max).trim() || null)
+    .transform(
+      (v) =>
+        v
+          .replace(/<[^>]*>/g, '')
+          .slice(0, max)
+          .trim() || null
+    )
     .nullable()
     .catch(null)
 
@@ -94,7 +100,9 @@ function sameSitePath(url: string | null): string | null {
   if (!url) return null
   try {
     const u = new URL(url, 'https://indushydraulics.com')
-    return /(^|\.)indushydraulics\.com$|^localhost$|\.vercel\.app$/.test(u.hostname) ? u.toString() : null
+    return /(^|\.)indushydraulics\.com$|^localhost$|\.vercel\.app$/.test(u.hostname)
+      ? u.toString()
+      : null
   } catch {
     return null
   }
@@ -107,10 +115,14 @@ export async function requestCallback(fd: FormData): Promise<CallbackResult> {
   const elapsedRaw = Number(field(fd, 'elapsedMs'))
   const desk = deskStatus(
     parseOpeningHours(OFFICES.find((o) => o.kind === 'hq')?.openingHours ?? []),
-    dubaiNow(),
+    dubaiNow()
   )
-  const accepted: CallbackResult = { success: true, data: { deskOpen: desk.open, nextOpen: desk.nextOpen } }
-  if ((honeypot && honeypot.trim()) || !Number.isFinite(elapsedRaw) || elapsedRaw < MIN_ELAPSED_MS) return accepted
+  const accepted: CallbackResult = {
+    success: true,
+    data: { deskOpen: desk.open, nextOpen: desk.nextOpen },
+  }
+  if ((honeypot && honeypot.trim()) || !Number.isFinite(elapsedRaw) || elapsedRaw < MIN_ELAPSED_MS)
+    return accepted
 
   const parsed = Payload.safeParse({
     surface: field(fd, 'surface'),
@@ -137,7 +149,12 @@ export async function requestCallback(fd: FormData): Promise<CallbackResult> {
 
   // The dial code comes from our own list, never from the browser.
   const dial = callbackCountries().find(([iso]) => iso === p.phoneCountry)?.[1] ?? null
-  const fieldErrors = validateCallbackFields({ name: p.name, email: p.email, dial: dial ?? '', phone: p.phone })
+  const fieldErrors = validateCallbackFields({
+    name: p.name,
+    email: p.email,
+    dial: dial ?? '',
+    phone: p.phone,
+  })
   const phoneE164 = dial ? toE164(dial, p.phone) : null
   if (Object.keys(fieldErrors).length > 0 || !dial || !phoneE164) {
     return { success: false, error: 'invalid', fieldErrors }
@@ -160,9 +177,12 @@ export async function requestCallback(fd: FormData): Promise<CallbackResult> {
       const now = Date.now()
       const [hour, day] = await Promise.all([
         db.callbackLead.count({ where: { ipHash, createdAt: { gte: new Date(now - 3_600_000) } } }),
-        db.callbackLead.count({ where: { ipHash, createdAt: { gte: new Date(now - 86_400_000) } } }),
+        db.callbackLead.count({
+          where: { ipHash, createdAt: { gte: new Date(now - 86_400_000) } },
+        }),
       ])
-      if (hour >= LIMIT_PER_HOUR || day >= LIMIT_PER_DAY) return { success: false, error: 'rate_limited' }
+      if (hour >= LIMIT_PER_HOUR || day >= LIMIT_PER_DAY)
+        return { success: false, error: 'rate_limited' }
     } catch (err) {
       // A failed count must not cost a real buyer the call-back.
       console.error('[requestCallback] rate-limit count failed', err)

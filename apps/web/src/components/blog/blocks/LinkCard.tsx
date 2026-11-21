@@ -20,12 +20,16 @@ export default function LinkCard({
   return (
     <Link
       href={href}
-      className="group relative flex max-w-[640px] flex-col gap-1.5 rounded-lg border border-ih-border bg-ih-surface py-5 pl-[22px] pr-[52px] transition-colors duration-150 hover:border-ih-accent motion-reduce:transition-none"
+      className="group border-ih-border bg-ih-surface hover:border-ih-accent relative flex max-w-[640px] flex-col gap-1.5 rounded-lg border py-5 pr-[52px] pl-[22px] transition-colors duration-150 motion-reduce:transition-none"
     >
-      <span className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-ih-muted">{eyebrow}</span>
-      <span className="text-[17px] font-semibold tracking-[-0.01em] text-ih-ink group-hover:text-ih-accent">{label}</span>
-      {blurb && <span className="text-[14px] leading-[1.55] text-ih-ink-2">{blurb}</span>}
-      <span className="absolute right-5 top-1/2 -translate-y-1/2 text-ih-accent">
+      <span className="text-ih-muted font-mono text-[10.5px] tracking-[0.12em] uppercase">
+        {eyebrow}
+      </span>
+      <span className="text-ih-ink group-hover:text-ih-accent text-[17px] font-semibold tracking-[-0.01em]">
+        {label}
+      </span>
+      {blurb && <span className="text-ih-ink-2 text-[14px] leading-[1.55]">{blurb}</span>}
+      <span className="text-ih-accent absolute top-1/2 right-5 -translate-y-1/2">
         <ArrowRightIcon />
       </span>
     </Link>

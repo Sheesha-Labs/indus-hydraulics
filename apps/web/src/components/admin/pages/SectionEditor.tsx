@@ -102,7 +102,7 @@ function Editor({
   const sensors = useSensors(
     // 4px of slop, so a click on the handle is still a click.
     useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
-    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   )
 
   function update(next: EditorSection[]) {
@@ -150,7 +150,7 @@ function Editor({
   function onReset() {
     if (
       !confirm(
-        `Reset ${pageLabel} to the wording it ships with? Every edit on this page is discarded.`,
+        `Reset ${pageLabel} to the wording it ships with? Every edit on this page is discarded.`
       )
     )
       return
@@ -171,7 +171,7 @@ function Editor({
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center gap-3">
-        <p className="mr-auto text-[12.5px] text-ih-muted">
+        <p className="text-ih-muted mr-auto text-[12.5px]">
           {sections.length} sections
           {hidden > 0 ? ` · ${hidden} hidden` : ''}
           {usingDefaults ? ' · never edited — showing the wording from the design' : ''}
@@ -199,10 +199,7 @@ function Editor({
         collisionDetection={closestCenter}
         onDragEnd={onDragEnd}
       >
-        <SortableContext
-          items={sections.map((s) => s.key)}
-          strategy={verticalListSortingStrategy}
-        >
+        <SortableContext items={sections.map((s) => s.key)} strategy={verticalListSortingStrategy}>
           <ul className="flex flex-col gap-2">
             {sections.map((section, index) => (
               <SectionRow
@@ -261,14 +258,14 @@ function SectionRow({
         opacity: isDragging ? 0.6 : 1,
       }}
       className={cn(
-        'rounded-lg border border-ih-border bg-ih-surface',
-        !section.enabled && 'opacity-60',
+        'border-ih-border bg-ih-surface rounded-lg border',
+        !section.enabled && 'opacity-60'
       )}
     >
       <div className="flex items-center gap-2 px-3 py-2.5">
         {pinned ? (
           <span
-            className="inline-flex h-7 w-7 items-center justify-center text-ih-muted-2"
+            className="text-ih-muted-2 inline-flex h-7 w-7 items-center justify-center"
             title={
               allowReorder
                 ? 'This section is fixed in place'
@@ -280,7 +277,7 @@ function SectionRow({
         ) : (
           <button
             type="button"
-            className="inline-flex h-7 w-7 cursor-grab items-center justify-center rounded text-ih-muted transition-colors hover:text-ih-ink active:cursor-grabbing focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+            className="text-ih-muted hover:text-ih-ink focus-visible:ring-ih-accent-soft inline-flex h-7 w-7 cursor-grab items-center justify-center rounded transition-colors focus-visible:ring-[3px] focus-visible:outline-none active:cursor-grabbing"
             aria-label={`Reorder ${section.def.label}`}
             {...attributes}
             {...listeners}
@@ -289,17 +286,17 @@ function SectionRow({
           </button>
         )}
 
-        <span className="w-5 tabular-nums text-[10.5px] text-ih-muted-2">{index + 1}</span>
+        <span className="text-ih-muted-2 w-5 text-[10.5px] tabular-nums">{index + 1}</span>
 
         <button type="button" onClick={onToggleExpand} className="min-w-0 flex-1 text-left">
-          <span className="text-[13.5px] font-medium text-ih-ink">{section.def.label}</span>
-          <span className="block truncate text-[11.5px] text-ih-muted">
+          <span className="text-ih-ink text-[13.5px] font-medium">{section.def.label}</span>
+          <span className="text-ih-muted block truncate text-[11.5px]">
             {section.def.description}
           </span>
         </button>
 
         {section.def.fields.length === 0 ? (
-          <span className="text-[11px] text-ih-muted-2">No editable copy</span>
+          <span className="text-ih-muted-2 text-[11px]">No editable copy</span>
         ) : null}
 
         <button
@@ -315,8 +312,8 @@ function SectionRow({
                 : 'Show this section on the live page'
           }
           className={cn(
-            'inline-flex h-7 w-7 items-center justify-center rounded text-ih-muted transition-colors hover:text-ih-ink focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
-            section.def.locked === true && 'cursor-not-allowed opacity-40',
+            'text-ih-muted hover:text-ih-ink focus-visible:ring-ih-accent-soft inline-flex h-7 w-7 items-center justify-center rounded transition-colors focus-visible:ring-[3px] focus-visible:outline-none',
+            section.def.locked === true && 'cursor-not-allowed opacity-40'
           )}
         >
           {section.enabled ? (
@@ -331,7 +328,7 @@ function SectionRow({
           onClick={onToggleExpand}
           aria-label={expanded ? 'Collapse' : 'Expand'}
           aria-expanded={expanded}
-          className="inline-flex h-7 w-7 items-center justify-center rounded text-ih-muted transition-colors hover:text-ih-ink focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+          className="text-ih-muted hover:text-ih-ink focus-visible:ring-ih-accent-soft inline-flex h-7 w-7 items-center justify-center rounded transition-colors focus-visible:ring-[3px] focus-visible:outline-none"
         >
           <ChevronDown
             size={14}
@@ -343,16 +340,16 @@ function SectionRow({
       </div>
 
       {expanded ? (
-        <div className="flex flex-col gap-3.5 border-t border-ih-border px-3 py-3.5">
+        <div className="border-ih-border flex flex-col gap-3.5 border-t px-3 py-3.5">
           {section.def.dataNote ? (
-            <p className="rounded-md bg-ih-surface-2 px-2.5 py-2 text-[11.5px] leading-[1.5] text-ih-muted">
+            <p className="bg-ih-surface-2 text-ih-muted rounded-md px-2.5 py-2 text-[11.5px] leading-[1.5]">
               {section.def.dataNote}
             </p>
           ) : null}
           {section.def.fields.length === 0 ? (
-            <p className="text-[12.5px] text-ih-muted">
+            <p className="text-ih-muted text-[12.5px]">
               Nothing to edit here — this section renders live data. You can still reorder it or
-              hide it from <span className="tabular-nums text-ih-ink-2">{path}</span>.
+              hide it from <span className="text-ih-ink-2 tabular-nums">{path}</span>.
             </p>
           ) : (
             section.def.fields.map((field) => (

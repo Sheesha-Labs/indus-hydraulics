@@ -23,12 +23,7 @@ export const SlugSchema = z
   .max(180)
   .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Slug must be lowercase kebab-case')
 
-const NonEmptyTrimmed = (max: number) =>
-  z
-    .string()
-    .trim()
-    .min(1)
-    .max(max)
+const NonEmptyTrimmed = (max: number) => z.string().trim().min(1).max(max)
 
 // Specs/FAQs re-run policy.
 //   add-only         — default. Insert specs/FAQs only if not already present;
@@ -37,11 +32,7 @@ const NonEmptyTrimmed = (max: number) =>
 //                       Risk: clobbers admin manual edits.
 //   update-only      — Touch the Product row only. Specs/FAQs left entirely
 //                       alone after first creation.
-export const ImportModeSchema = z.enum([
-  'add-only',
-  'overwrite-edits',
-  'update-only',
-])
+export const ImportModeSchema = z.enum(['add-only', 'overwrite-edits', 'update-only'])
 export type ImportMode = z.infer<typeof ImportModeSchema>
 
 // ── Brand ──────────────────────────────────────────────────────────────────
@@ -77,12 +68,7 @@ export type CategoryPayload = z.infer<typeof CategoryPayloadSchema>
 
 // ── Spec template ──────────────────────────────────────────────────────────
 
-export const SpecFieldDataTypeSchema = z.enum([
-  'text',
-  'number',
-  'boolean',
-  'select',
-])
+export const SpecFieldDataTypeSchema = z.enum(['text', 'number', 'boolean', 'select'])
 export type SpecFieldDataType = z.infer<typeof SpecFieldDataTypeSchema>
 
 /** Lowercase kebab/snake key for SpecTemplateField.key. Immutable once any
@@ -92,7 +78,10 @@ export const FieldKeySchema = z
   .trim()
   .min(1)
   .max(80)
-  .regex(/^[a-z][a-z0-9_]*$/, 'Field key must be lowercase letters/digits/underscores, starting with a letter')
+  .regex(
+    /^[a-z][a-z0-9_]*$/,
+    'Field key must be lowercase letters/digits/underscores, starting with a letter'
+  )
 
 export const SpecTemplateFieldPayloadSchema = z.object({
   key: FieldKeySchema,
@@ -107,9 +96,7 @@ export const SpecTemplateFieldPayloadSchema = z.object({
   group: z.string().trim().max(80).optional().nullable(),
   position: z.number().int().nonnegative().default(0),
 })
-export type SpecTemplateFieldPayload = z.infer<
-  typeof SpecTemplateFieldPayloadSchema
->
+export type SpecTemplateFieldPayload = z.infer<typeof SpecTemplateFieldPayloadSchema>
 
 export const SpecTemplatePayloadSchema = z.object({
   slug: SlugSchema,
@@ -172,9 +159,7 @@ export const ProductImportPayloadSchema = z.object({
   // Specs — keyed by SpecTemplateField.key. Values are coerced via
   // coerceFieldValue at import time (using the live template's dataType).
   // Numeric values can be passed as `number`; strings/booleans as `string`.
-  specs: z
-    .record(z.string(), z.union([z.string(), z.number(), z.boolean()]))
-    .optional(),
+  specs: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional(),
 
   // FAQs (plain-text q/a; PDP renders accordion + JSON-LD)
   faqs: z.array(FaqEntrySchema).max(20).optional(),
@@ -226,7 +211,7 @@ export const NavReplaceLeavesSchema = z.object({
       z.object({
         label: NonEmptyTrimmed(80),
         categorySlug: SlugSchema,
-      }),
+      })
     )
     .min(1),
 })
@@ -253,9 +238,7 @@ export const ImportBatchSchema = z.object({
    *  replacements in the same transaction (e.g. extending an existing
    *  sub AND creating a new sub in one batch). Each entry runs through
    *  `replacePlaceholderLeaves` independently. */
-  navigation: z
-    .union([NavReplaceLeavesSchema, z.array(NavReplaceLeavesSchema).min(1)])
-    .optional(),
+  navigation: z.union([NavReplaceLeavesSchema, z.array(NavReplaceLeavesSchema).min(1)]).optional(),
   /** The products. */
   products: z.array(ProductImportPayloadSchema).min(1),
 })

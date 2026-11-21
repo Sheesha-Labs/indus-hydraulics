@@ -56,17 +56,24 @@ describe('social platforms', () => {
 })
 
 describe('resolveFooterLegalLine', () => {
-  const base = { legalName: 'Indus Hydraulic Power Trading LLC', name: 'Indus Hydraulics', year: 2026 }
+  const base = {
+    legalName: 'Indus Hydraulic Power Trading LLC',
+    name: 'Indus Hydraulics',
+    year: 2026,
+  }
 
   it('uses the edited line when there is one', () => {
     expect(resolveFooterLegalLine({ ...base, footerLegalLine: 'All rights reserved.' })).toBe(
-      'All rights reserved.',
+      'All rights reserved.'
     )
   })
 
   it('substitutes {year} so the line does not go stale in January', () => {
     expect(
-      resolveFooterLegalLine({ ...base, footerLegalLine: '© {year} Indus Hydraulic Power Trading LLC' }),
+      resolveFooterLegalLine({
+        ...base,
+        footerLegalLine: '© {year} Indus Hydraulic Power Trading LLC',
+      })
     ).toBe('© 2026 Indus Hydraulic Power Trading LLC')
   })
 
@@ -76,19 +83,19 @@ describe('resolveFooterLegalLine', () => {
 
   it('falls back to the legal entity, not the trading name', () => {
     expect(resolveFooterLegalLine({ ...base, footerLegalLine: null })).toBe(
-      '© 2026 Indus Hydraulic Power Trading LLC. All rights reserved.',
+      '© 2026 Indus Hydraulic Power Trading LLC. All rights reserved.'
     )
   })
 
   it('falls back to the trading name only when there is no legal entity', () => {
     expect(resolveFooterLegalLine({ ...base, legalName: null, footerLegalLine: null })).toBe(
-      '© 2026 Indus Hydraulics. All rights reserved.',
+      '© 2026 Indus Hydraulics. All rights reserved.'
     )
   })
 
   it('treats a blank or whitespace line as unset', () => {
     expect(resolveFooterLegalLine({ ...base, footerLegalLine: '   ' })).toBe(
-      '© 2026 Indus Hydraulic Power Trading LLC. All rights reserved.',
+      '© 2026 Indus Hydraulic Power Trading LLC. All rights reserved.'
     )
   })
 

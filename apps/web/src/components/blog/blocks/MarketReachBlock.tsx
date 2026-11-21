@@ -40,16 +40,20 @@ export default function MarketReachBlockView({
   return (
     <section aria-label={block.heading} className="min-w-0">
       {step ? (
-        <h3 className="text-[15px] font-semibold text-ih-ink">{block.heading}</h3>
+        <h3 className="text-ih-ink text-[15px] font-semibold">{block.heading}</h3>
       ) : (
         <>
-          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Delivery</p>
-          <h2 className="mt-2 font-serif text-[28px] font-normal leading-[1.12] tracking-[-0.01em] text-ih-ink">
+          <p className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.13em] uppercase">
+            Delivery
+          </p>
+          <h2 className="text-ih-ink mt-2 font-serif text-[28px] leading-[1.12] font-normal tracking-[-0.01em]">
             {block.heading}
           </h2>
         </>
       )}
-      <p className={`max-w-[720px] text-[14.5px] leading-[1.65] text-ih-ink-2 ${step ? 'mt-3' : 'mt-2.5'}`}>
+      <p
+        className={`text-ih-ink-2 max-w-[720px] text-[14.5px] leading-[1.65] ${step ? 'mt-3' : 'mt-2.5'}`}
+      >
         {block.body}
       </p>
       <div
@@ -59,7 +63,7 @@ export default function MarketReachBlockView({
       >
         {groups.map((group) => (
           <div key={group.region} className="min-w-0">
-            <h3 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-ih-muted">
+            <h3 className="text-ih-muted font-mono text-[10.5px] font-medium tracking-[0.12em] uppercase">
               {group.region}
             </h3>
             <ul className="m-0 mt-1 flex list-none flex-wrap gap-x-3.5 p-0">
@@ -67,7 +71,7 @@ export default function MarketReachBlockView({
                 <li key={market.slug}>
                   <Link
                     href={`/markets/${market.slug}`}
-                    className="inline-flex min-h-9 items-center text-[14px] text-ih-accent hover:underline hover:underline-offset-[3px]"
+                    className="text-ih-accent inline-flex min-h-9 items-center text-[14px] hover:underline hover:underline-offset-[3px]"
                   >
                     {market.name}
                   </Link>
@@ -77,9 +81,9 @@ export default function MarketReachBlockView({
           </div>
         ))}
       </div>
-      <p className="mt-4 text-[13px] leading-[1.6] text-ih-muted">
+      <p className="text-ih-muted mt-4 text-[13px] leading-[1.6]">
         {block.footnote ? `${block.footnote} ` : ''}
-        <Link href="/markets" className="font-medium text-ih-accent hover:underline">
+        <Link href="/markets" className="text-ih-accent font-medium hover:underline">
           See every export destination
           <span aria-hidden="true"> →</span>
         </Link>

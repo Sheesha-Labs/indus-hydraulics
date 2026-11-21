@@ -52,8 +52,7 @@ const FIXES: Record<string, Fix[]> = {
   // ── Dead cross-references ──────────────────────────────────────────────
   'IH-QC-WINGNUT': [
     {
-      find:
-        'For push-to-connect service see the Eaton 5600 (ISO 7241 Series A), FD45 (Series B) and FD89 flush-face ranges in the same category.',
+      find: 'For push-to-connect service see the Eaton 5600 (ISO 7241 Series A), FD45 (Series B) and FD89 flush-face ranges in the same category.',
       replace:
         'For push-to-connect service see the Indus QC-7241A (ISO 7241 Series A), QC-7241B (Series B) and QC-16028 flush-face ranges in the same category.',
       note: 'dead pointer -> current Indus series codes',
@@ -64,8 +63,7 @@ const FIXES: Record<string, Fix[]> = {
       note: 'dead pointer -> current Indus series code',
     },
     {
-      find:
-        'For connect-under-pressure service use a thread-to-connect flush-face coupler such as the Eaton FD86 or FD96.',
+      find: 'For connect-under-pressure service use a thread-to-connect flush-face coupler such as the Eaton FD86 or FD96.',
       replace:
         'For connect-under-pressure service use a thread-to-connect flush-face coupler such as the Indus QC-DB or QC-FFT.',
       note: 'dead pointer in FAQ -> current Indus series codes',
@@ -73,8 +71,7 @@ const FIXES: Record<string, Fix[]> = {
   ],
   'IH-QC-WINGNUT-TRL': [
     {
-      find:
-        'For push-to-connect service see the Eaton 5600 (ISO 7241 Series A), FD45 (Series B) and FD89 flush-face ranges in the same category.',
+      find: 'For push-to-connect service see the Eaton 5600 (ISO 7241 Series A), FD45 (Series B) and FD89 flush-face ranges in the same category.',
       replace:
         'For push-to-connect service see the Indus QC-7241A (ISO 7241 Series A), QC-7241B (Series B) and QC-16028 flush-face ranges in the same category.',
       note: 'dead pointer -> current Indus series codes',
@@ -85,8 +82,7 @@ const FIXES: Record<string, Fix[]> = {
       note: 'dead pointer -> current Indus series code',
     },
     {
-      find:
-        'For connect-under-pressure service use a thread-to-connect flush-face coupler such as the Eaton FD86 or FD96.',
+      find: 'For connect-under-pressure service use a thread-to-connect flush-face coupler such as the Eaton FD86 or FD96.',
       replace:
         'For connect-under-pressure service use a thread-to-connect flush-face coupler such as the Indus QC-DB or QC-FFT.',
       note: 'dead pointer in FAQ -> current Indus series codes',
@@ -223,12 +219,12 @@ async function main() {
   }
 
   console.log(
-    `\n${prefix} ${changedProducts} product(s) touched — ${changedFields} field(s), ${changedFaqs} FAQ(s), ${changedSpecs} spec(s).`,
+    `\n${prefix} ${changedProducts} product(s) touched — ${changedFields} field(s), ${changedFaqs} FAQ(s), ${changedSpecs} spec(s).`
   )
   console.log(
     '\nDeliberately NOT changed: "Interchanges With (Competitor Brands)" values naming Eaton\n' +
       'parts, and hose copy noting a grade is also stocked in Eaton Aeroquip or Parker\n' +
-      'Hannifin. Both are true and both are what a buyer searches for.',
+      'Hannifin. Both are true and both are what a buyer searches for.'
   )
   if (problems.length > 0) {
     console.log(`\n${problems.length} problem(s):`)

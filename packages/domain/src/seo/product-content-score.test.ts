@@ -166,13 +166,21 @@ describe('wordCount', () => {
 describe('isProductIndexable', () => {
   it('holds back a page below the content gate with no size table', () => {
     expect(
-      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE - 1, sizeRows: 0 }),
+      isProductIndexable({
+        robotsIndex: true,
+        contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE - 1,
+        sizeRows: 0,
+      })
     ).toBe(false)
   })
 
   it('offers a page at the gate', () => {
     expect(
-      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE, sizeRows: 0 }),
+      isProductIndexable({
+        robotsIndex: true,
+        contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE,
+        sizeRows: 0,
+      })
     ).toBe(true)
   })
 
@@ -184,7 +192,11 @@ describe('isProductIndexable', () => {
   // no brand and an 8-row size table scored 10 and was noindexed.
   it('offers a low-scoring page that carries a real size table', () => {
     expect(
-      isProductIndexable({ robotsIndex: true, contentScore: 10, sizeRows: PRODUCT_INDEX_MIN_SIZE_ROWS }),
+      isProductIndexable({
+        robotsIndex: true,
+        contentScore: 10,
+        sizeRows: PRODUCT_INDEX_MIN_SIZE_ROWS,
+      })
     ).toBe(true)
   })
 

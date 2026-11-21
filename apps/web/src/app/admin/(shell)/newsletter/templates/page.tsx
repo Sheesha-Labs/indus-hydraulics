@@ -18,11 +18,21 @@ export default async function NewsletterTemplatesPage() {
   await requireStaffRole(ROLES.NEWSLETTER_WRITE)
   const templates = await db.newsletterTemplate.findMany({
     orderBy: { updatedAt: 'desc' },
-    select: { id: true, name: true, description: true, format: true, updatedAt: true, createdBy: { select: { name: true } } },
+    select: {
+      id: true,
+      name: true,
+      description: true,
+      format: true,
+      updatedAt: true,
+      createdBy: { select: { name: true } },
+    },
   })
 
   return (
-    <AdminPageShell title="Templates" sub="Saved designs to start a newsletter from. Save one from any newsletter's editor.">
+    <AdminPageShell
+      title="Templates"
+      sub="Saved designs to start a newsletter from. Save one from any newsletter's editor."
+    >
       <div className="flex flex-col gap-6">
         <NewsletterTabs active="templates" />
         <DataTable
@@ -35,22 +45,45 @@ export default async function NewsletterTemplatesPage() {
               header: 'Template',
               width: '50%',
               cell: (t) => (
-                <ActionForm action={renameTemplateAction.bind(null, t.id)} submitLabel="Rename" kind="ghost">
-                  <Field label={<span className="sr-only">Name</span>} className="min-w-[200px] flex-1">
+                <ActionForm
+                  action={renameTemplateAction.bind(null, t.id)}
+                  submitLabel="Rename"
+                  kind="ghost"
+                >
+                  <Field
+                    label={<span className="sr-only">Name</span>}
+                    className="min-w-[200px] flex-1"
+                  >
                     <Input name="name" required maxLength={120} defaultValue={t.name} />
                   </Field>
-                  <Field label={<span className="sr-only">Description</span>} className="min-w-[200px] flex-1">
-                    <Input name="description" maxLength={400} defaultValue={t.description} placeholder="What it is for" />
+                  <Field
+                    label={<span className="sr-only">Description</span>}
+                    className="min-w-[200px] flex-1"
+                  >
+                    <Input
+                      name="description"
+                      maxLength={400}
+                      defaultValue={t.description}
+                      placeholder="What it is for"
+                    />
                   </Field>
                 </ActionForm>
               ),
             },
-            { key: 'format', header: 'Kind', cell: (t) => <span className="text-ih-ink-2">{t.format === 'rich' ? 'Rich text' : 'Blocks'}</span> },
+            {
+              key: 'format',
+              header: 'Kind',
+              cell: (t) => (
+                <span className="text-ih-ink-2">
+                  {t.format === 'rich' ? 'Rich text' : 'Blocks'}
+                </span>
+              ),
+            },
             {
               key: 'by',
               header: 'Saved',
               cell: (t) => (
-                <span className="tabular-nums text-ih-ink-2">
+                <span className="text-ih-ink-2 tabular-nums">
                   {t.updatedAt.toISOString().slice(0, 10)}
                   {t.createdBy ? ` · ${t.createdBy.name}` : ''}
                 </span>
@@ -62,14 +95,24 @@ export default async function NewsletterTemplatesPage() {
               cell: (t) => (
                 <div className="flex flex-wrap justify-end gap-1">
                   <StartCampaignButton input={{ templateId: t.id }} label="Use" kind="outline" />
-                  <ActionButton action={deleteTemplateAction.bind(null, t.id)} confirm={`Delete the template “${t.name}”? Newsletters made from it are not affected.`} aria-label={`Delete template ${t.name}`} trash>
+                  <ActionButton
+                    action={deleteTemplateAction.bind(null, t.id)}
+                    confirm={`Delete the template “${t.name}”? Newsletters made from it are not affected.`}
+                    aria-label={`Delete template ${t.name}`}
+                    trash
+                  >
                     Delete
                   </ActionButton>
                 </div>
               ),
             },
           ]}
-          emptyState={<EmptyState condition="NO TEMPLATES" message="Open a newsletter and use “Save as template” to keep its design for next time." />}
+          emptyState={
+            <EmptyState
+              condition="NO TEMPLATES"
+              message="Open a newsletter and use “Save as template” to keep its design for next time."
+            />
+          }
         />
       </div>
     </AdminPageShell>

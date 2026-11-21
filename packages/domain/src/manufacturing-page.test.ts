@@ -35,7 +35,18 @@ describe('manufacturing page record', () => {
 
   it('numbers the stages 01 to 12 in order, without gaps', () => {
     expect(page.process.items.map((s) => s.stage)).toEqual([
-      '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
+      '01',
+      '02',
+      '03',
+      '04',
+      '05',
+      '06',
+      '07',
+      '08',
+      '09',
+      '10',
+      '11',
+      '12',
     ])
   })
 
@@ -76,7 +87,7 @@ describe('imagery', () => {
     // were copied.
     for (const image of images) {
       expect(image.src).toMatch(
-        /^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/manufacturing-images\//,
+        /^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/manufacturing-images\//
       )
     }
   })
@@ -120,9 +131,7 @@ describe('cross-links', () => {
     expect(hrefs).toContain('/industries/data-center-liquid-cooling')
     expect(hrefs).toContain('/quality-control')
 
-    const sibling = DESIGNED_INDUSTRY_PAGES.find(
-      (p) => p.slug === 'data-center-liquid-cooling',
-    )
+    const sibling = DESIGNED_INDUSTRY_PAGES.find((p) => p.slug === 'data-center-liquid-cooling')
     expect(sibling).toBeDefined()
     expect(sibling?.related.href).toBe(page.path)
   })

@@ -28,7 +28,14 @@ const INSET = 36
 /** Curve control points can sit a hair outside the drawn shape. */
 const SLOP = 1
 
-type Extent = { minX: number; maxX: number; minY: number; maxY: number; width: number; height: number }
+type Extent = {
+  minX: number
+  maxX: number
+  minY: number
+  maxY: number
+  width: number
+  height: number
+}
 
 /** Bounding box of an SVG path's points, good enough to measure framing. */
 function extent(path: string): Extent {
@@ -87,7 +94,9 @@ describe('coverage', () => {
     MARKET_GEO_ALIASES, not a lowered expectation.
   */
   it('resolves a silhouette for every one of the destinations', () => {
-    const missing = MARKETS.filter((m: Market) => buildMarketThumbnail(m) === null).map((m) => m.name)
+    const missing = MARKETS.filter((m: Market) => buildMarketThumbnail(m) === null).map(
+      (m) => m.name
+    )
     expect(missing).toEqual([])
   })
 
@@ -105,13 +114,15 @@ describe('coverage', () => {
     for (const market of MARKETS) {
       const e = extent(buildMarketThumbnail(market)!.path)
       expect(e.maxX, `${market.name} is drawn entirely left of the card`).toBeGreaterThan(0)
-      expect(e.minX, `${market.name} is drawn entirely right of the card`).toBeLessThan(CANVAS.width)
+      expect(e.minX, `${market.name} is drawn entirely right of the card`).toBeLessThan(
+        CANVAS.width
+      )
       expect(e.maxY, `${market.name} is drawn entirely above the card`).toBeGreaterThan(0)
       expect(e.minY, `${market.name} is drawn entirely below the card`).toBeLessThan(CANVAS.height)
     }
   })
 
-  it("keeps the canvas at the card aspect", () => {
+  it('keeps the canvas at the card aspect', () => {
     const built = thumb('nigeria')
     expect([built.width, built.height]).toEqual([CANVAS.width, CANVAS.height])
   })

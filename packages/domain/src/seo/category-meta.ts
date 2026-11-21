@@ -83,7 +83,7 @@ export function stripSiteName(title: string, siteName = 'Indus Hydraulics'): str
 export function fitCategoryTitle(
   storedTitle: string | null,
   name: string,
-  budget = STORED_TITLE_BUDGET,
+  budget = STORED_TITLE_BUDGET
 ): string | null {
   const source = stripSiteName(storedTitle?.trim() || name.trim())
   if (!source) return null
@@ -93,9 +93,7 @@ export function fitCategoryTitle(
   // Keep whichever punctuation the title already uses, so the shortened one
   // reads like the original rather than like a rewrite.
   const dashed = SEPARATORS.test(source)
-  const [headRaw = '', ...restParts] = dashed
-    ? source.split(SEPARATORS)
-    : splitOnce(source, ', ')
+  const [headRaw = '', ...restParts] = dashed ? source.split(SEPARATORS) : splitOnce(source, ', ')
   const tail = restParts.join(' ').trim()
   const headTrimmed = headRaw.trim()
 
@@ -148,7 +146,7 @@ export function fitCategoryTitle(
 export function fitCategoryDescription(
   storedDescription: string | null,
   fallbackParagraph: string | null,
-  max = DESCRIPTION_MAX,
+  max = DESCRIPTION_MAX
 ): string | null {
   const stored = storedDescription?.trim() || ''
   const source = stored || fallbackParagraph?.trim() || ''

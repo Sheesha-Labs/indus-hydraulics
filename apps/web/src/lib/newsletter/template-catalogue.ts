@@ -8,7 +8,15 @@
 
 export type TemplateNeeds = 'product' | 'brand' | 'industry' | 'category' | 'article' | 'service'
 
-export const TEMPLATE_SECTIONS = ['Products & ranges', 'Services & case studies', 'Offers & alerts', 'Know-how & industries', 'Company news', 'Start from scratch', 'Rich text'] as const
+export const TEMPLATE_SECTIONS = [
+  'Products & ranges',
+  'Services & case studies',
+  'Offers & alerts',
+  'Know-how & industries',
+  'Company news',
+  'Start from scratch',
+  'Rich text',
+] as const
 export type TemplateSection = (typeof TEMPLATE_SECTIONS)[number]
 
 /**
@@ -52,7 +60,26 @@ export type BuiltInTemplate = {
   label: string
   description: string
   /** lucide icon name, mapped in the dialog. */
-  icon: 'rocket' | 'award' | 'package' | 'tag' | 'factory' | 'calendar' | 'megaphone' | 'blocks' | 'file' | 'mail' | 'newspaper' | 'wrench' | 'clipboard' | 'layers' | 'book' | 'alarm' | 'siren' | 'hand' | 'clock'
+  icon:
+    | 'rocket'
+    | 'award'
+    | 'package'
+    | 'tag'
+    | 'factory'
+    | 'calendar'
+    | 'megaphone'
+    | 'blocks'
+    | 'file'
+    | 'mail'
+    | 'newspaper'
+    | 'wrench'
+    | 'clipboard'
+    | 'layers'
+    | 'book'
+    | 'alarm'
+    | 'siren'
+    | 'hand'
+    | 'clock'
   /** One record the template is built around, picked in a second step. */
   needs?: TemplateNeeds
   sketch: readonly SketchBand[]
@@ -67,7 +94,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Products & ranges',
     label: 'Product news',
-    description: 'A trade-magazine issue: masthead, new products in alternating rows, one article not to miss, a wall of tiles.',
+    description:
+      'A trade-magazine issue: masthead, new products in alternating rows, one article not to miss, a wall of tiles.',
     icon: 'newspaper',
     sketch: ['mast', 'stripe', 'heading', 'rows', 'rows', 'cards', 'tiles', ...FOOT],
   },
@@ -76,7 +104,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Products & ranges',
     label: 'Product launch',
-    description: 'A launch mailer from one product: its photo, what it is, more from the same range, a quote ask.',
+    description:
+      'A launch mailer from one product: its photo, what it is, more from the same range, a quote ask.',
     icon: 'rocket',
     needs: 'product',
     sketch: ['mast', 'stripe', 'hero', 'rows', 'grid', 'cta', ...FOOT],
@@ -86,7 +115,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Products & ranges',
     label: 'Range in focus',
-    description: 'One category: its photo and story, products from it in rows and tiles, how to order, related ranges.',
+    description:
+      'One category: its photo and story, products from it in rows and tiles, how to order, related ranges.',
     icon: 'layers',
     needs: 'category',
     sketch: ['mast', 'stripe', 'hero', 'rows', 'tiles', 'steps', 'grid', 'cta', ...FOOT],
@@ -96,7 +126,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Products & ranges',
     label: 'Brand spotlight',
-    description: 'One brand we supply: its photo and story, the figures, its newest products, a closing ask.',
+    description:
+      'One brand we supply: its photo and story, the figures, its newest products, a closing ask.',
     icon: 'award',
     needs: 'brand',
     sketch: ['mast', 'stripe', 'hero', 'text', 'stats', 'grid', 'cta', ...FOOT],
@@ -117,26 +148,54 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Services & case studies',
     label: 'Workshop & field services',
-    description: 'A bold services mailer: poster headline over a workshop photo, what we take in, a photo grid of real jobs, how a repair runs.',
+    description:
+      'A bold services mailer: poster headline over a workshop photo, what we take in, a photo grid of real jobs, how a repair runs.',
     icon: 'wrench',
-    sketch: ['mast', 'stripe', 'poster', 'image', 'stripe', 'grey', 'pills', 'grid', 'steps', 'cta', ...FOOT],
+    sketch: [
+      'mast',
+      'stripe',
+      'poster',
+      'image',
+      'stripe',
+      'grey',
+      'pills',
+      'grid',
+      'steps',
+      'cta',
+      ...FOOT,
+    ],
   },
   {
     id: 'case-study',
     group: 'blocks',
     section: 'Services & case studies',
     label: 'Case study',
-    description: 'One job from the workshop: the headline, the photo, the outcome, the figures, what the crew said, more like it.',
+    description:
+      'One job from the workshop: the headline, the photo, the outcome, the figures, what the crew said, more like it.',
     icon: 'clipboard',
     needs: 'service',
-    sketch: ['top', 'mast', 'stripe', 'poster', 'image', 'text', 'tiles-ticks', 'kv', 'quote', 'cta', 'rows', ...FOOT],
+    sketch: [
+      'top',
+      'mast',
+      'stripe',
+      'poster',
+      'image',
+      'text',
+      'tiles-ticks',
+      'kv',
+      'quote',
+      'cta',
+      'rows',
+      ...FOOT,
+    ],
   },
   {
     id: 'rapid-response',
     group: 'blocks',
     section: 'Services & case studies',
     label: 'Breakdown support',
-    description: '“Line down? We move fast.” A WhatsApp-first ask, what happens next in four steps, recent turnarounds, who to call.',
+    description:
+      '“Line down? We move fast.” A WhatsApp-first ask, what happens next in four steps, recent turnarounds, who to call.',
     icon: 'siren',
     sketch: ['mast', 'stripe', 'poster', 'steps', 'pills', 'rows', 'person', ...FOOT],
   },
@@ -147,7 +206,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Offers & alerts',
     label: 'Ex-stock alert',
-    description: 'Amber and navy: what is on the shelf now, in rows, why ordering from stock pays, a this-week ask.',
+    description:
+      'Amber and navy: what is on the shelf now, in rows, why ordering from stock pays, a this-week ask.',
     icon: 'alarm',
     sketch: ['amber', 'mast', 'poster', 'amber', 'rows', 'rows', 'bars', 'cta', ...FOOT],
   },
@@ -156,7 +216,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Offers & alerts',
     label: 'Offer',
-    description: 'A promotion: a header, an offer card with its badge and terms, the products it covers.',
+    description:
+      'A promotion: a header, an offer card with its badge and terms, the products it covers.',
     icon: 'tag',
     sketch: ['mast', 'stripe', 'hero', 'offer', 'cta', ...FOOT],
   },
@@ -167,17 +228,30 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Know-how & industries',
     label: 'Engineering guide',
-    description: 'One article from the blog: its photo, the gist, key takeaways, related reading, an engineer to ask.',
+    description:
+      'One article from the blog: its photo, the gist, key takeaways, related reading, an engineer to ask.',
     icon: 'book',
     needs: 'article',
-    sketch: ['mast', 'stripe', 'image', 'heading', 'text', 'button', 'tiles-ticks', 'list', 'person', ...FOOT],
+    sketch: [
+      'mast',
+      'stripe',
+      'image',
+      'heading',
+      'text',
+      'button',
+      'tiles-ticks',
+      'list',
+      'person',
+      ...FOOT,
+    ],
   },
   {
     id: 'industry-focus',
     group: 'blocks',
     section: 'Know-how & industries',
     label: 'Industry focus',
-    description: 'One industry: its photo, what we supply for it, popular ranges and engineering guides.',
+    description:
+      'One industry: its photo, what we supply for it, popular ranges and engineering guides.',
     icon: 'factory',
     needs: 'industry',
     sketch: ['mast', 'stripe', 'hero', 'text', 'grid', 'list', 'cta', ...FOOT],
@@ -189,16 +263,30 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Company news',
     label: 'Monthly bulletin',
-    description: 'The month in one email: contents, new stock, the figures, a case study, engineering notes, brands, a tip.',
+    description:
+      'The month in one email: contents, new stock, the figures, a case study, engineering notes, brands, a tip.',
     icon: 'newspaper',
-    sketch: ['mast', 'stripe', 'list', 'grid', 'stats', 'rows', 'list', 'tiles', 'quote', 'cta', ...FOOT],
+    sketch: [
+      'mast',
+      'stripe',
+      'list',
+      'grid',
+      'stats',
+      'rows',
+      'list',
+      'tiles',
+      'quote',
+      'cta',
+      ...FOOT,
+    ],
   },
   {
     id: 'welcome',
     group: 'blocks',
     section: 'Company news',
     label: 'Welcome',
-    description: 'For a new subscriber or customer: who we are in figures, what we stock, how to get a part priced, who to write to.',
+    description:
+      'For a new subscriber or customer: who we are in figures, what we stock, how to get a part priced, who to write to.',
     icon: 'hand',
     sketch: ['mast', 'stripe', 'heading', 'stats', 'text', 'tiles', 'steps', 'person', ...FOOT],
   },
@@ -216,7 +304,8 @@ export const BUILT_IN_TEMPLATES = [
     group: 'blocks',
     section: 'Company news',
     label: 'Office hours notice',
-    description: 'A public holiday or a move: when we are closed, when we are back, who to call for a breakdown.',
+    description:
+      'A public holiday or a move: when we are closed, when we are back, who to call for a breakdown.',
     icon: 'clock',
     sketch: ['mast', 'stripe', 'poster', 'text', 'kv', 'person', ...FOOT],
   },
@@ -240,8 +329,24 @@ export const BUILT_IN_TEMPLATES = [
     icon: 'blocks',
     sketch: ['mast', 'stripe', ...FOOT],
   },
-  { id: 'rich-blank', group: 'rich', section: 'Rich text', label: 'Blank', description: 'An empty page in the editor.', icon: 'file', sketch: ['text'] },
-  { id: 'rich-letter', group: 'rich', section: 'Rich text', label: 'Letter', description: 'A greeting, your message and a sign-off.', icon: 'mail', sketch: ['text', 'text'] },
+  {
+    id: 'rich-blank',
+    group: 'rich',
+    section: 'Rich text',
+    label: 'Blank',
+    description: 'An empty page in the editor.',
+    icon: 'file',
+    sketch: ['text'],
+  },
+  {
+    id: 'rich-letter',
+    group: 'rich',
+    section: 'Rich text',
+    label: 'Letter',
+    description: 'A greeting, your message and a sign-off.',
+    icon: 'mail',
+    sketch: ['text', 'text'],
+  },
   {
     id: 'rich-digest',
     group: 'rich',
@@ -254,10 +359,16 @@ export const BUILT_IN_TEMPLATES = [
 ] as const satisfies readonly BuiltInTemplate[]
 
 export type BuiltInTemplateId = (typeof BUILT_IN_TEMPLATES)[number]['id']
-export const BUILT_IN_TEMPLATE_IDS = BUILT_IN_TEMPLATES.map((t) => t.id) as [BuiltInTemplateId, ...BuiltInTemplateId[]]
+export const BUILT_IN_TEMPLATE_IDS = BUILT_IN_TEMPLATES.map((t) => t.id) as [
+  BuiltInTemplateId,
+  ...BuiltInTemplateId[],
+]
 
 export const NEEDS_LABEL: Record<TemplateNeeds, { question: string; placeholder: string }> = {
-  product: { question: 'Which product is it launching?', placeholder: 'Search products by name or SKU' },
+  product: {
+    question: 'Which product is it launching?',
+    placeholder: 'Search products by name or SKU',
+  },
   brand: { question: 'Which brand is it about?', placeholder: 'Search brands' },
   industry: { question: 'Which industry is it for?', placeholder: 'Search industries' },
   category: { question: 'Which range is it about?', placeholder: 'Search categories' },

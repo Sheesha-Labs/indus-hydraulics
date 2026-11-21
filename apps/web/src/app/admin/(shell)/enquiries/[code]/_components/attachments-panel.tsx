@@ -122,7 +122,7 @@ function Inner({ enquiryId, attachments }: Props) {
   return (
     <div className="flex flex-col gap-3">
       {attachments.length === 0 ? (
-        <p className="text-[13px] text-ih-muted">
+        <p className="text-ih-muted text-[13px]">
           No files attached. PDF sheets are read directly, including scanned ones; Excel is read
           cell by cell.
         </p>
@@ -131,18 +131,18 @@ function Inner({ enquiryId, attachments }: Props) {
           {attachments.map((a) => (
             <li
               key={a.id}
-              className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-ih-border px-3 py-2"
+              className="border-ih-border flex flex-wrap items-center justify-between gap-3 rounded-lg border px-3 py-2"
             >
               <div className="flex min-w-0 flex-col gap-0.5">
-                <a className="truncate text-[14px] text-ih-ink hover:underline" href={a.href}>
+                <a className="text-ih-ink truncate text-[14px] hover:underline" href={a.href}>
                   {a.filename}
                 </a>
-                <span className="tabular-nums text-[12px] text-ih-muted">
+                <span className="text-ih-muted text-[12px] tabular-nums">
                   {humanBytes(a.bytes)}
                   {a.extractedLines > 0 ? ` · ${a.extractedLines} lines added` : ''}
                 </span>
                 {a.extractionNote ? (
-                  <span className="text-[12px] text-ih-muted">{a.extractionNote}</span>
+                  <span className="text-ih-muted text-[12px]">{a.extractionNote}</span>
                 ) : null}
               </div>
               <div className="flex items-center gap-2">
@@ -181,7 +181,9 @@ function Inner({ enquiryId, attachments }: Props) {
           accept=".pdf,.xlsx,.docx,application/pdf,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
           onChange={onPick}
         />
-        <p className="text-[13px] text-ih-muted">PDF or Excel. Word files are stored but not read.</p>
+        <p className="text-ih-muted text-[13px]">
+          PDF or Excel. Word files are stored but not read.
+        </p>
       </div>
     </div>
   )

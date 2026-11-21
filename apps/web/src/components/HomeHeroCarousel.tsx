@@ -75,7 +75,7 @@ export default function HomeHeroCarousel({ slides }: Props) {
 
   return (
     <div
-      className="relative bg-ih-bg border border-ih-border overflow-hidden"
+      className="bg-ih-bg border-ih-border relative overflow-hidden border"
       style={{ aspectRatio: '1.05 / 1' }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -85,7 +85,7 @@ export default function HomeHeroCarousel({ slides }: Props) {
     >
       {/* Decorative grid overlay — kept from the original placeholder design */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.04] z-10"
+        className="pointer-events-none absolute inset-0 z-10 opacity-[0.04]"
         style={{
           backgroundImage:
             'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
@@ -116,7 +116,7 @@ export default function HomeHeroCarousel({ slides }: Props) {
             priority={idx === 0}
             loading={idx === 0 ? undefined : 'lazy'}
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="absolute inset-0 w-full h-full object-contain"
+            className="absolute inset-0 h-full w-full object-contain"
           />
         </div>
       ))}
@@ -124,7 +124,7 @@ export default function HomeHeroCarousel({ slides }: Props) {
       {/* Index dots — only show if 2+ slides */}
       {slides.length > 1 && (
         <div
-          className="absolute bottom-14 left-1/2 -translate-x-1/2 z-20 flex gap-2"
+          className="absolute bottom-14 left-1/2 z-20 flex -translate-x-1/2 gap-2"
           role="tablist"
           aria-label="Select carousel slide"
         >
@@ -136,10 +136,8 @@ export default function HomeHeroCarousel({ slides }: Props) {
               aria-selected={idx === active}
               aria-label={`Slide ${idx + 1} of ${slides.length}`}
               onClick={() => setActive(idx)}
-              className={`w-1.5 h-1.5 transition-all ${
-                idx === active
-                  ? 'w-6 bg-ih-accent'
-                  : 'bg-ih-border-strong hover:bg-ih-navy'
+              className={`h-1.5 w-1.5 transition-all ${
+                idx === active ? 'bg-ih-accent w-6' : 'bg-ih-border-strong hover:bg-ih-navy'
               }`}
             />
           ))}
@@ -147,14 +145,14 @@ export default function HomeHeroCarousel({ slides }: Props) {
       )}
 
       {/* Auto-derived spec bar (bottom) — matches industrial CAD aesthetic */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-ih-surface border-t border-ih-border px-4 py-3 flex justify-between font-mono text-[12px] text-ih-muted">
+      <div className="bg-ih-surface border-ih-border text-ih-muted absolute right-0 bottom-0 left-0 z-20 flex justify-between border-t px-4 py-3 font-mono text-[12px]">
         <span className="truncate">
           FILE:{' '}
           <strong className="text-ih-ink font-medium">
             {activeSlide.originalFilename.toUpperCase()}
           </strong>
         </span>
-        <span className="shrink-0 ml-4">
+        <span className="ml-4 shrink-0">
           REV:{' '}
           <strong className="text-ih-ink font-medium">
             {revNumber} · {revDate}

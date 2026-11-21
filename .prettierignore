@@ -6,11 +6,13 @@
 #   - Catalogue payloads under packages/db/data/, and the generated one-off
 #     import scripts under packages/db/src/imports/ (diagram-roundtrip.test.ts
 #     reads their SVG strings in the quoting the generator wrote).
-#   - The design handoff, which is a reference copy, not our code.
+#   - docs/ (including its HTML article drafts) and the design handoff, which
+#     is a reference copy, not our code.
 *.md
 **/*.md
 packages/db/data/
 packages/db/src/imports/
 design_handoff_indus_hydraulics_v2/
+docs/
 bun.lock
 **/*.snap

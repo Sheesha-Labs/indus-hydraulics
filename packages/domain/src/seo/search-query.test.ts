@@ -9,8 +9,9 @@ describe('normaliseQuery', () => {
 
 describe('expandSynonyms', () => {
   it('returns original when no group matches', () => {
-    expect(expandSynonyms('hydraulic pump', [{ group: 'oring', terms: ['o-ring', 'oring'] }]))
-      .toEqual(['hydraulic pump'])
+    expect(
+      expandSynonyms('hydraulic pump', [{ group: 'oring', terms: ['o-ring', 'oring'] }])
+    ).toEqual(['hydraulic pump'])
   })
 
   it('expands when any token matches a group', () => {

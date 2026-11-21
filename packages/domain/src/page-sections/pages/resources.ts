@@ -79,7 +79,8 @@ export const RESOURCES_PAGE: MasterPageDef = {
       key: 'references',
       label: 'Reference pages',
       description: 'The four reference cards.',
-      dataNote: 'The cards, their figures and their order come from the resources registry in code.',
+      dataNote:
+        'The cards, their figures and their order come from the resources registry in code.',
       fields: [eyebrow(), heading({ max: 120 }), area('body', 'Introduction', { max: 400 })],
       defaults: {
         eyebrow: 'References',
@@ -103,7 +104,8 @@ export const RESOURCES_PAGE: MasterPageDef = {
       key: 'guides',
       label: 'Guides',
       description: 'Posts that use the charts.',
-      dataNote: 'The posts are listed by slug in code; titles come from the blog, and an unpublished post drops out.',
+      dataNote:
+        'The posts are listed by slug in code; titles come from the blog, and an unpublished post drops out.',
       fields: [eyebrow(), heading({ max: 120 })],
       defaults: {
         eyebrow: 'Read with the charts',

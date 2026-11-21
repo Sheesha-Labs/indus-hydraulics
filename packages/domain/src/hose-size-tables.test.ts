@@ -81,16 +81,8 @@ describe('the misleading-comparison problem this exists to fix', () => {
   })
 
   it('ranks grades correctly at a common bore', () => {
-    const at32 = compareHoseGradesAtDash(32, [
-      'IH-HOSE-R2-2SN',
-      'IH-HOSE-4SP',
-      'IH-HOSE-4SH',
-    ])
-    expect(at32.map((r) => r.sku)).toEqual([
-      'IH-HOSE-4SH',
-      'IH-HOSE-4SP',
-      'IH-HOSE-R2-2SN',
-    ])
+    const at32 = compareHoseGradesAtDash(32, ['IH-HOSE-R2-2SN', 'IH-HOSE-4SP', 'IH-HOSE-4SH'])
+    expect(at32.map((r) => r.sku)).toEqual(['IH-HOSE-4SH', 'IH-HOSE-4SP', 'IH-HOSE-R2-2SN'])
   })
 
   it('omits grades not made in the requested size rather than showing zero', () => {

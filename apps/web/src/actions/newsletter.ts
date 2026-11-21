@@ -6,7 +6,11 @@ import { z } from 'zod'
 import { isDotPaddedGmail, newsletterSource, normaliseNewsletterEmail } from '@indus/domain'
 import { rejectAsBot } from '../lib/designed-enquiry'
 import { clientIp } from '../lib/request-origin'
-import { confirmSubscription, requestSubscription, unsubscribeByToken } from '../lib/newsletter/service'
+import {
+  confirmSubscription,
+  requestSubscription,
+  unsubscribeByToken,
+} from '../lib/newsletter/service'
 
 /**
  * The newsletter's public server actions: sign up, confirm, unsubscribe.
@@ -29,7 +33,8 @@ export async function subscribeToNewsletter(formData: FormData): Promise<Subscri
   if (rejectAsBot(formData) !== null) return { success: true, message: CHECK_INBOX }
 
   const parsed = EmailSchema.safeParse(formData.get('email'))
-  if (!parsed.success) return { success: false, error: parsed.error.issues[0]?.message ?? 'Enter a valid email' }
+  if (!parsed.success)
+    return { success: false, error: parsed.error.issues[0]?.message ?? 'Enter a valid email' }
   const email = normaliseNewsletterEmail(parsed.data)
   if (isDotPaddedGmail(email)) return { success: true, message: CHECK_INBOX }
 
@@ -58,7 +63,10 @@ export async function subscribeToNewsletter(formData: FormData): Promise<Subscri
       case 'already_confirmed':
         return { success: true, message: "You're already subscribed — thank you." }
       case 'rate_limited':
-        return { success: false, error: 'Too many sign-ups from your network. Try again in an hour.' }
+        return {
+          success: false,
+          error: 'Too many sign-ups from your network. Try again in an hour.',
+        }
       default:
         return { success: true, message: CHECK_INBOX }
     }
@@ -78,13 +86,15 @@ export type NewsletterTokenState =
 /** The confirm page's button. A POST — mail scanners only ever GET the page. */
 export async function confirmNewsletterAction(
   _prev: NewsletterTokenState,
-  formData: FormData,
+  formData: FormData
 ): Promise<NewsletterTokenState> {
   const token = formData.get('token')
   if (typeof token !== 'string') return { status: 'not_found' }
   try {
     const outcome = await confirmSubscription(token)
-    return outcome.status === 'confirmed' ? { status: 'done', maskedEmail: outcome.maskedEmail } : outcome
+    return outcome.status === 'confirmed'
+      ? { status: 'done', maskedEmail: outcome.maskedEmail }
+      : outcome
   } catch (err) {
     console.error('[confirmNewsletterAction] failed', err)
     return { status: 'error' }
@@ -94,7 +104,7 @@ export async function confirmNewsletterAction(
 /** The unsubscribe page's button. */
 export async function unsubscribeNewsletterAction(
   _prev: NewsletterTokenState,
-  formData: FormData,
+  formData: FormData
 ): Promise<NewsletterTokenState> {
   const token = formData.get('token')
   if (typeof token !== 'string') return { status: 'not_found' }

@@ -26,7 +26,6 @@ type Props = {
   variant?: 'default' | 'grid'
 }
 
-
 /**
  * Shared article card — used by the index, the category hubs and the author
  * pages. One component rather than three near-identical grids, so a change to
@@ -38,7 +37,7 @@ export default function BlogPostCard({ post, variant = 'default' }: Props) {
   return (
     <article className="group flex flex-col">
       <Link href={`/blog/${post.slug}`} className="flex flex-col gap-3">
-        <div className="relative aspect-[4/3] overflow-hidden border border-ih-border bg-ih-surface-2">
+        <div className="border-ih-border bg-ih-surface-2 relative aspect-[4/3] overflow-hidden border">
           {post.heroPath ? (
             <Image
               src={mediaUrl(post.heroPath)}
@@ -48,19 +47,21 @@ export default function BlogPostCard({ post, variant = 'default' }: Props) {
               className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             />
           ) : (
-            <span className="mono absolute inset-0 grid place-items-center text-[11px] text-ih-muted-2">
+            <span className="mono text-ih-muted-2 absolute inset-0 grid place-items-center text-[11px]">
               Indus Hydraulics
             </span>
           )}
         </div>
-        <h3 className="text-[17px] font-semibold leading-[1.25] tracking-[-0.01em] text-ih-ink group-hover:text-ih-accent">
+        <h3 className="text-ih-ink group-hover:text-ih-accent text-[17px] leading-[1.25] font-semibold tracking-[-0.01em]">
           {post.title}
         </h3>
       </Link>
       {post.excerpt && (
-        <p className="mt-1.5 line-clamp-2 text-[14px] leading-[1.5] text-ih-muted">{post.excerpt}</p>
+        <p className="text-ih-muted mt-1.5 line-clamp-2 text-[14px] leading-[1.5]">
+          {post.excerpt}
+        </p>
       )}
-      <div className="mono mt-2.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11px] text-ih-muted">
+      <div className="mono text-ih-muted mt-2.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11px]">
         {post.categoryName && post.categorySlug && (
           <>
             <Link href={`/blog/c/${post.categorySlug}`} className="hover:text-ih-accent">
@@ -103,8 +104,8 @@ function GridCard({ post }: { post: BlogPostCardData }) {
   const alt = post.heroAlt ?? post.title
 
   return (
-    <article className="group relative grid min-w-0 grid-cols-[minmax(0,1fr)_96px] items-start gap-4 border-b border-ih-border py-[18px] last:border-b-0 min-[761px]:flex min-[761px]:flex-col min-[761px]:items-stretch min-[761px]:gap-0 min-[761px]:border-b-0 min-[761px]:py-0">
-      <div className="relative col-start-2 row-start-1 aspect-square overflow-hidden rounded-md bg-ih-surface-3 min-[761px]:aspect-video min-[761px]:rounded-lg">
+    <article className="group border-ih-border relative grid min-w-0 grid-cols-[minmax(0,1fr)_96px] items-start gap-4 border-b py-[18px] last:border-b-0 min-[761px]:flex min-[761px]:flex-col min-[761px]:items-stretch min-[761px]:gap-0 min-[761px]:border-b-0 min-[761px]:py-0">
+      <div className="bg-ih-surface-3 relative col-start-2 row-start-1 aspect-square overflow-hidden rounded-md min-[761px]:aspect-video min-[761px]:rounded-lg">
         {post.heroPath ? (
           <Image
             src={mediaUrl(post.heroPath)}
@@ -120,26 +121,26 @@ function GridCard({ post }: { post: BlogPostCardData }) {
         {post.categoryName && post.categorySlug && (
           <Link
             href={`/blog/c/${post.categorySlug}`}
-            className="relative z-[1] -my-[13px] inline-flex min-h-10 items-center self-start font-mono text-[10.5px] font-medium uppercase leading-[1.3] tracking-[0.1em] text-ih-accent transition-colors duration-150 hover:text-ih-accent-hover hover:underline hover:underline-offset-[3px] motion-reduce:transition-none"
+            className="text-ih-accent hover:text-ih-accent-hover relative z-[1] -my-[13px] inline-flex min-h-10 items-center self-start font-mono text-[10.5px] leading-[1.3] font-medium tracking-[0.1em] uppercase transition-colors duration-150 hover:underline hover:underline-offset-[3px] motion-reduce:transition-none"
           >
             {post.categoryName}
           </Link>
         )}
-        <h3 className="text-[15px] font-medium leading-[1.32] tracking-[-0.015em] text-pretty text-ih-ink min-[761px]:text-[16.5px]">
+        <h3 className="text-ih-ink text-[15px] leading-[1.32] font-medium tracking-[-0.015em] text-pretty min-[761px]:text-[16.5px]">
           <Link
             href={`/blog/${post.slug}`}
-            className="transition-colors duration-150 after:absolute after:inset-0 after:content-[''] group-hover:text-ih-accent motion-reduce:transition-none"
+            className="group-hover:text-ih-accent transition-colors duration-150 after:absolute after:inset-0 after:content-[''] motion-reduce:transition-none"
           >
             {post.title}
           </Link>
         </h3>
         {post.excerpt && (
-          <p className="hidden text-[13px] leading-[1.55] text-ih-ink-2 min-[761px]:line-clamp-3">
+          <p className="text-ih-ink-2 hidden text-[13px] leading-[1.55] min-[761px]:line-clamp-3">
             {post.excerpt}
           </p>
         )}
         {(post.publishedAt || post.readingMinutes) && (
-          <p className="mt-auto flex flex-wrap gap-x-2 gap-y-1 pt-1 font-mono text-[11px] tracking-[0.02em] text-ih-muted">
+          <p className="text-ih-muted mt-auto flex flex-wrap gap-x-2 gap-y-1 pt-1 font-mono text-[11px] tracking-[0.02em]">
             {post.publishedAt && (
               <time dateTime={post.publishedAt.toISOString()} className="whitespace-nowrap">
                 {formatDate(post.publishedAt)}

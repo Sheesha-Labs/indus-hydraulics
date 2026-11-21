@@ -29,7 +29,10 @@ describe('crimp specifications', () => {
 
   test('inches and millimetres agree within the source rounding', () => {
     for (const row of CRIMP_SPECS) {
-      expect(Math.abs(row.crimpIn * 25.4 - row.crimpMm), `${row.hose} -${row.dash} ${row.series}`).toBeLessThan(0.6)
+      expect(
+        Math.abs(row.crimpIn * 25.4 - row.crimpMm),
+        `${row.hose} -${row.dash} ${row.series}`
+      ).toBeLessThan(0.6)
     }
   })
 
@@ -45,7 +48,8 @@ describe('crimp specifications', () => {
   test('a crimp diameter is always larger than the hose bore', () => {
     for (const row of CRIMP_SPECS) {
       const [whole, frac] = row.bore.replace('"', '').split('-')
-      const parse = (s: string) => (s.includes('/') ? Number(s.split('/')[0]) / Number(s.split('/')[1]) : Number(s))
+      const parse = (s: string) =>
+        s.includes('/') ? Number(s.split('/')[0]) / Number(s.split('/')[1]) : Number(s)
       const bore = frac !== undefined ? Number(whole) + parse(frac) : parse(whole ?? '0')
       expect(row.crimpIn, `${row.hose} -${row.dash}`).toBeGreaterThan(bore)
     }
@@ -78,7 +82,8 @@ describe('thread chart', () => {
     for (const family of THREAD_FAMILIES) {
       if (family.kind !== 'thread') continue
       for (const row of family.rows) {
-        if (row.femaleId !== null) expect(row.maleOd, `${family.id} ${row.thread}`).toBeGreaterThan(row.femaleId)
+        if (row.femaleId !== null)
+          expect(row.maleOd, `${family.id} ${row.thread}`).toBeGreaterThan(row.femaleId)
       }
     }
   })
@@ -88,7 +93,9 @@ describe('thread chart', () => {
       if (family.kind !== 'thread') continue
       const sized = family.rows.filter((r) => r.dash !== null)
       for (let i = 1; i < sized.length; i++) {
-        expect(sized[i]!.maleOd, `${family.id} -${sized[i]!.dash}`).toBeGreaterThan(sized[i - 1]!.maleOd)
+        expect(sized[i]!.maleOd, `${family.id} -${sized[i]!.dash}`).toBeGreaterThan(
+          sized[i - 1]!.maleOd
+        )
       }
     }
   })
@@ -98,7 +105,8 @@ describe('thread chart', () => {
     const npt = find('npt-nptf-npsm')
     const unf = find('unf-jic-orb-flareless')
     const orfs = find('orfs')
-    if (npt?.kind !== 'thread' || unf?.kind !== 'thread' || orfs?.kind !== 'thread') throw new Error('families missing')
+    if (npt?.kind !== 'thread' || unf?.kind !== 'thread' || orfs?.kind !== 'thread')
+      throw new Error('families missing')
     expect(npt.rows.find((r) => r.dash === 6)?.pitch).toBe('18')
     expect(unf.rows.find((r) => r.dash === 12)?.maleOd).toBe(1.0625)
     expect(orfs.rows.find((r) => r.dash === 16)?.femaleId).toBeLessThan(1.4375)
@@ -148,7 +156,10 @@ describe('pressure ratings', () => {
   })
 
   test('Code 61 follows SAE J518 to 4"', () => {
-    const code61 = RATING_ROWS.filter((r) => r.psi.code61 !== undefined).map((r) => [r.dash, r.psi.code61])
+    const code61 = RATING_ROWS.filter((r) => r.psi.code61 !== undefined).map((r) => [
+      r.dash,
+      r.psi.code61,
+    ])
     expect(code61).toEqual([
       [8, 5000],
       [12, 5000],

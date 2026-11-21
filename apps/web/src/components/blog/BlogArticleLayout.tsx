@@ -80,7 +80,7 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
 
   const entries: ContentsEntry[] = article
     ? article.blocks.flatMap((b) =>
-        b.type === 'section_head' ? [{ anchor: b.anchor, number: b.number, title: b.title }] : [],
+        b.type === 'section_head' ? [{ anchor: b.anchor, number: b.number, title: b.title }] : []
       )
     : []
 
@@ -98,16 +98,16 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
         {category && (
           <Link
             href={`/blog/c/${category.slug}`}
-            className="inline-flex min-h-10 items-center font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-ih-accent hover:underline hover:underline-offset-[3px]"
+            className="text-ih-accent inline-flex min-h-10 items-center font-mono text-[11px] font-medium tracking-[0.12em] uppercase hover:underline hover:underline-offset-[3px]"
           >
             {category.name}
           </Link>
         )}
-        <h1 className="mt-2 max-w-[1000px] text-balance font-serif text-[38px] font-normal leading-[1.02] tracking-[-0.015em] text-ih-ink min-[761px]:text-[66px]">
+        <h1 className="text-ih-ink mt-2 max-w-[1000px] font-serif text-[38px] leading-[1.02] font-normal tracking-[-0.015em] text-balance min-[761px]:text-[66px]">
           {props.title}
         </h1>
         {props.excerpt && (
-          <p className="mt-3.5 max-w-[700px] text-[16px] leading-[1.6] text-ih-ink-2 min-[761px]:mt-5 min-[761px]:text-[18px]">
+          <p className="text-ih-ink-2 mt-3.5 max-w-[700px] text-[16px] leading-[1.6] min-[761px]:mt-5 min-[761px]:text-[18px]">
             {props.excerpt}
           </p>
         )}
@@ -116,7 +116,7 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
 
       {props.hero && (
         <figure id={HERO_ID} className="m-0 mt-6 min-[761px]:mt-11">
-          <div className="relative aspect-[4/3] w-full overflow-hidden bg-ih-surface-3 min-[761px]:aspect-[21/8]">
+          <div className="bg-ih-surface-3 relative aspect-[4/3] w-full overflow-hidden min-[761px]:aspect-[21/8]">
             <Image
               src={mediaUrl(props.hero.storagePath)}
               alt={props.hero.alt ?? props.title}
@@ -128,7 +128,9 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
           </div>
           {/* The caption says why the picture is here; the alt says what is in it. Never Media.caption. */}
           {props.heroCaption && (
-            <figcaption className={`${WRAP} mt-3 text-[13.5px] leading-[1.5] text-ih-muted min-[761px]:text-center`}>
+            <figcaption
+              className={`${WRAP} text-ih-muted mt-3 text-[13.5px] leading-[1.5] min-[761px]:text-center`}
+            >
               {props.heroCaption}
             </figcaption>
           )}
@@ -142,13 +144,18 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
           {article && layout ? (
             <>
               <AtAGlance article={article} takeaways={layout.takeaways} stamp={layout.stamp} />
-              <BlogArticleRenderer article={article} contact={props.contact} skip={layout.skip} id={BODY_ID} />
+              <BlogArticleRenderer
+                article={article}
+                contact={props.contact}
+                skip={layout.skip}
+                id={BODY_ID}
+              />
             </>
           ) : (
             // Legacy posts — written before the block editor — keep their HTML.
             <div
               id={BODY_ID}
-              className="ih-rich-text min-w-0 max-w-none"
+              className="ih-rich-text max-w-none min-w-0"
               dangerouslySetInnerHTML={{ __html: props.legacyBody }}
             />
           )}
@@ -162,7 +169,7 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
           {category && <MoreOnTopic articles={props.moreFromTopic} topic={category} />}
           <Link
             href="/blog"
-            className="mt-10 inline-flex min-h-10 items-center gap-2 text-[14px] font-medium text-ih-ink-2 hover:text-ih-accent"
+            className="text-ih-ink-2 hover:text-ih-accent mt-10 inline-flex min-h-10 items-center gap-2 text-[14px] font-medium"
           >
             <ArrowLeftIcon />
             Back to Blog
@@ -193,7 +200,9 @@ function DocumentStrip(props: BlogArticleLayoutProps & { sections: number }) {
     ...(props.publishedAt
       ? [{ key: 'pub', label: 'Published', value: <DateValue date={props.publishedAt} /> }]
       : []),
-    ...(props.updatedAt ? [{ key: 'upd', label: 'Updated', value: <DateValue date={props.updatedAt} /> }] : []),
+    ...(props.updatedAt
+      ? [{ key: 'upd', label: 'Updated', value: <DateValue date={props.updatedAt} /> }]
+      : []),
     { key: 'read', label: 'Reading', value: reading },
     ...(reviewer
       ? [
@@ -218,14 +227,16 @@ function DocumentStrip(props: BlogArticleLayoutProps & { sections: number }) {
   ]
 
   return (
-    <dl className="m-0 mt-[22px] grid w-full grid-cols-2 overflow-hidden rounded-lg border border-ih-border bg-ih-surface text-left min-[761px]:mt-8 min-[761px]:flex min-[761px]:w-auto min-[761px]:max-w-full">
+    <dl className="border-ih-border bg-ih-surface m-0 mt-[22px] grid w-full grid-cols-2 overflow-hidden rounded-lg border text-left min-[761px]:mt-8 min-[761px]:flex min-[761px]:w-auto min-[761px]:max-w-full">
       {cells.map((cell, i) => (
         <div
           key={cell.key}
           className={[
             'flex min-w-0 flex-col justify-center gap-1 px-3.5 py-2.5',
-            cell.key === 'share' ? 'min-[761px]:px-3 min-[761px]:py-2.5' : 'min-[761px]:px-[22px] min-[761px]:py-3',
-            i === 0 ? 'col-span-2' : 'border-t border-ih-border min-[761px]:border-t-0',
+            cell.key === 'share'
+              ? 'min-[761px]:px-3 min-[761px]:py-2.5'
+              : 'min-[761px]:px-[22px] min-[761px]:py-3',
+            i === 0 ? 'col-span-2' : 'border-ih-border border-t min-[761px]:border-t-0',
             // Phone pairs cells two-up after the full-width first one: the
             // right-hand cell of each pair gets the rule. Wide: every cell does.
             i > 0 ? ((i - 1) % 2 === 1 ? 'border-l' : 'min-[761px]:border-l') : '',
@@ -233,12 +244,14 @@ function DocumentStrip(props: BlogArticleLayoutProps & { sections: number }) {
         >
           <dt
             className={
-              cell.srLabel ? 'sr-only' : 'font-mono text-[10px] uppercase tracking-[0.12em] text-ih-muted'
+              cell.srLabel
+                ? 'sr-only'
+                : 'text-ih-muted font-mono text-[10px] tracking-[0.12em] uppercase'
             }
           >
             {cell.label}
           </dt>
-          <dd className="m-0 text-[14px] text-ih-ink">{cell.value}</dd>
+          <dd className="text-ih-ink m-0 text-[14px]">{cell.value}</dd>
         </div>
       ))}
     </dl>
@@ -249,7 +262,7 @@ function PersonValue({ person }: { person: Person }) {
   return (
     <>
       {person.href ? (
-        <Link href={person.href} className="font-semibold hover:text-ih-accent">
+        <Link href={person.href} className="hover:text-ih-accent font-semibold">
           {person.name}
         </Link>
       ) : (
@@ -313,17 +326,23 @@ function WhatNext({
 
   const categoryLinks = layout.categoryLinks.flatMap((i) => {
     const b = article.blocks[i]
-    return b?.type === 'category_link' && article.categoriesBySlug.has(b.slug) ? [{ i, block: b }] : []
+    return b?.type === 'category_link' && article.categoriesBySlug.has(b.slug)
+      ? [{ i, block: b }]
+      : []
   })
   if (categoryLinks.length > 0) {
     steps.push({
       key: 'part',
       body: (
         <>
-          <h3 className="mb-3 text-[15px] font-semibold text-ih-ink">Find the part</h3>
+          <h3 className="text-ih-ink mb-3 text-[15px] font-semibold">Find the part</h3>
           <div className="flex flex-col gap-3">
             {categoryLinks.map(({ i, block }) => (
-              <CategoryLinkBlockView key={i} block={block} categoriesBySlug={article.categoriesBySlug} />
+              <CategoryLinkBlockView
+                key={i}
+                block={block}
+                categoriesBySlug={article.categoriesBySlug}
+              />
             ))}
           </div>
         </>
@@ -337,14 +356,20 @@ function WhatNext({
       layout.related.flatMap((i) => {
         const b = article.blocks[i]
         return b?.type === 'related_articles' ? b.slugs : []
-      }),
+      })
     ),
   ]
   const readNext: RelatedArticlesBlock = { type: 'related_articles', slugs: relatedSlugs }
   if (relatedSlugs.length > 0 && resolvedRelated(readNext, article.articlesBySlug).length > 0) {
     steps.push({
       key: 'read',
-      body: <RelatedArticlesBlockView block={readNext} articlesBySlug={article.articlesBySlug} variant="step" />,
+      body: (
+        <RelatedArticlesBlockView
+          block={readNext}
+          articlesBySlug={article.articlesBySlug}
+          variant="step"
+        />
+      ),
     })
   }
 
@@ -353,7 +378,9 @@ function WhatNext({
     if (b?.type === 'market_reach' && liveMarketGroups(b, article.livePageLinks).length > 0) {
       steps.push({
         key: `market-${i}`,
-        body: <MarketReachBlockView block={b} livePageLinks={article.livePageLinks} variant="step" />,
+        body: (
+          <MarketReachBlockView block={b} livePageLinks={article.livePageLinks} variant="step" />
+        ),
       })
     }
   })
@@ -376,7 +403,7 @@ function WhatNext({
           <>
             <h2
               id="what-next"
-              className="border-b border-ih-ink pb-4 font-serif text-[30px] font-normal leading-[1.05] tracking-[-0.01em] text-ih-ink min-[761px]:text-[44px]"
+              className="border-ih-ink text-ih-ink border-b pb-4 font-serif text-[30px] leading-[1.05] font-normal tracking-[-0.01em] min-[761px]:text-[44px]"
             >
               What next
             </h2>
@@ -384,9 +411,9 @@ function WhatNext({
               {steps.map((step, n) => (
                 <li
                   key={step.key}
-                  className="grid grid-cols-1 gap-2 border-b border-ih-border py-6 min-[761px]:grid-cols-[120px_minmax(0,1fr)] min-[761px]:gap-8 min-[761px]:py-8"
+                  className="border-ih-border grid grid-cols-1 gap-2 border-b py-6 min-[761px]:grid-cols-[120px_minmax(0,1fr)] min-[761px]:gap-8 min-[761px]:py-8"
                 >
-                  <span className="font-mono text-[18px] tracking-[-0.02em] text-ih-accent min-[761px]:text-[28px]">
+                  <span className="text-ih-accent font-mono text-[18px] tracking-[-0.02em] min-[761px]:text-[28px]">
                     {stepNumber(n)}
                   </span>
                   <div className="min-w-0">{step.body}</div>

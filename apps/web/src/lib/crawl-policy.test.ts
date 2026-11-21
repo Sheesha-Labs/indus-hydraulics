@@ -59,9 +59,9 @@ describe('crawl policy', () => {
   })
 
   it('names the offending path when there is one, rather than just failing', () => {
-    expect(sitemapPathsBlockedByRobots([{ path: '/compare', priority: 0.5, changeFrequency: 'weekly' }])).toEqual(
-      ['/compare'],
-    )
+    expect(
+      sitemapPathsBlockedByRobots([{ path: '/compare', priority: 0.5, changeFrequency: 'weekly' }])
+    ).toEqual(['/compare'])
   })
 })
 
@@ -74,7 +74,11 @@ describe('FACET_DISALLOW', () => {
    */
   const matches = (pattern: string, url: string): boolean => {
     const re = new RegExp(
-      '^' + pattern.split('*').map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*'),
+      '^' +
+        pattern
+          .split('*')
+          .map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+          .join('.*')
     )
     return re.test(url)
   }

@@ -48,7 +48,7 @@ async function main() {
   let flattened = 0
 
   for (const row of rows) {
-    if (!byFrom.has(row.toPath)) continue        // already one hop
+    if (!byFrom.has(row.toPath)) continue // already one hop
 
     const seen = new Set([row.fromPath])
     let dest = row.toPath
@@ -88,7 +88,7 @@ async function main() {
 
   console.log(
     `\n[flatten-redirect-chains] ${flattened} chain${flattened === 1 ? '' : 's'} flattened, ` +
-      `${rows.length} redirects in total, ${problems.length} left for a human`,
+      `${rows.length} redirects in total, ${problems.length} left for a human`
   )
   for (const p of problems) console.log(`  ! ${p}`)
 }

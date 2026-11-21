@@ -30,10 +30,12 @@ export function ResourceBreadcrumbStrip({
   meta?: string
 }) {
   return (
-    <div className={`border-b border-ih-border bg-ih-surface py-3 ${RESOURCE_GUTTER}`}>
-      <div className={`${RESOURCE_WIDTH} flex flex-wrap items-center justify-between gap-x-6 gap-y-2`}>
+    <div className={`border-ih-border bg-ih-surface border-b py-3 ${RESOURCE_GUTTER}`}>
+      <div
+        className={`${RESOURCE_WIDTH} flex flex-wrap items-center justify-between gap-x-6 gap-y-2`}
+      >
         <nav aria-label="Breadcrumb">
-          <ol className="mono flex flex-wrap items-center gap-2 text-[12px] text-ih-muted">
+          <ol className="mono text-ih-muted flex flex-wrap items-center gap-2 text-[12px]">
             {trail.map((item, i) => {
               const last = i === trail.length - 1
               return (
@@ -57,7 +59,11 @@ export function ResourceBreadcrumbStrip({
             })}
           </ol>
         </nav>
-        {meta ? <span className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">{meta}</span> : null}
+        {meta ? (
+          <span className="mono text-ih-muted-2 text-[10.5px] tracking-[0.1em] uppercase">
+            {meta}
+          </span>
+        ) : null}
       </div>
     </div>
   )
@@ -86,19 +92,24 @@ export function ResourceSection({
 }) {
   return (
     <section id={id} aria-labelledby={`${id}-heading`} className={`${ANCHOR_OFFSET} ${className}`}>
-      <div className="border-b border-ih-border pb-[13px]">
-        <span aria-hidden="true" className="mb-2 block font-mono text-[11px] tracking-[0.06em] text-ih-accent">
+      <div className="border-ih-border border-b pb-[13px]">
+        <span
+          aria-hidden="true"
+          className="text-ih-accent mb-2 block font-mono text-[11px] tracking-[0.06em]"
+        >
           {number}
         </span>
         {eyebrow ? <Eyebrow className="mb-3">{eyebrow}</Eyebrow> : null}
         <h2
           id={`${id}-heading`}
-          className="max-w-[760px] text-balance font-serif text-[28px] font-normal leading-[1.12] tracking-[-0.01em] sm:text-[32px]"
+          className="max-w-[760px] font-serif text-[28px] leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-[32px]"
         >
           {title}
         </h2>
       </div>
-      {lede ? <p className="mt-4 max-w-[760px] text-[15px] leading-[1.65] text-ih-ink-2">{lede}</p> : null}
+      {lede ? (
+        <p className="text-ih-ink-2 mt-4 max-w-[760px] text-[15px] leading-[1.65]">{lede}</p>
+      ) : null}
       <div className="mt-6">{children}</div>
     </section>
   )
@@ -110,14 +121,25 @@ export function ResourceSection({
  * shared `SectionHead`: its serif title inherits the body line-height, which
  * opens a wide gap between the lines of a two-line headline.
  */
-export function HubSectionHead({ number, eyebrow, title }: { number: string; eyebrow?: string | null; title: ReactNode }) {
+export function HubSectionHead({
+  number,
+  eyebrow,
+  title,
+}: {
+  number: string
+  eyebrow?: string | null
+  title: ReactNode
+}) {
   return (
     <div>
-      <span aria-hidden="true" className="mb-2 block font-mono text-[11px] tracking-[0.06em] text-ih-accent">
+      <span
+        aria-hidden="true"
+        className="text-ih-accent mb-2 block font-mono text-[11px] tracking-[0.06em]"
+      >
         {number}
       </span>
       {eyebrow ? <Eyebrow className="mb-3">{eyebrow}</Eyebrow> : null}
-      <h2 className="max-w-[680px] text-balance font-serif text-[28px] font-normal leading-[1.1] tracking-[-0.01em] sm:text-[34px]">
+      <h2 className="max-w-[680px] font-serif text-[28px] leading-[1.1] font-normal tracking-[-0.01em] text-balance sm:text-[34px]">
         {title}
       </h2>
     </div>
@@ -131,9 +153,18 @@ export function HubSectionHead({ number, eyebrow, title }: { number: string; eye
  * pages. Buttons build from store settings and a button with no value behind
  * it is dropped rather than shipped dead.
  */
-export function ResourceCtaBand({ copy, contact }: { copy: ResourceCtaCopy; contact: ResourceContact }) {
+export function ResourceCtaBand({
+  copy,
+  contact,
+}: {
+  copy: ResourceCtaCopy
+  contact: ResourceContact
+}) {
   return (
-    <section aria-labelledby="resource-cta-heading" className={`bg-ih-navy py-14 lg:py-[60px] ${RESOURCE_GUTTER}`}>
+    <section
+      aria-labelledby="resource-cta-heading"
+      className={`bg-ih-navy py-14 lg:py-[60px] ${RESOURCE_GUTTER}`}
+    >
       <div
         className={`${RESOURCE_WIDTH} grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:gap-14`}
       >
@@ -141,12 +172,14 @@ export function ResourceCtaBand({ copy, contact }: { copy: ResourceCtaCopy; cont
           {copy.eyebrow ? <Eyebrow className="text-ih-steel">{copy.eyebrow}</Eyebrow> : null}
           <h2
             id="resource-cta-heading"
-            className="mt-3.5 max-w-[640px] text-balance font-serif text-[30px] font-normal leading-[1.08] tracking-[-0.01em] text-white sm:text-[40px]"
+            className="mt-3.5 max-w-[640px] font-serif text-[30px] leading-[1.08] font-normal tracking-[-0.01em] text-balance text-white sm:text-[40px]"
           >
             {copy.heading} {copy.headingEmphasis ? <em>{copy.headingEmphasis}</em> : null}
           </h2>
           {copy.body ? (
-            <p className="mt-4 max-w-[600px] text-[15px] leading-[1.65] text-[oklch(0.84_0.02_250)]">{copy.body}</p>
+            <p className="mt-4 max-w-[600px] text-[15px] leading-[1.65] text-[oklch(0.84_0.02_250)]">
+              {copy.body}
+            </p>
           ) : null}
 
           <div className="mt-[26px] flex flex-wrap gap-2.5">
@@ -169,9 +202,12 @@ export function ResourceCtaBand({ copy, contact }: { copy: ResourceCtaCopy; cont
           </div>
 
           {contact.phone && copy.phonePrefix ? (
-            <p className="mono mt-[22px] text-[11px] uppercase tracking-[0.08em] text-[oklch(0.75_0.03_250)]">
+            <p className="mono mt-[22px] text-[11px] tracking-[0.08em] text-[oklch(0.75_0.03_250)] uppercase">
               {copy.phonePrefix}{' '}
-              <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="underline underline-offset-4 hover:text-white">
+              <a
+                href={`tel:${contact.phone.replace(/\s+/g, '')}`}
+                className="underline underline-offset-4 hover:text-white"
+              >
                 {contact.phone}
               </a>
             </p>
@@ -179,12 +215,14 @@ export function ResourceCtaBand({ copy, contact }: { copy: ResourceCtaCopy; cont
         </div>
 
         {copy.checklist.length > 0 ? (
-          <div className="rounded-lg border border-white/15 bg-ih-navy-2 px-6 pb-6 pt-5">
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-steel">What to send</p>
+          <div className="bg-ih-navy-2 rounded-lg border border-white/15 px-6 pt-5 pb-6">
+            <p className="mono text-ih-steel text-[10px] tracking-[0.14em] uppercase">
+              What to send
+            </p>
             <ul className="mt-4 flex flex-col gap-3.5">
               {copy.checklist.map((item) => (
                 <li key={item} className="flex gap-3 text-[14px] leading-[1.5] text-white/90">
-                  <span className="mt-[3px] text-ih-steel">
+                  <span className="text-ih-steel mt-[3px]">
                     <CheckIcon size={14} />
                   </span>
                   {item}
