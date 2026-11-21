@@ -6,7 +6,7 @@
   "types": "./src/index.ts",
   "scripts": {
     "typecheck": "bun check --no-script",
-    "test": "vitest run"
+    "test": "bun test --parallel --isolate=modules --randomize"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -33,7 +33,6 @@
     "@types/node": "^20",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "typescript": "^5.8.3",
-    "vitest": "^3.2.2"
+    "typescript": "^5.8.3"
   }
 }

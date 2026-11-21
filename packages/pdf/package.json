@@ -6,7 +6,7 @@
   "types": "./src/index.ts",
   "scripts": {
     "typecheck": "bun check --no-script",
-    "test": "vitest run --passWithNoTests"
+    "test": "bun test --parallel --isolate=modules --randomize"
   },
   "dependencies": {
     "@indus/db": "workspace:^",
@@ -18,7 +18,6 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
-    "typescript": "^5.8.3",
-    "vitest": "^3.2.2"
+    "typescript": "^5.8.3"
   }
 }
