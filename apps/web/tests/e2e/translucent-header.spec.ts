@@ -101,7 +101,9 @@ test.describe('translucent site header', () => {
     // The megamenu paints solid `bg-ih-surface` and docks to the bar. A
     // see-through bar sitting on top of it reads as a seam, not as an effect.
     await page.locator('header nav a[aria-haspopup="true"]').first().hover()
-    await expect(page.locator('header [role="menu"]')).toBeVisible()
+    // Every top-level item renders its panel in the HTML (crawlable nav), so
+    // there are several role="menu" elements; only the hovered one is shown.
+    await expect(page.locator('header [role="menu"]:not([hidden])')).toBeVisible()
     // The alpha is transitioned, so the computed value mid-flight is still the
     // frosted one. Read it after the 200ms transition has landed.
     await page.waitForTimeout(400)

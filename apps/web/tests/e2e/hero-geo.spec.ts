@@ -215,10 +215,13 @@ test.describe('homepage rotating term', () => {
     }
   })
 
-  test('links every rotating term to its category page', async ({ page }) => {
-    // A moving word is a poor click target, so the terms are mirrored as a
-    // static row. Without it the hero passes ranking strength to nothing.
-    await page.goto('/')
+  test('links every rotating term to its category page in the served HTML', async ({ request }) => {
+    // The homepage must pass ranking strength to every category the hero
+    // rotates through. The static pill row that mirrored the terms was removed
+    // on 2026-11-19 (owner call, #625); the megamenu and the category index now
+    // carry these links. What matters to a crawler is that they are in the
+    // server-rendered HTML, so that is what is asserted, not visibility.
+    const html = await (await request.get('/')).text()
     for (const href of [
       '/c/hydraulic-hoses',
       '/c/hydraulic-adapters',
@@ -228,7 +231,7 @@ test.describe('homepage rotating term', () => {
       '/c/metallic-hose-suppliers-uae',
       '/c/industrial-lubricant-suppliers-uae',
     ]) {
-      await expect(page.locator(`a[href="${href}"]`).first()).toBeVisible()
+      expect(html, `${href} is not linked from the homepage HTML`).toContain(`href="${href}"`)
     }
   })
 })
