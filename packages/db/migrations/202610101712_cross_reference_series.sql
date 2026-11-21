@@ -1,7 +1,7 @@
 -- Per-size cross-references and the competitor series they belong to.
 --
 -- `product_cross_references` held one row per product (a competitor family
--- named against an Indus listing). The Hydraulics Direct export and the size
+-- named against an Indus listing). A supplier catalogue export and the size
 -- tables carry the competitor number for EACH size, so a row can now name the
 -- Indus part number it equals and the competitor series it sits in.
 --
