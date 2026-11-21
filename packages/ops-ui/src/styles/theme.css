@@ -83,6 +83,7 @@
   --color-io-mail-meta: var(--io-mail-meta);
   --color-io-mail-rule: var(--io-mail-rule);
   --color-io-sheet-line: var(--io-sheet-line);
+  --color-io-caret: var(--io-caret);
 
   /* families: Geist everywhere; font-mono deliberately resolves to Geist too */
   --font-sans: var(--io-sans);
@@ -113,6 +114,7 @@
   --shadow-io-e-raised: var(--io-e-raised);
   --shadow-io-e-mail: var(--io-e-mail);
   --shadow-io-e-page: var(--io-e-page);
+  --shadow-io-e-knob: var(--io-e-knob);
 
   /* sizes as spacing keys: w-io-sidebar, h-io-btn, px-io-page-x */
   --spacing-io-sidebar: var(--io-sidebar);

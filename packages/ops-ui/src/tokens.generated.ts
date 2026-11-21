@@ -75,6 +75,7 @@ export const IO_COLORS = [
   'io-mail-meta',
   'io-mail-rule',
   'io-sheet-line',
+  'io-caret',
 ] as const
 
 export const IO_TEXT_ROLES = [
@@ -126,6 +127,7 @@ export const IO_SHADOWS = [
   'io-e-raised',
   'io-e-mail',
   'io-e-page',
+  'io-e-knob',
 ] as const
 
 export const IO_SIZES = [
@@ -307,6 +309,8 @@ export const IO_VARS = [
   '--io-z-toast',
   '--io-z-tooltip',
   '--io-sheet-line',
+  '--io-e-knob',
+  '--io-caret',
 ] as const
 
 /** Raw values, for the specimen's labels only. Style with classes, never with these. */
@@ -446,4 +450,6 @@ export const IO_VALUES: Readonly<Record<string, string>> = {
   '--io-z-toast': '70',
   '--io-z-tooltip': '80',
   '--io-sheet-line': 'rgba(20,28,45,.08)',
+  '--io-e-knob': '0 1px 2px rgba(20,28,45,.2)',
+  '--io-caret': '#8b93a3',
 }

@@ -458,48 +458,60 @@
     "value": "10",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-z-panel": {
     "value": "30",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-z-drawer": {
     "value": "40",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-z-modal": {
     "value": "50",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-z-command": {
     "value": "60",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-z-toast": {
     "value": "70",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-z-tooltip": {
     "value": "80",
     "kind": "z",
     "signoff": "awaiting",
-    "source": "Z-order (05 \u00a71.7)"
+    "source": "Z-order (05 §1.7)"
   },
   "io-sheet-line": {
     "value": "rgba(20,28,45,.08)",
     "kind": "color",
     "signoff": "awaiting",
     "source": "Specimen sheet chrome only (L0/L1 cv-spec border, swatch ring); never product UI"
+  },
+  "io-e-knob": {
+    "value": "0 1px 2px rgba(20,28,45,.2)",
+    "kind": "shadow",
+    "signoff": "awaiting",
+    "source": "Controls/Toggle knob"
+  },
+  "io-caret": {
+    "value": "#8b93a3",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Controls/Select caret (kit data-URI fill; between ink-3 and ink-4)"
   }
 }
