@@ -4,4 +4,5 @@ export const OPS_CORE = '@indus/ops-core' as const
 
 export * from './document'
 export * from './money'
+export * from './state'
 export * from './vat'

@@ -513,5 +513,11 @@
     "kind": "color",
     "signoff": "awaiting",
     "source": "Controls/Select caret (kit data-URI fill; between ink-3 and ink-4)"
+  },
+  "io-ok-solid-strong": {
+    "value": "oklch(0.54 0.14 150)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Status/Chip solid-ok ground: the kit's ok-solid under white 11px text is 4.0:1 (fails WCAG AA, axe serious); this is 4.75:1"
   }
 }

@@ -76,6 +76,7 @@ export const IO_PDF_COLORS = {
   'io-mail-rule': '#E3E5E8',
   'io-sheet-line': '#ECEDEE',
   'io-caret': '#8B93A3',
+  'io-ok-solid-strong': '#17843F',
 } as const
 
 export const IO_PDF_RADII = {

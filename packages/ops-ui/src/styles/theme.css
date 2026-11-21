@@ -84,6 +84,7 @@
   --color-io-mail-rule: var(--io-mail-rule);
   --color-io-sheet-line: var(--io-sheet-line);
   --color-io-caret: var(--io-caret);
+  --color-io-ok-solid-strong: var(--io-ok-solid-strong);
 
   /* families: Geist everywhere; font-mono deliberately resolves to Geist too */
   --font-sans: var(--io-sans);

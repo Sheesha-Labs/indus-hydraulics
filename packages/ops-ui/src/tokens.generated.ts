@@ -76,6 +76,7 @@ export const IO_COLORS = [
   'io-mail-rule',
   'io-sheet-line',
   'io-caret',
+  'io-ok-solid-strong',
 ] as const
 
 export const IO_TEXT_ROLES = [
@@ -311,6 +312,7 @@ export const IO_VARS = [
   '--io-sheet-line',
   '--io-e-knob',
   '--io-caret',
+  '--io-ok-solid-strong',
 ] as const
 
 /** Raw values, for the specimen's labels only. Style with classes, never with these. */
@@ -452,4 +454,5 @@ export const IO_VALUES: Readonly<Record<string, string>> = {
   '--io-sheet-line': 'rgba(20,28,45,.08)',
   '--io-e-knob': '0 1px 2px rgba(20,28,45,.2)',
   '--io-caret': '#8b93a3',
+  '--io-ok-solid-strong': 'oklch(0.54 0.14 150)',
 }
