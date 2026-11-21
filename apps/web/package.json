@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "bun check --no-script",
-    "test": "vitest run",
+    "test": "bun test --parallel --isolate=modules --randomize",
     "scraper:crawl": "tsx src/lib/scraper/cli.ts",
     "scraper:research-images": "tsx --env-file=.env.local src/lib/scraper/imageResearchCli.ts",
     "scraper:image-review": "tsx src/lib/scraper/imageReviewCli.ts",
@@ -88,7 +88,6 @@
     "jsdom": "^25",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
-    "typescript": "^5",
-    "vitest": "^3.2.2"
+    "typescript": "^5"
   }
 }

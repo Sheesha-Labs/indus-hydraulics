@@ -219,11 +219,20 @@ describe('lane routing through sanctioned territory', { timeout: 60_000 }, () =>
  * a market's map is first checked on the day it goes live.
  */
 describe('every written record projects a map', { timeout: 60_000 }, () => {
+  // buildMarketMapModel is pure, so each record is projected once and shared by
+  // the assertions below rather than re-projected by every one of them. Same
+  // inputs, same checks; one projection pass instead of six.
+  const models = new Map<MarketPage, ReturnType<typeof buildMarketMapModel>>()
+  const modelFor = (page: MarketPage) => {
+    if (!models.has(page)) models.set(page, buildMarketMapModel(page, page.slug))
+    return models.get(page) ?? null
+  }
+
   it('matches Natural Earth geometry for every one', () => {
     // Counted, not hard-coded: the set grows every time a market is authored,
     // and a test named for today's total is a test nobody updates.
     const failed = MARKET_PAGE_RECORDS.filter(
-      (page) => buildMarketMapModel(page, page.slug) === null
+      (page) => modelFor(page) === null
     ).map((p) => p.slug)
     expect(failed).toEqual([])
   })
@@ -241,7 +250,7 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
       every map.
     */
     for (const page of MARKET_PAGE_RECORDS) {
-      const model = buildMarketMapModel(page, page.slug)!
+      const model = modelFor(page)!
       for (const city of model.cities) {
         const inFrame =
           city.x >= model.pad &&
@@ -268,7 +277,7 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
       thing. `mainland` on the record fixes it; this makes the next one fail.
     */
     for (const page of MARKET_PAGE_RECORDS) {
-      const model = buildMarketMapModel(page, page.slug)!
+      const model = modelFor(page)!
       const [w, h] = model.targetExtent
       const usableW = model.width - model.pad * 2
       const usableH = model.height - model.pad * 2
@@ -279,7 +288,7 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
 
   it('places the crossing marker inside the frame on every one', () => {
     for (const page of MARKET_PAGE_RECORDS) {
-      const model = buildMarketMapModel(page, page.slug)!
+      const model = modelFor(page)!
       const { crossing, pad, width, height } = model
       expect(crossing.x, page.slug).toBeGreaterThanOrEqual(pad)
       expect(crossing.x, page.slug).toBeLessThanOrEqual(width - pad)
@@ -290,7 +299,7 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
 
   it('shows the origin marker only on the three lanes fitted to it', () => {
     const shown = MARKET_PAGE_RECORDS.filter(
-      (page) => buildMarketMapModel(page, page.slug)!.origin !== null
+      (page) => modelFor(page)!.origin !== null
     ).map((p) => p.slug)
     expect(shown.sort()).toEqual(['iraq', 'oman', 'saudi-arabia'])
   })
@@ -298,7 +307,7 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
   it('appends the origin to the corridor annotation whenever the marker is hidden', () => {
     // Otherwise the dashed line enters from the edge of the frame unexplained.
     for (const page of MARKET_PAGE_RECORDS) {
-      const model = buildMarketMapModel(page, page.slug)!
+      const model = modelFor(page)!
       if (model.origin === null) {
         expect(model.corridor, page.slug).toContain(`FROM ${model.originLabel}`)
       } else {

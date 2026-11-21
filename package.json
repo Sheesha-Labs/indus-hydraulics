@@ -11,7 +11,7 @@
     "dev": "bun run --filter web dev",
     "lint": "bun lint --no-script --type-aware apps packages",
     "typecheck": "bun run --filter '*' typecheck",
-    "test": "bun run --filter '*' test",
+    "test": "bun test --parallel --isolate=modules --randomize ./apps/web/src ./packages",
     "test:e2e": "playwright test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "db:generate": "bun run --filter @indus/db db:generate",
@@ -23,7 +23,6 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.2",
     "@playwright/test": "^1.50.0"
   },
   "engines": {
