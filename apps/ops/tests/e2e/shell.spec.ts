@@ -9,11 +9,18 @@ import { expect, test } from '../signed-in'
  */
 
 /** Client parts listen once hydrated: the sidebar's toggle has a handler only then. */
+/**
+ * Wait until the client parts a test drives have hydrated: the sidebar toggle AND the skip link. Islands
+ * hydrate independently, so the toggle alone does not prove the skip link's handler is attached (the
+ * skip-link test raced this: Enter followed the bare #content anchor before React took over).
+ */
 async function hydrated(page: Page) {
-  await page.waitForFunction(() => {
-    const toggle = document.querySelector('[data-part="sidebar-toggle"]')
-    return toggle !== null && Object.keys(toggle).some((k) => k.startsWith('__reactProps'))
-  })
+  await page.waitForFunction(() =>
+    ['[data-part="sidebar-toggle"]', '[data-part="skip-link"]'].every((sel) => {
+      const el = document.querySelector(sel)
+      return el !== null && Object.keys(el).some((k) => k.startsWith('__reactProps'))
+    })
+  )
 }
 
 test('shell: the Owner gets the AppShell around Today', async ({ page, signedInAs }) => {
@@ -56,6 +63,9 @@ test('skip-link: the first tab stop, and it moves focus to #content', async ({
   await signedInAs('owner')
   await page.goto('/today')
   await hydrated(page)
+  // The page streams in behind (console)/loading.tsx: wait for its content, or the Tab after the skip
+  // lands outside #content because nothing inside it is focusable yet.
+  await expect(page.locator('main#content').getByRole('heading', { name: 'Today' })).toBeVisible()
   const skip = page.getByRole('link', { name: 'Skip to content' })
   await expect(skip).not.toBeInViewport()
   await page.keyboard.press('Tab')
