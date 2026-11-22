@@ -132,6 +132,8 @@
   --io-w-strip: 40px;
   --io-w-exception-main: 705px;
   --io-w-exception-side: 420px;
+  --io-w-scenarios: 380px;
+  --io-w-detail: 400px;
   /* ext · radius */
   --io-r-3: 3px;
   --io-r-5: 5px;

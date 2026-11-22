@@ -430,6 +430,20 @@
     "source": "Exception template side",
     "utility": "io-exception-side"
   },
+  "io-w-scenarios": {
+    "value": "380px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T6 compare scenarios aside (L2 t6a)",
+    "utility": "io-scenarios"
+  },
+  "io-w-detail": {
+    "value": "400px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T4 bundle proposal column (board 194)",
+    "utility": "io-detail"
+  },
   "io-r-3": {
     "value": "3px",
     "kind": "radius",

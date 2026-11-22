@@ -150,6 +150,8 @@
   --spacing-io-strip: var(--io-w-strip);
   --spacing-io-exception-main: var(--io-w-exception-main);
   --spacing-io-exception-side: var(--io-w-exception-side);
+  --spacing-io-scenarios: var(--io-w-scenarios);
+  --spacing-io-detail: var(--io-w-detail);
 
   /* type roles */
   --text-io-kpi: 24px;

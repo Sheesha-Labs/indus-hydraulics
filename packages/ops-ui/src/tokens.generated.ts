@@ -164,6 +164,8 @@ export const IO_SIZES = [
   'io-strip',
   'io-exception-main',
   'io-exception-side',
+  'io-scenarios',
+  'io-detail',
 ] as const
 
 export const IO_Z = [
@@ -301,6 +303,8 @@ export const IO_VARS = [
   '--io-w-strip',
   '--io-w-exception-main',
   '--io-w-exception-side',
+  '--io-w-scenarios',
+  '--io-w-detail',
   '--io-r-3',
   '--io-r-5',
   '--io-r-7',
@@ -446,6 +450,8 @@ export const IO_VALUES: Readonly<Record<string, string>> = {
   '--io-w-strip': '40px',
   '--io-w-exception-main': '705px',
   '--io-w-exception-side': '420px',
+  '--io-w-scenarios': '380px',
+  '--io-w-detail': '400px',
   '--io-r-3': '3px',
   '--io-r-5': '5px',
   '--io-r-7': '7px',

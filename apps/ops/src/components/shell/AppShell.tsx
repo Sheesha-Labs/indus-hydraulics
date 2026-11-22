@@ -11,6 +11,7 @@ import { BannerSlot, type SystemBanner } from '@indus/ops-ui/status'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import { useRouter, useSelectedLayoutSegments } from 'next/navigation'
 import { useMemo, type ReactNode } from 'react'
+import { templateSpecimenNav } from '../../kit/template-nav'
 import { useLiveKeys, type LiveCounts, type LiveKey } from '../../lib/live-keys'
 import { recordKeyFromSegments } from '../../lib/live-poller'
 import Providers, { useShell } from './Providers'
@@ -72,7 +73,8 @@ function ShellFrame({
   const shell = useShell()
   // Route groups are not path segments.
   const segments = useSelectedLayoutSegments().filter((s) => !s.startsWith('('))
-  const active = activeKeyFromSegment(segments[0], segments[1])
+  // A template specimen (/_kit/templates/<t>, S02-T04) marks the row its board draws.
+  const active = activeKeyFromSegment(segments[0], segments[1]) ?? templateSpecimenNav(segments)
   const recordKey = recordKeyFromSegments(segments)
   const keys = useMemo(
     () => [...badgeKeys(user.role), ...(recordKey ? [recordKey] : [])],
