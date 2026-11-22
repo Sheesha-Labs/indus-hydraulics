@@ -187,7 +187,14 @@ async function measure(
   return ratio
 }
 
-const cmdK = (page: Page) => page.keyboard.press('ControlOrMeta+k')
+/** ⌘K until the bar shows: the hotkey listener is bound in an effect just after hydration. */
+async function cmdK(page: Page) {
+  const bar = page.getByRole('combobox')
+  await expect(async () => {
+    if (!(await bar.isVisible())) await page.keyboard.press('ControlOrMeta+k')
+    await expect(bar).toBeVisible({ timeout: 1000 })
+  }).toPass()
+}
 
 test.describe('Shell surfaces design parity', () => {
   test.skip(!hasReference(), 'OPS_DESIGN_REF_DIR is not set or not readable')
@@ -243,7 +250,9 @@ test.describe('Shell surfaces design parity', () => {
     await cmdK(page)
     await page.keyboard.type('assistant panel')
     await page.keyboard.press('Enter')
-    await expect(page.getByRole('heading', { name: 'Waiting on you' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Waiting on you' })).toBeVisible({
+      timeout: 15_000,
+    })
     await page.locator('#content').focus()
     // Kept: the panel's frame, head and ask box. Masked: the head's record ref ("On ENQ-…" vs
     // "Everywhere" on a page without a record) and the three sections' rows (S06-T08).
@@ -267,7 +276,7 @@ test.describe('Shell surfaces design parity', () => {
         '/why/00000000-0000-7000-8000-00000000e001'
       )
     })
-    await expect(page.getByRole('dialog', { name: /Line 1/ })).toBeVisible()
+    await expect(page.getByRole('dialog', { name: /Line 1/ })).toBeVisible({ timeout: 20_000 })
     // Kept: the whole drawer. Neutral fixture words differ from the board's (title, reasons, source).
     const r = await measure(page, 'S04A.png', [{ x: 979, y: 0, w: 461, h: 940 }], [], 'enquiries')
     expect(r).toBeLessThanOrEqual(0.03)
@@ -308,9 +317,14 @@ test.describe('Shell surfaces design parity', () => {
   test('S06A help panel', async ({ page, signedInAs }) => {
     await open(page, signedInAs)
     await page.locator('#content').focus()
-    await page.keyboard.press('?')
-    await expect(page.getByRole('heading', { name: 'On this page' })).toBeVisible()
-    await expect(page.getByText('No articles for this page yet.')).toBeVisible()
+    await expect(async () => {
+      if (!(await page.getByRole('complementary', { name: 'Help' }).isVisible()))
+        await page.keyboard.press('?')
+      await expect(page.getByRole('heading', { name: 'On this page' })).toBeVisible({
+        timeout: 1000,
+      })
+    }).toPass()
+    await expect(page.getByText('No articles for this page yet.')).toBeVisible({ timeout: 15_000 })
     await page.locator('#content').focus()
     // Kept: the head, the search field and the foot. Masked: the articles, ask box and shortcut list
     // (S35 content; the board shows the record page's articles).

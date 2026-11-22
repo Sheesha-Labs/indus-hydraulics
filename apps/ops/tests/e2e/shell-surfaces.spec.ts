@@ -36,6 +36,19 @@ async function softNavigate(page: Page, href: string) {
       url
     )
   }, href)
+  // The drawer route compiles on first use under the dev server: give it time before asserting on it.
+  await expect(page.locator('[role="dialog"][data-modal="true"]')).toBeVisible({ timeout: 20_000 })
+}
+
+/**
+ * Press `key` until `target` shows: the window's hotkey listener is bound in an effect just after
+ * hydration, so a key pressed in that instant is not seen.
+ */
+async function pressUntil(page: Page, key: string, target: ReturnType<Page['locator']>) {
+  await expect(async () => {
+    if (!(await target.isVisible())) await page.keyboard.press(key)
+    await expect(target).toBeVisible({ timeout: 1000 })
+  }).toPass()
 }
 
 async function openFromTrigger(page: Page) {
@@ -54,7 +67,7 @@ test.describe('command-bar', () => {
     await ready(page)
     const trigger = searchTrigger(page)
     await trigger.focus()
-    await page.keyboard.press('ControlOrMeta+k')
+    await pressUntil(page, 'ControlOrMeta+k', combobox(page))
     const input = combobox(page)
     await expect(input).toBeFocused()
     await expect(commandBar(page)).toHaveAttribute('aria-modal', 'true')
@@ -275,7 +288,8 @@ test.describe('overlays', () => {
     await expect(panel.getByRole('tab')).toHaveText(['All', 'Needs you', 'Done for you'])
     await expect(panel.getByRole('button', { name: 'Mark all read' })).toBeVisible()
     await expect(panel.getByRole('link', { name: 'Notification settings →' })).toBeVisible()
-    await expect(panel).toContainText('No notifications yet')
+    // Read through a server action; under a full parallel run it queues behind other requests.
+    await expect(panel).toContainText('No notifications yet', { timeout: 15_000 })
     // Focus is trapped: Tab never leaves the panel.
     for (let i = 0; i < 6; i++) await page.keyboard.press('Tab')
     expect(await panel.evaluate((el) => el.contains(document.activeElement))).toBe(true)
@@ -292,9 +306,8 @@ test.describe('overlays', () => {
     await ready(page)
     const trigger = searchTrigger(page)
     await trigger.focus()
-    await page.keyboard.press('?')
     const help = page.getByRole('complementary', { name: 'Help' })
-    await expect(help).toBeVisible()
+    await pressUntil(page, '?', help)
     await expect(help.getByRole('searchbox', { name: 'Search help' })).toBeFocused()
     await expect(page.getByRole('dialog')).toHaveCount(0)
     // The shortcut list is the hotkey registry.
@@ -332,7 +345,10 @@ test.describe('overlays', () => {
     const ask = panel.getByRole('textbox', { name: 'Ask or instruct the Assistant' })
     await expect(ask).toBeFocused()
     await expect(panel).toContainText('Instructions come back as a proposal for you to approve')
-    await expect(panel.getByRole('heading', { name: 'Waiting on you' })).toBeVisible()
+    // Read through a server action; under a full parallel run it queues behind other requests.
+    await expect(panel.getByRole('heading', { name: 'Waiting on you' })).toBeVisible({
+      timeout: 15_000,
+    })
     // Help shares the dock: opening it closes the Assistant panel.
     await page.locator('#content').focus()
     await page.keyboard.press('?')

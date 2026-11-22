@@ -9,7 +9,9 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { evidenceFixture, FIXTURE_EVIDENCE_ID } from '../../data/evidence'
 import { fixtureBanners } from '../../data/shell'
 import { ConfirmProvider, useConfirm, type Confirm } from './confirm'
+import Providers, { useShell, type ShellControls } from './Providers'
 import SystemBanners from './SystemBanners'
+import { useUndoToast, type UndoToastInput } from './undo-toast'
 import WhyDrawer from './WhyDrawer'
 
 const back = vi.fn()
@@ -152,5 +154,55 @@ describe('banner precedence (C23)', () => {
   it('nothing to say renders nothing', () => {
     render(<SystemBanners banners={[]} />)
     expect(document.querySelector('[data-part="banner-slot"]')).toBeNull()
+  })
+})
+
+describe('the shell providers', () => {
+  let shell: ShellControls | null = null
+  let undoToast: ((input: UndoToastInput) => void) | null = null
+  function Grab2() {
+    const s = useShell()
+    const u = useUndoToast()
+    useEffect(() => {
+      shell = s
+      undoToast = u
+    }, [s, u])
+    return null
+  }
+
+  it('the two docked panels share one dock: opening one closes the other', async () => {
+    render(
+      <Providers>
+        <Grab2 />
+      </Providers>
+    )
+    await waitFor(() => expect(shell).not.toBeNull())
+    act(() => shell!.open('help'))
+    expect(shell!.panels.help).toBe(true)
+    act(() => shell!.open('assistant'))
+    expect(shell!.panels).toMatchObject({ help: false, assistant: true })
+    act(() => shell!.toggle('help'))
+    expect(shell!.panels).toMatchObject({ help: true, assistant: false })
+    // A modal surface does not touch the dock.
+    act(() => shell!.open('command'))
+    expect(shell!.panels).toMatchObject({ help: true, command: true })
+  })
+
+  it('an Undo toast’s undo also runs on ⌘Z, once', async () => {
+    const user = userEvent.setup()
+    render(
+      <Providers>
+        <Grab2 />
+      </Providers>
+    )
+    await waitFor(() => expect(undoToast).not.toBeNull())
+    const onUndo = vi.fn(async () => ({ success: true as const, data: undefined }))
+    act(() => undoToast!({ title: 'Sample sent', remainingMs: 300_000, onUndo }))
+    await screen.findByText('Sample sent')
+    await user.keyboard('{Control>}z{/Control}')
+    await waitFor(() => expect(onUndo).toHaveBeenCalledTimes(1))
+    await waitFor(() => expect(screen.queryByText('Sample sent')).toBeNull())
+    await user.keyboard('{Control>}z{/Control}')
+    expect(onUndo).toHaveBeenCalledTimes(1)
   })
 })

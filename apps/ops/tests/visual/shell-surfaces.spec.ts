@@ -33,8 +33,19 @@ async function shot(page: Page, name: string) {
   })
 }
 
+/**
+ * Press `key` until `target` shows: the window's hotkey listener is bound in an effect just after
+ * hydration, so a key pressed in that instant is not seen.
+ */
+async function pressUntil(page: Page, key: string, target: ReturnType<Page['locator']>) {
+  await expect(async () => {
+    if (!(await target.isVisible())) await page.keyboard.press(key)
+    await expect(target).toBeVisible({ timeout: 1000 })
+  }).toPass()
+}
+
 async function command(page: Page, text: string) {
-  await page.keyboard.press('ControlOrMeta+k')
+  await pressUntil(page, 'ControlOrMeta+k', page.getByRole('combobox'))
   await page.getByRole('combobox').fill(text)
 }
 
@@ -51,7 +62,9 @@ test('shell-surfaces notifications', async ({ page, signedInAs }) => {
   await ready(page)
   await command(page, 'notifications')
   await page.keyboard.press('Enter')
-  await expect(page.getByText('No notifications yet', { exact: false })).toBeVisible()
+  await expect(page.getByText('No notifications yet', { exact: false })).toBeVisible({
+    timeout: 15_000,
+  })
   await shot(page, 'notifications')
 })
 
@@ -60,7 +73,7 @@ test('shell-surfaces assistant panel', async ({ page, signedInAs }) => {
   await ready(page)
   await command(page, 'assistant panel')
   await page.keyboard.press('Enter')
-  await expect(page.getByText('Nothing yet today.')).toBeVisible()
+  await expect(page.getByText('Nothing yet today.')).toBeVisible({ timeout: 15_000 })
   await shot(page, 'assistant-panel')
 })
 
@@ -72,7 +85,7 @@ test('shell-surfaces why drawer', async ({ page, signedInAs }) => {
       '/why/00000000-0000-7000-8000-00000000e001'
     )
   })
-  await expect(page.getByRole('dialog', { name: /Line 1/ })).toBeVisible()
+  await expect(page.getByRole('dialog', { name: /Line 1/ })).toBeVisible({ timeout: 20_000 })
   await shot(page, 'why-drawer')
 })
 
@@ -80,8 +93,8 @@ test('shell-surfaces help', async ({ page, signedInAs }) => {
   await signedInAs('owner')
   await ready(page)
   await page.locator('#content').focus()
-  await page.keyboard.press('?')
-  await expect(page.getByText('No articles for this page yet.')).toBeVisible()
+  await pressUntil(page, '?', page.getByRole('complementary', { name: 'Help' }))
+  await expect(page.getByText('No articles for this page yet.')).toBeVisible({ timeout: 15_000 })
   await shot(page, 'help')
 })
 
