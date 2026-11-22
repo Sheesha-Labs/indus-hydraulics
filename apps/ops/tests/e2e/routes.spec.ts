@@ -139,6 +139,13 @@ test.describe('routes · redirects and records', () => {
     for (const label of labels) {
       const link = nav.getByRole('link', { name: label })
       const href = (await link.getAttribute('href'))!
+      // The page already open (Today) is not clicked: a same-URL click starts a navigation that the URL
+      // check below cannot wait for (the URL already matches), and the next click lands while it is still in
+      // flight and is dropped (S02-T09: intermittent under load). Its row must already be current.
+      if (new URL(page.url()).pathname === href) {
+        await expect(link).toHaveAttribute('aria-current', 'page')
+        continue
+      }
       // A soft navigation: under `next dev` the first visit compiles the route, so allow for it.
       await link.click()
       await expect(page).toHaveURL((url) => url.pathname.startsWith(href), { timeout: 30_000 })
