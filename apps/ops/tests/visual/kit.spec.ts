@@ -6,6 +6,7 @@ import { isPending, prepare, section, settle } from './helpers'
  * is built (S01-T10), so a section showing its placeholder fails instead of being skipped.
  */
 const KITS = [
+  'shell',
   'controls',
   'status',
   'table',

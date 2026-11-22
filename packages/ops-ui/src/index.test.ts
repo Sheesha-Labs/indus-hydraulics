@@ -11,8 +11,17 @@ import * as ui from './index'
  */
 type Kit = keyof typeof KIT_PARTS
 
-/** The Shell kit (SectionHead, Sidebar, …) is built in S02. */
-const NOT_YET: readonly Kit[] = ['shell']
+/**
+ * Parts not exported, each with its reason. The Shell kit landed in S02 (the Sidebar in S02-T01, the headers
+ * and the Assistant strip in S02-T02); the canvas furniture is never a product part.
+ */
+const NOT_EXPORTED: Partial<Record<Kit, Record<string, string>>> = {
+  shell: {
+    Frame: 'canvas furniture, not built: AppShell (apps/ops) is the product equivalent (05 §3.13)',
+    SectionHead: 'canvas furniture, rebuilt only for /_kit in apps/ops/src/kit/SectionHead.tsx',
+    BoardLabel: 'canvas furniture, not built (05 §3.13)',
+  },
+}
 
 /**
  * Parts exported under another name, each for a documented reason. Every other part is exported under its
@@ -111,7 +120,7 @@ const RENAMED: Partial<Record<Kit, Record<string, { as: readonly string[]; why: 
 const exported = (mod: Record<string, unknown>, name: string): boolean =>
   typeof mod[name] === 'function' || (typeof mod[name] === 'object' && mod[name] !== null)
 
-const kits = (Object.keys(KIT_PARTS) as Kit[]).filter((k) => !NOT_YET.includes(k))
+const kits = Object.keys(KIT_PARTS) as Kit[]
 
 describe('@indus/ops-ui', () => {
   it('exports its name', () => {
@@ -129,12 +138,21 @@ describe('@indus/ops-ui', () => {
     const barrel = ui as unknown as Record<string, unknown>
     const missing: string[] = []
     for (const part of KIT_PARTS[kit]) {
+      if (NOT_EXPORTED[kit]?.[part]) continue
       for (const name of RENAMED[kit]?.[part]?.as ?? [part]) {
         if (!exported(barrel, name)) missing.push(`${part} → ${name} (barrel)`)
         if (!exported(entry, name)) missing.push(`${part} → ${name} (@indus/ops-ui/${kit})`)
       }
     }
     expect(missing).toEqual([])
+  })
+
+  it('every part left unexported names a part the fixture lists, with a reason', () => {
+    for (const [kit, map] of Object.entries(NOT_EXPORTED))
+      for (const [part, why] of Object.entries(map)) {
+        expect(KIT_PARTS[kit as Kit], `${kit}.${part}`).toContain(part)
+        expect(why.length).toBeGreaterThan(10)
+      }
   })
 
   it('every rename names a part the fixture lists, with a reason', () => {

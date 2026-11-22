@@ -1,7 +1,7 @@
 'use client'
 
 import * as AlertDialog from '@radix-ui/react-alert-dialog'
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode, type RefObject } from 'react'
 import Button from '../controls/Button'
 import { cn } from '../lib/cn'
 import { settle, type ActionResult } from './result'
@@ -29,6 +29,11 @@ export interface ConfirmDialogProps {
   width?: ModalWidth
   /** The control that opens it (AlertDialog.Trigger asChild); focus returns here on close. */
   trigger?: ReactNode
+  /**
+   * Where focus goes on close when there is no `trigger` (a confirm asked for from code, `useConfirm()`).
+   * Without either, Radix sends focus nowhere.
+   */
+  returnFocusRef?: RefObject<HTMLElement | null>
 }
 
 /**
@@ -40,6 +45,7 @@ export default function ConfirmDialog({
   open,
   onOpenChange,
   trigger,
+  returnFocusRef,
   ...content
 }: ConfirmDialogProps) {
   return (
@@ -54,7 +60,11 @@ export default function ConfirmDialog({
           )}
         >
           {/* Mounted per opening (Radix unmounts closed content), so busy and error start clean. */}
-          <ConfirmContent {...content} onClose={() => onOpenChange(false)} />
+          <ConfirmContent
+            {...content}
+            onClose={() => onOpenChange(false)}
+            {...(trigger || !returnFocusRef ? {} : { returnFocusRef })}
+          />
         </AlertDialog.Overlay>
       </AlertDialog.Portal>
     </AlertDialog.Root>
@@ -72,6 +82,7 @@ function ConfirmContent({
   note,
   width = 520,
   onClose,
+  returnFocusRef,
 }: Omit<ConfirmDialogProps, 'open' | 'onOpenChange' | 'trigger'> & { onClose: () => void }) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -102,6 +113,17 @@ function ConfirmContent({
       onEscapeKeyDown={(e) => {
         if (busy) e.preventDefault()
       }}
+      {...(returnFocusRef
+        ? {
+            onCloseAutoFocus: (e: Event) => {
+              const el = returnFocusRef.current
+              if (el?.isConnected) {
+                e.preventDefault()
+                el.focus()
+              }
+            },
+          }
+        : {})}
       {...(busy ? { 'aria-busy': true } : {})}
     >
       <ModalSections

@@ -30,6 +30,12 @@ export interface SystemBanner {
 
 export interface BannerSlotProps {
   banners: readonly SystemBanner[]
+  /**
+   * `page` (default): a rounded banner inside the page body. `strip`: the 40px full-width strip directly
+   * under a PageHeader or RecordHeader (S08: radius 0, padding 0 28, bottom rule), as the console shell
+   * mounts it. The "+n more" popover lists the rest as ordinary banners either way.
+   */
+  placement?: 'page' | 'strip'
   className?: string
 }
 
@@ -48,7 +54,7 @@ const announced = new Set<SystemBannerKind>()
  * the Overlay kit's Popover (controlled, so the slot owns its open state). Radix moves focus in, closes on
  * Escape or an outside click and returns focus to the button.
  */
-export default function BannerSlot({ banners, className }: BannerSlotProps) {
+export default function BannerSlot({ banners, placement = 'page', className }: BannerSlotProps) {
   const [open, setOpen] = useState(false)
   const [top, ...rest] = orderBanners(banners)
   // Kinds shown before this slot mounted (another page's header): those no longer alert.
@@ -89,9 +95,14 @@ export default function BannerSlot({ banners, className }: BannerSlotProps) {
     ) : null
 
   return (
-    <div data-part="banner-slot" className={cn('flex flex-col gap-2', className)}>
+    <div
+      data-part="banner-slot"
+      data-placement={placement}
+      className={cn('flex flex-col gap-2', className)}
+    >
       <Banner
         {...top.props}
+        strip={placement === 'strip' || top.props.strip === true}
         announce={announce}
         actions={
           top.props.actions || more ? (

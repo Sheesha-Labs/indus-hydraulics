@@ -5,6 +5,7 @@ import ChartSpecimen, { status as chartStatus } from './sections/Chart'
 import ControlsSpecimen, { status as controlsStatus } from './sections/Controls'
 import DocumentSpecimen, { status as documentStatus } from './sections/Document'
 import FormSpecimen, { status as formStatus } from './sections/Form'
+import ShellSpecimen, { status as shellStatus } from './sections/Shell'
 import MailSpecimen, { status as mailStatus } from './sections/Mail'
 import OverlaySpecimen, { status as overlayStatus } from './sections/Overlay'
 import StatesSpecimen, { status as statesStatus } from './sections/States'
@@ -25,8 +26,18 @@ export interface KitEntry {
   Specimen: ComponentType
 }
 
-/** The 12 kits built in S01, in L1 sheet order (k00 Shell is S02). Heads are the L1 sheet's own. */
+/** The 13 kits in L1 sheet order: k00 Shell (S02) then the 12 built in S01. Heads are the L1 sheet's own. */
 export const KITS: readonly KitEntry[] = [
+  {
+    id: 'k00',
+    slug: 'shell',
+    crumb: 'K-00 · Shell Kit',
+    title: 'Shell',
+    text: 'Sidebar, page headers, record header, Assistant strip and the board frame.',
+    task: 'S02-T01',
+    status: shellStatus,
+    Specimen: ShellSpecimen,
+  },
   {
     id: 'k01',
     slug: 'controls',

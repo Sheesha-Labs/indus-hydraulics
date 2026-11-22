@@ -810,3 +810,159 @@ export const ASSISTANT = {
   },
   highlight: { text: 'Line 3 offered as PN-10-228 instead.', match: 'PN-10-228' },
 } as const
+
+/**
+ * Shell kit (S02-T01): the two signed-in people and their sidebar badge counts. The Owner is "Owner Sample"
+ * (not PEOPLE.owner's "Owner Example"): "Signed in as … · sales@" must stay on one line at 11.5px in the
+ * 195px column, as the boards draw it; "Owner Example" is 7px too wide and would wrap.
+ */
+export const SHELL = {
+  owner: {
+    name: 'Owner Sample',
+    initials: 'OS',
+    role: 'owner',
+    roleLabel: 'Owner',
+    mailbox: 'sales@',
+  },
+  helper: {
+    name: PEOPLE.helper.name,
+    initials: PEOPLE.helper.initials,
+    role: 'helper',
+    roleLabel: 'Helper · sourcing',
+    mailbox: 'purchase@',
+  },
+  ownerBadges: { today: 6, review: 14, mail: 3 },
+  helperBadges: { today: 3, mail: 2 },
+  websiteAdminHref: 'https://example.test/admin',
+} as const
+
+/**
+ * Shell kit headers (S02-T02): the L1 k00 rows and boards 75 / T2A / T2B, in neutral words. Where a handoff
+ * name sat in a parity crop, the neutral stand-in is picked to set within a few pixels of it (measured at
+ * the console's own Geist and Instrument Serif), so the crop compares layout, not spelling.
+ */
+export const HEADERS = {
+  client: {
+    label: 'Sample Eastern Services',
+    href: '/clients/00000000-0000-7000-8000-000000000001',
+  },
+  enquiryRef: 'ENQ-2026-0001',
+  orderEnquiryRef: 'ENQ-2026-0002',
+  orderRef: 'SO-0002',
+  enquiryTitle: 'Annual turnaround spares — valves, bearings & instruments',
+  orderTitle: 'Control valve trims · PO-SPS-10001',
+  enquiryMeta: [
+    { label: 'Client', value: 'Sample Eastern Services' },
+    { label: 'Client ref', value: 'SPS/MM/26-0001' },
+    { label: 'Received', value: '14 Sep' },
+    { label: 'Client deadline', value: '30 Sep · 8 days left', tone: 'bad' },
+  ],
+  orderMeta: [
+    { label: 'Client', value: 'Sample Eastern Services' },
+    { label: 'Order value', value: 'USD 200,000' },
+    { label: 'Quotation', value: 'INDUS/Q10001-R2' },
+    { label: 'Client delivery', value: '14 Dec · DAP Plant 2 · 31 days left' },
+  ],
+  /** Board 75 and the L1 sheet draw nine enquiry tabs; the product has eleven (C8). */
+  boardEnquiryTabs: [
+    'Overview',
+    'Lines',
+    'Suppliers',
+    'Questions',
+    'Compare',
+    'Pricing',
+    'Quotation',
+    'Files',
+    'Activity',
+  ],
+  enquiryDid: 'sent 4 RFQs, chased Example today, 2 quotes captured',
+  orderDid: 'compared 3 freight quotes and recommends Example A air consolidation',
+  orderDidSheet: 'chased Example for the inspection date, drafted the packing list',
+  t2aDid: 'captured 2 supplier quotes and chased Example on line 4',
+  stripDid: 'captured 2 supplier quotes and flagged one price above history',
+  greeting: 'Good morning, Sample · Thursday 14 Nov',
+  quotationFilters: [
+    { value: 'awaiting', label: 'Awaiting decision', count: 14 },
+    { value: 'drafts', label: 'Drafts', count: 3 },
+    { value: 'won', label: 'Won', count: 9 },
+    { value: 'lost', label: 'Lost', count: 6 },
+    { value: 'superseded', label: 'Superseded' },
+  ],
+  quotationSummary: 'Awaiting decision: USD 600,000 · weighted USD 300,000',
+  partFilters: [
+    { value: 'all', label: 'All' },
+    { value: 'asked', label: 'Asked often, not on website', count: 38 },
+    { value: 'rising', label: 'Price rising', count: 21 },
+  ],
+  enquiryFilters: [
+    { value: 'open', label: 'Open', count: 23 },
+    { value: 'needs', label: 'Needs you', count: 6 },
+    { value: 'quoted', label: 'Quoted', count: 9 },
+  ],
+} as const
+
+/**
+ * Template specimens T7–T12 and X1 (S02-T05): the boards' content in neutral words. Labels and structure
+ * are the boards'; every company, person, reference and figure is a stand-in.
+ */
+export const TEMPLATES = {
+  settingsNav: [
+    'Company',
+    'Mailboxes',
+    'Numbering',
+    'Pricing, VAT and FX',
+    'Email templates',
+    'Autopilot',
+    'Team and access',
+    'Data and privacy',
+    'Integrations',
+  ],
+  company: 'Example Trading LLC',
+  greetingFirstRun: 'Welcome, Sample',
+  needs: [
+    {
+      key: 'n1',
+      action: 'Send quotation',
+      title: `${REFS.quotationRevised} · ${COMPANIES.client}`,
+      sub: 'Assistant drafted · price guard 2 warnings',
+      button: 'Review',
+    },
+    {
+      key: 'n2',
+      action: 'Send RFQ',
+      title: `${REFS.supplierRfq} · 5 suppliers`,
+      sub: 'Bearings · Example Valve, Demo Bearings, Sample Seals, Example Flow, Demo Trading',
+      button: 'Review',
+    },
+    {
+      key: 'n3',
+      action: 'Relay questions',
+      title: `${COMPANIES.supplier} · 2 questions on line 4`,
+      sub: 'Names removed before relaying',
+      button: 'Review',
+    },
+    {
+      key: 'n4',
+      action: 'Equivalent?',
+      title: 'FLT-10-220 ≈ FLT-10-228',
+      sub: 'Seen on 3 RFQs',
+      button: 'Decide',
+    },
+  ],
+  awaiting: { value: 'USD 600,000', sub: 'weighted USD 300,000' },
+  cashIn: { value: 'AED 400,000', sub: '2 invoices due' },
+  slip: {
+    title: 'Demo Bearings slipped a week.',
+    text: 'INDUS/PO10002 now ships 25 Nov; SO-0002 still meets 14 Dec with air freight.',
+  },
+  quotationTitle: 'Annual turnaround spares',
+  quotationEyebrow: `Quotation · ${REFS.quotationRevised} · 2 Oct 2026`,
+  preparedFor: `Prepared for Client Contact · ${COMPANIES.client}`,
+  contact: 'Valid as stated per line. Questions go to sales@example.com.',
+  exception: {
+    crumb: `Orders / ${HEADERS.orderRef} · Sample Eastern Services · PO-SPS-10001`,
+    title: 'Example Instruments Co can’t deliver line 8',
+    quote:
+      'Example Instruments Co, 12 Nov: “The factory has stopped this model; the earliest replacement is 14 weeks.”',
+  },
+} as const

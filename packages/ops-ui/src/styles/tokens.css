@@ -112,6 +112,7 @@
   --io-e-page: 0 4px 12px rgba(20,28,45,.06), 0 16px 48px rgba(20,28,45,.08);
   /* ext · size */
   --io-btn-xs: 26px;
+  --io-btn-client: 44px;
   --io-field: 36px;
   --io-select-inline: 30px;
   --io-row: 40px;
@@ -132,6 +133,14 @@
   --io-w-strip: 40px;
   --io-w-exception-main: 705px;
   --io-w-exception-side: 420px;
+  --io-w-scenarios: 380px;
+  --io-w-detail: 400px;
+  --io-w-today-rail: 320px;
+  --io-w-wizard: 760px;
+  --io-w-wizard-rail: 280px;
+  --io-w-auth: 400px;
+  --io-w-client-aside: 340px;
+  --io-w-exception-side-wide: 440px;
   /* ext · radius */
   --io-r-3: 3px;
   --io-r-5: 5px;

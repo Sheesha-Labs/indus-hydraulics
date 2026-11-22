@@ -1,29 +1,42 @@
-import { redirect } from 'next/navigation'
-import { AccessError, requireOpsUser } from '../../../lib/access'
+import { Card } from '@indus/ops-ui/card'
+import { PageHeader } from '@indus/ops-ui/shell'
+import { T8Today } from '@indus/ops-ui/templates'
 import { signOutAction } from '../../(auth)/sign-in/actions'
+import Arrives from '../../../components/skeleton/Arrives'
+import { requireOpsUser } from '../../../lib/access'
+import { signInFor } from '../../../lib/page-access'
 
-// Placeholder until S07 builds Today (board 178).
+/**
+ * Boards 178 / 180 · Today (T8, Owner or Helper variant from the session role). S07 builds it, with the
+ * greeting header (TodayHeader); until then a page header and who is signed in.
+ */
 export default async function TodayPage() {
-  let user
-  try {
-    user = await requireOpsUser()
-  } catch (error) {
-    if (error instanceof AccessError) redirect('/sign-in?next=%2Ftoday')
-    throw error
-  }
+  const user = await requireOpsUser().catch(signInFor('/today'))
+  const helper = user.role === 'helper'
   return (
-    <main className="px-io-page-x py-8">
-      <div className="max-w-io-well rounded-io-card border-io-line bg-io-card border p-6">
-        <h1 className="io-display text-io-greeting text-io-ink">Today</h1>
-        <p className="text-io-body text-io-ink-3 mt-3">
-          Signed in as {user.name} · {user.role === 'owner' ? 'Owner' : 'Helper'}
-        </p>
-        <form action={signOutAction} className="mt-4">
-          <button type="submit" className="io-focus text-io-meta text-io-accent">
-            Sign out
-          </button>
-        </form>
-      </div>
-    </main>
+    <T8Today
+      variant={helper ? 'helper' : 'owner'}
+      header={<PageHeader crumb="Workspace" title="Today" />}
+      needsYou={
+        <Arrives
+          sprint="S07"
+          what="Boards 178 and 180: what needs you, what came in since yesterday and what is late."
+        />
+      }
+      cameIn={<Card eyebrow="Came in since yesterday" text="New mail, quotes and orders." />}
+      late={<Card eyebrow="Late" text="Replies and deliveries past their date." />}
+      rail={
+        <Card eyebrow="Signed in">
+          <p className="text-io-body text-io-ink-3">
+            Signed in as {user.name} · {helper ? 'Helper' : 'Owner'}
+          </p>
+          <form action={signOutAction}>
+            <button type="submit" className="io-focus text-io-meta text-io-accent">
+              Sign out
+            </button>
+          </form>
+        </Card>
+      }
+    />
   )
 }

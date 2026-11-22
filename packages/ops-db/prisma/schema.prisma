@@ -5510,6 +5510,25 @@ model ActivityEvent {
   @@schema("ops")
 }
 
+/// One stored result per idempotent action call (architecture §4.10, S02-T08). defineAction reads
+/// it before running an approve / send / pay handler and inserts it in the handler's transaction,
+/// so a double-click or a retry returns the first result. ops_app has no UPDATE on this table.
+model ActionIdempotency {
+  /// `<action name>:<caller key>`, e.g. `proposal.approve:<proposalId>:<version>`.
+  key       String   @id
+  action    String
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  userId    String   @db.Uuid
+  /// The Result JSON every replay returns.
+  result    Json
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  expiresAt DateTime @db.Timestamptz(3)
+
+  @@index([expiresAt])
+  @@map("action_idempotency")
+  @@schema("ops")
+}
+
 // ═════════════════════════════════════════════════════════════════════════════
 // WORK AND ATTENTION
 // ═════════════════════════════════════════════════════════════════════════════

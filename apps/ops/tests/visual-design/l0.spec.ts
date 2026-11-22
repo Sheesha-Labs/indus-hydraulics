@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 import { prepare, settle } from '../visual/helpers'
-import { compareToReference } from './compare'
+import { compareToReference, recordParity } from './compare'
 import { captureElement, closeReference, hasReference, renderReference } from './reference'
 
 /**
@@ -49,6 +49,14 @@ test.describe('L0 Foundations parity', () => {
       console.log(
         `L0 ${s.id}: diff ${ratio.toFixed(4)} (${size})${s.why ? ` — allowed ${s.max}: ${s.why}` : ''}`
       )
+      recordParity({
+        board: s.id,
+        group: 'L0 sheet',
+        ratio,
+        area: size,
+        limit: s.max ?? 0.02,
+        note: s.why ?? '',
+      })
       expect(ratio).toBeLessThanOrEqual(s.max ?? 0.02)
     })
   }

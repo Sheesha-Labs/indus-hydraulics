@@ -42,6 +42,8 @@ export interface ToastProviderProps {
  * focus to the newest toast's first button (and Tab from there walks the stack). Ids come from a counter,
  * never Math.random or Date.now, so server and client renders agree.
  *
+ * Toasts stack 8px apart (L3 S07b `cv-tst`, S02-T09).
+ *
  * aria-relevant="additions": a toast is announced once when it appears; the undo countdown ticking
  * inside it is not re-read every second.
  */
@@ -144,7 +146,7 @@ export default function ToastProvider({ children, className }: ToastProviderProp
           aria-live="polite"
           aria-relevant="additions"
           data-part="toast-polite"
-          className="m-0 flex list-none flex-col items-start gap-2.5 p-0"
+          className="m-0 flex list-none flex-col items-start gap-2 p-0"
         >
           {polite.map(item)}
         </ol>
@@ -153,8 +155,8 @@ export default function ToastProvider({ children, className }: ToastProviderProp
           aria-relevant="additions"
           data-part="toast-errors"
           className={cn(
-            'm-0 flex list-none flex-col items-start gap-2.5 p-0',
-            polite.length > 0 && assertive.length > 0 && 'mt-2.5'
+            'm-0 flex list-none flex-col items-start gap-2 p-0',
+            polite.length > 0 && assertive.length > 0 && 'mt-2'
           )}
         >
           {assertive.map(item)}

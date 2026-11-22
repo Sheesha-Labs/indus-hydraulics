@@ -113,6 +113,31 @@ BEGIN
   RAISE EXCEPTION 'ops_app can read public.products directly';
 END $$;
 
+-- 9. action_idempotency (S02-T08): ops_app can read and write a stored result, never rewrite one.
+DO $$
+DECLARE
+  v_user uuid;
+  v_key text := 'verify.sql:' || gen_random_uuid();
+BEGIN
+  IF has_table_privilege('ops_app', 'ops.action_idempotency', 'UPDATE') THEN
+    RAISE EXCEPTION 'ops_app must not be able to UPDATE action_idempotency';
+  END IF;
+  SELECT id INTO v_user FROM ops."user" LIMIT 1;
+  IF v_user IS NULL THEN
+    RAISE NOTICE 'no ops user exists here; action_idempotency round trip skipped';
+    RETURN;
+  END IF;
+  INSERT INTO ops.action_idempotency ("key", "action", "userId", "result", "expiresAt")
+    VALUES (v_key, 'verify', v_user, '{"success": true}', now() + interval '1 minute');
+  INSERT INTO ops.action_idempotency ("key", "action", "userId", "result", "expiresAt")
+    VALUES (v_key, 'verify', v_user, '{"success": false}', now() + interval '1 minute')
+    ON CONFLICT DO NOTHING;
+  IF (SELECT "result" ->> 'success' FROM ops.action_idempotency WHERE "key" = v_key) <> 'true' THEN
+    RAISE EXCEPTION 'a second insert replaced the stored action_idempotency result';
+  END IF;
+  DELETE FROM ops.action_idempotency WHERE "key" = v_key;
+END $$;
+
 DO $$
 BEGIN
   RAISE NOTICE 'verify.sql: all checks passed';

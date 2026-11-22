@@ -6,12 +6,17 @@ import type { ButtonVariant, Icon } from '../types'
 import Kbd from './Kbd'
 import Spinner from './Spinner'
 
-export type ButtonSize = 'lg' | 'md' | 'sm' | 'xs'
+/**
+ * 'client' (44, 13.5px) is the client-page size (L2 t12a, 05 §5): used ONLY inside the T12 client template,
+ * the one responsive surface, where it is the touch target. Never in the console.
+ */
+export type ButtonSize = 'lg' | 'md' | 'sm' | 'xs' | 'client'
 
 export interface ButtonOwnProps {
   /** Default 'secondary'. One primary per view; navy for batch sends; destructive only in ConfirmDialog. */
   variant?: ButtonVariant
-  /** Default 'md'. lg: proposal cards and dialogs; md: headers; sm: rows; xs: dense tables. */
+  /** Default 'md'. lg: proposal cards and dialogs; md: headers; sm: rows; xs: dense tables;
+   *  client: T12 client pages only (44). */
   size?: ButtonSize
   /** Spinner + aria-busy, pointer-events none; the label stays (e.g. "Sending…"). */
   busy?: boolean
@@ -74,6 +79,7 @@ export const buttonVariants = cva(
         md: 'rounded-io-ctl text-[13px]',
         sm: 'rounded-io-ctl text-[12.5px]',
         xs: 'rounded-io-5 text-[12px]',
+        client: 'rounded-io-ctl text-[13.5px]',
       },
     },
     compoundVariants: [
@@ -81,6 +87,7 @@ export const buttonVariants = cva(
       { variant: [...BOXED], size: 'md', class: 'h-io-btn px-3.5' },
       { variant: [...BOXED], size: 'sm', class: 'h-io-btn-sm px-2.5' },
       { variant: [...BOXED], size: 'xs', class: 'h-io-btn-xs px-2' },
+      { variant: [...BOXED], size: 'client', class: 'h-io-btn-client px-4' },
     ],
     defaultVariants: { variant: 'secondary', size: 'md' },
   }

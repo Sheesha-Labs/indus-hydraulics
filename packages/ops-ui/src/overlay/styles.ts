@@ -22,8 +22,16 @@ export const LAYER = {
   tooltip: 'z-io-tooltip',
 } as const
 
-/** `ko-scr`: the scrim. Fades in; reduced motion keeps the 100ms fade (base.css). */
-export const SCRIM = 'bg-io-scrim data-[state=open]:animate-[io-fade_120ms_ease-out]'
+/**
+ * `ko-scr`: the scrim. Fades in; reduced motion keeps the 100ms fade (base.css). Inside the console shell it
+ * dims the page, not the sidebar, as every L3 board draws it (S01–S07): it starts at the sidebar's edge,
+ * whichever width the sidebar has.
+ */
+export const SCRIM = [
+  'bg-io-scrim data-[state=open]:animate-[io-fade_120ms_ease-out]',
+  'in-[body:has([data-part=app-shell]_[data-part=sidebar])]:left-[var(--io-sidebar)]',
+  'in-[body:has([data-part=app-shell]_[data-part=sidebar][data-collapsed])]:left-[var(--io-sidebar-collapsed)]',
+].join(' ')
 
 /** `ko-md`: 14px radius, e4, white. Width 480–560, default 520. */
 export const modalPanel = cva(
@@ -63,9 +71,16 @@ export const drawerPanel = cva(
   }
 )
 export const drawerHead = 'border-io-line flex items-start gap-2.5 border-b px-5 pt-[18px] pb-3'
+/**
+ * The L3 shell screens' panel head (`cv-asd .cv-hd`, boards S02a–S06a): 16px all round, items centred, so a
+ * 32px head button or a status pill sits on the title's centre line.
+ */
+export const drawerHeadShell = 'border-io-line flex items-center gap-2.5 border-b px-5 py-4'
 export const drawerTitle = 'text-[16px] leading-[1.3] font-medium tracking-[-0.01em]'
 /** PaneTabs inside `ko-dw .tb`: the rule runs the drawer's width, tabs inset 12, items 9×10. */
 export const drawerTabs = '[&_[role=tab]]:px-2.5 [&_[role=tablist]]:px-3'
+/** The shell screens put Controls Tabs in a 12px-padded row: items 9×12, the rule inset 12 each side. */
+export const drawerTabsShell = '[&_[role=tab]]:px-3 [&_[role=tablist]]:mx-3'
 export const drawerBody =
   'text-io-ink-2 flex min-h-0 flex-1 flex-col gap-3.5 overflow-y-auto px-5 py-4 text-[13px] leading-[1.55] [scrollbar-width:thin]'
 export const drawerFoot = 'border-io-line flex gap-2 border-t px-5 py-3'

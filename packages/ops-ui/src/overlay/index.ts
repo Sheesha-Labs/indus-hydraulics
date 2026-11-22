@@ -29,3 +29,5 @@ export {
 } from './Frames'
 export type { ActionResult } from './result'
 export type { DrawerWidth, MenuWidth, ModalWidth, PopoverWidth, ToastKind } from './styles'
+// The layer and scrim recipes, for shell surfaces built on Radix directly (the command bar, S02-T06).
+export { LAYER, SCRIM } from './styles'

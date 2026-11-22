@@ -27,6 +27,8 @@ const EVIDENCE = process.env.OPS_EVIDENCE_DIR
 
 export default defineConfig({
   testDir: './tests/e2e',
+  // Refreshes $OPS_EVIDENCE_DIR/visual/<sprint>/summary.md after a design-parity run (a no-op otherwise).
+  globalTeardown: './tests/visual-design/teardown.ts',
   fullyParallel: true,
   reporter: [['list']],
   use: { baseURL: BASE_URL, trace: 'on-first-retry' },

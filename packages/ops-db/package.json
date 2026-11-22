@@ -16,6 +16,7 @@
     "typecheck": "bun check --no-script",
     "test": "bun test --parallel --isolate=modules --randomize",
     "db:generate": "prisma generate",
+    "db:seed": "bun src/seed.ts",
     "db:push": "node -e \"console.error('db:push is disabled for the ops schema.\\\\n\\\\nOps schema changes ship as hand-written SQL in packages/ops-db/migrations/, applied with prisma db execute before the PR that needs them merges. prisma db push would also see the website schema and propose destructive changes to it.\\\\n'); process.exit(1)\""
   },
   "dependencies": {
