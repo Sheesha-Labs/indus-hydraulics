@@ -225,10 +225,10 @@ export default function ShellSpecimen() {
             data-board-74={id}
             className={cn(
               'border-io-line flex border',
-              // 778 inside the border, as the board frames it. The parity crop gets 31px more: Money's row
-              // (29 once compressed, + the 2px gap) is cut out before comparing, and the extra height keeps
-              // every other row compressed exactly as much as on the board.
-              id === 'owner' ? 'h-[810px]' : 'h-[780px]'
+              // 778 inside the border, as the board frames it. The parity crop gets 33px more (31 before the
+              // 28px group labels of S02-T09): Money's row, compressed, plus the 2px gap, is cut out before
+              // comparing, and the extra height keeps every other row compressed as much as on the board.
+              id === 'owner' ? 'h-[811px]' : 'h-[780px]'
             )}
           >
             <Specimen {...v} className="h-full" />

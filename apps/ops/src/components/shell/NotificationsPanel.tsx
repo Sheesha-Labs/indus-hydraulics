@@ -80,6 +80,7 @@ export default function NotificationsPanel() {
     <Drawer
       open={open}
       onOpenChange={(next) => (next ? shell.open('notifications') : shell.close('notifications'))}
+      variant="shell"
       title="Notifications"
       width={420}
       returnFocusRef={opener}

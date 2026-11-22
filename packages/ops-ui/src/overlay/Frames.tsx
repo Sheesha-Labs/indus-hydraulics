@@ -106,7 +106,7 @@ export function DrawerFrame({
     <div data-frame="drawer" className={cn(drawerPanel({ width }), className)}>
       <div className={drawerHead}>
         <div className="flex flex-1 flex-col gap-[3px]">
-          {eyebrow ? <span className="io-eyebrow">{eyebrow}</span> : null}
+          {eyebrow ? <span className="io-eyebrow leading-[14px]">{eyebrow}</span> : null}
           <b className={drawerTitle}>{title}</b>
         </div>
         {glyphClose}

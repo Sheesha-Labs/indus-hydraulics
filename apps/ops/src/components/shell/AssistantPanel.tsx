@@ -7,7 +7,7 @@ import { useEscapeLayer } from '@indus/ops-ui/lib/use-hotkeys'
 import { Drawer } from '@indus/ops-ui/overlay'
 import { worstAssistantStatus } from '@indus/ops-ui/shell/nav'
 import { InlineState } from '@indus/ops-ui/states'
-import { AssistantPill } from '@indus/ops-ui/status'
+import { AssistantPill, Tag } from '@indus/ops-ui/status'
 import { ActivityFeed, type ActivityItem } from '@indus/ops-ui/timeline'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
@@ -92,7 +92,9 @@ export default function AssistantPanel({ recordRef, assistant }: AssistantPanelP
         modal={false}
         // 400, as the S03/S06 boards draw the docked panels (README: 400–460); the kit's ladder starts at 420.
         className="w-[400px]"
-        eyebrow="Assistant"
+        variant="shell"
+        // S03a: the navy Assistant tag leads the head line, then where the panel is docked.
+        lead={<Tag kind="assistant">Assistant</Tag>}
         title={recordRef ? `On ${recordRef}` : 'Everywhere'}
         actions={<StatusPill status={worstAssistantStatus(assistant)} />}
         footer={

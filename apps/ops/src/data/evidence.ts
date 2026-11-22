@@ -45,7 +45,7 @@ const FIXTURE: EvidenceView = {
   title: 'Line 1 · AED 125.00 from Example Valve Co',
   reasons: [
     {
-      text: 'Read from Example Valve Co’s quote of 14 Nov, item 1.',
+      text: 'Read from the supplier’s quote of 14 Nov, item 1.',
       evidence: { label: 'EXV-Q-10001', evidenceId: FIXTURE_EVIDENCE_ID },
     },
     {

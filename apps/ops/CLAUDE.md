@@ -79,6 +79,11 @@ Supabase project and the Vercel team. Gmail is the record of correspondence; Zoh
 6. **Two families.** Geist 400/500/600 for all UI and data; Instrument Serif 400 only for section (40), greeting
    (32), record (30) and document (54) titles. Never put a weight class on a serif element. KPI numerals are
    Geist 500 24.
+   *(decision, S02-T09)* next/font's Geist ships only the Google subsets (latin, latin-ext, cyrillic, plus
+   vietnamese/cyrillic-ext faces), and none of them carries → (U+2192) or ↗ (U+2197); `latin` has only ↑ and ↓.
+   Those two arrows therefore render in the system fallback face. Accepted: they are decorative link affordances
+   and their metrics stay within the line box. Do not switch to `next/font/local` or a lucide icon just for them
+   without a design decision.
 7. **Radius ladder**: `rounded-io-paper` 2 (A4), `-tag` 4, `-ctl` 6 (buttons, fields), `-card` 10 (cards, tables,
    banners, toasts, menus), `-dialog` 14, `-pill` 999. Cards at rest have a 1px `io-line` border and no shadow.
 8. **Focus is never removed.** Use the `io-focus` and `io-focus-field` utilities. Reduced motion drops transforms
@@ -95,8 +100,15 @@ Supabase project and the Vercel team. Gmail is the record of correspondence; Zoh
 
 ## 5. Routes and authorization
 
-1. Route groups: `(auth)` (`/sign-in`, invite, reset, two-factor), `(console)` (everything signed-in), `(client)`
-   (`/q/[token]`, `/d/[token]`, `/s/[token]`, `/u/[token]`, `/q/legacy/[code]`), `api/*`.
+1. Route groups: `(auth)` (`/sign-in`, invite, reset, two-factor), `(console)` (everything signed-in inside
+   AppShell), `(setup)` (`/welcome`, `/setup/[step]`: the Owner's first run, signed in but drawn without AppShell
+   because T11/T9 own the page's `<main>`; each page still calls `requireOpsUser()` and the proxy protects both
+   paths), `(client)` (`/q/[token]`, `/d/[token]`, `/s/[token]`, `/u/[token]`, `/q/legacy/[code]`), `(kit)`
+   (`/_kit`, `OPS_KIT`-gated, never in production), `api/*`. Every route renders per request: the root layout
+   awaits `connection()`, because a prerendered page carries no CSP nonce and the browser refuses its scripts.
+   A `loading.tsx` or `template.tsx` must not reach a `'use client'` module, not even through a kit barrel: Next
+   renders those boundaries' chunks as `<script>` tags without the nonce (`loading-client-free.test.ts`,
+   `tests/e2e/csp.spec.ts`).
 2. `src/proxy.ts` is **default-deny**: an explicit allow-list of public paths, each of which verifies itself
    (Auth.js, signed document tokens, Inngest signature, Pub/Sub OIDC JWT, Zoho and Resend signatures, health/live).
    Every response carries `X-Robots-Tag: noindex, nofollow, noarchive, nosnippet`, CSP with nonces, HSTS,

@@ -138,6 +138,7 @@ export default function WhyDrawer({ evidence }: WhyDrawerProps) {
       onOpenChange={(next) => {
         if (!next) close()
       }}
+      variant="shell"
       eyebrow="Why?"
       title={evidence?.title ?? 'We can’t find that evidence'}
       width={460}

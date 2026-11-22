@@ -121,8 +121,10 @@ export default function ProfileMenu({
 
 /** OpsSidebar's menu: the Overlay kit panel (radius 10, e3, padding 6) with 9×10 rows and line rules. */
 const PROFILE_PANEL = cn(menuPanel(), 'w-auto')
+// 9px × 10px with the sheet's 13px line at 1.3 (OpsSidebar menu: no line-height of its own, so Geist's
+// normal line, 17px): rows 35 apart as on boards 74 and S05a.
 const PROFILE_ITEM =
-  'rounded-io-ctl flex cursor-pointer items-center justify-between gap-2.5 px-2.5 py-[9px] outline-none select-none data-[highlighted]:bg-io-fill'
+  'rounded-io-ctl flex cursor-pointer items-center justify-between gap-2.5 px-2.5 py-[9px] leading-[1.3] outline-none select-none data-[highlighted]:bg-io-fill'
 const PROFILE_SEPARATOR = 'bg-io-line mt-0.5 h-px'
 
 function WebsiteAdminLabel() {

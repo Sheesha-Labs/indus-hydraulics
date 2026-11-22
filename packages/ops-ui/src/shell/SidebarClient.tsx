@@ -210,7 +210,9 @@ function Groups(p: PartProps) {
               <div aria-hidden="true" className="bg-io-line my-1 h-px w-7" />
             ) : null
           ) : (
-            <div id={`${id}-${gi}`} className="io-eyebrow px-2 pt-2.5 pb-1">
+            // 10 + 14 + 4 = 28, as the L2/L3 sheets draw the group label (10.5px at Geist's normal line,
+            // not the body's 1.45), so the rows below sit where boards S01a–S08a and T1a–T12a put them.
+            <div id={`${id}-${gi}`} className="io-eyebrow px-2 pt-2.5 pb-1 leading-[14px]">
               {g.label}
             </div>
           )}

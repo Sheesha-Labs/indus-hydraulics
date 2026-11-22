@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs'
-import type { Page } from '@playwright/test'
+import type { Locator, Page } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
@@ -111,12 +111,13 @@ async function framed(page: Page, board: PNG): Promise<Buffer> {
 async function open(
   page: Page,
   signedInAs: (w: 'owner' | 'helper') => Promise<void>,
-  who: 'owner' | 'helper' = 'owner'
+  who: 'owner' | 'helper' = 'owner',
+  path = '/today'
 ) {
   await signedInAs(who)
   await page.setViewportSize({ width: W, height: H })
   await prepare(page)
-  await page.goto('/today')
+  await page.goto(path)
   await expect(page.locator('main#content h1')).toBeVisible()
   await page.waitForFunction(() => {
     const t = document.querySelector('[data-part="sidebar-toggle"]')
@@ -181,10 +182,42 @@ async function measure(
     masks,
   })
   const compared = 1 - maskedShare(masks, board.width, board.height)
-  const line = `${boardFile}: diff ${ratio.toFixed(4)} of the frame; ${(ratio / compared).toFixed(4)} of the ${(compared * 100).toFixed(0)}% compared (${size})`
+  const inArea = ratio / compared
+  const line = `${boardFile}: diff ${ratio.toFixed(4)} of the frame; ${inArea.toFixed(4)} of the ${(compared * 100).toFixed(0)}% compared (${size})`
   results.push(line)
   console.log(line)
-  return ratio
+  return inArea
+}
+
+/** Every board is held to 0.02 of the area it compares (masks named per test). */
+const LIMIT = 0.02
+
+/** Text glyphs, from the element's own text box (ours, in board coordinates), padded by 2. */
+async function textBox(page: Page, selector: string): Promise<Mask> {
+  return textBoxOf(page.locator(selector).first())
+}
+
+async function textBoxOf(locator: Locator): Promise<Mask> {
+  return locator.evaluate((el) => {
+    const range = document.createRange()
+    range.selectNodeContents(el)
+    const b = range.getBoundingClientRect()
+    return {
+      x: Math.floor(b.x) - 1,
+      y: Math.floor(b.y) - 1,
+      w: Math.ceil(b.width) + 4,
+      h: Math.ceil(b.height) + 4,
+    }
+  })
+}
+
+/**
+ * Put an overlay at rest as the board draws it: a click on its title (not a control) moves focus to the
+ * panel itself with the pointer, so the control Radix focused on open loses its keyboard focus ring.
+ */
+async function atRest(page: Page, title: string) {
+  await page.getByText(title, { exact: true }).first().click()
+  await expect(page.locator(':focus-visible')).toHaveCount(0)
 }
 
 /** ⌘K until the bar shows: the hotkey listener is bound in an effect just after hydration. */
@@ -205,9 +238,21 @@ test.describe('Shell surfaces design parity', () => {
     await page.getByRole('combobox').fill('Q10001')
     await expect(page.getByRole('group', { name: 'Recognised reference' })).toBeVisible()
     // Kept: the panel's input row and its top edge. Masked: the result rows and footer (data; the
-    // board's list is 450 high with records that arrive in S31).
-    const r = await measure(page, 'S01A.png', [{ x: 497, y: 70, w: 683, h: 58 }])
-    expect(r).toBeLessThanOrEqual(0.03)
+    // board's list is 450 high with records that arrive in S31); the search glyph (ours is the lucide
+    // icon, CLAUDE.md §4.10; the board types a ⌕ in a fallback face) and the typed reference (neutral
+    // Q10001 for the board's number).
+    const glyph = await page.locator('[data-part="command-bar"] svg').first().boundingBox()
+    const typed = await page.getByRole('combobox').boundingBox()
+    const r = await measure(
+      page,
+      'S01A.png',
+      [{ x: 497, y: 70, w: 683, h: 58 }],
+      [
+        { x: Math.floor(glyph!.x) - 2, y: 84, w: Math.ceil(glyph!.width) + 6, h: 32 },
+        { x: Math.floor(typed!.x) - 16, y: 84, w: 90, h: 32 },
+      ]
+    )
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S01B command bar, question typed', async ({ page, signedInAs }) => {
@@ -215,14 +260,19 @@ test.describe('Shell surfaces design parity', () => {
     await cmdK(page)
     await page.getByRole('combobox').fill('who quoted 6205-C3 last')
     await expect(page.getByRole('group', { name: 'Ask the Assistant' })).toBeVisible()
-    // Kept: the input row (the typed question is masked: neutral part number). Masked: the answer (S31).
+    // Kept: the input row (the typed question is masked: neutral part number; the glyph as in S01A).
+    // Masked: the answer (S31).
+    const glyph = await page.locator('[data-part="command-bar"] svg').first().boundingBox()
     const r = await measure(
       page,
       'S01B.png',
       [{ x: 497, y: 70, w: 683, h: 58 }],
-      [{ x: 530, y: 86, w: 230, h: 28 }]
+      [
+        { x: Math.floor(glyph!.x) - 2, y: 84, w: Math.ceil(glyph!.width) + 6, h: 32 },
+        { x: 530, y: 86, w: 230, h: 28 },
+      ]
     )
-    expect(r).toBeLessThanOrEqual(0.03)
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S02A notifications', async ({ page, signedInAs }) => {
@@ -230,9 +280,15 @@ test.describe('Shell surfaces design parity', () => {
     await cmdK(page)
     await page.keyboard.type('notifications')
     await page.keyboard.press('Enter')
-    await expect(page.getByRole('dialog', { name: 'Notifications' })).toBeVisible()
-    // Kept: the drawer head and tabs (the board's "Needs you 3" count is masked) and its foot. Masked:
-    // the rows (S30).
+    const drawer = page.getByRole('dialog', { name: 'Notifications' })
+    await expect(drawer).toBeVisible()
+    await expect(drawer.getByText(/No notifications yet/)).toBeVisible()
+    await atRest(page, 'Notifications')
+    // Kept: the drawer head, the tab rule and the foot. Masked: the rows (S30); "Mark all read" (disabled
+    // here because there is nothing to mark; the board has rows); the tab labels, whose widths carry the
+    // board's counts (All 8, Needs you 3: data, S30).
+    const mark = await drawer.getByRole('button', { name: 'Mark all read' }).boundingBox()
+    const tabs = await drawer.getByRole('tablist').boundingBox()
     const r = await measure(
       page,
       'S02A.png',
@@ -240,13 +296,17 @@ test.describe('Shell surfaces design parity', () => {
         { x: 1019, y: 0, w: 421, h: 105 },
         { x: 1019, y: 893, w: 421, h: 47 },
       ],
-      [{ x: 1170, y: 72, w: 30, h: 24 }]
+      [
+        { x: Math.floor(mark!.x), y: Math.floor(mark!.y), w: Math.ceil(mark!.width) + 3, h: 34 },
+        { x: Math.floor(tabs!.x), y: Math.floor(tabs!.y), w: Math.ceil(tabs!.width) + 2, h: 34 },
+      ]
     )
-    expect(r).toBeLessThanOrEqual(0.03)
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S03A Assistant panel docked', async ({ page, signedInAs }) => {
-    await open(page, signedInAs)
+    // Docked on an enquiry, as the board (the S02 record fixture).
+    await open(page, signedInAs, 'owner', '/enquiries/ENQ-2026-0001/lines')
     await cmdK(page)
     await page.keyboard.type('assistant panel')
     await page.keyboard.press('Enter')
@@ -254,8 +314,9 @@ test.describe('Shell surfaces design parity', () => {
       timeout: 15_000,
     })
     await page.locator('#content').focus()
-    // Kept: the panel's frame, head and ask box. Masked: the head's record ref ("On ENQ-…" vs
-    // "Everywhere" on a page without a record) and the three sections' rows (S06-T08).
+    // Kept: the panel's frame, head and ask box. Masked: the record number in the head (neutral 0001 for
+    // the board's), the three sections' rows (S06-T08) and the ask box's text (neutral wording).
+    const title = await textBox(page, 'aside h2')
     const r = await measure(
       page,
       'S03A.png',
@@ -263,23 +324,35 @@ test.describe('Shell surfaces design parity', () => {
         { x: 1039, y: 0, w: 401, h: 80 },
         { x: 1039, y: 805, w: 401, h: 135 },
       ],
-      [{ x: 1140, y: 14, w: 160, h: 48 }],
-      'enquiries'
+      [title, { x: 1060, y: 820, w: 360, h: 100 }]
     )
-    expect(r).toBeLessThanOrEqual(0.03)
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S04A Why? drawer', async ({ page, signedInAs }) => {
-    await open(page, signedInAs)
+    await open(page, signedInAs, 'owner', '/enquiries/ENQ-2026-0001/lines')
     await page.evaluate(() => {
       ;(window as unknown as { next: { router: { push: (u: string) => void } } }).next.router.push(
         '/why/00000000-0000-7000-8000-00000000e001'
       )
     })
-    await expect(page.getByRole('dialog', { name: /Line 1/ })).toBeVisible({ timeout: 20_000 })
-    // Kept: the whole drawer. Neutral fixture words differ from the board's (title, reasons, source).
-    const r = await measure(page, 'S04A.png', [{ x: 979, y: 0, w: 461, h: 940 }], [], 'enquiries')
-    expect(r).toBeLessThanOrEqual(0.03)
+    const drawer = page.getByRole('dialog', { name: /Line 1/ })
+    await expect(drawer).toBeVisible({ timeout: 20_000 })
+    await atRest(page, 'Why?')
+    // Kept: the whole drawer. Masked: the neutral fixture words where they differ from the board's (the
+    // title's supplier and figure, the source document, its quote and its line), and the file-type label:
+    // ours is the Assistant kit's 9.5px coloured PDF badge (`.ka-ft`); on the board the sheet's
+    // `.ka-src .sh span` rule out-ranks it and paints it grey 12px, which the kit never meant.
+    const masks: Mask[] = []
+    for (const sel of [
+      '[role="dialog"] h2',
+      '[data-part="source"] figcaption > *',
+      '[data-part="source"] blockquote',
+      '[data-part="source"] > div > span',
+    ])
+      for (const el of await page.locator(sel).all()) masks.push(await textBoxOf(el))
+    const r = await measure(page, 'S04A.png', [{ x: 979, y: 0, w: 461, h: 940 }], masks)
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S05A profile menu', async ({ page, signedInAs }) => {
@@ -288,7 +361,7 @@ test.describe('Shell surfaces design parity', () => {
     await expect(page.getByRole('menu')).toBeVisible()
     // Kept: the sidebar and its menu. Masked: the page (Today, S07) and the paused strip (S05 pause).
     const r = await measure(page, 'S05A.png', [])
-    expect(r).toBeLessThanOrEqual(0.03)
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S05B collapsed sidebar, Helper, tooltip on Mail', async ({ page, signedInAs }) => {
@@ -311,11 +384,12 @@ test.describe('Shell surfaces design parity', () => {
       [{ x: 60, y: 190, w: 50, h: 40 }],
       [{ x: 0, y: 105, w: 66, h: 125 }]
     )
-    expect(r).toBeLessThanOrEqual(0.03)
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S06A help panel', async ({ page, signedInAs }) => {
-    await open(page, signedInAs)
+    // Open on Compare, as the board.
+    await open(page, signedInAs, 'owner', '/enquiries/ENQ-2026-0001/compare')
     await page.locator('#content').focus()
     await expect(async () => {
       if (!(await page.getByRole('complementary', { name: 'Help' }).isVisible()))
@@ -328,17 +402,11 @@ test.describe('Shell surfaces design parity', () => {
     await page.locator('#content').focus()
     // Kept: the head, the search field and the foot. Masked: the articles, ask box and shortcut list
     // (S35 content; the board shows the record page's articles).
-    const r = await measure(
-      page,
-      'S06A.png',
-      [
-        { x: 1039, y: 0, w: 401, h: 118 },
-        { x: 1039, y: 876, w: 401, h: 64 },
-      ],
-      [],
-      'enquiries'
-    )
-    expect(r).toBeLessThanOrEqual(0.03)
+    const r = await measure(page, 'S06A.png', [
+      { x: 1039, y: 0, w: 401, h: 118 },
+      { x: 1039, y: 876, w: 401, h: 64 },
+    ])
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S07A confirm (the kit frame ConfirmDialog renders)', async ({ page }) => {
@@ -351,28 +419,97 @@ test.describe('Shell surfaces design parity', () => {
     await settle(page)
     const frame = page.locator('[data-frame="modal"][data-tone="danger"]').first()
     const ours = await frame.screenshot({ animations: 'disabled', caret: 'hide' })
+    // Masked, relative to the frame: the neutral words where they differ from the board's (the supplier in
+    // the title and the description, the references in the first two consequences) and the consequence
+    // arrows, which our self-hosted Geist does not carry (latin subset, CLAUDE.md §4.6: they render in the
+    // fallback face; the sheet's Google Geist draws its own).
+    const masks = await frame.evaluate((el) => {
+      const o = el.getBoundingClientRect()
+      const box = (n: Element) => {
+        const range = document.createRange()
+        range.selectNodeContents(n)
+        const b = range.getBoundingClientRect()
+        return {
+          x: Math.floor(b.x - o.x) - 1,
+          y: Math.floor(b.y - o.y) - 1,
+          w: Math.ceil(b.width) + 4,
+          h: Math.ceil(b.height) + 4,
+        }
+      }
+      const items = [...el.querySelectorAll('[data-part="consequences"] li')]
+      return [
+        box(el.querySelector('b')!),
+        box(el.querySelector('p')!),
+        ...items.map((li) => box(li.firstElementChild!)),
+        ...items.slice(0, 2).map((li) => box(li.lastElementChild!)),
+      ]
+    })
     const board = PNG.sync.read(readFileSync(boardPngPath('S07A.png')))
     const b = PNG.sync.read(ours)
     const crop = new PNG({ width: b.width, height: b.height })
     PNG.bitblt(board, crop, 578, 327, b.width, Math.min(b.height, board.height - 327), 0, 0)
     const { ratio, size } = compareToReference(ours, PNG.sync.write(crop), {
       name: 'shell-S07A-dialog',
+      masks,
     })
-    const line = `S07A.png dialog: diff ${ratio.toFixed(4)} (${size})`
+    const compared = 1 - maskedShare(masks, b.width, b.height)
+    const inArea = ratio / compared
+    const line = `S07A.png dialog: diff ${ratio.toFixed(4)} of the crop; ${inArea.toFixed(4)} of the ${(compared * 100).toFixed(0)}% compared (${size})`
     results.push(line)
     console.log(line)
-    expect(ratio).toBeLessThanOrEqual(0.06)
+    expect(inArea).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S07B toast', async ({ page, signedInAs }) => {
-    await open(page, signedInAs)
-    await cmdK(page)
-    await page.keyboard.type('pause')
-    await page.keyboard.press('Enter')
-    await expect(page.locator('[data-part="toast-region"] li')).toHaveCount(1)
-    // Kept: the toast region (one info toast here; the board shows an undo toast above a running one).
-    const r = await measure(page, 'S07B.png', [{ x: 255, y: 820, w: 360, h: 110 }], [], 'review')
-    expect(r).toBeLessThanOrEqual(0.03)
+    // The board's stack: an Undo toast after a send above a running toast, raised in the shell's own toast
+    // region by the /_kit/surfaces/toasts specimen (useUndoToast + a running toast).
+    await open(page, signedInAs, 'owner', '/_kit/surfaces/toasts')
+    const toasts = page.locator('[data-part="toast-region"] li')
+    await expect(toasts).toHaveCount(2)
+    const geo = await toasts.evaluateAll((els) =>
+      els.map((li) => {
+        const box = li.firstElementChild!.getBoundingClientRect()
+        const undo = [...li.querySelectorAll('button')].find((b) =>
+          b.textContent?.startsWith('Undo')
+        )!
+        const glyph = li.querySelector('i')!.getBoundingClientRect()
+        return { right: box.right, undo: undo.getBoundingClientRect(), glyph }
+      })
+    )
+    // Kept: the toast region. Masked: (1) on the Undo toast, from the end of the word "Undo" to the toast's
+    // right edge: ours counts the server's window down ("Undo 4:59", ADR-11) where the board draws "Undo",
+    // so the countdown and the close button it pushes right differ by design; (2) on the running toast, the
+    // neutral title and what it pushes (the board names a supplier); (3) the running glyph: parity renders
+    // with prefers-reduced-motion, where the spinner is a still ring at .55 (base.css), while the board
+    // draws it mid-spin.
+    const [undoToast, running] = geo as [(typeof geo)[number], (typeof geo)[number]]
+    const r = await measure(
+      page,
+      'S07B.png',
+      [{ x: 255, y: 820, w: 360, h: 110 }],
+      [
+        {
+          x: Math.floor(undoToast.undo.x) + 1 + 32,
+          y: Math.floor(undoToast.undo.y) + 1 - 8,
+          w: 80,
+          h: Math.ceil(undoToast.undo.height) + 16,
+        },
+        {
+          x: Math.floor(running.glyph.x),
+          y: Math.floor(running.glyph.y),
+          w: Math.ceil(running.glyph.width) + 3,
+          h: Math.ceil(running.glyph.height) + 3,
+        },
+        {
+          x: 300,
+          y: Math.floor(running.undo.y) + 1 - 8,
+          w: Math.ceil(running.right) - 300 + 40,
+          h: Math.ceil(running.undo.height) + 16,
+        },
+      ],
+      'review'
+    )
+    expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
   test('S08A system banners', async ({ page, signedInAs }) => {

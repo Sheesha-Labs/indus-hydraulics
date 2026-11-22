@@ -10,8 +10,10 @@ import {
   drawerBody,
   drawerFoot,
   drawerHead,
+  drawerHeadShell,
   drawerPanel,
   drawerTabs,
+  drawerTabsShell,
   drawerTitle,
   LAYER,
   SCRIM,
@@ -30,6 +32,8 @@ export interface DrawerProps {
   onOpenChange: (open: boolean) => void
   /** 10.5px uppercase above the title: "Why?", "Record", "Setting". */
   eyebrow?: string
+  /** Before the title on its line, e.g. the Assistant Tag of the docked Assistant panel (S03a). */
+  lead?: ReactNode
   title: string
   /** Head controls between the title and the close button ("Mark all read", a status chip). */
   actions?: ReactNode
@@ -55,6 +59,12 @@ export interface DrawerProps {
    * another surface). Without either, Radix sends focus nowhere. Docked panels restore focus themselves.
    */
   returnFocusRef?: RefObject<HTMLElement | null>
+  /**
+   * 'kit' (default): the Overlay kit sheet's drawer (`ko-dw`: head 18/12 top-aligned, pane tabs 9×10 with the
+   * rule the full width). 'shell': the panels the L3 shell screens draw (`cv-asd`, S02a–S06a: head 16 all
+   * round with its items centred, Controls Tabs 9×12 with the rule inset 12). Console surfaces use 'shell'.
+   */
+  variant?: 'kit' | 'shell'
   className?: string
 }
 
@@ -68,6 +78,7 @@ export default function Drawer({
   open,
   onOpenChange,
   eyebrow,
+  lead,
   title,
   actions,
   tabs,
@@ -77,8 +88,10 @@ export default function Drawer({
   modal = true,
   trigger,
   returnFocusRef,
+  variant = 'kit',
   className,
 }: DrawerProps) {
+  const shell = variant === 'shell'
   const titleId = useId()
   const body = tabs ? (
     <PaneTabs
@@ -87,7 +100,7 @@ export default function Drawer({
       onValueChange={tabs.onValueChange}
       aria-label={`${title} sections`}
       className={cn(
-        drawerTabs,
+        shell ? drawerTabsShell : drawerTabs,
         'flex min-h-0 flex-1 flex-col',
         '[&>[role=tabpanel]]:min-h-0 [&>[role=tabpanel]]:flex-1 [&>[role=tabpanel]]:flex-col [&>[role=tabpanel]:not([hidden])]:flex'
       )}
@@ -100,9 +113,11 @@ export default function Drawer({
 
   const sections = (titleEl: ReactNode, closeEl: ReactNode) => (
     <>
-      <div className={drawerHead}>
-        <div className="flex flex-1 flex-col gap-[3px]">
-          {eyebrow ? <span className="io-eyebrow">{eyebrow}</span> : null}
+      <div className={shell ? drawerHeadShell : drawerHead}>
+        {lead ? <div className="flex flex-none items-center">{lead}</div> : null}
+        <div className="flex min-w-0 flex-1 flex-col gap-[3px]">
+          {/* 10.5px at Geist's normal line (14), as both sheets set it (`.ey`, `.cv-ey`), not the body's 1.45. */}
+          {eyebrow ? <span className="io-eyebrow leading-[14px]">{eyebrow}</span> : null}
           {titleEl}
         </div>
         {actions ? <div className="flex flex-none items-center gap-2">{actions}</div> : null}

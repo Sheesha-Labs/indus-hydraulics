@@ -88,6 +88,7 @@ export default function HelpPanel() {
         modal={false}
         // 400, as the S03/S06 boards draw the docked panels (README: 400–460); the kit's ladder starts at 420.
         className="w-[400px]"
+        variant="shell"
         title="Help"
         footer={
           <Button
