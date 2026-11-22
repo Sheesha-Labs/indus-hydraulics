@@ -1,6 +1,5 @@
 import { isSidebarCollapsed, SIDEBAR_COOKIE } from '@indus/ops-ui/shell/nav'
 import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
 import type { ReactNode } from 'react'
 import AppShell from '../../components/shell/AppShell'
 import SkipLink from '../../components/shell/SkipLink'
@@ -21,8 +20,13 @@ const WEBSITE_ADMIN_HREF = 'https://indushydraulics.com/admin'
  * NOT an authorization boundary (CLAUDE.md §4.2, apps/ops/CLAUDE.md §5.3). A layout does not re-run on every
  * navigation (App Router partial rendering), so a check here would be skipped by soft navigations. It reads
  * the user only to draw the shell; every page and every action calls requireOpsUser() itself, and the proxy
- * verifies the session token on every request. The redirect below covers a session whose user row was
- * suspended after the token was issued: there is no shell to draw for them.
+ * verifies the session token on every request.
+ *
+ * Without a user there is no shell to draw, and the page underneath decides what happens: a console page
+ * redirects to sign-in itself, and an unknown path renders not-found. That matters because the `@drawer`
+ * catch-all makes this layout the match for EVERY path no other route claims, public ones included (a
+ * client document path before its route exists, a webhook path): redirecting here would send those to
+ * /sign-in instead of a 404.
  */
 export default async function ConsoleLayout({
   children,
@@ -35,7 +39,7 @@ export default async function ConsoleLayout({
   try {
     user = await requireOpsUser()
   } catch (error) {
-    if (error instanceof AccessError) redirect('/sign-in')
+    if (error instanceof AccessError) return children
     throw error
   }
   const [mailbox, banners, assistant, jar] = await Promise.all([
