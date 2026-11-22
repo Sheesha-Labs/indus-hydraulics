@@ -7,7 +7,7 @@ import { expect, test } from '@playwright/test'
  * kit's own parts); the section head is the Shell kit's SectionHead, checked when S02 builds it.
  * Hydration finishes first, so client parts are scanned as users meet them.
  */
-const BUILT_KITS = ['controls', 'status', 'overlay', 'table', 'card', 'mail', 'assistant'] as const
+const BUILT_KITS = ['controls', 'status', 'overlay', 'table', 'card', 'mail', 'assistant', 'form', 'states'] as const
 
 for (const kit of BUILT_KITS) {
   test(`axe-kit ${kit}: no critical or serious findings`, async ({ page }) => {
