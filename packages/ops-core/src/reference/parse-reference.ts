@@ -10,7 +10,7 @@
  * - `search`: a client PO number, a supplier quote number or a part number. Those are other people's
  *   formats, so the kind says only how to look it up (`external` or `part`); search resolves them.
  *
- * A string that starts with one of OUR prefixes but does not fit its format (ENQ-26-0419, SO-24) is a
+ * A string that starts with one of OUR prefixes but does not fit its format (ENQ-26-0001, SO-24) is a
  * near-miss and returns null: it is never passed off as someone else's reference.
  */
 
@@ -231,7 +231,7 @@ const OWN: ReadonlyArray<{ prefix: RegExp; parse: (s: string) => ParsedReference
     },
   },
   {
-    // Q26941 and Q26941-R2 without INDUS.
+    // Q10001 and Q10001-R2 without INDUS.
     prefix: /^Q(?=[- ]?\d)/,
     parse: (s) => {
       const m = new RegExp(`^Q${S}(\\d{3,7})(?:${S}R(\\d{1,2}))?$`).exec(s)
