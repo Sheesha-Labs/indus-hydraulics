@@ -43,6 +43,7 @@ export type T8TodayProps = T8Base &
         kpis?: ReactNode
         /** Cards, laid out two to a row. */
         children: ReactNode
+        rail?: never
       }
   )
 

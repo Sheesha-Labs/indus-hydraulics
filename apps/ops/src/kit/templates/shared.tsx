@@ -109,13 +109,22 @@ export function specimenRecord({
   }
 }
 
-/** The product mark the wizard, sign-in and client boards draw: the logo slot and "Operations". */
+/** The logo slot at the height a board draws it (26 wizard, 30 sign-in and sidebar, 34 client brand bar). */
+const LOGO_HEIGHT = { 26: 'h-[26px]', 30: 'h-[30px]', 34: 'h-[34px]' } as const
+
+export function LogoSlot({ height }: { height: keyof typeof LOGO_HEIGHT }) {
+  return (
+    <span data-logo className={`flex items-center overflow-hidden ${LOGO_HEIGHT[height]}`}>
+      <LogoPlaceholder />
+    </span>
+  )
+}
+
+/** The product mark the wizard and sign-in boards draw: the logo slot and "Operations". */
 export function ProductMark({ size = 'md' }: { size?: 'md' | 'lg' }) {
   return (
     <span className="flex items-center gap-2.5">
-      <span data-logo>
-        <LogoPlaceholder />
-      </span>
+      <LogoSlot height={size === 'lg' ? 30 : 26} />
       <span
         className={
           size === 'lg'

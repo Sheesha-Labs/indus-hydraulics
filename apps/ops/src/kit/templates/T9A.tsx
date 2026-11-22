@@ -21,8 +21,8 @@ export default function T9ASpecimen() {
       next={<Button variant="primary">Start import</Button>}
     >
       <p className="text-io-ink-2 leading-[1.55]">
-        The Assistant reads past mail and Zoho Books to learn clients, suppliers and prices. It never
-        emails anyone during import.
+        The Assistant reads past mail and Zoho Books to learn clients, suppliers and prices. It
+        never emails anyone during import.
       </p>
       <Fields cols={2}>
         <Field type="text" name="mailFrom" label="Mail from" defaultValue="1 Jan 2024" />

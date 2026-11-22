@@ -21,7 +21,6 @@ export interface T12ClientProps {
    * bar stuck to the bottom of the screen.
    */
   actions: ReactNode
-  actionsLabel?: string
   /** Under the actions: "Valid as stated per line. Questions go to …". */
   note?: ReactNode
 }
@@ -43,7 +42,6 @@ export default function T12Client({
   document,
   summary,
   actions,
-  actionsLabel = 'Respond',
   note,
 }: T12ClientProps) {
   return (
@@ -79,8 +77,6 @@ export default function T12Client({
         ) : null}
         <div
           data-slot="actions"
-          role="group"
-          aria-label={actionsLabel}
           className="bg-io-card border-io-line z-io-sticky sticky bottom-0 -mx-4 flex flex-col gap-2 border-t px-4 py-3 lg:static lg:col-start-2 lg:row-start-2 lg:mx-0 lg:gap-3 lg:self-start lg:border-t-0 lg:p-0"
         >
           {actions}

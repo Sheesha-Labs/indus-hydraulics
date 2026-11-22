@@ -102,6 +102,22 @@ export async function framed(page: Page, boardFile: string): Promise<Framed> {
 }
 
 /**
+ * The same frame for a page drawn without the shell (T9 centred wizard, T11 sign-in, T12 client page,
+ * S02-T05): our 1438 × 938 viewport against the board's page crop, nothing aligned and nothing masked.
+ */
+export async function bareFramed(page: Page, boardFile: string): Promise<Omit<Framed, 'masks'>> {
+  const ours = await page.screenshot({
+    animations: 'disabled',
+    caret: 'hide',
+    clip: { x: 0, y: 0, width: FRAME.w, height: FRAME.h },
+  })
+  const src = PNG.sync.read(readFileSync(boardPngPath(boardFile)))
+  const board = new PNG({ width: FRAME.w, height: FRAME.h })
+  PNG.bitblt(src, board, FRAME.x, FRAME.y, FRAME.w, FRAME.h, 0, 0)
+  return { ours, board: PNG.sync.write(board) }
+}
+
+/**
  * The navy note the L2 template boards pin to their bottom right ("T1 · Index list …"): canvas
  * annotation, not product. The box (1083, 852.3, 340 × 72.7 on the board) and its shadow, in frame
  * coordinates.

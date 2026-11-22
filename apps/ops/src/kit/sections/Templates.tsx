@@ -47,7 +47,9 @@ export interface TemplateSpecimen {
   Specimen: ComponentType
 }
 
-const spec = (s: Omit<TemplateSpecimen, 'nav' | 'frame'> & { frame?: SpecimenFrame }): TemplateSpecimen => ({
+const spec = (
+  s: Omit<TemplateSpecimen, 'nav' | 'frame'> & { frame?: SpecimenFrame }
+): TemplateSpecimen => ({
   ...s,
   frame: s.frame ?? 'shell',
   nav: TEMPLATE_SPECIMEN_NAV[s.slug] ?? null,
@@ -192,7 +194,8 @@ export function templateSpecimen(slug: string): TemplateSpecimen | undefined {
 /** A specimen that renders outside the shell, by slug; throws if the slug is not one (a static route's typo). */
 export function bareSpecimen(slug: string): ComponentType {
   const entry = templateSpecimen(slug)
-  if (!entry || entry.frame === 'shell') throw new Error(`No out-of-shell template specimen "${slug}"`)
+  if (!entry || entry.frame === 'shell')
+    throw new Error(`No out-of-shell template specimen "${slug}"`)
   return entry.Specimen
 }
 

@@ -4,7 +4,7 @@ import { formatMoney } from '@indus/ops-ui/format'
 import { DataTable, type Column } from '@indus/ops-ui/table'
 import { T12Client } from '@indus/ops-ui/templates'
 import { SAMPLE_LINES, SAMPLE_LINES_SUBTOTAL, TEMPLATES, type SampleLine } from '../fixtures'
-import { ProductMark } from './shared'
+import { LogoSlot } from './shared'
 
 /**
  * The client's view of a quotation line: only what the client is quoted (C36). The type is built by
@@ -77,8 +77,7 @@ export const CLIENT_QUOTATION_COLUMNS: Column<ClientQuotationLine>[] = [
     key: 'total',
     label: 'Line total',
     type: 'money',
-    value: (r) =>
-      r.subtotal ? formatMoney('USD', r.total).text : r.total ? usd(r.total) : '—',
+    value: (r) => (r.subtotal ? formatMoney('USD', r.total).text : r.total ? usd(r.total) : '—'),
   },
 ]
 
@@ -93,17 +92,24 @@ export default function T12ASpecimen() {
     <T12Client
       brandBar={
         <>
-          <ProductMark />
+          <LogoSlot height={34} />
           <span className="text-io-ink-3 text-[12.5px]">{TEMPLATES.preparedFor}</span>
         </>
       }
       eyebrow={TEMPLATES.quotationEyebrow}
       title={TEMPLATES.quotationTitle}
       document={
-        <div data-part="client-lines" className="-mx-4 overflow-x-auto px-4 lg:mx-0 lg:px-0">
+        <section
+          data-part="client-lines"
+          aria-label="Quotation lines, scrolls sideways on a small screen"
+          // A scrolling box must be reachable by keyboard (axe scrollable-region-focusable).
+          // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+          tabIndex={0}
+          className="io-focus -mx-4 overflow-x-auto px-4 lg:mx-0 lg:px-0"
+        >
           <DataTable
             caption="Quotation lines"
-            className="min-w-[640px] lg:min-w-0"
+            className="min-w-[800px] lg:min-w-0"
             gridClass={GRID}
             columns={CLIENT_QUOTATION_COLUMNS}
             rows={ROWS}
@@ -113,7 +119,7 @@ export default function T12ASpecimen() {
             foot="Line 4 follows on a supplementary quotation by 9 Oct"
             footRight="USD · DAP site"
           />
-        </div>
+        </section>
       }
       summary={
         <Stat

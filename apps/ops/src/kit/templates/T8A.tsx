@@ -18,11 +18,7 @@ export default function T8ASpecimen() {
       header={<TodayHeader greeting={HEADERS.greeting} assistant="running" notificationCount={3} />}
       needsYou={
         <>
-          <Card
-            eyebrow={`Needs you · ${14}`}
-            link={{ label: 'See all 14', href: '/review' }}
-            className="min-h-[52px] justify-center"
-          />
+          <Card eyebrow={`Needs you · ${14}`} link={{ label: 'See all 14', href: '/review' }} />
           {TEMPLATES.needs.map((n) => (
             <NeedsRow
               key={n.key}
@@ -93,7 +89,11 @@ export default function T8ASpecimen() {
             value={TEMPLATES.awaiting.value}
             sub={TEMPLATES.awaiting.sub}
           />
-          <Kpi label="Cash in, next 7 days" value={TEMPLATES.cashIn.value} sub={TEMPLATES.cashIn.sub} />
+          <Kpi
+            label="Cash in, next 7 days"
+            value={TEMPLATES.cashIn.value}
+            sub={TEMPLATES.cashIn.sub}
+          />
           <Card
             eyebrow="Done for you"
             items={[

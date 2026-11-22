@@ -90,7 +90,10 @@ function Centred({
           <h1 className="io-display text-io-record">{title}</h1>
           {children}
         </div>
-        <div data-slot="foot" className="border-io-line flex items-center gap-2 border-t px-7 py-3.5">
+        <div
+          data-slot="foot"
+          className="border-io-line flex items-center gap-2 border-t px-7 py-3.5"
+        >
           {back}
           {saved ? <div data-slot="saved">{saved}</div> : null}
           <span aria-hidden="true" className="flex-1" />
@@ -137,7 +140,10 @@ function Rail({
         ) : null}
       </div>
       <div className="flex min-h-0 min-w-0 flex-col">
-        <div data-slot="body" className="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-10 py-8">
+        <div
+          data-slot="body"
+          className="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto px-10 py-8"
+        >
           <div className="flex flex-col gap-2">
             {eyebrow ? <span className="io-eyebrow">{eyebrow}</span> : null}
             <h1 className="io-display text-io-section">{title}</h1>
@@ -147,7 +153,11 @@ function Rail({
               <div data-slot="fields" className="flex min-w-0 flex-col gap-4">
                 {children}
               </div>
-              <aside data-slot="aside" aria-label={asideLabel} className="flex min-w-0 flex-col gap-3">
+              <aside
+                data-slot="aside"
+                aria-label={asideLabel}
+                className="flex min-w-0 flex-col gap-3"
+              >
                 {aside}
               </aside>
             </div>

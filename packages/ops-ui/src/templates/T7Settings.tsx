@@ -44,7 +44,10 @@ export default function T7Settings({
         >
           {subnav}
         </nav>
-        <div data-slot="sections" className="flex min-h-0 min-w-0 flex-col overflow-y-auto px-8 py-2">
+        <div
+          data-slot="sections"
+          className="flex min-h-0 min-w-0 flex-col overflow-y-auto px-8 py-2"
+        >
           {children}
         </div>
       </div>

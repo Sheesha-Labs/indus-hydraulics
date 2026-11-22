@@ -4,7 +4,7 @@ import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
 import { compareToReference, type Mask } from './compare'
 import { hasReference } from './reference'
-import { FRAME, framed, TEMPLATE_NOTE } from './shell-frame'
+import { bareFramed, FRAME, framed, TEMPLATE_NOTE } from './shell-frame'
 
 /**
  * Template design parity (S02-T04): each specimen /_kit/templates/<t> (inside AppShell, signed in as the
@@ -19,6 +19,8 @@ type MaskSpec = { why: string } & (
       at: Locator
       /** Widen the box to the right (a neutral word shorter than the board's). */
       right?: number
+      /** Extend the box downwards (a region the board draws taller). */
+      down?: number
     }
   | { box: Mask }
 )
@@ -27,6 +29,8 @@ interface Board {
   slug: string
   board: string
   note: boolean
+  /** Rendered outside AppShell (T9 centred, T11, T12): no sidebar to align, no session needed. */
+  bare?: boolean
   /** Areas of ours to leave out, with the reason; each resolves to the boxes of a locator. */
   masks?: (page: Page) => MaskSpec[]
   /**
@@ -82,6 +86,14 @@ function recordMasks(page: Page): MaskSpec[] {
     { why: 'neutral meta values', at: header.locator('h1 + div') },
     { why: 'neutral strip sentence', at: page.locator('[data-part="assistant-strip-did"]') },
   ]
+}
+
+/** The needs-you buttons on T8A: secondary here, as T4A's queue buttons (one primary per view). */
+function needsYouButtons(page: Page): MaskSpec {
+  return {
+    why: 'one primary per view: the needs-you buttons are secondary (the board draws four primaries)',
+    at: page.locator('[data-slot="needs-you"] [data-part="needs-row"] a'),
+  }
 }
 
 const BOARDS: Board[] = [
@@ -170,7 +182,79 @@ const BOARDS: Board[] = [
       },
     ],
   },
+  { slug: 't7a', board: 'T7A.png', note: true },
+  { slug: 't8a', board: 'T8A.png', note: false, masks: (page) => [needsYouButtons(page)] },
+  { slug: 't10a', board: 'T10A.png', note: true },
+  {
+    slug: 't9a',
+    board: 'T9A.png',
+    note: false,
+    bare: true,
+    masks: (page) => [{ why: 'logo slot: nothing is copied from the handoff', at: logo(page) }],
+  },
+  {
+    slug: 't11a',
+    board: 'T11A.png',
+    note: false,
+    bare: true,
+    masks: (page) => [
+      { why: 'logo slot: nothing is copied from the handoff', at: logo(page) },
+      {
+        why: 'neutral sample address in the Email field',
+        at: page.locator('input[name="email"]'),
+      },
+      {
+        why: 'neutral domain and person in the footer sentence',
+        at: page.locator('[data-slot="card"] > p:last-child'),
+      },
+    ],
+  },
+  {
+    slug: 't12a',
+    board: 'T12A.png',
+    note: false,
+    bare: true,
+    masks: (page) => [
+      { why: 'logo slot: nothing is copied from the handoff', at: logo(page) },
+      {
+        why: 'neutral contact and client in "Prepared for …"',
+        at: page.locator('[data-slot="brand-bar"] > span:last-child'),
+      },
+      { why: 'neutral reference and title', at: page.locator('[data-slot="document"] > h1') },
+      {
+        why: 'C36: the client columns differ from the board BY DESIGN (no Supplier, no State column; "Price to follow" on line 4). The whole lines table is masked, and 96 rows below it: without the supplier column the descriptions no longer wrap, so the board draws the same table 96 rows taller',
+        at: page.locator('[data-part="client-lines"]'),
+        down: 96,
+      },
+      {
+        why: "the board's Stat prints the total as a plain row ('Total=USD …', its runtime splits the pair at the first '='); ours draws the kit's total row, 8 rows taller (cut below)",
+        at: page.locator('[data-slot="summary"] dl'),
+      },
+      {
+        why: 'neutral contact address in the note',
+        at: page.locator('[data-slot="note"] p'),
+      },
+    ],
+    cuts: [
+      // The board draws a browser address bar (38 rows) above the page: a picture of the browser, not
+      // the page. Taken out of the board so the brand bar and everything under it compare aligned.
+      { side: 'board', why: 'browser address bar (board only)', x: 0, w: FRAME.w, y: 0, h: 38 },
+      // The kit's total row (rule + 13/500) is 8 rows taller than the board's plain row: 8 rows of the
+      // masked totals are taken out of our right column so the buttons and the note compare aligned.
+      {
+        side: 'ours',
+        why: "kit total row taller than the board's plain row",
+        x: 1040,
+        w: 346,
+        y: 150,
+        h: 8,
+      },
+    ],
+  },
 ]
+
+/** The product mark's logo slot on the out-of-shell specimens (shared.tsx `ProductMark`). */
+const logo = (page: Page) => page.locator('[data-logo]')
 
 /** Take `h` rows at `y` out of the band [x, x + w) and refill the band's foot with its last row. */
 function cutRows(png: Buffer, c: Cut): Buffer {
@@ -193,7 +277,7 @@ async function boxes(m: MaskSpec): Promise<Mask[]> {
       x: Math.floor(b.x),
       y: Math.floor(b.y),
       w: Math.ceil(b.width) + 1 + (m.right ?? 0),
-      h: Math.ceil(b.height) + 1,
+      h: Math.ceil(b.height) + 1 + (m.down ?? 0),
     })
   }
   return out
@@ -204,13 +288,15 @@ test.describe('Template design parity', () => {
 
   for (const b of BOARDS) {
     test(`template ${b.board.replace('.png', '')}`, async ({ page, signedInAs }) => {
-      await signedInAs('owner')
+      if (!b.bare) await signedInAs('owner')
       await page.setViewportSize({ width: FRAME.w, height: FRAME.h })
       await prepare(page)
       await page.goto(`/_kit/templates/${b.slug}`)
       await page.locator('[data-template]').first().waitFor()
       await settle(page)
-      const f = await framed(page, b.board)
+      const f = b.bare
+        ? { ...(await bareFramed(page, b.board)), masks: [] }
+        : await framed(page, b.board)
       const extra: Mask[] = []
       for (const m of b.masks?.(page) ?? []) extra.push(...(await boxes(m)))
       const masks = [...f.masks, ...(b.note ? [TEMPLATE_NOTE] : []), ...extra]
@@ -230,4 +316,52 @@ test.describe('Template design parity', () => {
       expect(ratio).toBeLessThanOrEqual(0.02)
     })
   }
+})
+
+/**
+ * X1 has no L2 board (it is ours). Its page header is compared with board 195's (Ex-Dubai collection, the
+ * first exception board): the 1202 × 61 band right of the sidebar, inside the frame line. The crumb, the
+ * title and the right-hand chip (board 195 carries an Incoterm tag there) are neutral or board-specific
+ * words, so they are masked; the band's height, ground, gutter and bottom rule are compared.
+ */
+test.describe('X1 header parity', () => {
+  test.skip(!hasReference(), 'OPS_DESIGN_REF_DIR is not set or not readable')
+
+  test('template X1 header vs 195', async ({ page, signedInAs }) => {
+    await signedInAs('owner')
+    await page.setViewportSize({ width: FRAME.w, height: FRAME.h })
+    await prepare(page)
+    await page.goto('/_kit/templates/x1')
+    await page.locator('[data-template="X1"]').waitFor()
+    await settle(page)
+    const header = page.locator('[data-template="X1"] [data-part="page-header"]')
+    const band = (await header.boundingBox())!
+    const BAND = { x: Math.round(band.x), y: 0, w: FRAME.w - Math.round(band.x), h: 61 }
+    const f = await bareFramed(page, '195.png')
+    const cropBand = (png: Buffer) => {
+      const src = PNG.sync.read(png)
+      const out = new PNG({ width: BAND.w, height: BAND.h })
+      PNG.bitblt(src, out, BAND.x, BAND.y, BAND.w, BAND.h, 0, 0)
+      return PNG.sync.write(out)
+    }
+    const inBand = (m: Mask): Mask => ({ ...m, x: m.x - BAND.x, y: m.y - BAND.y })
+    const masks: Mask[] = []
+    for (const m of [
+      {
+        why: 'neutral order crumb',
+        at: header.locator('h1').locator('xpath=preceding-sibling::span'),
+        right: 40,
+      },
+      { why: 'neutral exception title', at: header.locator('h1'), right: 40 },
+    ] satisfies MaskSpec[])
+      masks.push(...(await boxes(m)).map(inBand))
+    // The right-hand status: our chip against board 195's Incoterm tag (different words and widths).
+    masks.push({ x: BAND.w - 200, y: 10, w: 200, h: 42 })
+    const { ratio, size } = compareToReference(cropBand(f.ours), cropBand(f.board), {
+      name: 'template-x1-header',
+      masks,
+    })
+    console.log(`X1 header vs 195.png: diff ${ratio.toFixed(4)} (${size}, ${masks.length} masks)`)
+    expect(ratio).toBeLessThanOrEqual(0.02)
+  })
 })
