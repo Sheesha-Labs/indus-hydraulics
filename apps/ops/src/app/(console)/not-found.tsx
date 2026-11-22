@@ -2,8 +2,9 @@ import { ButtonLink } from '@indus/ops-ui/controls'
 import { EmptyState } from '@indus/ops-ui/states'
 
 /**
- * notFound() anywhere in the console without a closer boundary (05 §6.4). Record segments get their own
- * not-found with the "not imported" state (board 211) when the route tree lands (S02-T07).
+ * notFound() anywhere in the console without a closer boundary, and any path no route claims (05 §6.4).
+ * Every segment of the route tree has its own not-found; record segments show the "not imported" state
+ * (board 211, components/route/NotFoundState.tsx).
  */
 export default function ConsoleNotFound() {
   return (
