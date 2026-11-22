@@ -139,24 +139,26 @@ function CommandBody({
   const listId = `${id}-list`
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
-  const [search, setSearch] = useState<CommandSearch['groups']>([])
+  // The last search answer and the query it answered: shown only while that is still the query.
+  const [answer, setAnswer] = useState<{ q: string; groups: CommandSearch['groups'] }>({
+    q: '',
+    groups: [],
+  })
   const seq = useRef(0)
 
   // The search read: debounced, and an answer for an older query is dropped.
   useEffect(() => {
     const q = query.trim()
     const mine = ++seq.current
-    if (!q) {
-      setSearch([])
-      return
-    }
+    if (!q) return
     const timer = setTimeout(() => {
       void searchCommand(q, mine).then((r) => {
-        if (r.success && r.data.seq === seq.current) setSearch(r.data.groups)
+        if (r.success && r.data.seq === seq.current) setAnswer({ q, groups: r.data.groups })
       })
     }, SEARCH_DEBOUNCE_MS)
     return () => clearTimeout(timer)
   }, [query])
+  const search = answer.q === query.trim() ? answer.groups : []
 
   const groups = useMemo<Group[]>(() => {
     const q = query.trim()
@@ -274,7 +276,11 @@ function CommandBody({
   return (
     <>
       <div className="border-io-line flex h-14 items-center gap-2.5 border-b px-[18px] text-[16px]">
-        <SearchGlyph aria-hidden="true" strokeWidth={1.75} className="text-io-ink-3 size-4 flex-none" />
+        <SearchGlyph
+          aria-hidden="true"
+          strokeWidth={1.75}
+          className="text-io-ink-3 size-4 flex-none"
+        />
         <input
           role="combobox"
           aria-expanded="true"
@@ -346,8 +352,8 @@ function CommandBody({
         ))}
         {empty ? (
           <p role="status" className="text-io-ink-3 m-0 px-[18px] pt-3 pb-2 text-[12.5px]">
-            No reference matches “{query.trim()}”. Records, mail and attachments are searched once search
-            arrives.
+            No reference matches “{query.trim()}”. Records, mail and attachments are searched once
+            search arrives.
           </p>
         ) : null}
       </div>

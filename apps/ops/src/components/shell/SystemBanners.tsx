@@ -29,7 +29,8 @@ export const OFFLINE_BANNER: SystemBanner = {
   props: {
     tone: 'warn',
     title: 'You’re offline.',
-    children: 'What is on screen stays readable. Sending, approving and saving wait until you reconnect.',
+    children:
+      'What is on screen stays readable. Sending, approving and saving wait until you reconnect.',
   },
 }
 

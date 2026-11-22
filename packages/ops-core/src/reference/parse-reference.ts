@@ -190,7 +190,10 @@ const OWN: ReadonlyArray<{ prefix: RegExp; parse: (s: string) => ParsedReference
       if (!m) return null
       const [, n, part] = m
       const p = part ? `-${part}` : ''
-      return ref('order', `SO-${n}${p}`, [`SO${n}${part ?? ''}`, `SO ${n}${part ? ` ${part}` : ''}`])
+      return ref('order', `SO-${n}${p}`, [
+        `SO${n}${part ?? ''}`,
+        `SO ${n}${part ? ` ${part}` : ''}`,
+      ])
     },
   },
   {
@@ -247,12 +250,7 @@ function part(s: string): ParsedReference | null {
   const key = partKey(s)
   if (key.length < 3 || !/\d/.test(key)) return null
   const segments = key.split(/(?<=\d)(?=[A-Z])/)
-  return ref(
-    'part',
-    key,
-    [segments.join('-'), key, segments.join(' '), s],
-    'search'
-  )
+  return ref('part', key, [segments.join('-'), key, segments.join(' '), s], 'search')
 }
 
 /**

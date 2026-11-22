@@ -33,7 +33,12 @@ function WhyTabBody({ evidence, tab }: { evidence: EvidenceView; tab: WhyTab }) 
       <p className="text-io-ink-3 m-0 text-[12.5px]">No sources recorded.</p>
     ) : (
       <List
-        items={evidence.sources.map((s) => ({ key: s.key, mark: null, title: s.label, sub: s.meta }))}
+        items={evidence.sources.map((s) => ({
+          key: s.key,
+          mark: null,
+          title: s.label,
+          sub: s.meta,
+        }))}
       />
     )
   if (tab === 'history')
@@ -43,7 +48,12 @@ function WhyTabBody({ evidence, tab }: { evidence: EvidenceView; tab: WhyTab }) 
       </p>
     ) : (
       <List
-        items={evidence.history.map((h) => ({ key: h.key, mark: null, title: h.text, right: h.time }))}
+        items={evidence.history.map((h) => ({
+          key: h.key,
+          mark: null,
+          title: h.text,
+          right: h.time,
+        }))}
       />
     )
   const checks: CheckItem[] = evidence.checks.map((c) => ({
@@ -88,7 +98,10 @@ function NotFoundBody() {
 function useWrong() {
   const { toast } = useToast()
   return () =>
-    toast({ kind: 'info', title: 'Corrections are made from the Assistant log once it is switched on.' })
+    toast({
+      kind: 'info',
+      title: 'Corrections are made from the Assistant log once it is switched on.',
+    })
 }
 
 export interface WhyDrawerProps {
@@ -177,14 +190,16 @@ export function WhyPage({ evidence, returnTo }: WhyPageProps) {
       <div className="rounded-io-card border-io-line bg-io-card flex max-w-[640px] flex-col border">
         <div className="border-io-line flex flex-col gap-[3px] border-b px-5 pt-[18px] pb-3">
           <span className="io-eyebrow">Why?</span>
-          <h1 className="text-io-ink m-0 text-[18px] leading-[1.3] font-medium">{evidence.title}</h1>
+          <h1 className="text-io-ink m-0 text-[18px] leading-[1.3] font-medium">
+            {evidence.title}
+          </h1>
         </div>
         <PaneTabs
           items={tabs(evidence)}
           value={tab}
           onValueChange={(k) => setTab(k as WhyTab)}
           aria-label="Why? sections"
-          className="[&_[role=tablist]]:px-3 [&_[role=tab]]:px-2.5"
+          className="[&_[role=tab]]:px-2.5 [&_[role=tablist]]:px-3"
         >
           <div className="text-io-ink-2 flex flex-col gap-3.5 px-5 py-4 text-[13px] leading-[1.55]">
             <WhyTabBody evidence={evidence} tab={tab} />

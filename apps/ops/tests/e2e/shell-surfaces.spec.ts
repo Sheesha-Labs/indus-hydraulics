@@ -32,7 +32,9 @@ const combobox = (page: Page) => commandBar(page).getByRole('combobox')
 /** An in-app (soft) navigation, as a Link click makes: the @drawer slot intercepts it. */
 async function softNavigate(page: Page, href: string) {
   await page.evaluate((url) => {
-    ;(window as unknown as { next: { router: { push: (u: string) => void } } }).next.router.push(url)
+    ;(window as unknown as { next: { router: { push: (u: string) => void } } }).next.router.push(
+      url
+    )
   }, href)
 }
 
@@ -61,7 +63,11 @@ test.describe('command-bar', () => {
     await expect(page.locator(`[id="${listId}"]`)).toHaveAttribute('role', 'listbox')
     // With nothing typed: the board's three actions, with their shortcuts.
     const actions = page.getByRole('group', { name: 'Actions' })
-    await expect(actions.getByRole('option')).toHaveText([/New enquiry\s*N/, /Pause Assistant/, /Go to Review\s*G R/])
+    await expect(actions.getByRole('option')).toHaveText([
+      /New enquiry\s*N/,
+      /Pause Assistant/,
+      /Go to Review\s*G R/,
+    ])
     await page.keyboard.press('Escape')
     await expect(commandBar(page)).toHaveCount(0)
     await expect(trigger).toBeFocused()
@@ -85,10 +91,16 @@ test.describe('command-bar', () => {
     const options = ref.getByRole('option')
     await expect(options).toHaveText([/INDUS\/Q10001\s*Quotation/, /10001\s*Part number/])
     await expect(options.first()).toHaveAttribute('aria-selected', 'true')
-    await expect(input).toHaveAttribute('aria-activedescendant', (await options.first().getAttribute('id'))!)
+    await expect(input).toHaveAttribute(
+      'aria-activedescendant',
+      (await options.first().getAttribute('id'))!
+    )
     await page.keyboard.press('ArrowDown')
     await expect(options.nth(1)).toHaveAttribute('aria-selected', 'true')
-    await expect(input).toHaveAttribute('aria-activedescendant', (await options.nth(1).getAttribute('id'))!)
+    await expect(input).toHaveAttribute(
+      'aria-activedescendant',
+      (await options.nth(1).getAttribute('id'))!
+    )
     // On into the next group (Actions match nothing here, so ↓ wraps past the disabled Ask row).
     await page.keyboard.press('ArrowDown')
     await expect(options.first()).toHaveAttribute('aria-selected', 'true')
@@ -150,7 +162,9 @@ test.describe('command-bar', () => {
     await combobox(page).fill('ENQ-2026-0001')
     await expect(page.getByRole('group', { name: 'Recognised reference' })).toBeVisible()
     // Let the open fade finish: mid-fade text is measured at part opacity.
-    await page.waitForFunction(() => document.getAnimations().every((a) => a.playState !== 'running'))
+    await page.waitForFunction(() =>
+      document.getAnimations().every((a) => a.playState !== 'running')
+    )
     const { violations } = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
       .analyze()
@@ -177,7 +191,10 @@ test.describe('why-drawer', () => {
     await expect(page).toHaveURL(new RegExp(`/why/${FIXTURE_EVIDENCE}$`))
     // The page underneath is still Today (hidden from the accessibility tree while the drawer is modal).
     await expect(page.locator('main#content h1', { hasText: 'Today' })).toBeAttached()
-    await expect(drawer.getByRole('tab', { name: 'Reasons' })).toHaveAttribute('aria-selected', 'true')
+    await expect(drawer.getByRole('tab', { name: 'Reasons' })).toHaveAttribute(
+      'aria-selected',
+      'true'
+    )
     await expect(drawer.getByRole('tab', { name: /Sources/ })).toContainText('2')
     await expect(drawer.getByRole('button', { name: 'Keep' })).toBeVisible()
     await drawer.getByRole('tab', { name: 'History' }).click()
@@ -195,7 +212,9 @@ test.describe('why-drawer', () => {
     await signedInAs('owner')
     await page.goto(`/why/${FIXTURE_EVIDENCE}?returnTo=%2Freview`)
     const content = page.locator('main#content')
-    await expect(content.getByRole('heading', { level: 1, name: /Line 1 · AED 125\.00/ })).toBeVisible()
+    await expect(
+      content.getByRole('heading', { level: 1, name: /Line 1 · AED 125\.00/ })
+    ).toBeVisible()
     await expect(page.getByRole('dialog')).toHaveCount(0)
     await expect(content.getByRole('link', { name: '← Back' })).toHaveAttribute('href', '/review')
     await expect(content.getByRole('link', { name: 'Keep' })).toHaveAttribute('href', '/review')
@@ -259,9 +278,7 @@ test.describe('overlays', () => {
     await expect(panel).toContainText('No notifications yet')
     // Focus is trapped: Tab never leaves the panel.
     for (let i = 0; i < 6; i++) await page.keyboard.press('Tab')
-    expect(
-      await panel.evaluate((el) => el.contains(document.activeElement))
-    ).toBe(true)
+    expect(await panel.evaluate((el) => el.contains(document.activeElement))).toBe(true)
     await page.keyboard.press('Escape')
     await expect(panel).toHaveCount(0)
     await expect(trigger).toBeFocused()
@@ -284,7 +301,9 @@ test.describe('overlays', () => {
     await expect(help).toContainText('Open the command bar')
     await expect(help).toContainText('Previous record tab')
     // The page is not pushed under a scrim: it keeps its width beside the dock.
-    const mainRight = await page.locator('main#content').evaluate((el) => el.getBoundingClientRect().right)
+    const mainRight = await page
+      .locator('main#content')
+      .evaluate((el) => el.getBoundingClientRect().right)
     expect(mainRight).toBeLessThanOrEqual(1440 - 400 + 1)
     // Not trapped: Tab walks out of the panel.
     let left = false
@@ -347,7 +366,9 @@ test.describe('banners', () => {
   }) => {
     await signedInAs('owner')
     const base = new URL(process.env.PLAYWRIGHT_BASE_URL ?? 'http://localhost:3100')
-    await page.context().addCookies([{ name: 'ops_fixture_banners', value: '1', domain: base.hostname, path: '/' }])
+    await page
+      .context()
+      .addCookies([{ name: 'ops_fixture_banners', value: '1', domain: base.hostname, path: '/' }])
     await ready(page)
     const slot = page.locator('[data-part="banner-slot"]')
     await expect(slot.locator('[data-part="banner"]')).toHaveCount(1)

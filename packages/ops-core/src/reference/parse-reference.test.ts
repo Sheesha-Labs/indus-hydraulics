@@ -173,9 +173,7 @@ describe('parseReference: ambiguity', () => {
     const r = parseReference('10001')!
     expect(r.kind).toBe('quotation')
     expect(r.match).toBe('ambiguous')
-    expect(r.variants).toEqual(
-      expect.arrayContaining(['INDUS/Q10001', 'Q10001', '10001'])
-    )
+    expect(r.variants).toEqual(expect.arrayContaining(['INDUS/Q10001', 'Q10001', '10001']))
     expect(r.alternatives).toHaveLength(1)
     expect(r.alternatives[0]).toMatchObject({ kind: 'part', canonical: '10001', match: 'search' })
   })
@@ -200,7 +198,8 @@ describe('part numbers', () => {
   it('6205-C3, 6205C3 and 6205 C3 are one part with the same key', () => {
     const keys = ['6205-C3', '6205C3', '6205 C3', '6205 - c3'].map((p) => parseReference(p)!)
     expect(new Set(keys.map((k) => k.canonical))).toEqual(new Set(['6205C3']))
-    for (const k of keys) expect(k.variants).toEqual(expect.arrayContaining(['6205-C3', '6205C3', '6205 C3']))
+    for (const k of keys)
+      expect(k.variants).toEqual(expect.arrayContaining(['6205-C3', '6205C3', '6205 C3']))
   })
 
   it('partKey keeps letters and digits only', () => {

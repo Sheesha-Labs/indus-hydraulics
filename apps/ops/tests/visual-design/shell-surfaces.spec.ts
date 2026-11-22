@@ -59,7 +59,12 @@ async function sidebarMasks(page: Page): Promise<SidebarGeometry> {
     const money = q('[data-nav="money"]')
     const spacer = el.querySelector(':scope > [aria-hidden="true"].flex-1')?.getBoundingClientRect()
     if (money && spacer)
-      out.push({ x: 0, y: Math.floor(money.top), w: Math.ceil(box.width) + 2, h: Math.ceil(spacer.top - money.top) + 2 })
+      out.push({
+        x: 0,
+        y: Math.floor(money.top),
+        w: Math.ceil(box.width) + 2,
+        h: Math.ceil(spacer.top - money.top) + 2,
+      })
     return { collapsed, masks: out }
   })
 }
@@ -103,7 +108,11 @@ async function framed(page: Page, board: PNG): Promise<Buffer> {
   return PNG.sync.write(out)
 }
 
-async function open(page: Page, signedInAs: (w: 'owner' | 'helper') => Promise<void>, who: 'owner' | 'helper' = 'owner') {
+async function open(
+  page: Page,
+  signedInAs: (w: 'owner' | 'helper') => Promise<void>,
+  who: 'owner' | 'helper' = 'owner'
+) {
   await signedInAs(who)
   await page.setViewportSize({ width: W, height: H })
   await prepare(page)
@@ -138,23 +147,31 @@ function maskedShare(masks: Mask[], w: number, h: number): number {
  * ours is on Today. Both rows are masked.
  */
 async function activeRows(page: Page, boardActive: string): Promise<Mask[]> {
-  return page.evaluate((keys) => {
-    return keys.map((k) => {
-      const b = document.querySelector(`[data-nav="${k}"]`)!.getBoundingClientRect()
-      return { x: Math.floor(b.x), y: Math.floor(b.y), w: Math.ceil(b.width) + 2, h: Math.ceil(b.height) + 2 }
-    })
-  }, ['today', boardActive])
+  return page.evaluate(
+    (keys) => {
+      return keys.map((k) => {
+        const b = document.querySelector(`[data-nav="${k}"]`)!.getBoundingClientRect()
+        return {
+          x: Math.floor(b.x),
+          y: Math.floor(b.y),
+          w: Math.ceil(b.width) + 2,
+          h: Math.ceil(b.height) + 2,
+        }
+      })
+    },
+    ['today', boardActive]
+  )
 }
 
 async function measure(
   page: Page,
   boardFile: string,
   keep: Mask[],
-  extra: Mask[] = [],
+  extraMasks: Mask[] = [],
   boardActive?: string
 ): Promise<number> {
   await still(page)
-  if (boardActive) extra = [...extra, ...(await activeRows(page, boardActive))]
+  const extra = boardActive ? [...extraMasks, ...(await activeRows(page, boardActive))] : extraMasks
   const board = PNG.sync.read(readFileSync(boardPngPath(boardFile)))
   const side = await sidebarMasks(page)
   const sidebarW = side.collapsed ? 64 : 236
@@ -192,9 +209,12 @@ test.describe('Shell surfaces design parity', () => {
     await page.getByRole('combobox').fill('who quoted 6205-C3 last')
     await expect(page.getByRole('group', { name: 'Ask the Assistant' })).toBeVisible()
     // Kept: the input row (the typed question is masked: neutral part number). Masked: the answer (S31).
-    const r = await measure(page, 'S01B.png', [{ x: 497, y: 70, w: 683, h: 58 }], [
-      { x: 530, y: 86, w: 230, h: 28 },
-    ])
+    const r = await measure(
+      page,
+      'S01B.png',
+      [{ x: 497, y: 70, w: 683, h: 58 }],
+      [{ x: 530, y: 86, w: 230, h: 28 }]
+    )
     expect(r).toBeLessThanOrEqual(0.03)
   })
 
@@ -276,9 +296,12 @@ test.describe('Shell surfaces design parity', () => {
     await expect(page.getByRole('tooltip')).toBeVisible()
     // Kept: the collapsed rail and the tooltip. Masked: the Mail page (S05) and the Today and Mail rows,
     // whose active state differs (the board is on Mail).
-    const r = await measure(page, 'S05B.png', [{ x: 60, y: 190, w: 50, h: 40 }], [
-      { x: 0, y: 105, w: 66, h: 125 },
-    ])
+    const r = await measure(
+      page,
+      'S05B.png',
+      [{ x: 60, y: 190, w: 50, h: 40 }],
+      [{ x: 0, y: 105, w: 66, h: 125 }]
+    )
     expect(r).toBeLessThanOrEqual(0.03)
   })
 
@@ -318,7 +341,9 @@ test.describe('Shell surfaces design parity', () => {
     const b = PNG.sync.read(ours)
     const crop = new PNG({ width: b.width, height: b.height })
     PNG.bitblt(board, crop, 578, 327, b.width, Math.min(b.height, board.height - 327), 0, 0)
-    const { ratio, size } = compareToReference(ours, PNG.sync.write(crop), { name: 'shell-S07A-dialog' })
+    const { ratio, size } = compareToReference(ours, PNG.sync.write(crop), {
+      name: 'shell-S07A-dialog',
+    })
     const line = `S07A.png dialog: diff ${ratio.toFixed(4)} (${size})`
     results.push(line)
     console.log(line)

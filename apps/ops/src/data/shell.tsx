@@ -3,7 +3,7 @@ import { opsDb } from '@indus/ops-db'
 import { BannerAction, type SystemBanner } from '@indus/ops-ui/status'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import { cookies } from 'next/headers'
-import { cache, createElement } from 'react'
+import { cache } from 'react'
 import { env } from '../lib/env'
 
 /** The sidebar's identity line prints the mailbox's local part; anything else prints "—". */
@@ -60,7 +60,7 @@ export function fixtureBanners(): SystemBanner[] {
         tone: 'bad',
         title: 'sales@ disconnected.',
         children: 'Gmail stopped syncing at 09:12. Nothing is sent until it reconnects.',
-        actions: createElement(BannerAction, { href: '/settings/mailboxes', children: 'Reconnect' }),
+        actions: <BannerAction href="/settings/mailboxes">Reconnect</BannerAction>,
       },
     },
   ]

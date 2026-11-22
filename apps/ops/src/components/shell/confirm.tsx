@@ -1,21 +1,17 @@
 'use client'
 
 import { ConfirmDialog, type ConfirmDialogProps } from '@indus/ops-ui/overlay'
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useRef,
-  useState,
-  type ReactNode,
-} from 'react'
+import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from 'react'
 
 /**
  * Confirm (S07, shell/README "Shared behaviour"): destructive actions confirm with their consequences
  * listed. Everything else runs at once with an Undo toast (undo-toast.tsx).
  */
 
-export type ConfirmOptions = Omit<ConfirmDialogProps, 'open' | 'onOpenChange' | 'trigger'>
+export type ConfirmOptions = Omit<
+  ConfirmDialogProps,
+  'open' | 'onOpenChange' | 'trigger' | 'returnFocusRef'
+>
 
 /** Resolves true when the action ran and succeeded, false when the person cancelled. */
 export type Confirm = (options: ConfirmOptions) => Promise<boolean>
@@ -43,12 +39,16 @@ export function ConfirmProvider({ children }: { children: ReactNode }) {
   const [pending, setPending] = useState<Pending | null>(null)
   const [open, setOpen] = useState(false)
   const current = useRef<Pending | null>(null)
+  // Whatever had focus when the question was asked gets it back when the dialog closes.
+  const opener = useRef<HTMLElement | null>(null)
 
   const confirm = useCallback<Confirm>(
     (options) =>
       new Promise<boolean>((resolve) => {
         // A second confirm while one is open cancels the first: there is only ever one question.
         current.current?.resolve(false)
+        const el = document.activeElement
+        opener.current = el instanceof HTMLElement && el !== document.body ? el : null
         const next: Pending = { options, resolve, succeeded: false }
         current.current = next
         setPending(next)
@@ -73,9 +73,11 @@ export function ConfirmProvider({ children }: { children: ReactNode }) {
           {...pending.options}
           open={open}
           onOpenChange={onOpenChange}
+          returnFocusRef={opener}
           onConfirm={async () => {
             const result = await pending.options.onConfirm()
-            if (result.success) pending.succeeded = true
+            const asked = current.current
+            if (result.success && asked) asked.succeeded = true
             return result
           }}
         />
