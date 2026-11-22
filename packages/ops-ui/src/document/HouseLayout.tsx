@@ -149,7 +149,8 @@ export default function HouseLayout({
               sp('mt-3.5 px-3.5 py-3', 'mt-2.5 px-3 py-[9px]')
             )}
           >
-            <span className={cn(K, 'text-io-ink-3')}>{data.subject.label ?? 'Subject'}</span>
+            {/* ink-2: ink-3 on the fill-2 band is 4.3:1, under AA at full scale. */}
+            <span className={cn(K, 'text-io-ink-2')}>{data.subject.label ?? 'Subject'}</span>
             <b className="font-semibold tracking-[.01em]">{data.subject.text}</b>
           </div>
         ) : null}

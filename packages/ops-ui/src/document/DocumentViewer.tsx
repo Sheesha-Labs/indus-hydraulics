@@ -80,7 +80,8 @@ export default function DocumentViewer({
         </div>
       </div>
       {caption ? (
-        <div className="text-io-ink-3 -mb-1.5 self-stretch text-[10px] tracking-[.1em] uppercase">
+        // ink-2: ink-3 on the grey well is 3.75:1, under AA.
+        <div className="text-io-ink-2 -mb-1.5 self-stretch text-[10px] tracking-[.1em] uppercase">
           {caption}
         </div>
       ) : null}

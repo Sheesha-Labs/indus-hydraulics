@@ -151,7 +151,8 @@ describe('Diff', () => {
     expect(html).toMatch(/<del [^>]*>48.50<\/del>/)
     expect(html).toMatch(/<ins [^>]*>46.20<\/ins>/)
     expect(html.match(/<del /g)).toHaveLength(1)
-    expect(html).toContain('<span role="cell" class="text-io-ink-4">30 days</span>')
+    // ink-3, not the kit's ink-4: an unchanged value is still read, and axe fails ink-4 on white (2.8:1).
+    expect(html).toContain('<span role="cell" class="text-io-ink-3">30 days</span>')
   })
 })
 

@@ -5,7 +5,7 @@ export interface DiffRow {
   field: string
   was: ReactNode
   now: ReactNode
-  /** Unchanged: both sides render in ink-4, with no <del>/<ins>. */
+  /** Unchanged: both sides render in ink-3 (the kit draws ink-4, which fails AA on white), with no <del>/<ins>. */
   same?: boolean
 }
 
@@ -21,7 +21,7 @@ export interface DiffProps {
 const ROW =
   'border-io-line-2 grid grid-cols-[140px_minmax(0,1fr)_minmax(0,1fr)] items-baseline gap-3 border-b px-3.5 py-[9px] last:border-b-0'
 
-/** Before/after (kit K-08 Diff): old struck on bad-tint, new on ok-tint, unchanged in ink-4. */
+/** Before/after (kit K-08 Diff): old struck on bad-tint, new on ok-tint, unchanged in ink-3. */
 export default function Diff({
   wasLabel,
   nowLabel,
@@ -50,10 +50,10 @@ export default function Diff({
           </span>
           {r.same ? (
             <>
-              <span role="cell" className="text-io-ink-4">
+              <span role="cell" className="text-io-ink-3">
                 {r.was}
               </span>
-              <span role="cell" className="text-io-ink-4">
+              <span role="cell" className="text-io-ink-3">
                 {r.now}
               </span>
             </>
