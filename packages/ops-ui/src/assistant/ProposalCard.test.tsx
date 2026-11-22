@@ -3,7 +3,16 @@
  */
 import '../overlay/test-env'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { act, cleanup, fireEvent, render, screen, userEvent, within } from '../lib/test-dom'
+import {
+  act,
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  userEvent,
+  waitFor,
+  within,
+} from '../lib/test-dom'
 import { UNEXPECTED_ERROR } from '../overlay/result'
 import ToastProvider from '../overlay/ToastProvider'
 import ProposalCard from './ProposalCard'
@@ -124,11 +133,14 @@ describe('ProposalCard', () => {
     expect(el).toHaveAttribute('data-state', 'approved')
     const polite = document.querySelector('[data-part="toast-polite"]') as HTMLElement
     expect(within(polite).getByText(props.headline)).toBeInTheDocument()
-    expect(within(polite).getByRole('button', { name: /Undo 4:58/ })).toBeInTheDocument()
+    // The label counts down from the server's 298 000 ms (4:58), not a client default of 5:00. It may
+    // have ticked once or twice by the time this line runs under load, so assert the server's window.
+    expect(within(polite).getByRole('button', { name: /^Undo 4:5[6-8]$/ })).toBeInTheDocument()
     await userEvent.click(within(el).getByRole('button', { name: /^Undo/ }))
     expect(undo).toHaveBeenCalledOnce()
-    expect(el).toHaveAttribute('data-state', 'open')
-    expect(within(polite).queryByRole('button', { name: /Undo/ })).toBeNull()
+    // Undo resolves after the click returns: wait for the revert instead of racing it.
+    await waitFor(() => expect(el).toHaveAttribute('data-state', 'open'))
+    await waitFor(() => expect(within(polite).queryByRole('button', { name: /Undo/ })).toBeNull())
   })
 
   it('passes the chosen option, the toggle and the reason chip to approve', async () => {
