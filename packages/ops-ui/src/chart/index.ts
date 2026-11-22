@@ -1,5 +1,5 @@
 // Chart kit (K-12, 05 §3.9). SVG and CSS only, server-rendered, no chart library.
-export { default as ChartFigure, type ChartFrame, type DataTable } from './ChartFigure'
+export { default as ChartFigure, type ChartDataTable, type ChartFrame } from './ChartFigure'
 export {
   default as BarList,
   type BarListDatum,

@@ -11,14 +11,14 @@ export interface ChartFrame {
   className?: string
 }
 
-export interface DataTable {
+export interface ChartDataTable {
   head: readonly string[]
   rows: readonly { key: string; cells: readonly string[] }[]
 }
 
 interface ChartFigureProps extends ChartFrame {
   /** The same data as the picture, rendered as a visually hidden table. */
-  table: DataTable
+  table: ChartDataTable
   children: ReactNode
 }
 

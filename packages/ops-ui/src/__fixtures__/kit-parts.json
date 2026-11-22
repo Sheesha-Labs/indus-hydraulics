@@ -1,0 +1,45 @@
+{
+  "shell": [
+    "Sidebar",
+    "RecordHeader",
+    "PageHeader",
+    "TodayHeader",
+    "AssistantStrip",
+    "Frame",
+    "SectionHead",
+    "BoardLabel"
+  ],
+  "controls": [
+    "Button",
+    "Segmented",
+    "Tabs",
+    "Toggle",
+    "Checkbox",
+    "Radio",
+    "Select",
+    "Choices",
+    "Kbd",
+    "Search"
+  ],
+  "status": ["Chip", "Check", "Tag", "Banner", "Stage", "Dot", "Bar", "Vocabulary"],
+  "table": ["Table"],
+  "card": ["Card", "List", "KV", "Stat", "KPI", "NeedsRow", "Person", "Contact", "Note"],
+  "assistant": [
+    "ProposalCard",
+    "Why",
+    "Checks",
+    "Preview",
+    "Confidence",
+    "Option",
+    "Highlight",
+    "Source",
+    "Unsure"
+  ],
+  "mail": ["ThreadRow", "Folder", "Message", "Email", "Composer", "Attachment", "AssistantNote"],
+  "document": ["Page", "Viewer"],
+  "timeline": ["Timeline", "Activity", "Gantt", "Diff", "Steps"],
+  "form": ["Field", "Fields", "Section", "Dropzone"],
+  "overlay": ["Modal", "Drawer", "Toast", "Menu", "Popover", "Tooltip"],
+  "states": ["Empty", "Loading", "Error", "Offline", "Inline"],
+  "chart": ["Bars", "Stacked", "Trend", "Heatmap", "Money", "FX", "VAT"]
+}
