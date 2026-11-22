@@ -9,19 +9,24 @@ import { captureElement, closeReference, hasReference, renderReference } from '.
  *
  * Allowed ratios above 0.02 are explained exceptions, recorded in the S01 PR body:
  *  - FONT: the console self-hosts variable Geist through next/font; the sheet loads Google's static
- *    Geist instances. Identical layout still rasterises glyphs differently, a floor of about 0.03–0.05
+ *    Geist instances. Identical layout still rasterises glyphs differently, a floor of about 0.01–0.03
  *    on cards that are mostly text.
  *  - NEUTRAL: neutral samples replace the handoff's names and figures (CLAUDE.md §12).
  */
 const FONT = "self-hosted variable Geist vs the sheet's Google static Geist (glyph rasterisation)"
 const SECTIONS: { id: string; max?: number; why?: string }[] = [
-  { id: 'f01', max: 0.08, why: `wordmark in place of the logo file; neutral people; ${FONT}` },
-  { id: 'f02', max: 0.04, why: FONT },
+  // Measured 0.0248 (S01-T10).
+  { id: 'f01', max: 0.03, why: `wordmark in place of the logo file; neutral people; ${FONT}` },
+  // Measured 0.0212.
+  { id: 'f02', max: 0.025, why: FONT },
   { id: 'f03' },
   { id: 'f04' },
-  { id: 'f05', max: 0.08, why: `neutral references and figures in every value cell; ${FONT}` },
-  { id: 'f06', max: 0.04, why: FONT },
-  { id: 'f07', max: 0.06, why: `one rule names roles instead of people; ${FONT}` },
+  // Measured 0.0172: within the default once the Chart kit parts replaced the placeholder.
+  { id: 'f05', max: 0.02, why: `neutral references and figures in every value cell; ${FONT}` },
+  // Measured 0.0071.
+  { id: 'f06', max: 0.02, why: FONT },
+  // Measured 0.0270.
+  { id: 'f07', max: 0.03, why: `one rule names roles instead of people; ${FONT}` },
 ]
 
 test.describe('L0 Foundations parity', () => {
@@ -33,11 +38,9 @@ test.describe('L0 Foundations parity', () => {
       await prepare(page)
       await page.goto('/_kit/l0')
       await settle(page)
+      // Every kit part the sheet embeds is built (S01-T10): no placeholder may remain.
       const spec = page.locator(`[data-kit-section="${s.id}"] [data-kit-part="spec"]`)
-      test.fixme(
-        (await spec.getByText(/ lands in S01-T\d+/).count()) > 0,
-        `${s.id} embeds kit parts that are not built yet`
-      )
+      await expect(spec.getByText(/ lands in S\d+/)).toHaveCount(0)
       const ours = await captureElement(page, `[data-kit-section="${s.id}"] [data-kit-part="spec"]`)
       const refPage = await context.newPage()
       const ref = await renderReference(refPage, 'L0 Foundations.dc.html', s.id)

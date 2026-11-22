@@ -1,13 +1,17 @@
+import { Person } from '@indus/ops-ui/card'
+import { FxTag, Money } from '@indus/ops-ui/chart'
+import { AssistantPill, StatusVocabulary as Vocabulary } from '@indus/ops-ui/status'
 import { IO_VALUES } from '@indus/ops-ui/tokens'
 import type { ReactNode } from 'react'
-import KitSection, { Pending } from '../KitSection'
+import { FX, KIT_NOW, PEOPLE } from '../fixtures'
+import KitSection from '../KitSection'
 
 // L0 Foundations, mirrored section for section (f01–f07). Text is the sheet's own design notes, with every
-// name, company and figure replaced by neutral samples (CLAUDE.md §12). Kit parts the sheet embeds (Person,
-// Dot, Money, FX, Vocabulary) render a "pending" line until their kit task lands; S01-T10 swaps them in.
+// name, company and figure replaced by neutral samples (CLAUDE.md §12). The kit parts the sheet embeds are the
+// real ones: Card Person, Status AssistantPill and Vocabulary, Chart Money and FX.
 
 function Eyebrow({ children }: { children: ReactNode }) {
-  return <span className="io-eyebrow">{children}</span>
+  return <span className="io-eyebrow leading-[normal]">{children}</span>
 }
 
 /** A colour chip: SVG presentation attributes carry the token, so no class has to be built at runtime. */
@@ -65,9 +69,11 @@ function Identity() {
     >
       <div className="grid grid-cols-[360px_minmax(0,1fr)] items-start gap-10">
         <div className="flex flex-col gap-3.5">
-          <div className="flex items-center gap-3">
-            <span className="text-io-navy text-[22px] font-semibold tracking-[-0.01em]">Indus</span>
-            <span className="text-io-navy text-[22px] font-semibold tracking-[-0.01em]">
+          <div className="flex h-14 items-center gap-3">
+            <span className="text-io-navy w-[134px] text-[22px] leading-[normal] font-semibold tracking-[-0.01em]">
+              Indus
+            </span>
+            <span className="text-io-navy text-[22px] leading-[normal] font-semibold tracking-[-0.01em]">
               Operations
             </span>
           </div>
@@ -78,9 +84,35 @@ function Identity() {
         </div>
         <div className="flex flex-col gap-4">
           <Eyebrow>People</Eyebrow>
-          <Pending task="S01-T05" what="Card Kit Person (Owner, Helper, Assistant)" />
+          <div className="flex flex-wrap gap-7">
+            <Person
+              who="owner"
+              size="lg"
+              initials={PEOPLE.owner.initials}
+              name={PEOPLE.owner.name}
+              sub={PEOPLE.owner.role}
+            />
+            <Person
+              who="helper"
+              size="lg"
+              initials={PEOPLE.helper.initials}
+              name={PEOPLE.helper.name}
+              sub={PEOPLE.helper.role}
+            />
+            <Person
+              who="assistant"
+              size="lg"
+              initials={PEOPLE.assistant.initials}
+              name={PEOPLE.assistant.name}
+              sub={PEOPLE.assistant.role}
+            />
+          </div>
           <Eyebrow>Assistant status</Eyebrow>
-          <Pending task="S01-T04" what="Status Kit Dot (running, paused, disconnected)" />
+          <div className="flex flex-wrap items-start gap-6">
+            <AssistantPill status="running" />
+            <AssistantPill status="paused" />
+            <AssistantPill status="disconnected" />
+          </div>
         </div>
       </div>
     </KitSection>
@@ -328,7 +360,7 @@ const FORMATS: [string, string, string][] = [
   ],
   ['Negative', '(1,283.00)', 'Brackets, in --io-bad'],
   ['Empty', '—', 'Em dash in --io-ink-4'],
-  ['FX', 'EUR 1 = AED 4.0000 · locked 2 Oct', 'Book currency AED; quote currency per client'],
+  ['FX', `EUR 1 = AED ${FX.EUR} · locked 2 Oct`, 'Book currency AED; quote currency per client'],
   [
     'VAT',
     'Export zero-rated · local 5% · mixed',
@@ -359,7 +391,15 @@ function Data() {
         ))}
       </div>
       <div className="flex flex-wrap items-start gap-6">
-        <Pending task="S01-T08" what="Chart Kit Money and FX" />
+        <Money ccy="USD" amount="12400.00" aed={{ rate: FX.USD }} />
+        <Money ccy="EUR" amount="8420.00" aed={{ rate: FX.EUR }} />
+        <Money ccy="AED" amount="-1283.00" />
+        <FxTag
+          state="locked"
+          pair={`EUR → AED ${FX.EUR}`}
+          lockedOn={new Date('2026-10-02T08:00:00Z')}
+          now={KIT_NOW}
+        />
       </div>
     </KitSection>
   )
@@ -376,7 +416,7 @@ function FormatRow({ k, v, n }: { k: string; v: string; n: string }) {
   )
 }
 
-function StatusVocabulary() {
+function Status() {
   return (
     <KitSection
       sheet="l0"
@@ -385,7 +425,7 @@ function StatusVocabulary() {
       title="Status vocabulary"
       text="Every state word in the product and its tone. Pass the word to Status Kit (status=) and the chip colours itself."
     >
-      <Pending task="S01-T04" what="Status Kit Vocabulary" />
+      <Vocabulary />
     </KitSection>
   )
 }
@@ -457,7 +497,7 @@ export default function Foundations() {
       <Type />
       <Shape />
       <Data />
-      <StatusVocabulary />
+      <Status />
       <Rules />
     </>
   )
