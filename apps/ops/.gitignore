@@ -7,3 +7,7 @@
 /playwright-report/
 /test-results/
 next-env.d.ts
+
+# The root .gitignore drops every `data/` folder (catalogue CLI output). src/data is the Ops
+# data layer (source), so it is re-included here.
+!/src/data/

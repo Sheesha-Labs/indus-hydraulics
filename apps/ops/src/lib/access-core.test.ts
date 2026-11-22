@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { AccessError, makeRequireOpsUser, type OpsUser } from './access-core'
+import { AccessError, can, makeRequireOpsUser, type OpsUser } from './access-core'
 
 const OWNER: OpsUser & { status: string } = {
   id: 'u1',
@@ -56,5 +56,26 @@ describe('requireOpsUser', () => {
     expect(await code(guard({ user: { id: 'u1' }, sid: 's' }, helper)(['owner', 'helper']))).toBe(
       'ok'
     )
+  })
+})
+
+describe('can', () => {
+  const helper = {
+    ...OWNER,
+    role: 'helper' as const,
+    canSeeMargins: false,
+    canEditChaserRules: false,
+  }
+
+  it('lets the Owner do everything a flag guards, whatever the flag columns say', () => {
+    expect(
+      can({ ...helper, role: 'owner', canSendSupplierMail: false }, 'canSendSupplierMail')
+    ).toBe(true)
+  })
+
+  it('lets a Helper do only what their flags allow', () => {
+    expect(can(helper, 'canSendSupplierMail')).toBe(true)
+    expect(can(helper, 'canSeeMargins')).toBe(false)
+    expect(can(helper, 'canEditChaserRules')).toBe(false)
   })
 })

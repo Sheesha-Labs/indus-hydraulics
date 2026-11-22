@@ -15,6 +15,17 @@ export type OpsUser = {
   canEditChaserRules: boolean
 }
 
+/** Helper toggles (P01 84). Read from the session's user row on the server, never from input. */
+export type HelperFlag = 'canSeeMargins' | 'canSendSupplierMail' | 'canEditChaserRules'
+
+/**
+ * May this person do what a Helper flag guards? The Owner always may; a Helper only with the
+ * flag on. `defineAction({ flags })` calls it; data mappers use it for masking.
+ */
+export function can(user: Pick<OpsUser, 'role' | HelperFlag>, flag: HelperFlag): boolean {
+  return user.role === 'owner' || user[flag] === true
+}
+
 export class AccessError extends Error {
   constructor(readonly code: 'unauthenticated' | 'forbidden') {
     super(code === 'unauthenticated' ? 'Sign in required' : 'Not allowed')
