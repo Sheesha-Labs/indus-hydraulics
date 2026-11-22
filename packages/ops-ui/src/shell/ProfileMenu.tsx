@@ -38,42 +38,46 @@ export default function ProfileMenu({
   signOutAction,
   className,
 }: ProfileMenuProps) {
-  const name = `${user.name}, ${user.roleLabel}: account menu`
+  // The visible avatar, name and role are hidden from assistive tech; this hidden text is the name, so it
+  // always contains what is on screen (no aria-label).
+  const name = <span className="sr-only">{`${user.name}, ${user.roleLabel}: account menu`}</span>
   return (
     <DropdownMenu.Root modal={false}>
       <DropdownMenu.Trigger asChild>
         {collapsed ? (
           <button
             type="button"
-            aria-label={name}
             data-part="profile-trigger"
             className={cn(
               'io-focus rounded-io-pill mt-1.5 grid cursor-pointer place-items-center',
               className
             )}
           >
-            <Person initials={user.initials} label={user.name} who="owner" />
+            <span aria-hidden="true" className="contents">
+              <Person initials={user.initials} label={user.name} who="owner" />
+            </span>
+            {name}
           </button>
         ) : (
           <button
             type="button"
-            aria-label={name}
             data-part="profile-trigger"
             className={cn(
               'io-focus border-io-line mt-1.5 flex cursor-pointer items-center justify-between gap-2.5 self-stretch border-t px-2 pt-2.5 text-left',
               className
             )}
           >
-            <Person
-              initials={user.initials}
-              name={user.name}
-              sub={user.roleLabel}
-              who="owner"
-              className="min-w-0 flex-1"
-            />
-            <span aria-hidden="true" className="text-io-ink-3 text-[11px]">
-              ▾
+            <span aria-hidden="true" className="contents">
+              <Person
+                initials={user.initials}
+                name={user.name}
+                sub={user.roleLabel}
+                who="owner"
+                className="min-w-0 flex-1"
+              />
+              <span className="text-io-ink-3 text-[11px]">▾</span>
             </span>
+            {name}
           </button>
         )}
       </DropdownMenu.Trigger>

@@ -53,7 +53,7 @@ describe('Sidebar · expanded', () => {
     render(<Sidebar {...props({ badges: {} })} />)
     const names = within(nav())
       .getAllByRole('link')
-      .map((a) => a.getAttribute('aria-label'))
+      .map((a) => a.textContent)
     expect(names).toEqual([
       'Today',
       'Review',
@@ -115,7 +115,7 @@ describe('Sidebar · expanded', () => {
 describe('Sidebar · Assistant pill', () => {
   it('shows the worst current state (C23)', () => {
     render(<Sidebar {...props({ assistant: ['running', 'paused', 'unsure'] })} />)
-    const pill = screen.getByRole('button', { name: /Assistant menu/ })
+    const pill = screen.getByRole('button', { name: 'Paused by you' })
     expect(pill).toHaveAttribute('data-status', 'paused')
     expect(pill).toHaveTextContent('Paused by you')
   })
@@ -123,12 +123,12 @@ describe('Sidebar · Assistant pill', () => {
   it('opens Pause everything for the Owner and only Autopilot → for the Helper', async () => {
     const onPause = vi.fn<() => void>()
     const { unmount } = render(<Sidebar {...props({ onPause })} />)
-    await userEvent.click(screen.getByRole('button', { name: /Assistant menu/ }))
+    await userEvent.click(screen.getByRole('button', { name: 'Assistant · running' }))
     await userEvent.click(screen.getByRole('menuitem', { name: 'Pause everything' }))
     expect(onPause).toHaveBeenCalledOnce()
     unmount()
     render(<Sidebar {...props({ user: HELPER, onPause })} />)
-    await userEvent.click(screen.getByRole('button', { name: /Assistant menu/ }))
+    await userEvent.click(screen.getByRole('button', { name: 'Assistant · running' }))
     expect(screen.queryByRole('menuitem', { name: 'Pause everything' })).toBeNull()
     expect(screen.getByRole('menuitem', { name: 'Autopilot →' })).toHaveAttribute(
       'href',
@@ -183,11 +183,11 @@ describe('Sidebar · profile menu', () => {
 })
 
 describe('Sidebar · collapsed', () => {
-  it('gives every item an aria-label and a tooltip on focus', async () => {
+  it('gives every icon-only item a name of its own and a tooltip on focus', async () => {
     render(<Sidebar {...props({ collapsed: true })} />)
     const links = within(nav()).getAllByRole('link')
     expect(links).toHaveLength(13)
-    for (const a of links) expect(a.getAttribute('aria-label')).toBeTruthy()
+    for (const a of links) expect(a).toHaveAccessibleName(/^[A-Z]/)
     const orders = screen.getByRole('link', { name: 'Orders' })
     await act(async () => {
       orders.focus()

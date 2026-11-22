@@ -28,7 +28,8 @@ const HALO: Record<AssistantStatus, string> = {
 
 /**
  * The sidebar's Assistant status pill (h 32, "Autopilot →") or, collapsed, its 12px dot with a 4px halo. It
- * is a button: it opens a menu with "Pause everything" (Owner only) and a link to Autopilot (board 98).
+ * is a menu button named by the status word: it opens "Pause everything" (Owner only) and a link to
+ * Autopilot (board 98).
  */
 export default function AssistantPillMenu({
   status,
@@ -51,11 +52,10 @@ export default function AssistantPillMenu({
       { type: 'separator' }
     )
   items.push({ type: 'item', label: 'Autopilot →', href: AUTOPILOT_HREF })
-  const name = `${pill.label}: Assistant menu`
   const trigger = collapsed ? (
     <button
       type="button"
-      aria-label={name}
+      aria-label={pill.label}
       data-part="assistant-pill"
       data-status={status}
       className={cn(
@@ -69,7 +69,6 @@ export default function AssistantPillMenu({
   ) : (
     <button
       type="button"
-      aria-label={name}
       data-part="assistant-pill"
       data-status={status}
       className={cn(
@@ -82,7 +81,11 @@ export default function AssistantPillMenu({
       <span aria-hidden="true" className={cn('rounded-io-pill size-[7px] flex-none', pill.dot)} />
       {/* The status word always shows in full; the "Autopilot →" hint gives way when it is long. */}
       <span className="flex-1 whitespace-nowrap">{pill.label}</span>
-      <span aria-hidden="true" className="min-w-0 truncate font-normal opacity-80">
+      {/* The hint is 80% ink, except on the disconnected red, where that falls under 4.5:1. */}
+      <span
+        aria-hidden="true"
+        className={cn('min-w-0 truncate font-normal', status !== 'disconnected' && 'opacity-80')}
+      >
         Autopilot →
       </span>
     </button>

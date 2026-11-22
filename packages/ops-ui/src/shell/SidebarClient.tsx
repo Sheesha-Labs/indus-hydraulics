@@ -62,6 +62,28 @@ export function navItemName(label: string, count: number | undefined): string {
   return count ? `${label}, ${count} waiting` : label
 }
 
+/**
+ * The link's name as text: the visible label and badge are hidden from assistive tech and the full name is
+ * read from a visually hidden span (no aria-label, so the name always contains the visible label).
+ */
+function ItemName({
+  label,
+  count,
+  visible,
+}: {
+  label: string
+  count: number | undefined
+  visible: boolean
+}) {
+  if (visible && !count) return <>{label}</>
+  return (
+    <>
+      {visible ? <span aria-hidden="true">{label}</span> : null}
+      <span className="sr-only">{navItemName(label, count)}</span>
+    </>
+  )
+}
+
 async function writeCookie(collapsed: boolean): Promise<void> {
   const value = collapsed ? SIDEBAR_COOKIE_COLLAPSED : SIDEBAR_COOKIE_EXPANDED
   const store = (globalThis as { cookieStore?: { set: (o: object) => Promise<void> } }).cookieStore
@@ -226,7 +248,6 @@ function ExpandedItem({ item, active, count }: ItemProps) {
   return (
     <Link
       href={item.href as Route}
-      aria-label={navItemName(item.label, count)}
       aria-current={active ? 'page' : undefined}
       data-nav={item.key}
       className={cn(
@@ -236,7 +257,7 @@ function ExpandedItem({ item, active, count }: ItemProps) {
     >
       <span className="flex items-center gap-2.5">
         <OpsIcon name={item.icon} className={active ? '' : 'text-io-ink-3'} />
-        {item.label}
+        <ItemName label={item.label} count={count} visible />
       </span>
       {count ? (
         <span
@@ -258,7 +279,6 @@ function CollapsedItem({ item, active, count, tip }: ItemProps & { tip: boolean 
     <Tooltip content={item.label} side="right">
       <Link
         href={item.href as Route}
-        aria-label={navItemName(item.label, count)}
         aria-current={active ? 'page' : undefined}
         data-nav={item.key}
         className={cn(
@@ -267,6 +287,7 @@ function CollapsedItem({ item, active, count, tip }: ItemProps & { tip: boolean 
         )}
       >
         <OpsIcon name={item.icon} size={18} />
+        <ItemName label={item.label} count={count} visible={false} />
         {count ? (
           <span
             aria-hidden="true"
@@ -281,7 +302,7 @@ function CollapsedItem({ item, active, count, tip }: ItemProps & { tip: boolean 
             data-frame="tooltip"
             className={cn(
               tooltipBubble,
-              'absolute top-1/2 left-[50px] -translate-y-1/2 leading-[normal] font-normal'
+              'z-io-tooltip absolute top-1/2 left-[50px] -translate-y-1/2 leading-[normal] font-normal'
             )}
           >
             {item.label}
