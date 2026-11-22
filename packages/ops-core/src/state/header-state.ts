@@ -35,8 +35,7 @@ export interface HeaderMeta {
 export type HeaderCta = { label: string; href: string } | { label: string; actionKey: string }
 
 export type HeaderStage =
-  | { flow: 'enquiry'; current: EnquiryTrackStage }
-  | { flow: 'order'; current: OrderTrackStage }
+  { flow: 'enquiry'; current: EnquiryTrackStage } | { flow: 'order'; current: OrderTrackStage }
 
 export interface RecordHeaderState {
   kind: RecordKind
@@ -114,10 +113,12 @@ export function orderTrackStage(stage: OrderStage): OrderTrackStage {
 function stageFor(kind: RecordKind, stage: EnquiryStage | OrderStage): HeaderStage {
   // Decided by the kind, not the value: `closed` is a value of both enums.
   if (kind === 'order') {
-    if (!Object.hasOwn(ORDER_TRACK_STAGE, stage)) throw new Error(`"${stage}" is not an order stage`)
+    if (!Object.hasOwn(ORDER_TRACK_STAGE, stage))
+      throw new Error(`"${stage}" is not an order stage`)
     return { flow: 'order', current: ORDER_TRACK_STAGE[stage as OrderStage] }
   }
-  if (!Object.hasOwn(ENQUIRY_STAGE_WORD, stage)) throw new Error(`"${stage}" is not an enquiry stage`)
+  if (!Object.hasOwn(ENQUIRY_STAGE_WORD, stage))
+    throw new Error(`"${stage}" is not an enquiry stage`)
   return { flow: 'enquiry', current: ENQUIRY_STAGE_WORD[stage as EnquiryStage] }
 }
 
@@ -152,9 +153,7 @@ export function resolveHeaderState(input: RecordHeaderInput): RecordHeaderState 
     ...(chip ? { chip } : {}),
     cta: input.cta ?? { label: 'Next step', href: recordBaseHref(input.kind, input.ref) },
     ...(input.did ? { did: input.did } : {}),
-    ...(needCount > 0
-      ? { need: { count: needCount, href: reviewHrefForRecord(input.ref) } }
-      : {}),
+    ...(needCount > 0 ? { need: { count: needCount, href: reviewHrefForRecord(input.ref) } } : {}),
     ...(input.threadHref ? { threadHref: input.threadHref } : {}),
   }
 }

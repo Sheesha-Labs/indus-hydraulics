@@ -23,7 +23,8 @@ export function activeTabKey(
   const path = segments.filter((s) => !s.startsWith('(')).join('/')
   let best: RecordTab | undefined
   for (const t of tabs) {
-    const hit = t.segment === '' ? path === '' : path === t.segment || path.startsWith(`${t.segment}/`)
+    const hit =
+      t.segment === '' ? path === '' : path === t.segment || path.startsWith(`${t.segment}/`)
     if (hit && (!best || t.segment.length > best.segment.length)) best = t
   }
   return best?.key

@@ -75,8 +75,10 @@ describe('resolveHeaderState', () => {
   })
 
   it('refuses a stage from the other enum', () => {
-    expect(() => resolveHeaderState(enquiry({ stage: 'freight' }))).toThrow()
-    expect(() => resolveHeaderState(enquiry({ kind: 'order', stage: 'pricing' }))).toThrow()
+    expect(() => resolveHeaderState(enquiry({ stage: 'freight' }))).toThrow('not an enquiry stage')
+    expect(() => resolveHeaderState(enquiry({ kind: 'order', stage: 'pricing' }))).toThrow(
+      'not an order stage'
+    )
   })
 
   it('fills placeholders: crumb ref, Next step CTA, no need without a count', () => {

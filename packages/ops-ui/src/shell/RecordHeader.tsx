@@ -144,7 +144,11 @@ export default function RecordHeader({
         </div>
       </div>
       <StageTrack {...stage} />
-      <RecordTabs tabs={tabs} aria-label={tabsLabel} {...(activeTab ? { active: activeTab } : {})} />
+      <RecordTabs
+        tabs={tabs}
+        aria-label={tabsLabel}
+        {...(activeTab ? { active: activeTab } : {})}
+      />
     </header>
   )
 }

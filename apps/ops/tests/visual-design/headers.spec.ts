@@ -15,8 +15,10 @@ import { boardPngPath, captureElement, closeReference, hasReference } from './re
  * Board 75: each card's inside (its 1px border excluded), the header and the Assistant strip under it.
  * T2A / T2B: the main column right of the 236 sidebar and its rule, inside the board's frame line, from
  * the top to the strip's rule. The T2 boards set the header without the console's line height (207 high
- * against board 75's 210, the same parts); the specimen frame recreates that. They compare at 0.04: their
- * crops are text-heavier than board 75's and every word in them is a neutral stand-in.
+ * against board 75's 210, the same parts); the specimen frame recreates that. They are allowed 0.03, not
+ * 0.02: the template boards also place the serif title a row higher and the meta row a row lower than
+ * board 75 does inside the same 207, which no setting of the shared part reproduces without breaking
+ * board 75 (the acceptance board). The rows are listed in the S02-T02 report.
  */
 interface Crop {
   name: string
@@ -72,8 +74,8 @@ const CROPS: Crop[] = [
     rect: { x: 237, y: 1, w: 1202, h: 247 },
     ours: '[data-template-header="T2A"]',
     inset: 0,
-    max: 0.04,
-    frac: 0,
+    max: 0.03,
+    frac: 0.6,
   },
   {
     name: 'T2B-header',
@@ -81,8 +83,8 @@ const CROPS: Crop[] = [
     rect: { x: 237, y: 1, w: 1202, h: 247 },
     ours: '[data-template-header="T2B"]',
     inset: 0,
-    max: 0.04,
-    frac: 0,
+    max: 0.03,
+    frac: 0.6,
   },
 ]
 
@@ -95,13 +97,10 @@ function cropPng(file: string, r: Crop['rect']): Buffer {
 
 /** Screenshot `w` × `h` from the first whole pixel inside the element's `inset` border. */
 async function shot(el: Locator, inset: number, w: number, h: number): Promise<Buffer> {
-  const box = await el.evaluate(
-    (node, i) => {
-      const r = node.getBoundingClientRect()
-      return { x: r.x + scrollX + i, y: r.y + scrollY + i }
-    },
-    inset
-  )
+  const box = await el.evaluate((node, i) => {
+    const r = node.getBoundingClientRect()
+    return { x: r.x + scrollX + i, y: r.y + scrollY + i }
+  }, inset)
   return el.page().screenshot({
     animations: 'disabled',
     caret: 'hide',

@@ -60,10 +60,7 @@ export default function PageHeader({
   return (
     <header
       data-part="page-header"
-      className={cn(
-        'bg-io-card border-io-line flex w-full flex-none flex-col border-b',
-        className
-      )}
+      className={cn('bg-io-card border-io-line flex w-full flex-none flex-col border-b', className)}
     >
       <div className="h-io-header flex items-center justify-between gap-4 px-7">
         <div className="flex min-w-0 flex-col leading-[1.2]">
@@ -86,9 +83,7 @@ export default function PageHeader({
       {filters ? (
         <div className="border-io-line flex flex-wrap items-center gap-1.5 border-t px-7 py-3">
           {filters}
-          {summary ? (
-            <span className="text-io-ink-3 ml-auto text-[12px]">{summary}</span>
-          ) : null}
+          {summary ? <span className="text-io-ink-3 ml-auto text-[12px]">{summary}</span> : null}
         </div>
       ) : null}
     </header>

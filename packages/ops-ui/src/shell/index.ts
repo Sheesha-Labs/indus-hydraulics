@@ -28,11 +28,7 @@ export {
 } from './RecordHeader'
 export { default as RecordTabs, type RecordTabsProps } from './RecordTabs'
 export { activeTabKey, adjacentTabHref, type RecordTab } from './record-tabs'
-export {
-  default as PageHeader,
-  type PageHeaderProps,
-  type PageHeaderStep,
-} from './PageHeader'
+export { default as PageHeader, type PageHeaderProps, type PageHeaderStep } from './PageHeader'
 export { default as TodayHeader, type TodayHeaderProps } from './TodayHeader'
 export { default as NotificationBell, type NotificationBellProps } from './NotificationBell'
 export { default as AssistantStrip, type AssistantStripProps } from './AssistantStrip'

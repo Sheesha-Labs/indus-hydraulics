@@ -45,3 +45,4 @@ never live here; they go through `defineAction` (`src/lib/define-action.ts`).
 |---|---|
 | `pagination.ts` | Keyset cursor helpers (no queries) |
 | `health.ts` | `/api/health`: ops_app connections and the Inngest heartbeat |
+| `cockpit.ts` | `getRecordHeaderState(kind, ref)`: the record header and strip seed (S02 stub: neutral fixtures outside production, null in production; S09 queries) |

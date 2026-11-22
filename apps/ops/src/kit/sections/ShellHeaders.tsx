@@ -167,11 +167,10 @@ function Board75Card({ id, children }: { id: string; children: ReactNode }) {
 /**
  * T2A and T2B's header region: the 1202px main column of the 1440 board (right of the 236 sidebar and its
  * rule, inside the board frame), Lines and Freight tabs. The T2 boards mount RecordHeader.dc without the
- * console's line height and tracking (their header is 207 high where board 75's is 210); the frame
- * recreates that so the crop compares the parts, not the boards' type setting.
+ * console's line height (their header is 207 high where board 75's is 210); the frame recreates that so the
+ * crop compares the parts, not the boards' type setting.
  */
-const T2_FRAME =
-  'w-[1202px] [&_[data-part=record-header]]:leading-[normal] [&_[data-part=record-header]]:tracking-normal'
+const T2_FRAME = 'w-[1202px] [&_[data-part=record-header]]:leading-[normal]'
 
 export function TemplateHeaders() {
   return (
@@ -374,7 +373,12 @@ export function PageHeaderVariants() {
 
 export function SheetTodayHeader() {
   return (
-    <TodayHeader className="w-fit" greeting={H.greeting} assistant="running" notificationCount={3} />
+    <TodayHeader
+      className="w-fit"
+      greeting={H.greeting}
+      assistant="running"
+      notificationCount={3}
+    />
   )
 }
 
