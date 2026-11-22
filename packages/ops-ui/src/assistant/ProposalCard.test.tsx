@@ -4,6 +4,7 @@
 import '../overlay/test-env'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { act, cleanup, fireEvent, render, screen, userEvent, within } from '../lib/test-dom'
+import { UNEXPECTED_ERROR } from '../overlay/result'
 import ToastProvider from '../overlay/ToastProvider'
 import ProposalCard from './ProposalCard'
 import { canApproveFromKeyboard } from './ProposalActions'
@@ -97,12 +98,17 @@ describe('ProposalCard', () => {
   })
 
   it('a thrown approve also reverts with a safe message', async () => {
-    const approve = vi.fn<ProposalActionsInput['approve']>(async (): Promise<ApproveResult> => {
-      throw new Error('P2002 unique constraint')
-    })
+    // Deterministic like the case above: the rejection lands inside act(), not racing the click.
+    let reject!: (e: unknown) => void
+    const pending = new Promise<ApproveResult>((_, r) => (reject = r))
+    const approve = vi.fn<ProposalActionsInput['approve']>(() => pending)
     const el = renderCard(card({ actions: actions({ approve }) }))
     await userEvent.click(within(el).getByRole('button', { name: 'Approve' }))
+    expect(el).toHaveAttribute('data-state', 'approved')
+    await act(async () => reject(new Error('P2002 unique constraint')))
     expect(el).toHaveAttribute('data-state', 'open')
+    const errors = document.querySelector('[data-part="toast-errors"]') as HTMLElement
+    expect(within(errors).getByText(UNEXPECTED_ERROR)).toBeInTheDocument()
     expect(document.body.textContent).not.toContain('P2002')
   })
 
