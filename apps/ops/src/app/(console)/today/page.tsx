@@ -11,8 +11,9 @@ export default async function TodayPage() {
     if (error instanceof AccessError) redirect('/sign-in?next=%2Ftoday')
     throw error
   }
+  // A div, not <main>: the console layout's AppShell owns <main id="content">.
   return (
-    <main className="px-io-page-x py-8">
+    <div className="px-io-page-x py-8">
       <div className="max-w-io-well rounded-io-card border-io-line bg-io-card border p-6">
         <h1 className="io-display text-io-greeting text-io-ink">Today</h1>
         <p className="text-io-body text-io-ink-3 mt-3">
@@ -24,6 +25,6 @@ export default async function TodayPage() {
           </button>
         </form>
       </div>
-    </main>
+    </div>
   )
 }

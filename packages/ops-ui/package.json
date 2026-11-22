@@ -9,6 +9,7 @@
     ".": "./src/index.ts",
     "./styles/*": "./src/styles/*",
     "./lib/cn": "./src/lib/cn.ts",
+    "./lib/use-hotkeys": "./src/lib/use-hotkeys.ts",
     "./types": "./src/types.ts",
     "./tokens": "./src/tokens.generated.ts",
     "./tokens.pdf": "./src/tokens.pdf.ts",
