@@ -17,6 +17,7 @@
     "@indus/ops-core": "workspace:^",
     "@indus/ops-db": "workspace:^",
     "@indus/ops-ui": "workspace:^",
+    "@radix-ui/react-dialog": "^1.1.14",
     "@sentry/nextjs": "^10.51.0",
     "inngest": "^3.54.2",
     "lucide-react": "^1.14.0",

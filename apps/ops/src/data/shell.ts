@@ -1,8 +1,10 @@
 import 'server-only'
 import { opsDb } from '@indus/ops-db'
-import type { SystemBanner } from '@indus/ops-ui/status'
+import { BannerAction, type SystemBanner } from '@indus/ops-ui/status'
 import type { AssistantStatus } from '@indus/ops-ui/types'
-import { cache } from 'react'
+import { cookies } from 'next/headers'
+import { cache, createElement } from 'react'
+import { env } from '../lib/env'
 
 /** The sidebar's identity line prints the mailbox's local part; anything else prints "—". */
 export type ShellMailbox = 'sales@' | 'purchase@' | null
@@ -32,11 +34,47 @@ export function mailboxLabel(address: string | null | undefined): ShellMailbox {
 }
 
 /**
+ * Outside production, the cookie `ops_fixture_banners=1` turns on three neutral fixture banners (mailbox
+ * disconnected, sync delayed, an info note) so the one-banner rule (C23) can be seen and tested: only the
+ * mailbox banner shows, with "+2 more". Never read in production.
+ */
+export const FIXTURE_BANNERS_COOKIE = 'ops_fixture_banners'
+
+export function fixtureBanners(): SystemBanner[] {
+  return [
+    {
+      kind: 'info',
+      props: { tone: 'info', children: 'Zoho Books last synced 08:00. Next sync in 4 minutes.' },
+    },
+    {
+      kind: 'sync-delayed',
+      props: {
+        tone: 'warn',
+        title: 'purchase@ sync delayed.',
+        children: 'New mail may take a few minutes longer to appear.',
+      },
+    },
+    {
+      kind: 'mailbox-disconnected',
+      props: {
+        tone: 'bad',
+        title: 'sales@ disconnected.',
+        children: 'Gmail stopped syncing at 09:12. Nothing is sent until it reconnects.',
+        actions: createElement(BannerAction, { href: '/settings/mailboxes', children: 'Reconnect' }),
+      },
+    },
+  ]
+}
+
+/**
  * System banners under the page header (C23, S08): mailbox disconnected, Assistant paused, sync delayed,
- * Zoho disconnected. S02: none. S04/S05 read the mailbox and pause state here.
+ * Zoho disconnected. The shell shows the most severe one with "+n more". S02: none (fixtures outside
+ * production behind FIXTURE_BANNERS_COOKIE). S04/S05 read the mailbox and pause state here.
  */
 export async function getShellBanners(): Promise<SystemBanner[]> {
-  return []
+  if (env().APP_ENV === 'production') return []
+  const jar = await cookies()
+  return jar.get(FIXTURE_BANNERS_COOKIE)?.value === '1' ? fixtureBanners() : []
 }
 
 /**

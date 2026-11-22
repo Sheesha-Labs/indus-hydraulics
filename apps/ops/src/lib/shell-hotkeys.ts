@@ -7,8 +7,14 @@ import { NAV_DESTINATIONS, type NavKey } from '@indus/ops-ui/shell/nav'
  * list-scoped keys (J/K, X, ⌘↵, E/R/L) belong to the screens that own them.
  */
 
-/** The shell surfaces opened from anywhere (05 §6.3). S02-T06 renders them. */
-export type ShellPanel = 'command' | 'help' | 'notifications'
+/**
+ * The shell surfaces opened from anywhere (05 §6.3), rendered by S02-T06. The command bar and notifications
+ * are modal; help and the Assistant panel share the one right-hand dock.
+ */
+export type ShellPanel = 'command' | 'help' | 'notifications' | 'assistant'
+
+/** The docked panels: opening one closes the other (one dock on the right edge). */
+export const DOCKED_PANELS: readonly ShellPanel[] = ['help', 'assistant']
 
 /** G-chords: the letter after G for each destination. */
 export const GO_TO: ReadonlyArray<readonly [string, NavKey]> = [

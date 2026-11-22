@@ -1,7 +1,7 @@
 'use client'
 
 import * as Dialog from '@radix-ui/react-dialog'
-import { useId, type KeyboardEvent, type ReactNode } from 'react'
+import { useId, type KeyboardEvent, type ReactNode, type RefObject } from 'react'
 import type { TabItem } from '../controls/LinkTabs'
 import PaneTabs from '../controls/PaneTabs'
 import { cn } from '../lib/cn'
@@ -31,6 +31,8 @@ export interface DrawerProps {
   /** 10.5px uppercase above the title: "Why?", "Record", "Setting". */
   eyebrow?: string
   title: string
+  /** Head controls between the title and the close button ("Mark all read", a status chip). */
+  actions?: ReactNode
   /** Optional PaneTabs under the head; `children` is the current tab's panel. */
   tabs?: DrawerTabs
   /** The scrolling body. DrawerSection gives the eyebrow + text blocks. */
@@ -48,6 +50,11 @@ export interface DrawerProps {
   modal?: boolean
   /** The control that opens a modal drawer (Dialog.Trigger asChild); focus returns here on close. */
   trigger?: ReactNode
+  /**
+   * Where focus goes when a modal drawer without a `trigger` closes (one opened by a route, a shortcut or
+   * another surface). Without either, Radix sends focus nowhere. Docked panels restore focus themselves.
+   */
+  returnFocusRef?: RefObject<HTMLElement | null>
   className?: string
 }
 
@@ -62,12 +69,14 @@ export default function Drawer({
   onOpenChange,
   eyebrow,
   title,
+  actions,
   tabs,
   children,
   footer,
   width = 460,
   modal = true,
   trigger,
+  returnFocusRef,
   className,
 }: DrawerProps) {
   const titleId = useId()
@@ -96,14 +105,13 @@ export default function Drawer({
           {eyebrow ? <span className="io-eyebrow">{eyebrow}</span> : null}
           {titleEl}
         </div>
+        {actions ? <div className="flex flex-none items-center gap-2">{actions}</div> : null}
         {closeEl}
       </div>
       {body}
       {footer ? (
-        <div className={drawerFoot}>
-          {footer}
-          <span className="flex-1" />
-        </div>
+        // Left-aligned by default; a footer that wants a right-hand button puts its own flex-1 spacer in.
+        <div className={drawerFoot}>{footer}</div>
       ) : null}
     </>
   )
@@ -154,6 +162,17 @@ export default function Drawer({
           aria-describedby={undefined}
           data-modal="true"
           className={cn(panelClass, 'fixed inset-y-0 right-0', LAYER.drawer)}
+          {...(trigger || !returnFocusRef
+            ? {}
+            : {
+                onCloseAutoFocus: (e: Event) => {
+                  const el = returnFocusRef.current
+                  if (el?.isConnected) {
+                    e.preventDefault()
+                    el.focus()
+                  }
+                },
+              })}
         >
           {sections(
             <Dialog.Title className={cn('m-0', drawerTitle)}>{title}</Dialog.Title>,

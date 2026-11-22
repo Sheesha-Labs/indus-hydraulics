@@ -22,8 +22,16 @@ export const LAYER = {
   tooltip: 'z-io-tooltip',
 } as const
 
-/** `ko-scr`: the scrim. Fades in; reduced motion keeps the 100ms fade (base.css). */
-export const SCRIM = 'bg-io-scrim data-[state=open]:animate-[io-fade_120ms_ease-out]'
+/**
+ * `ko-scr`: the scrim. Fades in; reduced motion keeps the 100ms fade (base.css). Inside the console shell it
+ * dims the page, not the sidebar, as every L3 board draws it (S01–S07): it starts at the sidebar's edge,
+ * whichever width the sidebar has.
+ */
+export const SCRIM = [
+  'bg-io-scrim data-[state=open]:animate-[io-fade_120ms_ease-out]',
+  'in-[body:has([data-part=app-shell]_[data-part=sidebar])]:left-[var(--io-sidebar)]',
+  'in-[body:has([data-part=app-shell]_[data-part=sidebar][data-collapsed])]:left-[var(--io-sidebar-collapsed)]',
+].join(' ')
 
 /** `ko-md`: 14px radius, e4, white. Width 480–560, default 520. */
 export const modalPanel = cva(

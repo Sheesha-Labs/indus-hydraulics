@@ -7,14 +7,19 @@ import {
   type ShellLive,
   type SidebarUser,
 } from '@indus/ops-ui/shell'
-import { BannerSlot, type SystemBanner } from '@indus/ops-ui/status'
+import type { SystemBanner } from '@indus/ops-ui/status'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import { useRouter, useSelectedLayoutSegments } from 'next/navigation'
 import { useMemo, type ReactNode } from 'react'
 import { templateSpecimenNav } from '../../kit/template-nav'
 import { useLiveKeys, type LiveCounts, type LiveKey } from '../../lib/live-keys'
 import { recordKeyFromSegments } from '../../lib/live-poller'
+import AssistantPanel from './AssistantPanel'
+import CommandBar from './CommandBar'
+import HelpPanel from './HelpPanel'
+import NotificationsPanel from './NotificationsPanel'
 import Providers, { useShell } from './Providers'
+import SystemBanners from './SystemBanners'
 
 export interface AppShellProps {
   user: SidebarUser
@@ -47,8 +52,9 @@ function badgesFrom(counts: LiveCounts): NonNullable<ShellLive['badges']> {
 }
 
 /**
- * The console frame (05 §6.1): the sidebar, `<main id="content">` with the banner slot and the page, and the
- * `@drawer` slot, inside the client providers. It is not an authorization boundary: the layout reads the
+ * The console frame (05 §6.1): the sidebar, `<main id="content">` with the system banners and the page,
+ * the right-hand dock (Assistant, Help), the `@drawer` slot (Why?) and the overlays opened from anywhere
+ * (command bar, notifications), inside the client providers. It is not an authorization boundary: the layout reads the
  * session only to draw the shell, and every page and action checks access itself.
  */
 export default function AppShell(props: AppShellProps) {
@@ -76,6 +82,7 @@ function ShellFrame({
   // A template specimen (/_kit/templates/<t>, S02-T04) marks the row its board draws.
   const active = activeKeyFromSegment(segments[0], segments[1]) ?? templateSpecimenNav(segments)
   const recordKey = recordKeyFromSegments(segments)
+  const recordRef = recordKey ? recordKey.slice('record:'.length) : null
   const keys = useMemo(
     () => [...badgeKeys(user.role), ...(recordKey ? [recordKey] : [])],
     [user.role, recordKey]
@@ -108,11 +115,18 @@ function ShellFrame({
           />
         </div>
         <main id="content" tabIndex={-1} className="min-w-0 flex-1 outline-none">
-          <BannerSlot banners={banners} placement="strip" />
+          <SystemBanners banners={banners} />
           {children}
         </main>
+        {/* The right-hand dock (S03 Assistant, S06 Help): it pushes the page aside, it does not cover it. */}
+        <div data-part="shell-dock" className="sticky top-0 h-screen flex-none">
+          <AssistantPanel recordRef={recordRef} assistant={assistant} />
+          <HelpPanel />
+        </div>
         {drawer}
       </div>
+      <CommandBar role={user.role} />
+      <NotificationsPanel />
     </ShellLiveProvider>
   )
 }

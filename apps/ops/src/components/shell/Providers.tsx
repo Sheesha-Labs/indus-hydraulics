@@ -5,7 +5,13 @@ import { ToastProvider } from '@indus/ops-ui/overlay'
 import type { Route } from 'next'
 import { useRouter } from 'next/navigation'
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react'
-import { createUndoStack, shellHotkeys, type ShellPanel } from '../../lib/shell-hotkeys'
+import {
+  createUndoStack,
+  DOCKED_PANELS,
+  shellHotkeys,
+  type ShellPanel,
+} from '../../lib/shell-hotkeys'
+import { ConfirmProvider } from './confirm'
 
 export type { ShellPanel } from '../../lib/shell-hotkeys'
 
@@ -37,14 +43,27 @@ function recordTab(direction: 'prev' | 'next'): string | undefined {
   return (direction === 'prev' ? tabs?.dataset.prevHref : tabs?.dataset.nextHref) || undefined
 }
 
-const CLOSED: Record<ShellPanel, boolean> = { command: false, help: false, notifications: false }
+const CLOSED: Record<ShellPanel, boolean> = {
+  command: false,
+  help: false,
+  notifications: false,
+  assistant: false,
+}
+
+/** Open `p`; a docked panel closes the other docked panel (one dock on the right edge). */
+function opened(s: Record<ShellPanel, boolean>, p: ShellPanel): Record<ShellPanel, boolean> {
+  const next = { ...s, [p]: true }
+  if (DOCKED_PANELS.includes(p)) for (const d of DOCKED_PANELS) if (d !== p) next[d] = false
+  return next
+}
 
 /**
  * The console's client providers, mounted once by AppShell (05 §6.1):
  *
  *   HotkeysProvider        one registry, one window keydown listener
  *   └ ToastProvider        one toast region, placed clear of the sidebar (236, or 64 collapsed)
- *     └ ShellContext       panels (command bar, help, notifications) and the ⌘Z undo stack
+ *     └ ShellContext       panels (command bar, notifications, help, Assistant) and the ⌘Z undo stack
+ *       └ ConfirmProvider  useConfirm() for destructive actions (S07)
  *       └ global shortcuts ⌘K, Esc, ?, ⌘Z, G T/R/M/E/Q/O/S/C/P, N, [ and ]
  */
 export default function Providers({ children }: { children: ReactNode }) {
@@ -63,9 +82,12 @@ function ShellState({ children }: { children: ReactNode }) {
   const router = useRouter()
   const registry = useHotkeyRegistry()
 
-  const open = useCallback((p: ShellPanel) => setPanels((s) => ({ ...s, [p]: true })), [])
+  const open = useCallback((p: ShellPanel) => setPanels((s) => opened(s, p)), [])
   const close = useCallback((p: ShellPanel) => setPanels((s) => ({ ...s, [p]: false })), [])
-  const toggle = useCallback((p: ShellPanel) => setPanels((s) => ({ ...s, [p]: !s[p] })), [])
+  const toggle = useCallback(
+    (p: ShellPanel) => setPanels((s) => (s[p] ? { ...s, [p]: false } : opened(s, p))),
+    []
+  )
 
   useHotkeys(
     shellHotkeys({
@@ -82,5 +104,9 @@ function ShellState({ children }: { children: ReactNode }) {
     () => ({ panels, open, close, toggle, registerUndo: undos.push }),
     [panels, open, close, toggle, undos]
   )
-  return <ShellContext value={value}>{children}</ShellContext>
+  return (
+    <ShellContext value={value}>
+      <ConfirmProvider>{children}</ConfirmProvider>
+    </ShellContext>
+  )
 }
