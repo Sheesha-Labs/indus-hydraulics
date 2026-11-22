@@ -810,3 +810,28 @@ export const ASSISTANT = {
   },
   highlight: { text: 'Line 3 offered as PN-10-228 instead.', match: 'PN-10-228' },
 } as const
+
+/**
+ * Shell kit (S02-T01): the two signed-in people and their sidebar badge counts. The Owner is "Owner Sample"
+ * (not PEOPLE.owner's "Owner Example"): "Signed in as … · sales@" must stay on one line at 11.5px in the
+ * 195px column, as the boards draw it; "Owner Example" is 7px too wide and would wrap.
+ */
+export const SHELL = {
+  owner: {
+    name: 'Owner Sample',
+    initials: 'OS',
+    role: 'owner',
+    roleLabel: 'Owner',
+    mailbox: 'sales@',
+  },
+  helper: {
+    name: PEOPLE.helper.name,
+    initials: PEOPLE.helper.initials,
+    role: 'helper',
+    roleLabel: 'Helper · sourcing',
+    mailbox: 'purchase@',
+  },
+  ownerBadges: { today: 6, review: 14, mail: 3 },
+  helperBadges: { today: 3, mail: 2 },
+  websiteAdminHref: 'https://example.test/admin',
+} as const

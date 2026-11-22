@@ -3,12 +3,13 @@ import { expect, test, type Page } from '@playwright/test'
 
 /**
  * axe on the kit specimens (CLAUDE.md §13.5), WCAG 2.1 A and AA rules: critical and serious findings fail.
- * Every kit is built (S01-T10), so /_kit and all twelve /_kit/<kit> pages are scanned. Scope is the spec
- * cards (the kits' own parts) and, on /_kit, the section nav; the section heads are the Shell kit's
- * SectionHead, checked when S02 builds it. Hydration finishes first, so client parts are scanned as users
+ * Every kit is built (S01-T10; the Shell sidebar in S02-T01), so /_kit and every /_kit/<kit> page is
+ * scanned. Scope is the spec cards (the kits' own parts) and, on /_kit, the section nav; the section heads
+ * are the Shell kit's SectionHead, checked when S02 builds it. Hydration finishes first, so client parts are scanned as users
  * meet them.
  */
 const KITS = [
+  'shell',
   'controls',
   'status',
   'table',
