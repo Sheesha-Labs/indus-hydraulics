@@ -78,4 +78,10 @@ describe('can', () => {
     expect(can(helper, 'canSeeMargins')).toBe(false)
     expect(can(helper, 'canEditChaserRules')).toBe(false)
   })
+
+  it('keeps change_settings for the Owner, even for a Helper with every flag on', () => {
+    expect(can(OWNER, 'change_settings')).toBe(true)
+    const allFlags = { ...OWNER, role: 'helper' as const }
+    expect(can(allFlags, 'change_settings')).toBe(false)
+  })
 })

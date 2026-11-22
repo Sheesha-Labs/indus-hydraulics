@@ -4,7 +4,15 @@ import { loadOpsUserRow } from '../server/auth/session-store'
 import { makeRequireOpsUser, type OpsRole } from './access-core'
 import { auth } from './auth'
 
-export { AccessError, can, type HelperFlag, type OpsRole, type OpsUser } from './access-core'
+export {
+  AccessError,
+  can,
+  type Capability,
+  type HelperFlag,
+  type OpsRole,
+  type OpsUser,
+  type OwnerCapability,
+} from './access-core'
 
 /** One user query per request, however many components ask. */
 const loadUser = cache(loadOpsUserRow)

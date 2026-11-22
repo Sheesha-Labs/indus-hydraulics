@@ -1932,6 +1932,15 @@ enum ImportCandidateStatus {
   @@schema("ops")
 }
 
+/// ADR-28: seeded defaults wait for the Owner's sign-off (S03-T04).
+enum SignoffStatus {
+  awaiting
+  signed_off
+  not_required
+
+  @@schema("ops")
+}
+
 enum ChecklistKind {
   setup
   cutover
@@ -2021,12 +2030,17 @@ model Trade {
 /// Typed key/value settings validated by Zod in code (pricing.*, vat.*,
 /// fx.*, intake.*, assistant.mode, brief.*, retention.*, company.profile …).
 model SettingsEntry {
-  key         String   @id
-  value       Json
-  version     Int      @default(0)
-  ownerOnly   Boolean  @default(false)
-  updatedById String?  @db.Uuid
-  updatedAt   DateTime @updatedAt @db.Timestamptz(3)
+  key           String        @id
+  value         Json
+  version       Int           @default(0)
+  ownerOnly     Boolean       @default(false)
+  updatedById   String?       @db.Uuid
+  updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   @@map("settings_entry")
   @@schema("ops")
@@ -2174,6 +2188,11 @@ model AutopilotActionDef {
   defaultHandsOff AutopilotLevel
   minutesSaved    Decimal?        @db.Decimal(9, 2)
   originBoard     String?
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus   SignoffStatus   @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById   String?         @db.Uuid
+  signedOffAt     DateTime?       @db.Timestamptz(3)
 
   setting AutopilotSetting?
   actions AssistantAction[]
@@ -2197,35 +2216,45 @@ model AutopilotSetting {
 }
 
 model Guardrail {
-  key         String        @id
-  kind        GuardrailKind
-  label       String
-  enabled     Boolean       @default(true)
+  key           String        @id
+  kind          GuardrailKind
+  label         String
+  enabled       Boolean       @default(true)
   /// Fixed rules cannot be switched off from the UI.
-  fixed       Boolean       @default(false)
-  params      Json          @default("{}")
-  version     Int           @default(0)
-  updatedById String?       @db.Uuid
-  updatedAt   DateTime      @updatedAt @db.Timestamptz(3)
+  fixed         Boolean       @default(false)
+  params        Json          @default("{}")
+  version       Int           @default(0)
+  updatedById   String?       @db.Uuid
+  updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   @@map("guardrail")
   @@schema("ops")
 }
 
 model EmailTemplate {
-  id              String       @id @default(uuid(7)) @db.Uuid
-  key             String       @unique
+  id              String        @id @default(uuid(7)) @db.Uuid
+  key             String        @unique
   label           String
   mailboxRole     MailboxRole?
   subjectTemplate String
   bodyTemplate    String
   toneNotes       String?
   variables       String[]
-  learnFromSent   Boolean      @default(false)
-  version         Int          @default(0)
-  archivedAt      DateTime?    @db.Timestamptz(3)
-  updatedById     String?      @db.Uuid
-  updatedAt       DateTime     @updatedAt @db.Timestamptz(3)
+  learnFromSent   Boolean       @default(false)
+  version         Int           @default(0)
+  archivedAt      DateTime?     @db.Timestamptz(3)
+  updatedById     String?       @db.Uuid
+  updatedAt       DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus   SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById   String?       @db.Uuid
+  signedOffAt     DateTime?     @db.Timestamptz(3)
 
   @@map("email_template")
   @@schema("ops")
@@ -2233,31 +2262,41 @@ model EmailTemplate {
 
 /// Settings › Sending (87): From, CC, signature and thread per mail kind.
 model SendingRule {
-  kind              OutboundKind @id
+  kind              OutboundKind  @id
   fromRole          MailboxRole
   ccRole            MailboxRole?
   /// e.g. "accounts_contact" for invoices.
   ccSpecial         String?
-  signatureUserId   String?      @db.Uuid
+  signatureUserId   String?       @db.Uuid
   threadMode        ThreadMode
-  holdMinutes       Int          @default(5)
-  respectSendWindow Boolean      @default(true)
-  updatedAt         DateTime     @updatedAt @db.Timestamptz(3)
+  holdMinutes       Int           @default(5)
+  respectSendWindow Boolean       @default(true)
+  updatedAt         DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus     SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById     String?       @db.Uuid
+  signedOffAt       DateTime?     @db.Timestamptz(3)
 
   @@map("sending_rule")
   @@schema("ops")
 }
 
 model DocumentTemplate {
-  id         String       @id @default(uuid(7)) @db.Uuid
-  kind       DocumentKind
-  name       String
-  version    Int          @default(1)
+  id            String        @id @default(uuid(7)) @db.Uuid
+  kind          DocumentKind
+  name          String
+  version       Int           @default(1)
   /// Layout key, e.g. "zoho-estimate-v1".
-  layout     String
-  definition Json
-  isActive   Boolean      @default(true)
-  createdAt  DateTime     @default(now()) @db.Timestamptz(3)
+  layout        String
+  definition    Json
+  isActive      Boolean       @default(true)
+  createdAt     DateTime      @default(now()) @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   versions DocumentVersion[]
 
@@ -2267,20 +2306,25 @@ model DocumentTemplate {
 }
 
 model TermsClause {
-  id           String    @id @default(uuid(7)) @db.Uuid
+  id            String        @id @default(uuid(7)) @db.Uuid
   /// payment | delivery | lead_time | validity | make_origin | vat | documents |
   /// inspection | warranty | packing | disclaimer | cancellation
-  category     String
-  code         String    @unique
-  title        String
-  body         String
+  category      String
+  code          String        @unique
+  title         String
+  body          String
   /// Variable defaults, e.g. { advance_pct: 30, balance_days: 60 }.
-  variables    Json      @default("{}")
-  locked       Boolean   @default(false)
-  approvalRule String?
-  version      Int       @default(0)
-  archivedAt   DateTime? @db.Timestamptz(3)
-  updatedAt    DateTime  @updatedAt @db.Timestamptz(3)
+  variables     Json          @default("{}")
+  locked        Boolean       @default(false)
+  approvalRule  String?
+  version       Int           @default(0)
+  archivedAt    DateTime?     @db.Timestamptz(3)
+  updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   presets        TermsPresetClause[]
   quotationTerms QuotationTerm[]
@@ -2291,11 +2335,16 @@ model TermsClause {
 }
 
 model TermsPreset {
-  id                    String    @id @default(uuid(7)) @db.Uuid
-  name                  String    @unique
+  id                    String        @id @default(uuid(7)) @db.Uuid
+  name                  String        @unique
   description           String?
-  isDefaultForNewClient Boolean   @default(false)
-  archivedAt            DateTime? @db.Timestamptz(3)
+  isDefaultForNewClient Boolean       @default(false)
+  archivedAt            DateTime?     @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus         SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById         String?       @db.Uuid
+  signedOffAt           DateTime?     @db.Timestamptz(3)
 
   clauses    TermsPresetClause[]
   clients    ClientProfile[]

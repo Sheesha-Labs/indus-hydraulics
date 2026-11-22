@@ -19,11 +19,24 @@ export type OpsUser = {
 export type HelperFlag = 'canSeeMargins' | 'canSendSupplierMail' | 'canEditChaserRules'
 
 /**
- * May this person do what a Helper flag guards? The Owner always may; a Helper only with the
- * flag on. `defineAction({ flags })` calls it; data mappers use it for masking.
+ * Capabilities only the Owner holds, whatever the Helper's toggles (board 84). S03-T04 adds the
+ * one the settings service needs; S03-T03 brings the full board-84 table.
  */
-export function can(user: Pick<OpsUser, 'role' | HelperFlag>, flag: HelperFlag): boolean {
-  return user.role === 'owner' || user[flag] === true
+export type OwnerCapability = 'change_settings'
+
+export type Capability = HelperFlag | OwnerCapability
+
+const OWNER_CAPABILITIES: ReadonlySet<Capability> = new Set<OwnerCapability>(['change_settings'])
+
+/**
+ * May this person do what a capability guards? The Owner always may; a Helper only with the
+ * flag on, and never an Owner-only capability. `defineAction({ flags })` calls it; data mappers
+ * use it for masking.
+ */
+export function can(user: Pick<OpsUser, 'role' | HelperFlag>, capability: Capability): boolean {
+  if (user.role === 'owner') return true
+  if (OWNER_CAPABILITIES.has(capability)) return false
+  return user[capability as HelperFlag] === true
 }
 
 export class AccessError extends Error {
