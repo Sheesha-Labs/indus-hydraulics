@@ -12,14 +12,18 @@ export default async function TodayPage() {
     throw error
   }
   return (
-    <main>
-      <h1>Today</h1>
-      <p>
-        Signed in as {user.name} · {user.role === 'owner' ? 'Owner' : 'Helper'}
-      </p>
-      <form action={signOutAction}>
-        <button type="submit">Sign out</button>
-      </form>
+    <main className="px-io-page-x py-8">
+      <div className="max-w-io-well rounded-io-card border-io-line bg-io-card border p-6">
+        <h1 className="io-display text-io-greeting text-io-ink">Today</h1>
+        <p className="text-io-body text-io-ink-3 mt-3">
+          Signed in as {user.name} · {user.role === 'owner' ? 'Owner' : 'Helper'}
+        </p>
+        <form action={signOutAction} className="mt-4">
+          <button type="submit" className="io-focus text-io-meta text-io-accent">
+            Sign out
+          </button>
+        </form>
+      </div>
     </main>
   )
 }

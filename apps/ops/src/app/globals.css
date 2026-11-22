@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import '@indus/ops-ui/styles/tokens.css';
+@import '@indus/ops-ui/styles/theme.css';
+@import '@indus/ops-ui/styles/base.css';
+
+/* Class sources: the kits and this app. */
+@source '../../../../packages/ops-ui/src';
+@source '../';

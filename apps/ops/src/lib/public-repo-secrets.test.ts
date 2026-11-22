@@ -45,8 +45,9 @@ describe('no secrets in public Ops code', () => {
       if (rel === self) continue
       const text = readFileSync(file, 'utf8')
       for (const m of text.matchAll(IBAN)) {
-        if (m[0] !== FAKE_IBAN.replace(/ /g, '') && m[0] !== FAKE_IBAN)
-          found.push(`${rel}: IBAN-shaped`)
+        // The pattern stops at the last full group of four, so the neutral fixture IBAN matches as a
+        // prefix of itself; anything that is not all zeros after AE00 is real-looking.
+        if (!/^AE00[ 0]+$/.test(m[0])) found.push(`${rel}: IBAN-shaped`)
       }
       for (const m of text.matchAll(TRN)) {
         if (m[0] !== '000000000000000') found.push(`${rel}: TRN-shaped`)

@@ -19,3 +19,10 @@ bun.lock
 # Written by `next dev` / `next build` and git-ignored; bun fmt reads only this
 # file and the root .gitignore, not apps/*/.gitignore.
 **/next-env.d.ts
+# The handoff tokens.json (kept byte for byte) and the files generated from it by packages/ops-ui/scripts/gen-tokens.ts; tokens.drift.test.ts compares them
+# byte for byte with the generator's output, so the formatter must not touch them.
+packages/ops-ui/tokens/tokens.json
+packages/ops-ui/src/styles/tokens.css
+packages/ops-ui/src/styles/theme.css
+packages/ops-ui/src/tokens.pdf.ts
+packages/ops-ui/src/tokens.generated.ts

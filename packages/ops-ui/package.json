@@ -8,25 +8,66 @@
   "exports": {
     ".": "./src/index.ts",
     "./styles/*": "./src/styles/*",
-    "./templates": "./src/templates/index.ts",
+    "./lib/cn": "./src/lib/cn.ts",
+    "./types": "./src/types.ts",
+    "./tokens": "./src/tokens.generated.ts",
+    "./tokens.pdf": "./src/tokens.pdf.ts",
+    "./controls": "./src/controls/index.ts",
     "./status": "./src/status/index.ts",
+    "./table": "./src/table/index.ts",
+    "./card": "./src/card/index.ts",
+    "./form": "./src/form/index.ts",
+    "./states": "./src/states/index.ts",
+    "./overlay": "./src/overlay/index.ts",
+    "./timeline": "./src/timeline/index.ts",
+    "./chart": "./src/chart/index.ts",
+    "./mail": "./src/mail/index.ts",
+    "./assistant": "./src/assistant/index.ts",
+    "./document": "./src/document/index.ts",
+    "./fixtures/documents": "./src/__fixtures__/documents.ts",
+    "./fixtures/mail": "./src/__fixtures__/mail.ts",
+    "./templates": "./src/templates/index.ts",
     "./format": "./src/format/index.ts"
   },
   "scripts": {
     "typecheck": "bun check --no-script",
+    "tokens": "bun scripts/gen-tokens.ts",
     "test": "bun test --parallel --isolate=modules --randomize"
   },
   "peerDependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "next": "^16.0.0"
   },
   "dependencies": {
-    "@indus/ops-core": "workspace:^"
+    "@indus/ops-core": "workspace:^",
+    "@radix-ui/react-alert-dialog": "1.1.15",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-dropdown-menu": "^2.1.15",
+    "@radix-ui/react-popover": "1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "@radix-ui/react-tooltip": "^1.2.7",
+    "@tiptap/pm": "^3",
+    "@tiptap/react": "^3",
+    "@tiptap/starter-kit": "^3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.14.0",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^8.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.13",
+    "@types/culori": "^4.0.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "culori": "^4.0.2",
+    "jsdom": "^25",
+    "next": "16.2.4",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   }

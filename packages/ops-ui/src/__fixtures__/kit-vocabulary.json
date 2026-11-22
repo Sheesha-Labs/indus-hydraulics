@@ -1,0 +1,111 @@
+{
+  "enquiry": {
+    "Enquiry": "n",
+    "Sourcing": "acc",
+    "Quotes in": "acc",
+    "Quoted": "acc",
+    "Negotiation": "warn",
+    "Won": "ok",
+    "Lost": "n",
+    "Regretted": "n",
+    "On hold": "warn"
+  },
+  "order": {
+    "Confirmed": "acc",
+    "Awaiting advance": "warn",
+    "Advance received": "ok",
+    "Production": "acc",
+    "Inspection": "acc",
+    "Freight": "acc",
+    "Shipped": "acc",
+    "Delivered": "ok",
+    "Invoiced": "acc",
+    "Paid": "ok"
+  },
+  "line": {
+    "To source": "warn",
+    "RFQ sent": "acc",
+    "Quoted": "ok",
+    "Partial": "warn",
+    "Alternative offered": "warn",
+    "Regret": "bad",
+    "No source": "bad",
+    "To follow": "warn",
+    "Held": "n"
+  },
+  "doc": {
+    "Draft": "n",
+    "Waiting approval": "warn",
+    "Approved": "ok",
+    "Sent": "acc",
+    "Viewed": "acc",
+    "Accepted": "ok",
+    "Changes asked": "warn",
+    "Superseded": "n~",
+    "Cancelled": "bad",
+    "Reissued": "acc"
+  },
+  "client": {
+    "Evaluating": "n",
+    "Received": "n",
+    "No reply": "warn",
+    "Asked for changes": "warn",
+    "Won": "ok",
+    "Lost": "n"
+  },
+  "supplier": {
+    "Contact only": "n",
+    "Trial": "warn",
+    "Approved": "ok",
+    "Principal": "navy",
+    "Blocked": "bad"
+  },
+  "rfq": {
+    "Drafted": "n",
+    "Scheduled": "acc",
+    "Sent": "acc",
+    "Opened": "acc",
+    "Chased": "warn",
+    "Quoted": "ok",
+    "Regretted": "n",
+    "No reply": "bad",
+    "Withdrawn": "n~"
+  },
+  "money": {
+    "Not due": "n",
+    "Due": "acc",
+    "Part-paid": "warn",
+    "Overdue": "bad",
+    "Paid": "ok",
+    "Credit hold": "bad",
+    "Written off": "n"
+  },
+  "autopilot": {
+    "Off": "n",
+    "Suggest": "out",
+    "Draft and ask": "acc",
+    "Do and tell": "acc",
+    "Do quietly": "navy",
+    "Locked": "n"
+  },
+  "assistant": {
+    "Running": "ok",
+    "Paused": "warn",
+    "Unsure": "warn",
+    "Failed": "bad",
+    "Disconnected": "bad"
+  },
+  "check": {
+    "Passed": "ok",
+    "Warning": "warn",
+    "Failed": "bad",
+    "Not checked": "n"
+  },
+  "tender": {
+    "Reading": "acc",
+    "Clarifying": "warn",
+    "Bid pack": "acc",
+    "Submitted": "ok",
+    "Missed": "bad"
+  }
+}
