@@ -87,6 +87,10 @@
   --color-io-caret: var(--io-caret);
   --color-io-ok-solid-strong: var(--io-ok-solid-strong);
   --color-io-ink-3-sel: var(--io-ink-3-sel);
+  --color-io-google-blue: var(--io-google-blue);
+  --color-io-google-green: var(--io-google-green);
+  --color-io-google-yellow: var(--io-google-yellow);
+  --color-io-google-red: var(--io-google-red);
 
   /* families: Geist everywhere; font-mono deliberately resolves to Geist too */
   --font-sans: var(--io-sans);

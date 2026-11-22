@@ -69,7 +69,21 @@ export default async function proxy(request: NextRequest) {
     const url = new URL('/sign-in', request.url)
     const next = safeNextPath(pathname + search)
     if (next && next !== '/') url.searchParams.set('next', next)
-    return done(NextResponse.redirect(url, 307))
+    // A session cookie that no longer verifies is a session that ended (8 hours, board 77 "Session
+    // ended"). Say so once: the stale cookie is cleared with the redirect.
+    const stale = request.cookies.has(SESSION_COOKIE)
+    if (stale) url.searchParams.set('reason', 'session_ended')
+    const res = NextResponse.redirect(url, 307)
+    if (stale) {
+      res.cookies.set(SESSION_COOKIE, '', {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/',
+        secure: SECURE,
+        maxAge: 0,
+      })
+    }
+    return done(res)
   }
 
   // Next.js reads the nonce from the request's CSP header and applies it to the

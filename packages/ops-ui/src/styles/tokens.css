@@ -166,4 +166,8 @@
   --io-z-raised: 1;
   /* ext · color */
   --io-ink-3-sel: oklch(0.53 0.013 255);
+  --io-google-blue: #4285f4;
+  --io-google-green: #34a853;
+  --io-google-yellow: #fbbc05;
+  --io-google-red: #ea4335;
 }

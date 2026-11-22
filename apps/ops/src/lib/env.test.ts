@@ -1,3 +1,5 @@
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { EnvError, parseEnv } from './env'
 
@@ -61,6 +63,11 @@ describe('parseEnv', () => {
   it('refuses test-only switches and a localhost base URL in production', () => {
     expect(thrown(() => parseEnv({ ...PRODUCTION, OPS_E2E_AUTH: '1' }))).toContain('OPS_E2E_AUTH')
     expect(thrown(() => parseEnv({ ...PRODUCTION, OPS_KIT: '1' }))).toContain('OPS_KIT')
+    expect(
+      thrown(() => parseEnv({ ...PRODUCTION, OPS_E2E_MAIL_SINK: join(tmpdir(), 'sink') }))
+    ).toContain('OPS_E2E_MAIL_SINK')
+    // System mail is optional in production: without a key nothing is sent and rows say failed.
+    expect(parseEnv(PRODUCTION).RESEND_OPS_API_KEY).toBeUndefined()
     expect(
       thrown(() => parseEnv({ ...PRODUCTION, NEXT_PUBLIC_OPS_BASE_URL: 'http://localhost:3100' }))
     ).toContain('localhost')

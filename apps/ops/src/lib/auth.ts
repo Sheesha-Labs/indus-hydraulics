@@ -3,10 +3,13 @@ import { headers } from 'next/headers'
 import { opsCookieOptions, requireOpsSecret, secureCookiesEnabled } from './auth-cookies'
 import { buildProviders } from './auth-providers'
 import { checkGoogleProfile, type GoogleProfile } from './google-profile'
+import { SecondFactorError, type PasswordCredentials } from './password-provider'
 import { clientIp } from './request-origin'
+import { secondFactorStep } from '../server/access/sign-in'
 import {
   findActiveUserByEmail,
   findUserByEmail,
+  ipHash,
   recordFailedSignIn,
   recordSignIn,
 } from '../server/auth/session-store'
@@ -29,6 +32,21 @@ function refuse(reason: string): string {
   return `/sign-in?error=${reason}`
 }
 
+/**
+ * `ops-password`'s authorize: the sealed pending value from the password step plus a TOTP code or a
+ * backup code (server/access/sign-in.ts). Never a password alone. Failures (and the lock they may
+ * trigger) are recorded there; the thrown code becomes the two-factor page's state.
+ */
+async function authorizePassword(credentials: PasswordCredentials) {
+  const meta = await requestMeta()
+  const outcome = await secondFactorStep({
+    ...credentials,
+    meta: { ipHash: ipHash(meta.ip), userAgent: meta.userAgent },
+  })
+  if (!outcome.ok) throw new SecondFactorError(outcome.reason, outcome.minutes)
+  return outcome.user
+}
+
 export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
   basePath: '/api/auth',
   secret: requireOpsSecret(),
@@ -44,7 +62,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
       GOOGLE_OPS_CLIENT_SECRET: process.env.GOOGLE_OPS_CLIENT_SECRET,
       GOOGLE_WORKSPACE_DOMAIN: process.env.GOOGLE_WORKSPACE_DOMAIN,
     },
-    findActiveUserByEmail
+    findActiveUserByEmail,
+    authorizePassword
   ),
   callbacks: {
     async signIn({ account, profile, user }) {
@@ -59,11 +78,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
         }
       }
       const row = email ? await findUserByEmail(email) : null
-      // Invited (not yet accepted), suspended and removed users read the same
-      // answer as unknown addresses: nothing else is revealed.
+      // Invited (not yet accepted) users read the same answer as unknown addresses. A suspended or
+      // removed account is told so only after Google proved the person owns that address.
       if (!row || row.status !== 'active') {
         await recordFailedSignIn({ email, method, ...(await requestMeta()) })
-        return refuse('not_invited')
+        const ended = row && (row.status === 'suspended' || row.status === 'removed')
+        return refuse(ended && method === 'google' ? 'deactivated' : 'not_invited')
       }
       return true
     },

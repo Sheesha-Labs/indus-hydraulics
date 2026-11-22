@@ -40,6 +40,13 @@ const schema = z.object({
   OPS_READ_ONLY: z.enum(['0', '1']).optional(),
   OPS_E2E_AUTH: z.enum(['0', '1']).optional(),
   OPS_KIT: z.enum(['0', '1']).optional(),
+  // S03-T01: system mail (Resend, C26). Optional everywhere: without a key every system email is
+  // recorded as failed and nothing is sent, so production boots before the key exists.
+  RESEND_OPS_API_KEY: z.string().min(1).optional(),
+  // Comma list of internal addresses that may receive system mail outside production (ADR-07).
+  OPS_TEST_RECIPIENTS: z.string().min(1).optional(),
+  // Test only, refused in production: a directory where each system email is also written as JSON.
+  OPS_E2E_MAIL_SINK: z.string().min(1).optional(),
 })
 
 export type OpsEnv = z.infer<typeof schema>
@@ -88,6 +95,7 @@ export function parseEnv(source: Record<string, string | undefined>): OpsEnv {
     if (missing.length) problems.push(`missing in production: ${missing.join(', ')}`)
     if (env.OPS_E2E_AUTH === '1') problems.push('OPS_E2E_AUTH must not be set in production')
     if (env.OPS_KIT === '1') problems.push('OPS_KIT must not be set in production')
+    if (env.OPS_E2E_MAIL_SINK) problems.push('OPS_E2E_MAIL_SINK must not be set in production')
     if (env.NEXT_PUBLIC_OPS_BASE_URL?.includes('localhost')) {
       problems.push('NEXT_PUBLIC_OPS_BASE_URL points at localhost in production')
     }

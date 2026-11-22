@@ -599,5 +599,29 @@
     "kind": "color",
     "signoff": "awaiting",
     "source": "Table: muted text in a selected row. ink-3 on accent-wash is 4.39:1 (fails WCAG AA, axe serious); this is 4.77:1"
+  },
+  "io-google-blue": {
+    "value": "#4285f4",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Sign-in (board 77): the four colours of the Google mark on Continue with Google, as the board draws it"
+  },
+  "io-google-green": {
+    "value": "#34a853",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Sign-in (board 77): the four colours of the Google mark on Continue with Google, as the board draws it"
+  },
+  "io-google-yellow": {
+    "value": "#fbbc05",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Sign-in (board 77): the four colours of the Google mark on Continue with Google, as the board draws it"
+  },
+  "io-google-red": {
+    "value": "#ea4335",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "Sign-in (board 77): the four colours of the Google mark on Continue with Google, as the board draws it"
   }
 }

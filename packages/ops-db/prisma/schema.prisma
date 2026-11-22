@@ -227,6 +227,10 @@ enum OutboundKind {
   evening_summary
   month_pack
   other
+  /// S03-T01 (system email, channel 'system').
+  auth_password_reset
+  auth_invite
+  auth_security_notice
 
   @@schema("ops")
 }
@@ -248,6 +252,8 @@ enum OutboundStatus {
   failed
   cancelled
   undone
+  /// S03-T01: recorded but not sent (outside production, recipient not on OPS_TEST_RECIPIENTS).
+  suppressed_preview
 
   @@schema("ops")
 }
@@ -2388,6 +2394,11 @@ model User {
   totpEnabledAt       DateTime?  @db.Timestamptz(3)
   failedAttempts      Int        @default(0)
   lockedUntil         DateTime?  @db.Timestamptz(3)
+  /// S03-T01: Argon2id hashes of the last five passwords (reuse check).
+  passwordHistory     String[]   @default([])
+  passwordSetAt       DateTime?  @db.Timestamptz(3)
+  /// S03-T01: last accepted TOTP time step; a code at or below it is a replay.
+  totpLastStep        BigInt?
   lastSignInAt        DateTime?  @db.Timestamptz(3)
   /// Helper toggles (P01 84): only meaningful when role = helper.
   canSeeMargins       Boolean    @default(false)
@@ -2451,6 +2462,12 @@ model UserSession {
   lastSeenAt   DateTime     @default(now()) @db.Timestamptz(3)
   expires      DateTime     @db.Timestamptz(3)
   revokedAt    DateTime?    @db.Timestamptz(3)
+  /// S03-T02: keyed device hash (Devices list).
+  deviceHash   String?
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  revokedById  String?      @db.Uuid
+  /// 'password_reset' | 'signed_out_by_owner' | … (open vocabulary).
+  revokeReason String?
 
   @@index([userId, revokedAt])
   @@map("user_session")
@@ -5829,5 +5846,18 @@ view CatalogueCrossRef {
   variantPartNumber String?
 
   @@map("catalogue_cross_ref_v")
+  @@schema("ops")
+}
+
+/// Fixed-window rate-limit counters (S03-T01, architecture §4.11). Written only through
+/// ops.hit_rate_limit(key, windowSeconds, max); keys hold hashes, never a raw address or email.
+model RateLimitCounter {
+  key         String
+  windowStart DateTime @db.Timestamptz(3)
+  count       Int      @default(0)
+
+  @@id([key, windowStart])
+  @@index([windowStart])
+  @@map("rate_limit_counter")
   @@schema("ops")
 }

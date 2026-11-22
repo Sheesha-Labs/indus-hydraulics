@@ -79,6 +79,10 @@ export const IO_COLORS = [
   'io-caret',
   'io-ok-solid-strong',
   'io-ink-3-sel',
+  'io-google-blue',
+  'io-google-green',
+  'io-google-yellow',
+  'io-google-red',
 ] as const
 
 export const IO_TEXT_ROLES = [
@@ -337,6 +341,10 @@ export const IO_VARS = [
   '--io-ok-solid-strong',
   '--io-z-raised',
   '--io-ink-3-sel',
+  '--io-google-blue',
+  '--io-google-green',
+  '--io-google-yellow',
+  '--io-google-red',
 ] as const
 
 /** Raw values, for the specimen's labels only. Style with classes, never with these. */
@@ -491,4 +499,8 @@ export const IO_VALUES: Readonly<Record<string, string>> = {
   '--io-ok-solid-strong': 'oklch(0.54 0.14 150)',
   '--io-z-raised': '1',
   '--io-ink-3-sel': 'oklch(0.53 0.013 255)',
+  '--io-google-blue': '#4285f4',
+  '--io-google-green': '#34a853',
+  '--io-google-yellow': '#fbbc05',
+  '--io-google-red': '#ea4335',
 }

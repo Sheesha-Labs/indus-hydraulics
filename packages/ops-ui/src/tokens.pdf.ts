@@ -79,6 +79,10 @@ export const IO_PDF_COLORS = {
   'io-caret': '#8B93A3',
   'io-ok-solid-strong': '#17843F',
   'io-ink-3-sel': '#676C73',
+  'io-google-blue': '#4285F4',
+  'io-google-green': '#34A853',
+  'io-google-yellow': '#FBBC05',
+  'io-google-red': '#EA4335',
 } as const
 
 export const IO_PDF_RADII = {

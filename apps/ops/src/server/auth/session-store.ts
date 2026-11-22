@@ -32,7 +32,7 @@ export async function findActiveUserByEmail(email: string) {
  * The client address is never stored. A daily keyed hash lets the Devices list
  * and lockout logic tell repeat addresses apart within a day, and no further.
  */
-function ipHash(ip: string): string {
+export function ipHash(ip: string): string {
   const day = new Date().toISOString().slice(0, 10)
   const salt = createHmac('sha256', process.env.OPS_AUTH_SECRET ?? '')
     .update(day)
