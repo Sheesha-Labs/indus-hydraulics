@@ -3,7 +3,6 @@
 import {
   useCallback,
   useEffect,
-  useId,
   useOptimistic,
   useRef,
   useState,
@@ -13,6 +12,7 @@ import {
 import Button from '../controls/Button'
 import ButtonLink from '../controls/ButtonLink'
 import Choices from '../controls/Choices'
+import Field from '../form/Field'
 import { useUndoCountdown } from '../lib/use-undo-countdown'
 import { cn } from '../lib/cn'
 import Menu, { type MenuEntry } from '../overlay/Menu'
@@ -415,20 +415,24 @@ function RejectPopover({
   onReject: (reason: string, chip?: string) => void
 }) {
   const [chip, setChip] = useState<string | undefined>(undefined)
-  const [reason, setReason] = useState('')
   const [error, setError] = useState<string | null>(null)
-  const fieldId = useId()
-  const errorId = useId()
 
-  const submit = (e: FormEvent) => {
+  // The reason is the Form kit's uncontrolled Field (no ActionForm: the verb is a callback, not a form
+  // action), read from FormData on submit. The popover unmounts its content on close, which resets it.
+  const submit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    const form = e.currentTarget
+    const value = new FormData(form).get('reason')
+    const reason = typeof value === 'string' ? value : ''
     if (!reason.trim()) {
       setError('Add a one-line reason. It teaches the Assistant what to change.')
+      // The error is the field's description, so focusing the field reads it.
+      const input = form.elements.namedItem('reason')
+      if (input instanceof HTMLInputElement) input.focus()
       return
     }
     onReject(reason, chip)
     onOpenChange(false)
-    setReason('')
     setChip(undefined)
     setError(null)
   }
@@ -445,7 +449,14 @@ function RejectPopover({
         </Button>
       }
     >
-      <form noValidate onSubmit={submit} className="flex flex-col gap-2.5">
+      <form
+        noValidate
+        onSubmit={submit}
+        onChange={() => {
+          if (error) setError(null)
+        }}
+        className="flex flex-col gap-2.5"
+      >
         <Choices
           aria-label="Reason"
           size="sm"
@@ -453,31 +464,14 @@ function RejectPopover({
           value={chip ?? ''}
           onValueChange={setChip}
         />
-        {/* TODO(S01-T10): use <Field> from @indus/ops-ui/form (S01-T06) for the label, input and error. */}
-        <label htmlFor={fieldId} className="text-io-ink text-[12px] font-medium">
-          Why not? (one line)
-        </label>
-        <input
-          id={fieldId}
-          name="reason"
+        <Field
           type="text"
+          name="reason"
+          label="Why not? (one line)"
           required
-          maxLength={200}
-          value={reason}
-          onChange={(e) => {
-            setReason(e.target.value)
-            if (error) setError(null)
-          }}
-          aria-invalid={error ? true : undefined}
-          aria-describedby={error ? errorId : undefined}
-          className="h-io-field border-io-stroke rounded-io-ctl bg-io-card text-io-ink io-focus-field aria-invalid:border-io-bad placeholder:text-io-ink-3 border px-2.5 text-[13px]"
           placeholder="e.g. Use the datasheet answer instead"
+          {...(error ? { error } : {})}
         />
-        {error ? (
-          <p id={errorId} role="alert" className="text-io-bad m-0 text-[11.5px]">
-            {error}
-          </p>
-        ) : null}
         <div className="flex justify-end">
           <Button type="submit" variant="danger" size="sm">
             Reject

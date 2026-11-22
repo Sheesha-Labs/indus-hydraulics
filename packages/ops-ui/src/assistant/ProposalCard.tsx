@@ -166,7 +166,7 @@ export default function ProposalCard(card: ProposalCardProps) {
           <span>
             ·{' '}
             <time dateTime={createdAt.toISOString()} suppressHydrationWarning>
-              {formatAge(now - createdAt.getTime())}
+              {formatAge(createdAt, new Date(now))}
             </time>
           </span>
         </span>

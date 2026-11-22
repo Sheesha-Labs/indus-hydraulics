@@ -164,7 +164,11 @@ describe('ProposalCard', () => {
     const dialog = screen.getByRole('dialog', { name: 'Reject this proposal' })
     await userEvent.click(within(dialog).getByRole('button', { name: 'Reject' }))
     expect(reject).not.toHaveBeenCalled()
-    expect(within(dialog).getByRole('alert')).toHaveTextContent('one-line reason')
+    // The Form kit Field: the error is the field's description, and the field takes focus to read it.
+    const reason = within(dialog).getByRole('textbox', { name: /Why not\?/ })
+    expect(reason).toHaveAccessibleDescription(/one-line reason/)
+    expect(reason).toHaveAttribute('aria-invalid', 'true')
+    expect(reason).toHaveFocus()
     await userEvent.type(within(dialog).getByRole('textbox'), '   ')
     await userEvent.click(within(dialog).getByRole('button', { name: 'Reject' }))
     expect(reject).not.toHaveBeenCalled()

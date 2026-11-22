@@ -1,10 +1,8 @@
 // Chart tones → io- classes for SVG fill and stroke (05 §3.9). Static strings so Tailwind can read them.
-// TODO(S01-T10): move ChartTone and Ccy into packages/ops-ui/src/types.ts (05 §3.0) when it exists.
+// ChartTone and Ccy live in ../types (05 §3.0); re-exported here for the chart kit's own imports.
+import type { ChartTone } from '../types'
 
-/** acc, navy, ok/warn/bad (solid), n (neutral stroke grey), l (accent-line). */
-export type ChartTone = 'acc' | 'navy' | 'ok' | 'warn' | 'bad' | 'n' | 'l'
-
-export type Ccy = 'AED' | 'USD' | 'EUR' | 'GBP' | 'CNY' | 'INR' | 'JPY'
+export type { Ccy, ChartTone } from '../types'
 
 export const TONE_FILL: Record<ChartTone, string> = {
   acc: 'fill-io-accent',

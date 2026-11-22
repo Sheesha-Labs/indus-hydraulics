@@ -1,7 +1,7 @@
 import { mul, parseDecimal, round, toDecimalString, type DecimalString } from '@indus/ops-core'
 import { formatMoney } from '../format'
 import { cn } from '../lib/cn'
-import type { Ccy } from './tones'
+import type { Ccy } from '../types'
 
 /**
  * Amount sizes are a closed set of classes (no inline style). 20 is in the set because the L1 sheet

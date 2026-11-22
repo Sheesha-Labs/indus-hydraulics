@@ -1,4 +1,5 @@
 import type { HouseDocument } from '@indus/ops-core'
+import { Button } from '@indus/ops-ui/controls'
 import { cn } from '@indus/ops-ui/lib/cn'
 import { DocumentPage, DocumentViewer, type DocScale } from '@indus/ops-ui/document'
 import {
@@ -79,14 +80,10 @@ function Captioned({ caption, children }: { caption: string; children: ReactNode
 
 /** Download PDF: the accessible equivalent of the scaled page. */
 function DownloadPdf() {
-  // TODO(S01-T10): use <Button variant="secondary" size="xs"> from @indus/ops-ui/controls
   return (
-    <button
-      type="button"
-      className="io-focus rounded-io-tag border-io-stroke bg-io-card text-io-ink h-6 border px-2 text-[11px] font-medium"
-    >
+    <Button variant="secondary" size="xs">
       Download PDF
-    </button>
+    </Button>
   )
 }
 

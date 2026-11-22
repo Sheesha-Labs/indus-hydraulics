@@ -1,7 +1,8 @@
 import { useId } from 'react'
 import { cn } from '../lib/cn'
 import ChartFigure, { type ChartFrame } from './ChartFigure'
-import { pct, svgId, TONE_FILL, type ChartTone } from './tones'
+import { pct, svgId, TONE_FILL } from './tones'
+import type { ChartTone } from '../types'
 
 export interface BarListDatum {
   key: string

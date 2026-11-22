@@ -1,7 +1,8 @@
 import { cn } from '../lib/cn'
 import ChartFigure, { type ChartFrame } from './ChartFigure'
 import { LegendSwatch } from './StackedBar'
-import { TONE_STROKE, type ChartTone } from './tones'
+import { TONE_STROKE } from './tones'
+import type { ChartTone } from '../types'
 
 export interface TrendSeries {
   key: string

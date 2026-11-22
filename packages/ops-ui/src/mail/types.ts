@@ -1,5 +1,6 @@
 // Mail kit types (05-map-frontend §3.10). MailRole and MailType were added by S01-T04 because the tone maps in
 // status.ts key on them; the part props joined in S01-T09a.
+import type { Result } from '@indus/ops-core'
 import type { ReactNode } from 'react'
 import type { FileType, LinkSpec } from '../types'
 
@@ -33,10 +34,8 @@ export interface Recipient {
   address: string
 }
 
-/** Server-action result shape (apps/ops CLAUDE.md §6.2). */
-export type Result<T> =
-  | { success: true; data: T }
-  | { success: false; error: string; fieldErrors?: Record<string, string[]> }
+/** Server-action result shape (apps/ops CLAUDE.md §6.2): the shared one from @indus/ops-core. */
+export type { Result } from '@indus/ops-core'
 
 export interface ThreadRowProps {
   href: string

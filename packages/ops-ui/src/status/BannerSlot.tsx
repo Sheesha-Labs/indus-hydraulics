@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useId, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { cn } from '../lib/cn'
+import Popover from '../overlay/Popover'
 import Banner, { type BannerProps } from './Banner'
 
 /** System banners under the page header, most severe first (C23). */
@@ -43,12 +44,12 @@ export function orderBanners(banners: readonly SystemBanner[]): SystemBanner[] {
 const announced = new Set<SystemBannerKind>()
 
 /**
- * One banner, never a stack (C23): renders the most severe and a "+n more" button that discloses the rest.
- * TODO(S01-T07): swap the disclosure for the Overlay kit's Popover.
+ * One banner, never a stack (C23): renders the most severe and a "+n more" button that opens the rest in
+ * the Overlay kit's Popover (controlled, so the slot owns its open state). Radix moves focus in, closes on
+ * Escape or an outside click and returns focus to the button.
  */
 export default function BannerSlot({ banners, className }: BannerSlotProps) {
   const [open, setOpen] = useState(false)
-  const listId = useId()
   const [top, ...rest] = orderBanners(banners)
   // Kinds shown before this slot mounted (another page's header): those no longer alert.
   const [seenBefore] = useState(() => new Set(announced))
@@ -62,15 +63,29 @@ export default function BannerSlot({ banners, className }: BannerSlotProps) {
   const announce = !seenBefore.has(top.kind)
   const more =
     rest.length > 0 ? (
-      <button
-        type="button"
-        aria-expanded={open}
-        aria-controls={listId}
-        onClick={() => setOpen((o) => !o)}
-        className="io-focus rounded-io-tag cursor-pointer font-medium whitespace-nowrap underline underline-offset-2"
+      <Popover
+        open={open}
+        onOpenChange={setOpen}
+        title={`${rest.length} more ${rest.length === 1 ? 'notice' : 'notices'}`}
+        width={360}
+        align="end"
+        trigger={
+          <button
+            type="button"
+            className="io-focus rounded-io-tag cursor-pointer font-medium whitespace-nowrap underline underline-offset-2"
+          >
+            +{rest.length} more
+          </button>
+        }
       >
-        +{rest.length} more
-      </button>
+        <ul aria-label="More system notices" className="flex flex-col gap-2">
+          {rest.map((b, i) => (
+            <li key={`${b.kind}-${i}`}>
+              <Banner {...b.props} announce={false} />
+            </li>
+          ))}
+        </ul>
+      </Popover>
     ) : null
 
   return (
@@ -87,15 +102,6 @@ export default function BannerSlot({ banners, className }: BannerSlotProps) {
           ) : undefined
         }
       />
-      {rest.length > 0 && open ? (
-        <ul id={listId} aria-label="More system notices" className="flex flex-col gap-2">
-          {rest.map((b, i) => (
-            <li key={`${b.kind}-${i}`}>
-              <Banner {...b.props} announce={false} />
-            </li>
-          ))}
-        </ul>
-      ) : null}
     </div>
   )
 }

@@ -1,12 +1,11 @@
 // Assistant kit types (05-map-frontend §3.11). One ProposalCard renders every Assistant proposal (ADR-09);
 // these props replace the kit's string props (why "text~evidence", checks "ok~text~right", options …).
+import type { Result } from '@indus/ops-core'
 import type { ReactNode } from 'react'
-import type { ActionResult } from '../overlay/result'
 import type { Confidence, FileType, LinkSpec } from '../types'
 
-// TODO(S01-T10): import Result from @indus/ops-core (S01-T06 adds packages/ops-core/src/result.ts).
-// ActionResult is structural, so a defineAction Result<T> is assignable as it is.
-export type Result<T> = ActionResult<T>
+// The verbs return the shared Result<T> every defineAction returns (CLAUDE.md §6.2).
+export type { Result } from '@indus/ops-core'
 
 /** Opens /why/[evidenceId]; the @drawer slot intercepts it from S02. */
 export interface EvidenceLink {

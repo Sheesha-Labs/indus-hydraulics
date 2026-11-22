@@ -17,24 +17,31 @@ import WhyList from './WhyList'
 afterEach(cleanup)
 
 describe('formatAge', () => {
+  const now = new Date('2026-11-20T10:00:00Z')
+  const ago = (ms: number) => new Date(now.getTime() - ms)
   it.each([
     [-5_000, 'now'],
     [30_000, 'now'],
     [60_000, '1 min'],
     [12 * 60_000 + 59_000, '12 min'],
     [60 * 60_000, '1 h'],
-    [130 * 60_000, '2 h 10 min'],
+    [130 * 60_000, '2 h'],
     [3 * 24 * 60 * 60_000 + 5, '3 d'],
-    [Number.NaN, 'now'],
+    [9 * 24 * 60 * 60_000, '11 Nov'],
   ])('%d ms → %s', (ms, text) => {
-    expect(formatAge(ms)).toBe(text)
+    expect(formatAge(ago(ms), now)).toBe(text)
+  })
+
+  it('an invalid date reads "now"', () => {
+    expect(formatAge(new Date(Number.NaN), now)).toBe('now')
   })
 
   it('labels Later presets and a picked time in Dubai time', () => {
-    expect(formatLaterUntil('in-1h')).toBe('in 1 hour')
-    expect(formatLaterUntil('tomorrow-0900')).toBe('tomorrow at 09:00')
-    expect(formatLaterUntil('monday-0900')).toBe('Monday at 09:00')
-    expect(formatLaterUntil(new Date('2026-11-20T10:30:00Z'))).toBe('20 Nov, 14:30')
+    expect(formatLaterUntil('in-1h', now)).toBe('in 1 hour')
+    expect(formatLaterUntil('tomorrow-0900', now)).toBe('tomorrow at 09:00')
+    expect(formatLaterUntil('monday-0900', now)).toBe('Monday at 09:00')
+    expect(formatLaterUntil(new Date('2026-11-20T10:30:00Z'), now)).toBe('20 Nov, 14:30')
+    expect(formatLaterUntil(new Date('2027-01-04T05:00:00Z'), now)).toBe('4 Jan 2027, 09:00')
   })
 })
 
