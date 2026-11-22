@@ -12,7 +12,7 @@ export default function KitL1() {
         text="Sidebar, page headers, record header, Assistant strip and the board frame."
         status="pending"
       >
-        <Pending task="S02" what="The Shell kit" />
+        <Pending task="S02" what="Shell" />
       </KitSection>
       {KITS.map(({ Specimen, ...k }) => (
         <KitSection

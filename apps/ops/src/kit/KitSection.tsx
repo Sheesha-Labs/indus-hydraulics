@@ -51,11 +51,11 @@ export default function KitSection({
   )
 }
 
-/** Shown in a spec card until its kit task is built. */
+/** Shown in a spec card whose kit is built in a later sprint: "Shell · built in S02". */
 export function Pending({ task, what }: { task: string; what: string }) {
   return (
     <p className="text-io-body text-io-ink-3">
-      {what} lands in {task}.
+      {what} · built in {task}
     </p>
   )
 }

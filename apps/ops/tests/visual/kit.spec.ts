@@ -1,7 +1,10 @@
 import { expect, test } from '@playwright/test'
 import { isPending, prepare, section, settle } from './helpers'
 
-/** Committed regression baselines: one per /_kit/<kit> page plus /_kit/l0. Neutral fixtures only. */
+/**
+ * Committed regression baselines: one per /_kit/<kit> page plus /_kit/l0. Neutral fixtures only. Every kit
+ * is built (S01-T10), so a section showing its placeholder fails instead of being skipped.
+ */
 const KITS = [
   'controls',
   'status',
@@ -29,7 +32,7 @@ for (const kit of KITS) {
     await prepare(page)
     await page.goto(`/_kit/${kit}`)
     await settle(page)
-    test.fixme(await isPending(page, kit), `${kit} is not built yet`)
+    expect(await isPending(page, kit), `${kit} renders its placeholder`).toBe(false)
     await expect(section(page, kit)).toHaveScreenshot(`${kit}.png`)
   })
 }

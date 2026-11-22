@@ -4,9 +4,9 @@ import { compareToReference, type Mask } from './compare'
 import { captureElement, closeReference, hasReference, renderReference } from './reference'
 
 /**
- * L1 Component Sheet parity, k01–k12 (k00 Shell is S02). A section still showing its "pending"
- * placeholder is skipped as fixme, so a kit is checked from the commit that builds it. Allowed ratios
- * above 0.02 are explained in the S01 PR body (neutral fixtures in place of the handoff's data).
+ * L1 Component Sheet parity, k01–k12 (k00 Shell is S02). Every kit is built (S01-T10): a section showing
+ * its placeholder fails. Allowed ratios above 0.02 are explained in the S01 PR body (neutral fixtures in
+ * place of the handoff's data).
  */
 const SECTIONS: { id: string; max?: number; mask?: string }[] = [
   { id: 'k01' },
@@ -34,7 +34,7 @@ test.describe('L1 Component Sheet parity', () => {
       await prepare(page)
       await page.goto('/_kit/l1')
       await settle(page)
-      test.fixme(await isPending(page, s.id), `${s.id} is not built yet`)
+      expect(await isPending(page, s.id), `${s.id} renders its placeholder`).toBe(false)
       const spec = `[data-kit-section="${s.id}"] [data-kit-part="spec"]`
       const ours = await captureElement(page, spec)
       const masks = s.mask ? await maskRects(page, spec, s.mask) : []
