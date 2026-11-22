@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist, Instrument_Serif } from 'next/font/google'
+import { connection } from 'next/server'
 import type { ReactNode } from 'react'
 import './globals.css'
 
@@ -19,7 +20,13 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+/**
+ * Every route renders per request (§7.2). The CSP is a per-request nonce with 'strict-dynamic': a page
+ * prerendered at build time carries no nonce, so the browser would refuse every one of its scripts.
+ * Awaiting `connection()` here makes the whole tree dynamic, sign-in pages without a request API included.
+ */
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  await connection()
   return (
     <html lang="en" className={`${geist.variable} ${serif.variable}`}>
       <body>{children}</body>

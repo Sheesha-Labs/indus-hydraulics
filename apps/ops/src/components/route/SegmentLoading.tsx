@@ -1,4 +1,8 @@
-import { TableSkeleton } from '@indus/ops-ui/table'
+// The skeleton's own module, never the `@indus/ops-ui/table` barrel: Next renders a loading boundary's
+// client chunks as SSR `<script src async>` tags WITHOUT the CSP nonce (Next 16.2,
+// createComponentStylesAndScripts), and the barrel's DataTableClient would put one on every page.
+// `loading-client-free.test.ts` keeps every loading.tsx free of client modules.
+import TableSkeleton from '@indus/ops-ui/table/skeleton'
 
 /**
  * Every console segment's loading.tsx (05 §6.4) re-exports this or `TabLoading`: a TableSkeleton with

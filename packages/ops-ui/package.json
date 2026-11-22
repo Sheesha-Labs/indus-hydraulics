@@ -16,6 +16,7 @@
     "./controls": "./src/controls/index.ts",
     "./status": "./src/status/index.ts",
     "./table": "./src/table/index.ts",
+    "./table/skeleton": "./src/table/TableSkeleton.tsx",
     "./card": "./src/card/index.ts",
     "./form": "./src/form/index.ts",
     "./states": "./src/states/index.ts",

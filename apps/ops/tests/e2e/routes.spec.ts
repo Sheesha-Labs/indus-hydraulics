@@ -113,13 +113,12 @@ const PAGE_PRIMARIES =
   '[data-variant="primary"]:not([data-part="proposal"] *):not([data-part="composer"] *):not([data-part="drafted-email"] *)'
 
 /**
- * Known CSP reports, not page errors: under `next dev` the async `<script>` Next streams for a segment's
- * chunks (loading.tsx boundaries, the console's own included) carries no nonce, and Radix parts rendered on
- * the server write `style` attributes the Ops CSP drops (S02 brief, wave 1). Both predate the route tree;
- * anything else the console logs as an error fails the test.
+ * Known CSP reports, not page errors: under `next dev`, Radix parts rendered on the server and Next's dev
+ * overlay write `style` attributes the Ops CSP drops (S02 brief, wave 1); a production build reports none
+ * (csp.spec.ts). The un-nonced `<script>` Next used to stream for loading.tsx chunks is fixed (S02-T09) and
+ * fails here again if it comes back. Anything else the console logs as an error fails the test.
  */
 const KNOWN_CSP = [
-  /^Loading the script '[^']*\/_next\/static\/chunks\/[^']+' violates the following Content Security Policy directive/,
   /^Applying inline style violates the following Content Security Policy directive 'style-src /,
 ]
 
