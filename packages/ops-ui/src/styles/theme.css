@@ -130,6 +130,7 @@
   --spacing-io-chip: var(--io-chip);
   --spacing-io-tag: var(--io-tag);
   --spacing-io-btn-xs: var(--io-btn-xs);
+  --spacing-io-btn-client: var(--io-btn-client);
   --spacing-io-field: var(--io-field);
   --spacing-io-select-inline: var(--io-select-inline);
   --spacing-io-row: var(--io-row);
@@ -152,6 +153,12 @@
   --spacing-io-exception-side: var(--io-w-exception-side);
   --spacing-io-scenarios: var(--io-w-scenarios);
   --spacing-io-detail: var(--io-w-detail);
+  --spacing-io-today-rail: var(--io-w-today-rail);
+  --spacing-io-wizard: var(--io-w-wizard);
+  --spacing-io-wizard-rail: var(--io-w-wizard-rail);
+  --spacing-io-auth: var(--io-w-auth);
+  --spacing-io-client-aside: var(--io-w-client-aside);
+  --spacing-io-exception-side-wide: var(--io-w-exception-side-wide);
 
   /* type roles */
   --text-io-kpi: 24px;

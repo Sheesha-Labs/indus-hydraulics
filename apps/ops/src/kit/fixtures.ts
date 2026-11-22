@@ -900,3 +900,69 @@ export const HEADERS = {
     { value: 'quoted', label: 'Quoted', count: 9 },
   ],
 } as const
+
+/**
+ * Template specimens T7–T12 and X1 (S02-T05): the boards' content in neutral words. Labels and structure
+ * are the boards'; every company, person, reference and figure is a stand-in.
+ */
+export const TEMPLATES = {
+  settingsNav: [
+    'Company',
+    'Mailboxes',
+    'Numbering',
+    'Pricing, VAT and FX',
+    'Email templates',
+    'Autopilot',
+    'Team and access',
+    'Data and privacy',
+    'Integrations',
+  ],
+  company: 'Example Trading LLC',
+  greetingFirstRun: 'Welcome, Sample',
+  needs: [
+    {
+      key: 'n1',
+      action: 'Send quotation',
+      title: `${REFS.quotationRevised} · ${COMPANIES.client}`,
+      sub: 'Assistant drafted · price guard 2 warnings',
+      button: 'Review',
+    },
+    {
+      key: 'n2',
+      action: 'Send RFQ',
+      title: `${REFS.supplierRfq} · 5 suppliers`,
+      sub: 'Bearings · Example Valve, Demo Bearings, Sample Seals, Example Flow, Demo Trading',
+      button: 'Review',
+    },
+    {
+      key: 'n3',
+      action: 'Relay questions',
+      title: `${COMPANIES.supplier} · 2 questions on line 4`,
+      sub: 'Names removed before relaying',
+      button: 'Review',
+    },
+    {
+      key: 'n4',
+      action: 'Equivalent?',
+      title: 'FLT-10-220 ≈ FLT-10-228',
+      sub: 'Seen on 3 RFQs',
+      button: 'Decide',
+    },
+  ],
+  awaiting: { value: 'USD 600,000', sub: 'weighted USD 300,000' },
+  cashIn: { value: 'AED 400,000', sub: '2 invoices due' },
+  slip: {
+    title: 'Demo Bearings slipped a week.',
+    text: 'INDUS/PO10002 now ships 25 Nov; SO-0002 still meets 14 Dec with air freight.',
+  },
+  quotationTitle: 'Annual turnaround spares',
+  quotationEyebrow: `Quotation · ${REFS.quotationRevised} · 2 Oct 2026`,
+  preparedFor: `Prepared for Client Contact · ${COMPANIES.client}`,
+  contact: 'Valid as stated per line. Questions go to sales@example.com.',
+  exception: {
+    crumb: `Orders / ${HEADERS.orderRef} · Sample Eastern Services · PO-SPS-10001`,
+    title: 'Example Instruments Co can’t deliver line 8',
+    quote:
+      'Example Instruments Co, 12 Nov: “The factory has stopped this model; the earliest replacement is 14 weeks.”',
+  },
+} as const

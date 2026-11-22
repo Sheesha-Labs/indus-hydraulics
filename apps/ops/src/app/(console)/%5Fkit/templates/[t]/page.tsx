@@ -2,7 +2,10 @@ import { notFound, redirect } from 'next/navigation'
 import { templateSpecimen } from '../../../../../kit/sections/Templates'
 import { AccessError, requireOpsUser } from '../../../../../lib/access'
 
-/** /_kit/templates/<t>: one template filled like its board (T1a … T6a), inside AppShell. */
+/**
+ * /_kit/templates/<t>: one template filled like its board, inside AppShell. The out-of-shell specimens (T9a,
+ * T11a, T12a) have their own static routes in (kit), (auth) and (client); here they are not found.
+ */
 export default async function TemplateSpecimenPage({ params }: { params: Promise<{ t: string }> }) {
   const { t } = await params
   try {
@@ -13,7 +16,7 @@ export default async function TemplateSpecimenPage({ params }: { params: Promise
     throw error
   }
   const entry = templateSpecimen(t)
-  if (!entry) notFound()
+  if (!entry || entry.frame !== 'shell') notFound()
   const { Specimen } = entry
   return <Specimen />
 }

@@ -1,6 +1,7 @@
 import { needLabel } from '@indus/ops-core'
 import {
   AssistantStrip,
+  LogoPlaceholder,
   RecordHeader,
   type RecordHeaderProps,
   type RecordTab,
@@ -106,4 +107,24 @@ export function specimenRecord({
       />
     ),
   }
+}
+
+/** The product mark the wizard, sign-in and client boards draw: the logo slot and "Operations". */
+export function ProductMark({ size = 'md' }: { size?: 'md' | 'lg' }) {
+  return (
+    <span className="flex items-center gap-2.5">
+      <span data-logo>
+        <LogoPlaceholder />
+      </span>
+      <span
+        className={
+          size === 'lg'
+            ? 'text-io-navy text-[15px] font-semibold'
+            : 'text-io-navy text-[13px] font-semibold'
+        }
+      >
+        Operations
+      </span>
+    </span>
+  )
 }

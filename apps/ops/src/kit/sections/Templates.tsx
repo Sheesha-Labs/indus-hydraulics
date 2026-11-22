@@ -11,28 +11,46 @@ import T3A from '../templates/T3A'
 import T4A from '../templates/T4A'
 import T5A from '../templates/T5A'
 import T6A from '../templates/T6A'
+import T7A from '../templates/T7A'
+import T8A from '../templates/T8A'
+import T8AFirstRun from '../templates/T8AFirstRun'
+import T9A from '../templates/T9A'
+import T10A from '../templates/T10A'
+import T11A from '../templates/T11A'
+import T12A from '../templates/T12A'
+import X1 from '../templates/X1'
 
-/** The template specimens (S02-T04: T1–T6) are built; S02-T05 appends T7–T12 and X1. */
+/** The template specimens: S02-T04 built T1–T6, S02-T05 T7–T12 and X1. */
 export const status: 'built' | 'pending' = 'built'
+
+/**
+ * Where a specimen renders. 'shell': inside the real AppShell, (console)/%5Fkit/templates/[t]. The three
+ * templates that never sit in the shell render through their own route group's layout, each at its own
+ * static route: 'bare' (T9 centred wizard: the board draws no sidebar) in (kit), 'auth' (T11) in (auth),
+ * 'client' (T12) in (client).
+ */
+export type SpecimenFrame = 'shell' | 'bare' | 'auth' | 'client'
 
 export interface TemplateSpecimen {
   /** URL segment: /_kit/templates/<slug>. */
   slug: string
-  /** The board PNG it is compared with: templates/png/<board>.png. */
-  board: string
+  /** The board PNG it is compared with: templates/png/<board>.png; null when the template has none. */
+  board: string | null
   /** T1 … T12. */
   template: string
   name: string
   /** What the board shows (the README's board caption). */
   shows: string
-  /** The sidebar row the board marks active (template-nav.ts). */
-  nav: NavKey
+  frame: SpecimenFrame
+  /** The sidebar row the board marks active (template-nav.ts); null outside the shell. */
+  nav: NavKey | null
   Specimen: ComponentType
 }
 
-const spec = (s: Omit<TemplateSpecimen, 'nav'>): TemplateSpecimen => ({
+const spec = (s: Omit<TemplateSpecimen, 'nav' | 'frame'> & { frame?: SpecimenFrame }): TemplateSpecimen => ({
   ...s,
-  nav: TEMPLATE_SPECIMEN_NAV[s.slug]!,
+  frame: s.frame ?? 'shell',
+  nav: TEMPLATE_SPECIMEN_NAV[s.slug] ?? null,
 })
 
 /**
@@ -105,10 +123,77 @@ export const TEMPLATE_SPECIMENS: readonly TemplateSpecimen[] = [
     shows: 'Landed cost per unit',
     Specimen: T6A,
   }),
+  spec({
+    slug: 't7a',
+    board: 'T7A',
+    template: 'T7',
+    name: 'Settings form',
+    shows: 'Company',
+    Specimen: T7A,
+  }),
+  spec({ slug: 't8a', board: 'T8A', template: 'T8', name: 'Today', shows: 'Owner', Specimen: T8A }),
+  spec({
+    slug: 't8a-first-run',
+    board: null,
+    template: 'T8',
+    name: 'Today · first run',
+    shows: 'Setup checklist in place of needs-you (board 224)',
+    Specimen: T8AFirstRun,
+  }),
+  spec({
+    slug: 't9a',
+    board: 'T9A',
+    template: 'T9',
+    name: 'Wizard',
+    shows: 'Setup · step 3 History',
+    frame: 'bare',
+    Specimen: T9A,
+  }),
+  spec({
+    slug: 't10a',
+    board: 'T10A',
+    template: 'T10',
+    name: 'Gantt',
+    shows: 'Supplier plan across orders',
+    Specimen: T10A,
+  }),
+  spec({
+    slug: 't11a',
+    board: 'T11A',
+    template: 'T11',
+    name: 'Sign-in',
+    shows: 'Default',
+    frame: 'auth',
+    Specimen: T11A,
+  }),
+  spec({
+    slug: 't12a',
+    board: 'T12A',
+    template: 'T12',
+    name: 'Client page',
+    shows: 'Online quotation, client columns only (C36)',
+    frame: 'client',
+    Specimen: T12A,
+  }),
+  spec({
+    slug: 'x1',
+    board: null,
+    template: 'X1',
+    name: 'Exception page',
+    shows: 'Supplier can’t deliver (boards 195–200 shape)',
+    Specimen: X1,
+  }),
 ]
 
 export function templateSpecimen(slug: string): TemplateSpecimen | undefined {
   return TEMPLATE_SPECIMENS.find((t) => t.slug === slug)
+}
+
+/** A specimen that renders outside the shell, by slug; throws if the slug is not one (a static route's typo). */
+export function bareSpecimen(slug: string): ComponentType {
+  const entry = templateSpecimen(slug)
+  if (!entry || entry.frame === 'shell') throw new Error(`No out-of-shell template specimen "${slug}"`)
+  return entry.Specimen
 }
 
 /** /_kit/templates: one link per specimen. */
@@ -124,7 +209,7 @@ export default function TemplatesIndex() {
         {TEMPLATE_SPECIMENS.map((t) => (
           <li key={t.slug} className="text-io-body">
             <Link className="io-focus text-io-accent" href={`/_kit/templates/${t.slug}` as Route}>
-              {t.board} · {t.name}
+              {t.board ?? t.template} · {t.name}
             </Link>{' '}
             <span className="text-io-ink-3">{t.shows}</span>
           </li>

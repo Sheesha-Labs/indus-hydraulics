@@ -1,6 +1,6 @@
 // Which sidebar row each template specimen marks active (/_kit/templates/<t>), as its board draws it.
 // Pure and React-free: AppShell (a client component) reads it without pulling the specimens in.
-// S02-T04 lists T1–T6; S02-T05 adds its boards below.
+// S02-T04 lists T1–T6; S02-T05 adds T7, T8, T10 and X1 (T9, T11 and T12 render outside AppShell).
 import type { NavKey } from '@indus/ops-ui/shell/nav'
 
 export const TEMPLATE_SPECIMEN_NAV: Readonly<Record<string, NavKey>> = {
@@ -12,6 +12,11 @@ export const TEMPLATE_SPECIMEN_NAV: Readonly<Record<string, NavKey>> = {
   t4a: 'review',
   t5a: 'enquiries',
   t6a: 'enquiries',
+  t7a: 'settings',
+  t8a: 'today',
+  't8a-first-run': 'today',
+  t10a: 'orders',
+  x1: 'orders',
 }
 
 /**

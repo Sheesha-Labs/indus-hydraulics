@@ -299,6 +299,12 @@
     "signoff": "awaiting",
     "source": "Controls/Button xs (design-tokens.md; missing from tokens.css)"
   },
+  "io-btn-client": {
+    "value": "44px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "Controls/Button client: T12 client pages only (L2 t12a, 05 §5)"
+  },
   "io-field": {
     "value": "36px",
     "kind": "size",
@@ -443,6 +449,48 @@
     "signoff": "awaiting",
     "source": "T4 bundle proposal column (board 194)",
     "utility": "io-detail"
+  },
+  "io-w-today-rail": {
+    "value": "320px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T8 Today rail (L2 t8a)",
+    "utility": "io-today-rail"
+  },
+  "io-w-wizard": {
+    "value": "760px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T9 Wizard centred card (L2 t9a draws 760; 05 §5 says max 720)",
+    "utility": "io-wizard"
+  },
+  "io-w-wizard-rail": {
+    "value": "280px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T9 Wizard step rail (board 79)",
+    "utility": "io-wizard-rail"
+  },
+  "io-w-auth": {
+    "value": "400px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T11 sign-in card (L2 t11a)",
+    "utility": "io-auth"
+  },
+  "io-w-client-aside": {
+    "value": "340px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "T12 client page aside (L2 t12a)",
+    "utility": "io-client-aside"
+  },
+  "io-w-exception-side-wide": {
+    "value": "440px",
+    "kind": "size",
+    "signoff": "awaiting",
+    "source": "X1 exception side, wide (boards 196, 201)",
+    "utility": "io-exception-side-wide"
   },
   "io-r-3": {
     "value": "3px",

@@ -20,7 +20,7 @@ const VARIANTS: ButtonVariant[] = [
   'destructive',
   'link',
 ]
-const SIZES: ButtonSize[] = ['lg', 'md', 'sm', 'xs']
+const SIZES: ButtonSize[] = ['lg', 'md', 'sm', 'xs', 'client']
 
 describe('buttonVariants', () => {
   it.each(VARIANTS.flatMap((v) => SIZES.map((s) => [v, s] as const)))(
@@ -45,6 +45,10 @@ describe('buttonVariants', () => {
   it('defaults to secondary/md', () => {
     expect(buttonVariants()).toBe(buttonVariants({ variant: 'secondary', size: 'md' }))
     expect(buttonVariants()).toContain('h-io-btn ')
+  })
+
+  it('client is 44 high (T12 client pages only)', () => {
+    expect(buttonVariants({ variant: 'primary', size: 'client' })).toMatch(/\bh-io-btn-client\b/)
   })
 
   it('link carries no height or padding from its size', () => {

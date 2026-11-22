@@ -15,8 +15,9 @@ type Props = { searchParams: Promise<{ next?: string; error?: string }> }
 export default async function SignInPage({ searchParams }: Props) {
   const { next, error } = await searchParams
   const message = error ? (ERRORS[error] ?? 'Sign-in failed. Try again.') : null
+  // The (auth) layout's T11 card owns <main>; the page is the card's content (S03 styles it as board 77).
   return (
-    <main>
+    <>
       <h1>Indus Operations</h1>
       <p>Sign in</p>
       {message ? <p role="alert">{message}</p> : null}
@@ -24,6 +25,6 @@ export default async function SignInPage({ searchParams }: Props) {
         <input type="hidden" name="next" value={next ?? ''} />
         <button type="submit">Continue with Google</button>
       </form>
-    </main>
+    </>
   )
 }
