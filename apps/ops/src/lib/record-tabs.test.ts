@@ -64,7 +64,7 @@ describe('record tabs', () => {
       expect(TENDER_TABS[i]!.href('ENQ-2026-0001')).toBe(`/enquiries/ENQ-2026-0001/tender/${s}`)
       expect(TENDER_TABS[i]!.segment).toBe(`tender/${s}`)
     })
-    expect(TENDER_TABS[5].href('ENQ-2026-0001')).toBe('/enquiries/ENQ-2026-0001/lines')
+    expect(TENDER_TABS[5]!.href('ENQ-2026-0001')).toBe('/enquiries/ENQ-2026-0001/lines')
   })
 
   it('keys and segments are unique within a set', () => {

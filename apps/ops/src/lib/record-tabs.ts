@@ -2,92 +2,151 @@
 // the active one from the selected layout segments (RecordTabs). `segment` is the path below the record
 // layout (enquiries/[ref] or orders/[ref]); '' is the record's own page.
 //
-// Hrefs are template-literal typed: the folders arrive with the S02-T07 route tree, and until they exist the
-// generated typedRoutes `Route` type cannot name them. T07 checks these same strings against its folders.
+// Every href is spelled out as a template literal through `to()` (lib/routes.ts), so `next typegen` (run
+// by `next dev` and `next build`) checks each one against the folders of the route tree (S02-T07).
+// route-tree.test.ts also resolves every tab to its page.tsx, so the check holds without generated types.
 import type { RecordKind } from '@indus/ops-core'
+import { to } from './routes'
 
-export interface RecordTabDef<H extends string = string> {
+export interface RecordTabDef {
   key: string
   label: string
   /** Path below the record layout; '' for the record's own page. */
   segment: string
-  href: (ref: string) => H
+  href: (ref: string) => string
 }
-
-type EnquiryHref = `/enquiries/${string}`
-type OrderHref = `/orders/${string}`
-
-const enquiryTab = (key: string, label: string, segment = key): RecordTabDef<EnquiryHref> => ({
-  key,
-  label,
-  segment,
-  href: (ref) => (segment ? `/enquiries/${ref}/${segment}` : `/enquiries/${ref}`),
-})
-
-const orderTab = (key: string, label: string): RecordTabDef<OrderHref> => ({
-  key,
-  label,
-  segment: key,
-  href: (ref) => `/orders/${ref}/${key}`,
-})
-
-const tenderTab = (key: string, label: string): RecordTabDef<EnquiryHref> => ({
-  key,
-  label,
-  segment: `tender/${key}`,
-  href: (ref) => `/enquiries/${ref}/tender/${key}`,
-})
 
 /** C8: eleven enquiry tabs. Overview is the record's own page (`/enquiries/[ref]`). */
 export const ENQUIRY_TABS = [
-  enquiryTab('overview', 'Overview', ''),
-  enquiryTab('lines', 'Lines'),
-  enquiryTab('suppliers', 'Suppliers'),
-  enquiryTab('rfqs', 'RFQs'),
-  enquiryTab('questions', 'Questions'),
-  enquiryTab('compare', 'Compare'),
-  enquiryTab('deviations', 'Deviations'),
-  enquiryTab('pricing', 'Pricing'),
-  enquiryTab('quotation', 'Quotation'),
-  enquiryTab('files', 'Files'),
-  enquiryTab('activity', 'Activity'),
-] as const satisfies readonly RecordTabDef<EnquiryHref>[]
+  { key: 'overview', label: 'Overview', segment: '', href: (r) => to(`/enquiries/${r}`) },
+  { key: 'lines', label: 'Lines', segment: 'lines', href: (r) => to(`/enquiries/${r}/lines`) },
+  {
+    key: 'suppliers',
+    label: 'Suppliers',
+    segment: 'suppliers',
+    href: (r) => to(`/enquiries/${r}/suppliers`),
+  },
+  { key: 'rfqs', label: 'RFQs', segment: 'rfqs', href: (r) => to(`/enquiries/${r}/rfqs`) },
+  {
+    key: 'questions',
+    label: 'Questions',
+    segment: 'questions',
+    href: (r) => to(`/enquiries/${r}/questions`),
+  },
+  {
+    key: 'compare',
+    label: 'Compare',
+    segment: 'compare',
+    href: (r) => to(`/enquiries/${r}/compare`),
+  },
+  {
+    key: 'deviations',
+    label: 'Deviations',
+    segment: 'deviations',
+    href: (r) => to(`/enquiries/${r}/deviations`),
+  },
+  {
+    key: 'pricing',
+    label: 'Pricing',
+    segment: 'pricing',
+    href: (r) => to(`/enquiries/${r}/pricing`),
+  },
+  {
+    key: 'quotation',
+    label: 'Quotation',
+    segment: 'quotation',
+    href: (r) => to(`/enquiries/${r}/quotation`),
+  },
+  { key: 'files', label: 'Files', segment: 'files', href: (r) => to(`/enquiries/${r}/files`) },
+  {
+    key: 'activity',
+    label: 'Activity',
+    segment: 'activity',
+    href: (r) => to(`/enquiries/${r}/activity`),
+  },
+] as const satisfies readonly RecordTabDef[]
 
-/** Board 75 / C11: nine order tabs. `/orders/[ref]` itself redirects to Confirmation (S02-T07). */
+/** Board 75 / C11: nine order tabs. `/orders/[ref]` itself redirects to Confirmation. */
 export const ORDER_TABS = [
-  orderTab('confirmation', 'Confirmation'),
-  orderTab('advance', 'Advance'),
-  orderTab('suppliers', 'Suppliers'),
-  orderTab('inspection', 'Inspection'),
-  orderTab('freight', 'Freight'),
-  orderTab('documents', 'Documents'),
-  orderTab('delivery', 'Delivery'),
-  orderTab('invoices', 'Invoices'),
-  orderTab('profit', 'Profit'),
-] as const satisfies readonly RecordTabDef<OrderHref>[]
+  {
+    key: 'confirmation',
+    label: 'Confirmation',
+    segment: 'confirmation',
+    href: (r) => to(`/orders/${r}/confirmation`),
+  },
+  { key: 'advance', label: 'Advance', segment: 'advance', href: (r) => to(`/orders/${r}/advance`) },
+  {
+    key: 'suppliers',
+    label: 'Suppliers',
+    segment: 'suppliers',
+    href: (r) => to(`/orders/${r}/suppliers`),
+  },
+  {
+    key: 'inspection',
+    label: 'Inspection',
+    segment: 'inspection',
+    href: (r) => to(`/orders/${r}/inspection`),
+  },
+  { key: 'freight', label: 'Freight', segment: 'freight', href: (r) => to(`/orders/${r}/freight`) },
+  {
+    key: 'documents',
+    label: 'Documents',
+    segment: 'documents',
+    href: (r) => to(`/orders/${r}/documents`),
+  },
+  {
+    key: 'delivery',
+    label: 'Delivery',
+    segment: 'delivery',
+    href: (r) => to(`/orders/${r}/delivery`),
+  },
+  {
+    key: 'invoices',
+    label: 'Invoices',
+    segment: 'invoices',
+    href: (r) => to(`/orders/${r}/invoices`),
+  },
+  { key: 'profit', label: 'Profit', segment: 'profit', href: (r) => to(`/orders/${r}/profit`) },
+] as const satisfies readonly RecordTabDef[]
 
 /** The five tender sections, routed as `/enquiries/[ref]/tender/[section]` (C9). */
 export const TENDER_SECTIONS = ['timeline', 'requirements', 'queries', 'vendors', 'bid'] as const
 export type TenderSection = (typeof TENDER_SECTIONS)[number]
 
+const TENDER_LABEL: Readonly<Record<TenderSection, string>> = {
+  timeline: 'Timeline',
+  requirements: 'Requirements',
+  queries: 'Queries',
+  vendors: 'Vendors',
+  bid: 'Bid',
+}
+
+/** One tender section tab. The section is a value of the `[section]` param, so one dynamic route. */
+const tenderTab = (section: TenderSection): RecordTabDef => ({
+  key: section,
+  label: TENDER_LABEL[section],
+  segment: `tender/${section}`,
+  href: (r) => to(`/enquiries/${r}/tender/${section}`),
+})
+
+/** An enquiry tab a tender keeps, by key. */
+const keep = (key: (typeof ENQUIRY_TABS)[number]['key']): RecordTabDef =>
+  ENQUIRY_TABS.find((t) => t.key === key)!
+
 /**
  * C9: a tender shows its five sections first, then the enquiry tabs it still works through (sourcing runs
  * the normal flow; the bid pack consumes Pricing). Those keep their enquiry routes.
  */
-export const TENDER_TABS = [
-  tenderTab('timeline', 'Timeline'),
-  tenderTab('requirements', 'Requirements'),
-  tenderTab('queries', 'Queries'),
-  tenderTab('vendors', 'Vendors'),
-  tenderTab('bid', 'Bid'),
-  enquiryTab('lines', 'Lines'),
-  enquiryTab('suppliers', 'Suppliers'),
-  enquiryTab('rfqs', 'RFQs'),
-  enquiryTab('compare', 'Compare'),
-  enquiryTab('pricing', 'Pricing'),
-  enquiryTab('files', 'Files'),
-  enquiryTab('activity', 'Activity'),
-] as const satisfies readonly RecordTabDef<EnquiryHref>[]
+export const TENDER_TABS: readonly RecordTabDef[] = [
+  ...TENDER_SECTIONS.map(tenderTab),
+  keep('lines'),
+  keep('suppliers'),
+  keep('rfqs'),
+  keep('compare'),
+  keep('pricing'),
+  keep('files'),
+  keep('activity'),
+]
 
 export function tabsFor(kind: RecordKind): readonly RecordTabDef[] {
   return kind === 'order' ? ORDER_TABS : kind === 'tender' ? TENDER_TABS : ENQUIRY_TABS
