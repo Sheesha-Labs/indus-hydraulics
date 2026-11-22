@@ -1,11 +1,23 @@
+import { ButtonLink, Choices } from '@indus/ops-ui/controls'
 import { cn } from '@indus/ops-ui/lib/cn'
-import { AssistantPillMenu, Sidebar, type SidebarProps } from '@indus/ops-ui/shell'
+import { AssistantPillMenu, PageHeader, Sidebar, type SidebarProps } from '@indus/ops-ui/shell'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import type { ReactNode } from 'react'
 import { kitPause, kitSignOut } from '../actions'
-import { SHELL } from '../fixtures'
+import { HEADERS, SHELL } from '../fixtures'
+import {
+  BannerStrip,
+  Board75,
+  PageHeaderVariants,
+  RecordKinds,
+  SheetAssistantStrip,
+  SheetPageHeaders,
+  SheetRecordHeaders,
+  SheetTodayHeader,
+  TemplateHeaders,
+} from './ShellHeaders'
 
-/** Sidebar parts landed in S02-T01; the headers and the Assistant strip follow in S02-T02. */
+/** The sidebar (S02-T01) and the headers, the Assistant strip and the banner strip (S02-T02). */
 export const status: 'built' | 'pending' = 'built'
 
 /**
@@ -18,12 +30,15 @@ function Row({
   note,
   full = false,
   sheet = false,
+  column = false,
   children,
 }: {
   name: string
   code: string
   note: string
   full?: boolean
+  /** The sheet's `.cv-cl`: a column of specimens at their own width (headers) instead of a wrapping row. */
+  column?: boolean
   /**
    * Recreate the L1 sheet's page around its mirror row. The sheet sets no line height, tracking or box
    * sizing, where the boards and the console inherit 1.45, -0.005em and border-box: inside the sheet the
@@ -48,7 +63,7 @@ function Row({
       </div>
       <div
         className={cn(
-          'flex flex-wrap items-center gap-3',
+          column ? 'flex flex-col items-start gap-3' : 'flex flex-wrap items-center gap-3',
           sheet && 'leading-[normal] tracking-normal [&_[data-part=sidebar]_*]:box-content'
         )}
       >
@@ -122,7 +137,69 @@ const BOARD_74: { id: string; v: Variant }[] = [
 
 const STATUSES: AssistantStatus[] = ['running', 'paused', 'disconnected', 'unsure', 'off']
 
-/** Shell kit specimen, part 1 (S02-T01): the sidebar. Headers and the strip join in S02-T02. */
+/**
+ * The L1 sheet mounts RecordHeader.dc outside its `.k` wrapper: its text sets at line height and tracking
+ * `normal` (board 75 sets them at the console's 1.45 and -0.005em), and three of its boxes are content-box
+ * there: the bordered "Log activity" button (38 high, where the boards draw 36), the stage track's hollow
+ * dots (9, where the Status kit draws 7) and the strip under it (40 + its rule). The product follows board
+ * 75; this class recreates the sheet's page around the k00 mirror only, as the sidebar row's `sheet` mode
+ * does.
+ */
+const SHEET_RECORD =
+  '[&_[data-part=record-header]]:leading-[normal] [&_[data-part=record-header]]:tracking-normal [&_[data-part=record-header]_[data-variant=secondary]]:box-content [&_[data-part=stage-track]_[aria-hidden]]:box-content [&_[data-part=assistant-strip]]:box-content [&_[data-part=assistant-strip]]:w-auto [&_[data-part=assistant-strip]]:leading-[normal] [&_[data-part=assistant-strip]]:tracking-normal'
+
+/** Shell kit `Region`: a dashed, hatched placeholder inside a board frame (canvas furniture). */
+function Region({ name, note, className }: { name: string; note: string; className?: string }) {
+  return (
+    <div
+      className={cn(
+        'border-io-accent-line rounded-io-card text-io-accent grid min-w-0 flex-1 place-items-center border-[1.5px] border-dashed bg-[repeating-linear-gradient(135deg,var(--io-accent-faint)_0_8px,var(--io-card)_8px_16px)] p-3 text-center text-[12.5px] leading-[1.5]',
+        className
+      )}
+    >
+      <span>
+        <b className="block text-[13px] font-medium">{name}</b> {note}
+      </span>
+    </div>
+  )
+}
+
+/**
+ * The sheet's board frame (Shell kit `Frame`, canvas furniture; AppShell is the product's frame): the
+ * sidebar, a PageHeader and two regions, 1100 × 560.
+ */
+function BoardFrame() {
+  return (
+    <div className="rounded-io-8 border-io-sheet-line bg-io-paper shadow-io-e1 flex h-[560px] w-[1100px] overflow-hidden border">
+      <Specimen {...owner({ active: 'enquiries' })} className="h-full" />
+      <div className="flex min-w-0 flex-1 flex-col">
+        <PageHeader
+          crumb="Work"
+          title="Enquiries"
+          actions={
+            <ButtonLink variant="primary" href="/_kit/shell?new=enquiry">
+              New enquiry
+            </ButtonLink>
+          }
+          filters={
+            <Choices
+              aria-label="Enquiry filter"
+              options={[...HEADERS.enquiryFilters]}
+              value="open"
+              hrefFor={(v) => `/_kit/shell?frame=${v}`}
+            />
+          }
+        />
+        <div className="flex min-h-0 flex-1 gap-4 px-7 py-4">
+          <Region name="Table" note="rows of enquiries" />
+          <Region name="Preview" note="selected enquiry" className="w-io-preview flex-none" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/** Shell kit specimen: the L1 k00 rows in the sheet's order, then rows that exist only on /_kit/shell. */
 export default function ShellSpecimen() {
   return (
     <>
@@ -157,6 +234,92 @@ export default function ShellSpecimen() {
             <Specimen {...v} className="h-full" />
           </div>
         ))}
+      </Row>
+      <Row
+        column
+        name="Page header"
+        code='part="PageHeader"'
+        note="Index pages. crumb · title · actions (prefix * for primary) · filters · summary · search"
+      >
+        <SheetPageHeaders />
+      </Row>
+      <Row
+        full
+        column
+        name="Page header slots"
+        code="steps · meta · tag · chip · segmented · tabs"
+        note="Steps pills done accent / current navy / todo line. At most one primary action."
+      >
+        <PageHeaderVariants />
+      </Row>
+      <Row
+        column
+        name="Today header"
+        code='part="TodayHeader"'
+        note="Serif greeting, Assistant pill, bell count"
+      >
+        <SheetTodayHeader />
+      </Row>
+      <Row
+        column
+        name="Record header"
+        code='part="RecordHeader"'
+        note="Wraps RecordHeader. kind enquiry | order"
+      >
+        <div className={cn('flex flex-col items-start gap-3', SHEET_RECORD)}>
+          <SheetRecordHeaders />
+        </div>
+      </Row>
+      <Row
+        full
+        column
+        name="Record kinds"
+        code="kind enquiry | order | tender"
+        note="Enquiry 11 tabs (C8) · order 9 tabs · tender sections first, then the enquiry tabs (C9)"
+      >
+        <RecordKinds />
+      </Row>
+      <Row
+        full
+        column
+        name="Board 75"
+        code="card 1046 wide"
+        note="Enquiry on Overview, order on Freight, each with its Assistant strip"
+      >
+        <Board75 />
+      </Row>
+      <Row
+        full
+        column
+        name="T2A · T2B header"
+        code="main column 1202"
+        note="The record cockpit header as the T2 templates frame it"
+      >
+        <TemplateHeaders />
+      </Row>
+      <Row
+        column
+        name="Assistant strip"
+        code='part="AssistantStrip"'
+        note="One line under any header: what it did, what needs you"
+      >
+        <SheetAssistantStrip />
+      </Row>
+      <Row
+        full
+        column
+        name="Banner strip"
+        code='BannerSlot placement="strip"'
+        note="Under the header: one banner, most severe first, the rest behind +n more (C23)"
+      >
+        <BannerStrip className="w-[1100px]" />
+      </Row>
+      <Row
+        name="Board frame"
+        code='part="Frame"'
+        note="1440 × 940 board. header page | record | today | none, regions name@width · note"
+      >
+        <BoardFrame />
       </Row>
       <Row
         full

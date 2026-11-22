@@ -12,15 +12,11 @@ import * as ui from './index'
 type Kit = keyof typeof KIT_PARTS
 
 /**
- * Parts not exported (yet), each with its reason. The Shell kit lands across S02: the Sidebar in S02-T01,
- * the headers and the Assistant strip in S02-T02; the canvas furniture is never a product part.
+ * Parts not exported, each with its reason. The Shell kit landed in S02 (the Sidebar in S02-T01, the headers
+ * and the Assistant strip in S02-T02); the canvas furniture is never a product part.
  */
 const NOT_EXPORTED: Partial<Record<Kit, Record<string, string>>> = {
   shell: {
-    RecordHeader: 'built in S02-T02',
-    PageHeader: 'built in S02-T02',
-    TodayHeader: 'built in S02-T02',
-    AssistantStrip: 'built in S02-T02',
     Frame: 'canvas furniture, not built: AppShell (apps/ops) is the product equivalent (05 §3.13)',
     SectionHead: 'canvas furniture, rebuilt only for /_kit in apps/ops/src/kit/SectionHead.tsx',
     BoardLabel: 'canvas furniture, not built (05 §3.13)',
