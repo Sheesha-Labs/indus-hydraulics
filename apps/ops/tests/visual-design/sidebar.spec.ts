@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { expect, test, type Locator } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { prepare, settle } from '../visual/helpers'
-import { compareToReference, type Mask } from './compare'
+import { compareToReference, recordParity, type Mask } from './compare'
 import {
   boardPngPath,
   captureElement,
@@ -132,9 +132,25 @@ test.describe('Sidebar design parity', () => {
       changed += ratio * width * height
       total += width * height
       console.log(`L1 k00 sidebar ${names[i]}: diff ${ratio.toFixed(4)} (${size})`)
+      recordParity({
+        board: `k00 sidebar ${names[i]}`,
+        group: 'L1 k00',
+        ratio,
+        area: size,
+        limit: 0.03,
+        note: 'Money band cut out; logo slot masked. Neutral names; Kbd prints Ctrl+K (Windows UA); variable vs static Geist.',
+      })
       expect(ratio, names[i]).toBeLessThanOrEqual(0.03)
     }
     console.log(`L1 k00 sidebar row: diff ${(changed / total).toFixed(4)}`)
+    recordParity({
+      board: 'k00 sidebar row (4 sidebars)',
+      group: 'L1 k00',
+      ratio: changed / total,
+      area: 'the four sidebars together',
+      limit: 0.02,
+      note: 'Sum of the four sidebars above.',
+    })
     expect(changed / total).toBeLessThanOrEqual(0.02)
   })
 
@@ -158,6 +174,14 @@ test.describe('Sidebar design parity', () => {
     console.log(
       `board 74 sidebar (crop x${BOARD_74_CROP.x} y${BOARD_74_CROP.y} ${BOARD_74_CROP.w}×${BOARD_74_CROP.h}): diff ${ratio.toFixed(4)} (${size})`
     )
+    recordParity({
+      board: '74 sidebar (Owner)',
+      group: 'Boards 74/75',
+      ratio,
+      area: `crop x${BOARD_74_CROP.x} y${BOARD_74_CROP.y} ${BOARD_74_CROP.w}×${BOARD_74_CROP.h}`,
+      limit: 0.02,
+      note: 'Money band cut out (C10); logo slot masked. Remainder: neutral identity, Ctrl+K, variable vs static Geist.',
+    })
     expect(ratio).toBeLessThanOrEqual(0.02)
   })
 })

@@ -1,6 +1,7 @@
 import AxeBuilder from '@axe-core/playwright'
 import type { Page } from '@playwright/test'
 import { expect, test, type DemoUser } from '../signed-in'
+import { CONSOLE, ENQ, SO } from './route-table'
 
 /**
  * The route skeleton (S02-T07): every console route opens inside AppShell, as the Owner and as the Helper,
@@ -9,104 +10,6 @@ import { expect, test, type DemoUser } from '../signed-in'
  * move between record tabs. First-run setup and the client pages render without the shell.
  * Needs the seeded demo users (SEED_DEMO=1 bun run --filter @indus/ops-db db:seed).
  */
-
-const ENQ = '/enquiries/ENQ-2026-0001'
-const SO = '/orders/SO-0001'
-const ID = '00000000-0000-7000-8000-000000000001'
-
-type Template = 'T1' | 'T2' | 'T3' | 'T4' | 'T5' | 'T6' | 'T7' | 'T8' | 'T9' | 'T10' | 'X1'
-
-/** [path, active sidebar label (null: none), template]. */
-const CONSOLE: readonly (readonly [string, string | null, Template])[] = [
-  ['/today', 'Today', 'T8'],
-  ['/review', 'Review', 'T4'],
-  ['/mail/all', 'Mail', 'T3'],
-  ['/mail/needs-you', 'Mail', 'T3'],
-  [`/mail/clients/${ID}`, 'Mail', 'T3'],
-  ['/enquiries', 'Enquiries', 'T1'],
-  ['/enquiries/new', 'Enquiries', 'T9'],
-  [`/enquiries/intake/${ID}`, 'Enquiries', 'T9'],
-  ['/enquiries/leads', 'Enquiries', 'T1'],
-  [`/enquiries/leads/${ID}`, 'Enquiries', 'T2'],
-  [ENQ, 'Enquiries', 'T2'],
-  ...[
-    'lines',
-    'suppliers',
-    `suppliers/research/${ID}`,
-    'rfqs',
-    'rfqs/IH-RFQ-2611-P01',
-    'questions',
-    'deviations',
-    'pricing',
-    'quotation/R2',
-    'files',
-    'activity',
-    'tender/timeline',
-    'tender/bid',
-  ].map((s) => [`${ENQ}/${s}`, 'Enquiries', 'T2'] as const),
-  [`${ENQ}/compare`, 'Enquiries', 'T6'],
-  [`${ENQ}/quotation`, 'Enquiries', 'T5'],
-  ['/quotations', 'Quotations', 'T1'],
-  ['/orders', 'Orders', 'T1'],
-  ...[
-    'confirmation',
-    'advance',
-    'suppliers',
-    'inspection',
-    'freight',
-    'documents',
-    'delivery',
-    'invoices',
-    'profit',
-  ].map((s) => [`${SO}/${s}`, 'Orders', 'T2'] as const),
-  [`${SO}/review`, 'Orders', 'T4'],
-  [`${SO}/exceptions/failed-inspection`, 'Orders', 'X1'],
-  ['/money', 'Money', 'T8'],
-  ['/money/invoices/INV10001', 'Money', 'X1'],
-  [`/money/payments/${ID}`, 'Money', 'T4'],
-  ['/money/close/2026-11', 'Money', 'T8'],
-  ['/suppliers', 'Suppliers', 'T1'],
-  ['/suppliers/new', 'Suppliers', 'T9'],
-  [`/suppliers/${ID}`, 'Suppliers', 'T7'],
-  [`/suppliers/${ID}/contacts`, 'Suppliers', 'T7'],
-  ['/clients', 'Clients', 'T1'],
-  [`/clients/${ID}`, 'Clients', 'T7'],
-  ['/parts', 'Parts', 'T1'],
-  [`/parts/${ID}`, 'Parts', 'T7'],
-  ['/reports/overdue', 'Reports', 'T1'],
-  ['/reports/winloss', 'Reports', 'T1'],
-  ['/reports/pipeline', 'Reports', 'T1'],
-  ['/assistant/autopilot', 'Autopilot', 'T7'],
-  ['/assistant/guardrails', 'Autopilot', 'T7'],
-  ['/assistant/cost', 'Autopilot', 'T7'],
-  ['/assistant/learned', 'Autopilot', 'T7'],
-  ['/assistant/log', 'Assistant log', 'T1'],
-  ['/tasks', null, 'T10'],
-  ['/callbacks', null, 'T1'],
-  ['/search', null, 'T1'],
-  ['/history-import', null, 'T9'],
-  [`/documents/${ID}/share`, null, 'T7'],
-  ...[
-    '',
-    '/company',
-    '/bank-accounts',
-    '/documents',
-    '/team',
-    '/notifications',
-    '/mailboxes',
-    '/sending',
-    '/templates',
-    '/pricing',
-    '/terms',
-    '/follow-up',
-    '/document-templates',
-    '/numbering',
-    '/intake',
-    '/integrations',
-    '/accounting',
-    '/privacy',
-  ].map((s) => [`/settings${s}`, 'Settings', 'T7'] as const),
-]
 
 /** Primary buttons outside the decision cards (CLAUDE.md §4.9; templates.spec.ts). */
 const PAGE_PRIMARIES =

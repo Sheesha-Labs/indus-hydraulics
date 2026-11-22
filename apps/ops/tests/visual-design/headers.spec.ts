@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { expect, test, type Locator } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { prepare, settle } from '../visual/helpers'
-import { compareToReference, type Mask } from './compare'
+import { compareToReference, recordParity, type Mask } from './compare'
 import { boardPngPath, captureElement, closeReference, hasReference } from './reference'
 
 /**
@@ -136,6 +136,16 @@ test.describe('Record header design parity', () => {
       console.log(
         `${c.name} (crop x${r.x} y${r.y} ${r.w}×${r.h}): diff ${ratio.toFixed(4)} (${size})`
       )
+      recordParity({
+        board: c.name.startsWith('board-75') ? `75 ${c.name.slice(9)} header card` : c.name,
+        group: c.name.startsWith('board-75') ? 'Boards 74/75' : 'Templates',
+        ratio,
+        area: `crop x${r.x} y${r.y} ${r.w}×${r.h}`,
+        limit: c.max,
+        note: c.name.startsWith('board-75')
+          ? `Neutral words chosen to set within a few px of the board's; self-hosted variable Geist vs static.${c.masks ? ' Masked: the tab rule and strip rule rows the board draws one row lower (its sub-pixel rounding).' : ''}`
+          : 'Header crop of the T2 board (the full frame is the Templates row). 0.03: the template boards place the serif title a row higher and the meta row a row lower than board 75 inside the same 207 (S02-T02); board 75 is the acceptance board.',
+      })
       expect(ratio).toBeLessThanOrEqual(c.max)
     })
   }

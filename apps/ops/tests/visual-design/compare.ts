@@ -82,3 +82,28 @@ export async function compareToBoardPng(
     ...(opts.masks ? { masks: opts.masks } : {}),
   })
 }
+
+/** One row of $OPS_EVIDENCE_DIR/visual/<sprint>/summary.md (S02-T09). */
+export interface ParityRow {
+  /** "74 sidebar", "T1A", "S04A", "k00 sidebar owner" … */
+  board: string
+  group: 'Boards 74/75' | 'Templates' | 'Shell surfaces' | 'L1 k00' | 'L1 sheet' | 'L0 sheet'
+  /** The share of the compared pixels that differ. */
+  ratio: number
+  /** What was compared: "full frame 1438×938, 7 masks", "drawer (39% of the frame)" … */
+  area: string
+  limit: number
+  /** Masks and their reasons, or why the remainder is acceptable. */
+  note: string
+}
+
+/**
+ * Record a parity result for the summary. Each check is one file under parity/, so a partial run (-g)
+ * updates its own rows and keeps the others; summary.ts writes summary.md from all of them.
+ */
+export function recordParity(row: ParityRow): void {
+  const dir = join(evidenceDir(), 'parity')
+  mkdirSync(dir, { recursive: true })
+  const file = `${row.group}-${row.board}`.replace(/[^A-Za-z0-9._-]+/g, '_')
+  writeFileSync(join(dir, `${file}.json`), JSON.stringify({ ...row, at: new Date().toISOString() }))
+}

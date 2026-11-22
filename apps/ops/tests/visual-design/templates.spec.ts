@@ -2,7 +2,7 @@ import type { Locator, Page } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
-import { compareToReference, type Mask } from './compare'
+import { compareToReference, recordParity, type Mask } from './compare'
 import { hasReference } from './reference'
 import { bareFramed, FRAME, framed, TEMPLATE_NOTE } from './shell-frame'
 
@@ -298,7 +298,11 @@ test.describe('Template design parity', () => {
         ? { ...(await bareFramed(page, b.board)), masks: [] }
         : await framed(page, b.board)
       const extra: Mask[] = []
-      for (const m of b.masks?.(page) ?? []) extra.push(...(await boxes(m)))
+      const whys = new Set<string>()
+      for (const m of b.masks?.(page) ?? []) {
+        extra.push(...(await boxes(m)))
+        whys.add(m.why)
+      }
       const masks = [...f.masks, ...(b.note ? [TEMPLATE_NOTE] : []), ...extra]
       let { ours, board } = f
       // Bottom-most first, so each cut's y is in the side's original rows.
@@ -313,6 +317,23 @@ test.describe('Template design parity', () => {
       console.log(
         `${b.board} full frame: diff ${ratio.toFixed(4)} (${size}, ${masks.length} masks)`
       )
+      recordParity({
+        board: b.board.replace('.png', ''),
+        group: 'Templates',
+        ratio,
+        area: `full frame 1438×938, ${masks.length} masks`,
+        limit: 0.02,
+        note: [
+          b.bare
+            ? 'Outside the shell: nothing aligned.'
+            : 'Sidebar aligned (Money band cut; logo, identity, badges, profile masked).',
+          b.note ? 'Template note (canvas annotation) masked.' : '',
+          ...whys,
+          ...(b.cuts ?? []).map((c) => `Cut (${c.side}): ${c.why}`),
+        ]
+          .filter(Boolean)
+          .join(' '),
+      })
       expect(ratio).toBeLessThanOrEqual(0.02)
     })
   }
@@ -362,6 +383,14 @@ test.describe('X1 header parity', () => {
       masks,
     })
     console.log(`X1 header vs 195.png: diff ${ratio.toFixed(4)} (${size}, ${masks.length} masks)`)
+    recordParity({
+      board: 'X1 header (vs 195)',
+      group: 'Templates',
+      ratio,
+      area: 'page-header band 1202×61',
+      limit: 0.02,
+      note: 'X1 has no L2 board; its header against board 195. Crumb, title and right-hand chip masked (neutral / board-specific words).',
+    })
     expect(ratio).toBeLessThanOrEqual(0.02)
   })
 })

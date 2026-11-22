@@ -3,7 +3,7 @@ import type { Page } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
-import { compareToReference, type Mask } from './compare'
+import { compareToReference, recordParity, type Mask } from './compare'
 import { boardPngPath, hasReference } from './reference'
 
 /**
@@ -133,9 +133,16 @@ test.describe('AppShell design parity', () => {
     console.log(
       `T8A sidebar column (board x${BOARD.x} y${BOARD.y} ${BOARD.w}×${BOARD.h}, top ${topH} + foot ${footH}): diff ${ratio.toFixed(4)} (${size})`
     )
-    // 0.03, as the sidebar's own L1 parity: what remains is the board's rhythm between the search and the
-    // first group (2px tighter on T8A than on board 74, which the sidebar matches at 0.02) and self-hosted
-    // variable Geist against the board's static instances.
-    expect(ratio).toBeLessThanOrEqual(0.03)
+    recordParity({
+      board: 'T8A sidebar column',
+      group: 'Templates',
+      ratio,
+      area: `board x${BOARD.x} y${BOARD.y}, top ${topH} + foot ${footH} rows`,
+      limit: 0.02,
+      note: 'Money band cut; logo, identity, badges, profile masked. The 28px group labels (S02-T09) closed the 2px rhythm gap this check used to allow 0.03 for.',
+    })
+    // 0.02 since S02-T09 set the group labels at the L2/L3 sheets' 28px: what remains is self-hosted variable
+    // Geist against the board's static instances.
+    expect(ratio).toBeLessThanOrEqual(0.02)
   })
 })

@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { isPending, prepare, settle } from '../visual/helpers'
-import { compareToReference, type Mask } from './compare'
+import { compareToReference, recordParity, type Mask } from './compare'
 import { captureElement, closeReference, hasReference, renderReference } from './reference'
 
 /**
@@ -73,6 +73,14 @@ test.describe('L1 Component Sheet parity', () => {
       await refPage.close()
       const { ratio, size } = compareToReference(ours, ref, { name: `l1-${s.id}`, masks })
       console.log(`L1 ${s.id}: diff ${ratio.toFixed(4)} (${size})`)
+      recordParity({
+        board: s.id === 'k00' ? 'k00 (Page header row down)' : s.id,
+        group: s.id === 'k00' ? 'L1 k00' : 'L1 sheet',
+        ratio,
+        area: size,
+        limit: s.max ?? 0.02,
+        note: s.mask ? `Masked: ${s.mask}.` : '',
+      })
       expect(ratio).toBeLessThanOrEqual(s.max ?? 0.02)
     })
   }

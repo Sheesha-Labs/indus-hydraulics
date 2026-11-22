@@ -3,7 +3,7 @@ import type { Locator, Page } from '@playwright/test'
 import { PNG } from 'pngjs'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
-import { compareToReference, type Mask } from './compare'
+import { compareToReference, recordParity, type Mask } from './compare'
 import { boardPngPath, hasReference } from './reference'
 
 /**
@@ -143,36 +143,30 @@ function maskedShare(masks: Mask[], w: number, h: number): number {
   return n / (w * h)
 }
 
-/**
- * The two nav rows whose active state differs when the board is drawn on another page (an enquiry, Review):
- * ours is on Today. Both rows are masked.
- */
-async function activeRows(page: Page, boardActive: string): Promise<Mask[]> {
-  return page.evaluate(
-    (keys) => {
-      return keys.map((k) => {
-        const b = document.querySelector(`[data-nav="${k}"]`)!.getBoundingClientRect()
-        return {
-          x: Math.floor(b.x),
-          y: Math.floor(b.y),
-          w: Math.ceil(b.width) + 2,
-          h: Math.ceil(b.height) + 2,
-        }
-      })
-    },
-    ['today', boardActive]
-  )
+/** A sidebar row's box (board coordinates), for a row whose active state differs from the board's. */
+async function navRow(page: Page, key: string): Promise<Mask> {
+  const b = (await page.locator(`[data-nav="${key}"]`).boundingBox())!
+  return {
+    x: Math.floor(b.x),
+    y: Math.floor(b.y),
+    w: Math.ceil(b.width) + 2,
+    h: Math.ceil(b.height) + 2,
+  }
 }
+
+/** Masks every shell board shares (the sidebar's), for the summary. */
+const SIDEBAR_NOTE =
+  'Sidebar: logo slot, identity line, avatar row, badge pills (data), rows Money→spacer (C10 row the boards never drew).'
 
 async function measure(
   page: Page,
   boardFile: string,
   keep: Mask[],
   extraMasks: Mask[] = [],
-  boardActive?: string
+  note = ''
 ): Promise<number> {
   await still(page)
-  const extra = boardActive ? [...extraMasks, ...(await activeRows(page, boardActive))] : extraMasks
+  const extra = extraMasks
   const board = PNG.sync.read(readFileSync(boardPngPath(boardFile)))
   const side = await sidebarMasks(page)
   const sidebarW = side.collapsed ? 64 : 236
@@ -186,6 +180,14 @@ async function measure(
   const line = `${boardFile}: diff ${ratio.toFixed(4)} of the frame; ${inArea.toFixed(4)} of the ${(compared * 100).toFixed(0)}% compared (${size})`
   results.push(line)
   console.log(line)
+  recordParity({
+    board: boardFile.replace(/\.png$/, ''),
+    group: 'Shell surfaces',
+    ratio: inArea,
+    area: `${(compared * 100).toFixed(0)}% of the 1440×940 frame`,
+    limit: LIMIT,
+    note: [note, SIDEBAR_NOTE].filter(Boolean).join(' '),
+  })
   return inArea
 }
 
@@ -250,7 +252,8 @@ test.describe('Shell surfaces design parity', () => {
       [
         { x: Math.floor(glyph!.x) - 2, y: 84, w: Math.ceil(glyph!.width) + 6, h: 32 },
         { x: Math.floor(typed!.x) - 16, y: 84, w: 90, h: 32 },
-      ]
+      ],
+      "Kept: input row + panel top edge. Masked: result rows and footer (S31 data); search glyph (lucide vs the board's ⌕ text glyph); typed reference (neutral Q10001)."
     )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
@@ -270,7 +273,8 @@ test.describe('Shell surfaces design parity', () => {
       [
         { x: Math.floor(glyph!.x) - 2, y: 84, w: Math.ceil(glyph!.width) + 6, h: 32 },
         { x: 530, y: 86, w: 230, h: 28 },
-      ]
+      ],
+      'Kept: input row. Masked: answer (S31); search glyph; typed question (neutral part number).'
     )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
@@ -299,7 +303,8 @@ test.describe('Shell surfaces design parity', () => {
       [
         { x: Math.floor(mark!.x), y: Math.floor(mark!.y), w: Math.ceil(mark!.width) + 3, h: 34 },
         { x: Math.floor(tabs!.x), y: Math.floor(tabs!.y), w: Math.ceil(tabs!.width) + 2, h: 34 },
-      ]
+      ],
+      'Kept: drawer head, tab rule, foot. Masked: rows (S30); "Mark all read" (disabled: nothing to mark); tab labels (board counts All 8 / Needs you 3 widen them: S30 data). Close-button focus ring removed by a pointer click (board draws it at rest).'
     )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
@@ -324,7 +329,8 @@ test.describe('Shell surfaces design parity', () => {
         { x: 1039, y: 0, w: 401, h: 80 },
         { x: 1039, y: 805, w: 401, h: 135 },
       ],
-      [title, { x: 1060, y: 820, w: 360, h: 100 }]
+      [title, { x: 1060, y: 820, w: 360, h: 100 }],
+      'Kept: panel frame, head (Assistant tag, title, status pill, close) and ask box frame. Masked: the record number (neutral 0001), the sections (S06-T08), the ask box text (neutral).'
     )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
@@ -351,7 +357,13 @@ test.describe('Shell surfaces design parity', () => {
       '[data-part="source"] > div > span',
     ])
       for (const el of await page.locator(sel).all()) masks.push(await textBoxOf(el))
-    const r = await measure(page, 'S04A.png', [{ x: 979, y: 0, w: 461, h: 940 }], masks)
+    const r = await measure(
+      page,
+      'S04A.png',
+      [{ x: 979, y: 0, w: 461, h: 940 }],
+      masks,
+      "Kept: the whole drawer. Masked: neutral words that differ (title, source document line, quote, its location line); the PDF label (kit badge 9.5px red; the sheet's `.ka-src .sh span` paints it grey 12px)."
+    )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
@@ -360,7 +372,13 @@ test.describe('Shell surfaces design parity', () => {
     await page.getByRole('button', { name: /account menu/ }).click()
     await expect(page.getByRole('menu')).toBeVisible()
     // Kept: the sidebar and its menu. Masked: the page (Today, S07) and the paused strip (S05 pause).
-    const r = await measure(page, 'S05A.png', [])
+    const r = await measure(
+      page,
+      'S05A.png',
+      [],
+      [],
+      'Kept: sidebar + profile menu. Masked: the page (Today, S07) and the paused strip (S05).'
+    )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
@@ -382,7 +400,8 @@ test.describe('Shell surfaces design parity', () => {
       page,
       'S05B.png',
       [{ x: 60, y: 190, w: 50, h: 40 }],
-      [{ x: 0, y: 105, w: 66, h: 125 }]
+      [{ x: 0, y: 105, w: 66, h: 125 }],
+      'Kept: collapsed rail + Mail tooltip. Masked: the Mail page (S05); Today and Mail rows (board is on Mail).'
     )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
@@ -402,10 +421,16 @@ test.describe('Shell surfaces design parity', () => {
     await page.locator('#content').focus()
     // Kept: the head, the search field and the foot. Masked: the articles, ask box and shortcut list
     // (S35 content; the board shows the record page's articles).
-    const r = await measure(page, 'S06A.png', [
-      { x: 1039, y: 0, w: 401, h: 118 },
-      { x: 1039, y: 876, w: 401, h: 64 },
-    ])
+    const r = await measure(
+      page,
+      'S06A.png',
+      [
+        { x: 1039, y: 0, w: 401, h: 118 },
+        { x: 1039, y: 876, w: 401, h: 64 },
+      ],
+      [],
+      'Kept: head, search field, foot. Masked: articles, ask box, shortcuts (S35 content).'
+    )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
 
@@ -457,6 +482,14 @@ test.describe('Shell surfaces design parity', () => {
     const line = `S07A.png dialog: diff ${ratio.toFixed(4)} of the crop; ${inArea.toFixed(4)} of the ${(compared * 100).toFixed(0)}% compared (${size})`
     results.push(line)
     console.log(line)
+    recordParity({
+      board: 'S07A',
+      group: 'Shell surfaces',
+      ratio: inArea,
+      area: `ConfirmDialog frame 520×288 (/_kit/overlay) vs the board at (578, 327); ${(compared * 100).toFixed(0)}% compared`,
+      limit: LIMIT,
+      note: 'No console page asks for a confirmation before S09: the kit frame renders the same recipe. Masked: neutral title, description and first two consequences; the → arrows (fallback face, CLAUDE.md §4.6).',
+    })
     expect(inArea).toBeLessThanOrEqual(LIMIT)
   })
 
@@ -506,8 +539,10 @@ test.describe('Shell surfaces design parity', () => {
           w: Math.ceil(running.right) - 300 + 40,
           h: Math.ceil(running.undo.height) + 16,
         },
+        // The board sits on Review (active row); the specimen is a kit page with no active row.
+        await navRow(page, 'review'),
       ],
-      'review'
+      'Kept: toast region. Masked: the undo countdown and the close it pushes (ADR-11 "Undo m:ss"; board "Undo"); the running toast title (neutral) and its spinner (reduced motion: still ring); the Review row (board active there).'
     )
     expect(r).toBeLessThanOrEqual(LIMIT)
   })
@@ -540,7 +575,15 @@ test.describe('Shell surfaces design parity', () => {
     const line = `S08A.png strip: diff ${ratio.toFixed(4)} (${size})`
     results.push(line)
     console.log(line)
-    expect(ratio).toBeLessThanOrEqual(0.03)
+    recordParity({
+      board: 'S08A',
+      group: 'Shell surfaces',
+      ratio,
+      area: "banner strip 1202×40 (ours at the page top vs the board's first strip under its PageHeader)",
+      limit: LIMIT,
+      note: 'Masked: "+2 more" (C23: one banner at a time; the board stacks both).',
+    })
+    expect(ratio).toBeLessThanOrEqual(LIMIT)
   })
 
   test.afterAll(() => {
