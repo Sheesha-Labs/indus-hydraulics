@@ -4,7 +4,16 @@
 import { err, ok, type Result } from '@indus/ops-core'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { problemsIn } from '../guards/token-classes'
-import { act, cleanup, fireEvent, render, screen, userEvent, within } from '../lib/test-dom'
+import {
+  act,
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  userEvent,
+  waitFor,
+  within,
+} from '../lib/test-dom'
 import ActionForm, { type FormAction } from './ActionForm'
 import Dropzone, { formatBytes, isAccepted, MAX_UPLOAD_BYTES, type UploadFile } from './Dropzone'
 import Field from './Field'
@@ -245,7 +254,8 @@ describe('ActionForm', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Save' }))
     expect(action).toHaveBeenCalledTimes(1)
     const price = screen.getByRole('textbox', { name: 'Unit price' })
-    expect(price).toHaveAttribute('aria-invalid', 'true')
+    // useActionState settles after the click resolves; wait for the result, do not race it.
+    await waitFor(() => expect(price).toHaveAttribute('aria-invalid', 'true'))
     expect(price).toHaveAccessibleDescription(/Enter a price/)
     expect(screen.getByRole('textbox', { name: 'Note' })).not.toHaveAttribute('aria-invalid')
     expect(screen.getByText('Check the highlighted fields.')).toBeInTheDocument()

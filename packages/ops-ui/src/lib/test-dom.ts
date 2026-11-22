@@ -18,5 +18,5 @@ declare module 'bun:test' {
 }
 
 expect.extend(matchers)
-export { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react'
+export { act, cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 export { default as userEvent } from '@testing-library/user-event'
