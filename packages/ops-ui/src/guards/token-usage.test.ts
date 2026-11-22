@@ -2,11 +2,14 @@ import { describe, expect, it } from 'vitest'
 import { code, lineOf, sources, UI_ROOTS } from './scan'
 import { problemsIn } from './token-classes'
 
+/** 256 files at S01-T10 (tests included), minus 10, rounded down to a multiple of 10. */
+const MIN_FILES = 240
+
 describe('token usage', () => {
   const files = sources(UI_ROOTS, /\.(tsx?)$/, { includeTests: true })
 
-  it('finds the source it guards', () => {
-    expect(files.length).toBeGreaterThan(5)
+  it(`finds the source it guards: ${files.length} files, at least ${MIN_FILES}`, () => {
+    expect(files.length).toBeGreaterThanOrEqual(MIN_FILES)
   })
 
   it('every io- class names a generated token', () => {

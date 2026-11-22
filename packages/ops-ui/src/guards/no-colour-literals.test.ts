@@ -11,11 +11,14 @@ function literalsIn(text: string): { index: number; match: string }[] {
   return [...t.matchAll(HEX), ...t.matchAll(FUNCS)].map((m) => ({ index: m.index, match: m[0] }))
 }
 
+/** 203 files at S01-T10, minus 10, rounded down to a multiple of 10. */
+const MIN_FILES = 190
+
 describe('no colour literals', () => {
   const files = sources(UI_ROOTS, /\.tsx?$/)
 
-  it('finds the source it guards', () => {
-    expect(files.length).toBeGreaterThan(5)
+  it(`finds the source it guards: ${files.length} files, at least ${MIN_FILES}`, () => {
+    expect(files.length).toBeGreaterThanOrEqual(MIN_FILES)
   })
 
   it('no file writes a colour literal', () => {

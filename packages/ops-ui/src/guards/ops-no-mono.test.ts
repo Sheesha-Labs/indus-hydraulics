@@ -12,8 +12,11 @@ const ROOTS = [
   'packages/ops-ui/src',
   'packages/ops-pdf/src',
 ] as const
-/** Raised to 150 by S01-T10 once the kits exist. */
-const MIN_FILES = 5
+/**
+ * Raised from 5 to 150 by S01-T10 once the kits existed (210 files then: apps/ops/src 64,
+ * packages/ops-ui/src 145, packages/ops-pdf/src 1). A drop below it means a root moved out of the scan.
+ */
+const MIN_FILES = 150
 /** The recipient's view of an outbound email; its family comes from --io-mail-font (Arial). */
 const FONT_EXEMPT = 'packages/ops-ui/src/mail/Email.tsx'
 const THEME = 'packages/ops-ui/src/styles/theme.css'
@@ -35,7 +38,8 @@ describe('Ops has no monospace', () => {
   }))
   const files = perRoot.flatMap((r) => r.files)
 
-  it('scans every root that exists, and enough files', () => {
+  const counts = perRoot.map((r) => `${r.root} ${r.files.length}`).join(', ')
+  it(`scans every root that exists, and at least ${MIN_FILES} files (${files.length}: ${counts})`, () => {
     for (const r of perRoot)
       if (r.exists) expect(r.files.length, `${r.root} scanned no files`).toBeGreaterThan(0)
     expect(files.length).toBeGreaterThanOrEqual(MIN_FILES)
