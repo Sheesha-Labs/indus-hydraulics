@@ -21,7 +21,9 @@ async function continueWithGoogle(page: Page, claims: GoogleClaims) {
   await google.click()
 }
 
-test('an invited, active Workspace account signs in and lands per the landing rule', async ({ page }) => {
+test('an invited, active Workspace account signs in and lands per the landing rule', async ({
+  page,
+}) => {
   await continueWithGoogle(page, { email: `owner@${DOMAIN}`, hd: DOMAIN })
   // The first redirect may land on a page the dev server is still compiling.
   await expect(page).toHaveURL(/\/(today|welcome)$/, { timeout: 30_000 })

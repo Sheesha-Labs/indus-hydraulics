@@ -37,7 +37,10 @@ export function resetDemoAuth(emails: readonly string[]): void {
 export function latestSinkMail(to: string, kind: string): { text: string; subject: string } | null {
   const dir = process.env.OPS_E2E_MAIL_SINK
   if (!dir) throw new Error('OPS_E2E_MAIL_SINK must be set for the dev server and the test run')
-  const files = readdirSync(dir).filter((f) => f.endsWith('.json')).sort().reverse()
+  const files = readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .sort()
+    .reverse()
   for (const f of files) {
     const m = JSON.parse(readFileSync(join(dir, f), 'utf8')) as {
       to: string

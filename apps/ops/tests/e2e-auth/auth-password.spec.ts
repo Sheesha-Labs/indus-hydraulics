@@ -46,7 +46,9 @@ async function hydrated(page: Page, name: string | RegExp) {
   return button
 }
 
-async function signedInContext(browser: import('@playwright/test').Browser): Promise<BrowserContext> {
+async function signedInContext(
+  browser: import('@playwright/test').Browser
+): Promise<BrowserContext> {
   const context = await browser.newContext()
   const res = await signInByEmail(context.request, HELPER)
   expect(res.status()).toBe(302)
@@ -72,7 +74,9 @@ test('enrol an authenticator, then set a password in Settings › Security', asy
 
   // The six-digit field submits its form by itself once six digits are in (CodeInput).
   await hydrated(page, 'Turn on two-step verification')
-  await page.getByLabel('Six-digit code from your authenticator app').fill(await freshCode(page, lastStep))
+  await page
+    .getByLabel('Six-digit code from your authenticator app')
+    .fill(await freshCode(page, lastStep))
   const codes = page.getByRole('list', { name: 'Backup codes' }).getByRole('listitem')
   await expect(codes).toHaveCount(10)
   backupCodes = (await codes.allTextContents()).map((c) => c.trim())
@@ -92,7 +96,9 @@ test('password + authenticator code signs in; a password alone never does', asyn
   // Without the second factor there is no session.
   expect((await page.request.get('/api/health')).status()).toBe(401)
   await hydrated(page, 'Continue')
-  await page.getByLabel('Six-digit code from your authenticator app').fill(await freshCode(page, lastStep))
+  await page
+    .getByLabel('Six-digit code from your authenticator app')
+    .fill(await freshCode(page, lastStep))
   await expect(page).toHaveURL(/\/(today|welcome)/, { timeout: 30_000 })
 })
 
@@ -123,7 +129,9 @@ test('reset from the emailed link ends every other session', async ({ browser, p
   await page.goto('/sign-in/forgot')
   await page.getByLabel('Email').fill(HELPER)
   await (await hydrated(page, 'Send link')).click()
-  await expect(page.getByText('If that account exists, a link is on its way.', { exact: false })).toBeVisible()
+  await expect(
+    page.getByText('If that account exists, a link is on its way.', { exact: false })
+  ).toBeVisible()
 
   let link = ''
   await expect
@@ -138,7 +146,9 @@ test('reset from the emailed link ends every other session', async ({ browser, p
   await page.getByLabel('New password').fill(RESET_PASSWORD)
   await page.getByLabel('Authenticator code').fill(await freshCode(page, lastStep))
   await save.click()
-  await expect(page).toHaveURL(/\/(today|welcome|sign-in\?reason=password_saved)/, { timeout: 30_000 })
+  await expect(page).toHaveURL(/\/(today|welcome|sign-in\?reason=password_saved)/, {
+    timeout: 30_000,
+  })
 
   await otherPage.goto('/enquiries')
   await expect(otherPage).toHaveURL(/\/sign-in/)
