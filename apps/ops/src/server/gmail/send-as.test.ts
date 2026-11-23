@@ -28,4 +28,17 @@ describe('send-as and signature', () => {
     expect(signatureLines(null)).toEqual([])
     expect(sanitizeSignature('<script>bad()</script>')).toBeNull()
   })
+
+  it('keeps a table-laid-out signature on separate lines (rows, and cells side by side)', () => {
+    const html =
+      '<table><tbody><tr><td><span>Owner Example</span></td></tr><tr><td><span>General Manager</span></td></tr>' +
+      '<tr><td>Example Valve Co</td><td>Dubai</td></tr></tbody></table>'
+    const clean = sanitizeSignature(html)
+    expect(clean).toContain('<tr>')
+    expect(signatureLines(clean)).toEqual([
+      'Owner Example',
+      'General Manager',
+      'Example Valve Co Dubai',
+    ])
+  })
 })

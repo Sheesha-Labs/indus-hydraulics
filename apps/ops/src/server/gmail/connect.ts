@@ -286,7 +286,9 @@ async function storeConnection(input: {
           ownerUserId: input.userId,
           status: 'connecting',
           dailySendCap: input.role === 'supplier' ? 80 : 40,
-          ...(input.backfillMonths != null ? { backfillMonths: input.backfillMonths } : {}),
+          // None until step 4 is confirmed: closing the dialog there must not leave the column's default (12)
+          // showing as "Backfill · 12 months" for an import nobody asked for (2026-11-23).
+          backfillMonths: input.backfillMonths ?? 0,
         },
         select: { id: true },
       })
