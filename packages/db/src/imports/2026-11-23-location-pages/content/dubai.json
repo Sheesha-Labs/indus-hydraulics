@@ -1,0 +1,107 @@
+{
+  "slug": "dubai",
+  "meta_title": "Hydraulic Hose Repair Dubai, Al Qusais",
+  "meta_description": "Hydraulic hose repair in Dubai: bring it to our Al Qusais bay or have it built at the machine in Al Quoz, Ras Al Khor, Jebel Ali and Dubai Investment Park.",
+  "zones": {
+    "body": "Our hose bay is in Al Qusais, so every zone below is reached from a fixed point. What changes from one to the next is whether the machine can move, and what the gate requires.",
+    "items": [
+      {
+        "name": "Al Quoz",
+        "desc": "Al Quoz is workshops, fabrication units, vehicle and equipment garages and warehouse yards, packed close together. The hydraulics are forklifts, press brakes, tail-lifts, scissor lifts and truck-mounted cranes. Most are small-bore assemblies in two-wire hose with JIC or BSP ends. Many of these machines cannot move, and yards are tight for a van, so building at the machine often beats carrying the failed hose to the bay. Bring the old assembly if you can; we copy it."
+      },
+      {
+        "name": "Ras Al Khor",
+        "desc": "Ras Al Khor mixes light industrial units with equipment hire yards, scrap and recycling operations and plant storage. Hire fleets here run excavators, skid steers and small cranes that come back from site with damaged hose and no record of what was fitted. We build replacements from the sample, the layline or measured routing, and can re-hose a returned machine in one visit and tag each assembly to its circuit so the next fault is easier to trace."
+      },
+      {
+        "name": "Jebel Ali and JAFZA",
+        "desc": "Jebel Ali and the free zone hold port and terminal handling equipment, logistics yards and heavy fabrication. Reach stackers, forklifts and container handlers work in salt air, so fittings corrode before the hose wears out. We fit plated or stainless ends where the circuit allows and add abrasion sleeves where hose rubs the frame. Gate passes and induction are normally required, and arrange them before a failure, not at the gate."
+      },
+      {
+        "name": "Dubai Investment Park",
+        "desc": "Dubai Investment Park is a spread-out estate of factories, laydown yards and plant rooms, with long drives between units. The hydraulics are presses, injection and forming machinery, lifts and yard plant. Where a press has a fixed hose run, we make the assembly from the existing one and fit it to the original routing. Because the estate is large, send the unit number and gate details with the enquiry so the van is not looking for the entrance."
+      },
+      {
+        "name": "Al Qusais",
+        "desc": "Al Qusais is where the hose bay and warehouse sit. A failed assembly brought here is the simplest job: we match the ends, the length and the hose type against the sample and build the replacement on the bench. Drop-off suits hoses that are already off the machine, and spares built ahead for a fleet. For a machine that cannot move, we travel to it instead, with hose, ferrules and fittings on the van."
+      },
+      {
+        "name": "Al Aweer",
+        "desc": "Al Aweer carries heavy vehicle yards, aggregate and block suppliers, scrap handling and workshops serving transport fleets. Tippers, loaders, grabs and tail-lifts dominate. The hose problem is mainly abrasion and heat: hoses laid against chassis rails, exhaust-side runs and quick-couplers dragged across gravel. We can re-run damaged assemblies with spring guards or cover sleeves in the worst positions, and build spares for fleets so a failed hose is replaced from stock."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Dubai’s hose failures are mostly mundane: abrasion, heat and old assemblies nobody can identify. The useful question is whether the machine can come to the bay.",
+    "items": [
+      {
+        "name": "Construction plant",
+        "desc": "Excavators, wheel loaders, mobile cranes, concrete pumps and skid steers. Boom and stick lines run in two-wire hose to SAE J517 100R2AT or EN 853 2SN, with four-spiral EN 856 4SH on high-pressure main lines and pump circuits. The failures are abrasion at clamps, cover damage from digging, and crimps weakened by repeated flexing at the ferrule. We build at the machine so the old assembly can be copied on site, and fit guards where hose crosses sharp edges.",
+        "industry": "construction"
+      },
+      {
+        "name": "Port and marine handling equipment",
+        "desc": "Reach stackers, RTGs, forklifts and quay-side plant working in salt air. Hose is usually EN 853 2SN or compact EN 857 2SC, with JIC 37° and ORFS ends. The problem is corrosion of fittings and exposed wire where the cover has cut through, rather than burst pressure. Zinc-nickel plated or stainless ends and abrasion sleeves extend life. Access is by gate pass and induction, which should be sorted before work is needed.",
+        "industry": "marine"
+      },
+      {
+        "name": "Steel, fabrication and workshop machinery",
+        "desc": "Press brakes, shears, rolling and bending machines, overhead cranes and hydraulic power units sit across Al Quoz, Ras Al Khor and the free zones. Many have fixed hose runs on heavy frames and are not movable, so we measure and build at the machine or copy the old hose from a sample. Heat near furnaces and swarf damage to covers are the common causes; high-temperature sleeves and spring guards address both.",
+        "industry": "steel"
+      },
+      {
+        "name": "Transport fleets, tippers and transit mixers",
+        "desc": "Tipper rams, tail-lifts, transit mixer drum drives and grab loaders. Hoses run along chassis rails, flex with the body and take heat from the exhaust. Typical failures are chafed covers at clamps, twisted assemblies fitted with the wrong end orientation and quick-couplers worn from dragging. We build replacements to the original length and angle, and supply spares for fleet stock so repairs do not wait on a build.",
+        "industry": null
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Tell us whether the machine can be driven or lifted to the Al Qusais bay, or has to be hosed where it stands.",
+      "Send a photo of the failed assembly with its layline and both end fittings, or keep the old hose for copying.",
+      "Give the site name, gate or unit number and the contact who can meet the van.",
+      "Ask whether induction, a gate pass or vehicle registration is needed, and arrange it before the visit.",
+      "Say whether several machines need work, so one visit can cover all of them and each assembly can be tagged.",
+      "Confirm where the van can park and whether the machine will be shut down and isolated for the work."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Should I bring the hose to Al Qusais or have it made at my machine?",
+      "a": "If the machine can be driven, towed or lifted to the bay and the old hose is intact enough to measure, bringing it in is simple. If the machine is fixed, large, in a gated yard or the route is awkward, building at the machine is better because we measure the routing in place. Tell us what the machine is and where it is, and we will say which suits."
+    },
+    {
+      "q": "Can I get a hydraulic hose made in Dubai from the old hose?",
+      "a": "Yes. Bring the old assembly, or a clear photo of its layline and both ends. We identify the hose type, match the end fittings and thread forms, measure the length and angles, then build a replacement on the bench in Al Qusais. If the old hose is missing, give us the machine, circuit and routing and we will measure on site."
+    },
+    {
+      "q": "What do you need to repair a hydraulic hose in Al Quoz?",
+      "a": "Many Al Quoz machines sit in tight yards and cannot move. Send the machine make, the circuit that failed and a photo of the hose ends. We bring cutting and crimping equipment on the van, build at the machine and route and clamp the new assembly. Parking space for the van and a named contact at the unit help."
+    },
+    {
+      "q": "Do you build hose assemblies at the machine, or only on a bench?",
+      "a": "Both. Hose, ferrules and fittings are carried on the van, so a failed line on a machine that cannot move can be cut, crimped, fitted and clamped on site. Anything needing a rare end or a long length may need to be built at the Al Qusais hose bay and delivered to fit. We say which at the time of enquiry."
+    },
+    {
+      "q": "What hose do forklifts and tippers in Al Aweer usually need?",
+      "a": "Forklift mast and tilt lines are commonly small-bore two-wire hose to SAE 100R2AT or EN 853 2SN, with JIC or BSP ends. Tipper rams use larger bore or four-spiral hose on the main line. The failures are normally abrasion and heat, so spring guards or cover sleeves in the worst spots matter as much as the hose grade."
+    },
+    {
+      "q": "Does hose at Jebel Ali and JAFZA fail differently because of salt air?",
+      "a": "Yes. The cover resists weather but the fittings corrode, especially carbon steel ends on reach stackers and port plant. Zinc-nickel plated or stainless ends slow it, and abrasion sleeves protect covers against frame rubbing. Corroded ends can also hide a weakened crimp, so replace the whole assembly rather than reusing the fittings."
+    },
+    {
+      "q": "How do I arrange site access for hose work at Jebel Ali?",
+      "a": "Port and free zone sites normally require a gate pass, vehicle details and sometimes induction before a contractor can enter. Ask your site contact what the regime is, send us the names and vehicle details they need, and arrange it before a hose fails. Having passes ready means the visit starts at the machine, not at the gate."
+    },
+    {
+      "q": "Can you re-hose a whole machine in one visit?",
+      "a": "Yes. Re-hosing a machine in one planned visit means every assembly is built, fitted and clamped together, and tagged on request so you know which circuit each belongs to. It suits hire machines coming back from site, ageing plant and any equipment where one failure suggests the rest are the same age. We note the hose and ends against each tag."
+    },
+    {
+      "q": "Do you also supply hose and fittings in Dubai without any hose work?",
+      "a": "Yes. Hose, ferrules, hose fittings, adapters and quick couplers are supplied from Dubai stock. This is useful for workshops that crimp their own assemblies, and for engineers who just need an adapter or a coupler. Send the thread form, size and sealing type, for example JIC 37°, BSP or ORFS, so we can match it."
+    }
+  ]
+}

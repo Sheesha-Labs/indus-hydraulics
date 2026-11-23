@@ -6,6 +6,7 @@ import { db } from '@indus/db'
 import { interpolate, list, str, visibleList, type ImageValue } from '@indus/domain'
 import { getMasterPageContent } from '../../../lib/page-content'
 import { pageMetadata } from '../../../lib/seo'
+import ServiceAreaStrip from '../../../components/locations/ServiceAreaStrip'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
@@ -262,33 +263,36 @@ export default async function AboutPage({ params }: Props) {
       ) : null,
 
     cta: (
-      /* ── CTA ───────────────────────────────────────────────── */
-      <section className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-8 px-5 py-16 sm:px-8 md:grid-cols-[1fr_auto] xl:px-12">
-        <div>
-          <h2 className="mb-2 text-[28px] font-semibold tracking-[-0.02em]">
-            {t(str(cta, 'heading'))}
-          </h2>
-          <p className="text-ih-muted text-[14px]">{t(str(cta, 'body'))}</p>
-        </div>
-        <div className="flex flex-wrap gap-3 sm:shrink-0">
-          {str(cta, 'primary_cta_label') && str(cta, 'primary_cta_href') ? (
-            <Link
-              href={str(cta, 'primary_cta_href') ?? '/contact'}
-              className="bg-ih-accent flex h-11 items-center px-6 text-[14px] font-medium whitespace-nowrap text-white transition-opacity hover:opacity-90"
-            >
-              {str(cta, 'primary_cta_label')}
-            </Link>
-          ) : null}
-          {str(cta, 'secondary_cta_label') && str(cta, 'secondary_cta_href') ? (
-            <Link
-              href={str(cta, 'secondary_cta_href') ?? '/contact'}
-              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-11 items-center border px-5 text-[14px] whitespace-nowrap transition-colors"
-            >
-              {str(cta, 'secondary_cta_label')}
-            </Link>
-          ) : null}
-        </div>
-      </section>
+      /* ── Service areas, then the CTA ───────────────────────── */
+      <>
+        <ServiceAreaStrip heading="Supplied from Dubai, serviced on site" />
+        <section className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-8 px-5 py-16 sm:px-8 md:grid-cols-[1fr_auto] xl:px-12">
+          <div>
+            <h2 className="mb-2 text-[28px] font-semibold tracking-[-0.02em]">
+              {t(str(cta, 'heading'))}
+            </h2>
+            <p className="text-ih-muted text-[14px]">{t(str(cta, 'body'))}</p>
+          </div>
+          <div className="flex flex-wrap gap-3 sm:shrink-0">
+            {str(cta, 'primary_cta_label') && str(cta, 'primary_cta_href') ? (
+              <Link
+                href={str(cta, 'primary_cta_href') ?? '/contact'}
+                className="bg-ih-accent flex h-11 items-center px-6 text-[14px] font-medium whitespace-nowrap text-white transition-opacity hover:opacity-90"
+              >
+                {str(cta, 'primary_cta_label')}
+              </Link>
+            ) : null}
+            {str(cta, 'secondary_cta_label') && str(cta, 'secondary_cta_href') ? (
+              <Link
+                href={str(cta, 'secondary_cta_href') ?? '/contact'}
+                className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-11 items-center border px-5 text-[14px] whitespace-nowrap transition-colors"
+              >
+                {str(cta, 'secondary_cta_label')}
+              </Link>
+            ) : null}
+          </div>
+        </section>
+      </>
     ),
   }
 

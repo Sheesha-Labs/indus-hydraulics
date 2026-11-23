@@ -24,7 +24,7 @@ const PAGES = [
   },
   { title: 'Send an enquiry', url: '/contact', hint: 'Send a parts list to an engineer' },
   { title: 'Compare products', url: '/compare', hint: 'Side-by-side spec matrix' },
-  { title: 'Brands', url: '/brands', hint: 'Authorised distribution partners' },
+  { title: 'Brands', url: '/brands', hint: 'Authorised distributor for leading makers' },
   { title: 'Industries', url: '/industries', hint: 'What we supply, by sector' },
   { title: 'Services & case studies', url: '/services', hint: 'Rebuilds, testing, field work' },
   { title: 'Insights', url: '/blog', hint: 'Field notes and sizing guides' },

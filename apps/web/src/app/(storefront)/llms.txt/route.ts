@@ -69,7 +69,7 @@ export async function GET(): Promise<NextResponse> {
     `- [Industries we serve](${urlFor('/industries')}): the sectors and applications our engineers cover.`
   )
   lines.push(
-    `- [Brand partners](${urlFor('/brands')}): the authorized-distributor relationships behind our catalogue.`
+    `- [Authorized distributor for](${urlFor('/brands')}): the manufacturers we are authorized distributor for, and the other brands in our catalogue.`
   )
   lines.push(`- [Contact](${urlFor('/contact')}): Dubai HQ address, phone, WhatsApp, email, hours.`)
   lines.push('')
@@ -115,7 +115,7 @@ export async function GET(): Promise<NextResponse> {
   }
 
   if (brands.length > 0) {
-    lines.push('## Brand partners')
+    lines.push('## Authorized distributor for')
     lines.push('')
     for (const b of brands) {
       const origin = b.country ? ` (origin: ${b.country})` : ''

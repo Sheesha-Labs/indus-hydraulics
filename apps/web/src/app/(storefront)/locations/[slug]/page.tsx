@@ -1,40 +1,57 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import { db } from '@indus/db'
 import {
+  LOCATION_INDUSTRY_OPTIONS,
   buildBreadcrumbLd,
+  buildFaqLd,
   buildServiceLd,
+  enquiryMailto,
+  img,
+  list,
   serviceAreaBySlug,
   serviceAreasOrdered,
-  enquiryMailto,
+  str,
 } from '@indus/domain'
-import { JsonLd, LeadCapturePanel, buildWhatsappHref } from '@indus/ui'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
+import { JsonLd, buildWhatsappHref } from '@indus/ui'
+import LocationLanding, {
+  type LocationIndustryCard,
+} from '../../../../components/locations/LocationLanding'
+import { categoryFaqs } from '../../../../components/category/CategoryBands'
+import { buildLocationMapModel } from '../../../../lib/location-geometry'
+import {
+  getLocationArticles,
+  getLocationRangeCards,
+  mediaStoragePath,
+} from '../../../../lib/location-data'
+import { marketSectorImages } from '../../../../lib/market-catalogue'
+import { getSubPageContent } from '../../../../lib/page-content'
+import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = { params: Promise<{ slug: string }> }
 
 /**
- * Present so the route uses the incremental cache at all — without a
- * `generateStaticParams` a dynamic route is served `no-store`. Only a couple
- * are built ahead; `dynamicParams` lets the rest render on first hit and cache
- * from there. See /p/[slug] for the full reasoning and the build-time cost.
+ * Every area is built ahead. There are nine, each is a handful of cached
+ * reads, and an area page that renders on first hit is one a crawler may find
+ * slow — `/locations/abu-dhabi` was never crawled at all before this.
  */
 export function generateStaticParams() {
-  return serviceAreasOrdered()
-    .slice(0, 2)
-    .map((a) => ({ slug: a.slug }))
+  return serviceAreasOrdered().map((a) => ({ slug: a.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const area = serviceAreaBySlug(slug)
   if (!area) return {}
+  const content = await getSubPageContent('location', { name: area.name, slug: area.slug })
+  const hero = content.values('hero')
+  const image = img(hero, 'image')
   return pageMetadata({
-    title: area.metaTitle ?? `Hydraulic hose service in ${area.name}`,
-    description: area.metaDescription ?? area.summary,
+    title: str(hero, 'meta_title') ?? area.metaTitle ?? `Hydraulic Hose Repair in ${area.name}`,
+    description: str(hero, 'meta_description') ?? area.metaDescription ?? area.summary,
     path: `/locations/${area.slug}`,
+    ogImagePath: await mediaStoragePath(image?.mediaId ?? null),
+    ogImageAlt: image?.alt ?? undefined,
   })
 }
 
@@ -44,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
  * Emits `Service` with `areaServed`, never `LocalBusiness` — a coverage area
  * is not premises, and site-locations.ts warns that asserting an unverified
  * location risks a false-business-presence penalty. There is one verified
- * office and it is in Dubai.
+ * premises and it is in Dubai.
  *
  * No response-time commitment appears anywhere. A published arrival time is an
  * operational promise, and assistants repeat it back to customers.
@@ -54,210 +71,95 @@ export default async function ServiceAreaPage({ params }: Props) {
   const area = serviceAreaBySlug(slug)
   if (!area) notFound()
 
-  const [articles, categories, settings] = await Promise.all([
-    db.blogPost.findMany({
-      where: { slug: { in: area.relatedArticles }, isPublished: true },
-      select: { slug: true, title: true, excerpt: true, readingMinutes: true },
-    }),
-    db.category.findMany({
-      where: { slug: { in: area.relatedCategories }, isPublished: true },
-      select: { slug: true, name: true, shortDescription: true },
-    }),
+  const content = await getSubPageContent('location', { name: area.name, slug: area.slug })
+
+  // An editor's pick of ranges replaces the record's; a blank list keeps it.
+  const pickedRanges = list<{ category?: string | null }>(content.values('ranges'), 'items')
+    .map((row) => row.category)
+    .filter((s): s is string => typeof s === 'string' && s !== '')
+  const rangeSlugs = pickedRanges.length > 0 ? pickedRanges : area.relatedCategories
+
+  const [ranges, articles, sectorImages, settings] = await Promise.all([
+    getLocationRangeCards(rangeSlugs),
+    getLocationArticles(area.relatedArticles),
+    marketSectorImages(),
     getStoreSettings(),
   ])
 
-  // Preserve the curated order rather than whatever the database returned.
-  const orderedArticles = area.relatedArticles
-    .map((s) => articles.find((a) => a.slug === s))
-    .filter((a): a is NonNullable<typeof a> => Boolean(a))
+  const industryCards: Record<string, LocationIndustryCard> = {}
+  for (const option of LOCATION_INDUSTRY_OPTIONS) {
+    const image = sectorImages[option.value]
+    industryCards[option.value] = {
+      slug: option.value,
+      name: option.label,
+      url: image?.url ?? null,
+      alt: image?.alt ?? null,
+    }
+  }
 
   const pageUrl = urlFor(`/locations/${area.slug}`)
+  const hero = content.values('hero')
+  const heroImage = img(hero, 'image')
+  const heroImageUrl = crawlableImageUrl(await mediaStoragePath(heroImage?.mediaId ?? null))
+
+  // FAQ markup only for questions a reader can see: the band on, and written.
+  const faqs = content.isOn('faq') ? categoryFaqs(content.values('faq')) : []
+  const faqLd = faqs.length > 0 ? buildFaqLd({ faqs }) : null
+
+  const serviceLd = buildServiceLd({
+    name: `Hydraulic hose repair and on-site service in ${area.name}`,
+    description: str(hero, 'meta_description') ?? area.metaDescription ?? area.summary,
+    url: pageUrl,
+    areaServed: [{ name: area.name, type: 'AdministrativeArea', sameAs: area.wikipedia }],
+    providerId: ORG_ID,
+    providerName: SITE_NAME,
+    serviceType: 'Hydraulic hose assembly and repair',
+    images: heroImageUrl ? [{ url: heroImageUrl, caption: str(hero, 'image_caption') }] : null,
+    // The ranges on the page, as what the service draws on. Each entry is a
+    // real, published shelf the page links to.
+    override:
+      ranges.length > 0
+        ? {
+            hasOfferCatalog: {
+              '@type': 'OfferCatalog',
+              name: `Hose and fittings stocked for ${area.name}`,
+              itemListElement: ranges.map((r) => ({
+                '@type': 'OfferCatalog',
+                name: r.name,
+                url: urlFor(`/c/${r.slug}`),
+              })),
+            },
+          }
+        : undefined,
+  })
+
+  const breadcrumbLd = buildBreadcrumbLd({
+    items: [
+      { name: 'Home', url: urlFor('/') },
+      { name: 'Service areas', url: urlFor('/locations') },
+      { name: area.name, url: pageUrl },
+    ],
+  })
 
   return (
-    <main className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
-      <JsonLd
-        data={[
-          buildServiceLd({
-            name: `Hydraulic hose service in ${area.name}`,
-            description: area.summary,
-            url: pageUrl,
-            areaServed: [area.name],
-            providerId: ORG_ID,
-            providerName: SITE_NAME,
-            serviceType: 'Hydraulic hose assembly and repair',
-          }),
-          buildBreadcrumbLd({
-            items: [
-              { name: 'Home', url: urlFor('/') },
-              { name: 'Service areas', url: urlFor('/locations') },
-              { name: area.name, url: pageUrl },
-            ],
-          }),
-        ]}
-      />
-
-      <nav className="mono text-ih-muted flex items-center gap-2 pt-8 text-[12px]">
-        <Link href="/" className="hover:text-ih-ink">
-          Home
-        </Link>
-        <span className="opacity-40">/</span>
-        <Link href="/locations" className="hover:text-ih-ink">
-          Service areas
-        </Link>
-        <span className="opacity-40">/</span>
-        <span className="text-ih-ink">{area.name}</span>
-      </nav>
-
-      <header className="max-w-[760px] py-8">
-        <p className="mono text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase">
-          {area.region}
-        </p>
-        <h1 className="mb-4 font-serif text-[clamp(30px,4.5vw,46px)] leading-[1.1] font-normal tracking-[-0.02em]">
-          Hydraulic hose service in {area.name}
-        </h1>
-        <p className="text-ih-muted text-[17px] leading-[1.6]">{area.intro}</p>
-      </header>
-
-      <div className="grid grid-cols-1 items-start gap-10 pb-12 lg:grid-cols-[minmax(0,1fr)_320px]">
-        <div className="min-w-0">
-          <section className="mb-10">
-            <h2 className="mb-4 text-[22px] font-semibold tracking-[-0.01em]">
-              Where we work in {area.name}
-            </h2>
-            <ul className="mb-6 flex list-none flex-wrap gap-2 p-0">
-              {area.zones.map((zone) => (
-                <li
-                  key={zone}
-                  className="mono border-ih-border bg-ih-surface text-ih-ink-2 rounded-md border px-3 py-1.5 text-[12px]"
-                >
-                  {zone}
-                </li>
-              ))}
-            </ul>
-            <h3 className="mb-2.5 text-[16px] font-semibold">What we mostly see here</h3>
-            <ul className="flex list-none flex-col gap-2 p-0">
-              {area.demand.map((item) => (
-                <li key={item} className="text-ih-ink-2 flex gap-3 text-[14.5px] leading-[1.55]">
-                  <span aria-hidden="true" className="mono text-ih-accent shrink-0">
-                    ·
-                  </span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section className="border-ih-accent bg-ih-surface-2 mb-10 rounded-lg border-l-4 p-5">
-            <p className="mono text-ih-muted mb-1.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
-              What sets the timeline here
-            </p>
-            <p className="text-ih-ink mb-1.5 text-[15px] font-semibold">{area.constraint.label}</p>
-            <p className="text-ih-ink-2 text-[14px] leading-[1.6]">{area.constraint.detail}</p>
-          </section>
-
-          {orderedArticles.length > 0 && (
-            <section className="mb-10">
-              <h2 className="mb-4 text-[22px] font-semibold tracking-[-0.01em]">
-                Worth reading before you call
-              </h2>
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {orderedArticles.map((article) => (
-                  <Link
-                    key={article.slug}
-                    href={`/blog/${article.slug}`}
-                    className="group border-ih-border bg-ih-surface hover:border-ih-accent flex min-w-0 flex-col rounded-lg border p-4 transition-colors"
-                  >
-                    <h3 className="text-ih-ink group-hover:text-ih-accent mb-1.5 text-[15px] leading-[1.3] font-semibold">
-                      {article.title}
-                    </h3>
-                    {article.excerpt && (
-                      <p className="text-ih-muted line-clamp-2 text-[13px] leading-[1.5]">
-                        {article.excerpt}
-                      </p>
-                    )}
-                    {article.readingMinutes && (
-                      <p className="mono text-ih-muted-2 mt-auto pt-2 text-[11px]">
-                        {article.readingMinutes} min read
-                      </p>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-        </div>
-
-        <aside className="flex min-w-0 flex-col gap-4 lg:sticky lg:top-24">
-          <div className="border-ih-border bg-ih-surface rounded-lg border p-5">
-            <p className="mono text-ih-muted mb-2.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
-              What to have ready
-            </p>
-            <ul className="text-ih-ink-2 flex list-none flex-col gap-1.5 p-0 text-[13.5px] leading-[1.5]">
-              <li>Bore, and the hose grade if the layline is legible</li>
-              <li>Both fitting types, and the angle between them</li>
-              <li>Overall length</li>
-              <li>Whether the site needs a permit or induction</li>
-            </ul>
-            <p className="text-ih-muted-2 mt-3 text-[12.5px] leading-[1.5]">
-              That determines whether the parts are already on the van — which is the difference
-              between one visit and two.
-            </p>
-          </div>
-
-          {categories.length > 0 && (
-            <div className="border-ih-border bg-ih-surface rounded-lg border p-5">
-              <p className="mono text-ih-muted mb-2.5 text-[10.5px] font-medium tracking-[0.13em] uppercase">
-                Stocked ranges
-              </p>
-              <ul className="flex list-none flex-col gap-2 p-0">
-                {categories.map((c) => (
-                  <li key={c.slug}>
-                    <Link
-                      href={`/c/${c.slug}`}
-                      className="text-ih-ink hover:text-ih-accent text-[14px] font-medium"
-                    >
-                      {c.name} →
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </aside>
-      </div>
-
-      <div className="pb-16">
-        <LeadCapturePanel
-          heading={`Machine down in ${area.name}?`}
-          body="Tell us where it is, what failed and whether the site needs a permit. We will tell you plainly whether it is an on-site job or a bay job before anyone travels."
-          whatsappUrl={buildWhatsappHref(
+    <>
+      <JsonLd data={faqLd ? [serviceLd, breadcrumbLd, faqLd] : [serviceLd, breadcrumbLd]} />
+      <LocationLanding
+        area={area}
+        content={content}
+        mapModel={buildLocationMapModel(area.slug)}
+        ranges={ranges}
+        articles={articles}
+        industryCards={industryCards}
+        contact={{
+          phone: settings.contactPhone ?? null,
+          whatsappUrl: buildWhatsappHref(
             settings.contactPhone,
             `On-site hose service — ${area.name}`
-          )}
-          emailUrl={enquiryMailto({ subject: `On-site hose service enquiry — ${area.name}` })}
-          phone={settings.contactPhone}
-          ctaLabel="Email for on-site service"
-        />
-      </div>
-
-      <nav className="border-ih-border border-t py-8" aria-label="Other service areas">
-        <p className="mono text-ih-muted mb-3 text-[10.5px] font-medium tracking-[0.13em] uppercase">
-          Other areas we service
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {serviceAreasOrdered()
-            .filter((a) => a.slug !== area.slug)
-            .map((a) => (
-              <Link
-                key={a.slug}
-                href={`/locations/${a.slug}`}
-                className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent rounded-md border px-3.5 py-2 text-[13px] transition-colors"
-              >
-                {a.name}
-              </Link>
-            ))}
-        </div>
-      </nav>
-    </main>
+          ),
+          emailUrl: enquiryMailto({ subject: `On-site hose service enquiry — ${area.name}` }),
+        }}
+      />
+    </>
   )
 }

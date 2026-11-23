@@ -138,7 +138,7 @@ function ContentForm({ brand }: { brand: Props['brand'] }) {
                 className="border-ih-border h-9 w-full rounded-md border px-3 text-[13px]"
               />
             </Field>
-            <Field label="Partner since (year)">
+            <Field label="Authorised distributor / supplying since (year)">
               <input
                 name="partnerSince"
                 type="number"

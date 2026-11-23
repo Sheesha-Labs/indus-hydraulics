@@ -403,7 +403,7 @@ export default function DesignFoundationPage() {
             </Card>
             <div className="grid grid-cols-3 gap-7">
               <Stat value="1,134" label="SKUs in stock" />
-              <Stat value="29" label="Partner brands" />
+              <Stat value="29" label="Authorised distributor for" />
               <Stat value="23 yrs" label="In business" />
             </div>
             <div className="grid grid-cols-2 gap-3.5">

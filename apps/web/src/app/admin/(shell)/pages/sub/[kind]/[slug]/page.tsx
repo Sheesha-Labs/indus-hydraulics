@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ChevronLeft, ExternalLink } from 'lucide-react'
+import { db } from '@indus/db'
 import { getSubPageKind, isSubPageKind } from '@indus/domain'
 import AdminPageShell from '../../../../../../../components/admin/AdminPageShell'
 import { getSubPageContentFresh } from '../../../../../../../lib/page-content'
@@ -40,6 +41,19 @@ export default async function SubPageEditorRoute({ params }: Props) {
   if (!record) notFound()
 
   const content = await getSubPageContentFresh(kind, { name: record.name, slug: record.slug })
+
+  // Only the service-area template has a picker (its stocked-ranges band), and
+  // it offers every published shelf, not just the roots: an area page links
+  // to the range a buyer there needs, which is usually a leaf.
+  const categories =
+    kind === 'location'
+      ? await db.category.findMany({
+          where: { isPublished: true },
+          orderBy: { name: 'asc' },
+          select: { slug: true, name: true },
+        })
+      : []
+  const seeds = categories.length > 0 ? { categories } : {}
 
   const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
@@ -86,7 +100,8 @@ export default async function SubPageEditorRoute({ params }: Props) {
       <p className="text-ih-ink-2 mb-5 text-[13px] leading-[1.6]">
         Drag a band to move it, use the eye to hide one, and open it to override a heading. Every
         field here is an override — leave it blank and the band keeps the wording the template
-        builds from the {kind === 'market' ? 'market' : 'brand'} record.
+        builds from the {kind === 'market' ? 'market' : kind === 'location' ? 'service-area' : kind}{' '}
+        record.
       </p>
 
       {record.live ? null : (
@@ -121,7 +136,7 @@ export default async function SubPageEditorRoute({ params }: Props) {
         pageLabel={record.name}
         path={path}
         usingDefaults={content.usingDefaults}
-        seeds={{}}
+        seeds={seeds}
         initial={content.sections.map((s) => ({
           key: s.key,
           def: s.def,

@@ -1,4 +1,4 @@
-import { area, choice, eyebrow, faqList, text } from './fields'
+import { area, cardList, choice, eyebrow, faqList, image, select, text } from './fields'
 import type { ListFieldDef, MasterPageDef, SectionDef, SimpleFieldDef } from './types'
 
 /**
@@ -21,7 +21,7 @@ import type { ListFieldDef, MasterPageDef, SectionDef, SimpleFieldDef } from './
  * makes `subPageDef`'s switch fail to compile until the new kind has a
  * template — which is the point of writing it exhaustively.
  */
-export type SubPageKind = 'market' | 'brand' | 'category'
+export type SubPageKind = 'market' | 'brand' | 'category' | 'location'
 
 export type SubPageKindDef = {
   kind: SubPageKind
@@ -50,6 +50,15 @@ export const SUBPAGE_KINDS: readonly SubPageKindDef[] = [
     itemLabel: 'market page',
   },
   {
+    kind: 'location',
+    label: 'Service areas',
+    publicPath: '/locations',
+    adminPath: '/admin/pages/sub/location',
+    description:
+      'One page per UAE area we service on site, built from a shared template. The area’s facts — its map position, zones, related ranges and articles — are in code; everything a reader reads can be overridden here, and the services, zone notes, recent work and FAQ bands stay hidden until someone writes them. Never describe an area as a branch or office: there is one premises, in Dubai.',
+    itemLabel: 'area page',
+  },
+  {
     kind: 'category',
     label: 'Catalogue categories',
     publicPath: '/c',
@@ -64,7 +73,7 @@ export const SUBPAGE_KINDS: readonly SubPageKindDef[] = [
     publicPath: '/brands',
     adminPath: '/admin/pages/sub/brand',
     description:
-      'One page per partner brand, built from a shared template. Reorder its bands, hide the ones a brand has nothing to fill, and override any heading. The brand’s own facts — description, specialist, figures, case studies — are edited under Catalogue · Brands.',
+      'One page per brand, built from a shared template. Reorder its bands, hide the ones a brand has nothing to fill, and override any heading. The brand’s own facts — description, specialist, figures, case studies — are edited under Catalogue · Brands.',
     itemLabel: 'brand page',
   },
 ]
@@ -518,6 +527,252 @@ export const CATEGORY_SECTIONS: readonly SectionDef[] = [
   ),
 ]
 
+// ── the service-area (location) template ─────────────────────────────────
+
+/**
+ * A `/locations/<slug>` page — a UAE area we service on site.
+ *
+ * Same override discipline as the other sub-pages, with one addition: the
+ * bands that make a location page worth reading (services, zone notes, the
+ * equipment here, recent work, the FAQ) are WRITTEN per area, and until they
+ * are written they either render the area record's own facts or nothing at
+ * all. A generated paragraph with the emirate's name swapped in is the doorway
+ * pattern; an unwritten band is invisible instead.
+ *
+ * Two claims are policed by tests on the copy (`service-areas.test.ts`,
+ * `location-sections.test.ts`): no branch or office anywhere but Dubai, and no
+ * response or arrival time anywhere at all.
+ */
+export const LOCATION_INDUSTRY_OPTIONS = [
+  { value: 'oil-gas', label: 'Oil & gas' },
+  { value: 'marine', label: 'Marine & offshore' },
+  { value: 'power', label: 'Power & energy' },
+  { value: 'construction', label: 'Construction' },
+  { value: 'steel', label: 'Steel & metals' },
+  { value: 'mining', label: 'Mining & quarrying' },
+  { value: 'lng-future-fuels', label: 'LNG & future fuels' },
+] as const
+
+export const LOCATION_SECTIONS: readonly SectionDef[] = [
+  {
+    key: 'hero',
+    label: 'Hero',
+    description: 'Headline, opening paragraph, the area facts, the photograph and the UAE map.',
+    locked: true,
+    dataNote:
+      'Blank fields keep the area record. The map, the distance from the hose bay and the zone count always come from the record. Use {area} for the area name. The meta title is shown with " | Indus Hydraulics" appended, so keep it to about 42 characters.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Headline'),
+      overrideBody('intro', 'Opening paragraph'),
+      image(
+        'image',
+        'Photograph',
+        'A real photograph of work in this area if we have one; otherwise a representative scene, captioned as such. Alt text describes what the picture shows.'
+      ),
+      override('image_caption', 'Photograph caption', {
+        max: 160,
+        help: 'Why the picture is there, for the reader. Never provenance.',
+      }),
+      override('meta_title', 'Meta title', { max: 70 }),
+      text('meta_description', 'Meta description', {
+        max: 170,
+        optional: true,
+        help: 'Blank keeps the area summary. Aim for 140–160 characters naming the area, its zones and what we do on site.',
+      }),
+    ],
+    defaults: {
+      eyebrow: null,
+      heading: null,
+      intro: null,
+      // No `image` key: an absent image default resolves to the empty picker,
+      // and a stored `{ mediaId: null }` would read as a shipped value.
+      image_caption: null,
+      meta_title: null,
+      meta_description: null,
+    },
+  },
+  {
+    key: 'options',
+    label: 'Bay or on site',
+    description: 'The three ways to get an assembly made, and when each makes sense here.',
+    dataNote:
+      'Blank keeps the built-in three. Write exactly three cards to replace them; fewer and the built-in three render.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+      cardList('items', 'The three options', { itemLabel: 'option', max: 3, descMax: 420 }),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null, items: [] },
+  },
+  {
+    key: 'services',
+    label: 'Services in this area',
+    description: 'What we actually do on site here, each linked to the page that explains it.',
+    dataNote:
+      'Blank keeps the three core services every area gets (assembly at the machine, replacement assemblies built in the bay, whole-machine refit and tagging). Add a card ONLY for a service we genuinely deliver in this area.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+      cardList('items', 'Services', { itemLabel: 'service', max: 8, descMax: 420, withLink: true }),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null, items: [] },
+  },
+  {
+    key: 'zones',
+    label: 'Zones we cover',
+    description: 'The industrial zones in this area, with a note on what runs in each.',
+    dataNote:
+      'Blank keeps the zone names from the area record as a row of chips. Write one card per zone to replace them with notes — what is there and what equipment runs — 60 to 90 words each.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+      cardList('items', 'Zones', { itemLabel: 'zone', max: 12, descMax: 600 }),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null, items: [] },
+  },
+  {
+    key: 'industries',
+    label: 'Industries and equipment',
+    description: 'The fleets and plant that dominate this area, and the hose they run.',
+    dataNote:
+      'Blank keeps the area record: its demand list beside photo cards for its industries. Write cards to describe the equipment and the hose grades and fittings it usually needs; each card can link to an industry page.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+      {
+        key: 'items',
+        label: 'Equipment cards',
+        kind: 'list',
+        itemLabel: 'card',
+        max: 8,
+        fields: [
+          text('name', 'Title', { max: 120 }),
+          area('desc', 'Description', { max: 600, optional: false }),
+          choice('industry', 'Industry page', LOCATION_INDUSTRY_OPTIONS, {
+            placeholder: 'No industry link',
+          }),
+        ],
+      },
+    ],
+    defaults: { eyebrow: null, heading: null, body: null, items: [] },
+  },
+  {
+    key: 'access',
+    label: 'Access and permits',
+    description: 'What governs a visit here — the honest constraint — and a checklist.',
+    dataNote:
+      'Blank keeps the constraint from the area record. The checklist is one item per line. Never write an arrival or response time.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+      area('checklist', 'Checklist (one per line)', { max: 900, optional: true, help: BLANK }),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null, checklist: null },
+  },
+  {
+    key: 'prepare',
+    label: 'What to have ready',
+    description: 'What to tell us before anyone travels, and how to measure an assembly.',
+    dataNote: 'Blank keeps the built-in four items. One item per line.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+      area('checklist', 'Items (one per line)', { max: 900, optional: true, help: BLANK }),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null, checklist: null },
+  },
+  {
+    key: 'ranges',
+    label: 'Stocked ranges',
+    description: 'Catalogue ranges most often needed here, with live product counts.',
+    dataNote:
+      'Blank keeps the ranges listed on the area record. Pick categories to replace them; the cards, images and counts come from the catalogue.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      {
+        key: 'items',
+        label: 'Ranges',
+        kind: 'list',
+        itemLabel: 'range',
+        max: 10,
+        fields: [select('category', 'Category', 'categories')],
+      },
+    ],
+    defaults: { eyebrow: null, heading: null, items: [] },
+  },
+  {
+    key: 'work',
+    label: 'Recent work here',
+    description: 'Real jobs in this area, linked to their write-ups.',
+    dataNote:
+      'Hidden until someone writes it. Only real jobs — a service case, a delivered project. Never a composite or an illustration presented as a job.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      cardList('items', 'Jobs', {
+        itemLabel: 'job',
+        max: 6,
+        descMax: 420,
+        withLink: true,
+        withTag: 'Date or site',
+      }),
+    ],
+    defaults: { eyebrow: null, heading: null, items: [] },
+  },
+  {
+    key: 'faq',
+    label: 'FAQ',
+    description: 'Questions buyers in this area actually ask.',
+    dataNote:
+      'Published to Google as FAQ structured data, so the markup follows this section being switched on or off. An empty list hides the band. Facts only: no arrival times, no approvals or certifications we do not hold.',
+    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading'), faqList(12)],
+    defaults: { eyebrow: null, heading: null, items: [] },
+  },
+  {
+    key: 'reading',
+    label: 'Guides',
+    description: 'Articles worth reading before you call.',
+    dataNote: 'The articles are the ones listed on the area record.',
+    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading')],
+    defaults: { eyebrow: null, heading: null },
+  },
+  {
+    key: 'lead',
+    label: 'Closing call to action',
+    description: 'The lead-capture panel at the foot of the page.',
+    dataNote:
+      'The WhatsApp and email links build from System · Settings, and each opener is pre-framed with the area name.',
+    fields: [override('heading', 'Heading'), overrideBody('body', 'Body')],
+    defaults: { heading: null, body: null },
+  },
+  {
+    key: 'nearby',
+    label: 'Other areas',
+    description: 'Links to the nearest areas, then to every other.',
+    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading')],
+    defaults: { eyebrow: null, heading: null },
+  },
+]
+
+/** The definition for one service area's page. */
+export function locationPageDef(record: { name: string; slug: string }): MasterPageDef {
+  return {
+    key: record.slug,
+    label: record.name,
+    path: `/locations/${record.slug}`,
+    description: `The on-site service page for ${record.name}.`,
+    sections: [...LOCATION_SECTIONS],
+  }
+}
+
 /** The definition for one category's shelf page. */
 export function categoryPageDef(record: { name: string; slug: string }): MasterPageDef {
   return {
@@ -563,6 +818,8 @@ export function subPageDef(
       return brandPageDef(record)
     case 'category':
       return categoryPageDef(record)
+    case 'location':
+      return locationPageDef(record)
     // Every kind in SUBPAGE_KINDS has a case; the switch is exhaustive and the
     // type checker enforces it as kinds are added.
     default: {

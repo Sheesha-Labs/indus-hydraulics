@@ -566,7 +566,12 @@ export function buildArticleLd(input: ArticleLdInput): JsonLd {
 }
 
 /** A place a service covers, when the schema.org type is not the default. */
-export type AreaServed = { name: string; type: 'AdministrativeArea' | 'Country' }
+export type AreaServed = {
+  name: string
+  type: 'AdministrativeArea' | 'Country'
+  /** A reference page for the place (Wikipedia), so it resolves to a known entity. */
+  sameAs?: string | null
+}
 
 export type ServiceLdInput = {
   name: string
@@ -617,7 +622,7 @@ export function buildServiceLd(input: ServiceLdInput): JsonLd {
     areaServed: input.areaServed.map((a) =>
       typeof a === 'string'
         ? { '@type': 'AdministrativeArea', name: a }
-        : { '@type': a.type, name: a.name }
+        : { '@type': a.type, name: a.name, ...(a.sameAs ? { sameAs: a.sameAs } : {}) }
     ),
   }
   return mergeJsonLd(base, input.override)
