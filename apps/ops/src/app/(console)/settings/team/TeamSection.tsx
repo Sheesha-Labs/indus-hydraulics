@@ -27,7 +27,7 @@ type Props = {
 }
 
 const ROW =
-  'border-io-line grid grid-cols-[minmax(0,1fr)_120px_140px_260px] items-center gap-4 border-b px-4 py-3'
+  'border-io-line grid grid-cols-[minmax(0,1fr)_88px_108px_260px] items-center gap-4 border-b px-4 py-3'
 
 function peopleCount(n: number): string {
   return `${n} ${n === 1 ? 'person' : 'people'}`

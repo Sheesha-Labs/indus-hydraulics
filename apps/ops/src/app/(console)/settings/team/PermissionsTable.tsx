@@ -41,7 +41,7 @@ export default function PermissionsTable({
       aria-labelledby="roles-title"
       className="rounded-io-card border-io-line bg-io-card flex flex-col overflow-hidden border"
     >
-      <h2 id="roles-title" className="io-eyebrow border-io-line m-0 border-b px-4 py-[22px]">
+      <h2 id="roles-title" className="io-eyebrow border-io-line m-0 border-b px-4 py-4">
         What each role can do
       </h2>
       <table className="w-full table-fixed border-collapse text-[13px]">

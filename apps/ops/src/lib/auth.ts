@@ -16,7 +16,7 @@ import { noticeIfNewDevice, requestLocation } from '../server/access/devices'
 import { clearInviteCookie, readInviteCookie } from '../server/access/invite-cookie'
 import { acceptGoogleInvite } from '../server/access/invites'
 import { endSession } from '../server/access/sessions'
-import { signInRefusal, type InviteSignInRefusal } from '../server/access/team-core'
+import { domainOf, signInRefusal, type InviteSignInRefusal } from '../server/access/team-core'
 import { secondFactorStep } from '../server/access/sign-in'
 import {
   findActiveUserByEmail,
@@ -91,17 +91,17 @@ function refuse(reason: string): string {
   return `/sign-in?error=${reason}`
 }
 
-type GoogleInviteProfile = {
-  email?: string | null
-  email_verified?: boolean | null
-  name?: string | null
-}
+type GoogleInviteProfile = GoogleProfile & { name?: string | null }
 
 /**
  * The Google half of accepting an invitation: when the invite cookie is present, accept it for the
  * address Google verified (one transaction: the user row active, the invite accepted, auth_event
  * invite_accepted) and clear the cookie. 'accepted' signs in; a refusal code is shown only if the
  * ordinary checks would also refuse (an already-active person still signs in as usual).
+ *
+ * An invitation to a Workspace address still needs the Workspace account (the same `hd` check as any
+ * sign-in); only an invitation the Owner sent outside the domain (the logged override) accepts a
+ * verified Google account on that exact address.
  */
 async function acceptInviteFromCookie(
   profile: GoogleInviteProfile | undefined
@@ -110,6 +110,10 @@ async function acceptInviteFromCookie(
   if (!token) return null
   await clearInviteCookie()
   if (profile?.email_verified !== true || !profile.email) return 'email_unverified'
+  // Not the Workspace account: the ordinary check below refuses it with its own reason.
+  if (domainOf(profile.email) === DOMAIN.toLowerCase() && !checkGoogleProfile(profile, DOMAIN).ok) {
+    return null
+  }
   const outcome = await acceptGoogleInvite({
     token,
     email: profile.email,
