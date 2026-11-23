@@ -26,7 +26,7 @@ import { moveOutbound, PENDING } from './status'
  *   2  channel     Gmail rows only (system mail is sent by server/mail)        → stop 'wrong_channel'
  *   3  pause       "Pause everything" holds the send (C22)                     → held 'pause', wait ops/assistant.resumed
  *   4  mailbox     paused by the Owner (board 89)                              → held 'pause', wait ops/mailbox.resumed
- *   5  mailbox     the row's own mailbox must be live with send; never another → waiting_for_mailbox, wait ops/mailbox.reconnected
+ *   5  mailbox     the row's own mailbox must be live with send; never another → waiting_for_mailbox, wait ops/mailbox.live
  *   6  alias       From must still be a verified send-as alias                 → failed 'alias_not_verified'
  *   7  cap         the mailbox's daily cap (resets 04:00 GST)                  → held 'cap', wait until the reset
  *   8  basis       S06 hook: the approval's basis_hash is still current        → superseded 'stale'
@@ -191,7 +191,7 @@ export async function sendGate(outboundId: string, deps: Deps = {}): Promise<Gat
     return {
       kind: 'wait',
       reason: 'mailbox',
-      resumeEvent: 'ops/mailbox.reconnected',
+      resumeEvent: 'ops/mailbox.live',
       match: 'data.mailboxId',
     }
   }

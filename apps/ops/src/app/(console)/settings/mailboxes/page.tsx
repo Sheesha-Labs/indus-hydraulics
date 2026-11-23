@@ -1,6 +1,8 @@
-import { Button } from '@indus/ops-ui/controls'
 import { Banner } from '@indus/ops-ui/status'
 import ConnectFlowHost from '../../../../components/mailboxes/ConnectFlowHost'
+import DisconnectModal from '../../../../components/mailboxes/DisconnectModal'
+import GmailTruthPanel from '../../../../components/mailboxes/GmailTruthPanel'
+import { getHelpArticle } from '../../../../data/help'
 import MailboxCard from '../../../../components/mailboxes/MailboxCard'
 import { getConnectContext, getMailboxesPage, readConnectReturn } from '../../../../data/mailboxes'
 import { requireOpsUser } from '../../../../lib/access'
@@ -17,10 +19,11 @@ export default async function SettingsMailboxesPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }) {
   const user = await requireOpsUser().catch(signInFor('/settings/mailboxes'))
-  const [page, context, back] = await Promise.all([
+  const [page, context, back, truth] = await Promise.all([
     getMailboxesPage(user),
     getConnectContext(user),
     searchParams.then(readConnectReturn),
+    getHelpArticle('gmail-stays-the-truth'),
   ])
   const modal = {
     returnTo: 'settings' as const,
@@ -63,10 +66,8 @@ export default async function SettingsMailboxesPage({
                 ) : null
               }
               disconnect={
-                page.canManage ? (
-                  <Button variant="danger" disabled title="Disconnect arrives with board 90">
-                    Disconnect
-                  </Button>
+                page.canManage && !card.broken ? (
+                  <DisconnectModal mailboxId={card.id} address={card.address} role={card.role} />
                 ) : null
               }
             />
@@ -84,6 +85,8 @@ export default async function SettingsMailboxesPage({
           </span>
         </div>
       ) : null}
+
+      <GmailTruthPanel article={truth} />
 
       {back ? (
         <ConnectFlowHost

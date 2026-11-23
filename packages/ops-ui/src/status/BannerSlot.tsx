@@ -5,21 +5,32 @@ import { cn } from '../lib/cn'
 import Popover from '../overlay/Popover'
 import Banner, { type BannerProps } from './Banner'
 
-/** System banners under the page header, most severe first (C23). */
+/**
+ * System banners under the page header, most severe first (C23). S04-T08 adds the board 89 mailbox states:
+ * a mailbox paused by the Owner, a send that failed, the daily sending limit and the slow past-mail read.
+ */
 export type SystemBannerKind =
   | 'mailbox-disconnected'
   | 'assistant-paused'
+  | 'mailbox-paused'
   | 'sync-delayed'
+  | 'send-failed'
+  | 'limit-reached'
   | 'zoho-disconnected'
   | 'offline'
+  | 'backfill-paused'
   | 'info'
 
 export const SYSTEM_BANNER_ORDER: readonly SystemBannerKind[] = [
   'mailbox-disconnected',
   'assistant-paused',
+  'mailbox-paused',
   'sync-delayed',
+  'send-failed',
+  'limit-reached',
   'zoho-disconnected',
   'offline',
+  'backfill-paused',
   'info',
 ]
 

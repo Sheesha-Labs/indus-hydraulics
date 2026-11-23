@@ -4,6 +4,7 @@ import { refreshSendAs } from '../../server/gmail/connect'
 import { ensureIndusLabels } from '../../server/gmail/labels'
 import { gmailFor } from '../../server/gmail/mailbox-client'
 import { startWatch } from '../../server/gmail/watch'
+import { resolveMailboxDisconnected } from '../../server/notify/mailbox'
 import { defineOpsFunction } from '../define'
 
 /**
@@ -11,6 +12,9 @@ import { defineOpsFunction } from '../define'
  * signature, create or adopt the Indus/* labels, start the Gmail watch (S04-T04), then mark the mailbox live
  * and catch up from the stored history position (a reconnect resumes where it stopped: nothing is read twice).
  * The backfill starts separately, from step 4's "Read past mail" (ops/gmail.backfill.requested).
+ *
+ * S04-T08: going live resolves the locked "disconnected" notification and emits ops/mailbox.live, which every
+ * send waiting for THIS mailbox listens for (they re-gate; none ever moved to another mailbox).
  */
 export const gmailOnConnected = defineOpsFunction(
   {
@@ -54,6 +58,8 @@ export const gmailOnConnected = defineOpsFunction(
         data: { emailAddress: address, reason: 'connected' },
       })
     }
+    await step.run('resolve-disconnected', () => resolveMailboxDisconnected(mailboxId))
+    await step.sendEvent('waiting-sends', { name: 'ops/mailbox.live', data: { mailboxId } })
     return { labels, watch }
   }
 )

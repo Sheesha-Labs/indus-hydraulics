@@ -61,9 +61,39 @@ type Deps = {
 
 let disconnectedHook: ((mailboxId: string) => Promise<void>) | undefined
 
-/** S04-T08 registers the notification raiser here, so tokens.ts does not import the notify layer. */
-export function setDisconnectedHook(hook: (mailboxId: string) => Promise<void>): void {
+/** Tests replace what happens when a mailbox loses its token (default: notify/mailbox.ts, S04-T08). */
+export function setDisconnectedHook(
+  hook: ((mailboxId: string) => Promise<void>) | undefined
+): void {
   disconnectedHook = hook
+}
+
+/** The locked "mailbox disconnected" notification; loaded lazily so tokens.ts stays below the notify layer. */
+async function defaultDisconnectedHook(mailboxId: string): Promise<void> {
+  const { notifyMailboxDisconnected } = await import('../notify/mailbox')
+  await notifyMailboxDisconnected(mailboxId)
+}
+
+/**
+ * Google refused the mailbox's access (a 401 after a fresh token, or invalid_grant): token_expired, the cached
+ * access token dropped, and the locked notification raised once. Idempotent.
+ */
+export async function markTokenExpired(mailboxId: string, reason = 'unauthorized'): Promise<void> {
+  const row = await opsDb.mailbox.findUnique({ where: { id: mailboxId }, select: { status: true } })
+  if (!row) return
+  const from = row.status as MailboxStatusValue
+  await opsDb.mailbox.update({
+    where: { id: mailboxId },
+    data: {
+      lastTokenError: reason,
+      accessTokenEnc: null,
+      accessExpiresAt: null,
+      ...(canTransitionMailbox(from, 'token_expired')
+        ? { status: 'token_expired', statusReason: 'Google no longer accepts the saved access' }
+        : {}),
+    },
+  })
+  await (disconnectedHook ?? defaultDisconnectedHook)(mailboxId).catch(() => undefined)
 }
 
 /**
@@ -169,8 +199,8 @@ export async function getAccessToken(mailboxId: string, deps: Deps = {}): Promis
     { timeout: 25_000 }
   )
   if (expired || token === null) {
-    const hook = deps.onDisconnected ?? disconnectedHook
-    if (hook) await hook(mailboxId).catch(() => undefined)
+    const hook = deps.onDisconnected ?? disconnectedHook ?? defaultDisconnectedHook
+    await hook(mailboxId).catch(() => undefined)
     throw new MailboxUnavailableError(mailboxId, 'token_expired')
   }
   return token

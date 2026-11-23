@@ -2,7 +2,7 @@ import 'server-only'
 import { opsDb } from '@indus/ops-db'
 import { createGmailClient, type GmailApi } from './client'
 import type { GmailBudget } from './quota'
-import { getAccessToken } from './tokens'
+import { getAccessToken, markTokenExpired } from './tokens'
 
 /**
  * The Gmail client for one stored mailbox (S04-T02/T03): access tokens from tokens.ts, label policy from the
@@ -32,6 +32,7 @@ export function gmailFor(mailboxId: string, budget: GmailBudget): GmailApi {
     budget,
     accessToken: fake ? async () => 'test-token' : () => getAccessToken(mailboxId),
     indusLabelIds: () => indusLabelIdsOf(mailboxId),
+    onUnauthorized: () => markTokenExpired(mailboxId),
     ...(fake ? { transport: () => fake(mailboxId) } : {}),
   })
 }

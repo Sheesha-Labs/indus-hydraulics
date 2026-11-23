@@ -7,6 +7,7 @@ import { cache } from 'react'
 import type { OpsUser } from '../lib/access-core'
 import { env } from '../lib/env'
 import { firstName } from '../lib/setup-steps'
+import { getSystemBanners } from './banners'
 import { setupProgress } from './setup'
 
 /** The sidebar's identity line prints the mailbox's local part; anything else prints "—". */
@@ -71,13 +72,13 @@ export function fixtureBanners(): SystemBanner[] {
 
 /**
  * System banners under the page header (C23, S08): mailbox disconnected, Assistant paused, sync delayed,
- * Zoho disconnected. The shell shows the most severe one with "+n more". S02: none (fixtures outside
- * production behind FIXTURE_BANNERS_COOKIE). S04/S05 read the mailbox and pause state here.
+ * Zoho disconnected. The shell shows the most severe one with "+n more". S04-T08: the board 89 mailbox and
+ * pause states (data/banners.tsx); fixtures outside production behind FIXTURE_BANNERS_COOKIE.
  */
 export async function getShellBanners(
-  user?: Pick<OpsUser, 'role'>
+  user?: Pick<OpsUser, 'role' | 'id' | 'initials'>
 ): Promise<SystemBanner[]> {
-  const banners: SystemBanner[] = []
+  const banners: SystemBanner[] = user ? await getSystemBanners(user) : []
   if (user?.role === 'helper') {
     const setup = await helperSetupBanner()
     if (setup) banners.push(setup)

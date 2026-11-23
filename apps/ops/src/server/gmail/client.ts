@@ -2,7 +2,12 @@ import 'server-only'
 import { gmail as gmailApi, type gmail_v1 } from '@googleapis/gmail'
 import { OAuth2Client } from 'google-auth-library'
 import { sendCall, withBackoff } from './backoff'
-import { GmailPolicyError, HistoryTooOldError, httpStatusOf } from './errors'
+import {
+  GmailPolicyError,
+  HistoryTooOldError,
+  httpStatusOf,
+  MailboxUnavailableError,
+} from './errors'
 import { bucketFor, UNIT_COST, type GmailBudget, type UnitCostKey } from './quota'
 
 /**
@@ -130,6 +135,11 @@ export type GmailClientDeps = {
   transport?: (accessToken: () => Promise<string>) => GmailApi
   /** Test hook for backoff sleeps. */
   sleep?: (ms: number) => Promise<void>
+  /**
+   * S04-T08: Google answered 401 after a fresh token (access revoked). The mailbox becomes token_expired and
+   * the call throws MailboxUnavailableError; nothing is retried.
+   */
+  onUnauthorized?: () => Promise<void>
 }
 
 export function createGmailClient(deps: GmailClientDeps): GmailApi {
@@ -139,23 +149,45 @@ export function createGmailClient(deps: GmailClientDeps): GmailApi {
     await bucketFor(deps.mailboxId, budget).take(UNIT_COST[key], `${deps.mailboxId}:${budget}`)
   }
 
+  /** A 401 is not a transient error: mark the mailbox and stop (tokens.ts already refreshed the token). */
+  async function unauthorized<T>(p: Promise<T>): Promise<T> {
+    try {
+      return await p
+    } catch (error) {
+      const expired =
+        httpStatusOf(error) === 401 ||
+        (error instanceof MailboxUnavailableError && error.reason === 'token_expired')
+      if (expired) {
+        await deps.onUnauthorized?.().catch(() => undefined)
+        throw error instanceof MailboxUnavailableError
+          ? error
+          : new MailboxUnavailableError(deps.mailboxId, 'token_expired')
+      }
+      throw error
+    }
+  }
+
   const read = <T>(key: UnitCostKey, fn: () => Promise<T>) =>
     charge(key).then(() =>
-      withBackoff<T, () => Promise<T>>(fn, {
-        kind: 'read',
-        mailboxId: deps.mailboxId,
-        ...(deps.sleep ? { sleep: deps.sleep } : {}),
-      })
+      unauthorized(
+        withBackoff<T, () => Promise<T>>(fn, {
+          kind: 'read',
+          mailboxId: deps.mailboxId,
+          ...(deps.sleep ? { sleep: deps.sleep } : {}),
+        })
+      )
     )
 
   // Label and modify writes draw from the send bucket (quota.ts) and retry like reads.
   const labelWrite = <T>(key: UnitCostKey, fn: () => Promise<T>) =>
     charge(key, 'send').then(() =>
-      withBackoff<T, () => Promise<T>>(fn, {
-        kind: 'label',
-        mailboxId: deps.mailboxId,
-        ...(deps.sleep ? { sleep: deps.sleep } : {}),
-      })
+      unauthorized(
+        withBackoff<T, () => Promise<T>>(fn, {
+          kind: 'label',
+          mailboxId: deps.mailboxId,
+          ...(deps.sleep ? { sleep: deps.sleep } : {}),
+        })
+      )
     )
 
   async function checkLabels(add: string[] = [], remove: string[] = []) {
@@ -188,7 +220,7 @@ export function createGmailClient(deps: GmailClientDeps): GmailApi {
       // Never retried, never through withBackoff (sendCall brands it so the type checker refuses that).
       send: async (p) => {
         await charge('messages.send', 'send')
-        return sendCall(() => transport.messages.send(p))()
+        return unauthorized(sendCall(() => transport.messages.send(p))())
       },
       modify: async (p) => {
         await checkLabels(p.addLabelIds, p.removeLabelIds)

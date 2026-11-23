@@ -155,7 +155,7 @@ describe.skipIf(!DB_URL)('send gate · local database', () => {
     expect(await gate.sendGate(id, { env: PROD })).toEqual({
       kind: 'wait',
       reason: 'mailbox',
-      resumeEvent: 'ops/mailbox.reconnected',
+      resumeEvent: 'ops/mailbox.live',
       match: 'data.mailboxId',
     })
     expect(await status(id)).toMatchObject({

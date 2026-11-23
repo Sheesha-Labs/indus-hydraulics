@@ -1,14 +1,16 @@
 import 'server-only'
 import * as Sentry from '@sentry/nextjs'
 import { opsDb, Prisma, type $Enums } from '@indus/ops-db'
+import { isLockedEvent } from './locked-events'
 
 /**
  * Raise an in-app notification (S04-T06 for the send queue; S04-T08 adds resolve and the locked events).
  *
  * One OPEN notification per (user, dedupeKey): the partial unique index `notification_open_dedupe_key` makes a
- * repeat a no-op until the first is resolved. Recipients default to every active Owner; `audience: 'all'` adds
- * active Helpers. Never throws: a notification that cannot be written is logged, and the work that raised it
- * carries on.
+ * repeat a no-op until the first is resolved. Recipients: every active Owner (default), everyone active
+ * (`'all'`), or the listed user ids (inactive ones skipped). A person who switched the event off gets nothing,
+ * except for the locked events (locked-events.ts). Never throws: a notification that cannot be written is
+ * logged, and the work that raised it carries on. S30 adds channels, quiet hours and push.
  */
 export type RaiseInput = {
   event: $Enums.NotificationEvent
@@ -20,20 +22,36 @@ export type RaiseInput = {
   subjectType?: $Enums.RecordType
   subjectId?: string
   enquiryId?: string
-  audience?: 'owners' | 'all'
+  audience?: 'owners' | 'all' | readonly string[]
 }
 
 export async function raiseNotification(input: RaiseInput): Promise<{ created: number }> {
   try {
+    const audience = input.audience ?? 'owners'
     const users = await opsDb.user.findMany({
       where: {
         status: 'active',
-        ...(input.audience === 'all' ? {} : { role: 'owner' as const }),
+        ...(audience === 'all'
+          ? {}
+          : audience === 'owners'
+            ? { role: 'owner' as const }
+            : { id: { in: [...audience] } }),
       },
       select: { id: true },
     })
+    const muted = isLockedEvent(input.event)
+      ? new Set<string>()
+      : new Set(
+          (
+            await opsDb.notificationPreference.findMany({
+              where: { event: input.event, channel: 'off', userId: { in: users.map((u) => u.id) } },
+              select: { userId: true },
+            })
+          ).map((p) => p.userId)
+        )
     let created = 0
     for (const u of users) {
+      if (muted.has(u.id)) continue
       const open = await opsDb.notification.findFirst({
         where: { userId: u.id, dedupeKey: input.dedupeKey, resolvedAt: null },
         select: { id: true },
@@ -74,13 +92,4 @@ export async function raiseNotification(input: RaiseInput): Promise<{ created: n
     })
     return { created: 0 }
   }
-}
-
-/** Resolve every open notification with this key (the thing it reported has been dealt with). */
-export async function resolveNotifications(dedupeKey: string): Promise<number> {
-  const { count } = await opsDb.notification.updateMany({
-    where: { dedupeKey, resolvedAt: null },
-    data: { resolvedAt: new Date() },
-  })
-  return count
 }
