@@ -1,10 +1,10 @@
 import { canTransitionMailbox, type MailboxStatusValue } from '@indus/ops-core'
 import { opsDb } from '@indus/ops-db'
-import { refreshSendAs } from '../server/gmail/connect'
-import { ensureIndusLabels } from '../server/gmail/labels'
-import { gmailFor } from '../server/gmail/mailbox-client'
-import { startWatch } from '../server/gmail/watch'
-import { defineOpsFunction } from './define'
+import { refreshSendAs } from '../../server/gmail/connect'
+import { ensureIndusLabels } from '../../server/gmail/labels'
+import { gmailFor } from '../../server/gmail/mailbox-client'
+import { startWatch } from '../../server/gmail/watch'
+import { defineOpsFunction } from '../define'
 
 /**
  * After a mailbox is connected or reconnected (S04-T02 step 7, board 86): read send-as aliases and the
@@ -12,14 +12,14 @@ import { defineOpsFunction } from './define'
  * and catch up from the stored history position (a reconnect resumes where it stopped: nothing is read twice).
  * The backfill starts separately, from step 4's "Read past mail" (ops/gmail.backfill.requested).
  */
-export const mailboxConnected = defineOpsFunction(
+export const gmailOnConnected = defineOpsFunction(
   {
-    id: 'ops.mailbox.connected',
+    id: 'ops.mailbox.on-connected',
     concurrency: { key: 'event.data.mailboxId', limit: 1 },
     retries: 3,
     pause: 'exempt',
   },
-  { event: 'ops/mailbox.connected' },
+  [{ event: 'ops/mailbox.connected' }, { event: 'ops/mailbox.reconnected' }],
   async ({ event, step }) => {
     const mailboxId = String(event.data.mailboxId)
     await step.run('send-as', () => refreshSendAs(mailboxId))
@@ -40,11 +40,20 @@ export const mailboxConnected = defineOpsFunction(
         })
       }
     })
-    // Catch up at once: mail that arrived while the mailbox was disconnected (or since the watch started).
-    await step.sendEvent('catch-up', {
-      name: 'ops/gmail.poll.tick',
-      data: { mailboxId, reason: 'connected' },
-    })
+    // Catch up at once from the STORED history position (never reset on reconnect): mail that arrived while
+    // the mailbox was disconnected, or since the watch started.
+    const address = await step.run(
+      'address',
+      async () =>
+        (await opsDb.mailbox.findUnique({ where: { id: mailboxId }, select: { address: true } }))
+          ?.address ?? null
+    )
+    if (address) {
+      await step.sendEvent('catch-up', {
+        name: 'ops/gmail.poll.tick',
+        data: { emailAddress: address, reason: 'connected' },
+      })
+    }
     return { labels, watch }
   }
 )

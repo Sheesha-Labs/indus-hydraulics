@@ -44,8 +44,22 @@ describe('Ops Inngest functions', () => {
     expect(events.filter((e) => !e!.startsWith('ops/'))).toEqual([])
   })
 
-  it('the limits together fit the concurrency cap', () => {
+  it('the limits together fit the concurrency cap (upgrade Inngest or lower limits otherwise)', () => {
     const total = configs.reduce((sum, c) => sum + (limitOf(c.concurrency) ?? 0), 0)
-    expect(total).toBeLessThanOrEqual(OPS_INNGEST_CONCURRENCY_CAP)
+    console.info(
+      `Ops Inngest concurrency: ${total} simultaneous at most (cap ${OPS_INNGEST_CONCURRENCY_CAP}) — ` +
+        configs.map((c) => `${c.id} ${limitOf(c.concurrency)}`).join(', ')
+    )
+    expect(total, 'upgrade Inngest or lower limits').toBeLessThanOrEqual(
+      OPS_INNGEST_CONCURRENCY_CAP
+    )
+  })
+
+  it('every function declares a pause behaviour (defineOpsFunction), except the S00 heartbeat', async () => {
+    const { PAUSE_BEHAVIOUR } = await import('./define')
+    const missing = configs
+      .map((c) => c.id)
+      .filter((id) => id !== 'ops.system.heartbeat' && !PAUSE_BEHAVIOUR.has(id))
+    expect(missing).toEqual([])
   })
 })
