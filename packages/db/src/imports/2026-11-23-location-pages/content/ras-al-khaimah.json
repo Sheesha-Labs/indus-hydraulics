@@ -1,0 +1,99 @@
+{
+  "slug": "ras-al-khaimah",
+  "meta_title": "Hydraulic Hose Repair, Ras Al Khaimah",
+  "meta_description": "On-site hydraulic hose repair for Ras Al Khaimah quarries, crushers and cement plant, from Khor Khwair to Al Ghail. Hoses made at the machine from Dubai stock.",
+  "zones": {
+    "body": "Four places, one pattern: dust, vibration and heavy plant. We travel from the Dubai hose bay, about 85 km in a straight line, with hose and fittings on the van.",
+    "items": [
+      {
+        "name": "Khor Khwair",
+        "desc": "Khor Khwair is the northern coastal belt where quarries, crushers and bulk handling sit close together. Excavators, loaders and crusher feeders work in fine airborne dust, which turns every clamp, bracket and cover contact into an abrasive point. Hoses here usually fail on the outside first, so we look at where a run rubs and what holds it, then build the replacement with a guard or sleeve where the old one had none."
+      },
+      {
+        "name": "RAK Industrial Area",
+        "desc": "The RAK Industrial Area is mixed light and heavy industry: fabricators, block yards, workshops and plant yards with loaders, forklifts and tipper fleets. The machines vary, so the hose range varies too, from single-wire 100R1AT on small circuits to two-wire and compact hose on loader and excavator work. Bring a sample, a part number or the bore and both end types, and the right assemblies go out on the van."
+      },
+      {
+        "name": "RAK Maritime City",
+        "desc": "RAK Maritime City is a coastal yard and quay environment, so hydraulics see salt air as well as dust. Mobile cranes, yard loaders and workboat equipment run here. Plain zinc-plated fittings corrode at the nut and ferrule, so we recommend zinc-nickel or stainless ends on exposed runs. Hose covers also suffer from sun and spray, which is worth fixing at the same visit as the leak."
+      },
+      {
+        "name": "Al Ghail",
+        "desc": "Al Ghail sits in the inland quarry and aggregate country, where crushers, screens, conveyors and haul trucks run on long, dusty runs. Vibration at the crusher frame is the main killer of hose and fitting joints. We replace the failed assembly, then check clamp spacing, guard condition and routing, because a heavier hose clamped in the same bad position tends to fail the same way."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Ras Al Khaimah plant fails from the outside in. The grade of hose matters less than where it runs, how it is clamped and whether anything protects it.",
+    "items": [
+      {
+        "name": "Crushers, screens and feeders",
+        "desc": "Primary and secondary crushers shake everything bolted to them. Hoses on feeders, toggle adjusters and screen drives run mostly 100R2AT or EN 853 2SN with JIC or ORFS ends, and the failures are chafe at clamps and fatigue at the crimp collar. We rebuild the failed assembly, check clamp spacing and fit spring guard or abrasion sleeve where a run touches steel. The aim is to stop the repeat failure, not just the leak.",
+        "industry": "mining"
+      },
+      {
+        "name": "Excavators and wheel loaders",
+        "desc": "Quarry loaders and excavators work with dust packed into every hinge. Boom and stick hoses rub on brackets, and attachment changes often leave a run routed for the old tool. Typical hose is EN 856 4SP or 4SH on the high-pressure arm circuits and 2SN on the pilot and auxiliary lines. We re-route where the attachment has changed, tag the assemblies on request and replace several in one visit.",
+        "industry": "construction"
+      },
+      {
+        "name": "Tippers and haul trucks",
+        "desc": "Tipper fleets carry the hoist cylinder hose and the tail-gate or body circuits, all exposed to stone strike and road grime. Failures are usually cover damage that lets the wire corrode, then a burst. Replacements are built from a sample or from measurements in the Dubai hose bay and delivered for fitting, with protective sleeve where the run passes the chassis edge.",
+        "industry": "construction"
+      },
+      {
+        "name": "Port and bulk handling equipment",
+        "desc": "Coastal yard equipment, bulk loaders and mobile cranes meet salt air on top of dust. The hose carries the same pressure as inland plant, but fittings corrode faster and covers crack under sun. We supply and fit assemblies with zinc-nickel or stainless ends, and abrasive hose for cement and aggregate handling lines, built to the bore and ends you give us.",
+        "industry": "marine"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Machine make, model and the circuit that failed (boom, stick, tilt, feeder, tipper hoist).",
+      "Hose bore, construction and both end types, or a sample of the failed assembly.",
+      "Site gate details and whether a permit to work or induction is required.",
+      "Which machines can be stopped and released for re-hosing in one planned stop.",
+      "Whether the same run has failed before, and where the old hose rubbed or was clamped.",
+      "A clear, level area near the machine for the crimp machine and van."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you work at quarries in Khor Khwair?",
+      "a": "Yes. We travel from our Dubai hose bay to quarries, crusher plants and bulk handling sites at Khor Khwair with hose, fittings and a crimp machine on the van. Assemblies are made at the machine, to the hose and fitting maker’s crimp specification. Give us the machine, the bore and the end types beforehand so the right stock goes on the van."
+    },
+    {
+      "q": "Why does the same hose keep failing on my crusher?",
+      "a": "Usually because the cause is not the hose. A missing clamp, a worn bracket, no guard or a route that suited the old attachment will wear any grade through. A heavier hose in the same position fails the same way, a little later. On a visit we replace the assembly and look at the clamping, the guard and the routing."
+    },
+    {
+      "q": "Do you carry guards and sleeves for abrasive sites?",
+      "a": "We supply spring guards and abrasion sleeves with the hose and fit them as part of the assembly. They suit runs that touch steel, brackets or other hoses. A sleeve protects the cover but does not fix a bad route, so we check where the run rubs first and move it if we can."
+    },
+    {
+      "q": "Can you re-hose a whole excavator or loader in one visit?",
+      "a": "Yes, when the machine can be released and we know the hose list. We build the full set, tag each assembly to its circuit on request and fit them in one planned stop. A sample set or a hose register speeds this up, and a machine with several worn runs is a good candidate."
+    },
+    {
+      "q": "What hose do crusher and screen drives usually need?",
+      "a": "Most run SAE 100R2AT or EN 853 2SN two-wire hose with JIC 37° or ORFS ends. High-pressure arm circuits on loaders often need EN 856 4SP or 4SH. The pressure rating, bore and temperature decide the choice, so read the layline on the old hose or give us the bore and working pressure."
+    },
+    {
+      "q": "Do you cover RAK Maritime City and the coast?",
+      "a": "Yes. Coastal equipment sees salt air, so we recommend zinc-nickel or stainless fittings on exposed runs, and covers that tolerate sun and spray. We supply hose, fittings, ferrules, adapters and quick couplers from Dubai stock and make the assemblies at the machine or in the hose bay."
+    },
+    {
+      "q": "Can you make a replacement if I only have a part number?",
+      "a": "Yes. Send the part number, a photo of the layline or the measurements, and we build the assembly in the Dubai hose bay and deliver it to site for fitting. If you have the old hose, a sample is the safest reference because it shows the bore, the length and both ends."
+    },
+    {
+      "q": "Why are Ras Al Khaimah visits planned rather than called in?",
+      "a": "About 85 km in a straight line from our Al Qusais hose bay in Dubai. That is why visits are planned: we group machines and runs so that one trip clears as much as possible, and we carry the common hose and fittings on the van."
+    },
+    {
+      "q": "Do you supply abrasive hose for cement and aggregate lines?",
+      "a": "We supply abrasive and bulk-material hose for sand, cement, powders and slurry, cut and fitted to your lines. Ask with the material, the conveying method and the bore. For hydraulic circuits on the same plant we make crimped assemblies on site."
+    }
+  ]
+}

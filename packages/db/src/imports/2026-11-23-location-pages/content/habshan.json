@@ -1,0 +1,99 @@
+{
+  "slug": "habshan",
+  "meta_title": "Hose Service, Habshan & Al Dhafra",
+  "meta_description": "Hydraulic hose assemblies for rigs, gas processing and plant in Habshan, Ruwais and Al Dhafra, with certified API 7K, 16C and 16D assemblies built to spec.",
+  "zones": {
+    "body": "The hose bay is in Al Qusais, Dubai, about 240 km in a straight line. Permits, escorts and verified training decide the timeline here, and none of them is something we can hold on your behalf.",
+    "items": [
+      {
+        "name": "Habshan",
+        "desc": "Habshan is a gas processing and pipeline hub. The hydraulics are valve actuators, power units, cranes and the support equipment around the plant. Hose work is often routine, but entry is controlled: permit to work, escorted movement and verified safety training including H₂S awareness are conditions of access. Send the machine, the circuit and the site’s requirements before a visit so the right hose, ends and documents are carried."
+      },
+      {
+        "name": "Al Dhafra region",
+        "desc": "Al Dhafra covers a very large area of desert, operating sites and remote camps. Distances between sites are long and support is thin, so a machine that fails can be a long way from the nearest hose stock. Mobile cranes, loaders, generators and light plant are common. Pre-staging spare assemblies near the site, tagged to the machine, is more reliable than travelling after a failure."
+      },
+      {
+        "name": "Ruwais industrial area",
+        "desc": "Ruwais is a refining, petrochemical and industrial complex with its own access control. Plant hydraulics include valve actuation, lifting equipment, maintenance cranes and mobile plant, and heat from process lines is a real concern for hose covers. Entry needs passes and often escorts. We plan the hose, ends and any heat sleeves to the site’s requirements once you confirm them."
+      },
+      {
+        "name": "Western Region drilling and plant sites",
+        "desc": "Rigs and well sites in the Western Region run hydraulic power units, tongs, catwalks, BOP controls and auxiliary systems. The hoses on those circuits are working under pressure and vibration, and some are certified assemblies built to API 7K, 16C or 16D. Access to a rig is controlled and the schedule is set by the rig’s own work, so stage critical spares ahead of planned work."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Rig and plant hose is a planning exercise. The honest advice is to decide the critical assemblies before the work, build them, and have them on site.",
+    "items": [
+      {
+        "name": "Drilling and workover rig hydraulics",
+        "desc": "Hydraulic power units, iron roughnecks, tongs, catwalks, pipe handlers and auxiliary circuits. Typical hose is EN 856 4SP or 4SH on high-pressure supply, with two-wire hose on lower circuits, and JIC 37° or ORFS ends. Vibration and heat fatigue the crimp zone, so assemblies are routed with spring guards and clamped to stop whip. Where the rig’s list calls for API 7K hose, it is supplied as such.",
+        "industry": "oil-gas"
+      },
+      {
+        "name": "Certified oilfield assemblies (API 7K, 16C, 16D)",
+        "desc": "API 7K covers drilling, rotary and vibrator hose; API 16C covers choke and kill; API 16D covers BOP control hose. The rig’s equipment list says which applies to which line, and the end connections, bore, length and documents come from it. We supply certified assemblies to that specification, with their documents. Check what your site and contract require of the supplier before ordering.",
+        "industry": "oil-gas"
+      },
+      {
+        "name": "Gas processing plant hydraulics and valve actuation",
+        "desc": "Valve actuators, hydraulic power units, lifting equipment and mobile plant inside processing sites. Hose is typically two-wire or four-spiral for pressure circuits, with stainless ends and heat sleeves where process lines are close. Failures are mostly cover damage from heat and abrasion at clamps. Because entry is controlled, spare assemblies should be sorted before work starts.",
+        "industry": "oil-gas"
+      },
+      {
+        "name": "Planned shutdown and turnaround hose scopes",
+        "desc": "Shutdown work lets a whole set of assemblies be replaced against a register, not one at a time. We build and tag each assembly to its circuit before the planned work, so the crew fits them on site without waiting for materials. It needs a clear hose list, with sizes, ends and lengths, agreed ahead of the work. We can build from an old-assembly sample or from measurements.",
+        "industry": "power"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Confirm the site’s permit-to-work process and who raises it for visiting contractors.",
+      "Check which safety training must be verified for each person, including H₂S awareness, and get certificates to the site contact ahead of travel.",
+      "Arrange the escort and the entry point, and send vehicle and personnel details as the site requires.",
+      "List the critical assemblies by machine and circuit so they can be built and staged before the planned work.",
+      "For API 7K, 16C or 16D assemblies, give the standard, bore, length, end connections and required documents.",
+      "Agree where spares will be kept on site and who can issue them to the crew."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Why is pre-staging hose assemblies recommended for Habshan?",
+      "a": "Entry depends on a permit to work, an escort and verified training, and none of those can be arranged at the gate. If a critical line fails, the delay is the access process, not the hose. Building tagged spares ahead of planned work and keeping them on site means the crew can fit them as soon as the permit is open."
+    },
+    {
+      "q": "What training do I need before hose work at Habshan?",
+      "a": "That is for the site to say. Gas and processing sites commonly require verified safety training, including H₂S awareness, before anyone enters, together with a permit to work and an escorted movement. Ask the site contact for the exact list and send certificates ahead of travel."
+    },
+    {
+      "q": "Which API hose assemblies do you build for rig work?",
+      "a": "Yes. API 7K covers drilling, rotary and vibrator hose, API 16C covers choke and kill, and API 16D covers BOP control. The rig’s equipment list sets which standard applies to which line, plus bore, length, ends and documents. Send that list with the enquiry so the assembly is built to the right specification."
+    },
+    {
+      "q": "How do I know which API standard my rig hose needs?",
+      "a": "Look at what the hose does. Rotary, vibrator and mud lines on the drilling side fall under API 7K. Choke and kill lines on the well-control side fall under API 16C. BOP control lines carry hydraulic fluid to the stack and fall under API 16D. Check against the rig’s equipment list or the standard before ordering."
+    },
+    {
+      "q": "Can you work at Ruwais?",
+      "a": "We can travel there from Dubai for hose work, but Ruwais has its own access control, so passes, escorts and training have to be arranged through the site first. Send the machine, circuit and site requirements and we plan the hose, ends and any heat sleeves. Do not expect a visit to proceed without clearance."
+    },
+    {
+      "q": "What hose is used on a drilling rig’s hydraulic power unit circuits?",
+      "a": "High-pressure supply and return lines are usually four-spiral hose to EN 856 4SP or 4SH, with two-wire hose on lower-pressure lines. Ends are JIC 37° or ORFS, and the assemblies need spring guards and clamping because vibration and surge fatigue the crimp zone. Copy the existing assembly where the circuit is unchanged."
+    },
+    {
+      "q": "Can you build assemblies for a planned turnaround at Habshan?",
+      "a": "Yes, if the hose list is agreed ahead of the work. Give us the circuits, sizes, ends and lengths, or an old-assembly sample, and we build and tag each assembly to its circuit before it travels. That way the crew fits them as soon as the permit allows, rather than waiting for a build."
+    },
+    {
+      "q": "How far is Habshan from Dubai, and what does that mean for spares?",
+      "a": "The hose bay is in Al Qusais, Dubai. Habshan is about 240 km away in a straight line, and the road distance is longer. Because of the distance, build and stage spares before planned work rather than ordered after a failure. We confirm the site and access before any travel."
+    },
+    {
+      "q": "Can I get hose and fittings supplied without on-site work?",
+      "a": "Yes. Hose, ferrules, hose fittings, adapters and quick couplers are supplied from Dubai stock, including oilfield hose. Give us the standard or thread form, size and sealing type, for example JIC 37° or ORFS, so we match the part. Delivery to a controlled site still needs the site’s receiving process to be arranged."
+    }
+  ]
+}

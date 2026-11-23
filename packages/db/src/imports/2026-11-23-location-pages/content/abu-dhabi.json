@@ -1,0 +1,103 @@
+{
+  "slug": "abu-dhabi",
+  "meta_title": "Hose Repair, Abu Dhabi & Mussafah",
+  "meta_description": "Hydraulic hose assemblies made at the machine in Mussafah, ICAD, KIZAD, Khalifa Port and Abu Dhabi city, with certified API oilfield assemblies for rig work.",
+  "zones": {
+    "body": "We travel to Abu Dhabi from the Dubai hose bay, a straight-line distance of about 135 km. Passes and gate rules, not the hose, decide how a visit is planned.",
+    "items": [
+      {
+        "name": "Mussafah M-blocks (M9, M11, M16)",
+        "desc": "The Mussafah M-blocks are the densest cluster of heavy-fleet workshops, fabricators and equipment yards in Abu Dhabi. M9, M11 and M16 carry trailers, tippers, loaders, cranes and marine support equipment. The hydraulics are conventional: two-wire hose to SAE 100R2AT or EN 853 2SN, with four-spiral hose on larger machines. We build at the machine from the old assembly, and can re-hose a whole machine in one visit with each hose tagged."
+      },
+      {
+        "name": "ICAD I, II and III",
+        "desc": "ICAD is a large industrial area of factories, fabrication shops, laydown yards and logistics sites. Production hydraulics such as presses, lifts, tail-lifts and handling equipment sit alongside yard plant. Hose runs are often fixed on heavy frames, so measuring and building at the machine is usual. Each ICAD phase can have its own entry arrangements, so name the phase and unit when you send the enquiry."
+      },
+      {
+        "name": "KIZAD",
+        "desc": "KIZAD is an industrial and logistics zone where tenants run their own entry points, safety rules and contractor requirements. Hydraulic work here is forklifts, yard cranes, tipper fleets and process plant. Access is arranged site by site, so passes and vehicle details have to go through the tenant before a visit is possible. Send us the tenant’s requirements early and we plan hose, ends and tools against them."
+      },
+      {
+        "name": "Khalifa Port",
+        "desc": "Khalifa Port runs container and bulk handling equipment: reach stackers, terminal tractors, RTG-type cranes and straddle plant. Salt air attacks fittings and covers on every circuit, and the equipment is built for long, steady duty. Hose is mainly EN 853 2SN or compact EN 857 2SC with JIC 37° and ORFS ends; plated or stainless ends and abrasion sleeves suit the conditions. Entry is by port security pass, so allow for it when planning."
+      },
+      {
+        "name": "Abu Dhabi city and the islands",
+        "desc": "Across the city and the islands, the work is construction plant on building programmes, cranes, concrete pumps, tippers and waste vehicles. Sites are often live and access is shared, with limited parking for a van. We build at the machine where it cannot be moved and agree a stop point with the site contact. Island work depends on gate and vehicle rules, so confirm them first."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Abu Dhabi work ranges from ordinary workshop breakages to rig-site assemblies built to API standards. We separate the two early, because the paperwork and access differ.",
+    "items": [
+      {
+        "name": "Heavy fleet and plant in Mussafah",
+        "desc": "Tippers, loaders, dozers, mobile cranes and recovery vehicles. Typical hose is EN 853 2SN and 100R2AT for most circuits, with EN 856 4SP or 4SH on higher-pressure main lines. Failures come from abrasion at frame clamps, heat near the engine and fittings that have been over-tightened and weeping. We copy the old assembly, correct a poor routing where we can, and fit guards in the places it is rubbing.",
+        "industry": "construction"
+      },
+      {
+        "name": "Port and terminal equipment",
+        "desc": "Reach stackers, terminal tractors and container handlers at Khalifa Port and the industrial zones near it. Salt-laden air corrodes carbon steel fittings and strips hose covers, particularly on spreader and boom circuits. We use zinc-nickel plated or stainless ends where the system allows, and sleeves at chafe points. Port passes govern entry, so plan the visit around the pass, not the failure.",
+        "industry": "marine"
+      },
+      {
+        "name": "Fabrication, steel and marine support",
+        "desc": "Press brakes, rolling machines, overhead cranes, lift gear and dock equipment across Mussafah and ICAD. Many of these machines are fixed, with long hose runs behind guards. Heat from cutting and swarf damage cause cover failures, and high-temperature sleeves help. We measure and build at the machine, and for steel processing we can supply spare assemblies so the line is not waiting on a build.",
+        "industry": "steel"
+      },
+      {
+        "name": "Rig and plant work needing API assemblies",
+        "desc": "For drilling and well-control equipment, certified oilfield assemblies are built to API 7K (drilling, rotary and vibrator), API 16C (choke and kill) and API 16D (BOP control). These are specified by the rig’s equipment list, not by the workshop, so we need the standard, the end connections and the required documents with the enquiry. Entry to rig and plant sites is controlled; ask for the site requirements first.",
+        "industry": "oil-gas"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Name the zone, block or phase (for example Mussafah M11, ICAD II, KIZAD) and the unit or gate number.",
+      "Ask the site whether a gate pass, port pass, induction or safety card is required and who issues it.",
+      "Send the names, vehicle details and equipment lists the site wants for each person and van entering.",
+      "For restricted and industrial-estate sites, request passes before the failure and keep them on file.",
+      "Photograph the failed assembly, its layline and both ends, or keep the old hose for copying.",
+      "For API assemblies, state the standard, bore, length, end connections and any documents required."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you service hydraulic hoses in Mussafah?",
+      "a": "Yes. We travel to Mussafah from the Dubai hose bay and build assemblies at the machine, using hose, ferrules and fittings carried on the van. Tell us the M-block, the yard and the machine, and send a photo of the failed hose. Most Mussafah yards are straightforward once gate and vehicle details are arranged."
+    },
+    {
+      "q": "How do you reach Abu Dhabi sites from Dubai?",
+      "a": "The hose bay is in Al Qusais, Dubai. Abu Dhabi is roughly 135 km away in a straight line, and the road distance is longer. We travel from Dubai for on-site work, so confirm the site, contact and any passes with us before the visit, and we plan the route and the stock to carry."
+    },
+    {
+      "q": "Can you get me a gate pass for an Abu Dhabi site?",
+      "a": "No. Passes are issued by the site, the estate or the port, and they need the site contact to request them. What we can do is tell you what to send them: names, vehicle registration, the work scope and any safety card or induction the site requires. Arrange it before the work is needed."
+    },
+    {
+      "q": "What is different about hose work at KIZAD and Khalifa Port?",
+      "a": "Each tenant sets its own entry and safety rules, and the port adds its own security pass. Equipment there runs in salt air for long periods, so fitting corrosion and cover wear matter more than burst pressure. We prepare plated or stainless ends and sleeves, but you need to confirm the access regime first."
+    },
+    {
+      "q": "Can a Mussafah fleet machine be re-hosed in a single planned visit?",
+      "a": "Yes. We re-hose a machine in one planned stop, building the full set of assemblies and tagging each to its circuit on request. It is useful for ageing loaders and cranes where several hoses share the same age and routing. Send the machine details and photographs of the circuits in advance so the right hose and ends are carried."
+    },
+    {
+      "q": "Can you supply API hose assemblies for rig equipment in Abu Dhabi?",
+      "a": "We supply certified oilfield hose assemblies to API 7K for drilling, rotary and vibrator service, API 16C for choke and kill and API 16D for BOP control. The rig’s equipment list sets the standard, bore, length and ends. Send those with the enquiry. Ask the site what it requires of contractors and suppliers before you order."
+    },
+    {
+      "q": "What hose do reach stackers at Khalifa Port normally use?",
+      "a": "Usually two-wire hose to EN 853 2SN or compact EN 857 2SC on the boom and spreader circuits, with JIC 37° or ORFS ends. In salt air the fittings corrode first, so zinc-nickel plated or stainless ends are worth specifying. Copy the existing assembly where the circuit is unchanged rather than guessing a size."
+    },
+    {
+      "q": "What should I send when I enquire about hose work in ICAD?",
+      "a": "Send the phase (I, II or III), unit number, the machine make and model, a photo of the failed hose with its layline and both ends, and a contact who can meet the van. If the site needs a pass or induction, include its requirements. That is usually enough to plan stock and tools."
+    },
+    {
+      "q": "Can you supply hose and fittings to Abu Dhabi without on-site work?",
+      "a": "Yes. Hose, ferrules, hose fittings, adapters and quick couplers are supplied from Dubai stock. This suits workshops that crimp their own assemblies and engineers who need a specific adapter or coupler. Give us the thread form, size and sealing type, for example JIC 37°, BSP or ORFS, so we match it correctly."
+    }
+  ]
+}

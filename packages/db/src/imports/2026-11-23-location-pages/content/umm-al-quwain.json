@@ -1,0 +1,99 @@
+{
+  "slug": "umm-al-quwain",
+  "meta_title": "Hydraulic Hose Repair, Umm Al Quwain",
+  "meta_description": "On-site hydraulic hose assembly in Umm Al Thuoob, the UAQ Free Trade Zone and Ahmed Bin Rashid Port, planned into a northern run from Dubai with Ajman and RAK.",
+  "zones": {
+    "body": "Umm Al Quwain has few industrial zones, so planning is simple: pick the visit that suits your site, and add anything else waiting between Ajman and Ras Al Khaimah.",
+    "items": [
+      {
+        "name": "Umm Al Thuoob industrial area",
+        "desc": "Umm Al Thuoob is a working industrial area of fabrication shops, light manufacturing units and transport yards. The hydraulics are what such yards run: trucks with tail-lifts or crane bodies, forklifts, small loaders and workshop presses. Machines tend to be spread across larger plots than in Sharjah, so a visit to several units may involve more moving between yards. Give us all addresses up front so the stops can be ordered sensibly."
+      },
+      {
+        "name": "UAQ Free Trade Zone",
+        "desc": "The UAQ Free Trade Zone hosts trading, light manufacturing and warehouse units. Most hydraulics are forklifts, pallet handlers, dock equipment and delivery trucks. Entry to free zone units is normally controlled, so the visit is simpler when the company name, a contact and any pass requirements are confirmed beforehand. Send the machine make, the failed circuit and a photo of the hose layline and we can bring matching components."
+      },
+      {
+        "name": "Ahmed Bin Rashid Port and Free Zone",
+        "desc": "Ahmed Bin Rashid Port and Free Zone has quayside and yard equipment, from mobile cranes and loaders to forklifts and container handlers. Port equipment lives in salt air and handling duty is heavy, so fittings corrode and covers wear. Port access normally needs a permit and induction, which the site arranges, not us. Tell us early what is required so the paperwork is ready when the van arrives."
+      },
+      {
+        "name": "Umm Al Quwain old industrial area",
+        "desc": "The older industrial area has small workshops, vehicle repair units, metalwork shops and boat-related trades near the creek and coast. Machines here are often older, with a mix of hose ends from different makers. That mix makes identification the main task: bring us the failed hose, a photo of its ends and the layline, and we can say what is needed before travelling."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Umm Al Quwain’s mix is lighter than Sharjah’s, with a stronger coastal and boat-related share. These are the machines and settings we see most.",
+    "items": [
+      {
+        "name": "Boat hoists and coastal lifting equipment",
+        "desc": "Equipment that lifts and moves boats runs hydraulics outdoors, with spray and sun on every hose. The hose cover is usually the part that fails first, through UV cracking and abrasion where the line passes a bracket. Salt air also attacks fittings, so zinc-nickel plated or stainless ends make sense when re-hosing. We match the hose to the machine you describe.",
+        "industry": "marine"
+      },
+      {
+        "name": "Light manufacturing and fabrication units",
+        "desc": "Fabrication presses, brake presses, cutting machines and workshop lifts use one or two pressure hoses that flex in each cycle. Typical hose is two-wire braid for lifts and four-wire or compact for presses, with BSP, JIC 37° or metric DIN 2353 ends. Pulsation causes fatigue at the fitting neck. A tight bend near the crimp shortens life more than anything, so we check routing and bend radius as we fit.",
+        "industry": null
+      },
+      {
+        "name": "Transport fleets and trucks on the northern corridor",
+        "desc": "Trucks that run the Ajman to Ras Al Khaimah corridor carry tail-lifts, crane bodies, tipper rams and trailer hydraulics. Long road mileage puts heat and vibration into every hose. Hoses fail at rubbing points and at fittings fitted with the hose twisted. If you have several trucks in one yard, list them together, and a single visit can cover them with assemblies made at each vehicle.",
+        "industry": "construction"
+      },
+      {
+        "name": "Construction plant and materials handling",
+        "desc": "Excavators, loaders, mobile cranes and forklifts working on projects along the northern corridor use the full range of hose, from low-pressure returns to high-pressure spiral lines on booms and arms. Typical failures are cover abrasion, crushed lines at pivots and loose clamps. A whole-machine re-hose, with every line made and tagged, is the way to stop chasing one failure after another.",
+        "industry": "construction"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Tell us what else is waiting in Ajman, Umm Al Quwain or Ras Al Khaimah, so the visit can be planned as a run.",
+      "Give each site’s address and contact, with the unit or yard name and the nearest zone.",
+      "For Ahmed Bin Rashid Port and Free Zone, confirm the permit, induction and gate pass the site requires.",
+      "For the UAQ Free Trade Zone, give the company name and who will meet us at the gate.",
+      "Keep machines parked, switched off and depressurised, with the failed hoses left in place for matching.",
+      "For coastal machines, say whether they are outdoors, so we can bring plated or stainless ends."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Is it worth a visit to Umm Al Quwain for one hose?",
+      "a": "It can be, but a single assembly is the expensive way to use a trip from Dubai. Umm Al Quwain is roughly 45 km from our hose bay, so we plan visits as part of a northern run. Tell us what else is waiting in Ajman or Ras Al Khaimah, and we can fold your hose into a larger plan."
+    },
+    {
+      "q": "How do you plan a northern run?",
+      "a": "We take the machines waiting across Ajman, Umm Al Quwain and Ras Al Khaimah, group them by area and order the stops. Each site’s hose details are confirmed first, so the van carries the right stock. You are asked to give your list early; the earlier we have it, the more of the run it can join."
+    },
+    {
+      "q": "What does salt air do to hydraulic fittings?",
+      "a": "Standard zinc-plated steel fittings corrode in coastal air, usually at the thread and the nut where moisture sits. Corrosion can lock a fitting or weaken it over time. Zinc-nickel plating lasts longer, and stainless steel lasts longer still where the circuit allows it. Ask for them when re-hosing machines kept outdoors near the coast."
+    },
+    {
+      "q": "Can you re-hose boat-handling equipment?",
+      "a": "Yes, for the hydraulic hoses on the machine: hoists, trailers, loaders and similar equipment. We make assemblies at the machine from the hose and ends on the van. Fuel, bilge and wet exhaust hoses on vessels are different products. We supply marine hose for those from Dubai stock."
+    },
+    {
+      "q": "What does the port need before you arrive?",
+      "a": "Ports normally require a permit to work, a gate pass and sometimes a safety induction. The site arranges these, not us, so tell us what your contact needs from us and give notice. We list what we need for each person and vehicle. Without the right paperwork at the gate, the visit cannot go ahead."
+    },
+    {
+      "q": "Why do hose covers on outdoor machines crack?",
+      "a": "Ultraviolet light and heat dry out the rubber cover over time, and abrasion at brackets wears through the cracked surface. Once the cover is gone, the wire braid corrodes and the hose bursts. A sleeve or spring guard at rub points helps, as does replacing hoses with visible cover cracking before the wire is showing."
+    },
+    {
+      "q": "Do you carry hose for the northern corridor’s trucks?",
+      "a": "We carry the common sizes and constructions for tail-lifts, tipper rams and crane bodies on the van. Unusual lines, longer lengths or specialist ends are built in the Dubai hose bay and delivered for fitting. Give us the truck, the circuit and the old hose details when you call, and we will say which route applies."
+    },
+    {
+      "q": "Is tagging worth it for trucks and yard equipment we rarely see?",
+      "a": "Yes, on request. Tagging marks each assembly with its circuit so a later failure is traceable. It suits machines that you do not see often, such as fleet trucks on the corridor and equipment kept at coastal yards, since the record travels with the hose."
+    },
+    {
+      "q": "How do I know whether a hose is hydraulic or industrial?",
+      "a": "Hydraulic hose carries a layline with a standard such as SAE 100R2AT or EN 853 2SN and a pressure rating, and takes crimped fittings. Industrial hose for air, water or oil transfer is rated for much lower pressure and often uses clamped fittings. The two are not interchangeable. Send the layline if you are unsure."
+    }
+  ]
+}
