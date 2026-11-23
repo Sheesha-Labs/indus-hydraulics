@@ -401,6 +401,21 @@ describe.skipIf(!DB_URL)('send queue · local database', () => {
     })
   })
 
+  it('the sweep turns a send left in "sending" (the run died) into unknown, then looks for it; never resends', async () => {
+    const r = await queue()
+    await db.outboundEmail.update({
+      where: { id: r.outboundId },
+      data: { status: 'sending', claimedAt: new Date(Date.now() - 20 * 60_000) },
+    })
+    const out = await rec.reconcileSweep({ gmailFor: () => gmail(), emit: async () => 0 })
+    expect(out.interrupted).toBeGreaterThanOrEqual(1)
+    expect(await row(r.outboundId)).toMatchObject({
+      status: 'unknown',
+      failureReason: 'interrupted',
+    })
+    expect(fake.calls).not.toContain('messages.send')
+  })
+
   it('the sweep re-requests a row stranded in scheduled; it never sends', async () => {
     const r = await queue({}, new Date(Date.now() - 60 * 60_000))
     await db.$executeRaw`UPDATE ops.outbound_email SET "updatedAt" = now() - interval '1 hour' WHERE id = ${r.outboundId}::uuid`

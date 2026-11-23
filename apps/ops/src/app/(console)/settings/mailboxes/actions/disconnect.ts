@@ -1,6 +1,5 @@
 'use server'
 
-import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { defineAction, SafeError } from '../../../../../lib/define-action'
 import {
@@ -32,9 +31,8 @@ export const disconnectMailboxAction = defineAction({
   roles: ['owner'],
   handler: async (input, ctx) => {
     try {
-      const receipt = await disconnectMailbox({ ...input, user: ctx.user })
-      revalidatePath('/settings/mailboxes')
-      return receipt
+      // No revalidatePath here: the modal shows the receipt first and refreshes the page on Done.
+      return await disconnectMailbox({ ...input, user: ctx.user })
     } catch (error) {
       if (error instanceof DisconnectError) throw new SafeError(error.message)
       throw error

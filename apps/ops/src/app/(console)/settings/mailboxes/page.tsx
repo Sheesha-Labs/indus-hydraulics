@@ -66,7 +66,7 @@ export default async function SettingsMailboxesPage({
                 ) : null
               }
               disconnect={
-                page.canManage && !card.broken ? (
+                page.canManage && card.status !== 'disconnected' ? (
                   <DisconnectModal mailboxId={card.id} address={card.address} role={card.role} />
                 ) : null
               }

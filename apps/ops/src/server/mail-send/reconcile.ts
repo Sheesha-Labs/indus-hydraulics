@@ -108,6 +108,8 @@ export async function reconcile(
 
 /**
  * The 15-minute sweep (ops.mail.send.reconcile):
+ *   - a row left in `sending` for over 10 minutes (the run died between the claim and recording the outcome)
+ *     becomes `unknown`: whether Google took it is exactly what reconcile finds out. Never resent.
  *   - every `unknown` row is looked for again (a delayed Sent copy still turns up)
  *   - a `sent` row whose RFC Message-ID could not be read back gets it now
  *   - a `scheduled` row stranded without a run (its request event never reached Inngest, or the run ended) is
@@ -119,9 +121,23 @@ export async function reconcileSweep(
     emit?: (events: readonly OpsEvent[]) => Promise<number>
     now?: () => Date
   } = {}
-): Promise<{ checked: number; found: number; readBack: number; requeued: number }> {
+): Promise<{
+  checked: number
+  found: number
+  readBack: number
+  requeued: number
+  interrupted: number
+}> {
   const now = (deps.now ?? (() => new Date()))()
   const client = deps.gmailFor ?? ((id: string) => gmailFor(id, 'live'))
+  const stuck = await opsDb.outboundEmail.findMany({
+    where: { status: 'sending', claimedAt: { lt: new Date(now.getTime() - 10 * 60_000) } },
+    select: { id: true },
+    take: 25,
+  })
+  for (const s of stuck) {
+    await moveOutbound(s.id, ['sending'], 'unknown', { failureReason: 'interrupted' })
+  }
   const unknown = await opsDb.outboundEmail.findMany({
     where: { status: 'unknown' },
     select: { id: true, mailboxId: true },
@@ -182,5 +198,11 @@ export async function reconcileSweep(
     data: { outboundId: s.id, mailboxId: s.mailboxId, undoUntil: now.toISOString() },
   }))
   if (events.length) await (deps.emit ?? emitEvents)(events)
-  return { checked: unknown.length, found, readBack, requeued: events.length }
+  return {
+    checked: unknown.length,
+    found,
+    readBack,
+    requeued: events.length,
+    interrupted: stuck.length,
+  }
 }

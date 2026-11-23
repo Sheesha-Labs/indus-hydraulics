@@ -235,15 +235,17 @@ function NamesCard({ page }: { page: SendingPage }) {
           </span>
         </div>
       ) : (
-        <dl className="m-0 flex flex-col gap-2 text-[13px]">
-          <div className="flex justify-between gap-3">
-            <dt className="text-io-ink-2">Quotation file name</dt>
-            <dd className="m-0 tabular-nums">{page.names.quotationExample}</dd>
-          </div>
-          <div className="flex justify-between gap-3">
-            <dt className="text-io-ink-2">Supplier RFQ file name</dt>
-            <dd className="m-0 tabular-nums">{page.names.supplierRfqExample}</dd>
-          </div>
+        <div className="flex flex-col gap-2">
+          <dl className="m-0 flex flex-col gap-2 text-[13px]">
+            <div className="flex justify-between gap-3">
+              <dt className="text-io-ink-2">Quotation file name</dt>
+              <dd className="m-0 tabular-nums">{page.names.quotationExample}</dd>
+            </div>
+            <div className="flex justify-between gap-3">
+              <dt className="text-io-ink-2">Supplier RFQ file name</dt>
+              <dd className="m-0 tabular-nums">{page.names.supplierRfqExample}</dd>
+            </div>
+          </dl>
           {page.canEdit ? (
             <Button
               variant="link"
@@ -254,7 +256,7 @@ function NamesCard({ page }: { page: SendingPage }) {
               Change file names
             </Button>
           ) : null}
-        </dl>
+        </div>
       )}
       {page.names.signoff === 'awaiting' ? <SignoffTag className="self-start" /> : null}
     </PolicyCard>
