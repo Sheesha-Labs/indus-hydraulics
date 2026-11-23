@@ -202,7 +202,16 @@ export default async function BrandPage({ params }: Props) {
           },
         ]
       : []),
-    ...(brand.partnerSince ? [{ label: 'Partner since', value: String(brand.partnerSince) }] : []),
+    ...(brand.partnerSince
+      ? [
+          {
+            label: brand.isAuthorizedDistributor
+              ? 'Authorised distributor since'
+              : 'Supplying since',
+            value: String(brand.partnerSince),
+          },
+        ]
+      : []),
   ]
   const statCols = Math.max(2, Math.min(4, statCells.length))
 
@@ -279,7 +288,7 @@ export default async function BrandPage({ params }: Props) {
               )}
               {brand.isAuthorizedDistributor && (
                 <span className="bg-ih-accent inline-flex h-[22px] items-center rounded-full px-2.5 text-[11px] font-medium text-white">
-                  ★ TIER-1 PARTNER
+                  ★ AUTHORISED DISTRIBUTOR
                 </span>
               )}
               <span className="bg-ih-navy-2 inline-flex h-[22px] items-center rounded-full px-2.5 text-[11px] font-medium text-[oklch(0.86_0.02_250)]">

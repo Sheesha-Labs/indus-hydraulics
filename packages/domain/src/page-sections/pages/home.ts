@@ -41,7 +41,7 @@ export const HOME_PAGE: MasterPageDef = {
         search_button: 'Search',
         stats: [
           { value: '{skus}', label: 'SKUS IN STOCK' },
-          { value: '{brands}', label: 'PARTNER BRANDS' },
+          { value: '{brands}', label: 'BRANDS · AUTHORISED DISTRIBUTOR' },
           { value: '47', label: 'COUNTRIES SERVED' },
           { value: '{years} yrs', label: 'IN BUSINESS' },
         ],
@@ -81,7 +81,7 @@ export const HOME_PAGE: MasterPageDef = {
       key: 'brands',
       label: 'Brand rail',
       description:
-        'The scrolling partner-brand logo strip, closing the hero directly under the promise strip.',
+        'The scrolling "Authorised distributor for" brand logo strip, closing the hero directly under the promise strip.',
       dataNote:
         'A scrolling strip of every published brand with a logo, one tile per logo, best-stocked first (house brand excluded). Each tile links to the brand page.',
       fields: [
@@ -90,7 +90,7 @@ export const HOME_PAGE: MasterPageDef = {
         ...ctaPair('', 'Link label'),
       ],
       defaults: {
-        eyebrow: 'PARTNER BRANDS · {brands}',
+        eyebrow: 'AUTHORISED DISTRIBUTOR FOR · {brands} BRANDS',
         heading: 'Authorised distributor for the names engineers trust.',
         cta_label: 'View brand index →',
         cta_href: '/brands',

@@ -18,7 +18,7 @@ export const BRANDS_PAGE: MasterPageDef = {
         area('body', 'Body', { max: 500 }),
       ],
       defaults: {
-        eyebrow: '{brands} Authorised partnerships · OEM sourcing',
+        eyebrow: 'Authorised distributor for {brands} brands · OEM sourcing',
         heading: 'Our brands',
         body: 'Authorised distributor, importer or channel partner for the brands below. We supply genuine parts only — every SKU is OEM-traceable with batch certificates on request.',
       },
