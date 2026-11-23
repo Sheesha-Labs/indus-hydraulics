@@ -53069,48 +53069,6 @@
    "crossReferences": []
   },
   {
-   "sku": "IH-LR-FS-SSDBLS",
-   "slug": "stainless-steel-double-barrel-loop-sleeve",
-   "title": "Stainless Steel Double Barrel Loop Sleeve",
-   "category": "wire-rope-ferrules-sleeves",
-   "focusKeyword": "stainless steel double barrel loop sleeve",
-   "descriptionShort": "Stainless Steel Double Barrel Loop Sleeve. Specification confirmed on quotation.",
-   "descriptionLong": "<p>Ferrules and sleeves are pressed onto wire rope to form an eye, a splice or a stop. Type 304 or type 316 stainless steel.</p><h3>Sizes</h3><p>The size range is confirmed on the quotation — tell us the size or rating you need.</p><h3>Manufacturer's data</h3><ul><li>Machining + extruded.</li></ul><h3>Choosing a size</h3><p>Size the ferrule to the rope and press it with the die made for that ferrule — the finished diameter is what makes the termination. Aluminium suits steel rope in normal service, copper suits stainless rope.</p><h3>Ordering</h3><p>Send the size, quantity and any standard you need met, and we will confirm the specification and lead time on the quotation.</p>",
-   "seoTitle": "Stainless Steel Double Barrel Loop Sleeve",
-   "seoDescription": "Stainless Steel Double Barrel Loop Sleeve. Request a quote.",
-   "faqs": [],
-   "specs": [
-    {
-     "group": "Identification",
-     "label": "Product type",
-     "value": "Stainless Steel Double Barrel Loop Sleeve",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": "product_type"
-    },
-    {
-     "group": "Construction",
-     "label": "Material",
-     "value": "Type 304 or type 316 stainless steel",
-     "unit": null,
-     "position": 1,
-     "isFilterable": true,
-     "templateKey": "material"
-    }
-   ],
-   "searchAliases": [
-    "ferrule",
-    "swaging sleeve",
-    "crimp sleeve",
-    "stop button",
-    "Stainless Steel Double Barrel Crimping Loop Sleeve"
-   ],
-   "images": [],
-   "variants": [],
-   "crossReferences": []
-  },
-  {
    "sku": "IH-LR-AC-ESDGU2U3",
    "slug": "end-shackle-d-type-grades-u2-and-u3",
    "title": "End Shackle, D Type — Grades U2 and U3",
@@ -131885,65 +131843,6 @@
    "crossReferences": []
   },
   {
-   "sku": "IH-LR-FS-SSFESS505",
-   "slug": "stainless-steel-flemish-eye-sleeve-s-505-pattern",
-   "title": "Stainless Steel Flemish Eye Sleeve — S-505 Pattern",
-   "category": "wire-rope-ferrules-sleeves",
-   "focusKeyword": "stainless steel flemish eye sleeve",
-   "descriptionShort": "Stainless Steel Flemish Eye Sleeve (S-505). Specification confirmed on quotation.",
-   "descriptionLong": "<p>Ferrules and sleeves are pressed onto wire rope to form an eye, a splice or a stop. This range follows the S-505 pattern, sized to interchange in an existing rigging plan. Type 304 or type 316 stainless steel.</p><h3>Sizes</h3><p>The size range is confirmed on the quotation — tell us the size or rating you need.</p><h3>Manufacturer's data</h3><ul><li>Machining + extruded.</li></ul><h3>Choosing a size</h3><p>Size the ferrule to the rope and press it with the die made for that ferrule — the finished diameter is what makes the termination. Aluminium suits steel rope in normal service, copper suits stainless rope.</p><h3>Ordering</h3><p>Send the size, quantity and any standard you need met, and we will confirm the specification and lead time on the quotation.</p>",
-   "seoTitle": "Stainless Steel Flemish Eye Sleeve S-505 Pattern",
-   "seoDescription": "Stainless Steel Flemish Eye Sleeve (S-505). Request a quote.",
-   "faqs": [],
-   "specs": [
-    {
-     "group": "Identification",
-     "label": "Product type",
-     "value": "Stainless Steel Flemish Eye Sleeve",
-     "unit": null,
-     "position": 0,
-     "isFilterable": false,
-     "templateKey": "product_type"
-    },
-    {
-     "group": "Identification",
-     "label": "Pattern / standard",
-     "value": "S-505",
-     "unit": null,
-     "position": 1,
-     "isFilterable": false,
-     "templateKey": "pattern_standard"
-    },
-    {
-     "group": "Construction",
-     "label": "Material",
-     "value": "Type 304 or type 316 stainless steel",
-     "unit": null,
-     "position": 2,
-     "isFilterable": true,
-     "templateKey": "material"
-    }
-   ],
-   "searchAliases": [
-    "ferrule",
-    "swaging sleeve",
-    "crimp sleeve",
-    "stop button",
-    "S-505",
-    "S505",
-    "Stainless Steel Flemish Eye Sleeves S505"
-   ],
-   "images": [],
-   "variants": [],
-   "crossReferences": [
-    {
-     "competitorBrand": "Crosby",
-     "competitorMpn": "S-505",
-     "compatibility": "compatible"
-    }
-   ]
-  },
-  {
    "sku": "IH-LR-EB-SSSMEBG27",
    "slug": "stainless-steel-shoulder-machinery-eye-bolt-g-279-pattern",
    "title": "Stainless Steel Shoulder Machinery Eye Bolt — G-279 Pattern",
@@ -142638,8 +142537,6 @@
   "IH-LR-CS-SSCS",
   "IH-LR-EB-SSEBP",
   "IH-LR-FL-STH",
-  "IH-LR-FS-SSDBLS",
-  "IH-LR-FS-SSFESS505",
   "IH-LR-G10-EWMLA",
   "IH-LR-G10-SHBKEYERT",
   "IH-LR-G10-SSHBKLRT",
