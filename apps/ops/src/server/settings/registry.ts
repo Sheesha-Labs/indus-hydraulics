@@ -249,6 +249,20 @@ const mailLabelNames = z
 /** S04-T02: the consent explainer's data-location line (ADR-32; board 86 said "EU region"). */
 const mailboxConsent = z.strictObject({ dataLocation: z.string().trim().min(10).max(240) })
 
+/** S04-T05: senders past mail never imports (P07 owns the full UI). Lower-case addresses and domains. */
+const backfillExclusions = z.strictObject({
+  addresses: z.array(z.email().transform((v) => v.toLowerCase())).max(500),
+  domains: z
+    .array(
+      z
+        .string()
+        .trim()
+        .toLowerCase()
+        .regex(/^(?!-)[a-z0-9-]+(\.[a-z0-9-]+)+$/, 'Use a domain such as example.com.')
+    )
+    .max(500),
+})
+
 // ── The registry ───────────────────────────────────────────────────────────────────────────
 
 export type SettingDef<S extends z.ZodType = z.ZodType> = {
@@ -391,6 +405,13 @@ export const SETTINGS = {
     ownerOnly: true,
     signoff: true,
     label: 'Mailbox consent wording',
+    section: 'sending',
+  }),
+  'mail.backfill_exclusions': def({
+    schema: backfillExclusions,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Never import from these senders',
     section: 'sending',
   }),
   'setup.progress': def({

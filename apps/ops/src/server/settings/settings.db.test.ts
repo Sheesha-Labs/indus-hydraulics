@@ -71,6 +71,7 @@ const AWAITING = [
   'system_email.sender',
   'mail.label_names',
   'mailbox.consent',
+  'mail.backfill_exclusions',
 ]
 
 const USER_SELECT = {

@@ -106,5 +106,10 @@ export function localStorage(): OpsStorage {
       const full = pathOf(bucket, key)
       if (full) await rm(full, { force: true })
     },
+    async upload(bucket, key, bytes) {
+      if (await localObjectExists(bucket, key)) return { existed: true }
+      await writeLocalObject(bucket, key, bytes)
+      return { existed: false }
+    },
   }
 }

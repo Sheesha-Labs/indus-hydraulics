@@ -22,6 +22,16 @@ export interface OpsStorage {
   /** The object's bytes as a stream, or null when it does not exist. */
   openRead(bucket: OpsBucket, key: string): Promise<ReadableStream<Uint8Array> | null>
   remove(bucket: OpsBucket, key: string): Promise<void>
+  /**
+   * Server-side write of bytes Ops itself fetched (S04-T05: Gmail bodies and attachments). Never overwrites:
+   * an existing object at the key is kept (`existed: true`), so a retried step is harmless.
+   */
+  upload(
+    bucket: OpsBucket,
+    key: string,
+    bytes: Uint8Array,
+    contentType: string
+  ): Promise<{ existed: boolean }>
 }
 
 function supabaseStorage(url: string, secretKey: string): OpsStorage {
@@ -51,6 +61,15 @@ function supabaseStorage(url: string, secretKey: string): OpsStorage {
     async remove(bucket, key) {
       const { error } = await bucketOf(bucket).remove([key])
       if (error) throw new Error(`storage: remove failed (${bucket})`)
+    },
+    async upload(bucket, key, bytes, contentType) {
+      const { error } = await bucketOf(bucket).upload(key, bytes, { contentType, upsert: false })
+      if (!error) return { existed: false }
+      // 409 Duplicate: the object is already there (a retried step). Keep it.
+      const status = (error as { statusCode?: string | number }).statusCode
+      if (String(status) === '409' || /exists|duplicate/i.test(error.message))
+        return { existed: true }
+      throw new Error(`storage: upload failed (${bucket})`)
     },
   }
 }
