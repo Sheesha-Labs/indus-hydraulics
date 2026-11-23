@@ -41,12 +41,13 @@ export function latestSinkMail(to: string, kind: string): { text: string; subjec
     .filter((f) => f.endsWith('.json'))
     .sort()
     .reverse()
+  type Sunk = { to: string; kind: string; text: string; subject: string }
   for (const f of files) {
-    const m = JSON.parse(readFileSync(join(dir, f), 'utf8')) as {
-      to: string
-      kind: string
-      text: string
-      subject: string
+    let m: Sunk
+    try {
+      m = JSON.parse(readFileSync(join(dir, f), 'utf8')) as Sunk
+    } catch {
+      continue // still being written; the caller polls
     }
     if (m.to === to && m.kind === kind) return m
   }

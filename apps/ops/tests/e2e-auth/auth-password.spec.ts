@@ -1,3 +1,4 @@
+import AxeBuilder from '@axe-core/playwright'
 import { expect, test, type BrowserContext, type Page } from '@playwright/test'
 import { codeAt } from '../../src/server/access/totp-core'
 import { TEXT } from '../../src/components/auth/states'
@@ -90,16 +91,31 @@ test('enrol an authenticator, then set a password in Settings › Security', asy
   await context.close()
 })
 
-test('password + authenticator code signs in; a password alone never does', async ({ page }) => {
-  await passwordStep(page, FIRST_PASSWORD)
+test('keyboard only: password + authenticator code signs in; a password alone never does', async ({
+  page,
+}) => {
+  await page.goto('/sign-in')
+  await hydrated(page, 'Sign in')
+  await page.getByLabel('Email').focus()
+  await page.keyboard.type(HELPER)
+  await page.keyboard.press('Tab')
+  await page.keyboard.type(FIRST_PASSWORD)
+  await page.keyboard.press('Enter')
   await expect(page).toHaveURL(/\/sign-in\/two-factor/, { timeout: 15_000 })
   // Without the second factor there is no session.
   expect((await page.request.get('/api/health')).status()).toBe(401)
   await hydrated(page, 'Continue')
-  await page
-    .getByLabel('Six-digit code from your authenticator app')
-    .fill(await freshCode(page, lastStep))
+  // Tab to the code field; it submits by itself at six digits.
+  const field = page.getByLabel('Six-digit code from your authenticator app')
+  for (let i = 0; i < 8 && !(await field.evaluate((el) => el === document.activeElement)); i += 1) {
+    await page.keyboard.press('Tab')
+  }
+  await expect(field).toBeFocused()
+  await page.keyboard.type(await freshCode(page, lastStep))
   await expect(page).toHaveURL(/\/(today|welcome)/, { timeout: 30_000 })
+  // The console page carries its skip link (its tab order is covered in shell.spec.ts; in dev the
+  // Next.js dev-tools button takes the first stop).
+  await expect(page.getByRole('link', { name: /^Skip to/ })).toHaveCount(1)
 })
 
 test('a backup code works once', async ({ browser }) => {
@@ -114,7 +130,7 @@ test('a backup code works once', async ({ browser }) => {
     if (attempt === 'first') {
       await expect(page).toHaveURL(/\/(today|welcome)/, { timeout: 30_000 })
     } else {
-      await expect(page.getByText(TEXT.wrongCode)).toBeVisible()
+      await expect(page.getByText(TEXT.wrongBackupCode)).toBeVisible()
     }
     await context.close()
   }
@@ -142,6 +158,10 @@ test('reset from the emailed link ends every other session', async ({ browser, p
     })
     .not.toBe('')
   await page.goto(new URL(link).pathname)
+  const { violations } = await new AxeBuilder({ page })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
+    .analyze()
+  expect(violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual([])
   const save = await hydrated(page, 'Save and sign in')
   await page.getByLabel('New password').fill(RESET_PASSWORD)
   await page.getByLabel('Authenticator code').fill(await freshCode(page, lastStep))
