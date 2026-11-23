@@ -1,0 +1,95 @@
+{
+  "slug": "ajman",
+  "meta_title": "Hydraulic Hose Repair, Ajman & Al Jurf",
+  "meta_description": "On-site hydraulic hose assembly in Ajman Industrial Areas 1 and 2, Al Jurf and Ajman Free Zone. Tell us the bore, construction and ends and we bring the match.",
+  "zones": {
+    "body": "Access is rarely the problem in Ajman. What decides whether a visit is one trip or two is what we know about the hose before we load the van.",
+    "items": [
+      {
+        "name": "Ajman Industrial Area 1 and 2",
+        "desc": "The two Ajman industrial areas hold workshops, small fabrication units, vehicle repair yards and equipment hire depots. The hydraulics are mostly forklifts, tail-lifts, small loaders, hand-fed presses and workshop lifts. These machines often carry a mix of metric, BSP and imperial ends from different makers. That mix is why we ask for the thread type before we set off, not after we arrive."
+      },
+      {
+        "name": "Al Jurf",
+        "desc": "Al Jurf is a mixed industrial and service area with yards, workshops, small plants and vehicle fleets. Its machines range from compact loaders and skid-steers to trucks with tail-lifts and crane bodies. Hose failures here usually come from abrasion at yard level and fittings worn by repeated disconnection of attachments. If your yard has several machines, list them together, and we can bring hose and ends for each in one trip."
+      },
+      {
+        "name": "Ajman Free Zone",
+        "desc": "Ajman Free Zone is a trading and light-industrial zone. Hydraulics are mostly warehouse forklifts, pallet stackers, dock equipment and delivery-vehicle tail-lifts, with some workshop presses. Free zone sites normally control entry, so a named contact and a gate arrangement make the visit simple. Tell us the machine, the failed circuit and the hose details and we can arrive with the assembly components ready to crimp."
+      }
+    ]
+  },
+  "industries": {
+    "body": "The machines below are the ones we are most often asked about in Ajman. For each, the hose can be identified from the old assembly before anyone travels.",
+    "items": [
+      {
+        "name": "Forklifts and warehouse trucks",
+        "desc": "A forklift hose usually fails at the mast or tilt circuit, and the old line tells us what we need: the layline gives the maker, standard and size, and the end shows thread form. Most masts take single or two-wire braid to SAE 100R1AT or 100R2AT with JIC 37°, BSP or ORFS ends. Send us the layline, the length from seat to seat and a photo of the ends, and we will arrive ready to crimp.",
+        "industry": "construction"
+      },
+      {
+        "name": "Tail-lifts and delivery trucks",
+        "desc": "Tail-lift hydraulics run low-volume, medium-pressure circuits, typically two-wire hose with BSP or metric DIN 2353 ends. Hoses are exposed to road spray and undercarriage heat, and fail where clamps loosen and the line chafes. A spring guard or sleeve at the chafe point extends hose life. Tell us the vehicle, the tail-lift model and which cylinder or valve block the failed line connects to.",
+        "industry": null
+      },
+      {
+        "name": "Workshop presses and lifts",
+        "desc": "Presses and lifts in light manufacturing use higher-pressure lines than their size suggests. A press may run four-wire or compact hose, EN 856 4SP or EN 857 2SC, while a vehicle lift runs two-wire. Mixing them up is the commonest wrong-hose error. Have the layline and working pressure ready when you call, and we can confirm the construction before loading the van.",
+        "industry": null
+      },
+      {
+        "name": "Coastal and marine-side equipment",
+        "desc": "Ajman’s waterfront brings equipment that sits in salt air, such as yard cranes, boat hoists and loaders. Hose covers hold up better than the fittings, which corrode where bare steel meets moisture. For machines that live outdoors near the coast, consider zinc-nickel plated or stainless ends when re-hosing. Name the fitting type and plating on the old line and we can match or upgrade it.",
+        "industry": "marine"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Read the layline on the old hose and send it, or a clear photo, before calling.",
+      "Note the bore size: dash size or inside diameter, from the layline or by measuring the fitting.",
+      "State the construction if you know it: one-wire, two-wire, four-spiral or compact, or send the layline and we will identify it.",
+      "Identify the end fittings: thread form (JIC 37°, BSP, ORFS, metric DIN 2353, NPT) and whether straight, 45° or 90°.",
+      "Measure the assembly from sealing face to sealing face, not just the hose.",
+      "Name the contact on site and confirm whether a gate pass is needed, especially in Ajman Free Zone."
+    ]
+  },
+  "faq": [
+    {
+      "q": "How do I find the hose bore without a layline?",
+      "a": "Measure the inside diameter of the hose at the cut end, or the nominal size of the fitting seat. Hose bore is often given as a dash size, where each dash is one sixteenth of an inch, so a -8 hose is half an inch. If the hose has no readable print, bring the assembly or a photo of the ends and we will match it."
+    },
+    {
+      "q": "What does the construction of a hose mean and why does it matter?",
+      "a": "Construction describes the reinforcement: single wire braid, two-wire braid, spiral wire in four or six layers, or compact versions. It sets working pressure and bend radius. A one-wire hose will fit where a two-wire hose was used, but it may burst. The layline carries the standard, such as EN 853 2SN or EN 856 4SP, which tells us what to build."
+    },
+    {
+      "q": "How do I identify the thread on my hose end?",
+      "a": "Look at the seat. A JIC 37° end has a conical seat at 37 degrees, an ORFS end has a flat face with an O-ring, and a BSP end may have a 60° cone or a bonded seal. A thread gauge or a pitch check against a known fitting helps. If you cannot be sure, send a photo and we can identify it before travelling."
+    },
+    {
+      "q": "Why does the visit sometimes need to be repeated?",
+      "a": "Usually because the fitting or hose we carried did not match what was on the machine. The fix is to give us the bore, construction and ends before we set off. When we know them, the right parts are loaded and the assembly is crimped at the machine. When we do not, we measure, return to Dubai to build, and come back."
+    },
+    {
+      "q": "Is Al Jurf different from the industrial areas for access?",
+      "a": "Access is generally straightforward. What varies is each yard’s own gate rules. Give us the name of a contact and a location, and tell us whether machines can be left unloaded and depressurised. Everything else is a matter of hose and fittings, not access."
+    },
+    {
+      "q": "Do you work in Ajman Free Zone units?",
+      "a": "Yes, for the hose work. Free zones control entry, so we need the company name, the contact who will meet us and any pass requirement. Once on site, we assemble hoses at the machine from stock on the van, route and clamp them, and tag assemblies if you ask us to."
+    },
+    {
+      "q": "Can you identify a hose from a photo?",
+      "a": "Often, yes. A clear photo of the layline, both end fittings and the cut end of the hose lets us confirm bore, construction and thread. A photo of the machine alone is not enough. If the photo does not settle it, we may ask you to measure the fitting or keep the old assembly for us to match."
+    },
+    {
+      "q": "How do I measure the length of the hose I need?",
+      "a": "Measure the installed assembly from sealing face to sealing face in a relaxed position, not stretched. For swivel ends, include the end fitting’s own length. If the old hose was kinked or too short, say so, because we may need to change the length or the end angle to give the right bend radius."
+    },
+    {
+      "q": "Can you build the assembly in Dubai instead of on site?",
+      "a": "We build replacement assemblies in our Dubai hose bay from a sample, part number or measurements, and deliver them to site for fitting. We can also supply hose, fittings, adapters and quick couplers from Dubai stock. This suits cases where the details are confirmed before the build starts."
+    }
+  ]
+}

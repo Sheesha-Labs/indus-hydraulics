@@ -1,0 +1,95 @@
+{
+  "slug": "fujairah",
+  "meta_title": "Hose Repair, Fujairah Port & East Coast",
+  "meta_description": "On-site hydraulic and industrial hose service in Fujairah: Port of Fujairah, the Free Zone and FOIZ, and the Dibba and Masafi quarry belt. Made at the machine.",
+  "zones": {
+    "body": "Fujairah is two different jobs: port and terminal plant, and east-coast quarries. We travel from the Dubai hose bay, about 100 km in a straight line.",
+    "items": [
+      {
+        "name": "Port of Fujairah",
+        "desc": "The port runs bunkering, terminal and bulk handling equipment against vessel schedules, so a hose failure is judged against a berth window. Cranes, reach stackers, loaders and transfer equipment work in salt air. Gate passes and inductions take arranging, so paperwork should be in place before it is needed. We supply hose, couplings and fittings, and make hydraulic assemblies at the machine."
+      },
+      {
+        "name": "Fujairah Free Zone and FOIZ",
+        "desc": "The Free Zone and the oil industry zone hold storage, terminal and light industrial sites with forklifts, loaders, yard trucks and transfer pumps. Hydraulic hose on handling plant is standard SAE and EN construction. Fuel and chemical transfer lines need industrial or composite hose and the right couplings, so tell us the product, bore and pressure. We supply the hose and couplings and fit them on site."
+      },
+      {
+        "name": "Dibba and Masafi quarry belt",
+        "desc": "The east-coast quarry belt stretches along the foot of the mountains, with crushers, screens, excavators and loaders working in rock dust. Hoses fail from abrasion and vibration, mostly at clamps and crimp collars. Distance from Dubai means visits are planned. We bring hose, ferrules and fittings to the machine, replace the failed assembly and look at why the run rubbed or loosened."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Port work and quarry work need different hose. Port equipment is about salt air and continuous duty; quarries are about abrasion and vibration.",
+    "items": [
+      {
+        "name": "Reach stackers, cranes and terminal plant",
+        "desc": "Port handling equipment runs long duty cycles in salt air. Hydraulic hoses are typically EN 853 2SN or EN 856 4SP with JIC or ORFS ends, and the failures are corroded fittings, cover cracking and chafe at boom pivots. We build assemblies with zinc-nickel or stainless ends, fit sleeves at pivots and can replace a whole set in one planned stop, tagged on request.",
+        "industry": "marine"
+      },
+      {
+        "name": "Fuel and chemical transfer hose",
+        "desc": "Industrial and composite hose carries fuel, oil and chemicals, and it is not hydraulic hose. Composite hose to EN 13765 suits multi-ply oil, vapour and chemical lines, and dry-disconnect and breakaway couplings fit transfer points. We supply the hose, couplings and ends to the specification you give us. We do not certify or test bunker or transfer hoses; any test requirement stays with your operator and inspector.",
+        "industry": "oil-gas"
+      },
+      {
+        "name": "Marine and offshore support vessels",
+        "desc": "Vessels and workboats run hydraulic deck cranes, winches and steering, plus fuel, water, bilge and wet exhaust hose. Marine hose suits the service: fuel hose for fuel, wet exhaust hose for exhaust. Salt air attacks plain fittings, so stainless or zinc-nickel ends are worth specifying. We supply hose and fittings and make hydraulic assemblies to your sample or part number.",
+        "industry": "marine"
+      },
+      {
+        "name": "Quarry and crusher plant",
+        "desc": "Crushers, screens and loaders along the east-coast belt shake hoses loose and wear covers at every contact point. Most hydraulic runs are 100R2AT or 2SN with high-pressure arm circuits on EN 856 4SP or 4SH. We replace the failed assembly and check clamping, guards and routing, because a heavier hose in the same bad position fails the same way. Bring a sample or the bore and ends.",
+        "industry": "mining"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Start gate pass and induction requests early; they are not arranged on the spot.",
+      "Name the site contact, the gate, and the permit to work or induction the site requires.",
+      "Vessel schedule or berth window the work must fit around, so we can plan around it.",
+      "For transfer hose: the product, bore, working pressure and coupling type on both ends.",
+      "For hydraulic work: machine, circuit, hose bore, construction and both end types, or a sample.",
+      "For quarry sites: which machines can be stopped and released for re-hosing in one planned stop."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Can you get into the Port of Fujairah when a hose fails?",
+      "a": "Not reliably. Port gate passes and site inductions have to be arranged, and the port sets the pace. Customers who work to vessel schedules are better served when the paperwork is already in place before a failure, so start the pass and induction requests early and tell us what the gate requires."
+    },
+    {
+      "q": "Do you test or certify bunker hoses?",
+      "a": "No. We supply hose, couplings and fittings, and we do not certify or test bunker or transfer hoses. If your operation needs a test or certificate, that stays with your inspection body. We can supply the hose and couplings you specify and make hydraulic assemblies at the machine."
+    },
+    {
+      "q": "What is the difference between industrial hose and hydraulic hose?",
+      "a": "Hydraulic hose is built for high working pressure and pulsing, to SAE J517 or EN 853, 856 and 857. Industrial hose carries air, water, oil or chemicals at lower pressure, often with a different lining and cover. Using one for the other fails. Tell us the product, pressure and bore so we supply the correct type."
+    },
+    {
+      "q": "What hose do fuel transfer points need?",
+      "a": "Fuel and oil transfer normally uses multi-ply composite hose to EN 13765, or a hose rated for the specific fuel, with dry-disconnect or breakaway couplings at the connection. Tell us the product, bore and pressure. We supply the hose and couplings; the specification and any testing remain with the operator."
+    },
+    {
+      "q": "Do you serve the Dibba and Masafi quarries?",
+      "a": "Yes. We travel from Dubai to quarries and crusher plants along the east-coast belt with hose, ferrules and fittings, and make assemblies at the machine. Because of the distance, visits are planned, so send the machine, bore and end types beforehand and we can load the van accordingly."
+    },
+    {
+      "q": "Do you keep anyone in Fujairah?",
+      "a": "No. Our only premises is the hose bay in Al Qusais, Dubai, about 100 km away in a straight line, so we travel to Fujairah. That makes planning matter: the fewer unknowns, the more gets done in one visit."
+    },
+    {
+      "q": "Which fittings suit salt air at the port?",
+      "a": "Stainless steel or zinc-nickel plated fittings resist salt corrosion better than standard zinc-plated ones. Corrosion usually starts at the nut and ferrule. For exposed hydraulic runs at the port we recommend one of those finishes, and covers that tolerate sun and spray."
+    },
+    {
+      "q": "Can you make a hydraulic hose if I only have the old one?",
+      "a": "Yes. A sample is the most reliable reference because it shows the bore, length, ends and layline. Send it or measurements, and we build the replacement in the Dubai hose bay and deliver it for fitting, or make it at the machine when we are on site."
+    },
+    {
+      "q": "Do you supply marine hoses for vessels?",
+      "a": "We supply marine hose for fuel, water, bilge and wet exhaust, plus the fittings. Match the hose to the service, because fuel hose and wet exhaust hose are not interchangeable. Give us the bore, the fluid and the connection, and we supply to that."
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 import 'server-only'
 import { db } from '@indus/db'
-import { marketsOrdered, releasedMarketPageSlugs, type SubPageKind } from '@indus/domain'
+import {
+  marketsOrdered,
+  releasedMarketPageSlugs,
+  serviceAreasOrdered,
+  type SubPageKind,
+} from '@indus/domain'
 
 /**
  * The records behind each sub-page family, in one shape.
@@ -70,6 +75,15 @@ export async function listSubPageRecords(kind: SubPageKind): Promise<SubPageReco
         live: brand.isPublished,
       }))
     }
+    case 'location':
+      // A code registry, like markets, and always public: every area in it
+      // has a page. The code column is the region line's first part.
+      return serviceAreasOrdered().map((area) => ({
+        slug: area.slug,
+        name: area.name,
+        code: area.region.split('·')[0]!.trim(),
+        live: true,
+      }))
     default: {
       const exhaustive: never = kind
       throw new Error(`Unknown sub-page kind: ${String(exhaustive)}`)

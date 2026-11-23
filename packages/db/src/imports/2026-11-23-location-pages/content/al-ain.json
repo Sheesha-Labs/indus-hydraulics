@@ -1,0 +1,99 @@
+{
+  "slug": "al-ain",
+  "meta_title": "Hydraulic Hose Repair, Al Ain Region",
+  "meta_description": "On-site hydraulic hose repair across Al Ain: Sanaiya, Industrial City, quarry and crusher sites and farms. Hoses made at the machine, planned from Dubai.",
+  "zones": {
+    "body": "Al Ain is the furthest inland area we cover from the Dubai hose bay, about 125 km in a straight line. Visits are planned, so the right parts go out the first time.",
+    "items": [
+      {
+        "name": "Al Ain Industrial Area (Sanaiya)",
+        "desc": "Sanaiya is small-shop and yard country: small fabricators, truck and equipment yards, block makers and vehicle fleets. The machines are mixed, loaders, forklifts, tippers and cranes, so the hose range is wide. Give us the bore, the hose construction and both end types before we set off, and we carry the right assemblies on the van, then crimp them at the machine and route and clamp them properly."
+      },
+      {
+        "name": "Al Ain Industrial City",
+        "desc": "Industrial City holds larger manufacturing, cement, block and precast plant. Hydraulics run on presses, handling equipment, loaders and tippers, and inland dust wears unguarded hose at every contact point. A visit is a good time to re-hose a whole machine in one planned stop, tag each assembly to its circuit on request, and check clamps and guards on the runs that have failed before. Send the machine list in advance."
+      },
+      {
+        "name": "Quarry and crusher sites across the Al Ain region",
+        "desc": "Quarries and crushers in the region sit away from town, in dust and heat. Crusher frames vibrate, so clamp spacing and guards matter as much as hose grade. We replace the failed assembly and look at why it failed. Because the trip is long, the hose list, bore and end types for each machine should be confirmed before we set off, along with the site gate and any induction the quarry requires."
+      },
+      {
+        "name": "Farms and agricultural estates",
+        "desc": "Farm machinery means tractors, loaders, balers and implements, often with quick couplers on the hydraulic lines. Dust and sun degrade hose covers, and implements are coupled and uncoupled often, which wears the couplers. We supply hose, quick couplers and fittings and make assemblies at the machine, matched to the coupler type on your tractor and implements. A sample coupler removes any guesswork over thread form."
+      }
+    ]
+  },
+  "industries": {
+    "body": "Inland distance and dust shape the work. What is known before the van leaves decides how much is done in one visit.",
+    "items": [
+      {
+        "name": "Quarry crushers, screens and loaders",
+        "desc": "Crushing and screening plant runs mostly SAE 100R2AT or EN 853 2SN hose with JIC or ORFS ends, and loaders on the high-pressure arm circuits use EN 856 4SP or 4SH. Dust abrades covers at every clamp and bracket. We replace the failed assembly, then check clamp spacing, guard condition and routing so the same run does not fail again.",
+        "industry": "mining"
+      },
+      {
+        "name": "Cement, block and precast plant",
+        "desc": "Block machines, mixers and batching plant rely on hydraulic presses, vibrators and conveyors in a constant fall of fine powder. Hoses fail at flexing points and where powder packs against the cover. We make assemblies to the bore and ends you give us and supply abrasive hose for cement and powder lines. A sleeve or guard helps where a run flexes.",
+        "industry": "mining"
+      },
+      {
+        "name": "Construction plant and municipal fleets",
+        "desc": "Excavators, loaders, graders, tippers and truck-mounted equipment make up most of the fleets. Typical failures are chafe at boom brackets, damaged covers and fatigue at fittings. We re-hose machines in one planned stop where we can, tag assemblies on request and supply replacement hose and fittings from Dubai stock to match the sample or part number.",
+        "industry": "construction"
+      },
+      {
+        "name": "Tractors, loaders and farm machinery",
+        "desc": "Agricultural machines run lighter hydraulic circuits, mostly 100R1AT, 100R2AT and 2SN hose, with quick couplers and BSP or metric ends. Sun degrades covers, and repeated coupling wears connectors. We supply hose, adapters and ISO quick couplers and make assemblies to suit. Bring a sample coupler so we match the thread and flat-face or poppet type.",
+        "industry": "construction"
+      }
+    ]
+  },
+  "access": {
+    "checklist": [
+      "Machine make, model and the circuit that failed.",
+      "Hose bore, construction and both end types, or a sample of the failed assembly.",
+      "Site location, gate details and any permit to work or induction the site requires.",
+      "A list of the machines to be re-hosed, so we can plan one trip around them.",
+      "Coupler type and thread form for farm implements and attachments.",
+      "A clear, level area near the machine for the crimp machine and van."
+    ]
+  },
+  "faq": [
+    {
+      "q": "How far is Al Ain from your hose bay?",
+      "a": "About 125 km in a straight line from our Al Qusais hose bay in Dubai, which makes Al Ain the furthest inland area we cover. Our only premises is that hose bay, so we travel. That is why visits are planned rather than improvised."
+    },
+    {
+      "q": "What should I have ready when I call about an Al Ain site?",
+      "a": "The bore, the hose construction and both end types decide whether the right parts go on the van. A sample of the failed hose, a photo of the layline or a part number is ideal. Add the machine, the circuit and the site access details."
+    },
+    {
+      "q": "Can you re-hose several machines in one trip?",
+      "a": "Yes, and it makes the most of a long trip. Send the machine list and the circuits that need work, and we build the assemblies beforehand where we can, tag them to their circuits on request and fit them in one planned stop."
+    },
+    {
+      "q": "Why does inland dust destroy hoses so often?",
+      "a": "Fine dust packs against covers at clamps and brackets and acts like an abrasive, wearing through to the wire, which then rusts. Guards, sleeves and correct routing slow this a lot. On a visit we replace the hose and look at why the run keeps failing as well as replacing it."
+    },
+    {
+      "q": "Do you cover farms and agricultural estates?",
+      "a": "Yes. Tractors, loaders and implements are common around Al Ain. We supply hose, adapters and quick couplers and make assemblies at the machine. Bring a sample coupler or the thread form so we match the connection and the coupler type."
+    },
+    {
+      "q": "Do you work at quarries and crusher sites outside town?",
+      "a": "Yes. We travel to quarry and crusher sites across the Al Ain region with hose, ferrules and fittings on the van. Because the trip is long, confirm the bore and ends for each machine beforehand, plus the gate and induction requirements."
+    },
+    {
+      "q": "Do you serve both Sanaiya and Industrial City?",
+      "a": "Yes. Sanaiya is mostly small shops, yards and block makers, and Industrial City has larger manufacturing and precast plant. Tell us the site, the machines and the circuit, with the bore and end types if you know them, and we plan the trip around them so the right stock is on the van."
+    },
+    {
+      "q": "Can I get a hose made in Dubai and fitted in Al Ain?",
+      "a": "Yes. Send a sample, a part number or measurements and we build the assembly in the Dubai hose bay and deliver it to site for fitting. For several runs on one machine it is often better to make them all and fit them in one visit."
+    },
+    {
+      "q": "Which hose should I use on a loader’s arm circuit?",
+      "a": "High-pressure arm circuits normally need EN 856 4SP or 4SH wire-spiral hose, with pilot and auxiliary lines on 2SN. Read the layline on the old hose for the standard and working pressure. If it is unreadable, send the bore and we confirm the construction."
+    }
+  ]
+}

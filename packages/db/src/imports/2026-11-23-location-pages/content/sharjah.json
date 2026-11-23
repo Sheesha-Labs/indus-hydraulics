@@ -1,0 +1,99 @@
+{
+ "slug": "sharjah",
+ "meta_title": "Hydraulic Hose Repair, Sharjah & Sajja",
+ "meta_description": "On-site hydraulic hose assembly in Sajja, Sharjah Industrial Areas, Hamriyah and the Airport Free Zone. Several machines per visit, built from stock on the van.",
+ "zones": {
+  "body": "Four zones, all close to the hose bay. What changes between zones is the gate, not the work: each zone is served by listing every machine waiting before we set off.",
+  "items": [
+   {
+    "name": "Sajja",
+    "desc": "Sajja is dense with fabrication shops, small assembly units and vehicle workshops, often several to a street. Typical hydraulics are workshop presses, scissor and column lifts, tail-lifts and small loaders. Most of these run low-pressure return lines and one or two pressure hoses that crack at the crimp after long flexing. Because units sit close together, one visit can usually take in a row of them, so collect your neighbours’ failed hoses and ask us to cover the lot."
+   },
+   {
+    "name": "Industrial Areas 10, 11, 13 and 15",
+    "desc": "The Sharjah industrial areas are the home of haulage yards, concrete and block plants, metal workshops and equipment hire fleets. That means tippers, transit mixers, forklifts, skid-steers and small cranes, many of them working hard on dusty ground. Abrasion on the hose cover and failed fittings at the machine end are the usual faults. A yard with five machines down can be re-hosed in one planned stop if we know each machine’s hose list in advance."
+   },
+   {
+    "name": "Hamriyah Free Zone",
+    "desc": "Hamriyah Free Zone is a coastal industrial zone of manufacturing, processing and trading units. Hydraulics here are mostly production-line presses, material-handling trucks and yard plant. The coastal setting means fittings corrode faster than inland, so we suggest zinc-nickel plated or stainless ends when you are re-hosing a machine that lives outdoors. Free zone sites normally need the visit registered at the gate, so give us the company name and the contact who will meet us."
+   },
+   {
+    "name": "Sharjah Airport Free Zone",
+    "desc": "Sharjah Airport Free Zone is a free zone for warehousing, logistics and light assembly, so hydraulics here are largely forklifts, reach trucks, dock levellers, pallet stackers and tail-lifts on delivery vehicles. These machines have short, tight hose runs where a wrongly sized fitting or a kinked line shows up in how the machine handles. Tell us the machine make and model, and the mast or attachment affected, and we will bring the matching bore and ends."
+   }
+  ]
+ },
+ "industries": {
+  "body": "Sharjah work is mostly many small machines rather than one large one. The three groups below are what we are most often asked to re-hose in a single visit.",
+  "items": [
+   {
+    "name": "Tippers and transit mixers",
+    "desc": "Tipper bodies run a telescopic ram on a pressure hose, usually two-wire braid to SAE 100R2AT or EN 853 2SN with BSP or JIC ends. Mixers add a drum drive motor on larger-bore lines. Both fail where the hose rubs the chassis or crossmember, and where a fitting has been over-bent. A spring guard or abrasion sleeve at the rub point and correct bend radius cure most repeat failures. Give us the truck make, ram position and hose length.",
+    "industry": "construction"
+   },
+   {
+    "name": "Presses and workshop lifts",
+    "desc": "Fabrication presses and brake presses run higher pressure lines, often four-wire or compact hose, to EN 856 4SP or EN 857 2SC. Column lifts and scissor lifts use smaller two-wire hose. Fatigue at the crimp neck is typical on presses because pressure cycles every stroke. If the line has been replaced before, tell us what was fitted last time, because a wrong end type is easy to repeat. We can build the assembly at the machine and route it clear of the heat of the power pack.",
+    "industry": "steel"
+   },
+   {
+    "name": "Forklifts and small materials handling",
+    "desc": "Forklift masts, tilt cylinders and side-shift attachments use short assemblies that flex with every lift. Typical hose is single or two-wire braid with JIC 37° or BSP ends, and the hose is run inside the mast channel where chain wear can cut the cover. A burst line on the mast is often joined by two or three others of similar age and wear. Replace them together and tag them, so the rest of the fleet is not left waiting on its own failure.",
+    "industry": "construction"
+   },
+   {
+    "name": "Light plant and yard equipment",
+    "desc": "Skid-steers, small excavators, truck-mounted cranes and loaders in the yards are covered with abrasive dust. Hose covers wear through, then the wire corrodes and the line bursts. Quick couplers on attachments are another repeat failure: worn flat-face or ISO 7241 couplers leak and are often replaced with the wrong series. Bring the coupler size when you call, and we can match the half to the attachment on the machine.",
+    "industry": null
+   }
+  ]
+ },
+ "access": {
+  "checklist": [
+   "List every machine with a hose waiting, with make, model and which circuit failed, before calling.",
+   "Group machines by yard or street, so one visit covers a cluster and not a scatter.",
+   "Tell us the gate: industrial area yard, Hamriyah or Airport Free Zone, because free zones normally need the visit registered.",
+   "Name the contact who will meet us and confirm whether a gate pass or induction is needed.",
+   "Park machines on level hardstanding with the engine off and the circuit depressurised, or tell us what is not safe to approach.",
+   "Keep old hoses on the machine so we can match length, bore and ends against the failed assembly."
+  ]
+ },
+ "faq": [
+  {
+   "q": "How many machines should I list when I call from Sharjah?",
+   "a": "List all of them. Sharjah sites are close to our Dubai hose bay, so distance is not the cost. The mobilisation is. One visit that takes in five tippers and a forklift is far better value than six separate trips. Give make, model, circuit and any part numbers you hold, and say which machines are stopped and which are merely leaking."
+  },
+  {
+   "q": "Can you cover a whole yard of tippers and mixers in one visit?",
+   "a": "Yes, if we know what each needs before travelling. We carry hose, fittings and ferrules for common sizes on the van, and we crimp at the machine. For the full fleet, send the list of lines for each truck. Anything that does not match van stock is built in the hose bay and brought for fitting."
+  },
+  {
+   "q": "What is different about working in Hamriyah compared with Sajja?",
+   "a": "Hamriyah is a free zone on the coast. Access is usually gate-controlled, so the visit has to be registered, and the salt air matters for the fittings. In Sajja, units are closer together and access is often simpler. The hose work is alike; the planning is not. Tell us which site and who will meet us at the gate."
+  },
+  {
+   "q": "Do you hose forklifts in the Airport Free Zone?",
+   "a": "Yes. We re-hose masts, tilt and side-shift circuits as assemblies made at the machine. Warehouse trucks use short hose runs, so exact length and end orientation matter more than bore. If you can send a photo of the failed hose with its layline visible, or keep the old assembly for us to measure, the replacement will match."
+  },
+  {
+   "q": "A press hose keeps failing at the crimp. What should I check?",
+   "a": "Press lines flex and pulse every stroke, so fatigue at the fitting is common. Check whether the hose is routed in a tight bend close to the fitting, whether it twists under pressure, and whether the pressure rating has the headroom for the circuit’s peak. We can rebuild with the right construction and fit a spring guard where needed."
+  },
+  {
+   "q": "Do you take a workshop lift apart to replace its hoses?",
+   "a": "No. The work is limited to the hoses. We build assemblies at the machine, so the lift is not taken apart elsewhere. Make sure the lift is empty, lowered and depressurised when we arrive, and tell us if the lift’s own manual calls for specific hose or fittings."
+  },
+  {
+   "q": "Do you tag the hoses on a whole-machine re-hose?",
+   "a": "On request, yes. Each assembly can carry a tag showing the circuit, so a later failure can be traced to a line. This is useful on mixers and tippers that run several near-identical hoses, and on forklifts where one fault appears on each truck in the fleet."
+  },
+  {
+   "q": "Which hose do I need for a tipper ram?",
+   "a": "Most tipper rams use two-wire braided hose, SAE 100R2AT or EN 853 2SN, with BSP or JIC ends, but check the layline on the old hose and the pressure the pump delivers. Larger rams or high-pressure systems may need spiral hose. If in doubt, send us the old assembly or a clear photo of its layline."
+  },
+  {
+   "q": "What if a hose or fitting I need is not on the van?",
+   "a": "We build replacement assemblies in the Dubai hose bay from a sample, part number or measurements, then deliver them to your site for fitting. We can also supply hose, fittings, adapters and quick couplers from Dubai stock if your own team prefers to fit them."
+  }
+ ]
+}
