@@ -80,7 +80,8 @@ for (const who of ['owner', 'helper'] as const satisfies readonly DemoUser[]) {
         await expect(page.locator('main')).toHaveCount(1)
         await expect(main.locator(`[data-template="${template}"]`).first()).toBeVisible()
         await expect(main.locator('h1')).toHaveCount(1)
-        await expect(main.locator('[data-arrives]').first()).toBeVisible()
+        // A skeleton marks itself [data-arrives]; a finished page [data-built].
+        await expect(main.locator(':is([data-arrives], [data-built])').first()).toBeVisible()
         await hydrated(page)
         if (nav === null) {
           await expect.poll(() => activeNav(page)).toBeNull()

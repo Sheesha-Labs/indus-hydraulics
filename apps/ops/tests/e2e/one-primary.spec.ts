@@ -62,11 +62,16 @@ for (const who of ['owner', 'helper'] as const satisfies readonly DemoUser[]) {
         await signedInAs(who)
         const res = await page.goto(path)
         expect(res?.status()).toBe(200)
-        // The page has streamed in: a console page marks its content [data-arrives] (routes.spec.ts); a
+        // The page has streamed in: a console page marks its content [data-arrives] (a skeleton) or
+        // [data-built] (a finished page, e.g. /settings/team) (routes.spec.ts); a
         // first-run page is its template.
         await expect(
           page
-            .locator(SETUP.includes(path) ? '[data-template]' : 'main#content [data-arrives]')
+            .locator(
+              SETUP.includes(path)
+                ? '[data-template]'
+                : 'main#content :is([data-arrives], [data-built])'
+            )
             .first()
         ).toBeVisible()
         const found = await visiblePrimaries(page)

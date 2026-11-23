@@ -48,7 +48,7 @@ export default async function SettingsTeamPage({ searchParams }: Props) {
   const transferOpen = manage && query.transfer === '1' && isRecentSignIn(security.signedInAt, now)
 
   return (
-    <div className="flex flex-col gap-4 pb-6">
+    <div data-built="S03" className="flex flex-col gap-4 pb-6">
       {manage && query.guard === 'last-owner' && owner ? (
         <Banner
           tone="warn"
