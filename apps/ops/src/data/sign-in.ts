@@ -1,6 +1,12 @@
 import 'server-only'
 import { opsDb } from '@indus/ops-db'
+import { inspectInvite, type InviteView } from '../server/access/invites'
 import { inspectResetToken, type ResetTokenState } from '../server/access/reset'
+
+/** Accept invitation (S03-T03): the link's state, the invited address and who sent it. */
+export function inviteLinkState(token: string): Promise<InviteView> {
+  return inspectInvite(token)
+}
 
 /** Page reads for board 77 (reset link, authenticator setup). Writes go through sign-in/actions.ts. */
 

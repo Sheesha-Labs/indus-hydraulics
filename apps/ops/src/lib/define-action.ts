@@ -5,6 +5,7 @@ import type { z } from 'zod'
 import { err, type FieldErrors, type Result } from '@indus/ops-core'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import { can, requireOpsUser, type HelperFlag, type OpsRole, type OpsUser } from './access'
+import { isOwnerOnly, type Capability } from './access-core'
 import { writeAudit, type AuditEntry } from './audit'
 import { env } from './env'
 import { newRequestId } from './request-id'
@@ -64,6 +65,11 @@ export type ActionOptions<S extends z.ZodType, T> = {
   roles: readonly OpsRole[]
   /** Helper flags the action also needs, e.g. ['canSendSupplierMail']. The Owner always passes. */
   flags?: readonly HelperFlag[]
+  /**
+   * The board-84 capability the action exercises (`can(user, capability)`, access-core.ts). An
+   * Owner-only capability ("Never", "No · read only") refuses a Helper whatever `roles` says.
+   */
+  capability?: Capability
   /**
    * Turns the action idempotent: the caller's part of the key, normally `${proposalId}:${version}`.
    * A repeat within 24 h returns the first successful result; a failure is not stored, so a retry
@@ -146,10 +152,44 @@ function toStored<T>(data: T): Result<T> {
   return JSON.parse(JSON.stringify({ success: true, data })) as Result<T>
 }
 
+/**
+ * Every action defineAction has built in this process, by name: what it allows and the function
+ * itself. The Helper-refusal test (owner-only-actions.test.ts) imports every action module and
+ * loops over this list, so a new Owner-only action is covered without editing the test.
+ */
+export type RegisteredAction = {
+  name: string
+  roles: readonly OpsRole[]
+  flags: readonly HelperFlag[]
+  capability: Capability | null
+  /** No Helper may ever run it: a role list without 'helper', or an Owner-only capability. */
+  ownerOnly: boolean
+  run: (raw: unknown) => Promise<Result<unknown>>
+}
+
+const REGISTRY = new Map<string, RegisteredAction>()
+
+export function registeredActions(): RegisteredAction[] {
+  return [...REGISTRY.values()].sort((a, b) => a.name.localeCompare(b.name))
+}
+
 export function defineAction<S extends z.ZodType, T>(opts: ActionOptions<S, T>): Action<S, T> {
   const transactional = Boolean(opts.audit || opts.idempotent)
 
-  return async function action(raw: z.input<S>): Promise<Result<T>> {
+  const registered = action as (raw: unknown) => Promise<Result<unknown>>
+  // A module evaluated again (dev reload) replaces its entry; the name is the key.
+  REGISTRY.set(opts.name, {
+    name: opts.name,
+    roles: opts.roles,
+    flags: opts.flags ?? [],
+    capability: opts.capability ?? null,
+    ownerOnly:
+      !opts.roles.includes('helper') || (opts.capability ? isOwnerOnly(opts.capability) : false),
+    run: registered,
+  })
+  return action
+
+  async function action(raw: z.input<S>): Promise<Result<T>> {
     const requestId = newRequestId()
     let user: OpsUser | null = null
     try {
@@ -158,6 +198,7 @@ export function defineAction<S extends z.ZodType, T>(opts: ActionOptions<S, T>):
       for (const flag of opts.flags ?? []) {
         if (!can(user, flag)) return err(SAFE_MESSAGES.forbidden)
       }
+      if (opts.capability && !can(user, opts.capability)) return err(SAFE_MESSAGES.forbidden)
 
       const parsed = opts.schema.safeParse(raw)
       if (!parsed.success) return err(SAFE_MESSAGES.invalid, fieldErrorsOf(parsed.error))

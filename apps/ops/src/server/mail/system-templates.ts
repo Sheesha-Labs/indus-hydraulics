@@ -33,6 +33,27 @@ export function passwordResetEmail(input: { link: string; minutes: number }): Re
   }
 }
 
+/**
+ * The Helper invitation (S03-T03): who invited them, the link (stored redacted), when it expires, and
+ * that Google or a password + authenticator both work.
+ */
+export function inviteEmail(input: {
+  inviterName: string
+  link: string
+  expires: string
+}): RenderedEmail {
+  const lines = [
+    `${input.inviterName} invited you to Indus Operations as Helper.`,
+    `Open the link to join with your Google account, or set a password and an authenticator app. It works once, until ${input.expires}.`,
+    'If you were not expecting this, ignore this email.',
+  ]
+  return {
+    subject: `${input.inviterName} invited you to Indus Operations`,
+    html: page(lines, { href: input.link, label: 'Join Indus Operations' }),
+    text: [lines[0], input.link, ...lines.slice(1), 'Indus Operations'].join('\n\n'),
+  }
+}
+
 /** Forgot-password for an account with no password: the board's message, by email (decision). */
 export function googleOnlyEmail(input: { signInUrl: string }): RenderedEmail {
   const lines = [

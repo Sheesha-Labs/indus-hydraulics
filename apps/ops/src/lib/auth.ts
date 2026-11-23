@@ -13,7 +13,10 @@ import { checkGoogleProfile, type GoogleProfile } from './google-profile'
 import { SecondFactorError, type PasswordCredentials } from './password-provider'
 import { clientIp } from './request-origin'
 import { noticeIfNewDevice, requestLocation } from '../server/access/devices'
+import { clearInviteCookie, readInviteCookie } from '../server/access/invite-cookie'
+import { acceptGoogleInvite } from '../server/access/invites'
 import { endSession } from '../server/access/sessions'
+import { signInRefusal, type InviteSignInRefusal } from '../server/access/team-core'
 import { secondFactorStep } from '../server/access/sign-in'
 import {
   findActiveUserByEmail,
@@ -88,6 +91,34 @@ function refuse(reason: string): string {
   return `/sign-in?error=${reason}`
 }
 
+type GoogleInviteProfile = {
+  email?: string | null
+  email_verified?: boolean | null
+  name?: string | null
+}
+
+/**
+ * The Google half of accepting an invitation: when the invite cookie is present, accept it for the
+ * address Google verified (one transaction: the user row active, the invite accepted, auth_event
+ * invite_accepted) and clear the cookie. 'accepted' signs in; a refusal code is shown only if the
+ * ordinary checks would also refuse (an already-active person still signs in as usual).
+ */
+async function acceptInviteFromCookie(
+  profile: GoogleInviteProfile | undefined
+): Promise<'accepted' | InviteSignInRefusal | null> {
+  const token = await readInviteCookie()
+  if (!token) return null
+  await clearInviteCookie()
+  if (profile?.email_verified !== true || !profile.email) return 'email_unverified'
+  const outcome = await acceptGoogleInvite({
+    token,
+    email: profile.email,
+    name: profile.name ?? null,
+  })
+  if (outcome.ok) return 'accepted'
+  return outcome.reason === 'email_mismatch' ? 'invite_mismatch' : 'invite_invalid'
+}
+
 /**
  * `ops-password`'s authorize: the sealed pending value from the password step plus a TOTP code or a
  * backup code (server/access/sign-in.ts). Never a password alone. Failures (and the lock they may
@@ -141,21 +172,27 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
     async signIn({ account, profile, user }) {
       const method = account?.provider === 'google' ? 'google' : 'password'
       let email = (user.email ?? '').toLowerCase()
+      // Accepting an invitation with Google (S03-T03): only when this browser carries the invite
+      // cookie from /sign-in/invite/[token]. Without it nothing below changes.
+      let inviteRefusal: InviteSignInRefusal | null = null
+      if (account?.provider === 'google') {
+        const invite = await acceptInviteFromCookie(profile as GoogleInviteProfile | undefined)
+        if (invite === 'accepted') return true
+        if (invite) inviteRefusal = invite
+      }
       if (account?.provider === 'google') {
         const check = checkGoogleProfile((profile ?? {}) as GoogleProfile, DOMAIN)
         email = check.email
         if (!check.ok) {
           await recordFailedSignIn({ email, method, ...(await requestMeta()) })
-          return refuse(check.reason)
+          return refuse(inviteRefusal ?? check.reason)
         }
       }
       const row = email ? await findUserByEmail(email) : null
-      // Invited (not yet accepted) users read the same answer as unknown addresses. A suspended or
-      // removed account is told so only after Google proved the person owns that address.
-      if (!row || row.status !== 'active') {
+      const refusal = signInRefusal(row, method)
+      if (refusal) {
         await recordFailedSignIn({ email, method, ...(await requestMeta()) })
-        const ended = row && (row.status === 'suspended' || row.status === 'removed')
-        return refuse(ended && method === 'google' ? 'deactivated' : 'not_invited')
+        return refuse(refusal === 'not_invited' && inviteRefusal ? inviteRefusal : refusal)
       }
       return true
     },

@@ -107,6 +107,10 @@ enum AuthEventKind {
   invite_accepted
   invite_revoked
   ownership_transferred
+  /// S03-T03 (Settings › Team).
+  invite_domain_override
+  permissions_changed
+  user_removed
 
   @@schema("ops")
 }

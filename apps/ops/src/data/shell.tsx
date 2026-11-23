@@ -4,7 +4,10 @@ import { BannerAction, type SystemBanner } from '@indus/ops-ui/status'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import { cookies } from 'next/headers'
 import { cache } from 'react'
+import type { OpsUser } from '../lib/access-core'
 import { env } from '../lib/env'
+import { firstName } from '../lib/setup-steps'
+import { setupProgress } from './setup'
 
 /** The sidebar's identity line prints the mailbox's local part; anything else prints "—". */
 export type ShellMailbox = 'sales@' | 'purchase@' | null
@@ -71,10 +74,44 @@ export function fixtureBanners(): SystemBanner[] {
  * Zoho disconnected. The shell shows the most severe one with "+n more". S02: none (fixtures outside
  * production behind FIXTURE_BANNERS_COOKIE). S04/S05 read the mailbox and pause state here.
  */
-export async function getShellBanners(): Promise<SystemBanner[]> {
-  if (env().APP_ENV === 'production') return []
+export async function getShellBanners(
+  user?: Pick<OpsUser, 'role'>
+): Promise<SystemBanner[]> {
+  const banners: SystemBanner[] = []
+  if (user?.role === 'helper') {
+    const setup = await helperSetupBanner()
+    if (setup) banners.push(setup)
+  }
+  if (env().APP_ENV === 'production') return banners
   const jar = await cookies()
-  return jar.get(FIXTURE_BANNERS_COOKIE)?.value === '1' ? fixtureBanners() : []
+  return jar.get(FIXTURE_BANNERS_COOKIE)?.value === '1'
+    ? [...fixtureBanners(), ...banners]
+    : banners
+}
+
+/**
+ * Board 84b "Helper signs in during setup" (S03-T03): while the Owner's setup checklist is incomplete,
+ * a Helper sees "Setup in progress by <owner first name> · n of 6." on every console page. Two small
+ * reads (the checklist, cached per request; the Owner's name), for Helpers only.
+ */
+export async function helperSetupBanner(): Promise<SystemBanner | null> {
+  const [progress, owner] = await Promise.all([
+    setupProgress(),
+    opsDb.user.findFirst({
+      where: { role: 'owner', status: 'active' },
+      select: { name: true },
+    }),
+  ])
+  if (progress.complete) return null
+  const who = owner ? firstName(owner.name) : 'the Owner'
+  return {
+    kind: 'info',
+    props: {
+      tone: 'info',
+      title: `Setup in progress by ${who} · ${progress.done} of ${progress.total}.`,
+      children: 'You can look around; enquiries appear once his mailboxes are connected.',
+    },
+  }
 }
 
 /**

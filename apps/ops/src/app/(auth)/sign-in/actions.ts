@@ -5,11 +5,14 @@ import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { after } from 'next/server'
 import type {
+  InviteFormState,
   PasswordFormState,
   ResetFormState,
   SetupFormState,
   TwoFactorFormState,
 } from '../../../components/auth/states'
+import { setInviteCookie } from '../../../server/access/invite-cookie'
+import { acceptInviteWithPassword, activateInvitedUserNow } from '../../../server/access/invites'
 import { AccessError, requireOpsUser } from '../../../lib/access'
 import { signIn, signOut } from '../../../lib/auth'
 import { linkToken } from '../../../lib/route-params'
@@ -222,7 +225,11 @@ export async function confirmTotpSetup(
   return { status: 'done', backupCodes: result.backupCodes }
 }
 
-/** "I have saved these": back to where enrolment started, or (invite acceptance) signed in. */
+/**
+ * "I have saved these": back to where enrolment started, or (invite acceptance) signed in. For an
+ * invitation the person becomes active here, in one transaction with the invite's acceptance, and
+ * only now (S03-T03): a revoked or expired invitation stops them before any session exists.
+ */
 export async function finishTotpSetup(): Promise<void> {
   const pending = await readPendingCookie('enrol')
   if (!pending) redirect('/sign-in?error=expired')
@@ -231,6 +238,44 @@ export async function finishTotpSetup(): Promise<void> {
     redirect((pending.next ?? '/settings/team') as Route)
   }
   if (!(await confirmedSince(pending))) redirect('/sign-in/two-factor/setup')
+  const activated = await activateInvitedUserNow(pending.uid)
+  if (!activated.ok) {
+    await clearPendingCookie()
+    redirect('/sign-in?error=invite_invalid')
+  }
   await setPendingCookie(newPending({ uid: pending.uid, purpose: 'signin', proof: 'enrolment' }))
   await finishWithProof(pending.next ?? '/today')
+}
+
+// ── Accept invitation (board 77, S03-T03) ─────────────────────────────────────────────────────
+
+/** Continue with Google on the invitation: remember the link in a sealed cookie, then Google. */
+export async function continueInviteWithGoogle(formData: FormData): Promise<void> {
+  const token = linkToken.safeParse(field(formData, 'token'))
+  if (!token.success) redirect('/sign-in?error=invite_invalid')
+  await setInviteCookie(token.data)
+  await signIn('google', { redirectTo: '/today' })
+}
+
+/**
+ * Set a password on the invitation: the policy check, then the authenticator (T01's enrolment with
+ * `signInAfter`), and only then the first session (finishTotpSetup).
+ */
+export async function acceptInviteWithPasswordAction(
+  _previous: InviteFormState,
+  formData: FormData
+): Promise<InviteFormState> {
+  const token = linkToken.safeParse(field(formData, 'token'))
+  if (!token.success) redirect('/sign-in?error=invite_invalid')
+  const password = field(formData, 'password', 1024)
+  if (!password) return { status: 'password', message: PASSWORD_PROBLEM_TEXT.too_short }
+  const outcome = await acceptInviteWithPassword({ token: token.data, password })
+  if (!outcome.ok) {
+    if (outcome.reason === 'password') return { status: 'password', message: outcome.message }
+    redirect(`/sign-in/invite/${encodeURIComponent(token.data)}` as Route)
+  }
+  await setPendingCookie(
+    beginEnrolment({ userId: outcome.userId, next: '/today', signInAfter: true })
+  )
+  redirect('/sign-in/two-factor/setup')
 }

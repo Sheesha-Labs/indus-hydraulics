@@ -3,6 +3,9 @@ import type { ReactNode } from 'react'
 import { ToastProvider } from '@indus/ops-ui/overlay'
 import { completeAndContinue } from '../../actions/setup'
 import { getAssistantStep, getCompanyStep, getMoneyStep } from '../../data/setup'
+import { formatDate } from '@indus/ops-ui/format'
+import { getInviteStep } from '../../data/team'
+import InviteForm from '../settings/team/InviteForm'
 import type { OpsUser } from '../../lib/access'
 import type { SetupStep } from '../../lib/route-params'
 import AssistantModes from './AssistantModes'
@@ -45,19 +48,6 @@ function LaterStep(): StepView {
         title="Available in a later update — skip for now"
         titleAs="h2"
         text="You can finish setup without this step. Next skips it; it opens here once it is ready."
-      />
-    ),
-  }
-}
-
-/** Steps another S03 task is building: a neutral placeholder until it lands here. */
-function PendingStep(): StepView {
-  return {
-    body: (
-      <Card
-        title="This step is on its way"
-        titleAs="h2"
-        text="It is being finished now. Use Next to carry on; come back to it from the list at the left."
       />
     ),
   }
@@ -114,11 +104,40 @@ async function AssistantStep(): Promise<StepView> {
   }
 }
 
+/**
+ * Step 6 · Invite your helper (S03-T03): board 84's invite form inside the wizard. Sending it marks the
+ * step done (invites.ts). Once a Helper is active or an invitation is open, the step says so; Resend,
+ * Revoke and Permissions live in Settings › Team.
+ */
+async function InviteStep(): Promise<StepView> {
+  const data = await getInviteStep()
+  const status = data.helper
+    ? `${data.helper.name} (${data.helper.email}) is your Helper.`
+    : data.invite && !data.invite.expired
+      ? `Invite sent to ${data.invite.email}. It works until ${formatDate(data.invite.expiresAt)}.`
+      : null
+  return {
+    description:
+      'Your helper finds suppliers and chases them. They see costs; margins and sending only if you allow it.',
+    body: status ? (
+      <Card
+        title={status}
+        titleAs="h2"
+        text="Resend, revoke and permissions are in Settings › Team. Next finishes setup."
+      />
+    ) : (
+      <Card as="div">
+        <InviteForm domain={data.workspaceDomain} primary={false} />
+      </Card>
+    ),
+  }
+}
+
 export const STEP_VIEWS: Readonly<Record<SetupStep, StepRender>> = {
   company: CompanyStep,
   mailboxes: LaterStep,
   history: LaterStep,
   money: MoneyStep,
   assistant: AssistantStep,
-  invite: PendingStep,
+  invite: InviteStep,
 }

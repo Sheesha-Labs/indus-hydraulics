@@ -48,7 +48,7 @@ export const SETUP_STEP_META: Readonly<Record<SetupStep, SetupStepMeta>> = {
     nextLabel: 'the Assistant',
     build: 'built',
   },
-  invite: { title: 'Invite your helper', minutes: '1 min', nextLabel: 'invite', build: 'pending' },
+  invite: { title: 'Invite your helper', minutes: '1 min', nextLabel: 'invite', build: 'built' },
 }
 
 export const SETUP_TOTAL = SETUP_STEPS.length

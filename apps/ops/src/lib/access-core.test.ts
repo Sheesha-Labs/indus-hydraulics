@@ -1,11 +1,19 @@
 import { describe, expect, it } from 'vitest'
 import {
   AccessError,
+  CAPABILITIES,
+  CAPABILITY_KEYS,
+  FLAG_CAPABILITY,
+  HELPER_FLAGS,
+  OWNER_CAPABILITIES,
   TOUCH_EVERY_MS,
   can,
+  isOwnerOnly,
   makeRequireOpsUser,
   sessionRefusal,
   type AccessRow,
+  type Capability,
+  type HelperFlag,
 } from './access-core'
 
 const NOW = new Date('2026-11-23T08:00:00Z')
@@ -141,5 +149,79 @@ describe('can', () => {
     expect(can(OWNER, 'change_settings')).toBe(true)
     const allFlags = { ...OWNER, role: 'helper' as const }
     expect(can(allFlags, 'change_settings')).toBe(false)
+  })
+})
+
+describe('can · the board-84 capability table, every (role, flags, capability)', () => {
+  /** Board 84's "What each role can do", as expected answers: owner, then helper by flag state. */
+  const EXPECTED: Record<Capability, 'yes' | HelperFlag | 'never'> = {
+    see_costs: 'yes',
+    see_margins: 'canSeeMargins',
+    send_supplier_mail: 'canSendSupplierMail',
+    edit_chaser_rules: 'canEditChaserRules',
+    send_client_quotation: 'never',
+    approve_below_floor: 'never',
+    approve_supplier_payments: 'never',
+    change_settings: 'never',
+    manage_team: 'never',
+  }
+
+  // All 8 combinations of the three Helper flags.
+  const FLAG_SETS = Array.from({ length: 8 }, (_, n) => ({
+    canSeeMargins: (n & 1) === 1,
+    canSendSupplierMail: (n & 2) === 2,
+    canEditChaserRules: (n & 4) === 4,
+  }))
+
+  it('covers exactly the nine capabilities of the map', () => {
+    expect(new Set(CAPABILITY_KEYS)).toEqual(new Set(Object.keys(EXPECTED)))
+    expect(OWNER_CAPABILITIES).toEqual([
+      'send_client_quotation',
+      'approve_below_floor',
+      'approve_supplier_payments',
+      'change_settings',
+      'manage_team',
+    ])
+  })
+
+  const cases = CAPABILITY_KEYS.flatMap((capability) =>
+    FLAG_SETS.flatMap((flags) =>
+      (['owner', 'helper'] as const).map((role) => ({ capability, flags, role }))
+    )
+  )
+
+  it.each(cases)('$role $flags → $capability', ({ capability, flags, role }) => {
+    const rule = EXPECTED[capability]
+    const want =
+      role === 'owner' || rule === 'yes' ? true : rule === 'never' ? false : flags[rule] === true
+    expect(can({ role, ...flags }, capability)).toBe(want)
+  })
+
+  it('accepts a Helper flag name as its capability', () => {
+    for (const flags of FLAG_SETS) {
+      for (const flag of HELPER_FLAGS) {
+        expect(can({ role: 'helper', ...flags }, flag)).toBe(
+          can({ role: 'helper', ...flags }, FLAG_CAPABILITY[flag])
+        )
+      }
+    }
+  })
+
+  it('refuses an unknown role, whatever the flags', () => {
+    const odd = { role: 'auditor' as unknown as 'helper', ...FLAG_SETS[7]! }
+    for (const capability of CAPABILITY_KEYS) expect(can(odd, capability)).toBe(false)
+  })
+
+  it('draws the seven board rows in order', () => {
+    expect(CAPABILITY_KEYS.filter((c) => CAPABILITIES[c].inTable)).toEqual([
+      'see_costs',
+      'see_margins',
+      'send_supplier_mail',
+      'send_client_quotation',
+      'approve_below_floor',
+      'approve_supplier_payments',
+      'change_settings',
+    ])
+    for (const c of CAPABILITY_KEYS) expect(isOwnerOnly(c)).toBe(EXPECTED[c] === 'never')
   })
 })

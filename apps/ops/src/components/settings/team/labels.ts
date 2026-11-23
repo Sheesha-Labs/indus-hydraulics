@@ -62,3 +62,9 @@ export function deviceSub(
     .filter(Boolean)
     .join(' · ')
 }
+
+/** A form field's text (a File or a missing field reads as ''). */
+export function formText(form: FormData, name: string): string {
+  const value = form.get(name)
+  return typeof value === 'string' ? value : ''
+}

@@ -7,7 +7,9 @@ import { auth } from './auth'
 
 export {
   AccessError,
+  CAPABILITIES,
   can,
+  isOwnerOnly,
   type Capability,
   type HelperFlag,
   type OpsRole,

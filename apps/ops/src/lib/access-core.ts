@@ -18,25 +18,149 @@ export type OpsUser = {
 /** Helper toggles (P01 84). Read from the session's user row on the server, never from input. */
 export type HelperFlag = 'canSeeMargins' | 'canSendSupplierMail' | 'canEditChaserRules'
 
-/**
- * Capabilities only the Owner holds, whatever the Helper's toggles (board 84). S03-T04 adds the
- * one the settings service needs; S03-T03 brings the full board-84 table.
- */
-export type OwnerCapability = 'change_settings'
-
-export type Capability = HelperFlag | OwnerCapability
-
-const OWNER_CAPABILITIES: ReadonlySet<Capability> = new Set<OwnerCapability>(['change_settings'])
+export const HELPER_FLAGS: readonly HelperFlag[] = [
+  'canSeeMargins',
+  'canSendSupplierMail',
+  'canEditChaserRules',
+]
 
 /**
- * May this person do what a capability guards? The Owner always may; a Helper only with the
- * flag on, and never an Owner-only capability. `defineAction({ flags })` calls it; data mappers
- * use it for masking.
+ * Board 84's capability map ("What each role can do"), the single source actions, pages and menus
+ * read (S03-T03). The Owner holds every capability. A Helper's answer is one of:
+ *   always    — "Yes"
+ *   flag      — "Only if you allow it": the Helper's toggle decides
+ *   never     — "Never"
+ *   read_only — "No · read only" (they may look, never change)
  */
-export function can(user: Pick<OpsUser, 'role' | HelperFlag>, capability: Capability): boolean {
+export type Capability =
+  | 'see_costs'
+  | 'see_margins'
+  | 'send_supplier_mail'
+  | 'edit_chaser_rules'
+  | 'send_client_quotation'
+  | 'approve_below_floor'
+  | 'approve_supplier_payments'
+  | 'change_settings'
+  | 'manage_team'
+
+export type HelperRule =
+  | { kind: 'always' }
+  | { kind: 'flag'; flag: HelperFlag }
+  | { kind: 'never' }
+  | { kind: 'read_only' }
+
+export type CapabilityDef = {
+  /** The row's words in "What each role can do". `{floor}` is filled by the page (pricing.defaults). */
+  label: string
+  /** The Permissions toggle's sub-text (flag capabilities only). */
+  sub?: string
+  helper: HelperRule
+  /** Drawn as a row of the board-84 table (the board shows seven; the other two are enforced only). */
+  inTable: boolean
+}
+
+/** In board order: the seven table rows first. */
+export const CAPABILITIES: Readonly<Record<Capability, CapabilityDef>> = {
+  see_costs: {
+    label: 'See enquiries, supplier quotes and costs',
+    helper: { kind: 'always' },
+    inTable: true,
+  },
+  see_margins: {
+    label: 'See margins and profit',
+    sub: 'Margins, floors and profit on quotations, orders and reports.',
+    helper: { kind: 'flag', flag: 'canSeeMargins' },
+    inTable: true,
+  },
+  send_supplier_mail: {
+    label: 'Send supplier RFQs and chasers',
+    sub: 'From purchase@, after the usual checks. Client mail stays with the Owner.',
+    helper: { kind: 'flag', flag: 'canSendSupplierMail' },
+    inTable: true,
+  },
+  send_client_quotation: {
+    label: 'Send client quotations',
+    helper: { kind: 'never' },
+    inTable: true,
+  },
+  approve_below_floor: {
+    label: 'Approve below the {floor} floor',
+    helper: { kind: 'never' },
+    inTable: true,
+  },
+  approve_supplier_payments: {
+    label: 'Approve supplier payments',
+    helper: { kind: 'never' },
+    inTable: true,
+  },
+  change_settings: {
+    label: 'Change Autopilot and settings',
+    helper: { kind: 'read_only' },
+    inTable: true,
+  },
+  edit_chaser_rules: {
+    label: 'Edit chaser rules',
+    sub: 'When and how often supplier chasers go out.',
+    helper: { kind: 'flag', flag: 'canEditChaserRules' },
+    inTable: false,
+  },
+  manage_team: {
+    label: 'Invite, remove and set permissions',
+    helper: { kind: 'never' },
+    inTable: false,
+  },
+}
+
+export const CAPABILITY_KEYS = Object.keys(CAPABILITIES) as Capability[]
+
+/** The capability each Helper toggle grants (defineAction's `flags` go through it). */
+export const FLAG_CAPABILITY: Readonly<Record<HelperFlag, Capability>> = {
+  canSeeMargins: 'see_margins',
+  canSendSupplierMail: 'send_supplier_mail',
+  canEditChaserRules: 'edit_chaser_rules',
+}
+
+/** Capabilities only the Owner holds, whatever the Helper's toggles ("Never", "No · read only"). */
+export type OwnerCapability =
+  | 'send_client_quotation'
+  | 'approve_below_floor'
+  | 'approve_supplier_payments'
+  | 'change_settings'
+  | 'manage_team'
+
+export function isOwnerOnly(capability: Capability): capability is OwnerCapability {
+  const kind = CAPABILITIES[capability].helper.kind
+  return kind === 'never' || kind === 'read_only'
+}
+
+export const OWNER_CAPABILITIES: readonly OwnerCapability[] = CAPABILITY_KEYS.filter(isOwnerOnly)
+
+function isFlag(value: Capability | HelperFlag): value is HelperFlag {
+  return Object.hasOwn(FLAG_CAPABILITY, value)
+}
+
+/**
+ * May this person do what a capability guards? The Owner always may; a Helper by the capability's
+ * rule: yes, their toggle, or never. A Helper flag name is accepted as its capability.
+ * `defineAction({ flags, capability })` calls it; data mappers use it for masking; pages use it to
+ * draw or lock a control, never as the only check.
+ */
+export function can(
+  user: Pick<OpsUser, 'role' | HelperFlag>,
+  capability: Capability | HelperFlag
+): boolean {
   if (user.role === 'owner') return true
-  if (OWNER_CAPABILITIES.has(capability)) return false
-  return user[capability as HelperFlag] === true
+  if (user.role !== 'helper') return false
+  const rule = CAPABILITIES[isFlag(capability) ? FLAG_CAPABILITY[capability] : capability].helper
+  switch (rule.kind) {
+    case 'always':
+      return true
+    case 'flag':
+      return user[rule.flag] === true
+    case 'never':
+    case 'read_only':
+      return false
+  }
 }
 
 export type AccessErrorCode = 'unauthenticated' | 'forbidden' | 'session_revoked'
