@@ -169,3 +169,107 @@ test('setup · company (79): autosave, preview, logo upload, reload keeps it, To
   await expect(page.locator('[data-slot="banner"]')).toContainText('Finish setup · 0 of 6.')
   expect(errors).toEqual([])
 })
+
+/*
+ * S03-T06 · Setup 4 Money defaults (board 82) and Setup 5 Assistant mode (board 83). Both tests leave
+ * the database as they found it: the money test never stores a value (an invalid one is not saved and
+ * the page is reloaded), and the assistant test returns to Careful through Undo. Neither clicks Next,
+ * which would mark its checklist step done for the tests above.
+ */
+
+test('setup · money (82): defaults with sign-off tags, cutover note, floor above margin not saved', async ({
+  page,
+  signedInAs,
+}) => {
+  const errors = watchErrors(page)
+  await signedInAs('owner')
+  await page.goto('/setup/money')
+  await expect(page.locator('[data-template="T9"][data-layout="rail"]')).toBeVisible()
+  await expect(page.getByRole('heading', { level: 1, name: 'Money defaults' })).toBeVisible()
+  await expect(page.getByText('Setup 4 of 6')).toBeVisible()
+  await expect(page.locator('a[data-step="money"]')).toHaveAttribute('aria-current', 'step')
+  for (const text of [
+    'Profit, reports and the ledger are kept in AED.',
+    'Set per client; AED or USD by default.',
+    'Central Bank of the UAE · daily 06:00',
+    'A rate locks on each supplier quote when it is captured.',
+    '5% on local supply',
+    '0% on exports',
+    'Below the floor the Assistant asks you first.',
+    'The Assistant never proposes a line below 5%.',
+    'Round unit prices up to AED 5, and to AED 10 above AED 5,000',
+    'Zoho Books: connect later in Settings › Integrations.',
+  ])
+    await expect(page.getByText(text, { exact: true })).toBeVisible()
+  // (decision, C4) No quotation number to set before cutover: a note instead.
+  await expect(page.locator('[data-money-row="numbering"] [role="note"]')).toContainText(
+    'Set at cutover in Settings › Numbering'
+  )
+  await expect(page.getByText(/INDUS\/Q\d/)).toHaveCount(0)
+  // FX, VAT, margin and rounding await the Owner's sign-off.
+  await expect(page.locator('[data-part="signoff-tag"]')).toHaveCount(4)
+  await expect(page.getByLabel('Printed on local supply')).toHaveValue(
+    'VAT 5% extra as per UAE law'
+  )
+  await expect(page.getByLabel('Printed on exports')).toHaveValue('Zero-rated export')
+  await expect(page.getByRole('button', { name: 'AED', pressed: true })).toBeVisible()
+  await expect(page.getByLabel('Default margin')).toHaveValue('18')
+  await expect(page.getByLabel('Floor', { exact: true })).toHaveValue('12')
+  await expect(page.getByRole('button', { name: 'Next: the Assistant' })).toBeVisible()
+  expect(await blocking(page)).toEqual([])
+
+  // A margin below the floor is shown and not saved.
+  await page.getByLabel('Default margin').fill('10')
+  await expect(page.getByText('The floor cannot be above the default margin.')).toBeVisible()
+  const label = page.locator('[data-saved-label]')
+  await expect(label).toHaveAttribute('data-state', 'error')
+  await expect(label).toContainText('not saved')
+  await page.reload()
+  await expect(page.getByLabel('Default margin')).toHaveValue('18')
+  expect(errors).toEqual([])
+})
+
+test('setup · assistant (83): Careful selected; Balanced applies the preset; Undo returns to Careful', async ({
+  page,
+  signedInAs,
+}) => {
+  const errors = watchErrors(page)
+  await signedInAs('owner')
+  await page.goto('/setup/assistant')
+  await expect(
+    page.getByRole('heading', { level: 1, name: 'How much should the Assistant do?' })
+  ).toBeVisible()
+  await expect(
+    page.getByText(
+      'Start careful. As you approve its work, Autopilot suggests where it could do more.'
+    )
+  ).toBeVisible()
+  const careful = page.locator('[data-mode="careful"] input[type="radio"]')
+  const balanced = page.locator('[data-mode="balanced"] input[type="radio"]')
+  await expect(careful).toBeChecked()
+  await expect(page.getByText('Recommended to start')).toBeVisible()
+  await expect(page.getByText('Preset contents awaiting sign-off')).toHaveCount(2)
+  await expect(
+    page.getByText('The Assistant never sends prices to clients or moves money without you.')
+  ).toBeVisible()
+  await expect(page.getByRole('link', { name: 'Fine-tune in Autopilot →' })).toHaveAttribute(
+    'href',
+    '/assistant/autopilot'
+  )
+  await expect(page.getByRole('button', { name: /^Next: invite \S+/ })).toBeVisible()
+  expect(await blocking(page)).toEqual([])
+
+  await page.locator('[data-mode="balanced"]').click()
+  const toast = page.locator('[data-part="toast-region"]')
+  await expect(toast).toContainText(/Autopilot set to Balanced · \d+ actions changed/)
+  await expect(balanced).toBeChecked()
+  await expect(page.locator('[data-saved-label]')).toHaveAttribute('data-state', 'saved')
+
+  await toast.getByRole('button', { name: /^Undo/ }).click()
+  await expect(careful).toBeChecked()
+  await expect(toast).toContainText(/Autopilot set to Careful · \d+ actions changed/)
+
+  await page.reload()
+  await expect(page.locator('[data-mode="careful"] input[type="radio"]')).toBeChecked()
+  expect(errors).toEqual([])
+})

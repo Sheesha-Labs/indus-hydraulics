@@ -48,7 +48,8 @@ export default async function SetupStepPage({ params }: { params: Promise<{ step
   const i = stepIndex(current)
   const next = nextStep(current)
   const prev = previousStep(current)
-  const nextLabel = next ? `Next: ${SETUP_STEP_META[next].nextLabel}` : 'Finish setup'
+  const nextLabel =
+    view.nextLabel ?? (next ? `Next: ${SETUP_STEP_META[next].nextLabel}` : 'Finish setup')
   const later = SETUP_STEP_META[current].build === 'later'
 
   const frame = (
@@ -87,8 +88,8 @@ export default async function SetupStepPage({ params }: { params: Promise<{ step
           </ButtonLink>
         }
         next={
-          later ? (
-            <form action={skipAndContinue.bind(null, current)}>
+          later || view.nextAction ? (
+            <form action={view.nextAction ?? skipAndContinue.bind(null, current)}>
               <Button type="submit" variant="primary" size="lg">
                 {nextLabel}
               </Button>

@@ -40,13 +40,13 @@ export const SETUP_STEP_META: Readonly<Record<SetupStep, SetupStepMeta>> = {
     title: 'Money defaults',
     minutes: '4 min',
     nextLabel: 'money defaults',
-    build: 'pending',
+    build: 'built',
   },
   assistant: {
     title: 'How much should the Assistant do?',
     minutes: '1 min',
-    nextLabel: 'Assistant',
-    build: 'pending',
+    nextLabel: 'the Assistant',
+    build: 'built',
   },
   invite: { title: 'Invite your helper', minutes: '1 min', nextLabel: 'invite', build: 'pending' },
 }

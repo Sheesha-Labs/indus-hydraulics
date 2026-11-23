@@ -8,6 +8,7 @@ import { defineAction } from '../lib/define-action'
 import { SETUP_STEPS, type SetupStep } from '../lib/route-params'
 import { nextStep, SETUP_STEP_META } from '../lib/setup-steps'
 import { saveCompanyAssets, saveCompanyProfile } from '../server/setup/company'
+import { saveMoneySetting } from '../server/setup/money'
 import { markStep, markWelcomeSeen } from '../server/setup/progress'
 import { SETTINGS } from '../server/settings/registry'
 import { createUpload, verifyUploadedObject } from '../server/storage/uploads'
@@ -54,6 +55,27 @@ const skipStep = defineAction({
   },
 })
 
+const completeStep = defineAction({
+  name: 'setup.complete_step',
+  schema: z.object({ step: z.enum(['money', 'assistant']) }),
+  roles: ['owner'],
+  handler: async ({ step }, ctx) => {
+    await markStep(step, 'done', ctx.user.id)
+    return null
+  },
+})
+
+/**
+ * Next on Setup 4 and Setup 5 (S03-T06): moving on with the values shown is accepting them, so the step
+ * is done even if nothing was changed (a change already marked it done). Then open the next step.
+ */
+export async function completeAndContinue(step: 'money' | 'assistant'): Promise<void> {
+  const parsed = z.enum(['money', 'assistant']).safeParse(step)
+  if (!parsed.success) redirect('/today')
+  await completeStep({ step: parsed.data })
+  redirect(parsed.data === 'money' ? '/setup/assistant' : '/setup/invite')
+}
+
 /** Next on "Available in a later update — skip for now": record the skip, open the next step. */
 export async function skipAndContinue(step: SetupStep): Promise<void> {
   const parsed = stepSchema.safeParse(step)
@@ -62,6 +84,38 @@ export async function skipAndContinue(step: SetupStep): Promise<void> {
   const next = nextStep(parsed.data)
   redirect((next ? `/setup/${next}` : '/today') as Route)
 }
+
+// ── Setup 4 · Money defaults ─────────────────────────────────────────────────────────────────
+
+const moneySchema = z.discriminatedUnion('key', [
+  z.object({
+    key: z.literal('currency'),
+    value: SETTINGS.currency.schema,
+    expectedVersion: version,
+  }),
+  z.object({ key: z.literal('vat'), value: SETTINGS.vat.schema, expectedVersion: version }),
+  z.object({
+    key: z.literal('pricing.defaults'),
+    value: SETTINGS['pricing.defaults'].schema,
+    expectedVersion: version,
+  }),
+])
+
+/**
+ * Autosave of one Setup 4 setting (debounced 800 ms in the client): version-checked through the
+ * settings service, and checklist 'money' done in the same transaction (first save).
+ */
+export const saveMoneySettingAction = defineAction({
+  name: 'setup.money.save',
+  schema: moneySchema,
+  roles: ['owner'],
+  handler: async (input, ctx) =>
+    input.key === 'currency'
+      ? saveMoneySetting(ctx, 'currency', input.value, input.expectedVersion)
+      : input.key === 'vat'
+        ? saveMoneySetting(ctx, 'vat', input.value, input.expectedVersion)
+        : saveMoneySetting(ctx, 'pricing.defaults', input.value, input.expectedVersion),
+})
 
 // ── Setup 1 · Company and documents ──────────────────────────────────────────────────────────
 

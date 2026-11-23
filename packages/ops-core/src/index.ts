@@ -2,6 +2,7 @@
 // only Zod and relative imports (ops-core-purity.test.ts enforces it).
 export const OPS_CORE = '@indus/ops-core' as const
 
+export * from './autopilot'
 export * from './document'
 export * from './money'
 export * from './reference'
