@@ -269,9 +269,10 @@ export class FakeGmail implements GmailApi {
       const offset = p.pageToken ? Number(p.pageToken) : 0
       const page = all.slice(offset, offset + size)
       return {
-        messages: page.map(
-          (m): GmailMessage => ({ id: m.id ?? null, threadId: m.threadId ?? null })
-        ),
+        messages: page.map((m): GmailMessage => ({
+          id: m.id ?? null,
+          threadId: m.threadId ?? null,
+        })),
         resultSizeEstimate: all.length,
         ...(offset + size < all.length ? { nextPageToken: String(offset + size) } : {}),
       }

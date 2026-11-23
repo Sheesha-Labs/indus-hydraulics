@@ -144,7 +144,9 @@ describe('parseEnv', () => {
 
   it('apps/ops/.env.example lists exactly the variables env.ts reads', () => {
     const example = readFileSync(join(import.meta.dir, '../../.env.example'), 'utf8')
-    const listed = [...example.matchAll(/^([A-Z][A-Z0-9_]+)=/gm)].map((m) => m[1]).sort((a, b) => (a ?? '').localeCompare(b ?? ''))
+    const listed = [...example.matchAll(/^([A-Z][A-Z0-9_]+)=/gm)]
+      .map((m) => m[1])
+      .sort((a, b) => (a ?? '').localeCompare(b ?? ''))
     expect(listed).toEqual([...ENV_NAMES].sort((a, b) => a.localeCompare(b)))
   })
 })
