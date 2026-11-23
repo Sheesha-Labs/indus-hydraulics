@@ -20,6 +20,7 @@ import { parseOpeningHours } from '../../../lib/opening-hours'
 import { getMasterPageContent } from '../../../lib/page-content'
 import { BASE_URL, ORG_ID, urlFor, SITE_NAME } from '../../../lib/seo'
 import { OFFICES, formatOfficeAddress, officeMapQuery } from '../../../lib/site-locations'
+import ServiceAreaStrip from '../../../components/locations/ServiceAreaStrip'
 import { getStoreSettings } from '../../../lib/store-settings'
 
 // Static-ish marketing page; cache for 1 hour.
@@ -259,14 +260,17 @@ export default async function ContactPage({ params }: Props) {
     ),
 
     office: hq ? (
-      /* ── Head office ───────────────────────────────────────── */
-      <HqMap
-        city={hq.city}
-        addressLines={formatOfficeAddress(hq).split('\n')}
-        mapQuery={officeMapQuery(hq)}
-        note={counterHours ? officeNote : null}
-        photo={hq.photo ?? null}
-      />
+      /* ── Head office, then the areas we travel to from it ──── */
+      <>
+        <HqMap
+          city={hq.city}
+          addressLines={formatOfficeAddress(hq).split('\n')}
+          mapQuery={officeMapQuery(hq)}
+          note={counterHours ? officeNote : null}
+          photo={hq.photo ?? null}
+        />
+        <ServiceAreaStrip />
+      </>
     ) : null,
 
     help: (

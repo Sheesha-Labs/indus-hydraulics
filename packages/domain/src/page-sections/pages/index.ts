@@ -7,6 +7,7 @@ import { CONTACT_PAGE } from './contact'
 import { BRANDS_PAGE } from './brands'
 import { INDUSTRIES_PAGE } from './industries'
 import { MARKETS_PAGE } from './markets'
+import { LOCATIONS_PAGE } from './locations'
 import { RESOURCES_PAGE } from './resources'
 import { PRIVACY_PAGE } from './privacy'
 import { TERMS_PAGE } from './terms'
@@ -27,6 +28,7 @@ export const MASTER_PAGES: readonly MasterPageDef[] = [
   BRANDS_PAGE,
   INDUSTRIES_PAGE,
   MARKETS_PAGE,
+  LOCATIONS_PAGE,
   RESOURCES_PAGE,
   PRIVACY_PAGE,
   TERMS_PAGE,
@@ -41,6 +43,7 @@ export {
   BRANDS_PAGE,
   INDUSTRIES_PAGE,
   MARKETS_PAGE,
+  LOCATIONS_PAGE,
   RESOURCES_PAGE,
   PRIVACY_PAGE,
   TERMS_PAGE,

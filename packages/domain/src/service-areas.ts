@@ -41,10 +41,44 @@ export type ServiceArea = {
   constraint: { label: string; detail: string }
   /** Blog article slugs most relevant to this area. */
   relatedArticles: string[]
-  /** Catalogue category slugs to funnel into. */
+  /**
+   * Catalogue category slugs to funnel into, most relevant first. Six to
+   * eight: the stocked-ranges band is where a location page hands a reader to
+   * the catalogue, and two cards (the old count) left most of the page's
+   * buyers with nothing to click.
+   */
   relatedCategories: string[]
+  /**
+   * Industry slugs (`Industry.slug`) whose work dominates here. Drives the
+   * industry cards, which carry the industry's own hero photograph.
+   */
+  industries: string[]
+  /**
+   * Where the area's marker sits on the UAE map, `[longitude, latitude]`,
+   * WGS 84 — the centre of its industrial zones, not of the city. Also the
+   * point the straight-line distance from the hose bay is measured to.
+   */
+  coords: readonly [number, number]
+  /**
+   * Which side of the marker its map label sits. The northern emirates sit
+   * within 40 km of each other, so labels alternate sides to stay legible.
+   */
+  labelSide: 'left' | 'right'
+  /**
+   * The English Wikipedia article for the emirate or region — `sameAs` on the
+   * `AdministrativeArea` the Service JSON-LD names, which is what lets a
+   * search engine resolve "Habshan and Al Dhafra" to a known place.
+   */
+  wikipedia: string
   position: number
 }
+
+/**
+ * The Dubai hose bay, `[longitude, latitude]` — Al Qusais Industrial Area, the
+ * one verified premises (see `OFFICES` in apps/web/src/lib/site-locations.ts).
+ * Every distance on the location pages is measured from here.
+ */
+export const HOSE_BAY_COORDS: readonly [number, number] = [55.383, 25.28]
 
 export const SERVICE_AREAS: ServiceArea[] = [
   {
@@ -85,8 +119,24 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'on-site-hydraulic-hose-service-uae',
       'getting-a-hydraulic-hose-made',
       'bulk-hose-refit-and-tagging',
+      'port-equipment-hydraulic-hose',
+      'concrete-pump-hydraulic-hose',
+      'how-to-read-a-hose-layline',
     ],
-    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
+    relatedCategories: [
+      'hydraulic-hose-fittings-suppliers-uae',
+      'hydraulic-hoses',
+      'hydraulic-hose-assemblies',
+      'crimp-ferrules',
+      'hydraulic-adapters',
+      'quick-couplers',
+      'industrial-hose-suppliers-uae',
+      'lifting-rigging-equipment-uae',
+    ],
+    industries: ['construction', 'marine', 'steel'],
+    coords: [55.23, 25.13],
+    labelSide: 'left',
+    wikipedia: 'https://en.wikipedia.org/wiki/Dubai',
     position: 1,
   },
   {
@@ -119,8 +169,24 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'on-site-hydraulic-hose-service-uae',
       'rig-site-hose-replacement-abu-dhabi',
       'excavator-hydraulic-hose-replacement',
+      'port-equipment-hydraulic-hose',
+      'mobile-crane-hydraulic-hose',
+      'hose-register-and-replacement-programme',
     ],
-    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
+    relatedCategories: [
+      'hydraulic-hose-fittings-suppliers-uae',
+      'hydraulic-hoses',
+      'hydraulic-hose-assemblies',
+      'hydraulic-adapters',
+      'oil-gas-hoses',
+      'hammer-union-suppliers-uae',
+      'lifting-rigging-equipment-uae',
+      'marine-equipment-uae',
+    ],
+    industries: ['oil-gas', 'construction', 'marine', 'steel'],
+    coords: [54.5, 24.355],
+    labelSide: 'left',
+    wikipedia: 'https://en.wikipedia.org/wiki/Abu_Dhabi',
     position: 2,
   },
   {
@@ -153,8 +219,23 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'rig-site-hose-replacement-abu-dhabi',
       'api-7k-16c-16d-which-standard',
       'api-7k-rotary-vibrator-hose',
+      'cementing-and-drilling-fluid-equipment',
+      'hose-register-and-replacement-programme',
     ],
-    relatedCategories: ['oil-gas-hoses', 'drilling-hoses'],
+    relatedCategories: [
+      'oil-gas-hoses',
+      'drilling-hoses',
+      'well-control-hoses',
+      'hydraulic-hose-assemblies',
+      'hammer-union-suppliers-uae',
+      'flow-iron-wellhead-equipment-uae',
+      'oilfield-valve-suppliers-uae',
+      'rig-hardware',
+    ],
+    industries: ['oil-gas', 'power'],
+    coords: [53.63, 23.84],
+    labelSide: 'right',
+    wikipedia: 'https://en.wikipedia.org/wiki/Al_Dhafra_Region',
     position: 3,
   },
   {
@@ -187,8 +268,23 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'hose-service-northern-emirates',
       'on-site-hydraulic-hose-service-uae',
       'tipper-and-transit-mixer-hose',
+      'forklift-hydraulic-hose-replacement',
+      'truck-crane-hydraulic-hose',
     ],
-    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
+    relatedCategories: [
+      'hydraulic-hose-fittings-suppliers-uae',
+      'hydraulic-hoses',
+      'hydraulic-adapters',
+      'hydraulic-fittings',
+      'quick-couplers',
+      'industrial-hose-suppliers-uae',
+      'cylinders',
+      'pneumatics',
+    ],
+    industries: ['construction', 'steel'],
+    coords: [55.45, 25.31],
+    labelSide: 'right',
+    wikipedia: 'https://en.wikipedia.org/wiki/Sharjah',
     position: 4,
   },
   {
@@ -215,8 +311,20 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'hose-service-northern-emirates',
       'getting-a-hydraulic-hose-made',
       'forklift-hydraulic-hose-replacement',
+      'how-to-read-a-hose-layline',
     ],
-    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'crimp-ferrules'],
+    relatedCategories: [
+      'hydraulic-hose-fittings-suppliers-uae',
+      'crimp-ferrules',
+      'hydraulic-hoses',
+      'hydraulic-adapters',
+      'quick-couplers',
+      'pneumatics',
+    ],
+    industries: ['construction', 'marine'],
+    coords: [55.5, 25.395],
+    labelSide: 'left',
+    wikipedia: 'https://en.wikipedia.org/wiki/Ajman',
     position: 5,
   },
   {
@@ -244,9 +352,23 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'hose-service-northern-emirates',
       'why-hydraulic-hoses-fail',
       'hose-routing-bend-radius-twist',
+      'quarry-and-crusher-fittings',
+      'excavator-hydraulic-hose-replacement',
     ],
-    relatedCategories: ['hydraulic-hoses', 'hydraulic-hose-fittings-suppliers-uae'],
-    position: 6,
+    relatedCategories: [
+      'hydraulic-hoses',
+      'hydraulic-hose-fittings-suppliers-uae',
+      'hydraulic-hose-assemblies',
+      'abrasive-hoses',
+      'industrial-hose-suppliers-uae',
+      'lifting-rigging-equipment-uae',
+      'industrial-lubricant-suppliers-uae',
+    ],
+    industries: ['mining', 'construction', 'marine'],
+    coords: [55.99, 25.8],
+    labelSide: 'right',
+    wikipedia: 'https://en.wikipedia.org/wiki/Ras_Al_Khaimah',
+    position: 7,
   },
   {
     slug: 'fujairah',
@@ -273,12 +395,122 @@ export const SERVICE_AREAS: ServiceArea[] = [
       'hose-service-northern-emirates',
       'industrial-hose-is-not-hydraulic-hose',
       'chemical-transfer-hose-selection',
+      'marine-hose-fuel-exhaust-and-bilge',
+      'port-and-terminal-fittings',
+      'quarry-and-crusher-fittings',
     ],
-    relatedCategories: ['industrial-hose-suppliers-uae', 'composite-hoses'],
-    position: 7,
+    relatedCategories: [
+      'industrial-hose-suppliers-uae',
+      'composite-hoses',
+      'marine-hoses',
+      'dry-disconnect-couplings',
+      'breakaway-couplings',
+      'hydraulic-hoses',
+      'marine-equipment-uae',
+      'abrasive-hoses',
+    ],
+    industries: ['marine', 'oil-gas', 'mining'],
+    coords: [56.36, 25.17],
+    labelSide: 'right',
+    wikipedia: 'https://en.wikipedia.org/wiki/Fujairah',
+    position: 8,
+  },
+  {
+    slug: 'umm-al-quwain',
+    name: 'Umm Al Quwain',
+    region: 'United Arab Emirates',
+    summary:
+      'On-site hydraulic hose service across Umm Al Thuoob, the UAQ Free Trade Zone and the marine works along the Umm Al Quwain coast.',
+    intro:
+      'Umm Al Quwain sits on the northern run between Ajman and Ras Al Khaimah. Its industrial work is concentrated in a small number of zones, which makes it straightforward to cover well when a visit is planned as part of that run rather than as a trip of its own.',
+    zones: [
+      'Umm Al Thuoob industrial area',
+      'UAQ Free Trade Zone',
+      'Ahmed Bin Rashid Port and Free Zone',
+      'Umm Al Quwain old industrial area',
+    ],
+    alternateNames: ['UAQ', 'Umm al-Quwain', 'Umm Al Thuob'],
+    demand: [
+      'Light manufacturing and fabrication units',
+      'Marine, boatyard and coastal works equipment',
+      'Transport fleets and construction plant on the northern corridor',
+      'Workshop presses, lifts and materials handling',
+    ],
+    constraint: {
+      label: 'Planning it into the northern run',
+      detail:
+        'Distance is modest, but a visit for a single assembly is the expensive way to do it. Tell us what else is waiting in Ajman, Umm Al Quwain or Ras Al Khaimah when you call, and the visit can cover all of it.',
+    },
+    relatedArticles: [
+      'hose-service-northern-emirates',
+      'getting-a-hydraulic-hose-made',
+      'why-hydraulic-hoses-fail',
+      'marine-hose-fuel-exhaust-and-bilge',
+    ],
+    relatedCategories: [
+      'hydraulic-hoses',
+      'hydraulic-hose-fittings-suppliers-uae',
+      'hydraulic-adapters',
+      'industrial-hose-suppliers-uae',
+      'marine-equipment-uae',
+      'lifting-rigging-equipment-uae',
+    ],
+    industries: ['marine', 'construction'],
+    coords: [55.69, 25.58],
+    labelSide: 'left',
+    wikipedia: 'https://en.wikipedia.org/wiki/Umm_Al_Quwain',
+    position: 6,
+  },
+  {
+    slug: 'al-ain',
+    name: 'Al Ain',
+    region: 'Abu Dhabi · Al Ain Region',
+    summary:
+      'On-site hydraulic hose service for quarry, cement, construction and farm machinery across the Al Ain industrial areas and the wider Al Ain region.',
+    intro:
+      'Al Ain is the furthest inland area we cover from the Dubai hose bay, and the work reflects the region: quarrying and aggregate plant, cement and block making, construction fleets and a large amount of agricultural machinery. Because the trip is planned rather than improvised, what is known before we set off decides how much gets done in one visit.',
+    zones: [
+      'Al Ain Industrial Area (Sanaiya)',
+      'Al Ain Industrial City',
+      'Quarry and crusher sites across the Al Ain region',
+      'Farms and agricultural estates',
+    ],
+    alternateNames: ['Al-Ain', 'Sanaiya Al Ain', 'Al Ain Industrial'],
+    demand: [
+      'Quarrying, crushing and aggregate plant',
+      'Cement, block and precast manufacturing',
+      'Construction plant and municipal fleets',
+      'Tractors, loaders and agricultural machinery',
+    ],
+    constraint: {
+      label: 'Inland distance and dust',
+      detail:
+        'The bore, the hose construction and both fitting types decide whether the right parts go out on the first trip, so have them ready when you call. Inland dust wears unguarded hose at every contact point, and a visit is a good moment to look at why a run keeps failing as well as replacing it.',
+    },
+    relatedArticles: [
+      'on-site-hydraulic-hose-service-uae',
+      'why-hydraulic-hoses-fail',
+      'excavator-hydraulic-hose-replacement',
+      'quarry-and-crusher-fittings',
+      'hose-routing-bend-radius-twist',
+    ],
+    relatedCategories: [
+      'hydraulic-hoses',
+      'hydraulic-hose-fittings-suppliers-uae',
+      'hydraulic-hose-assemblies',
+      'hydraulic-adapters',
+      'abrasive-hoses',
+      'cylinders',
+      'hydraulic-pumps',
+      'lifting-rigging-equipment-uae',
+    ],
+    industries: ['mining', 'construction'],
+    coords: [55.75, 24.2],
+    labelSide: 'right',
+    wikipedia: 'https://en.wikipedia.org/wiki/Al_Ain',
+    position: 9,
   },
 ]
-
 export function serviceAreaBySlug(slug: string): ServiceArea | undefined {
   return SERVICE_AREAS.find((a) => a.slug === slug)
 }
@@ -290,4 +522,33 @@ export function serviceAreasOrdered(): ServiceArea[] {
 /** Names for `areaServed` on the Service JSON-LD. */
 export function serviceAreaNames(): string[] {
   return serviceAreasOrdered().map((a) => a.name)
+}
+
+/** Great-circle distance in km between two `[longitude, latitude]` points. */
+export function kmBetween(a: readonly [number, number], b: readonly [number, number]): number {
+  const rad = Math.PI / 180
+  const dLat = (b[1] - a[1]) * rad
+  const dLon = (b[0] - a[0]) * rad
+  const h =
+    Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * rad) * Math.cos(b[1] * rad) * Math.sin(dLon / 2) ** 2
+  return 2 * 6371 * Math.asin(Math.sqrt(h))
+}
+
+/**
+ * Straight-line distance from the Dubai hose bay to an area, rounded to the
+ * nearest 5 km. Straight line, not road: the page says so beside the figure,
+ * because a road distance would be a routing claim nobody here maintains.
+ */
+export function hoseBayDistanceKm(area: Pick<ServiceArea, 'coords'>): number {
+  return Math.max(5, Math.round(kmBetween(HOSE_BAY_COORDS, area.coords) / 5) * 5)
+}
+
+/** The areas nearest to this one, nearest first. */
+export function nearestServiceAreas(area: ServiceArea, count = 3): ServiceArea[] {
+  return serviceAreasOrdered()
+    .filter((other) => other.slug !== area.slug)
+    .map((other) => ({ other, km: kmBetween(area.coords, other.coords) }))
+    .sort((x, y) => x.km - y.km)
+    .slice(0, count)
+    .map((entry) => entry.other)
 }
