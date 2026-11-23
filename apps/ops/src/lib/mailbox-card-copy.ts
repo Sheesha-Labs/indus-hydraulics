@@ -40,12 +40,18 @@ function clock(at: Date | string): string {
   }).format(new Date(at))
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+/** "14 Sep" in GST. A fixed month table: ICU builds differ ("Sep" vs "Sept" for en-GB). */
 function dayMonth(at: Date | string): string {
-  return new Intl.DateTimeFormat('en-GB', {
+  const parts = new Intl.DateTimeFormat('en-GB', {
     timeZone: 'Asia/Dubai',
     day: 'numeric',
-    month: 'short',
-  }).format(new Date(at))
+    month: 'numeric',
+  }).formatToParts(new Date(at))
+  const day = parts.find((p) => p.type === 'day')?.value ?? ''
+  const month = Number(parts.find((p) => p.type === 'month')?.value ?? '1')
+  return `${day} ${MONTHS[month - 1] ?? ''}`
 }
 
 export function statusWord(status: string): MailboxStatusWord {
