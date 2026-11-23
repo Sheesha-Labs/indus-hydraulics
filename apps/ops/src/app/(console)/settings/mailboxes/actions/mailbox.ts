@@ -139,7 +139,14 @@ export const resumeMailboxReadingAction = defineAction({
   },
 })
 
-/** Owner-only diagnostic (not on the board): one test email through the real queue, with the server's Undo. */
+/**
+ * Owner-only diagnostic (not on the board): one test email through the real queue, with the server's Undo.
+ *
+ * No `audit` option on purpose: that would open the action's transaction first and hold the instance's ONE
+ * pooled connection (connection_limit=1) while scheduleSend waits for a connection of its own: a deadlock that
+ * ended in "The database is busy" (2026-11-23). The email is queued first; the log entry follows in its own
+ * short transaction.
+ */
 export const sendTestEmailAction = defineAction({
   name: 'mailbox.sendTest',
   schema: z.object({
@@ -150,16 +157,18 @@ export const sendTestEmailAction = defineAction({
   roles: ['owner'],
   handler: async (input, ctx) => {
     const out = await sendTestEmail({ userId: ctx.user.id, ...input }).catch(safe)
+    await ctx.withTx((tx) =>
+      writeAudit(tx, ctx.user.id, {
+        subjectType: 'mailbox',
+        subjectId: input.mailboxId,
+        kind: 'other',
+        note: `Test email queued (${out.threaded ? 'reply in thread' : 'new thread'})`,
+      })
+    )
     return {
       outboundId: out.outboundId,
       undoRemainingMs: out.undoRemainingMs,
       threaded: out.threaded,
     }
   },
-  audit: (input, out) => ({
-    subjectType: 'mailbox',
-    subjectId: input.mailboxId,
-    kind: 'other',
-    note: `Test email queued (${out.threaded ? 'reply in thread' : 'new thread'})`,
-  }),
 })
