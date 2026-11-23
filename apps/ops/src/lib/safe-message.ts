@@ -18,6 +18,7 @@ export const SAFE_MESSAGES = {
   busy: 'The database is busy right now. Try again in a moment.',
   forbidden: "You don't have access to do that.",
   signedOut: 'Your session has ended. Sign in again.',
+  sessionRevoked: 'You were signed out from another device. Sign in again.',
   readOnly: 'This copy of Indus Operations is read-only. Nothing was changed.',
   invalid: 'Check the highlighted fields.',
 } as const
@@ -64,6 +65,9 @@ export function prismaErrorCode(e: unknown): string | undefined {
 export function safeMessage(e: unknown): string {
   if (e instanceof SafeError) return e.message
   if (e instanceof AccessError) {
+    if (e.code === 'session_revoked') {
+      return e.session === 'expired' ? SAFE_MESSAGES.signedOut : SAFE_MESSAGES.sessionRevoked
+    }
     return e.code === 'unauthenticated' ? SAFE_MESSAGES.signedOut : SAFE_MESSAGES.forbidden
   }
   const code = prismaErrorCode(e)

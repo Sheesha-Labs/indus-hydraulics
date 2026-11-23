@@ -78,6 +78,25 @@ export async function upsertUsers(
   return out
 }
 
+/**
+ * S03-T05: the demo Owner has seen the first-run welcome, so Today opens on Today for every e2e and visual
+ * test that signs in as the Owner (otherwise Today redirects to /welcome until "Start setup" is pressed).
+ * The welcome-once redirect itself is covered by apps/ops/src/server/setup/progress.db.test.ts; the
+ * welcome page still opens directly at /welcome.
+ */
+export async function markDemoWelcomeSeen(db: PrismaClient): Promise<void> {
+  const owner = await db.user.findUnique({
+    where: { email: 'owner@example.test' },
+    select: { id: true },
+  })
+  if (!owner) return
+  await db.tipState.upsert({
+    where: { userId_tipKey: { userId: owner.id, tipKey: 'welcome.seen' } },
+    create: { userId: owner.id, tipKey: 'welcome.seen' },
+    update: {},
+  })
+}
+
 async function main(): Promise<void> {
   const url = process.env.DATABASE_URL
   const decision = decideSeed(url, process.env)
@@ -93,6 +112,7 @@ async function main(): Promise<void> {
     }
     for (const r of await upsertUsers(db, DEMO_USERS))
       console.log(`ops seed: ${r.email} ${r.result}`)
+    await markDemoWelcomeSeen(db)
   } finally {
     await db.$disconnect()
   }

@@ -107,6 +107,10 @@ enum AuthEventKind {
   invite_accepted
   invite_revoked
   ownership_transferred
+  /// S03-T03 (Settings › Team).
+  invite_domain_override
+  permissions_changed
+  user_removed
 
   @@schema("ops")
 }
@@ -227,6 +231,10 @@ enum OutboundKind {
   evening_summary
   month_pack
   other
+  /// S03-T01 (system email, channel 'system').
+  auth_password_reset
+  auth_invite
+  auth_security_notice
 
   @@schema("ops")
 }
@@ -248,6 +256,8 @@ enum OutboundStatus {
   failed
   cancelled
   undone
+  /// S03-T01: recorded but not sent (outside production, recipient not on OPS_TEST_RECIPIENTS).
+  suppressed_preview
 
   @@schema("ops")
 }
@@ -1932,6 +1942,15 @@ enum ImportCandidateStatus {
   @@schema("ops")
 }
 
+/// ADR-28: seeded defaults wait for the Owner's sign-off (S03-T04).
+enum SignoffStatus {
+  awaiting
+  signed_off
+  not_required
+
+  @@schema("ops")
+}
+
 enum ChecklistKind {
   setup
   cutover
@@ -2021,12 +2040,17 @@ model Trade {
 /// Typed key/value settings validated by Zod in code (pricing.*, vat.*,
 /// fx.*, intake.*, assistant.mode, brief.*, retention.*, company.profile …).
 model SettingsEntry {
-  key         String   @id
-  value       Json
-  version     Int      @default(0)
-  ownerOnly   Boolean  @default(false)
-  updatedById String?  @db.Uuid
-  updatedAt   DateTime @updatedAt @db.Timestamptz(3)
+  key           String        @id
+  value         Json
+  version       Int           @default(0)
+  ownerOnly     Boolean       @default(false)
+  updatedById   String?       @db.Uuid
+  updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   @@map("settings_entry")
   @@schema("ops")
@@ -2174,6 +2198,11 @@ model AutopilotActionDef {
   defaultHandsOff AutopilotLevel
   minutesSaved    Decimal?        @db.Decimal(9, 2)
   originBoard     String?
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus   SignoffStatus   @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById   String?         @db.Uuid
+  signedOffAt     DateTime?       @db.Timestamptz(3)
 
   setting AutopilotSetting?
   actions AssistantAction[]
@@ -2197,35 +2226,45 @@ model AutopilotSetting {
 }
 
 model Guardrail {
-  key         String        @id
-  kind        GuardrailKind
-  label       String
-  enabled     Boolean       @default(true)
+  key           String        @id
+  kind          GuardrailKind
+  label         String
+  enabled       Boolean       @default(true)
   /// Fixed rules cannot be switched off from the UI.
-  fixed       Boolean       @default(false)
-  params      Json          @default("{}")
-  version     Int           @default(0)
-  updatedById String?       @db.Uuid
-  updatedAt   DateTime      @updatedAt @db.Timestamptz(3)
+  fixed         Boolean       @default(false)
+  params        Json          @default("{}")
+  version       Int           @default(0)
+  updatedById   String?       @db.Uuid
+  updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   @@map("guardrail")
   @@schema("ops")
 }
 
 model EmailTemplate {
-  id              String       @id @default(uuid(7)) @db.Uuid
-  key             String       @unique
+  id              String        @id @default(uuid(7)) @db.Uuid
+  key             String        @unique
   label           String
   mailboxRole     MailboxRole?
   subjectTemplate String
   bodyTemplate    String
   toneNotes       String?
   variables       String[]
-  learnFromSent   Boolean      @default(false)
-  version         Int          @default(0)
-  archivedAt      DateTime?    @db.Timestamptz(3)
-  updatedById     String?      @db.Uuid
-  updatedAt       DateTime     @updatedAt @db.Timestamptz(3)
+  learnFromSent   Boolean       @default(false)
+  version         Int           @default(0)
+  archivedAt      DateTime?     @db.Timestamptz(3)
+  updatedById     String?       @db.Uuid
+  updatedAt       DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus   SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById   String?       @db.Uuid
+  signedOffAt     DateTime?     @db.Timestamptz(3)
 
   @@map("email_template")
   @@schema("ops")
@@ -2233,31 +2272,41 @@ model EmailTemplate {
 
 /// Settings › Sending (87): From, CC, signature and thread per mail kind.
 model SendingRule {
-  kind              OutboundKind @id
+  kind              OutboundKind  @id
   fromRole          MailboxRole
   ccRole            MailboxRole?
   /// e.g. "accounts_contact" for invoices.
   ccSpecial         String?
-  signatureUserId   String?      @db.Uuid
+  signatureUserId   String?       @db.Uuid
   threadMode        ThreadMode
-  holdMinutes       Int          @default(5)
-  respectSendWindow Boolean      @default(true)
-  updatedAt         DateTime     @updatedAt @db.Timestamptz(3)
+  holdMinutes       Int           @default(5)
+  respectSendWindow Boolean       @default(true)
+  updatedAt         DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus     SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById     String?       @db.Uuid
+  signedOffAt       DateTime?     @db.Timestamptz(3)
 
   @@map("sending_rule")
   @@schema("ops")
 }
 
 model DocumentTemplate {
-  id         String       @id @default(uuid(7)) @db.Uuid
-  kind       DocumentKind
-  name       String
-  version    Int          @default(1)
+  id            String        @id @default(uuid(7)) @db.Uuid
+  kind          DocumentKind
+  name          String
+  version       Int           @default(1)
   /// Layout key, e.g. "zoho-estimate-v1".
-  layout     String
-  definition Json
-  isActive   Boolean      @default(true)
-  createdAt  DateTime     @default(now()) @db.Timestamptz(3)
+  layout        String
+  definition    Json
+  isActive      Boolean       @default(true)
+  createdAt     DateTime      @default(now()) @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   versions DocumentVersion[]
 
@@ -2267,20 +2316,25 @@ model DocumentTemplate {
 }
 
 model TermsClause {
-  id           String    @id @default(uuid(7)) @db.Uuid
+  id            String        @id @default(uuid(7)) @db.Uuid
   /// payment | delivery | lead_time | validity | make_origin | vat | documents |
   /// inspection | warranty | packing | disclaimer | cancellation
-  category     String
-  code         String    @unique
-  title        String
-  body         String
+  category      String
+  code          String        @unique
+  title         String
+  body          String
   /// Variable defaults, e.g. { advance_pct: 30, balance_days: 60 }.
-  variables    Json      @default("{}")
-  locked       Boolean   @default(false)
-  approvalRule String?
-  version      Int       @default(0)
-  archivedAt   DateTime? @db.Timestamptz(3)
-  updatedAt    DateTime  @updatedAt @db.Timestamptz(3)
+  variables     Json          @default("{}")
+  locked        Boolean       @default(false)
+  approvalRule  String?
+  version       Int           @default(0)
+  archivedAt    DateTime?     @db.Timestamptz(3)
+  updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?       @db.Uuid
+  signedOffAt   DateTime?     @db.Timestamptz(3)
 
   presets        TermsPresetClause[]
   quotationTerms QuotationTerm[]
@@ -2291,11 +2345,16 @@ model TermsClause {
 }
 
 model TermsPreset {
-  id                    String    @id @default(uuid(7)) @db.Uuid
-  name                  String    @unique
+  id                    String        @id @default(uuid(7)) @db.Uuid
+  name                  String        @unique
   description           String?
-  isDefaultForNewClient Boolean   @default(false)
-  archivedAt            DateTime? @db.Timestamptz(3)
+  isDefaultForNewClient Boolean       @default(false)
+  archivedAt            DateTime?     @db.Timestamptz(3)
+  /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
+  signoffStatus         SignoffStatus @default(not_required)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById         String?       @db.Uuid
+  signedOffAt           DateTime?     @db.Timestamptz(3)
 
   clauses    TermsPresetClause[]
   clients    ClientProfile[]
@@ -2339,6 +2398,11 @@ model User {
   totpEnabledAt       DateTime?  @db.Timestamptz(3)
   failedAttempts      Int        @default(0)
   lockedUntil         DateTime?  @db.Timestamptz(3)
+  /// S03-T01: Argon2id hashes of the last five passwords (reuse check).
+  passwordHistory     String[]   @default([])
+  passwordSetAt       DateTime?  @db.Timestamptz(3)
+  /// S03-T01: last accepted TOTP time step; a code at or below it is a replay.
+  totpLastStep        BigInt?
   lastSignInAt        DateTime?  @db.Timestamptz(3)
   /// Helper toggles (P01 84): only meaningful when role = helper.
   canSeeMargins       Boolean    @default(false)
@@ -2402,6 +2466,12 @@ model UserSession {
   lastSeenAt   DateTime     @default(now()) @db.Timestamptz(3)
   expires      DateTime     @db.Timestamptz(3)
   revokedAt    DateTime?    @db.Timestamptz(3)
+  /// S03-T02: keyed device hash (Devices list).
+  deviceHash   String?
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  revokedById  String?      @db.Uuid
+  /// 'password_reset' | 'signed_out_by_owner' | … (open vocabulary).
+  revokeReason String?
 
   @@index([userId, revokedAt])
   @@map("user_session")
@@ -5780,5 +5850,18 @@ view CatalogueCrossRef {
   variantPartNumber String?
 
   @@map("catalogue_cross_ref_v")
+  @@schema("ops")
+}
+
+/// Fixed-window rate-limit counters (S03-T01, architecture §4.11). Written only through
+/// ops.hit_rate_limit(key, windowSeconds, max); keys hold hashes, never a raw address or email.
+model RateLimitCounter {
+  key         String
+  windowStart DateTime @db.Timestamptz(3)
+  count       Int      @default(0)
+
+  @@id([key, windowStart])
+  @@index([windowStart])
+  @@map("rate_limit_counter")
   @@schema("ops")
 }

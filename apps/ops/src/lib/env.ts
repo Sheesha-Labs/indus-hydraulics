@@ -40,6 +40,24 @@ const schema = z.object({
   OPS_READ_ONLY: z.enum(['0', '1']).optional(),
   OPS_E2E_AUTH: z.enum(['0', '1']).optional(),
   OPS_KIT: z.enum(['0', '1']).optional(),
+  // S03-T01: system mail (Resend, C26). Optional everywhere: without a key every system email is
+  // recorded as failed and nothing is sent, so production boots before the key exists.
+  RESEND_OPS_API_KEY: z.string().min(1).optional(),
+  // Comma list of internal addresses that may receive system mail outside production (ADR-07).
+  OPS_TEST_RECIPIENTS: z.string().min(1).optional(),
+  // Test only, refused in production: a directory where each system email is also written as JSON.
+  OPS_E2E_MAIL_SINK: z.string().min(1).optional(),
+  // S03-T05: Supabase Storage for the private ops-* buckets (ADR-21, C29). Optional so production
+  // boots before the key exists; without them an upload is refused with a safe sentence, and
+  // outside production a local-disk stand-in is used (src/server/storage/local-storage.ts).
+  SUPABASE_URL: z.string().url().optional(),
+  SUPABASE_SECRET_KEY: z.string().min(1).optional(),
+  // S03-T02. Test only, refused in production: how long the proxy keeps its set of revoked sessions
+  // (default 60 000 ms, lib/session-revocation.ts). Tests shorten it to see a revocation sooner.
+  OPS_SESSION_REVOCATION_TTL_MS: z.coerce.number().int().min(100).max(600_000).optional(),
+  // S03-T07. Test only, refused in production: a local OIDC issuer (oauth2-mock-server) that stands in
+  // for Google in e2e, so the real signIn callback (hd, email_verified, invite matching) is exercised.
+  OPS_E2E_GOOGLE_ISSUER: z.string().url().optional(),
 })
 
 export type OpsEnv = z.infer<typeof schema>
@@ -88,6 +106,12 @@ export function parseEnv(source: Record<string, string | undefined>): OpsEnv {
     if (missing.length) problems.push(`missing in production: ${missing.join(', ')}`)
     if (env.OPS_E2E_AUTH === '1') problems.push('OPS_E2E_AUTH must not be set in production')
     if (env.OPS_KIT === '1') problems.push('OPS_KIT must not be set in production')
+    if (env.OPS_E2E_MAIL_SINK) problems.push('OPS_E2E_MAIL_SINK must not be set in production')
+    if (env.OPS_E2E_GOOGLE_ISSUER)
+      problems.push('OPS_E2E_GOOGLE_ISSUER must not be set in production')
+    if (env.OPS_SESSION_REVOCATION_TTL_MS !== undefined) {
+      problems.push('OPS_SESSION_REVOCATION_TTL_MS must not be set in production')
+    }
     if (env.NEXT_PUBLIC_OPS_BASE_URL?.includes('localhost')) {
       problems.push('NEXT_PUBLIC_OPS_BASE_URL points at localhost in production')
     }

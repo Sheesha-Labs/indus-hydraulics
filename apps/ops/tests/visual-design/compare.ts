@@ -87,7 +87,14 @@ export async function compareToBoardPng(
 export interface ParityRow {
   /** "74 sidebar", "T1A", "S04A", "k00 sidebar owner" … */
   board: string
-  group: 'Boards 74/75' | 'Templates' | 'Shell surfaces' | 'L1 k00' | 'L1 sheet' | 'L0 sheet'
+  group:
+    | 'Boards 74/75'
+    | 'Templates'
+    | 'Shell surfaces'
+    | 'L1 k00'
+    | 'L1 sheet'
+    | 'L0 sheet'
+    | 'P01 boards'
   /** The share of the compared pixels that differ. */
   ratio: number
   /** What was compared: "full frame 1438×938, 7 masks", "drawer (39% of the frame)" … */

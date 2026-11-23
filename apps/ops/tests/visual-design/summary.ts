@@ -9,6 +9,7 @@ const ORDER: ParityRow['group'][] = [
   'L1 k00',
   'L1 sheet',
   'L0 sheet',
+  'P01 boards',
 ]
 
 /**

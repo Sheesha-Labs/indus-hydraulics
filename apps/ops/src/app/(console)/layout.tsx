@@ -44,7 +44,7 @@ export default async function ConsoleLayout({
   }
   const [mailbox, banners, assistant, jar] = await Promise.all([
     getShellMailbox(user.id),
-    getShellBanners(),
+    getShellBanners(user),
     getShellAssistantStates(),
     cookies(),
   ])

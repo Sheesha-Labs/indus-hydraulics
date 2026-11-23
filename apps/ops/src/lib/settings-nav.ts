@@ -29,7 +29,7 @@ export const SETTINGS_NAV: readonly SubNavGroup[] = [
     label: 'People',
     // Board 84 is one page: Team, permissions, then #profile, #devices and #security (S02-T07 decision).
     items: [
-      { label: 'Team', href: to('/settings/team'), title: 'Team and access' },
+      { label: 'Team', href: to('/settings/team'), title: 'Team, profile and devices' },
       { label: 'Profile', href: to('/settings/team#profile') },
       { label: 'Devices', href: to('/settings/team#devices') },
       { label: 'Notifications', href: to('/settings/notifications') },

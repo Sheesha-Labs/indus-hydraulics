@@ -32,12 +32,15 @@ export type T9WizardProps = T9Base &
         progress?: ReactNode
         aside?: never
         eyebrow?: never
+        description?: never
         railFoot?: never
       }
     | {
         layout: 'rail'
         /** "Setup 1 of 6" above the title. */
         eyebrow?: string
+        /** One line under the title: "What prints on every quotation, …" (board 79). */
+        description?: ReactNode
         /** The live letterhead preview (setup 1), right of the fields, 3 : 2. */
         aside?: ReactNode
         asideLabel?: string
@@ -115,6 +118,7 @@ function Rail({
   saved,
   brand,
   eyebrow,
+  description,
   aside,
   asideLabel = 'Live preview',
   railFoot,
@@ -147,6 +151,7 @@ function Rail({
           <div className="flex flex-col gap-2">
             {eyebrow ? <span className="io-eyebrow">{eyebrow}</span> : null}
             <h1 className="io-display text-io-section">{title}</h1>
+            {description ? <div data-slot="description">{description}</div> : null}
           </div>
           {aside ? (
             <div className="grid grid-cols-[minmax(0,3fr)_minmax(0,2fr)] items-start gap-7">

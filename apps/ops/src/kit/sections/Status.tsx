@@ -10,6 +10,7 @@ import {
   ProgressBar,
   StageTrack,
   STATUS_VOCABULARY,
+  SignoffTag,
   StatusVocabulary,
   Tag,
   type StatusFamily,
@@ -219,6 +220,17 @@ export default function StatusSpecimen() {
         </Cap>
         <Cap caption="lock">
           <Tag kind="lock">Locked · you send</Tag>
+        </Cap>
+      </Row>
+
+      <Row
+        name="SignoffTag"
+        code='part="SignoffTag"'
+        note="ADR-28: a seeded default the Owner has not confirmed (S03-T04)"
+        full
+      >
+        <Cap caption="awaiting">
+          <SignoffTag />
         </Cap>
       </Row>
 

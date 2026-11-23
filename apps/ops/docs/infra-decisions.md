@@ -36,7 +36,7 @@ Whether the project has the new publishable/secret keys or only the legacy `anon
 
 | Recorded value | Date | By |
 |---|---|---|
-| | | |
+| New system present (publishable + secret keys; legacy anon/service_role still enabled). For now Ops uses the project's shared `default` secret key as `SUPABASE_SECRET_KEY` (Owner's decision at S03 close; revoking it also affects the website). A dedicated `indus_operations` key remains the target. `SUPABASE_URL` and the key set in Vercel Production. | 2026-11-23 | S03 close |
 
 ## 4. Google sign-in client (recorded 2026-11-22)
 

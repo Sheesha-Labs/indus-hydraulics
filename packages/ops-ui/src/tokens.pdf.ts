@@ -55,6 +55,7 @@ export const IO_PDF_COLORS = {
   'io-highlight-on': '#C5E2FE',
   'io-toast-action': '#AFD2F4',
   'io-toast-warn-ink': '#321B05',
+  'io-welcome-dot': '#6D9FC2',
   'io-scrim': '#B8BABE',
   'io-well': '#DFE3E8',
   'io-doc-rule': '#D5DADE',
@@ -79,6 +80,10 @@ export const IO_PDF_COLORS = {
   'io-caret': '#8B93A3',
   'io-ok-solid-strong': '#17843F',
   'io-ink-3-sel': '#676C73',
+  'io-google-blue': '#4285F4',
+  'io-google-green': '#34A853',
+  'io-google-yellow': '#FBBC05',
+  'io-google-red': '#EA4335',
 } as const
 
 export const IO_PDF_RADII = {

@@ -29,6 +29,8 @@ async function shot(page: Page, name: string) {
       sidebar.getByText(/^Signed in as /),
       sidebar.locator('[data-part="profile-trigger"]'),
       page.locator('#content').getByText(/^Signed in as /),
+      // S03 setup banners: "n of 6" follows the shared database's setup progress.
+      page.getByText(/\d of 6/),
     ],
   })
 }

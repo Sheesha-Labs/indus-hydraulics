@@ -17,6 +17,7 @@ export type { MailRole, MailType } from '../mail/types'
 export { default as Chip, type ChipProps } from './Chip'
 export { default as Check, type CheckProps } from './Check'
 export { default as Tag, type TagKind, type TagProps } from './Tag'
+export { default as SignoffTag, type SignoffTagProps } from './SignoffTag'
 export {
   default as Banner,
   BannerAction,
