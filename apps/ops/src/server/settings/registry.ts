@@ -222,6 +222,33 @@ const setupProgress = z.strictObject({
     .refine((ids) => unique(ids), 'Each person once.'),
 })
 
+/** S04-T02: the Indus/* labels Ops creates in each mailbox (08-map-integrations §1.8; P02 sign-off). */
+const LABEL_KEYS = [
+  'enquiry',
+  'clientReply',
+  'po',
+  'supplierQuote',
+  'supplierQuestion',
+  'needsOwner',
+  'notBusiness',
+  'ignore',
+] as const
+const indusLabel = z
+  .string()
+  .trim()
+  .regex(/^Indus\/[^/\s][^/]{0,39}$/, 'Labels start with "Indus/" and are at most 40 characters.')
+const mailLabelNames = z
+  .strictObject(
+    Object.fromEntries(LABEL_KEYS.map((k) => [k, indusLabel])) as Record<
+      (typeof LABEL_KEYS)[number],
+      typeof indusLabel
+    >
+  )
+  .refine((v) => unique(Object.values(v)), 'Each label name once.')
+
+/** S04-T02: the consent explainer's data-location line (ADR-32; board 86 said "EU region"). */
+const mailboxConsent = z.strictObject({ dataLocation: z.string().trim().min(10).max(240) })
+
 // ── The registry ───────────────────────────────────────────────────────────────────────────
 
 export type SettingDef<S extends z.ZodType = z.ZodType> = {
@@ -352,6 +379,20 @@ export const SETTINGS = {
     label: 'System email sender',
     section: 'sending',
   }),
+  'mail.label_names': def({
+    schema: mailLabelNames,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Gmail label names',
+    section: 'sending',
+  }),
+  'mailbox.consent': def({
+    schema: mailboxConsent,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Mailbox consent wording',
+    section: 'sending',
+  }),
   'setup.progress': def({
     schema: setupProgress,
     ownerOnly: false,
@@ -380,3 +421,5 @@ export function settingDef(key: SettingKey): SettingDef {
 export type AuthSettings = SettingValue<'auth'>
 export type SystemEmailSender = SettingValue<'system_email.sender'>
 export type CompanyProfile = SettingValue<'company.profile'>
+export type MailLabelNames = SettingValue<'mail.label_names'>
+export type MailLabelKey = keyof MailLabelNames

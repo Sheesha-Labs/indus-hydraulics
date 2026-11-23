@@ -30,8 +30,14 @@ import { getSetting } from '../../../../server/settings/get'
  * label and a step's client provider must wrap the body, the aside and the foot together, and a layout
  * cannot receive the step's data.
  */
-export default async function SetupStepPage({ params }: { params: Promise<{ step: string }> }) {
-  const { step } = await params
+export default async function SetupStepPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ step: string }>
+  searchParams: Promise<Record<string, string | string[] | undefined>>
+}) {
+  const [{ step }, query] = await Promise.all([params, searchParams])
   const user = await requireOpsUser().catch(signInFor(`/setup/${step}`))
   const current = routeParam(setupStep, step)
   if (user.role !== 'owner') redirect('/today')
@@ -39,7 +45,7 @@ export default async function SetupStepPage({ params }: { params: Promise<{ step
   const [progress, assets, view] = await Promise.all([
     setupProgress(),
     getSetting('company.assets'),
-    STEP_VIEWS[current]({ user, step: current }),
+    STEP_VIEWS[current]({ user, step: current, query }),
   ])
   const statuses = Object.fromEntries(progress.steps.map((s) => [s.key, s.status])) as Record<
     typeof current,

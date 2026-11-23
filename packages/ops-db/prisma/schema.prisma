@@ -135,6 +135,12 @@ enum MailboxStatus {
   backfill_paused
   paused
   disconnected
+  /// S04-T02 (ADR-06): refresh failed with invalid_grant (password change, app distrusted).
+  token_expired
+  /// S04-T02: access revoked (Disconnect, or by Google).
+  revoked
+  /// S04-T02: history too old for Google; a bounded resync is running.
+  resyncing
 
   @@schema("ops")
 }
@@ -256,6 +262,14 @@ enum OutboundStatus {
   failed
   cancelled
   undone
+  /// S04-T02 (ADR-07): waiting for its undo window and send slot.
+  scheduled
+  /// S04-T06: waiting on a gate (cap, pause, mailbox not live).
+  held
+  /// S04-T06: handed to Google, outcome not known; reconciled against Sent, never resent automatically.
+  unknown
+  /// S04-T06: replaced by a newer proposal.
+  superseded
   /// S03-T01: recorded but not sent (outside production, recipient not on OPS_TEST_RECIPIENTS).
   suppressed_preview
 
@@ -2419,6 +2433,7 @@ model User {
   passwordResets      PasswordResetToken[]
   authEvents          AuthEvent[]
   invitesSent         UserInvite[]             @relation("InviteSender")
+  oauthStates         OauthState[]
   preference          UserPreference?
   notificationPrefs   NotificationPreference[]
   notifications       Notification[]
@@ -2638,6 +2653,14 @@ model Mailbox {
   disconnectedAt  DateTime?     @db.Timestamptz(3)
   createdAt       DateTime      @default(now()) @db.Timestamptz(3)
   updatedAt       DateTime      @updatedAt @db.Timestamptz(3)
+  /// S04-T02: key id the tokens were sealed with (rekey job); the sealed value also carries it.
+  tokenKeyId      String?
+  /// S04-T02: sealed access token (lib/crypto.ts, purpose gmail-access:<mailboxId>).
+  accessTokenEnc  Bytes?
+  accessExpiresAt DateTime?     @db.Timestamptz(3)
+  /// S04-T02: the Google account that granted consent (id_token email).
+  grantedEmail    String?
+  lastTokenError  String?
 
   syncState MailboxSyncState?
   labels    GmailLabel[]
@@ -2650,24 +2673,55 @@ model Mailbox {
 }
 
 /// Hot, frequently updated sync cursor, kept apart from Mailbox config.
+/// S04-T02 (ADR-06): single-use state for the mailbox OAuth flow. Only the SHA-256 of the nonce is stored;
+/// the PKCE verifier is sealed. Claimed once by the callback (usedAt), expires after 10 minutes.
+model OauthState {
+  nonceHash       String      @id
+  userId          String      @db.Uuid
+  user            User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role            MailboxRole
+  address         String
+  codeVerifierEnc String
+  /// settings | setup: where the callback sends the person back.
+  returnTo        String      @default("settings")
+  backfillMonths  Int?
+  expiresAt       DateTime    @db.Timestamptz(3)
+  usedAt          DateTime?   @db.Timestamptz(3)
+  createdAt       DateTime    @default(now()) @db.Timestamptz(3)
+
+  @@index([expiresAt])
+  @@map("oauth_state")
+  @@schema("ops")
+}
+
 model MailboxSyncState {
-  mailboxId           String    @id @db.Uuid
-  mailbox             Mailbox   @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
+  mailboxId            String    @id @db.Uuid
+  mailbox              Mailbox   @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
   /// Gmail historyId (uint64 as text).
-  historyId           String?
-  watchExpiresAt      DateTime? @db.Timestamptz(3)
-  lastPushAt          DateTime? @db.Timestamptz(3)
-  lastMessageAt       DateTime? @db.Timestamptz(3)
-  lastIncrementalAt   DateTime? @db.Timestamptz(3)
-  backfillPageToken   String?
-  backfillBefore      DateTime? @db.Timestamptz(3)
-  backfillPausedUntil DateTime? @db.Timestamptz(3)
-  lagSeconds          Int       @default(0)
-  sentToday           Int       @default(0)
-  sentTodayDate       DateTime? @db.Date
-  errorCount          Int       @default(0)
-  lastError           String?
-  updatedAt           DateTime  @updatedAt @db.Timestamptz(3)
+  historyId            String?
+  watchExpiresAt       DateTime? @db.Timestamptz(3)
+  lastPushAt           DateTime? @db.Timestamptz(3)
+  lastMessageAt        DateTime? @db.Timestamptz(3)
+  lastIncrementalAt    DateTime? @db.Timestamptz(3)
+  backfillPageToken    String?
+  backfillBefore       DateTime? @db.Timestamptz(3)
+  backfillPausedUntil  DateTime? @db.Timestamptz(3)
+  lagSeconds           Int       @default(0)
+  sentToday            Int       @default(0)
+  sentTodayDate        DateTime? @db.Date
+  errorCount           Int       @default(0)
+  lastError            String?
+  updatedAt            DateTime  @updatedAt @db.Timestamptz(3)
+  /// S04-T04: last history sync that completed (health: live within 15 min, behind after 30).
+  lastSuccessfulSyncAt DateTime? @db.Timestamptz(3)
+  watchRenewedAt       DateTime? @db.Timestamptz(3)
+  watchError           String?
+  /// S04-T04: when history 404s, the bounded resync reads from here.
+  resyncFrom           DateTime? @db.Timestamptz(3)
+  /// S04-T05: backfill progress { months, state, month, pageToken, listed, fetched, skipped, failed, … }.
+  backfillState        Json?
+  /// NULL while Ops holds no GCP key (docs/gmail-setup.md §f).
+  dlqCount             Int?
 
   @@map("mailbox_sync_state")
   @@schema("ops")
@@ -2743,6 +2797,21 @@ model MailMessage {
   hasAttachments       Boolean                  @default(false)
   sizeBytes            Int?
   searchTsv            Unsupported("tsvector")?
+  /// S04-T02: live | backfill | import. Backfilled and imported mail never causes an external effect.
+  origin               String                   @default("live")
+  internalDate         DateTime?                @db.Timestamptz(3)
+  inReplyToRfcId       String?
+  referencesRfcIds     String[]                 @default([])
+  gmailLabelIds        String[]                 @default([])
+  /// { spf, dkim, dmarc } from Authentication-Results.
+  authSummary          Json?
+  /// Auto-Submitted, Precedence, X-Autoreply, List-Id … (classification helpers, S05).
+  headerFlags          Json?
+  bodyTextHash         String?
+  bodyHtmlFileId       String?                  @db.Uuid
+  bodyHtmlFile         StoredFile?              @relation("MailBodyHtml", fields: [bodyHtmlFileId], references: [id])
+  rawEmlFileId         String?                  @db.Uuid
+  rawEmlFile           StoredFile?              @relation("MailRawEml", fields: [rawEmlFileId], references: [id])
 
   attachments       MailAttachment[]
   links             MailLink[]
@@ -2755,6 +2824,7 @@ model MailMessage {
   @@index([handledState, sentAt])
   @@index([classification, sentAt])
   @@index([fromAddress])
+  @@index([mailboxId, internalDate])
   @@map("mail_message")
   @@schema("ops")
 }
@@ -5130,6 +5200,8 @@ model StoredFile {
 
   mailAttachments     MailAttachment[]
   outboundAttachments OutboundAttachment[]
+  mailBodyHtml        MailMessage[]        @relation("MailBodyHtml")
+  mailRawEml          MailMessage[]        @relation("MailRawEml")
   complianceDocs      ComplianceDocument[]
   documentVersions    DocumentVersion[]
   texts               DocumentText[]

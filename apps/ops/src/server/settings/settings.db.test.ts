@@ -69,6 +69,8 @@ const AWAITING = [
   'retention',
   'auth',
   'system_email.sender',
+  'mail.label_names',
+  'mailbox.consent',
 ]
 
 const USER_SELECT = {

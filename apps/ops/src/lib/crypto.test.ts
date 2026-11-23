@@ -7,7 +7,10 @@ import {
   randomToken,
   safeEqual,
   seal,
+  sealedKeyId,
   sha256Hex,
+  signState,
+  verifyState,
   type KeyRing,
 } from './crypto'
 
@@ -79,5 +82,37 @@ describe('helpers', () => {
     expect(safeEqual('abc', 'abc')).toBe(true)
     expect(safeEqual('abc', 'abd')).toBe(false)
     expect(safeEqual('abc', 'abcd')).toBe(false)
+  })
+})
+
+describe('OAuth state signing and mailbox token sealing (S04-T02)', () => {
+  const SECRET = 'z'.repeat(40)
+
+  it('round-trips a signed state and refuses a tampered or foreign one', () => {
+    const state = signState({ n: 'nonce', u: 'user-1', r: 'client' }, SECRET)
+    expect(verifyState(state, SECRET)).toEqual({ n: 'nonce', u: 'user-1', r: 'client' })
+    const [body, mac] = state.split('.') as [string, string]
+    const forged = Buffer.from(JSON.stringify({ n: 'nonce', u: 'user-2', r: 'client' })).toString(
+      'base64url'
+    )
+    expect(verifyState(`${forged}.${mac}`, SECRET)).toBeNull()
+    expect(verifyState(`${body}.${mac}x`, SECRET)).toBeNull()
+    expect(verifyState(state, 'y'.repeat(40))).toBeNull()
+    expect(verifyState('garbage', SECRET)).toBeNull()
+  })
+
+  it('a token sealed for one mailbox does not open for another, nor as another kind', () => {
+    const sealed = seal('refresh-token-value', additionalData('gmail-refresh', 'mbx-1'), ROTATED)
+    expect(openText(sealed, additionalData('gmail-refresh', 'mbx-1'), ROTATED)).toBe(
+      'refresh-token-value'
+    )
+    expect(() => open(sealed, additionalData('gmail-refresh', 'mbx-2'), ROTATED)).toThrow(
+      CryptoError
+    )
+    expect(() => open(sealed, additionalData('gmail-access', 'mbx-1'), ROTATED)).toThrow(
+      CryptoError
+    )
+    expect(sealedKeyId(sealed)).toBe(ROTATED.active)
+    expect(sealedKeyId('not sealed')).toBeNull()
   })
 })

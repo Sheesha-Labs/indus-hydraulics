@@ -14,9 +14,10 @@ const MIGRATIONS = resolve(import.meta.dirname, '../../../../../packages/ops-db/
 type SeedRow = { key: string; value: unknown; ownerOnly: boolean; signoffStatus: string }
 
 function seedRows(): SeedRow[] {
-  const file = readdirSync(MIGRATIONS).find((f) => f.endsWith('_ops_settings_defaults_seed.sql'))
-  if (!file) throw new Error('settings_defaults_seed migration not found')
-  const sql = readFileSync(join(MIGRATIONS, file), 'utf8')
+  // Every settings seed migration: S03-T04's defaults and each later sprint's own (`…_settings_seed.sql`).
+  const files = readdirSync(MIGRATIONS).filter((f) => /_ops_\w*settings\w*_seed\.sql$/.test(f))
+  if (!files.length) throw new Error('settings seed migrations not found')
+  const sql = files.map((f) => readFileSync(join(MIGRATIONS, f), 'utf8')).join('\n')
   const rows: SeedRow[] = []
   const re = /\('([a-z_.]+)',\s*'(\{.*?\})',\s*0,\s*(true|false),\s*'(\w+)',\s*now\(\)\)/gs
   for (const m of sql.matchAll(re)) {
@@ -43,6 +44,8 @@ const AWAITING: readonly SettingKey[] = [
   'retention',
   'auth',
   'system_email.sender',
+  'mail.label_names',
+  'mailbox.consent',
 ]
 
 function seeded(key: SettingKey): unknown {
@@ -61,7 +64,7 @@ describe('settings registry vs the seed migration', () => {
 
   it('seeds exactly the registered keys', () => {
     expect(rows.map((r) => r.key).sort()).toEqual([...SETTING_KEYS].sort())
-    expect(SETTING_KEYS).toHaveLength(17)
+    expect(SETTING_KEYS).toHaveLength(19)
   })
 
   it('every seeded value parses with its schema', () => {

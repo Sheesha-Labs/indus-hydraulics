@@ -10,6 +10,7 @@ import { nextStep, SETUP_STEP_META } from '../lib/setup-steps'
 import { saveCompanyAssets, saveCompanyProfile } from '../server/setup/company'
 import { saveMoneySetting } from '../server/setup/money'
 import { markStep, markWelcomeSeen } from '../server/setup/progress'
+import { countConnectedWorkMailboxes } from '../server/gmail/connect'
 import { SETTINGS } from '../server/settings/registry'
 import { createUpload, verifyUploadedObject } from '../server/storage/uploads'
 
@@ -54,6 +55,23 @@ const skipStep = defineAction({
     return null
   },
 })
+
+/** Next on Setup 2 (S04-T02, board 80): done when a Client or Supplier mailbox is connected, else skipped. */
+const finishMailboxesStep = defineAction({
+  name: 'setup.finish_mailboxes',
+  schema: z.object({}),
+  roles: ['owner'],
+  handler: async (_input, ctx) => {
+    const connected = await countConnectedWorkMailboxes()
+    await markStep('mailboxes', connected > 0 ? 'done' : 'skipped', ctx.user.id)
+    return null
+  },
+})
+
+export async function continueFromMailboxes(): Promise<void> {
+  await finishMailboxesStep({})
+  redirect('/setup/history')
+}
 
 const completeStep = defineAction({
   name: 'setup.complete_step',
