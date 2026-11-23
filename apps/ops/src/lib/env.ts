@@ -47,6 +47,11 @@ const schema = z.object({
   OPS_TEST_RECIPIENTS: z.string().min(1).optional(),
   // Test only, refused in production: a directory where each system email is also written as JSON.
   OPS_E2E_MAIL_SINK: z.string().min(1).optional(),
+  // S03-T05: Supabase Storage for the private ops-* buckets (ADR-21, C29). Optional so production
+  // boots before the key exists; without them an upload is refused with a safe sentence, and
+  // outside production a local-disk stand-in is used (src/server/storage/local-storage.ts).
+  SUPABASE_URL: z.string().url().optional(),
+  SUPABASE_SECRET_KEY: z.string().min(1).optional(),
 })
 
 export type OpsEnv = z.infer<typeof schema>

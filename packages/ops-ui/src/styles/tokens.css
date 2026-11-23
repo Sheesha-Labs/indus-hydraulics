@@ -81,6 +81,7 @@
   --io-highlight-on: oklch(0.9 0.05 248);
   --io-toast-action: oklch(0.85 0.06 248);
   --io-toast-warn-ink: oklch(0.25 0.05 62);
+  --io-welcome-dot: oklch(0.68 0.075 240);
   --io-scrim: oklch(0.35 0.02 255 / .35);
   --io-well: oklch(0.915 0.008 250);
   --io-doc-rule: oklch(0.885 0.008 250);

@@ -226,9 +226,15 @@ describe('route tree', () => {
     expect(private_).toEqual([])
   })
 
-  it('(d) no API route beyond the four S02 allows', () => {
+  it('(d) no API route beyond the four S02 allows, plus the S03-T05 file route', () => {
     const api = ALL.filter((d) => d.startsWith('api') && has(d, 'route.ts')).sort()
-    expect(api).toEqual(['api/auth/[...nextauth]', 'api/health', 'api/health/live', 'api/inngest'])
+    expect(api).toEqual([
+      'api/auth/[...nextauth]',
+      'api/files/[id]',
+      'api/health',
+      'api/health/live',
+      'api/inngest',
+    ])
     // No route handler hides in a page group either.
     expect(ALL.filter((d) => !d.startsWith('api') && has(d, 'route.ts'))).toEqual([])
   })

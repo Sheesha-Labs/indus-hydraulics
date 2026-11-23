@@ -63,6 +63,7 @@
   --color-io-highlight-on: var(--io-highlight-on);
   --color-io-toast-action: var(--io-toast-action);
   --color-io-toast-warn-ink: var(--io-toast-warn-ink);
+  --color-io-welcome-dot: var(--io-welcome-dot);
   --color-io-scrim: var(--io-scrim);
   --color-io-well: var(--io-well);
   --color-io-doc-rule: var(--io-doc-rule);

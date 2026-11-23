@@ -131,6 +131,12 @@
     "signoff": "awaiting",
     "source": "Overlay/Toast warning glyph mark on warn-solid"
   },
+  "io-welcome-dot": {
+    "value": "oklch(0.68 0.075 240)",
+    "kind": "color",
+    "signoff": "awaiting",
+    "source": "P01 board 78: welcome promise bullets on navy"
+  },
   "io-scrim": {
     "value": "oklch(0.35 0.02 255 / .35)",
     "kind": "color",
