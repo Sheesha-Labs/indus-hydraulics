@@ -1,5 +1,6 @@
 'use server'
 
+import type { Route } from 'next'
 import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { after } from 'next/server'
@@ -120,12 +121,13 @@ export async function verifySecondFactor(
  * Where signIn() said to go: its own refusal (`/sign-in?error=…` from the signIn callback, e.g. an
  * account deactivated a moment ago) wins; otherwise the validated `next`.
  */
-function afterSignIn(location: string, next: string | undefined): string {
+function afterSignIn(location: string, next: string | undefined): Route {
   const url = new URL(location, 'http://ops.invalid')
   if (url.pathname === '/sign-in' && url.searchParams.has('error')) {
-    return `/sign-in?error=${encodeURIComponent(url.searchParams.get('error') ?? '')}`
+    return `/sign-in?error=${encodeURIComponent(url.searchParams.get('error') ?? '')}` as Route
   }
-  return safeNextPath(next) ?? '/today'
+  // safeNextPath validated a same-origin path; typedRoutes cannot know a runtime string.
+  return (safeNextPath(next) ?? '/today') as Route
 }
 
 /** Always the same answer; what happens (email or not) runs after the response. */
@@ -226,7 +228,7 @@ export async function finishTotpSetup(): Promise<void> {
   if (!pending) redirect('/sign-in?error=expired')
   if (!pending.signInAfter) {
     await clearPendingCookie()
-    redirect(pending.next ?? '/settings/team')
+    redirect((pending.next ?? '/settings/team') as Route)
   }
   if (!(await confirmedSince(pending))) redirect('/sign-in/two-factor/setup')
   await setPendingCookie(newPending({ uid: pending.uid, purpose: 'signin', proof: 'enrolment' }))

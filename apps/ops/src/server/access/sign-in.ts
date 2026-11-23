@@ -1,7 +1,7 @@
 import 'server-only'
 import { opsDb } from '@indus/ops-db'
 import { sha256Hex } from '../../lib/crypto'
-import { authSettings } from './auth-defaults'
+import { authSettings } from './auth-settings'
 import { consumeBackupCode, normaliseBackupCode } from './backup-codes'
 import { isLocked, minutesRemaining, recordFailure, recordSuccess } from './lockout'
 import { dummyVerify, verifySecret } from './password'

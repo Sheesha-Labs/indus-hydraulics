@@ -122,18 +122,24 @@ describe.skipIf(!DB_URL)('settings service · local database', () => {
     original = await loadOriginal(db)
   })
 
-  beforeEach(() => {
-    h.revalidated = []
-    h.user = owner
-  })
-
-  afterAll(async () => {
+  /** Put every row back as the test found it (tests run in random order; each starts clean). */
+  async function restoreOriginal() {
     for (const { key, value, ...signoffState } of original) {
       await db.settingsEntry.update({
         where: { key },
         data: { value: value as object, ...signoffState },
       })
     }
+  }
+
+  beforeEach(async () => {
+    await restoreOriginal()
+    h.revalidated = []
+    h.user = owner
+  })
+
+  afterAll(async () => {
+    await restoreOriginal()
     await db.$disconnect()
   })
 

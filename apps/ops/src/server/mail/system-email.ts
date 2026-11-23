@@ -5,7 +5,7 @@ import * as Sentry from '@sentry/nextjs'
 import { Prisma, opsDb, type $Enums } from '@indus/ops-db'
 import { Resend } from 'resend'
 import { env, type OpsEnv } from '../../lib/env'
-import { systemEmailSender } from '../access/auth-defaults'
+import { systemEmailSender } from '../access/auth-settings'
 
 /**
  * The minimal system-mail sender (ADR-07, C26): password reset, invitations, security notices.

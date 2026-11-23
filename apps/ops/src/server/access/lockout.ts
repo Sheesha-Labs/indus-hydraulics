@@ -1,6 +1,6 @@
 import 'server-only'
 import { opsDb } from '@indus/ops-db'
-import { authSettings } from './auth-defaults'
+import { authSettings } from './auth-settings'
 
 /**
  * Lockout (board 77 "Locked after 5 attempts"; P01 sign-off: 5 attempts, 15 minutes). Wrong

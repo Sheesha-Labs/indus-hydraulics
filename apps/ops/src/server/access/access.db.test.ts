@@ -27,7 +27,16 @@ function localDatabaseUrl(): string | undefined {
 
 const DB_URL = localDatabaseUrl()
 
-vi.mock('@sentry/nextjs', () => ({ captureException: () => undefined }))
+vi.mock('@sentry/nextjs', () => ({
+  withScope: (fn: (scope: { setTag: () => void }) => void) => fn({ setTag: () => undefined }),
+  captureException: () => undefined,
+}))
+// Sign-in reads `auth` and `system_email.sender` through getSetting(), whose unstable_cache needs a
+// Next request; outside one the loader runs directly.
+vi.mock('next/cache', () => ({
+  unstable_cache: (fn: () => unknown) => fn,
+  revalidateTag: () => undefined,
+}))
 
 describe.skipIf(!DB_URL)('sign-in · local database', () => {
   process.env.DATABASE_CONNECTION_LIMIT = '3'

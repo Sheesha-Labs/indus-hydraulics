@@ -10,7 +10,7 @@ import PasswordForm from '../../../components/auth/PasswordForm'
 import { isGoogleRefusal, signInNotice } from '../../../components/auth/states'
 import { env } from '../../../lib/env'
 import { safeNextPath } from '../../../lib/safe-next-path'
-import { companyLegalName } from '../../../server/access/auth-defaults'
+import { companyLegalName } from '../../../server/access/auth-settings'
 
 type Props = {
   searchParams: Promise<{ next?: string; error?: string; reason?: string; minutes?: string }>
