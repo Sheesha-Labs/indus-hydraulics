@@ -14,6 +14,8 @@ export interface SidebarProps {
   badges?: Partial<Record<NavKey, number>>
   /** One status, or every current one (mailboxes and the Assistant): the pill shows the worst (C23). */
   assistant: AssistantStatus | readonly AssistantStatus[]
+  /** S04-T09: words naming the mailbox behind the worst state ("purchase@ behind"); the status word otherwise. */
+  assistantLabel?: string
   /** From the `ops_sidebar` cookie (`isSidebarCollapsed`), so SSR renders the right width. */
   collapsed: boolean
   /** Helper only (ADR-05): "Website admin ↗" in the avatar menu. Ignored for the Owner. */
@@ -47,6 +49,7 @@ export default function Sidebar({
   active,
   badges = {},
   assistant,
+  assistantLabel,
   collapsed,
   websiteAdminHref,
   signOutAction,
@@ -63,6 +66,7 @@ export default function Sidebar({
       active={active}
       badges={badges}
       status={worstAssistantStatus(assistant)}
+      statusLabel={assistantLabel}
       collapsed={collapsed}
       websiteAdminHref={user.role === 'helper' ? websiteAdminHref : undefined}
       signOutAction={signOutAction}

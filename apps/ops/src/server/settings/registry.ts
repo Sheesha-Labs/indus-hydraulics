@@ -222,6 +222,94 @@ const setupProgress = z.strictObject({
     .refine((ids) => unique(ids), 'Each person once.'),
 })
 
+/** S04-T02: the Indus/* labels Ops creates in each mailbox (08-map-integrations §1.8; P02 sign-off). */
+const LABEL_KEYS = [
+  'enquiry',
+  'clientReply',
+  'po',
+  'supplierQuote',
+  'supplierQuestion',
+  'needsOwner',
+  'notBusiness',
+  'ignore',
+] as const
+const indusLabel = z
+  .string()
+  .trim()
+  .regex(/^Indus\/[^/\s][^/]{0,39}$/, 'Labels start with "Indus/" and are at most 40 characters.')
+const mailLabelNames = z
+  .strictObject(
+    Object.fromEntries(LABEL_KEYS.map((k) => [k, indusLabel])) as Record<
+      (typeof LABEL_KEYS)[number],
+      typeof indusLabel
+    >
+  )
+  .refine((v) => unique(Object.values(v)), 'Each label name once.')
+
+/** S04-T02: the consent explainer's data-location line (ADR-32; board 86 said "EU region"). */
+const mailboxConsent = z.strictObject({ dataLocation: z.string().trim().min(10).max(240) })
+
+/** S04-T05: senders past mail never imports (P07 owns the full UI). Lower-case addresses and domains. */
+const backfillExclusions = z.strictObject({
+  addresses: z.array(z.email().transform((v) => v.toLowerCase())).max(500),
+  domains: z
+    .array(
+      z
+        .string()
+        .trim()
+        .toLowerCase()
+        .regex(/^(?!-)[a-z0-9-]+(\.[a-z0-9-]+)+$/, 'Use a domain such as example.com.')
+    )
+    .max(500),
+})
+
+/** S04-T06: send timing (boards 87, 99, 100). Times are local clock "HH:MM" (the shared `hhmm` above). */
+const span = z
+  .strictObject({ start: hhmm, end: hhmm })
+  .refine((v) => v.start < v.end, 'The end must be after the start.')
+const sendTiming = z.strictObject({
+  clientHours: span,
+  window: z.strictObject({ after: hhmm, releaseAt: hhmm }),
+  ramadanHours: span,
+  supplierMorning: span,
+  chaserNoFridayAfter: hhmm,
+  capReset: hhmm,
+  // S04-T07 board 87 "Send window". Optional so the S04-T06 seed row still parses (absent = next_morning).
+  clientWindow: z.enum(['next_morning', 'immediately']).optional(),
+})
+
+/** S04-T07: signature blocks by sender (board 87). Sanitised HTML + its text, keyed by ops.user id. */
+const signatureBlock = z.strictObject({
+  html: z.string().max(10_000),
+  text: z.string().max(5_000),
+})
+const sendSignatures = z.record(z.uuid(), signatureBlock)
+
+/** S04-T07: attachment file names (board 87). `{n}` the document number, `{ref}` the RFQ reference. */
+const fileNamePattern = z
+  .string()
+  .trim()
+  .min(5)
+  .max(80)
+  .regex(/^[A-Za-z0-9 ._{}-]+\.pdf$/, 'Use letters, digits, - and _ only, ending in .pdf.')
+const attachmentNames = z.strictObject({
+  quotation: fileNamePattern.refine((v) => v.includes('{n}'), 'Include {n} for the number.'),
+  supplierRfq: fileNamePattern.refine(
+    (v) => v.includes('{ref}'),
+    'Include {ref} for the reference.'
+  ),
+})
+
+/** S04-T07: internal addresses the Owner's diagnostic "Send a test email…" may send to. */
+const testAllowlist = z.strictObject({
+  addresses: z.array(z.email().trim().toLowerCase()).max(10),
+})
+const weekday = z.number().int().min(0).max(6)
+const countryWeekends = z.strictObject({
+  default: z.array(weekday).min(1).max(3),
+  byCountry: z.record(z.string().regex(/^[A-Z]{2}$/), z.array(weekday).min(1).max(3)),
+})
+
 // ── The registry ───────────────────────────────────────────────────────────────────────────
 
 export type SettingDef<S extends z.ZodType = z.ZodType> = {
@@ -352,6 +440,62 @@ export const SETTINGS = {
     label: 'System email sender',
     section: 'sending',
   }),
+  'mail.label_names': def({
+    schema: mailLabelNames,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Gmail label names',
+    section: 'sending',
+  }),
+  'mailbox.consent': def({
+    schema: mailboxConsent,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Mailbox consent wording',
+    section: 'sending',
+  }),
+  'mail.backfill_exclusions': def({
+    schema: backfillExclusions,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Never import from these senders',
+    section: 'sending',
+  }),
+  'send.timing': def({
+    schema: sendTiming,
+    ownerOnly: true,
+    signoff: true,
+    label: 'When emails are sent',
+    section: 'sending',
+  }),
+  'calendar.country_weekends': def({
+    schema: countryWeekends,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Weekends by country',
+    section: 'sending',
+  }),
+  'send.signatures': def({
+    schema: sendSignatures,
+    ownerOnly: true,
+    signoff: false,
+    label: 'Signatures',
+    section: 'sending',
+  }),
+  'send.attachment_names': def({
+    schema: attachmentNames,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Attachment file names',
+    section: 'sending',
+  }),
+  'mail.test_allowlist': def({
+    schema: testAllowlist,
+    ownerOnly: true,
+    signoff: false,
+    label: 'Test email addresses',
+    section: 'sending',
+  }),
   'setup.progress': def({
     schema: setupProgress,
     ownerOnly: false,
@@ -380,3 +524,9 @@ export function settingDef(key: SettingKey): SettingDef {
 export type AuthSettings = SettingValue<'auth'>
 export type SystemEmailSender = SettingValue<'system_email.sender'>
 export type CompanyProfile = SettingValue<'company.profile'>
+export type MailLabelNames = SettingValue<'mail.label_names'>
+export type MailLabelKey = keyof MailLabelNames
+export type SendTiming = SettingValue<'send.timing'>
+export type CountryWeekends = SettingValue<'calendar.country_weekends'>
+export type SendSignatures = SettingValue<'send.signatures'>
+export type AttachmentNames = SettingValue<'send.attachment_names'>

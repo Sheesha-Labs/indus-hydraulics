@@ -3,9 +3,12 @@
 export const OPS_CORE = '@indus/ops-core' as const
 
 export * from './autopilot'
+export * from './calendar'
 export * from './document'
+export * from './mail'
 export * from './money'
 export * from './reference'
 export * from './result'
+export * from './sending'
 export * from './state'
 export * from './vat'

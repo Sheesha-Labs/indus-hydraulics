@@ -61,7 +61,8 @@ export default async function ConsoleLayout({
           mailbox,
         }}
         collapsed={isSidebarCollapsed(jar.get(SIDEBAR_COOKIE)?.value)}
-        assistant={assistant}
+        assistant={assistant.states}
+        {...(assistant.label ? { assistantLabel: assistant.label } : {})}
         {...(helper ? { websiteAdminHref: WEBSITE_ADMIN_HREF } : {})}
         signOutAction={signOutAction}
         banners={banners}

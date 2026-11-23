@@ -2,6 +2,7 @@ import {
   createCipheriv,
   createDecipheriv,
   createHash,
+  createHmac,
   randomBytes,
   timingSafeEqual,
 } from 'node:crypto'
@@ -107,4 +108,45 @@ export function safeEqual(a: string, b: string): boolean {
   const left = createHash('sha256').update(a, 'utf8').digest()
   const right = createHash('sha256').update(b, 'utf8').digest()
   return timingSafeEqual(left, right) && a.length === b.length
+}
+
+/**
+ * Signed, short-lived state for the mailbox OAuth flow (S04-T02, ADR-06): `<payload>.<hmac>`, both base64url,
+ * HMAC-SHA256 with OPS_STATE_SECRET. The signature only proves Ops issued it; single use and expiry are the
+ * database's job (ops.oauth_state, claimed once by the callback).
+ */
+function stateKey(secret?: string): Buffer {
+  const raw = secret ?? env().OPS_STATE_SECRET
+  if (!raw) throw new CryptoError('OPS_STATE_SECRET is required')
+  return Buffer.from(raw, 'utf8')
+}
+
+export function signState(payload: Record<string, unknown>, secret?: string): string {
+  const body = Buffer.from(JSON.stringify(payload), 'utf8').toString('base64url')
+  const mac = createHmac('sha256', stateKey(secret)).update(body).digest('base64url')
+  return `${body}.${mac}`
+}
+
+/** The payload of a state this server signed, or null (bad shape, bad signature). */
+export function verifyState<T extends Record<string, unknown>>(
+  state: string,
+  secret?: string
+): T | null {
+  const parts = state.split('.')
+  if (parts.length !== 2) return null
+  const [body, mac] = parts as [string, string]
+  const expected = createHmac('sha256', stateKey(secret)).update(body).digest('base64url')
+  if (!safeEqual(mac, expected)) return null
+  try {
+    const value = JSON.parse(Buffer.from(body, 'base64url').toString('utf8')) as unknown
+    return value && typeof value === 'object' && !Array.isArray(value) ? (value as T) : null
+  } catch {
+    return null
+  }
+}
+
+/** The key id a sealed value was sealed with (for the rekey job and mailbox.tokenKeyId). */
+export function sealedKeyId(sealed: string): string | null {
+  const parts = sealed.split('.')
+  return parts.length === 4 && parts[0] === VERSION ? (parts[1] ?? null) : null
 }

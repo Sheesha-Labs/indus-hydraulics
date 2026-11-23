@@ -13,7 +13,23 @@ Whether the plan's concurrency limit applies per function or to the whole accoun
 
 | Recorded value | Date | By |
 |---|---|---|
-| | | |
+| Free plan, **5 concurrent steps, account-wide, shared with the website**. Ops runs in three shared lanes (live 2, bulk 1, house 1) = 4, leaving 1 for the website. | 2026-11-23 | Owner (decided to stay on the free plan) |
+
+How the lanes work (`src/inngest/plan.ts`): every Ops function declares one lane through `defineOpsFunction({ lane })`, an
+environment-scoped Inngest concurrency key (`"ops-live"`, `"ops-bulk"`, `"ops-house"`) that all functions of the lane
+queue on together. A function may add one per-key limit inside its lane (one send at a time per mailbox, one sync per
+mailbox, one connect per mailbox). `concurrency.test.ts` checks every function sits in exactly one lane at the lane's
+limit, and that the lanes plus the website's reserve fit the cap. It replaced the S00 rule "the sum of every function's
+limit fits the cap", which 11 functions could never meet at 5.
+
+- **live 2**: new-mail sync, new-message fetch, the send queue, connect/reconnect. What a person waits for.
+- **bulk 1**: the past-mail import (its own fetch event, `ops/gmail.message.fetch.backfill`) and the delete-everything
+  purge. A 12/24-month import runs one step at a time and never takes the live lane's slots.
+- **house 1**: heartbeat, safety poll, watch renewal, health, send reconcile. Late by a few minutes under load; none sends.
+
+Consequences: when the website's own jobs are busy, Ops work waits in Inngest's queue (later, never lost or sent
+twice). The past-mail import takes longer than it would on a paid plan. Assistant work from S05 joins the live or bulk
+lane; revisit the plan if Review or sends lag. Also watch the free plan's monthly run allowance during the import.
 
 ## 2. Supavisor per-user pool size
 
@@ -25,7 +41,23 @@ The pool size per user, database and mode on the Supabase pooler, and the total 
 
 | Recorded value | Date | By |
 |---|---|---|
-| | | |
+| Free plan, **5 concurrent steps, account-wide, shared with the website**. Ops runs in three shared lanes (live 2, bulk 1, house 1) = 4, leaving 1 for the website. | 2026-11-23 | Owner (decided to stay on the free plan) |
+
+How the lanes work (`src/inngest/plan.ts`): every Ops function declares one lane through `defineOpsFunction({ lane })`, an
+environment-scoped Inngest concurrency key (`"ops-live"`, `"ops-bulk"`, `"ops-house"`) that all functions of the lane
+queue on together. A function may add one per-key limit inside its lane (one send at a time per mailbox, one sync per
+mailbox, one connect per mailbox). `concurrency.test.ts` checks every function sits in exactly one lane at the lane's
+limit, and that the lanes plus the website's reserve fit the cap. It replaced the S00 rule "the sum of every function's
+limit fits the cap", which 11 functions could never meet at 5.
+
+- **live 2**: new-mail sync, new-message fetch, the send queue, connect/reconnect. What a person waits for.
+- **bulk 1**: the past-mail import (its own fetch event, `ops/gmail.message.fetch.backfill`) and the delete-everything
+  purge. A 12/24-month import runs one step at a time and never takes the live lane's slots.
+- **house 1**: heartbeat, safety poll, watch renewal, health, send reconcile. Late by a few minutes under load; none sends.
+
+Consequences: when the website's own jobs are busy, Ops work waits in Inngest's queue (later, never lost or sent
+twice). The past-mail import takes longer than it would on a paid plan. Assistant work from S05 joins the live or bulk
+lane; revisit the plan if Review or sends lag. Also watch the free plan's monthly run allowance during the import.
 
 ## 3. Supabase API key system
 

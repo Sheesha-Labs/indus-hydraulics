@@ -47,6 +47,11 @@ function memoryStorage() {
     async createSignedUrl(b, k) {
       return objects.has(id(b, k)) ? `https://storage.test/${id(b, k)}?token=t` : null
     },
+    async upload(b, k, bytes) {
+      if (objects.has(id(b, k))) return { existed: true }
+      objects.set(id(b, k), bytes)
+      return { existed: false }
+    },
     async openRead(b, k) {
       const bytes = objects.get(id(b, k))
       if (!bytes) return null

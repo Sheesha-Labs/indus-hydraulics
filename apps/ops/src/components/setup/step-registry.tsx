@@ -1,7 +1,7 @@
 import { Card } from '@indus/ops-ui/card'
 import type { ReactNode } from 'react'
 import { ToastProvider } from '@indus/ops-ui/overlay'
-import { completeAndContinue } from '../../actions/setup'
+import { completeAndContinue, continueFromMailboxes } from '../../actions/setup'
 import { getAssistantStep, getCompanyStep, getMoneyStep } from '../../data/setup'
 import { formatDate } from '@indus/ops-ui/format'
 import { getInviteStep } from '../../data/team'
@@ -11,6 +11,8 @@ import type { SetupStep } from '../../lib/route-params'
 import AssistantModes from './AssistantModes'
 import { CompanyDraftProvider, CompanyFields, CompanyPreview } from './CompanyForm'
 import MoneyForm from './MoneyForm'
+import MailboxCards from './MailboxCards'
+import { getConnectContext, getSetupMailboxCards, readConnectReturn } from '../../data/mailboxes'
 
 /**
  * What each setup step draws inside the shared T9 rail frame (`(setup)/setup/[step]/page.tsx`): the
@@ -21,7 +23,12 @@ import MoneyForm from './MoneyForm'
  * `render` and replace the step's entry below; flip its `build` in lib/setup-steps.ts to 'built'. The
  * frame, the rail, the foot and Next/Back need no change.
  */
-export type StepContext = { user: OpsUser; step: SetupStep }
+export type StepContext = {
+  user: OpsUser
+  step: SetupStep
+  /** The page's search params (the mailbox OAuth callback returns to step 2 with ?step=4&outcome=…). */
+  query: Record<string, string | string[] | undefined>
+}
 
 export type StepView = {
   description?: string
@@ -50,6 +57,21 @@ function LaterStep(): StepView {
         text="You can finish setup without this step. Next skips it; it opens here once it is ready."
       />
     ),
+  }
+}
+
+/** Setup 2 · Connect mailboxes (board 80, S04-T02): the Client and Supplier cards, each opening board 86. */
+async function MailboxesStep({ user, query }: StepContext): Promise<StepView> {
+  const context = await getConnectContext(user)
+  const [cards, back] = await Promise.all([
+    getSetupMailboxCards(context.domain),
+    readConnectReturn(query),
+  ])
+  return {
+    description:
+      'The Assistant reads these mailboxes and sends from them only as your rules allow.',
+    body: <MailboxCards cards={cards} context={context} back={back} />,
+    nextAction: continueFromMailboxes,
   }
 }
 
@@ -135,7 +157,7 @@ async function InviteStep(): Promise<StepView> {
 
 export const STEP_VIEWS: Readonly<Record<SetupStep, StepRender>> = {
   company: CompanyStep,
-  mailboxes: LaterStep,
+  mailboxes: MailboxesStep,
   history: LaterStep,
   money: MoneyStep,
   assistant: AssistantStep,

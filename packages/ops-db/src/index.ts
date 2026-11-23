@@ -36,3 +36,4 @@ export { buildDatasourceUrl, OPS_CONNECTION_LIMIT, OPS_POOL_TIMEOUT } from './da
 // `$Enums.UserRole.owner`): the linter cannot see a CommonJS module's names through `export *`.
 export type * from '#ops-client'
 export { $Enums } from '#ops-client'
+export { maintDatasourceUrl, maintDb } from './maint-client'

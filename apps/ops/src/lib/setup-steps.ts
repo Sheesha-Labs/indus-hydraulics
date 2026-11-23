@@ -28,7 +28,7 @@ export const SETUP_STEP_META: Readonly<Record<SetupStep, SetupStepMeta>> = {
     title: 'Connect mailboxes',
     minutes: '3 min',
     nextLabel: 'mailboxes',
-    build: 'later',
+    build: 'built',
   },
   history: {
     title: 'Bring in your history',

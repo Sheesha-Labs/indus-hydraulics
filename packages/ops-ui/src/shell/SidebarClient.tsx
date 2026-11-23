@@ -46,6 +46,8 @@ export interface SidebarClientProps {
   active: NavKey | null
   badges: Partial<Record<NavKey, number>>
   status: AssistantStatus
+  /** The pill's words when they name a mailbox ("sales@ disconnected"); the status word otherwise. */
+  statusLabel?: string | undefined
   collapsed: boolean
   websiteAdminHref: string | undefined
   signOutAction: (formData: FormData) => void | Promise<void>
@@ -180,6 +182,7 @@ function Expanded(p: PartProps) {
         who={p.user.role}
         collapsed={false}
         onPause={p.onPause}
+        label={p.statusLabel}
       />
       <ExpandedItem item={SETTINGS_ITEM} active={p.active === 'settings'} count={undefined} />
       <ProfileMenu
@@ -339,7 +342,13 @@ function Collapsed(p: PartProps) {
       </Tooltip>
       <Groups {...p} />
       <div aria-hidden="true" className="flex-1" />
-      <AssistantPillMenu status={p.status} who={p.user.role} collapsed onPause={p.onPause} />
+      <AssistantPillMenu
+        status={p.status}
+        who={p.user.role}
+        collapsed
+        onPause={p.onPause}
+        label={p.statusLabel}
+      />
       <CollapsedItem
         item={SETTINGS_ITEM}
         active={p.active === 'settings'}

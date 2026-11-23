@@ -167,6 +167,10 @@ export const MAILBOX_STATUSES = [
   'backfill_paused',
   'paused',
   'disconnected',
+  // S04-T02 (ADR-06): drawn with the board's existing words (board 89 shows them as Disconnected / Behind).
+  'token_expired',
+  'revoked',
+  'resyncing',
 ] as const
 export type MailboxStatus = (typeof MAILBOX_STATUSES)[number]
 
@@ -356,6 +360,9 @@ export const MAILBOX_STATUS_WORD = {
   backfill_paused: 'Backfill paused',
   paused: 'Paused',
   disconnected: 'Disconnected',
+  token_expired: 'Disconnected',
+  revoked: 'Disconnected',
+  resyncing: 'Behind',
 } as const satisfies Record<MailboxStatus, VocabularyWord<'mailbox'>>
 
 export const ACTION_STATE_WORD = {

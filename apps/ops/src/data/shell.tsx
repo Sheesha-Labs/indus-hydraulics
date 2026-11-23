@@ -1,5 +1,7 @@
 import 'server-only'
 import { opsDb } from '@indus/ops-db'
+import { pillForMailbox } from '@indus/ops-core'
+import { worstAssistantStatus } from '@indus/ops-ui/shell'
 import { BannerAction, type SystemBanner } from '@indus/ops-ui/status'
 import type { AssistantStatus } from '@indus/ops-ui/types'
 import { cookies } from 'next/headers'
@@ -7,6 +9,8 @@ import { cache } from 'react'
 import type { OpsUser } from '../lib/access-core'
 import { env } from '../lib/env'
 import { firstName } from '../lib/setup-steps'
+import { assistantPauseState } from '../server/assistant/pause'
+import { getSystemBanners } from './banners'
 import { setupProgress } from './setup'
 
 /** The sidebar's identity line prints the mailbox's local part; anything else prints "—". */
@@ -71,13 +75,13 @@ export function fixtureBanners(): SystemBanner[] {
 
 /**
  * System banners under the page header (C23, S08): mailbox disconnected, Assistant paused, sync delayed,
- * Zoho disconnected. The shell shows the most severe one with "+n more". S02: none (fixtures outside
- * production behind FIXTURE_BANNERS_COOKIE). S04/S05 read the mailbox and pause state here.
+ * Zoho disconnected. The shell shows the most severe one with "+n more". S04-T08: the board 89 mailbox and
+ * pause states (data/banners.tsx); fixtures outside production behind FIXTURE_BANNERS_COOKIE.
  */
 export async function getShellBanners(
-  user?: Pick<OpsUser, 'role'>
+  user?: Pick<OpsUser, 'role' | 'id' | 'initials'>
 ): Promise<SystemBanner[]> {
-  const banners: SystemBanner[] = []
+  const banners: SystemBanner[] = user ? await getSystemBanners(user) : []
   if (user?.role === 'helper') {
     const setup = await helperSetupBanner()
     if (setup) banners.push(setup)
@@ -115,9 +119,25 @@ export async function helperSetupBanner(): Promise<SystemBanner | null> {
 }
 
 /**
- * Every current Assistant and mailbox state, for the pill (it shows the worst, C23). S02: the Assistant has
- * nothing to run yet, so 'running' with no warnings; S05 reads the pause row and the mailbox statuses.
+ * Every current Assistant and mailbox state, for the pill (it shows the worst, C23). S04-T09: each mailbox's
+ * state maps to red (disconnected, token expired, revoked), amber (behind, limit reached) or paused, and the
+ * pause row adds 'paused'; the label names the mailbox behind the worst state. One small query.
  */
-export async function getShellAssistantStates(): Promise<AssistantStatus[]> {
-  return ['running']
+export async function getShellAssistantStates(): Promise<{ states: AssistantStatus[]; label?: string }> {
+  const [rows, pause] = await Promise.all([
+    opsDb.mailbox.findMany({ select: { address: true, status: true }, orderBy: { createdAt: 'asc' } }),
+    assistantPauseState(),
+  ])
+  const states: AssistantStatus[] = ['running']
+  if (pause) states.push('paused')
+  const flagged = rows
+    .map((r) => ({ address: r.address, pill: pillForMailbox(r.status) }))
+    .filter((r): r is { address: string; pill: 'disconnected' | 'behind' | 'paused' } => r.pill !== null)
+  states.push(...flagged.map((f) => f.pill))
+  const worst = worstAssistantStatus(states)
+  const culprit = flagged.find((f) => f.pill === worst)
+  if (!culprit || (worst === 'paused' && pause)) return { states }
+  const local = `${culprit.address.split('@')[0]}@`
+  const words = { disconnected: 'disconnected', behind: 'behind', paused: 'paused' }[culprit.pill]
+  return { states, label: `${local} ${words}` }
 }

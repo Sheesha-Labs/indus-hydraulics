@@ -310,7 +310,7 @@ describe('BannerSlot strip placement', () => {
     props: { tone: kind === 'mailbox-disconnected' ? 'bad' : 'info', children: `${kind} notice` },
   }))
 
-  it('orders all six kinds, shows the most severe as a 40px strip and the rest behind +5 more', async () => {
+  it('orders every kind, shows the most severe as a 40px strip and the rest behind "+n more"', async () => {
     const { container } = render(<BannerSlot placement="strip" banners={ALL} />)
     expect(container.querySelector('[data-part="banner-slot"]')).toHaveAttribute(
       'data-placement',
@@ -320,7 +320,9 @@ describe('BannerSlot strip placement', () => {
     expect(top).toHaveTextContent('mailbox-disconnected notice')
     expect(top).toHaveClass('h-io-strip')
     expect(container.querySelectorAll('[data-part="banner"]')).toHaveLength(1)
-    await userEvent.click(screen.getByRole('button', { name: '+5 more' }))
+    await userEvent.click(
+      screen.getByRole('button', { name: `+${SYSTEM_BANNER_ORDER.length - 1} more` })
+    )
     const list = screen.getByRole('list', { name: 'More system notices' })
     expect(
       within(list)
