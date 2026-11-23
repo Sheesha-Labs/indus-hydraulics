@@ -126,7 +126,7 @@ const FRAMES: FrameCheck[] = [
     board: '78',
     path: '/welcome',
     limit: 0.06,
-    note: 'Neutral first name and logo slot masked; Geist rasterisation floor on large serif text',
+    note: 'No masks needed: the neutral first name and the logo placeholder stay under the limit',
   },
   {
     board: '79',
