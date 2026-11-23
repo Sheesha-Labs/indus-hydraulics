@@ -263,6 +263,24 @@ const backfillExclusions = z.strictObject({
     .max(500),
 })
 
+/** S04-T06: send timing (boards 87, 99, 100). Times are local clock "HH:MM" (the shared `hhmm` above). */
+const span = z
+  .strictObject({ start: hhmm, end: hhmm })
+  .refine((v) => v.start < v.end, 'The end must be after the start.')
+const sendTiming = z.strictObject({
+  clientHours: span,
+  window: z.strictObject({ after: hhmm, releaseAt: hhmm }),
+  ramadanHours: span,
+  supplierMorning: span,
+  chaserNoFridayAfter: hhmm,
+  capReset: hhmm,
+})
+const weekday = z.number().int().min(0).max(6)
+const countryWeekends = z.strictObject({
+  default: z.array(weekday).min(1).max(3),
+  byCountry: z.record(z.string().regex(/^[A-Z]{2}$/), z.array(weekday).min(1).max(3)),
+})
+
 // ── The registry ───────────────────────────────────────────────────────────────────────────
 
 export type SettingDef<S extends z.ZodType = z.ZodType> = {
@@ -414,6 +432,20 @@ export const SETTINGS = {
     label: 'Never import from these senders',
     section: 'sending',
   }),
+  'send.timing': def({
+    schema: sendTiming,
+    ownerOnly: true,
+    signoff: true,
+    label: 'When emails are sent',
+    section: 'sending',
+  }),
+  'calendar.country_weekends': def({
+    schema: countryWeekends,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Weekends by country',
+    section: 'sending',
+  }),
   'setup.progress': def({
     schema: setupProgress,
     ownerOnly: false,
@@ -444,3 +476,5 @@ export type SystemEmailSender = SettingValue<'system_email.sender'>
 export type CompanyProfile = SettingValue<'company.profile'>
 export type MailLabelNames = SettingValue<'mail.label_names'>
 export type MailLabelKey = keyof MailLabelNames
+export type SendTiming = SettingValue<'send.timing'>
+export type CountryWeekends = SettingValue<'calendar.country_weekends'>

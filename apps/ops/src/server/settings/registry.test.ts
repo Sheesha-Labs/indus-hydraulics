@@ -47,6 +47,8 @@ const AWAITING: readonly SettingKey[] = [
   'mail.label_names',
   'mailbox.consent',
   'mail.backfill_exclusions',
+  'send.timing',
+  'calendar.country_weekends',
 ]
 
 function seeded(key: SettingKey): unknown {
@@ -65,7 +67,7 @@ describe('settings registry vs the seed migration', () => {
 
   it('seeds exactly the registered keys', () => {
     expect(rows.map((r) => r.key).sort()).toEqual([...SETTING_KEYS].sort())
-    expect(SETTING_KEYS).toHaveLength(20)
+    expect(SETTING_KEYS).toHaveLength(22)
   })
 
   it('every seeded value parses with its schema', () => {

@@ -5,6 +5,8 @@ import { gmailPoll } from './gmail/poll'
 import { gmailSync } from './gmail/sync'
 import { gmailWatchRenew } from './gmail/watch-renew'
 import { heartbeat } from './heartbeat'
+import { mailSendReconcile } from './mail/reconcile'
+import { mailSend } from './mail/send'
 
 /** Every Indus Operations Inngest function. concurrency.test.ts checks this list. */
 export const opsFunctions = [
@@ -15,4 +17,6 @@ export const opsFunctions = [
   gmailWatchRenew,
   gmailMessageFetch,
   gmailBackfill,
+  mailSend,
+  mailSendReconcile,
 ]

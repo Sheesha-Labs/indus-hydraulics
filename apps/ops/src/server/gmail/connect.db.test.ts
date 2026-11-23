@@ -30,7 +30,7 @@ vi.mock('../../inngest/emit', () => ({
   emitEventOrThrow: async () => undefined,
 }))
 
-const ADDRESS = 's04-test-purchase@example.test'
+const ADDRESS = 's04-test-connect-purchase@example.test'
 
 function idToken(claims: Record<string, unknown>): string {
   const part = (o: unknown) => Buffer.from(JSON.stringify(o)).toString('base64url')
@@ -65,8 +65,8 @@ describe.skipIf(!DB_URL)('mailbox connect · local database', () => {
   let helper: import('../../lib/access-core').OpsUser
 
   async function cleanup() {
-    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-' } } })
-    await db.oauthState.deleteMany({ where: { address: { startsWith: 's04-test-' } } })
+    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-connect-' } } })
+    await db.oauthState.deleteMany({ where: { address: { startsWith: 's04-test-connect-' } } })
   }
 
   /** Start a flow and return the state Google would echo back. */
@@ -165,7 +165,7 @@ describe.skipIf(!DB_URL)('mailbox connect · local database', () => {
       await connect.startConnect({
         user: flagged,
         role: 'client',
-        address: 's04-test-sales@example.test',
+        address: 's04-test-connect-sales@example.test',
         returnTo: 'settings',
       })
     ).toEqual({
@@ -256,17 +256,17 @@ describe.skipIf(!DB_URL)('mailbox connect · local database', () => {
     const other = await connect.finishConnect(
       { code: 'c', state: state2 },
       owner.id,
-      deps({ email: 's04-test-other@example.test' })
+      deps({ email: 's04-test-connect-other@example.test' })
     )
     expect(other.outcome).toBe('wrong_account')
   })
 
   it('a Personal mailbox may be any Google account (no Workspace check)', async () => {
-    const state = await begin(owner, 's04-test-me@gmail.test', 'personal')
+    const state = await begin(owner, 's04-test-connect-me@gmail.test', 'personal')
     const res = await connect.finishConnect(
       { code: 'c', state },
       owner.id,
-      deps({ email: 's04-test-me@gmail.test', hd: undefined as unknown as string })
+      deps({ email: 's04-test-connect-me@gmail.test', hd: undefined as unknown as string })
     )
     expect(res.outcome).toBe('connected')
   })

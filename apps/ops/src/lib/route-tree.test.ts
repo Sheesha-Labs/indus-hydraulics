@@ -226,11 +226,15 @@ describe('route tree', () => {
     expect(private_).toEqual([])
   })
 
-  it('(d) no API route beyond the four S02 allows, plus the S03-T05 file route', () => {
+  it('(d) no API route beyond the four S02 allows, the S03-T05 file route and the two S04 Gmail routes', () => {
     const api = ALL.filter((d) => d.startsWith('api') && has(d, 'route.ts')).sort()
     expect(api).toEqual([
       'api/auth/[...nextauth]',
       'api/files/[id]',
+      // S04-T02: the per-mailbox OAuth callback (verifies a signed single-use state).
+      'api/gmail/oauth/callback',
+      // S04-T04: the Pub/Sub push endpoint (verifies the OIDC JWT; never touches Prisma).
+      'api/gmail/push',
       'api/health',
       'api/health/live',
       'api/inngest',

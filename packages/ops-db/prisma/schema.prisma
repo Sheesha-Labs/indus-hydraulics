@@ -2072,6 +2072,25 @@ model SettingsEntry {
 
 /// Working calendar: UAE public holidays and Ramadan hours. Used for
 /// working-day maths (reply-by, give-up dates, call-back countdown).
+/// S04-T06: public holidays, Ramadan days and closures per country (send slots, boards 87 and 100). Content.
+model Holiday {
+  id            String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  country       String   @db.Char(2)
+  date          DateTime @db.Date
+  name          String
+  /// public_holiday | ramadan | closure
+  kind          String
+  hoursStart    String?
+  hoursEnd      String?
+  signoffStatus String   @default("awaiting")
+  createdAt     DateTime @default(now()) @db.Timestamptz(3)
+
+  @@unique([country, date, kind], map: "holiday_country_date_kind_key")
+  @@index([date])
+  @@map("holiday")
+  @@schema("ops")
+}
+
 model WorkCalendarDay {
   date       DateTime @id @db.Date
   label      String
@@ -2434,6 +2453,7 @@ model User {
   authEvents          AuthEvent[]
   invitesSent         UserInvite[]             @relation("InviteSender")
   oauthStates         OauthState[]
+  approvedOutbound    OutboundEmail[]          @relation("OutboundApprovedBy")
   preference          UserPreference?
   notificationPrefs   NotificationPreference[]
   notifications       Notification[]
@@ -2874,47 +2894,62 @@ model MailLink {
 
 /// Every email the console drafts or sends (Gmail or the system sender).
 model OutboundEmail {
-  id                String           @id @default(uuid(7)) @db.Uuid
-  channel           OutboundChannel  @default(gmail)
-  kind              OutboundKind
-  mailboxId         String?          @db.Uuid
-  mailbox           Mailbox?         @relation(fields: [mailboxId], references: [id])
-  threadId          String?          @db.Uuid
-  thread            MailThread?      @relation(fields: [threadId], references: [id])
-  inReplyToRfcId    String?
-  toAddresses       String[]
-  ccAddresses       String[]
-  bccAddresses      String[]
-  subject           String
-  bodyHtml          String
-  bodyText          String?
-  status            OutboundStatus   @default(draft)
+  id                   String           @id @default(uuid(7)) @db.Uuid
+  channel              OutboundChannel  @default(gmail)
+  kind                 OutboundKind
+  mailboxId            String?          @db.Uuid
+  mailbox              Mailbox?         @relation(fields: [mailboxId], references: [id])
+  threadId             String?          @db.Uuid
+  thread               MailThread?      @relation(fields: [threadId], references: [id])
+  inReplyToRfcId       String?
+  toAddresses          String[]
+  ccAddresses          String[]
+  bccAddresses         String[]
+  subject              String
+  bodyHtml             String
+  bodyText             String?
+  status               OutboundStatus   @default(draft)
   /// Supplier-local or send-window time; null = as soon as approved + hold.
-  scheduledFor      DateTime?        @db.Timestamptz(3)
-  undoUntil         DateTime?        @db.Timestamptz(3)
-  sentAt            DateTime?        @db.Timestamptz(3)
-  gmailMessageId    String?
-  gmailDraftId      String?
-  providerMessageId String?
+  scheduledFor         DateTime?        @db.Timestamptz(3)
+  undoUntil            DateTime?        @db.Timestamptz(3)
+  sentAt               DateTime?        @db.Timestamptz(3)
+  gmailMessageId       String?
+  gmailDraftId         String?
+  providerMessageId    String?
   /// delivered | bounced | complained (system channel only)
-  deliveryStatus    String?
-  failureReason     String?
+  deliveryStatus       String?
+  failureReason        String?
   /// Unique per logical send; a retry after failure gets a new key only by a
   /// person's click. Guarantees no silent double send.
-  idempotencyKey    String           @unique
-  identifierCheck   Json?
-  actionId          String?          @db.Uuid
-  action            AssistantAction? @relation(fields: [actionId], references: [id])
-  enquiryId         String?          @db.Uuid
-  enquiry           Enquiry?         @relation(fields: [enquiryId], references: [id])
-  subjectType       RecordType?
-  subjectId         String?          @db.Uuid
-  companyId         String?          @db.Uuid
-  contactId         String?          @db.Uuid
-  retryOfId         String?          @db.Uuid
-  createdById       String?          @db.Uuid
-  createdAt         DateTime         @default(now()) @db.Timestamptz(3)
-  updatedAt         DateTime         @updatedAt @db.Timestamptz(3)
+  idempotencyKey       String           @unique
+  identifierCheck      Json?
+  actionId             String?          @db.Uuid
+  action               AssistantAction? @relation(fields: [actionId], references: [id])
+  enquiryId            String?          @db.Uuid
+  enquiry              Enquiry?         @relation(fields: [enquiryId], references: [id])
+  subjectType          RecordType?
+  subjectId            String?          @db.Uuid
+  companyId            String?          @db.Uuid
+  contactId            String?          @db.Uuid
+  retryOfId            String?          @db.Uuid
+  createdById          String?          @db.Uuid
+  createdAt            DateTime         @default(now()) @db.Timestamptz(3)
+  updatedAt            DateTime         @updatedAt @db.Timestamptz(3)
+  /// S04-T06 send queue (ADR-07).
+  claimedAt            DateTime?        @db.Timestamptz(3)
+  proposedRfcMessageId String?
+  rfcMessageId         String?
+  referencesRfcIds     String[]         @default([])
+  basisHash            String?
+  /// The PERSON who approved (never the Assistant). Priced client sends need it at the gate.
+  approvedById         String?          @db.Uuid
+  approvedBy           User?            @relation("OutboundApprovedBy", fields: [approvedById], references: [id])
+  approvedAt           DateTime?        @db.Timestamptz(3)
+  /// cap | pause | mailbox | slot
+  holdReason           String?
+  sendSlotAt           DateTime?        @db.Timestamptz(3)
+  reconcileChecks      Int              @default(0) @db.SmallInt
+  fromAlias            String?
 
   attachments OutboundAttachment[]
 
@@ -2922,6 +2957,7 @@ model OutboundEmail {
   @@index([mailboxId, sentAt])
   @@index([enquiryId])
   @@index([subjectType, subjectId])
+  @@index([mailboxId, status], map: "outbound_email_mailbox_active_idx")
   @@map("outbound_email")
   @@schema("ops")
 }

@@ -72,6 +72,8 @@ const AWAITING = [
   'mail.label_names',
   'mailbox.consent',
   'mail.backfill_exclusions',
+  'send.timing',
+  'calendar.country_weekends',
 ]
 
 const USER_SELECT = {

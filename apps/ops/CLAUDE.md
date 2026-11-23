@@ -348,6 +348,14 @@ function ships.
 | Function | Trigger | Concurrency | Retries | Pause | Sprint |
 |---|---|---|---|---|---|
 | `ops.system.heartbeat` | cron `*/10 * * * *` | global · 1 | 0 | exempt | S00 |
+| `ops.mailbox.on-connected` | `ops/mailbox.connected`, `ops/mailbox.reconnected` | mailbox · 1 | 3 | exempt | S04 |
+| `ops.gmail.sync` | `ops/gmail.notified`, `ops/gmail.poll.tick` (debounce 3 s) | address · 1 | 3 | record_only | S04 |
+| `ops.gmail.poll` | cron `*/10 * * * *` | global · 1 | 1 | skip | S04 |
+| `ops.gmail.watch.renew` | cron `TZ=Asia/Dubai 10 3 * * *` | global · 1 | 3 | exempt | S04 |
+| `ops.gmail.message.fetch` | `ops/gmail.message.fetch` | mailbox · 2, global · 4 | 4 | exempt | S04 |
+| `ops.gmail.backfill` | `ops/gmail.backfill.requested`, `ops/gmail.backfill.continue` | mailbox · 1 | 5 | wait | S04 |
+| `ops.mail.send` | `ops/mail.send.requested`; cancelOn `ops/mail.send.cancelled` | mailbox · 1 | **0** | exempt (the gate holds) | S04 |
+| `ops.mail.send.reconcile` | cron `*/15 * * * *` | global · 1 | 2 | exempt | S04 |
 
 ## 17. Assistant actions
 

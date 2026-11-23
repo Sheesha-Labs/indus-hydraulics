@@ -68,7 +68,7 @@ describe.skipIf(!DB_URL)('gmail sync · local database', () => {
 
   beforeEach(async () => {
     emitted.length = 0
-    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-' } } })
+    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-sync' } } })
     const m = await db.mailbox.create({
       data: {
         address: ADDRESS,
@@ -85,7 +85,7 @@ describe.skipIf(!DB_URL)('gmail sync · local database', () => {
   })
 
   afterAll(async () => {
-    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-' } } })
+    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-sync' } } })
     await db.$disconnect()
   })
 

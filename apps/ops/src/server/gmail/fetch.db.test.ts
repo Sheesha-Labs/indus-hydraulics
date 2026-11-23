@@ -136,7 +136,7 @@ describe.skipIf(!DB_URL)('gmail fetch and backfill · local database', () => {
   beforeEach(async () => {
     objects.clear()
     await db.storedFile.deleteMany({ where: { bucket: 'ops-mail', path: { contains: 's04test' } } })
-    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-' } } })
+    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-fetch' } } })
     const m = await db.mailbox.create({
       data: {
         address: ADDRESS,
@@ -153,7 +153,7 @@ describe.skipIf(!DB_URL)('gmail fetch and backfill · local database', () => {
 
   afterAll(async () => {
     storage.setStorageForTests(null)
-    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-' } } })
+    await db.mailbox.deleteMany({ where: { address: { startsWith: 's04-test-fetch' } } })
     await db.$disconnect()
   })
 
