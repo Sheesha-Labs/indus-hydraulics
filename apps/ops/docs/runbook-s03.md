@@ -56,3 +56,22 @@ Verify: sign in as the Owner, open `/setup/company`: Legal name and TRN carry "C
 and an upload is then refused with "File storage is not set up yet." Add both to the Vercel project
 (Production) before the batch deploys. Locally, without them, uploads go to a disk stand-in under the OS
 temp folder (`src/server/storage/local-storage.ts`), served by `/api/files/local` only while it is active.
+
+## S03 · Sprint close (production, in this order)
+
+1. **Preview first.** Push a commit with `[preview]` that touches `apps/ops`, then check the preview's logs
+   for the proxy: a signed-in page load must not log a Prisma engine error from `session-revocation.ts`
+   (the proxy imports `@indus/ops-db` for the revocation cache since S03-T02; Turbopack reports it as an
+   NFT warning on `middleware.js`). The proxy fails open on a database error, so a broken engine would
+   silently disable the 60 s revocation, not sign-in.
+2. **Secrets** (Vercel, project `indus-operations`, Production): `RESEND_OPS_API_KEY` (Resend key named
+   `indus-operations`, sending access, domain `indushydraulics.com`), `SUPABASE_URL`, `SUPABASE_SECRET_KEY`.
+   Without the Resend key, auth mail records `failed` with reason `not_configured`; without the Supabase pair,
+   uploads are refused with a plain sentence. Neither blocks boot.
+3. **No hosted build in flight**, then the six migrations, one at a time, in file order, with
+   `prisma db execute --url "$OPS_MIGRATION_URL"`: `…_ops_auth_hardening`, `…_ops_system_email_kinds`,
+   `…_ops_settings_signoff`, `…_ops_settings_defaults_seed`, `…_ops_autopilot_catalogue_seed`,
+   `…_ops_team_auth_event_kinds`. The two `ADD VALUE` files run outside a transaction. Then `sql/verify.sql`
+   as `ops_app`, and: 66 rows in `ops.autopilot_action_def`, `assistant.mode` = careful.
+4. Buckets and the company profile copy (sections 1 and 2 above).
+5. Merge in one sitting (merge queue). Then the demo script in the prompt book's S03 header.
