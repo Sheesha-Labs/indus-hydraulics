@@ -274,6 +274,35 @@ const sendTiming = z.strictObject({
   supplierMorning: span,
   chaserNoFridayAfter: hhmm,
   capReset: hhmm,
+  // S04-T07 board 87 "Send window". Optional so the S04-T06 seed row still parses (absent = next_morning).
+  clientWindow: z.enum(['next_morning', 'immediately']).optional(),
+})
+
+/** S04-T07: signature blocks by sender (board 87). Sanitised HTML + its text, keyed by ops.user id. */
+const signatureBlock = z.strictObject({
+  html: z.string().max(10_000),
+  text: z.string().max(5_000),
+})
+const sendSignatures = z.record(z.uuid(), signatureBlock)
+
+/** S04-T07: attachment file names (board 87). `{n}` the document number, `{ref}` the RFQ reference. */
+const fileNamePattern = z
+  .string()
+  .trim()
+  .min(5)
+  .max(80)
+  .regex(/^[A-Za-z0-9 ._{}-]+\.pdf$/, 'Use letters, digits, - and _ only, ending in .pdf.')
+const attachmentNames = z.strictObject({
+  quotation: fileNamePattern.refine((v) => v.includes('{n}'), 'Include {n} for the number.'),
+  supplierRfq: fileNamePattern.refine(
+    (v) => v.includes('{ref}'),
+    'Include {ref} for the reference.'
+  ),
+})
+
+/** S04-T07: internal addresses the Owner's diagnostic "Send a test email…" may send to. */
+const testAllowlist = z.strictObject({
+  addresses: z.array(z.email().trim().toLowerCase()).max(10),
 })
 const weekday = z.number().int().min(0).max(6)
 const countryWeekends = z.strictObject({
@@ -446,6 +475,27 @@ export const SETTINGS = {
     label: 'Weekends by country',
     section: 'sending',
   }),
+  'send.signatures': def({
+    schema: sendSignatures,
+    ownerOnly: true,
+    signoff: false,
+    label: 'Signatures',
+    section: 'sending',
+  }),
+  'send.attachment_names': def({
+    schema: attachmentNames,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Attachment file names',
+    section: 'sending',
+  }),
+  'mail.test_allowlist': def({
+    schema: testAllowlist,
+    ownerOnly: true,
+    signoff: false,
+    label: 'Test email addresses',
+    section: 'sending',
+  }),
   'setup.progress': def({
     schema: setupProgress,
     ownerOnly: false,
@@ -478,3 +528,5 @@ export type MailLabelNames = SettingValue<'mail.label_names'>
 export type MailLabelKey = keyof MailLabelNames
 export type SendTiming = SettingValue<'send.timing'>
 export type CountryWeekends = SettingValue<'calendar.country_weekends'>
+export type SendSignatures = SettingValue<'send.signatures'>
+export type AttachmentNames = SettingValue<'send.attachment_names'>

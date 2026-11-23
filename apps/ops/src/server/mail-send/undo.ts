@@ -49,3 +49,16 @@ export async function undoSend(
   })
   return { success: true, data: { outboundId, alreadyCancelled: false } }
 }
+
+/** The Owner may undo any queued email; the Helper only one they composed or approved. */
+export async function mayUndo(
+  outboundId: string,
+  user: { id: string; role: string }
+): Promise<boolean> {
+  if (user.role === 'owner') return true
+  const row = await opsDb.outboundEmail.findUnique({
+    where: { id: outboundId },
+    select: { createdById: true, approvedById: true },
+  })
+  return !!row && (row.createdById === user.id || row.approvedById === user.id)
+}

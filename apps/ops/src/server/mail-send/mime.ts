@@ -5,6 +5,7 @@ import MailComposer from 'nodemailer/lib/mail-composer'
 import { htmlToText } from '../gmail/html'
 import type { OpsBucket } from '../storage/buckets'
 import { getStorage } from '../storage/storage'
+import { signatureFor, signerFor, type SignatureBlock } from './signature'
 
 /**
  * The exact bytes of one outbound email (S04-T06, 08-map-integrations §1.9). nodemailer's MailComposer only,
@@ -18,8 +19,8 @@ import { getStorage } from '../storage/storage'
  *   From              the verified alias with the mailbox's display name
  *   Bcc               kept in the raw message: the Gmail API delivers to the Bcc header and strips it
  *
- * The Gmail API does not add the Gmail signature, so the mailbox's signature (read from send-as and sanitised
- * at connect by send-as.ts sanitizeSignature) is appended to both bodies.
+ * The Gmail API does not add the Gmail signature, so the signer's block from Settings › Sending (or, until one
+ * is saved, the mailbox's Gmail signature sanitised at connect) is appended to both bodies (signature.ts).
  */
 export type BuiltMime = { raw: string; messageId: string; bytes: number }
 
@@ -51,13 +52,13 @@ function quoteName(name: string): string {
 export function withSignature(
   bodyHtml: string,
   bodyText: string | null,
-  signatureHtml: string | null
+  signature: SignatureBlock | null
 ): { html: string; text: string } {
   const text = bodyText ?? htmlToText(bodyHtml)
-  if (!signatureHtml?.trim()) return { html: bodyHtml, text }
+  if (!signature?.html.trim()) return { html: bodyHtml, text }
   return {
-    html: `${bodyHtml}\n<br>\n<div class="indus-signature">${signatureHtml}</div>`,
-    text: `${text}\n\n-- \n${htmlToText(signatureHtml)}`,
+    html: `${bodyHtml}\n<br>\n<div class="indus-signature">${signature.html}</div>`,
+    text: `${text}\n\n-- \n${signature.text}`,
   }
 }
 
@@ -74,6 +75,7 @@ export async function buildMime(outboundId: string): Promise<BuiltMime> {
     where: { id: outboundId },
     select: {
       id: true,
+      kind: true,
       subject: true,
       bodyHtml: true,
       bodyText: true,
@@ -84,7 +86,9 @@ export async function buildMime(outboundId: string): Promise<BuiltMime> {
       inReplyToRfcId: true,
       referencesRfcIds: true,
       proposedRfcMessageId: true,
-      mailbox: { select: { address: true, displayName: true, signatureHtml: true } },
+      mailbox: {
+        select: { address: true, displayName: true, signatureHtml: true, ownerUserId: true },
+      },
       attachments: {
         orderBy: { position: 'asc' },
         select: {
@@ -112,7 +116,11 @@ export async function buildMime(outboundId: string): Promise<BuiltMime> {
   }
 
   const messageId = row.proposedRfcMessageId ?? proposedMessageId(row.id)
-  const { html, text } = withSignature(row.bodyHtml, row.bodyText, row.mailbox.signatureHtml)
+  const signature = await signatureFor({
+    signerId: await signerFor(row.kind, row.mailbox.ownerUserId),
+    mailboxSignatureHtml: row.mailbox.signatureHtml,
+  })
+  const { html, text } = withSignature(row.bodyHtml, row.bodyText, signature)
   const reply = !!row.inReplyToRfcId
   try {
     const bytes = await compile({

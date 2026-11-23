@@ -30,6 +30,12 @@ export type SendTimingRules = {
   ramadanHours: { start: string; end: string }
   supplierMorning: { start: string; end: string }
   chaserNoFridayAfter: string
+  /**
+   * Board 87 "Send window": 'next_morning' (default) holds client mail to the hours and the 08:30 release;
+   * 'immediately' sends client mail at the end of the hold ("Fastest, but late-evening mail lands at night").
+   * Supplier timing is unaffected (it follows the supplier's local morning).
+   */
+  clientWindow?: 'next_morning' | 'immediately' | undefined
 }
 
 export type SlotReason =
@@ -79,6 +85,7 @@ function parseDate(key: string): CalendarDate {
 function clientSlot(input: SlotInput): Slot {
   const { now, rules, holidays, weekends } = input
   const tz = INDUS_TZ
+  if (rules.clientWindow === 'immediately') return { at: now, reason: 'now', local: fmt(now, tz) }
   const day = today(now, tz)
   const w = wallTime(now, tz)
   const minute = w.hour * 60 + w.minute

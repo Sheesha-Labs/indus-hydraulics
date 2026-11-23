@@ -25,8 +25,8 @@ import { moveOutbound, PENDING } from './status'
  *   1  status      only scheduled / held / waiting_for_mailbox rows go on      → stop 'not_pending'
  *   2  channel     Gmail rows only (system mail is sent by server/mail)        → stop 'wrong_channel'
  *   3  pause       "Pause everything" holds the send (C22)                     → held 'pause', wait ops/assistant.resumed
- *   4  mailbox     the row's own mailbox must be live with send; never another → waiting_for_mailbox, wait ops/mailbox.reconnected
- *   5  mailbox     paused by the Owner (board 89)                              → held 'pause', wait ops/mailbox.resumed
+ *   4  mailbox     paused by the Owner (board 89)                              → held 'pause', wait ops/mailbox.resumed
+ *   5  mailbox     the row's own mailbox must be live with send; never another → waiting_for_mailbox, wait ops/mailbox.reconnected
  *   6  alias       From must still be a verified send-as alias                 → failed 'alias_not_verified'
  *   7  cap         the mailbox's daily cap (resets 04:00 GST)                  → held 'cap', wait until the reset
  *   8  basis       S06 hook: the approval's basis_hash is still current        → superseded 'stale'
@@ -166,7 +166,22 @@ export async function sendGate(outboundId: string, deps: Deps = {}): Promise<Gat
     return { kind: 'wait', reason: 'pause', resumeEvent: 'ops/assistant.resumed' }
   }
 
-  // 4 The row's own mailbox, never another (board 87 "Waiting for sales@").
+  // 4 Mailbox paused by the Owner (board 89): held, never switched; checked before liveness so a paused
+  //   mailbox waits for its own resume.
+  if (mailbox.pausedAt || mailbox.status === 'paused') {
+    // A row already waiting for its mailbox keeps waiting (waiting → held is not a forward move).
+    if (row.status === 'scheduled') {
+      await moveOutbound(outboundId, ['scheduled'], 'held', { holdReason: 'pause' })
+    }
+    return {
+      kind: 'wait',
+      reason: 'mailbox_paused',
+      resumeEvent: 'ops/mailbox.resumed',
+      match: 'data.mailboxId',
+    }
+  }
+
+  // 5 The row's own mailbox, never another (board 87 "Waiting for sales@").
   if (!mailboxCanSend(mailbox.status) || !mailbox.canSend) {
     if (row.status !== 'waiting_for_mailbox') {
       await moveOutbound(outboundId, ['scheduled', 'held'], 'waiting_for_mailbox', {
@@ -177,20 +192,6 @@ export async function sendGate(outboundId: string, deps: Deps = {}): Promise<Gat
       kind: 'wait',
       reason: 'mailbox',
       resumeEvent: 'ops/mailbox.reconnected',
-      match: 'data.mailboxId',
-    }
-  }
-
-  // 5 Mailbox paused by the Owner.
-  if (mailbox.pausedAt) {
-    // A row already waiting for its mailbox keeps waiting (waiting → held is not a forward move).
-    if (row.status === 'scheduled') {
-      await moveOutbound(outboundId, ['scheduled'], 'held', { holdReason: 'pause' })
-    }
-    return {
-      kind: 'wait',
-      reason: 'mailbox_paused',
-      resumeEvent: 'ops/mailbox.resumed',
       match: 'data.mailboxId',
     }
   }

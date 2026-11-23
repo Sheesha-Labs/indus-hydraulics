@@ -12,6 +12,13 @@ import { countryFromAddress, DEFAULT_COUNTRY_WEEKENDS } from '../calendar/weeken
 import { capWindow, defaultDailyCap, overCap } from './caps'
 import { aliasAllowed, allRecipients, normaliseEnvelope, OUTBOUND_HEADER } from './envelope'
 import {
+  attachmentName,
+  mayRoleSend,
+  rowForKind,
+  SENDING_RULE_ROWS,
+  THREAD_MODE_LABELS,
+} from './rule-rows'
+import {
   audienceForKind,
   nextSendSlot,
   tzForCountry,
@@ -678,5 +685,56 @@ describe('envelope', () => {
     expect(countryFromAddress('a@example.com')).toBeNull()
     expect(DEFAULT_COUNTRY_WEEKENDS.byCountry.SA).toEqual([5, 6])
     expect(OUTBOUND_HEADER).toBe('X-Indus-Outbound')
+  })
+})
+
+describe('board 87 rows and the send window choice', () => {
+  it('every board row maps to kinds; no kind sits in two rows', () => {
+    const kinds = SENDING_RULE_ROWS.flatMap((r) => r.kinds)
+    expect(SENDING_RULE_ROWS).toHaveLength(11)
+    expect(new Set(kinds).size).toBe(kinds.length)
+    expect(rowForKind('quotation_correction')?.label).toBe('Quotation and revisions')
+    expect(rowForKind('payment_reminder')?.key).toBe('invoice')
+    expect(rowForKind('other')).toBeUndefined()
+    expect([
+      mayRoleSend('client'),
+      mayRoleSend('supplier'),
+      mayRoleSend('read_only'),
+      mayRoleSend('personal'),
+    ]).toEqual([true, true, false, false])
+    expect(THREAD_MODE_LABELS.rfq_thread).toBe('The RFQ thread')
+  })
+
+  it('fills attachment name patterns safely', () => {
+    expect(attachmentName('INDUS-Q{n}.pdf', { n: '26941' })).toBe('INDUS-Q26941.pdf')
+    expect(attachmentName('IH-RFQ-{ref}.pdf', { ref: '2609-P12' })).toBe('IH-RFQ-2609-P12.pdf')
+    expect(attachmentName('INDUS/Q{n}.pdf', { n: '1' })).toBe('INDUS-Q1.pdf')
+    expect(attachmentName('', {})).toBe('attachment.pdf')
+  })
+
+  it('"Send immediately" sends client mail at the end of the hold, suppliers keep their morning', () => {
+    const friday = local('2026-11-20 20:00', 'Asia/Dubai')
+    const base = {
+      now: friday,
+      holidays: HOLIDAYS,
+      weekends: WEEKENDS,
+      rules: { ...RULES, clientWindow: 'immediately' as const },
+    }
+    expect(
+      nextSendSlot({
+        ...base,
+        kind: 'quotation',
+        audience: 'client',
+        recipient: { country: 'AE', tz: 'Asia/Dubai' },
+      }).reason
+    ).toBe('now')
+    expect(
+      nextSendSlot({
+        ...base,
+        kind: 'supplier_rfq',
+        audience: 'supplier',
+        recipient: { country: 'AE', tz: 'Asia/Dubai' },
+      }).reason
+    ).toBe('supplier_morning')
   })
 })
