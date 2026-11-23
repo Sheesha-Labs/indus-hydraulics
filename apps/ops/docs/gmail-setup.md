@@ -117,6 +117,26 @@ connect flow (`src/lib/gmail-connect-copy.ts`) say exactly this.
   Google, a bounded resync reads only what is missing. Nothing is read twice.
 - Removing the app from Trusted, or suspending the account, has the same effect and the same fix.
 
+## h2. Health and Sentry alerts (S04-T09)
+
+`ops.gmail.health` runs every 5 minutes against the database only (no Gmail call) and sets each mailbox's
+state: **Live** (a successful sync within 15 minutes, watch not expired), **Behind** (no successful sync for 30
+minutes, a watch error, a watch expiring within 24 hours, or dead letters when known), **Limit reached** (sends
+held for the daily cap), **Backfill paused**. Disconnected, Paused, Connecting and Resyncing are left to their own
+paths. Between 15 and 30 minutes nothing flips.
+
+Sentry (project `indus-operations`), tag `job: gmail.health`, tag `mailbox: sales@ | purchase@`:
+
+| Message | When | Suggested alert rule |
+|---|---|---|
+| `Gmail watch renewal failed` | any hour, while `mailbox_sync_state.watchError` is set | first seen + every 1 h while it repeats, email the Owner |
+| `No Gmail sync for 30 minutes` | desk hours only (UAE working day, 08:00–19:00 GST) | 3 events in 15 minutes, email the Owner |
+| `Gmail mailbox access lost` | Google refused the token (`invalid_grant` or a 401) | every event, email the Owner (the in-app notification is locked on) |
+| `ops_app connections above the alert line` | `/api/health` saw more than 12 ops_app connections | every event, email the Owner (ADR-04: the pooler is shared with the storefront) |
+
+`/api/health` (signed in) also lists every mailbox's status, last successful sync, lag and watch expiry, and the
+send queue (`scheduled`, `held`, `waitingForMailbox`, `unknown`). `/api/health/live` touches nothing.
+
 ## i. Decisions to record (fill in, date, initials)
 
 | Decision | Value | Date | By |

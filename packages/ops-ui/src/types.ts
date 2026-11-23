@@ -7,7 +7,8 @@ export type BarTone = 'acc' | 'ok' | 'warn' | 'bad' | 'navy'
 export type ChartTone = BarTone | 'n' | 'l' /* accent-line */
 export type Size3 = 'sm' | 'md' | 'lg'
 export type Actor = 'owner' | 'helper' | 'assistant' | 'ext'
-export type AssistantStatus = 'running' | 'paused' | 'disconnected' | 'unsure' | 'off'
+/** S04-T09 adds 'behind': a mailbox that is behind or at its daily sending limit (amber). */
+export type AssistantStatus = 'running' | 'paused' | 'disconnected' | 'behind' | 'unsure' | 'off'
 export type Confidence = 'Sure' | 'Likely' | 'Unsure'
 export type FileType = 'PDF' | 'XLS' | 'CSV' | 'DOC' | 'IMG' | 'MAIL'
 export type Ccy = 'AED' | 'USD' | 'EUR' | 'GBP' | 'CNY' | 'INR' | 'JPY'

@@ -1,4 +1,5 @@
 import { gmailBackfill } from './gmail/backfill'
+import { gmailHealth } from './gmail/health'
 import { gmailMessageFetch } from './gmail/message-fetch'
 import { gmailOnConnected } from './gmail/on-connected'
 import { gmailPoll } from './gmail/poll'
@@ -18,6 +19,7 @@ export const opsFunctions = [
   gmailWatchRenew,
   gmailMessageFetch,
   gmailBackfill,
+  gmailHealth,
   mailSend,
   mailSendReconcile,
   mailboxPurge,

@@ -14,6 +14,8 @@ export interface AssistantPillMenuProps {
   collapsed: boolean
   /** Owner only: "Pause everything" (the action is wired in S05). */
   onPause?: (() => void | Promise<void>) | undefined
+  /** Overrides the status word, e.g. "sales@ disconnected" naming the mailbox (S04-T09). */
+  label?: string | undefined
   className?: string
 }
 
@@ -22,6 +24,7 @@ const HALO: Record<AssistantStatus, string> = {
   running: 'ring-io-pill-ok-bg',
   paused: 'ring-io-warn-tint',
   disconnected: 'ring-io-bad-tint',
+  behind: 'ring-io-warn-tint',
   unsure: 'ring-io-warn-tint',
   off: 'ring-io-fill',
 }
@@ -36,9 +39,11 @@ export default function AssistantPillMenu({
   who,
   collapsed,
   onPause,
+  label,
   className,
 }: AssistantPillMenuProps) {
-  const pill = ASSISTANT_PILL[status]
+  const base = ASSISTANT_PILL[status]
+  const pill = label ? { ...base, label } : base
   const items: MenuEntry[] = []
   if (who === 'owner' && onPause)
     items.push(

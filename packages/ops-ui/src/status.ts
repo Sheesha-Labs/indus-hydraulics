@@ -387,6 +387,12 @@ export const ASSISTANT_PILL: Record<
     ink: 'text-io-bad',
     dot: 'bg-io-pill-bad-dot',
   },
+  behind: {
+    label: 'Mailbox behind',
+    bg: 'bg-io-warn-tint',
+    ink: 'text-io-pill-warn-ink',
+    dot: 'bg-io-pill-warn-dot',
+  },
   unsure: {
     label: 'Assistant · unsure',
     bg: 'bg-io-warn-tint',

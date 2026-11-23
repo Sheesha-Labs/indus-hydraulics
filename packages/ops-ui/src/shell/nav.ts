@@ -154,12 +154,13 @@ export function isSidebarCollapsed(cookieValue: string | undefined): boolean {
 }
 
 /**
- * Most severe first (C23 order, S08): a disconnected mailbox beats a pause, a pause beats an unsure
- * Assistant, and anything beats running. `off` (Autopilot switched off on purpose) ranks after unsure.
+ * Most severe first (C23 order, S08): a disconnected mailbox beats a pause, a pause beats a mailbox that is
+ * behind or at its sending limit (S04-T09), that beats an unsure Assistant, and anything beats running. `off` (Autopilot switched off on purpose) ranks after unsure.
  */
 export const ASSISTANT_SEVERITY: readonly AssistantStatus[] = [
   'disconnected',
   'paused',
+  'behind',
   'unsure',
   'off',
   'running',

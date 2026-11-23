@@ -1,4 +1,4 @@
-import { dateKey, nextDate, weekdayOf } from './zoned'
+import { dateKey, minutesOf, nextDate, wallTime, weekdayOf } from './zoned'
 
 /**
  * Working days per country (S04-T06): a day is working unless it is a weekend day for the country or a
@@ -79,4 +79,23 @@ export function ramadanWindow(
   const row = holidays.find((h) => h.country === country && h.date === key && h.kind === 'ramadan')
   if (!row) return null
   return { start: row.hoursStart ?? '10:00', end: row.hoursEnd ?? '15:00' }
+}
+
+/**
+ * Desk hours (S04-T09): a UAE working day from 08:00 to 19:00 GST. Health alerts that would wake nobody useful
+ * are held to these hours.
+ */
+export const DESK_HOURS: Readonly<{ start: string; end: string }> = { start: '08:00', end: '19:00' }
+
+export function isDeskHours(
+  now: Date,
+  holidays: readonly HolidayRow[],
+  weekends: WeekendTable,
+  hours: Readonly<{ start: string; end: string }> = DESK_HOURS
+): boolean {
+  const w = wallTime(now, 'Asia/Dubai')
+  const day = { year: w.year, month: w.month, day: w.day }
+  if (!isWorkingDay(day, 'AE', holidays, weekends)) return false
+  const minute = w.hour * 60 + w.minute
+  return minute >= minutesOf(hours.start) && minute < minutesOf(hours.end)
 }

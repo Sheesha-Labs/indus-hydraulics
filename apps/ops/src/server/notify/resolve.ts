@@ -9,3 +9,15 @@ export async function resolveNotifications(dedupeKey: string, now = new Date()):
   })
   return count
 }
+
+/** Resolve every open notification whose key starts with this prefix (e.g. a day-stamped limit notice). */
+export async function resolveNotificationsWithPrefix(
+  prefix: string,
+  now = new Date()
+): Promise<number> {
+  const { count } = await opsDb.notification.updateMany({
+    where: { dedupeKey: { startsWith: prefix }, resolvedAt: null },
+    data: { resolvedAt: now },
+  })
+  return count
+}

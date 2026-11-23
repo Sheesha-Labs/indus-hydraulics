@@ -27,6 +27,8 @@ export interface AppShellProps {
   collapsed: boolean
   /** Every current Assistant and mailbox state; the pill shows the worst (C23). */
   assistant: readonly AssistantStatus[]
+  /** S04-T09: the pill's words when a mailbox drives it ("sales@ disconnected"). */
+  assistantLabel?: string
   /** Helper only (ADR-05): "Website admin ↗" in the avatar menu. */
   websiteAdminHref?: string
   signOutAction: (formData: FormData) => void | Promise<void>
@@ -69,6 +71,7 @@ function ShellFrame({
   user,
   collapsed,
   assistant,
+  assistantLabel,
   websiteAdminHref,
   signOutAction,
   banners,
@@ -109,6 +112,7 @@ function ShellFrame({
             user={user}
             active={active}
             assistant={assistant}
+            {...(assistantLabel ? { assistantLabel } : {})}
             collapsed={collapsed}
             signOutAction={signOutAction}
             {...(websiteAdminHref ? { websiteAdminHref } : {})}

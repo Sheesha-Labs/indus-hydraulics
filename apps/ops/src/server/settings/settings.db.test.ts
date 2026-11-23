@@ -293,20 +293,21 @@ describe.skipIf(!DB_URL)('settings service · local database', () => {
     })
   })
 
+  // 'retention' is read by no other test (S04 send-queue tests read 'undo' in parallel).
   it('throws, logged, when a stored value no longer fits its schema', async () => {
-    const before = await db.settingsEntry.findUniqueOrThrow({ where: { key: 'undo' } })
+    const before = await db.settingsEntry.findUniqueOrThrow({ where: { key: 'retention' } })
     const spy = vi.spyOn(console, 'error').mockReturnValue(undefined)
     try {
       await db.settingsEntry.update({
-        where: { key: 'undo' },
-        data: { value: { sendWindowMinutes: 'five' } },
+        where: { key: 'retention' },
+        data: { value: { notAField: 'five' } },
       })
-      await expect(get.getSetting('undo')).rejects.toBeInstanceOf(get.InvalidSettingError)
+      await expect(get.getSetting('retention')).rejects.toBeInstanceOf(get.InvalidSettingError)
       expect(spy).toHaveBeenCalled()
     } finally {
       spy.mockRestore()
       await db.settingsEntry.update({
-        where: { key: 'undo' },
+        where: { key: 'retention' },
         data: { value: before.value as object },
       })
     }

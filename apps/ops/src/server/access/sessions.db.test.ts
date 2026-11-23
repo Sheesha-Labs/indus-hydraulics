@@ -162,6 +162,7 @@ describe.skipIf(!DB_URL)('sessions and devices · local database', () => {
     const mails = await db.outboundEmail.findMany({
       where: { toAddresses: { has: user.email }, kind: 'auth_security_notice' },
       select: { subject: true, bodyText: true, status: true },
+      orderBy: [{ createdAt: 'asc' }, { id: 'asc' }],
     })
     expect(mails).toHaveLength(3)
     expect(mails.every((m) => m.status === 'suppressed_preview')).toBe(true)

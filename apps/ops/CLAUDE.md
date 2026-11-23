@@ -356,6 +356,7 @@ function ships.
 | `ops.gmail.backfill` | `ops/gmail.backfill.requested`, `ops/gmail.backfill.continue` | mailbox · 1 | 5 | wait | S04 |
 | `ops.mail.send` | `ops/mail.send.requested`; cancelOn `ops/mail.send.cancelled` | mailbox · 1 | **0** | exempt (the gate holds) | S04 |
 | `ops.mail.send.reconcile` | cron `*/15 * * * *` | global · 1 | 2 | exempt | S04 |
+| `ops.gmail.health` | cron `*/5 * * * *` | global · 1 | 0 | exempt | S04 |
 | `ops.mailbox.purge` | `ops/mailbox.purge.requested` (continues itself past 400 batches) | global · 1 | 2 | exempt | S04 |
 
 ## 17. Assistant actions

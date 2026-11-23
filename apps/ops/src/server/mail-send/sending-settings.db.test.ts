@@ -66,15 +66,15 @@ describe.skipIf(!DB_URL)('mailbox and sending settings · local database', () =>
   })
 
   afterAll(async () => {
+    await db.settingsEntry.update({
+      where: { key: 'mail.test_allowlist' },
+      data: { value: { addresses: [] } },
+    })
     // Put every rule back as it was (rows are shared with the other files).
     for (const r of snapshot) {
       const { kind, updatedAt: _u, ...data } = r
       await db.sendingRule.update({ where: { kind }, data })
     }
-    await db.settingsEntry.update({
-      where: { key: 'mail.test_allowlist' },
-      data: { value: { addresses: [] } },
-    })
     storage.setStorageForTests(null)
     await cleanQueue(db, TAG)
     await db.$disconnect()
@@ -187,7 +187,9 @@ describe.skipIf(!DB_URL)('mailbox and sending settings · local database', () =>
         const out = await envelope.resolveSendEnvelope(rule.kind)
         expect(out.ok, rule.kind).toBe(true)
         if (!out.ok) continue
-        const box = await db.mailbox.findUniqueOrThrow({ where: { id: out.envelope.mailboxId } })
+        // Another file's mailbox may be the oldest of that role, and gone by the time we look.
+        const box = await db.mailbox.findUnique({ where: { id: out.envelope.mailboxId } })
+        if (!box) continue
         expect([rule.kind, box.role]).toEqual([rule.kind, rule.fromRole])
         expect(out.envelope.threadMode).toBe(rule.threadMode)
         expect(out.envelope.holdMinutes).toBeGreaterThan(0)
@@ -331,6 +333,10 @@ describe.skipIf(!DB_URL)('mailbox and sending settings · local database', () =>
 
   describe('test email', () => {
     it('refuses an address not on the test list; queues one on it, in the latest thread when asked', async () => {
+      await db.settingsEntry.update({
+        where: { key: 'mail.test_allowlist' },
+        data: { value: { addresses: [] } },
+      })
       await expect(
         testSend.sendTestEmail({
           userId: world.ownerId,

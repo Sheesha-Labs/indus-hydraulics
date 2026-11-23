@@ -6,11 +6,11 @@ structure, so they cannot disagree (ADR-14).
 
 Nothing is built here yet. The builders arrive with the features that issue each document:
 
-| Kind | Builder | Sprint |
-|---|---|---|
-| OA, PI, PO, PL, DN, tax invoice, credit note | `buildOa`, `buildPi`, `buildPo`, `buildPl`, `buildDn`, `buildInvoice`, `buildCreditNote` | S11 |
-| Supplier RFQ | `buildRfq(group)` | S12 |
-| Client quotation (Estimate layout) | `buildQuotation(estimate)` | S17 |
+| Kind                                         | Builder                                                                                  | Sprint |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------- | ------ |
+| OA, PI, PO, PL, DN, tax invoice, credit note | `buildOa`, `buildPi`, `buildPo`, `buildPl`, `buildDn`, `buildInvoice`, `buildCreditNote` | S11    |
+| Supplier RFQ                                 | `buildRfq(group)`                                                                        | S12    |
+| Client quotation (Estimate layout)           | `buildQuotation(estimate)`                                                               | S17    |
 
 Rules every builder follows:
 
