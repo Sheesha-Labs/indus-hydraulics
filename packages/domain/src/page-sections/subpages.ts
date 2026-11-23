@@ -64,7 +64,7 @@ export const SUBPAGE_KINDS: readonly SubPageKindDef[] = [
     publicPath: '/brands',
     adminPath: '/admin/pages/sub/brand',
     description:
-      'One page per partner brand, built from a shared template. Reorder its bands, hide the ones a brand has nothing to fill, and override any heading. The brand’s own facts — description, specialist, figures, case studies — are edited under Catalogue · Brands.',
+      'One page per brand, built from a shared template. Reorder its bands, hide the ones a brand has nothing to fill, and override any heading. The brand’s own facts — description, specialist, figures, case studies — are edited under Catalogue · Brands.',
     itemLabel: 'brand page',
   },
 ]

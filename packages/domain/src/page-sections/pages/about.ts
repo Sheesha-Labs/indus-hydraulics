@@ -41,7 +41,7 @@ export const ABOUT_PAGE: MasterPageDef = {
           { value: '{years} yrs', label: 'In business' },
           { value: '{skus}', label: 'Live SKUs' },
           { value: 'GCC', label: 'Service area' },
-          { value: '{brands}', label: 'Partner brands' },
+          { value: '{brands}', label: 'Brands · authorised distributor' },
         ],
       },
     },
