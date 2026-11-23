@@ -22,6 +22,16 @@ const tokenKeys = z.string().transform((raw, ctx) => {
   return z.NEVER
 })
 
+/** A secret of at least 32 bytes: base64 that decodes to ≥ 32 bytes, or a raw string of ≥ 32 characters. */
+const stateSecret = z.string().refine(
+  (raw) => {
+    if (raw.length >= 44 && /^[A-Za-z0-9+/=_-]+$/.test(raw))
+      return Buffer.from(raw, 'base64').length >= 32
+    return raw.length >= 32
+  },
+  { message: 'must be at least 32 bytes' }
+)
+
 const schema = z.object({
   DATABASE_URL: z.string().min(1).optional(),
   DIRECT_URL: z.string().min(1).optional(),
@@ -58,9 +68,42 @@ const schema = z.object({
   // S03-T07. Test only, refused in production: a local OIDC issuer (oauth2-mock-server) that stands in
   // for Google in e2e, so the real signIn callback (hd, email_verified, invite matching) is exercised.
   OPS_E2E_GOOGLE_ISSUER: z.string().url().optional(),
+  // S04-T01 (ADR-06, 08-map-integrations §1.4, docs/gmail-setup.md). Optional at boot (decision): production
+  // boots before Pub/Sub exists; without them the mailbox connect flow and the push endpoint refuse with a
+  // plain sentence and /api/health reports Gmail as not configured.
+  GMAIL_PUBSUB_TOPIC: z
+    .string()
+    .regex(/^projects\/[a-z0-9-]+\/topics\/[A-Za-z0-9._-]+$/)
+    .optional(),
+  GMAIL_PUSH_AUDIENCE: z.string().url().optional(),
+  GMAIL_PUSH_SA_EMAIL: z.string().email().optional(),
+  // HMAC key for the mailbox OAuth `state` (single-use, 10 minutes). At least 32 bytes once decoded.
+  OPS_STATE_SECRET: stateSecret.optional(),
+  // ops_maint through the transaction pooler (purge jobs only). Required in production from the sprint
+  // that ships the first purge job; optional until then.
+  OPS_MAINT_DATABASE_URL: z.string().min(1).optional(),
+  // Comma list of internal test addresses. Outside production every send to anyone else is recorded as
+  // suppressed_preview (ADR-07, ADR-31). REFUSED in production.
+  OPS_SEND_ALLOWLIST: z
+    .string()
+    .transform((raw, ctx) => {
+      const list = raw
+        .split(',')
+        .map((s) => s.trim().toLowerCase())
+        .filter(Boolean)
+      if (!list.every((e) => z.string().email().safeParse(e).success)) {
+        ctx.addIssue({ code: 'custom', message: 'must be a comma list of email addresses' })
+        return z.NEVER
+      }
+      return list
+    })
+    .optional(),
 })
 
 export type OpsEnv = z.infer<typeof schema>
+
+/** Every variable name the schema reads (kept in step with apps/ops/.env.example by env.test.ts). */
+export const ENV_NAMES = Object.keys(schema.shape) as (keyof OpsEnv)[]
 
 const PRODUCTION_REQUIRED = [
   'INNGEST_EVENT_KEY',
@@ -109,6 +152,7 @@ export function parseEnv(source: Record<string, string | undefined>): OpsEnv {
     if (env.OPS_E2E_MAIL_SINK) problems.push('OPS_E2E_MAIL_SINK must not be set in production')
     if (env.OPS_E2E_GOOGLE_ISSUER)
       problems.push('OPS_E2E_GOOGLE_ISSUER must not be set in production')
+    if (env.OPS_SEND_ALLOWLIST) problems.push('OPS_SEND_ALLOWLIST must not be set in production')
     if (env.OPS_SESSION_REVOCATION_TTL_MS !== undefined) {
       problems.push('OPS_SESSION_REVOCATION_TTL_MS must not be set in production')
     }
