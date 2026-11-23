@@ -33,6 +33,7 @@
     "react-dom": "19.2.4",
     "resend": "~6.37.0",
     "server-only": "^0.0.1",
+    "ua-parser-js": "~1.0.41",
     "zod": "^4.4.1"
   },
   "devDependencies": {

@@ -57,6 +57,7 @@ export const TEXT = {
   sessionEnded: (page: string) =>
     `Your session ended after 8 hours. Sign in again to return to ${page}.`,
   sessionRevoked: 'You were signed out from another device.',
+  reauth: 'Sign in again to change your password. It keeps your account safe.',
   expired: 'That sign-in took too long. Enter your password again.',
   passwordSaved:
     'Your new password is saved. Password sign-in also needs an authenticator app: continue with Google, then set one up in Settings › Security.',
@@ -77,6 +78,8 @@ export function signInNotice(
       return { tone: 'info', text: TEXT.sessionEnded(ctx.pageLabel) }
     case 'session_revoked':
       return { tone: 'info', text: TEXT.sessionRevoked }
+    case 'reauth':
+      return { tone: 'info', text: TEXT.reauth }
     case 'deactivated':
       return { tone: 'warn', text: TEXT.deactivated }
     case 'password_saved':

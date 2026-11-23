@@ -45,3 +45,25 @@ export function googleOnlyEmail(input: { signInUrl: string }): RenderedEmail {
     text: [...lines, input.signInUrl, 'Indus Operations'].join('\n\n'),
   }
 }
+
+/**
+ * New-device notice (S03-T02): the plan's sentence with the device, the city when known and the time in
+ * GST, and a link to Devices.
+ */
+export function newDeviceEmail(input: {
+  device: string
+  city: string | null
+  when: string
+  devicesUrl: string
+}): RenderedEmail {
+  const where = [input.device, input.city, input.when].filter(Boolean).join(', ')
+  const lines = [
+    `New sign-in to Indus Operations: ${where}.`,
+    "If this wasn't you, sign out that device in Settings › Team › Devices and change your password.",
+  ]
+  return {
+    subject: 'New sign-in to Indus Operations',
+    html: page(lines, { href: input.devicesUrl, label: 'Open Devices' }),
+    text: [...lines, input.devicesUrl, 'Indus Operations'].join('\n\n'),
+  }
+}

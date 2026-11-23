@@ -66,6 +66,12 @@ describe('parseEnv', () => {
     expect(
       thrown(() => parseEnv({ ...PRODUCTION, OPS_E2E_MAIL_SINK: join(tmpdir(), 'sink') }))
     ).toContain('OPS_E2E_MAIL_SINK')
+    expect(
+      thrown(() => parseEnv({ ...PRODUCTION, OPS_SESSION_REVOCATION_TTL_MS: '2000' }))
+    ).toContain('OPS_SESSION_REVOCATION_TTL_MS')
+    expect(parseEnv({ OPS_SESSION_REVOCATION_TTL_MS: '2000' }).OPS_SESSION_REVOCATION_TTL_MS).toBe(
+      2000
+    )
     // System mail is optional in production: without a key nothing is sent and rows say failed.
     expect(parseEnv(PRODUCTION).RESEND_OPS_API_KEY).toBeUndefined()
     expect(

@@ -3,6 +3,7 @@ import { getToken } from 'next-auth/jwt'
 import { opsCookieNames, secureCookiesEnabled } from './lib/auth-cookies'
 import { classify, isClientPage } from './lib/public-paths'
 import { safeNextPath } from './lib/safe-next-path'
+import { isSessionRevoked } from './lib/session-revocation'
 import { buildHeaders } from './lib/security-headers'
 
 /**
@@ -16,17 +17,16 @@ import { buildHeaders } from './lib/security-headers'
 const SECURE = secureCookiesEnabled()
 const SESSION_COOKIE = opsCookieNames(SECURE).session
 
-/**
- * Revoked sessions (Devices › Sign out). S03-T02 replaces this with a 60 s cache
- * over user_session; until then no session is revoked.
- */
-export async function isSessionRevoked(_sid: string | undefined): Promise<boolean> {
-  return false
-}
+type SessionState = 'ok' | 'none' | 'revoked'
 
-async function hasOpsSession(request: NextRequest): Promise<boolean> {
+/**
+ * A verified Ops token whose `sid` is not revoked. Revocation is read from a 60 s in-memory set
+ * (lib/session-revocation.ts): never one query per request. requireOpsUser re-checks the row on every
+ * page and action, so a revocation the cache has not seen yet is still refused there.
+ */
+async function sessionState(request: NextRequest): Promise<SessionState> {
   const secret = process.env.OPS_AUTH_SECRET
-  if (!secret) return false
+  if (!secret) return 'none'
   const token = await getToken({
     req: request,
     secret,
@@ -35,8 +35,19 @@ async function hasOpsSession(request: NextRequest): Promise<boolean> {
     salt: SESSION_COOKIE,
     secureCookie: SECURE,
   })
-  if (!token?.sub || token.kind !== 'ops') return false
-  return !(await isSessionRevoked(typeof token.sid === 'string' ? token.sid : undefined))
+  if (!token?.sub || token.kind !== 'ops' || typeof token.sid !== 'string') return 'none'
+  return (await isSessionRevoked(token.sid)) ? 'revoked' : 'ok'
+}
+
+function clearSessionCookie(res: NextResponse): NextResponse {
+  res.cookies.set(SESSION_COOKIE, '', {
+    httpOnly: true,
+    sameSite: 'lax',
+    path: '/',
+    secure: SECURE,
+    maxAge: 0,
+  })
+  return res
 }
 
 function nonce(): string {
@@ -62,28 +73,31 @@ export default async function proxy(request: NextRequest) {
   }
 
   const isProtected = kind === 'protected-page' || kind === 'protected-api'
-  if (isProtected && !(await hasOpsSession(request))) {
+  const state = isProtected ? await sessionState(request) : 'ok'
+  if (state === 'revoked') {
+    // Signed out from Devices (or by the Owner): say so, and drop the cookie that no longer works.
+    if (kind === 'protected-api') {
+      return done(
+        clearSessionCookie(NextResponse.json({ error: 'Sign in required' }, { status: 401 }))
+      )
+    }
+    const url = new URL('/sign-in', request.url)
+    url.searchParams.set('reason', 'session_revoked')
+    return done(clearSessionCookie(NextResponse.redirect(url, 307)))
+  }
+  if (state === 'none') {
     if (kind === 'protected-api') {
       return done(NextResponse.json({ error: 'Sign in required' }, { status: 401 }))
     }
     const url = new URL('/sign-in', request.url)
     const next = safeNextPath(pathname + search)
-    if (next && next !== '/') url.searchParams.set('next', next)
     // A session cookie that no longer verifies is a session that ended (8 hours, board 77 "Session
     // ended"). Say so once: the stale cookie is cleared with the redirect.
+    if (next && next !== '/') url.searchParams.set('next', next)
     const stale = request.cookies.has(SESSION_COOKIE)
     if (stale) url.searchParams.set('reason', 'session_ended')
     const res = NextResponse.redirect(url, 307)
-    if (stale) {
-      res.cookies.set(SESSION_COOKIE, '', {
-        httpOnly: true,
-        sameSite: 'lax',
-        path: '/',
-        secure: SECURE,
-        maxAge: 0,
-      })
-    }
-    return done(res)
+    return done(stale ? clearSessionCookie(res) : res)
   }
 
   // Next.js reads the nonce from the request's CSP header and applies it to the
