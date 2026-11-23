@@ -163,9 +163,11 @@ The Supavisor pooler is shared with the storefront and has failed three times. O
    `inngest.send` only; they never touch Prisma.
 4. **Never hold a connection across a model call.** Inngest functions do `load → step.run(ai) → step.run(write)`;
    the AI step takes and returns plain data.
-5. Every Inngest function is defined with `defineOpsFunction()`, which requires `concurrency` and a `pause`
-   behaviour. `src/inngest/concurrency.test.ts` sums the limits against `OPS_INNGEST_CONCURRENCY_CAP`
-   (`src/inngest/plan.ts`). A new function adds its row to that test and to §16 below.
+5. Every Inngest function is defined with `defineOpsFunction()`, which requires a `lane` (live / bulk / house,
+   `src/inngest/plan.ts`) and a `pause` behaviour, and may add one `perKey` limit inside the lane. The plan is the
+   free plan: 5 concurrent steps account-wide, shared with the website; the lanes (2 + 1 + 1) plus a website reserve
+   of 1 fit it (decision 2026-11-23, `docs/infra-decisions.md` §1). `src/inngest/concurrency.test.ts` checks every
+   function sits in one lane. A new function picks its lane and adds its row to §16 below; never a slot of its own.
 6. Bulk work runs in transactions of at most 500 rows with `step.sleep` between batches, and never within an hour of
    a storefront deploy or an IndexNow burst.
 7. `statement_timeout` 15 s on `ops_app`. Every list screen's `WHERE` / `ORDER BY` has an index in the migration
@@ -345,19 +347,20 @@ few minutes. Every function declares concurrency, retries, idempotency and pause
 `record_only`, `exempt`). The full planned catalogue is Appendix E of the prompt book; add a row here when a
 function ships.
 
-| Function | Trigger | Concurrency | Retries | Pause | Sprint |
+| Function | Trigger | Lane (+ per key) | Retries | Pause | Sprint |
 |---|---|---|---|---|---|
-| `ops.system.heartbeat` | cron `*/10 * * * *` | global · 1 | 0 | exempt | S00 |
-| `ops.mailbox.on-connected` | `ops/mailbox.connected`, `ops/mailbox.reconnected` | mailbox · 1 | 3 | exempt | S04 |
-| `ops.gmail.sync` | `ops/gmail.notified`, `ops/gmail.poll.tick` (debounce 3 s) | address · 1 | 3 | record_only | S04 |
-| `ops.gmail.poll` | cron `*/10 * * * *` | global · 1 | 1 | skip | S04 |
-| `ops.gmail.watch.renew` | cron `TZ=Asia/Dubai 10 3 * * *` | global · 1 | 3 | exempt | S04 |
-| `ops.gmail.message.fetch` | `ops/gmail.message.fetch` | mailbox · 2, global · 4 | 4 | exempt | S04 |
-| `ops.gmail.backfill` | `ops/gmail.backfill.requested`, `ops/gmail.backfill.continue` | mailbox · 1 | 5 | wait | S04 |
-| `ops.mail.send` | `ops/mail.send.requested`; cancelOn `ops/mail.send.cancelled` | mailbox · 1 | **0** | exempt (the gate holds) | S04 |
-| `ops.mail.send.reconcile` | cron `*/15 * * * *` | global · 1 | 2 | exempt | S04 |
-| `ops.gmail.health` | cron `*/5 * * * *` | global · 1 | 0 | exempt | S04 |
-| `ops.mailbox.purge` | `ops/mailbox.purge.requested` (continues itself past 400 batches) | global · 1 | 2 | exempt | S04 |
+| `ops.system.heartbeat` | cron `*/10 * * * *` | house | 0 | exempt | S00 |
+| `ops.mailbox.on-connected` | `ops/mailbox.connected`, `ops/mailbox.reconnected` | live + mailbox · 1 | 3 | exempt | S04 |
+| `ops.gmail.sync` | `ops/gmail.notified`, `ops/gmail.poll.tick` (debounce 3 s) | live + address · 1 | 3 | record_only | S04 |
+| `ops.gmail.poll` | cron `*/10 * * * *` | house | 1 | skip | S04 |
+| `ops.gmail.watch.renew` | cron `TZ=Asia/Dubai 10 3 * * *` | house | 3 | exempt | S04 |
+| `ops.gmail.message.fetch` | `ops/gmail.message.fetch` | live | 4 | exempt | S04 |
+| `ops.gmail.message.fetch.backfill` | `ops/gmail.message.fetch.backfill` | bulk | 4 | exempt | S04 |
+| `ops.gmail.backfill` | `ops/gmail.backfill.requested`, `ops/gmail.backfill.continue` | bulk | 5 | wait | S04 |
+| `ops.mail.send` | `ops/mail.send.requested`; cancelOn `ops/mail.send.cancelled` | live + mailbox · 1 | **0** | exempt (the gate holds) | S04 |
+| `ops.mail.send.reconcile` | cron `*/15 * * * *` | house | 2 | exempt | S04 |
+| `ops.gmail.health` | cron `*/5 * * * *` | house | 0 | exempt | S04 |
+| `ops.mailbox.purge` | `ops/mailbox.purge.requested` (continues itself past 400 batches) | bulk | 2 | exempt | S04 |
 
 ## 17. Assistant actions
 

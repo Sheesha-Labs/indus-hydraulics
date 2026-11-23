@@ -13,7 +13,7 @@ const MAX_BATCHES = 400
 export const mailboxPurge = defineOpsFunction(
   {
     id: 'ops.mailbox.purge',
-    concurrency: [{ limit: 1 }],
+    lane: 'bulk',
     retries: 2,
     pause: 'exempt',
   },

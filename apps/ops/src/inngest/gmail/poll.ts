@@ -27,7 +27,7 @@ export async function staleMailboxAddresses(now = new Date()): Promise<string[]>
 }
 
 export const gmailPoll = defineOpsFunction(
-  { id: 'ops.gmail.poll', concurrency: { limit: 1 }, retries: 1, pause: 'skip' },
+  { id: 'ops.gmail.poll', lane: 'house', retries: 1, pause: 'skip' },
   { cron: '*/10 * * * *' },
   async ({ step }) => {
     const addresses = await step.run('stale', () => staleMailboxAddresses())

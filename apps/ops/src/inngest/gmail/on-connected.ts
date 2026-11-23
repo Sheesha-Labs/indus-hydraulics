@@ -19,7 +19,8 @@ import { defineOpsFunction } from '../define'
 export const gmailOnConnected = defineOpsFunction(
   {
     id: 'ops.mailbox.on-connected',
-    concurrency: { key: 'event.data.mailboxId', limit: 1 },
+    lane: 'live',
+    perKey: { key: 'event.data.mailboxId', limit: 1 },
     retries: 3,
     pause: 'exempt',
   },

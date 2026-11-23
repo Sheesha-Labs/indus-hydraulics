@@ -1,13 +1,13 @@
 import { opsDb } from '@indus/ops-db'
-import { inngest } from './client'
+import { defineOpsFunction } from './define'
 
 /**
  * Proves the Inngest app is synced and running: every 10 minutes it stamps
  * settings_entry 'system.inngest_heartbeat'. /api/health reports the stamp. One
  * statement; no transaction held open.
  */
-export const heartbeat = inngest.createFunction(
-  { id: 'ops.system.heartbeat', concurrency: { limit: 1 }, retries: 0 },
+export const heartbeat = defineOpsFunction(
+  { id: 'ops.system.heartbeat', lane: 'house', retries: 0, pause: 'exempt' },
   { cron: 'TZ=Asia/Dubai */10 * * * *' },
   async () => {
     const at = new Date().toISOString()

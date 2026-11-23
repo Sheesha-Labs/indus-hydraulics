@@ -61,8 +61,10 @@ export function fetchEvent(
   gmailId: string,
   origin: 'live' | 'backfill'
 ): OpsEvent {
+  // Past mail queues in the bulk lane on its own event, so a 24-month import never delays new mail
+  // (inngest/plan.ts). The id is the same either way: one message is fetched once.
   return {
-    name: 'ops/gmail.message.fetch',
+    name: origin === 'backfill' ? 'ops/gmail.message.fetch.backfill' : 'ops/gmail.message.fetch',
     id: `${mailboxId}:${gmailId}`,
     data: { mailboxId, gmailId, origin },
   }

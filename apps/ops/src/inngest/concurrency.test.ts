@@ -4,11 +4,12 @@ import { describe, expect, it, vi } from 'vitest'
 vi.mock('@indus/ops-db', () => ({ opsDb: {} }))
 
 const { opsFunctions } = await import('./functions')
-const { OPS_INNGEST_CONCURRENCY_CAP } = await import('./plan')
+const { OPS_INNGEST_CONCURRENCY_CAP, OPS_LANES, WEBSITE_RESERVE, laneKey } = await import('./plan')
 
+type Constraint = { limit?: number; key?: string; scope?: string }
 type FnConfig = {
   id: string
-  concurrency?: { limit?: number } | Array<{ limit?: number }> | number
+  concurrency?: Constraint | Constraint[] | number
   triggers?: Array<{ event?: string; cron?: string }>
 }
 
@@ -44,22 +45,53 @@ describe('Ops Inngest functions', () => {
     expect(events.filter((e) => !e!.startsWith('ops/'))).toEqual([])
   })
 
-  it('the limits together fit the concurrency cap (upgrade Inngest or lower limits otherwise)', () => {
-    const total = configs.reduce((sum, c) => sum + (limitOf(c.concurrency) ?? 0), 0)
+  // Decision 2026-11-23 (docs/infra-decisions.md §1): the free plan's 5 concurrent steps are account-wide and
+  // shared with the website. Functions do not get slots of their own; each runs in one shared lane, and the
+  // lanes plus the website's reserve must fit the cap. This replaced "sum every function's limit".
+  it('every function runs in exactly one shared lane, at the lane’s limit', () => {
+    const lanes = new Map(
+      (Object.keys(OPS_LANES) as Array<keyof typeof OPS_LANES>).map((l) => [
+        laneKey(l),
+        OPS_LANES[l],
+      ])
+    )
+    const bad: string[] = []
+    const membership: Record<string, string[]> = {}
+    for (const c of configs) {
+      const list = Array.isArray(c.concurrency)
+        ? c.concurrency
+        : typeof c.concurrency === 'object'
+          ? [c.concurrency]
+          : []
+      const inLane = list.filter(
+        (x) => x.scope === 'env' && x.key !== undefined && lanes.has(x.key)
+      )
+      if (inLane.length !== 1) bad.push(`${c.id}: ${inLane.length} lanes`)
+      else if (inLane[0]!.limit !== lanes.get(inLane[0]!.key!))
+        bad.push(`${c.id}: lane limit differs`)
+      if (list.length > 2) bad.push(`${c.id}: more than two constraints`)
+      for (const x of list)
+        if (x !== inLane[0] && (!x.key || x.scope))
+          bad.push(`${c.id}: an extra limit must be per key`)
+      if (inLane[0]) (membership[inLane[0].key!] ??= []).push(c.id)
+    }
     console.info(
-      `Ops Inngest concurrency: ${total} simultaneous at most (cap ${OPS_INNGEST_CONCURRENCY_CAP}) — ` +
-        configs.map((c) => `${c.id} ${limitOf(c.concurrency)}`).join(', ')
+      `Ops Inngest lanes (cap ${OPS_INNGEST_CONCURRENCY_CAP}, website reserve ${WEBSITE_RESERVE}) — ` +
+        Object.entries(membership)
+          .map(([k, ids]) => `${k} ${lanes.get(k)}: ${ids.join(', ')}`)
+          .join(' | ')
     )
-    expect(total, 'upgrade Inngest or lower limits').toBeLessThanOrEqual(
-      OPS_INNGEST_CONCURRENCY_CAP
-    )
+    expect(bad).toEqual([])
   })
 
-  it('every function declares a pause behaviour (defineOpsFunction), except the S00 heartbeat', async () => {
+  it('the lanes and the website’s reserve fit the account-wide cap (upgrade Inngest or narrow a lane otherwise)', () => {
+    const total = Object.values(OPS_LANES).reduce((a, b) => a + b, 0) + WEBSITE_RESERVE
+    expect(total).toBeLessThanOrEqual(OPS_INNGEST_CONCURRENCY_CAP)
+  })
+
+  it('every function declares a pause behaviour (defineOpsFunction)', async () => {
     const { PAUSE_BEHAVIOUR } = await import('./define')
-    const missing = configs
-      .map((c) => c.id)
-      .filter((id) => id !== 'ops.system.heartbeat' && !PAUSE_BEHAVIOUR.has(id))
+    const missing = configs.map((c) => c.id).filter((id) => !PAUSE_BEHAVIOUR.has(id))
     expect(missing).toEqual([])
   })
 })

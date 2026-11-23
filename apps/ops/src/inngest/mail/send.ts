@@ -25,7 +25,8 @@ export const mailSend = defineOpsFunction(
   {
     id: 'ops.mail.send',
     retries: 0,
-    concurrency: [{ key: 'event.data.mailboxId', limit: 1 }],
+    lane: 'live',
+    perKey: { key: 'event.data.mailboxId', limit: 1 },
     cancelOn: [{ event: 'ops/mail.send.cancelled', match: 'data.outboundId' }],
     pause: 'exempt',
   },

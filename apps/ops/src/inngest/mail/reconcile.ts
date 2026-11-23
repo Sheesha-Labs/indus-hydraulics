@@ -11,7 +11,7 @@ export const mailSendReconcile = defineOpsFunction(
   {
     id: 'ops.mail.send.reconcile',
     retries: 2,
-    concurrency: [{ limit: 1 }],
+    lane: 'house',
     pause: 'exempt',
   },
   { cron: '*/15 * * * *' },

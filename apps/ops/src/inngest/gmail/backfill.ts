@@ -10,7 +10,7 @@ import { defineOpsFunction } from '../define'
 export const gmailBackfill = defineOpsFunction(
   {
     id: 'ops.gmail.backfill',
-    concurrency: { key: 'event.data.mailboxId', limit: 1 },
+    lane: 'bulk',
     retries: 5,
     pause: 'wait',
   },

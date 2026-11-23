@@ -13,7 +13,8 @@ import { defineOpsFunction } from '../define'
 export const gmailSync = defineOpsFunction(
   {
     id: 'ops.gmail.sync',
-    concurrency: { key: 'event.data.emailAddress', limit: 1 },
+    lane: 'live',
+    perKey: { key: 'event.data.emailAddress', limit: 1 },
     debounce: { key: 'event.data.emailAddress', period: '3s' },
     retries: 3,
     pause: 'record_only',

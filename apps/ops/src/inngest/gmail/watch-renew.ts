@@ -38,7 +38,7 @@ export async function renewWatch(
 }
 
 export const gmailWatchRenew = defineOpsFunction(
-  { id: 'ops.gmail.watch.renew', concurrency: { limit: 1 }, retries: 3, pause: 'exempt' },
+  { id: 'ops.gmail.watch.renew', lane: 'house', retries: 3, pause: 'exempt' },
   { cron: 'TZ=Asia/Dubai 10 3 * * *' },
   async ({ step }) => {
     const ids = await step.run('mailboxes', async () =>
