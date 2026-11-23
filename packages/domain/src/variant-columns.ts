@@ -357,6 +357,7 @@ export type LiftingDimensionKey =
   // named geometry
   | 'materialDia'
   | 'wireDia'
+  | 'coatedDia'
   | 'pinDia'
   | 'insideLength'
   | 'insideWidth'
@@ -1407,6 +1408,12 @@ export const LIFTING_GEOMETRY_COLUMNS: readonly VariantColumn[] = [
     help: 'Diameter of the link or bar stock.',
   },
   { key: 'wireDia', label: 'Wire dia.', unit: 'mm', help: 'Diameter of the individual wire.' },
+  {
+    key: 'coatedDia',
+    label: 'Coated dia.',
+    unit: 'mm',
+    help: 'Outside diameter over the plastic jacket. The size column is the steel rope inside it.',
+  },
   { key: 'pinDia', label: 'Pin dia.', unit: 'mm', help: 'Diameter of the pin or bolt.' },
   {
     key: 'insideLength',
@@ -2106,12 +2113,17 @@ export const QUALIFIER_LABELS: Readonly<Record<string, string>> = {
   fc: 'fibre core',
   iwrc: 'steel core',
   g1570: '1570 grade',
+  g1670: '1670 grade',
   g1770: '1770 grade',
+  g1870: '1870 grade',
   g1960: '1960 grade',
+  g2160: '2160 grade',
   g1570_fc: '1570 grade, fibre core',
   g1570_iwrc: '1570 grade, steel core',
   g1770_fc: '1770 grade, fibre core',
   g1770_iwrc: '1770 grade, steel core',
+  g1960_fc: '1960 grade, fibre core',
+  g1960_iwrc: '1960 grade, steel core',
   g1180_1770: '1180/1770 grade',
   g1320_1620: '1320/1620 grade',
   g1370_1570: '1370/1570 grade',

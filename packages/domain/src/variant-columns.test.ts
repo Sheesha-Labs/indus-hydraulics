@@ -776,6 +776,40 @@ describe('lifting tables', () => {
     for (const label of Object.values(QUALIFIER_LABELS)) expect(label.length).toBeGreaterThan(1)
   })
 
+  it('splits a rope breaking load across every wire grade, in grade order', () => {
+    const cols = variantDimensionColumns([
+      {
+        partNumber: 'r',
+        dimensions: {
+          size: '10 mm',
+          'mblKn@g2160': 75.6,
+          'mblKn@g1670': 60.12,
+          'mblKn@g1960': 70.56,
+          'mblKn@g1870': 67.32,
+          'mblKn@g1770': 63.72,
+        },
+      },
+    ])
+    expect(cols.map((c) => c.label)).toEqual([
+      'Min breaking load, 1670 grade',
+      'Min breaking load, 1770 grade',
+      'Min breaking load, 1870 grade',
+      'Min breaking load, 1960 grade',
+      'Min breaking load, 2160 grade',
+    ])
+  })
+
+  it('shows the diameter over a coated rope jacket', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'c', dimensions: { size: '4 mm', coatedDia: 5, 'mblKn@g1770': 9.41 } },
+    ])
+    expect(cols.map((c) => [c.key, c.label, c.unit])).toContainEqual([
+      'coatedDia',
+      'Coated dia.',
+      'mm',
+    ])
+  })
+
   it('carries lashing capacity as its own column', () => {
     const cols = variantDimensionColumns([
       { partNumber: 'l', dimensions: { size: '8 mm', lcKn: 50, mblKn: 100 } },
