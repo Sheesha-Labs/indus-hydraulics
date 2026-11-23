@@ -7,6 +7,7 @@ import FinishSetupBanner from '../../../components/setup/FinishSetupBanner'
 import Arrives from '../../../components/skeleton/Arrives'
 import { getFirstRunState } from '../../../data/setup'
 import { requireOpsUser } from '../../../lib/access'
+import { resolveLanding } from '../../../lib/landing'
 import { signInFor } from '../../../lib/page-access'
 
 /**
@@ -21,7 +22,16 @@ export default async function TodayPage() {
   const user = await requireOpsUser().catch(signInFor('/today'))
   const helper = user.role === 'helper'
   const firstRun = helper ? null : await getFirstRunState(user.id)
-  if (firstRun && !firstRun.welcomeSeen && !firstRun.progress.complete) redirect('/welcome')
+  if (
+    firstRun &&
+    resolveLanding({
+      role: 'owner',
+      welcomeSeen: firstRun.welcomeSeen,
+      setupDone: firstRun.progress.complete,
+    }) === '/welcome'
+  ) {
+    redirect('/welcome')
+  }
   const next = firstRun?.progress.next ?? null
   return (
     <T8Today

@@ -27,6 +27,8 @@ const EVIDENCE = process.env.OPS_EVIDENCE_DIR
 
 export default defineConfig({
   testDir: './tests/e2e',
+  // Mock Google issuer for the mocked-Google journeys (tests/google-mock.ts).
+  globalSetup: './tests/global-setup.ts',
   // Refreshes $OPS_EVIDENCE_DIR/visual/<sprint>/summary.md after a design-parity run (a no-op otherwise).
   globalTeardown: './tests/visual-design/teardown.ts',
   fullyParallel: true,
@@ -37,6 +39,15 @@ export default defineConfig({
   },
   projects: [
     { name: 'ops-e2e', testDir: './tests/e2e', use: chromium },
+    {
+      // S03 auth journeys that sign people out (password reset, saving a password) or lock them out, or
+      // that share the mock Google's claims file: serial, and only after the parallel suite has finished.
+      name: 'ops-e2e-auth',
+      testDir: './tests/e2e-auth',
+      fullyParallel: false,
+      dependencies: ['ops-e2e'],
+      use: chromium,
+    },
     {
       // Committed regression baselines, neutral fixtures only.
       name: 'ops-visual',
@@ -59,6 +70,11 @@ export default defineConfig({
         url: `${BASE_URL}/robots.txt`,
         reuseExistingServer: true,
         timeout: 120_000,
-        env: { APP_ENV: 'local', OPS_KIT: '1', OPS_E2E_AUTH: '1' },
+        env: {
+          APP_ENV: 'local',
+          OPS_KIT: '1',
+          OPS_E2E_AUTH: '1',
+          OPS_E2E_GOOGLE_ISSUER: 'http://localhost:8089',
+        },
       },
 })

@@ -8,7 +8,7 @@
     "start": "next start --port 3100",
     "typecheck": "bun check --no-script",
     "test": "bun test --parallel --isolate=modules --randomize",
-    "test:e2e": "playwright test --project=ops-e2e",
+    "test:e2e": "playwright test --project=ops-e2e --project=ops-e2e-auth",
     "test:visual": "playwright test --project=ops-visual",
     "test:visual:design": "playwright test --project=ops-visual-design"
   },
@@ -48,6 +48,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "jsdom": "^25",
+    "oauth2-mock-server": "9.2.0",
     "pixelmatch": "^8.0.0",
     "pngjs": "^7.0.0",
     "tailwindcss": "^4"

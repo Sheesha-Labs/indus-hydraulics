@@ -117,6 +117,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
       GOOGLE_OPS_CLIENT_ID: process.env.GOOGLE_OPS_CLIENT_ID,
       GOOGLE_OPS_CLIENT_SECRET: process.env.GOOGLE_OPS_CLIENT_SECRET,
       GOOGLE_WORKSPACE_DOMAIN: process.env.GOOGLE_WORKSPACE_DOMAIN,
+      OPS_E2E_GOOGLE_ISSUER: process.env.OPS_E2E_GOOGLE_ISSUER,
     },
     findActiveUserByEmail,
     authorizePassword
