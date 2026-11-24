@@ -162,8 +162,12 @@ export function lintPreferenceText(text: string, marginFloorPct = 12): string | 
     [/\b(pay|payment|transfer|wire|remit|refund)\b/, 'Preferences cannot move money.'],
   ]
   for (const [re, why] of rules) if (re.test(t)) return why
-  const margin = /\bmargin\b[^0-9]{0,30}(\d+(?:\.\d+)?)\s*%/.exec(t)
-  if (margin && Number(margin[1]) < marginFloorPct)
+  // "margin 3%", "margin on gaskets: 25%", and "a 3% margin" / "3 % markup".
+  const pcts = [
+    ...t.matchAll(/\b(?:margin|markup|mark-up)\b[^0-9%]{0,30}(\d+(?:\.\d+)?)\s*%/g),
+    ...t.matchAll(/(\d+(?:\.\d+)?)\s*%\s*(?:gross\s+)?(?:margin|markup|mark-up)\b/g),
+  ].map((m) => Number(m[1]))
+  if (pcts.some((n) => n < marginFloorPct))
     return `A margin under the ${marginFloorPct}% floor is not a preference.`
   return null
 }
@@ -185,19 +189,21 @@ export const PREFERENCE_KINDS = [
   'other',
 ] as const
 
-/** The model's answer for one group (learn-preferences@1). */
+/**
+ * The model's answer for one group (learn-preferences@1). Structured outputs accept no maxItems / length bounds
+ * and no free-form objects, so the schema is plain: `value` is a list of name/value pairs (valueRecord turns it
+ * into the stored object) and the limits are applied by the server after parsing (usableCandidates).
+ */
 export const learnedPreferencesSchema = z.object({
-  preferences: z
-    .array(
-      z.object({
-        scope: z.enum(PREFERENCE_SCOPES),
-        kind: z.enum(PREFERENCE_KINDS),
-        description: z.string().min(3).max(200),
-        value: z.record(z.string(), z.union([z.string(), z.number(), z.boolean(), z.null()])),
-        evidenceSignalIds: z.array(z.string()).max(50),
-      })
-    )
-    .max(3),
+  preferences: z.array(
+    z.object({
+      scope: z.enum(PREFERENCE_SCOPES),
+      kind: z.enum(PREFERENCE_KINDS),
+      description: z.string(),
+      value: z.array(z.object({ name: z.string(), value: z.string() })),
+      evidenceSignalIds: z.array(z.string()),
+    })
+  ),
 })
 export type LearnedPreferences = z.infer<typeof learnedPreferencesSchema>
 
@@ -255,4 +261,23 @@ export function rankPreferences(
 export function preferenceBlock(prefs: readonly Pick<ActivePreference, 'description'>[]): string {
   if (!prefs.length) return ''
   return [PREFERENCE_BLOCK_INTRO, ...prefs.map((p) => `- ${p.description}`)].join('\n')
+}
+
+/** The stored `value` object from the model's name/value pairs (at most 8, names ≤ 40 characters). */
+export function valueRecord(
+  pairs: ReadonlyArray<{ name: string; value: string }>
+): Record<string, string> {
+  const out: Record<string, string> = {}
+  for (const p of pairs.slice(0, 8)) {
+    const k = p.name.trim().slice(0, 40)
+    if (k) out[k] = p.value.slice(0, 200)
+  }
+  return out
+}
+
+/** The limits the schema cannot carry: at most three candidates, a 3–200 character sentence. */
+export function usableCandidates(out: LearnedPreferences): LearnedPreferences['preferences'] {
+  return out.preferences
+    .slice(0, 3)
+    .filter((p) => p.description.trim().length >= 3 && p.description.length <= 200)
 }

@@ -4,6 +4,8 @@ import {
   groupSignals,
   learnedPreferencesSchema,
   lintPreferenceText,
+  usableCandidates,
+  valueRecord,
   preferenceBlock,
   rankPreferences,
   type LearnedPreferences,
@@ -230,7 +232,7 @@ export async function writeLearned(
     data: {
       ...where,
       description: p.description,
-      value: p.value as Prisma.InputJsonValue,
+      value: valueRecord(p.value) as Prisma.InputJsonValue,
       source: 'learned',
       createdFrom: CREATED_FROM[group.kind] ?? 'edit',
       strength: occurrences,
@@ -301,7 +303,7 @@ export async function applyLearnBatches(
       for (const r of res.results!) {
         const g = byCustom.get(r.customId)
         if (!g || !r.ok) continue
-        for (const p of r.data.preferences) {
+        for (const p of usableCandidates(r.data)) {
           // Evidence must come from this group; anything else is not evidence.
           const evidence = p.evidenceSignalIds.filter((id) => g.signalIds.includes(id))
           if (!evidence.length) {

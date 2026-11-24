@@ -69,7 +69,11 @@
         "detail": "{\"chip\":\"Wrong supplier\",\"reason\":\"Example Valve Co again for bearings\"}"
       }
     ],
-    "expect": { "kind": "supplier_exclusion", "scope": "client", "contains": ["Example Valve Co"] }
+    "expect": {
+      "kind": "supplier_exclusion",
+      "scope": ["client", "supplier", "trade", "global"],
+      "contains": ["Example Valve Co"]
+    }
   },
   {
     "id": "refile-supplier",

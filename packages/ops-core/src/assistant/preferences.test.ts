@@ -69,6 +69,8 @@ describe('lint: never levels, approvals, checks, sending or money', () => {
     'Set chasers to Do quietly',
     'Auto-send quotations to this client',
     'Use margin 3% for traders',
+    'Apply a 3% margin on price quotations',
+    'Quote with a 4 % markup',
     'Pay the supplier before delivery',
     'Skip the review for small orders',
   ])('refuses "%s"', (text) => {

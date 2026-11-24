@@ -21,7 +21,7 @@ const RELEASED: Record<string, string> = {
   'ask-open-copy@1': 'c1ecd114a5aa013ab041776c68d92d62888b816d4ac9dea5134dc9d55fe405dc',
   'resend-alternate-contact@1': '957e3f85e14a162c8d2629c19910472c96eac09fe6c987942d64cf4372e2ba2f',
   'translate-mail@1': 'd4643fce28d6c1c47ef3efe359c8f22bac64c411e8980d8c510d6dd5a3abf32c',
-  'learn-preferences@1': '9ac91f3557c16486ef7d24dbac78cef8def57f021074a1134f9ece4195bd364d',
+  'learn-preferences@1': '4af52fc51f3b22016858511e83ab0373a16a6938c1957b527790b6ddf3a280e6',
 }
 
 describe('released prompts are byte-stable', () => {

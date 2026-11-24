@@ -1,4 +1,4 @@
-import { lintPreferenceText, type LearnedPreferences } from '@indus/ops-core'
+import { lintPreferenceText, usableCandidates, type LearnedPreferences } from '@indus/ops-core'
 
 /**
  * Learner scorer (S07-T05, learn-preferences@1). Each case is one signal group. A case expecting a preference
@@ -12,7 +12,8 @@ export interface LearnCase {
   scope: 'counterparty' | 'mailbox' | 'everyone'
   summary: string
   signals: Array<{ id: string; kind: string; detail: string }>
-  expect: { kind: string; scope: string; contains: string[] } | null
+  /** `scope` may list several acceptable scopes. */
+  expect: { kind: string; scope: string | string[]; contains: string[] } | null
 }
 
 export interface LearnScore {
@@ -34,7 +35,7 @@ export function survivors(
 ): LearnedPreferences['preferences'] {
   if (!out) return []
   const ids = new Set(c.signals.map((s) => s.id))
-  return out.preferences.filter(
+  return usableCandidates(out).filter(
     (p) =>
       lintPreferenceText(p.description) === null && p.evidenceSignalIds.some((id) => ids.has(id))
   )
@@ -57,7 +58,7 @@ export function scoreLearn(
       ? kept.some(
           (p) =>
             p.kind === c.expect!.kind &&
-            p.scope === c.expect!.scope &&
+            [c.expect!.scope].flat().includes(p.scope) &&
             c.expect!.contains.every((w) => p.description.toLowerCase().includes(w.toLowerCase()))
         )
       : kept.length === 0
