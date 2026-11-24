@@ -24,6 +24,8 @@ export type BannerSpec = {
   title: string
   text: string
   action?: { label: string; href: string }
+  /** The Owner's "Resume" on the paused banner (S05-T08): a button, not a link. */
+  resume?: boolean
   mailboxId?: string
 }
 
@@ -49,7 +51,14 @@ export type BannerMailbox = {
 
 export type BannerInput = {
   mailboxes: readonly BannerMailbox[]
-  assistantPause: { pausedAt: string; byInitials: string | null } | null
+  assistantPause: {
+    pausedAt: string
+    byInitials: string | null
+    /** The viewer paused it ("by you"). */
+    byYou?: boolean
+    /** The viewer may resume (the Owner). */
+    canResume?: boolean
+  } | null
   capReset: string
   now: Date
 }
@@ -85,13 +94,15 @@ const MAIL_OF_ROLE: Record<string, string> = {
 export function bannerSpecs(input: BannerInput): BannerSpec[] {
   const out: BannerSpec[] = []
   if (input.assistantPause) {
+    // Board 102 state 2 / S05A: the same banner on every page while paused.
+    const p = input.assistantPause
+    const by = p.byYou ? 'you' : (p.byInitials ?? 'the Owner')
     out.push({
       kind: 'assistant-paused',
       tone: 'warn',
-      title: `The Assistant is paused since ${clock(input.assistantPause.pausedAt)}${
-        input.assistantPause.byInitials ? ` by ${input.assistantPause.byInitials}` : ''
-      }.`,
-      text: 'Mail keeps arriving in Gmail; nothing is lost. Queued sends wait until it resumes.',
+      title: `Assistant paused by ${by} at ${clock(p.pausedAt)}.`,
+      text: `Nothing is read or sent until ${p.canResume ? 'you resume' : 'it resumes'}. Mail keeps arriving in Gmail.`,
+      ...(p.canResume ? { resume: true } : {}),
     })
   }
   for (const m of input.mailboxes) {

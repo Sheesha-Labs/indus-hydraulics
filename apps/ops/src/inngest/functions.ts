@@ -1,3 +1,4 @@
+import { assistantOnResumed } from './assistant/on-resumed'
 import { assistantRun } from './assistant/run'
 import { gmailBackfill } from './gmail/backfill'
 import { gmailHealth } from './gmail/health'
@@ -29,6 +30,7 @@ export const opsFunctions = [
   mailSendReconcile,
   mailboxPurge,
   assistantRun,
+  assistantOnResumed,
   mailRoute,
   mailBounceSoft,
   gmailLabelsApply,

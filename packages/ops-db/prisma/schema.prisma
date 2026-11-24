@@ -5641,6 +5641,7 @@ model AssistantAction {
   @@index([subjectType, subjectId])
   @@index([undoUntil])
   @@index([surface, state, createdAt])
+  @@index([createdAt(sort: Desc)], map: "assistant_action_createdAt_idx")
   @@map("assistant_action")
   @@schema("ops")
 }

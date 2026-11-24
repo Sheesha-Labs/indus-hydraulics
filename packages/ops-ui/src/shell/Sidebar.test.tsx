@@ -120,20 +120,34 @@ describe('Sidebar · Assistant pill', () => {
     expect(pill).toHaveTextContent('Paused by you')
   })
 
-  it('opens Pause everything for the Owner and only Autopilot → for the Helper', async () => {
+  it('opens Pause everything for the Owner and only the state for the Helper', async () => {
     const onPause = vi.fn<() => void>()
-    const { unmount } = render(<Sidebar {...props({ onPause })} />)
+    const { unmount } = render(
+      <Sidebar {...props({ onPause, assistantSummary: '37 actions this week · last 2 min ago' })} />
+    )
     await userEvent.click(screen.getByRole('button', { name: 'Assistant · running' }))
-    await userEvent.click(screen.getByRole('menuitem', { name: 'Pause everything' }))
+    expect(screen.getByText('37 actions this week · last 2 min ago')).toBeInTheDocument()
+    await userEvent.click(screen.getByRole('button', { name: 'Pause everything' }))
     expect(onPause).toHaveBeenCalledOnce()
     unmount()
     render(<Sidebar {...props({ user: HELPER, onPause })} />)
     await userEvent.click(screen.getByRole('button', { name: 'Assistant · running' }))
-    expect(screen.queryByRole('menuitem', { name: 'Pause everything' })).toBeNull()
-    expect(screen.getByRole('menuitem', { name: 'Autopilot →' })).toHaveAttribute(
+    expect(screen.queryByRole('button', { name: 'Pause everything' })).toBeNull()
+    expect(
+      screen.getByText('Only the Owner can pause or resume the Assistant.')
+    ).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Open Autopilot/ })).toHaveAttribute(
       'href',
       '/assistant/autopilot'
     )
+  })
+
+  it('offers Resume to the Owner while paused', async () => {
+    const onResume = vi.fn<() => void>()
+    render(<Sidebar {...props({ assistant: ['running', 'paused'], onResume })} />)
+    await userEvent.click(screen.getByRole('button', { name: 'Paused by you' }))
+    await userEvent.click(screen.getByRole('button', { name: 'Resume' }))
+    expect(onResume).toHaveBeenCalledOnce()
   })
 })
 

@@ -123,11 +123,18 @@ export async function helperSetupBanner(): Promise<SystemBanner | null> {
  * state maps to red (disconnected, token expired, revoked), amber (behind, limit reached) or paused, and the
  * pause row adds 'paused'; the label names the mailbox behind the worst state. One small query.
  */
-export async function getShellAssistantStates(): Promise<{ states: AssistantStatus[]; label?: string }> {
-  const [rows, pause] = await Promise.all([
+export async function getShellAssistantStates(
+  viewer?: { id: string },
+  now = new Date()
+): Promise<{ states: AssistantStatus[]; label?: string; summary?: string }> {
+  const [rows, pause, activity] = await Promise.all([
     opsDb.mailbox.findMany({ select: { address: true, status: true }, orderBy: { createdAt: 'asc' } }),
     assistantPauseState(),
+    weekActivity(now),
   ])
+  const summary = `${activity.week} ${activity.week === 1 ? 'action' : 'actions'} this week${
+    activity.last ? ` · last ${agoText(activity.last, now)}` : ''
+  }`
   const states: AssistantStatus[] = ['running']
   if (pause) states.push('paused')
   const flagged = rows
@@ -136,8 +143,40 @@ export async function getShellAssistantStates(): Promise<{ states: AssistantStat
   states.push(...flagged.map((f) => f.pill))
   const worst = worstAssistantStatus(states)
   const culprit = flagged.find((f) => f.pill === worst)
-  if (!culprit || (worst === 'paused' && pause)) return { states }
+  if (worst === 'paused' && pause) {
+    // "Paused by you" is the pill's own word; anyone else sees who paused it.
+    if (viewer && pause.pausedById && pause.pausedById !== viewer.id) {
+      const by = await opsDb.user.findUnique({ where: { id: pause.pausedById }, select: { initials: true } })
+      return { states, label: `Paused by ${by?.initials ?? 'the Owner'}`, summary }
+    }
+    return { states, summary }
+  }
+  if (!culprit) return { states, summary }
   const local = `${culprit.address.split('@')[0]}@`
   const words = { disconnected: 'disconnected', behind: 'behind', paused: 'paused' }[culprit.pill]
-  return { states, label: `${local} ${words}` }
+  return { states, label: `${local} ${words}`, summary }
+}
+
+/** The pill popover's numbers, cached per process for a minute (the layout runs on every page). */
+let activityCache: { at: number; week: number; last: Date | null } | null = null
+async function weekActivity(now: Date): Promise<{ week: number; last: Date | null }> {
+  if (activityCache && now.getTime() - activityCache.at < 60_000) return activityCache
+  const [week, last] = await Promise.all([
+    opsDb.assistantAction.count({
+      where: { createdAt: { gte: new Date(now.getTime() - 7 * 86_400_000) } },
+    }),
+    opsDb.assistantAction.findFirst({ orderBy: { createdAt: 'desc' }, select: { createdAt: true } }),
+  ])
+  activityCache = { at: now.getTime(), week, last: last?.createdAt ?? null }
+  return activityCache
+}
+
+function agoText(at: Date, now: Date): string {
+  const min = Math.max(0, Math.round((now.getTime() - at.getTime()) / 60_000))
+  if (min < 1) return 'just now'
+  if (min < 60) return `${min} min ago`
+  const h = Math.round(min / 60)
+  if (h < 24) return `${h} h ago`
+  const d = Math.round(h / 24)
+  return `${d} ${d === 1 ? 'day' : 'days'} ago`
 }

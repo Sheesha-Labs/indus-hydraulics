@@ -81,7 +81,8 @@ describe.skipIf(!DB_URL)('send queue · local database', () => {
 
   /** What ops.mail.send does after the hold, without Inngest: gate then send once. */
   async function runSend(id: string) {
-    const g = await gate.sendGate(id, { env: PROD })
+    // Pause is a shared row (pause.db.test toggles it): this file tests the rest of the gate.
+    const g = await gate.sendGate(id, { env: PROD, isPaused: async () => false })
     if (g.kind !== 'go') return { gate: g }
     return { gate: g, result: await once.sendOnce(id, sendDeps()) }
   }

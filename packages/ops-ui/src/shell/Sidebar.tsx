@@ -24,6 +24,10 @@ export interface SidebarProps {
   signOutAction: (formData: FormData) => void | Promise<void>
   /** Owner only: "Pause everything" in the pill menu (wired in S05). A server action or a client callback. */
   onPause?: () => void | Promise<void>
+  /** Owner only, while paused: "Resume" in the pill popover (S05-T08). */
+  onResume?: () => void | Promise<void>
+  /** The pill popover's summary line, e.g. "37 actions this week · last 2 min ago". */
+  assistantSummary?: string
   /** Opens the command bar; otherwise the `ShellLiveProvider`'s `openCommand` is used. Client parents only. */
   onOpenCommand?: () => void
   /**
@@ -54,6 +58,8 @@ export default function Sidebar({
   websiteAdminHref,
   signOutAction,
   onPause,
+  onResume,
+  assistantSummary,
   onOpenCommand,
   logo,
   persist = true,
@@ -71,6 +77,8 @@ export default function Sidebar({
       websiteAdminHref={user.role === 'helper' ? websiteAdminHref : undefined}
       signOutAction={signOutAction}
       onPause={user.role === 'owner' ? onPause : undefined}
+      onResume={user.role === 'owner' ? onResume : undefined}
+      assistantSummary={assistantSummary}
       onOpenCommand={onOpenCommand}
       logo={logo ?? <LogoPlaceholder />}
       persist={persist}

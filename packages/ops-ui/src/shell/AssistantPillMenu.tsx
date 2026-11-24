@@ -1,7 +1,9 @@
 'use client'
 
+import { useState } from 'react'
+import Button from '../controls/Button'
 import { cn } from '../lib/cn'
-import Menu, { type MenuEntry } from '../overlay/Menu'
+import Popover from '../overlay/Popover'
 import { ASSISTANT_PILL } from '../status'
 import type { AssistantStatus } from '../types'
 import { AUTOPILOT_HREF } from './nav'
@@ -12,8 +14,12 @@ export interface AssistantPillMenuProps {
   /** Who is signed in: only the Owner may pause. */
   who: 'owner' | 'helper'
   collapsed: boolean
-  /** Owner only: "Pause everything" (the action is wired in S05). */
+  /** Owner only: "Pause everything" (S05-T08). */
   onPause?: (() => void | Promise<void>) | undefined
+  /** Owner only, while paused: "Resume" (S05-T08). */
+  onResume?: (() => void | Promise<void>) | undefined
+  /** The popover's line under the title, e.g. "37 actions this week · last 2 min ago". */
+  summary?: string | undefined
   /** Overrides the status word, e.g. "sales@ disconnected" naming the mailbox (S04-T09). */
   label?: string | undefined
   className?: string
@@ -29,34 +35,46 @@ const HALO: Record<AssistantStatus, string> = {
   off: 'ring-io-fill',
 }
 
+const TITLE: Record<AssistantStatus, string> = {
+  running: 'Assistant running',
+  paused: 'Assistant paused',
+  disconnected: 'A mailbox is disconnected',
+  behind: 'Mail is behind',
+  unsure: 'Some items are unsure',
+  off: 'Assistant off',
+}
+
 /**
- * The sidebar's Assistant status pill (h 32, "Autopilot →") or, collapsed, its 12px dot with a 4px halo. It
- * is a menu button named by the status word: it opens "Pause everything" (Owner only) and a link to
- * Autopilot (board 98).
+ * The sidebar's Assistant status pill (h 32, "Autopilot →") or, collapsed, its 12px dot with a 4px halo. One
+ * click opens a popover (S05A, board 102 state 1): the state, a summary line, then for the Owner "Pause
+ * everything" (or "Resume" while paused) and "Open Autopilot". The Helper sees the state only.
  */
 export default function AssistantPillMenu({
   status,
   who,
   collapsed,
   onPause,
+  onResume,
+  summary,
   label,
   className,
 }: AssistantPillMenuProps) {
   const base = ASSISTANT_PILL[status]
   const pill = label ? { ...base, label } : base
-  const items: MenuEntry[] = []
-  if (who === 'owner' && onPause)
-    items.push(
-      {
-        type: 'item',
-        label: 'Pause everything',
-        onSelect: () => {
-          void onPause()
-        },
-      },
-      { type: 'separator' }
-    )
-  items.push({ type: 'item', label: 'Autopilot →', href: AUTOPILOT_HREF })
+  const [open, setOpen] = useState(false)
+  const [busy, setBusy] = useState(false)
+  const paused = status === 'paused'
+  const act = paused ? onResume : onPause
+  async function run() {
+    if (!act) return
+    setBusy(true)
+    try {
+      await act()
+      setOpen(false)
+    } finally {
+      setBusy(false)
+    }
+  }
   const trigger = collapsed ? (
     <button
       type="button"
@@ -95,5 +113,34 @@ export default function AssistantPillMenu({
       </span>
     </button>
   )
-  return <Menu trigger={trigger} items={items} width={200} />
+  return (
+    <Popover
+      trigger={trigger}
+      title={TITLE[status]}
+      width={280}
+      side="top"
+      open={open}
+      onOpenChange={setOpen}
+      action={{ label: 'Open Autopilot', href: AUTOPILOT_HREF }}
+    >
+      <div className="flex flex-col gap-2.5">
+        {summary ? <p className="text-io-ink-3 m-0 text-[12.5px]">{summary}</p> : null}
+        {who === 'owner' && act ? (
+          <Button
+            variant={paused ? 'secondary' : 'danger'}
+            size="sm"
+            busy={busy}
+            onClick={() => void run()}
+            className="w-full justify-center"
+          >
+            {paused ? 'Resume' : 'Pause everything'}
+          </Button>
+        ) : who === 'helper' ? (
+          <p className="text-io-ink-3 m-0 text-[12px]">
+            Only the Owner can pause or resume the Assistant.
+          </p>
+        ) : null}
+      </div>
+    </Popover>
+  )
 }

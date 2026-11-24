@@ -1,6 +1,8 @@
 import 'server-only'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import { emitEvent } from '../../inngest/emit'
+import { raiseNotification } from '../notify/raise'
+import { resolveNotifications } from '../notify/resolve'
 import { settingSubjectId } from '../settings/subject-id'
 
 /**
@@ -67,9 +69,17 @@ async function audit(
  * Pause the Assistant. Idempotent: pausing while paused changes nothing and returns the existing pause.
  * Owner-only is enforced by the calling action (S05-T08).
  */
+/**
+ * `defer` runs the follow-ups (events, the locked notification) after the response when the caller is a
+ * server action (next/server `after`); by default they are awaited.
+ */
+type Defer = (work: () => Promise<void>) => void | Promise<void>
+const now_: Defer = (work) => work()
+
 export async function pauseAssistant(
   userId: string,
-  note?: string | null
+  note?: string | null,
+  defer: Defer = now_
 ): Promise<{ pausedAt: Date; changed: boolean }> {
   const out = await opsDb.$transaction(async (tx) => {
     const now = new Date()
@@ -95,20 +105,37 @@ export async function pauseAssistant(
   })
   cached = null
   if (out.changed) {
-    await emitEvent({
-      name: 'ops/assistant.paused',
-      data: { at: out.pausedAt.toISOString(), byId: userId },
+    await defer(async () => {
+      await emitEvent({
+        name: 'ops/assistant.paused',
+        data: { at: out.pausedAt.toISOString(), byId: userId },
+      })
+      // The locked notification (C22): to everyone, never muted; resolved by resume.
+      await raiseNotification({
+        event: 'assistant_paused',
+        severity: 'critical',
+        title: 'The Assistant is paused',
+        body: 'Nothing is read, drafted or sent until it resumes. Mail keeps arriving in Gmail; nothing is lost.',
+        dedupeKey: PAUSED_KEY,
+        actionUrl: '/today',
+        subjectType: 'settings',
+        subjectId: SUBJECT,
+        audience: 'all',
+      })
     })
   }
   return out
 }
+
+export const PAUSED_KEY = 'assistant_paused'
 
 /**
  * Resume. Idempotent. Emits `ops/assistant.resumed` (event id per resume), which releases every run waiting
  * in defineOpsFunction's `wait` behaviour and the runner's paused step; the send gate re-gates held sends.
  */
 export async function resumeAssistant(
-  userId: string
+  userId: string,
+  defer: Defer = now_
 ): Promise<{ resumedAt: Date; changed: boolean }> {
   const out = await opsDb.$transaction(async (tx) => {
     const now = new Date()
@@ -134,10 +161,13 @@ export async function resumeAssistant(
   })
   cached = null
   if (out.changed) {
-    await emitEvent({
-      name: 'ops/assistant.resumed',
-      id: `assistant-resumed-${out.version}`,
-      data: { at: out.resumedAt.toISOString(), byId: userId },
+    await defer(async () => {
+      await emitEvent({
+        name: 'ops/assistant.resumed',
+        id: `resume:${out.resumedAt.toISOString()}`,
+        data: { at: out.resumedAt.toISOString(), byId: userId },
+      })
+      await resolveNotifications(PAUSED_KEY)
     })
   }
   return { resumedAt: out.resumedAt, changed: out.changed }

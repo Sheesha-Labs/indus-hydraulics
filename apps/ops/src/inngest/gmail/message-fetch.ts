@@ -66,13 +66,13 @@ async function fetchOne({ event, step }: OpsHandlerContext, origin: Origin) {
 }
 
 export const gmailMessageFetch = defineOpsFunction(
-  { id: 'ops.gmail.message.fetch', lane: 'live', retries: 4, pause: 'exempt' },
+  { id: 'ops.gmail.message.fetch', lane: 'live', retries: 4, pause: 'wait' },
   { event: 'ops/gmail.message.fetch' },
   (ctx) => fetchOne(ctx, 'live')
 )
 
 export const gmailBackfillFetch = defineOpsFunction(
-  { id: 'ops.gmail.message.fetch.backfill', lane: 'bulk', retries: 4, pause: 'exempt' },
+  { id: 'ops.gmail.message.fetch.backfill', lane: 'bulk', retries: 4, pause: 'wait' },
   { event: 'ops/gmail.message.fetch.backfill' },
   (ctx) => fetchOne(ctx, 'backfill')
 )

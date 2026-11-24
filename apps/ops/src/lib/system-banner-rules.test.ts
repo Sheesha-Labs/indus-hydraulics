@@ -21,7 +21,12 @@ const box = (over: Partial<BannerMailbox>): BannerMailbox => ({
 })
 const specs = (
   mailboxes: BannerMailbox[],
-  pause: { pausedAt: string; byInitials: string | null } | null = null
+  pause: {
+    pausedAt: string
+    byInitials: string | null
+    byYou?: boolean
+    canResume?: boolean
+  } | null = null
 ) => bannerSpecs({ mailboxes, assistantPause: pause, capReset: '04:00', now: NOW })
 
 describe('board 89 banners', () => {
@@ -138,5 +143,27 @@ describe('board 89 banners', () => {
     expect(all.find((s) => s.kind === 'mailbox-disconnected')?.text).toBe(
       'The Assistant can’t read this mailbox.'
     )
+  })
+
+  it('Assistant paused (board 102 state 2): by you with Resume for the Owner; by KB, no Resume, for the Helper', () => {
+    expect(
+      specs([], {
+        pausedAt: '2026-11-23T04:50:00Z',
+        byInitials: 'KB',
+        byYou: true,
+        canResume: true,
+      })[0]
+    ).toMatchObject({
+      kind: 'assistant-paused',
+      title: 'Assistant paused by you at 08:50.',
+      text: 'Nothing is read or sent until you resume. Mail keeps arriving in Gmail.',
+      resume: true,
+    })
+    const helper = specs([], { pausedAt: '2026-11-23T04:50:00Z', byInitials: 'KB' })[0]
+    expect(helper).toMatchObject({
+      title: 'Assistant paused by KB at 08:50.',
+      text: 'Nothing is read or sent until it resumes. Mail keeps arriving in Gmail.',
+    })
+    expect(helper?.resume).toBeUndefined()
   })
 })

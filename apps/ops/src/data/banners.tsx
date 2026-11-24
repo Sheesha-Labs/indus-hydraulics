@@ -2,6 +2,7 @@ import 'server-only'
 import { opsDb } from '@indus/ops-db'
 import { BannerAction, type SystemBanner } from '@indus/ops-ui/status'
 import type { OpsUser } from '../lib/access-core'
+import ResumeBannerAction from '../components/shell/ResumeBannerAction'
 import { bannerSpecs, type BannerMailbox, type BannerSpec } from '../lib/system-banner-rules'
 import { assistantPauseState } from '../server/assistant/pause'
 import { sentInCapDay } from '../server/mail-send/slot'
@@ -13,7 +14,7 @@ import { getSetting } from '../server/settings/get'
  * setting from the settings cache. The shell shows the most severe banner with "+n more".
  */
 export async function getSystemBanners(
-  user: Pick<OpsUser, 'id' | 'initials'>,
+  user: Pick<OpsUser, 'id' | 'initials'> & { role?: OpsUser['role'] },
   now = new Date()
 ): Promise<SystemBanner[]> {
   const since = new Date(now.getTime() - 24 * 3_600_000)
@@ -75,12 +76,19 @@ export async function getSystemBanners(
     sentToday: sentInCapDay(r.syncState ?? null, now, timing.capReset),
     dailySendCap: r.dailySendCap,
   }))
+  const byYou = !!pause && pause.pausedById === user.id
+  const pauser =
+    pause && !byYou && pause.pausedById
+      ? await opsDb.user.findUnique({ where: { id: pause.pausedById }, select: { initials: true } })
+      : null
   const specs = bannerSpecs({
     mailboxes,
     assistantPause: pause
       ? {
           pausedAt: pause.pausedAt,
-          byInitials: pause.pausedById === user.id ? user.initials : null,
+          byInitials: byYou ? user.initials : (pauser?.initials ?? null),
+          byYou,
+          canResume: user.role === 'owner',
         }
       : null,
     capReset: timing.capReset,
@@ -96,9 +104,11 @@ export function toBanner(spec: BannerSpec): SystemBanner {
       tone: spec.tone,
       title: spec.title,
       children: spec.text,
-      ...(spec.action
-        ? { actions: <BannerAction href={spec.action.href}>{spec.action.label}</BannerAction> }
-        : {}),
+      ...(spec.resume
+        ? { actions: <ResumeBannerAction /> }
+        : spec.action
+          ? { actions: <BannerAction href={spec.action.href}>{spec.action.label}</BannerAction> }
+          : {}),
     },
   }
 }

@@ -44,6 +44,26 @@ export type OpsHandlerContext = {
   attempt: number
 }
 
+/**
+ * What a run does about "Pause everything" before its handler (S05-T08): exempt runs never look; skip returns;
+ * wait sleeps on ops/assistant.resumed (7 days at most, then runs); record_only runs with `paused: true`.
+ */
+export async function applyPause(
+  pause: PauseBehaviour,
+  step: Pick<Step, 'run' | 'waitForEvent'>,
+  isPaused: () => Promise<boolean> = isAssistantPaused
+): Promise<{ skip: boolean; recordOnly: boolean }> {
+  if (pause === 'exempt') return { skip: false, recordOnly: false }
+  const paused = await step.run('pause-check', () => isPaused())
+  if (!paused) return { skip: false, recordOnly: false }
+  if (pause === 'skip') return { skip: true, recordOnly: false }
+  if (pause === 'wait') {
+    await step.waitForEvent('wait-for-resume', { event: 'ops/assistant.resumed', timeout: '7d' })
+    return { skip: false, recordOnly: false }
+  }
+  return { skip: false, recordOnly: true }
+}
+
 /** Registry of pause behaviours by function id (concurrency.test.ts and the §16 table check it). */
 export const PAUSE_BEHAVIOUR = new Map<string, PauseBehaviour>()
 
@@ -63,19 +83,9 @@ export function defineOpsFunction<T>(
         runId: string
         attempt: number
       }
-      let paused = false
-      if (pause !== 'exempt') {
-        paused = await step.run('pause-check', () => isAssistantPaused())
-        if (paused && pause === 'skip') return { skipped: 'paused' } as unknown as T
-        if (paused && pause === 'wait') {
-          await step.waitForEvent('wait-for-resume', {
-            event: 'ops/assistant.resumed',
-            timeout: '7d',
-          })
-          paused = false
-        }
-      }
-      return handler({ event, step, paused: paused && pause === 'record_only', runId, attempt })
+      const gate = await applyPause(pause, step)
+      if (gate.skip) return { skipped: 'paused' } as unknown as T
+      return handler({ event, step, paused: gate.recordOnly, runId, attempt })
     }
   )
 }

@@ -20,6 +20,11 @@ vi.mock('@sentry/nextjs', () => ({
   withScope: (fn: (scope: { setTag: () => void }) => void) => fn({ setTag: () => undefined }),
   captureException: () => undefined,
 }))
+// The pause row is shared (pause.db.test toggles it): this file passes isPaused where it tests pause.
+vi.mock('../assistant/pause', () => ({
+  isAssistantPaused: async () => false,
+  assistantPauseState: async () => null,
+}))
 vi.mock('next/cache', () => ({
   unstable_cache: (fn: () => unknown) => fn,
   revalidateTag: () => undefined,
