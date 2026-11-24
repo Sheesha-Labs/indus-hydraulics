@@ -251,7 +251,7 @@ describe('TodayHeader and the bell', () => {
         <NotificationBell count={120} />
       </ShellLiveProvider>
     )
-    const bell = screen.getByRole('button', { name: 'Notifications, 120 unread' })
+    const bell = screen.getByRole('button', { name: 'Notifications, 99+ unread' })
     expect(bell).toHaveTextContent('99+')
     await userEvent.click(bell)
     expect(shell).toHaveBeenCalledTimes(1)

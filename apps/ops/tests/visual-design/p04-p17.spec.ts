@@ -129,3 +129,47 @@ test('board-115 parity: What the Assistant has learned', async ({ page, signedIn
     'Preferences on the local database (whatever earlier runs learned); each row adds the on/off switch the board leaves out; the header action is the primary.'
   )
 })
+
+test('board-178 parity: Today (Owner)', async ({ page, signedInAs }) => {
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/today')
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '178',
+    0.2,
+    'Real local queue and mail; quotations, money and enquiries arrive with later sprints (the board shows them filled); the board’s "Views" card is a design note, not drawn.',
+    'P17 boards'
+  )
+})
+
+test('board-178-helper parity: Today (Helper)', async ({ page, signedInAs }) => {
+  await signedInAs('helper')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/today')
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '178 helper',
+    0.22,
+    'Helper variant against the Owner board (the handoff draws one board 178).',
+    'P17 boards'
+  )
+})
+
+test('board-182 parity: Today states sheet', async ({ page }) => {
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/_kit/today-states')
+  await expect(page.getByText('Shown once, above Needs you.')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '182',
+    0.12,
+    'Neutral fixtures for the names and figures; the setup card is the S03 FinishSetupBanner.',
+    'P17 boards'
+  )
+})
