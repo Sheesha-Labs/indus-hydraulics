@@ -96,14 +96,24 @@ export interface EffectContext {
   level: $Enums.AutopilotLevel
 }
 
+/** An event to send once the effect's transaction has committed (never from inside it). */
+export interface EffectEvent {
+  name: `ops/${string}`
+  id?: string
+  data: Record<string, string | number | boolean | null>
+}
+
 export interface EffectResult {
   /** A one-line note for the activity trail. */
   note?: string
   /** False when the effect cannot be undone (an email that left). */
   undoable?: boolean
+  /** Sent by the runner after commit, in their own step. */
+  emit?: EffectEvent[]
 }
 
-export interface ActionDefinition<In extends Json = Json, Out extends Json = Json> {
+/** In and Out must be plain JSON (they cross Inngest steps); not enforced by type so interfaces can be used. */
+export interface ActionDefinition<In = Json, Out = Json> {
   key: string
   /** The autopilot group, for logs. */
   group: $Enums.AutopilotGroup
@@ -125,6 +135,17 @@ export interface ActionDefinition<In extends Json = Json, Out extends Json = Jso
     ctx: EffectContext
   ): Promise<EffectResult>
   undo?(tx: Prisma.TransactionClient, action: { id: string; output: Out }): Promise<void>
+  /**
+   * For a proposal (Review card or Unsure item): what the record shows while it waits for a person, e.g. a
+   * message marked Unsure. Same rules as effect: one transaction, writeTracked.
+   */
+  onProposed?(
+    tx: Prisma.TransactionClient,
+    verified: Verified<Out>,
+    ctx: EffectContext
+  ): Promise<EffectResult>
+  /** After every run: recount the live counters this action affects. */
+  afterRecord?(): Promise<void>
 }
 
 /** What `propose` returns: the output, or why there is none (budget, refusal, invalid, max_tokens). */

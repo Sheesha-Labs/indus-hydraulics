@@ -9,9 +9,7 @@ import type { ActionDefinition, Json } from './types'
  */
 const DEFINITIONS = new Map<string, ActionDefinition<Json, Json>>()
 
-export function registerAction<In extends Json, Out extends Json>(
-  def: ActionDefinition<In, Out>
-): void {
+export function registerAction<In, Out>(def: ActionDefinition<In, Out>): void {
   if (!isActionKey(def.key))
     throw new Error(`Unknown action key "${def.key}": add it to ACTION_KEYS first`)
   if (DEFINITIONS.has(def.key) && DEFINITIONS.get(def.key) !== (def as unknown)) {

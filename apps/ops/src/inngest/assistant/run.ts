@@ -4,6 +4,7 @@ import {
   definitionOf,
   effectRun,
   gatherRun,
+  proposedRun,
   proposeRun,
   recordRun,
   resolveRun,
@@ -12,6 +13,7 @@ import {
 } from '../../server/assistant/runner'
 import type { Json } from '../../server/assistant/types'
 import { defineOpsFunction } from '../define'
+import { emitEvent } from '../emit'
 
 // Action modules register themselves on import.
 import '../../server/assistant/actions'
@@ -26,6 +28,8 @@ import '../../server/assistant/actions'
  *   verify    deterministic
  *   decide    insert the immutable action (replays return the existing one)
  *   effect    for running actions: def.effect in one transaction, then done (or failed with a reason)
+ *   on-proposed  for a proposal: what the record shows while it waits (e.g. a message marked Unsure)
+ *   emit      the effect's events, after commit
  *   record    live counters
  *
  * (decision) The plan's concurrency [group ≤ 3, recordKey ≤ 1] does not fit the free plan's shared lanes
@@ -95,7 +99,23 @@ export const assistantRun = defineOpsFunction(
         ? await step.run('effect', () => effectRun(decided.actionId))
         : { state: 'skipped' as const }
 
-    await step.run('record', () => recordRun({ surface: definitionOf(data.actionKey).surface }))
+    const onProposed =
+      decided.created && decided.state === 'proposed'
+        ? await step.run('on-proposed', () => proposedRun(decided.actionId))
+        : { emit: [] }
+
+    // Events go out after the transactions commit, never from inside them.
+    const events = [...(effect.emit ?? []), ...onProposed.emit]
+    if (events.length) {
+      await step.run('emit', async () => {
+        for (const e of events)
+          await emitEvent({ name: e.name, data: e.data, ...(e.id ? { id: e.id } : {}) })
+      })
+    }
+
+    await step.run('record', () =>
+      recordRun({ surface: definitionOf(data.actionKey).surface, actionKey: data.actionKey })
+    )
     return {
       actionId: decided.actionId,
       ref: decided.ref,

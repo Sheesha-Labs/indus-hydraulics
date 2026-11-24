@@ -14,7 +14,14 @@ import { assistantTransport } from './model'
 import { actionDefinition } from './registry'
 import type { ActionRequestedData } from './request'
 import { isAssistantPaused } from './state'
-import type { ActionAi, ActionDefinition, Json, ProposeOutcome, Verified } from './types'
+import type {
+  ActionAi,
+  ActionDefinition,
+  EffectEvent,
+  Json,
+  ProposeOutcome,
+  Verified,
+} from './types'
 import { setActor } from './write-tracked'
 
 /**
@@ -287,7 +294,11 @@ async function internalUndoMinutes(): Promise<number> {
   return typeof v === 'number' && v > 0 && v <= 60 ? v : 5
 }
 
-export type EffectOutcome = { state: 'done' | 'failed' | 'skipped'; failureReason?: string }
+export type EffectOutcome = {
+  state: 'done' | 'failed' | 'skipped'
+  failureReason?: string
+  emit?: EffectEvent[]
+}
 
 /** Runs the effect of a `running` action once. Any other state is skipped, so a retried step never repeats it. */
 export async function effectRun(actionId: string, now = new Date()): Promise<EffectOutcome> {
@@ -325,6 +336,7 @@ export async function effectRun(actionId: string, now = new Date()): Promise<Eff
         level: action.levelAtTime,
       })
       const undoable = !def.external && result.undoable !== false
+      const emit = result.emit ?? []
       await tx.assistantAction.update({
         where: { id: action.id },
         data: {
@@ -333,7 +345,7 @@ export async function effectRun(actionId: string, now = new Date()): Promise<Eff
           undoUntil: undoable ? new Date(now.getTime() + undoMinutes * 60_000) : null,
         },
       })
-      return { state: 'done' as const }
+      return emit.length ? { state: 'done' as const, emit } : { state: 'done' as const }
     })
   } catch (e) {
     const failureReason = e instanceof Error ? e.message.slice(0, 300) : 'The effect failed'
@@ -348,13 +360,56 @@ export async function effectRun(actionId: string, now = new Date()): Promise<Eff
   }
 }
 
+/** For a new `proposed` action whose definition has onProposed: what the record shows while it waits. */
+export async function proposedRun(actionId: string): Promise<{ emit: EffectEvent[] }> {
+  const action = await opsDb.assistantAction.findUniqueOrThrow({
+    where: { id: actionId },
+    select: {
+      id: true,
+      ref: true,
+      actionKey: true,
+      state: true,
+      levelAtTime: true,
+      output: true,
+      checks: true,
+      confidence: true,
+      inputs: true,
+    },
+  })
+  const def = definitionOf(action.actionKey)
+  if (action.state !== 'proposed' || !def.onProposed) return { emit: [] }
+  const request = (action.inputs as unknown as { request: ActionRequestedData }).request
+  const verified: Verified<Json> = {
+    out: action.output as unknown as Json,
+    checks: (action.checks as Verified<Json>['checks'] | null) ?? [],
+    confidence: action.confidence ?? 'unsure',
+  }
+  const onProposed = def.onProposed.bind(def)
+  return opsDb.$transaction(async (tx) => {
+    await setActor(tx, { kind: 'assistant' })
+    const r = await onProposed(tx, verified, {
+      actionId: action.id,
+      ref: action.ref,
+      request,
+      level: action.levelAtTime,
+    })
+    return { emit: r.emit ?? [] }
+  })
+}
+
 // ── record ───────────────────────────────────────────────────────────────────────────────
 
-export async function recordRun(outcome: { skipped?: boolean; surface?: string }): Promise<void> {
+export async function recordRun(outcome: {
+  skipped?: boolean
+  surface?: string
+  actionKey?: string
+}): Promise<void> {
   if (outcome.skipped) {
     await bumpCounters(['assistant.skipped'])
     return
   }
+  const after = outcome.actionKey ? actionDefinition(outcome.actionKey)?.afterRecord : undefined
+  if (after) await after()
   if (outcome.surface === 'review') {
     const pending = await opsDb.assistantAction.count({
       where: { surface: 'review', state: { in: ['proposed', 'later'] } },

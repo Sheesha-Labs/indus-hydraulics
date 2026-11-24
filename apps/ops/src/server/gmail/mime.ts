@@ -274,5 +274,12 @@ export function headerFlags(
   const intake = h('x-indus-intake')
   if (intake) flags.xIndusIntake = intake.trim()
   if (p.dsn) flags.dsn = p.dsn
+  // S05-T03: one email-service-provider header is enough for the mailing-list detector.
+  const esp = Object.keys(p.headers).find(
+    (k) =>
+      (KEPT_HEADERS as readonly string[]).slice(KEPT_HEADERS.indexOf('x-mc-user')).includes(k) ||
+      KEPT_HEADER_PREFIXES.some((prefix) => k.startsWith(prefix))
+  )
+  if (esp) flags.esp = esp
   return flags
 }
