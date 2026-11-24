@@ -144,12 +144,22 @@ test('assistant-panel: instruction becomes proposal; approve changes the record;
   await page.keyboard.press('Escape')
   await expect(panel).toHaveCount(0)
   const again = await openPanel(page)
-  const row = again.getByText('Hold line 4 until the client confirms the trim')
+  // Earlier today may list an earlier run's undone card with the same words: look under Waiting on you.
+  const row = again
+    .getByRole('region', { name: 'Waiting on you' })
+    .getByText('Hold line 4 until the client confirms the trim')
   await expect(row).toBeVisible({ timeout: 20_000 })
   await expect(again.locator('[data-part="drafting"]')).toHaveCount(0)
   expect(await lineStatus()).toBe('open')
 
-  await again.getByRole('link', { name: 'Decide' }).first().click()
+  await again
+    .getByRole('region', { name: 'Waiting on you' })
+    .locator('[data-part="needs-row"], li, div', {
+      hasText: 'Hold line 4 until the client confirms the trim',
+    })
+    .getByRole('link', { name: 'Decide' })
+    .first()
+    .click()
   await expect(page).toHaveURL(new RegExp(`/review\\?card=${ids.ref}`))
   const card = page.locator(`#proposal-${ids.ref}`)
   await expect(card).toBeVisible({ timeout: 60_000 })
