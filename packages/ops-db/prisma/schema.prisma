@@ -5570,66 +5570,73 @@ model MonthClose {
 /// lifecycle columns may change (enforced by trigger), and every change is
 /// also written to assistant_action_event.
 model AssistantAction {
-  id             String             @id @default(uuid(7)) @db.Uuid
+  id                String             @id @default(uuid(7)) @db.Uuid
   /// A-26-09-23-0412
-  ref            String             @unique
-  actionKey      String
-  def            AutopilotActionDef @relation(fields: [actionKey], references: [key])
-  levelAtTime    AutopilotLevel
+  ref               String             @unique
+  actionKey         String
+  def               AutopilotActionDef @relation(fields: [actionKey], references: [key])
+  levelAtTime       AutopilotLevel
   /// Guardrail keys that forced this into Review.
-  guardrails     String[]
-  enquiryId      String?            @db.Uuid
-  enquiry        Enquiry?           @relation(fields: [enquiryId], references: [id])
-  subjectType    RecordType?
-  subjectId      String?            @db.Uuid
+  guardrails        String[]
+  enquiryId         String?            @db.Uuid
+  enquiry           Enquiry?           @relation(fields: [enquiryId], references: [id])
+  subjectType       RecordType?
+  subjectId         String?            @db.Uuid
   // Proposal (immutable once written)
-  headline       String
+  headline          String
   /// [{ text, source: { type, id, url, page, span } }]
-  reasons        Json
-  preview        Json?
+  reasons           Json
+  preview           Json?
   /// [{ label, status: pass|warn|fail, detail }]
-  checks         Json?
-  confidence     Confidence?
-  unsureAbout    String?
-  onApproveText  String?
+  checks            Json?
+  confidence        Confidence?
+  unsureAbout       String?
+  onApproveText     String?
   /// Judgement-call options (107): [{ key, label, consequence }]
-  options        Json?
-  inputs         Json?
-  output         Json?
+  options           Json?
+  inputs            Json?
+  output            Json?
   // Lifecycle (mutable)
-  state          ActionState
-  chosenOption   String?
-  editDiff       Json?
-  rejectReason   String?
-  laterUntil     DateTime?          @db.Timestamptz(3)
-  decidedById    String?            @db.Uuid
-  decidedBy      User?              @relation("ActionDecidedBy", fields: [decidedById], references: [id])
-  decidedAt      DateTime?          @db.Timestamptz(3)
-  undoUntil      DateTime?          @db.Timestamptz(3)
-  doneAt         DateTime?          @db.Timestamptz(3)
-  failureReason  String?
-  retryOfId      String?            @db.Uuid
-  correctionOfId String?            @db.Uuid
-  correctionOf   AssistantAction?   @relation("Correction", fields: [correctionOfId], references: [id])
-  corrections    AssistantAction[]  @relation("Correction")
-  revertOfId     String?            @db.Uuid
-  batchKey       String?
-  costUsd        Decimal            @default(0) @db.Decimal(12, 6)
+  state             ActionState
+  chosenOption      String?
+  editDiff          Json?
+  rejectReason      String?
+  laterUntil        DateTime?          @db.Timestamptz(3)
+  decidedById       String?            @db.Uuid
+  decidedBy         User?              @relation("ActionDecidedBy", fields: [decidedById], references: [id])
+  decidedAt         DateTime?          @db.Timestamptz(3)
+  undoUntil         DateTime?          @db.Timestamptz(3)
+  doneAt            DateTime?          @db.Timestamptz(3)
+  failureReason     String?
+  retryOfId         String?            @db.Uuid
+  correctionOfId    String?            @db.Uuid
+  correctionOf      AssistantAction?   @relation("Correction", fields: [correctionOfId], references: [id])
+  corrections       AssistantAction[]  @relation("Correction")
+  revertOfId        String?            @db.Uuid
+  batchKey          String?
+  // Review lifecycle (S06-T01, mutable)
+  staleAt           DateTime?          @db.Timestamptz(3)
+  staleReason       String?
+  supersededById    String?            @db.Uuid
+  blockedByActionId String?            @db.Uuid
+  redraftOfId       String?            @db.Uuid
+  effectivePayload  Json?
+  costUsd           Decimal            @default(0) @db.Decimal(12, 6)
   // Runner columns (S05-T02). Immutable after insert except `version`, which the guard bumps on update.
   /// sha256 of the sorted source versions the proposal was built on; a stale basis cannot be approved.
-  basisHash      String?
+  basisHash         String?
   /// `${actionKey}:${subjectType}:${subjectId}:${sourceVersion}`; one action per key.
-  idempotencyKey String?            @unique
+  idempotencyKey    String?            @unique
   /// live | backfill | import | manual
-  origin         String             @default("live")
-  model          String?
-  promptVersion  String?
-  levelReasons   Json?
+  origin            String             @default("live")
+  model             String?
+  promptVersion     String?
+  levelReasons      Json?
   /// review | mail_unsure | hint
-  surface        String             @default("review")
-  version        Int                @default(0)
-  createdAt      DateTime           @default(now()) @db.Timestamptz(3)
-  updatedAt      DateTime           @updatedAt @db.Timestamptz(3)
+  surface           String             @default("review")
+  version           Int                @default(0)
+  createdAt         DateTime           @default(now()) @db.Timestamptz(3)
+  updatedAt         DateTime           @updatedAt @db.Timestamptz(3)
 
   events             AssistantActionEvent[]
   aiCalls            AiCall[]
@@ -5644,6 +5651,8 @@ model AssistantAction {
   @@index([subjectType, subjectId])
   @@index([undoUntil])
   @@index([surface, state, createdAt])
+  @@index([laterUntil], map: "assistant_action_later_idx")
+  @@index([redraftOfId], map: "assistant_action_redraftOfId_idx")
   @@index([createdAt(sort: Desc)], map: "assistant_action_createdAt_idx")
   @@map("assistant_action")
   @@schema("ops")

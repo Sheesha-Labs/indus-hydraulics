@@ -133,3 +133,4 @@ Do not "fix" it by switching the views to `security_invoker`: Ops would lose the
 | `202611241506_ops_s05_pipeline_settings_seed.sql` | S05-T09: settings seed `assistant.mail_pipeline_enabled` {"enabled":false} (the switch; not_required). | applied 2026-11-24 |
 | `202611241507_ops_mail_message_first_labelled.sql` | S05-T09: mail_message."firstLabelledAt" (set by the first Indus label on live mail) and its partial index, for the latency metric. | applied 2026-11-24 |
 | `202611241513_ops_notification_open_dedupe_idx.sql` | S05-T09: partial index on open notifications by dedupeKey (resolveNotifications on every recovery). | applied 2026-11-24 |
+| `202611241639_ops_review_lifecycle.sql` | S06-T01: assistant_action lifecycle columns staleAt, staleReason, supersededById, blockedByActionId, redraftOfId, effectivePayload; partial indexes on laterUntil (state later) and redraftOfId. | not yet applied |

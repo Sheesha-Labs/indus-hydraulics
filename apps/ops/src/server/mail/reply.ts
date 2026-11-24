@@ -3,7 +3,9 @@ import { createHash } from 'node:crypto'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import { replyReferences } from '@indus/ops-core'
 import type { OpsUser } from '../../lib/access-core'
+import { basisHash } from '../assistant/runner'
 import { setActor } from '../assistant/write-tracked'
+import { threadVersion } from './thread-version'
 import { htmlToText, sanitizeMailHtml } from '../gmail/html'
 import { resolveSendEnvelope } from '../mail-send/envelope'
 import { scheduleSend } from '../mail-send/schedule'
@@ -95,6 +97,8 @@ export async function replyInThread(input: ReplyInput, now = new Date()): Promis
 
   if (permission === 'propose') {
     // A Helper's reply on the client mailbox waits for the Owner (manual_reply, Draft and ask).
+    // The basis: the thread's latest inbound. A client reply after this makes the card stale (S06-T01).
+    const basis = basisHash({ thread: await threadVersion(thread.id) })
     const ref = await opsDb.$transaction(async (tx: Prisma.TransactionClient) => {
       await setActor(tx, { kind: 'user', id: input.user.id })
       const [num] = await tx.$queryRaw<Array<{ formatted: string }>>`
@@ -124,7 +128,20 @@ export async function replyInThread(input: ReplyInput, now = new Date()): Promis
           ] as unknown as Prisma.InputJsonValue,
           confidence: 'sure',
           onApproveText: `Sends the reply from ${thread.mailbox.address} in this thread`,
-          inputs: { threadId: thread.id, writtenById: input.user.id } as Prisma.InputJsonValue,
+          inputs: {
+            threadId: thread.id,
+            writtenById: input.user.id,
+            // S06: the request the staleness check and the approval read, as for a runner action.
+            request: {
+              actionKey: 'manual_reply',
+              subjectType: 'mail_thread',
+              subjectId: thread.id,
+              trigger: 'person',
+              origin: 'manual',
+              sourceVersion: basis,
+            },
+          } as Prisma.InputJsonValue,
+          basisHash: basis,
           state: 'proposed',
           origin: 'manual',
           surface: 'review',

@@ -8,6 +8,7 @@ import {
   type InterimBudgetState,
 } from '@indus/ops-core'
 import { budgetState, monthKey, structuredCall, type BudgetMode } from '@indus/ops-ai'
+import { basisHash as coreBasisHash, parseProposal } from '@indus/ops-core'
 import { aiLedger } from './ai-ledger'
 import { bumpCounters, setCounters } from './live-counter'
 import { assistantTransport } from './model'
@@ -21,6 +22,7 @@ import type {
   Json,
   ProposeOutcome,
   Verified,
+  ProposalDraft,
 } from './types'
 import { setActor } from './write-tracked'
 
@@ -51,11 +53,11 @@ export function definitionOf(key: string): ActionDefinition<Json, Json> {
   return def
 }
 
+const sha256 = (text: string) => createHash('sha256').update(text).digest('hex')
+
+/** sha256 of the sorted versions (ops-core basisHash; the same text the S05 runner hashed). */
 export function basisHash(versions: Record<string, string | number>): string {
-  const sorted = Object.keys(versions)
-    .sort()
-    .map((k) => [k, versions[k]])
-  return createHash('sha256').update(JSON.stringify(sorted)).digest('hex')
+  return coreBasisHash(versions, sha256)
 }
 
 // ── resolve ──────────────────────────────────────────────────────────────────────────────
@@ -215,15 +217,19 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
 
   const p = d.proposal
   const draft = p.ok ? def.toProposal(p.verified, d.input) : null
+  // S06-T01: the proposal must fit its kind's schema, or nothing is shown from it.
+  const invalid = draft ? proposalProblem(def.key, def.surface, draft) : null
   const asks = p.ok ? def.alwaysAsk : undefined
-  const state: $Enums.ActionState = p.ok
-    ? asks
-      ? 'proposed'
-      : initialState(
-          d.resolved.level,
-          (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
-        )
-    : 'failed'
+  const state: $Enums.ActionState = invalid
+    ? 'failed'
+    : p.ok
+      ? asks
+        ? 'proposed'
+        : initialState(
+            d.resolved.level,
+            (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
+          )
+      : 'failed'
   const levelReasons = asks ? [...d.resolved.reasons, asks.reason] : d.resolved.reasons
   const inputs = {
     request: { ...d.data },
@@ -260,7 +266,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           inputs,
           output: p.ok ? (p.verified.out as unknown as Prisma.InputJsonValue) : Prisma.DbNull,
           state,
-          failureReason: p.ok ? null : p.reason,
+          failureReason: invalid ? `proposal: ${invalid}`.slice(0, 300) : p.ok ? null : p.reason,
           costUsd: p.costUsd,
           basisHash: d.basisHash,
           idempotencyKey: d.data.idempotencyKey,
@@ -285,6 +291,26 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
     }
     throw e
   }
+}
+
+/** Why a drafted proposal does not fit its kind (S06-T01), or null. */
+export function proposalProblem(
+  actionKey: string,
+  surface: string,
+  draft: ProposalDraft
+): string | null {
+  const out = parseProposal(actionKey, {
+    headline: draft.headline,
+    reasons: draft.reasons,
+    checks: draft.checks,
+    confidence: draft.confidence,
+    unsureAbout: draft.unsureAbout ?? null,
+    options: draft.options ?? null,
+    onApproveText: draft.onApproveText ?? null,
+    preview: draft.preview ?? null,
+    surface,
+  })
+  return out.ok ? null : `${out.kind}: ${out.error}`
 }
 
 // ── effect ───────────────────────────────────────────────────────────────────────────────

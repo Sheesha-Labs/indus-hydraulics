@@ -2,7 +2,13 @@ import { sendGate } from '../../server/mail-send/gate'
 import { reconcile } from '../../server/mail-send/reconcile'
 import { sendOnce } from '../../server/mail-send/send-once'
 import { computeSlot } from '../../server/mail-send/slot'
+import { registerStalenessGate } from '../../server/assistant/staleness'
 import { defineOpsFunction } from '../define'
+
+// S06-T01: a queued send whose proposal went stale stops in the gate ('stale'). The definitions say how each
+// action reads its current versions.
+import '../../server/assistant/actions'
+registerStalenessGate()
 import { emitEvent } from '../emit'
 
 /**

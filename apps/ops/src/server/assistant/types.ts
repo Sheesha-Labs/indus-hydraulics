@@ -176,6 +176,11 @@ export interface ActionDefinition<In = Json, Out = Json> {
   alwaysAsk?: { guardrail: string; reason: string }
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
+  /**
+   * S06-T01: the same version keys `gather` returned, read again now (cheap reads only). Absent: the action is
+   * never stale. A different hash means the record changed after drafting: approval is blocked until Redraft.
+   */
+  currentVersions?(request: ActionRequest): Promise<Record<string, string | number>>
 }
 
 /** What `propose` returns: the output, or why there is none (budget, refusal, invalid, max_tokens). */
