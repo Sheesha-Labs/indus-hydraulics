@@ -1,5 +1,5 @@
 import type { $Enums, Prisma } from '@indus/ops-db'
-import type { ActionOrigin } from '@indus/ops-core'
+import type { ActionOrigin, GuardrailContext } from '@indus/ops-core'
 import type { AiPurpose, Route, StructuredCallInput, StructuredResult } from '@indus/ops-ai'
 
 /**
@@ -191,6 +191,12 @@ export interface ActionDefinition<In = Json, Out = Json> {
   requestableOn?: readonly $Enums.RecordType[]
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
+  /**
+   * S07-T01: the facts guardrails look at for this run (value, someone new, credit hold, chaser counts …),
+   * cheap reads only. The clock (working hours, holidays) and the daily cap are added by the runner for
+   * external actions. Absent: no action-specific facts.
+   */
+  guardrailContext?(request: ActionRequest): Promise<GuardrailContext>
   /**
    * S06-T01: the same version keys `gather` returned, read again now (cheap reads only). Absent: the action is
    * never stale. A different hash means the record changed after drafting: approval is blocked until Redraft.

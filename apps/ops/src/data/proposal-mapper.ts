@@ -21,6 +21,8 @@ export interface ActionRowForCard {
   surface: string
   state: $Enums.ActionState
   levelAtTime: $Enums.AutopilotLevel
+  /** S07-T01: the resolver's reasons; "Asked because: …" entries name the guardrail that asked. */
+  levelReasons?: unknown
   headline: string
   reasons: unknown
   preview: unknown
@@ -86,6 +88,8 @@ export interface ProposalCardData {
   version: number
   /** The proposal did not fit its schema: shown as a failure, never approvable. */
   invalid: string | null
+  /** S07-T01: what sent the card to Review ("Value above AED 200,000"). */
+  askedBecause: string[]
   readOnly: boolean
 }
 
@@ -123,6 +127,17 @@ function cardState(s: $Enums.ActionState): ProposalCardData['state'] {
   if (s === 'rejected' || s === 'undone' || s === 'cancelled' || s === 'reverted') return 'rejected'
   if (s === 'failed') return 'collapsed'
   return 'approved'
+}
+
+const ASKED = 'Asked because: '
+
+/** The "Asked because: …" reasons the resolver stored, without the prefix (money masked for a Helper). */
+export function askedBecauseOf(levelReasons: unknown, masked = false): string[] {
+  if (!Array.isArray(levelReasons)) return []
+  return levelReasons
+    .filter((r): r is string => typeof r === 'string' && r.startsWith(ASKED))
+    .map((r) => r.slice(ASKED.length))
+    .filter((r) => !(masked && /margin|AED|USD/i.test(r)))
 }
 
 export function toProposalCardData(
@@ -215,6 +230,7 @@ export function toProposalCardData(
     stale: row.staleAt ? { reason: row.staleReason ?? 'The record changed since this was drafted.' } : null,
     version: row.version,
     invalid: parsed.ok ? null : parsed.error,
+    askedBecause: askedBecauseOf(row.levelReasons, masked),
     // A Helper never approves a locked action (#20 quotation, #28 supplier POs) or a client-mailbox reply.
     readOnly:
       (user.role !== 'owner' && (locked || row.actionKey === 'manual_reply')) ||

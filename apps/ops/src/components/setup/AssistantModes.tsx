@@ -1,6 +1,6 @@
 'use client'
 
-import { presetSummary, type AutopilotMode } from '@indus/ops-core'
+import { presetSummary, type AutopilotMode, type AutopilotModeOrCustom } from '@indus/ops-core'
 import { cn } from '@indus/ops-ui/lib/cn'
 import { useToast } from '@indus/ops-ui/overlay'
 import { Tag } from '@indus/ops-ui/status'
@@ -19,7 +19,8 @@ import { useSaveStatus } from './SaveStatus'
  */
 
 export interface AssistantModesProps {
-  mode: AutopilotMode
+  /** Custom (S07, D17): no card is selected until the Owner picks one. */
+  mode: AutopilotModeOrCustom
   version: number
   /** The undo window of the toast (the `undo` setting). */
   undoMs: number
@@ -70,7 +71,7 @@ const CARDS: readonly ModeCard[] = [
 export default function AssistantModes({ mode: initial, version, undoMs }: AssistantModesProps) {
   const status = useSaveStatus()
   const { toast } = useToast()
-  const [mode, setMode] = useState(initial)
+  const [mode, setMode] = useState<AutopilotModeOrCustom>(initial)
   const [pending, setPending] = useState(false)
   const [problem, setProblem] = useState<string | null>(null)
   const versionRef = useRef(version)
@@ -95,7 +96,8 @@ export default function AssistantModes({ mode: initial, version, undoMs }: Assis
     versionRef.current = res.data.version
     status.report('saved', res.data.savedAt)
     const previous = res.data.previous
-    if (options.undo && previous && previous !== next) {
+    // Undo re-applies a preset; from Custom there is no preset to go back to (the rows were set one by one).
+    if (options.undo && previous && previous !== 'custom' && previous !== next) {
       toast({
         kind: 'success',
         title: presetSummary(res.data.mode, res.data.changed),

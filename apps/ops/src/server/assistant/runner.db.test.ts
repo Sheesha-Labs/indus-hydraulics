@@ -125,7 +125,7 @@ async function runToDecide(data: ActionRequestedData, level: 'draft_and_ask' | '
   const v = await verifyRun(data, p.out, g.input)
   return decideRun({
     data,
-    resolved: { level, reasons: [`Set to ${level} in Autopilot`] },
+    resolved: { level, base: level, hits: [], reasons: [`Set to ${level} in Autopilot`] },
     basisHash: g.basisHash,
     input: g.input,
     proposal: {
@@ -244,7 +244,7 @@ describe.skipIf(!DB_URL)('action runner · local database', () => {
     const g = await gatherRun(data)
     const d = await decideRun({
       data,
-      resolved: { level: 'do_quietly', reasons: [] },
+      resolved: { level: 'do_quietly', base: 'do_quietly', hits: [], reasons: [] },
       basisHash: g.basisHash,
       input: g.input,
       proposal: {

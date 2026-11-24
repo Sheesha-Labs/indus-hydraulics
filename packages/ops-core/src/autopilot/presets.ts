@@ -105,6 +105,26 @@ export function modeDefault(def: ActionDefLevels, mode: AutopilotMode): Autopilo
 }
 
 /**
+ * The level one row takes under `mode` (S07-T01): the lock when it has one; otherwise the per-mode default,
+ * capped at the row's max, and under Careful never above Draft and ask for an action that emails someone
+ * outside Indus (other than the two CAREFUL_SEND_EXCEPTIONS). Used by the resolver when a row has no
+ * setting, and as the "Custom" test: a setting that differs from this is a custom choice.
+ */
+export function presetLevel(mode: AutopilotMode, def: ActionDefLevels): AutopilotLevel {
+  const lock = effectiveLock(def)
+  if (lock !== null) return lock
+  let level = capLevel(def, modeDefault(def, mode))
+  if (
+    mode === 'careful' &&
+    sendsExternally(def.key) &&
+    !Object.hasOwn(CAREFUL_SEND_EXCEPTIONS, def.key)
+  ) {
+    level = lowerOf(level, 'draft_and_ask')
+  }
+  return level
+}
+
+/**
  * The level each configurable, unlocked row takes under `mode`: its per-mode default, capped at its
  * max level. Rows that are not configurable, locked in data or fixed by code are absent from the map,
  * so a preset can never touch them. Throws on a default no row could hold (`never` on an unlocked row),
@@ -117,7 +137,7 @@ export function presetLevels(
   const out = new Map<string, AutopilotLevel>()
   for (const def of defs) {
     if (!def.configurable || isLocked(def)) continue
-    const level = capLevel(def, modeDefault(def, mode))
+    const level = presetLevel(mode, def)
     const checked = validateLevel(def, level)
     if (!checked.success) {
       throw new Error(`autopilot preset ${mode}: ${def.key} default ${level} is not allowed`)
@@ -146,4 +166,24 @@ export function carefulSendViolations(defs: readonly ActionDefLevels[]): string[
     .filter((d) => sendsExternally(d.key) && !Object.hasOwn(CAREFUL_SEND_EXCEPTIONS, d.key))
     .filter((d) => isAbove(d.defaultCareful, 'draft_and_ask'))
     .map((d) => d.key)
+}
+
+/**
+ * The mode the rows actually show (D17): the first of Careful, Balanced and Hands-off whose preset every
+ * configurable, unlocked row matches, else Custom. A setLevel that makes a row differ from its preset
+ * therefore turns the label to Custom; a later change that matches a preset again turns it back.
+ */
+export function detectMode(
+  defs: readonly (ActionDefLevels & { setting: { level: AutopilotLevel } | null })[]
+): AutopilotMode | 'custom' {
+  for (const mode of AUTOPILOT_MODES) {
+    const target = presetLevels(mode, defs)
+    if (
+      defs.every(
+        (d) => !target.has(d.key) || (d.setting?.level ?? target.get(d.key)) === target.get(d.key)
+      )
+    )
+      return mode
+  }
+  return 'custom'
 }

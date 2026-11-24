@@ -94,6 +94,7 @@ export default function ReviewCardClient({
       checks={card.checks}
       {...(card.confidence ? { confidence: card.confidence } : {})}
       {...(card.onApproveText ? { onApproveText: { text: card.onApproveText } } : {})}
+      {...(card.askedBecause.length ? { askedBecause: card.askedBecause } : {})}
       {...(card.options && card.options.length > 1
         ? {
             options: {

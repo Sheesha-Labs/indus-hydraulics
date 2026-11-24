@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs'
 import { dirname, join, relative, resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { AUTOPILOT_LEVELS, MAX_LEVELS, resolveLevelInterim } from '@indus/ops-core'
+import { AUTOPILOT_LEVELS, MAX_LEVELS, resolveLevel } from '@indus/ops-core'
 
 /**
  * S06-T08 guard: an instruction is never an effect. The instruction action and everything it imports (inside
@@ -74,6 +74,7 @@ describe('instruction guard (S06-T08)', () => {
   it('no preset or Custom level resolves it above Draft and ask', () => {
     const def = {
       key: 'instruction',
+      configurable: false,
       lockedLevel: null,
       maxLevel: 'draft_and_ask',
       defaultCareful: 'draft_and_ask',
@@ -81,16 +82,18 @@ describe('instruction guard (S06-T08)', () => {
       defaultHandsOff: 'draft_and_ask',
     } as const
     for (const level of [...AUTOPILOT_LEVELS, null]) {
-      const r = resolveLevelInterim({
-        def,
-        setting: level ? { level } : null,
-        origin: 'live',
-        paused: false,
-        budget: 'ok',
-        mailboxLive: true,
-        external: false,
-      })
-      expect(['off', 'suggest', 'draft_and_ask', 'never']).toContain(r.level)
+      for (const mode of ['careful', 'balanced', 'hands_off', 'custom'] as const) {
+        const r = resolveLevel({
+          def,
+          configuredLevel: level,
+          mode,
+          ctx: {},
+          guardrails: [],
+          external: false,
+          state: { origin: 'live', paused: false, budget: 'ok', mailboxLive: true },
+        })
+        expect(['off', 'suggest', 'draft_and_ask', 'never']).toContain(r.level)
+      }
     }
   })
 })

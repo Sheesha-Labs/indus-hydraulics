@@ -124,7 +124,7 @@ describe.skipIf(!DB_URL)('mail pipeline · local database', () => {
     const v = await runner.verifyRun(data, p.out, g.input)
     const d = await runner.decideRun({
       data,
-      resolved: { level, reasons: [] },
+      resolved: { level, base: level, hits: [], reasons: [] },
       basisHash: g.basisHash,
       input: g.input,
       proposal: {

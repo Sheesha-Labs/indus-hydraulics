@@ -2237,22 +2237,28 @@ model AutopilotActionDef {
   signedOffById   String?         @db.Uuid
   signedOffAt     DateTime?       @db.Timestamptz(3)
 
-  setting AutopilotSetting?
-  actions AssistantAction[]
+  setting     AutopilotSetting?
+  actions     AssistantAction[]
+  suggestions AutopilotSuggestion[]
 
   @@map("autopilot_action_def")
   @@schema("ops")
 }
 
 model AutopilotSetting {
-  actionKey   String             @id
-  def         AutopilotActionDef @relation(fields: [actionKey], references: [key])
-  level       AutopilotLevel
+  actionKey     String             @id
+  def           AutopilotActionDef @relation(fields: [actionKey], references: [key])
+  level         AutopilotLevel
   /// Per-action rules, e.g. chaser { firstAfterDays: 1, everyDays: 2, max: 3 }.
-  rules       Json               @default("{}")
-  version     Int                @default(0)
-  updatedById String?            @db.Uuid
-  updatedAt   DateTime           @updatedAt @db.Timestamptz(3)
+  rules         Json               @default("{}")
+  version       Int                @default(0)
+  updatedById   String?            @db.Uuid
+  updatedAt     DateTime           @updatedAt @db.Timestamptz(3)
+  /// ADR-28 (S07): 'awaiting' until the Owner saves the row.
+  signoffStatus SignoffStatus      @default(awaiting)
+  /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
+  signedOffById String?            @db.Uuid
+  signedOffAt   DateTime?          @db.Timestamptz(3)
 
   @@map("autopilot_setting")
   @@schema("ops")
@@ -3363,11 +3369,22 @@ model Preference {
   evidenceCount Int              @default(0)
   createdAt     DateTime         @default(now()) @db.Timestamptz(3)
   updatedAt     DateTime         @updatedAt @db.Timestamptz(3)
+  /// S07-T05: the action the preference shapes (null: every drafting action).
+  actionKey     String?
+  /// reject | edit | unsure_choice | override | sent_mail | manual (CHECK in SQL)
+  createdFrom   String?
+  /// How many signals back it (a duplicate strengthens instead of adding a row).
+  strength      Int              @default(1)
+  /// Switched off on board 115; kept so it can be switched back on.
+  disabledAt    DateTime?        @db.Timestamptz(3)
+  /// ops.user(id) for a manual rule (actor-column convention).
+  createdById   String?          @db.Uuid
 
   evidence PreferenceEvidence[]
 
   @@index([scope, kind, active])
   @@index([companyId])
+  @@index([actionKey], map: "preference_actionKey_idx")
   @@map("preference")
   @@schema("ops")
 }
@@ -5643,6 +5660,7 @@ model AssistantAction {
   aiReservations     AiReservation[]
   preferenceSignals  PreferenceSignal[]
   outbound           OutboundEmail[]
+  guardrailTriggers  GuardrailTrigger[]
   preferenceEvidence PreferenceEvidence[]
 
   @@index([state, createdAt])
@@ -5710,24 +5728,24 @@ model AiCall {
 
 /// Append-only field-level history for every record (113). INSERT-only grant.
 model ActivityEvent {
-  id          String       @id @default(uuid(7)) @db.Uuid
-  at          DateTime     @default(now()) @db.Timestamptz(3)
-  actorKind   ActorKind
-  actorId     String?      @db.Uuid
-  actionId    String?      @db.Uuid
-  enquiryId   String?      @db.Uuid
-  enquiry     Enquiry?     @relation(fields: [enquiryId], references: [id])
-  subjectType RecordType
-  subjectId   String       @db.Uuid
-  kind        ActivityKind
-  field       String?
-  before      Json?
-  after       Json?
-  note        String?
+  id             String       @id @default(uuid(7)) @db.Uuid
+  at             DateTime     @default(now()) @db.Timestamptz(3)
+  actorKind      ActorKind
+  actorId        String?      @db.Uuid
+  actionId       String?      @db.Uuid
+  enquiryId      String?      @db.Uuid
+  enquiry        Enquiry?     @relation(fields: [enquiryId], references: [id])
+  subjectType    RecordType
+  subjectId      String       @db.Uuid
+  kind           ActivityKind
+  field          String?
+  before         Json?
+  after          Json?
+  note           String?
   /// Hidden from a Helper without canSeeMargins (margin, cost, sell).
   /// S06-T07: the change a revert row reverses.
-  revertsEventId String?   @db.Uuid
-  sensitive   Boolean      @default(false)
+  revertsEventId String?      @db.Uuid
+  sensitive      Boolean      @default(false)
 
   @@index([enquiryId, at])
   @@index([subjectType, subjectId, field, at], map: "activity_event_subject_field_at_idx")
@@ -6119,6 +6137,7 @@ model PreferenceSignal {
   consumedAt  DateTime?        @db.Timestamptz(3)
 
   @@index([companyId, createdAt], map: "preference_signal_company_idx")
+  @@index([createdAt], map: "preference_signal_unconsumed_idx")
   @@map("preference_signal")
   @@schema("ops")
 }
@@ -6170,5 +6189,65 @@ view AssistantLogEntry {
   headline        String
 
   @@map("assistant_log_v")
+  @@schema("ops")
+}
+
+/// S07-T01 · one row per guardrail that fired on an Assistant run (board 100 counters, "Last triggered").
+/// Append-only for ops_app (SELECT, INSERT).
+model GuardrailTrigger {
+  id           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  guardrailKey String
+  actionId     String?          @db.Uuid
+  action       AssistantAction? @relation(fields: [actionId], references: [id], onDelete: SetNull)
+  actionKey    String
+  /// ask | queue | block
+  effect       String           @default("ask")
+  /// What the Review card printed ("Outside working hours · queued for 08:30").
+  text         String           @default("")
+  at           DateTime         @default(now()) @db.Timestamptz(3)
+
+  @@index([guardrailKey, at])
+  @@index([at(sort: Desc)])
+  @@map("guardrail_trigger")
+  @@schema("ops")
+}
+
+/// S07-T02 · an earned suggestion: 25 clean approvals since the last level change → one level up. It never
+/// changes a level; the Owner accepts (setLevel) or snoozes it (dismissedUntil). One open row per action.
+model AutopilotSuggestion {
+  id             String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  actionKey      String
+  def            AutopilotActionDef @relation(fields: [actionKey], references: [key], onDelete: Cascade)
+  /// 'earned' (CHECK in SQL)
+  kind           String             @default("earned")
+  fromLevel      AutopilotLevel
+  toLevel        AutopilotLevel
+  streak         Int
+  evidence       Json               @default("{}")
+  createdAt      DateTime           @default(now()) @db.Timestamptz(3)
+  dismissedUntil DateTime?          @db.Timestamptz(3)
+  acceptedAt     DateTime?          @db.Timestamptz(3)
+  /// ops.user(id) through a SQL foreign key (actor-column convention).
+  acceptedById   String?            @db.Uuid
+
+  @@map("autopilot_suggestion")
+  @@schema("ops")
+}
+
+/// S07-T05 · one Message Batches submission of the nightly preference learner.
+model PreferenceLearnBatch {
+  id               String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  anthropicBatchId String?   @unique(map: "preference_learn_batch_anthropicBatchId_key")
+  /// submitted | in_progress | ended | failed | applied
+  status           String    @default("submitted")
+  signalIds        String[]  @db.Uuid
+  /// The groups sent, by custom_id: signal ids, action key, scope ids, occurrences.
+  groups           Json      @default("[]")
+  submittedAt      DateTime  @default(now()) @db.Timestamptz(3)
+  endedAt          DateTime? @db.Timestamptz(3)
+  error            String?
+
+  @@index([submittedAt], map: "preference_learn_batch_open_idx")
+  @@map("preference_learn_batch")
   @@schema("ops")
 }

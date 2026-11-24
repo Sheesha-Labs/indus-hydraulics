@@ -63,6 +63,7 @@ export default function ProposalCard(card: ProposalCardProps) {
     options,
     confidence,
     onApproveText,
+    askedBecause,
     compact = false,
     raised = false,
     batchable,
@@ -183,6 +184,11 @@ export default function ProposalCard(card: ProposalCardProps) {
         >
           {headline}
         </p>
+        {askedBecause?.length ? (
+          <p data-part="asked-because" className="text-io-ink-3 m-0 text-[12.5px]">
+            Asked because: {askedBecause.join(' · ')}
+          </p>
+        ) : null}
         {full ? (
           <>
             {why?.length ? <WhyList reasons={why} /> : null}

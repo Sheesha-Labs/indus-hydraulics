@@ -170,7 +170,10 @@ const landedDefaults = z.strictObject({
   bankPct: pct,
 })
 
-const assistantMode = z.strictObject({ mode: z.enum(['careful', 'balanced', 'hands_off']) })
+/** D17 (S07): 'custom' once any row differs from its preset; a label, never applied as a preset. */
+const assistantMode = z.strictObject({
+  mode: z.enum(['careful', 'balanced', 'hands_off', 'custom']),
+})
 
 /**
  * The monthly AI budget (C14). `mode` (S05-T01): `warn_pause_research` pauses only supplier research at the

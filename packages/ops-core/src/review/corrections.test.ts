@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { AUTOPILOT_LEVELS } from '../state/labels'
 import { MAX_LEVELS } from '../autopilot/levels'
-import { resolveLevelInterim } from '../autopilot/resolve-interim'
+import { resolveLevel } from '../autopilot/resolve'
 import { CORRECTION_REASON_LABEL, CORRECTION_REASONS } from './corrections'
 
 describe('corrections (S06-T07)', () => {
@@ -19,6 +19,7 @@ describe('corrections (S06-T07)', () => {
     expect(MAX_LEVELS.correction_email).toBe('draft_and_ask')
     const def = {
       key: 'correction_email',
+      configurable: true,
       lockedLevel: null,
       maxLevel: 'draft_and_ask',
       defaultCareful: 'draft_and_ask',
@@ -26,14 +27,14 @@ describe('corrections (S06-T07)', () => {
       defaultHandsOff: 'draft_and_ask',
     } as const
     for (const level of AUTOPILOT_LEVELS) {
-      const r = resolveLevelInterim({
+      const r = resolveLevel({
         def,
-        setting: { level },
-        origin: 'live',
-        paused: false,
-        budget: 'ok',
-        mailboxLive: true,
+        configuredLevel: level,
+        mode: 'custom',
+        ctx: {},
+        guardrails: [],
         external: true,
+        state: { origin: 'live', paused: false, budget: 'ok', mailboxLive: true },
       })
       expect(['off', 'suggest', 'draft_and_ask', 'never']).toContain(r.level)
     }
