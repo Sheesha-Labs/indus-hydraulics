@@ -82,3 +82,34 @@ test('board-100 parity: Guardrails', async ({ page, signedInAs }) => {
     'Real rows and local counts; adds the RFQ threshold and research cap rows the board leaves to other screens; Last triggered from local guardrail_trigger rows.'
   )
 })
+
+test('board-101 parity: Cost & limits', async ({ page, signedInAs }) => {
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/assistant/cost')
+  await expect(page.getByRole('heading', { name: 'Cost & limits', level: 1 })).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '101',
+    0.2,
+    'Local month’s real ai_call totals (the board’s example banner shows only once the budget is reached); the month figure is Geist (Q6); research cap USD 5 (C14) where the board shows 2.'
+  )
+})
+
+test('board-102 parity: Autopilot states sheet', async ({ page }) => {
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/_kit/autopilot-states')
+  await expect(page.getByText('Let the Assistant chase suppliers without asking?')).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '102',
+    0.12,
+    'Neutral fixtures; the disconnected banner carries the S04 wording plus "purchase@ still runs"; the Helper line names the Owner setting as the board does.'
+  )
+})

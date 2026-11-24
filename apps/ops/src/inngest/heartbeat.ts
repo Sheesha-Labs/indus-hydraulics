@@ -1,5 +1,4 @@
 import { opsDb } from '@indus/ops-db'
-import { releaseStaleReservations } from '../server/assistant/ai-ledger'
 import { defineOpsFunction } from './define'
 
 /**
@@ -7,8 +6,7 @@ import { defineOpsFunction } from './define'
  * settings_entry 'system.inngest_heartbeat'. /api/health reports the stamp. One
  * statement; no transaction held open.
  *
- * S05-T01: it also settles, at zero, any AI budget reservation a crashed call left open for 30 minutes, so
- * a dead process never keeps money reserved. Two statements, each on its own.
+ * (S07-T04: settling stale AI budget reservations moved to ops.budget.reservation.sweep.)
  */
 export const heartbeat = defineOpsFunction(
   { id: 'ops.system.heartbeat', lane: 'house', retries: 0, pause: 'exempt' },
@@ -20,7 +18,6 @@ export const heartbeat = defineOpsFunction(
       create: { key: 'system.inngest_heartbeat', value: { at } },
       update: { value: { at } },
     })
-    const releasedReservations = await releaseStaleReservations(30)
-    return { at, releasedReservations }
+    return { at }
   }
 )

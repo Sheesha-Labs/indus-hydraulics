@@ -12,6 +12,7 @@
 export type BannerKind =
   | 'mailbox-disconnected'
   | 'assistant-paused'
+  | 'budget-reached'
   | 'mailbox-paused'
   | 'sync-delayed'
   | 'send-failed'
@@ -61,6 +62,11 @@ export type BannerInput = {
   } | null
   capReset: string
   now: Date
+  /**
+   * S07-T04 (board 102): the month's AI budget once it is reached. research_paused: supplier research waits;
+   * hard_stop: every model call is refused. The Owner gets "Raise limit".
+   */
+  budget?: { state: 'research_paused' | 'hard_stop'; canRaise: boolean } | null
 }
 
 /** A sync older than this is "behind" (board 89; S04-T09 uses the same line for the health state). */
@@ -105,16 +111,38 @@ export function bannerSpecs(input: BannerInput): BannerSpec[] {
       ...(p.canResume ? { resume: true } : {}),
     })
   }
+  if (input.budget) {
+    const stop = input.budget.state === 'hard_stop'
+    out.push({
+      kind: 'budget-reached',
+      tone: stop ? 'bad' : 'warn',
+      title: stop
+        ? 'Assistant stopped: the monthly AI budget is reached.'
+        : 'Research paused: the monthly AI budget is reached.',
+      text: stop
+        ? 'Nothing is read or drafted until the limit is raised or the month ends.'
+        : 'Reading, extraction and drafting continue.',
+      ...(input.budget.canRaise
+        ? { action: { label: 'Raise limit', href: '/assistant/cost' } }
+        : {}),
+    })
+  }
   for (const m of input.mailboxes) {
     const local = `${m.address.split('@')[0]}@`
     if (BROKEN.has(m.status)) {
       const mail = MAIL_OF_ROLE[m.role]
+      // Board 102 state 3: the other sending mailbox keeps running, and nothing switches mailbox.
+      const other = input.mailboxes.find(
+        (o) =>
+          o.id !== m.id && !BROKEN.has(o.status) && o.status !== 'paused' && MAIL_OF_ROLE[o.role]
+      )
+      const still = other ? ` ${other.address.split('@')[0]}@ still runs.` : ''
       out.push({
         kind: 'mailbox-disconnected',
         tone: 'bad',
         title: `${local} disconnected${m.brokenAt ? ` ${clock(m.brokenAt)}` : ''}.`,
         text: mail
-          ? `The Assistant can’t read or send ${mail}.`
+          ? `The Assistant can’t read or send ${mail}.${still}`
           : 'The Assistant can’t read this mailbox.',
         action: { label: 'Reconnect', href: '/settings/mailboxes' },
         mailboxId: m.id,
