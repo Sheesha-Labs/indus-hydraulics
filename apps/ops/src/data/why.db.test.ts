@@ -247,6 +247,63 @@ describe.skipIf(!DB_URL)('Why? · local database', () => {
     await expect(run('nonsense', 'x')).rejects.toThrow('Choose a type')
   })
 
+  it('a link correction may pick any record the Link to… search finds; it must exist', async () => {
+    const s = await scenario()
+    const mk = (n: number) =>
+      db.enquiry.create({
+        data: {
+          ref: `ENQ-2096-${n}${Date.now() % 100000}`,
+          title: `Why link ${n}`,
+          receivedVia: 'manual',
+          receivedAt: new Date(),
+        },
+        select: { id: true, ref: true },
+      })
+    const offered = await mk(1)
+    const searched = await mk(2)
+    const ref = `A-WHY-${randomUUID().slice(0, 8)}`
+    await db.assistantAction.create({
+      data: {
+        ref,
+        actionKey: 'link_mail',
+        levelAtTime: 'do_quietly',
+        guardrails: [],
+        subjectType: 'mail_message',
+        subjectId: s.messageId,
+        headline: `Linked to ${offered.ref}`,
+        reasons: [],
+        state: 'done',
+        surface: 'review',
+        options: [
+          { key: `enquiry:${offered.id}`, label: offered.ref, consequence: 'Offered by the Assistant' },
+        ],
+      },
+    })
+    const v = (await why.getWhy(ref, owner))!
+    expect(v.correction).toMatchObject({
+      valueType: 'option',
+      search: { kind: 'link', messageId: s.messageId },
+    })
+    const run = (value: string) =>
+      db.$transaction((tx) =>
+        override.correctValue(tx, {
+          actionRef: ref,
+          value,
+          reason: 'It belongs to the other enquiry',
+          actor: { id: world.ownerId, initials: 'KB' },
+        })
+      )
+    await expect(run(`enquiry:${randomUUID()}`)).rejects.toThrow('no longer here')
+    await expect(run('mail_thread:x')).rejects.toThrow('search for one')
+    const out = await run(`enquiry:${searched.id}`)
+    expect(out.label).toContain(searched.ref)
+    expect(
+      await db.mailLink.findFirst({
+        where: { messageId: s.messageId, subjectId: searched.id, removedAt: null },
+      })
+    ).not.toBeNull()
+  })
+
   it('unknown and malformed ids are null', async () => {
     expect(await why.getWhy('A-NOPE-00000000', owner)).toBeNull()
     expect(await why.getWhy('../etc', owner)).toBeNull()

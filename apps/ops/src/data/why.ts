@@ -70,6 +70,8 @@ export interface WhyCorrection {
   current: string | null
   choices: CorrectionChoice[]
   consequence: string
+  /** The value can also be searched for (a linked record: Link to…'s search for this message). */
+  search: { kind: 'link'; messageId: string } | null
 }
 
 export interface WhyView {
@@ -403,6 +405,7 @@ async function build(
               correctable.field === 'classification' ? c.key !== message?.classification : true
             ),
           consequence: correctable.consequence,
+          search: correctable.search?.(action) ?? null,
         }
       : null
 

@@ -11,7 +11,9 @@ import {
 } from '@indus/ops-core'
 import type { OpsUser } from '../lib/access-core'
 import type { ReviewSearch } from '../lib/review-params'
+import { DRAFT_EDIT_FIELD, draftVersionOf } from '../server/assistant/decisions'
 import { actionDefinition } from '../server/assistant/registry'
+import { nextExpected } from '../server/clocks'
 import { toProposalCardData, type ProposalCardData } from './proposal-mapper'
 
 // Definitions say which actions batch; they register themselves on import.
@@ -32,7 +34,7 @@ export interface ReviewCard extends ProposalCardData {
   sub: string
   age: string
   /** Board 110: this card replaced an older one (redraft, or a reply superseding a chaser). */
-  supersedes: { headline: string; reason: string; at: string } | null
+  supersedes: { ref: string; headline: string; reason: string; at: string; why: string[] } | null
   /** Board 110: the card came back from Later. */
   backFromLater: string | null
 }
@@ -65,7 +67,37 @@ export interface ReviewReceipt {
   undoRemainingMs: number
 }
 
+/** Board 110 "Changed by <them> while you were reviewing": what changed since the version this person opened. */
+export interface ReviewConflict {
+  actionId: string
+  ref: string
+  /** The version the person opened, and the card's version now. */
+  seen: number
+  version: number
+  by: string
+  at: string
+  /** "the supplier list" / "the subject": what changed, with added and removed recipients. */
+  changes: Array<{ field: string; added: string[]; removed: string[] }>
+}
+
+/** Board 110 "40+ waiting · summary first": one row per family with what can be done in one go. */
+export interface ReviewSummaryRow {
+  family: ReviewFamily
+  label: string
+  count: number
+  unsure: number
+  /** Every card is batchable and Sure: "Approve 12" approves them together. */
+  batch: Array<{ actionId: string; version: number; title: string; family: ReviewFamily }> | null
+  note: string | null
+}
+
 export interface ReviewQueue {
+  /** Board 110: the expanded card changed under the person (?seen=). */
+  conflict: ReviewConflict | null
+  /** Board 110 "40+ waiting": the summary rows, and "after 2 days away". */
+  summary: { rows: ReviewSummaryRow[]; away: string | null } | null
+  /** Board 110 "All clear": the next thing a clock expects. */
+  nextExpected: string | null
   /** Board 110: sends that went wrong or wait, above the cards. */
   attention: AttentionItem[]
   total: number
@@ -162,12 +194,27 @@ export async function listReviewQueue(
     (olderIds.length
       ? await opsDb.assistantAction.findMany({
           where: { id: { in: olderIds } },
-          select: { id: true, headline: true, staleReason: true, staleAt: true, decidedAt: true },
+          select: {
+            id: true,
+            ref: true,
+            headline: true,
+            reasons: true,
+            staleReason: true,
+            staleAt: true,
+            decidedAt: true,
+          },
         })
       : []
     ).map((o) => [
       o.id,
       {
+        ref: o.ref,
+        why: Array.isArray(o.reasons)
+          ? (o.reasons as Array<{ text?: unknown }>)
+              .map((r) => (typeof r?.text === 'string' ? r.text : ''))
+              .filter(Boolean)
+              .slice(0, 3)
+          : [],
         headline: o.headline,
         reason: o.staleReason ?? 'Redrafted by a person',
         at: clock(o.staleAt ?? o.decidedAt ?? now),
@@ -257,7 +304,19 @@ export async function listReviewQueue(
   const expandedRef =
     (search.card && sorted.some((c) => c.ref === search.card) ? search.card : sorted[0]?.ref) ?? null
 
+  const expanded = all.find((c) => c.ref === expandedRef) ?? null
+  const conflict =
+    expanded && search.seen !== undefined && search.seen < expanded.version
+      ? await conflictFor(expanded, rows.find((r) => r.id === expanded.id)!, search.seen, user, now)
+      : null
+  const summaryFirst = all.length >= SUMMARY_AT && !search.type && !search.card && !search.record
+  const summary = summaryFirst ? await summaryOf(all, user, now) : null
+  const next = all.length === 0 ? await nextExpected(now) : null
+
   return {
+    conflict,
+    summary,
+    nextExpected: next ? `${next.text}, due ${dueText(next.at, now)}` : null,
     attention: [
       ...attentionCards.map((r): AttentionItem => {
         const p = (r.preview as { failure?: string; actions?: AttentionItem['verbs'] } | null) ?? {}
@@ -281,6 +340,123 @@ export async function listReviewQueue(
     receipt: await lastReceipt(user, now),
     records,
   }
+}
+
+/** Board 110: the queue opens on a summary by family from this many cards. */
+export const SUMMARY_AT = 40
+
+function dueText(at: Date, now: Date): string {
+  const sameDay = startOfDubaiDay(at).getTime() === startOfDubaiDay(now).getTime()
+  if (sameDay) return clock(at)
+  const tomorrow = startOfDubaiDay(at).getTime() - startOfDubaiDay(now).getTime() === 86_400_000
+  return tomorrow
+    ? `tomorrow ${clock(at)}`
+    : `${new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', day: 'numeric', month: 'short' }).format(at)} ${clock(at)}`
+}
+
+const FIELD_WORD: Readonly<Record<string, string>> = {
+  to: 'the recipients',
+  cc: 'the copy list',
+  subject: 'the subject',
+  body: 'the email text',
+}
+
+/**
+ * What changed on a card since version `seen`: the saved draft versions (activity `draft_edit`) written by
+ * anyone else after it, compared with the version this person opened. Null when nothing but the system moved
+ * the version on (a Later time, a stale mark): the card simply reloads.
+ */
+async function conflictFor(
+  card: ReviewCard,
+  row: Row,
+  seen: number,
+  user: Pick<OpsUser, 'id' | 'role' | 'canSeeMargins'>,
+  now: Date
+): Promise<ReviewConflict | null> {
+  const edits = await opsDb.activityEvent.findMany({
+    where: { actionId: card.id, field: DRAFT_EDIT_FIELD },
+    orderBy: [{ at: 'asc' }, { id: 'asc' }],
+    take: 50,
+    select: { at: true, actorId: true, before: true },
+  })
+  const theirs = edits.filter((e) => {
+    const b = draftVersionOf(e.before)
+    return !!b && b.version >= seen && e.actorId !== user.id
+  })
+  const first = theirs[0]
+  if (!first || !card.email) return null
+  const people = await opsDb.user.findMany({
+    where: { id: { in: [...new Set(theirs.map((e) => e.actorId).filter((x): x is string => !!x))] } },
+    select: { initials: true },
+  })
+  // The version this person had open: the proposal with the draft as it was at `seen`.
+  const mine = toProposalCardData(
+    { ...row, effectivePayload: draftVersionOf(first.before)?.payload ?? null },
+    user,
+    now
+  ).email
+  if (!mine) return null
+  const now_ = card.email
+  const changes: ReviewConflict['changes'] = []
+  for (const f of ['to', 'cc'] as const) {
+    const added = now_[f].filter((x) => !mine[f].includes(x))
+    const removed = mine[f].filter((x) => !now_[f].includes(x))
+    if (added.length || removed.length) changes.push({ field: FIELD_WORD[f]!, added, removed })
+  }
+  if (now_.subject !== mine.subject) changes.push({ field: FIELD_WORD.subject!, added: [], removed: [] })
+  if (now_.body.trim() !== mine.body.trim())
+    changes.push({ field: FIELD_WORD.body!, added: [], removed: [] })
+  return {
+    actionId: card.id,
+    ref: card.ref,
+    seen,
+    version: card.version,
+    by: people.map((p) => p.initials).join(', ') || 'Someone',
+    at: clock(theirs.at(-1)!.at),
+    changes,
+  }
+}
+
+/** Board 110 "43 waiting after 2 days away": one row per family; a batchable all-Sure family approves together. */
+async function summaryOf(
+  all: ReviewCard[],
+  user: Pick<OpsUser, 'id'>,
+  now: Date
+): Promise<{ rows: ReviewSummaryRow[]; away: string | null }> {
+  const rows: ReviewSummaryRow[] = REVIEW_FAMILIES.flatMap((f) => {
+    const cards = all.filter((c) => c.family === f)
+    if (!cards.length) return []
+    const unsure = cards.filter((c) => c.confidence?.level === 'Unsure').length
+    const allSure = cards.every((c) => c.confidence?.level === 'Sure')
+    const batch =
+      allSure && cards.every((c) => c.batchable)
+        ? cards.map((c) => ({ actionId: c.id, version: c.version, title: c.headline, family: c.family }))
+        : null
+    return [
+      {
+        family: f,
+        label: FAMILY_LABEL[f],
+        count: cards.length,
+        unsure,
+        batch,
+        note:
+          f === 'quotations'
+            ? 'client prices · one by one'
+            : batch
+              ? 'all Sure'
+              : unsure
+                ? `${unsure} Unsure`
+                : null,
+      },
+    ]
+  })
+  const last = await opsDb.assistantAction.findFirst({
+    where: { decidedById: user.id, decidedAt: { not: null } },
+    orderBy: { decidedAt: 'desc' },
+    select: { decidedAt: true },
+  })
+  const days = last?.decidedAt ? Math.floor((now.getTime() - last.decidedAt.getTime()) / 86_400_000) : 0
+  return { rows, away: days >= 1 ? `after ${days} ${days === 1 ? 'day' : 'days'} away` : null }
 }
 
 function clock(d: Date): string {

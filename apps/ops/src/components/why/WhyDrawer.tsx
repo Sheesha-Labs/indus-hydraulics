@@ -178,10 +178,45 @@ export interface WhyPageProps {
   returnTo: string
 }
 
-/** The same content as a full page (`why/[evidenceId]`): a reload, a new tab or a shared link. */
-export function WhyPage({ view, returnTo }: WhyPageProps) {
+/**
+ * The drawer's content as a card: eyebrow and decision, the tabs (or the correction form) and the foot. WhyPage
+ * puts it on a page; the board 112 sheet draws three side by side.
+ */
+export function WhyCard({ view, keep }: { view: WhyView; keep: ReactNode }) {
   const formId = useId()
   const s = { ...useWhyState(view), formId }
+  return (
+    <div className="rounded-io-card border-io-line bg-io-card flex flex-col border">
+      <div className="border-io-line flex flex-col gap-[3px] border-b px-5 pt-[18px] pb-3">
+        <span className="io-eyebrow">{view.eyebrow}</span>
+        <h1 className="text-io-ink m-0 text-[18px] leading-[1.3] font-medium">{view.title}</h1>
+      </div>
+      {s.correcting ? (
+        <div className="text-io-ink-2 flex flex-col gap-3.5 px-5 py-4 text-[13px] leading-[1.55]">
+          <Body view={view} s={s} />
+        </div>
+      ) : (
+        <PaneTabs
+          items={whyTabs(view)}
+          value={s.tab}
+          onValueChange={(k) => s.setTab(k as WhyTab)}
+          aria-label="Why? sections"
+          className="[&_[role=tab]]:px-2.5 [&_[role=tablist]]:px-3"
+        >
+          <div className="text-io-ink-2 flex flex-col gap-3.5 px-5 py-4 text-[13px] leading-[1.55]">
+            <Body view={view} s={s} />
+          </div>
+        </PaneTabs>
+      )}
+      <div className="border-io-line flex gap-2 border-t px-5 py-3">
+        <Foot view={view} s={s} keep={keep} />
+      </div>
+    </div>
+  )
+}
+
+/** The same content as a full page (`why/[evidenceId]`): a reload, a new tab or a shared link. */
+export function WhyPage({ view, returnTo }: WhyPageProps) {
   return (
     <div className="px-io-page-x flex flex-col gap-4 py-6">
       <Link
@@ -190,39 +225,15 @@ export function WhyPage({ view, returnTo }: WhyPageProps) {
       >
         ← Back
       </Link>
-      <div className="rounded-io-card border-io-line bg-io-card flex max-w-[640px] flex-col border">
-        <div className="border-io-line flex flex-col gap-[3px] border-b px-5 pt-[18px] pb-3">
-          <span className="io-eyebrow">{view.eyebrow}</span>
-          <h1 className="text-io-ink m-0 text-[18px] leading-[1.3] font-medium">{view.title}</h1>
-        </div>
-        {s.correcting ? (
-          <div className="text-io-ink-2 flex flex-col gap-3.5 px-5 py-4 text-[13px] leading-[1.55]">
-            <Body view={view} s={s} />
-          </div>
-        ) : (
-          <PaneTabs
-            items={whyTabs(view)}
-            value={s.tab}
-            onValueChange={(k) => s.setTab(k as WhyTab)}
-            aria-label="Why? sections"
-            className="[&_[role=tab]]:px-2.5 [&_[role=tablist]]:px-3"
-          >
-            <div className="text-io-ink-2 flex flex-col gap-3.5 px-5 py-4 text-[13px] leading-[1.55]">
-              <Body view={view} s={s} />
-            </div>
-          </PaneTabs>
-        )}
-        <div className="border-io-line flex gap-2 border-t px-5 py-3">
-          <Foot
-            view={view}
-            s={s}
-            keep={
-              <ButtonLink href={returnTo} variant="primary">
-                Keep
-              </ButtonLink>
-            }
-          />
-        </div>
+      <div className="max-w-[640px]">
+        <WhyCard
+          view={view}
+          keep={
+            <ButtonLink href={returnTo} variant="primary">
+              Keep
+            </ButtonLink>
+          }
+        />
       </div>
     </div>
   )

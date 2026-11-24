@@ -114,3 +114,42 @@ export function BatchBar() {
     </div>
   )
 }
+
+/** Board 110 "40+ waiting": "Approve 12" for a family whose cards are all batchable and Sure. */
+export function ApproveFamily({ items, primary }: { items: readonly Item[]; primary: boolean }) {
+  const router = useRouter()
+  const { toast } = useToast()
+  const [busy, setBusy] = useState(false)
+  async function approveAll() {
+    setBusy(true)
+    try {
+      const r = await batchApproveProposalsAction({
+        items: items.map((i) => ({ actionId: i.actionId, version: i.version })),
+      })
+      if (!r.success) {
+        toast({ kind: 'error', title: r.error })
+        return
+      }
+      const failed = r.data.results.filter((x) => !x.ok).length
+      toast({
+        kind: failed ? 'error' : 'success',
+        title: failed
+          ? `${r.data.approved} approved · ${failed} not`
+          : `${r.data.approved} approved`,
+      })
+      router.refresh()
+    } finally {
+      setBusy(false)
+    }
+  }
+  return (
+    <Button
+      variant={primary ? 'primary' : 'secondary'}
+      size="sm"
+      busy={busy}
+      onClick={() => void approveAll()}
+    >
+      Approve {items.length}
+    </Button>
+  )
+}

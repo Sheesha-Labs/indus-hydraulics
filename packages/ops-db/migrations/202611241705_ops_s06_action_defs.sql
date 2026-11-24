@@ -20,7 +20,7 @@ INSERT INTO "ops"."autopilot_action_def"
 VALUES
   ('override_value', 'system', 'Correct a value the Assistant set', 'A person''s correction from Why? · Produces the corrected value and a learned preference', 'Recorded as the person''s', 137, false, NULL, NULL, 'do_quietly', 'do_quietly', 'do_quietly', NULL, '112', 'awaiting'),
   ('outbound_attention', 'system', 'A send that needs you', 'A failed or unknown send with no card of its own · Produces Retry, Copy text and Mark as sent', 'Never retried on its own', 138, false, NULL, NULL, 'draft_and_ask', 'draft_and_ask', 'draft_and_ask', NULL, '110', 'awaiting'),
-  ('instruction', 'system', 'Instruction to the Assistant', 'Text typed in the Assistant panel · Produces a proposal for you to approve', 'Always asks you', 139, false, NULL, 'draft_and_ask', 'draft_and_ask', 'draft_and_ask', 'draft_and_ask', NULL, 'S03A', 'awaiting')
+  ('instruction', 'system', 'Instructions from the Assistant panel', 'Text typed in the Assistant panel · Produces a proposal for you to approve', 'Turns what you type into a proposal. Nothing changes until you approve it.', 139, false, NULL, 'draft_and_ask', 'draft_and_ask', 'draft_and_ask', 'draft_and_ask', NULL, 'S03A', 'awaiting')
 ON CONFLICT ("key") DO NOTHING;
 
 INSERT INTO "ops"."autopilot_setting" ("actionKey", "level", "rules", "version", "updatedAt")

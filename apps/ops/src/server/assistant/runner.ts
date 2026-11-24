@@ -78,6 +78,23 @@ export async function currentBudgetState(now: Date): Promise<InterimBudgetState>
   })
 }
 
+let budgetCache: { at: number; month: string; value: InterimBudgetState } | null = null
+const BUDGET_TTL_MS = 60_000
+
+/**
+ * The month's budget state for display (the Assistant panel's box, S06-T08), read at most once a minute per
+ * server. It never decides a model call: every call still reserves budget first (ai_budget_reserve), so a
+ * minute-old "ok" cannot spend past the limit.
+ */
+export async function displayBudgetState(now = new Date()): Promise<InterimBudgetState> {
+  const month = monthKey(now)
+  if (budgetCache && budgetCache.month === month && Date.now() - budgetCache.at < BUDGET_TTL_MS)
+    return budgetCache.value
+  const value = await currentBudgetState(now)
+  budgetCache = { at: Date.now(), month, value }
+  return value
+}
+
 export async function resolveRun(
   data: ActionRequestedData,
   now = new Date()

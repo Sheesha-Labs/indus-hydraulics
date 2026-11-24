@@ -1,7 +1,8 @@
 import { needLabel, recordBaseHref, type RecordHeaderState } from '@indus/ops-core'
 import { Card } from '@indus/ops-ui/card'
-import { AssistantStrip, RecordHeader } from '@indus/ops-ui/shell'
+import { RecordHeader } from '@indus/ops-ui/shell'
 import { recordTabItems } from '../../lib/record-tabs'
+import RecordAssistantStrip from './RecordAssistantStrip'
 
 /**
  * The record cockpit's header from one `RecordHeaderState` (05 §6.2): RecordHeader with the kind's tab set
@@ -36,7 +37,7 @@ export default function StateRecordHeader({ state }: { state: RecordHeaderState 
 /** The Assistant strip under the header: what it did on the record, and what needs a person. */
 export function RecordStrip({ state }: { state: RecordHeaderState }) {
   return (
-    <AssistantStrip
+    <RecordAssistantStrip
       recordKey={`record:${state.ref}`}
       did={state.did ?? 'has not acted on this record yet'}
       {...(state.need

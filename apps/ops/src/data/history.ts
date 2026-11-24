@@ -90,6 +90,12 @@ export function shownValue(v: unknown): string {
   if (v === null || v === undefined || v === '') return '—'
   if (typeof v === 'string') return v.replace(/_/g, ' ')
   if (typeof v === 'number' || typeof v === 'boolean') return String(v)
+  // A saved draft version (S06-T03 draft_edit): "Version 4 · to, body", never the email itself.
+  const d = v as { version?: unknown; fields?: unknown; kept?: unknown }
+  if (typeof d.version === 'number') {
+    const fields = Array.isArray(d.fields) && d.fields.length ? ` · ${d.fields.join(', ')}` : ''
+    return `Version ${d.version}${fields}${d.kept ? ' · kept' : ''}`
+  }
   return JSON.stringify(v)
 }
 

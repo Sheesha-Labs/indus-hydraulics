@@ -55,7 +55,11 @@ registerFieldWriter('mail_message', 'handledState', async (tx, id, { to }) => {
     })
 })
 
-/** "type:id" ↔ null: retire the link (removedAt; kept as history) or bring it back. */
+/**
+ * "type:id" ↔ null: retire the link (removedAt; kept as history) or bring it back. The link effect also put
+ * the thread on the link's enquiry when it had none; retiring the last live link to that enquiry in the
+ * thread takes the thread off it again, and bringing a link back puts it back.
+ */
 registerFieldWriter('mail_message', 'link', async (tx, messageId, { to, from }) => {
   const parse = (v: unknown) => {
     const [t, i] = (str(v) ?? '').split(':')
@@ -63,17 +67,42 @@ registerFieldWriter('mail_message', 'link', async (tx, messageId, { to, from }) 
   }
   const gone = parse(from)
   const back = parse(to)
+  const msg = await tx.mailMessage.findUniqueOrThrow({
+    where: { id: messageId },
+    select: { threadId: true, thread: { select: { enquiryId: true } } },
+  })
   if (gone) {
+    const retired = await tx.mailLink.findMany({
+      where: { messageId, ...gone, removedAt: null },
+      select: { enquiryId: true },
+    })
     await tx.mailLink.updateMany({
       where: { messageId, ...gone, removedAt: null },
       data: { removedAt: new Date() },
     })
+    const enquiryId = retired.find((r) => r.enquiryId)?.enquiryId ?? null
+    if (enquiryId && msg.thread.enquiryId === enquiryId) {
+      const still = await tx.mailLink.count({
+        where: { enquiryId, removedAt: null, message: { threadId: msg.threadId } },
+      })
+      if (still === 0)
+        await tx.mailThread.update({ where: { id: msg.threadId }, data: { enquiryId: null } })
+    }
   }
   if (back) {
     await tx.mailLink.updateMany({
       where: { messageId, ...back },
       data: { removedAt: null },
     })
+    const restored = await tx.mailLink.findFirst({
+      where: { messageId, ...back },
+      select: { enquiryId: true },
+    })
+    if (restored?.enquiryId && !msg.thread.enquiryId)
+      await tx.mailThread.update({
+        where: { id: msg.threadId },
+        data: { enquiryId: restored.enquiryId },
+      })
   }
 })
 

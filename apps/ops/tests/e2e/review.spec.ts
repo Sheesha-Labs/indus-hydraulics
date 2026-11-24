@@ -1,7 +1,7 @@
 import AxeBuilder from '@axe-core/playwright'
 import { opsDb as db } from '@indus/ops-db'
 import type { Page } from '@playwright/test'
-import { expect, test } from '../signed-in'
+import { DEMO_EMAILS, expect, signInByEmail, test } from '../signed-in'
 
 /**
  * S06-T02 · board-104 Review: approve → the server's undo countdown → Undo returns the card; Edit → Save and
@@ -123,6 +123,7 @@ test.beforeAll(async () => {
   ids.d = await card('later', 'list-d.pdf')
   ids.e = await card('next', 'list-e.pdf')
   ids.f = await card('after', 'list-f.pdf')
+  ids.g = await card('conflict', 'list-g.pdf')
 })
 
 test.afterAll(async () => {
@@ -202,7 +203,7 @@ test('board-104: Reject with a reason chip; Later leaves the queue; J moves to t
   await expect(pop).toBeVisible()
   await pop.getByText('Not needed', { exact: true }).click()
   await pop.getByLabel('Why not? (one line)').fill('Already received an open copy by email')
-  await pop.getByRole('button', { name: 'Reject', exact: true }).click()
+  await pop.getByRole('button', { name: 'Reject only' }).click()
   await expect.poll(() => state(ids.c!), { timeout: 30_000 }).toBe('rejected')
   expect((await db.assistantAction.findUniqueOrThrow({ where: { ref: ids.c } })).rejectReason).toBe(
     'Already received an open copy by email'
@@ -227,4 +228,55 @@ test('board-104: Reject with a reason chip; Later leaves the queue; J moves to t
   await page.locator('main#content h1').click()
   await page.keyboard.press('k')
   await expect(page).toHaveURL(new RegExp(`card=${ids.e}`))
+})
+
+test('board-110: the Helper saves a change while you review; Approve waits until you choose', async ({
+  page,
+  browser,
+  signedInAs,
+}) => {
+  await signedInAs('owner')
+  await page.goto(`/review?card=${ids.g}`)
+  const cardEl = page.locator(`#proposal-${ids.g}`)
+  await expect(cardEl).toBeVisible({ timeout: 90_000 })
+
+  // Meanwhile the Helper opens the same card, edits the subject and saves without approving.
+  const ctx = await browser.newContext()
+  try {
+    await signInByEmail(ctx.request, DEMO_EMAILS.helper)
+    const helper = await ctx.newPage()
+    await helper.goto(`/review?card=${ids.g}&edit=1`)
+    await helper.getByLabel('Subject').fill('Re: RFQ conflict (helper)')
+    await helper.getByRole('button', { name: 'Save', exact: true }).click()
+    await expect
+      .poll(
+        async () =>
+          (await db.assistantAction.findUniqueOrThrow({ where: { ref: ids.g } })).effectivePayload,
+        { timeout: 30_000 }
+      )
+      .toMatchObject({ subject: 'Re: RFQ conflict (helper)' })
+  } finally {
+    await ctx.close()
+  }
+
+  // The Owner approves the version on screen: refused, and the page says what changed.
+  await cardEl.locator('[data-verb="approve"]').click()
+  const panel = page.locator('[data-part="conflict"]')
+  await expect(panel).toBeVisible({ timeout: 30_000 })
+  await expect(page).toHaveURL(/seen=\d+/)
+  await expect(panel).toContainText('changed the subject')
+  await expect(panel).toContainText('Approving now would send')
+  await expect(page.locator(`#proposal-${ids.g} [data-verb="approve"]`)).toBeDisabled()
+  expect(await db.outboundEmail.count({ where: { action: { ref: ids.g } } })).toBe(0)
+  expect(await blocking(page)).toEqual([])
+
+  // Keep mine: the Owner's version is back and Approve works again; the Owner's subject goes out.
+  await panel.getByRole('button', { name: /^Keep mine and tell / }).click()
+  await expect(panel).toBeHidden({ timeout: 30_000 })
+  const approve = page.locator(`#proposal-${ids.g} [data-verb="approve"]`)
+  await expect(approve).toBeEnabled()
+  await approve.click()
+  await expect.poll(() => state(ids.g!), { timeout: 30_000 }).toBe('queued')
+  const sent = await db.outboundEmail.findFirstOrThrow({ where: { action: { ref: ids.g } } })
+  expect(sent.subject).toBe('Re: RFQ conflict')
 })

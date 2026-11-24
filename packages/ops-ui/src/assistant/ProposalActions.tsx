@@ -57,10 +57,15 @@ export function isActionable(state: ProposalState): boolean {
  * supplier POs, payments) is approved by a click on the button and never from the keyboard (05 §7.7).
  */
 export function canApproveFromKeyboard(
-  card: Pick<ProposalCardProps, 'level' | 'readOnly'>,
+  card: Pick<ProposalCardProps, 'level' | 'readOnly' | 'approveDisabled'>,
   state: ProposalState
 ): boolean {
-  return isActionable(state) && card.level?.locked !== true && card.readOnly !== true
+  return (
+    isActionable(state) &&
+    card.level?.locked !== true &&
+    card.readOnly !== true &&
+    card.approveDisabled !== true
+  )
 }
 
 export interface ProposalController {
@@ -79,7 +84,7 @@ export interface ProposalController {
   chip: string | undefined
   setChip: (v: string) => void
   approve: () => void
-  reject: (reason: string, chip?: string) => void
+  reject: (reason: string, chip?: string, redraft?: boolean) => void
   later: (until: LaterUntil) => void
   undo: () => Promise<Result<void>>
   reopen: () => void
@@ -172,13 +177,17 @@ export function useProposalActions(card: ProposalCardProps): ProposalController 
     })
   }
 
-  const reject = (reason: string, rejectChip?: string) => {
+  const reject = (reason: string, rejectChip?: string, redraft?: boolean) => {
     const text = reason.trim()
     if (!text || !isActionable(shown.state) || card.readOnly) return
     start(async () => {
       setShown({ state: 'rejected', note: text })
       const res = await settle(() =>
-        actions.reject({ reason: text, ...(rejectChip ? { chip: rejectChip } : {}) })
+        actions.reject({
+          reason: text,
+          ...(rejectChip ? { chip: rejectChip } : {}),
+          ...(redraft ? { redraft: true } : {}),
+        })
       )
       if (!res.success) {
         toast({ kind: 'error', title: res.error })
@@ -325,7 +334,13 @@ export default function ProposalActions({
 
   return (
     <div data-part="actions" className={row}>
-      <Button variant="primary" size={size} onClick={c.approve} data-verb="approve">
+      <Button
+        variant="primary"
+        size={size}
+        onClick={c.approve}
+        disabled={card.approveDisabled === true}
+        data-verb="approve"
+      >
         {card.approveLabel ?? 'Approve'}
       </Button>
       {!collapsed && card.actions.edit ? (
@@ -412,7 +427,7 @@ function RejectPopover({
   size: 'sm' | 'lg'
   open: boolean
   onOpenChange: (open: boolean) => void
-  onReject: (reason: string, chip?: string) => void
+  onReject: (reason: string, chip?: string, redraft?: boolean) => void
 }) {
   const [chip, setChip] = useState<string | undefined>(undefined)
   const [error, setError] = useState<string | null>(null)
@@ -422,6 +437,9 @@ function RejectPopover({
   const submit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
+    // Board 103: "Reject and redraft" (the submitter named redraft) or "Reject only".
+    const submitter = (e.nativeEvent as SubmitEvent).submitter
+    const redraft = submitter instanceof HTMLButtonElement && submitter.name === 'redraft'
     const value = new FormData(form).get('reason')
     const reason = typeof value === 'string' ? value : ''
     if (!reason.trim()) {
@@ -431,7 +449,7 @@ function RejectPopover({
       if (input instanceof HTMLInputElement) input.focus()
       return
     }
-    onReject(reason, chip)
+    onReject(reason, chip, redraft)
     onOpenChange(false)
     setChip(undefined)
     setError(null)
@@ -472,9 +490,12 @@ function RejectPopover({
           placeholder="e.g. Use the datasheet answer instead"
           {...(error ? { error } : {})}
         />
-        <div className="flex justify-end">
-          <Button type="submit" variant="danger" size="sm">
-            Reject
+        <div className="flex items-center gap-2">
+          <Button type="submit" name="redraft" size="sm">
+            Reject and redraft
+          </Button>
+          <Button type="submit" name="only" variant="ghost" size="sm">
+            Reject only
           </Button>
         </div>
       </form>

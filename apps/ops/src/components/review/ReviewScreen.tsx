@@ -1,7 +1,6 @@
 import { NeedsRow } from '@indus/ops-ui/card'
 import { ButtonLink, Choices, Segmented } from '@indus/ops-ui/controls'
 import { PageHeader } from '@indus/ops-ui/shell'
-import { EmptyState } from '@indus/ops-ui/states'
 import { T4Review } from '@indus/ops-ui/templates'
 import { FAMILY_LABEL, REVIEW_FAMILIES, type ReviewFamily } from '@indus/ops-core'
 import type { Route } from 'next'
@@ -9,13 +8,16 @@ import Link from 'next/link'
 import { Lock } from 'lucide-react'
 import type { ReviewCard, ReviewQueue, WaitingItem } from '../../data/review'
 import { reviewQuery, type ReviewSearch } from '../../lib/review-params'
-import { Banner } from '@indus/ops-ui/status'
+import { AssistantPill, Banner } from '@indus/ops-ui/status'
 import ResumeBannerAction from '../shell/ResumeBannerAction'
 import AttentionRow from './AttentionRow'
 import ReceiptRow from './ReceiptRow'
 import ReviewCardClient from './ReviewCardClient'
 import ReviewKeys from './ReviewKeys'
 import ReviewRail from './ReviewRail'
+import ConflictPanel from './ConflictPanel'
+import RecordFilterMenu from './RecordFilterMenu'
+import { ReviewEmpty, ReviewSummary, SupersededRow } from './ReviewStates'
 import { BatchBar, BatchCheckbox, ReviewSelectionProvider } from './ReviewSelection'
 
 /**
@@ -58,13 +60,29 @@ export default function ReviewScreen({
     .filter(Boolean)
     .join(' · ')
 
+  // Board 104: a quiet top bar (crumb, page name, the Assistant's state), then the count as the page's serif
+  // title with its order controls, and the family chips with the record menu.
   const header = (
     <PageHeader
       crumb="Workspace"
-      title={`Review · ${queue.total} waiting`}
-      meta={meta}
-      segmented={
-        <span className="flex gap-2">
+      title="Review"
+      actions={
+        <AssistantPill
+          status={paused ? 'paused' : 'running'}
+          label={paused ? 'Assistant · paused' : 'Assistant · running'}
+        />
+      }
+    />
+  )
+  const recordLabel = search.record
+    ? (queue.records.find((r) => r.value === search.record)?.label.split(' · ')[0] ?? 'One record')
+    : 'All records'
+  const head = (
+    <div data-part="review-head" className="flex flex-col gap-4">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <h2 className="io-display text-io-greeting m-0">Review · {queue.total} waiting</h2>
+        <span className="text-io-ink-3 text-[12.5px]">{meta}</span>
+        <span className="ml-auto flex gap-2">
           <Segmented<'record' | 'flat'>
             aria-label="Group"
             size="sm"
@@ -87,14 +105,14 @@ export default function ReviewScreen({
             hrefFor={(v) => href({ sort: v, card: undefined })}
           />
         </span>
-      }
-      filters={
+      </div>
+      <div className="flex items-start gap-3">
         <Choices<'all' | ReviewFamily>
           aria-label="Card types"
           value={search.type ?? 'all'}
           options={[
             { value: 'all', label: 'All', count: queue.counts.all },
-            ...REVIEW_FAMILIES.map((f) => ({
+            ...REVIEW_FAMILIES.filter((f) => queue.counts[f] > 0 || search.type === f).map((f) => ({
               value: f,
               label: FAMILY_LABEL[f],
               count: queue.counts[f],
@@ -102,47 +120,48 @@ export default function ReviewScreen({
           ]}
           hrefFor={(v) => href({ type: v === 'all' ? undefined : v, card: undefined })}
         />
-      }
-      summary={
-        queue.records.length ? (
-          <nav aria-label="Records" className="flex flex-wrap gap-2 text-[12px]">
-            {search.record ? (
-              <Link
-                href={href({ record: undefined, card: undefined }) as Route}
-                className="text-io-accent hover:underline"
-              >
-                All records
-              </Link>
-            ) : (
-              <span>All records</span>
-            )}
-          </nav>
-        ) : null
-      }
-    />
+        {queue.records.length ? (
+          <span className="ml-auto flex-none">
+            <RecordFilterMenu
+              label={recordLabel}
+              options={[
+                { label: 'All records', href: href({ record: undefined, card: undefined }) },
+                ...queue.records.map((r) => ({
+                  label: r.label,
+                  href: href({ record: r.value, card: undefined }),
+                })),
+              ]}
+            />
+          </span>
+        ) : null}
+      </div>
+    </div>
   )
 
   const rows = (card: ReviewCard) => {
     const expanded = card.ref === queue.expandedRef
     if (expanded) {
+      const conflict = queue.conflict?.ref === card.ref ? queue.conflict : null
       return (
         <div key={card.id} className="flex flex-col gap-2">
           {card.supersedes ? (
-            <p className="text-io-ink-3 text-[12.5px]" data-part="superseded">
-              <span className="line-through">{card.supersedes.headline}</span> · Superseded at{' '}
-              {card.supersedes.at}: {card.supersedes.reason}
-            </p>
+            <SupersededRow supersedes={card.supersedes} headline={card.headline} />
           ) : null}
           {card.backFromLater ? (
             <p className="text-io-ink-3 text-[12.5px]" data-part="back-from-later">
               Back from Later ({card.backFromLater})
             </p>
           ) : null}
+          {conflict ? (
+            <ConflictPanel conflict={conflict} reviewHref={href({ card: card.ref })} />
+          ) : null}
           <ReviewCardClient
             card={card}
-            editing={search.edit}
+            editing={search.edit && !conflict}
             editHref={href({ card: card.ref, edit: true })}
             closeEditHref={href({ card: card.ref, edit: false })}
+            conflictHref={href({ card: card.ref, seen: card.version })}
+            locked={!!conflict}
           />
         </div>
       )
@@ -184,48 +203,16 @@ export default function ReviewScreen({
     )
   }
 
-  // Board 110 "40+ waiting": a summary by family first; a chip (or Open) shows that family's cards.
-  const summaryFirst = queue.total >= 40 && !search.type && !search.card && !search.record
+  // Board 110: all clear, or "40+ waiting" summary first, else the cards by record.
   const stream =
     queue.total === 0 ? (
-      <EmptyState
-        mark="RV"
-        title="Nothing waiting on you"
-        text={`The Assistant did ${done.total} ${done.total === 1 ? 'thing' : 'things'} today.`}
-        actions={
-          <ButtonLink href="/assistant/log?day=today" variant="secondary" size="sm">
-            See what was done
-          </ButtonLink>
-        }
-        align="left"
+      <ReviewEmpty done={done.total} next={queue.nextExpected} />
+    ) : queue.summary ? (
+      <ReviewSummary
+        total={queue.total}
+        summary={queue.summary}
+        openHref={(f) => href({ type: f, card: undefined })}
       />
-    ) : summaryFirst ? (
-      <section
-        aria-label="Waiting, by kind"
-        className="bg-io-card border-io-line rounded-io-card flex flex-col border"
-      >
-        <h2 className="border-io-line border-b px-4 py-3 text-[14px] font-medium">
-          {queue.total} waiting · oldest {queue.oldest}
-        </h2>
-        <ul>
-          {REVIEW_FAMILIES.filter((f) => queue.counts[f] > 0).map((f) => (
-            <li
-              key={f}
-              className="border-io-line flex items-center gap-3 border-b px-4 py-2.5 text-[13px] last:border-b-0"
-            >
-              <span className="min-w-0 flex-1">
-                {FAMILY_LABEL[f]} · <span className="tabular-nums">{queue.counts[f]}</span>
-                {f === 'quotations' ? (
-                  <span className="text-io-ink-3"> · client prices · one by one</span>
-                ) : null}
-              </span>
-              <ButtonLink href={href({ type: f, card: undefined })} size="sm" variant="secondary">
-                Open
-              </ButtonLink>
-            </li>
-          ))}
-        </ul>
-      </section>
     ) : (
       <ReviewKeys
         hrefs={cards.map((c) => [c.ref, href({ card: c.ref })])}
@@ -263,6 +250,7 @@ export default function ReviewScreen({
         header={header}
         detail={
           <>
+            {head}
             {paused ? (
               <Banner
                 tone="warn"

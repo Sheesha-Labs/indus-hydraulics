@@ -259,6 +259,92 @@ describe.skipIf(!DB_URL)('review decisions · local database', () => {
     ).not.toBeNull()
   })
 
+  it('board 110: a saved edit refuses the old version; the queue shows the change; Keep mine restores it', async () => {
+    const a = await card()
+    const OTHER = 'other-sender@example-valve.test'
+    // The initials the page shows come from the user row, not the decider passed in.
+    const HE = (await db.user.findUniqueOrThrow({ where: { id: world.helperId } })).initials
+    // The Helper saves an edit without approving: the version moves on, the trail keeps both versions.
+    const saved = await d.saveEdits(
+      { actionId: a.id, version: a.version, edits: { to: [OTHER], subject: 'Re: RFQ list (AB)' } },
+      helper
+    )
+    expect(saved.fields).toEqual(['to', 'subject'])
+    expect(saved.version).toBeGreaterThan(a.version)
+    // The Owner approves the version they opened: refused as changed, nothing queued.
+    await expect(d.approve({ actionId: a.id, version: a.version }, owner)).rejects.toMatchObject({
+      code: 'changed',
+    })
+    expect(await db.outboundEmail.count({ where: { actionId: a.id } })).toBe(0)
+
+    // The Review page, opened on ?seen=<old version>, shows what the Helper changed; Approve stays off.
+    const { listReviewQueue } = await import('../../data/review')
+    const ownerView = { id: owner.id, role: 'owner' as const, canSeeMargins: true }
+    const q = await listReviewQueue(ownerView, {
+      group: 'record',
+      sort: 'oldest',
+      card: a.ref,
+      seen: a.version,
+      edit: false,
+    })
+    expect(q.conflict).toMatchObject({
+      ref: a.ref,
+      by: HE,
+      seen: a.version,
+      version: saved.version,
+      changes: [
+        { field: 'the recipients', added: [OTHER], removed: [TO] },
+        { field: 'the subject', added: [], removed: [] },
+      ],
+    })
+    // Without ?seen= (Review his change) there is no conflict and the card carries the Helper's version.
+    const plain = await listReviewQueue(ownerView, {
+      group: 'record',
+      sort: 'oldest',
+      card: a.ref,
+      edit: false,
+    })
+    expect(plain.conflict).toBeNull()
+
+    // Keep mine: the Owner's version comes back, the Helper is told, both versions stay in the trail.
+    const kept = await d.keepMyVersion(
+      { actionId: a.id, version: saved.version, seen: a.version },
+      owner
+    )
+    expect(kept.told).toEqual([HE])
+    const row = await db.assistantAction.findUniqueOrThrow({ where: { id: a.id } })
+    expect(row.effectivePayload).toBeNull()
+    expect(row.version).toBe(kept.version)
+    const trail = await db.activityEvent.findMany({
+      where: { actionId: a.id, field: d.DRAFT_EDIT_FIELD },
+      orderBy: { at: 'asc' },
+    })
+    expect(trail.map((t) => (t.after as { payload: object }).payload)).toEqual([
+      { to: [OTHER], subject: 'Re: RFQ list (AB)' },
+      {},
+    ])
+    expect(
+      await db.notification.count({
+        where: { userId: world.helperId, dedupeKey: `draft-kept:${a.id}:${kept.version}` },
+      })
+    ).toBe(1)
+    expect(
+      (await db.assistantActionEvent.findMany({ where: { actionId: a.id } })).map((e) => e.note)
+    ).toEqual(
+      expect.arrayContaining([
+        'Edited by AB: to, subject',
+        `KB kept their version over ${HE}'s edit`,
+      ])
+    )
+
+    // Now approvable on the new version, and the Owner's (the Assistant's) recipients go out.
+    const out = await d.approve({ actionId: a.id, version: kept.version }, owner)
+    expect(out.state).toBe('queued')
+    expect(
+      (await db.outboundEmail.findFirstOrThrow({ where: { actionId: a.id } })).toAddresses
+    ).toEqual([TO])
+  })
+
   it('roles: a Helper cannot send a client-mailbox reply or supplier mail without the flag', async () => {
     const a = await card()
     await expect(d.approve({ actionId: a.id, version: a.version }, helper)).rejects.toMatchObject({

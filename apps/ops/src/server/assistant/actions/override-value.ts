@@ -8,6 +8,7 @@ import {
   type LinkableType,
   type OverrideResult,
 } from '../../mail/overrides'
+import { linkTargetById } from '../../mail/suggest-links'
 
 /**
  * `override_value` (S06-T05, board 112 "This is wrong…"): which values the Assistant set can be corrected from
@@ -45,6 +46,11 @@ export interface Correctable {
   consequence: string
   /** The choices offered (class: every type; option: the action's alternatives). */
   choices(action: CorrectableAction): CorrectionChoice[]
+  /**
+   * S06-T05: the drawer may also search for a value (Link to…'s search for a linked record). The message the
+   * search runs for; apply then accepts any value the server can resolve, not only the stored choices.
+   */
+  search?(action: CorrectableAction): { kind: 'link'; messageId: string } | null
   /** Throws a CorrectionError when `value` is not an allowed choice. */
   apply(
     tx: Prisma.TransactionClient,
@@ -130,21 +136,28 @@ registerCorrectable('link_mail', {
   consequence:
     'Changing it moves the email to that record and records “Overridden by” you in History.',
   choices: storedOptions,
+  search: (action) =>
+    action.subjectType === 'mail_message' && action.subjectId
+      ? { kind: 'link', messageId: action.subjectId }
+      : null,
   async apply(tx, { action, value, reason, actor }) {
-    const choice = storedOptions(action).find((o) => o.key === value)
     const [type, id] = value.split(':')
-    if (!choice || !type || !id || !(LINKABLE as readonly string[]).includes(type)) {
-      throw new CorrectionError('Choose one of the records offered, or use Link to… in Mail')
+    if (!type || !id || !(LINKABLE as readonly string[]).includes(type)) {
+      throw new CorrectionError('Choose a record offered, or search for one')
     }
+    // A stored alternative, or any record the Link to… search found: it must exist.
+    const target = await linkTargetById(tx, type, id)
+    if (!target) throw new CorrectionError('That record is no longer here; search again')
+    const choice = storedOptions(action).find((o) => o.key === value)
     const result = await linkTo(tx, {
       messageId: mailSubject(action),
       subjectType: type as LinkableType,
       subjectId: id,
-      enquiryId: type === 'enquiry' ? id : null,
+      enquiryId: target.enquiryId,
       actor,
       replace: true,
       signal: { reason, via: 'why', correctsAction: action.ref },
     })
-    return { result, label: choice.label }
+    return { result, label: choice?.label ?? target.title }
   },
 })

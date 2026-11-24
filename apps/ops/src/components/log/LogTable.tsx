@@ -3,7 +3,7 @@
 import { Tag } from '@indus/ops-ui/status'
 import type { Route } from 'next'
 import Link from 'next/link'
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { readLogEntry } from '../../actions/read/log-entry'
 import type { LogDay, LogEntryDetail, LogRow } from '../../data/assistant-log'
 
@@ -89,6 +89,19 @@ export default function LogTable({
   const [details, setDetails] = useState<
     Record<string, LogEntryDetail | null | 'loading' | 'error'>
   >({})
+
+  // A link with ?open= (Why? and the panel link here) arrives expanded: read that entry once.
+  const opened = useRef(false)
+  useEffect(() => {
+    if (opened.current || !initialOpen) return
+    opened.current = true
+    const row = days.flatMap((d) => d.rows).find((r) => r.id === initialOpen)
+    const actionId = row?.actionId
+    if (!actionId) return
+    void readLogEntry({ actionId }).then((r) =>
+      setDetails((d) => ({ ...d, [actionId]: r.success ? r.data : 'error' }))
+    )
+  }, [days, initialOpen])
 
   async function toggle(row: LogRow) {
     if (!row.actionId) return

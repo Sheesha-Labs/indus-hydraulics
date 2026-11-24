@@ -97,13 +97,16 @@ describe.skipIf(!DB_URL)('Assistant panel · local database', () => {
   })
 
   it('three sections for this record only, in three queries', async () => {
+    // The budget state is read once a minute per server, so a panel read is the three record queries.
+    await panel.getAssistantPanel(ref, owner, now)
     const spies = [
       vi.spyOn(db.enquiry, 'findUnique'),
       vi.spyOn(db.assistantAction, 'findMany'),
       vi.spyOn(db.outboundEmail, 'findMany'),
+      vi.spyOn(db.aiBudget, 'findUnique'),
     ]
     const f = await panel.getAssistantPanel(ref, owner, now)
-    expect(spies.map((s) => s.mock.calls.length)).toEqual([1, 1, 1])
+    expect(spies.map((s) => s.mock.calls.length)).toEqual([1, 1, 1, 0])
     for (const s of spies) s.mockRestore()
 
     expect(f.record?.ref).toBe(ref)

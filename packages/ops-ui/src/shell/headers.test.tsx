@@ -275,6 +275,15 @@ describe('AssistantStrip', () => {
     )
   })
 
+  it('with onOpenPanel the ASSISTANT tag is the record’s Assistant control', async () => {
+    const open = vi.fn<() => void>()
+    render(<AssistantStrip recordKey="record:ENQ-2026-0001" did="did" onOpenPanel={open} />)
+    const control = screen.getByRole('button', { name: 'Assistant panel' })
+    expect(control).toHaveAttribute('aria-expanded', 'false')
+    await userEvent.click(control)
+    expect(open).toHaveBeenCalledTimes(1)
+  })
+
   it('asks for fresh data when its live key moves after the first reading', () => {
     const onStale = vi.fn<() => void>()
     const strip = (n: number | undefined) => (

@@ -251,6 +251,104 @@ describe.skipIf(!DB_URL)('undo and corrections · local database', () => {
     if (out.undone) expect(out.events.map((e) => e.name)).toContain('ops/review.changed')
   })
 
+  it('an internal link undone inside its window: the link, the thread and the state go back as new rows', async () => {
+    seq += 1
+    const m = await thread()
+    const enq = await db.enquiry.create({
+      data: {
+        ref: `ENQ-2097-${seq}${Date.now() % 100000}`,
+        title: 'Undo link test',
+        receivedVia: 'manual',
+        receivedAt: new Date(),
+      },
+      select: { id: true, ref: true },
+    })
+    const a = await db.assistantAction.create({
+      data: {
+        ref: `${REF_PREFIX}${Date.now()}-${seq}`,
+        actionKey: 'link_mail',
+        levelAtTime: 'do_quietly',
+        guardrails: [],
+        subjectType: 'mail_message',
+        subjectId: m.id,
+        headline: `Linked to ${enq.ref}`,
+        reasons: [],
+        state: 'running',
+        surface: 'review',
+        confidence: 'sure',
+        checks: [],
+        output: {
+          kind: 'link',
+          candidate: {
+            key: enq.id,
+            label: enq.ref,
+            subjectType: 'enquiry',
+            subjectId: enq.id,
+            enquiryId: enq.id,
+          },
+          companyId: null,
+          confidence: 'sure',
+          reasons: [],
+          options: [],
+        },
+        inputs: {
+          request: {
+            actionKey: 'link_mail',
+            subjectType: 'mail_message',
+            subjectId: m.id,
+            trigger: 'test',
+            origin: 'live',
+            sourceVersion: 1,
+          },
+        },
+      },
+      select: { id: true },
+    })
+    const ran = await runner.effectRun(a.id)
+    expect(ran.state).toBe('done')
+    const linked = await db.mailLink.findFirstOrThrow({
+      where: { messageId: m.id, subjectId: enq.id },
+    })
+    expect(linked.removedAt).toBeNull()
+    expect((await db.mailThread.findUniqueOrThrow({ where: { id: m.threadId } })).enquiryId).toBe(
+      enq.id
+    )
+    const handledAfterLink = (await db.mailMessage.findUniqueOrThrow({ where: { id: m.id } }))
+      .handledState
+
+    const out = await undo.undoAction(a.id, owner)
+    expect(out.undone).toBe(true)
+    // The link is removed (never deleted), the thread is no longer on the enquiry, the state is as it was.
+    expect(
+      (await db.mailLink.findUniqueOrThrow({ where: { id: linked.id } })).removedAt
+    ).not.toBeNull()
+    expect(
+      (await db.mailThread.findUniqueOrThrow({ where: { id: m.threadId } })).enquiryId
+    ).toBeNull()
+    expect((await db.mailMessage.findUniqueOrThrow({ where: { id: m.id } })).handledState).toBe(
+      'not_linked'
+    )
+    const rows = await db.activityEvent.findMany({
+      where: { subjectId: m.id, field: { in: ['link', 'handledState'] } },
+      orderBy: { at: 'asc' },
+    })
+    const assistantRows = rows.filter((r) => r.actorKind === 'assistant')
+    const undoRows = rows.filter((r) => r.actorKind === 'user')
+    expect(assistantRows.map((r) => r.field).sort()).toEqual(['handledState', 'link'])
+    expect(undoRows).toHaveLength(2)
+    for (const u of undoRows) {
+      const orig = assistantRows.find((r) => r.id === u.revertsEventId)!
+      expect(orig).toBeDefined()
+      expect(u.before).toEqual(orig.after)
+      expect(u.after).toEqual(orig.before)
+      expect(u.note).toBe('Undone by KB')
+    }
+    expect(handledAfterLink).not.toBe('not_linked')
+    expect((await db.assistantAction.findUniqueOrThrow({ where: { id: a.id } })).state).toBe(
+      'undone'
+    )
+  })
+
   it('outside the window an internal undo is refused; revert later writes new rows and keeps the old', async () => {
     const { action, messageId } = await classified(-1)
     await expect(undo.undoAction(action.id, owner)).rejects.toThrow(/revert it from History/)

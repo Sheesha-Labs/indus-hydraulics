@@ -20,6 +20,11 @@ export interface Clock<T> {
     record: UpcomingRecord,
     loaded: UpcomingLoaded
   ): UpcomingItem[] | Promise<UpcomingItem[]>
+  /**
+   * S06-T03: the next thing this clock expects anywhere, for the empty Review state ("Next expected: <text>,
+   * due 14:00"). One small read of the clock's own rows.
+   */
+  nextExpected?(now: Date): Promise<UpcomingItem | null>
 }
 
 export interface UpcomingRecord {
@@ -63,6 +68,16 @@ export async function upcomingFor(
     if (c.describeUpcoming) all.push(...(await c.describeUpcoming(record, loaded)))
   }
   return all.sort((a, b) => a.at.getTime() - b.at.getTime()).slice(0, limit)
+}
+
+/** The soonest thing any clock expects (board 110 "All clear"), or null when nothing is scheduled. */
+export async function nextExpected(now = new Date()): Promise<UpcomingItem | null> {
+  const found: UpcomingItem[] = []
+  for (const c of CLOCKS.values()) {
+    const n = c.nextExpected ? await c.nextExpected(now) : null
+    if (n) found.push(n)
+  }
+  return found.sort((a, b) => a.at.getTime() - b.at.getTime())[0] ?? null
 }
 
 export function clockKeys(): string[] {

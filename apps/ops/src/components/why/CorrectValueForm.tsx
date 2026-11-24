@@ -3,8 +3,9 @@
 import { OptionGroup } from '@indus/ops-ui/assistant'
 import { Select } from '@indus/ops-ui/controls'
 import { useToast } from '@indus/ops-ui/overlay'
-import { useId, useState, type FormEvent } from 'react'
+import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
 import { correctValueAction } from '../../actions/correct-value'
+import { getLinkSuggestions } from '../../actions/read/link-suggestions'
 import type { WhyCorrection } from '../../data/why'
 
 /**
@@ -31,6 +32,30 @@ export default function CorrectValueForm({
   const [value, setValue] = useState(correction.valueType === 'text' ? '' : first)
   const [reason, setReason] = useState('')
   const [error, setError] = useState<string | null>(null)
+  const searchId = useId()
+  const [q, setQ] = useState('')
+  const [found, setFound] = useState<WhyCorrection['choices']>([])
+  const seq = useRef(0)
+  const search = correction.search
+
+  // Link to…'s search (board 95), debounced 120 ms; a stale answer never replaces a newer one.
+  useEffect(() => {
+    if (!search || q.trim().length < 2) return
+    const n = ++seq.current
+    const t = setTimeout(async () => {
+      const res = await getLinkSuggestions({ messageId: search.messageId, q })
+      if (n !== seq.current || !res.success) return
+      setFound(res.data.map((x) => ({ key: x.key, label: x.title, sub: x.detail })))
+    }, 120)
+    return () => clearTimeout(t)
+  }, [search, q])
+
+  const shown = [
+    ...correction.choices,
+    ...(q.trim().length >= 2 ? found : []).filter(
+      (f) => !correction.choices.some((c) => c.key === f.key)
+    ),
+  ]
 
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -75,17 +100,37 @@ export default function CorrectValueForm({
           />
         </label>
       ) : correction.valueType === 'option' ? (
-        <OptionGroup
-          name="value"
-          legend={correction.label}
-          value={value}
-          onValueChange={setValue}
-          items={correction.choices.map((c) => ({
-            value: c.key,
-            title: c.label,
-            ...(c.sub ? { sub: c.sub } : {}),
-          }))}
-        />
+        <>
+          {search ? (
+            <label htmlFor={searchId} className="flex flex-col gap-1.5 text-[12px] font-medium">
+              <span className="text-io-ink-2">Search for another record</span>
+              <input
+                id={searchId}
+                type="search"
+                className={field}
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                maxLength={120}
+                placeholder="A reference, client or supplier"
+              />
+            </label>
+          ) : null}
+          {shown.length ? (
+            <OptionGroup
+              name="value"
+              legend={correction.label}
+              value={value}
+              onValueChange={setValue}
+              items={shown.map((c) => ({
+                value: c.key,
+                title: c.label,
+                ...(c.sub ? { sub: c.sub } : {}),
+              }))}
+            />
+          ) : (
+            <p className="text-io-ink-3 m-0 text-[12.5px]">No record found yet.</p>
+          )}
+        </>
       ) : (
         <label htmlFor={valueId} className="flex flex-col gap-1.5 text-[12px] font-medium">
           <span className="text-io-ink-2">{correction.label}</span>

@@ -2,14 +2,15 @@ import 'server-only'
 import { opsDb, type $Enums } from '@indus/ops-db'
 import { encodeEvidenceId } from '@indus/ops-core'
 import type { OpsUser } from '../lib/access-core'
-import { currentBudgetState } from '../server/assistant/runner'
+import { displayBudgetState } from '../server/assistant/runner'
 import { assistantPauseState } from '../server/assistant/state'
 import { upcomingFor } from '../server/clocks'
 
 /**
  * The Assistant panel (S06-T08, shell S03a): on one record, what waits on you, what the Assistant is doing
  * now, and what it did earlier today. Three queries for the record (the record, its actions, its queued
- * email) plus the shell's cached pause state and the month's budget row. Each registered clock adds what it
+ * email) plus the shell's cached pause state and the month's budget state, cached for a minute (the call
+ * itself still reserves budget first, so the box is only ever a minute behind). Each registered clock adds what it
  * will do next from the actions already read (describeUpcoming).
  *
  * A Helper without "can see margins" gets money in headlines masked ("AED Hidden"): masked here.
@@ -98,7 +99,7 @@ export async function getAssistantPanel(
   viewer: Viewer,
   now = new Date()
 ): Promise<AssistantPanelFeed> {
-  const [pause, budget] = await Promise.all([assistantPauseState(), currentBudgetState(now)])
+  const [pause, budget] = await Promise.all([assistantPauseState(), displayBudgetState(now)])
   const blocked: AssistantPanelFeed['blocked'] = pause
     ? {
         kind: 'paused',

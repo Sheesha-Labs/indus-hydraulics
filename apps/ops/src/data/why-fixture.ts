@@ -78,6 +78,7 @@ const FIXTURE: WhyView = {
     current: 'AED 125.00',
     choices: [],
     consequence: 'Changing it re-prices the line and records “Overridden by” you in History.',
+    search: null,
   },
   overridden: null,
 }

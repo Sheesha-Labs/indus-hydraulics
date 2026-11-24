@@ -60,7 +60,6 @@ export default function CorrectionModal({
 }) {
   const router = useRouter()
   const { toast } = useToast()
-  const noteId = useId()
   const [reason, setReason] = useState<CorrectionReason>('wrong_price')
   const [note, setNote] = useState('')
   const [busy, setBusy] = useState(false)
@@ -112,55 +111,87 @@ export default function CorrectionModal({
       }
       note="Nothing is sent until you approve the card."
     >
-      <div className="flex flex-col gap-3.5">
-        <Banner tone="info" title={`${target.ref} left${target.at ? ` at ${target.at}` : ''}.`}>
-          It can’t be recalled. Send a correction instead?
-        </Banner>
-        <fieldset className="m-0 flex flex-col gap-2 border-0 p-0">
-          <legend className="text-io-ink mb-2 text-[13px] font-medium">What was wrong?</legend>
-          <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="What was wrong?">
-            {CORRECTION_REASONS.map((r) => (
-              <button
-                key={r}
-                type="button"
-                role="radio"
-                aria-checked={reason === r}
-                onClick={() => setReason(r)}
-                className={
-                  reason === r
-                    ? 'bg-io-navy border-io-navy rounded-io-pill io-focus h-io-btn border px-3.5 text-[13px] text-white'
-                    : 'bg-io-card border-io-stroke text-io-ink rounded-io-pill io-focus h-io-btn hover:bg-io-fill border px-3.5 text-[13px]'
-                }
-              >
-                {CORRECTION_REASON_LABEL[r]}
-              </button>
-            ))}
-          </div>
-        </fieldset>
-        <label htmlFor={noteId} className="flex flex-col gap-1.5 text-[12px] font-medium">
-          <span className="text-io-ink-2">Note for the Assistant (optional)</span>
-          <input
-            id={noteId}
-            className="io-focus-field border-io-stroke rounded-io-ctl bg-io-card text-io-ink h-io-field w-full border px-2.5 text-[13px]"
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-            maxLength={400}
-            placeholder="e.g. line 2 unit price was shown incorrectly"
-          />
-        </label>
-        <section aria-label="The Assistant will" className="flex flex-col gap-1.5">
-          <h3 className="io-eyebrow m-0">The Assistant will</h3>
-          <ol className="text-io-ink-2 m-0 flex list-decimal flex-col gap-1 pl-5 text-[13px]">
-            <li>Draft a short correction in the same thread, from the same mailbox.</li>
-            <li>Put it in Review as one card for your approval; you add the corrected figure.</li>
-          </ol>
-        </section>
-        {error ? (
-          <p role="alert" className="text-io-bad-solid m-0 text-[12.5px]">
-            {error}
-          </p>
-        ) : null}
-      </div>
+      <CorrectionFields
+        target={target}
+        reason={reason}
+        onReason={setReason}
+        note={note}
+        onNote={setNote}
+        error={error}
+      />
     </Modal>
+  )
+}
+
+/**
+ * The correction's fields (board 114 part 2), inside CorrectionModal and on the /_kit/review-states sheet:
+ * where it went, what was wrong, a note, and what the Assistant will do.
+ */
+export function CorrectionFields({
+  target,
+  reason,
+  onReason,
+  note,
+  onNote,
+  error = null,
+}: {
+  target: Pick<CorrectionTarget, 'ref' | 'at'>
+  reason: CorrectionReason
+  onReason: (r: CorrectionReason) => void
+  note: string
+  onNote: (n: string) => void
+  error?: string | null
+}) {
+  const noteId = useId()
+  return (
+    <div className="flex flex-col gap-3.5">
+      <Banner tone="info" title={`${target.ref} left${target.at ? ` at ${target.at}` : ''}.`}>
+        It can’t be recalled. Send a correction instead?
+      </Banner>
+      <fieldset className="m-0 flex flex-col gap-2 border-0 p-0">
+        <legend className="text-io-ink mb-2 text-[13px] font-medium">What was wrong?</legend>
+        <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="What was wrong?">
+          {CORRECTION_REASONS.map((r) => (
+            <button
+              key={r}
+              type="button"
+              role="radio"
+              aria-checked={reason === r}
+              onClick={() => onReason(r)}
+              className={
+                reason === r
+                  ? 'bg-io-navy border-io-navy rounded-io-pill io-focus h-io-btn border px-3.5 text-[13px] text-white'
+                  : 'bg-io-card border-io-stroke text-io-ink rounded-io-pill io-focus h-io-btn hover:bg-io-fill border px-3.5 text-[13px]'
+              }
+            >
+              {CORRECTION_REASON_LABEL[r]}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+      <label htmlFor={noteId} className="flex flex-col gap-1.5 text-[12px] font-medium">
+        <span className="text-io-ink-2">Note for the Assistant (optional)</span>
+        <input
+          id={noteId}
+          className="io-focus-field border-io-stroke rounded-io-ctl bg-io-card text-io-ink h-io-field w-full border px-2.5 text-[13px]"
+          value={note}
+          onChange={(e) => onNote(e.target.value)}
+          maxLength={400}
+          placeholder="e.g. line 2 unit price was shown incorrectly"
+        />
+      </label>
+      <section aria-label="The Assistant will" className="flex flex-col gap-1.5">
+        <h3 className="io-eyebrow m-0">The Assistant will</h3>
+        <ol className="text-io-ink-2 m-0 flex list-decimal flex-col gap-1 pl-5 text-[13px]">
+          <li>Draft a short correction in the same thread, from the same mailbox.</li>
+          <li>Put it in Review as one card for your approval; you add the corrected figure.</li>
+        </ol>
+      </section>
+      {error ? (
+        <p role="alert" className="text-io-bad-solid m-0 text-[12.5px]">
+          {error}
+        </p>
+      ) : null}
+    </div>
   )
 }

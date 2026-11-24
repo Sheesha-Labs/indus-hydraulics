@@ -20,6 +20,13 @@ export interface AssistantStripProps {
    * now stale. Defaults to the `ShellLiveProvider`'s `refresh` (S02-T03 wires `router.refresh()`).
    */
   onStale?: () => void
+  /**
+   * S06-T08: the record's Assistant control. Given, the ASSISTANT tag is a button that opens the docked
+   * Assistant panel (S03a); Escape there returns focus to it.
+   */
+  onOpenPanel?: () => void
+  /** Whether that panel is open (aria-expanded). */
+  panelOpen?: boolean
   className?: string
 }
 
@@ -33,6 +40,8 @@ export default function AssistantStrip({
   did,
   need,
   onStale,
+  onOpenPanel,
+  panelOpen = false,
   className,
 }: AssistantStripProps) {
   const live = useShellLive()
@@ -82,7 +91,20 @@ export default function AssistantStrip({
         className
       )}
     >
-      <Tag kind="assistant">Assistant</Tag>
+      {onOpenPanel ? (
+        <button
+          type="button"
+          data-part="assistant-control"
+          aria-expanded={panelOpen}
+          aria-label="Assistant panel"
+          onClick={onOpenPanel}
+          className="io-focus rounded-io-tag flex-none cursor-pointer"
+        >
+          <Tag kind="assistant">Assistant</Tag>
+        </button>
+      ) : (
+        <Tag kind="assistant">Assistant</Tag>
+      )}
       {cut ? <Tooltip content={did}>{text}</Tooltip> : text}
       {need ? (
         <Link

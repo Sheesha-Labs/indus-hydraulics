@@ -45,6 +45,74 @@ const s = (
   detail,
 })
 
+/**
+ * One link target by type and id (S06-T05: a correction from Why? may pick any record the Link to… search
+ * found, so the server checks it exists and names it). Null when there is no such record.
+ */
+export async function linkTargetById(
+  db: Pick<
+    typeof opsDb,
+    'enquiry' | 'supplierRfq' | 'quotation' | 'order' | 'supplierPo' | 'company'
+  >,
+  subjectType: string,
+  subjectId: string
+): Promise<LinkSuggestion | null> {
+  switch (subjectType) {
+    case 'enquiry': {
+      const e = await db.enquiry.findUnique({
+        where: { id: subjectId },
+        select: { id: true, ref: true, title: true, client: { select: { name: true } } },
+      })
+      return e
+        ? s(
+            'enquiry',
+            e.id,
+            e.id,
+            `${e.ref} · ${e.client?.name ?? 'No client yet'} · ${e.title}`,
+            ''
+          )
+        : null
+    }
+    case 'supplier_rfq': {
+      const r = await db.supplierRfq.findUnique({
+        where: { id: subjectId },
+        select: { id: true, ref: true, enquiryId: true },
+      })
+      return r ? s('supplier_rfq', r.id, r.enquiryId, r.ref, '') : null
+    }
+    case 'quotation': {
+      const q = await db.quotation.findUnique({
+        where: { id: subjectId },
+        select: { id: true, number: true, enquiryId: true },
+      })
+      return q ? s('quotation', q.id, q.enquiryId, q.number ?? 'Quotation', '') : null
+    }
+    case 'order': {
+      const o = await db.order.findUnique({
+        where: { id: subjectId },
+        select: { id: true, ref: true, enquiryId: true },
+      })
+      return o ? s('order', o.id, o.enquiryId, o.ref, '') : null
+    }
+    case 'supplier_po': {
+      const p = await db.supplierPo.findUnique({
+        where: { id: subjectId },
+        select: { id: true, number: true, order: { select: { enquiryId: true } } },
+      })
+      return p ? s('supplier_po', p.id, p.order.enquiryId, p.number ?? 'Supplier PO', '') : null
+    }
+    case 'company': {
+      const c = await db.company.findUnique({
+        where: { id: subjectId },
+        select: { id: true, name: true },
+      })
+      return c ? s('company', c.id, null, c.name, '') : null
+    }
+    default:
+      return null
+  }
+}
+
 async function byReference(q: string): Promise<LinkSuggestion[]> {
   const ref = parseReference(q)
   if (!ref || ref.match !== 'known_format') return []

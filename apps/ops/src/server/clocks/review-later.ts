@@ -46,6 +46,16 @@ registerClock<{ id: string }>({
     }
     return moved ? (s.stale ? 'back_stale' : 'back') : 'skipped'
   },
+  async nextExpected(now) {
+    const next = await opsDb.assistantAction.findFirst({
+      where: { state: 'later', laterUntil: { gt: now } },
+      orderBy: { laterUntil: 'asc' },
+      select: { id: true, headline: true, laterUntil: true },
+    })
+    return next?.laterUntil
+      ? { key: `later:${next.id}`, at: next.laterUntil, text: `“${next.headline}” back from Later` }
+      : null
+  },
   // The record's Later cards, from the actions the panel already read: "Back in Review at 14:00 · …".
   describeUpcoming(_record, loaded) {
     return loaded.actions

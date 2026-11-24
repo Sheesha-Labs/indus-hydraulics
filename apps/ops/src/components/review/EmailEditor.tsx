@@ -5,13 +5,13 @@ import { useToast } from '@indus/ops-ui/overlay'
 import type { Route } from 'next'
 import { useRouter } from 'next/navigation'
 import { useId, useState } from 'react'
-import { editApproveProposalAction } from '../../actions/proposal/decide'
+import { editApproveProposalAction, saveEditsProposalAction } from '../../actions/proposal/decide'
 import type { CardEmail } from '../../data/proposal-mapper'
 import type { ReviewCard } from '../../data/review'
 
 /**
  * Board 103 "Editing · inline": To, Cc, subject and body of the drafted email. Save and approve keeps the
- * person's version beside the Assistant's (the diff is kept on save and teaches a preference); Cancel leaves
+ * person's version (Save alone keeps it for whoever approves) beside the Assistant's (the diff is kept on save and teaches a preference); Cancel leaves
  * the card as it was. (decision) A plain-text body: the TipTap toolbar of the board waits for the composer
  * work of S12; line breaks are kept.
  */
@@ -39,16 +39,42 @@ export default function EmailEditor({
   const [body, setBody] = useState(email.body)
   const [busy, setBusy] = useState(false)
 
+  const edits = () => ({
+    ...(to !== email.to.join(', ') ? { to: split(to) } : {}),
+    ...(cc !== email.cc.join(', ') ? { cc: split(cc) } : {}),
+    ...(subject !== email.subject ? { subject } : {}),
+    ...(body !== email.body ? { body } : {}),
+  })
+
+  /** Save only: the draft keeps this version for whoever approves it (board 110 when someone else does). */
+  async function saveOnly() {
+    setBusy(true)
+    try {
+      const r = await saveEditsProposalAction({
+        actionId: card.id,
+        version: card.version,
+        edits: edits(),
+      })
+      if (!r.success) {
+        toast({ kind: 'error', title: r.error })
+        return
+      }
+      toast({ kind: 'success', title: 'Saved · not approved yet' })
+      router.push(cancelHref as Route)
+      router.refresh()
+    } finally {
+      setBusy(false)
+    }
+  }
+
   async function save() {
     setBusy(true)
     try {
-      const edits = {
-        ...(to !== email.to.join(', ') ? { to: split(to) } : {}),
-        ...(cc !== email.cc.join(', ') ? { cc: split(cc) } : {}),
-        ...(subject !== email.subject ? { subject } : {}),
-        ...(body !== email.body ? { body } : {}),
-      }
-      const r = await editApproveProposalAction({ actionId: card.id, version: card.version, edits })
+      const r = await editApproveProposalAction({
+        actionId: card.id,
+        version: card.version,
+        edits: edits(),
+      })
       if (!r.success) {
         toast({ kind: 'error', title: r.error })
         return
@@ -113,17 +139,22 @@ export default function EmailEditor({
         id={`${id}-body`}
         value={body}
         onChange={(e) => setBody(e.target.value)}
-        rows={8}
-        className="io-focus-field border-io-accent rounded-io-ctl bg-io-card text-io-ink w-full border px-3 py-2.5 text-[13px] leading-[1.55]"
+        rows={3}
+        className="io-focus-field border-io-accent rounded-io-ctl bg-io-card text-io-ink field-sizing-content min-h-[84px] w-full border px-3 py-2.5 text-[13px] leading-[1.55]"
       />
-      <div className="border-io-line flex items-center gap-2 border-t pt-3">
+      <div className="border-io-line flex flex-wrap items-center gap-2 border-t pt-3">
         <Button variant="primary" busy={busy} onClick={() => void save()}>
           Save and approve
+        </Button>
+        <Button variant="secondary" busy={busy} onClick={() => void saveOnly()}>
+          Save
         </Button>
         <ButtonLink href={cancelHref} variant="secondary">
           Cancel
         </ButtonLink>
-        <span className="text-io-ink-3 ml-auto text-[12px]">Diff is kept on save</span>
+        <span className="text-io-ink-3 ml-auto text-[12px] whitespace-nowrap">
+          Diff is kept on save
+        </span>
       </div>
     </section>
   )

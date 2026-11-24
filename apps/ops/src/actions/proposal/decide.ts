@@ -11,6 +11,7 @@ import {
   later,
   redraft,
   reject,
+  saveEdits,
   type Decider,
 } from '../../server/assistant/decisions'
 
@@ -130,5 +131,17 @@ export const batchApproveProposalsAction = defineAction({
     const out = await batchApprove(input.items, decider(ctx.user))
     refresh()
     return { results: out, approved: out.filter((r) => r.ok).length }
+  },
+})
+
+/** Save an edit without approving it (board 103 "Save"; another person approving the old version sees board 110). */
+export const saveEditsProposalAction = defineAction({
+  name: 'proposal.saveEdits',
+  schema: z.object({ ...ref, edits: editsSchema }),
+  roles: ['owner', 'helper'],
+  handler: async (input, ctx) => {
+    const out = await saveEdits(input, decider(ctx.user)).catch(safe)
+    refresh()
+    return out
   },
 })

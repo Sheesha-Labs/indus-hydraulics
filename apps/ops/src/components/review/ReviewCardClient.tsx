@@ -1,6 +1,7 @@
 'use client'
 
 import { ProposalCard, type LaterUntil } from '@indus/ops-ui/assistant'
+import type { Route } from 'next'
 import { useRouter } from 'next/navigation'
 import { useMemo, type ReactNode } from 'react'
 import {
@@ -28,12 +29,18 @@ export default function ReviewCardClient({
   closeEditHref,
   editing,
   aside,
+  conflictHref,
+  locked = false,
 }: {
   card: ReviewCard
   editHref: string
   closeEditHref: string
   editing: boolean
   aside?: ReactNode
+  /** Board 110: where a refused approve goes (?seen=<version>), so the page can show what changed. */
+  conflictHref?: string
+  /** Board 110: someone changed the card under this person; Approve stays off until they choose. */
+  locked?: boolean
 }) {
   const router = useRouter()
   const refreshAfter = useMemo(
@@ -103,15 +110,19 @@ export default function ReviewCardClient({
       raised
       batchable={card.batchable}
       readOnly={card.readOnly || blocked}
+      approveDisabled={locked}
       actions={{
-        approve: (i) =>
-          refreshAfter(
-            approveProposalAction({
-              actionId: id,
-              version: v,
-              ...(i.optionValue ? { optionValue: i.optionValue } : {}),
-            })
-          ),
+        approve: async (i) => {
+          const r = await approveProposalAction({
+            actionId: id,
+            version: v,
+            ...(i.optionValue ? { optionValue: i.optionValue } : {}),
+          })
+          // Refused (changed, stale, …): reload on the version this person had open; the page shows why.
+          if (!r.success && conflictHref) router.replace(conflictHref as Route)
+          else router.refresh()
+          return r
+        },
         ...(card.email && card.editable.length ? { edit: { href: editHref } } : {}),
         reject: async (i) => {
           const r = await refreshAfter(
@@ -120,7 +131,7 @@ export default function ReviewCardClient({
               version: v,
               reason: i.reason,
               ...(i.chip ? { chip: i.chip } : {}),
-              redraft: false,
+              redraft: i.redraft ?? false,
             })
           )
           return r.success ? { success: true, data: undefined } : r

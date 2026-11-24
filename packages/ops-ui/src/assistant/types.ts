@@ -52,7 +52,8 @@ export interface ProposalActionsInput {
   }) => Promise<Result<{ undoRemainingMs?: number }>>
   /** Opens the editor surface (RFQ drafts, quotation). */
   edit?: { href: string }
-  reject: (input: { reason: string; chip?: string }) => Promise<Result<void>>
+  /** `redraft`: "Reject and redraft" asks the Assistant for a new draft with the reason (board 103). */
+  reject: (input: { reason: string; chip?: string; redraft?: boolean }) => Promise<Result<void>>
   later: (input: { until: LaterUntil }) => Promise<Result<void>>
   undo?: () => Promise<Result<void>>
   /** (decision) Reopens a rejected card; the Reopen button shows only when it is given. */
@@ -98,6 +99,11 @@ export interface ProposalCardProps {
   actions: ProposalActionsInput
   /** "Approve and send", "Review and send" (collapsed quotation). Default "Approve". */
   approveLabel?: string
+  /**
+   * Approve shows but cannot be pressed (board 110: the card changed under you; choose a version first). The
+   * other verbs stay; ⌘↵ does nothing.
+   */
+  approveDisabled?: boolean
   batchable?: boolean
   /** Helper read-only (money and quotation cards): every action is hidden. The server enforces it too. */
   readOnly?: boolean

@@ -17,16 +17,9 @@ const REF = 'ENQ-2026-0001'
 const stamp = Date.now().toString(36).toUpperCase()
 const ids: Record<string, string> = {}
 
+/** Opens the panel from the record's Assistant control (the ASSISTANT tag on the record's strip). */
 async function openPanel(page: Page) {
-  await page
-    .locator('[data-part="sidebar"]')
-    .getByRole('button', { name: /^Search/ })
-    .click()
-  await expect(
-    page.getByRole('dialog', { name: 'Command bar' }).getByRole('combobox')
-  ).toBeFocused()
-  await page.keyboard.type('assistant panel')
-  await page.keyboard.press('Enter')
+  await page.getByRole('button', { name: 'Assistant panel' }).click()
   const panel = page.getByRole('complementary', { name: `On ${REF}` })
   await expect(panel).toBeVisible()
   return panel
@@ -83,6 +76,10 @@ test('assistant-panel: instruction becomes proposal; approve changes the record;
     timeout: 20_000,
   })
 
+  // Axe reads colours as painted: wait until the panel's open animation has finished.
+  await page.waitForFunction(() =>
+    document.getAnimations().every((a) => a.playState !== 'running')
+  )
   const { violations } = await new AxeBuilder({ page })
     .include('[data-part="drawer"], aside')
     .analyze()
@@ -169,6 +166,35 @@ test('assistant-panel: instruction becomes proposal; approve changes the record;
   const toasts = page.locator('[data-part="toast-region"]')
   await toasts.getByRole('button', { name: /^Undo/ }).click()
   await expect.poll(lineStatus).toBe('open')
+})
+
+test('assistant-panel: the record’s Assistant control opens it; Escape returns focus there; ⌘K too', async ({
+  page,
+  signedInAs,
+}) => {
+  await signedInAs('owner')
+  await page.goto(`/enquiries/${REF}`)
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 90_000 })
+  const control = page.getByRole('button', { name: 'Assistant panel' })
+  await expect(control).toHaveAttribute('aria-expanded', 'false')
+  const panel = await openPanel(page)
+  await expect(control).toHaveAttribute('aria-expanded', 'true')
+  await expect(panel.getByRole('textbox', { name: 'Ask or instruct the Assistant' })).toBeFocused()
+  await page.keyboard.press('Escape')
+  await expect(panel).toBeHidden()
+  await expect(control).toBeFocused()
+
+  // The command bar opens the same panel.
+  await page
+    .locator('[data-part="sidebar"]')
+    .getByRole('button', { name: /^Search/ })
+    .click()
+  await expect(
+    page.getByRole('dialog', { name: 'Command bar' }).getByRole('combobox')
+  ).toBeFocused()
+  await page.keyboard.type('assistant panel')
+  await page.keyboard.press('Enter')
+  await expect(page.getByRole('complementary', { name: `On ${REF}` })).toBeVisible()
 })
 
 test('assistant-panel: paused, the box is off with the reason', async ({ page, signedInAs }) => {

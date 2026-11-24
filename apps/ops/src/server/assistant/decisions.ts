@@ -12,6 +12,7 @@ import { scheduleSend } from '../mail-send/schedule'
 import { holidaysFor } from '../mail-send/slot'
 import { mayUndo, undoSend } from '../mail-send/undo'
 import { textToSanitizedHtml } from '../mail/body'
+import { raiseNotification } from '../notify/raise'
 import { getSetting } from '../settings/get'
 import { setCounters } from './live-counter'
 import { actionDefinition } from './registry'
@@ -741,4 +742,212 @@ export async function settleActionForOutbound(
     }
     return a.state
   })
+}
+
+// ── Saved edits and the version conflict (S06-T03, board 110 "Changed by Ayush while you were reviewing") ──
+
+/** The activity field that keeps every saved version of a proposal's email (both people's). */
+export const DRAFT_EDIT_FIELD = 'draft_edit'
+
+/** One saved version, as the activity row stores it (before and after). */
+export interface DraftVersion {
+  version: number
+  payload: EmailEdit
+  fields?: string[]
+  kept?: boolean
+}
+
+/** A stored draft version (activity before/after), or null when the row holds something else. */
+export function draftVersionOf(v: unknown): DraftVersion | null {
+  if (!v || typeof v !== 'object') return null
+  const d = v as Partial<DraftVersion>
+  return typeof d.version === 'number'
+    ? { ...d, version: d.version, payload: d.payload ?? {} }
+    : null
+}
+
+/** Who may change a draft without approving it: anyone who may see the card, except on locked or money cards. */
+function editDenied(a: Row, user: Decider): string | null {
+  if (a.surface !== 'review') return 'This is not a Review card.'
+  if (user.role === 'owner') return null
+  if (a.def.lockedLevel !== null || a.def.group === 'money') return 'Only the Owner changes this.'
+  return null
+}
+
+async function recordDraftVersion(
+  tx: Prisma.TransactionClient,
+  a: Row,
+  user: Decider,
+  before: DraftVersion,
+  after: DraftVersion,
+  note: string
+): Promise<void> {
+  const state = a.state
+  await tx.assistantActionEvent.create({
+    data: {
+      actionId: a.id,
+      fromState: state,
+      toState: state,
+      actorKind: 'user',
+      actorId: user.id,
+      note,
+    },
+  })
+  if (a.subjectType && a.subjectId) {
+    await tx.activityEvent.create({
+      data: {
+        actorKind: 'user',
+        actorId: user.id,
+        actionId: a.id,
+        enquiryId: a.enquiryId,
+        subjectType: a.subjectType,
+        subjectId: a.subjectId,
+        kind: 'other',
+        field: DRAFT_EDIT_FIELD,
+        before: before as unknown as Prisma.InputJsonValue,
+        after: after as unknown as Prisma.InputJsonValue,
+        note,
+      },
+    })
+  }
+}
+
+/**
+ * Save an edit without approving it (board 103 "Diff is kept on save"): the person's version goes to
+ * effectivePayload and the card's version moves on, so anyone approving the version they opened is refused
+ * with 'changed' and sees the conflict panel. Both versions are kept in the activity trail.
+ */
+export async function saveEdits(
+  input: { actionId: string; version: number; edits: EmailEdit },
+  user: Decider,
+  now = new Date()
+): Promise<{ version: number; fields: string[] }> {
+  const a = await load(input.actionId)
+  if (!OPEN.includes(a.state)) throw new DecisionError('not_open', 'This card was already decided.')
+  if (a.version !== input.version)
+    throw new DecisionError('changed', 'This card changed since you opened it. Look again.')
+  const denied = editDenied(a, user)
+  if (denied) throw new DecisionError('forbidden', denied)
+  const card = toProposalCardData(cardRow(a), user, now)
+  if (!card.email || card.invalid)
+    throw new DecisionError('invalid', 'This card has nothing to edit.')
+  const parsed = emailEdit.safeParse(input.edits)
+  if (!parsed.success) throw new DecisionError('invalid', 'Check the edited fields.')
+  const diff = emailDiff(card.email, parsed.data)
+  if (!diff.length) return { version: a.version, fields: [] }
+  const was = (a.effectivePayload as EmailEdit | null) ?? {}
+  const next: EmailEdit = { ...was, ...parsed.data }
+  const fields = diff.map((d) => d.field)
+  const version = await opsDb.$transaction(async (tx) => {
+    await setActor(tx, { kind: 'user', id: user.id })
+    const moved = await tx.assistantAction.updateMany({
+      where: { id: a.id, version: a.version, state: { in: [...OPEN] } },
+      data: {
+        effectivePayload: next as Prisma.InputJsonValue,
+        editDiff: {
+          by: user.initials,
+          at: now.toISOString(),
+          fields,
+          changes: diff,
+        } as unknown as Prisma.InputJsonValue,
+      },
+    })
+    if (moved.count === 0)
+      throw new DecisionError('changed', 'This card changed since you opened it. Look again.')
+    const v = (
+      await tx.assistantAction.findUniqueOrThrow({ where: { id: a.id }, select: { version: true } })
+    ).version
+    await recordDraftVersion(
+      tx,
+      a,
+      user,
+      { version: a.version, payload: was },
+      { version: v, payload: next, fields },
+      `Edited by ${user.initials}: ${fields.join(', ')}`
+    )
+    return v
+  })
+  await bumpReview()
+  return { version, fields }
+}
+
+/**
+ * "Keep mine and tell <them>": put the draft back to the version this person opened (`seen`), keep the other
+ * version in the trail, and tell whoever changed it. The card's version moves on again, so it is approvable
+ * from the page that follows (Approve stayed off until a choice was made).
+ */
+export async function keepMyVersion(
+  input: { actionId: string; version: number; seen: number },
+  user: Decider,
+  now = new Date()
+): Promise<{ version: number; told: string[] }> {
+  const a = await load(input.actionId)
+  if (!OPEN.includes(a.state)) throw new DecisionError('not_open', 'This card was already decided.')
+  if (a.version !== input.version)
+    throw new DecisionError('changed', 'This card changed again. Look again.')
+  const denied = editDenied(a, user)
+  if (denied) throw new DecisionError('forbidden', denied)
+  const edits = await opsDb.activityEvent.findMany({
+    where: { actionId: a.id, field: DRAFT_EDIT_FIELD },
+    orderBy: [{ at: 'asc' }, { id: 'asc' }],
+    select: { actorId: true, before: true },
+  })
+  const theirs = edits.filter((e) => {
+    const b = draftVersionOf(e.before)
+    return !!b && b.version >= input.seen && e.actorId !== user.id
+  })
+  const first = theirs[0]
+  if (!first) throw new DecisionError('invalid', 'Nobody else changed this card.')
+  const restore = draftVersionOf(first.before)?.payload ?? {}
+  const current = (a.effectivePayload as EmailEdit | null) ?? {}
+  const empty = Object.keys(restore).length === 0
+  const others = [...new Set(theirs.map((e) => e.actorId).filter((x): x is string => !!x))]
+  const names = await opsDb.user.findMany({
+    where: { id: { in: others } },
+    select: { id: true, initials: true },
+  })
+  const theirInitials = names.map((n) => n.initials).join(', ') || 'the other person'
+  const version = await opsDb.$transaction(async (tx) => {
+    await setActor(tx, { kind: 'user', id: user.id })
+    const moved = await tx.assistantAction.updateMany({
+      where: { id: a.id, version: a.version, state: { in: [...OPEN] } },
+      data: {
+        effectivePayload: empty ? Prisma.DbNull : (restore as Prisma.InputJsonValue),
+        editDiff: empty
+          ? Prisma.DbNull
+          : ({
+              by: user.initials,
+              at: now.toISOString(),
+              fields: Object.keys(restore),
+              keptOver: theirInitials,
+            } as unknown as Prisma.InputJsonValue),
+      },
+    })
+    if (moved.count === 0)
+      throw new DecisionError('changed', 'This card changed again. Look again.')
+    const v = (
+      await tx.assistantAction.findUniqueOrThrow({ where: { id: a.id }, select: { version: true } })
+    ).version
+    await recordDraftVersion(
+      tx,
+      a,
+      user,
+      { version: a.version, payload: current },
+      { version: v, payload: restore, fields: Object.keys(restore), kept: true },
+      `${user.initials} kept their version over ${theirInitials}'s edit`
+    )
+    return v
+  })
+  await raiseNotification({
+    event: 'other',
+    severity: 'info',
+    title: `${user.initials} kept their version of “${a.headline}”`,
+    body: 'Your edit is kept in the Assistant log; the card goes out as they had it.',
+    dedupeKey: `draft-kept:${a.id}:${version}`,
+    actionUrl: `/review?card=${a.ref}`,
+    ...(a.subjectType && a.subjectId ? { subjectType: a.subjectType, subjectId: a.subjectId } : {}),
+    ...(a.enquiryId ? { enquiryId: a.enquiryId } : {}),
+    audience: others,
+  })
+  return { version, told: names.map((n) => n.initials) }
 }
