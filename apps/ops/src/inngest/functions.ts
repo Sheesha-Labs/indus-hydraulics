@@ -1,4 +1,5 @@
 import { assistantBacklog } from './assistant/backlog'
+import { autopilotSuggestions } from './autopilot/suggestions'
 import { clocksTick } from './clocks/tick'
 import { assistantOnResumed } from './assistant/on-resumed'
 import { assistantRun } from './assistant/run'
@@ -38,4 +39,5 @@ export const opsFunctions = [
   mailRoute,
   mailBounceSoft,
   gmailLabelsApply,
+  autopilotSuggestions,
 ]

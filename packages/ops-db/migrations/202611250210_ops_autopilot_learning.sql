@@ -14,6 +14,7 @@
 --                               single value_threshold row becomes value_threshold_quotation (AED 200,000) and
 --                               value_threshold_rfq (USD 50,000) is added; every row is enabled; rows the
 --                               Owner has signed off are never overwritten.
+--   email_template              'supplier_chaser' wording (P04, awaiting sign-off), previewed on board 99.
 --   autopilot_action_def        minutesSaved defaults (classify 0.5, extract 6, RFQ 12, chaser 3, capture 8),
 --                               awaiting sign-off, where the Owner has not confirmed the row.
 --
@@ -167,6 +168,15 @@ UPDATE "ops"."guardrail" g SET
  WHERE g."key" = v.key AND g."signoffStatus" <> 'signed_off'
    AND (g."params" = '{}'::jsonb OR g."key" IN ('value_threshold_quotation', 'value_threshold_rfq')
         OR g."fixed" <> v.fixed OR NOT g."enabled");
+
+-- ── supplier chaser wording (P04, awaiting sign-off): board 99 previews it ─────────────────
+INSERT INTO "ops"."email_template"
+  ("key", "label", "mailboxRole", "subjectTemplate", "bodyTemplate", "variables", "signoffStatus", "updatedAt")
+VALUES
+  ('supplier_chaser', 'Supplier chaser', 'supplier', 'RE: RFQ {rfq_ref} — reminder',
+   E'Dear {supplier_contact},\n\nA reminder about our RFQ {rfq_ref}: we would welcome your offer by {reply_by}. If you will not be quoting, a short reply would help us plan.\n\nKind regards,\n{sender_name}',
+   ARRAY['rfq_ref', 'supplier_contact', 'reply_by', 'sender_name'], 'awaiting', now())
+ON CONFLICT ("key") DO NOTHING;
 
 -- ── RLS, policies and grants ──────────────────────────────────────────────────────────────
 DO $$

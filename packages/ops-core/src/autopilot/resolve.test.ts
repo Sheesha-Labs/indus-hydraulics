@@ -256,3 +256,33 @@ describe('resolveLevel · guardrail texts and switches', () => {
     expect(resolveLevel(input('classify_mail', { state })).blocked).toBeUndefined()
   })
 })
+
+describe('resolveLevel · ask-me-first rules (board 99)', () => {
+  const on = { askNewSupplier: true, askRfqAboveUsd50k: true, askTrialSupplier: true }
+  it('each toggle makes a supplier send ask, even with its guardrail switched off', () => {
+    const off = defaultGuardrails(false)
+    const base = { configuredLevel: 'do_and_tell' as const, guardrails: off, rules: on }
+    expect(resolveLevel(input('send_supplier_rfqs', base, { counterpartyIsNew: true })).level).toBe(
+      'draft_and_ask'
+    )
+    expect(resolveLevel(input('send_supplier_rfqs', base, { valueUsd: 60_000 })).level).toBe(
+      'draft_and_ask'
+    )
+    expect(resolveLevel(input('send_supplier_rfqs', base, { supplierTier: 'trial' })).level).toBe(
+      'draft_and_ask'
+    )
+    expect(
+      resolveLevel(input('send_supplier_rfqs', base, { supplierTier: 'approved' })).level
+    ).toBe('do_and_tell')
+  })
+  it('the chaser count comes from the rules', () => {
+    const r = resolveLevel(
+      input(
+        'chase_suppliers',
+        { configuredLevel: 'do_and_tell', rules: { max: 2 } },
+        { firstChaserApproved: true, chasersSent: 2 }
+      )
+    )
+    expect(r.blocked).toBe('escalate')
+  })
+})

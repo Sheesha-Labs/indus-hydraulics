@@ -368,6 +368,7 @@ function ships.
 | `ops.assistant.on-resumed` | `ops/assistant.resumed` | house | 2 | exempt | S05 |
 | `ops.assistant.backlog` | `ops/assistant.pipeline.enabled` (200 a batch, 2 s apart) | bulk | 2 | wait | S05 |
 | `ops.clocks.tick` | cron `*/15 * * * *` (each registered clock, ≤ 200 items) | house | 2 | skip | S06 |
+| `ops.autopilot.suggestions` | cron `TZ=Asia/Dubai 30 1 * * *` (earned suggestions; never changes a level) | house | 2 | skip | S07 |
 
 ## 17. Assistant actions
 

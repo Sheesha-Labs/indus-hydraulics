@@ -40,6 +40,15 @@ const ctxArb: fc.Arbitrary<GuardrailContext> = fc.record(
 const inputArb: fc.Arbitrary<ResolveInput> = fc.record({
   def: fc.constantFrom(...DEFS),
   configuredLevel: fc.option(level, { nil: null }),
+  rules: fc.option(
+    fc.record({
+      askNewSupplier: fc.boolean(),
+      askRfqAboveUsd50k: fc.boolean(),
+      askTrialSupplier: fc.boolean(),
+      max: fc.integer({ min: 1, max: 3 }),
+    }),
+    { nil: null }
+  ),
   mode: fc.constantFrom('careful', 'balanced', 'hands_off', 'custom' as const),
   ctx: ctxArb,
   guardrails: fc.subarray(GUARDS),

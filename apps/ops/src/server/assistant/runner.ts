@@ -128,7 +128,7 @@ export async function resolveRun(
       defaultCareful: true,
       defaultBalanced: true,
       defaultHandsOff: true,
-      setting: { select: { level: true } },
+      setting: { select: { level: true, rules: true } },
     },
   })
   if (!row) throw new UnknownActionError(data.actionKey)
@@ -147,6 +147,7 @@ export async function resolveRun(
     external: def.external,
     research,
     configuredLevel: row.setting?.level ?? null,
+    rules: (row.setting?.rules as Record<string, unknown> | null) ?? null,
     mode,
     ctx: guard.ctx,
     guardrails: guard.guardrails,

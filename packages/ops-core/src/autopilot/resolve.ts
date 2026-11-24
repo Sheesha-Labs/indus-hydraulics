@@ -46,6 +46,8 @@ export interface ResolveInput {
   research?: boolean
   /** autopilot_setting.level; null when the row has none (the mode's preset applies). */
   configuredLevel: AutopilotLevel | null
+  /** autopilot_setting.rules (board 99): "ask me first" toggles and the chaser count. */
+  rules?: Record<string, unknown> | null
   mode: AutopilotModeOrCustom
   ctx: GuardrailContext
   guardrails: readonly GuardrailSetting[]
@@ -146,8 +148,27 @@ export function resolveLevel(input: ResolveInput): ResolvedLevel {
   }
 
   // 4 action rules
+  // Per-action "ask me first" toggles (board 99): they only make the action ask.
+  const rules = input.rules ?? {}
+  // The toggles exist only on actions that write to suppliers (rule-schemas.ts), so "new" is a supplier.
+  if (rules.askNewSupplier === true && ctx.counterpartyIsNew) {
+    const text = 'You asked to see the first message to a new supplier'
+    hits.push({ key: 'rule:ask_new_supplier', kind: 'rule', effect: 'ask', text })
+    lower('draft_and_ask')
+  }
+  if (rules.askRfqAboveUsd50k === true && (ctx.valueUsd ?? 0) > 50_000) {
+    const text = 'You asked to see RFQs above USD 50,000'
+    hits.push({ key: 'rule:ask_rfq_value', kind: 'rule', effect: 'ask', text })
+    lower('draft_and_ask')
+  }
+  if (rules.askTrialSupplier === true && ctx.supplierTier === 'trial') {
+    const text = 'You asked to see sends to suppliers on Trial'
+    hits.push({ key: 'rule:ask_trial_supplier', kind: 'rule', effect: 'ask', text })
+    lower('draft_and_ask')
+  }
+
   if (def.key === 'chase_suppliers') {
-    const max = ctx.maxChasers ?? 3
+    const max = ctx.maxChasers ?? (typeof rules.max === 'number' ? rules.max : 3)
     if (!ctx.firstChaserApproved) {
       const text = 'The first chaser of an RFQ waits for you'
       hits.push({ key: 'rule:chaser_first', kind: 'rule', effect: 'ask', text })
