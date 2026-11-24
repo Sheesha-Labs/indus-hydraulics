@@ -1,0 +1,98 @@
+import { PageHeader } from '@indus/ops-ui/shell'
+import { EmptyState } from '@indus/ops-ui/states'
+import { T3Mail } from '@indus/ops-ui/templates'
+import type { MailFolderKey } from '@indus/ops-core'
+import { headers } from 'next/headers'
+import { notFound } from 'next/navigation'
+import { folderCounts, getThread, listThreads, mailboxAddresses } from '../../data/mail'
+import type { OpsUser } from '../../lib/access-core'
+import { mailQuery, type MailSearch } from '../../lib/mail-params'
+import { resolveSendEnvelope } from '../../server/mail-send/envelope'
+import { replyPermission } from '../../server/mail/reply'
+import AssistantPane from './AssistantPane'
+import MailRail from './MailRail'
+import ThreadList from './ThreadList'
+import ThreadReading from './ThreadReading'
+
+/**
+ * Board 91 (T3 three-pane mail, plus the Assistant pane): rendered by the folder page and the thread page so
+ * both read the search params (a layout cannot). The folder rail and the list come from the same reads on
+ * both; the thread page adds the conversation.
+ */
+export default async function MailScreen({
+  user,
+  folder,
+  search,
+  threadId,
+  children,
+}: {
+  user: OpsUser
+  folder: MailFolderKey
+  search: MailSearch
+  threadId?: string
+  /** Overlays on the page (S05-T06's Link to… modal). */
+  children?: React.ReactNode
+}) {
+  const [counts, page, mailboxes, thread, nonce] = await Promise.all([
+    folderCounts(),
+    listThreads(folder, search),
+    mailboxAddresses(),
+    threadId ? getThread(threadId, user) : Promise.resolve(null),
+    headers().then((h) => h.get('x-nonce') ?? undefined),
+  ])
+  if (threadId && !thread) notFound()
+
+  let reading: React.ReactNode
+  if (thread) {
+    const mailbox = thread.mailbox.role === 'client' ? 'sales' : 'purchase'
+    const permission = replyPermission(user, thread.mailbox.role)
+    const envelope = await resolveSendEnvelope('other', { mailboxId: thread.mailbox.id })
+    const env = envelope.ok ? envelope.envelope : null
+    const line = [
+      `From ${thread.mailbox.address}`,
+      ...(env?.cc.length ? [`Cc ${env.cc.join(', ')}`] : []),
+      env?.signature ? 'your signature' : 'no signature',
+    ].join(' · ')
+    reading = (
+      <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)_300px] gap-4">
+        <ThreadReading
+          thread={thread}
+          nonce={nonce}
+          reply={{
+            mailbox,
+            mailboxes: { sales: mailboxes.sales, purchase: mailboxes.purchase },
+            permission,
+            envelope: line,
+            cc: env?.cc ?? [],
+          }}
+        />
+        <AssistantPane
+          thread={thread}
+          linkHref={`/mail/${folder}/${thread.id}${mailQuery(search, { cursor: undefined })}${mailQuery(search, { cursor: undefined }) ? '&' : '?'}link=1`}
+        />
+      </div>
+    )
+  } else {
+    reading = (
+      <EmptyState
+        mark="ML"
+        title="Pick a thread"
+        text="The Assistant’s note comes first, then the conversation. J and K move through the list."
+        align="left"
+      />
+    )
+  }
+
+  const meta = `${mailboxes.sales} and ${mailboxes.purchase} · ${counts.today} today · ${counts.unsure} unsure`
+  return (
+    <>
+      <T3Mail
+        header={<PageHeader crumb="Workspace" title="Mail" meta={meta} />}
+        folders={<MailRail folder={folder} search={search} counts={counts} mailboxes={mailboxes} />}
+        list={<ThreadList folder={folder} search={search} page={page} selectedId={thread?.id} />}
+        reading={reading}
+      />
+      {children}
+    </>
+  )
+}

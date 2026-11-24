@@ -2775,6 +2775,8 @@ model MailThread {
 
   @@unique([mailboxId, gmailThreadId])
   @@index([enquiryId])
+  @@index([lastMessageAt(sort: Desc), id(sort: Desc)], map: "mail_thread_lastMessageAt_id_idx")
+  @@index([mailboxId, lastMessageAt(sort: Desc), id(sort: Desc)], map: "mail_thread_mailboxId_lastMessageAt_id_idx")
   @@map("mail_thread")
   @@schema("ops")
 }
@@ -2849,6 +2851,8 @@ model MailMessage {
   @@index([classification, sentAt])
   @@index([fromAddress])
   @@index([mailboxId, internalDate])
+  @@index([threadId, direction, origin], map: "mail_message_threadId_direction_origin_idx")
+  @@index([classification, confidence], map: "mail_message_classification_confidence_idx")
   @@map("mail_message")
   @@schema("ops")
 }

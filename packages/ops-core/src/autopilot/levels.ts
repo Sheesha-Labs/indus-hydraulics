@@ -79,6 +79,7 @@ export const MAX_LEVELS = {
   payment_reminders: 'draft_and_ask',
   regret_client: 'draft_and_ask',
   correction_email: 'draft_and_ask',
+  manual_reply: 'draft_and_ask',
 } as const satisfies Partial<Record<ActionKey, OrderedLevel>>
 
 export function fixedRule(key: string): AutopilotLevel | null {

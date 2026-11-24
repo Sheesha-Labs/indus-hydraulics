@@ -18,6 +18,10 @@ export type MailType =
   | 'Unsure'
   | 'Bounce'
   | 'Phishing'
+  /** S05-T05: board 91 rows for out-of-office replies, newsletters and the rest. */
+  | 'Auto-reply'
+  | 'Not business'
+  | 'Other'
 
 /**
  * Email HTML that has been through the server sanitizer. ops-ui exports no way to make one: the S05 server
