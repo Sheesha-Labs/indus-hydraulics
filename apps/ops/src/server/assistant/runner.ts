@@ -24,6 +24,7 @@ import type {
   Verified,
   ProposalDraft,
 } from './types'
+import { allocateActionRef } from './action-number'
 import { setActor } from './write-tracked'
 
 /**
@@ -195,17 +196,6 @@ export function initialState(
   return ASKS.has(level) || unsure ? 'proposed' : 'running'
 }
 
-function dubaiDay(now: Date): string {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'Asia/Dubai',
-    year: '2-digit',
-    month: '2-digit',
-    day: '2-digit',
-  }).formatToParts(now)
-  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? '00'
-  return `${get('year')}-${get('month')}-${get('day')}`
-}
-
 export async function decideRun(d: DecideInput, now = new Date()): Promise<Decided> {
   const def = definitionOf(d.data.actionKey)
   const existing = await opsDb.assistantAction.findUnique({
@@ -239,9 +229,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
   try {
     return await opsDb.$transaction(async (tx) => {
       await setActor(tx, { kind: 'assistant' })
-      const [num] = await tx.$queryRaw<Array<{ formatted: string }>>`
-        SELECT formatted FROM ops.allocate_number('assistant_action', ${dubaiDay(now)})`
-      if (!num) throw new Error('allocate_number returned no row')
+      const num = { formatted: await allocateActionRef(tx, now) }
       const row = await tx.assistantAction.create({
         data: {
           ref: num.formatted,

@@ -4,6 +4,7 @@ import { emitEvent } from '../../inngest/emit'
 import { scheduleSend } from '../mail-send/schedule'
 import { DecisionError, type Decider } from './decisions'
 import { setCounters } from './live-counter'
+import { allocateActionRef } from './action-number'
 import { setActor } from './write-tracked'
 
 /**
@@ -231,17 +232,6 @@ export async function copyText(input: {
   }
 }
 
-function dubaiDayKey(now: Date): string {
-  const p = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'Asia/Dubai',
-    year: '2-digit',
-    month: '2-digit',
-    day: '2-digit',
-  }).formatToParts(now)
-  const g = (t: string) => p.find((x) => x.type === t)?.value ?? '00'
-  return `${g('year')}-${g('month')}-${g('day')}`
-}
-
 /**
  * A send with no action of its own ended failed or unknown: one attention card for it (idempotent by the
  * outbound id), so it waits in Review with Retry / Copy text / Mark as sent.
@@ -276,9 +266,7 @@ export async function createOutboundAttention(
   try {
     return await opsDb.$transaction(async (tx) => {
       await setActor(tx, { kind: 'system' })
-      const [num] = await tx.$queryRaw<Array<{ formatted: string }>>`
-        SELECT formatted FROM ops.allocate_number('assistant_action', ${dubaiDayKey(now)})`
-      if (!num) throw new Error('allocate_number returned no row')
+      const num = { formatted: await allocateActionRef(tx, now) }
       await tx.assistantAction.create({
         data: {
           ref: num.formatted,

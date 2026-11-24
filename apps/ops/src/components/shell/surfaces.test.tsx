@@ -6,13 +6,13 @@ import userEvent from '@testing-library/user-event'
 import { ToastProvider } from '@indus/ops-ui/overlay'
 import { useEffect } from 'react'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { evidenceFixture, FIXTURE_EVIDENCE_ID } from '../../data/evidence'
+import { evidenceFixture, FIXTURE_EVIDENCE_ID } from '../../data/why-fixture'
 import { fixtureBanners } from '../../data/shell'
 import { ConfirmProvider, useConfirm, type Confirm } from './confirm'
 import Providers, { useShell, type ShellControls } from './Providers'
 import SystemBanners from './SystemBanners'
 import { useUndoToast, type UndoToastInput } from './undo-toast'
-import WhyDrawer from './WhyDrawer'
+import WhyDrawer from '../why/WhyDrawer'
 
 const back = vi.fn()
 vi.mock('next/navigation', () => ({
@@ -52,7 +52,7 @@ function renderWhyWithConfirm() {
     <ToastProvider>
       <ConfirmProvider>
         <Grab />
-        <WhyDrawer evidence={evidence} />
+        <WhyDrawer view={evidence} />
       </ConfirmProvider>
     </ToastProvider>
   )
@@ -113,7 +113,7 @@ describe('layers: the Why? drawer with a ConfirmDialog on top', () => {
   it('the not-found state has no tabs and no Keep', async () => {
     render(
       <ToastProvider>
-        <WhyDrawer evidence={null} />
+        <WhyDrawer view={null} />
       </ToastProvider>
     )
     await screen.findByRole('dialog', { name: 'We can’t find that evidence' })

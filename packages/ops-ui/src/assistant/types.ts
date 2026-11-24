@@ -121,6 +121,8 @@ export interface HighlightProps {
   text: string
   match: string
   active?: boolean
+  /** Where the match starts in `text` (a resolved span's offset); default: its first occurrence. */
+  at?: number
 }
 export interface SourceQuoteProps {
   fileType: FileType
@@ -128,8 +130,12 @@ export interface SourceQuoteProps {
   meta?: string
   text: string
   match: string
+  /** Where the match starts in `text`; default: its first occurrence. */
+  matchAt?: number
   location: string
   openHref: string
+  /** The span a Why? reason link opened (accent outline); default true. */
+  active?: boolean
   className?: string
 }
 export interface UnsureRowProps {
