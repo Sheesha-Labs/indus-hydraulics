@@ -74,7 +74,9 @@ export default function T7Settings({
           <aside
             data-slot="aside"
             aria-label={asideLabel}
-            className="bg-io-card border-io-line flex min-h-0 flex-col gap-4 overflow-y-auto border-l px-5 py-6"
+            // It scrolls on its own: focusable so the keyboard can scroll it (axe scrollable-region-focusable).
+            tabIndex={0}
+            className="bg-io-card border-io-line io-focus flex min-h-0 flex-col gap-4 overflow-y-auto border-l px-5 py-6"
           >
             {aside}
           </aside>

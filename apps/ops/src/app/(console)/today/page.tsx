@@ -64,7 +64,9 @@ export default async function TodayPage() {
           }
         : {})}
       needsYou={
-        model.state === 'calm' ? <CalmState model={model} /> : <NeedsYou needs={model.needs} />
+        <div data-built="today" className="flex flex-col gap-3.5">
+          {model.state === 'calm' ? <CalmState model={model} /> : <NeedsYou needs={model.needs} />}
+        </div>
       }
       cameIn={
         <>
