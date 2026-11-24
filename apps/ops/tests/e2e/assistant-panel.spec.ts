@@ -77,9 +77,7 @@ test('assistant-panel: instruction becomes proposal; approve changes the record;
   })
 
   // Axe reads colours as painted: wait until the panel's open animation has finished.
-  await page.waitForFunction(() =>
-    document.getAnimations().every((a) => a.playState !== 'running')
-  )
+  await page.waitForFunction(() => document.getAnimations().every((a) => a.playState !== 'running'))
   const { violations } = await new AxeBuilder({ page })
     .include('[data-part="drawer"], aside')
     .analyze()

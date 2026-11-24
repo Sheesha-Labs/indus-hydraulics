@@ -1,4 +1,4 @@
-import { afterAll, describe, expect, it } from 'vitest'
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import { PrismaClient } from './index'
 
 /**
@@ -31,10 +31,14 @@ const TRAILS = [
 ] as const
 
 describe.skipIf(!URL_)('append-only tables · local database as ops_app', () => {
-  const db = new PrismaClient({ datasources: { db: { url: URL_! } } })
+  // Built in beforeAll: bun runs a skipped describe's body, and a client with no URL throws there.
+  let db: PrismaClient
+  beforeAll(() => {
+    db = new PrismaClient({ datasources: { db: { url: URL_! } } })
+  })
 
   afterAll(async () => {
-    await db.$disconnect()
+    await db?.$disconnect()
   })
 
   it.each(TRAILS)('%s rejects UPDATE and DELETE', async (t) => {
