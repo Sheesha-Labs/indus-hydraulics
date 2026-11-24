@@ -1,0 +1,734 @@
+[
+  {
+    "id": "l001",
+    "subject": "Re: IH-RFQ-2611-P01",
+    "body": "Our quotation is attached.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:r0",
+        "subjectType": "supplier_rfq",
+        "subjectId": "r0",
+        "enquiryId": null,
+        "label": "IH-RFQ-2611-P01",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": "supplier_rfq:r0"
+  },
+  {
+    "id": "l002",
+    "subject": "Re: IH-RFQ-2611-P02",
+    "body": "Our quotation is attached.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:r1",
+        "subjectType": "supplier_rfq",
+        "subjectId": "r1",
+        "enquiryId": null,
+        "label": "IH-RFQ-2611-P02",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": "supplier_rfq:r1"
+  },
+  {
+    "id": "l003",
+    "subject": "Re: IH-RFQ-2611-P03",
+    "body": "Our quotation is attached.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:r2",
+        "subjectType": "supplier_rfq",
+        "subjectId": "r2",
+        "enquiryId": null,
+        "label": "IH-RFQ-2611-P03",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": "supplier_rfq:r2"
+  },
+  {
+    "id": "l004",
+    "subject": "Re: IH-RFQ-2611-P04",
+    "body": "Our quotation is attached.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:r3",
+        "subjectType": "supplier_rfq",
+        "subjectId": "r3",
+        "enquiryId": null,
+        "label": "IH-RFQ-2611-P04",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": "supplier_rfq:r3"
+  },
+  {
+    "id": "l005",
+    "subject": "Re: IH-RFQ-2611-P05",
+    "body": "Our quotation is attached.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:r4",
+        "subjectType": "supplier_rfq",
+        "subjectId": "r4",
+        "enquiryId": null,
+        "label": "IH-RFQ-2611-P05",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": "supplier_rfq:r4"
+  },
+  {
+    "id": "l006",
+    "subject": "Re: IH-RFQ-2611-P06",
+    "body": "Our quotation is attached.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:r5",
+        "subjectType": "supplier_rfq",
+        "subjectId": "r5",
+        "enquiryId": null,
+        "label": "IH-RFQ-2611-P06",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": "supplier_rfq:r5"
+  },
+  {
+    "id": "l007",
+    "subject": "Re: RFQ",
+    "body": "Any update?",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:e0",
+        "subjectType": "enquiry",
+        "subjectId": "e0",
+        "enquiryId": "e0",
+        "label": "ENQ in thread",
+        "step": "thread",
+        "reason": "thread"
+      }
+    ],
+    "expect": "enquiry:e0"
+  },
+  {
+    "id": "l008",
+    "subject": "Re: RFQ",
+    "body": "Any update?",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:e1",
+        "subjectType": "enquiry",
+        "subjectId": "e1",
+        "enquiryId": "e1",
+        "label": "ENQ in thread",
+        "step": "thread",
+        "reason": "thread"
+      }
+    ],
+    "expect": "enquiry:e1"
+  },
+  {
+    "id": "l009",
+    "subject": "Re: RFQ",
+    "body": "Any update?",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:e2",
+        "subjectType": "enquiry",
+        "subjectId": "e2",
+        "enquiryId": "e2",
+        "label": "ENQ in thread",
+        "step": "thread",
+        "reason": "thread"
+      }
+    ],
+    "expect": "enquiry:e2"
+  },
+  {
+    "id": "l010",
+    "subject": "Re: RFQ",
+    "body": "Any update?",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:e3",
+        "subjectType": "enquiry",
+        "subjectId": "e3",
+        "enquiryId": "e3",
+        "label": "ENQ in thread",
+        "step": "thread",
+        "reason": "thread"
+      }
+    ],
+    "expect": "enquiry:e3"
+  },
+  {
+    "id": "l011",
+    "subject": "Re: RFQ",
+    "body": "Any update?",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:e4",
+        "subjectType": "enquiry",
+        "subjectId": "e4",
+        "enquiryId": "e4",
+        "label": "ENQ in thread",
+        "step": "thread",
+        "reason": "thread"
+      }
+    ],
+    "expect": "enquiry:e4"
+  },
+  {
+    "id": "l012",
+    "subject": "Re: Your quotation",
+    "body": "Thanks, we accept.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "quotation:q0",
+        "subjectType": "quotation",
+        "subjectId": "q0",
+        "enquiryId": null,
+        "label": "INDUS/Q",
+        "step": "reply_to_outbound",
+        "reason": "reply_to_outbound"
+      }
+    ],
+    "expect": "quotation:q0"
+  },
+  {
+    "id": "l013",
+    "subject": "Re: Your quotation",
+    "body": "Thanks, we accept.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "quotation:q1",
+        "subjectType": "quotation",
+        "subjectId": "q1",
+        "enquiryId": null,
+        "label": "INDUS/Q",
+        "step": "reply_to_outbound",
+        "reason": "reply_to_outbound"
+      }
+    ],
+    "expect": "quotation:q1"
+  },
+  {
+    "id": "l014",
+    "subject": "Re: Your quotation",
+    "body": "Thanks, we accept.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "quotation:q2",
+        "subjectType": "quotation",
+        "subjectId": "q2",
+        "enquiryId": null,
+        "label": "INDUS/Q",
+        "step": "reply_to_outbound",
+        "reason": "reply_to_outbound"
+      }
+    ],
+    "expect": "quotation:q2"
+  },
+  {
+    "id": "l015",
+    "subject": "Re: Your quotation",
+    "body": "Thanks, we accept.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "quotation:q3",
+        "subjectType": "quotation",
+        "subjectId": "q3",
+        "enquiryId": null,
+        "label": "INDUS/Q",
+        "step": "reply_to_outbound",
+        "reason": "reply_to_outbound"
+      }
+    ],
+    "expect": "quotation:q3"
+  },
+  {
+    "id": "l016",
+    "subject": "Re: two RFQs",
+    "body": "Please see both offers.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:a0",
+        "subjectType": "supplier_rfq",
+        "subjectId": "a0",
+        "enquiryId": null,
+        "label": "P03",
+        "step": "reference",
+        "reason": "reference"
+      },
+      {
+        "key": "supplier_rfq:b0",
+        "subjectType": "supplier_rfq",
+        "subjectId": "b0",
+        "enquiryId": null,
+        "label": "P04",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l017",
+    "subject": "Re: two RFQs",
+    "body": "Please see both offers.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:a1",
+        "subjectType": "supplier_rfq",
+        "subjectId": "a1",
+        "enquiryId": null,
+        "label": "P03",
+        "step": "reference",
+        "reason": "reference"
+      },
+      {
+        "key": "supplier_rfq:b1",
+        "subjectType": "supplier_rfq",
+        "subjectId": "b1",
+        "enquiryId": null,
+        "label": "P04",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l018",
+    "subject": "Re: two RFQs",
+    "body": "Please see both offers.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:a2",
+        "subjectType": "supplier_rfq",
+        "subjectId": "a2",
+        "enquiryId": null,
+        "label": "P03",
+        "step": "reference",
+        "reason": "reference"
+      },
+      {
+        "key": "supplier_rfq:b2",
+        "subjectType": "supplier_rfq",
+        "subjectId": "b2",
+        "enquiryId": null,
+        "label": "P04",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l019",
+    "subject": "Re: two RFQs",
+    "body": "Please see both offers.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:a3",
+        "subjectType": "supplier_rfq",
+        "subjectId": "a3",
+        "enquiryId": null,
+        "label": "P03",
+        "step": "reference",
+        "reason": "reference"
+      },
+      {
+        "key": "supplier_rfq:b3",
+        "subjectType": "supplier_rfq",
+        "subjectId": "b3",
+        "enquiryId": null,
+        "label": "P04",
+        "step": "reference",
+        "reason": "reference"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l020",
+    "subject": "Price",
+    "body": "Please see our price.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:d0",
+        "subjectType": "supplier_rfq",
+        "subjectId": "d0",
+        "enquiryId": null,
+        "label": "open RFQ",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "supplier_rfq:d0"
+  },
+  {
+    "id": "l021",
+    "subject": "Price",
+    "body": "Please see our price.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:d1",
+        "subjectType": "supplier_rfq",
+        "subjectId": "d1",
+        "enquiryId": null,
+        "label": "open RFQ",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "supplier_rfq:d1"
+  },
+  {
+    "id": "l022",
+    "subject": "Price",
+    "body": "Please see our price.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:d2",
+        "subjectType": "supplier_rfq",
+        "subjectId": "d2",
+        "enquiryId": null,
+        "label": "open RFQ",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "supplier_rfq:d2"
+  },
+  {
+    "id": "l023",
+    "subject": "Price",
+    "body": "Please see our price.",
+    "senderRole": "supplier",
+    "knownCompanyId": "co-s",
+    "candidates": [
+      {
+        "key": "supplier_rfq:d3",
+        "subjectType": "supplier_rfq",
+        "subjectId": "d3",
+        "enquiryId": null,
+        "label": "open RFQ",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "supplier_rfq:d3"
+  },
+  {
+    "id": "l024",
+    "subject": "Update",
+    "body": "Please advise.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:m00",
+        "subjectType": "enquiry",
+        "subjectId": "m00",
+        "enquiryId": "m00",
+        "label": "ENQ 0",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m01",
+        "subjectType": "enquiry",
+        "subjectId": "m01",
+        "enquiryId": "m01",
+        "label": "ENQ 1",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m02",
+        "subjectType": "enquiry",
+        "subjectId": "m02",
+        "enquiryId": "m02",
+        "label": "ENQ 2",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m03",
+        "subjectType": "enquiry",
+        "subjectId": "m03",
+        "enquiryId": "m03",
+        "label": "ENQ 3",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l025",
+    "subject": "Update",
+    "body": "Please advise.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:m10",
+        "subjectType": "enquiry",
+        "subjectId": "m10",
+        "enquiryId": "m10",
+        "label": "ENQ 0",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m11",
+        "subjectType": "enquiry",
+        "subjectId": "m11",
+        "enquiryId": "m11",
+        "label": "ENQ 1",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m12",
+        "subjectType": "enquiry",
+        "subjectId": "m12",
+        "enquiryId": "m12",
+        "label": "ENQ 2",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m13",
+        "subjectType": "enquiry",
+        "subjectId": "m13",
+        "enquiryId": "m13",
+        "label": "ENQ 3",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l026",
+    "subject": "Update",
+    "body": "Please advise.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:m20",
+        "subjectType": "enquiry",
+        "subjectId": "m20",
+        "enquiryId": "m20",
+        "label": "ENQ 0",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m21",
+        "subjectType": "enquiry",
+        "subjectId": "m21",
+        "enquiryId": "m21",
+        "label": "ENQ 1",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m22",
+        "subjectType": "enquiry",
+        "subjectId": "m22",
+        "enquiryId": "m22",
+        "label": "ENQ 2",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:m23",
+        "subjectType": "enquiry",
+        "subjectId": "m23",
+        "enquiryId": "m23",
+        "label": "ENQ 3",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": null
+  },
+  {
+    "id": "l027",
+    "subject": "Re: valves",
+    "body": "Our price for the 2 inch ball valves is attached.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:t1a",
+        "subjectType": "enquiry",
+        "subjectId": "t1a",
+        "enquiryId": "t1a",
+        "label": "ENQ-2026-0101 · Ball valves 2 inch, 10 pcs",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:t1b",
+        "subjectType": "enquiry",
+        "subjectId": "t1b",
+        "enquiryId": "t1b",
+        "label": "ENQ-2026-0102 · Hydraulic hoses 1/2 inch",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "enquiry:t1a"
+  },
+  {
+    "id": "l028",
+    "subject": "Re: hoses",
+    "body": "Please confirm the hose length of 50 m.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:t2a",
+        "subjectType": "enquiry",
+        "subjectId": "t2a",
+        "enquiryId": "t2a",
+        "label": "ENQ-2026-0201 · Gate valves 6 inch",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:t2b",
+        "subjectType": "enquiry",
+        "subjectId": "t2b",
+        "enquiryId": "t2b",
+        "label": "ENQ-2026-0202 · Hydraulic hose 1/2 inch, 50 m",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "enquiry:t2b"
+  },
+  {
+    "id": "l029",
+    "subject": "Re: offer",
+    "body": "Thanks for the shackles offer, 25 t is fine.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:t3a",
+        "subjectType": "enquiry",
+        "subjectId": "t3a",
+        "enquiryId": "t3a",
+        "label": "ENQ-2026-0301 · Bow shackles 25 t",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:t3b",
+        "subjectType": "enquiry",
+        "subjectId": "t3b",
+        "enquiryId": "t3b",
+        "label": "ENQ-2026-0302 · Round slings 5 t",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:t3c",
+        "subjectType": "enquiry",
+        "subjectId": "t3c",
+        "enquiryId": "t3c",
+        "label": "ENQ-2026-0303 · Pressure gauges",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": "enquiry:t3a"
+  },
+  {
+    "id": "l030",
+    "subject": "Hello",
+    "body": "Please call me.",
+    "senderRole": "client",
+    "knownCompanyId": "co-c",
+    "candidates": [
+      {
+        "key": "enquiry:t4a",
+        "subjectType": "enquiry",
+        "subjectId": "t4a",
+        "enquiryId": "t4a",
+        "label": "ENQ-2026-0401 · Flanges",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      },
+      {
+        "key": "enquiry:t4b",
+        "subjectType": "enquiry",
+        "subjectId": "t4b",
+        "enquiryId": "t4b",
+        "label": "ENQ-2026-0402 · Flanges 4 inch",
+        "step": "sender_domain",
+        "reason": "sender_domain"
+      }
+    ],
+    "expect": null
+  }
+]

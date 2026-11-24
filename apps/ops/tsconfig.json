@@ -18,6 +18,7 @@
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
+    "evals/**/*.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],

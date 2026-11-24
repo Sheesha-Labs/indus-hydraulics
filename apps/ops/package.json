@@ -10,7 +10,8 @@
     "test": "bun test --parallel --isolate=modules --randomize",
     "test:e2e": "playwright test --project=ops-e2e --project=ops-e2e-auth",
     "test:visual": "playwright test --project=ops-visual",
-    "test:visual:design": "playwright test --project=ops-visual-design"
+    "test:visual:design": "playwright test --project=ops-visual-design",
+    "eval": "bun --preload ./evals/preload.ts evals/run.ts"
   },
   "dependencies": {
     "@googleapis/gmail": "22.0.2",
