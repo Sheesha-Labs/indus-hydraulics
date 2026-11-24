@@ -366,6 +366,7 @@ function ships.
 | `ops.gmail.labels.apply` | `ops/mail.classified`, `ops/mail.linked`, `ops/review.changed` | live + messageId · 1 | 4 | wait | S05 |
 | `ops.mail.bounce.soft` | `ops/mail.bounce.soft` (sleeps 24 h) | house | 2 | wait | S05 |
 | `ops.assistant.on-resumed` | `ops/assistant.resumed` | house | 2 | exempt | S05 |
+| `ops.assistant.backlog` | `ops/assistant.pipeline.enabled` (200 a batch, 2 s apart) | bulk | 2 | wait | S05 |
 
 ## 17. Assistant actions
 

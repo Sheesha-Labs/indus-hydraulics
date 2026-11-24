@@ -18,6 +18,10 @@ export const COUNTER_KEYS = [
   'assistant.paused',
   'assistant.skipped',
   'review.pending',
+  // S05-T09: the pipeline latency window (seconds; n = samples).
+  'mail.latency_p50_s',
+  'mail.latency_p95_s',
+  'mail.latency_n',
 ] as const
 export type CounterKey = (typeof COUNTER_KEYS)[number] | `record:${string}`
 

@@ -211,6 +211,9 @@ const undo = z.strictObject({ sendWindowMinutes: wholeNumber(1, 60, 'minutes') }
 /** S05-T02: how long an internal Assistant effect (link, label) can be undone. */
 const internalUndo = z.strictObject({ minutes: wholeNumber(1, 60, 'minutes') })
 
+/** S05-T09: the mail pipeline switch. Off: new mail is stored, never classified. */
+const mailPipeline = z.strictObject({ enabled: z.boolean() })
+
 /** `Name <address>` or a bare address. */
 const mailbox = z
   .string()
@@ -448,6 +451,13 @@ export const SETTINGS = {
     ownerOnly: true,
     signoff: true,
     label: 'Undo window for the Assistant’s own changes',
+    section: 'assistant',
+  }),
+  'assistant.mail_pipeline_enabled': def({
+    schema: mailPipeline,
+    ownerOnly: true,
+    signoff: false,
+    label: 'Let the Assistant sort new mail',
     section: 'assistant',
   }),
   'system_email.sender': def({

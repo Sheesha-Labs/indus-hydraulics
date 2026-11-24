@@ -2,6 +2,7 @@ import 'server-only'
 import { opsDb } from '@indus/ops-db'
 import type { StoredMailFlags } from '@indus/ops-core'
 import { requestAction, requestActionQuietly } from '../assistant/request'
+import { isMailPipelineEnabled } from '../assistant/pipeline-switch'
 import { handleBounce } from './bounce'
 
 /**
@@ -32,6 +33,8 @@ export async function routeReceived(data: {
   if (!m) return { requested: null, skipped: 'missing' }
   if (m.direction !== 'inbound') return { requested: null, skipped: 'outbound' }
   if (m.origin !== 'live') return { requested: null, skipped: 'origin' }
+  // S05-T09: the switch. Off, the message stays unclassified; switching on sorts it with the backlog.
+  if (!(await isMailPipelineEnabled())) return { requested: null, skipped: 'pipeline_off' }
   const id = await requestAction({
     actionKey: 'classify_mail',
     subjectType: 'mail_message',

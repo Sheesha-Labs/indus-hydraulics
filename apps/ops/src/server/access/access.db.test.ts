@@ -108,6 +108,12 @@ describe.skipIf(!DB_URL)('sign-in · local database', () => {
 
   afterAll(async () => {
     await db.rateLimitCounter.deleteMany({ where: { key: { contains: run } } })
+    // The users stay (auth_event is append-only) but leave the active set, so no later test's "everyone"
+    // notification fans out to every run's leftovers.
+    await db.user.updateMany({
+      where: { email: { startsWith: `t01-${run}-` }, status: { in: ['active', 'invited'] } },
+      data: { status: 'removed' },
+    })
     await db.$disconnect()
   })
 

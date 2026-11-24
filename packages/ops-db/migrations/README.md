@@ -130,3 +130,6 @@ Do not "fix" it by switching the views to `security_invoker`: Ops would lose the
 | `202611241353_ops_mail_view_indexes.sql` | S05-T05: Mail view indexes: mail_thread (lastMessageAt, id) and (mailboxId, lastMessageAt, id); mail_message (threadId, direction, origin) and (classification, confidence). | not yet applied |
 | `202611241356_ops_s05_action_defs.sql` | S05: action defs `manual_reply` (mail, Draft and ask ×3, maxLevel draft_and_ask; external) and `ooo_facts` (mail, Do quietly, not configurable) with their settings. ON CONFLICT DO NOTHING. | not yet applied |
 | `202611241457_ops_assistant_action_created_idx.sql` | S05-T08: assistant_action (createdAt DESC) for the pill popover's week count and last action. | not yet applied |
+| `202611241506_ops_s05_pipeline_settings_seed.sql` | S05-T09: settings seed `assistant.mail_pipeline_enabled` {"enabled":false} (the switch; not_required). | not yet applied |
+| `202611241507_ops_mail_message_first_labelled.sql` | S05-T09: mail_message."firstLabelledAt" (set by the first Indus label on live mail) and its partial index, for the latency metric. | not yet applied |
+| `202611241513_ops_notification_open_dedupe_idx.sql` | S05-T09: partial index on open notifications by dedupeKey (resolveNotifications on every recovery). | not yet applied |

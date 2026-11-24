@@ -33,6 +33,7 @@ const EXPECTED: Record<string, 'exempt' | 'skip' | 'record_only' | 'wait'> = {
   'ops.assistant.run': 'wait',
   'ops.mail.route': 'wait',
   'ops.mail.bounce.soft': 'wait',
+  'ops.assistant.backlog': 'wait',
 }
 
 const ids = opsFunctions.map((fn) => (fn as unknown as { opts: { id: string } }).opts.id)

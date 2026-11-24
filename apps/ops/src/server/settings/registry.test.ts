@@ -69,7 +69,7 @@ describe('settings registry vs the seed migration', () => {
 
   it('seeds exactly the registered keys', () => {
     expect(rows.map((r) => r.key).sort()).toEqual([...SETTING_KEYS].sort())
-    expect(SETTING_KEYS).toHaveLength(26)
+    expect(SETTING_KEYS).toHaveLength(27)
   })
 
   it('every seeded value parses with its schema', () => {

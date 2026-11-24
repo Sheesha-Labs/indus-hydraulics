@@ -1,4 +1,5 @@
 import { Prisma } from '@indus/ops-db'
+import { recordLatency } from '../../server/assistant/latency'
 import { applyLabels, planLabels, recordLabels } from '../../server/mail/labels-apply'
 import { defineOpsFunction } from '../define'
 
@@ -31,6 +32,8 @@ export const gmailLabelsApply = defineOpsFunction(
         throw e
       }
     })
+    // S05-T09: the first label on live mail ends the pipeline's clock for that message.
+    if (actionId) await step.run('latency', () => recordLatency(messageId))
     return { actionId, add: plan.add.length, remove: plan.remove.length }
   }
 )

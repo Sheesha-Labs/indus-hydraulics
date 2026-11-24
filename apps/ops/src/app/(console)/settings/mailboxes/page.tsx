@@ -4,9 +4,11 @@ import DisconnectModal from '../../../../components/mailboxes/DisconnectModal'
 import GmailTruthPanel from '../../../../components/mailboxes/GmailTruthPanel'
 import { getHelpArticle } from '../../../../data/help'
 import MailboxCard from '../../../../components/mailboxes/MailboxCard'
+import PipelineSwitch from '../../../../components/mailboxes/PipelineSwitch'
 import { getConnectContext, getMailboxesPage, readConnectReturn } from '../../../../data/mailboxes'
 import { requireOpsUser } from '../../../../lib/access'
 import { signInFor } from '../../../../lib/page-access'
+import { isMailPipelineEnabled } from '../../../../server/assistant/pipeline-switch'
 
 /**
  * Board 85 · Settings › Mailboxes (T7 body; the layout draws the header, its "Sending rules" action and the
@@ -19,11 +21,12 @@ export default async function SettingsMailboxesPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }) {
   const user = await requireOpsUser().catch(signInFor('/settings/mailboxes'))
-  const [page, context, back, truth] = await Promise.all([
+  const [page, context, back, truth, pipeline] = await Promise.all([
     getMailboxesPage(user),
     getConnectContext(user),
     searchParams.then(readConnectReturn),
     getHelpArticle('gmail-stays-the-truth'),
+    isMailPipelineEnabled(),
   ])
   const modal = {
     returnTo: 'settings' as const,
@@ -85,6 +88,8 @@ export default async function SettingsMailboxesPage({
           </span>
         </div>
       ) : null}
+
+      <PipelineSwitch enabled={pipeline} canChange={user.role === 'owner'} />
 
       <GmailTruthPanel article={truth} />
 

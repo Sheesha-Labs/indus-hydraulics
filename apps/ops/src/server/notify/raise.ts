@@ -49,39 +49,53 @@ export async function raiseNotification(input: RaiseInput): Promise<{ created: n
             })
           ).map((p) => p.userId)
         )
-    let created = 0
-    for (const u of users) {
-      if (muted.has(u.id)) continue
-      const open = await opsDb.notification.findFirst({
-        where: { userId: u.id, dedupeKey: input.dedupeKey, resolvedAt: null },
-        select: { id: true },
-      })
-      if (open) continue
-      try {
-        await opsDb.notification.create({
-          data: {
-            userId: u.id,
-            event: input.event,
-            severity: input.severity ?? 'warning',
-            title: input.title,
-            body: input.body ?? null,
-            dedupeKey: input.dedupeKey,
-            actionUrl: input.actionUrl ?? null,
-            subjectType: input.subjectType ?? null,
-            subjectId: input.subjectId ?? null,
-            enquiryId: input.enquiryId ?? null,
-            channels: ['in_app'],
-          },
+    // Set-based (S05-T08): one read of who already has it open, one insert for the rest. ON CONFLICT DO
+    // NOTHING (skipDuplicates) covers a concurrent raise winning the partial unique index.
+    const targets = users.map((u) => u.id).filter((id) => !muted.has(id))
+    if (targets.length === 0) return { created: 0 }
+    const open = new Set(
+      (
+        await opsDb.notification.findMany({
+          where: { userId: { in: targets }, dedupeKey: input.dedupeKey, resolvedAt: null },
+          select: { userId: true },
         })
-        created += 1
-      } catch (error) {
-        // P2002: a concurrent raise won the partial unique index (one open notification is the point).
-        // P2003: the user was removed between the read and the write. Either way, the next user still gets it.
-        if (!(
-          error instanceof Prisma.PrismaClientKnownRequestError &&
-          (error.code === 'P2002' || error.code === 'P2003')
-        ))
-          throw error
+      ).map((n) => n.userId)
+    )
+    const rows = targets
+      .filter((id) => !open.has(id))
+      .map((userId) => ({
+        userId,
+        event: input.event,
+        severity: input.severity ?? ('warning' as const),
+        title: input.title,
+        body: input.body ?? null,
+        dedupeKey: input.dedupeKey,
+        actionUrl: input.actionUrl ?? null,
+        subjectType: input.subjectType ?? null,
+        subjectId: input.subjectId ?? null,
+        enquiryId: input.enquiryId ?? null,
+        channels: ['in_app' as const],
+      }))
+    if (rows.length === 0) return { created: 0 }
+    let created = 0
+    try {
+      created = (await opsDb.notification.createMany({ data: rows, skipDuplicates: true })).count
+    } catch (error) {
+      // P2003: a user was removed between the read and the write. Fall back to one row at a time, so
+      // everyone else still gets it.
+      if (!(error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2003'))
+        throw error
+      for (const row of rows) {
+        try {
+          await opsDb.notification.create({ data: row })
+          created += 1
+        } catch (e) {
+          if (!(
+            e instanceof Prisma.PrismaClientKnownRequestError &&
+            (e.code === 'P2002' || e.code === 'P2003')
+          ))
+            throw e
+        }
       }
     }
     return { created }

@@ -2825,6 +2825,8 @@ model MailMessage {
   assistantNote        String?
   /// Detector facts (S05-T03): { autoReply, bounce, bulk, phishing, reference, attachments, translated }.
   flags                Json?
+  /// S05-T09: the first Indus label write on live mail (pipeline latency).
+  firstLabelledAt      DateTime?                @db.Timestamptz(3)
   internalDate         DateTime?                @db.Timestamptz(3)
   inReplyToRfcId       String?
   referencesRfcIds     String[]                 @default([])
@@ -2848,6 +2850,7 @@ model MailMessage {
   @@index([threadId, sentAt])
   @@index([rfcMessageId])
   @@index([handledState, sentAt])
+  @@index([firstLabelledAt(sort: Desc)], map: "mail_message_firstLabelledAt_idx")
   @@index([classification, sentAt])
   @@index([fromAddress])
   @@index([mailboxId, internalDate])
@@ -5791,6 +5794,8 @@ model Notification {
   resolvedAt  DateTime?            @db.Timestamptz(3)
 
   /// Partial unique in SQL: (userId, dedupeKey) WHERE resolvedAt IS NULL.
+  /// Partial in SQL: WHERE resolvedAt IS NULL (S05-T09).
+  @@index([dedupeKey], map: "notification_open_dedupeKey_idx")
   @@index([userId, dedupeKey])
   @@index([userId, resolvedAt, createdAt])
   @@map("notification")
