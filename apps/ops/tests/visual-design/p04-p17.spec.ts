@@ -66,3 +66,19 @@ test('board-99 parity: one action (Chase suppliers)', async ({ page, signedInAs 
     'Drawer over the live board 98; no earned suggestion on the local database.'
   )
 })
+
+test('board-100 parity: Guardrails', async ({ page, signedInAs }) => {
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/assistant/guardrails')
+  await expect(page.getByRole('heading', { name: 'Guardrails', level: 1 })).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '100',
+    0.2,
+    'Real rows and local counts; adds the RFQ threshold and research cap rows the board leaves to other screens; Last triggered from local guardrail_trigger rows.'
+  )
+})

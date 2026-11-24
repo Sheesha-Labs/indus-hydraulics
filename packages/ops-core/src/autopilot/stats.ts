@@ -110,3 +110,15 @@ export function runHistoryOf(row: {
     at: row.createdAt,
   }
 }
+
+/** The first instant of the calendar month `now` is in, in `tz` (board 100 "this month", board 101 MTD). */
+export function monthStart(now: Date, tz = 'Asia/Dubai'): Date {
+  const w = wallTime(now, tz)
+  return instantAt({ year: w.year, month: w.month, day: 1 }, 0, 0, tz)
+}
+
+/** Day x of y in the month, in `tz` (board 101 "day 23 of 30"). */
+export function dayOfMonth(now: Date, tz = 'Asia/Dubai'): { day: number; days: number } {
+  const w = wallTime(now, tz)
+  return { day: w.day, days: new Date(Date.UTC(w.year, w.month, 0)).getUTCDate() }
+}
