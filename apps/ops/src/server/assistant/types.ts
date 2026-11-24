@@ -75,8 +75,10 @@ export interface ActionRequest {
   mailboxId?: string | null
   /** S06: a redraft of this action (Reject and redraft, Redraft on a stale card). */
   redraftOfId?: string | null
-  /** S06: the person's reason, for the redraft. */
+  /** S06: the person's reason, for the redraft (or a correction's reason and note). */
   hint?: string | null
+  /** S06-T07: a correction_email for this action, which already left. */
+  correctionOfId?: string | null
 }
 
 export interface GatherContext {

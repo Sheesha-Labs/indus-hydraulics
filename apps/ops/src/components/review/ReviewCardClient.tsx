@@ -7,8 +7,8 @@ import {
   approveProposalAction,
   laterProposalAction,
   rejectProposalAction,
-  undoApprovalAction,
 } from '../../actions/proposal/decide'
+import { useServerUndo } from '../undo/UndoToast'
 import type { ReviewCard } from '../../data/review'
 import EmailEditor from './EmailEditor'
 import StaleBanner from './StaleBanner'
@@ -47,6 +47,7 @@ export default function ReviewCardClient({
     [router]
   )
   const id = card.id
+  const serverUndo = useServerUndo()
   const v = card.version
   const blocked = !!card.stale || !!card.invalid
 
@@ -130,10 +131,7 @@ export default function ReviewCardClient({
           )
           return r.success ? { success: true, data: undefined } : r
         },
-        undo: async () => {
-          const r = await refreshAfter(undoApprovalAction({ actionId: id }))
-          return r.success ? { success: true, data: undefined } : r
-        },
+        undo: () => serverUndo.undo(id, 'send', true),
       }}
     />
   )

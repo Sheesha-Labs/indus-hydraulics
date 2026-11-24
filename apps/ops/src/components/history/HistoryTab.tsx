@@ -2,6 +2,7 @@ import { listHistory, type HistoryScope } from '../../data/history'
 import type { OpsUser } from '../../lib/access-core'
 import { historyQuery, type HistorySearch } from '../../lib/history-params'
 import RecordHistory from './RecordHistory'
+import RevertButton from './RevertButton'
 
 /**
  * Board 113 mounted in a record (S06-T06): reads one page of the record's history and draws RecordHistory
@@ -57,6 +58,7 @@ export default async function HistoryTab({
           }
         : {})}
       exportHref={owner && scope ? `${exportPath}${historyQuery({ kind: search.kind })}` : null}
+      rowAction={(r) => (r.revertible ? <RevertButton eventId={r.id} field={r.field} /> : null)}
     />
   )
 }

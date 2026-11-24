@@ -264,6 +264,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           levelReasons: levelReasons as unknown as Prisma.InputJsonValue,
           surface: def.surface,
           redraftOfId: d.data.redraftOfId ?? null,
+          correctionOfId: d.data.correctionOfId ?? null,
         },
         select: { id: true, ref: true, state: true },
       })

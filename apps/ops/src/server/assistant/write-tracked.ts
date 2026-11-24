@@ -17,6 +17,8 @@ export interface TrackedChange {
   kind: $Enums.ActivityKind
   /** Hidden from a Helper without canSeeMargins (cost, margin, sell). */
   sensitive?: boolean
+  /** S06-T07: the row this change reverses (undo, revert). */
+  revertsEventId?: string | null
 }
 
 export interface TrackedWrite {
@@ -51,7 +53,10 @@ export async function writeTracked<T>(
   apply: (tx: Prisma.TransactionClient) => Promise<T>
 ): Promise<T> {
   const result = await apply(tx)
-  const changed = write.changes.filter((c) => JSON.stringify(c.before) !== JSON.stringify(c.after))
+  // A reversal is recorded even when the value happens to match: the row says what was undone.
+  const changed = write.changes.filter(
+    (c) => c.revertsEventId || JSON.stringify(c.before) !== JSON.stringify(c.after)
+  )
   if (changed.length > 0) {
     await tx.activityEvent.createMany({
       data: changed.map((c) => ({
@@ -67,6 +72,7 @@ export async function writeTracked<T>(
         after: json(c.after),
         note: write.note ?? null,
         sensitive: c.sensitive ?? false,
+        revertsEventId: c.revertsEventId ?? null,
       })),
     })
   }

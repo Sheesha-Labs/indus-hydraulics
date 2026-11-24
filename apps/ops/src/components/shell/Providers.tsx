@@ -11,6 +11,7 @@ import {
   shellHotkeys,
   type ShellPanel,
 } from '../../lib/shell-hotkeys'
+import { CorrectionProvider } from '../undo/CorrectionModal'
 import { ConfirmProvider } from './confirm'
 
 export type { ShellPanel } from '../../lib/shell-hotkeys'
@@ -64,6 +65,7 @@ function opened(s: Record<ShellPanel, boolean>, p: ShellPanel): Record<ShellPane
  *   └ ToastProvider        one toast region, placed clear of the sidebar (236, or 64 collapsed)
  *     └ ShellContext       panels (command bar, notifications, help, Assistant) and the ⌘Z undo stack
  *       └ ConfirmProvider  useConfirm() for destructive actions (S07)
+ *         └ CorrectionProvider  "Send a correction instead?" when an undo finds the email left (S06-T07)
  *       └ global shortcuts ⌘K, Esc, ?, ⌘Z, G T/R/M/E/Q/O/S/C/P, N, [ and ]
  */
 export default function Providers({ children }: { children: ReactNode }) {
@@ -106,7 +108,9 @@ function ShellState({ children }: { children: ReactNode }) {
   )
   return (
     <ShellContext value={value}>
-      <ConfirmProvider>{children}</ConfirmProvider>
+      <ConfirmProvider>
+        <CorrectionProvider>{children}</CorrectionProvider>
+      </ConfirmProvider>
     </ShellContext>
   )
 }

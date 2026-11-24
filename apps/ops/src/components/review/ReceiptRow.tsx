@@ -2,33 +2,38 @@
 
 import { Button } from '@indus/ops-ui/controls'
 import { useUndoCountdown } from '@indus/ops-ui/lib/use-undo-countdown'
-import { useToast } from '@indus/ops-ui/overlay'
-import { useRouter } from 'next/navigation'
-import { useState } from 'react'
-import { undoApprovalAction } from '../../actions/proposal/decide'
+import { useEffect, useState } from 'react'
 import type { ReviewReceipt } from '../../data/review'
+import { useShell } from '../shell/Providers'
+import { useServerUndo } from '../undo/UndoToast'
 
 /** Board 104's receipt row: the person's last approval, with Undo while the server's window is open. */
 export default function ReceiptRow({ receipt }: { receipt: ReviewReceipt }) {
-  const router = useRouter()
-  const { toast } = useToast()
+  const { undo: serverUndo } = useServerUndo()
+  const { registerUndo } = useShell()
   const left = useUndoCountdown(receipt.undoRemainingMs)
   const [busy, setBusy] = useState(false)
-  if (left.remainingMs <= 0) return null
+  const queued = receipt.state === 'queued'
   async function undo() {
     setBusy(true)
     try {
-      const r = await undoApprovalAction({ actionId: receipt.actionId })
-      if (!r.success) {
-        toast({ kind: 'error', title: r.error })
-        return
-      }
-      toast({ kind: 'success', title: '↺ Undone · nothing was sent · back in Review' })
-      router.refresh()
+      await serverUndo(receipt.actionId, queued ? 'send' : 'change')
     } finally {
       setBusy(false)
     }
   }
+  // ⌘Z undoes the last approval while its window is open (S07B).
+  useEffect(
+    () =>
+      receipt.undoRemainingMs > 0
+        ? registerUndo(
+            () => void serverUndo(receipt.actionId, queued ? 'send' : 'change'),
+            receipt.undoRemainingMs
+          )
+        : undefined,
+    [registerUndo, serverUndo, receipt.actionId, receipt.undoRemainingMs, queued]
+  )
+  if (left.remainingMs <= 0) return null
   return (
     <section
       aria-label="Last approval"

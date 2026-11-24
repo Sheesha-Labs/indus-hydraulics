@@ -19,6 +19,7 @@ import { requestActionQuietly, type ActionRequestedData } from './request'
 import { effectRun, resolveRun } from './runner'
 import { isStale } from './staleness'
 import type { ActionRequest, Json, Verified } from './types'
+import { releaseOnUndo } from './undo-hooks'
 import { setActor } from './write-tracked'
 
 // Every action definition registers itself on import; the decisions need them in the web server too.
@@ -610,6 +611,8 @@ export async function undoApproval(
   const ref = await opsDb.$transaction(async (tx) => {
     await setActor(tx, { kind: 'user', id: user.id })
     await tx.assistantAction.update({ where: { id: a.id }, data: { state: 'undone' } })
+    // S06-T07: give back what the approval consumed (a number allocated at approval: S17's quotation).
+    await releaseOnUndo(tx, a)
     return cloneAsProposed(tx, a, { retryOfId: a.id }, now)
   })
   await bumpReview()
@@ -698,7 +701,7 @@ export async function settleActionForOutbound(
     await setActor(tx, { kind: 'system' })
     const a = await tx.assistantAction.findUnique({
       where: { id: o.actionId! },
-      select: { state: true },
+      select: { state: true, correctionOfId: true },
     })
     if (!a || a.state !== 'queued') return a?.state ?? null
     if (o.status === 'sent') {
@@ -707,6 +710,13 @@ export async function settleActionForOutbound(
         where: { id: o.actionId! },
         data: { state: 'done', doneAt: now },
       })
+      // S06-T07: a correction that went out marks the action it corrects.
+      if (a.correctionOfId) {
+        await tx.assistantAction.updateMany({
+          where: { id: a.correctionOfId, state: 'done' },
+          data: { state: 'corrected' },
+        })
+      }
       return 'done'
     }
     if (o.status === 'failed') {

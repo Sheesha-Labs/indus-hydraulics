@@ -11,7 +11,6 @@ import {
   later,
   redraft,
   reject,
-  undoApproval,
   type Decider,
 } from '../../server/assistant/decisions'
 
@@ -131,16 +130,5 @@ export const batchApproveProposalsAction = defineAction({
     const out = await batchApprove(input.items, decider(ctx.user))
     refresh()
     return { results: out, approved: out.filter((r) => r.ok).length }
-  },
-})
-
-export const undoApprovalAction = defineAction({
-  name: 'proposal.undo',
-  schema: z.object({ actionId: z.uuid() }),
-  roles: ['owner', 'helper'],
-  handler: async (input, ctx) => {
-    const out = await undoApproval(input, decider(ctx.user)).catch(safe)
-    refresh()
-    return out
   },
 })

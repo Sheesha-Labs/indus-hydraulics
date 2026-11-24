@@ -6,7 +6,7 @@ import { Banner } from '@indus/ops-ui/status'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { copyTextAction, markSentAction, retrySendAction } from '../../actions/proposal/attention'
-import { undoApprovalAction } from '../../actions/proposal/decide'
+import { undoApprovalAction } from '../../actions/proposal/undo'
 import type { AttentionItem } from '../../data/review'
 
 /**
@@ -130,7 +130,12 @@ export default function AttentionRow({ item, isOwner }: { item: AttentionItem; i
             onClick={() =>
               void run(
                 'cancel',
-                () => undoApprovalAction({ actionId: item.actionId }),
+                () =>
+                  undoApprovalAction({ actionId: item.actionId }).then((r) =>
+                    r.success && !r.data.undone
+                      ? { success: false, error: `${r.data.left.ref} already left.` }
+                      : r
+                  ),
                 'Cancelled · nothing was sent · back in Review'
               )
             }
