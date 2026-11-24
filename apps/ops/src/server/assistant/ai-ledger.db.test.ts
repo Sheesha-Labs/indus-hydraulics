@@ -11,10 +11,29 @@ import { aiLedger, pickPrice, releaseStaleReservations, resetPriceCache } from '
  * one ai_call row. Each run uses its own far-future month, so parallel files never share a budget row.
  */
 const DB_URL = localDatabaseUrl()
-const YEAR = 2100 + Math.floor(Math.random() * 800)
-const MONTH = `${YEAR}-01-01`
-const AT = new Date(`${YEAR}-01-15T09:00:00Z`)
-const PROMPT = `ledger-test-${YEAR}@1`
+/** A month no other test (or earlier run) uses: tests run in random order, so each gets its own budget row. */
+async function freshMonth(
+  limitUsd: string,
+  mode: 'hard_stop' | 'warn_only' = 'hard_stop'
+): Promise<{ month: string; at: Date; prompt: string }> {
+  for (;;) {
+    const year = 2100 + Math.floor(Math.random() * 7_000)
+    const mm = String(1 + Math.floor(Math.random() * 12)).padStart(2, '0')
+    const month = `${year}-${mm}-01`
+    try {
+      await opsDb.aiBudget.create({
+        data: { month: new Date(`${month}T00:00:00Z`), limitUsd, mode },
+      })
+      return {
+        month,
+        at: new Date(`${year}-${mm}-15T09:00:00Z`),
+        prompt: `ledger-test-${year}-${mm}@1`,
+      }
+    } catch {
+      // taken by an earlier run: pick another
+    }
+  }
+}
 
 const Label = z.strictObject({ label: z.enum(['enquiry', 'other']) })
 
@@ -70,11 +89,8 @@ describe('pickPrice', () => {
 })
 
 describe.skipIf(!DB_URL)('aiLedger · real reservation functions', () => {
-  beforeAll(async () => {
+  beforeAll(() => {
     resetPriceCache()
-    await opsDb.aiBudget.create({
-      data: { month: new Date(`${MONTH}T00:00:00Z`), limitUsd: '1.0000', mode: 'hard_stop' },
-    })
   })
 
   afterAll(async () => {
@@ -82,7 +98,7 @@ describe.skipIf(!DB_URL)('aiLedger · real reservation functions', () => {
   })
 
   it('reads the seeded 5.5 prices', async () => {
-    const p = await aiLedger.prices(MODELS.haiku, AT)
+    const p = await aiLedger.prices(MODELS.haiku, new Date('2100-01-15T09:00:00Z'))
     expect(p).toMatchObject({
       inputPerM: '0.1000',
       outputPerM: '0.5000',
@@ -91,6 +107,7 @@ describe.skipIf(!DB_URL)('aiLedger · real reservation functions', () => {
   })
 
   it('reserves inside the limit, settles into spent once, and refuses past the limit', async () => {
+    const { month: MONTH } = await freshMonth('1.0000')
     const id = await aiLedger.reserve({ month: MONTH, estUsd: '0.600000', purpose: 'classify' })
     expect(id).toEqual(expect.any(String))
     // 0.6 reserved + 0.6 more > 1.0 under hard_stop
@@ -108,6 +125,7 @@ describe.skipIf(!DB_URL)('aiLedger · real reservation functions', () => {
   })
 
   it('a structured call records one ai_call and settles its cost', async () => {
+    const { at: AT, prompt: PROMPT } = await freshMonth('1.0000')
     const calls = { n: 0 }
     const res = await structuredCall({
       route: 'classify',
@@ -139,6 +157,7 @@ describe.skipIf(!DB_URL)('aiLedger · real reservation functions', () => {
   })
 
   it('makes no API request once the month is at its hard-stop limit', async () => {
+    const { month: MONTH, at: AT, prompt: PROMPT } = await freshMonth('1.0000')
     await opsDb.aiBudget.update({
       where: { month: new Date(`${MONTH}T00:00:00Z`) },
       data: { spentUsd: '1.000000' },
@@ -157,7 +176,7 @@ describe.skipIf(!DB_URL)('aiLedger · real reservation functions', () => {
     })
     expect(res).toMatchObject({ ok: false, reason: 'budget' })
     expect(calls.n).toBe(0)
-    expect(await opsDb.aiCall.count({ where: { promptVersion: PROMPT } })).toBe(1)
+    expect(await opsDb.aiCall.count({ where: { promptVersion: PROMPT } })).toBe(0)
   })
 
   it('releases stale reservations at zero', async () => {

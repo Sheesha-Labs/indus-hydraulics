@@ -92,8 +92,8 @@ export const aiLedger: AiLedger = {
     await opsDb.$executeRaw`SELECT ops.ai_budget_settle(${reservationId}::uuid, ${actualUsd}::numeric)`
   },
 
-  async record(call: AiCallRecord): Promise<void> {
-    await opsDb.aiCall.create({
+  async record(call: AiCallRecord): Promise<string> {
+    const row = await opsDb.aiCall.create({
       data: {
         actionId: call.actionId ?? null,
         enquiryId: call.enquiryId ?? null,
@@ -116,6 +116,7 @@ export const aiLedger: AiLedger = {
       },
       select: { id: true },
     })
+    return row.id
   },
 }
 

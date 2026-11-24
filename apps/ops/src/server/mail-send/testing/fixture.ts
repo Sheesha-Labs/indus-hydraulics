@@ -58,6 +58,29 @@ export type QueueWorld = {
   helperId: string
 }
 
+/**
+ * Add or remove ONE address on the shared `mail.test_allowlist` setting in a single statement, so files that
+ * run in parallel never overwrite each other's entries.
+ */
+export async function allowTestRecipient(db: typeof OpsDb, address: string): Promise<void> {
+  await db.$executeRaw`
+    UPDATE ops.settings_entry
+       SET "value" = jsonb_build_object('addresses',
+             (SELECT coalesce(jsonb_agg(DISTINCT a), '[]'::jsonb)
+                FROM jsonb_array_elements_text(coalesce("value" -> 'addresses', '[]'::jsonb) || to_jsonb(${address}::text)) AS a))
+     WHERE "key" = 'mail.test_allowlist'`
+}
+
+export async function disallowTestRecipient(db: typeof OpsDb, address: string): Promise<void> {
+  await db.$executeRaw`
+    UPDATE ops.settings_entry
+       SET "value" = jsonb_build_object('addresses',
+             (SELECT coalesce(jsonb_agg(a), '[]'::jsonb)
+                FROM jsonb_array_elements_text(coalesce("value" -> 'addresses', '[]'::jsonb)) AS a
+               WHERE a <> ${address}::text))
+     WHERE "key" = 'mail.test_allowlist'`
+}
+
 export async function cleanQueue(db: typeof OpsDb, tag: string): Promise<void> {
   const boxes = await db.mailbox.findMany({
     where: { address: { startsWith: `s04q-${tag}-` } },

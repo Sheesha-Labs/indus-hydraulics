@@ -36,8 +36,9 @@ class FakeLedger implements AiLedger {
   async settle(id: string, actual: string): Promise<void> {
     this.settles.push([id, actual])
   }
-  async record(call: AiCallRecord): Promise<void> {
+  async record(call: AiCallRecord): Promise<string | undefined> {
     this.calls.push(call)
+    return undefined
   }
 }
 

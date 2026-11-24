@@ -43,6 +43,9 @@ export interface AiLedger {
   reserve(input: ReserveInput): Promise<string | null>
   /** Moves the estimate out of reserved and `actualUsd` into spent. Idempotent. */
   settle(reservationId: string, actualUsd: string): Promise<void>
-  /** One `ai_call` row. INSERT-only. */
-  record(call: AiCallRecord): Promise<void>
+  /**
+   * One `ai_call` row. INSERT-only. Returns its id when the ledger knows it: the action row does not exist yet
+   * while its model calls run (ai_call.actionId has a foreign key), so the runner keeps these ids instead.
+   */
+  record(call: AiCallRecord): Promise<string | undefined>
 }

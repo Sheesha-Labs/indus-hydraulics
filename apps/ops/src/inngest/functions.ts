@@ -1,3 +1,4 @@
+import { assistantRun } from './assistant/run'
 import { gmailBackfill } from './gmail/backfill'
 import { gmailHealth } from './gmail/health'
 import { gmailBackfillFetch, gmailMessageFetch } from './gmail/message-fetch'
@@ -24,4 +25,5 @@ export const opsFunctions = [
   mailSend,
   mailSendReconcile,
   mailboxPurge,
+  assistantRun,
 ]

@@ -6,6 +6,8 @@ import {
   localDatabaseUrl,
   memoryStorage,
   type QueueWorld,
+  allowTestRecipient,
+  disallowTestRecipient,
 } from './testing/fixture'
 
 /**
@@ -66,10 +68,7 @@ describe.skipIf(!DB_URL)('mailbox and sending settings · local database', () =>
   })
 
   afterAll(async () => {
-    await db.settingsEntry.update({
-      where: { key: 'mail.test_allowlist' },
-      data: { value: { addresses: [] } },
-    })
+    await disallowTestRecipient(db, CLIENT)
     // Put every rule back as it was (rows are shared with the other files).
     for (const r of snapshot) {
       const { kind, updatedAt: _u, ...data } = r
@@ -333,10 +332,7 @@ describe.skipIf(!DB_URL)('mailbox and sending settings · local database', () =>
 
   describe('test email', () => {
     it('refuses an address not on the test list; queues one on it, in the latest thread when asked', async () => {
-      await db.settingsEntry.update({
-        where: { key: 'mail.test_allowlist' },
-        data: { value: { addresses: [] } },
-      })
+      await disallowTestRecipient(db, CLIENT)
       await expect(
         testSend.sendTestEmail({
           userId: world.ownerId,
@@ -345,10 +341,7 @@ describe.skipIf(!DB_URL)('mailbox and sending settings · local database', () =>
           mode: 'new',
         })
       ).rejects.toThrow('test list')
-      await db.settingsEntry.update({
-        where: { key: 'mail.test_allowlist' },
-        data: { value: { addresses: [CLIENT] } },
-      })
+      await allowTestRecipient(db, CLIENT)
       const thread = await db.mailThread.create({
         data: { mailboxId: world.salesId, gmailThreadId: `thr-${TAG}-test-${Date.now()}` },
       })

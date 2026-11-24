@@ -75,6 +75,7 @@ const AWAITING = [
   'send.timing',
   'calendar.country_weekends',
   'send.attachment_names',
+  'assistant.internal_undo_minutes', // S05-T02
 ]
 
 const USER_SELECT = {

@@ -2819,6 +2819,10 @@ model MailMessage {
   searchTsv            Unsupported("tsvector")?
   /// S04-T02: live | backfill | import. Backfilled and imported mail never causes an external effect.
   origin               String                   @default("live")
+  /// One line from the Assistant: "Client enquiry · Sure · from a known client domain" (S05).
+  assistantNote        String?
+  /// Detector facts (S05-T03): { autoReply, bounce, bulk, phishing, reference, attachments, translated }.
+  flags                Json?
   internalDate         DateTime?                @db.Timestamptz(3)
   inReplyToRfcId       String?
   referencesRfcIds     String[]                 @default([])
@@ -5604,12 +5608,26 @@ model AssistantAction {
   revertOfId     String?            @db.Uuid
   batchKey       String?
   costUsd        Decimal            @default(0) @db.Decimal(12, 6)
+  // Runner columns (S05-T02). Immutable after insert except `version`, which the guard bumps on update.
+  /// sha256 of the sorted source versions the proposal was built on; a stale basis cannot be approved.
+  basisHash      String?
+  /// `${actionKey}:${subjectType}:${subjectId}:${sourceVersion}`; one action per key.
+  idempotencyKey String?            @unique
+  /// live | backfill | import | manual
+  origin         String             @default("live")
+  model          String?
+  promptVersion  String?
+  levelReasons   Json?
+  /// review | mail_unsure | hint
+  surface        String             @default("review")
+  version        Int                @default(0)
   createdAt      DateTime           @default(now()) @db.Timestamptz(3)
   updatedAt      DateTime           @updatedAt @db.Timestamptz(3)
 
   events             AssistantActionEvent[]
   aiCalls            AiCall[]
   aiReservations     AiReservation[]
+  preferenceSignals  PreferenceSignal[]
   outbound           OutboundEmail[]
   preferenceEvidence PreferenceEvidence[]
 
@@ -5618,6 +5636,7 @@ model AssistantAction {
   @@index([actionKey, createdAt])
   @@index([subjectType, subjectId])
   @@index([undoUntil])
+  @@index([surface, state, createdAt])
   @@map("assistant_action")
   @@schema("ops")
 }
@@ -6034,5 +6053,50 @@ model AiReservation {
 
   @@index([month])
   @@map("ai_reservation")
+  @@schema("ops")
+}
+
+/// S05-T02: the single row behind "Pause everything" (id = 1).
+model AssistantState {
+  id          Int       @id @default(1) @db.SmallInt
+  pausedAt    DateTime? @db.Timestamptz(3)
+  pausedById  String?   @db.Uuid
+  pauseNote   String?
+  resumedAt   DateTime? @db.Timestamptz(3)
+  resumedById String?   @db.Uuid
+  version     Int       @default(0)
+  updatedAt   DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@map("assistant_state")
+  @@schema("ops")
+}
+
+/// S05-T02: shell live counts (mail.unsure, mail.not_linked, …), one upsert per bump.
+model LiveCounter {
+  key       String   @id
+  value     Int      @default(0)
+  updatedAt DateTime @default(now()) @db.Timestamptz(3)
+
+  @@map("live_counter")
+  @@schema("ops")
+}
+
+/// S05-T02: what a person's edits, rejections and choices say about how they want things done.
+model PreferenceSignal {
+  id          String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  /// edit | reject | unsure_choice | override | sent_mail
+  kind        String
+  actionId    String?          @db.Uuid
+  action      AssistantAction? @relation(fields: [actionId], references: [id], onDelete: SetNull, map: "preference_signal_action_fkey")
+  actionKey   String?
+  companyId   String?          @db.Uuid
+  mailboxId   String?          @db.Uuid
+  payload     Json             @default("{}")
+  createdById String?          @db.Uuid
+  createdAt   DateTime         @default(now()) @db.Timestamptz(3)
+  consumedAt  DateTime?        @db.Timestamptz(3)
+
+  @@index([companyId, createdAt], map: "preference_signal_company_idx")
+  @@map("preference_signal")
   @@schema("ops")
 }

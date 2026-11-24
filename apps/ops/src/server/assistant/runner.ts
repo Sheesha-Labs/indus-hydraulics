@@ -1,0 +1,364 @@
+import 'server-only'
+import { createHash } from 'node:crypto'
+import { opsDb, Prisma, type $Enums } from '@indus/ops-db'
+import {
+  mailboxCanSend,
+  resolveLevelInterim,
+  type ResolvedLevel,
+  type InterimBudgetState,
+} from '@indus/ops-core'
+import { budgetState, monthKey, structuredCall, type BudgetMode } from '@indus/ops-ai'
+import { aiLedger } from './ai-ledger'
+import { bumpCounters, setCounters } from './live-counter'
+import { assistantTransport } from './model'
+import { actionDefinition } from './registry'
+import type { ActionRequestedData } from './request'
+import { isAssistantPaused } from './state'
+import type { ActionAi, ActionDefinition, Json, ProposeOutcome, Verified } from './types'
+import { setActor } from './write-tracked'
+
+/**
+ * The action runner (S05-T02, ADR-09, 08-map-integrations §2.2): the steps `ops.assistant.run` executes, one
+ * Inngest step each. Which steps touch the database:
+ *
+ *   resolve   DB read   def + setting (one query), pause row, budget row, mailbox status
+ *   gather    DB read   the action's own reads; basisHash = sha256 of the sorted versions
+ *   propose   no DB transaction: model calls through structuredCall (the ledger's short statements only)
+ *   verify    no DB     deterministic checks
+ *   decide    DB write  one transaction: allocate the ref, insert the immutable action (or return the
+ *                       existing one for a replayed idempotency key)
+ *   effect    DB write  one transaction: def.effect through writeTracked; running → done (or failed)
+ *   record    DB write  live counters
+ */
+
+export class UnknownActionError extends Error {
+  constructor(key: string) {
+    super(`No action definition registered for "${key}"`)
+    this.name = 'UnknownActionError'
+  }
+}
+
+export function definitionOf(key: string): ActionDefinition<Json, Json> {
+  const def = actionDefinition(key)
+  if (!def) throw new UnknownActionError(key)
+  return def
+}
+
+export function basisHash(versions: Record<string, string | number>): string {
+  const sorted = Object.keys(versions)
+    .sort()
+    .map((k) => [k, versions[k]])
+  return createHash('sha256').update(JSON.stringify(sorted)).digest('hex')
+}
+
+// ── resolve ──────────────────────────────────────────────────────────────────────────────
+
+export type ResolveOutcome = ResolvedLevel & { purposeResearch: boolean }
+
+async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
+  const row = await opsDb.aiBudget.findUnique({
+    where: { month: new Date(`${monthKey(now)}T00:00:00Z`) },
+    select: { limitUsd: true, spentUsd: true, mode: true },
+  })
+  if (!row) return 'ok'
+  return budgetState({
+    limitUsd: row.limitUsd.toFixed(4),
+    spentUsd: row.spentUsd.toFixed(6),
+    mode: row.mode as BudgetMode,
+  })
+}
+
+export async function resolveRun(
+  data: ActionRequestedData,
+  now = new Date()
+): Promise<ResolveOutcome> {
+  const def = definitionOf(data.actionKey)
+  const row = await opsDb.autopilotActionDef.findUnique({
+    where: { key: data.actionKey },
+    select: {
+      key: true,
+      lockedLevel: true,
+      maxLevel: true,
+      defaultCareful: true,
+      defaultBalanced: true,
+      defaultHandsOff: true,
+      setting: { select: { level: true } },
+    },
+  })
+  if (!row) throw new UnknownActionError(data.actionKey)
+  const [paused, budget, mailbox] = await Promise.all([
+    isAssistantPaused(),
+    currentBudgetState(now),
+    def.external && data.mailboxId
+      ? opsDb.mailbox.findUnique({ where: { id: data.mailboxId }, select: { status: true } })
+      : Promise.resolve(null),
+  ])
+  const research = def.aiPurpose === 'research'
+  const resolved = resolveLevelInterim({
+    def: row,
+    setting: row.setting,
+    origin: data.origin,
+    paused,
+    budget,
+    research,
+    mailboxLive: mailbox ? mailboxCanSend(mailbox.status) : !def.external,
+    external: def.external,
+  })
+  return { ...resolved, purposeResearch: research }
+}
+
+// ── gather ───────────────────────────────────────────────────────────────────────────────
+
+export async function gatherRun(
+  data: ActionRequestedData
+): Promise<{ input: Json; versions: Record<string, string | number>; basisHash: string }> {
+  const def = definitionOf(data.actionKey)
+  const { input, versions } = await def.gather({ request: data })
+  return { input, versions, basisHash: basisHash(versions) }
+}
+
+// ── propose ──────────────────────────────────────────────────────────────────────────────
+
+export function actionAi(data: ActionRequestedData): ActionAi {
+  return {
+    call: (args) =>
+      structuredCall({
+        ...args,
+        enquiryId: data.enquiryId ?? null,
+        actionId: null,
+        ledger: aiLedger,
+        transport: assistantTransport(),
+      }),
+  }
+}
+
+export async function proposeRun(
+  data: ActionRequestedData,
+  input: Json,
+  ai: ActionAi = actionAi(data)
+): Promise<ProposeOutcome<Json>> {
+  return definitionOf(data.actionKey).propose(input, ai)
+}
+
+// ── verify ───────────────────────────────────────────────────────────────────────────────
+
+export async function verifyRun(
+  data: ActionRequestedData,
+  out: Json,
+  input: Json
+): Promise<Verified<Json>> {
+  return definitionOf(data.actionKey).verify(out, input)
+}
+
+// ── decide ───────────────────────────────────────────────────────────────────────────────
+
+export interface DecideInput {
+  data: ActionRequestedData
+  resolved: ResolvedLevel
+  basisHash: string
+  input: Json
+  proposal:
+    | {
+        ok: true
+        verified: Verified<Json>
+        costUsd: string
+        model: string | null
+        promptVersion: string | null
+        callIds: string[]
+      }
+    | { ok: false; reason: string; detail: string; costUsd: string; callIds: string[] }
+}
+
+export interface Decided {
+  actionId: string
+  ref: string
+  state: $Enums.ActionState
+  created: boolean
+}
+
+const ASKS = new Set<$Enums.AutopilotLevel>(['suggest', 'draft_and_ask'])
+
+/** proposed for Suggest / Draft and ask or anything Unsure; running for Do and tell / Do quietly. */
+export function initialState(
+  level: $Enums.AutopilotLevel,
+  unsure: boolean
+): 'proposed' | 'running' {
+  return ASKS.has(level) || unsure ? 'proposed' : 'running'
+}
+
+function dubaiDay(now: Date): string {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Dubai',
+    year: '2-digit',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(now)
+  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? '00'
+  return `${get('year')}-${get('month')}-${get('day')}`
+}
+
+export async function decideRun(d: DecideInput, now = new Date()): Promise<Decided> {
+  const def = definitionOf(d.data.actionKey)
+  const existing = await opsDb.assistantAction.findUnique({
+    where: { idempotencyKey: d.data.idempotencyKey },
+    select: { id: true, ref: true, state: true },
+  })
+  if (existing)
+    return { actionId: existing.id, ref: existing.ref, state: existing.state, created: false }
+
+  const p = d.proposal
+  const draft = p.ok ? def.toProposal(p.verified, d.input) : null
+  const state: $Enums.ActionState = p.ok
+    ? initialState(
+        d.resolved.level,
+        (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
+      )
+    : 'failed'
+  const inputs = {
+    request: { ...d.data },
+    aiCallIds: p.callIds,
+  } as unknown as Prisma.InputJsonValue
+
+  try {
+    return await opsDb.$transaction(async (tx) => {
+      await setActor(tx, { kind: 'assistant' })
+      const [num] = await tx.$queryRaw<Array<{ formatted: string }>>`
+        SELECT formatted FROM ops.allocate_number('assistant_action', ${dubaiDay(now)})`
+      if (!num) throw new Error('allocate_number returned no row')
+      const row = await tx.assistantAction.create({
+        data: {
+          ref: num.formatted,
+          actionKey: d.data.actionKey,
+          levelAtTime: d.resolved.level,
+          guardrails: [],
+          enquiryId: d.data.enquiryId ?? null,
+          subjectType: d.data.subjectType,
+          subjectId: d.data.subjectId,
+          headline: draft?.headline ?? `Could not ${def.key.replaceAll('_', ' ')}`,
+          reasons: (draft?.reasons ?? [
+            { text: p.ok ? '' : p.detail },
+          ]) as unknown as Prisma.InputJsonValue,
+          preview: draft?.preview ? (draft.preview as Prisma.InputJsonValue) : Prisma.DbNull,
+          checks: (draft?.checks ?? []) as unknown as Prisma.InputJsonValue,
+          confidence: draft?.confidence ?? null,
+          unsureAbout: draft?.unsureAbout ?? null,
+          onApproveText: draft?.onApproveText ?? null,
+          options: draft?.options
+            ? (draft.options as unknown as Prisma.InputJsonValue)
+            : Prisma.DbNull,
+          inputs,
+          output: p.ok ? (p.verified.out as unknown as Prisma.InputJsonValue) : Prisma.DbNull,
+          state,
+          failureReason: p.ok ? null : p.reason,
+          costUsd: p.costUsd,
+          basisHash: d.basisHash,
+          idempotencyKey: d.data.idempotencyKey,
+          origin: d.data.origin,
+          model: p.ok ? p.model : null,
+          promptVersion: p.ok ? p.promptVersion : null,
+          levelReasons: d.resolved.reasons as unknown as Prisma.InputJsonValue,
+          surface: def.surface,
+        },
+        select: { id: true, ref: true, state: true },
+      })
+      return { actionId: row.id, ref: row.ref, state: row.state, created: true }
+    })
+  } catch (e) {
+    // Two runs raced past the read above: the unique idempotency key kept one. Return it.
+    if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === 'P2002') {
+      const row = await opsDb.assistantAction.findUniqueOrThrow({
+        where: { idempotencyKey: d.data.idempotencyKey },
+        select: { id: true, ref: true, state: true },
+      })
+      return { actionId: row.id, ref: row.ref, state: row.state, created: false }
+    }
+    throw e
+  }
+}
+
+// ── effect ───────────────────────────────────────────────────────────────────────────────
+
+async function internalUndoMinutes(): Promise<number> {
+  const row = await opsDb.settingsEntry.findUnique({
+    where: { key: 'assistant.internal_undo_minutes' },
+    select: { value: true },
+  })
+  const v = (row?.value as { minutes?: unknown } | null)?.minutes
+  return typeof v === 'number' && v > 0 && v <= 60 ? v : 5
+}
+
+export type EffectOutcome = { state: 'done' | 'failed' | 'skipped'; failureReason?: string }
+
+/** Runs the effect of a `running` action once. Any other state is skipped, so a retried step never repeats it. */
+export async function effectRun(actionId: string, now = new Date()): Promise<EffectOutcome> {
+  const action = await opsDb.assistantAction.findUniqueOrThrow({
+    where: { id: actionId },
+    select: {
+      id: true,
+      ref: true,
+      actionKey: true,
+      state: true,
+      levelAtTime: true,
+      output: true,
+      checks: true,
+      confidence: true,
+      inputs: true,
+    },
+  })
+  if (action.state !== 'running') return { state: 'skipped' }
+  const def = definitionOf(action.actionKey)
+  const request = (action.inputs as unknown as { request: ActionRequestedData }).request
+  const verified: Verified<Json> = {
+    out: action.output as unknown as Json,
+    checks: (action.checks as Verified<Json>['checks'] | null) ?? [],
+    confidence: action.confidence ?? 'likely',
+  }
+  const undoMinutes = def.external ? 0 : await internalUndoMinutes()
+
+  try {
+    return await opsDb.$transaction(async (tx) => {
+      await setActor(tx, { kind: 'assistant' })
+      const result = await def.effect(tx, verified, {
+        actionId: action.id,
+        ref: action.ref,
+        request,
+        level: action.levelAtTime,
+      })
+      const undoable = !def.external && result.undoable !== false
+      await tx.assistantAction.update({
+        where: { id: action.id },
+        data: {
+          state: 'done',
+          doneAt: now,
+          undoUntil: undoable ? new Date(now.getTime() + undoMinutes * 60_000) : null,
+        },
+      })
+      return { state: 'done' as const }
+    })
+  } catch (e) {
+    const failureReason = e instanceof Error ? e.message.slice(0, 300) : 'The effect failed'
+    await opsDb.$transaction(async (tx) => {
+      await setActor(tx, { kind: 'assistant' })
+      await tx.assistantAction.updateMany({
+        where: { id: action.id, state: 'running' },
+        data: { state: 'failed', failureReason },
+      })
+    })
+    return { state: 'failed', failureReason }
+  }
+}
+
+// ── record ───────────────────────────────────────────────────────────────────────────────
+
+export async function recordRun(outcome: { skipped?: boolean; surface?: string }): Promise<void> {
+  if (outcome.skipped) {
+    await bumpCounters(['assistant.skipped'])
+    return
+  }
+  if (outcome.surface === 'review') {
+    const pending = await opsDb.assistantAction.count({
+      where: { surface: 'review', state: { in: ['proposed', 'later'] } },
+    })
+    await setCounters({ 'review.pending': pending })
+  }
+}

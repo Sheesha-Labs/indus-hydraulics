@@ -361,6 +361,7 @@ function ships.
 | `ops.mail.send.reconcile` | cron `*/15 * * * *` | house | 2 | exempt | S04 |
 | `ops.gmail.health` | cron `*/5 * * * *` | house | 0 | exempt | S04 |
 | `ops.mailbox.purge` | `ops/mailbox.purge.requested` (continues itself past 400 batches) | bulk | 2 | exempt | S04 |
+| `ops.assistant.run` | `ops/action.requested` (idempotency `event.data.idempotencyKey`) | live + recordKey · 1 | 2 | wait | S05 |
 
 ## 17. Assistant actions
 

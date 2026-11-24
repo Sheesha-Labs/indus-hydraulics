@@ -208,6 +208,9 @@ const auth = z.strictObject({
 
 const undo = z.strictObject({ sendWindowMinutes: wholeNumber(1, 60, 'minutes') })
 
+/** S05-T02: how long an internal Assistant effect (link, label) can be undone. */
+const internalUndo = z.strictObject({ minutes: wholeNumber(1, 60, 'minutes') })
+
 /** `Name <address>` or a bare address. */
 const mailbox = z
   .string()
@@ -439,6 +442,13 @@ export const SETTINGS = {
     signoff: false,
     label: 'Undo window for sends',
     section: 'sending',
+  }),
+  'assistant.internal_undo_minutes': def({
+    schema: internalUndo,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Undo window for the Assistant’s own changes',
+    section: 'assistant',
   }),
   'system_email.sender': def({
     schema: systemEmailSender,

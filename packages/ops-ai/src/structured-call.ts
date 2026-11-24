@@ -53,6 +53,8 @@ export type StructuredResult<T> =
       stopReason: string
       model: string
       attempts: number
+      /** The ai_call ids of every attempt, when the ledger returns them. */
+      callIds: string[]
     }
   | {
       ok: false
@@ -60,6 +62,7 @@ export type StructuredResult<T> =
       detail: string
       costUsd: string
       attempts: number
+      callIds: string[]
     }
 
 export interface StructuredCallInput<T> {
@@ -154,6 +157,11 @@ export async function structuredCall<T>(
 
   let total = '0.000000'
   let attempts = 0
+  const callIds: string[] = []
+  const record = async (row: Parameters<AiLedger['record']>[0]): Promise<void> => {
+    const id = await ledger.record(row)
+    if (typeof id === 'string') callIds.push(id)
+  }
 
   const priceFor = async (model: string, fallback: Price | null): Promise<Price> => {
     try {
@@ -210,7 +218,7 @@ export async function structuredCall<T>(
     } catch (e) {
       const latencyMs = Date.now() - started
       await ledger.settle(reservationId, '0.000000')
-      await ledger.record({
+      await record({
         ...base,
         model: a.model,
         inputTokens: 0,
@@ -235,7 +243,7 @@ export async function structuredCall<T>(
     const counts = tokenCounts(response.usage)
     total = sumUsd(total, cost)
     await ledger.settle(reservationId, cost)
-    await ledger.record({
+    await record({
       ...base,
       model: served,
       ...counts,
@@ -266,6 +274,7 @@ export async function structuredCall<T>(
         detail: 'The monthly AI budget refused this call',
         costUsd: total,
         attempts,
+        callIds,
       }
     }
     const { response } = out
@@ -286,6 +295,7 @@ export async function structuredCall<T>(
         detail: `Refused (${category})`,
         costUsd: total,
         attempts,
+        callIds,
       }
     }
     if (stop === 'max_tokens') {
@@ -300,6 +310,7 @@ export async function structuredCall<T>(
         detail: `Output exceeded ${attempt.maxTokens} tokens`,
         costUsd: total,
         attempts,
+        callIds,
       }
     }
     if (stop !== 'end_turn' && stop !== 'stop_sequence') {
@@ -309,6 +320,7 @@ export async function structuredCall<T>(
         detail: `Unexpected stop_reason ${stop}`,
         costUsd: total,
         attempts,
+        callIds,
       }
     }
 
@@ -324,6 +336,7 @@ export async function structuredCall<T>(
           stopReason: stop,
           model: response.model || attempt.model,
           attempts,
+          callIds,
         }
       }
       problem = issues(parsed.error)
@@ -331,7 +344,7 @@ export async function structuredCall<T>(
       problem = 'the reply was not valid JSON'
     }
     if (retriedInvalid) {
-      return { ok: false, reason: 'invalid', detail: problem, costUsd: total, attempts }
+      return { ok: false, reason: 'invalid', detail: problem, costUsd: total, attempts, callIds }
     }
     retriedInvalid = true
     attempt = {
