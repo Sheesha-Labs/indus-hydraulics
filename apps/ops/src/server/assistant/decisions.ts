@@ -381,6 +381,10 @@ export async function approve(
     })
   })
   const out = await effectRun(a.id, now)
+  // The effect's follow-ups (labels, a requested action) go out after its transaction, as the runner does.
+  for (const e of out.emit ?? []) {
+    await emitEvent({ name: e.name, ...(e.id ? { id: e.id } : {}), data: e.data })
+  }
   const row = await opsDb.assistantAction.findUnique({
     where: { id: a.id },
     select: { state: true, undoUntil: true },

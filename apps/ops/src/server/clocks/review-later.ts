@@ -46,4 +46,14 @@ registerClock<{ id: string }>({
     }
     return moved ? (s.stale ? 'back_stale' : 'back') : 'skipped'
   },
+  // The record's Later cards, from the actions the panel already read: "Back in Review at 14:00 · …".
+  describeUpcoming(_record, loaded) {
+    return loaded.actions
+      .filter((a) => a.state === 'later' && a.laterUntil)
+      .map((a) => ({
+        key: `later:${a.id}`,
+        at: a.laterUntil!,
+        text: `Back in Review · ${a.headline}`,
+      }))
+  },
 })

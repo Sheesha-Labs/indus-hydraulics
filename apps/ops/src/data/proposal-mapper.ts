@@ -216,6 +216,9 @@ export function toProposalCardData(
     version: row.version,
     invalid: parsed.ok ? null : parsed.error,
     // A Helper never approves a locked action (#20 quotation, #28 supplier POs) or a client-mailbox reply.
-    readOnly: user.role !== 'owner' && (locked || row.actionKey === 'manual_reply'),
+    readOnly:
+      (user.role !== 'owner' && (locked || row.actionKey === 'manual_reply')) ||
+      // S06-T08: an instruction the Assistant could not turn into an action has nothing to approve.
+      (row.actionKey === 'instruction' && row.onApproveText === null),
   }
 }

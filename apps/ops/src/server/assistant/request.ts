@@ -41,6 +41,7 @@ export function actionRequestEvent(request: ActionRequest): {
       redraftOfId: request.redraftOfId ?? null,
       hint: request.hint ?? null,
       correctionOfId: request.correctionOfId ?? null,
+      requestedById: request.requestedById ?? null,
       idempotencyKey,
       group: def.concurrencyGroup,
       recordKey: request.enquiryId ?? `${request.subjectType}:${request.subjectId}`,

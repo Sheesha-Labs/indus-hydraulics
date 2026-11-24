@@ -76,3 +76,27 @@ registerFieldWriter('mail_message', 'link', async (tx, messageId, { to, from }) 
     })
   }
 })
+
+// ── S06-T08: what an approved instruction changed ────────────────────────────────────────────────────
+
+registerFieldWriter('enquiry_line', 'status', async (tx, id, { to }) => {
+  const s = str(to)
+  if (s) await tx.enquiryLine.update({ where: { id }, data: { status: s as $Enums.LineStatus } })
+})
+
+registerFieldWriter('enquiry_line', 'heldReason', async (tx, id, { to }) => {
+  await tx.enquiryLine.update({ where: { id }, data: { heldReason: str(to) } })
+})
+
+/** A task (or reminder) the instruction added: undoing it cancels the task; the row stays. */
+registerFieldWriter('enquiry', 'task', async (tx, enquiryId, { to, from }) => {
+  if (to === null && typeof from === 'string') {
+    await tx.task.updateMany({
+      where: { enquiryId, title: from, source: 'assistant', status: 'open' },
+      data: { status: 'cancelled' },
+    })
+  }
+})
+
+/** A note is history: the reversal row itself withdraws it, nothing else changes. */
+registerFieldWriter('enquiry', 'note', async () => undefined)

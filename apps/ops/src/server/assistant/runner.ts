@@ -65,7 +65,7 @@ export function basisHash(versions: Record<string, string | number>): string {
 
 export type ResolveOutcome = ResolvedLevel & { purposeResearch: boolean }
 
-async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
+export async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
   const row = await opsDb.aiBudget.findUnique({
     where: { month: new Date(`${monthKey(now)}T00:00:00Z`) },
     select: { limitUsd: true, spentUsd: true, mode: true },

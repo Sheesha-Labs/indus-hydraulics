@@ -79,6 +79,8 @@ export interface ActionRequest {
   hint?: string | null
   /** S06-T07: a correction_email for this action, which already left. */
   correctionOfId?: string | null
+  /** S06-T08: the person whose instruction (Assistant panel) started it. */
+  requestedById?: string | null
 }
 
 export interface GatherContext {
@@ -182,6 +184,11 @@ export interface ActionDefinition<In = Json, Out = Json> {
   alwaysAsk?: { guardrail: string; reason: string }
   /** S06-T02: several may be approved at once from the BatchBar (chasers, Sure captures). Never a quotation. */
   batchable?: boolean
+  /**
+   * S06-T08: record types on which a person may ask for this action from the Assistant panel (an
+   * instruction's request_action). The request produces this action's own proposal at its own level.
+   */
+  requestableOn?: readonly $Enums.RecordType[]
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
   /**
