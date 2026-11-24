@@ -113,3 +113,19 @@ test('board-102 parity: Autopilot states sheet', async ({ page }) => {
     'Neutral fixtures; the disconnected banner carries the S04 wording plus "purchase@ still runs"; the Helper line names the Owner setting as the board does.'
   )
 })
+
+test('board-115 parity: What the Assistant has learned', async ({ page, signedInAs }) => {
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/assistant/learned')
+  await expect(
+    page.getByRole('heading', { name: 'What the Assistant has learned', level: 1 })
+  ).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '115',
+    0.2,
+    'Preferences on the local database (whatever earlier runs learned); each row adds the on/off switch the board leaves out; the header action is the primary.'
+  )
+})

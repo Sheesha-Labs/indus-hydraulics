@@ -372,6 +372,8 @@ function ships.
 | `ops.budget.rollover` | cron `TZ=Asia/Dubai 5 0 1 * *` (the month's ai_budget row) | house | 2 | exempt | S07 |
 | `ops.budget.reservation.sweep` | cron `*/30 * * * *` (settles reservations open 30 min; moved from the heartbeat) | house | 2 | exempt | S07 |
 | `ops.budget.thresholds` | `ops/ai.spent` (debounce 60 s; 80 % and 100 % notices once a month) | house | 2 | exempt | S07 |
+| `ops.preferences.learn` | cron `TZ=Asia/Dubai 0 1 * * *` (signals → groups ≥ 3 → one Message Batch) | house | 2 | skip | S07 |
+| `ops.preferences.batch.poll` | cron `*/10 * * * *` (ended batch → linted Preference rows) | house | 2 | skip | S07 |
 
 ## 17. Assistant actions
 

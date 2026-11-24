@@ -8,6 +8,8 @@ import {
   proposeRun,
   recordRun,
   resolveRun,
+  actionAi,
+  preferenceBlockFor,
   verifyRun,
   type ResolveOutcome,
 } from '../../server/assistant/runner'
@@ -61,7 +63,11 @@ export const assistantRun = defineOpsFunction(
     }
 
     const gathered = await step.run('gather', () => gatherRun(data))
-    const proposed = await step.run('propose', () => proposeRun(data, gathered.input as Json))
+    // S07-T05: learned preferences for drafting and classification, read before the model step (no DB inside it).
+    const preferences = await step.run('preferences', () => preferenceBlockFor(data))
+    const proposed = await step.run('propose', () =>
+      proposeRun(data, gathered.input as Json, actionAi(data, preferences))
+    )
     const verified = proposed.ok
       ? await step.run('verify', () =>
           verifyRun(data, proposed.out as Json, gathered.input as Json)

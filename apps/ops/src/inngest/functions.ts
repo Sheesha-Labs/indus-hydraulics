@@ -3,6 +3,8 @@ import { autopilotSuggestions } from './autopilot/suggestions'
 import { budgetReservationSweep } from './budget/reservation-sweep'
 import { budgetRollover } from './budget/rollover'
 import { budgetThresholdsFn } from './budget/thresholds'
+import { preferencesBatchPoll } from './preferences/batch-poll'
+import { preferencesLearn } from './preferences/learn'
 import { clocksTick } from './clocks/tick'
 import { assistantOnResumed } from './assistant/on-resumed'
 import { assistantRun } from './assistant/run'
@@ -46,4 +48,6 @@ export const opsFunctions = [
   budgetRollover,
   budgetReservationSweep,
   budgetThresholdsFn,
+  preferencesLearn,
+  preferencesBatchPoll,
 ]

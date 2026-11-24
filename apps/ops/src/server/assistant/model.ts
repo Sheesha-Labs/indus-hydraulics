@@ -1,5 +1,11 @@
 import 'server-only'
-import { anthropicClient, anthropicTransport, type Transport } from '@indus/ops-ai'
+import {
+  anthropicBatchTransport,
+  anthropicClient,
+  anthropicTransport,
+  type BatchTransport,
+  type Transport,
+} from '@indus/ops-ai'
 import { env } from '../../lib/env'
 
 /**
@@ -22,4 +28,10 @@ export function assistantTransport(): Transport {
   const key = env().OPS_ANTHROPIC_API_KEY
   if (!key) throw new AssistantNotConfiguredError()
   return anthropicTransport(anthropicClient(key))
+}
+
+/** The Message Batches transport for the nightly learner (S07-T05); null without the key. */
+export function assistantBatchTransport(): BatchTransport | null {
+  const key = env().OPS_ANTHROPIC_API_KEY
+  return key ? anthropicBatchTransport(anthropicClient(key)) : null
 }

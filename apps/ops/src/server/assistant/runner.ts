@@ -12,6 +12,7 @@ import {
 import { budgetState, monthKey, structuredCall, type BudgetMode } from '@indus/ops-ai'
 import { basisHash as coreBasisHash, parseProposal } from '@indus/ops-core'
 import { aiLedger } from './ai-ledger'
+import { buildPreferenceBlock } from './preferences'
 import { bumpCounters, setCounters } from './live-counter'
 import { assistantTransport } from './model'
 import { actionDefinition } from './registry'
@@ -173,11 +174,27 @@ export async function gatherRun(
 
 // ── propose ──────────────────────────────────────────────────────────────────────────────
 
-export function actionAi(data: ActionRequestedData): ActionAi {
+/**
+ * S07-T05: whether a run's model calls carry the learned-preference block: drafting actions (Review surface,
+ * emailing someone) and #1 classify (classification rules only). The block goes in the USER turn after the
+ * cached system prefix; the system blocks are unchanged byte for byte.
+ */
+export function usesPreferences(key: string): boolean {
+  const def = actionDefinition(key)
+  return key === 'classify_mail' || (!!def && def.external && def.surface === 'review')
+}
+
+export async function preferenceBlockFor(data: ActionRequestedData): Promise<string> {
+  if (!usesPreferences(data.actionKey)) return ''
+  return buildPreferenceBlock({ actionKey: data.actionKey, mailboxId: data.mailboxId ?? null })
+}
+
+export function actionAi(data: ActionRequestedData, preferences = ''): ActionAi {
   return {
     call: (args) =>
       structuredCall({
         ...args,
+        user: preferences ? `${args.user}\n\n${preferences}` : args.user,
         enquiryId: data.enquiryId ?? null,
         actionId: null,
         ledger: aiLedger,
