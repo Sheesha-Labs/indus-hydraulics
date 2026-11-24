@@ -169,12 +169,12 @@ describe('ProposalCard', () => {
     expect(approve).toHaveBeenCalledWith({ optionValue: 'b', toggle: false, chip: 'range' })
   })
 
-  it('Reject cannot submit without a reason, then sends the reason and chip', async () => {
+  it('Reject cannot submit without a reason, then sends the reason, chip and redraft choice', async () => {
     const reject = vi.fn<ProposalActionsInput['reject']>(async () => ok)
     const el = renderCard(card({ actions: actions({ reject }) }))
     await userEvent.click(within(el).getByRole('button', { name: 'Reject' }))
     const dialog = screen.getByRole('dialog', { name: 'Reject this proposal' })
-    await userEvent.click(within(dialog).getByRole('button', { name: 'Reject' }))
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Reject only' }))
     expect(reject).not.toHaveBeenCalled()
     // The Form kit Field: the error is the field's description, and the field takes focus to read it.
     const reason = within(dialog).getByRole('textbox', { name: /Why not\?/ })
@@ -182,12 +182,16 @@ describe('ProposalCard', () => {
     expect(reason).toHaveAttribute('aria-invalid', 'true')
     expect(reason).toHaveFocus()
     await userEvent.type(within(dialog).getByRole('textbox'), '   ')
-    await userEvent.click(within(dialog).getByRole('button', { name: 'Reject' }))
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Reject only' }))
     expect(reject).not.toHaveBeenCalled()
     await userEvent.click(within(dialog).getByRole('button', { name: 'Wrong supplier' }))
     await userEvent.type(within(dialog).getByRole('textbox'), 'Not a bearing house')
-    await userEvent.click(within(dialog).getByRole('button', { name: 'Reject' }))
-    expect(reject).toHaveBeenCalledWith({ reason: 'Not a bearing house', chip: 'wrong-supplier' })
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Reject and redraft' }))
+    expect(reject).toHaveBeenCalledWith({
+      reason: 'Not a bearing house',
+      chip: 'wrong-supplier',
+      redraft: true,
+    })
     expect(el).toHaveAttribute('data-state', 'rejected')
     expect(within(el).getByText('Rejected · Not a bearing house')).toBeInTheDocument()
     await userEvent.click(within(el).getByRole('button', { name: 'Reopen' }))
@@ -310,10 +314,25 @@ describe('ProposalCard keyboard', () => {
     expect(approve).not.toHaveBeenCalled()
   })
 
+  it('approveDisabled shows Approve but it cannot be pressed; the other verbs stay', async () => {
+    const approve = vi.fn<ProposalActionsInput['approve']>(async (): Promise<ApproveResult> => ({
+      success: true,
+      data: {},
+    }))
+    const el = renderCard(card({ approveDisabled: true, actions: actions({ approve }) }))
+    const button = el.querySelector<HTMLButtonElement>('[data-verb="approve"]')!
+    expect(button.disabled).toBe(true)
+    button.click()
+    await press(el, 'Enter', { metaKey: true })
+    expect(approve).not.toHaveBeenCalled()
+    expect(el.querySelector('[data-verb="reject"]')).not.toBeNull()
+  })
+
   it('canApproveFromKeyboard excludes locked, read-only and decided cards', () => {
     expect(canApproveFromKeyboard({ level: { label: 'Asks you' } }, 'open')).toBe(true)
     expect(canApproveFromKeyboard({ level: { label: 'Locked', locked: true } }, 'open')).toBe(false)
     expect(canApproveFromKeyboard({ readOnly: true }, 'open')).toBe(false)
+    expect(canApproveFromKeyboard({ approveDisabled: true }, 'open')).toBe(false)
     expect(canApproveFromKeyboard({}, 'approved')).toBe(false)
     expect(canApproveFromKeyboard({}, 'rejected')).toBe(false)
   })

@@ -8,6 +8,7 @@ import {
   type InterimBudgetState,
 } from '@indus/ops-core'
 import { budgetState, monthKey, structuredCall, type BudgetMode } from '@indus/ops-ai'
+import { basisHash as coreBasisHash, parseProposal } from '@indus/ops-core'
 import { aiLedger } from './ai-ledger'
 import { bumpCounters, setCounters } from './live-counter'
 import { assistantTransport } from './model'
@@ -21,7 +22,9 @@ import type {
   Json,
   ProposeOutcome,
   Verified,
+  ProposalDraft,
 } from './types'
+import { allocateActionRef } from './action-number'
 import { setActor } from './write-tracked'
 
 /**
@@ -51,18 +54,18 @@ export function definitionOf(key: string): ActionDefinition<Json, Json> {
   return def
 }
 
+const sha256 = (text: string) => createHash('sha256').update(text).digest('hex')
+
+/** sha256 of the sorted versions (ops-core basisHash; the same text the S05 runner hashed). */
 export function basisHash(versions: Record<string, string | number>): string {
-  const sorted = Object.keys(versions)
-    .sort()
-    .map((k) => [k, versions[k]])
-  return createHash('sha256').update(JSON.stringify(sorted)).digest('hex')
+  return coreBasisHash(versions, sha256)
 }
 
 // ── resolve ──────────────────────────────────────────────────────────────────────────────
 
 export type ResolveOutcome = ResolvedLevel & { purposeResearch: boolean }
 
-async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
+export async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
   const row = await opsDb.aiBudget.findUnique({
     where: { month: new Date(`${monthKey(now)}T00:00:00Z`) },
     select: { limitUsd: true, spentUsd: true, mode: true },
@@ -73,6 +76,23 @@ async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
     spentUsd: row.spentUsd.toFixed(6),
     mode: row.mode as BudgetMode,
   })
+}
+
+let budgetCache: { at: number; month: string; value: InterimBudgetState } | null = null
+const BUDGET_TTL_MS = 60_000
+
+/**
+ * The month's budget state for display (the Assistant panel's box, S06-T08), read at most once a minute per
+ * server. It never decides a model call: every call still reserves budget first (ai_budget_reserve), so a
+ * minute-old "ok" cannot spend past the limit.
+ */
+export async function displayBudgetState(now = new Date()): Promise<InterimBudgetState> {
+  const month = monthKey(now)
+  if (budgetCache && budgetCache.month === month && Date.now() - budgetCache.at < BUDGET_TTL_MS)
+    return budgetCache.value
+  const value = await currentBudgetState(now)
+  budgetCache = { at: Date.now(), month, value }
+  return value
 }
 
 export async function resolveRun(
@@ -193,17 +213,6 @@ export function initialState(
   return ASKS.has(level) || unsure ? 'proposed' : 'running'
 }
 
-function dubaiDay(now: Date): string {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'Asia/Dubai',
-    year: '2-digit',
-    month: '2-digit',
-    day: '2-digit',
-  }).formatToParts(now)
-  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? '00'
-  return `${get('year')}-${get('month')}-${get('day')}`
-}
-
 export async function decideRun(d: DecideInput, now = new Date()): Promise<Decided> {
   const def = definitionOf(d.data.actionKey)
   const existing = await opsDb.assistantAction.findUnique({
@@ -215,15 +224,19 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
 
   const p = d.proposal
   const draft = p.ok ? def.toProposal(p.verified, d.input) : null
+  // S06-T01: the proposal must fit its kind's schema, or nothing is shown from it.
+  const invalid = draft ? proposalProblem(def.key, def.surface, draft) : null
   const asks = p.ok ? def.alwaysAsk : undefined
-  const state: $Enums.ActionState = p.ok
-    ? asks
-      ? 'proposed'
-      : initialState(
-          d.resolved.level,
-          (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
-        )
-    : 'failed'
+  const state: $Enums.ActionState = invalid
+    ? 'failed'
+    : p.ok
+      ? asks
+        ? 'proposed'
+        : initialState(
+            d.resolved.level,
+            (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
+          )
+      : 'failed'
   const levelReasons = asks ? [...d.resolved.reasons, asks.reason] : d.resolved.reasons
   const inputs = {
     request: { ...d.data },
@@ -233,9 +246,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
   try {
     return await opsDb.$transaction(async (tx) => {
       await setActor(tx, { kind: 'assistant' })
-      const [num] = await tx.$queryRaw<Array<{ formatted: string }>>`
-        SELECT formatted FROM ops.allocate_number('assistant_action', ${dubaiDay(now)})`
-      if (!num) throw new Error('allocate_number returned no row')
+      const num = { formatted: await allocateActionRef(tx, now) }
       const row = await tx.assistantAction.create({
         data: {
           ref: num.formatted,
@@ -260,7 +271,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           inputs,
           output: p.ok ? (p.verified.out as unknown as Prisma.InputJsonValue) : Prisma.DbNull,
           state,
-          failureReason: p.ok ? null : p.reason,
+          failureReason: invalid ? `proposal: ${invalid}`.slice(0, 300) : p.ok ? null : p.reason,
           costUsd: p.costUsd,
           basisHash: d.basisHash,
           idempotencyKey: d.data.idempotencyKey,
@@ -269,9 +280,18 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           promptVersion: p.ok ? p.promptVersion : null,
           levelReasons: levelReasons as unknown as Prisma.InputJsonValue,
           surface: def.surface,
+          redraftOfId: d.data.redraftOfId ?? null,
+          correctionOfId: d.data.correctionOfId ?? null,
         },
         select: { id: true, ref: true, state: true },
       })
+      // S06: the card this redraft replaces points at it.
+      if (d.data.redraftOfId) {
+        await tx.assistantAction.updateMany({
+          where: { id: d.data.redraftOfId, supersededById: null },
+          data: { supersededById: row.id },
+        })
+      }
       return { actionId: row.id, ref: row.ref, state: row.state, created: true }
     })
   } catch (e) {
@@ -285,6 +305,26 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
     }
     throw e
   }
+}
+
+/** Why a drafted proposal does not fit its kind (S06-T01), or null. */
+export function proposalProblem(
+  actionKey: string,
+  surface: string,
+  draft: ProposalDraft
+): string | null {
+  const out = parseProposal(actionKey, {
+    headline: draft.headline,
+    reasons: draft.reasons,
+    checks: draft.checks,
+    confidence: draft.confidence,
+    unsureAbout: draft.unsureAbout ?? null,
+    options: draft.options ?? null,
+    onApproveText: draft.onApproveText ?? null,
+    preview: draft.preview ?? null,
+    surface,
+  })
+  return out.ok ? null : `${out.kind}: ${out.error}`
 }
 
 // ── effect ───────────────────────────────────────────────────────────────────────────────

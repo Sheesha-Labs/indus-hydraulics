@@ -8,6 +8,7 @@ import {
   type StoredMailFlags,
 } from '@indus/ops-core'
 import { findOurOutbound } from '../../mail/our-outbound'
+import { threadVersion } from '../../mail/thread-version'
 import { PROMPT_VERSION, resendUser, SYSTEM_PARTS } from '../prompts/resend-alternate-contact.v1'
 import { registerAction } from '../registry'
 import type { ActionDefinition, OutboundDraft, ProposalDraft } from '../types'
@@ -27,6 +28,7 @@ import type { ActionDefinition, OutboundDraft, ProposalDraft } from '../types'
  */
 export interface ResendInput {
   messageId: string
+  threadId: string
   source: 'out_of_office' | 'bounce'
   mailboxId: string | null
   mailboxAddress: string | null
@@ -124,6 +126,7 @@ export async function loadResendInput(messageId: string): Promise<ResendInput> {
       : await otherAddress(out?.companyId ?? null, originalEmail)
   return {
     messageId: m.id,
+    threadId: m.threadId,
     source,
     mailboxId: out?.mailboxId ?? null,
     mailboxAddress: mailbox?.address ?? null,
@@ -164,8 +167,13 @@ const definition: ActionDefinition<ResendInput, ResendOut> = {
         message: input.messageId,
         outbound: input.outbound?.id ?? 'none',
         target: input.target?.email ?? 'none',
+        thread: await threadVersion(input.threadId),
       },
     }
+  },
+
+  async currentVersions(request) {
+    return (await this.gather({ request })).versions
   },
 
   async propose(input, ai) {

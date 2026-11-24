@@ -3,6 +3,7 @@ import { opsDb } from '@indus/ops-db'
 import type { StoredMailFlags } from '@indus/ops-core'
 import { requestAction, requestActionQuietly } from '../assistant/request'
 import { isMailPipelineEnabled } from '../assistant/pipeline-switch'
+import { markStaleOnInbound } from '../assistant/staleness'
 import { handleBounce } from './bounce'
 
 /**
@@ -33,6 +34,8 @@ export async function routeReceived(data: {
   if (!m) return { requested: null, skipped: 'missing' }
   if (m.direction !== 'inbound') return { requested: null, skipped: 'outbound' }
   if (m.origin !== 'live') return { requested: null, skipped: 'origin' }
+  // S06-T01: a reply in a thread makes the open proposals drafted in it stale, switch or not.
+  await markStaleOnInbound(m.id)
   // S05-T09: the switch. Off, the message stays unclassified; switching on sorts it with the backlog.
   if (!(await isMailPipelineEnabled())) return { requested: null, skipped: 'pipeline_off' }
   const id = await requestAction({

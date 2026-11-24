@@ -84,6 +84,10 @@ export const SYSTEM_KEYS = [
   // S05
   'manual_reply',
   'ooo_facts',
+  // S06
+  'override_value',
+  'outbound_attention',
+  'instruction',
 ] as const
 
 /** Every seeded action key. Later sprints append their keys at the end. */
@@ -149,6 +153,8 @@ export const SENDS_EXTERNALLY = [
   'correction_email',
   // S05
   'manual_reply',
+  // S06 (coverage gap G6: a failed send's Retry emails the recipient)
+  'outbound_attention',
 ] as const satisfies readonly ActionKey[]
 
 export type ExternalSendKey = (typeof SENDS_EXTERNALLY)[number]

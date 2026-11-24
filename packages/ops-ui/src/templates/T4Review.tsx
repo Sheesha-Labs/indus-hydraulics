@@ -58,7 +58,20 @@ export interface T4SingleApproverProps extends T4Common {
   batch?: never
 }
 
-export type T4ReviewProps = T4QueueProps | T4BundleProps | T4SingleApproverProps
+/**
+ * Board 104 (S06-T02): the Review page itself. The cards stream in the main column (grouped by record, the
+ * first expanded) with the batch bar pinned at its foot; "Done for you today" and "Waiting on others" in a rail
+ * on the right. `detail` is the stream.
+ */
+export interface T4StreamProps extends T4Common {
+  variant: 'stream'
+  rail: ReactNode
+  railLabel?: string
+  /** Sticky at the foot of the stream while batchable rows are checked. */
+  batchBar?: ReactNode
+}
+
+export type T4ReviewProps = T4QueueProps | T4BundleProps | T4SingleApproverProps | T4StreamProps
 
 /**
  * Template T4 · Review queue + detail (L2 t4a; variants for boards 194 and 204). Body padding 16 / 28,
@@ -82,7 +95,32 @@ export default function T4Review(props: T4ReviewProps) {
           {banner}
         </div>
       ) : null}
-      {props.variant === 'bundle' ? (
+      {props.variant === 'stream' ? (
+        <div
+          data-slot="body"
+          className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)_var(--io-w-wizard-rail)]"
+        >
+          <section
+            data-slot="detail"
+            aria-label={detailLabel}
+            className="relative flex min-h-0 min-w-0 flex-col gap-3 overflow-y-auto px-7 pt-4 pb-4"
+          >
+            {detail}
+            {props.batchBar ? (
+              <div data-slot="batch" className="sticky bottom-0 mt-auto">
+                {props.batchBar}
+              </div>
+            ) : null}
+          </section>
+          <aside
+            data-slot="rail"
+            aria-label={props.railLabel ?? 'Done today and waiting'}
+            className="border-io-line flex min-h-0 flex-col gap-5 overflow-y-auto border-l px-5 py-4"
+          >
+            {props.rail}
+          </aside>
+        </div>
+      ) : props.variant === 'bundle' ? (
         <div
           data-slot="body"
           className={cn(TEMPLATE_BODY, 'grid-cols-[minmax(0,1fr)_var(--io-w-detail)]')}

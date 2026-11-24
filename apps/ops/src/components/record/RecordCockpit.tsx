@@ -15,6 +15,8 @@ export interface RecordCockpitProps {
   rail: ReactNode
   /** Tab paths drawn edge to edge under the header (T5 Document on well: the Quotation tab). */
   bleed?: readonly string[]
+  /** Tab paths drawn full width without the rail, in the normal body (board 113's history has its own column). */
+  wide?: readonly string[]
   /**
    * First segments that are pages of the record but not tabs of its cockpit (an order's document review,
    * board 194, and its exceptions, 195–201): they render their own template, without the record header.
@@ -35,6 +37,7 @@ export default function RecordCockpit({
   strip,
   rail,
   bleed = [],
+  wide = [],
   bare = [],
   children,
 }: RecordCockpitProps) {
@@ -45,6 +48,12 @@ export default function RecordCockpit({
   if (bleed.includes(segments.join('/')))
     return (
       <T2Record header={shown} strip={strip} body="bleed">
+        {children}
+      </T2Record>
+    )
+  if (wide.includes(segments.join('/')))
+    return (
+      <T2Record header={shown} strip={strip}>
         {children}
       </T2Record>
     )

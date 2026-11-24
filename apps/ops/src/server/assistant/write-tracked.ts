@@ -17,6 +17,8 @@ export interface TrackedChange {
   kind: $Enums.ActivityKind
   /** Hidden from a Helper without canSeeMargins (cost, margin, sell). */
   sensitive?: boolean
+  /** S06-T07: the row this change reverses (undo, revert). */
+  revertsEventId?: string | null
 }
 
 export interface TrackedWrite {
@@ -29,8 +31,17 @@ export interface TrackedWrite {
   note?: string | null
 }
 
-function json(v: unknown): Prisma.InputJsonValue | typeof Prisma.DbNull {
-  return v === undefined || v === null ? Prisma.DbNull : (v as Prisma.InputJsonValue)
+/**
+ * A value for a Json column, or nothing: a null before/after is left out so the column stays SQL NULL.
+ * (Prisma.DbNull is matched by class identity. In `next dev` the client lives on globalThis across reloads
+ * while `Prisma` is re-imported, so the marker stopped matching and a null was stored as `{}`, which History
+ * printed. Leaving the key out needs no marker.)
+ */
+function json(
+  key: 'before' | 'after',
+  v: unknown
+): Partial<Record<'before' | 'after', Prisma.InputJsonValue>> {
+  return v === undefined || v === null ? {} : { [key]: v as Prisma.InputJsonValue }
 }
 
 /** Sets the session actor the assistant_action trigger reads for event rows, for this transaction only. */
@@ -51,7 +62,10 @@ export async function writeTracked<T>(
   apply: (tx: Prisma.TransactionClient) => Promise<T>
 ): Promise<T> {
   const result = await apply(tx)
-  const changed = write.changes.filter((c) => JSON.stringify(c.before) !== JSON.stringify(c.after))
+  // A reversal is recorded even when the value happens to match: the row says what was undone.
+  const changed = write.changes.filter(
+    (c) => c.revertsEventId || JSON.stringify(c.before) !== JSON.stringify(c.after)
+  )
   if (changed.length > 0) {
     await tx.activityEvent.createMany({
       data: changed.map((c) => ({
@@ -63,10 +77,11 @@ export async function writeTracked<T>(
         subjectId: write.subjectId,
         kind: c.kind,
         field: c.field,
-        before: json(c.before),
-        after: json(c.after),
+        ...json('before', c.before),
+        ...json('after', c.after),
         note: write.note ?? null,
         sensitive: c.sensitive ?? false,
+        revertsEventId: c.revertsEventId ?? null,
       })),
     })
   }

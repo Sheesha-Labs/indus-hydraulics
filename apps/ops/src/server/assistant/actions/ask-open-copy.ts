@@ -8,6 +8,7 @@ import {
   type StoredMailFlags,
 } from '@indus/ops-core'
 import { replySubject } from '../../mail/reply'
+import { threadVersion } from '../../mail/thread-version'
 import { askOpenCopyUser, PROMPT_VERSION, SYSTEM_PARTS } from '../prompts/ask-open-copy.v1'
 import { registerAction } from '../registry'
 import type { ActionDefinition, OutboundDraft, ProposalDraft } from '../types'
@@ -84,7 +85,14 @@ const definition: ActionDefinition<AskOpenCopyInput, AskOpenCopyOut> = {
       subject: m.subject ?? '',
       files,
     }
-    return { input, versions: { message: m.id, files: files.join('|') } }
+    return {
+      input,
+      versions: { message: m.id, files: files.join('|'), thread: await threadVersion(m.threadId) },
+    }
+  },
+
+  async currentVersions(request) {
+    return (await this.gather({ request })).versions
   },
 
   async propose(input, ai) {

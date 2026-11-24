@@ -78,28 +78,7 @@ export async function getNotifications(): Promise<Result<NotificationFeed>> {
   return read(() => ({ rows: [], counts: { all: 0, 'needs-you': 0, done: 0 } }))
 }
 
-// ── Assistant panel (S03 surface; S06-T08 fills it) ───────────────────────────────────────────────────
-
-export interface AssistantPanelFeed {
-  waiting: Array<{ id: string; action: string; title: string; sub?: string; href: string }>
-  doing: Array<{ id: string; time: string; text: string; scheduled: boolean }>
-  earlier: Array<{ id: string; time: string; text: string; actor: 'assistant' | 'person' | 'warn' }>
-  /** False until the instruction action exists (S06-T08): the ask box is read-only. */
-  canInstruct: boolean
-}
-
-const recordKeySchema = z
-  .string()
-  .regex(/^[A-Z0-9/-]{3,40}$/)
-  .nullable()
-
-/** What the Assistant is doing on the open record (or everywhere, on a page without one). S02: nothing. */
-export async function getAssistantPanel(
-  recordRef: string | null
-): Promise<Result<AssistantPanelFeed>> {
-  if (!recordKeySchema.safeParse(recordRef).success) return err(SAFE_MESSAGES.invalid)
-  return read(() => ({ waiting: [], doing: [], earlier: [], canInstruct: false }))
-}
+// The Assistant panel's read moved to ../assistant-panel.ts (S06-T08).
 
 // ── Help (S06 surface; S35 fills it) ──────────────────────────────────────────────────────────────────
 

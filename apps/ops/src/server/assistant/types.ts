@@ -73,6 +73,14 @@ export interface ActionRequest {
   sourceVersion: string | number
   /** For external actions: the mailbox the effect would use. */
   mailboxId?: string | null
+  /** S06: a redraft of this action (Reject and redraft, Redraft on a stale card). */
+  redraftOfId?: string | null
+  /** S06: the person's reason, for the redraft (or a correction's reason and note). */
+  hint?: string | null
+  /** S06-T07: a correction_email for this action, which already left. */
+  correctionOfId?: string | null
+  /** S06-T08: the person whose instruction (Assistant panel) started it. */
+  requestedById?: string | null
 }
 
 export interface GatherContext {
@@ -174,8 +182,20 @@ export interface ActionDefinition<In = Json, Out = Json> {
    * its level, and the guardrail is recorded on the row.
    */
   alwaysAsk?: { guardrail: string; reason: string }
+  /** S06-T02: several may be approved at once from the BatchBar (chasers, Sure captures). Never a quotation. */
+  batchable?: boolean
+  /**
+   * S06-T08: record types on which a person may ask for this action from the Assistant panel (an
+   * instruction's request_action). The request produces this action's own proposal at its own level.
+   */
+  requestableOn?: readonly $Enums.RecordType[]
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
+  /**
+   * S06-T01: the same version keys `gather` returned, read again now (cheap reads only). Absent: the action is
+   * never stale. A different hash means the record changed after drafting: approval is blocked until Redraft.
+   */
+  currentVersions?(request: ActionRequest): Promise<Record<string, string | number>>
 }
 
 /** What `propose` returns: the output, or why there is none (budget, refusal, invalid, max_tokens). */

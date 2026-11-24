@@ -26,8 +26,10 @@ export default function SourceQuote({
   meta,
   text,
   match,
+  matchAt,
   location,
   openHref,
+  active = true,
   className,
 }: SourceQuoteProps) {
   return (
@@ -46,7 +48,12 @@ export default function SourceQuote({
         {meta ? <span className="text-io-ink-3 text-[12px] whitespace-nowrap">{meta}</span> : null}
       </figcaption>
       <blockquote className="text-io-ink-2 m-0 px-4 py-3.5 text-[13px] leading-[1.6]">
-        <Highlight text={text} match={match} active />
+        <Highlight
+          text={text}
+          match={match}
+          active={active}
+          {...(matchAt !== undefined ? { at: matchAt } : {})}
+        />
       </blockquote>
       <div className="border-io-line-2 text-io-ink-3 flex justify-between border-t px-3.5 py-2 text-[11.5px]">
         <span>{location}</span>
