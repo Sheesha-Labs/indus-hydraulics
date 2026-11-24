@@ -116,7 +116,12 @@ export default async function MailScreen({
   return (
     <>
       <T3Mail
-        header={<PageHeader crumb="Workspace" title="Mail" meta={meta} />}
+        header={
+          // data-built: the route checks (routes.spec, one-primary) find a built page by it.
+          <div data-built="mail">
+            <PageHeader crumb="Workspace" title="Mail" meta={meta} />
+          </div>
+        }
         folders={<MailRail folder={folder} search={search} counts={counts} mailboxes={mailboxes} />}
         list={
           <ThreadList

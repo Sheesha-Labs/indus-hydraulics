@@ -151,7 +151,10 @@ test.describe('routes · redirects and records', () => {
       await link.click()
       await expect(page).toHaveURL((url) => url.pathname.startsWith(href), { timeout: 30_000 })
       await expect(link).toHaveAttribute('aria-current', 'page')
-      await expect(page.locator('main#content [data-arrives]').first()).toBeVisible()
+      // A skeleton (data-arrives) or a page its sprint has built (data-built, Mail since S05).
+      await expect(
+        page.locator('main#content :is([data-arrives], [data-built])').first()
+      ).toBeVisible()
     }
     await page.locator('[data-part="sidebar"]').getByRole('link', { name: 'Settings' }).click()
     await expect(page).toHaveURL(/\/settings$/)
