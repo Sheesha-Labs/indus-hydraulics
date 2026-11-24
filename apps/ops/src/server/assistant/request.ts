@@ -38,6 +38,8 @@ export function actionRequestEvent(request: ActionRequest): {
       ...request,
       enquiryId: request.enquiryId ?? null,
       mailboxId: request.mailboxId ?? null,
+      redraftOfId: request.redraftOfId ?? null,
+      hint: request.hint ?? null,
       idempotencyKey,
       group: def.concurrencyGroup,
       recordKey: request.enquiryId ?? `${request.subjectType}:${request.subjectId}`,

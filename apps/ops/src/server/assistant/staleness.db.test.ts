@@ -15,6 +15,7 @@ import {
  */
 const DB_URL = localDatabaseUrl()
 const TAG = 'stale'
+const REF_PREFIX = 'A-STALE-'
 const PROD = { APP_ENV: 'production' as const, OPS_SEND_ALLOWLIST: [] as string[] }
 
 vi.mock('@sentry/nextjs', () => ({ captureException: () => undefined, withScope: () => undefined }))
@@ -125,6 +126,11 @@ describe.skipIf(!DB_URL)('stale proposals · local database', () => {
   })
 
   afterAll(async () => {
+    // Cards this file left open would crowd every later Review queue (actions are append-only).
+    await db.assistantAction.updateMany({
+      where: { ref: { startsWith: REF_PREFIX }, state: { in: ['proposed', 'later'] } },
+      data: { state: 'cancelled' },
+    })
     await cleanQueue(db, TAG)
     await db.$disconnect()
   })

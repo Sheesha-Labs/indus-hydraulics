@@ -275,9 +275,17 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           promptVersion: p.ok ? p.promptVersion : null,
           levelReasons: levelReasons as unknown as Prisma.InputJsonValue,
           surface: def.surface,
+          redraftOfId: d.data.redraftOfId ?? null,
         },
         select: { id: true, ref: true, state: true },
       })
+      // S06: the card this redraft replaces points at it.
+      if (d.data.redraftOfId) {
+        await tx.assistantAction.updateMany({
+          where: { id: d.data.redraftOfId, supersededById: null },
+          data: { supersededById: row.id },
+        })
+      }
       return { actionId: row.id, ref: row.ref, state: row.state, created: true }
     })
   } catch (e) {

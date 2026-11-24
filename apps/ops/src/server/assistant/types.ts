@@ -73,6 +73,10 @@ export interface ActionRequest {
   sourceVersion: string | number
   /** For external actions: the mailbox the effect would use. */
   mailboxId?: string | null
+  /** S06: a redraft of this action (Reject and redraft, Redraft on a stale card). */
+  redraftOfId?: string | null
+  /** S06: the person's reason, for the redraft. */
+  hint?: string | null
 }
 
 export interface GatherContext {
@@ -174,6 +178,8 @@ export interface ActionDefinition<In = Json, Out = Json> {
    * its level, and the guardrail is recorded on the row.
    */
   alwaysAsk?: { guardrail: string; reason: string }
+  /** S06-T02: several may be approved at once from the BatchBar (chasers, Sure captures). Never a quotation. */
+  batchable?: boolean
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
   /**

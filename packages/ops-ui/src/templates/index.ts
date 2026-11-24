@@ -12,6 +12,7 @@ export {
   type T4BatchKind,
   type T4BundleProps,
   type T4QueueProps,
+  type T4StreamProps,
   type T4ReviewProps,
   type T4SingleApproverProps,
 } from './T4Review'

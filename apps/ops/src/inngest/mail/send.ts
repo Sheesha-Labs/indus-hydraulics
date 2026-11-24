@@ -2,6 +2,7 @@ import { sendGate } from '../../server/mail-send/gate'
 import { reconcile } from '../../server/mail-send/reconcile'
 import { sendOnce } from '../../server/mail-send/send-once'
 import { computeSlot } from '../../server/mail-send/slot'
+import { settleActionForOutbound } from '../../server/assistant/decisions'
 import { registerStalenessGate } from '../../server/assistant/staleness'
 import { defineOpsFunction } from '../define'
 
@@ -42,13 +43,19 @@ export const mailSend = defineOpsFunction(
     const mailboxId = String(event.data.mailboxId)
     const undoUntil = String(event.data.undoUntil ?? new Date().toISOString())
 
+    // S06-T02: the action that queued this send follows its outcome (sent → done, failed, stale → cancelled).
+    const settled = async <T>(r: T): Promise<T> => {
+      await step.run('settle-action', () => settleActionForOutbound(outboundId))
+      return r
+    }
+
     if (new Date(undoUntil).getTime() > Date.now()) await step.sleepUntil('undo-window', undoUntil)
 
     const slot = await step.run('next-slot', () => computeSlot(outboundId))
     if (new Date(slot.at).getTime() > Date.now()) await step.sleepUntil('send-window', slot.at)
 
     const gate = await step.run('gate', () => sendGate(outboundId))
-    if (gate.kind === 'stop') return { outboundId, stopped: gate.reason }
+    if (gate.kind === 'stop') return settled({ outboundId, stopped: gate.reason })
     if (gate.kind === 'wait') {
       if (gate.until) {
         await step.sleepUntil('wait-until', gate.until)
@@ -71,12 +78,16 @@ export const mailSend = defineOpsFunction(
     }
 
     const result = await step.run('send', () => sendOnce(outboundId))
-    if (result.kind !== 'ambiguous') return { outboundId, result: result.kind }
+    if (result.kind !== 'ambiguous') return settled({ outboundId, result: result.kind })
 
     const first = await step.run('reconcile-1', () => reconcile(outboundId))
-    if (first.kind !== 'unknown') return { outboundId, result: 'sent', reconciled: true }
+    if (first.kind !== 'unknown') return settled({ outboundId, result: 'sent', reconciled: true })
     await step.sleep('reconcile-gap', '5m')
     const second = await step.run('reconcile-2', () => reconcile(outboundId))
-    return { outboundId, result: second.kind === 'sent' ? 'sent' : 'unknown', reconciled: true }
+    return settled({
+      outboundId,
+      result: second.kind === 'sent' ? 'sent' : 'unknown',
+      reconciled: true,
+    })
   }
 )
