@@ -50,6 +50,26 @@ function clearSessionCookie(res: NextResponse): NextResponse {
   return res
 }
 
+/**
+ * Send a protected page request to sign-in. A Server Action POST (it carries `Next-Action`) is not
+ * given a 307: fetch follows it, POSTs to /sign-in and hands the action reducer an HTML page, which
+ * the client reports as "An unexpected response" and the error boundary shows "Couldn't load this
+ * page". Instead it gets the empty `x-action-redirect` reply Next uses for an action redirect, and the
+ * client does a full navigation to sign-in, where "Session ended" explains what happened (2026-11-24).
+ */
+function toSignIn(request: NextRequest, url: URL): NextResponse {
+  if (request.method === 'POST' && request.headers.has('next-action')) {
+    return new NextResponse(null, {
+      status: 200,
+      headers: {
+        'content-type': 'text/plain',
+        'x-action-redirect': `${url.pathname}${url.search};replace`,
+      },
+    })
+  }
+  return NextResponse.redirect(url, 307)
+}
+
 function nonce(): string {
   return Buffer.from(crypto.randomUUID()).toString('base64')
 }
@@ -83,7 +103,7 @@ export default async function proxy(request: NextRequest) {
     }
     const url = new URL('/sign-in', request.url)
     url.searchParams.set('reason', 'session_revoked')
-    return done(clearSessionCookie(NextResponse.redirect(url, 307)))
+    return done(clearSessionCookie(toSignIn(request, url)))
   }
   if (state === 'none') {
     if (kind === 'protected-api') {
@@ -96,7 +116,7 @@ export default async function proxy(request: NextRequest) {
     if (next && next !== '/') url.searchParams.set('next', next)
     const stale = request.cookies.has(SESSION_COOKIE)
     if (stale) url.searchParams.set('reason', 'session_ended')
-    const res = NextResponse.redirect(url, 307)
+    const res = toSignIn(request, url)
     return done(stale ? clearSessionCookie(res) : res)
   }
 

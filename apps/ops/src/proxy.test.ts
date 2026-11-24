@@ -104,4 +104,37 @@ describe('proxy · session revocation', () => {
     const staff = await sessionCookie({ sub: 'u1', kind: 'staff', sid: SID })
     expect((await proxy(get('/today', staff))).status).toBe(307)
   })
+
+  it('answers a Server Action from an ended session with an action redirect, not a 307', async () => {
+    // A 307 is followed by fetch, so the action got the sign-in page and the screen showed
+    // "Couldn't load this page" (2026-11-24). The client turns x-action-redirect into a navigation.
+    const ended = await sessionCookie({ sub: 'u1', kind: 'ops', role: 'owner' })
+    const req = new NextRequest(new URL('/settings/mailboxes', 'http://localhost:3132'), {
+      method: 'POST',
+      headers: {
+        cookie: `${COOKIE}=${ended}`,
+        'next-action': '7f00aa',
+        'content-type': 'text/plain',
+      },
+      body: '[]',
+    })
+    const res = await proxy(req)
+    expect(res.status).toBe(200)
+    expect(res.headers.get('location')).toBeNull()
+    const [target, kind] = (res.headers.get('x-action-redirect') ?? '').split(';')
+    const url = new URL(target!, 'http://localhost:3132')
+    expect(url.pathname).toBe('/sign-in')
+    expect(url.searchParams.get('reason')).toBe('session_ended')
+    expect(url.searchParams.get('next')).toBe('/settings/mailboxes')
+    expect(kind).toBe('replace')
+    expect(res.headers.get('set-cookie') ?? '').toMatch(new RegExp(`${COOKIE}=;.*Max-Age=0`, 'i'))
+    expect(res.headers.get('x-robots-tag')).toContain('noindex')
+
+    // A plain form POST without Next-Action still gets the ordinary redirect.
+    const plain = new NextRequest(new URL('/settings/mailboxes', 'http://localhost:3132'), {
+      method: 'POST',
+      headers: { cookie: `${COOKIE}=${ended}` },
+    })
+    expect((await proxy(plain)).status).toBe(307)
+  })
 })
