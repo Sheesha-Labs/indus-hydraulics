@@ -4,7 +4,7 @@ import { opsDb, type Prisma } from '@indus/ops-db'
 
 /**
  * Earned suggestions (S07-T02, `ops.autopilot.suggestions` nightly): for each configurable, unlocked action,
- * the runs since its setting last changed go through ops-core earnedSuggestion. A qualifying action gets (or
+ * the runs since its level last changed (its own change or a mode switch, from the activity trail) go through ops-core earnedSuggestion. A qualifying action gets (or
  * keeps) one open `autopilot_suggestion`; one that no longer qualifies has its open row hidden (expired) until
  * it qualifies again. A row the Owner snoozed ("Not now") stays hidden until its date. Nothing here changes a
  * level: the Owner accepts on board 99.
@@ -13,7 +13,10 @@ import { opsDb, type Prisma } from '@indus/ops-db'
  */
 export async function refreshSuggestions(
   now = new Date(),
-  db: Pick<typeof opsDb, 'autopilotActionDef' | 'assistantAction' | 'autopilotSuggestion'> = opsDb
+  db: Pick<
+    typeof opsDb,
+    'autopilotActionDef' | 'assistantAction' | 'autopilotSuggestion' | 'activityEvent'
+  > = opsDb
 ): Promise<{ checked: number; created: number; updated: number; expired: number }> {
   const defs = await db.autopilotActionDef.findMany({
     where: { configurable: true },
@@ -34,11 +37,26 @@ export async function refreshSuggestions(
     },
   })
   const out = { checked: 0, created: 0, updated: 0, expired: 0 }
+  // When each level last changed: a person's change of that row, or a mode (preset) change of every row. Rules
+  // edits do not restart the count. Two grouped reads over the append-only activity trail.
+  const [rowChanges, modeChange] = await Promise.all([
+    db.activityEvent.groupBy({
+      by: ['field'],
+      where: { field: { startsWith: 'autopilot.', endsWith: '.level' } },
+      _max: { at: true },
+    }),
+    db.activityEvent.aggregate({ where: { field: 'assistant.mode' }, _max: { at: true } }),
+  ])
+  const changedAt = new Map(
+    rowChanges.map((r) => [r.field?.slice('autopilot.'.length, -'.level'.length) ?? '', r._max.at])
+  )
   for (const def of defs) {
     if (!def.setting || effectiveLock(def) !== null) continue
     out.checked += 1
+    const times = [changedAt.get(def.key), modeChange._max.at].filter((x): x is Date => !!x)
+    const since = times.length ? new Date(Math.max(...times.map((t) => t.getTime()))) : new Date(0)
     const runs = await db.assistantAction.findMany({
-      where: { actionKey: def.key, createdAt: { gt: def.setting.updatedAt } },
+      where: { actionKey: def.key, createdAt: { gt: since } },
       orderBy: { createdAt: 'desc' },
       take: EARNED_STREAK * 3,
       select: { id: true, state: true, decidedById: true, editDiff: true, createdAt: true },

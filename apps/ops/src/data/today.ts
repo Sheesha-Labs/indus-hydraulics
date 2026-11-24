@@ -14,6 +14,7 @@ import {
 import { opsDb, type $Enums } from '@indus/ops-db'
 import type { OpsUser } from '../lib/access-core'
 import { todayProviders, type TodayContext, type TodayRow } from '../server/today/providers'
+import { REVIEW_SELECT, reviewCardOf, type ReviewCard } from './review'
 
 /**
  * Board 178 · Today and 182 · its states (S07-T06, ADR-04 query budget). Three round trips at most:
@@ -61,7 +62,14 @@ export interface NeedsItem {
 export interface TodayModel {
   greeting: string
   state: 'calm' | 'normal' | 'on_fire'
-  needs: { total: number; items: NeedsItem[]; moreByRecord: { label: string; count: number }[] }
+  needs: {
+    total: number
+    /** Up to three compact Review cards with their verbs (approve inline, undo toast). */
+    cards: ReviewCard[]
+    /** Mail Unsure items (Helper), drawn as rows that open Mail. */
+    items: NeedsItem[]
+    moreByRecord: { label: string; count: number }[]
+  }
   cameIn: TodayRow[]
   late: TodayRow[]
   done: TodayRow[]
@@ -75,8 +83,6 @@ export interface TodayModel {
   /** Board 182 "First morning after import": S20 fills it; null until an import completes. */
   firstMorning: null
 }
-
-const LOCKED = new Set(['send_quotation', 'supplier_pos', 'supplier_payments'])
 
 function dubaiMidnight(now: Date): Date {
   const w = wallTime(now, 'Asia/Dubai')
@@ -111,19 +117,9 @@ export async function getTodayModel(
     opsDb.settingsEntry.findUnique({ where: { key: 'calendar.country_weekends' }, select: { value: true } }),
     opsDb.assistantAction.findMany({
       where: needsWhere,
-      orderBy: { createdAt: 'asc' },
+      orderBy: [{ createdAt: 'asc' }, { id: 'asc' }],
       take: NEEDS_YOU_SHOWN,
-      select: {
-        id: true,
-        ref: true,
-        version: true,
-        actionKey: true,
-        headline: true,
-        staleAt: true,
-        surface: true,
-        def: { select: { label: true, lockedLevel: true } },
-        enquiry: { select: { ref: true, client: { select: { name: true } } } },
-      },
+      ...REVIEW_SELECT,
     }),
     opsDb.assistantAction.count({ where: needsWhere }),
     opsDb.assistantAction.groupBy({
@@ -162,29 +158,26 @@ export async function getTodayModel(
     sections[p.section]!.push(...p.read(results[i] as never, ctx))
   })
 
-  const items: NeedsItem[] = top.map((a) => {
-    const locked = LOCKED.has(a.actionKey) || a.def.lockedLevel === 'draft_and_ask' || a.def.lockedLevel === 'never'
-    return {
+  const cards = top.filter((a) => a.surface === 'review').map((a) => reviewCardOf(a, user, now))
+  const items: NeedsItem[] = top
+    .filter((a) => a.surface !== 'review')
+    .map((a) => ({
       id: a.id,
       ref: a.ref,
       version: a.version,
       tag: a.def.label,
       title: a.headline,
-      sub: [a.enquiry?.ref, a.enquiry?.client?.name].filter(Boolean).join(' · ') || 'Assistant drafted',
-      approvable:
-        a.surface === 'review' &&
-        !locked &&
-        !a.staleAt &&
-        !(helper && a.actionKey === 'manual_reply'),
-      href: a.surface === 'mail_unsure' ? '/mail' : `/review?card=${a.ref}`,
-    }
-  })
+      sub: [a.enquiry?.ref, a.enquiry?.client?.name].filter(Boolean).join(' · ') || 'Unsure',
+      approvable: false,
+      href: '/mail',
+    }))
   const doneTotal = sections.done!.reduce((n, r) => n + Number(/· (\d+)$/.exec(r.title)?.[1] ?? 0), 0)
   return {
     greeting: todayGreeting(now, user.name.split(/\s+/)[0] ?? user.name),
     state: todayState(total),
     needs: {
       total,
+      cards,
       items,
       moreByRecord:
         total > NEEDS_YOU_SHOWN

@@ -195,14 +195,26 @@ describe.skipIf(!DB_URL)('Autopilot levels · local database', () => {
     const setting = await opsDb.autopilotSetting.findUniqueOrThrow({
       where: { actionKey: SUGGEST_KEY },
     })
-    // A level change (or any edit of the row) starts the count again: history is read since updatedAt.
-    await opsDb.autopilotSetting.update({
-      where: { actionKey: SUGGEST_KEY },
-      data: { level: 'draft_and_ask', version: setting.version + 1 },
-    })
+    // A level change starts the count again: history is read since the latest level (or mode) change.
+    if (setting.level !== 'draft_and_ask')
+      await opsDb.autopilotSetting.update({
+        where: { actionKey: SUGGEST_KEY },
+        data: { level: 'draft_and_ask' },
+      })
     const since = (
-      await opsDb.autopilotSetting.findUniqueOrThrow({ where: { actionKey: SUGGEST_KEY } })
-    ).updatedAt
+      await opsDb.activityEvent.create({
+        data: {
+          actorKind: 'user',
+          actorId: ownerId,
+          subjectType: 'settings',
+          subjectId: randomUUID(),
+          kind: 'settings',
+          field: `autopilot.${SUGGEST_KEY}.level`,
+          note: 'test: level changed',
+        },
+        select: { at: true },
+      })
+    ).at
     const base = Date.now()
     for (let i = 0; i < 25; i += 1) {
       await opsDb.assistantAction.create({

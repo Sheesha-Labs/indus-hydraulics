@@ -50,6 +50,8 @@ export interface CostPageData {
   byModel: SpendLine[]
   volumes: string
   topRuns: { id: string; purpose: string; title: string; ref: string | null; usd: string }[]
+  /** USD per Dubai day of the month so far (index 0 = day 1), for the meter's daily bars. */
+  daily: number[]
   limits: {
     monthlyBudgetUsd: number
     mode: BudgetMode
@@ -94,7 +96,7 @@ const PURPOSE_WORD: Record<string, string> = {
 export async function getCostPage(user: { role: string }, now = new Date()): Promise<CostPageData> {
   const since = monthStart(now)
   const month = new Date(`${monthKey(now)}T00:00:00Z`)
-  const [byPurposeModel, budget, top, budgetSetting, researchSetting] = await opsDb.$transaction([
+  const [byPurposeModel, budget, top, budgetSetting, researchSetting, calls] = await opsDb.$transaction([
     opsDb.aiCall.groupBy({
       by: ['purpose', 'model'],
       where: { at: { gte: since } },
@@ -117,6 +119,11 @@ export async function getCostPage(user: { role: string }, now = new Date()): Pro
     opsDb.settingsEntry.findUnique({
       where: { key: 'research.cap' },
       select: { value: true, version: true, signoffStatus: true },
+    }),
+    // The month's calls for the daily bars (index at): a few thousand rows a month at full volume.
+    opsDb.aiCall.findMany({
+      where: { at: { gte: since }, costUsd: { gt: 0 } },
+      select: { at: true, costUsd: true },
     }),
   ])
   const actionIds = top.map((t) => t.actionId).filter((x): x is string => !!x)
@@ -175,6 +182,11 @@ export async function getCostPage(user: { role: string }, now = new Date()): Pro
   const limitUsd = budget ? budget.limitUsd.toNumber() : Number(budgetValue.monthlyUsd ?? 150)
   const mode = (budget?.mode as BudgetMode | undefined) ?? budgetValue.mode ?? 'warn_pause_research'
   const { day, days } = dayOfMonth(now)
+  const daily = Array.from({ length: day }, () => 0)
+  for (const c of calls) {
+    const d = dayOfMonth(c.at).day
+    if (d >= 1 && d <= day) daily[d - 1]! += c.costUsd.toNumber()
+  }
   const projection = day > 0 ? (totalN / day) * days : 0
   const byId = new Map(actions.map((a) => [a.id, a]))
   const w = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', month: 'numeric' }).format(now)
@@ -214,6 +226,7 @@ export async function getCostPage(user: { role: string }, now = new Date()): Pro
         },
       ]
     }),
+    daily: daily.map((x) => Math.round(x * 100) / 100),
     limits: {
       monthlyBudgetUsd: Number(budgetValue.monthlyUsd ?? limitUsd),
       mode: budgetValue.mode ?? mode,

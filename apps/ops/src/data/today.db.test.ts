@@ -99,17 +99,18 @@ describe.skipIf(!DB_URL)('Today · local database', () => {
   it('Owner: the oldest three cards, a quotation is Review only', async () => {
     const m = await getTodayModel({ id: owner.id, name: owner.name, role: 'owner', canSeeMargins: true })
     expect(m.needs.total).toBeGreaterThanOrEqual(3)
-    expect(m.needs.items).toHaveLength(3)
-    const quotation = m.needs.items.find((i) => i.title.includes(`send_quotation ${tag}`))
-    if (quotation) expect(quotation.approvable).toBe(false)
+    expect(m.needs.cards).toHaveLength(3)
+    // A quotation card is locked: the card says "Locked · you send" and Approve never runs from the keyboard.
+    const quotation = m.needs.cards.find((c) => c.headline.includes(`send_quotation ${tag}`))
+    if (quotation) expect(quotation.level.locked).toBe(true)
     expect(m.kpi.showMoney).toBe(true)
     expect(m.greeting).toMatch(/^Good (morning|afternoon|evening), /)
   })
 
   it('Helper: only supplier-side cards and no money', async () => {
     const m = await getTodayModel({ id: owner.id, name: 'Helper Example', role: 'helper', canSeeMargins: false })
-    expect(m.needs.items.every((i) => !i.title.includes(`send_quotation ${tag}`))).toBe(true)
-    expect(m.needs.items.every((i) => !i.title.includes(`ack_email ${tag}`))).toBe(true)
+    expect(m.needs.cards.every((c) => !c.headline.includes(`send_quotation ${tag}`))).toBe(true)
+    expect(m.needs.cards.every((c) => !c.headline.includes(`ack_email ${tag}`))).toBe(true)
     expect(m.kpi.showMoney).toBe(false)
   })
 })

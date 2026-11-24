@@ -71,16 +71,24 @@ export default function LearnedList({ rows, canEdit }: { rows: LearnedRow[]; can
                   >
                     {r.description}
                   </span>
-                  {r.evidence[0] ? (
-                    <Link
-                      href={`/assistant/log?open=${r.evidence[0]}` as Route}
-                      className="io-focus rounded-io-tag text-io-ink-3 text-[12.5px] hover:underline"
-                    >
-                      {r.source}
-                    </Link>
-                  ) : (
+                  <span className="flex flex-col gap-0.5">
                     <span className="text-io-ink-3 text-[12.5px]">{r.source}</span>
-                  )}
+                    {r.evidence.length ? (
+                      <span className="text-io-ink-3 flex gap-1.5 text-[11.5px]">
+                        Evidence:
+                        {r.evidence.map((id, n) => (
+                          <Link
+                            key={id}
+                            href={`/assistant/log?open=${id}` as Route}
+                            aria-label={`Evidence ${n + 1} in the Assistant log`}
+                            className="io-focus rounded-io-tag text-io-accent hover:underline"
+                          >
+                            {n + 1}
+                          </Link>
+                        ))}
+                      </span>
+                    ) : null}
+                  </span>
                   <span className="flex items-center gap-2">
                     {canEdit ? (
                       <>

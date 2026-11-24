@@ -41,6 +41,7 @@ export default function SpendMeter({ cost }: { cost: CostPageData }) {
           className="fill-io-ink-2"
         />
       </svg>
+      <DailyBars daily={cost.daily} days={cost.days} />
       <p className="text-io-ink-3 m-0 text-[12.5px]">
         On pace for about USD {Math.round(Number(cost.projectionUsd))} this month. The marker shows
         a straight-line budget to date.
@@ -79,5 +80,36 @@ export function TopRuns({ runs }: { runs: CostPageData['topRuns'] }) {
         </table>
       )}
     </section>
+  )
+}
+
+/** The month's spend per Dubai day (S07-T04 "daily totals for the meter"), SVG bars against the busiest day. */
+function DailyBars({ daily, days }: { daily: number[]; days: number }) {
+  const max = Math.max(...daily, 0)
+  if (max <= 0) return null
+  const w = 100 / days
+  return (
+    <svg
+      role="img"
+      aria-label={`Spend per day this month; the busiest day was USD ${max.toFixed(2)}`}
+      viewBox="0 0 100 20"
+      preserveAspectRatio="none"
+      className="h-6 w-full"
+      data-part="daily-spend"
+    >
+      {daily.map((v, i) => {
+        const h = (v / max) * 20
+        return (
+          <rect
+            key={i}
+            x={i * w + w * 0.15}
+            y={20 - h}
+            width={w * 0.7}
+            height={h}
+            className="fill-io-accent-line"
+          />
+        )
+      })}
+    </svg>
   )
 }

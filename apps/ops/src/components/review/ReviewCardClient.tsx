@@ -31,6 +31,7 @@ export default function ReviewCardClient({
   aside,
   conflictHref,
   locked = false,
+  compact = false,
 }: {
   card: ReviewCard
   editHref: string
@@ -41,6 +42,8 @@ export default function ReviewCardClient({
   conflictHref?: string
   /** Board 110: someone changed the card under this person; Approve stays off until they choose. */
   locked?: boolean
+  /** S07-T06: Today's compact card (14px headline, sm buttons). */
+  compact?: boolean
 }) {
   const router = useRouter()
   const refreshAfter = useMemo(
@@ -108,7 +111,8 @@ export default function ReviewCardClient({
         ? { note: `Edited by ${card.edited.by ?? 'you'} · ${card.edited.fields.join(', ')}` }
         : {})}
       state={card.state}
-      raised
+      compact={compact}
+      raised={!compact}
       batchable={card.batchable}
       readOnly={card.readOnly || blocked}
       approveDisabled={locked}

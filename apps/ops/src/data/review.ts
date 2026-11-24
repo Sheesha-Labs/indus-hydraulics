@@ -110,15 +110,42 @@ export interface ReviewQueue {
   records: Array<{ value: string; label: string }>
 }
 
-const SELECT = {
+export const REVIEW_SELECT = {
   include: {
     def: { select: { label: true, lockedLevel: true } },
     decidedBy: { select: { initials: true, name: true } },
     enquiry: { select: { id: true, ref: true, title: true, client: { select: { name: true } } } },
   },
 } as const
+const SELECT = REVIEW_SELECT
 
-type Row = Prisma.AssistantActionGetPayload<typeof SELECT>
+export type ReviewRow = Prisma.AssistantActionGetPayload<typeof REVIEW_SELECT>
+type Row = ReviewRow
+
+/**
+ * One row as a Review card without the queue's grouping lookups (S07-T06: Today's top cards). The card is the
+ * same the Review page draws; the group, supersedes and "back from Later" lines are left to Review.
+ */
+export function reviewCardOf(
+  r: ReviewRow,
+  user: Pick<OpsUser, 'id' | 'role' | 'canSeeMargins'>,
+  now = new Date()
+): ReviewCard {
+  const card = toProposalCardData(r, user, now)
+  const family = familyOf(r.actionKey)
+  const def = actionDefinition(r.actionKey)
+  return {
+    ...card,
+    family,
+    familyLabel: FAMILY_LABEL[family],
+    batchable: !!def?.batchable && isBatchableFamily(family) && !card.level.locked,
+    groupKey: r.enquiry ? `enquiry:${r.enquiry.id}` : 'other',
+    sub: firstLine(card.why[0]?.text ?? card.onApproveText ?? undefined),
+    age: ageText(r.createdAt.getTime(), now.getTime()),
+    supersedes: null,
+    backFromLater: null,
+  }
+}
 
 const MAX = 300
 

@@ -3,8 +3,8 @@ import { opsDb as db } from '@indus/ops-db'
 import { expect, test } from '../signed-in'
 
 /**
- * S07-T06 · board-178 (Owner and Helper) and board-182. Today greets by the Dubai clock, lists Needs you with
- * the first card's Approve inline (the S06 action; the card leaves and an undo toast counts down), Came in,
+ * S07-T06 · board-178 (Owner and Helper) and board-182. Today greets by the Dubai clock, lists Needs you as
+ * compact Review cards with Approve inline (the S06 action; the server's undo window counts down), Came in,
  * Late or at risk, Done for you and the rail. The Helper's Needs you holds supplier-side cards only. The states
  * sheet draws calm, on fire, paused, disconnected, setup unfinished and the first morning.
  */
@@ -122,13 +122,12 @@ test('board-178: the Owner’s Today, with Approve inline', async ({ page, signe
   for (const e of ['Came in since yesterday', 'Late or at risk', 'This month', 'This week'])
     await expect(page.getByText(e, { exact: true })).toBeVisible()
   await expect(page.getByText(/^Done for you/)).toBeVisible()
-  // One primary per view: the first card's Approve.
-  await expect(page.locator('main [data-variant="primary"]')).toHaveCount(1)
-  const row = page.locator('[data-part="needs-row"]', { hasText: stamp })
-  await row.getByRole('button', { name: 'Approve' }).click()
-  await expect(
-    page.getByText(`Approved: Ask Example Sender for an open copy of today.pdf ${stamp}`)
-  ).toBeVisible()
+  // Needs you holds compact Review cards (decision cards keep their own primary, as on Review).
+  const card = page.getByRole('article', {
+    name: `Ask Example Sender for an open copy of today.pdf ${stamp}`,
+  })
+  await expect(card).toBeVisible()
+  await card.getByRole('button', { name: 'Approve' }).click()
   await expect
     .poll(
       async () => (await db.assistantAction.findUniqueOrThrow({ where: { id: ids.action! } })).state

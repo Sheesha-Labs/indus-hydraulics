@@ -22,7 +22,7 @@ function Frame({ eyebrow, children }: { eyebrow: string; children: ReactNode }) 
 const CALM: TodayModel = {
   greeting: '',
   state: 'calm',
-  needs: { total: 0, items: [], moreByRecord: [] },
+  needs: { total: 0, cards: [], items: [], moreByRecord: [] },
   cameIn: [],
   late: [],
   done: [],

@@ -4,6 +4,7 @@
  *
  *   bun run --filter @indus/ops eval -- --suite classify --set synthetic --model claude-haiku-5-5
  *   bun run --filter @indus/ops eval -- --suite link --set golden
+ *   bun run --filter @indus/ops eval -- --suite learn                       (S07-T05, learn-preferences@1)
  *
  * It runs the real action code (propose + verify of classify_mail and link_mail) over fixtures, with an
  * in-memory ledger (no database writes) and the Messages API through OPS_ANTHROPIC_API_KEY (use the low-limit
@@ -22,7 +23,13 @@ import {
   type AiLedger,
   type Price,
 } from '@indus/ops-ai'
-import { runDetectors, type LinkCandidate, type SenderRole } from '@indus/ops-core'
+import {
+  learnedPreferencesSchema,
+  runDetectors,
+  type LearnedPreferences,
+  type LinkCandidate,
+  type SenderRole,
+} from '@indus/ops-core'
 import classifyDef from '../src/server/assistant/actions/classify-mail'
 import linkDef from '../src/server/assistant/actions/link-mail'
 import type { ActionAi } from '../src/server/assistant/types'
@@ -30,8 +37,14 @@ import { headersFromFlags, NEW_TEXT_MAX, type MailInput } from '../src/server/ma
 import { loadGolden } from './golden'
 import { scoreClassify, type ClassifyCase } from './scorers/classify'
 import { scoreLink, type LinkCase } from './scorers/link'
+import { scoreLearn, type LearnCase } from './scorers/learn'
+import {
+  learnUser,
+  PROMPT_VERSION as LEARN_PROMPT,
+  SYSTEM_PARTS as LEARN_SYSTEM,
+} from '../src/server/assistant/prompts/learn-preferences.v1'
 
-type Suite = 'classify' | 'link'
+type Suite = 'classify' | 'link' | 'learn'
 type Set = 'synthetic' | 'golden'
 
 export interface ClassifyFixture extends ClassifyCase {
@@ -245,12 +258,57 @@ async function runLink(cases: LinkFixture[], ai: ActionAi | null) {
   return { score: scoreLink(scored, preds), skipped }
 }
 
+/**
+ * The learner (S07-T05) on synthetic groups: the same system prompt and user turn the nightly batch sends, one
+ * Messages call per group here (a batch would only change the price), then the server's checks via the scorer.
+ */
+async function runLearn(cases: LearnCase[], ai: ActionAi | null) {
+  const outs = new Map<string, LearnedPreferences | null>()
+  const skipped: string[] = []
+  for (const c of cases) {
+    if (!ai) {
+      skipped.push(c.id)
+      continue
+    }
+    const r = await ai.call({
+      system: LEARN_SYSTEM,
+      user: learnUser({
+        actionKey: c.actionKey,
+        scope: c.scope,
+        summary: c.summary,
+        signals: c.signals,
+      }),
+      zod: learnedPreferencesSchema,
+      maxTokens: 800,
+      promptVersion: LEARN_PROMPT,
+      route: 'classify',
+      purpose: 'other',
+    })
+    outs.set(c.id, r.ok ? r.value : null)
+  }
+  const scored = cases.filter((c) => !skipped.includes(c.id))
+  return { score: scoreLearn(scored, outs), skipped }
+}
+
 async function main(): Promise<void> {
   const suite = (arg('suite', 'classify') as Suite) ?? 'classify'
   const set = (arg('set', 'synthetic') as Set) ?? 'synthetic'
   const model = arg('model')
   const ledger = new MemoryLedger()
   const ai = makeAi(ledger, model)
+  if (suite === 'learn') {
+    const cases = loadSynthetic<LearnCase>('learn')
+    console.log(
+      `suite learn · set synthetic · ${cases.length} groups${ai ? '' : ' · NO KEY: skipped'}`
+    )
+    const { score, skipped } = await runLearn(cases, ai)
+    console.log(JSON.stringify({ ...score, skipped: skipped.length }, null, 2))
+    console.log(
+      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt ${LEARN_PROMPT}`
+    )
+    if (ai && !score.passes) process.exitCode = 1
+    return
+  }
   const cases =
     set === 'golden'
       ? await loadGolden<ClassifyFixture & LinkFixture>(suite)
