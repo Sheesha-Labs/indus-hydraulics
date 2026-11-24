@@ -25,7 +25,29 @@ export const KEPT_HEADERS = [
   'x-indus-outbound',
   'x-indus-intake',
   'content-type',
+  // S05-T03: email service providers (mailing-list detector)
+  'x-mc-user',
+  'x-sg-eid',
+  'feedback-id',
+  'x-mailgun-sid',
+  'x-campaign',
+  'x-campaignid',
+  'x-sfmc-stack',
 ] as const
+
+/** Header-name prefixes kept as well (one ESP header is enough for the mailing-list detector). */
+export const KEPT_HEADER_PREFIXES = [
+  'x-mailchimp-',
+  'x-ses-',
+  'x-hs-',
+  'x-sib-',
+  'x-mailjet-',
+  'x-cm-',
+  'x-postmark-',
+] as const
+
+/** The delivery-status parts of a bounce, kept for the bounce detector (S05-T03), each ≤ 16 KB. */
+export const DSN_PART_MAX = 16 * 1024
 
 export type Address = { address: string; name: string | null }
 
@@ -59,6 +81,8 @@ export type ParsedMessage = {
   text: string | null
   html: string | null
   attachments: AttachmentMeta[]
+  /** message/delivery-status text and the returned message's headers, when the message is a bounce. */
+  dsn: { statusText: string | null; returnedHeadersText: string | null } | null
 }
 
 function decodeBody(data: string | null | undefined, charset: string | null): string {
@@ -122,12 +146,17 @@ export function parseGmailMessage(message: GmailMessage): ParsedMessage {
   const headers: Record<string, string[]> = {}
   for (const h of payload.headers ?? []) {
     const name = (h.name ?? '').toLowerCase()
-    if (!(KEPT_HEADERS as readonly string[]).includes(name) || h.value == null) continue
+    const kept =
+      (KEPT_HEADERS as readonly string[]).includes(name) ||
+      KEPT_HEADER_PREFIXES.some((prefix) => name.startsWith(prefix))
+    if (!kept || h.value == null) continue
     ;(headers[name] ??= []).push(h.value)
   }
   let text: string | null = null
   let html: string | null = null
   const attachments: AttachmentMeta[] = []
+  let dsnStatus: string | null = null
+  let dsnHeaders: string | null = null
 
   const walk = (part: GmailMessagePart, depth: number) => {
     if (depth > 30) return
@@ -137,6 +166,19 @@ export function parseGmailMessage(message: GmailMessage): ParsedMessage {
     const filename = part.filename ?? ''
     const isAttachment =
       !!filename || !!part.body?.attachmentId || disposition.startsWith('attachment')
+    // Bounce parts (S05-T03): the delivery status and the returned headers, as text, capped.
+    if (mimeType === 'message/delivery-status' && dsnStatus === null && part.body?.data) {
+      dsnStatus = decodeBody(part.body.data, null).slice(0, DSN_PART_MAX)
+    }
+    if (mimeType === 'text/rfc822-headers' && dsnHeaders === null && part.body?.data) {
+      dsnHeaders = decodeBody(part.body.data, null).slice(0, DSN_PART_MAX)
+    }
+    if (mimeType === 'message/rfc822' && dsnHeaders === null && part.headers?.length) {
+      dsnHeaders = part.headers
+        .map((x) => `${x.name ?? ''}: ${x.value ?? ''}`)
+        .join('\n')
+        .slice(0, DSN_PART_MAX)
+    }
     if (part.parts?.length) {
       for (const p of part.parts) walk(p, depth + 1)
       return
@@ -191,13 +233,25 @@ export function parseGmailMessage(message: GmailMessage): ParsedMessage {
     text,
     html,
     attachments,
+    dsn:
+      dsnStatus !== null || dsnHeaders !== null
+        ? { statusText: dsnStatus, returnedHeadersText: dsnHeaders }
+        : null,
   }
 }
 
 /** The header signals S05's deterministic detectors read (auto-reply, bulk, list, bounce, Ops's own marks). */
-export function headerFlags(p: ParsedMessage): Record<string, string | boolean> {
+export function headerFlags(
+  p: ParsedMessage
+): Record<
+  string,
+  string | boolean | { statusText: string | null; returnedHeadersText: string | null }
+> {
   const h = (name: string) => p.headers[name]?.[0] ?? null
-  const flags: Record<string, string | boolean> = {}
+  const flags: Record<
+    string,
+    string | boolean | { statusText: string | null; returnedHeadersText: string | null }
+  > = {}
   const autoSubmitted = h('auto-submitted')
   if (autoSubmitted && autoSubmitted.toLowerCase() !== 'no') flags.autoSubmitted = autoSubmitted
   const precedence = h('precedence')
@@ -219,5 +273,6 @@ export function headerFlags(p: ParsedMessage): Record<string, string | boolean> 
   if (outbound) flags.xIndusOutbound = outbound.trim()
   const intake = h('x-indus-intake')
   if (intake) flags.xIndusIntake = intake.trim()
+  if (p.dsn) flags.dsn = p.dsn
   return flags
 }
