@@ -1,5 +1,6 @@
 import type Anthropic from '@anthropic-ai/sdk'
 import { z } from 'zod'
+import { apiSchema } from './api-schema'
 import { monthKey } from './budget'
 import { buildSystem, type SystemPart } from './cache-layout'
 import { costUsd as priceUsage, estimateUsd, tokenCounts } from './cost'
@@ -159,7 +160,7 @@ export async function submitBatch(input: SubmitBatchInput): Promise<SubmitBatchR
           messages: [{ role: 'user', content: r.params.user }],
           output_config: {
             effort: r.params.effort,
-            format: { type: 'json_schema', schema: r.params.jsonSchema },
+            format: { type: 'json_schema', schema: apiSchema(r.params.jsonSchema) },
           },
         },
       }))
