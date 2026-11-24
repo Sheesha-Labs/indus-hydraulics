@@ -24,6 +24,8 @@ export type BannerSpec = {
   title: string
   text: string
   action?: { label: string; href: string }
+  /** The Owner's "Resume" on the paused banner (S05-T08): a button, not a link. */
+  resume?: boolean
   mailboxId?: string
 }
 
@@ -40,13 +42,23 @@ export type BannerMailbox = {
   backfillPhase: string | null
   heldForCap: number
   failedRecently: number
+  /** Sent, then bounced back, in the last day (S05-T07); the first bounced address for the title. */
+  bouncedRecently?: number
+  bouncedTo?: string | null
   sentToday: number
   dailySendCap: number
 }
 
 export type BannerInput = {
   mailboxes: readonly BannerMailbox[]
-  assistantPause: { pausedAt: string; byInitials: string | null } | null
+  assistantPause: {
+    pausedAt: string
+    byInitials: string | null
+    /** The viewer paused it ("by you"). */
+    byYou?: boolean
+    /** The viewer may resume (the Owner). */
+    canResume?: boolean
+  } | null
   capReset: string
   now: Date
 }
@@ -82,13 +94,15 @@ const MAIL_OF_ROLE: Record<string, string> = {
 export function bannerSpecs(input: BannerInput): BannerSpec[] {
   const out: BannerSpec[] = []
   if (input.assistantPause) {
+    // Board 102 state 2 / S05A: the same banner on every page while paused.
+    const p = input.assistantPause
+    const by = p.byYou ? 'you' : (p.byInitials ?? 'the Owner')
     out.push({
       kind: 'assistant-paused',
       tone: 'warn',
-      title: `The Assistant is paused since ${clock(input.assistantPause.pausedAt)}${
-        input.assistantPause.byInitials ? ` by ${input.assistantPause.byInitials}` : ''
-      }.`,
-      text: 'Mail keeps arriving in Gmail; nothing is lost. Queued sends wait until it resumes.',
+      title: `Assistant paused by ${by} at ${clock(p.pausedAt)}.`,
+      text: `Nothing is read or sent until ${p.canResume ? 'you resume' : 'it resumes'}. Mail keeps arriving in Gmail.`,
+      ...(p.canResume ? { resume: true } : {}),
     })
   }
   for (const m of input.mailboxes) {
@@ -139,14 +153,18 @@ export function bannerSpecs(input: BannerInput): BannerSpec[] {
         mailboxId: m.id,
       })
     }
-    if (m.failedRecently > 0) {
+    const bounced = m.bouncedRecently ?? 0
+    if (m.failedRecently > 0 || bounced > 0) {
+      const total = m.failedRecently + bounced
       out.push({
         kind: 'send-failed',
         tone: 'bad',
         title:
-          m.failedRecently === 1
-            ? 'A message failed to send.'
-            : `${m.failedRecently} messages failed to send.`,
+          m.failedRecently === 0 && bounced === 1 && m.bouncedTo
+            ? `Email to ${m.bouncedTo} bounced.`
+            : total === 1
+              ? 'A message failed to send.'
+              : `${total} messages failed to send.`,
         text: `From ${local}. Fix the contact or resend from Review.`,
         action: { label: 'Open Review', href: '/review' },
         mailboxId: m.id,

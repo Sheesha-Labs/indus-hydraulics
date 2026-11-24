@@ -1,5 +1,9 @@
 import 'server-only'
+import { monthKey } from '@indus/ops-ai'
 import { opsDb } from '@indus/ops-db'
+import { readLatency } from '../server/assistant/latency'
+import { isMailPipelineEnabled } from '../server/assistant/pipeline-switch'
+import { assistantPauseState } from '../server/assistant/pause'
 
 /** Above this many ops_app connections the pooler budget is at risk (ADR-04). */
 export const CONNECTION_ALERT = 12
@@ -14,11 +18,23 @@ export type MailboxHealthRow = {
 
 export type SendQueueCounts = { scheduled: number; held: number; waitingForMailbox: number; unknown: number }
 
+export type AssistantHealth = {
+  paused: boolean
+  pipelineEnabled: boolean
+  monthSpendUsd: string
+  budgetUsd: string | null
+  lastActionAt: string | null
+}
+
 export type HealthReadings = {
   opsAppConnections: number
   inngestHeartbeatAt: string | null
   mailboxes: MailboxHealthRow[]
   sendQueue: SendQueueCounts
+  /** S05-T09. */
+  assistant: AssistantHealth
+  aiCallsLastHour: number
+  mailLatency: { p50: number | null; p95: number | null; count: number }
 }
 
 /**
@@ -26,8 +42,8 @@ export type HealthReadings = {
  * heartbeat, every mailbox's sync health and the send queue's waiting rows. The raw query is the only way to
  * read pg_stat_activity; it takes no input.
  */
-export async function getHealthReadings(): Promise<HealthReadings> {
-  const [connections, heartbeat, mailboxes, queue] = await Promise.all([
+export async function getHealthReadings(now = new Date()): Promise<HealthReadings> {
+  const [connections, heartbeat, mailboxes, queue, assistant, aiCallsLastHour, mailLatency] = await Promise.all([
     opsDb.$queryRaw<
       Array<{ count: bigint }>
     >`SELECT count(*)::bigint AS count FROM pg_stat_activity WHERE usename = 'ops_app'`,
@@ -48,6 +64,9 @@ export async function getHealthReadings(): Promise<HealthReadings> {
       where: { status: { in: ['scheduled', 'held', 'waiting_for_mailbox', 'unknown'] } },
       _count: { _all: true },
     }),
+    assistantHealth(now),
+    opsDb.aiCall.count({ where: { at: { gte: new Date(now.getTime() - 3_600_000) } } }),
+    readLatency(),
   ])
   const count = (status: string) => queue.find((q) => q.status === status)?._count._all ?? 0
   return {
@@ -66,5 +85,28 @@ export async function getHealthReadings(): Promise<HealthReadings> {
       waitingForMailbox: count('waiting_for_mailbox'),
       unknown: count('unknown'),
     },
+    assistant,
+    aiCallsLastHour,
+    mailLatency,
+  }
+}
+
+/** S05-T09: the Assistant's switches and spend, for /api/health. */
+async function assistantHealth(now: Date): Promise<AssistantHealth> {
+  const [pause, enabled, budget, last] = await Promise.all([
+    assistantPauseState(),
+    isMailPipelineEnabled(),
+    opsDb.aiBudget.findUnique({
+      where: { month: new Date(`${monthKey(now)}T00:00:00Z`) },
+      select: { limitUsd: true, spentUsd: true },
+    }),
+    opsDb.assistantAction.findFirst({ orderBy: { createdAt: 'desc' }, select: { createdAt: true } }),
+  ])
+  return {
+    paused: pause !== null,
+    pipelineEnabled: enabled,
+    monthSpendUsd: budget ? budget.spentUsd.toFixed(2) : '0.00',
+    budgetUsd: budget ? budget.limitUsd.toFixed(2) : null,
+    lastActionAt: last?.createdAt.toISOString() ?? null,
   }
 }

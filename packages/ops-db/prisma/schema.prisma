@@ -2775,6 +2775,8 @@ model MailThread {
 
   @@unique([mailboxId, gmailThreadId])
   @@index([enquiryId])
+  @@index([lastMessageAt(sort: Desc), id(sort: Desc)], map: "mail_thread_lastMessageAt_id_idx")
+  @@index([mailboxId, lastMessageAt(sort: Desc), id(sort: Desc)], map: "mail_thread_mailboxId_lastMessageAt_id_idx")
   @@map("mail_thread")
   @@schema("ops")
 }
@@ -2819,6 +2821,12 @@ model MailMessage {
   searchTsv            Unsupported("tsvector")?
   /// S04-T02: live | backfill | import. Backfilled and imported mail never causes an external effect.
   origin               String                   @default("live")
+  /// One line from the Assistant: "Client enquiry · Sure · from a known client domain" (S05).
+  assistantNote        String?
+  /// Detector facts (S05-T03): { autoReply, bounce, bulk, phishing, reference, attachments, translated }.
+  flags                Json?
+  /// S05-T09: the first Indus label write on live mail (pipeline latency).
+  firstLabelledAt      DateTime?                @db.Timestamptz(3)
   internalDate         DateTime?                @db.Timestamptz(3)
   inReplyToRfcId       String?
   referencesRfcIds     String[]                 @default([])
@@ -2842,9 +2850,12 @@ model MailMessage {
   @@index([threadId, sentAt])
   @@index([rfcMessageId])
   @@index([handledState, sentAt])
+  @@index([firstLabelledAt(sort: Desc)], map: "mail_message_firstLabelledAt_idx")
   @@index([classification, sentAt])
   @@index([fromAddress])
   @@index([mailboxId, internalDate])
+  @@index([threadId, direction, origin], map: "mail_message_threadId_direction_origin_idx")
+  @@index([classification, confidence], map: "mail_message_classification_confidence_idx")
   @@map("mail_message")
   @@schema("ops")
 }
@@ -5604,11 +5615,26 @@ model AssistantAction {
   revertOfId     String?            @db.Uuid
   batchKey       String?
   costUsd        Decimal            @default(0) @db.Decimal(12, 6)
+  // Runner columns (S05-T02). Immutable after insert except `version`, which the guard bumps on update.
+  /// sha256 of the sorted source versions the proposal was built on; a stale basis cannot be approved.
+  basisHash      String?
+  /// `${actionKey}:${subjectType}:${subjectId}:${sourceVersion}`; one action per key.
+  idempotencyKey String?            @unique
+  /// live | backfill | import | manual
+  origin         String             @default("live")
+  model          String?
+  promptVersion  String?
+  levelReasons   Json?
+  /// review | mail_unsure | hint
+  surface        String             @default("review")
+  version        Int                @default(0)
   createdAt      DateTime           @default(now()) @db.Timestamptz(3)
   updatedAt      DateTime           @updatedAt @db.Timestamptz(3)
 
   events             AssistantActionEvent[]
   aiCalls            AiCall[]
+  aiReservations     AiReservation[]
+  preferenceSignals  PreferenceSignal[]
   outbound           OutboundEmail[]
   preferenceEvidence PreferenceEvidence[]
 
@@ -5617,6 +5643,8 @@ model AssistantAction {
   @@index([actionKey, createdAt])
   @@index([subjectType, subjectId])
   @@index([undoUntil])
+  @@index([surface, state, createdAt])
+  @@index([createdAt(sort: Desc)], map: "assistant_action_createdAt_idx")
   @@map("assistant_action")
   @@schema("ops")
 }
@@ -5640,22 +5668,30 @@ model AssistantActionEvent {
 
 /// One row per model call; the budget and Cost & limits (101) read this.
 model AiCall {
-  id               String           @id @default(uuid(7)) @db.Uuid
-  actionId         String?          @db.Uuid
-  action           AssistantAction? @relation(fields: [actionId], references: [id])
-  enquiryId        String?          @db.Uuid
-  purpose          AiPurpose
-  model            String
-  inputTokens      Int
-  outputTokens     Int
-  cacheReadTokens  Int              @default(0)
-  cacheWriteTokens Int              @default(0)
-  webSearches      Int              @default(0)
-  costUsd          Decimal          @db.Decimal(12, 6)
-  latencyMs        Int?
-  ok               Boolean          @default(true)
-  error            String?
-  at               DateTime         @default(now()) @db.Timestamptz(3)
+  id                 String           @id @default(uuid(7)) @db.Uuid
+  actionId           String?          @db.Uuid
+  action             AssistantAction? @relation(fields: [actionId], references: [id])
+  enquiryId          String?          @db.Uuid
+  purpose            AiPurpose
+  model              String
+  inputTokens        Int
+  outputTokens       Int
+  cacheReadTokens    Int              @default(0)
+  cacheWriteTokens   Int              @default(0)
+  webSearches        Int              @default(0)
+  costUsd            Decimal          @db.Decimal(12, 6)
+  latencyMs          Int?
+  ok                 Boolean          @default(true)
+  error              String?
+  /// classify-mail@1 (S05-T01)
+  promptVersion      String?
+  /// end_turn | max_tokens | refusal | … (checked before content is read)
+  stopReason         String?
+  /// low | medium | high | xhigh | max
+  effort             String?
+  cacheWrite1hTokens Int              @default(0)
+  reservationId      String?          @db.Uuid
+  at                 DateTime         @default(now()) @db.Timestamptz(3)
 
   @@index([at])
   @@index([enquiryId, purpose])
@@ -5758,6 +5794,8 @@ model Notification {
   resolvedAt  DateTime?            @db.Timestamptz(3)
 
   /// Partial unique in SQL: (userId, dedupeKey) WHERE resolvedAt IS NULL.
+  /// Partial in SQL: WHERE resolvedAt IS NULL (S05-T09).
+  @@index([dedupeKey], map: "notification_open_dedupeKey_idx")
   @@index([userId, dedupeKey])
   @@index([userId, resolvedAt, createdAt])
   @@map("notification")
@@ -5971,5 +6009,127 @@ model RateLimitCounter {
   @@id([key, windowStart])
   @@index([windowStart])
   @@map("rate_limit_counter")
+  @@schema("ops")
+}
+
+/// S05-T01: USD per million tokens (per thousand web searches), effective from a date. Data, not code.
+model AiModelPrice {
+  model            String
+  effectiveFrom    DateTime @db.Date
+  inputPerM        Decimal  @db.Decimal(12, 4)
+  outputPerM       Decimal  @db.Decimal(12, 4)
+  cacheReadPerM    Decimal  @db.Decimal(12, 4)
+  cacheWrite5mPerM Decimal  @db.Decimal(12, 4)
+  cacheWrite1hPerM Decimal  @db.Decimal(12, 4)
+  webSearchPerK    Decimal  @default(10) @db.Decimal(12, 4)
+  signoffStatus    String   @default("awaiting")
+  createdAt        DateTime @default(now()) @db.Timestamptz(3)
+
+  @@id([model, effectiveFrom])
+  @@map("ai_model_price")
+  @@schema("ops")
+}
+
+/// S05-T01: one row per Asia/Dubai calendar month (its first day). Reserved and settled only through
+/// ops.ai_budget_reserve / ops.ai_budget_settle.
+model AiBudget {
+  month         DateTime        @id @db.Date
+  limitUsd      Decimal         @db.Decimal(12, 4)
+  /// warn_pause_research | hard_stop | warn_only
+  mode          String          @default("warn_pause_research")
+  spentUsd      Decimal         @default(0) @db.Decimal(12, 6)
+  reservedUsd   Decimal         @default(0) @db.Decimal(12, 6)
+  notified80At  DateTime?       @db.Timestamptz(3)
+  notified100At DateTime?       @db.Timestamptz(3)
+  signoffStatus String          @default("awaiting")
+  updatedAt     DateTime        @default(now()) @db.Timestamptz(3)
+  reservations  AiReservation[]
+
+  @@map("ai_budget")
+  @@schema("ops")
+}
+
+model AiReservation {
+  id        String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  month     DateTime         @db.Date
+  budget    AiBudget         @relation(fields: [month], references: [month], onDelete: Restrict, map: "ai_reservation_month_fkey")
+  purpose   String
+  estUsd    Decimal          @db.Decimal(12, 6)
+  actionId  String?          @db.Uuid
+  action    AssistantAction? @relation(fields: [actionId], references: [id], onDelete: SetNull, map: "ai_reservation_action_fkey")
+  createdAt DateTime         @default(now()) @db.Timestamptz(3)
+  settledAt DateTime?        @db.Timestamptz(3)
+  actualUsd Decimal?         @db.Decimal(12, 6)
+
+  @@index([month])
+  @@map("ai_reservation")
+  @@schema("ops")
+}
+
+/// S05-T02: the single row behind "Pause everything" (id = 1).
+model AssistantState {
+  id          Int       @id @default(1) @db.SmallInt
+  pausedAt    DateTime? @db.Timestamptz(3)
+  pausedById  String?   @db.Uuid
+  pauseNote   String?
+  resumedAt   DateTime? @db.Timestamptz(3)
+  resumedById String?   @db.Uuid
+  version     Int       @default(0)
+  updatedAt   DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@map("assistant_state")
+  @@schema("ops")
+}
+
+/// S05-T02: shell live counts (mail.unsure, mail.not_linked, …), one upsert per bump.
+model LiveCounter {
+  key       String   @id
+  value     Int      @default(0)
+  updatedAt DateTime @default(now()) @db.Timestamptz(3)
+
+  @@map("live_counter")
+  @@schema("ops")
+}
+
+/// S05-T02: what a person's edits, rejections and choices say about how they want things done.
+model PreferenceSignal {
+  id          String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  /// edit | reject | unsure_choice | override | sent_mail
+  kind        String
+  actionId    String?          @db.Uuid
+  action      AssistantAction? @relation(fields: [actionId], references: [id], onDelete: SetNull, map: "preference_signal_action_fkey")
+  actionKey   String?
+  companyId   String?          @db.Uuid
+  mailboxId   String?          @db.Uuid
+  payload     Json             @default("{}")
+  createdById String?          @db.Uuid
+  createdAt   DateTime         @default(now()) @db.Timestamptz(3)
+  consumedAt  DateTime?        @db.Timestamptz(3)
+
+  @@index([companyId, createdAt], map: "preference_signal_company_idx")
+  @@map("preference_signal")
+  @@schema("ops")
+}
+
+/// S05-T04: a verbatim quote a model cited, resolved to its place in the source (ADR-12 Why?).
+model SourceSpan {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  /// email | pdf | sheet | image | docx
+  sourceKind String
+  sourceId   String   @db.Uuid
+  textHash   String?
+  page       Int?
+  sheet      String?
+  cellRef    String?
+  charStart  Int?
+  charEnd    Int?
+  bbox       Json?
+  quote      String
+  /// exact | fuzzy | page_only | unresolved
+  resolved   String
+  createdAt  DateTime @default(now()) @db.Timestamptz(3)
+
+  @@index([sourceKind, sourceId])
+  @@map("source_span")
   @@schema("ops")
 }

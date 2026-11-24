@@ -354,13 +354,19 @@ function ships.
 | `ops.gmail.sync` | `ops/gmail.notified`, `ops/gmail.poll.tick` (debounce 3 s) | live + address · 1 | 3 | record_only | S04 |
 | `ops.gmail.poll` | cron `*/10 * * * *` | house | 1 | skip | S04 |
 | `ops.gmail.watch.renew` | cron `TZ=Asia/Dubai 10 3 * * *` | house | 3 | exempt | S04 |
-| `ops.gmail.message.fetch` | `ops/gmail.message.fetch` | live | 4 | exempt | S04 |
-| `ops.gmail.message.fetch.backfill` | `ops/gmail.message.fetch.backfill` | bulk | 4 | exempt | S04 |
+| `ops.gmail.message.fetch` | `ops/gmail.message.fetch` | live | 4 | wait | S04 |
+| `ops.gmail.message.fetch.backfill` | `ops/gmail.message.fetch.backfill` | bulk | 4 | wait | S04 |
 | `ops.gmail.backfill` | `ops/gmail.backfill.requested`, `ops/gmail.backfill.continue` | bulk | 5 | wait | S04 |
 | `ops.mail.send` | `ops/mail.send.requested`; cancelOn `ops/mail.send.cancelled` | live + mailbox · 1 | **0** | exempt (the gate holds) | S04 |
 | `ops.mail.send.reconcile` | cron `*/15 * * * *` | house | 2 | exempt | S04 |
 | `ops.gmail.health` | cron `*/5 * * * *` | house | 0 | exempt | S04 |
 | `ops.mailbox.purge` | `ops/mailbox.purge.requested` (continues itself past 400 batches) | bulk | 2 | exempt | S04 |
+| `ops.assistant.run` | `ops/action.requested` (idempotency `event.data.idempotencyKey`) | live + recordKey · 1 | 2 | wait | S05 |
+| `ops.mail.route` | `ops/mail.received`, `ops/mail.classified` | live | 3 | wait | S05 |
+| `ops.gmail.labels.apply` | `ops/mail.classified`, `ops/mail.linked`, `ops/review.changed` | live + messageId · 1 | 4 | wait | S05 |
+| `ops.mail.bounce.soft` | `ops/mail.bounce.soft` (sleeps 24 h) | house | 2 | wait | S05 |
+| `ops.assistant.on-resumed` | `ops/assistant.resumed` | house | 2 | exempt | S05 |
+| `ops.assistant.backlog` | `ops/assistant.pipeline.enabled` (200 a batch, 2 s apart) | bulk | 2 | wait | S05 |
 
 ## 17. Assistant actions
 

@@ -12,3 +12,6 @@ next-env.d.ts
 # data layer (source), so it is re-included here.
 !/src/data/
 !.env.example
+# Evals: the private golden set (real mail) never enters the repository (S05-T04)
+evals/golden/
+evals/**/*.jsonl

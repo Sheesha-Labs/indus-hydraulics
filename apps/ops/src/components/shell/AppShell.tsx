@@ -20,6 +20,7 @@ import HelpPanel from './HelpPanel'
 import NotificationsPanel from './NotificationsPanel'
 import Providers, { useShell } from './Providers'
 import SystemBanners from './SystemBanners'
+import { usePauseControls } from './use-pause-controls'
 
 export interface AppShellProps {
   user: SidebarUser
@@ -29,6 +30,8 @@ export interface AppShellProps {
   assistant: readonly AssistantStatus[]
   /** S04-T09: the pill's words when a mailbox drives it ("sales@ disconnected"). */
   assistantLabel?: string
+  /** S05-T08: the pill popover's line ("37 actions this week · last 2 min ago"). */
+  assistantSummary?: string
   /** Helper only (ADR-05): "Website admin ↗" in the avatar menu. */
   websiteAdminHref?: string
   signOutAction: (formData: FormData) => void | Promise<void>
@@ -72,6 +75,7 @@ function ShellFrame({
   collapsed,
   assistant,
   assistantLabel,
+  assistantSummary,
   websiteAdminHref,
   signOutAction,
   banners,
@@ -92,6 +96,7 @@ function ShellFrame({
   )
   const counts = useLiveKeys(keys)
   const { open } = shell
+  const pause = usePauseControls()
 
   const live = useMemo<ShellLive>(
     () => ({
@@ -113,6 +118,8 @@ function ShellFrame({
             active={active}
             assistant={assistant}
             {...(assistantLabel ? { assistantLabel } : {})}
+            {...(assistantSummary ? { assistantSummary } : {})}
+            {...(user.role === 'owner' ? { onPause: pause.pause, onResume: pause.resume } : {})}
             collapsed={collapsed}
             signOutAction={signOutAction}
             {...(websiteAdminHref ? { websiteAdminHref } : {})}
@@ -129,7 +136,7 @@ function ShellFrame({
         </div>
         {drawer}
       </div>
-      <CommandBar role={user.role} />
+      <CommandBar role={user.role} {...(user.role === 'owner' ? { onPause: pause.pause } : {})} />
       <NotificationsPanel />
     </ShellLiveProvider>
   )

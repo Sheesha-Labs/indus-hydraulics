@@ -172,7 +172,14 @@ const landedDefaults = z.strictObject({
 
 const assistantMode = z.strictObject({ mode: z.enum(['careful', 'balanced', 'hands_off']) })
 
-const assistantBudget = z.strictObject({ monthlyUsd: positiveAmount.max(100_000) })
+/**
+ * The monthly AI budget (C14). `mode` (S05-T01): `warn_pause_research` pauses only supplier research at the
+ * limit, `hard_stop` refuses every model call, `warn_only` never refuses. ops.ai_budget_reserve reads both.
+ */
+const assistantBudget = z.strictObject({
+  monthlyUsd: positiveAmount.max(100_000),
+  mode: z.enum(['warn_pause_research', 'hard_stop', 'warn_only']).default('warn_pause_research'),
+})
 
 const researchCap = z.strictObject({
   perEnquiryUsd: positiveAmount.max(1_000),
@@ -200,6 +207,12 @@ const auth = z.strictObject({
 })
 
 const undo = z.strictObject({ sendWindowMinutes: wholeNumber(1, 60, 'minutes') })
+
+/** S05-T02: how long an internal Assistant effect (link, label) can be undone. */
+const internalUndo = z.strictObject({ minutes: wholeNumber(1, 60, 'minutes') })
+
+/** S05-T09: the mail pipeline switch. Off: new mail is stored, never classified. */
+const mailPipeline = z.strictObject({ enabled: z.boolean() })
 
 /** `Name <address>` or a bare address. */
 const mailbox = z
@@ -432,6 +445,20 @@ export const SETTINGS = {
     signoff: false,
     label: 'Undo window for sends',
     section: 'sending',
+  }),
+  'assistant.internal_undo_minutes': def({
+    schema: internalUndo,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Undo window for the Assistant’s own changes',
+    section: 'assistant',
+  }),
+  'assistant.mail_pipeline_enabled': def({
+    schema: mailPipeline,
+    ownerOnly: true,
+    signoff: false,
+    label: 'Let the Assistant sort new mail',
+    section: 'assistant',
   }),
   'system_email.sender': def({
     schema: systemEmailSender,

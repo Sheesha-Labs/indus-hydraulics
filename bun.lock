@@ -16,6 +16,7 @@
       "dependencies": {
         "@googleapis/gmail": "22.0.2",
         "@indus/intake": "workspace:^",
+        "@indus/ops-ai": "workspace:^",
         "@indus/ops-core": "workspace:^",
         "@indus/ops-db": "workspace:^",
         "@indus/ops-ui": "workspace:^",
@@ -203,6 +204,7 @@
         "@anthropic-ai/sdk": "^0.92.0",
         "@indus/ops-core": "workspace:^",
         "server-only": "^0.0.1",
+        "zod": "^4.4.1",
       },
       "devDependencies": {
         "@types/node": "^20",

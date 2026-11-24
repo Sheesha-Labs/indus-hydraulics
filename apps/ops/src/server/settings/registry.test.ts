@@ -50,6 +50,7 @@ const AWAITING: readonly SettingKey[] = [
   'send.timing',
   'calendar.country_weekends',
   'send.attachment_names',
+  'assistant.internal_undo_minutes', // S05-T02
 ]
 
 function seeded(key: SettingKey): unknown {
@@ -68,7 +69,7 @@ describe('settings registry vs the seed migration', () => {
 
   it('seeds exactly the registered keys', () => {
     expect(rows.map((r) => r.key).sort()).toEqual([...SETTING_KEYS].sort())
-    expect(SETTING_KEYS).toHaveLength(25)
+    expect(SETTING_KEYS).toHaveLength(27)
   })
 
   it('every seeded value parses with its schema', () => {

@@ -16,6 +16,15 @@ const h = vi.hoisted(() => ({
       },
     ],
     sendQueue: { scheduled: 2, held: 1, waitingForMailbox: 0, unknown: 0 },
+    assistant: {
+      paused: false,
+      pipelineEnabled: true,
+      monthSpendUsd: '1.25',
+      budgetUsd: '195.00',
+      lastActionAt: '2026-11-23T05:58:00.000Z',
+    },
+    aiCallsLastHour: 14,
+    mailLatency: { p50: 22, p95: 71, count: 200 },
   },
   captured: [] as string[],
 }))
@@ -53,12 +62,18 @@ describe('/api/health', () => {
   it('reports the database, the mailboxes and the send queue', async () => {
     const body = await (await GET()).json()
     expect(Object.keys(body).sort()).toEqual([
+      'aiCallsLastHour',
+      'assistant',
       'db',
       'inngestHeartbeatAt',
+      'mailLatency',
       'mailboxes',
       'sendQueue',
       'version',
     ])
+    expect(body.assistant).toEqual(h.readings.assistant)
+    expect(body.mailLatency).toEqual({ p50: 22, p95: 71, count: 200 })
+    expect(body.aiCallsLastHour).toBe(14)
     expect(body.db).toEqual({ opsAppConnections: 3, alert: false })
     expect(body.mailboxes[0]).toEqual(h.readings.mailboxes[0])
     expect(body.sendQueue).toEqual({ scheduled: 2, held: 1, waitingForMailbox: 0, unknown: 0 })

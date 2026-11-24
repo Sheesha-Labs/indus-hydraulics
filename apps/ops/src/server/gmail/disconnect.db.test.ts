@@ -20,6 +20,11 @@ vi.mock('@sentry/nextjs', () => ({
   captureException: () => undefined,
   captureMessage: () => undefined,
 }))
+// The pause row is shared (pause.db.test toggles it); this file is not about it.
+vi.mock('../assistant/pause', () => ({
+  isAssistantPaused: async () => false,
+  assistantPauseState: async () => null,
+}))
 vi.mock('next/cache', () => ({
   unstable_cache: (fn: () => unknown) => fn,
   revalidateTag: () => undefined,

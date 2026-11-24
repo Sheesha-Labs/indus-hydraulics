@@ -4,3 +4,4 @@
 export * from './keys'
 export * from './levels'
 export * from './presets'
+export * from './resolve-interim'

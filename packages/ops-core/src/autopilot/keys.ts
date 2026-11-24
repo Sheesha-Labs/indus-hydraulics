@@ -81,6 +81,9 @@ export const SYSTEM_KEYS = [
   'correction_email',
   'bank_change_alert',
   'log_call_follow_up',
+  // S05
+  'manual_reply',
+  'ooo_facts',
 ] as const
 
 /** Every seeded action key. Later sprints append their keys at the end. */
@@ -144,6 +147,8 @@ export const SENDS_EXTERNALLY = [
   'claim_draft',
   'month_pack',
   'correction_email',
+  // S05
+  'manual_reply',
 ] as const satisfies readonly ActionKey[]
 
 export type ExternalSendKey = (typeof SENDS_EXTERNALLY)[number]

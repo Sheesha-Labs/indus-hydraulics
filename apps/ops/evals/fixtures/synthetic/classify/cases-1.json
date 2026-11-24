@@ -1,0 +1,283 @@
+[
+  {
+    "id": "c001",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "mailer-daemon@example.org",
+    "subject": "Delivery Status Notification (Failure)",
+    "body": "Address not found. Your message wasn't delivered. 550 5.1.1 user unknown",
+    "expect": "bounce"
+  },
+  {
+    "id": "c002",
+    "mailbox": "supplier",
+    "senderRole": "unknown",
+    "from": "postmaster@example.net",
+    "subject": "Undeliverable: IH-RFQ-2611-P03",
+    "body": "Delivery has failed to these recipients. 550 5.1.10 RecipientNotFound",
+    "expect": "bounce"
+  },
+  {
+    "id": "c003",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-one.example",
+    "subject": "Out of Office: RFQ 2 inch valves",
+    "body": "I am out of the office until Monday and will reply on my return.",
+    "expect": "auto_reply",
+    "flags": {
+      "autoSubmitted": "auto-replied"
+    }
+  },
+  {
+    "id": "c004",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@valve-maker.example",
+    "subject": "Automatic reply: Price request",
+    "body": "Thank you for your email. I am on leave and will be back on 3 December.",
+    "expect": "auto_reply"
+  },
+  {
+    "id": "c005",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "info@fittings-co.example",
+    "subject": "Abwesenheitsnotiz: Anfrage",
+    "body": "Ich bin bis zum 2. Dezember nicht im Büro.",
+    "expect": "auto_reply"
+  },
+  {
+    "id": "c006",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "news@trade-portal.example",
+    "subject": "This week in industrial supply",
+    "body": "Read our latest stories. Unsubscribe here.",
+    "expect": "not_business",
+    "flags": {
+      "listUnsubscribe": true,
+      "listId": "<news.trade-portal.example>"
+    }
+  },
+  {
+    "id": "c007",
+    "mailbox": "supplier",
+    "senderRole": "unknown",
+    "from": "marketing@pump-world.example",
+    "subject": "Webinar invitation",
+    "body": "Join our free webinar next Tuesday.",
+    "expect": "not_business",
+    "flags": {
+      "esp": "x-mc-user"
+    }
+  },
+  {
+    "id": "c008",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "alerts@example.org",
+    "subject": "Security alert",
+    "body": "Please log in to view the RFQ document shared with you.",
+    "expect": "phishing",
+    "labels": ["INBOX", "SPAM"]
+  },
+  {
+    "id": "c009",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "procurement@client-one.example",
+    "subject": "RFQ: ball valves",
+    "body": "Dear team,\nPlease quote 10 pcs ball valve 2 inch, class 300, carbon steel body, delivery Jebel Ali.\nRegards",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c010",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-two.example",
+    "subject": "Price request - gate valves",
+    "body": "Kindly send your best price and lead time for 4 nos gate valve 6 inch 600#.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c011",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "engineer@new-plant.example",
+    "subject": "Enquiry for hydraulic hoses",
+    "body": "Hello, we need 50 m of 1/2 inch hydraulic hose with fittings. Can you offer?",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c012",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "purchase@client-three.example",
+    "subject": "Request for quotation",
+    "body": "Please quote the attached list of 12 items. Closing date 30 November.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c013",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-one.example",
+    "subject": "New requirement",
+    "body": "We have a new requirement for pressure gauges 0-100 bar, 20 pcs. Please offer.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c014",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "info@marine-services.example",
+    "subject": "Inquiry: shackles",
+    "body": "Do you have 25 t bow shackles in stock? Please quote 8 pcs.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c015",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "procurement@client-two.example",
+    "subject": "RFQ 4410 - flanges",
+    "body": "Kindly quote weld neck flanges 4 inch 300# RF, 20 pcs, as per attached.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c016",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-three.example",
+    "subject": "Urgent - need price today",
+    "body": "Plant down. Need price and availability for one mechanical seal, part in the drawing.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c017",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "supply@drilling-site.example",
+    "subject": "Quotation required",
+    "body": "Please submit your quotation for the items below before Thursday.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c018",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-four.example",
+    "subject": "Request for offer - lifting slings",
+    "body": "Please offer 10 nos polyester round slings 5 t x 3 m.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c019",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-one.example",
+    "subject": "Re: INDUS/Q10023 ball valves",
+    "body": "Thank you for the quotation. Can you confirm the delivery time is 4 weeks?",
+    "expect": "client_reply"
+  },
+  {
+    "id": "c020",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "procurement@client-two.example",
+    "subject": "Re: ENQ-2026-0444",
+    "body": "Please find our answers to your questions: material is SS316, quantity stays 20.",
+    "expect": "client_reply"
+  },
+  {
+    "id": "c021",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-three.example",
+    "subject": "Re: Quotation",
+    "body": "We are reviewing your offer internally and will revert next week.",
+    "expect": "client_reply"
+  },
+  {
+    "id": "c022",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "purchase@client-three.example",
+    "subject": "Re: RFQ list",
+    "body": "Noted with thanks. Is the price valid until end of December?",
+    "expect": "client_reply"
+  },
+  {
+    "id": "c023",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-four.example",
+    "subject": "Re: INDUS/Q10051-R1",
+    "body": "Could you improve the price on item 3? Our budget is lower.",
+    "expect": "client_reply"
+  },
+  {
+    "id": "c024",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "engineer@client-one.example",
+    "subject": "Re: datasheet",
+    "body": "The datasheet you sent is fine for our engineering team.",
+    "expect": "client_reply"
+  },
+  {
+    "id": "c025",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "procurement@client-one.example",
+    "subject": "Purchase Order 4410",
+    "body": "Please find attached our PO 4410 against your quotation INDUS/Q10023. Kindly confirm.",
+    "expect": "client_po"
+  },
+  {
+    "id": "c026",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-two.example",
+    "subject": "PO for flanges",
+    "body": "We are pleased to place our order as per your offer. LPO attached.",
+    "expect": "client_po"
+  },
+  {
+    "id": "c027",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "purchase@client-three.example",
+    "subject": "Order confirmation",
+    "body": "Please proceed with the order for items 1 to 5 as quoted. PO number 7782.",
+    "expect": "client_po"
+  },
+  {
+    "id": "c028",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-four.example",
+    "subject": "LPO 20261124",
+    "body": "Kindly find our LPO for the slings. Please confirm receipt and delivery date.",
+    "expect": "client_po"
+  },
+  {
+    "id": "c029",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@valve-maker.example",
+    "subject": "Re: IH-RFQ-2611-P03",
+    "body": "Please find attached our quotation. Validity 30 days, lead time 6 weeks ex-works.",
+    "expect": "supplier_quote"
+  },
+  {
+    "id": "c030",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "export@fittings-co.example",
+    "subject": "Quotation for your RFQ",
+    "body": "Our best offer is attached. Prices FOB, payment 30 days.",
+    "expect": "supplier_quote"
+  }
+]

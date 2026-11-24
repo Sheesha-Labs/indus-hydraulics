@@ -1,4 +1,4 @@
-import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterAll, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 
 /**
  * Sessions and devices (S03-T02) against the real local Postgres (role ops_app): what a sign-in writes,
@@ -113,6 +113,15 @@ describe.skipIf(!DB_URL)('sessions and devices · local database', () => {
 
   beforeEach(() => {
     h.session = null
+  })
+
+  // The users stay (auth_event is append-only) but leave the active set, so no later test's "everyone"
+  // notification fans out to every run's leftovers.
+  afterAll(async () => {
+    await db.user.updateMany({
+      where: { email: { startsWith: `t02-${run}-` }, status: { in: ['active', 'invited'] } },
+      data: { status: 'removed' },
+    })
   })
 
   it('a sign-in records the device label, keyed hash, city and country, and its auth_event', async () => {

@@ -1,6 +1,6 @@
 import 'server-only'
 import { canTransitionMailbox, mailboxCanRead, type MailboxStatusValue } from '@indus/ops-core'
-import { opsDb } from '@indus/ops-db'
+import { opsDb, type Prisma } from '@indus/ops-db'
 import { emitEvents } from '../../inngest/emit-batch'
 import type { OpsEvent } from '../../inngest/emit'
 import { isAssistantPaused } from '../assistant/pause'
@@ -142,10 +142,19 @@ export async function syncMailbox(
     mailbox.pausedAt !== null || status === 'paused' || (await (deps.paused ?? isAssistantPaused)())
   if (paused) {
     // Mail keeps arriving in Gmail; nothing is lost. The cursor stays put so resume catches up from here.
+    // The notified historyId is kept as pendingHistoryId (S05-T08) for the record; the processing cursor
+    // (historyId) is never advanced here, so resume reads everything that arrived, in order.
+    const prev = (mailbox.syncState?.backfillState as Record<string, unknown> | null) ?? {}
+    const pending =
+      input.notifiedHistoryId &&
+      isNewer(input.notifiedHistoryId, prev.pendingHistoryId as string | undefined)
+        ? input.notifiedHistoryId
+        : ((prev.pendingHistoryId as string | undefined) ?? null)
+    const backfillState = { ...prev, pendingHistoryId: pending } as Prisma.InputJsonValue
     await opsDb.mailboxSyncState.upsert({
       where: { mailboxId: mailbox.id },
-      create: { mailboxId: mailbox.id, lastPushAt: now() },
-      update: { lastPushAt: now() },
+      create: { mailboxId: mailbox.id, lastPushAt: now(), backfillState },
+      update: { lastPushAt: now(), backfillState },
     })
     return { kind: 'paused', mailboxId: mailbox.id }
   }

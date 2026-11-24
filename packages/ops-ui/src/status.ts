@@ -354,6 +354,9 @@ export const MAIL_TYPE_TONE = {
   Unsure: 'warn',
   Bounce: 'bad',
   Phishing: 'bad',
+  'Auto-reply': 'n',
+  'Not business': 'n',
+  Other: 'n',
 } as const satisfies Record<MailType, Tone>
 
 /** Mail kit role tag: Client acc, Unknown warn, Supplier and Internal neutral. */

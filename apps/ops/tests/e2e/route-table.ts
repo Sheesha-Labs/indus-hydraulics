@@ -15,7 +15,8 @@ export const CONSOLE: readonly (readonly [string, string | null, Template])[] = 
   ['/review', 'Review', 'T4'],
   ['/mail/all', 'Mail', 'T3'],
   ['/mail/needs-you', 'Mail', 'T3'],
-  [`/mail/clients/${ID}`, 'Mail', 'T3'],
+  // S05: a thread page is real now (a fixture id is not found); tests/e2e/mail.spec.ts opens real threads.
+  ['/mail/clients', 'Mail', 'T3'],
   ['/enquiries', 'Enquiries', 'T1'],
   ['/enquiries/new', 'Enquiries', 'T9'],
   [`/enquiries/intake/${ID}`, 'Enquiries', 'T9'],

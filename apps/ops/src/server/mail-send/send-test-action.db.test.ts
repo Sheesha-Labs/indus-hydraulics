@@ -2,7 +2,8 @@ import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
 import type { OpsUser } from '../../lib/access-core'
 import {
   buildQueueWorld,
-  CLIENT,
+  allowTestRecipient,
+  disallowTestRecipient,
   cleanQueue,
   localDatabaseUrl,
   type QueueWorld,
@@ -41,6 +42,8 @@ vi.mock('../../lib/access', async () => {
 })
 
 const TAG = 'sendtest'
+/** Its own recipient: sending-settings.db.test.ts adds and removes the fixture CLIENT in parallel. */
+const TO = 'sendtest-buyer@client.example.test'
 
 describe.skipIf(!DB_URL)('mailbox.sendTest action · one pooled connection', () => {
   process.env.APP_ENV = 'test'
@@ -50,7 +53,6 @@ describe.skipIf(!DB_URL)('mailbox.sendTest action · one pooled connection', () 
   let db: typeof import('@indus/ops-db').opsDb
   let world: QueueWorld
   let action: typeof import('../../app/(console)/settings/mailboxes/actions/mailbox').sendTestEmailAction
-  let before: unknown
 
   beforeAll(async () => {
     ;({ opsDb: db } = await import('@indus/ops-db'))
@@ -71,28 +73,18 @@ describe.skipIf(!DB_URL)('mailbox.sendTest action · one pooled connection', () 
       },
     })
     h.user = owner as OpsUser
-    const entry = await db.settingsEntry.findUniqueOrThrow({
-      where: { key: 'mail.test_allowlist' },
-    })
-    before = entry.value
-    await db.settingsEntry.update({
-      where: { key: 'mail.test_allowlist' },
-      data: { value: { addresses: [CLIENT] } },
-    })
+    await allowTestRecipient(db, TO)
   })
 
   afterAll(async () => {
-    await db.settingsEntry.update({
-      where: { key: 'mail.test_allowlist' },
-      data: { value: before as object },
-    })
+    await disallowTestRecipient(db, TO)
     await cleanQueue(db, TAG)
     await db.$disconnect()
   })
 
   it('queues the email and answers success well inside the transaction timeout', async () => {
     const started = Date.now()
-    const res = await action({ mailboxId: world.salesId, to: CLIENT, mode: 'new' })
+    const res = await action({ mailboxId: world.salesId, to: TO, mode: 'new' })
     expect(res).toMatchObject({ success: true })
     expect(Date.now() - started).toBeLessThan(8_000)
     if (!res.success) return

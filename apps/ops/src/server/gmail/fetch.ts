@@ -1,6 +1,10 @@
 import 'server-only'
 import { createHash } from 'node:crypto'
-import { normaliseForExtraction, parseAuthenticationResults } from '@indus/ops-core'
+import {
+  inspectAttachmentHeader,
+  normaliseForExtraction,
+  parseAuthenticationResults,
+} from '@indus/ops-core'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import { OPS_BUCKETS } from '../storage/buckets'
 import { getStorage } from '../storage/storage'
@@ -248,6 +252,8 @@ export async function storeAttachment(
   })
 
   const zip = await zipVerdict(meta, bytes)
+  // S05-T03: a locked PDF, OOXML or ZIP cannot be extracted; mark it so the Assistant asks for an open copy.
+  const locked = inspectAttachmentHeader(bytes.subarray(0, 64 * 1024), meta.filename, meta.mimeType)
   const row = await opsDb.mailAttachment.create({
     data: {
       messageId: input.messageId,
@@ -258,7 +264,14 @@ export async function storeAttachment(
       sha256: sha,
       fileId: stored.fileId,
       // Over a zip limit: stored as it came, never expanded (the enum has no 'skipped'; 'unsupported' + note).
-      ...(zip ? { extractionStatus: 'unsupported' as const, extractionNote: zip } : {}),
+      ...(locked.passwordProtected
+        ? {
+            extractionStatus: 'password_protected' as const,
+            extractionNote: `Password-protected ${locked.kind}`,
+          }
+        : zip
+          ? { extractionStatus: 'unsupported' as const, extractionNote: zip }
+          : {}),
     },
     select: { id: true },
   })

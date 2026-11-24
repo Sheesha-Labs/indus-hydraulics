@@ -52,6 +52,8 @@ export interface SidebarClientProps {
   websiteAdminHref: string | undefined
   signOutAction: (formData: FormData) => void | Promise<void>
   onPause: (() => void | Promise<void>) | undefined
+  onResume: (() => void | Promise<void>) | undefined
+  assistantSummary: string | undefined
   onOpenCommand: (() => void) | undefined
   logo: ReactNode
   persist: boolean
@@ -182,6 +184,8 @@ function Expanded(p: PartProps) {
         who={p.user.role}
         collapsed={false}
         onPause={p.onPause}
+        onResume={p.onResume}
+        summary={p.assistantSummary}
         label={p.statusLabel}
       />
       <ExpandedItem item={SETTINGS_ITEM} active={p.active === 'settings'} count={undefined} />
@@ -347,6 +351,8 @@ function Collapsed(p: PartProps) {
         who={p.user.role}
         collapsed
         onPause={p.onPause}
+        onResume={p.onResume}
+        summary={p.assistantSummary}
         label={p.statusLabel}
       />
       <CollapsedItem

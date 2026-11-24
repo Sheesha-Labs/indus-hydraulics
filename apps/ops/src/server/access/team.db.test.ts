@@ -1,7 +1,7 @@
 import { mkdtemp, readFile, readdir } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
 
 /**
  * Settings › Team (S03-T03) against the real local Postgres (role ops_app): the invite lifecycle
@@ -141,6 +141,15 @@ describe.skipIf(!DB_URL)('team, invites and ownership · local database', () => 
   }
 
   // ── Invites ────────────────────────────────────────────────────────────────────────────────
+
+  // The users stay (auth_event is append-only) but leave the active set, so no later test's "everyone"
+  // notification fans out to every run's leftovers.
+  afterAll(async () => {
+    await db.user.updateMany({
+      where: { email: { startsWith: `t03-${run}-` }, status: { in: ['active', 'invited'] } },
+      data: { status: 'removed' },
+    })
+  })
 
   it('creates an invite: hashed token, 7-day expiry, invited row, invite_sent, setup step 6 done', async () => {
     await scenario(async (tx) => {

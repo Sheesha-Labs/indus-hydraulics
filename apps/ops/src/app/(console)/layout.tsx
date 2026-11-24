@@ -45,7 +45,7 @@ export default async function ConsoleLayout({
   const [mailbox, banners, assistant, jar] = await Promise.all([
     getShellMailbox(user.id),
     getShellBanners(user),
-    getShellAssistantStates(),
+    getShellAssistantStates(user),
     cookies(),
   ])
   const helper = user.role === 'helper'
@@ -63,6 +63,7 @@ export default async function ConsoleLayout({
         collapsed={isSidebarCollapsed(jar.get(SIDEBAR_COOKIE)?.value)}
         assistant={assistant.states}
         {...(assistant.label ? { assistantLabel: assistant.label } : {})}
+        {...(assistant.summary ? { assistantSummary: assistant.summary } : {})}
         {...(helper ? { websiteAdminHref: WEBSITE_ADMIN_HREF } : {})}
         signOutAction={signOutAction}
         banners={banners}

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "c031",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "quotes@pump-works.example",
+    "subject": "Re: IH-RFQ-2611-P05",
+    "body": "We regret that we cannot offer these items as they are not in our scope.",
+    "expect": "supplier_quote"
+  },
+  {
+    "id": "c032",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@hose-maker.example",
+    "subject": "Offer",
+    "body": "Attached please find our partial offer; items 4 and 7 are not available.",
+    "expect": "supplier_quote"
+  },
+  {
+    "id": "c033",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "info@gauge-co.example",
+    "subject": "Re: RFQ pressure gauges",
+    "body": "Price per piece as below, MOQ 10 pcs, delivery 2 weeks.",
+    "expect": "supplier_quote"
+  },
+  {
+    "id": "c034",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@chain-maker.example",
+    "subject": "Quotation IH-RFQ-2611-P07",
+    "body": "Kindly see the attached proforma with our prices for the shackles.",
+    "expect": "supplier_quote"
+  },
+  {
+    "id": "c035",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@valve-maker.example",
+    "subject": "Re: IH-RFQ-2611-P03",
+    "body": "Before we quote, please confirm the end connection: flanged or butt weld?",
+    "expect": "supplier_question"
+  },
+  {
+    "id": "c036",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "export@fittings-co.example",
+    "subject": "Query on your RFQ",
+    "body": "Could you send the drawing for item 2? We need the dimensions to quote.",
+    "expect": "supplier_question"
+  },
+  {
+    "id": "c037",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "quotes@pump-works.example",
+    "subject": "Clarification",
+    "body": "What is the required delivery place and incoterm for this request?",
+    "expect": "supplier_question"
+  },
+  {
+    "id": "c038",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@hose-maker.example",
+    "subject": "Question",
+    "body": "Is the working pressure 210 bar or 350 bar? Please advise so we can offer.",
+    "expect": "supplier_question"
+  },
+  {
+    "id": "c039",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "docs@valve-maker.example",
+    "subject": "MTC for order",
+    "body": "Please find attached the mill test certificates for the shipped valves.",
+    "expect": "supplier_documents"
+  },
+  {
+    "id": "c040",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "export@fittings-co.example",
+    "subject": "Packing list and invoice",
+    "body": "Attached commercial invoice and packing list for your PO INDUS/PO10045.",
+    "expect": "supplier_documents"
+  },
+  {
+    "id": "c041",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "qa@pump-works.example",
+    "subject": "Datasheets",
+    "body": "As requested, attached are the datasheets and GA drawings.",
+    "expect": "supplier_documents"
+  },
+  {
+    "id": "c042",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@hose-maker.example",
+    "subject": "Price list 2027",
+    "body": "Please find attached our general price list valid from 1 January 2027.",
+    "expect": "supplier_price_list"
+  },
+  {
+    "id": "c043",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "info@gauge-co.example",
+    "subject": "New catalogue",
+    "body": "Attached is our new catalogue with list prices for your reference.",
+    "expect": "supplier_price_list"
+  },
+  {
+    "id": "c044",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@chain-maker.example",
+    "subject": "Holiday notice",
+    "body": "Our factory will be closed for the national holiday from 1 to 3 December.",
+    "expect": "supplier_other"
+  },
+  {
+    "id": "c045",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "md@valve-maker.example",
+    "subject": "Introduction",
+    "body": "We would like to introduce our new sales manager for your region.",
+    "expect": "supplier_other"
+  },
+  {
+    "id": "c046",
+    "mailbox": "supplier",
+    "senderRole": "unknown",
+    "from": "ops@forwarder.example",
+    "subject": "Booking confirmation",
+    "body": "Your shipment is booked, ETD 28 November, ETA Jebel Ali 12 December. AWB to follow.",
+    "expect": "freight"
+  },
+  {
+    "id": "c047",
+    "mailbox": "supplier",
+    "senderRole": "unknown",
+    "from": "rates@shipping-line.example",
+    "subject": "Freight rates",
+    "body": "Our rates for 20 ft container Shanghai to Jebel Ali for December are attached.",
+    "expect": "freight"
+  },
+  {
+    "id": "c048",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "dispatch@courier.example",
+    "subject": "Delivery scheduled",
+    "body": "Your consignment will be delivered tomorrow between 9 and 12.",
+    "expect": "freight"
+  },
+  {
+    "id": "c049",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "accounts@client-one.example",
+    "subject": "Payment advice",
+    "body": "Please find attached the TT copy for invoice 2611-004.",
+    "expect": "payment"
+  },
+  {
+    "id": "c050",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "finance@valve-maker.example",
+    "subject": "Statement of account",
+    "body": "Attached is your statement of account as of 30 November.",
+    "expect": "payment"
+  },
+  {
+    "id": "c051",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "ap@client-two.example",
+    "subject": "Remittance advice",
+    "body": "We have remitted the amount for your invoice today.",
+    "expect": "payment"
+  },
+  {
+    "id": "c052",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "hr@jobs-board.example",
+    "subject": "Job application",
+    "body": "I would like to apply for the sales engineer position at your company.",
+    "expect": "not_business"
+  },
+  {
+    "id": "c053",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "friend@example.com",
+    "subject": "Dinner on Friday?",
+    "body": "Are you free for dinner this Friday?",
+    "expect": "not_business"
+  },
+  {
+    "id": "c054",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "auditor@audit-firm.example",
+    "subject": "Annual audit",
+    "body": "We would like to schedule the annual audit visit next month.",
+    "expect": "other"
+  },
+  {
+    "id": "c055",
+    "mailbox": "supplier",
+    "senderRole": "unknown",
+    "from": "registrations@trade-fair.example",
+    "subject": "Exhibitor registration",
+    "body": "Your exhibitor registration for the trade fair is confirmed.",
+    "expect": "other"
+  },
+  {
+    "id": "c056",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "someone@unknown-co.example",
+    "subject": "Hello",
+    "body": "Please see attached and advise.",
+    "expect": "unsure"
+  },
+  {
+    "id": "c057",
+    "mailbox": "supplier",
+    "senderRole": "both",
+    "from": "team@trader.example",
+    "subject": "Fwd:",
+    "body": "FYI",
+    "expect": "unsure"
+  },
+  {
+    "id": "c058",
+    "mailbox": "client",
+    "senderRole": "unknown",
+    "from": "info@new-company.example",
+    "subject": "Re:",
+    "body": "Thanks, noted.",
+    "expect": "unsure"
+  },
+  {
+    "id": "c059",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-one.example",
+    "subject": "Fwd: offer from our vendor",
+    "body": "Please check this offer from our vendor and tell us if you can beat the price.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c060",
+    "mailbox": "supplier",
+    "senderRole": "supplier",
+    "from": "sales@valve-maker.example",
+    "subject": "RFQ from us",
+    "body": "We also need 5 pcs ball valves for our own project, please quote.",
+    "expect": "client_enquiry"
+  },
+  {
+    "id": "c061",
+    "mailbox": "client",
+    "senderRole": "client",
+    "from": "buyer@client-two.example",
+    "subject": "Re: delivery",
+    "body": "When will the order be delivered? It was due last week.",
+    "expect": "client_reply"
+  }
+]
