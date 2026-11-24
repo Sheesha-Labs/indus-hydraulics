@@ -64,7 +64,7 @@ function fakeTransport(
       status: 'ended',
       counts: { processing: 0, succeeded: ids.length, errored: 0, canceled: 0, expired: 0 },
     }),
-    results: async function* results() {
+    async *results() {
       for (const id of ids) {
         const item: BatchResultItem = {
           customId: id,

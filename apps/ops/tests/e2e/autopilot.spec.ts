@@ -26,7 +26,12 @@ test.afterAll(async () => {
   for (const s of saved)
     await db.autopilotSetting.update({
       where: { actionKey: s.key },
-      data: { level: s.level as never },
+      data: {
+        level: s.level as never,
+        signoffStatus: 'awaiting',
+        signedOffById: null,
+        signedOffAt: null,
+      },
     })
   if (savedMode)
     await db.settingsEntry.update({

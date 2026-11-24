@@ -58,7 +58,7 @@ function message(
   } as unknown as Anthropic.Messages.Message
 }
 
-function transport(results: BatchResultItem[], status: 'ended' | 'in_progress' = 'ended') {
+function transport(items: BatchResultItem[], status: 'ended' | 'in_progress' = 'ended') {
   const created: unknown[] = []
   const t: BatchTransport = {
     create: async (requests) => {
@@ -74,8 +74,8 @@ function transport(results: BatchResultItem[], status: 'ended' | 'in_progress' =
       status,
       counts: { processing: 0, succeeded: 1, errored: 0, canceled: 0, expired: 0 },
     }),
-    results: async function* results() {
-      for (const r of results) yield r
+    async *results() {
+      for (const r of items) yield r
     },
   }
   return { t, created }

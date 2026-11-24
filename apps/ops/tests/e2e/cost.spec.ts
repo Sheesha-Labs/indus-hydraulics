@@ -45,7 +45,19 @@ test.afterAll(async () => {
       },
     })
   for (const s of savedSettings)
-    await db.settingsEntry.update({ where: { key: s.key }, data: { value: s.value as never } })
+    await db.settingsEntry.update({
+      where: { key: s.key },
+      data: {
+        value: s.value as never,
+        signoffStatus: 'awaiting',
+        signedOffById: null,
+        signedOffAt: null,
+      },
+    })
+  await db.guardrail.update({
+    where: { key: 'research_cap' },
+    data: { signoffStatus: 'awaiting', signedOffById: null, signedOffAt: null },
+  })
 })
 
 test('board-101: month to date, breakdown, limits; saving updates this month', async ({
