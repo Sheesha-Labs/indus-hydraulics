@@ -18,6 +18,7 @@ import {
   type OverrideResult,
 } from '../../../../server/mail/overrides'
 import { ReplyError, replyInThread } from '../../../../server/mail/reply'
+import { resolveUnsure, undoResolution } from '../../../../server/mail/resolve-unsure'
 
 /**
  * Mail view actions (S05-T05, board 91 "Not right?" and the reply composer; S05-T06 Link to…). Both the Owner
@@ -107,6 +108,13 @@ export const unlinkAction = defineAction({
   },
 })
 
+/** Board 95 "Use this email as": the class a link also sets ("Just keep" leaves the class alone). */
+const USE_AS = {
+  client_reply: 'client_reply',
+  supplier_quote: 'supplier_quote',
+  document: 'supplier_documents',
+} as const
+
 export const linkToAction = defineAction({
   name: 'mail.linkTo',
   schema: z.object({
@@ -116,24 +124,82 @@ export const linkToAction = defineAction({
     enquiryId: z.uuid().nullable(),
     alsoThread: z.boolean().default(true),
     choice: z.enum(['override', 'unsure_choice']).default('override'),
+    useAs: z.enum(['client_reply', 'supplier_quote', 'document', 'just_keep']).default('just_keep'),
+    /** A move: the message's other record links are retired (kept as history). */
+    replace: z.boolean().default(true),
   }),
   roles: ['owner', 'helper'],
   handler: async (input, ctx) => {
+    const actor = { id: ctx.user.id, initials: ctx.user.initials }
     const out = await ctx
-      .withTx((tx) =>
-        linkTo(tx, {
+      .withTx(async (tx) => {
+        const linked = await linkTo(tx, {
           messageId: input.messageId,
           subjectType: input.subjectType,
           subjectId: input.subjectId,
           enquiryId: input.enquiryId,
           alsoThread: input.alsoThread,
           kind: input.choice,
+          replace: input.replace,
+          actor,
+        })
+        if (input.useAs === 'just_keep') return linked
+        const typed = await changeType(tx, {
+          messageId: input.messageId,
+          cls: USE_AS[input.useAs],
+          actor,
+        })
+        return { ...linked, events: [...linked.events, ...typed.events] }
+      })
+      .catch(safe)
+    followUp(out)
+    return { messageId: out.messageId }
+  },
+})
+
+export const resolveUnsureAction = defineAction({
+  name: 'mail.resolveUnsure',
+  schema: z.object({
+    messageId: z.uuid(),
+    actionId: z.uuid(),
+    option: z.string().min(1).max(120),
+    companyId: z.uuid().nullable().default(null),
+  }),
+  roles: ['owner', 'helper'],
+  handler: async (input, ctx) => {
+    const out = await ctx
+      .withTx((tx) =>
+        resolveUnsure(tx, { ...input, actor: { id: ctx.user.id, initials: ctx.user.initials } })
+      )
+      .catch(safe)
+    followUp(out)
+    return {
+      messageId: out.messageId,
+      actionId: input.actionId,
+      filedAs: out.filedAs,
+      learned: out.learned,
+    }
+  },
+})
+
+export const undoResolutionAction = defineAction({
+  name: 'mail.undoResolution',
+  schema: z.object({ actionId: z.uuid() }),
+  roles: ['owner', 'helper'],
+  handler: async (input, ctx) => {
+    const out = await ctx
+      .withTx((tx) =>
+        undoResolution(tx, {
+          actionId: input.actionId,
           actor: { id: ctx.user.id, initials: ctx.user.initials },
         })
       )
       .catch(safe)
-    followUp(out)
-    return { messageId: out.messageId }
+    followUp({
+      messageId: out.messageId,
+      events: [{ name: 'ops/review.changed', data: { messageId: out.messageId } }],
+    })
+    return out
   },
 })
 

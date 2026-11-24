@@ -191,15 +191,56 @@ test.beforeAll(async () => {
   })
 })
 
-test.afterAll(async () => {
-  await db.assistantAction.findMany({
-    where: {
-      actionKey: 'manual_reply',
-      subjectId: { in: [ids.t1, ids.t2, ids.t3].filter(Boolean) as string[] },
+test.beforeAll(async () => {
+  // Board 94: an unsure email waiting with its best guess and an alternative.
+  const t4 = await db.mailThread.create({
+    data: {
+      mailboxId: ids.purchase!,
+      gmailThreadId: 'e2e-s05-t4',
+      subject: 'Price list Q4 (pile)',
+      lastMessageAt: new Date(Date.now() - 35 * 60_000),
     },
+    select: { id: true },
   })
+  ids.t4 = t4.id
+  ids.m4 = await message(ids.purchase!, t4.id, {
+    from: 'sales@bearings-co.example',
+    fromName: 'Pile Sender',
+    subject: 'Price list Q4 (pile)',
+    body: 'Please find attached our updated price list for Q4.',
+    minutesAgo: 35,
+    classification: 'unclassified',
+    confidence: 'unsure',
+    handledState: 'unsure',
+    note: 'Supplier price list · Unsure · Supplier price list or new enquiry?',
+    rfc: 'e2e-s05-m4',
+  })
+  const a = await db.assistantAction.create({
+    data: {
+      ref: `A-E2E-S05-${Date.now().toString(36)}`,
+      actionKey: 'classify_mail',
+      levelAtTime: 'do_quietly',
+      guardrails: [],
+      subjectType: 'mail_message',
+      subjectId: ids.m4,
+      headline: 'Unsure what this is',
+      reasons: [],
+      state: 'proposed',
+      surface: 'mail_unsure',
+      unsureAbout: 'Supplier price list or new enquiry?',
+      options: [
+        { key: 'supplier_price_list', label: 'Supplier price list', consequence: '' },
+        { key: 'client_enquiry', label: 'New enquiry', consequence: '' },
+      ],
+    },
+    select: { id: true },
+  })
+  ids.a4 = a.id
+})
+
+test.afterAll(async () => {
   await db.mailThread.deleteMany({
-    where: { id: { in: [ids.t1, ids.t2, ids.t3].filter(Boolean) as string[] } },
+    where: { id: { in: [ids.t1, ids.t2, ids.t3, ids.t4].filter(Boolean) as string[] } },
   })
   await db.mailbox.deleteMany({ where: { address: { startsWith: 'e2e-s05-' } } })
   await db.company.deleteMany({ where: { name: { startsWith: 'E2E S05 ' } } })
@@ -316,4 +357,80 @@ test('board-91: a Helper reply on the client mailbox asks the Owner instead of s
     levelAtTime: 'draft_and_ask',
   })
   expect(await db.outboundEmail.count({ where: { threadId: ids.t3 } })).toBe(0)
+})
+
+test('board-94: choose the best guess, see it filed, undo brings the card back', async ({
+  page,
+  signedInAs,
+}) => {
+  await signedInAs('owner')
+  await page.goto('/mail/unsure')
+  await expect(page.getByRole('heading', { name: /Unsure · \d+/ })).toBeVisible({ timeout: 60_000 })
+  const card = page.getByRole('article', { name: /Pile Sender: Price list Q4 \(pile\)/ })
+  await expect(card).toBeVisible()
+  await expect(
+    page.getByText(
+      'An unsure email is never filed into a record by guessing. It waits here until you choose.'
+    )
+  ).toBeVisible()
+  await card.getByRole('button', { name: 'Supplier price list' }).click()
+  const toasts = page.locator('[data-part="toast-region"]')
+  await expect(toasts).toContainText('✓ Filed as Supplier price list')
+  await expect(card).toHaveCount(0)
+  await expect
+    .poll(
+      async () => (await db.mailMessage.findUniqueOrThrow({ where: { id: ids.m4 } })).classification
+    )
+    .toBe('supplier_price_list')
+  const decided = await db.assistantAction.findUniqueOrThrow({ where: { id: ids.a4 } })
+  expect(decided.decidedById).not.toBeNull()
+
+  await toasts.getByRole('button', { name: /^Undo/ }).click()
+  await expect
+    .poll(
+      async () => (await db.mailMessage.findUniqueOrThrow({ where: { id: ids.m4 } })).classification
+    )
+    .toBe('unclassified')
+  await expect(
+    page.getByRole('article', { name: /Pile Sender: Price list Q4 \(pile\)/ })
+  ).toBeVisible()
+  expect(await blocking(page)).toEqual([])
+})
+
+test('board-95: Link to… searches, links and sets what the email is', async ({
+  page,
+  signedInAs,
+}) => {
+  await signedInAs('owner')
+  await page.goto(`/mail/all/${ids.t3}`)
+  await page
+    .getByRole('complementary', { name: 'What the Assistant did' })
+    .getByRole('button', { name: 'Link to…' })
+    .click()
+  const dialog = page.getByRole('dialog')
+  await expect(dialog).toBeVisible({ timeout: 30_000 })
+  await expect(dialog).toContainText('“RFQ ball valves” from A Buyer')
+  await dialog.getByRole('searchbox').fill('E2E S05')
+  await expect(dialog.getByRole('radio', { name: /E2E S05 Example Valve Co/ })).toBeVisible()
+  await dialog.getByRole('radio', { name: /E2E S05 Example Valve Co/ }).check()
+  await dialog
+    .getByRole('radio', { name: 'Just keep' })
+    .click()
+    .catch(async () => dialog.getByRole('button', { name: 'Just keep' }).click())
+  await dialog.getByRole('button', { name: /^Link to E2E S05 Example Valve Co/ }).click()
+  await expect(page.locator('[data-part="toast-region"]')).toContainText('✓ Linked to')
+  await expect(dialog).toHaveCount(0)
+  await expect
+    .poll(
+      async () =>
+        (await db.mailLink.findFirst({ where: { messageId: ids.m3, removedAt: null } }))?.subjectId
+    )
+    .toBe(ids.company)
+
+  // Escape closes the modal and drops ?link from the URL.
+  await page.goto(`/mail/all/${ids.t3}?link=1`)
+  await expect(page.getByRole('dialog')).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(page.getByRole('dialog')).toHaveCount(0)
+  await expect(page).not.toHaveURL(/link=1/)
 })

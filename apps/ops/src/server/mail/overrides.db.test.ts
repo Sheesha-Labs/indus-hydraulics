@@ -123,10 +123,18 @@ describe.skipIf(!DB_URL)('mail overrides · local database', () => {
     expect(m.assistantNote).toBe('Supplier price list · Sure · set by KB')
     const a = await db.assistantAction.findUniqueOrThrow({ where: { id: item } })
     expect(a).toMatchObject({
-      state: 'approved',
+      state: 'done',
       chosenOption: 'supplier_price_list',
       decidedById: world.ownerId,
     })
+    expect(a.undoUntil!.getTime()).toBeGreaterThan(Date.now())
+    const states = await db.assistantActionEvent.findMany({
+      where: { actionId: item },
+      orderBy: { at: 'asc' },
+      select: { toState: true, actorKind: true },
+    })
+    expect(states.map((e) => e.toState)).toEqual(['proposed', 'approved', 'running', 'done'])
+    expect(states.slice(1).every((e) => e.actorKind === 'user')).toBe(true)
     const sig = await db.preferenceSignal.findFirstOrThrow({ where: { actionId: item } })
     expect(sig).toMatchObject({ kind: 'override', actionKey: 'classify_mail' })
     const act = await db.activityEvent.findMany({
@@ -140,9 +148,8 @@ describe.skipIf(!DB_URL)('mail overrides · local database', () => {
     const id = await msg()
     const item = await unsureItem(id, 'classify_mail', [{ key: 'client_enquiry' }])
     await db.$transaction((tx) => o.markNotBusiness(tx, { messageId: id, actor }))
-    expect((await db.assistantAction.findUniqueOrThrow({ where: { id: item } })).state).toBe(
-      'edited_approved'
-    )
+    const events = await db.assistantActionEvent.findMany({ where: { actionId: item } })
+    expect(events.map((e) => e.toState)).toContain('edited_approved')
     expect((await db.mailMessage.findUniqueOrThrow({ where: { id } })).handledState).toBe('handled')
   })
 
@@ -172,9 +179,7 @@ describe.skipIf(!DB_URL)('mail overrides · local database', () => {
       removedAt: null,
     })
     expect((await db.mailMessage.findUniqueOrThrow({ where: { id } })).handledState).toBe('handled')
-    expect((await db.assistantAction.findUniqueOrThrow({ where: { id: item } })).state).toBe(
-      'approved'
-    )
+    expect((await db.assistantAction.findUniqueOrThrow({ where: { id: item } })).state).toBe('done')
     expect((await db.preferenceSignal.findFirstOrThrow({ where: { actionId: item } })).kind).toBe(
       'unsure_choice'
     )

@@ -465,3 +465,79 @@ export async function mailboxAddresses(): Promise<{ sales: string; purchase: str
   const purchase = rows.find((r) => r.role === 'supplier')?.address
   return { sales: sales ? short(sales) : 'sales@', purchase: purchase ? short(purchase) : 'purchase@' }
 }
+
+// ── The Unsure pile (board 94) ───────────────────────────────────────────────────────────
+
+export interface UnsureOption {
+  key: string
+  label: string
+}
+
+export interface UnsureCardView {
+  actionId: string
+  messageId: string
+  threadId: string
+  from: string
+  address: string
+  subject: string
+  preview: string
+  question: string | null
+  /** The best guess first, then the alternatives. */
+  options: UnsureOption[]
+  /** Not business / New enquiry / Supplier question, when not already offered. */
+  extras: UnsureOption[]
+}
+
+const EXTRA_CLASSIFY: UnsureOption[] = [
+  { key: 'not_business', label: 'Not business' },
+  { key: 'new_enquiry', label: 'New enquiry' },
+  { key: 'supplier_question', label: 'Supplier question' },
+]
+const EXTRA_LINK: UnsureOption[] = [
+  { key: 'new_enquiry', label: 'New enquiry' },
+  { key: 'not_business', label: 'Not business' },
+]
+
+/**
+ * Two reads: the open Unsure items (classify or link proposals on the mail_unsure surface), newest first, and
+ * their messages. A message with both open shows once, its classification question first.
+ */
+export async function listUnsure(): Promise<UnsureCardView[]> {
+  const items = await opsDb.assistantAction.findMany({
+    where: { surface: 'mail_unsure', state: { in: ['proposed', 'later'] }, subjectType: 'mail_message' },
+    orderBy: { createdAt: 'desc' },
+    take: 100,
+    select: { id: true, actionKey: true, subjectId: true, options: true, unsureAbout: true },
+  })
+  const ids = [...new Set(items.map((i) => i.subjectId).filter((x): x is string => !!x))]
+  if (ids.length === 0) return []
+  const messages = await opsDb.mailMessage.findMany({
+    where: { id: { in: ids } },
+    select: { id: true, threadId: true, fromName: true, fromAddress: true, subject: true, bodyText: true },
+  })
+  const byId = new Map(messages.map((m) => [m.id, m]))
+  const seen = new Set<string>()
+  const ordered = [...items].sort((a, b) => (a.actionKey === 'classify_mail' ? -1 : 0) - (b.actionKey === 'classify_mail' ? -1 : 0))
+  const out: UnsureCardView[] = []
+  for (const i of ordered) {
+    const m = i.subjectId ? byId.get(i.subjectId) : undefined
+    if (!m || seen.has(m.id)) continue
+    seen.add(m.id)
+    const options = ((i.options as Array<{ key: string; label: string }> | null) ?? []).slice(0, 3).map((o) => ({ key: o.key, label: o.label }))
+    const offered = new Set(options.map((o) => o.key))
+    const extras = (i.actionKey === 'link_mail' ? EXTRA_LINK : EXTRA_CLASSIFY).filter((e) => !offered.has(e.key)).slice(0, Math.max(0, 3 - Math.max(0, options.length - 1)))
+    out.push({
+      actionId: i.id,
+      messageId: m.id,
+      threadId: m.threadId,
+      from: m.fromName?.trim() || m.fromAddress,
+      address: m.fromAddress,
+      subject: m.subject ?? '(no subject)',
+      preview: (m.bodyText ?? '').replace(/\s+/g, ' ').trim().slice(0, 160),
+      question: i.unsureAbout,
+      options,
+      extras,
+    })
+  }
+  return out.sort((a, b) => ids.indexOf(a.messageId) - ids.indexOf(b.messageId))
+}

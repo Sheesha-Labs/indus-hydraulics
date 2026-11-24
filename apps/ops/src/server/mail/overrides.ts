@@ -56,7 +56,21 @@ async function loadMessage(tx: Tx, messageId: string) {
   return m
 }
 
-/** Open Unsure items (classify or link proposals) about this message, decided now by the person. */
+/** The internal undo window (setting assistant.internal_undo_minutes, default 5). */
+async function undoMinutes(tx: Tx): Promise<number> {
+  const row = await tx.settingsEntry.findUnique({
+    where: { key: 'assistant.internal_undo_minutes' },
+    select: { value: true },
+  })
+  const v = (row?.value as { minutes?: unknown } | null)?.minutes
+  return typeof v === 'number' && v > 0 && v <= 60 ? v : 5
+}
+
+/**
+ * Open Unsure items (classify or link proposals) about this message, decided now by the person. Each runs
+ * proposed → approved (or edited_approved when the choice was not among its options) → running → done, with
+ * the person as decider and an undo window, so "Undo" is the legal done → undone.
+ */
 async function closeUnsure(
   tx: Tx,
   messageId: string,
@@ -73,6 +87,9 @@ async function closeUnsure(
     },
     select: { id: true, options: true, state: true },
   })
+  if (open.length === 0) return []
+  const now = new Date()
+  const undoUntil = new Date(now.getTime() + (await undoMinutes(tx)) * 60_000)
   for (const a of open) {
     const options = (a.options as Array<{ key: string }> | null) ?? []
     const matched = options.some((o) => o.key === chosen)
@@ -85,9 +102,13 @@ async function closeUnsure(
         state: matched ? 'approved' : 'edited_approved',
         chosenOption: chosen,
         decidedById: actor.id,
-        decidedAt: new Date(),
-        doneAt: new Date(),
+        decidedAt: now,
       },
+    })
+    await tx.assistantAction.update({ where: { id: a.id }, data: { state: 'running' } })
+    await tx.assistantAction.update({
+      where: { id: a.id },
+      data: { state: 'done', doneAt: now, undoUntil },
     })
   }
   return open.map((a) => a.id)
@@ -101,6 +122,10 @@ export async function changeType(
     cls: MailClassValue
     actor: Actor
     kind?: 'override' | 'unsure_choice'
+    /** Merged into the preference signal's payload (the Unsure pile adds the sender domain and the offer). */
+    signal?: Record<string, unknown>
+    /** "New enquiry" before intake is live (C5): the message waits as Needs you. */
+    needsYou?: boolean
   }
 ): Promise<OverrideResult> {
   if (input.cls === 'unclassified') throw new OverrideError('Choose a type')
@@ -108,12 +133,14 @@ export async function changeType(
   const m = await loadMessage(tx, input.messageId)
   const closed = await closeUnsure(tx, m.id, input.actor, input.cls, ['classify_mail'])
   const confidence: ConfidenceValue = 'sure'
-  const handled = handledState({
-    classification: input.cls,
-    confidence,
-    linked: m._count.links,
-    openProposal: false,
-  })
+  const handled = input.needsYou
+    ? 'needs_you'
+    : handledState({
+        classification: input.cls,
+        confidence,
+        linked: m._count.links,
+        openProposal: false,
+      })
   const note = assistantNote(input.cls, confidence, `set by ${input.actor.initials}`)
   await writeTracked(
     tx,
@@ -150,6 +177,7 @@ export async function changeType(
             field: 'classification',
             before: m.classification,
             after: input.cls,
+            ...input.signal,
           } as Prisma.InputJsonValue,
           createdById: input.actor.id,
         },
@@ -196,6 +224,9 @@ export async function linkTo(
     actor: Actor
     alsoThread?: boolean
     kind?: 'override' | 'unsure_choice'
+    signal?: Record<string, unknown>
+    /** Board 95 "move": the message's other record links are retired (removedAt) first. */
+    replace?: boolean
   }
 ): Promise<OverrideResult> {
   await setActor(tx, { kind: 'user', id: input.actor.id })
@@ -218,6 +249,33 @@ export async function linkTo(
     where: { id: m.id },
     select: { threadId: true, thread: { select: { enquiryId: true } } },
   })
+  const retired = input.replace
+    ? await tx.mailLink.findMany({
+        where: {
+          messageId: m.id,
+          removedAt: null,
+          NOT: { subjectType: input.subjectType, subjectId: input.subjectId },
+        },
+        select: { id: true, subjectType: true, subjectId: true, linkedBy: true },
+      })
+    : []
+  for (const r of retired) {
+    await writeTracked(
+      tx,
+      {
+        actor: { kind: 'user', id: input.actor.id },
+        subjectType: 'mail_message',
+        subjectId: m.id,
+        changes: [
+          { field: 'link', before: `${r.subjectType}:${r.subjectId}`, after: null, kind: 'link' },
+        ],
+        note: `Moved by ${input.actor.initials}`,
+      },
+      async (t) => {
+        await t.mailLink.update({ where: { id: r.id }, data: { removedAt: new Date() } })
+      }
+    )
+  }
   await writeTracked(
     tx,
     {
@@ -279,6 +337,7 @@ export async function linkTo(
           payload: {
             field: 'link',
             after: `${input.subjectType}:${input.subjectId}`,
+            ...input.signal,
           } as Prisma.InputJsonValue,
           createdById: input.actor.id,
         },

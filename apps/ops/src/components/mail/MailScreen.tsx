@@ -10,6 +10,7 @@ import { mailQuery, type MailSearch } from '../../lib/mail-params'
 import { resolveSendEnvelope } from '../../server/mail-send/envelope'
 import { replyPermission } from '../../server/mail/reply'
 import AssistantPane from './AssistantPane'
+import LinkToModal from './LinkToModal'
 import MailRail from './MailRail'
 import ThreadList from './ThreadList'
 import ThreadReading from './ThreadReading'
@@ -19,6 +20,20 @@ import ThreadReading from './ThreadReading'
  * both read the search params (a layout cannot). The folder rail and the list come from the same reads on
  * both; the thread page adds the conversation.
  */
+function linkQuery(search: MailSearch): string {
+  const qs = mailQuery(search, { cursor: undefined })
+  return `${qs}${qs ? '&' : '?'}link=1`
+}
+
+function defaultUseAsFor(
+  cls: string
+): 'client_reply' | 'supplier_quote' | 'document' | 'just_keep' {
+  if (cls.startsWith('client_')) return 'client_reply'
+  if (cls === 'supplier_quote') return 'supplier_quote'
+  if (cls === 'supplier_documents' || cls === 'supplier_price_list') return 'document'
+  return 'just_keep'
+}
+
 export default async function MailScreen({
   user,
   folder,
@@ -68,7 +83,7 @@ export default async function MailScreen({
         />
         <AssistantPane
           thread={thread}
-          linkHref={`/mail/${folder}/${thread.id}${mailQuery(search, { cursor: undefined })}${mailQuery(search, { cursor: undefined }) ? '&' : '?'}link=1`}
+          linkHref={`/mail/${folder}/${thread.id}${linkQuery(search)}`}
         />
       </div>
     )
@@ -92,6 +107,13 @@ export default async function MailScreen({
         list={<ThreadList folder={folder} search={search} page={page} selectedId={thread?.id} />}
         reading={reading}
       />
+      {thread && search.link ? (
+        <LinkToModal
+          messageId={thread.latest.id}
+          title={`“${thread.subject}” from ${thread.latest.from.name ?? thread.latest.from.address}`}
+          defaultUseAs={defaultUseAsFor(thread.latest.classification)}
+        />
+      ) : null}
       {children}
     </>
   )
