@@ -15,6 +15,8 @@
 --                               value_threshold_rfq (USD 50,000) is added; every row is enabled; rows the
 --                               Owner has signed off are never overwritten.
 --   email_template              'supplier_chaser' wording (P04, awaiting sign-off), previewed on board 99.
+--   help_article                'autopilot-modes' generated from the catalogue by ops.regenerate_autopilot_modes_article(),
+--                               rebuilt by a statement trigger whenever a default, lock or cap changes.
 --   autopilot_action_def        minutesSaved defaults (classify 0.5, extract 6, RFQ 12, chaser 3, capture 8),
 --                               awaiting sign-off, where the Owner has not confirmed the row.
 --
@@ -177,6 +179,68 @@ VALUES
    E'Dear {supplier_contact},\n\nA reminder about our RFQ {rfq_ref}: we would welcome your offer by {reply_by}. If you will not be quoting, a short reply would help us plan.\n\nKind regards,\n{sender_name}',
    ARRAY['rfq_ref', 'supplier_contact', 'reply_by', 'sender_name'], 'awaiting', now())
 ON CONFLICT ("key") DO NOTHING;
+
+-- ── help article 'autopilot-modes', generated from the catalogue (S07-T07) ─────────────────
+-- The body is data built from autopilot_action_def: one numbered line per action with its Careful, Balanced and
+-- Hands-off level, locked rows stated once. A statement trigger rebuilds it whenever a default, lock or cap
+-- changes, so the article never drifts from the catalogue.
+CREATE OR REPLACE FUNCTION ops.level_word(p ops."AutopilotLevel")
+RETURNS text LANGUAGE sql IMMUTABLE AS $$
+  SELECT CASE p
+    WHEN 'off' THEN 'Off' WHEN 'suggest' THEN 'Suggest' WHEN 'draft_and_ask' THEN 'Draft and ask'
+    WHEN 'do_and_tell' THEN 'Do and tell' WHEN 'do_quietly' THEN 'Do quietly' ELSE 'Never' END
+$$;
+
+CREATE OR REPLACE FUNCTION ops.regenerate_autopilot_modes_article()
+RETURNS void LANGUAGE plpgsql SET search_path = ops, pg_catalog AS $$
+DECLARE
+  v_body text;
+BEGIN
+  SELECT 'How Careful, Balanced and Hands-off set each action. Careful is where everyone starts; Balanced and Hands-off are presets awaiting your sign-off. Locked actions are the same in every mode, and guardrails override any level.'
+         || E'\n\n'
+         || string_agg(
+              format('%s. %s: %s', n, label,
+                CASE
+                  WHEN "lockedLevel" = 'never' THEN 'Never (it prepares the work; you act)'
+                  WHEN "lockedLevel" IS NOT NULL THEN format('locked at %s', ops.level_word("lockedLevel"))
+                  ELSE format('Careful %s · Balanced %s · Hands-off %s',
+                              ops.level_word("defaultCareful"), ops.level_word("defaultBalanced"),
+                              ops.level_word("defaultHandsOff"))
+                END),
+              E'\n' ORDER BY n)
+    INTO v_body
+    FROM (
+      SELECT row_number() OVER (ORDER BY "position") AS n, label, "lockedLevel",
+             "defaultCareful", "defaultBalanced", "defaultHandsOff"
+        FROM ops.autopilot_action_def
+       WHERE configurable OR "lockedLevel" IS NOT NULL
+    ) d;
+  INSERT INTO ops.help_article ("slug", "section", "title", "body", "published", "updatedAt")
+  VALUES ('autopilot-modes', 'assistant', 'Compare the Autopilot modes', COALESCE(v_body, ''), true, now())
+  ON CONFLICT ("slug") DO UPDATE SET "body" = EXCLUDED."body", "updatedAt" = now()
+   WHERE ops.help_article."body" IS DISTINCT FROM EXCLUDED."body";
+END;
+$$;
+
+CREATE OR REPLACE FUNCTION ops.autopilot_modes_article_trigger()
+RETURNS trigger LANGUAGE plpgsql SET search_path = ops, pg_catalog AS $$
+BEGIN
+  PERFORM ops.regenerate_autopilot_modes_article();
+  RETURN NULL;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS autopilot_action_def_modes_article ON ops.autopilot_action_def;
+CREATE TRIGGER autopilot_action_def_modes_article
+  AFTER INSERT OR UPDATE OF "label", "defaultCareful", "defaultBalanced", "defaultHandsOff", "lockedLevel", "maxLevel"
+  ON ops.autopilot_action_def
+  FOR EACH STATEMENT EXECUTE FUNCTION ops.autopilot_modes_article_trigger();
+
+SELECT ops.regenerate_autopilot_modes_article();
+
+REVOKE ALL ON FUNCTION ops.regenerate_autopilot_modes_article() FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION ops.regenerate_autopilot_modes_article() TO ops_app;
+GRANT EXECUTE ON FUNCTION ops.level_word(ops."AutopilotLevel") TO ops_app;
 
 -- ── RLS, policies and grants ──────────────────────────────────────────────────────────────
 DO $$

@@ -358,14 +358,16 @@ export function RuleForm({
           className="border-io-line flex min-h-[48px] items-center justify-between gap-3 border-b py-1.5 text-[13px]"
         >
           {f.kind === 'toggle' ? (
-            <Toggle
-              name={f.name}
-              label={f.label}
-              checked={rules[f.name] === true}
-              disabled={disabled}
-              onCheckedChange={(v) => onChange(f.name, v)}
-              className="w-full justify-between"
-            />
+            <>
+              <span id={`rule-${f.name}-label`}>{f.label}</span>
+              <Toggle
+                name={f.name}
+                aria-label={f.label}
+                checked={rules[f.name] === true}
+                disabled={disabled}
+                onCheckedChange={(v) => onChange(f.name, v)}
+              />
+            </>
           ) : (
             <>
               <label htmlFor={`rule-${f.name}`}>{f.label}</label>

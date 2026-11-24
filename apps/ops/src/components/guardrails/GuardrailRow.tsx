@@ -171,6 +171,7 @@ function Row({ row, page }: { row: GuardrailRowData; page: GuardrailsPageData })
   return (
     <div
       data-part="guardrail-row"
+      id={row.key}
       data-guardrail={row.key}
       className="border-io-line grid min-h-[63px] grid-cols-[minmax(0,1fr)_auto_96px] items-center gap-4 border-b px-4 py-3 last:border-b-0"
     >

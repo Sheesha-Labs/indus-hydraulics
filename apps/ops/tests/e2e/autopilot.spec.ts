@@ -122,3 +122,28 @@ test('board-98: the Helper reads only', async ({ page, signedInAs }) => {
   await expect(page.getByRole('button', { name: 'Pause everything' })).toHaveCount(0)
   await expect(page.locator('[data-action="extract_lines"]')).toContainText('read only')
 })
+
+test('S07-T07: Compare modes and Settings home list the defaults awaiting sign-off', async ({
+  page,
+  signedInAs,
+}) => {
+  await signedInAs('owner')
+  await page.goto('/assistant/autopilot')
+  await page.getByRole('link', { name: 'Compare modes' }).click()
+  const help = page.getByRole('dialog', { name: 'Compare the Autopilot modes' })
+  await expect(help).toBeVisible()
+  await expect(help.getByText(/Send quotation: locked at Draft and ask/)).toBeVisible()
+  await page.keyboard.press('Escape')
+  await page.goto('/settings')
+  const list = page.locator('[data-part="awaiting-signoff"]')
+  await expect(list).toContainText('Default · awaiting sign-off')
+  for (const area of [
+    'Autopilot levels',
+    'Guardrail values',
+    'Minutes saved per task',
+    'Email wording',
+  ])
+    await expect(list).toContainText(area)
+  await list.getByRole('link', { name: 'Supplier chaser' }).click()
+  await expect(page.getByRole('dialog', { name: 'Chase suppliers' })).toBeVisible()
+})
