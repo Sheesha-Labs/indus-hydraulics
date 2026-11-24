@@ -81,9 +81,7 @@ export default function WhyTabBody({
       ) : (
         <p className="text-io-ink-3 m-0 text-[12.5px]">{view.noQuote ?? 'No reasons recorded.'}</p>
       )}
-      {lead ? (
-        <SourcePanel spans={[lead]} activeSpan={lead.key} noQuote={null} />
-      ) : null}
+      {lead ? <SourcePanel spans={[lead]} activeSpan={lead.key} noQuote={null} /> : null}
       {view.alternatives.length ? (
         <section className="flex flex-col gap-2" aria-label="Alternatives considered">
           <Eyebrow>Alternatives considered</Eyebrow>

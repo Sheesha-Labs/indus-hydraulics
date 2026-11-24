@@ -40,6 +40,7 @@ export default async function EnquiryLayout({
       strip={<RecordStrip state={state} />}
       rail={<RecordRailSkeleton />}
       bleed={['quotation']}
+      wide={['activity']}
     >
       {children}
     </RecordCockpit>

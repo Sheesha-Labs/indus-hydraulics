@@ -39,7 +39,7 @@ export default function ReceiptRow({ receipt }: { receipt: ReviewReceipt }) {
       </span>
       <p className="min-w-0 flex-1">
         <span className="font-medium">Approved · {receipt.headline}</span>
-        <span className="text-io-ink-3"> · {receipt.detail}</span>
+        <span className="text-io-ink-2"> · {receipt.detail}</span>
       </p>
       {receipt.state === 'queued' ? (
         <Button variant="secondary" size="sm" busy={busy} onClick={() => void undo()}>

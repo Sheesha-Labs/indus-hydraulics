@@ -226,7 +226,7 @@ describe('route tree', () => {
     expect(private_).toEqual([])
   })
 
-  it('(d) no API route beyond the four S02 allows, the S03-T05 file route, the two S04 Gmail routes and the S06 log export', () => {
+  it('(d) no API route beyond the four S02 allows, the S03-T05 file route, the two S04 Gmail routes and the two S06 exports', () => {
     const api = ALL.filter((d) => d.startsWith('api') && has(d, 'route.ts')).sort()
     expect(api).toEqual([
       // S06-T04: the Assistant log CSV (Owner only, session checked in the route; streams, never a page).
@@ -240,6 +240,8 @@ describe('route tree', () => {
       'api/health',
       'api/health/live',
       'api/inngest',
+      // S06-T06: a record's history CSV (Owner only, session checked in the route; streams, never a page).
+      'api/records/[type]/[id]/history/export',
     ])
     // No route handler hides in a page group either.
     expect(ALL.filter((d) => !d.startsWith('api') && has(d, 'route.ts'))).toEqual([])
