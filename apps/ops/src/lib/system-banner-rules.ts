@@ -40,6 +40,9 @@ export type BannerMailbox = {
   backfillPhase: string | null
   heldForCap: number
   failedRecently: number
+  /** Sent, then bounced back, in the last day (S05-T07); the first bounced address for the title. */
+  bouncedRecently?: number
+  bouncedTo?: string | null
   sentToday: number
   dailySendCap: number
 }
@@ -139,14 +142,18 @@ export function bannerSpecs(input: BannerInput): BannerSpec[] {
         mailboxId: m.id,
       })
     }
-    if (m.failedRecently > 0) {
+    const bounced = m.bouncedRecently ?? 0
+    if (m.failedRecently > 0 || bounced > 0) {
+      const total = m.failedRecently + bounced
       out.push({
         kind: 'send-failed',
         tone: 'bad',
         title:
-          m.failedRecently === 1
-            ? 'A message failed to send.'
-            : `${m.failedRecently} messages failed to send.`,
+          m.failedRecently === 0 && bounced === 1 && m.bouncedTo
+            ? `Email to ${m.bouncedTo} bounced.`
+            : total === 1
+              ? 'A message failed to send.'
+              : `${total} messages failed to send.`,
         text: `From ${local}. Fix the contact or resend from Review.`,
         action: { label: 'Open Review', href: '/review' },
         mailboxId: m.id,

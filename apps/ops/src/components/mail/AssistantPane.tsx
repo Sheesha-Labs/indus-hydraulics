@@ -74,7 +74,7 @@ export default function AssistantPane({
                   {a.headline}{' '}
                   <Link
                     href={`/why/${a.ref}` as Route}
-                    className="text-io-accent io-focus rounded-io-tag whitespace-nowrap hover:underline"
+                    className="text-io-accent io-focus rounded-io-tag whitespace-nowrap underline underline-offset-2"
                   >
                     Why?
                   </Link>
@@ -86,7 +86,7 @@ export default function AssistantPane({
         {review ? (
           <Link
             href={`/review?action=${review.ref}` as Route}
-            className="text-io-accent io-focus rounded-io-tag text-[12.5px] hover:underline"
+            className="text-io-accent io-focus rounded-io-tag text-[12.5px] underline underline-offset-2"
           >
             Open in Review ↗
           </Link>

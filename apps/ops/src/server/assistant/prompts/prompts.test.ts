@@ -2,7 +2,11 @@ import { createHash } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
 import { buildSystem } from '@indus/ops-ai'
 import * as classify from './classify-mail.v1'
+import * as askOpenCopy from './ask-open-copy.v1'
 import * as link from './link-mail.v1'
+import * as ooo from './ooo-facts.v1'
+import * as resend from './resend-alternate-contact.v1'
+import * as translate from './translate-mail.v1'
 
 /**
  * Prompts are versioned code (CLAUDE.md §9.9): the text of a released version never changes. A different
@@ -12,10 +16,14 @@ import * as link from './link-mail.v1'
 const RELEASED: Record<string, string> = {
   'classify-mail@1': '56f0e99312ab29590dece15960ed655d4423c6a30da72cb03c666d562edd8618',
   'link-mail@1': '76299dfff606b322cf7fd0b38c57f0b253bcb378e33a12f4129d81070ec288f6',
+  'ooo-facts@1': '9b74beb51e4f893173fff814005af47da9538020aaf52f976b97b8ed649baad9',
+  'ask-open-copy@1': 'c1ecd114a5aa013ab041776c68d92d62888b816d4ac9dea5134dc9d55fe405dc',
+  'resend-alternate-contact@1': '957e3f85e14a162c8d2629c19910472c96eac09fe6c987942d64cf4372e2ba2f',
+  'translate-mail@1': 'd4643fce28d6c1c47ef3efe359c8f22bac64c411e8980d8c510d6dd5a3abf32c',
 }
 
 describe('released prompts are byte-stable', () => {
-  it.each([classify, link])('$PROMPT_VERSION', (m) => {
+  it.each([classify, link, ooo, askOpenCopy, resend, translate])('$PROMPT_VERSION', (m) => {
     const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
     expect(hash).toBe(RELEASED[m.PROMPT_VERSION])
     // and cacheable: no timestamps or ids in system text, one 1 h breakpoint on the last part

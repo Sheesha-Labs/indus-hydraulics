@@ -23,24 +23,31 @@ describe.skipIf(!DB_URL)('mail data · local database', () => {
   let world: QueueWorld
   const subjects = `mview-${randomUUID().slice(0, 6)}`
 
-  async function thread(mailboxId: string, i: number, over: Record<string, unknown> = {}, rfc?: string, refs: string[] = []) {
+  async function thread(
+    mailboxId: string,
+    i: number,
+    over: Record<string, unknown> = {},
+    rfc?: string,
+    refs: string[] = [],
+    prefix = subjects
+  ) {
     const at = new Date(Date.now() - i * 60_000)
     const t = await db.mailThread.create({
-      data: { mailboxId, gmailThreadId: `${subjects}-t${i}-${mailboxId.slice(0, 4)}`, subject: `${subjects} ${i}`, lastMessageAt: at },
+      data: { mailboxId, gmailThreadId: `${prefix}-t${i}-${mailboxId.slice(0, 4)}`, subject: `${prefix} ${i}`, lastMessageAt: at },
       select: { id: true },
     })
     await db.mailMessage.create({
       data: {
         mailboxId,
         threadId: t.id,
-        gmailMessageId: `${subjects}-m${i}-${mailboxId.slice(0, 4)}`,
-        rfcMessageId: rfc ?? `${subjects}-${i}-${randomUUID()}@example.test`,
+        gmailMessageId: `${prefix}-m${i}-${mailboxId.slice(0, 4)}`,
+        rfcMessageId: rfc ?? `${prefix}-${i}-${randomUUID()}@example.test`,
         referencesRfcIds: refs,
         direction: 'inbound',
         fromAddress: `sender${i}@example.test`,
         toAddresses: ['sales@example.test'],
         ccAddresses: [],
-        subject: `${subjects} ${i}`,
+        subject: `${prefix} ${i}`,
         bodyText: `Body ${i} <script>alert(1)</script>`,
         sentAt: at,
         labelsApplied: [],
@@ -96,13 +103,15 @@ describe.skipIf(!DB_URL)('mail data · local database', () => {
   })
 
   it('merges a conversation across both mailboxes and serves only sanitized bodies', async () => {
-    const root = `${subjects}-root@example.test`
-    const salesThread = await thread(world.salesId, 70, {}, root)
-    await thread(world.purchaseId, 71, { classification: 'supplier_quote' }, undefined, [root])
+    // Its own prefix: under --randomize the paging tests may run after this one and must not see it.
+    const merge = subjects.replace('mview', 'mmerge')
+    const root = `${merge}-root@example.test`
+    const salesThread = await thread(world.salesId, 70, {}, root, [], merge)
+    await thread(world.purchaseId, 71, { classification: 'supplier_quote' }, undefined, [root], merge)
     const owner = await db.user.findUniqueOrThrow({ where: { id: world.ownerId } })
     const view = await mail.getThread(salesThread, owner as never)
     expect(view).not.toBeNull()
-    expect(view!.messages.map((m) => m.subject).sort()).toEqual([`${subjects} 70`, `${subjects} 71`])
+    expect(view!.messages.map((m) => m.subject).sort()).toEqual([`${merge} 70`, `${merge} 71`])
     expect(new Set(view!.messages.map((m) => m.mailbox)).size).toBe(2)
     expect(view!.crossMailbox).toMatch(/This conversation is in/)
     for (const m of view!.messages) expect(m.bodyHtml).not.toContain('<script')

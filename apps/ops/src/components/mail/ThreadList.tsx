@@ -5,6 +5,7 @@ import type { Route } from 'next'
 import Link from 'next/link'
 import type { ThreadPage } from '../../data/mail'
 import { mailQuery, type MailSearch } from '../../lib/mail-params'
+import CaughtUp from './CaughtUp'
 import ThreadKeys from './ThreadKeys'
 
 /**
@@ -16,11 +17,14 @@ export default function ThreadList({
   search,
   page,
   selectedId,
+  caughtUp = null,
 }: {
   folder: MailFolderKey
   search: MailSearch
   page: ThreadPage
   selectedId?: string | undefined
+  /** Board 97 (1): nothing needs a person and nothing is unsure today. */
+  caughtUp?: { today: number } | null
 }) {
   const keep = { type: search.type, q: search.q, past: search.past }
   const qs = mailQuery(keep)
@@ -53,7 +57,9 @@ export default function ThreadList({
           {search.past ? 'Live only' : 'Today'}
         </Link>
       </form>
-      {page.rows.length === 0 ? (
+      {page.rows.length === 0 && caughtUp && !search.q && !search.past ? (
+        <CaughtUp today={caughtUp.today} />
+      ) : page.rows.length === 0 ? (
         <div className="p-4">
           <EmptyState
             mark="ML"

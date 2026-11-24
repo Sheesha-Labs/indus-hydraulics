@@ -1,7 +1,11 @@
+import type { Route } from 'next'
+import Link from 'next/link'
 import { MAIL_TYPE_TONE } from '@indus/ops-ui/status'
 import { MailMessage, type Mailbox } from '@indus/ops-ui/mail'
 import { Chip } from '@indus/ops-ui/status'
-import type { ThreadView } from '../../data/mail'
+import type { NotBusinessToday, ThreadView } from '../../data/mail'
+import MailStateCards from './MailStateCards'
+import MailStateNotes from './MailStateNotes'
 import ReplyBox from './ReplyBox'
 
 /**
@@ -13,9 +17,14 @@ export default function ThreadReading({
   thread,
   nonce,
   reply,
+  notBusiness = null,
+  allHref,
 }: {
   thread: ThreadView
   nonce?: string | undefined
+  notBusiness?: NotBusinessToday | null
+  /** "show" on a huge thread. */
+  allHref: string
   reply: {
     mailbox: Mailbox
     mailboxes: Record<Mailbox, string>
@@ -53,10 +62,22 @@ export default function ThreadReading({
           ))}
         </div>
         {thread.crossMailbox ? (
-          <p className="text-io-ink-3 text-[12px]">{thread.crossMailbox}</p>
+          <div className="flex flex-wrap items-center gap-1.5">
+            {thread.mailboxesInThread.map((a) => (
+              <span
+                key={a}
+                className="bg-io-fill text-io-ink-2 rounded-io-pill h-io-tag inline-flex items-center px-2 text-[11px]"
+              >
+                {a.split('@')[0]}@
+              </span>
+            ))}
+            <p className="text-io-ink-3 text-[12px]">{thread.crossMailbox}</p>
+          </div>
         ) : null}
       </header>
-      {thread.earlier > 0 ? (
+      <MailStateCards thread={thread} notBusiness={notBusiness} />
+      <MailStateNotes thread={thread} />
+      {thread.earlier > 0 && !thread.collapsedAfterFirst ? (
         <p className="text-io-ink-3 text-[12px]">
           {thread.earlier} earlier {thread.earlier === 1 ? 'message' : 'messages'} ·{' '}
           <a
@@ -70,8 +91,16 @@ export default function ThreadReading({
         </p>
       ) : null}
       <ol className="flex flex-col gap-3">
-        {thread.messages.map((m) => (
+        {thread.messages.map((m, i) => (
           <li key={m.id} className="flex flex-col gap-1">
+            {i === 1 && thread.collapsedAfterFirst ? (
+              <Link
+                href={allHref as Route}
+                className="border-io-line text-io-accent io-focus rounded-io-ctl mb-2 block border border-dashed px-3 py-2 text-center text-[12.5px] hover:underline"
+              >
+                {thread.earlier} earlier {thread.earlier === 1 ? 'message' : 'messages'} · show
+              </Link>
+            ) : null}
             <p className="text-io-ink-3 text-[11.5px]">
               To {m.mailbox} · {m.time}
             </p>

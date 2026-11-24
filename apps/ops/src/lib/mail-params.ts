@@ -15,6 +15,12 @@ const schema = z.object({
     .optional()
     .catch(undefined)
     .transform((v) => v === '1'),
+  /** Board 97 (6): every message of a huge thread (up to 50), not the first and the latest. */
+  all: z
+    .enum(['1'])
+    .optional()
+    .catch(undefined)
+    .transform((v) => v === '1'),
   /** Board 95: the Link to… modal is open. */
   link: z
     .enum(['1'])
@@ -33,12 +39,13 @@ export function parseMailSearch(raw: Record<string, string | string[] | undefine
     cursor: one(raw.cursor),
     past: one(raw.past),
     link: one(raw.link),
+    all: one(raw.all),
   })
 }
 
 /** The query string for a folder link that keeps the person's search and past-mail choice. */
 export function mailQuery(s: Partial<MailSearch>, over: Partial<MailSearch> = {}): string {
-  const v = { ...s, ...over, link: false }
+  const v = { ...s, ...over, link: false, all: false }
   const p = new URLSearchParams()
   if (v.type) p.set('type', v.type)
   if (v.q) p.set('q', v.q)

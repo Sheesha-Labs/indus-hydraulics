@@ -4,8 +4,10 @@ import {
   assistantNote,
   CLASS_LABEL,
   classifySchema,
+  compactFlags,
   computeClassifyConfidence,
   handledState,
+  type StoredMailFlags,
   type ClassifyModelClass,
   type ConfidenceValue,
   type MailClassValue,
@@ -50,6 +52,8 @@ export interface ClassifyOut {
   alternatives: Alternative[]
   /** Decided by a detector, without a model call. */
   detector: 'bounce' | 'phishing' | 'auto_reply' | 'bulk' | null
+  /** The detectors' facts the cards need (S05-T07), stored in mail_message.flags. */
+  flags?: StoredMailFlags
 }
 
 type In = MailInput
@@ -138,10 +142,11 @@ const definition: ActionDefinition<In, Out> = {
 
   async propose(input, ai) {
     const detected = detectorVerdict(input)
+    const flags = compactFlags(input.facts)
     if (detected) {
       return {
         ok: true,
-        out: detected,
+        out: { ...detected, flags },
         costUsd: '0.000000',
         model: null,
         promptVersion: null,
@@ -188,6 +193,7 @@ const definition: ActionDefinition<In, Out> = {
         reasons: v.reasons,
         alternatives: v.alternatives,
         detector: null,
+        flags,
       },
       costUsd: res.costUsd,
       model: res.model,
@@ -299,6 +305,7 @@ async function write(
       bodyText: true,
       bodyTextHash: true,
       subject: true,
+      flags: true,
       _count: { select: { links: { where: { removedAt: null } } } },
     },
   })
@@ -353,6 +360,14 @@ async function write(
           classifiedByActionId: ctx.actionId,
           assistantNote: note,
           handledState: handled,
+          ...(o.flags
+            ? {
+                flags: {
+                  ...((before.flags as Record<string, unknown> | null) ?? {}),
+                  ...o.flags,
+                } as Prisma.InputJsonValue,
+              }
+            : {}),
         },
       })
     }

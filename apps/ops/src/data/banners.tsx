@@ -43,9 +43,10 @@ export async function getSystemBanners(
             OR: [
               { status: 'held', holdReason: 'cap' },
               { status: 'failed', updatedAt: { gte: since }, failureReason: { not: null } },
+              { status: 'sent', deliveryStatus: 'bounced', updatedAt: { gte: since } },
             ],
           },
-          select: { status: true },
+          select: { status: true, deliveryStatus: true, toAddresses: true },
           take: 200,
         },
       },
@@ -69,6 +70,8 @@ export async function getSystemBanners(
     backfillPhase: (r.syncState?.backfillState as { phase?: string } | null)?.phase ?? null,
     heldForCap: r.outbound.filter((o) => o.status === 'held').length,
     failedRecently: r.outbound.filter((o) => o.status === 'failed').length,
+    bouncedRecently: r.outbound.filter((o) => o.deliveryStatus === 'bounced').length,
+    bouncedTo: r.outbound.find((o) => o.deliveryStatus === 'bounced')?.toAddresses[0] ?? null,
     sentToday: sentInCapDay(r.syncState ?? null, now, timing.capReset),
     dailySendCap: r.dailySendCap,
   }))

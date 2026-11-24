@@ -89,11 +89,12 @@ async function enquiryOf(tx: Tx, subjectType: string, subjectId: string): Promis
 }
 
 /** Adds the sender's domain to the company (tracked), unless it is a free mail domain or already there. */
-async function learnDomain(
+export async function learnDomain(
   tx: Tx,
   companyId: string,
   domain: string | null,
-  actor: Actor
+  actor: Actor,
+  why = 'an Unsure choice'
 ): Promise<string | null> {
   if (!domain || isPublicMailDomain(domain)) return null
   const company = await tx.company.findUnique({
@@ -109,7 +110,7 @@ async function learnDomain(
       subjectType: 'company',
       subjectId: company.id,
       changes: [{ field: 'domains', before: company.domains, after: next, kind: 'contact' }],
-      note: `Learned from an Unsure choice by ${actor.initials}`,
+      note: `Learned from ${why} by ${actor.initials}`,
     },
     async (t) => {
       await t.company.update({ where: { id: company.id }, data: { domains: next } })

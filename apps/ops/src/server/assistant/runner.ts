@@ -215,12 +215,16 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
 
   const p = d.proposal
   const draft = p.ok ? def.toProposal(p.verified, d.input) : null
+  const asks = p.ok ? def.alwaysAsk : undefined
   const state: $Enums.ActionState = p.ok
-    ? initialState(
-        d.resolved.level,
-        (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
-      )
+    ? asks
+      ? 'proposed'
+      : initialState(
+          d.resolved.level,
+          (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
+        )
     : 'failed'
+  const levelReasons = asks ? [...d.resolved.reasons, asks.reason] : d.resolved.reasons
   const inputs = {
     request: { ...d.data },
     aiCallIds: p.callIds,
@@ -237,7 +241,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           ref: num.formatted,
           actionKey: d.data.actionKey,
           levelAtTime: d.resolved.level,
-          guardrails: [],
+          guardrails: asks ? [asks.guardrail] : [],
           enquiryId: d.data.enquiryId ?? null,
           subjectType: d.data.subjectType,
           subjectId: d.data.subjectId,
@@ -263,7 +267,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           origin: d.data.origin,
           model: p.ok ? p.model : null,
           promptVersion: p.ok ? p.promptVersion : null,
-          levelReasons: d.resolved.reasons as unknown as Prisma.InputJsonValue,
+          levelReasons: levelReasons as unknown as Prisma.InputJsonValue,
           surface: def.surface,
         },
         select: { id: true, ref: true, state: true },

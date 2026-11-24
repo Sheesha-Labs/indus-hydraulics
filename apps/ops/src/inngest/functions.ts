@@ -11,6 +11,7 @@ import { gmailLabelsApply } from './mail/labels-apply'
 import { mailboxPurge } from './mail/purge'
 import { mailSendReconcile } from './mail/reconcile'
 import { mailRoute } from './mail/route'
+import { mailBounceSoft } from './mail/soft-bounce'
 import { mailSend } from './mail/send'
 
 /** Every Indus Operations Inngest function. concurrency.test.ts checks this list. */
@@ -29,5 +30,6 @@ export const opsFunctions = [
   mailboxPurge,
   assistantRun,
   mailRoute,
+  mailBounceSoft,
   gmailLabelsApply,
 ]

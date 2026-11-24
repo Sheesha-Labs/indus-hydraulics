@@ -22,7 +22,7 @@ export type CheckStatus = 'pass' | 'warn' | 'fail'
 export interface Check {
   label: string
   status: CheckStatus
-  detail?: string
+  detail?: string | undefined
 }
 
 export interface UnsureItem {
@@ -112,6 +112,29 @@ export interface EffectResult {
   emit?: EffectEvent[]
 }
 
+/**
+ * The email an external action sends once a person approves it (S05-T07). Data only: the approval (S06
+ * decisions) hands it to scheduleSend outside any transaction, with idempotency key `${actionId}:${version}`.
+ */
+export interface OutboundDraft {
+  kind: $Enums.OutboundKind
+  mailboxId: string
+  to: string[]
+  cc?: string[]
+  subject: string
+  bodyHtml: string
+  bodyText: string
+  /** A reply in this thread (same mailbox); null for a new message. */
+  threadId: string | null
+  inReplyToRfcId?: string | null
+  referencesRfcIds?: string[]
+  enquiryId?: string | null
+  companyId?: string | null
+  contactId?: string | null
+  subjectType?: $Enums.RecordType | null
+  subjectId?: string | null
+}
+
 /** In and Out must be plain JSON (they cross Inngest steps); not enforced by type so interfaces can be used. */
 export interface ActionDefinition<In = Json, Out = Json> {
   key: string
@@ -146,6 +169,13 @@ export interface ActionDefinition<In = Json, Out = Json> {
   ): Promise<EffectResult>
   /** After every run: recount the live counters this action affects. */
   afterRecord?(): Promise<void>
+  /**
+   * A guardrail that always applies (e.g. the first email to anyone new): the action is proposed whatever
+   * its level, and the guardrail is recorded on the row.
+   */
+  alwaysAsk?: { guardrail: string; reason: string }
+  /** External actions: the email to schedule on approval. */
+  outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
 }
 
 /** What `propose` returns: the output, or why there is none (budget, refusal, invalid, max_tokens). */

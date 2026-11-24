@@ -262,3 +262,37 @@ test('board-95 parity: the Link to… dialog', async ({ page, signedInAs }) => {
   })
   expect(ratio).toBeLessThanOrEqual(limit)
 })
+
+// S05-T07: boards 96 and 97 are state sheets; /_kit/mail-states lays the real components out the same way.
+for (const [board, limit, note] of [
+  [
+    '96',
+    0.05,
+    'Fictional names and addresses; the out-of-office chip sits under its card where the board puts it inside a record row.',
+  ],
+  [
+    '97',
+    0.04,
+    'Fictional text; the huge-thread rows and both-mailboxes chips are drawn as in the reading pane.',
+  ],
+] as const) {
+  test(`board-${board} parity: mail states sheet`, async ({ page }) => {
+    await prepare(page)
+    await page.setViewportSize({ width: 1440, height: 940 })
+    await page.goto(`/_kit/mail-states?board=${board}`)
+    await settle(page)
+    await page.waitForLoadState('networkidle')
+    const { ratio, size } = await compareToBoardPng(page, `${board}.png`, {
+      name: `board-${board}`,
+    })
+    recordParity({
+      board: `${board} Mail states`,
+      group: 'P03 boards',
+      ratio,
+      area: `full frame ${size}`,
+      limit,
+      note,
+    })
+    expect(ratio).toBeLessThanOrEqual(limit)
+  })
+}

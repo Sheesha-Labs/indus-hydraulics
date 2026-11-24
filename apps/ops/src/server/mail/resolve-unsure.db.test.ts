@@ -26,6 +26,7 @@ describe.skipIf(!DB_URL)('Unsure pile · local database', () => {
   let companyId: string
   const domain = `supplier-${randomUUID().slice(0, 6)}.example`
   const actor = { id: '', initials: 'AB' }
+  const extraCompanies: string[] = []
 
   async function unsureMail(
     from: string,
@@ -99,7 +100,7 @@ describe.skipIf(!DB_URL)('Unsure pile · local database', () => {
 
   afterAll(async () => {
     await cleanQueue(db, TAG)
-    await db.company.deleteMany({ where: { id: companyId } })
+    await db.company.deleteMany({ where: { id: { in: [companyId, ...extraCompanies] } } })
     await db.$disconnect()
   })
 
@@ -114,6 +115,15 @@ describe.skipIf(!DB_URL)('Unsure pile · local database', () => {
   })
 
   it('a choice is filed as the person’s, learns a company domain, and Undo returns the card', async () => {
+    // Its own domain and company: under --randomize another test may already have taught the shared one.
+    const domain = `learn-${randomUUID().slice(0, 6)}.example`
+    const companyId = (
+      await db.company.create({
+        data: { name: `Example Bearings ${domain}`, isSupplier: true, domains: [] },
+        select: { id: true },
+      })
+    ).id
+    extraCompanies.push(companyId)
     const { messageId, actionId } = await unsureMail(`sales@${domain}`)
     const out = await db.$transaction((tx) =>
       r.resolveUnsure(tx, { messageId, actionId, option: 'supplier_price_list', companyId, actor })

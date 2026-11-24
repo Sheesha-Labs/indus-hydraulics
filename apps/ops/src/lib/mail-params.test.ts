@@ -9,6 +9,7 @@ describe('mail search params', () => {
         q: ' valves ',
         past: '1',
         link: '1',
+        all: '1',
         cursor: 'abc',
       })
     ).toEqual({
@@ -16,6 +17,7 @@ describe('mail search params', () => {
       q: 'valves',
       past: true,
       link: true,
+      all: true,
       cursor: 'abc',
     })
     expect(parseMailSearch({ type: 'nonsense', past: 'yes', link: '2' })).toEqual({
@@ -24,6 +26,7 @@ describe('mail search params', () => {
       cursor: undefined,
       past: false,
       link: false,
+      all: false,
     })
   })
 

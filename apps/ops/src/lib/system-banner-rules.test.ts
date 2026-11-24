@@ -78,6 +78,14 @@ describe('board 89 banners', () => {
       kind: 'send-failed',
       title: 'A message failed to send.',
     })
+    // S05-T07: a bounce fills the same slot (board 89 banner 4); the send itself stays 'sent'.
+    expect(specs([box({ bouncedRecently: 1, bouncedTo: 'buyer@example.test' })])[0]).toMatchObject({
+      kind: 'send-failed',
+      title: 'Email to buyer@example.test bounced.',
+    })
+    expect(specs([box({ failedRecently: 1, bouncedRecently: 2 })])[0]).toMatchObject({
+      title: '3 messages failed to send.',
+    })
     expect(
       specs([
         box({

@@ -215,6 +215,8 @@ describe.skipIf(!DB_URL)('mail overrides · local database', () => {
 
   it('a Helper reply on sales@ becomes a manual_reply proposal and queues nothing', async () => {
     await msg({ classification: 'client_enquiry', confidence: 'sure', handledState: 'not_linked' })
+    // Under --randomize the Owner's reply below may already have queued one in this thread.
+    const queuedBefore = await db.outboundEmail.count({ where: { threadId } })
     const helper = await db.user.findUniqueOrThrow({ where: { id: world.helperId } })
     const out = await reply.replyInThread({
       user: { ...helper, initials: 'AB', role: 'helper' } as never,
@@ -233,7 +235,7 @@ describe.skipIf(!DB_URL)('mail overrides · local database', () => {
       levelAtTime: 'draft_and_ask',
       origin: 'manual',
     })
-    expect(await db.outboundEmail.count({ where: { threadId } })).toBe(0)
+    expect(await db.outboundEmail.count({ where: { threadId } })).toBe(queuedBefore)
   })
 
   it('the Owner’s reply is queued in the thread’s own mailbox with an undo window', async () => {

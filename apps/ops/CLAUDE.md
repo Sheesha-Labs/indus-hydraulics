@@ -362,8 +362,9 @@ function ships.
 | `ops.gmail.health` | cron `*/5 * * * *` | house | 0 | exempt | S04 |
 | `ops.mailbox.purge` | `ops/mailbox.purge.requested` (continues itself past 400 batches) | bulk | 2 | exempt | S04 |
 | `ops.assistant.run` | `ops/action.requested` (idempotency `event.data.idempotencyKey`) | live + recordKey · 1 | 2 | wait | S05 |
-| `ops.mail.route` | `ops/mail.received`, `ops/mail.classified` | live | 3 | exempt (the runner waits) | S05 |
+| `ops.mail.route` | `ops/mail.received`, `ops/mail.classified` | live | 3 | wait | S05 |
 | `ops.gmail.labels.apply` | `ops/mail.classified`, `ops/mail.linked`, `ops/review.changed` | live + messageId · 1 | 4 | wait | S05 |
+| `ops.mail.bounce.soft` | `ops/mail.bounce.soft` (sleeps 24 h) | house | 2 | wait | S05 |
 
 ## 17. Assistant actions
 

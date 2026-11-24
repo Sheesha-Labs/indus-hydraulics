@@ -6,7 +6,11 @@ import {
   folderFilter,
   gmailThreadUrl,
   MAIL_TYPES,
+  needsTranslation,
   rowType,
+  shortDate,
+  splitQuoted,
+  type StoredMailFlags,
   threadTime,
   type MailClassValue,
   type MailFolderKey,
@@ -17,6 +21,7 @@ import type { AttachmentChipProps, MailRole, SanitizedHtml } from '@indus/ops-ui
 import type { OpsUser } from '../lib/access-core'
 import { readCounters } from '../server/assistant/live-counter'
 import { readSanitizedBody, textToSanitizedHtml } from '../server/mail/body'
+import { LANGUAGE_NAME } from '../server/mail/translate'
 import { decodeCursor, keysetWhere, PAGE_SIZE, takePage } from './pagination'
 
 /**
@@ -258,6 +263,22 @@ export interface AssistantActionView {
   state: string
   surface: string
   actionKey: string
+  options: Array<{ key: string; label: string }>
+}
+
+/** Boards 96 and 97: what is not normal about the latest message (S05-T07). */
+export interface MailStateView {
+  ooo: { until: string | null; alternate: { name: string; email: string } | null } | null
+  bounce: { hard: boolean; recipient: string | null; diagnostic: string | null } | null
+  phishing: { reasons: string[] } | null
+  protectedFiles: string[]
+  /** Stored, never opened (over the zip guard). */
+  oversized: Array<{ name: string; note: string }>
+  unreadable: string[]
+  /** Set when the message is mostly in another script: the cached English, if made. */
+  translation: { english: string | null; languageName: string | null } | null
+  /** No body stored yet (a re-fetch is queued). */
+  bodyPending: boolean
 }
 
 export interface ThreadView {
@@ -276,17 +297,25 @@ export interface ThreadView {
     from: { name: string | null; address: string }
     rfcMessageId: string | null
     referencesRfcIds: string[]
+    state: MailStateView
   }
   records: Array<{ subjectType: string; subjectId: string; label: string }>
   messages: ThreadMessageView[]
   earlier: number
+  /** Board 97 (6): the hidden messages sit after the first one shown. */
+  collapsedAfterFirst: boolean
   crossMailbox: string | null
+  /** Board 97 (8): the mailboxes this conversation came to. */
+  mailboxesInThread: string[]
+  total: number
   actions: AssistantActionView[]
   levelWord: string
 }
 
 /** Messages shown with their body; earlier ones collapse to "N earlier messages". */
 export const SHOWN_MESSAGES = 6
+/** "show" on a huge thread: the latest this many, each body read from storage. */
+export const ALL_MESSAGES = 50
 
 const FILE_TYPE = (mime: string | null, name: string): AttachmentChipProps['fileType'] => {
   const n = name.toLowerCase()
@@ -327,8 +356,21 @@ const MESSAGE_SELECT = {
   mailbox: { select: { address: true } },
   bodyHtmlFile: { select: { bucket: true, path: true } },
   attachments: {
-    select: { id: true, filename: true, mimeType: true, sizeBytes: true, pageCount: true, fileId: true, extractionStatus: true },
+    select: {
+      id: true,
+      filename: true,
+      mimeType: true,
+      sizeBytes: true,
+      pageCount: true,
+      fileId: true,
+      extractionStatus: true,
+      extractionNote: true,
+    },
   },
+  flags: true,
+  outOfOfficeUntil: true,
+  language: true,
+  summaryEn: true,
   links: {
     where: { removedAt: null },
     select: { subjectType: true, subjectId: true, enquiry: { select: { ref: true } } },
@@ -337,13 +379,90 @@ const MESSAGE_SELECT = {
 
 type MessageRow = Prisma.MailMessageGetPayload<{ select: typeof MESSAGE_SELECT }>
 
+export function mailState(m: MessageRow): MailStateView {
+  const flags = (m.flags as (StoredMailFlags & {
+    ooo?: { returnDate: string | null; alternate: { name: string; email: string } | null }
+    phishingCleared?: unknown
+  }) | null) ?? {}
+  const cls = m.classification
+  const fresh = splitQuoted(m.bodyText ?? '').fresh
+  const until = m.outOfOfficeUntil?.toISOString().slice(0, 10) ?? flags.ooo?.returnDate ?? null
+  return {
+    ooo:
+      cls === 'auto_reply' && flags.autoReply?.kind === 'out_of_office'
+        ? { until: until ? shortDate(until) : null, alternate: flags.ooo?.alternate ?? null }
+        : null,
+    bounce:
+      cls === 'bounce' && flags.bounce
+        ? {
+            hard: flags.bounce.hard,
+            recipient: flags.bounce.finalRecipient ?? null,
+            diagnostic: flags.bounce.diagnostic ?? null,
+          }
+        : null,
+    phishing:
+      cls === 'phishing' ? { reasons: (flags.phishing?.reasons ?? []).map((r) => r.text) } : null,
+    protectedFiles: m.attachments
+      .filter((a) => a.extractionStatus === 'password_protected')
+      .map((a) => a.filename),
+    oversized: m.attachments
+      .filter((a) => a.extractionStatus === 'unsupported' && a.extractionNote)
+      .map((a) => ({ name: a.filename, note: 'Stored, not opened: too large to read safely' })),
+    unreadable: m.attachments
+      .filter((a) => a.extractionStatus === 'unreadable' || a.extractionStatus === 'failed')
+      .map((a) => a.filename),
+    translation: needsTranslation(fresh)
+      ? {
+          english: m.summaryEn,
+          languageName: m.language ? (LANGUAGE_NAME[m.language] ?? m.language) : null,
+        }
+      : null,
+    bodyPending: !m.bodyHtmlFile && !m.bodyText,
+  }
+}
+
+/** Board 96: "Also not business today · 27 — 19 newsletters · 6 cold sales pitches · 2 phishing". */
+export interface NotBusinessToday {
+  total: number
+  newsletters: number
+  pitches: number
+  phishing: number
+}
+
+export async function notBusinessToday(now = new Date()): Promise<NotBusinessToday> {
+  const rows = await opsDb.mailMessage.findMany({
+    where: {
+      direction: 'inbound',
+      origin: 'live',
+      receivedAt: { gte: startOfDubaiDay(now) },
+      classification: { in: ['not_business', 'phishing'] },
+    },
+    select: { classification: true, flags: true },
+    take: 2_000,
+  })
+  let newsletters = 0
+  let pitches = 0
+  let phishing = 0
+  for (const r of rows) {
+    if (r.classification === 'phishing') phishing += 1
+    else if ((r.flags as StoredMailFlags | null)?.bulk) newsletters += 1
+    else pitches += 1
+  }
+  return { total: rows.length, newsletters, pitches, phishing }
+}
+
 /**
  * Three reads: the thread with its messages (one query with includes), then in parallel the matching
  * messages in the OTHER mailbox (by Message-ID / References: a client's mail forwarded to the supplier side is
  * one conversation) and the Assistant's actions on all of them. Bodies come from storage, at most
  * SHOWN_MESSAGES of them.
  */
-export async function getThread(threadId: string, user: OpsUser, now = new Date()): Promise<ThreadView | null> {
+export async function getThread(
+  threadId: string,
+  user: OpsUser,
+  now = new Date(),
+  opts: { all?: boolean } = {}
+): Promise<ThreadView | null> {
   void user
   const thread = await opsDb.mailThread.findUnique({
     where: { id: threadId },
@@ -374,14 +493,31 @@ export async function getThread(threadId: string, user: OpsUser, now = new Date(
       where: { subjectType: 'mail_message', subjectId: { in: own.map((m) => m.id) } },
       orderBy: { createdAt: 'asc' },
       take: 50,
-      select: { id: true, ref: true, createdAt: true, headline: true, state: true, surface: true, actionKey: true },
+      select: {
+        id: true,
+        ref: true,
+        createdAt: true,
+        headline: true,
+        state: true,
+        surface: true,
+        actionKey: true,
+        options: true,
+      },
     }),
   ])
 
   const merged = [...own, ...other]
     .filter((m, i, all) => all.findIndex((x) => x.id === m.id) === i)
     .sort((a, b) => (a.internalDate ?? a.sentAt).getTime() - (b.internalDate ?? b.sentAt).getTime())
-  const shown = merged.slice(-SHOWN_MESSAGES)
+  // A long conversation keeps its first message (what it is about) and the latest ones; "show" lists more.
+  const limit = opts.all ? ALL_MESSAGES : SHOWN_MESSAGES
+  const collapsedAfterFirst = !opts.all && merged.length > limit
+  const shown =
+    merged.length <= limit
+      ? merged
+      : collapsedAfterFirst
+        ? [merged[0]!, ...merged.slice(-(limit - 1))]
+        : merged.slice(-limit)
   const bodies = await Promise.all(
     shown.map(async (m) => (await readSanitizedBody(m.bodyHtmlFile)) ?? textToSanitizedHtml(m.bodyText ?? ''))
   )
@@ -417,10 +553,14 @@ export async function getThread(threadId: string, user: OpsUser, now = new Date(
       from: { name: latestInbound.fromName, address: latestInbound.fromAddress },
       rfcMessageId: latestInbound.rfcMessageId,
       referencesRfcIds: latestInbound.referencesRfcIds,
+      state: mailState(latestInbound),
     },
     records,
     earlier: merged.length - shown.length,
+    collapsedAfterFirst,
     crossMailbox,
+    mailboxesInThread: mailboxes,
+    total: merged.length,
     messages: shown.map((m, i) => ({
       id: m.id,
       from: { name: m.fromName?.trim() || m.fromAddress, address: m.fromAddress },
@@ -448,6 +588,10 @@ export async function getThread(threadId: string, user: OpsUser, now = new Date(
       state: a.state,
       surface: a.surface,
       actionKey: a.actionKey,
+      options: ((a.options as Array<{ key: string; label: string }> | null) ?? []).map((o) => ({
+        key: o.key,
+        label: o.label,
+      })),
     })),
     levelWord: 'Does it quietly',
   }

@@ -4,7 +4,13 @@ import { T3Mail } from '@indus/ops-ui/templates'
 import type { MailFolderKey } from '@indus/ops-core'
 import { headers } from 'next/headers'
 import { notFound } from 'next/navigation'
-import { folderCounts, getThread, listThreads, mailboxAddresses } from '../../data/mail'
+import {
+  folderCounts,
+  getThread,
+  listThreads,
+  mailboxAddresses,
+  notBusinessToday,
+} from '../../data/mail'
 import type { OpsUser } from '../../lib/access-core'
 import { mailQuery, type MailSearch } from '../../lib/mail-params'
 import { resolveSendEnvelope } from '../../server/mail-send/envelope'
@@ -52,7 +58,7 @@ export default async function MailScreen({
     folderCounts(),
     listThreads(folder, search),
     mailboxAddresses(),
-    threadId ? getThread(threadId, user) : Promise.resolve(null),
+    threadId ? getThread(threadId, user, undefined, { all: search.all }) : Promise.resolve(null),
     headers().then((h) => h.get('x-nonce') ?? undefined),
   ])
   if (threadId && !thread) notFound()
@@ -61,7 +67,11 @@ export default async function MailScreen({
   if (thread) {
     const mailbox = thread.mailbox.role === 'client' ? 'sales' : 'purchase'
     const permission = replyPermission(user, thread.mailbox.role)
-    const envelope = await resolveSendEnvelope('other', { mailboxId: thread.mailbox.id })
+    const cls = thread.latest.classification
+    const [envelope, notBusiness] = await Promise.all([
+      resolveSendEnvelope('other', { mailboxId: thread.mailbox.id }),
+      cls === 'not_business' || cls === 'phishing' ? notBusinessToday() : Promise.resolve(null),
+    ])
     const env = envelope.ok ? envelope.envelope : null
     const line = [
       `From ${thread.mailbox.address}`,
@@ -73,6 +83,10 @@ export default async function MailScreen({
         <ThreadReading
           thread={thread}
           nonce={nonce}
+          notBusiness={notBusiness}
+          allHref={`/mail/${folder}/${thread.id}${mailQuery(search, { cursor: search.cursor })}${
+            mailQuery(search, { cursor: search.cursor }) ? '&' : '?'
+          }all=1`}
           reply={{
             mailbox,
             mailboxes: { sales: mailboxes.sales, purchase: mailboxes.purchase },
@@ -104,7 +118,17 @@ export default async function MailScreen({
       <T3Mail
         header={<PageHeader crumb="Workspace" title="Mail" meta={meta} />}
         folders={<MailRail folder={folder} search={search} counts={counts} mailboxes={mailboxes} />}
-        list={<ThreadList folder={folder} search={search} page={page} selectedId={thread?.id} />}
+        list={
+          <ThreadList
+            folder={folder}
+            search={search}
+            page={page}
+            selectedId={thread?.id}
+            caughtUp={
+              counts.status.needsYou === 0 && counts.unsure === 0 ? { today: counts.today } : null
+            }
+          />
+        }
         reading={reading}
       />
       {thread && search.link ? (
