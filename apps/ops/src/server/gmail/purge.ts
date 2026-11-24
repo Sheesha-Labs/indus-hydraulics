@@ -80,6 +80,8 @@ export async function purgeBatch(
       ),
     ]
     await db.$transaction([
+      // S05-T04: the quotes models cited from these messages go with them.
+      db.sourceSpan.deleteMany({ where: { sourceKind: 'email', sourceId: { in: ids } } }),
       db.mailLink.deleteMany({ where: { messageId: { in: ids } } }),
       db.mailAttachment.deleteMany({ where: { messageId: { in: ids } } }),
       db.mailMessage.deleteMany({ where: { id: { in: ids } } }),

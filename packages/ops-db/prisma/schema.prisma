@@ -6100,3 +6100,26 @@ model PreferenceSignal {
   @@map("preference_signal")
   @@schema("ops")
 }
+
+/// S05-T04: a verbatim quote a model cited, resolved to its place in the source (ADR-12 Why?).
+model SourceSpan {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  /// email | pdf | sheet | image | docx
+  sourceKind String
+  sourceId   String   @db.Uuid
+  textHash   String?
+  page       Int?
+  sheet      String?
+  cellRef    String?
+  charStart  Int?
+  charEnd    Int?
+  bbox       Json?
+  quote      String
+  /// exact | fuzzy | page_only | unresolved
+  resolved   String
+  createdAt  DateTime @default(now()) @db.Timestamptz(3)
+
+  @@index([sourceKind, sourceId])
+  @@map("source_span")
+  @@schema("ops")
+}
