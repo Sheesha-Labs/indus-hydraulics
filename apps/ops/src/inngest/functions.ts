@@ -1,4 +1,5 @@
 import { assistantBacklog } from './assistant/backlog'
+import { clocksTick } from './clocks/tick'
 import { assistantOnResumed } from './assistant/on-resumed'
 import { assistantRun } from './assistant/run'
 import { gmailBackfill } from './gmail/backfill'
@@ -33,6 +34,7 @@ export const opsFunctions = [
   assistantRun,
   assistantOnResumed,
   assistantBacklog,
+  clocksTick,
   mailRoute,
   mailBounceSoft,
   gmailLabelsApply,

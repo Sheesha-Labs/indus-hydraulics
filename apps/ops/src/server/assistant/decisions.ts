@@ -685,7 +685,15 @@ export async function settleActionForOutbound(
     where: { id: outboundId },
     select: { actionId: true, status: true, failureReason: true },
   })
-  if (!o?.actionId) return null
+  if (!o) return null
+  if (!o.actionId) {
+    // A send with no card of its own (an Owner's reply, a test send) that went wrong gets one (S06-T03).
+    if (o.status === 'failed' || o.status === 'unknown') {
+      const { createOutboundAttention } = await import('./attention')
+      await createOutboundAttention(outboundId, now)
+    }
+    return null
+  }
   return opsDb.$transaction(async (tx) => {
     await setActor(tx, { kind: 'system' })
     const a = await tx.assistantAction.findUnique({
@@ -702,14 +710,15 @@ export async function settleActionForOutbound(
       return 'done'
     }
     if (o.status === 'failed') {
-      await tx.assistantAction.update({ where: { id: o.actionId! }, data: { state: 'running' } })
+      if (a.state === 'queued')
+        await tx.assistantAction.update({ where: { id: o.actionId! }, data: { state: 'running' } })
       await tx.assistantAction.update({
         where: { id: o.actionId! },
         data: { state: 'failed', failureReason: o.failureReason ?? 'The send failed' },
       })
       return 'failed'
     }
-    if (o.status === 'superseded') {
+    if (o.status === 'superseded' && a.state === 'queued') {
       await tx.assistantAction.update({
         where: { id: o.actionId! },
         data: { state: 'cancelled', staleReason: 'Stopped before sending: the record changed.' },

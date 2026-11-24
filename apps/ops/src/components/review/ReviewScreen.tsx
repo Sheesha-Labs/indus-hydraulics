@@ -9,6 +9,9 @@ import Link from 'next/link'
 import { Lock } from 'lucide-react'
 import type { ReviewCard, ReviewQueue, WaitingItem } from '../../data/review'
 import { reviewQuery, type ReviewSearch } from '../../lib/review-params'
+import { Banner } from '@indus/ops-ui/status'
+import ResumeBannerAction from '../shell/ResumeBannerAction'
+import AttentionRow from './AttentionRow'
 import ReceiptRow from './ReceiptRow'
 import ReviewCardClient from './ReviewCardClient'
 import ReviewKeys from './ReviewKeys'
@@ -35,6 +38,8 @@ export default function ReviewScreen({
   done,
   waiting,
   now,
+  isOwner,
+  paused,
 }: {
   queue: ReviewQueue
   search: ReviewSearch
@@ -42,6 +47,9 @@ export default function ReviewScreen({
   waiting: Array<{ title: string; items: WaitingItem[] }>
   /** The request time, from the page. */
   now: Date
+  isOwner: boolean
+  /** Board 110: the Assistant is paused (cards can still be approved; sends queue). */
+  paused: { at: string; byYou: boolean } | null
 }) {
   const keep = { type: search.type, record: search.record, group: search.group, sort: search.sort }
   const href = (over: Partial<ReviewSearch>) => `/review${reviewQuery(keep, over)}`
@@ -118,13 +126,25 @@ export default function ReviewScreen({
     const expanded = card.ref === queue.expandedRef
     if (expanded) {
       return (
-        <ReviewCardClient
-          key={card.id}
-          card={card}
-          editing={search.edit}
-          editHref={href({ card: card.ref, edit: true })}
-          closeEditHref={href({ card: card.ref, edit: false })}
-        />
+        <div key={card.id} className="flex flex-col gap-2">
+          {card.supersedes ? (
+            <p className="text-io-ink-3 text-[12.5px]" data-part="superseded">
+              <span className="line-through">{card.supersedes.headline}</span> · Superseded at{' '}
+              {card.supersedes.at}: {card.supersedes.reason}
+            </p>
+          ) : null}
+          {card.backFromLater ? (
+            <p className="text-io-ink-3 text-[12.5px]" data-part="back-from-later">
+              Back from Later ({card.backFromLater})
+            </p>
+          ) : null}
+          <ReviewCardClient
+            card={card}
+            editing={search.edit}
+            editHref={href({ card: card.ref, edit: true })}
+            closeEditHref={href({ card: card.ref, edit: false })}
+          />
+        </div>
       )
     }
     return (
@@ -164,14 +184,48 @@ export default function ReviewScreen({
     )
   }
 
+  // Board 110 "40+ waiting": a summary by family first; a chip (or Open) shows that family's cards.
+  const summaryFirst = queue.total >= 40 && !search.type && !search.card && !search.record
   const stream =
     queue.total === 0 ? (
       <EmptyState
         mark="RV"
-        title="Nothing waits for you"
-        text="The Assistant brings every proposal here: approve, edit, reject or move it to later."
+        title="Nothing waiting on you"
+        text={`The Assistant did ${done.total} ${done.total === 1 ? 'thing' : 'things'} today.`}
+        actions={
+          <ButtonLink href="/assistant/log?day=today" variant="secondary" size="sm">
+            See what was done
+          </ButtonLink>
+        }
         align="left"
       />
+    ) : summaryFirst ? (
+      <section
+        aria-label="Waiting, by kind"
+        className="bg-io-card border-io-line rounded-io-card flex flex-col border"
+      >
+        <h2 className="border-io-line border-b px-4 py-3 text-[14px] font-medium">
+          {queue.total} waiting · oldest {queue.oldest}
+        </h2>
+        <ul>
+          {REVIEW_FAMILIES.filter((f) => queue.counts[f] > 0).map((f) => (
+            <li
+              key={f}
+              className="border-io-line flex items-center gap-3 border-b px-4 py-2.5 text-[13px] last:border-b-0"
+            >
+              <span className="min-w-0 flex-1">
+                {FAMILY_LABEL[f]} · <span className="tabular-nums">{queue.counts[f]}</span>
+                {f === 'quotations' ? (
+                  <span className="text-io-ink-3"> · client prices · one by one</span>
+                ) : null}
+              </span>
+              <ButtonLink href={href({ type: f, card: undefined })} size="sm" variant="secondary">
+                Open
+              </ButtonLink>
+            </li>
+          ))}
+        </ul>
+      </section>
     ) : (
       <ReviewKeys
         hrefs={cards.map((c) => [c.ref, href({ card: c.ref })])}
@@ -209,6 +263,20 @@ export default function ReviewScreen({
         header={header}
         detail={
           <>
+            {paused ? (
+              <Banner
+                tone="warn"
+                icon="warn"
+                title={`Paused by ${paused.byYou ? 'you' : 'the Owner'} at ${paused.at}.`}
+                {...(isOwner ? { actions: <ResumeBannerAction /> } : {})}
+              >
+                Cards can still be approved; sends queue until{' '}
+                {isOwner ? 'you resume' : 'it resumes'}.
+              </Banner>
+            ) : null}
+            {queue.attention.map((a) => (
+              <AttentionRow key={a.actionId} item={a} isOwner={isOwner} />
+            ))}
             {queue.receipt ? <ReceiptRow receipt={queue.receipt} /> : null}
             {stream}
           </>

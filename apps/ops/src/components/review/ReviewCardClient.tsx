@@ -40,7 +40,8 @@ export default function ReviewCardClient({
     () =>
       async <T extends { success: boolean }>(p: Promise<T>): Promise<T> => {
         const r = await p
-        if (r.success) router.refresh()
+        // On success the card leaves; on 'stale' or 'changed' the server has the new state to show (board 110).
+        router.refresh()
         return r
       },
     [router]

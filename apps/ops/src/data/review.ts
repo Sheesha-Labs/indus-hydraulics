@@ -31,6 +31,21 @@ export interface ReviewCard extends ProposalCardData {
   /** The compact row's second line. */
   sub: string
   age: string
+  /** Board 110: this card replaced an older one (redraft, or a reply superseding a chaser). */
+  supersedes: { headline: string; reason: string; at: string } | null
+  /** Board 110: the card came back from Later. */
+  backFromLater: string | null
+}
+
+/** Board 110: an approved send that needs a person, or an outbound_attention card. */
+export interface AttentionItem {
+  actionId: string
+  ref: string
+  headline: string
+  kind: 'failed' | 'unknown' | 'paused' | 'waiting_mailbox' | 'held'
+  reason: string
+  mailbox: string | null
+  verbs: Array<'retry' | 'copy' | 'mark_sent' | 'fix_mailbox' | 'cancel'>
 }
 
 export interface ReviewGroup {
@@ -51,6 +66,8 @@ export interface ReviewReceipt {
 }
 
 export interface ReviewQueue {
+  /** Board 110: sends that went wrong or wait, above the cards. */
+  attention: AttentionItem[]
   total: number
   oldest: string | null
   counts: Record<ReviewFamily | 'all', number>
@@ -139,6 +156,25 @@ export async function listReviewQueue(
   const byThread = new Map<string, (typeof mail)[number]>()
   for (const m of mail) if (!byThread.has(m.threadId)) byThread.set(m.threadId, m)
 
+  // The cards these replaced (redrafts), for "Superseded at 11:40: <reason>".
+  const olderIds = rows.map((r) => r.redraftOfId).filter((x): x is string => !!x)
+  const older = new Map(
+    (olderIds.length
+      ? await opsDb.assistantAction.findMany({
+          where: { id: { in: olderIds } },
+          select: { id: true, headline: true, staleReason: true, staleAt: true, decidedAt: true },
+        })
+      : []
+    ).map((o) => [
+      o.id,
+      {
+        headline: o.headline,
+        reason: o.staleReason ?? 'Redrafted by a person',
+        at: clock(o.staleAt ?? o.decidedAt ?? now),
+      },
+    ])
+  )
+
   const groupOf = (r: Row): Omit<ReviewGroup, 'cards'> => {
     if (r.enquiry) {
       return {
@@ -166,7 +202,8 @@ export async function listReviewQueue(
     return { key: 'other', label: 'Other', sub: null, href: null }
   }
 
-  const all: ReviewCard[] = rows.map((r) => {
+  const attentionCards = rows.filter((r) => r.actionKey === 'outbound_attention')
+  const all: ReviewCard[] = rows.filter((r) => r.actionKey !== 'outbound_attention').map((r) => {
     const card = toProposalCardData(r, user, now)
     const family = familyOf(r.actionKey)
     const g = groupOf(r)
@@ -179,6 +216,8 @@ export async function listReviewQueue(
       groupKey: g.key,
       sub: firstLine(card.why[0]?.text ?? card.onApproveText ?? undefined),
       age: ageText(r.createdAt.getTime(), now.getTime()),
+      supersedes: r.redraftOfId ? (older.get(r.redraftOfId) ?? null) : null,
+      backFromLater: r.laterUntil && r.laterUntil.getTime() <= now.getTime() ? clock(r.laterUntil) : null,
     }
   })
 
@@ -219,6 +258,21 @@ export async function listReviewQueue(
     (search.card && sorted.some((c) => c.ref === search.card) ? search.card : sorted[0]?.ref) ?? null
 
   return {
+    attention: [
+      ...attentionCards.map((r): AttentionItem => {
+        const p = (r.preview as { failure?: string; actions?: AttentionItem['verbs'] } | null) ?? {}
+        return {
+          actionId: r.id,
+          ref: r.ref,
+          headline: r.headline,
+          kind: r.headline.startsWith('Check') ? 'unknown' : 'failed',
+          reason: p.failure ?? 'The send needs you.',
+          mailbox: null,
+          verbs: p.actions ?? ['retry', 'copy', 'mark_sent'],
+        }
+      }),
+      ...(await attentionFromSends(now)),
+    ],
     total: all.length,
     oldest: rows[0] ? ageText(rows[0].createdAt.getTime(), now.getTime()) : null,
     counts,
@@ -227,6 +281,77 @@ export async function listReviewQueue(
     receipt: await lastReceipt(user, now),
     records,
   }
+}
+
+function clock(d: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Dubai',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }).format(d)
+}
+
+/**
+ * Board 110's send states, from the action and its latest outbound row: failed after approval (Retry, Copy
+ * text, Mark as sent, Fix mailbox), outcome unknown (Mark as sent, Resend), held while paused (sends on
+ * resume · Cancel), waiting for a mailbox (Fix mailbox).
+ */
+async function attentionFromSends(now: Date): Promise<AttentionItem[]> {
+  const rows = await opsDb.assistantAction.findMany({
+    where: {
+      surface: 'review',
+      OR: [
+        { state: 'failed', decidedAt: { not: null, gte: new Date(now.getTime() - 14 * 86_400_000) } },
+        { state: { in: ['queued', 'running'] }, outbound: { some: { status: { in: ['held', 'waiting_for_mailbox', 'unknown', 'failed'] } } } },
+      ],
+    },
+    orderBy: { decidedAt: 'desc' },
+    take: 50,
+    select: {
+      id: true,
+      ref: true,
+      headline: true,
+      state: true,
+      failureReason: true,
+      outbound: {
+        orderBy: { createdAt: 'desc' },
+        take: 1,
+        select: { status: true, holdReason: true, failureReason: true, mailbox: { select: { address: true } } },
+      },
+    },
+  })
+  return rows.flatMap((r): AttentionItem[] => {
+    const o = r.outbound[0]
+    const mailbox = o?.mailbox?.address ?? null
+    const local = mailbox ? `${mailbox.split('@')[0]}@` : 'a mailbox'
+    const base = { actionId: r.id, ref: r.ref, headline: r.headline, mailbox }
+    if (o?.status === 'unknown')
+      return [
+        {
+          ...base,
+          kind: 'unknown',
+          reason: "We can't tell whether this was sent. Check Sent in Gmail, then Resend or Mark as sent.",
+          verbs: ['mark_sent', 'retry', 'copy'],
+        },
+      ]
+    if (r.state === 'failed' || o?.status === 'failed')
+      return [
+        {
+          ...base,
+          kind: 'failed',
+          reason: o?.failureReason ?? r.failureReason ?? 'The send failed.',
+          verbs: ['retry', 'fix_mailbox', 'copy', 'mark_sent'],
+        },
+      ]
+    if (o?.status === 'held' && o.holdReason === 'pause')
+      return [{ ...base, kind: 'paused', reason: 'Approved · queued · sends on resume', verbs: ['cancel'] }]
+    if (o?.status === 'waiting_for_mailbox')
+      return [{ ...base, kind: 'waiting_mailbox', reason: `Waiting for ${local}`, verbs: ['fix_mailbox', 'cancel'] }]
+    if (o?.status === 'held')
+      return [{ ...base, kind: 'held', reason: `Held: ${o.holdReason ?? 'waiting'}`, verbs: ['cancel'] }]
+    return []
+  })
 }
 
 /** The person's last approval while its undo window is open (the receipt row with Undo). */
