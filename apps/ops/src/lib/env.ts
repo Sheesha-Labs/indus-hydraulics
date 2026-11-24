@@ -53,6 +53,10 @@ const schema = z.object({
   // S03-T01: system mail (Resend, C26). Optional everywhere: without a key every system email is
   // recorded as failed and nothing is sent, so production boots before the key exists.
   RESEND_OPS_API_KEY: z.string().min(1).optional(),
+  // S05-T01: the Assistant's Messages API key (ADR-08), from the Anthropic Console workspace
+  // "indus-operations" with its own spend limit. Optional so production boots before the key exists: without
+  // it every model call fails as "not configured" and /api/health says so. Preview gets none.
+  OPS_ANTHROPIC_API_KEY: z.string().min(1).optional(),
   // Comma list of internal addresses that may receive system mail outside production (ADR-07).
   OPS_TEST_RECIPIENTS: z.string().min(1).optional(),
   // Test only, refused in production: a directory where each system email is also written as JSON.

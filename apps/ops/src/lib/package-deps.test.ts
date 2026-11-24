@@ -25,7 +25,14 @@ const internal = (m: Manifest) =>
     .sort()
 
 const ALLOWED: Record<string, string[]> = {
-  'apps/ops': ['@indus/intake', '@indus/ops-core', '@indus/ops-db', '@indus/ops-ui'],
+  // apps/ops/CLAUDE.md §3.1: the app may also import @indus/ops-ai (S05) and @indus/ops-pdf (S13).
+  'apps/ops': [
+    '@indus/intake',
+    '@indus/ops-ai',
+    '@indus/ops-core',
+    '@indus/ops-db',
+    '@indus/ops-ui',
+  ],
   'packages/ops-core': [],
   'packages/ops-db': [],
   'packages/ops-ai': ['@indus/ops-core'],

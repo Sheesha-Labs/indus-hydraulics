@@ -5609,6 +5609,7 @@ model AssistantAction {
 
   events             AssistantActionEvent[]
   aiCalls            AiCall[]
+  aiReservations     AiReservation[]
   outbound           OutboundEmail[]
   preferenceEvidence PreferenceEvidence[]
 
@@ -5640,22 +5641,30 @@ model AssistantActionEvent {
 
 /// One row per model call; the budget and Cost & limits (101) read this.
 model AiCall {
-  id               String           @id @default(uuid(7)) @db.Uuid
-  actionId         String?          @db.Uuid
-  action           AssistantAction? @relation(fields: [actionId], references: [id])
-  enquiryId        String?          @db.Uuid
-  purpose          AiPurpose
-  model            String
-  inputTokens      Int
-  outputTokens     Int
-  cacheReadTokens  Int              @default(0)
-  cacheWriteTokens Int              @default(0)
-  webSearches      Int              @default(0)
-  costUsd          Decimal          @db.Decimal(12, 6)
-  latencyMs        Int?
-  ok               Boolean          @default(true)
-  error            String?
-  at               DateTime         @default(now()) @db.Timestamptz(3)
+  id                 String           @id @default(uuid(7)) @db.Uuid
+  actionId           String?          @db.Uuid
+  action             AssistantAction? @relation(fields: [actionId], references: [id])
+  enquiryId          String?          @db.Uuid
+  purpose            AiPurpose
+  model              String
+  inputTokens        Int
+  outputTokens       Int
+  cacheReadTokens    Int              @default(0)
+  cacheWriteTokens   Int              @default(0)
+  webSearches        Int              @default(0)
+  costUsd            Decimal          @db.Decimal(12, 6)
+  latencyMs          Int?
+  ok                 Boolean          @default(true)
+  error              String?
+  /// classify-mail@1 (S05-T01)
+  promptVersion      String?
+  /// end_turn | max_tokens | refusal | … (checked before content is read)
+  stopReason         String?
+  /// low | medium | high | xhigh | max
+  effort             String?
+  cacheWrite1hTokens Int              @default(0)
+  reservationId      String?          @db.Uuid
+  at                 DateTime         @default(now()) @db.Timestamptz(3)
 
   @@index([at])
   @@index([enquiryId, purpose])
@@ -5971,5 +5980,59 @@ model RateLimitCounter {
   @@id([key, windowStart])
   @@index([windowStart])
   @@map("rate_limit_counter")
+  @@schema("ops")
+}
+
+/// S05-T01: USD per million tokens (per thousand web searches), effective from a date. Data, not code.
+model AiModelPrice {
+  model            String
+  effectiveFrom    DateTime @db.Date
+  inputPerM        Decimal  @db.Decimal(12, 4)
+  outputPerM       Decimal  @db.Decimal(12, 4)
+  cacheReadPerM    Decimal  @db.Decimal(12, 4)
+  cacheWrite5mPerM Decimal  @db.Decimal(12, 4)
+  cacheWrite1hPerM Decimal  @db.Decimal(12, 4)
+  webSearchPerK    Decimal  @default(10) @db.Decimal(12, 4)
+  signoffStatus    String   @default("awaiting")
+  createdAt        DateTime @default(now()) @db.Timestamptz(3)
+
+  @@id([model, effectiveFrom])
+  @@map("ai_model_price")
+  @@schema("ops")
+}
+
+/// S05-T01: one row per Asia/Dubai calendar month (its first day). Reserved and settled only through
+/// ops.ai_budget_reserve / ops.ai_budget_settle.
+model AiBudget {
+  month         DateTime        @id @db.Date
+  limitUsd      Decimal         @db.Decimal(12, 4)
+  /// warn_pause_research | hard_stop | warn_only
+  mode          String          @default("warn_pause_research")
+  spentUsd      Decimal         @default(0) @db.Decimal(12, 6)
+  reservedUsd   Decimal         @default(0) @db.Decimal(12, 6)
+  notified80At  DateTime?       @db.Timestamptz(3)
+  notified100At DateTime?       @db.Timestamptz(3)
+  signoffStatus String          @default("awaiting")
+  updatedAt     DateTime        @default(now()) @db.Timestamptz(3)
+  reservations  AiReservation[]
+
+  @@map("ai_budget")
+  @@schema("ops")
+}
+
+model AiReservation {
+  id        String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  month     DateTime         @db.Date
+  budget    AiBudget         @relation(fields: [month], references: [month], onDelete: Restrict, map: "ai_reservation_month_fkey")
+  purpose   String
+  estUsd    Decimal          @db.Decimal(12, 6)
+  actionId  String?          @db.Uuid
+  action    AssistantAction? @relation(fields: [actionId], references: [id], onDelete: SetNull, map: "ai_reservation_action_fkey")
+  createdAt DateTime         @default(now()) @db.Timestamptz(3)
+  settledAt DateTime?        @db.Timestamptz(3)
+  actualUsd Decimal?         @db.Decimal(12, 6)
+
+  @@index([month])
+  @@map("ai_reservation")
   @@schema("ops")
 }

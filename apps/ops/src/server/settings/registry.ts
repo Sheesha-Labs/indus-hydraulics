@@ -172,7 +172,14 @@ const landedDefaults = z.strictObject({
 
 const assistantMode = z.strictObject({ mode: z.enum(['careful', 'balanced', 'hands_off']) })
 
-const assistantBudget = z.strictObject({ monthlyUsd: positiveAmount.max(100_000) })
+/**
+ * The monthly AI budget (C14). `mode` (S05-T01): `warn_pause_research` pauses only supplier research at the
+ * limit, `hard_stop` refuses every model call, `warn_only` never refuses. ops.ai_budget_reserve reads both.
+ */
+const assistantBudget = z.strictObject({
+  monthlyUsd: positiveAmount.max(100_000),
+  mode: z.enum(['warn_pause_research', 'hard_stop', 'warn_only']).default('warn_pause_research'),
+})
 
 const researchCap = z.strictObject({
   perEnquiryUsd: positiveAmount.max(1_000),

@@ -15,6 +15,7 @@
   "dependencies": {
     "@googleapis/gmail": "22.0.2",
     "@indus/intake": "workspace:^",
+    "@indus/ops-ai": "workspace:^",
     "@indus/ops-core": "workspace:^",
     "@indus/ops-db": "workspace:^",
     "@indus/ops-ui": "workspace:^",
