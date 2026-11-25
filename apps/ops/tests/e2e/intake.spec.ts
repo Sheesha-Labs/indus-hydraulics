@@ -90,12 +90,26 @@ test('board-14: upload, queue states, cancel, remove, review link', async ({
   expect(axe.violations.filter((v) => ['critical', 'serious'].includes(v.impact ?? ''))).toEqual([])
 
   await row('rfq-3-pages.pdf').getByRole('button', { name: 'Cancel' }).click()
+  await expect
+    .poll(
+      async () =>
+        (await db.intakeFile.findUniqueOrThrow({ where: { id: id('rfq-3-pages.pdf') } })).status,
+      { timeout: 60_000 }
+    )
+    .toBe('cancelled')
   await expect(row('rfq-3-pages.pdf').locator('[data-part="chip"]')).toHaveText('Cancelled', {
     timeout: 20_000,
   })
   await expect(row('rfq-3-pages.pdf').getByText('Stopped before any line was read')).toBeVisible()
   await row('encrypted.pdf').getByRole('button', { name: 'Remove' }).click()
-  await expect(row('encrypted.pdf')).toHaveCount(0, { timeout: 20_000 })
+  await expect
+    .poll(
+      async () =>
+        (await db.intakeFile.findUniqueOrThrow({ where: { id: id('encrypted.pdf') } })).status,
+      { timeout: 60_000 }
+    )
+    .toBe('removed')
+  await expect(row('encrypted.pdf')).toHaveCount(0, { timeout: 60_000 })
   await expect(page.getByText('Processing queue · 3 files')).toBeVisible()
   // Nothing was written to an enquiry.
   expect((await db.intakeBatch.findUniqueOrThrow({ where: { id: batchId } })).enquiryId).toBeNull()
