@@ -36,7 +36,13 @@ export function cameInSince(
 }
 
 export const ON_FIRE_ABOVE = 10
-export const NEEDS_YOU_SHOWN = 3
+/** Rows Needs you draws: five (board 178), three when on fire (board 182 "Top 3 first"). */
+export const NEEDS_YOU_SHOWN = 5
+export const NEEDS_YOU_SHOWN_ON_FIRE = 3
+
+export function needsYouShown(needsYou: number): number {
+  return needsYou > ON_FIRE_ABOVE ? NEEDS_YOU_SHOWN_ON_FIRE : NEEDS_YOU_SHOWN
+}
 
 /** Calm when nothing needs a person, on fire above ten (board 182), otherwise normal. */
 export function todayState(needsYou: number): 'calm' | 'normal' | 'on_fire' {

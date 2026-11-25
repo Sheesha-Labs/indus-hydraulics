@@ -1,12 +1,12 @@
 import { ButtonLink } from '@indus/ops-ui/controls'
 import { Card, NeedsRow } from '@indus/ops-ui/card'
 import type { TodayModel } from '../../data/today'
-import ReviewCardClient from '../review/ReviewCardClient'
+import NeedsCardRow from './NeedsCardRow'
 
 /**
- * Today's "Needs you" (S07-T06, board 178): up to three compact Review cards, expanded, with the four verbs
- * bound as on Review (Approve inline is optimistic with the server's undo countdown; Edit opens the card in
- * Review); "See all n" opens Review. Above ten it reads "Needs you · n. Top 3 first" with the rest grouped by
+ * Today's "Needs you" (S07-T06, board 178): up to three rows (tag, headline, context, verbs): a plain card
+ * approves inline with the server's undo countdown, anything locked or with a choice opens in Review;
+ * "See all n" opens Review. Above ten it reads "Needs you · n. Top 3 first" with the rest grouped by
  * record (board 182 "On fire"). The Helper's mail Unsure items are rows that open Mail.
  */
 export default function NeedsYou({ needs }: { needs: TodayModel['needs'] }) {
@@ -19,14 +19,7 @@ export default function NeedsYou({ needs }: { needs: TodayModel['needs'] }) {
     >
       <div data-part="needs-you" className="flex flex-col gap-2.5">
         {needs.cards.map((c) => (
-          <ReviewCardClient
-            key={c.id}
-            card={c}
-            compact
-            editing={false}
-            editHref={`/review?card=${c.ref}&edit=1`}
-            closeEditHref="/today"
-          />
+          <NeedsCardRow key={c.id} card={c} />
         ))}
         {needs.items.map((i) => (
           <NeedsRow

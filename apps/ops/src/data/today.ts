@@ -4,6 +4,7 @@ import {
   DEFAULT_COUNTRY_WEEKENDS,
   instantAt,
   NEEDS_YOU_SHOWN,
+  needsYouShown,
   todayGreeting,
   todayState,
   wallTime,
@@ -64,7 +65,7 @@ export interface TodayModel {
   state: 'calm' | 'normal' | 'on_fire'
   needs: {
     total: number
-    /** Up to three compact Review cards with their verbs (approve inline, undo toast). */
+    /** Up to five rows (three when on fire) with their verbs (approve inline, undo toast). */
     cards: ReviewCard[]
     /** Mail Unsure items (Helper), drawn as rows that open Mail. */
     items: NeedsItem[]
@@ -158,8 +159,9 @@ export async function getTodayModel(
     sections[p.section]!.push(...p.read(results[i] as never, ctx))
   })
 
-  const cards = top.filter((a) => a.surface === 'review').map((a) => reviewCardOf(a, user, now))
-  const items: NeedsItem[] = top
+  const shown = top.slice(0, needsYouShown(total))
+  const cards = shown.filter((a) => a.surface === 'review').map((a) => reviewCardOf(a, user, now))
+  const items: NeedsItem[] = shown
     .filter((a) => a.surface !== 'review')
     .map((a) => ({
       id: a.id,
@@ -180,7 +182,7 @@ export async function getTodayModel(
       cards,
       items,
       moreByRecord:
-        total > NEEDS_YOU_SHOWN
+        total > shown.length
           ? byRecord
               .map((g) => ({
                 label: g.enquiryId ? 'one enquiry' : 'no record',

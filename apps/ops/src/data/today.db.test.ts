@@ -1,5 +1,6 @@
 import { randomUUID } from 'node:crypto'
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
+import { needsYouShown } from '@indus/ops-core'
 import { opsDb } from '@indus/ops-db'
 import { localDatabaseUrl } from '../server/mail-send/testing/fixture'
 import {
@@ -96,10 +97,10 @@ describe.skipIf(!DB_URL)('Today · local database', () => {
     find.mockRestore()
   })
 
-  it('Owner: the oldest three cards, a quotation is Review only', async () => {
+  it('Owner: the oldest cards (five, three when on fire), a quotation is Review only', async () => {
     const m = await getTodayModel({ id: owner.id, name: owner.name, role: 'owner', canSeeMargins: true })
     expect(m.needs.total).toBeGreaterThanOrEqual(3)
-    expect(m.needs.cards).toHaveLength(3)
+    expect(m.needs.cards).toHaveLength(Math.min(m.needs.total, needsYouShown(m.needs.total)))
     // A quotation card is locked: the card says "Locked · you send" and Approve never runs from the keyboard.
     const quotation = m.needs.cards.find((c) => c.headline.includes(`send_quotation ${tag}`))
     if (quotation) expect(quotation.level.locked).toBe(true)

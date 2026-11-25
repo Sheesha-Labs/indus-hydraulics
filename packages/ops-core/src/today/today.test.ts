@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { cameInSince, todayGreeting, todayState } from './index'
+import { cameInSince, needsYouShown, todayGreeting, todayState } from './index'
 
 const dubai = (iso: string) => new Date(`${iso}+04:00`)
 const WEEKENDS = { default: [0, 6], byCountry: { AE: [0, 6] } }
@@ -30,5 +30,10 @@ describe('Today', () => {
     expect(todayState(0)).toBe('calm')
     expect(todayState(10)).toBe('normal')
     expect(todayState(11)).toBe('on_fire')
+  })
+  it('five rows, three when on fire', () => {
+    expect(needsYouShown(4)).toBe(5)
+    expect(needsYouShown(10)).toBe(5)
+    expect(needsYouShown(11)).toBe(3)
   })
 })
