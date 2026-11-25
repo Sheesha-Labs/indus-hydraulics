@@ -11,7 +11,10 @@ import { memoryStorage } from './testing/memory-storage'
  * cancelled file is skipped; nothing is written to an enquiry.
  */
 const DB_URL = localDatabaseUrl()
-vi.mock('@sentry/nextjs', () => ({ captureException: () => undefined, withScope: () => undefined }))
+vi.mock('@sentry/nextjs', () => ({
+  captureException: () => undefined,
+  withScope: () => undefined,
+}))
 const events: Array<{ name: string; data: Record<string, unknown> }> = []
 vi.mock('../../inngest/emit', () => ({
   emitEventOrThrow: async (e: { name: string; data: Record<string, unknown> }) =>
@@ -48,6 +51,7 @@ describe.skipIf(!DB_URL)('capture steps · local database', () => {
       .id
     batchId = (await createIntakeBatch(owner)).batchId
   })
+
   afterAll(async () => {
     const files = await opsDb.intakeFile.findMany({
       where: { batchId },

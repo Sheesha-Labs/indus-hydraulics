@@ -33,6 +33,7 @@ test('board-14: upload, queue states, cancel, remove, review link', async ({
   ).toBeVisible({ timeout: 90_000 })
   await expect(page.getByRole('heading', { name: 'Drop enquiry files here' })).toBeVisible()
   await expect(page.getByText('What happens next')).toBeVisible()
+  await expect(page.getByLabel('Choose enquiry files')).toHaveAttribute('data-ready', 'true')
 
   await page
     .getByLabel('Choose enquiry files')

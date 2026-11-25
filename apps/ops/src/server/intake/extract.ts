@@ -292,9 +292,7 @@ export async function runExtraction(args: {
   if (failed && !Array.isArray(failed))
     return { ok: false, reason: failed.reason, detail: failed.detail, costUsd: cost, callIds }
   const merged = mergeChunks(
-    results
-      .flatMap((x) => x as Extract<Read, unknown[]>)
-      .map((x) => ({ out: x.out, pages: x.pages }))
+    (results as Array<Extract<Read, unknown[]>>).flat().map((x) => ({ out: x.out, pages: x.pages }))
   )
   return {
     ok: true,

@@ -1,4 +1,11 @@
 import 'server-only'
+import {
+  fileSpanContexts,
+  type FileSpanContext,
+  type PageGeometry,
+  type SheetWindow,
+  type SpanRow,
+} from '../server/intake/span-view'
 import { cache } from 'react'
 import { opsDb, type $Enums } from '@indus/ops-db'
 import {
@@ -48,6 +55,12 @@ export interface WhySpan {
   changed: boolean
   /** A scanned page with no text layer: the page frame only. */
   pageOnly: boolean
+  /** S08: a PDF span's page, drawn with its box. */
+  page?: PageGeometry
+  /** S08: a sheet span's rows around the cited cell. */
+  sheet?: SheetWindow
+  /** S08: an image span's file. */
+  imageUrl?: string
 }
 
 export interface WhyHistoryRow {
@@ -107,7 +120,11 @@ const AREA: Record<string, string> = {
   ooo_facts: 'Mail',
 }
 
-const DAY = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', day: 'numeric', month: 'short' })
+const DAY = new Intl.DateTimeFormat('en-GB', {
+  timeZone: 'Asia/Dubai',
+  day: 'numeric',
+  month: 'short',
+})
 const CLOCK = new Intl.DateTimeFormat('en-GB', {
   timeZone: 'Asia/Dubai',
   hour: '2-digit',
@@ -166,11 +183,15 @@ const ACTION_SELECT = {
 } as const
 
 async function loadAction(e: EvidenceRef) {
+  if (e.kind === 'span') return null
   if (e.kind === 'event') {
     const ev = await opsDb.activityEvent.findUnique({ where: { id: e.eventId } })
     if (!ev) return null
     const action = ev.actionId
-      ? await opsDb.assistantAction.findUnique({ where: { id: ev.actionId }, select: ACTION_SELECT })
+      ? await opsDb.assistantAction.findUnique({
+          where: { id: ev.actionId },
+          select: ACTION_SELECT,
+        })
       : null
     return { action, event: ev }
   }
@@ -335,6 +356,7 @@ async function build(
     }
   })
 
+  const fileCtx = await fileSpanContexts(picked.map((x) => x.span))
   const spanViews = picked.flatMap(({ span, reasonIndex }): WhySpan[] => {
     if (span.sourceKind === 'email' && message) {
       const changed = !!span.textHash && span.textHash !== message.bodyTextHash
@@ -361,28 +383,14 @@ async function build(
         },
       ]
     }
-    // S08 fills pdf / sheet / docx; until then a span of another kind shows its quote alone.
-    return [
-      {
-        key: span.id,
-        reasonIndex,
-        sourceKind: span.sourceKind,
-        fileType: span.sourceKind === 'sheet' ? 'XLS' : span.sourceKind === 'docx' ? 'DOC' : 'PDF',
-        doc: span.sourceKind === 'image' ? 'Scanned page' : 'Document',
-        meta: span.page ? `Page ${span.page}` : '',
-        text: `“${span.quote}”`,
-        match: span.quote,
-        location: span.resolved === 'page_only' ? 'Read from a scanned page' : 'As quoted',
-        openHref: `/api/files/${span.sourceId}`,
-        changed: false,
-        pageOnly: span.resolved === 'page_only',
-      },
-    ]
+    return [fileSpanView(span, fileCtx.get(span.id) ?? null, reasonIndex)]
   })
 
   const focusReason = e.kind === 'reason' ? e.index : null
   const activeSpan =
-    focusReason !== null ? (spanViews.find((s) => s.reasonIndex === focusReason)?.key ?? null) : null
+    focusReason !== null
+      ? (spanViews.find((s) => s.reasonIndex === focusReason)?.key ?? null)
+      : null
   const initialTab: WhyTab =
     e.kind === 'reason' && activeSpan
       ? 'sources'
@@ -478,11 +486,126 @@ async function build(
   }
 }
 
+const FILE_TYPE: Record<string, SourceFileType> = {
+  pdf: 'PDF',
+  sheet: 'XLS',
+  docx: 'DOC',
+  image: 'IMG',
+}
+
+/** A span in a stored file (S08): its page box, sheet cell, text window or image; else the quote as cited. */
+function fileSpanView(
+  span: SpanRow,
+  ctx: FileSpanContext | null,
+  reasonIndex: number | null
+): WhySpan {
+  const pageOnly = span.resolved === 'page_only'
+  const where =
+    span.sourceKind === 'sheet'
+      ? [span.sheet, span.cellRef].filter(Boolean).join(' · ') || 'As quoted'
+      : span.page
+        ? `Page ${span.page}${pageOnly ? ' · scanned' : ''}`
+        : 'As quoted'
+  return {
+    key: span.id,
+    reasonIndex,
+    sourceKind: span.sourceKind,
+    fileType: FILE_TYPE[span.sourceKind] ?? 'PDF',
+    doc: ctx?.fileName ?? (span.sourceKind === 'image' ? 'Scanned page' : 'Document'),
+    meta: span.sourceKind === 'sheet' ? (span.sheet ?? '') : span.page ? `Page ${span.page}` : '',
+    text: ctx?.text?.text ?? `“${span.quote}”`,
+    match: ctx?.text?.match ?? span.quote,
+    ...(ctx?.text ? { matchAt: ctx.text.matchAt } : {}),
+    location: pageOnly ? 'Read from a scanned page' : where,
+    openHref: `/api/files/${span.sourceId}`,
+    changed: false,
+    pageOnly: pageOnly && !ctx?.imageUrl,
+    ...(ctx?.page ? { page: ctx.page } : {}),
+    ...(ctx?.sheet ? { sheet: ctx.sheet } : {}),
+    ...(ctx?.imageUrl ? { imageUrl: ctx.imageUrl } : {}),
+  }
+}
+
+/** `sp_<uuid>` (S08): one span on its own, e.g. a value on an extracted line; the Sources tab only. */
+async function buildSpanView(e: Extract<EvidenceRef, { kind: 'span' }>): Promise<WhyView | null> {
+  const span = await opsDb.sourceSpan.findUnique({ where: { id: e.spanId } })
+  if (!span) return null
+  let view: WhySpan
+  if (span.sourceKind === 'email') {
+    const m = await opsDb.mailMessage.findUnique({
+      where: { id: span.sourceId },
+      select: {
+        threadId: true,
+        subject: true,
+        bodyText: true,
+        bodyTextHash: true,
+        fromAddress: true,
+        sentAt: true,
+      },
+    })
+    const changed = !!span.textHash && !!m && span.textHash !== m.bodyTextHash
+    const w =
+      m?.bodyText && span.charStart !== null && span.charEnd !== null && !changed
+        ? sourceWindow(m.bodyText, span.charStart, span.charEnd)
+        : null
+    view = {
+      key: span.id,
+      reasonIndex: null,
+      sourceKind: 'email',
+      fileType: 'MAIL',
+      doc: m?.subject || '(no subject)',
+      meta: m ? `Email · ${TIME.format(m.sentAt)} · ${m.fromAddress}` : 'Email',
+      text: w ? w.text : `“${span.quote}”`,
+      match: w ? w.match : span.quote,
+      ...(w ? { matchAt: w.matchAt } : {}),
+      location: w ? `Paragraph ${w.paragraph}` : 'As quoted when it was read',
+      openHref: m ? `/mail/all/${m.threadId}` : '/mail',
+      changed,
+      pageOnly: false,
+    }
+  } else {
+    const ctx = await fileSpanContexts([span])
+    view = fileSpanView(span, ctx.get(span.id) ?? null, null)
+  }
+  return {
+    id: encodeEvidenceId(e),
+    eyebrow: 'Why? · Extracted value',
+    title: `Read as “${span.quote.length > 80 ? `${span.quote.slice(0, 80)}…` : span.quote}”`,
+    initialTab: 'sources',
+    activeSpan: span.id,
+    reasons: [],
+    alternatives: [],
+    checks: [
+      {
+        key: 'c0',
+        mark: span.resolved === 'unresolved' ? 'bad' : span.resolved === 'exact' ? 'ok' : 'warn',
+        text:
+          span.resolved === 'exact'
+            ? 'Found word for word in the source'
+            : span.resolved === 'fuzzy'
+              ? 'Found with small differences'
+              : span.resolved === 'page_only'
+                ? 'Read from a scanned page'
+                : 'Not found in the source',
+        right: '',
+      },
+    ],
+    confidence: null,
+    footnote: null,
+    spans: [view],
+    noQuote: null,
+    history: [],
+    correction: null,
+    overridden: null,
+  }
+}
+
 /** Null for a malformed or unknown id: the drawer's not-found state. */
 export const getWhy = cache(async (evidenceId: string, viewer: Viewer): Promise<WhyView | null> => {
   const e = parseEvidenceId(evidenceId)
   if (!e) return null
   if (e.kind === 'fixture') return evidenceFixture(e.id, env().APP_ENV)
+  if (e.kind === 'span') return buildSpanView(e)
   const loaded = await loadAction(e)
   if (!loaded) return null
   return build(e, loaded.action, loaded.event, viewer)

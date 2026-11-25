@@ -1,6 +1,7 @@
 import 'server-only'
 import { Prisma } from '@indus/ops-db'
 import type { CandidateDraft } from './candidates'
+import { detectDuplicates } from './review'
 import { saveSpans } from './spans'
 
 /**
@@ -71,7 +72,11 @@ export async function stageCandidates(
       sourceDetail: d.sourceDetail,
     }
   })
-  if (rows.length) await tx.intakeLineCandidate.createMany({ data: rows })
+  if (rows.length) {
+    await tx.intakeLineCandidate.createMany({ data: rows })
+    // Repeats across pages or files of one intake are flagged for board 17's merge.
+    await detectDuplicates(tx, i.batchId)
+  }
   const toCheck = i.drafts.filter((d) => d.confidence !== 'sure').length
   if (i.fileId)
     await tx.intakeFile.update({

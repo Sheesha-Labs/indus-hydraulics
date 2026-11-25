@@ -4,7 +4,7 @@ import { Button } from '@indus/ops-ui/controls'
 import { Modal, useToast } from '@indus/ops-ui/overlay'
 import type { Route } from 'next'
 import { useRouter } from 'next/navigation'
-import { useRef, useState, type DragEvent } from 'react'
+import { useRef, useState, useSyncExternalStore, type DragEvent } from 'react'
 import {
   createIntakeBatchAction,
   pasteEmailTextAction,
@@ -16,6 +16,8 @@ import { INTAKE_ACCEPT, sendFiles } from './send-files'
  * files" (the page's one primary) and "Paste email text" (a modal). The first drop creates the batch and the page
  * follows it (?batch=). Files the server refuses come back as a toast with the reason.
  */
+const noop = () => () => undefined
+
 export default function IntakeDropArea({
   batchId,
   maxMb,
@@ -28,6 +30,12 @@ export default function IntakeDropArea({
   const input = useRef<HTMLInputElement>(null)
   const depth = useRef(0)
   const [over, setOver] = useState(false)
+  // Set once the handlers are attached: a file chosen before hydration would be dropped silently.
+  const ready = useSyncExternalStore(
+    noop,
+    () => true,
+    () => false
+  )
   const [busy, setBusy] = useState(false)
   const [pasteOpen, setPasteOpen] = useState(false)
   const [text, setText] = useState('')
@@ -158,6 +166,7 @@ export default function IntakeDropArea({
         accept={INTAKE_ACCEPT}
         className="hidden"
         aria-label="Choose enquiry files"
+        data-ready={ready ? 'true' : undefined}
         onChange={(e) => {
           if (e.target.files) void add(e.target.files)
           e.target.value = ''

@@ -7,6 +7,7 @@ import { getSetting } from '../settings/get'
 import { OPS_BUCKETS } from '../storage/buckets'
 import { getStorage } from '../storage/storage'
 import { sniff, type SniffedKind } from './parse/index'
+import { TX_OPTIONS } from '../../lib/tx-options'
 
 /**
  * Intake uploads (S08-T03, ADR-21, C19). Same pattern as S03's uploads: the browser asks for a signed upload URL,
@@ -187,7 +188,7 @@ export async function confirmIntakeUpload(input: {
       data: { version: { increment: 1 } },
     })
     return f
-  })
+  }, TX_OPTIONS)
   await requestCapture(file.id, obj.sha256)
   return { intakeFileId: file.id }
 }
@@ -232,7 +233,7 @@ export async function pasteIntakeText(input: {
       },
       select: { id: true },
     })
-  })
+  }, TX_OPTIONS)
   await requestCapture(file.id, sha256)
   return { intakeFileId: file.id }
 }
@@ -280,7 +281,7 @@ export async function addExpandedFile(input: {
       },
       select: { id: true },
     })
-  })
+  }, TX_OPTIONS)
   await requestCapture(file.id, sha256)
   return { intakeFileId: file.id }
 }

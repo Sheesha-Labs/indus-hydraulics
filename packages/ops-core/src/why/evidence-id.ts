@@ -8,6 +8,7 @@ import { z } from 'zod'
  *   A-26-11-24-0007~r2       reason 2 of that action (Sources tab, at that reason's span)
  *   A-26-11-24-0007~fclass   a field the action set (History tab for that field)
  *   ae_<uuid>                one activity_event row (a history row: a person's or the Assistant's change)
+ *   sp_<uuid>                one source_span (S08: an extracted line's value, its page box, cell or text)
  *   <uuid>                   the S04 shell fixture (never resolves in production)
  */
 export type EvidenceRef =
@@ -15,6 +16,7 @@ export type EvidenceRef =
   | { kind: 'reason'; ref: string; index: number }
   | { kind: 'field'; ref: string; field: string }
   | { kind: 'event'; eventId: string }
+  | { kind: 'span'; spanId: string }
   | { kind: 'fixture'; id: string }
 
 const ACTION_REF = /^A-[A-Za-z0-9-]{1,60}$/
@@ -32,6 +34,10 @@ export function parseEvidenceId(raw: string): EvidenceRef | null {
   if (s.startsWith('ae_')) {
     const id = s.slice(3)
     return UUID.safeParse(id).success ? { kind: 'event', eventId: id } : null
+  }
+  if (s.startsWith('sp_')) {
+    const id = s.slice(3)
+    return UUID.safeParse(id).success ? { kind: 'span', spanId: id } : null
   }
   if (UUID.safeParse(s).success) return { kind: 'fixture', id: s }
   const [ref, part, ...rest] = s.split('~')
@@ -55,6 +61,8 @@ export function encodeEvidenceId(e: EvidenceRef): string {
       return `${e.ref}~f${e.field}`
     case 'event':
       return `ae_${e.eventId}`
+    case 'span':
+      return `sp_${e.spanId}`
     case 'fixture':
       return e.id
   }

@@ -184,6 +184,14 @@ const assistantBudget = z.strictObject({
   mode: z.enum(['warn_pause_research', 'hard_stop', 'warn_only']).default('warn_pause_research'),
 })
 
+/** S08-T07: how "revert by" is computed (board 93 "Why 26 Sep"); working days. */
+const ackRevertBy = z.strictObject({
+  pricingDays: z.number().min(0).max(10),
+  bufferDays: z.number().min(0).max(10),
+  defaultSupplierReplyDays: z.number().min(0).max(30),
+  defaultNoDeadlineDays: z.number().min(1).max(30),
+})
+
 const researchCap = z.strictObject({
   perEnquiryUsd: positiveAmount.max(1_000),
   allowMoreUsd: z.number().finite().min(0).max(1_000),
@@ -406,6 +414,13 @@ export const SETTINGS = {
     signoff: true,
     label: 'Monthly AI budget',
     section: 'assistant',
+  }),
+  'ack.revert_by': def({
+    schema: ackRevertBy,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Acknowledgement: revert-by rule',
+    section: 'enquiries',
   }),
   'research.cap': def({
     schema: researchCap,

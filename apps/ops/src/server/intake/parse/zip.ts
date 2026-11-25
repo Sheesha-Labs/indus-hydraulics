@@ -80,7 +80,10 @@ export async function expandZip(
           parts.push(c)
         })
         stream.on('end', () => {
-          out.push({ name: e.fileName.split('/').pop() ?? e.fileName, bytes: Buffer.concat(parts) })
+          out.push({
+            name: e.fileName.split('/').pop() ?? e.fileName,
+            bytes: Buffer.concat(parts),
+          })
           zip.readEntry()
         })
         stream.on('error', reject)

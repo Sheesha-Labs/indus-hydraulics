@@ -6,6 +6,7 @@ import { parseBytes, readStoredBytes } from './parse/index'
 import { expandZip } from './parse/zip'
 import { bumpIntake } from './live'
 import { addExpandedFile } from './upload'
+import { TX_OPTIONS } from '../../lib/tx-options'
 
 /**
  * The steps of `ops.capture.document` (S08-T03), each a short database touch or a database-free read, so the
@@ -50,7 +51,7 @@ export async function startCapture(intakeFileId: string): Promise<CaptureStart> 
       data: { status: 'extracting', progressPct: 5, progressNote: 'Detecting layout' },
     })
     await bumpIntake(f.batchId, tx)
-  })
+  }, TX_OPTIONS)
   return {
     skip: false,
     batchId: f.batchId,
@@ -173,7 +174,7 @@ export async function noteReading(
       },
     })
     await bumpIntake(batchId, tx)
-  })
+  }, TX_OPTIONS)
 }
 
 export async function failFile(
@@ -193,7 +194,7 @@ export async function failFile(
       },
     })
     await bumpIntake(batchId, tx)
-  })
+  }, TX_OPTIONS)
 }
 
 /** An archive within the limits: each entry becomes its own queued file; the archive row itself is done. */
@@ -227,7 +228,7 @@ export async function expandArchive(
       },
     })
     await bumpIntake(start.batchId, tx)
-  })
+  }, TX_OPTIONS)
   return { added, refused }
 }
 

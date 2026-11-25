@@ -4,6 +4,7 @@ import { emitEvent } from '../../inngest/emit'
 import { SafeError } from '../../lib/safe-message'
 import { bumpIntake } from './live'
 import { CAPTURE_CANCELLED } from './upload'
+import { TX_OPTIONS } from '../../lib/tx-options'
 
 /**
  * Board 14's queue verbs (S08-T03). Cancel stops a file that is being read, Remove takes a queued one out, and a
@@ -45,7 +46,7 @@ export async function cancelExtraction(fileId: string): Promise<{ batchId: strin
       },
     })
     await bumpIntake(f.batchId, tx)
-  })
+  }, TX_OPTIONS)
   await emitEvent({ name: CAPTURE_CANCELLED, data: { intakeFileId: fileId } })
   return { batchId: f.batchId }
 }
@@ -61,7 +62,7 @@ export async function removeIntakeFile(fileId: string): Promise<{ batchId: strin
       data: { status: 'removed', progressNote: 'Removed' },
     })
     await bumpIntake(f.batchId, tx)
-  })
+  }, TX_OPTIONS)
   if (f.status === 'queued')
     await emitEvent({ name: CAPTURE_CANCELLED, data: { intakeFileId: fileId } })
   return { batchId: f.batchId }

@@ -71,16 +71,22 @@ async function encryptedPdf() {
   const font = await doc.embedFont(StandardFonts.Helvetica)
   doc.addPage([595, 842]).drawText('Confidential RFQ', { x: 40, y: 800, size: 12, font })
   // A Standard security handler entry in the trailer is what readers treat as "encrypted".
-  const enc = doc.context.obj({ Filter: PDFName.of('Standard'), V: 2, R: 3, Length: 128, P: -3904 })
+  const enc = doc.context.obj({
+    Filter: PDFName.of('Standard'),
+    V: 2,
+    R: 3,
+    Length: 128,
+    P: -3904,
+  })
   doc.context.trailerInfo.Encrypt = doc.context.register(enc)
   return doc.save()
 }
 
 async function scanJpeg(density: number, width: number) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${Math.round(width * Math.SQRT2)}">
-    <rect width="100%" height="100%" fill="#ffffff"/>
-    <text x="40" y="80" font-family="Helvetica" font-size="28" fill="#111111">Sample Client LLC RFQ</text>
-    <text x="40" y="140" font-family="Helvetica" font-size="24" fill="#111111">1  Ball valve 2in  TEST-0001  10 NOS</text>
+    <rect width="100%" height="100%" fill="white"/>
+    <text x="40" y="80" font-family="Helvetica" font-size="28" fill="black">Sample Client LLC RFQ</text>
+    <text x="40" y="140" font-family="Helvetica" font-size="24" fill="black">1  Ball valve 2in  TEST-0001  10 NOS</text>
   </svg>`
   return sharp(Buffer.from(svg)).jpeg({ quality: 60 }).withMetadata({ density }).toBuffer()
 }

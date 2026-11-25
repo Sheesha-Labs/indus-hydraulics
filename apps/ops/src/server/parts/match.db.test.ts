@@ -31,6 +31,7 @@ describe.skipIf(!DB_URL)('matchParts · local database', () => {
       data: { partId: b.id, text: `OLD-${tag}-9`, norm: `OLD${tag}9`, source: 'test' },
     })
   })
+
   afterAll(async () => {
     await opsDb.part.deleteMany({ where: { id: { in: ids } } })
   })

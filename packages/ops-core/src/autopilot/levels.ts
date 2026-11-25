@@ -81,6 +81,8 @@ export const MAX_LEVELS = {
   correction_email: 'draft_and_ask',
   manual_reply: 'draft_and_ask',
   instruction: 'draft_and_ask',
+  // S08: an Unsure line is a question for a person, always.
+  resolve_extracted_line: 'draft_and_ask',
 } as const satisfies Partial<Record<ActionKey, OrderedLevel>>
 
 export function fixedRule(key: string): AutopilotLevel | null {

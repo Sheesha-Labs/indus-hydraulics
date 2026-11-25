@@ -12,7 +12,11 @@ describe('parseZip', () => {
   })
   it('a normal archive expands; resource forks are skipped', async () => {
     const doc = await parseZip(fixture('two-files.zip'))
-    expect(doc).toMatchObject({ kind: 'zip', decision: 'expand', entries: [{ name: 'lines.csv' }] })
+    expect(doc).toMatchObject({
+      kind: 'zip',
+      decision: 'expand',
+      entries: [{ name: 'lines.csv' }],
+    })
     const files = await expandZip(fixture('two-files.zip'))
     expect(files.map((f) => f.name)).toEqual(['lines.csv'])
     expect(new TextDecoder().decode(files[0]!.bytes)).toContain('TEST-0001')
