@@ -10,6 +10,7 @@ import {
 import { findOurOutbound } from '../../mail/our-outbound'
 import { threadVersion } from '../../mail/thread-version'
 import { PROMPT_VERSION, resendUser, SYSTEM_PARTS } from '../prompts/resend-alternate-contact.v1'
+import { creditHoldContext } from '../guardrail-context'
 import { registerAction } from '../registry'
 import type { ActionDefinition, OutboundDraft, ProposalDraft } from '../types'
 
@@ -155,6 +156,18 @@ const definition: ActionDefinition<ResendInput, ResendOut> = {
   alwaysAsk: {
     guardrail: 'first_contact',
     reason: 'First email to a new address: a person decides',
+  },
+  // S07-T01: the address is new by definition; the client's credit hold applies too.
+  async guardrailContext(request) {
+    const [input, hold] = await Promise.all([
+      loadResendInput(request.subjectId),
+      creditHoldContext(request),
+    ])
+    return {
+      ...hold,
+      counterpartyIsNew: true,
+      counterpartyName: input.target ? (input.target.name ?? input.target.email) : null,
+    }
   },
 
   estimate: () => ({ chars: 2_000, maxTokens: 400 }),

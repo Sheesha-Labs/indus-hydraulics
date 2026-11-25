@@ -3,7 +3,7 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import type { Route } from 'next'
 import Link from 'next/link'
-import type { ReactNode } from 'react'
+import { useRef, type ReactNode } from 'react'
 import Person from '../card/Person'
 import { cn } from '../lib/cn'
 import { LAYER, menuPanel } from '../overlay/styles'
@@ -38,6 +38,7 @@ export default function ProfileMenu({
   signOutAction,
   className,
 }: ProfileMenuProps) {
+  const signOutForm = useRef<HTMLFormElement>(null)
   // The visible avatar, name and role are hidden from assistive tech; this hidden text is the name, so it
   // always contains what is on screen (no aria-label).
   const name = <span className="sr-only">{`${user.name}, ${user.roleLabel}: account menu`}</span>
@@ -106,8 +107,17 @@ export default function ProfileMenu({
             </>
           ) : null}
           <DropdownMenu.Separator className={PROFILE_SEPARATOR} />
-          <form action={signOutAction} className="contents">
-            <DropdownMenu.Item asChild className={cn(PROFILE_ITEM, 'text-io-bad')}>
+          <form ref={signOutForm} action={signOutAction} className="contents">
+            <DropdownMenu.Item
+              asChild
+              className={cn(PROFILE_ITEM, 'text-io-bad')}
+              // Selecting closes the menu and unmounts this form before a click's submit can run (found in
+              // S07's e2e): keep the menu open and submit the form ourselves; the action then redirects.
+              onSelect={(e) => {
+                e.preventDefault()
+                signOutForm.current?.requestSubmit()
+              }}
+            >
               <button type="submit" className="w-full text-left">
                 Sign out
               </button>

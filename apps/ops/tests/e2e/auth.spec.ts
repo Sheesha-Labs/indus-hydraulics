@@ -39,19 +39,24 @@ test('the Owner signs in, reaches Today, and signs out', async ({ page }) => {
   expect(session?.sameSite).toBe('Lax')
 
   await page.goto('/today')
-  await expect(page.getByText(/Signed in as .+ · Owner/)).toBeVisible()
+  // S07: Today greets the person (board 178); the sidebar names who is signed in.
+  await expect(
+    page.getByRole('heading', { level: 1, name: /^Good (morning|afternoon|evening), / })
+  ).toBeVisible()
+  await expect(page.getByText(/^Signed in as /)).toBeVisible()
 
   const health = await page.context().request.get('/api/health')
   expect(health.status()).toBe(200)
   expect(((await health.json()) as { db: { alert: boolean } }).db.alert).toBe(false)
 
-  // Sign out is a server-action form: click it once React has hydrated it, or the click can land on the
-  // server-rendered button before its action is bound and nothing happens (S02-T09: intermittent).
-  const signOut = page.getByRole('button', { name: 'Sign out' })
+  // Sign out is in the account menu (board 74): a server-action form. Open the menu once React has hydrated
+  // the trigger, or the click can land before its handler is bound (S02-T09: intermittent).
+  const menu = page.getByRole('button', { name: /account menu/ })
   await expect
-    .poll(() => signOut.evaluate((el) => Object.keys(el).some((k) => k.startsWith('__reactProps'))))
+    .poll(() => menu.evaluate((el) => Object.keys(el).some((k) => k.startsWith('__reactProps'))))
     .toBe(true)
-  await signOut.click()
+  await menu.click()
+  await page.getByRole('menuitem', { name: 'Sign out' }).click()
   await expect(page).toHaveURL(/\/sign-in/)
   await page.goto('/today')
   await expect(page).toHaveURL(/\/sign-in\?next=%2Ftoday$/)

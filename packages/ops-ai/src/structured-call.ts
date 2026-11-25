@@ -1,6 +1,7 @@
 import Anthropic, { APIConnectionError, APIError } from '@anthropic-ai/sdk'
 import { z } from 'zod'
 import { monthKey } from './budget'
+import { apiSchema } from './api-schema'
 import { buildSystem, type SystemPart } from './cache-layout'
 import { costUsd as priceUsage, estimateUsd, formatUsd6, tokenCounts, type Price } from './cost'
 import { AiRequestError, ProviderUnavailableError } from './errors'
@@ -152,7 +153,8 @@ export async function structuredCall<T>(
   const now = input.now ?? (() => new Date())
   const system = buildSystem(input.system)
   const systemChars = input.system.reduce((n, p) => n + p.text.length, 0)
-  const schema = input.jsonSchema ?? (z.toJSONSchema(input.zod) as Record<string, unknown>)
+  // Structured outputs refuse some bounds; Zod still checks them on the answer (api-schema.ts).
+  const schema = apiSchema(input.jsonSchema ?? z.toJSONSchema(input.zod)) as Record<string, unknown>
   const { ledger } = input
 
   let total = '0.000000'

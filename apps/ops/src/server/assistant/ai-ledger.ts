@@ -1,4 +1,5 @@
 import 'server-only'
+import { emitEvent } from '../../inngest/emit'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import {
   MissingPriceError,
@@ -116,6 +117,9 @@ export const aiLedger: AiLedger = {
       },
       select: { id: true },
     })
+    // S07-T04: the 80 % / 100 % notices (ops.budget.thresholds, debounced 60 s). Best-effort: a lost event
+    // only delays a notice until the next call.
+    if (Number(call.costUsd) > 0) void emitEvent({ name: 'ops/ai.spent', data: {} })
     return row.id
   },
 }

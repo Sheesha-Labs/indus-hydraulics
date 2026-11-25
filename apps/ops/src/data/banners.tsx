@@ -7,6 +7,7 @@ import { bannerSpecs, type BannerMailbox, type BannerSpec } from '../lib/system-
 import { assistantPauseState } from '../server/assistant/pause'
 import { sentInCapDay } from '../server/mail-send/slot'
 import { getSetting } from '../server/settings/get'
+import { displayBudgetState } from '../server/assistant/runner'
 
 /**
  * Board 89 system banners for the shell strip (S04-T08, C23): ONE query over the mailboxes (with sync state and
@@ -18,7 +19,7 @@ export async function getSystemBanners(
   now = new Date()
 ): Promise<SystemBanner[]> {
   const since = new Date(now.getTime() - 24 * 3_600_000)
-  const [rows, pause, timing] = await Promise.all([
+  const [rows, pause, timing, budget] = await Promise.all([
     opsDb.mailbox.findMany({
       select: {
         id: true,
@@ -55,6 +56,7 @@ export async function getSystemBanners(
     }),
     assistantPauseState(),
     getSetting('send.timing'),
+    displayBudgetState(now),
   ])
   const initialsOf = (id: string | null, ownerId: string | undefined, ownerInitials: string | undefined) =>
     id === null ? null : id === user.id ? user.initials : id === ownerId ? (ownerInitials ?? null) : null
@@ -93,6 +95,10 @@ export async function getSystemBanners(
       : null,
     capReset: timing.capReset,
     now,
+    budget:
+      budget === 'research_paused' || budget === 'hard_stop'
+        ? { state: budget, canRaise: user.role === 'owner' }
+        : null,
   })
   return specs.map(toBanner)
 }

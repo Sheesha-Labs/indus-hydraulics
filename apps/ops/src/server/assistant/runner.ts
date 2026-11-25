@@ -2,14 +2,17 @@ import 'server-only'
 import { createHash } from 'node:crypto'
 import { opsDb, Prisma, type $Enums } from '@indus/ops-db'
 import {
+  ASKED_BECAUSE,
+  countedHits,
   mailboxCanSend,
-  resolveLevelInterim,
+  resolveLevel,
+  type BudgetState,
   type ResolvedLevel,
-  type InterimBudgetState,
 } from '@indus/ops-core'
 import { budgetState, monthKey, structuredCall, type BudgetMode } from '@indus/ops-ai'
 import { basisHash as coreBasisHash, parseProposal } from '@indus/ops-core'
 import { aiLedger } from './ai-ledger'
+import { buildPreferenceBlock } from './preferences'
 import { bumpCounters, setCounters } from './live-counter'
 import { assistantTransport } from './model'
 import { actionDefinition } from './registry'
@@ -25,6 +28,8 @@ import type {
   ProposalDraft,
 } from './types'
 import { allocateActionRef } from './action-number'
+import { guardrailContextFor } from './guardrail-context'
+import { SETTINGS } from '../settings/registry'
 import { setActor } from './write-tracked'
 
 /**
@@ -65,7 +70,7 @@ export function basisHash(versions: Record<string, string | number>): string {
 
 export type ResolveOutcome = ResolvedLevel & { purposeResearch: boolean }
 
-export async function currentBudgetState(now: Date): Promise<InterimBudgetState> {
+export async function currentBudgetState(now: Date): Promise<BudgetState> {
   const row = await opsDb.aiBudget.findUnique({
     where: { month: new Date(`${monthKey(now)}T00:00:00Z`) },
     select: { limitUsd: true, spentUsd: true, mode: true },
@@ -78,7 +83,7 @@ export async function currentBudgetState(now: Date): Promise<InterimBudgetState>
   })
 }
 
-let budgetCache: { at: number; month: string; value: InterimBudgetState } | null = null
+let budgetCache: { at: number; month: string; value: BudgetState } | null = null
 const BUDGET_TTL_MS = 60_000
 
 /**
@@ -86,13 +91,27 @@ const BUDGET_TTL_MS = 60_000
  * server. It never decides a model call: every call still reserves budget first (ai_budget_reserve), so a
  * minute-old "ok" cannot spend past the limit.
  */
-export async function displayBudgetState(now = new Date()): Promise<InterimBudgetState> {
+export async function displayBudgetState(now = new Date()): Promise<BudgetState> {
   const month = monthKey(now)
   if (budgetCache && budgetCache.month === month && Date.now() - budgetCache.at < BUDGET_TTL_MS)
     return budgetCache.value
   const value = await currentBudgetState(now)
   budgetCache = { at: Date.now(), month, value }
   return value
+}
+
+/**
+ * The Autopilot mode label (careful | balanced | hands_off | custom). Read straight from the row (one indexed
+ * read; the settings cache is a request-time helper and the runner runs in Inngest steps). Only used when an
+ * action has no setting row; Careful when the row is missing or unreadable.
+ */
+async function currentMode() {
+  const row = await opsDb.settingsEntry.findUnique({
+    where: { key: 'assistant.mode' },
+    select: { value: true },
+  })
+  const parsed = SETTINGS['assistant.mode'].schema.safeParse(row?.value)
+  return parsed.success ? parsed.data.mode : 'careful'
 }
 
 export async function resolveRun(
@@ -104,32 +123,41 @@ export async function resolveRun(
     where: { key: data.actionKey },
     select: {
       key: true,
+      configurable: true,
       lockedLevel: true,
       maxLevel: true,
       defaultCareful: true,
       defaultBalanced: true,
       defaultHandsOff: true,
-      setting: { select: { level: true } },
+      setting: { select: { level: true, rules: true } },
     },
   })
   if (!row) throw new UnknownActionError(data.actionKey)
-  const [paused, budget, mailbox] = await Promise.all([
+  const [paused, budget, mailbox, mode, guard] = await Promise.all([
     isAssistantPaused(),
     currentBudgetState(now),
     def.external && data.mailboxId
       ? opsDb.mailbox.findUnique({ where: { id: data.mailboxId }, select: { status: true } })
       : Promise.resolve(null),
+    currentMode(),
+    guardrailContextFor(def, data, now),
   ])
   const research = def.aiPurpose === 'research'
-  const resolved = resolveLevelInterim({
+  const resolved = resolveLevel({
     def: row,
-    setting: row.setting,
-    origin: data.origin,
-    paused,
-    budget,
-    research,
-    mailboxLive: mailbox ? mailboxCanSend(mailbox.status) : !def.external,
     external: def.external,
+    research,
+    configuredLevel: row.setting?.level ?? null,
+    rules: (row.setting?.rules as Record<string, unknown> | null) ?? null,
+    mode,
+    ctx: guard.ctx,
+    guardrails: guard.guardrails,
+    state: {
+      origin: data.origin,
+      paused,
+      budget,
+      mailboxLive: mailbox ? mailboxCanSend(mailbox.status) : !def.external,
+    },
   })
   return { ...resolved, purposeResearch: research }
 }
@@ -146,11 +174,27 @@ export async function gatherRun(
 
 // ── propose ──────────────────────────────────────────────────────────────────────────────
 
-export function actionAi(data: ActionRequestedData): ActionAi {
+/**
+ * S07-T05: whether a run's model calls carry the learned-preference block: drafting actions (Review surface,
+ * emailing someone) and #1 classify (classification rules only). The block goes in the USER turn after the
+ * cached system prefix; the system blocks are unchanged byte for byte.
+ */
+export function usesPreferences(key: string): boolean {
+  const def = actionDefinition(key)
+  return key === 'classify_mail' || (!!def && def.external && def.surface === 'review')
+}
+
+export async function preferenceBlockFor(data: ActionRequestedData): Promise<string> {
+  if (!usesPreferences(data.actionKey)) return ''
+  return buildPreferenceBlock({ actionKey: data.actionKey, mailboxId: data.mailboxId ?? null })
+}
+
+export function actionAi(data: ActionRequestedData, preferences = ''): ActionAi {
   return {
     call: (args) =>
       structuredCall({
         ...args,
+        user: preferences ? `${args.user}\n\n${preferences}` : args.user,
         enquiryId: data.enquiryId ?? null,
         actionId: null,
         ledger: aiLedger,
@@ -237,7 +281,14 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
             (p.verified.unsure?.length ?? 0) > 0 || p.verified.confidence === 'unsure'
           )
       : 'failed'
-  const levelReasons = asks ? [...d.resolved.reasons, asks.reason] : d.resolved.reasons
+  const levelReasons = asks
+    ? [...d.resolved.reasons, `${ASKED_BECAUSE}${asks.reason}`]
+    : d.resolved.reasons
+  // S07-T01: every guardrail that fired is on the row and counted on board 100 (rules are not counted).
+  const counted = countedHits(d.resolved)
+  const guardrailKeys = [
+    ...new Set([...counted.map((h) => h.key), ...(asks ? [asks.guardrail] : [])]),
+  ]
   const inputs = {
     request: { ...d.data },
     aiCallIds: p.callIds,
@@ -252,7 +303,7 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
           ref: num.formatted,
           actionKey: d.data.actionKey,
           levelAtTime: d.resolved.level,
-          guardrails: asks ? [asks.guardrail] : [],
+          guardrails: guardrailKeys,
           enquiryId: d.data.enquiryId ?? null,
           subjectType: d.data.subjectType,
           subjectId: d.data.subjectId,
@@ -285,6 +336,18 @@ export async function decideRun(d: DecideInput, now = new Date()): Promise<Decid
         },
         select: { id: true, ref: true, state: true },
       })
+      if (counted.length > 0) {
+        await tx.guardrailTrigger.createMany({
+          data: counted.map((h) => ({
+            guardrailKey: h.key,
+            actionId: row.id,
+            actionKey: d.data.actionKey,
+            effect: h.effect,
+            text: h.text,
+            at: now,
+          })),
+        })
+      }
       // S06: the card this redraft replaces points at it.
       if (d.data.redraftOfId) {
         await tx.assistantAction.updateMany({

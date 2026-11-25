@@ -167,3 +167,38 @@ describe('board 89 banners', () => {
     expect(helper?.resume).toBeUndefined()
   })
 })
+
+describe('board 102 banners (S07-T04)', () => {
+  it('a reached budget: research paused or everything stopped, Raise limit for the Owner', () => {
+    const paused = bannerSpecs({
+      mailboxes: [],
+      assistantPause: null,
+      capReset: '04:00',
+      now: NOW,
+      budget: { state: 'research_paused', canRaise: true },
+    })[0]
+    expect(paused).toMatchObject({
+      kind: 'budget-reached',
+      tone: 'warn',
+      title: 'Research paused: the monthly AI budget is reached.',
+      action: { label: 'Raise limit', href: '/assistant/cost' },
+    })
+    const stop = bannerSpecs({
+      mailboxes: [],
+      assistantPause: null,
+      capReset: '04:00',
+      now: NOW,
+      budget: { state: 'hard_stop', canRaise: false },
+    })[0]
+    expect(stop?.title).toBe('Assistant stopped: the monthly AI budget is reached.')
+    expect(stop?.action).toBeUndefined()
+  })
+
+  it('a disconnected mailbox says the other one still runs', () => {
+    const [s] = specs([
+      box({ status: 'token_expired' }),
+      box({ id: 'p', address: 'purchase@example.test', role: 'supplier' }),
+    ])
+    expect(s?.text).toBe('The Assistant can’t read or send client mail. purchase@ still runs.')
+  })
+})

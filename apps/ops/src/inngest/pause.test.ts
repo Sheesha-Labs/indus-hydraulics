@@ -26,6 +26,12 @@ const EXPECTED: Record<string, 'exempt' | 'skip' | 'record_only' | 'wait'> = {
   // A cron that runs again in ten minutes.
   'ops.gmail.poll': 'skip',
   'ops.clocks.tick': 'skip',
+  'ops.autopilot.suggestions': 'skip',
+  'ops.budget.rollover': 'exempt',
+  'ops.budget.reservation.sweep': 'exempt',
+  'ops.budget.thresholds': 'exempt',
+  'ops.preferences.learn': 'skip',
+  'ops.preferences.batch.poll': 'skip',
   // Everything that reads, drafts, labels or acts waits for ops/assistant.resumed.
   'ops.gmail.message.fetch': 'wait',
   'ops.gmail.message.fetch.backfill': 'wait',

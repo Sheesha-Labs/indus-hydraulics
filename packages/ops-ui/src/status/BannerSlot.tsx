@@ -12,6 +12,7 @@ import Banner, { type BannerProps } from './Banner'
 export type SystemBannerKind =
   | 'mailbox-disconnected'
   | 'assistant-paused'
+  | 'budget-reached'
   | 'mailbox-paused'
   | 'sync-delayed'
   | 'send-failed'
@@ -24,6 +25,7 @@ export type SystemBannerKind =
 export const SYSTEM_BANNER_ORDER: readonly SystemBannerKind[] = [
   'mailbox-disconnected',
   'assistant-paused',
+  'budget-reached',
   'mailbox-paused',
   'sync-delayed',
   'send-failed',

@@ -4,7 +4,8 @@
 import { cva } from 'class-variance-authority'
 
 export type ModalWidth = 480 | 520 | 560
-export type DrawerWidth = 420 | 460 | 480
+/** 600: the Autopilot action drawer (board 99) draws a wider panel for the level cards and rules. */
+export type DrawerWidth = 420 | 460 | 480 | 600
 export type MenuWidth = 200 | 240 | 280
 export type PopoverWidth = 280 | 320 | 360
 export type ToastKind = 'success' | 'info' | 'warning' | 'error' | 'running'
@@ -66,7 +67,7 @@ export const consequenceItem = 'grid grid-cols-[14px_minmax(0,1fr)] gap-2'
 export const drawerPanel = cva(
   'bg-io-card shadow-io-e-drawer border-io-line text-io-ink flex h-full max-w-full flex-col border-l text-[13px] outline-none',
   {
-    variants: { width: { 420: 'w-[420px]', 460: 'w-[460px]', 480: 'w-[480px]' } },
+    variants: { width: { 420: 'w-[420px]', 460: 'w-[460px]', 480: 'w-[480px]', 600: 'w-[600px]' } },
     defaultVariants: { width: 460 },
   }
 )

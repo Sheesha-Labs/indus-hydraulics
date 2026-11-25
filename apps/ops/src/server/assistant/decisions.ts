@@ -199,7 +199,7 @@ async function guardFresh(a: Row): Promise<void> {
   )
 }
 
-/** A guardrail or level that now forbids the action (S05 interim resolver; S07 the full one). */
+/** A level or rule that now forbids the action (S07: the full resolver, re-run at approval). */
 async function guardLevel(a: Row): Promise<void> {
   const req = requestOf(a)
   if (!req) return
@@ -212,7 +212,7 @@ async function guardLevel(a: Row): Promise<void> {
     recordKey: `${req.subjectType}:${req.subjectId}`,
   }
   const r = await resolveRun(data)
-  if (r.blocked === 'never' || r.blocked === 'off')
+  if (r.blocked === 'never' || r.blocked === 'off' || r.blocked === 'escalate')
     throw new DecisionError(
       'blocked',
       r.reasons.at(-1) ?? 'This action is switched off in Autopilot.'

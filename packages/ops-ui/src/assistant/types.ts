@@ -109,6 +109,11 @@ export interface ProposalCardProps {
   readOnly?: boolean
   /** Footer note on the right of an open card. */
   note?: string
+  /**
+   * S07-T01: the guardrails (or action rules) that sent this card to Review, e.g. "Value above AED 200,000".
+   * Printed under the headline as "Asked because: …", so a person sees why it is asking.
+   */
+  askedBecause?: readonly string[]
   className?: string
 }
 

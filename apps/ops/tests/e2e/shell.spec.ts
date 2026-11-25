@@ -32,7 +32,11 @@ test('shell: the Owner gets the AppShell around Today', async ({ page, signedInA
   await expect(nav.getByRole('link', { name: 'Money' })).toBeVisible()
   await expect(page.locator('main#content')).toHaveCount(1)
   await expect(page.locator('main')).toHaveCount(1)
-  await expect(page.locator('main#content').getByRole('heading', { name: 'Today' })).toBeVisible()
+  await expect(
+    page
+      .locator('main#content')
+      .getByRole('heading', { level: 1, name: /^Good (morning|afternoon|evening), / })
+  ).toBeVisible()
   await hydrated(page)
   await page.getByRole('button', { name: /account menu/ }).click()
   const menu = page.getByRole('menu')
@@ -65,7 +69,11 @@ test('skip-link: the first tab stop, and it moves focus to #content', async ({
   await hydrated(page)
   // The page streams in behind (console)/loading.tsx: wait for its content, or the Tab after the skip
   // lands outside #content because nothing inside it is focusable yet.
-  await expect(page.locator('main#content').getByRole('heading', { name: 'Today' })).toBeVisible()
+  await expect(
+    page
+      .locator('main#content')
+      .getByRole('heading', { level: 1, name: /^Good (morning|afternoon|evening), / })
+  ).toBeVisible()
   const skip = page.getByRole('link', { name: 'Skip to content' })
   await expect(skip).not.toBeInViewport()
   await page.keyboard.press('Tab')

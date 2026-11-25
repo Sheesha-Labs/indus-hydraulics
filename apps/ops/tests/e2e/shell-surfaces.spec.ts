@@ -203,7 +203,9 @@ test.describe('why-drawer', () => {
     await expect(drawer).toBeVisible()
     await expect(page).toHaveURL(new RegExp(`/why/${FIXTURE_EVIDENCE}$`))
     // The page underneath is still Today (hidden from the accessibility tree while the drawer is modal).
-    await expect(page.locator('main#content h1', { hasText: 'Today' })).toBeAttached()
+    await expect(
+      page.locator('main#content h1', { hasText: /^Good (morning|afternoon|evening), / })
+    ).toBeAttached()
     await expect(drawer.getByRole('tab', { name: 'Reasons' })).toHaveAttribute(
       'aria-selected',
       'true'

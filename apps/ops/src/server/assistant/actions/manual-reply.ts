@@ -2,6 +2,7 @@ import 'server-only'
 import { opsDb } from '@indus/ops-db'
 import { replyReferences } from '@indus/ops-core'
 import { threadVersion } from '../../mail/thread-version'
+import { creditHoldContext } from '../guardrail-context'
 import { registerAction } from '../registry'
 import type { ActionDefinition, OutboundDraft, ProposalDraft } from '../types'
 
@@ -46,6 +47,8 @@ const definition: ActionDefinition<ManualReplyInput, Record<string, never>> = {
   group: 'mail',
   aiPurpose: 'other',
   external: true,
+  // S07-T01: a send to a client on credit hold asks.
+  guardrailContext: (request) => creditHoldContext(request),
   concurrencyGroup: 'mail',
   surface: 'review',
 

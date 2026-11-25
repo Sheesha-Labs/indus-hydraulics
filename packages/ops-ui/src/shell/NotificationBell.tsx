@@ -18,7 +18,9 @@ export interface NotificationBellProps {
 export default function NotificationBell({ count, onOpen, className }: NotificationBellProps) {
   const live = useShellLive()
   const open = onOpen ?? live.openNotifications
-  const label = count > 0 ? `Notifications, ${count} unread` : 'Notifications'
+  // The name carries the badge as drawn ("99+"), so the visible text is part of it (WCAG 2.5.3).
+  const shown = count > 99 ? '99+' : String(count)
+  const label = count > 0 ? `Notifications, ${shown} unread` : 'Notifications'
   return (
     <button
       type="button"
@@ -37,7 +39,7 @@ export default function NotificationBell({ count, onOpen, className }: Notificat
           aria-hidden="true"
           className="rounded-io-pill bg-io-bad-solid absolute top-0.5 right-0 grid h-4 min-w-4 place-items-center px-1 text-[10px] leading-none font-medium text-white"
         >
-          {count > 99 ? '99+' : count}
+          {shown}
         </b>
       ) : null}
     </button>

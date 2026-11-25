@@ -10,6 +10,7 @@ import {
 import { replySubject } from '../../mail/reply'
 import { threadVersion } from '../../mail/thread-version'
 import { askOpenCopyUser, PROMPT_VERSION, SYSTEM_PARTS } from '../prompts/ask-open-copy.v1'
+import { creditHoldContext } from '../guardrail-context'
 import { registerAction } from '../registry'
 import type { ActionDefinition, OutboundDraft, ProposalDraft } from '../types'
 
@@ -51,6 +52,8 @@ const definition: ActionDefinition<AskOpenCopyInput, AskOpenCopyOut> = {
   group: 'sourcing',
   aiPurpose: 'draft',
   external: true,
+  // S07-T01: a send to a client on credit hold asks.
+  guardrailContext: (request) => creditHoldContext(request),
   concurrencyGroup: 'mail',
   surface: 'review',
 

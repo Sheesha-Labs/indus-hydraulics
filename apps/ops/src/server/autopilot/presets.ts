@@ -4,6 +4,7 @@ import {
   presetSummary,
   type AutopilotLevel,
   type AutopilotMode,
+  type AutopilotModeOrCustom,
 } from '@indus/ops-core'
 import type { Prisma } from '@indus/ops-db'
 import type { AuditEntry } from '../../lib/audit'
@@ -32,7 +33,7 @@ export type Tx = Prisma.TransactionClient
 export type PresetResult = {
   mode: AutopilotMode
   /** The mode before this change (null if the stored value was unreadable). */
-  previous: AutopilotMode | null
+  previous: AutopilotModeOrCustom | null
   /** Actions whose level changed. */
   changed: number
   /** The new `assistant.mode` version: pass it as `expectedVersion` to undo. */
