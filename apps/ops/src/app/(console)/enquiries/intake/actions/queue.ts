@@ -7,6 +7,7 @@ import {
   cancelExtraction,
   createIntakeBatch,
   removeIntakeFile,
+  setBatchFacts,
 } from '../../../../../server/intake/queue'
 import {
   confirmIntakeUpload,
@@ -86,4 +87,22 @@ export const removeQueuedFileAction = defineAction({
   schema: z.object({ fileId: z.uuid() }),
   roles: [...roles],
   handler: async (input) => refresh(await removeIntakeFile(input.fileId)),
+})
+
+/** Board 92 manual: client, client reference and deadline beside an upload, a paste or typed lines. */
+export const setBatchFactsAction = defineAction({
+  name: 'intake.batch.facts',
+  schema: z.object({
+    batchId: z.uuid().nullable().optional(),
+    source: z.enum(['upload', 'paste']).optional(),
+    clientCompanyId: z.uuid().nullable().optional(),
+    clientRef: z.string().max(80).nullable().optional(),
+    deadline: z.iso.date().nullable().optional(),
+  }),
+  roles: [...roles],
+  handler: async (input, ctx) => {
+    const out = await setBatchFacts(ctx.user.id, input)
+    revalidatePath('/enquiries/new')
+    return out
+  },
 })

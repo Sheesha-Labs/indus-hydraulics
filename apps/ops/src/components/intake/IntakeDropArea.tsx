@@ -130,7 +130,11 @@ export default function IntakeDropArea({
           onOpenChange={setPasteOpen}
           title="Paste email text"
           width={560}
-          trigger={<Button variant="secondary">Paste email text</Button>}
+          trigger={
+            <Button variant="secondary" data-action="paste-text">
+              Paste email text
+            </Button>
+          }
           note="Read like an email: lines, client reference and the date it is needed by."
           actions={
             <>

@@ -1,7 +1,9 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { after } from 'next/server'
 import { z } from 'zod'
+import { notifyYearSeeded } from '../../../../../../../server/numbering/enquiry-seed'
 import { defineAction } from '../../../../../../../lib/define-action'
 import { confirmIntakeAsPerson } from '../../../../../../../server/enquiry/from-batch'
 import { startEmailIntake } from '../../../../../../../server/intake/email-body'
@@ -39,6 +41,7 @@ export const continueFromEmailAction = defineAction({
       { includePendingConfident: true },
       ctx.withTx
     )
+    if (out.yearSeeded) after(() => notifyYearSeeded(out.yearSeeded!))
     revalidatePath('/enquiries')
     revalidatePath('/enquiries/intake')
     return { ref: out.ref, unsure: out.unsureIds.length }

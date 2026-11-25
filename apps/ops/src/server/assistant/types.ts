@@ -110,6 +110,10 @@ export interface EffectContext {
   ref: string
   request: ActionRequest
   level: $Enums.AutopilotLevel
+  /** S08: the option the person chose on the card (a variant, an Unsure answer), when there was one. */
+  chosenOption?: string | null
+  /** S08: the person who approved, for "Decided by" on what the effect writes. Null when the Assistant acted. */
+  decidedById?: string | null
 }
 
 /** An event to send once the effect's transaction has committed (never from inside it). */

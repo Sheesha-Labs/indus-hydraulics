@@ -159,6 +159,44 @@ registerTodayProvider({
   read: (rows) => mailRows(rows as never, SUPPLIER_CLASSES),
 })
 
+/** S08-T06: enquiries created since the cut-off (from an email card or by a person), newest first. */
+registerTodayProvider({
+  section: 'came_in',
+  key: 'enquiry.created',
+  side: 'client',
+  query: (ctx) =>
+    opsDb.enquiry.findMany({
+      where: { origin: 'ops', createdAt: { gte: ctx.since }, closedAt: null },
+      orderBy: { createdAt: 'desc' },
+      take: 20,
+      select: {
+        ref: true,
+        title: true,
+        client: { select: { name: true } },
+        _count: { select: { lines: true } },
+      },
+    }),
+  read: (rows) =>
+    rows.length
+      ? [
+          {
+            key: 'enquiry.created',
+            title: `${rows.length} enquir${rows.length === 1 ? 'y' : 'ies'} created`,
+            sub: rows
+              .slice(0, 3)
+              .map(
+                (e) =>
+                  `${e.ref} · ${e.client?.name ?? e.title} · ${e._count.lines} line${e._count.lines === 1 ? '' : 's'}`
+              )
+              .join(' · '),
+            href: rows.length === 1 ? `/enquiries/${rows[0]!.ref}` : '/enquiries',
+            hrefLabel: 'Open',
+            mark: 'ok' as const,
+          },
+        ]
+      : [],
+})
+
 registerTodayProvider({
   section: 'late',
   key: 'review.waiting',

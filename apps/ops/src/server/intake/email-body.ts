@@ -71,7 +71,7 @@ export async function readEmailFacts(message: {
 
 /** Opens the intake for a message, or returns the one already open (idempotent on the message). */
 export async function startEmailIntake(
-  p: { id: string },
+  p: { id: string } | null,
   messageId: string
 ): Promise<{ batchId: string; created: boolean }> {
   const m = await opsDb.mailMessage.findUnique({
@@ -109,7 +109,7 @@ export async function startEmailIntake(
       data: {
         source: 'mail',
         mailMessageId: m.id,
-        createdById: p.id,
+        createdById: p?.id ?? null,
         clientCompanyId: facts.client?.id ?? null,
         clientRef: facts.clientRef?.value ?? null,
         deadline: facts.neededBy ? dubaiEndOfDay(facts.neededBy.date) : null,
@@ -126,7 +126,7 @@ export async function startEmailIntake(
         batchId: b.id,
         filename: m.subject?.slice(0, 200) || 'Email body',
         kind: 'email',
-        uploadedById: p.id,
+        uploadedById: p?.id ?? null,
         progressNote: 'Waiting',
       },
       select: { id: true },
@@ -143,7 +143,7 @@ export async function startEmailIntake(
           filename: a.filename.slice(0, 200),
           kind,
           sizeBytes: a.sizeBytes,
-          uploadedById: p.id,
+          uploadedById: p?.id ?? null,
           ...(a.fileId
             ? { progressNote: 'Waiting' }
             : {
@@ -162,4 +162,34 @@ export async function startEmailIntake(
   }, TX_OPTIONS)
   for (const q of queued) await requestCapture(q.id, q.sha256)
   return { batchId: batch.id, created: true }
+}
+
+/**
+ * After a file of a batch settles (Ready, Needs attention, expanded): an intake the Assistant opened for a live
+ * client enquiry (no person started it) asks for the Create enquiry card once every file is settled (#4).
+ */
+export async function requestEnquiryWhenSettled(batchId: string): Promise<string | null> {
+  const b = await opsDb.intakeBatch.findUnique({
+    where: { id: batchId },
+    select: {
+      id: true,
+      source: true,
+      status: true,
+      createdById: true,
+      mailMessageId: true,
+      files: { where: { status: { in: ['queued', 'extracting'] } }, select: { id: true } },
+    },
+  })
+  if (!b || b.source !== 'mail' || b.createdById || b.status !== 'open' || !b.mailMessageId)
+    return null
+  if (b.files.length) return null
+  const { requestAction } = await import('../assistant/request')
+  return requestAction({
+    actionKey: 'create_enquiry',
+    subjectType: 'mail_message',
+    subjectId: b.mailMessageId,
+    trigger: 'intake.settled',
+    origin: 'live',
+    sourceVersion: b.id,
+  })
 }

@@ -9,6 +9,7 @@ import { clocksTick } from './clocks/tick'
 import { assistantOnResumed } from './assistant/on-resumed'
 import { assistantRun } from './assistant/run'
 import { captureDocument } from './intake/capture-document'
+import { numberingContinuity } from './numbering/continuity'
 import { gmailBackfill } from './gmail/backfill'
 import { gmailHealth } from './gmail/health'
 import { gmailBackfillFetch, gmailMessageFetch } from './gmail/message-fetch'
@@ -52,4 +53,5 @@ export const opsFunctions = [
   preferencesLearn,
   preferencesBatchPoll,
   captureDocument,
+  numberingContinuity,
 ]

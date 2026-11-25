@@ -1,4 +1,5 @@
 import 'server-only'
+import { startEmailIntake } from '../intake/email-body'
 import { opsDb } from '@indus/ops-db'
 import type { StoredMailFlags } from '@indus/ops-core'
 import { requestAction, requestActionQuietly } from '../assistant/request'
@@ -66,6 +67,9 @@ export async function routeClassified(data: {
   }
   if (NO_LINK.has(cls)) return { requested: null, skipped: 'class' }
   const also = await routeProtectedAttachment(data.messageId)
+  // #4 (S08-T06): a live client enquiry is read into an intake now; the Create enquiry card follows once
+  // its body and attachments are read (capture → requestEnquiryWhenSettled).
+  if (cls === 'client_enquiry') await startEmailIntake(null, data.messageId).catch(() => null)
   const id = await requestAction({
     actionKey: 'link_mail',
     subjectType: 'mail_message',

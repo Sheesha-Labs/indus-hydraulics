@@ -421,6 +421,8 @@ export async function effectRun(actionId: string, now = new Date()): Promise<Eff
       checks: true,
       confidence: true,
       inputs: true,
+      chosenOption: true,
+      decidedById: true,
     },
   })
   if (action.state !== 'running') return { state: 'skipped' }
@@ -441,6 +443,8 @@ export async function effectRun(actionId: string, now = new Date()): Promise<Eff
         ref: action.ref,
         request,
         level: action.levelAtTime,
+        chosenOption: action.chosenOption,
+        decidedById: action.decidedById,
       })
       const undoable = !def.external && result.undoable !== false
       const emit = result.emit ?? []

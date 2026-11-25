@@ -6,6 +6,7 @@ import {
   type RecordHeaderState,
   type RecordKind,
 } from '@indus/ops-core'
+import { opsDb } from '@indus/ops-db'
 import { cache } from 'react'
 import { env, type OpsEnv } from '../lib/env'
 
@@ -22,8 +23,57 @@ export type { RecordHeaderState, RecordKind }
  */
 export const getRecordHeaderState = cache(
   async (kind: RecordKind, ref: string): Promise<RecordHeaderState | null> =>
+    (kind === 'enquiry' ? await enquiryHeader(ref) : null) ??
     recordHeaderFixture(kind, ref, env().APP_ENV)
 )
+
+const DAY = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', day: 'numeric', month: 'short' })
+const fmtDay = (d: Date) => DAY.format(d).replace('Sept', 'Sep')
+
+/**
+ * S08-T06: an enquiry created in Ops (from an email card, an upload or typed lines) has a real header, so the
+ * Overview stub can show it. One read. S09 replaces this with the full cockpit query (rail, strip, CTA).
+ */
+async function enquiryHeader(ref: string): Promise<RecordHeaderState | null> {
+  const e = await opsDb.enquiry.findUnique({
+    where: { ref },
+    select: {
+      ref: true,
+      title: true,
+      clientRef: true,
+      receivedAt: true,
+      deadline: true,
+      stage: true,
+      client: { select: { id: true, name: true } },
+      _count: { select: { lines: true } },
+    },
+  })
+  if (!e) return null
+  const days = e.deadline ? Math.ceil((e.deadline.getTime() - Date.now()) / 86_400_000) : null
+  const deadline: HeaderMeta = e.deadline
+    ? {
+        label: 'Client deadline',
+        value: `${fmtDay(e.deadline)} · ${days !== null && days >= 0 ? `${days} day${days === 1 ? '' : 's'} left` : 'passed'}`,
+        ...(days !== null && days <= 7 ? { tone: 'bad' as const } : {}),
+      }
+    : { label: 'Client deadline', value: 'Not stated' }
+  return resolveHeaderState({
+    kind: 'enquiry',
+    ref: e.ref,
+    clientName: e.client?.name ?? 'Client not set',
+    clientHref: e.client ? `/clients/${e.client.id}` : '/clients',
+    title: e.title,
+    meta: [
+      { label: 'Client', value: e.client?.name ?? 'Not set' },
+      { label: 'Client ref', value: e.clientRef ?? '—' },
+      { label: 'Received', value: fmtDay(e.receivedAt) },
+      deadline,
+    ],
+    stage: e.stage,
+    did: `created with ${e._count.lines} line${e._count.lines === 1 ? '' : 's'}`,
+    threadHref: `/mail/clients?record=${e.ref}`,
+  })
+}
 
 const CLIENT = {
   name: 'Sample Client LLC',

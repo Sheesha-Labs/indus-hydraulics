@@ -8,6 +8,7 @@ import {
   noteReading,
   startCapture,
 } from '../../server/intake/capture'
+import { requestEnquiryWhenSettled } from '../../server/intake/email-body'
 import { annotateSameAsBefore } from '../../server/intake/past-line'
 import { mapSheetFile } from '../../server/intake/sheet-map'
 import { assistantRun } from '../assistant/run'
@@ -50,16 +51,19 @@ export const captureDocument = defineOpsFunction(
       const inspection = await step.run('inspect', () => inspectFile(start.file!))
       if (inspection.zip?.expand) {
         const r = await step.run('expand', () => expandArchive(intakeFileId, start))
+        await step.run('settled', () => requestEnquiryWhenSettled(start.batchId))
         return { expanded: r.added, refused: r.refused.length }
       }
       if (inspection.failure) {
         await step.run('fail', () => failFile(intakeFileId, start.batchId, inspection.failure!))
+        await step.run('settled', () => requestEnquiryWhenSettled(start.batchId))
         return { status: 'needs_attention', failure: inspection.failure.kind }
       }
       await step.run('progress', () => noteReading(intakeFileId, start.batchId, inspection))
       if (inspection.sheet) {
         // A spreadsheet is mapped in code from its cells; the person checks the mapping on board 35.
         const r = await step.run('map-sheet', () => mapSheetFile(intakeFileId))
+        await step.run('settled', () => requestEnquiryWhenSettled(start.batchId))
         return { status: 'ready', lines: r.lines, remembered: r.remembered }
       }
     }
@@ -77,6 +81,8 @@ export const captureDocument = defineOpsFunction(
     )
     if (email && status === 'ready')
       await step.run('same-as-before', () => annotateSameAsBefore(intakeFileId))
+    // #4: the Assistant's own mail intake asks for its Create enquiry card once every file is settled.
+    await step.run('settled', () => requestEnquiryWhenSettled(start.batchId))
     return { status }
   }
 )

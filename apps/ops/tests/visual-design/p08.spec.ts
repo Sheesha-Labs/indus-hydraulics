@@ -530,3 +530,19 @@ test('board-36 parity: read lines from email', async ({ page, signedInAs }) => {
     'Neutral sender, client, part numbers and references; the body is drawn from the stored plain text (tables framed in code), not the HTML part; the quotation number is generated; Continue waits while the attachment is still queued (the board shows it enabled), so its lines cannot miss the enquiry.'
   )
 })
+
+test('board-92 parity: create enquiry from email', async ({ page, signedInAs }) => {
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/_kit/create-enquiry')
+  await expect(page.getByRole('heading', { name: 'New enquiry without an email' })).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '92',
+    0.1,
+    'Neutral sender, client and references; the variant button reads "Open revision impact" without the board number; the manual card has no client list in the sheet.'
+  )
+})

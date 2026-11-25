@@ -2145,6 +2145,8 @@ model NumberSequence {
   seededAt        DateTime?       @db.Timestamptz(3)
   seededById      String?         @db.Uuid
   seedEvidence    Json?
+  /// S08-T06: an outside allocator reached this sequence's block (ops.numbering.continuity).
+  outOfStepAt     DateTime?       @db.Timestamptz(3)
   updatedAt       DateTime        @updatedAt @db.Timestamptz(3)
 
   counters     NumberCounter[]

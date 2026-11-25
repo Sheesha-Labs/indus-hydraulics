@@ -1,5 +1,6 @@
 import 'server-only'
 import { opsDb, Prisma, type $Enums } from '@indus/ops-db'
+import { ensureEnquiryYear } from '../numbering/enquiry-seed'
 import { SafeError } from '../../lib/safe-message'
 import { uuid7 } from '../../lib/uuid7'
 import { writeTracked } from '../assistant/write-tracked'
@@ -42,18 +43,29 @@ export interface FromBatchResult {
   lineCount: number
   /** Unsure candidates left on the batch: one question card each (S08-T06). */
   unsureIds: string[]
+  /** A new year's series was seeded by this allocation (1 January): tell the Owner after commit. */
+  yearSeeded: { ref: string; legacyMax: number } | null
 }
 
 function dubaiYear(now: Date): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai', year: 'numeric' }).format(now)
 }
 
-export async function allocateEnquiryRef(tx: Tx, enquiryId: string, now: Date): Promise<string> {
+export async function allocateEnquiryRef(
+  tx: Tx,
+  enquiryId: string,
+  now: Date
+): Promise<{ ref: string; yearSeeded: { ref: string; legacyMax: number } | null }> {
+  // A year with no counter yet seeds itself at the website admin's max + 1000 (C5).
+  const seeded = await ensureEnquiryYear(tx, Number(dubaiYear(now)))
   try {
     const [row] = await tx.$queryRaw<Array<{ formatted: string }>>`
       SELECT formatted FROM ops.allocate_number('enquiry', ${dubaiYear(now)}, 'enquiry'::ops."RecordType", ${enquiryId}::uuid)`
     if (!row) throw new Error('allocate_number returned no row')
-    return row.formatted
+    return {
+      ref: row.formatted,
+      yearSeeded: seeded.seeded ? { ref: seeded.ref, legacyMax: seeded.legacyMax } : null,
+    }
   } catch (e) {
     if (/not seeded/i.test((e as Error).message))
       throw new SafeError(
@@ -133,7 +145,7 @@ export async function createEnquiryFromBatch(tx: Tx, i: FromBatchInput): Promise
     throw new SafeError('There are no lines to create an enquiry from.')
 
   const id = uuid7(now.getTime())
-  const ref = await allocateEnquiryRef(tx, id, now)
+  const { ref, yearSeeded } = await allocateEnquiryRef(tx, id, now)
   const first = writable[0]?.description ?? b.candidates[0]?.description ?? 'Enquiry'
   const title =
     (i.title ?? b.mailMessage?.subject ?? first)
@@ -238,7 +250,7 @@ export async function createEnquiryFromBatch(tx: Tx, i: FromBatchInput): Promise
     }
   )
   await bumpIntake(b.id, tx)
-  return { enquiryId: id, ref, lineCount: writable.length, unsureIds }
+  return { enquiryId: id, ref, lineCount: writable.length, unsureIds, yearSeeded }
 }
 
 /**

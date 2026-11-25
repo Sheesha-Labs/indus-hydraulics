@@ -1,7 +1,9 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { after } from 'next/server'
 import { z } from 'zod'
+import { notifyYearSeeded } from '../../../../../../server/numbering/enquiry-seed'
 import { defineAction } from '../../../../../../lib/define-action'
 import { SafeError } from '../../../../../../lib/safe-message'
 import { requestActionQuietly } from '../../../../../../server/assistant/request'
@@ -150,6 +152,7 @@ export const confirmExtractionAction = defineAction({
   idempotent: (input) => input.batchId,
   handler: async (input, ctx) => {
     const out = await confirmIntakeAsPerson(ctx.user, input.batchId, {}, ctx.withTx)
+    if (out.yearSeeded) after(() => notifyYearSeeded(out.yearSeeded!))
     revalidatePath('/enquiries')
     return refresh({ ref: out.ref, unsure: out.unsureIds.length }, input.batchId)
   },

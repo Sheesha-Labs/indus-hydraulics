@@ -96,7 +96,9 @@ export default function ReviewWorkspace({ model }: { model: ReviewModel }) {
             <p className="text-io-ink-3 m-0 px-5 py-6 text-[13px]">
               {model.reading
                 ? 'Still reading the files: lines appear here as each one is read.'
-                : 'No lines were read from these files.'}
+                : model.files.length
+                  ? 'No lines were read from these files.'
+                  : 'Type the lines one by one: add a line, then fill its description, part no. and quantity.'}
             </p>
           )}
           <div className="flex flex-col gap-3 px-5 py-4">
@@ -176,7 +178,7 @@ export default function ReviewWorkspace({ model }: { model: ReviewModel }) {
                 }
               />
             ))}
-            {!locked && model.lines.length ? (
+            {!locked && (model.lines.length || !model.files.length) ? (
               <div>
                 <Button
                   variant="ghost"

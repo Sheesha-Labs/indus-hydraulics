@@ -242,3 +242,39 @@ export async function getQueue(opts: {
     })),
   }
 }
+
+/**
+ * Board 92 manual card: the clients to pick from (name order, the first 300) and what is already on the batch.
+ * One read each, in one transaction.
+ */
+export async function getManualEnquiry(batchId: string | null): Promise<{
+  clients: Array<{ id: string; name: string }>
+  facts: { clientCompanyId: string | null; clientRef: string | null; deadline: string | null }
+  hasFiles: boolean
+}> {
+  const [clients, batch] = await opsDb.$transaction([
+    opsDb.company.findMany({ orderBy: { name: 'asc' }, take: 300, select: { id: true, name: true } }),
+    opsDb.intakeBatch.findMany({
+      where: { id: batchId ?? '00000000-0000-0000-0000-000000000000' },
+      take: 1,
+      select: {
+        clientCompanyId: true,
+        clientRef: true,
+        deadline: true,
+        _count: { select: { files: true } },
+      },
+    }),
+  ])
+  const b = batch[0]
+  return {
+    clients,
+    facts: {
+      clientCompanyId: b?.clientCompanyId ?? null,
+      clientRef: b?.clientRef ?? null,
+      deadline: b?.deadline
+        ? new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai' }).format(b.deadline)
+        : null,
+    },
+    hasFiles: (b?._count.files ?? 0) > 0,
+  }
+}

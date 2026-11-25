@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   addWorkingDays,
+  workingDaysBetween,
   isWorkingDay,
   nextWorkingDay,
   ramadanWindow,
@@ -85,5 +86,39 @@ describe('working days', () => {
     expect(ramadanWindow(d('2027-02-09'), 'AE', HOLIDAYS)).toEqual({ start: '10:00', end: '15:00' })
     expect(ramadanWindow(d('2027-02-09'), 'SA', HOLIDAYS)).toBeNull()
     expect(ramadanWindow(d('2026-11-23'), 'AE', HOLIDAYS)).toBeNull()
+  })
+})
+
+describe('workingDaysBetween', () => {
+  it('counts working days after the start, up to the end', () => {
+    const w = { default: [6, 0], byCountry: {} }
+    // Thu 24 Sep 2026 → Mon 28 Sep 2026: Fri and Mon (Sat, Sun are the weekend) = 2.
+    expect(
+      workingDaysBetween(
+        { year: 2026, month: 9, day: 24 },
+        { year: 2026, month: 9, day: 28 },
+        'AE',
+        [],
+        w
+      )
+    ).toBe(2)
+    expect(
+      workingDaysBetween(
+        { year: 2026, month: 9, day: 24 },
+        { year: 2026, month: 9, day: 24 },
+        'AE',
+        [],
+        w
+      )
+    ).toBe(0)
+    expect(
+      workingDaysBetween(
+        { year: 2026, month: 9, day: 24 },
+        { year: 2026, month: 9, day: 1 },
+        'AE',
+        [],
+        w
+      )
+    ).toBe(0)
   })
 })
