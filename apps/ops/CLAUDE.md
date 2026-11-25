@@ -374,6 +374,7 @@ function ships.
 | `ops.budget.thresholds` | `ops/ai.spent` (debounce 60 s; 80 % and 100 % notices once a month) | house | 2 | exempt | S07 |
 | `ops.preferences.learn` | cron `TZ=Asia/Dubai 0 1 * * *` (signals → groups ≥ 3 → one Message Batch) | house | 2 | skip | S07 |
 | `ops.preferences.batch.poll` | cron `*/10 * * * *` (ended batch → linted Preference rows) | house | 2 | skip | S07 |
+| `ops.capture.document` | `ops/document.capture.requested` (cancelOn `ops/document.capture.cancelled`; invokes `ops.assistant.run` for extract_lines) | live + intakeFileId · 1 | 2 | wait | S08 |
 
 ## 17. Assistant actions
 

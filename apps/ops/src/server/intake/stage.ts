@@ -22,6 +22,9 @@ export async function stageCandidates(
   if (i.fileId) {
     const already = await tx.intakeLineCandidate.count({ where: { fileId: i.fileId } })
     if (already) return { created: 0, toCheck: 0 }
+    // A person cancelled or removed the file while it was being read: its lines are not wanted.
+    const f = await tx.intakeFile.findUnique({ where: { id: i.fileId }, select: { status: true } })
+    if (!f || f.status === 'cancelled' || f.status === 'removed') return { created: 0, toCheck: 0 }
   }
   const last = await tx.intakeLineCandidate.aggregate({
     where: { batchId: i.batchId },

@@ -325,6 +325,8 @@ async function stage(
     where: { id: fileId },
     select: { id: true, batchId: true, linesFound: true, status: true },
   })
+  if (file.status === 'cancelled' || file.status === 'removed')
+    return { note: 'The file was taken out of the queue' }
   if (o.failure) {
     await writeTracked(
       tx,
