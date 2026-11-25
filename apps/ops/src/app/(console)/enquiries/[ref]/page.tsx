@@ -2,6 +2,7 @@ import { Chip } from '@indus/ops-ui/status'
 import type { Route } from 'next'
 import Link from 'next/link'
 import Arrives from '../../../../components/skeleton/Arrives'
+import { AckSkipped } from '../../../../components/enquiry/AckStates'
 import { getEnquiryOverview } from '../../../../data/enquiry-overview'
 import { requireOpsUser } from '../../../../lib/access'
 import { signInFor } from '../../../../lib/page-access'
@@ -49,6 +50,9 @@ export default async function EnquiriesRefPage({ params }: { params: Promise<{ r
           ) : null}
         </h2>
       </div>
+      {o.ackSkipped ? (
+        <AckSkipped text={o.ackSkipped.text} preferenceHref="/assistant/learned" />
+      ) : null}
       <table className="rounded-io-card border-io-line bg-io-card w-full border-separate border-spacing-0 overflow-hidden border text-[13px]">
         <thead>
           <tr className="text-io-ink-3 text-left text-[10.5px] tracking-[0.12em] uppercase">

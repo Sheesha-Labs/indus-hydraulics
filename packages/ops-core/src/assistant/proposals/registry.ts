@@ -80,6 +80,9 @@ const ACTION_KIND = new Map<string, ProposalKind | string>([
   ['resend_alternate_contact', 'email'],
   ['manual_reply', 'email'],
   ['correction_email', 'email'],
+  // S08: the client acknowledgement (#6) and the request for an original file (board 17) are emails.
+  ['ack_email', 'email'],
+  ['request_original', 'email'],
   ['outbound_attention', 'outbound_attention'],
 ])
 

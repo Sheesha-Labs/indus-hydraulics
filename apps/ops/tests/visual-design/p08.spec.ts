@@ -546,3 +546,17 @@ test('board-92 parity: create enquiry from email', async ({ page, signedInAs }) 
     'Neutral sender, client and references; the variant button reads "Open revision impact" without the board number; the manual card has no client list in the sheet.'
   )
 })
+
+test('board-93 parity: acknowledge client', async ({ page, signedInAs }) => {
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/_kit/ack-email')
+  await expect(page.getByRole('region', { name: 'Why 26 Sep' })).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '93',
+    0.05,
+    'Neutral sender, client, signature and references; the steps come from computeRevertBy for received 24 Sep, closing 28 Sep.'
+  )
+})

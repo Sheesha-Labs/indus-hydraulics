@@ -22,6 +22,7 @@ export { default as OptionGroup, type OptionGroupProps } from './OptionGroup'
 export { default as Highlight } from './Highlight'
 export { default as SourceQuote } from './SourceQuote'
 export { default as UnsureRow } from './UnsureRow'
+export { default as WhyDate, type WhyDateProps } from './WhyDate'
 export { formatAge, formatLaterUntil } from './age'
 export type {
   AutonomyLevel,

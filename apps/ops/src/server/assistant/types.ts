@@ -204,6 +204,16 @@ export interface ActionDefinition<In = Json, Out = Json> {
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
   /**
+   * S08-T07: what an external action records when its email is queued (inside the transaction that moves it to
+   * queued), e.g. the acknowledgement's revert-by date on the enquiry. Its undo is an undo-release hook
+   * (undo-hooks.ts), so cancelling the send takes it back. writeTracked only.
+   */
+  onScheduled?(
+    tx: Prisma.TransactionClient,
+    verified: Verified<Out>,
+    ctx: { actionId: string; request: ActionRequest; decidedById: string }
+  ): Promise<void>
+  /**
    * S07-T01: the facts guardrails look at for this run (value, someone new, credit hold, chaser counts …),
    * cheap reads only. The clock (working hours, holidays) and the daily cap are added by the runner for
    * external actions. Absent: no action-specific facts.

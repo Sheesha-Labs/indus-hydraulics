@@ -713,6 +713,22 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
       },
       includePendingConfident: true,
     })
+    const skip = await ackSkip(tx, o.client.companyId)
+    if (skip)
+      // Board 93 "Skipped · learned per client": no acknowledgement for this client, logged with the reason.
+      await writeTracked(
+        tx,
+        {
+          actor: { kind: 'assistant' },
+          actionId: ctx.actionId,
+          enquiryId: made.enquiryId,
+          subjectType: 'enquiry',
+          subjectId: made.enquiryId,
+          changes: [{ field: 'acknowledgement', before: null, after: 'skipped', kind: 'status' }],
+          note: skip,
+        },
+        async () => undefined
+      )
     const emit: EffectEvent[] = [
       labelEvent(messageId, ctx.actionId, made.enquiryId),
       {
@@ -720,7 +736,7 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
         id: `enquiry-created:${made.enquiryId}`,
         data: { enquiryId: made.enquiryId, ref: made.ref, actionId: ctx.actionId },
       },
-      ...requestEvents('ack_email', made.enquiryId, [made.ref]),
+      ...(skip ? [] : requestEvents('ack_email', made.enquiryId, [made.ref])),
       ...requestEvents('resolve_extracted_line', made.enquiryId, made.unsureIds),
     ]
     return {
@@ -780,6 +796,41 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
       }
     )
   },
+}
+
+/**
+ * Why a client gets no acknowledgement, or null: their profile says so, or an active learned or manual
+ * preference of kind acknowledgement_skip ("no need to acknowledge, just send the offer").
+ */
+export async function ackSkip(
+  tx: Prisma.TransactionClient,
+  companyId: string | null
+): Promise<string | null> {
+  if (!companyId) return null
+  const [profile, pref] = await Promise.all([
+    tx.clientProfile.findUnique({
+      where: { companyId },
+      select: { acknowledgeEnquiries: true, company: { select: { name: true } } },
+    }),
+    tx.preference.findFirst({
+      where: { companyId, kind: 'acknowledgement_skip', active: true, disabledAt: null },
+      orderBy: { createdAt: 'desc' },
+      select: { id: true, description: true, createdAt: true, company: { select: { name: true } } },
+    }),
+  ])
+  if (pref) {
+    const day = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Dubai',
+      day: 'numeric',
+      month: 'short',
+    })
+      .format(pref.createdAt)
+      .replace('Sept', 'Sep')
+    return `Not sent. ${pref.company?.name ?? 'The client'} asked on ${day}: “${pref.description}” · preference ${pref.id}`
+  }
+  if (profile && !profile.acknowledgeEnquiries)
+    return `Not sent. ${profile.company.name} does not want acknowledgements (client profile)`
+  return null
 }
 
 function labelEvent(messageId: string, actionId: string, enquiryId: string): EffectEvent {

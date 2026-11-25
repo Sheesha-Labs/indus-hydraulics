@@ -197,6 +197,42 @@ registerTodayProvider({
       : [],
 })
 
+/** S08-T07: acknowledgements that left today, with the promise they made. */
+registerTodayProvider({
+  section: 'done',
+  key: 'enquiry.acknowledged',
+  query: (ctx) =>
+    opsDb.outboundEmail.findMany({
+      where: { kind: 'client_acknowledgement', status: 'sent', sentAt: { gte: ctx.since } },
+      orderBy: { sentAt: 'desc' },
+      take: 20,
+      select: {
+        id: true,
+        sentAt: true,
+        enquiry: { select: { ref: true, revertBy: true, client: { select: { name: true } } } },
+      },
+    }),
+  read: (rows) =>
+    rows.flatMap((r) =>
+      r.enquiry
+        ? [
+            {
+              key: `ack:${r.id}`,
+              title: `Acknowledged ${r.enquiry.client?.name ?? r.enquiry.ref}${
+                r.enquiry.revertBy
+                  ? ` · revert by ${new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', day: 'numeric', month: 'short' }).format(r.enquiry.revertBy).replace('Sept', 'Sep')}`
+                  : ''
+              }`,
+              sub: r.enquiry.ref,
+              href: `/enquiries/${r.enquiry.ref}`,
+              hrefLabel: 'Open',
+              mark: 'ok' as const,
+            },
+          ]
+        : []
+    ),
+})
+
 registerTodayProvider({
   section: 'late',
   key: 'review.waiting',

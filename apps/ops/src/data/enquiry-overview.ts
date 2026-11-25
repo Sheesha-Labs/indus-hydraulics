@@ -18,6 +18,8 @@ export interface EnquiryOverview {
   ref: string
   lines: OverviewLine[]
   questions: number
+  /** Board 93 state 3: the acknowledgement was skipped for this client, and why. */
+  ackSkipped: { text: string; preferenceId: string | null } | null
 }
 
 export async function getEnquiryOverview(ref: string): Promise<EnquiryOverview | null> {
@@ -36,6 +38,12 @@ export async function getEnquiryOverview(ref: string): Promise<EnquiryOverview |
           extractionConfidence: true,
         },
       },
+      activity: {
+        where: { field: 'acknowledgement' },
+        orderBy: { at: 'desc' },
+        take: 1,
+        select: { note: true },
+      },
       _count: {
         select: { actions: { where: { actionKey: 'resolve_extracted_line', state: { in: ['proposed', 'later'] } } } },
       },
@@ -53,5 +61,11 @@ export async function getEnquiryOverview(ref: string): Promise<EnquiryOverview |
       confidence: l.extractionConfidence,
     })),
     questions: e._count.actions,
+    ackSkipped: e.activity[0]?.note
+      ? {
+          text: e.activity[0].note.replace(/ · preference [0-9a-f-]{36}$/, ''),
+          preferenceId: /preference ([0-9a-f-]{36})$/.exec(e.activity[0].note)?.[1] ?? null,
+        }
+      : null,
   }
 }
