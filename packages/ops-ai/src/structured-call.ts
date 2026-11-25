@@ -77,6 +77,11 @@ export interface StructuredCallInput<T> {
   system: readonly SystemPart[]
   /** The per-call text: the message under review, today's date, ids. Never cached. */
   user: string
+  /**
+   * S08: files the model reads before the text (a PDF as a document block, a page or photo as an image block).
+   * `estTokens` feeds the budget estimate, since the bytes are not text.
+   */
+  attachments?: readonly CallAttachment[]
   zod: z.ZodType<T>
   /** Defaults to `z.toJSONSchema(zod)`. */
   jsonSchema?: Record<string, unknown>
@@ -88,6 +93,45 @@ export interface StructuredCallInput<T> {
   ledger: AiLedger
   transport: Transport
   now?: () => Date
+}
+
+export type CallAttachment =
+  | {
+      type: 'document'
+      mediaType: 'application/pdf'
+      base64: string
+      title?: string
+      estTokens: number
+    }
+  | {
+      type: 'image'
+      mediaType: 'image/jpeg' | 'image/png' | 'image/webp'
+      base64: string
+      estTokens: number
+    }
+
+/** Rough token cost of a PDF for the budget estimate: text plus a page image per page (08 §2.6). */
+export function estimatePdfTokens(pages: number): number {
+  return Math.max(1, pages) * 2_300
+}
+
+function userContent(
+  user: string,
+  attachments: readonly CallAttachment[] | undefined
+): string | Anthropic.Beta.Messages.BetaContentBlockParam[] {
+  if (!attachments?.length) return user
+  return [
+    ...attachments.map((a): Anthropic.Beta.Messages.BetaContentBlockParam =>
+      a.type === 'document'
+        ? {
+            type: 'document',
+            source: { type: 'base64', media_type: a.mediaType, data: a.base64 },
+            ...(a.title ? { title: a.title } : {}),
+          }
+        : { type: 'image', source: { type: 'base64', media_type: a.mediaType, data: a.base64 } }
+    ),
+    { type: 'text', text: user },
+  ]
 }
 
 interface Attempt {
@@ -153,6 +197,8 @@ export async function structuredCall<T>(
   const now = input.now ?? (() => new Date())
   const system = buildSystem(input.system)
   const systemChars = input.system.reduce((n, p) => n + p.text.length, 0)
+  // Four characters to a token, as the estimate counts text.
+  const attachmentChars = (input.attachments ?? []).reduce((n, a) => n + a.estTokens * 4, 0)
   // Structured outputs refuse some bounds; Zod still checks them on the answer (api-schema.ts).
   const schema = apiSchema(input.jsonSchema ?? z.toJSONSchema(input.zod)) as Record<string, unknown>
   const { ledger } = input
@@ -177,7 +223,7 @@ export async function structuredCall<T>(
   const run = async (a: Attempt): Promise<AttemptOutcome> => {
     const price = await priceFor(a.model, null)
     const estUsd = estimateUsd({
-      chars: systemChars + a.user.length,
+      chars: systemChars + attachmentChars + a.user.length,
       maxTokens: a.maxTokens,
       price,
     })
@@ -193,7 +239,7 @@ export async function structuredCall<T>(
       model: a.model,
       max_tokens: a.maxTokens,
       system,
-      messages: [{ role: 'user', content: a.user }],
+      messages: [{ role: 'user', content: userContent(a.user, input.attachments) }],
       output_config: { effort, format: { type: 'json_schema', schema } },
       ...(supportsServerFallback(a.model)
         ? {

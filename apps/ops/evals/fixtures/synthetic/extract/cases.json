@@ -1,0 +1,331 @@
+[
+  {
+    "id": "pdf-table",
+    "file": "01-table.pdf",
+    "note": "One-page text PDF table",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      },
+      {
+        "description": "Hydraulic hose 1/2\" 2SN",
+        "qty": 50,
+        "partNo": "TEST-0105"
+      }
+    ]
+  },
+  {
+    "id": "pdf-continued",
+    "file": "02-continued.pdf",
+    "note": "Table running over two pages",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      },
+      {
+        "description": "Hydraulic hose 1/2\" 2SN",
+        "qty": 50,
+        "partNo": "TEST-0105"
+      },
+      {
+        "description": "Pressure gauge 0-100 bar 4\" dial",
+        "qty": 6,
+        "partNo": "TEST-0106"
+      },
+      {
+        "description": "Check valve 1\" NPT stainless",
+        "qty": 12,
+        "partNo": "TEST-0107"
+      },
+      {
+        "description": "O-ring kit nitrile metric",
+        "qty": 3,
+        "partNo": "TEST-0108"
+      }
+    ]
+  },
+  {
+    "id": "pdf-scanned",
+    "file": "03-scanned.pdf",
+    "note": "Scanned page, no text layer",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      }
+    ]
+  },
+  {
+    "id": "image-handwritten",
+    "file": "04-handwritten.jpg",
+    "note": "Printed 8 crossed out and 10 handwritten: must be Unsure",
+    "expect": [
+      {
+        "description": "Pressure gauge 0-100 bar 4\" dial",
+        "qty": null,
+        "partNo": "TEST-0106",
+        "unsure": true
+      },
+      {
+        "description": "Check valve 1\" NPT stainless",
+        "qty": 12,
+        "partNo": "TEST-0107"
+      }
+    ]
+  },
+  {
+    "id": "pdf-duplicate",
+    "file": "05-duplicate.pdf",
+    "note": "Line 3 repeated on page 2: returned once",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      },
+      {
+        "description": "Hydraulic hose 1/2\" 2SN",
+        "qty": 50,
+        "partNo": "TEST-0105"
+      }
+    ]
+  },
+  {
+    "id": "xlsx-merged-totals",
+    "file": "06-merged.xlsx",
+    "note": "Merged title, totals row ignored",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      },
+      {
+        "description": "Hydraulic hose 1/2\" 2SN",
+        "qty": 50,
+        "partNo": "TEST-0105"
+      },
+      {
+        "description": "Pressure gauge 0-100 bar 4\" dial",
+        "qty": 6,
+        "partNo": "TEST-0106"
+      }
+    ]
+  },
+  {
+    "id": "csv",
+    "file": "07-lines.csv",
+    "note": "Semicolon CSV",
+    "expect": [
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      },
+      {
+        "description": "Hydraulic hose 1/2\" 2SN",
+        "qty": 50,
+        "partNo": "TEST-0105"
+      },
+      {
+        "description": "Pressure gauge 0-100 bar 4\" dial",
+        "qty": 6,
+        "partNo": "TEST-0106"
+      },
+      {
+        "description": "Check valve 1\" NPT stainless",
+        "qty": 12,
+        "partNo": "TEST-0107"
+      }
+    ]
+  },
+  {
+    "id": "docx-table",
+    "file": "08-table.docx",
+    "note": "Word table",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      }
+    ]
+  },
+  {
+    "id": "email-table-text",
+    "file": "09-body.txt",
+    "subject": "RFQ SC-2209",
+    "note": "Table rows plus a sentence",
+    "expect": [
+      {
+        "description": "Ball valve 2\" ANSI 300 RF",
+        "qty": 10,
+        "partNo": "TEST-0101"
+      },
+      {
+        "description": "Gate valve 4\" class 150 flanged",
+        "qty": 4,
+        "partNo": "TEST-0102"
+      },
+      {
+        "description": "Pressure gauge 0-100 bar 4\" dial",
+        "qty": 6,
+        "partNo": "TEST-0106"
+      }
+    ]
+  },
+  {
+    "id": "email-forward",
+    "file": "10-forward.txt",
+    "subject": "Fwd: RFQ SC-2210",
+    "note": "Forwarded enquiry; quoted reply ignored",
+    "expect": [
+      {
+        "description": "Spiral wound gasket 2\" 300#",
+        "qty": 24,
+        "partNo": "TEST-0103"
+      },
+      {
+        "description": "Stud bolt 5/8\" x 4\" B7/2H",
+        "qty": 96,
+        "partNo": "TEST-0104"
+      }
+    ]
+  },
+  {
+    "id": "xlsx-european-decimal",
+    "file": "11-european.xlsx",
+    "note": "\"1.000\" read as 1000 because \"1,5\" proves the comma",
+    "expect": [
+      {
+        "description": "Hydraulic hose 1/2\" 2SN",
+        "qty": 1000,
+        "partNo": "TEST-0105"
+      },
+      {
+        "description": "Hose clamp 20-32 mm",
+        "qty": 250,
+        "partNo": "TEST-0109"
+      },
+      {
+        "description": "Thread sealant tape 12 mm",
+        "qty": 1.5,
+        "partNo": "TEST-0110"
+      }
+    ]
+  },
+  {
+    "id": "email-same-as-last",
+    "file": "12-same-as-last.txt",
+    "subject": "Quote please",
+    "note": "\"Same as last order\" must be Unsure",
+    "expect": [
+      {
+        "description": "Check valve 1\" NPT stainless",
+        "qty": 12,
+        "partNo": "TEST-0107"
+      },
+      {
+        "description": "O-rings, same as last order",
+        "qty": null,
+        "partNo": null,
+        "unsure": true
+      }
+    ]
+  }
+]

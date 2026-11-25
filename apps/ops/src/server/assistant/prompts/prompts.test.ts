@@ -8,6 +8,7 @@ import * as ooo from './ooo-facts.v1'
 import * as resend from './resend-alternate-contact.v1'
 import * as translate from './translate-mail.v1'
 import * as learn from './learn-preferences.v1'
+import * as extract from './extract-lines.v1'
 
 /**
  * Prompts are versioned code (CLAUDE.md §9.9): the text of a released version never changes. A different
@@ -22,16 +23,20 @@ const RELEASED: Record<string, string> = {
   'resend-alternate-contact@1': '957e3f85e14a162c8d2629c19910472c96eac09fe6c987942d64cf4372e2ba2f',
   'translate-mail@1': 'd4643fce28d6c1c47ef3efe359c8f22bac64c411e8980d8c510d6dd5a3abf32c',
   'learn-preferences@1': '4af52fc51f3b22016858511e83ab0373a16a6938c1957b527790b6ddf3a280e6',
+  'extract_lines@1': 'c7bcfaa0825753c1ccf7cafc5c7d4e175a1db84f368ac85e1e606bf6a4379438',
 }
 
 describe('released prompts are byte-stable', () => {
-  it.each([classify, link, ooo, askOpenCopy, resend, translate, learn])('$PROMPT_VERSION', (m) => {
-    const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
-    expect(hash).toBe(RELEASED[m.PROMPT_VERSION])
-    // and cacheable: no timestamps or ids in system text, one 1 h breakpoint on the last part
-    const blocks = buildSystem(m.SYSTEM_PARTS)
-    expect(blocks.at(-1)?.cache_control).toEqual({ type: 'ephemeral', ttl: '1h' })
-  })
+  it.each([classify, link, ooo, askOpenCopy, resend, translate, learn, extract])(
+    '$PROMPT_VERSION',
+    (m) => {
+      const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
+      expect(hash).toBe(RELEASED[m.PROMPT_VERSION])
+      // and cacheable: no timestamps or ids in system text, one 1 h breakpoint on the last part
+      const blocks = buildSystem(m.SYSTEM_PARTS)
+      expect(blocks.at(-1)?.cache_control).toEqual({ type: 'ephemeral', ttl: '1h' })
+    }
+  )
 
   it('the user turn carries the per-message values, not the system', () => {
     const u = classify.classifyUser({

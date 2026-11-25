@@ -92,7 +92,15 @@ export interface ActionAi {
   call<T>(
     args: Pick<
       StructuredCallInput<T>,
-      'system' | 'user' | 'zod' | 'jsonSchema' | 'maxTokens' | 'promptVersion' | 'model' | 'effort'
+      | 'system'
+      | 'user'
+      | 'attachments'
+      | 'zod'
+      | 'jsonSchema'
+      | 'maxTokens'
+      | 'promptVersion'
+      | 'model'
+      | 'effort'
     > & { route: Route; purpose?: AiPurpose }
   ): Promise<StructuredResult<T>>
 }

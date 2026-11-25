@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { resolveSpan, resolveSpans, type SpanSource } from './resolve'
+import { resolveInRow, resolveSpan, resolveSpans, type SpanSource } from './resolve'
 
 const pdf: SpanSource = {
   kind: 'pdf',
@@ -120,5 +120,70 @@ describe('resolveSpans', () => {
         { field: 'qty', quote: '10 nos' }
       ).resolved
     ).toBe('unresolved')
+  })
+})
+
+describe('resolveInRow', () => {
+  const page = {
+    kind: 'pdf' as const,
+    sourceId: '00000000-0000-0000-0000-000000000001',
+    hasTextLayer: true,
+    pages: [
+      {
+        page: 1,
+        text: 'Date 4 Nov 1 Gate valve TEST-0102 4 NOS',
+        items: [
+          { start: 0, end: 10, x: 40, y: 20, w: 80, h: 10 },
+          { start: 11, end: 12, x: 40, y: 100, w: 6, h: 10 },
+          { start: 13, end: 23, x: 70, y: 100, w: 80, h: 10 },
+          { start: 24, end: 33, x: 330, y: 100, w: 60, h: 10 },
+          { start: 34, end: 35, x: 420, y: 100, w: 6, h: 10 },
+          { start: 36, end: 39, x: 460, y: 100, w: 20, h: 10 },
+        ],
+      },
+    ],
+  }
+  it('a one-character quantity is found on the description row, not in the date above', () => {
+    const anchor = resolveSpan(page, { field: 'description', quote: 'Gate valve', page: 1 })
+    const s = resolveInRow(page, { field: 'qty', quote: '4', page: 1 }, anchor)
+    expect(s).toMatchObject({ resolved: 'exact', charStart: 34, bbox: { x: 420, y: 100 } })
+  })
+  it('text: the anchor line only', () => {
+    const src = {
+      kind: 'email' as const,
+      sourceId: page.sourceId,
+      text: 'On 4 Nov:\n2 | Gate valve | 4 nos',
+      textHash: 'h',
+    }
+    const anchor = resolveSpan(src, { field: 'description', quote: 'Gate valve' })
+    expect(resolveInRow(src, { field: 'qty', quote: '4' }, anchor)).toMatchObject({
+      resolved: 'exact',
+      charStart: 27,
+    })
+  })
+  it('sheet: the anchor row', () => {
+    const src = {
+      kind: 'sheet' as const,
+      sourceId: page.sourceId,
+      sheets: [
+        {
+          name: 'S',
+          rows: [
+            {
+              r: 4,
+              cells: [
+                { c: 'B', v: 'Gate valve' },
+                { c: 'D', v: '4' },
+              ],
+            },
+          ],
+        },
+      ],
+    }
+    const anchor = resolveSpan(src, { field: 'description', quote: 'Gate valve' })
+    expect(resolveInRow(src, { field: 'qty', quote: '4' }, anchor)).toMatchObject({
+      resolved: 'exact',
+      cellRef: 'D4',
+    })
   })
 })

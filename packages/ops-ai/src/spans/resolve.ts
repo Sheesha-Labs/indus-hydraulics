@@ -176,3 +176,71 @@ export function resolveSpans(src: SpanSource, evidence: readonly Evidence[]): So
 export function isResolved(s: Pick<SourceSpanDraft, 'resolved'>): boolean {
   return s.resolved !== 'unresolved'
 }
+
+/**
+ * A short value (a quantity "4", a unit "EA") is found on its line's own row, never anywhere on the page: "4" also
+ * sits in a date, a page number and other lines. The anchor is the line's resolved description span. PDF: the
+ * text items on the anchor's row (vertical overlap); text (email, Word): the anchor's line; sheet: the anchor's row.
+ */
+export function resolveInRow(
+  src: SpanSource,
+  ev: Evidence,
+  anchor: SourceSpanDraft
+): SourceSpanDraft {
+  const out = base(src, ev)
+  const q = ev.quote.trim().toLowerCase()
+  if (!q || anchor.resolved === 'unresolved') return out
+  const wholeWord = (hay: string) => {
+    const i = hay
+      .toLowerCase()
+      .search(
+        new RegExp(`(^|[^0-9a-z.,])${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^0-9a-z.,])`)
+      )
+    return i < 0 ? -1 : hay.toLowerCase().indexOf(q, i)
+  }
+  if (src.kind === 'pdf' && anchor.page !== null && anchor.bbox) {
+    const page = src.pages.find((p) => p.page === anchor.page)
+    const top = anchor.bbox.y
+    const bottom = anchor.bbox.y + anchor.bbox.h
+    for (const item of page?.items ?? []) {
+      const mid = item.y + item.h / 2
+      if (mid < top - 1 || mid > bottom + 1) continue
+      const str = page!.text.slice(item.start, item.end)
+      const at = wholeWord(str)
+      if (at < 0) continue
+      return {
+        ...out,
+        page: anchor.page,
+        charStart: item.start + at,
+        charEnd: item.start + at + q.length,
+        bbox: { x: item.x, y: item.y, w: item.w, h: item.h },
+        resolved: 'exact',
+      }
+    }
+    return { ...out, page: anchor.page }
+  }
+  if ((src.kind === 'email' || src.kind === 'docx') && anchor.charStart !== null) {
+    const ls = src.text.lastIndexOf('\n', anchor.charStart - 1) + 1
+    const le = src.text.indexOf('\n', anchor.charStart)
+    const line = src.text.slice(ls, le < 0 ? undefined : le)
+    const at = wholeWord(line)
+    if (at < 0) return { ...out, ...(src.kind === 'email' ? { textHash: src.textHash } : {}) }
+    return {
+      ...out,
+      ...(src.kind === 'email' ? { textHash: src.textHash } : {}),
+      charStart: ls + at,
+      charEnd: ls + at + q.length,
+      cellRef: anchor.cellRef,
+      resolved: 'exact',
+    }
+  }
+  if (src.kind === 'sheet' && anchor.cellRef && anchor.sheet) {
+    const r = Number(anchor.cellRef.replace(/^[A-Z]+/, ''))
+    const row = src.sheets.find((s) => s.name === anchor.sheet)?.rows.find((x) => x.r === r)
+    const cell =
+      row?.cells.find((c) => c.v.trim().toLowerCase() === q) ??
+      row?.cells.find((c) => wholeWord(c.v) >= 0)
+    if (cell) return { ...out, sheet: anchor.sheet, cellRef: `${cell.c}${r}`, resolved: 'exact' }
+  }
+  return out
+}
