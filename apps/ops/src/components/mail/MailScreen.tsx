@@ -98,6 +98,7 @@ export default async function MailScreen({
         <AssistantPane
           thread={thread}
           linkHref={`/mail/${folder}/${thread.id}${linkQuery(search)}`}
+          readLinesHref={`/mail/${folder}/${thread.id}/read-lines`}
         />
       </div>
     )

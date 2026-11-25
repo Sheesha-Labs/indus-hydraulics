@@ -7,6 +7,9 @@ import {
   type SpanSource,
 } from '@indus/ops-ai'
 import {
+  emailBodyRegions,
+  segmentEmail,
+  sourceOfRange,
   computeLineConfidence,
   detectDecimalConvention,
   looksLikePartNumber,
@@ -98,12 +101,12 @@ function sourceDetailOf(src: SpanSource, spans: readonly SourceSpanDraft[]): str
   const d = spans.find((s) => s.field === 'description' && isResolved(s))
   if (!d) return null
   if (src.kind === 'sheet') return d.cellRef ? `R${d.cellRef.replace(/^[A-Z]+/, '')}` : null
-  if (src.kind === 'email' && d.charStart !== null) {
-    const lineStart = src.text.lastIndexOf('\n', d.charStart - 1) + 1
-    const lineEnd = src.text.indexOf('\n', d.charStart)
-    const line = src.text.slice(lineStart, lineEnd < 0 ? undefined : lineEnd)
-    return /\t|\|/.test(line) ? 'table' : 'text'
-  }
+  if (src.kind === 'email' && d.charStart !== null)
+    // The same rule board 36 draws with: inside a table region of the body, or a sentence.
+    return sourceOfRange(emailBodyRegions(src.text, segmentEmail(src.text)), [
+      d.charStart,
+      d.charEnd ?? d.charStart,
+    ])
   if (src.kind === 'docx') return d.cellRef ? 'table' : 'text'
   return null
 }

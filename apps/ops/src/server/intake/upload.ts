@@ -138,7 +138,12 @@ export async function verifyIntakeObject(
   return { kind: spec.kind, mime: s.mime, sizeBytes: size, sha256: hash.digest('hex') }
 }
 
-async function requestCapture(intakeFileId: string, sha256: string): Promise<void> {
+/** The intake kind a file name maps to, or null when intake does not read it. */
+export function intakeKindOf(name: string): 'pdf' | 'sheet' | 'docx' | 'image' | 'zip' | null {
+  return ALLOWED[extOf(name)]?.kind ?? null
+}
+
+export async function requestCapture(intakeFileId: string, sha256: string): Promise<void> {
   await emitEventOrThrow({
     name: CAPTURE_REQUESTED,
     id: `capture:${intakeFileId}:${sha256}`,

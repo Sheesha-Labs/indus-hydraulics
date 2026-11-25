@@ -103,6 +103,8 @@ describe.skipIf(!DB_URL)('intake review · local database', () => {
         where: { id: { in: enquiries } },
         data: { closedReason: 'other', closeNote: 'test', closedAt: new Date() },
       })
+    // Each test file has its own client under --isolate=modules: release it, or a full run passes ops_app's 15.
+    await opsDb.$disconnect()
   })
 
   it('flags the repeat of line 1 as a duplicate', async () => {

@@ -1,4 +1,8 @@
+import { randomUUID } from 'node:crypto'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { opsDb as db } from '@indus/ops-db'
+import { runStep } from '../support/steps'
 import { DEMO_EMAILS, expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
 import { compareToBoardPng, recordParity } from './compare'
@@ -298,5 +302,231 @@ test('board-17 parity: intake exceptions', async ({ page, signedInAs }) => {
     '17',
     0.04,
     'Neutral client name and reference; the board titles the revision CRQ-2411 but its button says ENQ-2026-0411, and the sheet uses the ENQ ref in both.'
+  )
+})
+
+test('board-35 parity: map spreadsheet columns', async ({ page, signedInAs }) => {
+  const company = await db.company.create({
+    data: { name: 'Sample Marine Engineering' },
+    select: { id: true },
+  })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/enquiries/new')
+  const chooser = page.getByLabel('Choose enquiry files')
+  await expect(chooser).toHaveAttribute('data-ready', 'true', { timeout: 90_000 })
+  await chooser.setInputFiles({
+    name: 'SC-Spares-List_Q4.xlsx',
+    mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    buffer: readFileSync(
+      join(process.cwd(), 'src', 'server', 'intake', 'parse', '__fixtures__', 'spares.xlsx')
+    ),
+  })
+  await expect(page).toHaveURL(/batch=/, { timeout: 60_000 })
+  const batchId = new URL(page.url()).searchParams.get('batch')!
+  batches.push(batchId)
+  await db.intakeBatch.update({ where: { id: batchId }, data: { clientCompanyId: company.id } })
+  const file = await db.intakeFile.findFirstOrThrow({ where: { batchId }, select: { id: true } })
+  runStep('map-sheet', file.id)
+  await page.goto(`/enquiries/intake/${batchId}/map?file=${file.id}`)
+  await expect(
+    page.getByRole('heading', { name: 'Map spreadsheet columns', level: 1 })
+  ).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '35',
+    0.08,
+    'Neutral title, client and part numbers; no formula text (the parser keeps cached values only), so the fx bar names the count; the client is named from the intake, not from row 2.'
+  )
+})
+
+test('board-36 parity: read lines from email', async ({ page, signedInAs }) => {
+  const mailbox = await db.mailbox.findFirstOrThrow({ select: { id: true } })
+  const domain = `parity${Date.now()}.example.test`
+  const company = await db.company.create({
+    data: { name: 'Sample Marine Engineering', domains: [domain] },
+    select: { id: true },
+  })
+  const body = [
+    'Dear Indus team,',
+    '',
+    'Please quote your best price and delivery for the below, required onboard by 30 Sep.',
+    '',
+    'Item\tDescription\tP/N\tQty',
+    '1\tHose 1" 4SH, 1.5 m, JIC F/F\t\t6 nos',
+    '2\tHose 1/4" 2SN, 1 m, JIC F/F\t\t20 nos',
+    '3\tDirectional valve NG10, 24 VDC\tTEST-NG10-24\t2 nos',
+    '4\tRelief valve cartridge 350 bar\tTEST-RV-10-350\t4 nos',
+    '5\tSeal kit, cylinder 80/45\tTEST-SK-80-45\t3 sets',
+    '6\tReturn filter element\tTEST-HF-10-220\t6 nos',
+    '',
+    'Also need 4 nos pressure gauge 0-250 bar, same as last order.',
+    '',
+    'Drawing of the HPU attached for reference.',
+    '',
+    'Best regards,',
+    'Sample Buyer',
+    'Purchasing · Sample Marine Engineering',
+    '',
+    'On 2 Sep 2026, Example Sales <sales@example.test> wrote:',
+    '> Dear buyer, please find our quotation attached for the gauges and fittings.',
+  ].join('\n')
+  const thread = await db.mailThread.create({
+    data: { mailboxId: mailbox.id, gmailThreadId: `t-parity-${randomUUID()}` },
+    select: { id: true },
+  })
+  const stored = await db.storedFile.create({
+    data: {
+      bucket: 'ops-mail',
+      path: `parity/${randomUUID()}/hpu-drawing.pdf`,
+      filename: 'HPU_drawing.pdf',
+      mimeType: 'application/pdf',
+      sizeBytes: 1_258_291,
+      sha256: 'e'.repeat(64),
+      source: 'gmail_attachment',
+    },
+    select: { id: true },
+  })
+  const msg = await db.mailMessage.create({
+    data: {
+      mailboxId: mailbox.id,
+      threadId: thread.id,
+      gmailMessageId: `g-parity-${randomUUID()}`,
+      direction: 'inbound',
+      fromAddress: `buyer@${domain}`,
+      fromName: 'Sample Buyer',
+      toAddresses: ['sales@example.test'],
+      ccAddresses: [],
+      subject: 'RFQ – hydraulic spares MV Sample / SC-RFQ-0924',
+      bodyText: body,
+      bodyTextHash: randomUUID(),
+      sentAt: new Date('2026-09-22T06:14:00Z'),
+      labelsApplied: [],
+      origin: 'live',
+      hasAttachments: true,
+      attachments: {
+        create: [
+          {
+            gmailAttachmentId: `a-${randomUUID()}`,
+            filename: 'HPU_drawing.pdf',
+            sizeBytes: 1_258_291,
+            fileId: stored.id,
+          },
+        ],
+      },
+    },
+    select: { id: true },
+  })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/mail/inbox/${thread.id}/read-lines`)
+  await expect
+    .poll(async () => db.intakeBatch.count({ where: { mailMessageId: msg.id } }), {
+      timeout: 90_000,
+    })
+    .toBe(1)
+  const b = await db.intakeBatch.findFirstOrThrow({
+    where: { mailMessageId: msg.id },
+    select: { id: true, files: { select: { id: true, kind: true } } },
+  })
+  batches.push(b.id)
+  const bodyFile = b.files.find((f) => f.kind === 'email')!
+  const rows: Array<[string, string | null, number, string, 'table' | 'text', string]> = [
+    ['Hose 1" 4SH, 1.5 m, JIC F/F', null, 6, 'EA', 'table', 'Hose 1" 4SH, 1.5 m, JIC F/F'],
+    ['Hose 1/4" 2SN, 1 m, JIC F/F', null, 20, 'EA', 'table', 'Hose 1/4" 2SN, 1 m, JIC F/F'],
+    ['Directional valve NG10, 24 VDC', 'TEST-NG10-24', 2, 'EA', 'table', 'Directional valve NG10'],
+    [
+      'Relief valve cartridge 350 bar',
+      'TEST-RV-10-350',
+      4,
+      'EA',
+      'table',
+      'Relief valve cartridge',
+    ],
+    ['Seal kit, cylinder 80/45', 'TEST-SK-80-45', 3, 'SET', 'table', 'Seal kit, cylinder 80/45'],
+    ['Return filter element', 'TEST-HF-10-220', 6, 'EA', 'table', 'Return filter element'],
+    ['Pressure gauge 0-250 bar', 'TEST-PG-250-G', 4, 'EA', 'text', 'pressure gauge 0-250 bar'],
+  ]
+  for (const [i, [description, partNo, qty, uom, detail, quote]] of rows.entries()) {
+    const at = body.indexOf(quote)
+    const span = await db.sourceSpan.create({
+      data: {
+        sourceKind: 'email',
+        sourceId: msg.id,
+        charStart: at,
+        charEnd: at + quote.length,
+        quote,
+        resolved: 'exact',
+      },
+      select: { id: true },
+    })
+    await db.intakeLineCandidate.create({
+      data: {
+        batchId: b.id,
+        fileId: bodyFile.id,
+        ord: i + 1,
+        description,
+        partNo,
+        qty,
+        uom,
+        uomRaw: uom === 'SET' ? 'sets' : 'nos',
+        confidence: partNo ? 'sure' : 'likely',
+        reasons: partNo ? [] : ['No part no. · matched by description'],
+        sourceKind: 'email',
+        sourceDetail: detail,
+        spanIds: [span.id],
+        fieldSpans: { description: span.id },
+      },
+    })
+  }
+  await db.intakeFile.update({
+    where: { id: bodyFile.id },
+    data: { status: 'ready', linesFound: 7 },
+  })
+  // A past quotation line the "same as last order" points at.
+  const enq = await db.enquiry.create({
+    data: {
+      ref: `ENQ-2099-${String(Date.now()).slice(-7)}`,
+      title: 'Earlier',
+      clientId: company.id,
+      receivedVia: 'manual',
+      receivedAt: new Date('2026-09-01T06:00:00Z'),
+      closedReason: 'other',
+      closedAt: new Date(),
+    },
+    select: { id: true },
+  })
+  await db.quotation.create({
+    data: {
+      enquiryId: enq.id,
+      clientId: company.id,
+      number: `INDUS/Q2${String(Date.now()).slice(-4)}`,
+      currency: 'AED',
+      vatTreatment: 'local_standard',
+      lines: {
+        create: [
+          {
+            position: 1,
+            lineNo: 4,
+            description: 'Pressure gauge 0-250 bar, glycerine filled',
+            qty: 4,
+            uom: 'EA',
+          },
+        ],
+      },
+    },
+  })
+  runStep('same-as-before', bodyFile.id)
+  await page.reload()
+  await expect(page.getByText('Table · 6 lines')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '36',
+    0.1,
+    'Neutral sender, client, part numbers and references; the body is drawn from the stored plain text (tables framed in code), not the HTML part; the quotation number is generated; Continue waits while the attachment is still queued (the board shows it enabled), so its lines cannot miss the enquiry.'
   )
 })

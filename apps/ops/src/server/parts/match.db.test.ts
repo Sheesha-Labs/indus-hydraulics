@@ -34,6 +34,8 @@ describe.skipIf(!DB_URL)('matchParts · local database', () => {
 
   afterAll(async () => {
     await opsDb.part.deleteMany({ where: { id: { in: ids } } })
+    // Each test file has its own client under --isolate=modules: release it, or a full run passes ops_app's 15.
+    await opsDb.$disconnect()
   })
 
   it('exact, alias, fuzzy and none, in one pass', async () => {

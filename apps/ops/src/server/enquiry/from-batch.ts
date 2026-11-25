@@ -257,7 +257,7 @@ export async function confirmIntakeAsPerson(
 ): Promise<FromBatchResult> {
   const { assertConfirmable } = await import('../intake/review')
   return withTx(async (tx) => {
-    await assertConfirmable(tx, batchId)
+    await assertConfirmable(tx, batchId, { lines: !input.includePendingConfident })
     const b = await tx.intakeBatch.findUniqueOrThrow({
       where: { id: batchId },
       select: { source: true, createdAt: true, mailMessage: { select: { sentAt: true } } },

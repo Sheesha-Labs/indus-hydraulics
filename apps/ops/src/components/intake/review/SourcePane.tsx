@@ -278,13 +278,13 @@ function SheetView({
             <tr>
               <th
                 scope="col"
-                className="bg-io-fill text-io-ink-3 border-io-sheet-line border px-1.5 py-1 font-normal"
+                className="bg-io-fill text-io-ink-2 border-io-sheet-line border px-1.5 py-1 font-normal"
               />
               {cols.map((c) => (
                 <th
                   key={c}
                   scope="col"
-                  className="bg-io-fill text-io-ink-3 border-io-sheet-line border px-1.5 py-1 font-normal"
+                  className="bg-io-fill text-io-ink-2 border-io-sheet-line border px-1.5 py-1 font-normal"
                 >
                   {c}
                 </th>
@@ -305,7 +305,7 @@ function SheetView({
                 >
                   <th
                     scope="row"
-                    className="bg-io-fill text-io-ink-3 border-io-sheet-line border px-1.5 py-1 font-normal"
+                    className="bg-io-fill text-io-ink-2 border-io-sheet-line border px-1.5 py-1 font-normal"
                   >
                     {r.r}
                   </th>

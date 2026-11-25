@@ -6390,6 +6390,8 @@ model IntakeFile {
   actionId         String?              @db.Uuid
   mappingId        String?              @db.Uuid
   mapping          ClientColumnMapping? @relation(fields: [mappingId], references: [id], onDelete: SetNull)
+  /// Board 35's working mapping for a sheet (S08-T05): sheet, headerRow, signature, columns, units, remember, confirmedAt.
+  sheetMap         Json?
   linesFound       Int                  @default(0)
   linesToCheck     Int                  @default(0)
   uploadedById     String?              @db.Uuid

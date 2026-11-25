@@ -62,6 +62,8 @@ describe.skipIf(!DB_URL)('capture steps · local database', () => {
       where: { id: { in: files.flatMap((f) => (f.storedFileId ? [f.storedFileId] : [])) } },
     })
     setStorageForTests(null)
+    // Each test file has its own client under --isolate=modules: release it, or a full run passes ops_app's 15.
+    await opsDb.$disconnect()
   })
 
   it('upload queues the file and asks for capture', async () => {

@@ -46,6 +46,7 @@ const CANDIDATE_SELECT = {
   reasons: true,
   unsure: true,
   decision: true,
+  notes: true,
   duplicateOfId: true,
   fieldSpans: true,
   version: true,
@@ -293,6 +294,10 @@ export async function resolveUnsure(
       before = c.uom
       data.uom = v.toUpperCase()
       data.uomMethod = 'person'
+    } else if (field === 'reference') {
+      // "Which earlier order?" (board 36): the person names it; it travels with the line as a note.
+      before = c.notes
+      data.notes = [c.notes, `Same as ${v}`].filter(Boolean).join(' · ')
     } else {
       before = c.description
       data.description = v
@@ -679,7 +684,11 @@ export function continueBlocker(c: ReviewCounts): string | null {
  * Freezes the review: every line decided, no Unsure, no duplicate left. Writes nothing to enquiry_line; the caller
  * creates the enquiry (S08-T06 createEnquiryFromBatch) in the same transaction.
  */
-export async function assertConfirmable(tx: Tx, batchId: string): Promise<void> {
+export async function assertConfirmable(
+  tx: Tx,
+  batchId: string,
+  opts: { lines?: boolean } = {}
+): Promise<void> {
   const b = await tx.intakeBatch.findUnique({
     where: { id: batchId },
     select: {
@@ -690,6 +699,8 @@ export async function assertConfirmable(tx: Tx, batchId: string): Promise<void> 
   if (!b) throw new SafeError('That intake no longer exists.')
   if (b.status !== 'open') throw new SafeError('These lines are already confirmed.')
   if (b.files.length) throw new SafeError('A file is still being read. Wait for it, or remove it.')
+  // Board 36 continues with Sure and Likely lines as read; Unsure lines become question cards (S08-T06).
+  if (opts.lines === false) return
   const lines = await tx.intakeLineCandidate.findMany({
     where: { batchId },
     select: { decision: true, confidence: true, duplicateOfId: true, unsure: true },

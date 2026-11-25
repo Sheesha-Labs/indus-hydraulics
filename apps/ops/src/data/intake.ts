@@ -16,7 +16,7 @@ export interface QueueRow {
   chip: { label: string; tone: Tone }
   bar: { pct: number; tone: BarTone }
   result: string
-  action: 'review' | 'cancel' | 'remove' | 'reupload' | 'none'
+  action: 'review' | 'map' | 'cancel' | 'remove' | 'reupload' | 'none'
   href: string | null
 }
 
@@ -62,6 +62,8 @@ interface FileRow {
   failureNote: string | null
   linesFound: number
   linesToCheck: number
+  /** A spreadsheet's working mapping (board 35); absent in older callers. */
+  sheetMap?: unknown
 }
 
 export function queueRowOf(f: FileRow): QueueRow {
@@ -94,6 +96,16 @@ export function queueRowOf(f: FileRow): QueueRow {
   }
   switch (f.status) {
     case 'ready':
+      // A spreadsheet waits on its column mapping (board 35) before its lines are reviewed.
+      if (f.kind === 'sheet' && f.sheetMap && !(f.sheetMap as { confirmedAt?: string | null }).confirmedAt)
+        return {
+          ...base,
+          chip: { label: 'Columns to map', tone: 'warn' },
+          bar: { pct: 100, tone: 'navy' },
+          result: `${f.linesFound} line${f.linesFound === 1 ? '' : 's'} found · check the columns`,
+          action: 'map',
+          href: `/enquiries/intake/${f.batchId}/map?file=${f.id}`,
+        }
       return {
         ...base,
         chip: { label: 'Ready to review', tone: 'ok' },
@@ -162,6 +174,7 @@ const FILE_SELECT = {
   failureNote: true,
   linesFound: true,
   linesToCheck: true,
+  sheetMap: true,
 } as const
 
 const OPEN_FILE = {

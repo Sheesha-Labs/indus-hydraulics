@@ -120,6 +120,44 @@ async function workbook() {
   return Buffer.from(await wb.xlsx.writeBuffer())
 }
 
+/** Board 35's shape (S08-T05): merged title rows 1–2, header row 4, twelve lines, a blank, a totals row; two more sheets. */
+const SPARES = [
+  ['Hydraulic hose 1/2" 2SN, 3 m, JIC F/F', 'TEST-08-2SN-3000', 24, 'NOS', ''],
+  ['Hydraulic hose 3/4" 4SH, 2 m', 'TEST-12-4SH-2000', 12, 'NOS', ''],
+  ['Adaptor JIC 1/2" M x BSP 1/2" M', 'TEST-ADP-JB-08', 60, 'PCS', ''],
+  ['Ball valve 1" 3-pc, 5000 psi', 'TEST-BV-16-3P', 8, 'NOS', 'As per sample'],
+  ['Quick coupling ISO-A 1/2"', 'TEST-QC-ISOA-08', 30, 'PAIR', ''],
+  ['Filter element 10 um', 'TEST-HF-10-220', 18, 'NOS', 'Urgent'],
+  ['Inline check valve 3/8"', 'TEST-CV-06-IL', 16, 'NOS', ''],
+  ['Pressure gauge 0-400 bar', 'TEST-PG-400-G', 10, 'NOS', ''],
+  ['Hose clamp, twin bolt, 1/2"', 'TEST-HC-TB-08', 40, 'PCS', ''],
+  ['O-ring kit NBR, metric', 'TEST-OR-KIT-NBR', 2, 'SET', ''],
+  ['Hydraulic oil ISO VG 46', 'TEST-OIL-VG46-20', 6, 'DRUM', '20 L drums'],
+  ['Gear pump 16 cc/rev', '', 2, 'NOS', 'P/N to follow'],
+] as const
+
+async function sparesWorkbook() {
+  const wb = new ExcelJS.Workbook()
+  const ws = wb.addWorksheet('Spares list')
+  ws.getCell('A1').value = 'SAMPLE VESSEL — HYDRAULIC REFIT SPARES (Q4 2026)'
+  ws.mergeCells('A1:F1')
+  ws.getCell('A2').value = 'Sample Client LLC · Ref SC-RFQ-0921 · Rev A'
+  ws.mergeCells('A2:F2')
+  ws.getRow(4).values = ['S/N', 'Description', 'Maker P/N', 'Qty', 'Unit', 'Remarks']
+  SPARES.forEach(([desc, part, qty, unit, note], i) => {
+    ws.getRow(5 + i).values = [i + 1, desc, part || null, qty, unit, note || null]
+  })
+  ws.getCell('B18').value = 'TOTAL ITEMS'
+  ws.getCell('D18').value = { formula: 'SUBTOTAL(3,B5:B16)', result: 12 }
+  const cons = wb.addWorksheet('Consumables')
+  cons.getRow(1).values = ['S/N', 'Description', 'Qty', 'Unit']
+  for (let i = 0; i < 8; i++)
+    cons.getRow(2 + i).values = [i + 1, `Consumable item ${i + 1}`, 5 + i, 'PCS']
+  const rev = wb.addWorksheet('Rev history')
+  rev.getCell('A1').value = 'Rev A · first issue'
+  return Buffer.from(await wb.xlsx.writeBuffer())
+}
+
 function xlsBiff() {
   const rows = [
     ['No', 'Description', 'Part no.', 'Qty', 'UoM'],
@@ -185,6 +223,7 @@ out('rfq-3-pages.pdf', await textPdf())
 out('encrypted.pdf', await encryptedPdf())
 out('scanned.pdf', await scannedPdf())
 out('rfq.xlsx', await workbook())
+out('spares.xlsx', await sparesWorkbook())
 out('rfq.xls', xlsBiff())
 out('semicolons.csv', csv())
 out('table.docx', await docx())

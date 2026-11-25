@@ -135,3 +135,8 @@ body {
     animation: none !important;
   }
 }
+
+/* Skipped rows in a sheet preview (board 35: title and total rows) and unreadable scans (board 17). */
+@utility io-hatch {
+  background-image: repeating-linear-gradient(135deg, var(--io-fill) 0 4px, var(--io-card) 4px 8px);
+}

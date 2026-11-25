@@ -75,6 +75,8 @@ export interface Inspection {
   note: string
   failure: { kind: string; note: string; meta?: string } | null
   zip: { expand: boolean; entries: number } | null
+  /** A spreadsheet: mapped in code (S08-T05, board 35), never sent to the model. */
+  sheet?: boolean
 }
 
 /** No database: reads the file once to catch what the model must never be sent (encrypted, unreadable, a coarse scan). */
@@ -152,6 +154,7 @@ export async function inspectFile(file: NonNullable<CaptureStart['file']>): Prom
         note: `${doc.grid.sheets.length} sheet${doc.grid.sheets.length === 1 ? '' : 's'}`,
         failure: null,
         zip: null,
+        sheet: true,
       }
     default:
       return { pageCount: 1, note: '', failure: null, zip: null }

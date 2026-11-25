@@ -14,7 +14,7 @@ import { INTAKE_ACCEPT, sendFiles } from './send-files'
 
 const LINK = 'io-focus rounded-io-tag text-[13px] font-medium hover:underline'
 
-/** The queue row's one verb (board 14): Review →, Cancel, Remove or Re-upload. */
+/** The queue row's one verb (board 14): Review →, Map columns →, Cancel, Remove or Re-upload. */
 export default function QueueRowAction({ row }: { row: QueueRow }) {
   const router = useRouter()
   const { toast } = useToast()
@@ -29,6 +29,12 @@ export default function QueueRowAction({ row }: { row: QueueRow }) {
     router.refresh()
   }
 
+  if (row.action === 'map' && row.href)
+    return (
+      <Link href={row.href as Route} className={`${LINK} text-io-accent`}>
+        Map columns →
+      </Link>
+    )
   if (row.action === 'review' && row.href)
     return (
       <Link href={row.href as Route} className={`${LINK} text-io-accent`}>
