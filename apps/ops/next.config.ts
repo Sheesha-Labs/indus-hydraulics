@@ -13,7 +13,18 @@ const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: true },
   poweredByHeader: false,
   images: { unoptimized: true },
-  serverExternalPackages: ['@prisma/client', '.prisma/client', '@indus/ops-db'],
+  // S08: the intake parsers load native or worker code that must not be bundled (pdfjs legacy build, SheetJS
+  // in a worker thread, sharp's native binary, exceljs and mammoth's zip readers).
+  serverExternalPackages: [
+    '@prisma/client',
+    '.prisma/client',
+    '@indus/ops-db',
+    'pdfjs-dist',
+    'xlsx',
+    'sharp',
+    'exceljs',
+    'mammoth',
+  ],
   transpilePackages: ['@indus/ops-core', '@indus/ops-ui', '@indus/intake'],
   experimental: {
     serverActions: {
