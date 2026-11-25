@@ -22,7 +22,7 @@ export default async function MailReadLinesPage({
   const model = await getEmailLines(folder, threadId)
   if (!model) notFound()
   return (
-    <div className="flex h-screen min-h-0 min-w-0 flex-col overflow-hidden">
+    <div data-template="T9" className="flex h-screen min-h-0 min-w-0 flex-col overflow-hidden">
       <PageHeader
         crumb={`Inbox / ${model.message.subject}`}
         title="Read lines from email"

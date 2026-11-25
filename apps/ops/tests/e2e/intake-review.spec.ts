@@ -166,6 +166,7 @@ test('board-15: review, resolve, merge, accept all high, continue', async ({
   await expect(page.getByRole('heading', { name: 'Review extracted lines', level: 1 })).toBeVisible(
     { timeout: 90_000 }
   )
+  await expect(page.locator('main#content [data-template="T9"]')).toBeVisible()
   await expect(page.getByText('2 high')).toBeVisible()
   await expect(page.getByText('1 check')).toBeVisible()
   await expect(page.getByText('1 low')).toBeVisible()

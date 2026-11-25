@@ -18,8 +18,10 @@ export const CONSOLE: readonly (readonly [string, string | null, Template])[] = 
   // S05: a thread page is real now (a fixture id is not found); tests/e2e/mail.spec.ts opens real threads.
   ['/mail/clients', 'Mail', 'T3'],
   ['/enquiries', 'Enquiries', 'T1'],
-  ['/enquiries/new', 'Enquiries', 'T9'],
-  [`/enquiries/intake/${ID}`, 'Enquiries', 'T9'],
+  // S08: board 14 is a T1 page; the intake list too. An intake batch page is real now (a fixture id is not found):
+  // tests/e2e/intake-review.spec.ts and intake-map-email.spec.ts open real batches under T9.
+  ['/enquiries/new', 'Enquiries', 'T1'],
+  ['/enquiries/intake', 'Enquiries', 'T1'],
   ['/enquiries/leads', 'Enquiries', 'T1'],
   [`/enquiries/leads/${ID}`, 'Enquiries', 'T2'],
   [ENQ, 'Enquiries', 'T2'],

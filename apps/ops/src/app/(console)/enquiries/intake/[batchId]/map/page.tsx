@@ -25,7 +25,7 @@ export default async function EnquiriesIntakeBatchIdMapPage({
   const model = await getSheetMap(batchId, fileId)
   if (!model) notFound()
   return (
-    <div className="flex h-screen min-h-0 min-w-0 flex-col overflow-hidden">
+    <div data-template="T9" className="flex h-screen min-h-0 min-w-0 flex-col overflow-hidden">
       <PageHeader
         crumb={`Intake / ${model.file.name}`}
         title="Map spreadsheet columns"

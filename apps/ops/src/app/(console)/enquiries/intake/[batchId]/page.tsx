@@ -25,7 +25,7 @@ export default async function EnquiriesIntakeBatchIdPage({
   if (!model) notFound()
   const l = model.legend
   return (
-    <div className="flex h-screen min-h-0 min-w-0 flex-col overflow-hidden">
+    <div data-template="T9" className="flex h-screen min-h-0 min-w-0 flex-col overflow-hidden">
       <PageHeader
         crumb={`Intake / ${model.active?.name ?? 'Intake'}`}
         title="Review extracted lines"
