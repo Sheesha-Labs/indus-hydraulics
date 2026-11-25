@@ -76,6 +76,7 @@ const AWAITING = [
   'calendar.country_weekends',
   'send.attachment_names',
   'assistant.internal_undo_minutes', // S05-T02
+  'ack.revert_by', // S08-T07
 ]
 
 const USER_SELECT = {

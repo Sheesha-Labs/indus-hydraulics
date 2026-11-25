@@ -10,6 +10,7 @@ import { writeAudit, type AuditEntry } from './audit'
 import { env } from './env'
 import { newRequestId } from './request-id'
 import { SAFE_MESSAGES, SafeError, isExpectedRefusal, safeMessage } from './safe-message'
+import { TX_OPTIONS } from './tx-options'
 
 /**
  * The one wrapper every Ops mutation goes through (05-map-frontend §7.2, architecture §4.2,
@@ -89,12 +90,8 @@ export type Action<S extends z.ZodType, T> = (raw: z.input<S>) => Promise<Result
 /** Idempotency keys live a day (architecture §4.10). */
 export const IDEMPOTENCY_TTL_MS = 24 * 60 * 60 * 1000
 
-/**
- * `maxWait`: queue for the instance's one pooled connection as long as the pooler would
- * (`pool_timeout` 20 s). `timeout`: below `statement_timeout` (15 s) and far below
- * `idle_in_transaction_session_timeout` (30 s) on ops_app.
- */
-export const ACTION_TX_OPTIONS = { maxWait: 20_000, timeout: 10_000 } as const
+/** See `tx-options.ts`. */
+export const ACTION_TX_OPTIONS = TX_OPTIONS
 
 /** Zod issues → one message per field path ("lines.0.unitPrice"), the first issue winning. */
 export function fieldErrorsOf(error: z.ZodError): FieldErrors {

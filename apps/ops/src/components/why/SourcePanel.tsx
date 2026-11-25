@@ -1,6 +1,7 @@
 import { SourceQuote } from '@indus/ops-ui/assistant'
 import { Banner } from '@indus/ops-ui/status'
 import type { WhySpan } from '../../data/why'
+import './FileSources'
 import { registerSourceRenderer, rendererFor, type SourceRendererProps } from './source-renderers'
 
 /**

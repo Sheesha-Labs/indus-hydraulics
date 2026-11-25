@@ -1,6 +1,6 @@
 'use client'
 
-import { ProposalCard, type LaterUntil } from '@indus/ops-ui/assistant'
+import { ProposalCard, WhyDate, type LaterUntil } from '@indus/ops-ui/assistant'
 import type { Route } from 'next'
 import { useRouter } from 'next/navigation'
 import { useMemo, type ReactNode } from 'react'
@@ -103,7 +103,11 @@ export default function ReviewCardClient({
             },
           }
         : {})}
-      {...(aside ? { aside } : {})}
+      {...(aside
+        ? { aside }
+        : card.email?.whyDate
+          ? { aside: <WhyDate title={card.email.whyDate.title} steps={card.email.whyDate.steps} /> }
+          : {})}
       {...(card.edited
         ? { note: `Edited by ${card.edited.by ?? 'you'} · ${card.edited.fields.join(', ')}` }
         : {})}

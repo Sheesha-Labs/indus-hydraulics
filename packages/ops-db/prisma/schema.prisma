@@ -1892,6 +1892,7 @@ enum RecordType {
   mailbox
   user
   settings
+  intake_file
 
   @@schema("ops")
 }
@@ -2144,6 +2145,8 @@ model NumberSequence {
   seededAt        DateTime?       @db.Timestamptz(3)
   seededById      String?         @db.Uuid
   seedEvidence    Json?
+  /// S08-T06: an outside allocator reached this sequence's block (ops.numbering.continuity).
+  outOfStepAt     DateTime?       @db.Timestamptz(3)
   updatedAt       DateTime        @updatedAt @db.Timestamptz(3)
 
   counters     NumberCounter[]
@@ -2851,6 +2854,7 @@ model MailMessage {
   links             MailLink[]
   quoteSources      SupplierQuoteSource[]
   supplierQuestions SupplierQuestion[]
+  intakeBatches        IntakeBatch[]
 
   @@unique([mailboxId, gmailMessageId])
   @@index([threadId, sentAt])
@@ -3103,6 +3107,8 @@ model Company {
   approvedMakes      ApprovedMake[]
   researchCandidates ResearchCandidate[]
   claimParties       ClaimParty[]
+  intakeBatches  IntakeBatch[]
+  columnMappings ClientColumnMapping[]
 
   @@index([name])
   @@index([primaryDomain])
@@ -3605,6 +3611,7 @@ model Enquiry {
   callbacks          CallbackRequest[]
   websiteSubmissions WebsiteSubmission[]
   portalSubmissions  ClientPortalSubmission[]
+  intakeBatches      IntakeBatch[]
 
   @@index([stage, deadline])
   @@index([clientId, receivedAt])
@@ -3986,6 +3993,7 @@ model Part {
   quoteLines    SupplierQuoteLine[]
   lessons       Lesson[]
   suggestion    CatalogueSuggestion?
+  intakeCandidates IntakeLineCandidate[]
 
   @@unique([partNoNorm, brand])
   @@index([partNoNorm])
@@ -5269,6 +5277,7 @@ model StoredFile {
   complianceDocs      ComplianceDocument[]
   documentVersions    DocumentVersion[]
   texts               DocumentText[]
+  intakeFiles         IntakeFile[]
 
   @@unique([bucket, path])
   @@index([sha256])
@@ -6249,5 +6258,202 @@ model PreferenceLearnBatch {
 
   @@index([submittedAt], map: "preference_learn_batch_open_idx")
   @@map("preference_learn_batch")
+  @@schema("ops")
+}
+
+// ── S08 · Enquiry intake ─────────────────────────────────────────────────────────────────
+
+enum IntakeSource {
+  upload
+  mail
+  paste
+
+  @@schema("ops")
+}
+
+enum IntakeBatchStatus {
+  open
+  confirmed
+  cancelled
+
+  @@schema("ops")
+}
+
+enum IntakeFileStatus {
+  queued
+  extracting
+  ready
+  needs_attention
+  cancelled
+  removed
+
+  @@schema("ops")
+}
+
+/// Units extraction normalises to (S08-T02).
+model UomUnit {
+  code    String     @id
+  label   String
+  /// count | length | mass | volume | pack
+  kind    String
+  aliases UomAlias[]
+
+  @@map("uom_unit")
+  @@schema("ops")
+}
+
+model UomAlias {
+  alias    String  @id
+  unitCode String
+  unit     UomUnit @relation(fields: [unitCode], references: [code], onDelete: Cascade)
+
+  @@map("uom_alias")
+  @@schema("ops")
+}
+
+/// Board 35: a client's spreadsheet layout, remembered (S08-T05).
+model ClientColumnMapping {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  companyId     String    @db.Uuid
+  company       Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  fileSignature String
+  sheetName     String?
+  headerRow     Int
+  mapping       Json
+  byHeader      Json      @default("{}")
+  unitOverrides Json      @default("{}")
+  usedCount     Int       @default(0)
+  lastUsedAt    DateTime? @db.Timestamptz(3)
+  createdById   String?   @db.Uuid
+  createdAt     DateTime  @default(now()) @db.Timestamptz(3)
+  updatedAt     DateTime  @default(now()) @updatedAt @db.Timestamptz(3)
+
+  files IntakeFile[]
+
+  @@unique([companyId, fileSignature])
+  @@index([companyId, lastUsedAt(sort: Desc)])
+  @@map("client_column_mapping")
+  @@schema("ops")
+}
+
+/// One intake (board 14 upload session, board 36 email read, a paste): staging until a person confirms (S08-T03).
+model IntakeBatch {
+  id                String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  source            IntakeSource
+  status            IntakeBatchStatus @default(open)
+  mailMessageId     String?           @db.Uuid
+  mailMessage       MailMessage?      @relation(fields: [mailMessageId], references: [id], onDelete: SetNull)
+  createdById       String?           @db.Uuid
+  createdByActionId String?           @db.Uuid
+  clientCompanyId   String?           @db.Uuid
+  clientCompany     Company?          @relation(fields: [clientCompanyId], references: [id], onDelete: SetNull)
+  contactId         String?           @db.Uuid
+  enquiryId         String?           @db.Uuid
+  enquiry           Enquiry?          @relation(fields: [enquiryId], references: [id], onDelete: SetNull)
+  leadId            String?           @db.Uuid
+  clientRef         String?
+  deadline          DateTime?         @db.Timestamptz(3)
+  terms             Json?
+  revisionIntent    Json?
+  confirmedAt       DateTime?         @db.Timestamptz(3)
+  confirmedById     String?           @db.Uuid
+  createdAt         DateTime          @default(now()) @db.Timestamptz(3)
+  updatedAt         DateTime          @default(now()) @updatedAt @db.Timestamptz(3)
+  version           Int               @default(0)
+
+  files      IntakeFile[]
+  candidates IntakeLineCandidate[]
+
+  @@index([status, createdAt(sort: Desc)])
+  @@index([mailMessageId])
+  @@map("intake_batch")
+  @@schema("ops")
+}
+
+model IntakeFile {
+  id               String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  batchId          String               @db.Uuid
+  batch            IntakeBatch          @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  storedFileId     String?              @db.Uuid
+  storedFile       StoredFile?          @relation(fields: [storedFileId], references: [id], onDelete: SetNull)
+  mailAttachmentId String?              @db.Uuid
+  parentFileId     String?              @db.Uuid
+  filename         String
+  /// pdf | sheet | docx | image | email | paste | zip | other
+  kind             String
+  status           IntakeFileStatus     @default(queued)
+  progressPct      Int                  @default(0)
+  progressNote     String?
+  pageCount        Int?
+  sizeBytes        Int?
+  /// unreadable | password_protected | unsupported | too_large | failed
+  failureKind      String?
+  failureNote      String?
+  actionId         String?              @db.Uuid
+  mappingId        String?              @db.Uuid
+  mapping          ClientColumnMapping? @relation(fields: [mappingId], references: [id], onDelete: SetNull)
+  /// Board 35's working mapping for a sheet (S08-T05): sheet, headerRow, signature, columns, units, remember, confirmedAt.
+  sheetMap         Json?
+  linesFound       Int                  @default(0)
+  linesToCheck     Int                  @default(0)
+  uploadedById     String?              @db.Uuid
+  createdAt        DateTime             @default(now()) @db.Timestamptz(3)
+  updatedAt        DateTime             @default(now()) @updatedAt @db.Timestamptz(3)
+
+  candidates IntakeLineCandidate[]
+
+  @@index([batchId, status])
+  @@index([status, createdAt])
+  @@map("intake_file")
+  @@schema("ops")
+}
+
+/// An extracted line waiting for a person. Never an enquiry_line until confirmed (S08-T04/T06).
+model IntakeLineCandidate {
+  id                 String                @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  batchId            String                @db.Uuid
+  batch              IntakeBatch           @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  fileId             String?               @db.Uuid
+  file               IntakeFile?           @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  ord                Int
+  description        String                @default("")
+  qty                Decimal?              @db.Decimal(18, 4)
+  qtyPrinted         String?
+  uom                String?
+  uomRaw             String?
+  uomMethod          String?
+  partNo             String?
+  partNoNorm         String?
+  make               String?
+  spec               String?
+  certification      String?
+  clientRef          String?
+  notes              String?
+  confidence         Confidence            @default(unsure)
+  reasons            Json                  @default("[]")
+  unsure             Json?
+  duplicateOfId      String?               @db.Uuid
+  duplicateOf        IntakeLineCandidate?  @relation("CandidateDuplicate", fields: [duplicateOfId], references: [id], onDelete: SetNull)
+  duplicates         IntakeLineCandidate[] @relation("CandidateDuplicate")
+  /// pending | accepted | edited | merged | removed
+  decision           String                @default("pending")
+  decidedById        String?               @db.Uuid
+  decidedAt          DateTime?             @db.Timestamptz(3)
+  partId             String?               @db.Uuid
+  part               Part?                 @relation(fields: [partId], references: [id], onDelete: SetNull)
+  partMatch          String?
+  catalogueProductId String?
+  spanIds            String[]              @default([]) @db.Uuid
+  fieldSpans         Json                  @default("{}")
+  sourcePage         Int?
+  sourceKind         String?
+  sourceDetail       String?
+  version            Int                   @default(0)
+  createdAt          DateTime              @default(now()) @db.Timestamptz(3)
+  updatedAt          DateTime              @default(now()) @updatedAt @db.Timestamptz(3)
+
+  @@index([batchId, ord])
+  @@index([fileId])
+  @@map("intake_line_candidate")
   @@schema("ops")
 }

@@ -5,8 +5,8 @@ import type { OpsUser } from '../../lib/access-core'
  * The seeded Autopilot catalogue and the preset transaction (S03-T06) against the real local Postgres
  * (role ops_app), after `…_ops_autopilot_catalogue_seed.sql`:
  *
- *   * 71 definitions (32 + 39; S05 added manual_reply and ooo_facts, S06 override_value, outbound_attention and
- *     instruction), one setting each, Careful active; the locked and capped rows; no
+ *   * 73 definitions (32 + 41; S05 added manual_reply and ooo_facts, S06 override_value, outbound_attention and
+ *     instruction, S08 request_original and resolve_extracted_line), one setting each, Careful active; the locked and capped rows; no
  *     external send above Draft and ask under Careful except the two allowed exceptions;
  *   * ops.locked_level_guard() refuses Do and tell on #20, #26, #27, #31 and anything but Never on #32;
  *   * applyAutopilotPreset: one transaction writes exactly the configurable, unlocked rows whose level
@@ -159,14 +159,14 @@ describe.skipIf(!DB_URL)('Autopilot catalogue and presets · local database', ()
     await db.$disconnect()
   })
 
-  it('seeds 32 catalogue and 39 system definitions, each with a setting at Careful', async () => {
+  it('seeds 32 catalogue and 41 system definitions, each with a setting at Careful', async () => {
     const defs = await db.autopilotActionDef.findMany({
       select: DEF_SELECT,
       orderBy: { position: 'asc' },
     })
     const settings = await snapshot(db)
     expect(defs.filter((d) => d.position <= 32)).toHaveLength(32)
-    expect(defs.filter((d) => d.position >= 101)).toHaveLength(39)
+    expect(defs.filter((d) => d.position >= 101)).toHaveLength(41)
     expect(defs.map((d) => d.key).sort()).toEqual([...core.ACTION_KEYS].sort())
     expect(defs.every((d) => d.signoffStatus === 'awaiting')).toBe(true)
     for (const d of defs)
@@ -313,6 +313,8 @@ describe.skipIf(!DB_URL)('Autopilot catalogue and presets · local database', ()
         'override_value',
         'outbound_attention',
         'instruction',
+        // S08: an Unsure extracted line is always a person's question
+        'resolve_extracted_line',
       ].sort()
     )
     for (const run of Object.values(out.runs)) {

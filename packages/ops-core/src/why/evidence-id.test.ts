@@ -13,6 +13,7 @@ const CASES: EvidenceRef[] = [
   { kind: 'field', ref: 'A-26-11-24-0007', field: 'classification' },
   { kind: 'field', ref: 'A-26-11-24-0007', field: 'line.7.partNo' },
   { kind: 'event', eventId: '0190f3a2-7b1c-7000-8000-000000000001' },
+  { kind: 'span', spanId: '0190f3a2-7b1c-7000-8000-0000000000aa' },
   { kind: 'fixture', id: '00000000-0000-7000-8000-00000000e001' },
 ]
 
@@ -42,6 +43,7 @@ describe('evidence ids', () => {
     'A-1~f9x',
     'A-1~r1~r2',
     'ae_nope',
+    'sp_nope',
     '../etc/passwd',
     '%E0%A4%A',
     `A-${'1'.repeat(200)}`,

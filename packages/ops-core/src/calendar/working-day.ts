@@ -69,6 +69,27 @@ export function addWorkingDays(
   return d
 }
 
+/**
+ * Working days after `from` up to and including `to` (S08-T06, board 92 "Deadline in 4 days"): 0 when `to` is
+ * the same day or earlier.
+ */
+export function workingDaysBetween(
+  from: CalendarDate,
+  to: CalendarDate,
+  country: string,
+  holidays: readonly HolidayRow[],
+  weekends: WeekendTable
+): number {
+  const end = dateKey(to)
+  let d = from
+  let n = 0
+  for (let i = 0; i < 400 && dateKey(d) < end; i += 1) {
+    d = nextDate(d)
+    if (isWorkingDay(d, country, holidays, weekends)) n += 1
+  }
+  return n
+}
+
 /** The Ramadan hours for a date in a country, or null when it is not a Ramadan day. */
 export function ramadanWindow(
   date: CalendarDate,

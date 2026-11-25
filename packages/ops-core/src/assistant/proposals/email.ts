@@ -17,6 +17,21 @@ export const emailPreview = z
     text: z.string().max(50_000).optional(),
     /** The earlier email the body quotes (resend_alternate_contact). */
     quotedOutboundId: z.uuid().optional(),
+    /** S08-T07 (board 93): how a date in the email was worked out, shown beside the card ("Why 26 Sep"). */
+    whyDate: z
+      .object({
+        title: z.string().max(40),
+        steps: z
+          .array(
+            z.object({
+              label: z.string().max(120),
+              value: z.string().max(60),
+              note: z.string().max(160).optional(),
+            })
+          )
+          .max(8),
+      })
+      .optional(),
   })
   .refine((p) => p.html !== undefined || p.text !== undefined, { message: 'An email needs a body' })
 export type EmailPreview = z.infer<typeof emailPreview>

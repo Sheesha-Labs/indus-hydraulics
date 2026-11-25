@@ -14,9 +14,12 @@ const CONFIDENCE_WORD = { sure: 'Sure', likely: 'Likely', unsure: 'Unsure' } as 
 export default function AssistantPane({
   thread,
   linkHref,
+  readLinesHref,
 }: {
   thread: ThreadView
   linkHref: string
+  /** Board 36: read the latest message's lines into an intake (S08-T05). */
+  readLinesHref?: string
 }) {
   const l = thread.latest
   const review = thread.actions.find(
@@ -83,6 +86,14 @@ export default function AssistantPane({
             ))}
           </ol>
         )}
+        {readLinesHref ? (
+          <Link
+            href={readLinesHref as Route}
+            className="text-io-accent io-focus rounded-io-tag text-[12.5px] underline underline-offset-2"
+          >
+            Read lines from this email →
+          </Link>
+        ) : null}
         {review ? (
           <Link
             href={`/review?action=${review.ref}` as Route}

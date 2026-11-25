@@ -5,6 +5,7 @@
  *   bun run --filter @indus/ops eval -- --suite classify --set synthetic --model claude-haiku-5-5
  *   bun run --filter @indus/ops eval -- --suite link --set golden
  *   bun run --filter @indus/ops eval -- --suite learn                       (S07-T05, learn-preferences@1)
+ *   bun run --filter @indus/ops eval -- --suite extract [--model …] [--repeat 2] (S08-T02, extract_lines@1)
  *
  * It runs the real action code (propose + verify of classify_mail and link_mail) over fixtures, with an
  * in-memory ledger (no database writes) and the Messages API through OPS_ANTHROPIC_API_KEY (use the low-limit
@@ -38,13 +39,28 @@ import { loadGolden } from './golden'
 import { scoreClassify, type ClassifyCase } from './scorers/classify'
 import { scoreLink, type LinkCase } from './scorers/link'
 import { scoreLearn, type LearnCase } from './scorers/learn'
+import { scoreExtract, type ExpectedLine, type ExtractCaseResult } from './scorers/extract'
+import { unitReference } from '../src/server/assistant/prompts/extract-lines.v1'
+import { buildCandidates, unsureShare } from '../src/server/intake/candidates'
+import {
+  ESCALATE_UNSURE_SHARE,
+  ESCALATION_MODEL,
+  EXTRACT_MODEL,
+  planChunks,
+  runExtraction,
+  startingModel,
+} from '../src/server/intake/extract'
+import { parseEmail } from '../src/server/intake/parse/email'
+import { parseBytes } from '../src/server/intake/parse/index'
+import { spanSourceOf } from '../src/server/intake/spans'
+import { uomTableOf, type UnitRow } from '../src/server/intake/units'
 import {
   learnUser,
   PROMPT_VERSION as LEARN_PROMPT,
   SYSTEM_PARTS as LEARN_SYSTEM,
 } from '../src/server/assistant/prompts/learn-preferences.v1'
 
-type Suite = 'classify' | 'link' | 'learn'
+type Suite = 'classify' | 'link' | 'learn' | 'extract'
 type Set = 'synthetic' | 'golden'
 
 export interface ClassifyFixture extends ClassifyCase {
@@ -290,12 +306,152 @@ async function runLearn(cases: LearnCase[], ai: ActionAi | null) {
   return { score: scoreLearn(scored, outs), skipped }
 }
 
+/** The unit table as the uom_and_column_mapping migration seeds it (the eval needs no database). */
+const EVAL_UNITS: UnitRow[] = [
+  {
+    code: 'EA',
+    label: 'Each',
+    aliases: [
+      'EACH',
+      'NO',
+      'NOS',
+      'NUMBERS',
+      'PC',
+      'PCS',
+      'PIECE',
+      'PIECES',
+      'QTY',
+      'UNIT',
+      'UNITS',
+    ],
+  },
+  { code: 'KG', label: 'Kilogram', aliases: ['KGS', 'KILO', 'KILOGRAM'] },
+  {
+    code: 'M',
+    label: 'Metre',
+    aliases: ['METER', 'METERS', 'METRE', 'METRES', 'MTR', 'MTRS', 'MTS'],
+  },
+  { code: 'SET', label: 'Set', aliases: ['KIT', 'KITS', 'SETS'] },
+]
+
+interface ExtractFixture {
+  id: string
+  file: string
+  subject?: string
+  note: string
+  expect: ExpectedLine[]
+}
+
+/**
+ * Action #5 over the synthetic documents (S08-T02): the same parsers, chunk plan, prompt, escalation rule and
+ * code-side candidate building the action uses; part matching (database) is left out. `--repeat 2` reads the
+ * set twice so the second pass shows the prompt cache being read.
+ */
+async function runExtract(
+  cases: ExtractFixture[],
+  ai: ActionAi | null,
+  ledger: MemoryLedger,
+  model: string | undefined
+) {
+  const dir = join(import.meta.dir, 'fixtures', 'synthetic', 'extract', 'files')
+  const units = unitReference(EVAL_UNITS)
+  const table = uomTableOf(EVAL_UNITS)
+  const results: ExtractCaseResult[] = []
+  const escalations: Array<{ id: string; why: string }> = []
+  const skipped: string[] = []
+  for (const c of cases) {
+    if (!ai) {
+      skipped.push(c.id)
+      continue
+    }
+    const bytes = new Uint8Array(readFileSync(join(dir, c.file)))
+    const doc = c.file.endsWith('.txt')
+      ? parseEmail({
+          bodyText: new TextDecoder().decode(bytes),
+          bodyTextHash: null,
+          subject: c.subject ?? null,
+        })
+      : await parseBytes(bytes, c.file)
+    const source = spanSourceOf(doc, '00000000-0000-0000-0000-0000000000e1')
+    const chunks = await planChunks(doc, bytes)
+    const first = model ?? startingModel(doc)
+    if (first === ESCALATION_MODEL && !model) escalations.push({ id: c.id, why: 'pages' })
+    let run = await runExtraction({
+      chunks,
+      ai,
+      model: first,
+      today: 'Wednesday, 25 November 2026',
+      units,
+    })
+    if (run.ok && source && !model && first === EXTRACT_MODEL) {
+      const provisional = buildCandidates(run.lines, { source, units: table })
+      if (unsureShare(provisional) > ESCALATE_UNSURE_SHARE) {
+        escalations.push({
+          id: c.id,
+          why: `unsure ${(unsureShare(provisional) * 100).toFixed(0)} %`,
+        })
+        const again = await runExtraction({
+          chunks,
+          ai,
+          model: ESCALATION_MODEL,
+          today: 'Wednesday, 25 November 2026',
+          units,
+        })
+        if (again.ok) run = again
+      }
+    }
+    if (!run.ok || !source) {
+      results.push({ id: c.id, expect: c.expect, predicted: [] })
+      console.log(`  ${c.id}: ${run.ok ? 'no source' : `${run.reason} ${run.detail}`}`)
+      continue
+    }
+    const cands = buildCandidates(run.lines, { source, units: table })
+    results.push({
+      id: c.id,
+      expect: c.expect,
+      predicted: cands.map((x) => ({
+        description: x.description,
+        qty: x.qty === null ? null : Number(x.qty),
+        partNo: x.partNo,
+        confidence: x.confidence,
+      })),
+    })
+  }
+  void ledger
+  return { score: scoreExtract(results), escalations, skipped, results }
+}
+
 async function main(): Promise<void> {
   const suite = (arg('suite', 'classify') as Suite) ?? 'classify'
   const set = (arg('set', 'synthetic') as Set) ?? 'synthetic'
   const model = arg('model')
   const ledger = new MemoryLedger()
   const ai = makeAi(ledger, model)
+  if (suite === 'extract') {
+    const cases = JSON.parse(
+      readFileSync(join(import.meta.dir, 'fixtures', 'synthetic', 'extract', 'cases.json'), 'utf8')
+    ) as ExtractFixture[]
+    const repeat = Number(arg('repeat', '1'))
+    console.log(
+      `suite extract · set synthetic · ${cases.length} documents · model ${model ?? 'route default (Sonnet 5.5, Opus 5.5 escalation)'}${ai ? '' : ' · NO KEY: skipped'}`
+    )
+    let out: Awaited<ReturnType<typeof runExtract>> | null = null
+    for (let pass = 1; pass <= repeat; pass++) {
+      const before = ledger.calls.length
+      out = await runExtract(cases, ai, ledger, model)
+      const calls = ledger.calls.slice(before)
+      console.log(
+        `pass ${pass}: calls ${calls.length} · input ${calls.reduce((n, c) => n + c.inputTokens, 0)} · cache read ${calls.reduce((n, c) => n + c.cacheReadTokens, 0)} · cache write ${calls.reduce((n, c) => n + c.cacheWriteTokens + c.cacheWrite1hTokens, 0)}`
+      )
+    }
+    const { score, escalations, skipped } = out!
+    console.log(JSON.stringify({ ...score, escalations, skipped: skipped.length }, null, 2))
+    console.log(
+      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt extract_lines@1`
+    )
+    if (ai && !score.passes) process.exitCode = 1
+    return
+  }
   if (suite === 'learn') {
     const cases = loadSynthetic<LearnCase>('learn')
     console.log(

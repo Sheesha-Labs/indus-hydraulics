@@ -341,13 +341,20 @@ export async function approve(
       })
       await opsDb.$transaction(async (tx) => {
         await setActor(tx, { kind: 'user', id: user.id })
-        await tx.assistantAction.updateMany({
+        const moved = await tx.assistantAction.updateMany({
           where: { id: a.id, state: decided },
           data: {
             state: 'queued',
             undoUntil: scheduled.undoUntil ? new Date(scheduled.undoUntil) : null,
           },
         })
+        // S08-T07: what the action records while its email waits (undone with the send).
+        if (moved.count && def.onScheduled)
+          await def.onScheduled(tx, verifiedOf(a), {
+            actionId: a.id,
+            request: req,
+            decidedById: user.id,
+          })
       })
       await afterDecision(a)
       return {
@@ -645,7 +652,12 @@ export async function cloneAsProposed(
   const [num] = await tx.$queryRaw<Array<{ formatted: string }>>`
     SELECT formatted FROM ops.allocate_number('assistant_action', ${dubaiDayKey(now)})`
   if (!num) throw new Error('allocate_number returned no row')
-  const j = (v: unknown) => (v === null ? Prisma.DbNull : (v as Prisma.InputJsonValue))
+  // A null JSON column is left out (it defaults to NULL) rather than written as Prisma.DbNull: under next dev the
+  // marker can come from another module instance and is then stored as {} (see write-tracked.ts).
+  const j = <K extends string>(k: K, v: unknown): Partial<Record<K, Prisma.InputJsonValue>> =>
+    v === null || v === undefined
+      ? {}
+      : ({ [k]: v as Prisma.InputJsonValue } as Record<K, Prisma.InputJsonValue>)
   await tx.assistantAction.create({
     data: {
       ref: num.formatted,
@@ -657,22 +669,22 @@ export async function cloneAsProposed(
       subjectId: a.subjectId,
       headline: a.headline,
       reasons: a.reasons as Prisma.InputJsonValue,
-      preview: j(a.preview),
-      checks: j(a.checks),
+      ...j('preview', a.preview),
+      ...j('checks', a.checks),
       confidence: a.confidence,
       unsureAbout: a.unsureAbout,
       onApproveText: a.onApproveText,
-      options: j(a.options),
-      inputs: j(a.inputs),
-      output: j(a.output),
-      effectivePayload: j(a.effectivePayload),
-      editDiff: j(a.editDiff),
+      ...j('options', a.options),
+      ...j('inputs', a.inputs),
+      ...j('output', a.output),
+      ...j('effectivePayload', a.effectivePayload),
+      ...j('editDiff', a.editDiff),
       state: 'proposed',
       basisHash: a.basisHash,
       origin: a.origin,
       model: a.model,
       promptVersion: a.promptVersion,
-      levelReasons: j(a.levelReasons),
+      ...j('levelReasons', a.levelReasons),
       surface: a.surface,
       ...extra,
     },

@@ -62,6 +62,11 @@ export interface CardEmail {
   body: string
   /** Sanitised HTML when the proposal carried it (manual_reply). */
   html: string | null
+  /** S08-T07: how a date in the email was worked out (board 93 "Why 26 Sep"). */
+  whyDate?: {
+    title: string
+    steps: Array<{ label: string; value: string; note?: string | undefined }>
+  } | null
 }
 export interface ProposalCardData {
   id: string
@@ -178,6 +183,7 @@ export function toProposalCardData(
       subject: edit.subject ?? e.subject,
       body: edit.body ?? (e.text ?? textOfHtml(e.html ?? '')),
       html: edit.body === undefined ? (e.html ?? null) : null,
+      whyDate: e.whyDate ?? null,
     }
   }
 
