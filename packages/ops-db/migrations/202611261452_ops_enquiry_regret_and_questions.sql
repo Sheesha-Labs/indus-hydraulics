@@ -6,7 +6,8 @@
 --   enquiry.relatedEnquiryId         a new enquiry opened from a reply to a regretted one (171b state 5)
 --   LineRegretReason                 gains deadline_too_short and client_unresponsive (the line chips of board 168)
 --   client_question                  reminderDueAt, callTaskAt, fallbackAt (the board 171 clock), fallbackChoice
---                                    (assume · leave_out · wait), reminderActionId; index (status, reminderDueAt)
+--                                    (assume · leave_out · wait), reminderActionId; indexes (status, reminderDueAt),
+--                                    (status, fallbackAt), (status, callTaskAt) for the three questions clocks
 --
 -- The two ADD VALUE statements run first, outside BEGIN/COMMIT: Postgres refuses to use a value added in the same
 -- transaction. ADD VALUE ships ahead of code (C31): no row uses the new values until the deploy with the regenerated
@@ -47,6 +48,7 @@ END $$;
 
 CREATE INDEX IF NOT EXISTS client_question_status_reminder_idx ON ops.client_question (status, "reminderDueAt");
 CREATE INDEX IF NOT EXISTS client_question_status_fallback_idx ON ops.client_question (status, "fallbackAt");
+CREATE INDEX IF NOT EXISTS client_question_status_call_idx ON ops.client_question (status, "callTaskAt");
 CREATE INDEX IF NOT EXISTS enquiry_related_idx ON ops.enquiry ("relatedEnquiryId") WHERE "relatedEnquiryId" IS NOT NULL;
 
 COMMIT;

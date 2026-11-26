@@ -279,3 +279,24 @@ test('board-168: the regret card; approve and undo; a supplier name is refused; 
     (await db.assistantAction.findUniqueOrThrow({ where: { id: back.id } })).chosenOption
   ).toBe('no_source_found')
 })
+
+test('171b: the P15 state sheet from the real parts', async ({ page }) => {
+  await page.goto('/_kit/p15-states')
+  await expect(page.getByRole('region', { name: 'Regret · Autopilot' })).toBeVisible({
+    timeout: 90_000,
+  })
+  await expect(page.getByRole('region', { name: 'Qualification · reading' })).toContainText(
+    'Reading the sender and the lines · usually under a minute'
+  )
+  await expect(page.getByRole('region', { name: 'Qualification · phishing' })).toContainText(
+    'Ignore (spam) · Sure'
+  )
+  await expect(page.getByRole('region', { name: 'Regret · client replies' })).toContainText(
+    'Open ENQ-2026-0446, linked to the regretted 0427.'
+  )
+  // Do and tell is not offered for a regret.
+  const auto = page.getByRole('region', { name: 'Regret · Autopilot' })
+  await expect(auto.getByRole('radio', { name: 'Do and tell' })).toBeDisabled()
+  await expect(auto.getByRole('radio', { name: 'Draft and ask' })).toBeChecked()
+  expect(await blocking(page, 'main')).toEqual([])
+})
