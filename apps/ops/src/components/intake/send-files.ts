@@ -19,11 +19,14 @@ export interface SendOutcome {
 
 export async function sendFiles(
   files: readonly File[],
-  opts: { batchId: string | null; replacesFileId?: string }
+  opts: { batchId: string | null; replacesFileId?: string; leadRef?: string | null }
 ): Promise<SendOutcome> {
   let batchId = opts.batchId
   if (!batchId) {
-    const b = await createIntakeBatchAction({ source: 'upload' })
+    const b = await createIntakeBatchAction({
+      source: 'upload',
+      ...(opts.leadRef ? { leadRef: opts.leadRef } : {}),
+    })
     if (!b.success)
       return { batchId: null, sent: 0, refused: files.map((f) => ({ name: f.name, why: b.error })) }
     batchId = b.data.batchId

@@ -3,7 +3,7 @@
 // component is a reference, not the value.
 import { cva } from 'class-variance-authority'
 
-export type ModalWidth = 480 | 520 | 560
+export type ModalWidth = 480 | 520 | 560 | 720
 /** 600: the Autopilot action drawer (board 99) draws a wider panel for the level cards and rules. */
 export type DrawerWidth = 420 | 460 | 480 | 600
 export type MenuWidth = 200 | 240 | 280
@@ -38,10 +38,16 @@ export const SCRIM = [
 export const modalPanel = cva(
   'bg-io-card rounded-io-dialog shadow-io-e4 text-io-ink flex max-w-full flex-col overflow-hidden text-[13px] outline-none',
   {
-    variants: { width: { 480: 'w-[480px]', 520: 'w-[520px]', 560: 'w-[560px]' } },
+    variants: { width: { 480: 'w-[480px]', 520: 'w-[520px]', 560: 'w-[560px]', 720: 'w-[720px]' } },
     defaultVariants: { width: 520 },
   }
 )
+/** The sheet variant (boards 16, 23): eyebrow over a serif title, a ruled head, a white foot. */
+export const sheetHead = 'border-io-line flex flex-col gap-1 border-b px-[26px] pt-[22px] pb-4'
+export const sheetTitle = 'io-display m-0 text-[28px] leading-[1.1]'
+export const sheetBody = 'text-io-ink flex flex-col gap-4 px-[26px] py-5 text-[13px] leading-[1.5]'
+export const sheetFoot =
+  'border-io-line flex items-center justify-between gap-2 border-t px-[26px] py-3.5'
 export const modalHead = 'flex items-start gap-3 px-[22px] pt-5 pb-2'
 /** 17/500; `danger` colours it bad. */
 export const modalTitle = cva('flex-1 text-[17px] leading-[1.3] font-medium tracking-[-0.01em]', {

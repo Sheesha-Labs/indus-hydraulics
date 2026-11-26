@@ -28,9 +28,17 @@ function refresh<T>(out: T): T {
 
 export const createIntakeBatchAction = defineAction({
   name: 'intake.batch.create',
-  schema: z.object({ source: z.enum(['upload', 'paste']).default('upload') }),
+  schema: z.object({
+    source: z.enum(['upload', 'paste']).default('upload'),
+    /** S09-T05: an intake started from a lead ("Upload more files"). */
+    leadRef: z
+      .string()
+      .regex(/^L-\d{4,}$/)
+      .optional(),
+  }),
   roles: [...roles],
-  handler: async (input, ctx) => createIntakeBatch(ctx.user.id, input.source),
+  handler: async (input, ctx) =>
+    createIntakeBatch(ctx.user.id, input.source, input.leadRef ?? null),
 })
 
 export const requestUploadSlotsAction = defineAction({

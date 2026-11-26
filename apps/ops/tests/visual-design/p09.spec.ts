@@ -298,3 +298,276 @@ test('board-16 parity: match to client and lead', async ({ page, signedInAs }) =
   )
   await db.intakeBatch.update({ where: { id: b.id }, data: { status: 'cancelled' } })
 })
+
+/** Board 03's seven leads, neutral: [title, company, contact, source, interest, value USD, stage, next action, days]. */
+const BOARD03 = [
+  [
+    'Polymer plant expansion, phase 2',
+    'Sample Polymers',
+    'Sample Contact A',
+    'manual',
+    'Valves, actuation',
+    '400000',
+    'qualified',
+    'Site visit',
+    3,
+  ],
+  [
+    'Compressor overhaul',
+    'Sample Petrochem Services',
+    'Sample Contact B',
+    'email',
+    'Seals, bearings',
+    '250000',
+    'qualified',
+    'Send line card',
+    null,
+  ],
+  [
+    'Desalination plant retrofit',
+    'Sample Desal Co.',
+    'Sample Contact C',
+    'callback',
+    'Butterfly valves',
+    '520000',
+    'contacted',
+    'Intro call',
+    -2,
+  ],
+  [
+    'Potline maintenance contract',
+    'Sample Aluminium',
+    'Sample Contact D',
+    'website',
+    'Bearings, gearbox spares',
+    '310000',
+    'contacted',
+    'Qualify volumes',
+    null,
+  ],
+  [
+    'Pump station instrumentation',
+    'Sample Water',
+    'Sample Contact E',
+    'email',
+    'Flow & pressure',
+    '180000',
+    'new',
+    'First reply',
+    null,
+  ],
+  [
+    'Fleet dry-dock spares 2027',
+    'Sample Marine Services',
+    'Sample Contact F',
+    'manual',
+    'Seals, hydraulics',
+    '460000',
+    'new',
+    'First reply',
+    null,
+  ],
+  [
+    'Clinker cooler upgrade',
+    'Sample Cement',
+    'Sample Contact G',
+    'email',
+    'Bearings',
+    '140000',
+    'qualified',
+    'Awaiting RFQ',
+    null,
+  ],
+] as const
+
+async function seedLead(over: Record<string, unknown>) {
+  const id = (await db.$queryRaw<Array<{ id: string }>>`SELECT gen_random_uuid() AS id`)[0]!.id
+  const [{ formatted }] = await db.$queryRaw<Array<{ formatted: string }>>`
+    SELECT formatted FROM ops.allocate_number('lead', '', 'lead'::ops."RecordType", ${id}::uuid)`
+  return db.lead.create({
+    data: { id, ref: formatted!, name: 'x', source: 'email', ...over } as never,
+  })
+}
+
+test('board-03 parity: leads', async ({ page, signedInAs }) => {
+  // Local only: open leads left by other runs are set aside so the list shows this seed.
+  await db.lead.updateMany({
+    where: { stage: { in: ['new', 'contacted', 'qualified'] } },
+    data: { stage: 'dropped' },
+  })
+  const owner = await db.user.findFirstOrThrow({
+    where: { role: 'owner', status: 'active' },
+    select: { id: true },
+  })
+  for (const [i, [title, company, contact, source, interest, value, stage, next, days]] of [
+    ...BOARD03,
+  ]
+    .reverse()
+    .entries()) {
+    await seedLead({
+      title,
+      name: contact,
+      companyName: company,
+      source,
+      interest,
+      estValue: value,
+      estCurrency: 'USD',
+      stage,
+      nextAction: next,
+      nextActionAt: days === null ? null : new Date(Date.now() + days * 86_400_000),
+      ownerId: owner.id,
+      createdAt: new Date(Date.now() - (10 - i) * 60_000),
+    })
+  }
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/enquiries/leads')
+  await expect(page.locator('[data-built="leads"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '03',
+    0.05,
+    'Neutral leads and contacts; Source words are the stored channels (no event names); one owner (no RK/SM/AH: only KB and AB exist).'
+  )
+})
+
+test('board-22 parity: lead detail', async ({ page, signedInAs }) => {
+  const owner = await db.user.findFirstOrThrow({
+    where: { role: 'owner', status: 'active' },
+    select: { id: true },
+  })
+  const company = await db.company.create({
+    data: { name: 'Sample Marine Engineering', isClient: true },
+  })
+  const lead = await seedLead({
+    title: 'MV Example hydraulic refit',
+    name: 'Sample Superintendent',
+    companyId: company.id,
+    stage: 'qualified',
+    ownerId: owner.id,
+    estValue: '214000',
+    estCurrency: 'USD',
+    interest: 'MV Example · dry-dock Oct',
+    neededBy: new Date('2026-10-02T00:00:00Z'),
+  })
+  const rows = [
+    [
+      'Hydraulic hose 1/2" 2SN, 3 m, JIC female both ends',
+      'HH-08-2SN-3000',
+      24,
+      'EA',
+      'EN 853 2SN',
+    ],
+    ['Hydraulic hose 3/4" 4SH, 2 m', 'HH-12-4SH-2000', 12, 'EA', 'EN 856 4SH'],
+    ['Adaptor JIC 1/2" M × BSP 1/2" M', 'ADP-JB-08', 60, 'EA', 'Zinc-plated steel'],
+    ['Ball valve 1" 3-pc, high pressure', 'BV-16-3P', 8, 'EA', '6000 psi?'],
+    ['Quick coupling ISO-A 1/2"', 'QC-ISOA-08', 30, 'PR', 'Steel'],
+    ['Hydraulic filter element 10 µm', 'HF-1O-220', 18, 'EA', 'Glass fibre'],
+    ['Inline check valve 3/8"', 'CV-06-IL', 16, 'EA', 'Carbon steel'],
+    ['Pressure gauge 0–400 bar, glycerine-filled', 'PG-400-G', 10, 'EA', 'SS case'],
+    ['Hydraulic hose 1/2" 2SN, 3 m', 'HH-08-2SN-3000', 24, 'EA', 'EN 853 2SN'],
+  ] as const
+  await db.leadLine.createMany({
+    data: Array.from({ length: 33 }, (_, i) => {
+      const r = rows[i % rows.length]!
+      return {
+        leadId: lead.id,
+        no: i + 1,
+        description: r[0],
+        partNo: r[1],
+        qty: r[2],
+        uom: r[3],
+        specNotes: r[4],
+        sourcePage: 2,
+        spanIds: [],
+      }
+    }),
+  })
+  const b = await db.intakeBatch.create({
+    data: {
+      source: 'upload',
+      status: 'confirmed',
+      leadId: lead.id,
+      confirmedById: owner.id,
+      confirmedAt: new Date(),
+    },
+  })
+  await db.intakeFile.createMany({
+    data: [
+      {
+        batchId: b.id,
+        filename: 'SME-RFQ-0921_MV-Example.pdf',
+        kind: 'pdf',
+        status: 'ready',
+        linesFound: 34,
+      },
+      {
+        batchId: b.id,
+        filename: 'nameplate_pump2.jpeg',
+        kind: 'image',
+        status: 'ready',
+        linesFound: 0,
+      },
+    ],
+  })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/enquiries/leads/${lead.ref}`)
+  await expect(page.locator('[data-built="lead-specs"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '22',
+    0.06,
+    'Neutral lead, client and files; the header adds a Stage menu beside Upload more files; Source shows "Typed" for lines without a span; activity reads the stored events.'
+  )
+})
+
+test('board-23 parity: convert to enquiry', async ({ page, signedInAs }) => {
+  const owner = await db.user.findFirstOrThrow({
+    where: { role: 'owner', status: 'active' },
+    select: { id: true },
+  })
+  const lead = await seedLead({
+    title: 'MV Example hydraulic refit',
+    name: 'Sample',
+    stage: 'qualified',
+    ownerId: owner.id,
+    clientRef: 'SME-RFQ-0921',
+    neededBy: new Date('2026-10-02T00:00:00Z'),
+  })
+  const trades = await Promise.all(
+    ['Hoses', 'Fittings', 'Valves', 'Instruments'].map((n) =>
+      db.trade.upsert({
+        where: { name: n },
+        create: { name: n, slug: `${n.toLowerCase()}-${tag}` },
+        update: {},
+      })
+    )
+  )
+  const counts = [14, 11, 5, 3]
+  let no = 0
+  for (const [i, t] of trades.entries())
+    await db.leadLine.createMany({
+      data: Array.from({ length: counts[i]! }, () => ({
+        leadId: lead.id,
+        no: ++no,
+        description: `Line ${no}`,
+        qty: 1,
+        tradeId: t.id,
+        spanIds: [],
+      })),
+    })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/enquiries/leads/${lead.ref}?convert=1`)
+  await expect(page.locator('[data-part="convert-lead"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '23',
+    0.28,
+    'Most of the ratio is placement: the kit Modal centres in the content area beside the sidebar, the board centres on the whole frame (120px), and it opens over the lead page where the board dims a skeleton; line-card suppliers per category arrive with S12; Owner is a select of KB and AB.'
+  )
+})

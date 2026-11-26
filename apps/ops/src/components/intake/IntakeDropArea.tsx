@@ -21,9 +21,12 @@ const noop = () => () => undefined
 export default function IntakeDropArea({
   batchId,
   maxMb,
+  leadRef = null,
 }: {
   batchId: string | null
   maxMb: number
+  /** "Upload more files" on a lead (S09-T05): the new intake belongs to that lead. */
+  leadRef?: string | null
 }) {
   const router = useRouter()
   const { toast } = useToast()
@@ -44,7 +47,7 @@ export default function IntakeDropArea({
     const files = Array.from(list)
     if (!files.length) return
     setBusy(true)
-    const out = await sendFiles(files, { batchId })
+    const out = await sendFiles(files, { batchId, leadRef })
     setBusy(false)
     for (const r of out.refused) toast({ kind: 'error', title: `${r.name}: ${r.why}` })
     if (out.sent)
@@ -61,7 +64,7 @@ export default function IntakeDropArea({
     setBusy(true)
     let id = batchId
     if (!id) {
-      const b = await createIntakeBatchAction({ source: 'paste' })
+      const b = await createIntakeBatchAction({ source: 'paste', ...(leadRef ? { leadRef } : {}) })
       if (!b.success) {
         setBusy(false)
         toast({ kind: 'error', title: b.error })

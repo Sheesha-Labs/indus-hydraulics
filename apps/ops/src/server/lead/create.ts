@@ -23,22 +23,22 @@ export async function allocateLeadRef(tx: Tx, leadId: string): Promise<string> {
 
 export interface NewLead {
   name: string
-  companyId?: string | null
-  companyName?: string | null
-  contactId?: string | null
-  email?: string | null
-  phone?: string | null
+  companyId?: string | null | undefined
+  companyName?: string | null | undefined
+  contactId?: string | null | undefined
+  email?: string | null | undefined
+  phone?: string | null | undefined
   source: $Enums.LeadSource
-  title?: string | null
-  interest?: string | null
-  estValue?: string | null
-  estCurrency?: string | null
-  nextAction?: string | null
-  nextActionAt?: Date | null
-  ownerId?: string | null
-  clientRef?: string | null
-  neededBy?: Date | null
-  notes?: string | null
+  title?: string | null | undefined
+  interest?: string | null | undefined
+  estValue?: string | null | undefined
+  estCurrency?: string | null | undefined
+  nextAction?: string | null | undefined
+  nextActionAt?: Date | null | undefined
+  ownerId?: string | null | undefined
+  clientRef?: string | null | undefined
+  neededBy?: Date | null | undefined
+  notes?: string | null | undefined
 }
 
 export async function createLead(
