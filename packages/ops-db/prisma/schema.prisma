@@ -6503,3 +6503,44 @@ model IntakeLineCandidate {
   @@map("intake_line_candidate")
   @@schema("ops")
 }
+
+/// Board 04 (S09-T02): one row per enquiry with its C7 display group, line coverage, latest quotation and client PO.
+view EnquiryPipelineRow {
+  id                    String    @unique @db.Uuid
+  ref                   String
+  title                 String
+  clientId              String?   @db.Uuid
+  clientName            String?
+  ownerId               String?   @db.Uuid
+  ownerInitials         String?
+  deadline              DateTime? @db.Timestamptz(3)
+  receivedAt            DateTime  @db.Timestamptz(3)
+  stage                 String
+  stageGroup            String
+  value                 Decimal?  @db.Decimal(18, 4)
+  valueCurrency         String?
+  linesTotal            Int
+  linesSent             Int
+  linesQuoted           Int
+  quotationNumber       String?
+  quotationStatus       String?
+  quotationClientStatus String?
+  clientPoRef           String?
+  version               Int
+  chosenPath            String?
+  stageChangedAt        DateTime  @db.Timestamptz(3)
+
+  @@map("enquiry_pipeline_v")
+  @@schema("ops")
+}
+
+/// Board 04 filter chips: enquiries by display group and owner.
+view EnquiryFilterCount {
+  stageGroup String
+  ownerId    String? @db.Uuid
+  n          Int
+
+  @@unique([stageGroup, ownerId])
+  @@map("enquiry_filter_counts_v")
+  @@schema("ops")
+}
