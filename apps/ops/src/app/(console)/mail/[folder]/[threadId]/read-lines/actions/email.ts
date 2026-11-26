@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { after } from 'next/server'
 import { z } from 'zod'
 import { notifyYearSeeded } from '../../../../../../../server/numbering/enquiry-seed'
+import { announceEnquiryCreated, recordAckSkip } from '../../../../../../../server/enquiry/created'
 import { defineAction } from '../../../../../../../lib/define-action'
 import { confirmIntakeAsPerson } from '../../../../../../../server/enquiry/from-batch'
 import { startEmailIntake } from '../../../../../../../server/intake/email-body'
@@ -35,13 +36,37 @@ export const continueFromEmailAction = defineAction({
   roles: ['owner', 'helper'],
   idempotent: (input) => input.batchId,
   handler: async (input, ctx) => {
-    const out = await confirmIntakeAsPerson(
-      ctx.user,
-      input.batchId,
-      { includePendingConfident: true },
-      ctx.withTx
-    )
+    const { out, skipped } = await ctx.withTx(async (tx) => {
+      const made = await confirmIntakeAsPerson(
+        ctx.user,
+        input.batchId,
+        { includePendingConfident: true },
+        (fn) => fn(tx)
+      )
+      const e = await tx.enquiry.findUniqueOrThrow({
+        where: { id: made.enquiryId },
+        select: { clientId: true },
+      })
+      return {
+        out: made,
+        skipped: await recordAckSkip(tx, {
+          enquiryId: made.enquiryId,
+          clientId: e.clientId,
+          actorId: ctx.user.id,
+        }),
+      }
+    })
     if (out.yearSeeded) after(() => notifyYearSeeded(out.yearSeeded!))
+    // S09-T04: the same follow-ups as a matched intake, after the transaction commits.
+    after(() =>
+      announceEnquiryCreated({
+        enquiryId: out.enquiryId,
+        ref: out.ref,
+        ackSkipped: skipped,
+        unsureIds: out.unsureIds,
+        requestedById: ctx.user.id,
+      })
+    )
     revalidatePath('/enquiries')
     revalidatePath('/enquiries/intake')
     return { ref: out.ref, unsure: out.unsureIds.length }

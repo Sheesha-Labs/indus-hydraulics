@@ -229,3 +229,72 @@ test('board-05 parity: the enquiry Overview', async ({ page, signedInAs }) => {
     data: { state: 'cancelled' },
   })
 })
+
+test('board-16 parity: match to client and lead', async ({ page, signedInAs }) => {
+  const domain = `${tag}.example.test`
+  const company = await db.company.create({
+    data: { name: 'Sample Marine Engineering', isClient: true, primaryDomain: domain },
+  })
+  await db.lead.create({
+    data: {
+      ref: `L-9${String(Date.now()).slice(-5)}`,
+      name: 'Sample Marine Engineering',
+      companyId: company.id,
+      title: 'MV Example hydraulic refit',
+      source: 'email',
+      stage: 'qualified',
+    },
+  })
+  const mb = await db.mailbox.findFirstOrThrow({ where: { role: 'client' }, select: { id: true } })
+  const t = await db.mailThread.create({ data: { mailboxId: mb.id, gmailThreadId: `t-${tag}` } })
+  const m = await db.mailMessage.create({
+    data: {
+      mailboxId: mb.id,
+      threadId: t.id,
+      gmailMessageId: `g-${tag}`,
+      rfcMessageId: `${tag}@client.example.test`,
+      direction: 'inbound',
+      fromAddress: `j.sample@${domain}`,
+      fromName: 'J Sample',
+      toAddresses: ['sales@example.test'],
+      ccAddresses: [],
+      subject: 'RFQ',
+      bodyText: 'Please quote.',
+      bodyTextHash: tag,
+      sentAt: new Date(),
+      labelsApplied: [],
+      origin: 'live',
+    },
+  })
+  const b = await db.intakeBatch.create({
+    data: {
+      source: 'mail',
+      mailMessageId: m.id,
+      clientRef: 'SME-RFQ-0921',
+    },
+  })
+  await db.intakeLineCandidate.createMany({
+    data: Array.from({ length: 34 }, (_, i) => ({
+      batchId: b.id,
+      ord: i + 1,
+      description: `Line ${i + 1}`,
+      qty: 1,
+      confidence: 'sure' as const,
+      decision: i === 33 ? ('merged' as const) : ('accepted' as const),
+    })),
+  })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/enquiries/intake/${b.id}/match`)
+  await expect(page.locator('[data-built="intake-match"][data-ready]')).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '16',
+    0.03,
+    'Matched on the sender only (same-name sample companies from other seeds make a letterhead match Unsure); the client reference makes Go straight to an enquiry the suggestion (S09-T04 rule) where the board selects the open lead; neutral client, lead and sender; categories read "after the trade list is set up" until trades are seeded; the dimmed page behind is a plain skeleton.'
+  )
+  await db.intakeBatch.update({ where: { id: b.id }, data: { status: 'cancelled' } })
+})

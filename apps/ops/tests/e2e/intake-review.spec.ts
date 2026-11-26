@@ -221,6 +221,16 @@ test('board-15: review, resolve, merge, accept all high, continue', async ({
   await expect(page.getByText(/^4 of 4 confirmed/)).toBeVisible({ timeout: 30_000 })
   await expect(cont).toBeEnabled()
   await cont.click()
+  // S09-T04: board 16 places the lines; this upload has no client yet, so one is created inline.
+  await page.waitForURL(`**/enquiries/intake/${batchId}/match`, { timeout: 60_000 })
+  await expect(page.locator('[data-built="intake-match"][data-ready]')).toBeVisible({
+    timeout: 60_000,
+  })
+  await page.getByRole('button', { name: 'Choose or create client' }).click()
+  await page.getByLabel('Create client').fill(`Sample Client LLC e2e review ${Date.now()}`)
+  await page.getByRole('button', { name: 'Create client', exact: true }).click()
+  await page.getByRole('radio', { name: /Go straight to an enquiry/ }).check()
+  await page.getByRole('button', { name: 'Create enquiry' }).click()
   await expect(page).toHaveURL(new RegExp(`/enquiries/ENQ-${year}-\\d+`), { timeout: 60_000 })
   const b = await db.intakeBatch.findUniqueOrThrow({
     where: { id: batchId },

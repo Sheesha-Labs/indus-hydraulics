@@ -20,7 +20,12 @@ import { spanSourceOf } from '../../intake/spans'
 import { stageCandidates } from '../../intake/stage'
 import { uomTableOf } from '../../intake/units'
 import { matchParts, type PartMatch } from '../../parts/match'
-import { unitReference, type ExtractOutput, type ExtractedLine } from '../prompts/extract-lines.v1'
+import {
+  PROMPT_VERSION,
+  unitReference,
+  type ExtractOutput,
+  type ExtractedLine,
+} from '../prompts/extract-lines.v2'
 import { registerAction } from '../registry'
 import type { ActionDefinition, Check, ProposalDraft } from '../types'
 import { writeTracked } from '../write-tracked'
@@ -97,9 +102,17 @@ function factsOf(level: ExtractOutput['documentLevel'] | null, anchor: Date): Ba
   return {
     clientRef: level.clientRef?.value ?? null,
     deadline: closing
-      ? { date: closing.date, ambiguous: closing.ambiguous, quote: level.closingDate!.quote }
+      ? {
+          date: closing.date,
+          ambiguous: closing.ambiguous,
+          quote: level.closingDate!.quote,
+          page: level.closingDate!.page,
+        }
       : null,
     terms: Object.keys(terms).length ? terms : null,
+    issuer: level.issuerName
+      ? { name: level.issuerName.value, quote: level.issuerName.quote, page: level.issuerName.page }
+      : null,
   }
 }
 
@@ -185,7 +198,7 @@ const definition: ActionDefinition<ExtractInput, ExtractOut> = {
       },
       costUsd: cost,
       model: final.model,
-      promptVersion: 'extract_lines@1',
+      promptVersion: PROMPT_VERSION,
       callIds,
     }
   },

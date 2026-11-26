@@ -77,6 +77,9 @@ const AWAITING = [
   'send.attachment_names',
   'assistant.internal_undo_minutes', // S05-T02
   'ack.revert_by', // S08-T07
+  'qualify.free_mail_domains', // S09-T04
+  'qualify.rdap_enabled', // S09-T06
+  'questions.clock', // S09-T07
 ]
 
 const USER_SELECT = {

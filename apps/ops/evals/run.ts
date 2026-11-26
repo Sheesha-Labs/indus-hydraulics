@@ -5,7 +5,7 @@
  *   bun run --filter @indus/ops eval -- --suite classify --set synthetic --model claude-haiku-5-5
  *   bun run --filter @indus/ops eval -- --suite link --set golden
  *   bun run --filter @indus/ops eval -- --suite learn                       (S07-T05, learn-preferences@1)
- *   bun run --filter @indus/ops eval -- --suite extract [--model …] [--repeat 2] (S08-T02, extract_lines@1)
+ *   bun run --filter @indus/ops eval -- --suite extract [--model …] [--repeat 2] (S08-T02; extract_lines@2 since S09-T04)
  *
  * It runs the real action code (propose + verify of classify_mail and link_mail) over fixtures, with an
  * in-memory ledger (no database writes) and the Messages API through OPS_ANTHROPIC_API_KEY (use the low-limit
@@ -40,7 +40,10 @@ import { scoreClassify, type ClassifyCase } from './scorers/classify'
 import { scoreLink, type LinkCase } from './scorers/link'
 import { scoreLearn, type LearnCase } from './scorers/learn'
 import { scoreExtract, type ExpectedLine, type ExtractCaseResult } from './scorers/extract'
-import { unitReference } from '../src/server/assistant/prompts/extract-lines.v1'
+import {
+  PROMPT_VERSION as EXTRACT_PROMPT_VERSION,
+  unitReference,
+} from '../src/server/assistant/prompts/extract-lines.v2'
 import { buildCandidates, unsureShare } from '../src/server/intake/candidates'
 import {
   ESCALATE_UNSURE_SHARE,
@@ -447,7 +450,7 @@ async function main(): Promise<void> {
     const { score, escalations, skipped } = out!
     console.log(JSON.stringify({ ...score, escalations, skipped: skipped.length }, null, 2))
     console.log(
-      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt extract_lines@1`
+      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt ${EXTRACT_PROMPT_VERSION}`
     )
     if (ai && !score.passes) process.exitCode = 1
     return

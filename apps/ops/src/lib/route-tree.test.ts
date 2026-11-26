@@ -63,6 +63,7 @@ const TABLE: readonly string[] = [
   '(console)/enquiries',
   '(console)/enquiries/new',
   '(console)/enquiries/intake/[batchId]',
+  '(console)/enquiries/intake/[batchId]/match',
   '(console)/enquiries/leads',
   '(console)/enquiries/leads/[id]',
   '(console)/enquiries/[ref]',

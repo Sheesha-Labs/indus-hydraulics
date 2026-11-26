@@ -2,7 +2,8 @@ import type { SystemPart } from '@indus/ops-ai'
 import { z } from 'zod'
 
 /**
- * Prompt for action #5 Extract lines (S08-T02, 08-map-integrations §2.5). The model READS: every value it
+ * Prompt for action #5 Extract lines (S08-T02, 08-map-integrations §2.5). Released and kept for its hash;
+ * the action runs extract-lines.v2 since S09-T04. The model READS: every value it
  * returns carries a verbatim quote, quantities come back as printed strings, and doubts are reported, not
  * resolved. Code parses the numbers, finds the quotes again (spans), matches parts and decides confidence. The
  * model's opinion of its own confidence is not asked for.

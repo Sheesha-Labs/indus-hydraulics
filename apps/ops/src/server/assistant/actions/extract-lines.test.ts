@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import type { StructuredResult } from '@indus/ops-ai'
-import { toApi, type ExtractOutput } from '../prompts/extract-lines.v1'
+import { toApi, type ExtractOutput } from '../prompts/extract-lines.v2'
 import type { ActionAi } from '../types'
 
 vi.mock('@sentry/nextjs', () => ({ captureException: () => undefined, withScope: () => undefined }))
@@ -17,6 +17,7 @@ const LEVEL: ExtractOutput['documentLevel'] = {
   currency: null,
   quoteValidity: null,
   partialAllowed: null,
+  issuerName: null,
 }
 const body =
   'Please quote:\n1. Ball valve 2" TEST-0001 - 10 nos\n2. Gate valve 4" TEST-0002 - 4 nos\n3. Gasket TEST-0003 - 24 pcs'

@@ -4,11 +4,11 @@ import { Button } from '@indus/ops-ui/controls'
 import { useToast } from '@indus/ops-ui/overlay'
 import type { Route } from 'next'
 import { useRouter } from 'next/navigation'
+import { reviewReadyAction } from '../../../app/(console)/enquiries/intake/[batchId]/actions/match'
 import { useRef, useState } from 'react'
 import {
   acceptAllHighAction,
   addManualLineAction,
-  confirmExtractionAction,
   mergeDuplicatesAction,
   requestOriginalAction,
   resolveUnsureAction,
@@ -211,12 +211,9 @@ export default function ReviewWorkspace({ model }: { model: ReviewModel }) {
                 disabled={busy || !!model.blocker}
                 title={model.blocker ?? undefined}
                 onClick={() =>
-                  void run(confirmExtractionAction({ batchId: model.batch.id }), (d) => {
-                    toast({
-                      kind: 'success',
-                      title: `${d.ref} created${d.unsure ? ` · ${d.unsure} line${d.unsure === 1 ? '' : 's'} to answer` : ''}`,
-                    })
-                    router.push(`/enquiries/${d.ref}` as Route)
+                  // S09-T04: board 16 decides where the lines go (lead or enquiry); nothing is written here.
+                  void run(reviewReadyAction({ batchId: model.batch.id }), (d) => {
+                    router.push(d.href as Route)
                   })
                 }
               >
