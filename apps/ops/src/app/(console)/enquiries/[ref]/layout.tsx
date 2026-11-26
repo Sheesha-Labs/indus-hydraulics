@@ -54,10 +54,12 @@ export default async function EnquiryLayout({
     )
   }
   const overview = c.header('overview')
+  // C9: a tender shows its own header on tender/*. Not a tender: the S02 sample outside production.
+  const tender = c.isTender ? overview : await getRecordHeaderState('tender', ref)
   return (
     <RecordCockpit
       header={<StateRecordHeader state={overview} />}
-      {...(c.isTender ? { tenderHeader: <StateRecordHeader state={overview} /> } : {})}
+      {...(tender ? { tenderHeader: <StateRecordHeader state={tender} /> } : {})}
       tabHeaders={{ questions: <StateRecordHeader state={c.header('questions')} /> }}
       strip={<RecordStrip state={overview} />}
       rail={<EnquiryRail c={c} />}

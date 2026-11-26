@@ -1,4 +1,5 @@
 import { opsDb as db } from '@indus/ops-db'
+import { seedBoard05 } from '../../src/server/enquiry/testing/overview-seed'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
 import { compareToBoardPng, recordParity } from './compare'
@@ -174,4 +175,57 @@ test('board-04 parity: the pipeline', async ({ page, signedInAs }) => {
     0.05,
     'Neutral titles and clients; the board adds a Leads secondary beside New enquiry; sent coverage is 0 until RFQs exist (S12); quotation numbers carry the run digit; Won shows "Won" until an order exists (S22).'
   )
+})
+
+test('board-05 parity: the enquiry Overview', async ({ page, signedInAs }) => {
+  const ref = `ENQ-2092-${String(Date.now()).slice(-7)}`
+  const s = await seedBoard05(db, {
+    tag,
+    ref,
+    ownerId,
+    rfqPrefix: `96${String(Date.now()).slice(-2)}`,
+  })
+  enquiries.push(s.enquiryId)
+  // The board's strip: three done actions and one waiting proposal.
+  const base = {
+    actionKey: 'ack_email',
+    levelAtTime: 'draft_and_ask',
+    subjectType: 'enquiry',
+    subjectId: s.enquiryId,
+    enquiryId: s.enquiryId,
+    reasons: [],
+    basisHash: 'x',
+    surface: 'review',
+  } as const
+  for (const [i, [headline, state]] of [
+    ['Capture 2 quotes', 'done'],
+    ['Chase Mock Instruments Co today', 'done'],
+    ['Send 4 RFQs', 'done'],
+    ['Chase Mock Instruments Co again', 'proposed'],
+  ].entries())
+    await db.assistantAction.create({
+      data: {
+        ...base,
+        ref: `A-P09-${String(Date.now()).slice(-6)}${i}`,
+        headline,
+        state,
+        decidedAt: new Date(Date.now() - (i + 1) * 60_000),
+        idempotencyKey: `p09:${tag}:${i}`,
+      } as never,
+    })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/enquiries/${ref}`)
+  await expect(page.locator('[data-built="enquiry-overview"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '05',
+    0.1,
+    'The T2 template body pads 16 where board 05 pads 24, so the body sits 8px higher (most of the ratio); C8 has eleven tabs where the board draws nine; neutral title, client, suppliers (codes SAM/TES/DEM/MOC/TRI) and part numbers; money in AED (C38 on USD quotes at 3.6725) where the board prints $; the strip names neutral suppliers; the deadline reads working days.'
+  )
+  await db.assistantAction.updateMany({
+    where: { enquiryId: s.enquiryId, state: 'proposed' },
+    data: { state: 'cancelled' },
+  })
 })

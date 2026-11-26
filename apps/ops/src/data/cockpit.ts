@@ -25,7 +25,9 @@ export const getRecordHeaderState = cache(
   async (kind: RecordKind, ref: string): Promise<RecordHeaderState | null> => {
     if (kind !== 'order') {
       const c = await getEnquiryCockpit(ref)
-      if (c) return kind === 'tender' && !c.isTender ? null : c.header('overview')
+      // A tender section of a record that is not a tender: the S02 sample outside production (null in
+      // production) until S32 builds tender records.
+      if (c && (kind === 'enquiry' || c.isTender)) return c.header('overview')
     }
     return recordHeaderFixture(kind, ref, env().APP_ENV)
   }

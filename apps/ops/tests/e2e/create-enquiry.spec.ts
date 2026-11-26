@@ -212,7 +212,10 @@ test('board-92: a forwarded client enquiry becomes a card; approving creates the
   ])
 
   await page.goto(`/enquiries/${e.ref}`)
-  await expect(page.getByRole('heading', { name: /^2 lines/ })).toBeVisible({ timeout: 90_000 })
+  // S09-T03: the Overview (board 05) lists the confirmed lines.
+  await expect(page.getByRole('heading', { name: 'Line items · 2' })).toBeVisible({
+    timeout: 90_000,
+  })
   await expect(page.getByRole('cell', { name: 'Gate valve 4" class 150' })).toBeVisible()
   await expect(page.getByRole('link', { name: 'Open thread in Mail ↗' })).toBeVisible()
 })
