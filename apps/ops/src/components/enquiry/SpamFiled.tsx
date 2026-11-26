@@ -14,10 +14,13 @@ export default function SpamFiled({
   enquiryId,
   text,
   reason,
+  bare = false,
 }: {
   enquiryId: string
   text: string
   reason: string | null
+  /** 171b state sheet: the content without the card frame and eyebrow. */
+  bare?: boolean
 }) {
   const router = useRouter()
   const { toast } = useToast()
@@ -34,10 +37,10 @@ export default function SpamFiled({
       id="qualification"
       aria-label="Filed as spam"
       data-state="spam_filed"
-      className="rounded-io-card border-io-line bg-io-card border p-5"
+      className={bare ? '' : 'rounded-io-card border-io-line bg-io-card border p-5'}
     >
-      <h2 className="io-eyebrow m-0">Qualification · phishing</h2>
-      <p className="m-0 mt-3">
+      {bare ? null : <h2 className="io-eyebrow m-0">Qualification · phishing</h2>}
+      <p className={bare ? 'm-0' : 'm-0 mt-3'}>
         <Chip tone="n" label="Ignore (spam) · Sure" />
       </p>
       {reason ? <p className="text-io-ink m-0 mt-3 text-[13px] leading-[1.5]">{reason}</p> : null}

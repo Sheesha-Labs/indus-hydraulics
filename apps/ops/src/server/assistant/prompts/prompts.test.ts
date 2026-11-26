@@ -12,6 +12,8 @@ import * as extract from './extract-lines.v1'
 import * as extract2 from './extract-lines.v2'
 import * as createEnquiry from './create-enquiry.v1'
 import * as qualify from './qualify-enquiry.v1'
+import * as clientQuestions from './client-questions.v1'
+import * as matchAnswers from './match-client-answers.v1'
 
 /**
  * Prompts are versioned code (CLAUDE.md §9.9): the text of a released version never changes. A different
@@ -32,6 +34,9 @@ const RELEASED: Record<string, string> = {
   'create_enquiry@1': '60f63da2c62d293f9b4c5ffe5ddfaf1983ea8e786b95f8f1d89eb4b3c0964ce7',
   // S09-T06: the quick read (board 167); synthetic eval suite `qualify`.
   'qualify_enquiry@1': 'e2f162af505e410093105421acb0062b4aaaa36ca308f362ce778dae4f92c3f1',
+  // S09-T07: the questions before sourcing (#7) and the answers read against them (board 171).
+  'client_questions@1': '5487a9618159a537e027244e76332c2177887103344b7f65fabf61aa5fea1f7a',
+  'match_client_answers@1': '17a1d1728e12c381e2c27888064aa13b8195c1ad08b70816f2defb8da7754309',
 }
 
 describe('released prompts are byte-stable', () => {
@@ -47,6 +52,8 @@ describe('released prompts are byte-stable', () => {
     extract2,
     createEnquiry,
     qualify,
+    clientQuestions,
+    matchAnswers,
   ])('$PROMPT_VERSION', (m) => {
     const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
     expect(hash).toBe(RELEASED[m.PROMPT_VERSION])

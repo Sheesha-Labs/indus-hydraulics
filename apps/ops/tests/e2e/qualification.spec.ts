@@ -74,6 +74,15 @@ test.beforeAll(async () => {
 
 test.afterAll(async () => {
   const enquiryIds = Object.values(seeds).map((s) => s.enquiryId)
+  // Cards left waiting would crowd other specs' Review queue.
+  await db.assistantAction.updateMany({
+    where: { enquiryId: { in: enquiryIds }, state: 'later' },
+    data: { state: 'proposed' },
+  })
+  await db.assistantAction.updateMany({
+    where: { enquiryId: { in: enquiryIds }, state: 'proposed' },
+    data: { state: 'cancelled' },
+  })
   await db.outboundEmail.deleteMany({ where: { mailboxId: ids.sales } })
   await db.enquiry.updateMany({
     where: { id: { in: enquiryIds }, closedAt: null },

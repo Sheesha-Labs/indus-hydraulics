@@ -74,6 +74,8 @@ export async function routeClassified(data: {
   // like an enquiry; the Create enquiry card that follows links the new enquiry to the regretted one.
   if (cls === 'client_reply' && (await inRegrettedThread(data.messageId)))
     await startEmailIntake(null, data.messageId).catch(() => null)
+  // S09-T07: a client reply in the thread of an enquiry with questions waiting is read against them.
+  if (cls === 'client_reply') await requestAnswerMatch(data.messageId)
   const id = await requestAction({
     actionKey: 'link_mail',
     subjectType: 'mail_message',
@@ -83,6 +85,36 @@ export async function routeClassified(data: {
     sourceVersion: String(data.class),
   })
   return also ? { requested: id, also: [also] } : { requested: id }
+}
+
+async function requestAnswerMatch(messageId: string): Promise<void> {
+  const m = await opsDb.mailMessage.findUnique({
+    where: { id: messageId },
+    select: {
+      bodyTextHash: true,
+      thread: {
+        select: {
+          enquiry: {
+            select: {
+              id: true,
+              _count: { select: { clientQuestions: { where: { status: 'sent' } } } },
+            },
+          },
+        },
+      },
+    },
+  })
+  const e = m?.thread.enquiry
+  if (!e || !e._count.clientQuestions) return
+  await requestAction({
+    actionKey: 'match_client_answers',
+    subjectType: 'mail_message',
+    subjectId: messageId,
+    enquiryId: e.id,
+    trigger: 'mail.classified',
+    origin: 'live',
+    sourceVersion: m.bodyTextHash ?? 1,
+  })
 }
 
 async function inRegrettedThread(messageId: string): Promise<boolean> {

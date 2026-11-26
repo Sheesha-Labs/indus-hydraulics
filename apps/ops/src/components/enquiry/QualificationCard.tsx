@@ -85,20 +85,9 @@ export default function QualificationCard({
         <div className="flex items-center justify-between">
           <h2 className="io-eyebrow m-0">Qualification · reading</h2>
         </div>
-        <div className="mt-3 flex items-start gap-3">
-          <Tag kind="assistant">Assistant</Tag>
-          <p className="text-io-ink-2 m-0 text-[12.5px] leading-[1.45]">
-            Reading the sender and the lines · usually under a minute
-          </p>
+        <div className="mt-3">
+          <ReadingBody />
         </div>
-        <div aria-hidden="true" className="mt-4 flex flex-col gap-2.5">
-          <span className="io-shimmer rounded-io-tag block h-2.5 w-3/5" />
-          <span className="io-shimmer rounded-io-tag block h-2.5 w-1/2" />
-          <span className="io-shimmer rounded-io-tag block h-2.5 w-[55%]" />
-        </div>
-        <p className="text-io-ink-3 m-0 mt-4 text-[12.5px] leading-[1.45]">
-          Sourcing can start before the read finishes; the path is asked when it lands.
-        </p>
       </section>
     )
   if (q.state === 'failed')
@@ -116,6 +105,28 @@ export default function QualificationCard({
     )
   if (q.state === 'spam_filed') return null
   return <ReadCard q={q} />
+}
+
+/** 171b state 1: what the card shows while the read runs (also drawn on the state sheet). */
+export function ReadingBody() {
+  return (
+    <>
+      <div className="flex items-start gap-3">
+        <Tag kind="assistant">Assistant</Tag>
+        <p className="text-io-ink-2 m-0 text-[12.5px] leading-[1.45]">
+          Reading the sender and the lines · usually under a minute
+        </p>
+      </div>
+      <div aria-hidden="true" className="mt-4 flex flex-col gap-2.5">
+        <span className="io-shimmer rounded-io-tag block h-2.5 w-3/5" />
+        <span className="io-shimmer rounded-io-tag block h-2.5 w-1/2" />
+        <span className="io-shimmer rounded-io-tag block h-2.5 w-[55%]" />
+      </div>
+      <p className="text-io-ink-3 m-0 mt-4 text-[12.5px] leading-[1.45]">
+        Sourcing can start before the read finishes; the path is asked when it lands.
+      </p>
+    </>
+  )
 }
 
 function ReadCard({ q }: { q: Read }) {

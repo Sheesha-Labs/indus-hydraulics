@@ -1,6 +1,7 @@
 import { opsDb as db } from '@indus/ops-db'
 import { seedBoard05 } from '../../src/server/enquiry/testing/overview-seed'
 import { seedQualify } from '../../src/server/enquiry/testing/qualify-seed'
+import { seedQuestions } from '../../src/server/enquiry/testing/questions-seed'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
 import { compareToBoardPng, recordParity } from './compare'
@@ -635,4 +636,47 @@ test('board-168 parity: the regret card in Review', async ({ page, signedInAs })
     where: { id: s.regretActionId! },
     data: { state: 'cancelled' },
   })
+})
+
+test('board-171 parity: questions before sourcing', async ({ page, signedInAs }) => {
+  const mb = await db.mailbox.findFirstOrThrow({
+    where: { role: 'client' },
+    select: { id: true, address: true },
+  })
+  const s = await seedQuestions(db, {
+    tag: `${tag}s`,
+    ref: `ENQ-2092-${String(Date.now()).slice(-7)}`,
+    rfqPrefix: `94${String(Date.now()).slice(-2)}`,
+    salesMailboxId: mb.id,
+    salesAddress: mb.address,
+  })
+  enquiries.push(s.enquiryId)
+  await db.enquiry.update({ where: { id: s.enquiryId }, data: { ownerId } })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/enquiries/${s.ref}/questions`)
+  await expect(page.locator('[data-built="enquiry-questions"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '171',
+    0.085,
+    'Neutral client, contact and lines; the dates are the seed’s (sent two days ago), not 14–18 Sep; each held row adds an "If no answer: … · Change · Proceed with assumption" line under its question, so the rows are taller and the reminder card starts lower; the strip reads the seed’s activity; C8 has eleven tabs where the board draws nine; the T2 body pads 16 where the board pads 24.'
+  )
+  await db.assistantAction.update({ where: { ref: s.reminderRef }, data: { state: 'cancelled' } })
+})
+
+test('board-171b parity: the P15 state sheet', async ({ page }) => {
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto('/_kit/p15-states')
+  await expect(page.getByRole('region', { name: 'Regret · Autopilot' })).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '171b',
+    0.07,
+    'States 6–10 (boards 169 and 170) arrive with S16 and are drawn as that note; state 2 carries the path card’s own "Lines to ask about: all lines · Change", note and button; the client-replies card is the full ProposalCard with its verbs; neutral names.'
+  )
 })

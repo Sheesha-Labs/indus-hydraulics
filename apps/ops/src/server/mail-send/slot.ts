@@ -51,16 +51,18 @@ export function sentInCapDay(
 export async function holidaysFor(
   countries: readonly string[],
   from: Date,
-  days = 400
+  days = 400,
+  /** S09-T07: read inside a caller's transaction (never a second connection while one is held). */
+  db: Pick<Prisma.TransactionClient, 'holiday' | 'workCalendarDay'> = opsDb
 ): Promise<HolidayRow[]> {
   const start = new Date(from.getTime() - 2 * 86_400_000)
   const end = new Date(from.getTime() + days * 86_400_000)
   const [rows, legacy] = await Promise.all([
-    opsDb.holiday.findMany({
+    db.holiday.findMany({
       where: { country: { in: [...countries] }, date: { gte: start, lte: end } },
       select: { country: true, date: true, kind: true, hoursStart: true, hoursEnd: true },
     }),
-    opsDb.workCalendarDay.findMany({
+    db.workCalendarDay.findMany({
       where: { country: { in: [...countries] }, date: { gte: start, lte: end } },
     }),
   ])

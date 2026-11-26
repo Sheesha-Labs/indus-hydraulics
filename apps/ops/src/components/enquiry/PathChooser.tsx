@@ -32,6 +32,8 @@ export interface PathChooserProps {
   realBuyer: { text: string } | null
   /** The read could not run: the person chooses without a suggestion. */
   failed: boolean
+  /** 171b state sheet: the content without the card frame (the sheet draws its own). */
+  bare?: boolean
 }
 
 export default function PathChooser(p: PathChooserProps) {
@@ -83,15 +85,17 @@ export default function PathChooser(p: PathChooserProps) {
     <section
       id="choose-path"
       aria-labelledby="choose-path-title"
-      className="rounded-io-card border-io-line bg-io-card border p-5"
+      className={p.bare ? '' : 'rounded-io-card border-io-line bg-io-card border p-5'}
       data-built="path-chooser"
     >
       {p.realBuyer ? (
         <>
-          <h2 id="choose-path-title" className="io-eyebrow m-0">
+          <h2 id="choose-path-title" className={p.bare ? 'sr-only' : 'io-eyebrow m-0'}>
             Qualification · not enough to judge
           </h2>
-          <p className="m-0 mt-3 flex items-center gap-2 text-[13.5px] font-medium">
+          <p
+            className={`m-0 ${p.bare ? '' : 'mt-3'} flex items-center gap-2 text-[13.5px] font-medium`}
+          >
             <Chip tone="warn" label="Unsure" />
             Is this a real buyer?
           </p>
@@ -131,10 +135,13 @@ export default function PathChooser(p: PathChooserProps) {
           Something else
         </button>
       ) : null}
-      {picks && !picking && !invalid && picks.length ? (
+      {picks && !picking && !invalid ? (
         <p className="text-io-ink-2 m-0 mt-3 text-[12.5px]">
           {path === 'quote_partial' ? 'Lines to regret' : 'Lines to ask about'}:{' '}
-          <span className="text-io-ink font-medium">{lineRange(picks)}</span> ·{' '}
+          <span className="text-io-ink font-medium">
+            {picks.length ? lineRange(picks) : 'all lines'}
+          </span>{' '}
+          ·{' '}
           <button
             type="button"
             onClick={() => setPicking(true)}
@@ -144,7 +151,7 @@ export default function PathChooser(p: PathChooserProps) {
           </button>
         </p>
       ) : null}
-      {picks && (picking || invalid || !picks.length) ? (
+      {picks && (picking || invalid) ? (
         <fieldset className="m-0 mt-4 border-0 p-0">
           <legend className="io-eyebrow">
             {path === 'quote_partial' ? 'Lines to regret' : 'Lines to ask about'}
