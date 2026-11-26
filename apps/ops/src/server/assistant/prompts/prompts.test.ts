@@ -11,6 +11,7 @@ import * as learn from './learn-preferences.v1'
 import * as extract from './extract-lines.v1'
 import * as extract2 from './extract-lines.v2'
 import * as createEnquiry from './create-enquiry.v1'
+import * as qualify from './qualify-enquiry.v1'
 
 /**
  * Prompts are versioned code (CLAUDE.md §9.9): the text of a released version never changes. A different
@@ -29,6 +30,8 @@ const RELEASED: Record<string, string> = {
   // S09-T04: adds the issuer (letterhead) to the document facts; synthetic extract eval 48/48, USD 0.29.
   'extract_lines@2': 'e7ff1287395ce827fd83ef3251369f512a71b2eb500526357af011b16a3f65a4',
   'create_enquiry@1': '60f63da2c62d293f9b4c5ffe5ddfaf1983ea8e786b95f8f1d89eb4b3c0964ce7',
+  // S09-T06: the quick read (board 167); synthetic eval suite `qualify`.
+  'qualify_enquiry@1': 'e2f162af505e410093105421acb0062b4aaaa36ca308f362ce778dae4f92c3f1',
 }
 
 describe('released prompts are byte-stable', () => {
@@ -43,6 +46,7 @@ describe('released prompts are byte-stable', () => {
     extract,
     extract2,
     createEnquiry,
+    qualify,
   ])('$PROMPT_VERSION', (m) => {
     const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
     expect(hash).toBe(RELEASED[m.PROMPT_VERSION])

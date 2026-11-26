@@ -328,3 +328,26 @@ export async function applyMatch(
   if (announce) await announceEnquiryCreated(announce)
   return out
 }
+
+/** "Continue to match" (board 16): the review can be confirmed; nothing is written. */
+export async function checkReviewReady(batchId: string): Promise<void> {
+  await opsDb.$transaction((tx) => assertConfirmable(tx, batchId))
+}
+
+/** The client picker on board 16: up to eight live companies by name, alias or domain. */
+export function searchClients(q: string) {
+  return opsDb.company.findMany({
+    where: {
+      archivedAt: null,
+      mergedIntoId: null,
+      OR: [
+        { name: { contains: q, mode: 'insensitive' } },
+        { aliases: { has: q } },
+        { primaryDomain: { contains: q.toLowerCase() } },
+      ],
+    },
+    orderBy: [{ isClient: 'desc' }, { name: 'asc' }],
+    take: 8,
+    select: { id: true, name: true, primaryDomain: true },
+  })
+}

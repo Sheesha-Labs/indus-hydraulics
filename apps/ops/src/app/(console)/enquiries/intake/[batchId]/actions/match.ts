@@ -1,11 +1,9 @@
 'use server'
 
-import { opsDb } from '@indus/ops-db'
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { defineAction } from '../../../../../../lib/define-action'
-import { applyMatch } from '../../../../../../server/intake/match'
-import { assertConfirmable } from '../../../../../../server/intake/review'
+import { applyMatch, checkReviewReady, searchClients } from '../../../../../../server/intake/match'
 
 /**
  * Board 16 actions (S09-T04). Owner and Helper. "Continue to match" checks the review can be confirmed (nothing
@@ -19,7 +17,7 @@ export const reviewReadyAction = defineAction({
   roles: [...roles],
   readOnlySafe: true,
   handler: async (input) => {
-    await opsDb.$transaction((tx) => assertConfirmable(tx, input.batchId))
+    await checkReviewReady(input.batchId)
     return { href: `/enquiries/intake/${input.batchId}/match` }
   },
 })
@@ -29,21 +27,7 @@ export const searchClientsAction = defineAction({
   schema: z.object({ q: z.string().trim().min(1).max(80) }),
   roles: [...roles],
   readOnlySafe: true,
-  handler: async (input) =>
-    opsDb.company.findMany({
-      where: {
-        archivedAt: null,
-        mergedIntoId: null,
-        OR: [
-          { name: { contains: input.q, mode: 'insensitive' } },
-          { aliases: { has: input.q } },
-          { primaryDomain: { contains: input.q.toLowerCase() } },
-        ],
-      },
-      orderBy: [{ isClient: 'desc' }, { name: 'asc' }],
-      take: 8,
-      select: { id: true, name: true, primaryDomain: true },
-    }),
+  handler: async (input) => searchClients(input.q),
 })
 
 const client = {

@@ -32,6 +32,32 @@ export const emailPreview = z
           .max(8),
       })
       .optional(),
+    /**
+     * S09-T06 (board 168): a required choice on the card (the regret reason), recorded as the chosen option and
+     * read by the effect. `value` is the suggestion, preselected.
+     */
+    reasonChips: z
+      .object({
+        label: z.string().max(60),
+        options: z
+          .array(z.object({ value: z.string().max(40), label: z.string().max(60) }))
+          .min(1)
+          .max(8),
+        value: z.string().max(40).optional(),
+      })
+      .optional(),
+    /**
+     * S09-T06 (board 168 "Include the 'glad to quote on' line"): a switch on the body. Off sends `textOff`
+     * instead of the body, recorded as an edit.
+     */
+    toggle: z
+      .object({
+        name: z.string().max(40),
+        label: z.string().max(160),
+        defaultOn: z.boolean(),
+        textOff: z.string().max(50_000),
+      })
+      .optional(),
   })
   .refine((p) => p.html !== undefined || p.text !== undefined, { message: 'An email needs a body' })
 export type EmailPreview = z.infer<typeof emailPreview>

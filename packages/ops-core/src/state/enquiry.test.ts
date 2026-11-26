@@ -141,6 +141,8 @@ describe('enquiry machine (§9.1)', () => {
       'Only the Owner reopens an enquiry'
     )
     expect(refuse('closed', 'qualifying', { actorRole: 'owner' })).toBe('Reopen it from the record')
+    // The spam filing's own undo, inside its window, needs no reopen (board 171b state 3).
+    expect(refuse('closed', 'qualifying', { actorRole: 'helper', undoSpam: true })).toBeNull()
   })
 
   it('transition() without a reason leaves it out', () => {

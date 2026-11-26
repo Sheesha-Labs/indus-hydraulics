@@ -70,6 +70,10 @@ export async function routeClassified(data: {
   // #4 (S08-T06): a live client enquiry is read into an intake now; the Create enquiry card follows once
   // its body and attachments are read (capture → requestEnquiryWhenSettled).
   if (cls === 'client_enquiry') await startEmailIntake(null, data.messageId).catch(() => null)
+  // S09-T06 (171b state 5): a client reply in the thread of a regretted enquiry may name new lines. It is read
+  // like an enquiry; the Create enquiry card that follows links the new enquiry to the regretted one.
+  if (cls === 'client_reply' && (await inRegrettedThread(data.messageId)))
+    await startEmailIntake(null, data.messageId).catch(() => null)
   const id = await requestAction({
     actionKey: 'link_mail',
     subjectType: 'mail_message',
@@ -79,6 +83,14 @@ export async function routeClassified(data: {
     sourceVersion: String(data.class),
   })
   return also ? { requested: id, also: [also] } : { requested: id }
+}
+
+async function inRegrettedThread(messageId: string): Promise<boolean> {
+  const m = await opsDb.mailMessage.findUnique({
+    where: { id: messageId },
+    select: { thread: { select: { enquiry: { select: { stage: true } } } } },
+  })
+  return m?.thread.enquiry?.stage === 'regretted'
 }
 
 /** An out-of-office reply → ooo_facts; an automatic acknowledgement needs nothing. */

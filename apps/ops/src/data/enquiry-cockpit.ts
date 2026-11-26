@@ -137,7 +137,9 @@ async function readA(ref: string): Promise<RowA | null> {
 async function readB(enquiryId: string): Promise<{ pending: number; done: string[] }> {
   const rows = await opsDb.$queryRaw<Array<{ pending: number; done: string[] | null }>>(Prisma.sql`
     SELECT (SELECT count(*)::int FROM ops.assistant_action a
-             WHERE a."enquiryId" = ${enquiryId}::uuid AND a.state IN ('proposed', 'later')) AS pending,
+             WHERE a."enquiryId" = ${enquiryId}::uuid AND a.state IN ('proposed', 'later')
+               -- Only Review cards wait for a person here: the quick read (hint) shows on its own card.
+               AND a.surface = 'review') AS pending,
            (SELECT array_agg(d.headline) FROM (
               SELECT a.headline FROM ops.assistant_action a
                WHERE a."enquiryId" = ${enquiryId}::uuid AND a.state = 'done'

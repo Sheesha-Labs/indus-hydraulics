@@ -12,6 +12,7 @@ import { opsDb, Prisma } from '@indus/ops-db'
 import type { OpsUser } from '../lib/access'
 import { cache } from 'react'
 import { getSetting } from '../server/settings/get'
+import { qualificationView, type QualificationView } from './qualification'
 
 /**
  * Board 05 · Enquiry Overview (S09-T03). Two reads: (1) the enquiry's lines with where each was sent, its
@@ -88,6 +89,8 @@ export interface EnquiryOverview {
   ackSkipped: { text: string; preferenceId: string | null } | null
   /** Unsure lines still asked in Review. */
   questions: number
+  /** Board 167 / 171b: the quick read and the path cards while the path is open (S09-T06). */
+  qualification: QualificationView | null
 }
 
 const CHIP: Record<LineStatus, LineChip> = {
@@ -146,6 +149,26 @@ export async function getEnquiryOverview(
       deadline: true,
       decisionBy: true,
       ownerId: true,
+      receivedAt: true,
+      createdAt: true,
+      chosenPath: true,
+      suggestedPath: true,
+      pathChosenAt: true,
+      legitimacyNotes: true,
+      fitNotes: true,
+      effortNotes: true,
+      client: { select: { primaryDomain: true, website: true } },
+      intakeBatches: {
+        take: 1,
+        orderBy: { createdAt: 'asc' },
+        select: { mailMessage: { select: { threadId: true } } },
+      },
+      actions: {
+        where: { actionKey: 'qualify_enquiry' },
+        orderBy: { createdAt: 'desc' },
+        take: 1,
+        select: { state: true, failureReason: true, createdAt: true },
+      },
       lines: {
         orderBy: { no: 'asc' },
         select: {
@@ -391,6 +414,32 @@ export async function getEnquiryOverview(
         }
       : null,
     questions: e._count.actions,
+    qualification: qualificationView({
+      ref: e.ref,
+      stage: e.stage,
+      receivedAt: e.receivedAt,
+      createdAt: e.createdAt,
+      deadline: e.deadline,
+      chosenPath: e.chosenPath,
+      suggestedPath: e.suggestedPath,
+      pathChosenAt: e.pathChosenAt,
+      legitimacyNotes: e.legitimacyNotes,
+      fitNotes: e.fitNotes,
+      effortNotes: e.effortNotes,
+      lineNos: live.map((l) => l.no),
+      sourceThreadId: e.intakeBatches[0]?.mailMessage?.threadId ?? null,
+      read: e.actions[0] ?? null,
+      domain: e.client?.primaryDomain ?? hostOf(e.client?.website ?? null),
+    }),
+  }
+}
+
+function hostOf(website: string | null): string | null {
+  if (!website) return null
+  try {
+    return new URL(/^https?:\/\//i.test(website) ? website : `https://${website}`).hostname
+  } catch {
+    return null
   }
 }
 

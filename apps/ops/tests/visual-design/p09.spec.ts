@@ -1,5 +1,6 @@
 import { opsDb as db } from '@indus/ops-db'
 import { seedBoard05 } from '../../src/server/enquiry/testing/overview-seed'
+import { seedQualify } from '../../src/server/enquiry/testing/qualify-seed'
 import { expect, test } from '../signed-in'
 import { prepare, settle } from '../visual/helpers'
 import { compareToBoardPng, recordParity } from './compare'
@@ -570,4 +571,68 @@ test('board-23 parity: convert to enquiry', async ({ page, signedInAs }) => {
     0.28,
     'Most of the ratio is placement: the kit Modal centres in the content area beside the sidebar, the board centres on the whole frame (120px), and it opens over the lead page where the board dims a skeleton; line-card suppliers per category arrive with S12; Owner is a select of KB and AB.'
   )
+})
+
+test('board-167 parity: the quick read and the path', async ({ page, signedInAs }) => {
+  const mb = await db.mailbox.findFirstOrThrow({
+    where: { role: 'client' },
+    select: { id: true, address: true },
+  })
+  const s = await seedQualify(db, {
+    tag: `${tag}q`,
+    ref: `ENQ-2092-${String(Date.now()).slice(-7)}`,
+    variant: 'legit',
+    salesMailboxId: mb.id,
+    salesAddress: mb.address,
+  })
+  enquiries.push(s.enquiryId)
+  await db.enquiry.update({ where: { id: s.enquiryId }, data: { ownerId } })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/enquiries/${s.ref}`)
+  await expect(page.locator('[data-built="enquiry-qualification"]')).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(
+    page,
+    '167',
+    0.08,
+    'Neutral client and a long test domain, so the chips wrap under the eyebrow; C8 has eleven tabs where the board draws nine; "Fit 13 of 14" counts the OEM lines as sourced (ops-core fitCounts) where the board says 11; the path sub-lines are worded from the read (no nameplate-photo line); "Lines to regret: 14 · Change" sits above the On choose note; the T2 body pads 16 where the board pads 24.'
+  )
+})
+
+test('board-168 parity: the regret card in Review', async ({ page, signedInAs }) => {
+  const mb = await db.mailbox.findFirstOrThrow({
+    where: { role: 'client' },
+    select: { id: true, address: true },
+  })
+  const s = await seedQualify(db, {
+    tag: `${tag}r`,
+    ref: `ENQ-2092-${String(Date.now()).slice(-7)}`,
+    variant: 'legit',
+    salesMailboxId: mb.id,
+    salesAddress: mb.address,
+    regretCard: true,
+  })
+  enquiries.push(s.enquiryId)
+  const a = await db.assistantAction.findUniqueOrThrow({
+    where: { id: s.regretActionId! },
+    select: { ref: true },
+  })
+  await signedInAs('owner')
+  await prepare(page)
+  await page.setViewportSize({ width: 1440, height: 940 })
+  await page.goto(`/review?card=${a.ref}`)
+  await expect(page.locator(`#proposal-${a.ref}`)).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '168',
+    0.08,
+    'The card is in the Review queue (T4) with the email in its preview, where the board draws the email at full width beside the card; the scope is fixed per card (chosen on the path card: Regret politely or Quote what we can), so there is no Whole enquiry | Lines only switch; neutral client and supplier; the Done-for-you rail shows this database’s counts.'
+  )
+  await db.assistantAction.update({
+    where: { id: s.regretActionId! },
+    data: { state: 'cancelled' },
+  })
 })

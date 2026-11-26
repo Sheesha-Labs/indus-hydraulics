@@ -45,6 +45,11 @@ export interface EnquiryTransitionContext {
   actorRole?: 'owner' | 'helper' | 'assistant' | 'system'
   /** A person asked to reopen (lost, regretted, closed → qualifying). */
   reopen?: boolean
+  /**
+   * S09-T06: "Undo · treat as enquiry" inside the 5-minute window after a person filed it as spam on the
+   * qualification card. Anyone who may choose a path may undo their choice; after the window it is a reopen.
+   */
+  undoSpam?: boolean
 }
 
 export type TransitionCheck = { ok: true } | { ok: false; reason: string }
@@ -143,11 +148,13 @@ export const ENQUIRY_RULES: readonly Rule[] = [
     from: ['lost', 'regretted', 'closed'],
     to: 'qualifying',
     guard: (c) =>
-      c.actorRole !== 'owner'
-        ? 'Only the Owner reopens an enquiry'
-        : c.reopen
-          ? null
-          : 'Reopen it from the record',
+      c.undoSpam
+        ? null
+        : c.actorRole !== 'owner'
+          ? 'Only the Owner reopens an enquiry'
+          : c.reopen
+            ? null
+            : 'Reopen it from the record',
   },
 ]
 

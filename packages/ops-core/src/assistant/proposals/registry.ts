@@ -83,6 +83,10 @@ const ACTION_KIND = new Map<string, ProposalKind | string>([
   // S08: the client acknowledgement (#6) and the request for an original file (board 17) are emails.
   ['ack_email', 'email'],
   ['request_original', 'email'],
+  // S09: the regret to a client (board 168), the questions before sourcing and their reminder (board 171).
+  ['regret_client', 'email'],
+  ['ask_client_questions', 'email'],
+  ['remind_client_questions', 'email'],
   ['outbound_attention', 'outbound_attention'],
 ])
 

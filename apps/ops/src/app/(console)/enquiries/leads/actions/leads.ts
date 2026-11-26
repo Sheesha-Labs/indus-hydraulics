@@ -1,15 +1,13 @@
 'use server'
 
-import { opsDb } from '@indus/ops-db'
 import { revalidatePath } from 'next/cache'
 import { after } from 'next/server'
 import { z } from 'zod'
 import { defineAction } from '../../../../../lib/define-action'
 import { SafeError } from '../../../../../lib/safe-message'
-import { TX_OPTIONS } from '../../../../../lib/tx-options'
 import { announceEnquiryCreated } from '../../../../../server/enquiry/created'
 import { createLead } from '../../../../../server/lead/create'
-import { convertLeadToEnquiry, UNCATEGORISED } from '../../../../../server/lead/convert'
+import { convertLead, UNCATEGORISED } from '../../../../../server/lead/convert'
 import { importLeadsCsv } from '../../../../../server/lead/import-csv'
 import {
   setLeadStage,
@@ -155,10 +153,7 @@ export const convertLeadAction = defineAction({
   // Idempotent in the service (a converted lead returns its enquiry). Not an action-held transaction: the
   // follow-up events leave after the commit.
   handler: async ({ ref, ...input }, ctx) => {
-    const out = await opsDb.$transaction(
-      (tx) => convertLeadToEnquiry(tx, input, ctx.user),
-      TX_OPTIONS
-    )
+    const out = await convertLead(input, ctx.user)
     if (!out.replayed)
       after(() =>
         announceEnquiryCreated({

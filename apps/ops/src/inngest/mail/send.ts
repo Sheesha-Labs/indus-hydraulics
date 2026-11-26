@@ -4,12 +4,14 @@ import { sendOnce } from '../../server/mail-send/send-once'
 import { computeSlot } from '../../server/mail-send/slot'
 import { settleActionForOutbound } from '../../server/assistant/decisions'
 import { registerStalenessGate } from '../../server/assistant/staleness'
+import { registerClientIdentityGate } from '../../server/identity/client-bound'
 import { defineOpsFunction } from '../define'
 
 // S06-T01: a queued send whose proposal went stale stops in the gate ('stale'). The definitions say how each
 // action reads its current versions.
 import '../../server/assistant/actions'
 registerStalenessGate()
+registerClientIdentityGate()
 import { emitEvent } from '../emit'
 
 /**

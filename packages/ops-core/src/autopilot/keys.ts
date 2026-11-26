@@ -91,6 +91,9 @@ export const SYSTEM_KEYS = [
   // S08
   'request_original',
   'resolve_extracted_line',
+  // S09 (board 171: a client's reply read against the open questions; the fallback before the last useful day)
+  'match_client_answers',
+  'client_question_fallback',
 ] as const
 
 /** Every seeded action key. Later sprints append their keys at the end. */

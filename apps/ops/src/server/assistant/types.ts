@@ -214,6 +214,30 @@ export interface ActionDefinition<In = Json, Out = Json> {
     ctx: { actionId: string; request: ActionRequest; decidedById: string }
   ): Promise<void>
   /**
+   * S09-T06: a last check on the exact email a person approves (after edits and switches), before it is queued:
+   * the reverse identifier check on client-bound text. A reason refuses the approval with that sentence.
+   */
+  approvalCheck?(
+    email: { subject: string; body: string },
+    request: ActionRequest
+  ): Promise<string | null>
+  /**
+   * S09-T06: what an external action records once its email has really left (status sent, after the undo window):
+   * the regret moves the enquiry or its lines to Regretted. Runs inside the transaction that marks the action done.
+   * `chosenOption` is the card's choice (the regret reason). writeTracked only. Events it returns are sent after
+   * that transaction commits.
+   */
+  onSent?(
+    tx: Prisma.TransactionClient,
+    action: {
+      id: string
+      output: Out
+      request: ActionRequest
+      decidedById: string | null
+      chosenOption: string | null
+    }
+  ): Promise<EffectEvent[] | undefined>
+  /**
    * S07-T01: the facts guardrails look at for this run (value, someone new, credit hold, chaser counts …),
    * cheap reads only. The clock (working hours, holidays) and the daily cap are added by the runner for
    * external actions. Absent: no action-specific facts.

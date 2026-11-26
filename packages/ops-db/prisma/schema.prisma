@@ -579,6 +579,17 @@ enum LostReason {
   @@schema("ops")
 }
 
+/// S09-T06 (board 168): why a whole enquiry was regretted.
+enum RegretReason {
+  no_source_found
+  deadline_too_short
+  not_our_range
+  client_unresponsive
+  other
+
+  @@schema("ops")
+}
+
 enum ClosedReason {
   merged
   duplicate
@@ -617,6 +628,8 @@ enum LineRegretReason {
   obsolete
   client_dropped
   other
+  deadline_too_short
+  client_unresponsive
 
   @@schema("ops")
 }
@@ -3624,6 +3637,12 @@ model Enquiry {
   mergedIntoId          String?                  @db.Uuid
   mergedInto            Enquiry?                 @relation("EnquiryMerge", fields: [mergedIntoId], references: [id])
   mergedFrom            Enquiry[]                @relation("EnquiryMerge")
+  /// S09-T06: why the whole enquiry was regretted (board 168).
+  regretReason          RegretReason?
+  /// S09-T06 (171b state 5): opened from a reply to a regretted enquiry.
+  relatedEnquiryId      String?                  @db.Uuid
+  relatedEnquiry        Enquiry?                 @relation("EnquiryRelated", fields: [relatedEnquiryId], references: [id])
+  relatedFrom           Enquiry[]                @relation("EnquiryRelated")
   splitFromId           String?                  @db.Uuid
   splitFrom             Enquiry?                 @relation("EnquirySplit", fields: [splitFromId], references: [id])
   splitInto             Enquiry[]                @relation("EnquirySplit")
@@ -3783,6 +3802,13 @@ model ClientQuestion {
   answerMessageId    String?              @db.Uuid
   answerText         String?
   answeredAt         DateTime?            @db.Timestamptz(3)
+  /// S09-T07 (board 171): the clock, planned when the questions are sent.
+  reminderDueAt      DateTime?            @db.Timestamptz(3)
+  callTaskAt         DateTime?            @db.Timestamptz(3)
+  fallbackAt         DateTime?            @db.Timestamptz(3)
+  /// assume · leave_out · wait (CHECK in SQL).
+  fallbackChoice     String?
+  reminderActionId   String?              @db.Uuid
   /// Questions relayed from suppliers land here, names removed (108).
   relayedFrom        SupplierQuestion[]
   createdAt          DateTime             @default(now()) @db.Timestamptz(3)

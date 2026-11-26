@@ -4,6 +4,9 @@ import type { Route } from 'next'
 import Link from 'next/link'
 import { AckSkipped } from '../../../../components/enquiry/AckStates'
 import HeaderFactsEditor from '../../../../components/enquiry/HeaderFactsEditor'
+import PathChooser from '../../../../components/enquiry/PathChooser'
+import QualificationCard from '../../../../components/enquiry/QualificationCard'
+import SpamFiled from '../../../../components/enquiry/SpamFiled'
 import {
   ActivityRail,
   CoverageCard,
@@ -29,7 +32,8 @@ const iso = (d: Date | null) => (d ? d.toISOString().slice(0, 10) : null)
  * Board 05 · Enquiry Overview (T2, Overview tab; S09-T03): the line table is the spine; the rail carries
  * Coverage, the C38 estimate snapshot (masked for a Helper without canSeeMargins, in the data layer), the
  * supplier RFQs, the activity and the header facts with their editor. The header's primary comes from the
- * cockpit. Board 167's qualification card takes the line table's place while the path is open (S09-T06).
+ * cockpit. Board 167's quick read and path cards take the line table's and the rail's place while the path is
+ * open (S09-T06); 171b state 3 shows the spam filing with its undo while the window is open.
  */
 export default async function EnquiryOverviewPage({
   params,
@@ -53,6 +57,41 @@ export default async function EnquiryOverviewPage({
         align="left"
       />
     )
+  const q = o.qualification
+  // Board 167: while the path is open the quick read and the path cards take the line table's and the rail's place.
+  if (q && q.state !== 'spam_filed')
+    return (
+      <div
+        data-built="enquiry-qualification"
+        className="grid grid-cols-[minmax(0,1fr)_400px] items-start gap-4"
+      >
+        <QualificationCard q={q} enquiryId={o.id} enquiryRef={o.ref} />
+        {q.state === 'reading' ? (
+          <section
+            aria-label="Path"
+            className="rounded-io-card border-io-line bg-io-card text-io-ink-3 border p-5 text-[12.5px] leading-[1.5]"
+          >
+            <h2 className="io-eyebrow m-0">Suggested path</h2>
+            <p className="m-0 mt-2">The paths appear when the read lands.</p>
+          </section>
+        ) : (
+          <PathChooser
+            enquiryId={o.id}
+            enquiryRef={o.ref}
+            version={o.version}
+            cards={q.cards}
+            onChoose={q.onChoose}
+            suggested={q.state === 'read' ? q.suggested : null}
+            lineNos={q.lineNos}
+            defaults={q.state === 'read' ? q.defaults : { regret: [], ask: [] }}
+            realBuyer={
+              q.state === 'read' && q.realBuyerQuestion ? { text: q.buyerText ?? '' } : null
+            }
+            failed={q.state === 'failed'}
+          />
+        )}
+      </div>
+    )
   const owners = await activeOwners()
   const owner = owners.find((x) => x.id === o.ownerId)
   return (
@@ -61,6 +100,9 @@ export default async function EnquiryOverviewPage({
       className="grid grid-cols-[minmax(0,1fr)_320px] items-start gap-4"
     >
       <div className="flex min-w-0 flex-col gap-4">
+        {q?.state === 'spam_filed' ? (
+          <SpamFiled enquiryId={o.id} text={q.text} reason={q.reason} />
+        ) : null}
         {o.ackSkipped ? (
           <AckSkipped text={o.ackSkipped.text} preferenceHref="/assistant/learned" />
         ) : null}

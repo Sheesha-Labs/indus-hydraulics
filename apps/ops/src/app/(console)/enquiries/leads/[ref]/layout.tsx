@@ -1,4 +1,3 @@
-import { opsDb } from '@indus/ops-db'
 import { T2Record } from '@indus/ops-ui/templates'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
@@ -7,7 +6,7 @@ import { LeadHeader } from '../../../../../components/leads/LeadParts'
 import { activeOwners } from '../../../../../data/enquiry-overview'
 import { getLead } from '../../../../../data/leads'
 import { leadRef, routeParam } from '../../../../../lib/route-params'
-import { nextEnquiryRefPreview, UNCATEGORISED } from '../../../../../server/lead/convert'
+import { nextEnquiryRef, UNCATEGORISED } from '../../../../../server/lead/convert'
 
 /**
  * Board 22 · Lead detail (T2, lead variant; S09-T05): the lead header with its four tabs around the tab pages,
@@ -24,7 +23,7 @@ export default async function LeadLayout({
   const ref = routeParam(leadRef, (await params).ref)
   const lead = await getLead(ref)
   if (!lead) notFound()
-  const [owners, nextRef] = [await activeOwners(), await nextEnquiryRefPreview(opsDb)]
+  const [owners, nextRef] = [await activeOwners(), await nextEnquiryRef()]
   const by = new Map<string, { key: string; label: string; count: number }>()
   for (const l of lead.lines) {
     const key = l.tradeId ?? UNCATEGORISED

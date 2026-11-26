@@ -1,7 +1,8 @@
 import 'server-only'
-import type { $Enums, Prisma } from '@indus/ops-db'
+import { opsDb, type $Enums, type Prisma } from '@indus/ops-db'
 import type { OpsUser } from '../../lib/access'
 import { SafeError } from '../../lib/safe-message'
+import { TX_OPTIONS } from '../../lib/tx-options'
 import { uuid7 } from '../../lib/uuid7'
 import { writeTracked } from '../assistant/write-tracked'
 import { recordAckSkip } from '../enquiry/created'
@@ -186,4 +187,17 @@ export async function nextEnquiryRefPreview(
       FROM ops.number_sequence s JOIN ops.number_counter c ON c."sequenceKey" = s.key AND c.scope = ${year}
      WHERE s.key = 'enquiry' AND s."seededAt" IS NOT NULL`
   return rows[0]?.formatted ?? null
+}
+
+/** Board 23 "Convert": the conversion in its own transaction (the caller sends the follow-ups after commit). */
+export function convertLead(
+  i: ConvertInput,
+  user: Pick<OpsUser, 'id' | 'role'>
+): Promise<ConvertResult> {
+  return opsDb.$transaction((tx) => convertLeadToEnquiry(tx, i, user), TX_OPTIONS)
+}
+
+/** The ENQ ref the next conversion would take ("ENQ-2026-1002"), for the convert sheet. */
+export function nextEnquiryRef(): Promise<string | null> {
+  return nextEnquiryRefPreview(opsDb)
 }
