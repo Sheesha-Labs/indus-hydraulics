@@ -6,9 +6,9 @@ import {
   type RecordHeaderState,
   type RecordKind,
 } from '@indus/ops-core'
-import { opsDb } from '@indus/ops-db'
 import { cache } from 'react'
 import { env, type OpsEnv } from '../lib/env'
+import { getEnquiryCockpit } from './enquiry-cockpit'
 
 export type { RecordHeaderState, RecordKind }
 
@@ -16,64 +16,20 @@ export type { RecordHeaderState, RecordKind }
  * The record cockpit's header read (05 §6.2): the enquiries/[ref] and orders/[ref] layouts call it, and a
  * tab page calling it again in the same request costs nothing (React cache()).
  *
- * S02 stub: no query yet. Outside production it returns a neutral fixture for ENQ-2026-0001 (enquiry or
- * tender) and SO-0001 (order) so the shell and the route skeleton have a record to render; in production it
- * returns null, which the layouts turn into notFound(). S09 replaces the body with one query (header, rail
- * and strip seed) mapped through resolveHeaderState.
+ * S09-T01: an enquiry or tender with a row reads the cached cockpit (data/enquiry-cockpit.ts). Without a row,
+ * outside production, the neutral fixtures for ENQ-2026-0001 (enquiry or tender) and SO-0001 (order) keep the
+ * shell and the route skeleton a record to render; in production that is null, which the layouts turn into
+ * notFound(). Orders read their own record in S22.
  */
 export const getRecordHeaderState = cache(
-  async (kind: RecordKind, ref: string): Promise<RecordHeaderState | null> =>
-    (kind === 'enquiry' ? await enquiryHeader(ref) : null) ??
-    recordHeaderFixture(kind, ref, env().APP_ENV)
+  async (kind: RecordKind, ref: string): Promise<RecordHeaderState | null> => {
+    if (kind !== 'order') {
+      const c = await getEnquiryCockpit(ref)
+      if (c) return kind === 'tender' && !c.isTender ? null : c.header('overview')
+    }
+    return recordHeaderFixture(kind, ref, env().APP_ENV)
+  }
 )
-
-const DAY = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', day: 'numeric', month: 'short' })
-const fmtDay = (d: Date) => DAY.format(d).replace('Sept', 'Sep')
-
-/**
- * S08-T06: an enquiry created in Ops (from an email card, an upload or typed lines) has a real header, so the
- * Overview stub can show it. One read. S09 replaces this with the full cockpit query (rail, strip, CTA).
- */
-async function enquiryHeader(ref: string): Promise<RecordHeaderState | null> {
-  const e = await opsDb.enquiry.findUnique({
-    where: { ref },
-    select: {
-      ref: true,
-      title: true,
-      clientRef: true,
-      receivedAt: true,
-      deadline: true,
-      stage: true,
-      client: { select: { id: true, name: true } },
-      _count: { select: { lines: true } },
-    },
-  })
-  if (!e) return null
-  const days = e.deadline ? Math.ceil((e.deadline.getTime() - Date.now()) / 86_400_000) : null
-  const deadline: HeaderMeta = e.deadline
-    ? {
-        label: 'Client deadline',
-        value: `${fmtDay(e.deadline)} · ${days !== null && days >= 0 ? `${days} day${days === 1 ? '' : 's'} left` : 'passed'}`,
-        ...(days !== null && days <= 7 ? { tone: 'bad' as const } : {}),
-      }
-    : { label: 'Client deadline', value: 'Not stated' }
-  return resolveHeaderState({
-    kind: 'enquiry',
-    ref: e.ref,
-    clientName: e.client?.name ?? 'Client not set',
-    clientHref: e.client ? `/clients/${e.client.id}` : '/clients',
-    title: e.title,
-    meta: [
-      { label: 'Client', value: e.client?.name ?? 'Not set' },
-      { label: 'Client ref', value: e.clientRef ?? '—' },
-      { label: 'Received', value: fmtDay(e.receivedAt) },
-      deadline,
-    ],
-    stage: e.stage,
-    did: `created with ${e._count.lines} line${e._count.lines === 1 ? '' : 's'}`,
-    threadHref: `/mail/clients?record=${e.ref}`,
-  })
-}
 
 const CLIENT = {
   name: 'Sample Client LLC',

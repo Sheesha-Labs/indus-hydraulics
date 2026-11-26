@@ -9,6 +9,8 @@ import RecordAssistantStrip from './RecordAssistantStrip'
  * (ENQUIRY_TABS, ORDER_TABS, TENDER_TABS). The active tab follows the URL (RecordTabs). "Log activity" is a
  * record-local drawer, so a search param on the current page.
  */
+const LOG_HREF = '?log=1'
+
 export default function StateRecordHeader({ state }: { state: RecordHeaderState }) {
   const s = state
   return (
@@ -27,9 +29,20 @@ export default function StateRecordHeader({ state }: { state: RecordHeaderState 
       tabs={recordTabItems(s.kind, s.ref)}
       {...(s.chip ? { chip: s.chip } : {})}
       {...(s.threadHref ? { threadHref: s.threadHref } : {})}
-      logActivityHref="?log=1"
+      // When the primary itself is "Log activity" (quoted, negotiation) the secondary steps aside.
+      {...(s.cta && 'href' in s.cta && s.cta.href === LOG_HREF
+        ? {}
+        : { logActivityHref: LOG_HREF })}
       // An action CTA (approve, send) is a client button its sprint builds; until then it opens the record.
-      cta={'href' in s.cta ? s.cta : { label: s.cta.label, href: recordBaseHref(s.kind, s.ref) }}
+      cta={
+        s.cta === null ? (
+          <span data-part="no-primary" />
+        ) : 'href' in s.cta ? (
+          s.cta
+        ) : (
+          { label: s.cta.label, href: recordBaseHref(s.kind, s.ref) }
+        )
+      }
     />
   )
 }
@@ -41,7 +54,9 @@ export function RecordStrip({ state }: { state: RecordHeaderState }) {
       recordKey={`record:${state.ref}`}
       did={state.did ?? 'has not acted on this record yet'}
       {...(state.need
-        ? { need: { label: needLabel(state.need.count), href: state.need.href } }
+        ? {
+            need: { label: state.need.label ?? needLabel(state.need.count), href: state.need.href },
+          }
         : {})}
     />
   )

@@ -2047,6 +2047,7 @@ model Trade {
   lineCards   SupplierLineCard[]
   parts       Part[]
   lessons     Lesson[]
+  leadLines   LeadLine[]
 
   @@map("trade")
   @@schema("ops")
@@ -2470,6 +2471,7 @@ model User {
   savedSearches       SavedSearch[]
   tipStates           TipState[]
   ownedEnquiries      Enquiry[]                @relation("EnquiryOwner")
+  ownedLeads          Lead[]                   @relation("LeadOwner")
   ownedMailboxes      Mailbox[]                @relation("MailboxOwner")
   decidedActions      AssistantAction[]        @relation("ActionDecidedBy")
   approvedQuotations  Quotation[]              @relation("QuotationApprovedBy")
@@ -2854,7 +2856,7 @@ model MailMessage {
   links             MailLink[]
   quoteSources      SupplierQuoteSource[]
   supplierQuestions SupplierQuestion[]
-  intakeBatches        IntakeBatch[]
+  intakeBatches     IntakeBatch[]
 
   @@unique([mailboxId, gmailMessageId])
   @@index([threadId, sentAt])
@@ -3107,8 +3109,8 @@ model Company {
   approvedMakes      ApprovedMake[]
   researchCandidates ResearchCandidate[]
   claimParties       ClaimParty[]
-  intakeBatches  IntakeBatch[]
-  columnMappings ClientColumnMapping[]
+  intakeBatches      IntakeBatch[]
+  columnMappings     ClientColumnMapping[]
 
   @@index([name])
   @@index([primaryDomain])
@@ -3209,6 +3211,7 @@ model Contact {
   updatedAt        DateTime          @updatedAt @db.Timestamptz(3)
 
   enquiries     Enquiry[]
+  leads         Lead[]                 @relation("LeadContact")
   rfqRecipients SupplierRfqRecipient[]
   quotations    Quotation[]
   orders        Order[]
@@ -3412,6 +3415,8 @@ model PreferenceEvidence {
 
 model Lead {
   id                 String     @id @default(uuid(7)) @db.Uuid
+  /// L-0184 (S09-T05). Allocated by ops.allocate_number('lead') in the creating transaction.
+  ref                String     @unique
   name               String
   companyName        String?
   companyId          String?    @db.Uuid
@@ -3427,13 +3432,52 @@ model Lead {
   nextActionAt       DateTime?  @db.Timestamptz(3)
   convertedEnquiryId String?    @unique @db.Uuid
   convertedEnquiry   Enquiry?   @relation(fields: [convertedEnquiryId], references: [id])
+  /// KB or AB (board 03 owner avatar).
+  ownerId            String?    @db.Uuid
+  owner              User?      @relation("LeadOwner", fields: [ownerId], references: [id])
+  /// Board 22 title: the requirement in a few words.
+  title              String?
+  contactId          String?    @db.Uuid
+  contact            Contact?   @relation("LeadContact", fields: [contactId], references: [id])
+  clientRef          String?
+  neededBy           DateTime?  @db.Date
+  notes              String?
+  version            Int        @default(0)
   createdAt          DateTime   @default(now()) @db.Timestamptz(3)
   updatedAt          DateTime   @updatedAt @db.Timestamptz(3)
 
   callbacks CallbackRequest[]
+  lines     LeadLine[]
 
   @@index([stage])
   @@map("lead")
+  @@schema("ops")
+}
+
+/// A lead's material specs (board 22), read from its documents or typed. Copied to enquiry_line on convert (23).
+model LeadLine {
+  id               String    @id @default(uuid(7)) @db.Uuid
+  leadId           String    @db.Uuid
+  lead             Lead      @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  no               Int
+  description      String
+  partNo           String?
+  partNoNorm       String?
+  qty              Decimal?  @db.Decimal(18, 4)
+  uom              String?
+  specNotes        String?
+  tradeId          String?   @db.Uuid
+  trade            Trade?    @relation(fields: [tradeId], references: [id])
+  sourceDocumentId String?   @db.Uuid
+  sourcePage       Int?
+  spanIds          String[]  @default([]) @db.Uuid
+  confirmedById    String?   @db.Uuid
+  confirmedAt      DateTime? @db.Timestamptz(3)
+  version          Int       @default(0)
+  createdAt        DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@unique([leadId, no])
+  @@map("lead_line")
   @@schema("ops")
 }
 
@@ -3567,6 +3611,8 @@ model Enquiry {
   requiresDeviationList Boolean                  @default(false)
   isTender              Boolean                  @default(false)
   responseClockPausedAt DateTime?                @db.Timestamptz(3)
+  /// Board 23 "Pre-allocate from line cards": S12 drafts the RFQ recipients from line cards.
+  preallocateRequested  Boolean                  @default(false)
   // Close-out (29)
   lostReason            LostReason?
   lostWinningPrice      Decimal?                 @db.Decimal(18, 4)
@@ -3986,13 +4032,13 @@ model Part {
   updatedAt              DateTime                 @updatedAt @db.Timestamptz(3)
   searchTsv              Unsupported("tsvector")?
 
-  aliases       PartAlias[]
-  equivalencesA PartEquivalence[]    @relation("EquivA")
-  equivalencesB PartEquivalence[]    @relation("EquivB")
-  lines         EnquiryLine[]
-  quoteLines    SupplierQuoteLine[]
-  lessons       Lesson[]
-  suggestion    CatalogueSuggestion?
+  aliases          PartAlias[]
+  equivalencesA    PartEquivalence[]     @relation("EquivA")
+  equivalencesB    PartEquivalence[]     @relation("EquivB")
+  lines            EnquiryLine[]
+  quoteLines       SupplierQuoteLine[]
+  lessons          Lesson[]
+  suggestion       CatalogueSuggestion?
   intakeCandidates IntakeLineCandidate[]
 
   @@unique([partNoNorm, brand])

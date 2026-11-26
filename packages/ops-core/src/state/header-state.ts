@@ -54,12 +54,12 @@ export interface RecordHeaderState {
   stage: HeaderStage
   /** Warn chip right of the crumb: "Waiting on client · 3 lines", a tender countdown, "Bank change". */
   chip?: { label: string; tone: HeaderChipTone }
-  /** The one primary action for the tab shown. */
-  cta: HeaderCta
+  /** The one primary action for the tab shown; null when this viewer has none (a Helper on an ended enquiry). */
+  cta: HeaderCta | null
   /** What the Assistant did on this record, as one deterministic sentence (board 75). */
   did?: string
   /** Proposed actions on this record waiting for a person: links to Review filtered by the record. */
-  need?: { count: number; href: string }
+  need?: { count: number; href: string; label?: string }
   /** "Open thread in Mail ↗": the sales@ conversation. */
   threadHref?: string
 }
@@ -75,10 +75,15 @@ export interface RecordHeaderInput {
   /** The stored stage: the enquiry enum for an enquiry or tender, the order enum for an order. */
   stage: EnquiryStage | OrderStage
   chip?: { label: string; tone: HeaderChipTone }
-  cta?: HeaderCta
+  /** Omitted: a "Next step" link to the record. null: no primary for this viewer. */
+  cta?: HeaderCta | null
   did?: string
   /** Proposed Assistant actions on the record. */
   needCount?: number
+  /** Where "N things need you" goes; defaults to Review filtered by the record ref. */
+  needHref?: string | undefined
+  /** A strip link with nothing counted ("choose a path →"), shown when needCount is 0. */
+  needLink?: { href: string; label: string } | undefined
   threadHref?: string
 }
 
@@ -151,9 +156,16 @@ export function resolveHeaderState(input: RecordHeaderInput): RecordHeaderState 
     meta: input.meta,
     stage,
     ...(chip ? { chip } : {}),
-    cta: input.cta ?? { label: 'Next step', href: recordBaseHref(input.kind, input.ref) },
+    cta:
+      input.cta === null
+        ? null
+        : (input.cta ?? { label: 'Next step', href: recordBaseHref(input.kind, input.ref) }),
     ...(input.did ? { did: input.did } : {}),
-    ...(needCount > 0 ? { need: { count: needCount, href: reviewHrefForRecord(input.ref) } } : {}),
+    ...(needCount > 0
+      ? { need: { count: needCount, href: input.needHref ?? reviewHrefForRecord(input.ref) } }
+      : input.needLink
+        ? { need: { count: 0, ...input.needLink } }
+        : {}),
     ...(input.threadHref ? { threadHref: input.threadHref } : {}),
   }
 }

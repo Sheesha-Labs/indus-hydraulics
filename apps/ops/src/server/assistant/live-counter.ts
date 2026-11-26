@@ -25,6 +25,14 @@ export const COUNTER_KEYS = [
 ] as const
 export type CounterKey = (typeof COUNTER_KEYS)[number] | `record:${string}`
 
+/**
+ * The stored key for a record's counter: `ops.live_counter.key` is lower case without '/' (its CHECK), so
+ * `record:ENQ-2026-0001` is stored as `record:enq-2026-0001`. The live-counts read maps the same way.
+ */
+export function recordCounterKey(ref: string): `record:${string}` {
+  return `record:${ref.toLowerCase().replaceAll('/', '_')}`
+}
+
 type Db = Pick<Prisma.TransactionClient, '$executeRaw'> | typeof opsDb
 
 /** Adds `delta` to each key (creating it at `delta`, never below zero). */
