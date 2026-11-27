@@ -1978,6 +1978,45 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
     caption:
       'Couplers of the same nominal size can still refuse each other: the plug profile has to match the socket.',
   },
+  // DEMCO wave, 2026-11-27. These are the maker's own catalogue renders and one catalogue photograph,
+  // with a background added and edges cleaned (Higgsfield GPT Image 2.6, medium 2k 3:2). The hardware is
+  // the catalogue's, not generated.
+  {
+    slug: 'demco-gate-valve-vs-butterfly-valve',
+    alt: 'DEMCO DM 5000 2-inch flanged gate valve beside a DEMCO lug butterfly valve with lever handle on a steel workbench',
+    caption:
+      'A DM gate valve is built for drilling mud and high pressure; a resilient-seated butterfly valve for 150 to 285 psi utility lines.',
+  },
+  {
+    slug: 'demco-dm-5000-vs-dm-7500-gate-valve',
+    alt: 'DEMCO DM 5000 and DM 7500 3-inch flanged gate valves side by side on a steel inspection bench',
+    caption:
+      'The two families look alike at the flange, but their seats differ and no part moves from one to the other.',
+  },
+  {
+    slug: 'demco-dm-gate-valve-part-numbers',
+    alt: 'DEMCO DM gate valve, ASME Class 600, with the size, class and DEMCO marks cast into the body, on a workbench',
+    caption:
+      'Body markings give the size and rating; the assembly number on the nameplate gives the ends, trim and elastomer.',
+  },
+  {
+    slug: 'demco-butterfly-valve-seat-replacement',
+    alt: 'Exploded DEMCO lug butterfly valve: disc, black cartridge seat, two body halves, stem, bushings and O-rings on a grey mat',
+    caption:
+      'The hard-backed cartridge seat sits between the two body halves, so it comes out once the body is split.',
+  },
+  {
+    slug: 'demco-butterfly-valve-torque-actuator-sizing',
+    alt: 'DEMCO lug butterfly valve with handwheel worm gear beside a wafer butterfly valve with pneumatic actuator on a skid',
+    caption:
+      'Operator size follows the torque table for the valve size and shut-off rating, not the pipe size alone.',
+  },
+  {
+    slug: 'demco-valves-middle-east-applications',
+    alt: 'Red DEMCO gate valves on a drilling rig mud pump discharge manifold, with the pumps and rig substructure behind',
+    caption:
+      'Mud pump discharge and standpipe manifolds are among the main uses DEMCO lists for its DM gate valves.',
+  },
 ] as const
 
 /**
