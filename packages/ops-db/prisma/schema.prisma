@@ -2389,6 +2389,12 @@ model DocumentTemplate {
   /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
   signedOffById String?       @db.Uuid
   signedOffAt   DateTime?     @db.Timestamptz(3)
+  /// S11-T04: draft | published | archived (CHECK); one published per kind.
+  status        String        @default("draft")
+  publishedAt   DateTime?     @db.Timestamptz(3)
+  publishedById String?       @db.Uuid
+  /// A4 | Letter (CHECK).
+  pageSize      String        @default("A4")
 
   versions DocumentVersion[]
 
@@ -5501,6 +5507,9 @@ model DocumentVersion {
   note           String?
   /// "Sent to client" marker: the outbound email this version left in.
   sentOutboundId String?           @db.Uuid
+  /// S11-T04: SHA-256 (hex) of the rendered PDF, re-verified on every attach and download.
+  sha256         String?
+  renderedAt     DateTime?         @db.Timestamptz(3)
   createdByKind  ActorKind
   createdById    String?           @db.Uuid
   createdAt      DateTime          @default(now()) @db.Timestamptz(3)

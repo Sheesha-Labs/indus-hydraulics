@@ -17,8 +17,13 @@ export interface OpsStorage {
   readonly kind: 'supabase' | 'local'
   /** A URL the browser PUTs the file to (expires after two hours on Supabase). */
   createSignedUploadUrl(bucket: OpsBucket, key: string): Promise<{ url: string }>
-  /** A short-lived URL the browser may GET the object from. */
-  createSignedUrl(bucket: OpsBucket, key: string, expiresInSeconds: number): Promise<string | null>
+  /** A short-lived URL the browser may GET the object from; `download` names the saved file. */
+  createSignedUrl(
+    bucket: OpsBucket,
+    key: string,
+    expiresInSeconds: number,
+    opts?: { download?: string }
+  ): Promise<string | null>
   /** The object's bytes as a stream, or null when it does not exist. */
   openRead(bucket: OpsBucket, key: string): Promise<ReadableStream<Uint8Array> | null>
   remove(bucket: OpsBucket, key: string): Promise<void>
@@ -46,8 +51,12 @@ function supabaseStorage(url: string, secretKey: string): OpsStorage {
       if (error || !data) throw new Error(`storage: signed upload URL failed (${bucket})`)
       return { url: data.signedUrl }
     },
-    async createSignedUrl(bucket, key, expiresInSeconds) {
-      const { data, error } = await bucketOf(bucket).createSignedUrl(key, expiresInSeconds)
+    async createSignedUrl(bucket, key, expiresInSeconds, opts) {
+      const { data, error } = await bucketOf(bucket).createSignedUrl(
+        key,
+        expiresInSeconds,
+        opts?.download ? { download: opts.download } : undefined
+      )
       if (error || !data) return null
       return data.signedUrl
     },
