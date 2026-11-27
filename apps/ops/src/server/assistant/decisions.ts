@@ -1,6 +1,6 @@
 import 'server-only'
 import { opsDb, Prisma, type $Enums } from '@indus/ops-db'
-import { emailEdit, nextWorkingDay, type EmailEdit } from '@indus/ops-core'
+import { audienceForKind, emailEdit, nextWorkingDay, type EmailEdit } from '@indus/ops-core'
 import {
   toProposalCardData,
   type ActionRowForCard,
@@ -12,6 +12,7 @@ import { scheduleSend } from '../mail-send/schedule'
 import { holidaysFor } from '../mail-send/slot'
 import { mayUndo, undoSend } from '../mail-send/undo'
 import { textToSanitizedHtml } from '../mail/body'
+import { checkSupplierBound, supplierBoundReason } from '../identity/supplier-bound'
 import { raiseNotification } from '../notify/raise'
 import { getSetting } from '../settings/get'
 import { setCounters } from './live-counter'
@@ -350,8 +351,26 @@ export async function approve(
       const { input: gathered } = await def.gather({ request: req })
       const draft = def.outbound(verifiedOf(a), gathered)
       if (!draft) throw new Error('Nothing to send for this choice')
+      // S10: an action may finish the approved email (the /u link is derived, never stored on the card).
+      const finalEmail = def.finalizeEmail
+        ? def.finalizeEmail({ subject: email.subject, body: email.body }, gathered)
+        : null
+      if (finalEmail) {
+        email.subject = finalEmail.subject
+        email.body = finalEmail.body
+      }
+      // S10: supplier-bound mail outside an enquiry carries the deterministic identifier check (ADR-13).
+      const audience = audienceForKind(draft.kind)
+      const identifierCheck =
+        audience === 'supplier' || audience === 'forwarder'
+          ? await checkSupplierBound(`${email.subject}\n${email.body}`, {
+              exempt: draft.companyId ? await ownTerms(draft.companyId) : [],
+            })
+          : null
+      if (identifierCheck && !identifierCheck.passed)
+        throw new Error(supplierBoundReason(identifierCheck) ?? 'The identifier check failed')
       const html =
-        !effective?.body && card.email.html
+        !finalEmail && !effective?.body && card.email.html
           ? card.email.html
           : (textToSanitizedHtml(email.body) as string)
       const envelope = await resolveSendEnvelope('other', { mailboxId: draft.mailboxId })
@@ -369,6 +388,9 @@ export async function approve(
         createdById: user.id,
         actionId: a.id,
         basisHash: a.basisHash,
+        ...(identifierCheck
+          ? { identifierCheck: identifierCheck as unknown as Prisma.InputJsonValue }
+          : {}),
       })
       await opsDb.$transaction(async (tx) => {
         await setActor(tx, { kind: 'user', id: user.id })
@@ -1019,4 +1041,20 @@ export async function keepMyVersion(
     audience: others,
   })
   return { version, told: names.map((n) => n.initials) }
+}
+
+/** A supplier's own names and domains: never a hit in mail to that supplier (it may also be a client). */
+async function ownTerms(companyId: string): Promise<string[]> {
+  const c = await opsDb.company.findUnique({
+    where: { id: companyId },
+    select: { name: true, aliases: true, domains: true, contacts: { select: { email: true } } },
+  })
+  if (!c) return []
+  const words = [
+    c.name,
+    ...c.aliases,
+    ...c.domains,
+    ...c.contacts.flatMap((k) => (k.email ? [k.email] : [])),
+  ]
+  return [...new Set(words.flatMap((w) => [w.toLowerCase(), w.toLowerCase().split(/[\s.]/)[0]!]))]
 }

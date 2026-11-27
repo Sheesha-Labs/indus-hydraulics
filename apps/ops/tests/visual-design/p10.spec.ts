@@ -6,6 +6,7 @@ import {
 } from '../../src/server/directory/testing/clients-seed'
 import {
   archiveSuppliers,
+  seedOnboardingDraft,
   seedSuppliers,
   type SuppliersSeed,
 } from '../../src/server/directory/testing/suppliers-seed'
@@ -26,15 +27,22 @@ test.setTimeout(240_000)
 const tag = `p10${Date.now()}`
 let clients: ClientsSeed
 let suppliers: SuppliersSeed
+let draftId = ''
 
 test.beforeAll(async () => {
   clients = await seedClients(db, tag)
   suppliers = await seedSuppliers(db, tag)
+  const owner = await db.user.findFirstOrThrow({
+    where: { role: 'owner', status: 'active' },
+    select: { id: true },
+  })
+  draftId = await seedOnboardingDraft(db, tag, owner.id)
 })
 
 test.afterAll(async () => {
   await archiveClients(db, clients)
   await archiveSuppliers(db, suppliers)
+  await db.company.update({ where: { id: draftId }, data: { archivedAt: new Date() } })
 })
 
 test.beforeEach(async ({ signedInAs }) => {
@@ -107,5 +115,18 @@ test('board-129 supplier profile', async ({ page }) => {
     '129',
     0.1,
     'Recent is empty (no quotes seeded); Bank card below Documents; Line card and History tabs'
+  )
+})
+
+test('board-50 new supplier documents', async ({ page }) => {
+  await page.goto(`/suppliers/new/${draftId}/documents`)
+  await expect(
+    page.getByRole('heading', { name: 'Example Hidrolik Sanayi A.Ş.', level: 1 })
+  ).toBeVisible()
+  await frame(
+    page,
+    '50',
+    0.1,
+    'composer shows the template with a placeholder link; Update control per row; Back in the foot'
   )
 })

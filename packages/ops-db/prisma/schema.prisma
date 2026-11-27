@@ -243,7 +243,7 @@ enum OutboundKind {
   auth_security_notice
   /// S10-T04, T07.
   supplier_document_request
-  bank_change_warning
+  supplier_bank_change_warning
 
   @@schema("ops")
 }

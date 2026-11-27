@@ -4,6 +4,7 @@ import {
   looksLikePartNumber,
   maskedIban,
   medianDays,
+  NOT_SELECTABLE,
   partNoNorm,
   RELIABILITY_MIN_REPLIES,
 } from '@indus/ops-core'
@@ -132,9 +133,6 @@ const DAY = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', day: 'num
 const day = (d: Date) => DAY.format(d).replace('Sept', 'Sep')
 const pct = (v: Prisma.Decimal | null) => (v === null ? null : `${Math.round(Number(v))}%`)
 
-/** Onboarding states that keep a supplier out of every selector (S10-T04). */
-export const NOT_SELECTABLE_ONBOARDING = ['draft', 'proposed', 'under_review', 'rejected', 'suspended'] as const
-
 const PAGE = 50
 
 export async function listSuppliers(params: SuppliersSearch): Promise<SupplierList> {
@@ -157,7 +155,7 @@ export async function listSuppliers(params: SuppliersSearch): Promise<SupplierLi
     : []
 
   const base: Prisma.SupplierListRowWhereInput[] = []
-  if (params.view === 'proposed') base.push({ onboardingStatus: { in: [...NOT_SELECTABLE_ONBOARDING] } })
+  if (params.view === 'proposed') base.push({ onboardingStatus: { in: [...NOT_SELECTABLE] } })
   if (params.tier) base.push({ tier: params.tier })
   if (params.type) base.push({ type: params.type })
   if (params.region) base.push({ country: { in: REGIONS[params.region]!.countries } })
@@ -203,7 +201,7 @@ export async function listSuppliers(params: SuppliersSearch): Promise<SupplierLi
     rows: page.map((r) => {
       const flags: string[] = []
       if (r.bankChangePending) flags.push('Bank change pending')
-      if (r.onboardingStatus && (NOT_SELECTABLE_ONBOARDING as readonly string[]).includes(r.onboardingStatus))
+      if (r.onboardingStatus && (NOT_SELECTABLE as readonly string[]).includes(r.onboardingStatus))
         flags.push('Proposed · not selectable')
       if (r.soonestExpiry && r.soonestExpiry.getTime() < Date.now()) flags.push('Certificate expired')
       if (r.bouncingContacts) flags.push('Bouncing')

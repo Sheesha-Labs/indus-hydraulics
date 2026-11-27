@@ -397,3 +397,95 @@ export async function archiveSuppliers(db: PrismaClient, seed: SuppliersSeed): P
     data: { archivedAt: new Date() },
   })
 }
+
+/** Board 50: a draft supplier on the Documents step, seven of nine in (neutral names). */
+export async function seedOnboardingDraft(
+  db: PrismaClient,
+  tag: string,
+  ownerId: string
+): Promise<string> {
+  const c = await db.company.create({
+    data: {
+      name: 'Example Hidrolik Sanayi A.Ş.',
+      legalName: 'Example Hidrolik Sanayi A.Ş.',
+      aliases: [`Example Hidrolik ${tag}`],
+      isSupplier: true,
+      country: 'TR',
+      website: 'examplehidrolik.example',
+      domains: [`${tag}-ob.example`],
+      supplierProfile: {
+        create: {
+          type: 'manufacturer',
+          onboardingStatus: 'draft',
+          proposedById: ownerId,
+          proposedAt: new Date(Date.now() - 23 * 86_400_000),
+          address: 'Example OSB, 34490 Istanbul',
+          registryNo: '482117',
+          taxId: '0681 224 590',
+          foundedYear: 1998,
+          staffCount: 240,
+          introducedBy: 'Example Armaturen · referral',
+          quoteCurrencies: ['EUR', 'USD'],
+        },
+      },
+    },
+    select: { id: true },
+  })
+  await db.contact.createMany({
+    data: [
+      {
+        companyId: c.id,
+        role: 'Sales',
+        name: 'Emre Example',
+        email: `sales.${tag}@examplehidrolik.example`,
+        sourceKind: 'manual',
+        isPreferred: true,
+      },
+      {
+        companyId: c.id,
+        role: 'Accounts',
+        name: 'Selin Example',
+        email: `accounts.${tag}@examplehidrolik.example`,
+        sourceKind: 'manual',
+      },
+      {
+        companyId: c.id,
+        role: 'Quality',
+        name: 'Murat Example',
+        email: `qa.${tag}@examplehidrolik.example`,
+        sourceKind: 'manual',
+      },
+    ],
+  })
+  const y = new Date().getUTCFullYear()
+  const docs: Array<[string, string, string | null, string | null, Date | null]> = [
+    ['trade_licence', 'received', 'Example Chamber of Commerce', '482117', null],
+    ['vat_certificate', 'received', null, 'VKN 0681 224 590', null],
+    [
+      'iso_certificate',
+      'received',
+      'Example certifier',
+      'cert 12 100 4471',
+      new Date(Date.UTC(y + 1, 2, 14)),
+    ],
+    ['approval', 'received', 'EN 853 / EN 856 type tests', null, new Date(Date.UTC(y + 1, 5, 2))],
+    ['bank_letter', 'received', 'TEST BANK', 'USD and EUR accounts', null],
+    ['company_profile', 'received', null, 'PDF · 18 pages', null],
+    ['code_of_conduct', 'awaiting_signature', null, null, null],
+    ['nda', 'signed', null, null, null],
+    ['ownership_declaration', 'requested', null, null, null],
+  ]
+  for (const [kind, status, issuer, number, expiresAt] of docs)
+    await db.complianceDocument.create({
+      data: {
+        companyId: c.id,
+        kind: kind as never,
+        title: kind,
+        status,
+        issuer,
+        number,
+        expiresAt,
+      },
+    })
+  return c.id
+}
