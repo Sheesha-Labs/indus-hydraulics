@@ -217,3 +217,68 @@ export async function getVettingData(supplierId: string) {
     lastRunAt: lastRun?.checkedAt ?? null,
   }
 }
+
+/** Board 52's reads: the taxonomy, the supplier's line cards, terms, trial limits, the status rail and expiries. */
+export async function getLineCardData(supplierId: string) {
+  const [trades, cards, p, docs, approvals] = await Promise.all([
+    opsDb.trade.findMany({
+      where: { archivedAt: null },
+      orderBy: [{ position: 'asc' }, { name: 'asc' }],
+      select: { id: true, name: true, parentId: true },
+    }),
+    opsDb.supplierLineCard.findMany({
+      where: { supplierId },
+      orderBy: { createdAt: 'asc' },
+      select: { id: true, tradeId: true, brand: true, status: true, authorised: true, evidenceUrl: true, specNote: true, version: true, coveredByDocumentIds: true, suspendedReason: true },
+    }),
+    opsDb.supplierProfile.findUniqueOrThrow({ where: { companyId: supplierId } }),
+    opsDb.complianceDocument.findMany({
+      where: { companyId: supplierId, archivedAt: null, expiresAt: { not: null } },
+      orderBy: { expiresAt: 'asc' },
+      take: 5,
+      select: { id: true, title: true, kind: true, expiresAt: true },
+    }),
+    opsDb.supplierApproval.findMany({ where: { supplierId }, orderBy: { decidedAt: 'asc' }, select: { decision: true, decidedAt: true } }),
+  ])
+  const at = (d: string) => approvals.find((a) => a.decision === d)?.decidedAt ?? null
+  const top = trades.filter((t) => !t.parentId)
+  const version = Math.max(0, ...cards.map((c) => c.version))
+  const lastSaved = await opsDb.activityEvent.findFirst({
+    where: { subjectId: supplierId, field: 'lineCard' },
+    orderBy: { at: 'desc' },
+    select: { at: true },
+  })
+  return {
+    groups: top.map((t) => ({ id: t.id, name: t.name, children: trades.filter((c) => c.parentId === t.id).map((c) => ({ id: c.id, name: c.name })) })),
+    tradeName: Object.fromEntries(trades.map((t) => [t.id, t.name])),
+    cards,
+    version,
+    versionAt: lastSaved ? day(lastSaved.at) : null,
+    terms: {
+      usualIncoterm: p.usualIncoterm ?? '',
+      usualIncotermPlace: p.usualIncotermPlace ?? '',
+      quotesCurrency: p.quotesCurrency ?? '',
+      defaultPaymentTerms: p.defaultPaymentTerms ?? '',
+      validityDays: p.validityDays ? String(p.validityDays) : '',
+      leadTimeText: p.leadTimeText ?? '',
+      moqText: p.moqText ?? '',
+      documentsWithPo: p.documentsWithPo.join(', '),
+      expectedReplyDays: p.expectedReplyDays ? String(p.expectedReplyDays) : '',
+      priceList: !!p.priceListFileId,
+    },
+    rail: [
+      { key: 'proposed', label: 'Proposed', at: p.proposedAt ? day(p.proposedAt) : null },
+      { key: 'under_review', label: 'Under review', at: at('propose') ? day(at('propose')!) : null },
+      { key: 'approved_trial', label: 'Approved · trial', at: at('approve_trial') ? day(at('approve_trial')!) : null },
+      { key: 'approved', label: 'Approved', at: at('approve') ? day(at('approve')!) : `After ${p.trialPoLimit} POs` },
+      { key: 'suspended', label: 'Suspended', at: 'If a document lapses or a check fails' },
+    ],
+    onboarding: p.onboardingStatus,
+    tier: p.tier,
+    trial: { used: p.trialPosUsed, limit: p.trialPoLimit, maxUsd: Number(p.trialPoMaxAmount), tpi: p.trialTpiEachPo },
+    expiries: docs.map((d) => ({ id: d.id, title: d.title, expires: d.expiresAt ? LONG.format(d.expiresAt) : '' })),
+    nextScreening: p.rescreenDueAt ? LONG.format(p.rescreenDueAt) : null,
+    documents: docs.map((d) => ({ id: d.id, title: d.title })),
+  }
+}
+export type LineCardData = Awaited<ReturnType<typeof getLineCardData>>

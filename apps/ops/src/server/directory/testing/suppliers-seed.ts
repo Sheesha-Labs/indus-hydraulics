@@ -43,7 +43,7 @@ export const BOARD128: readonly Row[] = [
     'principal',
     'IT',
     'Brescia',
-    ['Ball valves', 'actuators', 'trims'],
+    ['Floating ball valves', 'actuators', 'trims'],
     41,
     93,
     43,
@@ -57,7 +57,7 @@ export const BOARD128: readonly Row[] = [
     'approved',
     'GB',
     'Leeds',
-    ['Transmitters', 'gauges', 'level'],
+    ['Transmitters & gauges', 'gauges', 'level'],
     29,
     86,
     82,
@@ -235,6 +235,7 @@ export async function seedSuppliers(db: PrismaClient, tag: string): Promise<Supp
     select: { id: true },
   })
   const tradeId = async (name: string) =>
+    (await db.trade.findUnique({ where: { name }, select: { id: true } }))?.id ??
     (
       await db.trade.upsert({
         where: { slug: `parity-b128-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}` },
@@ -565,6 +566,44 @@ export async function seedVetting(
       reason: 'fills a gap in 4SH hose',
       decidedById: helperId,
       decidedAt: at,
+    },
+  })
+}
+
+/** Board 52: hydraulics line cards on the board-50 draft (needs the trade taxonomy seed). */
+export async function seedLineCard(db: PrismaClient, supplierId: string): Promise<void> {
+  const rows: Array<[string, string | null, boolean]> = [
+    ['hydraulics-hydraulic-hose', 'EN 853 1SN/2SN, EN 856 4SP/4SH/R13, SAE 100R2AT', true],
+    ['hydraulics-hose-fittings', 'JIC, ORFS, BSP, DIN 24°, interlock', true],
+    ['hydraulics-adapters', 'Crimped and tested, with DNV certificate', true],
+    ['hydraulics-quick-couplings', 'ISO 7241-A/B, flat face ISO 16028', true],
+    ['industrial-hose', 'Water, air, oil suction and delivery', false],
+  ]
+  for (const [slug, note, carried] of rows) {
+    const t = await db.trade.findUnique({ where: { slug }, select: { id: true } })
+    if (!t) continue
+    await db.supplierLineCard.create({
+      data: {
+        supplierId,
+        tradeId: t.id,
+        specNote: note,
+        status: carried ? 'trial' : 'not_carried',
+        version: 1,
+      },
+    })
+  }
+  await db.supplierProfile.update({
+    where: { companyId: supplierId },
+    data: {
+      usualIncoterm: 'FCA',
+      usualIncotermPlace: 'Istanbul',
+      quotesCurrency: 'EUR',
+      defaultPaymentTerms: '30% advance, 70% before shipment',
+      validityDays: 30,
+      leadTimeText: '4–6 weeks',
+      moqText: 'Hose 100 m per size',
+      documentsWithPo: ['EN 10204 3.1', 'CoC', 'CoO'],
+      expectedReplyDays: 3,
     },
   })
 }

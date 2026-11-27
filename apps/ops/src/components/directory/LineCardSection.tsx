@@ -1,4 +1,8 @@
-/** Placeholder replaced in S10-T06 (the line-card editor). */
-export default function LineCardSection({ supplierId }: { supplierId: string }) {
-  return <p data-supplier={supplierId}>Line card</p>
+import { getLineCardData } from '../../data/supplier-wizard'
+import LineCardEditor from './LineCardEditor'
+
+/** The profile's Line card tab (board 129 · board 52's editor): categories, brands, evidence and terms. */
+export default async function LineCardSection({ supplierId }: { supplierId: string }) {
+  const data = await getLineCardData(supplierId)
+  return <LineCardEditor supplierId={supplierId} data={data} />
 }

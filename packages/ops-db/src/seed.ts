@@ -97,6 +97,81 @@ export async function markDemoWelcomeSeen(db: PrismaClient): Promise<void> {
   })
 }
 
+/**
+ * S10-T06 · the trade taxonomy: structure only (names and order), idempotent by slug. No brand, no supplier and no
+ * margin (defaultMarginPct is the Owner's, set in Settings › Pricing, S34). Structural, so it runs on every seed,
+ * production included (SEED_ALLOW_REMOTE=1, SEED_DEMO unset).
+ */
+export const TRADE_TAXONOMY: ReadonlyArray<readonly [string, readonly string[]]> = [
+  [
+    'Hydraulics',
+    [
+      'Hydraulic hose',
+      'Hose fittings',
+      'Adapters',
+      'Quick couplings',
+      'Cylinders',
+      'Pumps and motors',
+      'Hydraulic valves',
+      'Filters',
+    ],
+  ],
+  [
+    'Valves',
+    [
+      'Ball valves',
+      'Gate valves',
+      'Globe valves',
+      'Butterfly valves',
+      'Check valves',
+      'Control valves',
+      'Actuators',
+    ],
+  ],
+  ['Bearings and power transmission', []],
+  ['Instrumentation', ['Gauges', 'Transmitters', 'Level instruments']],
+  ['Pneumatics', []],
+  ['Seals and gaskets', []],
+  ['Pipes, tubes and flanges', []],
+  ['Lifting and rigging', []],
+  ['Industrial hose', []],
+  ['Lubrication', []],
+  ['Marine', []],
+]
+
+const slugOf = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+
+export async function seedTrades(db: PrismaClient): Promise<{ created: number }> {
+  let created = 0
+  for (const [i, [name, children]] of TRADE_TAXONOMY.entries()) {
+    // By slug, else a trade a person already named the same (kept as it is).
+    const before =
+      (await db.trade.findUnique({ where: { slug: slugOf(name) }, select: { id: true } })) ??
+      (await db.trade.findUnique({ where: { name }, select: { id: true } }))
+    const parent =
+      before ??
+      (await db.trade.create({
+        data: { name, slug: slugOf(name), position: i + 1 },
+        select: { id: true },
+      }))
+    if (!before) created++
+    for (const [j, child] of children.entries()) {
+      const slug = `${slugOf(name)}-${slugOf(child)}`
+      const had =
+        (await db.trade.findUnique({ where: { slug }, select: { id: true } })) ??
+        (await db.trade.findUnique({ where: { name: child }, select: { id: true } }))
+      if (had) continue
+      await db.trade.create({ data: { name: child, slug, parentId: parent.id, position: j + 1 } })
+      created++
+    }
+  }
+  return { created }
+}
+
 async function main(): Promise<void> {
   const url = process.env.DATABASE_URL
   const decision = decideSeed(url, process.env)
@@ -106,10 +181,9 @@ async function main(): Promise<void> {
   }
   const db = new PrismaClient({ datasources: { db: { url: url! } } })
   try {
-    if (!decision.demo) {
-      console.log(`ops seed (${decision.host}): nothing to seed without SEED_DEMO=1 yet.`)
-      return
-    }
+    const trades = await seedTrades(db)
+    console.log(`ops seed (${decision.host}): trade taxonomy, ${trades.created} created`)
+    if (!decision.demo) return
     for (const r of await upsertUsers(db, DEMO_USERS))
       console.log(`ops seed: ${r.email} ${r.result}`)
     await markDemoWelcomeSeen(db)

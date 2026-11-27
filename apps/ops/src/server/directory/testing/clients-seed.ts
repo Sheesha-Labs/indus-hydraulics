@@ -36,13 +36,14 @@ export async function seedClients(db: PrismaClient, tag: string): Promise<Client
 
   // Board 12's trades by fixed slug (shared across runs; never archived by the seed).
   const trades = await Promise.all(
-    ['Valves & actuation', 'Instrumentation', 'Seals & gaskets', 'Bearings'].map((name, i) =>
-      db.trade.upsert({
-        where: { slug: `parity-b12-${i}` },
-        create: { name, slug: `parity-b12-${i}` },
-        update: {},
-        select: { id: true },
-      })
+    ['Valves & actuation', 'Instrumentation & control', 'Seals & gaskets', 'Bearings'].map(
+      (name, i) =>
+        db.trade.upsert({
+          where: { slug: `parity-b12-${i}` },
+          create: { name, slug: `parity-b12-${i}` },
+          update: {},
+          select: { id: true },
+        })
     )
   )
   out.tradeIds = trades.map((t) => t.id)

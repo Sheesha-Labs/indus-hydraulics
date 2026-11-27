@@ -55,7 +55,13 @@ type Tx = Prisma.TransactionClient
 
 /** Open a request for these kinds and ask the Assistant to draft the email (Draft and ask, from purchase@). */
 export async function createDocumentRequest(
-  i: { supplierId: string; contactId?: string | null; kinds: string[]; remindersOn?: boolean },
+  i: {
+    supplierId: string
+    contactId?: string | null
+    kinds: string[]
+    remindersOn?: boolean
+    draftEmail?: boolean
+  },
   user: Pick<OpsUser, 'id'> | null
 ): Promise<{ requestId: string }> {
   const kinds = [...new Set(i.kinds)].filter((k) =>
@@ -103,6 +109,8 @@ export async function createDocumentRequest(
       async () => undefined
     )
   })
+  // A reminder's fresh link (S10-T08) goes in the reminder itself: no separate request email.
+  if (i.draftEmail === false) return { requestId: id }
   await requestActionQuietly({
     actionKey: 'request_supplier_documents',
     subjectType: 'company',

@@ -126,3 +126,24 @@ export function Foot({
     </div>
   )
 }
+
+/** A foot bar with its own left text and primary (board 52). */
+export function FootBar({
+  left,
+  backHref,
+  primary,
+}: {
+  left: string
+  backHref: string
+  primary: ReactNode
+}) {
+  return (
+    <div className="border-io-line bg-io-card sticky bottom-0 flex items-center justify-between border-t px-6 py-3.5">
+      <span className="text-io-ink-3 text-[12.5px]">{left}</span>
+      <span className="flex gap-2">
+        <ButtonLink href={backHref as Route}>Back</ButtonLink>
+        {primary}
+      </span>
+    </div>
+  )
+}

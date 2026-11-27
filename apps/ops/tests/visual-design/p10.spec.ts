@@ -8,6 +8,7 @@ import {
   archiveSuppliers,
   seedOnboardingDraft,
   seedVetting,
+  seedLineCard,
   seedSuppliers,
   type SuppliersSeed,
 } from '../../src/server/directory/testing/suppliers-seed'
@@ -150,5 +151,17 @@ test('board-51 vetting and approval', async ({ page }) => {
     '51',
     0.12,
     'IBAN shown as last 4 only (never in full); Record screening control; neutral names'
+  )
+})
+
+test('board-52 line card and terms', async ({ page }) => {
+  await seedLineCard(db, draftId)
+  await page.goto(`/suppliers/new/${draftId}/line-card`)
+  await expect(page.locator('[data-built="supplier-line-card"]')).toBeVisible()
+  await frame(
+    page,
+    '52',
+    0.12,
+    'terms as inputs (the board draws selects); Save line card and Save terms controls; categories from the taxonomy'
   )
 })
