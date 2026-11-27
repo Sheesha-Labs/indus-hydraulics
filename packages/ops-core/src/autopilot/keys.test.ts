@@ -13,11 +13,11 @@ import { LOCKED_LEVELS, MAX_LEVELS } from './levels'
 import { validateLevel } from './presets'
 
 describe('action keys', () => {
-  it('seeds 32 catalogue keys and 43 system keys (S05 added two, S06 three, S08 two, S09 two), each once', () => {
+  it('seeds 32 catalogue keys and 46 system keys (S05 added two, S06 three, S08 two, S09 two, S10 three), each once', () => {
     expect(CATALOGUE_KEYS).toHaveLength(32)
-    expect(SYSTEM_KEYS).toHaveLength(43)
-    expect(ACTION_KEYS).toHaveLength(75)
-    expect(new Set(ACTION_KEYS).size).toBe(75)
+    expect(SYSTEM_KEYS).toHaveLength(46)
+    expect(ACTION_KEYS).toHaveLength(78)
+    expect(new Set(ACTION_KEYS).size).toBe(78)
   })
 
   it('uses snake_case keys', () => {
@@ -37,7 +37,9 @@ describe('action keys', () => {
     expect(actionPosition('resolve_extracted_line')).toBe(141)
     expect(actionPosition('match_client_answers')).toBe(142)
     expect(actionPosition('client_question_fallback')).toBe(143)
-    expect(new Set(ACTION_KEYS.map(actionPosition)).size).toBe(75)
+    expect(actionPosition('request_supplier_documents')).toBe(144)
+    expect(actionPosition('supplier_reliability_summary')).toBe(146)
+    expect(new Set(ACTION_KEYS.map(actionPosition)).size).toBe(78)
   })
 
   it('recognises only seeded keys', () => {

@@ -94,6 +94,11 @@ export const SYSTEM_KEYS = [
   // S09 (board 171: a client's reply read against the open questions; the fallback before the last useful day)
   'match_client_answers',
   'client_question_fallback',
+  // S10 (board 50: the /u upload link to a new supplier; board 132: the warning after a not-genuine call-back;
+  // board 129: the internal reliability paragraph)
+  'request_supplier_documents',
+  'bank_change_warning',
+  'supplier_reliability_summary',
 ] as const
 
 /** Every seeded action key. Later sprints append their keys at the end. */
@@ -163,6 +168,9 @@ export const SENDS_EXTERNALLY = [
   'outbound_attention',
   // S08 (board 17: ask the client for a clearer copy)
   'request_original',
+  // S10 (board 50 document request; board 132 warning to the address on file)
+  'request_supplier_documents',
+  'bank_change_warning',
 ] as const satisfies readonly ActionKey[]
 
 export type ExternalSendKey = (typeof SENDS_EXTERNALLY)[number]

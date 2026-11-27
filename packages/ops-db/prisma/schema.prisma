@@ -241,6 +241,9 @@ enum OutboundKind {
   auth_password_reset
   auth_invite
   auth_security_notice
+  /// S10-T04, T07.
+  supplier_document_request
+  bank_change_warning
 
   @@schema("ops")
 }
@@ -325,6 +328,19 @@ enum SupplierTier {
   @@schema("ops")
 }
 
+/// S10-T04: a supplier set up through the wizard (boards 50–52). NULL on the profile = never in the wizard.
+enum SupplierOnboardingStatus {
+  draft
+  proposed
+  under_review
+  approved_trial
+  approved
+  suspended
+  rejected
+
+  @@schema("ops")
+}
+
 enum BlockReason {
   fake_company
   counterfeit
@@ -394,6 +410,10 @@ enum ComplianceDocKind {
   past_performance_letter
   insurance
   other
+  /// S10-T04 (board 50).
+  code_of_conduct
+  nda
+  ownership_declaration
 
   @@schema("ops")
 }
@@ -403,6 +423,10 @@ enum ScreeningKind {
   company_registry
   domain_record
   blocked_list
+  /// S10-T05 (board 51, C40).
+  country_of_origin
+  re_export
+  adverse_media
 
   @@schema("ops")
 }
@@ -412,6 +436,8 @@ enum ScreeningResult {
   possible_match
   hit
   error
+  /// S10-T05: a checklist row not yet checked.
+  open
 
   @@schema("ops")
 }
@@ -3195,6 +3221,31 @@ model SupplierProfile {
   reliabilitySummary  String?
   reliabilityAt       DateTime?    @db.Timestamptz(3)
   updatedAt           DateTime     @updatedAt @db.Timestamptz(3)
+  // S10 onboarding (boards 50–52). onboardingStatus NULL = never in the wizard (RFQs allowed; tiers gate POs).
+  onboardingStatus    SupplierOnboardingStatus?
+  proposedById        String?      @db.Uuid
+  proposedAt          DateTime?    @db.Timestamptz(3)
+  registryNo          String?
+  taxId               String?
+  foundedYear         Int?
+  staffCount          Int?
+  introducedBy        String?
+  address             String?
+  /// The registry switchboard: the only number a bank call-back may dial (C21).
+  registryPhone       String?
+  quoteCurrencies     String[]     @db.Char(3)
+  validityDays        Int?
+  leadTimeText        String?
+  moqText             String?
+  documentsWithPo     String[]
+  expectedReplyDays   Int?
+  priceListFileId     String?      @db.Uuid
+  rejectReason        String?
+  reproposeAfter      DateTime?    @db.Date
+  rescreenDueAt       DateTime?    @db.Date
+  lastScreenedAt      DateTime?    @db.Timestamptz(3)
+  trialTpiEachPo      Boolean      @default(true)
+  version             Int          @default(0)
 
   @@index([tier])
   @@index([type])
@@ -3252,6 +3303,13 @@ model SupplierLineCard {
   timesQuoted Int       @default(0)
   notes       String?
   createdAt   DateTime  @default(now()) @db.Timestamptz(3)
+  /// S10-T06: proposed | trial | active | suspended | not_carried (CHECK).
+  status               String   @default("active")
+  /// Documents that cover this category; when all are expired the line card is suspended.
+  coveredByDocumentIds String[] @db.Uuid
+  specNote             String?
+  suspendedReason      String?
+  version              Int      @default(0)
 
   @@unique([supplierId, tradeId, brand])
   @@index([tradeId])
@@ -3284,6 +3342,17 @@ model SupplierBankAccount {
   coolingOffUntil       DateTime?         @db.Timestamptz(3)
   supersededAt          DateTime?         @db.Timestamptz(3)
   createdAt             DateTime          @default(now()) @db.Timestamptz(3)
+  /// S10: registry | verified_record | other (CHECK; 'other' refused in code).
+  callbackNumberSource  String?
+  /// genuine | not_genuine (CHECK).
+  callbackOutcome       String?
+  callbackSpokeToRole   String?
+  verifiedAt            DateTime?         @db.Timestamptz(3)
+  bankLetterFileId      String?           @db.Uuid
+  nameMatchesRegistry   Boolean?
+  letterMatchesIban     Boolean?
+  /// HMAC of the normalised IBAN, for the blocked-counterparty match (never reversible).
+  ibanHash              String?
 
   payments SupplierPayment[]
 
@@ -3311,6 +3380,14 @@ model ComplianceDocument {
   usedIn         String[]
   archivedAt     DateTime?         @db.Timestamptz(3)
   createdAt      DateTime          @default(now()) @db.Timestamptz(3)
+  /// S10: requested | received | awaiting_signature | signed | missing | expired (CHECK).
+  status            String   @default("received")
+  /// C18 thresholds already reminded (60, 30, 7), set when the reminder email is sent.
+  remindersSentDays Int[]
+  coversTradeIds    String[] @db.Uuid
+  note              String?
+
+  uploads SupplierDocumentUpload[]
 
   @@index([companyId])
   @@index([expiresAt])
@@ -3328,6 +3405,12 @@ model ScreeningCheck {
   evidence    Json?
   triggeredBy String?
   checkedAt   DateTime        @default(now()) @db.Timestamptz(3)
+  /// S10-T05 manual checklist (C40).
+  listName    String?
+  scope       String?
+  checkedById String?         @db.Uuid
+  evidenceUrl String?
+  note        String?
 
   @@index([companyId, kind, checkedAt])
   @@map("screening_check")
@@ -6070,6 +6153,126 @@ model ChecklistItem {
 // Owned by postgres (security definer semantics) so ops_app needs no grant on
 // public tables. Only active products, only the columns Ops needs.
 // ═════════════════════════════════════════════════════════════════════════════
+
+/// S10: one row per tier decision (boards 51, 130, 131). Insert-only for ops_app.
+model SupplierApproval {
+  id          String        @id @default(uuid(7)) @db.Uuid
+  supplierId  String        @db.Uuid
+  /// propose | send_back | approve | approve_trial | reject | promote | block | unblock (CHECK).
+  decision    String
+  fromTier    SupplierTier?
+  toTier      SupplierTier?
+  conditions  Json          @default("[]")
+  reason      String?
+  decidedById String?       @db.Uuid
+  decidedAt   DateTime      @default(now()) @db.Timestamptz(3)
+  actionId    String?       @db.Uuid
+
+  @@index([supplierId, decidedAt(sort: Desc)])
+  @@map("supplier_approval")
+  @@schema("ops")
+}
+
+/// S10-T04: the secure upload link sent to a new supplier (board 50, /u/[token]). Only the token's SHA-256 is stored.
+model SupplierDocumentRequest {
+  id             String    @id @default(uuid(7)) @db.Uuid
+  supplierId     String    @db.Uuid
+  contactId      String?   @db.Uuid
+  tokenHash      String    @unique
+  requestedKinds String[]
+  expiresAt      DateTime  @db.Timestamptz(3)
+  nextReminderAt DateTime? @db.Timestamptz(3)
+  remindersSent  Int       @default(0)
+  remindersOn    Boolean   @default(true)
+  /// open | completed | expired | revoked (CHECK).
+  status         String    @default("open")
+  outboundId     String?   @db.Uuid
+  actionId       String?   @db.Uuid
+  threadId       String?   @db.Uuid
+  createdById    String?   @db.Uuid
+  createdAt      DateTime  @default(now()) @db.Timestamptz(3)
+  completedAt    DateTime? @db.Timestamptz(3)
+  revokedAt      DateTime? @db.Timestamptz(3)
+
+  uploads SupplierDocumentUpload[]
+
+  @@index([status, nextReminderAt])
+  @@index([supplierId, createdAt(sort: Desc)])
+  @@map("supplier_document_request")
+  @@schema("ops")
+}
+
+model SupplierDocumentUpload {
+  id                   String                  @id @default(uuid(7)) @db.Uuid
+  requestId            String                  @db.Uuid
+  request              SupplierDocumentRequest @relation(fields: [requestId], references: [id])
+  storedFileId         String                  @db.Uuid
+  kind                 String
+  complianceDocumentId String?                 @db.Uuid
+  complianceDocument   ComplianceDocument?     @relation(fields: [complianceDocumentId], references: [id])
+  uploadedAt           DateTime                @default(now()) @db.Timestamptz(3)
+  ipHash               String?
+  userAgentClass       String?
+
+  @@index([requestId])
+  @@map("supplier_document_upload")
+  @@schema("ops")
+}
+
+/// S10-T02 board 11: one row per live client (ops.client_stats_v).
+view ClientStats {
+  companyId       String    @unique @db.Uuid
+  name            String
+  city            String?
+  country         String?
+  industry        String?
+  quotingCurrency String?
+  creditHold      Boolean
+  active          Boolean
+  enquiriesYtd    Int
+  rfqsYtd         Int
+  leadsOpen       Int
+  quotedYtdAed    Decimal   @db.Decimal(18, 4)
+  wonYtdAed       Decimal   @db.Decimal(18, 4)
+  winRatePct      Decimal?
+  avgMarginWonPct Decimal?
+  lastRfqAt       DateTime? @db.Timestamptz(3)
+
+  @@map("client_stats_v")
+  @@schema("ops")
+}
+
+/// S10-T03 board 128: one row per live supplier (ops.supplier_list_v).
+view SupplierListRow {
+  companyId         String    @unique @db.Uuid
+  name              String
+  country           String?
+  city              String?
+  primaryDomain     String?
+  domains           String[]
+  aliases           String[]
+  type              String
+  tier              String
+  onboardingStatus  String?
+  quotesCurrency    String?
+  rfqsAsked         Int
+  repliesCount      Int
+  replyRatePct      Decimal?
+  medianReplyHours  Decimal?
+  winSharePct       Decimal?
+  lastQuoteAt       DateTime? @db.Timestamptz(3)
+  trialPosUsed      Int
+  trialPoLimit      Int
+  tradeIds          String[]  @db.Uuid
+  trades            String[]
+  contactCount      Int
+  bouncingContacts  Int?
+  soonestExpiry     DateTime? @db.Date
+  bankChangePending Boolean
+
+  @@map("supplier_list_v")
+  @@schema("ops")
+}
 
 view CatalogueProduct {
   id           String   @unique

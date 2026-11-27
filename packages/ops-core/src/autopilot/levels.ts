@@ -67,6 +67,9 @@ export const LOCKED_LEVELS = {
   cancel_reissue_document: 'draft_and_ask',
   revert_change: 'draft_and_ask',
   bank_change_alert: 'do_and_tell',
+  // S10: a warning after a not-genuine bank call-back is always a person's decision; the summary is internal text.
+  bank_change_warning: 'draft_and_ask',
+  supplier_reliability_summary: 'do_quietly',
 } as const satisfies Partial<Record<ActionKey, AutopilotLevel>>
 
 /**

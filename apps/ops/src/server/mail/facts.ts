@@ -1,4 +1,5 @@
 import 'server-only'
+import { matchCompanyBySender } from '../directory/match-company'
 import { opsDb } from '@indus/ops-db'
 import {
   domainOf,
@@ -134,12 +135,17 @@ export async function loadMailInput(messageId: string, now = new Date()): Promis
       orderBy: { sentAt: 'desc' },
       select: { classification: true },
     }),
-    domain
-      ? opsDb.company.findFirst({
-          where: { domains: { has: domain } },
-          select: { id: true, name: true, isClient: true, isSupplier: true },
-        })
-      : Promise.resolve(null),
+    // S10-T01: the directory matcher (contact, then registrable domain; merged → survivor; unique or nothing).
+    matchCompanyBySender(m.fromAddress).then((r) =>
+      r.match
+        ? {
+            id: r.match.companyId,
+            name: r.match.name,
+            isClient: r.match.isClient,
+            isSupplier: r.match.isSupplier,
+          }
+        : null
+    ),
     domain
       ? opsDb.mailMessage.findFirst({
           where: {

@@ -215,6 +215,34 @@ const questionsClock = z.strictObject({
   supplierLeadWorkingDays: z.number().int().min(1).max(20),
 })
 
+/** S10 board 50: the /u upload link (expiry, reminder cadence, requests per 10 minutes per link and address). */
+const supplierDocsRequest = z.strictObject({
+  expiryDays: wholeNumber(1, 60, 'days'),
+  reminderEveryDays: wholeNumber(1, 30, 'days'),
+  rateLimitPer10Min: wholeNumber(5, 500, 'requests'),
+})
+
+/** S10 boards 51, 52, 130 (P09, C21, C40): trial limits, re-screening, re-proposal, promotion, cooling-off. */
+const suppliersTrust = z.strictObject({
+  trialPos: wholeNumber(1, 20, 'POs'),
+  trialPerPoUsd: positiveAmount.max(10_000_000),
+  trialTpiEachPo: z.boolean(),
+  rescreenDays: wholeNumber(7, 730, 'days'),
+  rescreenAboveUsd: positiveAmount.max(100_000_000),
+  reproposeMonths: wholeNumber(1, 36, 'months'),
+  approvedAfterPos: wholeNumber(1, 50, 'POs'),
+  coolingOffHours: wholeNumber(24, 168, 'hours'),
+})
+
+/** S10 C18: reminder thresholds in days before a document expires, largest first. */
+const documentReminders = z.strictObject({
+  thresholds: z
+    .array(wholeNumber(1, 365, 'days'))
+    .min(1, 'Keep at least one reminder.')
+    .max(5, 'Use up to five reminders.')
+    .refine(unique, 'Use each number of days once.'),
+})
+
 const researchCap = z.strictObject({
   perEnquiryUsd: positiveAmount.max(1_000),
   allowMoreUsd: z.number().finite().min(0).max(1_000),
@@ -465,6 +493,27 @@ export const SETTINGS = {
     signoff: true,
     label: 'Client questions: reminder, call and fallback',
     section: 'enquiries',
+  }),
+  'supplierDocs.request': def({
+    schema: supplierDocsRequest,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Supplier document link: expiry and reminders',
+    section: 'documents',
+  }),
+  'suppliers.trust': def({
+    schema: suppliersTrust,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Supplier trial, screening and bank cooling-off',
+    section: 'money',
+  }),
+  'documents.reminders': def({
+    schema: documentReminders,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Document expiry reminders',
+    section: 'documents',
   }),
   'research.cap': def({
     schema: researchCap,

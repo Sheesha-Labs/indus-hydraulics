@@ -4,6 +4,8 @@ import {
   allRecipients,
   audienceForKind,
   capWindow,
+  CONTACT_REFUSAL_TEXT,
+  contactRefusal,
   isPricedDocument,
   isPricedKind,
   mailboxCanSend,
@@ -28,6 +30,8 @@ import { moveOutbound, PENDING } from './status'
  *   4  mailbox     paused by the Owner (board 89)                              → held 'pause', wait ops/mailbox.resumed
  *   5  mailbox     the row's own mailbox must be live with send; never another → waiting_for_mailbox, wait ops/mailbox.live
  *   6  alias       From must still be a verified send-as alias                 → failed 'alias_not_verified'
+ *   6b contact     S10: the row's contact must be sendable, and no recipient may be
+ *                  known only from a directory listing                         → failed 'contact_not_verified'
  *   7  cap         the mailbox's daily cap (resets 04:00 GST)                  → held 'cap', wait until the reset
  *   8  basis       S06 hook: the approval's basis_hash is still current        → superseded 'stale'
  *   9  person      a priced client email needs a PERSON's approval (G2)        → failed 'needs_person'
@@ -110,6 +114,42 @@ async function filesPresent(files: Array<{ bucket: string; path: string; purgedA
   return true
 }
 
+/** Why this row's recipients include someone we may not write to, or null. */
+async function unsendableRecipient(row: {
+  contactId: string | null
+  toAddresses: string[]
+  ccAddresses: string[]
+  bccAddresses: string[]
+}): Promise<string | null> {
+  if (row.contactId) {
+    const c = await opsDb.contact.findUnique({
+      where: { id: row.contactId },
+      select: { email: true, sourceKind: true, status: true, archivedAt: true, bouncedAt: true },
+    })
+    const reason = c ? contactRefusal(c) : 'archived'
+    if (reason) return `the contact ${CONTACT_REFUSAL_TEXT[reason]}`
+  }
+  const addresses = allRecipients({
+    to: row.toAddresses,
+    cc: row.ccAddresses,
+    bcc: row.bccAddresses,
+  }).map((a) => a.toLowerCase())
+  if (!addresses.length) return null
+  const known = await opsDb.contact.findMany({
+    where: {
+      archivedAt: null,
+      OR: addresses.map((a) => ({ email: { equals: a, mode: 'insensitive' as const } })),
+    },
+    select: { email: true, sourceKind: true },
+  })
+  for (const a of addresses) {
+    const rows = known.filter((k) => k.email?.toLowerCase() === a)
+    if (rows.length && rows.every((k) => k.sourceKind === 'directory_only'))
+      return `${a} ${CONTACT_REFUSAL_TEXT.directory_only}`
+  }
+  return null
+}
+
 export async function sendGate(outboundId: string, deps: Deps = {}): Promise<GateResult> {
   const now = (deps.now ?? (() => new Date()))()
   const e = deps.env ?? env()
@@ -130,6 +170,8 @@ export async function sendGate(outboundId: string, deps: Deps = {}): Promise<Gat
       createdById: true,
       basisHash: true,
       identifierCheck: true,
+      contactId: true,
+      companyId: true,
       mailbox: {
         select: {
           id: true,
@@ -200,6 +242,22 @@ export async function sendGate(outboundId: string, deps: Deps = {}): Promise<Gat
   const alias = row.fromAlias ?? mailbox.address
   if (!aliasAllowed(alias, [mailbox.address, ...mailbox.sendAsAliases])) {
     return stop(outboundId, 'failed', 'alias_not_verified')
+  }
+
+  // 6b Verified contacts only (S10-T01): a directory listing is never a recipient.
+  const contactProblem = await unsendableRecipient(row)
+  if (contactProblem) {
+    await raiseNotification({
+      event: 'action_failed',
+      severity: 'warning',
+      title: 'Find a verified address',
+      body: `Not sent: ${contactProblem}. Add an address seen in real mail or on the company's own page.`,
+      dedupeKey: `contact_not_verified:${outboundId}`,
+      subjectType: row.companyId ? 'company' : 'mailbox',
+      subjectId: row.companyId ?? mailbox.id,
+      audience: 'all',
+    })
+    return stop(outboundId, 'failed', 'contact_not_verified')
   }
 
   // 7 Daily cap.
