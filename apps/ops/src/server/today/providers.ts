@@ -1,4 +1,5 @@
 import 'server-only'
+import { documentLabel } from '@indus/ops-core'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import type { OpsRole } from '../../lib/access-core'
 
@@ -382,6 +383,7 @@ const DONE_WORD: Record<string, string> = {
   chase_suppliers: 'Chased',
   send_supplier_rfqs: 'Sent RFQs',
   capture_supplier_quotes: 'Captured',
+  supplier_reliability_summary: 'Supplier summaries',
 }
 
 function sentence(key: string): string {
@@ -439,4 +441,148 @@ registerTodayProvider({
         : '',
       href: '/tasks',
     })),
+})
+
+// S10-T08 · directory. One query each, like every provider here.
+
+const dayFmt = (d: Date) =>
+  d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'Asia/Dubai' })
+const daysTo = (d: Date, now: Date) => Math.ceil((d.getTime() - now.getTime()) / 86_400_000)
+
+/** A bank-detail change waiting on the Owner's call-back: payments to the supplier are blocked. */
+registerTodayProvider({
+  section: 'late',
+  key: 'supplier.bank_change',
+  side: 'supplier',
+  query: () =>
+    opsDb.supplierBankAccount.findMany({
+      where: { status: 'pending_verification', supersededAt: null, supplier: { archivedAt: null } },
+      orderBy: { requestedAt: 'asc' },
+      take: 5,
+      select: {
+        id: true,
+        supplierId: true,
+        requestedAt: true,
+        supplier: { select: { name: true } },
+      },
+    }),
+  read: (rows) =>
+    (
+      rows as Array<{
+        id: string
+        supplierId: string
+        requestedAt: Date | null
+        supplier: { name: string }
+      }>
+    ).map((r) => ({
+      key: `bank-change:${r.id}`,
+      title: `Bank change requested · payments to ${r.supplier.name} blocked`,
+      sub: `${r.requestedAt ? `Asked ${dayFmt(r.requestedAt)} · ` : ''}call the number on file, not the email`,
+      href: `/suppliers/${r.supplierId}/bank-change/${r.id}`,
+      hrefLabel: 'Open',
+      mark: 'bad' as const,
+    })),
+})
+
+/** Suppliers whose 90-day screening has lapsed (the job raises the notice; Today keeps it in view). */
+registerTodayProvider({
+  section: 'late',
+  key: 'supplier.rescreen',
+  side: 'supplier',
+  query: (ctx) =>
+    opsDb.supplierProfile.findMany({
+      where: {
+        rescreenDueAt: { lte: ctx.now },
+        tier: { not: 'blocked' },
+        company: { archivedAt: null },
+      },
+      orderBy: { rescreenDueAt: 'asc' },
+      take: 5,
+      select: { companyId: true, rescreenDueAt: true, company: { select: { name: true } } },
+    }),
+  read: (rows) =>
+    (
+      rows as Array<{ companyId: string; rescreenDueAt: Date | null; company: { name: string } }>
+    ).map((r) => ({
+      key: `rescreen:${r.companyId}`,
+      title: `Re-screen ${r.company.name}`,
+      sub: r.rescreenDueAt
+        ? `Due ${dayFmt(r.rescreenDueAt)} · before the next PO`
+        : 'Before the next PO',
+      href: `/suppliers/${r.companyId}`,
+      hrefLabel: 'Open',
+      mark: 'warn' as const,
+    })),
+})
+
+/** Indus's own documents (companyId null) inside the 60-day window: a Today item, never an email. */
+registerTodayProvider({
+  section: 'late',
+  key: 'company.documents',
+  query: (ctx) =>
+    opsDb.complianceDocument.findMany({
+      where: {
+        companyId: null,
+        archivedAt: null,
+        expiresAt: { lte: new Date(ctx.now.getTime() + 60 * 86_400_000) },
+      },
+      orderBy: { expiresAt: 'asc' },
+      take: 5,
+      select: { id: true, title: true, issuer: true, expiresAt: true },
+    }),
+  read: (rows, ctx) =>
+    (
+      rows as Array<{ id: string; title: string; issuer: string | null; expiresAt: Date | null }>
+    ).map((d) => {
+      const left = d.expiresAt ? daysTo(d.expiresAt, ctx.now) : 0
+      return {
+        key: `company-doc:${d.id}`,
+        title: left < 0 ? `${d.title} expired` : `${d.title} expires in ${left} days`,
+        sub: [d.issuer, d.expiresAt ? dayFmt(d.expiresAt) : null].filter(Boolean).join(' · '),
+        href: '/settings/documents',
+        hrefLabel: 'Open',
+        mark: left <= 7 ? ('bad' as const) : ('warn' as const),
+      }
+    }),
+})
+
+/** Documents suppliers uploaded through /u since yesterday evening, one row per supplier. */
+registerTodayProvider({
+  section: 'came_in',
+  key: 'supplier.documents_received',
+  side: 'supplier',
+  query: (ctx) =>
+    opsDb.supplierDocumentUpload.findMany({
+      where: { uploadedAt: { gte: ctx.since }, request: { supplier: { archivedAt: null } } },
+      orderBy: { uploadedAt: 'desc' },
+      take: 50,
+      select: {
+        kind: true,
+        request: { select: { supplierId: true, supplier: { select: { name: true } } } },
+      },
+    }),
+  read: (rows) => {
+    const by = new Map<string, { name: string; kinds: Set<string>; files: number }>()
+    for (const u of rows as Array<{
+      kind: string
+      request: { supplierId: string; supplier: { name: string } }
+    }>) {
+      const g = by.get(u.request.supplierId) ?? {
+        name: u.request.supplier.name,
+        kinds: new Set(),
+        files: 0,
+      }
+      g.kinds.add(documentLabel(u.kind))
+      g.files += 1
+      by.set(u.request.supplierId, g)
+    }
+    return [...by].slice(0, 5).map(([id, g]) => ({
+      key: `supplier-docs:${id}`,
+      title: `Documents from ${g.name} · ${g.files} ${g.files === 1 ? 'file' : 'files'}`,
+      sub: [...g.kinds].join(', '),
+      href: `/suppliers/${id}/documents`,
+      hrefLabel: 'Open',
+      mark: 'ok' as const,
+    }))
+  },
 })
