@@ -6,7 +6,7 @@ import { z } from 'zod'
 import { requireOpsUser } from '../../lib/access'
 import { LIVE_KEY_PATTERN, MAX_LIVE_KEYS, type LiveKey } from '../../lib/live-poller'
 import { isExpectedRefusal, SAFE_MESSAGES, safeMessage } from '../../lib/safe-message'
-import { readCounters } from '../../server/assistant/live-counter'
+import { readCounters, recordCounterKey } from '../../server/assistant/live-counter'
 
 const keysSchema = z.array(z.string().regex(LIVE_KEY_PATTERN)).max(MAX_LIVE_KEYS)
 
@@ -26,7 +26,9 @@ const SOURCES: Record<'today' | 'review' | 'mail', readonly string[]> = {
 }
 
 function sourcesOf(key: LiveKey): readonly string[] {
-  return key === 'today' || key === 'review' || key === 'mail' ? SOURCES[key] : [key]
+  return key === 'today' || key === 'review' || key === 'mail'
+    ? SOURCES[key]
+    : [recordCounterKey(key.slice('record:'.length))]
 }
 
 export async function getLiveCounts(

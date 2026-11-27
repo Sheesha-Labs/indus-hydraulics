@@ -22,8 +22,13 @@ export default async function EnquiriesNewPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }) {
   await requireOpsUser().catch(signInFor('/enquiries/new'))
-  const parsed = z.uuid().safeParse((await searchParams).batch)
+  const sp = await searchParams
+  const parsed = z.uuid().safeParse(sp.batch)
   const batchId = parsed.success ? parsed.data : null
+  const lead = z
+    .string()
+    .regex(/^L-\d{4,}$/)
+    .safeParse(sp.lead)
   const [{ batches, intakeCount }, intake, manual] = await Promise.all([
     batchId
       ? getQueue({ batchId })
@@ -42,7 +47,11 @@ export default async function EnquiriesNewPage({
         className="grid grid-cols-[minmax(0,1fr)_300px] items-start gap-4"
       >
         <div className="flex min-w-0 flex-col gap-4">
-          <IntakeDropArea batchId={batch?.id ?? null} maxMb={intake.maxUploadMb} />
+          <IntakeDropArea
+            batchId={batch?.id ?? null}
+            maxMb={intake.maxUploadMb}
+            leadRef={lead.success ? lead.data : null}
+          />
           {batch && batch.rows.length ? <QueueCard batch={batch} /> : null}
           {batch ? <IntakeLive batchIds={[batch.id]} /> : null}
           <ManualEnquiry

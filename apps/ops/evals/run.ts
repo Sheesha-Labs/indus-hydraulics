@@ -5,7 +5,8 @@
  *   bun run --filter @indus/ops eval -- --suite classify --set synthetic --model claude-haiku-5-5
  *   bun run --filter @indus/ops eval -- --suite link --set golden
  *   bun run --filter @indus/ops eval -- --suite learn                       (S07-T05, learn-preferences@1)
- *   bun run --filter @indus/ops eval -- --suite extract [--model …] [--repeat 2] (S08-T02, extract_lines@1)
+ *   bun run --filter @indus/ops eval -- --suite extract [--model …] [--repeat 2] (S08-T02; extract_lines@2 since S09-T04)
+ *   bun run --filter @indus/ops eval -- --suite qualify                     (S09-T06, qualify_enquiry@1)
  *
  * It runs the real action code (propose + verify of classify_mail and link_mail) over fixtures, with an
  * in-memory ledger (no database writes) and the Messages API through OPS_ANTHROPIC_API_KEY (use the low-limit
@@ -33,6 +34,9 @@ import {
 } from '@indus/ops-core'
 import classifyDef from '../src/server/assistant/actions/classify-mail'
 import linkDef from '../src/server/assistant/actions/link-mail'
+import qualifyDef from '../src/server/assistant/actions/qualify-enquiry'
+import { PROMPT_VERSION as QUALIFY_PROMPT } from '../src/server/assistant/prompts/qualify-enquiry.v1'
+import { gatheredOf, scoreQualify, type QualifyCase } from './scorers/qualify'
 import type { ActionAi } from '../src/server/assistant/types'
 import { headersFromFlags, NEW_TEXT_MAX, type MailInput } from '../src/server/mail/facts'
 import { loadGolden } from './golden'
@@ -40,7 +44,10 @@ import { scoreClassify, type ClassifyCase } from './scorers/classify'
 import { scoreLink, type LinkCase } from './scorers/link'
 import { scoreLearn, type LearnCase } from './scorers/learn'
 import { scoreExtract, type ExpectedLine, type ExtractCaseResult } from './scorers/extract'
-import { unitReference } from '../src/server/assistant/prompts/extract-lines.v1'
+import {
+  PROMPT_VERSION as EXTRACT_PROMPT_VERSION,
+  unitReference,
+} from '../src/server/assistant/prompts/extract-lines.v2'
 import { buildCandidates, unsureShare } from '../src/server/intake/candidates'
 import {
   ESCALATE_UNSURE_SHARE,
@@ -60,7 +67,7 @@ import {
   SYSTEM_PARTS as LEARN_SYSTEM,
 } from '../src/server/assistant/prompts/learn-preferences.v1'
 
-type Suite = 'classify' | 'link' | 'learn' | 'extract'
+type Suite = 'classify' | 'link' | 'learn' | 'extract' | 'qualify'
 type Set = 'synthetic' | 'golden'
 
 export interface ClassifyFixture extends ClassifyCase {
@@ -306,6 +313,28 @@ async function runLearn(cases: LearnCase[], ai: ActionAi | null) {
   return { score: scoreLearn(scored, outs), skipped }
 }
 
+/** The quick read (S09-T06): the action's own propose + verify over compact synthetic enquiries. */
+async function runQualify(cases: QualifyCase[], ai: ActionAi | null) {
+  const got = new Map<string, { legitimacy: string; path: string } | null>()
+  const skipped: string[] = []
+  for (const c of cases) {
+    if (!ai) {
+      skipped.push(c.id)
+      continue
+    }
+    const input = gatheredOf(c)
+    const p = await qualifyDef.propose(input, ai)
+    if (!p.ok) {
+      got.set(c.id, null)
+      continue
+    }
+    const v = await qualifyDef.verify(p.out, input)
+    got.set(c.id, { legitimacy: v.out.verdict.legitimacy, path: v.out.verdict.suggestedPath })
+  }
+  const scored = cases.filter((c) => !skipped.includes(c.id))
+  return { score: scoreQualify(scored, got), skipped }
+}
+
 /** The unit table as the uom_and_column_mapping migration seeds it (the eval needs no database). */
 const EVAL_UNITS: UnitRow[] = [
   {
@@ -447,7 +476,20 @@ async function main(): Promise<void> {
     const { score, escalations, skipped } = out!
     console.log(JSON.stringify({ ...score, escalations, skipped: skipped.length }, null, 2))
     console.log(
-      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt extract_lines@1`
+      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt ${EXTRACT_PROMPT_VERSION}`
+    )
+    if (ai && !score.passes) process.exitCode = 1
+    return
+  }
+  if (suite === 'qualify') {
+    const cases = loadSynthetic<QualifyCase>('qualify')
+    console.log(
+      `suite qualify · set synthetic · ${cases.length} enquiries${ai ? '' : ' · NO KEY: skipped'}`
+    )
+    const { score, skipped } = await runQualify(cases, ai)
+    console.log(JSON.stringify({ ...score, skipped: skipped.length }, null, 2))
+    console.log(
+      `calls ${ledger.calls.length} · cost USD ${ledger.totalUsd()} · prompt ${QUALIFY_PROMPT}`
     )
     if (ai && !score.passes) process.exitCode = 1
     return

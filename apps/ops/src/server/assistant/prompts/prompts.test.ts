@@ -9,7 +9,11 @@ import * as resend from './resend-alternate-contact.v1'
 import * as translate from './translate-mail.v1'
 import * as learn from './learn-preferences.v1'
 import * as extract from './extract-lines.v1'
+import * as extract2 from './extract-lines.v2'
 import * as createEnquiry from './create-enquiry.v1'
+import * as qualify from './qualify-enquiry.v1'
+import * as clientQuestions from './client-questions.v1'
+import * as matchAnswers from './match-client-answers.v1'
 
 /**
  * Prompts are versioned code (CLAUDE.md §9.9): the text of a released version never changes. A different
@@ -25,20 +29,38 @@ const RELEASED: Record<string, string> = {
   'translate-mail@1': 'd4643fce28d6c1c47ef3efe359c8f22bac64c411e8980d8c510d6dd5a3abf32c',
   'learn-preferences@1': '4af52fc51f3b22016858511e83ab0373a16a6938c1957b527790b6ddf3a280e6',
   'extract_lines@1': 'c7bcfaa0825753c1ccf7cafc5c7d4e175a1db84f368ac85e1e606bf6a4379438',
+  // S09-T04: adds the issuer (letterhead) to the document facts; synthetic extract eval 48/48, USD 0.29.
+  'extract_lines@2': 'e7ff1287395ce827fd83ef3251369f512a71b2eb500526357af011b16a3f65a4',
   'create_enquiry@1': '60f63da2c62d293f9b4c5ffe5ddfaf1983ea8e786b95f8f1d89eb4b3c0964ce7',
+  // S09-T06: the quick read (board 167); synthetic eval suite `qualify`.
+  'qualify_enquiry@1': 'e2f162af505e410093105421acb0062b4aaaa36ca308f362ce778dae4f92c3f1',
+  // S09-T07: the questions before sourcing (#7) and the answers read against them (board 171).
+  'client_questions@1': '5487a9618159a537e027244e76332c2177887103344b7f65fabf61aa5fea1f7a',
+  'match_client_answers@1': '17a1d1728e12c381e2c27888064aa13b8195c1ad08b70816f2defb8da7754309',
 }
 
 describe('released prompts are byte-stable', () => {
-  it.each([classify, link, ooo, askOpenCopy, resend, translate, learn, extract, createEnquiry])(
-    '$PROMPT_VERSION',
-    (m) => {
-      const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
-      expect(hash).toBe(RELEASED[m.PROMPT_VERSION])
-      // and cacheable: no timestamps or ids in system text, one 1 h breakpoint on the last part
-      const blocks = buildSystem(m.SYSTEM_PARTS)
-      expect(blocks.at(-1)?.cache_control).toEqual({ type: 'ephemeral', ttl: '1h' })
-    }
-  )
+  it.each([
+    classify,
+    link,
+    ooo,
+    askOpenCopy,
+    resend,
+    translate,
+    learn,
+    extract,
+    extract2,
+    createEnquiry,
+    qualify,
+    clientQuestions,
+    matchAnswers,
+  ])('$PROMPT_VERSION', (m) => {
+    const hash = createHash('sha256').update(JSON.stringify(m.SYSTEM_PARTS)).digest('hex')
+    expect(hash).toBe(RELEASED[m.PROMPT_VERSION])
+    // and cacheable: no timestamps or ids in system text, one 1 h breakpoint on the last part
+    const blocks = buildSystem(m.SYSTEM_PARTS)
+    expect(blocks.at(-1)?.cache_control).toEqual({ type: 'ephemeral', ttl: '1h' })
+  })
 
   it('the user turn carries the per-message values, not the system', () => {
     const u = classify.classifyUser({

@@ -10,6 +10,10 @@ import {
   modalPanel,
   modalTitle,
   SCRIM,
+  sheetBody,
+  sheetFoot,
+  sheetHead,
+  sheetTitle,
   type ModalWidth,
 } from './styles'
 import { CloseIcon, Consequences, ModalSections } from './surfaces'
@@ -28,8 +32,15 @@ export interface ModalProps {
   actions: ReactNode
   /** danger colours the title bad. */
   tone?: 'danger'
-  /** Default 520. */
+  /** Default 520 (720 for the sheet). */
   width?: ModalWidth
+  /**
+   * 'sheet' (boards 16, 23): an eyebrow over an Instrument Serif title in a ruled head, no close button (Cancel
+   * is in the foot), and a white foot with the actions spread apart. Escape and outside click still close it.
+   */
+  variant?: 'standard' | 'sheet'
+  /** The sheet's eyebrow ("Convert lead L-0184"). */
+  eyebrow?: string
   /**
    * The control that opens the modal (Dialog.Trigger asChild). With it, focus returns to the trigger on
    * close even if the trigger re-rendered or was replaced in between.
@@ -56,10 +67,13 @@ export default function Modal({
   note,
   actions,
   tone,
-  width = 520,
+  width,
   trigger,
   returnFocusRef,
+  variant = 'standard',
+  eyebrow,
 }: ModalProps) {
+  const sheet = variant === 'sheet'
   const hasBody = children != null || consequences.length > 0
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
@@ -79,7 +93,7 @@ export default function Modal({
             aria-modal="true"
             {...(hasBody ? {} : { 'aria-describedby': undefined })}
             data-tone={tone ?? 'neutral'}
-            className={modalPanel({ width })}
+            className={modalPanel({ width: width ?? (sheet ? 720 : 520) })}
             {...(trigger || !returnFocusRef
               ? {}
               : {
@@ -92,30 +106,50 @@ export default function Modal({
                   },
                 })}
           >
-            <ModalSections
-              title={
-                <Dialog.Title className={cn('m-0', modalTitle({ tone: tone ?? 'neutral' }))}>
-                  {title}
-                </Dialog.Title>
-              }
-              close={
-                <Dialog.Close aria-label="Close" className={closeButton}>
-                  <CloseIcon />
-                </Dialog.Close>
-              }
-              body={
-                hasBody ? (
+            {sheet ? (
+              <>
+                <div className={sheetHead}>
+                  {eyebrow ? (
+                    <span className="io-eyebrow text-[10.5px] tracking-[0.13em]">{eyebrow}</span>
+                  ) : null}
+                  <Dialog.Title className={sheetTitle}>{title}</Dialog.Title>
+                </div>
+                {hasBody ? (
                   <Dialog.Description asChild>
-                    <div className={modalBody}>
+                    <div className={sheetBody}>
                       {children}
                       <Consequences items={consequences} />
                     </div>
                   </Dialog.Description>
-                ) : null
-              }
-              note={note}
-              actions={actions}
-            />
+                ) : null}
+                <div className={sheetFoot}>{actions}</div>
+              </>
+            ) : (
+              <ModalSections
+                title={
+                  <Dialog.Title className={cn('m-0', modalTitle({ tone: tone ?? 'neutral' }))}>
+                    {title}
+                  </Dialog.Title>
+                }
+                close={
+                  <Dialog.Close aria-label="Close" className={closeButton}>
+                    <CloseIcon />
+                  </Dialog.Close>
+                }
+                body={
+                  hasBody ? (
+                    <Dialog.Description asChild>
+                      <div className={modalBody}>
+                        {children}
+                        <Consequences items={consequences} />
+                      </div>
+                    </Dialog.Description>
+                  ) : null
+                }
+                note={note}
+                actions={actions}
+              />
+            )}
           </Dialog.Content>
         </Dialog.Overlay>
       </Dialog.Portal>

@@ -95,6 +95,31 @@ function ModalHarness({
 const active = () => document.activeElement as HTMLElement | null
 
 describe('Modal', () => {
+  it('sheet: eyebrow over a serif title, no close button, Escape still closes (S09 boards 16, 23)', async () => {
+    const onOpenChange = vi.fn<(open: boolean) => void>()
+    render(
+      <Modal
+        open
+        onOpenChange={onOpenChange}
+        variant="sheet"
+        eyebrow="Convert lead L-0001"
+        title="Create enquiry ENQ-2026-0001"
+        actions={<button type="button">Create enquiry</button>}
+      >
+        <p>Lines to carry</p>
+      </Modal>
+    )
+    const dialog = screen.getByRole('dialog', { name: 'Create enquiry ENQ-2026-0001' })
+    expect(within(dialog).getByText('Convert lead L-0001')).toBeInTheDocument()
+    expect(
+      within(dialog).getByRole('heading', { name: 'Create enquiry ENQ-2026-0001' })
+    ).toHaveClass('io-display')
+    expect(within(dialog).queryByRole('button', { name: 'Close' })).toBeNull()
+    expect(dialog).toHaveClass('w-[720px]')
+    await userEvent.keyboard('{Escape}')
+    expect(onOpenChange).toHaveBeenLastCalledWith(false)
+  })
+
   it('is a dialog named by its title and described by its body; the rest of the page is hidden', async () => {
     render(<ModalHarness />)
     await userEvent.click(screen.getByRole('button', { name: 'Open' }))

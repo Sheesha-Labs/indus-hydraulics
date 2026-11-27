@@ -8,7 +8,7 @@ import { recordId, routeParam } from '../../../../../lib/route-params'
 
 /**
  * Board 15 · Review extracted lines (S08-T04), with board 17's exceptions inside it. The original beside the lines;
- * every decision is the person's; "Continue to match" creates the enquiry from the confirmed lines.
+ * every decision is the person’s; "Continue to match" opens board 16 (S09-T04), which places the lines.
  */
 export default async function EnquiriesIntakeBatchIdPage({
   params,

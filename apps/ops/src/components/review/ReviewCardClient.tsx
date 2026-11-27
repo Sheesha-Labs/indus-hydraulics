@@ -95,6 +95,24 @@ export default function ReviewCardClient({
       {...(card.confidence ? { confidence: card.confidence } : {})}
       {...(card.onApproveText ? { onApproveText: { text: card.onApproveText } } : {})}
       {...(card.askedBecause.length ? { askedBecause: card.askedBecause } : {})}
+      {...(card.email?.reasonChips
+        ? {
+            reasonChips: {
+              label: card.email.reasonChips.label,
+              options: card.email.reasonChips.options,
+              ...(card.email.reasonChips.value ? { value: card.email.reasonChips.value } : {}),
+            },
+          }
+        : {})}
+      {...(card.email?.toggle
+        ? {
+            toggle: {
+              name: card.email.toggle.name,
+              label: card.email.toggle.label,
+              defaultOn: card.email.toggle.defaultOn,
+            },
+          }
+        : {})}
       {...(card.options && card.options.length > 1
         ? {
             options: {
@@ -122,6 +140,8 @@ export default function ReviewCardClient({
             actionId: id,
             version: v,
             ...(i.optionValue ? { optionValue: i.optionValue } : {}),
+            ...(i.chip ? { chip: i.chip } : {}),
+            ...(card.email?.toggle && i.toggle !== undefined ? { toggle: i.toggle } : {}),
           })
           // Refused (changed, stale, …): reload on the version this person had open; the page shows why.
           if (!r.success && conflictHref) router.replace(conflictHref as Route)

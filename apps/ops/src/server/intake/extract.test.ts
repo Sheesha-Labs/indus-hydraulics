@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { StructuredResult } from '@indus/ops-ai'
-import type { ExtractedLine, ExtractOutput } from '../assistant/prompts/extract-lines.v1'
-import { toApi, unitReference } from '../assistant/prompts/extract-lines.v1'
+import type { ExtractedLine, ExtractOutput } from '../assistant/prompts/extract-lines.v2'
+import { toApi, unitReference } from '../assistant/prompts/extract-lines.v2'
 import type { ActionAi } from '../assistant/types'
 import { buildCandidates, numbersIn, unsureShare } from './candidates'
 import {
@@ -31,6 +31,7 @@ const NO_LEVEL: ExtractOutput['documentLevel'] = {
   currency: null,
   quoteValidity: null,
   partialAllowed: null,
+  issuerName: null,
 }
 
 function line(over: Partial<ExtractedLine> & { page?: number }): ExtractedLine {
@@ -170,7 +171,7 @@ describe('runExtraction', () => {
     expect(r.ok && r.lines).toHaveLength(4)
     expect(r.costUsd).toBe('0.040000')
     expect(calls[0]!.system.map((p) => p.id)).toEqual(['extract-rules', 'extract-units'])
-    expect(calls[0]!.promptVersion).toBe('extract_lines@1')
+    expect(calls[0]!.promptVersion).toBe('extract_lines@2')
   })
 
   it('a refusal fails the read', async () => {

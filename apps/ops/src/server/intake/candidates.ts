@@ -23,7 +23,7 @@ import {
   type UomMethod,
   type UomTable,
 } from '@indus/ops-core'
-import type { ExtractedLine } from '../assistant/prompts/extract-lines.v1'
+import type { ExtractedLine } from '../assistant/prompts/extract-lines.v2'
 import type { PartMatch } from '../parts/match'
 
 /**

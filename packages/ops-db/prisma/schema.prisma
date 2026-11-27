@@ -579,6 +579,17 @@ enum LostReason {
   @@schema("ops")
 }
 
+/// S09-T06 (board 168): why a whole enquiry was regretted.
+enum RegretReason {
+  no_source_found
+  deadline_too_short
+  not_our_range
+  client_unresponsive
+  other
+
+  @@schema("ops")
+}
+
 enum ClosedReason {
   merged
   duplicate
@@ -617,6 +628,8 @@ enum LineRegretReason {
   obsolete
   client_dropped
   other
+  deadline_too_short
+  client_unresponsive
 
   @@schema("ops")
 }
@@ -2047,6 +2060,7 @@ model Trade {
   lineCards   SupplierLineCard[]
   parts       Part[]
   lessons     Lesson[]
+  leadLines   LeadLine[]
 
   @@map("trade")
   @@schema("ops")
@@ -2470,6 +2484,7 @@ model User {
   savedSearches       SavedSearch[]
   tipStates           TipState[]
   ownedEnquiries      Enquiry[]                @relation("EnquiryOwner")
+  ownedLeads          Lead[]                   @relation("LeadOwner")
   ownedMailboxes      Mailbox[]                @relation("MailboxOwner")
   decidedActions      AssistantAction[]        @relation("ActionDecidedBy")
   approvedQuotations  Quotation[]              @relation("QuotationApprovedBy")
@@ -2854,7 +2869,7 @@ model MailMessage {
   links             MailLink[]
   quoteSources      SupplierQuoteSource[]
   supplierQuestions SupplierQuestion[]
-  intakeBatches        IntakeBatch[]
+  intakeBatches     IntakeBatch[]
 
   @@unique([mailboxId, gmailMessageId])
   @@index([threadId, sentAt])
@@ -3107,8 +3122,8 @@ model Company {
   approvedMakes      ApprovedMake[]
   researchCandidates ResearchCandidate[]
   claimParties       ClaimParty[]
-  intakeBatches  IntakeBatch[]
-  columnMappings ClientColumnMapping[]
+  intakeBatches      IntakeBatch[]
+  columnMappings     ClientColumnMapping[]
 
   @@index([name])
   @@index([primaryDomain])
@@ -3209,6 +3224,7 @@ model Contact {
   updatedAt        DateTime          @updatedAt @db.Timestamptz(3)
 
   enquiries     Enquiry[]
+  leads         Lead[]                 @relation("LeadContact")
   rfqRecipients SupplierRfqRecipient[]
   quotations    Quotation[]
   orders        Order[]
@@ -3412,6 +3428,8 @@ model PreferenceEvidence {
 
 model Lead {
   id                 String     @id @default(uuid(7)) @db.Uuid
+  /// L-0184 (S09-T05). Allocated by ops.allocate_number('lead') in the creating transaction.
+  ref                String     @unique
   name               String
   companyName        String?
   companyId          String?    @db.Uuid
@@ -3427,13 +3445,52 @@ model Lead {
   nextActionAt       DateTime?  @db.Timestamptz(3)
   convertedEnquiryId String?    @unique @db.Uuid
   convertedEnquiry   Enquiry?   @relation(fields: [convertedEnquiryId], references: [id])
+  /// KB or AB (board 03 owner avatar).
+  ownerId            String?    @db.Uuid
+  owner              User?      @relation("LeadOwner", fields: [ownerId], references: [id])
+  /// Board 22 title: the requirement in a few words.
+  title              String?
+  contactId          String?    @db.Uuid
+  contact            Contact?   @relation("LeadContact", fields: [contactId], references: [id])
+  clientRef          String?
+  neededBy           DateTime?  @db.Date
+  notes              String?
+  version            Int        @default(0)
   createdAt          DateTime   @default(now()) @db.Timestamptz(3)
   updatedAt          DateTime   @updatedAt @db.Timestamptz(3)
 
   callbacks CallbackRequest[]
+  lines     LeadLine[]
 
   @@index([stage])
   @@map("lead")
+  @@schema("ops")
+}
+
+/// A lead's material specs (board 22), read from its documents or typed. Copied to enquiry_line on convert (23).
+model LeadLine {
+  id               String    @id @default(uuid(7)) @db.Uuid
+  leadId           String    @db.Uuid
+  lead             Lead      @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  no               Int
+  description      String
+  partNo           String?
+  partNoNorm       String?
+  qty              Decimal?  @db.Decimal(18, 4)
+  uom              String?
+  specNotes        String?
+  tradeId          String?   @db.Uuid
+  trade            Trade?    @relation(fields: [tradeId], references: [id])
+  sourceDocumentId String?   @db.Uuid
+  sourcePage       Int?
+  spanIds          String[]  @default([]) @db.Uuid
+  confirmedById    String?   @db.Uuid
+  confirmedAt      DateTime? @db.Timestamptz(3)
+  version          Int       @default(0)
+  createdAt        DateTime  @default(now()) @db.Timestamptz(3)
+
+  @@unique([leadId, no])
+  @@map("lead_line")
   @@schema("ops")
 }
 
@@ -3567,6 +3624,8 @@ model Enquiry {
   requiresDeviationList Boolean                  @default(false)
   isTender              Boolean                  @default(false)
   responseClockPausedAt DateTime?                @db.Timestamptz(3)
+  /// Board 23 "Pre-allocate from line cards": S12 drafts the RFQ recipients from line cards.
+  preallocateRequested  Boolean                  @default(false)
   // Close-out (29)
   lostReason            LostReason?
   lostWinningPrice      Decimal?                 @db.Decimal(18, 4)
@@ -3578,6 +3637,12 @@ model Enquiry {
   mergedIntoId          String?                  @db.Uuid
   mergedInto            Enquiry?                 @relation("EnquiryMerge", fields: [mergedIntoId], references: [id])
   mergedFrom            Enquiry[]                @relation("EnquiryMerge")
+  /// S09-T06: why the whole enquiry was regretted (board 168).
+  regretReason          RegretReason?
+  /// S09-T06 (171b state 5): opened from a reply to a regretted enquiry.
+  relatedEnquiryId      String?                  @db.Uuid
+  relatedEnquiry        Enquiry?                 @relation("EnquiryRelated", fields: [relatedEnquiryId], references: [id])
+  relatedFrom           Enquiry[]                @relation("EnquiryRelated")
   splitFromId           String?                  @db.Uuid
   splitFrom             Enquiry?                 @relation("EnquirySplit", fields: [splitFromId], references: [id])
   splitInto             Enquiry[]                @relation("EnquirySplit")
@@ -3737,6 +3802,13 @@ model ClientQuestion {
   answerMessageId    String?              @db.Uuid
   answerText         String?
   answeredAt         DateTime?            @db.Timestamptz(3)
+  /// S09-T07 (board 171): the clock, planned when the questions are sent.
+  reminderDueAt      DateTime?            @db.Timestamptz(3)
+  callTaskAt         DateTime?            @db.Timestamptz(3)
+  fallbackAt         DateTime?            @db.Timestamptz(3)
+  /// assume · leave_out · wait (CHECK in SQL).
+  fallbackChoice     String?
+  reminderActionId   String?              @db.Uuid
   /// Questions relayed from suppliers land here, names removed (108).
   relayedFrom        SupplierQuestion[]
   createdAt          DateTime             @default(now()) @db.Timestamptz(3)
@@ -3986,13 +4058,13 @@ model Part {
   updatedAt              DateTime                 @updatedAt @db.Timestamptz(3)
   searchTsv              Unsupported("tsvector")?
 
-  aliases       PartAlias[]
-  equivalencesA PartEquivalence[]    @relation("EquivA")
-  equivalencesB PartEquivalence[]    @relation("EquivB")
-  lines         EnquiryLine[]
-  quoteLines    SupplierQuoteLine[]
-  lessons       Lesson[]
-  suggestion    CatalogueSuggestion?
+  aliases          PartAlias[]
+  equivalencesA    PartEquivalence[]     @relation("EquivA")
+  equivalencesB    PartEquivalence[]     @relation("EquivB")
+  lines            EnquiryLine[]
+  quoteLines       SupplierQuoteLine[]
+  lessons          Lesson[]
+  suggestion       CatalogueSuggestion?
   intakeCandidates IntakeLineCandidate[]
 
   @@unique([partNoNorm, brand])
@@ -6455,5 +6527,46 @@ model IntakeLineCandidate {
   @@index([batchId, ord])
   @@index([fileId])
   @@map("intake_line_candidate")
+  @@schema("ops")
+}
+
+/// Board 04 (S09-T02): one row per enquiry with its C7 display group, line coverage, latest quotation and client PO.
+view EnquiryPipelineRow {
+  id                    String    @unique @db.Uuid
+  ref                   String
+  title                 String
+  clientId              String?   @db.Uuid
+  clientName            String?
+  ownerId               String?   @db.Uuid
+  ownerInitials         String?
+  deadline              DateTime? @db.Timestamptz(3)
+  receivedAt            DateTime  @db.Timestamptz(3)
+  stage                 String
+  stageGroup            String
+  value                 Decimal?  @db.Decimal(18, 4)
+  valueCurrency         String?
+  linesTotal            Int
+  linesSent             Int
+  linesQuoted           Int
+  quotationNumber       String?
+  quotationStatus       String?
+  quotationClientStatus String?
+  clientPoRef           String?
+  version               Int
+  chosenPath            String?
+  stageChangedAt        DateTime  @db.Timestamptz(3)
+
+  @@map("enquiry_pipeline_v")
+  @@schema("ops")
+}
+
+/// Board 04 filter chips: enquiries by display group and owner.
+view EnquiryFilterCount {
+  stageGroup String
+  ownerId    String? @db.Uuid
+  n          Int
+
+  @@unique([stageGroup, ownerId])
+  @@map("enquiry_filter_counts_v")
   @@schema("ops")
 }

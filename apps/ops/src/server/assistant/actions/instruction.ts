@@ -10,6 +10,7 @@ import { instructionUser, PROMPT_VERSION, SYSTEM_PARTS } from '../prompts/instru
 import { actionDefinition, registerAction, registeredActionKeys } from '../registry'
 import { actionRequestEvent } from '../request'
 import type { ActionDefinition, EffectEvent, ProposalDraft } from '../types'
+import { changeLineStatus } from '../../enquiry/transition'
 import { writeTracked } from '../write-tracked'
 
 /**
@@ -261,9 +262,13 @@ const definition: ActionDefinition<InstructionInput, InstructionOut> = {
             note,
           },
           (t) =>
-            t.enquiryLine.update({
-              where: { id: line.id },
-              data: { status, heldReason },
+            changeLineStatus(t, {
+              lineId: line.id,
+              to: status,
+              actor: base.actor,
+              data: { heldReason },
+              ctx: { heldReason: heldReason || 'Held by instruction' },
+              untracked: true,
             })
         )
         return { note: hold ? `Held line ${p.lineNo}` : `Released line ${p.lineNo}` }

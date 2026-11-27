@@ -81,6 +81,11 @@ export interface CreateEnquiryInput {
   }>
   windowDays: number
   today: string
+  /**
+   * S09-T06 (171b state 5): the client replied in the thread of an enquiry we regretted, naming new lines. The new
+   * enquiry is linked to it (relatedEnquiryId); the regretted one stays Regretted.
+   */
+  related: { enquiryId: string; ref: string } | null
 }
 
 export interface Variant {
@@ -148,6 +153,7 @@ export async function gatherCreateEnquiry(
     select: {
       id: true,
       threadId: true,
+      thread: { select: { enquiry: { select: { id: true, ref: true, stage: true } } } },
       fromAddress: true,
       fromName: true,
       toAddresses: true,
@@ -198,6 +204,8 @@ export async function gatherCreateEnquiry(
   const open = await opsDb.enquiry.findMany({
     where: {
       closedAt: null,
+      // A regretted enquiry is not a duplicate target: a reply to it is a new enquiry linked to it (171b state 5).
+      stage: { not: 'regretted' },
       receivedAt: { gte: since },
       OR: [
         ...(companyId ? [{ clientId: companyId }] : []),
@@ -269,6 +277,10 @@ export async function gatherCreateEnquiry(
     today: new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dubai', dateStyle: 'full' }).format(
       new Date()
     ),
+    related:
+      m.thread.enquiry?.stage === 'regretted'
+        ? { enquiryId: m.thread.enquiry.id, ref: m.thread.enquiry.ref }
+        : null,
   }
 }
 
@@ -619,9 +631,14 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
               },
             ]
           : null
+    if (input.related)
+      reasons.unshift({
+        text: `The client replied in the thread of ${input.related.ref}, which was regretted, and names new lines.`,
+      })
     return {
-      headline:
-        o.variant?.kind === 'duplicate'
+      headline: input.related
+        ? `Open ${input.nextRef ?? 'a new enquiry'}, linked to the regretted ${input.related.ref}. ${head}`
+        : o.variant?.kind === 'duplicate'
           ? `Duplicate of ${o.variant.ref}? ${head}`
           : o.variant?.kind === 'revision'
             ? `Looks like a revision of ${o.variant.ref}. ${head}`
@@ -641,8 +658,9 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
       unsureAbout: o.unsure
         ? `${o.unsure} line${o.unsure === 1 ? '' : 's'} become questions after approval`
         : null,
-      onApproveText:
-        'Creates the enquiry, links this thread, drafts the acknowledgement and starts grouping lines for supplier RFQs.',
+      onApproveText: input.related
+        ? `${input.related.ref} stays Regretted; the new enquiry gets its own quick read and acknowledgement.`
+        : 'Creates the enquiry, links this thread, drafts the acknowledgement and starts grouping lines for supplier RFQs.',
       options,
     }
   },
@@ -696,6 +714,13 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
         emit: [labelEvent(messageId, ctx.actionId, variant.enquiryId)],
       }
     }
+    // 171b state 5: read before the new enquiry takes the thread over.
+    const regretted = await tx.mailMessage.findUnique({
+      where: { id: messageId },
+      select: { thread: { select: { enquiry: { select: { id: true, ref: true, stage: true } } } } },
+    })
+    const related =
+      regretted?.thread.enquiry?.stage === 'regretted' ? regretted.thread.enquiry : null
     const made = await createEnquiryFromBatch(tx, {
       batchId,
       actor: { kind: 'assistant', actionId: ctx.actionId },
@@ -713,6 +738,24 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
       },
       includePendingConfident: true,
     })
+    if (related)
+      await writeTracked(
+        tx,
+        {
+          actor: { kind: 'assistant' },
+          actionId: ctx.actionId,
+          enquiryId: made.enquiryId,
+          subjectType: 'enquiry',
+          subjectId: made.enquiryId,
+          changes: [{ field: 'relatedEnquiry', before: null, after: related.ref, kind: 'link' }],
+          note: `Linked to the regretted ${related.ref}`,
+        },
+        (t) =>
+          t.enquiry.update({
+            where: { id: made.enquiryId },
+            data: { relatedEnquiryId: related.id },
+          })
+      )
     const skip = await ackSkip(tx, o.client.companyId)
     if (skip)
       // Board 93 "Skipped · learned per client": no acknowledgement for this client, logged with the reason.
@@ -736,6 +779,7 @@ const definition: ActionDefinition<CreateEnquiryInput, CreateEnquiryOut> = {
         id: `enquiry-created:${made.enquiryId}`,
         data: { enquiryId: made.enquiryId, ref: made.ref, actionId: ctx.actionId },
       },
+      ...requestEvents('qualify_enquiry', made.enquiryId, [made.ref]),
       ...(skip ? [] : requestEvents('ack_email', made.enquiryId, [made.ref])),
       ...requestEvents('resolve_extracted_line', made.enquiryId, made.unsureIds),
     ]

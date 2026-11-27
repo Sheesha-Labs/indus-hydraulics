@@ -10,7 +10,7 @@ import {
   SYSTEM_PARTS,
   type ExtractedLine,
   type ExtractOutput,
-} from '../assistant/prompts/extract-lines.v1'
+} from '../assistant/prompts/extract-lines.v2'
 import { readableText } from './parse/email'
 import { chunkPdf, needsChunking } from './parse/pdf'
 import type { ParsedDocument } from './parse/types'
@@ -179,6 +179,7 @@ export function mergeChunks(
     currency: null,
     quoteValidity: null,
     partialAllowed: null,
+    issuerName: null,
   }
   let prevPages = new Set<number>()
   for (const r of results) {

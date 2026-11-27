@@ -192,6 +192,29 @@ const ackRevertBy = z.strictObject({
   defaultNoDeadlineDays: z.number().min(1).max(30),
 })
 
+/** S09-T04/T06: public webmail domains: a sender there is never matched to a company by domain. */
+const freeMailDomains = z.strictObject({
+  domains: z
+    .array(
+      z
+        .string()
+        .trim()
+        .toLowerCase()
+        .regex(/^[a-z0-9-]+(\.[a-z0-9-]+)+$/, 'Use a domain such as webmail.example.')
+    )
+    .max(300),
+})
+
+/** S09-T06: look up a sender's domain age (RDAP; only the domain leaves). */
+const rdapEnabled = z.strictObject({ enabled: z.boolean() })
+
+/** S09-T07 (board 171): when a client's open questions are reminded, called about and given a fallback. */
+const questionsClock = z.strictObject({
+  reminderWorkingDays: z.number().int().min(1).max(10),
+  callTaskHour: z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/, 'Use HH:MM.'),
+  supplierLeadWorkingDays: z.number().int().min(1).max(20),
+})
+
 const researchCap = z.strictObject({
   perEnquiryUsd: positiveAmount.max(1_000),
   allowMoreUsd: z.number().finite().min(0).max(1_000),
@@ -420,6 +443,27 @@ export const SETTINGS = {
     ownerOnly: true,
     signoff: true,
     label: 'Acknowledgement: revert-by rule',
+    section: 'enquiries',
+  }),
+  'qualify.free_mail_domains': def({
+    schema: freeMailDomains,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Public webmail domains',
+    section: 'enquiries',
+  }),
+  'qualify.rdap_enabled': def({
+    schema: rdapEnabled,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Check a sender domain’s age',
+    section: 'enquiries',
+  }),
+  'questions.clock': def({
+    schema: questionsClock,
+    ownerOnly: true,
+    signoff: true,
+    label: 'Client questions: reminder, call and fallback',
     section: 'enquiries',
   }),
   'research.cap': def({

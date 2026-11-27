@@ -12,10 +12,26 @@ import { TX_OPTIONS } from '../../lib/tx-options'
  */
 export async function createIntakeBatch(
   userId: string,
-  source: 'upload' | 'paste' = 'upload'
+  source: 'upload' | 'paste' = 'upload',
+  leadRef: string | null = null
 ): Promise<{ batchId: string }> {
+  // From a lead: the intake belongs to it, so board 16 offers "Add to open lead" with its client.
+  const lead = leadRef
+    ? await opsDb.lead.findUnique({
+        where: { ref: leadRef },
+        select: { id: true, companyId: true, contactId: true, stage: true },
+      })
+    : null
+  if (leadRef && (!lead || lead.stage === 'converted' || lead.stage === 'dropped'))
+    throw new SafeError('That lead is not open any more.')
   const b = await opsDb.intakeBatch.create({
-    data: { source, createdById: userId },
+    data: {
+      source,
+      createdById: userId,
+      ...(lead
+        ? { leadId: lead.id, clientCompanyId: lead.companyId, contactId: lead.contactId }
+        : {}),
+    },
     select: { id: true },
   })
   return { batchId: b.id }

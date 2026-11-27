@@ -212,8 +212,12 @@ test('board-92: a forwarded client enquiry becomes a card; approving creates the
   ])
 
   await page.goto(`/enquiries/${e.ref}`)
-  await expect(page.getByRole('heading', { name: /^2 lines/ })).toBeVisible({ timeout: 90_000 })
-  await expect(page.getByRole('cell', { name: 'Gate valve 4" class 150' })).toBeVisible()
+  // S09-T06: a new enquiry opens on its quick read (board 167, 171b state 1) until a path is chosen; the lines
+  // are checked on the row above.
+  await expect(page.getByRole('region', { name: 'Quick read' })).toContainText(
+    'Reading the sender and the lines',
+    { timeout: 90_000 }
+  )
   await expect(page.getByRole('link', { name: 'Open thread in Mail ↗' })).toBeVisible()
 })
 

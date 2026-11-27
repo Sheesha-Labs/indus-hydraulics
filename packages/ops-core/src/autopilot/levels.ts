@@ -83,6 +83,8 @@ export const MAX_LEVELS = {
   instruction: 'draft_and_ask',
   // S08: an Unsure line is a question for a person, always.
   resolve_extracted_line: 'draft_and_ask',
+  // S09: the fallback on open client questions is a choice for a person, always.
+  client_question_fallback: 'draft_and_ask',
 } as const satisfies Partial<Record<ActionKey, OrderedLevel>>
 
 export function fixedRule(key: string): AutopilotLevel | null {

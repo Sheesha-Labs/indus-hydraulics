@@ -67,6 +67,14 @@ export interface CardEmail {
     title: string
     steps: Array<{ label: string; value: string; note?: string | undefined }>
   } | null
+  /** S09-T06 (board 168): a required choice (the regret reason), the suggestion preselected. */
+  reasonChips?: {
+    label: string
+    options: Array<{ value: string; label: string }>
+    value?: string | undefined
+  } | null
+  /** S09-T06: a switch on the body ("glad to quote on"); off sends `textOff`. */
+  toggle?: { name: string; label: string; defaultOn: boolean } | null
 }
 export interface ProposalCardData {
   id: string
@@ -184,6 +192,12 @@ export function toProposalCardData(
       body: edit.body ?? (e.text ?? textOfHtml(e.html ?? '')),
       html: edit.body === undefined ? (e.html ?? null) : null,
       whyDate: e.whyDate ?? null,
+      reasonChips: e.reasonChips ?? null,
+      // The switch is shown only while the body is the drafted one (an edit replaces both versions).
+      toggle:
+        e.toggle && edit.body === undefined
+          ? { name: e.toggle.name, label: e.toggle.label, defaultOn: e.toggle.defaultOn }
+          : null,
     }
   }
 

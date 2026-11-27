@@ -19,7 +19,7 @@ import { actionDefinition } from './registry'
 import { requestActionQuietly, type ActionRequestedData } from './request'
 import { effectRun, resolveRun } from './runner'
 import { isStale } from './staleness'
-import type { ActionRequest, Json, Verified } from './types'
+import type { ActionRequest, EffectEvent, Json, Verified } from './types'
 import { releaseOnUndo } from './undo-hooks'
 import { setActor } from './write-tracked'
 
@@ -224,6 +224,10 @@ export interface ApproveInput {
   version: number
   optionValue?: string | undefined
   edits?: EmailEdit | undefined
+  /** S09-T06: a card with reason chips records the chosen chip as its option (required there). */
+  chip?: string | undefined
+  /** S09-T06: a card with a body switch: false sends the switch's other text, as an edit. */
+  toggle?: boolean | undefined
 }
 
 export interface ApproveResult {
@@ -233,10 +237,11 @@ export interface ApproveResult {
 }
 
 export async function approve(
-  input: ApproveInput,
+  given: ApproveInput,
   user: Decider,
   now = new Date()
 ): Promise<ApproveResult> {
+  let input = given
   const a = await load(input.actionId)
   await guardOpen(a, input.version, user)
   await guardFresh(a)
@@ -247,6 +252,17 @@ export async function approve(
     throw new DecisionError('invalid', 'This proposal could not be read; redraft it.')
   let edits: EmailEdit | null = null
   let diff: Array<{ field: string; before: unknown; after: unknown }> = []
+  const chips = card.email?.reasonChips
+  if (chips) {
+    const chosen = input.chip ?? chips.value
+    if (!chosen || !chips.options.some((o) => o.value === chosen))
+      throw new DecisionError('invalid', `Choose a ${chips.label.toLowerCase()} first.`)
+    input = { ...input, optionValue: chosen }
+  }
+  if (card.email?.toggle && input.toggle === false && !input.edits) {
+    const preview = (a.preview ?? {}) as { toggle?: { textOff?: string } }
+    if (preview.toggle?.textOff) input = { ...input, edits: { body: preview.toggle.textOff } }
+  }
   if (input.edits) {
     if (!card.email) throw new DecisionError('invalid', 'This card has nothing to edit.')
     const parsed = emailEdit.safeParse(input.edits)
@@ -262,6 +278,21 @@ export async function approve(
   const effective: EmailEdit | null = diff.length
     ? { ...((a.effectivePayload as EmailEdit | null) ?? {}), ...edits }
     : null
+
+  // S09-T06: the exact email this person approves, checked once more (client-bound identity, prices).
+  if (sends && def?.approvalCheck && card.email) {
+    const req = requestOf(a)
+    const reason = req
+      ? await def.approvalCheck(
+          {
+            subject: effective?.subject ?? card.email.subject,
+            body: effective?.body ?? card.email.body,
+          },
+          req
+        )
+      : null
+    if (reason) throw new DecisionError('blocked', reason)
+  }
 
   await opsDb.$transaction(async (tx) => {
     await setActor(tx, { kind: 'user', id: user.id })
@@ -714,15 +745,38 @@ export async function settleActionForOutbound(
     }
     return null
   }
-  return opsDb.$transaction(async (tx) => {
+  // S09-T06: events an action's onSent asks for, sent once its transaction has committed.
+  const after: EffectEvent[] = []
+  const state = await opsDb.$transaction(async (tx) => {
     await setActor(tx, { kind: 'system' })
     const a = await tx.assistantAction.findUnique({
       where: { id: o.actionId! },
-      select: { state: true, correctionOfId: true },
+      select: {
+        state: true,
+        correctionOfId: true,
+        actionKey: true,
+        output: true,
+        inputs: true,
+        decidedById: true,
+        chosenOption: true,
+      },
     })
     if (!a || a.state !== 'queued') return a?.state ?? null
     if (o.status === 'sent') {
       await tx.assistantAction.update({ where: { id: o.actionId! }, data: { state: 'running' } })
+      // S09-T06: what the action records once its email has left (the regret's Regretted).
+      const sentDef = actionDefinition(a.actionKey)
+      const request = (a.inputs as { request?: ActionRequest } | null)?.request
+      if (sentDef?.onSent && request) {
+        const ev = await sentDef.onSent(tx, {
+          id: o.actionId!,
+          output: a.output as never,
+          request,
+          decidedById: a.decidedById,
+          chosenOption: a.chosenOption,
+        })
+        if (ev) after.push(...ev)
+      }
       await tx.assistantAction.update({
         where: { id: o.actionId! },
         data: { state: 'done', doneAt: now },
@@ -754,6 +808,9 @@ export async function settleActionForOutbound(
     }
     return a.state
   })
+  for (const e of after)
+    await emitEvent({ name: e.name, ...(e.id ? { id: e.id } : {}), data: e.data })
+  return state
 }
 
 // ── Saved edits and the version conflict (S06-T03, board 110 "Changed by Ayush while you were reviewing") ──

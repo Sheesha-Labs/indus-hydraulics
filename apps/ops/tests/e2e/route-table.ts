@@ -23,7 +23,8 @@ export const CONSOLE: readonly (readonly [string, string | null, Template])[] = 
   ['/enquiries/new', 'Enquiries', 'T1'],
   ['/enquiries/intake', 'Enquiries', 'T1'],
   ['/enquiries/leads', 'Enquiries', 'T1'],
-  [`/enquiries/leads/${ID}`, 'Enquiries', 'T2'],
+  // S09-T05: a lead page is real now (routes by its L- number; a fixture id is not found): tests/e2e/leads.spec.ts
+  // opens real leads under T2.
   [ENQ, 'Enquiries', 'T2'],
   ...[
     'lines',

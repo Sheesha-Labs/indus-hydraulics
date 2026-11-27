@@ -1,5 +1,6 @@
 import 'server-only'
 import type { $Enums, Prisma } from '@indus/ops-db'
+import { changeLineStatus } from '../enquiry/transition'
 
 /**
  * How a recorded change is put back (S06-T07): undo inside the window and "Revert to before Assistant
@@ -110,7 +111,15 @@ registerFieldWriter('mail_message', 'link', async (tx, messageId, { to, from }) 
 
 registerFieldWriter('enquiry_line', 'status', async (tx, id, { to }) => {
   const s = str(to)
-  if (s) await tx.enquiryLine.update({ where: { id }, data: { status: s as $Enums.LineStatus } })
+  // Through the line machine (S09-T01); the revert records its own event, so apply only.
+  if (s)
+    await changeLineStatus(tx, {
+      lineId: id,
+      to: s as $Enums.LineStatus,
+      actor: { kind: 'system' },
+      ctx: { heldReason: 'restored', notQuotedReason: 'restored', regretReason: 'other' },
+      untracked: true,
+    })
 })
 
 registerFieldWriter('enquiry_line', 'heldReason', async (tx, id, { to }) => {

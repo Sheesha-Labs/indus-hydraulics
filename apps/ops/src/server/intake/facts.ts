@@ -8,8 +8,10 @@ import { dubaiEndOfDay } from '@indus/ops-core'
  */
 export interface BatchFacts {
   clientRef: string | null
-  deadline: { date: string; ambiguous: boolean; quote: string } | null
+  deadline: { date: string; ambiguous: boolean; quote: string; page?: number | null } | null
   terms: Record<string, { text: string; quote: string }> | null
+  /** v2 (S09-T04): the enquiring company as printed on its letterhead, stamp or signature. */
+  issuer?: { name: string; quote: string; page: number | null } | null
 }
 
 export async function applyBatchFacts(
@@ -25,13 +27,22 @@ export async function applyBatchFacts(
   if (!b.clientRef && facts.clientRef) data.clientRef = facts.clientRef
   if (!b.deadline && facts.deadline && !facts.deadline.ambiguous)
     data.deadline = dubaiEndOfDay(facts.deadline.date)
-  if (facts.terms) {
-    const merged = { ...facts.terms, ...((b.terms as Record<string, unknown> | null) ?? {}) }
-    if (facts.deadline)
+  // Terms, the closing date's evidence and the issuer ride in `terms`; an earlier value is kept.
+  if (facts.terms || facts.deadline || facts.issuer) {
+    const prior = (b.terms as Record<string, unknown> | null) ?? {}
+    const merged: Record<string, unknown> = { ...(facts.terms ?? {}), ...prior }
+    if (facts.deadline && !prior.closingDate)
       merged.closingDate = {
         text: facts.deadline.date,
         quote: facts.deadline.quote,
         ambiguous: facts.deadline.ambiguous,
+        page: facts.deadline.page ?? null,
+      }
+    if (facts.issuer && !prior.issuer)
+      merged.issuer = {
+        text: facts.issuer.name,
+        quote: facts.issuer.quote,
+        page: facts.issuer.page,
       }
     data.terms = merged as Prisma.InputJsonValue
   }

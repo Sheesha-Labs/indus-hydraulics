@@ -11,6 +11,9 @@ const upper = z.string().trim().toUpperCase()
 /** ENQ-2026-0001 (C6). Case-insensitive in the URL; the canonical form is upper case. */
 export const enquiryRef = upper.pipe(z.string().regex(/^ENQ-\d{4}-\d{4,}$/))
 
+/** L-0184: a lead (S09-T05, 10-architecture §4.5). Case-insensitive in the URL. */
+export const leadRef = upper.pipe(z.string().regex(/^L-\d{4,}$/))
+
 /**
  * SO-0001, and a split order's part SO-0001-B (C11). (decision) Any part letter, as parseReference
  * recognises it, not only B: a link the command bar resolves must open.

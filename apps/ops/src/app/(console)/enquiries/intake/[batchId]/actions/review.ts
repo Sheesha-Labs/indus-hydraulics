@@ -1,13 +1,10 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { after } from 'next/server'
 import { z } from 'zod'
-import { notifyYearSeeded } from '../../../../../../server/numbering/enquiry-seed'
 import { defineAction } from '../../../../../../lib/define-action'
 import { SafeError } from '../../../../../../lib/safe-message'
 import { requestActionQuietly } from '../../../../../../server/assistant/request'
-import { confirmIntakeAsPerson } from '../../../../../../server/enquiry/from-batch'
 import {
   acceptAllHigh,
   addManualLine,
@@ -24,7 +21,7 @@ import {
 
 /**
  * Board 15 and board 17 actions (S08-T04). Owner and Helper. Every decision is the person's (activity "Decided by
- * KB/AB"); "Continue" creates the enquiry from the confirmed lines (idempotent per batch).
+ * KB/AB"); "Continue to match" goes to board 16 (S09-T04), which creates the lead or enquiry.
  */
 const roles = ['owner', 'helper'] as const
 const person = (u: { id: string; name: string }) => ({ id: u.id, name: u.name })
@@ -142,18 +139,5 @@ export const requestOriginalAction = defineAction({
     })
     if (!queued) throw new SafeError('The Assistant could not be reached. Try again in a minute.')
     return refresh({ queued: true }, f.batchId)
-  },
-})
-
-export const confirmExtractionAction = defineAction({
-  name: 'intake.confirm',
-  schema: z.object({ batchId: z.uuid() }),
-  roles: [...roles],
-  idempotent: (input) => input.batchId,
-  handler: async (input, ctx) => {
-    const out = await confirmIntakeAsPerson(ctx.user, input.batchId, {}, ctx.withTx)
-    if (out.yearSeeded) after(() => notifyYearSeeded(out.yearSeeded!))
-    revalidatePath('/enquiries')
-    return refresh({ ref: out.ref, unsure: out.unsureIds.length }, input.batchId)
   },
 })

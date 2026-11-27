@@ -43,7 +43,13 @@ const ref = { actionId: z.uuid(), version: z.number().int().min(0) }
 
 export const approveProposalAction = defineAction({
   name: 'proposal.approve',
-  schema: z.object({ ...ref, optionValue: z.string().max(200).optional() }),
+  schema: z.object({
+    ...ref,
+    optionValue: z.string().max(200).optional(),
+    /** S09-T06: the card's reason chip (board 168) and its body switch. */
+    chip: z.string().max(40).optional(),
+    toggle: z.boolean().optional(),
+  }),
   roles: ['owner', 'helper'],
   handler: async (input, ctx) => {
     const out = await approve(input, decider(ctx.user)).catch(safe)

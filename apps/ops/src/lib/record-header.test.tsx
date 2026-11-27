@@ -29,7 +29,7 @@ function renderKind(kind: RecordKind, ref: string, activeTab: string): string {
       {...(s.chip ? { chip: s.chip } : {})}
       {...(s.threadHref ? { threadHref: s.threadHref } : {})}
       logActivityHref="?log=1"
-      cta={'href' in s.cta ? s.cta : { label: s.cta.label, href: '#' }}
+      cta={s.cta && 'href' in s.cta ? s.cta : { label: s.cta?.label ?? '', href: '#' }}
     />
   )
 }

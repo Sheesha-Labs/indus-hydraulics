@@ -9,6 +9,8 @@ export interface RecordCockpitProps {
   header: ReactNode
   /** The tender header (C9), shown on `tender/*` segments when the record is a tender. */
   tenderHeader?: ReactNode
+  /** Headers for tabs whose primary differs (Questions: "Add question"), by first segment. */
+  tabHeaders?: Readonly<Record<string, ReactNode>>
   /** AssistantStrip. */
   strip: ReactNode
   /** The 330 rail; dropped on bleed tabs. */
@@ -34,6 +36,7 @@ export interface RecordCockpitProps {
 export default function RecordCockpit({
   header,
   tenderHeader,
+  tabHeaders = {},
   strip,
   rail,
   bleed = [],
@@ -44,7 +47,7 @@ export default function RecordCockpit({
   const segments = useSelectedLayoutSegments().filter((s) => !s.startsWith('('))
   const first = segments[0] ?? ''
   if (bare.includes(first)) return children
-  const shown = first === 'tender' && tenderHeader ? tenderHeader : header
+  const shown = first === 'tender' && tenderHeader ? tenderHeader : (tabHeaders[first] ?? header)
   if (bleed.includes(segments.join('/')))
     return (
       <T2Record header={shown} strip={strip} body="bleed">
