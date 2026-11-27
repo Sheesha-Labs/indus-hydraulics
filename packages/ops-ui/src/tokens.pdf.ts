@@ -66,7 +66,7 @@ export const IO_PDF_COLORS = {
   'io-est-co': '#444444',
   'io-est-sign': '#555555',
   'io-est-meta': '#666666',
-  'io-est-sub': '#777777',
+  'io-est-sub': '#767676',
   'io-est-line': '#999999',
   'io-est-foot': '#CCCCDD',
   'io-est-rule': '#E3E5EA',

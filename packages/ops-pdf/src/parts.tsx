@@ -11,6 +11,14 @@ import { IO_PDF_COLORS } from './tokens.pdf'
 export const px = (n: number) => n * 0.75
 export const C = IO_PDF_COLORS
 
+/**
+ * Font size and line height together, as CSS means them. @react-pdf resolves a unitless lineHeight against the
+ * fontSize declared in the same style (18 pt when none is) and hands children the absolute result, so a
+ * lineHeight set on a View, or without a fontSize beside it, spaces lines far apart. Every Text here gets both.
+ * `lh` is the HTML kit's computed leading (Tailwind's base is 1.5).
+ */
+export const f = (size: number, lh = 1.5) => ({ fontSize: px(size), lineHeight: lh })
+
 export interface PdfImage {
   data: Uint8Array
   format: 'png' | 'jpg'
@@ -40,6 +48,9 @@ export function Cell({
   size,
   subColor,
   pad,
+  lh,
+  subSize,
+  subGap = 0,
 }: {
   cell: DocCell
   width: number
@@ -48,21 +59,23 @@ export function Cell({
   size: number
   subColor: string
   pad: [number, number]
+  /** The cell's leading (CSS computed). */
+  lh: number
+  subSize: number
+  subGap?: number
 }) {
   return (
     <View
       style={{ width: `${width}%`, paddingVertical: px(pad[0]), paddingHorizontal: px(pad[1]) }}
     >
       {cell.bold ? (
-        <Text style={{ fontWeight: 600, fontSize: px(size), color, textAlign: align }}>
+        <Text style={{ ...f(size, lh), fontWeight: 600, color, textAlign: align }}>
           {cell.bold}
         </Text>
       ) : null}
-      <Text style={{ fontSize: px(size), color, textAlign: align }}>{cell.v}</Text>
+      <Text style={{ ...f(size, lh), color, textAlign: align }}>{cell.v}</Text>
       {cell.sub ? (
-        <Text
-          style={{ fontSize: px(size - 1.5), color: subColor, textAlign: align, marginTop: px(1) }}
-        >
+        <Text style={{ ...f(subSize), color: subColor, textAlign: align, marginTop: px(subGap) }}>
           {cell.sub}
         </Text>
       ) : null}
@@ -100,66 +113,55 @@ export function rowWidths(row: DocTableRow, widths: number[]): number[] {
 }
 
 /**
- * The running footer, fixed on every page: a rule, Indus's name and the document number, the footer label,
- * and "Page n of N". Each part is its own fixed, absolutely placed element. @react-pdf 4.5 does not draw a
- * `render` Text that has a lineHeight, set or inherited: never give the Page a lineHeight (layouts set it on
- * their content views), and never set one here.
+ * The running footer: a rule, Indus's name and the document number, the footer label, the page label
+ * ("Page 1 of 3" on the Estimate, "01 / 03" on the house layout, as on screen). Page numbers come from the
+ * shared pagination (paginate in ops-core), so the screen and the PDF number their pages identically.
  */
-export function Footer({ left, middle }: { left: string; middle?: string }) {
-  const base = {
-    position: 'absolute' as const,
-    bottom: px(18),
-    fontFamily: SANS,
-    fontSize: px(9.5),
-    color: C['io-ink-3'],
-  }
+export function Footer({
+  left,
+  middle,
+  label,
+  size,
+  bottom,
+}: {
+  left: string
+  middle?: string
+  label: string
+  /** 10 on the Estimate, 9.5 on the house layout (as on screen). */
+  size: number
+  /** Distance of the footer text from the page edge, in px. */
+  bottom: number
+}) {
+  const t = { ...f(size), color: C['io-ink-3'] }
   return (
-    <>
-      <View
-        fixed
-        style={{
-          position: 'absolute',
-          bottom: px(36),
-          left: px(48),
-          right: px(48),
-          borderTopWidth: 0.75,
-          borderTopColor: C['io-doc-rule'],
-        }}
-      />
-      <Text fixed style={{ ...base, left: px(48) }}>
-        {left}
-      </Text>
-      {middle ? (
-        <Text fixed style={{ ...base, left: 0, right: 0, textAlign: 'center' }}>
-          {middle}
-        </Text>
-      ) : null}
-      <Text
-        fixed
-        style={{ ...base, left: px(48), right: px(48), textAlign: 'right' }}
-        render={({ pageNumber, totalPages }) => `Page ${pageNumber} of ${totalPages}`}
-      />
-    </>
-  )
-}
-
-/** On pages after the first: the document number (with its revision) in small type, top right. */
-export function RunningHeader({ text }: { text: string }) {
-  return (
-    <Text
+    <View
       fixed
       style={{
         position: 'absolute',
-        top: px(20),
+        bottom: px(bottom),
         left: px(48),
         right: px(48),
-        textAlign: 'right',
+        borderTopWidth: 0.75,
+        borderTopColor: C['io-doc-rule'],
+        paddingTop: px(10),
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         fontFamily: SANS,
-        fontSize: px(9.5),
-        color: C['io-ink-3'],
       }}
-      render={({ pageNumber }) => (pageNumber > 1 ? text : '')}
-    />
+    >
+      <Text style={t}>{left}</Text>
+      {middle ? <Text style={t}>{middle}</Text> : null}
+      <Text style={t}>{label}</Text>
+    </View>
+  )
+}
+
+/** On a continuation page: the document title and number, small, top right. */
+export function RunningHeader({ text }: { text: string }) {
+  return (
+    <View style={{ marginBottom: px(20), alignItems: 'flex-end' }}>
+      <Text style={{ ...f(9.5), fontFamily: SANS, color: C['io-ink-3'] }}>{text}</Text>
+    </View>
   )
 }
 
@@ -174,7 +176,7 @@ export function Watermark() {
         left: px(120),
         fontFamily: SANS,
         fontWeight: 600,
-        fontSize: px(150),
+        ...f(150, 1),
         color: C['io-bad-tint'],
         transform: 'rotate(-30deg)',
       }}

@@ -1,4 +1,4 @@
-import { documentNumber, type DocumentData, type Letterhead } from '@indus/ops-core'
+import { documentNumber, paginate, type DocumentData, type Letterhead } from '@indus/ops-core'
 import { Document, renderToBuffer } from '@react-pdf/renderer'
 import { registerFonts } from './fonts'
 import EstimateLayout from './layouts/EstimateLayout'
@@ -30,22 +30,28 @@ export async function renderDocumentPdf(
   opts: RenderOptions = {}
 ): Promise<Uint8Array> {
   registerFonts()
-  const page =
-    data.layout === 'estimate' ? (
-      <EstimateLayout
-        data={data}
-        letterhead={letterhead}
-        assets={assets}
-        draft={opts.draft ?? false}
-      />
-    ) : (
-      <HouseLayout
-        data={data}
-        letterhead={letterhead}
-        assets={assets}
-        draft={opts.draft ?? false}
-      />
-    )
+  const draft = opts.draft ?? false
+  // Explicit pages from the shared pagination: the screen draws the same pages (S11-T03).
+  const pages =
+    data.layout === 'estimate'
+      ? paginate(data).map((p) => (
+          <EstimateLayout
+            key={p.page}
+            page={p}
+            letterhead={letterhead}
+            assets={assets}
+            draft={draft}
+          />
+        ))
+      : paginate(data).map((p) => (
+          <HouseLayout
+            key={p.page}
+            page={p}
+            letterhead={letterhead}
+            assets={assets}
+            draft={draft}
+          />
+        ))
   const buffer = await renderToBuffer(
     <Document
       title={pdfTitle(data)}
@@ -56,7 +62,7 @@ export async function renderDocumentPdf(
       producer="Indus Operations"
       language="en"
     >
-      {page}
+      {pages}
     </Document>
   )
   return new Uint8Array(buffer)

@@ -1,6 +1,11 @@
 import {
+  buildOa,
   buildQuotation,
+  createClientSafeOrderDoc,
   createClientSafeQuotation,
+  estimatePageLabel,
+  housePageLabel,
+  paginate,
   type DocumentData,
   type Letterhead,
 } from '@indus/ops-core'
@@ -41,13 +46,17 @@ const latin1 = (b: Uint8Array) => Buffer.from(b).toString('latin1')
 describe('renderDocumentPdf', () => {
   const fixtures = renderFixtures()
 
-  it('renders every kind with "Page n of N" on each page and clean metadata', async () => {
+  it('renders every kind with its page label on each page and clean metadata', async () => {
     for (const f of fixtures) {
       const bytes = await renderDocumentPdf(f.data, f.letterhead, {}, { draft: f.draft ?? false })
       const pdf = await read(bytes)
       expect(pdf.pages.length, f.name).toBeGreaterThan(0)
+      const label = (n: number) =>
+        f.data.layout === 'estimate'
+          ? estimatePageLabel(n, pdf.pages.length)
+          : housePageLabel(n, pdf.pages.length)
       pdf.pages.forEach((text, i) =>
-        expect(text, `${f.name} page ${i + 1}`).toContain(`Page ${i + 1} of ${pdf.pages.length}`)
+        expect(text, `${f.name} page ${i + 1}`).toContain(label(i + 1))
       )
       expect(pdf.info.Author).toBe('Example Trading LLC')
       expect(pdf.info.Subject ?? '').toBe('')
@@ -87,6 +96,34 @@ describe('renderDocumentPdf', () => {
     expect(pdf.pages[1]).toContain('QUOTATION # INDUS/Q10001-R2')
     expect(pdf.pages[0]).not.toContain('QUOTATION # INDUS/Q10001-R2')
   }, 30_000)
+
+  it('screen and PDF agree on pages: no paginated page ever spills (1, 9, 12, 40 lines; long house table)', async () => {
+    const quotes = [1, 9, 12, 40].map((n) =>
+      buildQuotation(
+        createClientSafeQuotation({
+          ...F.QUOTATION,
+          lines: Array.from({ length: n }, (_, i) => ({ ...F.C37_LINES[i % 12]!, lineNo: i + 1 })),
+        }),
+        F.CTX
+      )
+    )
+    const oa = buildOa(
+      createClientSafeOrderDoc({
+        ...F.OA,
+        lines: Array.from({ length: 30 }, (_, i) => ({ ...F.OA.lines[0]!, lineNo: i + 1 })),
+      }),
+      F.CTX
+    )
+    const counts: string[] = []
+    for (const d of [...quotes, oa, ...fixtures.map((f) => f.data)]) {
+      const expected = paginate(d).length
+      const pdf = await read(await renderDocumentPdf(d, NEUTRAL_LETTERHEAD))
+      counts.push(`${d.kind}:${expected}/${pdf.pages.length}`)
+      expect(pdf.pages.length, `${d.kind} ${d.no}`).toBe(expected)
+    }
+    expect(paginate(quotes[0]!).length).toBe(1)
+    expect(paginate(quotes[3]!).length).toBeGreaterThan(1)
+  }, 120_000)
 
   it('embeds Geist, and Instrument Serif for the house titles; no other family', async () => {
     const oa = fixtures.find((f) => f.name === 'oa')!

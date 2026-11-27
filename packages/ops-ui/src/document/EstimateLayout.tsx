@@ -1,5 +1,6 @@
 import {
   documentNumber,
+  estimatePageLabel,
   revisionLabel,
   type DocCell,
   type DocTableRow,
@@ -18,6 +19,8 @@ interface EstimateLayoutProps {
   highlightRows?: readonly number[]
   page?: number
   pageCount?: number
+  /** False on a continuation page of paginate(): a running header replaces the letterhead block. */
+  first?: boolean
   className?: string
 }
 
@@ -33,6 +36,7 @@ export default function EstimateLayout({
   highlightRows = [],
   page = 1,
   pageCount = 1,
+  first = true,
   className,
 }: EstimateLayoutProps) {
   const no = documentNumber(data.no, data.revision)
@@ -50,131 +54,154 @@ export default function EstimateLayout({
       )}
     >
       <div data-doc-content className="flex min-h-0 flex-1 flex-col">
-        <div data-doc-region="letterhead" className="flex items-start justify-between">
-          <div>
-            {/* eslint-disable-next-line nextjs/no-img-element -- framework-free kit: the logo is a signed Storage URL or data URI drawn at a fixed size, as the PDF draws it */}
-            <img
-              src={letterhead.logo.src}
-              width={letterhead.logo.width}
-              height={letterhead.logo.height}
-              alt={letterhead.legalName}
-              className="block h-[58px] w-auto"
-            />
-            <div className="text-io-est-co mt-1.5 text-[10.5px] leading-[1.6]">
-              <b className="text-io-est-strong block text-[13px]">{letterhead.legalName}</b>
-              {address.map((line, i) => (
-                <span key={line} className="block whitespace-nowrap">
-                  {line}
-                  {i === address.length - 1 ? ` · TRN ${letterhead.trn}` : ''}
-                </span>
-              ))}
-              <span className="block whitespace-nowrap">
-                {letterhead.mailbox} · {letterhead.phone}
-              </span>
+        {first ? (
+          <>
+            <div data-doc-region="letterhead" className="flex items-start justify-between">
+              <div>
+                {letterhead.logo.src ? (
+                  <>
+                    {/* eslint-disable-next-line nextjs/no-img-element -- framework-free kit: the logo is a signed Storage URL or data URI drawn at a fixed size, as the PDF draws it */}
+                    <img
+                      src={letterhead.logo.src}
+                      width={letterhead.logo.width}
+                      height={letterhead.logo.height}
+                      alt={letterhead.legalName}
+                      className="block h-[58px] w-auto"
+                    />
+                  </>
+                ) : null}
+                <div className="text-io-est-co mt-1.5 text-[10.5px] leading-[1.6]">
+                  <b className="text-io-est-strong block text-[13px]">{letterhead.legalName}</b>
+                  {address.map((line, i) => (
+                    <span key={line} className="block whitespace-nowrap">
+                      {line}
+                      {i === address.length - 1 ? ` · TRN ${letterhead.trn}` : ''}
+                    </span>
+                  ))}
+                  <span className="block whitespace-nowrap">
+                    {letterhead.mailbox} · {letterhead.phone}
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 className="m-0 text-right text-[30px] font-medium tracking-[.02em]">
+                  {data.title}
+                </h1>
+                <div className="mt-0.5 text-right text-[12px]"># {no}</div>
+              </div>
             </div>
-          </div>
-          <div>
-            <h1 className="m-0 text-right text-[30px] font-medium tracking-[.02em]">
-              {data.title}
-            </h1>
-            <div className="mt-0.5 text-right text-[12px]"># {no}</div>
-          </div>
-        </div>
 
-        {rev ? <div className="bg-io-est-rev mt-2.5 px-2.5 py-1.5 text-[11px]">{rev}</div> : null}
+            {rev ? (
+              <div className="bg-io-est-rev mt-2.5 px-2.5 py-1.5 text-[11px]">{rev}</div>
+            ) : null}
 
-        <div className="mt-[22px] grid grid-cols-2 gap-6">
-          <div>
-            <span className="text-io-est-meta block">{data.billTo.label}</span>
-            <b className="block">{data.billTo.name}</b>
-            {data.billTo.lines.map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
+            <div className="mt-[22px] grid grid-cols-2 gap-6">
+              <div>
+                <span className="text-io-est-meta block">{data.billTo.label}</span>
+                <b className="block">{data.billTo.name}</b>
+                {data.billTo.lines.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </div>
+              <dl className="m-0 grid grid-cols-[auto_auto] gap-x-4 gap-y-[3px] justify-self-end">
+                {data.meta.map((m) => (
+                  <Fragment key={m.label}>
+                    <dt className="text-io-est-meta">{m.label}</dt>
+                    <dd className="m-0 text-right">{m.value}</dd>
+                  </Fragment>
+                ))}
+              </dl>
+            </div>
+          </>
+        ) : (
+          <div
+            data-doc-region="running-header"
+            className="text-io-est-meta text-right text-[9.5px]"
+          >
+            {data.title} # {no}
+          </div>
+        )}
+
+        {data.items.rows.length ? (
+          <table className={cn('w-full border-collapse', first ? 'mt-[18px]' : 'mt-5')}>
+            <thead>
+              <tr>
+                {data.items.cols.map((h, i) => (
+                  <th
+                    key={h}
+                    scope="col"
+                    className={cn(
+                      'bg-io-navy px-2 py-[7px] text-right text-[10.5px] font-medium text-white',
+                      (i === 0 || i === desc) && 'text-left'
+                    )}
+                  >
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {data.items.rows.map((row, ri) => (
+                <EstimateRow
+                  key={ri}
+                  row={row}
+                  n={ri + 1}
+                  desc={desc}
+                  highlighted={row.flag === 'highlight' || highlightRows.includes(ri + 1)}
+                />
+              ))}
+            </tbody>
+          </table>
+        ) : null}
+
+        {data.totals.length ? (
+          <div className="mt-3 ml-auto flex w-[290px] flex-col">
+            {data.totals.map((t) => (
+              <div
+                key={t.label}
+                data-doc-total={t.grand ? 'grand' : undefined}
+                className={cn(
+                  'flex justify-between px-2 py-1',
+                  t.grand && 'bg-io-est-total p-2 text-[12.5px] font-semibold'
+                )}
+              >
+                <span>{t.label}</span>
+                <span>{t.value}</span>
+              </div>
             ))}
           </div>
-          <dl className="m-0 grid grid-cols-[auto_auto] gap-x-4 gap-y-[3px] justify-self-end">
-            {data.meta.map((m) => (
-              <Fragment key={m.label}>
-                <dt className="text-io-est-meta">{m.label}</dt>
-                <dd className="m-0 text-right">{m.value}</dd>
+        ) : null}
+
+        {data.notes.length ? (
+          <div className="text-io-est-ink-2 mt-4 text-[10.5px] leading-[1.55]">
+            {data.notes.map((n) => (
+              <Fragment key={n.label}>
+                <b className="text-io-est-strong mt-2 mb-0.5 block text-[11px]">{n.label}</b>
+                {n.text}
               </Fragment>
             ))}
-          </dl>
-        </div>
+          </div>
+        ) : null}
 
-        <table className="mt-[18px] w-full border-collapse">
-          <thead>
-            <tr>
-              {data.items.cols.map((h, i) => (
-                <th
-                  key={h}
-                  scope="col"
-                  className={cn(
-                    'bg-io-navy px-2 py-[7px] text-right text-[10.5px] font-medium text-white',
-                    (i === 0 || i === desc) && 'text-left'
-                  )}
-                >
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {data.items.rows.map((row, ri) => (
-              <EstimateRow
-                key={ri}
-                row={row}
-                n={ri + 1}
-                desc={desc}
-                highlighted={row.flag === 'highlight' || highlightRows.includes(ri + 1)}
-              />
-            ))}
-          </tbody>
-        </table>
-
-        <div className="mt-3 ml-auto flex w-[290px] flex-col">
-          {data.totals.map((t) => (
-            <div
-              key={t.label}
-              data-doc-total={t.grand ? 'grand' : undefined}
-              className={cn(
-                'flex justify-between px-2 py-1',
-                t.grand && 'bg-io-est-total p-2 text-[12.5px] font-semibold'
-              )}
-            >
-              <span>{t.label}</span>
-              <span>{t.value}</span>
+        {data.signer ? (
+          <div className="mt-3.5 flex justify-between text-[10.5px]">
+            <div className="border-io-est-line text-io-est-sign w-[200px] border-t pt-1">
+              <span className="block">For {letterhead.legalName}</span>
+              <span className="block">{data.signer}</span>
             </div>
-          ))}
-        </div>
-
-        <div className="text-io-est-ink-2 mt-4 text-[10.5px] leading-[1.55]">
-          {data.notes.map((n) => (
-            <Fragment key={n.label}>
-              <b className="text-io-est-strong mt-2 mb-0.5 block text-[11px]">{n.label}</b>
-              {n.text}
-            </Fragment>
-          ))}
-        </div>
-
-        <div className="mt-3.5 flex justify-between text-[10.5px]">
-          <div className="border-io-est-line text-io-est-sign w-[200px] border-t pt-1">
-            <span className="block">For {letterhead.legalName}</span>
-            <span className="block">{data.signer}</span>
+            <div className="border-io-est-line text-io-est-sign w-[200px] border-t pt-1">
+              Company stamp
+            </div>
           </div>
-          <div className="border-io-est-line text-io-est-sign w-[200px] border-t pt-1">
-            Company stamp
-          </div>
-        </div>
+        ) : null}
 
         <div className="border-io-est-foot text-io-est-meta mt-auto flex justify-between border-t pt-2.5 pb-[18px] text-[10px]">
           <span>
             {letterhead.legalName} · {no}
           </span>
-          <span>
-            Page {page} of {Math.max(page, pageCount)}
-          </span>
+          <span>{estimatePageLabel(page, pageCount)}</span>
         </div>
       </div>
       {stamp ? <Stamp stamp={stamp} /> : null}

@@ -18,6 +18,8 @@ export interface DocumentPageProps {
   /** Which page of a paginated render, and how many there are (running footer). */
   page?: number
   pageCount?: number
+  /** False on a continuation page (paginate): a running header replaces the letterhead block. */
+  first?: boolean
   className?: string
 }
 
@@ -34,6 +36,7 @@ export default function DocumentPage({
   highlightRows,
   page,
   pageCount,
+  first,
   className,
 }: DocumentPageProps) {
   const sc: DocScale = scale ?? (data.layout === 'estimate' ? 'z' : 'm')
@@ -43,6 +46,7 @@ export default function DocumentPage({
     ...(highlightRows ? { highlightRows } : {}),
     ...(page !== undefined ? { page } : {}),
     ...(pageCount !== undefined ? { pageCount } : {}),
+    ...(first !== undefined ? { first } : {}),
   }
   const pageClass = sc === 'full' ? cn(pageScaleClass(sc), className) : pageScaleClass(sc)
   const body =

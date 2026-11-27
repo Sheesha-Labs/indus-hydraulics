@@ -1,10 +1,11 @@
-import type {
-  DocBlock,
-  DocCell,
-  DocTableBlock,
-  DocTableRow,
-  HouseDocument,
-  Letterhead,
+import {
+  housePageLabel,
+  type DocBlock,
+  type DocCell,
+  type DocTableBlock,
+  type DocTableRow,
+  type HouseDocument,
+  type Letterhead,
 } from '@indus/ops-core'
 import { Fragment } from 'react'
 import { cn } from '../lib/cn'
@@ -20,17 +21,13 @@ interface HouseLayoutProps {
   highlightRows?: readonly number[]
   page?: number
   pageCount?: number
+  /** False on a continuation page of paginate(): a running header replaces the letterhead block. */
+  first?: boolean
   className?: string
 }
 
 /** The eyebrow on paper: 9px, +.16em, accent. */
 const K = 'text-[9px] font-medium tracking-[.16em] uppercase text-io-accent'
-
-/** "01 / 03": the house running footer's page count. */
-export function housePageLabel(page: number, pageCount: number): string {
-  const two = (n: number) => String(n).padStart(2, '0')
-  return `${two(page)} / ${two(Math.max(page, pageCount))}`
-}
 
 /**
  * The house A4 layout: everything Indus issues except the client quotation (RFQ, OA, PI, PO, PL, DN,
@@ -44,6 +41,7 @@ export default function HouseLayout({
   highlightRows = [],
   page = 1,
   pageCount = 1,
+  first = true,
   className,
 }: HouseLayoutProps) {
   const sp = (normal: string, compact: string) => (dense ? compact : normal)
@@ -59,101 +57,117 @@ export default function HouseLayout({
       )}
     >
       <div data-doc-content className="flex min-h-0 flex-1 flex-col">
-        <header
-          data-doc-region="letterhead"
-          className={cn(
-            'border-io-ink flex items-end justify-between gap-6 border-b',
-            sp('pb-4', 'pb-3')
-          )}
-        >
-          {/* eslint-disable-next-line nextjs/no-img-element -- framework-free kit: the logo is a signed Storage URL or data URI drawn at a fixed size, as the PDF draws it */}
-          <img
-            src={letterhead.logo.src}
-            width={letterhead.logo.width}
-            height={letterhead.logo.height}
-            alt={letterhead.legalName}
-            className={cn(
-              '-ml-[3px] block w-auto max-w-none flex-none',
-              sp('h-[60px]', 'h-[50px]')
-            )}
-          />
-          <div className="text-io-ink-2 flex flex-col items-end text-right text-[10px] leading-[1.8] tracking-[.03em]">
-            <b className="text-io-ink mb-1 text-[14px] leading-[1.2] font-medium tracking-[-.01em]">
-              {letterhead.legalName}
-            </b>
-            <span>TRN {letterhead.trn}</span>
-            {letterhead.addressLines.map((line) => (
-              <span key={line}>{line}</span>
-            ))}
-            <span>{letterhead.mailbox}</span>
-          </div>
-        </header>
-
-        <div
-          className={cn(
-            'grid grid-cols-[minmax(0,1fr)_auto] items-end gap-8',
-            sp('mt-5', 'mt-3.5')
-          )}
-        >
-          <div>
-            <div className={K}>{data.eyebrow}</div>
-            <h1
+        {first ? (
+          <>
+            <header
+              data-doc-region="letterhead"
               className={cn(
-                'io-display m-0 leading-none tracking-[-.02em]',
-                sp('mt-2.5 text-[48px]', 'mt-1.5 text-[40px]')
+                'border-io-ink flex items-end justify-between gap-6 border-b',
+                sp('pb-4', 'pb-3')
               )}
             >
-              {data.title}
-            </h1>
-            <div className={cn('text-[13px]', sp('mt-2.5', 'mt-1.5'))}># {data.no}</div>
-          </div>
-          <dl className={cn('m-0 grid grid-cols-[auto_auto] gap-x-5', sp('gap-y-1.5', 'gap-y-1'))}>
-            {data.meta.map((m) => (
-              <Fragment key={m.label}>
-                <dt className="text-io-ink-3 self-center text-[9px] tracking-[.14em] uppercase">
-                  {m.label}
-                </dt>
-                <dd className="m-0 text-right text-[12px]">{m.value}</dd>
-              </Fragment>
-            ))}
-          </dl>
-        </div>
-
-        {data.party.length > 0 ? (
-          <div
-            className={cn(
-              'border-io-ink grid grid-cols-2 gap-x-8 border-t',
-              sp('mt-[18px] pt-3.5', 'mt-3 pt-2.5')
-            )}
-          >
-            {data.party.map((p) => (
-              <div key={p.label}>
-                <div className={K}>{p.label}</div>
-                <p className="text-io-ink-2 mt-1.5 mb-0 text-[12px] leading-[1.55]">
-                  <b className="text-io-ink block text-[13px] font-medium">{p.name}</b>
-                  {p.lines.map((line) => (
-                    <span key={line} className="block">
-                      {line}
-                    </span>
-                  ))}
-                </p>
+              {letterhead.logo.src ? (
+                <>
+                  {/* eslint-disable-next-line nextjs/no-img-element -- framework-free kit: the logo is a signed Storage URL or data URI drawn at a fixed size, as the PDF draws it */}
+                  <img
+                    src={letterhead.logo.src}
+                    width={letterhead.logo.width}
+                    height={letterhead.logo.height}
+                    alt={letterhead.legalName}
+                    className={cn(
+                      '-ml-[3px] block w-auto max-w-none flex-none',
+                      sp('h-[60px]', 'h-[50px]')
+                    )}
+                  />
+                </>
+              ) : (
+                <span />
+              )}
+              <div className="text-io-ink-2 flex flex-col items-end text-right text-[10px] leading-[1.8] tracking-[.03em]">
+                <b className="text-io-ink mb-1 text-[14px] leading-[1.2] font-medium tracking-[-.01em]">
+                  {letterhead.legalName}
+                </b>
+                <span>TRN {letterhead.trn}</span>
+                {letterhead.addressLines.map((line) => (
+                  <span key={line}>{line}</span>
+                ))}
+                <span>{letterhead.mailbox}</span>
               </div>
-            ))}
-          </div>
-        ) : null}
+            </header>
 
-        {data.subject ? (
-          <div
-            className={cn(
-              'bg-io-fill-2 flex items-baseline gap-3 text-[12.5px]',
-              sp('mt-3.5 px-3.5 py-3', 'mt-2.5 px-3 py-[9px]')
-            )}
-          >
-            {/* ink-2: ink-3 on the fill-2 band is 4.3:1, under AA at full scale. */}
-            <span className={cn(K, 'text-io-ink-2')}>{data.subject.label ?? 'Subject'}</span>
-            <b className="font-semibold tracking-[.01em]">{data.subject.text}</b>
+            <div
+              className={cn(
+                'grid grid-cols-[minmax(0,1fr)_auto] items-end gap-8',
+                sp('mt-5', 'mt-3.5')
+              )}
+            >
+              <div>
+                <div className={K}>{data.eyebrow}</div>
+                <h1
+                  className={cn(
+                    'io-display m-0 leading-none tracking-[-.02em]',
+                    sp('mt-2.5 text-[48px]', 'mt-1.5 text-[40px]')
+                  )}
+                >
+                  {data.title}
+                </h1>
+                <div className={cn('text-[13px]', sp('mt-2.5', 'mt-1.5'))}># {data.no}</div>
+              </div>
+              <dl
+                className={cn('m-0 grid grid-cols-[auto_auto] gap-x-5', sp('gap-y-1.5', 'gap-y-1'))}
+              >
+                {data.meta.map((m) => (
+                  <Fragment key={m.label}>
+                    <dt className="text-io-ink-3 self-center text-[9px] tracking-[.14em] uppercase">
+                      {m.label}
+                    </dt>
+                    <dd className="m-0 text-right text-[12px]">{m.value}</dd>
+                  </Fragment>
+                ))}
+              </dl>
+            </div>
+
+            {data.party.length > 0 ? (
+              <div
+                className={cn(
+                  'border-io-ink grid grid-cols-2 gap-x-8 border-t',
+                  sp('mt-[18px] pt-3.5', 'mt-3 pt-2.5')
+                )}
+              >
+                {data.party.map((p) => (
+                  <div key={p.label}>
+                    <div className={K}>{p.label}</div>
+                    <p className="text-io-ink-2 mt-1.5 mb-0 text-[12px] leading-[1.55]">
+                      <b className="text-io-ink block text-[13px] font-medium">{p.name}</b>
+                      {p.lines.map((line) => (
+                        <span key={line} className="block">
+                          {line}
+                        </span>
+                      ))}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+
+            {data.subject ? (
+              <div
+                className={cn(
+                  'bg-io-fill-2 flex items-baseline gap-3 text-[12.5px]',
+                  sp('mt-3.5 px-3.5 py-3', 'mt-2.5 px-3 py-[9px]')
+                )}
+              >
+                {/* ink-2: ink-3 on the fill-2 band is 4.3:1, under AA at full scale. */}
+                <span className={cn(K, 'text-io-ink-2')}>{data.subject.label ?? 'Subject'}</span>
+                <b className="font-semibold tracking-[.01em]">{data.subject.text}</b>
+              </div>
+            ) : null}
+          </>
+        ) : (
+          <div data-doc-region="running-header" className="text-io-ink-3 text-right text-[9.5px]">
+            {data.title} # {data.no}
           </div>
-        ) : null}
+        )}
 
         {data.blocks.map((block, i) => (
           <Block
@@ -261,12 +275,14 @@ function Block({ block, dense, letterhead, highlightRows }: BlockProps) {
               {block.showLabel !== false ? (
                 <span className={cn(K, 'mb-1 block')}>Bank details</span>
               ) : null}
-              {letterhead.bank.lines.map((line, i) => (
-                <Fragment key={line}>
-                  {i > 0 ? <br /> : null}
-                  {line}
-                </Fragment>
-              ))}
+              {letterhead.bank.lines.length
+                ? letterhead.bank.lines.map((line, i) => (
+                    <Fragment key={line}>
+                      {i > 0 ? <br /> : null}
+                      {line}
+                    </Fragment>
+                  ))
+                : 'Bank details to follow'}
             </div>
             {block.disclaimer ? (
               <p

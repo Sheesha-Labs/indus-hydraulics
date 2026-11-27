@@ -230,7 +230,7 @@ describe('route tree', () => {
     expect(private_).toEqual([])
   })
 
-  it('(d) no API route beyond the four S02 allows, the S03-T05 file route, the two S04 Gmail routes and the two S06 exports', () => {
+  it('(d) no API route beyond the four S02 allows, the S03-T05 file route, the two S04 Gmail routes, the two S06 exports and the S11 kit PDF', () => {
     const api = ALL.filter((d) => d.startsWith('api') && has(d, 'route.ts')).sort()
     expect(api).toEqual([
       // S06-T04: the Assistant log CSV (Owner only, session checked in the route; streams, never a page).
@@ -244,6 +244,8 @@ describe('route tree', () => {
       'api/health',
       'api/health/live',
       'api/inngest',
+      // S11-T03: a kit fixture's PDF (gated like /_kit: 404 in production or without OPS_KIT=1).
+      'api/kit/documents/[kind]/pdf',
       // S06-T06: a record's history CSV (Owner only, session checked in the route; streams, never a page).
       'api/records/[type]/[id]/history/export',
     ])
