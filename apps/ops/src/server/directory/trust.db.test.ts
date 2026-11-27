@@ -14,13 +14,17 @@ vi.mock('next/cache', () => ({
   unstable_cache: (fn: () => unknown) => fn,
   revalidateTag: () => undefined,
 }))
-const requested: Array<{ actionKey: string; subjectId: string }> = []
+const requested: Array<{ actionKey: string; subjectId: string; sourceVersion?: string | number }> =
+  []
 vi.mock('../assistant/request', () => ({
   requestAction: async (r: { actionKey: string; subjectId: string }) => {
     requested.push(r)
     return 'id'
   },
-  requestActionQuietly: async () => true,
+  requestActionQuietly: async (r: { actionKey: string; subjectId: string }) => {
+    requested.push(r)
+    return true
+  },
 }))
 
 const TAG = `tr${Date.now().toString(36)}`
@@ -212,6 +216,33 @@ describe.skipIf(!DB_URL)('trust · local database', () => {
     )
     const gate = await trust.supplierPaymentGate(supplierId)
     expect(gate).toMatchObject({ allowed: false, reason: 'cooling_off' })
+  })
+
+  it('S24/S26 triggers: a PO draft asks for Trial only from Contact only; three good POs suggest Approved', async () => {
+    const pr = await import('./promotion-request')
+    const po = { ref: 'PO-TEST-1', amount: '1200.0000', currency: 'USD' }
+    expect(await pr.requestPromotionForPo(supplierId, po)).toBe(false) // principal
+    await opsDb.supplierProfile.update({
+      where: { companyId: supplierId },
+      data: { tier: 'contact_only' },
+    })
+    expect(await pr.requestPromotionForPo(supplierId, po)).toBe(true)
+    expect(String(requested.at(-1)?.sourceVersion)).toMatch(/^trial:po:PO-TEST-1:/)
+    const good = { deliveredOnTime: 3, deliveredLate: 0, qualityClaims: 0 }
+    expect(await pr.requestApprovedSuggestion(supplierId, good)).toBe(false) // not on trial
+    await opsDb.supplierProfile.update({
+      where: { companyId: supplierId },
+      data: { tier: 'trial' },
+    })
+    expect(await pr.requestApprovedSuggestion(supplierId, { ...good, qualityClaims: 1 })).toBe(
+      false
+    )
+    expect(await pr.requestApprovedSuggestion(supplierId, good)).toBe(true)
+    expect(String(requested.at(-1)?.sourceVersion)).toMatch(/^approved:/)
+    await opsDb.supplierProfile.update({
+      where: { companyId: supplierId },
+      data: { tier: 'principal' },
+    })
   })
 
   it('block: the effects listed are the effects applied; unblock is the Owner’s and restores the tier', async () => {
