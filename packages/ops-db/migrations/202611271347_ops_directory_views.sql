@@ -7,7 +7,8 @@
 --                        the quotation's locked FX or 1 for AED), win rate (won ÷ quoted YTD, NULL when nothing was
 --                        quoted), average margin won (orders' estimate snapshot), the last RFQ and the credit hold.
 --   ops.supplier_list_v  one row per live supplier company: profile columns (type, tier, onboarding, reliability), the
---                        line-card trades it carries (names, not suppliers' brands), contact count, the
+--                        line-card trades it carries (names, not suppliers' brands; ids include each trade's parent so a
+--                        category filter finds its sub-trades), contact count, the
 --                        soonest live document expiry and whether a bank change is pending.
 --
 -- Year to date is the calendar year in Asia/Dubai. Plain views over ops tables, owned by postgres, SELECT to ops_app.
@@ -106,7 +107,8 @@ SELECT
 FROM ops.company c
 JOIN ops.supplier_profile sp ON sp."companyId" = c.id
 LEFT JOIN LATERAL (
-  SELECT array_agg(DISTINCT t.id) AS trade_ids, array_agg(DISTINCT t.name ORDER BY t.name) AS trades
+  SELECT array_remove(array_agg(DISTINCT t.id) || array_agg(DISTINCT t."parentId"), NULL) AS trade_ids,
+         array_agg(DISTINCT t.name ORDER BY t.name) AS trades
     FROM ops.supplier_line_card l
     JOIN ops.trade t ON t.id = l."tradeId"
    WHERE l."supplierId" = c.id AND l.status IN ('active', 'trial', 'proposed')

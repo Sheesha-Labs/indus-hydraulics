@@ -29,6 +29,7 @@ const EXPECTED: Record<string, 'exempt' | 'skip' | 'record_only' | 'wait'> = {
   'ops.autopilot.suggestions': 'skip',
   'ops.budget.rollover': 'exempt',
   'ops.numbering.continuity': 'exempt',
+  'ops.supplier.stats': 'skip',
   'ops.budget.reservation.sweep': 'exempt',
   'ops.budget.thresholds': 'exempt',
   'ops.preferences.learn': 'skip',

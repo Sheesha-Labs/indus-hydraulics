@@ -376,6 +376,7 @@ function ships.
 | `ops.preferences.batch.poll` | cron `*/10 * * * *` (ended batch → linted Preference rows) | house | 2 | skip | S07 |
 | `ops.capture.document` | `ops/document.capture.requested` (cancelOn `ops/document.capture.cancelled`; invokes `ops.assistant.run` for extract_lines) | live + intakeFileId · 1 | 2 | wait | S08 |
 | `ops.numbering.continuity` | cron `TZ=Asia/Dubai 45 2 * * *` (website-admin ENQ refs vs the Ops block; notification within 200, out-of-step flag) | house | 1 | exempt | S08 |
+| `ops.supplier.stats` | cron `TZ=Asia/Dubai 30 1 * * *` (supplier figures in pages of 200; reliability paragraph requested on a material change) | house | 2 | skip | S10 |
 
 ## 17. Assistant actions
 

@@ -10,6 +10,7 @@ import { assistantOnResumed } from './assistant/on-resumed'
 import { assistantRun } from './assistant/run'
 import { captureDocument } from './intake/capture-document'
 import { numberingContinuity } from './numbering/continuity'
+import { supplierStats } from './directory/supplier-stats'
 import { gmailBackfill } from './gmail/backfill'
 import { gmailHealth } from './gmail/health'
 import { gmailBackfillFetch, gmailMessageFetch } from './gmail/message-fetch'
@@ -54,4 +55,5 @@ export const opsFunctions = [
   preferencesBatchPoll,
   captureDocument,
   numberingContinuity,
+  supplierStats,
 ]

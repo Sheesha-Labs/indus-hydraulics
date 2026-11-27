@@ -4,6 +4,11 @@ import {
   seedClients,
   type ClientsSeed,
 } from '../../src/server/directory/testing/clients-seed'
+import {
+  archiveSuppliers,
+  seedSuppliers,
+  type SuppliersSeed,
+} from '../../src/server/directory/testing/suppliers-seed'
 import { expect, test } from '../signed-in'
 import { settle } from '../visual/helpers'
 import { compareToBoardPng, recordParity } from './compare'
@@ -20,13 +25,16 @@ test.setTimeout(240_000)
 
 const tag = `p10${Date.now()}`
 let clients: ClientsSeed
+let suppliers: SuppliersSeed
 
 test.beforeAll(async () => {
   clients = await seedClients(db, tag)
+  suppliers = await seedSuppliers(db, tag)
 })
 
 test.afterAll(async () => {
   await archiveClients(db, clients)
+  await archiveSuppliers(db, suppliers)
 })
 
 test.beforeEach(async ({ signedInAs }) => {
@@ -75,5 +83,29 @@ test('board-12 client profile', async ({ page }) => {
     '12',
     0.1,
     'AED figures; Overview/History sub-nav under the header; profile sections below'
+  )
+})
+
+test('board-128 suppliers', async ({ page }) => {
+  await page.goto(`/suppliers?trade=${suppliers.parityTradeId}`)
+  await expect(page.getByRole('heading', { name: /^Suppliers · \d+$/, level: 1 })).toBeVisible()
+  await frame(
+    page,
+    '128',
+    0.1,
+    'neutral names; no saved views seeded (All, Proposed); "Save view" control; no search text'
+  )
+})
+
+test('board-129 supplier profile', async ({ page }) => {
+  await page.goto(`/suppliers/${suppliers.profileId}`)
+  await expect(
+    page.getByRole('heading', { name: 'Sample Instruments Ltd', level: 1 })
+  ).toBeVisible()
+  await frame(
+    page,
+    '129',
+    0.1,
+    'Recent is empty (no quotes seeded); Bank card below Documents; Line card and History tabs'
   )
 })
