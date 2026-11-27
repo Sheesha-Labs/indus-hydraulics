@@ -5,9 +5,10 @@ import { withSentryConfig } from '@sentry/nextjs'
 const nextConfig: NextConfig = {
   output: 'standalone',
   outputFileTracingRoot: path.join(import.meta.dirname, '../../'),
-  // The generated Ops Prisma client is loaded by path, so the trace must include it.
+  // The generated Ops Prisma client and ops-pdf's committed fonts are loaded by path, so the trace must
+  // include them (S11-T02: packages/ops-pdf/src/fonts.ts finds the fonts from the working directory).
   outputFileTracingIncludes: {
-    '/**': ['../../packages/ops-db/generated/client/**'],
+    '/**': ['../../packages/ops-db/generated/client/**', '../../packages/ops-pdf/fonts/**'],
   },
   // Type checking is CI's job (`checks`), not the build's, as in apps/web.
   typescript: { ignoreBuildErrors: true },
@@ -24,8 +25,10 @@ const nextConfig: NextConfig = {
     'sharp',
     'exceljs',
     'mammoth',
+    // S11-T02: the PDF renderer (yoga, fontkit, its own React reconciler) runs as Node, never bundled.
+    '@react-pdf/renderer',
   ],
-  transpilePackages: ['@indus/ops-core', '@indus/ops-ui', '@indus/intake'],
+  transpilePackages: ['@indus/ops-core', '@indus/ops-ui', '@indus/ops-pdf', '@indus/intake'],
   experimental: {
     serverActions: {
       allowedOrigins: ['operations.indushydraulics.com'],

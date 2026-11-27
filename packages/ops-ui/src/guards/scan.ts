@@ -11,6 +11,7 @@ export const UI_ROOTS = ['packages/ops-ui/src', 'apps/ops/src'] as const
 const EXEMPT = [
   'packages/ops-ui/src/tokens.generated.ts',
   'packages/ops-ui/src/tokens.pdf.ts',
+  'packages/ops-pdf/src/tokens.pdf.ts',
   'packages/ops-ui/src/styles/tokens.css',
   'packages/ops-ui/src/styles/theme.css',
 ]
