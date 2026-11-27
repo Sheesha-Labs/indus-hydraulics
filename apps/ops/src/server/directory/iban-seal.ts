@@ -12,8 +12,10 @@ import { env } from '../../lib/env'
  */
 const PURPOSE = 'supplier_iban'
 
-export function sealIban(iban: string, supplierId: string): Buffer {
-  return Buffer.from(seal(normaliseIban(iban), additionalData(PURPOSE, supplierId)), 'utf8')
+export function sealIban(iban: string, supplierId: string): Uint8Array<ArrayBuffer> {
+  return new Uint8Array(
+    Buffer.from(seal(normaliseIban(iban), additionalData(PURPOSE, supplierId)), 'utf8')
+  )
 }
 
 /** Server-only: the full IBAN, for the payment instruction (S27). Never returned to the browser. */

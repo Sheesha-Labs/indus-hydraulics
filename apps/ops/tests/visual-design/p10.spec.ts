@@ -7,6 +7,7 @@ import {
 import {
   archiveSuppliers,
   seedOnboardingDraft,
+  seedVetting,
   seedSuppliers,
   type SuppliersSeed,
 } from '../../src/server/directory/testing/suppliers-seed'
@@ -128,5 +129,26 @@ test('board-50 new supplier documents', async ({ page }) => {
     '50',
     0.1,
     'composer shows the template with a placeholder link; Update control per row; Back in the foot'
+  )
+})
+
+test('board-51 vetting and approval', async ({ page }) => {
+  const owner = await db.user.findFirstOrThrow({
+    where: { role: 'owner', status: 'active' },
+    select: { id: true },
+  })
+  const helper =
+    (await db.user.findFirst({
+      where: { role: 'helper', status: 'active' },
+      select: { id: true },
+    })) ?? owner
+  await seedVetting(db, draftId, owner.id, helper.id)
+  await page.goto(`/suppliers/new/${draftId}/approve`)
+  await expect(page.locator('[data-built="supplier-vetting"]')).toBeVisible()
+  await frame(
+    page,
+    '51',
+    0.12,
+    'IBAN shown as last 4 only (never in full); Record screening control; neutral names'
   )
 })

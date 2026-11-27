@@ -173,3 +173,26 @@ export async function getCompanyLegalName(): Promise<string | null> {
   const profile: CompanyProfile = await getSetting('company.profile')
   return profile.legalName.trim() || null
 }
+
+/**
+ * S10: a setting read through the caller's transaction (no cache). Inside a transaction at connection_limit=1 a read
+ * on the root client waits for the transaction's own connection and deadlocks; services that write in a
+ * transaction read their thresholds here.
+ */
+export async function getSettingIn<K extends SettingKey>(
+  tx: { settingsEntry: Pick<typeof opsDb.settingsEntry, 'findUnique'> },
+  key: K
+): Promise<SettingValue<K>> {
+  const r = await tx.settingsEntry.findUnique({ where: { key }, select: SELECT })
+  return parseSettingRow(
+    key,
+    r
+      ? {
+          ...r,
+          value: r.value as unknown,
+          signedOffAt: r.signedOffAt?.toISOString() ?? null,
+          updatedAt: r.updatedAt.toISOString(),
+        }
+      : undefined
+  ).value
+}

@@ -98,12 +98,15 @@ export function Foot({
   nextLabel,
   back,
   extra,
+  nextPrimary = true,
 }: {
   wizard: SupplierWizard
   next: WizardStep | null
   nextLabel: string
   back: WizardStep
   extra?: ReactNode
+  /** False when the step's own decision holds the page's one primary. */
+  nextPrimary?: boolean
 }) {
   return (
     <div className="border-io-line bg-io-card sticky bottom-0 flex items-center justify-between border-t px-6 py-3.5">
@@ -112,7 +115,10 @@ export function Foot({
         <ButtonLink href={`/suppliers/new/${wizard.id}/${back}` as Route}>Back</ButtonLink>
         {extra}
         {next ? (
-          <ButtonLink variant="primary" href={`/suppliers/new/${wizard.id}/${next}` as Route}>
+          <ButtonLink
+            variant={nextPrimary ? 'primary' : 'secondary'}
+            href={`/suppliers/new/${wizard.id}/${next}` as Route}
+          >
             {nextLabel}
           </ButtonLink>
         ) : null}

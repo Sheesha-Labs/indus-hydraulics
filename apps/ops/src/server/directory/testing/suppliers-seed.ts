@@ -489,3 +489,82 @@ export async function seedOnboardingDraft(
     })
   return c.id
 }
+
+/** Board 51: the board-50 draft under review with its screening, a verified bank call-back and the recommendation. */
+export async function seedVetting(
+  db: PrismaClient,
+  supplierId: string,
+  ownerId: string,
+  helperId: string
+): Promise<void> {
+  const lists: Array<[string, string, string, string]> = [
+    [
+      'UN Security Council consolidated list',
+      'sanctions',
+      'Company, 3 owners, 2 directors',
+      'clear',
+    ],
+    ['US OFAC SDN and sectoral lists', 'sanctions', 'Company, owners, bank', 'clear'],
+    ['EU and UK consolidated lists', 'sanctions', 'Company, owners', 'clear'],
+    ['UAE local terrorist list', 'sanctions', 'Company, owners', 'clear'],
+    [
+      'Country of origin',
+      'country_of_origin',
+      'Türkiye · no restriction on hydraulic components',
+      'clear',
+    ],
+    ['Re-export risk', 're_export', 'Code of conduct not yet signed', 'open'],
+    ['Adverse media', 'adverse_media', 'No matches in the last 5 years', 'clear'],
+  ]
+  const at = new Date(Date.now() - 20 * 86_400_000)
+  for (const [listName, kind, scope, result] of lists)
+    await db.screeningCheck.create({
+      data: {
+        companyId: supplierId,
+        kind: kind as never,
+        listName,
+        scope,
+        result: result as never,
+        checkedAt: at,
+        checkedById: helperId,
+      },
+    })
+  await db.supplierProfile.update({
+    where: { companyId: supplierId },
+    data: { onboardingStatus: 'under_review', registryPhone: '+90 212 000 4400' },
+  })
+  await db.supplierBankAccount.create({
+    data: {
+      supplierId,
+      bankName: 'TEST BANK · Istanbul branch',
+      accountName: 'EXAMPLE HIDROLIK SANAYI A.S.',
+      currency: 'EUR',
+      ibanEnc: Buffer.from('sealed-test'),
+      ibanLast4: '8745',
+      swift: 'TESTTRIS',
+      status: 'verified',
+      nameMatchesRegistry: true,
+      letterMatchesIban: true,
+      callbackNumber: '+90 212 000 4400',
+      callbackNumberSource: 'registry',
+      callbackSpokeTo: 'Selin Example',
+      callbackSpokeToRole: 'Accounts',
+      callbackAt: at,
+      callbackRecordedById: ownerId,
+      callbackGenuine: true,
+      callbackOutcome: 'genuine',
+      verifiedAt: at,
+    },
+  })
+  await db.supplierApproval.create({
+    data: {
+      supplierId,
+      decision: 'propose',
+      fromTier: 'contact_only',
+      toTier: 'contact_only',
+      reason: 'fills a gap in 4SH hose',
+      decidedById: helperId,
+      decidedAt: at,
+    },
+  })
+}

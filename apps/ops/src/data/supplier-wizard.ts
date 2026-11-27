@@ -188,3 +188,32 @@ export async function getSupplierWizard(id: string): Promise<SupplierWizard | nu
     started: `Started ${day(p.proposedAt ?? now)}${proposer ? ` · ${proposer.name}` : ''}`,
   }
 }
+
+/** Board 51's reads: screening rows, bank summary (never the IBAN), the decision facts, the timeline, and context. */
+export async function getVettingData(supplierId: string) {
+  const { screeningRows } = await import('../server/directory/screening')
+  const { bankSummary } = await import('../server/directory/bank')
+  const { approvalTimeline, decisionFacts } = await import('../server/directory/approval')
+  const [screening, banks, facts, timeline, extra, lastRun] = await Promise.all([
+    screeningRows(supplierId),
+    bankSummary(supplierId),
+    decisionFacts(supplierId),
+    approvalTimeline(supplierId),
+    opsDb.supplierProfile.findUnique({
+      where: { companyId: supplierId },
+      select: { registryPhone: true, company: { select: { phone: true, lineCards: { select: { trade: { select: { name: true } } } } } } },
+    }),
+    opsDb.screeningCheck.findFirst({ where: { companyId: supplierId }, orderBy: { checkedAt: 'desc' }, select: { checkedAt: true } }),
+  ])
+  return {
+    screening,
+    bank: banks[0] ?? null,
+    /** The cooling-off end when it is still running (decided here, not during render). */
+    coolingOffOpen: banks[0]?.coolingOffUntil && banks[0].coolingOffUntil > new Date() ? banks[0].coolingOffUntil : null,
+    facts,
+    timeline,
+    registryPhone: extra?.registryPhone ?? extra?.company.phone ?? null,
+    trades: extra?.company.lineCards.flatMap((l) => (l.trade ? [l.trade.name] : [])).slice(0, 3) ?? [],
+    lastRunAt: lastRun?.checkedAt ?? null,
+  }
+}
