@@ -1,15 +1,31 @@
 import HistoryTab from '../../../../components/history/HistoryTab'
-import SubNav from '../../../../components/route/SubNav'
-import SettingsSkeleton from '../../../../components/skeleton/SettingsSkeleton'
+import { ButtonLink } from '@indus/ops-ui/controls'
+import { Chip } from '@indus/ops-ui/status'
+import type { Route } from 'next'
+import { notFound } from 'next/navigation'
+import {
+  BuysCard,
+  EnquiriesCard,
+  LeadsCard,
+  LostReasonsCard,
+  QuotationsCard,
+} from '../../../../components/directory/ClientProfileParts'
+import {
+  ClientProfileForm,
+  ContactsEditor,
+} from '../../../../components/directory/DirectoryEditors'
+import ProfileHeader from '../../../../components/directory/ProfileHeader'
+import { getClientPage } from '../../../../data/clients'
 import { requireOpsUser } from '../../../../lib/access'
 import { parseHistorySearch } from '../../../../lib/history-params'
 import { signInFor } from '../../../../lib/page-access'
 import { recordId, routeParam } from '../../../../lib/route-params'
-import { to } from '../../../../lib/routes'
 
 /**
- * Board 12 · Client profile (T7). S10 builds it; S06 adds its History view (`?view=history`, board 113's
- * RecordHistory over the client's company row).
+ * Board 12 · Client profile (S10-T02): header with the meta line and five figures (RFQs YTD · Quoted YTD · Won YTD
+ * · Win rate · Avg margin won, masked for a Helper without canSeeMargins), Enquiries, Quotations sent and Leads, and
+ * the rail (contacts, what they buy, lost reasons), then the per-client defaults. Primary "New enquiry", secondary
+ * "New lead". S06's History view stays at `?view=history`.
  */
 export default async function ClientsIdPage({
   params,
@@ -22,18 +38,6 @@ export default async function ClientsIdPage({
   const user = await requireOpsUser().catch(signInFor(`/clients/${id}`))
   const clientId = routeParam(recordId, id)
   const raw = await searchParams
-  const subnav = (
-    <SubNav
-      groups={[
-        {
-          items: [
-            { label: 'Overview', href: to(`/clients/${clientId}`) },
-            { label: 'History', href: to(`/clients/${clientId}?view=history`) },
-          ],
-        },
-      ]}
-    />
-  )
   if (raw.view === 'history') {
     return (
       <div className="px-io-page-x py-6">
@@ -49,13 +53,59 @@ export default async function ClientsIdPage({
       </div>
     )
   }
+  const page = await getClientPage(clientId, user)
+  if (!page) notFound()
   return (
-    <SettingsSkeleton
-      crumb="Directory · Clients"
-      title="Client"
-      subnav={subnav}
-      sprint="S10"
-      what="Board 12: the client’s contacts, enquiries, orders and documents."
-    />
+    <div data-built="client-profile">
+      <ProfileHeader
+        crumb={{ label: 'Clients', href: '/clients' }}
+        title={page.name}
+        meta={page.meta || 'Add the industry, place and terms below.'}
+        chips={page.profile.creditHold ? <Chip tone="warn" label="Credit hold" /> : null}
+        actions={
+          <>
+            <ButtonLink variant="ghost" href={`/clients/${page.id}?view=history` as Route}>
+              History
+            </ButtonLink>
+            <ButtonLink href={`/enquiries/leads?new=1&client=${page.id}` as Route}>
+              New lead
+            </ButtonLink>
+            <ButtonLink variant="primary" href={`/enquiries/new?client=${page.id}` as Route}>
+              New enquiry
+            </ButtonLink>
+          </>
+        }
+        kpis={[
+          { label: 'RFQs YTD', value: String(page.kpis.rfqs) },
+          { label: 'Quoted YTD', value: page.kpis.quoted },
+          { label: 'Won YTD', value: page.kpis.won },
+          { label: 'Win rate', value: page.kpis.winRate ?? '—' },
+          ...(page.kpis.avgMargin === null && user.role !== 'owner' && !user.canSeeMargins
+            ? []
+            : [{ label: 'Avg margin won', value: page.kpis.avgMargin ?? '—' }]),
+        ]}
+      />
+      <div className="px-io-page-x grid grid-cols-[minmax(0,1fr)_280px] gap-4 py-6">
+        <div className="flex min-w-0 flex-col gap-4">
+          <EnquiriesCard page={page} />
+          <QuotationsCard page={page} />
+          <LeadsCard page={page} />
+          <ClientProfileForm
+            companyId={page.id}
+            profile={page.profile}
+            options={page.options}
+            isOwner={user.role === 'owner'}
+          />
+        </div>
+        <aside aria-label="Client facts" className="flex flex-col gap-4">
+          <ContactsEditor companyId={page.id} contacts={page.contacts} />
+          <BuysCard page={page} />
+          <LostReasonsCard page={page} />
+          {page.aliases.length ? (
+            <p className="text-io-ink-3 m-0 text-[12px]">Also known as {page.aliases.join(', ')}</p>
+          ) : null}
+        </aside>
+      </div>
+    </div>
   )
 }

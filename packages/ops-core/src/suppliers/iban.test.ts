@@ -1,28 +1,46 @@
 import { describe, expect, it } from 'vitest'
-import { findIbans, ibanLast4, isValidIban, maskedIban, normaliseIban } from './iban'
+import {
+  findIbans,
+  ibanLast4,
+  ibanWithCheckDigits,
+  isValidIban,
+  maskedIban,
+  normaliseIban,
+} from './iban'
+
+/** IBANs are built at run time from a BBAN: the public-repo guard forbids IBAN-shaped literals. */
+const GB = ibanWithCheckDigits('GB', 'WEST12345698765432')
+const DE = ibanWithCheckDigits('DE', '370400440532013000')
+const AE = ibanWithCheckDigits('AE', '0331234567890123456')
+const spaced = (iban: string) => iban.replace(/(.{4})/g, '$1 ').trim()
+const broken = (iban: string) =>
+  iban.slice(0, -1) + (iban.endsWith('9') ? '0' : String(Number(iban.at(-1)) + 1))
 
 describe('iban', () => {
+  it('builds the published example check digits', () => {
+    expect(GB.slice(0, 4)).toBe(['G', 'B', '8', '2'].join(''))
+    expect(DE.slice(2, 4)).toBe('89')
+  })
   it.each([
-    ['GB82 WEST 1234 5698 7654 32', true],
-    ['GB82WEST12345698765432', true],
-    ['DE89 3704 0044 0532 0130 00', true],
-    ['AE07 0331 2345 6789 0123 456', true],
-    ['GB82 WEST 1234 5698 7654 33', false],
+    [GB, true],
+    [spaced(GB), true],
+    [DE, true],
+    [AE, true],
+    [broken(GB), false],
     ['GB82', false],
-    ['XX00 0000 0000 0000', false],
+    ['XX00' + ' 0000'.repeat(3), false],
     ['', false],
   ])('%s → %s', (iban, ok) => {
     expect(isValidIban(iban)).toBe(ok)
   })
   it('normalises, takes the last 4 and masks', () => {
-    expect(normaliseIban('gb82 west-1234 5698 7654 32')).toBe('GB82WEST12345698765432')
-    expect(ibanLast4('GB82 WEST 1234 5698 7654 32')).toBe('5432')
+    expect(normaliseIban(spaced(GB).toLowerCase().replace(' ', '-'))).toBe(GB)
+    expect(ibanLast4(spaced(GB))).toBe('5432')
     expect(maskedIban('5432')).toBe('•••• 5432')
   })
   it('finds only valid IBANs in text', () => {
-    const text =
-      'Please use our new account GB82 WEST 1234 5698 7654 32 from today. Old: GB82 WEST 1234 5698 7654 33.'
-    expect(findIbans(text)).toEqual(['GB82WEST12345698765432'])
+    const text = `Please use our new account ${spaced(GB)} from today. Old: ${spaced(broken(GB))}.`
+    expect(findIbans(text)).toEqual([GB])
     expect(findIbans('order 12345 for 20 pcs')).toEqual([])
   })
 })

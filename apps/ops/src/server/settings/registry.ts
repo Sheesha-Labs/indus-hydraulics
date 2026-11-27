@@ -494,7 +494,7 @@ export const SETTINGS = {
     label: 'Client questions: reminder, call and fallback',
     section: 'enquiries',
   }),
-  'supplierDocs.request': def({
+  'supplier_docs.request': def({
     schema: supplierDocsRequest,
     ownerOnly: true,
     signoff: true,

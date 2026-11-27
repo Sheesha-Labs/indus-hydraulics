@@ -1,7 +1,7 @@
 -- Indus Operations · S10-T04 · the supplier document request and its uploads (board 50, /u/[token], C28)
 --
 --   ops.supplier_document_request  one secure upload link per request: only the SHA-256 of the 32-byte token is stored
---                                  (tokenHash, unique), the kinds asked for, expiry (settings supplierDocs.request,
+--                                  (tokenHash, unique), the kinds asked for, expiry (settings supplier_docs.request,
 --                                  14 days), the next reminder (every 4 days) and how many went, the email that carried
 --                                  the link. status open → completed | expired | revoked.
 --   ops.supplier_document_upload   one row per file a supplier uploaded through the link: the stored file, the kind, the

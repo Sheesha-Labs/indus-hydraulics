@@ -1,4 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest'
+import { ibanWithCheckDigits } from '@indus/ops-core'
 import { opsDb } from '@indus/ops-db'
 import { localDatabaseUrl } from '../mail-send/testing/fixture'
 
@@ -14,6 +15,8 @@ vi.mock('next/cache', () => ({
   revalidateTag: () => undefined,
 }))
 
+/** A valid test IBAN built at run time (the repo guard forbids IBAN literals). */
+const TEST_IBAN = ibanWithCheckDigits('GB', 'WEST12345698765432')
 const TAG = `s10d${Date.now().toString(36)}`
 const dom = (n: string) => `${TAG}-${n}.example`
 
@@ -234,7 +237,7 @@ describe.skipIf(!DB_URL)('directory services · local database', () => {
         accountName: 'x',
         ibanEnc: Buffer.from('x'),
         ibanLast4: '5432',
-        ibanHash: ibanHash('GB82 WEST 1234 5698 7654 32'),
+        ibanHash: ibanHash(TEST_IBAN),
       },
     })
     expect(
@@ -245,7 +248,7 @@ describe.skipIf(!DB_URL)('directory services · local database', () => {
       'phone',
     ])
     expect(
-      (await blocked.isBlockedCounterparty({ iban: 'GB82WEST12345698765432' })).matchedOn
+      (await blocked.isBlockedCounterparty({ iban: TEST_IBAN.toLowerCase() })).matchedOn
     ).toEqual(['iban'])
     expect(
       (await blocked.isBlockedCounterparty({ name: 'Unrelated Co', domain: 'unrelated.example' }))

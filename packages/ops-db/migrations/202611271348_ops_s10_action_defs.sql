@@ -1,12 +1,6 @@
--- Indus Operations · S10 · settings defaults (P09, C18, C21, C40), action defs and email templates (CLAUDE.md §17)
+-- Indus Operations · S10 · action defs and email templates (CLAUDE.md §17)
 --
--- Settings, awaiting the Owner's sign-off (open items P09, P23):
---   supplierDocs.request   board 50: the upload link expires after 14 days, reminders every 4 days, 30 requests per
---                          10 minutes per link and per address on /u.
---   suppliers.trust        boards 51, 52, 130: trial = first 3 POs, each ≤ USD 25,000, TPI at works on each; re-screen
---                          every 90 days and before any PO above USD 50,000; re-propose 6 months after a rejection;
---                          Trial → Approved suggested after 3 good POs; 24 h cooling-off after a verified bank change.
---   documents.reminders    C18: reminders at 60, 30 and 7 days before a document expires.
+-- The settings this sprint adds are in 202611271415_ops_s10_settings_seed.sql (the registry test reads *_settings_seed.sql).
 --
 -- Action defs (system positions 144–146):
 --   request_supplier_documents  board 50: the email that carries the /u link to a new supplier, from purchase@.
@@ -23,15 +17,6 @@
 -- ON CONFLICT DO NOTHING throughout: a value, level or wording the Owner changed is kept.
 
 BEGIN;
-
-INSERT INTO "ops"."settings_entry" ("key", "value", "version", "ownerOnly", "signoffStatus", "updatedAt")
-VALUES
-  ('supplierDocs.request', '{"expiryDays":14,"reminderEveryDays":4,"rateLimitPer10Min":30}', 0, true, 'awaiting', now()),
-  ('suppliers.trust',
-    '{"trialPos":3,"trialPerPoUsd":25000,"trialTpiEachPo":true,"rescreenDays":90,"rescreenAboveUsd":50000,"reproposeMonths":6,"approvedAfterPos":3,"coolingOffHours":24}',
-    0, true, 'awaiting', now()),
-  ('documents.reminders', '{"thresholds":[60,30,7]}', 0, true, 'awaiting', now())
-ON CONFLICT ("key") DO NOTHING;
 
 INSERT INTO "ops"."autopilot_action_def"
   ("key", "group", "label", "description", "ruleText", "position", "configurable", "lockedLevel", "maxLevel",

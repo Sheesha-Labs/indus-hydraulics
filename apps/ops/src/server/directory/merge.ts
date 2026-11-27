@@ -205,7 +205,8 @@ export async function mergeCompanies(
       d.findMany({ where: { [col]: survivorId }, select }),
       d.findMany({ where: { [col]: mergedId }, select }),
     ])
-    const key = (r: Record<string, unknown>) => others.map((o) => JSON.stringify(r[o] ?? null)).join('\u0001')
+    const key = (r: Record<string, unknown>) =>
+      others.map((o) => JSON.stringify(r[o] ?? null)).join('\u0001')
     const taken = new Set(mine.map(key))
     const ok = theirs.filter((r) => !taken.has(key(r)))
     const clash = theirs.filter((r) => taken.has(key(r)))

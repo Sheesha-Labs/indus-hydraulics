@@ -55,6 +55,9 @@ const AWAITING: readonly SettingKey[] = [
   'qualify.free_mail_domains', // S09-T04
   'qualify.rdap_enabled', // S09-T06
   'questions.clock', // S09-T07
+  'supplier_docs.request', // S10-T04
+  'suppliers.trust', // S10-T05
+  'documents.reminders', // S10-T08
 ]
 
 function seeded(key: SettingKey): unknown {
@@ -73,7 +76,7 @@ describe('settings registry vs the seed migration', () => {
 
   it('seeds exactly the registered keys', () => {
     expect(rows.map((r) => r.key).sort()).toEqual([...SETTING_KEYS].sort())
-    expect(SETTING_KEYS).toHaveLength(31)
+    expect(SETTING_KEYS).toHaveLength(34)
   })
 
   it('every seeded value parses with its schema', () => {

@@ -3,7 +3,7 @@
  * shown in clear ("•••• 1234"). The full IBAN lives only sealed in supplier_bank_account.ibanEnc.
  */
 
-/** Upper-case without spaces or dashes ("gb82 west-1234…" → "GB82WEST1234…"). */
+/** Upper-case without spaces or dashes ("gb… west-12…" → "GB…WEST12…"). */
 export function normaliseIban(input: string): string {
   return input.replace(/[\s-]+/g, '').toUpperCase()
 }
@@ -45,4 +45,15 @@ export function findIbans(text: string): string[] {
     }
   }
   return [...out]
+}
+
+/** An IBAN from a country code and BBAN with its check digits computed (tests and fixtures build IBANs this way). */
+export function ibanWithCheckDigits(country: string, bban: string): string {
+  const base = normaliseIban(bban) + country.toUpperCase() + '00'
+  let rem = 0
+  for (const ch of base) {
+    const v = ch >= 'A' && ch <= 'Z' ? String(ch.charCodeAt(0) - 55) : ch
+    for (const d of v) rem = (rem * 10 + Number(d)) % 97
+  }
+  return `${country.toUpperCase()}${String(98 - rem).padStart(2, '0')}${normaliseIban(bban)}`
 }
