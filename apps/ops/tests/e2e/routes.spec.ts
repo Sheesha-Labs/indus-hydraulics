@@ -98,6 +98,8 @@ for (const who of ['owner', 'helper'] as const satisfies readonly DemoUser[]) {
 }
 
 test.describe('routes · redirects and records', () => {
+  // Several navigations per test against `next dev`, each of which may compile its route first.
+  test.describe.configure({ timeout: 120_000 })
   test('routes: /mail, /reports and /orders/SO-0001 open their first child', async ({
     page,
     signedInAs,
@@ -215,6 +217,8 @@ test.describe('routes · redirects and records', () => {
 })
 
 test.describe('routes · outside the shell', () => {
+  // Several navigations per test against `next dev`, each of which may compile its route first.
+  test.describe.configure({ timeout: 120_000 })
   test('routes: welcome and setup render without AppShell, one main', async ({
     page,
     signedInAs,
@@ -225,12 +229,13 @@ test.describe('routes · outside the shell', () => {
     await expect(page.locator('[data-template="T11"]')).toBeVisible()
     await expect(page.getByRole('navigation', { name: 'Main' })).toHaveCount(0)
     await page.getByRole('button', { name: 'Start setup' }).click()
-    await expect(page).toHaveURL(/\/setup\/company$/)
+    // A server action then a redirect into a route the dev server may compile on first use.
+    await expect(page).toHaveURL(/\/setup\/company$/, { timeout: 30_000 })
     await expect(page.locator('[data-template="T9"][data-layout="rail"]')).toBeVisible()
     await expect(page.locator('main')).toHaveCount(1)
     await expect(page.locator('h1')).toHaveCount(1)
     await page.getByRole('link', { name: /^Next: mailboxes/ }).click()
-    await expect(page).toHaveURL(/\/setup\/mailboxes$/)
+    await expect(page).toHaveURL(/\/setup\/mailboxes$/, { timeout: 30_000 })
     await page.goto('/setup/nothing')
     await expect(page.locator('[data-boundary="not-found"]')).toBeVisible()
     expect(errors).toEqual([])
