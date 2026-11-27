@@ -274,7 +274,32 @@ const definition: ActionDefinition<AlertInput, AlertOut> = {
           skipDuplicates: true,
         })
     )
-    return { note: `Payments to ${i.supplierName} blocked`, undoable: false }
+    // The message waits on the Owner: "needs you" in Mail, and the Needs Krishan label in Gmail (after commit).
+    const m = await tx.mailMessage.findUnique({
+      where: { id: i.messageId },
+      select: { handledState: true },
+    })
+    if (m && m.handledState !== 'needs_you')
+      await writeTracked(
+        tx,
+        {
+          actor: { kind: 'assistant' },
+          actionId: ctx.actionId,
+          subjectType: 'mail_message',
+          subjectId: i.messageId,
+          changes: [
+            { field: 'handledState', before: m.handledState, after: 'needs_you', kind: 'status' },
+          ],
+          note: 'Bank change requested: waits for the call-back',
+        },
+        (t) =>
+          t.mailMessage.update({ where: { id: i.messageId }, data: { handledState: 'needs_you' } })
+      )
+    return {
+      note: `Payments to ${i.supplierName} blocked`,
+      undoable: false,
+      emit: [{ name: 'ops/review.changed', data: { messageId: i.messageId } }],
+    }
   },
 }
 

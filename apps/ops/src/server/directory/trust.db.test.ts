@@ -170,6 +170,9 @@ describe.skipIf(!DB_URL)('trust · local database', () => {
     expect(notes.every((n) => n.event === 'bank_detail_change' && n.severity === 'critical')).toBe(
       true
     )
+    expect((await opsDb.mailMessage.findUniqueOrThrow({ where: { id } })).handledState).toBe(
+      'needs_you'
+    )
     const gate = await trust.supplierPaymentGate(supplierId)
     expect(gate).toMatchObject({ allowed: false, reason: 'bank_change_pending' })
     const page = await trust.bankChangeData(supplierId, accounts[0]!.id)
