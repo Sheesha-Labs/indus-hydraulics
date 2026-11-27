@@ -62,6 +62,7 @@ export default async function SettingsMailboxesPage({
               reconnect={
                 context.allowedRoles.includes(card.role) ? (
                   <ConnectFlowHost
+                    key={`reconnect-${card.id}`}
                     {...modal}
                     trigger="Reconnect"
                     preset={{ role: card.role, address: card.address, step: 2 }}
@@ -70,7 +71,12 @@ export default async function SettingsMailboxesPage({
               }
               disconnect={
                 page.canManage && card.status !== 'disconnected' ? (
-                  <DisconnectModal mailboxId={card.id} address={card.address} role={card.role} />
+                  <DisconnectModal
+                    key={`disconnect-${card.id}`}
+                    mailboxId={card.id}
+                    address={card.address}
+                    role={card.role}
+                  />
                 ) : null
               }
             />
