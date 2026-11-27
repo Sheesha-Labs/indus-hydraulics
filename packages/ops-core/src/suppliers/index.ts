@@ -1,1 +1,7 @@
 export * from './short-code'
+export * from './iban'
+export * from './stats'
+export * from './documents'
+export * from './trust'
+export * from './line-card'
+export * from './promotion'

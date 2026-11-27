@@ -34,6 +34,9 @@ async function signedIn(): Promise<Response | null> {
 
 const notFound = () => new Response('Not found', { status: 404, headers: NO_STORE })
 
+const PORTAL_KEY =
+  /^supplier\/[0-9a-f-]{36}\/request\/[0-9a-f-]{36}\/[0-9a-f-]{36}\.(pdf|png|jpe?g)$/
+
 /** A stored file id (UUID) or the local stand-in's path; anything else is not a file. */
 const FILE_ID = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|local)$/i
 
@@ -64,11 +67,15 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
 export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (id !== 'local') return notFound()
-  const refused = await signedIn()
-  if (refused) return refused
   if (!usesLocalStorage()) return notFound()
   const grant = verifyLocalUrl(new URL(request.url).searchParams, 'put')
   if (!grant) return notFound()
+  // S10: a supplier on /u has no session; like a Storage signed upload URL in production, the signed grant for the
+  // portal's own prefix (supplier/<id>/request/<requestId>/…) is the credential. Every other PUT needs a session.
+  if (!PORTAL_KEY.test(grant.key)) {
+    const refused = await signedIn()
+    if (refused) return refused
+  }
   const bytes = new Uint8Array(await request.arrayBuffer())
   if (bytes.length > LOCAL_MAX_BYTES) {
     return new Response('Too large', { status: 413, headers: NO_STORE })

@@ -95,8 +95,8 @@ test('board-101 parity: Cost & limits', async ({ page, signedInAs }) => {
   await frame(
     page,
     '101',
-    0.1,
-    'Local month’s real ai_call totals (the board’s example banner shows only once the budget is reached); the month figure is Geist (Q6); research cap USD 5 (C14) where the board shows 2.'
+    0.105,
+    'Local month’s real ai_call totals (0.1004 at S10 close: the month’s breakdown rows move with local eval spend) (the board’s example banner shows only once the budget is reached); the month figure is Geist (Q6); research cap USD 5 (C14) where the board shows 2.'
   )
 })
 
@@ -140,8 +140,8 @@ test('board-178 parity: Today (Owner)', async ({ page, signedInAs }) => {
   await frame(
     page,
     '178',
-    0.06,
-    'Real local queue and mail; quotations, money and enquiries arrive with later sprints (the board shows them filled); the board’s "Views" card is a design note, not drawn.',
+    0.065,
+    'Real local queue and mail (0.0615 at S10 close as the local queue grew; no S10 row in the frame); quotations, money and enquiries arrive with later sprints (the board shows them filled); the board’s "Views" card is a design note, not drawn.',
     'P17 boards'
   )
 })

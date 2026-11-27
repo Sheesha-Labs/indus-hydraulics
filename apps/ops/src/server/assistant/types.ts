@@ -204,6 +204,14 @@ export interface ActionDefinition<In = Json, Out = Json> {
   /** External actions: the email to schedule on approval. */
   outbound?(verified: Verified<Out>, input: In): OutboundDraft | null
   /**
+   * S10: the approved email's final subject and body, after the person's edits and just before it is queued, for a
+   * value the card must never hold (the /u upload link is derived from the request id at send time).
+   */
+  finalizeEmail?(
+    email: { subject: string; body: string },
+    input: In
+  ): { subject: string; body: string }
+  /**
    * S08-T07: what an external action records when its email is queued (inside the transaction that moves it to
    * queued), e.g. the acknowledgement's revert-by date on the enquiry. Its undo is an undo-release hook
    * (undo-hooks.ts), so cancelling the send takes it back. writeTracked only.

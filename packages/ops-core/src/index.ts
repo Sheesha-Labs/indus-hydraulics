@@ -5,6 +5,7 @@ export const OPS_CORE = '@indus/ops-core' as const
 export * from './assistant'
 export * from './autopilot'
 export * from './calendar'
+export * from './directory'
 export * from './document'
 export * from './identity'
 export * from './intake'

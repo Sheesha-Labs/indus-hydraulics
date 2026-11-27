@@ -359,6 +359,53 @@ describe.skipIf(!DB_URL)('send gate · local database', () => {
     })
   })
 
+  it('S10: a directory-only contact is never a recipient (by contactId or by address)', async () => {
+    seq += 1
+    const company = await db.company.create({
+      data: { name: `Example Valve Co ${TAG}${seq}`, isSupplier: true },
+      select: { id: true },
+    })
+    const listed = `listed-${TAG}${seq}@example.test`
+    const contact = await db.contact.create({
+      data: { companyId: company.id, email: listed, sourceKind: 'directory_only' },
+      select: { id: true },
+    })
+    try {
+      const byId = await queue({ contactId: contact.id, companyId: company.id })
+      expect(await gate.sendGate(byId, { env: PROD })).toEqual({
+        kind: 'stop',
+        reason: 'contact_not_verified',
+      })
+      expect((await status(byId)).failureReason).toBe('contact_not_verified')
+      const byAddress = await queue({ to: [listed] })
+      expect(await gate.sendGate(byAddress, { env: PROD })).toEqual({
+        kind: 'stop',
+        reason: 'contact_not_verified',
+      })
+      // Verified on the company's own page: the same address may receive mail.
+      await db.contact.update({
+        where: { id: contact.id },
+        data: { sourceKind: 'verified_on_page', sourceUrl: 'https://example.test/contact' },
+      })
+      const ok = await queue({ contactId: contact.id, to: [listed] })
+      expect(await gate.sendGate(ok, { env: PROD })).toEqual({ kind: 'go' })
+      // A bouncing contact on the row is refused too.
+      await db.contact.update({ where: { id: contact.id }, data: { status: 'bouncing' } })
+      const bounced = await queue({ contactId: contact.id, to: [listed] })
+      expect(await gate.sendGate(bounced, { env: PROD })).toEqual({
+        kind: 'stop',
+        reason: 'contact_not_verified',
+      })
+    } finally {
+      await db.notification.deleteMany({
+        where: { dedupeKey: { startsWith: 'contact_not_verified:' } },
+      })
+      await db.outboundEmail.deleteMany({ where: { contactId: contact.id } })
+      await db.contact.deleteMany({ where: { companyId: company.id } })
+      await db.company.delete({ where: { id: company.id } })
+    }
+  })
+
   it('outside production: a recipient not on OPS_SEND_ALLOWLIST → suppressed_preview; allow-listed → go', async () => {
     const id = await queue({ cc: ['someone@example.test'] })
     const preview = { APP_ENV: 'preview' as const, OPS_SEND_ALLOWLIST: [CLIENT] }

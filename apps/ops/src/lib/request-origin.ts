@@ -26,3 +26,9 @@ export function clientIp(h: Headers): string {
   }
   return 'unknown'
 }
+
+/** The caller's address for rate limits on public pages (reads request headers only; never a cookie or session). */
+export async function requestIp(): Promise<string> {
+  const { headers } = await import('next/headers')
+  return clientIp(await headers())
+}

@@ -253,7 +253,17 @@ export async function getManualEnquiry(batchId: string | null): Promise<{
   hasFiles: boolean
 }> {
   const [clients, batch] = await opsDb.$transaction([
-    opsDb.company.findMany({ orderBy: { name: 'asc' }, take: 300, select: { id: true, name: true } }),
+    // The Client picker: live companies that can be a client (never archived, merged or supplier-only).
+    opsDb.company.findMany({
+      where: {
+        archivedAt: null,
+        mergedIntoId: null,
+        OR: [{ isClient: true }, { isSupplier: false }],
+      },
+      orderBy: { name: 'asc' },
+      take: 300,
+      select: { id: true, name: true },
+    }),
     opsDb.intakeBatch.findMany({
       where: { id: batchId ?? '00000000-0000-0000-0000-000000000000' },
       take: 1,

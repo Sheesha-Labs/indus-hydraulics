@@ -48,6 +48,8 @@ export type ScheduleInput = {
   subjectId?: string | null
   createdById?: string | null
   retryOfId?: string | null
+  /** S10: the identifier check on supplier-bound text, read by the send gate (step 10) until S12's hook. */
+  identifierCheck?: Prisma.InputJsonValue | null
 }
 
 export type ScheduleResult = {
@@ -133,6 +135,7 @@ export async function scheduleSend(input: ScheduleInput, deps: Deps = {}): Promi
     id = await opsDb.$transaction(async (tx) => {
       const row = await tx.outboundEmail.create({
         data: {
+          ...(input.identifierCheck ? { identifierCheck: input.identifierCheck } : {}),
           channel: 'gmail',
           kind: input.kind,
           mailboxId: mailbox.id,

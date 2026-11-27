@@ -64,10 +64,9 @@ export const CONSOLE: readonly (readonly [string, string | null, Template])[] = 
   ['/money/close/2026-11', 'Money', 'T8'],
   ['/suppliers', 'Suppliers', 'T1'],
   ['/suppliers/new', 'Suppliers', 'T9'],
-  [`/suppliers/${ID}`, 'Suppliers', 'T7'],
-  [`/suppliers/${ID}/contacts`, 'Suppliers', 'T7'],
+  // S10: supplier and client profiles are real now (a fixture id is not found): tests/e2e/directory-suppliers.spec.ts
+  // and directory-clients.spec.ts open real ones; supplier-onboarding, -vetting and -line-card open the wizard steps.
   ['/clients', 'Clients', 'T1'],
-  [`/clients/${ID}`, 'Clients', 'T7'],
   ['/parts', 'Parts', 'T1'],
   [`/parts/${ID}`, 'Parts', 'T7'],
   ['/reports/overdue', 'Reports', 'T1'],
