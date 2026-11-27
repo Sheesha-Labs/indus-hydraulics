@@ -1,5 +1,12 @@
 import 'server-only'
-import { callbackRefusal, ibanLast4, isValidIban, normaliseIban } from '@indus/ops-core'
+import {
+  callbackRefusal,
+  findIbans,
+  ibanLast4,
+  isValidIban,
+  maskedIban,
+  normaliseIban,
+} from '@indus/ops-core'
 import { opsDb, type Prisma } from '@indus/ops-db'
 import { z } from 'zod'
 import { AccessError, type OpsUser } from '../../lib/access-core'
@@ -241,4 +248,14 @@ export async function bankSummary(
     ...r,
     recordedBy: recorders.find((u) => u.id === r.callbackRecordedById)?.name ?? null,
   }))
+}
+
+/** A text with every valid IBAN in it replaced by its masked form ("•••• 3456"), for showing an email. */
+export function maskIbans(text: string): string {
+  let out = text
+  for (const iban of findIbans(text)) {
+    const spaced = new RegExp(iban.split('').join('[ -]?'), 'gi')
+    out = out.replace(spaced, maskedIban(iban.slice(-4)))
+  }
+  return out
 }

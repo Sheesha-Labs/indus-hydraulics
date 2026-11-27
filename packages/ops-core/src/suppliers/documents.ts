@@ -119,3 +119,43 @@ export function isSelectableSupplier(p: {
     !(NOT_SELECTABLE as readonly string[]).includes(p.onboardingStatus)
   )
 }
+
+export interface DocumentFlag {
+  kind: string
+  label: string
+  tone: 'bad' | 'warn'
+  text: string
+}
+
+/**
+ * Board 133 state 3 (exported for S16's Compare cell): the most pressing document flag for one supplier. A live
+ * document of a kind that has expired, with no newer valid one of the same kind, is `bad` ("Certificate expired");
+ * one expiring within `warnDays` is `warn`. Archived documents are ignored. Null when nothing is due.
+ */
+export function supplierDocumentFlag(
+  docs: readonly HeldDocument[],
+  today: Date,
+  warnDays = 30
+): DocumentFlag | null {
+  const live = docs.filter((d) => !d.archivedAt && d.expiresAt)
+  const byKind = new Map<string, HeldDocument>()
+  for (const d of live) {
+    const prev = byKind.get(d.kind)
+    if (!prev || d.expiresAt!.getTime() > prev.expiresAt!.getTime()) byKind.set(d.kind, d)
+  }
+  let flag: DocumentFlag | null = null
+  let soonest = Number.POSITIVE_INFINITY
+  for (const d of byKind.values()) {
+    const left = Math.floor((d.expiresAt!.getTime() - today.getTime()) / 86_400_000)
+    const label = documentLabel(d.kind)
+    if (left < 0) {
+      if (flag?.tone !== 'bad' || left < soonest)
+        flag = { kind: d.kind, label, tone: 'bad', text: `Certificate expired · ${label}` }
+      soonest = Math.min(soonest, left)
+    } else if (left <= warnDays && flag?.tone !== 'bad' && left < soonest) {
+      flag = { kind: d.kind, label, tone: 'warn', text: `${label} expires in ${left} days` }
+      soonest = left
+    }
+  }
+  return flag
+}

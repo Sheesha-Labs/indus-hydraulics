@@ -277,6 +277,13 @@ export function ContactsRail({ page }: { page: Page }) {
         <ul className="m-0 list-none p-0">
           {page.contacts.map((c) => {
             const bouncing = c.status === 'bouncing'
+            // Board 133 state 5: a sendable address verified on the supplier's own page is proposed in its place.
+            const proposed = bouncing
+              ? page.contacts.find(
+                  (o) =>
+                    o.id !== c.id && o.sendable && o.status !== 'bouncing' && o.sourceUrl && o.email
+                )
+              : undefined
             return (
               <Row
                 key={c.id}
@@ -286,7 +293,7 @@ export function ContactsRail({ page }: { page: Page }) {
                   .join(' · ')}
                 sub={
                   bouncing
-                    ? 'Bouncing · removed from RFQs'
+                    ? `Bouncing · removed from RFQs${proposed ? ` · new address proposed: ${proposed.email}` : ''}`
                     : !c.sendable
                       ? 'Directory listing only · not used for mail'
                       : c.outOfOfficeUntil

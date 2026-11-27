@@ -165,3 +165,117 @@ test('board-52 line card and terms', async ({ page }) => {
     'terms as inputs (the board draws selects); Save line card and Save terms controls; categories from the taxonomy'
   )
 })
+
+/** Boards 130–132: one contact-only supplier with a pending bank change, as the alert leaves it. */
+async function seedTrust() {
+  const t = `${tag}tr`
+  const supplierId = (
+    await db.company.create({
+      data: {
+        name: 'Example Valvole S.p.A.',
+        isSupplier: true,
+        primaryDomain: `${t}.example`,
+        domains: [`${t}.example`],
+        country: 'IT',
+        supplierProfile: { create: { tier: 'contact_only', registryPhone: '+39 030 000 2140' } },
+      },
+      select: { id: true },
+    })
+  ).id
+  const mailbox = await db.mailbox.findFirstOrThrow({ select: { id: true } })
+  const thread = await db.mailThread.create({
+    data: { mailboxId: mailbox.id, gmailThreadId: `${t}-t` },
+    select: { id: true },
+  })
+  const msg = await db.mailMessage.create({
+    data: {
+      mailboxId: mailbox.id,
+      threadId: thread.id,
+      gmailMessageId: `${t}-m`,
+      direction: 'inbound',
+      origin: 'live',
+      fromAddress: `accounts@${t}-spa.example`,
+      toAddresses: ['purchase@example.test'],
+      subject: 'Updated bank details',
+      bodyText:
+        'Dear purchase team, please note our bank details have changed. Kindly remit the balance now to the new account. For questions call +39 351 000 8812.',
+      sentAt: new Date(),
+      receivedAt: new Date(),
+    },
+    select: { id: true },
+  })
+  const accountId = (
+    await db.supplierBankAccount.create({
+      data: {
+        supplierId,
+        bankName: 'Requested by email',
+        accountName: 'Example Valvole S.p.A.',
+        ibanEnc: Buffer.from('sealed'),
+        ibanLast4: '3456',
+        status: 'pending_verification',
+        requestedViaMessageId: msg.id,
+        requestedAt: new Date(),
+        riskFlags: {
+          lookalikeDomain: true,
+          firstEmailFromAddress: true,
+          urgency: true,
+          risk: 'high',
+          domain: `${t}-spa.example`,
+        },
+      },
+      select: { id: true },
+    })
+  ).id
+  return { supplierId, accountId }
+}
+
+let trust: { supplierId: string; accountId: string } | null = null
+const trustSeed = async () => (trust ??= await seedTrust())
+test.afterAll(async () => {
+  if (trust)
+    await db.company.update({ where: { id: trust.supplierId }, data: { archivedAt: new Date() } })
+})
+
+test('board-130 promote to trial', async ({ page }) => {
+  const s = await trustSeed()
+  await page.goto(`/suppliers/${s.supplierId}/promote`)
+  await expect(page.locator('[data-built="supplier-promote"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '130',
+    0.06,
+    'neutral names; the checklist reads the seed (no licence or screening recorded)'
+  )
+})
+
+test('board-131 block', async ({ page }) => {
+  const s = await trustSeed()
+  await page.goto(`/suppliers/${s.supplierId}/block`)
+  await expect(page.locator('[data-built="supplier-block"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '131',
+    0.06,
+    'rendered inside the profile frame, not over it; effects read the seed (none open)'
+  )
+})
+
+test('board-132 bank change', async ({ page }) => {
+  const s = await trustSeed()
+  await page.goto(`/suppliers/${s.supplierId}/bank-change/${s.accountId}`)
+  await expect(page.locator('[data-built="bank-change"]')).toBeVisible({ timeout: 90_000 })
+  await frame(
+    page,
+    '132',
+    0.08,
+    'requested account as last 4 only; no account on file in the seed; neutral names'
+  )
+})
+
+test('board-133 supplier states sheet', async ({ page }) => {
+  await page.goto('/_kit/supplier-states')
+  await expect(page.getByRole('region', { name: 'Trial limit reached' })).toBeVisible({
+    timeout: 90_000,
+  })
+  await frame(page, '133', 0.035, 'the eight states in the directory’s own copy with neutral names')
+})

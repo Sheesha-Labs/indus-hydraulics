@@ -264,3 +264,27 @@ export async function approvalTimeline(supplierId: string) {
   })
   return rows.map((r) => ({ ...r, by: users.find((u) => u.id === r.decidedById) ?? null }))
 }
+
+/**
+ * Board 133 state 7 (exported for S24): a trial supplier at its PO limit may take one more PO with the Owner's
+ * one-off approval, recorded as an approval row with the PO in its conditions. Owner only.
+ */
+export async function approveTrialOverride(
+  tx: Tx,
+  supplierId: string,
+  poRef: string,
+  user: Pick<OpsUser, 'id' | 'role'>
+): Promise<void> {
+  if (user.role !== 'owner') throw new AccessError('forbidden')
+  const p = await profile(tx, supplierId)
+  if (p.tier !== 'trial') throw new SafeError('Only a supplier on trial needs a one-off approval.')
+  await record(tx, {
+    supplierId,
+    decision: 'approve_trial',
+    fromTier: 'trial',
+    toTier: 'trial',
+    reason: 'One-off approval over the trial limit',
+    conditions: [`po:${poRef}`],
+    user,
+  })
+}

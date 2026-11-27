@@ -3,6 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { defineAction } from '../../../../../lib/define-action'
+import { requestActionQuietly } from '../../../../../server/assistant/request'
 import { decide, sendBack, submitForReview } from '../../../../../server/directory/approval'
 import {
   addSupplierBankAccount,
@@ -56,6 +57,17 @@ export const recordCallbackAction = defineAction({
   handler: async (input, ctx) => {
     const { supplierId, ...cb } = input
     const out = await ctx.withTx((tx) => recordBankCallback(tx, cb, ctx.user))
+    // Board 132: not genuine → a warning to the address on file (Draft and ask), never to the sender.
+    if (out.status === 'rejected')
+      await requestActionQuietly({
+        actionKey: 'bank_change_warning',
+        subjectType: 'company',
+        subjectId: supplierId,
+        trigger: 'person',
+        origin: 'live',
+        sourceVersion: cb.accountId,
+        requestedById: ctx.user.id,
+      })
     refresh(supplierId)
     return out
   },

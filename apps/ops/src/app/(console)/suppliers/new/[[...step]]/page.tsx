@@ -45,7 +45,11 @@ export default async function SuppliersNewStepPage({
     state: (i < at ? 'done' : i === at ? 'current' : 'todo') as 'done' | 'current' | 'todo',
   }))
   return (
-    <div className="flex min-h-full flex-col" data-built={`supplier-wizard-${current}`}>
+    <div
+      className="flex min-h-full flex-col"
+      data-template="T9"
+      data-built={`supplier-wizard-${current}`}
+    >
       <PageHeader
         crumb="Suppliers / New supplier"
         title={wizard?.name ?? 'New supplier'}

@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import { isSelectableSupplier, outstandingKinds, requiredDocuments } from './documents'
+import {
+  isSelectableSupplier,
+  outstandingKinds,
+  requiredDocuments,
+  supplierDocumentFlag,
+} from './documents'
 
 const today = new Date(Date.UTC(2026, 10, 27))
 const d = (y: number, m: number, day: number) => new Date(Date.UTC(y, m - 1, day))
@@ -71,5 +76,55 @@ describe('isSelectableSupplier', () => {
     [{ tier: 'blocked', onboardingStatus: null }, false],
   ])('%o → %s', (p, ok) => {
     expect(isSelectableSupplier(p)).toBe(ok)
+  })
+})
+
+describe('supplierDocumentFlag', () => {
+  const today = new Date('2026-11-27T00:00:00Z')
+  const at = (days: number) => new Date(today.getTime() + days * 86_400_000)
+  it('is null when nothing is due', () => {
+    expect(
+      supplierDocumentFlag([{ kind: 'iso_9001', status: 'received', expiresAt: at(200) }], today)
+    ).toBeNull()
+    expect(
+      supplierDocumentFlag([{ kind: 'iso_9001', status: 'received', expiresAt: null }], today)
+    ).toBeNull()
+  })
+  it('flags an expired certificate as bad, over an expiring one', () => {
+    const f = supplierDocumentFlag(
+      [
+        { kind: 'trade_licence', status: 'received', expiresAt: at(10) },
+        { kind: 'iso_9001', status: 'expired', expiresAt: at(-3) },
+      ],
+      today
+    )
+    expect(f).toMatchObject({ kind: 'iso_9001', tone: 'bad' })
+    expect(f!.text).toMatch(/^Certificate expired · /)
+  })
+  it('a newer valid document of the same kind clears the flag; archived ones are ignored', () => {
+    expect(
+      supplierDocumentFlag(
+        [
+          { kind: 'iso_9001', status: 'expired', expiresAt: at(-3) },
+          { kind: 'iso_9001', status: 'received', expiresAt: at(300) },
+          { kind: 'trade_licence', status: 'expired', expiresAt: at(-9), archivedAt: today },
+        ],
+        today
+      )
+    ).toBeNull()
+  })
+  it('warns on the soonest expiry within the window', () => {
+    const f = supplierDocumentFlag(
+      [
+        { kind: 'trade_licence', status: 'received', expiresAt: at(25) },
+        { kind: 'iso_9001', status: 'received', expiresAt: at(6) },
+      ],
+      today
+    )
+    expect(f).toMatchObject({
+      kind: 'iso_9001',
+      tone: 'warn',
+      text: expect.stringContaining('6 days'),
+    })
   })
 })

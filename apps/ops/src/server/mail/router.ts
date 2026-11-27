@@ -1,5 +1,6 @@
 import 'server-only'
 import { startEmailIntake } from '../intake/email-body'
+import { watchBankChange } from '../directory/bank-change'
 import { opsDb } from '@indus/ops-db'
 import type { StoredMailFlags } from '@indus/ops-core'
 import { requestAction, requestActionQuietly } from '../assistant/request'
@@ -76,6 +77,8 @@ export async function routeClassified(data: {
     await startEmailIntake(null, data.messageId).catch(() => null)
   // S09-T07: a client reply in the thread of an enquiry with questions waiting is read against them.
   if (cls === 'client_reply') await requestAnswerMatch(data.messageId)
+  // S10-T07 (board 132): mail from a known supplier asking to change bank details blocks payments at once.
+  const bankChange = await watchBankChange(data.messageId).catch(() => false)
   const id = await requestAction({
     actionKey: 'link_mail',
     subjectType: 'mail_message',
@@ -84,7 +87,8 @@ export async function routeClassified(data: {
     origin: 'live',
     sourceVersion: String(data.class),
   })
-  return also ? { requested: id, also: [also] } : { requested: id }
+  const extra = [...(also ? [also] : []), ...(bankChange ? ['bank_change_alert'] : [])]
+  return extra.length ? { requested: id, also: extra } : { requested: id }
 }
 
 async function requestAnswerMatch(messageId: string): Promise<void> {
