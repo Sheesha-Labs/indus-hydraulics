@@ -22,7 +22,7 @@ export default async function SettingsDocumentTemplatesPage() {
   await requireOpsUser().catch(signInFor(`/settings/document-templates`))
   const rows = await listTemplates()
   return (
-    <div className="flex max-w-[720px] flex-col gap-4">
+    <div data-built="document-templates" className="flex max-w-[720px] flex-col gap-4">
       <p className="text-io-ink-2 m-0 text-[12.5px] leading-[1.5]">
         The same blocks and styles are used by all nine templates, so a change to the letterhead or
         bank details applies everywhere at once. Publishing affects only new renders; issued PDFs

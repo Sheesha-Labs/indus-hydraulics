@@ -31,7 +31,8 @@ DO $$ BEGIN
   END IF;
   IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'terms_clause_approval_rule_check') THEN
     ALTER TABLE ops.terms_clause ADD CONSTRAINT terms_clause_approval_rule_check CHECK (
-      "approvalRule" IS NULL OR "approvalRule" ->> 'kind' IN ('always', 'payment_days_over', 'advance_pct_below'));
+      "approvalRule" IS NULL
+      OR coalesce("approvalRule" ->> 'kind', '') IN ('always', 'payment_days_over', 'advance_pct_below'));
   END IF;
 END $$;
 

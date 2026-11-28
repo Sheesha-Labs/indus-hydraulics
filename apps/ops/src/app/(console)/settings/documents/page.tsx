@@ -70,7 +70,7 @@ export default async function SettingsDocumentsPage() {
   ]
 
   return (
-    <div className="flex flex-col gap-5 pt-4 pb-8">
+    <div data-built="company-documents" className="flex flex-col gap-5 pt-4 pb-8">
       {isOwner ? <CompanyDocsActions /> : null}
       {accounts.some((a) => a.confirmedAt) ? null : (
         <Note tone="warn" title="Bank block not confirmed.">

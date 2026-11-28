@@ -43,14 +43,15 @@ describe.skipIf(!DB_URL)('intake match · local database', () => {
   ) {
     let mailMessageId: string | undefined
     if (mail) {
-      // Any client mailbox; the local database may have none left by other suites, so make one.
+      // Any mailbox holds the thread; the local database may have none left by other suites, so make one
+      // (role personal: a stray client mailbox would change what other suites see as sales@).
       const mb =
-        (await opsDb.mailbox.findFirst({ where: { role: 'client' }, select: { id: true } })) ??
+        (await opsDb.mailbox.findFirst({ select: { id: true } })) ??
         (await opsDb.mailbox.create({
           data: {
             address: `s04q-${TAG}-sales@example.test`,
             displayName: 'Sales Example',
-            role: 'client',
+            role: 'personal',
             status: 'live',
           },
           select: { id: true },

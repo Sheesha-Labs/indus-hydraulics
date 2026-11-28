@@ -136,6 +136,9 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
         clauses.updateClause(tx, c.id, { body: '{dayz} days' }, 2, owner())
       )
     ).rejects.toThrow(/not a variable/)
+    // Clearing the approval rule writes SQL NULL (never an empty object).
+    await opsDb.$transaction((tx) => clauses.updateClause(tx, c.id, { approvalRule: null }, 2, owner()))
+    expect((await opsDb.termsClause.findUniqueOrThrow({ where: { id: c.id } })).approvalRule).toBeNull()
     expect(
       await opsDb.activityEvent.count({
         where: {
@@ -144,7 +147,7 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
           at: { gte: started },
         },
       })
-    ).toBe(3)
+    ).toBe(4)
   })
 
   it('a seeded clause edited by a person is signed off', async () => {

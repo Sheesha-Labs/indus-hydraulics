@@ -81,7 +81,7 @@ export default async function SettingsNumberingPage({
   ]
 
   return (
-    <div className="flex flex-col gap-5 pt-4 pb-8">
+    <div data-built="numbering" className="flex flex-col gap-5 pt-4 pb-8">
       {isOwner ? <NumberingActions awaiting={rows.some((r) => r.signoffStatus === 'awaiting')} /> : null}
       <DataTable
         caption="Number series"

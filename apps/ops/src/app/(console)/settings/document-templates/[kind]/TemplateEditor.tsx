@@ -153,7 +153,7 @@ export default function TemplateEditor(p: TemplateEditorProps) {
 
   const cols = KIND_COLUMNS[p.kind]
   return (
-    <div className="grid grid-cols-[minmax(0,1fr)_334px] gap-6 pb-6">
+    <div data-built="document-template" className="grid grid-cols-[minmax(0,1fr)_334px] gap-6 pb-6">
       <HeaderActions>{actions}</HeaderActions>
       <div className="flex min-w-0 flex-col gap-4 pt-4">
         <div className="flex items-end justify-between gap-4">

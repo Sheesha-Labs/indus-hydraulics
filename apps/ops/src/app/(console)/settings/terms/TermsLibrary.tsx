@@ -68,7 +68,7 @@ export default function TermsLibrary(p: TermsLibraryProps) {
     `/settings/terms?category=${c}${p.selectedPresetId ? `&preset=${p.selectedPresetId}` : ''}`
 
   return (
-    <div className="grid grid-cols-[minmax(0,1fr)_280px] gap-6 pt-4 pb-8">
+    <div data-built="terms" className="grid grid-cols-[minmax(0,1fr)_280px] gap-6 pt-4 pb-8">
       {p.isOwner ? (
         <HeaderActions>
           <Button onClick={() => setImportOpen(true)}>Import from offer</Button>

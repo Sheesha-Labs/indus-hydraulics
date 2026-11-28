@@ -123,7 +123,9 @@ export async function createClause(
           title: input.title,
           body: input.body,
           variables: defaults as Prisma.InputJsonValue,
-          approvalRule: input.approvalRule ?? Prisma.DbNull,
+          // A null JSON column is left out rather than written as Prisma.DbNull: under next dev DbNull is
+          // matched by class identity and can serialise as {} (see write-tracked.ts).
+          ...(input.approvalRule ? { approvalRule: input.approvalRule } : {}),
           locked: input.locked,
           position,
           sourceRef: input.sourceRef ?? null,
@@ -201,7 +203,9 @@ export async function updateClause(
           title: after.title,
           body: after.body,
           variables: defaults as Prisma.InputJsonValue,
-          approvalRule: (after.approvalRule ?? Prisma.DbNull) as Prisma.InputJsonValue,
+          ...(after.approvalRule
+            ? { approvalRule: after.approvalRule as Prisma.InputJsonValue }
+            : {}),
           locked: after.locked,
           version: { increment: 1 },
           ...signoff,
@@ -209,6 +213,9 @@ export async function updateClause(
       })
       if (moved.count !== 1)
         throw new SafeError('Someone changed this clause a moment ago. Open it again.')
+      // Clearing the rule: plain SQL NULL (no Prisma.DbNull, see above).
+      if (!after.approvalRule)
+        await t.$executeRaw`UPDATE ops.terms_clause SET "approvalRule" = NULL WHERE id = ${id}::uuid`
     }
   )
   return { version: expectedVersion + 1 }
