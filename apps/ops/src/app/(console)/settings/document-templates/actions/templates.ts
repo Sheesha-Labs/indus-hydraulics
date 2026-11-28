@@ -1,9 +1,9 @@
 'use server'
 
 import { TEMPLATE_KINDS, templateDefinitionSchema, type DocKind } from '@indus/ops-core'
-import type { Prisma } from '@indus/ops-db'
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
+import type { AuditEntry } from '../../../../../lib/audit'
 import { defineAction } from '../../../../../lib/define-action'
 import {
   discardTemplateDraft,
@@ -27,8 +27,8 @@ const audit = (k: DocKind, field: string, before: unknown, after: unknown) => ({
   subjectId: templateSubjectId(k),
   kind: 'settings' as const,
   field: `document_template.${k}.${field}`,
-  before: before as Prisma.InputJsonValue,
-  after: after as Prisma.InputJsonValue,
+  before: before as NonNullable<AuditEntry['before']>,
+  after: after as NonNullable<AuditEntry['after']>,
 })
 
 export const saveTemplateDraftAction = defineAction({

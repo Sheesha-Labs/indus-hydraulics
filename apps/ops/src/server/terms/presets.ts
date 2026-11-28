@@ -292,3 +292,13 @@ export async function previewTerms(): Promise<{ label: string; text: string }[] 
   if (!id) return null
   return termsForDocument(await resolvePresetTerms(id, SAMPLE_TERMS_CONTEXT))
 }
+
+/** The clients a preset can be given to (board 39's picker): live companies with a client profile, first 300. */
+export async function clientChoices(): Promise<{ id: string; name: string }[]> {
+  return opsDb.company.findMany({
+    where: { archivedAt: null, mergedIntoId: null, clientProfile: { isNot: null } },
+    orderBy: { name: 'asc' },
+    take: 300,
+    select: { id: true, name: true },
+  })
+}

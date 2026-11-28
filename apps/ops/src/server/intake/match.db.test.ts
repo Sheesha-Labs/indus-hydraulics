@@ -43,10 +43,18 @@ describe.skipIf(!DB_URL)('intake match · local database', () => {
   ) {
     let mailMessageId: string | undefined
     if (mail) {
-      const mb = await opsDb.mailbox.findFirstOrThrow({
-        where: { role: 'client' },
-        select: { id: true },
-      })
+      // Any client mailbox; the local database may have none left by other suites, so make one.
+      const mb =
+        (await opsDb.mailbox.findFirst({ where: { role: 'client' }, select: { id: true } })) ??
+        (await opsDb.mailbox.create({
+          data: {
+            address: `s04q-${TAG}-sales@example.test`,
+            displayName: 'Sales Example',
+            role: 'client',
+            status: 'live',
+          },
+          select: { id: true },
+        }))
       const t = await opsDb.mailThread.create({
         data: { mailboxId: mb.id, gmailThreadId: `t-${TAG}-${randomUUID()}` },
       })

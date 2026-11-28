@@ -7,6 +7,7 @@ export { COMPANY_DOC_KINDS, COMPANY_DOC_LABEL, USED_IN } from '../../lib/company
 import { SafeError } from '../../lib/safe-message'
 import { writeTracked } from '../assistant/write-tracked'
 import { recordSupplierFile, verifySupplierObject } from '../directory/document-files'
+import { getSettingEntry } from '../settings/get'
 import { settingSubjectId } from '../settings/subject-id'
 import { OPS_BUCKETS } from '../storage/buckets'
 import { getStorage } from '../storage/storage'
@@ -194,3 +195,45 @@ export async function listCompanyDocuments(): Promise<CompanyDocRow[]> {
   }))
 }
 
+
+/**
+ * Board 213's letterhead images: the company.assets setting with its version (ImageSlot saves against it), the
+ * stored names of the logo and stamp, and the Owner's and the Helper's signatures (as in the setup wizard).
+ */
+export async function letterheadAssets(): Promise<{
+  version: number
+  logo: string | null
+  stamp: string | null
+  signatures: { userId: string; firstName: string; file: string | null }[]
+}> {
+  const [entry, team] = await Promise.all([
+    getSettingEntry('company.assets'),
+    opsDb.user.findMany({
+      where: { removedAt: null, status: 'active' },
+      orderBy: { createdAt: 'asc' },
+      select: { id: true, name: true, role: true },
+    }),
+  ])
+  const a = entry.value
+  const ids = [a.logoFileId, a.stampFileId, ...Object.values(a.signatures)].filter(
+    (x): x is string => !!x
+  )
+  const files = ids.length
+    ? await opsDb.storedFile.findMany({ where: { id: { in: ids } }, select: { id: true, filename: true } })
+    : []
+  const name = (id: string | null | undefined, fallback: string) =>
+    id ? (files.find((f) => f.id === id)?.filename ?? fallback) : null
+  const people = [team.find((u) => u.role === 'owner'), team.find((u) => u.role === 'helper')].filter(
+    (u): u is (typeof team)[number] => !!u
+  )
+  return {
+    version: entry.version,
+    logo: name(a.logoFileId, 'logo'),
+    stamp: name(a.stampFileId, 'stamp'),
+    signatures: people.map((u) => ({
+      userId: u.id,
+      firstName: u.name.split(/\s+/)[0] ?? u.name,
+      file: name(a.signatures[u.id], 'signature'),
+    })),
+  }
+}

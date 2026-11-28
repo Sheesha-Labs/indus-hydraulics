@@ -2,12 +2,10 @@ import { Note } from '@indus/ops-ui/card'
 import { Button } from '@indus/ops-ui/controls'
 import { DataTable, type Column } from '@indus/ops-ui/table'
 import { Chip } from '@indus/ops-ui/status'
-import { getSettingEntry } from '../../../../server/settings/get'
 import { requireOpsUser } from '../../../../lib/access'
 import { signInFor } from '../../../../lib/page-access'
-import { opsDb } from '@indus/ops-db'
 import { listOwnBankAccounts } from '../../../../server/company/bank'
-import { listCompanyDocuments, type CompanyDocRow } from '../../../../server/company/documents'
+import { letterheadAssets, listCompanyDocuments, type CompanyDocRow } from '../../../../server/company/documents'
 import BankBlockSection from './BankBlockSection'
 import CompanyDocsActions, { DocRowActions } from './CompanyDocsActions'
 import LetterheadAssets from './LetterheadAssets'
@@ -28,27 +26,11 @@ const DATE = new Intl.DateTimeFormat('en-GB', {
 export default async function SettingsDocumentsPage() {
   const user = await requireOpsUser().catch(signInFor(`/settings/documents`))
   const isOwner = user.role === 'owner'
-  const [docs, accounts, assets, team] = await Promise.all([
+  const [docs, accounts, assets] = await Promise.all([
     listCompanyDocuments(),
     listOwnBankAccounts(),
-    getSettingEntry('company.assets'),
-    opsDb.user.findMany({
-      where: { removedAt: null, status: 'active' },
-      orderBy: { createdAt: 'asc' },
-      select: { id: true, name: true, role: true },
-    }),
+    letterheadAssets(),
   ])
-  const fileIds = [
-    assets.value.logoFileId,
-    assets.value.stampFileId,
-    ...Object.values(assets.value.signatures),
-  ].filter((x): x is string => !!x)
-  const files = fileIds.length
-    ? await opsDb.storedFile.findMany({
-        where: { id: { in: fileIds } },
-        select: { id: true, filename: true },
-      })
-    : []
 
   const columns: Column<CompanyDocRow>[] = [
     { key: 'doc', label: 'Document', type: 'text', value: (r) => r.title },
@@ -147,26 +129,7 @@ export default async function SettingsDocumentsPage() {
         accounts={accounts.map((a) => ({ ...a, confirmedAt: a.confirmedAt?.toISOString() ?? null }))}
         isOwner={isOwner}
       />
-      <LetterheadAssets
-        isOwner={isOwner}
-        version={assets.version}
-        logo={assets.value.logoFileId ? (files.find((f) => f.id === assets.value.logoFileId)?.filename ?? 'logo') : null}
-        stamp={assets.value.stampFileId ? (files.find((f) => f.id === assets.value.stampFileId)?.filename ?? 'stamp') : null}
-        // As in the setup wizard: the Owner's signature and the Helper's.
-        signatures={[
-          team.find((u) => u.role === 'owner'),
-          team.find((u) => u.role === 'helper'),
-        ]
-          .filter((u): u is (typeof team)[number] => !!u)
-          .map((u) => {
-          const id = assets.value.signatures[u.id]
-          return {
-            userId: u.id,
-            firstName: u.name.split(/\s+/)[0] ?? u.name,
-            file: id ? (files.find((f) => f.id === id)?.filename ?? 'signature') : null,
-          }
-          })}
-      />
+      <LetterheadAssets isOwner={isOwner} {...assets} />
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import { isTermsCategory, TERMS_CATEGORIES, type TermsCategory } from '@indus/ops-core'
-import { opsDb } from '@indus/ops-db'
 import { requireOpsUser } from '../../../../lib/access'
 import { signInFor } from '../../../../lib/page-access'
 import { getTermsLibrary } from '../../../../server/terms/clauses'
 import { openImports } from '../../../../server/terms/import'
+import { clientChoices } from '../../../../server/terms/presets'
 import TermsLibrary from './TermsLibrary'
 
 /**
@@ -23,14 +23,7 @@ export default async function SettingsTermsPage({
   const [lib, imports, clients] = await Promise.all([
     getTermsLibrary(),
     openImports(),
-    isOwner
-      ? opsDb.company.findMany({
-          where: { archivedAt: null, mergedIntoId: null, clientProfile: { isNot: null } },
-          orderBy: { name: 'asc' },
-          take: 300,
-          select: { id: true, name: true },
-        })
-      : Promise.resolve([]),
+    isOwner ? clientChoices() : Promise.resolve([]),
   ])
   const preset = lib.presets.find((p) => p.id === sp.preset) ?? null
   return (
