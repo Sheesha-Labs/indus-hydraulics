@@ -3478,15 +3478,27 @@ model ScreeningCheck {
 
 /// Indus's own bank accounts, printed on quotations, PIs and invoices.
 model OwnBankAccount {
-  id              String    @id @default(uuid(7)) @db.Uuid
+  id              String        @id @default(uuid(7)) @db.Uuid
   bankName        String
   accountName     String
-  currency        String    @db.Char(3)
+  currency        String        @db.Char(3)
   iban            String
   swift           String?
-  showOnDocuments Boolean   @default(true)
-  isDefaultForCcy Boolean   @default(false)
-  archivedAt      DateTime? @db.Timestamptz(3)
+  showOnDocuments Boolean       @default(true)
+  isDefaultForCcy Boolean       @default(false)
+  archivedAt      DateTime?     @db.Timestamptz(3)
+  /// S11-T07: the exact lines printed in the bank block, confirmed by the Owner from his Zoho estimate.
+  branch          String?
+  printLines      String[]      @default([])
+  /// zoho_estimate | manual (CHECK).
+  source          String?
+  sourceFileId    String?       @db.Uuid
+  signoffStatus   SignoffStatus @default(awaiting)
+  /// ops.user(id) through a SQL foreign key (actor-column convention).
+  confirmedById   String?       @db.Uuid
+  confirmedAt     DateTime?     @db.Timestamptz(3)
+  createdAt       DateTime      @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime      @default(now()) @updatedAt @db.Timestamptz(3)
 
   @@map("own_bank_account")
   @@schema("ops")

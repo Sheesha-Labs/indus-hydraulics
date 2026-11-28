@@ -54,25 +54,20 @@ export async function loadLetterhead(i: {
 }
 
 /**
- * The bank lines printed on client documents: accounts shown on documents, the one for the document's
- * currency first (its default first), then the AED default. Empty when none is set up; the document then says
- * "Bank details to follow". S11-T07 adds the Owner's confirmation of the block.
+ * The bank lines printed on client documents (S11-T07): only a block the Owner has confirmed, printed exactly
+ * as confirmed (its printLines, read from his own Zoho estimate). The confirmed account for the document's
+ * currency first (its default first), else the confirmed AED one. Empty when none is confirmed; the document
+ * then says "Bank details to follow" and cannot be approved (clientDocumentApprovalGate).
  */
 export async function bankLines(currency: string | null): Promise<string[]> {
   const rows = await opsDb.ownBankAccount.findMany({
-    where: { showOnDocuments: true, archivedAt: null },
+    where: { showOnDocuments: true, archivedAt: null, confirmedAt: { not: null } },
     orderBy: [{ isDefaultForCcy: 'desc' }, { bankName: 'asc' }],
-    select: { bankName: true, accountName: true, currency: true, iban: true, swift: true },
+    select: { currency: true, printLines: true },
   })
   const pick =
-    rows.find((r) => currency && r.currency === currency) ??
-    rows.find((r) => r.currency === 'AED') ??
-    rows[0]
-  if (!pick) return []
-  return [
-    [pick.accountName, pick.bankName, pick.currency].join(' · '),
-    [`IBAN ${pick.iban}`, ...(pick.swift ? [`SWIFT ${pick.swift}`] : [])].join(' · '),
-  ]
+    rows.find((r) => currency && r.currency === currency) ?? rows.find((r) => r.currency === 'AED')
+  return pick?.printLines ?? []
 }
 
 async function image(fileId: string | null): Promise<PdfImage | null> {

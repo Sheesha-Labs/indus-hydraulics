@@ -38,6 +38,13 @@ const FRAMES = [
     note: 'Sub-nav is board 212 (C41), so the categories are chips above the clauses instead of a column; seeded clauses carry "Default · awaiting sign-off" and lock tags; preset client names differ (none assigned in the fixture); sidebar masked',
     masks: ['[data-part="sidebar"]'],
   },
+  {
+    board: '213',
+    path: '/settings/documents',
+    limit: 0.05,
+    note: 'The board shows six documents; the local database has the test ones or none. Our page adds the bank block and letterhead sections below the board’s two cards, and an unconfirmed-bank note above the table (open item 1); sidebar and table body masked (data)',
+    masks: ['[data-part="sidebar"]', '[role="table"] [role="rowgroup"]:last-child'],
+  },
 ] as const
 
 for (const f of FRAMES) {
