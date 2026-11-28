@@ -12,6 +12,14 @@ import { SETTINGS_ACTIONS_SLOT, settingsTitle } from '../../lib/settings-nav'
  * the rules apply to every send. S34 adds Save to its actions when a form is dirty (219). Document templates
  * (57) leave an empty slot that the editor fills with Save, Preview and Publish (SETTINGS_ACTIONS_SLOT).
  */
+/** S11 pages whose client editor owns the header's actions (57, 39, 213, 214). */
+const SLOT_PAGES = [
+  '/settings/document-templates',
+  '/settings/terms',
+  '/settings/documents',
+  '/settings/numbering',
+] as const
+
 export default function SettingsHeader() {
   const path = usePathname()
   const actions =
@@ -19,7 +27,7 @@ export default function SettingsHeader() {
       <ButtonLink href="/settings/sending" variant="secondary">
         Sending rules
       </ButtonLink>
-    ) : path.startsWith('/settings/document-templates/') ? (
+    ) : SLOT_PAGES.some((p) => path === p || path.startsWith(`${p}/`)) ? (
       <div id={SETTINGS_ACTIONS_SLOT} className="flex items-center gap-2" />
     ) : undefined
   const meta =

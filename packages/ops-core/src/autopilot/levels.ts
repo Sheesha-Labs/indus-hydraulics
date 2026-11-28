@@ -70,6 +70,8 @@ export const LOCKED_LEVELS = {
   // S10: a warning after a not-genuine bank call-back is always a person's decision; the summary is internal text.
   bank_change_warning: 'draft_and_ask',
   supplier_reliability_summary: 'do_quietly',
+  // S11 board 39: candidate clauses only; a person accepts each.
+  import_terms: 'do_quietly',
 } as const satisfies Partial<Record<ActionKey, AutopilotLevel>>
 
 /**

@@ -1,4 +1,5 @@
-import { TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import { audienceOf, TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import { previewTerms } from '../../../../../server/terms/presets'
 import { AccessError, requireOpsUser } from '../../../../../lib/access'
 import { renderPreviewPdf } from '../../../../../server/documents/render'
 import { getTemplateEditor, previewDocument } from '../../../../../server/documents/templates'
@@ -30,7 +31,9 @@ export async function GET(req: Request, { params }: { params: Promise<{ kind: st
   const e = await getTemplateEditor(k)
   const published = new URL(req.url).searchParams.get('published') === '1'
   const def = !published && e.draft ? e.draft.definition : e.published.definition
+  const terms = audienceOf(k) === 'client' ? await previewTerms() : null
   const data = previewDocument(k, def, {
+    ...(terms ? { terms } : {}),
     signer: { name: user.name, role: user.role === 'owner' ? 'Owner' : 'Helper' },
     previewLabel: 'Next free number',
   })

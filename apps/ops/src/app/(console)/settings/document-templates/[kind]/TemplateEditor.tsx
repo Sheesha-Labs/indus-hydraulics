@@ -12,9 +12,8 @@ import { Button, ButtonLink, Segmented } from '@indus/ops-ui/controls'
 import { Note } from '@indus/ops-ui/card'
 import { useToast } from '@indus/ops-ui/overlay'
 import { useRouter } from 'next/navigation'
-import { useMemo, useState, useSyncExternalStore } from 'react'
-import { createPortal } from 'react-dom'
-import { SETTINGS_ACTIONS_SLOT } from '../../../../../lib/settings-nav'
+import { useMemo, useState } from 'react'
+import HeaderActions from '../../../../../components/route/HeaderActions'
 import {
   discardTemplateDraftAction,
   publishTemplateAction,
@@ -37,9 +36,9 @@ export interface TemplateEditorProps {
   awaitingSignoff: boolean
   letterhead: Letterhead
   signer: BuildContext['signer']
+  /** The default preset's terms (client documents); null: the sample's own. */
+  terms: { label: string; text: string }[] | null
 }
-
-const noop = () => () => undefined
 
 const same = (a: TemplateDefinition, b: TemplateDefinition) => JSON.stringify(a) === JSON.stringify(b)
 
@@ -61,16 +60,15 @@ export default function TemplateEditor(p: TemplateEditorProps) {
   const dirty = !same(def, saved)
   const canPublish = !!p.draft && !dirty && !readOnly
 
-  // The settings header's slot, found after hydration (null on the server).
-  const slot = useSyncExternalStore(
-    noop,
-    () => document.getElementById(SETTINGS_ACTIONS_SLOT),
-    () => null
-  )
 
   const preview = useMemo(
-    () => previewSample(p.kind, def, { signer: p.signer, previewLabel: 'Next free number' }),
-    [p.kind, def, p.signer]
+    () =>
+      previewSample(p.kind, def, {
+        signer: p.signer,
+        previewLabel: 'Next free number',
+        ...(p.terms ? { terms: p.terms } : {}),
+      }),
+    [p.kind, def, p.signer, p.terms]
   )
 
   async function save() {
@@ -154,7 +152,7 @@ export default function TemplateEditor(p: TemplateEditorProps) {
   const cols = KIND_COLUMNS[p.kind]
   return (
     <div className="grid grid-cols-[minmax(0,1fr)_334px] gap-6 pb-6">
-      {slot ? createPortal(actions, slot) : null}
+      <HeaderActions>{actions}</HeaderActions>
       <div className="flex min-w-0 flex-col gap-4 pt-4">
         <div className="flex items-end justify-between gap-4">
           <div className="min-w-0">

@@ -99,6 +99,8 @@ export const SYSTEM_KEYS = [
   'request_supplier_documents',
   'bank_change_warning',
   'supplier_reliability_summary',
+  // S11 (board 39: candidate clauses read from an uploaded offer, for a person to accept)
+  'import_terms',
 ] as const
 
 /** Every seeded action key. Later sprints append their keys at the end. */

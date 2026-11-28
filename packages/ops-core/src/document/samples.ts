@@ -74,3 +74,12 @@ export function previewSample(
   })
   return applyTemplate(data, definition)
 }
+
+/** The neutral enquiry facts a terms preview fills when no enquiry is chosen (no client, no real site). */
+export const SAMPLE_TERMS_CONTEXT: Readonly<Record<string, string>> = {
+  site: 'Example site',
+  port: 'Example port',
+  incoterm: 'DAP',
+  origin: 'China',
+  delivery_date: '30 Jan 2027',
+}

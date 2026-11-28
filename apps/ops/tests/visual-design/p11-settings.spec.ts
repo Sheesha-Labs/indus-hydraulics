@@ -31,6 +31,13 @@ const FRAMES = [
     note: 'Sub-nav is board 212 (C41), so the document list is its own page and the editor sits where the board’s list and editor do; the preview is a real page of the sample document at scale s where the board draws a wireframe (masked); move buttons and the sign-off note are extra; sidebar masked',
     masks: ['[data-part="sidebar"]', '[data-doc-frame]'],
   },
+  {
+    board: '39',
+    path: '/settings/terms?category=payment',
+    limit: 0.1,
+    note: 'Sub-nav is board 212 (C41), so the categories are chips above the clauses instead of a column; seeded clauses carry "Default · awaiting sign-off" and lock tags; preset client names differ (none assigned in the fixture); sidebar masked',
+    masks: ['[data-part="sidebar"]'],
+  },
 ] as const
 
 for (const f of FRAMES) {
