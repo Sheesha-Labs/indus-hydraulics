@@ -45,6 +45,13 @@ const FRAMES = [
     note: 'The board shows six documents; the local database has the test ones or none. Our page adds the bank block and letterhead sections below the board’s two cards, and an unconfirmed-bank note above the table (open item 1); sidebar and table body masked (data)',
     masks: ['[data-part="sidebar"]', '[role="table"] [role="rowgroup"]:last-child'],
   },
+  {
+    board: '214',
+    path: '/settings/numbering',
+    limit: 0.06,
+    note: 'Thirteen series where the board lists eight (the internal ENQ, RFQ, SO, lead and tender-query series too); local next numbers and continuity differ from the board’s Zoho example (no out-of-step card unless one is); the header carries "Confirm numbering style" while C6 awaits sign-off; sidebar masked',
+    masks: ['[data-part="sidebar"]'],
+  },
 ] as const
 
 for (const f of FRAMES) {

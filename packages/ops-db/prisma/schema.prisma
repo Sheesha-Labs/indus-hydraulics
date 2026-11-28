@@ -2174,20 +2174,29 @@ model HelpArticle {
 
 /// One row per document family. Patterns are data (Settings › Numbering, 214).
 model NumberSequence {
-  key             String          @id
-  label           String
-  pattern         String
-  revisionPattern String?
-  scopeKind       NumberScopeKind @default(global)
-  padTo           Int             @default(0)
-  ownerOnly       Boolean         @default(true)
+  key              String          @id
+  label            String
+  pattern          String
+  revisionPattern  String?
+  scopeKind        NumberScopeKind @default(global)
+  padTo            Int             @default(0)
+  ownerOnly        Boolean         @default(true)
   /// Allocation is refused until a seed has been confirmed (INDUS/Q hand-over).
-  seededAt        DateTime?       @db.Timestamptz(3)
-  seededById      String?         @db.Uuid
-  seedEvidence    Json?
+  seededAt         DateTime?       @db.Timestamptz(3)
+  seededById       String?         @db.Uuid
+  seedEvidence     Json?
   /// S08-T06: an outside allocator reached this sequence's block (ops.numbering.continuity).
-  outOfStepAt     DateTime?       @db.Timestamptz(3)
-  updatedAt       DateTime        @updatedAt @db.Timestamptz(3)
+  outOfStepAt      DateTime?       @db.Timestamptz(3)
+  updatedAt        DateTime        @updatedAt @db.Timestamptz(3)
+  /// S11-T08: clear | out_of_step | not_checked | unseeded | check_failed (CHECK), from the nightly check.
+  continuityStatus String          @default("not_checked")
+  lastCheckedAt    DateTime?       @db.Timestamptz(3)
+  /// { next, perSource: [{ source, maxSeen, maxFormatted, lastSeenAt, lastRef, clashesWithNext }] }.
+  continuityDetail Json?
+  /// C6: the Owner confirms the Round 1 numbering style.
+  signoffStatus    SignoffStatus   @default(awaiting)
+  signedOffById    String?         @db.Uuid
+  signedOffAt      DateTime?       @db.Timestamptz(3)
 
   counters     NumberCounter[]
   issued       IssuedNumber[]

@@ -38,6 +38,8 @@ export interface TemplateEditorProps {
   signer: BuildContext['signer']
   /** The default preset's terms (client documents); null: the sample's own. */
   terms: { label: string; text: string }[] | null
+  /** The number the next document would print (ops.peek_number), or "Next free number". */
+  previewLabel: string
 }
 
 const same = (a: TemplateDefinition, b: TemplateDefinition) => JSON.stringify(a) === JSON.stringify(b)
@@ -65,10 +67,10 @@ export default function TemplateEditor(p: TemplateEditorProps) {
     () =>
       previewSample(p.kind, def, {
         signer: p.signer,
-        previewLabel: 'Next free number',
+        previewLabel: p.previewLabel,
         ...(p.terms ? { terms: p.terms } : {}),
       }),
-    [p.kind, def, p.signer, p.terms]
+    [p.kind, def, p.signer, p.terms, p.previewLabel]
   )
 
   async function save() {

@@ -1,4 +1,5 @@
-import { audienceOf, KIND_LABEL, TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import { audienceOf, KIND_LABEL, KIND_SEQUENCE, TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import { nextNumberFor } from '../../../../../server/numbering/sequences'
 import { previewTerms } from '../../../../../server/terms/presets'
 import { notFound } from 'next/navigation'
 import { requireOpsUser } from '../../../../../lib/access'
@@ -40,10 +41,11 @@ export default async function DocumentTemplatePage({
   const user = await requireOpsUser().catch(signInFor(`/settings/document-templates/${kind}`))
   if (!(TEMPLATE_KINDS as readonly string[]).includes(kind)) notFound()
   const k = kind as DocKind
-  const [e, { letterhead }, terms] = await Promise.all([
+  const [e, { letterhead }, terms, nextNumber] = await Promise.all([
     getTemplateEditor(k),
     loadLetterhead({ role: mailboxRoleFor(k) }),
     audienceOf(k) === 'client' ? previewTerms() : Promise.resolve(null),
+    nextNumberFor(KIND_SEQUENCE[k]),
   ])
   const pub = e.published
   const n = e.usedOnOpen
@@ -69,6 +71,7 @@ export default async function DocumentTemplatePage({
       letterhead={letterhead}
       signer={{ name: user.name, role: user.role === 'owner' ? 'Owner' : 'Helper' }}
       terms={terms}
+      previewLabel={nextNumber ?? 'Next free number'}
     />
   )
 }

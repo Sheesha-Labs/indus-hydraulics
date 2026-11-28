@@ -1,4 +1,5 @@
-import { audienceOf, TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import { audienceOf, KIND_SEQUENCE, TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import { nextNumberFor } from '../../../../../server/numbering/sequences'
 import { previewTerms } from '../../../../../server/terms/presets'
 import { AccessError, requireOpsUser } from '../../../../../lib/access'
 import { renderPreviewPdf } from '../../../../../server/documents/render'
@@ -35,7 +36,7 @@ export async function GET(req: Request, { params }: { params: Promise<{ kind: st
   const data = previewDocument(k, def, {
     ...(terms ? { terms } : {}),
     signer: { name: user.name, role: user.role === 'owner' ? 'Owner' : 'Helper' },
-    previewLabel: 'Next free number',
+    previewLabel: (await nextNumberFor(KIND_SEQUENCE[k])) ?? 'Next free number',
   })
   const bytes = await renderPreviewPdf(k, data, { template: false, signerId: user.id })
   return new Response(new Uint8Array(bytes), {
