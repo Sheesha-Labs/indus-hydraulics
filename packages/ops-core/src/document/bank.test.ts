@@ -57,7 +57,12 @@ describe('parseBankBlock (a neutral estimate layout)', () => {
 })
 
 describe('clientDocumentApprovalGate', () => {
-  const confirmed = { currency: 'AED', confirmedAt: new Date(), showOnDocuments: true, archivedAt: null }
+  const confirmed = {
+    currency: 'AED',
+    confirmedAt: new Date(),
+    showOnDocuments: true,
+    archivedAt: null,
+  }
   it('refuses every client kind until a block is confirmed; never gates supplier documents', () => {
     for (const kind of ['quotation', 'oa', 'pi', 'invoice', 'cn'] as const)
       expect(clientDocumentApprovalGate({ kind, currency: 'USD', ownBankAccounts: [] })).toEqual({
@@ -65,12 +70,18 @@ describe('clientDocumentApprovalGate', () => {
         reason: BANK_GATE_REASON,
       })
     for (const kind of ['rfq', 'po', 'pl', 'dn'] as const)
-      expect(clientDocumentApprovalGate({ kind, currency: 'USD', ownBankAccounts: [] }).allowed).toBe(true)
+      expect(
+        clientDocumentApprovalGate({ kind, currency: 'USD', ownBankAccounts: [] }).allowed
+      ).toBe(true)
   })
 
   it('a confirmed account for the currency, or a confirmed AED account, allows it; unconfirmed or hidden does not', () => {
     expect(
-      clientDocumentApprovalGate({ kind: 'quotation', currency: 'USD', ownBankAccounts: [confirmed] }).allowed
+      clientDocumentApprovalGate({
+        kind: 'quotation',
+        currency: 'USD',
+        ownBankAccounts: [confirmed],
+      }).allowed
     ).toBe(true)
     expect(
       clientDocumentApprovalGate({

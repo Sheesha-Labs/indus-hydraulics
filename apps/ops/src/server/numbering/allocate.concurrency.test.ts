@@ -20,7 +20,10 @@ async function ensure(key: string, pattern: string, scopeKind: 'global' | 'month
     update: {},
     create: { key, label: `Test ${key}`, pattern, scopeKind, signoffStatus: 'not_required' },
   })
-  const max = await opsDb.issuedNumber.aggregate({ where: { sequenceKey: key, scope }, _max: { value: true } })
+  const max = await opsDb.issuedNumber.aggregate({
+    where: { sequenceKey: key, scope },
+    _max: { value: true },
+  })
   const next = Number(max._max.value ?? 0n) + 1
   await opsDb.$executeRaw`SELECT ops.seed_number_sequence(${key}, ${BigInt(next)}, '{"source":"local test"}'::jsonb, ${scope}, NULL)`
   return next
@@ -28,7 +31,11 @@ async function ensure(key: string, pattern: string, scopeKind: 'global' | 'month
 
 describe.skipIf(!DB_URL)('allocate_number · concurrency on the local database', () => {
   let alloc: typeof import('./allocate')
-  const month = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai', year: '2-digit', month: '2-digit' })
+  const month = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Dubai',
+    year: '2-digit',
+    month: '2-digit',
+  })
     .format(new Date())
     .replace('-', '')
 
@@ -43,30 +50,41 @@ describe.skipIf(!DB_URL)('allocate_number · concurrency on the local database',
   it.each([
     [GLOBAL, 'ZT/{n}', 'global' as const, ''],
     [MONTH, 'ZM-{yymm}-{nn}', 'month' as const, ''],
-  ])('%s: 50 parallel allocations are 50 distinct consecutive numbers', async (key, pattern, kind) => {
-    const scope = kind === 'month' ? month : ''
-    const start = await ensure(key, pattern, kind, scope)
-    const out = await Promise.all(
-      Array.from({ length: 50 }, () =>
-        opsDb.$transaction((tx) => alloc.allocate(tx, key, scope, null), { timeout: 60_000, maxWait: 60_000 })
+  ])(
+    '%s: 50 parallel allocations are 50 distinct consecutive numbers',
+    async (key, pattern, kind) => {
+      const scope = kind === 'month' ? month : ''
+      const start = await ensure(key, pattern, kind, scope)
+      const out = await Promise.all(
+        Array.from({ length: 50 }, () =>
+          opsDb.$transaction((tx) => alloc.allocate(tx, key, scope, null), {
+            timeout: 60_000,
+            maxWait: 60_000,
+          })
+        )
       )
-    )
-    const values = out.map((o) => Number(o.value)).sort((a, b) => a - b)
-    expect(new Set(values).size).toBe(50)
-    expect(values).toEqual(Array.from({ length: 50 }, (_, i) => start + i))
-    expect(new Set(out.map((o) => o.formatted)).size).toBe(50)
-    if (kind === 'month') expect(out[0]!.formatted).toMatch(new RegExp(`^ZM-${month}-\\d{2,}$`))
-  }, 120_000)
+      const values = out.map((o) => Number(o.value)).sort((a, b) => a - b)
+      expect(new Set(values).size).toBe(50)
+      expect(values).toEqual(Array.from({ length: 50 }, (_, i) => start + i))
+      expect(new Set(out.map((o) => o.formatted)).size).toBe(50)
+      if (kind === 'month') expect(out[0]!.formatted).toMatch(new RegExp(`^ZM-${month}-\\d{2,}$`))
+    },
+    120_000
+  )
 
   it('a released number is given out again first; an outside number is skipped and recorded void', async () => {
     await ensure(GLOBAL, 'ZT/{n}', 'global', '')
     const a = await opsDb.$transaction((tx) => alloc.allocate(tx, GLOBAL, '', null))
-    await opsDb.$transaction((tx) => alloc.release(tx, GLOBAL, a.formatted, { outboundStatus: 'undone' }))
+    await opsDb.$transaction((tx) =>
+      alloc.release(tx, GLOBAL, a.formatted, { outboundStatus: 'undone' })
+    )
     expect(await alloc.peek(opsDb, GLOBAL)).toBe(a.formatted)
     const again = await opsDb.$transaction((tx) => alloc.allocate(tx, GLOBAL, '', null))
     expect(again.formatted).toBe(a.formatted)
     await expect(
-      opsDb.$transaction((tx) => alloc.release(tx, GLOBAL, again.formatted, { outboundStatus: 'sent' }))
+      opsDb.$transaction((tx) =>
+        alloc.release(tx, GLOBAL, again.formatted, { outboundStatus: 'sent' })
+      )
     ).rejects.toThrow(/left the building/)
 
     const next = await alloc.peek(opsDb, GLOBAL)
@@ -88,9 +106,9 @@ describe.skipIf(!DB_URL)('allocate_number · concurrency on the local database',
   it('an unseeded sequence refuses; peek says null', async () => {
     const seeded = await opsDb.numberSequence.findUniqueOrThrow({ where: { key: 'quotation' } })
     if (seeded.seededAt) return
-    await expect(opsDb.$transaction((tx) => alloc.allocate(tx, 'quotation', '', null))).rejects.toThrow(
-      /not seeded/
-    )
+    await expect(
+      opsDb.$transaction((tx) => alloc.allocate(tx, 'quotation', '', null))
+    ).rejects.toThrow(/not seeded/)
     expect(await alloc.peek(opsDb, 'quotation')).toBeNull()
   })
 

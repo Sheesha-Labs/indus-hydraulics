@@ -108,7 +108,13 @@ describe.skipIf(!DB_URL)('document templates · local database', () => {
   })
 
   it('saves a draft as v2, refuses a stale stamp, then the Owner publishes it', async () => {
-    const draft = off({ ...defaultTemplate(KIND), columns: ['no', 'description', 'qty', 'origin', 'rate', 'amount'] }, 'terms')
+    const draft = off(
+      {
+        ...defaultTemplate(KIND),
+        columns: ['no', 'description', 'qty', 'origin', 'rate', 'amount'],
+      },
+      'terms'
+    )
     const saved = await opsDb.$transaction((tx) => t.saveTemplateDraft(tx, KIND, draft, 'none'))
     expect(saved.version).toBe(2)
     await expect(
@@ -119,7 +125,9 @@ describe.skipIf(!DB_URL)('document templates · local database', () => {
     expect(e.stamp).toBe(saved.stamp)
 
     await expect(
-      opsDb.$transaction((tx) => t.publishTemplate(tx, KIND, saved.stamp, { id: owner.id, role: 'helper' }))
+      opsDb.$transaction((tx) =>
+        t.publishTemplate(tx, KIND, saved.stamp, { id: owner.id, role: 'helper' })
+      )
     ).rejects.toThrow(/Only the Owner/)
 
     purged.length = 0
@@ -130,11 +138,29 @@ describe.skipIf(!DB_URL)('document templates · local database', () => {
     const rows = await opsDb.documentTemplate.findMany({
       where: { kind: RECORD },
       orderBy: { version: 'asc' },
-      select: { version: true, status: true, isActive: true, publishedById: true, signoffStatus: true },
+      select: {
+        version: true,
+        status: true,
+        isActive: true,
+        publishedById: true,
+        signoffStatus: true,
+      },
     })
     expect(rows).toEqual([
-      { version: 1, status: 'archived', isActive: false, publishedById: null, signoffStatus: 'awaiting' },
-      { version: 2, status: 'published', isActive: true, publishedById: owner.id, signoffStatus: 'signed_off' },
+      {
+        version: 1,
+        status: 'archived',
+        isActive: false,
+        publishedById: null,
+        signoffStatus: 'awaiting',
+      },
+      {
+        version: 2,
+        status: 'published',
+        isActive: true,
+        publishedById: owner.id,
+        signoffStatus: 'signed_off',
+      },
     ])
     const active = await t.getActiveTemplate(KIND)
     expect(active.version).toBe(2)

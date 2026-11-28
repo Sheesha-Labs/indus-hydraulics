@@ -69,7 +69,9 @@ export default function PresetList(p: PresetListProps) {
                 aria-current={on ? 'true' : undefined}
                 className={cn(
                   'rounded-io-card io-focus flex flex-col gap-1 border px-3.5 py-3',
-                  on ? 'border-io-accent bg-io-accent-wash' : 'border-io-line bg-io-card hover:bg-io-paper'
+                  on
+                    ? 'border-io-accent bg-io-accent-wash'
+                    : 'border-io-line bg-io-card hover:bg-io-paper'
                 )}
               >
                 <span className="text-[13.5px] font-medium">{x.name}</span>
@@ -168,7 +170,9 @@ export default function PresetList(p: PresetListProps) {
                 }}
               />
             ))}
-            {shown.length ? null : <span className="text-io-ink-3 text-[12.5px]">No client matches.</span>}
+            {shown.length ? null : (
+              <span className="text-io-ink-3 text-[12.5px]">No client matches.</span>
+            )}
           </div>
         </Modal>
       ) : null}

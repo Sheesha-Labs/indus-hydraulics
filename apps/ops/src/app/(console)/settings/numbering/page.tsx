@@ -6,7 +6,11 @@ import EnquirySeedCard from '../../../../components/settings/EnquirySeedCard'
 import { requireOpsUser } from '../../../../lib/access'
 import { signInFor } from '../../../../lib/page-access'
 import { currentEnquiryYear, proposeEnquirySeed } from '../../../../server/numbering/enquiry-seed'
-import { listSequences, proposeSeed, type SequenceRow } from '../../../../server/numbering/sequences'
+import {
+  listSequences,
+  proposeSeed,
+  type SequenceRow,
+} from '../../../../server/numbering/sequences'
 import NumberingActions, { OutOfStepCard, SequencePanel } from './NumberingPanels'
 
 const CONTINUITY: Record<SequenceRow['continuity'], { tone: Tone; label: string }> = {
@@ -18,10 +22,12 @@ const CONTINUITY: Record<SequenceRow['continuity'], { tone: Tone; label: string 
 }
 
 const chipOf = (r: SequenceRow) => {
-  if (r.key === 'quotation' && !r.seeded) return { tone: 'n' as Tone, label: 'Unseeded · cutover batch' }
+  if (r.key === 'quotation' && !r.seeded)
+    return { tone: 'n' as Tone, label: 'Unseeded · cutover batch' }
   if (r.continuity === 'out_of_step') {
     const clash = r.detail?.perSource.find((s) => s.clashesWithNext)
-    if (clash?.maxFormatted) return { tone: 'warn' as Tone, label: `${clash.maxFormatted} used outside` }
+    if (clash?.maxFormatted)
+      return { tone: 'warn' as Tone, label: `${clash.maxFormatted} used outside` }
   }
   if (r.continuity === 'clear' && r.detail?.perSource.some((s) => s.maxSeen !== null))
     return { tone: 'ok' as Tone, label: 'Clear in Gmail' }
@@ -47,7 +53,10 @@ export default async function SettingsNumberingPage({
   const year = currentEnquiryYear()
   const [enq, proposal] = await Promise.all([
     selected?.key === 'enquiry' ? proposeEnquirySeed(year) : Promise.resolve(null),
-    selected && selected.key !== 'enquiry' && selected.key !== 'quotation' && selected.scopeKind !== 'parent'
+    selected &&
+    selected.key !== 'enquiry' &&
+    selected.key !== 'quotation' &&
+    selected.scopeKind !== 'parent'
       ? proposeSeed(selected.key)
       : Promise.resolve(null),
   ])
@@ -82,7 +91,9 @@ export default async function SettingsNumberingPage({
 
   return (
     <div data-built="numbering" className="flex flex-col gap-5 pt-4 pb-8">
-      {isOwner ? <NumberingActions awaiting={rows.some((r) => r.signoffStatus === 'awaiting')} /> : null}
+      {isOwner ? (
+        <NumberingActions awaiting={rows.some((r) => r.signoffStatus === 'awaiting')} />
+      ) : null}
       <DataTable
         caption="Number series"
         gridClass="grid-cols-[minmax(0,1.2fr)_minmax(0,1.4fr)_minmax(0,1.1fr)_minmax(0,1.2fr)_110px]"
@@ -104,8 +115,8 @@ export default async function SettingsNumberingPage({
               Continuity
             </h2>
             <p className="text-io-ink-2 m-0 text-[12.5px] leading-[1.55]">
-              Every night the numbers used in sales@ and purchase@ sent mail and by the website admin
-              are compared with the next number of each series. Zoho joins with the accounting
+              Every night the numbers used in sales@ and purchase@ sent mail and by the website
+              admin are compared with the next number of each series. Zoho joins with the accounting
               connection.
             </p>
           </section>

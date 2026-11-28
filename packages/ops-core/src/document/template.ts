@@ -108,7 +108,8 @@ export const KIND_SEQUENCE: Record<DocKind, string> = {
 }
 
 export type DocAudience = 'client' | 'supplier'
-export const audienceOf = (k: DocKind): DocAudience => (k === 'rfq' || k === 'po' ? 'supplier' : 'client')
+export const audienceOf = (k: DocKind): DocAudience =>
+  k === 'rfq' || k === 'po' ? 'supplier' : 'client'
 
 /**
  * The blocks each kind has, in their default order. The Estimate layout clients already receive (P13) has no
@@ -148,7 +149,11 @@ export function blockHint(kind: DocKind, key: BlockKey): string {
         ? 'Title, number, date, validity, reference, currency'
         : 'Title, number, date, reference'
     case 'parties':
-      return supplier ? 'Supplier · From' : kind === 'dn' ? 'Deliver to · From' : 'Bill to · Issued by'
+      return supplier
+        ? 'Supplier · From'
+        : kind === 'dn'
+          ? 'Deliver to · From'
+          : 'Bill to · Issued by'
     case 'subject':
       return supplier ? 'Our reference and delivery point' : 'From the enquiry title'
     case 'lines':
@@ -263,8 +268,7 @@ export function defaultTemplate(kind: DocKind): TemplateDefinition {
 }
 
 export type TemplateCheck =
-  | { ok: true; definition: TemplateDefinition }
-  | { ok: false; error: string }
+  { ok: true; definition: TemplateDefinition } | { ok: false; error: string }
 
 /**
  * Validate a definition for a kind: the strict schema, then the kind's rules. Blocks must be exactly the
@@ -284,7 +288,10 @@ export function parseTemplateDefinition(kind: DocKind, input: unknown): Template
   if (new Set(keys).size !== keys.length) return { ok: false, error: 'A block appears twice.' }
   const extra = keys.find((k) => !allowed.includes(k))
   if (extra)
-    return { ok: false, error: `${KIND_LABEL[kind]} has no ${BLOCK_LABEL[extra].toLowerCase()} block.` }
+    return {
+      ok: false,
+      error: `${KIND_LABEL[kind]} has no ${BLOCK_LABEL[extra].toLowerCase()} block.`,
+    }
   const missing = allowed.find((k) => !keys.includes(k))
   if (missing) return { ok: false, error: `${BLOCK_LABEL[missing]} is missing.` }
   const off = d.blocks.find((b) => REQUIRED_BLOCKS.has(b.key) && !b.on)
@@ -292,10 +299,16 @@ export function parseTemplateDefinition(kind: DocKind, input: unknown): Template
   const fixedOrder = allowed.filter((k) => FIXED_BLOCKS.has(k))
   const actualFixed = keys.filter((k) => FIXED_BLOCKS.has(k))
   if (fixedOrder.join() !== actualFixed.join() || keys.at(-1) !== 'footer')
-    return { ok: false, error: 'The letterhead, header, parties, subject and footer stay in place.' }
+    return {
+      ok: false,
+      error: 'The letterhead, header, parties, subject and footer stay in place.',
+    }
   const top = fixedOrder.filter((k) => k !== 'footer')
   if (keys.slice(0, top.length).join() !== top.join())
-    return { ok: false, error: 'The letterhead, header, parties, subject and footer stay in place.' }
+    return {
+      ok: false,
+      error: 'The letterhead, header, parties, subject and footer stay in place.',
+    }
 
   const cols = KIND_COLUMNS[kind]
   if (!cols) {
@@ -419,9 +432,7 @@ export function applyTemplate<T extends DocumentData>(data: T, def: TemplateDefi
     if (!on(part)) return
     tagged.push({ part, block: b, i })
   })
-  const blocks = tagged
-    .sort((a, b) => rank(a.part) - rank(b.part) || a.i - b.i)
-    .map((x) => x.block)
+  const blocks = tagged.sort((a, b) => rank(a.part) - rank(b.part) || a.i - b.i).map((x) => x.block)
   const { subject, ...rest } = house
   const upper = def.blocks.find((b) => b.key === 'subject')?.settings?.upperCase
   return {

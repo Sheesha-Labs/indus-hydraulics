@@ -6,10 +6,7 @@ import { opsDb, type Prisma } from '@indus/ops-db'
 import { SafeError } from '../../lib/safe-message'
 import '../assistant/actions/import-terms'
 import { requestAction } from '../assistant/request'
-import {
-  recordSupplierFile,
-  verifySupplierObject,
-} from '../directory/document-files'
+import { recordSupplierFile, verifySupplierObject } from '../directory/document-files'
 import { OPS_BUCKETS } from '../storage/buckets'
 import { getStorage } from '../storage/storage'
 
@@ -89,7 +86,14 @@ export async function openImports(): Promise<ImportView[]> {
       file: { select: { filename: true } },
       candidates: {
         orderBy: { position: 'asc' },
-        select: { id: true, category: true, title: true, body: true, variables: true, status: true },
+        select: {
+          id: true,
+          category: true,
+          title: true,
+          body: true,
+          variables: true,
+          status: true,
+        },
       },
     },
   })
@@ -98,15 +102,15 @@ export async function openImports(): Promise<ImportView[]> {
   return rows.map((r) => {
     const late = r.status === 'reading' && r.createdAt.getTime() < stale
     return {
-    id: r.id,
-    status: late ? 'failed' : r.status,
-    offerRef: r.offerRef,
-    failureNote: late ? 'Not read in time; try the import again' : r.failureNote,
-    filename: r.file.filename,
-    candidates: r.candidates.map((c) => ({
-      ...c,
-      category: isTermsCategory(c.category) ? c.category : 'documents',
-    })),
+      id: r.id,
+      status: late ? 'failed' : r.status,
+      offerRef: r.offerRef,
+      failureNote: late ? 'Not read in time; try the import again' : r.failureNote,
+      filename: r.file.filename,
+      candidates: r.candidates.map((c) => ({
+        ...c,
+        category: isTermsCategory(c.category) ? c.category : 'documents',
+      })),
     }
   })
 }
@@ -114,8 +118,7 @@ export async function openImports(): Promise<ImportView[]> {
 /** Close an import once nothing is pending (or when the person dismisses it). */
 async function closeIfDone(tx: Prisma.TransactionClient, importId: string) {
   const pending = await tx.termsImportCandidate.count({ where: { importId, status: 'pending' } })
-  if (!pending)
-    await tx.termsImport.update({ where: { id: importId }, data: { status: 'closed' } })
+  if (!pending) await tx.termsImport.update({ where: { id: importId }, data: { status: 'closed' } })
 }
 
 /** Accept a candidate as a new clause (the person's edits applied), "From Offer <number>". */
@@ -183,7 +186,11 @@ export async function skipCandidate(
   await closeIfDone(tx, c.importId)
 }
 
-export async function dismissImport(tx: Prisma.TransactionClient, importId: string, user: { id: string }) {
+export async function dismissImport(
+  tx: Prisma.TransactionClient,
+  importId: string,
+  user: { id: string }
+) {
   await tx.termsImportCandidate.updateMany({
     where: { importId, status: 'pending' },
     data: { status: 'skipped', decidedById: user.id, decidedAt: new Date() },

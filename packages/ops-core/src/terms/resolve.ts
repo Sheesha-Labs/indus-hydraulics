@@ -99,7 +99,9 @@ export function resolveTerms(
 }
 
 /** The rows a document prints: one per category, its clauses joined. Clauses that cannot print are left out. */
-export function termsForDocument(terms: readonly ResolvedTerm[]): { label: string; text: string }[] {
+export function termsForDocument(
+  terms: readonly ResolvedTerm[]
+): { label: string; text: string }[] {
   const out: { label: string; text: string }[] = []
   for (const t of terms) {
     if (t.error) continue

@@ -14,7 +14,13 @@ import ClauseBody from './ClauseBody'
  * The offers being read, and the candidate clauses read from them: each one Accept, Edit then accept, or Skip.
  * A candidate becomes a clause only when a person accepts it ("From Offer INDUS/Q…").
  */
-export default function ImportCandidates({ imports, isOwner }: { imports: ImportView[]; isOwner: boolean }) {
+export default function ImportCandidates({
+  imports,
+  isOwner,
+}: {
+  imports: ImportView[]
+  isOwner: boolean
+}) {
   return (
     <section aria-labelledby="imports-eyebrow" className="flex flex-col gap-2">
       <h3 id="imports-eyebrow" className="io-eyebrow text-io-ink-3 m-0 pt-2">

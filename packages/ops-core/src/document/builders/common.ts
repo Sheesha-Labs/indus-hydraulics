@@ -238,7 +238,13 @@ export function supplierTable(
     return { cells: columns.map(cell) }
   })
   const label = (c: SupplierColumn) =>
-    !priced && c === 'rate' ? 'Your price' : priced && c === 'description' ? 'Item & description' : c === 'description' ? 'Description' : SUPPLIER_COLUMN_LABEL[c]
+    !priced && c === 'rate'
+      ? 'Your price'
+      : priced && c === 'description'
+        ? 'Item & description'
+        : c === 'description'
+          ? 'Description'
+          : SUPPLIER_COLUMN_LABEL[c]
   return { cols: columns.map(label), rows }
 }
 

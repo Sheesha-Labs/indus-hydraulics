@@ -66,7 +66,10 @@ export default function BankBlockSection({
     const slot = await estimateSlotAction({ name: file.name, size: file.size })
     if (!slot.success || !(await putFile(slot.data.uploadUrl, file))) {
       setBusy(null)
-      toast({ kind: 'error', title: slot.success ? 'The upload did not arrive. Try again.' : slot.error })
+      toast({
+        kind: 'error',
+        title: slot.success ? 'The upload did not arrive. Try again.' : slot.error,
+      })
       return
     }
     const r = await parseEstimateAction({ key: slot.data.key, filename: file.name })
@@ -87,7 +90,8 @@ export default function BankBlockSection({
       branch: b.branch ?? '',
       printLines: b.printLines.join('\n'),
     })
-    if (!b.ibanValid) toast({ kind: 'warning', title: 'Check the IBAN: it does not pass its check digits' })
+    if (!b.ibanValid)
+      toast({ kind: 'warning', title: 'Check the IBAN: it does not pass its check digits' })
   }
 
   async function save(f: FormData) {
@@ -114,7 +118,9 @@ export default function BankBlockSection({
     }
     toast({
       kind: 'success',
-      title: r.data.unconfirmed ? 'Saved · confirm the block again' : 'Saved · now confirm the block',
+      title: r.data.unconfirmed
+        ? 'Saved · confirm the block again'
+        : 'Saved · now confirm the block',
     })
     setDraft(null)
     router.refresh()
@@ -158,12 +164,15 @@ export default function BankBlockSection({
       </div>
       {accounts.length ? null : (
         <p className="text-io-ink-3 m-0 text-[12.5px]">
-          No bank block yet. Upload one of your own Zoho estimates: the block is read from it for you to
-          check and confirm.
+          No bank block yet. Upload one of your own Zoho estimates: the block is read from it for
+          you to check and confirm.
         </p>
       )}
       {accounts.map((a) => (
-        <div key={a.id} className="border-io-line flex flex-col gap-2 border-t pt-3 first:border-t-0 first:pt-0">
+        <div
+          key={a.id}
+          className="border-io-line flex flex-col gap-2 border-t pt-3 first:border-t-0 first:pt-0"
+        >
           <div className="flex items-center justify-between gap-3 text-[13px]">
             <span className="flex items-center gap-2">
               <b className="font-medium">{a.bankName}</b>
@@ -235,10 +244,35 @@ export default function BankBlockSection({
             Check every line against the estimate. The lines below print exactly as written.
           </p>
           <div className="grid grid-cols-3 gap-3">
-            <Field type="text" name="bankName" label="Bank" required defaultValue={draft.bankName} />
-            <Field type="text" name="accountName" label="Account name" required defaultValue={draft.accountName} />
-            <Field type="text" name="currency" label="Currency" required defaultValue={draft.currency} />
-            <Field type="text" name="iban" label="IBAN" required defaultValue={draft.iban} className="col-span-2" />
+            <Field
+              type="text"
+              name="bankName"
+              label="Bank"
+              required
+              defaultValue={draft.bankName}
+            />
+            <Field
+              type="text"
+              name="accountName"
+              label="Account name"
+              required
+              defaultValue={draft.accountName}
+            />
+            <Field
+              type="text"
+              name="currency"
+              label="Currency"
+              required
+              defaultValue={draft.currency}
+            />
+            <Field
+              type="text"
+              name="iban"
+              label="IBAN"
+              required
+              defaultValue={draft.iban}
+              className="col-span-2"
+            />
             <Field type="text" name="swift" label="SWIFT" optional defaultValue={draft.swift} />
             <Field type="text" name="branch" label="Branch" optional defaultValue={draft.branch} />
           </div>

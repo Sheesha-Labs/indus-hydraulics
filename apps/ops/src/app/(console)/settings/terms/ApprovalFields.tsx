@@ -9,7 +9,12 @@ type Kind = 'none' | ApprovalRule['kind']
 /** The approval rule as a form: none, always, payment over n days, advance below n %. Posts `approval` + `n`. */
 export default function ApprovalFields({ rule }: { rule: ApprovalRule | null }) {
   const [kind, setKind] = useState<Kind>(rule?.kind ?? 'none')
-  const n = rule?.kind === 'payment_days_over' ? rule.days : rule?.kind === 'advance_pct_below' ? rule.pct : ''
+  const n =
+    rule?.kind === 'payment_days_over'
+      ? rule.days
+      : rule?.kind === 'advance_pct_below'
+        ? rule.pct
+        : ''
   return (
     <div className="grid grid-cols-2 gap-3">
       <label className="flex flex-col gap-1.5">

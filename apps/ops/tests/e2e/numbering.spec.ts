@@ -25,7 +25,11 @@ test('board-214 · the series, INDUS/Q waiting for the cutover, and seeding the 
 
   // INDUS/Q: no seed form, only the explanation.
   await page.goto('/settings/numbering?key=quotation')
-  await expect(page.getByRole('region', { name: 'Quotation' }).getByText(/INDUS\/Q is seeded in the cutover batch from the highest number/)).toBeVisible()
+  await expect(
+    page
+      .getByRole('region', { name: 'Quotation' })
+      .getByText(/INDUS\/Q is seeded in the cutover batch from the highest number/)
+  ).toBeVisible()
   await expect(page.getByRole('form', { name: 'Seed Quotation' })).toHaveCount(0)
 
   // The OA series: seed or move it to the proposed next number.
@@ -36,9 +40,14 @@ test('board-214 · the series, INDUS/Q waiting for the cutover, and seeding the 
   expect(proposed).toBeGreaterThan(0)
   await seed.getByRole('button', { name: /Seed this series|Set next number/ }).click()
   await expect
-    .poll(async () => (await db.numberSequence.findUniqueOrThrow({ where: { key: 'order_ack' } })).seededAt)
+    .poll(
+      async () =>
+        (await db.numberSequence.findUniqueOrThrow({ where: { key: 'order_ack' } })).seededAt
+    )
     .not.toBeNull()
-  await expect(table.getByRole('row', { name: /Order acknowledgement/ })).toContainText(`INDUS/OA${proposed}`)
+  await expect(table.getByRole('row', { name: /Order acknowledgement/ })).toContainText(
+    `INDUS/OA${proposed}`
+  )
 
   // A pattern that names a counterparty is refused before it is sent.
   const pattern = page.getByRole('form', { name: 'Pattern of Order acknowledgement' })
@@ -47,10 +56,15 @@ test('board-214 · the series, INDUS/Q waiting for the cutover, and seeding the 
   await expect(pattern.getByRole('button', { name: 'Save pattern' })).toBeDisabled()
 
   const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze()
-  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual([])
+  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual(
+    []
+  )
 })
 
-test('board-214 · the Helper reads the series without the buttons', async ({ page, signedInAs }) => {
+test('board-214 · the Helper reads the series without the buttons', async ({
+  page,
+  signedInAs,
+}) => {
   await signedInAs('helper')
   await page.goto('/settings/numbering?key=order_ack')
   await expect(page.getByRole('table', { name: 'Number series' })).toBeVisible()

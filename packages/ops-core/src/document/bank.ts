@@ -67,7 +67,9 @@ export function parseBankBlock(text: string): ParsedBankBlock | null {
     .split(/\r?\n/)
     .map((l) => l.replace(/\s+/g, ' ').trim())
     .filter(Boolean)
-  const ibanAt = lines.findIndex((l) => IBAN_RE.test(l.toUpperCase()) && /iban|a\/c|account|^[A-Z]{2}\d{2}/i.test(l))
+  const ibanAt = lines.findIndex(
+    (l) => IBAN_RE.test(l.toUpperCase()) && /iban|a\/c|account|^[A-Z]{2}\d{2}/i.test(l)
+  )
   if (ibanAt < 0) return null
   // Walk up to the block's start: a "bank" line within the 6 lines above the IBAN.
   let start = ibanAt
@@ -81,17 +83,26 @@ export function parseBankBlock(text: string): ParsedBankBlock | null {
   const block = lines.slice(start, end + 1).slice(0, 8)
   const iban = (IBAN_RE.exec(lines[ibanAt]!.toUpperCase())?.[1] ?? '').replace(/\s+/g, '')
   const swiftLine = block.find((l) => /swift|bic/i.test(l))
-  const swift = swiftLine ? (SWIFT_RE.exec(swiftLine.toUpperCase().replace(/(SWIFT|BIC)\W*(CODE)?/g, ' '))?.[1] ?? null) : null
+  const swift = swiftLine
+    ? (SWIFT_RE.exec(swiftLine.toUpperCase().replace(/(SWIFT|BIC)\W*(CODE)?/g, ' '))?.[1] ?? null)
+    : null
   const bankName =
-    block.map((l) => labelled(l, /bank(?:\s*name)?/)).find((v) => v && !IBAN_RE.test(v.toUpperCase())) ??
+    block
+      .map((l) => labelled(l, /bank(?:\s*name)?/))
+      .find((v) => v && !IBAN_RE.test(v.toUpperCase())) ??
     block.find((l) => /bank/i.test(l) && !/[:]/.test(l)) ??
     null
   const accountName =
-    block.map((l) => labelled(l, /(?:account|a\/c)\s*(?:name|title)|beneficiary(?:\s*name)?/)).find(Boolean) ??
-    null
+    block
+      .map((l) => labelled(l, /(?:account|a\/c)\s*(?:name|title)|beneficiary(?:\s*name)?/))
+      .find(Boolean) ?? null
   const branch = block.map((l) => labelled(l, /branch/)).find(Boolean) ?? null
   const currency =
-    block.map((l) => labelled(l, /currency/)).find(Boolean)?.toUpperCase().slice(0, 3) ??
+    block
+      .map((l) => labelled(l, /currency/))
+      .find(Boolean)
+      ?.toUpperCase()
+      .slice(0, 3) ??
     block.map((l) => CCY_RE.exec(l.toUpperCase())?.[1]).find(Boolean) ??
     null
   return {

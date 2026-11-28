@@ -129,7 +129,9 @@ export async function archiveCompanyDocument(
       actor: { kind: 'user', id: user.id },
       subjectType: 'settings',
       subjectId: subjectId(id),
-      changes: [{ field: 'company_document.archived', before: false, after: true, kind: 'documents' }],
+      changes: [
+        { field: 'company_document.archived', before: false, after: true, kind: 'documents' },
+      ],
     },
     (t) => t.complianceDocument.update({ where: { id }, data: { archivedAt: new Date() } })
   )
@@ -195,7 +197,6 @@ export async function listCompanyDocuments(): Promise<CompanyDocRow[]> {
   }))
 }
 
-
 /**
  * Board 213's letterhead images: the company.assets setting with its version (ImageSlot saves against it), the
  * stored names of the logo and stamp, and the Owner's and the Helper's signatures (as in the setup wizard).
@@ -219,13 +220,17 @@ export async function letterheadAssets(): Promise<{
     (x): x is string => !!x
   )
   const files = ids.length
-    ? await opsDb.storedFile.findMany({ where: { id: { in: ids } }, select: { id: true, filename: true } })
+    ? await opsDb.storedFile.findMany({
+        where: { id: { in: ids } },
+        select: { id: true, filename: true },
+      })
     : []
   const name = (id: string | null | undefined, fallback: string) =>
     id ? (files.find((f) => f.id === id)?.filename ?? fallback) : null
-  const people = [team.find((u) => u.role === 'owner'), team.find((u) => u.role === 'helper')].filter(
-    (u): u is (typeof team)[number] => !!u
-  )
+  const people = [
+    team.find((u) => u.role === 'owner'),
+    team.find((u) => u.role === 'helper'),
+  ].filter((u): u is (typeof team)[number] => !!u)
   return {
     version: entry.version,
     logo: name(a.logoFileId, 'logo'),

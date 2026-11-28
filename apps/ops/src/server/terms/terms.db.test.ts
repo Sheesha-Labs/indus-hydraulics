@@ -137,8 +137,12 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
       )
     ).rejects.toThrow(/not a variable/)
     // Clearing the approval rule writes SQL NULL (never an empty object).
-    await opsDb.$transaction((tx) => clauses.updateClause(tx, c.id, { approvalRule: null }, 2, owner()))
-    expect((await opsDb.termsClause.findUniqueOrThrow({ where: { id: c.id } })).approvalRule).toBeNull()
+    await opsDb.$transaction((tx) =>
+      clauses.updateClause(tx, c.id, { approvalRule: null }, 2, owner())
+    )
+    expect(
+      (await opsDb.termsClause.findUniqueOrThrow({ where: { id: c.id } })).approvalRule
+    ).toBeNull()
     expect(
       await opsDb.activityEvent.count({
         where: {
@@ -181,7 +185,10 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
     expect(defaults).toEqual([{ name: 'Oil & gas · TPI' }])
     // The database refuses a second default whatever the code does.
     await expect(
-      opsDb.termsPreset.update({ where: { id: defaultBefore }, data: { isDefaultForNewClient: true } })
+      opsDb.termsPreset.update({
+        where: { id: defaultBefore },
+        data: { isDefaultForNewClient: true },
+      })
     ).rejects.toThrow(/Unique constraint/)
   })
 
@@ -205,10 +212,18 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
       needsApproval: false,
     })
     expect(terms.find((t) => t.code === 'D2')?.text).toBe('DAP EXAMPLE SITE')
-    const over = await presets.resolvePresetTerms(tpi.id, { site: 'X' }, { P2: { balance_days: 90 } })
+    const over = await presets.resolvePresetTerms(
+      tpi.id,
+      { site: 'X' },
+      { P2: { balance_days: 90 } }
+    )
     expect(over[0]!.needsApproval).toBe(false)
     const exp = await opsDb.termsPreset.findUniqueOrThrow({ where: { name: 'Export · USD' } })
-    const late = await presets.resolvePresetTerms(exp.id, { port: 'Example port' }, { P4: { days: 90 } })
+    const late = await presets.resolvePresetTerms(
+      exp.id,
+      { port: 'Example port' },
+      { P4: { days: 90 } }
+    )
     expect(late.find((t) => t.code === 'P4')).toMatchObject({
       text: '90 DAYS FROM DELIVERY',
       needsApproval: true,
@@ -226,7 +241,11 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
     ).toBe(tpi.id)
     expect(
       await opsDb.activityEvent.count({
-        where: { subjectType: 'company', subjectId: companyId, field: 'client_profile.termsPreset' },
+        where: {
+          subjectType: 'company',
+          subjectId: companyId,
+          field: 'client_profile.termsPreset',
+        },
       })
     ).toBe(1)
     await expect(
@@ -288,19 +307,36 @@ describe.skipIf(!DB_URL)('offer terms · local database', () => {
     const [view] = (await imp.openImports()).filter((x) => x.id === importId)
     expect(view).toMatchObject({ status: 'ready', offerRef: 'INDUS/Q10077' })
     expect(view!.candidates.map((c) => [c.category, c.body, c.variables])).toEqual([
-      ['payment', '{advance_pct}% advance, balance {balance_days} days from invoice', ['advance_pct', 'balance_days']],
+      [
+        'payment',
+        '{advance_pct}% advance, balance {balance_days} days from invoice',
+        ['advance_pct', 'balance_days'],
+      ],
       ['delivery', 'Ex-works Dubai cityy', []],
     ])
     expect(await opsDb.termsClause.count()).toBe(clausesBefore)
 
     const accepted = await opsDb.$transaction((tx) =>
-      imp.acceptCandidate(tx, view!.candidates[0]!.id, { defaults: { advance_pct: 40, balance_days: 45 } }, { id: ownerId })
+      imp.acceptCandidate(
+        tx,
+        view!.candidates[0]!.id,
+        { defaults: { advance_pct: 40, balance_days: 45 } },
+        { id: ownerId }
+      )
     )
     const clause = await opsDb.termsClause.findUniqueOrThrow({ where: { code: accepted.code } })
     made.push(clause.id)
-    expect(clause).toMatchObject({ sourceRef: 'From Offer INDUS/Q10077', locked: false, category: 'payment' })
-    await opsDb.$transaction((tx) => imp.skipCandidate(tx, view!.candidates[1]!.id, { id: ownerId }))
-    expect((await opsDb.termsImport.findUniqueOrThrow({ where: { id: importId } })).status).toBe('closed')
+    expect(clause).toMatchObject({
+      sourceRef: 'From Offer INDUS/Q10077',
+      locked: false,
+      category: 'payment',
+    })
+    await opsDb.$transaction((tx) =>
+      imp.skipCandidate(tx, view!.candidates[1]!.id, { id: ownerId })
+    )
+    expect((await opsDb.termsImport.findUniqueOrThrow({ where: { id: importId } })).status).toBe(
+      'closed'
+    )
     await expect(
       opsDb.$transaction((tx) => imp.skipCandidate(tx, view!.candidates[1]!.id, { id: ownerId }))
     ).rejects.toThrow(/already decided/)

@@ -57,7 +57,10 @@ interface RawTemplate {
 }
 
 /** The stored definition with the page size from its own column, validated for the kind. */
-function definitionOf(kind: DocKind, row: { definition: unknown; pageSize: string }): TemplateDefinition {
+function definitionOf(
+  kind: DocKind,
+  row: { definition: unknown; pageSize: string }
+): TemplateDefinition {
   const stored = (row.definition ?? {}) as Record<string, unknown>
   const check = parseTemplateDefinition(kind, { ...stored, pageSize: row.pageSize })
   if (!check.ok) throw new Error(`document_template ${kind}: ${check.error}`)
@@ -110,7 +113,9 @@ export const getActiveTemplate = cache(async (kind: DocKind): Promise<ActiveTemp
 })
 
 /** An opaque stamp of a draft's content, for the optimistic check on save and publish. */
-export function draftStamp(row: { id: string; definition: unknown; pageSize: string } | null): string {
+export function draftStamp(
+  row: { id: string; definition: unknown; pageSize: string } | null
+): string {
   if (!row) return 'none'
   return createHash('sha256')
     .update(`${row.id}:${JSON.stringify(row.definition)}:${row.pageSize}`)
@@ -207,7 +212,9 @@ export async function getTemplateEditor(kind: DocKind): Promise<TemplateEditorSt
       publishedByName: publisher?.name ?? null,
       signoffStatus: pub.signoffStatus,
     },
-    draft: draft ? { id: draft.id, version: draft.version, definition: definitionOf(kind, draft) } : null,
+    draft: draft
+      ? { id: draft.id, version: draft.version, definition: definitionOf(kind, draft) }
+      : null,
     stamp: draftStamp(draft),
     usedOnOpen,
   }
@@ -247,7 +254,10 @@ export async function saveTemplateDraft(
   if (draftStamp(draft) !== stamp)
     throw new SafeError('Someone changed this template a moment ago. Open it again.')
   const before = draft ? definitionOf(kind, draft) : definitionOf(kind, pub)
-  const data = { definition: storedDefinition(check.definition), pageSize: check.definition.pageSize }
+  const data = {
+    definition: storedDefinition(check.definition),
+    pageSize: check.definition.pageSize,
+  }
   const saved = draft
     ? await tx.documentTemplate.update({ where: { id: draft.id }, data, select: TEMPLATE_SELECT })
     : await tx.documentTemplate.create({

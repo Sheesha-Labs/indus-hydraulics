@@ -54,7 +54,9 @@ describe.skipIf(!DB_URL)('number sequences · local database', () => {
       update: { pattern: 'ZS/{n}', seededAt: null, lastCheckedAt: null },
       create: { key: KEY, label: 'Test series', pattern: 'ZS/{n}', scopeKind: 'global' },
     })
-    await opsDb.externalNumberObservation.deleteMany({ where: { sequenceKey: KEY } }).catch(() => undefined)
+    await opsDb.externalNumberObservation
+      .deleteMany({ where: { sequenceKey: KEY } })
+      .catch(() => undefined)
   })
 
   afterAll(async () => {
@@ -63,22 +65,24 @@ describe.skipIf(!DB_URL)('number sequences · local database', () => {
   })
 
   it('seeding: Owner only, never INDUS/Q, above everything already seen', async () => {
-    await expect(s.seedSequence(KEY, 10, { source: 'test' }, { id: ownerId, role: 'helper' })).rejects.toThrow(
-      /Only the Owner/
-    )
+    await expect(
+      s.seedSequence(KEY, 10, { source: 'test' }, { id: ownerId, role: 'helper' })
+    ).rejects.toThrow(/Only the Owner/)
     await expect(s.seedSequence('quotation', 30000, { source: 'test' }, owner())).rejects.toThrow(
       s.QUOTATION_REFUSAL
     )
     const floor = Number(
-      (await opsDb.issuedNumber.aggregate({ where: { sequenceKey: KEY }, _max: { value: true } }))._max
-        .value ?? 0n
+      (await opsDb.issuedNumber.aggregate({ where: { sequenceKey: KEY }, _max: { value: true } }))
+        ._max.value ?? 0n
     )
     const base = floor + 100
     await opsDb.externalNumberObservation.createMany({
       data: [{ sequenceKey: KEY, formatted: `ZS/${base}`, value: BigInt(base), source: 'manual' }],
       skipDuplicates: true,
     })
-    await expect(s.seedSequence(KEY, base, { source: 'test' }, owner())).rejects.toThrow(/already been used/)
+    await expect(s.seedSequence(KEY, base, { source: 'test' }, owner())).rejects.toThrow(
+      /already been used/
+    )
     expect(await s.seedSequence(KEY, base + 1, { source: 'test' }, owner())).toEqual({
       formatted: `ZS/${base + 1}`,
     })
@@ -110,13 +114,17 @@ describe.skipIf(!DB_URL)('number sequences · local database', () => {
     const r = await s.runContinuity(KEY, { gmail: fakeGmail([`Quotation ZS/${next + 3}`]) })
     expect(r.status).toBe('out_of_step')
     const row = await opsDb.numberSequence.findUniqueOrThrow({ where: { key: KEY } })
-    const d = row.continuityDetail as { perSource: { source: string; clashesWithNext: boolean; maxFormatted: string }[] }
+    const d = row.continuityDetail as {
+      perSource: { source: string; clashesWithNext: boolean; maxFormatted: string }[]
+    }
     expect(d.perSource.find((x) => x.source === 'gmail_sent')).toMatchObject({
       clashesWithNext: true,
       maxFormatted: `ZS/${next + 3}`,
     })
     expect(
-      await opsDb.notification.count({ where: { dedupeKey: `numbering:${KEY}:out_of_step`, resolvedAt: null } })
+      await opsDb.notification.count({
+        where: { dedupeKey: `numbering:${KEY}:out_of_step`, resolvedAt: null },
+      })
     ).toBeGreaterThan(0)
     // Seeding above it clears it.
     await s.seedSequence(KEY, next + 4, { source: 'test' }, owner())
@@ -129,9 +137,13 @@ describe.skipIf(!DB_URL)('number sequences · local database', () => {
 
   it('patterns: a counterparty token is refused; a valid change is recorded; Owner only', async () => {
     await expect(s.setPattern(KEY, 'ZS/{supplier}{n}', owner())).rejects.toThrow(/counterparty/)
-    await expect(s.setPattern(KEY, 'ZS/{n}', { id: ownerId, role: 'helper' })).rejects.toThrow(/Only the Owner/)
+    await expect(s.setPattern(KEY, 'ZS/{n}', { id: ownerId, role: 'helper' })).rejects.toThrow(
+      /Only the Owner/
+    )
     await s.setPattern(KEY, 'ZS-{n}', owner())
-    expect((await opsDb.numberSequence.findUniqueOrThrow({ where: { key: KEY } })).pattern).toBe('ZS-{n}')
+    expect((await opsDb.numberSequence.findUniqueOrThrow({ where: { key: KEY } })).pattern).toBe(
+      'ZS-{n}'
+    )
     await s.setPattern(KEY, 'ZS/{n}', owner())
   })
 })

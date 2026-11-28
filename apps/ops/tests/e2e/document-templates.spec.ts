@@ -49,7 +49,9 @@ test('board-57 · the nine templates are listed with their number patterns', asy
   await page.goto('/settings/document-templates')
   const list = page.getByRole('list').filter({ hasText: 'Client quotation' })
   await expect(list.getByRole('link')).toHaveCount(9)
-  await expect(page.getByRole('link', { name: /Client quotation INDUS\/Q\{n\} · revision -R\{n\}/ })).toBeVisible()
+  await expect(
+    page.getByRole('link', { name: /Client quotation INDUS\/Q\{n\} · revision -R\{n\}/ })
+  ).toBeVisible()
   await expect(page.getByRole('link', { name: 'Settings › Numbering' })).toBeVisible()
 })
 
@@ -72,11 +74,14 @@ test('board-57 · the Owner adds Origin, puts the bank above the terms, saves an
   await page.getByRole('checkbox', { name: 'Origin' }).check()
   await expect(preview.getByText('Origin', { exact: true })).toBeVisible()
   // Required blocks are locked on; the keyboard path moves a block.
-  await expect(page.getByRole('switch', { name: 'Line table' })).toHaveAttribute('aria-disabled', 'true')
-  await page.getByRole('button', { name: 'Move Bank details up' }).click()
-  const order = await page.locator('[data-block]').evaluateAll((els) =>
-    els.map((e) => e.getAttribute('data-block'))
+  await expect(page.getByRole('switch', { name: 'Line table' })).toHaveAttribute(
+    'aria-disabled',
+    'true'
   )
+  await page.getByRole('button', { name: 'Move Bank details up' }).click()
+  const order = await page
+    .locator('[data-block]')
+    .evaluateAll((els) => els.map((e) => e.getAttribute('data-block')))
   expect(order.indexOf('bank')).toBeLessThan(order.indexOf('terms'))
 
   await page.getByRole('button', { name: 'Save', exact: true }).click()
@@ -101,7 +106,9 @@ test('board-57 · the Owner adds Origin, puts the bank above the terms, saves an
   await expect(preview.getByText('Origin', { exact: true })).toBeVisible()
 
   const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze()
-  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual([])
+  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual(
+    []
+  )
 })
 
 test('board-57 · the Helper sees the template read only', async ({ page, signedInAs }) => {

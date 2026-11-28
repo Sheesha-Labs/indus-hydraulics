@@ -138,7 +138,12 @@ export async function setDefaultPreset(
       subjectType: 'settings',
       subjectId: settingSubjectId('terms_preset.default'),
       changes: [
-        { field: 'terms_preset.default', before: before?.name ?? null, after: target.name, kind: 'terms' },
+        {
+          field: 'terms_preset.default',
+          before: before?.name ?? null,
+          after: target.name,
+          kind: 'terms',
+        },
       ],
     },
     async (t) => {
@@ -156,7 +161,10 @@ export async function createPreset(
   input: { name: string; description: string | null; clauseIds: string[] },
   actor: Actor
 ): Promise<{ id: string }> {
-  const taken = await tx.termsPreset.findUnique({ where: { name: input.name }, select: { id: true } })
+  const taken = await tx.termsPreset.findUnique({
+    where: { name: input.name },
+    select: { id: true },
+  })
   if (taken) throw new SafeError('A preset with that name already exists.')
   const max = await tx.termsPreset.aggregate({ _max: { position: true } })
   const p = await tx.termsPreset.create({
@@ -224,7 +232,10 @@ export async function assignPresetToClients(
         ],
       },
       (t) =>
-        t.clientProfile.update({ where: { companyId: r.companyId }, data: { termsPresetId: presetId } })
+        t.clientProfile.update({
+          where: { companyId: r.companyId },
+          data: { termsPresetId: presetId },
+        })
     )
   }
   return { changed }

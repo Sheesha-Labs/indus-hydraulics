@@ -6,7 +6,13 @@ import type { DocKind } from './types'
  * a quotation or invoice is how money goes astray. Supplier documents carry no bank block and are never gated.
  * S17 (quotation approval), S24 (order documents) and S26 (tax invoice) call it before approving.
  */
-export const BANK_GATED_KINDS: ReadonlySet<DocKind> = new Set(['quotation', 'oa', 'pi', 'invoice', 'cn'])
+export const BANK_GATED_KINDS: ReadonlySet<DocKind> = new Set([
+  'quotation',
+  'oa',
+  'pi',
+  'invoice',
+  'cn',
+])
 
 export const BANK_GATE_REASON =
   'Bank block not confirmed by the Owner · Settings › Company documents'

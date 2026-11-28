@@ -60,7 +60,9 @@ describe('template definition (board 57)', () => {
 
   it('columns come from the audience: no supplier part number on a quotation, no client code on an RFQ', () => {
     const q = defaultTemplate('quotation')
-    expect(parseTemplateDefinition('quotation', { ...q, columns: [...q.columns, 'partNo'] })).toEqual({
+    expect(
+      parseTemplateDefinition('quotation', { ...q, columns: [...q.columns, 'partNo'] })
+    ).toEqual({
       ok: false,
       error: '"partNo" is not a column this document can print.',
     })
@@ -80,7 +82,10 @@ describe('template definition (board 57)', () => {
       ).toMatchObject({ ok: false, error: expect.stringMatching(/cannot be switched off/) })
     const inv = defaultTemplate('invoice')
     expect(
-      parseTemplateDefinition('invoice', { ...inv, columns: inv.columns.filter((c) => c !== 'amount') })
+      parseTemplateDefinition('invoice', {
+        ...inv,
+        columns: inv.columns.filter((c) => c !== 'amount'),
+      })
     ).toEqual({ ok: false, error: 'Amount must stay in the line table.' })
   })
 
@@ -152,7 +157,9 @@ describe('applyTemplate', () => {
       'totals',
       'bank',
     ])
-    const noDisc = build(withBlock(withBlock(oaDef, 'disclaimer', { on: false }), 'signature', { on: false }))
+    const noDisc = build(
+      withBlock(withBlock(oaDef, 'disclaimer', { on: false }), 'signature', { on: false })
+    )
     expect(noDisc.blocks.at(-1)).toMatchObject({ t: 'bank', disclaimer: null, sign: false })
     const noBank = build(withBlock(oaDef, 'bank', { on: false }))
     expect(noBank.blocks.slice(-2)).toEqual([
@@ -180,10 +187,27 @@ describe('applyTemplate', () => {
   })
 
   it('columns: Origin and Client part no. reach the OA and the quotation through the builder', () => {
-    const def = { ...oaDef, columns: ['no', 'description', 'clientPartNo', 'qty', 'origin', 'rate', 'amount'] }
-    const table = build(def).blocks.find((b) => b.t === 'table') as Extract<DocBlock, { t: 'table' }>
-    expect(table.cols).toEqual(['#', 'Item & description', 'Your code', 'Qty', 'Origin', 'Rate', 'Amount'])
-    const qDef = { ...defaultTemplate('quotation'), columns: ['no', 'description', 'qty', 'origin', 'amount'] }
+    const def = {
+      ...oaDef,
+      columns: ['no', 'description', 'clientPartNo', 'qty', 'origin', 'rate', 'amount'],
+    }
+    const table = build(def).blocks.find((b) => b.t === 'table') as Extract<
+      DocBlock,
+      { t: 'table' }
+    >
+    expect(table.cols).toEqual([
+      '#',
+      'Item & description',
+      'Your code',
+      'Qty',
+      'Origin',
+      'Rate',
+      'Amount',
+    ])
+    const qDef = {
+      ...defaultTemplate('quotation'),
+      columns: ['no', 'description', 'qty', 'origin', 'amount'],
+    }
     const q = buildQuotation(createClientSafeQuotation(F.QUOTATION), {
       ...F.CTX,
       template: templateOptions('quotation', qDef),
@@ -192,8 +216,14 @@ describe('applyTemplate', () => {
   })
 
   it('supplier columns: a part-number column on the RFQ, the PO keeps its prices', () => {
-    const rDef = { ...defaultTemplate('rfq'), columns: ['no', 'description', 'partNo', 'qty', 'uom', 'rate'] }
-    const rfq = buildRfq(createSupplierSafeRfq(F.RFQ), { ...F.CTX, template: templateOptions('rfq', rDef) })
+    const rDef = {
+      ...defaultTemplate('rfq'),
+      columns: ['no', 'description', 'partNo', 'qty', 'uom', 'rate'],
+    }
+    const rfq = buildRfq(createSupplierSafeRfq(F.RFQ), {
+      ...F.CTX,
+      template: templateOptions('rfq', rDef),
+    })
     const t = rfq.blocks[0] as Extract<DocBlock, { t: 'table' }>
     expect(t.cols).toEqual(['#', 'Description', 'Part no.', 'Qty', 'UoM', 'Your price'])
     const po = buildPo(createSupplierSafePo(F.PO), {
@@ -220,7 +250,12 @@ describe('applyTemplate', () => {
         }),
         def
       )
-    expect(build(qDef).notes.map((n) => n.label)).toEqual(['Payment', 'Delivery', 'Bank', 'Disclaimer'])
+    expect(build(qDef).notes.map((n) => n.label)).toEqual([
+      'Payment',
+      'Delivery',
+      'Bank',
+      'Disclaimer',
+    ])
     expect(build(withBlock(qDef, 'terms', { on: false })).notes.map((n) => n.label)).toEqual([
       'Bank',
       'Disclaimer',
@@ -236,14 +271,18 @@ describe('applyTemplate', () => {
 
   it('lines on page 1 caps the first page; Letter paper holds fewer rows', () => {
     const q = buildQuotation(createClientSafeQuotation(F.QUOTATION), F.CTX)
-    const capped = paginate(applyTemplate(q, { ...defaultTemplate('quotation'), linesOnFirstPage: 4 }))
+    const capped = paginate(
+      applyTemplate(q, { ...defaultTemplate('quotation'), linesOnFirstPage: 4 })
+    )
     expect(capped[0]!.data.items.rows).toHaveLength(4)
     const many = {
       ...q,
       items: { ...q.items, rows: Array.from({ length: 60 }, () => q.items.rows[0]!) },
     }
     const a4 = paginate(applyTemplate(many, defaultTemplate('quotation')))
-    const letter = paginate(applyTemplate(many, { ...defaultTemplate('quotation'), pageSize: 'Letter' }))
+    const letter = paginate(
+      applyTemplate(many, { ...defaultTemplate('quotation'), pageSize: 'Letter' })
+    )
     expect(letter[0]!.data.items.rows.length).toBeLessThan(a4[0]!.data.items.rows.length)
   })
 })

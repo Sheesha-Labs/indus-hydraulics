@@ -1,4 +1,10 @@
-import { audienceOf, KIND_LABEL, KIND_SEQUENCE, TEMPLATE_KINDS, type DocKind } from '@indus/ops-core'
+import {
+  audienceOf,
+  KIND_LABEL,
+  KIND_SEQUENCE,
+  TEMPLATE_KINDS,
+  type DocKind,
+} from '@indus/ops-core'
 import { nextNumberFor } from '../../../../../server/numbering/sequences'
 import { previewTerms } from '../../../../../server/terms/presets'
 import { notFound } from 'next/navigation'

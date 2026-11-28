@@ -89,15 +89,13 @@ export default function TermsLibrary(p: TermsLibraryProps) {
             count: p.counts[c],
           }))}
         />
-        {p.imports.length ? (
-          <ImportCandidates imports={p.imports} isOwner={p.isOwner} />
-        ) : null}
+        {p.imports.length ? <ImportCandidates imports={p.imports} isOwner={p.isOwner} /> : null}
         <div className="flex items-start justify-between gap-6 pt-2">
           <div className="min-w-0">
             <h2 className="m-0 text-[18px] font-medium">{TERMS_CATEGORY_LABEL[p.category]}</h2>
             <p className="text-io-ink-3 m-0 text-[12.5px] leading-[1.45]">
-              {WHERE[p.category] ?? 'Printed on the documents whose preset includes them.'} Variables
-              fill from the enquiry.
+              {WHERE[p.category] ?? 'Printed on the documents whose preset includes them.'}{' '}
+              Variables fill from the enquiry.
             </p>
           </div>
           <Toggle
@@ -109,7 +107,10 @@ export default function TermsLibrary(p: TermsLibraryProps) {
           />
         </div>
         {p.clauses.length ? (
-          <ol aria-label={`${TERMS_CATEGORY_LABEL[p.category]} clauses`} className="m-0 flex list-none flex-col gap-3 p-0">
+          <ol
+            aria-label={`${TERMS_CATEGORY_LABEL[p.category]} clauses`}
+            className="m-0 flex list-none flex-col gap-3 p-0"
+          >
             {p.clauses.map((c) => (
               <li key={c.id}>
                 <ClauseCard clause={c} preset={preset} isOwner={p.isOwner} />
@@ -131,13 +132,19 @@ export default function TermsLibrary(p: TermsLibraryProps) {
           allClauses={p.allClauses}
           isOwner={p.isOwner}
         />
-        <section aria-labelledby="variables-eyebrow" className="border-io-line flex flex-col gap-2 border-t pt-4">
+        <section
+          aria-labelledby="variables-eyebrow"
+          className="border-io-line flex flex-col gap-2 border-t pt-4"
+        >
           <h3 id="variables-eyebrow" className="io-eyebrow text-io-ink-3 m-0">
             Variables
           </h3>
           <div className="flex flex-wrap gap-1.5">
             {TERMS_VARIABLES.map((v) => (
-              <span key={v} className="bg-io-warn-tint text-io-ink-2 rounded-io-tag px-1.5 py-0.5 text-[11.5px]">
+              <span
+                key={v}
+                className="bg-io-warn-tint text-io-ink-2 rounded-io-tag px-1.5 py-0.5 text-[11.5px]"
+              >
                 {`{${v}}`}
               </span>
             ))}

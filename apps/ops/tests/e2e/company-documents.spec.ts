@@ -57,7 +57,11 @@ test('board-213 · add a document with an expiry; read, save and confirm the ban
 }) => {
   await signedInAs('owner')
   await page.goto('/settings/documents')
-  await expect(page.getByText('Client documents cannot be approved until the bank block is confirmed', { exact: false })).toBeVisible()
+  await expect(
+    page.getByText('Client documents cannot be approved until the bank block is confirmed', {
+      exact: false,
+    })
+  ).toBeVisible()
 
   // Add a document expiring in 20 days.
   await page.getByRole('button', { name: 'Add document' }).click()
@@ -100,15 +104,23 @@ test('board-213 · add a document with an expiry; read, save and confirm the ban
   await expect(page.getByText('Awaiting confirmation')).toBeVisible()
   await page.getByRole('button', { name: 'Confirm bank block' }).click()
   await expect(page.getByText(/^Confirmed /)).toBeVisible()
-  await expect(page.getByText('Client documents cannot be approved', { exact: false })).toHaveCount(0)
+  await expect(page.getByText('Client documents cannot be approved', { exact: false })).toHaveCount(
+    0
+  )
   const acct = await db.ownBankAccount.findFirstOrThrow({
     where: { archivedAt: null, bankName: 'TEST BANK' },
   })
-  expect(acct).toMatchObject({ source: 'zoho_estimate', signoffStatus: 'signed_off', isDefaultForCcy: true })
+  expect(acct).toMatchObject({
+    source: 'zoho_estimate',
+    signoffStatus: 'signed_off',
+    isDefaultForCcy: true,
+  })
   expect(acct.printLines).toContain('Bank Name: TEST BANK')
 
   const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze()
-  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual([])
+  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual(
+    []
+  )
 })
 
 test('board-213 · the Helper reads the page without the buttons', async ({ page, signedInAs }) => {

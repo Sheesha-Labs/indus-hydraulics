@@ -90,13 +90,17 @@ export default function ClauseCard({ clause: c, preset, isOwner }: ClauseCardPro
   const tags = (
     <span className="flex min-w-0 flex-wrap items-center gap-1.5">
       <span className="text-io-ink-3 w-9 flex-none text-[12px]">{c.code}</span>
-      {c.presets.length
-        ? c.presets.map((x, i) => (
-            <Chip key={x.id} tone="acc" label={c.isDefault && i === 0 ? `Default · ${x.name}` : x.name} />
-          ))
-        : c.isDefault
-          ? <Chip tone="acc" label="Default" />
-          : null}
+      {c.presets.length ? (
+        c.presets.map((x, i) => (
+          <Chip
+            key={x.id}
+            tone="acc"
+            label={c.isDefault && i === 0 ? `Default · ${x.name}` : x.name}
+          />
+        ))
+      ) : c.isDefault ? (
+        <Chip tone="acc" label="Default" />
+      ) : null}
       {c.sourceRef ? <Chip tone="n" label={c.sourceRef} /> : null}
       {c.approvalRule ? <Chip tone="warn" label={approvalRuleLabel(c.approvalRule)} /> : null}
       {c.locked ? <Tag kind="lock">Locked</Tag> : null}
@@ -147,7 +151,11 @@ export default function ClauseCard({ clause: c, preset, isOwner }: ClauseCardPro
             </div>
           ) : null}
           <ApprovalFields rule={c.approvalRule as ApprovalRule | null} />
-          <Checkbox name="locked" label="Lock wording so the Assistant cannot change it" defaultChecked={c.locked} />
+          <Checkbox
+            name="locked"
+            label="Lock wording so the Assistant cannot change it"
+            defaultChecked={c.locked}
+          />
           <div className="flex flex-wrap items-center gap-2">
             <Button type="submit" variant="secondary" busy={busy}>
               Save
@@ -159,7 +167,9 @@ export default function ClauseCard({ clause: c, preset, isOwner }: ClauseCardPro
             {!c.isDefault ? (
               <Button
                 variant="ghost"
-                onClick={() => run(setDefaultClauseAction({ id: c.id }), `${c.code} is the default`)}
+                onClick={() =>
+                  run(setDefaultClauseAction({ id: c.id }), `${c.code} is the default`)
+                }
               >
                 Make default
               </Button>

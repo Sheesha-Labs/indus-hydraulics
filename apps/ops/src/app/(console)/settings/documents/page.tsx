@@ -5,7 +5,11 @@ import { Chip } from '@indus/ops-ui/status'
 import { requireOpsUser } from '../../../../lib/access'
 import { signInFor } from '../../../../lib/page-access'
 import { listOwnBankAccounts } from '../../../../server/company/bank'
-import { letterheadAssets, listCompanyDocuments, type CompanyDocRow } from '../../../../server/company/documents'
+import {
+  letterheadAssets,
+  listCompanyDocuments,
+  type CompanyDocRow,
+} from '../../../../server/company/documents'
 import BankBlockSection from './BankBlockSection'
 import CompanyDocsActions, { DocRowActions } from './CompanyDocsActions'
 import LetterheadAssets from './LetterheadAssets'
@@ -122,11 +126,16 @@ export default async function SettingsDocumentsPage() {
               Add to vendor registration
             </Button>
           </div>
-          <p className="text-io-ink-3 m-0 text-[12px]">Bid packs and vendor registrations arrive with Tenders.</p>
+          <p className="text-io-ink-3 m-0 text-[12px]">
+            Bid packs and vendor registrations arrive with Tenders.
+          </p>
         </section>
       </div>
       <BankBlockSection
-        accounts={accounts.map((a) => ({ ...a, confirmedAt: a.confirmedAt?.toISOString() ?? null }))}
+        accounts={accounts.map((a) => ({
+          ...a,
+          confirmedAt: a.confirmedAt?.toISOString() ?? null,
+        }))}
         isOwner={isOwner}
       />
       <LetterheadAssets isOwner={isOwner} {...assets} />

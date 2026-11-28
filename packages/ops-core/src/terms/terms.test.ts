@@ -133,7 +133,11 @@ describe('import from offer (deterministic parts)', () => {
   it('checks candidates: known categories, known variables only', () => {
     expect(
       checkCandidates([
-        { category: 'payment', title: 'Advance', body: '{advance_pct}% advance, balance {balnce} days' },
+        {
+          category: 'payment',
+          title: 'Advance',
+          body: '{advance_pct}% advance, balance {balnce} days',
+        },
         { category: 'weather', title: '', body: 'Mill certificates 3.1' },
         { category: 'payment', title: 'x', body: 'ab' },
       ])
@@ -144,7 +148,12 @@ describe('import from offer (deterministic parts)', () => {
         body: '{advance_pct}% advance, balance balnce days',
         variables: ['advance_pct'],
       },
-      { category: 'documents', title: 'Imported clause', body: 'Mill certificates 3.1', variables: [] },
+      {
+        category: 'documents',
+        title: 'Imported clause',
+        body: 'Mill certificates 3.1',
+        variables: [],
+      },
     ])
   })
 })

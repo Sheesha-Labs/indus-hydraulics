@@ -42,7 +42,8 @@ export interface TemplateEditorProps {
   previewLabel: string
 }
 
-const same = (a: TemplateDefinition, b: TemplateDefinition) => JSON.stringify(a) === JSON.stringify(b)
+const same = (a: TemplateDefinition, b: TemplateDefinition) =>
+  JSON.stringify(a) === JSON.stringify(b)
 
 /**
  * Board 57's editor (S11-T05): the blocks (order, switches, the subject's case), the line-table columns, lines
@@ -61,7 +62,6 @@ export default function TemplateEditor(p: TemplateEditorProps) {
   const readOnly = !p.isOwner
   const dirty = !same(def, saved)
   const canPublish = !!p.draft && !dirty && !readOnly
-
 
   const preview = useMemo(
     () =>
@@ -142,7 +142,11 @@ export default function TemplateEditor(p: TemplateEditorProps) {
           busy={busy === 'publish'}
           disabled={!canPublish || (!!busy && busy !== 'publish')}
           title={
-            dirty ? 'Save the changes first' : p.draft ? undefined : 'There are no changes to publish'
+            dirty
+              ? 'Save the changes first'
+              : p.draft
+                ? undefined
+                : 'There are no changes to publish'
           }
         >
           Publish
@@ -171,7 +175,9 @@ export default function TemplateEditor(p: TemplateEditorProps) {
               { value: 'Letter', label: 'Letter' },
             ]}
             value={def.pageSize}
-            {...(readOnly ? {} : { onValueChange: (v: 'A4' | 'Letter') => setDef({ ...def, pageSize: v }) })}
+            {...(readOnly
+              ? {}
+              : { onValueChange: (v: 'A4' | 'Letter') => setDef({ ...def, pageSize: v }) })}
           />
         </div>
         {readOnly ? (

@@ -32,7 +32,11 @@ export async function release(
   formatted: string,
   proof: { outboundStatus: $Enums.OutboundStatus | null }
 ): Promise<void> {
-  if (proof.outboundStatus === 'sent' || proof.outboundStatus === 'sending' || proof.outboundStatus === 'unknown')
+  if (
+    proof.outboundStatus === 'sent' ||
+    proof.outboundStatus === 'sending' ||
+    proof.outboundStatus === 'unknown'
+  )
     throw new SafeError('That number has left the building; it cannot be given back.')
   await tx.$executeRaw`SELECT ops.release_number(${key}, ${formatted})`
 }
@@ -43,6 +47,8 @@ export async function peek(
   key: string,
   scope = ''
 ): Promise<string | null> {
-  const [row] = await db.$queryRaw<Array<{ n: string | null }>>`SELECT ops.peek_number(${key}, ${scope}) AS n`
+  const [row] = await db.$queryRaw<
+    Array<{ n: string | null }>
+  >`SELECT ops.peek_number(${key}, ${scope}) AS n`
   return row?.n ?? null
 }

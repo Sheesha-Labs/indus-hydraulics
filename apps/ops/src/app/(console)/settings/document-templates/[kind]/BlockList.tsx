@@ -113,9 +113,7 @@ export default function BlockList({ kind, blocks, readOnly, onChange }: BlockLis
                   label="Upper case"
                   checked={!!b.settings?.upperCase}
                   disabled={readOnly}
-                  onChange={(e) =>
-                    set(b.key, { settings: { upperCase: e.currentTarget.checked } })
-                  }
+                  onChange={(e) => set(b.key, { settings: { upperCase: e.currentTarget.checked } })}
                 />
               </div>
             ) : null}

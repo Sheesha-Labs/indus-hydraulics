@@ -25,7 +25,13 @@ const LINES = ['auto', ...Array.from({ length: 20 }, (_, i) => String(i + 1))] a
  * client documents, supplier columns for the RFQ and PO; required ones locked), lines on page 1, the note a
  * line without a price prints, and "Never print: Supplier, cost, margin", which is a rule, not a choice.
  */
-export default function ColumnPicker({ kind, columns, def, readOnly, onChange }: ColumnPickerProps) {
+export default function ColumnPicker({
+  kind,
+  columns,
+  def,
+  readOnly,
+  onChange,
+}: ColumnPickerProps) {
   function toggle(c: string, on: boolean) {
     if (!columns) return
     const chosen = new Set(on ? [...def.columns, c] : def.columns.filter((x) => x !== c))
@@ -74,7 +80,8 @@ export default function ColumnPicker({ kind, columns, def, readOnly, onChange }:
             options={LINES.map((v) => ({ value: v, label: v === 'auto' ? 'Auto' : v }))}
             onChange={(e) =>
               onChange({
-                linesOnFirstPage: e.currentTarget.value === 'auto' ? 'auto' : Number(e.currentTarget.value),
+                linesOnFirstPage:
+                  e.currentTarget.value === 'auto' ? 'auto' : Number(e.currentTarget.value),
               })
             }
           />
@@ -88,7 +95,9 @@ export default function ColumnPicker({ kind, columns, def, readOnly, onChange }:
             value={def.pendingLines}
             options={PENDING_LINES.map((v) => ({ value: v, label: `“${PENDING_NOTE[v]}”` }))}
             onChange={(e) =>
-              onChange({ pendingLines: e.currentTarget.value as TemplateDefinition['pendingLines'] })
+              onChange({
+                pendingLines: e.currentTarget.value as TemplateDefinition['pendingLines'],
+              })
             }
           />
         </label>
@@ -102,7 +111,10 @@ export default function ColumnPicker({ kind, columns, def, readOnly, onChange }:
             options={[
               {
                 value: 'fixed',
-                label: columns?.audience === 'supplier' ? 'Client, sell price' : 'Supplier, cost, margin',
+                label:
+                  columns?.audience === 'supplier'
+                    ? 'Client, sell price'
+                    : 'Supplier, cost, margin',
               },
             ]}
           />

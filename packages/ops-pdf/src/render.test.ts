@@ -10,6 +10,7 @@ import {
   type Letterhead,
 } from '@indus/ops-core'
 import * as F from '@indus/ops-core/src/document/__fixtures__/inputs'
+import { Font } from '@react-pdf/renderer'
 import { describe, expect, it } from 'vitest'
 import { NEUTRAL_LETTERHEAD, renderFixtures } from './__fixtures__/documents'
 import { renderDocumentPdf } from './render'
@@ -148,4 +149,20 @@ describe('renderDocumentPdf', () => {
     const pdf = await read(await renderDocumentPdf(oa.data, noBank))
     expect(pdf.pages[0]).toContain('Bank details to follow')
   }, 30_000)
+
+  it('opens new font objects for every render (a cached glyph once lost its text in the next PDF)', async () => {
+    const q = fixtures.find((f) => f.name === 'quotation-c37')!
+    const semibold = () =>
+      (Font.getRegisteredFonts() as Record<string, { sources: { data: unknown }[] }>)['Geist']!
+        .sources[2]!.data
+    await renderDocumentPdf(q.data, q.letterhead)
+    const first = semibold()
+    await renderDocumentPdf(q.data, q.letterhead)
+    expect(first).toBeTruthy()
+    expect(semibold()).not.toBe(first)
+    const text = (await read(await renderDocumentPdf(q.data, q.letterhead))).pages.join(' ')
+    expect(text).toContain('157,587.08')
+    // eslint-disable-next-line no-control-regex
+    expect(text).not.toMatch(/[\u0000-\u0008\u000e-\u001f]/)
+  }, 60_000)
 })

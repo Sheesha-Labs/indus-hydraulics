@@ -18,7 +18,12 @@ async function boxesOf(page: Page, selectors: readonly string[]): Promise<Mask[]
     for (const el of await page.locator(s).all()) {
       const b = await el.boundingBox()
       if (b)
-        out.push({ x: Math.floor(b.x), y: Math.floor(b.y), w: Math.ceil(b.width), h: Math.ceil(b.height) })
+        out.push({
+          x: Math.floor(b.x),
+          y: Math.floor(b.y),
+          w: Math.ceil(b.width),
+          h: Math.ceil(b.height),
+        })
     }
   return out
 }

@@ -1,5 +1,10 @@
 import 'server-only'
-import { checkCandidates, locateTermsSection, offerRefIn, type CheckedCandidate } from '@indus/ops-core'
+import {
+  checkCandidates,
+  locateTermsSection,
+  offerRefIn,
+  type CheckedCandidate,
+} from '@indus/ops-core'
 import { opsDb } from '@indus/ops-db'
 import { parsePdf } from '../../intake/parse/pdf'
 import { isOpsBucket } from '../../storage/buckets'
@@ -56,8 +61,7 @@ const definition: ActionDefinition<ImportTermsInput, ImportTermsOut> = {
     })
     const bytes = await bytesOf(imp.file.bucket, imp.file.path)
     const parsed = bytes ? await parsePdf(bytes) : null
-    const text =
-      parsed?.kind === 'pdf' ? parsed.pages.map((p) => p.text).join('\n') : ''
+    const text = parsed?.kind === 'pdf' ? parsed.pages.map((p) => p.text).join('\n') : ''
     const section = text ? locateTermsSection(text) : null
     return {
       input: {
@@ -102,7 +106,13 @@ const definition: ActionDefinition<ImportTermsInput, ImportTermsOut> = {
       promptVersion: PROMPT_VERSION,
     })
     if (!res.ok)
-      return { ok: false, reason: res.reason, detail: res.detail, costUsd: res.costUsd, callIds: res.callIds }
+      return {
+        ok: false,
+        reason: res.reason,
+        detail: res.detail,
+        costUsd: res.costUsd,
+        callIds: res.callIds,
+      }
     return {
       ok: true,
       out: {

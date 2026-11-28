@@ -17,7 +17,8 @@
 export type ScopeKind = 'global' | 'year' | 'month' | 'day' | 'parent'
 
 const TOKENS = ['yyyy', 'yy', 'mm', 'dd', 'yymm', 'parent', 'enq4'] as const
-const COUNTERPARTY = /^(supplier|client|customer|company|buyer|vendor|maker|principal|contact|site|vessel|project)/
+const COUNTERPARTY =
+  /^(supplier|client|customer|company|buyer|vendor|maker|principal|contact|site|vessel|project)/
 
 export function validatePattern(pattern: string, scopeKind: ScopeKind): string[] {
   const errors: string[] = []
@@ -95,7 +96,9 @@ export function formatNumber(
     }
     case 'parent':
       if (!scope) throw new RangeError('a parent-scoped sequence needs the parent ref')
-      out = out.replaceAll('{parent}', scope).replaceAll('{enq4}', scope.replace(/\D/g, '').slice(-4))
+      out = out
+        .replaceAll('{parent}', scope)
+        .replaceAll('{enq4}', scope.replace(/\D/g, '').slice(-4))
       break
   }
   if (yy) out = out.replaceAll('{yyyy}', `20${yy}`).replaceAll('{yy}', yy)
@@ -105,7 +108,8 @@ export function formatNumber(
     const width = ns.length === 1 ? Math.max(padTo, 1) : ns.length
     return String(value).padStart(width, '0')
   })
-  if (/\{[a-z0-9]+\}/.test(out)) throw new RangeError(`pattern ${pattern} has a token the scope cannot fill`)
+  if (/\{[a-z0-9]+\}/.test(out))
+    throw new RangeError(`pattern ${pattern} has a token the scope cannot fill`)
   return out
 }
 
@@ -142,8 +146,17 @@ export function parseNumber(
  * The printed number of a revision (ADR-15): R1 has no suffix; later ones add the sequence's revision pattern
  * ("-R{n}" → "-R2"). A sequence without one (the tax invoice) never revises.
  */
-export function revisedNumber(base: string, revision: number, revisionPattern: string | null): string {
+export function revisedNumber(
+  base: string,
+  revision: number,
+  revisionPattern: string | null
+): string {
   if (revision <= 1) return base
   if (!revisionPattern) throw new RangeError('this document never revises; issue a new number')
-  return base + revisionPattern.replace(/\{(n+)\}/g, (_m, ns: string) => String(revision).padStart(ns.length, '0'))
+  return (
+    base +
+    revisionPattern.replace(/\{(n+)\}/g, (_m, ns: string) =>
+      String(revision).padStart(ns.length, '0')
+    )
+  )
 }

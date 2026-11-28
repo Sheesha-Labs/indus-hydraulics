@@ -54,26 +54,31 @@ test('board-39 · a preset’s values preview live and save; the lock switch; gi
   await signedInAs('owner')
   await page.goto('/settings/terms')
   await expect(page.getByRole('heading', { level: 2, name: 'Payment' })).toBeVisible()
-  await expect(page.getByRole('navigation', { name: 'Clause categories' }).getByRole('link')).toHaveCount(12)
+  await expect(
+    page.getByRole('navigation', { name: 'Clause categories' }).getByRole('link')
+  ).toHaveCount(12)
   // One primary: New clause.
   await expect(page.getByRole('button', { name: 'New clause' })).toBeVisible()
 
   await page.getByRole('link', { name: /Oil & gas · TPI/ }).click()
   await expect(page).toHaveURL(/preset=/)
   const p2 = page.getByRole('article', { name: /^P2 / })
-  await expect(p2.getByText(/30% ADVANCE AGAINST PROFORMA INVOICE; BALANCE 60 DAYS FROM INVOICE/)).toBeVisible()
+  await expect(
+    p2.getByText(/30% ADVANCE AGAINST PROFORMA INVOICE; BALANCE 60 DAYS FROM INVOICE/)
+  ).toBeVisible()
   const days = p2.getByRole('textbox', { name: 'balance_days' })
   await days.fill('45')
   await expect(p2.getByText(/BALANCE 45 DAYS FROM INVOICE/)).toBeVisible()
   await p2.getByRole('button', { name: 'Save values' }).click()
   await expect(page.getByText('Oil & gas · TPI values saved')).toBeVisible()
   await expect
-    .poll(async () =>
-      (
-        await db.termsPresetClause.findUniqueOrThrow({
-          where: { presetId_clauseId: { presetId: tpiId, clauseId: p2Id } },
-        })
-      ).variableValues
+    .poll(
+      async () =>
+        (
+          await db.termsPresetClause.findUniqueOrThrow({
+            where: { presetId_clauseId: { presetId: tpiId, clauseId: p2Id } },
+          })
+        ).variableValues
     )
     .toEqual({ advance_pct: 30, balance_days: 45 })
 
@@ -96,14 +101,21 @@ test('board-39 · a preset’s values preview live and save; the lock switch; gi
   await dialog.getByRole('checkbox', { name: `Sample Client ${tag}` }).check()
   await dialog.getByRole('button', { name: 'Give to 1 client' }).click()
   await expect
-    .poll(async () => (await db.clientProfile.findUniqueOrThrow({ where: { companyId } })).termsPresetId)
+    .poll(
+      async () => (await db.clientProfile.findUniqueOrThrow({ where: { companyId } })).termsPresetId
+    )
     .toBe(tpiId)
 
   const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze()
-  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual([])
+  expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious')).toEqual(
+    []
+  )
 })
 
-test('board-39 · New clause refuses an unknown variable and adds a clause', async ({ page, signedInAs }) => {
+test('board-39 · New clause refuses an unknown variable and adds a clause', async ({
+  page,
+  signedInAs,
+}) => {
   await signedInAs('owner')
   await page.goto('/settings/terms?category=packing')
   await page.getByRole('button', { name: 'New clause' }).click()
@@ -118,11 +130,18 @@ test('board-39 · New clause refuses an unknown variable and adds a clause', asy
   await expect.poll(async () => db.termsClause.count({ where: { title: `Test ${tag}` } })).toBe(1)
   const made = await db.termsClause.findFirstOrThrow({ where: { title: `Test ${tag}` } })
   await expect(page.getByRole('article', { name: `${made.code} Test ${tag}` })).toBeVisible()
-  expect(made).toMatchObject({ category: 'packing', body: 'Crates within {weeks} weeks', variables: { weeks: 3 } })
+  expect(made).toMatchObject({
+    category: 'packing',
+    body: 'Crates within {weeks} weeks',
+    variables: { weeks: 3 },
+  })
   await db.termsClause.delete({ where: { id: made.id } })
 })
 
-test('board-39 · the Helper reads the library without the buttons', async ({ page, signedInAs }) => {
+test('board-39 · the Helper reads the library without the buttons', async ({
+  page,
+  signedInAs,
+}) => {
   await signedInAs('helper')
   await page.goto('/settings/terms')
   await expect(page.getByRole('heading', { level: 2, name: 'Payment' })).toBeVisible()

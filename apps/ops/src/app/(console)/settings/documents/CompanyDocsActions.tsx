@@ -7,11 +7,7 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import HeaderActions from '../../../../components/route/HeaderActions'
 import { putFile } from '../../../../components/directory/wizard/DocumentsStep'
-import {
-  COMPANY_DOC_KINDS,
-  COMPANY_DOC_LABEL,
-  USED_IN,
-} from '../../../../lib/company-docs'
+import { COMPANY_DOC_KINDS, COMPANY_DOC_LABEL, USED_IN } from '../../../../lib/company-docs'
 import {
   archiveCompanyDocumentAction,
   companyDocSlotAction,
@@ -62,7 +58,12 @@ export function DocRowActions({ doc, isOwner }: { doc: DocForEdit; isOwner: bool
       ) : null}
       {isOwner ? (
         <>
-          <Button size="xs" variant="ghost" onClick={() => setOpen(true)} aria-label={`Replace ${doc.title}`}>
+          <Button
+            size="xs"
+            variant="ghost"
+            onClick={() => setOpen(true)}
+            aria-label={`Replace ${doc.title}`}
+          >
             Replace
           </Button>
           <Button
@@ -107,7 +108,10 @@ function DocModal({
       const slot = await companyDocSlotAction({ name: file.name, size: file.size })
       if (!slot.success || !(await putFile(slot.data.uploadUrl, file))) {
         setBusy(false)
-        toast({ kind: 'error', title: slot.success ? 'The upload did not arrive. Try again.' : slot.error })
+        toast({
+          kind: 'error',
+          title: slot.success ? 'The upload did not arrive. Try again.' : slot.error,
+        })
         return
       }
       upload = { key: slot.data.key, filename: file.name }
@@ -138,7 +142,11 @@ function DocModal({
       open={open}
       onOpenChange={onOpenChange}
       title={replacing ? `Replace ${replacing.title}` : 'Add document'}
-      note={replacing ? 'The current one is archived and kept in the history.' : 'Reminders at 60, 30 and 7 days before expiry.'}
+      note={
+        replacing
+          ? 'The current one is archived and kept in the history.'
+          : 'Reminders at 60, 30 and 7 days before expiry.'
+      }
       actions={
         <>
           <Button variant="ghost" onClick={() => onOpenChange(false)}>
@@ -169,20 +177,41 @@ function DocModal({
               options={COMPANY_DOC_KINDS.map((k) => ({ value: k, label: COMPANY_DOC_LABEL[k] }))}
             />
           </label>
-          <Field type="text" name="title" label="Title" required defaultValue={replacing?.title ?? ''} />
+          <Field
+            type="text"
+            name="title"
+            label="Title"
+            required
+            defaultValue={replacing?.title ?? ''}
+          />
           <Field type="text" name="issuer" label="Issued by" optional />
           <Field type="text" name="number" label="Number" optional />
-          <Field type="date" name="expiresAt" label="Expires" optional defaultValue={replacing?.expiresAt ?? ''} />
+          <Field
+            type="date"
+            name="expiresAt"
+            label="Expires"
+            optional
+            defaultValue={replacing?.expiresAt ?? ''}
+          />
         </div>
         <fieldset className="m-0 flex flex-wrap gap-x-4 gap-y-2 border-0 p-0">
           <legend className="text-io-ink-2 mb-1.5 text-[12px] font-medium">Used in</legend>
           {USED_IN.map((u) => (
-            <Checkbox key={u} name="usedIn" value={u} label={u} defaultChecked={replacing?.usedIn.includes(u) ?? false} />
+            <Checkbox
+              key={u}
+              name="usedIn"
+              value={u}
+              label={u}
+              defaultChecked={replacing?.usedIn.includes(u) ?? false}
+            />
           ))}
         </fieldset>
         <label className="border-io-stroke rounded-io-ctl bg-io-paper io-focus flex cursor-pointer flex-col gap-1 border border-dashed px-4 py-4 text-center text-[13px]">
           <span className="font-medium">{file ? file.name : 'Choose the file'}</span>
-          <span className="text-io-ink-3 text-[12px]">PDF, PNG or JPEG, up to 20 MB{replacing?.fileId ? ' · empty keeps the current file' : ''}</span>
+          <span className="text-io-ink-3 text-[12px]">
+            PDF, PNG or JPEG, up to 20 MB
+            {replacing?.fileId ? ' · empty keeps the current file' : ''}
+          </span>
           <input
             type="file"
             accept=".pdf,.png,.jpg,.jpeg,application/pdf,image/png,image/jpeg"

@@ -1,5 +1,10 @@
 import 'server-only'
-import { applyTemplate, type DocKind, type DocumentData, type TemplateDefinition } from '@indus/ops-core'
+import {
+  applyTemplate,
+  type DocKind,
+  type DocumentData,
+  type TemplateDefinition,
+} from '@indus/ops-core'
 import { renderDocumentPdf } from '@indus/ops-pdf'
 import { loadLetterhead } from './assets'
 import { mailboxRoleFor } from './kinds'
@@ -21,9 +26,7 @@ export async function renderPreviewPdf(
   } = {}
 ): Promise<Uint8Array> {
   const def =
-    opts.template === false
-      ? null
-      : (opts.template ?? (await getActiveTemplate(kind)).definition)
+    opts.template === false ? null : (opts.template ?? (await getActiveTemplate(kind)).definition)
   const shown = def ? applyTemplate(data, def) : data
   const { letterhead, assets } = await loadLetterhead({
     role: mailboxRoleFor(kind),

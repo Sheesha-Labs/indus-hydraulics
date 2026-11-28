@@ -55,10 +55,12 @@ export const updateClauseAction = defineAction({
   roles: [...roles],
   handler: async (input, ctx) =>
     done(
-      await ctx.withTx((tx) => updateClause(tx, input.id, input.patch, input.version, {
-        kind: 'user',
-        id: ctx.user.id,
-      }))
+      await ctx.withTx((tx) =>
+        updateClause(tx, input.id, input.patch, input.version, {
+          kind: 'user',
+          id: ctx.user.id,
+        })
+      )
     ),
 })
 
@@ -68,7 +70,9 @@ export const setCategoryLockAction = defineAction({
   roles: [...roles],
   handler: async (input, ctx) =>
     done(
-      await ctx.withTx((tx) => setCategoryLock(tx, input.category, input.locked, { kind: 'user', id: ctx.user.id }))
+      await ctx.withTx((tx) =>
+        setCategoryLock(tx, input.category, input.locked, { kind: 'user', id: ctx.user.id })
+      )
     ),
 })
 
@@ -100,10 +104,12 @@ export const setPresetValuesAction = defineAction({
   roles: [...roles],
   handler: async (input, ctx) =>
     done(
-      await ctx.withTx((tx) => setPresetValues(tx, input.presetId, input.clauseId, input.values, {
-        kind: 'user',
-        id: ctx.user.id,
-      }))
+      await ctx.withTx((tx) =>
+        setPresetValues(tx, input.presetId, input.clauseId, input.values, {
+          kind: 'user',
+          id: ctx.user.id,
+        })
+      )
     ),
 })
 
@@ -113,10 +119,12 @@ export const setPresetClauseAction = defineAction({
   roles: [...roles],
   handler: async (input, ctx) =>
     done(
-      await ctx.withTx((tx) => setPresetClause(tx, input.presetId, input.clauseId, input.member, {
-        kind: 'user',
-        id: ctx.user.id,
-      }))
+      await ctx.withTx((tx) =>
+        setPresetClause(tx, input.presetId, input.clauseId, input.member, {
+          kind: 'user',
+          id: ctx.user.id,
+        })
+      )
     ),
 })
 
@@ -125,7 +133,11 @@ export const setDefaultPresetAction = defineAction({
   schema: z.object({ presetId: z.uuid() }),
   roles: [...roles],
   handler: async (input, ctx) =>
-    done(await ctx.withTx((tx) => setDefaultPreset(tx, input.presetId, { kind: 'user', id: ctx.user.id }))),
+    done(
+      await ctx.withTx((tx) =>
+        setDefaultPreset(tx, input.presetId, { kind: 'user', id: ctx.user.id })
+      )
+    ),
 })
 
 export const createPresetAction = defineAction({
@@ -145,10 +157,12 @@ export const assignPresetAction = defineAction({
   schema: z.object({ presetId: z.uuid(), companyIds: z.array(z.uuid()).min(1).max(200) }),
   roles: [...roles],
   handler: async (input, ctx) => {
-    const out = await ctx.withTx((tx) => assignPresetToClients(tx, input.presetId, input.companyIds, {
-      kind: 'user',
-      id: ctx.user.id,
-    }))
+    const out = await ctx.withTx((tx) =>
+      assignPresetToClients(tx, input.presetId, input.companyIds, {
+        kind: 'user',
+        id: ctx.user.id,
+      })
+    )
     revalidatePath('/clients', 'layout')
     return done(out)
   },
@@ -188,12 +202,14 @@ export const skipCandidateAction = defineAction({
   name: 'terms.import.skip',
   schema: z.object({ candidateId: z.uuid() }),
   roles: [...roles],
-  handler: async (input, ctx) => done(await ctx.withTx((tx) => skipCandidate(tx, input.candidateId, ctx.user))),
+  handler: async (input, ctx) =>
+    done(await ctx.withTx((tx) => skipCandidate(tx, input.candidateId, ctx.user))),
 })
 
 export const dismissImportAction = defineAction({
   name: 'terms.import.dismiss',
   schema: z.object({ importId: z.uuid() }),
   roles: [...roles],
-  handler: async (input, ctx) => done(await ctx.withTx((tx) => dismissImport(tx, input.importId, ctx.user))),
+  handler: async (input, ctx) =>
+    done(await ctx.withTx((tx) => dismissImport(tx, input.importId, ctx.user))),
 })

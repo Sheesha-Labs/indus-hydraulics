@@ -15,9 +15,10 @@ export function locateTermsSection(text: string, max = 6000): string | null {
   const m = HEADINGS.exec(text)
   if (!m || m.index === undefined) return null
   const rest = text.slice(m.index + m[0].length)
-  const end = /^\s*(authori[sz]ed\s+signature|for\s+and\s+on\s+behalf|yours\s+(faithfully|sincerely))/im.exec(
-    rest
-  )
+  const end =
+    /^\s*(authori[sz]ed\s+signature|for\s+and\s+on\s+behalf|yours\s+(faithfully|sincerely))/im.exec(
+      rest
+    )
   const section = (end ? rest.slice(0, end.index) : rest).trim()
   return section ? section.slice(0, max) : null
 }

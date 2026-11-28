@@ -1,10 +1,5 @@
 import 'server-only'
-import {
-  formatNumber,
-  parseNumber,
-  validatePattern,
-  type ScopeKind,
-} from '@indus/ops-core'
+import { formatNumber, parseNumber, validatePattern, type ScopeKind } from '@indus/ops-core'
 import { opsDb, Prisma, type $Enums } from '@indus/ops-db'
 import { SafeError } from '../../lib/safe-message'
 import { writeTracked } from '../assistant/write-tracked'
@@ -30,7 +25,12 @@ const DUBAI = { timeZone: 'Asia/Dubai' } as const
 
 export function currentScope(kind: ScopeKind, now = new Date()): string {
   const p = Object.fromEntries(
-    new Intl.DateTimeFormat('en-CA', { ...DUBAI, year: 'numeric', month: '2-digit', day: '2-digit' })
+    new Intl.DateTimeFormat('en-CA', {
+      ...DUBAI,
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    })
       .formatToParts(now)
       .map((x) => [x.type, x.value])
   ) as Record<string, string>
@@ -88,7 +88,9 @@ export async function seedSequence(
   })
   const max = Number(highest._max.value ?? 0)
   if (next <= max)
-    throw new SafeError(`${formatNumber(seq.pattern, max, scope, seq.scopeKind as ScopeKind, seq.padTo)} has already been used; start above it.`)
+    throw new SafeError(
+      `${formatNumber(seq.pattern, max, scope, seq.scopeKind as ScopeKind, seq.padTo)} has already been used; start above it.`
+    )
   const formatted = formatNumber(seq.pattern, next, scope, seq.scopeKind as ScopeKind, seq.padTo)
   await opsDb.$transaction(async (tx) => {
     await writeTracked(
@@ -97,14 +99,22 @@ export async function seedSequence(
         actor: { kind: 'user', id: actor.id },
         subjectType: 'settings',
         subjectId: settingSubjectId(`number_sequence.${key}`),
-        changes: [{ field: `number_sequence.${key}.seed`, before: null, after: { next, formatted, scope }, kind: 'settings' }],
+        changes: [
+          {
+            field: `number_sequence.${key}.seed`,
+            before: null,
+            after: { next, formatted, scope },
+            kind: 'settings',
+          },
+        ],
       },
       async (t) => {
         try {
           await t.$executeRaw`SELECT ops.seed_number_sequence(${key}, ${BigInt(next)}, ${JSON.stringify(evidence)}::jsonb, ${scope}, ${actor.id}::uuid)`
         } catch (e) {
           const msg = e instanceof Error ? e.message : ''
-          if (/already issued up to/.test(msg)) throw new SafeError('Operations has already issued numbers above that; start higher.')
+          if (/already issued up to/.test(msg))
+            throw new SafeError('Operations has already issued numbers above that; start higher.')
           throw e
         }
         await t.numberSequence.update({
@@ -135,15 +145,29 @@ export async function setPattern(
         actor: { kind: 'user', id: actor.id },
         subjectType: 'settings',
         subjectId: settingSubjectId(`number_sequence.${key}`),
-        changes: [{ field: `number_sequence.${key}.pattern`, before: seq.pattern, after: pattern, kind: 'settings' }],
+        changes: [
+          {
+            field: `number_sequence.${key}.pattern`,
+            before: seq.pattern,
+            after: pattern,
+            kind: 'settings',
+          },
+        ],
       },
-      (t) => t.numberSequence.update({ where: { key }, data: { pattern, continuityStatus: seq.seededAt ? 'not_checked' : 'unseeded' } })
+      (t) =>
+        t.numberSequence.update({
+          where: { key },
+          data: { pattern, continuityStatus: seq.seededAt ? 'not_checked' : 'unseeded' },
+        })
     )
   )
 }
 
 /** C6: the Owner confirms the Round 1 numbering style of every awaiting sequence. */
-export async function confirmRoundOneStyle(actor: { id: string; role: string }): Promise<{ count: number }> {
+export async function confirmRoundOneStyle(actor: {
+  id: string
+  role: string
+}): Promise<{ count: number }> {
   if (actor.role !== 'owner') throw new SafeError('Only the Owner confirms the numbering style.')
   return opsDb.$transaction(async (tx) => {
     const rows = await tx.numberSequence.findMany({
@@ -156,7 +180,14 @@ export async function confirmRoundOneStyle(actor: { id: string; role: string }):
         actor: { kind: 'user', id: actor.id },
         subjectType: 'settings',
         subjectId: settingSubjectId('number_sequence.round_one'),
-        changes: [{ field: 'number_sequence.round_one_style', before: 'awaiting', after: rows, kind: 'settings' }],
+        changes: [
+          {
+            field: 'number_sequence.round_one_style',
+            before: 'awaiting',
+            after: rows,
+            kind: 'settings',
+          },
+        ],
       },
       (t) =>
         t.numberSequence.updateMany({
@@ -194,7 +225,17 @@ export async function collectObservations(
     at: Date
   ) => {
     const r = await opsDb.externalNumberObservation.createMany({
-      data: [{ sequenceKey: key, formatted: o.formatted, value: BigInt(o.value), scope: o.scope, source, sourceRef, observedAt: at }],
+      data: [
+        {
+          sequenceKey: key,
+          formatted: o.formatted,
+          value: BigInt(o.value),
+          scope: o.scope,
+          source,
+          sourceRef,
+          observedAt: at,
+        },
+      ],
       skipDuplicates: true,
     })
     recorded += r.count
@@ -202,22 +243,38 @@ export async function collectObservations(
 
   // (b) The website admin, while it still allocates.
   if (key === 'quotation') {
-    const [row] = await opsDb.$queryRaw<Array<{ n: number }>>`SELECT ops.legacy_quote_number_max() AS n`
+    const [row] = await opsDb.$queryRaw<
+      Array<{ n: number }>
+    >`SELECT ops.legacy_quote_number_max() AS n`
     const n = Number(row?.n ?? 0)
-    if (n > 0) await record({ formatted: `INDUS/Q${n}`, value: n, scope: '' }, 'legacy_admin', 'public.quotes', opts.now ?? new Date())
+    if (n > 0)
+      await record(
+        { formatted: `INDUS/Q${n}`, value: n, scope: '' },
+        'legacy_admin',
+        'public.quotes',
+        opts.now ?? new Date()
+      )
   }
   if (key === 'enquiry') {
     const scope = currentScope('year', opts.now)
     const n = await legacyEnquiryMax(Number(scope))
     if (n > 0)
-      await record({ formatted: formatNumber(seq.pattern, n, scope, kind, seq.padTo), value: n, scope }, 'legacy_admin', 'public.enquiries', opts.now ?? new Date())
+      await record(
+        { formatted: formatNumber(seq.pattern, n, scope, kind, seq.padTo), value: n, scope },
+        'legacy_admin',
+        'public.enquiries',
+        opts.now ?? new Date()
+      )
   }
 
   // (a) Sent mail on the client and supplier mailboxes.
   const prefix = literalPrefix(seq.pattern)
   if (prefix.length < 2) return { gmailUnits: 0, gmailFailed: false, recorded }
   const mailboxes = await opsDb.mailbox.findMany({
-    where: { role: { in: ['client', 'supplier'] }, status: { in: ['live', 'behind', 'backfilling'] } },
+    where: {
+      role: { in: ['client', 'supplier'] },
+      status: { in: ['live', 'behind', 'backfilling'] },
+    },
     select: { id: true },
   })
   const after = seq.lastCheckedAt ? Math.floor(seq.lastCheckedAt.getTime() / 1000) - 86_400 : null
@@ -237,13 +294,26 @@ export async function collectObservations(
         units += 5
         for (const m of list.messages ?? []) {
           if (budget-- <= 0 || !m.id) break
-          const msg = await gmail.messages.get({ id: m.id, format: 'metadata', metadataHeaders: ['Subject'] })
+          const msg = await gmail.messages.get({
+            id: m.id,
+            format: 'metadata',
+            metadataHeaders: ['Subject'],
+          })
           units += 5
-          const subject = msg.payload?.headers?.find((h) => h.name?.toLowerCase() === 'subject')?.value ?? ''
-          const at = msg.internalDate ? new Date(Number(msg.internalDate)) : (opts.now ?? new Date())
+          const subject =
+            msg.payload?.headers?.find((h) => h.name?.toLowerCase() === 'subject')?.value ?? ''
+          const at = msg.internalDate
+            ? new Date(Number(msg.internalDate))
+            : (opts.now ?? new Date())
           for (const text of [subject, msg.snippet ?? '']) {
             const p = parseNumber(seq.pattern, text)
-            if (p) await record({ formatted: p.formatted, value: p.value, scope: p.scope }, 'gmail_sent', m.id, at)
+            if (p)
+              await record(
+                { formatted: p.formatted, value: p.value, scope: p.scope },
+                'gmail_sent',
+                m.id,
+                at
+              )
           }
         }
         pageToken = budget > 0 ? (list.nextPageToken ?? undefined) : undefined
@@ -256,11 +326,17 @@ export async function collectObservations(
 }
 
 /** Compare the next number with everything seen. Reads only. */
-export async function checkContinuity(key: string, now = new Date()): Promise<{ status: ContinuityState; detail: ContinuityDetail }> {
+export async function checkContinuity(
+  key: string,
+  now = new Date()
+): Promise<{ status: ContinuityState; detail: ContinuityDetail }> {
   const seq = await opsDb.numberSequence.findUniqueOrThrow({ where: { key } })
   const scope = currentScope(seq.scopeKind as ScopeKind, now)
   if (!seq.seededAt)
-    return { status: 'unseeded', detail: { next: null, nextValue: null, perSource: [], checkedScope: scope } }
+    return {
+      status: 'unseeded',
+      detail: { next: null, nextValue: null, perSource: [], checkedScope: scope },
+    }
   const next = await peek(opsDb, key, scope)
   const nextValue = next ? (parseNumber(seq.pattern, next)?.value ?? null) : null
   const [obs, issued] = await Promise.all([
@@ -296,21 +372,34 @@ export async function checkContinuity(key: string, now = new Date()): Promise<{ 
 }
 
 /** Collect, check and write the result on the sequence; a notification when it is out of step. */
-export async function runContinuity(key: string, opts: ObserveOptions = {}): Promise<{ status: ContinuityState; gmailUnits: number }> {
-  const seq = await opsDb.numberSequence.findUniqueOrThrow({ where: { key }, select: { seededAt: true, label: true, continuityStatus: true } })
+export async function runContinuity(
+  key: string,
+  opts: ObserveOptions = {}
+): Promise<{ status: ContinuityState; gmailUnits: number }> {
+  const seq = await opsDb.numberSequence.findUniqueOrThrow({
+    where: { key },
+    select: { seededAt: true, label: true, continuityStatus: true },
+  })
   if (!seq.seededAt) {
-    await opsDb.numberSequence.update({ where: { key }, data: { continuityStatus: 'unseeded', lastCheckedAt: opts.now ?? new Date() } })
+    await opsDb.numberSequence.update({
+      where: { key },
+      data: { continuityStatus: 'unseeded', lastCheckedAt: opts.now ?? new Date() },
+    })
     return { status: 'unseeded', gmailUnits: 0 }
   }
   const collected = await collectObservations(key, opts)
   const { status: checked, detail } = await checkContinuity(key, opts.now)
-  const status: ContinuityState = collected.gmailFailed && checked === 'clear' ? 'check_failed' : checked
+  const status: ContinuityState =
+    collected.gmailFailed && checked === 'clear' ? 'check_failed' : checked
   await opsDb.numberSequence.update({
     where: { key },
     data: {
       continuityStatus: status,
       lastCheckedAt: opts.now ?? new Date(),
-      continuityDetail: { ...detail, gmailUnits: collected.gmailUnits } as unknown as Prisma.InputJsonValue,
+      continuityDetail: {
+        ...detail,
+        gmailUnits: collected.gmailUnits,
+      } as unknown as Prisma.InputJsonValue,
       ...(status === 'out_of_step' ? { outOfStepAt: opts.now ?? new Date() } : {}),
     },
   })
@@ -392,7 +481,10 @@ export async function listSequences(now = new Date()): Promise<SequenceRow[]> {
 }
 
 /** The proposed next number for a seed: one above the highest number any source has seen. */
-export async function proposeSeed(key: string, now = new Date()): Promise<{ next: number; formatted: string; perSource: { source: string; max: number }[] }> {
+export async function proposeSeed(
+  key: string,
+  now = new Date()
+): Promise<{ next: number; formatted: string; perSource: { source: string; max: number }[] }> {
   const seq = await opsDb.numberSequence.findUniqueOrThrow({ where: { key } })
   const scope = currentScope(seq.scopeKind as ScopeKind, now)
   const [obs, issued] = await opsDb.$transaction([

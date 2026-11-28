@@ -41,7 +41,13 @@ export default function NewClauseModal({
           <Button variant="ghost" onClick={() => onOpenChange(false)}>
             Cancel
           </Button>
-          <Button variant="primary" type="submit" form="new-clause" busy={busy} disabled={unknown.length > 0}>
+          <Button
+            variant="primary"
+            type="submit"
+            form="new-clause"
+            busy={busy}
+            disabled={unknown.length > 0}
+          >
             Add clause
           </Button>
         </>
@@ -101,7 +107,9 @@ export default function NewClauseModal({
             aria-invalid={unknown.length > 0 || undefined}
             className="border-io-stroke rounded-io-ctl io-focus-field bg-io-card border px-3 py-2 text-[13px] leading-[1.5]"
           />
-          <span className={unknown.length ? 'text-io-bad text-[11.5px]' : 'text-io-ink-3 text-[11.5px]'}>
+          <span
+            className={unknown.length ? 'text-io-bad text-[11.5px]' : 'text-io-ink-3 text-[11.5px]'}
+          >
             {unknown.length
               ? `{${unknown[0]}} is not a variable.`
               : 'Write {variable} where a value changes, e.g. {days} days from delivery.'}

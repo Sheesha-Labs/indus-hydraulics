@@ -176,9 +176,17 @@ export async function saveOwnBankAccount(
         {
           field: 'own_bank_account',
           before: before
-            ? { bankName: before.bankName, currency: before.currency, iban: `…${before.iban.slice(-4)}` }
+            ? {
+                bankName: before.bankName,
+                currency: before.currency,
+                iban: `…${before.iban.slice(-4)}`,
+              }
             : null,
-          after: { bankName: input.bankName, currency: input.currency, iban: `…${input.iban.slice(-4)}` },
+          after: {
+            bankName: input.bankName,
+            currency: input.currency,
+            iban: `…${input.iban.slice(-4)}`,
+          },
           kind: 'money',
           sensitive: true,
         },

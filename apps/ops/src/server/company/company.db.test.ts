@@ -129,7 +129,9 @@ describe.skipIf(!DB_URL)('company documents and bank block · local database', (
     made.push(b.id)
     rows = await docs.listCompanyDocuments()
     expect(rows.some((r) => r.id === a.id)).toBe(false)
-    expect(rows.find((r) => r.id === b.id)).toMatchObject({ status: { tone: 'ok', label: 'Valid' } })
+    expect(rows.find((r) => r.id === b.id)).toMatchObject({
+      status: { tone: 'ok', label: 'Valid' },
+    })
     const nb = await opsDb.complianceDocument.findUniqueOrThrow({ where: { id: b.id } })
     expect(nb.note).toBe(`Replaces ISO 9001:2015 (${a.id})`)
     expect(nb.fileId).not.toBeNull()
@@ -144,7 +146,10 @@ describe.skipIf(!DB_URL)('company documents and bank block · local database', (
     const key = `company/estimate/${UUID()}.pdf`
     objects.set(`ops-uploads/${key}`, await estimatePdf())
     await expect(
-      bank.parseZohoEstimateBankBlock({ key, filename: 'estimate.pdf' }, { id: owner.id, role: 'helper' })
+      bank.parseZohoEstimateBankBlock(
+        { key, filename: 'estimate.pdf' },
+        { id: owner.id, role: 'helper' }
+      )
     ).rejects.toThrow(/Only the Owner/)
     const { fileId, block } = await bank.parseZohoEstimateBankBlock(
       { key, filename: 'estimate.pdf' },
@@ -179,7 +184,9 @@ describe.skipIf(!DB_URL)('company documents and bank block · local database', (
     expect(await bank.bankGateFor('invoice', 'AED')).toMatchObject({ allowed: false })
     expect(await assets.bankLines('AED')).toEqual([])
     await expect(
-      opsDb.$transaction((tx) => bank.confirmBankBlock(tx, saved.id, { id: owner.id, role: 'helper' }))
+      opsDb.$transaction((tx) =>
+        bank.confirmBankBlock(tx, saved.id, { id: owner.id, role: 'helper' })
+      )
     ).rejects.toThrow(/Only the Owner/)
     await opsDb.$transaction((tx) => bank.confirmBankBlock(tx, saved.id, owner))
     expect(await bank.bankGateFor('quotation', 'USD')).toEqual({ allowed: true })

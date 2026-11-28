@@ -29,7 +29,10 @@ export default function ImportFromOffer({
     const slot = await termsImportSlotAction({ name: file.name, size: file.size })
     if (!slot.success || !(await putFile(slot.data.uploadUrl, file))) {
       setBusy(false)
-      toast({ kind: 'error', title: slot.success ? 'The upload did not arrive. Try again.' : slot.error })
+      toast({
+        kind: 'error',
+        title: slot.success ? 'The upload did not arrive. Try again.' : slot.error,
+      })
       return
     }
     const r = await startTermsImportAction({ key: slot.data.key, filename: file.name })

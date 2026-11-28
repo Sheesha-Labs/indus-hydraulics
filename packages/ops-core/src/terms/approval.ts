@@ -8,8 +8,12 @@ import type { TermsValues } from './variables'
  */
 export const approvalRuleSchema = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('always') }).strict(),
-  z.object({ kind: z.literal('payment_days_over'), days: z.number().int().min(1).max(365) }).strict(),
-  z.object({ kind: z.literal('advance_pct_below'), pct: z.number().int().min(1).max(100) }).strict(),
+  z
+    .object({ kind: z.literal('payment_days_over'), days: z.number().int().min(1).max(365) })
+    .strict(),
+  z
+    .object({ kind: z.literal('advance_pct_below'), pct: z.number().int().min(1).max(100) })
+    .strict(),
 ])
 export type ApprovalRule = z.infer<typeof approvalRuleSchema>
 

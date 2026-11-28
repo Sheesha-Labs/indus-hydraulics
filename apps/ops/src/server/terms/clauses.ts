@@ -25,7 +25,8 @@ import { settingSubjectId } from '../settings/subject-id'
  * clause's title or body is refused here, whatever the caller; only a person may. Every change is versioned
  * (expectedVersion) and recorded on the clause's history.
  */
-export type TermsActor = { kind: 'user'; id: string } | { kind: 'assistant'; actionId?: string | null }
+export type TermsActor =
+  { kind: 'user'; id: string } | { kind: 'assistant'; actionId?: string | null }
 
 export class ClauseLockedError extends SafeError {
   constructor() {
@@ -92,7 +93,9 @@ const CODE_PREFIX: Record<TermsCategory, string> = {
 }
 
 const actorOf = (a: TermsActor) =>
-  a.kind === 'user' ? { kind: 'user' as $Enums.ActorKind, id: a.id } : { kind: 'assistant' as $Enums.ActorKind }
+  a.kind === 'user'
+    ? { kind: 'user' as $Enums.ActorKind, id: a.id }
+    : { kind: 'assistant' as $Enums.ActorKind }
 
 export async function createClause(
   tx: Prisma.TransactionClient,
@@ -103,8 +106,12 @@ export async function createClause(
   const defaults = checkDefaults(input.body, input.defaults)
   const code = await nextCode(tx, input.category)
   const position =
-    ((await tx.termsClause.aggregate({ where: { category: input.category }, _max: { position: true } }))
-      ._max.position ?? 0) + 1
+    ((
+      await tx.termsClause.aggregate({
+        where: { category: input.category },
+        _max: { position: true },
+      })
+    )._max.position ?? 0) + 1
   return writeTracked(
     tx,
     {
@@ -112,7 +119,12 @@ export async function createClause(
       subjectType: 'settings',
       subjectId: clauseSubjectId(code),
       changes: [
-        { field: `terms_clause.${code}`, before: null, after: { ...input, defaults }, kind: 'terms' },
+        {
+          field: `terms_clause.${code}`,
+          before: null,
+          after: { ...input, defaults },
+          kind: 'terms',
+        },
       ],
     },
     (t) =>
@@ -276,7 +288,9 @@ export async function archiveClause(
       actor: actorOf(actor),
       subjectType: 'settings',
       subjectId: clauseSubjectId(c.code),
-      changes: [{ field: `terms_clause.${c.code}.archived`, before: false, after: true, kind: 'terms' }],
+      changes: [
+        { field: `terms_clause.${c.code}.archived`, before: false, after: true, kind: 'terms' },
+      ],
     },
     (t) =>
       t.termsClause.update({ where: { id }, data: { archivedAt: new Date(), isDefault: false } })
@@ -324,7 +338,12 @@ export async function getTermsLibrary(): Promise<{
       where: { archivedAt: null },
       orderBy: [{ category: 'asc' }, { position: 'asc' }, { code: 'asc' }],
       include: {
-        presets: { select: { variableValues: true, preset: { select: { id: true, name: true, archivedAt: true } } } },
+        presets: {
+          select: {
+            variableValues: true,
+            preset: { select: { id: true, name: true, archivedAt: true } },
+          },
+        },
       },
     }),
     opsDb.termsPreset.findMany({
@@ -341,7 +360,10 @@ export async function getTermsLibrary(): Promise<{
       },
     }),
   ])
-  const counts = Object.fromEntries(TERMS_CATEGORIES.map((c) => [c, 0])) as Record<TermsCategory, number>
+  const counts = Object.fromEntries(TERMS_CATEGORIES.map((c) => [c, 0])) as Record<
+    TermsCategory,
+    number
+  >
   const views: ClauseView[] = []
   for (const c of clauses) {
     if (!isTermsCategory(c.category)) continue
@@ -361,7 +383,11 @@ export async function getTermsLibrary(): Promise<{
       signoffStatus: c.signoffStatus,
       presets: c.presets
         .filter((p) => !p.preset.archivedAt)
-        .map((p) => ({ id: p.preset.id, name: p.preset.name, values: (p.variableValues ?? {}) as TermsValues })),
+        .map((p) => ({
+          id: p.preset.id,
+          name: p.preset.name,
+          values: (p.variableValues ?? {}) as TermsValues,
+        })),
     })
   }
   return {

@@ -36,4 +36,3 @@ export const USED_IN = [
   'Supplier registrations',
   'Client vendor forms',
 ] as const
-

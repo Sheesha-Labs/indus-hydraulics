@@ -86,8 +86,10 @@ export function OutOfStepCard({ row, isOwner }: { row: SequenceRow; isOwner: boo
         {row.label} · out of step
       </h2>
       <p className="text-io-ink-2 m-0 text-[12.5px] leading-[1.55]">
-        {clash ? `${SOURCE[clash.source] ?? clash.source} shows ${clash.maxFormatted}` : 'A number was used outside'};
-        Operations would issue {row.next ?? 'a number below it'}, which already exists there.
+        {clash
+          ? `${SOURCE[clash.source] ?? clash.source} shows ${clash.maxFormatted}`
+          : 'A number was used outside'}
+        ; Operations would issue {row.next ?? 'a number below it'}, which already exists there.
       </p>
       <RadioGroup<'set' | 'keep'>
         name={`oos-${row.key}`}
@@ -152,7 +154,12 @@ export function SequencePanel({
     try {
       return patternErrors.length
         ? null
-        : formatNumber(pattern, Number.isInteger(nextValue) && nextValue > 0 ? nextValue : 1, row.detail?.checkedScope ?? '', row.scopeKind)
+        : formatNumber(
+            pattern,
+            Number.isInteger(nextValue) && nextValue > 0 ? nextValue : 1,
+            row.detail?.checkedScope ?? '',
+            row.scopeKind
+          )
     } catch {
       return null
     }
@@ -170,7 +177,9 @@ export function SequencePanel({
           size="sm"
           busy={busy}
           disabled={!row.seeded}
-          onClick={() => run(checkNowAction({ key: row.key }), 'Checking · the result shows here shortly')}
+          onClick={() =>
+            run(checkNowAction({ key: row.key }), 'Checking · the result shows here shortly')
+          }
         >
           Check now
         </Button>
@@ -247,7 +256,12 @@ export function SequencePanel({
                 : `Prints ${preview ?? '—'} · proposed ${proposal.formatted}, one above everything seen.`}
             </span>
           </div>
-          <Button type="submit" className="self-start" busy={busy} disabled={!!dupe || !(nextValue > 0)}>
+          <Button
+            type="submit"
+            className="self-start"
+            busy={busy}
+            disabled={!!dupe || !(nextValue > 0)}
+          >
             {row.seeded ? 'Set next number' : 'Seed this series'}
           </Button>
         </form>
@@ -258,7 +272,10 @@ export function SequencePanel({
           className="flex flex-col gap-2"
           onSubmit={(e) => {
             e.preventDefault()
-            void run(setPatternAction({ key: row.key, pattern }), 'Pattern saved · new numbers only')
+            void run(
+              setPatternAction({ key: row.key, pattern }),
+              'Pattern saved · new numbers only'
+            )
           }}
         >
           <label className="flex flex-col gap-1.5">
@@ -273,7 +290,9 @@ export function SequencePanel({
             />
             <span
               id="pattern-hint"
-              className={patternErrors.length ? 'text-io-bad text-[11.5px]' : 'text-io-ink-3 text-[11.5px]'}
+              className={
+                patternErrors.length ? 'text-io-bad text-[11.5px]' : 'text-io-ink-3 text-[11.5px]'
+              }
             >
               {patternErrors[0] ??
                 `Prints ${preview ?? '—'}. Tokens: {n} {nn} {nnnn} {yyyy} {yy} {mm} {yymm} {enq4}. Affects only new numbers.`}
