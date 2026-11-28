@@ -198,10 +198,10 @@
     "source": "Document/Estimate labels and footer"
   },
   "io-est-sub": {
-    "value": "#777777",
+    "value": "#767676",
     "kind": "color",
     "signoff": "awaiting",
-    "source": "Document/Estimate item sub-line, gap row"
+    "source": "Document/Estimate item sub-line, gap row (#777777 was 4.47:1 on white; #767676 is 4.54:1, S11-T03)"
   },
   "io-est-line": {
     "value": "#999999",

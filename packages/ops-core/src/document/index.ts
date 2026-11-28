@@ -1,4 +1,14 @@
-// Document model (ADR-14): DocumentData, the letterhead and the safe-line types. Builders arrive in S11.
+// Document model (ADR-14): DocumentData, the letterhead, safe inputs, columns, totals and the builders (S11).
 export * from './types'
 export * from './revision'
 export * from './expiry'
+export * from './columns'
+export * from './safe'
+export * from './totals'
+export * from './words'
+export * from './paginate'
+export * from './template'
+export * from './samples'
+export * from './bank'
+export * from './gates'
+export * from './builders'

@@ -1,10 +1,11 @@
 import { cn } from '../lib/cn'
 
-export type DocStamp = 'Draft' | 'Superseded' | 'Paid'
+export type DocStamp = 'Draft' | 'Superseded' | 'Cancelled' | 'Paid'
 
 const TONE: Record<DocStamp, string> = {
   Draft: 'text-io-ink-3',
   Superseded: 'text-io-bad-solid',
+  Cancelled: 'text-io-bad-solid',
   Paid: 'text-io-ok-solid',
 }
 

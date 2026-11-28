@@ -1,5 +1,5 @@
 // bun run --filter @indus/ops-ui tokens
-// Writes src/styles/tokens.css, src/styles/theme.css, src/tokens.pdf.ts and src/tokens.generated.ts from
+// Writes src/styles/tokens.css, src/styles/theme.css, src/tokens.pdf.ts (and ops-pdf's copy) and src/tokens.generated.ts from
 // tokens/tokens.json (the handoff, verbatim) and tokens/tokens.ext.json (values the kits use that the handoff
 // does not name, each awaiting design sign-off). guards/tokens.drift.test.ts fails if the committed copies differ.
 import { readFileSync, writeFileSync } from 'node:fs'

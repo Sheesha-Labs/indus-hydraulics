@@ -17,4 +17,8 @@ export const opsTags = {
   settings: 'ops:settings',
   /** One settings row, `ops:setting:<key>`, e.g. `ops:setting:pricing.defaults`. */
   setting: (key: string) => `ops:setting:${key}` as const,
+  /** The published document template of one kind (S11-T05), `ops:template:<kind>`. */
+  template: (kind: string) => `ops:template:${kind}` as const,
+  /** Every document template at once. */
+  templates: 'ops:templates',
 } as const

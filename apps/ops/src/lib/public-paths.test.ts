@@ -76,6 +76,12 @@ describe('classify', () => {
     expect(classify('/_kit/controls', { appEnv: 'preview', opsKit: '1' })).toBe('kit')
     expect(classify('/_kit', { appEnv: 'production', opsKit: '1' })).toBe('protected-page')
     expect(classify('/_kit', { appEnv: 'local' })).toBe('protected-page')
+    // S11-T03: the kit's document PDFs, gated the same way.
+    expect(classify('/api/kit/documents/oa/pdf', { appEnv: 'local', opsKit: '1' })).toBe('kit')
+    expect(classify('/api/kit/documents/oa/pdf', { appEnv: 'production', opsKit: '1' })).toBe(
+      'protected-api'
+    )
+    expect(classify('/api/kit/documents/oa/pdf', { appEnv: 'local' })).toBe('protected-api')
     expect(classify('/_kitx', { appEnv: 'local', opsKit: '1' })).toBe('protected-page')
   })
 })

@@ -2174,20 +2174,29 @@ model HelpArticle {
 
 /// One row per document family. Patterns are data (Settings › Numbering, 214).
 model NumberSequence {
-  key             String          @id
-  label           String
-  pattern         String
-  revisionPattern String?
-  scopeKind       NumberScopeKind @default(global)
-  padTo           Int             @default(0)
-  ownerOnly       Boolean         @default(true)
+  key              String          @id
+  label            String
+  pattern          String
+  revisionPattern  String?
+  scopeKind        NumberScopeKind @default(global)
+  padTo            Int             @default(0)
+  ownerOnly        Boolean         @default(true)
   /// Allocation is refused until a seed has been confirmed (INDUS/Q hand-over).
-  seededAt        DateTime?       @db.Timestamptz(3)
-  seededById      String?         @db.Uuid
-  seedEvidence    Json?
+  seededAt         DateTime?       @db.Timestamptz(3)
+  seededById       String?         @db.Uuid
+  seedEvidence     Json?
   /// S08-T06: an outside allocator reached this sequence's block (ops.numbering.continuity).
-  outOfStepAt     DateTime?       @db.Timestamptz(3)
-  updatedAt       DateTime        @updatedAt @db.Timestamptz(3)
+  outOfStepAt      DateTime?       @db.Timestamptz(3)
+  updatedAt        DateTime        @updatedAt @db.Timestamptz(3)
+  /// S11-T08: clear | out_of_step | not_checked | unseeded | check_failed (CHECK), from the nightly check.
+  continuityStatus String          @default("not_checked")
+  lastCheckedAt    DateTime?       @db.Timestamptz(3)
+  /// { next, perSource: [{ source, maxSeen, maxFormatted, lastSeenAt, lastRef, clashesWithNext }] }.
+  continuityDetail Json?
+  /// C6: the Owner confirms the Round 1 numbering style.
+  signoffStatus    SignoffStatus   @default(awaiting)
+  signedOffById    String?         @db.Uuid
+  signedOffAt      DateTime?       @db.Timestamptz(3)
 
   counters     NumberCounter[]
   issued       IssuedNumber[]
@@ -2389,6 +2398,12 @@ model DocumentTemplate {
   /// ops.user(id) through a SQL foreign key (actor-column convention, not a Prisma relation).
   signedOffById String?       @db.Uuid
   signedOffAt   DateTime?     @db.Timestamptz(3)
+  /// S11-T04: draft | published | archived (CHECK); one published per kind.
+  status        String        @default("draft")
+  publishedAt   DateTime?     @db.Timestamptz(3)
+  publishedById String?       @db.Uuid
+  /// A4 | Letter (CHECK).
+  pageSize      String        @default("A4")
 
   versions DocumentVersion[]
 
@@ -2408,8 +2423,13 @@ model TermsClause {
   /// Variable defaults, e.g. { advance_pct: 30, balance_days: 60 }.
   variables     Json          @default("{}")
   locked        Boolean       @default(false)
-  approvalRule  String?
+  /// S11-T06: { kind: always } | { kind: payment_days_over, days } | { kind: advance_pct_below, pct }.
+  approvalRule  Json?
   version       Int           @default(0)
+  /// S11-T06: order inside the category; the category's default; "From Offer INDUS/Q…".
+  position      Int           @default(0)
+  isDefault     Boolean       @default(false)
+  sourceRef     String?
   archivedAt    DateTime?     @db.Timestamptz(3)
   updatedAt     DateTime      @updatedAt @db.Timestamptz(3)
   /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
@@ -2420,6 +2440,7 @@ model TermsClause {
 
   presets        TermsPresetClause[]
   quotationTerms QuotationTerm[]
+  candidates     TermsImportCandidate[]
 
   @@index([category])
   @@map("terms_clause")
@@ -2431,6 +2452,7 @@ model TermsPreset {
   name                  String        @unique
   description           String?
   isDefaultForNewClient Boolean       @default(false)
+  position              Int           @default(0)
   archivedAt            DateTime?     @db.Timestamptz(3)
   /// ADR-28: 'awaiting' until the Owner confirms a seeded default (S03-T04).
   signoffStatus         SignoffStatus @default(not_required)
@@ -2457,6 +2479,51 @@ model TermsPresetClause {
 
   @@id([presetId, clauseId])
   @@map("terms_preset_clause")
+  @@schema("ops")
+}
+
+/// S11-T06 "Import from offer": an uploaded offer PDF read into candidate clauses (import_terms).
+model TermsImport {
+  id          String     @id @default(uuid(7)) @db.Uuid
+  fileId      String     @db.Uuid
+  file        StoredFile @relation(fields: [fileId], references: [id])
+  offerRef    String?
+  /// reading | ready | failed | closed (CHECK).
+  status      String     @default("reading")
+  failureNote String?
+  actionId    String?    @db.Uuid
+  /// ops.user(id) through a SQL foreign key (actor-column convention).
+  createdById String?    @db.Uuid
+  createdAt   DateTime   @default(now()) @db.Timestamptz(3)
+  updatedAt   DateTime   @default(now()) @updatedAt @db.Timestamptz(3)
+
+  candidates TermsImportCandidate[]
+
+  @@index([status, createdAt(sort: Desc)])
+  @@map("terms_import")
+  @@schema("ops")
+}
+
+/// A proposed clause: nothing becomes a clause until a person accepts it.
+model TermsImportCandidate {
+  id          String       @id @default(uuid(7)) @db.Uuid
+  importId    String       @db.Uuid
+  import      TermsImport  @relation(fields: [importId], references: [id], onDelete: Cascade)
+  position    Int          @default(0)
+  category    String
+  title       String
+  body        String
+  variables   String[]     @default([])
+  /// pending | accepted | skipped (CHECK).
+  status      String       @default("pending")
+  clauseId    String?      @db.Uuid
+  clause      TermsClause? @relation(fields: [clauseId], references: [id])
+  /// ops.user(id) through a SQL foreign key (actor-column convention).
+  decidedById String?      @db.Uuid
+  decidedAt   DateTime?    @db.Timestamptz(3)
+
+  @@index([importId, position])
+  @@map("terms_import_candidate")
   @@schema("ops")
 }
 
@@ -3420,15 +3487,27 @@ model ScreeningCheck {
 
 /// Indus's own bank accounts, printed on quotations, PIs and invoices.
 model OwnBankAccount {
-  id              String    @id @default(uuid(7)) @db.Uuid
+  id              String        @id @default(uuid(7)) @db.Uuid
   bankName        String
   accountName     String
-  currency        String    @db.Char(3)
+  currency        String        @db.Char(3)
   iban            String
   swift           String?
-  showOnDocuments Boolean   @default(true)
-  isDefaultForCcy Boolean   @default(false)
-  archivedAt      DateTime? @db.Timestamptz(3)
+  showOnDocuments Boolean       @default(true)
+  isDefaultForCcy Boolean       @default(false)
+  archivedAt      DateTime?     @db.Timestamptz(3)
+  /// S11-T07: the exact lines printed in the bank block, confirmed by the Owner from his Zoho estimate.
+  branch          String?
+  printLines      String[]      @default([])
+  /// zoho_estimate | manual (CHECK).
+  source          String?
+  sourceFileId    String?       @db.Uuid
+  signoffStatus   SignoffStatus @default(awaiting)
+  /// ops.user(id) through a SQL foreign key (actor-column convention).
+  confirmedById   String?       @db.Uuid
+  confirmedAt     DateTime?     @db.Timestamptz(3)
+  createdAt       DateTime      @default(now()) @db.Timestamptz(3)
+  updatedAt       DateTime      @default(now()) @updatedAt @db.Timestamptz(3)
 
   @@map("own_bank_account")
   @@schema("ops")
@@ -5434,6 +5513,7 @@ model StoredFile {
   documentVersions    DocumentVersion[]
   texts               DocumentText[]
   intakeFiles         IntakeFile[]
+  termsImports        TermsImport[]
 
   @@unique([bucket, path])
   @@index([sha256])
@@ -5501,6 +5581,9 @@ model DocumentVersion {
   note           String?
   /// "Sent to client" marker: the outbound email this version left in.
   sentOutboundId String?           @db.Uuid
+  /// S11-T04: SHA-256 (hex) of the rendered PDF, re-verified on every attach and download.
+  sha256         String?
+  renderedAt     DateTime?         @db.Timestamptz(3)
   createdByKind  ActorKind
   createdById    String?           @db.Uuid
   createdAt      DateTime          @default(now()) @db.Timestamptz(3)

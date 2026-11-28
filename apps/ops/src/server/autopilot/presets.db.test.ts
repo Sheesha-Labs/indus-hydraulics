@@ -160,14 +160,14 @@ describe.skipIf(!DB_URL)('Autopilot catalogue and presets · local database', ()
     await db.$disconnect()
   })
 
-  it('seeds 32 catalogue and 46 system definitions, each with a setting at Careful', async () => {
+  it('seeds 32 catalogue and 47 system definitions, each with a setting at Careful', async () => {
     const defs = await db.autopilotActionDef.findMany({
       select: DEF_SELECT,
       orderBy: { position: 'asc' },
     })
     const settings = await snapshot(db)
     expect(defs.filter((d) => d.position <= 32)).toHaveLength(32)
-    expect(defs.filter((d) => d.position >= 101)).toHaveLength(46)
+    expect(defs.filter((d) => d.position >= 101)).toHaveLength(47)
     expect(defs.map((d) => d.key).sort()).toEqual([...core.ACTION_KEYS].sort())
     expect(defs.every((d) => d.signoffStatus === 'awaiting')).toBe(true)
     for (const d of defs)
@@ -318,6 +318,8 @@ describe.skipIf(!DB_URL)('Autopilot catalogue and presets · local database', ()
         'resolve_extracted_line',
         // S09: the questions' fallback always asks (board 171)
         'client_question_fallback',
+        // S11: candidate clauses read from an offer; a person accepts each (board 39)
+        'import_terms',
         // S10: the bank-change warning always asks; the reliability summary is internal text, not configurable
         'bank_change_warning',
         'supplier_reliability_summary',

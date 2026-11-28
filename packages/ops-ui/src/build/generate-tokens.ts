@@ -278,6 +278,8 @@ export function generateAll(core: CoreTokens, ext: ExtTokens): Record<string, st
     'src/styles/tokens.css': tokensCss(tokens),
     'src/styles/theme.css': themeCss(tokens),
     'src/tokens.pdf.ts': pdfTokensTs(tokens),
+    // ops-pdf may import ops-core only (CLAUDE.md §3), so it carries its own generated copy (S11-T02).
+    '../ops-pdf/src/tokens.pdf.ts': pdfTokensTs(tokens),
     'src/tokens.generated.ts': generatedTs(tokens),
   }
 }

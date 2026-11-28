@@ -19,6 +19,7 @@
     "@indus/ops-ai": "workspace:^",
     "@indus/ops-core": "workspace:^",
     "@indus/ops-db": "workspace:^",
+    "@indus/ops-pdf": "workspace:^",
     "@indus/ops-ui": "workspace:^",
     "@node-rs/argon2": "^2.2.2",
     "@radix-ui/react-dialog": "^1.1.14",

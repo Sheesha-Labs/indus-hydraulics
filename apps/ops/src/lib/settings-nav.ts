@@ -94,5 +94,17 @@ export function settingsTitle(pathname: string): string {
   for (const group of SETTINGS_NAV)
     for (const item of group.items)
       if (!item.href.includes('#') && item.href === pathname) return item.title ?? item.label
+  // A page under a section (/settings/document-templates/quotation) keeps the section's title.
+  for (const group of SETTINGS_NAV)
+    for (const item of group.items)
+      if (!item.href.includes('#') && pathname.startsWith(`${item.href}/`))
+        return item.title ?? item.label
   return 'Settings'
 }
+
+/**
+ * The id of the header slot a settings page fills with its own actions (board 57 "Preview with an enquiry",
+ * "Publish"): the page's client editor owns the dirty state, so it portals its buttons into the layout's
+ * header rather than the header knowing every form.
+ */
+export const SETTINGS_ACTIONS_SLOT = 'settings-header-actions'

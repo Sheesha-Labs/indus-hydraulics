@@ -70,6 +70,11 @@ export function classify(pathname: string, env: PathEnv = {}): PathKind {
     const open = env.appEnv !== 'production' && env.opsKit === '1'
     return open ? 'kit' : 'protected-page'
   }
+  // S11-T03: the kit's document PDFs. Route handlers live under api/ (route-tree rule), gated like /_kit.
+  if (matchesPrefix(path, '/api/kit')) {
+    const open = env.appEnv !== 'production' && env.opsKit === '1'
+    return open ? 'kit' : 'protected-api'
+  }
 
   if (PUBLIC_API_EXACT.includes(path)) return 'public-api'
   if (PUBLIC_API_PREFIXES.some((p) => matchesPrefix(path, p))) return 'public-api'

@@ -6,11 +6,11 @@ import { cn } from '../lib/cn'
  * whole inside a fixed frame, so text stays real text at every size. Fixed classes only: no inline style.
  *
  * full 1 · m .6 (476 × 674, boards) · w .5542 (440 × 622) · thumb .189 (150 × 212, lists) ·
- * z .7 (556 × 786, the Estimate preview).
+ * z .7 (556 × 786, the Estimate preview) · s .42 (334 × 472, the template preview, board 57).
  */
-export type DocScale = 'full' | 'm' | 'w' | 'thumb' | 'z'
+export type DocScale = 'full' | 'm' | 'w' | 'thumb' | 'z' | 's'
 
-export const DOC_SCALES: readonly DocScale[] = ['full', 'm', 'w', 'thumb', 'z']
+export const DOC_SCALES: readonly DocScale[] = ['full', 'm', 'w', 'thumb', 'z', 's']
 
 /** The frame (outer box) and the scale applied to the 794 × 1123 page inside it. */
 const FRAME: Record<Exclude<DocScale, 'full'>, { frame: string; page: string }> = {
@@ -18,6 +18,7 @@ const FRAME: Record<Exclude<DocScale, 'full'>, { frame: string; page: string }> 
   w: { frame: 'h-[622px] w-[440px]', page: 'scale-[.5542]' },
   thumb: { frame: 'h-[212px] w-[150px]', page: 'scale-[.189]' },
   z: { frame: 'h-[786px] w-[556px]', page: 'scale-[.7]' },
+  s: { frame: 'h-[472px] w-[334px]', page: 'scale-[.42]' },
 }
 
 /** Classes for the 794 × 1123 page itself at a scale (the page draws its own shadow only at full). */
