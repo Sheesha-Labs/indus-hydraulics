@@ -66,7 +66,7 @@ describe('buildQuotation (Estimate layout, C37)', () => {
       v: 'Gate valve 2″ class 300, A105, flanged RF',
       sub: 'SAMPLE-V-0101',
     })
-    expect(doc.notes.map((n) => n.label)).toEqual(['Payment', 'Delivery', 'Bank'])
+    expect(doc.notes.map((n) => n.label)).toEqual(['Payment', 'Delivery', 'Bank', 'Disclaimer'])
   })
 
   it('template columns: Origin and Your code on, price columns stay together with Amount last', () => {
@@ -119,7 +119,11 @@ describe('buildQuotation (Estimate layout, C37)', () => {
 
   it('no bank block confirmed: the quotation says the bank details follow', () => {
     const d = buildQuotation(createClientSafeQuotation(F.QUOTATION), { ...F.CTX, bank: null })
-    expect(d.notes.at(-1)).toEqual({ label: 'Bank', text: 'Bank details to follow' })
+    expect(d.notes.at(-2)).toEqual({
+      label: 'Bank',
+      text: 'Bank details to follow',
+      part: 'bank',
+    })
   })
 })
 

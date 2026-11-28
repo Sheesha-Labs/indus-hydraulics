@@ -1,8 +1,12 @@
 import {
   CLIENT_COLUMN_LABEL,
+  DEFAULT_HOUSE_CLIENT_COLUMNS,
   PRICE_COLUMNS,
+  SUPPLIER_COLUMN_LABEL,
   normaliseClientColumns,
+  normaliseSupplierColumns,
   type ClientColumn,
+  type SupplierColumn,
 } from '../columns'
 import type { DocBlock, DocCell, DocSign, DocTableRow, DocTotalRow } from '../types'
 import type { ClientLineInput, SupplierLineInput } from '../safe'
@@ -23,6 +27,8 @@ export interface DocTemplateOptions {
   disclaimer?: string | null
   /** Middle of the running footer. */
   footLabel?: string
+  /** What an unpriced line prints when it carries no note of its own (board 57 "Pending lines"). */
+  pendingNote?: string
 }
 
 export interface BuildContext {
@@ -72,10 +78,12 @@ export function clientAmount(l: ClientLineInput): string | null {
   return lineAmount(l.qty, l.rate)
 }
 
+export const PRICE_TO_FOLLOW = 'Price to follow'
+
 /** The client-visible note for a line without a price. */
-export function unpricedNote(l: ClientLineInput): string {
+export function unpricedNote(l: ClientLineInput, pending: string = PRICE_TO_FOLLOW): string {
   if (l.state === 'not_quoted') return l.note ? `Not quoted · ${l.note}` : 'Not quoted'
-  return l.note ?? 'Price to follow'
+  return l.note ?? pending
 }
 
 const vatLabel = (l: ClientLineInput) => ((l.vat ?? 'standard') === 'standard' ? '5%' : '0%')
@@ -83,7 +91,8 @@ const vatLabel = (l: ClientLineInput) => ((l.vat ?? 'standard') === 'standard' ?
 /** The quotation's line table, from the template's columns. Notes span the price columns. */
 export function clientTable(
   lines: readonly ClientLineInput[],
-  cols?: readonly string[]
+  cols?: readonly string[],
+  pending?: string
 ): { cols: string[]; rows: DocTableRow[] } {
   const columns = normaliseClientColumns(cols)
   const showCodeColumn = columns.includes('clientPartNo')
@@ -121,7 +130,7 @@ export function clientTable(
     const head = columns.filter((c) => !PRICE_COLUMNS.has(c)).map(cell)
     const span = columns.filter((c) => PRICE_COLUMNS.has(c)).length
     return {
-      cells: [...head, { v: unpricedNote(l), ...(span > 1 ? { span } : {}) }],
+      cells: [...head, { v: unpricedNote(l, pending), ...(span > 1 ? { span } : {}) }],
       flag: 'to-follow',
     }
   })
@@ -129,36 +138,108 @@ export function clientTable(
   return { cols: columns.map((c) => CLIENT_COLUMN_LABEL[c]), rows }
 }
 
-/** House-layout client rows: #, part + description, qty + UoM, rate, amount. */
-export function houseClientRows(lines: readonly ClientLineInput[]): DocTableRow[] {
-  return lines.map((l) => {
-    const amount = clientAmount(l)
-    const head: DocCell[] = [
-      { v: String(l.lineNo) },
-      { v: l.description, ...(l.partNumber ? { bold: l.partNumber } : {}) },
-      { v: `${qty(l.qty)} ${l.uom}` },
-    ]
-    if (amount === null)
-      return { cells: [...head, { v: unpricedNote(l), span: 2 }], flag: 'to-follow' as const }
-    return { cells: [...head, { v: money(l.rate!) }, { v: money(amount) }] }
-  })
+const HOUSE_CLIENT_LABEL: Record<ClientColumn, string> = {
+  ...CLIENT_COLUMN_LABEL,
+  clientPartNo: 'Your code',
+  delivery: 'Delivery',
 }
 
-/** Supplier rows: our line number and ref, the cleaned description, qty, UoM; prices for the PO only. */
-export function supplierRows(lines: readonly SupplierLineInput[], priced: boolean): DocTableRow[] {
-  return lines.map((l) => {
-    const head: DocCell[] = [
-      { v: String(l.lineNo).padStart(2, '0') },
-      { v: l.description, sub: [l.partNumber, l.ourRef].filter(Boolean).join(' · ') },
-      { v: qty(l.qty) },
-      { v: l.uom },
-    ]
-    if (!priced) return { cells: [...head, { v: DASH }, { v: l.delivery ?? DASH }] }
-    if (!l.rate) throw new RangeError(`PO line ${l.lineNo} has no price from the supplier's offer`)
+/**
+ * The house client documents' line table (OA, proforma, invoice, credit note) from the template's columns.
+ * The part number is the bold first line of the description; without a UoM column the quantity carries its
+ * unit ("4 pcs"). An unpriced line's note spans the price columns.
+ */
+export function houseClientTable(
+  lines: readonly ClientLineInput[],
+  cols?: readonly string[],
+  pending?: string
+): { cols: string[]; rows: DocTableRow[] } {
+  const columns = normaliseClientColumns(cols, DEFAULT_HOUSE_CLIENT_COLUMNS)
+  const hasUom = columns.includes('uom')
+  const rows = lines.map((l): DocTableRow => {
+    const amount = clientAmount(l)
+    const cell = (c: ClientColumn): DocCell => {
+      switch (c) {
+        case 'no':
+          return { v: String(l.lineNo) }
+        case 'description':
+          return { v: l.description, ...(l.partNumber ? { bold: l.partNumber } : {}) }
+        case 'clientPartNo':
+          return { v: l.clientPartNumber ?? DASH }
+        case 'qty':
+          return { v: hasUom ? qty(l.qty) : `${qty(l.qty)} ${l.uom}` }
+        case 'uom':
+          return { v: l.uom }
+        case 'rate':
+          return { v: l.rate ? money(l.rate) : DASH }
+        case 'delivery':
+          return { v: l.delivery ?? DASH }
+        case 'tax':
+          return { v: vatLabel(l) }
+        case 'amount':
+          return { v: amount ? money(amount) : DASH }
+        case 'origin':
+          return { v: l.origin ?? DASH }
+        case 'hsCode':
+          return { v: l.hsCode ?? DASH }
+      }
+    }
+    if (amount !== null) return { cells: columns.map(cell) }
+    const head = columns.filter((c) => !PRICE_COLUMNS.has(c)).map(cell)
+    const span = columns.filter((c) => PRICE_COLUMNS.has(c)).length
     return {
-      cells: [...head, { v: money(l.rate) }, { v: money(lineAmount(l.qty, l.rate)) }],
+      cells: [...head, { v: unpricedNote(l, pending), ...(span > 1 ? { span } : {}) }],
+      flag: 'to-follow',
     }
   })
+  return { cols: columns.map((c) => HOUSE_CLIENT_LABEL[c]), rows }
+}
+
+/**
+ * The supplier line table (RFQ, PO) from the template's columns: our line number, the cleaned description
+ * with the part number and our ref under it (the ref only, when a part-number column is printed), qty, UoM;
+ * on an RFQ the price column is left blank for the supplier, on a PO it carries their own offered price.
+ */
+export function supplierTable(
+  lines: readonly SupplierLineInput[],
+  priced: boolean,
+  cols?: readonly string[]
+): { cols: string[]; rows: DocTableRow[] } {
+  const columns = normaliseSupplierColumns(cols, priced)
+  const hasPartNo = columns.includes('partNo')
+  const rows = lines.map((l): DocTableRow => {
+    if (priced && !l.rate)
+      throw new RangeError(`PO line ${l.lineNo} has no price from the supplier's offer`)
+    const cell = (c: SupplierColumn): DocCell => {
+      switch (c) {
+        case 'no':
+          return { v: String(l.lineNo).padStart(2, '0') }
+        case 'description':
+          return {
+            v: l.description,
+            sub: (hasPartNo ? [l.ourRef] : [l.partNumber, l.ourRef]).filter(Boolean).join(' · '),
+          }
+        case 'partNo':
+          return { v: l.partNumber ?? DASH }
+        case 'qty':
+          return { v: qty(l.qty) }
+        case 'uom':
+          return { v: l.uom }
+        case 'rate':
+          return { v: priced ? money(l.rate!) : DASH }
+        case 'amount':
+          return { v: money(lineAmount(l.qty, l.rate!)) }
+        case 'delivery':
+          return { v: l.delivery ?? DASH }
+        case 'targetDate':
+          return { v: l.targetDate ? docDate(l.targetDate) : DASH }
+      }
+    }
+    return { cells: columns.map(cell) }
+  })
+  const label = (c: SupplierColumn) =>
+    !priced && c === 'rate' ? 'Your price' : priced && c === 'description' ? 'Item & description' : c === 'description' ? 'Description' : SUPPLIER_COLUMN_LABEL[c]
+  return { cols: columns.map(label), rows }
 }
 
 /** Totals rows from DocTotals: sub total, discount, freight, VAT rows, total. */

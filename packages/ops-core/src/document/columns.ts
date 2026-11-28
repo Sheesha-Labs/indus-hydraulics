@@ -27,6 +27,8 @@ export const SUPPLIER_COLUMNS = [
   'partNo',
   'qty',
   'uom',
+  'rate',
+  'amount',
   'delivery',
   'targetDate',
 ] as const
@@ -55,6 +57,9 @@ export const SUPPLIER_COLUMN_LABEL: Record<SupplierColumn, string> = {
   partNo: 'Part no.',
   qty: 'Qty',
   uom: 'UoM',
+  /** The supplier's own price: blank on an RFQ ("Your price"), their offer on a PO. */
+  rate: 'Rate',
+  amount: 'Amount',
   delivery: 'Lead time',
   targetDate: 'Needed by',
 }
@@ -84,8 +89,11 @@ export const PRICE_COLUMNS: ReadonlySet<ClientColumn> = new Set([
  * and "qty" always present, the template's order kept otherwise; the price columns together at the end with
  * "amount" last, so a "Price to follow" note can span them as one cell.
  */
-export function normaliseClientColumns(cols: readonly string[] | undefined): ClientColumn[] {
-  const want = (cols?.length ? cols : DEFAULT_QUOTATION_COLUMNS).filter((c): c is ClientColumn =>
+export function normaliseClientColumns(
+  cols: readonly string[] | undefined,
+  fallback: readonly ClientColumn[] = DEFAULT_QUOTATION_COLUMNS
+): ClientColumn[] {
+  const want = (cols?.length ? cols : fallback).filter((c): c is ClientColumn =>
     (CLIENT_COLUMNS as readonly string[]).includes(c)
   )
   const seen = new Set<ClientColumn>()
@@ -99,4 +107,56 @@ export function normaliseClientColumns(cols: readonly string[] | undefined): Cli
   const head = ordered.filter((c) => !PRICE_COLUMNS.has(c))
   const prices = ordered.filter((c) => PRICE_COLUMNS.has(c) && c !== 'amount')
   return prices.length || want.includes('amount') ? [...head, ...prices, 'amount'] : head
+}
+
+/** The house client documents' line table (OA, proforma, tax invoice, credit note) as built since S11-T01. */
+export const DEFAULT_HOUSE_CLIENT_COLUMNS: readonly ClientColumn[] = [
+  'no',
+  'description',
+  'qty',
+  'rate',
+  'amount',
+]
+
+/** The supplier RFQ's and PO's line tables as built since S11-T01. */
+export const DEFAULT_RFQ_COLUMNS: readonly SupplierColumn[] = [
+  'no',
+  'description',
+  'qty',
+  'uom',
+  'rate',
+  'delivery',
+]
+export const DEFAULT_PO_COLUMNS: readonly SupplierColumn[] = [
+  'no',
+  'description',
+  'qty',
+  'uom',
+  'rate',
+  'amount',
+]
+
+/**
+ * A supplier template's column list, cleaned like the client one: known supplier columns only, each once,
+ * "no", "description" and "qty" always present; the price columns at the end ("amount" last, PO only).
+ */
+export function normaliseSupplierColumns(
+  cols: readonly string[] | undefined,
+  priced: boolean
+): SupplierColumn[] {
+  const fallback = priced ? DEFAULT_PO_COLUMNS : DEFAULT_RFQ_COLUMNS
+  const want = (cols?.length ? cols : fallback).filter((c): c is SupplierColumn =>
+    (SUPPLIER_COLUMNS as readonly string[]).includes(c)
+  )
+  const seen = new Set<SupplierColumn>()
+  const ordered: SupplierColumn[] = []
+  for (const c of ['no', 'description', ...want] as SupplierColumn[]) {
+    if (seen.has(c)) continue
+    if (!priced && c === 'amount') continue
+    seen.add(c)
+    ordered.push(c)
+  }
+  if (!seen.has('qty')) ordered.splice(2, 0, 'qty')
+  const tail = ordered.filter((c) => c === 'amount')
+  return [...ordered.filter((c) => c !== 'amount'), ...tail]
 }

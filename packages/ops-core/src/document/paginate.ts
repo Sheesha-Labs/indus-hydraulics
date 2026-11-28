@@ -30,6 +30,8 @@ export interface DocPage<T extends DocumentData = DocumentData> {
 
 /** Usable body height on a page: 1123 − top padding 44 − footer zone 80. */
 const BODY = 999
+/** US Letter is 1056 tall at the same width scale: 67 px less body. */
+const LETTER_LOSS = 1123 - 1056
 /** Running header + gap on continuation pages. */
 const CONT_HEAD = 40
 
@@ -75,16 +77,24 @@ interface Unit {
   part: number | 'totals' | 'notes' | 'sign'
 }
 
-/** Pack units onto pages; a table row that starts a new page brings its header row with it. */
-function pack(firstHead: number, units: Unit[]): Unit[][] {
+/**
+ * Pack units onto pages; a table row that starts a new page brings its header row with it. The template's
+ * paper sets the body height; "Lines on page 1" caps the table rows on the first page.
+ */
+function pack(firstHead: number, units: Unit[], page?: DocumentData['page']): Unit[][] {
+  const body = page?.size === 'Letter' ? BODY - LETTER_LOSS : BODY
+  const cap = page?.firstPageRows
   const pages: Unit[][] = [[]]
   let used = firstHead
+  let firstRows = 0
   for (const u of units) {
-    if (used + u.h > BODY && pages.at(-1)!.length > 0) {
+    const capped = cap !== undefined && pages.length === 1 && !!u.tableRow && firstRows >= cap
+    if ((capped || used + u.h > body) && pages.at(-1)!.length > 0) {
       pages.push([])
       used = CONT_HEAD + (u.tableRow ? u.tableRow.headH : 0)
     }
     pages.at(-1)!.push(u)
+    if (pages.length === 1 && u.tableRow) firstRows++
     used += u.h
   }
   return pages
@@ -116,7 +126,7 @@ function paginateEstimate(d: EstimateDocument): DocPage<EstimateDocument>[] {
     })
   // The signature and stamp strip, with room for the signature and stamp images.
   units.push({ h: 14 + 64 + 36, part: 'sign' })
-  const packed = pack(estimateHead(d), units)
+  const packed = pack(estimateHead(d), units, d.page)
   return packed.map((us, i) => {
     const rows = us.filter((u) => u.tableRow).map((u) => u.tableRow!.row)
     const has = (p: Unit['part']) => us.some((u) => u.part === p)
@@ -204,7 +214,7 @@ function paginateHouse(d: HouseDocument): DocPage<HouseDocument>[] {
       i++
     } else merged.push(u)
   }
-  const packed = pack(houseHead(d), merged)
+  const packed = pack(houseHead(d), merged, d.page)
   return packed.map((us, i) => {
     const blocks: DocBlock[] = []
     const ids = [...new Set(us.map((u) => u.part as number))].sort((a, b) => a - b)

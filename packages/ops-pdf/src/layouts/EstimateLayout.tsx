@@ -51,7 +51,7 @@ export default function EstimateLayout({
   const ink = { color: C['io-est-ink'] }
   return (
     <Page
-      size="A4"
+      size={data.page?.size === 'Letter' ? 'LETTER' : 'A4'}
       style={{
         fontFamily: SANS,
         paddingTop: px(44),

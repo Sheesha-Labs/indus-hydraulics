@@ -56,7 +56,7 @@ export default function HouseLayout({
   const data = page.data
   return (
     <Page
-      size="A4"
+      size={data.page?.size === 'Letter' ? 'LETTER' : 'A4'}
       style={{
         fontFamily: SANS,
         color: C['io-ink'],

@@ -18,7 +18,7 @@ import {
  * supplementary quotation has its own number and says so.
  */
 export function buildQuotation(q: ClientSafeQuotation, ctx: BuildContext): EstimateDocument {
-  const table = clientTable(q.lines, ctx.template?.columns)
+  const table = clientTable(q.lines, ctx.template?.columns, ctx.template?.pendingNote)
   const totals = documentTotals({
     lines: q.lines.map((l) => ({ amount: clientAmount(l), vat: l.vat ?? 'standard' })),
     currency: q.currency,
@@ -34,8 +34,12 @@ export function buildQuotation(q: ClientSafeQuotation, ctx: BuildContext): Estim
           {
             label: 'Bank',
             text: ctx.bank ? ctx.bank.lines.join(' · ') : 'Bank details to follow',
+            part: 'bank' as const,
           },
         ]
+  const disclaimer = ctx.template?.disclaimer
+    ? [{ label: 'Disclaimer', text: ctx.template.disclaimer, part: 'disclaimer' as const }]
+    : []
   return {
     layout: 'estimate',
     kind: 'quotation',
@@ -54,7 +58,12 @@ export function buildQuotation(q: ClientSafeQuotation, ctx: BuildContext): Estim
     billTo: q.billTo,
     items: { t: 'table', ...table },
     totals: totalRows(totals, q.currency),
-    notes: [...(q.notes ?? []), ...(ctx.terms ?? []), ...bank],
+    notes: [
+      ...(q.notes ?? []),
+      ...(ctx.terms ?? []).map((t) => ({ ...t, part: 'terms' as const })),
+      ...bank,
+      ...disclaimer,
+    ],
     signer: ctx.signer.name,
   }
 }

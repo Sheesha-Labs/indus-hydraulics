@@ -102,6 +102,7 @@ export interface ParityRow {
     | 'P04 boards'
     | 'P17 boards'
     | 'P11 documents'
+    | 'P11 settings'
   /** The share of the compared pixels that differ. */
   ratio: number
   /** What was compared: "full frame 1438×938, 7 masks", "drawer (39% of the frame)" … */

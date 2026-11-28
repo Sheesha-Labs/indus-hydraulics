@@ -26,7 +26,10 @@ export default function SubNav({ groups }: SubNavProps) {
               key={item.href}
               label={item.label}
               href={item.href}
-              active={!item.href.includes('#') && item.href === pathname}
+              active={
+                !item.href.includes('#') &&
+                (item.href === pathname || pathname.startsWith(`${item.href}/`))
+              }
             />
           ))}
         </div>

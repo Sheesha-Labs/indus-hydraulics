@@ -1,5 +1,5 @@
 import 'server-only'
-import type { DocKind, DocumentData } from '@indus/ops-core'
+import { applyTemplate, type DocKind, type DocumentData } from '@indus/ops-core'
 import { opsDb, type $Enums, type Prisma } from '@indus/ops-db'
 import { renderDocumentPdf } from '@indus/ops-pdf'
 import { OPS_BUCKETS } from '../storage/buckets'
@@ -8,6 +8,7 @@ import { loadLetterhead } from './assets'
 import { pdfPageCount, sha256OfBytes } from './hash'
 import { documentKey, downloadName } from './keys'
 import { mailboxRoleFor, RECORD_KIND } from './kinds'
+import { getActiveTemplate } from './templates'
 
 /**
  * Issuing a document (S11-T04, ADR-14): render once, store the PDF immutably with its SHA-256, and from then on
@@ -19,6 +20,10 @@ import { mailboxRoleFor, RECORD_KIND } from './kinds'
  *      that key is an error, never overwritten
  *   4. one transaction writes stored_file, document (approved, issuedAt) and document_version 1 (the data
  *      snapshot, template, SHA-256, renderedAt); the trigger makes the file immutable from then on
+ *
+ * The template (S11-T05): when the caller names none, the kind's published template is applied to `data` here
+ * (its block order and switches; the caller built the columns with templateOptions) and recorded on the
+ * version. A caller that names a template (a reissue of a snapshot) passes data it has already applied.
  *
  * The number is allocated by the caller in its own approving transaction (S17 quotation approval, S24 order
  * documents); this never allocates. `data` is built by the caller from a ClientSafe* or SupplierSafe* input
@@ -79,12 +84,16 @@ export async function issueDocument(
   const revision = i.revision ?? 1
   const recordKind = RECORD_KIND[i.kind]
 
+  const active = i.templateId === undefined ? await getActiveTemplate(i.kind) : null
+  const data = active ? applyTemplate(i.data, active.definition) : i.data
+  const templateId = active ? active.id : (i.templateId ?? null)
+
   const { letterhead, assets } = await loadLetterhead({
     role: mailboxRoleFor(i.kind),
     currency: i.currency ?? null,
     signerId: i.signerId ?? null,
   })
-  const bytes = await renderDocumentPdf(i.data, letterhead, assets, { draft: false })
+  const bytes = await renderDocumentPdf(data, letterhead, assets, { draft: false })
   const sha256 = sha256OfBytes(bytes)
   const key = documentKey({ kind: recordKind, issuedAt: now, number: i.number, revision, sha256 })
 
@@ -137,8 +146,8 @@ export async function issueDocument(
           documentId: doc.id,
           version: 1,
           fileId: file.id,
-          templateId: i.templateId ?? null,
-          dataSnapshot: i.data as unknown as Prisma.InputJsonValue,
+          templateId,
+          dataSnapshot: data as unknown as Prisma.InputJsonValue,
           sha256,
           renderedAt: now,
           ...actorCols(i.actor),
@@ -159,7 +168,7 @@ export async function issueDocument(
           field: 'status',
           ...(extra?.supersedesId ? { before: { supersedes: extra.supersedesId } } : {}),
           after: { status: 'approved', number: i.number, revision, sha256 },
-          note: `${i.data.title} ${i.number}${revision > 1 ? ` · R${revision}` : ''} issued`,
+          note: `${data.title} ${i.number}${revision > 1 ? ` · R${revision}` : ''} issued`,
         },
       })
       return { documentId: doc.id, fileId: file.id, sha256, key }

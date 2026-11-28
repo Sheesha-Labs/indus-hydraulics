@@ -42,8 +42,14 @@ export interface DocSign {
   role: string
 }
 
+/**
+ * Which template block (board 57) a body block belongs to, when its type does not say: a "Received by" box
+ * of terms rows is the signature, not the terms. Templates reorder and switch body blocks by this.
+ */
+export type DocBodyPart = 'lines' | 'totals' | 'terms' | 'bank' | 'disclaimer' | 'signature'
+
 /** The ordered body of a house-layout document. */
-export type DocBlock =
+export type DocBlock = { part?: DocBodyPart } & (
   | { t: 'table'; cols: string[]; rows: DocTableRow[]; descCol?: number /* default 1 */ }
   | { t: 'totals'; words?: string; rows: DocTotalRow[] }
   | { t: 'section'; n: string; title: string }
@@ -59,6 +65,7 @@ export type DocBlock =
   | { t: 'sign'; lead: string; name: string }
   | { t: 'slips'; boxes: { title: string; fields: string[] }[] }
   | { t: 'remark'; text: string }
+)
 
 export type DocTableBlock = Extract<DocBlock, { t: 'table' }>
 
@@ -86,6 +93,8 @@ export interface DocHeader {
   meta: { label: string; value: string }[]
   /** Middle of the running footer ("Valves & actuators"). */
   footLabel: string
+  /** From the template (board 57): the paper, and a cap on the line-table rows on page 1. */
+  page?: { size: 'A4' | 'Letter'; firstPageRows?: number }
 }
 
 export interface DocParty {
@@ -107,7 +116,8 @@ export interface EstimateDocument extends DocHeader {
   billTo: DocParty
   items: DocTableBlock
   totals: DocTotalRow[]
-  notes: { label: string; text: string }[]
+  /** The record's own notes, then the terms, the bank and the disclaimer, each tagged with its block. */
+  notes: { label: string; text: string; part?: DocBodyPart }[]
   signer: string
   /** Revision of `no`: "2", "R2" or "-R2" all render as "-R2" (ADR-15: revisions keep the base). */
   revision?: string

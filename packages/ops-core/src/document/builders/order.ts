@@ -14,7 +14,7 @@ import {
   bankBlock,
   clientAmount,
   docDate,
-  houseClientRows,
+  houseClientTable,
   shownNumber,
   termsBlocks,
   totalRows,
@@ -40,11 +40,10 @@ function issuedBy(ctx: BuildContext) {
   return { label: 'Issued by', name: ctx.signer.name, lines: [ctx.signer.role] }
 }
 
-function table(d: Base): DocBlock {
+function table(d: Base, ctx: BuildContext): DocBlock {
   return {
     t: 'table',
-    cols: ['#', 'Item & description', 'Qty', 'Rate', 'Amount'],
-    rows: houseClientRows(d.lines),
+    ...houseClientTable(d.lines, ctx.template?.columns, ctx.template?.pendingNote),
   }
 }
 
@@ -67,7 +66,7 @@ export function buildOa(d: ClientSafeOrderDoc<OaInput>, ctx: BuildContext): Hous
     party: [d.billTo, issuedBy(ctx)],
     ...(d.subject ? { subject: { text: d.subject } } : {}),
     blocks: [
-      table(d),
+      table(d, ctx),
       { t: 'totals', words: amountInWords(t.total, d.currency), rows: totalRows(t, d.currency) },
       ...termsBlocks(ctx.terms, 'T', 'Terms'),
       ...bankBlock(ctx),
@@ -96,7 +95,7 @@ export function buildPi(d: ClientSafeOrderDoc<PiInput>, ctx: BuildContext): Hous
     party: [d.billTo, issuedBy(ctx)],
     subject: { text: d.subject ?? `ADVANCE PAYMENT · ${qty(d.advancePct)}% OF ORDER VALUE` },
     blocks: [
-      table(d),
+      table(d, ctx),
       {
         t: 'totals',
         words: amountInWords(due, d.currency),
@@ -145,7 +144,7 @@ export function buildInvoice(
     party: [d.billTo, issuedBy(ctx)],
     ...(d.subject ? { subject: { text: d.subject } } : {}),
     blocks: [
-      table(d),
+      table(d, ctx),
       {
         t: 'totals',
         words: amountInWords(balanceDue, d.currency),
@@ -191,7 +190,7 @@ export function buildCreditNote(
     party: [d.billTo, issuedBy(ctx)],
     subject: { text: d.subject ?? `CREDIT NOTE AGAINST ${d.invoiceRef}` },
     blocks: [
-      table(d),
+      table(d, ctx),
       { t: 'totals', words: amountInWords(t.total, d.currency), rows: totalRows(t, d.currency) },
       { t: 'remark', text: d.reason },
       { t: 'sign', lead: ctx.signer.lead ?? 'Best regards,', name: ctx.signer.name },
@@ -237,9 +236,10 @@ export function buildShippingDoc(
       },
       ...(isDn
         ? [
-            { t: 'section' as const, n: 'R', title: 'Received by' },
+            { t: 'section' as const, n: 'R', title: 'Received by', part: 'signature' as const },
             {
               t: 'terms' as const,
+              part: 'signature' as const,
               rows: [
                 { label: 'Name', value: '' },
                 { label: 'Signature and stamp', value: '' },
